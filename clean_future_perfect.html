@@ -1,218 +1,1725 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#10102a">
-<title>Future Perfect Masterclass | Hinawi English</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap');
-:root{--bg:#0c0b20;--panel:#171632;--panel2:#201d43;--ink:#f7f5ff;--muted:#b9b6d5;--pink:#ff4f9a;--cyan:#41e7ff;--lime:#c4ff55;--gold:#ffd166;--purple:#9b7bff;--line:rgba(255,255,255,.12);--shadow:0 20px 60px rgba(0,0,0,.28)}
-*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 5%,rgba(155,123,255,.16),transparent 30%),radial-gradient(ellipse at 90% 18%,rgba(65,231,255,.11),transparent 28%),var(--bg);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.8}
-a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.en{font-family:'Plus Jakarta Sans',sans-serif;direction:ltr;text-align:left;unicode-bidi:embed}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(12,11,32,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px}.logo{width:58px;height:58px;object-fit:contain;filter:drop-shadow(0 0 14px rgba(255,209,102,.18))}.brandname{font:900 17px 'Plus Jakarta Sans',sans-serif;letter-spacing:1.2px;color:var(--gold)}.tag{font-size:12px;color:var(--muted)}nav{display:flex;align-items:center;gap:18px;font-size:13px;font-weight:800;color:#dedbf4}nav a:hover{color:var(--cyan)}.nav-cta,.btn{border:0;border-radius:14px;padding:12px 18px;font-weight:900;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.nav-cta,.btn-primary{background:linear-gradient(120deg,var(--gold),#ff9c66);color:#21132c;box-shadow:0 8px 24px #ff9c6625}.btn:hover,.nav-cta:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-secondary{background:#ffffff0c;border:1px solid var(--line);color:var(--ink)}
-.hero{padding:82px 0 72px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#ff4f9a18;border:1px solid #ff4f9a55;color:#ff8bb9;padding:7px 14px;border-radius:99px;font-weight:900;font-size:13px}.hero h1{font:900 clamp(38px,5.4vw,70px)/1.13 'Plus Jakarta Sans',sans-serif;letter-spacing:-2px;margin:22px 0}.hero h1 span{background:linear-gradient(100deg,var(--gold),var(--pink),var(--cyan));background-clip:text;color:transparent}.hero p{font-size:18px;color:#d0cde8;max-width:660px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.hero-note{display:flex;gap:18px;flex-wrap:wrap;margin-top:25px;color:var(--muted);font-size:13px}.hero-note b{color:var(--lime)}.visual{position:relative;min-height:390px;display:grid;place-items:center}.orb{width:min(360px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 25%,#ffd166 0,#ff4f9a 24%,#9b7bff 53%,#252153 74%);box-shadow:0 0 90px #9b7bff40,inset -25px -35px 60px #08071b66;display:grid;place-items:center;position:relative}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #ffffff65;border-radius:50%;inset:-22px;transform:rotate(-20deg) scaleY(.33)}.orb:after{inset:-44px;transform:rotate(45deg) scaleY(.25);border-color:#41e7ff88}.orb-content{text-align:center;z-index:1}.orb-content .emoji{font-size:75px;filter:drop-shadow(0 10px 15px #21132c66)}.orb-content strong{display:block;font:900 30px 'Plus Jakarta Sans',sans-serif}.orb-content small{font-weight:800;color:#fff9}.float-card{position:absolute;background:#171632eF;border:1px solid #ffffff25;box-shadow:var(--shadow);padding:14px 17px;border-radius:17px;font-size:13px}.float-card b{display:block;color:var(--cyan);font-family:'Plus Jakarta Sans',sans-serif}.fc1{top:35px;right:0}.fc2{bottom:24px;left:0}.fc3{top:48%;right:-6px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.stat{background:#ffffff08;border:1px solid var(--line);padding:16px;border-radius:17px;text-align:center}.stat strong{font:900 24px 'Plus Jakarta Sans',sans-serif;color:var(--gold);display:block}.stat span{font-size:12px;color:var(--muted)}
-section{padding:62px 0}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:27px}.kicker{font:800 12px 'Plus Jakarta Sans',sans-serif;letter-spacing:1.8px;color:var(--cyan);text-transform:uppercase}.section-head h2{font-size:clamp(26px,3vw,39px);line-height:1.35;margin:5px 0 0;font-weight:900}.section-head p{margin:0;color:var(--muted);max-width:430px;font-size:14px}.grid{display:grid;gap:18px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.three{grid-template-columns:repeat(3,minmax(0,1fr))}.four{grid-template-columns:repeat(4,minmax(0,1fr))}.card{background:linear-gradient(145deg,#1b1939,#13122b);border:1px solid var(--line);border-radius:23px;padding:25px;box-shadow:var(--shadow)}.card h3{margin:0 0 10px;font-size:20px}.card p{color:#c8c5e1;margin:8px 0}.iconbox{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;font-size:23px;background:#41e7ff19;border:1px solid #41e7ff38;margin-bottom:16px}.accent-pink{border-top:3px solid var(--pink)}.accent-cyan{border-top:3px solid var(--cyan)}.accent-gold{border-top:3px solid var(--gold)}.accent-lime{border-top:3px solid var(--lime)}.example{direction:ltr;text-align:left;font:700 15px/1.8 'Plus Jakarta Sans',sans-serif;background:#09091a;border:1px solid #ffffff12;border-radius:15px;padding:15px;margin-top:14px;color:#fff}.example em{font-style:normal;color:var(--gold)}.translation{font-size:13px;color:var(--muted);margin-top:7px}
-.callout{border:1px solid #c4ff5540;background:linear-gradient(110deg,#c4ff5512,#41e7ff0a);border-radius:20px;padding:22px;display:flex;gap:15px;align-items:flex-start}.callout .big{font-size:30px}.callout strong{color:var(--lime)}
-.formula{display:flex;direction:ltr;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;padding:26px;background:linear-gradient(120deg,#9b7bff1a,#ff4f9a12,#41e7ff12);border:1px solid #9b7bff55;border-radius:23px}.token{padding:13px 17px;border-radius:13px;font:900 clamp(16px,2.5vw,25px) 'Plus Jakarta Sans',sans-serif;background:#ffffff0b;border:1px solid var(--line)}.token.will{color:var(--cyan);border-color:#41e7ff88}.token.have{color:var(--gold);border-color:#ffd16688}.token.v3{color:var(--lime);border-color:#c4ff5588}.plus{color:#aaa5ce;font-size:24px}
-.table-wrap{overflow:auto;border-radius:18px;border:1px solid var(--line)}table{border-collapse:collapse;width:100%;min-width:620px;background:#171632}th,td{padding:15px 18px;text-align:right;border-bottom:1px solid var(--line)}th{background:#29254d;color:var(--gold)}td:first-child{font-weight:800;color:var(--cyan)}tr:last-child td{border-bottom:0}.ltr{direction:ltr;text-align:left;font-family:'Plus Jakarta Sans',sans-serif}
-.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.timepoint{padding:18px;border-radius:17px;background:#ffffff08;border:1px solid var(--line);text-align:center}.timepoint .dot{width:14px;height:14px;border-radius:50%;background:var(--pink);margin:0 auto 10px;box-shadow:0 0 0 7px #ff4f9a1c}.timepoint:nth-child(2) .dot{background:var(--lime);box-shadow:0 0 0 7px #c4ff551c}.timepoint:nth-child(3) .dot{background:var(--cyan);box-shadow:0 0 0 7px #41e7ff1c}.timepoint strong{display:block}.timepoint span{font-size:12px;color:var(--muted)}
-.pill{display:inline-block;border-radius:99px;padding:5px 10px;font-size:11px;font-weight:900;background:#41e7ff18;color:var(--cyan);border:1px solid #41e7ff40}.mini-title{font-size:12px;font-weight:900;color:var(--pink);letter-spacing:1px}
-details{border:1px solid var(--line);border-radius:15px;background:#ffffff06;padding:15px 17px}details+details{margin-top:10px}summary{cursor:pointer;font-weight:800}details p{color:var(--muted);margin-bottom:0}
-.quiz{padding:26px}.question{font:800 16px/1.8 'Plus Jakarta Sans',sans-serif;direction:ltr;text-align:left;margin:12px 0 17px}.options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.option{background:#0c0b20;color:var(--ink);border:1px solid var(--line);border-radius:13px;padding:12px;text-align:left;direction:ltr;cursor:pointer}.option:hover{border-color:var(--cyan)}.option.correct{border-color:var(--lime);background:#c4ff5518;color:var(--lime)}.option.wrong{border-color:var(--pink);background:#ff4f9a18;color:#ff9bc2}.feedback{min-height:26px;margin-top:12px;font-weight:800;font-size:13px}.quiz-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px}.score{color:var(--gold);font-weight:900}
-.dialogue{display:grid;gap:12px}.line{display:flex;gap:12px;align-items:flex-start}.avatar{width:40px;height:40px;flex:0 0 40px;border-radius:14px;display:grid;place-items:center;background:#9b7bff30}.bubble{padding:13px 16px;border-radius:4px 16px 16px 16px;background:#ffffff09;border:1px solid var(--line);flex:1}.bubble b{color:var(--cyan)}.bubble .en{font-size:14px}.bubble small{display:block;color:var(--muted);margin-top:4px}
-.wordchips{display:flex;flex-wrap:wrap;gap:9px}.wordchips span{background:#ff4f9a12;border:1px solid #ff4f9a3b;color:#ff9bc2;border-radius:99px;padding:8px 12px;font-size:13px;font-weight:800}
-input[type=text],textarea{width:100%;background:#0c0b20;border:1px solid var(--line);color:var(--ink);padding:13px 15px;border-radius:13px;outline:none}input:focus,textarea:focus{border-color:var(--cyan)}.answer{display:none;color:var(--lime);margin-top:12px;font-weight:800}.answer.show{display:block}
-footer{border-top:1px solid var(--line);padding:34px 0;margin-top:30px;background:#09091a}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand .logo{width:48px;height:48px}.muted{color:var(--muted)}.toplink{color:var(--cyan);font-weight:800}
-@media(max-width:900px){nav{display:none}.hero-grid{grid-template-columns:1fr}.visual{min-height:350px;max-width:540px;width:100%;margin:auto}.three{grid-template-columns:repeat(2,minmax(0,1fr))}.four{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-head p{margin-top:10px}}
-@media(max-width:600px){.wrap{width:min(100% - 24px,1160px)}.hero{padding:48px 0 35px}.hero p{font-size:16px}.visual{min-height:300px}.orb{width:250px}.orb-content .emoji{font-size:55px}.orb-content strong{font-size:23px}.float-card{font-size:11px;padding:10px}.fc1{top:18px}.fc2{bottom:5px}.fc3{right:-1px}.stats{grid-template-columns:repeat(2,1fr)}section{padding:42px 0}.two,.three,.four{grid-template-columns:1fr}.card{padding:20px}.timeline{grid-template-columns:1fr}.options{grid-template-columns:1fr}.footer-inner{flex-direction:column;text-align:center}.formula{gap:7px;padding:16px}.token{padding:10px 11px}.nav{min-height:68px}.logo{width:47px;height:47px}}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
-</style>
-</head>
-<body>
-<header>
- <div class="wrap nav">
-  <a class="brand" href="#top" aria-label="Hinawi English home">
-   <img class="logo" src="[BASE64_IMAGE]" alt="Hinawi English logo">
-   <div><div class="brandname">HINAWI ENGLISH</div><div class="tag">Learn it. Use it. Own it.</div></div>
-  </a>
-  <nav aria-label="Main navigation">
-   <a href="#concept">الفكرة</a><a href="#formula">القاعدة</a><a href="#uses">الاستخدامات</a><a href="#compare">مقارنة الأزمنة</a><a href="#practice">التدريبات</a><a href="#homework">الواجب</a>
-  </nav>
-  <a class="nav-cta" href="#practice">ابدأ الاختبار <span>↗</span></a>
- </div>
-</header>
-<main id="top">
-<section class="hero">
- <div class="wrap hero-grid">
-  <div>
-   <div class="eyebrow">⚡ MASTERCLASS • GRAMMAR THAT STICKS</div>
-   <h1 class="en">Master the<br><span>Future Perfect</span><br>Tense.</h1>
-   <p>تخيّل إنك بتبص من المستقبل على حاجة هتكون خلصت قبل وقت محدد. دي بالظبط فكرة المستقبل التام، من غير تعقيد ولا حفظ أعمى.</p>
-   <div class="hero-actions"><a class="btn btn-primary" href="#concept">🚀 ابدأ الشرح</a><a class="btn btn-secondary" href="#practice">🎯 اختبر نفسك</a></div>
-   <div class="hero-note"><span>✦ <b>شرح بالمصري</b></span><span>✦ أمثلة واقعية</span><span>✦ اختبار تفاعلي</span><span>✦ واجب وإجابات</span></div>
-   <div class="stats"><div class="stat"><strong>01</strong><span>افهم الفكرة</span></div><div class="stat"><strong>02</strong><span>ركّب الجملة</span></div><div class="stat"><strong>03</strong><span>ميّز الأزمنة</span></div><div class="stat"><strong>04</strong><span>طبّق بنفسك</span></div></div>
-  </div>
-  <div class="visual" aria-label="Illustration of a future deadline">
-   <div class="orb"><div class="orb-content"><div class="emoji">⏳</div><strong class="en">DONE BY THEN.</strong><div class="en" style="font-size:12px;margin-top:8px">Future deadline • Completed action</div></div></div>
-   <div class="float-card fc1">📅 <b class="en">BY 8 PM</b>موعد نهائي</div>
-   <div class="float-card fc2">✅ <b class="en">WILL HAVE + V3</b>التركيبة الذهبية</div>
-   <div class="float-card fc3">✨ <b class="en">FINISHED</b>الحدث اكتمل</div>
-  </div>
- </div>
-</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10102a" />
+    <title>Future Perfect Masterclass | Henglish</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap");
+      :root {
+        --bg: #0c0b20;
+        --panel: #171632;
+        --panel2: #201d43;
+        --ink: #f7f5ff;
+        --muted: #b9b6d5;
+        --pink: #ff4f9a;
+        --cyan: #41e7ff;
+        --lime: #c4ff55;
+        --gold: #ffd166;
+        --purple: #9b7bff;
+        --line: rgba(255, 255, 255, 0.12);
+        --shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      }
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(
+            ellipse at 15% 5%,
+            rgba(155, 123, 255, 0.16),
+            transparent 30%
+          ),
+          radial-gradient(
+            ellipse at 90% 18%,
+            rgba(65, 231, 255, 0.11),
+            transparent 28%
+          ),
+          var(--bg);
+        color: var(--ink);
+        font-family: "Cairo", sans-serif;
+        line-height: 1.8;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      textarea {
+        font: inherit;
+      }
+      .en {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        direction: ltr;
+        text-align: left;
+        unicode-bidi: embed;
+      }
+      .wrap {
+        width: min(1160px, calc(100% - 36px));
+        margin: auto;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(12, 11, 32, 0.88);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav {
+        min-height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 14px rgba(255, 209, 102, 0.18));
+      }
+      .brandname {
+        font:
+          900 17px "Plus Jakarta Sans",
+          sans-serif;
+        letter-spacing: 1.2px;
+        color: var(--gold);
+      }
+      .tag {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        font-size: 13px;
+        font-weight: 800;
+        color: #dedbf4;
+      }
+      nav a:hover {
+        color: var(--cyan);
+      }
+      .nav-cta,
+      .btn {
+        border: 0;
+        border-radius: 14px;
+        padding: 12px 18px;
+        font-weight: 900;
+        cursor: pointer;
+        transition: 0.2s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+      .nav-cta,
+      .btn-primary {
+        background: linear-gradient(120deg, var(--gold), #ff9c66);
+        color: #21132c;
+        box-shadow: 0 8px 24px #ff9c6625;
+      }
+      .btn:hover,
+      .nav-cta:hover {
+        transform: translateY(-2px);
+        filter: brightness(1.08);
+      }
+      .btn-secondary {
+        background: #ffffff0c;
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+      .hero {
+        padding: 82px 0 72px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 48px;
+        align-items: center;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #ff4f9a18;
+        border: 1px solid #ff4f9a55;
+        color: #ff8bb9;
+        padding: 7px 14px;
+        border-radius: 99px;
+        font-weight: 900;
+        font-size: 13px;
+      }
+      .hero h1 {
+        font:
+          900 clamp(38px, 5.4vw, 70px)/1.13 "Plus Jakarta Sans",
+          sans-serif;
+        letter-spacing: -2px;
+        margin: 22px 0;
+      }
+      .hero h1 span {
+        background: linear-gradient(
+          100deg,
+          var(--gold),
+          var(--pink),
+          var(--cyan)
+        );
+        background-clip: text;
+        color: transparent;
+      }
+      .hero p {
+        font-size: 18px;
+        color: #d0cde8;
+        max-width: 660px;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 28px;
+      }
+      .hero-note {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        margin-top: 25px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .hero-note b {
+        color: var(--lime);
+      }
+      .visual {
+        position: relative;
+        min-height: 390px;
+        display: grid;
+        place-items: center;
+      }
+      .orb {
+        width: min(360px, 90%);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle at 35% 25%,
+          #ffd166 0,
+          #ff4f9a 24%,
+          #9b7bff 53%,
+          #252153 74%
+        );
+        box-shadow:
+          0 0 90px #9b7bff40,
+          inset -25px -35px 60px #08071b66;
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+      .orb:before,
+      .orb:after {
+        content: "";
+        position: absolute;
+        border: 1px solid #ffffff65;
+        border-radius: 50%;
+        inset: -22px;
+        transform: rotate(-20deg) scaleY(0.33);
+      }
+      .orb:after {
+        inset: -44px;
+        transform: rotate(45deg) scaleY(0.25);
+        border-color: #41e7ff88;
+      }
+      .orb-content {
+        text-align: center;
+        z-index: 1;
+      }
+      .orb-content .emoji {
+        font-size: 75px;
+        filter: drop-shadow(0 10px 15px #21132c66);
+      }
+      .orb-content strong {
+        display: block;
+        font:
+          900 30px "Plus Jakarta Sans",
+          sans-serif;
+      }
+      .orb-content small {
+        font-weight: 800;
+        color: #fff9;
+      }
+      .float-card {
+        position: absolute;
+        background: #171632ef;
+        border: 1px solid #ffffff25;
+        box-shadow: var(--shadow);
+        padding: 14px 17px;
+        border-radius: 17px;
+        font-size: 13px;
+      }
+      .float-card b {
+        display: block;
+        color: var(--cyan);
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .fc1 {
+        top: 35px;
+        right: 0;
+      }
+      .fc2 {
+        bottom: 24px;
+        left: 0;
+      }
+      .fc3 {
+        top: 48%;
+        right: -6px;
+      }
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin-top: 18px;
+      }
+      .stat {
+        background: #ffffff08;
+        border: 1px solid var(--line);
+        padding: 16px;
+        border-radius: 17px;
+        text-align: center;
+      }
+      .stat strong {
+        font:
+          900 24px "Plus Jakarta Sans",
+          sans-serif;
+        color: var(--gold);
+        display: block;
+      }
+      .stat span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      section {
+        padding: 62px 0;
+      }
+      .section-head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 27px;
+      }
+      .kicker {
+        font:
+          800 12px "Plus Jakarta Sans",
+          sans-serif;
+        letter-spacing: 1.8px;
+        color: var(--cyan);
+        text-transform: uppercase;
+      }
+      .section-head h2 {
+        font-size: clamp(26px, 3vw, 39px);
+        line-height: 1.35;
+        margin: 5px 0 0;
+        font-weight: 900;
+      }
+      .section-head p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 430px;
+        font-size: 14px;
+      }
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+      .two {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .three {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .four {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .card {
+        background: linear-gradient(145deg, #1b1939, #13122b);
+        border: 1px solid var(--line);
+        border-radius: 23px;
+        padding: 25px;
+        box-shadow: var(--shadow);
+      }
+      .card h3 {
+        margin: 0 0 10px;
+        font-size: 20px;
+      }
+      .card p {
+        color: #c8c5e1;
+        margin: 8px 0;
+      }
+      .iconbox {
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px;
+        font-size: 23px;
+        background: #41e7ff19;
+        border: 1px solid #41e7ff38;
+        margin-bottom: 16px;
+      }
+      .accent-pink {
+        border-top: 3px solid var(--pink);
+      }
+      .accent-cyan {
+        border-top: 3px solid var(--cyan);
+      }
+      .accent-gold {
+        border-top: 3px solid var(--gold);
+      }
+      .accent-lime {
+        border-top: 3px solid var(--lime);
+      }
+      .example {
+        direction: ltr;
+        text-align: left;
+        font:
+          700 15px/1.8 "Plus Jakarta Sans",
+          sans-serif;
+        background: #09091a;
+        border: 1px solid #ffffff12;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 14px;
+        color: #fff;
+      }
+      .example em {
+        font-style: normal;
+        color: var(--gold);
+      }
+      .translation {
+        font-size: 13px;
+        color: var(--muted);
+        margin-top: 7px;
+      }
+      .callout {
+        border: 1px solid #c4ff5540;
+        background: linear-gradient(110deg, #c4ff5512, #41e7ff0a);
+        border-radius: 20px;
+        padding: 22px;
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+      }
+      .callout .big {
+        font-size: 30px;
+      }
+      .callout strong {
+        color: var(--lime);
+      }
+      .formula {
+        display: flex;
+        direction: ltr;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 26px;
+        background: linear-gradient(120deg, #9b7bff1a, #ff4f9a12, #41e7ff12);
+        border: 1px solid #9b7bff55;
+        border-radius: 23px;
+      }
+      .token {
+        padding: 13px 17px;
+        border-radius: 13px;
+        font:
+          900 clamp(16px, 2.5vw, 25px) "Plus Jakarta Sans",
+          sans-serif;
+        background: #ffffff0b;
+        border: 1px solid var(--line);
+      }
+      .token.will {
+        color: var(--cyan);
+        border-color: #41e7ff88;
+      }
+      .token.have {
+        color: var(--gold);
+        border-color: #ffd16688;
+      }
+      .token.v3 {
+        color: var(--lime);
+        border-color: #c4ff5588;
+      }
+      .plus {
+        color: #aaa5ce;
+        font-size: 24px;
+      }
+      .table-wrap {
+        overflow: auto;
+        border-radius: 18px;
+        border: 1px solid var(--line);
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 620px;
+        background: #171632;
+      }
+      th,
+      td {
+        padding: 15px 18px;
+        text-align: right;
+        border-bottom: 1px solid var(--line);
+      }
+      th {
+        background: #29254d;
+        color: var(--gold);
+      }
+      td:first-child {
+        font-weight: 800;
+        color: var(--cyan);
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      .ltr {
+        direction: ltr;
+        text-align: left;
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .timeline {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .timepoint {
+        padding: 18px;
+        border-radius: 17px;
+        background: #ffffff08;
+        border: 1px solid var(--line);
+        text-align: center;
+      }
+      .timepoint .dot {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--pink);
+        margin: 0 auto 10px;
+        box-shadow: 0 0 0 7px #ff4f9a1c;
+      }
+      .timepoint:nth-child(2) .dot {
+        background: var(--lime);
+        box-shadow: 0 0 0 7px #c4ff551c;
+      }
+      .timepoint:nth-child(3) .dot {
+        background: var(--cyan);
+        box-shadow: 0 0 0 7px #41e7ff1c;
+      }
+      .timepoint strong {
+        display: block;
+      }
+      .timepoint span {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .pill {
+        display: inline-block;
+        border-radius: 99px;
+        padding: 5px 10px;
+        font-size: 11px;
+        font-weight: 900;
+        background: #41e7ff18;
+        color: var(--cyan);
+        border: 1px solid #41e7ff40;
+      }
+      .mini-title {
+        font-size: 12px;
+        font-weight: 900;
+        color: var(--pink);
+        letter-spacing: 1px;
+      }
+      details {
+        border: 1px solid var(--line);
+        border-radius: 15px;
+        background: #ffffff06;
+        padding: 15px 17px;
+      }
+      details + details {
+        margin-top: 10px;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 800;
+      }
+      details p {
+        color: var(--muted);
+        margin-bottom: 0;
+      }
+      .quiz {
+        padding: 26px;
+      }
+      .question {
+        font:
+          800 16px/1.8 "Plus Jakarta Sans",
+          sans-serif;
+        direction: ltr;
+        text-align: left;
+        margin: 12px 0 17px;
+      }
+      .options {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+      .option {
+        background: #0c0b20;
+        color: var(--ink);
+        border: 1px solid var(--line);
+        border-radius: 13px;
+        padding: 12px;
+        text-align: left;
+        direction: ltr;
+        cursor: pointer;
+      }
+      .option:hover {
+        border-color: var(--cyan);
+      }
+      .option.correct {
+        border-color: var(--lime);
+        background: #c4ff5518;
+        color: var(--lime);
+      }
+      .option.wrong {
+        border-color: var(--pink);
+        background: #ff4f9a18;
+        color: #ff9bc2;
+      }
+      .feedback {
+        min-height: 26px;
+        margin-top: 12px;
+        font-weight: 800;
+        font-size: 13px;
+      }
+      .quiz-controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 18px;
+      }
+      .score {
+        color: var(--gold);
+        font-weight: 900;
+      }
+      .dialogue {
+        display: grid;
+        gap: 12px;
+      }
+      .line {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+      }
+      .avatar {
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+        border-radius: 14px;
+        display: grid;
+        place-items: center;
+        background: #9b7bff30;
+      }
+      .bubble {
+        padding: 13px 16px;
+        border-radius: 4px 16px 16px 16px;
+        background: #ffffff09;
+        border: 1px solid var(--line);
+        flex: 1;
+      }
+      .bubble b {
+        color: var(--cyan);
+      }
+      .bubble .en {
+        font-size: 14px;
+      }
+      .bubble small {
+        display: block;
+        color: var(--muted);
+        margin-top: 4px;
+      }
+      .wordchips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+      .wordchips span {
+        background: #ff4f9a12;
+        border: 1px solid #ff4f9a3b;
+        color: #ff9bc2;
+        border-radius: 99px;
+        padding: 8px 12px;
+        font-size: 13px;
+        font-weight: 800;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        background: #0c0b20;
+        border: 1px solid var(--line);
+        color: var(--ink);
+        padding: 13px 15px;
+        border-radius: 13px;
+        outline: none;
+      }
+      input:focus,
+      textarea:focus {
+        border-color: var(--cyan);
+      }
+      .answer {
+        display: none;
+        color: var(--lime);
+        margin-top: 12px;
+        font-weight: 800;
+      }
+      .answer.show {
+        display: block;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 34px 0;
+        margin-top: 30px;
+        background: #09091a;
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+      }
+      .footer-brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .footer-brand .logo {
+        width: 48px;
+        height: 48px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .toplink {
+        color: var(--cyan);
+        font-weight: 800;
+      }
+      @media (max-width: 900px) {
+        nav {
+          display: none;
+        }
+        .hero-grid {
+          grid-template-columns: 1fr;
+        }
+        .visual {
+          min-height: 350px;
+          max-width: 540px;
+          width: 100%;
+          margin: auto;
+        }
+        .three {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .four {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .section-head {
+          display: block;
+        }
+        .section-head p {
+          margin-top: 10px;
+        }
+      }
+      @media (max-width: 600px) {
+        .wrap {
+          width: min(100% - 24px, 1160px);
+        }
+        .hero {
+          padding: 48px 0 35px;
+        }
+        .hero p {
+          font-size: 16px;
+        }
+        .visual {
+          min-height: 300px;
+        }
+        .orb {
+          width: 250px;
+        }
+        .orb-content .emoji {
+          font-size: 55px;
+        }
+        .orb-content strong {
+          font-size: 23px;
+        }
+        .float-card {
+          font-size: 11px;
+          padding: 10px;
+        }
+        .fc1 {
+          top: 18px;
+        }
+        .fc2 {
+          bottom: 5px;
+        }
+        .fc3 {
+          right: -1px;
+        }
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        section {
+          padding: 42px 0;
+        }
+        .two,
+        .three,
+        .four {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          padding: 20px;
+        }
+        .timeline {
+          grid-template-columns: 1fr;
+        }
+        .options {
+          grid-template-columns: 1fr;
+        }
+        .footer-inner {
+          flex-direction: column;
+          text-align: center;
+        }
+        .formula {
+          gap: 7px;
+          padding: 16px;
+        }
+        .token {
+          padding: 10px 11px;
+        }
+        .nav {
+          min-height: 68px;
+        }
+        .logo {
+          width: 47px;
+          height: 47px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#top" aria-label="Henglish home">
+          <img class="logo" src="[BASE64_IMAGE]" alt="Henglish logo" />
+          <div>
+            <div class="brandname">Henglish</div>
+            <div class="tag">Learn it. Use it. Own it.</div>
+          </div>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#concept">الفكرة</a><a href="#formula">القاعدة</a
+          ><a href="#uses">الاستخدامات</a><a href="#compare">مقارنة الأزمنة</a
+          ><a href="#practice">التدريبات</a><a href="#homework">الواجب</a>
+        </nav>
+        <a class="nav-cta" href="#practice">ابدأ الاختبار <span>↗</span></a>
+      </div>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <div class="eyebrow">⚡ MASTERCLASS • GRAMMAR THAT STICKS</div>
+            <h1 class="en">
+              Master the<br /><span>Future Perfect</span><br />Tense.
+            </h1>
+            <p>
+              تخيّل إنك بتبص من المستقبل على حاجة هتكون خلصت قبل وقت محدد. دي
+              بالظبط فكرة المستقبل التام، من غير تعقيد ولا حفظ أعمى.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#concept">🚀 ابدأ الشرح</a
+              ><a class="btn btn-secondary" href="#practice">🎯 اختبر نفسك</a>
+            </div>
+            <div class="hero-note">
+              <span>✦ <b>شرح بالمصري</b></span
+              ><span>✦ أمثلة واقعية</span><span>✦ اختبار تفاعلي</span
+              ><span>✦ واجب وإجابات</span>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <strong>01</strong><span>افهم الفكرة</span>
+              </div>
+              <div class="stat">
+                <strong>02</strong><span>ركّب الجملة</span>
+              </div>
+              <div class="stat">
+                <strong>03</strong><span>ميّز الأزمنة</span>
+              </div>
+              <div class="stat"><strong>04</strong><span>طبّق بنفسك</span></div>
+            </div>
+          </div>
+          <div class="visual" aria-label="Illustration of a future deadline">
+            <div class="orb">
+              <div class="orb-content">
+                <div class="emoji">⏳</div>
+                <strong class="en">DONE BY THEN.</strong>
+                <div class="en" style="font-size: 12px; margin-top: 8px">
+                  Future deadline • Completed action
+                </div>
+              </div>
+            </div>
+            <div class="float-card fc1">
+              📅 <b class="en">BY 8 PM</b>موعد نهائي
+            </div>
+            <div class="float-card fc2">
+              ✅ <b class="en">WILL HAVE + V3</b>التركيبة الذهبية
+            </div>
+            <div class="float-card fc3">
+              ✨ <b class="en">FINISHED</b>الحدث اكتمل
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="concept"><div class="wrap">
- <div class="section-head"><div><div class="kicker">01 / THE BIG IDEA</div><h2>يعني إيه Future Perfect؟ 🧠</h2></div><p>الموضوع مش إن الحدث هيحصل بس، المهم إنه هيكون خلص قبل نقطة مستقبلية.</p></div>
- <div class="grid two">
-  <article class="card accent-cyan"><div class="iconbox">🔭</div><h3>بص للمستقبل من نقطة أبعد</h3><p>بنستخدم المستقبل التام لما نتكلم عن فعل هيكون اكتمل قبل وقت أو حدث معين في المستقبل.</p><div class="example">By 8 p.m., I <em>will have finished</em> my homework.</div><div class="translation">قبل الساعة ٨ بالليل، هكون خلصت واجبي.</div></article>
-  <article class="card accent-pink"><div class="iconbox">🏁</div><h3>التركيز على النتيجة والاكتمال</h3><p>مش بنركّز على إنك هتكون في نص الفعل. بنركّز إنك هتكون خلصته قبل الموعد.</p><div class="example">By Friday, she <em>will have submitted</em> the report.</div><div class="translation">بحلول الجمعة، هتكون سلّمت التقرير.</div></article>
- </div>
- <div class="card" style="margin-top:18px"><h3>🕒 تخيّل الخط الزمني</h3><div class="timeline"><div class="timepoint"><div class="dot"></div><strong>دلوقتي</strong><span>إنت لسه بتبدأ أو بتخطط</span></div><div class="timepoint"><div class="dot"></div><strong>الحدث يكتمل</strong><span>الواجب خلص قبل الموعد</span></div><div class="timepoint"><div class="dot"></div><strong>الموعد المستقبلي</strong><span>By 8 p.m. / by Friday</span></div></div><p class="muted" style="font-size:13px;margin-top:15px">الحدث بيكون اكتمل عند الموعد أو قبله، مش شرط في نفس اللحظة بالضبط.</p></div>
-</div></section>
+      <section id="concept">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">01 / THE BIG IDEA</div>
+              <h2>يعني إيه Future Perfect؟ 🧠</h2>
+            </div>
+            <p>
+              الموضوع مش إن الحدث هيحصل بس، المهم إنه هيكون خلص قبل نقطة
+              مستقبلية.
+            </p>
+          </div>
+          <div class="grid two">
+            <article class="card accent-cyan">
+              <div class="iconbox">🔭</div>
+              <h3>بص للمستقبل من نقطة أبعد</h3>
+              <p>
+                بنستخدم المستقبل التام لما نتكلم عن فعل هيكون اكتمل قبل وقت أو
+                حدث معين في المستقبل.
+              </p>
+              <div class="example">
+                By 8 p.m., I <em>will have finished</em> my homework.
+              </div>
+              <div class="translation">
+                قبل الساعة ٨ بالليل، هكون خلصت واجبي.
+              </div>
+            </article>
+            <article class="card accent-pink">
+              <div class="iconbox">🏁</div>
+              <h3>التركيز على النتيجة والاكتمال</h3>
+              <p>
+                مش بنركّز على إنك هتكون في نص الفعل. بنركّز إنك هتكون خلصته قبل
+                الموعد.
+              </p>
+              <div class="example">
+                By Friday, she <em>will have submitted</em> the report.
+              </div>
+              <div class="translation">بحلول الجمعة، هتكون سلّمت التقرير.</div>
+            </article>
+          </div>
+          <div class="card" style="margin-top: 18px">
+            <h3>🕒 تخيّل الخط الزمني</h3>
+            <div class="timeline">
+              <div class="timepoint">
+                <div class="dot"></div>
+                <strong>دلوقتي</strong><span>إنت لسه بتبدأ أو بتخطط</span>
+              </div>
+              <div class="timepoint">
+                <div class="dot"></div>
+                <strong>الحدث يكتمل</strong><span>الواجب خلص قبل الموعد</span>
+              </div>
+              <div class="timepoint">
+                <div class="dot"></div>
+                <strong>الموعد المستقبلي</strong
+                ><span>By 8 p.m. / by Friday</span>
+              </div>
+            </div>
+            <p class="muted" style="font-size: 13px; margin-top: 15px">
+              الحدث بيكون اكتمل عند الموعد أو قبله، مش شرط في نفس اللحظة بالضبط.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section id="formula"><div class="wrap">
- <div class="section-head"><div><div class="kicker">02 / THE GOLDEN FORMULA</div><h2>القاعدة الذهبية ✨</h2></div><p>أربع قطع بسيطة. أهم حاجة ما تغيّرش <span class="en">have</span> إلى <span class="en">has</span>.</p></div>
- <div class="formula"><span class="token">Subject</span><span class="plus">+</span><span class="token will">will</span><span class="plus">+</span><span class="token have">have</span><span class="plus">+</span><span class="token v3">Past Participle (V3)</span></div>
- <div class="grid four" style="margin-top:18px">
-  <article class="card"><div class="mini-title">01 • SUBJECT</div><h3 class="en">I / She / They</h3><p>الفاعل: مين اللي هيعمل الفعل؟</p></article>
-  <article class="card accent-cyan"><div class="mini-title">02 • WILL</div><h3 class="en">will</h3><p>علامة المستقبل، ثابتة مع كل الفواعل.</p></article>
-  <article class="card accent-gold"><div class="mini-title">03 • HAVE</div><h3 class="en">have</h3><p>بتفضل <span class="en">have</span> حتى مع <span class="en">he / she / it</span>.</p></article>
-  <article class="card accent-lime"><div class="mini-title">04 • V3</div><h3 class="en">finished / written</h3><p>التصريف التالت للفعل الأساسي.</p></article>
- </div>
- <div class="grid two" style="margin-top:18px">
-  <article class="card accent-lime"><span class="pill">AFFIRMATIVE • الإثبات</span><div class="example">Subject + will have + V3</div><div class="example">They <em>will have arrived</em> by noon.</div><div class="translation">هيكونوا وصلوا قبل الضهر.</div></article>
-  <article class="card accent-pink"><span class="pill" style="color:#ff9bc2;background:#ff4f9a18;border-color:#ff4f9a40">NEGATIVE • النفي</span><div class="example">Subject + will not have + V3</div><div class="example">He <em>won't have finished</em> by six.</div><div class="translation">مش هيكون خلص قبل الساعة ستة.</div></article>
-  <article class="card accent-cyan"><span class="pill">YES / NO QUESTIONS</span><div class="example">Will + subject + have + V3?</div><div class="example"><em>Will</em> you <em>have completed</em> it by Friday?</div><div class="translation">هتكون خلصته بحلول الجمعة؟</div></article>
-  <article class="card accent-gold"><span class="pill">WH- QUESTIONS</span><div class="example">Wh-word + will + subject + have + V3?</div><div class="example">What <em>will</em> you <em>have achieved</em> by 2030?</div><div class="translation">هتكون حققت إيه بحلول سنة ٢٠٣٠؟</div></article>
- </div>
- <div class="callout" style="margin-top:18px"><div class="big">💡</div><div><strong>خد بالك من الفخ المشهور:</strong> بنقول <span class="en">She will have finished</span> مش <span class="en">She will has finished</span>. بعد <span class="en">will</span> بييجي المصدر، وده سبب إننا بنستخدم <span class="en">have</span>.</div></div>
-</div></section>
+      <section id="formula">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">02 / THE GOLDEN FORMULA</div>
+              <h2>القاعدة الذهبية ✨</h2>
+            </div>
+            <p>
+              أربع قطع بسيطة. أهم حاجة ما تغيّرش
+              <span class="en">have</span> إلى <span class="en">has</span>.
+            </p>
+          </div>
+          <div class="formula">
+            <span class="token">Subject</span><span class="plus">+</span
+            ><span class="token will">will</span><span class="plus">+</span
+            ><span class="token have">have</span><span class="plus">+</span
+            ><span class="token v3">Past Participle (V3)</span>
+          </div>
+          <div class="grid four" style="margin-top: 18px">
+            <article class="card">
+              <div class="mini-title">01 • SUBJECT</div>
+              <h3 class="en">I / She / They</h3>
+              <p>الفاعل: مين اللي هيعمل الفعل؟</p>
+            </article>
+            <article class="card accent-cyan">
+              <div class="mini-title">02 • WILL</div>
+              <h3 class="en">will</h3>
+              <p>علامة المستقبل، ثابتة مع كل الفواعل.</p>
+            </article>
+            <article class="card accent-gold">
+              <div class="mini-title">03 • HAVE</div>
+              <h3 class="en">have</h3>
+              <p>
+                بتفضل <span class="en">have</span> حتى مع
+                <span class="en">he / she / it</span>.
+              </p>
+            </article>
+            <article class="card accent-lime">
+              <div class="mini-title">04 • V3</div>
+              <h3 class="en">finished / written</h3>
+              <p>التصريف التالت للفعل الأساسي.</p>
+            </article>
+          </div>
+          <div class="grid two" style="margin-top: 18px">
+            <article class="card accent-lime">
+              <span class="pill">AFFIRMATIVE • الإثبات</span>
+              <div class="example">Subject + will have + V3</div>
+              <div class="example">
+                They <em>will have arrived</em> by noon.
+              </div>
+              <div class="translation">هيكونوا وصلوا قبل الضهر.</div>
+            </article>
+            <article class="card accent-pink">
+              <span
+                class="pill"
+                style="
+                  color: #ff9bc2;
+                  background: #ff4f9a18;
+                  border-color: #ff4f9a40;
+                "
+                >NEGATIVE • النفي</span
+              >
+              <div class="example">Subject + will not have + V3</div>
+              <div class="example">He <em>won't have finished</em> by six.</div>
+              <div class="translation">مش هيكون خلص قبل الساعة ستة.</div>
+            </article>
+            <article class="card accent-cyan">
+              <span class="pill">YES / NO QUESTIONS</span>
+              <div class="example">Will + subject + have + V3?</div>
+              <div class="example">
+                <em>Will</em> you <em>have completed</em> it by Friday?
+              </div>
+              <div class="translation">هتكون خلصته بحلول الجمعة؟</div>
+            </article>
+            <article class="card accent-gold">
+              <span class="pill">WH- QUESTIONS</span>
+              <div class="example">Wh-word + will + subject + have + V3?</div>
+              <div class="example">
+                What <em>will</em> you <em>have achieved</em> by 2030?
+              </div>
+              <div class="translation">هتكون حققت إيه بحلول سنة ٢٠٣٠؟</div>
+            </article>
+          </div>
+          <div class="callout" style="margin-top: 18px">
+            <div class="big">💡</div>
+            <div>
+              <strong>خد بالك من الفخ المشهور:</strong> بنقول
+              <span class="en">She will have finished</span> مش
+              <span class="en">She will has finished</span>. بعد
+              <span class="en">will</span> بييجي المصدر، وده سبب إننا بنستخدم
+              <span class="en">have</span>.
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="uses"><div class="wrap">
- <div class="section-head"><div><div class="kicker">03 / WHEN TO USE IT</div><h2>إمتى أستخدمه؟ 🎯</h2></div><p>أشهر الاستخدامات اللي هتقابلك في الكلام والكتابة.</p></div>
- <div class="grid three">
-  <article class="card accent-gold"><div class="iconbox">⏰</div><h3>قبل وقت مستقبلي</h3><p>لما تحدد وقت والفعل هيكون خلص قبله.</p><div class="example">By midnight, I <em>will have gone</em> to bed.</div></article>
-  <article class="card accent-cyan"><div class="iconbox">📋</div><h3>موعد تسليم أو Deadline</h3><p>مفيد للشغل، الدراسة، والمشروعات.</p><div class="example">We <em>will have finished</em> the project by Monday.</div></article>
-  <article class="card accent-pink"><div class="iconbox">🎂</div><h3>مدة أو إنجاز بحلول وقت</h3><p>بنوضح إن مدة أو إنجاز معين هيكون اكتمل عند نقطة مستقبلية.</p><div class="example">By June, she <em>will have worked</em> here for five years.</div></article>
- </div>
- <div class="card" style="margin-top:18px"><h3>🔑 كلمات وعبارات بتظهر معاه كتير</h3><div class="wordchips"><span>by tomorrow</span><span>by Friday</span><span>by then</span><span>by the time</span><span>by 2030</span><span>before</span><span>by the end of the year</span><span>in two hours</span></div><p class="muted" style="font-size:13px;margin-top:13px">الكلمات دي إشارات مفيدة، لكنها مش قاعدة آلية. افهم المعنى والسياق قبل ما تختار الزمن.</p></div>
-</div></section>
+      <section id="uses">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">03 / WHEN TO USE IT</div>
+              <h2>إمتى أستخدمه؟ 🎯</h2>
+            </div>
+            <p>أشهر الاستخدامات اللي هتقابلك في الكلام والكتابة.</p>
+          </div>
+          <div class="grid three">
+            <article class="card accent-gold">
+              <div class="iconbox">⏰</div>
+              <h3>قبل وقت مستقبلي</h3>
+              <p>لما تحدد وقت والفعل هيكون خلص قبله.</p>
+              <div class="example">
+                By midnight, I <em>will have gone</em> to bed.
+              </div>
+            </article>
+            <article class="card accent-cyan">
+              <div class="iconbox">📋</div>
+              <h3>موعد تسليم أو Deadline</h3>
+              <p>مفيد للشغل، الدراسة، والمشروعات.</p>
+              <div class="example">
+                We <em>will have finished</em> the project by Monday.
+              </div>
+            </article>
+            <article class="card accent-pink">
+              <div class="iconbox">🎂</div>
+              <h3>مدة أو إنجاز بحلول وقت</h3>
+              <p>بنوضح إن مدة أو إنجاز معين هيكون اكتمل عند نقطة مستقبلية.</p>
+              <div class="example">
+                By June, she <em>will have worked</em> here for five years.
+              </div>
+            </article>
+          </div>
+          <div class="card" style="margin-top: 18px">
+            <h3>🔑 كلمات وعبارات بتظهر معاه كتير</h3>
+            <div class="wordchips">
+              <span>by tomorrow</span><span>by Friday</span><span>by then</span
+              ><span>by the time</span><span>by 2030</span><span>before</span
+              ><span>by the end of the year</span><span>in two hours</span>
+            </div>
+            <p class="muted" style="font-size: 13px; margin-top: 13px">
+              الكلمات دي إشارات مفيدة، لكنها مش قاعدة آلية. افهم المعنى والسياق
+              قبل ما تختار الزمن.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section id="bytime"><div class="wrap">
- <div class="section-head"><div><div class="kicker">04 / TIME CLAUSES</div><h2>قاعدة <span class="en">By the time</span> ⚠️</h2></div><p>دي من أكتر النقاط اللي بتوقع الطلبة في الغلط.</p></div>
- <div class="grid two">
-  <article class="card accent-cyan"><h3>في الجملة الرئيسية</h3><p>استخدم المستقبل التام لو بتتكلم عن فعل هيكون خلص قبل الحدث التاني.</p><div class="example">I <em>will have eaten</em> by the time you arrive.</div><div class="translation">هكون أكلت قبل ما توصل.</div></article>
-  <article class="card accent-pink"><h3>بعد <span class="en">by the time</span></h3><p>لما بنتكلم عن المستقبل في جملة الزمن، بنستخدم غالبًا المضارع البسيط بدل <span class="en">will</span>.</p><div class="example">By the time he <em>gets</em> home, I will have left.</div><div class="translation">لما يوصل البيت، هكون أنا مشيت.</div></article>
- </div>
- <div class="callout" style="margin-top:18px"><div class="big">🚫</div><div><strong>ما تقولش:</strong> <span class="en">By the time he will arrive...</span><br>في جملة الزمن دي، الصياغة الطبيعية هي <span class="en">By the time he arrives...</span>.</div></div>
-</div></section>
+      <section id="bytime">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">04 / TIME CLAUSES</div>
+              <h2>قاعدة <span class="en">By the time</span> ⚠️</h2>
+            </div>
+            <p>دي من أكتر النقاط اللي بتوقع الطلبة في الغلط.</p>
+          </div>
+          <div class="grid two">
+            <article class="card accent-cyan">
+              <h3>في الجملة الرئيسية</h3>
+              <p>
+                استخدم المستقبل التام لو بتتكلم عن فعل هيكون خلص قبل الحدث
+                التاني.
+              </p>
+              <div class="example">
+                I <em>will have eaten</em> by the time you arrive.
+              </div>
+              <div class="translation">هكون أكلت قبل ما توصل.</div>
+            </article>
+            <article class="card accent-pink">
+              <h3>بعد <span class="en">by the time</span></h3>
+              <p>
+                لما بنتكلم عن المستقبل في جملة الزمن، بنستخدم غالبًا المضارع
+                البسيط بدل <span class="en">will</span>.
+              </p>
+              <div class="example">
+                By the time he <em>gets</em> home, I will have left.
+              </div>
+              <div class="translation">لما يوصل البيت، هكون أنا مشيت.</div>
+            </article>
+          </div>
+          <div class="callout" style="margin-top: 18px">
+            <div class="big">🚫</div>
+            <div>
+              <strong>ما تقولش:</strong>
+              <span class="en">By the time he will arrive...</span><br />في جملة
+              الزمن دي، الصياغة الطبيعية هي
+              <span class="en">By the time he arrives...</span>.
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="compare"><div class="wrap">
- <div class="section-head"><div><div class="kicker">05 / TENSE SHOWDOWN</div><h2>فرّق بين الأزمنة من غير صداع 🥊</h2></div><p>اختيار الزمن بيتحدد بالمعنى اللي عايز توصله، مش بالكلمة اللي حفظتها.</p></div>
- <div class="table-wrap"><table><thead><tr><th>الزمن</th><th>الفكرة</th><th>مثال</th><th>المعنى</th></tr></thead><tbody>
- <tr><td>Future Simple</td><td>حدث هيحصل في المستقبل</td><td class="ltr">I will finish at 8.</td><td>هخلص الساعة ٨.</td></tr>
- <tr><td>Future Continuous</td><td>حدث هيكون مستمر في وقت مستقبلي</td><td class="ltr">At 8, I will be working.</td><td>الساعة ٨ هكون لسه بشتغل.</td></tr>
- <tr><td>Future Perfect</td><td>حدث هيكون خلص قبل وقت مستقبلي</td><td class="ltr">By 8, I will have finished.</td><td>قبل الساعة ٨ هكون خلصت.</td></tr>
- <tr><td>Present Perfect</td><td>حدث له صلة بالحاضر</td><td class="ltr">I have finished my work.</td><td>أنا خلصت شغلي، والنتيجة مهمة دلوقتي.</td></tr>
- </tbody></table></div>
- <div class="grid three" style="margin-top:18px">
-  <article class="card"><span class="pill">SIMPLE</span><div class="example">I <em>will finish</em> by 8.</div><p>تركيز على الفعل المستقبلي نفسه. وممكن يكون مناسب حسب السياق.</p></article>
-  <article class="card accent-cyan"><span class="pill">CONTINUOUS</span><div class="example">At 8, I <em>will be working</em>.</div><p>في الساعة ٨ هكون في نص الشغل، مش بالضرورة خلصت.</p></article>
-  <article class="card accent-gold"><span class="pill">PERFECT</span><div class="example">By 8, I <em>will have finished</em>.</div><p>الأهم إن الشغل هيكون خلص قبل الموعد أو عنده.</p></article>
- </div>
-</div></section>
+      <section id="compare">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">05 / TENSE SHOWDOWN</div>
+              <h2>فرّق بين الأزمنة من غير صداع 🥊</h2>
+            </div>
+            <p>
+              اختيار الزمن بيتحدد بالمعنى اللي عايز توصله، مش بالكلمة اللي
+              حفظتها.
+            </p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>الزمن</th>
+                  <th>الفكرة</th>
+                  <th>مثال</th>
+                  <th>المعنى</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Future Simple</td>
+                  <td>حدث هيحصل في المستقبل</td>
+                  <td class="ltr">I will finish at 8.</td>
+                  <td>هخلص الساعة ٨.</td>
+                </tr>
+                <tr>
+                  <td>Future Continuous</td>
+                  <td>حدث هيكون مستمر في وقت مستقبلي</td>
+                  <td class="ltr">At 8, I will be working.</td>
+                  <td>الساعة ٨ هكون لسه بشتغل.</td>
+                </tr>
+                <tr>
+                  <td>Future Perfect</td>
+                  <td>حدث هيكون خلص قبل وقت مستقبلي</td>
+                  <td class="ltr">By 8, I will have finished.</td>
+                  <td>قبل الساعة ٨ هكون خلصت.</td>
+                </tr>
+                <tr>
+                  <td>Present Perfect</td>
+                  <td>حدث له صلة بالحاضر</td>
+                  <td class="ltr">I have finished my work.</td>
+                  <td>أنا خلصت شغلي، والنتيجة مهمة دلوقتي.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="grid three" style="margin-top: 18px">
+            <article class="card">
+              <span class="pill">SIMPLE</span>
+              <div class="example">I <em>will finish</em> by 8.</div>
+              <p>
+                تركيز على الفعل المستقبلي نفسه. وممكن يكون مناسب حسب السياق.
+              </p>
+            </article>
+            <article class="card accent-cyan">
+              <span class="pill">CONTINUOUS</span>
+              <div class="example">At 8, I <em>will be working</em>.</div>
+              <p>في الساعة ٨ هكون في نص الشغل، مش بالضرورة خلصت.</p>
+            </article>
+            <article class="card accent-gold">
+              <span class="pill">PERFECT</span>
+              <div class="example">By 8, I <em>will have finished</em>.</div>
+              <p>الأهم إن الشغل هيكون خلص قبل الموعد أو عنده.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section id="verbs"><div class="wrap">
- <div class="section-head"><div><div class="kicker">06 / V3 TOOLKIT</div><h2>أفعال محتاج تبقى جاهز بيها 📚</h2></div><p>المستقبل التام محتاج التصريف التالت، فخلّي الأفعال دي في جيبك.</p></div>
- <div class="table-wrap"><table><thead><tr><th>Base form (V1)</th><th>Past simple (V2)</th><th>Past participle (V3)</th><th>مثال</th></tr></thead><tbody>
- <tr><td class="ltr">finish</td><td class="ltr">finished</td><td class="ltr">finished</td><td class="ltr">will have finished</td></tr>
- <tr><td class="ltr">go</td><td class="ltr">went</td><td class="ltr">gone</td><td class="ltr">will have gone</td></tr>
- <tr><td class="ltr">write</td><td class="ltr">wrote</td><td class="ltr">written</td><td class="ltr">will have written</td></tr>
- <tr><td class="ltr">do</td><td class="ltr">did</td><td class="ltr">done</td><td class="ltr">will have done</td></tr>
- <tr><td class="ltr">see</td><td class="ltr">saw</td><td class="ltr">seen</td><td class="ltr">will have seen</td></tr>
- <tr><td class="ltr">make</td><td class="ltr">made</td><td class="ltr">made</td><td class="ltr">will have made</td></tr>
- <tr><td class="ltr">take</td><td class="ltr">took</td><td class="ltr">taken</td><td class="ltr">will have taken</td></tr>
- <tr><td class="ltr">learn</td><td class="ltr">learned / learnt</td><td class="ltr">learned / learnt</td><td class="ltr">will have learned</td></tr>
- </tbody></table></div>
-</div></section>
+      <section id="verbs">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">06 / V3 TOOLKIT</div>
+              <h2>أفعال محتاج تبقى جاهز بيها 📚</h2>
+            </div>
+            <p>
+              المستقبل التام محتاج التصريف التالت، فخلّي الأفعال دي في جيبك.
+            </p>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Base form (V1)</th>
+                  <th>Past simple (V2)</th>
+                  <th>Past participle (V3)</th>
+                  <th>مثال</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="ltr">finish</td>
+                  <td class="ltr">finished</td>
+                  <td class="ltr">finished</td>
+                  <td class="ltr">will have finished</td>
+                </tr>
+                <tr>
+                  <td class="ltr">go</td>
+                  <td class="ltr">went</td>
+                  <td class="ltr">gone</td>
+                  <td class="ltr">will have gone</td>
+                </tr>
+                <tr>
+                  <td class="ltr">write</td>
+                  <td class="ltr">wrote</td>
+                  <td class="ltr">written</td>
+                  <td class="ltr">will have written</td>
+                </tr>
+                <tr>
+                  <td class="ltr">do</td>
+                  <td class="ltr">did</td>
+                  <td class="ltr">done</td>
+                  <td class="ltr">will have done</td>
+                </tr>
+                <tr>
+                  <td class="ltr">see</td>
+                  <td class="ltr">saw</td>
+                  <td class="ltr">seen</td>
+                  <td class="ltr">will have seen</td>
+                </tr>
+                <tr>
+                  <td class="ltr">make</td>
+                  <td class="ltr">made</td>
+                  <td class="ltr">made</td>
+                  <td class="ltr">will have made</td>
+                </tr>
+                <tr>
+                  <td class="ltr">take</td>
+                  <td class="ltr">took</td>
+                  <td class="ltr">taken</td>
+                  <td class="ltr">will have taken</td>
+                </tr>
+                <tr>
+                  <td class="ltr">learn</td>
+                  <td class="ltr">learned / learnt</td>
+                  <td class="ltr">learned / learnt</td>
+                  <td class="ltr">will have learned</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-<section id="dialogue"><div class="wrap">
- <div class="section-head"><div><div class="kicker">07 / REAL-LIFE ENGLISH</div><h2>محادثة طبيعية: خطة قبل الجمعة 💬</h2></div><p>اقرأ الحوار بصوت عالي، وبعدها بدّل الأدوار مع زميلك.</p></div>
- <div class="grid two">
-  <article class="card"><div class="dialogue">
-   <div class="line"><div class="avatar">👩</div><div class="bubble"><b>Mona</b><div class="en">Will you have finished the presentation by Thursday?</div><small>هتكون خلصت العرض التقديمي بحلول الخميس؟</small></div></div>
-   <div class="line"><div class="avatar">👨</div><div class="bubble"><b>Omar</b><div class="en">Yes, I’ll have completed the slides by Wednesday night.</div><small>أيوه، هكون خلصت السلايدز ليلة الأربعاء.</small></div></div>
-   <div class="line"><div class="avatar">👩</div><div class="bubble"><b>Mona</b><div class="en">Great. I’ll have checked the references by then.</div><small>تمام، هكون راجعت المراجع بحلول الوقت ده.</small></div></div>
-   <div class="line"><div class="avatar">👨</div><div class="bubble"><b>Omar</b><div class="en">Perfect. We’ll have everything ready before the meeting.</div><small>ممتاز، هنكون جهّزنا كل حاجة قبل الاجتماع.</small></div></div>
-  </div></article>
-  <article class="card accent-gold"><div class="iconbox">🎤</div><h3>Speaking challenge</h3><p>اتكلم عن خططك باستخدام المستقبل التام. خليك محدد في الموعد.</p><details><summary>مثال يساعدك تبدأ</summary><p class="en" dir="ltr">By the end of this month, I will have learned 30 new English words.</p></details><details><summary>أسئلة تتدرّب عليها</summary><p class="en" dir="ltr">What will you have achieved by next year?<br>Will you have finished your current course by December?<br>How many books will you have read by the end of the year?</p></details><textarea rows="4" placeholder="اكتب إجابتك هنا بالإنجليزي..."></textarea><p class="muted" style="font-size:12px">المربع ده للتدريب داخل الصفحة، ومش بيبعت إجابتك لأي مكان.</p></article>
- </div>
-</div></section>
+      <section id="dialogue">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">07 / REAL-LIFE ENGLISH</div>
+              <h2>محادثة طبيعية: خطة قبل الجمعة 💬</h2>
+            </div>
+            <p>اقرأ الحوار بصوت عالي، وبعدها بدّل الأدوار مع زميلك.</p>
+          </div>
+          <div class="grid two">
+            <article class="card">
+              <div class="dialogue">
+                <div class="line">
+                  <div class="avatar">👩</div>
+                  <div class="bubble">
+                    <b>Mona</b>
+                    <div class="en">
+                      Will you have finished the presentation by Thursday?
+                    </div>
+                    <small>هتكون خلصت العرض التقديمي بحلول الخميس؟</small>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="avatar">👨</div>
+                  <div class="bubble">
+                    <b>Omar</b>
+                    <div class="en">
+                      Yes, I’ll have completed the slides by Wednesday night.
+                    </div>
+                    <small>أيوه، هكون خلصت السلايدز ليلة الأربعاء.</small>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="avatar">👩</div>
+                  <div class="bubble">
+                    <b>Mona</b>
+                    <div class="en">
+                      Great. I’ll have checked the references by then.
+                    </div>
+                    <small>تمام، هكون راجعت المراجع بحلول الوقت ده.</small>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="avatar">👨</div>
+                  <div class="bubble">
+                    <b>Omar</b>
+                    <div class="en">
+                      Perfect. We’ll have everything ready before the meeting.
+                    </div>
+                    <small>ممتاز، هنكون جهّزنا كل حاجة قبل الاجتماع.</small>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card accent-gold">
+              <div class="iconbox">🎤</div>
+              <h3>Speaking challenge</h3>
+              <p>اتكلم عن خططك باستخدام المستقبل التام. خليك محدد في الموعد.</p>
+              <details>
+                <summary>مثال يساعدك تبدأ</summary>
+                <p class="en" dir="ltr">
+                  By the end of this month, I will have learned 30 new English
+                  words.
+                </p>
+              </details>
+              <details>
+                <summary>أسئلة تتدرّب عليها</summary>
+                <p class="en" dir="ltr">
+                  What will you have achieved by next year?<br />Will you have
+                  finished your current course by December?<br />How many books
+                  will you have read by the end of the year?
+                </p>
+              </details>
+              <textarea
+                rows="4"
+                placeholder="اكتب إجابتك هنا بالإنجليزي..."
+              ></textarea>
+              <p class="muted" style="font-size: 12px">
+                المربع ده للتدريب داخل الصفحة، ومش بيبعت إجابتك لأي مكان.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section id="practice"><div class="wrap">
- <div class="section-head"><div><div class="kicker">08 / INTERACTIVE PRACTICE</div><h2>اختبر نفسك 🎮</h2></div><p>اختار إجابة واحدة لكل سؤال. النتيجة والتفسير هيظهروا فورًا.</p></div>
- <div class="grid two">
-  <article class="card quiz" data-answer="B" data-explain="بعد will بنستخدم have، وبعدها التصريف التالت found."><span class="pill">QUESTION 01 • BASIC</span><div class="question">By 2030, scientists ______ a cure for the disease.</div><div class="options"><button class="option" data-choice="A">A) will find</button><button class="option" data-choice="B">B) will have found</button><button class="option" data-choice="C">C) will has found</button><button class="option" data-choice="D">D) have found</button></div><div class="feedback" aria-live="polite"></div></article>
-  <article class="card quiz" data-answer="C" data-explain="بعد by the time نستخدم المضارع البسيط في جملة الزمن: arrives."><span class="pill">QUESTION 02 • TIME CLAUSE</span><div class="question">By the time my dad ______ home, I will have gone to bed.</div><div class="options"><button class="option" data-choice="A">A) will arrive</button><button class="option" data-choice="B">B) arrived</button><button class="option" data-choice="C">C) arrives</button><button class="option" data-choice="D">D) has arrive</button></div><div class="feedback" aria-live="polite"></div></article>
-  <article class="card quiz" data-answer="A" data-explain="النفي: will not have + V3، والاختصار won't have صحيح أيضًا."><span class="pill">QUESTION 03 • NEGATIVE</span><div class="question">They ______ the work by noon.</div><div class="options"><button class="option" data-choice="A">A) won’t have completed</button><button class="option" data-choice="B">B) won’t has completed</button><button class="option" data-choice="C">C) don’t have completed</button><button class="option" data-choice="D">D) not will complete</button></div><div class="feedback" aria-live="polite"></div></article>
-  <article class="card quiz" data-answer="D" data-explain="السؤال: Will + subject + have + V3? إذن Will she have finished...?"><span class="pill">QUESTION 04 • QUESTION FORM</span><div class="question">______ she ______ the report by Friday?</div><div class="options"><button class="option" data-choice="A">A) Does / have finished</button><button class="option" data-choice="B">B) Will / has finished</button><button class="option" data-choice="C">C) Has / will finish</button><button class="option" data-choice="D">D) Will / have finished</button></div><div class="feedback" aria-live="polite"></div></article>
-  <article class="card quiz" data-answer="B" data-explain="التصريف التالت من write هو written."><span class="pill">QUESTION 05 • V3</span><div class="question">By tomorrow, I will have ______ the email.</div><div class="options"><button class="option" data-choice="A">A) wrote</button><button class="option" data-choice="B">B) written</button><button class="option" data-choice="C">C) writing</button><button class="option" data-choice="D">D) write</button></div><div class="feedback" aria-live="polite"></div></article>
-  <article class="card quiz" data-answer="A" data-explain="At 9 p.m. يحدد نقطة مستقبلية، وby 9 p.m. يركّز على الاكتمال قبلها."><span class="pill">QUESTION 06 • MEANING</span><div class="question">Which sentence emphasizes completion before 9 p.m.?</div><div class="options"><button class="option" data-choice="A">A) By 9, I will have finished.</button><button class="option" data-choice="B">B) At 9, I will be finishing.</button><button class="option" data-choice="C">C) I finish at 9 every day.</button><button class="option" data-choice="D">D) I finished at 9 yesterday.</button></div><div class="feedback" aria-live="polite"></div></article>
- </div>
- <div class="card" style="margin-top:18px"><div class="quiz-controls"><span class="score" id="score">النتيجة: 0 / 6</span><button class="btn btn-primary" id="resetQuiz">↻ ابدأ الاختبار من جديد</button></div><p class="muted" style="font-size:12px;margin-bottom:0">كل سؤال عليه درجة واحدة. جرّب تجاوب لوحدك قبل ما تعيد الاختبار.</p></div>
-</div></section>
+      <section id="practice">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">08 / INTERACTIVE PRACTICE</div>
+              <h2>اختبر نفسك 🎮</h2>
+            </div>
+            <p>اختار إجابة واحدة لكل سؤال. النتيجة والتفسير هيظهروا فورًا.</p>
+          </div>
+          <div class="grid two">
+            <article
+              class="card quiz"
+              data-answer="B"
+              data-explain="بعد will بنستخدم have، وبعدها التصريف التالت found."
+            >
+              <span class="pill">QUESTION 01 • BASIC</span>
+              <div class="question">
+                By 2030, scientists ______ a cure for the disease.
+              </div>
+              <div class="options">
+                <button class="option" data-choice="A">A) will find</button
+                ><button class="option" data-choice="B">
+                  B) will have found</button
+                ><button class="option" data-choice="C">
+                  C) will has found</button
+                ><button class="option" data-choice="D">D) have found</button>
+              </div>
+              <div class="feedback" aria-live="polite"></div>
+            </article>
+            <article
+              class="card quiz"
+              data-answer="C"
+              data-explain="بعد by the time نستخدم المضارع البسيط في جملة الزمن: arrives."
+            >
+              <span class="pill">QUESTION 02 • TIME CLAUSE</span>
+              <div class="question">
+                By the time my dad ______ home, I will have gone to bed.
+              </div>
+              <div class="options">
+                <button class="option" data-choice="A">A) will arrive</button
+                ><button class="option" data-choice="B">B) arrived</button
+                ><button class="option" data-choice="C">C) arrives</button
+                ><button class="option" data-choice="D">D) has arrive</button>
+              </div>
+              <div class="feedback" aria-live="polite"></div>
+            </article>
+            <article
+              class="card quiz"
+              data-answer="A"
+              data-explain="النفي: will not have + V3، والاختصار won't have صحيح أيضًا."
+            >
+              <span class="pill">QUESTION 03 • NEGATIVE</span>
+              <div class="question">They ______ the work by noon.</div>
+              <div class="options">
+                <button class="option" data-choice="A">
+                  A) won’t have completed</button
+                ><button class="option" data-choice="B">
+                  B) won’t has completed</button
+                ><button class="option" data-choice="C">
+                  C) don’t have completed</button
+                ><button class="option" data-choice="D">
+                  D) not will complete
+                </button>
+              </div>
+              <div class="feedback" aria-live="polite"></div>
+            </article>
+            <article
+              class="card quiz"
+              data-answer="D"
+              data-explain="السؤال: Will + subject + have + V3? إذن Will she have finished...?"
+            >
+              <span class="pill">QUESTION 04 • QUESTION FORM</span>
+              <div class="question">
+                ______ she ______ the report by Friday?
+              </div>
+              <div class="options">
+                <button class="option" data-choice="A">
+                  A) Does / have finished</button
+                ><button class="option" data-choice="B">
+                  B) Will / has finished</button
+                ><button class="option" data-choice="C">
+                  C) Has / will finish</button
+                ><button class="option" data-choice="D">
+                  D) Will / have finished
+                </button>
+              </div>
+              <div class="feedback" aria-live="polite"></div>
+            </article>
+            <article
+              class="card quiz"
+              data-answer="B"
+              data-explain="التصريف التالت من write هو written."
+            >
+              <span class="pill">QUESTION 05 • V3</span>
+              <div class="question">
+                By tomorrow, I will have ______ the email.
+              </div>
+              <div class="options">
+                <button class="option" data-choice="A">A) wrote</button
+                ><button class="option" data-choice="B">B) written</button
+                ><button class="option" data-choice="C">C) writing</button
+                ><button class="option" data-choice="D">D) write</button>
+              </div>
+              <div class="feedback" aria-live="polite"></div>
+            </article>
+            <article
+              class="card quiz"
+              data-answer="A"
+              data-explain="At 9 p.m. يحدد نقطة مستقبلية، وby 9 p.m. يركّز على الاكتمال قبلها."
+            >
+              <span class="pill">QUESTION 06 • MEANING</span>
+              <div class="question">
+                Which sentence emphasizes completion before 9 p.m.?
+              </div>
+              <div class="options">
+                <button class="option" data-choice="A">
+                  A) By 9, I will have finished.</button
+                ><button class="option" data-choice="B">
+                  B) At 9, I will be finishing.</button
+                ><button class="option" data-choice="C">
+                  C) I finish at 9 every day.</button
+                ><button class="option" data-choice="D">
+                  D) I finished at 9 yesterday.
+                </button>
+              </div>
+              <div class="feedback" aria-live="polite"></div>
+            </article>
+          </div>
+          <div class="card" style="margin-top: 18px">
+            <div class="quiz-controls">
+              <span class="score" id="score">النتيجة: 0 / 6</span
+              ><button class="btn btn-primary" id="resetQuiz">
+                ↻ ابدأ الاختبار من جديد
+              </button>
+            </div>
+            <p class="muted" style="font-size: 12px; margin-bottom: 0">
+              كل سؤال عليه درجة واحدة. جرّب تجاوب لوحدك قبل ما تعيد الاختبار.
+            </p>
+          </div>
+        </div>
+      </section>
 
-<section id="homework"><div class="wrap">
- <div class="section-head"><div><div class="kicker">09 / HOMEWORK LAB</div><h2>الواجب المنزلي 📝</h2></div><p>حل بنفسك الأول. مفتاح الإجابات موجود تحت، بس ما تستسهلش وتبص عليه من أول دقيقة!</p></div>
- <div class="grid two">
-  <article class="card accent-cyan"><div class="iconbox">✍️</div><h3>Part A • Complete the sentences</h3><ol>
-   <li>By 10 p.m. tonight, I ______ (finish) my revision.</li>
-   <li>By next year, my brother ______ (graduate) from college.</li>
-   <li>They ______ (not / arrive) by noon.</li>
-   <li>______ you ______ (save) enough money by December?</li>
-   <li>By the time she ______ (get) home, we will have eaten.</li>
-   <li>What ______ you ______ (achieve) by 2030?</li>
-  </ol></article>
-  <article class="card accent-pink"><div class="iconbox">🌟</div><h3>Part B • Make it personal</h3><p>اكتب 3 جمل حقيقية عن أهدافك، ولازم كل جملة يكون فيها موعد مستقبلي.</p><textarea rows="5" placeholder="1. By the end of this year, I will have...&#10;2. By next summer, I will have...&#10;3. By the time I am 30, I will have..."></textarea><div style="margin-top:13px"><button class="btn btn-secondary" id="showAnswers">👀 إظهار / إخفاء مفتاح الإجابات</button></div><div class="answer" id="answerKey"><hr style="border-color:var(--line);margin:16px 0"><strong>Part A — Suggested answers</strong><br>1. will have finished<br>2. will have graduated<br>3. will not have arrived / won't have arrived<br>4. Will / have saved<br>5. gets<br>6. will / have achieved<br><span class="muted">في Part B مفيش إجابة واحدة ثابتة، المهم القاعدة والمعنى يكونوا صح.</span></div></article>
- </div>
- <div class="card" style="margin-top:18px"><h3>✅ قبل ما تسلّم، راجع نفسك</h3><div class="grid two"><label><input type="checkbox"> استخدمت will have في الإثبات.</label><label><input type="checkbox"> كتبت V3 مش V2.</label><label><input type="checkbox"> استخدمت won't have في النفي.</label><label><input type="checkbox"> بدأت السؤال بـ Will.</label><label><input type="checkbox"> استخدمت المضارع البسيط بعد by the time.</label><label><input type="checkbox"> حددت وقت أو نقطة مستقبلية واضحة.</label></div></div>
-</div></section>
+      <section id="homework">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">09 / HOMEWORK LAB</div>
+              <h2>الواجب المنزلي 📝</h2>
+            </div>
+            <p>
+              حل بنفسك الأول. مفتاح الإجابات موجود تحت، بس ما تستسهلش وتبص عليه
+              من أول دقيقة!
+            </p>
+          </div>
+          <div class="grid two">
+            <article class="card accent-cyan">
+              <div class="iconbox">✍️</div>
+              <h3>Part A • Complete the sentences</h3>
+              <ol>
+                <li>By 10 p.m. tonight, I ______ (finish) my revision.</li>
+                <li>
+                  By next year, my brother ______ (graduate) from college.
+                </li>
+                <li>They ______ (not / arrive) by noon.</li>
+                <li>______ you ______ (save) enough money by December?</li>
+                <li>By the time she ______ (get) home, we will have eaten.</li>
+                <li>What ______ you ______ (achieve) by 2030?</li>
+              </ol>
+            </article>
+            <article class="card accent-pink">
+              <div class="iconbox">🌟</div>
+              <h3>Part B • Make it personal</h3>
+              <p>
+                اكتب 3 جمل حقيقية عن أهدافك، ولازم كل جملة يكون فيها موعد
+                مستقبلي.
+              </p>
+              <textarea
+                rows="5"
+                placeholder="1. By the end of this year, I will have...&#10;2. By next summer, I will have...&#10;3. By the time I am 30, I will have..."
+              ></textarea>
+              <div style="margin-top: 13px">
+                <button class="btn btn-secondary" id="showAnswers">
+                  👀 إظهار / إخفاء مفتاح الإجابات
+                </button>
+              </div>
+              <div class="answer" id="answerKey">
+                <hr style="border-color: var(--line); margin: 16px 0" />
+                <strong>Part A — Suggested answers</strong><br />1. will have
+                finished<br />2. will have graduated<br />3. will not have
+                arrived / won't have arrived<br />4. Will / have saved<br />5.
+                gets<br />6. will / have achieved<br /><span class="muted"
+                  >في Part B مفيش إجابة واحدة ثابتة، المهم القاعدة والمعنى
+                  يكونوا صح.</span
+                >
+              </div>
+            </article>
+          </div>
+          <div class="card" style="margin-top: 18px">
+            <h3>✅ قبل ما تسلّم، راجع نفسك</h3>
+            <div class="grid two">
+              <label
+                ><input type="checkbox" /> استخدمت will have في الإثبات.</label
+              ><label><input type="checkbox" /> كتبت V3 مش V2.</label
+              ><label
+                ><input type="checkbox" /> استخدمت won't have في النفي.</label
+              ><label><input type="checkbox" /> بدأت السؤال بـ Will.</label
+              ><label
+                ><input type="checkbox" /> استخدمت المضارع البسيط بعد by the
+                time.</label
+              ><label
+                ><input type="checkbox" /> حددت وقت أو نقطة مستقبلية
+                واضحة.</label
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="quickreview"><div class="wrap">
- <div class="section-head"><div><div class="kicker">10 / THE 30-SECOND RECAP</div><h2>ملخص سريع قبل ما تمشي ⚡</h2></div><p>لو فاكر الخمس نقاط دول، إنت ماسك أساس الدرس.</p></div>
- <div class="grid three">
-  <article class="card accent-gold"><h3>1. المعنى</h3><p>حدث هيكون اكتمل قبل وقت مستقبلي أو عنده.</p></article>
-  <article class="card accent-cyan"><h3>2. التركيبة</h3><div class="example">will + have + V3</div></article>
-  <article class="card accent-pink"><h3>3. النفي</h3><div class="example">won't have + V3</div></article>
-  <article class="card accent-lime"><h3>4. السؤال</h3><div class="example">Will + subject + have + V3?</div></article>
-  <article class="card"><h3>5. فخ by the time</h3><p>غالبًا نستخدم المضارع البسيط في جملة الزمن: <span class="en">By the time he arrives...</span></p></article>
-  <article class="card"><h3>🏆 التحدي الأخير</h3><p>قول جملة واحدة عن حاجة هتكون خلصتها بحلول الجمعة، بصوت عالي ومن غير ما تقرأ.</p></article>
- </div>
-</div></section>
-</main>
-<footer><div class="wrap footer-inner"><div class="footer-brand"><img class="logo" src="[BASE64_IMAGE]" alt="Hinawi logo"><div><div class="brandname">HINAWI ENGLISH ACADEMY</div><div class="muted" style="font-size:12px">Grammar made clear. Confidence made real.</div></div></div><div class="muted" style="font-size:12px;text-align:center">صُمم للتعلّم والممارسة • © <span id="year"></span> Hinawi English</div><a class="toplink" href="#top">ارجع لفوق ↑</a></div></footer>
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-const quizzes=[...document.querySelectorAll('.quiz')];
-function updateScore(){let n=quizzes.filter(q=>q.dataset.done==='true'&&q.dataset.correct==='true').length;document.getElementById('score').textContent=`النتيجة: ${n} / ${quizzes.length}`;}
-quizzes.forEach(q=>{
- q.querySelectorAll('.option').forEach(btn=>btn.addEventListener('click',()=>{
-  if(q.dataset.done==='true')return;
-  const good=btn.dataset.choice===q.dataset.answer;
-  q.dataset.done='true';q.dataset.correct=String(good);
-  q.querySelectorAll('.option').forEach(b=>{b.disabled=true;if(b.dataset.choice===q.dataset.answer)b.classList.add('correct');});
-  if(!good)btn.classList.add('wrong');
-  const f=q.querySelector('.feedback');
-  f.textContent=(good?'✅ إجابة صحيحة! ':'❌ مش دي الإجابة. ')+q.dataset.explain;
-  f.style.color=good?'var(--lime)':'#ff9bc2';updateScore();
- }));
-});
-document.getElementById('resetQuiz').addEventListener('click',()=>{
- quizzes.forEach(q=>{delete q.dataset.done;delete q.dataset.correct;q.querySelectorAll('.option').forEach(b=>{b.disabled=false;b.classList.remove('correct','wrong');});q.querySelector('.feedback').textContent='';});updateScore();
-});
-document.getElementById('showAnswers').addEventListener('click',()=>document.getElementById('answerKey').classList.toggle('show'));
-</script>
-</body></html>
+      <section id="quickreview">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <div class="kicker">10 / THE 30-SECOND RECAP</div>
+              <h2>ملخص سريع قبل ما تمشي ⚡</h2>
+            </div>
+            <p>لو فاكر الخمس نقاط دول، إنت ماسك أساس الدرس.</p>
+          </div>
+          <div class="grid three">
+            <article class="card accent-gold">
+              <h3>1. المعنى</h3>
+              <p>حدث هيكون اكتمل قبل وقت مستقبلي أو عنده.</p>
+            </article>
+            <article class="card accent-cyan">
+              <h3>2. التركيبة</h3>
+              <div class="example">will + have + V3</div>
+            </article>
+            <article class="card accent-pink">
+              <h3>3. النفي</h3>
+              <div class="example">won't have + V3</div>
+            </article>
+            <article class="card accent-lime">
+              <h3>4. السؤال</h3>
+              <div class="example">Will + subject + have + V3?</div>
+            </article>
+            <article class="card">
+              <h3>5. فخ by the time</h3>
+              <p>
+                غالبًا نستخدم المضارع البسيط في جملة الزمن:
+                <span class="en">By the time he arrives...</span>
+              </p>
+            </article>
+            <article class="card">
+              <h3>🏆 التحدي الأخير</h3>
+              <p>
+                قول جملة واحدة عن حاجة هتكون خلصتها بحلول الجمعة، بصوت عالي ومن
+                غير ما تقرأ.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-inner">
+        <div class="footer-brand">
+          <img class="logo" src="[BASE64_IMAGE]" alt="Hinawi logo" />
+          <div>
+            <div class="brandname">Henglish ACADEMY</div>
+            <div class="muted" style="font-size: 12px">
+              Grammar made clear. Confidence made real.
+            </div>
+          </div>
+        </div>
+        <div class="muted" style="font-size: 12px; text-align: center">
+          صُمم للتعلّم والممارسة • © <span id="year"></span> Henglish
+        </div>
+        <a class="toplink" href="#top">ارجع لفوق ↑</a>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const quizzes = [...document.querySelectorAll(".quiz")];
+      function updateScore() {
+        let n = quizzes.filter(
+          (q) => q.dataset.done === "true" && q.dataset.correct === "true",
+        ).length;
+        document.getElementById("score").textContent =
+          `النتيجة: ${n} / ${quizzes.length}`;
+      }
+      quizzes.forEach((q) => {
+        q.querySelectorAll(".option").forEach((btn) =>
+          btn.addEventListener("click", () => {
+            if (q.dataset.done === "true") return;
+            const good = btn.dataset.choice === q.dataset.answer;
+            q.dataset.done = "true";
+            q.dataset.correct = String(good);
+            q.querySelectorAll(".option").forEach((b) => {
+              b.disabled = true;
+              if (b.dataset.choice === q.dataset.answer)
+                b.classList.add("correct");
+            });
+            if (!good) btn.classList.add("wrong");
+            const f = q.querySelector(".feedback");
+            f.textContent =
+              (good ? "✅ إجابة صحيحة! " : "❌ مش دي الإجابة. ") +
+              q.dataset.explain;
+            f.style.color = good ? "var(--lime)" : "#ff9bc2";
+            updateScore();
+          }),
+        );
+      });
+      document.getElementById("resetQuiz").addEventListener("click", () => {
+        quizzes.forEach((q) => {
+          delete q.dataset.done;
+          delete q.dataset.correct;
+          q.querySelectorAll(".option").forEach((b) => {
+            b.disabled = false;
+            b.classList.remove("correct", "wrong");
+          });
+          q.querySelector(".feedback").textContent = "";
+        });
+        updateScore();
+      });
+      document
+        .getElementById("showAnswers")
+        .addEventListener("click", () =>
+          document.getElementById("answerKey").classList.toggle("show"),
+        );
+    </script>
+  </body>
+</html>

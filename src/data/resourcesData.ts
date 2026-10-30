@@ -2,7 +2,7 @@ export interface LearningResource {
   id: string;
   title: string;
   subtitle: string;
-  category: 'revision' | 'worksheet' | 'verbs' | 'exam';
+  category: "revision" | "worksheet" | "verbs" | "exam";
   description: string;
   pages: number;
   badge: string;
@@ -12,16 +12,17 @@ export interface LearningResource {
 
 export const DOWNLOADABLE_RESOURCES: LearningResource[] = [
   {
-    id: 'res-cheat-sheet',
-    title: 'مذكرة المراجعة السريعة الشاملة (Cheat Sheet) ⚡',
-    subtitle: 'Future Perfect Master Summary',
-    category: 'revision',
-    description: 'ملخص مركز في صفحة واحدة يجمع القاعدة الذهبية، حالات النفي والسؤال، فخ by the time، والمقارنة مع باقي الأزمنة.',
+    id: "res-cheat-sheet",
+    title: "مذكرة المراجعة السريعة الشاملة (Cheat Sheet) ⚡",
+    subtitle: "Future Perfect Master Summary",
+    category: "revision",
+    description:
+      "ملخص مركز في صفحة واحدة يجمع القاعدة الذهبية، حالات النفي والسؤال، فخ by the time، والمقارنة مع باقي الأزمنة.",
     pages: 1,
-    badge: 'الأكثر تحميلاً',
-    downloadFilename: 'hinawi-future-perfect-summary.txt',
+    badge: "الأكثر تحميلاً",
+    downloadFilename: "hinawi-future-perfect-summary.txt",
     contentMarkdown: `==========================================================
-HINAWI ENGLISH ACADEMY — FUTURE PERFECT CHEAT SHEET
+Henglish ACADEMY — FUTURE PERFECT CHEAT SHEET
 ==========================================================
 القاعدة الذهبية (Golden Formula):
   [Subject] + will have + [Past Participle (V3)]
@@ -47,16 +48,17 @@ HINAWI ENGLISH ACADEMY — FUTURE PERFECT CHEAT SHEET
 ==========================================================`,
   },
   {
-    id: 'res-worksheet',
-    title: 'ورقة عمل وتمارين منزلية مع نموذج الإجابة 📝',
-    subtitle: 'Practice Worksheet & Answer Key',
-    category: 'worksheet',
-    description: 'تتضمن ١٠ أسئلة إكمال جمل، ٥ أسئلة تصحيح أخطاء، وسؤال كتابة شخصي، مع مفتاح إجابات نموذجي ومشروح.',
+    id: "res-worksheet",
+    title: "ورقة عمل وتمارين منزلية مع نموذج الإجابة 📝",
+    subtitle: "Practice Worksheet & Answer Key",
+    category: "worksheet",
+    description:
+      "تتضمن ١٠ أسئلة إكمال جمل، ٥ أسئلة تصحيح أخطاء، وسؤال كتابة شخصي، مع مفتاح إجابات نموذجي ومشروح.",
     pages: 2,
-    badge: 'تطبيقي',
-    downloadFilename: 'hinawi-future-perfect-worksheet.txt',
+    badge: "تطبيقي",
+    downloadFilename: "hinawi-future-perfect-worksheet.txt",
     contentMarkdown: `==========================================================
-HINAWI ENGLISH ACADEMY — HOMEWORK WORKSHEET
+Henglish ACADEMY — HOMEWORK WORKSHEET
 ==========================================================
 Part A • Complete with the correct Future Perfect form:
 1. By 10 p.m. tonight, I ______________ (finish) my revision.
@@ -89,16 +91,17 @@ Part B:
 ==========================================================`,
   },
   {
-    id: 'res-verbs',
-    title: 'دليل التصريف الثالث للأفعال الشائعة (V3 Guide) 📚',
-    subtitle: '50 Most Essential V3 Participles',
-    category: 'verbs',
-    description: 'جدول الأفعال الأكثر تكراراً في امتحانات اللغة الإنجليزية ومحادثات العمل مع التصريفات الثلاثة والترجمة.',
+    id: "res-verbs",
+    title: "دليل التصريف الثالث للأفعال الشائعة (V3 Guide) 📚",
+    subtitle: "50 Most Essential V3 Participles",
+    category: "verbs",
+    description:
+      "جدول الأفعال الأكثر تكراراً في امتحانات اللغة الإنجليزية ومحادثات العمل مع التصريفات الثلاثة والترجمة.",
     pages: 3,
-    badge: 'مرجع دائم',
-    downloadFilename: 'hinawi-v3-verbs-guide.txt',
+    badge: "مرجع دائم",
+    downloadFilename: "hinawi-v3-verbs-guide.txt",
     contentMarkdown: `==========================================================
-HINAWI ENGLISH ACADEMY — V1, V2, V3 ESSENTIAL TOOLKIT
+Henglish ACADEMY — V1, V2, V3 ESSENTIAL TOOLKIT
 ==========================================================
 V1 (Base)    | V2 (Past Simple) | V3 (Past Participle) | Meaning (AR)
 ----------------------------------------------------------

@@ -86,19 +86,31 @@ export const DialogueViewer: React.FC = () => {
         ))}
       </div>
 
-      {/* Active Dialogue Meta */}
-      <div className="p-4 rounded-2xl bg-[#09091a]/80 border border-white/10 mb-6 flex items-center justify-between">
-        <div>
-          <h4 className="font-bold text-white text-base">
-            {currentScenario.title}
-          </h4>
-          <p className="text-xs text-[#b9b6d5] mt-0.5">
-            {currentScenario.description}
-          </p>
+      {/* Active Dialogue Meta with Scene Image Banner */}
+      <div className="relative rounded-3xl overflow-hidden border border-white/10 mb-6 min-h-[140px] flex items-end">
+        {currentScenario.sceneImageUrl && (
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={currentScenario.sceneImageUrl} 
+              alt={currentScenario.title} 
+              className="w-full h-full object-cover filter brightness-[0.3]" 
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#09091a] via-[#09091a]/80 to-transparent" />
+          </div>
+        )}
+        <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 mb-2 inline-block">
+              {currentScenario.category}
+            </span>
+            <h4 className="font-black text-white text-lg sm:text-xl">
+              {currentScenario.title}
+            </h4>
+            <p className="text-xs sm:text-sm text-[#dedbf4] mt-1">
+              {currentScenario.description}
+            </p>
+          </div>
         </div>
-        <span className="px-2.5 py-1 rounded-xl text-xs font-bold bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
-          {currentScenario.category}
-        </span>
       </div>
 
       {/* Chat Dialogue Stream */}
@@ -111,9 +123,13 @@ export const DialogueViewer: React.FC = () => {
             transition={{ delay: idx * 0.1 }}
             className="flex items-start gap-3 sm:gap-4 p-4 rounded-2xl bg-[#171632]/80 border border-white/10 hover:border-white/20 transition-colors"
           >
-            {/* Avatar */}
-            <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#9b7bff]/30 to-[#41e7ff]/30 border border-white/20 flex items-center justify-center text-xl shrink-0 shadow-md">
-              {line.avatar}
+            {/* Real Avatar Photo with Emoji fallback */}
+            <div className="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-[#9b7bff]/30 to-[#41e7ff]/30 border border-white/20 flex items-center justify-center text-xl shrink-0 shadow-md">
+              {line.avatarUrl ? (
+                <img src={line.avatarUrl} alt={line.speaker} className="w-full h-full object-cover" />
+              ) : (
+                <span>{line.avatar}</span>
+              )}
             </div>
 
             {/* Bubble Content */}

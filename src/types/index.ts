@@ -1,18 +1,86 @@
 export type PageRoute = 
+  | 'dashboard'
   | 'home'
   | 'courses'
+  | 'grammar'
   | 'courses/grammar'
   | 'courses/grammar/future-perfect'
-  | 'lesson'
+  | 'vocabulary'
+  | 'speaking'
+  | 'listening'
+  | 'reading'
+  | 'writing'
+  | 'pronunciation'
+  | 'real-life'
+  | 'exams'
   | 'practice'
+  | 'my-learning'
+  | 'admin'
+  | 'lesson'
   | 'quizzes'
   | 'games'
-  | 'speaking'
-  | 'vocabulary'
   | 'homework'
   | 'progress'
   | 'resources'
   | 'about';
+
+export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+
+export type UserRole = 'student' | 'teacher' | 'admin';
+
+export interface UserProfile {
+  id: string;
+  name: string;
+  nameAr: string;
+  email: string;
+  avatar: string;
+  role: UserRole;
+  currentLevel: CEFRLevel;
+  targetLevel: CEFRLevel;
+  xp: number;
+  streakDays: number;
+  joinedDate: string;
+  bio?: string;
+}
+
+export interface DailyGoal {
+  id: string;
+  title: string;
+  titleAr: string;
+  target: number;
+  current: number;
+  unit: string;
+  completed: boolean;
+  type: 'lesson' | 'quiz' | 'flashcard' | 'speaking' | 'listening';
+}
+
+export interface AppNotification {
+  id: string;
+  title: string;
+  message: string;
+  timestamp: string;
+  read: boolean;
+  type: 'achievement' | 'assignment' | 'reminder' | 'system';
+  actionRoute?: PageRoute;
+}
+
+export interface PersonalNote {
+  id: string;
+  lessonId: string;
+  lessonTitle: string;
+  content: string;
+  updatedAt: string;
+}
+
+export interface BookmarkItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  route: PageRoute;
+  lessonId?: string;
+  category: string;
+  savedAt: string;
+}
 
 export interface TimelinePoint {
   label: string;
@@ -37,7 +105,11 @@ export interface LessonContent {
   subtitle: string;
   description: string;
   readTime: string;
-  level: 'مبتدئ' | 'متوسط' | 'متقدم';
+  level: 'مبتدئ' | 'متوسط' | 'متقدم' | CEFRLevel;
+  cefrLevel?: CEFRLevel;
+  academy?: 'grammar' | 'vocabulary' | 'speaking' | 'listening' | 'reading' | 'writing' | 'pronunciation' | 'real-life';
+  imageUrl?: string;
+  imageAlt?: string;
   timelinePoints: TimelinePoint[];
   formula?: {
     tokens: { text: string; color: 'subject' | 'will' | 'have' | 'v3' | 'time' | 'default'; label: string }[];
@@ -54,6 +126,7 @@ export interface LessonContent {
   commonMistakes: { wrong: string; correct: string; reason: string }[];
   miniQuiz: QuizQuestion[];
   homeworkPrompt?: string;
+  published?: boolean;
 }
 
 export interface QuizQuestion {
@@ -69,6 +142,7 @@ export interface QuizQuestion {
 export interface DialogueLine {
   speaker: string;
   avatar: string;
+  avatarUrl?: string;
   en: string;
   ar: string;
   targetStructure?: string;
@@ -81,6 +155,7 @@ export interface DialogueScenario {
   difficulty: 'مبتدئ' | 'متوسط' | 'متقدم';
   category: string;
   imageTheme: string;
+  sceneImageUrl?: string;
   lines: DialogueLine[];
   comprehensionQuestions: {
     question: string;
@@ -129,4 +204,19 @@ export interface UserProgressState {
   lastStudyDate: string;
   dailyChallengeCompleted: boolean;
   totalTimeMinutes: number;
+  notes?: PersonalNote[];
+  bookmarks?: BookmarkItem[];
+  dailyGoals?: DailyGoal[];
+  xp?: number;
+  level?: CEFRLevel;
+}
+
+export interface PlacementQuestion {
+  id: string;
+  level: CEFRLevel;
+  skill: 'grammar' | 'vocabulary' | 'reading' | 'usage';
+  question: string;
+  options: string[];
+  answer: number;
+  explanation: string;
 }

@@ -1,3 +1,5 @@
+import { ONLINE_IMAGES } from './imageAssets';
+
 export interface CourseItem {
   id: string;
   title: string;
@@ -11,6 +13,7 @@ export interface CourseItem {
   isFlagship?: boolean;
   tag: string;
   icon: string;
+  imageUrl?: string;
 }
 
 export const COURSES_CATALOG: CourseItem[] = [
@@ -27,6 +30,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     isFlagship: true,
     tag: 'الكورس الرائد 👑',
     icon: '⚡',
+    imageUrl: ONLINE_IMAGES.courses.futurePerfect,
   },
   {
     id: 'present-perfect',
@@ -40,6 +44,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     studentsCount: 2950,
     tag: 'قواعد حيوية',
     icon: '🎯',
+    imageUrl: ONLINE_IMAGES.courses.presentPerfect,
   },
   {
     id: 'conditionals',
@@ -53,6 +58,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     studentsCount: 1820,
     tag: 'قواعد متقدمة',
     icon: '🔮',
+    imageUrl: ONLINE_IMAGES.courses.conditionals,
   },
   {
     id: 'tech-english',
@@ -66,6 +72,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     studentsCount: 4210,
     tag: 'مهني وتقني',
     icon: '💻',
+    imageUrl: ONLINE_IMAGES.courses.techEnglish,
   },
   {
     id: 'business-writing',
@@ -79,6 +86,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     studentsCount: 2100,
     tag: 'بيئة العمل',
     icon: '✉️',
+    imageUrl: ONLINE_IMAGES.courses.businessWriting,
   },
   {
     id: 'ielts-speaking',
@@ -92,5 +100,6 @@ export const COURSES_CATALOG: CourseItem[] = [
     studentsCount: 3150,
     tag: 'شهادات دولية',
     icon: '🎙️',
+    imageUrl: ONLINE_IMAGES.courses.ieltsSpeaking,
   },
 ];

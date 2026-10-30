@@ -85,49 +85,59 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <span className="text-[#ffd166] font-bold">الدرس 0{currentLesson.number}</span>
       </nav>
 
-      {/* Lesson Header Banner */}
-      <header className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-4 relative overflow-hidden">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
-            {currentLesson.kicker}
-          </span>
-          <div className="flex items-center gap-3 text-xs text-[#b9b6d5]">
-            <span className="flex items-center gap-1 font-semibold">
-              <Clock className="w-3.5 h-3.5" />
-              {currentLesson.readTime}
-            </span>
-            <span className="px-2 py-0.5 rounded bg-white/5 text-[#c4ff55] font-bold">
-              {currentLesson.level}
-            </span>
+      {/* Lesson Header Banner with Online Photo Hero */}
+      <header className="glass-panel rounded-3xl border border-white/10 overflow-hidden relative">
+        {currentLesson.imageUrl && (
+          <div className="h-56 sm:h-72 w-full relative overflow-hidden">
+            <img 
+              src={currentLesson.imageUrl} 
+              alt={currentLesson.imageAlt || currentLesson.title} 
+              className="w-full h-full object-cover filter brightness-[0.4]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
+            <div className="absolute top-4 right-4 flex items-center gap-2">
+              <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/90 text-[#21132c] shadow-md">
+                {currentLesson.kicker}
+              </span>
+              <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-[#09091a]/80 text-[#c4ff55] border border-white/10 backdrop-blur-md">
+                {currentLesson.level}
+              </span>
+            </div>
+            <div className="absolute top-4 left-4 flex items-center gap-1.5 text-xs text-white/90 bg-[#09091a]/80 px-3 py-1 rounded-full backdrop-blur-md border border-white/10">
+              <Clock className="w-3.5 h-3.5 text-[#ffd166]" />
+              <span>{currentLesson.readTime}</span>
+            </div>
           </div>
-        </div>
+        )}
 
-        <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
-          {currentLesson.title}
-        </h1>
-        <div className="flex items-center gap-3">
-          <span className="en text-sm sm:text-base font-bold text-[#41e7ff]">
-            {currentLesson.subtitle}
-          </span>
-          <button
-            onClick={() => speakEnglish(currentLesson.subtitle)}
-            className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-[#41e7ff] transition-colors cursor-pointer"
-            title="استمع للعنوان بالإنجليزي"
-          >
-            <Volume2 className="w-3.5 h-3.5" />
-          </button>
-        </div>
+        <div className="p-6 sm:p-10 space-y-4 relative z-10 -mt-6">
+          <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
+            {currentLesson.title}
+          </h1>
+          <div className="flex items-center gap-3">
+            <span className="en text-sm sm:text-base font-bold text-[#41e7ff]">
+              {currentLesson.subtitle}
+            </span>
+            <button
+              onClick={() => speakEnglish(currentLesson.subtitle)}
+              className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-[#41e7ff] transition-colors cursor-pointer"
+              title="استمع للعنوان بالإنجليزي"
+            >
+              <Volume2 className="w-3.5 h-3.5" />
+            </button>
+          </div>
 
-        <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
-          {currentLesson.description}
-        </p>
+          <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
+            {currentLesson.description}
+          </p>
 
-        {/* Key Takeaway Callout */}
-        <div className="mt-4 p-4 rounded-2xl bg-gradient-to-r from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 flex items-start gap-3">
-          <Lightbulb className="w-5 h-5 text-[#ffd166] shrink-0 mt-0.5" />
-          <div className="text-sm text-white leading-relaxed">
-            <strong className="text-[#ffd166]">الخلاصة الجوهرية: </strong>
-            {currentLesson.keyTakeaway}
+          {/* Key Takeaway Callout */}
+          <div className="mt-4 p-4 rounded-2xl bg-gradient-to-r from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 flex items-start gap-3">
+            <Lightbulb className="w-5 h-5 text-[#ffd166] shrink-0 mt-0.5" />
+            <div className="text-sm text-white leading-relaxed">
+              <strong className="text-[#ffd166]">الخلاصة الجوهرية: </strong>
+              {currentLesson.keyTakeaway}
+            </div>
           </div>
         </div>
       </header>

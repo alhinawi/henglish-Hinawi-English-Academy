@@ -1,4 +1,5 @@
 import { DialogueScenario } from '../types';
+import { ONLINE_IMAGES } from './imageAssets';
 
 export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
   {
@@ -8,10 +9,12 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
     difficulty: 'مبتدئ',
     category: 'Education & Exams',
     imageTheme: 'study',
+    sceneImageUrl: ONLINE_IMAGES.dialogueScenes.study,
     lines: [
       {
         speaker: 'منى (Mona)',
         avatar: '👩‍🎓',
+        avatarUrl: ONLINE_IMAGES.avatars.mona,
         en: 'Omar, will you have finished revising the grammar units by Thursday night?',
         ar: 'عمر، هل هتكون خلصت مراجعة وحدات القواعد قبل ليلة الخميس؟',
         targetStructure: 'will you have finished',
@@ -19,6 +22,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'عمر (Omar)',
         avatar: '👨‍🎓',
+        avatarUrl: ONLINE_IMAGES.avatars.omar,
         en: 'Yes, I’ll have completed all six chapters by Wednesday evening, insha’Allah.',
         ar: 'أيوه، هكون خلصت الفصول الستة كاملة قبل مساء الأربعاء إن شاء الله.',
         targetStructure: "I'll have completed",
@@ -26,6 +30,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'منى (Mona)',
         avatar: '👩‍🎓',
+        avatarUrl: ONLINE_IMAGES.avatars.mona,
         en: 'That’s awesome! I’ll have reviewed all past exams and vocabulary by then too.',
         ar: 'ممتاز جداً! أنا كمان هكون راجعت كل امتحانات السنين السابقة والكلمات بحلول ذلك الوقت.',
         targetStructure: "I'll have reviewed",
@@ -33,6 +38,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'عمر (Omar)',
         avatar: '👨‍🎓',
+        avatarUrl: ONLINE_IMAGES.avatars.omar,
         en: 'Perfect. That means by Friday morning, we’ll have solved every single practice test together.',
         ar: 'عظيم. ده معناه إن بحلول صباح الجمعة، هنكون حلينا كل نماذج الاختبارات سوا.',
         targetStructure: "we'll have solved",
@@ -54,10 +60,12 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
     difficulty: 'متوسط',
     category: 'Software Engineering & Deadlines',
     imageTheme: 'coding',
+    sceneImageUrl: ONLINE_IMAGES.dialogueScenes.coding,
     lines: [
       {
         speaker: 'ليلى (Laila - Tech Lead)',
         avatar: '👩‍💻',
+        avatarUrl: ONLINE_IMAGES.avatars.laila,
         en: 'Karim, will the frontend team have integrated the new payment gateway by tomorrow?',
         ar: 'كريم، هل فريق الواجهات هيكون دمج بوابة الدفع الجديدة قبل بكرة؟',
         targetStructure: 'will the frontend team have integrated',
@@ -65,6 +73,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'كريم (Karim - Senior Dev)',
         avatar: '👨‍💻',
+        avatarUrl: ONLINE_IMAGES.avatars.karim,
         en: 'Yes, we will have merged all pull requests by 2 p.m. today.',
         ar: 'نعم، هنكون دمجنا كل طلبات التعديل (Pull Requests) قبل الساعة ٢ ظهراً اليوم.',
         targetStructure: 'will have merged',
@@ -72,6 +81,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'ليلى (Laila - Tech Lead)',
         avatar: '👩‍💻',
+        avatarUrl: ONLINE_IMAGES.avatars.laila,
         en: 'Great. The QA team will have performed all automated stress tests by 5 p.m.',
         ar: 'رائع. فريق فحص الجودة هيكون أجرى كل اختبارات الضغط الآلية قبل الساعة ٥ مساءً.',
         targetStructure: 'will have performed',
@@ -79,6 +89,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'كريم (Karim - Senior Dev)',
         avatar: '👨‍💻',
+        avatarUrl: ONLINE_IMAGES.avatars.karim,
         en: 'Excellent! By the time the client tests the staging environment, we will have deployed the zero-bug build.',
         ar: 'ممتاز! على ما العميل يختبر البيئة التجريبية، هنكون رفعنا النسخة الخالية من الأخطاء تماماً.',
         targetStructure: 'will have deployed',
@@ -105,10 +116,12 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
     difficulty: 'مبتدئ',
     category: 'Travel & Airports',
     imageTheme: 'travel',
+    sceneImageUrl: ONLINE_IMAGES.dialogueScenes.travel,
     lines: [
       {
         speaker: 'طارق (Tariq)',
         avatar: '🧳',
+        avatarUrl: ONLINE_IMAGES.avatars.tariq,
         en: 'Hassan, we must hurry! By the time we reach Terminal 3, the check-in desk will have closed!',
         ar: 'حسن، لازم نتحرك بسرعة! على ما نوصل صالة ٣، كاونتر تسجيل الدخول هيكون قفل!',
         targetStructure: 'will have closed',
@@ -116,6 +129,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'حسن (Hassan)',
         avatar: '🚗',
+        avatarUrl: ONLINE_IMAGES.avatars.hassan,
         en: 'Don’t panic, Tariq. I checked the highway traffic. We will have arrived at the airport by 7:15.',
         ar: 'متقلقش يا طارق. أنا شوفت حركة الطريق السريع، هنكون وصلنا المطار قبل ٧:١٥.',
         targetStructure: 'will have arrived',
@@ -123,6 +137,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'طارق (Tariq)',
         avatar: '🧳',
+        avatarUrl: ONLINE_IMAGES.avatars.tariq,
         en: 'Are you sure? Will the flight crew have boarded all passengers by then?',
         ar: 'هل أنت متأكد؟ هل طاقم الطائرة هيكون صعد كل الركاب بحلول ذلك الوقت؟',
         targetStructure: 'Will the flight crew have boarded',
@@ -130,6 +145,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'حسن (Hassan)',
         avatar: '🚗',
+        avatarUrl: ONLINE_IMAGES.avatars.hassan,
         en: 'No, boarding starts at 7:45. We will have checked our luggage and passed passport control well before that.',
         ar: 'لا، الصعود بيبدأ ٧:٤٥. هنكون سلمنا الشنط وعبرنا الجوازات قبل كده بوقت كافي.',
         targetStructure: 'We will have checked ... and passed',
@@ -156,10 +172,12 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
     difficulty: 'متقدم',
     category: 'Job Interviews & Career',
     imageTheme: 'career',
+    sceneImageUrl: ONLINE_IMAGES.dialogueScenes.career,
     lines: [
       {
         speaker: 'المحاور (Interviewer)',
         avatar: '👔',
+        avatarUrl: ONLINE_IMAGES.avatars.interviewer,
         en: 'Nour, where do you envision your professional career in five years from today?',
         ar: 'نور، شايفة مسارك المهني فين بعد ٥ سنين من النهاردة؟',
         targetStructure: 'in five years',
@@ -167,6 +185,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'نور (Nour)',
         avatar: '👩‍💼',
+        avatarUrl: ONLINE_IMAGES.avatars.nour,
         en: 'By 2031, I will have earned my Master’s degree in Data Science and spearheaded major AI initiatives.',
         ar: 'بحلول سنة ٢٠٣١، هكون حصلت على درجة الماجستير في علم البيانات وقودت مبادرات كبرى في الذكاء الاصطناعي.',
         targetStructure: 'I will have earned ... and spearheaded',
@@ -174,6 +193,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'المحاور (Interviewer)',
         avatar: '👔',
+        avatarUrl: ONLINE_IMAGES.avatars.interviewer,
         en: 'Impressive! And how will you have contributed to our department’s growth by then?',
         ar: 'مبهر! وإزاي هتكوني ساهمتي في نمو قسمنا بحلول ذلك الوقت؟',
         targetStructure: 'will you have contributed',
@@ -181,6 +201,7 @@ export const REAL_LIFE_DIALOGUES: DialogueScenario[] = [
       {
         speaker: 'نور (Nour)',
         avatar: '👩‍💼',
+        avatarUrl: ONLINE_IMAGES.avatars.nour,
         en: 'I will have trained a squad of junior engineers and optimized our data pipelines to achieve 99.9% uptime.',
         ar: 'هكون دربت فريقاً من المهندسين المبتدئين وطورت خطوط تدفق البيانات لتحقيق كفاءة تشغيل ٩٩.٩٪.',
         targetStructure: 'I will have trained ... and optimized',

@@ -1,4 +1,5 @@
 import { LessonContent } from '../types';
+import { ONLINE_IMAGES } from './imageAssets';
 
 export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
   {
@@ -10,6 +11,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'يعني إيه Future Perfect؟ وليه بنحتاجه لما نتكلم عن المستقبل؟ نظرة غير معقدة تفهمك الفكرة في ثواني.',
     readTime: '6 دقائق',
     level: 'مبتدئ',
+    imageUrl: ONLINE_IMAGES.lessons.lesson1,
+    imageAlt: 'Hourglass representing time running out before a future deadline',
     keyTakeaway: 'المستقبل التام لا يركز على مجرد حدوث الفعل، بل يركز على اكتمال الفعل وانتهاء أمره قبل نقطة زمنية محددة في المستقبل.',
     timelinePoints: [
       {
@@ -109,6 +112,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'أربع قطع بسيطة وسحرية لبناء أي جملة في المستقبل التام دون أي ارتباك.',
     readTime: '7 دقائق',
     level: 'مبتدئ',
+    imageUrl: ONLINE_IMAGES.lessons.lesson2,
+    imageAlt: 'Blueprint and architecture structure representing sentence construction',
     keyTakeaway: 'القاعدة ثابتة مع كل الضمائر: Subject + will + have + Past Participle (V3). لا تتغير have إلى has أبداً.',
     formula: {
       tokens: [
@@ -204,6 +209,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'كيف تعبر عن شيء لن يكتمل قبل موعد محدد؟ احتراف النفي واستخدام won\'t have بكل ثقة.',
     readTime: '6 دقائق',
     level: 'مبتدئ',
+    imageUrl: ONLINE_IMAGES.lessons.lesson3,
+    imageAlt: 'Clock and stop deadline representing negative completion',
     keyTakeaway: 'للنفي نضع not بعد will مباشرة فتصبح will not have + V3، واختصارها الشهير والشائع جداً هو won\'t have.',
     formula: {
       tokens: [
@@ -304,6 +311,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'إزاي تسأل حد: "هتكون خلصت قبل المعاد؟" و"هتكون حققت إيه بحلول سنة كذا؟".',
     readTime: '7 دقائق',
     level: 'متوسط',
+    imageUrl: ONLINE_IMAGES.lessons.lesson4,
+    imageAlt: 'Professional colleagues discussing deadlines in a business meeting',
     keyTakeaway: 'في أسئلة Yes/No نبدأ بـ Will + Subject + have + V3? وفي أسئلة WH- نضع أداة الاستفهام في البداية.',
     formula: {
       tokens: [
@@ -404,6 +413,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'الكلمات المفتاحية اللي لما تشوفها تعرف إنك في منطقة المستقبل التام: By, Before, In, By the end of.',
     readTime: '6 دقائق',
     level: 'متوسط',
+    imageUrl: ONLINE_IMAGES.lessons.lesson5,
+    imageAlt: 'Calendar desk planner showing deadlines and time expressions',
     keyTakeaway: 'الكلمات الدالة ليست قواعد آلية عمياء، بل هي إشارات سياقية تدل على وجود نقطة مرجعية مستقبلية ينتهي الحدث قبلها.',
     timelinePoints: [
       { label: 'By tomorrow', sublabel: 'بحلول الغد', detail: 'أي وقت قبل انتهاء يوم غد.' },
@@ -495,6 +506,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'أشهر فخ في امتحانات الثانوية العامة والشهادات الدولية: إمتى نستخدم المضارع البسيط وإمتى نستخدم will have؟',
     readTime: '8 دقائق',
     level: 'متوسط',
+    imageUrl: ONLINE_IMAGES.lessons.lesson6,
+    imageAlt: 'Airport terminal gate showing flight departures and arrivals',
     keyTakeaway: 'في جملة الوقت (بعد by the time, when, before) نستخدم المضارع البسيط وليس will، بينما تأتي will have في الجملة الرئيسية (Main Clause).',
     formula: {
       tokens: [
@@ -589,6 +602,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'المعركة الحاسمة بين أزمنة المستقبل والحاضر التام. كيف تختار الزمن بدقة متناهية بناءً على المعنى.',
     readTime: '9 دقائق',
     level: 'متقدم',
+    imageUrl: ONLINE_IMAGES.lessons.lesson7,
+    imageAlt: 'Runner crossing the finish line representing tense completion',
     keyTakeaway: 'اختيار الزمن يعتمد على ما تريد تسليط الضوء عليه: الحدوث البسيط (will do)، الاستمرارية في اللحظة (will be doing)، أو الاكتمال والنتيجة المسبقة (will have done).',
     contrastSection: {
       title: 'مقارنة السيناريوهات الأربعة بنفس الجملة',
@@ -709,6 +724,8 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     description: 'تطبيق المستقبل التام في بيئة العمل البرمجية، الشركات، المطارات، والامتحانات، مع استعراض شامل لكل الأخطاء الشائعة.',
     readTime: '8 دقائق',
     level: 'متقدم',
+    imageUrl: ONLINE_IMAGES.lessons.lesson8,
+    imageAlt: 'Software engineer working on multiple screens for deadline release',
     keyTakeaway: 'المستقبل التام هو لغة المحترفين في تحديد الالتزامات (Deadlines)، تقديم وعود الإنجاز، والتخطيط المستقبلي عالي الدقة.',
     timelinePoints: [
       { label: 'Sprint Planning', sublabel: 'بداية الأسبوع', detail: 'تحديد مهام المشروع وتوزيع الأدوار.' },

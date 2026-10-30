@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Search, X, BookOpen, HelpCircle, ArrowRight } from 'lucide-react';
+import { Search, X, BookOpen, HelpCircle, ArrowRight, GraduationCap } from 'lucide-react';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { COMPREHENSIVE_QUIZ_BANK } from '../data/quizzesData';
 import { VERB_TOOLKIT } from '../data/verbsData';
+import { ALL_GRAMMAR_RULES } from '../data/allGrammarRules';
+import { VOCABULARY_ACADEMY_WORDS } from '../data/vocabularyAcademyData';
 import { PageRoute } from '../types';
 import { playSound } from '../utils/audio';
 
@@ -38,6 +40,15 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
   const trimmed = query.trim().toLowerCase();
 
   // Search results
+  const matchedGrammar = trimmed
+    ? ALL_GRAMMAR_RULES.filter(
+        r =>
+          r.titleAr.toLowerCase().includes(trimmed) ||
+          r.titleEn.toLowerCase().includes(trimmed) ||
+          r.summaryAr.toLowerCase().includes(trimmed)
+      ).slice(0, 3)
+    : [];
+
   const matchedLessons = trimmed
     ? FUTURE_PERFECT_LESSONS.filter(
         l =>
@@ -47,6 +58,15 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
           l.kicker.toLowerCase().includes(trimmed)
       )
     : FUTURE_PERFECT_LESSONS.slice(0, 4);
+
+  const matchedVocab = trimmed
+    ? VOCABULARY_ACADEMY_WORDS.filter(
+        w =>
+          w.word.toLowerCase().includes(trimmed) ||
+          w.meaningAr.toLowerCase().includes(trimmed) ||
+          w.exampleEn.toLowerCase().includes(trimmed)
+      ).slice(0, 3)
+    : [];
 
   const matchedVerbs = trimmed
     ? VERB_TOOLKIT.filter(
@@ -113,6 +133,35 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
 
         {/* Results List */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-6">
+          {/* Grammar Rules */}
+          {matchedGrammar.length > 0 && (
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold text-[#41e7ff] uppercase tracking-wider mb-2">
+                <GraduationCap className="w-3.5 h-3.5" />
+                <span>أكاديمية الجرامر (قواعد الإنجليزية)</span>
+              </div>
+              <div className="space-y-1.5">
+                {matchedGrammar.map(g => (
+                  <button
+                    key={g.id}
+                    onClick={() => handleSelectRoute('grammar')}
+                    className="w-full text-right p-3 rounded-xl bg-white/5 hover:bg-[#41e7ff]/10 border border-white/5 hover:border-[#41e7ff]/30 transition-all cursor-pointer flex items-center justify-between group"
+                  >
+                    <div>
+                      <span className="text-xs text-[#41e7ff] font-bold block en">
+                        {g.titleEn} • {g.level}
+                      </span>
+                      <h5 className="text-sm font-black text-white group-hover:text-[#ffd166]">
+                        {g.titleAr}
+                      </h5>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-[#b9b6d5] group-hover:text-[#41e7ff] rotate-180 transition-transform group-hover:-translate-x-1" />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Lessons */}
           {matchedLessons.length > 0 && (
             <div>

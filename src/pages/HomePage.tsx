@@ -5,6 +5,7 @@ import { TimelineVisualizer } from '../components/TimelineVisualizer';
 import { SentenceBuilder } from '../components/SentenceBuilder';
 import { FlashcardDeck } from '../components/FlashcardDeck';
 import { FLASHCARD_DECK } from '../data/flashcardsData';
+import { ONLINE_IMAGES } from '../data/imageAssets';
 import { playSound, fireCelebration } from '../utils/audio';
 import { 
   Sparkles, 
@@ -14,7 +15,8 @@ import {
   Flame, 
   Play, 
   Gamepad2,
-  ChevronDown
+  ChevronDown,
+  GraduationCap
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
@@ -174,21 +176,32 @@ export const HomePage: React.FC<HomePageProps> = ({
 
             </div>
 
-            {/* Right Visual 3D Glowing Orb & Floating Cards */}
-            <div className="lg:col-span-5 relative flex items-center justify-center min-h-[380px] sm:min-h-[440px]">
-              {/* Central Glowing Orb */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-radial from-[#ffd166] via-[#ff4f9a] to-[#201d43] shadow-[0_0_90px_rgba(155,123,255,0.45)] flex flex-col items-center justify-center p-6 text-center select-none animate-pulse">
-                <span className="text-5xl sm:text-6xl filter drop-shadow-lg mb-2">⏳</span>
-                <strong className="en text-2xl sm:text-3xl font-black text-white tracking-wide">
-                  DONE BY THEN.
-                </strong>
-                <span className="en text-xs text-white/80 font-bold mt-1">
-                  Future deadline • Completed action
-                </span>
-
-                {/* Orbit Rings */}
-                <div className="absolute -inset-6 rounded-full border border-white/20 rotate-12 pointer-events-none" />
+            {/* Right Visual PC Screen Mockup / 3D Display on Desktop */}
+            <div className="lg:col-span-5 relative flex items-center justify-center min-h-[380px] sm:min-h-[460px]">
+              {/* Central Glowing 3D Orb & Eagle Logo */}
+              <div className="relative w-72 h-72 sm:w-88 sm:h-88 rounded-full bg-gradient-to-br from-[#171632]/95 via-[#201d43]/90 to-[#0c0b20]/95 border-2 border-[#ffd166]/40 shadow-[0_0_100px_rgba(255,209,102,0.25)] flex flex-col items-center justify-center p-6 text-center select-none overflow-hidden group">
+                {/* Background glow and rings */}
+                <div className="absolute inset-0 bg-radial from-[#ffd166]/20 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute -inset-6 rounded-full border border-white/15 rotate-12 pointer-events-none" />
                 <div className="absolute -inset-12 rounded-full border border-[#41e7ff]/30 -rotate-45 pointer-events-none" />
+
+                {/* Prominent High-Res Hinawi Eagle Logo */}
+                <div className="relative mb-2 flex items-center justify-center">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#ffd166]/40 via-[#ff4f9a]/30 to-[#41e7ff]/40 blur-xl animate-pulse" />
+                  <img
+                    src="/logo-clean.png"
+                    alt="Hinawi English Eagle Logo"
+                    className="w-36 h-36 sm:w-44 sm:h-44 object-contain relative z-10 filter drop-shadow-[0_0_30px_rgba(255,209,102,0.65)] transition-transform duration-500 group-hover:scale-110"
+                    loading="eager"
+                  />
+                </div>
+
+                <strong className="en text-lg sm:text-2xl font-black text-[#ffd166] tracking-wider relative z-10">
+                  HINAWI ENGLISH
+                </strong>
+                <span className="en text-[11px] sm:text-xs text-[#dedbf4] font-bold mt-0.5 relative z-10">
+                  FUTURE PERFECT MASTERCLASS • 2026
+                </span>
               </div>
 
               {/* Floating Badge 1 */}
@@ -292,6 +305,49 @@ export const HomePage: React.FC<HomePageProps> = ({
         </div>
       </section>
 
+      {/* GRAMMAR ACADEMY SPOTLIGHT BANNER */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative rounded-3xl overflow-hidden border-2 border-[#ffd166]/40 p-8 sm:p-12 shadow-[0_0_40px_rgba(255,209,102,0.15)]">
+          {/* Background Photo with Dark Gradient Overlay */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={ONLINE_IMAGES.modernClassroom} 
+              alt="Hinawi Grammar Academy Lecture Hall" 
+              className="w-full h-full object-cover filter brightness-[0.22]"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0c0b20] via-[#0c0b20]/90 to-transparent" />
+          </div>
+
+          <div className="relative z-10 max-w-3xl space-y-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40">
+              <GraduationCap className="w-4 h-4" />
+              <span>HINAWI GRAMMAR ACADEMY • المنهج الشامل المرتب</span>
+            </div>
+
+            <h2 className="text-2xl sm:text-4xl font-black text-white leading-tight">
+              أكاديمية قواعد اللغة الإنجليزية بالكامل 🦅
+            </h2>
+
+            <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
+              تحوّل من دراسة زمن واحد إلى أكاديمية متكاملة تشرح كافة قواعد الجرامر بالترتيب: أزمنة المضارع، الماضي، المستقبل، حالات الشرط، المبني للمجهول، والكلام المنقول مع النطق الصوتي والأمثلة الحية وكويزات الفهم.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <button
+                onClick={() => {
+                  playSound('click');
+                  onNavigate('courses/grammar');
+                }}
+                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm sm:text-base hover:brightness-110 shadow-lg transition-transform hover:-translate-y-1 cursor-pointer flex items-center gap-2"
+              >
+                <span>استكشف الـ ١٦ قاعدة في الأكاديمية الآن</span>
+                <ArrowRight className="w-4 h-4 rotate-180" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FLAGSHIP COURSE SPOTLIGHT */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4 mb-8">
@@ -316,8 +372,8 @@ export const HomePage: React.FC<HomePageProps> = ({
           </button>
         </div>
 
-        {/* 8 Lesson Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* 8 Lesson Cards Grid with Real Online Photography */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {FUTURE_PERFECT_LESSONS.map((lesson) => (
             <motion.div
               key={lesson.id}
@@ -326,38 +382,54 @@ export const HomePage: React.FC<HomePageProps> = ({
                 playSound('click');
                 onNavigate('lesson', lesson.id);
               }}
-              className="glass-panel p-6 rounded-3xl border border-white/10 hover:border-[#41e7ff]/40 cursor-pointer flex flex-col justify-between group transition-all"
+              className="glass-panel rounded-3xl border border-white/10 hover:border-[#41e7ff]/40 cursor-pointer flex flex-col justify-between group transition-all overflow-hidden"
             >
-              <div>
-                <div className="flex items-center justify-between text-xs text-[#b9b6d5] mb-3">
-                  <span className="en font-black text-[#ffd166]">LESSON 0{lesson.number}</span>
-                  <span className="flex items-center gap-1 font-semibold">
-                    <Clock className="w-3.5 h-3.5" />
-                    {lesson.readTime}
+              {/* Real Online Image Thumbnail */}
+              {lesson.imageUrl && (
+                <div className="h-40 relative overflow-hidden shrink-0">
+                  <img 
+                    src={lesson.imageUrl} 
+                    alt={lesson.imageAlt || lesson.title} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent opacity-90" />
+                  <span className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-lg text-[10px] font-black bg-[#09091a]/80 backdrop-blur-md text-[#ffd166] border border-white/15">
+                    LESSON 0{lesson.number}
                   </span>
                 </div>
+              )}
 
-                <h4 className="text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors leading-snug">
-                  {lesson.title}
-                </h4>
+              <div className="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between text-xs text-[#b9b6d5] mb-2">
+                    <span className="flex items-center gap-1 font-semibold">
+                      <Clock className="w-3.5 h-3.5" />
+                      {lesson.readTime}
+                    </span>
+                    <span className="px-2 py-0.5 rounded-md bg-white/5 text-[#c4ff55] font-bold text-[11px]">
+                      {lesson.level}
+                    </span>
+                  </div>
 
-                <span className="en block text-xs font-bold text-[#41e7ff]/80 mt-1 mb-3">
-                  {lesson.subtitle}
-                </span>
+                  <h4 className="text-base font-black text-white group-hover:text-[#41e7ff] transition-colors leading-snug">
+                    {lesson.title}
+                  </h4>
 
-                <p className="text-xs text-[#b9b6d5] line-clamp-2 leading-relaxed">
-                  {lesson.description}
-                </p>
-              </div>
+                  <span className="en block text-xs font-bold text-[#41e7ff]/90 mt-1 mb-2">
+                    {lesson.subtitle}
+                  </span>
 
-              <div className="pt-4 mt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold">
-                <span className="px-2 py-0.5 rounded-md bg-white/5 text-[#c4ff55]">
-                  {lesson.level}
-                </span>
-                <span className="text-[#ffd166] group-hover:translate-x-[-3px] transition-transform inline-flex items-center gap-1">
-                  <span>ادرس الآن</span>
-                  <span>←</span>
-                </span>
+                  <p className="text-xs text-[#b9b6d5] line-clamp-2 leading-relaxed">
+                    {lesson.description}
+                  </p>
+                </div>
+
+                <div className="pt-3 mt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold">
+                  <span className="text-[#ffd166] group-hover:translate-x-[-3px] transition-transform inline-flex items-center gap-1">
+                    <span>ادرس الدرس</span>
+                    <span>←</span>
+                  </span>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -377,6 +449,56 @@ export const HomePage: React.FC<HomePageProps> = ({
       {/* FLASHCARD DECK SHOWCASE */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FlashcardDeck cards={FLASHCARD_DECK} />
+      </section>
+
+      {/* REAL-LIFE VISUAL SCENARIOS GALLERY WITH REAL PHOTOGRAPHY */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-3 mb-10">
+          <span className="text-xs font-black uppercase text-[#41e7ff] tracking-widest block">
+            REAL-WORLD IMMERSION • معايشة بصرية واقعية
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-black text-white">
+            شاهد واستوعب القواعد في مواقف الحياة الحقيقية 📸
+          </h2>
+          <p className="text-sm text-[#b9b6d5] max-w-2xl mx-auto">
+            القواعد مش مجرد معادلات في كشكول؛ دي لغة حية بيستخدمها المبرمجين، والطيارين، والباحثين، والمهندسين في مواقفهم اليومية ومواعيد تسليمهم.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ONLINE_IMAGES.scenariosGallery.map((item) => (
+            <div 
+              key={item.id}
+              className="glass-panel rounded-3xl border border-white/10 hover:border-[#41e7ff]/40 overflow-hidden group transition-all flex flex-col justify-between"
+            >
+              <div className="h-52 relative overflow-hidden">
+                <img 
+                  src={item.imageUrl} 
+                  alt={item.sentence} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent" />
+                <span className="absolute top-3 right-3 px-3 py-1 rounded-xl text-xs font-black bg-[#09091a]/80 backdrop-blur-md text-[#ffd166] border border-white/15">
+                  {item.tag}
+                </span>
+              </div>
+
+              <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+                <div>
+                  <span className="en block text-xs font-bold text-[#41e7ff] mb-1">
+                    {item.focusRule}
+                  </span>
+                  <p className="en text-base font-black text-white leading-snug">
+                    "{item.sentence}"
+                  </p>
+                </div>
+                <p className="text-xs text-[#dedbf4] leading-relaxed pt-3 border-t border-white/10">
+                  {item.translationAr}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* FAQ SECTION */}
