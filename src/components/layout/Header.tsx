@@ -14,7 +14,19 @@ import {
   LogOut,
   ChevronDown,
   Sparkles,
+  GraduationCap,
+  Volume2,
+  Compass,
+  FileCheck2,
+  Award,
+  Layers,
+  Bot,
+  Gamepad2,
+  Globe,
+  Settings,
+  Lock
 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 interface HeaderProps {
   currentRoute: PageRoute;
@@ -22,6 +34,8 @@ interface HeaderProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
   onOpenMobile: () => void;
   onOpenSearch: () => void;
+  onOpenVoiceSettings: () => void;
+  onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
   userProfile: UserProfile;
   notifications: AppNotification[];
   unreadCount: number;
@@ -29,6 +43,7 @@ interface HeaderProps {
   onMarkAllNotificationsRead: () => void;
   onToggleRole: () => void;
   onResetProgress: () => void;
+  authSessionType?: 'guest' | 'demo' | 'authenticated';
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -37,6 +52,8 @@ export const Header: React.FC<HeaderProps> = ({
   onNavigate,
   onOpenMobile,
   onOpenSearch,
+  onOpenVoiceSettings,
+  onOpenAuthModal,
   userProfile,
   notifications,
   unreadCount,
@@ -44,78 +61,74 @@ export const Header: React.FC<HeaderProps> = ({
   onMarkAllNotificationsRead,
   onToggleRole,
   onResetProgress,
+  authSessionType = 'authenticated',
 }) => {
+  const [grammarMenuOpen, setGrammarMenuOpen] = useState(false);
+  const [skillsMenuOpen, setSkillsMenuOpen] = useState(false);
+  const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
 
+  const grammarRef = useRef<HTMLDivElement>(null);
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const moreRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
 
-  // Close dropdowns on outside click
+  // Close all dropdowns on outside click or ESC key
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (notifRef.current && !notifRef.current.contains(e.target as Node)) {
+      const target = e.target as Node;
+      if (grammarRef.current && !grammarRef.current.contains(target)) {
+        setGrammarMenuOpen(false);
+      }
+      if (skillsRef.current && !skillsRef.current.contains(target)) {
+        setSkillsMenuOpen(false);
+      }
+      if (moreRef.current && !moreRef.current.contains(target)) {
+        setMoreMenuOpen(false);
+      }
+      if (notifRef.current && !notifRef.current.contains(target)) {
         setNotifOpen(false);
       }
-      if (profileRef.current && !profileRef.current.contains(e.target as Node)) {
+      if (profileRef.current && !profileRef.current.contains(target)) {
         setProfileOpen(false);
       }
     };
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setGrammarMenuOpen(false);
+        setSkillsMenuOpen(false);
+        setMoreMenuOpen(false);
+        setNotifOpen(false);
+        setProfileOpen(false);
+      }
+    };
+
     document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
   }, []);
 
-  // Compute breadcrumbs
-  const getBreadcrumbs = () => {
-    const crumbs: { label: string; route?: PageRoute }[] = [
-      { label: 'الرئيسية', route: 'dashboard' },
-    ];
-
-    if (currentRoute === 'courses') {
-      crumbs.push({ label: 'الكورسات' });
-    } else if (currentRoute === 'grammar' || currentRoute === 'courses/grammar') {
-      crumbs.push({ label: 'أكاديمية الجرامر' });
-    } else if (currentRoute === 'courses/grammar/future-perfect') {
-      crumbs.push({ label: 'أكاديمية الجرامر', route: 'grammar' });
-      crumbs.push({ label: 'المستقبل التام الشامل' });
-    } else if (currentRoute === 'lesson') {
-      crumbs.push({ label: 'أكاديمية الجرامر', route: 'grammar' });
-      crumbs.push({ label: 'المستقبل التام', route: 'courses/grammar/future-perfect' });
-      crumbs.push({ label: activeLessonId ? `درس ${activeLessonId.replace('lesson-', '#')}` : 'الدرس التفاعلي' });
-    } else if (currentRoute === 'vocabulary') {
-      crumbs.push({ label: 'أكاديمية الكلمات والأفعال' });
-    } else if (currentRoute === 'speaking') {
-      crumbs.push({ label: 'أكاديمية المحادثة والطلاقة' });
-    } else if (currentRoute === 'listening') {
-      crumbs.push({ label: 'أكاديمية الاستماع' });
-    } else if (currentRoute === 'reading') {
-      crumbs.push({ label: 'أكاديمية القراءة والفهم' });
-    } else if (currentRoute === 'writing') {
-      crumbs.push({ label: 'أكاديمية الكتابة' });
-    } else if (currentRoute === 'pronunciation') {
-      crumbs.push({ label: 'أكاديمية النطق والفونيتكس' });
-    } else if (currentRoute === 'real-life') {
-      crumbs.push({ label: 'إنجليزي المواقف الحقيقية' });
-    } else if (currentRoute === 'exams') {
-      crumbs.push({ label: 'تحديد المستوى والاختبارات' });
-    } else if (currentRoute === 'practice') {
-      crumbs.push({ label: 'معمل التمارين' });
-    } else if (currentRoute === 'my-learning') {
-      crumbs.push({ label: 'مساحتي الخاصة' });
-    } else if (currentRoute === 'admin') {
-      crumbs.push({ label: 'استوديو المعلم والمحتوى' });
-    }
-
-    return crumbs;
+  const handleNav = (route: PageRoute, lessonId?: string) => {
+    playSound('click');
+    setGrammarMenuOpen(false);
+    setSkillsMenuOpen(false);
+    setMoreMenuOpen(false);
+    setNotifOpen(false);
+    setProfileOpen(false);
+    onNavigate(route, lessonId);
   };
 
-  const breadcrumbs = getBreadcrumbs();
-
   return (
-    <header className="sticky top-0 z-30 h-20 bg-[#0c0b20]/90 backdrop-blur-xl border-b border-white/10 px-4 sm:px-6 flex items-center justify-between gap-4">
+    <header className="sticky top-0 z-50 h-20 bg-[#0c0b20]/95 backdrop-blur-2xl border-b border-white/10 px-4 sm:px-6 flex items-center justify-between gap-3 select-none">
       
-      {/* Left: Hamburger & Breadcrumbs */}
-      <div className="flex items-center gap-3 min-w-0">
+      {/* LEFT: Mobile Menu Hamburger & Desktop Main Navigation Menus */}
+      <div className="flex items-center gap-3 xl:gap-4 min-w-0">
         <button
           onClick={onOpenMobile}
           className="md:hidden p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/5 cursor-pointer"
@@ -124,36 +137,259 @@ export const Header: React.FC<HeaderProps> = ({
           <Menu className="w-5 h-5" />
         </button>
 
-        {/* Dynamic Breadcrumbs */}
-        <nav aria-label="مسار التنقل" className="hidden sm:flex items-center gap-1.5 text-xs text-[#b9b6d5] font-semibold truncate">
-          {breadcrumbs.map((crumb, idx) => {
-            const isLast = idx === breadcrumbs.length - 1;
-            return (
-              <React.Fragment key={idx}>
-                {idx > 0 && <span className="text-white/30 text-[10px]">/</span>}
-                {crumb.route && !isLast ? (
+        {/* Desktop Primary Navigation with Non-Clipped Dropdowns */}
+        <nav aria-label="شريط التنقل العلوي" className="hidden xl:flex items-center gap-1.5 text-xs font-bold text-[#dedbf4]">
+          
+          {/* 1. Home Link */}
+          <button
+            onClick={() => handleNav('dashboard')}
+            className={`px-3 py-2 rounded-xl transition-colors cursor-pointer ${
+              currentRoute === 'dashboard' || currentRoute === 'home'
+                ? 'bg-white/10 text-[#ffd166] font-black'
+                : 'hover:text-white hover:bg-white/5'
+            }`}
+          >
+            الرئيسية
+          </button>
+
+          {/* 2. Grammar Academy Dropdown */}
+          <div className="relative" ref={grammarRef}>
+            <button
+              onClick={() => {
+                setGrammarMenuOpen(prev => !prev);
+                setSkillsMenuOpen(false);
+                setMoreMenuOpen(false);
+                setNotifOpen(false);
+                setProfileOpen(false);
+              }}
+              className={`px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 ${
+                currentRoute === 'grammar' || currentRoute.startsWith('courses/grammar')
+                  ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
+                  : 'hover:text-white hover:bg-white/5'
+              }`}
+              aria-haspopup="true"
+              aria-expanded={grammarMenuOpen}
+            >
+              <span>أكاديمية الجرامر 🦅</span>
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${grammarMenuOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            {/* Dropdown Menu (Positioned safely within viewport) */}
+            <AnimatePresence>
+              {grammarMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 8, scale: 0.98 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute right-0 top-full mt-2 w-80 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-3 z-50 text-right space-y-1.5"
+                >
+                  <button
+                    onClick={() => handleNav('grammar')}
+                    className="w-full p-2.5 rounded-xl bg-gradient-to-r from-[#ffd166]/15 to-[#41e7ff]/15 hover:brightness-110 text-white font-black text-xs flex items-center justify-between cursor-pointer border border-[#ffd166]/30"
+                  >
+                    <span>فهرس القواعد الشامل (16 قاعدة) 📖</span>
+                    <span className="text-[10px] text-[#ffd166]">A1 - C1</span>
+                  </button>
+
+                  <div className="pt-1 pb-1 border-t border-white/10 text-[10px] text-[#b9b6d5] font-bold px-2">
+                    أهم الدروس المباشرة:
+                  </div>
+
+                  <button
+                    onClick={() => handleNav('courses/grammar/future-perfect')}
+                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#41e7ff] hover:text-white text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>المستقبل التام الشامل ⚡ (كورس رائد)</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#41e7ff]/20 text-[#41e7ff]">B2</span>
+                  </button>
+
                   <button
                     onClick={() => {
-                      playSound('click');
-                      onNavigate(crumb.route!);
+                      window.location.hash = 'grammar/future-simple';
+                      handleNav('grammar');
                     }}
-                    className="hover:text-[#41e7ff] transition-colors cursor-pointer truncate"
+                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
                   >
-                    {crumb.label}
+                    <span>المستقبل البسيط: Will مقابل Going to</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A2</span>
                   </button>
-                ) : (
-                  <span className={isLast ? 'text-[#ffd166] font-bold truncate' : 'truncate'}>
-                    {crumb.label}
-                  </span>
-                )}
-              </React.Fragment>
-            );
-          })}
+
+                  <button
+                    onClick={() => {
+                      window.location.hash = 'grammar/present-simple';
+                      handleNav('grammar');
+                    }}
+                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>المضارع البسيط: العادات والحقائق الثابتة</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A1</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      window.location.hash = 'grammar/present-perfect';
+                      handleNav('grammar');
+                    }}
+                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>المضارع التام: الخبرات وأثر الماضي</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A2</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      window.location.hash = 'grammar/conditionals-all';
+                      handleNav('grammar');
+                    }}
+                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>حالات لو والشرط الأربعة (Conditionals 0-3)</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">B1</span>
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      window.location.hash = 'grammar/passive-voice';
+                      handleNav('grammar');
+                    }}
+                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>المبني للمجهول (Passive Voice) الشامل</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">B2</span>
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* 3. Skills Academies Dropdown */}
+          <div className="relative" ref={skillsRef}>
+            <button
+              onClick={() => {
+                setSkillsMenuOpen(prev => !prev);
+                setGrammarMenuOpen(false);
+                setMoreMenuOpen(false);
+                setNotifOpen(false);
+                setProfileOpen(false);
+              }}
+              className="px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 hover:text-white hover:bg-white/5"
+              aria-haspopup="true"
+              aria-expanded={skillsMenuOpen}
+            >
+              <span>الأكاديميات المهارية 🎯</span>
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${skillsMenuOpen ? 'rotate-180' : ''}`} />
+            </button>
+
+            <AnimatePresence>
+              {skillsMenuOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 8, scale: 0.98 }}
+                  transition={{ duration: 0.15 }}
+                  className="absolute right-0 top-full mt-2 w-72 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-3 z-50 text-right space-y-1.5"
+                >
+                  <button
+                    onClick={() => handleNav('vocabulary')}
+                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>أكاديمية الكلمات وتصريف V1-V3 📚</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">معجم</span>
+                  </button>
+                  <button
+                    onClick={() => handleNav('speaking')}
+                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>أكاديمية المحادثة والطلاقة 🗣️</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">حوار</span>
+                  </button>
+                  <button
+                    onClick={() => handleNav('listening')}
+                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>أكاديمية الاستماع والفهم 🎧</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">لهجات</span>
+                  </button>
+                  <button
+                    onClick={() => handleNav('reading')}
+                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>أكاديمية القراءة واستيعاب النصوص 📖</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">نصوص</span>
+                  </button>
+                  <button
+                    onClick={() => handleNav('writing')}
+                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>أكاديمية الكتابة والمراسلات ✍️</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">إيميل</span>
+                  </button>
+                  <button
+                    onClick={() => handleNav('pronunciation')}
+                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
+                  >
+                    <span>أكاديمية النطق والفونيتكس 🎙️</span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">IPA</span>
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* 4. Real-Life English Simulator */}
+          <button
+            onClick={() => handleNav('real-life')}
+            className={`px-3 py-2 rounded-xl transition-all cursor-pointer ${
+              currentRoute === 'real-life'
+                ? 'bg-white/10 text-[#ffd166] font-black'
+                : 'hover:text-white hover:bg-white/5'
+            }`}
+          >
+            إنجليزي المواقف الحقيقية 🌍
+          </button>
+
+          {/* 5. AI English Tutor */}
+          <button
+            onClick={() => handleNav('ai-tutor')}
+            className={`px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 ${
+              currentRoute === 'ai-tutor'
+                ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
+                : 'text-[#41e7ff] hover:bg-white/5'
+            }`}
+          >
+            <Bot className="w-3.5 h-3.5" />
+            <span>المعلم الذكي AI 🤖</span>
+          </button>
+
+          {/* 6. Placement & Exams */}
+          <button
+            onClick={() => handleNav('exams')}
+            className={`px-3 py-2 rounded-xl transition-all cursor-pointer ${
+              currentRoute === 'exams'
+                ? 'bg-white/10 text-[#ffd166] font-black'
+                : 'hover:text-white hover:bg-white/5'
+            }`}
+          >
+            تحديد المستوى 🎯
+          </button>
+
+          {/* 7. Certificates & Verification */}
+          <button
+            onClick={() => handleNav('certificates')}
+            className={`px-3 py-2 rounded-xl transition-all cursor-pointer ${
+              currentRoute === 'certificates'
+                ? 'bg-white/10 text-[#ffd166] font-black'
+                : 'hover:text-white hover:bg-white/5'
+            }`}
+          >
+            الشهادات 📜
+          </button>
         </nav>
       </div>
 
-      {/* Right: Search, Streak, Notifications, Profile */}
-      <div className="flex items-center gap-2.5 sm:gap-3">
+      {/* RIGHT: Search, Voice Settings, Streak, Notifications, Account */}
+      <div className="flex items-center gap-2 sm:gap-3 shrink-0">
         
         {/* Search Trigger */}
         <button
@@ -161,23 +397,36 @@ export const Header: React.FC<HeaderProps> = ({
             playSound('click');
             onOpenSearch();
           }}
-          className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-[#dedbf4] hover:text-[#41e7ff] transition-all cursor-pointer"
+          className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-[#dedbf4] hover:text-[#41e7ff] transition-all cursor-pointer"
           title="بحث شامل في الأكاديميات (Ctrl+K)"
         >
           <Search className="w-4 h-4 text-[#41e7ff]" />
-          <span className="hidden md:inline">بحث في المنصة...</span>
-          <kbd className="hidden lg:inline px-1.5 py-0.5 rounded text-[10px] bg-black/40 border border-white/10 text-[#b9b6d5]">
+          <span className="hidden md:inline">بحث...</span>
+          <kbd className="hidden lg:inline px-1 py-0.5 rounded text-[9px] bg-black/40 border border-white/10 text-[#b9b6d5]">
             Ctrl K
           </kbd>
         </button>
 
+        {/* Voice Control Modal Trigger (Natural Male / Preserved Female Voice) */}
+        <button
+          onClick={() => {
+            playSound('click');
+            onOpenVoiceSettings();
+          }}
+          className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-[#ffd166] transition-colors cursor-pointer"
+          title="إعدادات الصوت والنطق الصوتي (ذكر / أنثى طبيعي)"
+          aria-label="إعدادات الصوت"
+        >
+          <Volume2 className="w-4 h-4 text-[#ffd166]" />
+        </button>
+
         {/* Streak Indicator */}
         <div 
-          className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
+          className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
           title={`استمرارية التعلم: ${userProfile.streakDays} أيام متتالية`}
         >
           <Flame className="w-4 h-4 text-[#ff4f9a] animate-pulse" />
-          <span>{userProfile.streakDays} أيام</span>
+          <span className="hidden sm:inline">{userProfile.streakDays} أيام</span>
         </div>
 
         {/* Notifications Popover */}
@@ -187,6 +436,8 @@ export const Header: React.FC<HeaderProps> = ({
               playSound('click');
               setNotifOpen(prev => !prev);
               setProfileOpen(false);
+              setGrammarMenuOpen(false);
+              setSkillsMenuOpen(false);
             }}
             className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
             aria-label="الإشعارات"
@@ -201,7 +452,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {notifOpen && (
-            <div className="absolute left-0 sm:left-auto sm:right-0 mt-3 w-80 sm:w-96 rounded-2xl bg-[#171632] border border-white/15 shadow-2xl p-4 z-50 text-right space-y-3">
+            <div className="absolute left-0 mt-3 w-80 sm:w-96 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
               <div className="flex items-center justify-between pb-2 border-b border-white/10">
                 <span className="text-xs font-bold text-white flex items-center gap-1.5">
                   <Bell className="w-3.5 h-3.5 text-[#ffd166]" />
@@ -225,8 +476,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => {
                       onMarkNotificationRead(n.id);
                       if (n.actionRoute) {
-                        onNavigate(n.actionRoute);
-                        setNotifOpen(false);
+                        handleNav(n.actionRoute);
                       }
                     }}
                     className={`p-2.5 rounded-xl text-right transition-colors cursor-pointer border ${
@@ -247,13 +497,15 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
 
-        {/* User Profile Menu */}
+        {/* User Account / Auth Menu */}
         <div className="relative" ref={profileRef}>
           <button
             onClick={() => {
               playSound('click');
               setProfileOpen(prev => !prev);
               setNotifOpen(false);
+              setGrammarMenuOpen(false);
+              setSkillsMenuOpen(false);
             }}
             className="flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors cursor-pointer"
             aria-label="قائمة الحساب"
@@ -275,7 +527,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {profileOpen && (
-            <div className="absolute left-0 sm:left-auto sm:right-0 mt-3 w-72 rounded-2xl bg-[#171632] border border-white/15 shadow-2xl p-4 z-50 text-right space-y-3">
+            <div className="absolute left-0 mt-3 w-72 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
               {/* Profile Card Summary */}
               <div className="flex items-center gap-3 pb-3 border-b border-white/10">
                 <img
@@ -294,28 +546,24 @@ export const Header: React.FC<HeaderProps> = ({
 
               {/* Action Buttons */}
               <div className="space-y-1.5 text-xs">
-                {/* Switch Role Feature */}
+                {/* Auth Modal Trigger / Account Switch */}
                 <button
                   onClick={() => {
                     playSound('click');
-                    onToggleRole();
+                    onOpenAuthModal('login');
                     setProfileOpen(false);
                   }}
-                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-gradient-to-r from-[#ffd166]/15 to-[#ff4f9a]/15 border border-[#ffd166]/30 text-white font-bold hover:brightness-110 cursor-pointer"
+                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 text-white font-bold hover:brightness-110 cursor-pointer"
                 >
                   <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-[#ffd166]" />
-                    <span>تبديل الدور: {userProfile.role === 'student' ? 'المعلم / الإدارة' : 'الطالب'}</span>
+                    <User className="w-4 h-4 text-[#ffd166]" />
+                    <span>إدارة الحساب ووضع الـ Demo</span>
                   </span>
-                  <span className="text-[10px] text-[#ffd166] font-black underline">تبديل</span>
+                  <span className="text-[10px] text-[#ffd166] font-black underline">تغيير</span>
                 </button>
 
                 <button
-                  onClick={() => {
-                    playSound('click');
-                    onNavigate('my-learning');
-                    setProfileOpen(false);
-                  }}
+                  onClick={() => handleNav('my-learning')}
                   className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
                 >
                   <BookOpen className="w-4 h-4 text-[#41e7ff]" />
@@ -323,15 +571,25 @@ export const Header: React.FC<HeaderProps> = ({
                 </button>
 
                 <button
-                  onClick={() => {
-                    playSound('click');
-                    onNavigate('dashboard');
-                    setProfileOpen(false);
-                  }}
+                  onClick={() => handleNav('certificates')}
                   className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
                 >
-                  <User className="w-4 h-4 text-[#c4ff55]" />
-                  <span>لوحة التحكم الرئيسية</span>
+                  <Award className="w-4 h-4 text-[#ffd166]" />
+                  <span>شهاداتي المعتمدة والتوثيق</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    onToggleRole();
+                    setProfileOpen(false);
+                  }}
+                  className="w-full flex items-center justify-between p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 transition-colors cursor-pointer"
+                >
+                  <span className="flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
+                    <span>تبديل الدور: {userProfile.role === 'student' ? 'المعلم' : 'الطالب'}</span>
+                  </span>
                 </button>
 
                 <button

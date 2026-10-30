@@ -22,6 +22,9 @@ import {
   Layers,
   X,
   Flame,
+  Bot,
+  Globe,
+  Award,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -147,10 +150,24 @@ export const Sidebar: React.FC<SidebarProps> = ({
           route: 'real-life',
           icon: Compass,
         },
+        {
+          label: 'المعلم الذكي AI 🤖',
+          labelEn: 'AI English Tutor',
+          route: 'ai-tutor' as PageRoute,
+          icon: Bot,
+          badge: 'وكيل AI',
+        },
+        {
+          label: 'العالم الافتراضي 3D 🏛️',
+          labelEn: '3D Campus World',
+          route: 'world-3d' as PageRoute,
+          icon: Globe,
+          badge: 'Three.js',
+        },
       ],
     },
     {
-      groupTitle: 'المعمل والاختبارات',
+      groupTitle: 'المعمل والشهادات',
       items: [
         {
           label: 'تحديد المستوى والاختبارات',
@@ -158,6 +175,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
           route: 'exams',
           icon: FileCheck2,
           badge: 'CEFR',
+        },
+        {
+          label: 'الشهادات والتوثيق 📜',
+          labelEn: 'Certificates',
+          route: 'certificates' as PageRoute,
+          icon: Award,
+          badge: 'رسمي',
         },
         {
           label: 'معمل التمارين والألعاب',

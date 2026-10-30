@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { PageRoute } from './types';
 import { MainLayout } from './components/layout/MainLayout';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
+import { VoiceSettingsModal } from './components/VoiceSettingsModal';
+import { AuthModal } from './components/AuthModal';
 import { useProgress } from './utils/useProgress';
+import { getSavedAuthSession, AuthSessionState } from './services/authService';
 
 // Academies & Platform Pages
 import { DashboardPage } from './pages/DashboardPage';
 import { GrammarAcademyPage } from './pages/GrammarAcademyPage';
+import { GrammarLessonPage } from './pages/GrammarLessonPage';
 import { VocabularyAcademyPage } from './pages/VocabularyAcademyPage';
 import { SpeakingAcademyPage } from './pages/SpeakingAcademyPage';
 import { ListeningAcademyPage } from './pages/ListeningAcademyPage';
@@ -17,6 +21,9 @@ import { RealLifeEnglishPage } from './pages/RealLifeEnglishPage';
 import { ExamsAssessmentPage } from './pages/ExamsAssessmentPage';
 import { MyLearningPage } from './pages/MyLearningPage';
 import { AdminDashboardPage } from './pages/AdminDashboardPage';
+import { AiTutorPage } from './pages/AiTutorPage';
+import { CertificatesPage } from './pages/CertificatesPage';
+import { Interactive3DWorld } from './components/Interactive3DWorld';
 
 // Flagship Future Perfect & Existing Core Pages
 import { CourseOverviewPage } from './pages/CourseOverviewPage';
@@ -33,7 +40,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 export const App: React.FC = () => {
   const [currentRoute, setCurrentRoute] = useState<PageRoute>('dashboard');
   const [activeLessonId, setActiveLessonId] = useState<string>('lesson-1');
+  const [activeGrammarRuleId, setActiveGrammarRuleId] = useState<string>('present-simple');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
+  const [authModalTab, setAuthModalTab] = useState<'login' | 'register' | 'demo' | 'migrate'>('login');
+  const [authSession, setAuthSession] = useState<AuthSessionState>(() => getSavedAuthSession());
 
   const {
     progress,
@@ -57,12 +69,18 @@ export const App: React.FC = () => {
     badges,
   } = useProgress();
 
-  // Sync route with URL hash for browser navigation & deep-linking
+  // Active profile from auth session or progress
+  const activeProfile = authSession.user || userProfile;
+
+  // Sync route with URL hash for deep-linking & browser back/forward buttons
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '').trim();
       if (!hash || hash === 'dashboard' || hash === 'home') {
         setCurrentRoute('dashboard');
+      } else if (hash.startsWith('grammar/')) {
+        setCurrentRoute('grammar-lesson');
+        setActiveGrammarRuleId(hash.replace('grammar/', ''));
       } else if (hash.startsWith('lesson-')) {
         setCurrentRoute('lesson');
         setActiveLessonId(hash);
@@ -86,6 +104,12 @@ export const App: React.FC = () => {
         setCurrentRoute('pronunciation');
       } else if (hash === 'real-life') {
         setCurrentRoute('real-life');
+      } else if (hash === 'ai-tutor' || hash === 'tutor') {
+        setCurrentRoute('ai-tutor');
+      } else if (hash === 'world-3d' || hash === '3d-world') {
+        setCurrentRoute('world-3d');
+      } else if (hash === 'certificates') {
+        setCurrentRoute('certificates');
       } else if (hash === 'exams' || hash === 'assessment') {
         setCurrentRoute('exams');
       } else if (hash === 'practice' || hash === 'homework') {
@@ -111,11 +135,14 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
 
-  const handleNavigate = (route: PageRoute, lessonId?: string) => {
+  const handleNavigate = (route: PageRoute, targetId?: string) => {
     setCurrentRoute(route);
-    if (lessonId) {
-      setActiveLessonId(lessonId);
-      window.location.hash = lessonId;
+    if (route === 'grammar-lesson' && targetId) {
+      setActiveGrammarRuleId(targetId);
+      window.location.hash = `grammar/${targetId}`;
+    } else if (route === 'lesson' && targetId) {
+      setActiveLessonId(targetId);
+      window.location.hash = targetId;
     } else {
       if (route === 'dashboard' || route === 'home') {
         window.location.hash = '';
@@ -140,6 +167,11 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
+  const openAuthWithTab = (tab: 'login' | 'register' | 'demo' | 'migrate' = 'login') => {
+    setAuthModalTab(tab);
+    setIsAuthModalOpen(true);
+  };
+
   return (
     <>
       <MainLayout
@@ -147,17 +179,26 @@ export const App: React.FC = () => {
         activeLessonId={activeLessonId}
         onNavigate={handleNavigate}
         onOpenSearch={() => setIsSearchOpen(true)}
-        userProfile={userProfile}
+        onOpenVoiceSettings={() => setIsVoiceModalOpen(true)}
+        onOpenAuthModal={openAuthWithTab}
+        userProfile={activeProfile}
         notifications={notifications}
         unreadCount={unreadNotificationsCount}
         onMarkNotificationRead={markNotificationRead}
         onMarkAllNotificationsRead={markAllNotificationsRead}
         onToggleRole={toggleUserRole}
         onResetProgress={resetAllProgress}
+        authSessionType={authSession.type}
       >
         <AnimatePresence mode="wait">
           <motion.div
-            key={currentRoute === 'lesson' ? `${currentRoute}-${activeLessonId}` : currentRoute}
+            key={
+              currentRoute === 'lesson'
+                ? `lesson-${activeLessonId}`
+                : currentRoute === 'grammar-lesson'
+                ? `grammar-${activeGrammarRuleId}`
+                : currentRoute
+            }
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -167,19 +208,29 @@ export const App: React.FC = () => {
             {(currentRoute === 'dashboard' || currentRoute === 'home') && (
               <DashboardPage
                 onNavigate={handleNavigate}
-                userProfile={userProfile}
+                userProfile={activeProfile}
                 progress={progress}
                 badges={badges}
                 onToggleGoal={toggleDailyGoal}
               />
             )}
 
-            {/* 2. Grammar Academy */}
+            {/* 2. Grammar Academy Home */}
             {(currentRoute === 'grammar' || currentRoute === 'courses/grammar') && (
               <GrammarAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 3. Flagship Course: Future Perfect */}
+            {/* 3. Dedicated Full-Length Grammar Lesson Page */}
+            {currentRoute === 'grammar-lesson' && (
+              <GrammarLessonPage
+                ruleId={activeGrammarRuleId}
+                onNavigate={handleNavigate}
+                onMarkComplete={(rId) => markLessonComplete(`rule-${rId}`)}
+                isCompleted={progress.completedLessons.includes(`rule-${activeGrammarRuleId}`)}
+              />
+            )}
+
+            {/* 4. Flagship Course: Future Perfect */}
             {currentRoute === 'courses/grammar/future-perfect' && (
               <CourseOverviewPage
                 onNavigate={handleNavigate}
@@ -187,7 +238,7 @@ export const App: React.FC = () => {
               />
             )}
 
-            {/* 4. Universal Lesson Viewer */}
+            {/* 5. Universal Lesson Viewer (Future Perfect 10 Modules) */}
             {currentRoute === 'lesson' && (
               <LessonPage
                 lessonId={activeLessonId}
@@ -197,42 +248,67 @@ export const App: React.FC = () => {
               />
             )}
 
-            {/* 5. Vocabulary Academy */}
+            {/* 6. AI English Tutor Agent */}
+            {currentRoute === 'ai-tutor' && (
+              <AiTutorPage
+                onNavigate={handleNavigate}
+                userProfile={activeProfile}
+              />
+            )}
+
+            {/* 7. Interactive 3D Campus World */}
+            {currentRoute === 'world-3d' && (
+              <Interactive3DWorld
+                onNavigate={handleNavigate}
+                onSelectScenario={() => handleNavigate('real-life')}
+              />
+            )}
+
+            {/* 8. Certificates & Public Verification */}
+            {currentRoute === 'certificates' && (
+              <CertificatesPage
+                onNavigate={handleNavigate}
+                userProfile={activeProfile}
+                completedLessonsCount={progress.completedLessons.length}
+              />
+            )}
+
+            {/* 9. Vocabulary Academy */}
             {currentRoute === 'vocabulary' && (
               <VocabularyAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 6. Speaking Academy */}
+            {/* 10. Speaking Academy */}
             {currentRoute === 'speaking' && (
               <SpeakingAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 7. Listening Academy */}
+            {/* 11. Listening Academy */}
             {currentRoute === 'listening' && (
               <ListeningAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 8. Reading Academy */}
+            {/* 12. Reading Academy */}
             {currentRoute === 'reading' && (
               <ReadingAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 9. Writing Academy */}
+            {/* 13. Writing Academy */}
             {currentRoute === 'writing' && (
               <WritingAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 10. Pronunciation Academy */}
+            {/* 14. Pronunciation Academy */}
             {currentRoute === 'pronunciation' && (
               <PronunciationAcademyPage onNavigate={handleNavigate} />
             )}
 
-            {/* 11. Real-Life English */}
+            {/* 15. Real-Life English Simulator */}
             {currentRoute === 'real-life' && (
               <RealLifeEnglishPage onNavigate={handleNavigate} />
             )}
 
-            {/* 12. Exams & Placement */}
+            {/* 16. Exams & Adaptive Placement Test */}
             {currentRoute === 'exams' && (
               <ExamsAssessmentPage
                 onNavigate={handleNavigate}
@@ -240,16 +316,16 @@ export const App: React.FC = () => {
               />
             )}
 
-            {/* 13. Practice Lab */}
+            {/* 17. Practice Lab */}
             {currentRoute === 'practice' && (
               <PracticePage />
             )}
 
-            {/* 14. My Learning */}
+            {/* 18. My Learning Space */}
             {(currentRoute === 'my-learning' || currentRoute === 'progress') && (
               <MyLearningPage
                 onNavigate={handleNavigate}
-                userProfile={userProfile}
+                userProfile={activeProfile}
                 progress={progress}
                 badges={badges}
                 onDeleteNote={deletePersonalNote}
@@ -257,32 +333,32 @@ export const App: React.FC = () => {
               />
             )}
 
-            {/* 15. Teacher & Content Studio */}
+            {/* 19. Teacher Studio & Administration */}
             {currentRoute === 'admin' && (
               <AdminDashboardPage onNavigate={handleNavigate} />
             )}
 
-            {/* 16. Courses Catalog */}
+            {/* 20. Courses Catalog */}
             {currentRoute === 'courses' && (
               <CoursesPage onNavigate={handleNavigate} />
             )}
 
-            {/* 17. Quizzes Hub */}
+            {/* 21. Quizzes Hub */}
             {currentRoute === 'quizzes' && (
               <QuizzesPage onRecordScore={recordQuizScore} />
             )}
 
-            {/* 18. Games Arena */}
+            {/* 22. Games Arena */}
             {currentRoute === 'games' && (
               <GamesPage />
             )}
 
-            {/* 19. Resources Hub */}
+            {/* 23. Resources Hub */}
             {currentRoute === 'resources' && (
               <ResourcesPage />
             )}
 
-            {/* 20. About Academy */}
+            {/* 24. About Academy */}
             {currentRoute === 'about' && (
               <AboutPage />
             )}
@@ -290,11 +366,25 @@ export const App: React.FC = () => {
         </AnimatePresence>
       </MainLayout>
 
-      {/* Global Search Modal */}
+      {/* Global Search Modal (Ctrl+K) */}
       <GlobalSearchModal
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
         onNavigate={handleNavigate}
+      />
+
+      {/* Voice Settings & Preview Modal (Natural Male / Preserved Female) */}
+      <VoiceSettingsModal
+        isOpen={isVoiceModalOpen}
+        onClose={() => setIsVoiceModalOpen(false)}
+      />
+
+      {/* Authentication, Guest Mode & Demo Accounts Modal */}
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        initialTab={authModalTab}
+        onSessionChange={(newSession) => setAuthSession(newSession)}
       />
     </>
   );

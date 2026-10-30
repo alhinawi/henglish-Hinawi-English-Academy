@@ -1,4 +1,41 @@
 import confetti from 'canvas-confetti';
+import { 
+  speakEnglishVoice, 
+  getVoiceSettings, 
+  stopSpeech, 
+  pauseSpeech, 
+  resumeSpeech, 
+  replaySpeech, 
+  setVoiceGender, 
+  setVoiceAccent, 
+  setVoiceSpeed, 
+  toggleAudioMute, 
+  subscribeSpeechState,
+  type VoiceGender,
+  type VoiceAccent,
+  type SpeechSpeed,
+  type VoiceSettings,
+  type SpeakOptions
+} from './voiceEngine';
+
+export {
+  speakEnglishVoice,
+  getVoiceSettings,
+  stopSpeech,
+  pauseSpeech,
+  resumeSpeech,
+  replaySpeech,
+  setVoiceGender,
+  setVoiceAccent,
+  setVoiceSpeed,
+  toggleAudioMute,
+  subscribeSpeechState,
+  type VoiceGender,
+  type VoiceAccent,
+  type SpeechSpeed,
+  type VoiceSettings,
+  type SpeakOptions
+};
 
 // Audio Context Singleton for instant feedback sound effects
 let audioCtx: AudioContext | null = null;
@@ -18,6 +55,9 @@ function getAudioContext(): AudioContext | null {
 }
 
 export function playSound(type: 'correct' | 'wrong' | 'click' | 'fanfare' | 'flip'): void {
+  const settings = getVoiceSettings();
+  if (settings.isMuted) return;
+
   try {
     const ctx = getAudioContext();
     if (!ctx) return;
@@ -126,33 +166,9 @@ export function playSound(type: 'correct' | 'wrong' | 'click' | 'fanfare' | 'fli
   }
 }
 
-// Web Speech API text-to-speech for English practice
-export function speakEnglish(text: string): void {
-  if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    return;
-  }
-
-  try {
-    window.speechSynthesis.cancel(); // Stop any pending speech
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.92; // Slightly measured for clear learning
-    utterance.pitch = 1.0;
-
-    // Pick a natural English voice if available
-    const voices = window.speechSynthesis.getVoices();
-    const naturalVoice = voices.find(v => 
-      v.lang.startsWith('en') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Samantha') || v.name.includes('Daniel'))
-    ) || voices.find(v => v.lang.startsWith('en'));
-
-    if (naturalVoice) {
-      utterance.voice = naturalVoice;
-    }
-
-    window.speechSynthesis.speak(utterance);
-  } catch {
-    // Non-blocking fallback
-  }
+// Web Speech API text-to-speech for English practice (backward-compatible)
+export function speakEnglish(text: string, options?: SpeakOptions): void {
+  speakEnglishVoice(text, options);
 }
 
 // Celebration Confetti
@@ -170,3 +186,4 @@ export function fireCelebration(): void {
     // Fail silently if canvas is not ready
   }
 }
+

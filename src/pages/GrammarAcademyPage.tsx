@@ -258,7 +258,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         </p>
                       </div>
 
-                      {/* Golden Formula Preview */}
+                      {/* Golden Formula Preview & Action Buttons */}
                       <div className="mt-4 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-2">
                         <div className="flex items-center gap-2">
                           <span className="text-[11px] font-bold text-[#ffd166]">التركيبة:</span>
@@ -267,19 +267,33 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                           </code>
                         </div>
 
-                        {rule.id === 'future-perfect' && (
+                        <div className="flex items-center gap-2">
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
                               playSound('click');
-                              onNavigate('courses/grammar/future-perfect');
+                              window.location.hash = `grammar/${rule.id}`;
+                              onNavigate('grammar-lesson', rule.id);
                             }}
-                            className="px-3 py-1 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] text-xs font-black hover:brightness-110 flex items-center gap-1 cursor-pointer"
+                            className="px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] text-xs font-black hover:brightness-110 flex items-center gap-1.5 shadow-md cursor-pointer transition-transform hover:-translate-y-0.5"
                           >
-                            <span>فتح الكورس الرائد (8 دروس)</span>
-                            <ArrowRight className="w-3.5 h-3.5 rotate-180" />
+                            <BookOpen className="w-3.5 h-3.5" />
+                            <span>ابدأ الدرس التعليمي الكامل 📖</span>
                           </button>
-                        )}
+
+                          {rule.id === 'future-perfect' && (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                playSound('click');
+                                onNavigate('courses/grammar/future-perfect');
+                              }}
+                              className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#ffd166] text-xs font-bold flex items-center gap-1 cursor-pointer border border-white/10"
+                            >
+                              <span>الكورس الرائد (8 دروس)</span>
+                            </button>
+                          )}
+                        </div>
                       </div>
                     </div>
                   </div>

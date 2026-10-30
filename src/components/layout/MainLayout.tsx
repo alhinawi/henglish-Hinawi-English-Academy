@@ -9,6 +9,8 @@ interface MainLayoutProps {
   activeLessonId?: string;
   onNavigate: (route: PageRoute, lessonId?: string) => void;
   onOpenSearch: () => void;
+  onOpenVoiceSettings: () => void;
+  onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
   userProfile: UserProfile;
   notifications: AppNotification[];
   unreadCount: number;
@@ -16,6 +18,7 @@ interface MainLayoutProps {
   onMarkAllNotificationsRead: () => void;
   onToggleRole: () => void;
   onResetProgress: () => void;
+  authSessionType?: 'guest' | 'demo' | 'authenticated';
   children: React.ReactNode;
 }
 
@@ -24,6 +27,8 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   activeLessonId,
   onNavigate,
   onOpenSearch,
+  onOpenVoiceSettings,
+  onOpenAuthModal,
   userProfile,
   notifications,
   unreadCount,
@@ -31,6 +36,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   onMarkAllNotificationsRead,
   onToggleRole,
   onResetProgress,
+  authSessionType = 'authenticated',
   children,
 }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -51,8 +57,8 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
         xp={userProfile.xp}
       />
 
-      {/* Main Content Area */}
-      <div className="flex-1 flex flex-col min-w-0 min-h-screen overflow-x-hidden">
+      {/* Main Content Area - no overflow-x-hidden on parent of Header to prevent dropdown clipping */}
+      <div className="flex-1 flex flex-col min-w-0 min-h-screen relative">
         {/* Top Header */}
         <Header
           currentRoute={currentRoute}
@@ -60,6 +66,8 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
           onNavigate={onNavigate}
           onOpenMobile={() => setMobileOpen(true)}
           onOpenSearch={onOpenSearch}
+          onOpenVoiceSettings={onOpenVoiceSettings}
+          onOpenAuthModal={onOpenAuthModal}
           userProfile={userProfile}
           notifications={notifications}
           unreadCount={unreadCount}
@@ -67,6 +75,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
           onMarkAllNotificationsRead={onMarkAllNotificationsRead}
           onToggleRole={onToggleRole}
           onResetProgress={onResetProgress}
+          authSessionType={authSessionType}
         />
 
         {/* Page Content Body */}

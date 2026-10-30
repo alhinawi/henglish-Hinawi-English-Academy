@@ -22,7 +22,11 @@ export type PageRoute =
   | 'homework'
   | 'progress'
   | 'resources'
-  | 'about';
+  | 'about'
+  | 'grammar-lesson'
+  | 'ai-tutor'
+  | 'world-3d'
+  | 'certificates';
 
 export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 
