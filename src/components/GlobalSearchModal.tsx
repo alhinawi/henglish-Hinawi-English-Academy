@@ -109,6 +109,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
           <Search className="w-5 h-5 text-[#41e7ff] shrink-0" />
           <input
             type="text"
+            dir="auto"
             value={query}
             onChange={e => setQuery(e.target.value)}
             placeholder="ابحث عن درس، قاعدة، فعل V3، سؤال، أو مذكرة..."

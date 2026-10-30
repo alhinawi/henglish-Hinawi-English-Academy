@@ -1,6 +1,13 @@
-import React, { useState } from 'react';
-import { PageRoute, UserProfile, UserProgressState, AchievementBadge, PersonalNote, BookmarkItem } from '../types';
-import { playSound, fireCelebration } from '../utils/audio';
+import React, { useState } from "react";
+import {
+  PageRoute,
+  UserProfile,
+  UserProgressState,
+  AchievementBadge,
+  PersonalNote,
+  BookmarkItem,
+} from "../types";
+import { playSound, fireCelebration } from "../utils/audio";
 import {
   BookmarkCheck,
   BookOpen,
@@ -14,7 +21,7 @@ import {
   Flame,
   FileCheck2,
   Printer,
-} from 'lucide-react';
+} from "lucide-react";
 
 interface MyLearningPageProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
@@ -33,7 +40,9 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
   onDeleteNote,
   completionPercentage,
 }) => {
-  const [activeTab, setActiveTab] = useState<'overview' | 'bookmarks' | 'notes' | 'quizzes' | 'certificate'>('overview');
+  const [activeTab, setActiveTab] = useState<
+    "overview" | "bookmarks" | "notes" | "quizzes" | "certificate"
+  >("overview");
   const [showCertificate, setShowCertificate] = useState(false);
 
   const bookmarks = progress.bookmarks || [];
@@ -42,7 +51,6 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
   return (
     <div className="space-y-10 pb-16 text-right">
-      
       {/* Page Hero */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -58,20 +66,22 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            مرحباً بك في مساحتك التعليمية الشخصية. هنا تجد دروسك المحفوظة، ملاحظاتك المدونة أثناء الشرح، نتائج اختباراتك التراكمية، وشهادات إتمام الكورسات.
+            مرحباً بك في مساحتك التعليمية الشخصية. هنا تجد دروسك المحفوظة،
+            ملاحظاتك المدونة أثناء الشرح، نتائج اختباراتك التراكمية، وشهادات
+            إتمام الكورسات.
           </p>
 
           {/* Navigation Tabs */}
           <div className="flex flex-wrap items-center gap-2 pt-2">
             <button
               onClick={() => {
-                playSound('click');
-                setActiveTab('overview');
+                playSound("click");
+                setActiveTab("overview");
               }}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
-                activeTab === 'overview'
-                  ? 'bg-[#ffd166] text-[#0c0b20] shadow-lg'
-                  : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
+                activeTab === "overview"
+                  ? "bg-[#ffd166] text-[#0c0b20] shadow-lg"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
               نظرة عامة والتقدم
@@ -79,13 +89,13 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
             <button
               onClick={() => {
-                playSound('click');
-                setActiveTab('bookmarks');
+                playSound("click");
+                setActiveTab("bookmarks");
               }}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
-                activeTab === 'bookmarks'
-                  ? 'bg-[#41e7ff] text-[#0c0b20] shadow-lg'
-                  : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
+                activeTab === "bookmarks"
+                  ? "bg-[#41e7ff] text-[#0c0b20] shadow-lg"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
               الدروس المحفوظة ({bookmarks.length})
@@ -93,13 +103,13 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
             <button
               onClick={() => {
-                playSound('click');
-                setActiveTab('notes');
+                playSound("click");
+                setActiveTab("notes");
               }}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
-                activeTab === 'notes'
-                  ? 'bg-[#c4ff55] text-[#0c0b20] shadow-lg'
-                  : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
+                activeTab === "notes"
+                  ? "bg-[#c4ff55] text-[#0c0b20] shadow-lg"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
               ملاحظاتي الشخصية ({notes.length})
@@ -107,13 +117,13 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
             <button
               onClick={() => {
-                playSound('click');
-                setActiveTab('quizzes');
+                playSound("click");
+                setActiveTab("quizzes");
               }}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
-                activeTab === 'quizzes'
-                  ? 'bg-[#ff4f9a] text-white shadow-lg'
-                  : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
+                activeTab === "quizzes"
+                  ? "bg-[#ff4f9a] text-white shadow-lg"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
               سجل الاختبارات ({quizScores.length})
@@ -121,13 +131,13 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
             <button
               onClick={() => {
-                playSound('click');
-                setActiveTab('certificate');
+                playSound("click");
+                setActiveTab("certificate");
               }}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
-                activeTab === 'certificate'
-                  ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] shadow-lg'
-                  : 'bg-white/5 hover:bg-white/10 text-white border border-white/10'
+                activeTab === "certificate"
+                  ? "bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] shadow-lg"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
               🏆 الشهادات المعتمدة
@@ -137,31 +147,47 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       </section>
 
       {/* TAB 1: OVERVIEW & PROGRESS */}
-      {activeTab === 'overview' && (
+      {activeTab === "overview" && (
         <section className="space-y-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
               <div className="text-xs text-[#b9b6d5]">المستوى الأكاديمي</div>
-              <div className="text-2xl font-black text-[#ffd166]">{userProfile.currentLevel} (Intermediate)</div>
-              <div className="text-[11px] text-[#41e7ff]">الهدف القادم: {userProfile.targetLevel}</div>
+              <div className="text-2xl font-black text-[#ffd166]">
+                {userProfile.currentLevel} (Intermediate)
+              </div>
+              <div className="text-[11px] text-[#41e7ff]">
+                الهدف القادم: {userProfile.targetLevel}
+              </div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
               <div className="text-xs text-[#b9b6d5]">نقاط الخبرة (XP)</div>
-              <div className="text-2xl font-black text-[#c4ff55]">{userProfile.xp.toLocaleString()} XP</div>
-              <div className="text-[11px] text-[#b9b6d5]">المرتبة: بطل الأكاديمية ⚡</div>
+              <div className="text-2xl font-black text-[#c4ff55]">
+                {userProfile.xp.toLocaleString()} XP
+              </div>
+              <div className="text-[11px] text-[#b9b6d5]">
+                المرتبة: بطل الأكاديمية ⚡
+              </div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <div className="text-xs text-[#b9b6d5]">أيام التعلم المتتالية</div>
-              <div className="text-2xl font-black text-[#ff8bb9]">{userProfile.streakDays} أيام 🔥</div>
+              <div className="text-xs text-[#b9b6d5]">
+                أيام التعلم المتتالية
+              </div>
+              <div className="text-2xl font-black text-[#ff8bb9]">
+                {userProfile.streakDays} أيام 🔥
+              </div>
               <div className="text-[11px] text-[#b9b6d5]">آخر جلسة: اليوم</div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
               <div className="text-xs text-[#b9b6d5]">إنجاز المستقبل التام</div>
-              <div className="text-2xl font-black text-[#41e7ff]">{completionPercentage}%</div>
-              <div className="text-[11px] text-[#c4ff55]">{progress.completedLessons.length} من 8 دروس مكتملة</div>
+              <div className="text-2xl font-black text-[#41e7ff]">
+                {completionPercentage}%
+              </div>
+              <div className="text-[11px] text-[#c4ff55]">
+                {progress.completedLessons.length} من 8 دروس مكتملة
+              </div>
             </div>
           </div>
 
@@ -173,17 +199,21 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
             </h2>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              {badges.map(b => (
+              {badges.map((b) => (
                 <div
                   key={b.id}
                   className={`p-4 rounded-2xl border text-center transition-all ${
                     b.unlocked
-                      ? 'bg-gradient-to-b from-[#ffd166]/15 to-transparent border-[#ffd166]/40 shadow-sm'
-                      : 'bg-white/5 border-white/5 opacity-40 grayscale'
+                      ? "bg-gradient-to-b from-[#ffd166]/15 to-transparent border-[#ffd166]/40 shadow-sm"
+                      : "bg-white/5 border-white/5 opacity-40 grayscale"
                   }`}
                 >
-                  <div className="text-3xl mb-1.5 filter drop-shadow">{b.icon}</div>
-                  <div className="text-xs font-bold text-white mb-0.5">{b.title}</div>
+                  <div className="text-3xl mb-1.5 filter drop-shadow">
+                    {b.icon}
+                  </div>
+                  <div className="text-xs font-bold text-white mb-0.5">
+                    {b.title}
+                  </div>
                   <div className="text-[10px] text-[#b9b6d5] line-clamp-2 leading-tight">
                     {b.description}
                   </div>
@@ -195,15 +225,19 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       )}
 
       {/* TAB 2: BOOKMARKS */}
-      {activeTab === 'bookmarks' && (
+      {activeTab === "bookmarks" && (
         <section className="space-y-4">
-          <h2 className="text-xl font-black text-white">الدروس والصفحات المحفوظة في المفضلة</h2>
+          <h2 className="text-xl font-black text-white">
+            الدروس والصفحات المحفوظة في المفضلة
+          </h2>
           {bookmarks.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
               <div className="text-4xl">🔖</div>
-              <p className="text-sm text-[#b9b6d5]">لم تقم بحفظ أي دروس في المفضلة بعد.</p>
+              <p className="text-sm text-[#b9b6d5]">
+                لم تقم بحفظ أي دروس في المفضلة بعد.
+              </p>
               <button
-                onClick={() => onNavigate('grammar')}
+                onClick={() => onNavigate("grammar")}
                 className="px-6 py-2.5 rounded-xl bg-[#ffd166] text-[#0c0b20] font-black text-xs cursor-pointer"
               >
                 تصفح أكاديمية الجرامر
@@ -211,11 +245,11 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {bookmarks.map(bm => (
+              {bookmarks.map((bm) => (
                 <div
                   key={bm.id}
                   onClick={() => {
-                    playSound('click');
+                    playSound("click");
                     onNavigate(bm.route, bm.lessonId);
                   }}
                   className="glass-panel p-5 rounded-2xl border border-white/10 hover:border-[#ffd166]/50 transition-all cursor-pointer flex items-center justify-between group"
@@ -228,7 +262,9 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                       {bm.title}
                     </h3>
                     <p className="text-xs text-[#b9b6d5]">{bm.subtitle}</p>
-                    <span className="text-[10px] text-[#b9b6d5]/70">تاريخ الحفظ: {bm.savedAt}</span>
+                    <span className="text-[10px] text-[#b9b6d5]/70">
+                      تاريخ الحفظ: {bm.savedAt}
+                    </span>
                   </div>
 
                   <ExternalLink className="w-5 h-5 text-[#41e7ff] group-hover:translate-x-1 transition-transform" />
@@ -240,17 +276,21 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       )}
 
       {/* TAB 3: PERSONAL NOTES */}
-      {activeTab === 'notes' && (
+      {activeTab === "notes" && (
         <section className="space-y-4">
-          <h2 className="text-xl font-black text-white">ملاحظاتي الشخصية المدونة أثناء الدروس</h2>
+          <h2 className="text-xl font-black text-white">
+            ملاحظاتي الشخصية المدونة أثناء الدروس
+          </h2>
           {notes.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
               <div className="text-4xl">📝</div>
-              <p className="text-sm text-[#b9b6d5]">لم تقم بتدوين أي ملاحظات شخصية بعد.</p>
+              <p className="text-sm text-[#b9b6d5]">
+                لم تقم بتدوين أي ملاحظات شخصية بعد.
+              </p>
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {notes.map(note => (
+              {notes.map((note) => (
                 <div
                   key={note.id}
                   className="glass-panel p-5 rounded-2xl border border-white/10 space-y-3 flex flex-col justify-between"
@@ -260,7 +300,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                       <span>درس: {note.lessonTitle}</span>
                       <button
                         onClick={() => {
-                          playSound('click');
+                          playSound("click");
                           onDeleteNote(note.id);
                         }}
                         className="p-1 rounded text-[#ff4f9a] hover:bg-[#ff4f9a]/10 cursor-pointer"
@@ -278,7 +318,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   <div className="flex items-center justify-between text-[11px] text-[#b9b6d5] pt-2 border-t border-white/5">
                     <span>تاريخ التعديل: {note.updatedAt}</span>
                     <button
-                      onClick={() => onNavigate('lesson', note.lessonId)}
+                      onClick={() => onNavigate("lesson", note.lessonId)}
                       className="text-[#41e7ff] hover:underline cursor-pointer"
                     >
                       فتح الدرس ⬅️
@@ -292,12 +332,16 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       )}
 
       {/* TAB 4: QUIZ SCORES HISTORY */}
-      {activeTab === 'quizzes' && (
+      {activeTab === "quizzes" && (
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
-          <h2 className="text-xl font-black text-white">سجل نتائج الاختبارات والتقييمات</h2>
+          <h2 className="text-xl font-black text-white">
+            سجل نتائج الاختبارات والتقييمات
+          </h2>
 
           {quizScores.length === 0 ? (
-            <p className="text-sm text-[#b9b6d5] text-center py-8">لم تسجل درجات اختبارات حتى الآن.</p>
+            <p className="text-sm text-[#b9b6d5] text-center py-8">
+              لم تسجل درجات اختبارات حتى الآن.
+            </p>
           ) : (
             <div className="overflow-x-auto custom-scrollbar">
               <table className="w-full text-right text-xs sm:text-sm">
@@ -312,24 +356,33 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                 </thead>
                 <tbody className="divide-y divide-white/5 text-white">
                   {quizScores.map(([qId, data]) => {
-                    const percent = Math.round((data.score / Math.max(1, data.total)) * 100);
+                    const percent = Math.round(
+                      (data.score / Math.max(1, data.total)) * 100,
+                    );
                     return (
-                      <tr key={qId} className="hover:bg-white/5 transition-colors">
+                      <tr
+                        key={qId}
+                        className="hover:bg-white/5 transition-colors"
+                      >
                         <td className="py-3.5 px-4 font-bold">{qId}</td>
                         <td className="py-3.5 px-4 font-mono font-bold text-[#ffd166]">
                           {data.score} / {data.total}
                         </td>
-                        <td className="py-3.5 px-4 font-mono font-bold text-[#c4ff55]">{percent}%</td>
+                        <td className="py-3.5 px-4 font-mono font-bold text-[#c4ff55]">
+                          {percent}%
+                        </td>
                         <td className="py-3.5 px-4 text-[#b9b6d5] text-xs">
-                          {data.date.split('T')[0]}
+                          {data.date.split("T")[0]}
                         </td>
                         <td className="py-3.5 px-4">
-                          <span className={`px-2 py-0.5 rounded text-[11px] font-black ${
-                            percent >= 80
-                              ? 'bg-[#c4ff55]/20 text-[#c4ff55]'
-                              : 'bg-[#ffd166]/20 text-[#ffd166]'
-                          }`}>
-                            {percent >= 80 ? 'ممتاز 🌟' : 'جيد جداً 👍'}
+                          <span
+                            className={`px-2 py-0.5 rounded text-[11px] font-black ${
+                              percent >= 80
+                                ? "bg-[#c4ff55]/20 text-[#c4ff55]"
+                                : "bg-[#ffd166]/20 text-[#ffd166]"
+                            }`}
+                          >
+                            {percent >= 80 ? "ممتاز 🌟" : "جيد جداً 👍"}
                           </span>
                         </td>
                       </tr>
@@ -343,7 +396,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       )}
 
       {/* TAB 5: CERTIFICATE */}
-      {activeTab === 'certificate' && (
+      {activeTab === "certificate" && (
         <section className="glass-panel rounded-3xl p-6 sm:p-12 border border-[#ffd166]/40 max-w-3xl mx-auto space-y-8 text-center shadow-2xl relative overflow-hidden">
           {/* Certificate Watermark */}
           <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
@@ -357,18 +410,24 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
             <h2 className="text-2xl sm:text-4xl font-black text-white font-serif">
               شهادة إتمام معتمدة • أكاديمية هناوي
             </h2>
-            <p className="text-xs text-[#b9b6d5]">Hinawi English Academy Academic Credential</p>
+            <p className="text-xs text-[#b9b6d5]">
+              Henglish Academy Academic Credential
+            </p>
           </div>
 
           <div className="p-8 rounded-3xl bg-black/40 border border-[#ffd166]/40 space-y-4 max-w-xl mx-auto">
-            <p className="text-xs text-[#dedbf4]">تُشهد أكاديمية هناوي للغة الإنجليزية بأن الطالب المتميز:</p>
+            <p className="text-xs text-[#dedbf4]">
+              تُشهد أكاديمية هناوي للغة الإنجليزية بأن الطالب المتميز:
+            </p>
             <div className="text-2xl sm:text-3xl font-black text-[#ffd166] font-['Cairo',sans-serif]">
               {userProfile.nameAr} ({userProfile.name})
             </div>
             <p className="text-xs text-[#dedbf4] leading-relaxed">
               قد أتم بنجاح متطلبات دراسة واجتياز كورس:
               <br />
-              <strong className="text-white text-base">المستقبل التام الشامل (Future Perfect Masterclass)</strong>
+              <strong className="text-white text-base">
+                المستقبل التام الشامل (Future Perfect Masterclass)
+              </strong>
               <br />
               بتقدير امتياز وتفوق في كافة الاختبارات التحريرية والشفهية.
             </p>
@@ -388,7 +447,6 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
           </button>
         </section>
       )}
-
     </div>
   );
 };

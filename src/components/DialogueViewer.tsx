@@ -153,7 +153,7 @@ export const DialogueViewer: React.FC = () => {
               </div>
 
               {/* English Line */}
-              <p className="en text-base sm:text-lg font-bold text-white leading-relaxed">
+              <p className="en text-base sm:text-lg font-bold text-white leading-relaxed text-left" dir="ltr" lang="en">
                 {line.en}
               </p>
 
@@ -181,11 +181,11 @@ export const DialogueViewer: React.FC = () => {
 
             return (
               <div key={qIdx} className="space-y-3">
-                <p className="en text-sm sm:text-base font-bold text-white">
+                <p className="en text-sm sm:text-base font-bold text-white text-left" dir="ltr" lang="en">
                   {q.question}
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5" dir="ltr" lang="en">
                   {q.options.map((opt, optIdx) => {
                     let btnStyle = 'bg-[#171632] hover:bg-[#201d43] border-white/10 text-white';
                     if (answered) {
@@ -201,16 +201,18 @@ export const DialogueViewer: React.FC = () => {
                     return (
                       <button
                         key={optIdx}
+                        dir="ltr"
+                        lang="en"
                         onClick={() => handleAnswerQuestion(qIdx, optIdx)}
                         disabled={answered}
                         className={`en p-3 rounded-xl border text-sm text-left transition-all cursor-pointer flex items-center justify-between ${btnStyle}`}
                       >
-                        <span>{opt}</span>
+                        <span dir="ltr">{opt}</span>
                         {answered && optIdx === q.answer && (
-                          <CheckCircle2 className="w-4 h-4 text-[#c4ff55]" />
+                          <CheckCircle2 className="w-4 h-4 text-[#c4ff55] shrink-0" />
                         )}
                         {answered && chosen === optIdx && optIdx !== q.answer && (
-                          <XCircle className="w-4 h-4 text-[#ff4f9a]" />
+                          <XCircle className="w-4 h-4 text-[#ff4f9a] shrink-0" />
                         )}
                       </button>
                     );

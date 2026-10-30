@@ -32,7 +32,37 @@
   font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
   direction: ltr;
   text-align: left;
-  unicode-bidi: embed;
+  unicode-bidi: isolate;
+}
+
+/* Global English Input & Bidirectional Text Utilities */
+.english-input {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+  font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+}
+
+.sentence-builder-ltr {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+}
+
+.bidi-isolate {
+  unicode-bidi: isolate;
+}
+
+.ltr-box {
+  direction: ltr !important;
+  text-align: left !important;
+  unicode-bidi: isolate;
+}
+
+.rtl-box {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: isolate;
 }
 
 /* Glassmorphism & Neon Glow Utilities */

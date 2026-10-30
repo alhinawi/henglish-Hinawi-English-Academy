@@ -253,13 +253,15 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
           <textarea
             rows={8}
+            dir="ltr"
+            lang="en"
             value={userInput}
             onChange={e => {
               setUserInput(e.target.value);
               setSubmissionFeedback(null);
             }}
             placeholder="Dear Mr. Smith, I am writing to inform you that by Friday, we will have finished the assignment..."
-            className="en w-full p-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#ffd166] leading-relaxed"
+            className="english-input en w-full p-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#ffd166] leading-relaxed"
           />
 
           <div className="flex items-center justify-between text-xs text-[#b9b6d5]">

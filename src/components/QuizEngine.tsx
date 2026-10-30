@@ -152,14 +152,14 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
       </div>
 
       {/* Question Box */}
-      <div className="p-6 rounded-2xl bg-[#09091a]/90 border border-white/10 mb-6">
+      <div className="p-6 rounded-2xl bg-[#09091a]/90 border border-white/10 mb-6" dir="ltr" lang="en">
         <p className="en text-lg sm:text-xl font-extrabold text-white leading-relaxed">
           {currentQ.question}
         </p>
       </div>
 
       {/* 4 Interactive Options */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6" dir="ltr" lang="en">
         {currentQ.options.map((option, optIdx) => {
           const isSelected = userAnswer === optIdx;
           const isThisCorrect = optIdx === currentQ.answer;
@@ -179,9 +179,11 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           return (
             <button
               key={optIdx}
+              dir="ltr"
+              lang="en"
               onClick={() => handleSelectOption(optIdx)}
               disabled={isAnswered}
-              className={`p-4 rounded-2xl border text-right transition-all duration-200 cursor-pointer flex items-center justify-between gap-3 ${btnStyles}`}
+              className={`p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer flex items-center justify-between gap-3 ${btnStyles}`}
             >
               <div className="flex items-center gap-3">
                 <span className="w-7 h-7 rounded-lg bg-white/10 flex items-center justify-center font-bold text-xs shrink-0">

@@ -82,13 +82,13 @@ export const PracticePage: React.FC = () => {
                 key={item.id}
                 className="p-5 rounded-2xl bg-[#09091a] border border-white/10 space-y-3"
               >
-                <div className="flex items-center justify-between">
-                  <p className="en text-base sm:text-lg font-bold text-white">
+                <div className="flex items-center justify-between" dir="ltr">
+                  <p className="en text-base sm:text-lg font-bold text-white text-left" dir="ltr" lang="en">
                     {item.sentence}
                   </p>
                   <button
                     onClick={() => speakEnglish(item.sentence)}
-                    className="p-1 text-[#41e7ff] hover:text-white"
+                    className="p-1 text-[#41e7ff] hover:text-white shrink-0 ml-2"
                     title="استمع للجملة"
                   >
                     <Volume2 className="w-4 h-4" />
@@ -121,7 +121,7 @@ export const PracticePage: React.FC = () => {
                     </div>
                     {item.hasError ? (
                       <p className="text-[#ffd166]">
-                        التصحيح السليم: <span className="en font-bold text-white">{item.correction}</span>
+                        التصحيح السليم: <span className="en font-bold text-white" dir="ltr" lang="en">{item.correction}</span>
                       </p>
                     ) : (
                       <p className="text-[#c4ff55]">{item.correction}</p>

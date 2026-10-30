@@ -228,11 +228,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div className="relative">
                   <input
                     type="email"
+                    dir="ltr"
+                    lang="en"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     placeholder="student@example.com"
                     required
-                    className="w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
+                    className="english-input w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
                   />
                   <Mail className="w-4 h-4 text-[#b9b6d5] absolute right-3 top-3" />
                 </div>
@@ -252,11 +254,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div className="relative">
                   <input
                     type="password"
+                    dir="ltr"
+                    lang="en"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     placeholder="••••••••"
                     required
-                    className="w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
+                    className="english-input w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
                   />
                   <Lock className="w-4 h-4 text-[#b9b6d5] absolute right-3 top-3" />
                 </div>
@@ -280,6 +284,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div className="relative">
                   <input
                     type="text"
+                    dir="auto"
                     value={fullName}
                     onChange={e => setFullName(e.target.value)}
                     placeholder="مثال: أحمد عبد الله"
@@ -295,11 +300,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div className="relative">
                   <input
                     type="email"
+                    dir="ltr"
+                    lang="en"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     placeholder="yourname@gmail.com"
                     required
-                    className="w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
+                    className="english-input w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
                   />
                   <Mail className="w-4 h-4 text-[#b9b6d5] absolute right-3 top-3" />
                 </div>
@@ -310,12 +317,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <div className="relative">
                   <input
                     type="password"
+                    dir="ltr"
+                    lang="en"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                     placeholder="••••••••"
                     required
                     minLength={6}
-                    className="w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
+                    className="english-input w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
                   />
                   <Lock className="w-4 h-4 text-[#b9b6d5] absolute right-3 top-3" />
                 </div>
@@ -341,11 +350,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <label className="text-xs font-bold text-[#dedbf4]">البريد الإلكتروني:</label>
                 <input
                   type="email"
+                  dir="ltr"
+                  lang="en"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   placeholder="student@example.com"
                   required
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
+                  className="english-input w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#ffd166]"
                 />
               </div>
               <button
@@ -409,6 +420,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <label className="text-xs font-bold text-[#dedbf4]">الاسم الكامل:</label>
                 <input
                   type="text"
+                  dir="auto"
                   value={fullName}
                   onChange={e => setFullName(e.target.value)}
                   placeholder="اسمك لحفظ الشهادات"
@@ -421,11 +433,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <label className="text-xs font-bold text-[#dedbf4]">البريد الإلكتروني:</label>
                 <input
                   type="email"
+                  dir="ltr"
+                  lang="en"
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   placeholder="yourname@gmail.com"
                   required
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#c4ff55]"
+                  className="english-input w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#c4ff55]"
                 />
               </div>
 

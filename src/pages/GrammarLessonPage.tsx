@@ -269,7 +269,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           {activeStructureTab === 'affirmative' && (
             <div className="space-y-3">
               <div className="text-xs font-bold text-[#ffd166]">قالب الجملة المثبتة (Golden Formula):</div>
-              <div className="p-4 rounded-xl bg-white/5 border border-[#ffd166]/30 text-base sm:text-xl font-mono text-[#ffd166] font-bold text-center tracking-wide">
+              <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#ffd166]/30 text-base sm:text-xl font-mono text-[#ffd166] font-bold text-center tracking-wide">
                 {rule.goldenFormula}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
@@ -281,7 +281,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           {activeStructureTab === 'negative' && (
             <div className="space-y-3">
               <div className="text-xs font-bold text-[#ff4f9a]">قالب جملة النفي (Negative Structure):</div>
-              <div className="p-4 rounded-xl bg-white/5 border border-[#ff4f9a]/30 text-base sm:text-xl font-mono text-[#ff8bb9] font-bold text-center tracking-wide">
+              <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#ff4f9a]/30 text-base sm:text-xl font-mono text-[#ff8bb9] font-bold text-center tracking-wide">
                 {rule.negativeFormula}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
@@ -293,7 +293,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           {activeStructureTab === 'question' && (
             <div className="space-y-3">
               <div className="text-xs font-bold text-[#41e7ff]">قالب السؤال بهل وأدوات الاستفهام (Questions & Short Answers):</div>
-              <div className="p-4 rounded-xl bg-white/5 border border-[#41e7ff]/30 text-base sm:text-xl font-mono text-[#41e7ff] font-bold text-center tracking-wide">
+              <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#41e7ff]/30 text-base sm:text-xl font-mono text-[#41e7ff] font-bold text-center tracking-wide">
                 {rule.questionFormula}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
@@ -360,7 +360,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                 </button>
               </div>
 
-              <div className="text-left font-sans text-base sm:text-lg text-white font-semibold tracking-wide">
+              <div dir="ltr" lang="en" className="text-left font-sans text-base sm:text-lg text-white font-semibold tracking-wide">
                 {ex.en}
               </div>
               <div className="text-xs sm:text-sm text-[#b9b6d5] font-medium leading-relaxed">
@@ -428,11 +428,11 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                   )}
                 </div>
 
-                <p className="text-left font-sans text-base sm:text-lg text-white font-semibold">
+                <p dir="ltr" lang="en" className="text-left font-sans text-base sm:text-lg text-white font-semibold">
                   {q.question}
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" dir="ltr" lang="en">
                   {q.options.map((opt, optIdx) => {
                     let btnStyle = 'bg-white/5 hover:bg-white/10 border-white/10 text-white';
                     if (hasAnswered) {
@@ -448,11 +448,13 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                     return (
                       <button
                         key={optIdx}
+                        dir="ltr"
+                        lang="en"
                         disabled={hasAnswered}
                         onClick={() => handleSelectQuiz(qIdx, optIdx, q.correct)}
-                        className={`p-3.5 rounded-xl border text-left font-sans text-sm transition-all cursor-pointer ${btnStyle}`}
+                        className={`p-3.5 rounded-xl border text-left font-sans text-sm transition-all cursor-pointer flex items-center ${btnStyle}`}
                       >
-                        <span className="font-mono text-xs opacity-60 ml-2">
+                        <span className="font-mono text-xs opacity-60 mr-2 shrink-0">
                           {String.fromCharCode(65 + optIdx)}.
                         </span>
                         <span>{opt}</span>

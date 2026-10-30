@@ -1,36 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  getVoiceSettings, 
-  setVoiceGender, 
-  setVoiceAccent, 
-  setVoiceSpeed, 
-  toggleAudioMute, 
+import React, { useState, useEffect } from "react";
+import {
+  getVoiceSettings,
+  setVoiceGender,
+  setVoiceAccent,
+  setVoiceSpeed,
+  toggleAudioMute,
   speakEnglishVoice,
   stopSpeech,
-  VoiceGender, 
-  VoiceAccent, 
-  SpeechSpeed 
-} from '../utils/audio';
-import { 
-  Volume2, 
-  VolumeX, 
-  X, 
-  Play, 
-  Square, 
-  Sparkles, 
-  Check, 
-  Mic, 
-  Gauge, 
-  Globe 
-} from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+  VoiceGender,
+  VoiceAccent,
+  SpeechSpeed,
+} from "../utils/audio";
+import {
+  Volume2,
+  VolumeX,
+  X,
+  Play,
+  Square,
+  Sparkles,
+  Check,
+  Mic,
+  Gauge,
+  Globe,
+} from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface VoiceSettingsModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, onClose }) => {
+export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
+  isOpen,
+  onClose,
+}) => {
   const [settings, setSettings] = useState(getVoiceSettings());
   const [isPlayingSample, setIsPlayingSample] = useState(false);
 
@@ -42,30 +45,31 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
 
   const handleGenderChange = (gender: VoiceGender) => {
     setVoiceGender(gender);
-    setSettings(prev => ({ ...prev, gender }));
+    setSettings((prev) => ({ ...prev, gender }));
   };
 
   const handleAccentChange = (accent: VoiceAccent) => {
     setVoiceAccent(accent);
-    setSettings(prev => ({ ...prev, accent }));
+    setSettings((prev) => ({ ...prev, accent }));
   };
 
   const handleSpeedChange = (speed: SpeechSpeed) => {
     setVoiceSpeed(speed);
-    setSettings(prev => ({ ...prev, speed }));
+    setSettings((prev) => ({ ...prev, speed }));
   };
 
   const handleToggleMute = () => {
     const isMuted = toggleAudioMute();
-    setSettings(prev => ({ ...prev, isMuted }));
+    setSettings((prev) => ({ ...prev, isMuted }));
   };
 
   const playSample = () => {
     setIsPlayingSample(true);
-    const sampleText = settings.gender === 'male'
-      ? "Welcome to Hinawi English Academy. By this time next week, you will have mastered English pronunciation."
-      : "Welcome to Hinawi English Academy. Consistency is the secret to mastering fluent English conversation.";
-    
+    const sampleText =
+      settings.gender === "male"
+        ? "Welcome to Henglish Academy. By this time next week, you will have mastered English pronunciation."
+        : "Welcome to Henglish Academy. Consistency is the secret to mastering fluent English conversation.";
+
     speakEnglishVoice(sampleText, {
       gender: settings.gender,
       accent: settings.accent,
@@ -114,8 +118,12 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
                 <Volume2 className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-black text-white">إعدادات الصوت والنطق الصوتي</h3>
-                <p className="text-xs text-[#b9b6d5]">تخصيص المعلم الصوتي، اللهجة، وسرعة النطق</p>
+                <h3 className="text-lg font-black text-white">
+                  إعدادات الصوت والنطق الصوتي
+                </h3>
+                <p className="text-xs text-[#b9b6d5]">
+                  تخصيص المعلم الصوتي، اللهجة، وسرعة النطق
+                </p>
               </div>
             </div>
           </div>
@@ -129,34 +137,44 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
             <div className="grid grid-cols-2 gap-3">
               {/* Female Voice */}
               <button
-                onClick={() => handleGenderChange('female')}
+                onClick={() => handleGenderChange("female")}
                 className={`p-3.5 rounded-2xl border text-right transition-all cursor-pointer flex flex-col justify-between ${
-                  settings.gender === 'female'
-                    ? 'bg-gradient-to-br from-[#ff4f9a]/25 to-[#ffd166]/15 border-[#ff4f9a] text-white shadow-lg'
-                    : 'bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10'
+                  settings.gender === "female"
+                    ? "bg-gradient-to-br from-[#ff4f9a]/25 to-[#ffd166]/15 border-[#ff4f9a] text-white shadow-lg"
+                    : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                 }`}
               >
                 <div className="flex items-center justify-between w-full mb-1">
-                  <span className="text-sm font-black">صوت أنثوي (الأصلي) 👩‍🏫</span>
-                  {settings.gender === 'female' && <Check className="w-4 h-4 text-[#ffd166]" />}
+                  <span className="text-sm font-black">
+                    صوت أنثوي (الأصلي) 👩‍🏫
+                  </span>
+                  {settings.gender === "female" && (
+                    <Check className="w-4 h-4 text-[#ffd166]" />
+                  )}
                 </div>
-                <span className="text-[11px] opacity-80">الصوت المعتمد والواضح للمنصة</span>
+                <span className="text-[11px] opacity-80">
+                  الصوت المعتمد والواضح للمنصة
+                </span>
               </button>
 
               {/* Male Voice (Upgraded natural) */}
               <button
-                onClick={() => handleGenderChange('male')}
+                onClick={() => handleGenderChange("male")}
                 className={`p-3.5 rounded-2xl border text-right transition-all cursor-pointer flex flex-col justify-between ${
-                  settings.gender === 'male'
-                    ? 'bg-gradient-to-br from-[#41e7ff]/25 to-[#c4ff55]/15 border-[#41e7ff] text-white shadow-lg'
-                    : 'bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10'
+                  settings.gender === "male"
+                    ? "bg-gradient-to-br from-[#41e7ff]/25 to-[#c4ff55]/15 border-[#41e7ff] text-white shadow-lg"
+                    : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                 }`}
               >
                 <div className="flex items-center justify-between w-full mb-1">
                   <span className="text-sm font-black">صوت ذكوري طبيعي 👨‍🏫</span>
-                  {settings.gender === 'male' && <Check className="w-4 h-4 text-[#41e7ff]" />}
+                  {settings.gender === "male" && (
+                    <Check className="w-4 h-4 text-[#41e7ff]" />
+                  )}
                 </div>
-                <span className="text-[11px] text-[#41e7ff] font-bold">صوت دافئ ومطور (Native Voice)</span>
+                <span className="text-[11px] text-[#41e7ff] font-bold">
+                  صوت دافئ ومطور (Native Voice)
+                </span>
               </button>
             </div>
           </div>
@@ -169,21 +187,21 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
             </label>
             <div className="grid grid-cols-2 gap-3">
               <button
-                onClick={() => handleAccentChange('US')}
+                onClick={() => handleAccentChange("US")}
                 className={`p-3 rounded-xl border text-center font-bold text-xs transition-all cursor-pointer ${
-                  settings.accent === 'US'
-                    ? 'bg-[#41e7ff]/20 border-[#41e7ff] text-white'
-                    : 'bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10'
+                  settings.accent === "US"
+                    ? "bg-[#41e7ff]/20 border-[#41e7ff] text-white"
+                    : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                 }`}
               >
                 🇺🇸 الإنجليزية الأمريكية (American)
               </button>
               <button
-                onClick={() => handleAccentChange('UK')}
+                onClick={() => handleAccentChange("UK")}
                 className={`p-3 rounded-xl border text-center font-bold text-xs transition-all cursor-pointer ${
-                  settings.accent === 'UK'
-                    ? 'bg-[#ffd166]/20 border-[#ffd166] text-white'
-                    : 'bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10'
+                  settings.accent === "UK"
+                    ? "bg-[#ffd166]/20 border-[#ffd166] text-white"
+                    : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                 }`}
               >
                 🇬🇧 الإنجليزية البريطانية (British)
@@ -194,7 +212,9 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
           {/* 3. Speed Control */}
           <div className="space-y-2.5">
             <div className="flex items-center justify-between text-xs font-bold text-[#dedbf4]">
-              <span className="text-[#ffd166] font-mono">{settings.speed}x</span>
+              <span className="text-[#ffd166] font-mono">
+                {settings.speed}x
+              </span>
               <span className="flex items-center gap-1.5">
                 سرعة النطق الصوتي
                 <Gauge className="w-3.5 h-3.5 text-[#c4ff55]" />
@@ -202,18 +222,18 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
             </div>
             <div className="grid grid-cols-4 gap-2">
               {[
-                { speed: 0.75 as SpeechSpeed, label: '0.75x بطيء' },
-                { speed: 0.92 as SpeechSpeed, label: '0.92x تعليمي' },
-                { speed: 1.0 as SpeechSpeed, label: '1.0x عادي' },
-                { speed: 1.25 as SpeechSpeed, label: '1.25x سريع' },
-              ].map(item => (
+                { speed: 0.75 as SpeechSpeed, label: "0.75x بطيء" },
+                { speed: 0.92 as SpeechSpeed, label: "0.92x تعليمي" },
+                { speed: 1.0 as SpeechSpeed, label: "1.0x عادي" },
+                { speed: 1.25 as SpeechSpeed, label: "1.25x سريع" },
+              ].map((item) => (
                 <button
                   key={item.speed}
                   onClick={() => handleSpeedChange(item.speed)}
                   className={`py-2 rounded-xl border text-center text-[11px] font-bold transition-all cursor-pointer ${
                     settings.speed === item.speed
-                      ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#ff4f9a]/20 border-[#ffd166] text-[#ffd166]'
-                      : 'bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10'
+                      ? "bg-gradient-to-r from-[#ffd166]/20 to-[#ff4f9a]/20 border-[#ffd166] text-[#ffd166]"
+                      : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                   }`}
                 >
                   {item.label}
@@ -228,12 +248,20 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({ isOpen, 
               onClick={handleToggleMute}
               className={`w-full sm:w-auto px-4 py-2.5 rounded-xl border flex items-center justify-center gap-2 text-xs font-bold transition-all cursor-pointer ${
                 settings.isMuted
-                  ? 'bg-[#ff4f9a]/20 border-[#ff4f9a] text-[#ff8bb9]'
-                  : 'bg-white/5 border-white/10 text-[#dedbf4] hover:bg-white/10'
+                  ? "bg-[#ff4f9a]/20 border-[#ff4f9a] text-[#ff8bb9]"
+                  : "bg-white/5 border-white/10 text-[#dedbf4] hover:bg-white/10"
               }`}
             >
-              {settings.isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-[#c4ff55]" />}
-              <span>{settings.isMuted ? 'الصوت مكتوم (Muted)' : 'المؤثرات الصوتية مفعلة'}</span>
+              {settings.isMuted ? (
+                <VolumeX className="w-4 h-4" />
+              ) : (
+                <Volume2 className="w-4 h-4 text-[#c4ff55]" />
+              )}
+              <span>
+                {settings.isMuted
+                  ? "الصوت مكتوم (Muted)"
+                  : "المؤثرات الصوتية مفعلة"}
+              </span>
             </button>
 
             <div className="flex items-center gap-2 w-full sm:w-auto">

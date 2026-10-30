@@ -396,13 +396,15 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           </p>
           <textarea
             rows={3}
+            dir="ltr"
+            lang="en"
             value={personalNote}
             onChange={e => {
               setPersonalNote(e.target.value);
               setNoteSaved(false);
             }}
-            placeholder="اكتب جملتك بالإنجليزي هنا لتطبيق ما تعلمته في الدرس..."
-            className="w-full p-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#41e7ff]"
+            placeholder="Write your English practice sentence here..."
+            className="english-input en w-full p-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#41e7ff]"
           />
           <div className="flex items-center justify-between text-xs">
             <button

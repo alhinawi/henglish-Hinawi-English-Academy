@@ -123,6 +123,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           <Search className="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 text-[#b9b6d5]" />
           <input
             type="text"
+            dir="auto"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="ابحث عن أي زمن أو قاعدة (مثال: المضارع التام، will، passive، conditionals)..."

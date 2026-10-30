@@ -138,7 +138,10 @@ export const SentenceBuilder: React.FC = () => {
       </AnimatePresence>
 
       {/* Construction Assembly Slot */}
-      <div className={`min-h-[90px] p-4 rounded-2xl border-2 transition-all duration-300 flex flex-wrap items-center gap-2.5 mb-6 ${
+      <div 
+        dir="ltr"
+        lang="en"
+        className={`sentence-builder-ltr min-h-[90px] p-4 rounded-2xl border-2 transition-all duration-300 flex flex-wrap items-center gap-2.5 mb-6 ${
         isCorrect === true
           ? 'bg-[#c4ff55]/10 border-[#c4ff55] shadow-[0_0_20px_rgba(196,255,85,0.2)]'
           : isCorrect === false
@@ -146,7 +149,7 @@ export const SentenceBuilder: React.FC = () => {
           : 'bg-[#09091a] border-dashed border-white/20'
       }`}>
         {selectedWords.length === 0 ? (
-          <span className="text-sm text-[#b9b6d5]/60 italic mx-auto text-center">
+          <span className="text-sm text-[#b9b6d5]/60 italic mx-auto text-center" dir="rtl">
             اضغط على الكلمات بالأسفل لترتيبها هنا بالترتيب الصحيح...
           </span>
         ) : (
@@ -154,6 +157,8 @@ export const SentenceBuilder: React.FC = () => {
             <button
               key={`${word}-${idx}`}
               onClick={() => handleRemoveWord(word, idx)}
+              dir="ltr"
+              lang="en"
               className="en px-3.5 py-2 rounded-xl bg-[#201d43] hover:bg-[#ff4f9a]/20 border border-white/20 hover:border-[#ff4f9a]/50 text-white font-bold text-sm sm:text-base cursor-pointer transition-all hover:scale-95 group flex items-center gap-1.5"
             >
               <span>{word}</span>
@@ -164,11 +169,17 @@ export const SentenceBuilder: React.FC = () => {
       </div>
 
       {/* Scrambled Word Pool */}
-      <div className="flex flex-wrap items-center justify-center gap-2.5 p-4 rounded-2xl bg-white/5 border border-white/10 mb-6">
+      <div 
+        dir="ltr"
+        lang="en"
+        className="sentence-builder-ltr flex flex-wrap items-center justify-center gap-2.5 p-4 rounded-2xl bg-white/5 border border-white/10 mb-6"
+      >
         {availableWords.map((word, idx) => (
           <button
             key={`${word}-${idx}`}
             onClick={() => handleSelectWord(word, idx)}
+            dir="ltr"
+            lang="en"
             className="en px-4 py-2.5 rounded-xl bg-[#171632] hover:bg-[#ffd166]/20 border border-white/15 hover:border-[#ffd166]/60 text-white hover:text-[#ffd166] font-bold text-sm sm:text-base transition-all hover:-translate-y-1 cursor-pointer shadow-md active:scale-95"
           >
             {word}

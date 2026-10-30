@@ -341,7 +341,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                 </div>
 
                 {/* Text Content */}
-                <div className="text-xs sm:text-sm font-sans leading-relaxed whitespace-pre-line">
+                <div className="text-xs sm:text-sm font-sans leading-relaxed whitespace-pre-line" dir="auto">
                   {msg.content}
                 </div>
 
@@ -403,6 +403,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         <div className="p-3 sm:p-4 bg-[#0c0b20] border-t border-white/15 flex items-center gap-2">
           <input
             type="text"
+            dir="auto"
             value={inputMessage}
             onChange={e => setInputMessage(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && handleSendMessage()}

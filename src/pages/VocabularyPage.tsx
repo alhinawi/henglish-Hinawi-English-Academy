@@ -55,6 +55,7 @@ export const VocabularyPage: React.FC = () => {
             <Search className="w-5 h-5 text-[#41e7ff] absolute right-4 top-1/2 -translate-y-1/2" />
             <input
               type="text"
+              dir="auto"
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
               placeholder="ابحث عن فعل بالإنجليزية أو العربية (write, done, يكتب...)"

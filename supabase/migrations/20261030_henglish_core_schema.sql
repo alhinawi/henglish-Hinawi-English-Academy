@@ -1,5 +1,5 @@
 -- ==============================================================================
--- HINAWI ENGLISH ACADEMY (HENGLISH) - COMPREHENSIVE PRODUCTION DATABASE SCHEMA
+-- Henglish Academy (HENGLISH) - COMPREHENSIVE PRODUCTION DATABASE SCHEMA
 -- PostgreSQL / Supabase Migration
 -- File: supabase/migrations/20261030_henglish_core_schema.sql
 -- ==============================================================================

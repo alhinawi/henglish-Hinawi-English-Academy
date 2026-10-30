@@ -276,7 +276,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   </button>
                 </div>
 
-                <p className="text-left font-sans text-base sm:text-lg font-bold text-white leading-relaxed">
+                <p className="text-left font-sans text-base sm:text-lg font-bold text-white leading-relaxed" dir="ltr" lang="en">
                   "{currentTurn.textEn}"
                 </p>
                 <p className="text-xs sm:text-sm text-[#dedbf4]">
@@ -308,6 +308,8 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                     <div key={optIdx} className="space-y-1.5">
                       <button
                         onClick={() => handleChooseOption(opt)}
+                        dir="ltr"
+                        lang="en"
                         className={`w-full p-4 rounded-xl border text-left font-sans text-sm sm:text-base font-semibold transition-all cursor-pointer flex items-center justify-between ${
                           isChosen
                             ? opt.isOptimal
@@ -316,9 +318,9 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                             : 'bg-white/5 hover:bg-white/10 border-white/10 text-white'
                         }`}
                       >
-                        <div className="space-y-1">
-                          <div>{opt.textEn}</div>
-                          <div className="text-xs text-[#b9b6d5] text-right font-sans font-normal">{opt.textAr}</div>
+                        <div className="space-y-1 text-left" dir="ltr">
+                          <div dir="ltr" lang="en">{opt.textEn}</div>
+                          <div className="text-xs text-[#b9b6d5] text-right font-sans font-normal" dir="rtl">{opt.textAr}</div>
                         </div>
 
                         {isChosen && (
@@ -349,11 +351,13 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               <div className="flex gap-2">
                 <input
                   type="text"
+                  dir="ltr"
+                  lang="en"
                   value={freeTextResponse}
                   onChange={e => setFreeTextResponse(e.target.value)}
                   onKeyDown={e => e.key === 'Enter' && handleEvaluateFreeText()}
                   placeholder="Type your reply in English here..."
-                  className="flex-1 px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-sm focus:outline-none focus:border-[#41e7ff]"
+                  className="english-input flex-1 px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-sm focus:outline-none focus:border-[#41e7ff]"
                 />
                 <button
                   onClick={handleEvaluateFreeText}

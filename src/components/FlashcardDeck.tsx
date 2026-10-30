@@ -186,7 +186,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
 
             <div className="text-center my-auto py-4 space-y-4">
               <div>
-                <h4 className="en text-xl sm:text-2xl font-black text-[#c4ff55] whitespace-pre-line">
+                <h4 className="en text-xl sm:text-2xl font-black text-[#c4ff55] whitespace-pre-line text-center" dir="ltr" lang="en">
                   {currentCard.back}
                 </h4>
                 {currentCard.subBack && (
@@ -200,7 +200,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
                 <span className="text-[11px] text-[#41e7ff] font-bold block mb-1">
                   مثال تطبيقي:
                 </span>
-                <p className="en text-sm sm:text-base font-bold text-white text-left">
+                <p className="en text-sm sm:text-base font-bold text-white text-left" dir="ltr" lang="en">
                   {currentCard.exampleEn}
                 </p>
                 <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1 text-right">

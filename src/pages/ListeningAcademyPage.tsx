@@ -236,13 +236,15 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
           <div className="space-y-3">
             <textarea
               rows={3}
+              dir="ltr"
+              lang="en"
               value={dictationInput}
               onChange={e => {
                 setDictationInput(e.target.value);
                 setDictationSubmitted(false);
               }}
-              placeholder="اكتب هنا الجملة الإنجليزية التي سمعتها..."
-              className="en w-full p-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#ffd166]"
+              placeholder="Type the English sentence you heard here..."
+              className="english-input en w-full p-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#ffd166]"
             />
 
             <button
