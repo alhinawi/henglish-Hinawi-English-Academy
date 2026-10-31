@@ -6,3 +6,6 @@ dist
 *.log
 graphify-out
 *.tsbuildinfo
+
+.vercel
+.env*

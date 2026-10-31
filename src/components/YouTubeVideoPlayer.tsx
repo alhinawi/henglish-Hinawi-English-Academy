@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { LessonVideoResource } from '../data/videoResourcesData';
-import { Play, ExternalLink, Video, AlertCircle, Clock, Sparkles } from 'lucide-react';
+import { LessonVideoResource, isValidYouTubeId } from '../data/videoResourcesData';
+import { Play, ExternalLink, Video, AlertCircle, Clock, Sparkles, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { playSound } from '../utils/audio';
 
 interface YouTubeVideoPlayerProps {
@@ -10,6 +10,7 @@ interface YouTubeVideoPlayerProps {
 
 export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resources, lessonTitle }) => {
   const [activeVideoIdx, setActiveVideoIdx] = useState(0);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
@@ -18,12 +19,23 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
   }
 
   const currentVideo = resources[activeVideoIdx] || resources[0];
+  const isIdValid = isValidYouTubeId(currentVideo.youtubeId);
 
   const handleSelectVideo = (idx: number) => {
     playSound('click');
     setActiveVideoIdx(idx);
+    setIsPlaying(false);
     setIsLoading(true);
     setHasError(false);
+  };
+
+  const handleStartPlay = () => {
+    playSound('click');
+    if (!isIdValid) {
+      setHasError(true);
+      return;
+    }
+    setIsPlaying(true);
   };
 
   return (
@@ -64,46 +76,85 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
         )}
       </div>
 
-      {/* Main Responsive Video Embed Player */}
+      {/* Main Video Box */}
       <div className="space-y-4">
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/60 border border-white/15 shadow-2xl">
-          {isLoading && (
-            <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0c0b20] z-10 space-y-3">
-              <div className="w-10 h-10 border-4 border-red-500/30 border-t-red-500 rounded-full animate-spin" />
-              <span className="text-xs font-bold text-[#dedbf4]">جاري تحميل الفيديو التعليمي...</span>
+          {!isPlaying ? (
+            /* Poster & Preview with Instant Fast Play */
+            <div className="relative w-full h-full group cursor-pointer" onClick={handleStartPlay}>
+              <img
+                src={currentVideo.thumbnailUrl || `https://img.youtube.com/vi/${currentVideo.youtubeId}/hqdefault.jpg`}
+                alt={currentVideo.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-black/30 flex flex-col items-center justify-center p-6 text-center">
+                {/* Big Animated Play Button */}
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-red-600 hover:bg-red-500 text-white flex items-center justify-center shadow-2xl shadow-red-600/50 transition-all duration-300 group-hover:scale-110 mb-3">
+                  <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-current translate-x-0.5" />
+                </div>
+                <span className="text-sm sm:text-base font-black text-white drop-shadow-md">
+                  اضغط للمشاهدة الآن داخل المنصة
+                </span>
+                <span className="text-xs text-[#ffd166] mt-1 font-bold">
+                  {currentVideo.channelName} • {currentVideo.duration}
+                </span>
+              </div>
             </div>
-          )}
-
-          {hasError ? (
+          ) : hasError || !isIdValid ? (
+            /* Graceful Fallback Card */
             <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
               <AlertCircle className="w-12 h-12 text-red-400" />
               <div className="space-y-1">
                 <p className="text-sm font-bold text-white">تعذر تضمين الفيديو داخل الصفحة حالياً</p>
-                <p className="text-xs text-[#b9b6d5]">يمكنك مشاهدة الفيديو مباشرة على منصة يوتيوب الرسمية</p>
+                <p className="text-xs text-[#b9b6d5]">
+                  بعض الفيديوهات تتطلب فتحها مباشرة على يوتيوب بسبب سياسات حقوق النشر أو المتصفح.
+                </p>
               </div>
-              <a
-                href={`https://www.youtube.com/watch?v=${currentVideo.youtubeId}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-colors cursor-pointer"
-              >
-                <ExternalLink className="w-4 h-4" />
-                <span>فتح الفيديو على YouTube</span>
-              </a>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={() => {
+                    setHasError(false);
+                    setIsLoading(true);
+                  }}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-bold transition-colors cursor-pointer"
+                >
+                  <RefreshCw className="w-3.5 h-3.5" />
+                  <span>إعادة المحاولة</span>
+                </button>
+                <a
+                  href={`https://www.youtube.com/watch?v=${currentVideo.youtubeId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-colors cursor-pointer"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  <span>فتح الفيديو على YouTube</span>
+                </a>
+              </div>
             </div>
           ) : (
-            <iframe
-              src={`https://www.youtube-nocookie.com/embed/${currentVideo.youtubeId}?rel=0&modestbranding=1&enablejsapi=1`}
-              title={currentVideo.title}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              onLoad={() => setIsLoading(false)}
-              onError={() => {
-                setIsLoading(false);
-                setHasError(true);
-              }}
-              className="w-full h-full border-0"
-            />
+            /* Live Embedded Player */
+            <>
+              {isLoading && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0c0b20] z-10 space-y-3">
+                  <div className="w-10 h-10 border-4 border-red-500/30 border-t-red-500 rounded-full animate-spin" />
+                  <span className="text-xs font-bold text-[#dedbf4]">جاري تشغيل الفيديو المعتمد...</span>
+                </div>
+              )}
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${currentVideo.youtubeId}?autoplay=1&rel=0&modestbranding=1&enablejsapi=1`}
+                title={currentVideo.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                onLoad={() => setIsLoading(false)}
+                onError={() => {
+                  setIsLoading(false);
+                  setHasError(true);
+                }}
+                className="w-full h-full border-0"
+              />
+            </>
           )}
         </div>
 
@@ -111,7 +162,10 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
         <div className="p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div className="space-y-1.5 max-w-2xl">
             <div className="flex items-center gap-2 text-xs font-bold text-[#ffd166]">
-              <span className="px-2 py-0.5 rounded bg-[#ffd166]/15 text-[#ffd166]">{currentVideo.channelName}</span>
+              <span className="px-2 py-0.5 rounded bg-[#ffd166]/15 text-[#ffd166] flex items-center gap-1">
+                <CheckCircle2 className="w-3 h-3 text-[#c4ff55]" />
+                {currentVideo.channelName}
+              </span>
               <span className="text-white/40">•</span>
               <span className="flex items-center gap-1 text-[#b9b6d5]">
                 <Clock className="w-3 h-3" />

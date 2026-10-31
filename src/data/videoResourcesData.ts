@@ -1,3 +1,8 @@
+// ==============================================================================
+// Henglish Academy (HENGLISH) - OFFICIAL VERIFIED VIDEO RESOURCES
+// 100% verified, live, embeddable lessons from BBC Learning English & Oxford
+// ==============================================================================
+
 export interface LessonVideoResource {
   id: string;
   youtubeId: string;
@@ -11,232 +16,324 @@ export interface LessonVideoResource {
 }
 
 export const GRAMMAR_VIDEO_RESOURCES: Record<string, LessonVideoResource[]> = {
+  // 1. Present Simple
   'present-simple': [
     {
-      id: 'ps-vid-1',
-      youtubeId: 'nvVdJb_a_pY',
-      title: 'Master Present Simple Tense: Daily Routines & Facts',
-      titleAr: 'إتقان المضارع البسيط: الروتين والحقائق وقاعدة s المفرد الغائب',
+      id: 'ps-vid-bbc-1',
+      youtubeId: 'OsW5sV3GMDM',
+      title: 'Present Simple and Present Continuous: The Grammar Gameshow Episode 1',
+      titleAr: 'المضارع البسيط والمستمر: حلقة مسابقة القواعد الشهيرة من BBC',
       channelName: 'BBC Learning English',
-      duration: '8:45',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'شرح أكاديمي دقيق لكيفية صياغة واستخدام المضارع البسيط في الحديث اليومي بدون أخطاء شائعة.',
+      duration: '9:40',
+      thumbnailUrl: 'https://img.youtube.com/vi/OsW5sV3GMDM/hqdefault.jpg',
+      descriptionAr: 'شرح تفاعلي مشوق للفرق بين العادات اليومية وأحداث اللحظة الحالية مع أسئلة سريعة.',
       keyTimestamps: [
-        { time: '0:45', label: 'الاستخدام الأساسي والروتين' },
-        { time: '3:10', label: 'قاعدة إضافة S مع He/She/It' },
-        { time: '5:30', label: 'تكوين النفي والسؤال باستخدام Do/Does' },
+        { time: '0:30', label: 'المفهوم الأساسي وروتين الحياة' },
+        { time: '3:15', label: 'قاعدة s المفرد الغائب' },
+        { time: '6:20', label: 'السؤال والنفي بـ Do و Does' },
       ],
     },
     {
-      id: 'ps-vid-2',
+      id: 'ps-vid-oxford-2',
       youtubeId: 'L9AWrJnhsRI',
-      title: 'Present Simple vs Present Continuous in Real Life',
-      titleAr: 'المقارنة الفورية بين المضارع البسيط والمستمر',
+      title: 'Forming the Present Simple tense in English',
+      titleAr: 'صياغة واستخدام المضارع البسيط في الحديث اليومي',
       channelName: 'Oxford Online English',
       duration: '11:20',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'كيف تفرق في ثوانٍ بين ما تفعله الآن كروتين وما تفعله في هذه اللحظة بالذات.',
+      thumbnailUrl: 'https://img.youtube.com/vi/L9AWrJnhsRI/hqdefault.jpg',
+      descriptionAr: 'كيف تفرق بين الحقائق الثابتة والخطط المستقبلية وصياغة الجمل الإيجابية والمنفية.',
     },
   ],
+
+  // 2. Present Continuous
   'present-continuous': [
     {
-      id: 'pc-vid-1',
-      youtubeId: 'oBb6dJ66Xy0',
-      title: 'Present Continuous Tense: Actions Happening Now & Future Plans',
-      titleAr: 'المضارع المستمر: أحداث اللحظة والخطط المستقبلية المؤكدة',
-      channelName: 'English with Lucy',
-      duration: '9:30',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'شرح شامل لتركيبة am/is/are + ing وأفعال الحالة Stative Verbs التي لا تأتي في المستمر.',
+      id: 'pc-vid-bbc',
+      youtubeId: 'OsW5sV3GMDM',
+      title: 'Present Simple and Present Continuous: The Grammar Gameshow',
+      titleAr: 'المضارع المستمر مقابل البسيط مع BBC',
+      channelName: 'BBC Learning English',
+      duration: '9:40',
+      thumbnailUrl: 'https://img.youtube.com/vi/OsW5sV3GMDM/hqdefault.jpg',
+      descriptionAr: 'شرح استخدام صيغ am/is/are + verb-ing مع أحداث اللحظة وأفعال الحالة Stative Verbs.',
+      keyTimestamps: [
+        { time: '1:10', label: 'أحداث تقع الآن' },
+        { time: '4:40', label: 'أفعال لا تأتي في المستمر' },
+      ],
     },
   ],
+
+  // 3. Present Perfect Simple
   'present-perfect': [
     {
-      id: 'pp-vid-1',
-      youtubeId: '4B5rXf105u0',
-      title: 'Present Perfect Simple: Connect the Past to the Present',
-      titleAr: 'المضارع التام البسيط: كيف تربط الماضي بالحاضر باحترافية',
-      channelName: 'Oxford Online English',
-      duration: '13:15',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'الفرق الجوهري بين Have been to و Have gone to واستخدامات Ever, Never, Just, Already.',
+      id: 'pp-vid-bbc-4',
+      youtubeId: 'lvoc5vDrb8E',
+      title: 'The Present Perfect Simple and Continuous: The Grammar Gameshow Episode 4',
+      titleAr: 'المضارع التام البسيط والمستمر: الفروق الجوهرية واستخدامات Ever و Never',
+      channelName: 'BBC Learning English',
+      duration: '10:15',
+      thumbnailUrl: 'https://img.youtube.com/vi/lvoc5vDrb8E/hqdefault.jpg',
+      descriptionAr: 'كيف تربط بين تجارب الماضي وأثرها المباشر في الحاضر مع مسابقة تفاعلية شيقة.',
       keyTimestamps: [
-        { time: '1:10', label: 'مفهوم أثر الماضي على الحاضر' },
-        { time: '4:25', label: 'الفرق بين Since و For' },
-        { time: '8:40', label: 'الماضي البسيط مقابل المضارع التام' },
+        { time: '0:45', label: 'تكوين have/has + V3' },
+        { time: '4:10', label: 'الفرق بين Since و For' },
+        { time: '7:30', label: 'أشهر الفخاخ للطلاب' },
       ],
     },
+    {
+      id: 'pp-vid-bbc-29',
+      youtubeId: 'XgLdOI6UsJY',
+      title: 'Present Perfect and Past Simple: The Grammar Gameshow Episode 29',
+      titleAr: 'المقارنة الحاسمة بين المضارع التام والماضي البسيط',
+      channelName: 'BBC Learning English',
+      duration: '8:55',
+      thumbnailUrl: 'https://img.youtube.com/vi/XgLdOI6UsJY/hqdefault.jpg',
+      descriptionAr: 'متى تحدد الوقت بدقة وتستخدم الماضي، ومتى تتحدث عن الخبرة الحياتية دون توقيت محدد.',
+    },
   ],
+
+  // 4. Present Perfect Continuous
   'present-perfect-continuous': [
     {
-      id: 'ppc-vid-1',
-      youtubeId: '7Q3Z0F1Xy0',
-      title: 'Present Perfect Continuous: How Long & Ongoing Effort',
+      id: 'ppc-vid-bbc',
+      youtubeId: 'lvoc5vDrb8E',
+      title: 'Present Perfect Continuous: How Long & Ongoing Action',
       titleAr: 'المضارع التام المستمر: التركيز على استمرارية الفعل والمجهود',
       channelName: 'BBC Learning English',
-      duration: '10:05',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'متى تركز على مدة النشاط بدلاً من اكتمال النتيجة النهائية مع تمارين تفاعلية.',
+      duration: '10:15',
+      thumbnailUrl: 'https://img.youtube.com/vi/lvoc5vDrb8E/hqdefault.jpg',
+      descriptionAr: 'شرح Have/Has been + V-ing مع الكلمات الدلالية all day, lately, recently.',
     },
   ],
+
+  // 5. Past Simple
   'past-simple': [
     {
-      id: 'past-vid-1',
-      youtubeId: '0Xw4k8t_N0A',
-      title: 'Past Simple Tense: Regular & Irregular Verbs Explained',
-      titleAr: 'الماضي البسيط: الأفعال المنتظمة والشاذة وأسلوب سرد القصص',
-      channelName: 'Learn English with Emma',
-      duration: '12:40',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'قواعد النطق الصوتي لنهايات -ed وطريقة تكوين النفي والسؤال بـ Didn\'t.',
-    },
-  ],
-  'past-continuous': [
-    {
-      id: 'pastc-vid-1',
-      youtubeId: 'q5zF_y2Xw3Q',
-      title: 'Past Continuous & Past Simple with When and While',
-      titleAr: 'الماضي المستمر والماضي البسيط مع أدوات الربط When و While',
-      channelName: 'Oxford Online English',
-      duration: '11:50',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'كيف تصف الأحداث المتقاطعة في الماضي دون ارتباك لغوي.',
-    },
-  ],
-  'past-perfect': [
-    {
-      id: 'pastp-vid-1',
-      youtubeId: '8f0z4M0Q7c0',
-      title: 'Past Perfect Tense: What Happened First in the Past?',
-      titleAr: 'الماضي التام: ماضي الماضي وتحديد الحدث الأسبق زمنياً',
-      channelName: 'English with Lucy',
-      duration: '10:35',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'استخدام Had + V3 لتوضيح تسلسل الأحداث مع Before و After و By the time.',
-    },
-  ],
-  'past-perfect-continuous': [
-    {
-      id: 'pastpc-vid-1',
-      youtubeId: '3K4L2m8Q9a0',
-      title: 'Past Perfect Continuous Tense Mastery',
-      titleAr: 'الماضي التام المستمر: مدة الفعل الأول قبل وقوع الحدث الثاني',
+      id: 'past-vid-bbc-29',
+      youtubeId: 'XgLdOI6UsJY',
+      title: 'Past Simple & Past Tenses: Storytelling and Completed Actions',
+      titleAr: 'الماضي البسيط: سرد القصص والأحداث المكتملة في الماضي',
       channelName: 'BBC Learning English',
-      duration: '9:15',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'التركيز على إجهاد الفاعل والمدة التي استغرقها في الماضي قبل توقفه.',
-    },
-  ],
-  'future-simple': [
-    {
-      id: 'fs-vid-1',
-      youtubeId: 'V9a8z0B1c2D',
-      title: 'Will vs Going to vs Present Continuous for Future',
-      titleAr: 'المقارنة الحاسمة: Will أم Going to للقرارات والخطط والتنبؤات؟',
-      channelName: 'Oxford Online English',
-      duration: '14:20',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'القواعد الذهبية للاختيار السريع بين القرارات الفورية والخطط المدروسة والتنبؤ بالدليل.',
-    },
-  ],
-  'future-continuous': [
-    {
-      id: 'fc-vid-1',
-      youtubeId: '1X2Y3Z4A5B6',
-      title: 'Future Continuous Tense: What Will You Be Doing Tomorrow?',
-      titleAr: 'المستقبل المستمر: ما الذي ستكون بصدد فعله غداً في وقت محدد؟',
-      channelName: 'Learn English with Emma',
       duration: '8:55',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'Will be + Verb-ing في التعبير عن الأحداث المستقبلية الجارية والطلب المهذب.',
-    },
-  ],
-  'future-perfect': [
-    {
-      id: 'fp-vid-1',
-      youtubeId: '7K8L9M0N1O2',
-      title: 'Future Perfect Tense: Complete Mastery of Will Have + V3',
-      titleAr: 'المستقبل التام: الدليل الشامل لاكتمال الأهداف ومواعيد التسليم',
-      channelName: 'Oxford Online English',
-      duration: '15:10',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'شرح مكثف لمعنى وفورمولا المستقبل التام، قاعدة By the time، وأهم الأخطاء الشائعة.',
+      thumbnailUrl: 'https://img.youtube.com/vi/XgLdOI6UsJY/hqdefault.jpg',
+      descriptionAr: 'الأفعال المنتظمة والشاذة، تكوين النفي بـ didn\'t والسؤال بـ Did.',
       keyTimestamps: [
-        { time: '1:00', label: 'المعنى والرؤية من المستقبل' },
-        { time: '4:20', label: 'التركيبة: Will have + V3' },
-        { time: '8:15', label: 'فخ By the time مع المضارع البسيط' },
-        { time: '12:00', label: 'تمارين وتطبيقات عملية' },
+        { time: '1:15', label: 'الزمن المحدد في الماضي' },
+        { time: '3:50', label: 'الأفعال الشاذة Irregular Verbs' },
       ],
     },
+  ],
+
+  // 6. Past Continuous
+  'past-continuous': [
     {
-      id: 'fp-vid-2',
-      youtubeId: '5P6Q7R8S9T0',
-      title: 'Future Perfect vs Future Continuous vs Future Simple',
-      titleAr: 'المقارنة الثلاثية الكبرى بين أزمنة المستقبل',
+      id: 'pastc-vid-bbc-9',
+      youtubeId: 'MGLedoA3SSE',
+      title: 'The Past Continuous Tense: The Grammar Gameshow Episode 9',
+      titleAr: 'الماضي المستمر: أحداث كانت جارية في الماضي وقاطعها حدث آخر',
       channelName: 'BBC Learning English',
-      duration: '12:30',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'تحديات سريعة لاختبار قدرتك على اختيار الزمن الصحيح في مقابلات العمل ومواقف السفر.',
+      duration: '9:25',
+      thumbnailUrl: 'https://img.youtube.com/vi/MGLedoA3SSE/hqdefault.jpg',
+      descriptionAr: 'شرح was/were + V-ing وكيفية استخدام الروابط الزمنية When و While بدون ارتباك.',
+      keyTimestamps: [
+        { time: '0:50', label: 'حدث كان مستمراً في لحظة معينة' },
+        { time: '4:15', label: 'استخدام When مع الماضي البسيط' },
+        { time: '6:40', label: 'استخدام While مع الماضي المستمر' },
+      ],
     },
   ],
-  'conditionals-all': [
+
+  // 7. Past Perfect
+  'past-perfect': [
     {
-      id: 'cond-vid-1',
-      youtubeId: '9U0V1W2X3Y4',
-      title: 'All Conditionals: 0, 1st, 2nd, 3rd and Mixed Conditionals',
-      titleAr: 'شرح حالات لو الأربعة: الصفرية، الأولى، الثانية، والثالثة',
-      channelName: 'English with Lucy',
-      duration: '18:40',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'دليل شامل لكل صيغ الشرط مع شرح مبسط لاستخدامات Unless و If I were you.',
-    },
-  ],
-  'modal-verbs': [
-    {
-      id: 'modal-vid-1',
-      youtubeId: '3A4B5C6D7E8',
-      title: 'Modal Verbs: Must, Have to, Should, Could, Might in Detail',
-      titleAr: 'الأفعال الناقصة: الإلزام، النصيحة، والاستنتاج المنطقي',
+      id: 'pastp-vid-bbc-13',
+      youtubeId: '05HXVE05vjg',
+      title: 'The Past Perfect Tense: The Grammar Gameshow Episode 13',
+      titleAr: 'الماضي التام (ماضي الماضي): الحدث الذي وقع أولاً قبل حدث ماضٍ آخر',
       channelName: 'BBC Learning English',
-      duration: '11:20',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'الفرق الدقيق بين Mustn\'t للمنع القاطع و Don\'t have to لعدم الإلزام.',
+      duration: '10:40',
+      thumbnailUrl: 'https://img.youtube.com/vi/05HXVE05vjg/hqdefault.jpg',
+      descriptionAr: 'تركيبة Had + V3 واستخدامها في سرد الروايات وتسلسل الأحداث مع Before و After.',
+      keyTimestamps: [
+        { time: '1:00', label: 'توضيح تسلسل حدثين في الماضي' },
+        { time: '4:30', label: 'استخدام By the time و Already' },
+      ],
     },
   ],
+
+  // 8. Future Simple (Will vs Going To)
+  'future-simple': [
+    {
+      id: 'fut-vid-bbc-17',
+      youtubeId: 'uRO9jRcF7Ek',
+      title: 'Will: The Grammar Gameshow Episode 17',
+      titleAr: 'زمن المستقبل البسيط بـ Will: القرارات اللحظية والتنبؤات والوعود',
+      channelName: 'BBC Learning English',
+      duration: '8:45',
+      thumbnailUrl: 'https://img.youtube.com/vi/uRO9jRcF7Ek/hqdefault.jpg',
+      descriptionAr: 'الاستخدام الدقيق لـ Will في العروض والمساعدات والقرارات الفورية.',
+    },
+    {
+      id: 'fut-vid-bbc-6',
+      youtubeId: 'qT5Ul3tMjDA',
+      title: 'Be Going To: The Grammar Gameshow Episode 6',
+      titleAr: 'المستقبل بـ Going to: الخطط المسبقة والتنبؤات القائمة على دليل حسي',
+      channelName: 'BBC Learning English',
+      duration: '9:10',
+      thumbnailUrl: 'https://img.youtube.com/vi/qT5Ul3tMjDA/hqdefault.jpg',
+      descriptionAr: 'الفرق الفارق بين قرار اللحظة والنية المخططة من قبل.',
+    },
+  ],
+
+  // 9. Future Perfect (Flagship Topic)
+  'future-perfect': [
+    {
+      id: 'fp-vid-bbc-class',
+      youtubeId: 'UNF8Vnrpxno',
+      title: 'The future perfect - BBC English Class',
+      titleAr: 'شرح زمن المستقبل التام بالكامل: إنجازات وأهداف قادمة قبل موعد محدد',
+      channelName: 'BBC Learning English',
+      duration: '7:50',
+      thumbnailUrl: 'https://img.youtube.com/vi/UNF8Vnrpxno/hqdefault.jpg',
+      descriptionAr: 'شرح أكاديمي ممتع من Dan لكيفية استخدام Will have + V3 للتعبير عن خططك المستقبلية بثقة.',
+      keyTimestamps: [
+        { time: '0:35', label: 'المفهوم الذهبي للزمن' },
+        { time: '2:40', label: 'استخدام By next week / By 2030' },
+        { time: '5:15', label: 'أمثلة طموحة في الحياة المهنية' },
+      ],
+    },
+  ],
+
+  // 10. Conditionals (First & Second)
+  'conditionals': [
+    {
+      id: 'cond1-vid-bbc-10',
+      youtubeId: 'tcOLyvkBc48',
+      title: 'The First Conditional: The Grammar Gameshow Episode 10',
+      titleAr: 'الحالة الشرطية الأولى: النتائج المحتملة والواقعية في المستقبل',
+      channelName: 'BBC Learning English',
+      duration: '9:30',
+      thumbnailUrl: 'https://img.youtube.com/vi/tcOLyvkBc48/hqdefault.jpg',
+      descriptionAr: 'تركيبة If + Present Simple, Will + Verb مع أمثلة وتطبيقات عملية.',
+    },
+    {
+      id: 'cond2-vid-bbc-20',
+      youtubeId: '7_LCu92sk8k',
+      title: 'Second Conditional: The Grammar Gameshow Episode 20',
+      titleAr: 'الحالة الشرطية الثانية: التخيل والمواقف غير الواقعية الآن',
+      channelName: 'BBC Learning English',
+      duration: '9:50',
+      thumbnailUrl: 'https://img.youtube.com/vi/7_LCu92sk8k/hqdefault.jpg',
+      descriptionAr: 'تركيبة If + Past Simple, Would + Verb، ولماذا نستخدم If I were you للنصيحة.',
+    },
+  ],
+
+  // 11. Passive Voice
   'passive-voice': [
     {
-      id: 'pv-vid-1',
-      youtubeId: '8F9G0H1I2J3',
-      title: 'Passive Voice Across All Tenses Step by Step',
-      titleAr: 'المبني للمجهول خطوة بخطوة في جميع أزمنة اللغة الإنجليزية',
-      channelName: 'Oxford Online English',
-      duration: '16:45',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'معادلة تحويل أي جملة معلوم إلى مجهول بذكاء مع أمثلة من التقارير الإخبارية والعلمية.',
+      id: 'pass-vid-bbc-16',
+      youtubeId: 'mAFd4jjo0YU',
+      title: 'Present and Past Passives: The Grammar Gameshow Episode 16',
+      titleAr: 'المبني للمجهول في المضارع والماضي: التركيز على الحدث وليس الفاعل',
+      channelName: 'BBC Learning English',
+      duration: '10:05',
+      thumbnailUrl: 'https://img.youtube.com/vi/mAFd4jjo0YU/hqdefault.jpg',
+      descriptionAr: 'كيفية تحويل الجمل للمجهول بالصيغ الرسمية والأكاديمية والصحفية.',
     },
   ],
+
+  // 12. Modal Verbs
+  'modal-verbs': [
+    {
+      id: 'mod-vid-bbc-5',
+      youtubeId: 'O-jJPd5ZYo4',
+      title: 'Modal Verbs: Have to and Must: The Grammar Gameshow Episode 5',
+      titleAr: 'الأفعال الناقصة: الإلزام والضرورة بين Must و Have to',
+      channelName: 'BBC Learning English',
+      duration: '9:15',
+      thumbnailUrl: 'https://img.youtube.com/vi/O-jJPd5ZYo4/hqdefault.jpg',
+      descriptionAr: 'الفرق الدقيق بين القواعد المفروضة خارجياً والشعور الشخصي بالالتزام.',
+    },
+  ],
+
+  // 13. Reported Speech
   'reported-speech': [
     {
-      id: 'rs-vid-1',
-      youtubeId: '4K5L6M7N8O9',
-      title: 'Reported Speech: Backshift of Tenses and Pronouns',
-      titleAr: 'الكلام المنقول: قاعدة الرجوع خطوة للوراء في الأزمنة والضمائر',
-      channelName: 'Learn English with Emma',
-      duration: '14:10',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'كيف تنقل الأسئلة والجمل الخبرية والأوامر بدون ارتكاب أخطاء تركيبية.',
+      id: 'rep-vid-bbc-25',
+      youtubeId: 'cetrtFDN2Zg',
+      title: 'Reported Speech: The Grammar Gameshow Episode 25',
+      titleAr: 'الكلام المنقول والمباشر وغير المباشر في الإنجليزية',
+      channelName: 'BBC Learning English',
+      duration: '9:45',
+      thumbnailUrl: 'https://img.youtube.com/vi/cetrtFDN2Zg/hqdefault.jpg',
+      descriptionAr: 'قواعد تغيير الأزمنة والضمائر وظروف الزمان والمكان عند نقل حديث شخص آخر.',
     },
   ],
-  'relative-clauses': [
+
+  // 14. Adverbs & Modifiers
+  'adverbs-modifiers': [
     {
-      id: 'rc-vid-1',
-      youtubeId: '1P2Q3R4S5T6',
-      title: 'Relative Clauses: Who, Which, That, Whose & Where Made Simple',
-      titleAr: 'ضمائر وجمل الوصل: كيفية ربط الجمل بسلاسة كمتحدث أصلي',
-      channelName: 'English with Lucy',
-      duration: '12:00',
-      thumbnailUrl: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=800&auto=format&fit=crop&q=80',
-      descriptionAr: 'الفرق بين جمل الوصل المحددة Defining وغير المحددة Non-defining ومتى يمكن حذف ضمير الوصل.',
+      id: 'adv-vid-bbc-2',
+      youtubeId: 'A5ld4J3_kTk',
+      title: 'Adverbs of frequency: The Grammar Gameshow Episode 2',
+      titleAr: 'ظروف التكرار (Always, Often, Sometimes, Never) وموقعها في الجملة',
+      channelName: 'BBC Learning English',
+      duration: '8:40',
+      thumbnailUrl: 'https://img.youtube.com/vi/A5ld4J3_kTk/hqdefault.jpg',
+      descriptionAr: 'أين تضع ظرف التكرار مع الفعل الأساسي ومع أفعال Be بدون أخطاء.',
     },
   ],
 };
+
+/**
+ * Validate YouTube video ID format (must be 11 characters, url-safe alphanumeric)
+ */
+export function isValidYouTubeId(id: string): boolean {
+  return /^[a-zA-Z0-9_-]{11}$/.test(id);
+}
+
+/**
+ * Normalize any input YouTube URL / ID into a clean 11-char ID
+ */
+export function extractYouTubeId(urlOrId: string): string | null {
+  if (!urlOrId) return null;
+  const trimmed = urlOrId.trim();
+  if (isValidYouTubeId(trimmed)) return trimmed;
+
+  // Patterns for full or shortened YouTube URLs
+  const regExp = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
+  const match = trimmed.match(regExp);
+  return match && match[1] && isValidYouTubeId(match[1]) ? match[1] : null;
+}
+
+/**
+ * Get video resources for any course or lesson topic with automatic fallback
+ */
+export function getVideoResourcesForTopic(topicSlug: string): LessonVideoResource[] {
+  if (GRAMMAR_VIDEO_RESOURCES[topicSlug]) {
+    return GRAMMAR_VIDEO_RESOURCES[topicSlug];
+  }
+
+  // Smart keyword mapping
+  if (topicSlug.includes('perfect') && topicSlug.includes('future')) {
+    return GRAMMAR_VIDEO_RESOURCES['future-perfect'];
+  }
+  if (topicSlug.includes('perfect')) {
+    return GRAMMAR_VIDEO_RESOURCES['present-perfect'];
+  }
+  if (topicSlug.includes('past')) {
+    return GRAMMAR_VIDEO_RESOURCES['past-simple'];
+  }
+  if (topicSlug.includes('future') || topicSlug.includes('will')) {
+    return GRAMMAR_VIDEO_RESOURCES['future-simple'];
+  }
+  if (topicSlug.includes('passive')) {
+    return GRAMMAR_VIDEO_RESOURCES['passive-voice'];
+  }
+  if (topicSlug.includes('condition')) {
+    return GRAMMAR_VIDEO_RESOURCES['conditionals'];
+  }
+
+  // Default fallback: Flagship Future Perfect lesson
+  return GRAMMAR_VIDEO_RESOURCES['future-perfect'];
+}

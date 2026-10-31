@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { DialogueViewer } from '../components/DialogueViewer';
-import { Mic, Volume2, MessageSquare } from 'lucide-react';
+import { PronunciationAssessmentViewer } from '../components/PronunciationAssessmentViewer';
+import { Mic, Volume2, MessageSquare, Sparkles } from 'lucide-react';
 import { speakEnglish, playSound } from '../utils/audio';
 
 export const SpeakingPage: React.FC = () => {
+  const [activeTarget, setActiveTarget] = useState('By next year, I will have achieved all my language learning goals.');
+  const [activeTargetAr, setActiveTargetAr] = useState('بحلول العام القادم، سأكون قد حققت جميع أهدافي في تعلم اللغة.');
+
   const speakingPrompts = [
     {
       q: 'What will you have achieved by next summer?',
@@ -38,6 +42,21 @@ export const SpeakingPage: React.FC = () => {
           القواعد ليست حبراً على ورق. استمع للحوارات الإنجليزية بصوت طبيعي وتدرّب على التحدث والتعبير عن خططك المستقبلية بثقة.
         </p>
       </div>
+
+      {/* Main Real Voice Recording & Pronunciation Assessment Station */}
+      <section className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-black text-white flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-[#ffd166]" />
+            <span>استوديو التحليل الصوتي المباشر (Live Voice Recording Studio)</span>
+          </h2>
+          <span className="text-xs text-[#c4ff55] font-bold">● نظام تقييم الذكاء الاصطناعي نشط</span>
+        </div>
+        <PronunciationAssessmentViewer
+          targetSentence={activeTarget}
+          targetSentenceAr={activeTargetAr}
+        />
+      </section>
 
       {/* Main Dialogue Viewer */}
       <DialogueViewer />
@@ -82,8 +101,19 @@ export const SpeakingPage: React.FC = () => {
                 </p>
               </div>
 
-              <div className="en p-2.5 rounded-xl bg-white/5 border border-white/5 text-xs text-[#c4ff55] font-bold">
-                ابدأ بـ: {item.starter}
+              <div className="pt-2 flex items-center justify-between gap-2">
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setActiveTarget(item.starter);
+                    setActiveTargetAr(item.hintAr);
+                    window.scrollTo({ top: 220, behavior: 'smooth' });
+                  }}
+                  className="flex-1 py-1.5 px-3 rounded-lg bg-[#ff4f9a]/20 hover:bg-[#ff4f9a]/30 text-[#ff8bb9] text-xs font-bold flex items-center justify-center gap-1.5 cursor-pointer transition-colors"
+                >
+                  <Mic className="w-3.5 h-3.5" />
+                  <span>تطبيق هذا التحدي صوتياً</span>
+                </button>
               </div>
             </div>
           ))}

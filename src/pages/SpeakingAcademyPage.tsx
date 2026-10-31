@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, speakEnglish } from '../utils/audio';
+import { PronunciationAssessmentViewer } from '../components/PronunciationAssessmentViewer';
 import {
   Mic,
   Volume2,
@@ -22,10 +23,11 @@ interface SpeakingAcademyPageProps {
 export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavigate }) => {
   const [activeScenarioIdx, setActiveScenarioIdx] = useState(0);
   const [shadowingLineIdx, setShadowingLineIdx] = useState(0);
-  const [isRecording, setIsRecording] = useState(false);
-  const [recordingScore, setRecordingScore] = useState<number | null>(null);
+  const [customPrompt, setCustomPrompt] = useState<string | null>(null);
 
   const scenario = REAL_LIFE_DIALOGUES[activeScenarioIdx] || REAL_LIFE_DIALOGUES[0];
+  const activeTargetLine = customPrompt || scenario.lines[shadowingLineIdx]?.en || 'Omar, will you have finished revising the grammar units by Thursday night?';
+  const activeTargetLineAr = customPrompt ? 'تدريب حر على المحادثة والطلاقة' : scenario.lines[shadowingLineIdx]?.ar;
 
   const speakingPrompts = [
     {
@@ -47,18 +49,6 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
       starter: 'Yes, we will have delivered it because...',
     },
   ];
-
-  const handleSimulateRecording = () => {
-    playSound('click');
-    setIsRecording(true);
-    setRecordingScore(null);
-    setTimeout(() => {
-      setIsRecording(false);
-      setRecordingScore(95);
-      playSound('correct');
-      fireCelebration();
-    }, 2800);
-  };
 
   return (
     <div className="space-y-10 pb-16 text-right">
@@ -181,63 +171,12 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
           </div>
         </div>
 
-        {/* Shadowing & Voice Practice Box */}
-        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-linear-to-b from-[#1b1939] to-[#121128] border border-white/10 space-y-6">
-          <div className="space-y-2">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>تقنية التظليل الصوتي (Shadowing)</span>
-            </div>
-            <h3 className="text-lg font-black text-white">استمع وردد فوراً بنفس النبرة</h3>
-            <p className="text-xs text-[#dedbf4] leading-relaxed">
-              اختر الجملة من الحوار، استمع إليها مرتين، ثم اضغط على زر التسجيل لترديدها بصوتك لمحاكاة الإيقاع الأصلي.
-            </p>
-          </div>
-
-          {/* Current Line to Shadow */}
-          <div className="p-4 rounded-2xl bg-black/40 border border-white/10 space-y-2">
-            <span className="text-[11px] text-[#ffd166] font-bold">الجملة المحددة للتدريب:</span>
-            <p className="en text-base font-bold text-white leading-relaxed">
-              "{scenario.lines[shadowingLineIdx]?.en}"
-            </p>
-            <p className="text-xs text-[#b9b6d5]">
-              {scenario.lines[shadowingLineIdx]?.ar}
-            </p>
-          </div>
-
-          {/* Audio Controls */}
-          <div className="space-y-3">
-            <button
-              onClick={() => speakEnglish(scenario.lines[shadowingLineIdx]?.en || '')}
-              className="w-full py-3 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer transition-colors"
-            >
-              <Volume2 className="w-4 h-4 text-[#41e7ff]" />
-              <span>الاستماع بصوت بطيء وواضح</span>
-            </button>
-
-            <button
-              onClick={handleSimulateRecording}
-              disabled={isRecording}
-              className={`w-full py-3.5 rounded-xl font-black text-xs sm:text-sm shadow-xl flex items-center justify-center gap-2 cursor-pointer transition-all ${
-                isRecording
-                  ? 'bg-[#ff4f9a] text-white animate-pulse'
-                  : 'bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white hover:brightness-110'
-              }`}
-            >
-              <Mic className="w-4 h-4" />
-              <span>{isRecording ? 'جارٍ الاستماع والتحليل الصوتي... 🎙️' : 'ابدأ نطق الجملة بصوتك الآن'}</span>
-            </button>
-          </div>
-
-          {/* AI Pronunciation Score Feedback */}
-          {recordingScore !== null && (
-            <div className="p-4 rounded-2xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] space-y-2 text-center">
-              <div className="text-2xl font-black">درجة الطلاقة: {recordingScore}% 🌟</div>
-              <p className="text-xs text-[#dedbf4]">
-                نطق ممتاز! مخارج الحروف واضحة وسرعة النبرة متطابقة مع متحدث اللغة الأصلي.
-              </p>
-            </div>
-          )}
+        {/* Real Pronunciation Assessment Engine */}
+        <div className="lg:col-span-6">
+          <PronunciationAssessmentViewer
+            targetSentence={activeTargetLine}
+            targetSentenceAr={activeTargetLineAr}
+          />
         </div>
 
       </section>
@@ -276,13 +215,25 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
                 <div className="text-[11px] text-[#41e7ff] font-mono">
                   ابدأ جملتك هكذا: <span className="en font-bold">{p.starter}</span>
                 </div>
-                <button
-                  onClick={() => speakEnglish(p.q)}
-                  className="text-xs text-[#b9b6d5] hover:text-white flex items-center gap-1 cursor-pointer"
-                >
-                  <Volume2 className="w-3.5 h-3.5" />
-                  <span>نطق السؤال</span>
-                </button>
+                <div className="flex items-center gap-2 pt-1">
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      setCustomPrompt(p.starter);
+                    }}
+                    className="flex-1 py-1.5 px-2 rounded-lg bg-[#ff4f9a]/20 hover:bg-[#ff4f9a]/30 text-[#ff8bb9] text-[11px] font-bold flex items-center justify-center gap-1 cursor-pointer transition-colors"
+                  >
+                    <Mic className="w-3 h-3" />
+                    <span>تدرب وسجّل بصوتك</span>
+                  </button>
+                  <button
+                    onClick={() => speakEnglish(p.q)}
+                    className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-[#b9b6d5] hover:text-white cursor-pointer"
+                    title="نطق السؤال"
+                  >
+                    <Volume2 className="w-3.5 h-3.5" />
+                  </button>
+                </div>
               </div>
             </div>
           ))}
