@@ -254,6 +254,7 @@ export const App: React.FC = () => {
                 onNavigate={handleNavigate}
                 userProfile={activeProfile}
                 progress={progress}
+                onOpenVoiceSettings={() => setIsVoiceModalOpen(true)}
               />
             )}
 

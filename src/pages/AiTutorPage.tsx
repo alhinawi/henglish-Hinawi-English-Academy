@@ -19,7 +19,7 @@ import {
   renameSession, 
   AiConversationSession 
 } from '../services/aiConversationManager';
-import { playSound, speakEnglishVoice, stopSpeech } from '../utils/audio';
+import { playSound, speakEnglishVoice, stopSpeech, getVoiceSettings } from '../utils/audio';
 import { AiMarkdownRenderer } from '../components/AiMarkdownRenderer';
 import {
   Sparkles,
@@ -60,6 +60,7 @@ interface AiTutorPageProps {
   onNavigate: (route: PageRoute) => void;
   userProfile: UserProfile;
   progress?: UserProgressState;
+  onOpenVoiceSettings?: () => void;
 }
 
 // Icon mapping for 7 assistants
@@ -73,7 +74,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Briefcase,
 };
 
-export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfile, progress }) => {
+export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfile, progress, onOpenVoiceSettings }) => {
   // --- State ---
   const [activeMode, setActiveMode] = useState<AiTutorMode>('grammar-teacher');
   const [sessions, setSessions] = useState<AiConversationSession[]>([]);
@@ -517,7 +518,21 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           </div>
         </div>
 
-        <div className="flex items-center gap-2 self-end sm:self-auto shrink-0">
+        <div className="flex items-center gap-2 self-end sm:self-auto shrink-0 flex-wrap">
+          {onOpenVoiceSettings && (
+            <button
+              onClick={() => {
+                playSound('click');
+                onOpenVoiceSettings();
+              }}
+              className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:brightness-125 border border-[#ffd166]/40 text-[11px] font-bold text-[#ffd166] transition-all cursor-pointer flex items-center gap-1.5 shadow-sm"
+              title="اختيار الصوت (حريمي / رجالي) من مكتبة ElevenLabs"
+            >
+              <Volume2 className="w-3.5 h-3.5 text-[#ffd166]" />
+              <span>تغيير الصوت 🎙️ ({getVoiceSettings().selectedVoiceName || 'سارة'})</span>
+            </button>
+          )}
+
           <button
             onClick={() => setIsHistoryDrawerOpen(!isHistoryDrawerOpen)}
             className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 text-[11px] font-bold text-white transition-all cursor-pointer flex items-center gap-1.5"

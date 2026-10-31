@@ -14,6 +14,8 @@ export interface VoiceSettings {
   accent: VoiceAccent;
   speed: SpeechSpeed;
   isMuted: boolean;
+  selectedVoiceId?: string;
+  selectedVoiceName?: string;
 }
 
 const STORAGE_KEY = 'henglish_voice_settings';
@@ -21,7 +23,7 @@ const STORAGE_KEY = 'henglish_voice_settings';
 // Load stored settings or provide defaults (Female default preserved exactly as is)
 export function getSavedVoiceSettings(): VoiceSettings {
   if (typeof window === 'undefined') {
-    return { gender: 'female', accent: 'US', speed: 0.92, isMuted: false };
+    return { gender: 'female', accent: 'US', speed: 0.92, isMuted: false, selectedVoiceId: 'EXAVITQu4vr4xnSDxMaL', selectedVoiceName: 'Sarah' };
   }
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -31,7 +33,7 @@ export function getSavedVoiceSettings(): VoiceSettings {
   } catch {
     // fallback
   }
-  return { gender: 'female', accent: 'US', speed: 0.92, isMuted: false };
+  return { gender: 'female', accent: 'US', speed: 0.92, isMuted: false, selectedVoiceId: 'EXAVITQu4vr4xnSDxMaL', selectedVoiceName: 'Sarah' };
 }
 
 export function saveVoiceSettings(settings: VoiceSettings): void {
@@ -175,6 +177,19 @@ export function setVoiceSpeed(speed: SpeechSpeed): void {
   saveVoiceSettings(currentSettings);
 }
 
+export function setVoiceId(
+  voiceId: string,
+  voiceName?: string,
+  gender?: VoiceGender,
+  accent?: VoiceAccent
+): void {
+  currentSettings.selectedVoiceId = voiceId;
+  if (voiceName) currentSettings.selectedVoiceName = voiceName;
+  if (gender) currentSettings.gender = gender;
+  if (accent) currentSettings.accent = accent;
+  saveVoiceSettings(currentSettings);
+}
+
 export function toggleAudioMute(): boolean {
   currentSettings.isMuted = !currentSettings.isMuted;
   saveVoiceSettings(currentSettings);
@@ -234,6 +249,7 @@ export interface SpeakOptions {
   accent?: VoiceAccent;
   speed?: SpeechSpeed;
   pitch?: number;
+  voiceId?: string;
   onEnd?: () => void;
   onError?: () => void;
 }
@@ -313,8 +329,9 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
   const gender = options?.gender || currentSettings.gender;
   const accent = options?.accent || currentSettings.accent;
   const speed = options?.speed || currentSettings.speed;
+  const voiceId = options?.voiceId || currentSettings.selectedVoiceId;
 
-  const cacheKey = `${trimmed}_${accent}_${gender}_${speed}`;
+  const cacheKey = `${trimmed}_${voiceId || `${accent}_${gender}`}_${speed}`;
   const cachedBlobUrl = clientAudioBlobCache.get(cacheKey);
 
   if (cachedBlobUrl) {
@@ -346,6 +363,7 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
       accent,
       gender,
       speed,
+      voiceId,
     }),
   })
     .then(res => res.json())
