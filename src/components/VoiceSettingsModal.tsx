@@ -114,7 +114,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
               <X className="w-5 h-5" />
             </button>
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 flex items-center justify-center text-[#ffd166]">
+              <div className="w-10 h-10 rounded-2xl bg-linear-to-br from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 flex items-center justify-center text-[#ffd166]">
                 <Volume2 className="w-5 h-5" />
               </div>
               <div>
@@ -140,7 +140,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                 onClick={() => handleGenderChange("female")}
                 className={`p-3.5 rounded-2xl border text-right transition-all cursor-pointer flex flex-col justify-between ${
                   settings.gender === "female"
-                    ? "bg-gradient-to-br from-[#ff4f9a]/25 to-[#ffd166]/15 border-[#ff4f9a] text-white shadow-lg"
+                    ? "bg-linear-to-br from-[#ff4f9a]/25 to-[#ffd166]/15 border-[#ff4f9a] text-white shadow-lg"
                     : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                 }`}
               >
@@ -162,7 +162,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                 onClick={() => handleGenderChange("male")}
                 className={`p-3.5 rounded-2xl border text-right transition-all cursor-pointer flex flex-col justify-between ${
                   settings.gender === "male"
-                    ? "bg-gradient-to-br from-[#41e7ff]/25 to-[#c4ff55]/15 border-[#41e7ff] text-white shadow-lg"
+                    ? "bg-linear-to-br from-[#41e7ff]/25 to-[#c4ff55]/15 border-[#41e7ff] text-white shadow-lg"
                     : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                 }`}
               >
@@ -232,7 +232,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                   onClick={() => handleSpeedChange(item.speed)}
                   className={`py-2 rounded-xl border text-center text-[11px] font-bold transition-all cursor-pointer ${
                     settings.speed === item.speed
-                      ? "bg-gradient-to-r from-[#ffd166]/20 to-[#ff4f9a]/20 border-[#ffd166] text-[#ffd166]"
+                      ? "bg-linear-to-r from-[#ffd166]/20 to-[#ff4f9a]/20 border-[#ffd166] text-[#ffd166]"
                       : "bg-white/5 border-white/10 text-[#b9b6d5] hover:bg-white/10"
                   }`}
                 >
@@ -276,7 +276,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
               ) : (
                 <button
                   onClick={playSample}
-                  className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#ffd166] text-[#121128] text-xs font-black flex items-center justify-center gap-2 hover:brightness-110 shadow-lg cursor-pointer"
+                  className="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#ffd166] text-[#121128] text-xs font-black flex items-center justify-center gap-2 hover:brightness-110 shadow-lg cursor-pointer"
                 >
                   <Play className="w-3.5 h-3.5 fill-current" />
                   <span>تجربة الصوت الآن ⚡</span>

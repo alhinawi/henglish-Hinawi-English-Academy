@@ -149,7 +149,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               <X className="w-5 h-5" />
             </button>
             <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-[#ffd166] to-[#ff9c66] flex items-center justify-center font-black text-[#0c0b20] text-lg shadow-md">
+              <div className="w-10 h-10 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] flex items-center justify-center font-black text-[#0c0b20] text-lg shadow-md">
                 🦅
               </div>
               <div>
@@ -269,7 +269,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
+                className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
               >
                 {isSubmitting ? 'جاري التحقق...' : 'تسجيل الدخول الآن ⚡'}
               </button>
@@ -333,7 +333,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
+                className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
               >
                 {isSubmitting ? 'جاري إنشاء الحساب...' : 'إنشاء حساب جديد مجاناً 🚀'}
               </button>
@@ -394,7 +394,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               <button
                 type="button"
                 onClick={() => handleSelectDemo('teacher')}
-                className="w-full p-4 rounded-2xl bg-gradient-to-r from-[#ffd166]/10 to-[#41e7ff]/10 hover:brightness-110 border border-[#ffd166]/30 text-right flex items-center justify-between cursor-pointer group"
+                className="w-full p-4 rounded-2xl bg-linear-to-r from-[#ffd166]/10 to-[#41e7ff]/10 hover:brightness-110 border border-[#ffd166]/30 text-right flex items-center justify-between cursor-pointer group"
               >
                 <div>
                   <div className="text-sm font-black text-[#ffd166]">
@@ -445,7 +445,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
               <button
                 type="submit"
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer"
+                className="w-full py-3 rounded-xl bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer"
               >
                 حفظ وترحيل تقدم الزائر لحساب دائم 🎉
               </button>

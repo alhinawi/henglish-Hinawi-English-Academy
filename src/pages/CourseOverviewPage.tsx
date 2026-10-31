@@ -64,7 +64,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
                 playSound('click');
                 onNavigate('lesson', 'lesson-1');
               }}
-              className="px-8 py-4 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-base hover:brightness-110 shadow-xl transition-all hover:-translate-y-1 cursor-pointer flex items-center gap-2.5"
+              className="px-8 py-4 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-base hover:brightness-110 shadow-xl transition-all hover:-translate-y-1 cursor-pointer flex items-center gap-2.5"
             >
               <Play className="w-5 h-5 fill-current" />
               <span>ابدأ دراسة الكورس (الدرس 01)</span>

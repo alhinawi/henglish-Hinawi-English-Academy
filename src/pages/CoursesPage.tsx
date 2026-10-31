@@ -62,7 +62,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
             playSound('click');
             onNavigate('courses/grammar');
           }}
-          className="px-5 py-3 rounded-2xl bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg shrink-0 cursor-pointer flex items-center gap-2"
+          className="px-5 py-3 rounded-2xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg shrink-0 cursor-pointer flex items-center gap-2"
         >
           <span>تصفح الأكاديمية الشاملة</span>
           <ArrowRight className="w-4 h-4 rotate-180" />
@@ -84,7 +84,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
             }}
             className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
               filterLevel === lvl
-                ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
+                ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
             }`}
           >
@@ -113,7 +113,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                   alt={course.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent" />
                 
                 <span className={`absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-black backdrop-blur-md ${
                   course.isFlagship
@@ -172,7 +172,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <button
                   className={`w-full py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center justify-center gap-2 cursor-pointer ${
                     course.isFlagship
-                      ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] hover:brightness-110 shadow-md'
+                      ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] hover:brightness-110 shadow-md'
                       : 'bg-white/10 hover:bg-white/20 text-white'
                   }`}
                 >

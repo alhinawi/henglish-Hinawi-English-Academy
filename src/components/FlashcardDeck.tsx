@@ -117,7 +117,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
             }}
             className={`px-3 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
               selectedCategory === cat
-                ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
+                ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
             }`}
           >
@@ -138,7 +138,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
           className="w-full h-full min-h-[320px] sm:min-h-[350px] rounded-3xl transform-style-3d relative"
         >
           {/* FRONT SIDE */}
-          <div className="absolute inset-0 w-full h-full backface-hidden rounded-3xl p-6 sm:p-8 flex flex-col justify-between bg-gradient-to-br from-[#1b1939] to-[#13122b] border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:border-[#41e7ff]/40 transition-colors">
+          <div className="absolute inset-0 w-full h-full backface-hidden rounded-3xl p-6 sm:p-8 flex flex-col justify-between bg-linear-to-br from-[#1b1939] to-[#13122b] border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.4)] hover:border-[#41e7ff]/40 transition-colors">
             <div className="flex items-center justify-between">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
                 {currentCard.category}
@@ -166,7 +166,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
           </div>
 
           {/* BACK SIDE (Rotated 180deg) */}
-          <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-3xl p-6 sm:p-8 flex flex-col justify-between bg-gradient-to-br from-[#201d43] to-[#12102b] border border-[#41e7ff]/40 shadow-[0_20px_50px_rgba(65,231,255,0.15)]">
+          <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-3xl p-6 sm:p-8 flex flex-col justify-between bg-linear-to-br from-[#201d43] to-[#12102b] border border-[#41e7ff]/40 shadow-[0_20px_50px_rgba(65,231,255,0.15)]">
             <div className="flex items-center justify-between">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/40">
                 الحل والشرح الذهبي ✨

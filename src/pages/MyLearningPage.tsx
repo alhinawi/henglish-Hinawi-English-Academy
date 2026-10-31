@@ -52,7 +52,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
   return (
     <div className="space-y-10 pb-16 text-right">
       {/* Page Hero */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -136,7 +136,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
               }}
               className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
                 activeTab === "certificate"
-                  ? "bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] shadow-lg"
+                  ? "bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] shadow-lg"
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
@@ -204,7 +204,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   key={b.id}
                   className={`p-4 rounded-2xl border text-center transition-all ${
                     b.unlocked
-                      ? "bg-gradient-to-b from-[#ffd166]/15 to-transparent border-[#ffd166]/40 shadow-sm"
+                      ? "bg-linear-to-b from-[#ffd166]/15 to-transparent border-[#ffd166]/40 shadow-sm"
                       : "bg-white/5 border-white/5 opacity-40 grayscale"
                   }`}
                 >
@@ -440,7 +440,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
           <button
             onClick={() => window.print()}
-            className="px-8 py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer inline-flex items-center gap-2"
+            className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer inline-flex items-center gap-2"
           >
             <Printer className="w-4 h-4" />
             <span>طباعة أو حفظ الشهادة بصيغة PDF</span>

@@ -253,6 +253,7 @@ export const App: React.FC = () => {
               <AiTutorPage
                 onNavigate={handleNavigate}
                 userProfile={activeProfile}
+                progress={progress}
               />
             )}
 

@@ -18,7 +18,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     <footer className="mt-24 border-t border-white/10 bg-[#09091a] relative overflow-hidden">
       {/* Decorative Glow */}
       <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-24 bg-gradient-to-r from-[#ffd166]/10 via-[#ff4f9a]/10 to-[#41e7ff]/10 blur-3xl pointer-events-none -z-10"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-24 bg-linear-to-r from-[#ffd166]/10 via-[#ff4f9a]/10 to-[#41e7ff]/10 blur-3xl pointer-events-none -z-10"
         aria-hidden="true"
       />
 

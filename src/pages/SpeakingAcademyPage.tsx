@@ -64,7 +64,7 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
     <div className="space-y-10 pb-16 text-right">
       
       {/* Academy Hero */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ff4f9a]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -96,7 +96,7 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
             }}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer flex items-center gap-2 ${
               activeScenarioIdx === idx
-                ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black shadow-lg'
+                ? 'bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black shadow-lg'
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
             }`}
           >
@@ -182,7 +182,7 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
         </div>
 
         {/* Shadowing & Voice Practice Box */}
-        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#1b1939] to-[#121128] border border-white/10 space-y-6">
+        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-linear-to-b from-[#1b1939] to-[#121128] border border-white/10 space-y-6">
           <div className="space-y-2">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
               <Sparkles className="w-3.5 h-3.5" />
@@ -221,7 +221,7 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
               className={`w-full py-3.5 rounded-xl font-black text-xs sm:text-sm shadow-xl flex items-center justify-center gap-2 cursor-pointer transition-all ${
                 isRecording
                   ? 'bg-[#ff4f9a] text-white animate-pulse'
-                  : 'bg-gradient-to-r from-[#ff4f9a] to-[#9b7bff] text-white hover:brightness-110'
+                  : 'bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white hover:brightness-110'
               }`}
             >
               <Mic className="w-4 h-4" />

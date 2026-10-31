@@ -92,7 +92,7 @@ export const TimelineVisualizer: React.FC = () => {
       {/* Visual Timeline Track */}
       <div className="relative py-8 my-4">
         {/* Track Line */}
-        <div className="absolute top-1/2 left-4 right-4 h-1.5 bg-gradient-to-r from-[#ff4f9a]/50 via-[#c4ff55] to-[#41e7ff] -translate-y-1/2 rounded-full z-0 opacity-60" />
+        <div className="absolute top-1/2 left-4 right-4 h-1.5 bg-linear-to-r from-[#ff4f9a]/50 via-[#c4ff55] to-[#41e7ff] -translate-y-1/2 rounded-full z-0 opacity-60" />
 
         {/* Timeline Stops */}
         <div className="relative z-10 grid grid-cols-3 gap-2">

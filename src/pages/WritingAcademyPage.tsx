@@ -121,7 +121,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
     <div className="space-y-10 pb-16 text-right">
       
       {/* Academy Hero */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 left-10 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -239,7 +239,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         </div>
 
         {/* Live Writing Workspace */}
-        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-gradient-to-b from-[#1b1939] to-[#121128] border border-white/10 space-y-5">
+        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-linear-to-b from-[#1b1939] to-[#121128] border border-white/10 space-y-5">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30">
               <Sparkles className="w-3.5 h-3.5" />
@@ -277,7 +277,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           <button
             onClick={handleAnalyzeWriting}
             disabled={!userInput.trim()}
-            className="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#ff4f9a] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50 transition-all"
+            className="w-full py-3.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff4f9a] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50 transition-all"
           >
             فحص وتحليل المسودة الآن 🔍
           </button>

@@ -86,7 +86,7 @@ export const VocabularyPage: React.FC = () => {
               }}
               className={`px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                 selectedCategory === c.id
-                  ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black'
+                  ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black'
                   : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
               }`}
             >

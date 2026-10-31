@@ -75,7 +75,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
           </div>
           <div className="w-full h-2 rounded-full bg-white/10 mt-4 overflow-hidden">
             <div 
-              className="h-full bg-gradient-to-r from-[#ffd166] to-[#c4ff55] rounded-full transition-all duration-700"
+              className="h-full bg-linear-to-r from-[#ffd166] to-[#c4ff55] rounded-full transition-all duration-700"
               style={{ width: `${completionPercentage}%` }}
             />
           </div>
@@ -147,7 +147,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
               key={badge.id}
               className={`p-5 rounded-2xl border text-center transition-all ${
                 badge.unlocked
-                  ? 'bg-gradient-to-b from-[#1b1939] to-[#13122b] border-[#ffd166]/50 shadow-[0_0_20px_rgba(255,209,102,0.15)]'
+                  ? 'bg-linear-to-b from-[#1b1939] to-[#13122b] border-[#ffd166]/50 shadow-[0_0_20px_rgba(255,209,102,0.15)]'
                   : 'bg-white/5 border-white/5 opacity-40'
               }`}
             >

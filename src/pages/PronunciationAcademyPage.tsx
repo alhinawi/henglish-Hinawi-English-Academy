@@ -58,7 +58,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
     <div className="space-y-10 pb-16 text-right">
       
       {/* Academy Hero */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#c4ff55]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -116,7 +116,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Sound A */}
-          <div className="p-6 rounded-3xl bg-gradient-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
+          <div className="p-6 rounded-3xl bg-linear-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
             <span className="text-xs font-bold text-[#ffd166] en">{pair.soundA}</span>
             <div className="en text-4xl sm:text-5xl font-black text-white">{pair.wordA}</div>
             <div className="en text-sm font-mono text-[#41e7ff]">{pair.ipaA}</div>
@@ -132,7 +132,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           </div>
 
           {/* Sound B */}
-          <div className="p-6 rounded-3xl bg-gradient-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
+          <div className="p-6 rounded-3xl bg-linear-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
             <span className="text-xs font-bold text-[#ff8bb9] en">{pair.soundB}</span>
             <div className="en text-4xl sm:text-5xl font-black text-white">{pair.wordB}</div>
             <div className="en text-sm font-mono text-[#ff8bb9]">{pair.ipaB}</div>
@@ -164,7 +164,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
           <button
             onClick={handleTestEar}
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
+            className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
           >
             🔊 شغّل صوتاً عشوائياً للاختبار
           </button>

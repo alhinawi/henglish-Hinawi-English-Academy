@@ -129,7 +129,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       </div>
 
       {/* 2. COMPREHENSIVE HERO HEADER BANNER */}
-      <header className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
+      <header className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
@@ -164,7 +164,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                 playSound('click');
                 speakEnglish(rule.titleEn);
               }}
-              className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:from-[#ffd166]/30 hover:to-[#41e7ff]/30 border border-[#ffd166]/40 text-xs font-bold text-white flex items-center gap-2 cursor-pointer transition-all"
+              className="px-4 py-2 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:from-[#ffd166]/30 hover:to-[#41e7ff]/30 border border-[#ffd166]/40 text-xs font-bold text-white flex items-center gap-2 cursor-pointer transition-all"
             >
               <Volume2 className="w-4 h-4 text-[#ffd166]" />
               <span>استمع إلى النطق الصوتي لاسم القاعدة</span>
@@ -208,7 +208,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               <span className="text-[#ffd166]">PAST</span>
             </div>
             <div className="flex-1 px-4 flex items-center justify-center">
-              <div className="w-full h-1 bg-gradient-to-r from-[#ffd166] via-[#41e7ff] to-[#ff4f9a] relative">
+              <div className="w-full h-1 bg-linear-to-r from-[#ffd166] via-[#41e7ff] to-[#ff4f9a] relative">
                 <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#41e7ff] border-2 border-white shadow-lg animate-ping opacity-75" />
                 <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#41e7ff] border-2 border-white shadow-lg" />
               </div>
@@ -235,7 +235,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               onClick={() => setActiveStructureTab('affirmative')}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 activeStructureTab === 'affirmative'
-                  ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black'
+                  ? 'bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black'
                   : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
@@ -245,7 +245,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               onClick={() => setActiveStructureTab('negative')}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 activeStructureTab === 'negative'
-                  ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black'
+                  ? 'bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black'
                   : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
@@ -255,7 +255,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               onClick={() => setActiveStructureTab('question')}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                 activeStructureTab === 'question'
-                  ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black'
+                  ? 'bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black'
                   : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
@@ -305,7 +305,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       </section>
 
       {/* 5. EGYPTIAN ARABIC EXPLANATION (شرح مبسط بالمصري وبدون فذلكة) */}
-      <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-[#ffd166]/30 bg-gradient-to-br from-[#ffd166]/5 to-transparent space-y-6">
+      <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-[#ffd166]/30 bg-linear-to-br from-[#ffd166]/5 to-transparent space-y-6">
         <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-[#ffd166]">
           <GraduationCap className="w-5 h-5 text-[#ffd166]" />
           <span>كلام من الآخر بالمصري • أسرار مستر هناوي 🧠</span>
@@ -372,7 +372,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       </section>
 
       {/* 7. COMMON TRAPS MADE BY ARABIC SPEAKERS (فخاخ شائعة وحلولها) */}
-      <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-red-500/30 bg-gradient-to-br from-red-500/5 to-transparent space-y-6">
+      <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-red-500/30 bg-linear-to-br from-red-500/5 to-transparent space-y-6">
         <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-red-400">
           <AlertTriangle className="w-5 h-5 text-red-400" />
           <span>أشهر الأخطاء الشائعة للمتحدثين بالعربية ⚠️</span>
@@ -496,7 +496,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
 
         <button
           onClick={handleComplete}
-          className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-gradient-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#121128] font-black text-sm flex items-center justify-center gap-2 hover:brightness-110 shadow-xl cursor-pointer transition-transform hover:-translate-y-0.5"
+          className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#121128] font-black text-sm flex items-center justify-center gap-2 hover:brightness-110 shadow-xl cursor-pointer transition-transform hover:-translate-y-0.5"
         >
           <Award className="w-5 h-5" />
           <span>تأكيد إكمال الدرس وتسجيل النقاط ⚡</span>

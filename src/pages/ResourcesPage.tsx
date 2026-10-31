@@ -51,7 +51,7 @@ export const ResourcesPage: React.FC = () => {
 
         <button
           onClick={handlePrint}
-          className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-transform hover:-translate-y-0.5 shrink-0"
+          className="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-transform hover:-translate-y-0.5 shrink-0"
         >
           <Printer className="w-4 h-4" />
           <span>طباعة المذكرة المفتوحة</span>

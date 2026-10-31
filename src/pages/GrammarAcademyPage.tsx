@@ -82,7 +82,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
             alt="Modern English Grammar Academy Lecture Hall" 
             className="w-full h-full object-cover filter brightness-[0.25]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0c0b20] via-[#0c0b20]/90 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-r from-[#0c0b20] via-[#0c0b20]/90 to-transparent" />
         </div>
 
         <div className="relative z-10 max-w-3xl space-y-5">
@@ -146,7 +146,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
               }}
               className={`px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                 selectedCategory === cat
-                  ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
+                  ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
                   : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
               }`}
             >
@@ -222,7 +222,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         alt={rule.imageAlt}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-[#171632] via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-linear-to-t md:bg-linear-to-l from-[#171632] via-transparent to-transparent" />
                       <div className="absolute top-3 right-3 px-2.5 py-1 rounded-lg bg-[#09091a]/80 backdrop-blur-md border border-white/15 text-[11px] font-black text-[#ffd166]">
                         #{rule.order.toString().padStart(2, '0')}
                       </div>
@@ -276,7 +276,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                               window.location.hash = `grammar/${rule.id}`;
                               onNavigate('grammar-lesson', rule.id);
                             }}
-                            className="px-4 py-1.5 rounded-xl bg-gradient-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] text-xs font-black hover:brightness-110 flex items-center gap-1.5 shadow-md cursor-pointer transition-transform hover:-translate-y-0.5"
+                            className="px-4 py-1.5 rounded-xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] text-xs font-black hover:brightness-110 flex items-center gap-1.5 shadow-md cursor-pointer transition-transform hover:-translate-y-0.5"
                           >
                             <BookOpen className="w-3.5 h-3.5" />
                             <span>ابدأ الدرس التعليمي الكامل 📖</span>
@@ -344,7 +344,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         </div>
 
                         {/* Egyptian Tips & Secret */}
-                        <div className="p-5 rounded-2xl bg-gradient-to-br from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 space-y-3">
+                        <div className="p-5 rounded-2xl bg-linear-to-br from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 space-y-3">
                           <h4 className="text-sm font-black text-[#ffd166] flex items-center gap-2">
                             <Sparkles className="w-4 h-4 text-[#ffd166]" />
                             <span>سر فهم القاعدة بالمصري:</span>

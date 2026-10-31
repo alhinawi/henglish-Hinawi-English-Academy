@@ -251,7 +251,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* User Level Strip (when expanded) */}
       {!collapsed && (
-        <div className="mx-3 my-3 p-3 rounded-2xl bg-gradient-to-r from-[#ffd166]/10 via-[#41e7ff]/10 to-transparent border border-white/10 flex items-center justify-between">
+        <div className="mx-3 my-3 p-3 rounded-2xl bg-linear-to-r from-[#ffd166]/10 via-[#41e7ff]/10 to-transparent border border-white/10 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <div className="w-9 h-9 rounded-xl bg-[#ffd166]/20 border border-[#ffd166]/40 flex items-center justify-center font-black text-[#ffd166] text-xs">
               {cefrLevel}
@@ -290,7 +290,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   onClick={() => handleNav(item.route)}
                   className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer group text-right ${
                     isActive
-                      ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-[0_0_15px_rgba(255,209,102,0.15)] font-black'
+                      ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-[0_0_15px_rgba(255,209,102,0.15)] font-black'
                       : item.isFlagship
                       ? 'text-[#41e7ff] hover:bg-white/5 border border-[#41e7ff]/25'
                       : 'text-[#dedbf4] hover:text-[#41e7ff] hover:bg-white/5 border border-transparent'

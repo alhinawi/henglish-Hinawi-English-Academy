@@ -36,7 +36,7 @@ export const Logo: React.FC<LogoProps> = ({
       >
         {glow && (
           <div
-            className="absolute inset-0 rounded-full bg-gradient-to-r from-[#ffd166]/30 via-[#ff4f9a]/20 to-[#41e7ff]/30 blur-md -z-10 animate-pulse pointer-events-none"
+            className="absolute inset-0 rounded-full bg-linear-to-r from-[#ffd166]/30 via-[#ff4f9a]/20 to-[#41e7ff]/30 blur-md -z-10 animate-pulse pointer-events-none"
             aria-hidden="true"
           />
         )}

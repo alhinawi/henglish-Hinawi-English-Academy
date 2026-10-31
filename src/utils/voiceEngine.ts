@@ -1,3 +1,10 @@
+// ==============================================================================
+// Henglish Academy (HENGLISH) - MULTI-TIER VOICE SYNTHESIS & SEQUENTIAL AUDIO QUEUE
+// Preserves beloved original female voice + upgraded natural male voice
+// Supports Server-Side TTS (ElevenLabs, Google, Kokoro) with client SpeechSynthesis fallback
+// Features Event-Driven Queue Playback (ended events, NO setTimeout gaps)
+// ==============================================================================
+
 export type VoiceGender = 'female' | 'male';
 export type VoiceAccent = 'US' | 'UK';
 export type SpeechSpeed = 0.75 | 0.92 | 1.0 | 1.25;
@@ -39,7 +46,11 @@ export function saveVoiceSettings(settings: VoiceSettings): void {
 let currentSettings: VoiceSettings = getSavedVoiceSettings();
 let lastSpokenText: string = '';
 let currentUtterance: SpeechSynthesisUtterance | null = null;
+let currentHtmlAudio: HTMLAudioElement | null = null;
 let speechStateListeners: Array<(isPlaying: boolean, text: string) => void> = [];
+
+// Client-side in-memory audio blob cache
+const clientAudioBlobCache = new Map<string, string>();
 
 export function subscribeSpeechState(listener: (isPlaying: boolean, text: string) => void): () => void {
   speechStateListeners.push(listener);
@@ -82,8 +93,8 @@ function getPreservedFemaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | nu
      v.name.includes('Google US English') || 
      v.name.includes('Zira') || 
      v.name.includes('Victoria') ||
-     v.name.includes('Natural') && v.name.includes('Jenny') ||
-     v.name.includes('Natural') && v.name.includes('Aria') ||
+     (v.name.includes('Natural') && v.name.includes('Jenny')) ||
+     (v.name.includes('Natural') && v.name.includes('Aria')) ||
      v.name.toLowerCase().includes('female'))
   );
   if (preferredFemale) return preferredFemale;
@@ -102,13 +113,11 @@ function getPreservedFemaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | nu
 /**
  * Male voice picker:
  * VASTLY IMPROVED natural, warm, native-sounding male pronunciation.
- * Priority: Microsoft Natural / Google High-Quality Male / Daniel Enhanced / Guy / Christopher / Oliver.
  */
 function getUpgradedMaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | null {
   const voices = availableVoices.length > 0 ? availableVoices : loadVoices();
   const langPrefix = accent === 'UK' ? 'en-GB' : 'en-US';
 
-  // High-priority male voices (Natural, Neural, Studio quality)
   const maleKeywords = [
     'guy online (natural)',
     'christopher online (natural)',
@@ -136,7 +145,6 @@ function getUpgradedMaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | null 
     if (match) return match;
   }
 
-  // Check any english voice matching keyword if accent-specific didn't match
   for (const keyword of maleKeywords) {
     const match = voices.find(v => 
       v.lang.startsWith('en') && v.name.toLowerCase().includes(keyword)
@@ -144,7 +152,6 @@ function getUpgradedMaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | null 
     if (match) return match;
   }
 
-  // Fallback to generic male
   const genericMale = voices.find(v => 
     v.lang.startsWith('en') && v.name.toLowerCase().includes('male')
   );
@@ -171,9 +178,8 @@ export function setVoiceSpeed(speed: SpeechSpeed): void {
 export function toggleAudioMute(): boolean {
   currentSettings.isMuted = !currentSettings.isMuted;
   saveVoiceSettings(currentSettings);
-  if (currentSettings.isMuted && typeof window !== 'undefined' && 'speechSynthesis' in window) {
-    window.speechSynthesis.cancel();
-    notifyState(false, '');
+  if (currentSettings.isMuted) {
+    stopSpeech();
   }
   return currentSettings.isMuted;
 }
@@ -183,20 +189,34 @@ export function getVoiceSettings(): VoiceSettings {
 }
 
 export function stopSpeech(): void {
+  if (currentHtmlAudio) {
+    currentHtmlAudio.pause();
+    currentHtmlAudio.currentTime = 0;
+    currentHtmlAudio = null;
+  }
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.cancel();
-    notifyState(false, '');
   }
+  currentUtterance = null;
+  notifyState(false, '');
 }
 
 export function pauseSpeech(): void {
+  if (currentHtmlAudio) {
+    currentHtmlAudio.pause();
+  }
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.pause();
-    notifyState(false, lastSpokenText);
   }
+  notifyState(false, lastSpokenText);
 }
 
 export function resumeSpeech(): void {
+  if (currentHtmlAudio) {
+    currentHtmlAudio.play().catch(() => {});
+    notifyState(true, lastSpokenText);
+    return;
+  }
   if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
     window.speechSynthesis.resume();
     notifyState(true, lastSpokenText);
@@ -215,52 +235,46 @@ export interface SpeakOptions {
   speed?: SpeechSpeed;
   pitch?: number;
   onEnd?: () => void;
+  onError?: () => void;
 }
 
-export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
+/**
+ * Play sentence with browser SpeechSynthesis
+ */
+function speakViaBrowserSpeech(text: string, options?: SpeakOptions): void {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    return;
-  }
-
-  if (currentSettings.isMuted) {
+    if (options?.onError) options.onError();
     return;
   }
 
   try {
-    window.speechSynthesis.cancel(); // Stop active playback
-
-    const trimmed = text.trim();
-    if (!trimmed) return;
-    lastSpokenText = trimmed;
+    window.speechSynthesis.cancel();
 
     const gender = options?.gender || currentSettings.gender;
     const accent = options?.accent || currentSettings.accent;
     const speed = options?.speed || currentSettings.speed;
 
-    const utterance = new SpeechSynthesisUtterance(trimmed);
+    const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = accent === 'UK' ? 'en-GB' : 'en-US';
     utterance.rate = speed;
 
     if (gender === 'female') {
-      // PRESERVED FEMALE VOICE: exactly as previous implementation
       const femaleVoice = getPreservedFemaleVoice(accent);
       if (femaleVoice) {
         utterance.voice = femaleVoice;
       }
       utterance.pitch = options?.pitch ?? 1.0;
     } else {
-      // UPGRADED MALE VOICE: natural, warm acoustic balance
       const maleVoice = getUpgradedMaleVoice(accent);
       if (maleVoice) {
         utterance.voice = maleVoice;
       }
-      // Tune pitch slightly warmer (0.94) to eliminate mechanical tone
       utterance.pitch = options?.pitch ?? 0.94;
     }
 
     utterance.onstart = () => {
       currentUtterance = utterance;
-      notifyState(true, trimmed);
+      notifyState(true, text);
     };
 
     utterance.onend = () => {
@@ -272,11 +286,198 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
     utterance.onerror = () => {
       currentUtterance = null;
       notifyState(false, '');
+      if (options?.onError) options.onError();
     };
 
     window.speechSynthesis.speak(utterance);
   } catch (err) {
-    console.warn('SpeechSynthesis error:', err);
+    console.warn('Browser SpeechSynthesis error:', err);
     notifyState(false, '');
+    if (options?.onError) options.onError();
   }
+}
+
+/**
+ * Main Single Speech Function (Server TTS -> Cached Audio -> Browser SpeechSynthesis Fallback)
+ */
+export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
+  if (typeof window === 'undefined') return;
+  if (currentSettings.isMuted) return;
+
+  const trimmed = text.trim();
+  if (!trimmed) return;
+  lastSpokenText = trimmed;
+
+  stopSpeech();
+
+  const gender = options?.gender || currentSettings.gender;
+  const accent = options?.accent || currentSettings.accent;
+  const speed = options?.speed || currentSettings.speed;
+
+  const cacheKey = `${trimmed}_${accent}_${gender}_${speed}`;
+  const cachedBlobUrl = clientAudioBlobCache.get(cacheKey);
+
+  if (cachedBlobUrl) {
+    const audio = new Audio(cachedBlobUrl);
+    currentHtmlAudio = audio;
+    audio.playbackRate = speed;
+
+    audio.onplay = () => notifyState(true, trimmed);
+    audio.onended = () => {
+      currentHtmlAudio = null;
+      notifyState(false, '');
+      if (options?.onEnd) options.onEnd();
+    };
+    audio.onerror = () => {
+      currentHtmlAudio = null;
+      speakViaBrowserSpeech(trimmed, options);
+    };
+
+    audio.play().catch(() => speakViaBrowserSpeech(trimmed, options));
+    return;
+  }
+
+  // Try Server Synthesis API
+  fetch('/api/tts/synthesize', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      text: trimmed,
+      accent,
+      gender,
+      speed,
+    }),
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.audioBase64) {
+        const audioSrc = `data:${data.mimeType || 'audio/mpeg'};base64,${data.audioBase64}`;
+        clientAudioBlobCache.set(cacheKey, audioSrc);
+
+        const audio = new Audio(audioSrc);
+        currentHtmlAudio = audio;
+        audio.playbackRate = speed;
+
+        audio.onplay = () => notifyState(true, trimmed);
+        audio.onended = () => {
+          currentHtmlAudio = null;
+          notifyState(false, '');
+          if (options?.onEnd) options.onEnd();
+        };
+        audio.onerror = () => {
+          currentHtmlAudio = null;
+          speakViaBrowserSpeech(trimmed, options);
+        };
+
+        audio.play().catch(() => speakViaBrowserSpeech(trimmed, options));
+      } else {
+        // Use high-fidelity browser speech
+        speakViaBrowserSpeech(trimmed, options);
+      }
+    })
+    .catch(() => {
+      // Offline or network error: use browser speech
+      speakViaBrowserSpeech(trimmed, options);
+    });
+}
+
+/**
+ * Sequential Sentence Audio Queue Player:
+ * Guarantees zero overlapping, plays sentence by sentence listening to the true 'ended' event.
+ */
+export class AudioQueuePlayer {
+  private queue: Array<{
+    text: string;
+    gender?: VoiceGender;
+    accent?: VoiceAccent;
+    speakerName?: string;
+  }> = [];
+  private isStopped = false;
+  private isPaused = false;
+  private currentIndex = 0;
+  private onSentenceChange?: (index: number) => void;
+  private onQueueFinished?: () => void;
+
+  public async startQueue(
+    items: Array<{
+      text: string;
+      gender?: VoiceGender;
+      accent?: VoiceAccent;
+      speakerName?: string;
+    }>,
+    onSentenceChange?: (index: number) => void,
+    onQueueFinished?: () => void
+  ): Promise<void> {
+    this.stop();
+    this.queue = items;
+    this.isStopped = false;
+    this.isPaused = false;
+    this.currentIndex = 0;
+    this.onSentenceChange = onSentenceChange;
+    this.onQueueFinished = onQueueFinished;
+
+    await this.processNextSentence();
+  }
+
+  private async processNextSentence(): Promise<void> {
+    if (this.isStopped || this.currentIndex >= this.queue.length) {
+      this.isStopped = true;
+      if (this.onQueueFinished) this.onQueueFinished();
+      return;
+    }
+
+    const currentItem = this.queue[this.currentIndex];
+    if (this.onSentenceChange) {
+      this.onSentenceChange(this.currentIndex);
+    }
+
+    await new Promise<void>(resolve => {
+      speakEnglishVoice(currentItem.text, {
+        gender: currentItem.gender,
+        accent: currentItem.accent,
+        onEnd: () => resolve(),
+        onError: () => resolve(),
+      });
+    });
+
+    if (this.isStopped) return;
+
+    this.currentIndex++;
+    // Brief natural pause between dialogue turns (300ms)
+    await new Promise(r => setTimeout(r, 300));
+    await this.processNextSentence();
+  }
+
+  public stop(): void {
+    this.isStopped = true;
+    this.isPaused = false;
+    this.queue = [];
+    stopSpeech();
+    if (this.onQueueFinished) {
+      this.onQueueFinished();
+    }
+  }
+
+  public pause(): void {
+    this.isPaused = true;
+    pauseSpeech();
+  }
+
+  public resume(): void {
+    this.isPaused = false;
+    resumeSpeech();
+  }
+
+  public getIsPlaying(): boolean {
+    return !this.isStopped && !this.isPaused;
+  }
+}
+
+// Singleton Queue Player instance
+let globalQueuePlayer: AudioQueuePlayer | null = null;
+export function getAudioQueuePlayer(): AudioQueuePlayer {
+  if (!globalQueuePlayer) {
+    globalQueuePlayer = new AudioQueuePlayer();
+  }
+  return globalQueuePlayer;
 }

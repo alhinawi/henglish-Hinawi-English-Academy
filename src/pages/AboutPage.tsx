@@ -15,7 +15,7 @@ export const AboutPage: React.FC = () => {
             alt="Students collaborating at Hinawi Academy" 
             className="w-full h-full object-cover filter brightness-[0.2]"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0c0b20] via-[#0c0b20]/80 to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20] via-[#0c0b20]/80 to-transparent" />
         </div>
 
         <div className="relative z-10 space-y-6">
@@ -61,7 +61,7 @@ export const AboutPage: React.FC = () => {
               alt="Classroom and lectures" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent" />
           </div>
           <div className="p-5 space-y-2">
             <h4 className="font-bold text-white text-base">محاضرات أكاديمية تفاعلية</h4>
@@ -78,7 +78,7 @@ export const AboutPage: React.FC = () => {
               alt="Mentorship and direct guidance" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent" />
           </div>
           <div className="p-5 space-y-2">
             <h4 className="font-bold text-white text-base">إرشاد وتصحيح فوري</h4>
@@ -95,7 +95,7 @@ export const AboutPage: React.FC = () => {
               alt="Graduation milestones" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent" />
           </div>
           <div className="p-5 space-y-2">
             <h4 className="font-bold text-white text-base">إنجاز حقيقي ونتائج ملموسة</h4>

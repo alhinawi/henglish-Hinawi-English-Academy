@@ -207,7 +207,7 @@ export const SentenceBuilder: React.FC = () => {
           {selectedWords.length > 0 && isCorrect === null && (
             <button
               onClick={() => checkResult()}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-xs sm:text-sm hover:brightness-110 cursor-pointer shadow-lg transition-transform hover:-translate-y-0.5"
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-xs sm:text-sm hover:brightness-110 cursor-pointer shadow-lg transition-transform hover:-translate-y-0.5"
             >
               تحقق من الإجابة
             </button>
@@ -216,7 +216,7 @@ export const SentenceBuilder: React.FC = () => {
           {isCorrect === true && (
             <button
               onClick={handleNextChallenge}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 cursor-pointer shadow-lg flex items-center gap-2 transition-transform hover:-translate-y-0.5"
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 cursor-pointer shadow-lg flex items-center gap-2 transition-transform hover:-translate-y-0.5"
             >
               <span>التحدي التالي</span>
               <ArrowRight className="w-4 h-4 rotate-180" />

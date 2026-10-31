@@ -90,7 +90,7 @@ export const GamesPage: React.FC = () => {
           onClick={() => { playSound('click'); setActiveTab('builder'); }}
           className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
             activeTab === 'builder'
-              ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] shadow-lg'
+              ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] shadow-lg'
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
@@ -101,7 +101,7 @@ export const GamesPage: React.FC = () => {
           onClick={() => { playSound('click'); setActiveTab('blitz'); }}
           className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
             activeTab === 'blitz'
-              ? 'bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white shadow-lg'
+              ? 'bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white shadow-lg'
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
@@ -112,7 +112,7 @@ export const GamesPage: React.FC = () => {
           onClick={() => { playSound('click'); setActiveTab('cards'); }}
           className={`px-5 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer ${
             activeTab === 'cards'
-              ? 'bg-gradient-to-r from-[#ff4f9a] to-[#9b7bff] text-white shadow-lg'
+              ? 'bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white shadow-lg'
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
@@ -147,7 +147,7 @@ export const GamesPage: React.FC = () => {
               </p>
               <button
                 onClick={startBlitz}
-                className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-base hover:brightness-110 shadow-lg cursor-pointer transition-transform hover:scale-105"
+                className="px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-base hover:brightness-110 shadow-lg cursor-pointer transition-transform hover:scale-105"
               >
                 ابدأ التحدي السريع الآن 🚀
               </button>
@@ -161,7 +161,7 @@ export const GamesPage: React.FC = () => {
               <div className="text-4xl font-black text-[#c4ff55]">{blitzScore} نقطة!</div>
               <button
                 onClick={startBlitz}
-                className="px-6 py-3 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer"
+                className="px-6 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer"
               >
                 العب مرة ثانية ↻
               </button>

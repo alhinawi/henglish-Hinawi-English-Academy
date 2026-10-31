@@ -164,7 +164,7 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className={`px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 ${
                 currentRoute === 'grammar' || currentRoute.startsWith('courses/grammar')
-                  ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
+                  ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
                   : 'hover:text-white hover:bg-white/5'
               }`}
               aria-haspopup="true"
@@ -186,7 +186,7 @@ export const Header: React.FC<HeaderProps> = ({
                 >
                   <button
                     onClick={() => handleNav('grammar')}
-                    className="w-full p-2.5 rounded-xl bg-gradient-to-r from-[#ffd166]/15 to-[#41e7ff]/15 hover:brightness-110 text-white font-black text-xs flex items-center justify-between cursor-pointer border border-[#ffd166]/30"
+                    className="w-full p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/15 to-[#41e7ff]/15 hover:brightness-110 text-white font-black text-xs flex items-center justify-between cursor-pointer border border-[#ffd166]/30"
                   >
                     <span>فهرس القواعد الشامل (16 قاعدة) 📖</span>
                     <span className="text-[10px] text-[#ffd166]">A1 - C1</span>
@@ -354,7 +354,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => handleNav('ai-tutor')}
             className={`px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 ${
               currentRoute === 'ai-tutor'
-                ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
+                ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
                 : 'text-[#41e7ff] hover:bg-white/5'
             }`}
           >
@@ -422,7 +422,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Streak Indicator */}
         <div 
-          className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
+          className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-linear-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
           title={`استمرارية التعلم: ${userProfile.streakDays} أيام متتالية`}
         >
           <Flame className="w-4 h-4 text-[#ff4f9a] animate-pulse" />
@@ -482,7 +482,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className={`p-2.5 rounded-xl text-right transition-colors cursor-pointer border ${
                       n.read
                         ? 'bg-white/5 border-transparent text-[#b9b6d5]'
-                        : 'bg-gradient-to-r from-[#41e7ff]/10 to-transparent border-[#41e7ff]/30 text-white font-semibold'
+                        : 'bg-linear-to-r from-[#41e7ff]/10 to-transparent border-[#41e7ff]/30 text-white font-semibold'
                     }`}
                   >
                     <div className="text-xs font-bold mb-1 flex items-center justify-between">
@@ -553,7 +553,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onOpenAuthModal('login');
                     setProfileOpen(false);
                   }}
-                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 text-white font-bold hover:brightness-110 cursor-pointer"
+                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 text-white font-bold hover:brightness-110 cursor-pointer"
                 >
                   <span className="flex items-center gap-2">
                     <User className="w-4 h-4 text-[#ffd166]" />

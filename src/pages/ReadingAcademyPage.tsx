@@ -46,7 +46,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
     <div className="space-y-10 pb-16 text-right">
       
       {/* Academy Hero */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -78,7 +78,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
             }}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer flex items-center gap-2 ${
               selectedPassageIdx === idx
-                ? 'bg-gradient-to-r from-[#41e7ff] to-[#ffd166] text-[#0c0b20] font-black shadow-lg'
+                ? 'bg-linear-to-r from-[#41e7ff] to-[#ffd166] text-[#0c0b20] font-black shadow-lg'
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
             }`}
           >

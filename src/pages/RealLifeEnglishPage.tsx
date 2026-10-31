@@ -116,7 +116,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
     <div className="space-y-10 pb-16 text-right">
       
       {/* 1. ACADEMY HERO */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ff4f9a]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
@@ -142,7 +142,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 playSound('click');
                 setViewMode(viewMode === 'simulator' ? '3d-world' : 'simulator');
               }}
-              className="px-5 py-3 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
+              className="px-5 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
             >
               <span>{viewMode === 'simulator' ? 'استكشاف العالم ثلاثي الأبعاد 3D 🏛️' : 'العودة للمحاكي التفاعلي 💬'}</span>
             </button>
@@ -177,7 +177,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               }}
               className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer shrink-0 ${
                 activeCategory === cat.id
-                  ? 'bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm'
+                  ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm'
                   : 'bg-white/5 border border-white/10 text-[#b9b6d5] hover:text-white hover:bg-white/10'
               }`}
             >
@@ -194,7 +194,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               onClick={() => handleSelectScenario(sc.id)}
               className={`p-5 rounded-2xl border text-right transition-all cursor-pointer flex flex-col justify-between space-y-3 ${
                 selectedScenarioId === sc.id
-                  ? 'bg-gradient-to-br from-[#ffd166]/20 via-[#41e7ff]/15 to-transparent border-[#ffd166] shadow-xl'
+                  ? 'bg-linear-to-br from-[#ffd166]/20 via-[#41e7ff]/15 to-transparent border-[#ffd166] shadow-xl'
                   : 'glass-panel border-white/10 hover:border-white/25 hover:-translate-y-0.5'
               }`}
             >
@@ -228,7 +228,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               alt={scenario.locationName}
               className="w-full h-full object-cover filter brightness-[0.35]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
 
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <span className="px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166] text-[#0c0b20] shadow-lg flex items-center gap-1.5">
@@ -388,7 +388,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               <button
                 onClick={handleNextTurn}
                 disabled={!selectedOption && !freeTextFeedback}
-                className="px-8 py-3 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all flex items-center gap-2"
+                className="px-8 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all flex items-center gap-2"
               >
                 <span>{currentTurnIdx < scenario.turns.length - 1 ? 'متابعة الحوار ➡️' : 'إنهاء السيناريو وحصد النقاط 🏆'}</span>
               </button>
@@ -426,7 +426,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
             <button
               onClick={() => onNavigate('dashboard')}
-              className="w-full sm:w-auto px-8 py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
+              className="w-full sm:w-auto px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
             >
               العودة للوحة التحكم
             </button>

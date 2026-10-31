@@ -253,7 +253,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
             setCurrentIndex(Math.min(questions.length - 1, currentIndex + 1));
           }}
           disabled={currentIndex === questions.length - 1}
-          className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] disabled:opacity-30 disabled:cursor-not-allowed text-xs sm:text-sm font-black text-[#21132c] hover:brightness-110 shadow-md transition-all cursor-pointer"
+          className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] disabled:opacity-30 disabled:cursor-not-allowed text-xs sm:text-sm font-black text-[#21132c] hover:brightness-110 shadow-md transition-all cursor-pointer"
         >
           <span>السؤال التالي</span>
           <ChevronLeft className="w-4 h-4" />

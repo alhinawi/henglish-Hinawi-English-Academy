@@ -98,7 +98,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
               <h1 className="text-4xl sm:text-6xl 2xl:text-7xl font-black font-['Plus_Jakarta_Sans','Cairo',sans-serif] tracking-tight leading-[1.15]">
                 Master the <br />
-                <span className="bg-gradient-to-r from-[#ffd166] via-[#ff4f9a] to-[#41e7ff] bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-[#ffd166] via-[#ff4f9a] to-[#41e7ff] bg-clip-text text-transparent">
                   Future Perfect
                 </span>{" "}
                 <br />
@@ -118,7 +118,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     playSound("click");
                     onNavigate("lesson", "lesson-1");
                   }}
-                  className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm sm:text-base hover:brightness-110 shadow-[0_8px_25px_rgba(255,156,102,0.3)] transition-all hover:-translate-y-1 cursor-pointer flex items-center gap-2"
+                  className="px-6 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm sm:text-base hover:brightness-110 shadow-[0_8px_25px_rgba(255,156,102,0.3)] transition-all hover:-translate-y-1 cursor-pointer flex items-center gap-2"
                 >
                   <Play className="w-4 h-4 fill-current" />
                   <span>ابدأ الدرس الأول الآن</span>
@@ -188,7 +188,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             {/* Right Visual PC Screen Mockup / 3D Display on Desktop */}
             <div className="lg:col-span-5 relative flex items-center justify-center min-h-[380px] sm:min-h-[460px]">
               {/* Central Glowing 3D Orb & Eagle Logo */}
-              <div className="relative w-72 h-72 sm:w-88 sm:h-88 rounded-full bg-gradient-to-br from-[#171632]/95 via-[#201d43]/90 to-[#0c0b20]/95 border-2 border-[#ffd166]/40 shadow-[0_0_100px_rgba(255,209,102,0.25)] flex flex-col items-center justify-center p-6 text-center select-none overflow-hidden group">
+              <div className="relative w-72 h-72 sm:w-88 sm:h-88 rounded-full bg-linear-to-br from-[#171632]/95 via-[#201d43]/90 to-[#0c0b20]/95 border-2 border-[#ffd166]/40 shadow-[0_0_100px_rgba(255,209,102,0.25)] flex flex-col items-center justify-center p-6 text-center select-none overflow-hidden group">
                 {/* Background glow and rings */}
                 <div className="absolute inset-0 bg-radial from-[#ffd166]/20 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute -inset-6 rounded-full border border-white/15 rotate-12 pointer-events-none" />
@@ -196,7 +196,7 @@ export const HomePage: React.FC<HomePageProps> = ({
 
                 {/* Prominent High-Res Hinawi Eagle Logo */}
                 <div className="relative mb-2 flex items-center justify-center">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#ffd166]/40 via-[#ff4f9a]/30 to-[#41e7ff]/40 blur-xl animate-pulse" />
+                  <div className="absolute inset-0 rounded-full bg-linear-to-r from-[#ffd166]/40 via-[#ff4f9a]/30 to-[#41e7ff]/40 blur-xl animate-pulse" />
                   <img
                     src="/logo-clean.png"
                     alt="Henglish Academy Eagle Logo"
@@ -346,7 +346,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               alt="Hinawi Grammar Academy Lecture Hall"
               className="w-full h-full object-cover filter brightness-[0.22]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0c0b20] via-[#0c0b20]/90 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-r from-[#0c0b20] via-[#0c0b20]/90 to-transparent" />
           </div>
 
           <div className="relative z-10 max-w-3xl space-y-4">
@@ -372,7 +372,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   playSound("click");
                   onNavigate("courses/grammar");
                 }}
-                className="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm sm:text-base hover:brightness-110 shadow-lg transition-transform hover:-translate-y-1 cursor-pointer flex items-center gap-2"
+                className="px-6 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm sm:text-base hover:brightness-110 shadow-lg transition-transform hover:-translate-y-1 cursor-pointer flex items-center gap-2"
               >
                 <span>استكشف الـ ١٦ قاعدة في الأكاديمية الآن</span>
                 <ArrowRight className="w-4 h-4 rotate-180" />
@@ -426,7 +426,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                     alt={lesson.imageAlt || lesson.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent opacity-90" />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent opacity-90" />
                   <span className="absolute top-2.5 right-2.5 px-2.5 py-0.5 rounded-lg text-[10px] font-black bg-[#09091a]/80 backdrop-blur-md text-[#ffd166] border border-white/15">
                     LESSON 0{lesson.number}
                   </span>
@@ -512,7 +512,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                   alt={item.sentence}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#171632] via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent" />
                 <span className="absolute top-3 right-3 px-3 py-1 rounded-xl text-xs font-black bg-[#09091a]/80 backdrop-blur-md text-[#ffd166] border border-white/15">
                   {item.tag}
                 </span>

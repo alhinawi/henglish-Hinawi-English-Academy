@@ -77,7 +77,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
     <div className="space-y-10 pb-16 text-right">
       
       {/* Academy Hero */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 left-10 w-80 h-80 bg-[#9b7bff]/15 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -111,7 +111,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
             }}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer flex items-center gap-2 ${
               selectedTrackIdx === idx
-                ? 'bg-gradient-to-r from-[#9b7bff] to-[#41e7ff] text-white font-black shadow-lg'
+                ? 'bg-linear-to-r from-[#9b7bff] to-[#41e7ff] text-white font-black shadow-lg'
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
             }`}
           >
@@ -153,14 +153,14 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
         </div>
 
         {/* Audio Visualizer & Player Box */}
-        <div className="p-6 rounded-2xl bg-gradient-to-r from-[#09091a] to-[#121128] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="p-6 rounded-2xl bg-linear-to-r from-[#09091a] to-[#121128] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4 w-full sm:w-auto">
             <button
               onClick={handlePlayAudio}
               className={`w-14 h-14 rounded-2xl flex items-center justify-center cursor-pointer transition-transform hover:scale-105 shadow-xl shrink-0 ${
                 isPlaying
                   ? 'bg-[#ff4f9a] text-white animate-pulse'
-                  : 'bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white'
+                  : 'bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white'
               }`}
             >
               {isPlaying ? <Pause className="w-6 h-6 fill-current" /> : <Play className="w-6 h-6 fill-current" />}
@@ -250,7 +250,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
             <button
               onClick={handleCheckDictation}
               disabled={!dictationInput.trim()}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50"
+              className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50"
             >
               فحص الإملاء والتحقق ✅
             </button>

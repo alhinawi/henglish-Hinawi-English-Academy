@@ -111,7 +111,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
     <div className="space-y-10 pb-16 text-right">
       
       {/* Academy Hero Header */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 left-10 w-80 h-80 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -147,7 +147,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
 
             <div className="w-full bg-black/40 h-2.5 rounded-full overflow-hidden border border-white/10">
               <div
-                className="bg-gradient-to-r from-[#ffd166] via-[#41e7ff] to-[#c4ff55] h-full rounded-full transition-all duration-300"
+                className="bg-linear-to-r from-[#ffd166] via-[#41e7ff] to-[#c4ff55] h-full rounded-full transition-all duration-300"
                 style={{ width: `${((currentQIdx + 1) / sessionQuestions.length) * 100}%` }}
               />
             </div>
@@ -209,7 +209,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                   onClick={() => handleSelectOption(optIdx)}
                   className={`p-4 rounded-xl border text-left font-sans text-sm sm:text-base font-bold transition-all cursor-pointer flex items-center justify-between ${
                     isSelected
-                      ? 'bg-gradient-to-r from-[#41e7ff]/25 to-[#ffd166]/15 border-[#41e7ff] text-white shadow-lg'
+                      ? 'bg-linear-to-r from-[#41e7ff]/25 to-[#ffd166]/15 border-[#41e7ff] text-white shadow-lg'
                       : 'bg-white/5 hover:bg-white/10 border-white/10 text-white'
                   }`}
                 >
@@ -240,7 +240,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
             <button
               onClick={handleNext}
               disabled={selectedAnswers[currentQIdx] === undefined}
-              className="px-8 py-3 rounded-2xl bg-gradient-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all"
+              className="px-8 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all"
             >
               {currentQIdx < sessionQuestions.length - 1 ? 'السؤال التالي ➡️' : 'عرض التقرير والنتيجة 🏆'}
             </button>
@@ -260,9 +260,9 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
             </div>
 
             {/* Level Score Card */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] border border-white/15 max-w-lg mx-auto text-center space-y-3 shadow-2xl">
+            <div className="p-8 rounded-3xl bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] border border-white/15 max-w-lg mx-auto text-center space-y-3 shadow-2xl">
               <div className="text-xs text-[#b9b6d5] font-semibold">مستواك المقدر الحالي:</div>
-              <div className="text-5xl sm:text-6xl font-black bg-gradient-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] bg-clip-text text-transparent">
+              <div className="text-5xl sm:text-6xl font-black bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] bg-clip-text text-transparent">
                 {result.estimatedLevel}
               </div>
               <div className="text-base sm:text-lg font-bold text-white">{result.levelTitleAr}</div>
@@ -287,7 +287,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                     </div>
                     <div className="w-full bg-black/40 h-2 rounded-full overflow-hidden">
                       <div
-                        className="bg-gradient-to-r from-[#ffd166] to-[#41e7ff] h-full rounded-full transition-all duration-500"
+                        className="bg-linear-to-r from-[#ffd166] to-[#41e7ff] h-full rounded-full transition-all duration-500"
                         style={{ width: `${stat.percentage}%` }}
                       />
                     </div>
@@ -326,7 +326,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
             </div>
 
             {/* Personalized Recommended Learning Path */}
-            <div className="p-6 rounded-3xl bg-gradient-to-br from-[#ffd166]/10 to-[#41e7ff]/10 border border-[#ffd166]/40 max-w-2xl mx-auto space-y-3">
+            <div className="p-6 rounded-3xl bg-linear-to-br from-[#ffd166]/10 to-[#41e7ff]/10 border border-[#ffd166]/40 max-w-2xl mx-auto space-y-3">
               <div className="flex items-center gap-2 text-xs font-black text-[#ffd166]">
                 <Compass className="w-4 h-4" />
                 <span>المسار التعليمي المخصص لك الآن:</span>
@@ -371,7 +371,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <button
                 onClick={() => onNavigate(result.recommendedPath.startRoute as PageRoute)}
-                className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-xl cursor-pointer"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-xl cursor-pointer"
               >
                 بدء المسار الموصى به الآن 🚀
               </button>

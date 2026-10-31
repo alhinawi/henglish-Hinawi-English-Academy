@@ -175,7 +175,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   return (
     <div className="space-y-10 pb-12 text-right">
       {/* 1. PERSONALIZED WELCOME & CEFR BANNER */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-10 bg-gradient-to-br from-[#171632] via-[#121128] to-[#0c0b20] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-10 bg-linear-to-br from-[#171632] via-[#121128] to-[#0c0b20] shadow-2xl">
         {/* Glow Spheres */}
         <div className="absolute top-0 right-1/4 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -220,7 +220,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
               <div className="w-full h-3 rounded-full bg-white/10 overflow-hidden p-0.5 border border-white/10">
                 <div
-                  className="h-full rounded-full bg-gradient-to-r from-[#ffd166] via-[#ff4f9a] to-[#41e7ff] transition-all duration-1000 shadow-[0_0_12px_rgba(65,231,255,0.4)]"
+                  className="h-full rounded-full bg-linear-to-r from-[#ffd166] via-[#ff4f9a] to-[#41e7ff] transition-all duration-1000 shadow-[0_0_12px_rgba(65,231,255,0.4)]"
                   style={{ width: `${levelProgressPercent}%` }}
                 />
               </div>
@@ -270,7 +270,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 playSound("click");
                 onNavigate("lesson", "lesson-3");
               }}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2 transition-transform hover:scale-[1.02]"
+              className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2 transition-transform hover:scale-[1.02]"
             >
               <Play className="w-4 h-4 fill-current" />
               <span>استكمال الدرس الآن</span>
@@ -322,7 +322,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                         : "border-white/30 text-transparent"
                     }`}
                   >
-                    <CheckCircle2 className="w-4 h-4 stroke-[3]" />
+                    <CheckCircle2 className="w-4 h-4 stroke-3" />
                   </div>
                   <div>
                     <div
@@ -384,7 +384,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                     <div
                       className={`w-full rounded-t-md transition-all duration-700 ${
                         d.isToday
-                          ? "bg-gradient-to-t from-[#41e7ff] to-[#ffd166] shadow-[0_0_10px_rgba(65,231,255,0.4)]"
+                          ? "bg-linear-to-t from-[#41e7ff] to-[#ffd166] shadow-[0_0_10px_rgba(65,231,255,0.4)]"
                           : d.completed
                             ? "bg-[#c4ff55]/80"
                             : "bg-white/10"
@@ -537,7 +537,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 key={b.id}
                 className={`p-3.5 rounded-2xl border text-center transition-all ${
                   b.unlocked
-                    ? "bg-gradient-to-b from-[#ffd166]/10 to-transparent border-[#ffd166]/40 shadow-sm"
+                    ? "bg-linear-to-b from-[#ffd166]/10 to-transparent border-[#ffd166]/40 shadow-sm"
                     : "bg-white/5 border-white/5 opacity-50 grayscale"
                 }`}
               >
@@ -556,7 +556,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         </div>
 
         {/* Practice Lab & Placement Test Promotion */}
-        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-gradient-to-br from-[#1b1939] to-[#121128] border border-white/10 flex flex-col justify-between space-y-6">
+        <div className="lg:col-span-5 rounded-3xl p-6 sm:p-7 bg-linear-to-br from-[#1b1939] to-[#121128] border border-white/10 flex flex-col justify-between space-y-6">
           <div className="space-y-4">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30">
               <Sparkles className="w-3.5 h-3.5" />

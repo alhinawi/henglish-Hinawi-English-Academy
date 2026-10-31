@@ -92,7 +92,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   return (
     <div className="space-y-12 pb-16 text-right max-w-5xl mx-auto">
       {/* 1. HERO HEADER */}
-      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-gradient-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
+      <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
         <div className="max-w-3xl space-y-4">
@@ -143,7 +143,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
             />
             <button
               onClick={handleVerifySearch}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#ffd166] text-[#0c0b20] text-xs font-black hover:brightness-110 shadow-md cursor-pointer shrink-0"
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#ffd166] text-[#0c0b20] text-xs font-black hover:brightness-110 shadow-md cursor-pointer shrink-0"
             >
               تحقق الآن
             </button>
@@ -205,7 +205,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
           </div>
 
           {/* Decorative Certificate Frame */}
-          <div className="relative rounded-3xl bg-gradient-to-br from-[#121128] via-[#1a1738] to-[#0c0b20] p-6 sm:p-12 border-4 border-[#ffd166]/60 shadow-[0_0_50px_rgba(255,209,102,0.15)] text-center space-y-6">
+          <div className="relative rounded-3xl bg-linear-to-br from-[#121128] via-[#1a1738] to-[#0c0b20] p-6 sm:p-12 border-4 border-[#ffd166]/60 shadow-[0_0_50px_rgba(255,209,102,0.15)] text-center space-y-6">
             {/* Corner Decorative Accents */}
             <div className="absolute top-4 left-4 text-xs font-mono text-[#ffd166]/50">
               ✦ ✦ ✦
@@ -222,7 +222,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
 
             {/* Header Logos & Crest */}
             <div className="space-y-2">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#ffd166] to-[#ff9c66] text-3xl shadow-xl">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] text-3xl shadow-xl">
                 🦅
               </div>
               <h2 className="text-xl sm:text-2xl font-black tracking-wider text-[#ffd166] uppercase font-serif">
@@ -352,7 +352,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
                   {isEligible ? (
                     <button
                       onClick={() => handleClaimCertificate(def)}
-                      className="w-full py-2.5 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-md cursor-pointer flex items-center justify-center gap-1.5"
+                      className="w-full py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-md cursor-pointer flex items-center justify-center gap-1.5"
                     >
                       <Sparkles className="w-4 h-4" />
                       <span>إصدار وعرض الشهادة الآن 🎉</span>

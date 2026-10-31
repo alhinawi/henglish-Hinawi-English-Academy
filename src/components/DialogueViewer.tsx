@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
-import { Volume2, Play, CheckCircle2, XCircle, Sparkles, MessageSquare } from 'lucide-react';
+import { playSound, speakEnglishVoice, fireCelebration, getAudioQueuePlayer, stopSpeech } from '../utils/audio';
+import { Volume2, Play, Square, CheckCircle2, XCircle, Sparkles, MessageSquare } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const DialogueViewer: React.FC = () => {
@@ -9,19 +9,34 @@ export const DialogueViewer: React.FC = () => {
   const currentScenario = REAL_LIFE_DIALOGUES[selectedDialogueIndex];
 
   const [isPlayingAll, setIsPlayingAll] = useState(false);
+  const [activeLineIndex, setActiveLineIndex] = useState<number | null>(null);
   const [quizAnswers, setQuizAnswers] = useState<Record<number, number>>({});
 
   const handlePlayAll = async () => {
-    if (isPlayingAll) return;
+    if (isPlayingAll) {
+      // User requested stop
+      getAudioQueuePlayer().stop();
+      setIsPlayingAll(false);
+      setActiveLineIndex(null);
+      return;
+    }
+
     setIsPlayingAll(true);
     playSound('click');
 
-    for (let i = 0; i < currentScenario.lines.length; i++) {
-      speakEnglish(currentScenario.lines[i].en);
-      // Wait for spoken line duration roughly
-      await new Promise(res => setTimeout(res, 3200));
-    }
-    setIsPlayingAll(false);
+    const queueItems = currentScenario.lines.map(line => ({
+      text: line.en,
+      speakerName: line.speaker,
+    }));
+
+    getAudioQueuePlayer().startQueue(
+      queueItems,
+      (idx) => setActiveLineIndex(idx),
+      () => {
+        setIsPlayingAll(false);
+        setActiveLineIndex(null);
+      }
+    );
   };
 
   const handleAnswerQuestion = (qIndex: number, optionIndex: number) => {
@@ -57,11 +72,23 @@ export const DialogueViewer: React.FC = () => {
         {/* Listen All Button */}
         <button
           onClick={handlePlayAll}
-          disabled={isPlayingAll}
-          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg transition-transform hover:-translate-y-0.5 cursor-pointer disabled:opacity-50"
+          className={`inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-black text-xs sm:text-sm shadow-lg transition-transform hover:-translate-y-0.5 cursor-pointer ${
+            isPlayingAll
+              ? 'bg-red-500/80 hover:bg-red-600 text-white'
+              : 'bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white hover:brightness-110'
+          }`}
         >
-          <Play className="w-4 h-4 fill-current" />
-          <span>{isPlayingAll ? 'جاري الاستماع...' : 'استمع للمحادثة كاملة'}</span>
+          {isPlayingAll ? (
+            <>
+              <Square className="w-4 h-4 fill-current" />
+              <span>إيقاف الاستماع</span>
+            </>
+          ) : (
+            <>
+              <Play className="w-4 h-4 fill-current" />
+              <span>استمع للمحادثة كاملة</span>
+            </>
+          )}
         </button>
       </div>
 
@@ -77,7 +104,7 @@ export const DialogueViewer: React.FC = () => {
             }}
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
               selectedDialogueIndex === idx
-                ? 'bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
+                ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
             }`}
           >
@@ -95,7 +122,7 @@ export const DialogueViewer: React.FC = () => {
               alt={currentScenario.title} 
               className="w-full h-full object-cover filter brightness-[0.3]" 
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#09091a] via-[#09091a]/80 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#09091a] via-[#09091a]/80 to-transparent" />
           </div>
         )}
         <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -121,10 +148,16 @@ export const DialogueViewer: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: idx * 0.1 }}
-            className="flex items-start gap-3 sm:gap-4 p-4 rounded-2xl bg-[#171632]/80 border border-white/10 hover:border-white/20 transition-colors"
+            className={`flex items-start gap-3 sm:gap-4 p-4 rounded-2xl transition-all ${
+              activeLineIndex === idx
+                ? 'bg-linear-to-r from-[#ffd166]/20 via-[#171632] to-[#41e7ff]/20 border border-[#ffd166] shadow-xl scale-[1.01]'
+                : 'bg-[#171632]/80 border border-white/10 hover:border-white/20'
+            }`}
           >
             {/* Real Avatar Photo with Emoji fallback */}
-            <div className="w-12 h-12 rounded-2xl overflow-hidden bg-gradient-to-br from-[#9b7bff]/30 to-[#41e7ff]/30 border border-white/20 flex items-center justify-center text-xl shrink-0 shadow-md">
+            <div className={`w-12 h-12 rounded-2xl overflow-hidden border flex items-center justify-center text-xl shrink-0 shadow-md ${
+              activeLineIndex === idx ? 'border-[#ffd166] ring-2 ring-[#ffd166]/50' : 'border-white/20 bg-linear-to-br from-[#9b7bff]/30 to-[#41e7ff]/30'
+            }`}>
               {line.avatarUrl ? (
                 <img src={line.avatarUrl} alt={line.speaker} className="w-full h-full object-cover" />
               ) : (
@@ -135,14 +168,14 @@ export const DialogueViewer: React.FC = () => {
             {/* Bubble Content */}
             <div className="flex-1">
               <div className="flex items-center justify-between mb-1.5">
-                <span className="font-black text-xs sm:text-sm text-[#41e7ff]">
-                  {line.speaker}
+                <span className={`font-black text-xs sm:text-sm ${activeLineIndex === idx ? 'text-[#ffd166]' : 'text-[#41e7ff]'}`}>
+                  {line.speaker} {activeLineIndex === idx && '🔊 (جاري النطق)'}
                 </span>
 
                 <button
                   onClick={() => {
                     playSound('click');
-                    speakEnglish(line.en);
+                    speakEnglishVoice(line.en);
                   }}
                   className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] hover:text-white transition-colors cursor-pointer flex items-center gap-1 text-[11px] font-bold"
                   title="استمع لنطق الجملة"

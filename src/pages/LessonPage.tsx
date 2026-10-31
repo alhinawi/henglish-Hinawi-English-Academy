@@ -94,7 +94,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               alt={currentLesson.imageAlt || currentLesson.title} 
               className="w-full h-full object-cover filter brightness-[0.4]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/90 text-[#21132c] shadow-md">
                 {currentLesson.kicker}
@@ -132,7 +132,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           </p>
 
           {/* Key Takeaway Callout */}
-          <div className="mt-4 p-4 rounded-2xl bg-gradient-to-r from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 flex items-start gap-3">
+          <div className="mt-4 p-4 rounded-2xl bg-linear-to-r from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 flex items-start gap-3">
             <Lightbulb className="w-5 h-5 text-[#ffd166] shrink-0 mt-0.5" />
             <div className="text-sm text-white leading-relaxed">
               <strong className="text-[#ffd166]">الخلاصة الجوهرية: </strong>
@@ -432,7 +432,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           ) : (
             <button
               onClick={handleCompleteLesson}
-              className="px-6 py-3 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all hover:scale-105"
+              className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all hover:scale-105"
             >
               تحديد كدرس مكتمل ✅
             </button>
@@ -462,7 +462,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                 onNavigate('lesson', nextLesson.id);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-md transition-all cursor-pointer flex items-center gap-1.5"
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-md transition-all cursor-pointer flex items-center gap-1.5"
             >
               <span>الدرس التالي (0{nextLesson.number})</span>
               <ChevronLeft className="w-4 h-4" />

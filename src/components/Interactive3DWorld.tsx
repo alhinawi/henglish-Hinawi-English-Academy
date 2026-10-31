@@ -300,7 +300,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             }}
             className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               is3DMode
-                ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black shadow-md'
+                ? 'bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black shadow-md'
                 : 'text-[#b9b6d5] hover:text-white'
             }`}
           >
@@ -313,7 +313,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             }}
             className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               !is3DMode
-                ? 'bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black shadow-md'
+                ? 'bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black shadow-md'
                 : 'text-[#b9b6d5] hover:text-white'
             }`}
           >
@@ -442,7 +442,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                     }
                     onNavigate('real-life');
                   }}
-                  className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
                 >
                   <span>بدء سيناريو المحادثة التفاعلية ⚡</span>
                 </button>
