@@ -68,13 +68,13 @@ function generateAudioCacheKey(text: string, accent: string, gender: string, spe
   return hash.digest('hex');
 }
 
-// Standard Voice ID Mappings
+// Standard Voice ID Mappings from ElevenLabs library
 export const VOICE_PROFILES = {
   elevenlabs: {
-    'US-female': '21m00Tcm4TlvDq8ikWAM', // Rachel
-    'US-male': 'pNInz6obpgDQGcFmaJgB',   // Adam
-    'UK-female': 'ThT5KcBeYPX3keUQqHPh', // Dorothy
-    'UK-male': 'VR6AewLTigWG4xSOukaG',   // Arnold
+    'US-female': 'EXAVITQu4vr4xnSDxMaL', // Sarah (Mature, Reassuring, Confident)
+    'US-male': 'CwhRBWXzGAHq8TQ4Fs17',   // Roger (Laid-Back, Casual, Resonant)
+    'UK-female': 'Xb7hH8MSUJpSbSDYk0k2', // Alice (Clear, Engaging Educator)
+    'UK-male': 'JBFqnCBsd6RMkjVDRZzb',   // George (Warm, Captivating Storyteller)
   },
   'google-cloud': {
     'US-female': 'en-US-Neural2-F',
@@ -94,6 +94,7 @@ export const VOICE_PROFILES = {
  * Synthesize speech via configured server provider with caching
  */
 export async function synthesizeSpeech(req: TtsSynthesisRequest): Promise<TtsSynthesisResponse> {
+  loadEnvFile();
   const env = process.env;
   const speed = req.speed || 1.0;
   const keyType = `${req.accent}-${req.gender}` as const;
@@ -141,7 +142,7 @@ export async function synthesizeSpeech(req: TtsSynthesisRequest): Promise<TtsSyn
         },
         body: JSON.stringify({
           text: req.text,
-          model_id: 'eleven_turbo_v2_5',
+          model_id: 'eleven_multilingual_v2',
           voice_settings: {
             stability: 0.5,
             similarity_boost: 0.75,
