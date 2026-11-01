@@ -47,6 +47,7 @@ interface HeaderProps {
   onMarkAllNotificationsRead: () => void;
   onToggleRole: () => void;
   onResetProgress: () => void;
+  onSignOut?: () => void;
   authSessionType?: 'guest' | 'demo' | 'authenticated';
 }
 
@@ -68,6 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
   onMarkAllNotificationsRead,
   onToggleRole,
   onResetProgress,
+  onSignOut,
   authSessionType = 'authenticated',
 }) => {
   const [grammarMenuOpen, setGrammarMenuOpen] = useState(false);
@@ -617,19 +619,19 @@ export const Header: React.FC<HeaderProps> = ({
                   </span>
                 </button>
 
-                <button
-                  onClick={() => {
-                    if (confirm('هل أنت متأكد من رغبتك في إعادة ضبط بيانات التقدم التجريبية؟')) {
+                {onSignOut && (
+                  <button
+                    onClick={() => {
                       playSound('click');
-                      onResetProgress();
                       setProfileOpen(false);
-                    }
-                  }}
-                  className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#ff8bb9] hover:bg-[#ff4f9a]/10 transition-colors cursor-pointer"
-                >
-                  <RotateCcw className="w-4 h-4 text-[#ff4f9a]" />
-                  <span>إعادة تعيين التقدم التجريبي</span>
-                </button>
+                      onSignOut();
+                    }}
+                    className="w-full flex items-center gap-2.5 p-2 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20 font-bold"
+                  >
+                    <LogOut className="w-4 h-4 text-red-400" />
+                    <span>تسجيل الخروج من الحساب</span>
+                  </button>
+                )}
               </div>
             </div>
           )}

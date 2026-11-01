@@ -58,10 +58,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
     setIsSubmitting(true);
     try {
-      const session = await signInUser(email);
-      playSound('correct');
-      onSessionChange(session);
-      onClose();
+      const res = await signInUser(email, password);
+      if (res.success && res.session) {
+        playSound('correct');
+        onSessionChange(res.session);
+        onClose();
+      } else {
+        setFeedbackMsg({ type: 'error', text: res.error || 'فشل تسجيل الدخول. يرجى التحقق من البيانات.' });
+      }
     } catch {
       setFeedbackMsg({ type: 'error', text: 'فشل تسجيل الدخول. يرجى التحقق من البيانات.' });
     } finally {
@@ -78,11 +82,15 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
     setIsSubmitting(true);
     try {
-      const session = await signUpUser(email, fullName);
-      playSound('correct');
-      fireCelebration();
-      onSessionChange(session);
-      onClose();
+      const res = await signUpUser({ email, password, fullName });
+      if (res.success && res.session) {
+        playSound('correct');
+        fireCelebration();
+        onSessionChange(res.session);
+        onClose();
+      } else {
+        setFeedbackMsg({ type: 'error', text: res.error || 'حدث خطأ أثناء إنشاء الحساب.' });
+      }
     } catch {
       setFeedbackMsg({ type: 'error', text: 'حدث خطأ أثناء إنشاء الحساب.' });
     } finally {

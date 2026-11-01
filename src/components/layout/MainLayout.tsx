@@ -18,6 +18,7 @@ interface MainLayoutProps {
   onMarkAllNotificationsRead: () => void;
   onToggleRole: () => void;
   onResetProgress: () => void;
+  onSignOut?: () => void;
   authSessionType?: 'guest' | 'demo' | 'authenticated';
   children: React.ReactNode;
 }
@@ -36,6 +37,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   onMarkAllNotificationsRead,
   onToggleRole,
   onResetProgress,
+  onSignOut,
   authSessionType = 'authenticated',
   children,
 }) => {
@@ -101,6 +103,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
           onMarkAllNotificationsRead={onMarkAllNotificationsRead}
           onToggleRole={onToggleRole}
           onResetProgress={onResetProgress}
+          onSignOut={onSignOut}
           authSessionType={authSessionType}
         />
 

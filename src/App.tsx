@@ -5,10 +5,18 @@ import { GlobalSearchModal } from './components/GlobalSearchModal';
 import { VoiceSettingsModal } from './components/VoiceSettingsModal';
 import { AuthModal } from './components/AuthModal';
 import { useProgress } from './utils/useProgress';
-import { getSavedAuthSession, AuthSessionState } from './services/authService';
+import { useAuth } from './context/AuthContext';
+
+// Auth Pages
+import { LoginPage } from './pages/auth/LoginPage';
+import { RegisterPage } from './pages/auth/RegisterPage';
+import { VerifyEmailPage } from './pages/auth/VerifyEmailPage';
+import { ForgotPasswordPage } from './pages/auth/ForgotPasswordPage';
+import { ResetPasswordPage } from './pages/auth/ResetPasswordPage';
 
 // Academies & Platform Pages
 import { DashboardPage } from './pages/DashboardPage';
+import { TeacherDashboardPage } from './pages/TeacherDashboardPage';
 import { GrammarAcademyPage } from './pages/GrammarAcademyPage';
 import { GrammarLessonPage } from './pages/GrammarLessonPage';
 import { VocabularyAcademyPage } from './pages/VocabularyAcademyPage';
@@ -39,16 +47,27 @@ import { MovieStudioPage } from './pages/MovieStudioPage';
 import { TranslationStudioPage } from './pages/TranslationStudioPage';
 
 import { AnimatePresence, motion } from 'framer-motion';
+import { Sparkles, ArrowRight, ShieldAlert } from 'lucide-react';
 
 export const App: React.FC = () => {
-  const [currentRoute, setCurrentRoute] = useState<PageRoute>('dashboard');
+  const { 
+    session, 
+    user: authUser, 
+    role: authRole, 
+    isAuthenticated, 
+    isGuest, 
+    isDemo, 
+    logout 
+  } = useAuth();
+
+  const [currentRoute, setCurrentRoute] = useState<PageRoute>('login');
   const [activeLessonId, setActiveLessonId] = useState<string>('lesson-1');
   const [activeGrammarRuleId, setActiveGrammarRuleId] = useState<string>('present-simple');
+  const [verifyEmailParam, setVerifyEmailParam] = useState<string>('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authModalTab, setAuthModalTab] = useState<'login' | 'register' | 'demo' | 'migrate'>('login');
-  const [authSession, setAuthSession] = useState<AuthSessionState>(() => getSavedAuthSession());
 
   const {
     progress,
@@ -70,17 +89,59 @@ export const App: React.FC = () => {
     resetAllProgress,
     completionPercentage,
     badges,
-  } = useProgress();
+  } = useProgress(authUser?.id);
 
-  // Active profile from auth session or progress
-  const activeProfile = authSession.user || userProfile;
+  // Active profile from auth session or fallback
+  const activeProfile = authUser || userProfile;
 
-  // Sync route with URL hash for deep-linking & browser back/forward buttons
+  // Sync route with URL hash
   useEffect(() => {
     const handleHashChange = () => {
-      const hash = window.location.hash.replace('#', '').trim();
+      const fullHash = window.location.hash.replace('#', '').trim();
+      const [hash, queryString] = fullHash.split('?');
+
+      // Check query params for verify-email
+      if (queryString) {
+        const params = new URLSearchParams(queryString);
+        const email = params.get('email');
+        if (email) setVerifyEmailParam(email);
+      }
+
+      // 1. Explicit Auth routes
+      if (hash === 'login') {
+        setCurrentRoute('login');
+        return;
+      }
+      if (hash === 'register') {
+        setCurrentRoute('register');
+        return;
+      }
+      if (hash === 'verify-email') {
+        setCurrentRoute('verify-email');
+        return;
+      }
+      if (hash === 'forgot-password') {
+        setCurrentRoute('forgot-password');
+        return;
+      }
+      if (hash === 'reset-password') {
+        setCurrentRoute('reset-password');
+        return;
+      }
+
+      // 2. Unauthenticated root route handler:
+      // If user is neither authenticated, nor demo, nor active guest: default to 'login'
+      const hasActiveSession = session.isLoggedIn || session.type === 'guest' || session.type === 'demo';
+      if (!hasActiveSession && (!hash || hash === 'dashboard' || hash === 'home')) {
+        setCurrentRoute('login');
+        return;
+      }
+
+      // 3. Platform Routes
       if (!hash || hash === 'dashboard' || hash === 'home') {
         setCurrentRoute('dashboard');
+      } else if (hash === 'teacher-dashboard') {
+        setCurrentRoute('teacher-dashboard');
       } else if (hash.startsWith('grammar/')) {
         setCurrentRoute('grammar-lesson');
         setActiveGrammarRuleId(hash.replace('grammar/', ''));
@@ -119,7 +180,7 @@ export const App: React.FC = () => {
         setCurrentRoute('practice');
       } else if (hash === 'my-learning' || hash === 'progress') {
         setCurrentRoute('my-learning');
-      } else if (hash === 'admin' || hash === 'teacher') {
+      } else if (hash === 'admin') {
         setCurrentRoute('admin');
       } else if (hash === 'quizzes') {
         setCurrentRoute('quizzes');
@@ -142,23 +203,25 @@ export const App: React.FC = () => {
     handleHashChange(); // Run once on mount
 
     return () => window.removeEventListener('hashchange', handleHashChange);
-  }, []);
+  }, [session]);
 
-  const handleNavigate = (route: PageRoute, targetId?: string) => {
-    setCurrentRoute(route);
-    if (route === 'grammar-lesson' && targetId) {
+  const handleNavigate = (route: PageRoute | string, targetId?: string) => {
+    const castRoute = route as PageRoute;
+    setCurrentRoute(castRoute);
+
+    if (castRoute === 'grammar-lesson' && targetId) {
       setActiveGrammarRuleId(targetId);
       window.location.hash = `grammar/${targetId}`;
-    } else if (route === 'lesson' && targetId) {
+    } else if (castRoute === 'lesson' && targetId) {
       setActiveLessonId(targetId);
       window.location.hash = targetId;
     } else {
-      if (route === 'dashboard' || route === 'home') {
-        window.location.hash = '';
-      } else if (route === 'courses/grammar/future-perfect') {
+      if (castRoute === 'dashboard' || castRoute === 'home') {
+        window.location.hash = 'dashboard';
+      } else if (castRoute === 'courses/grammar/future-perfect') {
         window.location.hash = 'future-perfect';
       } else {
-        window.location.hash = route;
+        window.location.hash = castRoute;
       }
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -181,8 +244,49 @@ export const App: React.FC = () => {
     setIsAuthModalOpen(true);
   };
 
+  // -------------------------------------------------------------
+  // RENDER DEDICATED AUTH PAGES
+  // -------------------------------------------------------------
+  if (currentRoute === 'login') {
+    return <LoginPage onNavigate={handleNavigate} />;
+  }
+  if (currentRoute === 'register') {
+    return <RegisterPage onNavigate={handleNavigate} />;
+  }
+  if (currentRoute === 'verify-email') {
+    return <VerifyEmailPage onNavigate={handleNavigate} defaultEmail={verifyEmailParam} />;
+  }
+  if (currentRoute === 'forgot-password') {
+    return <ForgotPasswordPage onNavigate={handleNavigate} />;
+  }
+  if (currentRoute === 'reset-password') {
+    return <ResetPasswordPage onNavigate={handleNavigate} />;
+  }
+
+  // -------------------------------------------------------------
+  // RBAC GUARD FOR ADMIN CONTROL PANEL
+  // -------------------------------------------------------------
+  const isAdminBlocked = currentRoute === 'admin' && authRole !== 'admin';
+
   return (
     <>
+      {/* Guest Mode Persistence Alert Banner */}
+      {isGuest && (
+        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-slate-950 px-4 py-2 text-xs font-bold flex items-center justify-between sticky top-0 z-[60] shadow-md" dir="rtl">
+          <div className="flex items-center gap-2">
+            <Sparkles className="w-4 h-4 shrink-0" />
+            <span>أنت تتصفح الأكاديمية كزائر (Guest Mode) — لن يتم حفظ إنجازاتك ونقاطك بشكل دائم إلا بعد تسجيل حساب.</span>
+          </div>
+          <button
+            onClick={() => handleNavigate('register')}
+            className="px-3 py-1 bg-slate-950 text-white rounded-lg hover:bg-slate-900 transition-colors shrink-0 flex items-center gap-1"
+          >
+            <span>إنشاء حساب لحفظ التقدم</span>
+            <ArrowRight className="w-3.5 h-3.5 rotate-180" />
+          </button>
+        </div>
+      )}
+
       <MainLayout
         currentRoute={currentRoute}
         activeLessonId={activeLessonId}
@@ -197,7 +301,8 @@ export const App: React.FC = () => {
         onMarkAllNotificationsRead={markAllNotificationsRead}
         onToggleRole={toggleUserRole}
         onResetProgress={resetAllProgress}
-        authSessionType={authSession.type}
+        onSignOut={logout}
+        authSessionType={session.type}
       >
         <AnimatePresence mode="wait">
           <motion.div
@@ -213,180 +318,197 @@ export const App: React.FC = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2, ease: 'easeInOut' }}
           >
-            {/* 1. Central Dashboard */}
-            {(currentRoute === 'dashboard' || currentRoute === 'home') && (
-              <DashboardPage
-                onNavigate={handleNavigate}
-                userProfile={activeProfile}
-                progress={progress}
-                badges={badges}
-                onToggleGoal={toggleDailyGoal}
-              />
-            )}
+            {/* RBAC Block View for non-admins */}
+            {isAdminBlocked ? (
+              <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8 bg-slate-900/60 border border-red-500/30 rounded-3xl backdrop-blur-xl" dir="rtl">
+                <div className="w-16 h-16 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center mb-4">
+                  <ShieldAlert className="w-8 h-8" />
+                </div>
+                <h2 className="text-xl font-bold text-white mb-2">منطقة محمية - الدخول مقيّد</h2>
+                <p className="text-xs text-slate-400 max-w-md mb-6 leading-relaxed">
+                  لوحة التحكم الإدارية مخصصة فقط للمدراء والمشرفين المعتمدين. ليس لديك الصلاحيات الكافية لعرض هذه الصفحة.
+                </p>
+                <button
+                  onClick={() => handleNavigate(authRole === 'teacher' ? 'teacher-dashboard' : 'dashboard')}
+                  className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-semibold transition-colors"
+                >
+                  العودة إلى لوحة التعلم المعتمدة
+                </button>
+              </div>
+            ) : (
+              <>
+                {/* 1. Central Dashboard */}
+                {(currentRoute === 'dashboard' || currentRoute === 'home') && (
+                  <DashboardPage
+                    onNavigate={handleNavigate}
+                    userProfile={activeProfile}
+                    progress={progress}
+                    badges={badges}
+                    onToggleGoal={toggleDailyGoal}
+                  />
+                )}
 
-            {/* 2. Grammar Academy Home */}
-            {(currentRoute === 'grammar' || currentRoute === 'courses/grammar') && (
-              <GrammarAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 1.1 Teacher Dashboard */}
+                {currentRoute === 'teacher-dashboard' && (
+                  <TeacherDashboardPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 3. Dedicated Full-Length Grammar Lesson Page */}
-            {currentRoute === 'grammar-lesson' && (
-              <GrammarLessonPage
-                ruleId={activeGrammarRuleId}
-                onNavigate={handleNavigate}
-                onMarkComplete={(rId) => markLessonComplete(`rule-${rId}`)}
-                isCompleted={progress.completedLessons.includes(`rule-${activeGrammarRuleId}`)}
-              />
-            )}
+                {/* 2. Grammar Academy Home */}
+                {(currentRoute === 'grammar' || currentRoute === 'courses/grammar') && (
+                  <GrammarAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 4. Flagship Course: Future Perfect */}
-            {currentRoute === 'courses/grammar/future-perfect' && (
-              <CourseOverviewPage
-                onNavigate={handleNavigate}
-                completionPercentage={completionPercentage}
-              />
-            )}
+                {/* 3. Dedicated Full-Length Grammar Lesson Page */}
+                {currentRoute === 'grammar-lesson' && (
+                  <GrammarLessonPage
+                    ruleId={activeGrammarRuleId}
+                    onNavigate={handleNavigate}
+                    onMarkComplete={(rId) => markLessonComplete(`rule-${rId}`)}
+                    isCompleted={progress.completedLessons.includes(`rule-${activeGrammarRuleId}`)}
+                  />
+                )}
 
-            {/* 5. Universal Lesson Viewer (Future Perfect 10 Modules) */}
-            {currentRoute === 'lesson' && (
-              <LessonPage
-                lessonId={activeLessonId}
-                onNavigate={handleNavigate}
-                onMarkComplete={markLessonComplete}
-                isCompleted={progress.completedLessons.includes(activeLessonId)}
-              />
-            )}
+                {/* 4. Flagship Course: Future Perfect */}
+                {currentRoute === 'courses/grammar/future-perfect' && (
+                  <CourseOverviewPage
+                    onNavigate={handleNavigate}
+                    completionPercentage={completionPercentage}
+                  />
+                )}
 
-            {/* 6. AI English Tutor Agent */}
-            {currentRoute === 'ai-tutor' && (
-              <AiTutorPage
-                onNavigate={handleNavigate}
-                userProfile={activeProfile}
-                progress={progress}
-                onOpenVoiceSettings={() => setIsVoiceModalOpen(true)}
-              />
-            )}
+                {/* 5. Universal Lesson Viewer (Future Perfect 10 Modules) */}
+                {currentRoute === 'lesson' && (
+                  <LessonPage
+                    lessonId={activeLessonId}
+                    onNavigate={handleNavigate}
+                    onMarkComplete={(lId: string) => markLessonComplete(lId)}
+                    isCompleted={progress.completedLessons.includes(activeLessonId)}
+                  />
+                )}
 
-            {/* 7. Interactive 3D Campus World */}
-            {currentRoute === 'world-3d' && (
-              <Interactive3DWorld
-                onNavigate={handleNavigate}
-                onSelectScenario={() => handleNavigate('real-life')}
-              />
-            )}
+                {/* 6. Courses Catalog */}
+                {currentRoute === 'courses' && (
+                  <CoursesPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 8. Certificates & Public Verification */}
-            {currentRoute === 'certificates' && (
-              <CertificatesPage
-                onNavigate={handleNavigate}
-                userProfile={activeProfile}
-                completedLessonsCount={progress.completedLessons.length}
-              />
-            )}
+                {/* 7. Vocabulary Academy */}
+                {currentRoute === 'vocabulary' && (
+                  <VocabularyAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 9. Vocabulary Academy */}
-            {currentRoute === 'vocabulary' && (
-              <VocabularyAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 8. Speaking Academy */}
+                {currentRoute === 'speaking' && (
+                  <SpeakingAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 10. Speaking Academy */}
-            {currentRoute === 'speaking' && (
-              <SpeakingAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 9. Listening Academy */}
+                {currentRoute === 'listening' && (
+                  <ListeningAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 11. Listening Academy */}
-            {currentRoute === 'listening' && (
-              <ListeningAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 10. Reading Academy */}
+                {currentRoute === 'reading' && (
+                  <ReadingAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 12. Reading Academy */}
-            {currentRoute === 'reading' && (
-              <ReadingAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 11. Writing Academy */}
+                {currentRoute === 'writing' && (
+                  <WritingAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 13. Writing Academy */}
-            {currentRoute === 'writing' && (
-              <WritingAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 12. Pronunciation & Phonetics Academy */}
+                {currentRoute === 'pronunciation' && (
+                  <PronunciationAcademyPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 14. Pronunciation Academy */}
-            {currentRoute === 'pronunciation' && (
-              <PronunciationAcademyPage onNavigate={handleNavigate} />
-            )}
+                {/* 13. Real Life English Simulation */}
+                {currentRoute === 'real-life' && (
+                  <RealLifeEnglishPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 15. Real-Life English Simulator */}
-            {currentRoute === 'real-life' && (
-              <RealLifeEnglishPage onNavigate={handleNavigate} />
-            )}
+                {/* 14. Exams & Level Placement */}
+                {currentRoute === 'exams' && (
+                  <ExamsAssessmentPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 16. Exams & Adaptive Placement Test */}
-            {currentRoute === 'exams' && (
-              <ExamsAssessmentPage
-                onNavigate={handleNavigate}
-                onRecordScore={recordQuizScore}
-              />
-            )}
+                {/* 15. Practice Lab */}
+                {currentRoute === 'practice' && (
+                  <PracticePage />
+                )}
 
-            {/* 17. Practice Lab */}
-            {currentRoute === 'practice' && (
-              <PracticePage />
-            )}
+                {/* 16. My Learning, Notes & Bookmarks */}
+                {currentRoute === 'my-learning' && (
+                  <MyLearningPage
+                    progress={progress}
+                    userProfile={activeProfile}
+                    onNavigate={handleNavigate}
+                    onDeleteNote={deletePersonalNote}
+                    badges={badges}
+                    completionPercentage={completionPercentage}
+                  />
+                )}
 
-            {/* 18. My Learning Space */}
-            {(currentRoute === 'my-learning' || currentRoute === 'progress') && (
-              <MyLearningPage
-                onNavigate={handleNavigate}
-                userProfile={activeProfile}
-                progress={progress}
-                badges={badges}
-                onDeleteNote={deletePersonalNote}
-                completionPercentage={completionPercentage}
-              />
-            )}
+                {/* 17. Admin & Teacher Studio */}
+                {currentRoute === 'admin' && (
+                  <AdminDashboardPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 19. Teacher Studio & Administration */}
-            {currentRoute === 'admin' && (
-              <AdminDashboardPage onNavigate={handleNavigate} />
-            )}
+                {/* 18. Quizzes & Tests Lab */}
+                {currentRoute === 'quizzes' && (
+                  <QuizzesPage onRecordScore={recordQuizScore} />
+                )}
 
-            {/* 20. Courses Catalog */}
-            {currentRoute === 'courses' && (
-              <CoursesPage onNavigate={handleNavigate} />
-            )}
+                {/* 19. Games & Interactive Practice */}
+                {currentRoute === 'games' && (
+                  <GamesPage />
+                )}
 
-            {/* 21. Quizzes Hub */}
-            {currentRoute === 'quizzes' && (
-              <QuizzesPage onRecordScore={recordQuizScore} />
-            )}
+                {/* 20. Resources & Cheat Sheets */}
+                {currentRoute === 'resources' && (
+                  <ResourcesPage />
+                )}
 
-            {/* 22. Games Arena */}
-            {currentRoute === 'games' && (
-              <GamesPage />
-            )}
+                {/* 21. About Academy & Methodology */}
+                {currentRoute === 'about' && (
+                  <AboutPage />
+                )}
 
-            {/* 23. Resources Hub */}
-            {currentRoute === 'resources' && (
-              <ResourcesPage />
-            )}
+                {/* 22. AI English Tutor Agent */}
+                {currentRoute === 'ai-tutor' && (
+                  <AiTutorPage onNavigate={handleNavigate} userProfile={activeProfile} />
+                )}
 
-            {/* 24. About Academy */}
-            {currentRoute === 'about' && (
-              <AboutPage />
-            )}
+                {/* 23. 3D Virtual Academy World */}
+                {currentRoute === 'world-3d' && (
+                  <div className="space-y-6">
+                    <Interactive3DWorld onNavigate={handleNavigate} />
+                  </div>
+                )}
 
-            {/* 25. 5,500 Essential English Sentences Library */}
-            {currentRoute === 'sentences' && (
-              <SentencesLibraryPage onNavigate={handleNavigate} />
-            )}
+                {/* 24. Official Certificates System */}
+                {currentRoute === 'certificates' && (
+                  <CertificatesPage
+                    onNavigate={handleNavigate}
+                    userProfile={activeProfile}
+                    completedLessonsCount={progress.completedLessons.length}
+                  />
+                )}
 
-            {/* 26. Learn English Through Movies Studio */}
-            {currentRoute === 'movies' && (
-              <MovieStudioPage onNavigate={handleNavigate} />
-            )}
+                {/* 25. Complete 5,500 Sentences Library */}
+                {currentRoute === 'sentences' && (
+                  <SentencesLibraryPage onNavigate={handleNavigate} />
+                )}
 
-            {/* 27. Complete AI Translation Studio */}
-            {currentRoute === 'translation' && (
-              <TranslationStudioPage userProfile={activeProfile} />
+                {/* 26. Learn English Through Movies Studio */}
+                {currentRoute === 'movies' && (
+                  <MovieStudioPage onNavigate={handleNavigate} />
+                )}
+
+                {/* 27. Complete AI Translation Studio */}
+                {currentRoute === 'translation' && (
+                  <TranslationStudioPage userProfile={activeProfile} />
+                )}
+              </>
             )}
           </motion.div>
         </AnimatePresence>
@@ -410,7 +532,7 @@ export const App: React.FC = () => {
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         initialTab={authModalTab}
-        onSessionChange={(newSession) => setAuthSession(newSession)}
+        onSessionChange={() => {}}
       />
     </>
   );

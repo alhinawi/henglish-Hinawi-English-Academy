@@ -1,6 +1,12 @@
 export type PageRoute = 
+  | 'login'
+  | 'register'
+  | 'verify-email'
+  | 'forgot-password'
+  | 'reset-password'
   | 'dashboard'
   | 'home'
+  | 'teacher-dashboard'
   | 'courses'
   | 'grammar'
   | 'courses/grammar'

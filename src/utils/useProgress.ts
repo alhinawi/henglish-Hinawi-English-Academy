@@ -9,6 +9,12 @@ import {
   BookmarkItem,
   CEFRLevel,
 } from "../types";
+import { 
+  loadUserProgressFromDatabase, 
+  saveUserProgressToDatabase, 
+  migrateLocalProgressToSupabase,
+  PersistentProgressPayload 
+} from "../services/progressSyncService";
 
 const STORAGE_KEY = "hinawi_english_progress_v2";
 const USER_PROFILE_KEY = "hinawi_english_user_v2";
@@ -167,7 +173,7 @@ const DEFAULT_PROGRESS: UserProgressState = {
   level: "B1",
 };
 
-export function useProgress() {
+export function useProgress(activeUserId?: string) {
   // User Profile state
   const [userProfile, setUserProfile] = useState<UserProfile>(() => {
     if (typeof window === "undefined") return DEFAULT_STUDENT_PROFILE;
@@ -228,6 +234,66 @@ export function useProgress() {
       // Ignore
     }
   }, [notifications]);
+
+  // Database Synchronization on authenticated login
+  useEffect(() => {
+    if (!activeUserId || activeUserId.startsWith('guest-') || activeUserId.startsWith('demo-')) {
+      return;
+    }
+
+    let isMounted = true;
+    async function syncDb() {
+      if (!activeUserId) return;
+      const dbData = await loadUserProgressFromDatabase(activeUserId);
+      if (dbData && isMounted) {
+        setProgress(prev => ({
+          ...prev,
+          xp: Math.max(prev.xp || 0, dbData.totalXp || 0),
+          level: (dbData.currentLevel as CEFRLevel) || prev.level,
+          studyStreakDays: Math.max(prev.studyStreakDays || 1, dbData.streakDays || 1),
+          completedLessons: Array.from(new Set([...prev.completedLessons, ...dbData.completedLessons])),
+          quizScores: { ...prev.quizScores, ...(dbData.quizScores as any) },
+        }));
+      } else {
+        // First login: migrate local progress to database
+        migrateLocalProgressToSupabase(activeUserId, progress);
+      }
+    }
+
+    syncDb();
+    return () => { isMounted = false; };
+  }, [activeUserId]);
+
+  // Sync back to database when progress updates for authenticated user
+  useEffect(() => {
+    if (!activeUserId || activeUserId.startsWith('guest-') || activeUserId.startsWith('demo-')) {
+      return;
+    }
+
+    const quizMap: Record<string, number> = {};
+    if (progress.quizScores) {
+      Object.entries(progress.quizScores).forEach(([k, v]) => {
+        if (typeof v === 'number') {
+          quizMap[k] = v;
+        } else if (v && typeof v === 'object' && 'score' in v && 'total' in v && (v as any).total > 0) {
+          quizMap[k] = Math.round(((v as any).score / (v as any).total) * 100);
+        }
+      });
+    }
+
+    const payload: PersistentProgressPayload = {
+      totalXp: progress.xp || 0,
+      currentLevel: progress.level || 'A1',
+      targetLevel: 'B2',
+      streakDays: progress.studyStreakDays || 1,
+      completedLessons: progress.completedLessons || [],
+      completedRules: [],
+      quizScores: quizMap,
+      dailyGoalCompleted: progress.dailyGoals ? progress.dailyGoals.every(g => g.completed) : false,
+    };
+
+    saveUserProgressToDatabase(activeUserId, payload);
+  }, [progress, activeUserId]);
 
   // Switch role between student and teacher/admin
   const toggleUserRole = () => {

@@ -321,14 +321,30 @@ export const Sidebar: React.FC<SidebarProps> = ({
     {
       groupTitle: 'الإدارة الأكاديمية',
       items: [
-        {
-          label: 'لوحة المعلم والمحتوى',
-          labelEn: 'Teacher / Content Studio',
-          route: 'admin',
-          icon: ShieldCheck,
-          badge: userRole === 'student' ? 'معلم' : 'نشط',
-          adminOnly: false,
-        },
+        ...(userRole === 'teacher' || userRole === 'admin'
+          ? [
+              {
+                label: 'لوحة المعلم الأكاديمي 👨‍🏫',
+                labelEn: 'Teacher Dashboard',
+                route: 'teacher-dashboard' as PageRoute,
+                icon: GraduationCap,
+                badge: 'معلم',
+                adminOnly: false,
+              },
+            ]
+          : []),
+        ...(userRole === 'admin'
+          ? [
+              {
+                label: 'لوحة التحكم الإدارية 🛡️',
+                labelEn: 'Admin Control Panel',
+                route: 'admin' as PageRoute,
+                icon: ShieldCheck,
+                badge: 'Admin',
+                adminOnly: true,
+              },
+            ]
+          : []),
       ],
     },
   ];
