@@ -17,7 +17,7 @@ export interface GrammarQuizQuestion {
 export interface GrammarRuleItem {
   id: string;
   order: number;
-  category: 'أزمنة المضارع' | 'أزمنة الماضي' | 'أزمنة المستقبل' | 'حالات الشرط' | 'المبني للمجهول والتركيب';
+  category: 'أزمنة المضارع' | 'أزمنة الماضي' | 'أزمنة المستقبل' | 'حالات الشرط' | 'المبني للمجهول والتركيب' | 'الأساسيات والتركيب اللغوي';
   categoryEn: string;
   titleAr: string;
   titleEn: string;
@@ -889,6 +889,243 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         options: ['whose', 'who', 'which', 'where'],
         correct: 0,
         explanation: 'العرض التقديمي ملك للشركة الناشئة، لذلك نستخدم ضمير الملكية whose.'
+      }
+    ]
+  },
+
+  // ==========================================
+  // 6. FOUNDATIONS & ADVANCED SYNTAX (الأساسيات والتركيب اللغوي)
+  // ==========================================
+  {
+    id: 'parts-of-speech',
+    order: 17,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Grammar Foundations',
+    titleAr: 'أقسام الكلام الثمانية وتشريح الجملة الإنجليزية',
+    titleEn: 'The 8 Parts of Speech & Sentence Anatomy',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'Subject + Verb + Object / Complement (S + V + O)',
+    negativeFormula: 'Subject + Auxiliary + Not + Main Verb',
+    questionFormula: '(Question Word) + Auxiliary + Subject + Main Verb?',
+    summaryAr: 'كل كلمة باللغة الإنجليزية تنتمي لواحد من أقسام الكلام الثمانية: الاسم، الضمير، الفعل، الصفة، الظرف، حرف الجر، الرابط، وأداة التعجب. فهم وظيفة كل كلمة هو حجر الأساس لبناء جملة صحيحة بدون أخطاء.',
+    timelineDescription: 'البنية الهيكلية الثابتة للجملة في الإنجليزية.',
+    imageUrl: ONLINE_IMAGES.modernClassroom,
+    imageAlt: 'Grammar board and structured language foundations lecture',
+    keyUsagePoints: [
+      'الاسم والضمير (Nouns & Pronouns): يمثلان الفاعل أو المفعول به في الجملة.',
+      'الفعل (Verbs): قلب الجملة النابض ومحدد زمن الحدث.',
+      'الصفة (Adjectives): تصف الاسم وتأتي قبله دائماً في الإنجليزية (a brilliant engineer).',
+      'الظرف (Adverbs): يصف الفعل أو الصفة أو ظرفاً آخر وغالباً ينتهي بـ -ly (spoke fluently).'
+    ],
+    egyptianTips: [
+      'في العربي الصفة بتيجي بعد الموصوف (مهندس شاطر)، لكن في الإنجليزي العكس تماماً: الصفة بتيجي الأول (a clever engineer).',
+      'مستحيل في الإنجليزية جملة بدون فعل! جملة زي "هو طبيب" في العربي لازم في الإنجليزي يبقى فيها فعل كينونة: He is a doctor.'
+    ],
+    commonTraps: [
+      'فخ الجملة بدون فعل: الخطأ He doctor، الصواب: He is a doctor.',
+      'فخ موقع الصفة الخاطئ: الخطأ He bought a car red، الصواب: He bought a red car.'
+    ],
+    examples: [
+      {
+        en: 'The diligent developer rapidly resolved the critical database error.',
+        ar: 'قام المطور المجتهد بحل خطأ قاعدة البيانات الحرج بسرعة فائقة.',
+        highlight: 'diligent ... rapidly resolved',
+        context: 'تطبيق عملي: صفة + فاعل + ظرف + فعل ماضٍ + مفعول'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'In the sentence "The team worked extraordinarily hard", the word "extraordinarily" functions as a/an ______.',
+        options: ['adverb (ظرف)', 'adjective (صفة)', 'verb (فعل)', 'noun (اسم)'],
+        correct: 0,
+        explanation: 'الكلمة تنتهي بـ -ly وتصف الظرف hard، لذا هي adverb (ظرف درجة).'
+      }
+    ]
+  },
+
+  {
+    id: 'articles-determiners',
+    order: 18,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Articles & Quantifiers',
+    titleAr: 'أدوات النكرة والمعرفة والكميات: A, An, The & Quantifiers',
+    titleEn: 'Articles (A, An, The) & Quantifiers',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'a / an + singular countable noun | the + specific noun',
+    negativeFormula: 'no / none of + noun',
+    questionFormula: 'How much (uncountable) / How many (countable)?',
+    summaryAr: 'أدوات التعريف والتنكير من أكبر التحديات للمتحدث العربي. نستخدم a/an مع الأسماء المفردة المعدودة غير المحددة، بينما نستخدم the عندما يكون الشيء معروفاً للسامع، ونستخدم zero article مع الجمع العام والأسماء المعنوية.',
+    timelineDescription: 'تحديد دقة الإشارة للاسم: عام، مجهول، أم محدد بعينه.',
+    imageUrl: ONLINE_IMAGES.libraryStudy,
+    imageAlt: 'Library books and precise article reference materials',
+    keyUsagePoints: [
+      'A / An: نكرة للاسم المفرد المعدود، نستخدم an قبل الأصوات المتحركة (an honest man, an hour).',
+      'The: أداة المعرفة الوحيدة في الإنجليزية للشيء المحدد أو الفريد من نوعه (the sun, the CEO).',
+      'Much / Many: Much للكميات غير المعدودة (much water)، Many للأعداد المعدودة (many books).',
+      'Few / Little: Few مع المعدود، Little مع غير المعدود (A few/A little تعني كمية كافية إيجابية).'
+    ],
+    egyptianTips: [
+      'العبرة في استخدام an بالصوت مش بالحرف! كلمة honest بتبدأ بحرف ساكن h بس صوته أ /ɒ/ عشان كده بتاخد an honest person.',
+      'الأسماء المعنوية والوجبات والرياضات واللغات مبتاخدش the في العموم: English is fun (مش The English).'
+    ],
+    commonTraps: [
+      'فخ وضع a مع اسم لا يُعد: الخطأ a news / an advice، الصواب: a piece of news / a piece of advice.',
+      'فخ استخدام an مع University: الخطأ an university، الصواب: a university لأن الصوت الأول ي /j/ ساكن وليس متحركاً.'
+    ],
+    examples: [
+      {
+        en: 'She earned a master’s degree from an accredited university in London.',
+        ar: 'حصلت على درجة الماجستير من جامعة معتمدة في لندن.',
+        highlight: 'a master’s ... an accredited',
+        context: 'استخدام a و an بدقة بحسب الصوت البادئ'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'It took him ______ hour to finish reading ______ interesting book I lent him.',
+        options: ['an / the', 'a / the', 'an / an', 'the / a'],
+        correct: 0,
+        explanation: 'كلمة hour تبدأ بصوت متحرك فتأخذ an، والكتاب محدد ومعروف للمتحدث فتأخذ the.'
+      }
+    ]
+  },
+
+  {
+    id: 'prepositions-mastery',
+    order: 19,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Prepositions of Time & Place',
+    titleAr: 'حروف الجر للزمان والمكان: هرم In, On, At',
+    titleEn: 'Prepositions of Time and Place (In, On, At)',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'In (عام/واسع) → On (متوسط/أيام/شوارع) → At (دقيق/ساعات/عناوين)',
+    negativeFormula: 'without + noun / pronoun',
+    questionFormula: 'At what time? / On which day? / Where in...?',
+    summaryAr: 'تذكر هرم حروف الجر الشهير: In للأوسع والأكبر (السنوات، الفصول، الشهور، المدن، الدول). On للأضيق قليلاً (الأيام، التواريخ المحددة، الشوارع). At للنقطة المحددة بدقة متناهية (الساعات، العناوين المحددة برقم، الأماكن النقطية).',
+    timelineDescription: 'تدرج من النطاق الزمني والمكاني العام إلى النقطة المتناهية الدقة.',
+    imageUrl: ONLINE_IMAGES.mentorStudent,
+    imageAlt: 'Mentor guiding student through precise location maps and schedules',
+    keyUsagePoints: [
+      'At: للوقت الدقيق (at 5 PM, at midnight, at noon) والمواقع المحددة (at the bus stop, at 45 Baker St).',
+      'On: للأيام والتواريخ (on Monday, on October 25th) والأسطح ووسائل المواصلات العامة (on the bus, on the plane).',
+      'In: للشهور والسنوات والقرون (in 2026, in July, in winter) والأماكن المغلقة والمدن والدول (in Egypt, in Cairo).'
+    ],
+    egyptianTips: [
+      'سر وسائل المواصلات: المركبة اللي تقدر تقف فيها وتمشي بتاخد on (on the train, on the plane, on the bus)، بينما المركبة اللي لازم تقعد فيها وتنحني بتاخد in (in the car, in the taxi).',
+      'مع عطلة نهاية الأسبوع البريطانيون بيقولوا at the weekend، بينما الأمريكيون بيفضلوا on the weekend.'
+    ],
+    commonTraps: [
+      'فخ استخدام at مع الشهور والسنوات: الخطأ at July / at 2026، الصواب: in July / in 2026.',
+      'فخ وضع on قبل الساعات: الخطأ on 8:00 AM، الصواب: at 8:00 AM.'
+    ],
+    examples: [
+      {
+        en: 'The keynote presentation starts at 9:00 AM sharp on Monday in the main conference hall.',
+        ar: 'تبدأ الكلمة الافتتاحية في تمام الساعة 9:00 صباحاً يوم الإثنين في قاعة المؤتمرات الرئيسية.',
+        highlight: 'at 9:00 AM ... on Monday ... in the hall',
+        context: 'تطبيق هرمي شامل: at للساعة، on لليوم، in للقاعة'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'The global summit will take place ______ Dubai ______ October 15th ______ 10:00 AM.',
+        options: ['in / on / at', 'at / in / on', 'on / at / in', 'in / at / on'],
+        correct: 0,
+        explanation: 'المدينة تأخذ in، والتاريخ المحدد باليوم يأخذ on، والساعة الدقيقة تأخذ at.'
+      }
+    ]
+  },
+
+  {
+    id: 'gerunds-infinitives',
+    order: 20,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Gerunds & Infinitives',
+    titleAr: 'المصدر واسم الفاعل: Gerund (V-ing) vs. Infinitive (To + V)',
+    titleEn: 'Gerunds and Infinitives (V-ing vs. To + Verb)',
+    level: 'B2 - فوق متوسط',
+    goldenFormula: 'Verb + Gerund (V-ing) OR Verb + Full Infinitive (to + V)',
+    negativeFormula: 'not to + V / not + V-ing',
+    questionFormula: 'Do you enjoy doing...? / Would you like to do...?',
+    summaryAr: 'متى نضع بعد الفعل to + المصدر ومتى نضع ing؟ بعض الأفعال تشترط المصدر مثل (decide, hope, manage, promise)، وأفعال أخرى تشترط اسم الفاعل مثل (enjoy, avoid, suggest, admit). وهناك أفعال يتغير معناها بالكامل مثل stop و remember!',
+    timelineDescription: 'تحديد دلالة الفعل الثاني: هدف مستقبلي (to + V) أم تجربة وفعل مستمر (V-ing).',
+    imageUrl: ONLINE_IMAGES.grammar.gerundsInfinitives,
+    imageAlt: 'Writer taking handwritten notes planning creative goals',
+    keyUsagePoints: [
+      'Verbs followed by Gerund: enjoy, avoid, practice, mind, consider, postpone, keep.',
+      'Verbs followed by Infinitive: decide, plan, hope, expect, offer, agree, afford.',
+      'Preposition + Gerund: أي حرف جر في الإنجليزية يتبعه V-ing حتماً (interested in learning, good at speaking).',
+      'Change in meaning: Remember to do (تذكر أن يفعل - تذكر أولاً ثم فعل) مقابل Remember doing (يتذكر أنه فعل في الماضي).'
+    ],
+    egyptianTips: [
+      'بعد حروف الجر بدون استثناء بنحط ing: I am looking forward to meeting you (هنا to حرف جر وليس علامة مصدر).',
+      'فعل stop to do معناها توقف لكي يفعل شيئاً آخر: He stopped to drink water (وقف عشان يشرب). أما stop doing معناها امتنع عن العادة: He stopped smoking (بطل تدخين نهائياً).'
+    ],
+    commonTraps: [
+      'فخ استخدام المصدر بعد look forward to: الخطأ I look forward to meet you، الصواب: I look forward to meeting you.',
+      'فخ وضع to بعد enjoy: الخطأ I enjoy to swim، الصواب: I enjoy swimming.'
+    ],
+    examples: [
+      {
+        en: 'The architect managed to secure the approval without compromising the ecological design.',
+        ar: 'نجح المهندس المعماري في تأمين الموافقة دون المساومة على التصميم البيئي.',
+        highlight: 'managed to secure ... without compromising',
+        context: 'manage يتبعه مصدر to secure، وحرف الجر without يتبعه gerund'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'She decided ______ abroad, and she is truly looking forward to ______ her studies.',
+        options: ['to travel / commencing', 'traveling / commence', 'to travel / commence', 'traveling / commencing'],
+        correct: 0,
+        explanation: 'الفعل decide يتبعه مصدر to travel، والتعبير looking forward to يتبعه gerund فتكون commencing.'
+      }
+    ]
+  },
+
+  {
+    id: 'causatives-inversion',
+    order: 21,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Causatives & Inversion',
+    titleAr: 'الصيغ السببية والتقديم البلاغي: Causatives & Negative Inversion',
+    titleEn: 'Causative Verbs (Have/Get) & Negative Inversion',
+    level: 'C1 - متقدم',
+    goldenFormula: 'have/get + object + V3 (Causative) | Negative Adverb + Aux + Subject + Verb (Inversion)',
+    negativeFormula: 'Never / Rarely / Seldom / Under no circumstances + Auxiliary + S + V',
+    questionFormula: 'Did you have it done? / Had she known...?',
+    summaryAr: 'من أقوى أساليب الإنجليزية المتقدمة لإبهار لجان التقييم وممتحني الآيلتس والحديث الاحترافي! السببية (Causative) تعني أنك لم تقم بالعمل بنفسك بل طلبت من متخصص إنجازه. وأسلوب التقديم (Inversion) يقلب ترتيب الجملة لتوكيد بلاغي فائق.',
+    timelineDescription: 'توكيد بلاغي راقٍ وتكليف بالمهام للمحترفين.',
+    imageUrl: ONLINE_IMAGES.onlineTechLecture,
+    imageAlt: 'Executive presentation showing advanced linguistic mastery and rhetoric',
+    keyUsagePoints: [
+      'Causative Have / Get: have something done (I had my laptop repaired = الفني هو اللي صلحها مش أنا).',
+      'Active Causatives: have someone do (مصدر بدون to) مقابل get someone to do (مع to).',
+      'Negative Inversion: عند بدء الجملة بظرف سلبي مثل (Never, Seldom, Rarely, Hardly, Scarcely, Not only)، تأخذ الجملة شكل صيغة السؤال: Never have I seen such dedication!',
+      'Conditional Inversion: Had I known, I would have warned you (بديلة عن If I had known).'
+    ],
+    egyptianTips: [
+      'لما تقول I cut my hair معناه مسكت المقص وقصيت شعرك بنفسك! لو روّحت للحلاق الصح تقول: I had my hair cut.',
+      'في الـ Inversion، أول ما تبدأ الجملة بـ Never أو Seldom، عامل باقي الجملة زي تكوين السؤال: حط الفعل المساعد قبل الفاعل.'
+    ],
+    commonTraps: [
+      'فخ الترتيب العادي بعد الظرف السلبي: الخطأ Rarely she speaks in public، الصواب: Rarely does she speak in public.',
+      'فخ الخلط بين have و get مع الفاعل: الخطأ I had him to clean، الصواب: I had him clean / I got him to clean.'
+    ],
+    examples: [
+      {
+        en: 'Hardly had the platform launched when it recorded over one hundred thousand active subscribers.',
+        ar: 'لم تكد المنصة تنطلق حتى سجلت أكثر من مئة ألف مشترك نشط.',
+        highlight: 'Hardly had the platform launched',
+        context: 'تقديم سلبي متقدم (Inversion) يماثل أعلى درجات البلاغة الإنجليزية'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'Under no circumstances ______ reveal your security password to unauthorized personnel.',
+        options: ['should you', 'you should', 'you must', 'you ought'],
+        correct: 0,
+        explanation: 'البدء بالتعبير السلبي Under no circumstances يستوجب الـ Inversion (تقديم الفعل المساعد should على الفاعل you).'
       }
     ]
   }

@@ -26,7 +26,10 @@ export type PageRoute =
   | 'grammar-lesson'
   | 'ai-tutor'
   | 'world-3d'
-  | 'certificates';
+  | 'certificates'
+  | 'sentences'
+  | 'movies'
+  | 'translation';
 
 export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
 

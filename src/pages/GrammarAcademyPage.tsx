@@ -34,7 +34,8 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
     'أزمنة الماضي',
     'أزمنة المستقبل',
     'حالات الشرط',
-    'المبني للمجهول والتركيب'
+    'المبني للمجهول والتركيب',
+    'الأساسيات والتركيب اللغوي',
   ];
 
   const levels = ['All', 'A1', 'A2', 'B1', 'B2', 'C1'];

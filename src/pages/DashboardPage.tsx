@@ -28,6 +28,8 @@ import {
   AlertCircle,
   BarChart3,
   ChevronLeft,
+  Film,
+  BookText,
 } from "lucide-react";
 
 interface DashboardPageProps {
@@ -420,6 +422,129 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 {userProfile.streakDays} أيام 🔥
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 2.5 FLAGSHIP LEARNING SYSTEMS: 5,500 SENTENCES & MOVIE STUDIO */}
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Card 1: 5,500 Essential English Sentences Library */}
+        <div
+          onClick={() => {
+            playSound("click");
+            onNavigate("sentences");
+          }}
+          className="relative rounded-3xl p-6 sm:p-8 bg-linear-to-br from-[#1d1b40] via-[#14122d] to-[#0c0b20] border border-[#ffd166]/30 hover:border-[#ffd166] transition-all duration-300 cursor-pointer shadow-xl group overflow-hidden flex flex-col justify-between space-y-6"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none group-hover:opacity-100 transition-opacity" />
+          
+          <div className="space-y-4 relative z-10">
+            <div className="flex items-center justify-between">
+              <div className="w-12 h-12 rounded-2xl bg-[#ffd166]/20 border border-[#ffd166]/40 flex items-center justify-center text-[#ffd166] shadow-md">
+                <BookText className="w-6 h-6" />
+              </div>
+              <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>أضخم بنك تعليمي • 5,500 جملة</span>
+              </span>
+            </div>
+
+            <div>
+              <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#ffd166] transition-colors">
+                مكتبة 5,500 جملة إنجليزية متدرجة
+              </h3>
+              <p className="text-xs font-mono text-[#ffd166]/80 en mt-0.5">
+                5,500 Essential English Sentences Library
+              </p>
+            </div>
+
+            <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
+              منهج متكامل مصنف عبر 6 مستويات (A1 → C2) و 12 قسماً واقعياً. مزوّد بترجمة مصرية أصيلة، نطق صوتي متقدم، ميكروفون لتقييم النطق، و 15 نمط تعلّم مع تكرار متباعد SM-2.
+            </p>
+
+            {/* CEFR mini pills */}
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {[
+                { lvl: 'A1', count: '800' },
+                { lvl: 'A2', count: '1,000' },
+                { lvl: 'B1', count: '1,100' },
+                { lvl: 'B2', count: '1,100' },
+                { lvl: 'C1', count: '900' },
+                { lvl: 'C2', count: '600' },
+              ].map(item => (
+                <span key={item.lvl} className="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[10px] font-mono text-[#b9b6d5]">
+                  <strong className="text-white">{item.lvl}:</strong> {item.count}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-white/10 flex items-center justify-between relative z-10">
+            <span className="text-xs text-[#b9b6d5] font-bold">15 نمط تعلّم وبحث دلالي ذكي</span>
+            <span className="text-xs font-black text-[#ffd166] flex items-center gap-1 group-hover:-translate-x-1.5 transition-transform">
+              <span>استكشف المكتبة الآن</span>
+              <ArrowRight className="w-4 h-4 rotate-180" />
+            </span>
+          </div>
+        </div>
+
+        {/* Card 2: Learn English Through Movies Studio */}
+        <div
+          onClick={() => {
+            playSound("click");
+            onNavigate("movies");
+          }}
+          className="relative rounded-3xl p-6 sm:p-8 bg-linear-to-br from-[#241334] via-[#170e28] to-[#0c0b20] border border-[#ff4f9a]/30 hover:border-[#ff4f9a] transition-all duration-300 cursor-pointer shadow-xl group overflow-hidden flex flex-col justify-between space-y-6"
+        >
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[#ff4f9a]/10 rounded-full blur-3xl pointer-events-none group-hover:opacity-100 transition-opacity" />
+          
+          <div className="space-y-4 relative z-10">
+            <div className="flex items-center justify-between">
+              <div className="w-12 h-12 rounded-2xl bg-[#ff4f9a]/20 border border-[#ff4f9a]/40 flex items-center justify-center text-[#ff4f9a] shadow-md">
+                <Film className="w-6 h-6" />
+              </div>
+              <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ff4f9a]/20 text-[#ff4f9a] border border-[#ff4f9a]/40 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>استوديو تفاعلي مميز 🎬</span>
+              </span>
+            </div>
+
+            <div>
+              <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#ff4f9a] transition-colors">
+                اتعلم الإنجليزي من الأفلام
+              </h3>
+              <p className="text-xs font-mono text-[#ff4f9a]/80 en mt-0.5">
+                Learn English Through Movies Studio
+              </p>
+            </div>
+
+            <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
+              تعلّم الإنجليزية الحية من أشهر مشاهد السينما العالمية. ابحث بأي جملة سينمائية، وشاهد بمشغل ذكي وترجمة مصرية متزامنة، وفحص فوري لأي كلمة، وكويزات فهم ونمط الترديد الصوتي (Echo Speaking).
+            </p>
+
+            {/* Feature mini pills */}
+            <div className="flex flex-wrap gap-1.5 pt-1">
+              {[
+                'بحث بالجملة والمشهد',
+                'ترجمة مصرية متزامنة',
+                'فحص فوري للكلمات',
+                'كويزات المشاهد',
+                'تكرار الجملة الحالية',
+                'Echo Speaking',
+              ].map(f => (
+                <span key={f} className="px-2 py-0.5 rounded-md bg-[#ff4f9a]/10 border border-[#ff4f9a]/20 text-[10px] text-[#ffd166]">
+                  {f}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-white/10 flex items-center justify-between relative z-10">
+            <span className="text-xs text-[#b9b6d5] font-bold">The Godfather • Forrest Gump • The Dark Knight...</span>
+            <span className="text-xs font-black text-[#ff4f9a] flex items-center gap-1 group-hover:-translate-x-1.5 transition-transform">
+              <span>دخول الاستوديو السينمائي</span>
+              <ArrowRight className="w-4 h-4 rotate-180" />
+            </span>
           </div>
         </div>
       </section>

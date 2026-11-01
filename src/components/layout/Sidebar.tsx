@@ -25,6 +25,9 @@ import {
   Bot,
   Globe,
   Award,
+  Film,
+  BookText,
+  Languages,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -149,6 +152,27 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Real-Life English',
           route: 'real-life',
           icon: Compass,
+        },
+        {
+          label: 'مكتبة 5,500 جملة 📚',
+          labelEn: '5,500 Sentences',
+          route: 'sentences' as PageRoute,
+          icon: BookText,
+          badge: '5,500 جملة',
+        },
+        {
+          label: 'اتعلم من الأفلام 🎬',
+          labelEn: 'Movie Studio',
+          route: 'movies' as PageRoute,
+          icon: Film,
+          badge: 'ستوديو AI',
+        },
+        {
+          label: 'ترجمة (استوديو AI) 🌐',
+          labelEn: 'Translation',
+          route: 'translation' as PageRoute,
+          icon: Languages,
+          badge: 'AI رائد',
         },
         {
           label: 'المعلم الذكي AI 🤖',

@@ -10,6 +10,9 @@ import {
   CheckCircle2,
   Copy,
   Volume2,
+  RefreshCw,
+  Brain,
+  Award,
 } from 'lucide-react';
 
 interface WritingAcademyPageProps {
@@ -20,6 +23,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
   const [activeTemplate, setActiveTemplate] = useState<'formal_email' | 'job_application' | 'essay'>('formal_email');
   const [userInput, setUserInput] = useState('');
   const [submissionFeedback, setSubmissionFeedback] = useState<string | null>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const templates = {
@@ -71,29 +75,58 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleAnalyzeWriting = () => {
+  const handleAnalyzeWriting = async () => {
     playSound('click');
     const wordCount = userInput.trim().split(/\s+/).filter(Boolean).length;
     if (wordCount < 10) {
-      setSubmissionFeedback('⚠️ النص قصير جداً! اكتب جملة كاملة تحتوي على فاعل وفعل ومفعول به.');
+      setSubmissionFeedback('⚠️ النص قصير جداً! اكتب جملة أو فقرة كاملة تحتوي على فاعل وفعل ومفعول به.');
       playSound('wrong');
       return;
     }
 
-    const hasFuturePerfect = userInput.toLowerCase().includes('will have');
-    const hasConnector = /however|furthermore|therefore|because|although|in addition/i.test(userInput);
+    setIsAnalyzing(true);
+    setSubmissionFeedback(null);
 
-    let feedback = `✅ رائع جداً! عدد الكلمات: ${wordCount} كلمة. `;
-    if (hasFuturePerfect) {
-      feedback += '🎯 استخدام ممتاز ومتقن لقاعدة المستقبل التام (will have + V3)! ';
-    }
-    if (hasConnector) {
-      feedback += '🔗 استخدام رائع للروابط الأكاديمية مما جعل النص متماسكاً. ';
-    }
+    try {
+      const response = await fetch('/api/ai/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: `Please act as a Senior English Writing Assessor. Review the following student submission for a ${currentTemplate.title}:\n\n"${userInput}"\n\nProvide structured feedback in Arabic including:\n1) Estimated CEFR level of the writing (A1-C2).\n2) Grammar and spelling corrections with clear before/after examples.\n3) Feedback on tone, structure, and coherence.\n4) A polished, high-scoring native revision.`,
+          mode: 'writing-assistant',
+          userLevel: 'B2',
+        }),
+      });
 
-    setSubmissionFeedback(feedback);
-    playSound('correct');
-    fireCelebration();
+      if (!response.ok) {
+        throw new Error(`AI writing analysis failed with status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      const feedbackText = data.text || data.response || 'تم فحص المسودة بنجاح!';
+      setSubmissionFeedback(feedbackText);
+      playSound('correct');
+      fireCelebration();
+    } catch (err) {
+      console.warn('AI analysis fallback:', err);
+      // Fallback local pattern checker
+      const hasFuturePerfect = userInput.toLowerCase().includes('will have');
+      const hasConnector = /however|furthermore|therefore|because|although|in addition/i.test(userInput);
+
+      let fallbackFeedback = `✅ رائع جداً! عدد الكلمات: ${wordCount} كلمة.\n\n`;
+      if (hasFuturePerfect) {
+        fallbackFeedback += '🎯 استخدام ممتاز ومتقن لقاعدة المستقبل التام (will have + V3)!\n';
+      }
+      if (hasConnector) {
+        fallbackFeedback += '🔗 استخدام رائع للروابط الأكاديمية مما جعل النص متماسكاً.\n';
+      }
+      fallbackFeedback += '💡 نصيحة: تأكد دائماً من مراجعة علامات الترقيم وبدء الجمل بحرف كبير (Capital Letter).';
+
+      setSubmissionFeedback(fallbackFeedback);
+      playSound('correct');
+    } finally {
+      setIsAnalyzing(false);
+    }
   };
 
   const commonMistakes = [
@@ -276,16 +309,34 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
           <button
             onClick={handleAnalyzeWriting}
-            disabled={!userInput.trim()}
-            className="w-full py-3.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff4f9a] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50 transition-all"
+            disabled={!userInput.trim() || isAnalyzing}
+            className="w-full py-3.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff4f9a] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50 transition-all flex items-center justify-center gap-2"
           >
-            فحص وتحليل المسودة الآن 🔍
+            {isAnalyzing ? (
+              <>
+                <RefreshCw className="w-4 h-4 animate-spin" />
+                <span>جاري تحليل المسودة بالذكاء الاصطناعي...</span>
+              </>
+            ) : (
+              <>
+                <Brain className="w-4 h-4" />
+                <span>فحص وتقييم المسودة بالذكاء الاصطناعي 🔍</span>
+              </>
+            )}
           </button>
 
           {submissionFeedback && (
-            <div className="p-4 rounded-2xl bg-[#171632] border border-[#ffd166]/40 text-xs text-white leading-relaxed space-y-1">
-              <strong className="text-[#ffd166]">تقرير التقييم:</strong>
-              <p>{submissionFeedback}</p>
+            <div className="p-5 rounded-2xl bg-[#171632] border border-[#ffd166]/40 text-xs text-white leading-relaxed space-y-3">
+              <div className="flex items-center justify-between border-b border-white/10 pb-2">
+                <span className="font-bold text-[#ffd166] flex items-center gap-1.5">
+                  <Award className="w-4 h-4 text-[#ffd166]" />
+                  تقرير التقييم اللغوي والأكاديمي (AI Writing Report)
+                </span>
+                <span className="text-[10px] text-[#c4ff55] font-mono">Gemini Evaluator</span>
+              </div>
+              <div className="whitespace-pre-line text-xs text-[#dedbf4] leading-relaxed">
+                {submissionFeedback}
+              </div>
             </div>
           )}
         </div>

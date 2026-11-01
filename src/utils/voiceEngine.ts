@@ -251,6 +251,7 @@ export interface SpeakOptions {
   pitch?: number;
   voiceId?: string;
   onEnd?: () => void;
+  onEnded?: () => void;
   onError?: () => void;
 }
 
@@ -297,6 +298,7 @@ function speakViaBrowserSpeech(text: string, options?: SpeakOptions): void {
       currentUtterance = null;
       notifyState(false, '');
       if (options?.onEnd) options.onEnd();
+      if (options?.onEnded) options.onEnded();
     };
 
     utterance.onerror = () => {
@@ -344,6 +346,7 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
       currentHtmlAudio = null;
       notifyState(false, '');
       if (options?.onEnd) options.onEnd();
+      if (options?.onEnded) options.onEnded();
     };
     audio.onerror = () => {
       currentHtmlAudio = null;
@@ -381,6 +384,7 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
           currentHtmlAudio = null;
           notifyState(false, '');
           if (options?.onEnd) options.onEnd();
+          if (options?.onEnded) options.onEnded();
         };
         audio.onerror = () => {
           currentHtmlAudio = null;
@@ -498,4 +502,54 @@ export function getAudioQueuePlayer(): AudioQueuePlayer {
     globalQueuePlayer = new AudioQueuePlayer();
   }
   return globalQueuePlayer;
+}
+
+// Alias for universal compatibility
+export const speakText = speakEnglishVoice;
+
+/**
+ * Universal Multilingual Speech Function
+ * Speaks text in any specified language (e.g. 'ar', 'en', 'fr', 'es', 'de', etc.)
+ */
+export function speakMultilingualText(text: string, langCode: string = 'en', onEnd?: () => void): void {
+  if (typeof window === 'undefined') return;
+  if (currentSettings.isMuted) return;
+
+  const trimmed = text.trim();
+  if (!trimmed) return;
+
+  stopSpeech();
+
+  // If language is English, we can use our enhanced speakEnglishVoice
+  if (langCode === 'en' || langCode.startsWith('en-')) {
+    speakEnglishVoice(trimmed, { onEnd });
+    return;
+  }
+
+  // Otherwise, use browser SpeechSynthesis with the matching language voice
+  try {
+    const utterance = new SpeechSynthesisUtterance(trimmed);
+    const voices = window.speechSynthesis.getVoices();
+    const targetVoice = voices.find(v => v.lang.toLowerCase().startsWith(langCode.toLowerCase()));
+
+    if (targetVoice) {
+      utterance.voice = targetVoice;
+    }
+    utterance.lang = langCode;
+    utterance.rate = 0.95;
+
+    utterance.onstart = () => notifyState(true, trimmed);
+    utterance.onend = () => {
+      notifyState(false, '');
+      if (onEnd) onEnd();
+    };
+    utterance.onerror = () => {
+      notifyState(false, '');
+    };
+
+    window.speechSynthesis.speak(utterance);
+  } catch (err) {
+    console.warn('Speech synthesis error:', err);
+    notifyState(false, '');
+  }
 }

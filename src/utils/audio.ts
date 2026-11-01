@@ -1,6 +1,8 @@
 import confetti from 'canvas-confetti';
 import { 
-  speakEnglishVoice, 
+  speakEnglishVoice,
+  speakText,
+  speakMultilingualText,
   getVoiceSettings, 
   stopSpeech, 
   pauseSpeech, 
@@ -23,6 +25,8 @@ import {
 
 export {
   speakEnglishVoice,
+  speakText,
+  speakMultilingualText,
   getVoiceSettings,
   stopSpeech,
   pauseSpeech,
@@ -60,7 +64,9 @@ function getAudioContext(): AudioContext | null {
   return audioCtx;
 }
 
-export function playSound(type: 'correct' | 'wrong' | 'click' | 'fanfare' | 'flip'): void {
+export type SoundEffectType = 'correct' | 'wrong' | 'click' | 'fanfare' | 'flip' | 'pop' | 'success' | 'error';
+
+export function playSound(type: SoundEffectType): void {
   const settings = getVoiceSettings();
   if (settings.isMuted) return;
 
@@ -70,7 +76,7 @@ export function playSound(type: 'correct' | 'wrong' | 'click' | 'fanfare' | 'fli
 
     const now = ctx.currentTime;
 
-    if (type === 'correct') {
+    if (type === 'correct' || type === 'success') {
       // Pleasant high double chime (E5 -> G#5)
       const osc1 = ctx.createOscillator();
       const osc2 = ctx.createOscillator();
@@ -95,7 +101,7 @@ export function playSound(type: 'correct' | 'wrong' | 'click' | 'fanfare' | 'fli
       osc2.start(now + 0.1);
       osc1.stop(now + 0.45);
       osc2.stop(now + 0.45);
-    } else if (type === 'wrong') {
+    } else if (type === 'wrong' || type === 'error') {
       // Gentle low double-thud buzz (not harsh)
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
@@ -112,7 +118,7 @@ export function playSound(type: 'correct' | 'wrong' | 'click' | 'fanfare' | 'fli
 
       osc.start(now);
       osc.stop(now + 0.35);
-    } else if (type === 'click') {
+    } else if (type === 'click' || type === 'pop') {
       // Crisp subtle UI pop
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();

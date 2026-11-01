@@ -34,6 +34,9 @@ import { QuizzesPage } from './pages/QuizzesPage';
 import { GamesPage } from './pages/GamesPage';
 import { ResourcesPage } from './pages/ResourcesPage';
 import { AboutPage } from './pages/AboutPage';
+import { SentencesLibraryPage } from './pages/SentencesLibraryPage';
+import { MovieStudioPage } from './pages/MovieStudioPage';
+import { TranslationStudioPage } from './pages/TranslationStudioPage';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -126,6 +129,12 @@ export const App: React.FC = () => {
         setCurrentRoute('resources');
       } else if (hash === 'about') {
         setCurrentRoute('about');
+      } else if (hash === 'sentences' || hash === 'library' || hash === 'sentences-library') {
+        setCurrentRoute('sentences');
+      } else if (hash === 'movies' || hash === 'movie-studio' || hash === 'learn-from-movies') {
+        setCurrentRoute('movies');
+      } else if (hash === 'translation' || hash === 'translate' || hash === 'translator') {
+        setCurrentRoute('translation');
       }
     };
 
@@ -363,6 +372,21 @@ export const App: React.FC = () => {
             {/* 24. About Academy */}
             {currentRoute === 'about' && (
               <AboutPage />
+            )}
+
+            {/* 25. 5,500 Essential English Sentences Library */}
+            {currentRoute === 'sentences' && (
+              <SentencesLibraryPage onNavigate={handleNavigate} />
+            )}
+
+            {/* 26. Learn English Through Movies Studio */}
+            {currentRoute === 'movies' && (
+              <MovieStudioPage onNavigate={handleNavigate} />
+            )}
+
+            {/* 27. Complete AI Translation Studio */}
+            {currentRoute === 'translation' && (
+              <TranslationStudioPage userProfile={activeProfile} />
             )}
           </motion.div>
         </AnimatePresence>

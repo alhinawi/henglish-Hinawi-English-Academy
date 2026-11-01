@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, X, BookOpen, HelpCircle, ArrowRight, GraduationCap } from 'lucide-react';
+import { Search, X, BookOpen, HelpCircle, ArrowRight, GraduationCap, Film, BookText, Sparkles, Languages } from 'lucide-react';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { COMPREHENSIVE_QUIZ_BANK } from '../data/quizzesData';
 import { VERB_TOOLKIT } from '../data/verbsData';
@@ -134,6 +134,67 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
 
         {/* Results List */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-6">
+          {/* Quick Shortcuts to Major Systems */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pb-2">
+            <button
+              onClick={() => handleSelectRoute('translation')}
+              className="p-3 rounded-2xl bg-gradient-to-r from-[#41e7ff]/15 to-transparent border border-[#41e7ff]/30 hover:border-[#41e7ff] text-right transition-all cursor-pointer flex items-center justify-between group"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-[#41e7ff]/20 border border-[#41e7ff]/40 flex items-center justify-center text-[#41e7ff]">
+                  <Languages className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs font-black text-white group-hover:text-[#41e7ff] transition-colors">
+                    استوديو الترجمة AI 🌐
+                  </div>
+                  <div className="text-[10px] text-[#dedbf4]">
+                    شرح نحوي، فونيتكس، ومستندات
+                  </div>
+                </div>
+              </div>
+              <ArrowRight className="w-3.5 h-3.5 text-[#41e7ff] rotate-180 transition-transform group-hover:-translate-x-1" />
+            </button>
+            <button
+              onClick={() => handleSelectRoute('sentences')}
+              className="p-3 rounded-2xl bg-linear-to-r from-[#ffd166]/15 to-transparent border border-[#ffd166]/30 hover:border-[#ffd166] text-right transition-all cursor-pointer flex items-center justify-between group"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-[#ffd166]/20 border border-[#ffd166]/40 flex items-center justify-center text-[#ffd166]">
+                  <BookText className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs font-black text-white group-hover:text-[#ffd166] transition-colors">
+                    مكتبة 5,500 جملة إنجليزية
+                  </div>
+                  <div className="text-[10px] text-[#dedbf4]">
+                    بحث بالمعنى المصري وترجمة متدرجة A1-C2
+                  </div>
+                </div>
+              </div>
+              <ArrowRight className="w-3.5 h-3.5 text-[#ffd166] rotate-180 transition-transform group-hover:-translate-x-1" />
+            </button>
+
+            <button
+              onClick={() => handleSelectRoute('movies')}
+              className="p-3 rounded-2xl bg-linear-to-r from-[#ff4f9a]/15 to-transparent border border-[#ff4f9a]/30 hover:border-[#ff4f9a] text-right transition-all cursor-pointer flex items-center justify-between group"
+            >
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-[#ff4f9a]/20 border border-[#ff4f9a]/40 flex items-center justify-center text-[#ff4f9a]">
+                  <Film className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-xs font-black text-white group-hover:text-[#ff4f9a] transition-colors">
+                    اتعلم من الأفلام 🎬
+                  </div>
+                  <div className="text-[10px] text-[#dedbf4]">
+                    ابحث بجمل المشاهد وتدرّب مع الفيديو
+                  </div>
+                </div>
+              </div>
+              <ArrowRight className="w-3.5 h-3.5 text-[#ff4f9a] rotate-180 transition-transform group-hover:-translate-x-1" />
+            </button>
+          </div>
           {/* Grammar Rules */}
           {matchedGrammar.length > 0 && (
             <div>

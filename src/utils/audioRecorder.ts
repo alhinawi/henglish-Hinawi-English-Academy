@@ -212,6 +212,14 @@ export class RealAudioRecorder {
   }
 
   /**
+   * Cancel and discard current recording session
+   */
+  public cancel() {
+    this.cleanup();
+    this.setState('IDLE');
+  }
+
+  /**
    * Clean up all hardware streams and contexts
    */
   public cleanup() {

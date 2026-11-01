@@ -4,6 +4,14 @@ import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../data/vocabularyAcademyDa
 import { VERB_TOOLKIT } from '../data/verbsData';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
+  calculateSM2,
+  getDueSrsCards,
+  loadSrsCardsFromStorage,
+  saveSrsCardsToStorage,
+  VocabularyCard,
+  ReviewRating,
+} from '../services/spacedRepetitionService';
+import {
   BookA,
   Search,
   Volume2,
@@ -15,6 +23,10 @@ import {
   Filter,
   Flame,
   ArrowRight,
+  Brain,
+  Award,
+  Clock,
+  RotateCcw,
 } from 'lucide-react';
 
 interface VocabularyAcademyPageProps {
@@ -26,10 +38,29 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<'thematic' | 'verbs' | 'flashcards'>('thematic');
 
-  // Flashcard mode state
+  // Spaced Repetition (SM-2) state
+  const [srsCards, setSrsCards] = useState<VocabularyCard[]>(() => {
+    const loaded = loadSrsCardsFromStorage();
+    if (loaded && loaded.length > 0) return loaded;
+    return VOCABULARY_ACADEMY_WORDS.map(w => ({
+      id: w.id,
+      word: w.word,
+      ipa: w.ipa,
+      translationAr: w.meaningAr,
+      category: w.category,
+      cefrLevel: w.level,
+      exampleEn: w.exampleEn,
+      exampleAr: w.exampleAr,
+      repetitionCount: 0,
+      intervalDays: 1,
+      easeFactor: 2.5,
+      nextReviewAt: new Date().toISOString(),
+    }));
+  });
+
   const [flashcardIdx, setFlashcardIdx] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [knownWords, setKnownWords] = useState<string[]>([]);
+  const [reviewMode, setReviewMode] = useState<'due' | 'all'>('due');
 
   const categories = [
     { id: 'all', label: 'جميع الكلمات' },
@@ -57,18 +88,39 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
     return matchesSearch && matchesCat;
   });
 
-  const handleNextCard = (known: boolean) => {
-    playSound(known ? 'correct' : 'click');
-    const currentWord = VOCABULARY_ACADEMY_WORDS[flashcardIdx];
-    if (known && !knownWords.includes(currentWord.id)) {
-      setKnownWords(prev => [...prev, currentWord.id]);
-      fireCelebration();
-    }
-    setIsFlipped(false);
-    setFlashcardIdx(prev => (prev + 1) % VOCABULARY_ACADEMY_WORDS.length);
-  };
+  const dueCards = getDueSrsCards(srsCards);
+  const activeDeck = reviewMode === 'due' && dueCards.length > 0 ? dueCards : srsCards;
+  const currentCard = activeDeck[flashcardIdx % activeDeck.length] || srsCards[0];
 
-  const currentFlashcard = VOCABULARY_ACADEMY_WORDS[flashcardIdx] || VOCABULARY_ACADEMY_WORDS[0];
+  const masteredCount = srsCards.filter(c => c.repetitionCount >= 3).length;
+  const learningCount = srsCards.filter(c => c.repetitionCount > 0 && c.repetitionCount < 3).length;
+
+  const handleRateCard = (rating: ReviewRating) => {
+    if (!currentCard) return;
+
+    if (rating >= 3) {
+      playSound('correct');
+      if (rating === 5) {
+        fireCelebration();
+      }
+    } else {
+      playSound('wrong');
+    }
+
+    const updatedStats = calculateSM2(currentCard, rating);
+    const updatedCard: VocabularyCard = {
+      ...currentCard,
+      ...updatedStats,
+      lastReviewedAt: new Date().toISOString(),
+    };
+
+    const nextSrsCards = srsCards.map(c => (c.id === currentCard.id ? updatedCard : c));
+    setSrsCards(nextSrsCards);
+    saveSrsCardsToStorage(nextSrsCards);
+
+    setIsFlipped(false);
+    setFlashcardIdx(prev => (prev + 1) % activeDeck.length);
+  };
 
   return (
     <div className="space-y-10 pb-16 text-right">
@@ -239,80 +291,229 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
         </section>
       )}
 
-      {/* TAB 2: SPACED REPETITION FLASHCARDS */}
+      {/* TAB 2: SPACED REPETITION FLASHCARDS (SUPERMEMO SM-2) */}
       {activeTab === 'flashcards' && (
-        <section className="max-w-2xl mx-auto space-y-6">
-          <div className="flex items-center justify-between text-xs font-bold text-[#b9b6d5]">
-            <span>البطاقة {flashcardIdx + 1} من {VOCABULARY_ACADEMY_WORDS.length}</span>
-            <span className="text-[#c4ff55]">الكلمات المحفوظة: {knownWords.length}</span>
-          </div>
-
-          {/* Flashcard Box */}
-          <div
-            onClick={() => {
-              playSound('click');
-              setIsFlipped(prev => !prev);
-            }}
-            className="w-full min-h-[320px] rounded-3xl p-8 glass-panel border border-white/15 hover:border-[#ffd166]/50 cursor-pointer flex flex-col justify-between items-center text-center transition-all shadow-2xl relative select-none"
-          >
-            <div className="w-full flex items-center justify-between text-xs text-[#b9b6d5]">
-              <span className="px-2.5 py-1 rounded-md bg-white/10 font-bold">{currentFlashcard.level}</span>
-              <span className="text-[#ffd166] text-xs font-bold">اضغط لقلب البطاقة 🔄</span>
+        <section className="max-w-3xl mx-auto space-y-6">
+          {/* SRS Progress Metrics Bar */}
+          <div className="grid grid-cols-3 gap-3">
+            <div className="p-3.5 rounded-2xl glass-panel border border-white/10 text-center space-y-0.5">
+              <span className="text-[11px] text-[#b9b6d5] block">مستحقة اليوم (Due)</span>
+              <span className="text-xl sm:text-2xl font-black text-[#ffd166]">
+                {dueCards.length}
+              </span>
+              <span className="text-[10px] text-[#b9b6d5] block">تحتاج تثبيت</span>
             </div>
 
-            {!isFlipped ? (
-              <div className="space-y-4 my-auto">
-                <div className="en text-3xl sm:text-4xl font-black text-white">
-                  {currentFlashcard.word}
-                </div>
-                <div className="en text-sm font-mono text-[#41e7ff]">
-                  {currentFlashcard.ipa} • {currentFlashcard.partOfSpeech}
-                </div>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    speakEnglish(currentFlashcard.word);
-                  }}
-                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white text-xs hover:bg-white/20"
-                >
-                  <Volume2 className="w-4 h-4 text-[#41e7ff]" />
-                  <span>استمع للنطق</span>
-                </button>
-              </div>
-            ) : (
-              <div className="space-y-4 my-auto">
-                <div className="text-2xl font-black text-[#c4ff55]">
-                  {currentFlashcard.meaningAr}
-                </div>
-                <div className="en text-sm text-[#dedbf4] max-w-md mx-auto leading-relaxed">
-                  "{currentFlashcard.exampleEn}"
-                </div>
-                <div className="text-xs text-[#b9b6d5]">
-                  {currentFlashcard.exampleAr}
-                </div>
-              </div>
-            )}
+            <div className="p-3.5 rounded-2xl glass-panel border border-white/10 text-center space-y-0.5">
+              <span className="text-[11px] text-[#b9b6d5] block">قيد التكرار (Learning)</span>
+              <span className="text-xl sm:text-2xl font-black text-[#41e7ff]">
+                {learningCount}
+              </span>
+              <span className="text-[10px] text-[#b9b6d5] block">في الذاكرة النشطة</span>
+            </div>
 
-            <div className="text-[11px] text-[#b9b6d5]/70">
-              مجال: {categories.find(c => c.id === currentFlashcard.category)?.label}
+            <div className="p-3.5 rounded-2xl glass-panel border border-white/10 text-center space-y-0.5">
+              <span className="text-[11px] text-[#b9b6d5] block">متقنة تماماً (Mastered)</span>
+              <span className="text-xl sm:text-2xl font-black text-[#c4ff55]">
+                {masteredCount}
+              </span>
+              <span className="text-[10px] text-[#b9b6d5] block">الذاكرة طويلة المدى</span>
             </div>
           </div>
 
-          {/* Action Buttons */}
-          <div className="grid grid-cols-2 gap-4">
-            <button
-              onClick={() => handleNextCard(false)}
-              className="py-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-sm cursor-pointer transition-all"
-            >
-              تحتاج مراجعة لاحقاً 🔄
-            </button>
-            <button
-              onClick={() => handleNextCard(true)}
-              className="py-3.5 rounded-2xl bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
-            >
-              حفظتها تماماً! ✅
-            </button>
+          {/* Mode Toggle & Counter */}
+          <div className="flex items-center justify-between text-xs font-bold text-[#b9b6d5] flex-wrap gap-2">
+            <div className="flex items-center gap-1.5 bg-white/5 p-1 rounded-xl border border-white/5">
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setReviewMode('due');
+                  setFlashcardIdx(0);
+                  setIsFlipped(false);
+                }}
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  reviewMode === 'due' ? 'bg-[#ffd166] text-[#0c0b20]' : 'text-white hover:text-[#ffd166]'
+                }`}
+              >
+                المستحقة فقط ({dueCards.length})
+              </button>
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setReviewMode('all');
+                  setFlashcardIdx(0);
+                  setIsFlipped(false);
+                }}
+                className={`px-3 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  reviewMode === 'all' ? 'bg-[#41e7ff] text-[#0c0b20]' : 'text-white hover:text-[#41e7ff]'
+                }`}
+              >
+                جميع البطاقات ({srsCards.length})
+              </button>
+            </div>
+
+            <span className="text-[#dedbf4]">
+              البطاقة {(flashcardIdx % activeDeck.length) + 1} من {activeDeck.length}
+            </span>
           </div>
+
+          {/* If all due cards are finished and in due mode */}
+          {reviewMode === 'due' && dueCards.length === 0 ? (
+            <div className="p-8 rounded-3xl glass-panel border border-[#c4ff55]/30 text-center space-y-4">
+              <div className="w-14 h-14 mx-auto rounded-full bg-[#c4ff55]/20 flex items-center justify-center text-2xl text-[#c4ff55]">
+                🎉
+              </div>
+              <h3 className="text-xl font-black text-white">
+                أحسنت! أتممت مراجعة جميع بطاقات اليوم بنجاح!
+              </h3>
+              <p className="text-xs text-[#dedbf4] max-w-md mx-auto leading-relaxed">
+                خوارزمية التكرار المتباعد (SM-2) قامت بجدولة المراجعات القادمة في المواعيد المثلى لتثبيتها في ذاكرتك الدائمة.
+              </p>
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setReviewMode('all');
+                }}
+                className="px-6 py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#c4ff55] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer"
+              >
+                متابعة مراجعة بنك الكلمات بالكامل 📚
+              </button>
+            </div>
+          ) : (
+            <>
+              {/* Flashcard Box */}
+              <div
+                onClick={() => {
+                  playSound('click');
+                  setIsFlipped(prev => !prev);
+                }}
+                className="w-full min-h-[340px] rounded-3xl p-8 glass-panel border border-white/15 hover:border-[#ffd166]/50 cursor-pointer flex flex-col justify-between items-center text-center transition-all shadow-2xl relative select-none"
+              >
+                <div className="w-full flex items-center justify-between text-xs text-[#b9b6d5]">
+                  <span className="px-2.5 py-1 rounded-md bg-white/10 font-bold text-[#ffd166]">
+                    {currentCard.cefrLevel}
+                  </span>
+                  <span className="text-[#ffd166] text-xs font-bold flex items-center gap-1">
+                    <RotateCcw className="w-3.5 h-3.5" />
+                    اضغط لقلب البطاقة
+                  </span>
+                  <span className="px-2.5 py-1 rounded-md bg-white/5 font-mono text-[11px]">
+                    تكرار: {currentCard.repetitionCount || 0}
+                  </span>
+                </div>
+
+                {!isFlipped ? (
+                  <div className="space-y-4 my-auto">
+                    <div className="en text-3xl sm:text-5xl font-black text-white font-['Outfit',sans-serif]">
+                      {currentCard.word}
+                    </div>
+                    <div className="en text-sm font-mono text-[#41e7ff]">
+                      {currentCard.ipa}
+                    </div>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        speakEnglish(currentCard.word);
+                      }}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-white text-xs hover:bg-white/20 transition-all cursor-pointer"
+                    >
+                      <Volume2 className="w-4 h-4 text-[#41e7ff]" />
+                      <span>استمع للنطق الإنجليزي</span>
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-4 my-auto">
+                    <div className="text-2xl sm:text-3xl font-black text-[#c4ff55]">
+                      {currentCard.translationAr}
+                    </div>
+                    <div className="en text-sm text-[#dedbf4] max-w-lg mx-auto leading-relaxed font-['Outfit',sans-serif]" dir="ltr">
+                      "{currentCard.exampleEn}"
+                    </div>
+                    <div className="text-xs text-[#b9b6d5]">
+                      {currentCard.exampleAr}
+                    </div>
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        speakEnglish(currentCard.exampleEn);
+                      }}
+                      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] text-xs"
+                    >
+                      <Volume2 className="w-3.5 h-3.5" />
+                      <span>نطق جملة المثال</span>
+                    </button>
+                  </div>
+                )}
+
+                <div className="w-full pt-3 flex items-center justify-between text-[11px] text-[#b9b6d5]/70 border-t border-white/5">
+                  <span>المجال: {categories.find(c => c.id === currentCard.category)?.label || currentCard.category}</span>
+                  <span>معامل الصعوبة: {currentCard.easeFactor || 2.5}</span>
+                </div>
+              </div>
+
+              {/* SM-2 Spaced Repetition Rating Controls */}
+              {isFlipped ? (
+                <div className="space-y-2">
+                  <div className="text-xs text-center font-bold text-[#dedbf4]">
+                    كيف كان تذكرك للكلمة؟ (خوارزمية SM-2 تحدد موعد المراجعة القادمة)
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                    <button
+                      onClick={() => handleRateCard(1)}
+                      className="p-3 rounded-xl bg-[#ff4f9a]/15 hover:bg-[#ff4f9a]/30 border border-[#ff4f9a]/30 text-white text-xs font-bold transition-all cursor-pointer text-center space-y-1"
+                    >
+                      <span className="block text-sm text-[#ff4f9a]">نسيتها تماماً</span>
+                      <span className="text-[10px] text-[#b9b6d5] block">غداً (1d)</span>
+                    </button>
+
+                    <button
+                      onClick={() => handleRateCard(2)}
+                      className="p-3 rounded-xl bg-[#ff9c66]/15 hover:bg-[#ff9c66]/30 border border-[#ff9c66]/30 text-white text-xs font-bold transition-all cursor-pointer text-center space-y-1"
+                    >
+                      <span className="block text-sm text-[#ff9c66]">صعبة جداً</span>
+                      <span className="text-[10px] text-[#b9b6d5] block">غداً (1d)</span>
+                    </button>
+
+                    <button
+                      onClick={() => handleRateCard(3)}
+                      className="p-3 rounded-xl bg-[#ffd166]/15 hover:bg-[#ffd166]/30 border border-[#ffd166]/30 text-white text-xs font-bold transition-all cursor-pointer text-center space-y-1"
+                    >
+                      <span className="block text-sm text-[#ffd166]">تذكرتها بجهد</span>
+                      <span className="text-[10px] text-[#b9b6d5] block">بعد 3 أيام</span>
+                    </button>
+
+                    <button
+                      onClick={() => handleRateCard(4)}
+                      className="p-3 rounded-xl bg-[#41e7ff]/15 hover:bg-[#41e7ff]/30 border border-[#41e7ff]/30 text-white text-xs font-bold transition-all cursor-pointer text-center space-y-1"
+                    >
+                      <span className="block text-sm text-[#41e7ff]">سهلة</span>
+                      <span className="text-[10px] text-[#b9b6d5] block">بعد 6 أيام</span>
+                    </button>
+
+                    <button
+                      onClick={() => handleRateCard(5)}
+                      className="p-3 rounded-xl bg-[#c4ff55]/15 hover:bg-[#c4ff55]/30 border border-[#c4ff55]/30 text-white text-xs font-black transition-all cursor-pointer text-center space-y-1 col-span-2 sm:col-span-1"
+                    >
+                      <span className="block text-sm text-[#c4ff55]">متقنة تماماً 👑</span>
+                      <span className="text-[10px] text-[#b9b6d5] block">بعد أسبوعين+</span>
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <div className="text-center">
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      setIsFlipped(true);
+                    }}
+                    className="w-full py-3.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-white font-bold text-sm cursor-pointer transition-all"
+                  >
+                    عرض المعنى وأزرار التقييم 🔄
+                  </button>
+                </div>
+              )}
+            </>
+          )}
         </section>
       )}
 

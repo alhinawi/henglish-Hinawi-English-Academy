@@ -140,6 +140,29 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
       setAssessmentResult(result);
       setRecordingState('COMPLETED');
       playSound('correct');
+
+      // Persist student evaluation record for analytics & teacher review
+      try {
+        const historyItem = {
+          id: `eval-${Date.now()}`,
+          studentName: 'الطالب الحالي (Current Learner)',
+          timestamp: new Date().toISOString(),
+          targetSentence,
+          overallScore: result.overallScore,
+          scores: {
+            pronunciation: result.pronunciationScore,
+            fluency: result.fluencyScore,
+            accuracy: result.accuracyScore,
+            completeness: result.completenessScore,
+          },
+          mispronouncedCount: result.problematicSounds?.length || 0,
+          wpm: result.wordsPerMinute,
+          phoneticTipAr: result.recommendationsAr?.[0] || 'استمر في التكرار والمحاكاة لضبط مخارج الحروف.',
+        };
+        const existing = JSON.parse(localStorage.getItem('henglish_speaking_evaluations_v2') || '[]');
+        localStorage.setItem('henglish_speaking_evaluations_v2', JSON.stringify([historyItem, ...existing.slice(0, 49)]));
+      } catch {}
+
       if (result.overallScore >= 80) {
         fireCelebration();
       }
