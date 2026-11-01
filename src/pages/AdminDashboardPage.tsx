@@ -34,6 +34,7 @@ import {
   Cpu,
 } from "lucide-react";
 import { AdminAiManagementSection } from "../components/admin/AdminAiManagementSection";
+import { AdminTtsManagementSection } from "../components/admin/AdminTtsManagementSection";
 
 interface AdminDashboardPageProps {
   onNavigate: (route: PageRoute) => void;
@@ -97,7 +98,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 }) => {
   const [courses, setCourses] = useState<CourseItem[]>(COURSES_CATALOG);
   const [activeTab, setActiveTab] = useState<
-    "courses" | "lessons" | "students" | "videos" | "speaking" | "ai"
+    "courses" | "lessons" | "students" | "videos" | "speaking" | "ai" | "tts"
   >("courses");
 
   // Video Management State
@@ -392,6 +393,21 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
             >
               <Cpu className="w-4 h-4" />
               <span>إدارة الذكاء الاصطناعي (AI Router) 🤖</span>
+            </button>
+
+            <button
+              onClick={() => {
+                playSound("click");
+                setActiveTab("tts");
+              }}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
+                activeTab === "tts"
+                  ? "bg-linear-to-r from-indigo-500 to-purple-500 text-white shadow-lg font-black"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
+              }`}
+            >
+              <Volume2 className="w-4 h-4" />
+              <span>محركات الصوت السحابية (Cloud TTS) 🎙️</span>
             </button>
           </div>
         </div>
@@ -1162,6 +1178,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
       {/* TAB 6: AI MULTI-PROVIDER MANAGEMENT */}
       {activeTab === "ai" && <AdminAiManagementSection />}
+
+      {/* TAB 7: MULTI-TIER CLOUD TTS MANAGEMENT */}
+      {activeTab === "tts" && <AdminTtsManagementSection />}
     </div>
   );
 };

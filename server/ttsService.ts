@@ -1,6 +1,9 @@
 // ==============================================================================
-// Henglish Academy (HENGLISH) - MULTI-TIER NATURAL TTS SERVICE
-// Supports Kokoro TTS, ElevenLabs, Google Cloud TTS, and Audio Caching
+// Henglish Academy (HENGLISH) - MULTI-TIER CLOUD TTS SERVICE
+// Tier 1: ElevenLabs (Primary / Original Default)
+// Tier 2: Deepgram Aura-2 / Flux (1st Cloud Fallback)
+// Tier 3: Cartesia Sonic-3.6 (2nd Cloud Fallback with Commercial License Check)
+// Tier 4: Browser SpeechSynthesis (Final Client-Side Fallback)
 // ==============================================================================
 
 import crypto from 'node:crypto';
@@ -38,7 +41,7 @@ function loadEnvFile() {
 
 loadEnvFile();
 
-export type TtsProvider = 'kokoro' | 'elevenlabs' | 'google-cloud' | 'browser';
+export type TtsProvider = 'elevenlabs' | 'deepgram' | 'cartesia' | 'browser';
 export type VoiceAccent = 'US' | 'UK';
 export type VoiceGender = 'female' | 'male';
 
@@ -48,6 +51,7 @@ export interface TtsSynthesisRequest {
   gender: VoiceGender;
   speed?: number;
   voiceId?: string;
+  providerOverride?: TtsProvider;
 }
 
 export interface TtsSynthesisResponse {
@@ -57,162 +61,589 @@ export interface TtsSynthesisResponse {
   voiceId: string;
   cached: boolean;
   mimeType: string;
+  fallbackChain?: Array<{ provider: TtsProvider; status: 'attempted' | 'failed' | 'success'; reason?: string }>;
+  latencyMs?: number;
 }
 
-// In-Memory Audio Cache (key -> base64 audio)
-const audioCache = new Map<string, { base64: string; mimeType: string }>();
-
-function generateAudioCacheKey(text: string, accent: string, gender: string, speed: number, voiceId: string): string {
-  const hash = crypto.createHash('sha256');
-  hash.update(`${text}_${accent}_${gender}_${speed}_${voiceId}`);
-  return hash.digest('hex');
+export interface ProviderHealth {
+  id: TtsProvider;
+  name: string;
+  role: 'primary' | 'fallback_1' | 'fallback_2' | 'final_fallback';
+  status: 'healthy' | 'degraded' | 'disabled' | 'unconfigured';
+  hasApiKey: boolean;
+  totalRequests: number;
+  successCount: number;
+  failureCount: number;
+  consecutiveFailures: number;
+  lastFailureAt?: string;
+  lastSuccessAt?: string;
+  averageLatencyMs: number;
+  commercialLicenseStatus: 'licensed' | 'evaluation_only' | 'unrestricted';
+  notes: string;
 }
 
-// Standard Voice ID Mappings from ElevenLabs library
+// ------------------------------------------------------------------------------
+// Official Voice Profiles across Providers (Preserving Exact US/UK Accents)
+// ------------------------------------------------------------------------------
 export const VOICE_PROFILES = {
   elevenlabs: {
-    'US-female': 'EXAVITQu4vr4xnSDxMaL', // Sarah (Mature, Reassuring, Confident)
+    'US-female': 'EXAVITQu4vr4xnSDxMaL', // Sarah (Original default, mature, reassuring)
     'US-male': 'CwhRBWXzGAHq8TQ4Fs17',   // Roger (Laid-Back, Casual, Resonant)
     'UK-female': 'Xb7hH8MSUJpSbSDYk0k2', // Alice (Clear, Engaging Educator)
     'UK-male': 'JBFqnCBsd6RMkjVDRZzb',   // George (Warm, Captivating Storyteller)
   },
-  'google-cloud': {
-    'US-female': 'en-US-Neural2-F',
-    'US-male': 'en-US-Neural2-D',
-    'UK-female': 'en-GB-Neural2-A',
-    'UK-male': 'en-GB-Neural2-B',
+  deepgram: {
+    'US-female': 'aura-2-asteria-en',    // Asteria (Clear, natural American female)
+    'US-male': 'aura-2-orion-en',        // Orion (Warm, professional American male)
+    'UK-female': 'aura-2-pandora-en',    // Pandora (British feminine, smooth, articulate)
+    'UK-male': 'aura-2-draco-en',        // Draco (British masculine, crisp, engaging)
   },
-  kokoro: {
-    'US-female': 'af_heart',
-    'US-male': 'am_adam',
-    'UK-female': 'bf_emma',
-    'UK-male': 'bm_george',
+  cartesia: {
+    // Sonic-3.6 official default UUIDs from Cartesia Library
+    'US-female': 'db6b0ed5-d5d3-463d-ae85-518a07d3c2b4', // Skylar (Natural, conversational US female)
+    'US-male': '47c38ca4-5f35-497b-b1a3-415245fb35e1',   // Daniel (Warm, articulate US male)
+    'UK-female': '62ae83ad-4f6a-430b-af41-a9bede9286ca', // Gemma (Decisive, clear British female)
+    'UK-male': '71a7ad14-091c-4e8e-a314-022ece01c121',   // Archie/Reading (Composed British male)
   },
 };
 
-/**
- * Synthesize speech via configured server provider with caching
- */
-export async function synthesizeSpeech(req: TtsSynthesisRequest): Promise<TtsSynthesisResponse> {
+// ------------------------------------------------------------------------------
+// In-Memory Audio Cache & Provider Telemetry
+// ------------------------------------------------------------------------------
+const audioCache = new Map<string, { base64: string; mimeType: string; provider: TtsProvider; createdAt: number }>();
+const inflightRequests = new Map<string, Promise<TtsSynthesisResponse>>();
+
+export const providerStats: Record<TtsProvider, ProviderHealth> = {
+  elevenlabs: {
+    id: 'elevenlabs',
+    name: 'ElevenLabs',
+    role: 'primary',
+    status: 'unconfigured',
+    hasApiKey: false,
+    totalRequests: 0,
+    successCount: 0,
+    failureCount: 0,
+    consecutiveFailures: 0,
+    averageLatencyMs: 0,
+    commercialLicenseStatus: 'licensed',
+    notes: 'المزود الرئيسي الأصلي والافتراضي لقراءة نصوص المنصة',
+  },
+  deepgram: {
+    id: 'deepgram',
+    name: 'Deepgram Aura-2',
+    role: 'fallback_1',
+    status: 'unconfigured',
+    hasApiKey: false,
+    totalRequests: 0,
+    successCount: 0,
+    failureCount: 0,
+    consecutiveFailures: 0,
+    averageLatencyMs: 0,
+    commercialLicenseStatus: 'licensed',
+    notes: 'بديل سحابي أول فائق السرعة بزمن استجابة فوري',
+  },
+  cartesia: {
+    id: 'cartesia',
+    name: 'Cartesia Sonic',
+    role: 'fallback_2',
+    status: 'unconfigured',
+    hasApiKey: false,
+    totalRequests: 0,
+    successCount: 0,
+    failureCount: 0,
+    consecutiveFailures: 0,
+    averageLatencyMs: 0,
+    commercialLicenseStatus: 'evaluation_only', // Commercial license required for prod
+    notes: 'بديل سحابي ثانٍ (Sonic-3.6) يتطلب تفعيل الترخيص التجاري للإنتاج',
+  },
+  browser: {
+    id: 'browser',
+    name: 'Browser SpeechSynthesis',
+    role: 'final_fallback',
+    status: 'healthy',
+    hasApiKey: true,
+    totalRequests: 0,
+    successCount: 0,
+    failureCount: 0,
+    consecutiveFailures: 0,
+    averageLatencyMs: 0,
+    commercialLicenseStatus: 'unrestricted',
+    notes: 'المحرك المحلي النهائي في المتصفح في حال انقطاع السحابة',
+  },
+};
+
+// Cooldown tracking for circuit breaker
+const providerCooldowns: Record<TtsProvider, number> = {
+  elevenlabs: 0,
+  deepgram: 0,
+  cartesia: 0,
+  browser: 0,
+};
+
+const COOLDOWN_DURATION_MS = 60_000; // 1 minute cooldown after 3 consecutive failures
+const MAX_CONSECUTIVE_FAILURES = 3;
+
+function updateProviderStatus() {
   loadEnvFile();
   const env = process.env;
+
+  const elevenKey = env.ELEVENLABS_API_KEY || '';
+  providerStats.elevenlabs.hasApiKey = Boolean(elevenKey && elevenKey.trim() !== 'your_elevenlabs_api_key_here');
+  if (providerStats.elevenlabs.hasApiKey) {
+    if (Date.now() < providerCooldowns.elevenlabs) {
+      providerStats.elevenlabs.status = 'degraded';
+    } else {
+      providerStats.elevenlabs.status = 'healthy';
+    }
+  } else {
+    providerStats.elevenlabs.status = 'unconfigured';
+  }
+
+  const deepgramKey = env.DEEPGRAM_API_KEY || '';
+  providerStats.deepgram.hasApiKey = Boolean(deepgramKey && deepgramKey.trim() !== 'your_deepgram_api_key_here');
+  if (providerStats.deepgram.hasApiKey) {
+    if (Date.now() < providerCooldowns.deepgram) {
+      providerStats.deepgram.status = 'degraded';
+    } else {
+      providerStats.deepgram.status = 'healthy';
+    }
+  } else {
+    providerStats.deepgram.status = 'unconfigured';
+  }
+
+  const cartesiaKey = env.CARTESIA_API_KEY || '';
+  providerStats.cartesia.hasApiKey = Boolean(cartesiaKey && cartesiaKey.trim() !== 'your_cartesia_api_key_here');
+  const cartesiaCommercialLicense = env.CARTESIA_COMMERCIAL_LICENSE === 'true' || env.CARTESIA_COMMERCIAL_LICENSE === '1';
+  providerStats.cartesia.commercialLicenseStatus = cartesiaCommercialLicense ? 'licensed' : 'evaluation_only';
+
+  if (providerStats.cartesia.hasApiKey) {
+    if (process.env.NODE_ENV === 'production' && !cartesiaCommercialLicense) {
+      providerStats.cartesia.status = 'disabled';
+      providerStats.cartesia.notes = 'معطل في الإنتاج نظراً لأن ترخيص Cartesia المجاني مخصص للتجربة فقط.';
+    } else if (Date.now() < providerCooldowns.cartesia) {
+      providerStats.cartesia.status = 'degraded';
+    } else {
+      providerStats.cartesia.status = 'healthy';
+    }
+  } else {
+    providerStats.cartesia.status = 'unconfigured';
+  }
+}
+
+export function generateTtsCacheKey(
+  text: string,
+  provider: TtsProvider,
+  model: string,
+  voiceId: string,
+  accent: VoiceAccent,
+  speed: number,
+  format: string = 'mp3'
+): string {
+  const normalizedText = text.trim().toLowerCase().replace(/\s+/g, ' ');
+  const hash = crypto.createHash('sha256');
+  hash.update(`${normalizedText}_${provider}_${model}_${voiceId}_${accent}_${speed}_${format}`);
+  return hash.digest('hex');
+}
+
+// ------------------------------------------------------------------------------
+// Individual Provider Synthesizers
+// ------------------------------------------------------------------------------
+
+async function synthesizeWithElevenLabs(
+  text: string,
+  voiceId: string,
+  speed: number,
+  apiKey: string
+): Promise<{ base64: string; mimeType: string }> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 12000);
+
+  try {
+    const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'xi-api-key': apiKey,
+        'Accept': 'audio/mpeg',
+      },
+      body: JSON.stringify({
+        text,
+        model_id: 'eleven_multilingual_v2',
+        voice_settings: {
+          stability: 0.5,
+          similarity_boost: 0.75,
+          speed,
+        },
+      }),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      const errText = await response.text().catch(() => '');
+      throw new Error(`ElevenLabs HTTP ${response.status}: ${errText || response.statusText}`);
+    }
+
+    const arrayBuffer = await response.arrayBuffer();
+    const base64 = Buffer.from(arrayBuffer).toString('base64');
+    return { base64, mimeType: 'audio/mpeg' };
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function synthesizeWithDeepgram(
+  text: string,
+  modelOrVoice: string,
+  apiKey: string
+): Promise<{ base64: string; mimeType: string }> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10000);
+
+  try {
+    const url = new URL('https://api.deepgram.com/v1/speak');
+    url.searchParams.set('model', modelOrVoice);
+    url.searchParams.set('encoding', 'mp3');
+
+    const response = await fetch(url.toString(), {
+      method: 'POST',
+      headers: {
+        'Authorization': `Token ${apiKey}`,
+        'Content-Type': 'application/json',
+        'Accept': 'audio/mp3',
+      },
+      body: JSON.stringify({ text }),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      const errText = await response.text().catch(() => '');
+      throw new Error(`Deepgram HTTP ${response.status}: ${errText || response.statusText}`);
+    }
+
+    const arrayBuffer = await response.arrayBuffer();
+    const base64 = Buffer.from(arrayBuffer).toString('base64');
+    return { base64, mimeType: 'audio/mpeg' };
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function synthesizeWithCartesia(
+  text: string,
+  voiceId: string,
+  modelId: string,
+  apiKey: string
+): Promise<{ base64: string; mimeType: string }> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10000);
+
+  try {
+    const response = await fetch('https://api.cartesia.ai/tts/bytes', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Cartesia-Version': '2026-08-14',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model_id: modelId || 'sonic-3.6',
+        transcript: text,
+        voice: voiceId,
+        output_format: {
+          container: 'mp3',
+          sample_rate: 44100,
+          bit_rate: 128000,
+        },
+      }),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      const errText = await response.text().catch(() => '');
+      throw new Error(`Cartesia HTTP ${response.status}: ${errText || response.statusText}`);
+    }
+
+    const arrayBuffer = await response.arrayBuffer();
+    const base64 = Buffer.from(arrayBuffer).toString('base64');
+    return { base64, mimeType: 'audio/mpeg' };
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Multi-Tier Fallback Dispatcher
+// ------------------------------------------------------------------------------
+
+export async function synthesizeSpeech(req: TtsSynthesisRequest): Promise<TtsSynthesisResponse> {
+  loadEnvFile();
+  updateProviderStatus();
+
+  const env = process.env;
+  const startTime = Date.now();
   const speed = req.speed || 1.0;
   const keyType = `${req.accent}-${req.gender}` as const;
+  const text = req.text.trim();
 
-  const elevenlabsKey = env.ELEVENLABS_API_KEY || '';
-  const googleTtsKey = env.GOOGLE_TTS_API_KEY || '';
-  const kokoroUrl = env.KOKORO_TTS_ENDPOINT || '';
-
-  // Select provider based on configuration & available keys
-  let provider: TtsProvider = 'browser';
-  let targetVoiceId = req.voiceId || '';
-
-  if (elevenlabsKey && elevenlabsKey !== 'your_elevenlabs_api_key_here') {
-    provider = 'elevenlabs';
-    targetVoiceId = targetVoiceId || VOICE_PROFILES.elevenlabs[keyType] || VOICE_PROFILES.elevenlabs['US-female'];
-  } else if (googleTtsKey && googleTtsKey !== 'your_google_tts_api_key_here') {
-    provider = 'google-cloud';
-    targetVoiceId = targetVoiceId || VOICE_PROFILES['google-cloud'][keyType] || VOICE_PROFILES['google-cloud']['US-female'];
-  } else if (kokoroUrl) {
-    provider = 'kokoro';
-    targetVoiceId = targetVoiceId || VOICE_PROFILES.kokoro[keyType] || VOICE_PROFILES.kokoro['US-female'];
+  // Deduplicate inflight requests for identical requests
+  const flightKey = `${text}_${req.accent}_${req.gender}_${speed}_${req.voiceId || ''}`;
+  const existingInflight = inflightRequests.get(flightKey);
+  if (existingInflight) {
+    return existingInflight;
   }
 
-  // Check cache
-  const cacheKey = generateAudioCacheKey(req.text, req.accent, req.gender, speed, targetVoiceId);
-  const cachedItem = audioCache.get(cacheKey);
-  if (cachedItem) {
-    return {
-      audioBase64: cachedItem.base64,
-      provider,
-      voiceId: targetVoiceId,
-      cached: true,
-      mimeType: cachedItem.mimeType,
-    };
-  }
+  const executionPromise: Promise<TtsSynthesisResponse> = (async (): Promise<TtsSynthesisResponse> => {
+    const fallbackChain: Array<{ provider: TtsProvider; status: 'attempted' | 'failed' | 'success'; reason?: string }> = [];
 
-  // Provider: ElevenLabs
-  if (provider === 'elevenlabs') {
-    try {
-      const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${targetVoiceId}`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'xi-api-key': elevenlabsKey,
-        },
-        body: JSON.stringify({
-          text: req.text,
-          model_id: 'eleven_multilingual_v2',
-          voice_settings: {
-            stability: 0.5,
-            similarity_boost: 0.75,
-            speed: speed,
-          },
-        }),
-      });
+    // --------------------------------------------------------------------------
+    // TIER 1: ElevenLabs (Primary Reader)
+    // --------------------------------------------------------------------------
+    const elevenlabsKey = env.ELEVENLABS_API_KEY || '';
+    const elevenlabsVoiceId = req.voiceId || env[`ELEVENLABS_${req.accent}_VOICE_ID`] || VOICE_PROFILES.elevenlabs[keyType] || VOICE_PROFILES.elevenlabs['US-female'];
+    const elevenModel = 'eleven_multilingual_v2';
 
-      if (response.ok) {
-        const arrayBuffer = await response.arrayBuffer();
-        const base64 = Buffer.from(arrayBuffer).toString('base64');
-        audioCache.set(cacheKey, { base64, mimeType: 'audio/mpeg' });
-
+    if (elevenlabsKey && elevenlabsKey !== 'your_elevenlabs_api_key_here' && Date.now() >= providerCooldowns.elevenlabs) {
+      const cacheKey = generateTtsCacheKey(text, 'elevenlabs', elevenModel, elevenlabsVoiceId, req.accent, speed);
+      const cached = audioCache.get(cacheKey);
+      if (cached) {
         return {
-          audioBase64: base64,
-          provider: 'elevenlabs',
-          voiceId: targetVoiceId,
-          cached: false,
-          mimeType: 'audio/mpeg',
+          audioBase64: cached.base64,
+          provider: 'elevenlabs' as const,
+          voiceId: elevenlabsVoiceId,
+          cached: true,
+          mimeType: cached.mimeType,
+          latencyMs: Date.now() - startTime,
         };
       }
-    } catch (err) {
-      console.warn('ElevenLabs synthesis failed, falling back to browser synthesis:', err);
-    }
-  }
 
-  // Provider: Google Cloud TTS
-  if (provider === 'google-cloud') {
-    try {
-      const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${googleTtsKey}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          input: { text: req.text },
-          voice: {
-            languageCode: req.accent === 'UK' ? 'en-GB' : 'en-US',
-            name: targetVoiceId,
-            ssmlGender: req.gender.toUpperCase(),
-          },
-          audioConfig: {
-            audioEncoding: 'MP3',
-            speakingRate: speed,
-          },
-        }),
-      });
+      fallbackChain.push({ provider: 'elevenlabs', status: 'attempted' });
+      providerStats.elevenlabs.totalRequests++;
 
-      if (response.ok) {
-        const data = await response.json();
-        if (data.audioContent) {
-          audioCache.set(cacheKey, { base64: data.audioContent, mimeType: 'audio/mpeg' });
-          return {
-            audioBase64: data.audioContent,
-            provider: 'google-cloud',
-            voiceId: targetVoiceId,
-            cached: false,
-            mimeType: 'audio/mpeg',
-          };
+      try {
+        const audio = await synthesizeWithElevenLabs(text, elevenlabsVoiceId, speed, elevenlabsKey);
+        audioCache.set(cacheKey, { base64: audio.base64, mimeType: audio.mimeType, provider: 'elevenlabs', createdAt: Date.now() });
+
+        providerStats.elevenlabs.successCount++;
+        providerStats.elevenlabs.consecutiveFailures = 0;
+        providerStats.elevenlabs.lastSuccessAt = new Date().toISOString();
+        const latency = Date.now() - startTime;
+        providerStats.elevenlabs.averageLatencyMs = Math.round((providerStats.elevenlabs.averageLatencyMs + latency) / 2);
+
+        fallbackChain[fallbackChain.length - 1].status = 'success';
+        return {
+          audioBase64: audio.base64,
+          provider: 'elevenlabs' as const,
+          voiceId: elevenlabsVoiceId,
+          cached: false,
+          mimeType: audio.mimeType,
+          fallbackChain,
+          latencyMs: latency,
+        };
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : String(err);
+        console.warn('[TTS] ElevenLabs primary synthesis failed, transitioning to Deepgram fallback:', errMsg);
+        fallbackChain[fallbackChain.length - 1].status = 'failed';
+        fallbackChain[fallbackChain.length - 1].reason = errMsg;
+
+        providerStats.elevenlabs.failureCount++;
+        providerStats.elevenlabs.consecutiveFailures++;
+        providerStats.elevenlabs.lastFailureAt = new Date().toISOString();
+        if (providerStats.elevenlabs.consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
+          providerCooldowns.elevenlabs = Date.now() + COOLDOWN_DURATION_MS;
         }
       }
-    } catch (err) {
-      console.warn('Google Cloud TTS failed, falling back:', err);
+    } else {
+      fallbackChain.push({
+        provider: 'elevenlabs',
+        status: 'failed',
+        reason: !elevenlabsKey ? 'Unconfigured API key' : 'Provider in cooldown',
+      });
     }
-  }
 
-  // Fallback indicator: tells the client to use its enhanced, calibrated browser SpeechSynthesis
+    // --------------------------------------------------------------------------
+    // TIER 2: Deepgram (1st Cloud Fallback)
+    // --------------------------------------------------------------------------
+    const deepgramKey = env.DEEPGRAM_API_KEY || '';
+    const deepgramVoice = env[`DEEPGRAM_${req.accent}_VOICE`] || VOICE_PROFILES.deepgram[keyType] || VOICE_PROFILES.deepgram['US-female'];
+
+    if (deepgramKey && deepgramKey !== 'your_deepgram_api_key_here' && Date.now() >= providerCooldowns.deepgram) {
+      const cacheKey = generateTtsCacheKey(text, 'deepgram', 'aura-2', deepgramVoice, req.accent, speed);
+      const cached = audioCache.get(cacheKey);
+      if (cached) {
+        return {
+          audioBase64: cached.base64,
+          provider: 'deepgram' as const,
+          voiceId: deepgramVoice,
+          cached: true,
+          mimeType: cached.mimeType,
+          fallbackChain,
+          latencyMs: Date.now() - startTime,
+        };
+      }
+
+      fallbackChain.push({ provider: 'deepgram', status: 'attempted' });
+      providerStats.deepgram.totalRequests++;
+
+      try {
+        const audio = await synthesizeWithDeepgram(text, deepgramVoice, deepgramKey);
+        audioCache.set(cacheKey, { base64: audio.base64, mimeType: audio.mimeType, provider: 'deepgram', createdAt: Date.now() });
+
+        providerStats.deepgram.successCount++;
+        providerStats.deepgram.consecutiveFailures = 0;
+        providerStats.deepgram.lastSuccessAt = new Date().toISOString();
+        const latency = Date.now() - startTime;
+        providerStats.deepgram.averageLatencyMs = Math.round((providerStats.deepgram.averageLatencyMs + latency) / 2);
+
+        fallbackChain[fallbackChain.length - 1].status = 'success';
+        return {
+          audioBase64: audio.base64,
+          provider: 'deepgram' as const,
+          voiceId: deepgramVoice,
+          cached: false,
+          mimeType: audio.mimeType,
+          fallbackChain,
+          latencyMs: latency,
+        };
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : String(err);
+        console.warn('[TTS] Deepgram fallback synthesis failed, transitioning to Cartesia fallback:', errMsg);
+        fallbackChain[fallbackChain.length - 1].status = 'failed';
+        fallbackChain[fallbackChain.length - 1].reason = errMsg;
+
+        providerStats.deepgram.failureCount++;
+        providerStats.deepgram.consecutiveFailures++;
+        providerStats.deepgram.lastFailureAt = new Date().toISOString();
+        if (providerStats.deepgram.consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
+          providerCooldowns.deepgram = Date.now() + COOLDOWN_DURATION_MS;
+        }
+      }
+    } else {
+      fallbackChain.push({
+        provider: 'deepgram',
+        status: 'failed',
+        reason: !deepgramKey ? 'Unconfigured API key' : 'Provider in cooldown',
+      });
+    }
+
+    // --------------------------------------------------------------------------
+    // TIER 3: Cartesia (2nd Cloud Fallback with Commercial License Check)
+    // --------------------------------------------------------------------------
+    const cartesiaKey = env.CARTESIA_API_KEY || '';
+    const cartesiaModel = env.CARTESIA_TTS_MODEL || 'sonic-3.6';
+    const cartesiaVoiceId = env[`CARTESIA_${req.accent}_VOICE_ID`] || VOICE_PROFILES.cartesia[keyType] || VOICE_PROFILES.cartesia['US-female'];
+    const isCartesiaLicensed = env.CARTESIA_COMMERCIAL_LICENSE === 'true' || env.CARTESIA_COMMERCIAL_LICENSE === '1';
+
+    // Commercial licensing guard: If running in production without commercial license, skip Cartesia
+    const isProd = process.env.NODE_ENV === 'production';
+    const canUseCartesia = cartesiaKey && cartesiaKey !== 'your_cartesia_api_key_here' && (!isProd || isCartesiaLicensed) && Date.now() >= providerCooldowns.cartesia;
+
+    if (canUseCartesia) {
+      const cacheKey = generateTtsCacheKey(text, 'cartesia', cartesiaModel, cartesiaVoiceId, req.accent, speed);
+      const cached = audioCache.get(cacheKey);
+      if (cached) {
+        return {
+          audioBase64: cached.base64,
+          provider: 'cartesia' as const,
+          voiceId: cartesiaVoiceId,
+          cached: true,
+          mimeType: cached.mimeType,
+          fallbackChain,
+          latencyMs: Date.now() - startTime,
+        };
+      }
+
+      fallbackChain.push({ provider: 'cartesia', status: 'attempted' });
+      providerStats.cartesia.totalRequests++;
+
+      try {
+        const audio = await synthesizeWithCartesia(text, cartesiaVoiceId, cartesiaModel, cartesiaKey);
+        audioCache.set(cacheKey, { base64: audio.base64, mimeType: audio.mimeType, provider: 'cartesia', createdAt: Date.now() });
+
+        providerStats.cartesia.successCount++;
+        providerStats.cartesia.consecutiveFailures = 0;
+        providerStats.cartesia.lastSuccessAt = new Date().toISOString();
+        const latency = Date.now() - startTime;
+        providerStats.cartesia.averageLatencyMs = Math.round((providerStats.cartesia.averageLatencyMs + latency) / 2);
+
+        fallbackChain[fallbackChain.length - 1].status = 'success';
+        return {
+          audioBase64: audio.base64,
+          provider: 'cartesia' as const,
+          voiceId: cartesiaVoiceId,
+          cached: false,
+          mimeType: audio.mimeType,
+          fallbackChain,
+          latencyMs: latency,
+        };
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : String(err);
+        console.warn('[TTS] Cartesia fallback synthesis failed, falling back to browser synthesis:', errMsg);
+        fallbackChain[fallbackChain.length - 1].status = 'failed';
+        fallbackChain[fallbackChain.length - 1].reason = errMsg;
+
+        providerStats.cartesia.failureCount++;
+        providerStats.cartesia.consecutiveFailures++;
+        providerStats.cartesia.lastFailureAt = new Date().toISOString();
+        if (providerStats.cartesia.consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
+          providerCooldowns.cartesia = Date.now() + COOLDOWN_DURATION_MS;
+        }
+      }
+    } else {
+      fallbackChain.push({
+        provider: 'cartesia',
+        status: 'failed',
+        reason: !cartesiaKey
+          ? 'Unconfigured API key'
+          : (isProd && !isCartesiaLicensed)
+          ? 'Disabled: Commercial license required for production'
+          : 'Provider in cooldown',
+      });
+    }
+
+    // --------------------------------------------------------------------------
+    // TIER 4: Browser SpeechSynthesis (Final Client-Side Fallback)
+    // --------------------------------------------------------------------------
+    providerStats.browser.totalRequests++;
+    providerStats.browser.successCount++;
+    fallbackChain.push({ provider: 'browser', status: 'success', reason: 'Client-side SpeechSynthesis activation' });
+
+    return {
+      provider: 'browser' as const,
+      voiceId: elevenlabsVoiceId || 'browser-native',
+      cached: false,
+      mimeType: 'audio/native-speech',
+      fallbackChain,
+      latencyMs: Date.now() - startTime,
+    };
+  })();
+
+  inflightRequests.set(flightKey, executionPromise);
+  try {
+    return await executionPromise;
+  } finally {
+    inflightRequests.delete(flightKey);
+  }
+}
+
+// ------------------------------------------------------------------------------
+// Admin Health & Configuration Exports
+// ------------------------------------------------------------------------------
+
+export function getTtsProviderHealth(): ProviderHealth[] {
+  loadEnvFile();
+  updateProviderStatus();
+  return Object.values(providerStats);
+}
+
+export function getTtsCacheStats(): { size: number; hitRate: number } {
+  const total = Object.values(providerStats).reduce((acc, curr) => acc + curr.totalRequests, 0);
+  const successes = Object.values(providerStats).reduce((acc, curr) => acc + curr.successCount, 0);
   return {
-    provider: 'browser',
-    voiceId: targetVoiceId || 'browser-native',
-    cached: false,
-    mimeType: 'audio/native-speech',
+    size: audioCache.size,
+    hitRate: total > 0 ? Math.round(((total - successes) / total) * 100) : 0,
   };
 }
 
+export function clearTtsAudioCache(): void {
+  audioCache.clear();
+}

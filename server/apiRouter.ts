@@ -12,7 +12,13 @@ import {
   getRecentUsageAnalytics,
   clearAiResponseCache,
 } from './ai/aiRouter';
-import { synthesizeSpeech, TtsSynthesisRequest } from './ttsService';
+import { 
+  synthesizeSpeech, 
+  TtsSynthesisRequest, 
+  getTtsProviderHealth, 
+  getTtsCacheStats, 
+  clearTtsAudioCache 
+} from './ttsService';
 import {
   dispatchTranslation,
   dispatchTranslationAssistant,
@@ -112,6 +118,23 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
   if (url === '/api/ai/admin/clear-cache' && req.method === 'POST') {
     clearAiResponseCache();
     sendJson(res, 200, { success: true, message: 'In-memory AI cache cleared successfully.' });
+    return true;
+  }
+
+  // Admin TTS Health & Telemetry endpoint
+  if (url === '/api/tts/admin/health' && req.method === 'GET') {
+    sendJson(res, 200, {
+      providers: getTtsProviderHealth(),
+      cache: getTtsCacheStats(),
+      timestamp: new Date().toISOString(),
+    });
+    return true;
+  }
+
+  // Admin Clear TTS Audio Cache
+  if (url === '/api/tts/admin/clear-cache' && req.method === 'POST') {
+    clearTtsAudioCache();
+    sendJson(res, 200, { success: true, message: 'In-memory TTS audio cache cleared successfully.' });
     return true;
   }
 
