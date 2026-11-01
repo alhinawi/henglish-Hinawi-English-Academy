@@ -69,17 +69,17 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         </button>
         <span>/</span>
         <button 
-          onClick={() => { playSound('click'); onNavigate('courses'); }} 
+          onClick={() => { playSound('click'); onNavigate('grammar'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          الكورسات
+          أكاديمية الجرامر
         </button>
         <span>/</span>
         <button 
           onClick={() => { playSound('click'); onNavigate('courses/grammar/future-perfect'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          المستقبل التام
+          أزمنة المستقبل: المستقبل التام
         </button>
         <span>/</span>
         <span className="text-[#ffd166] font-bold">الدرس 0{currentLesson.number}</span>

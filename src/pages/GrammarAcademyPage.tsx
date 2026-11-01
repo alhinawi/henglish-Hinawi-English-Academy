@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
+import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { ONLINE_IMAGES } from '../data/imageAssets';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import { 
@@ -33,15 +34,17 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
     'أزمنة المضارع',
     'أزمنة الماضي',
     'أزمنة المستقبل',
-    'حالات الشرط',
-    'المبني للمجهول والتركيب',
+    'مواضيع وقواعد أخرى',
     'الأساسيات والتركيب اللغوي',
   ];
 
   const levels = ['All', 'A1', 'A2', 'B1', 'B2', 'C1'];
 
   const filteredRules = ALL_GRAMMAR_RULES.filter(rule => {
-    const matchesCategory = selectedCategory === 'All' || rule.category === selectedCategory;
+    const matchesCategory =
+      selectedCategory === 'All' ||
+      rule.category === selectedCategory ||
+      (selectedCategory === 'مواضيع وقواعد أخرى' && (rule.category === 'حالات الشرط' || rule.category === 'المبني للمجهول والتركيب' || rule.category === 'مواضيع وقواعد أخرى'));
     const matchesLevel = selectedLevel === 'All' || rule.level.startsWith(selectedLevel);
     const q = searchQuery.toLowerCase().trim();
     const matchesSearch = !q || 
@@ -103,7 +106,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#c4ff55]" />
-              ١٦ قاعدة أساسية مشروحة
+              ٢١+ قاعدة تخصصية وماستر كلاس متكامل
             </span>
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#41e7ff]" />
@@ -151,7 +154,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                   : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
               }`}
             >
-              {cat === 'All' ? 'جميع القواعد (16)' : cat}
+              {cat === 'All' ? `جميع القواعد (${ALL_GRAMMAR_RULES.length})` : cat}
             </button>
           ))}
         </div>
@@ -310,6 +313,64 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                       exit={{ opacity: 0, height: 0 }}
                       className="border-t border-white/10 p-6 sm:p-8 bg-[#09091a]/60 space-y-8"
                     >
+                      {/* Flagship Future Perfect Masterclass Integrated Hub */}
+                      {rule.id === 'future-perfect' && (
+                        <div className="p-6 rounded-3xl bg-linear-to-r from-[#ffd166]/15 via-[#ff9c66]/10 to-[#41e7ff]/15 border-2 border-[#ffd166]/40 space-y-4 shadow-xl">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div>
+                              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 mb-2">
+                                <Sparkles className="w-3.5 h-3.5" />
+                                <span>ماستر كلاس المستقبل التام الشامل (Future Perfect Masterclass)</span>
+                              </div>
+                              <h4 className="text-lg font-black text-white">
+                                مسار الماستر كلاس المتكامل المدمج (٨ موديولات تفاعلية)
+                              </h4>
+                              <p className="text-xs text-[#dedbf4]">
+                                تم دمج كورس المستقبل التام رسمياً داخل أكاديمية الجرامر (أزمنة المستقبل). يمكنك دراسة القاعدة الملخصة هنا أو فتح أي موديول من موديولات الماستر كلاس:
+                              </p>
+                            </div>
+
+                            <button
+                              onClick={() => {
+                                playSound('click');
+                                onNavigate('courses/grammar/future-perfect');
+                              }}
+                              className="px-5 py-2.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] text-xs font-black hover:brightness-110 shadow-lg cursor-pointer transition-transform shrink-0 flex items-center gap-1.5"
+                            >
+                              <span>فتح نظرة عامة على الكورس 👑</span>
+                              <ArrowRight className="w-4 h-4 rotate-180" />
+                            </button>
+                          </div>
+
+                          {/* 8 Flagship Interactive Lessons Grid */}
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 pt-2">
+                            {FUTURE_PERFECT_LESSONS.map((l) => (
+                              <button
+                                key={l.id}
+                                onClick={() => {
+                                  playSound('click');
+                                  onNavigate('lesson', l.id);
+                                }}
+                                className="p-3 rounded-2xl bg-black/40 hover:bg-black/60 border border-white/10 hover:border-[#ffd166]/50 text-right cursor-pointer transition-all group"
+                              >
+                                <div className="flex items-center justify-between mb-1">
+                                  <span className="text-[10px] font-black text-[#ffd166] bg-[#ffd166]/10 px-2 py-0.5 rounded-md">
+                                    الدرس 0{l.number}
+                                  </span>
+                                  <span className="text-[10px] text-[#dedbf4]/60 font-semibold">{l.readTime}</span>
+                                </div>
+                                <div className="text-xs font-black text-white group-hover:text-[#41e7ff] transition-colors truncate">
+                                  {l.title}
+                                </div>
+                                <div className="text-[11px] text-[#dedbf4]/70 truncate mt-0.5">
+                                  {l.subtitle}
+                                </div>
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
                       {/* Formulas Breakdown */}
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                         <div className="p-4 rounded-2xl bg-white/5 border border-white/10">

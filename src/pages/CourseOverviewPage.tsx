@@ -25,12 +25,31 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
       
+      {/* Breadcrumb Navigation */}
+      <nav className="flex items-center gap-2 text-xs text-[#b9b6d5] font-semibold flex-wrap">
+        <button 
+          onClick={() => { playSound('click'); onNavigate('dashboard'); }} 
+          className="hover:text-white transition-colors cursor-pointer"
+        >
+          الرئيسية
+        </button>
+        <span>/</span>
+        <button 
+          onClick={() => { playSound('click'); onNavigate('grammar'); }} 
+          className="hover:text-white transition-colors cursor-pointer"
+        >
+          أكاديمية الجرامر
+        </button>
+        <span>/</span>
+        <span className="text-[#ffd166] font-bold">أزمنة المستقبل: ماستر كلاس المستقبل التام</span>
+      </nav>
+
       {/* Course Hero Banner */}
       <div className="glass-panel rounded-3xl p-8 sm:p-12 relative overflow-hidden border-2 border-[#ffd166]/30 shadow-[0_0_50px_rgba(255,209,102,0.1)]">
         <div className="max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/40">
             <Sparkles className="w-4 h-4" />
-            <span>THE FLAGSHIP COURSE • كورس المستقبل التام الشامل</span>
+            <span>GRAMMAR ACADEMY • كورس المستقبل التام الشامل المدمج</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white leading-tight">

@@ -58,25 +58,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       id: "grammar",
       title: "أكاديمية الجرامر",
       titleEn: "Grammar Academy",
-      desc: "١٦ قاعدة أساسية من أزمنة المضارع والماضي وحتى المستقبل التام وحالات الشرط.",
+      desc: "منهج القواعد المتكامل: أزمنة المضارع والماضي والمستقبل (بما فيها ماستر كلاس المستقبل التام الشامل) وحالات الشرط والقواعد المتقدمة.",
       icon: GraduationCap,
       route: "grammar" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#ffd166]/10",
-      badge: "A1 - C1",
-      lessonsCount: "١٦ درساً تفاعلياً",
+      badge: "A1 - C1 • شامل",
+      lessonsCount: "٢١+ قاعدة وماستر كلاس",
       accentColor: "#41e7ff",
-    },
-    {
-      id: "future-perfect",
-      title: "المستقبل التام ⚡",
-      titleEn: "Future Perfect Masterclass",
-      desc: "الكورس الشامل: ٨ دروس تفاعلية، خطوط زمنية، كويزات ومحادثات حية.",
-      icon: Sparkles,
-      route: "courses/grammar/future-perfect" as PageRoute,
-      color: "from-[#ffd166]/20 to-[#ff4f9a]/20",
-      badge: "الكورس الرائد 👑",
-      lessonsCount: "٨ موديولات",
-      accentColor: "#ffd166",
     },
     {
       id: "vocabulary",
@@ -549,7 +537,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         </div>
       </section>
 
-      {/* 3. ACADEMIES HUB (THE 8 CORE ACADEMIES + FUTURE PERFECT) */}
+      {/* 3. ACADEMIES HUB (THE 8 CORE ACADEMIES) */}
       <section className="space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>

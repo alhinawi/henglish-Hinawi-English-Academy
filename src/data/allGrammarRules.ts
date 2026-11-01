@@ -17,7 +17,7 @@ export interface GrammarQuizQuestion {
 export interface GrammarRuleItem {
   id: string;
   order: number;
-  category: 'أزمنة المضارع' | 'أزمنة الماضي' | 'أزمنة المستقبل' | 'حالات الشرط' | 'المبني للمجهول والتركيب' | 'الأساسيات والتركيب اللغوي';
+  category: 'أزمنة المضارع' | 'أزمنة الماضي' | 'أزمنة المستقبل' | 'مواضيع وقواعد أخرى' | 'حالات الشرط' | 'المبني للمجهول والتركيب' | 'الأساسيات والتركيب اللغوي';
   categoryEn: string;
   titleAr: string;
   titleEn: string;
@@ -34,6 +34,10 @@ export interface GrammarRuleItem {
   commonTraps: string[];
   examples: GrammarExample[];
   miniQuiz: GrammarQuizQuestion[];
+  isMasterclass?: boolean;
+  masterclassBadge?: string;
+  masterclassRoute?: string;
+  masterclassLessonsCount?: number;
 }
 
 export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
@@ -487,29 +491,29 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 9,
     category: 'أزمنة المستقبل',
     categoryEn: 'Future Tenses',
-    titleAr: 'المستقبل البسيط: المقارنة الشاملة بين Will و Going to',
-    titleEn: 'Future Simple (Will vs Going to)',
+    titleAr: 'المستقبل البسيط بـ Will: القرارات اللحظية والوعود والتنبؤ',
+    titleEn: 'Future Simple (Will)',
     level: 'A2 - تأسيسي',
-    goldenFormula: 'Will + V1  vs  am/is/are + going to + V1',
-    negativeFormula: "Won't + V1  vs  am/is/are not going to + V1",
-    questionFormula: 'Will + Subject + V1?  vs  Am/Is/Are + Subject + going to + V1?',
-    summaryAr: 'المعركة الشهيرة في الإنجليزي! Will للقرارات السريعة اللحظية، والوعود، والتنبؤ بدون دليل. بينما Going to للخطط المسبقة، والقرارات المدروسة، والتنبؤ القائم على دليل مرئي حالي.',
-    timelineDescription: 'نظرة إلى نقطة مستقبلية بناءً على قرار فوري أو خطة مسبقة أو علامة مادية واضحة.',
+    goldenFormula: 'will + Base Verb (V1)',
+    negativeFormula: "won't (will not) + Base Verb (V1)",
+    questionFormula: 'Will + Subject + Base Verb (V1)?',
+    summaryAr: 'صيغة القرارات السريعة اللحظية، والوعود، والعروض، والتهديدات، والتنبؤ العام بالمستقبل دون الاستناد إلى دليل ملموس.',
+    timelineDescription: 'قرار أو نبوءة تنطلق من لحظة الكلام متجهة مباشرة نحو المستقبل.',
     imageUrl: ONLINE_IMAGES.grammar.futureSimple,
-    imageAlt: 'Business strategist pointing at future company projections',
+    imageAlt: 'Business strategist making decisions',
     keyUsagePoints: [
-      'Will: قرارات لحظية فورية (Quick spontaneous decisions)',
-      'Will: الوعود والعروض والتهديدات (Promises, Offers, Warnings)',
-      'Going to: نوايا وخطط مسبقة ومدروسة (Prior plans & intentions)',
-      'Going to: تنبؤ مبني على دليل مرئي في اللحظة (Prediction with physical evidence)'
+      'القرارات الفورية التلقائية المتخذة في نفس لحظة الحديث (Spontaneous decisions)',
+      'الوعود والعهود الشخصية (Promises: I will help you)',
+      'العروض وتقديم المساعدة (Offers: I will carry that bag for you)',
+      'التنبؤ بالمستقبل بدون دليل حسي (Predictions based on opinion/guess)'
     ],
     egyptianTips: [
-      'لو جرس الباب رن دلوقتي حالا: I will open the door (قرار لحظي).',
-      'لو شايف غيوم سوداء كثيفة في السما: It is going to rain (تنبؤ بدليل مرئي).',
-      'لو ناوي تشتري لابتوب ومحوش فلوسه: I am going to buy a new laptop (خطة مسبقة).'
+      'لو جرس الباب رن دلوقتي حالا: I will open the door (قرار لحظي مش متخطط له).',
+      'مع عبارات الشك والاعتقاد: I think, I hope, I believe, Maybe دايماً بنستخدم will.',
+      'اختصار will هو \'ll، واختصار will not هو won\'t (انتبه لنطقها مش want).'
     ],
     commonTraps: [
-      'فخ استخدام will مع التنبؤ القائم على دليل: الخطأ Look at the clouds, it will rain، الصواب: It is going to rain.'
+      'فخ استخدام will مع أحداث لها دليل مرئي مباشر: الصواب استخدام Going to.'
     ],
     examples: [
       {
@@ -519,25 +523,77 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         context: 'قرار لحظي سريع'
       },
       {
-        en: 'Look at that fragile shelf; it is going to collapse under the heavy books!',
-        ar: 'انظر إلى ذلك الرف الهش؛ إنه على وشك الانهيار تحت وطأة الكتب الثقيلة!',
-        highlight: 'is going to collapse',
-        context: 'تنبؤ مبني على دليل مرئي واضح'
+        en: 'I promise I will never reveal your secret to anyone.',
+        ar: 'أعدك بأنني لن أفشي سرك لأي شخص أبداً.',
+        highlight: 'will never reveal',
+        context: 'وعد مؤكد'
       }
     ],
     miniQuiz: [
       {
-        question: 'I have already purchased the tickets; I ______ my grandparents in Luxor next Friday.',
-        options: ['am going to visit', 'will visit', 'visit', 'visited'],
+        question: 'Someone is knocking at the door. — I ______ and see who it is.',
+        options: ['will go', 'am going to go', 'went', 'have gone'],
         correct: 0,
-        explanation: 'شراء التذاكر مسبقاً يعني خطة ونية مؤكدة مسبقاً، فنستخدم am going to visit.'
+        explanation: 'قرار سريع وفوري اتخذ في لحظة سماع الطرق على الباب، فيستخدم will go.'
+      }
+    ]
+  },
+
+  {
+    id: 'be-going-to',
+    order: 10,
+    category: 'أزمنة المستقبل',
+    categoryEn: 'Future Tenses',
+    titleAr: 'المستقبل بـ Be Going To: الخطط والنوايا والتنبؤ بدليل مرئي',
+    titleEn: 'Be Going To',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'am / is / are + going to + Base Verb (V1)',
+    negativeFormula: 'am / is / are + not + going to + Base Verb (V1)',
+    questionFormula: 'Am / Is / Are + Subject + going to + Base Verb (V1)?',
+    summaryAr: 'صيغة الخطط والقرارات المسبقة المدروسة، والتنبؤ بأمر وشيك الحدوث بناءً على دليل حسي تراه بعينيك الآن.',
+    timelineDescription: 'خطة مسبقة أو شواهد مرئية في الحاضر تشير حتماً إلى وقوع الحدث مستقبلاً.',
+    imageUrl: ONLINE_IMAGES.courses.techEnglish,
+    imageAlt: 'Project team discussing planned sprint roadmaps',
+    keyUsagePoints: [
+      'خطط ونوايا مسبقة ومدروسة تم اتخاذ القرار بشأنها قبل لحظة الكلام (Prior plans & intentions)',
+      'تنبؤ بأمر حتمي أو وشيك مبني على دليل مرئي حالي (Predictions with present evidence)',
+      'التحذير من خطر وشيك الوقوع أمامك'
+    ],
+    egyptianTips: [
+      'لو شايف غيوم سودا كثيفة في السما: It is going to rain (تنبؤ بدليل مش مجرد تخمين).',
+      'لو محوش فلوس ومجهز نفسك تشتري لابتوب: I am going to buy a laptop (خطة مجهزة).',
+      'في النطق السريع اليومي للأمريكان بتتنطق Gonna بس متكتبهاش في الإيميلات الرسمية.'
+    ],
+    commonTraps: [
+      'فخ نسيان verb to be: الخطأ I going to travel، الصواب: I am going to travel.'
+    ],
+    examples: [
+      {
+        en: 'Look at those dark clouds! It is going to rain very soon.',
+        ar: 'انظر إلى تلك الغيوم الداكنة! إنها على وشك أن تمطر قريباً جداً.',
+        highlight: 'is going to rain',
+        context: 'تنبؤ قائم على دليل مرئي حسي'
+      },
+      {
+        en: 'We have saved enough capital; we are going to launch our e-commerce store next month.',
+        ar: 'لقد ادخرنا رأس مال كافياً؛ وسنطلق متجرنا الإلكتروني الشهر القادم.',
+        highlight: 'are going to launch',
+        context: 'خطة عمل مدروسة مسبقاً'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'Look at that fragile shelf; it ______ collapse under the heavy load!',
+        options: ['is going to', 'will', 'is', 'has'],
+        correct: 0,
+        explanation: 'الرف يهتز والكتب ثقيلة (دليل حسي مباشر أمامك)، فنستخدم is going to collapse.'
       }
     ]
   },
 
   {
     id: 'future-continuous',
-    order: 10,
+    order: 11,
     category: 'أزمنة المستقبل',
     categoryEn: 'Future Tenses',
     titleAr: 'المستقبل المستمر: حدث سيكون مستمراً في وقت محدد غداً',
@@ -582,7 +638,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
 
   {
     id: 'future-perfect',
-    order: 11,
+    order: 12,
     category: 'أزمنة المستقبل',
     categoryEn: 'Future Tenses',
     titleAr: 'المستقبل التام الشامل: اكتمال الفعل قبل موعد مستقبلي',
@@ -591,10 +647,14 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'will + have + Past Participle (V3)',
     negativeFormula: "won't + have + Past Participle (V3)",
     questionFormula: 'Will + Subject + have + V3?',
-    summaryAr: 'الكورس الرائد للمنصة! تقف في نقطة مستقبلية وتنظر إلى الخلف لترى أن الفعل قد اكتمل وانتهى أمره تماماً قبل موعد التسليم أو النقطة المحددة.',
+    summaryAr: 'الكورس الرائد المدمج في أكاديمية الجرامر! تقف في نقطة مستقبلية وتنظر إلى الخلف لترى أن الفعل قد اكتمل وانتهى أمره تماماً قبل موعد التسليم أو النقطة المحددة.',
     timelineDescription: 'نقطة انتهاء مكتملة تقع قبل موعد مستقبلي نهائي محدد (Deadline).',
     imageUrl: ONLINE_IMAGES.grammar.futurePerfect,
     imageAlt: 'Calendar deadline and completed milestone roadmap',
+    isMasterclass: true,
+    masterclassBadge: 'الكورس الرائد 👑 (8 دروس تفاعلية)',
+    masterclassRoute: 'courses/grammar/future-perfect',
+    masterclassLessonsCount: 8,
     keyUsagePoints: [
       'اكتمال فعل قبل حلول موعد مستقبلي محدد (By 8 PM, By 2030)',
       'الربط مع الروابط الزمنية (By the time, Before) مع مضارع بسيط',
@@ -632,56 +692,228 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ]
   },
 
-  // ==========================================
-  // 4. CONDITIONALS & MODALS (الشرط والأفعال الناقصة)
-  // ==========================================
   {
-    id: 'conditionals-all',
-    order: 12,
-    category: 'حالات الشرط',
-    categoryEn: 'Conditionals & Modals',
-    titleAr: 'حالات لو والشرط الأربعة: من الصفرية وحتى المستحيلة',
-    titleEn: 'All 4 Conditionals (0, 1st, 2nd, 3rd)',
-    level: 'B1 - متوسط',
-    goldenFormula: 'Zero: If + Pres, Pres | 1st: If + Pres, will+V1 | 2nd: If + Past, would+V1 | 3rd: If + had+V3, would have+V3',
-    negativeFormula: 'Unless = If not',
-    questionFormula: 'What would you do if...?',
-    summaryAr: 'كل قواعد "لو"! الصفرية للحقائق العلمية، الأولى لاحتمالات واقعية في المستقبل، الثانية لتخيلات غير حقيقية في الحاضر، والثالثة للندم على ما فات في الماضي.',
-    timelineDescription: 'شجرة احتمالات تربط بين السبب والنتيجة عبر الواقع والتخيل والندم التاريخي.',
-    imageUrl: ONLINE_IMAGES.grammar.conditionals,
-    imageAlt: 'Fork in the road representing conditional choices and outcomes',
+    id: 'future-perfect-continuous',
+    order: 13,
+    category: 'أزمنة المستقبل',
+    categoryEn: 'Future Tenses',
+    titleAr: 'المستقبل التام المستمر: قياس مدة استمرار الفعل حتى نقطة مستقبلية',
+    titleEn: 'Future Perfect Continuous',
+    level: 'B2 - فوق متوسط',
+    goldenFormula: 'will + have + been + Verb-ing',
+    negativeFormula: "won't + have + been + Verb-ing",
+    questionFormula: 'Will + Subject + have + been + Verb-ing?',
+    summaryAr: 'التركيز على المدة الزمنية المستمرة لحدث سيظل قيد التنفيذ والاستمرار حتى حلول موعد مستقبلي محدد (مثال: بحلول الشهر القادم هكون شغال في الشركة بقالي ٥ سنين).',
+    timelineDescription: 'شريط زمني يمتد في الماضي أو الحاضر وصولاً لنقطة مستقبلية مع التركيز على طول المدة.',
+    imageUrl: ONLINE_IMAGES.grammar.pastPerfectContinuous,
+    imageAlt: 'Engineer working on project continuously until milestone deadline',
     keyUsagePoints: [
-      'Zero Conditional: حقائق علمية وعامة (If water reaches 100°C, it boils)',
-      'First Conditional: احتمالات مستقبلية واقعية وممكنة (If it rains, we will stay home)',
-      'Second Conditional: افتراضات وتخيلات غير واقعية في الحاضر (If I had a million dollars, I would travel)',
-      'Third Conditional: ندم وفرص ضائعة في الماضي يستحيل تغييرها (If I had studied harder, I would have passed)'
+      'التركيز على استمرارية وطول مدة الحدث قبل نقطة مستقبلية محددة',
+      'الاستخدام الدائم مع تعبيرات المدة (for 10 years, for five hours)',
+      'الربط مع By the time أو By next...'
     ],
     egyptianTips: [
-      'افتكر الحالة التانية: بنستخدم If I were you (مش was) لما نيجي ننصح حد "لو كنت مكانك".',
-      'افتكر الحالة التالتة: ندم تام على الماضي! "لو كان حصل كذا، كان زمان حصل كذا" = If + had + V3 ➔ would have + V3.',
-      'كلمة Unless معناها "إذا لم" (If... not)، وبيجي بعدها إثبات دايماً بدون نفي مزدوج.'
+      'الفرق بينه وبين المستقبل التام العادي: المستقبل التام بيركز على النتيجة (هكون خلصت)، بينما المستمر بيركز على طول التعب والمجهود (هكون بقالي كذا سنة شغال).',
+      'أفعال السكون Stative Verbs (زي know, believe) لا تقبل الاستمرار، فتستخدم معها المستقبل التام العادي: By 2030, I will have known him for a decade.'
     ],
     commonTraps: [
-      'فخ وضع would في جملة If: الخطأ If I would know, I would tell you، الصواب: If I knew, I would tell you.'
+      'فخ استخدام أفعال الحالة في صيغة الاستمرار: الخطأ will have been knowing، الصواب: will have known.'
+    ],
+    examples: [
+      {
+        en: 'By this November, engineer Tarek will have been working at Henglish for ten full years.',
+        ar: 'بحلول شهر نوفمبر القادم، سيكون المهندس طارق قد أمضى عشر سنوات كاملة في العمل لدى هناوي.',
+        highlight: 'will have been working',
+        context: 'التركيز على طول فترة الخدمة والعمل المستمر'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'By midnight, the developers ______ for 14 continuous hours without sleep.',
+        options: ['will have been coding', 'will code', 'are coding', 'coded'],
+        correct: 0,
+        explanation: 'التركيز على مدة الاستمرار الشاقة (for 14 continuous hours) بحلول منتصف الليل يتطلب will have been coding.'
+      }
+    ]
+  },
+
+  // ==========================================
+  // 4. OTHER GRAMMAR TOPICS (مواضيع وقواعد أخرى)
+  // ==========================================
+  {
+    id: 'zero-conditional',
+    order: 14,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'حالة الشرط الصفرية: الحقائق العلمية والبديهيات الثابتة',
+    titleEn: 'Zero Conditional',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'If / When + Present Simple, ... Present Simple',
+    negativeFormula: "If + don't/doesn't + V1, ... don't/doesn't + V1",
+    questionFormula: 'What happens if + Subject + Present Simple?',
+    summaryAr: 'تُستخدم للحقائق العلمية، البديهيات الطبيعية، والنتائج الحتمية التي لا تتغير أبداً عند تحقق الشرط.',
+    timelineDescription: 'حقيقة مطلقة: كلما وقع السبب (أ) حدثت النتيجة (ب) فوراً ودائماً في الحاضر والماضي والمستقبل.',
+    imageUrl: ONLINE_IMAGES.grammar.conditionals,
+    imageAlt: 'Natural scientific laws and equilibrium',
+    keyUsagePoints: [
+      'الحقائق العلمية والقوانين الفيزيائية (Scientific facts)',
+      'العادات والروتين الدائم الحتمي (General truths & personal rules)',
+      'إمكانية استبدال If بـ When دون أي تغيير في المعنى'
+    ],
+    egyptianTips: [
+      'ممنوع تحط will أبداً في الصفرية! الطرفين مضارع بسيط: If you heat water, it boils (مش will boil).',
+      'بالمصري: "لما بتسخن المية لـ 100 بتغلي" — دي حقيقة كونية مش مجرد احتمال!'
+    ],
+    commonTraps: [
+      'فخ وضع will في جواب الشرط: الخطأ If ice melts, it will become water، الصواب: it becomes water.'
+    ],
+    examples: [
+      {
+        en: 'If you expose ice to high heat, it melts immediately.',
+        ar: 'إذا عرضت الجليد لحرارة مرتفعة، فإنه يذوب فوراً.',
+        highlight: 'expose / melts',
+        context: 'حقيقة فيزيائية علمية ثابتة'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'If people don\'t drink enough water, they ______ dehydrated.',
+        options: ['become', 'will become', 'became', 'would become'],
+        correct: 0,
+        explanation: 'حقيقة بيولوجية وصحية عامة، لذلك نستخدم الحالة الصفرية: become.'
+      }
+    ]
+  },
+
+  {
+    id: 'first-conditional',
+    order: 15,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'حالة الشرط الأولى: احتمالات ونتائج واقعية في المستقبل',
+    titleEn: 'First Conditional',
+    level: 'B1 - متوسط',
+    goldenFormula: 'If + Present Simple, ... will / can / may + Base Verb (V1)',
+    negativeFormula: "If + don't/doesn't + V1, ... won't + V1 (or Unless + affirmative)",
+    questionFormula: 'If + Present Simple, what will + Subject + do?',
+    summaryAr: 'موقف محتمل وواقعي جداً في المستقبل؛ إذا تحقق الشرط الآن أو لاحقاً، ستحدث النتيجة في المستقبل.',
+    timelineDescription: 'شرط واقعي في الحاضر يؤدي إلى نتيجة محتملة بقوة في المستقبل.',
+    imageUrl: ONLINE_IMAGES.grammar.conditionals,
+    imageAlt: 'Real opportunities and future pathways',
+    keyUsagePoints: [
+      'توقعات واحتمالات مستقبلية حقيقية وممكنة الحدوث (Real future possibilities)',
+      'التحذيرات والوعود والاتفاقات المشروطة',
+      'استخدام Unless بمعنى "إذا لم" (Unless = If not)'
+    ],
+    egyptianTips: [
+      'افتكر القاعدة الذهبية: جملة If بيجي بعدها مضارع بسيط، وجواب الشرط هو اللي بياخد will: If I study, I will pass.',
+      'إياك تحط will جنب If على طول: الخطأ الشائع If I will study!'
+    ],
+    commonTraps: [
+      'فخ وضع will في جملة الشرط: الخطأ If it will rain, we will stay، الصواب: If it rains, we will stay.'
     ],
     examples: [
       {
         en: 'If the software team deploys the hotfix tonight, the servers will run smoothly tomorrow.',
         ar: 'إذا أطلق فريق البرمجيات التحديث العاجل الليلة، ستعمل الخوادم بسلاسة غداً.',
         highlight: 'deploys / will run',
-        context: 'الحالة الشرطية الأولى (First Conditional)'
-      },
+        context: 'احتمال واقعي وممكن جداً'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'If you ______ the project ahead of time, the client will award our agency a bonus.',
+        options: ['deliver', 'will deliver', 'delivered', 'delivering'],
+        correct: 0,
+        explanation: 'في جملة If للحالة الأولى نستخدم مضارع بسيط deliver، بينما will تأتي في جواب الشرط.'
+      }
+    ]
+  },
+
+  {
+    id: 'second-conditional',
+    order: 16,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'حالة الشرط الثانية: التخيلات والفرضيات غير الحقيقية في الحاضر والنصيحة',
+    titleEn: 'Second Conditional',
+    level: 'B1 - متوسط',
+    goldenFormula: 'If + Past Simple, ... would / could / might + Base Verb (V1)',
+    negativeFormula: "If + didn't + V1, ... wouldn't + V1",
+    questionFormula: 'What would you do if + Subject + Past Simple?',
+    summaryAr: 'أحلام اليقظة وتخيل سيناريوهات خيالية غير واقعية في الوقت الحاضر، واستخدام If I were you لتقديم النصيحة الودية.',
+    timelineDescription: 'عالم موازٍ وخيالي يختلف عن واقع الحاضر، مع التعبير عما كان سيحدث لو كان الواقع مختلفاً.',
+    imageUrl: ONLINE_IMAGES.grammar.conditionals,
+    imageAlt: 'Imagination and hypothetical choices',
+    keyUsagePoints: [
+      'تخيل مواقف غير حقيقية أو مستحيلة في الحاضر (Unreal or imaginary present)',
+      'تقديم النصيحة المشهورة: If I were you, I would...',
+      'استخدام were مع جميع الضمائر حتى المفرد (If he were here...)'
+    ],
+    egyptianTips: [
+      'بالمصري: "لو كان معايا مليون دولار كنت اشتريت جزيرة" (بس الحقيقة إن معيش دلوقتي!).',
+      'في النصيحة بنقول If I were you مش was.'
+    ],
+    commonTraps: [
+      'فخ وضع would في جملة If: الخطأ If I would have money، الصواب: If I had money.'
+    ],
+    examples: [
       {
         en: 'If Karim spoke fluent German, he would apply for the engineering fellowship in Munich.',
         ar: 'لو كان كريم يتحدث الألمانية بطلاقة، لكان قد تقدم لمنحة الهندسة في ميونيخ (لكنه لا يتحدثها حالياً).',
         highlight: 'spoke / would apply',
-        context: 'الحالة الشرطية الثانية (تخيل وفرضية غير واقعية الآن)'
+        context: 'افتراض غير واقعي في الحاضر'
       },
       {
+        en: 'If I were you, I would accept the job offer in Dubai immediately.',
+        ar: 'لو كنت مكانك، لوافقت على عرض العمل في دبي على الفور.',
+        highlight: 'were / would accept',
+        context: 'نصيحة ودية'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'If we ______ a larger budget, we would hire three senior cloud engineers.',
+        options: ['had', 'have', 'would have', 'will have'],
+        correct: 0,
+        explanation: 'الحالة الشرطية الثانية (تخيل في الحاضر): فعل الشرط ماضٍ بسيط had وجواب الشرط would hire.'
+      }
+    ]
+  },
+
+  {
+    id: 'third-conditional',
+    order: 17,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'حالة الشرط الثالثة: الندم على الماضي والفرص التي فات أوانها',
+    titleEn: 'Third Conditional',
+    level: 'B2 - فوق متوسط',
+    goldenFormula: 'If + Past Perfect (had + V3), ... would have + Past Participle (V3)',
+    negativeFormula: "If + hadn't + V3, ... wouldn't have + V3",
+    questionFormula: 'What would have happened if + Subject + had + V3?',
+    summaryAr: 'قاعدة الندم ولوم النفس! التعبير عن أحداث وقعت وانتهت تماماً في الماضي، وتخيل نتيجة بديلة مستحيلة الحدوث لأن الزمن فات.',
+    timelineDescription: 'نقطة ماضية حُسمت بالفعل، والنظر إلى سيناريو بديل كان يمكن أن يحدث لو تغير الماضي.',
+    imageUrl: ONLINE_IMAGES.grammar.conditionals,
+    imageAlt: 'Looking back at the past with lessons learned',
+    keyUsagePoints: [
+      'الندم والتحسر على قرارات وأخطاء الماضي (Past regrets)',
+      'انتقاد تصرفات سابقة وتخيل نتائجها البديلة',
+      'تركيبتها الصارمة: had + V3 يقابلها would have + V3'
+    ],
+    egyptianTips: [
+      'بالمصري: "لو كنت ذاكرت كويس ساعتها، كان زماني نجحت في الامتحان" (لكن للأسف لا ذاكرت ولا نجحت!).',
+      'طالما الحدث في الماضي ومستحيل يتغير، دي الحالة التالتة فوراً.'
+    ],
+    commonTraps: [
+      'فخ نسيان have في جواب الشرط: الخطأ would passed، الصواب: would have passed.'
+    ],
+    examples: [
+      {
         en: 'If we had booked the airline tickets earlier, we would have saved hundreds of dollars.',
-        ar: 'لو كنا حجزنا تذاكر الطيران مبكراً، لكنا وفرنا مئات الدولارات (لكننا لم نحجز وندمنا).',
+        ar: 'لو كنا حجزنا تذاكر الطيران مبكراً، لكنا وفرنا مئات الدولارات (لكننا تأخرنا وندمنا).',
         highlight: 'had booked / would have saved',
-        context: 'الحالة الشرطية الثالثة (ندم تام على الماضي)'
+        context: 'ندم تام على فرصة ضائعة في الماضي'
       }
     ],
     miniQuiz: [
@@ -689,16 +921,16 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         question: 'If you ______ regular backups of your database, you wouldn\'t have lost all customer records.',
         options: ['had kept', 'keep', 'kept', 'would keep'],
         correct: 0,
-        explanation: 'جواب الشرط يحتوي على wouldn\'t have lost (حالة ثالثة)، إذن فعل الشرط يجب أن يكون ماضياً تاماً: had kept.'
+        explanation: 'جواب الشرط يحتوي على wouldn\'t have lost (حالة ثالثة)، إذن فعل الشرط ماضٍ تام: had kept.'
       }
     ]
   },
 
   {
     id: 'modal-verbs',
-    order: 13,
-    category: 'حالات الشرط',
-    categoryEn: 'Conditionals & Modals',
+    order: 18,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
     titleAr: 'الأفعال الناقصة والتعبير عن الاحتمال والالتزام',
     titleEn: 'Modal Verbs (Must, Should, Could, Might)',
     level: 'B1 - متوسط',
@@ -747,14 +979,11 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ]
   },
 
-  // ==========================================
-  // 5. ADVANCED STRUCTURES (المبني للمجهول والتركيب)
-  // ==========================================
   {
     id: 'passive-voice',
-    order: 14,
-    category: 'المبني للمجهول والتركيب',
-    categoryEn: 'Advanced Structures',
+    order: 19,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
     titleAr: 'المبني للمجهول الشامل في جميع الأزمنة',
     titleEn: 'Passive Voice Across All Tenses',
     level: 'B2 - فوق متوسط',
@@ -804,9 +1033,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
 
   {
     id: 'reported-speech',
-    order: 15,
-    category: 'المبني للمجهول والتركيب',
-    categoryEn: 'Advanced Structures',
+    order: 20,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
     titleAr: 'الكلام المنقول: نقل الجمل والأسئلة باحترافية',
     titleEn: 'Reported Speech (Direct to Indirect)',
     level: 'B2 - فوق متوسط',
@@ -849,56 +1078,52 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
 
   {
     id: 'relative-clauses',
-    order: 16,
-    category: 'المبني للمجهول والتركيب',
-    categoryEn: 'Advanced Structures',
+    order: 21,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
     titleAr: 'ضمائر الوصل وجمل الصلة: دمج الجمل بسلاسة',
     titleEn: 'Relative Clauses (Who, Which, That, Whose, Where)',
     level: 'B1 - متوسط',
-    goldenFormula: 'Noun + Relative Pronoun + Clause',
+    goldenFormula: 'Noun + Relative Pronoun (Who / Which / That / Whose / Where) + Clause',
     negativeFormula: 'Without relative pronoun (contact clauses)',
     questionFormula: 'Who / Which...',
-    summaryAr: 'الأداة السحرية التي تحول لغتك من جمل قصيرة مكسرة إلى لغة متحدث أصلي سلسة وأنيقة! ضمائر الوصل تدمج فكرتين وتصف الأسماء بدقة بالغة.',
-    timelineDescription: 'حلقات وصل لغوية تربط الأسماء بصفاتها ومعلوماتها الإيضاحية.',
+    summaryAr: 'ربط الجمل والأفكار بطريقة سلسة دون تكرار الكلمات الممل: Who للعاقل، Which لغير العاقل، That للاثنين، Whose للملكية، وWhere للمكان.',
+    timelineDescription: 'وصل بين فكرتين أو جملتين لتعريف اسم معين أو إضافة معلومة إضافية عنه.',
     imageUrl: ONLINE_IMAGES.grammar.relativeClauses,
-    imageAlt: 'Connected networks and collaborative team working together',
+    imageAlt: 'Connected global network bridging teams together',
     keyUsagePoints: [
-      'Who: للأشخاص العاقلين (The engineer who solved the bug)',
-      'Which / That: للأشياء غير العاقلة والحيوانات (The app which went viral)',
-      'Whose: للملكية (The author whose book was published)',
-      'Where / When: للأماكن والأوقات (The hub where we innovate)'
+      'جمل الوصل المحددة (Defining): أساسية لفهم المعنى ولا توضع بين فواصل',
+      'جمل الوصل غير المحددة (Non-defining): معلومات إضافية بين فاصلتين وتستخدم which للعاقل ولا تستخدم that أبداً',
+      'حذف ضمير الوصل إذا جاء بعده فاعل وفعل (Contact clauses)'
     ],
     egyptianTips: [
-      'في جمل الوصل المحددة (Defining)، لو ضمير الوصل بيعود على مفعول به، نقدر نحذفه تماماً: The book I read أمس هو نفسه The book which I read.',
-      'في جمل الوصل غير المحددة (Non-defining بين فصلتين)، مستحيل نستخدم that ولا يمكن حذف الضمير.'
+      'في الجمل اللي فيها فواصل (Non-defining)، ممنوع تستخدم That نهائياً! استخدم who أو which.',
+      'Whose بتيجي بين اسمين وبتعبر عن ملكية الاسم التاني للأولاني: The student whose car was stolen.'
     ],
     commonTraps: [
-      'فخ استخدام that بعد فاصلة: الخطأ Cairo, that is my hometown, is lively، الصواب: Cairo, which is my hometown, is lively.'
+      'فخ استخدام that بعد فاصلة: الخطأ Cairo, that is the capital...، الصواب: Cairo, which is the capital...'
     ],
     examples: [
       {
-        en: 'The senior architect who designed the modern library received an international award.',
-        ar: 'المهندس المعماري البارز الذي صمم المكتبة الحديثة حصل على جائزة دولية.',
+        en: 'The software engineer who designed our security architecture won the global developer award.',
+        ar: 'مهندس البرمجيات الذي صمم بنيتنا الأمنية فاز بجائزة المطورين العالمية.',
         highlight: 'who designed',
-        context: 'ضمير وصل يعود على فاعل عاقل'
+        context: 'ضمير وصل للعاقل يحدد الشخص بدقة'
       }
     ],
     miniQuiz: [
       {
-        question: 'The startup ______ pitch won the venture funding is expanding rapidly.',
-        options: ['whose', 'who', 'which', 'where'],
+        question: 'This is the senior data scientist ______ algorithm increased our accuracy by 40%.',
+        options: ['whose', 'who', 'which', 'whom'],
         correct: 0,
-        explanation: 'العرض التقديمي ملك للشركة الناشئة، لذلك نستخدم ضمير الملكية whose.'
+        explanation: 'الخوارزمية ملك للعالمة، لذلك نستخدم ضمير الملكية whose.'
       }
     ]
   },
 
-  // ==========================================
-  // 6. FOUNDATIONS & ADVANCED SYNTAX (الأساسيات والتركيب اللغوي)
-  // ==========================================
   {
     id: 'parts-of-speech',
-    order: 17,
+    order: 23,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Grammar Foundations',
     titleAr: 'أقسام الكلام الثمانية وتشريح الجملة الإنجليزية',

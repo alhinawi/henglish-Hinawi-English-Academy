@@ -18,6 +18,7 @@ import {
   ShieldCheck,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
   Sparkles,
   Layers,
   X,
@@ -42,17 +43,35 @@ interface SidebarProps {
   xp: number;
 }
 
+interface NavSubItem {
+  label: string;
+  labelEn: string;
+  route: PageRoute;
+  targetId?: string;
+  badge?: string;
+  isFlagship?: boolean;
+}
+
+interface NavSubSection {
+  title: string;
+  titleEn: string;
+  items: NavSubItem[];
+}
+
+interface NavItem {
+  label: string;
+  labelEn: string;
+  route: PageRoute;
+  icon: React.ComponentType<{ className?: string }>;
+  badge?: string;
+  isFlagship?: boolean;
+  adminOnly?: boolean;
+  subSections?: NavSubSection[];
+}
+
 interface NavGroup {
   groupTitle: string;
-  items: {
-    label: string;
-    labelEn: string;
-    route: PageRoute;
-    icon: React.ComponentType<{ className?: string }>;
-    badge?: string;
-    isFlagship?: boolean;
-    adminOnly?: boolean;
-  }[];
+  items: NavItem[];
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -66,9 +85,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
   cefrLevel,
   xp,
 }) => {
-  const handleNav = (route: PageRoute) => {
+  const [openGrammarSubMenu, setOpenGrammarSubMenu] = React.useState(true);
+  const [activeGrammarSection, setActiveGrammarSection] = React.useState<string>('Future Tenses');
+
+  const handleNav = (route: PageRoute, targetId?: string) => {
     playSound('click');
-    onNavigate(route);
+    if (route === 'grammar' && targetId) {
+      window.location.hash = `grammar/${targetId}`;
+      onNavigate('grammar-lesson');
+    } else {
+      onNavigate(route);
+    }
     onCloseMobile();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -99,15 +126,80 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Grammar Academy',
           route: 'grammar',
           icon: GraduationCap,
-          badge: '16 قاعدة',
-        },
-        {
-          label: 'المستقبل التام ⚡',
-          labelEn: 'Future Perfect',
-          route: 'courses/grammar/future-perfect',
-          icon: Sparkles,
-          isFlagship: true,
-          badge: 'كورس رائد',
+          badge: '21+ قاعدة',
+          subSections: [
+            {
+              title: 'أزمنة المستقبل',
+              titleEn: 'Future Tenses',
+              items: [
+                {
+                  label: 'المستقبل التام ⚡',
+                  labelEn: 'Future Perfect',
+                  route: 'courses/grammar/future-perfect',
+                  badge: 'ماستر كلاس 👑',
+                  isFlagship: true,
+                },
+                {
+                  label: 'المستقبل البسيط (Will)',
+                  labelEn: 'Future Simple (Will)',
+                  route: 'grammar',
+                  targetId: 'future-simple',
+                },
+                {
+                  label: 'صيغة Be Going To',
+                  labelEn: 'Be Going To',
+                  route: 'grammar',
+                  targetId: 'be-going-to',
+                },
+                {
+                  label: 'المستقبل المستمر',
+                  labelEn: 'Future Continuous',
+                  route: 'grammar',
+                  targetId: 'future-continuous',
+                },
+                {
+                  label: 'المستقبل التام المستمر',
+                  labelEn: 'Future Perfect Continuous',
+                  route: 'grammar',
+                  targetId: 'future-perfect-continuous',
+                },
+              ],
+            },
+            {
+              title: 'أزمنة المضارع',
+              titleEn: 'Present Tenses',
+              items: [
+                { label: 'المضارع البسيط', labelEn: 'Present Simple', route: 'grammar', targetId: 'present-simple' },
+                { label: 'المضارع المستمر', labelEn: 'Present Continuous', route: 'grammar', targetId: 'present-continuous' },
+                { label: 'المضارع التام', labelEn: 'Present Perfect', route: 'grammar', targetId: 'present-perfect' },
+                { label: 'المضارع التام المستمر', labelEn: 'Present Perfect Continuous', route: 'grammar', targetId: 'present-perfect-continuous' },
+              ],
+            },
+            {
+              title: 'أزمنة الماضي',
+              titleEn: 'Past Tenses',
+              items: [
+                { label: 'الماضي البسيط', labelEn: 'Past Simple', route: 'grammar', targetId: 'past-simple' },
+                { label: 'الماضي المستمر', labelEn: 'Past Continuous', route: 'grammar', targetId: 'past-continuous' },
+                { label: 'الماضي التام', labelEn: 'Past Perfect', route: 'grammar', targetId: 'past-perfect' },
+                { label: 'الماضي التام المستمر', labelEn: 'Past Perfect Continuous', route: 'grammar', targetId: 'past-perfect-continuous' },
+              ],
+            },
+            {
+              title: 'مواضيع وقواعد أخرى',
+              titleEn: 'Other Grammar Topics',
+              items: [
+                { label: 'حالة الشرط الصفرية', labelEn: 'Zero Conditional', route: 'grammar', targetId: 'zero-conditional' },
+                { label: 'حالة الشرط الأولى', labelEn: 'First Conditional', route: 'grammar', targetId: 'first-conditional' },
+                { label: 'حالة الشرط الثانية', labelEn: 'Second Conditional', route: 'grammar', targetId: 'second-conditional' },
+                { label: 'حالة الشرط الثالثة', labelEn: 'Third Conditional', route: 'grammar', targetId: 'third-conditional' },
+                { label: 'الأفعال الناقصة', labelEn: 'Modal Verbs', route: 'grammar', targetId: 'modal-verbs' },
+                { label: 'المبني للمجهول', labelEn: 'Passive Voice', route: 'grammar', targetId: 'passive-voice' },
+                { label: 'الكلام المنقول', labelEn: 'Reported Speech', route: 'grammar', targetId: 'reported-speech' },
+                { label: 'ضمائر وجمل الوصل', labelEn: 'Relative Clauses', route: 'grammar', targetId: 'relative-clauses' },
+              ],
+            },
+          ],
         },
         {
           label: 'أكاديمية الكلمات',
@@ -302,52 +394,133 @@ export const Sidebar: React.FC<SidebarProps> = ({
               </h3>
             )}
             {group.items.map(item => {
+              const isGrammar = item.route === 'grammar';
+              const isGrammarChildActive =
+                currentRoute === 'courses/grammar/future-perfect' ||
+                currentRoute === 'grammar-lesson' ||
+                currentRoute === 'courses/grammar';
               const isActive =
                 currentRoute === item.route ||
-                (item.route === 'grammar' && currentRoute === 'courses/grammar') ||
+                (isGrammar && isGrammarChildActive) ||
                 (item.route === 'dashboard' && currentRoute === 'home');
               const Icon = item.icon;
+              const hasSubSections = Boolean(item.subSections && item.subSections.length > 0);
 
               return (
-                <button
-                  key={item.route}
-                  onClick={() => handleNav(item.route)}
-                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer group text-right ${
-                    isActive
-                      ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-[0_0_15px_rgba(255,209,102,0.15)] font-black'
-                      : item.isFlagship
-                      ? 'text-[#41e7ff] hover:bg-white/5 border border-[#41e7ff]/25'
-                      : 'text-[#dedbf4] hover:text-[#41e7ff] hover:bg-white/5 border border-transparent'
-                  }`}
-                  title={collapsed ? item.label : undefined}
-                >
-                  <Icon
-                    className={`w-4 h-4 shrink-0 transition-transform group-hover:scale-110 ${
-                      isActive
-                        ? 'text-[#ffd166]'
-                        : item.isFlagship
-                        ? 'text-[#41e7ff]'
-                        : 'text-[#b9b6d5] group-hover:text-[#41e7ff]'
-                    }`}
-                  />
+                <div key={item.route} className="space-y-1">
+                  <div className="flex items-center gap-1">
+                    <button
+                      onClick={() => handleNav(item.route)}
+                      className={`flex-1 flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer group text-right ${
+                        isActive
+                          ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-[0_0_15px_rgba(255,209,102,0.15)] font-black'
+                          : item.isFlagship
+                          ? 'text-[#41e7ff] hover:bg-white/5 border border-[#41e7ff]/25'
+                          : 'text-[#dedbf4] hover:text-[#41e7ff] hover:bg-white/5 border border-transparent'
+                      }`}
+                      title={collapsed ? item.label : undefined}
+                    >
+                      <Icon
+                        className={`w-4 h-4 shrink-0 transition-transform group-hover:scale-110 ${
+                          isActive
+                            ? 'text-[#ffd166]'
+                            : item.isFlagship
+                            ? 'text-[#41e7ff]'
+                            : 'text-[#b9b6d5] group-hover:text-[#41e7ff]'
+                        }`}
+                      />
 
-                  {!collapsed && (
-                    <div className="flex-1 flex items-center justify-between min-w-0">
-                      <span className="truncate">{item.label}</span>
-                      {item.badge && (
-                        <span
-                          className={`text-[9px] font-black px-1.5 py-0.5 rounded-md ${
-                            item.isFlagship
-                              ? 'bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30'
-                              : 'bg-white/10 text-[#ffd166] border border-white/10'
-                          }`}
-                        >
-                          {item.badge}
-                        </span>
+                      {!collapsed && (
+                        <div className="flex-1 flex items-center justify-between min-w-0">
+                          <span className="truncate">{item.label}</span>
+                          {item.badge && (
+                            <span
+                              className={`text-[9px] font-black px-1.5 py-0.5 rounded-md ${
+                                item.isFlagship
+                                  ? 'bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30'
+                                  : 'bg-white/10 text-[#ffd166] border border-white/10'
+                              }`}
+                            >
+                              {item.badge}
+                            </span>
+                          )}
+                        </div>
                       )}
+                    </button>
+
+                    {!collapsed && hasSubSections && (
+                      <button
+                        onClick={() => {
+                          playSound('click');
+                          setOpenGrammarSubMenu(prev => !prev);
+                        }}
+                        className="p-2 rounded-lg text-[#b9b6d5] hover:text-white hover:bg-white/5 cursor-pointer transition-transform"
+                        title={openGrammarSubMenu ? 'طي الأقسام الفرعية' : 'عرض الأقسام الفرعية'}
+                      >
+                        <ChevronDown className={`w-3.5 h-3.5 transition-transform ${openGrammarSubMenu ? 'rotate-180 text-[#41e7ff]' : ''}`} />
+                      </button>
+                    )}
+                  </div>
+
+                  {/* Expandable Grammar Curriculum Sub-Tree */}
+                  {!collapsed && hasSubSections && openGrammarSubMenu && item.subSections && (
+                    <div className="mr-3 pr-2 border-r-2 border-[#41e7ff]/20 space-y-2 py-1">
+                      {/* Sub-Section Tabs (Future, Present, Past, Other) */}
+                      <div className="flex items-center gap-1 overflow-x-auto no-scrollbar pb-1">
+                        {item.subSections.map(sec => {
+                          const isSecActive = activeGrammarSection === sec.titleEn;
+                          return (
+                            <button
+                              key={sec.titleEn}
+                              onClick={() => {
+                                playSound('click');
+                                setActiveGrammarSection(sec.titleEn);
+                              }}
+                              className={`px-2 py-1 rounded-md text-[10px] font-bold whitespace-nowrap cursor-pointer transition-colors ${
+                                isSecActive
+                                  ? 'bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/40 font-black'
+                                  : 'text-[#b9b6d5] hover:text-white hover:bg-white/5'
+                              }`}
+                            >
+                              {sec.title}
+                            </button>
+                          );
+                        })}
+                      </div>
+
+                      {/* Items under active section */}
+                      <div className="space-y-1">
+                        {item.subSections
+                          .find(sec => sec.titleEn === activeGrammarSection)
+                          ?.items.map(subItem => {
+                            const isSubActive =
+                              (subItem.route === 'courses/grammar/future-perfect' && currentRoute === 'courses/grammar/future-perfect');
+
+                            return (
+                              <button
+                                key={subItem.labelEn}
+                                onClick={() => handleNav(subItem.route, subItem.targetId)}
+                                className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-[11px] font-semibold text-right cursor-pointer transition-all ${
+                                  isSubActive
+                                    ? 'bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 font-black shadow-xs'
+                                    : subItem.isFlagship
+                                    ? 'text-[#41e7ff] hover:bg-[#41e7ff]/10 font-bold'
+                                    : 'text-[#dedbf4]/80 hover:text-white hover:bg-white/5'
+                                }`}
+                              >
+                                <span className="truncate">{subItem.label}</span>
+                                {subItem.badge && (
+                                  <span className="text-[9px] font-black px-1.5 py-0.2 rounded bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 shrink-0 mr-1">
+                                    {subItem.badge}
+                                  </span>
+                                )}
+                              </button>
+                            );
+                          })}
+                      </div>
                     </div>
                   )}
-                </button>
+                </div>
               );
             })}
           </div>
