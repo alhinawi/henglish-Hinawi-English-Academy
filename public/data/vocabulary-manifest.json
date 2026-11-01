@@ -1,0 +1,46 @@
+{
+  "totalHeadwords": 55000,
+  "generatedAt": "2026-11-01T05:04:29Z",
+  "distributionCefr": {
+    "A1": 1153,
+    "A2": 3577,
+    "B1": 23322,
+    "B2": 20793,
+    "C1": 6155
+  },
+  "distributionPos": {
+    "noun": 40558,
+    "verb": 10054,
+    "adjective": 2605,
+    "adverb": 1783
+  },
+  "distributionDomain": {
+    "everyday": 46587,
+    "science": 904,
+    "media": 659,
+    "education": 381,
+    "business": 539,
+    "food": 754,
+    "law": 989,
+    "travel": 378,
+    "architecture": 805,
+    "sports": 165,
+    "finance": 390,
+    "medicine": 961,
+    "politics": 205,
+    "ai_tech": 374,
+    "psychology": 185,
+    "aviation": 29,
+    "arts": 133,
+    "music": 424,
+    "environment": 138
+  },
+  "stats": {
+    "withUsIpa": 37636,
+    "withUkIpa": 37223,
+    "withAudioUs": 55000,
+    "withAudioUk": 55000,
+    "withArabicTranslation": 55000,
+    "withEnglishDefinition": 55000
+  }
+}
