@@ -82,7 +82,7 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
               playSound('click');
               setActiveScenarioIdx(idx);
               setShadowingLineIdx(0);
-              setRecordingScore(null);
+              setCustomPrompt(null);
             }}
             className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer flex items-center gap-2 ${
               activeScenarioIdx === idx
