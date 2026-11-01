@@ -3,6 +3,7 @@ import { PageRoute, UserProfile, AppNotification } from '../../types';
 import { playSound } from '../../utils/audio';
 import {
   Menu,
+  X,
   Search,
   Bell,
   Flame,
@@ -32,7 +33,10 @@ interface HeaderProps {
   currentRoute: PageRoute;
   activeLessonId?: string;
   onNavigate: (route: PageRoute, lessonId?: string) => void;
-  onOpenMobile: () => void;
+  mobileOpen?: boolean;
+  onToggleMobile?: () => void;
+  onOpenMobile?: () => void;
+  onCloseMobile?: () => void;
   onOpenSearch: () => void;
   onOpenVoiceSettings: () => void;
   onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
@@ -50,7 +54,10 @@ export const Header: React.FC<HeaderProps> = ({
   currentRoute,
   activeLessonId,
   onNavigate,
+  mobileOpen = false,
+  onToggleMobile,
   onOpenMobile,
+  onCloseMobile,
   onOpenSearch,
   onOpenVoiceSettings,
   onOpenAuthModal,
@@ -98,6 +105,9 @@ export const Header: React.FC<HeaderProps> = ({
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
+        if (mobileOpen && onCloseMobile) {
+          onCloseMobile();
+        }
         setGrammarMenuOpen(false);
         setSkillsMenuOpen(false);
         setMoreMenuOpen(false);
@@ -112,10 +122,13 @@ export const Header: React.FC<HeaderProps> = ({
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  }, [mobileOpen, onCloseMobile]);
 
   const handleNav = (route: PageRoute, lessonId?: string) => {
     playSound('click');
+    if (onCloseMobile) {
+      onCloseMobile();
+    }
     setGrammarMenuOpen(false);
     setSkillsMenuOpen(false);
     setMoreMenuOpen(false);
@@ -130,11 +143,23 @@ export const Header: React.FC<HeaderProps> = ({
       {/* LEFT: Mobile Menu Hamburger & Desktop Main Navigation Menus */}
       <div className="flex items-center gap-3 xl:gap-4 min-w-0">
         <button
-          onClick={onOpenMobile}
-          className="md:hidden p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/5 cursor-pointer"
-          aria-label="فتح القائمة الجانبية"
+          onClick={() => {
+            playSound('click');
+            if (onToggleMobile) {
+              onToggleMobile();
+            } else if (onOpenMobile) {
+              onOpenMobile();
+            }
+          }}
+          className={`md:hidden p-2 rounded-xl transition-all cursor-pointer relative z-50 ${
+            mobileOpen
+              ? 'bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm'
+              : 'text-[#dedbf4] hover:text-white hover:bg-white/5 border border-transparent'
+          }`}
+          aria-label={mobileOpen ? 'إغلاق القائمة الجانبية' : 'فتح القائمة الجانبية'}
+          aria-expanded={mobileOpen}
         >
-          <Menu className="w-5 h-5" />
+          {mobileOpen ? <X className="w-5 h-5 text-[#ffd166]" /> : <Menu className="w-5 h-5" />}
         </button>
 
         {/* Desktop Primary Navigation with Non-Clipped Dropdowns */}

@@ -42,6 +42,29 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   const [collapsed, setCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  // Close mobile drawer on desktop breakpoints
+  React.useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMobileOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Lock body scroll when mobile drawer is open to prevent background scrolling
+  React.useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   return (
     <div className="min-h-screen flex bg-[#0c0b20] text-[#f7f5ff] selection:bg-[#ff4f9a]/30 selection:text-[#ffd166]">
       {/* Collapsible Sidebar */}
@@ -64,6 +87,9 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
           currentRoute={currentRoute}
           activeLessonId={activeLessonId}
           onNavigate={onNavigate}
+          mobileOpen={mobileOpen}
+          onToggleMobile={() => setMobileOpen(prev => !prev)}
+          onCloseMobile={() => setMobileOpen(false)}
           onOpenMobile={() => setMobileOpen(true)}
           onOpenSearch={onOpenSearch}
           onOpenVoiceSettings={onOpenVoiceSettings}

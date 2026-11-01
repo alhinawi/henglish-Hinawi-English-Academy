@@ -34,3 +34,4 @@ END $$;
 
 -- 2. Add comment documenting curriculum hierarchy
 COMMENT ON TABLE public.courses IS 'Courses catalog: Future Perfect is an integrated masterclass module within Grammar Academy -> Future Tenses.';
+
