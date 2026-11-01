@@ -78,20 +78,88 @@ export const GUEST_PROFILE: UserProfile = {
   bio: 'وضع الزائر: يمكنك تجربة الدروس والمحاكاة، وحفظ تقدمك مؤقتاً في متصفحك.',
 };
 
-// Supabase Client initialization
-const supabaseUrl = import.meta.env?.VITE_SUPABASE_URL || '';
-const supabaseAnonKey = import.meta.env?.VITE_SUPABASE_ANON_KEY || '';
+// ==============================================================================
+// SUPABASE CLIENT INITIALIZATION & VALIDATION
+// ==============================================================================
 
-export const supabase: SupabaseClient | null = 
-  supabaseUrl && supabaseAnonKey && supabaseUrl.startsWith('http')
-    ? createClient(supabaseUrl, supabaseAnonKey, {
-        auth: {
-          persistSession: true,
-          autoRefreshToken: true,
-          detectSessionInUrl: true,
-        },
-      })
-    : null;
+/**
+ * Validates if the configured Supabase URL and Anon Key are genuine production credentials,
+ * rather than unconfigured placeholders (e.g. 'https://your-project-id.supabase.co').
+ */
+export function isSupabaseConfigured(): boolean {
+  const rawUrl = (import.meta.env?.VITE_SUPABASE_URL || '').trim();
+  const rawKey = (import.meta.env?.VITE_SUPABASE_ANON_KEY || '').trim();
+
+  if (!rawUrl || !rawKey) return false;
+  if (!rawUrl.startsWith('https://') && !rawUrl.startsWith('http://')) return false;
+
+  // Placeholder detection
+  if (
+    rawUrl.includes('your-project-id') ||
+    rawUrl.includes('example.supabase.co') ||
+    rawUrl.includes('placeholder')
+  ) {
+    return false;
+  }
+  if (
+    rawKey.includes('your_supabase_anon') ||
+    rawKey.includes('placeholder') ||
+    rawKey.length < 20
+  ) {
+    return false;
+  }
+
+  return true;
+}
+
+const supabaseUrl = (import.meta.env?.VITE_SUPABASE_URL || '').trim();
+const supabaseAnonKey = (import.meta.env?.VITE_SUPABASE_ANON_KEY || '').trim();
+
+export const supabase: SupabaseClient | null = isSupabaseConfigured()
+  ? createClient(supabaseUrl, supabaseAnonKey, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+      },
+    })
+  : null;
+
+// ==============================================================================
+// ERROR NORMALIZATION HELPER
+// ==============================================================================
+
+export function normalizeAuthError(err: unknown): string {
+  if (!err) return 'حدث خطأ غير متوقع. يرجى المحاولة لاحقاً.';
+  const msg = err instanceof Error ? err.message : String(err);
+
+  // Network / Connectivity errors
+  if (msg.includes('Failed to fetch') || msg.includes('NetworkError') || msg.includes('fetch failed')) {
+    if (!isSupabaseConfigured()) {
+      return 'تعذر الاتصال بخادم قاعدة البيانات. يرجى تهيئة متغيرات VITE_SUPABASE_URL و VITE_SUPABASE_ANON_KEY في إعدادات البيئة (Vercel).';
+    }
+    return 'تعذر الاتصال بخادم المصادقة. يرجى التحقق من اتصالك بالإنترنت والمحاولة مجدداً.';
+  }
+
+  // Supabase Auth specific error codes & descriptions
+  if (msg.includes('Invalid login credentials')) {
+    return 'البريد الإلكتروني أو كلمة المرور غير صحيحة. يرجى التحقق والمحاولة مرة أخرى.';
+  }
+  if (msg.includes('Email not confirmed')) {
+    return 'البريد الإلكتروني لم يتم تأكيده بعد. يرجى تفعيل حسابك عبر رمز التحقق (OTP).';
+  }
+  if (msg.includes('User already registered') || msg.includes('email address is already registered')) {
+    return 'هذا البريد الإلكتروني مسجل بالفعل. يرجى تسجيل الدخول أو استعادة كلمة المرور.';
+  }
+  if (msg.includes('Password should be at least')) {
+    return 'كلمة المرور ضعيفة. يجب ألا تقل عن 6 أحرف.';
+  }
+  if (msg.includes('rate limit') || msg.includes('over_email_send_rate_limit')) {
+    return 'تم إرسال عدد كبير من الطلبات. يرجى الانتظار دقيقة قبل المحاولة مجدداً.';
+  }
+
+  return msg;
+}
 
 // ==============================================================================
 // SESSION PERSISTENCE & STORAGE
@@ -168,7 +236,7 @@ export function mapSupabaseUserToProfile(
 }
 
 // ==============================================================================
-// AUTHENTICATION ACTIONS (SUPABASE + FALLBACK)
+// AUTHENTICATION ACTIONS (SUPABASE + RESILIENT OFFLINE FALLBACK)
 // ==============================================================================
 
 export interface SignUpParams {
@@ -185,6 +253,7 @@ export async function signUpUser(params: SignUpParams): Promise<{ success: boole
   const { email, password, fullName, fullNameAr, username, phone, role = 'student' } = params;
   const cleanEmail = email.trim().toLowerCase();
 
+  // If Supabase is properly configured, execute real Auth API call
   if (supabase) {
     try {
       const { data, error } = await supabase.auth.signUp({
@@ -203,7 +272,7 @@ export async function signUpUser(params: SignUpParams): Promise<{ success: boole
       });
 
       if (error) {
-        return { success: false, error: error.message };
+        return { success: false, error: normalizeAuthError(error) };
       }
 
       if (data.user) {
@@ -220,12 +289,11 @@ export async function signUpUser(params: SignUpParams): Promise<{ success: boole
         return { success: true, session: sessionState };
       }
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Unknown signup error';
-      return { success: false, error: msg };
+      return { success: false, error: normalizeAuthError(err) };
     }
   }
 
-  // Graceful offline/local fallback when Supabase keys are not set
+  // Graceful local development fallback when Supabase credentials have not yet been configured in Vercel
   const fallbackProfile: UserProfile = {
     id: `usr-${Date.now()}`,
     name: fullName,
@@ -256,7 +324,7 @@ export async function signInUser(
 ): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
   const clean = identifier.trim().toLowerCase();
 
-  // 1. Direct Demo Account Interception
+  // 1. Direct Demo Account Interception (Instant Zero-Latency Demo)
   if (clean === 'sarah.demo@henglish.academy' || clean === 'student-demo') {
     return { success: true, session: switchDemoAccount('student') };
   }
@@ -267,7 +335,7 @@ export async function signInUser(
     return { success: true, session: switchDemoAccount('admin') };
   }
 
-  // 2. Supabase Authentication
+  // 2. Real Supabase Authentication
   if (supabase && password) {
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -276,7 +344,7 @@ export async function signInUser(
       });
 
       if (error) {
-        return { success: false, error: error.message };
+        return { success: false, error: normalizeAuthError(error) };
       }
 
       if (data.user) {
@@ -306,12 +374,11 @@ export async function signInUser(
         return { success: true, session: sessionState };
       }
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Unknown login error';
-      return { success: false, error: msg };
+      return { success: false, error: normalizeAuthError(err) };
     }
   }
 
-  // 3. Fallback when Supabase unavailable
+  // 3. Resilient fallback when Supabase keys are not configured yet in environment
   const fallbackProfile: UserProfile = {
     ...DEMO_PROFILES.student,
     id: `usr-${Date.now()}`,
@@ -338,7 +405,7 @@ export async function verifyEmailOtp(email: string, token: string): Promise<{ su
         token: token.trim(),
         type: 'signup',
       });
-      if (error) return { success: false, error: error.message };
+      if (error) return { success: false, error: normalizeAuthError(error) };
 
       // Update local session state
       const current = getSavedAuthSession();
@@ -348,12 +415,11 @@ export async function verifyEmailOtp(email: string, token: string): Promise<{ su
       }
       return { success: true };
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'OTP verification error';
-      return { success: false, error: msg };
+      return { success: false, error: normalizeAuthError(err) };
     }
   }
 
-  // Local fallback: any 6-digit token succeeds for dev/testing
+  // Local fallback: any 6-digit token succeeds for unconfigured environments
   if (token.trim().length === 6) {
     const current = getSavedAuthSession();
     current.isEmailVerified = true;
@@ -370,11 +436,10 @@ export async function resendVerificationOtp(email: string): Promise<{ success: b
         type: 'signup',
         email: email.trim().toLowerCase(),
       });
-      if (error) return { success: false, error: error.message };
+      if (error) return { success: false, error: normalizeAuthError(error) };
       return { success: true };
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Resend error';
-      return { success: false, error: msg };
+      return { success: false, error: normalizeAuthError(err) };
     }
   }
   return { success: true };
@@ -388,11 +453,10 @@ export async function requestPasswordRecovery(email: string): Promise<{ success:
       const { error } = await supabase.auth.resetPasswordForEmail(cleanEmail, {
         redirectTo,
       });
-      if (error) return { success: false, error: error.message };
+      if (error) return { success: false, error: normalizeAuthError(error) };
       return { success: true };
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Password reset request error';
-      return { success: false, error: msg };
+      return { success: false, error: normalizeAuthError(err) };
     }
   }
   return { success: true };
@@ -404,11 +468,10 @@ export async function updatePassword(newPassword: string): Promise<{ success: bo
       const { error } = await supabase.auth.updateUser({
         password: newPassword,
       });
-      if (error) return { success: false, error: error.message };
+      if (error) return { success: false, error: normalizeAuthError(error) };
       return { success: true };
     } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Password update error';
-      return { success: false, error: msg };
+      return { success: false, error: normalizeAuthError(err) };
     }
   }
   return { success: true };
