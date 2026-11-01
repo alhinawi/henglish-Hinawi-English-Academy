@@ -594,3 +594,4 @@ print(f"DATABASE COMPILATION COMPLETE:")
 print(f"Headwords:   {len(vocabulary_records):,} (Target 50,000+ met)")
 print(f"Expressions: {len(expressions_list):,} (Target 10,000+ met)")
 print("=======================================================")
+

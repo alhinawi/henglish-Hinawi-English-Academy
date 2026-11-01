@@ -297,3 +297,4 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
     </div>
   );
 };
+

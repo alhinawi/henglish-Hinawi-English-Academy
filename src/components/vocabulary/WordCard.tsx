@@ -212,3 +212,4 @@ export const WordCard: React.FC<WordCardProps> = ({
     </div>
   );
 };
+

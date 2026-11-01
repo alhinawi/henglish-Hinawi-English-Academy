@@ -527,3 +527,4 @@ export const VocabularyExplorer: React.FC = () => {
     </div>
   );
 };
+

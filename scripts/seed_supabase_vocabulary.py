@@ -71,3 +71,4 @@ for i in range(0, len(entries), BATCH_SIZE):
         break
 
 print("[✓] Supabase Seeder Finished.")
+

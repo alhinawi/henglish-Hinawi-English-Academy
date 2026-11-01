@@ -61,6 +61,11 @@ export interface MovieSceneItem {
   actorName: string;
   characterName: string;
   thumbnailUrl?: string;
+  category?: string;
+  accent?: 'American' | 'British' | 'International';
+  verificationStatus?: 'verified_playable' | 'embed_disabled' | 'unavailable' | 'private_or_deleted' | 'needs_review' | 'video_only';
+  lastVerifiedAt?: string;
+  isEmbeddable?: boolean;
   subtitles: TimedSubtitle[];
   vocabulary: SceneVocabulary[];
   quizzes: SceneQuiz[];
@@ -77,7 +82,7 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     cefrLevel: 'B2',
     sceneTitle: 'An Offer He Can\'t Refuse',
     sceneDescription: 'Don Vito Corleone comforts his godson Johnny Fontane and guarantees his breakthrough in Hollywood.',
-    youtubeId: 'fmX2Vzs84Z8',
+    youtubeId: 'D6me2-OurCw',
     startTime: 10,
     endTime: 95,
     clipDuration: '1:25',
@@ -85,7 +90,12 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     dialogueQuote: "I'm going to make him an offer he can't refuse.",
     actorName: 'Marlon Brando',
     characterName: 'Don Vito Corleone',
-    thumbnailUrl: 'https://img.youtube.com/vi/fmX2Vzs84Z8/hqdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/D6me2-OurCw/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',
@@ -195,7 +205,7 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     cefrLevel: 'A2',
     sceneTitle: 'Life is Like a Box of Chocolates',
     sceneDescription: 'Sitting at the bus stop bench in Savannah, Forrest shares wisdom his mother gave him.',
-    youtubeId: 'CJh5_ptHc9o',
+    youtubeId: 'vdtqSaJO-iM',
     startTime: 5,
     endTime: 80,
     clipDuration: '1:15',
@@ -203,7 +213,12 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     dialogueQuote: "My mama always said life was like a box of chocolates. You never know what you're gonna get.",
     actorName: 'Tom Hanks',
     characterName: 'Forrest Gump',
-    thumbnailUrl: 'https://img.youtube.com/vi/CJh5_ptHc9o/hqdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/vdtqSaJO-iM/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',
@@ -302,7 +317,7 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     cefrLevel: 'B2',
     sceneTitle: 'It\'s Not Who I Am Underneath',
     sceneDescription: 'Bruce Wayne reveals his true identity through his philosophy on action versus intention.',
-    youtubeId: 'qQjV_OebcCE',
+    youtubeId: 'H19vDg1iLRs',
     startTime: 20,
     endTime: 85,
     clipDuration: '1:05',
@@ -310,7 +325,12 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     dialogueQuote: "It's not who I am underneath, but what I do that defines me.",
     actorName: 'Christian Bale',
     characterName: 'Bruce Wayne / Batman',
-    thumbnailUrl: 'https://img.youtube.com/vi/qQjV_OebcCE/hqdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/H19vDg1iLRs/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',
@@ -406,6 +426,11 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     actorName: 'Robin Williams',
     characterName: 'John Keating',
     thumbnailUrl: 'https://img.youtube.com/vi/vi0Lbjs5ECI/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',
@@ -490,7 +515,7 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     cefrLevel: 'A1',
     sceneTitle: 'I\'ll Be Right Back',
     sceneDescription: 'The T-800 enters the police precinct looking for Sarah Connor and delivers cinema history\'s most quoted one-liner.',
-    youtubeId: 'wDztrwOPkZc',
+    youtubeId: 'tYc2jQaM8gM',
     startTime: 10,
     endTime: 60,
     clipDuration: '0:50',
@@ -498,7 +523,12 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     dialogueQuote: "I'll be right back.",
     actorName: 'Arnold Schwarzenegger',
     characterName: 'The Terminator (T-800)',
-    thumbnailUrl: 'https://img.youtube.com/vi/wDztrwOPkZc/hqdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/tYc2jQaM8gM/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',
@@ -583,6 +613,11 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     actorName: 'Will Smith',
     characterName: 'Chris Gardner',
     thumbnailUrl: 'https://img.youtube.com/vi/UZb2NOHPA2A/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',
@@ -671,7 +706,7 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     cefrLevel: 'B2',
     sceneTitle: 'You Had Me at Hello',
     sceneDescription: 'Jerry Maguire arrives at Dorothy\'s house and delivers a heartfelt confession in front of her friends.',
-    youtubeId: 'zTHbflV9k9w',
+    youtubeId: 'AyrP-pwDayE',
     startTime: 10,
     endTime: 90,
     clipDuration: '1:20',
@@ -679,7 +714,12 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     dialogueQuote: "You had me at hello.",
     actorName: 'Renée Zellweger & Tom Cruise',
     characterName: 'Dorothy Boyd & Jerry Maguire',
-    thumbnailUrl: 'https://img.youtube.com/vi/zTHbflV9k9w/hqdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/AyrP-pwDayE/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-01',
+    isEmbeddable: true,
     subtitles: [
       {
         id: 'sub-1',

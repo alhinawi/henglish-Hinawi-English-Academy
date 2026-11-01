@@ -428,3 +428,4 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
     </div>
   );
 };
+

@@ -122,3 +122,4 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
     </button>
   );
 };
+

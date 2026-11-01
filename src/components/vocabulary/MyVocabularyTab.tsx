@@ -377,3 +377,4 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
     </div>
   );
 };
+

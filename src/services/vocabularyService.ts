@@ -485,3 +485,4 @@ async function syncSavedWordToSupabase(word: string, notes?: string) {
     // quiet fallback
   }
 }
+
