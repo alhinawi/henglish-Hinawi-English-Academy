@@ -282,3 +282,4 @@ export const WordDetectiveGame: React.FC<WordDetectiveGameProps> = ({ onExit }) 
     </div>
   );
 };
+

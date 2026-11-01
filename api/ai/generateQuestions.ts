@@ -1,28 +1,18 @@
 // ==============================================================================
-// Henglish Academy (HENGLISH) - DYNAMIC AI QUESTION GENERATION ENGINE
-// Provider-independent question generation with validation & distractor analysis
+// HENGLISH ACADEMY (HENGLISH 2.0) - DYNAMIC AI QUESTION GENERATION ENGINE
+// Multi-Provider Routed & Zod-Validated Assessment Question Generator
 // ==============================================================================
 
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import dns from 'node:dns';
+import { dispatchThroughAiRouter } from '../../server/ai/aiRouter';
+import { validateQuestionsJson, ValidatedGeneratedQuestion } from '../../server/ai/schemas';
 
 try {
   dns.setDefaultResultOrder('ipv4first');
 } catch {}
 
-export interface GeneratedQuestion {
-  id: string;
-  type: 'multiple-choice' | 'fill-blank' | 'error-correction' | 'sentence-ordering' | 'translation';
-  cefrLevel: string;
-  topic: string;
-  prompt: string;
-  promptAr?: string;
-  options: string[];
-  correctAnswerIndex: number;
-  explanationAr: string;
-  distractorNotesAr?: string[];
-  difficulty: 'easy' | 'medium' | 'hard';
-}
+export type { ValidatedGeneratedQuestion as GeneratedQuestion };
 
 async function parseBody(req: IncomingMessage & { body?: unknown }): Promise<Record<string, unknown>> {
   if (req.body) {
@@ -66,7 +56,7 @@ function sendJson(res: ServerResponse, statusCode: number, data: unknown) {
 }
 
 // High-quality static fallback question bank when AI keys are unconfigured
-const FALLBACK_BANK: GeneratedQuestion[] = [
+const FALLBACK_BANK: ValidatedGeneratedQuestion[] = [
   {
     id: 'ai-q-fp-1',
     type: 'multiple-choice',
@@ -82,6 +72,7 @@ const FALLBACK_BANK: GeneratedQuestion[] = [
       'is completing: مضارع مستمر يعبر عن حدث لحظي وليس اكتمالاً مستقبلياً',
     ],
     difficulty: 'medium',
+    skillCategory: 'grammar',
   },
   {
     id: 'ai-q-cond-1',
@@ -98,6 +89,7 @@ const FALLBACK_BANK: GeneratedQuestion[] = [
       'had practiced: ماضي تام خاص بالحالة الشرطية الثالثة المستحيلة',
     ],
     difficulty: 'easy',
+    skillCategory: 'grammar',
   },
   {
     id: 'ai-q-pp-1',
@@ -109,6 +101,7 @@ const FALLBACK_BANK: GeneratedQuestion[] = [
     correctAnswerIndex: 0,
     explanationAr: 'نستخدم for مع المدة الزمنية المحسوبة والمجملة (a period of time مثل ten years)، بينما since تأتي مع نقطة بداية الزمن.',
     difficulty: 'easy',
+    skillCategory: 'grammar',
   },
 ];
 
@@ -131,19 +124,12 @@ export default async function handler(req: IncomingMessage & { body?: unknown },
     const body = await parseBody(req);
     const cefrLevel = (body.cefrLevel as string) || 'B1';
     const topic = (body.topic as string) || 'future-perfect';
+    const difficulty = (body.difficulty as 'easy' | 'medium' | 'hard') || 'medium';
     const count = Math.min(10, Math.max(1, Number(body.count) || 3));
 
-    const geminiKey = process.env.GEMINI_API_KEY || '';
-
-    if (geminiKey && geminiKey !== 'your_ai_api_key_here') {
-      try {
-        const controller = new AbortController();
-        const timer = setTimeout(() => controller.abort(), 20000);
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${geminiKey}`;
-
-        const promptInstruction = `You are a professional Cambridge/Oxford English Exam Author.
+    const promptInstruction = `You are a professional Cambridge/Oxford English Exam Author.
 Generate ${count} high-quality, pedagogically accurate English questions for CEFR Level ${cefrLevel} on the topic "${topic}".
-Output ONLY valid JSON array adhering to this schema:
+Output ONLY a valid JSON array adhering to this schema:
 [
   {
     "id": "gen-${Date.now()}-1",
@@ -155,50 +141,44 @@ Output ONLY valid JSON array adhering to this schema:
     "correctAnswerIndex": 0,
     "explanationAr": "Clear Arabic explanation of the grammar rule and why this answer is correct in Egyptian educational context.",
     "distractorNotesAr": ["Why option 2 is wrong...", "Why option 3 is wrong...", "Why option 4 is wrong..."],
-    "difficulty": "medium"
+    "difficulty": "${difficulty}",
+    "skillCategory": "grammar"
   }
 ]`;
 
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          signal: controller.signal,
-          body: JSON.stringify({
-            systemInstruction: { parts: [{ text: promptInstruction }] },
-            contents: [{ role: 'user', parts: [{ text: 'Generate questions now.' }] }],
-            generationConfig: {
-              temperature: 0.7,
-              responseMimeType: 'application/json',
-            },
-          }),
+    try {
+      // Route through centralized Multi-Provider Router (Groq -> Gemini -> Cloudflare -> OpenAI -> Local)
+      const routerResult = await dispatchThroughAiRouter({
+        task: 'question_generation',
+        messages: [{ role: 'user', content: `Generate ${count} questions for ${topic} at ${cefrLevel}.` }],
+        systemPrompt: promptInstruction,
+        responseFormat: 'json',
+        temperature: 0.7,
+      });
+
+      // Zod Validation & Schema Enforcement
+      const validatedQuestions = validateQuestionsJson(routerResult.text);
+
+      if (validatedQuestions.length > 0) {
+        sendJson(res, 200, {
+          questions: validatedQuestions,
+          source: routerResult.provider,
+          model: routerResult.model,
+          fallbackChain: routerResult.fallbackChain,
+          isLocalFallback: routerResult.isLocalFallback,
+          count: validatedQuestions.length,
         });
-
-        clearTimeout(timer);
-
-        if (response.ok) {
-          const data = await response.json();
-          const candidateText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (candidateText) {
-            const parsedQuestions = JSON.parse(candidateText) as GeneratedQuestion[];
-            if (Array.isArray(parsedQuestions) && parsedQuestions.length > 0) {
-              sendJson(res, 200, {
-                questions: parsedQuestions,
-                source: 'ai-gemini',
-                count: parsedQuestions.length,
-              });
-              return;
-            }
-          }
-        }
-      } catch (aiErr) {
-        console.warn('AI question generation call failed, using verified bank:', aiErr);
+        return;
       }
+    } catch (routerErr) {
+      console.warn('[AI Question Generation] Router call failed or validation failed, using verified bank:', routerErr);
     }
 
-    // High quality fallback
+    // High quality verified bank fallback
     sendJson(res, 200, {
       questions: FALLBACK_BANK.slice(0, count),
       source: 'verified-bank',
+      isLocalFallback: true,
       count: Math.min(count, FALLBACK_BANK.length),
     });
   } catch (err) {

@@ -159,3 +159,4 @@ export const GameHud: React.FC<GameHudProps> = ({
     </div>
   );
 };
+

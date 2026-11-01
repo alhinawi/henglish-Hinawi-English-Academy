@@ -5,6 +5,13 @@
 
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import { dispatchAiChat, streamAiChat, checkRateLimit, getAiConfig, ChatRequestBody } from './aiService';
+import {
+  getProviderHealthList,
+  getRouterConfig,
+  updateRouterConfig,
+  getRecentUsageAnalytics,
+  clearAiResponseCache,
+} from './ai/aiRouter';
 import { synthesizeSpeech, TtsSynthesisRequest } from './ttsService';
 import {
   dispatchTranslation,
@@ -71,6 +78,40 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       model: config.model,
       timestamp: new Date().toISOString(),
     });
+    return true;
+  }
+
+  // Admin AI Management & Health status
+  if (url === '/api/ai/admin/health' && req.method === 'GET') {
+    sendJson(res, 200, {
+      providers: getProviderHealthList(),
+      config: getRouterConfig(),
+      recentAnalytics: getRecentUsageAnalytics(),
+      timestamp: new Date().toISOString(),
+    });
+    return true;
+  }
+
+  // Admin AI Router Configuration update
+  if (url === '/api/ai/admin/config' && req.method === 'POST') {
+    try {
+      const body = (await parseJsonBody(req)) as Record<string, unknown>;
+      const updated = updateRouterConfig(body);
+      sendJson(res, 200, {
+        success: true,
+        config: updated,
+        providers: getProviderHealthList(),
+      });
+    } catch (err) {
+      sendJson(res, 400, { error: 'Failed to update router config', message: String(err) });
+    }
+    return true;
+  }
+
+  // Admin Clear AI Cache
+  if (url === '/api/ai/admin/clear-cache' && req.method === 'POST') {
+    clearAiResponseCache();
+    sendJson(res, 200, { success: true, message: 'In-memory AI cache cleared successfully.' });
     return true;
   }
 

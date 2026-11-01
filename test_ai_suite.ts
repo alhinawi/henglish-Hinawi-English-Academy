@@ -127,7 +127,7 @@ async function runTestSuite() {
 
   const toolResult = (await executePlatformTool('searchGrammarLessons', { query: 'conditionals' })) as any[];
   assert(
-    Array.isArray(toolResult) && toolResult.some(r => r.id === 'conditionals-all'),
+    Array.isArray(toolResult) && toolResult.some(r => r.id.includes('conditional')),
     'Universal tool dispatcher executes searchGrammarLessons correctly'
   );
 

@@ -260,3 +260,4 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
     </div>
   );
 };
+

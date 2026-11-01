@@ -14,6 +14,7 @@ import {
   StudentPlatformContext 
 } from '../src/services/aiPlatformContext';
 import { CEFRLevel } from '../src/types';
+import { dispatchThroughAiRouter } from './ai/aiRouter';
 
 // Force IPv4 first on Node to eliminate Windows IPv6 connect timeouts to Google APIs
 try {
@@ -555,20 +556,51 @@ async function callOpenAiApi(
 
 /**
  * Main AI Chat Dispatcher (Server-Side)
+ * Powered by centralized Multi-Provider Router (Groq -> Gemini -> Cloudflare -> OpenAI -> Local)
  */
 export async function dispatchAiChat(body: ChatRequestBody): Promise<ChatResponseBody> {
-  const config = getAiConfig();
-
-  if (config.provider === 'gemini' && config.geminiKey && config.geminiKey !== 'your_ai_api_key_here') {
-    return callGeminiApi(body, config);
+  const systemPrompt = buildAssistantSystemPrompt(body.mode, body.userLevel, body.platformContext);
+  
+  const messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }> = [];
+  if (body.history && body.history.length > 0) {
+    for (const h of body.history.slice(-8)) {
+      messages.push({
+        role: h.role === 'user' ? 'user' : 'assistant',
+        content: h.content,
+      });
+    }
   }
+  messages.push({ role: 'user', content: body.message });
 
-  if (config.provider === 'openai' && config.openaiKey && config.openaiKey !== 'your_openai_api_key_here') {
-    return callOpenAiApi(body, config);
+  try {
+    const routerResult = await dispatchThroughAiRouter({
+      task: 'conversation',
+      messages,
+      systemPrompt,
+      temperature: 0.7,
+    });
+
+    const corrections: { wrong: string; correct: string; explanationAr: string }[] = [];
+    const qLower = body.message.toLowerCase();
+    if (qLower.includes('i am agree')) {
+      corrections.push({
+        wrong: 'I am agree',
+        correct: 'I agree',
+        explanationAr: 'الفعل agree فعل أساسي مش صفة، لذلك لا نضع قبله am.',
+      });
+    }
+
+    return {
+      text: routerResult.text,
+      provider: routerResult.provider,
+      model: routerResult.model,
+      corrections: corrections.length > 0 ? corrections : undefined,
+      isLocalFallback: routerResult.isLocalFallback,
+    };
+  } catch (err) {
+    console.warn('Router encountered exception, using local educational brain:', err);
+    return getIntelligentLocalBrainResponse(body);
   }
-
-  // High-fidelity educational local brain fallback
-  return getIntelligentLocalBrainResponse(body);
 }
 
 /**

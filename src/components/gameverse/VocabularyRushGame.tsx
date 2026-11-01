@@ -284,3 +284,4 @@ export const VocabularyRushGame: React.FC<VocabularyRushGameProps> = ({
     </div>
   );
 };
+

@@ -240,3 +240,4 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
     </div>
   );
 };
+

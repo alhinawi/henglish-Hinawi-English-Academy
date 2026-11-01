@@ -147,10 +147,15 @@ export function searchGrammarLessons(query: string, level?: string): {
   route: string;
 }[] {
   const q = query.toLowerCase().trim();
+  const qStem = q.endsWith('s') ? q.slice(0, -1) : q;
   const matched = ALL_GRAMMAR_RULES.filter(rule => {
+    const idLower = rule.id.toLowerCase();
+    const titleEnLower = rule.titleEn.toLowerCase();
     const matchesQuery = 
-      rule.id.toLowerCase().includes(q) ||
-      rule.titleEn.toLowerCase().includes(q) ||
+      idLower.includes(q) ||
+      idLower.includes(qStem) ||
+      titleEnLower.includes(q) ||
+      titleEnLower.includes(qStem) ||
       rule.titleAr.includes(query) ||
       rule.goldenFormula.toLowerCase().includes(q) ||
       rule.summaryAr.includes(query) ||

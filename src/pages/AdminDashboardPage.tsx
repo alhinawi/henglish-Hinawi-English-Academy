@@ -31,7 +31,9 @@ import {
   AlertTriangle,
   Award,
   Activity,
+  Cpu,
 } from "lucide-react";
+import { AdminAiManagementSection } from "../components/admin/AdminAiManagementSection";
 
 interface AdminDashboardPageProps {
   onNavigate: (route: PageRoute) => void;
@@ -95,7 +97,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 }) => {
   const [courses, setCourses] = useState<CourseItem[]>(COURSES_CATALOG);
   const [activeTab, setActiveTab] = useState<
-    "courses" | "lessons" | "students" | "videos" | "speaking"
+    "courses" | "lessons" | "students" | "videos" | "speaking" | "ai"
   >("courses");
 
   // Video Management State
@@ -375,6 +377,21 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
             >
               <Mic className="w-4 h-4" />
               <span>تقييمات النطق الصوتي ({speakingEvals.length})</span>
+            </button>
+
+            <button
+              onClick={() => {
+                playSound("click");
+                setActiveTab("ai");
+              }}
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-1.5 ${
+                activeTab === "ai"
+                  ? "bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-[#0c0b20] shadow-lg font-black"
+                  : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
+              }`}
+            >
+              <Cpu className="w-4 h-4" />
+              <span>إدارة الذكاء الاصطناعي (AI Router) 🤖</span>
             </button>
           </div>
         </div>
@@ -1142,6 +1159,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           </div>
         </section>
       )}
+
+      {/* TAB 6: AI MULTI-PROVIDER MANAGEMENT */}
+      {activeTab === "ai" && <AdminAiManagementSection />}
     </div>
   );
 };

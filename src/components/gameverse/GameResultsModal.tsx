@@ -184,3 +184,4 @@ export const GameResultsModal: React.FC<GameResultsModalProps> = ({
     </div>
   );
 };
+

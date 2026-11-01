@@ -355,3 +355,4 @@ CREATE POLICY "Players can update own status"
   ON public.game_room_players FOR UPDATE
   TO authenticated
   USING (auth.uid() = user_id);
+
