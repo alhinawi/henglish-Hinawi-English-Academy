@@ -75,3 +75,4 @@ for key, q in queries.items():
 
     if verified_candidates:
         print(f"--> BEST CANDIDATE for {key}: {verified_candidates[0]['ytid']} ({verified_candidates[0]['title']})")
+

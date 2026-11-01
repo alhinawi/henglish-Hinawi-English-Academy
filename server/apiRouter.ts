@@ -299,6 +299,20 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
+  // GameVerse Authoritative Session Submission endpoint
+  if (url === '/api/gameverse/submit-session' && req.method === 'POST') {
+    try {
+      const body = (await parseJsonBody(req)) as Record<string, unknown>;
+      const submitHandler = (await import('../api/gameverse/submit-session')).default;
+      await submitHandler(Object.assign(req, { body }), res);
+      return true;
+    } catch (err) {
+      console.error('API /api/gameverse/submit-session error:', err);
+      sendJson(res, 500, { error: 'Game session verification error', message: String(err) });
+      return true;
+    }
+  }
+
   return false;
 }
 

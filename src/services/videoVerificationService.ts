@@ -226,3 +226,4 @@ async function logVerificationToSupabase(result: VerificationResult): Promise<vo
     // quiet fallback
   }
 }
+

@@ -188,3 +188,4 @@ CREATE POLICY "Public read video quizzes" ON public.video_quizzes FOR SELECT USI
 
 CREATE POLICY "Users can manage own video progress" ON public.user_video_progress FOR ALL USING (auth.uid() = user_id);
 CREATE POLICY "Users can manage own video bookmarks" ON public.user_video_bookmarks FOR ALL USING (auth.uid() = user_id);
+
