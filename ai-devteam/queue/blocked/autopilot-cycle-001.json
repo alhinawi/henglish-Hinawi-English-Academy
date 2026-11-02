@@ -1,0 +1,5 @@
+{
+  "id": "autopilot-cycle-001",
+  "workspace": "C:\\Users\\hinawi\\Desktop\\Henglish-ai-autopilot",
+  "prompt": "You are the Henglish autonomous development cycle. Work only in the supplied workspace and begin by reading AGENTS.md. Inspect the current branch, package scripts, and relevant code. Choose exactly one small, high-value, independently reviewable improvement based on concrete evidence in the code or failing checks; do not invent work merely to stay busy. Implement it completely. Run the narrowest relevant checks and pnpm build. Do not commit, push, open a pull request, deploy, access secrets or environment files, modify .env files, change Vercel or Supabase settings, make database migrations, run database mutations, weaken security, add dependencies, or alter files outside the workspace. If no safe, evidence-based improvement exists, make no changes and explain why. In your final response state the selected goal, evidence, files changed, checks run and results, and remaining risks."
+}

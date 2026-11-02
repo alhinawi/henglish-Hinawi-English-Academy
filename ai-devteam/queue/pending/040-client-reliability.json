@@ -1,0 +1,5 @@
+{
+  "id": "client-reliability",
+  "workspace": "C:\\Users\\hinawi\\Desktop\\Henglish-ai-autopilot",
+  "prompt": "Work only in the supplied Henglish autopilot workspace. Read AGENTS.md and inspect frontend service/component error and loading paths. Select one concrete client reliability issue evidenced in code, such as an unhandled request failure, invalid state transition, or missing empty state. Implement exactly one minimal fix using existing patterns and types. Do not add dependencies, access secrets or environment files, alter auth or database policies, deploy, commit, push, or modify files outside the workspace. Run focused checks and pnpm build. If no evidence-backed safe improvement exists, make no changes and explain why. Report evidence, files changed, checks, and risks."
+}

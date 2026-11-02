@@ -1,0 +1,5 @@
+{
+  "id": "auth-api-hardening",
+  "workspace": "C:\\Users\\hinawi\\Desktop\\Henglish-ai-autopilot",
+  "prompt": "Work only in the supplied Henglish autopilot workspace. Read AGENTS.md and ARCHITECTURE.md, then inspect API and authentication code for one concrete, low-risk server-side validation or authorization weakness. Implement exactly one smallest safe hardening change, preserving existing behavior. Do not weaken security, access secrets or environment files, change Supabase or Vercel settings, create or run migrations, perform database mutations, deploy, commit, push, add dependencies, or modify files outside the workspace. Run focused checks and pnpm build. If no evidence-backed safe improvement exists, make no changes and explain why. Report evidence, files changed, checks, and residual risk."
+}

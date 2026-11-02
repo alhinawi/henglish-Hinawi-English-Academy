@@ -1,0 +1,5 @@
+{
+  "id": "backlog-062-threejs-cleanup",
+  "workspace": "C:\\Users\\hinawi\\Desktop\\Henglish-ai-autopilot",
+  "prompt": "Inspect Three.js lifecycle code and fix one evidence-backed resource cleanup or resize issue. Work only in the supplied Henglish autopilot workspace. Read AGENTS.md and relevant code first. Make exactly one small, evidence-backed, independently reviewable change. Do not invent work. Do not access secrets or environment files, change deployment, Supabase or Vercel settings, create/run migrations, mutate databases, weaken security, add dependencies, deploy, push, open a pull request, commit, or modify files outside the workspace. Run the narrowest relevant checks and pnpm build. If no safe improvement exists, make no changes and explain why. Report evidence, files changed, checks, and residual risks."
+}

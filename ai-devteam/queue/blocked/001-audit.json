@@ -1,0 +1,4 @@
+﻿{
+    "id":  "initial-project-audit",
+    "prompt":  "Analyze the Henglish Academy repository.\n\nInspect architecture, frontend, backend, Supabase integration,\nauthentication, security, tests, and deployment configuration.\n\nCreate a prioritized development backlog at:\ndocs/AI_DEVTEAM_BACKLOG.md\n\nDo not modify application code.\nDo not access, print, or expose secrets.\nDo not execute database mutations.\nDo not deploy or merge anything.\n\nInclude findings, evidence, severity, and suggested next steps."
+}

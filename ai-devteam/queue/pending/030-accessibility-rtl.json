@@ -1,0 +1,5 @@
+{
+  "id": "accessibility-rtl",
+  "workspace": "C:\\Users\\hinawi\\Desktop\\Henglish-ai-autopilot",
+  "prompt": "Work only in the supplied Henglish autopilot workspace. Read AGENTS.md, then inspect a user-facing React flow for one concrete accessibility, Arabic RTL, or English LTR isolation defect supported by the current code. Make exactly one small, complete correction that preserves the existing design system and product behavior. Do not add dependencies, change deployment or environment files, access secrets, perform backend or database changes, deploy, commit, push, or modify files outside the workspace. Run focused checks and pnpm build. If no evidence-backed safe improvement exists, make no changes and explain why. Report evidence, files changed, checks, and risks."
+}

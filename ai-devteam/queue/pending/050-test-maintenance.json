@@ -1,0 +1,5 @@
+{
+  "id": "test-maintenance",
+  "workspace": "C:\\Users\\hinawi\\Desktop\\Henglish-ai-autopilot",
+  "prompt": "Work only in the supplied Henglish autopilot workspace. Read AGENTS.md and inspect the existing tests and the code they cover. Select one concrete, low-risk test maintenance improvement: repair a stale test, add a focused regression test using existing tooling, or improve a test assertion for an already implemented behavior. Do not add dependencies, access secrets or live services, alter production configuration, perform database mutations, deploy, commit, push, or modify files outside the workspace. Run the relevant test if a documented command exists, then pnpm build. If no evidence-backed safe improvement exists, make no changes and explain why. Report evidence, files changed, checks, and risks."
+}
