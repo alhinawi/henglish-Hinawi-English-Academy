@@ -27,6 +27,18 @@ import {
   dispatchVoiceTranscription,
 } from './translationService';
 import type { TranslationRequest } from '../src/types/translation';
+import { getSafeSmtpDiagnostics } from './email/emailConfig';
+import {
+  verifySmtpConnection,
+  sendEmail,
+  sendWelcomeEmail,
+  sendPasswordChangedAlert,
+  sendAccountNotification,
+  sendAdminTestEmail,
+  sendVerificationGuidance,
+  sendPasswordResetGuidance,
+  isValidEmail,
+} from './email/emailService';
 
 function parseJsonBody(req: IncomingMessage): Promise<unknown> {
   return new Promise((resolve, reject) => {
@@ -135,6 +147,131 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
   if (url === '/api/tts/admin/clear-cache' && req.method === 'POST') {
     clearTtsAudioCache();
     sendJson(res, 200, { success: true, message: 'In-memory TTS audio cache cleared successfully.' });
+    return true;
+  }
+
+  // ============================================================================
+  // BREVO SMTP EMAIL ENDPOINTS
+  // ============================================================================
+
+  // Email Health & SMTP Connection Check
+  if (url === '/api/email/health' && req.method === 'GET') {
+    const diagnostics = getSafeSmtpDiagnostics();
+    if (!diagnostics.isConfigured) {
+      sendJson(res, 503, {
+        status: 'unconfigured',
+        service: 'Henglish Brevo Mailer',
+        message: 'SMTP credentials (SMTP_PASSWORD) are not yet configured in environment variables.',
+        diagnostics,
+        timestamp: new Date().toISOString(),
+      });
+      return true;
+    }
+
+    const verification = await verifySmtpConnection();
+    sendJson(res, verification.success ? 200 : 502, {
+      status: verification.success ? 'healthy' : 'connection_failed',
+      service: 'Henglish Brevo Mailer',
+      connected: verification.success,
+      message: verification.message,
+      latencyMs: verification.latencyMs,
+      diagnostics,
+      timestamp: new Date().toISOString(),
+    });
+    return true;
+  }
+
+  // Admin Direct Email Verification / Test Send
+  if ((url === '/api/email/test' || url === '/api/email/admin/test') && req.method === 'POST') {
+    try {
+      const body = (await parseJsonBody(req)) as Record<string, any>;
+      const target = (body.to || body.email || '').trim().toLowerCase();
+      if (!target || !isValidEmail(target)) {
+        sendJson(res, 400, { error: 'A valid recipient email is required.' });
+        return true;
+      }
+      const result = await sendAdminTestEmail(target);
+      sendJson(res, result.success ? 200 : 502, result);
+    } catch (err: unknown) {
+      sendJson(res, 500, { error: 'Test email failed', message: String(err) });
+    }
+    return true;
+  }
+
+  // Transactional Email Dispatch Endpoint
+  if (url === '/api/email/send' && req.method === 'POST') {
+    try {
+      const body = (await parseJsonBody(req)) as Record<string, any>;
+      const targetEmail = (body.to || body.email || '').trim().toLowerCase();
+      if (!targetEmail || !isValidEmail(targetEmail)) {
+        sendJson(res, 400, { error: `Valid recipient email required (received: "${targetEmail}").` });
+        return true;
+      }
+
+      let result;
+      switch (body.type) {
+        case 'welcome':
+          result = await sendWelcomeEmail({
+            name: body.name || 'Learner',
+            email: targetEmail,
+            loginUrl: body.actionUrl,
+          });
+          break;
+        case 'password_changed':
+          result = await sendPasswordChangedAlert({
+            name: body.name || 'User',
+            email: targetEmail,
+            ipAddress: req.socket.remoteAddress,
+            changeTime: new Date().toUTCString(),
+          });
+          break;
+        case 'notification':
+          if (!body.title || !body.message) {
+            sendJson(res, 400, { error: 'Title and message are required for notification type.' });
+            return true;
+          }
+          result = await sendAccountNotification({
+            name: body.name || 'Learner',
+            email: targetEmail,
+            title: body.title,
+            message: body.message,
+            actionText: body.actionText,
+            actionUrl: body.actionUrl,
+          });
+          break;
+        case 'verification_guidance':
+          result = await sendVerificationGuidance({
+            name: body.name || 'Learner',
+            email: targetEmail,
+            verificationOtp: body.verificationOtp,
+            verificationUrl: body.verificationUrl,
+          });
+          break;
+        case 'password_reset_guidance':
+          if (!body.resetUrl) {
+            sendJson(res, 400, { error: 'resetUrl is required.' });
+            return true;
+          }
+          result = await sendPasswordResetGuidance({
+            name: body.name || 'Learner',
+            email: targetEmail,
+            resetUrl: body.resetUrl,
+          });
+          break;
+        case 'test':
+          result = await sendAdminTestEmail(targetEmail);
+          break;
+        default:
+          sendJson(res, 400, {
+            error: `Unsupported email type: "${body.type}". Supported: welcome, password_changed, notification, verification_guidance, password_reset_guidance, test.`,
+          });
+          return true;
+      }
+
+      sendJson(res, result.success ? 200 : 502, result);
+    } catch (err: unknown) {
+      sendJson(res, 500, { error: 'Email dispatch error', message: String(err) });
+    }
     return true;
   }
 

@@ -291,3 +291,4 @@ export const DictationChallengeGame: React.FC<DictationChallengeGameProps> = ({ 
     </div>
   );
 };
+

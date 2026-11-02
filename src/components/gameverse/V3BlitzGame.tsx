@@ -222,3 +222,4 @@ export const V3BlitzGame: React.FC<V3BlitzGameProps> = ({ onExit }) => {
     </div>
   );
 };
+

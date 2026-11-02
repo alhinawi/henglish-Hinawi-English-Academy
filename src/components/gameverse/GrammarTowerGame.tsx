@@ -304,3 +304,4 @@ export const GrammarTowerGame: React.FC<GrammarTowerGameProps> = ({ onExit }) =>
     </div>
   );
 };
+

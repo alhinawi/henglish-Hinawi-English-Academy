@@ -259,3 +259,4 @@ export const WordFormationLabGame: React.FC<WordFormationLabGameProps> = ({ onEx
     </div>
   );
 };
+

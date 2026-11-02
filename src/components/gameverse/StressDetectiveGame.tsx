@@ -264,3 +264,4 @@ export const StressDetectiveGame: React.FC<StressDetectiveGameProps> = ({ onExit
     </div>
   );
 };
+

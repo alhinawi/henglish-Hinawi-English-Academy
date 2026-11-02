@@ -469,6 +469,25 @@ export async function updatePassword(newPassword: string): Promise<{ success: bo
         password: newPassword,
       });
       if (error) return { success: false, error: normalizeAuthError(error) };
+
+      // Dispatch asynchronous password changed security alert via Brevo SMTP
+      try {
+        const current = getSavedAuthSession();
+        if (current?.user?.email && typeof window !== 'undefined') {
+          fetch('/api/email/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              type: 'password_changed',
+              to: current.user.email,
+              name: current.user.name,
+            }),
+          }).catch(() => {});
+        }
+      } catch {
+        // Non-blocking security alert
+      }
+
       return { success: true };
     } catch (err: unknown) {
       return { success: false, error: normalizeAuthError(err) };
