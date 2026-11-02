@@ -14,6 +14,8 @@ Official references:
 
 ## Important operating model
 
+This first version is a Gemini-powered autonomous workflow, not a live ChatGPT-to-Gemini agent mesh. The current ChatGPT conversation cannot remain active as a background worker after the chat ends. To have an always-on independent OpenAI reviewer, an OpenAI API integration would be required and would incur separate API charges. To preserve the $0 additional API-cost goal, Antigravity may delegate a separate read-only reviewer subagent within its own service, while GitHub Actions provides deterministic build verification.
+
 Google AI Pro provides a higher Antigravity baseline quota, not unlimited usage. Quota refreshes every five hours until the weekly limit is reached. Usage depends on the work performed. Set AI Credit Overages to **Never** to prevent paid overage usage.
 
 The personal Google account OAuth session is stored locally. Antigravity CLI headless mode uses cached local credentials; an unauthenticated CI runner cannot silently use the personal subscription. Therefore:
