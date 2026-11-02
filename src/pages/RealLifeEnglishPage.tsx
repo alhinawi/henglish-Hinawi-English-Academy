@@ -6,8 +6,11 @@ import {
   SimulationTurn,
   DialogueOption 
 } from '../data/realLifeSimulationsData';
-import { Interactive3DWorld } from '../components/Interactive3DWorld';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+
+const Interactive3DWorld = React.lazy(() =>
+  import('../components/Interactive3DWorld').then(m => ({ default: m.Interactive3DWorld }))
+);
 import {
   Compass,
   Volume2,
@@ -186,10 +189,19 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
       {/* 2. OPTIONAL 3D WORLD EMBED */}
       {viewMode === '3d-world' && (
-        <Interactive3DWorld
-          onNavigate={onNavigate}
-          onSelectScenario={handleSelectScenario}
-        />
+        <React.Suspense
+          fallback={
+            <div className="w-full h-[400px] flex flex-col items-center justify-center bg-slate-900/60 rounded-3xl border border-white/10 text-slate-400 gap-3">
+              <div className="w-8 h-8 border-2 border-cyan-400 border-t-transparent rounded-full animate-spin" />
+              <span className="text-xs font-medium">جاري تحميل بيئة المحاكاة ثلاثية الأبعاد (3D Engine)...</span>
+            </div>
+          }
+        >
+          <Interactive3DWorld
+            onNavigate={onNavigate}
+            onSelectScenario={handleSelectScenario}
+          />
+        </React.Suspense>
       )}
 
       {/* 3. SCENARIO SELECTOR CARDS */}
