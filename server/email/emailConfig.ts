@@ -70,3 +70,4 @@ export function getSafeSmtpDiagnostics() {
     maskedPassword: maskSecret(config.password),
   };
 }
+

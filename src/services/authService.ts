@@ -87,8 +87,16 @@ export const GUEST_PROFILE: UserProfile = {
  * rather than unconfigured placeholders (e.g. 'https://your-project-id.supabase.co').
  */
 export function isSupabaseConfigured(): boolean {
-  const rawUrl = (import.meta.env?.VITE_SUPABASE_URL || '').trim();
-  const rawKey = (import.meta.env?.VITE_SUPABASE_ANON_KEY || '').trim();
+  const rawUrl = (
+    (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) ||
+    (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL)) ||
+    ''
+  ).trim();
+  const rawKey = (
+    (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_ANON_KEY) ||
+    (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_PUBLISHABLE_KEY)) ||
+    ''
+  ).trim();
 
   if (!rawUrl || !rawKey) return false;
   if (!rawUrl.startsWith('https://') && !rawUrl.startsWith('http://')) return false;
@@ -112,18 +120,36 @@ export function isSupabaseConfigured(): boolean {
   return true;
 }
 
-const supabaseUrl = (import.meta.env?.VITE_SUPABASE_URL || '').trim();
-const supabaseAnonKey = (import.meta.env?.VITE_SUPABASE_ANON_KEY || '').trim();
+export let supabase: SupabaseClient | null = null;
 
-export const supabase: SupabaseClient | null = isSupabaseConfigured()
-  ? createClient(supabaseUrl, supabaseAnonKey, {
+export function initSupabaseClient(): SupabaseClient | null {
+  if (isSupabaseConfigured()) {
+    const rawUrl = (
+      (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) ||
+      (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL)) ||
+      ''
+    ).trim();
+    const rawKey = (
+      (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_ANON_KEY) ||
+      (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_PUBLISHABLE_KEY)) ||
+      ''
+    ).trim();
+
+    supabase = createClient(rawUrl, rawKey, {
       auth: {
         persistSession: true,
         autoRefreshToken: true,
         detectSessionInUrl: true,
       },
-    })
-  : null;
+    });
+  } else {
+    supabase = null;
+  }
+  return supabase;
+}
+
+// Initial client instantiation
+initSupabaseClient();
 
 // ==============================================================================
 // ERROR NORMALIZATION HELPER
