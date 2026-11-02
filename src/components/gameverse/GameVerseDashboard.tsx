@@ -1,6 +1,6 @@
 // ==============================================================================
 // HENGLISH ACADEMY - GAMEVERSE EXPANDABLE DASHBOARD
-// Complete 8-category educational gaming arena with real-time dynamic challenges
+// Complete educational gaming arena with 30+ verified playable challenges
 // ==============================================================================
 
 import React, { useState } from 'react';
@@ -20,239 +20,7 @@ import {
   ArrowRight,
 } from 'lucide-react';
 import { playSound } from '../../utils/audio';
-
-export interface GameVerseCardData {
-  id: string;
-  titleEn: string;
-  titleAr: string;
-  category:
-    | 'vocabulary'
-    | 'grammar'
-    | 'listening'
-    | 'speaking'
-    | 'reading'
-    | 'writing'
-    | 'adventure'
-    | 'competitive';
-  cefrLevel: string;
-  descriptionAr: string;
-  icon: string;
-  durationSeconds: number;
-  xpReward: number;
-  badge: string;
-  supportsAiDuel: boolean;
-  supportsMultiplayer: boolean;
-  mechanics: string;
-}
-
-export const GAMEVERSE_CATALOG: GameVerseCardData[] = [
-  // 1. Vocabulary
-  {
-    id: 'vocab-rush',
-    titleEn: 'Vocabulary Rush',
-    titleAr: 'سباق المفردات السريع ⚡',
-    category: 'vocabulary',
-    cefrLevel: 'A2 - B2',
-    descriptionAr: 'اختر المعنى العربي الدقيق للكلمة الإنجليزية الإنجليزية قبل انتهاء العداد الزمني السريع.',
-    icon: '⚡',
-    durationSeconds: 30,
-    xpReward: 35,
-    badge: 'Speed Vocab',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'speed_quiz',
-  },
-  {
-    id: 'word-detective',
-    titleEn: 'Word Detective',
-    titleAr: 'المحقق اللغوي 🕵️',
-    category: 'vocabulary',
-    cefrLevel: 'B1 - C1',
-    descriptionAr: 'اكتشف الكلمة الإنجليزية السرية من خلال 3 ألغاز وتلميحات سياقية ذكية.',
-    icon: '🕵️',
-    durationSeconds: 45,
-    xpReward: 45,
-    badge: 'Mystery Sleuth',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'clue_reveal',
-  },
-  {
-    id: 'spelling-bee',
-    titleEn: 'Spelling Bee Challenge',
-    titleAr: 'تحدي التهجئة والإملاء ✍️',
-    category: 'vocabulary',
-    cefrLevel: 'A2 - C1',
-    descriptionAr: 'استمع للنطق الصوتي واكتب حروف الكلمة الصحيحة بدقة وتجاوز الأفخاخ الإملائية.',
-    icon: '✍️',
-    durationSeconds: 40,
-    xpReward: 40,
-    badge: 'Spelling Ace',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'spelling_audio',
-  },
-  {
-    id: 'synonym-hunter',
-    titleEn: 'Synonym Arena',
-    titleAr: 'معركة المترادفات والأضداد 🏹',
-    category: 'vocabulary',
-    cefrLevel: 'B1 - C2',
-    descriptionAr: 'ميّز بين المترادفات الدقيقة والأضداد واصطد الكلمة الأكثر ملاءمة للسياق.',
-    icon: '🏹',
-    durationSeconds: 45,
-    xpReward: 40,
-    badge: 'Lexical Hunter',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'speed_quiz',
-  },
-
-  // 2. Grammar
-  {
-    id: 'sentence-builder',
-    titleEn: 'Sentence Builder',
-    titleAr: 'معمل تركيب الجمل 🧩',
-    category: 'grammar',
-    cefrLevel: 'A1 - B2',
-    descriptionAr: 'رتّب الكلمات المبعثرة بالترتيب النحوي والسياقي الصحيح لبناء جمل احترافية.',
-    icon: '🧩',
-    durationSeconds: 45,
-    xpReward: 40,
-    badge: 'Syntax Architect',
-    supportsAiDuel: false,
-    supportsMultiplayer: false,
-    mechanics: 'sentence_tiles',
-  },
-  {
-    id: 'error-hunter',
-    titleEn: 'Error Hunter',
-    titleAr: 'صائد الأخطاء القواعدية 🎯',
-    category: 'grammar',
-    cefrLevel: 'B1 - C2',
-    descriptionAr: 'افحص الجمل بدقة خبير لغوي لاكتشاف الأخطاء القواعدية الخفية أو تأكيد صحتها.',
-    icon: '🎯',
-    durationSeconds: 45,
-    xpReward: 45,
-    badge: 'Grammar Sleuth',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'error_spotting',
-  },
-  {
-    id: 'v3-blitz',
-    titleEn: 'V3 Irregular Verbs Blitz',
-    titleAr: 'سباق التصريف الثالث V3 ⚡',
-    category: 'grammar',
-    cefrLevel: 'A1 - B2',
-    descriptionAr: 'اختر التصريف الثالث (V3) الصحيح للأفعال الشاذة بأقصى سرعة ممكنة.',
-    icon: '⚡',
-    durationSeconds: 25,
-    xpReward: 30,
-    badge: 'Verb Master',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'speed_quiz',
-  },
-  {
-    id: 'grammar-tower',
-    titleEn: 'Grammar Tower',
-    titleAr: 'برج القواعد والأزمنة 🏰',
-    category: 'grammar',
-    cefrLevel: 'B1 - C2',
-    descriptionAr: 'ابنِ طوابق البرج بإتقان الأزمنة وحالات If الشرطية والمبني للمجهول دون خطأ.',
-    icon: '🏰',
-    durationSeconds: 60,
-    xpReward: 50,
-    badge: 'Tower Titan',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'tower_stack',
-  },
-
-  // 3. Listening
-  {
-    id: 'listening-detective',
-    titleEn: 'Listening Detective',
-    titleAr: 'محقق الاستماع الصوتي 🎧',
-    category: 'listening',
-    cefrLevel: 'A2 - B2',
-    descriptionAr: 'استمع لمقطع صوتي أمريكي أو بريطاني وحدد التفاصيل الدقيقة واللهجة المستخدمة.',
-    icon: '🎧',
-    durationSeconds: 45,
-    xpReward: 45,
-    badge: 'Golden Ear',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'speed_quiz',
-  },
-
-  // 4. Speaking
-  {
-    id: 'pronunciation-challenge',
-    titleEn: 'Pronunciation Arena',
-    titleAr: 'تحدي النطق ومخارج الحروف 🗣️',
-    category: 'speaking',
-    cefrLevel: 'A2 - C1',
-    descriptionAr: 'تدرّب على النطق الصوتي الصحيح وتجاوز أزواج الكلمات المتشابهة (Minimal Pairs).',
-    icon: '🗣️',
-    durationSeconds: 60,
-    xpReward: 50,
-    badge: 'Speech Ace',
-    supportsAiDuel: false,
-    supportsMultiplayer: false,
-    mechanics: 'voice_input',
-  },
-
-  // 5. Reading
-  {
-    id: 'reading-speedster',
-    titleEn: 'Reading Comprehension',
-    titleAr: 'محقق القراءة والاستيعاب 📖',
-    category: 'reading',
-    cefrLevel: 'B1 - C2',
-    descriptionAr: 'اقرأ النصوص القصيرة واستخلص الفكرة الرئيسية والمعاني الضمنية بسرعة فائقة.',
-    icon: '📖',
-    durationSeconds: 60,
-    xpReward: 50,
-    badge: 'Reading Sleuth',
-    supportsAiDuel: true,
-    supportsMultiplayer: true,
-    mechanics: 'speed_quiz',
-  },
-
-  // 6. Competitive
-  {
-    id: 'ai-duel',
-    titleEn: 'AI Opponent Duel',
-    titleAr: 'مبارزة الذكاء الاصطناعي ⚔️',
-    category: 'competitive',
-    cefrLevel: 'A1 - C2',
-    descriptionAr: 'ادخل في مواجهة مباشرة وسريعة ضد روبوتات ذكية بمستويات صعوبة متنوعة.',
-    icon: '⚔️',
-    durationSeconds: 60,
-    xpReward: 60,
-    badge: 'Arena Gladiator',
-    supportsAiDuel: true,
-    supportsMultiplayer: false,
-    mechanics: 'duel_1v1',
-  },
-  {
-    id: 'multiplayer-arena',
-    titleEn: 'Live Multiplayer Room',
-    titleAr: 'غرفة التحدي الجماعي 👥',
-    category: 'competitive',
-    cefrLevel: 'A1 - C2',
-    descriptionAr: 'أنشئ غرفة أو انضم برمز سداسي لتنافس زملائك في معركة أسئلة بالوقت الحقيقي.',
-    icon: '👥',
-    durationSeconds: 90,
-    xpReward: 75,
-    badge: 'Multiplayer King',
-    supportsAiDuel: false,
-    supportsMultiplayer: true,
-    mechanics: 'multiplayer_live',
-  },
-];
+import { COMPLETE_GAMES_CATALOG, GameDefinition, GameCategory } from '../../data/gamesCatalogData';
 
 interface GameVerseDashboardProps {
   onSelectGame: (gameId: string) => void;
@@ -266,17 +34,27 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
+  const counts: Record<string, number> = {
+    all: COMPLETE_GAMES_CATALOG.length,
+    vocabulary: COMPLETE_GAMES_CATALOG.filter(g => g.category === 'vocabulary').length,
+    grammar: COMPLETE_GAMES_CATALOG.filter(g => g.category === 'grammar').length,
+    spelling: COMPLETE_GAMES_CATALOG.filter(g => g.category === 'spelling').length,
+    listening: COMPLETE_GAMES_CATALOG.filter(g => g.category === 'listening').length,
+    reading: COMPLETE_GAMES_CATALOG.filter(g => g.category === 'reading').length,
+    competitive: COMPLETE_GAMES_CATALOG.filter(g => g.category === 'competitive').length,
+  };
+
   const categories = [
-    { id: 'all', label: 'جميع الألعاب (All)', icon: '🌟' },
-    { id: 'vocabulary', label: 'المفردات (Vocab)', icon: '📚' },
-    { id: 'grammar', label: 'القواعد (Grammar)', icon: '👑' },
-    { id: 'listening', label: 'الاستماع (Listening)', icon: '🎧' },
-    { id: 'speaking', label: 'المحادثة (Speaking)', icon: '🗣️' },
-    { id: 'reading', label: 'القراءة (Reading)', icon: '📖' },
-    { id: 'competitive', label: 'المنافسة (PvP & AI)', icon: '⚔️' },
+    { id: 'all', label: `جميع الألعاب (${counts.all})`, icon: '🌟' },
+    { id: 'vocabulary', label: `المفردات (${counts.vocabulary})`, icon: '📚' },
+    { id: 'grammar', label: `القواعد (${counts.grammar})`, icon: '👑' },
+    { id: 'spelling', label: `التهجئة والأصوات (${counts.spelling})`, icon: '🗣️' },
+    { id: 'listening', label: `الاستماع (${counts.listening})`, icon: '🎧' },
+    { id: 'reading', label: `القراءة والتعبير (${counts.reading})`, icon: '📖' },
+    { id: 'competitive', label: `المبارزة والمنافسة (${counts.competitive})`, icon: '⚔️' },
   ];
 
-  const filteredGames = GAMEVERSE_CATALOG.filter(game => {
+  const filteredGames = COMPLETE_GAMES_CATALOG.filter(game => {
     const matchesCat = selectedCategory === 'all' || game.category === selectedCategory;
     const matchesSearch =
       !searchQuery.trim() ||
@@ -295,13 +73,13 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
           <div className="space-y-3 max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>HENGLISH GAMEVERSE • الساحة الكبرى للألعاب التعليمية</span>
+              <span>HENGLISH GAMEVERSE • كبرى ساحات الألعاب التعليمية المستقلة ({COMPLETE_GAMES_CATALOG.length} لعبة موثقة)</span>
             </div>
             <h2 className="text-2xl sm:text-4xl font-black text-white font-['Cairo',sans-serif] leading-tight">
               ألعاب تفاعلية حقيقية مبنية على أقوى قواعد البيانات اللغوية 🎮
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] leading-relaxed">
-              تحديات مولدة ديناميكياً من 55,000 كلمة و 10,000 تعبير و 5,500 جملة وقواعد اللغة الشاملة. العب بمفردك، بارز روبوتات الذكاء الاصطناعي، أو تحدَّ زملاءك في غرف جماعية بالوقت الحقيقي!
+              تحديات لغوية ونحوية حقيقية غير مكررة مولدة ديناميكياً من 55,000 كلمة و 10,000 تعبير و 5,500 جملة وقواعد اللغة الشاملة. العب بمفردك، أو بارز روبوتات الذكاء الاصطناعي، أو تحدَّ زملاءك في غرف جماعية بالوقت الحقيقي!
             </p>
           </div>
 
@@ -378,11 +156,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
             key={game.id}
             onClick={() => {
               playSound('click');
-              if (game.id === 'multiplayer-arena') {
-                onOpenMultiplayer();
-              } else {
-                onSelectGame(game.id);
-              }
+              onSelectGame(game.id);
             }}
             className="p-5 rounded-3xl bg-linear-to-b from-[#171632] to-[#121124] border border-white/10 hover:border-[#ffd166]/40 transition-all cursor-pointer space-y-4 group hover:scale-[1.02] shadow-xl flex flex-col justify-between"
           >
@@ -437,4 +211,3 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
     </div>
   );
 };
-

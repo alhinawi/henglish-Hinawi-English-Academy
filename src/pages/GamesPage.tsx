@@ -1,6 +1,6 @@
 // ==============================================================================
 // HENGLISH ACADEMY (HENGLISH 2.0) - COMPLETE GAMEVERSE PLATFORM
-// Real educational gaming arena, dynamic question generation, AI Opponent, and anti-cheat XP
+// Real educational gaming arena with 30+ independently playable distinct games
 // ==============================================================================
 
 import React, { useState } from 'react';
@@ -11,111 +11,50 @@ import { SentenceBuilderGame } from '../components/gameverse/SentenceBuilderGame
 import { ErrorHunterGame } from '../components/gameverse/ErrorHunterGame';
 import { SpellingBeeGame } from '../components/gameverse/SpellingBeeGame';
 import { AiDuelGame } from '../components/gameverse/AiDuelGame';
+import { GrammarTowerGame } from '../components/gameverse/GrammarTowerGame';
+import { V3BlitzGame } from '../components/gameverse/V3BlitzGame';
+import { PassiveVoiceConverterGame } from '../components/gameverse/PassiveVoiceConverterGame';
+import { ParagraphBuilderGame } from '../components/gameverse/ParagraphBuilderGame';
+import { ReadingSpeedsterGame } from '../components/gameverse/ReadingSpeedsterGame';
+import { DictationChallengeGame } from '../components/gameverse/DictationChallengeGame';
+import { ListeningGapFillGame } from '../components/gameverse/ListeningGapFillGame';
+import { StressDetectiveGame } from '../components/gameverse/StressDetectiveGame';
+import { WordFormationLabGame } from '../components/gameverse/WordFormationLabGame';
+import { ChoiceGameEngine } from '../components/gameverse/ChoiceGameEngine';
 import { MultiplayerLobbyModal } from '../components/gameverse/MultiplayerLobbyModal';
 import { FlashcardDeck } from '../components/FlashcardDeck';
 import { FLASHCARD_DECK } from '../data/flashcardsData';
-import { VERB_TOOLKIT } from '../data/verbsData';
-import { playSound, speakEnglish } from '../utils/audio';
+import { playSound } from '../utils/audio';
 import {
-  Gamepad2,
-  Swords,
-  Layers,
-  Sparkles,
-  Timer,
-  ChevronLeft,
-  Users,
-} from 'lucide-react';
+  generateSynonymHunterRound,
+  generateAntonymArenaRound,
+  generateWordAssociationRound,
+  generateContextMasterRound,
+  generatePhrasalQuestRound,
+  generateIdiomExplorerRound,
+  generateCollocationRound,
+  generateTenseSwitchRound,
+  generateConditionalArchitectRound,
+  generateGrammarDetectiveRound,
+  generatePronunciationArenaRound,
+  generateMinimalPairsRound,
+  generatePhonemeMatchRound,
+  generateListeningDetectiveRound,
+  generateAccentDetectiveRound,
+  generateStoryCompletionRound,
+} from '../services/gameGenerationService';
+import { Gamepad2, Swords, Layers } from 'lucide-react';
 
 export const GamesPage: React.FC = () => {
-  const [activeView, setActiveView] = useState<
-    | 'dashboard'
-    | 'vocab-rush'
-    | 'word-detective'
-    | 'sentence-builder'
-    | 'error-hunter'
-    | 'spelling-bee'
-    | 'ai-duel'
-    | 'v3-blitz'
-    | 'flashcards'
-  >('dashboard');
-
+  const [activeView, setActiveView] = useState<string>('dashboard');
   const [showMultiplayerModal, setShowMultiplayerModal] = useState<boolean>(false);
 
-  // V3 Blitz State
-  const [blitzRunning, setBlitzRunning] = useState(false);
-  const [blitzScore, setBlitzScore] = useState(0);
-  const [blitzTime, setBlitzTime] = useState(25);
-  const [currentVerbIndex, setCurrentVerbIndex] = useState(0);
-  const [blitzOptions, setBlitzOptions] = useState<string[]>([]);
-
-  // V3 Blitz Handlers
-  const startBlitz = () => {
-    playSound('click');
-    setBlitzScore(0);
-    setBlitzTime(25);
-    setBlitzRunning(true);
-    setupNextVerb();
-  };
-
-  const setupNextVerb = () => {
-    const randomIdx = Math.floor(Math.random() * VERB_TOOLKIT.length);
-    setCurrentVerbIndex(randomIdx);
-    const target = VERB_TOOLKIT[randomIdx];
-
-    const others = VERB_TOOLKIT.filter(v => v.v3 !== target.v3)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 3)
-      .map(v => v.v3);
-
-    const allOpts = [...others, target.v3].sort(() => Math.random() - 0.5);
-    setBlitzOptions(allOpts);
-  };
-
-  const handleBlitzChoice = (choice: string) => {
-    if (!blitzRunning) return;
-    const target = VERB_TOOLKIT[currentVerbIndex];
-
-    if (choice === target.v3) {
-      playSound('correct');
-      setBlitzScore(prev => prev + 10);
-      setupNextVerb();
-    } else {
-      playSound('wrong');
-    }
-  };
-
-  React.useEffect(() => {
-    let timer: ReturnType<typeof setInterval>;
-    if (blitzRunning && blitzTime > 0) {
-      timer = setInterval(() => {
-        setBlitzTime(t => t - 1);
-      }, 1000);
-    } else if (blitzTime === 0) {
-      setBlitzRunning(false);
-    }
-    return () => clearInterval(timer);
-  }, [blitzRunning, blitzTime]);
-
   const handleLaunchGame = (gameId: string) => {
-    if (gameId === 'vocab-rush' || gameId === 'synonym-hunter') {
-      setActiveView('vocab-rush');
-    } else if (gameId === 'word-detective') {
-      setActiveView('word-detective');
-    } else if (gameId === 'sentence-builder') {
-      setActiveView('sentence-builder');
-    } else if (gameId === 'error-hunter') {
-      setActiveView('error-hunter');
-    } else if (gameId === 'spelling-bee') {
-      setActiveView('spelling-bee');
-    } else if (gameId === 'ai-duel') {
-      setActiveView('ai-duel');
-    } else if (gameId === 'v3-blitz') {
-      setActiveView('v3-blitz');
-    } else if (gameId === 'memory-match' || gameId === 'cards') {
-      setActiveView('flashcards');
+    playSound('click');
+    if (gameId === 'multiplayer-arena') {
+      setShowMultiplayerModal(true);
     } else {
-      // Default to AI duel or vocab rush
-      setActiveView('vocab-rush');
+      setActiveView(gameId);
     }
   };
 
@@ -132,7 +71,7 @@ export const GamesPage: React.FC = () => {
           ساحة الألعاب والمبارزات اللغوية 🎮
         </h1>
         <p className="text-sm sm:text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
-          ألعاب تفاعلية حقيقية معتمدة على 55,000 كلمة و 10,000 تعبير و 5,500 جملة. تدرّب بالسرعة القصوى، أو ادخل في مواجهة 1v1 ضد الذكاء الاصطناعي، أو أنشئ غرفة تحدٍ جماعية بالوقت الحقيقي!
+          أكثر من 30 لعبة تعليمية تفاعلية حقيقية مبنية على 55,000 كلمة و 10,000 تعبير و 5,500 جملة وقواعد اللغة الشاملة. تدرّب بالسرعة القصوى، أو ادخل في مواجهة 1v1 ضد الذكاء الاصطناعي، أو أنشئ غرفة تحدٍ جماعية بالوقت الحقيقي!
         </p>
       </div>
 
@@ -165,7 +104,35 @@ export const GamesPage: React.FC = () => {
           }`}
         >
           <Swords className="w-4 h-4 text-[#ffd166]" />
-          <span>مبارزة الذكاء الاصطناعي 1v1 ⚔️</span>
+          <span>مبارزة الذكاء الاصطناعي ⚔️</span>
+        </button>
+
+        <button
+          onClick={() => {
+            playSound('click');
+            setActiveView('grammar-tower');
+          }}
+          className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
+            activeView === 'grammar-tower'
+              ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] shadow-lg'
+              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
+          }`}
+        >
+          🏰 برج القواعد
+        </button>
+
+        <button
+          onClick={() => {
+            playSound('click');
+            setActiveView('v3-blitz');
+          }}
+          className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
+            activeView === 'v3-blitz'
+              ? 'bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-[#0c0b20] shadow-lg'
+              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
+          }`}
+        >
+          ⚡ سباق V3
         </button>
 
         <button
@@ -175,7 +142,7 @@ export const GamesPage: React.FC = () => {
           }}
           className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
             activeView === 'vocab-rush'
-              ? 'bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white shadow-lg'
+              ? 'bg-linear-to-r from-[#41e7ff] to-[#c4ff55] text-[#0c0b20] shadow-lg'
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
@@ -185,25 +152,11 @@ export const GamesPage: React.FC = () => {
         <button
           onClick={() => {
             playSound('click');
-            setActiveView('sentence-builder');
-          }}
-          className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
-            activeView === 'sentence-builder'
-              ? 'bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] shadow-lg font-black'
-              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
-          }`}
-        >
-          🧩 معمل تركيب الجمل
-        </button>
-
-        <button
-          onClick={() => {
-            playSound('click');
             setActiveView('error-hunter');
           }}
           className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
             activeView === 'error-hunter'
-              ? 'bg-linear-to-r from-[#ff4f9a] to-[#ffd166] text-[#0c0b20] shadow-lg font-black'
+              ? 'bg-linear-to-r from-[#ff4f9a] to-[#ffd166] text-[#0c0b20] shadow-lg'
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
@@ -217,7 +170,7 @@ export const GamesPage: React.FC = () => {
           }}
           className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
             activeView === 'spelling-bee'
-              ? 'bg-linear-to-r from-[#ffd166] to-[#c4ff55] text-[#0c0b20] shadow-lg font-black'
+              ? 'bg-linear-to-r from-[#ffd166] to-[#c4ff55] text-[#0c0b20] shadow-lg'
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
@@ -241,6 +194,20 @@ export const GamesPage: React.FC = () => {
         <button
           onClick={() => {
             playSound('click');
+            setActiveView('sentence-builder');
+          }}
+          className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
+            activeView === 'sentence-builder'
+              ? 'bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] shadow-lg'
+              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
+          }`}
+        >
+          🧩 تركيب الجمل
+        </button>
+
+        <button
+          onClick={() => {
+            playSound('click');
             setActiveView('flashcards');
           }}
           className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 ${
@@ -252,6 +219,10 @@ export const GamesPage: React.FC = () => {
           🃏 بطاقات الذاكرة
         </button>
       </div>
+
+      {/* ==================================================================== */}
+      {/* 1. DASHBOARD & BESPOKE GAME VIEWS */}
+      {/* ==================================================================== */}
 
       {/* VIEW: MAIN DASHBOARD */}
       {activeView === 'dashboard' && (
@@ -291,84 +262,315 @@ export const GamesPage: React.FC = () => {
         <AiDuelGame onExit={() => setActiveView('dashboard')} />
       )}
 
+      {/* VIEW: GRAMMAR TOWER */}
+      {activeView === 'grammar-tower' && (
+        <GrammarTowerGame onExit={() => setActiveView('dashboard')} />
+      )}
+
       {/* VIEW: V3 BLITZ */}
       {activeView === 'v3-blitz' && (
-        <div className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 text-center space-y-6 max-w-2xl mx-auto">
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-black uppercase text-[#41e7ff] tracking-wider">
-              V3 SPEED CHALLENGE
-            </span>
-            <div className="flex items-center gap-4 text-sm font-black">
-              <span className="flex items-center gap-1 text-[#ffd166]">
-                <Timer className="w-4 h-4" />
-                <span>{blitzTime}s</span>
-              </span>
-              <span className="text-[#c4ff55]">النقاط: {blitzScore}</span>
-            </div>
-          </div>
+        <V3BlitzGame onExit={() => setActiveView('dashboard')} />
+      )}
 
-          {!blitzRunning && blitzTime === 25 && (
-            <div className="py-8 space-y-4">
-              <span className="text-5xl block">⚡</span>
-              <h3 className="text-2xl font-black text-white">تحدي الـ ٢٥ ثانية لتصريف الأفعال V3!</h3>
-              <p className="text-sm text-[#b9b6d5] max-w-md mx-auto leading-relaxed">
-                سيظهر لك فعل في المصدر (V1)، وعليك اختيار التصريف الثالث (V3) الصحيح بأسرع ما يمكن لتجميع أكبر قدر من النقاط.
-              </p>
-              <button
-                onClick={startBlitz}
-                className="px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-base hover:brightness-110 shadow-lg cursor-pointer transition-transform hover:scale-105"
-              >
-                ابدأ التحدي السريع الآن 🚀
-              </button>
-            </div>
-          )}
+      {/* VIEW: PASSIVE CONVERTER */}
+      {activeView === 'passive-converter' && (
+        <PassiveVoiceConverterGame onExit={() => setActiveView('dashboard')} />
+      )}
 
-          {!blitzRunning && blitzTime === 0 && (
-            <div className="py-8 space-y-4">
-              <span className="text-5xl block">🎉</span>
-              <h3 className="text-2xl font-black text-white">انتهى الوقت! نتيجتك الرائعة:</h3>
-              <div className="text-4xl font-black text-[#c4ff55]">{blitzScore} نقطة!</div>
-              <button
-                onClick={startBlitz}
-                className="px-6 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer"
-              >
-                العب مرة ثانية ↻
-              </button>
-            </div>
-          )}
+      {/* VIEW: PARAGRAPH BUILDER */}
+      {activeView === 'paragraph-builder' && (
+        <ParagraphBuilderGame onExit={() => setActiveView('dashboard')} />
+      )}
 
-          {blitzRunning && (
-            <div className="py-6 space-y-6">
-              <div className="p-6 rounded-2xl bg-[#09091a] border border-white/10">
-                <span className="text-xs text-[#ffd166] font-bold block mb-1">
-                  ما هو التصريف الثالث (V3) للفعل:
-                </span>
-                <span dir="ltr" className="en text-3xl sm:text-4xl font-black text-white font-['Outfit',sans-serif]">
-                  {VERB_TOOLKIT[currentVerbIndex]?.v1.toUpperCase()}
-                </span>
-                <span className="text-xs text-[#b9b6d5] block mt-1">
-                  ({VERB_TOOLKIT[currentVerbIndex]?.meaningAr})
-                </span>
-              </div>
+      {/* VIEW: READING SPEEDSTER */}
+      {activeView === 'reading-speedster' && (
+        <ReadingSpeedsterGame onExit={() => setActiveView('dashboard')} />
+      )}
 
-              <div className="grid grid-cols-2 gap-3">
-                {blitzOptions.map((opt, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleBlitzChoice(opt)}
-                    className="p-4 rounded-2xl bg-[#171632] hover:bg-[#41e7ff]/20 border border-white/15 hover:border-[#41e7ff] text-white hover:text-[#41e7ff] font-black text-lg transition-all cursor-pointer shadow-md active:scale-95 font-['Outfit',sans-serif]"
-                  >
-                    {opt}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-        </div>
+      {/* VIEW: DICTATION CHALLENGE */}
+      {activeView === 'dictation-challenge' && (
+        <DictationChallengeGame onExit={() => setActiveView('dashboard')} />
+      )}
+
+      {/* VIEW: LISTENING GAP FILL */}
+      {activeView === 'listening-gap-fill' && (
+        <ListeningGapFillGame onExit={() => setActiveView('dashboard')} />
+      )}
+
+      {/* VIEW: STRESS DETECTIVE */}
+      {activeView === 'stress-detective' && (
+        <StressDetectiveGame onExit={() => setActiveView('dashboard')} />
+      )}
+
+      {/* VIEW: WORD FORMATION LAB */}
+      {activeView === 'word-formation' && (
+        <WordFormationLabGame onExit={() => setActiveView('dashboard')} />
       )}
 
       {/* VIEW: FLASHCARDS */}
-      {activeView === 'flashcards' && <FlashcardDeck cards={FLASHCARD_DECK} />}
+      {activeView === 'flashcards' && (
+        <FlashcardDeck cards={FLASHCARD_DECK} />
+      )}
+
+      {/* ==================================================================== */}
+      {/* 2. DYNAMIC CHOICE-ENGINE VIEWS */}
+      {/* ==================================================================== */}
+
+      {/* Synonym Arena */}
+      {activeView === 'synonym-hunter' && (
+        <ChoiceGameEngine
+          gameId="synonym-hunter"
+          title="Synonym Arena"
+          titleAr="معركة المترادفات 🏹"
+          category="vocabulary"
+          icon="🏹"
+          badge="Synonym Champion"
+          durationSeconds={40}
+          questionCount={6}
+          generator={generateSynonymHunterRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Antonym Arena */}
+      {activeView === 'antonym-arena' && (
+        <ChoiceGameEngine
+          gameId="antonym-arena"
+          title="Antonym Arena"
+          titleAr="حلبة الأضداد والمعكوسات ⚖️"
+          category="vocabulary"
+          icon="⚖️"
+          badge="Polarity Master"
+          durationSeconds={35}
+          questionCount={6}
+          generator={generateAntonymArenaRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Word Association */}
+      {activeView === 'word-association' && (
+        <ChoiceGameEngine
+          gameId="word-association"
+          title="Word Association"
+          titleAr="الروابط الذهنية والدلالية 🔗"
+          category="vocabulary"
+          icon="🔗"
+          badge="Semantic Linker"
+          durationSeconds={40}
+          questionCount={5}
+          generator={generateWordAssociationRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Context Master */}
+      {activeView === 'context-master' && (
+        <ChoiceGameEngine
+          gameId="context-master"
+          title="Context Master"
+          titleAr="سيد السياق والمواقف 🎭"
+          category="vocabulary"
+          icon="🎭"
+          badge="Context Sensei"
+          durationSeconds={45}
+          questionCount={5}
+          generator={generateContextMasterRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Phrasal Verb Quest */}
+      {activeView === 'phrasal-quest' && (
+        <ChoiceGameEngine
+          gameId="phrasal-quest"
+          title="Phrasal Verb Quest"
+          titleAr="متاهة الأفعال المركبة 🧭"
+          category="vocabulary"
+          icon="🧭"
+          badge="Phrasal Conqueror"
+          durationSeconds={50}
+          questionCount={6}
+          generator={generatePhrasalQuestRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Idiom Explorer */}
+      {activeView === 'idiom-explorer' && (
+        <ChoiceGameEngine
+          gameId="idiom-explorer"
+          title="Idiom Explorer"
+          titleAr="مستكشف الأمثال والتعبيرات 🔮"
+          category="vocabulary"
+          icon="🔮"
+          badge="Idiom Sage"
+          durationSeconds={45}
+          questionCount={5}
+          generator={generateIdiomExplorerRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Collocation Challenge */}
+      {activeView === 'collocation-challenge' && (
+        <ChoiceGameEngine
+          gameId="collocation-challenge"
+          title="Collocation Challenge"
+          titleAr="تحدي المتلازمات اللفظية 🤝"
+          category="vocabulary"
+          icon="🤝"
+          badge="Natural Collocator"
+          durationSeconds={40}
+          questionCount={6}
+          generator={generateCollocationRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Tense Switch */}
+      {activeView === 'tense-switch' && (
+        <ChoiceGameEngine
+          gameId="tense-switch"
+          title="Tense Switch"
+          titleAr="محوّل الأزمنة القواعدية ⏳"
+          category="grammar"
+          icon="⏳"
+          badge="Tense Shifter"
+          durationSeconds={45}
+          questionCount={5}
+          generator={generateTenseSwitchRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Conditional Architect */}
+      {activeView === 'conditional-architect' && (
+        <ChoiceGameEngine
+          gameId="conditional-architect"
+          title="Conditional Architect"
+          titleAr="مهندس الجمل الشرطية 🏗️"
+          category="grammar"
+          icon="🏗️"
+          badge="Condition Builder"
+          durationSeconds={45}
+          questionCount={5}
+          generator={generateConditionalArchitectRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Grammar Detective */}
+      {activeView === 'grammar-detective' && (
+        <ChoiceGameEngine
+          gameId="grammar-detective"
+          title="Grammar Detective"
+          titleAr="محقق أجزاء الكلام والأفخاخ 🔍"
+          category="grammar"
+          icon="🔍"
+          badge="Syntax Sleuth"
+          durationSeconds={45}
+          questionCount={5}
+          generator={generateGrammarDetectiveRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Pronunciation Arena */}
+      {activeView === 'pronunciation-arena' && (
+        <ChoiceGameEngine
+          gameId="pronunciation-arena"
+          title="Pronunciation Arena"
+          titleAr="ساحة الرموز الصوتية IPA 🗣️"
+          category="spelling"
+          icon="🗣️"
+          badge="Phonetics Pro"
+          durationSeconds={40}
+          questionCount={6}
+          generator={generatePronunciationArenaRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Minimal Pairs */}
+      {activeView === 'minimal-pairs' && (
+        <ChoiceGameEngine
+          gameId="minimal-pairs"
+          title="Minimal Pairs Challenge"
+          titleAr="تحدي الأزواج الصوتية الدقيقة 🎧"
+          category="spelling"
+          icon="🎧"
+          badge="Audio Discriminator"
+          durationSeconds={35}
+          questionCount={6}
+          generator={generateMinimalPairsRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Phoneme Match */}
+      {activeView === 'phoneme-match' && (
+        <ChoiceGameEngine
+          gameId="phoneme-match"
+          title="Phoneme Match"
+          titleAr="مطابقة الفونيمات والأصوات 🔤"
+          category="spelling"
+          icon="🔤"
+          badge="Phoneme Wizard"
+          durationSeconds={40}
+          questionCount={5}
+          generator={generatePhonemeMatchRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Listening Detective */}
+      {activeView === 'listening-detective' && (
+        <ChoiceGameEngine
+          gameId="listening-detective"
+          title="Listening Detective"
+          titleAr="محقق الاستماع الصوتي 🕵️‍♂️"
+          category="listening"
+          icon="🕵️‍♂️"
+          badge="Golden Ear"
+          durationSeconds={45}
+          questionCount={4}
+          generator={generateListeningDetectiveRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Accent Detective */}
+      {activeView === 'accent-detective' && (
+        <ChoiceGameEngine
+          gameId="accent-detective"
+          title="Accent Detective"
+          titleAr="محقق اللهجات الأمريكية والبريطانية 🌍"
+          category="listening"
+          icon="🌍"
+          badge="Accent Sleuth"
+          durationSeconds={40}
+          questionCount={5}
+          generator={generateAccentDetectiveRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
+
+      {/* Story Completion */}
+      {activeView === 'story-completion' && (
+        <ChoiceGameEngine
+          gameId="story-completion"
+          title="Story Completion"
+          titleAr="إكمال القصة التفاعلية 🧭"
+          category="reading"
+          icon="🧭"
+          badge="Narrative Master"
+          durationSeconds={50}
+          questionCount={4}
+          generator={generateStoryCompletionRound}
+          onExit={() => setActiveView('dashboard')}
+        />
+      )}
 
       {/* MULTIPLAYER LOBBY MODAL */}
       {showMultiplayerModal && (
