@@ -8,7 +8,8 @@ import { GlobalSearchModal } from './components/GlobalSearchModal';
 
 import { VoiceSettingsModal } from './components/VoiceSettingsModal';
 
-import { AuthModal } from './components/AuthModal';
+import { AuthModal } from './components/AuthModal';
+import { ErrorBoundary } from './components/ErrorBoundary';
 
 import { useProgress } from './utils/useProgress';
 
@@ -680,7 +681,8 @@ export const App: React.FC = () => {
 
             ) : (
 
-              <React.Suspense fallback={<RouteLoadingSkeleton />}>
+              <ErrorBoundary>
+                <React.Suspense fallback={<RouteLoadingSkeleton />}>
                 <>
 
                 {/* 1. Central Dashboard */}
@@ -970,7 +972,8 @@ export const App: React.FC = () => {
                   <TranslationStudioPage userProfile={activeProfile} />
                 )}
                 </>
-              </React.Suspense>
+              </React.Suspense>
+              </ErrorBoundary>
 
             )}
 
