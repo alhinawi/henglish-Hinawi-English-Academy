@@ -6,7 +6,7 @@
 import { CEFRLevel } from '../types';
 import { TimedSubtitle, SceneVocabulary, SceneQuiz, MovieSceneItem } from '../data/movieScenesData';
 import { verifyYouTubeVideo, VideoVerificationStatus, extractYouTubeId } from './videoVerificationService';
-import { supabase } from './authService';
+import { supabase } from '../lib/supabase';
 
 export type VideoCategoryType =
   | 'movie_scenes'
@@ -1219,6 +1219,24 @@ export function toggleSaveVideo(video: EducationalVideoItem): { isSaved: boolean
   } catch {
     // quiet fallback
   }
+
+  // Background sync bookmark to Supabase
+  if (supabase) {
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user && !user.id.startsWith('guest-')) {
+        if (exists) {
+          supabase?.from('user_video_bookmarks').delete().eq('user_id', user.id).eq('video_id', video.id || video.youtubeId).then();
+        } else {
+          supabase?.from('user_video_bookmarks').upsert({
+            user_id: user.id,
+            video_id: video.id || video.youtubeId,
+            created_at: new Date().toISOString(),
+          }, { onConflict: 'user_id,video_id' }).then();
+        }
+      }
+    }).catch(() => {});
+  }
+
   return { isSaved: !exists, list };
 }
 

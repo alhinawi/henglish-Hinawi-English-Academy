@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import { calculateSM2, ReviewRating } from './spacedRepetitionService';
+import { supabase } from '../lib/supabase';
 
 export interface SentenceSrsRecord {
   sentenceId: string;
@@ -101,6 +102,23 @@ function persistAll() {
     localStorage.setItem(STORAGE_KEY_STATS, JSON.stringify(stats));
   } catch (err) {
     console.error('Error persisting SRS data to storage:', err);
+  }
+
+  // Background sync to user learning progress in Supabase
+  if (supabase) {
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user && !user.id.startsWith('guest-')) {
+        supabase?.from('user_learning_progress').upsert({
+          user_id: user.id,
+          metadata: {
+            sentence_stats: stats,
+            sentence_favorites: Array.from(favoriteIds),
+            sentence_collections: collections,
+            updated_at: new Date().toISOString(),
+          },
+        }, { onConflict: 'user_id' }).then();
+      }
+    }).catch(() => {});
   }
 }
 

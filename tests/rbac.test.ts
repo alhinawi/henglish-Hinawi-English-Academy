@@ -46,3 +46,4 @@ describe('Henglish Role-Based Access Control (RBAC) Suite', () => {
     expect(canAccessTeacherPanel('admin')).toBe(true);
   });
 });
+

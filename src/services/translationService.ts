@@ -16,7 +16,8 @@ import {
   TranslationMode,
 } from '../types/translation';
 import { CEFRLevel } from '../types';
-import { saveSrsCardsToStorage, loadSrsCardsFromStorage, VocabularyCard } from './spacedRepetitionService';
+import { saveSrsCardsToStorage, loadSrsCardsFromStorage, VocabularyCard, saveUserSrsCard } from './spacedRepetitionService';
+import { supabase } from '../lib/supabase';
 
 const STORAGE_KEY_HISTORY = 'henglish_translation_history_v1';
 const STORAGE_KEY_SAVED_VOCAB = 'henglish_translation_saved_vocab_v1';
@@ -216,6 +217,25 @@ export function saveTranslationToHistory(
   try {
     localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(updated));
   } catch {}
+
+  // Background sync to Supabase if authenticated
+  if (supabase) {
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user && !user.id.startsWith('guest-')) {
+        supabase?.from('translations_history').insert({
+          user_id: user.id,
+          source_text: newItem.sourceText,
+          target_text: newItem.translatedText,
+          source_lang: newItem.sourceLang,
+          target_lang: newItem.targetLang,
+          mode: newItem.mode,
+          cultural_notes: newItem.summaryExplanationAr || null,
+          is_favorite: Boolean(newItem.isFavorite),
+        }).then();
+      }
+    }).catch(() => {});
+  }
+
   return newItem;
 }
 
@@ -294,6 +314,27 @@ export function saveVocabularyCard(
       nextReviewAt: newCard.nextReviewAt,
     };
     saveSrsCardsToStorage([bridgedCard, ...globalSrsCards.filter(c => c.word.toLowerCase() !== bridgedCard.word.toLowerCase())]);
+    
+    // Background sync to unified Supabase SRS table
+    if (supabase) {
+      supabase.auth.getUser().then(({ data: { user } }) => {
+        if (user && !user.id.startsWith('guest-')) {
+          saveUserSrsCard(bridgedCard, user.id).catch(() => {});
+          supabase?.from('translation_saved_vocabulary').insert({
+            user_id: user.id,
+            source_term: newCard.wordOrPhrase,
+            target_term: newCard.translationAr,
+            context_sentence: newCard.exampleEn || null,
+            cefr_level: newCard.cefrLevel,
+            notes: newCard.personalNotes || null,
+            repetition_count: 0,
+            interval_days: 1,
+            ease_factor: 2.50,
+            next_review_at: newCard.nextReviewAt,
+          }).then();
+        }
+      }).catch(() => {});
+    }
   } catch (err) {
     console.warn('Could not sync to global SRS:', err);
   }

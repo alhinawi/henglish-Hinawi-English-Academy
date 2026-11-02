@@ -1,4 +1,4 @@
-import { supabase } from './authService';
+import { supabase } from '../lib/supabase';
 import { UserProgressState, UserProfile } from '../types';
 
 export interface PersistentProgressPayload {
@@ -93,7 +93,9 @@ export async function saveUserProgressToDatabase(
     await supabase
       .from('profiles')
       .update({
+        xp: payload.totalXp,
         xp_points: payload.totalXp,
+        streak: payload.streakDays,
         streak_days: payload.streakDays,
         current_level: payload.currentLevel,
         target_level: payload.targetLevel,

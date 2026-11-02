@@ -1,4 +1,5 @@
-import { createClient, SupabaseClient, User as SupabaseUser, Session as SupabaseSession } from '@supabase/supabase-js';
+import { createClient, SupabaseClient, User as SupabaseUser, Session as SupabaseSession } from '@supabase/supabase-js';
+import { getSupabase } from '../lib/supabase';
 import { UserProfile, CEFRLevel, UserRole } from '../types';
 
 export type { UserProfile, CEFRLevel, UserRole };
@@ -120,7 +121,7 @@ export function isSupabaseConfigured(): boolean {
   return true;
 }
 
-export let supabase: SupabaseClient | null = null;
+export let supabase: SupabaseClient | null = getSupabase();
 
 export function initSupabaseClient(): SupabaseClient | null {
   if (isSupabaseConfigured()) {
