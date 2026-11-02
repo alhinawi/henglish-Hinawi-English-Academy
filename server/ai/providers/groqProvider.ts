@@ -1,6 +1,6 @@
 // ==============================================================================
 // HENGLISH ACADEMY - GROQ AI PROVIDER (PRIMARY PROVIDER)
-// Ultra-low latency Llama 3.3 / 3.1 inference via Groq LPUs
+// Ultra-low latency LPU inference via Groq
 // ==============================================================================
 
 import { BaseAiProvider } from './baseProvider';
@@ -16,7 +16,10 @@ export class GroqProvider extends BaseAiProvider {
   readonly supportsStreaming = true;
 
   private getApiKey(): string {
-    return process.env.GROQ_API_KEY || '';
+    return (
+      (typeof process !== 'undefined' && process.env.GROQ_API_KEY) ||
+      ''
+    );
   }
 
   isConfigured(): boolean {
@@ -25,16 +28,20 @@ export class GroqProvider extends BaseAiProvider {
   }
 
   getRecommendedModel(task: AiTaskType): string {
+    if (process.env.GROQ_AI_MODEL) {
+      return process.env.GROQ_AI_MODEL;
+    }
+
     switch (task) {
-      case 'vocabulary':
-      case 'conversation':
-        return 'llama-3.1-8b-instant';
       case 'grammar_audit':
       case 'writing_evaluation':
+        return 'openai/gpt-oss-120b';
+      case 'vocabulary':
+      case 'conversation':
       case 'question_generation':
       case 'translation':
       default:
-        return 'llama-3.3-70b-versatile';
+        return 'qwen/qwen3.8-27b';
     }
   }
 
@@ -61,11 +68,17 @@ export class GroqProvider extends BaseAiProvider {
     const startTime = Date.now();
 
     try {
+      const requestedTokens = options.maxTokens ?? 2048;
+      // Reasoning models (like openai/gpt-oss-*) consume tokens for internal reasoning before output
+      const effectiveMaxTokens = model.includes('gpt-oss')
+        ? Math.max(requestedTokens, 1024)
+        : requestedTokens;
+
       const payload: Record<string, unknown> = {
         model,
         messages,
         temperature: options.temperature ?? 0.7,
-        max_tokens: options.maxTokens ?? 2048,
+        max_tokens: effectiveMaxTokens,
       };
 
       if (options.responseFormat === 'json') {
@@ -93,7 +106,11 @@ export class GroqProvider extends BaseAiProvider {
 
       const data = await res.json();
       const durationMs = Date.now() - startTime;
-      const text = data.choices?.[0]?.message?.content || '';
+      const msgChoice = data.choices?.[0]?.message;
+      let text = (msgChoice?.content || '').trim();
+      if (!text && msgChoice?.reasoning) {
+        text = msgChoice.reasoning.trim();
+      }
 
       if (!text) {
         throw new Error('Groq returned empty response');
