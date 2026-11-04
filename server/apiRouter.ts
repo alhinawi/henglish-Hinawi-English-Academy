@@ -30,15 +30,10 @@ import type { TranslationRequest } from '../src/types/translation';
 import { getSafeSmtpDiagnostics } from './email/emailConfig';
 import {
   verifySmtpConnection,
-  sendEmail,
-  sendWelcomeEmail,
-  sendPasswordChangedAlert,
-  sendAccountNotification,
   sendAdminTestEmail,
-  sendVerificationGuidance,
-  sendPasswordResetGuidance,
   isValidEmail,
 } from './email/emailService';
+import { applyCorsHeaders, verifyAuthToken } from './auth/serverAuth';
 
 function parseJsonBody(req: IncomingMessage): Promise<unknown> {
   return new Promise((resolve, reject) => {
@@ -67,26 +62,18 @@ function parseJsonBody(req: IncomingMessage): Promise<unknown> {
 function sendJson(res: ServerResponse, statusCode: number, data: unknown) {
   res.statusCode = statusCode;
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   res.end(JSON.stringify(data));
 }
 
 export async function handleApiRoute(req: IncomingMessage, res: ServerResponse): Promise<boolean> {
   const url = req.url || '';
 
-  // Handle CORS preflight
-  if (req.method === 'OPTIONS') {
-    res.statusCode = 204;
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.end();
+  // Handle CORS preflight & headers securely
+  if (applyCorsHeaders(req, res)) {
     return true;
   }
 
-  // Health check
+  // Health check (public)
   if (url === '/api/health') {
     const config = getAiConfig();
     sendJson(res, 200, {
@@ -99,8 +86,14 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
-  // Admin AI Management & Health status
+  // Admin AI Management & Health status (Strict RBAC: Admin only)
   if (url === '/api/ai/admin/health' && req.method === 'GET') {
+    const auth = await verifyAuthToken(req);
+    if (!auth.authenticated || auth.role !== 'admin') {
+      sendJson(res, 403, { error: 'Forbidden: Authoritative admin authorization required.' });
+      return true;
+    }
+
     sendJson(res, 200, {
       providers: getProviderHealthList(),
       config: getRouterConfig(),
@@ -110,8 +103,14 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
-  // Admin AI Router Configuration update
+  // Admin AI Router Configuration update (Strict RBAC: Admin only)
   if (url === '/api/ai/admin/config' && req.method === 'POST') {
+    const auth = await verifyAuthToken(req);
+    if (!auth.authenticated || auth.role !== 'admin') {
+      sendJson(res, 403, { error: 'Forbidden: Authoritative admin authorization required.' });
+      return true;
+    }
+
     try {
       const body = (await parseJsonBody(req)) as Record<string, unknown>;
       const updated = updateRouterConfig(body);
@@ -126,15 +125,27 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
-  // Admin Clear AI Cache
+  // Admin Clear AI Cache (Strict RBAC: Admin only)
   if (url === '/api/ai/admin/clear-cache' && req.method === 'POST') {
+    const auth = await verifyAuthToken(req);
+    if (!auth.authenticated || auth.role !== 'admin') {
+      sendJson(res, 403, { error: 'Forbidden: Authoritative admin authorization required.' });
+      return true;
+    }
+
     clearAiResponseCache();
     sendJson(res, 200, { success: true, message: 'In-memory AI cache cleared successfully.' });
     return true;
   }
 
-  // Admin TTS Health & Telemetry endpoint
+  // Admin TTS Health & Telemetry endpoint (Strict RBAC: Admin only)
   if (url === '/api/tts/admin/health' && req.method === 'GET') {
+    const auth = await verifyAuthToken(req);
+    if (!auth.authenticated || auth.role !== 'admin') {
+      sendJson(res, 403, { error: 'Forbidden: Authoritative admin authorization required.' });
+      return true;
+    }
+
     sendJson(res, 200, {
       providers: getTtsProviderHealth(),
       cache: getTtsCacheStats(),
@@ -143,8 +154,14 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
-  // Admin Clear TTS Audio Cache
+  // Admin Clear TTS Audio Cache (Strict RBAC: Admin only)
   if (url === '/api/tts/admin/clear-cache' && req.method === 'POST') {
+    const auth = await verifyAuthToken(req);
+    if (!auth.authenticated || auth.role !== 'admin') {
+      sendJson(res, 403, { error: 'Forbidden: Authoritative admin authorization required.' });
+      return true;
+    }
+
     clearTtsAudioCache();
     sendJson(res, 200, { success: true, message: 'In-memory TTS audio cache cleared successfully.' });
     return true;
@@ -181,8 +198,14 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
-  // Admin Direct Email Verification / Test Send
+  // Admin Direct Email Verification / Test Send (Strict RBAC: Admin only)
   if ((url === '/api/email/test' || url === '/api/email/admin/test') && req.method === 'POST') {
+    const auth = await verifyAuthToken(req);
+    if (!auth.authenticated || auth.role !== 'admin') {
+      sendJson(res, 403, { error: 'Forbidden: Authoritative admin authorization required.' });
+      return true;
+    }
+
     try {
       const body = (await parseJsonBody(req)) as Record<string, any>;
       const target = (body.to || body.email || '').trim().toLowerCase();
@@ -198,81 +221,17 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     return true;
   }
 
-  // Transactional Email Dispatch Endpoint
+  // Transactional & Secure Email Dispatch Endpoint (Delegates to hardened serverless handler)
   if (url === '/api/email/send' && req.method === 'POST') {
     try {
-      const body = (await parseJsonBody(req)) as Record<string, any>;
-      const targetEmail = (body.to || body.email || '').trim().toLowerCase();
-      if (!targetEmail || !isValidEmail(targetEmail)) {
-        sendJson(res, 400, { error: `Valid recipient email required (received: "${targetEmail}").` });
-        return true;
-      }
-
-      let result;
-      switch (body.type) {
-        case 'welcome':
-          result = await sendWelcomeEmail({
-            name: body.name || 'Learner',
-            email: targetEmail,
-            loginUrl: body.actionUrl,
-          });
-          break;
-        case 'password_changed':
-          result = await sendPasswordChangedAlert({
-            name: body.name || 'User',
-            email: targetEmail,
-            ipAddress: req.socket.remoteAddress,
-            changeTime: new Date().toUTCString(),
-          });
-          break;
-        case 'notification':
-          if (!body.title || !body.message) {
-            sendJson(res, 400, { error: 'Title and message are required for notification type.' });
-            return true;
-          }
-          result = await sendAccountNotification({
-            name: body.name || 'Learner',
-            email: targetEmail,
-            title: body.title,
-            message: body.message,
-            actionText: body.actionText,
-            actionUrl: body.actionUrl,
-          });
-          break;
-        case 'verification_guidance':
-          result = await sendVerificationGuidance({
-            name: body.name || 'Learner',
-            email: targetEmail,
-            verificationOtp: body.verificationOtp,
-            verificationUrl: body.verificationUrl,
-          });
-          break;
-        case 'password_reset_guidance':
-          if (!body.resetUrl) {
-            sendJson(res, 400, { error: 'resetUrl is required.' });
-            return true;
-          }
-          result = await sendPasswordResetGuidance({
-            name: body.name || 'Learner',
-            email: targetEmail,
-            resetUrl: body.resetUrl,
-          });
-          break;
-        case 'test':
-          result = await sendAdminTestEmail(targetEmail);
-          break;
-        default:
-          sendJson(res, 400, {
-            error: `Unsupported email type: "${body.type}". Supported: welcome, password_changed, notification, verification_guidance, password_reset_guidance, test.`,
-          });
-          return true;
-      }
-
-      sendJson(res, result.success ? 200 : 502, result);
-    } catch (err: unknown) {
+      const emailHandler = (await import('../api/email/send')).default;
+      await emailHandler(req, res);
+      return true;
+    } catch (err) {
+      console.error('API /api/email/send error:', err);
       sendJson(res, 500, { error: 'Email dispatch error', message: String(err) });
+      return true;
     }
-    return true;
   }
 
   // AI Chat endpoint (Non-streaming)
@@ -510,6 +469,45 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     } catch (err) {
       console.error('API /api/gameverse/submit-session error:', err);
       sendJson(res, 500, { error: 'Game session verification error', message: String(err) });
+      return true;
+    }
+  }
+
+  // Authoritative Certificate Issuance endpoint
+  if (url === '/api/certificates/issue' && req.method === 'POST') {
+    try {
+      const issueHandler = (await import('../api/certificates/issue')).default;
+      await issueHandler(req, res);
+      return true;
+    } catch (err) {
+      console.error('API /api/certificates/issue error:', err);
+      sendJson(res, 500, { error: 'Certificate issuance service error', message: String(err) });
+      return true;
+    }
+  }
+
+  // Authoritative Public Certificate Verification endpoint
+  if (url.startsWith('/api/certificates/verify') && (req.method === 'GET' || req.method === 'POST')) {
+    try {
+      const verifyHandler = (await import('../api/certificates/verify')).default;
+      await verifyHandler(req, res);
+      return true;
+    } catch (err) {
+      console.error('API /api/certificates/verify error:', err);
+      sendJson(res, 500, { error: 'Certificate verification service error', message: String(err) });
+      return true;
+    }
+  }
+
+  // User Certificates Retrieval endpoint
+  if (url === '/api/certificates/my-certificates' && req.method === 'GET') {
+    try {
+      const myCertsHandler = (await import('../api/certificates/my-certificates')).default;
+      await myCertsHandler(req, res);
+      return true;
+    } catch (err) {
+      console.error('API /api/certificates/my-certificates error:', err);
+      sendJson(res, 500, { error: 'Certificate fetch service error', message: String(err) });
       return true;
     }
   }

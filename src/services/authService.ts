@@ -17,7 +17,15 @@ export interface AuthSessionState {
 const AUTH_STORAGE_KEY = 'henglish_auth_session';
 const GUEST_DATA_KEY = 'henglish_guest_local_progress';
 
-// Seeded Demo Profiles
+export function isProductionEnv(): boolean {
+  if (typeof import.meta !== 'undefined' && import.meta.env?.PROD) return true;
+  if (typeof process !== 'undefined') {
+    return process.env.NODE_ENV === 'production' || process.env.VITE_APP_ENV === 'production';
+  }
+  return false;
+}
+
+// Seeded Demo Profiles (Strictly for isolated client-side preview in non-production)
 export const DEMO_PROFILES: Record<'student' | 'teacher' | 'admin', UserProfile> = {
   student: {
     id: 'demo-student-sarah',
@@ -82,10 +90,6 @@ export const GUEST_PROFILE: UserProfile = {
 // SUPABASE CLIENT INITIALIZATION & VALIDATION
 // ==============================================================================
 
-/**
- * Validates if the configured Supabase URL and Anon Key are genuine production credentials,
- * rather than unconfigured placeholders (e.g. 'https://your-project-id.supabase.co').
- */
 export function isSupabaseConfigured(): boolean {
   const rawUrl = (
     (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) ||
@@ -159,7 +163,6 @@ export function normalizeAuthError(err: unknown): string {
   if (!err) return 'حدث خطأ غير متوقع. يرجى المحاولة لاحقاً.';
   const msg = err instanceof Error ? err.message : String(err);
 
-  // Network / Connectivity errors
   if (msg.includes('Failed to fetch') || msg.includes('NetworkError') || msg.includes('fetch failed')) {
     if (!isSupabaseConfigured()) {
       return 'تعذر الاتصال بخادم قاعدة البيانات. يرجى تهيئة متغيرات VITE_SUPABASE_URL و VITE_SUPABASE_ANON_KEY في إعدادات البيئة (Vercel).';
@@ -167,7 +170,6 @@ export function normalizeAuthError(err: unknown): string {
     return 'تعذر الاتصال بخادم المصادقة. يرجى التحقق من اتصالك بالإنترنت والمحاولة مجدداً.';
   }
 
-  // Supabase Auth specific error codes & descriptions
   if (msg.includes('Invalid login credentials')) {
     return 'البريد الإلكتروني أو كلمة المرور غير صحيحة. يرجى التحقق والمحاولة مرة أخرى.';
   }
@@ -200,6 +202,10 @@ export function getSavedAuthSession(): AuthSessionState {
     if (raw) {
       const parsed = JSON.parse(raw);
       if (parsed && parsed.user) {
+        // SECURITY: If running in production, ensure demo sessions never carry elevated privileges
+        if (isProductionEnv() && parsed.type === 'demo' && parsed.user.role !== 'student') {
+          parsed.user.role = 'student';
+        }
         return parsed;
       }
     }
@@ -236,7 +242,8 @@ export function mapSupabaseUserToProfile(
   profileRow?: Record<string, unknown> | null
 ): UserProfile {
   const metadata = authUser.user_metadata || {};
-  const role: UserRole = (profileRow?.role as UserRole) || (metadata.role as UserRole) || 'student';
+  // Authoritative role comes strictly from public.profiles table, never unverified client metadata
+  const role: UserRole = (profileRow?.role as UserRole) || (authUser.app_metadata?.role as UserRole) || 'student';
   const name = (profileRow?.full_name as string) || (metadata.full_name as string) || (authUser.email?.split('@')[0] ?? 'Learner');
   const nameAr = (profileRow?.full_name_ar as string) || (metadata.full_name_ar as string) || name;
   const currentLevel: CEFRLevel = (profileRow?.current_level as CEFRLevel) || (metadata.current_level as CEFRLevel) || 'A1';
@@ -262,7 +269,7 @@ export function mapSupabaseUserToProfile(
 }
 
 // ==============================================================================
-// AUTHENTICATION ACTIONS (SUPABASE + RESILIENT OFFLINE FALLBACK)
+// AUTHENTICATION ACTIONS (HARDENED SERVER-VERIFIED RBAC)
 // ==============================================================================
 
 export interface SignUpParams {
@@ -272,17 +279,22 @@ export interface SignUpParams {
   fullNameAr?: string;
   username?: string;
   phone?: string;
-  role?: UserRole;
+  role?: UserRole; // Ignored by security policy: all signups default strictly to 'student'
 }
 
 export async function signUpUser(params: SignUpParams): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
-  const { email, password, fullName, fullNameAr, username, phone, role = 'student' } = params;
+  const { email, password, fullName, fullNameAr, username, phone } = params;
   const cleanEmail = email.trim().toLowerCase();
+  
+  // SECURITY HARDENING: Client cannot assign privileged roles during registration.
+  // All self-registrations are strictly 'student'. Promotions require verified admin actions in DB.
+  const role: UserRole = 'student';
 
-  // If Supabase is properly configured, execute real Auth API call
-  if (supabase) {
+  const client = supabase || initSupabaseClient();
+
+  if (client) {
     try {
-      const { data, error } = await supabase.auth.signUp({
+      const { data, error } = await client.auth.signUp({
         email: cleanEmail,
         password,
         options: {
@@ -291,17 +303,26 @@ export async function signUpUser(params: SignUpParams): Promise<{ success: boole
             full_name_ar: fullNameAr || fullName,
             username: username?.trim().toLowerCase(),
             phone,
-            role,
+            role: 'student', // Enforce student in auth metadata
           },
           emailRedirectTo: typeof window !== 'undefined' ? `${window.location.origin}/#verify-email` : undefined,
         },
       });
 
       if (error) {
-        return { success: false, error: normalizeAuthError(error) };
+        const isTransientDevError =
+          error.message.includes('rate limit') ||
+          error.message.includes('fetch failed') ||
+          error.message.includes('Failed to fetch') ||
+          error.message.includes('NetworkError');
+        if (!isProductionEnv() && isTransientDevError) {
+          console.warn('[AuthService] Supabase transient error in dev/test, using local student profile.');
+        } else {
+          return { success: false, error: normalizeAuthError(error) };
+        }
       }
 
-      if (data.user) {
+      if (data && data.user) {
         const isVerified = Boolean(data.user.email_confirmed_at);
         const profile = mapSupabaseUserToProfile(data.user);
         const sessionState: AuthSessionState = {
@@ -315,21 +336,32 @@ export async function signUpUser(params: SignUpParams): Promise<{ success: boole
         return { success: true, session: sessionState };
       }
     } catch (err: unknown) {
-      return { success: false, error: normalizeAuthError(err) };
+      if (isProductionEnv()) {
+        return { success: false, error: normalizeAuthError(err) };
+      }
+      // In offline development / test environments, fall through to isolated student fallback
     }
   }
 
-  // Graceful local development fallback when Supabase credentials have not yet been configured in Vercel
+  // SECURITY: In production environments, never create fake local accounts when Supabase is unreachable
+  if (isProductionEnv()) {
+    return {
+      success: false,
+      error: 'تعذر إنشاء الحساب في خادم المصادقة. يرجى التحقق من صحة البيانات أو المحاولة لاحقاً.',
+    };
+  }
+
+  // Isolated development fallback ONLY for local testing without database keys
   const fallbackProfile: UserProfile = {
     id: `usr-${Date.now()}`,
     name: fullName,
     nameAr: fullNameAr || fullName,
     email: cleanEmail,
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
-    role,
+    role: 'student',
     currentLevel: 'A1',
     targetLevel: 'B2',
-    xp: 200,
+    xp: 100,
     streakDays: 1,
     joinedDate: new Date().toISOString().split('T')[0],
   };
@@ -345,23 +377,49 @@ export async function signUpUser(params: SignUpParams): Promise<{ success: boole
 }
 
 export async function signInUser(
-  identifier: string, // Email or Username
+  identifier: string,
   password?: string
 ): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
   const clean = identifier.trim().toLowerCase();
+  const isProduction = isProductionEnv();
 
-  // 1. Direct Demo Account Interception (Instant Zero-Latency Demo)
-  if (clean === 'sarah.demo@henglish.academy' || clean === 'student-demo') {
-    return { success: true, session: switchDemoAccount('student') };
-  }
-  if (clean === 'hinawi.academic@henglish.academy' || clean === 'teacher-demo') {
-    return { success: true, session: switchDemoAccount('teacher') };
-  }
-  if (clean === 'admin@henglish.academy' || clean === 'admin-demo') {
-    return { success: true, session: switchDemoAccount('admin') };
+  // 1. PRODUCTION SECURITY GUARD:
+  // In production, unauthenticated demo login bypasses are strictly disallowed.
+  if (isProduction) {
+    if (clean === 'admin-demo' || clean === 'teacher-demo' || clean === 'student-demo') {
+      return {
+        success: false,
+        error: 'الاختصارات التجريبية غير مفعّلة في بيئة الإنتاج. يرجى تسجيل الدخول بحساب رسمي معتمد.',
+      };
+    }
+
+    if (
+      clean === 'admin@henglish.academy' ||
+      clean === 'hinawi.academic@henglish.academy' ||
+      clean === 'sarah.demo@henglish.academy'
+    ) {
+      if (!password) {
+        return {
+          success: false,
+          error: 'يتطلب هذا الحساب إدخال كلمة المرور المعتمدة للمصادقة عبر خادم Supabase.',
+        };
+      }
+    }
+  } else {
+    // 2. ISOLATED DEVELOPMENT / OFFLINE DEMO INTERCEPTION:
+    // Only in non-production environments can demo keywords instantly activate sandboxed previews.
+    if (clean === 'sarah.demo@henglish.academy' || clean === 'student-demo') {
+      return { success: true, session: switchDemoAccount('student') };
+    }
+    if (clean === 'hinawi.academic@henglish.academy' || clean === 'teacher-demo') {
+      return { success: true, session: switchDemoAccount('teacher') };
+    }
+    if (clean === 'admin@henglish.academy' || clean === 'admin-demo') {
+      return { success: true, session: switchDemoAccount('admin') };
+    }
   }
 
-  // 2. Real Supabase Authentication
+  // 3. Real Server-Side Supabase Authentication
   if (supabase && password) {
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -370,11 +428,12 @@ export async function signInUser(
       });
 
       if (error) {
+        console.log('SUPABASE SIGNUP ERROR:', error);
         return { success: false, error: normalizeAuthError(error) };
       }
 
       if (data.user) {
-        // Fetch detailed profile row from public.profiles
+        // Fetch authoritative profile row from public.profiles
         let profileRow: Record<string, unknown> | null = null;
         try {
           const { data: pRow } = await supabase
@@ -384,7 +443,7 @@ export async function signInUser(
             .single();
           profileRow = pRow;
         } catch {
-          // Ignore profile row fetch error and use metadata fallback
+          // If profiles row fetch fails, profile normalization falls back safely
         }
 
         const isVerified = Boolean(data.user.email_confirmed_at);
@@ -404,7 +463,15 @@ export async function signInUser(
     }
   }
 
-  // 3. Resilient fallback when Supabase keys are not configured yet in environment
+  // In production environments, never silently create unverified fake authenticated sessions on failed login
+  if (isProduction || isSupabaseConfigured()) {
+    return {
+      success: false,
+      error: 'بيانات تسجيل الدخول غير صحيحة، أو لم يتم إدخال كلمة المرور.',
+    };
+  }
+
+  // Isolated development fallback ONLY for local development without DB
   const fallbackProfile: UserProfile = {
     ...DEMO_PROFILES.student,
     id: `usr-${Date.now()}`,
@@ -445,7 +512,15 @@ export async function verifyEmailOtp(email: string, token: string): Promise<{ su
     }
   }
 
-  // Local fallback: any 6-digit token succeeds for unconfigured environments
+  // In production environments, never bypass genuine OTP verification
+  if (isProductionEnv() || isSupabaseConfigured()) {
+    return {
+      success: false,
+      error: 'رمز التحقق غير صحيح أو منتهي الصلاحية. يرجى طلب رمز جديد والمحاولة مرة أخرى.',
+    };
+  }
+
+  // Local development mock fallback
   if (token.trim().length === 6) {
     const current = getSavedAuthSession();
     current.isEmailVerified = true;
@@ -496,13 +571,16 @@ export async function updatePassword(newPassword: string): Promise<{ success: bo
       });
       if (error) return { success: false, error: normalizeAuthError(error) };
 
-      // Dispatch asynchronous password changed security alert via Brevo SMTP
+      // Dispatch security alert with current authenticated user's access token
       try {
         const current = getSavedAuthSession();
-        if (current?.user?.email && typeof window !== 'undefined') {
+        if (current?.user?.email && typeof window !== 'undefined' && current.accessToken) {
           fetch('/api/email/send', {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${current.accessToken}`,
+            },
             body: JSON.stringify({
               type: 'password_changed',
               to: current.user.email,
@@ -511,7 +589,7 @@ export async function updatePassword(newPassword: string): Promise<{ success: bo
           }).catch(() => {});
         }
       } catch {
-        // Non-blocking security alert
+        // Non-blocking security notification
       }
 
       return { success: true };
@@ -534,16 +612,26 @@ export async function signOutUser(): Promise<void> {
 }
 
 // ==============================================================================
-// DEMO & GUEST MODE CONTROLS
+// DEMO & GUEST MODE CONTROLS (ISOLATED SANDBOX)
 // ==============================================================================
 
 export function switchDemoAccount(role: 'student' | 'teacher' | 'admin'): AuthSessionState {
-  const profile = DEMO_PROFILES[role];
+  const isProduction = isProductionEnv();
+
+  // In production, demo accounts cannot assume administrative or teacher roles
+  const effectiveRole = isProduction && role !== 'student' ? 'student' : role;
+  const profile = {
+    ...DEMO_PROFILES[effectiveRole],
+    role: effectiveRole,
+  };
+
   const session: AuthSessionState = {
     type: 'demo',
     user: profile,
     isLoggedIn: true,
     isEmailVerified: true,
+    // SECURITY: Demo sessions NEVER possess real Supabase tokens!
+    accessToken: undefined,
   };
   saveAuthSession(session);
   return session;
@@ -555,6 +643,7 @@ export function switchGuestMode(): AuthSessionState {
     user: GUEST_PROFILE,
     isLoggedIn: false,
     isEmailVerified: false,
+    accessToken: undefined,
   };
   saveAuthSession(session);
   return session;
@@ -568,14 +657,14 @@ export function migrateGuestProgressToAccount(accountName: string, accountEmail:
     name: accountName,
     nameAr: accountName,
     email: accountEmail,
-    role: 'student',
+    role: 'student', // Strictly student on migration
   };
 
   const session: AuthSessionState = {
     type: 'authenticated',
     user: migratedProfile,
     isLoggedIn: true,
-    isEmailVerified: true,
+    isEmailVerified: false,
   };
 
   saveAuthSession(session);

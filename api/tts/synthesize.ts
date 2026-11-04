@@ -1,10 +1,25 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import crypto from 'node:crypto';
 import dns from 'node:dns';
+import { applyCorsHeaders, sendJson } from '../../server/auth/serverAuth';
 
 try {
   dns.setDefaultResultOrder('ipv4first');
 } catch {}
+
+const ipRateLimits = new Map<string, { count: number; resetAt: number }>();
+
+function checkRateLimit(ip: string, limit = 60, windowMs = 60 * 60 * 1000): boolean {
+  const now = Date.now();
+  const record = ipRateLimits.get(ip);
+  if (!record || now > record.resetAt) {
+    ipRateLimits.set(ip, { count: 1, resetAt: now + windowMs });
+    return true;
+  }
+  if (record.count >= limit) return false;
+  record.count++;
+  return true;
+}
 
 export type TtsProvider = 'kokoro' | 'elevenlabs' | 'google-cloud' | 'browser';
 export type VoiceAccent = 'US' | 'UK';
@@ -75,7 +90,7 @@ async function parseBody(req: IncomingMessage & { body?: unknown }): Promise<Rec
     let raw = '';
     req.on('data', chunk => {
       raw += chunk;
-      if (raw.length > 1024 * 1024) resolve({});
+      if (raw.length > 64 * 1024) resolve({}); // 64KB max payload (Finding H-5)
     });
     req.on('end', () => {
       if (!raw.trim()) return resolve({});
@@ -89,36 +104,36 @@ async function parseBody(req: IncomingMessage & { body?: unknown }): Promise<Rec
   });
 }
 
-function sendJson(res: ServerResponse, statusCode: number, data: unknown) {
-  res.statusCode = statusCode;
-  res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  res.end(JSON.stringify(data));
-}
-
 export default async function handler(req: IncomingMessage & { body?: unknown }, res: ServerResponse) {
-  // Handle CORS preflight
-  if (req.method === 'OPTIONS') {
-    res.statusCode = 204;
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.end();
-    return;
-  }
+  // CORS & Preflight handling
+  if (applyCorsHeaders(req, res)) return;
 
   if (req.method !== 'POST') {
-    sendJson(res, 405, { error: 'Method Not Allowed' });
-    return;
+    return sendJson(res, 405, { error: 'Method Not Allowed. Use POST.' });
+  }
+
+  const clientIp = (
+    (req.headers['x-forwarded-for'] as string) ||
+    req.socket.remoteAddress ||
+    'anonymous'
+  ).split(',')[0].trim();
+
+  if (!checkRateLimit(clientIp, 60)) {
+    return sendJson(res, 429, {
+      error: 'Rate limit exceeded: Too many TTS synthesis requests. Please wait.',
+    });
   }
 
   try {
     const body = (await parseBody(req)) as unknown as TtsSynthesisRequest;
     if (!body || !body.text) {
-      sendJson(res, 400, { error: 'Missing required text for TTS synthesis' });
-      return;
+      return sendJson(res, 400, { error: 'Missing required text for TTS synthesis' });
+    }
+
+    if (typeof body.text === 'string' && body.text.length > 1000) {
+      return sendJson(res, 400, {
+        error: 'Text length exceeds maximum permitted limit for synthesis (1,000 characters).',
+      });
     }
 
     const env = process.env;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PageRoute, UserProfile } from "../types";
 import {
   CERTIFICATE_DEFINITIONS,
@@ -6,6 +6,11 @@ import {
   IssuedCertificate,
   CertificateDefinition,
 } from "../data/certificatesData";
+import {
+  claimCertificateOnServer,
+  verifyCertificateOnServer,
+  fetchUserCertificates,
+} from "../services/certificateService";
 import { playSound, fireCelebration } from "../utils/audio";
 import {
   Award,
@@ -21,6 +26,8 @@ import {
   FileCheck2,
   Calendar,
   Building,
+  AlertCircle,
+  Loader2,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -44,22 +51,36 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   const [verificationResult, setVerificationResult] = useState<
     IssuedCertificate | null | "not-found"
   >(null);
+  const [isVerifying, setIsVerifying] = useState(false);
+  const [isClaiming, setIsClaiming] = useState<string | null>(null);
+  const [claimErrorMessage, setClaimErrorMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetchUserCertificates().then((certs) => {
+      if (certs.length > 0) {
+        setIssuedCerts(certs);
+        setSelectedCertificate(certs[0]);
+      }
+    });
+  }, []);
 
   const handlePrintCertificate = () => {
     playSound("click");
     window.print();
   };
 
-  const handleVerifySearch = () => {
-    playSound("click");
+  const handleVerifySearch = async () => {
     const trimmed = searchVerifyCode.trim().toUpperCase();
     if (!trimmed) return;
+    playSound("click");
+    setIsVerifying(true);
+    setVerificationResult(null);
 
-    const match = issuedCerts.find(
-      (c) => c.verificationCode.toUpperCase() === trimmed,
-    );
-    if (match) {
-      setVerificationResult(match);
+    const res = await verifyCertificateOnServer(trimmed);
+    setIsVerifying(false);
+
+    if (res.valid && res.certificate) {
+      setVerificationResult(res.certificate);
       playSound("correct");
     } else {
       setVerificationResult("not-found");
@@ -67,26 +88,32 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
     }
   };
 
-  const handleClaimCertificate = (def: CertificateDefinition) => {
-    playSound("correct");
-    fireCelebration();
+  const handleClaimCertificate = async (def: CertificateDefinition) => {
+    playSound("click");
+    setIsClaiming(def.id);
+    setClaimErrorMessage(null);
 
-    const newCert: IssuedCertificate = {
-      certificateId: `HEN-2026-${def.cefrLevel}-${Math.floor(1000 + Math.random() * 9000)}`,
-      studentNameAr: userProfile.nameAr,
-      studentNameEn: userProfile.name,
-      courseTitleAr: def.titleAr,
-      courseTitleEn: def.titleEn,
-      cefrLevel: def.cefrLevel,
-      issueDate: new Date().toISOString().split("T")[0],
-      verificationCode: `HEN-2026-${def.cefrLevel}-${Math.floor(1000 + Math.random() * 9000)}`,
-      finalScorePercentage: 92,
-      status: "valid",
-      instructorName: "Mr. Hinawi • Chief Academic Director",
-    };
+    const res = await claimCertificateOnServer(
+      def.id,
+      userProfile.name,
+      userProfile.nameAr
+    );
+    setIsClaiming(null);
 
-    setIssuedCerts((prev) => [newCert, ...prev]);
-    setSelectedCertificate(newCert);
+    if (res.success && res.certificate) {
+      playSound("correct");
+      fireCelebration();
+      setIssuedCerts((prev) => [
+        res.certificate!,
+        ...prev.filter((c) => c.certificateId !== res.certificate!.certificateId),
+      ]);
+      setSelectedCertificate(res.certificate);
+    } else {
+      playSound("wrong");
+      setClaimErrorMessage(
+        res.error || "تعذر إصدار الشهادة. يرجى التأكد من استيفاء المتطلبات."
+      );
+    }
   };
 
   return (
@@ -143,9 +170,17 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
             />
             <button
               onClick={handleVerifySearch}
-              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#ffd166] text-[#0c0b20] text-xs font-black hover:brightness-110 shadow-md cursor-pointer shrink-0"
+              disabled={isVerifying}
+              className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#ffd166] text-[#0c0b20] text-xs font-black hover:brightness-110 shadow-md cursor-pointer shrink-0 disabled:opacity-50 flex items-center gap-1.5"
             >
-              تحقق الآن
+              {isVerifying ? (
+                <>
+                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  <span>جارٍ التحقق...</span>
+                </>
+              ) : (
+                <span>تحقق الآن</span>
+              )}
             </button>
           </div>
         </div>
@@ -311,6 +346,13 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
           <span>مسارات الشهادات المتاحة وشروط استحقاقها</span>
         </h3>
 
+        {claimErrorMessage && (
+          <div className="p-4 rounded-2xl bg-red-500/10 border border-red-500/30 text-xs text-red-300 flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
+            <span>{claimErrorMessage}</span>
+          </div>
+        )}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {CERTIFICATE_DEFINITIONS.map((def) => {
             const isEligible =
@@ -352,10 +394,20 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
                   {isEligible ? (
                     <button
                       onClick={() => handleClaimCertificate(def)}
-                      className="w-full py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-md cursor-pointer flex items-center justify-center gap-1.5"
+                      disabled={isClaiming === def.id}
+                      className="w-full py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-md cursor-pointer flex items-center justify-center gap-1.5 disabled:opacity-50"
                     >
-                      <Sparkles className="w-4 h-4" />
-                      <span>إصدار وعرض الشهادة الآن 🎉</span>
+                      {isClaiming === def.id ? (
+                        <>
+                          <Loader2 className="w-4 h-4 animate-spin" />
+                          <span>جارٍ الاعتماد والتوثيق...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Sparkles className="w-4 h-4" />
+                          <span>إصدار وعرض الشهادة الآن 🎉</span>
+                        </>
+                      )}
                     </button>
                   ) : (
                     <div className="flex items-center justify-center gap-2 py-2 rounded-xl bg-black/40 text-xs text-[#b9b6d5] border border-white/10">

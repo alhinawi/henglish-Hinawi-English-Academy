@@ -55,7 +55,8 @@ export async function loadUserProgressFromDatabase(userId: string): Promise<Pers
 }
 
 /**
- * Persists updated progress to Supabase for authenticated user.
+ * Persists updated study progress to Supabase for authenticated user.
+ * SECURITY: Total XP and XP points are strictly managed by server RPCs and cannot be overwritten by client sync.
  */
 export async function saveUserProgressToDatabase(
   userId: string,
@@ -66,11 +67,11 @@ export async function saveUserProgressToDatabase(
   }
 
   try {
+    // SECURITY HARDENING: Omit total_xp from client update to prevent client-side XP injection.
     const { error } = await supabase
       .from('user_learning_progress')
       .upsert({
         user_id: userId,
-        total_xp: payload.totalXp,
         current_level: payload.currentLevel,
         target_level: payload.targetLevel,
         streak_days: payload.streakDays,
@@ -89,11 +90,10 @@ export async function saveUserProgressToDatabase(
       return false;
     }
 
-    // Also update profiles xp and streak
+    // Update non-privileged learning progress metadata in profiles (level & streak only)
     await supabase
       .from('profiles')
       .update({
-        xp_points: payload.totalXp,
         streak_days: payload.streakDays,
         current_level: payload.currentLevel,
         target_level: payload.targetLevel,
