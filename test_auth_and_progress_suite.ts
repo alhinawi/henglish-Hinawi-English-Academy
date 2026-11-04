@@ -16,6 +16,7 @@ import {
   mapSupabaseUserToProfile,
   signInUser,
   signUpUser,
+  isSupabaseConfigured,
 } from './src/services/authService';
 
 import {

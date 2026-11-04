@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
+import { isProductionEnv } from '../../services/authService';
 import { playSound, fireCelebration } from '../../utils/audio';
 import {
   Lock,
@@ -193,25 +194,33 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
             <span>المتابعة كزائر (Guest Mode)</span>
           </button>
 
-          <div className="grid grid-cols-2 gap-2.5 pt-1">
-            <button
-              type="button"
-              onClick={loginDemoStudent}
-              className="py-2.5 px-3 bg-indigo-950/40 hover:bg-indigo-900/50 border border-indigo-800/40 rounded-xl text-xs font-medium text-indigo-300 flex items-center justify-center gap-1.5 transition-colors"
-            >
-              <GraduationCap className="w-3.5 h-3.5 text-indigo-400" />
-              <span>حساب طالب تجريبي</span>
-            </button>
+          {!isProductionEnv() && (
+            <div className="pt-2 border-t border-slate-800/60">
+              <div className="flex items-center justify-between mb-2 px-1">
+                <span className="text-[11px] font-semibold text-amber-400">وضع التطوير المحلي (Dev Only)</span>
+                <span className="text-[10px] text-slate-500">معزول بدون صلاحيات إنتاجية</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2.5">
+                <button
+                  type="button"
+                  onClick={loginDemoStudent}
+                  className="py-2.5 px-3 bg-indigo-950/40 hover:bg-indigo-900/50 border border-indigo-800/40 rounded-xl text-xs font-medium text-indigo-300 flex items-center justify-center gap-1.5 transition-colors"
+                >
+                  <GraduationCap className="w-3.5 h-3.5 text-indigo-400" />
+                  <span>طالب تجريبي</span>
+                </button>
 
-            <button
-              type="button"
-              onClick={loginDemoTeacher}
-              className="py-2.5 px-3 bg-purple-950/40 hover:bg-purple-900/50 border border-purple-800/40 rounded-xl text-xs font-medium text-purple-300 flex items-center justify-center gap-1.5 transition-colors"
-            >
-              <Users className="w-3.5 h-3.5 text-purple-400" />
-              <span>حساب معلّم تجريبي</span>
-            </button>
-          </div>
+                <button
+                  type="button"
+                  onClick={loginDemoTeacher}
+                  className="py-2.5 px-3 bg-purple-950/40 hover:bg-purple-900/50 border border-purple-800/40 rounded-xl text-xs font-medium text-purple-300 flex items-center justify-center gap-1.5 transition-colors"
+                >
+                  <Users className="w-3.5 h-3.5 text-purple-400" />
+                  <span>معلّم تجريبي</span>
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 

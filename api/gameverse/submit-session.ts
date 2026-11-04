@@ -1,175 +1,174 @@
 // ==============================================================================
 // HENGLISH ACADEMY - AUTHORITATIVE GAMEVERSE SESSION VERIFICATION API
 // Endpoint: POST /api/gameverse/submit-session
-// Validates gameplay, enforces anti-cheat rules, records in ledger & awards XP
+// 
+// Security Controls:
+// 1. Enforces Supabase JWT identity verification (anti-impersonation).
+// 2. Strict Zod schema validation & numeric bounds enforcement.
+// 3. Atomically calculates & records XP via authoritative database RPC.
+// 4. Never awards persistent XP or trusts unauthenticated client-supplied userIds.
+// 5. Never returns fake success when database write fails or is unconfigured.
+// 6. Sliding window rate limiting & Origin protection.
 // ==============================================================================
 
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { createClient } from '@supabase/supabase-js';
+import { z } from 'zod';
+import { 
+  applyCorsHeaders, 
+  sendJson, 
+  verifyAuthToken, 
+  getSupabaseServerClient,
+  parseAndValidateBody 
+} from '../../server/auth/serverAuth';
 
-function parseBody(req: IncomingMessage & { body?: unknown }): Promise<Record<string, unknown>> {
-  if (req.body) {
-    if (typeof req.body === 'string') {
-      try {
-        return Promise.resolve(JSON.parse(req.body));
-      } catch {
-        return Promise.resolve({});
-      }
-    }
-    if (typeof req.body === 'object' && req.body !== null) {
-      return Promise.resolve(req.body as Record<string, unknown>);
-    }
+// Zod Schema for Game Session Submission
+const GameSessionSchema = z.object({
+  userId: z.string().optional(),
+  gameId: z.string().min(1, 'gameId is required').max(100),
+  score: z.number().int().min(0).max(100000).default(0),
+  maxScore: z.number().int().min(1).max(100000).default(100),
+  accuracy: z.number().min(0).max(100).default(0),
+  durationSeconds: z.number().int().min(0).max(3600).default(0),
+  answersSummary: z.array(z.record(z.string(), z.unknown())).optional().default([]),
+  idempotencyKey: z.string().min(8, 'idempotencyKey must be at least 8 characters').max(200),
+});
+
+type GameSessionInput = z.infer<typeof GameSessionSchema>;
+
+// Sliding window rate limiter
+const rateLimits = new Map<string, { count: number; resetAt: number }>();
+
+function checkRateLimit(key: string, limit = 40, windowMs = 60 * 60 * 1000): boolean {
+  const now = Date.now();
+  const record = rateLimits.get(key);
+  if (!record || now > record.resetAt) {
+    rateLimits.set(key, { count: 1, resetAt: now + windowMs });
+    return true;
   }
-
-  return new Promise(resolve => {
-    let raw = '';
-    req.on('data', chunk => {
-      raw += chunk;
-      if (raw.length > 5 * 1024 * 1024) resolve({});
-    });
-    req.on('end', () => {
-      if (!raw.trim()) return resolve({});
-      try {
-        resolve(JSON.parse(raw));
-      } catch {
-        resolve({});
-      }
-    });
-    req.on('error', () => resolve({}));
-  });
-}
-
-function sendJson(res: ServerResponse, statusCode: number, data: unknown) {
-  res.statusCode = statusCode;
-  res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  res.end(JSON.stringify(data));
+  if (record.count >= limit) return false;
+  record.count++;
+  return true;
 }
 
 export default async function handler(
   req: IncomingMessage & { body?: unknown },
   res: ServerResponse
 ) {
-  if (req.method === 'OPTIONS') {
-    res.statusCode = 204;
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.end();
-    return;
-  }
+  // CORS & Preflight handling
+  if (applyCorsHeaders(req, res)) return;
 
   if (req.method !== 'POST') {
     return sendJson(res, 405, { error: 'Method not allowed. Use POST.' });
   }
 
+  const clientIp = (
+    (req.headers['x-forwarded-for'] as string) ||
+    req.socket.remoteAddress ||
+    'anonymous'
+  ).split(',')[0].trim();
+
+  // Enforce IP rate limiting: max 60 submissions per hour per IP
+  if (!checkRateLimit(`ip:${clientIp}`, 60)) {
+    return sendJson(res, 429, {
+      error: 'Rate limit exceeded: Too many game session submissions. Please try again later.',
+    });
+  }
+
+  // Parse and validate request body with Zod
+  const validation = await parseAndValidateBody(req, GameSessionSchema, 128 * 1024);
+  if (!validation.success) {
+    return sendJson(res, validation.statusCode, { error: validation.error });
+  }
+
+  const body: GameSessionInput = validation.data;
+
   try {
-    const body = await parseBody(req);
-    const {
-      userId,
-      gameId,
-      score = 0,
-      maxScore = 100,
-      accuracy = 0,
-      durationSeconds = 0,
-      answersSummary = [],
-      idempotencyKey,
-    } = body as {
-      userId?: string;
-      gameId?: string;
-      score?: number;
-      maxScore?: number;
-      accuracy?: number;
-      durationSeconds?: number;
-      answersSummary?: unknown[];
-      idempotencyKey?: string;
-    };
+    // 1. Authoritative Identity Verification via JWT
+    const authHeader = req.headers['authorization'] || '';
+    let effectiveUserId: string | null = null;
 
-    if (!gameId || !idempotencyKey) {
-      return sendJson(res, 400, {
-        error: 'Missing mandatory fields: gameId and idempotencyKey are required.',
+    if (authHeader.startsWith('Bearer ')) {
+      const authContext = await verifyAuthToken(req);
+      if (authContext.authenticated && authContext.userId) {
+        effectiveUserId = authContext.userId;
+
+        // Anti-Impersonation Guard: If client passed a userId, verify it matches the token identity
+        if (body.userId && body.userId !== effectiveUserId) {
+          return sendJson(res, 403, {
+            error: 'Forbidden: You cannot submit game scores on behalf of another user ID.',
+          });
+        }
+      } else {
+        return sendJson(res, 401, {
+          error: `Authentication failed: ${authContext.error || 'Invalid session token'}`,
+        });
+      }
+    } else {
+      // Unauthenticated / Guest Mode:
+      // SECURITY: Never trust client-supplied account userId without a verified JWT!
+      if (body.userId && !body.userId.startsWith('guest')) {
+        return sendJson(res, 401, {
+          error: 'Unauthorized: Authentication required to submit game sessions for user accounts.',
+        });
+      }
+
+      // Guest sessions are evaluated on the fly, but explicitly do NOT persist XP
+      const guestCalculatedXp = Math.min(Math.round((body.score / Math.max(body.maxScore, 1)) * 50), 50);
+      return sendJson(res, 200, {
+        success: true,
+        persisted: false,
+        awardedXp: guestCalculatedXp,
+        message: 'Guest session evaluated. Sign in to save XP permanently to your account.',
       });
     }
 
-    // Anti-Cheat: Validate numeric bounds
-    const numericScore = Number(score) || 0;
-    const numericMaxScore = Number(maxScore) || 100;
-    const numericDuration = Number(durationSeconds) || 0;
-    let numericAccuracy = Number(accuracy) || 0;
-
-    if (numericAccuracy > 100) numericAccuracy = 100;
-    if (numericAccuracy < 0) numericAccuracy = 0;
-
-    const verificationFlags: string[] = [];
-
-    // Flag: Impossible speed (less than 3 seconds for a multi-question test with high score)
-    if (numericDuration < 3 && numericScore > 20) {
-      verificationFlags.push('impossible_speed_detected');
-    }
-
-    // Flag: Negative or inverted score
-    if (numericScore > numericMaxScore * 1.5) {
-      verificationFlags.push('score_exceeds_maximum');
-    }
-
-    const supabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL;
-    const supabaseServiceKey =
-      process.env.SUPABASE_SERVICE_ROLE_KEY ||
-      process.env.VITE_SUPABASE_SERVICE_ROLE_KEY ||
-      process.env.VITE_SUPABASE_ANON_KEY;
-
-    if (supabaseUrl && supabaseServiceKey) {
-      const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
-      // Call authoritative RPC function
-      const { data, error } = await supabase.rpc('submit_verified_game_session', {
-        p_user_id: userId || null,
-        p_game_id: gameId,
-        p_score: Math.round(numericScore),
-        p_max_score: Math.round(numericMaxScore),
-        p_accuracy: numericAccuracy,
-        p_duration_seconds: Math.round(numericDuration),
-        p_answers: answersSummary,
-        p_idempotency_key: idempotencyKey,
+    // Per-user rate limiting (max 40 submissions per hour for authenticated accounts)
+    if (effectiveUserId && !checkRateLimit(`usr:${effectiveUserId}`, 40)) {
+      return sendJson(res, 429, {
+        error: 'Too many game submissions recorded for this account. Please wait before playing again.',
       });
-
-      if (error) {
-        console.warn('Supabase RPC error, executing authoritative fallback:', error.message);
-      } else if (data) {
-        return sendJson(res, 200, data);
-      }
     }
 
-    // Authoritative Fallback if database RPC is unconfigured
-    const isSuspicious = verificationFlags.length > 0;
-    let calculatedXp = 0;
-    let speedBonus = 0;
-
-    if (!isSuspicious) {
-      const baseReward = 35;
-      calculatedXp = Math.round(baseReward * (numericAccuracy / 100));
-      if (numericAccuracy >= 80 && numericDuration > 0 && numericDuration < 45) {
-        speedBonus = Math.min(15, Math.round((45 - numericDuration) * 0.4));
-      }
+    // 2. Authoritative Database Execution
+    const supabase = getSupabaseServerClient();
+    if (!supabase) {
+      // In production or configured environment, NEVER return fake success when DB is unconfigured
+      return sendJson(res, 503, {
+        status: 'error',
+        error: 'Database service is currently unconfigured. Game sessions cannot be authoritatively recorded.',
+      });
     }
 
-    const totalXp = calculatedXp + speedBonus;
+    // Call authoritative RPC function
+    const { data, error } = await supabase.rpc('submit_verified_game_session', {
+      p_user_id: effectiveUserId,
+      p_game_id: body.gameId,
+      p_score: body.score,
+      p_max_score: body.maxScore,
+      p_accuracy: body.accuracy,
+      p_duration_seconds: body.durationSeconds,
+      p_answers: body.answersSummary,
+      p_idempotency_key: body.idempotencyKey,
+    });
 
-    return sendJson(res, 200, {
-      status: 'success',
-      session_id: `fallback-${Date.now()}`,
-      xp_awarded: totalXp,
-      base_xp: calculatedXp,
-      speed_bonus: speedBonus,
-      accuracy: numericAccuracy,
-      flags: verificationFlags,
-      message: isSuspicious ? 'Session flagged by anti-cheat filter' : 'Session verified successfully.',
+    if (error) {
+      console.error('Authoritative submit RPC error:', error.message);
+      return sendJson(res, 502, {
+        status: 'error',
+        error: `Database transaction failed: ${error.message}`,
+      });
+    }
+
+    if (data) {
+      return sendJson(res, 200, data);
+    }
+
+    return sendJson(res, 500, {
+      status: 'error',
+      error: 'Unexpected empty response from authoritative database RPC.',
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Internal server error';
     return sendJson(res, 500, { error: message });
   }
 }
-

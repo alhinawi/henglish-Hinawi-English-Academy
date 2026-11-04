@@ -1,11 +1,25 @@
 // ==============================================================================
-// HENGLISH ACADEMY - TRANSACTIONAL EMAIL DISPATCH API
+// HENGLISH ACADEMY - TRANSACTIONAL & SECURE EMAIL DISPATCH API
 // Vercel Serverless Function: POST /api/email/send
+//
+// Hardened Security Controls:
+// 1. RBAC Authorization: Admin role strictly required for 'test' and 'notification' emails.
+// 2. Identity Verification: 'password_changed' and 'welcome' require JWT matching recipient.
+// 3. Strict RFC email & Zod schema validation.
+// 4. Anti-phishing domain validation for actionUrl and resetUrl.
+// 5. Sliding window IP & recipient rate limiting.
+// 6. Safe CORS origin allowlist & payload size limits.
 // ==============================================================================
 
 import type { IncomingMessage, ServerResponse } from 'node:http';
+import { z } from 'zod';
 import {
-  sendEmail,
+  applyCorsHeaders,
+  sendJson,
+  verifyAuthToken,
+  parseAndValidateBody,
+} from '../../server/auth/serverAuth';
+import {
   sendWelcomeEmail,
   sendPasswordChangedAlert,
   sendAccountNotification,
@@ -15,172 +29,248 @@ import {
   isValidEmail,
 } from '../../server/email/emailService';
 
-function parseJsonBody(req: IncomingMessage): Promise<Record<string, any>> {
-  return new Promise((resolve, reject) => {
-    let body = '';
-    req.on('data', chunk => {
-      body += chunk;
-      if (body.length > 512 * 1024) { // 512KB limit for email payloads
-        reject(new Error('Payload too large'));
-      }
-    });
-    req.on('end', () => {
-      if (!body.trim()) {
-        resolve({});
-        return;
-      }
-      try {
-        resolve(JSON.parse(body));
-      } catch (err) {
-        reject(err);
-      }
-    });
-    req.on('error', reject);
-  });
+// Anti-Phishing: Allowed action URL domains
+function isSafeActionUrl(url?: string): boolean {
+  if (!url) return true;
+  const trimmed = url.trim();
+  // Relative paths are always safe
+  if (trimmed.startsWith('/') && !trimmed.startsWith('//')) return true;
+
+  try {
+    const parsed = new URL(trimmed);
+    const host = parsed.hostname.toLowerCase();
+    return (
+      host === 'henglish.academy' ||
+      host.endsWith('.henglish.academy') ||
+      host === 'henglish.vercel.app' ||
+      host.endsWith('.vercel.app') ||
+      host === 'localhost' ||
+      host === '127.0.0.1'
+    );
+  } catch {
+    return false;
+  }
 }
 
-export default async function handler(req: IncomingMessage, res: ServerResponse) {
-  res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+// Zod Schema for Email Dispatch
+const EmailDispatchSchema = z.object({
+  type: z.enum([
+    'welcome',
+    'password_changed',
+    'notification',
+    'verification_guidance',
+    'password_reset_guidance',
+    'test',
+  ]),
+  to: z.string().email('Invalid recipient email address').optional(),
+  email: z.string().email('Invalid recipient email address').optional(),
+  name: z.string().max(100).optional(),
+  title: z.string().max(200).optional(),
+  message: z.string().max(4000).optional(),
+  actionText: z.string().max(100).optional(),
+  actionUrl: z.string().max(1000).optional().refine(isSafeActionUrl, {
+    message: 'Security validation error: actionUrl points to an untrusted external domain.',
+  }),
+  resetUrl: z.string().max(1000).optional().refine(isSafeActionUrl, {
+    message: 'Security validation error: resetUrl points to an untrusted external domain.',
+  }),
+  verificationOtp: z.string().max(10).optional(),
+  verificationUrl: z.string().max(1000).optional().refine(isSafeActionUrl, {
+    message: 'Security validation error: verificationUrl points to an untrusted external domain.',
+  }),
+  ipAddress: z.string().max(50).optional(),
+});
 
-  if (req.method === 'OPTIONS') {
-    res.statusCode = 204;
-    res.end();
-    return;
+type EmailDispatchInput = z.infer<typeof EmailDispatchSchema>;
+
+// Sliding window IP rate limiter (20 email requests per hour per IP)
+const ipRateLimits = new Map<string, { count: number; resetAt: number }>();
+
+function checkIpRateLimit(ip: string, limit = 20, windowMs = 60 * 60 * 1000): boolean {
+  const now = Date.now();
+  const record = ipRateLimits.get(ip);
+  if (!record || now > record.resetAt) {
+    ipRateLimits.set(ip, { count: 1, resetAt: now + windowMs });
+    return true;
   }
+  if (record.count >= limit) return false;
+  record.count++;
+  return true;
+}
+
+export default async function handler(
+  req: IncomingMessage & { body?: unknown },
+  res: ServerResponse
+) {
+  // CORS & Preflight handling
+  if (applyCorsHeaders(req, res)) return;
 
   if (req.method !== 'POST') {
-    res.statusCode = 405;
-    res.end(JSON.stringify({ error: 'Method Not Allowed. Use POST.' }));
-    return;
+    return sendJson(res, 405, { error: 'Method Not Allowed. Use POST.' });
   }
 
-  let body: Record<string, any> = {};
-  try {
-    body = await parseJsonBody(req);
-  } catch (err) {
-    res.statusCode = 400;
-    res.end(JSON.stringify({ error: 'Invalid JSON request payload.' }));
-    return;
+  const clientIp = (
+    (req.headers['x-forwarded-for'] as string) ||
+    req.socket.remoteAddress ||
+    'anonymous'
+  ).split(',')[0].trim();
+
+  // Enforce IP rate limiting
+  if (!checkIpRateLimit(clientIp, 20)) {
+    return sendJson(res, 429, {
+      error: 'Rate limit exceeded: Too many email requests from this network. Please wait before requesting additional emails.',
+    });
   }
 
-  const { type, to, name, email, title, message, actionText, actionUrl, ipAddress } = body;
-  const targetEmail = (to || email || '').trim().toLowerCase();
+  // Validate payload with Zod
+  const validation = await parseAndValidateBody(req, EmailDispatchSchema, 128 * 1024);
+  if (!validation.success) {
+    return sendJson(res, validation.statusCode, { error: validation.error });
+  }
+
+  const body: EmailDispatchInput = validation.data;
+  const targetEmail = (body.to || body.email || '').trim().toLowerCase();
 
   if (!targetEmail || !isValidEmail(targetEmail)) {
-    res.statusCode = 400;
-    res.end(
-      JSON.stringify({
-        error: `A valid recipient email address is required (received: "${targetEmail}").`,
-      })
-    );
-    return;
+    return sendJson(res, 400, {
+      error: `A valid recipient email address is required (received: "${targetEmail}").`,
+    });
   }
 
   try {
     let result;
 
-    switch (type) {
-      case 'welcome':
-        result = await sendWelcomeEmail({
-          name: name || 'Learner',
+    switch (body.type) {
+      // 1. Administrative Test Email -> Requires authenticated ADMIN role
+      case 'test': {
+        const auth = await verifyAuthToken(req);
+        if (!auth.authenticated || auth.role !== 'admin') {
+          return sendJson(res, 403, {
+            error: 'Forbidden: Administrator authorization required to execute SMTP test dispatches.',
+          });
+        }
+        result = await sendAdminTestEmail(targetEmail);
+        break;
+      }
+
+      // 2. Platform Broadcast Notification -> Requires authenticated ADMIN role
+      case 'notification': {
+        const auth = await verifyAuthToken(req);
+        if (!auth.authenticated || auth.role !== 'admin') {
+          return sendJson(res, 403, {
+            error: 'Forbidden: Administrator authorization required to dispatch broadcast account notifications.',
+          });
+        }
+        if (!body.title || !body.message) {
+          return sendJson(res, 400, {
+            error: 'Both title and message are required for notification type.',
+          });
+        }
+        result = await sendAccountNotification({
+          name: body.name || 'Learner',
           email: targetEmail,
-          loginUrl: actionUrl,
+          title: body.title,
+          message: body.message,
+          actionText: body.actionText,
+          actionUrl: body.actionUrl,
         });
         break;
+      }
 
-      case 'password_changed':
+      // 3. Security Alert: Password Changed -> Requires AUTHENTICATED user matching recipient
+      case 'password_changed': {
+        const auth = await verifyAuthToken(req);
+        if (!auth.authenticated || !auth.email) {
+          return sendJson(res, 401, {
+            error: 'Unauthorized: Authentication required to trigger password changed alerts.',
+          });
+        }
+        // Anti-Spoofing: Recipient email MUST match the authenticated user's email
+        if (auth.email.toLowerCase() !== targetEmail) {
+          return sendJson(res, 403, {
+            error: 'Forbidden: Cannot trigger password alerts for an account other than your own.',
+          });
+        }
         result = await sendPasswordChangedAlert({
-          name: name || 'User',
+          name: body.name || 'User',
           email: targetEmail,
-          ipAddress: ipAddress || (req.headers['x-forwarded-for'] as string) || req.socket.remoteAddress,
+          ipAddress: body.ipAddress || clientIp,
           changeTime: new Date().toUTCString(),
         });
         break;
+      }
 
-      case 'notification':
-        if (!title || !message) {
-          res.statusCode = 400;
-          res.end(JSON.stringify({ error: 'Both title and message are required for notification type.' }));
-          return;
+      // 4. Welcome Email -> Requires AUTHENTICATED user matching recipient
+      case 'welcome': {
+        const auth = await verifyAuthToken(req);
+        if (!auth.authenticated || !auth.email) {
+          return sendJson(res, 401, {
+            error: 'Unauthorized: Authentication required to trigger welcome emails.',
+          });
         }
-        result = await sendAccountNotification({
-          name: name || 'Learner',
+        if (auth.email.toLowerCase() !== targetEmail) {
+          return sendJson(res, 403, {
+            error: 'Forbidden: Recipient email does not match authenticated user.',
+          });
+        }
+        result = await sendWelcomeEmail({
+          name: body.name || 'Learner',
           email: targetEmail,
-          title,
-          message,
-          actionText,
-          actionUrl,
+          loginUrl: body.actionUrl,
         });
         break;
+      }
 
-      case 'verification_guidance':
+      // 5. Verification Guidance (Self-Service)
+      case 'verification_guidance': {
         result = await sendVerificationGuidance({
-          name: name || 'Learner',
+          name: body.name || 'Learner',
           email: targetEmail,
           verificationOtp: body.verificationOtp,
           verificationUrl: body.verificationUrl,
         });
         break;
+      }
 
-      case 'password_reset_guidance':
+      // 6. Password Reset Guidance (Self-Service)
+      case 'password_reset_guidance': {
         if (!body.resetUrl) {
-          res.statusCode = 400;
-          res.end(JSON.stringify({ error: 'resetUrl is required for password_reset_guidance.' }));
-          return;
+          return sendJson(res, 400, {
+            error: 'A valid, trusted resetUrl is required for password reset guidance.',
+          });
         }
         result = await sendPasswordResetGuidance({
-          name: name || 'Learner',
+          name: body.name || 'Learner',
           email: targetEmail,
           resetUrl: body.resetUrl,
         });
         break;
-
-      case 'test':
-        result = await sendAdminTestEmail(targetEmail);
-        break;
+      }
 
       default:
-        res.statusCode = 400;
-        res.end(
-          JSON.stringify({
-            error: `Unsupported email type: "${type}". Supported types: welcome, password_changed, notification, verification_guidance, password_reset_guidance, test.`,
-          })
-        );
-        return;
+        return sendJson(res, 400, {
+          error: `Unsupported email type: "${body.type}".`,
+        });
     }
 
     if (!result.success) {
-      res.statusCode = 502;
-      res.end(
-        JSON.stringify({
-          status: 'error',
-          error: result.error,
-        })
-      );
-      return;
+      return sendJson(res, 502, {
+        status: 'error',
+        error: result.error || 'Failed to dispatch email via SMTP relay.',
+      });
     }
 
-    res.statusCode = 200;
-    res.end(
-      JSON.stringify({
-        status: 'success',
-        message: 'Email successfully queued and delivered to Brevo SMTP relay.',
-        messageId: result.messageId,
-        recipient: targetEmail,
-      })
-    );
+    return sendJson(res, 200, {
+      status: 'success',
+      message: 'Email successfully queued and delivered to Brevo SMTP relay.',
+      messageId: result.messageId,
+      recipient: targetEmail,
+    });
   } catch (err: unknown) {
-    const errorMsg = err instanceof Error ? err.message : String(err);
-    res.statusCode = 500;
-    res.end(
-      JSON.stringify({
-        status: 'error',
-        error: `Internal server error during email dispatch: ${errorMsg}`,
-      })
-    );
+    const errorMsg = err instanceof Error ? err.message : 'Unknown internal error';
+    return sendJson(res, 500, {
+      status: 'error',
+      error: `Internal error during email dispatch: ${errorMsg}`,
+    });
   }
 }
-

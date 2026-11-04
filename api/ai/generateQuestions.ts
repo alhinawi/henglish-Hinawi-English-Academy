@@ -7,10 +7,25 @@ import type { IncomingMessage, ServerResponse } from 'node:http';
 import dns from 'node:dns';
 import { dispatchThroughAiRouter } from '../../server/ai/aiRouter';
 import { validateQuestionsJson, ValidatedGeneratedQuestion } from '../../server/ai/schemas';
+import { applyCorsHeaders, sendJson } from '../../server/auth/serverAuth';
 
 try {
   dns.setDefaultResultOrder('ipv4first');
 } catch {}
+
+const ipRateLimits = new Map<string, { count: number; resetAt: number }>();
+
+function checkRateLimit(ip: string, limit = 20, windowMs = 60 * 1000): boolean {
+  const now = Date.now();
+  const record = ipRateLimits.get(ip);
+  if (!record || now > record.resetAt) {
+    ipRateLimits.set(ip, { count: 1, resetAt: now + windowMs });
+    return true;
+  }
+  if (record.count >= limit) return false;
+  record.count++;
+  return true;
+}
 
 export type { ValidatedGeneratedQuestion as GeneratedQuestion };
 
@@ -44,15 +59,6 @@ async function parseBody(req: IncomingMessage & { body?: unknown }): Promise<Rec
     });
     req.on('error', () => resolve({}));
   });
-}
-
-function sendJson(res: ServerResponse, statusCode: number, data: unknown) {
-  res.statusCode = statusCode;
-  res.setHeader('Content-Type', 'application/json; charset=utf-8');
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  res.end(JSON.stringify(data));
 }
 
 // High-quality static fallback question bank when AI keys are unconfigured
@@ -106,25 +112,41 @@ const FALLBACK_BANK: ValidatedGeneratedQuestion[] = [
 ];
 
 export default async function handler(req: IncomingMessage & { body?: unknown }, res: ServerResponse) {
-  if (req.method === 'OPTIONS') {
-    res.statusCode = 204;
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    res.end();
-    return;
-  }
+  // CORS & Preflight handling
+  if (applyCorsHeaders(req, res)) return;
 
   if (req.method !== 'POST') {
-    sendJson(res, 405, { error: 'Method Not Allowed' });
-    return;
+    return sendJson(res, 405, { error: 'Method Not Allowed. Use POST.' });
+  }
+
+  const clientIp = (
+    (req.headers['x-forwarded-for'] as string) ||
+    req.socket.remoteAddress ||
+    'anonymous'
+  ).split(',')[0].trim();
+
+  if (!checkRateLimit(clientIp, 20)) {
+    return sendJson(res, 429, {
+      error: 'Rate limit exceeded: Too many question generation requests. Please slow down.',
+    });
   }
 
   try {
     const body = await parseBody(req);
-    const cefrLevel = (body.cefrLevel as string) || 'B1';
-    const topic = (body.topic as string) || 'future-perfect';
-    const difficulty = (body.difficulty as 'easy' | 'medium' | 'hard') || 'medium';
+
+    // M-1 Input Sanitization & Allowlisting (Anti Prompt-Injection)
+    const ALLOWED_CEFR = new Set(['A1', 'A2', 'B1', 'B2', 'C1', 'C2']);
+    const rawCefr = String(body.cefrLevel || '').toUpperCase();
+    const cefrLevel = ALLOWED_CEFR.has(rawCefr) ? rawCefr : 'B1';
+
+    const ALLOWED_DIFFICULTIES = new Set(['easy', 'medium', 'hard']);
+    const rawDiff = String(body.difficulty || '').toLowerCase();
+    const difficulty = ALLOWED_DIFFICULTIES.has(rawDiff) ? rawDiff : 'medium';
+
+    // Strict topic sanitization: strip script/markdown/delimiters, max 60 chars
+    const rawTopic = String(body.topic || 'future-perfect').slice(0, 60);
+    const topic = rawTopic.replace(/[^a-zA-Z0-9\s\-_]/g, '').trim() || 'grammar-foundations';
+
     const count = Math.min(10, Math.max(1, Number(body.count) || 3));
 
     const promptInstruction = `You are a professional Cambridge/Oxford English Exam Author.

@@ -17,7 +17,8 @@ import {
   switchGuestMode,
   SignUpParams,
   supabase,
-  mapSupabaseUserToProfile
+  mapSupabaseUserToProfile,
+  isProductionEnv
 } from '../services/authService';
 
 interface AuthContextType {
@@ -187,6 +188,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const loginDemoTeacher = () => {
+    if (isProductionEnv()) {
+      // In production, teacher demo is strictly disabled to prevent privilege confusion
+      return;
+    }
     const demo = switchDemoAccount('teacher');
     setSession(demo);
     if (typeof window !== 'undefined') {
@@ -195,6 +200,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const loginDemoAdmin = () => {
+    if (isProductionEnv()) {
+      // In production, admin demo is strictly disabled
+      return;
+    }
     const demo = switchDemoAccount('admin');
     setSession(demo);
     if (typeof window !== 'undefined') {
@@ -202,11 +211,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  // Authoritative RBAC role determination:
+  // In production, only authenticated sessions with valid tokens can have non-student roles
+  const effectiveRole: UserRole = 
+    session.type === 'authenticated'
+      ? session.user.role
+      : isProductionEnv()
+        ? 'student'
+        : session.user.role;
+
   const value: AuthContextType = {
     session,
-    user: session.user,
-    role: session.user.role,
-    isAuthenticated: session.isLoggedIn && session.type === 'authenticated',
+    user: {
+      ...session.user,
+      role: effectiveRole,
+    },
+    role: effectiveRole,
+    isAuthenticated: session.isLoggedIn && session.type === 'authenticated' && Boolean(session.accessToken),
     isGuest: session.type === 'guest',
     isDemo: session.type === 'demo',
     isEmailVerified: session.isEmailVerified,
@@ -234,4 +255,3 @@ export const useAuth = (): AuthContextType => {
   }
   return context;
 };
-

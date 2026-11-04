@@ -85,7 +85,6 @@ export const App: React.FC = () => {
     isBookmarked,
     markNotificationRead,
     markAllNotificationsRead,
-    toggleUserRole,
     resetAllProgress,
     completionPercentage,
     badges,
@@ -264,9 +263,10 @@ export const App: React.FC = () => {
   }
 
   // -------------------------------------------------------------
-  // RBAC GUARD FOR ADMIN CONTROL PANEL
+  // RBAC GUARDS FOR PRIVILEGED ROUTES
   // -------------------------------------------------------------
-  const isAdminBlocked = currentRoute === 'admin' && authRole !== 'admin';
+  const isAdminBlocked = currentRoute === 'admin' && (authRole !== 'admin' || isDemo);
+  const isTeacherBlocked = currentRoute === 'teacher-dashboard' && (authRole !== 'teacher' && authRole !== 'admin' || isDemo);
 
   return (
     <>
@@ -299,7 +299,7 @@ export const App: React.FC = () => {
         unreadCount={unreadNotificationsCount}
         onMarkNotificationRead={markNotificationRead}
         onMarkAllNotificationsRead={markAllNotificationsRead}
-        onToggleRole={toggleUserRole}
+        onToggleRole={() => {}}
         onResetProgress={resetAllProgress}
         onSignOut={logout}
         authSessionType={session.type}
@@ -318,8 +318,24 @@ export const App: React.FC = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2, ease: 'easeInOut' }}
           >
-            {/* RBAC Block View for non-admins */}
-            {isAdminBlocked ? (
+            {/* RBAC Block View for non-teachers accessing Teacher Dashboard */}
+            {isTeacherBlocked ? (
+              <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8 bg-slate-900/60 border border-amber-500/30 rounded-3xl backdrop-blur-xl" dir="rtl">
+                <div className="w-16 h-16 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
+                  <ShieldAlert className="w-8 h-8" />
+                </div>
+                <h2 className="text-xl font-bold text-white mb-2">منطقة محمية - مخصصة للمعلمين</h2>
+                <p className="text-xs text-slate-400 max-w-md mb-6 leading-relaxed">
+                  لوحة تحكم المعلّم مخصصة فقط للكادر التعليمي والإداري المعتمد. ليس لديك الصلاحيات الكافية لعرض هذه الصفحة.
+                </p>
+                <button
+                  onClick={() => handleNavigate('dashboard')}
+                  className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-xs font-semibold transition-colors"
+                >
+                  العودة إلى لوحة الطالب الرئيسية
+                </button>
+              </div>
+            ) : isAdminBlocked ? (
               <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8 bg-slate-900/60 border border-red-500/30 rounded-3xl backdrop-blur-xl" dir="rtl">
                 <div className="w-16 h-16 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center mb-4">
                   <ShieldAlert className="w-8 h-8" />

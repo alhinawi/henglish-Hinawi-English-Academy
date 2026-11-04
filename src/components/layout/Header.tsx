@@ -605,20 +605,6 @@ export const Header: React.FC<HeaderProps> = ({
                   <span>شهاداتي المعتمدة والتوثيق</span>
                 </button>
 
-                <button
-                  onClick={() => {
-                    playSound('click');
-                    onToggleRole();
-                    setProfileOpen(false);
-                  }}
-                  className="w-full flex items-center justify-between p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 transition-colors cursor-pointer"
-                >
-                  <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
-                    <span>تبديل الدور: {userProfile.role === 'student' ? 'المعلم' : 'الطالب'}</span>
-                  </span>
-                </button>
-
                 {onSignOut && (
                   <button
                     onClick={() => {
