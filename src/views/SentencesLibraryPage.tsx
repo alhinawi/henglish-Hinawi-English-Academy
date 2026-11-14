@@ -1,5 +1,5 @@
 // ==============================================================================
-// Henglish Academy (HENGLISH) - 5,500 ESSENTIAL ENGLISH SENTENCES LIBRARY PAGE
+// Henglish Academy (HENGLISH) - 5,000 ESSENTIAL ENGLISH SENTENCES LIBRARY PAGE
 // Full-fledged educational platform featuring 15 learning modes, intelligent search,
 // Egyptian Arabic translations, CEFR distribution, SRS review, and custom collections.
 // ==============================================================================
@@ -318,7 +318,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
 
   return (
     <div className="space-y-8 pb-16 text-right selection:bg-purple-500/30">
-      {/* 1. HERO HEADER: The 5,500 Sentences Crown */}
+      {/* 1. HERO HEADER: The 5,000 Sentences Crown */}
       <section className="relative overflow-hidden rounded-3xl p-6 sm:p-10 border border-white/10 bg-gradient-to-br from-[#1b153b] via-[#151228] to-[#0f0e1a] shadow-2xl">
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -328,20 +328,20 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30">
                 <BookA className="w-3.5 h-3.5" />
-                <span>مكتبة الـ 5,500 جملة الإنجليزية القياسية • CEFR A1 - C2</span>
+                <span>مكتبة الـ 5,000 جملة الإنجليزية القياسية • CEFR A1 - C2</span>
               </div>
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight flex items-center gap-3">
                 <span>موسوعة التحدث الإنجليزي الذكية</span>
               </h1>
               <p className="text-sm sm:text-base text-white/70 max-w-2xl leading-relaxed">
-                5,500 جملة واقعية مصنفة بدقة طبقاً للإطار الأوروبي المشترك (CEFR)، ومترجمة للعامية المصرية الفطرية والفصحى مع نطق صوتي فوري وتكرار متباعد SM-2.
+                5,000 جملة واقعية مصنفة بدقة طبقاً للإطار الأوروبي المشترك (CEFR)، ومترجمة للعامية المصرية الفطرية والفصحى مع نطق صوتي فوري وتكرار متباعد SM-2.
               </p>
             </div>
 
             {/* Quick Stats Badges */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 shrink-0">
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <span className="text-xl sm:text-2xl font-black text-white block">5,500</span>
+                <span className="text-xl sm:text-2xl font-black text-white block">5,000</span>
                 <span className="text-[11px] font-bold text-white/60">إجمالي الجمل</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
@@ -381,7 +381,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <div className="text-xs font-black">A1 • مبتدئ</div>
-                <div className="text-[11px] opacity-80">800 جملة</div>
+                <div className="text-[11px] opacity-80">851 جملة</div>
               </button>
 
               <button
@@ -396,7 +396,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <div className="text-xs font-black">A2 • أساسي</div>
-                <div className="text-[11px] opacity-80">1,000 جملة</div>
+                <div className="text-[11px] opacity-80">1,050 جملة</div>
               </button>
 
               <button
@@ -411,7 +411,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <div className="text-xs font-black">B1 • متوسط</div>
-                <div className="text-[11px] opacity-80">1,100 جملة</div>
+                <div className="text-[11px] opacity-80">1,150 جملة</div>
               </button>
 
               <button
@@ -426,7 +426,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <div className="text-xs font-black">B2 • فوق متوسط</div>
-                <div className="text-[11px] opacity-80">1,100 جملة</div>
+                <div className="text-[11px] opacity-80">1,050 جملة</div>
               </button>
 
               <button
@@ -441,7 +441,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <div className="text-xs font-black">C1 • متقدم</div>
-                <div className="text-[11px] opacity-80">900 جملة</div>
+                <div className="text-[11px] opacity-80">650 جملة</div>
               </button>
 
               <button
@@ -456,7 +456,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <div className="text-xs font-black">C2 • طلاقة تامة</div>
-                <div className="text-[11px] opacity-80">600 جملة</div>
+                <div className="text-[11px] opacity-80">249 جملة</div>
               </button>
             </div>
           </div>

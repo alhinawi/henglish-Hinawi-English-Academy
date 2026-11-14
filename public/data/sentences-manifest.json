@@ -1,13 +1,13 @@
 {
-  "title": "Henglish Academy 5,500 Essential Sentences Library",
-  "totalSentences": 5500,
+  "title": "Henglish Academy 5,000 Essential Sentences Library",
+  "totalSentences": 5000,
   "cefrDistribution": {
-    "A1": 800,
-    "A2": 1000,
-    "B1": 1100,
-    "B2": 1100,
-    "C1": 900,
-    "C2": 600
+    "A1": 851,
+    "A2": 1050,
+    "B1": 1150,
+    "B2": 1050,
+    "C1": 650,
+    "C2": 249
   },
   "sections": [
     "Section 1 — Everyday English",
@@ -23,6 +23,7 @@
     "Section 11 — Grammar-Based Sentences",
     "Section 12 — Real Conversation Expressions"
   ],
-  "generatedAt": "2026-11-01T00:00:00Z",
-  "version": "1.0.0"
+  "generatedAt": "2026-11-14T00:00:00Z",
+  "version": "2.0.0",
+  "method": "Hand-curated 5,000 essential English sentences for Egyptian learners, selected from NGSL / Oxford 3000+5000 frequency lists and CEFR-graded (A1-C2), each with hand-written Egyptian colloquial and Modern Standard Arabic translations, grammar focus, key vocabulary, and IPA transcription."
 }
