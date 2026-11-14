@@ -2333,6 +2333,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'The park is empty today.', arEg: 'الحديقة فاضية النهارده.' }, { en: 'Where is everyone?', arEg: 'فين الناس كلها؟' }],
   },
+  {
+    id: 'biz-derek-leading-meetings',
+    movieTitle: '41 Phrases For Leading A Business Meeting',
+    releaseYear: 2021,
+    director: 'Derek Callan',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Leading Meetings with Confidence',
+    sceneDescription: '41 عبارة جاهزة لإدارة الاجتماعات بالإنجليزية: الافتتاح، الانتقال بين النقاط، وإنهاء الاجتماع باحتراف.',
+    youtubeId: 'cdq6onYgtSg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Derek Callan - English for Professionals (Official)',
+    dialogueQuote: 'Let\'s get down to business.',
+    actorName: 'Derek Callan',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/cdq6onYgtSg/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Derek Callan Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Let\'s get down to business.', arEg: 'يلا ندخل في الشغل على طول.', arFusha: 'يلا ندخل في الشغل على طول.', speaker: 'Instructor', keyWords: [{ word: 'get down to', ipa: '', meaningAr: 'نبدأ في', meaningEn: '' }, { word: 'business', ipa: '', meaningAr: 'شغل / عمل', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Does anyone have anything to add?', arEg: 'حد عنده حاجة يضيفها؟', arFusha: 'حد عنده حاجة يضيفها؟', speaker: 'Instructor', keyWords: [{ word: 'anyone', ipa: '', meaningAr: 'أي حد', meaningEn: '' }, { word: 'add', ipa: '', meaningAr: 'يضيف', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'get down to business', type: 'idiom', meaningAr: 'نبدأ في صلب الموضوع', meaningEn: '', egyptianEquivalent: 'ندخل في الجد', exampleInScene: 'Time is short, let\'s get down to business.' },      { term: 'lead a meeting', type: 'collocation', meaningAr: 'يدير اجتماع', meaningEn: '', egyptianEquivalent: 'يودّي الاجتماع', exampleInScene: 'She leads the Monday meeting.' },      { term: 'add', type: 'cultural', meaningAr: 'يضيف', meaningEn: '', egyptianEquivalent: 'يضيف', exampleInScene: 'Anything to add?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'Let\'s get down to business\' mean?', questionAr: 'معنى Let\'s get down to business؟', options: ['يلا نبدأ في صلب الشغل', 'خلصنا شغل', 'الشغل صعب', 'نروح للمكتب'], correctIndex: 0, explanationAr: 'عبارة شائعة في بداية الاجتماعات معناها نبدأ في صلب الموضوع.' }
+    ],
+    speakingLines: [{ en: 'Let\'s get down to business.', arEg: 'يلا ندخل في الشغل على طول.' }, { en: 'Does anyone have anything to add?', arEg: 'حد عنده حاجة يضيفها؟' }],
+  },
+  {
+    id: 'biz-vanessa-20-phrases',
+    movieTitle: '20 Important Business English Phrases',
+    releaseYear: 2021,
+    director: 'Speak English With Vanessa',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Essential Office Phrases',
+    sceneDescription: 'عشرين عبارة أساسية للشغل بالإنجليزية: في المكالمات، الإيميلات، والكلام اليومي مع الزمايل.',
+    youtubeId: 'T2hOSdvaiRk',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'I\'ll get back to you by Friday.',
+    actorName: 'Vanessa',
+    characterName: 'Vanessa',
+    thumbnailUrl: 'https://img.youtube.com/vi/T2hOSdvaiRk/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I\'ll get back to you by Friday.', arEg: 'هرد عليك قبل يوم الجمعة.', arFusha: 'هرد عليك قبل يوم الجمعة.', speaker: 'Vanessa', keyWords: [{ word: 'get back to', ipa: '', meaningAr: 'يرد على', meaningEn: '' }, { word: 'by', ipa: '', meaningAr: 'قبل / بحلول', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Let\'s touch base next week.', arEg: 'نتكلم ونتابع الأسبوع الجاي.', arFusha: 'نتكلم ونتابع الأسبوع الجاي.', speaker: 'Vanessa', keyWords: [{ word: 'touch base', ipa: '', meaningAr: 'يتواصل / يتابع', meaningEn: '' }, { word: 'next week', ipa: '', meaningAr: 'الأسبوع الجاي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'get back to someone', type: 'phrasal-verb', meaningAr: 'يرد على حد لاحقاً', meaningEn: '', egyptianEquivalent: 'هرجعلك / هرد عليك', exampleInScene: 'I\'ll get back to you tomorrow.' },      { term: 'touch base', type: 'idiom', meaningAr: 'يتواصل للمتابعة', meaningEn: '', egyptianEquivalent: 'نتحايل على بعض', exampleInScene: 'Let\'s touch base after the meeting.' },      { term: 'deadline', type: 'cultural', meaningAr: 'الموعد النهائي', meaningEn: '', egyptianEquivalent: 'الميعاد الأخير', exampleInScene: 'The deadline is Friday.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'touch base\' mean?', questionAr: 'معنى touch base؟', options: ['يتواصل للمتابعة', 'يلمس قاعدة', 'يلعب بيسبول', 'يتأخر'], correctIndex: 0, explanationAr: 'touch base تعبير أمريكي شائع في الشغل معناه يتواصل للمتابعة.' }
+    ],
+    speakingLines: [{ en: 'I\'ll get back to you by Friday.', arEg: 'هرد عليك قبل يوم الجمعة.' }, { en: 'Let\'s touch base next week.', arEg: 'نتكلم ونتابع الأسبوع الجاي.' }],
+  },
+  {
+    id: 'idioms-marina-15',
+    movieTitle: 'Learn 15 Common English Idioms (With Examples)',
+    releaseYear: 2021,
+    director: 'linguamarina',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Idioms Native Speakers Use Daily',
+    sceneDescription: '15 إيديوم بيتقال كل يوم في أمريكا مع أمثلة حقيقية - هيساعدك تفهم الأفلام والناس العادية.',
+    youtubeId: 'HclqADvf35Y',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'linguamarina (Official)',
+    dialogueQuote: 'It\'s a piece of cake.',
+    actorName: 'Marina',
+    characterName: 'Marina',
+    thumbnailUrl: 'https://img.youtube.com/vi/HclqADvf35Y/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'linguamarina Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'It\'s a piece of cake.', arEg: 'سهل جداً / زي الفول.', arFusha: 'سهل جداً / زي الفول.', speaker: 'Marina', keyWords: [{ word: 'piece of cake', ipa: '', meaningAr: 'سهل جداً', meaningEn: '' }, { word: 'easy', ipa: '', meaningAr: 'سهل', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Don\'t worry, you\'ll nail it.', arEg: 'متقلقش، هتعملها صح.', arFusha: 'متقلقش، هتعملها صح.', speaker: 'Marina', keyWords: [{ word: 'nail it', ipa: '', meaningAr: 'يعملها بامتياز', meaningEn: '' }, { word: 'worry', ipa: '', meaningAr: 'يقلق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'piece of cake', type: 'idiom', meaningAr: 'حاجة سهلة جداً', meaningEn: '', egyptianEquivalent: 'زي الفول', exampleInScene: 'The exam was a piece of cake.' },      { term: 'nail it', type: 'idiom', meaningAr: 'يعملها بامتياز', meaningEn: '', egyptianEquivalent: 'يجيبها صح', exampleInScene: 'You nailed the presentation!' },      { term: 'break a leg', type: 'idiom', meaningAr: 'بالتوفيق (قبل أداء)', meaningEn: '', egyptianEquivalent: 'ربنا يوفقك', exampleInScene: 'Break a leg in your interview!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'piece of cake\' mean?', questionAr: 'معنى piece of cake؟', options: ['حاجة سهلة جداً', 'قطعة كيك', 'حاجة غالية', 'حفلة'], correctIndex: 0, explanationAr: 'لو حاجة piece of cake يعني سهلة جداً، زي ما بنقول زي الفول.' }
+    ],
+    speakingLines: [{ en: 'It\'s a piece of cake.', arEg: 'سهل جداً / زي الفول.' }, { en: 'Don\'t worry, you\'ll nail it.', arEg: 'متقلقش، هتعملها صح.' }],
+  },
+  {
+    id: 'idioms-lucy-100',
+    movieTitle: 'Learn the 100 Most Common Idioms in 30 Minutes',
+    releaseYear: 2022,
+    director: 'English with Lucy',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'British Idioms Masterclass',
+    sceneDescription: 'لوسي بتلخص أشهر 100 إيديوم بريطاني بأمثلة ونطق قياسي - مراجعة مكثفة للمستوى المتوسط فما فوق.',
+    youtubeId: 'Hm-n-_uqCvQ',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Lucy (Official)',
+    dialogueQuote: 'I\'m feeling under the weather today.',
+    actorName: 'Lucy',
+    characterName: 'Lucy',
+    thumbnailUrl: 'https://img.youtube.com/vi/Hm-n-_uqCvQ/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Lucy Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I\'m feeling under the weather today.', arEg: 'حاسس إني تعبان شوية النهارده.', arFusha: 'حاسس إني تعبان شوية النهارده.', speaker: 'Lucy', keyWords: [{ word: 'under the weather', ipa: '', meaningAr: 'مش على بعضه / تعبان', meaningEn: '' }, { word: 'feeling', ipa: '', meaningAr: 'حاسس', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'It costs an arm and a leg.', arEg: 'ده غالي جداً / بفلوس كتير أوي.', arFusha: 'ده غالي جداً / بفلوس كتير أوي.', speaker: 'Lucy', keyWords: [{ word: 'costs', ipa: '', meaningAr: 'يكلف', meaningEn: '' }, { word: 'expensive', ipa: '', meaningAr: 'غالي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'under the weather', type: 'idiom', meaningAr: 'مش على بعضه / تعبان شوية', meaningEn: '', egyptianEquivalent: 'واهن شوية', exampleInScene: 'I\'m a bit under the weather.' },      { term: 'an arm and a leg', type: 'idiom', meaningAr: 'غالي جداً', meaningEn: '', egyptianEquivalent: 'بنص ثروة', exampleInScene: 'That phone costs an arm and a leg.' },      { term: 'once in a blue moon', type: 'idiom', meaningAr: 'نادراً', meaningEn: '', egyptianEquivalent: 'كل أجل ونص', exampleInScene: 'We eat out once in a blue moon.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'If something costs an arm and a leg, it is...', questionAr: 'لو حاجة بتكلف an arm and a leg يبقى هي...؟', options: ['غالية جداً', 'رخيصة', 'مجانية', 'مستعملة'], correctIndex: 0, explanationAr: 'an arm and a leg معناها غالية جداً - تعبير شائع عن الأسعار العالية.' }
+    ],
+    speakingLines: [{ en: 'I\'m feeling under the weather today.', arEg: 'حاسس إني تعبان شوية النهارده.' }, { en: 'It costs an arm and a leg.', arEg: 'ده غالي جداً.' }],
+  },
+  {
+    id: 'phrasal-mmmenglish-50',
+    movieTitle: '50+ Common English Phrasal Verbs (with Workbook)',
+    releaseYear: 2021,
+    director: 'mmmEnglish',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Phrasal Verbs You Actually Need',
+    sceneDescription: 'أهم 50 فيرزال فيرب مع أمثلة من الحياة اليومية - المفتاح الحقيقي لفهم الكلام الطبيعي.',
+    youtubeId: 'r7VKVXbaj_Y',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'mmmEnglish (Official)',
+    dialogueQuote: 'I need to look after my little brother.',
+    actorName: 'Emma',
+    characterName: 'Emma',
+    thumbnailUrl: 'https://img.youtube.com/vi/r7VKVXbaj_Y/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'mmmEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I need to look after my little brother.', arEg: 'لازم أعتني بأخويا الصغير.', arFusha: 'لازم أعتني بأخويا الصغير.', speaker: 'Emma', keyWords: [{ word: 'look after', ipa: '', meaningAr: 'يعتني بـ', meaningEn: '' }, { word: 'little', ipa: '', meaningAr: 'صغير', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'The car broke down on the highway.', arEg: 'العربية عطلت على الطريق السريع.', arFusha: 'العربية عطلت على الطريق السريع.', speaker: 'Emma', keyWords: [{ word: 'broke down', ipa: '', meaningAr: 'عطلت', meaningEn: '' }, { word: 'highway', ipa: '', meaningAr: 'طريق سريع', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'look after', type: 'phrasal-verb', meaningAr: 'يعتني بـ / يرعى', meaningEn: '', egyptianEquivalent: 'يراعي', exampleInScene: 'She looks after her grandma.' },      { term: 'break down', type: 'phrasal-verb', meaningAr: 'يعطل (للأجهزة والعربيات)', meaningEn: '', egyptianEquivalent: 'يبوظ', exampleInScene: 'My laptop broke down.' },      { term: 'put off', type: 'phrasal-verb', meaningAr: 'يأجل', meaningEn: '', egyptianEquivalent: 'يأجل', exampleInScene: 'Don\'t put off your homework.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'look after\' mean?', questionAr: 'معنى look after؟', options: ['يعتني بـ', 'يبص ورا', 'يدور على', 'يكبر'], correctIndex: 0, explanationAr: 'look after معناها يعتني بحد أو يرعاه، زي look after my brother.' }
+    ],
+    speakingLines: [{ en: 'I need to look after my little brother.', arEg: 'لازم أعتني بأخويا الصغير.' }, { en: 'The car broke down on the highway.', arEg: 'العربية عطلت على الطريق السريع.' }],
+  },
+  {
+    id: 'phrasal-bob-part1',
+    movieTitle: 'Phrasal Verbs Part 1 - Learn English with Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'First Phrasal Verbs',
+    sceneDescription: 'بوب الكندي بيشرح أول مجموعة فيرزال فيربز بأسلوبه البطيء والواضح - مثالي للمبتدئين المتقدمين.',
+    youtubeId: 'NKT6f6XlYhQ',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I get up at six every morning.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/NKT6f6XlYhQ/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I get up at six every morning.', arEg: 'بصحى الساعة ستة كل يوم الصبح.', arFusha: 'بصحى الساعة ستة كل يوم الصبح.', speaker: 'Bob', keyWords: [{ word: 'get up', ipa: '', meaningAr: 'يصحى', meaningEn: '' }, { word: 'every morning', ipa: '', meaningAr: 'كل يوم الصبح', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Turn off the lights when you leave.', arEg: 'اطفي النور وانت خارج.', arFusha: 'اطفي النور وانت خارج.', speaker: 'Bob', keyWords: [{ word: 'turn off', ipa: '', meaningAr: 'يطفي', meaningEn: '' }, { word: 'leave', ipa: '', meaningAr: 'يخرج', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'get up', type: 'phrasal-verb', meaningAr: 'يصحى من السرير', meaningEn: '', egyptianEquivalent: 'يصحى', exampleInScene: 'I get up early.' },      { term: 'turn off', type: 'phrasal-verb', meaningAr: 'يطفي / يقفل', meaningEn: '', egyptianEquivalent: 'يطفي', exampleInScene: 'Turn off the TV.' },      { term: 'turn on', type: 'phrasal-verb', meaningAr: 'ينوّر / يشغل', meaningEn: '', egyptianEquivalent: 'يفتح', exampleInScene: 'Turn on the lights.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the opposite of \'turn off\'?', questionAr: 'عكس turn off إيه؟', options: ['turn on', 'turn down', 'get up', 'break down'], correctIndex: 0, explanationAr: 'turn off يعني يطفي، وعكسها turn on يعني ينوّر أو يشغل.' }
+    ],
+    speakingLines: [{ en: 'I get up at six every morning.', arEg: 'بصحى الساعة ستة كل يوم الصبح.' }, { en: 'Turn off the lights when you leave.', arEg: 'اطفي النور وانت خارج.' }],
+  },
+  {
+    id: 'ielts-advantage-secrets',
+    movieTitle: 'IELTS Speaking Secrets Every Student Should Learn',
+    releaseYear: 2022,
+    director: 'IELTS Advantage',
+    genre: 'Exam Preparation',
+    cefrLevel: 'C1',
+    sceneTitle: 'Band 9 Speaking Strategies',
+    sceneDescription: 'أسرار الآيلتس سبيكينج من مدرب متخصص: إزاي تنظم إجابتك وتبهر الممتحن بمفردات طبيعية.',
+    youtubeId: 'ELxGmf9f_ZM',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'IELTS Advantage (Official)',
+    dialogueQuote: 'Don\'t memorize answers; develop ideas naturally.',
+    actorName: 'IELTS Advantage Coach',
+    characterName: 'Coach',
+    thumbnailUrl: 'https://img.youtube.com/vi/ELxGmf9f_ZM/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'IELTS Advantage Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'Don\'t memorize answers; develop ideas naturally.', arEg: 'متحفظش إجابات؛ طور أفكارك بشكل طبيعي.', arFusha: 'متحفظش إجابات؛ طور أفكارك بشكل طبيعي.', speaker: 'Coach', keyWords: [{ word: 'memorize', ipa: '', meaningAr: 'يحفظ', meaningEn: '' }, { word: 'naturally', ipa: '', meaningAr: 'بشكل طبيعي', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'Examiners can spot a rehearsed answer easily.', arEg: 'الممتحنين بيعرفوا الإجابة المحفوظة بسهولة.', arFusha: 'الممتحنين بيعرفوا الإجابة المحفوظة بسهولة.', speaker: 'Coach', keyWords: [{ word: 'spot', ipa: '', meaningAr: 'يلاحظ', meaningEn: '' }, { word: 'rehearsed', ipa: '', meaningAr: 'محفوظ / متدرب عليه بشكل آلي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'memorize', type: 'cultural', meaningAr: 'يحفظ عن ظهر قلب', meaningEn: '', egyptianEquivalent: 'يحفظ', exampleInScene: 'Don\'t memorize scripts.' },      { term: 'spot', type: 'cultural', meaningAr: 'يلاحظ / يميز', meaningEn: '', egyptianEquivalent: 'يلاحظ', exampleInScene: 'I spotted the mistake.' },      { term: 'fluency', type: 'cultural', meaningAr: 'طلاقة', meaningEn: '', egyptianEquivalent: 'طلاقة', exampleInScene: 'Fluency comes with practice.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do examiners spot easily?', questionAr: 'الممتحنين بيلاحظوا إيه بسهولة؟', options: ['Rehearsed answers', 'Good ideas', 'Natural speaking', 'Nice clothes'], correctIndex: 0, explanationAr: 'الممتحن بيلاحظ الإجابة المحفوظة بسهولة - عشان كده لازم تتكلم طبيعي.' }
+    ],
+    speakingLines: [{ en: 'Don\'t memorize answers; develop ideas naturally.', arEg: 'متحفظش إجابات؛ طور أفكارك بشكل طبيعي.' }, { en: 'Examiners can spot a rehearsed answer easily.', arEg: 'الممتحنين بيعرفوا الإجابة المحفوظة بسهولة.' }],
+  },
+  {
+    id: 'ielts-liz-home',
+    movieTitle: 'How to Improve Your IELTS Speaking at Home',
+    releaseYear: 2019,
+    director: 'IELTS Liz',
+    genre: 'Exam Preparation',
+    cefrLevel: 'B2',
+    sceneTitle: 'Self-Study Speaking Routine',
+    sceneDescription: 'ليز بتشرح روتين عملي لتحسين السبيكينج لوحدك في البيت: تسجيل صوتك، الظل (shadowing)، والتقييم الذاتي.',
+    youtubeId: '61izqh7ZBww',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'IELTS Liz (Official)',
+    dialogueQuote: 'Record yourself and listen for your mistakes.',
+    actorName: 'Liz',
+    characterName: 'Liz',
+    thumbnailUrl: 'https://img.youtube.com/vi/61izqh7ZBww/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'IELTS Liz Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Record yourself and listen for your mistakes.', arEg: 'سجل صوتك واسمع غلطاتك.', arFusha: 'سجل صوتك واسمع غلطاتك.', speaker: 'Liz', keyWords: [{ word: 'record', ipa: '', meaningAr: 'يسجل', meaningEn: '' }, { word: 'mistakes', ipa: '', meaningAr: 'غلطات', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Shadowing helps you copy natural rhythm.', arEg: 'تقنية الظل بتساعدك تقلد الإيقاع الطبيعي.', arFusha: 'تقنية الظل بتساعدك تقلد الإيقاع الطبيعي.', speaker: 'Liz', keyWords: [{ word: 'shadowing', ipa: '', meaningAr: 'تقنية الظل (التقليد الفوري)', meaningEn: '' }, { word: 'rhythm', ipa: '', meaningAr: 'إيقاع', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'record yourself', type: 'collocation', meaningAr: 'يسجل صوته', meaningEn: '', egyptianEquivalent: 'يسجل نفسه', exampleInScene: 'Record yourself speaking daily.' },      { term: 'shadowing', type: 'cultural', meaningAr: 'تقنية الظل (التقليد الفوري للناطق)', meaningEn: '', egyptianEquivalent: 'تقليد فوري', exampleInScene: 'Shadowing improves pronunciation.' },      { term: 'self-study', type: 'cultural', meaningAr: 'ذاكرة ذاتية', meaningEn: '', egyptianEquivalent: 'مذاكرة لوحدك', exampleInScene: 'Self-study needs discipline.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What technique helps you copy natural rhythm?', questionAr: 'إيه التقنية اللي بتساعدك تقلد الإيقاع الطبيعي؟', options: ['Shadowing', 'Memorizing', 'Skipping', 'Translating'], correctIndex: 0, explanationAr: 'الـ shadowing هي إنك تردد ورا الناطق فوراً فتكتسب إيقاعه ونطقه الطبيعي.' }
+    ],
+    speakingLines: [{ en: 'Record yourself and listen for your mistakes.', arEg: 'سجل صوتك واسمع غلطاتك.' }, { en: 'Shadowing helps you copy natural rhythm.', arEg: 'تقنية الظل بتساعدك تقلد الإيقاع الطبيعي.' }],
+  },
+  {
+    id: 'job-cass-top10',
+    movieTitle: 'Top 10 Most Common Job Interview Questions ANSWERED',
+    releaseYear: 2021,
+    director: 'Cass Thompson',
+    genre: 'Job Interview Practice',
+    cefrLevel: 'B2',
+    sceneTitle: 'The 10 Questions You Must Prepare',
+    sceneDescription: 'أشهر 10 أسئلة انترفيو مع إجابات نموذجية جاهزة تتظبط على تجربتك - تحضير مكثف قبل أي مقابلة.',
+    youtubeId: 'U0YdO6zGSHk',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Cass Thompson Career Advice (Official)',
+    dialogueQuote: 'What is your greatest weakness?',
+    actorName: 'Cass Thompson',
+    characterName: 'Coach',
+    thumbnailUrl: 'https://img.youtube.com/vi/U0YdO6zGSHk/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Cass Thompson Career Advice',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'What is your greatest weakness?', arEg: 'إيه أكبر نقطة ضعف عندك؟', arFusha: 'إيه أكبر نقطة ضعف عندك؟', speaker: 'Coach', keyWords: [{ word: 'greatest', ipa: '', meaningAr: 'أكبر', meaningEn: '' }, { word: 'weakness', ipa: '', meaningAr: 'نقطة ضعف', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Turn your weakness into a growth story.', arEg: 'حوّل نقطة ضعفك لقصة تطور.', arFusha: 'حوّل نقطة ضعفك لقصة تطور.', speaker: 'Coach', keyWords: [{ word: 'turn into', ipa: '', meaningAr: 'يحوّل لـ', meaningEn: '' }, { word: 'growth', ipa: '', meaningAr: 'تطور / نمو', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'weakness', type: 'cultural', meaningAr: 'نقطة ضعف', meaningEn: '', egyptianEquivalent: 'نقطة ضعف', exampleInScene: 'Be honest about your weakness.' },      { term: 'strength', type: 'cultural', meaningAr: 'نقطة قوة', meaningEn: '', egyptianEquivalent: 'نقطة قوة', exampleInScene: 'My strength is teamwork.' },      { term: 'growth', type: 'cultural', meaningAr: 'تطور / نمو', meaningEn: '', egyptianEquivalent: 'تطور', exampleInScene: 'Show your growth.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you do with your weakness in an interview?', questionAr: 'تعمل إيه بنقطة ضعفك في الانترفيو؟', options: ['حوّلها لقصة تطور', 'خبّيها', 'كابر وانكرها', 'غيّر الموضوع'], correctIndex: 0, explanationAr: 'أحسن استراتيجية: حوّل نقطة الضعف لقصة تعلم وتطور مع حل عملي.' }
+    ],
+    speakingLines: [{ en: 'What is your greatest weakness?', arEg: 'إيه أكبر نقطة ضعف عندك؟' }, { en: 'Turn your weakness into a growth story.', arEg: 'حوّل نقطة ضعفك لقصة تطور.' }],
+  },
+  {
+    id: 'job-rachel-dos-donts',
+    movieTitle: 'English Job Interview Dos and Don\'ts - Rachel\'s English',
+    releaseYear: 2019,
+    director: 'Rachel\'s English',
+    genre: 'Job Interview Practice',
+    cefrLevel: 'B2',
+    sceneTitle: 'Interview Body Language & Speech',
+    sceneDescription: 'ريتشل بتشرح الأخطاء الشائعة في الانترفيو: نبرة الصوت، السرعة، والكلمات اللي تضعف إجابتك.',
+    youtubeId: '-JNjsOX0N0c',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'Don\'t speak too quickly; slow down and breathe.',
+    actorName: 'Rachel',
+    characterName: 'Rachel',
+    thumbnailUrl: 'https://img.youtube.com/vi/-JNjsOX0N0c/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.', arFusha: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.', speaker: 'Rachel', keyWords: [{ word: 'slow down', ipa: '', meaningAr: 'يهدي / يبطئ', meaningEn: '' }, { word: 'breathe', ipa: '', meaningAr: 'ياخد نفس', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um و like.', arFusha: 'ابعد عن كلمات الحشو زي um و like.', speaker: 'Rachel', keyWords: [{ word: 'avoid', ipa: '', meaningAr: 'يبعد عن', meaningEn: '' }, { word: 'filler words', ipa: '', meaningAr: 'كلمات حشو', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'slow down', type: 'phrasal-verb', meaningAr: 'يهدي / يبطئ', meaningEn: '', egyptianEquivalent: 'مش على مهلك', exampleInScene: 'Slow down, no rush.' },      { term: 'avoid', type: 'cultural', meaningAr: 'يبعد عن / يتجنب', meaningEn: '', egyptianEquivalent: 'يبعد عن', exampleInScene: 'Avoid slang in interviews.' },      { term: 'filler words', type: 'collocation', meaningAr: 'كلمات حشو', meaningEn: '', egyptianEquivalent: 'كلام زيادة', exampleInScene: 'Cut the filler words.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you avoid in an interview?', questionAr: 'المفروض تبعد عن إيه في الانترفيو؟', options: ['Filler words', 'Clear answers', 'Breathing', 'Eye contact'], correctIndex: 0, explanationAr: 'كلمات الحشو زي um و like بتضعف إجابتك - اتكلم بهدوء وبجمل واضحة.' }
+    ],
+    speakingLines: [{ en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.' }, { en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um و like.' }],
+  },
 ];
 
 // Helper to get all videos
