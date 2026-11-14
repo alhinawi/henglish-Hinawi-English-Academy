@@ -201,7 +201,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
                 <span className="text-[11px] text-white/60 font-bold">إجمالي الكلمات الموثقة</span>
-                <div className="text-2xl font-black text-[#c4ff55]">55,000</div>
+                <div className="text-2xl font-black text-[#c4ff55]">5,000</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
                 <span className="text-[11px] text-white/60 font-bold">التعابير والمصطلحات</span>

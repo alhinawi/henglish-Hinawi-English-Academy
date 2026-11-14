@@ -164,7 +164,7 @@ export async function loadVocabularyCore(): Promise<LexicalEntry[]> {
 }
 
 /**
- * Load complete vocabulary dataset (55,000 headwords)
+ * Load complete vocabulary dataset (full headword list)
  */
 export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
   if (fullDatasetLoaded) return cachedWords;

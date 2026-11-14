@@ -1,6 +1,6 @@
 // ==============================================================================
 // HENGLISH ACADEMY - DYNAMIC GAME GENERATION ENGINE
-// Generates unlimited, adaptive educational challenges from 55,000+ vocabulary,
+// Generates unlimited, adaptive educational challenges from 5,000+ vocabulary,
 // 10,000+ expressions, 5,500 sentences, verbs toolkit & massive question bank.
 // ==============================================================================
 
