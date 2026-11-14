@@ -1248,6 +1248,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Hakuna Matata!', arEg: 'هاكونا ماتاتا!' }],
   },
+  {
+    id: 'doc-bbcearth-iguana',
+    movieTitle: 'Planet Earth II',
+    releaseYear: 2016,
+    director: 'BBC Studios',
+    genre: 'Documentary / Nature',
+    cefrLevel: 'B1',
+    sceneTitle: 'Iguana vs Snakes',
+    sceneDescription: 'A newly hatched marine iguana must escape dozens of racer snakes in the most famous BBC Earth chase ever filmed.',
+    youtubeId: 'el4CQj-TCbA',
+    startTime: 0,
+    endTime: 240,
+    clipDuration: '4:00',
+    videoSource: 'BBC Earth (Official)',
+    dialogueQuote: 'A hatchling marine iguana must run a deadly gauntlet of racer snakes.',
+    actorName: 'David Attenborough',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/el4CQj-TCbA/hqdefault.jpg',
+    category: 'documentaries',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Earth Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'The iguana\'s only chance is to outrun them.', arEg: 'فرصة الإجوانا الوحيدة هي إنها تجرى أسرع منهم.', arFusha: 'الفرصة الوحيدة للإغوانا هي أن تسبقهم جرياً.', speaker: 'Narrator', keyWords: [{ word: 'outrun', ipa: '', meaningAr: 'يجري أسرع من', meaningEn: '' }, { word: 'chance', ipa: '', meaningAr: 'فرصة', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Snakes hunt by detecting movement.', arEg: 'الثعابين بتصطاد عن طريق الإحساس بالحركة.', arFusha: 'تصطاد الثعابين عن طريق استشعار الحركة.', speaker: 'Narrator', keyWords: [{ word: 'hunt', ipa: '', meaningAr: 'يصطاد', meaningEn: '' }, { word: 'detect', ipa: '', meaningAr: 'يكتشف / يستشعر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'hatchling', type: 'cultural', meaningAr: 'صغير حيوان خرج للتو من البيضة', meaningEn: '', egyptianEquivalent: 'صغير لسه فقس', exampleInScene: 'A hatchling iguana.' },      { term: 'outrun', type: 'cultural', meaningAr: 'يسبق بالجري / يجري أسرع من', meaningEn: '', egyptianEquivalent: 'يعدي منه بالعافية', exampleInScene: 'Outrun the snakes.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do the snakes hunt the iguana?', questionAr: 'الثعابين بتصطاد الإجوانا إزاي؟', options: ['By smell', 'By detecting movement', 'By sound', 'By color'], correctIndex: 1, explanationAr: 'الثعابين بتستشعر الحركة (detecting movement).' }
+    ],
+    speakingLines: [{ en: 'Its only chance is to outrun them.', arEg: 'فرصتها الوحيدة إنها تسبقهم بالجري.' }],
+  },
+  {
+    id: 'doc-bbcearth-survival',
+    movieTitle: 'BBC Earth: Animals Battling for Survival',
+    releaseYear: 2020,
+    director: 'BBC Studios',
+    genre: 'Documentary / Nature',
+    cefrLevel: 'B2',
+    sceneTitle: 'Animals Battling for Survival',
+    sceneDescription: 'David Attenborough narrates dramatic moments of animals fighting to survive in the wild.',
+    youtubeId: 'Wf_zwkZXMiw',
+    startTime: 0,
+    endTime: 240,
+    clipDuration: '4:00',
+    videoSource: 'BBC Earth (Official)',
+    dialogueQuote: 'Animals battling for survival, narrated by David Attenborough.',
+    actorName: 'David Attenborough',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/Wf_zwkZXMiw/hqdefault.jpg',
+    category: 'documentaries',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Earth Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Every day is a battle for survival in the wild.', arEg: 'كل يوم في البرية معركة من أجل البقاء.', arFusha: 'كل يوم في البرية معركة من أجل البقاء.', speaker: 'Narrator', keyWords: [{ word: 'survival', ipa: '', meaningAr: 'البقاء', meaningEn: '' }, { word: 'the wild', ipa: '', meaningAr: 'البرية', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Only the most determined will make it through.', arEg: 'الأكثر إصراراً بس هم اللي هيعيشوا.', arFusha: 'فقط الأكثر إصراراً سينجون.', speaker: 'Narrator', keyWords: [{ word: 'determined', ipa: '', meaningAr: 'مصمم / عنيد', meaningEn: '' }, { word: 'make it through', ipa: '', meaningAr: 'ينجو / يعدي بسلام', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'survival', type: 'cultural', meaningAr: 'البقاء على قيد الحياة', meaningEn: '', egyptianEquivalent: 'البقاء', exampleInScene: 'The battle for survival.' },      { term: 'predator', type: 'cultural', meaningAr: 'حيوان مفترس يصطاد غيره', meaningEn: '', egyptianEquivalent: 'مفترس', exampleInScene: 'The predator waits silently.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does survival mean?', questionAr: 'كلمة survival معناها إيه؟', options: ['Hunting', 'Staying alive', 'Sleeping', 'Traveling'], correctIndex: 1, explanationAr: 'survival = البقاء على قيد الحياة.' }
+    ],
+    speakingLines: [{ en: 'Every day is a battle for survival.', arEg: 'كل يوم معركة من أجل البقاء.' }],
+  },
+  {
+    id: 'daily-oxford-talk-job',
+    movieTitle: 'Oxford Online English: Talking About Your Job',
+    releaseYear: 2017,
+    director: 'Oxford Online English',
+    genre: 'Spoken English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Talking About Your Job',
+    sceneDescription: 'A spoken-English lesson on how to answer What do you do? naturally and talk about your work.',
+    youtubeId: '235MNImhIko',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'What do you do for a living?',
+    actorName: 'Oxford Online English',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/235MNImhIko/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'What do you do for a living?', arEg: 'بتشتغل إيه؟ / إيه شغلانتك؟', arFusha: 'ماذا تعمل لتكسب قوتك؟', speaker: 'Teacher', keyWords: [{ word: 'for a living', ipa: '', meaningAr: 'كمورد رزق / كشغل', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I work as a software engineer for a big company.', arEg: 'أنا شغال مهندس سوفتوير في شركة كبيرة.', arFusha: 'أعمل مهندس برمجيات في شركة كبيرة.', speaker: 'Student', keyWords: [{ word: 'work as', ipa: '', meaningAr: 'اشتغل كـ', meaningEn: '' }, { word: 'engineer', ipa: '', meaningAr: 'مهندس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'What do you do for a living?', type: 'cultural', meaningAr: 'السؤال الطبيعي عن المهنة', meaningEn: '', egyptianEquivalent: 'بتشتغل إيه؟', exampleInScene: 'What do you do for a living?' },      { term: 'work as', type: 'collocation', meaningAr: 'يعمل في وظيفة (بعدها اسم المهنة)', meaningEn: '', egyptianEquivalent: 'شغال كـ', exampleInScene: 'I work as a teacher.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about someone\'s job naturally?', questionAr: 'تسأل عن شغل حد بشكل طبيعي إزاي؟', options: ['What is your job exactly?', 'What do you do for a living?', 'Where is your work?', 'How is your salary?'], correctIndex: 1, explanationAr: 'الصيغة الطبيعية: What do you do for a living?' }
+    ],
+    speakingLines: [{ en: 'What do you do for a living?', arEg: 'بتشتغل إيه؟' }],
+  },
+  {
+    id: 'travel-easyenglish-airport',
+    movieTitle: 'Easy English: At the Airport',
+    releaseYear: 2019,
+    director: 'Easy Languages',
+    genre: 'Travel Dialogue',
+    cefrLevel: 'A2',
+    sceneTitle: 'At the Airport Conversation',
+    sceneDescription: 'A clear, slow conversation covering check-in, passports and boarding for beginner travelers.',
+    youtubeId: 'jy88ejZrPWw',
+    startTime: 0,
+    endTime: 240,
+    clipDuration: '4:00',
+    videoSource: 'Easy English (Official)',
+    dialogueQuote: 'Can I see your passport, please?',
+    actorName: 'Easy English',
+    characterName: 'Traveler & Officer',
+    thumbnailUrl: 'https://img.youtube.com/vi/jy88ejZrPWw/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Can I see your passport, please?', arEg: 'ممكن أشوف الباسبور بتاعك لو سمحت؟', arFusha: 'هل يمكنني رؤية جواز سفرك من فضلك؟', speaker: 'Officer', keyWords: [{ word: 'passport', ipa: '', meaningAr: 'جواز السفر', meaningEn: '' }, { word: 'Can I see', ipa: '', meaningAr: 'ممكن أشوف', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Here you are. My flight leaves at nine.', arEg: 'اتفضل. الطيارة بتاعتي هتقلع الساعة تسعة.', arFusha: 'تفضل. رحلتي تغادر في التاسعة.', speaker: 'Traveler', keyWords: [{ word: 'Here you are', ipa: '', meaningAr: 'اتفضل', meaningEn: '' }, { word: 'leaves', ipa: '', meaningAr: 'تغادر / تقلع', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'boarding pass', type: 'cultural', meaningAr: 'كارت صعود الطائرة', meaningEn: '', egyptianEquivalent: 'تذكرة الركوب', exampleInScene: 'Show your boarding pass.' },      { term: 'check in', type: 'phrasal-verb', meaningAr: 'يسجل وصوله في المطار أو الفندق', meaningEn: '', egyptianEquivalent: 'يعمل تشيك إن', exampleInScene: 'We check in online first.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does the officer ask for first?', questionAr: 'الموظف بيطلب إيه أول حاجة؟', options: ['Your ticket', 'Your passport', 'Your bag', 'Your phone'], correctIndex: 1, explanationAr: 'يطلب الباسبور: Can I see your passport?' }
+    ],
+    speakingLines: [{ en: 'Can I see your passport, please?', arEg: 'ممكن أشوف الباسبور لو سمحت؟' }],
+  },
+  {
+    id: 'job-begin-interview-conv',
+    movieTitle: 'Job Interview English Conversation',
+    releaseYear: 2021,
+    director: 'Begin With English Stories',
+    genre: 'Job Interview Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Job Interview Conversation for Beginners',
+    sceneDescription: 'A simple model job interview dialogue: introductions, experience and strengths in easy English.',
+    youtubeId: 'Tb4OllD9D1A',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'Begin With English Stories (Official)',
+    dialogueQuote: 'Tell me about yourself.',
+    actorName: 'Begin With English Stories',
+    characterName: 'Interviewer & Candidate',
+    thumbnailUrl: 'https://img.youtube.com/vi/Tb4OllD9D1A/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Begin With English Stories Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Tell me about yourself.', arEg: 'احكيلي عن نفسك.', arFusha: 'حدثني عن نفسك.', speaker: 'Interviewer', keyWords: [{ word: 'Tell me about yourself', ipa: '', meaningAr: 'احكيلي عن نفسك', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I have three years of experience in sales.', arEg: 'عندي تلات سنين خبرة في المبيعات.', arFusha: 'لدي ثلاث سنوات من الخبرة في المبيعات.', speaker: 'Candidate', keyWords: [{ word: 'experience', ipa: '', meaningAr: 'خبرة', meaningEn: '' }, { word: 'sales', ipa: '', meaningAr: 'مبيعات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Tell me about yourself', type: 'cultural', meaningAr: 'السؤال الافتتاحي الأشهر في أي مقابلة عمل', meaningEn: '', egyptianEquivalent: 'عرفني بنفسك', exampleInScene: 'Tell me about yourself.' },      { term: 'strengths', type: 'cultural', meaningAr: 'نقاط القوة', meaningEn: '', egyptianEquivalent: 'نقط قوتك', exampleInScene: 'What are your strengths?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the most common first interview question?', questionAr: 'إيه أشهر سؤال افتتاحي في المقابلات؟', options: ['What is your age?', 'Tell me about yourself.', 'Where do you live?', 'Do you like coffee?'], correctIndex: 1, explanationAr: 'Tell me about yourself هو البداية الكلاسيكية.' }
+    ],
+    speakingLines: [{ en: 'I have three years of experience.', arEg: 'عندي تلات سنين خبرة.' }],
+  },
+  {
+    id: 'pron-rachels-any-word',
+    movieTitle: 'Rachel\'s English',
+    releaseYear: 2016,
+    director: 'Rachel\'s English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'How to Pronounce Any Word in American English',
+    sceneDescription: 'Rachel teaches a practical method to work out the American pronunciation of any new word.',
+    youtubeId: 'Ci4lp_vf9WA',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'How to pronounce any word in American English.',
+    actorName: 'Rachel',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ci4lp_vf9WA/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'In this video, we will learn how to pronounce any word.', arEg: 'في الفيديو ده هنتعلم ننطق أي كلمة صح.', arFusha: 'في هذا الفيديو سنتعلم كيف ننطق أي كلمة.', speaker: 'Rachel', keyWords: [{ word: 'pronounce', ipa: '', meaningAr: 'ينطق', meaningEn: '' }, { word: 'any word', ipa: '', meaningAr: 'أي كلمة', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Pay attention to the stressed syllable.', arEg: 'ركز على المقطع اللي عليه الضغط (النَّبْر).', arFusha: 'انتبه إلى المقطع المشدد.', speaker: 'Rachel', keyWords: [{ word: 'stressed syllable', ipa: '', meaningAr: 'المقطع المنبور', meaningEn: '' }, { word: 'pay attention', ipa: '', meaningAr: 'ركز', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'stressed syllable', type: 'cultural', meaningAr: 'المقطع اللي بيتقال بضغط ووضوح أكبر', meaningEn: '', egyptianEquivalent: 'مقطع النَّبْر', exampleInScene: 'Find the stressed syllable first.' },      { term: 'pronunciation', type: 'cultural', meaningAr: 'النطق السليم للكلمات', meaningEn: '', egyptianEquivalent: 'النطق', exampleInScene: 'Practice your pronunciation daily.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you find first in a new word?', questionAr: 'أول حاجة تدور عليها في كلمة جديدة؟', options: ['Its translation', 'The stressed syllable', 'Its plural', 'Its opposite'], correctIndex: 1, explanationAr: 'نبدأ بالمقطع المنبور (stressed syllable).' }
+    ],
+    speakingLines: [{ en: 'Pay attention to the stressed syllable.', arEg: 'ركز على مقطع النبر.' }],
+  },
+  {
+    id: 'biz-derek-meetings',
+    movieTitle: 'English for Business Meetings',
+    releaseYear: 2019,
+    director: 'Derek Callan',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'English for Business Meetings',
+    sceneDescription: 'An interactive lesson on the phrases professionals use to open, run and close business meetings.',
+    youtubeId: '18nwywmeCH0',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'Derek Callan - English for Professionals (Official)',
+    dialogueQuote: 'Let\'s get started, shall we?',
+    actorName: 'Derek Callan',
+    characterName: 'Coach',
+    thumbnailUrl: 'https://img.youtube.com/vi/18nwywmeCH0/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Derek Callan Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Let\'s get started, shall we?', arEg: 'يلا نبدأ، تمام؟', arFusha: 'لنبدأ، أليس كذلك؟', speaker: 'Manager', keyWords: [{ word: 'Let\'s get started', ipa: '', meaningAr: 'يلا نبدأ', meaningEn: '' }, { word: 'shall we?', ipa: '', meaningAr: 'تمام؟ / موافقين؟', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Does everyone agree with this plan?', arEg: 'كلنا متفقين على الخطة دي؟', arFusha: 'هل يوافق الجميع على هذه الخطة؟', speaker: 'Manager', keyWords: [{ word: 'agree with', ipa: '', meaningAr: 'يتفق مع', meaningEn: '' }, { word: 'plan', ipa: '', meaningAr: 'خطة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Let\'s get started', type: 'collocation', meaningAr: 'افتتاحية الاجتماعات الاحترافية', meaningEn: '', egyptianEquivalent: 'يلا نبدأ', exampleInScene: 'Let\'s get started, shall we?' },      { term: 'agree on', type: 'phrasal-verb', meaningAr: 'يتفقون على نقطة معينة', meaningEn: '', egyptianEquivalent: 'نتفق على', exampleInScene: 'We agree on the next step.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you professionally open a meeting?', questionAr: 'تفتتح اجتماع بشكل احترافي إزاي؟', options: ['Everybody listen now!', 'Let\'s get started, shall we?', 'Meeting now!', 'Talk fast please.'], correctIndex: 1, explanationAr: 'الافتتاحية الاحترافية: Let\'s get started, shall we?' }
+    ],
+    speakingLines: [{ en: 'Let\'s get started, shall we?', arEg: 'يلا نبدأ، تمام؟' }],
+  },
+  {
+    id: 'sitcom-seinfeld-opposite',
+    movieTitle: 'Seinfeld',
+    releaseYear: 1994,
+    director: 'Tom Cherones',
+    genre: 'Sitcom / Comedy',
+    cefrLevel: 'B1',
+    sceneTitle: 'George Does The Opposite',
+    sceneDescription: 'George Costanza decides every instinct he has is wrong, so he does the exact opposite and his life changes.',
+    youtubeId: 'CizwH_T7pjg',
+    startTime: 0,
+    endTime: 180,
+    clipDuration: '3:00',
+    videoSource: 'Seinfeld (Official)',
+    dialogueQuote: 'If every instinct you have is wrong, then the opposite would have to be right.',
+    actorName: 'Jason Alexander',
+    characterName: 'George Costanza',
+    thumbnailUrl: 'https://img.youtube.com/vi/CizwH_T7pjg/hqdefault.jpg',
+    category: 'sitcoms',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Seinfeld Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'If every instinct you have is wrong, then the opposite would have to be right.', arEg: 'لو كل غريزة عندك غلط، يبقى العكس المفروض يكون صح.', arFusha: 'إذا كانت كل غريزة لديك خاطئة، فالعكس يجب أن يكون صحيحاً.', speaker: 'Jerry', keyWords: [{ word: 'instinct', ipa: '', meaningAr: 'غريزة', meaningEn: '' }, { word: 'opposite', ipa: '', meaningAr: 'عكس', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I will do the opposite of everything I normally do.', arEg: 'هعمل عكس كل اللي بعمله عادة.', arFusha: 'سأفعل عكس كل ما أفعله عادة.', speaker: 'George', keyWords: [{ word: 'normally', ipa: '', meaningAr: 'عادة / في الحالة الطبيعية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'instinct', type: 'cultural', meaningAr: 'الغريزة أو الحس الداخلي', meaningEn: '', egyptianEquivalent: 'إحساسك الداخلي', exampleInScene: 'Trust your instinct.' },      { term: 'do the opposite', type: 'collocation', meaningAr: 'يفعل العكس تماماً', meaningEn: '', egyptianEquivalent: 'اعمل العكس', exampleInScene: 'I will do the opposite.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does George decide to do?', questionAr: 'جورج قرر يعمل إيه؟', options: ['Move to another city', 'Do the opposite of everything', 'Quit comedy', 'Sleep all day'], correctIndex: 1, explanationAr: 'قرر يعمل عكس كل قراراته المعتادة.' }
+    ],
+    speakingLines: [{ en: 'I will do the opposite.', arEg: 'هعمل العكس.' }],
+  },
+  {
+    id: 'daily-easyenglish-personalinfo',
+    movieTitle: 'Easy English: Personal Information',
+    releaseYear: 2020,
+    director: 'Easy Languages',
+    genre: 'Beginner Dialogue',
+    cefrLevel: 'A1',
+    sceneTitle: 'Asking for and Giving Personal Information',
+    sceneDescription: 'Beginner dialogues for names, countries and phone numbers with clear slow speech.',
+    youtubeId: 'MYFSBowiN8k',
+    startTime: 0,
+    endTime: 240,
+    clipDuration: '4:00',
+    videoSource: 'Easy English Channel (Official)',
+    dialogueQuote: 'What\'s your name? Where are you from?',
+    actorName: 'Easy English',
+    characterName: 'Speakers',
+    thumbnailUrl: 'https://img.youtube.com/vi/MYFSBowiN8k/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'What\'s your name? My name is Adam.', arEg: 'اسمك إيه؟ اسمي آدم.', arFusha: 'ما اسمك؟ اسمي آدم.', speaker: 'Speaker', keyWords: [{ word: 'What\'s your name?', ipa: '', meaningAr: 'اسمك إيه؟', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Where are you from? I am from Egypt.', arEg: 'أنت منين؟ أنا من مصر.', arFusha: 'من أين أنت؟ أنا من مصر.', speaker: 'Speaker', keyWords: [{ word: 'Where are you from?', ipa: '', meaningAr: 'أنت منين؟', meaningEn: '' }, { word: 'I am from', ipa: '', meaningAr: 'أنا من', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Where are you from?', type: 'cultural', meaningAr: 'سؤال عن البلد أو المدينة الأصلية', meaningEn: '', egyptianEquivalent: 'أنت منين؟', exampleInScene: 'Where are you from?' },      { term: 'phone number', type: 'cultural', meaningAr: 'رقم التليفون', meaningEn: '', egyptianEquivalent: 'رقم الموبايل', exampleInScene: 'Can I have your phone number?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you answer Where are you from?', questionAr: 'ترد على سؤال Where are you from? إزاي؟', options: ['I am fine', 'I am from Egypt', 'I am twenty', 'I am a doctor'], correctIndex: 1, explanationAr: 'الرد الصحيح: I am from + اسم البلد.' }
+    ],
+    speakingLines: [{ en: 'Where are you from?', arEg: 'أنت منين؟' }],
+  },
+  {
+    id: 'job-c1-interview-advanced',
+    movieTitle: 'Business English: A Job Interview',
+    releaseYear: 2021,
+    director: 'English Audio Stories',
+    genre: 'Advanced Listening',
+    cefrLevel: 'C1',
+    sceneTitle: 'Advanced Job Interview Listening',
+    sceneDescription: 'A C1-level job interview with natural speed and advanced vocabulary for listening practice.',
+    youtubeId: 'Xa2Cxw6CsUA',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'English Audio Stories (Official)',
+    dialogueQuote: 'Tell me about a time you solved a difficult problem.',
+    actorName: 'English Audio Stories',
+    characterName: 'Interviewer & Candidate',
+    thumbnailUrl: 'https://img.youtube.com/vi/Xa2Cxw6CsUA/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Audio Stories Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Tell me about a time you solved a difficult problem.', arEg: 'احكيلي عن موقف حليت فيه مشكلة صعبة.', arFusha: 'حدثني عن موقف حللت فيه مشكلة صعبة.', speaker: 'Interviewer', keyWords: [{ word: 'solved', ipa: '', meaningAr: 'حلّ', meaningEn: '' }, { word: 'difficult', ipa: '', meaningAr: 'صعبة', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I identified the bottleneck and redesigned the workflow.', arEg: 'حددت عنق الزجاجة وأعدت تصميم سير العمل.', arFusha: 'حددت نقطة الاختناق وأعدت تصميم سير العمل.', speaker: 'Candidate', keyWords: [{ word: 'bottleneck', ipa: '', meaningAr: 'عنق الزجاجة / نقطة الاختناق', meaningEn: '' }, { word: 'workflow', ipa: '', meaningAr: 'سير العمل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'bottleneck', type: 'cultural', meaningAr: 'نقطة الاختناق التي تعطل سير العمل', meaningEn: '', egyptianEquivalent: 'الحتة اللي واقفة الشغل', exampleInScene: 'We found the bottleneck.' },      { term: 'redesign', type: 'cultural', meaningAr: 'يعيد تصميم', meaningEn: '', egyptianEquivalent: 'يظبط من تاني', exampleInScene: 'Redesign the workflow.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What kind of answer does the interviewer want?', questionAr: 'المُحاوِر عايز نوع إجابة إيه؟', options: ['A joke', 'A real problem-solving example', 'Your hobbies', 'Your favorite food'], correctIndex: 1, explanationAr: 'مطلوب مثال حقيقي لحل مشكلة (problem-solving).' }
+    ],
+    speakingLines: [{ en: 'I solved a difficult problem at work.', arEg: 'حليت مشكلة صعبة في الشغل.' }],
+  },
 ];
 
 // Helper to get all videos
