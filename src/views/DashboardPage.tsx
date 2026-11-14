@@ -414,9 +414,9 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
         </div>
       </section>
 
-      {/* 2.5 FLAGSHIP LEARNING SYSTEMS: 5,500 SENTENCES & MOVIE STUDIO */}
+      {/* 2.5 FLAGSHIP LEARNING SYSTEMS: 5,000 SENTENCES & MOVIE STUDIO */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Card 1: 5,500 Essential English Sentences Library */}
+        {/* Card 1: 5,000 Essential English Sentences Library */}
         <div
           onClick={() => {
             playSound("click");
@@ -433,16 +433,16 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </div>
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>أضخم بنك تعليمي • 5,500 جملة</span>
+                <span>أضخم بنك تعليمي • 5,000 جملة</span>
               </span>
             </div>
 
             <div>
               <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#ffd166] transition-colors">
-                مكتبة 5,500 جملة إنجليزية متدرجة
+                مكتبة 5,000 جملة إنجليزية متدرجة
               </h3>
               <p className="text-xs font-mono text-[#ffd166]/80 en mt-0.5">
-                5,500 Essential English Sentences Library
+                5,000 Essential English Sentences Library
               </p>
             </div>
 
