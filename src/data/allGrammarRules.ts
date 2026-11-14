@@ -1353,5 +1353,944 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         explanation: 'البدء بالتعبير السلبي Under no circumstances يستوجب الـ Inversion (تقديم الفعل المساعد should على الفاعل you).'
       }
     ]
+  },
+
+  {
+    id: 'question-tags',
+    order: 28,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Question Tags',
+    titleAr: 'الأسئلة المذيلة: إزاي تخلي كلامك ودود وتأكيدي',
+    titleEn: 'Question Tags',
+    level: 'A2 - تأسيسي',
+    goldenFormula: "Statement, + opposite auxiliary + pronoun? (You are coming, aren't you?)",
+    negativeFormula: "Negative statement, + positive tag? (He isn't ready, is he?)",
+    questionFormula: "Positive statement, + negative tag? (She speaks French, doesn't she?)",
+    summaryAr: 'السؤال المذيل هو ذيل صغير في آخر الجملة بيحول الكلام الخبري لسؤال لطيف، وبيدي إحساس بالثقة والألفة في المحادثة. القاعدة الذهبية: جملة موجبة تأخذ ذيل منفي، وجملة منفية تأخذ ذيل موجب.',
+    timelineDescription: 'أداة محادثة يومية للتأكد من المعلومة أو فتح كلام ودود.',
+    imageUrl: ONLINE_IMAGES.mentorStudent,
+    imageAlt: 'Friendly conversation confirming information with a question tag',
+    keyUsagePoints: [
+      'القاعدة الأساسية: جملة موجبة + ذيل منفي، وجملة منفية + ذيل موجب.',
+      'الذيل بيستخدم نفس الفعل المساعد بتاع الجملة: is, do, did, will, have, can.',
+      "لو الجملة مفيهاش فعل مساعد، بنستخدم do/does/did حسب الزمن: You like coffee, don't you?",
+      "حالات خاصة: I am → aren't I | Let's → shall we | الأوامر → will you?"
+    ],
+    egyptianTips: [
+      "فكر فيها زي كلمة 'صح؟' أو 'مش كده؟' في المصري: انت جاي، صح؟ = You are coming, aren't you?",
+      'النبرة بتفرق: لو نازلة في الآخر يبقى انت متأكد وبتأكد المعلومة، لو طالعة يبقى بتسأل فعلاً ومش متأكد.',
+      "متنساش قاعدة I am: الذيل بتاعها aren't I مش amn't I: I'm late, aren't I?"
+    ],
+    commonTraps: [
+      "فخ تطابق الإيجاب مع الإيجاب: الخطأ You are tired, are you? الصواب: You are tired, aren't you?",
+      "فخ نسيان do مع الأفعال العادية: الخطأ He plays well, playsn't he? الصواب: He plays well, doesn't he?",
+      "فخ ترجمة 'صح' حرفياً بـ true: الذيل لازم يكون فعل مساعد + ضمير، مش كلمة ثابتة."
+    ],
+    examples: [
+      {
+        en: "The meeting starts at 9 AM, doesn't it?",
+        ar: 'الاجتماع يبدأ الساعة 9 الصبح، صح؟',
+        highlight: "doesn't it",
+        context: 'جملة موجبة في المضارع البسيط تأخذ ذيل منفي بـ does'
+      },
+      {
+        en: "You haven't finished the report yet, have you?",
+        ar: 'لسه مخلصتش التقرير، صح؟',
+        highlight: 'have you',
+        context: 'جملة منفية بـ haven\'t تأخذ ذيل موجب'
+      },
+      {
+        en: "Let's review the lesson together, shall we?",
+        ar: 'يلا نراجع الدرس سوا، موافق؟',
+        highlight: 'shall we',
+        context: "حالة خاصة: Let's دايماً ذيلها shall we"
+      },
+      {
+        en: "I'm joining the new course next week, aren't I?",
+        ar: 'أنا هدخل الكورس الجديد الأسبوع الجاي، مش كده؟',
+        highlight: "aren't I",
+        context: 'الحالة الخاصة للفعل am في المتكلم المفرد'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'She can swim very well, ______?',
+        options: ["can she", "can't she", "does she", "isn't she"],
+        correct: 1,
+        explanation: 'الجملة موجبة والفعل المساعد can، فالذيل لازم يكون منفي: can\'t she.'
+      },
+      {
+        question: 'They moved to Cairo last year, ______?',
+        options: ["did they", "didn't they", "don't they", "weren't they"],
+        correct: 1,
+        explanation: 'الفعل moved في الماضي البسيط بدون مساعد ظاهر، فالذيل يكون didn\'t they.'
+      },
+      {
+        question: 'Close the window, ______?',
+        options: ["do you", "will you", "won't you", "shall we"],
+        correct: 1,
+        explanation: 'بعد جملة الأمر بنستخدم will you كذيل مهذب شائع.'
+      }
+    ]
+  },
+
+  {
+    id: 'used-to-would',
+    order: 29,
+    category: 'أزمنة الماضي',
+    categoryEn: 'Past Habits',
+    titleAr: 'عادات الماضي المنقطعة: الفرق بين Used to و Would',
+    titleEn: 'Used To & Would for Past Habits',
+    level: 'B1 - متوسط',
+    goldenFormula: 'Subject + used to / would + base verb (I used to play / I would play)',
+    negativeFormula: "Subject + didn't use to + base verb",
+    questionFormula: 'Did + subject + use to + base verb?',
+    summaryAr: 'زمن خاص للحاجات اللي كانت بتحصل في الماضي وبطلت دلوقتي: عادات قديمة، أوضاع اتغيرت، ذكريات. Used to تصلح للأفعال والحالات، لكن Would تصلح للأفعال المتكررة بس وممنوعة مع أفعال الحالة.',
+    timelineDescription: 'عادات وأوضاع كانت موجودة في الماضي وانتهت تماماً الآن.',
+    imageUrl: ONLINE_IMAGES.grammar.pastSimple,
+    imageAlt: 'Old photo album representing past habits and memories',
+    keyUsagePoints: [
+      'Used to + مصدر: عادة أو حالة في الماضي انتهت: I used to smoke (بطلت التدخين).',
+      'Would + مصدر: عادة ماضية متكررة (فعل حركة بس): We would walk to school together.',
+      'ممنوع Would مع أفعال الحالة زي be, have, live, like: مينفعش I would be shy.',
+      "في النفي والسؤال بنشيل حرف الـ d: didn't use to / Did you use to?"
+    ],
+    egyptianTips: [
+      'Used to معناها بالظبط "كنت بـ... وأيامها خلاص راحت": I used to play football = كنت بلعب كورة زمان.',
+      'لو الفعل حالة مش حركة (زي أكون، أحب، أسكن) استخدم used to بس وانسَ would.',
+      "افتكر إن بعد didn't و Did بنرجع لـ use to بدون d لأن الـ d راحت للفعل المساعد."
+    ],
+    commonTraps: [
+      "فخ كتابة didn't used to: الخطأ He didn't used to swim، الصواب: He didn't use to swim.",
+      'فخ استخدام would مع حالة: الخطأ I would be very shy as a child، الصواب: I used to be very shy as a child.',
+      'فخ الخلط مع be used to + gerund (معتاد على): I am used to waking up early معناها أنا متعود، مش عادة ماضية.'
+    ],
+    examples: [
+      {
+        en: 'When I was a kid, we used to spend every summer at my grandmother\'s house in the village.',
+        ar: 'لما كنت صغير، كنا بنقضي كل صيف في بيت تيتة في القرية.',
+        highlight: 'used to spend',
+        context: 'عادة ماضية منتظمة انتهت'
+      },
+      {
+        en: 'My grandfather would tell us amazing stories about his travels every evening.',
+        ar: 'جدي كان يحكيلنا حكايات مذهلة عن رحلاته كل مساء.',
+        highlight: 'would tell',
+        context: 'فعل حركة متكرر في الماضي - would مناسبة هنا'
+      },
+      {
+        en: 'I didn\'t use to like coffee, but now I can\'t start my day without it.',
+        ar: 'ماكنتش بحب القهوة زمان، بس دلوقتي مبقدرش أبدأ يومي من غيرها.',
+        highlight: "didn't use to like",
+        context: 'نفي صحيح بدون حرف d + فعل حالة like'
+      },
+      {
+        en: 'Did you use to play any musical instruments when you were at school?',
+        ar: 'كنت بتلعب على أي آلة موسيقية وأنت في المدرسة؟',
+        highlight: 'Did you use to play',
+        context: 'صيغة سؤال صحيحة عن عادة ماضية'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'There ______ a small cinema in our street, but it closed years ago.',
+        options: ['would be', 'used to be', 'was used to be', 'use to be'],
+        correct: 1,
+        explanation: 'الجملة عن حالة (وجود سينما) انتهت، وأفعال الحالة تأخذ used to وليس would.'
+      },
+      {
+        question: 'Every Friday, we ______ visit our relatives and have lunch together.',
+        options: ['use to', 'would', 'are used to', 'used'],
+        correct: 1,
+        explanation: 'عادة ماضية متكررة (فعل حركة visit) فتصلح would.'
+      },
+      {
+        question: 'Did you ______ wear a uniform at your old school?',
+        options: ['used to', 'use to', 'using to', 'would to'],
+        correct: 1,
+        explanation: 'بعد Did في السؤال نستخدم use to بدون d.'
+      }
+    ]
+  },
+
+  {
+    id: 'comparatives-superlatives',
+    order: 30,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Comparison',
+    titleAr: 'المقارنة والتفضيل: إزاي تقول الأحسن والأفضل صح',
+    titleEn: 'Comparatives & Superlatives',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'short adj + er + than | more + long adj + than | the + adj + est / the most + adj',
+    negativeFormula: 'not as + adjective + as (This book is not as interesting as that one)',
+    questionFormula: 'Which is + comparative, A or B? / What is the + superlative?',
+    summaryAr: 'عشان تقارن بين حاجتين بنضيف er للصفة القصيرة أو more للطويلة، وعشان نفضل حاجة على الكل بنستخدم the est أو the most. وفي صفات شاذة لازم تحفظها زي good/better/best.',
+    timelineDescription: 'بناء ثابت في المستوى التأسيسي للمقارنات اليومية والتفضيل.',
+    imageUrl: ONLINE_IMAGES.learningStudyGroup,
+    imageAlt: 'Students comparing results and choosing the best option',
+    keyUsagePoints: [
+      'صفة من مقطع واحد: + er / the + est (tall / taller / the tallest).',
+      'صفة طويلة (مقطعين فأكثر): more / the most (more beautiful / the most beautiful).',
+      'صفة منتهية بـ y: تتحول لـ ier / iest (happy / happier / the happiest).',
+      'الشواذ المحفوظة: good/better/best, bad/worse/worst, far/further/furthest.'
+    ],
+    egyptianTips: [
+      'قاعدة سريعة: الصفة القصيرة تاخد er، والطويلة تاخد more. لو شكيت، more غالباً صح.',
+      'متنساش than بعد المقارنة و the قبل التفضيل: taller than / the tallest.',
+      "طريقة not as ... as حلوة جداً للدبلوماسية: بدل ما تقول أسوأ، قول مش بنفس الجودة: not as good as."
+    ],
+    commonTraps: [
+      'فخ جمع الاثنين: الخطأ more taller، الصواب: taller (اختار طريقة واحدة بس).',
+      'فخ نسيان the مع التفضيل: الخطأ Cairo is biggest city، الصواب: Cairo is the biggest city.',
+      'فخ الشواذ: الخطأ gooder / baddest، الصواب: better / worst.'
+    ],
+    examples: [
+      {
+        en: 'Cairo is much bigger than Alexandria, but Alexandria is quieter in winter.',
+        ar: 'القاهرة أكبر بكتير من الإسكندرية، بس الإسكندرية أهدى في الشتا.',
+        highlight: 'bigger than',
+        context: 'مقارنة بين مدينتين بصفة قصيرة + than'
+      },
+      {
+        en: 'This is the most useful English course I have ever taken.',
+        ar: 'ده أنفع كورس إنجليزي خدته في حياتي.',
+        highlight: 'the most useful',
+        context: 'تفضيل لصفة طويلة مع تجربة حياتية (Present Perfect)'
+      },
+      {
+        en: 'The new metro line is faster and more comfortable than the old buses.',
+        ar: 'المترو الجديد أسرع وأريح من الأتوبيسات القديمة.',
+        highlight: 'faster and more comfortable',
+        context: 'مقارنة مزدوجة: صفة قصيرة + صفة طويلة في جملة واحدة'
+      },
+      {
+        en: 'My English is not as fluent as I want, but it is getting better every month.',
+        ar: 'إنجليزيتي مش بطلاقة اللي عايزها، بس بتتحسن كل شهر.',
+        highlight: 'not as fluent as',
+        context: 'المقارنة بالتساوي المنفي + التحسن التدريجي'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'This exercise is ______ than the one we did yesterday.',
+        options: ['more easier', 'easier', 'most easy', 'easiest'],
+        correct: 1,
+        explanation: 'الصفة القصيرة easy تتحول لـ easier، ولا تجمع بين more و er.'
+      },
+      {
+        question: 'Mount Everest is ______ mountain in the world.',
+        options: ['the higher', 'higher', 'the highest', 'most high'],
+        correct: 2,
+        explanation: 'التفضيل على كل الجبال يستلزم the + highest.'
+      },
+      {
+        question: 'My new phone is ______ than my old one, but the camera is ______.',
+        options: ['gooder / worse', 'better / worse', 'better / badder', 'best / worst'],
+        correct: 1,
+        explanation: 'الشواذ: good تعطي better و bad تعطي worse في المقارنة.'
+      }
+    ]
+  },
+  {
+    id: 'countable-uncountable',
+    order: 31,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Nouns & Quantities',
+    titleAr: 'الأسماء المعدودة وغير المعدودة: امتى many وامتى much',
+    titleEn: 'Countable & Uncountable Nouns',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'Countable: a/an, many, few | Uncountable: much, little, some (no plural)',
+    negativeFormula: "not many + countable | not much + uncountable",
+    questionFormula: 'How many + countable? / How much + uncountable?',
+    summaryAr: 'في الإنجليزي الأسماء نوعين: حاجات بتتعد (كتاب، كتب) وحاجات متتعدش (مية، معلومة، نصيحة). والنوع التاني ممنوع ياخد a/an أو جمع s، وده اللي بيحدد تستخدم many ولا much و few ولا little.',
+    timelineDescription: 'قاعدة تأسيسية بتأثر على كل جملة فيها كمية أو عدد.',
+    imageUrl: ONLINE_IMAGES.libraryStudy,
+    imageAlt: 'Books and coffee showing countable and uncountable everyday items',
+    keyUsagePoints: [
+      'المعدود: يقبل a/an والجمع s: a book, two books, many books.',
+      'غير المعدود: ممنوع a/an أو s: water, information, advice, money, furniture.',
+      'many/few/a few مع المعدود، و much/little/a little مع غير المعدود.',
+      'عشان تعد غير المعدود استخدم وحدات: a piece of advice, a glass of water, two slices of bread.'
+    ],
+    egyptianTips: [
+      'كلمة information دايماً مفرد في الإنجليزي حتى لو قصدك معلومات: متقولش informations أبداً.',
+      'Advice أشهر فخ: الصح some advice أو a piece of advice، ومفيش advices.',
+      'Money غير معدودة رغم إن الفلوس بتتعد عندنا! قول much money مش many money.'
+    ],
+    commonTraps: [
+      'فخ جمع غير المعدود: الخطأ informations / furnitures / homeworks، الصواب: information / furniture / homework.',
+      'فخ a مع غير المعدود: الخطأ an advice، الصواب: a piece of advice أو some advice.',
+      'فخ many مع غير المعدود: الخطأ How many money? الصواب: How much money?'
+    ],
+    examples: [
+      {
+        en: 'Could you give me some advice about improving my English pronunciation?',
+        ar: 'ممكن تديني شوية نصايح عن تحسين النطق بتاعي في الإنجليزي؟',
+        highlight: 'some advice',
+        context: 'advice غير معدودة فتأخذ some بدون a'
+      },
+      {
+        en: 'How many lessons have you completed this week?',
+        ar: 'كملت كام درس الأسبوع ده؟',
+        highlight: 'How many lessons',
+        context: 'lessons معدودة فتأخذ How many'
+      },
+      {
+        en: 'There isn\'t much furniture in the new apartment yet.',
+        ar: 'لسه مفيش عفش كتير في الشقة الجديدة.',
+        highlight: 'much furniture',
+        context: 'furniture غير معدودة رغم إنها قطع كتير في الواقع'
+      },
+      {
+        en: 'She gave me three useful tips and a piece of paper with the new vocabulary.',
+        ar: 'ادتني 3 نصايح مفيدة وورقة فيها الكلمات الجديدة.',
+        highlight: 'a piece of paper',
+        context: 'عدّ الاسم غير المعدود باستخدام وحدة قياس'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'I need ______ information about the new English course.',
+        options: ['an', 'some', 'many', 'a few'],
+        correct: 1,
+        explanation: 'information غير معدودة فتأخذ some، وممنوع an أو many.'
+      },
+      {
+        question: 'How ______ time do we have before the exam starts?',
+        options: ['many', 'much', 'few', 'number of'],
+        correct: 1,
+        explanation: 'time بمعنى الوقت غير معدودة فالسؤال يكون How much.'
+      },
+      {
+        question: 'She has very ______ friends here, so she feels lonely.',
+        options: ['little', 'much', 'few', 'less'],
+        correct: 2,
+        explanation: 'friends معدودة فتأخذ few، و little تصلح فقط مع غير المعدود.'
+      }
+    ]
+  },
+
+  {
+    id: 'adverbs-frequency',
+    order: 32,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Adverbs',
+    titleAr: 'ظروف التكرار: إزاي تقول دايماً وأحياناً ونادراً بترتيب صح',
+    titleEn: 'Adverbs of Frequency',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'Subject + adverb + main verb | Subject + be + adverb (I always study / I am always happy)',
+    negativeFormula: 'Subject + adverb + negative verb (I never smoke / She is rarely late)',
+    questionFormula: 'How often + do/does + subject + verb?',
+    summaryAr: 'كلمات صغيرة زي always و usually و sometimes بتوصف التكرار، وعندها مكان ثابت في الجملة: قبل الفعل الأساسي، لكن بعد فعل الكينونة be. والترتيب ده بيفرق جداً في إن جملتك تطلع طبيعية.',
+    timelineDescription: 'ترتيب الكلمات داخل الجملة لوصف العادات والتكرار.',
+    imageUrl: ONLINE_IMAGES.grammar.presentSimple,
+    imageAlt: 'Weekly planner showing daily habits and routines',
+    keyUsagePoints: [
+      'السلم من فوق لتحت: always 100% > usually > often > sometimes > rarely > never 0%.',
+      'المكان الذهبي: قبل الفعل الأساسي: I usually drink tea.',
+      'بعد فعل be: She is always on time.',
+      'مع الأفعال المساعدة: بين المساعد والأساسي: I have never been to London.'
+    ],
+    egyptianTips: [
+      'افتكر: الظرف بيحب يقف جنب الفعل اللي بيوصفه على طول، مش في آخر الجملة زي العربي.',
+      'never لوحدها بتنفي الجملة كلها، فمتحطش not معاها: I never lie مش I don\'t never lie.',
+      'How often هو سؤال التكرار الجاهز: How often do you exercise? = بتلعب رياضة كل قد إيه؟'
+    ],
+    commonTraps: [
+      'فخ آخر الجملة: الخطأ I drink coffee always في بداية التعلم، الصواب الطبيعي: I always drink coffee.',
+      'فخ النفي المزدوج: الخطأ I don\'t never go، الصواب: I never go.',
+      'فخ مكان الظرف مع be: الخطأ She always is late، الصواب: She is always late.'
+    ],
+    examples: [
+      {
+        en: 'I always revise my vocabulary before bed, and I never skip a day.',
+        ar: 'دايماً براجع كلماتي قبل النوم، وعمري ما بفوّت يوم.',
+        highlight: 'always revise',
+        context: 'الظرف قبل الفعل الأساسي في العادة اليومية'
+      },
+      {
+        en: 'She is rarely late for work, even when the traffic is terrible.',
+        ar: 'نادراً ما بتتأخر عن الشغل، حتى لما الزحمة تبقى وحشة.',
+        highlight: 'is rarely',
+        context: 'الظرف بعد فعل الكينونة is'
+      },
+      {
+        en: 'They have never travelled abroad, but they are planning their first trip now.',
+        ar: 'عمرهم ما سافروا بره، بس بيخططوا لأول رحلة دلوقتي.',
+        highlight: 'have never travelled',
+        context: 'الظرف بين have والتصريف الثالث في المضارع التام'
+      },
+      {
+        en: 'How often do you practise speaking English with a partner?',
+        ar: 'بتتمرن على الكلام بالإنجليزي مع حد كل قد إيه؟',
+        highlight: 'How often',
+        context: 'سؤال التكرار الجاهز للمحادثة'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'He ______ late for class. The teacher is very happy with him.',
+        options: ['is never', 'never is', 'does never be', 'not ever'],
+        correct: 0,
+        explanation: 'مع فعل be يأتي الظرف بعده: is never.'
+      },
+      {
+        question: 'I ______ junk food because I care about my health.',
+        options: ['don\'t never eat', 'never eat', 'eat never', 'not eat never'],
+        correct: 1,
+        explanation: 'never تنفي وحدها بدون not، وتأتي قبل الفعل الأساسي.'
+      },
+      {
+        question: '______ do you go to the gym? - About three times a week.',
+        options: ['How long', 'How many', 'How often', 'How much'],
+        correct: 2,
+        explanation: 'السؤال عن التكرار يكون بـ How often.'
+      }
+    ]
+  },
+
+  {
+    id: 'quantifiers',
+    order: 33,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Quantifiers',
+    titleAr: 'كلمات الكمية: some و any و no و a lot of في مكانهم الصح',
+    titleEn: 'Quantifiers: Some, Any, No, Plenty',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'some + positive | any + negative/question | no + positive verb (I have some / I don\'t have any / I have no time)',
+    negativeFormula: "not + any (I don't have any questions) OR no + noun (I have no questions)",
+    questionFormula: 'Would you like some...? / Do you have any...?',
+    summaryAr: 'Some للإيجاب والعروض، any للنفي والأسئلة، و no مع فعل موجب بتديك جملة منفية المعنى. القاعدة دي أساس المحادثة اليومية كله: طلبات، أسئلة، وصف الكميات.',
+    timelineDescription: 'وصف الكميات في الجمل الموجبة والمنفية والاستفهامية.',
+    imageUrl: ONLINE_IMAGES.modernClassroom,
+    imageAlt: 'Classroom discussion about quantities and amounts',
+    keyUsagePoints: [
+      'some في الجملة الموجبة: I bought some new books.',
+      'any في النفي والسؤال: I don\'t have any money / Do you have any questions?',
+      'استثناء مهم: some في العروض والطلبات المهذبة: Would you like some tea?',
+      'no + فعل موجب = نفي كامل: I have no time = I don\'t have any time.'
+    ],
+    egyptianTips: [
+      'قاعدة الشارع: شفت not أو علامة استفهام؟ حط any. شفت عرض مهذب Would you like؟ حط some.',
+      'جملة فيها no مبتحتاجش not: I have no idea صح، وممنوع I don\'t have no idea.',
+      'Plenty of معناها كتير أوي وكفاية: plenty of time = وقت كتير ومفيش ضغط.'
+    ],
+    commonTraps: [
+      'فخ any في الجملة الموجبة العادية: الخطأ I have any friends، الصواب: I have some friends.',
+      'فخ النفي المزدوج مع no: الخطأ I don\'t have no money، الصواب: I have no money أو I don\'t have any money.',
+      'فخ any في العرض المهذب: الطبيعي Would you like some coffee؟ مش any coffee.'
+    ],
+    examples: [
+      {
+        en: 'There is some good news: the academy has opened new speaking sections.',
+        ar: 'فيه أخبار حلوة: الأكاديمية فتحت أقسام محادثة جديدة.',
+        highlight: 'some good news',
+        context: 'some مع اسم غير معدود في جملة موجبة'
+      },
+      {
+        en: 'I don\'t have any free time on weekdays, but I study English every weekend.',
+        ar: 'ماعنديش أي وقت فاضي في أيام الأسبوع، بس بذاكر إنجليزي كل ويك إند.',
+        highlight: "any free time",
+        context: 'any مع النفي don\'t'
+      },
+      {
+        en: 'Would you like some help with your homework?',
+        ar: 'تحب مساعدة في الواجب بتاعك؟',
+        highlight: 'some help',
+        context: 'عرض مهذب يأخذ some رغم أنه سؤال'
+      },
+      {
+        en: 'There were no tickets left for the match, so we watched it at home.',
+        ar: 'مافضلش ولا تذكرة للماتش، فاتفرجنا عليه في البيت.',
+        highlight: 'no tickets',
+        context: 'no مع فعل موجب تعطي معنى منفي كامل'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'Do you have ______ brothers or sisters?',
+        options: ['some', 'any', 'no', 'much'],
+        correct: 1,
+        explanation: 'في السؤال العادي نستخدم any.'
+      },
+      {
+        question: 'I\'m thirsty. Could I have ______ water, please?',
+        options: ['any', 'no', 'some', 'none'],
+        correct: 2,
+        explanation: 'الطلب المهذب يأخذ some رغم صيغة السؤال.'
+      },
+      {
+        question: 'There is ______ milk in the fridge. We need to buy more.',
+        options: ['no any', 'not', 'no', 'some'],
+        correct: 2,
+        explanation: 'no + فعل موجب is تعطي النفي الكامل: مفيش لبن خالص.'
+      }
+    ]
+  },
+  {
+    id: 'subject-verb-agreement',
+    order: 34,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Agreement',
+    titleAr: 'توافق الفاعل والفعل: القاعدة اللي بتكشف مستواك الحقيقي',
+    titleEn: 'Subject-Verb Agreement',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'Singular subject + singular verb (s) | Plural subject + base verb',
+    negativeFormula: "He doesn't / They don't (never: He don't)",
+    questionFormula: 'Does he...? / Do they...? / Is there...? / Are there...?',
+    summaryAr: 'أشهر غلطة بتفرق بين المبتدئ والمحترف: الفعل لازم يوافق فاعله في العدد. المفرد ياخد s في المضارع، والجمع ياخد المصدر. وفي كلمات مخادعة زي everyone و news شكلها جمع لكنها مفرد.',
+    timelineDescription: 'قاعدة بنيوية تظهر في كل جملة مضارع تكتبها أو تقولها.',
+    imageUrl: ONLINE_IMAGES.mentorStudent,
+    imageAlt: 'Teacher correcting a sentence on a whiteboard',
+    keyUsagePoints: [
+      'المفرد الغائب (He/She/It) يأخذ s في المضارع البسيط: She works hard.',
+      'الكلمات المخادعة المفردة: everyone, everybody, someone, each, every, news, mathematics.',
+      'There is + مفرد / There are + جمع: There is a problem / There are two problems.',
+      'الفاعل الحقيقي هو اللي يحكم: The quality of the courses is excellent (quality مفردة).'
+    ],
+    egyptianTips: [
+      'في العربي بنقول الناس بتقول، لكن في الإنجليزي people دايماً جمع: People say مش says.',
+      'كلمة news آخرها s بس معناها مفرد: The news is good.',
+      'لو لقيت everyone أو each في الجملة، عاملها زي He بالظبط: Everyone is welcome.'
+    ],
+    commonTraps: [
+      'فخ everyone تعتبر جمع: الخطأ Everyone are here، الصواب: Everyone is here.',
+      'فخ الفاعل البعيد عن الفعل: الخطأ The list of names are long، الصواب: The list of names is long (الفاعل list).',
+      'فخ people تعتبر مفرد: الخطأ People is kind here، الصواب: People are kind here.'
+    ],
+    examples: [
+      {
+        en: 'Everybody in my class loves the new English teacher.',
+        ar: 'كل واحد في فصلي بيحب مدرس الإنجليزي الجديد.',
+        highlight: 'Everybody ... loves',
+        context: 'everybody مفردة فتأخذ الفعل مع s'
+      },
+      {
+        en: 'There are many new students at the academy this term.',
+        ar: 'فيه طلاب جدد كتير في الأكاديمية الترم ده.',
+        highlight: 'There are',
+        context: 'الجمع students يستلزم There are'
+      },
+      {
+        en: 'The news about the exam results is very encouraging.',
+        ar: 'أخبار نتيجة الامتحان مبشرة جداً.',
+        highlight: 'The news ... is',
+        context: 'news مفردة رغم حرف s في آخرها'
+      },
+      {
+        en: 'My friend and his brother study German together twice a week.',
+        ar: 'صاحبي وأخوه بيذاكروا ألماني سوا مرتين في الأسبوع.',
+        highlight: 'study',
+        context: 'فاعل مركب من شخصين = جمع، فالفعل بدون s'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'Each of the students ______ a personal study plan.',
+        options: ['have', 'has', 'are having', 'having'],
+        correct: 1,
+        explanation: 'Each مفردة دائماً فتأخذ has.'
+      },
+      {
+        question: 'There ______ a lot of new vocabulary in this lesson.',
+        options: ['are', 'is', 'be', 'were'],
+        correct: 1,
+        explanation: 'vocabulary اسم غير معدود يعامل كمفرد: There is.'
+      },
+      {
+        question: 'Mathematics ______ my favourite subject at school.',
+        options: ['are', 'were', 'is', 'have been'],
+        correct: 2,
+        explanation: 'أسماء المواد المنتهية بـ ics مفردة: Mathematics is.'
+      }
+    ]
+  },
+
+  {
+    id: 'modal-perfect',
+    order: 35,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Modal Perfect',
+    titleAr: 'الأفعال الناقصة مع الماضي: كان لازم، كان ممكن، كان يستحيل',
+    titleEn: 'Modal Perfect (Should/Must/Can\'t + Have + V3)',
+    level: 'B2 - فوق متوسط',
+    goldenFormula: 'modal + have + V3 (should have studied / must have forgotten / can\'t have seen)',
+    negativeFormula: "shouldn't have + V3 / can't have + V3",
+    questionFormula: 'Could he have + V3? / Would you have + V3?',
+    summaryAr: 'التركيبة دي بتخليك تحلل الماضي زي المحترفين: should have معناها كان لازم تعمل ومعملتش، must have معناها أكيد حصل، و can\'t have معناها يستحيل يكون حصل. أساس أي محادثة عن ندم أو استنتاج أو لوم.',
+    timelineDescription: 'تحليل أحداث ماضية بالندم أو الاستنتاج المنطقي.',
+    imageUrl: ONLINE_IMAGES.grammar.pastPerfect,
+    imageAlt: 'Person reflecting on a past decision at a crossroads',
+    keyUsagePoints: [
+      'should have + V3: ندم أو لوم على حاجة محصلتش: I should have studied harder (كان لازم أذاكر).',
+      'must have + V3: استنتاج مؤكد عن الماضي: She must have left early (أكيد مشيت بدري).',
+      'can\'t have + V3: استنتاج بالاستحالة: He can\'t have seen me (يستحيل يكون شافني).',
+      'could have + V3: إمكانية ضاعت: We could have won (كان ممكن نكسب).'
+    ],
+    egyptianTips: [
+      'should have = ياريتني أو كان لازم: أشهر تركيبة ندم في اللغة كلها.',
+      'متقولش musted أو shoulded: الأفعال الناقصة متتصرفش، ودايماً بعدها have + V3.',
+      'في النطق الطبيعي should have بتتقال shoulda /ʃʊdə/ - اسمعها كتير في الأغاني والأفلام.'
+    ],
+    commonTraps: [
+      'فخ should have + مصدر: الخطأ I should have study، الصواب: I should have studied (لازم V3).',
+      'فخ ترجمة كان لازم بـ must have: الخطأ I must have studied بمعنى الندم، الصواب: should have. Must have معناها استنتاج مش ندم.',
+      'فخ نسيان have: الخطأ You should told me، الصواب: You should have told me.'
+    ],
+    examples: [
+      {
+        en: 'I should have started learning English years ago, but it is never too late.',
+        ar: 'كان لازم أبدأ أتعلم إنجليزي من سنين، بس العمر مبيروحش أبداً.',
+        highlight: 'should have started',
+        context: 'ندم على قرار ماضي لم يحدث'
+      },
+      {
+        en: 'The lights are off; they must have gone to bed already.',
+        ar: 'النور مطفي؛ أكيد دخلوا يناموا خلاص.',
+        highlight: 'must have gone',
+        context: 'استنتاج منطقي مؤكد عن الماضي'
+      },
+      {
+        en: 'You can\'t have finished the whole book in one day! It is 400 pages.',
+        ar: 'يستحيل تكون خلصت الكتاب كله في يوم واحد! ده 400 صفحة.',
+        highlight: "can't have finished",
+        context: 'استنتاج بالاستحالة'
+      },
+      {
+        en: 'We could have caught the train if we had left five minutes earlier.',
+        ar: 'كان ممكن نلحق القطر لو كنا خرجنا بدري 5 دقايق.',
+        highlight: 'could have caught',
+        context: 'إمكانية ماضية ضاعت بسبب شرط لم يتحقق'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'You look exhausted. You ______ stayed up all night studying.',
+        options: ['should have', 'must have', 'can\'t have', 'would'],
+        correct: 1,
+        explanation: 'استنتاج مؤكد من دليل واضح (المظهر المرهق) يأخذ must have.'
+      },
+      {
+        question: 'I ______ called her yesterday. She was waiting for my call all day.',
+        options: ['must have', 'should have', 'can\'t have', 'would'],
+        correct: 1,
+        explanation: 'لوم على شيء لم يحدث: should have called (كان لازم أتصل).'
+      },
+      {
+        question: 'He ______ stolen the money; he was with me the whole evening.',
+        options: ['must have', 'should have', 'can\'t have', 'could have'],
+        correct: 2,
+        explanation: 'الدليل يجعل الحدث مستحيلاً: can\'t have.'
+      }
+    ]
+  },
+
+  {
+    id: 'wish-if-only',
+    order: 36,
+    category: 'حالات الشرط',
+    categoryEn: 'Wishes & Regrets',
+    titleAr: 'التمني والندم: Wish و If only لأحلام مستحيلة وندم حقيقي',
+    titleEn: 'Wish & If Only',
+    level: 'B2 - فوق متوسط',
+    goldenFormula: 'wish + past simple (حاضر) | wish + past perfect (ماضي) | wish + would (شكوى)',
+    negativeFormula: "I wish I didn't... / I wish I hadn't...",
+    questionFormula: 'Do you ever wish you had...?',
+    summaryAr: 'لما تتمنى حاجة عكس الواقع، الإنجليزي بيرجع بك زمن ورا: تمني عن الحاضر ياخد ماضي بسيط، وتمني عن الماضي ياخد ماضي تام، والشكوى من تصرف حد تاخد would. If only نفس القواعد بس أقوى في الإحساس.',
+    timelineDescription: 'أمنيات غير واقعية في الحاضر أو ندم على الماضي.',
+    imageUrl: ONLINE_IMAGES.grammar.conditionals,
+    imageAlt: 'Person looking at the horizon wishing for a different reality',
+    keyUsagePoints: [
+      'تمني عن الحاضر: wish + ماضي بسيط: I wish I lived near the sea (بس الحقيقة مش ساكن).',
+      'تمني عن الماضي: wish + ماضي تام: I wish I had studied harder (ندم).',
+      'شكوى وتمني تغيير: wish + would: I wish you would listen to me.',
+      'في الجمل الرسمية: I wish I were أصح من I wish I was.'
+    ],
+    egyptianTips: [
+      'قاعدة الرجوع زمن واحد ورا: حاضر؟ استخدم ماضي بسيط. ماضي؟ استخدم ماضي تام.',
+      'If only معناها يا ريت بس بقوة أكبر: If only I had more time = يا ريت كان عندي وقت أكتر.',
+      'wish + would بتستخدمها لما بتزعق من تصرف حد تاني: I wish the weather would change.'
+    ],
+    commonTraps: [
+      'فخ استخدام المضارع بعد wish: الخطأ I wish I have a car، الصواب: I wish I had a car.',
+      'فخ would مع نفس الفاعل للتمني الشخصي: الخطأ I wish I would be taller، الصواب: I wish I were taller.',
+      'فخ نسيان had للندم: الخطأ I wish I didn\'t miss the bus (لو الندم على ماضي بعيد)، الأدق: I wish I hadn\'t missed the bus.'
+    ],
+    examples: [
+      {
+        en: 'I wish I spoke English fluently; it would open so many doors for me.',
+        ar: 'يا ريتني بتكلم إنجليزي بطلاقة؛ ده كان هيفتحلي أبواب كتير.',
+        highlight: 'I wish I spoke',
+        context: 'تمني عن وضع حاضر غير حقيقي بماضي بسيط'
+      },
+      {
+        en: 'She wishes she had accepted that job offer last year.',
+        ar: 'نفسها تكون قبلت عرض الشغل ده السنة اللي فاتت.',
+        highlight: 'had accepted',
+        context: 'ندم على قرار ماضي بماضي تام'
+      },
+      {
+        en: 'If only the traffic in Cairo would improve, life would be much easier.',
+        ar: 'يا ريت زحمة القاهرة تتحسن، الحياة كانت هتبقى أسهل بكتير.',
+        highlight: 'If only ... would improve',
+        context: 'شكوى وتمني تغيير بـ would'
+      },
+      {
+        en: 'I wish I were on a beach in Alexandria right now instead of studying.',
+        ar: 'يا ريتني على شط إسكندرية دلوقتي بدل المذاكرة.',
+        highlight: 'I wish I were',
+        context: 'الصيغة الرسمية were مع جميع الضمائر'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'I wish I ______ taller. All my friends are taller than me.',
+        options: ['am', 'were', 'would be', 'will be'],
+        correct: 1,
+        explanation: 'تمني عن الحاضر يأخذ ماضي بسيط، و were هي الصيغة المثلى.'
+      },
+      {
+        question: 'He wishes he ______ the exam more seriously last month.',
+        options: ['took', 'takes', 'had taken', 'would take'],
+        correct: 2,
+        explanation: 'ندم على الماضي يستلزم الماضي التام: had taken.'
+      },
+      {
+        question: 'I wish it ______ raining. I want to go out.',
+        options: ['stops', 'stopped', 'would stop', 'had stopped'],
+        correct: 2,
+        explanation: 'الرغبة في تغيير موقف مزعج خارج عن إرادتك تأخذ would + مصدر.'
+      }
+    ]
+  },
+  {
+    id: 'mixed-conditionals',
+    order: 37,
+    category: 'حالات الشرط',
+    categoryEn: 'Mixed Conditionals',
+    titleAr: 'الجمل الشرطية المختلطة: لما الماضي يأثر على الحاضر',
+    titleEn: 'Mixed Conditionals',
+    level: 'C1 - متقدم',
+    goldenFormula: 'If + past perfect, would + base verb (ماضي غير حاضر) | If + past simple, would have + V3 (حاضر غير ماضي)',
+    negativeFormula: "If I hadn't studied, I wouldn't be confident now.",
+    questionFormula: 'How would your life be different if you had...?',
+    summaryAr: 'المستوى المتقدم من الـ if: خلط زمنين في جملة واحدة. أشهر صورة: شرط في الماضي محصلش ونتيجته في الحاضر: If I had studied medicine, I would be a doctor now. التركيبة دي علامة الطلاقة الحقيقية في المحادثة والامتحانات الدولية.',
+    timelineDescription: 'ربط أحداث ماضية بنتائج حاضرة، أو صفات دائمة بنتائج ماضية.',
+    imageUrl: ONLINE_IMAGES.grammar.conditionals,
+    imageAlt: 'Timeline showing a past decision affecting the present',
+    keyUsagePoints: [
+      'النوع الأول: If + past perfect + would + مصدر: ماضي محصلش أثره حاضر: If I had saved money, I would be rich now.',
+      'النوع التاني: If + past simple + would have + V3: صفة دائمة أثرت على الماضي: If I were braver, I would have applied.',
+      'الفرق الجوهري: بص على زمن النتيجة: now أو today يبقى would + مصدر.',
+      'بتلاقيها بكثرة في كلام الندم الواقعي وتحليل القرارات الحياتية.'
+    ],
+    egyptianTips: [
+      'اختصرها كده: الشرط دايماً ماضي، بس النتيجة هي اللي بتقرر: لو النتيجة دلوقتي استخدم would + مصدر، لو في الماضي استخدم would have + V3.',
+      'كلمة now أو today في آخر الجملة هي العلامة المميزة للنوع الأول.',
+      'متخافش من طول الجملة: رتبها في دماغك شرط ثم نتيجة، والزمن هيضبط نفسه.'
+    ],
+    commonTraps: [
+      'فخ استخدام النوع التالت كامل مع نتيجة حاضرة: الخطأ If I had studied, I would have a job now (تصلح لكنها تعني نتيجة ماضية)، الأدق للحاضر: I would have a job now مع would + مصدر: If I had studied, I would have... انتبه: الصح هنا would have مش would have had إلا للملكية.',
+      'فخ الخلط: الخطأ If I studied harder, I would be passed، الصواب: If I had studied harder, I would pass / would have passed.',
+      'فخ will بعد if: الخطأ If I will have time، الصواب: If I had time (في الشرط غير الحقيقي).'
+    ],
+    examples: [
+      {
+        en: 'If I had learned English when I was younger, I would be working abroad now.',
+        ar: 'لو كنت اتعلمت إنجليزي وأنا صغير، كنت هبقى شغال بره دلوقتي.',
+        highlight: 'had learned ... would be working',
+        context: 'شرط ماضي + نتيجة حاضرة: أشهر صورة للشرط المختلط'
+      },
+      {
+        en: 'If she weren\'t so talented, she wouldn\'t have won the scholarship last year.',
+        ar: 'لو مكانتش موهوبة كده، مكانتش كسبت المنحة السنة اللي فاتت.',
+        highlight: "weren't ... wouldn't have won",
+        context: 'صفة دائمة (حاضر) + نتيجة ماضية'
+      },
+      {
+        en: 'If we had booked the tickets earlier, we wouldn\'t be paying double the price today.',
+        ar: 'لو كنا حجزنا التذاكر بدري، مكناش هندفع الضعف النهاردة.',
+        highlight: 'had booked ... wouldn\'t be paying',
+        context: 'قرار ماضي أثره المالي مستمر في الحاضر'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'If I had taken that course, I ______ much more confident speaking English today.',
+        options: ['would have been', 'would be', 'will be', 'am'],
+        correct: 1,
+        explanation: 'النتيجة في الحاضر (today) تأخذ would + مصدر: would be.'
+      },
+      {
+        question: 'If he were more organized, he ______ the deadline last week.',
+        options: ['wouldn\'t miss', 'wouldn\'t have missed', 'didn\'t miss', 'won\'t miss'],
+        correct: 1,
+        explanation: 'صفة دائمة (were) مع نتيجة ماضية (last week) تأخذ would have + V3.'
+      },
+      {
+        question: 'If they had invested in their education, they ______ in a better position now.',
+        options: ['would have been', 'will be', 'would be', 'are'],
+        correct: 2,
+        explanation: 'now تشير لنتيجة حاضرة: would be.'
+      }
+    ]
+  },
+
+  {
+    id: 'linking-words',
+    order: 38,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Connectors',
+    titleAr: 'أدوات الربط: السر اللي بيخلي كتابتك وكلامك مترابط',
+    titleEn: 'Linking Words & Connectors',
+    level: 'B1 - متوسط',
+    goldenFormula: 'although + sentence | despite + noun/gerund | however, + sentence | so / therefore + result',
+    negativeFormula: 'despite / in spite of + noun (NOT: despite of)',
+    questionFormula: 'How do you connect two contrasting ideas?',
+    summaryAr: 'الفرق بين كلام مكسّر وكلام مترابط هو أدوات الربط. لكن في فخاخ شهيرة: although و but ممنوع يجوا مع بعض، و despite ممنوع تاخد of، و however بتحتاج فاصلة. القواعد الصغيرة دي بتفرق جداً في الكتابة الأكاديمية والآيلتس.',
+    timelineDescription: 'ربط الأفكار في الكتابة والمحادثة بشكل منطقي متسلسل.',
+    imageUrl: ONLINE_IMAGES.grammar.gerundsInfinitives,
+    imageAlt: 'Connected chain links representing logical flow of ideas',
+    keyUsagePoints: [
+      'التناقض: although/even though + جملة كاملة، لكن despite/in spite of + اسم أو gerund.',
+      'النتيجة: so (غير رسمي) و therefore/as a result (رسمي) مع فاصلة.',
+      'الإضافة: moreover / furthermore / in addition للكتابة الرسمية.',
+      'السبب: because + جملة، لكن because of / due to + اسم.'
+    ],
+    egyptianTips: [
+      'أهم قاعدة: although و but زي بعض بالظبط، فمتحطهمش في نفس الجملة: اختار واحد بس.',
+      'despite لوحدها أبداً: مفيش despite of. عايز of؟ استخدم in spite of.',
+      'because وراها جملة كاملة، و because of وراها اسم: because it rained / because of the rain.'
+    ],
+    commonTraps: [
+      'فخ although + but: الخطأ Although it was raining, but we went out، الصواب: Although it was raining, we went out.',
+      'فخ despite of: الخطأ Despite of the traffic، الصواب: Despite the traffic / In spite of the traffic.',
+      'فخ because of + جملة: الخطأ because of I was late، الصواب: because I was late / because of my delay.'
+    ],
+    examples: [
+      {
+        en: 'Although the lesson was difficult, all the students understood the main idea.',
+        ar: 'بالرغم إن الدرس كان صعب، كل الطلاب فهموا الفكرة الأساسية.',
+        highlight: 'Although',
+        context: 'although + جملة كاملة بدون but'
+      },
+      {
+        en: 'Despite living far from the academy, he never misses a class.',
+        ar: 'بالرغم إنه ساكن بعيد عن الأكاديمية، عمره ما فوّت حصة.',
+        highlight: 'Despite living',
+        context: 'despite + gerund (فعل في ing)'
+      },
+      {
+        en: 'The course was expensive; however, it was worth every pound.',
+        ar: 'الكورس كان غالي؛ بس، كان يستاهل كل قرش.',
+        highlight: 'however',
+        context: 'however بين جملتين مع فاصلة منقوطة وفاصلة'
+      },
+      {
+        en: 'She passed the speaking test because of her daily practice with a partner.',
+        ar: 'نجحت في اختبار المحادثة بسبب تمرنها اليومي مع شريك.',
+        highlight: 'because of',
+        context: 'because of + عبارة اسمية'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: '______ it was very late, they continued studying for the exam.',
+        options: ['Despite', 'Although', 'But', 'However'],
+        correct: 1,
+        explanation: 'قبل الجملة الكاملة (it was very late) نستخدم Although.'
+      },
+      {
+        question: 'She succeeded ______ her lack of experience.',
+        options: ['despite of', 'although', 'in spite of', 'because'],
+        correct: 2,
+        explanation: 'قبل العبارة الاسمية نستخدم in spite of أو despite (بدون of).'
+      },
+      {
+        question: 'He was tired; ______, he finished all his homework before bed.',
+        options: ['because', 'although', 'therefore', 'despite'],
+        correct: 2,
+        explanation: 'التعب هو السبب وإنهاء الواجب هو النتيجة، فالرابط المنطقي therefore (لذلك).'
+      }
+    ]
+  },
+
+  {
+    id: 'phrasal-verbs-mastery',
+    order: 39,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Phrasal Verbs',
+    titleAr: 'الأفعال المركبة: لغة الأمريكاني الحقيقية اللي مش في الكتب',
+    titleEn: 'Phrasal Verbs Mastery',
+    level: 'B1 - متوسط',
+    goldenFormula: 'verb + particle (give up, look after, put off) | separable: pick it up | inseparable: look after it',
+    negativeFormula: "don't give up / never put off",
+    questionFormula: 'Did you figure it out? / Are you looking forward to it?',
+    summaryAr: 'الأفعال المركبة هي قلب الإنجليزي المحكي: فعل + حرف صغير بيغير المعنى كلياً. give معناها يعطي، لكن give up معناها يستسلم. إتقان الأشهر منها بيخلي كلامك طبيعي جداً، وهي أساس الفهم في الأفلام والمحادثات الحقيقية.',
+    timelineDescription: 'مفردات المحادثة اليومية الطبيعية في كل المواقف.',
+    imageUrl: ONLINE_IMAGES.onlineTechLecture,
+    imageAlt: 'Casual conversation full of natural phrasal verbs',
+    keyUsagePoints: [
+      'الفعل المركب معناه جديد كلياً: look up (يبحث)، look after (يرعى)، look forward to (يتشوق لـ).',
+      'قابل للفصل: الضمير يجي في النص دايماً: pick it up مينفعش pick up it.',
+      'غير قابل للفصل: run into someone، get over an illness.',
+      'looking forward to الـ to فيها حرف جر، فبعدها gerund: I look forward to meeting you.'
+    ],
+    egyptianTips: [
+      'متترجمش كل كلمة لوحدها: put off معناها يأجل ومش ليها علاقة بالوضع أو الإطفاء.',
+      'احفظها في جملة من يومك: I gave up sugar = بطلت سكر. كده مش هتنساها.',
+      'أشهر 10 بداية: get up, go on, come back, find out, give up, look for, put on, take off, turn on, work out.'
+    ],
+    commonTraps: [
+      'فخ الضمير في الآخر مع القابل للفصل: الخطأ I picked up it، الصواب: I picked it up.',
+      'فخ المصدر بعد look forward to: الخطأ I look forward to meet you، الصواب: to meeting you.',
+      'فخ الترجمة الحرفية: الخطأ ترجمة give up على إنها يعطي لفوق، الصواب: يستسلم أو يقلع عن عادة.'
+    ],
+    examples: [
+      {
+        en: 'Never give up on your dream of speaking English fluently, no matter how hard it gets.',
+        ar: 'متستسلمش أبداً عن حلمك إنك تتكلم إنجليزي بطلاقة، مهما كان صعب.',
+        highlight: 'give up on',
+        context: 'الاستسلام عن هدف - من أشهر الأفعال المركبة'
+      },
+      {
+        en: 'I came across an amazing English podcast while I was looking for something else.',
+        ar: 'صادفت بودكاست إنجليزي مذهل وأنا بدور على حاجة تانية خالص.',
+        highlight: 'came across',
+        context: 'المصادفة غير المتوقعة - غير قابل للفصل'
+      },
+      {
+        en: 'Can you put the meeting off until Friday? I have too much work this week.',
+        ar: 'ممكن تأجل الاجتماع ليوم الجمعة؟ عندي شغل كتير الأسبوع ده.',
+        highlight: 'put ... off',
+        context: 'التأجيل - قابل للفصل والاسم جاء في النص'
+      },
+      {
+        en: 'It took me two weeks to get over the flu and go back to work.',
+        ar: 'خدت مني أسبوعين عشان أتعافى من الأنفلونزا وأرجع الشغل.',
+        highlight: 'get over',
+        context: 'التعافي من مرض أو صدمة - غير قابل للفصل'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'I don\'t know this word. I will ______ in the dictionary.',
+        options: ['look after it', 'look it up', 'look it forward', 'look over it'],
+        correct: 1,
+        explanation: 'البحث عن معنى كلمة هو look up، وهو قابل للفصل فالضمير يأتي في الوسط: look it up.'
+      },
+      {
+        question: 'We are really looking forward to ______ you at the academy.',
+        options: ['meet', 'meeting', 'met', 'meets'],
+        correct: 1,
+        explanation: 'بعد look forward to يأتي الفعل في صورة gerund: meeting.'
+      },
+      {
+        question: 'The plane ______ at 6 AM, so we need to be at the airport by 4.',
+        options: ['takes on', 'takes off', 'takes up', 'takes after'],
+        correct: 1,
+        explanation: 'إقلاع الطائرة هو take off.'
+      }
+    ]
   }
 ];
