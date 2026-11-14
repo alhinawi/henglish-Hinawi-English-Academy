@@ -81,11 +81,31 @@ export async function searchYouTubeVideos(
       isEmbeddable: v.isEmbeddable,
     }));
 
+    // If the verified catalog has no match for this query, surface curated
+    // suggestions instead of a blank result so the learner always gets videos.
+    let finalItems = fallbackItems;
+    let totalResults = catalogResult.totalMatches;
+    let message = 'يتم عرض النتائج من مكتبة أكاديمية هناوي المعتمدة والمتحقق منها (وضع البحث المعجمي المعتمد)';
+    if (cleanQ && catalogResult.totalMatches === 0) {
+      const suggestions = queryVideoCatalog({ pageSize: 12 });
+      finalItems = suggestions.videos.map(v => ({
+        youtubeId: v.youtubeId,
+        title: v.sceneTitle,
+        description: v.sceneDescription,
+        channelTitle: v.director,
+        thumbnailUrl: v.thumbnailUrl || `https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg`,
+        publishedAt: `${v.releaseYear}-01-01T00:00:00Z`,
+        isEmbeddable: v.isEmbeddable,
+      }));
+      totalResults = suggestions.totalMatches;
+      message = 'لا توجد نتائج مطابقة لبحثك في المكتبة المعتمدة، فإليك مقاطع مقترحة متحقق منها:';
+    }
+
     const response: SearchDiscoveryResponse = {
       source: 'verified_catalog_fallback',
-      items: fallbackItems,
-      totalResults: catalogResult.totalMatches,
-      message: 'يتم عرض النتائج من مكتبة أكاديمية هناوي المعتمدة والمتحقق منها (وضع البحث المعجمي المعتمد)',
+      items: finalItems,
+      totalResults,
+      message,
     };
 
     searchCache.set(cacheKey, { timestamp: Date.now(), data: response });
