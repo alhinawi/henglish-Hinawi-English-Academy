@@ -31,6 +31,7 @@ import {
   AlertTriangle,
   RefreshCw,
   Brain,
+  Hotel,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -44,6 +45,7 @@ const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>
   'sim-doctor-appointment': Stethoscope,
   'sim-job-interview': Briefcase,
   'sim-coffee-shop': Coffee,
+  'sim-hotel-checkin': Hotel,
 };
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
