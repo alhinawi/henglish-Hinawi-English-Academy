@@ -356,7 +356,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             </div>
 
             <h2 className="text-2xl sm:text-4xl font-black text-white leading-tight">
-              أكاديمية قواعد اللغة الإنجليزية بالكامل 🦅
+              أكاديمية قواعد اللغة الإنجليزية بالكامل
             </h2>
 
             <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
@@ -390,7 +390,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               THE FLAGSHIP MASTERCLASS
             </span>
             <h2 className="text-2xl sm:text-4xl font-black text-white">
-              الكورس الرائد: كورس المستقبل التام الكامل ⚡
+              الكورس الرائد: كورس المستقبل التام الكامل
             </h2>
           </div>
 
@@ -492,7 +492,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             REAL-WORLD IMMERSION • معايشة بصرية واقعية
           </span>
           <h2 className="text-2xl sm:text-4xl font-black text-white">
-            شاهد واستوعب القواعد في مواقف الحياة الحقيقية 📸
+            شاهد واستوعب القواعد في مواقف الحياة الحقيقية
           </h2>
           <p className="text-sm text-[#b9b6d5] max-w-2xl mx-auto">
             القواعد مش مجرد معادلات في كشكول؛ دي لغة حية بيستخدمها المبرمجين،
@@ -543,7 +543,7 @@ export const HomePage: React.FC<HomePageProps> = ({
             COMMON QUESTIONS
           </span>
           <h2 className="text-2xl sm:text-4xl font-black text-white">
-            الأسئلة الشائعة حول المستقبل التام ❓
+            الأسئلة الشائعة حول المستقبل التام
           </h2>
           <p className="text-sm text-[#b9b6d5]">
             إجابات واضحة ومباشرة لأكثر الأسئلة التي يطرحها الطلاب.

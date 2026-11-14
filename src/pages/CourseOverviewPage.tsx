@@ -154,7 +154,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
             COURSE SYLLABUS
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-white">
-            خطة الدروس الـ ٨ بالتفصيل 🗺️
+            خطة الدروس الـ ٨ بالتفصيل
           </h2>
         </div>
 

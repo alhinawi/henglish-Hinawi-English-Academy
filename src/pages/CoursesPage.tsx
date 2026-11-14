@@ -36,7 +36,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
           <span>HINAWI COURSE CATALOG & ACADEMY</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          دليل الكورسات والأكاديمية الشاملة 📚
+          دليل الكورسات والأكاديمية الشاملة
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
           اختر مسارك التعليمي المفضل لتطوير قواعدك، طلاقتك النطقية، ومراسلاتك المهنية باللغة الإنجليزية بأعلى معايير الإتقان.

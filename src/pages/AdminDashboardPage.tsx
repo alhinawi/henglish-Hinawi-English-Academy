@@ -297,7 +297,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            لوحة المعلم وإدارة المناهج والطلاب 👨‍🏫
+            لوحة المعلم وإدارة المناهج والطلاب‍
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">

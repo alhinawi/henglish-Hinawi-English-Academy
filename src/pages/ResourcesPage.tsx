@@ -42,7 +42,7 @@ export const ResourcesPage: React.FC = () => {
             <span>LEARNING RESOURCES & PRINTABLES</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white">
-            المذكرات وأوراق العمل القابلة للتحميل 📥
+            المذكرات وأوراق العمل القابلة للتحميل
           </h1>
           <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
             حمل مذكرات المراجعة المركزة، أوراق التدريبات المنزلية، وجداول الأفعال الشاملة بتنسيق نصي نظيف أو اطبعها مباشرة للدراسة الورقية.

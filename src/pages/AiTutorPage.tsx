@@ -410,7 +410,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               <span>HINAWI AI TUTOR ACADEMY • المعلم الذكي التفاعلي</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-              أكاديمية الذكاء الاصطناعي التفاعلية 🦅
+              أكاديمية الذكاء الاصطناعي التفاعلية
             </h1>
             <p className="text-xs sm:text-sm text-[#dedbf4] max-w-2xl leading-relaxed">
               7 معلمين متخصصين في القواعد، المحادثة، المفردات، تدقيق الكتابة، تصحيح النطق، واختبارات الآيلتس ومقابلات العمل.

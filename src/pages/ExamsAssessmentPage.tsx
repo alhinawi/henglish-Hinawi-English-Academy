@@ -121,7 +121,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-            اختبار تحديد المستوى والتقييم الأكاديمي 🎯
+            اختبار تحديد المستوى والتقييم الأكاديمي
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">

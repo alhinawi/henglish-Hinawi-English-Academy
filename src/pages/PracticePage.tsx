@@ -43,7 +43,7 @@ export const PracticePage: React.FC = () => {
           <span>INTERACTIVE PRACTICE CENTER</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          مركز التدريبات والتمارين التفاعلية 🎯
+          مركز التدريبات والتمارين التفاعلية
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
           التطبيق العملي هو سر ثبات المعلومة. ركّب الجمل، اصطد الأخطاء النحوية، وحل أسئلة الواجب المنزلي مع التحقق الفوري.
@@ -64,7 +64,7 @@ export const PracticePage: React.FC = () => {
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
               <AlertTriangle className="w-6 h-6 text-[#ff4f9a]" />
-              <span>02 • تحدي صياد الأخطاء (Mistake Hunter) 🕵️</span>
+              <span>02 • تحدي صياد الأخطاء (Mistake Hunter)</span>
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
               اقرأ كل جملة وحدد: هل تحتوي على خطأ نحوي أم أنها صحيحة وسليمة؟
@@ -140,7 +140,7 @@ export const PracticePage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
-              <span>03 • الواجب المنزلي الشامل (Homework Lab) 📝</span>
+              <span>03 • الواجب المنزلي الشامل (Homework Lab)</span>
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
               حل التمارين بنفسك أولاً، ثم اضغط على زر إظهار الإجابات للمراجعة.
