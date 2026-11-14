@@ -272,7 +272,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            استوديو الفيديو والأفلام الإنجليزية المفتوح 🎬
+            استوديو الفيديو والأفلام الإنجليزية المفتوح
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">

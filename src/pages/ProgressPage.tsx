@@ -44,7 +44,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
             <span>LEARNER DASHBOARD & ANALYTICS</span>
           </div>
           <h1 className="text-3xl sm:text-5xl font-black text-white">
-            لوحة المتابعة وتتبع الإنجاز 🏆
+            لوحة المتابعة وتتبع الإنجاز
           </h1>
           <p className="text-sm sm:text-base text-[#b9b6d5] max-w-2xl leading-relaxed">
             شاهد تقدمك خطوة بخطوة في رحلة إتقان المستقبل التام، شارات التميز المكتسبة، وسجل درجاتك في الاختبارات.

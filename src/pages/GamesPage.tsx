@@ -68,7 +68,7 @@ export const GamesPage: React.FC = () => {
           <span>HENGLISH GAMEVERSE • كبرى ساحات الألعاب التعليمية الموثقة</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white font-['Cairo',sans-serif]">
-          ساحة الألعاب والمبارزات اللغوية 🎮
+          ساحة الألعاب والمبارزات اللغوية
         </h1>
         <p className="text-sm sm:text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
           أكثر من 30 لعبة تعليمية تفاعلية حقيقية مبنية على 55,000 كلمة و 10,000 تعبير و 5,500 جملة وقواعد اللغة الشاملة. تدرّب بالسرعة القصوى، أو ادخل في مواجهة 1v1 ضد الذكاء الاصطناعي، أو أنشئ غرفة تحدٍ جماعية بالوقت الحقيقي!
