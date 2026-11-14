@@ -25,6 +25,7 @@ import {
   Zap,
   Globe2,
   GraduationCap,
+  Mic,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -331,7 +332,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    {(() => { const CERT_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { 'cert-grammar-foundations': BookOpen, 'cert-future-mastery': Zap, 'cert-real-life-fluency': Globe2, 'cert-academy-diploma': GraduationCap }; const CertIcon = CERT_ICONS[def.id] || Award; return <CertIcon className="w-8 h-8 text-[#ffd166]" />; })()}
+                    {(() => { const CERT_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { 'cert-grammar-foundations': BookOpen, 'cert-future-mastery': Zap, 'cert-real-life-fluency': Globe2, 'cert-academy-diploma': GraduationCap, 'cert-vocab-builder': BookOpen, 'cert-speaking-confidence': Mic }; const CertIcon = CERT_ICONS[def.id] || Award; return <CertIcon className="w-8 h-8 text-[#ffd166]" />; })()}
                     <span className="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-[#ffd166]/20 text-[#ffd166]">
                       Level {def.cefrLevel}
                     </span>
