@@ -70,6 +70,28 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
       "أعلى وسام أكاديمي في المنصة يمنح للطلاب المتميزين الذين أكملوا مسارات الجرامر والمحادثة والمحاكاة.",
     badgeIcon: "",
   },
+  {
+    id: "cert-vocab-builder",
+    titleAr: "شهادة بناء المفردات المتقدمة",
+    titleEn: "Advanced Vocabulary Builder",
+    cefrLevel: "B1",
+    requiredCompletedLessons: 6,
+    minQuizAverage: 75,
+    descriptionAr:
+      "تُمنح لإتقان أهم 1,000 كلمة إنجليزية شائعة مع المرادفات والمتضادات والتعبيرات الاصطلاحية.",
+    badgeIcon: "",
+  },
+  {
+    id: "cert-speaking-confidence",
+    titleAr: "شهادة الطلاقة والمحادثة الواثقة",
+    titleEn: "Speaking Confidence & Fluency",
+    cefrLevel: "B2",
+    requiredCompletedLessons: 5,
+    minQuizAverage: 80,
+    descriptionAr:
+      "تُمنح لإتمام تدريبات المحادثة الظلية (Shadowing) والأزواج الصوتية الدقيقة ومواقف الحوار الحي بنجاح.",
+    badgeIcon: "",
+  },
 ];
 
 export const INITIAL_ISSUED_CERTIFICATES: IssuedCertificate[] = [
