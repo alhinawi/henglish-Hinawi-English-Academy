@@ -153,7 +153,7 @@ export const AdminTtsManagementSection: React.FC = () => {
             <span>مراقبة محركات الصوت السحابية والبدائل (Cloud TTS Telemetry)</span>
           </h3>
           <p className="text-xs text-slate-400 mt-1">
-            سلسلة التوجيه المعتمدة: ElevenLabs (الأساسي) → Deepgram (البديل الأول) → Cartesia (البديل الثاني) → Browser Speech (النهائي)
+            سلسلة التوجيه المعتمدة: ElevenLabs (الأساسي)Deepgram (البديل الأول)Cartesia (البديل الثاني)Browser Speech (النهائي)
           </p>
         </div>
 

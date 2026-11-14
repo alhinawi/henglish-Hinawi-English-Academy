@@ -60,7 +60,7 @@ export const TimelineVisualizer: React.FC = () => {
             <span>INTERACTIVE TIMELINE EXPLORER</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white">
-            تخيّل الخط الزمني للمستقبل التام 🕒
+            تخيّل الخط الزمني للمستقبل التام
           </h3>
           <p className="text-sm text-[#b9b6d5] mt-1">
             اضغط على أي مرحلة من المراحل الثلاثة لفهم موضع الحدث واكتماله قبل الموعد.

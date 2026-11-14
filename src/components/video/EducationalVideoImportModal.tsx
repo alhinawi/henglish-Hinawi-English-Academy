@@ -242,9 +242,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                 </div>
                 <div className="font-bold">
                   {verification.isEmbeddable ? (
-                    <span className="text-emerald-400">✓ {verification.details}</span>
+                    <span className="text-emerald-400">{verification.details}</span>
                   ) : (
-                    <span className="text-red-400">✕ {verification.details}</span>
+                    <span className="text-red-400">{verification.details}</span>
                   )}
                 </div>
               </div>
@@ -294,9 +294,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                 onChange={e => setSelectedAccent(e.target.value as any)}
                 className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs font-bold"
               >
-                <option value="American">American 🇺🇸 (أمريكية)</option>
-                <option value="British">British 🇬🇧 (بريطانية)</option>
-                <option value="International">International 🌐 (دولية)</option>
+                <option value="American">American(أمريكية)</option>
+                <option value="British">British(بريطانية)</option>
+                <option value="International">International(دولية)</option>
               </select>
             </div>
           </div>

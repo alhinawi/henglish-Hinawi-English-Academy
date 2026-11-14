@@ -8,6 +8,9 @@ import { FLASHCARD_DECK } from "../data/flashcardsData";
 import { ONLINE_IMAGES } from "../data/imageAssets";
 import { playSound, fireCelebration } from "../utils/audio";
 import {
+  Clock3,
+  ArrowLeft,
+  Sigma,
   Sparkles,
   ArrowRight,
   Clock,
@@ -223,7 +226,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 }}
                 className="absolute top-4 right-0 sm:right-4 p-3.5 rounded-2xl bg-[#171632]/95 border border-white/20 shadow-2xl text-xs backdrop-blur-md"
               >
-                <span className="text-lg">📅</span>
+                <Clock3 className="w-5 h-5 text-[#ffd166] mb-1" />
                 <b className="en block text-[#41e7ff] text-sm font-black">
                   BY 8 PM
                 </b>
@@ -241,7 +244,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 }}
                 className="absolute bottom-4 left-0 sm:left-4 p-3.5 rounded-2xl bg-[#171632]/95 border border-white/20 shadow-2xl text-xs backdrop-blur-md"
               >
-                <span className="text-lg">✨</span>
+                <Sigma className="w-5 h-5 text-[#c4ff55] mb-1" />
                 <b className="en block text-[#c4ff55] text-sm font-black">
                   WILL HAVE + V3
                 </b>
@@ -259,7 +262,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 }}
                 className="absolute top-1/2 -left-2 sm:-left-6 -translate-y-1/2 p-3 rounded-2xl bg-[#171632]/95 border border-white/20 shadow-2xl text-xs backdrop-blur-md hidden sm:block"
               >
-                <span className="text-lg">🎯</span>
+                <CheckCircle2 className="w-5 h-5 text-[#ffd166] mb-1" />
                 <b className="en block text-[#ffd166] text-xs font-black">
                   FINISHED
                 </b>
@@ -284,7 +287,7 @@ export const HomePage: React.FC<HomePageProps> = ({
               </h3>
             </div>
             <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
-              سؤال اليوم 🎯
+              سؤال اليوم
             </span>
           </div>
 
@@ -461,7 +464,7 @@ export const HomePage: React.FC<HomePageProps> = ({
                 <div className="pt-3 mt-4 border-t border-white/10 flex items-center justify-between text-xs font-bold">
                   <span className="text-[#ffd166] group-hover:translate-x-[-3px] transition-transform inline-flex items-center gap-1">
                     <span>ادرس الدرس</span>
-                    <span>←</span>
+                    <ArrowLeft className="w-3.5 h-3.5" />
                   </span>
                 </div>
               </div>

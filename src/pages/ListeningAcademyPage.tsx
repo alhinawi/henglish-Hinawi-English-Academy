@@ -168,7 +168,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
 
             <div>
               <div className="text-sm font-bold text-white flex items-center gap-2">
-                <span>{isPlaying ? 'جارٍ تشغيل المقطع الصوتي... 🔊' : 'جاهز للاستماع'}</span>
+                <span>{isPlaying ? 'جارٍ تشغيل المقطع الصوتي...' : 'جاهز للاستماع'}</span>
                 {isPlaying && (
                   <span className="flex gap-1">
                     <span className="w-1 h-3 bg-[#41e7ff] animate-bounce" />
@@ -188,7 +188,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
               }}
               className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white cursor-pointer"
             >
-              إعادة التشغيل 🔄
+              إعادة التشغيل
             </button>
           </div>
         </div>
@@ -252,7 +252,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
               disabled={!dictationInput.trim()}
               className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-50"
             >
-              فحص الإملاء والتحقق ✅
+              فحص الإملاء والتحقق
             </button>
           </div>
 
@@ -263,7 +263,7 @@ export const ListeningAcademyPage: React.FC<ListeningAcademyPageProps> = ({ onNa
                 : 'bg-[#ff4f9a]/10 border-[#ff4f9a]/40 text-[#ff8bb9]'
             }`}>
               <div className="font-black text-sm">
-                {dictationCorrect ? '🎉 إملاء سليم ومطابق تماماً!' : '💡 أوشكت على الحل الصحيح!'}
+                {dictationCorrect ? 'إملاء سليم ومطابق تماماً!' : 'أوشكت على الحل الصحيح!'}
               </div>
               <div className="en font-bold text-white pt-1">
                 الصواب: "{track.dictationSentence}"

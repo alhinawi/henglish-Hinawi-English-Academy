@@ -165,7 +165,7 @@ export const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ onExit }) => {
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <GameHud
-        title="تحدي التهجئة والإملاء ✍️"
+        title="تحدي التهجئة والإملاء"
         category="المفردات (Vocabulary)"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -194,7 +194,7 @@ export const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ onExit }) => {
             >
               <Volume2 className="w-10 h-10 group-hover:scale-110 transition-transform" />
             </button>
-            <span className="text-xs text-[#b9b6d5]">انقر للاستماع للنطق مجدداً 🔊</span>
+            <span className="text-xs text-[#b9b6d5]">انقر للاستماع للنطق مجدداً</span>
 
             {currentQ.ipa && (
               <span className="text-xs px-3 py-1 rounded-full bg-white/5 text-[#41e7ff] font-['Outfit',sans-serif] border border-white/10">
@@ -224,7 +224,7 @@ export const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ onExit }) => {
                 className="w-full py-3.5 rounded-2xl bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
               >
                 <CheckCircle2 className="w-4 h-4" />
-                <span>تأكيد الإملاء 🚀</span>
+                <span>تأكيد الإملاء</span>
               </button>
             </form>
           ) : (
@@ -237,7 +237,7 @@ export const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ onExit }) => {
                 }`}
               >
                 <div className="flex items-center justify-between font-bold text-sm">
-                  <span>{isCorrect ? 'إملاء ممتاز ودقيق! ✅' : 'تهجئة غير صحيحة ❌'}</span>
+                  <span>{isCorrect ? 'إملاء ممتاز ودقيق!' : 'تهجئة غير صحيحة'}</span>
                   <span className="text-xs text-white/50 font-normal">
                     {isCorrect ? '+25 XP' : '0 XP'}
                   </span>
@@ -260,7 +260,7 @@ export const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ onExit }) => {
                 )}
 
                 <p className="text-white/80 pt-1 border-t border-white/10 leading-relaxed">
-                  💡 {currentQ.explanationAr}
+                 {currentQ.explanationAr}
                 </p>
               </div>
 
@@ -280,7 +280,7 @@ export const SpellingBeeGame: React.FC<SpellingBeeGameProps> = ({ onExit }) => {
       {/* Results Modal */}
       {gameResult && (
         <GameResultsModal
-          title="تحدي التهجئة والإملاء ✍️"
+          title="تحدي التهجئة والإملاء"
           score={score}
           maxScore={questions.length * 25}
           accuracy={gameResult.accuracy}

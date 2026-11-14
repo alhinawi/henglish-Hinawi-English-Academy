@@ -494,9 +494,9 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                       className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-xs font-bold text-white focus:outline-none focus:border-red-500"
                     >
                       <option value="all">جميع اللكنات</option>
-                      <option value="American">American 🇺🇸 (أمريكية)</option>
-                      <option value="British">British 🇬🇧 (بريطانية)</option>
-                      <option value="International">International 🌐 (دولية)</option>
+                      <option value="American">American(أمريكية)</option>
+                      <option value="British">British(بريطانية)</option>
+                      <option value="International">International(دولية)</option>
                     </select>
                   </div>
                 </div>
@@ -542,7 +542,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                                 {scene.cefrLevel}
                               </span>
                               <span className="px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[10px] font-bold border border-white/10">
-                                {scene.accent === 'American' ? 'US 🇺🇸' : scene.accent === 'British' ? 'UK 🇬🇧' : '🌐'}
+                                {scene.accent === 'American' ? 'US' : scene.accent === 'British' ? 'UK' : ''}
                               </span>
                             </div>
 

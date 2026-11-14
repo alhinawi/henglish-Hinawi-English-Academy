@@ -167,7 +167,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                     className="p-1.5 rounded-lg bg-[#41e7ff]/20 text-[#41e7ff] hover:bg-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-[11px]"
                   >
                     <Volume2 className="w-3.5 h-3.5" />
-                    <span>تشغيل الصوت 🔊</span>
+                    <span>تشغيل الصوت</span>
                   </button>
                 )}
               </div>
@@ -242,7 +242,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
               disabled={selectedAnswers[currentQIdx] === undefined}
               className="px-8 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all"
             >
-              {currentQIdx < sessionQuestions.length - 1 ? 'السؤال التالي ➡️' : 'عرض التقرير والنتيجة 🏆'}
+              {currentQIdx < sessionQuestions.length - 1 ? 'السؤال التالي' : 'عرض التقرير والنتيجة'}
             </button>
           </div>
         </section>
@@ -373,7 +373,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                 onClick={() => onNavigate(result.recommendedPath.startRoute as PageRoute)}
                 className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-xl cursor-pointer"
               >
-                بدء المسار الموصى به الآن 🚀
+                بدء المسار الموصى به الآن
               </button>
 
               <button

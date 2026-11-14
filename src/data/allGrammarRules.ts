@@ -652,7 +652,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     imageUrl: ONLINE_IMAGES.grammar.futurePerfect,
     imageAlt: 'Calendar deadline and completed milestone roadmap',
     isMasterclass: true,
-    masterclassBadge: 'الكورس الرائد 👑 (8 دروس تفاعلية)',
+    masterclassBadge: 'الكورس الرائد  (8 دروس تفاعلية)',
     masterclassRoute: 'courses/grammar/future-perfect',
     masterclassLessonsCount: 8,
     keyUsagePoints: [

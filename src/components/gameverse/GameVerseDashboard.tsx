@@ -18,6 +18,32 @@ import {
   Flame,
   Shield,
   ArrowRight,
+  Target,
+  Scale,
+  Link2,
+  Drama,
+  Compass,
+  Gem,
+  FlaskConical,
+  Handshake,
+  Puzzle,
+  Crosshair,
+  Building2,
+  RefreshCw,
+  Repeat2,
+  HardHat,
+  ScanSearch,
+  Bug,
+  Mic,
+  Headphones,
+  Music4,
+  AudioLines,
+  Ear,
+  PenLine,
+  ListMusic,
+  Globe2,
+  BookOpen,
+  Newspaper,
 } from 'lucide-react';
 import { playSound } from '../../utils/audio';
 import { COMPLETE_GAMES_CATALOG, GameDefinition, GameCategory } from '../../data/gamesCatalogData';
@@ -26,6 +52,41 @@ interface GameVerseDashboardProps {
   onSelectGame: (gameId: string) => void;
   onOpenMultiplayer: () => void;
 }
+
+const GAME_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  'vocab-rush': Zap,
+  'word-detective': Search,
+  'synonym-hunter': Target,
+  'antonym-arena': Scale,
+  'word-association': Link2,
+  'context-master': Drama,
+  'phrasal-quest': Compass,
+  'idiom-explorer': Gem,
+  'word-formation': FlaskConical,
+  'collocation-challenge': Handshake,
+  'sentence-builder': Puzzle,
+  'error-hunter': Crosshair,
+  'v3-blitz': Zap,
+  'grammar-tower': Building2,
+  'tense-switch': RefreshCw,
+  'passive-converter': Repeat2,
+  'conditional-architect': HardHat,
+  'grammar-detective': ScanSearch,
+  'spelling-bee': Bug,
+  'pronunciation-arena': Mic,
+  'minimal-pairs': Headphones,
+  'stress-detective': Music4,
+  'phoneme-match': AudioLines,
+  'listening-detective': Ear,
+  'dictation-challenge': PenLine,
+  'listening-gap-fill': ListMusic,
+  'accent-detective': Globe2,
+  'reading-speedster': BookOpen,
+  'paragraph-builder': Newspaper,
+  'story-completion': Compass,
+  'ai-duel': Swords,
+  'flashcards': Layers,
+};
 
 export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
   onSelectGame,
@@ -45,13 +106,13 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
   };
 
   const categories = [
-    { id: 'all', label: `جميع الألعاب (${counts.all})`, icon: '🌟' },
-    { id: 'vocabulary', label: `المفردات (${counts.vocabulary})`, icon: '📚' },
-    { id: 'grammar', label: `القواعد (${counts.grammar})`, icon: '👑' },
-    { id: 'spelling', label: `التهجئة والأصوات (${counts.spelling})`, icon: '🗣️' },
-    { id: 'listening', label: `الاستماع (${counts.listening})`, icon: '🎧' },
-    { id: 'reading', label: `القراءة والتعبير (${counts.reading})`, icon: '📖' },
-    { id: 'competitive', label: `المبارزة والمنافسة (${counts.competitive})`, icon: '⚔️' },
+    { id: 'all', label: `جميع الألعاب (${counts.all})`, icon: '' },
+    { id: 'vocabulary', label: `المفردات (${counts.vocabulary})`, icon: '' },
+    { id: 'grammar', label: `القواعد (${counts.grammar})`, icon: '' },
+    { id: 'spelling', label: `التهجئة والأصوات (${counts.spelling})`, icon: '' },
+    { id: 'listening', label: `الاستماع (${counts.listening})`, icon: '' },
+    { id: 'reading', label: `القراءة والتعبير (${counts.reading})`, icon: '' },
+    { id: 'competitive', label: `المبارزة والمنافسة (${counts.competitive})`, icon: '' },
   ];
 
   const filteredGames = COMPLETE_GAMES_CATALOG.filter(game => {
@@ -76,7 +137,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
               <span>HENGLISH GAMEVERSE • كبرى ساحات الألعاب التعليمية المستقلة ({COMPLETE_GAMES_CATALOG.length} لعبة موثقة)</span>
             </div>
             <h2 className="text-2xl sm:text-4xl font-black text-white font-['Cairo',sans-serif] leading-tight">
-              ألعاب تفاعلية حقيقية مبنية على أقوى قواعد البيانات اللغوية 🎮
+              ألعاب تفاعلية حقيقية مبنية على أقوى قواعد البيانات اللغوية
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] leading-relaxed">
               تحديات لغوية ونحوية حقيقية غير مكررة مولدة ديناميكياً من 55,000 كلمة و 10,000 تعبير و 5,500 جملة وقواعد اللغة الشاملة. العب بمفردك، أو بارز روبوتات الذكاء الاصطناعي، أو تحدَّ زملاءك في غرف جماعية بالوقت الحقيقي!
@@ -92,7 +153,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
               className="py-3 px-6 rounded-2xl bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110 transition-transform hover:scale-105"
             >
               <Swords className="w-4 h-4 text-[#ffd166]" />
-              <span>مبارزة الذكاء الاصطناعي ⚔️</span>
+              <span>مبارزة الذكاء الاصطناعي</span>
             </button>
 
             <button
@@ -103,7 +164,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
               className="py-3 px-6 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#121124] font-black text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110 transition-transform hover:scale-105"
             >
               <Users className="w-4 h-4" />
-              <span>الغرفة الجماعية 👥</span>
+              <span>الغرفة الجماعية</span>
             </button>
           </div>
         </div>
@@ -163,8 +224,8 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
             <div className="space-y-3">
               {/* Header Icon & Badges */}
               <div className="flex items-center justify-between">
-                <span className="text-3xl p-2.5 rounded-2xl bg-white/5 group-hover:scale-110 transition-transform">
-                  {game.icon}
+                <span className="p-2.5 rounded-2xl bg-white/5 group-hover:scale-110 transition-transform inline-flex">
+                  {(() => { const GameIcon = GAME_ICONS[game.id] || Gamepad2; return <GameIcon className="w-7 h-7 text-[#ffd166]" />; })()}
                 </span>
                 <div className="flex items-center gap-1">
                   <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-white/5 text-[#ffd166] border border-white/10">

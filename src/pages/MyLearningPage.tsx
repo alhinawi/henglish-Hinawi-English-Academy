@@ -10,6 +10,7 @@ import {
 import { playSound, fireCelebration } from "../utils/audio";
 import {
   BookmarkCheck,
+  NotebookPen,
   BookOpen,
   Award,
   Sparkles,
@@ -140,7 +141,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              🏆 الشهادات المعتمدة
+             الشهادات المعتمدة
             </button>
           </div>
         </div>
@@ -166,7 +167,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                 {userProfile.xp.toLocaleString()} XP
               </div>
               <div className="text-[11px] text-[#b9b6d5]">
-                المرتبة: بطل الأكاديمية ⚡
+                المرتبة: بطل الأكاديمية
               </div>
             </div>
 
@@ -175,7 +176,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                 أيام التعلم المتتالية
               </div>
               <div className="text-2xl font-black text-[#ff8bb9]">
-                {userProfile.streakDays} أيام 🔥
+                {userProfile.streakDays} أيام
               </div>
               <div className="text-[11px] text-[#b9b6d5]">آخر جلسة: اليوم</div>
             </div>
@@ -232,7 +233,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
           </h2>
           {bookmarks.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
-              <div className="text-4xl">🔖</div>
+              <BookmarkCheck className="w-10 h-10 mx-auto text-[#ffd166]" />
               <p className="text-sm text-[#b9b6d5]">
                 لم تقم بحفظ أي دروس في المفضلة بعد.
               </p>
@@ -283,7 +284,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
           </h2>
           {notes.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
-              <div className="text-4xl">📝</div>
+              <NotebookPen className="w-10 h-10 mx-auto text-[#41e7ff]" />
               <p className="text-sm text-[#b9b6d5]">
                 لم تقم بتدوين أي ملاحظات شخصية بعد.
               </p>
@@ -321,7 +322,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                       onClick={() => onNavigate("lesson", note.lessonId)}
                       className="text-[#41e7ff] hover:underline cursor-pointer"
                     >
-                      فتح الدرس ⬅️
+                      فتح الدرس
                     </button>
                   </div>
                 </div>
@@ -382,7 +383,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                                 : "bg-[#ffd166]/20 text-[#ffd166]"
                             }`}
                           >
-                            {percent >= 80 ? "ممتاز 🌟" : "جيد جداً 👍"}
+                            {percent >= 80 ? "ممتاز" : "جيد جداً"}
                           </span>
                         </td>
                       </tr>

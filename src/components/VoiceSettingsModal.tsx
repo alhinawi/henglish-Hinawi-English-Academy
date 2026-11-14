@@ -142,7 +142,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
               </div>
               <div>
                 <h3 className="text-lg sm:text-xl font-black text-white">
-                  استوديو الأصوات الطبيعية (ElevenLabs AI Studio) 🎙️
+                  استوديو الأصوات الطبيعية (ElevenLabs AI Studio)
                 </h3>
                 <p className="text-xs text-[#dedbf4]">
                   اختر من بين تشكيلة أصوات حريمي ورجالي طبيعية باللكنتين الأمريكية والبريطانية
@@ -155,10 +155,10 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
           <div className="flex items-center gap-2 overflow-x-auto pb-1 shrink-0 custom-scrollbar">
             {[
               { id: "all" as FilterCategory, label: `جميع الأصوات (${VOICES_CATALOG.length})` },
-              { id: "female" as FilterCategory, label: "👩 أصوات حريمي (Female)" },
-              { id: "male" as FilterCategory, label: "👨 أصوات رجالي (Male)" },
-              { id: "US" as FilterCategory, label: "🇺🇸 لكنة أمريكية (American)" },
-              { id: "UK" as FilterCategory, label: "🇬🇧 لكنة بريطانية (British)" },
+              { id: "female" as FilterCategory, label: "أصوات حريمي (Female)" },
+              { id: "male" as FilterCategory, label: "أصوات رجالي (Male)" },
+              { id: "US" as FilterCategory, label: "لكنة أمريكية (American)" },
+              { id: "UK" as FilterCategory, label: "لكنة بريطانية (British)" },
             ].map((f) => (
               <button
                 key={f.id}
@@ -200,7 +200,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                             : "bg-white/10 text-white border-white/10"
                         }`}
                       >
-                        {voice.gender === "female" ? "👩" : "👨"}
+                        {voice.gender === "female" ? "" : ""}
                       </div>
 
                       {/* Info */}
@@ -209,7 +209,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                           <span className="font-black text-sm text-white">
                             {voice.nameAr} ({voice.name})
                           </span>
-                          <span className="text-xs">{voice.flag}</span>
+                          <span className="text-[10px] font-black tracking-wider text-[#41e7ff] bg-[#41e7ff]/10 px-1.5 py-0.5 rounded-md border border-[#41e7ff]/20">{voice.accent}</span>
                           {isSelected && (
                             <span className="px-1.5 py-0.5 rounded bg-[#ffd166]/20 text-[#ffd166] text-[10px] font-bold border border-[#ffd166]/40">
                               مُفعّل الآن

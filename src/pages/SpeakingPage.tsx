@@ -66,7 +66,7 @@ export const SpeakingPage: React.FC = () => {
         <div>
           <h3 className="text-xl font-black text-white flex items-center gap-2">
             <MessageSquare className="w-5 h-5 text-[#ffd166]" />
-            <span>أسئلة تدريب شفهي (Speak Out Loud) 🗣️</span>
+            <span>أسئلة تدريب شفهي (Speak Out Loud)</span>
           </h3>
           <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
             اقرأ السؤال، ثم حاول نطق إجابة كاملة بصوت عالي باستخدام المستقبل التام دون قراءة.
@@ -97,7 +97,7 @@ export const SpeakingPage: React.FC = () => {
                   {item.q}
                 </p>
                 <p className="text-xs text-[#b9b6d5]">
-                  💡 {item.hintAr}
+                 {item.hintAr}
                 </p>
               </div>
 

@@ -48,7 +48,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
             <span>VIDEO RESOURCES • المكتبة المرئية للدرس</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
-            <span>شروحات فيديو عالمية معتمدة 🎥</span>
+            <span>شروحات فيديو عالمية معتمدة</span>
           </h3>
           <p className="text-xs text-[#b9b6d5]">
             فيديوهات تعليمية منتقاة بعناية من كبرى القنوات العالمية لشرح: {lessonTitle}

@@ -146,7 +146,7 @@ export const WordDetectiveGame: React.FC<WordDetectiveGameProps> = ({ onExit }) 
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <GameHud
-        title="المحقق اللغوي 🕵️"
+        title="المحقق اللغوي"
         category="المفردات (Vocabulary)"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -266,7 +266,7 @@ export const WordDetectiveGame: React.FC<WordDetectiveGameProps> = ({ onExit }) 
       {/* Results Modal */}
       {gameResult && (
         <GameResultsModal
-          title="المحقق اللغوي 🕵️"
+          title="المحقق اللغوي"
           score={score}
           maxScore={questions.length * 40}
           accuracy={gameResult.accuracy}

@@ -308,7 +308,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-[#ffd166]/30 bg-linear-to-br from-[#ffd166]/5 to-transparent space-y-6">
         <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-[#ffd166]">
           <GraduationCap className="w-5 h-5 text-[#ffd166]" />
-          <span>كلام من الآخر بالمصري • أسرار مستر هناوي 🧠</span>
+          <span>كلام من الآخر بالمصري • أسرار مستر هناوي</span>
         </div>
         <h3 className="text-2xl font-black text-white">إزاي تفهم القاعدة كأنها لغتك الأم؟</h3>
         
@@ -331,7 +331,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div>
             <span className="text-xs font-bold text-[#41e7ff]">أمثلة عملية واقعية وسياقية</span>
-            <h3 className="text-2xl font-black text-white">أمثلة من بيئة العمل والحياة اليومية 💬</h3>
+            <h3 className="text-2xl font-black text-white">أمثلة من بيئة العمل والحياة اليومية</h3>
           </div>
           <span className="text-xs text-[#b9b6d5] font-mono">{rule.examples.length} أمثلة حية</span>
         </div>
@@ -375,7 +375,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-red-500/30 bg-linear-to-br from-red-500/5 to-transparent space-y-6">
         <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-red-400">
           <AlertTriangle className="w-5 h-5 text-red-400" />
-          <span>أشهر الأخطاء الشائعة للمتحدثين بالعربية ⚠️</span>
+          <span>أشهر الأخطاء الشائعة للمتحدثين بالعربية</span>
         </div>
         <h3 className="text-2xl font-black text-white">إزاي تتجنب الأخطاء اللي بيقع فيها ٩٠٪ من الطلاب؟</h3>
 
@@ -406,7 +406,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div>
             <span className="text-xs font-bold text-[#c4ff55]">التقييم السريع وفحص الاستيعاب</span>
-            <h3 className="text-2xl font-black text-white">اختبر نفسك فوراً في هذه القاعدة 🎯</h3>
+            <h3 className="text-2xl font-black text-white">اختبر نفسك فوراً في هذه القاعدة</h3>
           </div>
           <span className="text-xs font-mono text-[#ffd166]">{rule.miniQuiz.length} أسئلة قياسية</span>
         </div>
@@ -423,7 +423,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                   <span className="text-xs font-black text-[#ffd166]">السؤال {qIdx + 1}</span>
                   {hasAnswered && (
                     <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}`}>
-                      {isCorrect ? 'إجابة صحيحة ممتاز! 🎉' : 'إجابة غير صحيحة ❌'}
+                      {isCorrect ? 'إجابة صحيحة ممتاز!' : 'إجابة غير صحيحة'}
                     </span>
                   )}
                 </div>
@@ -499,7 +499,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#121128] font-black text-sm flex items-center justify-center gap-2 hover:brightness-110 shadow-xl cursor-pointer transition-transform hover:-translate-y-0.5"
         >
           <Award className="w-5 h-5" />
-          <span>تأكيد إكمال الدرس وتسجيل النقاط ⚡</span>
+          <span>تأكيد إكمال الدرس وتسجيل النقاط</span>
         </button>
 
         {nextRule ? (

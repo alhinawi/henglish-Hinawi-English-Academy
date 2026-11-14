@@ -9,7 +9,14 @@ import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { generatePassiveVoiceRound, GameQuestion } from '../../services/gameGenerationService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration, speakEnglish } from '../../utils/audio';
-import { ArrowRight, RotateCcw, Volume2, Sparkles, CheckCircle2 } from 'lucide-react';
+import {
+  ArrowRight,
+  RotateCcw,
+  Volume2,
+  Sparkles,
+  CheckCircle2,
+  Loader2,
+} from 'lucide-react';
 
 interface PassiveVoiceConverterGameProps {
   onExit: () => void;
@@ -163,7 +170,7 @@ export const PassiveVoiceConverterGame: React.FC<PassiveVoiceConverterGameProps>
   if (isLoading) {
     return (
       <div className="glass-panel p-12 rounded-3xl text-center space-y-4 max-w-xl mx-auto border border-white/10">
-        <div className="text-5xl animate-bounce">🔄</div>
+        <Loader2 className="w-12 h-12 mx-auto text-[#41e7ff] animate-spin" />
         <h3 className="text-xl font-black text-white font-['Cairo',sans-serif]">
           جارٍ تحميل تحديات المبني للمجهول...
         </h3>
@@ -177,7 +184,7 @@ export const PassiveVoiceConverterGame: React.FC<PassiveVoiceConverterGameProps>
   return (
     <div className="max-w-3xl mx-auto space-y-6 text-right">
       <GameHud
-        title="محول المبني للمجهول 🔄"
+        title="محول المبني للمجهول"
         category="grammar"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -273,7 +280,7 @@ export const PassiveVoiceConverterGame: React.FC<PassiveVoiceConverterGameProps>
               disabled={userTiles.length === 0}
               className="w-full py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-base cursor-pointer shadow-lg hover:brightness-110 disabled:opacity-40 transition-all"
             >
-              تحقق من صحة الترتيب ✓
+              تحقق من صحة الترتيب
             </button>
           ) : (
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-3 animate-in fade-in">

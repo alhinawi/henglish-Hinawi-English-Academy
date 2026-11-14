@@ -185,7 +185,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       level: "C1",
       progress: 100,
       quizzesPassed: 20,
-      status: "أتم المنهج 👑",
+      status: "أتم المنهج",
     },
   ]);
 
@@ -206,8 +206,8 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       duration: "ساعتان",
       rating: 5.0,
       studentsCount: 1,
-      tag: "كورس جديد ✨",
-      icon: "📚",
+      tag: "كورس جديد",
+      icon: "",
     };
 
     setCourses((prev) => [newCourse, ...prev]);
@@ -333,7 +333,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              إضافة درس تفاعلي جديد ✍️
+              إضافة درس تفاعلي جديد
             </button>
 
             <button
@@ -392,7 +392,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Cpu className="w-4 h-4" />
-              <span>إدارة الذكاء الاصطناعي (AI Router) 🤖</span>
+              <span>إدارة الذكاء الاصطناعي (AI Router)</span>
             </button>
 
             <button
@@ -407,7 +407,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Volume2 className="w-4 h-4" />
-              <span>محركات الصوت السحابية (Cloud TTS) 🎙️</span>
+              <span>محركات الصوت السحابية (Cloud TTS)</span>
             </button>
           </div>
         </div>
@@ -529,7 +529,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
               {formSaved && (
                 <div className="p-3 rounded-xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-                  ✅ تم إنشاء الكورس وإضافته لقائمة الكورسات النشطة بنجاح!
+                 تم إنشاء الكورس وإضافته لقائمة الكورسات النشطة بنجاح!
                 </div>
               )}
             </form>
@@ -708,7 +708,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
             {lessonSaved && (
               <div className="p-4 rounded-2xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-                🎉 تم حفظ الدرس وإضافته إلى المنهج بنجاح! يمكن للطلاب دراسته
+               تم حفظ الدرس وإضافته إلى المنهج بنجاح! يمكن للطلاب دراسته
                 الآن.
               </div>
             )}
@@ -838,11 +838,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     <div className="text-[11px] pt-1">
                       {isValidYouTubeId(extractYouTubeId(vidUrl) || "") ? (
                         <span className="text-[#c4ff55] font-bold">
-                          ✅ معرف يوتيوب صالح: {extractYouTubeId(vidUrl)}
+                         معرف يوتيوب صالح: {extractYouTubeId(vidUrl)}
                         </span>
                       ) : (
                         <span className="text-[#ff4f9a] font-bold">
-                          ⚠️ الرابط أو المعرف غير صالح
+                         الرابط أو المعرف غير صالح
                         </span>
                       )}
                     </div>
@@ -911,13 +911,13 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
               {vidError && (
                 <div className="p-3 rounded-xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-xs font-bold">
-                  ⚠️ {vidError}
+                 {vidError}
                 </div>
               )}
 
               {vidSaved && (
                 <div className="p-3 rounded-xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-                  ✅ تم التحقق من الفيديو وإضافته إلى قائمة موارد المنهج بنجاح!
+                 تم التحقق من الفيديو وإضافته إلى قائمة موارد المنهج بنجاح!
                 </div>
               )}
 
@@ -948,7 +948,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   onClick={() => setPreviewVideo(null)}
                   className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold cursor-pointer"
                 >
-                  إغلاق المعاينة ✕
+                  إغلاق المعاينة
                 </button>
               </div>
 
@@ -1166,7 +1166,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 {ev.phoneticTipAr && (
                   <div className="p-3 rounded-xl bg-[#9b7bff]/15 border border-[#9b7bff]/30 text-xs text-[#dedbf4]">
-                    💡 <strong className="text-[#9b7bff]">ملاحظة صوتية للمتعلم: </strong>
+                   <strong className="text-[#9b7bff]">ملاحظة صوتية للمتعلم: </strong>
                     {ev.phoneticTipAr}
                   </div>
                 )}

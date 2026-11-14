@@ -35,7 +35,7 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     minQuizAverage: 70,
     descriptionAr:
       "تُمنح للطلاب الذين أتموا دراسة واجتياز اختبارات أزمنة المضارع والماضي البسيط بنجاح.",
-    badgeIcon: "📜",
+    badgeIcon: "",
   },
   {
     id: "cert-future-mastery",
@@ -46,7 +46,7 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     minQuizAverage: 75,
     descriptionAr:
       "الشهادة التخصصية المعتمدة لإتقان صيغ المستقبل التام، قواعد By the time، واختبارات المواعيد النهائية.",
-    badgeIcon: "⚡",
+    badgeIcon: "",
   },
   {
     id: "cert-real-life-fluency",
@@ -57,7 +57,7 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     minQuizAverage: 80,
     descriptionAr:
       "تُمنح لإتقان مهارات الحوار التفاعلي في المطار، الفندق، المطعم، والمواقف الطارئة.",
-    badgeIcon: "🌍",
+    badgeIcon: "",
   },
   {
     id: "cert-academy-diploma",
@@ -68,7 +68,7 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     minQuizAverage: 85,
     descriptionAr:
       "أعلى وسام أكاديمي في المنصة يمنح للطلاب المتميزين الذين أكملوا مسارات الجرامر والمحادثة والمحاكاة.",
-    badgeIcon: "🏆",
+    badgeIcon: "",
   },
 ];
 

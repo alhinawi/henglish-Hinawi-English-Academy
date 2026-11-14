@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import { COURSES_CATALOG, CourseItem } from '../data/coursesData';
 import { PageRoute } from '../types';
 import { playSound } from '../utils/audio';
-import { BookOpen, Star, Clock, Users, ArrowRight, Sparkles, Filter } from 'lucide-react';
+import { BookOpen, Star, Clock, Users, ArrowRight, Sparkles, Filter, Rocket, RefreshCw, GitBranch, Cpu, FileText, Mic2 } from 'lucide-react';
+
+const COURSE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  'future-perfect': Rocket,
+  'present-perfect': RefreshCw,
+  'conditionals': GitBranch,
+  'tech-english': Cpu,
+  'business-writing': FileText,
+  'ielts-speaking': Mic2,
+};
 
 interface CoursesPageProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
@@ -47,7 +56,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
       <div className="relative rounded-3xl overflow-hidden border border-[#41e7ff]/40 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(65,231,255,0.1)]">
         <div className="space-y-2">
           <span className="text-xs font-black px-3 py-1 rounded-full bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30">
-            أكاديمية القواعد الكبرى 🦅
+            أكاديمية القواعد الكبرى
           </span>
           <h2 className="text-xl sm:text-2xl font-black text-white">
             هل تبحث عن شرح كل أزمنة وقواعد الإنجليزي بالترتيب؟
@@ -134,8 +143,8 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
               <div>
                 {/* Course Title & Icon */}
                 <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl shrink-0 p-2 rounded-xl bg-white/5 border border-white/10">
-                    {course.icon}
+                  <span className="shrink-0 p-2 rounded-xl bg-white/5 border border-white/10 inline-flex">
+                    {(() => { const CourseIcon = COURSE_ICONS[course.id] || BookOpen; return <CourseIcon className="w-6 h-6 text-[#41e7ff]" />; })()}
                   </span>
                   <div>
                     <h3 className="text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors leading-snug">

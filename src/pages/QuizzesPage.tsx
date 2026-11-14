@@ -76,7 +76,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
         question: q.prompt,
         options: q.options,
         answer: q.correctAnswerIndex ?? 0,
-        explanation: q.explanationAr + (q.distractorNotesAr && q.distractorNotesAr.length > 0 ? '\n\n💡 تحليل الخيارات الخاطئة:\n• ' + q.distractorNotesAr.join('\n• ') : ''),
+        explanation: q.explanationAr + (q.distractorNotesAr && q.distractorNotesAr.length > 0 ? '\n\nتحليل الخيارات الخاطئة:\n• ' + q.distractorNotesAr.join('\n• ') : ''),
         topic: q.topic || aiTopic,
         difficulty: q.difficulty === 'easy' ? 'beginner' : q.difficulty === 'hard' ? 'advanced' : 'intermediate',
       }));
@@ -123,7 +123,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             }`}
           >
             <Brain className="w-4 h-4" />
-            <span>مولّد الكويزات بالذكاء الاصطناعي ✨</span>
+            <span>مولّد الكويزات بالذكاء الاصطناعي</span>
           </button>
 
           <button
@@ -233,7 +233,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4" />
-                    <span>توليد كويز جديد فوراً ✨</span>
+                    <span>توليد كويز جديد فوراً</span>
                   </>
                 )}
               </button>
@@ -241,7 +241,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
 
             {generationError && (
               <div className="p-3 rounded-xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-xs font-bold">
-                ⚠️ {generationError}
+               {generationError}
               </div>
             )}
           </div>

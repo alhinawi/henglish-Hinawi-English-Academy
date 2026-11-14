@@ -407,7 +407,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             <div className="p-2 rounded-xl bg-white/5">
               <div className="text-[10px] text-[#b9b6d5]">أيام متتالية</div>
               <div className="text-base font-black text-[#ffd166]">
-                {userProfile.streakDays} أيام 🔥
+                {userProfile.streakDays} أيام
               </div>
             </div>
           </div>
@@ -447,7 +447,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
 
             <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
-              منهج متكامل مصنف عبر 6 مستويات (A1 → C2) و 12 قسماً واقعياً. مزوّد بترجمة مصرية أصيلة، نطق صوتي متقدم، ميكروفون لتقييم النطق، و 15 نمط تعلّم مع تكرار متباعد SM-2.
+              منهج متكامل مصنف عبر 6 مستويات (A1C2) و 12 قسماً واقعياً. مزوّد بترجمة مصرية أصيلة، نطق صوتي متقدم، ميكروفون لتقييم النطق، و 15 نمط تعلّم مع تكرار متباعد SM-2.
             </p>
 
             {/* CEFR mini pills */}
@@ -493,7 +493,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </div>
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ff4f9a]/20 text-[#ff4f9a] border border-[#ff4f9a]/40 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>استوديو تفاعلي مميز 🎬</span>
+                <span>استوديو تفاعلي مميز</span>
               </span>
             </div>
 
