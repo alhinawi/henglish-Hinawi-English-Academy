@@ -133,10 +133,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
               titleEn: 'Future Tenses',
               items: [
                 {
-                  label: 'المستقبل التام ⚡',
+                  label: 'المستقبل التام ',
                   labelEn: 'Future Perfect',
                   route: 'courses/grammar/future-perfect',
-                  badge: 'ماستر كلاس 👑',
+                  badge: 'ماستر كلاس ',
                   isFlagship: true,
                 },
                 {
@@ -246,35 +246,35 @@ export const Sidebar: React.FC<SidebarProps> = ({
           icon: Compass,
         },
         {
-          label: 'مكتبة 5,500 جملة 📚',
+          label: 'مكتبة 5,500 جملة ',
           labelEn: '5,500 Sentences',
           route: 'sentences' as PageRoute,
           icon: BookText,
           badge: '5,500 جملة',
         },
         {
-          label: 'اتعلم من الأفلام 🎬',
+          label: 'اتعلم من الأفلام ',
           labelEn: 'Movie Studio',
           route: 'movies' as PageRoute,
           icon: Film,
           badge: 'ستوديو AI',
         },
         {
-          label: 'ترجمة (استوديو AI) 🌐',
+          label: 'ترجمة (استوديو AI) ',
           labelEn: 'Translation',
           route: 'translation' as PageRoute,
           icon: Languages,
           badge: 'AI رائد',
         },
         {
-          label: 'المعلم الذكي AI 🤖',
+          label: 'المعلم الذكي AI ',
           labelEn: 'AI English Tutor',
           route: 'ai-tutor' as PageRoute,
           icon: Bot,
           badge: 'وكيل AI',
         },
         {
-          label: 'العالم الافتراضي 3D 🏛️',
+          label: 'العالم الافتراضي 3D ',
           labelEn: '3D Campus World',
           route: 'world-3d' as PageRoute,
           icon: Globe,
@@ -293,7 +293,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           badge: 'CEFR',
         },
         {
-          label: 'الشهادات والتوثيق 📜',
+          label: 'الشهادات والتوثيق ',
           labelEn: 'Certificates',
           route: 'certificates' as PageRoute,
           icon: Award,
@@ -324,7 +324,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         ...(userRole === 'teacher' || userRole === 'admin'
           ? [
               {
-                label: 'لوحة المعلم الأكاديمي 👨‍🏫',
+                label: 'لوحة المعلم الأكاديمي ‍',
                 labelEn: 'Teacher Dashboard',
                 route: 'teacher-dashboard' as PageRoute,
                 icon: GraduationCap,
@@ -336,7 +336,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         ...(userRole === 'admin'
           ? [
               {
-                label: 'لوحة التحكم الإدارية 🛡️',
+                label: 'لوحة التحكم الإدارية ',
                 labelEn: 'Admin Control Panel',
                 route: 'admin' as PageRoute,
                 icon: ShieldCheck,
