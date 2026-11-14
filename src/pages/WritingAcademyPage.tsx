@@ -20,7 +20,7 @@ interface WritingAcademyPageProps {
 }
 
 export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNavigate }) => {
-  const [activeTemplate, setActiveTemplate] = useState<'formal_email' | 'job_application' | 'essay'>('formal_email');
+  const [activeTemplate, setActiveTemplate] = useState<'formal_email' | 'job_application' | 'essay' | 'complaint' | 'university'>('formal_email');
   const [userInput, setUserInput] = useState('');
   const [submissionFeedback, setSubmissionFeedback] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -61,6 +61,30 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         'ابدأ بجملة افتتاحية قوية تجذب القارئ (Hook + Topic Sentence).',
         'ادعم رأيك بإحصائيات وأدلة واقعية.',
         'تجنب التعبيرات العامية مثل "cool, stuff, a lot of".',
+      ],
+    },
+    complaint: {
+      title: 'Formal Complaint Letter • خطاب شكوى رسمي',
+      subject: 'Subject: Formal Complaint Regarding Delayed Order #4821',
+      salutation: 'Dear Customer Service Manager,',
+      body: 'I am writing to express my deep dissatisfaction with the handling of my recent order. By the time your team responds, three weeks will have passed since the promised delivery date. I expect that by the end of this business week, you will have investigated the delay and will have provided a full refund to my account.',
+      signoff: 'Yours faithfully,\nAhmed Elhinawi',
+      keyRules: [
+        'حافظ على نبرة رسمية هادئة بدون غضب أو عواطف زائدة.',
+        'حدد المشكلة بالأرقام والتواريخ: order number, delivery date.',
+        'استخدم المستقبل التام لتوضيح توقعاتك الزمنية: will have investigated.',
+      ],
+    },
+    university: {
+      title: 'University Application Essay • مقال التقديم للجامعة',
+      subject: 'Personal Statement: Why I Chose Computer Science',
+      salutation: 'Opening Paragraph:',
+      body: 'Ever since I wrote my first line of code at fourteen, I have been fascinated by the power of software to solve real human problems. By the time I begin my studies at your faculty, I will have completed three independent programming projects and will have volunteered over two hundred hours teaching coding to younger students in my community.',
+      signoff: 'Closing Thought:\nI am confident that your program will refine my passion into genuine expertise.',
+      keyRules: [
+        'ابدأ بقصة شخصية قصيرة تربط شغفك بالتخصص.',
+        'اذكر إنجازات ملموسة بالأرقام: projects, volunteer hours.',
+        'اربط ماضيك بمستقبلك باستخدام المستقبل التام: will have completed.',
       ],
     },
   };
@@ -218,6 +242,36 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           }`}
         >
          مقال أكاديمي (Academic Paragraph)
+        </button>
+
+        <button
+          onClick={() => {
+            playSound('click');
+            setActiveTemplate('complaint');
+            setSubmissionFeedback(null);
+          }}
+          className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
+            activeTemplate === 'complaint'
+              ? 'bg-[#ff9a5c] text-[#0c0b20] font-black shadow-lg'
+              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
+          }`}
+        >
+         خطاب شكوى (Complaint Letter)
+        </button>
+
+        <button
+          onClick={() => {
+            playSound('click');
+            setActiveTemplate('university');
+            setSubmissionFeedback(null);
+          }}
+          className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
+            activeTemplate === 'university'
+              ? 'bg-[#c9a7ff] text-[#0c0b20] font-black shadow-lg'
+              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
+          }`}
+        >
+         مقال جامعي (Personal Statement)
         </button>
       </div>
 

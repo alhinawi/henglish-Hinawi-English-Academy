@@ -48,6 +48,24 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
       hintAr: 'أجب بنعم أو لا موضحاً موعد الانتهاء المتوقع.',
       starter: 'Yes, we will have delivered it because...',
     },
+    {
+      topic: 'Education & Learning (التعليم والمذاكرة)',
+      q: 'How many English words will you have mastered by the end of this academic year?',
+      hintAr: 'تحدث عن خطة حفظ الكلمات وعددها المستهدف قبل نهاية العام الدراسي.',
+      starter: 'By the end of this year, I will have mastered...',
+    },
+    {
+      topic: 'Family & Celebrations (العيلة والمناسبات)',
+      q: 'What special preparations will your family have made before the next big gathering?',
+      hintAr: 'صف استعدادات العيلة للعزومة أو المناسبة القادمة.',
+      starter: 'Before the gathering, my family will have...',
+    },
+    {
+      topic: 'Technology & The Future (التكنولوجيا والمستقبل)',
+      q: 'Which daily habits will AI assistants have completely changed by 2035?',
+      hintAr: 'تخيل تأثير الذكاء الاصطناعي على العادات اليومية بحلول عام 2035.',
+      starter: 'By 2035, AI assistants will have changed...',
+    },
   ];
 
   return (
