@@ -66,6 +66,24 @@ export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavi
       hintAr: 'تخيل تأثير الذكاء الاصطناعي على العادات اليومية بحلول عام 2035.',
       starter: 'By 2035, AI assistants will have changed...',
     },
+    {
+      topic: 'Health & Fitness (الصحة واللياقة)',
+      q: 'What fitness goals will you have achieved by the end of this year?',
+      hintAr: 'تحدث عن أهدافك الصحية والرياضية اللي هتكون حققتها قبل نهاية السنة.',
+      starter: 'By the end of this year, I will have...',
+    },
+    {
+      topic: 'Money & Savings (الفلوس والادخار)',
+      q: 'How much money will you have saved before your next big purchase?',
+      hintAr: 'احكي عن خطة ادخارك قبل شراء حاجة كبيرة زي عربية أو لابتوب.',
+      starter: 'Before my next big purchase, I will have saved...',
+    },
+    {
+      topic: 'Community & Environment (المجتمع والبيئة)',
+      q: 'What positive changes will your neighborhood have seen by 2030?',
+      hintAr: 'تخيل التحسينات اللي هتكون حصلت في منطقتك بحلول 2030.',
+      starter: 'By 2030, my neighborhood will have...',
+    },
   ];
 
   return (
