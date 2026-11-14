@@ -3733,6 +3733,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Learn phrases, not single words.', arEg: 'اتعلم عبارات، مش كلمات لوحدها.' }, { en: 'Keep a diary in English every day.', arEg: 'اكتب يومياتك بالإنجليزي كل يوم.' }],
   },
+  {
+    id: 'email-hbr-etiquette',
+    movieTitle: '8 Email Etiquette Tips - How to Write Better Emails at Work',
+    releaseYear: 2020,
+    director: 'Harvard Business Review',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Professional Email Rules',
+    sceneDescription: 'هارفارد بيزنس ريفيو بتلخص 8 قواعد لإيميلات شغل محترفة: الموضوع، الرد، والنبرة المناسبة.',
+    youtubeId: '1XctnF7C74s',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Harvard Business Review (Official)',
+    dialogueQuote: 'Keep your subject line clear and specific.',
+    actorName: 'HBR',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/1XctnF7C74s/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Harvard Business Review Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Keep your subject line clear and specific.', arEg: 'خلي عنوان الإيميل واضح ومحدد.', arFusha: 'خلي عنوان الإيميل واضح ومحدد.', speaker: 'Narrator', keyWords: [{ word: 'subject line', ipa: '', meaningAr: 'عنوان الإيميل', meaningEn: '' }, { word: 'specific', ipa: '', meaningAr: 'محدد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Reply to all only when everyone needs to know.', arEg: 'اعمل رد للكل بس لما الكل محتاج يعرف.', arFusha: 'اعمل رد للكل بس لما الكل محتاج يعرف.', speaker: 'Narrator', keyWords: [{ word: 'reply to all', ipa: '', meaningAr: 'رد للكل', meaningEn: '' }, { word: 'needs to know', ipa: '', meaningAr: 'محتاج يعرف', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'subject line', type: 'collocation', meaningAr: 'عنوان الإيميل', meaningEn: '', egyptianEquivalent: 'موضوع الرسالة', exampleInScene: 'Write a short subject line.' },      { term: 'reply to all', type: 'collocation', meaningAr: 'الرد على الكل', meaningEn: '', egyptianEquivalent: 'رد جماعي', exampleInScene: 'Do not reply to all by mistake.' },      { term: 'etiquette', type: 'cultural', meaningAr: 'آداب التعامل', meaningEn: '', egyptianEquivalent: 'إتيكيت', exampleInScene: 'Email etiquette matters at work.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'When should you use \'reply to all\'?', questionAr: 'امتى تستخدم reply to all؟', options: ['لما الكل محتاج يعرف الرد', 'في كل مرة', 'أبداً', 'لما تكون مستعجل'], correctIndex: 0, explanationAr: 'رد للكل بس لما كل الناس في الإيميل محتاجين فعلاً يشوفوا ردك.' }
+    ],
+    speakingLines: [{ en: 'Keep your subject line clear and specific.', arEg: 'خلي عنوان الإيميل واضح ومحدد.' }, { en: 'Reply to all only when everyone needs to know.', arEg: 'اعمل رد للكل بس لما الكل محتاج يعرف.' }],
+  },
+  {
+    id: 'email-engvid-alex',
+    movieTitle: 'How to Write Professional Emails in English - engVid',
+    releaseYear: 2019,
+    director: 'engVid',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Emails That Get Answers',
+    sceneDescription: 'أليكس من engVid بيعلمك تكتب إيميل رسمي من أول التحية لحد الختام - قوالب جاهزة للاستخدام.',
+    youtubeId: '3Tu1jN65slw',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Alex - engVid (Official)',
+    dialogueQuote: 'I am writing to inquire about the position.',
+    actorName: 'Alex',
+    characterName: 'Alex',
+    thumbnailUrl: 'https://img.youtube.com/vi/3Tu1jN65slw/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I am writing to inquire about the position.', arEg: 'بكتب عشان أسأل عن الوظيفة.', arFusha: 'بكتب عشان أسأل عن الوظيفة.', speaker: 'Alex', keyWords: [{ word: 'inquire', ipa: '', meaningAr: 'يسأل (رسمي)', meaningEn: '' }, { word: 'position', ipa: '', meaningAr: 'وظيفة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I look forward to your reply.', arEg: 'مستني ردك بفارغ الصبر.', arFusha: 'مستني ردك بفارغ الصبر.', speaker: 'Alex', keyWords: [{ word: 'look forward to', ipa: '', meaningAr: 'مستني بشوق', meaningEn: '' }, { word: 'reply', ipa: '', meaningAr: 'رد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'I am writing to...', type: 'collocation', meaningAr: 'بكتب عشان... (افتتاحية رسمية)', meaningEn: '', egyptianEquivalent: 'بكتب حضرتك', exampleInScene: 'I am writing to apply for the job.' },      { term: 'inquire', type: 'cultural', meaningAr: 'يسأل / يستفسر (رسمي)', meaningEn: '', egyptianEquivalent: 'يستفسر', exampleInScene: 'She inquired about the course.' },      { term: 'regards', type: 'cultural', meaningAr: 'تحياتي (ختام الإيميل)', meaningEn: '', egyptianEquivalent: 'تحياتي', exampleInScene: 'Best regards, Ahmed.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you start a formal email about a job?', questionAr: 'بتبدأ إيميل رسمي عن وظيفة إزاي؟', options: ['I am writing to inquire about...', 'Hey, I want the job', 'Give me the job', 'What up'], correctIndex: 0, explanationAr: 'الافتتاحية الرسمية هي I am writing to + الغرض من الإيميل.' }
+    ],
+    speakingLines: [{ en: 'I am writing to inquire about the position.', arEg: 'بكتب عشان أسأل عن الوظيفة.' }, { en: 'I look forward to your reply.', arEg: 'مستني ردك بفارغ الصبر.' }],
+  },
+  {
+    id: 'routine-bob-act-out',
+    movieTitle: 'Learn How to Talk About Your Daily Routine in English - Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'A Day in Bob\'s Life',
+    sceneDescription: 'بوب بيمثل يومه كله بالإنجليزي: من الصحيان للنوم - مفردات الروتين اليومي في سياق حقيقي.',
+    youtubeId: 'ecF1y2bI2T4',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I wake up at six and brush my teeth.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/ecF1y2bI2T4/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I wake up at six and brush my teeth.', arEg: 'بصحى الساعة ستة وبغسل سناني.', arFusha: 'بصحى الساعة ستة وبغسل سناني.', speaker: 'Bob', keyWords: [{ word: 'wake up', ipa: '', meaningAr: 'يصحى', meaningEn: '' }, { word: 'brush my teeth', ipa: '', meaningAr: 'يغسل سنانه', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'After dinner, I usually read a book.', arEg: 'بعد العشا، عادة بقرا كتاب.', arFusha: 'بعد العشا، عادة بقرا كتاب.', speaker: 'Bob', keyWords: [{ word: 'usually', ipa: '', meaningAr: 'عادة', meaningEn: '' }, { word: 'read', ipa: '', meaningAr: 'يقرا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'wake up', type: 'phrasal-verb', meaningAr: 'يصحى', meaningEn: '', egyptianEquivalent: 'يصحى', exampleInScene: 'I wake up early.' },      { term: 'brush my teeth', type: 'collocation', meaningAr: 'يغسل سنانه', meaningEn: '', egyptianEquivalent: 'يضرس', exampleInScene: 'Brush your teeth twice a day.' },      { term: 'daily routine', type: 'collocation', meaningAr: 'الروتين اليومي', meaningEn: '', egyptianEquivalent: 'برنامج اليوم', exampleInScene: 'Tell me about your daily routine.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'brush my teeth\' mean?', questionAr: 'معنى brush my teeth؟', options: ['يغسل سنانه', 'يمشط شعره', 'ياخد شاور', 'يفطر'], correctIndex: 0, explanationAr: 'brush my teeth معناها يغسل سنانه بالفرشاة.' }
+    ],
+    speakingLines: [{ en: 'I wake up at six and brush my teeth.', arEg: 'بصحى الساعة ستة وبغسل سناني.' }, { en: 'After dinner, I usually read a book.', arEg: 'بعد العشا، عادة بقرا كتاب.' }],
+  },
+  {
+    id: 'routine-bbc-episode4',
+    movieTitle: 'How to Talk About Your Daily Routine - Easy English Conversations Ep. 4',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Talking About Your Day',
+    sceneDescription: 'حلقة BBC عن الروتين اليومي: أفعال الحاضر البسيط والتعبير عن العادات بجمل سهلة.',
+    youtubeId: 'bq6GBbh3uhU',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'What time do you usually get up?',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/bq6GBbh3uhU/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'What time do you usually get up?', arEg: 'بتصحى الساعة كام عادة؟', arFusha: 'بتصحى الساعة كام عادة؟', speaker: 'Presenter', keyWords: [{ word: 'what time', ipa: '', meaningAr: 'الساعة كام', meaningEn: '' }, { word: 'get up', ipa: '', meaningAr: 'يصحى', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I never skip breakfast.', arEg: 'مبفوّتش الفطار أبداً.', arFusha: 'مبفوّتش الفطار أبداً.', speaker: 'Presenter', keyWords: [{ word: 'never', ipa: '', meaningAr: 'أبداً', meaningEn: '' }, { word: 'skip', ipa: '', meaningAr: 'يفوّت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'get up', type: 'phrasal-verb', meaningAr: 'يصحى / ينزل من السرير', meaningEn: '', egyptianEquivalent: 'يصحى', exampleInScene: 'I get up at seven.' },      { term: 'skip', type: 'cultural', meaningAr: 'يفوّت / يتخطى', meaningEn: '', egyptianEquivalent: 'يسيب', exampleInScene: 'Never skip breakfast.' },      { term: 'usually', type: 'cultural', meaningAr: 'عادة', meaningEn: '', egyptianEquivalent: 'غالباً', exampleInScene: 'I usually walk to work.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'skip breakfast\' mean?', questionAr: 'معنى skip breakfast؟', options: ['يفوّت الفطار', 'يعمل فطار', 'يفطر كتير', 'يطبخ فطار'], correctIndex: 0, explanationAr: 'skip معناها يفوّت أو ما يعملش حاجة معتادة، زي skip a meal.' }
+    ],
+    speakingLines: [{ en: 'What time do you usually get up?', arEg: 'بتصحى الساعة كام عادة؟' }, { en: 'I never skip breakfast.', arEg: 'مبفوّتش الفطار أبداً.' }],
+  },
+  {
+    id: 'podcast-bbc-breakfast',
+    movieTitle: 'Is Breakfast the Most Important Meal of the Day? - 6 Minute English',
+    releaseYear: 2022,
+    director: 'BBC Learning English',
+    genre: 'English Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Six Minutes of Real English',
+    sceneDescription: 'حلقة 6 Minute English الشهيرة عن الفطار: مفردات الأكل والصحة بنطق بريطاني واضح.',
+    youtubeId: 'C830bmzNjDc',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'They say breakfast is the most important meal of the day.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/C830bmzNjDc/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'They say breakfast is the most important meal of the day.', arEg: 'بيقولوا إن الفطار أهم وجبة في اليوم.', arFusha: 'بيقولوا إن الفطار أهم وجبة في اليوم.', speaker: 'Presenter', keyWords: [{ word: 'important', ipa: '', meaningAr: 'مهم', meaningEn: '' }, { word: 'meal', ipa: '', meaningAr: 'وجبة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Skipping it might make you feel tired.', arEg: 'تفويته ممكن يخليك تحس بتعب.', arFusha: 'تفويته ممكن يخليك تحس بتعب.', speaker: 'Presenter', keyWords: [{ word: 'might', ipa: '', meaningAr: 'ممكن', meaningEn: '' }, { word: 'tired', ipa: '', meaningAr: 'تعبان', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'meal', type: 'cultural', meaningAr: 'وجبة', meaningEn: '', egyptianEquivalent: 'أكلة', exampleInScene: 'Lunch is my favorite meal.' },      { term: 'might', type: 'cultural', meaningAr: 'ممكن / ربما', meaningEn: '', egyptianEquivalent: 'ممكن', exampleInScene: 'It might rain.' },      { term: 'tired', type: 'cultural', meaningAr: 'تعبان', meaningEn: '', egyptianEquivalent: 'مرهق', exampleInScene: 'I feel tired today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'might\' express?', questionAr: 'كلمة might بتعبر عن إيه؟', options: ['احتمال', 'تأكيد', 'نفي', 'أمر'], correctIndex: 0, explanationAr: 'might معناها ممكن أو ربما - احتمال مش مؤكد.' }
+    ],
+    speakingLines: [{ en: 'They say breakfast is the most important meal of the day.', arEg: 'بيقولوا إن الفطار أهم وجبة في اليوم.' }, { en: 'Skipping it might make you feel tired.', arEg: 'تفويته ممكن يخليك تحس بتعب.' }],
+  },
+  {
+    id: 'grammar-brian-tenses',
+    movieTitle: 'Learn All English Verb Tenses - Easiest Method',
+    releaseYear: 2021,
+    director: 'Brian Wiles',
+    genre: 'Grammar Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'All Tenses in One Chart',
+    sceneDescription: 'أسهل طريقة تفهم بيها كل الأزمنة: جدول واحد يربط الزمن بالمعنى مع أمثلة من الحياة.',
+    youtubeId: 'sCiG6rlk2Bc',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Brian Wiles (Official)',
+    dialogueQuote: 'I eat, I am eating, I have eaten.',
+    actorName: 'Brian',
+    characterName: 'Brian',
+    thumbnailUrl: 'https://img.youtube.com/vi/sCiG6rlk2Bc/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Brian Wiles Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I eat, I am eating, I have eaten.', arEg: 'أنا باكل (عادة)، باكل دلوقتي، أكلت خلاص.', arFusha: 'أنا باكل (عادة)، باكل دلوقتي، أكلت خلاص.', speaker: 'Brian', keyWords: [{ word: 'eat', ipa: '', meaningAr: 'ياكل', meaningEn: '' }, { word: 'have eaten', ipa: '', meaningAr: 'أكلت (مضارع تام)', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Use the present simple for habits.', arEg: 'استخدم المضارع البسيط للعادات.', arFusha: 'استخدم المضارع البسيط للعادات.', speaker: 'Brian', keyWords: [{ word: 'present simple', ipa: '', meaningAr: 'مضارع بسيط', meaningEn: '' }, { word: 'habits', ipa: '', meaningAr: 'عادات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'present simple', type: 'collocation', meaningAr: 'المضارع البسيط', meaningEn: '', egyptianEquivalent: 'حاضر بسيط', exampleInScene: 'Use present simple for habits.' },      { term: 'present continuous', type: 'collocation', meaningAr: 'المضارع المستمر', meaningEn: '', egyptianEquivalent: 'حاضر مستمر', exampleInScene: 'I am studying now.' },      { term: 'habit', type: 'cultural', meaningAr: 'عادة', meaningEn: '', egyptianEquivalent: 'عادة', exampleInScene: 'Reading is a good habit.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which tense do we use for habits?', questionAr: 'بنستخدم أنهي زمن للعادات؟', options: ['المضارع البسيط', 'الماضي المستمر', 'المستقبل التام', 'الماضي البعيد'], correctIndex: 0, explanationAr: 'العادات والحقائق بتتقال بالمضارع البسيط: I eat breakfast every day.' }
+    ],
+    speakingLines: [{ en: 'I eat, I am eating, I have eaten.', arEg: 'أنا باكل (عادة)، باكل دلوقتي، أكلت خلاص.' }, { en: 'Use the present simple for habits.', arEg: 'استخدم المضارع البسيط للعادات.' }],
+  },
+  {
+    id: 'grammar-lucy-16-tenses',
+    movieTitle: 'Learn ALL 16 Tenses Easily in under 30 Minutes - English with Lucy',
+    releaseYear: 2021,
+    director: 'English with Lucy',
+    genre: 'Grammar Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'The Complete Tense Map',
+    sceneDescription: 'لوسي بتلخص الـ 16 زمن في نص ساعة بأمثلة واضحة - مراجعة شاملة قبل أي امتحان.',
+    youtubeId: 'Ljjiw9mC_Cg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Lucy (Official)',
+    dialogueQuote: 'By next year, I will have finished my studies.',
+    actorName: 'Lucy',
+    characterName: 'Lucy',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ljjiw9mC_Cg/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Lucy Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'By next year, I will have finished my studies.', arEg: 'بحلول السنة الجاية، أكون خلصت دراستي.', arFusha: 'بحلول السنة الجاية، أكون خلصت دراستي.', speaker: 'Lucy', keyWords: [{ word: 'by next year', ipa: '', meaningAr: 'بحلول السنة الجاية', meaningEn: '' }, { word: 'will have finished', ipa: '', meaningAr: 'أكون خلصت (مستقبل تام)', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I had already eaten when he arrived.', arEg: 'كنت خلاص أكلت لما هو وصل.', arFusha: 'كنت خلاص أكلت لما هو وصل.', speaker: 'Lucy', keyWords: [{ word: 'had eaten', ipa: '', meaningAr: 'كان أكل (ماضي تام)', meaningEn: '' }, { word: 'arrived', ipa: '', meaningAr: 'وصل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'future perfect', type: 'collocation', meaningAr: 'المستقبل التام', meaningEn: '', egyptianEquivalent: 'مستقبل تام', exampleInScene: 'I will have finished by Friday.' },      { term: 'past perfect', type: 'collocation', meaningAr: 'الماضي التام', meaningEn: '', egyptianEquivalent: 'ماضي تام', exampleInScene: 'She had left before I came.' },      { term: 'already', type: 'cultural', meaningAr: 'بالفعل / خلاص', meaningEn: '', egyptianEquivalent: 'خلاص', exampleInScene: 'I have already eaten.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which tense: \'I had already eaten when he arrived\'?', questionAr: 'إيه الزمن في جملة I had already eaten when he arrived؟', options: ['الماضي التام', 'المضارع البسيط', 'المستقبل التام', 'الماضي المستمر'], correctIndex: 0, explanationAr: 'الماضي التام (had + تصريف تالت) للحدث اللي حصل قبل حدث تاني في الماضي.' }
+    ],
+    speakingLines: [{ en: 'By next year, I will have finished my studies.', arEg: 'بحلول السنة الجاية، أكون خلصت دراستي.' }, { en: 'I had already eaten when he arrived.', arEg: 'كنت خلاص أكلت لما هو وصل.' }],
+  },
+  {
+    id: 'grammar-rebecca-12',
+    movieTitle: 'Learn English Tenses: How to Learn ALL 12 Tenses - engVid',
+    releaseYear: 2018,
+    director: 'engVid',
+    genre: 'Grammar Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Rebecca\'s Tense System',
+    sceneDescription: 'ريبيكا من engVid بترتب الـ 12 زمن في نظام سهل الفهم - مثالية لو الأزمنة لخبطتك قبل كده.',
+    youtubeId: 'mScixcyubUY',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Rebecca - engVid (Official)',
+    dialogueQuote: 'I was cooking when you called.',
+    actorName: 'Rebecca',
+    characterName: 'Rebecca',
+    thumbnailUrl: 'https://img.youtube.com/vi/mScixcyubUY/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I was cooking when you called.', arEg: 'كنت بطبخ لما انت اتصلت.', arFusha: 'كنت بطبخ لما انت اتصلت.', speaker: 'Rebecca', keyWords: [{ word: 'was cooking', ipa: '', meaningAr: 'كان بيطبخ (ماضي مستمر)', meaningEn: '' }, { word: 'called', ipa: '', meaningAr: 'اتصل', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'She has lived here since 2010.', arEg: 'هي عايشة هنا من 2010.', arFusha: 'هي عايشة هنا من 2010.', speaker: 'Rebecca', keyWords: [{ word: 'has lived', ipa: '', meaningAr: 'عايشة (مضارع تام)', meaningEn: '' }, { word: 'since', ipa: '', meaningAr: 'من (نقطة زمنية)', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'past continuous', type: 'collocation', meaningAr: 'الماضي المستمر', meaningEn: '', egyptianEquivalent: 'ماضي مستمر', exampleInScene: 'I was sleeping at nine.' },      { term: 'since', type: 'cultural', meaningAr: 'من (نقطة زمنية محددة)', meaningEn: '', egyptianEquivalent: 'من زمن', exampleInScene: 'I have known him since school.' },      { term: 'present perfect', type: 'collocation', meaningAr: 'المضارع التام', meaningEn: '', egyptianEquivalent: 'حاضر تام', exampleInScene: 'I have finished my work.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Complete: She has lived here ___ 2010.', questionAr: 'كمل: She has lived here ___ 2010', options: ['since', 'for', 'at', 'ago'], correctIndex: 0, explanationAr: 'since بتيجي مع نقطة زمنية محددة (2010)، أما for فمع مدة (10 years).' }
+    ],
+    speakingLines: [{ en: 'I was cooking when you called.', arEg: 'كنت بطبخ لما انت اتصلت.' }, { en: 'She has lived here since 2010.', arEg: 'هي عايشة هنا من 2010.' }],
+  },
+  {
+    id: 'doc-attenborough-creatures',
+    movieTitle: 'David Attenborough: Nature\'s Most Fascinating Creatures',
+    releaseYear: 2021,
+    director: 'Free Documentary Nature',
+    genre: 'Nature Documentary',
+    cefrLevel: 'B2',
+    sceneTitle: 'The Voice of Nature',
+    sceneDescription: 'وثائقي بصوت ديفيد أتينبورو الأسطوري - إنجليزي بريطاني فصيح وبطيء مثالي لتدريب الاستماع.',
+    youtubeId: 'EYJm7hIYLSU',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'Free Documentary - Nature (Official)',
+    dialogueQuote: 'This remarkable creature has survived for millions of years.',
+    actorName: 'David Attenborough',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/EYJm7hIYLSU/hqdefault.jpg',
+    category: 'documentaries',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Free Documentary Nature Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'This remarkable creature has survived for millions of years.', arEg: 'الكائن المدهش ده عاش لملايين السنين.', arFusha: 'الكائن المدهش ده عاش لملايين السنين.', speaker: 'Narrator', keyWords: [{ word: 'remarkable', ipa: '', meaningAr: 'مدهش', meaningEn: '' }, { word: 'survived', ipa: '', meaningAr: 'عاش / نجا', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'Few places on Earth remain truly wild.', arEg: 'أماكن قليلة على الأرض فضلت برية حقيقية.', arFusha: 'أماكن قليلة على الأرض فضلت برية حقيقية.', speaker: 'Narrator', keyWords: [{ word: 'remain', ipa: '', meaningAr: 'يفضل', meaningEn: '' }, { word: 'wild', ipa: '', meaningAr: 'برية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'remarkable', type: 'cultural', meaningAr: 'مدهش / لافت', meaningEn: '', egyptianEquivalent: 'جدير بالانتباه', exampleInScene: 'A remarkable achievement.' },      { term: 'survive', type: 'cultural', meaningAr: 'ينجو / يعيش', meaningEn: '', egyptianEquivalent: 'يعيش', exampleInScene: 'They survived the winter.' },      { term: 'wild', type: 'cultural', meaningAr: 'بري', meaningEn: '', egyptianEquivalent: 'برية', exampleInScene: 'Wild animals live here.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'remarkable\' mean?', questionAr: 'معنى remarkable؟', options: ['مدهش', 'عادي', 'صغير', 'سريع'], correctIndex: 0, explanationAr: 'remarkable معناها مدهش أو لافت للانتباه - صفة مدح قوية.' }
+    ],
+    speakingLines: [{ en: 'This remarkable creature has survived for millions of years.', arEg: 'الكائن المدهش ده عاش لملايين السنين.' }, { en: 'Few places on Earth remain truly wild.', arEg: 'أماكن قليلة على الأرض فضلت برية حقيقية.' }],
+  },
+  {
+    id: 'doc-coral-paradise',
+    movieTitle: 'Forgotten Islands: The Last Coral Paradise - Free Documentary Nature',
+    releaseYear: 2022,
+    director: 'Free Documentary Nature',
+    genre: 'Nature Documentary',
+    cefrLevel: 'B2',
+    sceneTitle: 'Beneath the Waves',
+    sceneDescription: 'وثائقي عن جزر منسية وشعاب مرجانية - تصوير مبهر وتعليق صوتي إنجليزي واضح بمفردات الطبيعة.',
+    youtubeId: 'vHmL6xdkdAg',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'Free Documentary - Nature (Official)',
+    dialogueQuote: 'These reefs are home to thousands of species.',
+    actorName: 'Narrator',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/vHmL6xdkdAg/hqdefault.jpg',
+    category: 'documentaries',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Free Documentary Nature Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'These reefs are home to thousands of species.', arEg: 'الشعاب دي بيت لآلاف الأنواع.', arFusha: 'الشعاب دي بيت لآلاف الأنواع.', speaker: 'Narrator', keyWords: [{ word: 'reefs', ipa: '', meaningAr: 'شعاب مرجانية', meaningEn: '' }, { word: 'species', ipa: '', meaningAr: 'أنواع', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'The ocean hides more secrets than we imagine.', arEg: 'المحيط بيخبي أسرار أكتر مما نتخيل.', arFusha: 'المحيط بيخبي أسرار أكتر مما نتخيل.', speaker: 'Narrator', keyWords: [{ word: 'hides', ipa: '', meaningAr: 'بيخبي', meaningEn: '' }, { word: 'secrets', ipa: '', meaningAr: 'أسرار', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'reef', type: 'cultural', meaningAr: 'شعاب مرجانية', meaningEn: '', egyptianEquivalent: 'مرجان', exampleInScene: 'Coral reefs are beautiful.' },      { term: 'species', type: 'cultural', meaningAr: 'أنواع (كائنات)', meaningEn: '', egyptianEquivalent: 'فصائل', exampleInScene: 'Many species live here.' },      { term: 'hide', type: 'cultural', meaningAr: 'يخبي', meaningEn: '', egyptianEquivalent: 'يستخبى', exampleInScene: 'The cave hides treasure.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What are reefs home to?', questionAr: 'الشعاب المرجانية بيت لمين؟', options: ['آلاف الأنواع', 'الطيور بس', 'الأسماك الكبيرة بس', 'البشر'], correctIndex: 0, explanationAr: 'الشعاب المرجانية بيئة غنية بتعيش فيها آلاف الأنواع من الكائنات البحرية.' }
+    ],
+    speakingLines: [{ en: 'These reefs are home to thousands of species.', arEg: 'الشعاب دي بيت لآلاف الأنواع.' }, { en: 'The ocean hides more secrets than we imagine.', arEg: 'المحيط بيخبي أسرار أكتر مما نتخيل.' }],
+  },
 ];
 
 // Helper to get all videos
