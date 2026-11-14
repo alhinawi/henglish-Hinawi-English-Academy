@@ -3,6 +3,7 @@
 // Secure YouTube Data API v3 integration with throttling, pagination, and honest fallback
 // ==============================================================================
 
+import { getEnvVar } from '../utils/env';
 import { verifyYouTubeVideo } from './videoVerificationService';
 import { queryVideoCatalog, EducationalVideoItem } from './videoLibraryService';
 
@@ -60,7 +61,7 @@ export async function searchYouTubeVideos(
   }
   lastRequestTime = Date.now();
 
-  const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
+  const apiKey = getEnvVar('VITE_YOUTUBE_API_KEY');
 
   // If no API key is provided, or in offline/development fallback mode:
   // Provide an honest response drawn from our verified catalog

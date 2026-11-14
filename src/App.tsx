@@ -9,43 +9,43 @@ import { useProgress } from './utils/useProgress';
 import { useAuth } from './context/AuthContext';
 
 // Auth Pages
-import { LoginPage } from './pages/auth/LoginPage';
-import { RegisterPage } from './pages/auth/RegisterPage';
-import { VerifyEmailPage } from './pages/auth/VerifyEmailPage';
-import { ForgotPasswordPage } from './pages/auth/ForgotPasswordPage';
-import { ResetPasswordPage } from './pages/auth/ResetPasswordPage';
+import { LoginPage } from './views/auth/LoginPage';
+import { RegisterPage } from './views/auth/RegisterPage';
+import { VerifyEmailPage } from './views/auth/VerifyEmailPage';
+import { ForgotPasswordPage } from './views/auth/ForgotPasswordPage';
+import { ResetPasswordPage } from './views/auth/ResetPasswordPage';
 
 // Academies & Platform Pages
-import { DashboardPage } from './pages/DashboardPage';
-import { TeacherDashboardPage } from './pages/TeacherDashboardPage';
-import { GrammarAcademyPage } from './pages/GrammarAcademyPage';
-import { GrammarLessonPage } from './pages/GrammarLessonPage';
-import { VocabularyAcademyPage } from './pages/VocabularyAcademyPage';
-import { SpeakingAcademyPage } from './pages/SpeakingAcademyPage';
-import { ListeningAcademyPage } from './pages/ListeningAcademyPage';
-import { ReadingAcademyPage } from './pages/ReadingAcademyPage';
-import { WritingAcademyPage } from './pages/WritingAcademyPage';
-import { PronunciationAcademyPage } from './pages/PronunciationAcademyPage';
-import { RealLifeEnglishPage } from './pages/RealLifeEnglishPage';
-import { ExamsAssessmentPage } from './pages/ExamsAssessmentPage';
-import { MyLearningPage } from './pages/MyLearningPage';
-import { AdminDashboardPage } from './pages/AdminDashboardPage';
-import { AiTutorPage } from './pages/AiTutorPage';
-import { CertificatesPage } from './pages/CertificatesPage';
+import { DashboardPage } from './views/DashboardPage';
+import { TeacherDashboardPage } from './views/TeacherDashboardPage';
+import { GrammarAcademyPage } from './views/GrammarAcademyPage';
+import { GrammarLessonPage } from './views/GrammarLessonPage';
+import { VocabularyAcademyPage } from './views/VocabularyAcademyPage';
+import { SpeakingAcademyPage } from './views/SpeakingAcademyPage';
+import { ListeningAcademyPage } from './views/ListeningAcademyPage';
+import { ReadingAcademyPage } from './views/ReadingAcademyPage';
+import { WritingAcademyPage } from './views/WritingAcademyPage';
+import { PronunciationAcademyPage } from './views/PronunciationAcademyPage';
+import { RealLifeEnglishPage } from './views/RealLifeEnglishPage';
+import { ExamsAssessmentPage } from './views/ExamsAssessmentPage';
+import { MyLearningPage } from './views/MyLearningPage';
+import { AdminDashboardPage } from './views/AdminDashboardPage';
+import { AiTutorPage } from './views/AiTutorPage';
+import { CertificatesPage } from './views/CertificatesPage';
 import { Interactive3DWorld } from './components/Interactive3DWorld';
 
 // Flagship Future Perfect & Existing Core Pages
-import { CourseOverviewPage } from './pages/CourseOverviewPage';
-import { LessonPage } from './pages/LessonPage';
-import { CoursesPage } from './pages/CoursesPage';
-import { PracticePage } from './pages/PracticePage';
-import { QuizzesPage } from './pages/QuizzesPage';
-import { GamesPage } from './pages/GamesPage';
-import { ResourcesPage } from './pages/ResourcesPage';
-import { AboutPage } from './pages/AboutPage';
-import { SentencesLibraryPage } from './pages/SentencesLibraryPage';
-import { MovieStudioPage } from './pages/MovieStudioPage';
-import { TranslationStudioPage } from './pages/TranslationStudioPage';
+import { CourseOverviewPage } from './views/CourseOverviewPage';
+import { LessonPage } from './views/LessonPage';
+import { CoursesPage } from './views/CoursesPage';
+import { PracticePage } from './views/PracticePage';
+import { QuizzesPage } from './views/QuizzesPage';
+import { GamesPage } from './views/GamesPage';
+import { ResourcesPage } from './views/ResourcesPage';
+import { AboutPage } from './views/AboutPage';
+import { SentencesLibraryPage } from './views/SentencesLibraryPage';
+import { MovieStudioPage } from './views/MovieStudioPage';
+import { TranslationStudioPage } from './views/TranslationStudioPage';
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { ShieldAlert } from 'lucide-react';

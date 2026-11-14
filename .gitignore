@@ -10,3 +10,8 @@ graphify-out
 .vercel
 .env*
 scripts/cache/
+
+# Next.js
+out/
+.next/
+src/app/globals.built.css

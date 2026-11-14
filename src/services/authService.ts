@@ -1,3 +1,4 @@
+import { getEnvVar } from '../utils/env';
 import { createClient, SupabaseClient, User as SupabaseUser, Session as SupabaseSession } from '@supabase/supabase-js';
 import { UserProfile, CEFRLevel, UserRole } from '../types';
 
@@ -88,12 +89,12 @@ export const GUEST_PROFILE: UserProfile = {
  */
 export function isSupabaseConfigured(): boolean {
   const rawUrl = (
-    (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) ||
+    getEnvVar('VITE_SUPABASE_URL') ||
     (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL)) ||
     ''
   ).trim();
   const rawKey = (
-    (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_ANON_KEY) ||
+    getEnvVar('VITE_SUPABASE_ANON_KEY') ||
     (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_PUBLISHABLE_KEY)) ||
     ''
   ).trim();
@@ -125,12 +126,12 @@ export let supabase: SupabaseClient | null = null;
 export function initSupabaseClient(): SupabaseClient | null {
   if (isSupabaseConfigured()) {
     const rawUrl = (
-      (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_URL) ||
+      getEnvVar('VITE_SUPABASE_URL') ||
       (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL)) ||
       ''
     ).trim();
     const rawKey = (
-      (typeof import.meta !== 'undefined' && import.meta.env?.VITE_SUPABASE_ANON_KEY) ||
+      getEnvVar('VITE_SUPABASE_ANON_KEY') ||
       (typeof process !== 'undefined' && (process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_PUBLISHABLE_KEY)) ||
       ''
     ).trim();
