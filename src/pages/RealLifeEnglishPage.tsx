@@ -32,6 +32,7 @@ import {
   RefreshCw,
   Brain,
   Hotel,
+  Pill,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -46,6 +47,7 @@ const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>
   'sim-job-interview': Briefcase,
   'sim-coffee-shop': Coffee,
   'sim-hotel-checkin': Hotel,
+  'sim-pharmacy-visit': Pill,
 };
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
