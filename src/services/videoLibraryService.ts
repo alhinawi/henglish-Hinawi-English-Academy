@@ -3033,6 +3033,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Could you put me through to the manager?', arEg: 'ممكن تحولني للمدير؟' }, { en: 'I\'m afraid he\'s not available right now.', arEg: 'للأسف هو مش موجود دلوقتي.' }],
   },
+  {
+    id: 'travel-podcast-airport-hotel',
+    movieTitle: 'English for Travel You Will Actually Need - Airport & Hotel Conversations',
+    releaseYear: 2023,
+    director: 'English Conversation Podcast',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Airport and Hotel Essentials',
+    sceneDescription: 'كل المحادثات اللي هتحتاجها في المطار والفندق: تشيك إن، أسئلة الأمن، وحجز الأوضة بثقة.',
+    youtubeId: 'fsY6mF9rUCk',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English Conversation Podcast (Official)',
+    dialogueQuote: 'I\'d like to check in, please.',
+    actorName: 'Host',
+    characterName: 'Traveler',
+    thumbnailUrl: 'https://img.youtube.com/vi/fsY6mF9rUCk/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Conversation Podcast',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I\'d like to check in, please.', arEg: 'عايز أعمل تشيك إن، من فضلك.', arFusha: 'عايز أعمل تشيك إن، من فضلك.', speaker: 'Traveler', keyWords: [{ word: 'check in', ipa: '', meaningAr: 'يسجل وصول', meaningEn: '' }, { word: 'I\'d like', ipa: '', meaningAr: 'عايز (بأدب)', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'What time is breakfast served?', arEg: 'الفطار بيتقدم الساعة كام؟', arFusha: 'الفطار بيتقدم الساعة كام؟', speaker: 'Traveler', keyWords: [{ word: 'served', ipa: '', meaningAr: 'بيتقدم', meaningEn: '' }, { word: 'breakfast', ipa: '', meaningAr: 'الفطار', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'check in', type: 'phrasal-verb', meaningAr: 'يسجل وصول (مطار/فندق)', meaningEn: '', egyptianEquivalent: 'يعمل تشيك إن', exampleInScene: 'We checked in online.' },      { term: 'I\'d like', type: 'collocation', meaningAr: 'عايز (بصيغة مهذبة)', meaningEn: '', egyptianEquivalent: 'لو سمحت عايز', exampleInScene: 'I\'d like a coffee, please.' },      { term: 'reservation', type: 'cultural', meaningAr: 'حجز', meaningEn: '', egyptianEquivalent: 'حجز', exampleInScene: 'I have a reservation.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'check in\' mean at a hotel?', questionAr: 'معنى check in في الفندق؟', options: ['يسجل وصوله', 'يسجل خروجه', 'يدفع الحساب', 'يطلب الأكل'], correctIndex: 0, explanationAr: 'check in معناها تسجل وصولك في الفندق أو المطار، وعكسها check out.' }
+    ],
+    speakingLines: [{ en: 'I\'d like to check in, please.', arEg: 'عايز أعمل تشيك إن، من فضلك.' }, { en: 'What time is breakfast served?', arEg: 'الفطار بيتقدم الساعة كام؟' }],
+  },
+  {
+    id: 'travel-mr-english-beginners',
+    movieTitle: 'Travel English for Beginners - Airport, Hotel & Taxi',
+    releaseYear: 2023,
+    director: 'Mr. English Channel',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'What to Say at Every Step',
+    sceneDescription: 'إنجليزية السفر للمبتدئين: جمل جاهزة لكل خطوة من المطار للتاكسي للفندق - بطيئة وسهلة الحفظ.',
+    youtubeId: 'WyDcfIz08Eo',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Mr. English Channel (Official)',
+    dialogueQuote: 'Where is the baggage claim?',
+    actorName: 'Teacher',
+    characterName: 'Traveler',
+    thumbnailUrl: 'https://img.youtube.com/vi/WyDcfIz08Eo/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Mr. English Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Where is the baggage claim?', arEg: 'فين مكان استلام الشنط؟', arFusha: 'فين مكان استلام الشنط؟', speaker: 'Traveler', keyWords: [{ word: 'baggage claim', ipa: '', meaningAr: 'استلام الشنط', meaningEn: '' }, { word: 'where', ipa: '', meaningAr: 'فين', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Could you take me to this address?', arEg: 'ممكن توصلني للعنوان ده؟', arFusha: 'ممكن توصلني للعنوان ده؟', speaker: 'Traveler', keyWords: [{ word: 'take me', ipa: '', meaningAr: 'توصلني', meaningEn: '' }, { word: 'address', ipa: '', meaningAr: 'عنوان', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'baggage claim', type: 'collocation', meaningAr: 'مكان استلام الشنط', meaningEn: '', egyptianEquivalent: 'حزام الشنط', exampleInScene: 'Meet me at baggage claim.' },      { term: 'boarding pass', type: 'collocation', meaningAr: 'كارت صعود الطيارة', meaningEn: '', egyptianEquivalent: 'تذكرة الصعود', exampleInScene: 'Show your boarding pass.' },      { term: 'Could you take me to...?', type: 'collocation', meaningAr: 'ممكن توصلني لـ...؟', meaningEn: '', egyptianEquivalent: 'ممكن توديني', exampleInScene: 'Could you take me to the airport?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where do you get your bags after landing?', questionAr: 'بتستلم شنطك فين بعد ما الطيارة تنزل؟', options: ['Baggage claim', 'Gate', 'Check-in', 'Customs'], correctIndex: 0, explanationAr: 'baggage claim هي منطقة استلام الشنط بعد الوصول.' }
+    ],
+    speakingLines: [{ en: 'Where is the baggage claim?', arEg: 'فين مكان استلام الشنط؟' }, { en: 'Could you take me to this address?', arEg: 'ممكن توصلني للعنوان ده؟' }],
+  },
+  {
+    id: 'travel-jay-hotel',
+    movieTitle: 'Hotel English - All You Need to Know for Travelling Abroad',
+    releaseYear: 2022,
+    director: 'English by Jay',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Hotel Conversations Masterclass',
+    sceneDescription: 'كل حاجة عن إنجليزية الفنادق: الحجز، الشكاوى، طلبات الخدمة، وتسديد الحساب - باللهجة البريطانية.',
+    youtubeId: 'BJsOHCUPnWY',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English by Jay - Sprout (Official)',
+    dialogueQuote: 'Could I have a late checkout, please?',
+    actorName: 'Jay',
+    characterName: 'Guest',
+    thumbnailUrl: 'https://img.youtube.com/vi/BJsOHCUPnWY/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English by Jay Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Could I have a late checkout, please?', arEg: 'ممكن أخرج متأخر شوية، من فضلك؟', arFusha: 'ممكن أخرج متأخر شوية، من فضلك؟', speaker: 'Guest', keyWords: [{ word: 'late checkout', ipa: '', meaningAr: 'خروج متأخر', meaningEn: '' }, { word: 'Could I have', ipa: '', meaningAr: 'ممكن آخد', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'The air conditioning isn\'t working in my room.', arEg: 'التكييف مش شغال في الأوضة.', arFusha: 'التكييف مش شغال في الأوضة.', speaker: 'Guest', keyWords: [{ word: 'air conditioning', ipa: '', meaningAr: 'التكييف', meaningEn: '' }, { word: 'isn\'t working', ipa: '', meaningAr: 'مش شغال', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'late checkout', type: 'collocation', meaningAr: 'خروج متأخر من الفندق', meaningEn: '', egyptianEquivalent: 'تأخير الخروج', exampleInScene: 'They gave us a late checkout.' },      { term: 'isn\'t working', type: 'collocation', meaningAr: 'مش شغال', meaningEn: '', egyptianEquivalent: 'بايظ', exampleInScene: 'The TV isn\'t working.' },      { term: 'wake-up call', type: 'collocation', meaningAr: 'مكالمة صحيان من الاستقبال', meaningEn: '', egyptianEquivalent: 'مكالمة إيقاظ', exampleInScene: 'Book a 6 AM wake-up call.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'late checkout\'?', questionAr: 'يعني إيه late checkout؟', options: ['خروج متأخر من الأوضة', 'حجز متأخر', 'حساب غلط', 'أوضة متأخرة'], correctIndex: 0, explanationAr: 'late checkout يعني الفندق يسمحلك تسيب الأوضة بعد ميعاد الخروج العادي.' }
+    ],
+    speakingLines: [{ en: 'Could I have a late checkout, please?', arEg: 'ممكن أخرج متأخر شوية، من فضلك؟' }, { en: 'The air conditioning isn\'t working in my room.', arEg: 'التكييف مش شغال في الأوضة.' }],
+  },
+  {
+    id: 'street-easy-english-london',
+    movieTitle: 'Talking to People in London - Easy English 4',
+    releaseYear: 2019,
+    director: 'Easy Languages',
+    genre: 'Street Interviews',
+    cefrLevel: 'B1',
+    sceneTitle: 'Real Londoners, Real English',
+    sceneDescription: 'حوارات حقيقية في شوارع لندن مع ناس عادية - اسمع اللهجة البريطانية الطبيعية بترجمة مزدوجة.',
+    youtubeId: 'DDjWTWHHkpk',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Easy Languages (Official)',
+    dialogueQuote: 'What do you love most about London?',
+    actorName: 'Interviewer',
+    characterName: 'Interviewer',
+    thumbnailUrl: 'https://img.youtube.com/vi/DDjWTWHHkpk/hqdefault.jpg',
+    category: 'street_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy Languages Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'What do you love most about London?', arEg: 'أكتر حاجة بتحبها في لندن إيه؟', arFusha: 'أكتر حاجة بتحبها في لندن إيه؟', speaker: 'Interviewer', keyWords: [{ word: 'most', ipa: '', meaningAr: 'أكتر حاجة', meaningEn: '' }, { word: 'about', ipa: '', meaningAr: 'عن', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I love how diverse it is.', arEg: 'بحب التنوع اللي فيها.', arFusha: 'بحب التنوع اللي فيها.', speaker: 'Londoner', keyWords: [{ word: 'diverse', ipa: '', meaningAr: 'متنوعة', meaningEn: '' }, { word: 'love', ipa: '', meaningAr: 'بحب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'diverse', type: 'cultural', meaningAr: 'متنوع', meaningEn: '', egyptianEquivalent: 'متنوعة', exampleInScene: 'London is very diverse.' },      { term: 'What do you love most about...?', type: 'collocation', meaningAr: 'أكتر حاجة بتحبها في...؟', meaningEn: '', egyptianEquivalent: 'إيه أحلى حاجة في', exampleInScene: 'What do you love most about Cairo?' },      { term: 'locals', type: 'cultural', meaningAr: 'أهل البلد', meaningEn: '', egyptianEquivalent: 'الناس المحلية', exampleInScene: 'Ask the locals for tips.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'diverse\' mean?', questionAr: 'معنى diverse؟', options: ['متنوعة', 'بعيدة', 'غالية', 'قديمة'], correctIndex: 0, explanationAr: 'diverse معناها متنوعة - فيها ناس وثقافات كتير مختلفة.' }
+    ],
+    speakingLines: [{ en: 'What do you love most about London?', arEg: 'أكتر حاجة بتحبها في لندن إيه؟' }, { en: 'I love how diverse it is.', arEg: 'بحب التنوع اللي فيها.' }],
+  },
+  {
+    id: 'street-aydan-salaries',
+    movieTitle: 'Asking Strangers How Much They Make in London',
+    releaseYear: 2023,
+    director: 'Aydan Al-Saad',
+    genre: 'Street Interviews',
+    cefrLevel: 'B2',
+    sceneTitle: 'Careers and Salaries on the Street',
+    sceneDescription: 'أسئلة للناس في شارع لندن عن شغلهم ومرتباتهم - مفردات الشغل والفلوس بلغة الشارع الحقيقية.',
+    youtubeId: '6IFsllMF8OI',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Aydan Al-Saad (Official)',
+    dialogueQuote: 'What do you do for work, if you don\'t mind me asking?',
+    actorName: 'Aydan',
+    characterName: 'Aydan',
+    thumbnailUrl: 'https://img.youtube.com/vi/6IFsllMF8OI/hqdefault.jpg',
+    category: 'street_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Aydan Al-Saad Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'What do you do for work, if you don\'t mind me asking?', arEg: 'بتشتغل إيه، لو مفيش مانع أسأل؟', arFusha: 'بتشتغل إيه، لو مفيش مانع أسأل؟', speaker: 'Aydan', keyWords: [{ word: 'for work', ipa: '', meaningAr: 'كشغل', meaningEn: '' }, { word: 'don\'t mind me asking', ipa: '', meaningAr: 'لو مفيش مانع أسأل', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I\'m in finance, to be honest.', arEg: 'أنا شغال في المالية، بصراحة.', arFusha: 'أنا شغال في المالية، بصراحة.', speaker: 'Stranger', keyWords: [{ word: 'finance', ipa: '', meaningAr: 'المالية', meaningEn: '' }, { word: 'to be honest', ipa: '', meaningAr: 'بصراحة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'if you don\'t mind me asking', type: 'idiom', meaningAr: 'لو مفيش مانع أسأل (سؤال شخصي بأدب)', meaningEn: '', egyptianEquivalent: 'مع احترامي، سؤال', exampleInScene: 'How old are you, if you don\'t mind me asking?' },      { term: 'to be honest', type: 'collocation', meaningAr: 'بصراحة', meaningEn: '', egyptianEquivalent: 'بصراحة كده', exampleInScene: 'To be honest, I love my job.' },      { term: 'finance', type: 'cultural', meaningAr: 'مجال المالية', meaningEn: '', egyptianEquivalent: 'البنوك والفلوس', exampleInScene: 'She works in finance.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Why do people say \'if you don\'t mind me asking\'?', questionAr: 'ليه بنقول if you don\'t mind me asking؟', options: ['قبل سؤال شخصي عشان الأدب', 'عشان نرفض نجاوب', 'في آخر المكالمة', 'لما نكون زعلانين'], correctIndex: 0, explanationAr: 'الجملة دي بتتحط قبل الأسئلة الشخصية عشان تبقى مهذبة.' }
+    ],
+    speakingLines: [{ en: 'What do you do for work, if you don\'t mind me asking?', arEg: 'بتشتغل إيه، لو مفيش مانع أسأل؟' }, { en: 'I\'m in finance, to be honest.', arEg: 'أنا شغال في المالية، بصراحة.' }],
+  },
+  {
+    id: 'accents-us-uk-au',
+    movieTitle: 'American vs. British vs. Australian English - One Language, Three Accents',
+    releaseYear: 2022,
+    director: 'Language of Earth',
+    genre: 'Accent Comparison',
+    cefrLevel: 'B2',
+    sceneTitle: 'Three Accents Side by Side',
+    sceneDescription: 'مقارنة مباشرة بين اللكنة الأمريكية والبريطانية والأسترالية - درّب ودنك تفرق بينهم بسهولة.',
+    youtubeId: 'fy-bd5AC-Ms',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Language of Earth (Official)',
+    dialogueQuote: 'Same language, three very different sounds.',
+    actorName: 'Narrator',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/fy-bd5AC-Ms/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Language of Earth Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Same language, three very different sounds.', arEg: 'نفس اللغة، تلات أصوات مختلفة جداً.', arFusha: 'نفس اللغة، تلات أصوات مختلفة جداً.', speaker: 'Narrator', keyWords: [{ word: 'same', ipa: '', meaningAr: 'نفس', meaningEn: '' }, { word: 'different', ipa: '', meaningAr: 'مختلفة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Australians often shorten their words.', arEg: 'الأستراليين بيختصروا كلماتهم كتير.', arFusha: 'الأستراليين بيختصروا كلماتهم كتير.', speaker: 'Narrator', keyWords: [{ word: 'shorten', ipa: '', meaningAr: 'يختصر', meaningEn: '' }, { word: 'often', ipa: '', meaningAr: 'كتير / غالباً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'accent', type: 'cultural', meaningAr: 'لكنة / لهجة', meaningEn: '', egyptianEquivalent: 'لكنة', exampleInScene: 'Her accent is lovely.' },      { term: 'shorten', type: 'cultural', meaningAr: 'يختصر', meaningEn: '', egyptianEquivalent: 'يقصّر', exampleInScene: 'Aussies shorten afternoon to arvo.' },      { term: 'dialect', type: 'cultural', meaningAr: 'لهجة محلية', meaningEn: '', egyptianEquivalent: 'لهجة', exampleInScene: 'Every region has a dialect.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do Australians often do to their words?', questionAr: 'الأستراليين بيعملوا إيه في كلماتهم غالباً؟', options: ['بيختصروها', 'بيترجموها', 'بينطقوها كاملة دايماً', 'بيكتبوها غلط'], correctIndex: 0, explanationAr: 'الأستراليين مشهورين باختصار الكلمات: afternoon تبقى arvo.' }
+    ],
+    speakingLines: [{ en: 'Same language, three very different sounds.', arEg: 'نفس اللغة، تلات أصوات مختلفة جداً.' }, { en: 'Australians often shorten their words.', arEg: 'الأستراليين بيختصروا كلماتهم كتير.' }],
+  },
+  {
+    id: 'ukus-letstalk-50',
+    movieTitle: '50 Differences Between British English vs American English Vocabulary',
+    releaseYear: 2021,
+    director: 'Let\'s Talk',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: '50 Word Pairs You Must Know',
+    sceneDescription: 'خمسين كلمة بتختلف بين البريطاني والأمريكي: لفت/إليفيتور، فلات/أبارتمنت - هتفهم اللكنتين بعدها.',
+    youtubeId: 'V-Ro66uMBX4',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Let\'s Talk - Free English Lessons (Official)',
+    dialogueQuote: 'In Britain it\'s a flat; in America it\'s an apartment.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/V-Ro66uMBX4/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Let\'s Talk Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'In Britain it\'s a flat; in America it\'s an apartment.', arEg: 'في بريطانيا اسمها flat؛ في أمريكا apartment.', arFusha: 'في بريطانيا اسمها flat؛ في أمريكا apartment.', speaker: 'Teacher', keyWords: [{ word: 'flat', ipa: '', meaningAr: 'شقة (بريطاني)', meaningEn: '' }, { word: 'apartment', ipa: '', meaningAr: 'شقة (أمريكي)', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The British say holiday; Americans say vacation.', arEg: 'البريطانيين بيقولوا holiday؛ الأمريكان vacation.', arFusha: 'البريطانيين بيقولوا holiday؛ الأمريكان vacation.', speaker: 'Teacher', keyWords: [{ word: 'holiday', ipa: '', meaningAr: 'أجازة (بريطاني)', meaningEn: '' }, { word: 'vacation', ipa: '', meaningAr: 'أجازة (أمريكي)', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'flat / apartment', type: 'collocation', meaningAr: 'شقة (بريطاني / أمريكي)', meaningEn: '', egyptianEquivalent: 'شقة', exampleInScene: 'I live in a small flat.' },      { term: 'holiday / vacation', type: 'collocation', meaningAr: 'أجازة (بريطاني / أمريكي)', meaningEn: '', egyptianEquivalent: 'أجازة', exampleInScene: 'We\'re on holiday.' },      { term: 'lift / elevator', type: 'collocation', meaningAr: 'أسانسير (بريطاني / أمريكي)', meaningEn: '', egyptianEquivalent: 'أسانسير', exampleInScene: 'Take the lift.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the American word for \'flat\'?', questionAr: 'إيه الكلمة الأمريكية لكلمة flat؟', options: ['apartment', 'house', 'room', 'office'], correctIndex: 0, explanationAr: 'flat بريطانية و apartment أمريكية - الاتنين معناهم شقة.' }
+    ],
+    speakingLines: [{ en: 'In Britain it\'s a flat; in America it\'s an apartment.', arEg: 'في بريطانيا اسمها flat؛ في أمريكا apartment.' }, { en: 'The British say holiday; Americans say vacation.', arEg: 'البريطانيين بيقولوا holiday؛ الأمريكان vacation.' }],
+  },
+  {
+    id: 'ukus-360-explained',
+    movieTitle: 'British vs American English Explained - US vs UK Differences for ESL Students',
+    releaseYear: 2021,
+    director: 'English Speaking 360',
+    genre: 'Accent Comparison',
+    cefrLevel: 'B1',
+    sceneTitle: 'US vs UK Side by Side',
+    sceneDescription: 'شرح مبسط لأهم الفروق بين الإنجليزي الأمريكي والبريطاني في النطق والكلمات والإملاء.',
+    youtubeId: 'e5JnMFfEX0k',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English Speaking 360 (Official)',
+    dialogueQuote: 'Color or colour? Both are correct.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/e5JnMFfEX0k/hqdefault.jpg',
+    category: 'american_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking 360 Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Color or colour? Both are correct.', arEg: 'Color ولا colour؟ الاتنين صح.', arFusha: 'Color ولا colour؟ الاتنين صح.', speaker: 'Teacher', keyWords: [{ word: 'colour', ipa: '', meaningAr: 'لون (إملاء بريطاني)', meaningEn: '' }, { word: 'both', ipa: '', meaningAr: 'الاتنين', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Americans pronounce the R strongly.', arEg: 'الأمريكان بينطقوا حرف الـ R بوضوح.', arFusha: 'الأمريكان بينطقوا حرف الـ R بوضوح.', speaker: 'Teacher', keyWords: [{ word: 'pronounce', ipa: '', meaningAr: 'ينطق', meaningEn: '' }, { word: 'strongly', ipa: '', meaningAr: 'بوضوح / بقوة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'pronounce', type: 'cultural', meaningAr: 'ينطق', meaningEn: '', egyptianEquivalent: 'ينطق', exampleInScene: 'How do you pronounce this?' },      { term: 'spelling', type: 'cultural', meaningAr: 'إملاء / تهجئة', meaningEn: '', egyptianEquivalent: 'طريقة الكتابة', exampleInScene: 'US and UK spelling differ.' },      { term: 'both are correct', type: 'collocation', meaningAr: 'الاتنين صح', meaningEn: '', egyptianEquivalent: 'الاتنين تمام', exampleInScene: 'Both spellings are correct.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do Americans usually pronounce the letter R?', questionAr: 'الأمريكان بينطقوا حرف الـ R إزاي؟', options: ['بوضوح وبقوة', 'مبينطقوهوش', 'زي الفرنساوي', 'بحرف G'], correctIndex: 0, explanationAr: 'الأمريكان بينطقوا الـ R في آخر الكلمة (car, water)، عكس البريطانيين اللي بيسيبوها أخف.' }
+    ],
+    speakingLines: [{ en: 'Color or colour? Both are correct.', arEg: 'Color ولا colour؟ الاتنين صح.' }, { en: 'Americans pronounce the R strongly.', arEg: 'الأمريكان بينطقوا حرف الـ R بوضوح.' }],
+  },
+  {
+    id: 'restaurant-bob-order',
+    movieTitle: 'How to Order Food at a Restaurant in English',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Ordering Like a Local',
+    sceneDescription: 'بوب بياخدك خطوة بخطوة في المطعم: الحجز، الطلب، طلب الحساب - كل الجمل اللي هتحتاجها.',
+    youtubeId: 'uUMPULuwdLI',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'Could I see the menu, please?',
+    actorName: 'Bob',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/uUMPULuwdLI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Could I see the menu, please?', arEg: 'ممكن أشوف المنيو، من فضلك؟', arFusha: 'ممكن أشوف المنيو، من فضلك؟', speaker: 'Customer', keyWords: [{ word: 'menu', ipa: '', meaningAr: 'المنيو', meaningEn: '' }, { word: 'Could I see', ipa: '', meaningAr: 'ممكن أشوف', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I\'ll have the chicken, please.', arEg: 'هاخد الفراخ، من فضلك.', arFusha: 'هاخد الفراخ، من فضلك.', speaker: 'Customer', keyWords: [{ word: 'I\'ll have', ipa: '', meaningAr: 'هاخد (في الطلب)', meaningEn: '' }, { word: 'chicken', ipa: '', meaningAr: 'فراخ', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Could I see the menu?', type: 'collocation', meaningAr: 'ممكن أشوف المنيو؟', meaningEn: '', egyptianEquivalent: 'المنيو لو سمحت', exampleInScene: 'Could I see the menu, please?' },      { term: 'I\'ll have...', type: 'collocation', meaningAr: 'هاخد... (في الطلب)', meaningEn: '', egyptianEquivalent: 'هطلب', exampleInScene: 'I\'ll have the fish.' },      { term: 'the bill / check', type: 'collocation', meaningAr: 'الحساب', meaningEn: '', egyptianEquivalent: 'الحساب', exampleInScene: 'Could we have the bill?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you order food politely?', questionAr: 'بتطلب الأكل بأدب إزاي؟', options: ['I\'ll have the chicken', 'Give me chicken', 'I want chicken now', 'Chicken, hurry'], correctIndex: 0, explanationAr: 'في المطاعم بنقول I\'ll have + الأكل - أدبية وسهلة.' }
+    ],
+    speakingLines: [{ en: 'Could I see the menu, please?', arEg: 'ممكن أشوف المنيو، من فضلك؟' }, { en: 'I\'ll have the chicken, please.', arEg: 'هاخد الفراخ، من فضلك.' }],
+  },
+  {
+    id: 'restaurant-easy-english',
+    movieTitle: 'At the Restaurant Conversation - Easy English',
+    releaseYear: 2021,
+    director: 'Easy English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'A Full Restaurant Dialogue',
+    sceneDescription: 'حوار كامل في المطعم من أول الترحيب لحد دفع الحساب - تمثيل واضح وبطيء مثالي للتقليد.',
+    youtubeId: 'bgfdqVmVjfk',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Easy English (Official)',
+    dialogueQuote: 'Are you ready to order?',
+    actorName: 'Waiter',
+    characterName: 'Waiter',
+    thumbnailUrl: 'https://img.youtube.com/vi/bgfdqVmVjfk/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Are you ready to order?', arEg: 'جاهزين تطلبوا؟', arFusha: 'جاهزين تطلبوا؟', speaker: 'Waiter', keyWords: [{ word: 'ready', ipa: '', meaningAr: 'جاهز', meaningEn: '' }, { word: 'order', ipa: '', meaningAr: 'يطلبوا', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Would you like anything to drink?', arEg: 'تحبوا تشربوا حاجة؟', arFusha: 'تحبوا تشربوا حاجة؟', speaker: 'Waiter', keyWords: [{ word: 'Would you like', ipa: '', meaningAr: 'تحبوا (بأدب)', meaningEn: '' }, { word: 'to drink', ipa: '', meaningAr: 'تشربوا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Are you ready to order?', type: 'collocation', meaningAr: 'جاهزين تطلبوا؟', meaningEn: '', egyptianEquivalent: 'تطلبوا إيه؟', exampleInScene: 'Are you ready to order, sir?' },      { term: 'Would you like...?', type: 'collocation', meaningAr: 'تحب...؟ (عرض مهذب)', meaningEn: '', egyptianEquivalent: 'تحب', exampleInScene: 'Would you like some water?' },      { term: 'Anything else?', type: 'collocation', meaningAr: 'أي حاجة تانية؟', meaningEn: '', egyptianEquivalent: 'كمان حاجة؟', exampleInScene: 'Anything else for you?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does the waiter mean by \'Are you ready to order?\'', questionAr: 'الويتر بيقصد إيه بـ Are you ready to order؟', options: ['جاهزين تطلبوا؟', 'عايزين تدفعوا؟', 'الأكل خلص؟', 'المطعم بيقفل؟'], correctIndex: 0, explanationAr: 'الجملة دي الويتر بيسأل بيها لو انت جاهز تطلب أكل.' }
+    ],
+    speakingLines: [{ en: 'Are you ready to order?', arEg: 'جاهزين تطلبوا؟' }, { en: 'Would you like anything to drink?', arEg: 'تحبوا تشربوا حاجة؟' }],
+  },
 ];
 
 // Helper to get all videos
