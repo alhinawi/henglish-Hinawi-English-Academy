@@ -2683,6 +2683,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.' }, { en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um و like.' }],
   },
+  {
+    id: 'smalltalk-bob-work-friends',
+    movieTitle: 'Learn English Small Talk to use at Work and with Friends',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Conversation Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Small Talk Basics',
+    sceneDescription: 'بوب بيعلمك السمال توك: أول كلام تقوله في الشغل ومع الأصحاب والغرباء من غير توتر.',
+    youtubeId: '4zXys7i8Zrc',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'How\'s it going? Pretty good, and you?',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/4zXys7i8Zrc/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'How\'s it going? Pretty good, and you?', arEg: 'عامل إيه؟ كويس، وانت؟', arFusha: 'عامل إيه؟ كويس، وانت؟', speaker: 'Bob', keyWords: [{ word: 'How\'s it going', ipa: '', meaningAr: 'عامل إيه', meaningEn: '' }, { word: 'pretty good', ipa: '', meaningAr: 'كويس جداً', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Nice weather we\'re having, isn\'t it?', arEg: 'الجو حلو النهارده، مش كده؟', arFusha: 'الجو حلو النهارده، مش كده؟', speaker: 'Bob', keyWords: [{ word: 'weather', ipa: '', meaningAr: 'الجو', meaningEn: '' }, { word: 'isn\'t it', ipa: '', meaningAr: 'مش كده؟', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'How\'s it going?', type: 'collocation', meaningAr: 'عامل إيه؟ (تحية يومية)', meaningEn: '', egyptianEquivalent: 'عامل إيه', exampleInScene: 'How\'s it going, man?' },      { term: 'small talk', type: 'collocation', meaningAr: 'كلام خفيف افتتاحي', meaningEn: '', egyptianEquivalent: 'هزار وكلام خفيف', exampleInScene: 'I\'m bad at small talk.' },      { term: 'pretty good', type: 'collocation', meaningAr: 'كويس جداً', meaningEn: '', egyptianEquivalent: 'تمام', exampleInScene: 'I\'m pretty good, thanks.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is \'small talk\'?', questionAr: 'يعني إيه small talk؟', options: ['كلام خفيف افتتاحي', 'كلام قليل', 'حديث رسمي', 'مكالمة قصيرة'], correctIndex: 0, explanationAr: 'السمال توك هو الكلام الخفيف اللي بيكسر الجليد قبل أي حوار.' }
+    ],
+    speakingLines: [{ en: 'How\'s it going? Pretty good, and you?', arEg: 'عامل إيه؟ كويس، وانت؟' }, { en: 'Nice weather we\'re having, isn\'t it?', arEg: 'الجو حلو النهارده، مش كده؟' }],
+  },
+  {
+    id: 'smalltalk-lucy-100',
+    movieTitle: '100 Small Talk Questions and Answers - Real English Conversation',
+    releaseYear: 2022,
+    director: 'English with Lucy',
+    genre: 'Conversation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: '100 Questions, Real Answers',
+    sceneDescription: 'لوسي بتجاوب على 100 سؤال سمال توك بإجابات طبيعية - تدريب شامل على الردود اليومية باللهجة البريطانية.',
+    youtubeId: '8vPXIsAqmjg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Lucy (Official)',
+    dialogueQuote: 'What do you do for a living?',
+    actorName: 'Lucy',
+    characterName: 'Lucy',
+    thumbnailUrl: 'https://img.youtube.com/vi/8vPXIsAqmjg/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Lucy Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'What do you do for a living?', arEg: 'بتشتغل إيه؟', arFusha: 'بتشتغل إيه؟', speaker: 'Lucy', keyWords: [{ word: 'for a living', ipa: '', meaningAr: 'كشغل / للمعيشة', meaningEn: '' }, { word: 'What do you do', ipa: '', meaningAr: 'بتعمل إيه', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Have you been here long?', arEg: 'لك كتير هنا؟', arFusha: 'لك كتير هنا؟', speaker: 'Lucy', keyWords: [{ word: 'been here', ipa: '', meaningAr: 'موجود هنا', meaningEn: '' }, { word: 'long', ipa: '', meaningAr: 'كتير / مدة طويلة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'for a living', type: 'collocation', meaningAr: 'كمصدر رزق / شغل', meaningEn: '', egyptianEquivalent: 'كشغل', exampleInScene: 'What do you do for a living?' },      { term: 'Have you been here long?', type: 'collocation', meaningAr: 'لك كتير هنا؟', meaningEn: '', egyptianEquivalent: 'انت هنا بقالك كتير؟', exampleInScene: 'Have you been here long?' },      { term: 'How come?', type: 'collocation', meaningAr: 'ليه؟ / إزاي؟', meaningEn: '', egyptianEquivalent: 'ليه كده؟', exampleInScene: 'How come you\'re late?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'What do you do for a living?\' ask about?', questionAr: 'سؤال What do you do for a living بيسأل عن إيه؟', options: ['شغلك', 'مكان سكنك', 'أكلك المفضل', 'سنك'], correctIndex: 0, explanationAr: 'السؤال ده بيسأل عن شغلك أو مصدر رزقك بطريقة مهذبة.' }
+    ],
+    speakingLines: [{ en: 'What do you do for a living?', arEg: 'بتشتغل إيه؟' }, { en: 'Have you been here long?', arEg: 'لك كتير هنا؟' }],
+  },
+  {
+    id: 'smalltalk-jefferson-tips',
+    movieTitle: 'Never Struggle with Small Talk Again - Jefferson Fisher',
+    releaseYear: 2023,
+    director: 'Jefferson Fisher',
+    genre: 'Communication Skills',
+    cefrLevel: 'B2',
+    sceneTitle: 'Better Conversations, Less Awkwardness',
+    sceneDescription: 'جيفرسون فيشر (محامي وخبير تواصل) بيديك نصايح عملية تخليك مرتاح في أي حوار حتى مع الغرباء.',
+    youtubeId: 'ZcI2B92JlJU',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Jefferson Fisher (Official)',
+    dialogueQuote: 'Ask questions you actually want the answer to.',
+    actorName: 'Jefferson Fisher',
+    characterName: 'Jefferson',
+    thumbnailUrl: 'https://img.youtube.com/vi/ZcI2B92JlJU/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Jefferson Fisher Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Ask questions you actually want the answer to.', arEg: 'اسأل أسئلة انت فعلاً عايز تعرف إجابتها.', arFusha: 'اسأل أسئلة انت فعلاً عايز تعرف إجابتها.', speaker: 'Jefferson', keyWords: [{ word: 'actually', ipa: '', meaningAr: 'فعلاً', meaningEn: '' }, { word: 'answer', ipa: '', meaningAr: 'إجابة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Curiosity kills the awkward silence.', arEg: 'الفضول بيقتل الصمت المحرج.', arFusha: 'الفضول بيقتل الصمت المحرج.', speaker: 'Jefferson', keyWords: [{ word: 'curiosity', ipa: '', meaningAr: 'فضول', meaningEn: '' }, { word: 'awkward', ipa: '', meaningAr: 'محرج', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'awkward silence', type: 'collocation', meaningAr: 'صمت محرج', meaningEn: '', egyptianEquivalent: 'سكات وحش', exampleInScene: 'A joke broke the awkward silence.' },      { term: 'curiosity', type: 'cultural', meaningAr: 'فضول (معرفي)', meaningEn: '', egyptianEquivalent: 'فضول', exampleInScene: 'Curiosity keeps talks alive.' },      { term: 'open-ended question', type: 'collocation', meaningAr: 'سؤال مفتوح', meaningEn: '', egyptianEquivalent: 'سؤال واسع', exampleInScene: 'Ask open-ended questions.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What kills the awkward silence, according to Jefferson?', questionAr: 'إيه اللي بيقتل الصمت المحرج حسب جيفرسون؟', options: ['الفضول والأسئلة', 'الموبايل', 'الصمت الأطول', 'السرعة في الكلام'], correctIndex: 0, explanationAr: 'الفضول الحقيقي والأسئلة المفتوحة بيخلوا الحوار يمشي طبيعي من غير إحراج.' }
+    ],
+    speakingLines: [{ en: 'Ask questions you actually want the answer to.', arEg: 'اسأل أسئلة انت فعلاً عايز تعرف إجابتها.' }, { en: 'Curiosity kills the awkward silence.', arEg: 'الفضول بيقتل الصمت المحرج.' }],
+  },
+  {
+    id: 'listening-comfort-beginners',
+    movieTitle: 'English Listening Practice: Daily Life Easy Conversations for Beginners',
+    releaseYear: 2023,
+    director: 'English in Comfort',
+    genre: 'Listening Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Slow and Clear Daily Conversations',
+    sceneDescription: 'محادثات يومية بطيئة وواضحة للمبتدئين - درّب ودنك على الإنجليزي الطبيعي من غير ضغط.',
+    youtubeId: '4EtXW3nnfPI',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English in Comfort (Official)',
+    dialogueQuote: 'Could you say that again, please?',
+    actorName: 'Narrator',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/4EtXW3nnfPI/hqdefault.jpg',
+    category: 'english_for_beginners',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English in Comfort Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Could you say that again, please?', arEg: 'ممكن تقولها تاني من فضلك؟', arFusha: 'ممكن تقولها تاني من فضلك؟', speaker: 'Speaker', keyWords: [{ word: 'say that again', ipa: '', meaningAr: 'قولها تاني', meaningEn: '' }, { word: 'please', ipa: '', meaningAr: 'من فضلك', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I\'m sorry, I didn\'t catch that.', arEg: 'معلش، مسمعتهاش كويس.', arFusha: 'معلش، مسمعتهاش كويس.', speaker: 'Speaker', keyWords: [{ word: 'didn\'t catch', ipa: '', meaningAr: 'مسمعتش / مفهمتش', meaningEn: '' }, { word: 'sorry', ipa: '', meaningAr: 'معلش / آسف', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'say that again', type: 'collocation', meaningAr: 'قولها تاني', meaningEn: '', egyptianEquivalent: 'كررها تاني', exampleInScene: 'Could you say that again?' },      { term: 'catch', type: 'cultural', meaningAr: 'يسمع / يلحق الكلام', meaningEn: '', egyptianEquivalent: 'يلقط', exampleInScene: 'I didn\'t catch your name.' },      { term: 'slowly', type: 'cultural', meaningAr: 'ببطء', meaningEn: '', egyptianEquivalent: 'بشويش', exampleInScene: 'Please speak slowly.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you say when you don\'t hear something?', questionAr: 'تقول إيه لما متسمعش حاجة كويس؟', options: ['I didn\'t catch that', 'I don\'t care', 'Say it never', 'Catch me'], correctIndex: 0, explanationAr: 'I didn\'t catch that هي الطريقة المهذبة إنك تقول مسمعتش الكلام.' }
+    ],
+    speakingLines: [{ en: 'Could you say that again, please?', arEg: 'ممكن تقولها تاني من فضلك؟' }, { en: 'I\'m sorry, I didn\'t catch that.', arEg: 'معلش، مسمعتهاش كويس.' }],
+  },
+  {
+    id: 'listening-david-alice-b1',
+    movieTitle: '40 Minutes of Real English Listening Practice for B1-B2',
+    releaseYear: 2023,
+    director: 'David & Alice',
+    genre: 'Listening Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Real Speed, Real Listening',
+    sceneDescription: 'تدريب استماع 40 دقيقة بسرعة طبيعية للمستوى المتوسط - حوارات واقعية بتحسن ودنك وفهمك.',
+    youtubeId: '3vrJKNOUeK4',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Speak English with David & Alice (Official)',
+    dialogueQuote: 'That sounds like a great plan.',
+    actorName: 'David',
+    characterName: 'David',
+    thumbnailUrl: 'https://img.youtube.com/vi/3vrJKNOUeK4/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English with David & Alice',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'That sounds like a great plan.', arEg: 'ده يبان خطة جامدة.', arFusha: 'ده يبان خطة جامدة.', speaker: 'David', keyWords: [{ word: 'sounds like', ipa: '', meaningAr: 'يبان زي', meaningEn: '' }, { word: 'plan', ipa: '', meaningAr: 'خطة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Let me know if you need anything.', arEg: 'قولي لو محتاج أي حاجة.', arFusha: 'قولي لو محتاج أي حاجة.', speaker: 'Alice', keyWords: [{ word: 'let me know', ipa: '', meaningAr: 'قولي / بلغني', meaningEn: '' }, { word: 'need', ipa: '', meaningAr: 'محتاج', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'sounds like', type: 'collocation', meaningAr: 'يبان زي / يبدو', meaningEn: '', egyptianEquivalent: 'شكله', exampleInScene: 'That sounds like fun.' },      { term: 'let me know', type: 'collocation', meaningAr: 'قولي / بلغني', meaningEn: '', egyptianEquivalent: 'قولي بس', exampleInScene: 'Let me know your answer.' },      { term: 'great plan', type: 'collocation', meaningAr: 'خطة ممتازة', meaningEn: '', egyptianEquivalent: 'خطة جامدة', exampleInScene: 'Sounds like a great plan!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'That sounds like a great plan\' express?', questionAr: 'جملة That sounds like a great plan بتعبر عن إيه؟', options: ['موافقة وحماس', 'رفض', 'شك', 'ملل'], correctIndex: 0, explanationAr: 'الجملة دي بتعبر عن موافقة وحماس لاقتراح حد.' }
+    ],
+    speakingLines: [{ en: 'That sounds like a great plan.', arEg: 'ده يبان خطة جامدة.' }, { en: 'Let me know if you need anything.', arEg: 'قولي لو محتاج أي حاجة.' }],
+  },
+  {
+    id: 'listening-david-alice-c1',
+    movieTitle: 'Improve Your English Just by Listening (B2-C1)',
+    releaseYear: 2023,
+    director: 'David & Alice',
+    genre: 'Listening Practice',
+    cefrLevel: 'C1',
+    sceneTitle: 'Advanced Immersion Listening',
+    sceneDescription: 'استماع متقدم بنطق سريع ومفردات غنية - مناسب ليك لو بتجهز لمستوى C1 أو امتحانات الطلاقة.',
+    youtubeId: '3OdsuB6PED8',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Speak English with David & Alice (Official)',
+    dialogueQuote: 'It\'s not rocket science; you just need consistency.',
+    actorName: 'Alice',
+    characterName: 'Alice',
+    thumbnailUrl: 'https://img.youtube.com/vi/3OdsuB6PED8/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English with David & Alice',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'It\'s not rocket science; you just need consistency.', arEg: 'مش صعبة أوي؛ انت بس محتاج تلتزم.', arFusha: 'مش صعبة أوي؛ انت بس محتاج تلتزم.', speaker: 'Alice', keyWords: [{ word: 'rocket science', ipa: '', meaningAr: 'حاجة معقدة جداً', meaningEn: '' }, { word: 'consistency', ipa: '', meaningAr: 'التزام / استمرارية', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'The more you immerse yourself, the faster you improve.', arEg: 'كل ما تعيش في اللغة أكتر، كل ما تتحسن أسرع.', arFusha: 'كل ما تعيش في اللغة أكتر، كل ما تتحسن أسرع.', speaker: 'David', keyWords: [{ word: 'immerse', ipa: '', meaningAr: 'يغمر / يعيش في', meaningEn: '' }, { word: 'improve', ipa: '', meaningAr: 'يتحسن', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'rocket science', type: 'idiom', meaningAr: 'حاجة معقدة جداً', meaningEn: '', egyptianEquivalent: 'فيزياء نووية', exampleInScene: 'English is not rocket science.' },      { term: 'consistency', type: 'cultural', meaningAr: 'التزام / استمرارية', meaningEn: '', egyptianEquivalent: 'مثابرة', exampleInScene: 'Consistency beats talent.' },      { term: 'immerse yourself', type: 'collocation', meaningAr: 'يعيش نفسه في اللغة', meaningEn: '', egyptianEquivalent: 'يغرق نفسه فيها', exampleInScene: 'Immerse yourself in English daily.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'It\'s not rocket science\' mean?', questionAr: 'معنى It\'s not rocket science؟', options: ['مش حاجة صعبة أوي', 'علم صواريخ', 'مستحيلة', 'محتاجة معادلات'], correctIndex: 0, explanationAr: 'لما نقول it\'s not rocket science بنقصد إنها مش معقدة زي ما الناس فاكرة.' }
+    ],
+    speakingLines: [{ en: 'It\'s not rocket science; you just need consistency.', arEg: 'مش صعبة أوي؛ انت بس محتاج تلتزم.' }, { en: 'The more you immerse yourself, the faster you improve.', arEg: 'كل ما تعيش في اللغة أكتر، كل ما تتحسن أسرع.' }],
+  },
+  {
+    id: 'mistakes-accurate-7',
+    movieTitle: '7 Most Common English Grammar Mistakes + TEST',
+    releaseYear: 2020,
+    director: 'AccurateEnglish',
+    genre: 'Grammar Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Fix These 7 Mistakes',
+    sceneDescription: 'ليزا موجسن بتراجع أشهر 7 غلطات جرامر بيعملها المتعلمين - مع تيست في الآخر يقيس مستواك.',
+    youtubeId: 'xCBz-O8nHrc',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'AccurateEnglish (Official)',
+    dialogueQuote: 'I have been living here for five years.',
+    actorName: 'Lisa Mojsin',
+    characterName: 'Lisa',
+    thumbnailUrl: 'https://img.youtube.com/vi/xCBz-O8nHrc/hqdefault.jpg',
+    category: 'american_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'AccurateEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I have been living here for five years.', arEg: 'أنا عايش هنا بقالي خمس سنين.', arFusha: 'أنا عايش هنا بقالي خمس سنين.', speaker: 'Lisa', keyWords: [{ word: 'have been living', ipa: '', meaningAr: 'عايش (من فترة لدلوقتي)', meaningEn: '' }, { word: 'for five years', ipa: '', meaningAr: 'من خمس سنين', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'She doesn\'t like coffee.', arEg: 'هي مش بتحب القهوة.', arFusha: 'هي مش بتحب القهوة.', speaker: 'Lisa', keyWords: [{ word: 'doesn\'t', ipa: '', meaningAr: 'لا (للمفرد الغائب)', meaningEn: '' }, { word: 'like', ipa: '', meaningAr: 'تحب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'have been living', type: 'collocation', meaningAr: 'عايش من فترة مستمرة', meaningEn: '', egyptianEquivalent: 'بقالي فيها', exampleInScene: 'I have been learning English for a year.' },      { term: 'doesn\'t', type: 'cultural', meaningAr: 'أداة نفي للمفرد الغائب', meaningEn: '', egyptianEquivalent: 'مش (لهو/هي)', exampleInScene: 'He doesn\'t smoke.' },      { term: 'common mistake', type: 'collocation', meaningAr: 'غلطة شائعة', meaningEn: '', egyptianEquivalent: 'غلطة مشهورة', exampleInScene: 'That\'s a common mistake.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is correct?', questionAr: 'أنهي جملة صح؟', options: ['She doesn\'t like coffee', 'She don\'t like coffee', 'She not like coffee', 'She doesn\'t likes coffee'], correctIndex: 0, explanationAr: 'مع he/she/it بنستخدم doesn\'t والفعل يرجع لأصله من غير s.' }
+    ],
+    speakingLines: [{ en: 'I have been living here for five years.', arEg: 'أنا عايش هنا بقالي خمس سنين.' }, { en: 'She doesn\'t like coffee.', arEg: 'هي مش بتحب القهوة.' }],
+  },
+  {
+    id: 'mistakes-vanessa-20',
+    movieTitle: '20 Most Common Speaking Mistakes - Advanced English Lesson',
+    releaseYear: 2022,
+    director: 'Speak English With Vanessa',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'C1',
+    sceneTitle: 'Sound More Natural Instantly',
+    sceneDescription: 'فانيسا بتصحح 20 غلطة نطق وكلام بيفضحوا إنك متعلم - صححها وهتسمع فرق فوري في طلاقتك.',
+    youtubeId: 'aQQbtwnJUtg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'I\'m looking forward to seeing you.',
+    actorName: 'Vanessa',
+    characterName: 'Vanessa',
+    thumbnailUrl: 'https://img.youtube.com/vi/aQQbtwnJUtg/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I\'m looking forward to seeing you.', arEg: 'مستني أشوفك بفارغ الصبر.', arFusha: 'مستني أشوفك بفارغ الصبر.', speaker: 'Vanessa', keyWords: [{ word: 'looking forward to', ipa: '', meaningAr: 'مستني بفارغ الصبر', meaningEn: '' }, { word: 'seeing', ipa: '', meaningAr: 'أشوف (بعد to هنا بييجي ing)', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'It depends on the weather.', arEg: 'ده على حسب الجو.', arFusha: 'ده على حسب الجو.', speaker: 'Vanessa', keyWords: [{ word: 'depends on', ipa: '', meaningAr: 'على حسب', meaningEn: '' }, { word: 'weather', ipa: '', meaningAr: 'الجو', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'look forward to', type: 'phrasal-verb', meaningAr: 'يستنى بفارغ الصبر (وبعدها ing)', meaningEn: '', egyptianEquivalent: 'مستني بشوق', exampleInScene: 'I look forward to meeting you.' },      { term: 'depend on', type: 'phrasal-verb', meaningAr: 'يعتمد على', meaningEn: '', egyptianEquivalent: 'على حسب', exampleInScene: 'It depends on you.' },      { term: 'mistake', type: 'cultural', meaningAr: 'غلطة', meaningEn: '', egyptianEquivalent: 'غلطة', exampleInScene: 'Learn from your mistakes.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is correct after \'look forward to\'?', questionAr: 'إيه الصح بعد look forward to؟', options: ['seeing you', 'see you', 'saw you', 'to see you'], correctIndex: 0, explanationAr: 'بعد look forward to بييجي الفعل في ing: look forward to seeing you.' }
+    ],
+    speakingLines: [{ en: 'I\'m looking forward to seeing you.', arEg: 'مستني أشوفك بفارغ الصبر.' }, { en: 'It depends on the weather.', arEg: 'ده على حسب الجو.' }],
+  },
+  {
+    id: 'phone-bob-phrases',
+    movieTitle: 'Learn English Phone Phrases',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Answering the Phone Confidently',
+    sceneDescription: 'بوب بيعلمك عبارات التليفون الأساسية: ترد، تسأل مين بيكلمك، وتقفل المكالمة بأدب.',
+    youtubeId: 'u40ZKHC98k0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'Hello, this is Bob speaking.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/u40ZKHC98k0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Hello, this is Bob speaking.', arEg: 'ألو، معاك بوب.', arFusha: 'ألو، معاك بوب.', speaker: 'Bob', keyWords: [{ word: 'this is', ipa: '', meaningAr: 'معاك (في التليفون)', meaningEn: '' }, { word: 'speaking', ipa: '', meaningAr: 'بيتكلم', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Can I take a message?', arEg: 'أوصله رسالة؟', arFusha: 'أوصله رسالة؟', speaker: 'Bob', keyWords: [{ word: 'take a message', ipa: '', meaningAr: 'يوصل رسالة', meaningEn: '' }, { word: 'message', ipa: '', meaningAr: 'رسالة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'this is... speaking', type: 'collocation', meaningAr: 'معاك فلان (رد التليفون)', meaningEn: '', egyptianEquivalent: 'معاك', exampleInScene: 'Hello, this is Ahmed speaking.' },      { term: 'take a message', type: 'collocation', meaningAr: 'يوصل رسالة', meaningEn: '', egyptianEquivalent: 'يقوله حاجة', exampleInScene: 'Can I take a message?' },      { term: 'hold on', type: 'phrasal-verb', meaningAr: 'استنى لحظة', meaningEn: '', egyptianEquivalent: 'ثانية واحدة', exampleInScene: 'Hold on, please.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you introduce yourself on the phone in English?', questionAr: 'بتعرف نفسك إزاي في التليفون بالإنجليزي؟', options: ['This is Ahmed speaking', 'I am Ahmed here', 'Me Ahmed', 'Ahmed is me'], correctIndex: 0, explanationAr: 'في التليفون بنقول this is + اسمك + speaking، مش I am.' }
+    ],
+    speakingLines: [{ en: 'Hello, this is Bob speaking.', arEg: 'ألو، معاك بوب.' }, { en: 'Can I take a message?', arEg: 'أوصله رسالة؟' }],
+  },
+  {
+    id: 'phone-mmmenglish-mustknow',
+    movieTitle: 'Must-know Phone Phrases - Talk Confidently On The Telephone',
+    releaseYear: 2020,
+    director: 'mmmEnglish',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Professional Phone English',
+    sceneDescription: 'إيما بتلخص أهم عبارات التليفون الرسمية والودية - هترد على أي مكالمة إنجليزي بثقة بعد المقطع ده.',
+    youtubeId: 'H9jUV2AQphY',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'mmmEnglish (Official)',
+    dialogueQuote: 'Could you put me through to the manager?',
+    actorName: 'Emma',
+    characterName: 'Emma',
+    thumbnailUrl: 'https://img.youtube.com/vi/H9jUV2AQphY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'mmmEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Could you put me through to the manager?', arEg: 'ممكن تحولني للمدير؟', arFusha: 'ممكن تحولني للمدير؟', speaker: 'Emma', keyWords: [{ word: 'put through', ipa: '', meaningAr: 'يحوّل المكالمة', meaningEn: '' }, { word: 'manager', ipa: '', meaningAr: 'المدير', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I\'m afraid he\'s not available right now.', arEg: 'للأسف هو مش موجود دلوقتي.', arFusha: 'للأسف هو مش موجود دلوقتي.', speaker: 'Emma', keyWords: [{ word: 'I\'m afraid', ipa: '', meaningAr: 'للأسف (بأدب)', meaningEn: '' }, { word: 'available', ipa: '', meaningAr: 'موجود / متاح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'put someone through', type: 'phrasal-verb', meaningAr: 'يحوّل مكالمة لحد', meaningEn: '', egyptianEquivalent: 'يحوّلني', exampleInScene: 'Please put me through to sales.' },      { term: 'I\'m afraid', type: 'collocation', meaningAr: 'للأسف (رفض مهذب)', meaningEn: '', egyptianEquivalent: 'معلش بس', exampleInScene: 'I\'m afraid we\'re closed.' },      { term: 'available', type: 'cultural', meaningAr: 'موجود / متاح', meaningEn: '', egyptianEquivalent: 'فاضي', exampleInScene: 'Is she available today?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'put me through to the manager\' mean?', questionAr: 'معنى put me through to the manager؟', options: ['حوّلني للمدير', 'المدير هيحطني', 'قابل المدير', 'كلم المدير بعدين'], correctIndex: 0, explanationAr: 'put through معناها يحوّل المكالمة لشخص تاني في الشغل.' }
+    ],
+    speakingLines: [{ en: 'Could you put me through to the manager?', arEg: 'ممكن تحولني للمدير؟' }, { en: 'I\'m afraid he\'s not available right now.', arEg: 'للأسف هو مش موجود دلوقتي.' }],
+  },
 ];
 
 // Helper to get all videos
