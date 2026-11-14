@@ -1,6 +1,6 @@
 // ==============================================================================
 // Henglish Academy (HENGLISH) - INTELLIGENT VOCABULARY EXPLORER
-// Multi-filter search engine across 55,000+ words with dual US/UK pronunciation
+// Multi-filter search engine across 5,000+ words with dual US/UK pronunciation
 // ==============================================================================
 
 import React, { useState, useEffect, useMemo } from 'react';
