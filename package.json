@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite --port 5173",
     "build": "tsc -b && vite build",
-    "preview": "vite preview --port 5173"
+    "preview": "vite preview --port 5173",
+    "prebuild:next": "tailwindcss -i src/index.css -o src/app/globals.built.css --minify",
+    "build:next": "next build",
+    "dev:next": "tailwindcss -i src/index.css -o src/app/globals.built.css && next dev"
   },
   "dependencies": {
     "@hookform/resolvers": "^6.0.2",
@@ -15,6 +18,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.7",
     "lucide-react": "^1.16.0",
+    "next": "^15.5.29",
     "nodemailer": "^10.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -24,6 +28,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.5",
     "@tailwindcss/vite": "^4.3.3",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^26.6.5",
