@@ -1,6 +1,6 @@
 // ==============================================================================
 // HENGLISH ACADEMY - SENTENCE BUILDER PLAYABLE MODULE
-// Interactive syntax construction engine fed by 5,500 authentic sentences
+// Interactive syntax construction engine fed by 5,000 authentic sentences
 // ==============================================================================
 
 import React, { useState, useEffect, useRef } from 'react';
