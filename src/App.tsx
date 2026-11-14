@@ -98,7 +98,14 @@ export const App: React.FC = () => {
   // Sync route with URL hash
   useEffect(() => {
     const handleHashChange = () => {
-      const fullHash = window.location.hash.replace('#', '').trim();
+      let fullHash = window.location.hash.replace('#', '').trim();
+
+      // Clean-URL bridge (Next.js static routes): /movies/ behaves like #movies
+      if (!fullHash) {
+        const pathPart = window.location.pathname.replace(/^\/+|\/+$/g, '');
+        if (pathPart) fullHash = pathPart;
+      }
+
       const [hash, queryString] = fullHash.split('?');
 
       // Check query params for verify-email
@@ -201,9 +208,13 @@ export const App: React.FC = () => {
     };
 
     window.addEventListener('hashchange', handleHashChange);
+    window.addEventListener('popstate', handleHashChange);
     handleHashChange(); // Run once on mount
 
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    return () => {
+      window.removeEventListener('hashchange', handleHashChange);
+      window.removeEventListener('popstate', handleHashChange);
+    };
   }, [session]);
 
   const handleNavigate = (route: PageRoute | string, targetId?: string) => {
