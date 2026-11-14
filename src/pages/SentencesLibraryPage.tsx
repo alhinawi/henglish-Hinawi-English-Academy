@@ -331,7 +331,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 <span>مكتبة الـ 5,500 جملة الإنجليزية القياسية • CEFR A1 - C2</span>
               </div>
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight flex items-center gap-3">
-                <span>موسوعة التحدث الإنجليزي الذكية 🌟</span>
+                <span>موسوعة التحدث الإنجليزي الذكية</span>
               </h1>
               <p className="text-sm sm:text-base text-white/70 max-w-2xl leading-relaxed">
                 5,500 جملة واقعية مصنفة بدقة طبقاً للإطار الأوروبي المشترك (CEFR)، ومترجمة للعامية المصرية الفطرية والفصحى مع نطق صوتي فوري وتكرار متباعد SM-2.

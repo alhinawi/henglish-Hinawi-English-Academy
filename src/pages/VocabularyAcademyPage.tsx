@@ -158,7 +158,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية المفردات وقاعدة الكلمات الشاملة 📚
+            أكاديمية المفردات وقاعدة الكلمات الشاملة
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">

@@ -104,7 +104,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-            شهادات الإنجاز الأكاديمي والتحقق الرسمي 📜
+            شهادات الإنجاز الأكاديمي والتحقق الرسمي
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">

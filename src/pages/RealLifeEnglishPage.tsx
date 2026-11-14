@@ -161,7 +161,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             </div>
 
             <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-              إنجليزي المواقف الحقيقية والحياة اليومية 🌍
+              إنجليزي المواقف الحقيقية والحياة اليومية
             </h1>
 
             <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
@@ -451,7 +451,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-black text-white">تهانينا! أتممت سيناريو {scenario.titleAr} بنجاح 🎉</h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">تهانينا! أتممت سيناريو {scenario.titleAr} بنجاح</h2>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
               لقد مارست الحوار بنجاح كمتحدث أصلي وتجاوزت التحديات اللغوية للموقف.
             </p>

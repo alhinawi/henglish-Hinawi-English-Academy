@@ -164,7 +164,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية الكتابة والمراسلات الرسمية ✍️
+            أكاديمية الكتابة والمراسلات الرسمية
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
