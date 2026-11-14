@@ -1598,6 +1598,391 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'I solved a difficult problem at work.', arEg: 'حليت مشكلة صعبة في الشغل.' }],
   },
+  {
+    id: 'daily-bbc-introduce-yourself',
+    movieTitle: 'Easy English Conversations: How to Introduce Yourself',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Beginner Dialogue',
+    cefrLevel: 'A1',
+    sceneTitle: 'Introducing Yourself',
+    sceneDescription: 'درس قصير من BBC بيعلّمك تعرّف عن نفسك بجمل بسيطة وواضحة: الاسم، البلد، والشغل.',
+    youtubeId: 'I_tRSrPru94',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Hello, I\'m Sam. Nice to meet you.',
+    actorName: 'BBC Presenters',
+    characterName: 'Learners',
+    thumbnailUrl: 'https://img.youtube.com/vi/I_tRSrPru94/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Hello, I\'m Sam. Nice to meet you.', arEg: 'أهلاً، أنا سام. سعيد بلقائك.', arFusha: 'مرحباً، أنا سام. سعيد بلقائك.', speaker: 'Sam', keyWords: [{ word: 'nice to meet you', ipa: '', meaningAr: 'سعيد بلقائك', meaningEn: '' }, { word: 'hello', ipa: '', meaningAr: 'أهلاً', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I\'m from London, and I\'m a teacher.', arEg: 'أنا من لندن، وأنا مدرّسة.', arFusha: 'أنا من لندن، وأعمل مدرّسة.', speaker: 'Sam', keyWords: [{ word: 'from', ipa: '', meaningAr: 'من (بلد)', meaningEn: '' }, { word: 'teacher', ipa: '', meaningAr: 'مدرّس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'introduce', type: 'cultural', meaningAr: 'يقدّم / يعرّف', meaningEn: '', egyptianEquivalent: 'يعرّف بنفسه', exampleInScene: 'Let me introduce myself.' },      { term: 'nice to meet you', type: 'cultural', meaningAr: 'سعيد بلقائك', meaningEn: '', egyptianEquivalent: 'تشرفنا', exampleInScene: 'Nice to meet you, Ahmed.' },      { term: 'hometown', type: 'cultural', meaningAr: 'البلدة الأصلية', meaningEn: '', egyptianEquivalent: 'بلدك الأصلية', exampleInScene: 'My hometown is Mansoura.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Sam say when she meets someone new?', questionAr: 'سام بتقول إيه لما بتقابل حد جديد؟', options: ['Nice to meet you', 'See you later', 'Good night', 'How old are you'], correctIndex: 0, explanationAr: 'لما بنقابل حد أول مرة بنقول Nice to meet you يعني سعيد بلقائك.' }
+    ],
+    speakingLines: [{ en: 'Hello, I\'m Sam. Nice to meet you.', arEg: 'أهلاً، أنا سام. سعيد بلقائك.' }, { en: 'I\'m from London, and I\'m a teacher.', arEg: 'أنا من لندن، وأنا مدرّسة.' }],
+  },
+  {
+    id: 'daily-bbc-where-from',
+    movieTitle: 'Easy English Conversations: Saying Where You\'re From',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Beginner Dialogue',
+    cefrLevel: 'A1',
+    sceneTitle: 'Saying Where You\'re From',
+    sceneDescription: 'الحلقة التانية من سلسلة BBC: تسأل وتجاوب على سؤال انت منين بطريقة طبيعية.',
+    youtubeId: '31y2Bq1RYQA',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Where are you from? I\'m from Egypt.',
+    actorName: 'BBC Presenters',
+    characterName: 'Learners',
+    thumbnailUrl: 'https://img.youtube.com/vi/31y2Bq1RYQA/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Where are you from?', arEg: 'انت منين؟', arFusha: 'من أين أنت؟', speaker: 'Presenter', keyWords: [{ word: 'where', ipa: '', meaningAr: 'أين / منين', meaningEn: '' }, { word: 'from', ipa: '', meaningAr: 'من', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I\'m from Cairo, the capital of Egypt.', arEg: 'أنا من القاهرة، عاصمة مصر.', arFusha: 'أنا من القاهرة، عاصمة مصر.', speaker: 'Learner', keyWords: [{ word: 'capital', ipa: '', meaningAr: 'عاصمة', meaningEn: '' }, { word: 'Egypt', ipa: '', meaningAr: 'مصر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'where are you from', type: 'cultural', meaningAr: 'انت منين؟', meaningEn: '', egyptianEquivalent: 'انت منين؟', exampleInScene: 'Where are you from? - I\'m from Giza.' },      { term: 'capital', type: 'cultural', meaningAr: 'عاصمة', meaningEn: '', egyptianEquivalent: 'عاصمة', exampleInScene: 'Cairo is the capital of Egypt.' },      { term: 'be from', type: 'phrasal-verb', meaningAr: 'يكون من (مكان)', meaningEn: '', egyptianEquivalent: 'من بلد كذا', exampleInScene: 'She is from Alexandria.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask someone about their country or city?', questionAr: 'بتسأل حد عن بلده أو مدينته إزاي؟', options: ['Where are you from?', 'What time is it?', 'How much is this?', 'Where is the bathroom?'], correctIndex: 0, explanationAr: 'Where are you from? هي الطريقة المباشرة والمهذبة للسؤال عن بلد أو مدينة الشخص.' }
+    ],
+    speakingLines: [{ en: 'Where are you from?', arEg: 'انت منين؟' }, { en: 'I\'m from Cairo, the capital of Egypt.', arEg: 'أنا من القاهرة، عاصمة مصر.' }],
+  },
+  {
+    id: 'interviews-easyenglish-newyork',
+    movieTitle: 'An Englishman in New York - Easy English',
+    releaseYear: 2019,
+    director: 'Easy English',
+    genre: 'Educational / Real Life',
+    cefrLevel: 'B1',
+    sceneTitle: 'Street Interviews in New York',
+    sceneDescription: 'مقابلات شارع حقيقية في نيويورك مع ناس عادية بتتكلم عن حياتها - تدريب ممتاز على اللهجة الأمريكية الطبيعية.',
+    youtubeId: 'M380ySm1vOk',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Easy English (Official)',
+    dialogueQuote: 'What do you like most about New York?',
+    actorName: 'Easy English Team',
+    characterName: 'Interviewees',
+    thumbnailUrl: 'https://img.youtube.com/vi/M380ySm1vOk/hqdefault.jpg',
+    category: 'interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'What do you like most about New York?', arEg: 'إيه أكتر حاجة بتحبها في نيويورك؟', arFusha: 'ما أكثر شيء يعجبك في نيويورك؟', speaker: 'Interviewer', keyWords: [{ word: 'most', ipa: '', meaningAr: 'الأكثر', meaningEn: '' }, { word: 'like', ipa: '', meaningAr: 'يحب', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'I love the energy and the people here.', arEg: 'بحب الطاقة والناس هنا.', arFusha: 'أحب حيوية المدينة والناس هنا.', speaker: 'Interviewee', keyWords: [{ word: 'energy', ipa: '', meaningAr: 'طاقة / حيوية', meaningEn: '' }, { word: 'people', ipa: '', meaningAr: 'ناس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'energy', type: 'cultural', meaningAr: 'طاقة / حيوية', meaningEn: '', egyptianEquivalent: 'حيوية', exampleInScene: 'The city is full of energy.' },      { term: 'like most', type: 'cultural', meaningAr: 'أكتر حاجة بيحبها', meaningEn: '', egyptianEquivalent: 'أكتر حاجة', exampleInScene: 'What do you like most about your job?' },      { term: 'diverse', type: 'cultural', meaningAr: 'متنوع', meaningEn: '', egyptianEquivalent: 'متنوع', exampleInScene: 'New York is a very diverse city.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does the interviewee love about New York?', questionAr: 'المتكلم بيحب إيه في نيويورك؟', options: ['The energy and the people', 'The weather', 'The traffic', 'The prices'], correctIndex: 0, explanationAr: 'قال I love the energy and the people here يعني بيحب حيوية المدينة وناسها.' }
+    ],
+    speakingLines: [{ en: 'What do you like most about New York?', arEg: 'إيه أكتر حاجة بتحبها في نيويورك؟' }, { en: 'I love the energy and the people here.', arEg: 'بحب الطاقة والناس هنا.' }],
+  },
+  {
+    id: 'travel-train-station',
+    movieTitle: 'At the Train Station - Easy English Conversation',
+    releaseYear: 2023,
+    director: 'EasyTalk English',
+    genre: 'Travel Dialogue',
+    cefrLevel: 'A2',
+    sceneTitle: 'Buying a Train Ticket',
+    sceneDescription: 'حوار عملي في محطة القطر: شراء تذكرة، السؤال عن المواعيد والرصيف - كل الجمل اللي محتاجها في السفر.',
+    youtubeId: 'PDv7Q8eiDUQ',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'EasyTalk English (Official)',
+    dialogueQuote: 'A one-way ticket to Alexandria, please.',
+    actorName: 'EasyTalk English',
+    characterName: 'Traveller & Clerk',
+    thumbnailUrl: 'https://img.youtube.com/vi/PDv7Q8eiDUQ/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'EasyTalk English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'A one-way ticket to Alexandria, please.', arEg: 'تذكرة ذهاب بس لإسكندرية، من فضلك.', arFusha: 'تذكرة ذهاب فقط إلى الإسكندرية، من فضلك.', speaker: 'Traveller', keyWords: [{ word: 'one-way ticket', ipa: '', meaningAr: 'تذكرة ذهاب فقط', meaningEn: '' }, { word: 'please', ipa: '', meaningAr: 'من فضلك', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'The train leaves from platform three at ten thirty.', arEg: 'القطر بيتحرك من رصيف تلاتة الساعة عشرة ونص.', arFusha: 'يغادر القطار من الرصيف رقم ثلاثة في العاشرة والنصف.', speaker: 'Clerk', keyWords: [{ word: 'platform', ipa: '', meaningAr: 'رصيف', meaningEn: '' }, { word: 'leaves', ipa: '', meaningAr: 'يتحرك / يغادر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'one-way ticket', type: 'collocation', meaningAr: 'تذكرة ذهاب فقط', meaningEn: '', egyptianEquivalent: 'تذكرة رايح بس', exampleInScene: 'A one-way ticket to Cairo, please.' },      { term: 'platform', type: 'cultural', meaningAr: 'رصيف (محطة)', meaningEn: '', egyptianEquivalent: 'رصيف', exampleInScene: 'The train is at platform two.' },      { term: 'depart', type: 'cultural', meaningAr: 'يغادر / يتحرك', meaningEn: '', egyptianEquivalent: 'يتحرك', exampleInScene: 'The train departs at nine.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where does the train leave from?', questionAr: 'القطر بيتحرك منين؟', options: ['Platform three', 'Platform thirteen', 'The airport', 'Gate five'], correctIndex: 0, explanationAr: 'الموظف قال platform three يعني رصيف رقم تلاتة.' }
+    ],
+    speakingLines: [{ en: 'A one-way ticket to Alexandria, please.', arEg: 'تذكرة ذهاب بس لإسكندرية، من فضلك.' }, { en: 'The train leaves from platform three at ten thirty.', arEg: 'القطر بيتحرك من رصيف تلاتة الساعة عشرة ونص.' }],
+  },
+  {
+    id: 'job-bbc-english-at-work-interview',
+    movieTitle: 'BBC English at Work: How to Prepare for an Interview',
+    releaseYear: 2016,
+    director: 'BBC Learning English',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Interview Preparation',
+    sceneDescription: 'من سلسلة BBC English at Work: نصايح عملية للتحضير لمقابلة شغل بالإنجليزي والرد على الأسئلة الشائعة.',
+    youtubeId: 'KN2jyw6D1ak',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Research the company before your interview.',
+    actorName: 'BBC Learning English',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/KN2jyw6D1ak/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Research the company before your interview.', arEg: 'اعمل بحث عن الشركة قبل المقابلة.', arFusha: 'ابحث عن الشركة قبل المقابلة.', speaker: 'Presenter', keyWords: [{ word: 'research', ipa: '', meaningAr: 'يبحث عن', meaningEn: '' }, { word: 'company', ipa: '', meaningAr: 'شركة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Prepare examples of your achievements and skills.', arEg: 'جهّز أمثلة على إنجازاتك ومهاراتك.', arFusha: 'جهّز أمثلة على إنجازاتك ومهاراتك.', speaker: 'Presenter', keyWords: [{ word: 'achievements', ipa: '', meaningAr: 'إنجازات', meaningEn: '' }, { word: 'skills', ipa: '', meaningAr: 'مهارات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'research', type: 'cultural', meaningAr: 'يبحث عن / يدرس', meaningEn: '', egyptianEquivalent: 'يدور على معلومات عن', exampleInScene: 'Research the company online.' },      { term: 'achievement', type: 'cultural', meaningAr: 'إنجاز', meaningEn: '', egyptianEquivalent: 'إنجاز', exampleInScene: 'Tell me about your achievements.' },      { term: 'prepare', type: 'cultural', meaningAr: 'يحضّر / يجهّز', meaningEn: '', egyptianEquivalent: 'يجهّز', exampleInScene: 'Prepare your answers before the interview.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you do before a job interview?', questionAr: 'المفروض تعمل إيه قبل مقابلة الشغل؟', options: ['Research the company', 'Sleep late', 'Wear pajamas', 'Skip breakfast'], correctIndex: 0, explanationAr: 'النصيحة الأساسية: اعمل research عن الشركة قبل ما تروح المقابلة.' }
+    ],
+    speakingLines: [{ en: 'Research the company before your interview.', arEg: 'اعمل بحث عن الشركة قبل المقابلة.' }, { en: 'Prepare examples of your achievements and skills.', arEg: 'جهّز أمثلة على إنجازاتك ومهاراتك.' }],
+  },
+  {
+    id: 'listening-bbc-art-of-conversation',
+    movieTitle: '6 Minute English: The Art of Conversation',
+    releaseYear: 2022,
+    director: 'BBC Learning English',
+    genre: 'Educational Podcast',
+    cefrLevel: 'B2',
+    sceneTitle: 'What Makes a Good Conversation?',
+    sceneDescription: 'حلقة 6 Minute English عن فن المحادثة: إزاي تسأل أسئلة مفتوحة وتسمع كويس - مفردات غنية ونطق بريطاني واضح.',
+    youtubeId: 'xGhbhWUqL-w',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'A good conversation is like a game of tennis.',
+    actorName: 'BBC Presenters',
+    characterName: 'Hosts',
+    thumbnailUrl: 'https://img.youtube.com/vi/xGhbhWUqL-w/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'A good conversation is like a game of tennis.', arEg: 'المحادثة الكويسة زي لعبة تنس.', arFusha: 'المحادثة الجيدة تشبه مباراة تنس.', speaker: 'Host', keyWords: [{ word: 'conversation', ipa: '', meaningAr: 'محادثة', meaningEn: '' }, { word: 'like', ipa: '', meaningAr: 'زي / مثل', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'You listen, then you respond.', arEg: 'بتسمع، وبعدين بترد.', arFusha: 'تستمع، ثم ترد.', speaker: 'Host', keyWords: [{ word: 'listen', ipa: '', meaningAr: 'يسمع', meaningEn: '' }, { word: 'respond', ipa: '', meaningAr: 'يرد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'conversation', type: 'cultural', meaningAr: 'محادثة', meaningEn: '', egyptianEquivalent: 'كلام / دردشة', exampleInScene: 'We had a nice conversation.' },      { term: 'respond', type: 'cultural', meaningAr: 'يرد / يستجيب', meaningEn: '', egyptianEquivalent: 'يرد', exampleInScene: 'She responded quickly.' },      { term: 'open question', type: 'collocation', meaningAr: 'سؤال مفتوح', meaningEn: '', egyptianEquivalent: 'سؤال مفتوح', exampleInScene: 'Ask open questions to keep talking.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a good conversation compared to?', questionAr: 'المحادثة الكويسة اتشبهت بإيه؟', options: ['A game of tennis', 'A long movie', 'A busy street', 'A hard exam'], correctIndex: 0, explanationAr: 'اتشبهت بلعبة التنس: واحد يسمع والتاني يرد، بالتبادل.' }
+    ],
+    speakingLines: [{ en: 'A good conversation is like a game of tennis.', arEg: 'المحادثة الكويسة زي لعبة تنس.' }, { en: 'You listen, then you respond.', arEg: 'بتسمع، وبعدين بترد.' }],
+  },
+  {
+    id: 'speech-steve-jobs-stanford',
+    movieTitle: 'Steve Jobs: Stanford Commencement Speech (with Subtitles)',
+    releaseYear: 2005,
+    director: 'Stanford University',
+    genre: 'Inspirational / Speech',
+    cefrLevel: 'C1',
+    sceneTitle: 'Connecting the Dots',
+    sceneDescription: 'أشهر خطاب لستيف جوبز في جامعة ستانفورد: حكاية النقاط اللي بتتوصل بعدين - إنجليزي أمريكي راقي وواضح.',
+    youtubeId: '1i9kcBHX2Nw',
+    startTime: 60,
+    endTime: 180,
+    clipDuration: '2:00',
+    videoSource: 'English Speeches (Official)',
+    dialogueQuote: 'You can\'t connect the dots looking forward.',
+    actorName: 'Steve Jobs',
+    characterName: 'Steve Jobs',
+    thumbnailUrl: 'https://img.youtube.com/vi/1i9kcBHX2Nw/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speeches Official',
+    subtitles: [
+      { id: 'sub-1', start: 65, end: 80, en: 'You can\'t connect the dots looking forward.', arEg: 'مش هتقدر تربط النقاط وانت باصص قدام.', arFusha: 'لا يمكنك ربط النقاط وأنت تنظر إلى الأمام.', speaker: 'Steve Jobs', keyWords: [{ word: 'connect', ipa: '', meaningAr: 'يربط', meaningEn: '' }, { word: 'dots', ipa: '', meaningAr: 'نقاط', meaningEn: '' }] },      { id: 'sub-2', start: 90, end: 105, en: 'You can only connect them looking backwards.', arEg: 'تقدر تربطها بس وانت باصص ورا.', arFusha: 'يمكنك ربطها فقط وأنت تنظر إلى الخلف.', speaker: 'Steve Jobs', keyWords: [{ word: 'backwards', ipa: '', meaningAr: 'للخلف / ورا', meaningEn: '' }, { word: 'only', ipa: '', meaningAr: 'فقط', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'connect the dots', type: 'idiom', meaningAr: 'يربط الأحداث ببعضها / يفهم الصورة كاملة', meaningEn: '', egyptianEquivalent: 'يلم الخيوط على بعضها', exampleInScene: 'Only later did I connect the dots.' },      { term: 'look forward', type: 'phrasal-verb', meaningAr: 'يبص قدام / يتطلع للمستقبل', meaningEn: '', egyptianEquivalent: 'يبص قدام', exampleInScene: 'Looking forward, anything is possible.' },      { term: 'trust', type: 'cultural', meaningAr: 'يثق', meaningEn: '', egyptianEquivalent: 'يثق', exampleInScene: 'You have to trust in something.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'According to Steve Jobs, when can you connect the dots?', questionAr: 'حسب ستيف جوبز، امتى تقدر تربط النقاط؟', options: ['Looking backwards', 'Looking forward', 'While sleeping', 'Before they happen'], correctIndex: 0, explanationAr: 'قال You can only connect them looking backwards يعني المعنى بيبان لما تبص ورا.' }
+    ],
+    speakingLines: [{ en: 'You can\'t connect the dots looking forward.', arEg: 'مش هتقدر تربط النقاط وانت باصص قدام.' }, { en: 'You can only connect them looking backwards.', arEg: 'تقدر تربطها بس وانت باصص ورا.' }],
+  },
+  {
+    id: 'speech-emma-watson-equality',
+    movieTitle: 'Emma Watson: Gender Equality Speech (with Subtitles)',
+    releaseYear: 2014,
+    director: 'UN Women',
+    genre: 'Inspirational / Speech',
+    cefrLevel: 'B2',
+    sceneTitle: 'HeForShe at the UN',
+    sceneDescription: 'خطاب إيما واتسون في الأمم المتحدة عن المساواة - نطق بريطاني فصيح ومفردات رسمية مفيدة للمستوى المتقدم.',
+    youtubeId: 'nIwU-9ZTTJc',
+    startTime: 45,
+    endTime: 165,
+    clipDuration: '2:00',
+    videoSource: 'English Speeches (Official)',
+    dialogueQuote: 'Both men and women should feel free to be sensitive.',
+    actorName: 'Emma Watson',
+    characterName: 'Emma Watson',
+    thumbnailUrl: 'https://img.youtube.com/vi/nIwU-9ZTTJc/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speeches Official',
+    subtitles: [
+      { id: 'sub-1', start: 50, end: 65, en: 'Both men and women should feel free to be sensitive.', arEg: 'الرجالة والستات الاتنين المفروض يحسوا إنهم أحرار إنهم يكونوا حساسين.', arFusha: 'يجب أن يشعر الرجال والنساء معاً بالحرية في أن يكونوا حساسين.', speaker: 'Emma Watson', keyWords: [{ word: 'both', ipa: '', meaningAr: 'الاتنين', meaningEn: '' }, { word: 'sensitive', ipa: '', meaningAr: 'حساس', meaningEn: '' }] },      { id: 'sub-2', start: 75, end: 90, en: 'Gender equality is your issue too.', arEg: 'المساواة بين الجنسين قضيتك انت كمان.', arFusha: 'المساواة بين الجنسين قضيتك أنت أيضاً.', speaker: 'Emma Watson', keyWords: [{ word: 'equality', ipa: '', meaningAr: 'مساواة', meaningEn: '' }, { word: 'issue', ipa: '', meaningAr: 'قضية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'gender equality', type: 'collocation', meaningAr: 'المساواة بين الجنسين', meaningEn: '', egyptianEquivalent: 'المساواة', exampleInScene: 'Gender equality matters everywhere.' },      { term: 'sensitive', type: 'cultural', meaningAr: 'حساس', meaningEn: '', egyptianEquivalent: 'حساس', exampleInScene: 'It\'s okay to be sensitive.' },      { term: 'issue', type: 'cultural', meaningAr: 'قضية / مشكلة', meaningEn: '', egyptianEquivalent: 'قضية', exampleInScene: 'This is your issue too.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is Emma Watson\'s main message?', questionAr: 'إيه الرسالة الأساسية لإيما واتسون؟', options: ['Gender equality concerns everyone', 'Only women should change', 'Men should stay silent', 'Equality is impossible'], correctIndex: 0, explanationAr: 'قالت Gender equality is your issue too يعني المساواة قضية تخص الكل.' }
+    ],
+    speakingLines: [{ en: 'Both men and women should feel free to be sensitive.', arEg: 'الرجالة والستات الاتنين المفروض يحسوا إنهم أحرار إنهم يكونوا حساسين.' }, { en: 'Gender equality is your issue too.', arEg: 'المساواة بين الجنسين قضيتك انت كمان.' }],
+  },
+  {
+    id: 'speech-tom-hanks-human',
+    movieTitle: 'Tom Hanks: We Are All But Human (with Subtitles)',
+    releaseYear: 2019,
+    director: 'English Speeches',
+    genre: 'Inspirational / Speech',
+    cefrLevel: 'B2',
+    sceneTitle: 'On Being Human',
+    sceneDescription: 'توم هانكس بيتكلم عن الإنسانية واللطف - ممثل بيوضح كلامه، مثالي للتدريب على الإنجليزي الأمريكي المعبّر.',
+    youtubeId: '71c6FmZwCW4',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English Speeches (Official)',
+    dialogueQuote: 'We are all but human, and we all make mistakes.',
+    actorName: 'Tom Hanks',
+    characterName: 'Tom Hanks',
+    thumbnailUrl: 'https://img.youtube.com/vi/71c6FmZwCW4/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speeches Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'We are all but human, and we all make mistakes.', arEg: 'كلنا في الآخر بشر، وكلنا بنغلط.', arFusha: 'جميعنا بشر في النهاية، وجميعنا نخطئ.', speaker: 'Tom Hanks', keyWords: [{ word: 'human', ipa: '', meaningAr: 'بشر / إنسان', meaningEn: '' }, { word: 'make mistakes', ipa: '', meaningAr: 'يغلط', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Kindness is the language everyone understands.', arEg: 'اللطف هو اللغة اللي الكل بيفهمها.', arFusha: 'اللطف هو اللغة التي يفهمها الجميع.', speaker: 'Tom Hanks', keyWords: [{ word: 'kindness', ipa: '', meaningAr: 'لطف', meaningEn: '' }, { word: 'understand', ipa: '', meaningAr: 'يفهم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'kindness', type: 'cultural', meaningAr: 'لطف / طيبة', meaningEn: '', egyptianEquivalent: 'جدعنة', exampleInScene: 'Kindness costs nothing.' },      { term: 'make a mistake', type: 'collocation', meaningAr: 'يغلط', meaningEn: '', egyptianEquivalent: 'يغلط', exampleInScene: 'Everyone makes mistakes.' },      { term: 'understand', type: 'cultural', meaningAr: 'يفهم', meaningEn: '', egyptianEquivalent: 'يفهم', exampleInScene: 'I understand you perfectly.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Tom Hanks say everyone understands?', questionAr: 'توم هانكس قال إن إيه اللي الكل بيفهمه؟', options: ['Kindness', 'Money', 'Fear', 'Anger'], correctIndex: 0, explanationAr: 'قال Kindness is the language everyone understands يعني اللطف لغة الكل.' }
+    ],
+    speakingLines: [{ en: 'We are all but human, and we all make mistakes.', arEg: 'كلنا في الآخر بشر، وكلنا بنغلط.' }, { en: 'Kindness is the language everyone understands.', arEg: 'اللطف هو اللغة اللي الكل بيفهمها.' }],
+  },
+  {
+    id: 'pron-bbc-fast-speech',
+    movieTitle: 'BBC Live Class: Understand Native Speakers When They Talk Quickly',
+    releaseYear: 2021,
+    director: 'BBC Learning English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Connected Speech Secrets',
+    sceneDescription: 'كلاس مباشر من BBC بيشرح إزاي الناطقين الأصليين بيربطوا الكلمات - سر فهم الكلام السريع.',
+    youtubeId: '3zN7TjX7h18',
+    startTime: 60,
+    endTime: 180,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Native speakers link words together.',
+    actorName: 'BBC Presenters',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/3zN7TjX7h18/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 65, end: 80, en: 'Native speakers link words together.', arEg: 'الناطقين الأصليين بيربطوا الكلمات ببعضها.', arFusha: 'يربط الناطقون الأصليون الكلمات ببعضها.', speaker: 'Teacher', keyWords: [{ word: 'link', ipa: '', meaningAr: 'يربط', meaningEn: '' }, { word: 'together', ipa: '', meaningAr: 'مع بعض', meaningEn: '' }] },      { id: 'sub-2', start: 90, end: 105, en: 'What do you becomes whaddaya in fast speech.', arEg: 'What do you بتتحول لـ whaddaya في الكلام السريع.', arFusha: 'تتحول What do you إلى whaddaya في الكلام السريع.', speaker: 'Teacher', keyWords: [{ word: 'fast speech', ipa: '', meaningAr: 'الكلام السريع', meaningEn: '' }, { word: 'become', ipa: '', meaningAr: 'يصبح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'link', type: 'cultural', meaningAr: 'يربط (في النطق)', meaningEn: '', egyptianEquivalent: 'يلزق الكلمات في بعض', exampleInScene: 'Link the words when you speak.' },      { term: 'connected speech', type: 'collocation', meaningAr: 'الكلام المتواصل / المربوط', meaningEn: '', egyptianEquivalent: 'الكلام الملزوق في بعض', exampleInScene: 'Connected speech is hard for learners.' },      { term: 'native speaker', type: 'cultural', meaningAr: 'ناطق أصلي', meaningEn: '', egyptianEquivalent: 'واحد لغته الأم', exampleInScene: 'Listen to native speakers daily.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What happens to \'What do you\' in fast speech?', questionAr: 'بيحصل إيه لـ What do you في الكلام السريع؟', options: ['It becomes whaddaya', 'It disappears', 'It gets louder', 'It stays the same'], correctIndex: 0, explanationAr: 'في الكلام السريع بتنطق whaddaya - دي ظاهرة الربط في النطق.' }
+    ],
+    speakingLines: [{ en: 'Native speakers link words together.', arEg: 'الناطقين الأصليين بيربطوا الكلمات ببعضها.' }, { en: 'What do you becomes whaddaya in fast speech.', arEg: 'What do you بتتحول لـ whaddaya في الكلام السريع.' }],
+  },
+  {
+    id: 'sitcom-friends-learn-english',
+    movieTitle: 'Learn English with Friends - TV Series Lesson',
+    releaseYear: 2019,
+    director: 'Learn English With TV Series',
+    genre: 'TV Lesson / Sitcom Learning',
+    cefrLevel: 'A2',
+    sceneTitle: 'Friends: Everyday Humor',
+    sceneDescription: 'درس مبني على مشاهد من فريندز: كلام يومي، نكتة أمريكية، وتعبيرات بتتقال في كل بيت.',
+    youtubeId: 'L5RgaKQLChw',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'How you doin\'?',
+    actorName: 'Cast of Friends',
+    characterName: 'Joey',
+    thumbnailUrl: 'https://img.youtube.com/vi/L5RgaKQLChw/hqdefault.jpg',
+    category: 'sitcoms',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'How you doin\'?', arEg: 'عامل إيه؟ / إزيك؟', arFusha: 'كيف حالك؟', speaker: 'Joey', keyWords: [{ word: 'how', ipa: '', meaningAr: 'إزاي', meaningEn: '' }, { word: 'doing', ipa: '', meaningAr: 'عامل (من do)', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Could this be any more boring?', arEg: 'ممكن يكون أمل من كده؟', arFusha: 'هل يمكن أن يكون هذا أكثر مللاً؟', speaker: 'Chandler', keyWords: [{ word: 'boring', ipa: '', meaningAr: 'ممل', meaningEn: '' }, { word: 'any more', ipa: '', meaningAr: 'أكتر من كده', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'how you doin\'', type: 'cultural', meaningAr: 'إزيك؟ (تحية غير رسمية)', meaningEn: '', egyptianEquivalent: 'عامل إيه؟', exampleInScene: 'How you doin\', man?' },      { term: 'boring', type: 'cultural', meaningAr: 'ممل', meaningEn: '', egyptianEquivalent: 'ممل', exampleInScene: 'The movie was boring.' },      { term: 'hang out', type: 'phrasal-verb', meaningAr: 'يقضي وقت مع أصحابه', meaningEn: '', egyptianEquivalent: 'يقعد مع صحابه', exampleInScene: 'Let\'s hang out this weekend.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'How you doin\'?\' mean?', questionAr: 'معنى How you doin\'؟', options: ['إزيك؟', 'فينك؟', 'مع السلامة', 'إيه الأخبار الجديدة؟'], correctIndex: 0, explanationAr: 'تحية غير رسمية مشهورة معناها إزيك أو عامل إيه، اشتهر بيها جوي من فريندز.' }
+    ],
+    speakingLines: [{ en: 'How you doin\'?', arEg: 'عامل إيه؟' }, { en: 'Could this be any more boring?', arEg: 'ممكن يكون أمل من كده؟' }],
+  },
 ];
 
 // Helper to get all videos
