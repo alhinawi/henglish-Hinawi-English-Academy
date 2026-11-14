@@ -10,7 +10,8 @@ import {
   BookOpen, 
   Volume2, 
   CheckCircle2, 
-  AlertTriangle, 
+  AlertTriangle,
+  Lightbulb, 
   ChevronDown, 
   Filter, 
   ArrowRight,
@@ -96,7 +97,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-            أكاديمية قواعد اللغة الإنجليزية بالكامل 🦅
+            أكاديمية قواعد اللغة الإنجليزية بالكامل 
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
@@ -283,7 +284,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                             className="px-4 py-1.5 rounded-xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] text-xs font-black hover:brightness-110 flex items-center gap-1.5 shadow-md cursor-pointer transition-transform hover:-translate-y-0.5"
                           >
                             <BookOpen className="w-3.5 h-3.5" />
-                            <span>ابدأ الدرس التعليمي الكامل 📖</span>
+                            <span>ابدأ الدرس التعليمي الكامل </span>
                           </button>
 
                           {rule.id === 'future-perfect' && (
@@ -337,7 +338,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                               }}
                               className="px-5 py-2.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] text-xs font-black hover:brightness-110 shadow-lg cursor-pointer transition-transform shrink-0 flex items-center gap-1.5"
                             >
-                              <span>فتح نظرة عامة على الكورس 👑</span>
+                              <span>فتح نظرة عامة على الكورس </span>
                               <ArrowRight className="w-4 h-4 rotate-180" />
                             </button>
                           </div>
@@ -414,7 +415,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                           <ul className="space-y-2 text-xs sm:text-sm text-white leading-relaxed">
                             {rule.egyptianTips.map((tip, tIdx) => (
                               <li key={tIdx} className="flex items-start gap-2">
-                                <span className="text-[#ffd166] font-black">💡</span>
+                                <Lightbulb className="w-4 h-4 mt-0.5 shrink-0 text-[#ffd166]" />
                                 <span>{tip}</span>
                               </li>
                             ))}
@@ -432,7 +433,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                           <ul className="space-y-1.5 text-xs text-[#dedbf4]">
                             {rule.commonTraps.map((trap, trapIdx) => (
                               <li key={trapIdx} className="flex items-start gap-2">
-                                <span className="text-[#ff4f9a] font-bold">⚠️</span>
+                                <AlertTriangle className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[#ff4f9a]" />
                                 <span>{trap}</span>
                               </li>
                             ))}
@@ -538,7 +539,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                                       ? 'bg-[#c4ff55]/10 border border-[#c4ff55]/30 text-[#c4ff55]' 
                                       : 'bg-[#ff4f9a]/10 border border-[#ff4f9a]/30 text-[#ff8bb9]'
                                   }`}>
-                                    <strong className="text-[#ffd166]">{isCorrect ? '✅ إجابة رائعة: ' : '💡 انتبه: '}</strong>
+                                    <strong className="text-[#ffd166]">{isCorrect ? 'إجابة رائعة: ' : 'انتبه: '}</strong>
                                     {q.explanation}
                                   </div>
                                 )}
