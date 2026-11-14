@@ -9,7 +9,15 @@ import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { generateWordFormationRound, GameQuestion } from '../../services/gameGenerationService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration, speakEnglish } from '../../utils/audio';
-import { FlaskConical, Sparkles, Volume2, ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
+import {
+  FlaskConical,
+  Sparkles,
+  Volume2,
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+  Loader2,
+} from 'lucide-react';
 
 interface WordFormationLabGameProps {
   onExit: () => void;
@@ -134,7 +142,7 @@ export const WordFormationLabGame: React.FC<WordFormationLabGameProps> = ({ onEx
   if (isLoading) {
     return (
       <div className="glass-panel p-12 rounded-3xl text-center space-y-4 max-w-xl mx-auto border border-white/10">
-        <div className="text-5xl animate-bounce">🧪</div>
+        <Loader2 className="w-12 h-12 mx-auto text-[#41e7ff] animate-spin" />
         <h3 className="text-xl font-black text-white font-['Cairo',sans-serif]">
           جارٍ تحضير معمل اشتقاق الكلمات...
         </h3>
@@ -148,7 +156,7 @@ export const WordFormationLabGame: React.FC<WordFormationLabGameProps> = ({ onEx
   return (
     <div className="max-w-2xl mx-auto space-y-6 text-right">
       <GameHud
-        title="معمل اشتقاق الكلمات 🧪"
+        title="معمل اشتقاق الكلمات"
         category="vocabulary"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}

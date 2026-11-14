@@ -174,7 +174,7 @@ export const SentenceBuilderGame: React.FC<SentenceBuilderGameProps> = ({
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <GameHud
-        title="معمل تركيب الجمل 🧩"
+        title="معمل تركيب الجمل"
         category="القواعد (Grammar)"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -251,7 +251,7 @@ export const SentenceBuilderGame: React.FC<SentenceBuilderGameProps> = ({
                 className="py-3 px-8 rounded-2xl bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-sm flex items-center gap-2 cursor-pointer shadow-lg hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
               >
                 <CheckCircle2 className="w-4 h-4" />
-                <span>فحص صحة الجملة 🚀</span>
+                <span>فحص صحة الجملة</span>
               </button>
             </div>
           ) : (
@@ -264,7 +264,7 @@ export const SentenceBuilderGame: React.FC<SentenceBuilderGameProps> = ({
                 }`}
               >
                 <div className="flex items-center justify-between font-bold">
-                  <span>{isCorrect ? 'تركيب سليم واحترافي! ✅' : 'الترتيب غير دقيق ❌'}</span>
+                  <span>{isCorrect ? 'تركيب سليم واحترافي!' : 'الترتيب غير دقيق'}</span>
                   <button
                     onClick={() => speakEnglish(currentQ.correctAnswer)}
                     className="p-1.5 rounded-lg bg-white/10 text-[#41e7ff] hover:bg-white/20 cursor-pointer"
@@ -295,7 +295,7 @@ export const SentenceBuilderGame: React.FC<SentenceBuilderGameProps> = ({
       {/* Results Modal */}
       {gameResult && (
         <GameResultsModal
-          title="معمل تركيب الجمل 🧩"
+          title="معمل تركيب الجمل"
           score={score}
           maxScore={questions.length * 20}
           accuracy={gameResult.accuracy}

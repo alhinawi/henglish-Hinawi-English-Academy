@@ -235,7 +235,7 @@ export const VocabularyExplorer: React.FC = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between text-xs text-white/60 font-bold">
             <span>المستوى الأوروبي المرجعي (CEFR Level):</span>
-            <span className="text-[11px] text-[#41e7ff]">A1 → C2</span>
+            <span className="text-[11px] text-[#41e7ff]">A1C2</span>
           </div>
           <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
             {CEFR_OPTIONS.map(c => (
@@ -316,8 +316,8 @@ export const VocabularyExplorer: React.FC = () => {
               className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
             >
               <option value="all" className="bg-[#121124]">الكل (All Audio)</option>
-              <option value="has_us" className="bg-[#121124]">صوت أمريكي 🇺🇸</option>
-              <option value="has_uk" className="bg-[#121124]">صوت بريطاني 🇬🇧</option>
+              <option value="has_us" className="bg-[#121124]">صوت أمريكي</option>
+              <option value="has_uk" className="bg-[#121124]">صوت بريطاني</option>
               <option value="has_both" className="bg-[#121124]">صوت مزدوج (US + UK)</option>
             </select>
           </div>
@@ -331,10 +331,10 @@ export const VocabularyExplorer: React.FC = () => {
               className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
             >
               <option value="popular" className="bg-[#121124]">الأكثر استخداماً (Default)</option>
-              <option value="alpha_asc" className="bg-[#121124]">أبجدياً A → Z</option>
-              <option value="alpha_desc" className="bg-[#121124]">أبجدياً Z → A</option>
-              <option value="cefr_asc" className="bg-[#121124]">المستوى A1 → C2</option>
-              <option value="cefr_desc" className="bg-[#121124]">المستوى C2 → A1</option>
+              <option value="alpha_asc" className="bg-[#121124]">أبجدياً AZ</option>
+              <option value="alpha_desc" className="bg-[#121124]">أبجدياً ZA</option>
+              <option value="cefr_asc" className="bg-[#121124]">المستوى A1C2</option>
+              <option value="cefr_desc" className="bg-[#121124]">المستوى C2A1</option>
             </select>
           </div>
         </div>

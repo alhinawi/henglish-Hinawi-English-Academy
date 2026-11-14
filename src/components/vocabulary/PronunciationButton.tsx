@@ -92,7 +92,7 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
           isPlaying ? 'bg-black/25 text-white' : colorStyles.badgeBg
         }`}
       >
-        {isUS ? 'US 🇺🇸' : 'UK 🇬🇧'}
+        {isUS ? 'US' : 'UK'}
       </span>
 
       {/* Play/Loading/Waveform Icon */}

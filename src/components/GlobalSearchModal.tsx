@@ -146,7 +146,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
                 </div>
                 <div>
                   <div className="text-xs font-black text-white group-hover:text-[#41e7ff] transition-colors">
-                    استوديو الترجمة AI 🌐
+                    استوديو الترجمة AI
                   </div>
                   <div className="text-[10px] text-[#dedbf4]">
                     شرح نحوي، فونيتكس، ومستندات
@@ -185,7 +185,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
                 </div>
                 <div>
                   <div className="text-xs font-black text-white group-hover:text-[#ff4f9a] transition-colors">
-                    اتعلم من الأفلام 🎬
+                    اتعلم من الأفلام
                   </div>
                   <div className="text-[10px] text-[#dedbf4]">
                     ابحث بجمل المشاهد وتدرّب مع الفيديو
@@ -267,7 +267,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
                     className="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-right transition-all cursor-pointer"
                   >
                     <div className="en font-bold text-sm text-[#41e7ff]">
-                      {v.v1} → <span className="text-[#c4ff55]">{v.v3}</span>
+                      {v.v1}<span className="text-[#c4ff55]">{v.v3}</span>
                     </div>
                     <div className="text-xs text-[#b9b6d5] mt-0.5">
                       {v.meaningAr}

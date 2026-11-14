@@ -104,7 +104,7 @@ export const GamesPage: React.FC = () => {
           }`}
         >
           <Swords className="w-4 h-4 text-[#ffd166]" />
-          <span>مبارزة الذكاء الاصطناعي ⚔️</span>
+          <span>مبارزة الذكاء الاصطناعي</span>
         </button>
 
         <button
@@ -118,7 +118,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          🏰 برج القواعد
+         برج القواعد
         </button>
 
         <button
@@ -132,7 +132,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          ⚡ سباق V3
+         سباق V3
         </button>
 
         <button
@@ -146,7 +146,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          ⚡ سباق المفردات
+         سباق المفردات
         </button>
 
         <button
@@ -160,7 +160,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          🎯 صائد الأخطاء
+         صائد الأخطاء
         </button>
 
         <button
@@ -174,7 +174,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          ✍️ تحدي التهجئة
+         تحدي التهجئة
         </button>
 
         <button
@@ -188,7 +188,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          🕵️ المحقق اللغوي
+         المحقق اللغوي
         </button>
 
         <button
@@ -202,7 +202,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          🧩 تركيب الجمل
+         تركيب الجمل
         </button>
 
         <button
@@ -216,7 +216,7 @@ export const GamesPage: React.FC = () => {
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
           }`}
         >
-          🃏 بطاقات الذاكرة
+         بطاقات الذاكرة
         </button>
       </div>
 
@@ -321,9 +321,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="synonym-hunter"
           title="Synonym Arena"
-          titleAr="معركة المترادفات 🏹"
+          titleAr="معركة المترادفات"
           category="vocabulary"
-          icon="🏹"
+          icon=""
           badge="Synonym Champion"
           durationSeconds={40}
           questionCount={6}
@@ -337,9 +337,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="antonym-arena"
           title="Antonym Arena"
-          titleAr="حلبة الأضداد والمعكوسات ⚖️"
+          titleAr="حلبة الأضداد والمعكوسات"
           category="vocabulary"
-          icon="⚖️"
+          icon=""
           badge="Polarity Master"
           durationSeconds={35}
           questionCount={6}
@@ -353,9 +353,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="word-association"
           title="Word Association"
-          titleAr="الروابط الذهنية والدلالية 🔗"
+          titleAr="الروابط الذهنية والدلالية"
           category="vocabulary"
-          icon="🔗"
+          icon=""
           badge="Semantic Linker"
           durationSeconds={40}
           questionCount={5}
@@ -369,9 +369,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="context-master"
           title="Context Master"
-          titleAr="سيد السياق والمواقف 🎭"
+          titleAr="سيد السياق والمواقف"
           category="vocabulary"
-          icon="🎭"
+          icon=""
           badge="Context Sensei"
           durationSeconds={45}
           questionCount={5}
@@ -385,9 +385,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="phrasal-quest"
           title="Phrasal Verb Quest"
-          titleAr="متاهة الأفعال المركبة 🧭"
+          titleAr="متاهة الأفعال المركبة"
           category="vocabulary"
-          icon="🧭"
+          icon=""
           badge="Phrasal Conqueror"
           durationSeconds={50}
           questionCount={6}
@@ -401,9 +401,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="idiom-explorer"
           title="Idiom Explorer"
-          titleAr="مستكشف الأمثال والتعبيرات 🔮"
+          titleAr="مستكشف الأمثال والتعبيرات"
           category="vocabulary"
-          icon="🔮"
+          icon=""
           badge="Idiom Sage"
           durationSeconds={45}
           questionCount={5}
@@ -417,9 +417,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="collocation-challenge"
           title="Collocation Challenge"
-          titleAr="تحدي المتلازمات اللفظية 🤝"
+          titleAr="تحدي المتلازمات اللفظية"
           category="vocabulary"
-          icon="🤝"
+          icon=""
           badge="Natural Collocator"
           durationSeconds={40}
           questionCount={6}
@@ -449,9 +449,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="conditional-architect"
           title="Conditional Architect"
-          titleAr="مهندس الجمل الشرطية 🏗️"
+          titleAr="مهندس الجمل الشرطية"
           category="grammar"
-          icon="🏗️"
+          icon=""
           badge="Condition Builder"
           durationSeconds={45}
           questionCount={5}
@@ -465,9 +465,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="grammar-detective"
           title="Grammar Detective"
-          titleAr="محقق أجزاء الكلام والأفخاخ 🔍"
+          titleAr="محقق أجزاء الكلام والأفخاخ"
           category="grammar"
-          icon="🔍"
+          icon=""
           badge="Syntax Sleuth"
           durationSeconds={45}
           questionCount={5}
@@ -481,9 +481,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="pronunciation-arena"
           title="Pronunciation Arena"
-          titleAr="ساحة الرموز الصوتية IPA 🗣️"
+          titleAr="ساحة الرموز الصوتية IPA"
           category="spelling"
-          icon="🗣️"
+          icon=""
           badge="Phonetics Pro"
           durationSeconds={40}
           questionCount={6}
@@ -497,9 +497,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="minimal-pairs"
           title="Minimal Pairs Challenge"
-          titleAr="تحدي الأزواج الصوتية الدقيقة 🎧"
+          titleAr="تحدي الأزواج الصوتية الدقيقة"
           category="spelling"
-          icon="🎧"
+          icon=""
           badge="Audio Discriminator"
           durationSeconds={35}
           questionCount={6}
@@ -513,9 +513,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="phoneme-match"
           title="Phoneme Match"
-          titleAr="مطابقة الفونيمات والأصوات 🔤"
+          titleAr="مطابقة الفونيمات والأصوات"
           category="spelling"
-          icon="🔤"
+          icon=""
           badge="Phoneme Wizard"
           durationSeconds={40}
           questionCount={5}
@@ -529,9 +529,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="listening-detective"
           title="Listening Detective"
-          titleAr="محقق الاستماع الصوتي 🕵️‍♂️"
+          titleAr="محقق الاستماع الصوتي‍"
           category="listening"
-          icon="🕵️‍♂️"
+          icon="‍"
           badge="Golden Ear"
           durationSeconds={45}
           questionCount={4}
@@ -545,9 +545,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="accent-detective"
           title="Accent Detective"
-          titleAr="محقق اللهجات الأمريكية والبريطانية 🌍"
+          titleAr="محقق اللهجات الأمريكية والبريطانية"
           category="listening"
-          icon="🌍"
+          icon=""
           badge="Accent Sleuth"
           durationSeconds={40}
           questionCount={5}
@@ -561,9 +561,9 @@ export const GamesPage: React.FC = () => {
         <ChoiceGameEngine
           gameId="story-completion"
           title="Story Completion"
-          titleAr="إكمال القصة التفاعلية 🧭"
+          titleAr="إكمال القصة التفاعلية"
           category="reading"
-          icon="🧭"
+          icon=""
           badge="Narrative Master"
           durationSeconds={50}
           questionCount={4}

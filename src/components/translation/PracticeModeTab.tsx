@@ -138,8 +138,8 @@ export const PracticeModeTab: React.FC<PracticeModeTabProps> = ({
           <span className="text-[#b9b6d5] ml-1">الاتجاه:</span>
           {[
             { id: 'all', label: 'الكل' },
-            { id: 'ar-to-en', label: 'عربي ⬅️ إنجليزي' },
-            { id: 'en-to-ar', label: 'إنجليزي ⬅️ عربي' },
+            { id: 'ar-to-en', label: 'عربيإنجليزي' },
+            { id: 'en-to-ar', label: 'إنجليزيعربي' },
           ].map(d => (
             <button
               key={d.id}
@@ -243,7 +243,7 @@ export const PracticeModeTab: React.FC<PracticeModeTabProps> = ({
               </h2>
               {activeChallenge.contextHintAr && (
                 <p className="text-xs text-[#41e7ff]/80 pt-1">
-                  💡 تلميح: {activeChallenge.contextHintAr}
+                 تلميح: {activeChallenge.contextHintAr}
                 </p>
               )}
             </div>
@@ -350,7 +350,7 @@ export const PracticeModeTab: React.FC<PracticeModeTabProps> = ({
                     <div key={idx} className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-slate-200 space-y-1">
                       <div className="flex items-center gap-2">
                         <span className="text-red-400 font-bold">صياغتك: "{m.userPart}"</span>
-                        <span className="text-[#10b981] font-bold">⬅️ الأنسب: "{m.correction}"</span>
+                        <span className="text-[#10b981] font-bold">الأنسب: "{m.correction}"</span>
                       </div>
                       <p className="text-[#b9b6d5]">{m.reasonAr}</p>
                     </div>

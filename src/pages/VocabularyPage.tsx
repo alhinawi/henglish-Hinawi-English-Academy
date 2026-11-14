@@ -104,7 +104,7 @@ export const VocabularyPage: React.FC = () => {
               <tr className="border-b border-white/10 bg-[#201d43]/80 text-xs sm:text-sm font-black text-[#ffd166]">
                 <th className="p-4 sm:p-5">Base (V1)</th>
                 <th className="p-4 sm:p-5">Past Simple (V2)</th>
-                <th className="p-4 sm:p-5 text-[#c4ff55]">Past Participle (V3) ⭐</th>
+                <th className="p-4 sm:p-5 text-[#c4ff55]">Past Participle (V3)</th>
                 <th className="p-4 sm:p-5">المعنى بالعربي</th>
                 <th className="p-4 sm:p-5">مثال في المستقبل التام</th>
                 <th className="p-4 sm:p-5 text-center">نطق</th>

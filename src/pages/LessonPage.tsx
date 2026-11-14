@@ -177,7 +177,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           </div>
 
           <p className="text-xs sm:text-sm text-[#b9b6d5] bg-white/5 p-3 rounded-xl border border-white/10">
-            💡 {currentLesson.formula.notes}
+           {currentLesson.formula.notes}
           </p>
         </section>
       )}
@@ -185,7 +185,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
       {/* Egyptian Arabic Tips & Mindset */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
         <h3 className="text-lg font-black text-white flex items-center gap-2">
-          <span>شرح بطريقة سهلة وبالمصري 🧠</span>
+          <span>شرح بطريقة سهلة وبالمصري</span>
         </h3>
         <div className="space-y-3">
           {currentLesson.egyptianArabicTips.map((tip, idx) => (
@@ -206,7 +206,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-black text-white flex items-center gap-2">
-            <span>أمثلة واقعية مع النطق الصوتي 💬</span>
+            <span>أمثلة واقعية مع النطق الصوتي</span>
           </h3>
           <span className="text-xs text-[#b9b6d5]">اضغط على أيقونة الصوت للاستماع</span>
         </div>
@@ -250,7 +250,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <div>
             <h3 className="text-lg font-black text-white flex items-center gap-2">
-              <span>🥊 {currentLesson.contrastSection.title}</span>
+              <span>{currentLesson.contrastSection.title}</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
               {currentLesson.contrastSection.description}
@@ -294,7 +294,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <h3 className="text-lg font-black text-[#ff4f9a] flex items-center gap-2">
             <AlertTriangle className="w-5 h-5" />
-            <span>احذر من هذه الأخطاء الشائعة ⚠️</span>
+            <span>احذر من هذه الأخطاء الشائعة</span>
           </h3>
 
           <div className="space-y-3">
@@ -305,10 +305,10 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               >
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
                   <div className="en text-[#ff4f9a] font-bold">
-                    ❌ غلط: {m.wrong}
+                   غلط: {m.wrong}
                   </div>
                   <div className="en text-[#c4ff55] font-bold">
-                    ✅ صح: {m.correct}
+                   صح: {m.correct}
                   </div>
                 </div>
                 <p className="text-xs text-[#dedbf4]">
@@ -373,7 +373,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                   {answered && (
                     <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-[#dedbf4]">
                       <strong className={isCorrect ? 'text-[#c4ff55]' : 'text-[#ff4f9a]'}>
-                        {isCorrect ? '✅ إجابة صحيحة! ' : '❌ إجابة غير صحيحة. '}
+                        {isCorrect ? 'إجابة صحيحة! ' : 'إجابة غير صحيحة. '}
                       </strong>
                       {q.explanation}
                     </div>
@@ -389,7 +389,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
       {currentLesson.homeworkPrompt && (
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <h3 className="text-lg font-black text-white flex items-center gap-2">
-            <span>تحدي التطبيق الشخصي (Notebook) ✍️</span>
+            <span>تحدي التطبيق الشخصي (Notebook)</span>
           </h3>
           <p className="text-xs sm:text-sm text-[#b9b6d5]">
             {currentLesson.homeworkPrompt}
@@ -416,7 +416,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             >
               حفظ الملاحظة
             </button>
-            {noteSaved && <span className="text-[#c4ff55] font-bold">تم الحفظ بنجاح! ✨</span>}
+            {noteSaved && <span className="text-[#c4ff55] font-bold">تم الحفظ بنجاح!</span>}
           </div>
         </section>
       )}
@@ -427,14 +427,14 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           {isCompleted ? (
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#c4ff55]/15 border border-[#c4ff55]/30 text-[#c4ff55] text-sm font-black">
               <CheckCircle2 className="w-4 h-4" />
-              <span>أكملت هذا الدرس بنجاح! 🎉</span>
+              <span>أكملت هذا الدرس بنجاح!</span>
             </div>
           ) : (
             <button
               onClick={handleCompleteLesson}
               className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all hover:scale-105"
             >
-              تحديد كدرس مكتمل ✅
+              تحديد كدرس مكتمل
             </button>
           )}
         </div>

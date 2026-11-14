@@ -284,11 +284,11 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                     className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-xs space-y-1 text-slate-200"
                   >
                     <div className="flex items-center gap-2 font-bold text-red-300">
-                      <span>❌ الخطأ الشائع:</span>
+                      <span>الخطأ الشائع:</span>
                       <span>{trap.wrongAr}</span>
                     </div>
                     <div className="flex items-center gap-2 font-bold text-[#10b981]">
-                      <span>✅ الصواب البليغ:</span>
+                      <span>الصواب البليغ:</span>
                       <span>{trap.correctAr}</span>
                     </div>
                     <p className="text-[#b9b6d5] pt-1">

@@ -53,7 +53,7 @@ export const GameResultsModal: React.FC<GameResultsModalProps> = ({
         {/* Trophy & Badge */}
         <div className="relative inline-block">
           <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-3xl bg-linear-to-tr from-[#ffd166]/20 via-[#41e7ff]/20 to-[#ff4f9a]/20 border border-white/20 flex items-center justify-center mx-auto shadow-2xl text-4xl sm:text-5xl animate-bounce">
-            {isExcellent ? '🏆' : isGood ? '⭐' : '🎯'}
+            {isExcellent ? '' : isGood ? '' : ''}
           </div>
           {isExcellent && (
             <span className="absolute -top-2 -right-2 p-1.5 rounded-full bg-[#ffd166] text-[#121124] shadow-md">
@@ -136,7 +136,7 @@ export const GameResultsModal: React.FC<GameResultsModalProps> = ({
                       {item.isCorrect ? <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400" /> : <XCircle className="w-3.5 h-3.5 text-rose-400" />}
                       سؤال {idx + 1}
                     </span>
-                    <span className="text-white/60">{item.isCorrect ? 'صحيحة ✅' : 'خاطئة ❌'}</span>
+                    <span className="text-white/60">{item.isCorrect ? 'صحيحة' : 'خاطئة'}</span>
                   </div>
                   <p className="text-white font-medium" dir="ltr">{item.question}</p>
                   {!item.isCorrect && (
@@ -146,7 +146,7 @@ export const GameResultsModal: React.FC<GameResultsModalProps> = ({
                   )}
                   {item.explanationAr && (
                     <p className="text-[11px] text-[#b9b6d5] leading-relaxed pt-1 border-t border-white/10">
-                      💡 {item.explanationAr}
+                     {item.explanationAr}
                     </p>
                   )}
                 </div>
@@ -165,7 +165,7 @@ export const GameResultsModal: React.FC<GameResultsModalProps> = ({
             className="py-3 px-4 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer transition-all hover:scale-[1.02]"
           >
             <RotateCcw className="w-4 h-4" />
-            <span>إعادة التحدي ↻</span>
+            <span>إعادة التحدي</span>
           </button>
 
           <button

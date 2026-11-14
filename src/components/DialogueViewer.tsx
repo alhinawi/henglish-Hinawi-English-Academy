@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
 import { playSound, speakEnglishVoice, fireCelebration, getAudioQueuePlayer, stopSpeech } from '../utils/audio';
-import { Volume2, Play, Square, CheckCircle2, XCircle, Sparkles, MessageSquare } from 'lucide-react';
+import {
+  Volume2,
+  Play,
+  Square,
+  CheckCircle2,
+  XCircle,
+  Sparkles,
+  MessageSquare,
+  UserRound,
+} from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const DialogueViewer: React.FC = () => {
@@ -62,7 +71,7 @@ export const DialogueViewer: React.FC = () => {
             <span>REAL-LIFE CONVERSATION LAB</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white">
-            محادثات واقعية ونطق صوتي حي 💬
+            محادثات واقعية ونطق صوتي حي
           </h3>
           <p className="text-sm text-[#b9b6d5] mt-1">
             اقرأ واستمع لمحادثات يومية ومهنية توظف المستقبل التام في سياقاته الطبيعية.
@@ -161,7 +170,7 @@ export const DialogueViewer: React.FC = () => {
               {line.avatarUrl ? (
                 <img src={line.avatarUrl} alt={line.speaker} className="w-full h-full object-cover" />
               ) : (
-                <span>{line.avatar}</span>
+                <UserRound className="w-6 h-6 text-[#ffd166]" />
               )}
             </div>
 
@@ -169,7 +178,7 @@ export const DialogueViewer: React.FC = () => {
             <div className="flex-1">
               <div className="flex items-center justify-between mb-1.5">
                 <span className={`font-black text-xs sm:text-sm ${activeLineIndex === idx ? 'text-[#ffd166]' : 'text-[#41e7ff]'}`}>
-                  {line.speaker} {activeLineIndex === idx && '🔊 (جاري النطق)'}
+                  {line.speaker} {activeLineIndex === idx && '(جاري النطق)'}
                 </span>
 
                 <button
@@ -254,7 +263,7 @@ export const DialogueViewer: React.FC = () => {
 
                 {answered && (
                   <p className="text-xs text-[#b9b6d5] pt-2">
-                    {isCorrect ? '✅ رائع! ' : '❌ حاول مراجعة المحادثة مرة أخرى. '}
+                    {isCorrect ? 'رائع! ' : 'حاول مراجعة المحادثة مرة أخرى. '}
                     {q.explanation}
                   </p>
                 )}

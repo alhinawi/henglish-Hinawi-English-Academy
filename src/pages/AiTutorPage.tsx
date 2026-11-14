@@ -529,7 +529,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               title="اختيار الصوت (حريمي / رجالي) من مكتبة ElevenLabs"
             >
               <Volume2 className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>تغيير الصوت 🎙️ ({getVoiceSettings().selectedVoiceName || 'سارة'})</span>
+              <span>تغيير الصوت({getVoiceSettings().selectedVoiceName || 'سارة'})</span>
             </button>
           )}
 
@@ -758,13 +758,13 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       {msg.grammarCorrections.map((corr, cIdx) => (
                         <div key={cIdx} className="text-xs space-y-0.5 bg-black/30 p-2.5 rounded-lg border border-red-500/20">
                           <div dir="ltr" className="line-through text-red-300 font-mono">
-                            ❌ {corr.wrong}
+                           {corr.wrong}
                           </div>
                           <div dir="ltr" className="text-emerald-300 font-mono font-bold">
-                            ✅ {corr.correct}
+                           {corr.correct}
                           </div>
                           <div className="text-[#dedbf4] text-[11px] pt-1">
-                            💡 {corr.explanationAr}
+                           {corr.explanationAr}
                           </div>
                         </div>
                       ))}

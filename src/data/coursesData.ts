@@ -29,7 +29,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     studentsCount: 3840,
     isFlagship: true,
     tag: 'أكاديمية الجرامر • المستقبل التام 👑',
-    icon: '⚡',
+    icon: '',
     imageUrl: ONLINE_IMAGES.courses.futurePerfect,
   },
   {
@@ -43,7 +43,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     rating: 4.88,
     studentsCount: 2950,
     tag: 'قواعد حيوية',
-    icon: '🎯',
+    icon: '',
     imageUrl: ONLINE_IMAGES.courses.presentPerfect,
   },
   {
@@ -57,7 +57,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     rating: 4.91,
     studentsCount: 1820,
     tag: 'قواعد متقدمة',
-    icon: '🔮',
+    icon: '',
     imageUrl: ONLINE_IMAGES.courses.conditionals,
   },
   {
@@ -71,7 +71,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     rating: 4.98,
     studentsCount: 4210,
     tag: 'مهني وتقني',
-    icon: '💻',
+    icon: '',
     imageUrl: ONLINE_IMAGES.courses.techEnglish,
   },
   {
@@ -85,7 +85,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     rating: 4.85,
     studentsCount: 2100,
     tag: 'بيئة العمل',
-    icon: '✉️',
+    icon: '',
     imageUrl: ONLINE_IMAGES.courses.businessWriting,
   },
   {
@@ -99,7 +99,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     rating: 4.96,
     studentsCount: 3150,
     tag: 'شهادات دولية',
-    icon: '🎙️',
+    icon: '',
     imageUrl: ONLINE_IMAGES.courses.ieltsSpeaking,
   },
 ];

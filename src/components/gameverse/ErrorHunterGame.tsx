@@ -69,8 +69,8 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
     const auditItem: AnswerAuditItem = {
       question: currentQ.prompt,
       isCorrect: isSuccess,
-      userAnswer: hasError ? 'تحتوي على خطأ ❌' : 'سليمة تماماً ✅',
-      correctAnswer: actualHasError ? 'تحتوي على خطأ قواعدي ❌' : 'سليمة تماماً ✅',
+      userAnswer: hasError ? 'تحتوي على خطأ' : 'سليمة تماماً',
+      correctAnswer: actualHasError ? 'تحتوي على خطأ قواعدي' : 'سليمة تماماً',
       explanationAr: currentQ.explanationAr,
     };
     setAnswersAudit(prev => [...prev, auditItem]);
@@ -141,7 +141,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <GameHud
-        title="صائد الأخطاء القواعدية 🎯"
+        title="صائد الأخطاء القواعدية"
         category="القواعد (Grammar)"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -187,7 +187,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 className="py-4 px-6 rounded-2xl bg-rose-500/20 hover:bg-rose-500/30 border border-rose-500/40 text-rose-300 font-black text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer transition-all hover:scale-[1.02] shadow-lg"
               >
                 <XCircle className="w-5 h-5 text-rose-400" />
-                <span>نعم، بها خطأ ❌</span>
+                <span>نعم، بها خطأ</span>
               </button>
 
               <button
@@ -195,7 +195,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 className="py-4 px-6 rounded-2xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-300 font-black text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer transition-all hover:scale-[1.02] shadow-lg"
               >
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                <span>سليمة تماماً ✅</span>
+                <span>سليمة تماماً</span>
               </button>
             </div>
           ) : (
@@ -208,7 +208,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 }`}
               >
                 <div className="flex items-center justify-between font-bold text-sm">
-                  <span>{isCorrectGuess ? 'تشخيص ممتاز ودقيق! ✅' : 'تشخيص غير صحيح ❌'}</span>
+                  <span>{isCorrectGuess ? 'تشخيص ممتاز ودقيق!' : 'تشخيص غير صحيح'}</span>
                   <span className="text-xs text-white/50 font-normal">
                     {currentQ.hasError ? 'الجملة بها خطأ' : 'الجملة كانت صحيحة'}
                   </span>
@@ -224,7 +224,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 )}
 
                 <p className="text-white/80 pt-1 border-t border-white/10 leading-relaxed">
-                  💡 {currentQ.explanationAr}
+                 {currentQ.explanationAr}
                 </p>
               </div>
 
@@ -244,7 +244,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
       {/* Results Modal */}
       {gameResult && (
         <GameResultsModal
-          title="صائد الأخطاء القواعدية 🎯"
+          title="صائد الأخطاء القواعدية"
           score={score}
           maxScore={questions.length * 20}
           accuracy={gameResult.accuracy}

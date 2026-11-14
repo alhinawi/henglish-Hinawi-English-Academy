@@ -84,18 +84,18 @@ type LearningMode =
 const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 const SECTIONS_METADATA = [
-  { id: 'Section 1 — Everyday English', title: 'Everyday English', titleAr: 'الإنجليزية اليومية والتواصل الأساسي', icon: '☕', subCount: 20 },
+  { id: 'Section 1 — Everyday English', title: 'Everyday English', titleAr: 'الإنجليزية اليومية والتواصل الأساسي', icon: '', subCount: 20 },
   { id: 'Section 2 — Daily Activities', title: 'Daily Activities', titleAr: 'الأنشطة والروتين اليومي', icon: '⏰', subCount: 13 },
-  { id: 'Section 3 — Social Conversations', title: 'Social Conversations', titleAr: 'المحادثات الاجتماعية وبناء العلاقات', icon: '🤝', subCount: 13 },
-  { id: 'Section 4 — Travel and Tourism', title: 'Travel & Tourism', titleAr: 'السفر والسياحة والمطارات', icon: '✈️', subCount: 15 },
-  { id: 'Section 5 — Shopping and Money', title: 'Shopping & Money', titleAr: 'التسوق والمعاملات المالية', icon: '💳', subCount: 11 },
-  { id: 'Section 6 — Work and Business English', title: 'Work & Business', titleAr: 'الإنجليزية المهنية وبيئة العمل', icon: '💼', subCount: 14 },
-  { id: 'Section 7 — Technology and Modern Life', title: 'Technology & AI', titleAr: 'التكنولوجيا والحياة الرقمية والذكاء الاصطناعي', icon: '💻', subCount: 10 },
-  { id: 'Section 8 — Health and Lifestyle', title: 'Health & Lifestyle', titleAr: 'الصحة وأسلوب الحياة والاستشارات الطبية', icon: '🌿', subCount: 9 },
-  { id: 'Section 9 — Academic and Intellectual English', title: 'Academic & Intellectual', titleAr: 'الإنجليزية الأكاديمية والبحث العلمي', icon: '🎓', subCount: 10 },
-  { id: 'Section 10 — Advanced Natural English', title: 'Advanced Natural English', titleAr: 'التعبيرات المتقدمة والإنجليزية الفطرية', icon: '⚡', subCount: 10 },
-  { id: 'Section 11 — Grammar-Based Sentences', title: 'Grammar Mastery', titleAr: 'جمل تطبيقية على كافة قواعد الجرامر والأزمنة', icon: '📐', subCount: 20 },
-  { id: 'Section 12 — Real Conversation Expressions', title: 'Real Spoken English', titleAr: 'تعبيرات المحادثة الواقعية واللغة المحكية الدارجة', icon: '💬', subCount: 10 },
+  { id: 'Section 3 — Social Conversations', title: 'Social Conversations', titleAr: 'المحادثات الاجتماعية وبناء العلاقات', icon: '', subCount: 13 },
+  { id: 'Section 4 — Travel and Tourism', title: 'Travel & Tourism', titleAr: 'السفر والسياحة والمطارات', icon: '', subCount: 15 },
+  { id: 'Section 5 — Shopping and Money', title: 'Shopping & Money', titleAr: 'التسوق والمعاملات المالية', icon: '', subCount: 11 },
+  { id: 'Section 6 — Work and Business English', title: 'Work & Business', titleAr: 'الإنجليزية المهنية وبيئة العمل', icon: '', subCount: 14 },
+  { id: 'Section 7 — Technology and Modern Life', title: 'Technology & AI', titleAr: 'التكنولوجيا والحياة الرقمية والذكاء الاصطناعي', icon: '', subCount: 10 },
+  { id: 'Section 8 — Health and Lifestyle', title: 'Health & Lifestyle', titleAr: 'الصحة وأسلوب الحياة والاستشارات الطبية', icon: '', subCount: 9 },
+  { id: 'Section 9 — Academic and Intellectual English', title: 'Academic & Intellectual', titleAr: 'الإنجليزية الأكاديمية والبحث العلمي', icon: '', subCount: 10 },
+  { id: 'Section 10 — Advanced Natural English', title: 'Advanced Natural English', titleAr: 'التعبيرات المتقدمة والإنجليزية الفطرية', icon: '', subCount: 10 },
+  { id: 'Section 11 — Grammar-Based Sentences', title: 'Grammar Mastery', titleAr: 'جمل تطبيقية على كافة قواعد الجرامر والأزمنة', icon: '', subCount: 20 },
+  { id: 'Section 12 — Real Conversation Expressions', title: 'Real Spoken English', titleAr: 'تعبيرات المحادثة الواقعية واللغة المحكية الدارجة', icon: '', subCount: 10 },
 ];
 
 export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNavigate }) => {
@@ -479,17 +479,17 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             { id: 'cefr', label: 'المستويات CEFR', icon: Award },
             { id: 'sections', label: 'الأقسام والمواضيع', icon: Compass },
             { id: 'grammar', label: 'القواعد والأزمنة', icon: BookA },
-            { id: 'daily', label: 'جملة اليوم 📅', icon: Calendar },
-            { id: 'weekly', label: 'جملة الأسبوع 🌟', icon: Sparkles },
-            { id: 'random', label: 'جملة عشوائية 🎲', icon: Shuffle },
-            { id: 'favorites', label: 'المفضلة ❤️', icon: Heart },
-            { id: 'difficult', label: 'الجمل الصعبة ⚠️', icon: AlertCircle },
-            { id: 'recent', label: 'دُرست حديثاً 🕒', icon: Clock },
-            { id: 'srs', label: 'مراجعة SM-2 🧠', icon: Flame },
-            { id: 'practice', label: 'معمل الترتيب 🧩', icon: HelpCircle },
-            { id: 'listening', label: 'تحدي الاستماع 🎧', icon: Volume2 },
-            { id: 'speaking', label: 'تحدي النطق 🎙️', icon: Mic },
-            { id: 'translation', label: 'تحدي الترجمة 🔄', icon: Languages },
+            { id: 'daily', label: 'جملة اليوم', icon: Calendar },
+            { id: 'weekly', label: 'جملة الأسبوع', icon: Sparkles },
+            { id: 'random', label: 'جملة عشوائية', icon: Shuffle },
+            { id: 'favorites', label: 'المفضلة', icon: Heart },
+            { id: 'difficult', label: 'الجمل الصعبة', icon: AlertCircle },
+            { id: 'recent', label: 'دُرست حديثاً', icon: Clock },
+            { id: 'srs', label: 'مراجعة SM-2', icon: Flame },
+            { id: 'practice', label: 'معمل الترتيب', icon: HelpCircle },
+            { id: 'listening', label: 'تحدي الاستماع', icon: Volume2 },
+            { id: 'speaking', label: 'تحدي النطق', icon: Mic },
+            { id: 'translation', label: 'تحدي الترجمة', icon: Languages },
           ].map(m => {
             const Icon = m.icon;
             const isActive = activeMode === m.id;
@@ -625,7 +625,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             {practiceStatus === 'correct' && (
               <div className="p-3 rounded-2xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-sm font-bold flex items-center justify-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                <span>إجابة نموذجية صحيحة 100%! أحسنت يا بطل! 🎉</span>
+                <span>إجابة نموذجية صحيحة 100%! أحسنت يا بطل!</span>
               </div>
             )}
             {practiceStatus === 'wrong' && (
@@ -688,7 +688,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               onClick={() => setIsListeningRevealed(true)}
               className="px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-black text-sm border border-white/15 cursor-pointer transition-all"
             >
-              كشف النص والترجمة الآن 👁️
+              كشف النص والترجمة الآن
             </button>
           ) : (
             <div className="max-w-2xl mx-auto text-right">
@@ -704,7 +704,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               }}
               className="px-6 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-black text-sm transition-all shadow-lg shadow-purple-600/30 cursor-pointer"
             >
-              استمع لجملة أخرى 🎧
+              استمع لجملة أخرى
             </button>
           </div>
         </div>

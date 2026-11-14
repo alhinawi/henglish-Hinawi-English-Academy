@@ -101,22 +101,22 @@ export const PracticePage: React.FC = () => {
                       onClick={() => handleHunterAnswer(item.id, true, item.hasError)}
                       className="px-4 py-2 rounded-xl bg-[#ff4f9a]/15 hover:bg-[#ff4f9a]/25 text-[#ff4f9a] border border-[#ff4f9a]/30 font-bold text-xs cursor-pointer transition-colors"
                     >
-                      ⚠️ الجملة بها خطأ
+                     الجملة بها خطأ
                     </button>
                     <button
                       onClick={() => handleHunterAnswer(item.id, false, item.hasError)}
                       className="px-4 py-2 rounded-xl bg-[#c4ff55]/15 hover:bg-[#c4ff55]/25 text-[#c4ff55] border border-[#c4ff55]/30 font-bold text-xs cursor-pointer transition-colors"
                     >
-                      ✅ الجملة سليمة
+                     الجملة سليمة
                     </button>
                   </div>
                 ) : (
                   <div className="pt-2 border-t border-white/5 text-xs sm:text-sm text-[#dedbf4] space-y-1">
                     <div className="font-bold">
                       {wasCorrect ? (
-                        <span className="text-[#c4ff55]">🎯 أحسنت! تقييمك صحيح تماماً.</span>
+                        <span className="text-[#c4ff55]">أحسنت! تقييمك صحيح تماماً.</span>
                       ) : (
-                        <span className="text-[#ff4f9a]">❌ تقييمك لم يكن دقيقاً.</span>
+                        <span className="text-[#ff4f9a]">تقييمك لم يكن دقيقاً.</span>
                       )}
                     </div>
                     {item.hasError ? (
@@ -180,7 +180,7 @@ export const PracticePage: React.FC = () => {
         {/* Self Checklist */}
         <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 mt-6">
           <h4 className="text-sm font-black text-[#ffd166]">
-            قائمة المراجعة الذاتية السريعة قبل التسليم ✅
+            قائمة المراجعة الذاتية السريعة قبل التسليم
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#dedbf4]">
             <label className="flex items-center gap-2 cursor-pointer">
