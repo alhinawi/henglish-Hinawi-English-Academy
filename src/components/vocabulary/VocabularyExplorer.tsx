@@ -176,6 +176,7 @@ export const VocabularyExplorer: React.FC = () => {
     sortBy,
     page,
     pageSize,
+    isLoading,
     fullLoaded,
     savedUpdateCount,
   ]);
