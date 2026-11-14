@@ -179,7 +179,40 @@ export const LISTENING_TRACKS: ListeningTrack[] = [
       },
     ],
   },
-
+  {
+    id: 'list-6',
+    title: 'University Lecture on Climate Change',
+    titleAr: 'محاضرة جامعية عن التغير المناخي',
+    level: 'B2',
+    accent: 'British',
+    duration: '1:40',
+    category: 'Education & Science',
+    transcript:
+      'Good morning, everyone. Today we turn to one of the most pressing questions of our century: how quickly will our cities have adapted to rising temperatures? Current models suggest that by 2050, most coastal cities will have redesigned their drainage systems, and many will have invested billions in flood defenses. However, adaptation is not only about engineering. By the same year, schools will have integrated climate literacy into every science curriculum, ensuring that the next generation understands both the risks and the solutions. Remember, the decisions we make this decade will shape the world your grandchildren inherit.',
+    transcriptAr:
+      'صباح الخير جميعاً. اليوم نتناول واحداً من أكثر أسئلة القرن إلحاحاً: ما مدى سرعة تكيف مدننا مع ارتفاع درجات الحرارة؟ تشير النماذج الحالية إلى أنه بحلول عام 2050، ستكون معظم المدن الساحلية قد أعادت تصميم أنظمة الصرف الخاصة بها، وستكون العديد منها قد استثمرت مليارات في الدفاعات ضد الفيضانات. وبحلول العام نفسه، ستكون المدارس قد دمجت الثقافة المناخية في كل مناهج العلوم.',
+    dictationSentence: 'By 2050, most coastal cities will have redesigned their drainage systems.',
+    comprehensionQuiz: [
+      {
+        id: 'lq11',
+        question: 'What will most coastal cities have redesigned by 2050?',
+        options: ['Their airports', 'Their drainage systems', 'Their universities', 'Their shopping malls'],
+        answer: 1,
+        explanation: 'The lecturer states: by 2050, most coastal cities will have redesigned their drainage systems.',
+        topic: 'Detail Listening',
+        difficulty: 'intermediate',
+      },
+      {
+        id: 'lq12',
+        question: 'What will schools have integrated into science curricula?',
+        options: ['Space exploration', 'Climate literacy', 'Ancient history', 'Computer programming'],
+        answer: 1,
+        explanation: 'The lecture says schools will have integrated climate literacy into every science curriculum.',
+        topic: 'Detail Listening',
+        difficulty: 'intermediate',
+      },
+    ],
+  },
 ];
 
 // ==========================================
@@ -298,7 +331,39 @@ export const READING_PASSAGES: ReadingPassage[] = [
       },
     ],
   },
-
+  {
+    id: 'read-4',
+    title: 'The Hidden Power of Daily Reading Habits',
+    titleAr: 'القوة الخفية لعادة القراءة اليومية',
+    level: 'B2',
+    wordCount: 175,
+    estimatedTime: '4 دقائق',
+    category: 'Self Development',
+    content:
+      'Neuroscientists have long suspected that reading is a full-brain workout, but recent imaging studies have confirmed just how transformative the habit can be. A person who reads for thirty minutes every day will have processed over one million words by the end of a single year. This massive exposure quietly rebuilds the reader\'s vocabulary, sharpening comprehension and accelerating language acquisition far beyond what formal classes alone can achieve. Moreover, consistent readers report lower stress levels and stronger focus in professional settings. By the time a decade has passed, the daily reader will have explored hundreds of fictional worlds and absorbed thousands of new ideas, compounding an intellectual advantage that no shortcut can replicate. The lesson is simple: the pages you finish today become the mind you carry tomorrow.',
+    contentAr:
+      'اشتبه علماء الأعصاب منذ فترة طويلة في أن القراءة تمرين شامل للدماغ، لكن دراسات التصوير الحديثة أكدت مدى تأثير هذه العادة. الشخص الذي يقرأ ٣٠ دقيقة يومياً سيكون قد عالج أكثر من مليون كلمة بحلول نهاية عام واحد. هذا التعرض الهائل يعيد بناء مفردات القارئ بهدوء ويسرع اكتساب اللغة. وبحلول مرور عقد كامل، يكون القارئ اليومي قد استكشف مئات العوالم الخيالية واستوعب آلاف الأفكار الجديدة.',
+    comprehensionQuestions: [
+      {
+        id: 'rq7',
+        question: 'How many words will a daily 30-minute reader have processed in one year?',
+        options: ['One hundred thousand', 'Over one million', 'Ten thousand', 'Five million'],
+        answer: 1,
+        explanation: 'The passage states: will have processed over one million words by the end of a single year.',
+        topic: 'Fact Retrieval',
+        difficulty: 'intermediate',
+      },
+      {
+        id: 'rq8',
+        question: 'Besides vocabulary growth, what benefits do consistent readers report?',
+        options: ['Higher salaries and bigger houses', 'Lower stress levels and stronger focus', 'Better eyesight and memory loss', 'Faster typing and speaking speed'],
+        answer: 1,
+        explanation: 'The text says: consistent readers report lower stress levels and stronger focus in professional settings.',
+        topic: 'Detail Comprehension',
+        difficulty: 'intermediate',
+      },
+    ],
+  },
 ];
 
 // ==========================================
