@@ -564,7 +564,44 @@ export const MINIMAL_PAIRS_DATA: MinimalPair[] = [
     meaningArA: 'عربة / كارت',
     meaningArB: 'يقطع',
     tipAr: 'cart صوت ألف ممدود من عمق الفم، بينما cut صوت قصير مركز من منتصف الفم مثل (آ) سريعة.',
-  },];
+  },
+  {
+    id: 'mp-16',
+    soundA: '/iː/ (Long E)',
+    soundB: '/ɪ/ (Short I)',
+    wordA: 'sheep',
+    wordB: 'ship',
+    ipaA: '/ʃiːp/',
+    ipaB: '/ʃɪp/',
+    meaningArA: 'خروف',
+    meaningArB: 'سفينة',
+    tipAr: 'sheep صوت ياء ممدود، بينما ship صوت قصير سريع مثل (إِ) في كلمة سِت.',
+  },
+  {
+    id: 'mp-17',
+    soundA: '/eɪ/ (Long A)',
+    soundB: '/e/ (Short E)',
+    wordA: 'gate',
+    wordB: 'get',
+    ipaA: '/ɡeɪt/',
+    ipaB: '/ɡet/',
+    meaningArA: 'بوابة',
+    meaningArB: 'يحصل على',
+    tipAr: 'gate صوت مركب ينزلق من (إيه) لـ(ي)، بينما get صوت (إيه) قصير حاد.',
+  },
+  {
+    id: 'mp-18',
+    soundA: '/θ/ (TH)',
+    soundB: '/s/ (S)',
+    wordA: 'think',
+    wordB: 'sink',
+    ipaA: '/θɪŋk/',
+    ipaB: '/sɪŋk/',
+    meaningArA: 'يفكر',
+    meaningArB: 'يغرق / حوض',
+    tipAr: 'think اللسان بين الأسنان مع نفخ هواء، بينما sink اللسان خلف الأسنان بصوت سين واضحة.',
+  },
+];
 
 // ==========================================
 // 4. REAL-LIFE ENGLISH MODULES
