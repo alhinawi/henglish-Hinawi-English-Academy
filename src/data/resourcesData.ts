@@ -120,4 +120,145 @@ learn        | learned / learnt | learned / learnt     | يتعلم
 read         | read (نطق ريد)   | read (نطق رد)        | يقرأ
 ==========================================================`,
   },
+  {
+    id: "res-irregular-verbs",
+    title: "جدول الأفعال الشاذة الأربعين الأكثر استخداماً",
+    subtitle: "Top 40 Irregular Verbs Reference",
+    category: "verbs",
+    description:
+      "مرجع سريع يجمع التصاريف الثلاثة (V1, V2, V3) لأهم 40 فعل شاذ مع مثال مستقبل تام لكل فعل.",
+    pages: 2,
+    badge: "مرجع أساسي",
+    downloadFilename: "hinawi-top-40-irregular-verbs.txt",
+    contentMarkdown: `==========================================================
+HENGLISH ACADEMY — TOP 40 IRREGULAR VERBS (V1 / V2 / V3)
+==========================================================
+write  - wrote  - written    يكتب
+  By June, she will have written the report.
+speak  - spoke  - spoken     يتحدث
+  By the interview, he will have spoken to the manager.
+take   - took   - taken      يأخذ
+  By noon, I will have taken my medicine.
+see    - saw    - seen       يرى
+  By 8 p.m., we will have seen the whole movie.
+go     - went   - gone       يذهب
+  By the time you call, they will have gone home.
+do     - did    - done       يفعل
+  By Friday, we will have done all the tasks.
+eat    - ate    - eaten      يأكل
+  By 2 p.m., I will have eaten lunch.
+give   - gave   - given      يعطي
+  By Monday, the teacher will have given us the results.
+build  - built  - built      يبني
+  By 2028, they will have built the new bridge.
+buy    - bought - bought     يشتري
+  By noon, we will have bought all the groceries.
+catch  - caught - caught     يلحق / يمسك
+  By 7 a.m., she will have caught the early train.
+choose - chose  - chosen     يختار
+  By graduation, he will have chosen his career path.
+fall   - fell   - fallen     يسقط
+  By winter, the leaves will have fallen.
+forget - forgot - forgotten  ينسى
+  By the end of the trip, you will have forgotten the stress.
+grow   - grew   - grown      ينمو
+  By next year, the startup will have grown to 50 employees.
+know   - knew   - known      يعرف
+  By December, you will have known all the answers.
+leave  - left   - left       يغادر
+  By the time we arrive, the plane will have left.
+make   - made   - made       يصنع
+  By tonight, the chef will have made 300 dishes.
+meet   - met    - met        يقابل
+  By the conference, I will have met the industry leaders.
+read   - read   - read       يقرأ
+  By summer, Omar will have read twenty novels.
+win    - won    - won        يفوز
+  By the final whistle, our team will have won the cup.
+fly    - flew   - flown      يطير
+  By morning, the aircraft will have flown three continents.
+begin  - began  - begun      يبدأ
+  By 9 a.m., the workshop will have begun.
+break  - broke  - broken     يكسر
+  By evening, the news will have broken all records.
+bring  - brought- brought    يحضر
+  By dinner, she will have brought the desserts.
+come   - came   - come       يأتي
+  By sunset, the guests will have come from everywhere.
+drink  - drank  - drunk      يشرب
+  By noon, he will have drunk three cups of coffee.
+drive  - drove  - driven     يقود
+  By midnight, we will have driven 400 kilometers.
+feel   - felt   - felt       يشعر
+  By the results day, you will have felt every emotion.
+find   - found  - found      يجد
+  By Friday, the committee will have found a solution.
+get    - got    - gotten     يحصل على
+  By 2027, she will have gotten her master's degree.
+hear   - heard  - heard      يسمع
+  By evening, everyone will have heard the announcement.
+keep   - kept   - kept       يحتفظ
+  By year-end, the museum will have kept every artifact.
+learn  - learnt - learnt     يتعلم
+  By December, she will have learnt 1,000 words.
+run    - ran    - run        يجري
+  By April, he will have run three marathons.
+sing   - sang   - sung       يغني
+  By midnight, the band will have sung all their hits.
+sleep  - slept  - slept      ينام
+  By exam day, you will have slept enough to focus.
+teach  - taught - taught     يعلّم
+  By June, Mr. Adel will have taught 300 students.
+think  - thought- thought    يفكر
+  By the deadline, they will have thought of a plan.
+wear   - wore   - worn       يلبس
+  By the party, she will have worn her new dress.
+==========================================================`,
+  },
+  {
+    id: "res-writing-pack",
+    title: "حزمة قوالب الكتابة الرسمية الخمسة",
+    subtitle: "Formal Writing Templates Pack",
+    category: "worksheet",
+    description:
+      "خمسة قوالب كتابة جاهزة: إيميل عمل، خطاب تقديم لوظيفة، مقال أكاديمي، خطاب شكوى، ومقال تقديم جامعي مع قواعد كل قالب.",
+    pages: 3,
+    badge: "جديد",
+    downloadFilename: "hinawi-writing-templates-pack.txt",
+    contentMarkdown: `==========================================================
+HENGLISH ACADEMY — FORMAL WRITING TEMPLATES PACK
+==========================================================
+1) FORMAL BUSINESS EMAIL
+Subject: Project Milestone Delivery & Q4 Roadmap
+Dear Mr. Henderson,
+I am writing to provide you with a comprehensive status update
+regarding our software migration. By next Friday at 5:00 PM, our
+engineering team will have deployed all microservices to production.
+Best regards, [Name]
+
+2) JOB APPLICATION COVER LETTER
+Dear Hiring Committee,
+I am writing to express my strong enthusiasm for the position.
+By the completion of this quarter, I will have led three major
+initiatives, demonstrating my ability to deliver results.
+Sincerely, [Name]
+
+3) ACADEMIC OPINION ESSAY
+Hook + Thesis: In recent decades, urban centers have embraced
+sustainable infrastructure. By 2040, major cities will have
+transitioned to ninety percent clean energy.
+
+4) FORMAL COMPLAINT LETTER
+Dear Customer Service Manager,
+I am writing to express my dissatisfaction with order #4821.
+By the time your team responds, three weeks will have passed
+since the promised delivery date.
+Yours faithfully, [Name]
+
+5) UNIVERSITY PERSONAL STATEMENT
+Ever since I wrote my first line of code at fourteen, I have been
+fascinated by software. By the time I begin my studies, I will have
+completed three independent projects.
+==========================================================`,
+  },
 ];
