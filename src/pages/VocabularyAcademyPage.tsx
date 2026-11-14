@@ -83,6 +83,8 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
     { id: 'phrasal_verbs', label: 'الأفعال المركبة (Phrasal)' },
     { id: 'idioms', label: 'التعبيرات الاصطلاحية (Idioms)' },
     { id: 'academic', label: 'الكلمات الأكاديمية' },
+    { id: 'everyday', label: 'الحياة اليومية' },
+    { id: 'collocations', label: 'التعبيرات المترافقة (Collocations)' },
   ];
 
   const filteredWords = VOCABULARY_ACADEMY_WORDS.filter(w => {
