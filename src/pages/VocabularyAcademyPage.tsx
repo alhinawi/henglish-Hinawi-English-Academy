@@ -162,7 +162,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            منظومة معجمية شاملة تضم أكثر من <strong>55,000 كلمة إنجليزية معتمدة</strong> و <strong>10,000 تعبير ومصطلح اصطلاحي</strong> بالنطق المزدوج الأمريكي (US) والبريطاني (UK) والرموز الصوتية IPA، مع تصنيف دقيق لمستويات CEFR (A1-C2) وأكثر من 50 مجالاً حيوياً.
+            منظومة معجمية شاملة تضم <strong>5,000 كلمة إنجليزية مختارة بعناية</strong> و <strong>10,000 تعبير ومصطلح اصطلاحي</strong> بالنطق المزدوج الأمريكي (US) والبريطاني (UK) والرموز الصوتية IPA، مع تصنيف دقيق لمستويات CEFR (A1-C2) وأكثر من 50 مجالاً حيوياً.
           </p>
 
           {/* Mode Switcher Tabs */}
@@ -179,7 +179,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
               }`}
             >
               <Compass className="w-4 h-4" />
-              <span>مستكشف الكلمات الذكي (55,000+ كلمة)</span>
+              <span>مستكشف الكلمات الذكي (5,000+ كلمة)</span>
             </button>
 
             <button
@@ -243,7 +243,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
         </div>
       </section>
 
-      {/* TAB 1: INTELLIGENT VOCABULARY EXPLORER (55,000+ WORDS) */}
+      {/* TAB 1: INTELLIGENT VOCABULARY EXPLORER (5,000+ WORDS) */}
       {activeTab === 'explorer' && <VocabularyExplorer />}
 
       {/* TAB 2: MY SAVED VOCABULARY & SM-2 REVIEW */}
