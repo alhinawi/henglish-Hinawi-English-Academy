@@ -36,7 +36,7 @@ export const SpeakingPage: React.FC = () => {
           <span>CONVERSATION & SPEAKING LAB</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          مختبر المحادثة والطلاقة الشفوية 🎙️
+          مختبر المحادثة والطلاقة الشفوية
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
           القواعد ليست حبراً على ورق. استمع للحوارات الإنجليزية بصوت طبيعي وتدرّب على التحدث والتعبير عن خططك المستقبلية بثقة.

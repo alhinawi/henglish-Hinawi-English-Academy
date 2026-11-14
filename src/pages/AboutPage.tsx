@@ -24,7 +24,7 @@ export const AboutPage: React.FC = () => {
           </div>
           
           <h1 className="text-3xl sm:text-5xl font-black text-white">
-            عن منصة هناوي إنجلش الأكاديمية 🦅
+            عن منصة هناوي إنجلش الأكاديمية
           </h1>
 
           <p className="text-base sm:text-lg text-[#dedbf4] max-w-2xl mx-auto leading-relaxed">

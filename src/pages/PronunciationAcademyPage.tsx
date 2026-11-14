@@ -68,7 +68,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية النطق والفونيتكس (IPA) 🗣️
+            أكاديمية النطق والفونيتكس (IPA)
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">

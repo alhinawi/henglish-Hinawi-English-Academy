@@ -77,6 +77,109 @@ export const LISTENING_TRACKS: ListeningTrack[] = [
       },
     ],
   },
+  {
+    id: 'list-3',
+    title: 'Job Interview Self-Introduction',
+    titleAr: 'التعريف بالنفس في مقابلة عمل بالإنجليزية',
+    level: 'B1',
+    accent: 'American',
+    duration: '1:30',
+    category: 'Career & Work',
+    transcript:
+      'Good morning, and thank you for this opportunity. My name is Omar, and I have over four years of experience in digital marketing. In my previous role, I managed social media campaigns for three major brands, and I increased online engagement by forty percent in just one year. I am a fast learner, and I work very well under pressure. I believe my communication skills and my passion for creative content make me a strong fit for this position.',
+    transcriptAr:
+      'صباح الخير، وشكراً على هذه الفرصة. اسمي عمر، وعندي خبرة أكتر من 4 سنين في التسويق الرقمي. في وظيفتي السابقة، كنت بيدير حملات السوشيال ميديا لـ 3 علامات تجارية كبيرة، وزودت التفاعل الإلكتروني بنسبة 40% في سنة واحدة بس. أنا سريع التعلم، وبشتغل كويس جداً تحت الضغط. أعتقد إن مهاراتي في التواصل وشغفي بالمحتوى الإبداعي بيخلوا مني مرشح قوي لهذه الوظيفة.',
+    dictationSentence: 'I increased online engagement by forty percent in just one year.',
+    comprehensionQuiz: [
+      {
+        id: 'lq3-1',
+        question: 'How much experience does Omar have in digital marketing?',
+        options: ['Two years', 'Over four years', 'Ten years', 'One year'],
+        answer: 1,
+        explanation: 'He says: I have over four years of experience in digital marketing.',
+        topic: 'Details Listening',
+        difficulty: 'intermediate',
+      },
+      {
+        id: 'lq3-2',
+        question: 'By how much did he increase online engagement?',
+        options: ['Fourteen percent', 'Four percent', 'Forty percent', 'Thirty percent'],
+        answer: 2,
+        explanation: 'He clearly states: increased online engagement by forty percent in just one year.',
+        topic: 'Numbers Comprehension',
+        difficulty: 'intermediate',
+      },
+    ],
+  },
+  {
+    id: 'list-4',
+    title: 'Doctor Visit: Describing Symptoms',
+    titleAr: 'عند الدكتور: وصف الأعراض بالإنجليزية',
+    level: 'A2',
+    accent: 'British',
+    duration: '1:10',
+    category: 'Health & Medical',
+    transcript:
+      'Doctor: Good morning, what seems to be the problem? Patient: I have had a terrible headache since yesterday, and I feel dizzy when I stand up. Doctor: I see. Have you taken any medicine? Patient: Yes, I took two painkillers last night, but they did not help at all. Doctor: Alright. I will check your blood pressure first, and then I will give you something stronger. Make sure you drink plenty of water and get enough rest.',
+    transcriptAr:
+      'الدكتور: صباح الخير، ما المشكلة؟ المريض: عندي صداع مروع من إمبارح، وبحس بدوخة لما بقف. الدكتور: فاهم. هل أخذت أي دواء؟ المريض: أيوه، خدت حبتين مسكن مبارح بالليل، بس ماساعدوش خالص. الدكتور: حسناً. هقيس ضغط دمك الأول، وبعدها هديك حاجة أقوى. احرص إنك تشرب مية كتير وتاخد راحة كفاية.',
+    dictationSentence: 'I have had a terrible headache since yesterday.',
+    comprehensionQuiz: [
+      {
+        id: 'lq4-1',
+        question: 'Since when has the patient had a headache?',
+        options: ['Since last week', 'Since yesterday', 'Since this morning', 'For a month'],
+        answer: 1,
+        explanation: 'The patient says: I have had a terrible headache since yesterday.',
+        topic: 'Time Details',
+        difficulty: 'beginner',
+      },
+      {
+        id: 'lq4-2',
+        question: 'What will the doctor do first?',
+        options: ['Give stronger medicine', 'Order an X-ray', 'Check the blood pressure', 'Call another doctor'],
+        answer: 2,
+        explanation: 'The doctor says: I will check your blood pressure first.',
+        topic: 'Sequence Comprehension',
+        difficulty: 'beginner',
+      },
+    ],
+  },
+  {
+    id: 'list-5',
+    title: 'Hotel Reception: Solving a Room Problem',
+    titleAr: 'في استقبال الفندق: حل مشكلة في الغرفة',
+    level: 'B1',
+    accent: 'American',
+    duration: '1:20',
+    category: 'Travel & Hospitality',
+    transcript:
+      'Guest: Excuse me, I am afraid there is a problem with my room. The air conditioning is not working, and the room next door is very noisy. Receptionist: I am terribly sorry about that, sir. Let me see what I can do. We have a deluxe room available on the fifth floor with a sea view. I will upgrade you at no extra charge, and I will send someone to help with your luggage right away. Guest: That is very kind of you. Thank you so much.',
+    transcriptAr:
+      'النزيل: لو سمحت، للأسف فيه مشكلة في غرفتي. التكييف مش شغال، والأوضة اللي جنبي دوشة جداً. موظف الاستقبال: أنا آسف جداً على كده يا فندم. خليني أشوف أقدر أعمل إيه. عندنا أوضة ديلوكس متاحة في الدور الخامس بإطلالة على البحر. هعملك ترقية من غير أي تكلفة إضافية، وهبعت حد يساعدك في شنطك حالاً. النزيل: ده لطف منك جداً. شكراً جزيلاً.',
+    dictationSentence: 'I will upgrade you at no extra charge.',
+    comprehensionQuiz: [
+      {
+        id: 'lq5-1',
+        question: 'What are the two problems with the room?',
+        options: ['No water and no TV', 'Broken air conditioning and noise', 'Dirty bathroom and small bed', 'No wifi and no view'],
+        answer: 1,
+        explanation: 'The guest mentions: The air conditioning is not working, and the room next door is very noisy.',
+        topic: 'Multiple Details',
+        difficulty: 'intermediate',
+      },
+      {
+        id: 'lq5-2',
+        question: 'How will the hotel compensate the guest?',
+        options: ['Free dinner', 'A full refund', 'A free upgrade to a deluxe room', 'A discount voucher'],
+        answer: 2,
+        explanation: 'The receptionist offers a deluxe room upgrade at no extra charge.',
+        topic: 'Solution Comprehension',
+        difficulty: 'intermediate',
+      },
+    ],
+  },
+
 ];
 
 // ==========================================
@@ -129,6 +232,73 @@ export const READING_PASSAGES: ReadingPassage[] = [
       },
     ],
   },
+  {
+    id: 'read-2',
+    title: 'The Egyptian Freelancer Who Conquered the Global Market',
+    titleAr: 'المستقل المصري الذي غزا السوق العالمية',
+    level: 'B1',
+    wordCount: 150,
+    estimatedTime: '3 دقائق',
+    category: 'Success Stories',
+    content:
+      'Three years ago, Karim was a fresh graduate struggling to find a job in his hometown. Today, he works with clients from twelve different countries without leaving his small apartment in Mansoura. His secret was simple but not easy: he dedicated two hours every single day to improving his English and learning digital skills online. By the end of his first year as a freelancer, he had earned more than his friends who worked in traditional offices. Karim believes that English was the real key that opened the global market for him. "When you speak English well," he says, "the whole world becomes your local market." His story proves that talent is everywhere, but opportunity needs a common language.',
+    contentAr:
+      'من 3 سنين، كان كريم خريج جديد بيكافح عشان يلاقي شغل في مدينته. النهاردة، بيشتغل مع عملاء من 12 دولة مختلفة من غير ما يسيب شقته الصغيرة في المنصورة. سره كان بسيط بس مش سهل: خصص ساعتين كل يوم لتحسين إنجليزيته وتعلم مهارات رقمية أونلاين. بحلول نهاية سنته الأولى كمستقل، كان كسب أكتر من أصحابه اللي بيشتغلوا في مكاتب تقليدية. كريم مقتنع إن الإنجليزي كان المفتاح الحقيقي اللي فتح له السوق العالمية. بيقول: "لما بتتكلم إنجليزي كويس، العالم كله بيبقى سوقك المحلية." حكايته بتثبت إن الموهبة موجودة في كل حتة، بس الفرصة محتاجة لغة مشتركة.',
+    comprehensionQuestions: [
+      {
+        id: 'rq2-1',
+        question: 'How many hours did Karim dedicate daily to improving himself?',
+        options: ['One hour', 'Two hours', 'Four hours', 'Thirty minutes'],
+        answer: 1,
+        explanation: 'The passage says: he dedicated two hours every single day.',
+        topic: 'Fact Retrieval',
+        difficulty: 'intermediate',
+      },
+      {
+        id: 'rq2-2',
+        question: 'What does Karim consider the real key to the global market?',
+        options: ['His university degree', 'His English skills', 'His small apartment', 'His foreign clients'],
+        answer: 1,
+        explanation: 'Karim believes English was the real key that opened the global market for him.',
+        topic: 'Core Idea Comprehension',
+        difficulty: 'intermediate',
+      },
+    ],
+  },
+  {
+    id: 'read-3',
+    title: 'Why Your Brain Loves Spaced Repetition',
+    titleAr: 'لماذا يعشق عقلك التكرار المتباعد',
+    level: 'B2',
+    wordCount: 160,
+    estimatedTime: '3 دقائق',
+    category: 'Learning Science',
+    content:
+      'Forgetting is not a bug in your brain; it is a feature. German psychologist Hermann Ebbinghaus discovered over a century ago that we lose nearly seventy percent of new information within twenty-four hours if we do not review it. However, his research also revealed a powerful solution: spacing out reviews at increasing intervals. When you revisit a word after one day, then three days, then a week, your brain receives a signal that this information matters and moves it into long-term memory. Modern applications have automated this technique, which is known as spaced repetition. Students who use it can memorize thousands of vocabulary items with only twenty minutes of daily practice. The lesson is clear: studying harder is not the answer; studying at the right time is.',
+    contentAr:
+      'النسيان مش عيب في عقلك؛ ده نظام حماية. عالم النفس الألماني هيرمان إيبنجهاوس اكتشف من أكتر من قرن إننا بنفقد حوالي 70% من المعلومات الجديدة خلال 24 ساعة لو منراجعهاش. بس أبحاثه كشفت كمان حل قوي: توزيع المراجعات على فترات متزايدة. لما بتراجع كلمة بعد يوم، وبعدين 3 أيام، وبعدين أسبوع، عقلك بيستقبل إشارة إن المعلومة دي مهمة وبينقلها للذاكرة طويلة المدى. التطبيقات الحديثة عملت أتمتة للتقنية دي، واسمها التكرار المتباعد. الطلاب اللي بيستخدموها يقدروا يحفظوا آلاف الكلمات بعشرين دقيقة تمرين يومي بس. الدرس واضح: المذاكرة الأصعب مش هي الحل؛ المذاكرة في الوقت الصح هي الحل.',
+    comprehensionQuestions: [
+      {
+        id: 'rq3-1',
+        question: 'How much new information do we lose within 24 hours without review?',
+        options: ['Twenty percent', 'Fifty percent', 'Nearly seventy percent', 'Ninety percent'],
+        answer: 2,
+        explanation: 'The text states: we lose nearly seventy percent of new information within twenty-four hours.',
+        topic: 'Fact Retrieval',
+        difficulty: 'advanced',
+      },
+      {
+        id: 'rq3-2',
+        question: 'What is the main idea of the passage?',
+        options: ['Study harder every day', 'Timing reviews correctly beats longer study sessions', 'Forget everything and restart', 'Only use mobile apps to learn'],
+        answer: 1,
+        explanation: 'The conclusion: studying harder is not the answer; studying at the right time is.',
+        topic: 'Main Idea',
+        difficulty: 'advanced',
+      },
+    ],
+  },
+
 ];
 
 // ==========================================
@@ -184,6 +354,79 @@ export const MINIMAL_PAIRS_DATA: MinimalPair[] = [
     meaningArB: 'اسم شخص أو صندوق (صوت حنجري خفيف)',
     tipAr: 'صوت P يخرج معه انفجار هواء خفيف (ضع يدك أمام فمك لتشعر بالهواء)، بينما B صوت ناعم بدون هواء من الشفتين.',
   },
+  {
+    id: 'mp-4',
+    soundA: '/æ/ (Short A)',
+    soundB: '/e/ (Short E)',
+    wordA: 'bad',
+    wordB: 'bed',
+    ipaA: '/bæd/',
+    ipaB: '/bed/',
+    meaningArA: 'سيئ (افتح فمك على الآخر)',
+    meaningArB: 'سرير (فم مفتوح أقل)',
+    tipAr: 'في bad افتح فمك بشكل كامل زي ما تكون بتعطس، بينما في bed الافتتاحة أصغر وأهدى.',
+  },
+  {
+    id: 'mp-5',
+    soundA: '/θ/ (TH Voiceless)',
+    soundB: '/s/ (S)',
+    wordA: 'think',
+    wordB: 'sink',
+    ipaA: '/θɪŋk/',
+    ipaB: '/sɪŋk/',
+    meaningArA: 'يفكر (السان بين الأسنان)',
+    meaningArB: 'يغرق / حوض (السان ورا الأسنان)',
+    tipAr: 'في think أخرج طرف لسانك بين أسنانك وانفخ هواء، وفي sink السان مكانه الطبيعي ورا الأسنان.',
+  },
+  {
+    id: 'mp-6',
+    soundA: '/ð/ (TH Voiced)',
+    soundB: '/z/ (Z)',
+    wordA: 'breathe',
+    wordB: 'breeze',
+    ipaA: '/briːð/',
+    ipaB: '/briːz/',
+    meaningArA: 'يتنفس (صوت مهتز مع السان خارج)',
+    meaningArB: 'نسيم عليل (صفير مستمر)',
+    tipAr: 'حط إيدك على رقبتك: في breathe هتحس باهتزاز مع السان خارج بين الأسنان، وفي breeze الاهتزاز من غير ما السان يخرج.',
+  },
+  {
+    id: 'mp-7',
+    soundA: '/ʃ/ (SH)',
+    soundB: '/tʃ/ (CH)',
+    wordA: 'share',
+    wordB: 'chair',
+    ipaA: '/ʃer/',
+    ipaB: '/tʃer/',
+    meaningArA: 'يشارك (همسة طويلة)',
+    meaningArB: 'كرسي (تبدأ بوقفة T سريعة)',
+    tipAr: 'في share الصوت همسة مستمرة زي ما تكون بتسكت حد، وفي chair الصوت بيبدأ بضربة سريعة T+SH مع بعض.',
+  },
+  {
+    id: 'mp-8',
+    soundA: '/ɑː/ (Long A)',
+    soundB: '/ʌ/ (Short U)',
+    wordA: 'cart',
+    wordB: 'cut',
+    ipaA: '/kɑːrt/',
+    ipaB: '/kʌt/',
+    meaningArA: 'عربية تسوق (صوت ممدود من الحلق)',
+    meaningArB: 'يقطع (صوت قصير مركزي)',
+    tipAr: 'في cart مد الصوت زي ما تكون عند دكتور الأسنان: آآآه، وفي cut الصوت قصير وسريع من نص الفم.',
+  },
+  {
+    id: 'mp-9',
+    soundA: '/l/ (Light L)',
+    soundB: '/r/ (American R)',
+    wordA: 'light',
+    wordB: 'right',
+    ipaA: '/laɪt/',
+    ipaB: '/raɪt/',
+    meaningArA: 'نور (السان يلمس سقف الفم)',
+    meaningArB: 'صح / يمين (السان مكور للخلف)',
+    tipAr: 'في light طرف لسانك يلمس اللثة فوق الأسنان الأمامية، وفي right السان بيتكور للورا من غير ما يلمس أي حاجة.',
+  },
+
 ];
 
 // ==========================================
@@ -256,7 +499,7 @@ export const REAL_LIFE_MODULES: RealLifeModule[] = [
       { speaker: 'Interviewer', textEn: 'Why do you believe you are the best fit for our engineering team?', textAr: 'لماذا تعتقد أنك الشخص الأنسب لفريقنا الهندسي؟' },
       { speaker: 'You', textEn: 'Because my technical background aligns seamlessly with your tech stack, and I excel in fast-paced collaborative environments.', textAr: 'لأن خلفيتي التقنية تتوافق بسلاسة مع تقنياتكم، وأتميز في بيئات العمل السريعة والمتعاونة.' },
     ],
-  },
+  }
 ];
 
 // ==========================================

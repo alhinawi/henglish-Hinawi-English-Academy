@@ -106,7 +106,7 @@ export const TeacherDashboardPage: React.FC<TeacherDashboardPageProps> = ({ onNa
               <span>لوحة المعلم والمشرف الأكاديمي</span>
             </div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-white">
-              مرحباً، {user?.nameAr || user?.name || 'أستاذنا الفاضل'} 👨‍🏫
+              مرحباً، {user?.nameAr || user?.name || 'أستاذنا الفاضل'}‍
             </h1>
             <p className="text-slate-400 text-sm mt-1 max-w-xl leading-relaxed">
               متابعة تقدم الطلاب وتقييم الإجابات ومراجعة جلسات المحاكاة الصوتية في منصة هناوي.

@@ -40,7 +40,7 @@ export const VocabularyPage: React.FC = () => {
           <span>V3 VERB TOOLKIT • حقيبة أفعال التصريف الثالث</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          دليل تصريفات الأفعال V1, V2, V3 📚
+          دليل تصريفات الأفعال V1, V2, V3
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
           المستقبل التام يعتمد كلياً على التصريف الثالث (V3). ابحث عن أي فعل واستمع لنطقه الإنجليزي واقرأ أمثلة عملية جاهزة.

@@ -103,7 +103,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
           <span>HENGLISH DYNAMIC ASSESSMENT REPOSITORY</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white font-['Cairo',sans-serif]">
-          بنك الاختبارات ومولّد الكويزات الذكي 🎮
+          بنك الاختبارات ومولّد الكويزات الذكي
         </h1>
         <p className="text-base text-[#b9b6d5] leading-relaxed">
           اختبر مهاراتك مع بنك الأسئلة الشامل، أو قم بتوليد كويزات غير محدودة وفورية مخصصة لمستواك في أي قاعدة إنجليزية بواسطة الذكاء الاصطناعي (Gemini Multimodal).

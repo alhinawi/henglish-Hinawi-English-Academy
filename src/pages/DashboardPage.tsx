@@ -178,7 +178,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
 
             <h1 className="text-2xl sm:text-4xl 2xl:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-              أهلاً بك مجدداً، {userProfile.nameAr}! 🦅
+              أهلاً بك مجدداً، {userProfile.nameAr}!
             </h1>
 
             <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed max-w-2xl">
