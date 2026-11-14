@@ -9,7 +9,14 @@ import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { generateStressDetectiveRound, GameQuestion } from '../../services/gameGenerationService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration, speakEnglish } from '../../utils/audio';
-import { Volume2, Music, ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
+import {
+  Volume2,
+  Music,
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+  Loader2,
+} from 'lucide-react';
 
 interface StressDetectiveGameProps {
   onExit: () => void;
@@ -134,7 +141,7 @@ export const StressDetectiveGame: React.FC<StressDetectiveGameProps> = ({ onExit
   if (isLoading) {
     return (
       <div className="glass-panel p-12 rounded-3xl text-center space-y-4 max-w-xl mx-auto border border-white/10">
-        <div className="text-5xl animate-bounce">🎵</div>
+        <Loader2 className="w-12 h-12 mx-auto text-[#41e7ff] animate-spin" />
         <h3 className="text-xl font-black text-white font-['Cairo',sans-serif]">
           جارٍ إعداد تحدي نبرة المقاطع الصوتية...
         </h3>
@@ -148,7 +155,7 @@ export const StressDetectiveGame: React.FC<StressDetectiveGameProps> = ({ onExit
   return (
     <div className="max-w-2xl mx-auto space-y-6 text-right">
       <GameHud
-        title="محقق نبرة المقاطع الصوتية 🎵"
+        title="محقق نبرة المقاطع الصوتية"
         category="spelling"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -186,7 +193,7 @@ export const StressDetectiveGame: React.FC<StressDetectiveGameProps> = ({ onExit
                 className="py-2 px-5 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] text-xs font-bold inline-flex items-center gap-2 cursor-pointer transition-colors"
               >
                 <Volume2 className="w-4 h-4" />
-                <span>استمع للكلمة بوضوح 🔊</span>
+                <span>استمع للكلمة بوضوح</span>
               </button>
             )}
           </div>

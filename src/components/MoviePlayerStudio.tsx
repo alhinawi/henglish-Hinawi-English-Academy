@@ -172,7 +172,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
         setIsEchoRecording(false);
         if (transClean === targetClean) {
           setEchoScore(100);
-          setEchoFeedback('رائع جداً! تقمصت نطق الممثل بنسبة 100% 🌟');
+          setEchoFeedback('رائع جداً! تقمصت نطق الممثل بنسبة 100%');
           playSound('success');
         } else {
           const targetWords = targetClean.split(' ');
@@ -210,7 +210,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
             <span>LEARN FROM MOVIES STUDIO • ستوديو السينما التعليمي</span>
           </div>
           <h2 className="text-xl sm:text-3xl font-black text-white flex items-center gap-2">
-            <span>{scene.movieTitle} ({scene.releaseYear}) 🎬</span>
+            <span>{scene.movieTitle} ({scene.releaseYear})</span>
           </h2>
           <p className="text-xs sm:text-sm text-white/60">
             {scene.sceneTitle} • إخراج: {scene.director} • تصنيف: {scene.genre}

@@ -174,7 +174,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
         {/* Educational Hint Badge */}
         {translatedText && !isLoading && onExplainClick && (
           <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between text-xs">
-            <span className="text-[#b9b6d5]/60">💡 اضغط على أي كلمة لتحليلها أو احفظها</span>
+            <span className="text-[#b9b6d5]/60">اضغط على أي كلمة لتحليلها أو احفظها</span>
             <button
               type="button"
               onClick={() => {

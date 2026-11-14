@@ -108,7 +108,7 @@ export const ResourcesPage: React.FC = () => {
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/10 hover:bg-[#c4ff55]/20 text-[#c4ff55] font-black text-xs transition-colors cursor-pointer border border-[#c4ff55]/30"
                 >
                   <Download className="w-3.5 h-3.5" />
-                  <span>{isDownloaded ? 'تم التحميل ✓' : 'تحميل الملف'}</span>
+                  <span>{isDownloaded ? 'تم التحميل' : 'تحميل الملف'}</span>
                 </button>
 
                 <span className="text-xs text-[#b9b6d5] font-semibold">

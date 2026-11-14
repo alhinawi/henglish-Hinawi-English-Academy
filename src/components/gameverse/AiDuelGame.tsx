@@ -173,7 +173,7 @@ export const AiDuelGame: React.FC<AiDuelGameProps> = ({ onExit }) => {
     return (
       <div className="glass-panel p-6 sm:p-10 rounded-3xl max-w-2xl mx-auto border border-white/10 text-center space-y-8 animate-in fade-in">
         <div className="w-16 h-16 rounded-3xl bg-linear-to-tr from-[#ff4f9a]/20 to-[#9b7bff]/20 border border-white/20 flex items-center justify-center mx-auto text-3xl shadow-xl">
-          ⚔️
+         
         </div>
 
         <div className="space-y-2">
@@ -262,8 +262,8 @@ export const AiDuelGame: React.FC<AiDuelGameProps> = ({ onExit }) => {
           </div>
           <div className="text-[11px] text-[#b9b6d5]">
             {aiStatus === 'thinking' && 'الخصم يفكر الآن... ⏳'}
-            {aiStatus === 'correct' && 'الخصم أجاب بشكل صحيح! ⚡'}
-            {aiStatus === 'wrong' && 'الخصم أخطأ في الإجابة! ❌'}
+            {aiStatus === 'correct' && 'الخصم أجاب بشكل صحيح!'}
+            {aiStatus === 'wrong' && 'الخصم أخطأ في الإجابة!'}
           </div>
         </div>
 
@@ -277,7 +277,7 @@ export const AiDuelGame: React.FC<AiDuelGameProps> = ({ onExit }) => {
             </div>
           </div>
           <div className="w-12 h-12 rounded-2xl bg-[#c4ff55]/20 border border-[#c4ff55]/30 flex items-center justify-center text-2xl shadow-md">
-            😎
+           
           </div>
         </div>
 
@@ -339,14 +339,14 @@ export const AiDuelGame: React.FC<AiDuelGameProps> = ({ onExit }) => {
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 text-xs text-right space-y-2">
                 <div className="flex items-center justify-between text-white font-bold">
                   <span>
-                    {selectedOption === currentQ.correctAnswer ? 'إجابتك صحيحة! 🎯' : 'إجابتك خاطئة ❌'}
+                    {selectedOption === currentQ.correctAnswer ? 'إجابتك صحيحة!' : 'إجابتك خاطئة'}
                   </span>
                   <span className="text-[#ffd166]">
                     {aiStatus === 'correct' ? 'الروبوت أجاب صح أيضاً' : 'الروبوت أخطأ في هذه الجولة'}
                   </span>
                 </div>
                 <p className="text-[#dedbf4] leading-relaxed">
-                  💡 {currentQ.explanationAr}
+                 {currentQ.explanationAr}
                 </p>
               </div>
 

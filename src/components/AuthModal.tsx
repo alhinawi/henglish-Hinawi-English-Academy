@@ -104,7 +104,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
       setFeedbackMsg({ type: 'error', text: 'أدخل بريدك الإلكتروني لإرسال رابط الاستعادة.' });
       return;
     }
-    setFeedbackMsg({ type: 'success', text: 'تم إرسال تعليمات إعادة ضبط كلمة المرور إلى بريدك بنجاح! 📨' });
+    setFeedbackMsg({ type: 'success', text: 'تم إرسال تعليمات إعادة ضبط كلمة المرور إلى بريدك بنجاح!' });
   };
 
   const handleSelectDemo = (role: 'student' | 'teacher') => {
@@ -158,7 +158,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             </button>
             <div className="flex items-center gap-2.5">
               <div className="w-10 h-10 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] flex items-center justify-center font-black text-[#0c0b20] text-lg shadow-md">
-                🦅
+               
               </div>
               <div>
                 <h3 className="text-lg font-black text-white">بوابة أكاديمية هناوي</h3>
@@ -279,7 +279,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 disabled={isSubmitting}
                 className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
               >
-                {isSubmitting ? 'جاري التحقق...' : 'تسجيل الدخول الآن ⚡'}
+                {isSubmitting ? 'جاري التحقق...' : 'تسجيل الدخول الآن'}
               </button>
             </form>
           )}
@@ -343,7 +343,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 disabled={isSubmitting}
                 className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
               >
-                {isSubmitting ? 'جاري إنشاء الحساب...' : 'إنشاء حساب جديد مجاناً 🚀'}
+                {isSubmitting ? 'جاري إنشاء الحساب...' : 'إنشاء حساب جديد مجاناً'}
               </button>
             </form>
           )}
@@ -390,7 +390,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               >
                 <div>
                   <div className="text-sm font-black text-white group-hover:text-[#ffd166]">
-                    سارة عبد الرحمن (حساب طالب B1) 🎓
+                    سارة عبد الرحمن (حساب طالب B1)
                   </div>
                   <div className="text-xs text-[#b9b6d5]">
                     3,450 XP • استمرارية 14 يوماً • مسار المستقبل التام
@@ -406,7 +406,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               >
                 <div>
                   <div className="text-sm font-black text-[#ffd166]">
-                    أ. هناوي (حساب المعلم واستوديو المحتوى) 👨‍🏫
+                    أ. هناوي (حساب المعلم واستوديو المحتوى)‍
                   </div>
                   <div className="text-xs text-[#b9b6d5]">
                     صلاحيات كاملة • إدارة الدروس والأسئلة • لوحة المعلم
@@ -455,7 +455,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 type="submit"
                 className="w-full py-3 rounded-xl bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer"
               >
-                حفظ وترحيل تقدم الزائر لحساب دائم 🎉
+                حفظ وترحيل تقدم الزائر لحساب دائم
               </button>
             </form>
           )}

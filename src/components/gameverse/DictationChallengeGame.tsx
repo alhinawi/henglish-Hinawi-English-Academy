@@ -9,7 +9,14 @@ import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { generateDictationRound, GameQuestion } from '../../services/gameGenerationService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration, speakEnglish } from '../../utils/audio';
-import { Volume2, Mic, ArrowRight, CheckCircle2, RotateCcw } from 'lucide-react';
+import {
+  Volume2,
+  Mic,
+  ArrowRight,
+  CheckCircle2,
+  RotateCcw,
+  Loader2,
+} from 'lucide-react';
 
 interface DictationChallengeGameProps {
   onExit: () => void;
@@ -161,7 +168,7 @@ export const DictationChallengeGame: React.FC<DictationChallengeGameProps> = ({ 
   if (isLoading) {
     return (
       <div className="glass-panel p-12 rounded-3xl text-center space-y-4 max-w-xl mx-auto border border-white/10">
-        <div className="text-5xl animate-bounce">🎙️</div>
+        <Loader2 className="w-12 h-12 mx-auto text-[#41e7ff] animate-spin" />
         <h3 className="text-xl font-black text-white font-['Cairo',sans-serif]">
           جارٍ إعداد تحدي الإملاء السمعي...
         </h3>
@@ -175,7 +182,7 @@ export const DictationChallengeGame: React.FC<DictationChallengeGameProps> = ({ 
   return (
     <div className="max-w-2xl mx-auto space-y-6 text-right">
       <GameHud
-        title="تحدي الإملاء السمعي المباشر 🎙️"
+        title="تحدي الإملاء السمعي المباشر"
         category="listening"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -201,7 +208,7 @@ export const DictationChallengeGame: React.FC<DictationChallengeGameProps> = ({ 
               className="py-4 px-8 rounded-2xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-[#0c0b20] font-black text-base inline-flex items-center gap-2 cursor-pointer shadow-lg hover:brightness-110 active:scale-95 transition-all"
             >
               <Volume2 className="w-5 h-5" />
-              <span>استمع للجملة مرة أخرى 🔊</span>
+              <span>استمع للجملة مرة أخرى</span>
             </button>
             <p className="text-xs text-[#b9b6d5]">
               استمع بانتباه واكتب الجملة الإنجليزية التي تسمعها كاملة
@@ -230,7 +237,7 @@ export const DictationChallengeGame: React.FC<DictationChallengeGameProps> = ({ 
                 disabled={!userInput.trim()}
                 className="w-full py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-base cursor-pointer shadow-lg hover:brightness-110 disabled:opacity-40 transition-all"
               >
-                تحقق من دقة الإملاء ✓
+                تحقق من دقة الإملاء
               </button>
             ) : (
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-3 animate-in fade-in text-right">

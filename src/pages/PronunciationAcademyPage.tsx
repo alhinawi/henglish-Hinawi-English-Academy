@@ -151,13 +151,13 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
         {/* Pronunciation Tip */}
         <div className="p-4 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-white space-y-1">
-          <strong className="text-[#ffd166]">💡 نصيحة الخبير لنطق هذا الزوج: </strong>
+          <strong className="text-[#ffd166]">نصيحة الخبير لنطق هذا الزوج: </strong>
           <span>{pair.tipAr}</span>
         </div>
 
         {/* Ear Training Game */}
         <div className="p-6 rounded-2xl bg-[#09091a] border border-white/10 text-center space-y-4">
-          <h3 className="text-base font-black text-white">🎮 لعبة التمييز السمعي: أي الكلمتين نطقنا؟</h3>
+          <h3 className="text-base font-black text-white">لعبة التمييز السمعي: أي الكلمتين نطقنا؟</h3>
           <p className="text-xs text-[#b9b6d5]">
             اضغط على الزر للاستماع لكلمة عشوائية من الاثنين، ثم خمّن هل كانت (A) أم (B):
           </p>
@@ -166,7 +166,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             onClick={handleTestEar}
             className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
           >
-            🔊 شغّل صوتاً عشوائياً للاختبار
+           شغّل صوتاً عشوائياً للاختبار
           </button>
 
           {testedSound && (
@@ -190,7 +190,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <div className={`p-3 rounded-xl text-xs font-bold ${
               quizScore === 1 ? 'text-[#c4ff55] bg-[#c4ff55]/10' : 'text-[#ff8bb9] bg-[#ff4f9a]/10'
             }`}>
-              {quizScore === 1 ? '🎉 إجابة صحيحة مذهلة! أذنك تميز الفروق الدقيقة.' : '❌ إجابة خاطئة! استمع مجدداً وقارن بين الصوتين.'}
+              {quizScore === 1 ? 'إجابة صحيحة مذهلة! أذنك تميز الفروق الدقيقة.' : 'إجابة خاطئة! استمع مجدداً وقارن بين الصوتين.'}
             </div>
           )}
         </div>

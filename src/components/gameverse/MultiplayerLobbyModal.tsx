@@ -66,7 +66,7 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
         
         {/* Header Icon */}
         <div className="w-16 h-16 rounded-3xl bg-linear-to-tr from-[#ffd166]/20 via-[#41e7ff]/20 to-[#ff4f9a]/20 border border-white/20 flex items-center justify-center mx-auto text-3xl shadow-xl">
-          👥
+         
         </div>
 
         <div className="space-y-1.5">
@@ -91,7 +91,7 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
                     : 'text-[#b9b6d5] hover:text-white'
                 }`}
               >
-                إنشاء غرفة جديدة ➕
+                إنشاء غرفة جديدة
               </button>
               <button
                 onClick={() => { playSound('click'); setActiveTab('join'); }}
@@ -101,7 +101,7 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
                     : 'text-[#b9b6d5] hover:text-white'
                 }`}
               >
-                الانضمام برمز الغرفة 🔑
+                الانضمام برمز الغرفة
               </button>
             </div>
 
@@ -125,7 +125,7 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
                   className="w-full py-3.5 rounded-2xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110 transition-transform active:scale-98"
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>توليد رمز الغرفة وبدء الانتظار 🚀</span>
+                  <span>توليد رمز الغرفة وبدء الانتظار</span>
                 </button>
               </div>
             )}
@@ -152,7 +152,7 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
                   className="w-full py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#121124] font-black text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed transition-transform active:scale-98"
                 >
                   <UserPlus className="w-4 h-4" />
-                  <span>دخول الغرفة والتحدي 🎯</span>
+                  <span>دخول الغرفة والتحدي</span>
                 </button>
               </form>
             )}
@@ -202,7 +202,7 @@ export const MultiplayerLobbyModal: React.FC<MultiplayerLobbyModalProps> = ({
                         </span>
                       )}
                     </div>
-                    <span className="text-emerald-400 font-bold">جاهز للمعركة ✅</span>
+                    <span className="text-emerald-400 font-bold">جاهز للمعركة</span>
                   </div>
                 ))}
               </div>

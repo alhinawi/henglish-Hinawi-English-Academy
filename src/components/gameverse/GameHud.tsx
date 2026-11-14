@@ -130,7 +130,7 @@ export const GameHud: React.FC<GameHudProps> = ({
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
           <div className="glass-panel p-6 sm:p-8 rounded-3xl max-w-sm w-full border border-white/10 text-center space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-rose-500/20 text-rose-400 flex items-center justify-center mx-auto border border-rose-500/30 text-2xl">
-              ⚠️
+             
             </div>
             <h3 className="text-lg font-black text-white">هل تريد مغادرة التحدي؟</h3>
             <p className="text-xs text-[#b9b6d5] leading-relaxed">

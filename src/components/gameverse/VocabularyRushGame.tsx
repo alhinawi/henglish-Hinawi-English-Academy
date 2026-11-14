@@ -173,7 +173,7 @@ export const VocabularyRushGame: React.FC<VocabularyRushGameProps> = ({
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <GameHud
-        title="سباق المفردات السريع ⚡"
+        title="سباق المفردات السريع"
         category="المفردات (Vocabulary)"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -268,7 +268,7 @@ export const VocabularyRushGame: React.FC<VocabularyRushGameProps> = ({
       {/* Results Modal */}
       {gameResult && (
         <GameResultsModal
-          title="سباق المفردات السريع ⚡"
+          title="سباق المفردات السريع"
           score={score}
           maxScore={questions.length * 15}
           accuracy={gameResult.accuracy}

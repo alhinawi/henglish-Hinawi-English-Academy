@@ -81,7 +81,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
             <span>3D INTERACTIVE FLASHCARDS</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white">
-            بطاقات المراجعة الذكية ⚡
+            بطاقات المراجعة الذكية
           </h3>
           <p className="text-sm text-[#b9b6d5] mt-0.5">
             اضغط على البطاقة لقلبها واكتشاف القاعدة والأمثلة ونطقها الصوتي.
@@ -169,7 +169,7 @@ export const FlashcardDeck: React.FC<FlashcardDeckProps> = ({
           <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-3xl p-6 sm:p-8 flex flex-col justify-between bg-linear-to-br from-[#201d43] to-[#12102b] border border-[#41e7ff]/40 shadow-[0_20px_50px_rgba(65,231,255,0.15)]">
             <div className="flex items-center justify-between">
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/40">
-                الحل والشرح الذهبي ✨
+                الحل والشرح الذهبي
               </span>
               <button
                 onClick={(e) => {

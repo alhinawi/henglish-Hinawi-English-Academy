@@ -153,7 +153,7 @@ export const AdminAiManagementSection: React.FC = () => {
     try {
       const res = await fetch('/api/ai/admin/clear-cache', { method: 'POST' });
       if (res.ok) {
-        setCacheMessage('تم تفريغ الذاكرة المؤقتة للـ AI بنجاح! ✅');
+        setCacheMessage('تم تفريغ الذاكرة المؤقتة للـ AI بنجاح!');
         setTimeout(() => setCacheMessage(null), 3000);
       }
     } catch {
@@ -227,10 +227,10 @@ export const AdminAiManagementSection: React.FC = () => {
             <span>CENTRAL MULTI-PROVIDER AI ROUTER • معمارية الذكاء الاصطناعي الموحدة</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-black text-white font-['Cairo',sans-serif]">
-            إدارة مزودي الذكاء الاصطناعي والمراقبة السحابية 🤖
+            إدارة مزودي الذكاء الاصطناعي والمراقبة السحابية
           </h2>
           <p className="text-xs text-[#b9b6d5] max-w-xl">
-            نظام توجيه سحابي فائق الذكاء: Groq (الأساسي) ➔ Gemini (البديل الأول) ➔ Cloudflare (البديل الثاني) ➔ OpenAI ➔ Henglish Local Brain.
+            نظام توجيه سحابي فائق الذكاء: Groq (الأساسي)Gemini (البديل الأول)Cloudflare (البديل الثاني)OpenAIHenglish Local Brain.
           </p>
         </div>
 
@@ -336,7 +336,7 @@ export const AdminAiManagementSection: React.FC = () => {
                         </span>
                       ) : !p.isConfigured ? (
                         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">
-                          بانتظار المفتاح 🔑
+                          بانتظار المفتاح
                         </span>
                       ) : (
                         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
@@ -374,7 +374,7 @@ export const AdminAiManagementSection: React.FC = () => {
 
                   {p.lastError && (
                     <div className="p-2 rounded-xl bg-rose-500/10 border border-rose-500/20 text-[10px] text-rose-300 leading-normal">
-                      ⚠️ {p.lastError}
+                     {p.lastError}
                     </div>
                   )}
 
@@ -494,13 +494,13 @@ export const AdminAiManagementSection: React.FC = () => {
                     </td>
                     <td className="py-2.5 px-3 font-['Outfit',sans-serif]">{item.durationMs}ms</td>
                     <td className="py-2.5 px-3 text-white/60">
-                      {item.fallbackChain.join(' ➔ ')}
+                      {item.fallbackChain.join('')}
                     </td>
                     <td className="py-2.5 px-3">
                       {item.status === 'success' ? (
-                        <span className="text-emerald-400 font-bold">ناجح ✅</span>
+                        <span className="text-emerald-400 font-bold">ناجح</span>
                       ) : (
-                        <span className="text-amber-400 font-bold">بديل تعويضي ⚡</span>
+                        <span className="text-amber-400 font-bold">بديل تعويضي</span>
                       )}
                     </td>
                   </tr>

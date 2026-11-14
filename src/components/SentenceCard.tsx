@@ -130,7 +130,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
         setIsRecording(false);
         if (transClean === targetClean) {
           setSpeakingScore(100);
-          setSpeakingFeedback('ممتاز! نطقك متطابق تماماً بنسبة 100% 🎯');
+          setSpeakingFeedback('ممتاز! نطقك متطابق تماماً بنسبة 100%');
           playSound('success');
         } else {
           // Calculate rough word match
@@ -305,7 +305,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
       {speakingFeedback && (
         <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-xs space-y-1 text-right">
           <div className="flex items-center justify-between font-black text-blue-300">
-            <span>تقييم النطق المباشر 🎙️</span>
+            <span>تقييم النطق المباشر</span>
             {speakingScore !== null && (
               <span className="px-2 py-0.5 rounded-md bg-blue-500 text-white font-black">
                 {speakingScore}%
