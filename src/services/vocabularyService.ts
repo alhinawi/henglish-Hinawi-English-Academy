@@ -172,9 +172,20 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
 
   fullLoadingPromise = (async () => {
     try {
-      const res = await fetch('/data/vocabulary.json');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data: LexicalEntry[] = await res.json();
+      // Full dataset is split into chunks to stay under static-host file-size limits
+      const chunkUrls = [
+        '/data/vocabulary-full-1.json',
+        '/data/vocabulary-full-2.json',
+        '/data/vocabulary-full-3.json',
+      ];
+      const parts: LexicalEntry[][] = await Promise.all(
+        chunkUrls.map(async (url) => {
+          const res = await fetch(url);
+          if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+          return res.json();
+        })
+      );
+      const data: LexicalEntry[] = parts.flat();
       cachedWords = data;
       fullDatasetLoaded = true;
       buildIndices(data);
