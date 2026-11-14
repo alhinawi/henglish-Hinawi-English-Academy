@@ -197,7 +197,7 @@ export const Header: React.FC<HeaderProps> = ({
               aria-haspopup="true"
               aria-expanded={grammarMenuOpen}
             >
-              <span>أكاديمية الجرامر 🦅</span>
+              <span>أكاديمية الجرامر </span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${grammarMenuOpen ? 'rotate-180' : ''}`} />
             </button>
 
@@ -215,7 +215,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleNav('grammar')}
                     className="w-full p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/15 to-[#41e7ff]/15 hover:brightness-110 text-white font-black text-xs flex items-center justify-between cursor-pointer border border-[#ffd166]/30"
                   >
-                    <span>فهرس القواعد الشامل (16 قاعدة) 📖</span>
+                    <span>فهرس القواعد الشامل (38 قاعدة) </span>
                     <span className="text-[10px] text-[#ffd166]">A1 - C1</span>
                   </button>
 
@@ -227,7 +227,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleNav('courses/grammar/future-perfect')}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#41e7ff] hover:text-white text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>المستقبل التام الشامل ⚡ (كورس رائد)</span>
+                    <span>المستقبل التام الشامل (كورس رائد)</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#41e7ff]/20 text-[#41e7ff]">B2</span>
                   </button>
 
@@ -304,7 +304,7 @@ export const Header: React.FC<HeaderProps> = ({
               aria-haspopup="true"
               aria-expanded={skillsMenuOpen}
             >
-              <span>الأكاديميات المهارية 🎯</span>
+              <span>الأكاديميات المهارية </span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${skillsMenuOpen ? 'rotate-180' : ''}`} />
             </button>
 
@@ -321,42 +321,42 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleNav('vocabulary')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الكلمات وتصريف V1-V3 📚</span>
+                    <span>أكاديمية الكلمات وتصريف V1-V3 </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">معجم</span>
                   </button>
                   <button
                     onClick={() => handleNav('speaking')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية المحادثة والطلاقة 🗣️</span>
+                    <span>أكاديمية المحادثة والطلاقة </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">حوار</span>
                   </button>
                   <button
                     onClick={() => handleNav('listening')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الاستماع والفهم 🎧</span>
+                    <span>أكاديمية الاستماع والفهم </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">لهجات</span>
                   </button>
                   <button
                     onClick={() => handleNav('reading')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية القراءة واستيعاب النصوص 📖</span>
+                    <span>أكاديمية القراءة واستيعاب النصوص </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">نصوص</span>
                   </button>
                   <button
                     onClick={() => handleNav('writing')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الكتابة والمراسلات ✍️</span>
+                    <span>أكاديمية الكتابة والمراسلات </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">إيميل</span>
                   </button>
                   <button
                     onClick={() => handleNav('pronunciation')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية النطق والفونيتكس 🎙️</span>
+                    <span>أكاديمية النطق والفونيتكس </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">IPA</span>
                   </button>
                 </motion.div>
@@ -373,7 +373,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            إنجليزي المواقف الحقيقية 🌍
+            إنجليزي المواقف الحقيقية 
           </button>
 
           {/* 5. AI English Tutor */}
@@ -386,7 +386,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <Bot className="w-3.5 h-3.5" />
-            <span>المعلم الذكي AI 🤖</span>
+            <span>المعلم الذكي AI </span>
           </button>
 
           {/* 6. Placement & Exams */}
@@ -398,7 +398,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            تحديد المستوى 🎯
+            تحديد المستوى 
           </button>
 
           {/* 7. Certificates & Verification */}
@@ -410,7 +410,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            الشهادات 📜
+            الشهادات 
           </button>
         </nav>
       </div>
@@ -548,7 +548,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <ChevronDown className="w-3 h-3 text-[#b9b6d5]" />
               </span>
               <span className="text-[10px] text-[#ffd166] font-semibold leading-tight">
-                {userProfile.role === 'teacher' ? 'مدرس معتمد 🎓' : `مستوى ${userProfile.currentLevel}`}
+                {userProfile.role === 'teacher' ? 'مدرس معتمد ' : `مستوى ${userProfile.currentLevel}`}
               </span>
             </div>
           </button>
@@ -566,7 +566,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
                   <div className="text-xs text-[#b9b6d5] truncate">{userProfile.email}</div>
                   <div className="inline-flex items-center gap-1 mt-1 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
-                    <span>{userProfile.role === 'teacher' ? 'رتبة: معلم وأستاذ 👨‍🏫' : `مستوى CEFR: ${userProfile.currentLevel}`}</span>
+                    <span>{userProfile.role === 'teacher' ? 'رتبة: معلم وأستاذ ‍' : `مستوى CEFR: ${userProfile.currentLevel}`}</span>
                   </div>
                 </div>
               </div>
