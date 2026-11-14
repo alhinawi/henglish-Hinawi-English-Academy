@@ -492,7 +492,79 @@ export const MINIMAL_PAIRS_DATA: MinimalPair[] = [
     tipAr: 'في light طرف لسانك يلمس اللثة فوق الأسنان الأمامية، وفي right السان بيتكور للورا من غير ما يلمس أي حاجة.',
   },
 
-];
+  // Expansion Pack 2 - 6 additional minimal pairs
+  {
+    id: 'mp-10',
+    soundA: '/b/ (B)',
+    soundB: '/p/ (P)',
+    wordA: 'bat',
+    wordB: 'pat',
+    ipaA: '/bæt/',
+    ipaB: '/pæt/',
+    meaningArA: 'مضرب / خفاش',
+    meaningArB: 'ربتة خفيفة',
+    tipAr: 'في bat اجعل شفتيك تنفجران بصوت مرخّي مصحوب باهتزاز الحبال الصوتية، بينما pat تخرج بنفخة هوائية بدون اهتزاز.',
+  },
+  {
+    id: 'mp-11',
+    soundA: '/s/ (S)',
+    soundB: '/ʃ/ (SH)',
+    wordA: 'sip',
+    wordB: 'ship',
+    ipaA: '/sɪp/',
+    ipaB: '/ʃɪp/',
+    meaningArA: 'رشفة صغيرة',
+    meaningArB: 'سفينة',
+    tipAr: 'في sip اللسان قريب من الأسنان بصوت صفير حاد، وفي ship ضمّ شفتيك للأمام قليلاً مع صوت أعمق.',
+  },
+  {
+    id: 'mp-12',
+    soundA: '/tʃ/ (CH)',
+    soundB: '/ʃ/ (SH)',
+    wordA: 'chair',
+    wordB: 'share',
+    ipaA: '/tʃeər/',
+    ipaB: '/ʃeər/',
+    meaningArA: 'كرسي',
+    meaningArB: 'يشارك',
+    tipAr: 'chair تبدأ بانفجار سريع t + sh، بينما share تبدأ بصوت sh انسيابي فقط بدون انفجار.',
+  },
+  {
+    id: 'mp-13',
+    soundA: '/v/ (V)',
+    soundB: '/f/ (F)',
+    wordA: 'very',
+    wordB: 'ferry',
+    ipaA: '/ˈveri/',
+    ipaB: '/ˈferi/',
+    meaningArA: 'جداً',
+    meaningArB: 'عبّارة نهرية',
+    tipAr: 'في very الأسنان العلوية تلامس الشفة السفلى مع اهتزاز الحبال الصوتية، وفي ferry نفس الوضع بدون اهتزاز.',
+  },
+  {
+    id: 'mp-14',
+    soundA: '/æ/ (A)',
+    soundB: '/e/ (E)',
+    wordA: 'bad',
+    wordB: 'bed',
+    ipaA: '/bæd/',
+    ipaB: '/bed/',
+    meaningArA: 'سيئ',
+    meaningArB: 'سرير',
+    tipAr: 'في bad افتح فكك للأسفل بعرض مثل نطق (اي) مصرية مفتوحة، وفي bed الصوت أقصر وأقرب لـ (إيه).',
+  },
+  {
+    id: 'mp-15',
+    soundA: '/ɑː/ (Long A)',
+    soundB: '/ʌ/ (Short U)',
+    wordA: 'cart',
+    wordB: 'cut',
+    ipaA: '/kɑːrt/',
+    ipaB: '/kʌt/',
+    meaningArA: 'عربة / كارت',
+    meaningArB: 'يقطع',
+    tipAr: 'cart صوت ألف ممدود من عمق الفم، بينما cut صوت قصير مركز من منتصف الفم مثل (آ) سريعة.',
+  },];
 
 // ==========================================
 // 4. REAL-LIFE ENGLISH MODULES
@@ -659,3 +731,4 @@ export const CEFR_PLACEMENT_QUESTIONS: {
     explanation: 'صيغة شرطية متقدمة راقية تعادل If it hadn’t been for... وتأخذ would have been.',
   },
 ];
+
