@@ -1983,6 +1983,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'How you doin\'?', arEg: 'عامل إيه؟' }, { en: 'Could this be any more boring?', arEg: 'ممكن يكون أمل من كده؟' }],
   },
+  {
+    id: 'movie-incredibles-lesson',
+    movieTitle: 'Learn English with Movies: The Incredibles',
+    releaseYear: 2018,
+    director: 'Exciting English',
+    genre: 'Animation / Family',
+    cefrLevel: 'A2',
+    sceneTitle: 'The Incredibles Lesson',
+    sceneDescription: 'درس مبني على فيلم The Incredibles: مفردات عائلية وحركة بجمل بسيطة وواضحة للمبتدئين.',
+    youtubeId: 'Rnwwo9Zol6w',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Exciting English (Official)',
+    dialogueQuote: 'We are a normal family now.',
+    actorName: 'Exciting English',
+    characterName: 'The Parr Family',
+    thumbnailUrl: 'https://img.youtube.com/vi/Rnwwo9Zol6w/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Exciting English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'We are a normal family now.', arEg: 'احنا دلوقتي عيلة عادية.', arFusha: 'احنا دلوقتي عيلة عادية.', speaker: 'Helen', keyWords: [{ word: 'normal', ipa: '', meaningAr: 'عادي', meaningEn: '' }, { word: 'family', ipa: '', meaningAr: 'عيلة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'You have to eat your vegetables first.', arEg: 'لازم تاكل الخضار الأول.', arFusha: 'لازم تاكل الخضار الأول.', speaker: 'Helen', keyWords: [{ word: 'vegetables', ipa: '', meaningAr: 'خضار', meaningEn: '' }, { word: 'first', ipa: '', meaningAr: 'الأول', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'normal', type: 'cultural', meaningAr: 'عادي / طبيعي', meaningEn: '', egyptianEquivalent: 'عادي', exampleInScene: 'We live a normal life.' },      { term: 'have to', type: 'cultural', meaningAr: 'لازم / مضطر', meaningEn: '', egyptianEquivalent: 'لازم', exampleInScene: 'You have to study first.' },      { term: 'vegetables', type: 'cultural', meaningAr: 'خضار', meaningEn: '', egyptianEquivalent: 'خضار', exampleInScene: 'Eat your vegetables.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What must the kids eat first?', questionAr: 'الأطفال لازم ياكلوا إيه الأول؟', options: ['Their vegetables', 'Dessert', 'Candy', 'Rice'], correctIndex: 0, explanationAr: 'الأم قالت You have to eat your vegetables first يعني لازم الخضار الأول.' }
+    ],
+    speakingLines: [{ en: 'We are a normal family now.', arEg: 'احنا دلوقتي عيلة عادية.' }, { en: 'You have to eat your vegetables first.', arEg: 'لازم تاكل الخضار الأول.' }],
+  },
+  {
+    id: 'movie-pursuit-happyness-lesson',
+    movieTitle: 'Learn English with The Pursuit of Happyness - Will Smith',
+    releaseYear: 2019,
+    director: 'Learn English With TV Series',
+    genre: 'Biography / Drama',
+    cefrLevel: 'B1',
+    sceneTitle: 'Don\'t Let Anyone Tell You No',
+    sceneDescription: 'أشهر مشهد في The Pursuit of Happyness: نصيحة الأب لابنه عن الحلم - جمل تحفيزية قوية وواضحة.',
+    youtubeId: 'pKoH9GkEKxQ',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'Don\'t ever let somebody tell you you can\'t do something.',
+    actorName: 'Will Smith',
+    characterName: 'Chris Gardner',
+    thumbnailUrl: 'https://img.youtube.com/vi/pKoH9GkEKxQ/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Don\'t ever let somebody tell you you can\'t do something.', arEg: 'متسيبش حد أبداً يقولك إنك مش هتقدر تعمل حاجة.', arFusha: 'متسيبش حد أبداً يقولك إنك مش هتقدر تعمل حاجة.', speaker: 'Chris', keyWords: [{ word: 'ever', ipa: '', meaningAr: 'أبداً', meaningEn: '' }, { word: 'let', ipa: '', meaningAr: 'يسيب / يسمح', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'If you have a dream, you have to protect it.', arEg: 'لو عندك حلم، لازم تحميه.', arFusha: 'لو عندك حلم، لازم تحميه.', speaker: 'Chris', keyWords: [{ word: 'dream', ipa: '', meaningAr: 'حلم', meaningEn: '' }, { word: 'protect', ipa: '', meaningAr: 'يحمي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'dream', type: 'cultural', meaningAr: 'حلم', meaningEn: '', egyptianEquivalent: 'حلم', exampleInScene: 'Never give up your dream.' },      { term: 'protect', type: 'cultural', meaningAr: 'يحمي', meaningEn: '', egyptianEquivalent: 'يحمي', exampleInScene: 'Protect your family.' },      { term: 'give up', type: 'phrasal-verb', meaningAr: 'يستسلم', meaningEn: '', egyptianEquivalent: 'يبطّل', exampleInScene: 'Don\'t give up now.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Chris tell his son about dreams?', questionAr: 'كريس قال لابنه إيه عن الأحلام؟', options: ['Protect your dream', 'Dreams are for kids', 'Forget your dream', 'Dreams come true alone'], correctIndex: 0, explanationAr: 'قال If you have a dream, you have to protect it يعني لازم تحمي حلمك.' }
+    ],
+    speakingLines: [{ en: 'Don\'t ever let somebody tell you you can\'t do something.', arEg: 'متسيبش حد أبداً يقولك إنك مش هتقدر تعمل حاجة.' }, { en: 'If you have a dream, you have to protect it.', arEg: 'لو عندك حلم، لازم تحميه.' }],
+  },
+  {
+    id: 'movie-pirates-lesson',
+    movieTitle: 'Learn English with Pirates of the Caribbean',
+    releaseYear: 2019,
+    director: 'Learn English With TV Series',
+    genre: 'Action / Adventure',
+    cefrLevel: 'B1',
+    sceneTitle: 'Captain Jack Sparrow',
+    sceneDescription: 'مشاهد من قراصنة الكاريبي مع شرح للتعبيرات - لغة مغامرات ونبرة كابتن جاك المميزة.',
+    youtubeId: 'UUAENx1NANg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'This is the day you will always remember.',
+    actorName: 'Johnny Depp',
+    characterName: 'Captain Jack Sparrow',
+    thumbnailUrl: 'https://img.youtube.com/vi/UUAENx1NANg/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'This is the day you will always remember.', arEg: 'ده اليوم اللي هتفتكره دايماً.', arFusha: 'ده اليوم اللي هتفتكره دايماً.', speaker: 'Jack', keyWords: [{ word: 'always', ipa: '', meaningAr: 'دايماً', meaningEn: '' }, { word: 'remember', ipa: '', meaningAr: 'يفتكر', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Why is the rum gone?', arEg: 'ليه الرم خلص؟', arFusha: 'ليه الرم خلص؟', speaker: 'Jack', keyWords: [{ word: 'why', ipa: '', meaningAr: 'ليه', meaningEn: '' }, { word: 'gone', ipa: '', meaningAr: 'راح / خلص', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'remember', type: 'cultural', meaningAr: 'يفتكر / يتذكر', meaningEn: '', egyptianEquivalent: 'يفتكر', exampleInScene: 'I will always remember this day.' },      { term: 'gone', type: 'cultural', meaningAr: 'راح / خلص', meaningEn: '', egyptianEquivalent: 'خلص', exampleInScene: 'The food is gone.' },      { term: 'captain', type: 'cultural', meaningAr: 'قبطان / كابتن', meaningEn: '', egyptianEquivalent: 'كابتن', exampleInScene: 'He is the captain of the ship.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Jack say you will always remember?', questionAr: 'جاك قال إنك هتفتكر إيه دايماً؟', options: ['This day', 'His name', 'The ship', 'The treasure'], correctIndex: 0, explanationAr: 'قال This is the day you will always remember يعني ده اليوم اللي هتفتكره دايماً.' }
+    ],
+    speakingLines: [{ en: 'This is the day you will always remember.', arEg: 'ده اليوم اللي هتفتكره دايماً.' }, { en: 'Why is the rum gone?', arEg: 'ليه الرم خلص؟' }],
+  },
+  {
+    id: 'movie-tangled-lesson',
+    movieTitle: 'Learn English with Tangled - Rapunzel\'s Birthday Wish',
+    releaseYear: 2020,
+    director: 'Learn English With TV Series',
+    genre: 'Animation / Family',
+    cefrLevel: 'A2',
+    sceneTitle: 'Rapunzel\'s Wish',
+    sceneDescription: 'مشهد من ربانزل: أمنية عيد الميلاد والفوانيس - جمل سهلة وعبارات عن الأمنيات والأحلام.',
+    youtubeId: 'oZXiFpqxTuw',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'I want to see the floating lights.',
+    actorName: 'Mandy Moore',
+    characterName: 'Rapunzel',
+    thumbnailUrl: 'https://img.youtube.com/vi/oZXiFpqxTuw/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I want to see the floating lights.', arEg: 'عايزة أشوف الأنوار الطايرة.', arFusha: 'عايزة أشوف الأنوار الطايرة.', speaker: 'Rapunzel', keyWords: [{ word: 'want', ipa: '', meaningAr: 'عايز', meaningEn: '' }, { word: 'floating', ipa: '', meaningAr: 'طاير / عايم', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It is my birthday wish.', arEg: 'دي أمنية عيد ميلادي.', arFusha: 'دي أمنية عيد ميلادي.', speaker: 'Rapunzel', keyWords: [{ word: 'birthday', ipa: '', meaningAr: 'عيد ميلاد', meaningEn: '' }, { word: 'wish', ipa: '', meaningAr: 'أمنية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'wish', type: 'cultural', meaningAr: 'أمنية', meaningEn: '', egyptianEquivalent: 'أمنية', exampleInScene: 'Make a wish.' },      { term: 'floating', type: 'cultural', meaningAr: 'طاير / عايم', meaningEn: '', egyptianEquivalent: 'طاير', exampleInScene: 'Look at the floating lights.' },      { term: 'want to', type: 'cultural', meaningAr: 'عايز', meaningEn: '', egyptianEquivalent: 'عايز', exampleInScene: 'I want to travel.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Rapunzel want to see?', questionAr: 'ربانزل عايزة تشوف إيه؟', options: ['The floating lights', 'The sea', 'The castle', 'Her friends'], correctIndex: 0, explanationAr: 'قالت I want to see the floating lights يعني عايزة تشوف الأنوار الطايرة.' }
+    ],
+    speakingLines: [{ en: 'I want to see the floating lights.', arEg: 'عايزة أشوف الأنوار الطايرة.' }, { en: 'It is my birthday wish.', arEg: 'دي أمنية عيد ميلادي.' }],
+  },
+  {
+    id: 'daily-voa-lesson1-welcome',
+    movieTitle: 'VOA Let\'s Learn English - Lesson 1: Welcome!',
+    releaseYear: 2017,
+    director: 'VOA Learning English',
+    genre: 'Beginner Dialogue',
+    cefrLevel: 'A1',
+    sceneTitle: 'Meeting New Neighbors',
+    sceneDescription: 'أول درس من كورس VOA الكامل: آنا بتقابل جيرانها الجدد - تحيات وتعارف بإنجليزي أمريكي بطيء وواضح.',
+    youtubeId: 'WR9_nsLyaEY',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'VOA Learning English (Official)',
+    dialogueQuote: 'Hi! I am Anna. I am your new neighbor.',
+    actorName: 'Anna Matteo',
+    characterName: 'Anna',
+    thumbnailUrl: 'https://img.youtube.com/vi/WR9_nsLyaEY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'VOA Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Hi! I am Anna. I am your new neighbor.', arEg: 'أهلاً! أنا آنا. أنا جارتكم الجديدة.', arFusha: 'أهلاً! أنا آنا. أنا جارتكم الجديدة.', speaker: 'Anna', keyWords: [{ word: 'neighbor', ipa: '', meaningAr: 'جار', meaningEn: '' }, { word: 'new', ipa: '', meaningAr: 'جديد', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Welcome to the building!', arEg: 'أهلاً بيكي في العمارة!', arFusha: 'أهلاً بيكي في العمارة!', speaker: 'Neighbor', keyWords: [{ word: 'welcome', ipa: '', meaningAr: 'أهلاً بيك', meaningEn: '' }, { word: 'building', ipa: '', meaningAr: 'عمارة / مبنى', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'neighbor', type: 'cultural', meaningAr: 'جار', meaningEn: '', egyptianEquivalent: 'جار', exampleInScene: 'My neighbor is very kind.' },      { term: 'welcome', type: 'cultural', meaningAr: 'أهلاً بيك', meaningEn: '', egyptianEquivalent: 'اتفضل', exampleInScene: 'Welcome to Egypt!' },      { term: 'building', type: 'cultural', meaningAr: 'عمارة / مبنى', meaningEn: '', egyptianEquivalent: 'عمارة', exampleInScene: 'I live in this building.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Who is Anna?', questionAr: 'مين آنا؟', options: ['The new neighbor', 'The teacher', 'The doctor', 'The manager'], correctIndex: 0, explanationAr: 'آنا قالت I am your new neighbor يعني هي الجارة الجديدة.' }
+    ],
+    speakingLines: [{ en: 'Hi! I am Anna. I am your new neighbor.', arEg: 'أهلاً! أنا آنا. أنا جارتكم الجديدة.' }, { en: 'Welcome to the building!', arEg: 'أهلاً بيكي في العمارة!' }],
+  },
+  {
+    id: 'daily-voa-lesson8-busy',
+    movieTitle: 'VOA Let\'s Learn English - Lesson 8: Are You Busy?',
+    releaseYear: 2017,
+    director: 'VOA Learning English',
+    genre: 'Beginner Dialogue',
+    cefrLevel: 'A2',
+    sceneTitle: 'Talking About Your Day',
+    sceneDescription: 'آنا بتتكلم عن يومها ومواعيدها - المضارع المستمر والكلام عن الشغل والانشغال بشكل يومي.',
+    youtubeId: 'sp0cwcd1fGE',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'VOA Learning English (Official)',
+    dialogueQuote: 'Are you busy? I am working on something important.',
+    actorName: 'Anna Matteo',
+    characterName: 'Anna',
+    thumbnailUrl: 'https://img.youtube.com/vi/sp0cwcd1fGE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'VOA Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Are you busy right now?', arEg: 'انت مشغول دلوقتي؟', arFusha: 'انت مشغول دلوقتي؟', speaker: 'Friend', keyWords: [{ word: 'busy', ipa: '', meaningAr: 'مشغول', meaningEn: '' }, { word: 'right now', ipa: '', meaningAr: 'دلوقتي', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I am working on something important.', arEg: 'باشتغل على حاجة مهمة.', arFusha: 'باشتغل على حاجة مهمة.', speaker: 'Anna', keyWords: [{ word: 'working on', ipa: '', meaningAr: 'شغال على', meaningEn: '' }, { word: 'important', ipa: '', meaningAr: 'مهم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'busy', type: 'cultural', meaningAr: 'مشغول', meaningEn: '', egyptianEquivalent: 'مشغول', exampleInScene: 'I am busy today.' },      { term: 'right now', type: 'cultural', meaningAr: 'دلوقتي', meaningEn: '', egyptianEquivalent: 'دلوقتي حالاً', exampleInScene: 'I am working right now.' },      { term: 'important', type: 'cultural', meaningAr: 'مهم', meaningEn: '', egyptianEquivalent: 'مهم', exampleInScene: 'This meeting is important.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is Anna doing?', questionAr: 'آنا بتعمل إيه؟', options: ['Working on something important', 'Watching TV', 'Sleeping', 'Shopping'], correctIndex: 0, explanationAr: 'آنا قالت I am working on something important يعني شغالة على حاجة مهمة.' }
+    ],
+    speakingLines: [{ en: 'Are you busy right now?', arEg: 'انت مشغول دلوقتي؟' }, { en: 'I am working on something important.', arEg: 'باشتغل على حاجة مهمة.' }],
+  },
+  {
+    id: 'listening-voa-podcast',
+    movieTitle: 'VOA Learning English Podcast: Science & World News',
+    releaseYear: 2024,
+    director: 'VOA Learning English',
+    genre: 'Educational Podcast',
+    cefrLevel: 'B2',
+    sceneTitle: 'Slow English News',
+    sceneDescription: 'بودكاست VOA: أخبار علمية وعالمية بإنجليزي مبسّط وبطيء مع مفردات مفسرة - تدريب استماع يومي مثالي.',
+    youtubeId: '2mZqR9qlneY',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'VOA Learning English (Official)',
+    dialogueQuote: 'Researchers say the study could change how we learn.',
+    actorName: 'VOA Presenters',
+    characterName: 'Newsreader',
+    thumbnailUrl: 'https://img.youtube.com/vi/2mZqR9qlneY/hqdefault.jpg',
+    category: 'documentaries',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'VOA Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Researchers say the study could change how we learn.', arEg: 'الباحثين بيقولوا إن الدراسة ممكن تغير طريقة تعلمنا.', arFusha: 'الباحثين بيقولوا إن الدراسة ممكن تغير طريقة تعلمنا.', speaker: 'Newsreader', keyWords: [{ word: 'researchers', ipa: '', meaningAr: 'باحثين', meaningEn: '' }, { word: 'study', ipa: '', meaningAr: 'دراسة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'The results surprised many scientists.', arEg: 'النتائج فاجأت علماء كتير.', arFusha: 'النتائج فاجأت علماء كتير.', speaker: 'Newsreader', keyWords: [{ word: 'results', ipa: '', meaningAr: 'نتائج', meaningEn: '' }, { word: 'surprised', ipa: '', meaningAr: 'فاجأت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'researcher', type: 'cultural', meaningAr: 'باحث', meaningEn: '', egyptianEquivalent: 'باحث', exampleInScene: 'Researchers found a new method.' },      { term: 'study', type: 'cultural', meaningAr: 'دراسة', meaningEn: '', egyptianEquivalent: 'دراسة', exampleInScene: 'The study shows good results.' },      { term: 'surprising', type: 'cultural', meaningAr: 'مفاجئ', meaningEn: '', egyptianEquivalent: 'مفاجئ', exampleInScene: 'The news was surprising.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What did the study\'s results do to scientists?', questionAr: 'نتايج الدراسة عملت إيه للعلماء؟', options: ['Surprised them', 'Bored them', 'Made them rich', 'Nothing'], correctIndex: 0, explanationAr: 'قال المذيع The results surprised many scientists يعني فاجأت علماء كتير.' }
+    ],
+    speakingLines: [{ en: 'Researchers say the study could change how we learn.', arEg: 'الباحثين بيقولوا إن الدراسة ممكن تغير طريقة تعلمنا.' }, { en: 'The results surprised many scientists.', arEg: 'النتائج فاجأت علماء كتير.' }],
+  },
+  {
+    id: 'pron-vanessa-all-sounds',
+    movieTitle: 'How to Pronounce ALL English Sounds - American English',
+    releaseYear: 2020,
+    director: 'Speak English With Vanessa',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Every Sound in American English',
+    sceneDescription: 'فانيسا بتوضح كل أصوات الإنجليزي الأمريكي صوت صوت مع أمثلة - مرجع شامل للنطق الصحيح.',
+    youtubeId: 'tpN9CPwZ-oE',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'Let\'s practice every sound slowly and clearly.',
+    actorName: 'Vanessa',
+    characterName: 'Vanessa',
+    thumbnailUrl: 'https://img.youtube.com/vi/tpN9CPwZ-oE/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'Let\'s practice every sound slowly and clearly.', arEg: 'هنتدرب على كل صوت ببطء وبوضوح.', arFusha: 'هنتدرب على كل صوت ببطء وبوضوح.', speaker: 'Vanessa', keyWords: [{ word: 'practice', ipa: '', meaningAr: 'يتدرب', meaningEn: '' }, { word: 'sound', ipa: '', meaningAr: 'صوت', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'Repeat after me: ship and sheep.', arEg: 'كرر ورايا: ship و sheep.', arFusha: 'كرر ورايا: ship و sheep.', speaker: 'Vanessa', keyWords: [{ word: 'repeat', ipa: '', meaningAr: 'يكرر', meaningEn: '' }, { word: 'after me', ipa: '', meaningAr: 'ورايا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'practice', type: 'cultural', meaningAr: 'يتدرب', meaningEn: '', egyptianEquivalent: 'يتمرن', exampleInScene: 'Practice every day.' },      { term: 'repeat after me', type: 'cultural', meaningAr: 'كرر ورايا', meaningEn: '', egyptianEquivalent: 'قلدني', exampleInScene: 'Repeat after me: hello.' },      { term: 'clearly', type: 'cultural', meaningAr: 'بوضوح', meaningEn: '', egyptianEquivalent: 'بوضوح', exampleInScene: 'Speak clearly, please.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Vanessa ask you to do?', questionAr: 'فانيسا طالبة منك تعمل إيه؟', options: ['Repeat after her', 'Write an essay', 'Close the video', 'Read a book'], correctIndex: 0, explanationAr: 'قالت Repeat after me يعني كرر ورايا عشان تتدرب على النطق.' }
+    ],
+    speakingLines: [{ en: 'Let\'s practice every sound slowly and clearly.', arEg: 'هنتدرب على كل صوت ببطء وبوضوح.' }, { en: 'Repeat after me: ship and sheep.', arEg: 'كرر ورايا: ship و sheep.' }],
+  },
+  {
+    id: 'pron-american-flap-t',
+    movieTitle: 'Native English Pronunciation: The T Americans Swallow',
+    releaseYear: 2021,
+    director: 'Dillon\'s English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'The Disappearing T',
+    sceneDescription: 'ليه الأمريكان بياكلوا حرف الـ T في كلمات زي water و better - درس قصير يفرق معاك جداً في الفهم والنطق.',
+    youtubeId: '8bm-YzF5yVE',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Dillon\'s English (Official)',
+    dialogueQuote: 'Americans often say wadder instead of water.',
+    actorName: 'Dillon',
+    characterName: 'Dillon',
+    thumbnailUrl: 'https://img.youtube.com/vi/8bm-YzF5yVE/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Dillon\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'Americans often say wadder instead of water.', arEg: 'الأمريكان غالباً بيقولوا wadder بدل water.', arFusha: 'الأمريكان غالباً بيقولوا wadder بدل water.', speaker: 'Dillon', keyWords: [{ word: 'often', ipa: '', meaningAr: 'غالباً', meaningEn: '' }, { word: 'instead of', ipa: '', meaningAr: 'بدل', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'The T becomes a soft D sound.', arEg: 'حرف الـ T بيتحول لصوت D خفيف.', arFusha: 'حرف الـ T بيتحول لصوت D خفيف.', speaker: 'Dillon', keyWords: [{ word: 'becomes', ipa: '', meaningAr: 'بيتحول لـ', meaningEn: '' }, { word: 'soft', ipa: '', meaningAr: 'خفيف / ناعم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'instead of', type: 'cultural', meaningAr: 'بدل من', meaningEn: '', egyptianEquivalent: 'بدل', exampleInScene: 'Use milk instead of cream.' },      { term: 'soft', type: 'cultural', meaningAr: 'ناعم / خفيف', meaningEn: '', egyptianEquivalent: 'خفيف', exampleInScene: 'A soft sound.' },      { term: 'swallow', type: 'cultural', meaningAr: 'يبلع', meaningEn: '', egyptianEquivalent: 'ياكل (الحرف)', exampleInScene: 'Americans swallow the T.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do Americans often pronounce \'water\'?', questionAr: 'الأمريكان بيلفظوا water إزاي غالباً؟', options: ['Wadder', 'Wah-tah', 'Vater', 'Waterrr'], correctIndex: 0, explanationAr: 'الـ T في نص الكلمة بتتحول لصوت D خفيف: wadder.' }
+    ],
+    speakingLines: [{ en: 'Americans often say wadder instead of water.', arEg: 'الأمريكان غالباً بيقولوا wadder بدل water.' }, { en: 'The T becomes a soft D sound.', arEg: 'حرف الـ T بيتحول لصوت D خفيف.' }],
+  },
+  {
+    id: 'story-empty-park',
+    movieTitle: 'The Empty Park - Easy English Story (A1-A2)',
+    releaseYear: 2023,
+    director: 'ListenUpEnglish',
+    genre: 'Educational / Story',
+    cefrLevel: 'A1',
+    sceneTitle: 'A Walk in the Park',
+    sceneDescription: 'قصة قصيرة جداً عن الحديقة الفاضية بجمل المستوى الأول - بداية مثالية للتدريب على الاستماع.',
+    youtubeId: 'cYOMDUV6aTg',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'ListenUpEnglish (Official)',
+    dialogueQuote: 'The park is empty today. Where is everyone?',
+    actorName: 'ListenUpEnglish',
+    characterName: 'Narrator',
+    thumbnailUrl: 'https://img.youtube.com/vi/cYOMDUV6aTg/hqdefault.jpg',
+    category: 'documentaries',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'ListenUpEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'The park is empty today.', arEg: 'الحديقة فاضية النهارده.', arFusha: 'الحديقة فاضية النهارده.', speaker: 'Narrator', keyWords: [{ word: 'park', ipa: '', meaningAr: 'حديقة', meaningEn: '' }, { word: 'empty', ipa: '', meaningAr: 'فاضي', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'Where is everyone?', arEg: 'فين الناس كلها؟', arFusha: 'فين الناس كلها؟', speaker: 'Narrator', keyWords: [{ word: 'everyone', ipa: '', meaningAr: 'الكل / الناس كلها', meaningEn: '' }, { word: 'where', ipa: '', meaningAr: 'فين', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'park', type: 'cultural', meaningAr: 'حديقة', meaningEn: '', egyptianEquivalent: 'جينينة', exampleInScene: 'Let\'s go to the park.' },      { term: 'empty', type: 'cultural', meaningAr: 'فاضي', meaningEn: '', egyptianEquivalent: 'فاضي', exampleInScene: 'The room is empty.' },      { term: 'everyone', type: 'cultural', meaningAr: 'الكل', meaningEn: '', egyptianEquivalent: 'الناس كلها', exampleInScene: 'Everyone is here.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How is the park today?', questionAr: 'الحديقة عاملة إزاي النهارده؟', options: ['Empty', 'Crowded', 'Closed', 'Big'], correctIndex: 0, explanationAr: 'الراوي قال The park is empty today يعني الحديقة فاضية النهارده.' }
+    ],
+    speakingLines: [{ en: 'The park is empty today.', arEg: 'الحديقة فاضية النهارده.' }, { en: 'Where is everyone?', arEg: 'فين الناس كلها؟' }],
+  },
 ];
 
 // Helper to get all videos
