@@ -32,6 +32,33 @@ import {
   Info,
 } from 'lucide-react';
 
+
+// YouTube IFrame API loader (shared singleton)
+declare global {
+  interface Window {
+    YT?: any;
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+let ytApiPromise: Promise<any> | null = null;
+function loadYouTubeApi(): Promise<any> {
+  if (typeof window === 'undefined') return Promise.reject(new Error('no window'));
+  if (window.YT && window.YT.Player) return Promise.resolve(window.YT);
+  if (!ytApiPromise) {
+    ytApiPromise = new Promise((resolve) => {
+      const prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = () => {
+        if (prev) prev();
+        resolve(window.YT);
+      };
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(tag);
+    });
+  }
+  return ytApiPromise;
+}
+
 interface MoviePlayerStudioProps {
   scene: MovieSceneItem;
   onBackToSearch?: () => void;
@@ -60,47 +87,95 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
   const [echoFeedback, setEchoFeedback] = useState<string | null>(null);
   const [echoScore, setEchoScore] = useState<number | null>(null);
 
-  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const playerContainerRef = useRef<HTMLDivElement>(null);
+  const playerRef = useRef<any>(null);
+  const playerReadyRef = useRef(false);
   const timerRef = useRef<number | null>(null);
 
-  // Build secure YouTube embed URL with autoplay, start time, controls, enablejsapi
-  const embedUrl = `https://www.youtube-nocookie.com/embed/${scene.youtubeId}?enablejsapi=1&autoplay=${
-    isPlaying ? 1 : 0
-  }&start=${Math.floor(currentTime)}&origin=${encodeURIComponent(
-    typeof window !== 'undefined' ? window.location.origin : ''
-  )}`;
+  // Create the real YouTube IFrame Player for this scene
+  useEffect(() => {
+    let destroyed = false;
+    playerReadyRef.current = false;
+    setCurrentTime(scene.startTime);
+    setActiveSubtitleIndex(0);
+    setIsPlaying(false);
 
-  // Simulated player time tracker for subtitle sync
+    loadYouTubeApi()
+      .then(YT => {
+        if (destroyed || !playerContainerRef.current) return;
+        playerRef.current = new YT.Player(playerContainerRef.current, {
+          host: 'https://www.youtube-nocookie.com',
+          width: '100%',
+          height: '100%',
+          videoId: scene.youtubeId,
+          playerVars: {
+            start: Math.floor(scene.startTime),
+            rel: 0,
+            enablejsapi: 1,
+            playsinline: 1,
+            origin: window.location.origin,
+          },
+          events: {
+            onReady: () => {
+              playerReadyRef.current = true;
+            },
+            onStateChange: (e: any) => {
+              if (e.data === YT.PlayerState.PLAYING) setIsPlaying(true);
+              if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) setIsPlaying(false);
+            },
+          },
+        });
+      })
+      .catch(() => {});
+
+    return () => {
+      destroyed = true;
+      try {
+        playerRef.current?.destroy?.();
+      } catch {
+        // ignore destroy errors
+      }
+      playerRef.current = null;
+      playerReadyRef.current = false;
+    };
+  }, [scene.youtubeId, scene.startTime]);
+
+  // Real player time tracker: poll the YouTube player for true playback time
   useEffect(() => {
     if (isPlaying) {
       timerRef.current = window.setInterval(() => {
-        setCurrentTime(prev => {
-          const next = prev + 0.5 * playbackSpeed;
+        const player = playerRef.current;
+        if (!player || !playerReadyRef.current || typeof player.getCurrentTime !== 'function') return;
+        const t = player.getCurrentTime();
 
-          // If looping active line
-          if (isLoopingCurrentLine && scene.subtitles[activeSubtitleIndex]) {
-            const curSub = scene.subtitles[activeSubtitleIndex];
-            if (next >= curSub.end) {
-              return curSub.start;
-            }
+        // If looping active line
+        if (isLoopingCurrentLine && scene.subtitles[activeSubtitleIndex]) {
+          const curSub = scene.subtitles[activeSubtitleIndex];
+          if (t >= curSub.end) {
+            player.seekTo(curSub.start, true);
+            setCurrentTime(curSub.start);
+            return;
           }
+        }
 
-          // Stop at scene end
-          if (next >= scene.endTime) {
-            setIsPlaying(false);
-            return scene.startTime;
-          }
-          return next;
-        });
-      }, 500);
-    } else {
-      if (timerRef.current) clearInterval(timerRef.current);
+        // Stop at scene end
+        if (t >= scene.endTime) {
+          player.pauseVideo();
+          player.seekTo(scene.startTime, true);
+          setCurrentTime(scene.startTime);
+          setIsPlaying(false);
+          return;
+        }
+        setCurrentTime(t);
+      }, 300);
+    } else if (timerRef.current) {
+      clearInterval(timerRef.current);
     }
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPlaying, playbackSpeed, isLoopingCurrentLine, activeSubtitleIndex, scene]);
+  }, [isPlaying, isLoopingCurrentLine, activeSubtitleIndex, scene]);
 
   // Synchronize active subtitle line with current time
   useEffect(() => {
@@ -115,12 +190,30 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
     playSound('click');
     setCurrentTime(sub.start);
     setActiveSubtitleIndex(idx);
+    const player = playerRef.current;
+    if (player && playerReadyRef.current) {
+      player.seekTo(sub.start, true);
+      player.playVideo();
+    }
     setIsPlaying(true);
   };
 
   // Toggle Play / Pause
   const handleTogglePlay = () => {
     playSound('click');
+    const player = playerRef.current;
+    if (player && playerReadyRef.current) {
+      if (isPlaying) {
+        player.pauseVideo();
+      } else {
+        // Resume inside the scene window if the pointer drifted outside it
+        const t = typeof player.getCurrentTime === 'function' ? player.getCurrentTime() : currentTime;
+        if (t < scene.startTime || t >= scene.endTime) {
+          player.seekTo(scene.startTime, true);
+        }
+        player.playVideo();
+      }
+    }
     setIsPlaying(!isPlaying);
   };
 
@@ -128,6 +221,10 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
   const handleSpeedChange = (speed: 0.5 | 0.75 | 1.0) => {
     playSound('click');
     setPlaybackSpeed(speed);
+    const player = playerRef.current;
+    if (player && playerReadyRef.current && typeof player.setPlaybackRate === 'function') {
+      player.setPlaybackRate(speed);
+    }
   };
 
   // Word Click Handler for interactive vocabulary lookup
@@ -234,14 +331,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
         <div className="lg:col-span-7 space-y-4">
           {/* Responsive 16:9 Video Box */}
           <div className="relative w-full aspect-video rounded-3xl overflow-hidden bg-black/80 border border-white/15 shadow-2xl">
-            <iframe
-              ref={iframeRef}
-              src={embedUrl}
-              title={`${scene.movieTitle} Scene`}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="w-full h-full border-0"
-            />
+            <div ref={playerContainerRef} className="w-full h-full" title={`${scene.movieTitle} Scene`} />
           </div>
 
           {/* Interactive Player Controls Bar */}
@@ -260,6 +350,11 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
                 onClick={() => {
                   playSound('click');
                   setCurrentTime(scene.startTime);
+                  const player = playerRef.current;
+                  if (player && playerReadyRef.current) {
+                    player.seekTo(scene.startTime, true);
+                    player.playVideo();
+                  }
                   setIsPlaying(true);
                 }}
                 title="إعادة المشهد من البداية"
@@ -319,8 +414,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
               </div>
 
               {/* English Dialogue with Interactive Clickable Words */}
-              <div className="text-left leading-loose">
-                <p className="text-lg sm:text-xl font-black text-white">
+              <div className="text-left leading-loose" dir="ltr">
+                <p className="text-lg sm:text-xl font-black text-white" dir="ltr">
                   {scene.subtitles[activeSubtitleIndex].en.split(' ').map((wordRaw, wIdx) => {
                     const clean = wordRaw.toLowerCase().replace(/[^a-z]/g, '');
                     const kw = scene.subtitles[activeSubtitleIndex].keyWords.find(
@@ -472,7 +567,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
                         <span className="font-bold text-purple-300">{sub.speaker || 'Actor'}</span>
                         <span className="font-mono">{sub.start}s - {sub.end}s</span>
                       </div>
-                      <p className="text-sm font-bold text-white text-left leading-relaxed">
+                      <p className="text-sm font-bold text-white text-left leading-relaxed" dir="ltr">
                         {sub.en}
                       </p>
                       <p className="text-xs font-semibold text-white/80">
@@ -651,7 +746,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
                 <div className="space-y-4">
                   {/* Active target line */}
                   <div className="p-4 rounded-2xl bg-black/40 border border-white/15 space-y-2">
-                    <p className="text-base sm:text-lg font-black text-white text-left">
+                    <p className="text-base sm:text-lg font-black text-white text-left" dir="ltr">
                       "{scene.speakingLines[echoLineIdx].en}"
                     </p>
                     <p className="text-xs text-amber-300 font-bold">
