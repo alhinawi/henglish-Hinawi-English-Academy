@@ -9,6 +9,11 @@ import {
 import { Interactive3DWorld } from '../components/Interactive3DWorld';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
+  Plane,
+  UtensilsCrossed,
+  Stethoscope,
+  Briefcase,
+  Coffee,
   Compass,
   Volume2,
   Sparkles,
@@ -32,6 +37,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 interface RealLifeEnglishPageProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
 }
+
+const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
+  'sim-airport-checkin': Plane,
+  'sim-restaurant-ordering': UtensilsCrossed,
+  'sim-doctor-appointment': Stethoscope,
+  'sim-job-interview': Briefcase,
+  'sim-coffee-shop': Coffee,
+};
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
   const [selectedScenarioId, setSelectedScenarioId] = useState<string>(REAL_LIFE_SCENARIOS[0].id);
@@ -234,7 +247,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             >
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <span className="text-2xl">{sc.locationIcon}</span>
+                  {(() => { const IconCmp = SCENARIO_ICONS[sc.id] || Compass; return <IconCmp className="w-7 h-7 text-[#ffd166]" />; })()}
                   <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-white/10 text-[#ffd166] font-mono">
                     {sc.level}
                   </span>
