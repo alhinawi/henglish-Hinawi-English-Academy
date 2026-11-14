@@ -898,6 +898,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { en: "Stay hungry. Stay foolish.", arEg: 'خليك شغوف دايماً ومتوقفش تعلم.' },
     ],
   },
+  {
+    id: 'talk-matt-cutts-30days',
+    movieTitle: 'TED: Try something new for 30 days',
+    releaseYear: 2011,
+    director: 'TED Conferences',
+    genre: 'Talk / Self-development',
+    cefrLevel: 'B1',
+    sceneTitle: 'Try Something New for 30 Days',
+    sceneDescription: 'Matt Cutts explains how 30-day challenges make time more memorable and build self-confidence.',
+    youtubeId: 'JnfBXjWm7hc',
+    startTime: 0,
+    endTime: 210,
+    clipDuration: '3:30',
+    videoSource: 'TED (Official)',
+    dialogueQuote: 'Try something new for 30 days.',
+    actorName: 'Matt Cutts',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/JnfBXjWm7hc/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TED Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'A few years ago, I felt like I was stuck in a rut, so I decided to try something new for 30 days.', arEg: 'من كام سنة حاسيت إني واقف مكاني، فقررت أجرب حاجة جديدة لمدة 30 يوم.', arFusha: 'منذ سنوات قليلة، شعرت أنني عالق في روتين، فقررت أن أجرب شيئاً جديداً لمدة ثلاثين يوماً.', speaker: 'Matt Cutts', keyWords: [{ word: 'stuck in a rut', ipa: '', meaningAr: 'واقف مكاني / متوقف عن التطور', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'When you make small, sustainable changes, things you can keep doing, they are more likely to stick.', arEg: 'لما تعمل تغييرات صغيرة ومستدامة تقدر تكمل عليها، الأغلب إنها هتثبت معاك.', arFusha: 'عندما تقوم بتغييرات صغيرة ومستدامة يمكنك الاستمرار عليها، فمن الأرجح أن تترسخ.', speaker: 'Matt Cutts', keyWords: [{ word: 'sustainable', ipa: '', meaningAr: 'مستدام / قابل للاستمرار', meaningEn: '' }, { word: 'stick', ipa: '', meaningAr: 'يثبت / يستمر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'stuck in a rut', type: 'idiom', meaningAr: 'عالق في روتين ممل بلا تقدم', meaningEn: '', egyptianEquivalent: 'محبوس في نفس الروتين ومش عارف أتحرك', exampleInScene: 'I felt like I was stuck in a rut.' },      { term: 'give it a shot', type: 'idiom', meaningAr: 'يجرب / يخوض التجربة', meaningEn: '', egyptianEquivalent: 'جربها وشوف', exampleInScene: 'Why not give it a shot for 30 days?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the main idea of the talk?', questionAr: 'إيه الفكرة الأساسية للمحاضرة؟', options: ['Working harder every day', 'Trying something new for 30 days', 'Sleeping less to save time', 'Reading more books'], correctIndex: 1, explanationAr: 'الفكرة: جرب حاجة جديدة لمدة 30 يوم.' }
+    ],
+    speakingLines: [{ en: 'Try something new for 30 days.', arEg: 'جرب حاجة جديدة لمدة 30 يوم.' }],
+  },
+  {
+    id: 'talk-susan-cain-introverts',
+    movieTitle: 'TED: The power of introverts',
+    releaseYear: 2012,
+    director: 'TED Conferences',
+    genre: 'Talk / Psychology',
+    cefrLevel: 'B2',
+    sceneTitle: 'The Power of Introverts',
+    sceneDescription: 'Susan Cain argues that introverts bring extraordinary talents to the world and should be encouraged.',
+    youtubeId: 'c0KYU2j0TM4',
+    startTime: 0,
+    endTime: 240,
+    clipDuration: '4:00',
+    videoSource: 'TED (Official)',
+    dialogueQuote: 'Solitude matters, and for some people it is the air that they breathe.',
+    actorName: 'Susan Cain',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/c0KYU2j0TM4/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TED Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'When it comes to creativity and leadership, we need introverts doing what they do best.', arEg: 'لما نيجي للإبداع والقيادة، إحنا محتاجين الانطوائيين يعملوا اللي بيبرعوا فيه.', arFusha: 'عندما يتعلق الأمر بالإبداع والقيادة، نحتاج إلى الانطوائيين ليقوموا بما يتقنونه.', speaker: 'Susan Cain', keyWords: [{ word: 'introvert', ipa: '', meaningAr: 'شخص انطوائي', meaningEn: '' }, { word: 'leadership', ipa: '', meaningAr: 'قيادة', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Solitude matters, and for some people it is the air that they breathe.', arEg: 'العزلة حاجة مهمة، ولبعض الناس هي زي الهوا اللي بيتنفسوه.', arFusha: 'العزلة مهمة، ولبعض الناس هي كالهواء الذي يتنفسونه.', speaker: 'Susan Cain', keyWords: [{ word: 'solitude', ipa: '', meaningAr: 'عزلة / خلوة', meaningEn: '' }, { word: 'breathe', ipa: '', meaningAr: 'يتنفس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'introvert', type: 'cultural', meaningAr: 'شخص انطوائي يستمد طاقته من الهدوء والداخل', meaningEn: '', egyptianEquivalent: 'اللي بيرتاح في قعدته لوحده', exampleInScene: 'Introverts need quiet time to recharge.' },      { term: 'solitude', type: 'cultural', meaningAr: 'العزلة الاختيارية المريحة', meaningEn: '', egyptianEquivalent: 'الخلوة الهادية', exampleInScene: 'Solitude matters for creative work.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'According to Susan Cain, what do introverts need?', questionAr: 'حسب سوزان كين، الانطوائيين محتاجين إيه؟', options: ['More parties', 'Solitude and quiet', 'Louder offices', 'Constant teamwork'], correctIndex: 1, explanationAr: 'تؤكد أن العزلة والهدوء ضروريان للانطوائيين.' }
+    ],
+    speakingLines: [{ en: 'Solitude matters.', arEg: 'العزلة حاجة مهمة.' }],
+  },
+  {
+    id: 'sitcom-friends-howyoudoin',
+    movieTitle: 'Friends',
+    releaseYear: 1994,
+    director: 'Various',
+    genre: 'Sitcom / Comedy',
+    cefrLevel: 'A2',
+    sceneTitle: 'Joey\'s Best How You Doin Moments',
+    sceneDescription: 'A Warner Bros. TV official compilation of Joey Tribbiani\'s iconic pick-up line across the series.',
+    youtubeId: 'CLvXFVbb82Q',
+    startTime: 0,
+    endTime: 120,
+    clipDuration: '2:00',
+    videoSource: 'Warner Bros. TV (Official)',
+    dialogueQuote: 'How you doin\'?',
+    actorName: 'Matt LeBlanc',
+    characterName: 'Joey Tribbiani',
+    thumbnailUrl: 'https://img.youtube.com/vi/CLvXFVbb82Q/hqdefault.jpg',
+    category: 'sitcoms',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Warner Bros. TV Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'How you doin\'?', arEg: 'عامل إيه؟ / إزيك؟ (بنبرة غزل مضحكة)', arFusha: 'كيف حالك؟', speaker: 'Joey', keyWords: [{ word: 'How you doin\'', ipa: '', meaningAr: 'عامل إيه؟ (صيغة عامية من How are you doing)', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I know, right? It\'s a good line.', arEg: 'عارف، صح؟ دي جملة خطيرة.', arFusha: 'أعلم، أليس كذلك؟ إنها جملة ناجحة.', speaker: 'Joey', keyWords: [{ word: 'line', ipa: '', meaningAr: 'جملة معسولة / تكتيك كلام', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'How you doin\'?', type: 'slang', meaningAr: 'صيغة عامية قصيرة من How are you doing وتستخدم كنبرة إعجاب مضحكة', meaningEn: '', egyptianEquivalent: 'إزيك يا قمر (بنبرة جوي)', exampleInScene: 'How you doin\'?' },      { term: 'pick-up line', type: 'cultural', meaningAr: 'جملة تعارف ومعاكسة', meaningEn: '', egyptianEquivalent: 'جملة معاكسة', exampleInScene: 'That is his famous pick-up line.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How you doin\'? is a short, casual form of which question?', questionAr: 'How you doin\'? هي صيغة عامية مختصرة لأي سؤال؟', options: ['How old are you?', 'How are you doing?', 'Where are you going?', 'What are you doing?'], correctIndex: 1, explanationAr: 'الصيغة الكاملة: How are you doing?' }
+    ],
+    speakingLines: [{ en: 'How you doin\'?', arEg: 'عامل إيه؟' }],
+  },
+  {
+    id: 'podcast-bbc-6min-housework',
+    movieTitle: '6 Minute English',
+    releaseYear: 2008,
+    director: 'BBC Learning English',
+    genre: 'Educational Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Who does the housework?',
+    sceneDescription: 'BBC Learning English hosts discuss who really does the housework and teach useful everyday vocabulary in six minutes.',
+    youtubeId: 'D9jZMLm72a8',
+    startTime: 0,
+    endTime: 360,
+    clipDuration: '6:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Who does the housework in your house?',
+    actorName: 'BBC Presenters',
+    characterName: 'Hosts',
+    thumbnailUrl: 'https://img.youtube.com/vi/D9jZMLm72a8/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Who does the housework in your house? Is it shared equally?', arEg: 'مين بيعمل شغل البيت في بيتكم؟ هل متقسم بالعدل؟', arFusha: 'من يقوم بالأعمال المنزلية في منزلكم؟ هل هي موزعة بالتساوي؟', speaker: 'Host', keyWords: [{ word: 'housework', ipa: '', meaningAr: 'شغل البيت', meaningEn: '' }, { word: 'shared equally', ipa: '', meaningAr: 'متقسم بالعدل', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'In this programme, we will be learning some useful vocabulary as well.', arEg: 'في الحلقة دي هنتعلم كمان كلمات مفيدة جديدة.', arFusha: 'في هذا البرنامج، سنتعلم أيضاً بعض المفردات المفيدة.', speaker: 'Host', keyWords: [{ word: 'programme', ipa: '', meaningAr: 'برنامج / حلقة', meaningEn: '' }, { word: 'useful', ipa: '', meaningAr: 'مفيد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'housework', type: 'cultural', meaningAr: 'الأعمال المنزلية (نظافة، غسيل، طبخ)', meaningEn: '', egyptianEquivalent: 'شغل البيت', exampleInScene: 'Who does the housework?' },      { term: 'chores', type: 'cultural', meaningAr: 'المهام المنزلية اليومية', meaningEn: '', egyptianEquivalent: 'مشاوير ومهام البيت', exampleInScene: 'I hate doing chores.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is this BBC programme about?', questionAr: 'الحلقة دي بتتكلم عن إيه؟', options: ['Cooking recipes', 'Who does the housework', 'Buying a new house', 'Gardening tips'], correctIndex: 1, explanationAr: 'العنوان والموضوع: مين بيعمل شغل البيت.' }
+    ],
+    speakingLines: [{ en: 'Who does the housework in your house?', arEg: 'مين بيعمل شغل البيت في بيتكم؟' }],
+  },
+  {
+    id: 'scene-toystory-infinity',
+    movieTitle: 'Toy Story',
+    releaseYear: 1995,
+    director: 'John Lasseter',
+    genre: 'Animation / Family',
+    cefrLevel: 'A1',
+    sceneTitle: 'To Infinity and Beyond',
+    sceneDescription: 'Buzz Lightyear shouts his legendary catchphrase as he proves he can fly around Andy\'s room.',
+    youtubeId: 'LdMb9D9WF5k',
+    startTime: 0,
+    endTime: 60,
+    clipDuration: '1:00',
+    videoSource: 'LoveMovieQuotes',
+    dialogueQuote: 'To infinity and beyond!',
+    actorName: 'Tim Allen',
+    characterName: 'Buzz Lightyear',
+    thumbnailUrl: 'https://img.youtube.com/vi/LdMb9D9WF5k/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Pixar / Disney',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'To infinity and beyond!', arEg: 'للمالانهاية وأبعد منها كمان!', arFusha: 'إلى اللانهاية وما بعدها!', speaker: 'Buzz Lightyear', keyWords: [{ word: 'infinity', ipa: '', meaningAr: 'مالانهاية', meaningEn: '' }, { word: 'beyond', ipa: '', meaningAr: 'أبعد من', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I can fly!', arEg: 'أنا أقدر أطير!', arFusha: 'أستطيع الطيران!', speaker: 'Buzz Lightyear', keyWords: [{ word: 'fly', ipa: '', meaningAr: 'يطير', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'infinity', type: 'cultural', meaningAr: 'المالانهاية، ما لا نهاية له', meaningEn: '', egyptianEquivalent: 'حاجة مش ليها آخر', exampleInScene: 'To infinity and beyond!' },      { term: 'beyond', type: 'cultural', meaningAr: 'أبعد من / ورا حد معين', meaningEn: '', egyptianEquivalent: 'بعد ما توصل للآخر كمان', exampleInScene: 'Beyond the stars.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Complete the quote: To infinity and _______!', questionAr: 'أكمل الجملة الشهيرة: To infinity and _______!', options: ['the moon', 'beyond', 'the stars', 'forever'], correctIndex: 1, explanationAr: 'الجملة الصحيحة: beyond.' }
+    ],
+    speakingLines: [{ en: 'To infinity and beyond!', arEg: 'للمالانهاية وأبعد!' }],
+  },
+  {
+    id: 'scene-titanic-king',
+    movieTitle: 'Titanic',
+    releaseYear: 1997,
+    director: 'James Cameron',
+    genre: 'Romance / Drama',
+    cefrLevel: 'A2',
+    sceneTitle: 'I\'m the King of the World',
+    sceneDescription: 'Jack stands at the ship\'s bow with open arms and shouts the most famous line in Titanic.',
+    youtubeId: 'ItjXTieWKyI',
+    startTime: 0,
+    endTime: 70,
+    clipDuration: '1:10',
+    videoSource: '20th Century Studios UK (Official)',
+    dialogueQuote: 'I\'m the king of the world!',
+    actorName: 'Leonardo DiCaprio',
+    characterName: 'Jack Dawson',
+    thumbnailUrl: 'https://img.youtube.com/vi/ItjXTieWKyI/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: '20th Century Studios Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'I\'m the king of the world!', arEg: 'أنا ملك الدنيا!', arFusha: 'أنا ملك العالم!', speaker: 'Jack', keyWords: [{ word: 'king', ipa: '', meaningAr: 'ملك', meaningEn: '' }, { word: 'world', ipa: '', meaningAr: 'العالم / الدنيا', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'This is amazing! I can feel the wind!', arEg: 'ده حاجة خرافية! حاسس بالهوا!', arFusha: 'هذا مذهل! أستطيع أن أشعر بالرياح!', speaker: 'Jack', keyWords: [{ word: 'amazing', ipa: '', meaningAr: 'مذهل / خرافي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'bow of the ship', type: 'cultural', meaningAr: 'مقدمة السفينة', meaningEn: '', egyptianEquivalent: 'قدام المركب', exampleInScene: 'Jack stands at the bow.' },      { term: 'king of the world', type: 'cultural', meaningAr: 'إحساس النصر والحرية المطلقة', meaningEn: '', egyptianEquivalent: 'إحساس إنك كسبت الدنيا', exampleInScene: 'I\'m the king of the world!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where is Jack standing in this scene?', questionAr: 'جاك واقف فين في المشهد ده؟', options: ['Inside the cabin', 'At the ship\'s bow', 'In the engine room', 'On the dock'], correctIndex: 1, explanationAr: 'واقف في مقدمة السفينة (the bow).' }
+    ],
+    speakingLines: [{ en: 'I\'m the king of the world!', arEg: 'أنا ملك الدنيا!' }],
+  },
+  {
+    id: 'lesson-friends-monica-sick',
+    movieTitle: 'Learn English with Friends',
+    releaseYear: 1994,
+    director: 'Learn English with Fun & Ease',
+    genre: 'TV Lesson / Sitcom Learning',
+    cefrLevel: 'B1',
+    sceneTitle: 'Monica is Sick But Cannot Admit It',
+    sceneDescription: 'A guided lesson on a Friends scene where Monica refuses to admit she is sick, with vocabulary breakdown.',
+    youtubeId: '21_5JLwqLso',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'Learn English with Fun & Ease',
+    dialogueQuote: 'Monica is sick but cannot admit it.',
+    actorName: 'Courteney Cox',
+    characterName: 'Monica Geller',
+    thumbnailUrl: 'https://img.youtube.com/vi/21_5JLwqLso/hqdefault.jpg',
+    category: 'tv_series',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Fun & Ease',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'I am not sick. I am totally fine.', arEg: 'أنا مش تعبانة. أنا تمام خالص.', arFusha: 'لست مريضة. أنا بخير تماماً.', speaker: 'Monica', keyWords: [{ word: 'sick', ipa: '', meaningAr: 'تعبان / مريض', meaningEn: '' }, { word: 'totally fine', ipa: '', meaningAr: 'تمام خالص', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'Why can\'t you just admit that you are sick?', arEg: 'ليه مش قادرة تعترفي إنك تعبانة؟', arFusha: 'لماذا لا تعترفين فقط بأنك مريضة؟', speaker: 'Chandler', keyWords: [{ word: 'admit', ipa: '', meaningAr: 'يعترف / يقر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'admit', type: 'cultural', meaningAr: 'يعترف أو يقر بشيء لا يريد قوله', meaningEn: '', egyptianEquivalent: 'يعترف على مضض', exampleInScene: 'Admit that you are sick.' },      { term: 'sick', type: 'cultural', meaningAr: 'مريض / تعبان', meaningEn: '', egyptianEquivalent: 'عيان', exampleInScene: 'I feel sick today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does admit mean in this lesson?', questionAr: 'كلمة admit معناها إيه في الدرس؟', options: ['To deny', 'To admit / confess', 'To forget', 'To repeat'], correctIndex: 1, explanationAr: 'admit = يعترف / يقر.' }
+    ],
+    speakingLines: [{ en: 'Just admit that you are sick.', arEg: 'اعترف بس إنك تعبان.' }],
+  },
+  {
+    id: 'interview-taylor-ellen',
+    movieTitle: 'The Ellen DeGeneres Show',
+    releaseYear: 2003,
+    director: 'Telepictures',
+    genre: 'Talk Show / Interview',
+    cefrLevel: 'B1',
+    sceneTitle: 'Taylor Swift Full Interview with Ellen',
+    sceneDescription: 'Taylor Swift\'s full sit-down with Ellen: career, life, and funny moments in natural conversational English.',
+    youtubeId: 'on4bHNdUm-I',
+    startTime: 0,
+    endTime: 300,
+    clipDuration: '5:00',
+    videoSource: 'TheEllenShow (Official)',
+    dialogueQuote: 'Taylor Swift\'s Full Interview with Ellen',
+    actorName: 'Ellen DeGeneres',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/on4bHNdUm-I/hqdefault.jpg',
+    category: 'interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TheEllenShow Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Thank you so much for being here.', arEg: 'شكراً جداً إنك موجودة معانا النهاردة.', arFusha: 'شكراً جزيلاً على تواجدك معنا.', speaker: 'Ellen', keyWords: [{ word: 'thanks for being here', ipa: '', meaningAr: 'شكراً على حضورك', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'It is so good to be back.', arEg: 'حاجة تجنن إني رجعت هنا تاني.', arFusha: 'من الرائع أن أعود من جديد.', speaker: 'Taylor', keyWords: [{ word: 'good to be back', ipa: '', meaningAr: 'سعيدة إني رجعت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'interview', type: 'cultural', meaningAr: 'مقابلة / لقاء تلفزيوني', meaningEn: '', egyptianEquivalent: 'مقابلة', exampleInScene: 'Watch the full interview.' },      { term: 'small talk', type: 'cultural', meaningAr: 'كلام خفيف افتتاحي في المواقف الاجتماعية', meaningEn: '', egyptianEquivalent: 'هزار وكلام مجاملات', exampleInScene: 'The show starts with small talk.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What type of English can you practice with interviews?', questionAr: 'نوع الإنجليزي اللي بتتمرن عليه من المقابلات؟', options: ['Only grammar rules', 'Natural conversational English', 'Only academic writing', 'Silent reading'], correctIndex: 1, explanationAr: 'المقابلات بتديك إنجليزي محادثة طبيعي.' }
+    ],
+    speakingLines: [{ en: 'It is so good to be here.', arEg: 'حاجة جميلة إني موجود هنا.' }],
+  },
+  {
+    id: 'scene-harrypotter-wizard',
+    movieTitle: 'Harry Potter and the Philosopher\'s Stone',
+    releaseYear: 2001,
+    director: 'Chris Columbus',
+    genre: 'Fantasy / Adventure',
+    cefrLevel: 'A2',
+    sceneTitle: 'Yer a Wizard, Harry',
+    sceneDescription: 'Hagrid finally tells Harry the truth about who he is, in the official clip from the Harry Potter channel.',
+    youtubeId: 'nnD8FKXzIGs',
+    startTime: 0,
+    endTime: 90,
+    clipDuration: '1:30',
+    videoSource: 'Harry Potter (Official)',
+    dialogueQuote: 'You\'re a wizard, Harry.',
+    actorName: 'Robbie Coltrane',
+    characterName: 'Rubeus Hagrid',
+    thumbnailUrl: 'https://img.youtube.com/vi/nnD8FKXzIGs/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Wizarding World Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'You\'re a wizard, Harry.', arEg: 'أنت ساحر يا هاري.', arFusha: 'أنت ساحر يا هاري.', speaker: 'Hagrid', keyWords: [{ word: 'wizard', ipa: '', meaningAr: 'ساحر', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'I\'m a what?', arEg: 'أنا إيه؟!', arFusha: 'أنا ماذا؟', speaker: 'Harry', keyWords: [{ word: 'I\'m a what?', ipa: '', meaningAr: 'أنا إيه؟ (دهشة)', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'wizard', type: 'cultural', meaningAr: 'ساحر (شخصية خيالية عندها قوى سحرية)', meaningEn: '', egyptianEquivalent: 'ساحر', exampleInScene: 'You are a wizard, Harry.' },      { term: 'truth', type: 'cultural', meaningAr: 'الحقيقة', meaningEn: '', egyptianEquivalent: 'الحقيقة', exampleInScene: 'Hagrid tells Harry the truth.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Who tells Harry that he is a wizard?', questionAr: 'مين اللي قال لهاري إنه ساحر؟', options: ['Dumbledore', 'Hagrid', 'Hermione', 'Ron'], correctIndex: 1, explanationAr: 'هاجريد هو اللي أخبر هاري بالحقيقة.' }
+    ],
+    speakingLines: [{ en: 'You\'re a wizard, Harry.', arEg: 'أنت ساحر يا هاري.' }],
+  },
+  {
+    id: 'scene-lionking-hakuna',
+    movieTitle: 'The Lion King',
+    releaseYear: 2019,
+    director: 'Jon Favreau',
+    genre: 'Musical / Family',
+    cefrLevel: 'A1',
+    sceneTitle: 'Hakuna Matata',
+    sceneDescription: 'Timon and Pumbaa teach Simba their carefree philosophy in the official Disney clip.',
+    youtubeId: '0MxulhivCvI',
+    startTime: 0,
+    endTime: 120,
+    clipDuration: '2:00',
+    videoSource: 'DisneyMusicVEVO (Official)',
+    dialogueQuote: 'Hakuna Matata! It means no worries.',
+    actorName: 'Billy Eichner & Seth Rogen',
+    characterName: 'Timon & Pumbaa',
+    thumbnailUrl: 'https://img.youtube.com/vi/0MxulhivCvI/hqdefault.jpg',
+    category: 'movie_scenes',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Disney Official',
+    subtitles: [
+      { id: 'sub-1', start: 5, end: 20, en: 'Hakuna Matata! What a wonderful phrase.', arEg: 'هاكونا ماتاتا! يا لها من عبارة جميلة.', arFusha: 'هاكونا ماتاتا! يا لها من عبارة رائعة.', speaker: 'Timon', keyWords: [{ word: 'phrase', ipa: '', meaningAr: 'عبارة / جملة', meaningEn: '' }] },      { id: 'sub-2', start: 30, end: 45, en: 'It means no worries for the rest of your days.', arEg: 'معناها: بلاش هموم بقية أيامك.', arFusha: 'تعني بلا هموم لبقية أيامك.', speaker: 'Pumbaa', keyWords: [{ word: 'no worries', ipa: '', meaningAr: 'بلاش هم / من غير قلق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Hakuna Matata', type: 'cultural', meaningAr: 'عبارة سواحيلية معناها: مفيش مشاكل / بلاش هم', meaningEn: '', egyptianEquivalent: 'عيشها وبلاش هموم', exampleInScene: 'Hakuna Matata!' },      { term: 'no worries', type: 'cultural', meaningAr: 'لا تقلق / مفيش مشكلة', meaningEn: '', egyptianEquivalent: 'متقلقش', exampleInScene: 'It means no worries.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Hakuna Matata mean?', questionAr: 'كلمة Hakuna Matata معناها إيه؟', options: ['Good morning', 'No worries', 'Be careful', 'Work hard'], correctIndex: 1, explanationAr: 'المعنى: no worries (بلاش هم).' }
+    ],
+    speakingLines: [{ en: 'Hakuna Matata!', arEg: 'هاكونا ماتاتا!' }],
+  },
 ];
 
 // Helper to get all videos
