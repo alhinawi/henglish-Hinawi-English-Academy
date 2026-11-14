@@ -220,9 +220,9 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           >
             <div className="flex items-center gap-2 mb-1.5 font-bold">
               {isCorrect ? (
-                <span className="text-[#c4ff55]">✅ إجابة صحيحة وممتازة!</span>
+                <span className="text-[#c4ff55]">إجابة صحيحة وممتازة!</span>
               ) : (
-                <span className="text-[#ff4f9a]">❌ مش دي الإجابة الصحيحة.</span>
+                <span className="text-[#ff4f9a]">مش دي الإجابة الصحيحة.</span>
               )}
             </div>
             <p className="text-sm">

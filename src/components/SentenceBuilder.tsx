@@ -77,7 +77,7 @@ export const SentenceBuilder: React.FC = () => {
             <span>INTERACTIVE SENTENCE BUILDER</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white">
-            معمل بناء الجملة (Sentence Construction) 🧩
+            معمل بناء الجملة (Sentence Construction)
           </h3>
           <p className="text-sm text-[#b9b6d5] mt-1">
             رتب الكلمات لبناء جملة مستقبل تام صحيحة نحوياً وسياقياً.
@@ -132,7 +132,7 @@ export const SentenceBuilder: React.FC = () => {
             exit={{ opacity: 0, height: 0 }}
             className="mb-4 p-3.5 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-[#ffd166]"
           >
-            💡 {current.hintAr}
+           {current.hintAr}
           </motion.div>
         )}
       </AnimatePresence>
@@ -162,7 +162,6 @@ export const SentenceBuilder: React.FC = () => {
               className="en px-3.5 py-2 rounded-xl bg-[#201d43] hover:bg-[#ff4f9a]/20 border border-white/20 hover:border-[#ff4f9a]/50 text-white font-bold text-sm sm:text-base cursor-pointer transition-all hover:scale-95 group flex items-center gap-1.5"
             >
               <span>{word}</span>
-              <span className="text-[10px] text-white/40 group-hover:text-[#ff4f9a]">✕</span>
             </button>
           ))
         )}
@@ -193,12 +192,12 @@ export const SentenceBuilder: React.FC = () => {
           {isCorrect === true && (
             <div className="flex items-center gap-2 text-[#c4ff55] font-black text-sm sm:text-base">
               <CheckCircle className="w-5 h-5" />
-              <span>إجابة عبقرية وصحيحة تماماً! أحسنت 🎯</span>
+              <span>إجابة عبقرية وصحيحة تماماً! أحسنت</span>
             </div>
           )}
           {isCorrect === false && (
             <div className="text-[#ff4f9a] font-bold text-sm">
-              ❌ الترتيب مش مظبوط تماماً. حاول تعدل ترتيب الكلمات أو راجع التلميح.
+             الترتيب مش مظبوط تماماً. حاول تعدل ترتيب الكلمات أو راجع التلميح.
             </div>
           )}
         </div>

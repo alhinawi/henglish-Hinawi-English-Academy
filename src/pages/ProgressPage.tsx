@@ -134,7 +134,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
         <div>
           <h3 className="text-xl font-black text-white flex items-center gap-2">
             <Award className="w-5 h-5 text-[#ffd166]" />
-            <span>شارات التميز والإنجاز (Achievement Badges) 🏅</span>
+            <span>شارات التميز والإنجاز (Achievement Badges)</span>
           </h3>
           <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
             أكمل الدروس والاختبارات لفتح جميع الشارات التقديرية.
@@ -165,7 +165,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
                   ? 'bg-[#c4ff55]/20 text-[#c4ff55]'
                   : 'bg-white/10 text-[#b9b6d5]'
               }`}>
-                {badge.unlocked ? 'مكتسبة ✅' : 'مغلقة 🔒'}
+                {badge.unlocked ? 'مكتسبة' : 'مغلقة'}
               </span>
             </div>
           ))}
@@ -176,7 +176,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
         <h3 className="text-xl font-black text-white flex items-center gap-2">
           <BookOpen className="w-5 h-5 text-[#41e7ff]" />
-          <span>سجل الدروس ومراجعتها 📚</span>
+          <span>سجل الدروس ومراجعتها</span>
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">

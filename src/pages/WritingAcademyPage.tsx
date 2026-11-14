@@ -79,7 +79,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
     playSound('click');
     const wordCount = userInput.trim().split(/\s+/).filter(Boolean).length;
     if (wordCount < 10) {
-      setSubmissionFeedback('⚠️ النص قصير جداً! اكتب جملة أو فقرة كاملة تحتوي على فاعل وفعل ومفعول به.');
+      setSubmissionFeedback('النص قصير جداً! اكتب جملة أو فقرة كاملة تحتوي على فاعل وفعل ومفعول به.');
       playSound('wrong');
       return;
     }
@@ -113,14 +113,14 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       const hasFuturePerfect = userInput.toLowerCase().includes('will have');
       const hasConnector = /however|furthermore|therefore|because|although|in addition/i.test(userInput);
 
-      let fallbackFeedback = `✅ رائع جداً! عدد الكلمات: ${wordCount} كلمة.\n\n`;
+      let fallbackFeedback = `رائع جداً! عدد الكلمات: ${wordCount} كلمة.\n\n`;
       if (hasFuturePerfect) {
-        fallbackFeedback += '🎯 استخدام ممتاز ومتقن لقاعدة المستقبل التام (will have + V3)!\n';
+        fallbackFeedback += 'استخدام ممتاز ومتقن لقاعدة المستقبل التام (will have + V3)!\n';
       }
       if (hasConnector) {
-        fallbackFeedback += '🔗 استخدام رائع للروابط الأكاديمية مما جعل النص متماسكاً.\n';
+        fallbackFeedback += 'استخدام رائع للروابط الأكاديمية مما جعل النص متماسكاً.\n';
       }
-      fallbackFeedback += '💡 نصيحة: تأكد دائماً من مراجعة علامات الترقيم وبدء الجمل بحرف كبير (Capital Letter).';
+      fallbackFeedback += 'نصيحة: تأكد دائماً من مراجعة علامات الترقيم وبدء الجمل بحرف كبير (Capital Letter).';
 
       setSubmissionFeedback(fallbackFeedback);
       playSound('correct');
@@ -187,7 +187,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
           }`}
         >
-          ✉️ إيميل عمل رسمي (Business Email)
+         إيميل عمل رسمي (Business Email)
         </button>
 
         <button
@@ -202,7 +202,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
           }`}
         >
-          📄 خطاب التقديم للوظيفة (Cover Letter)
+         خطاب التقديم للوظيفة (Cover Letter)
         </button>
 
         <button
@@ -217,7 +217,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
               : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
           }`}
         >
-          🎓 مقال أكاديمي (Academic Paragraph)
+         مقال أكاديمي (Academic Paragraph)
         </button>
       </div>
 
@@ -234,7 +234,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
                 className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-[#ffd166] border border-white/10 flex items-center gap-1.5 cursor-pointer"
               >
                 <Copy className="w-3.5 h-3.5" />
-                <span>{copied ? 'تم النسخ! ✅' : 'نسخ النموذج'}</span>
+                <span>{copied ? 'تم النسخ!' : 'نسخ النموذج'}</span>
               </button>
               <button
                 onClick={() => speakEnglish(currentTemplate.body)}
@@ -259,7 +259,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
           {/* Golden Rules */}
           <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
-            <span className="text-xs font-bold text-[#ffd166]">💡 قواعد ذهبية لهذا النموذج:</span>
+            <span className="text-xs font-bold text-[#ffd166]">قواعد ذهبية لهذا النموذج:</span>
             <ul className="space-y-1.5 text-xs text-[#dedbf4]">
               {currentTemplate.keyRules.map((r, idx) => (
                 <li key={idx} className="flex items-center gap-2">
@@ -320,7 +320,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             ) : (
               <>
                 <Brain className="w-4 h-4" />
-                <span>فحص وتقييم المسودة بالذكاء الاصطناعي 🔍</span>
+                <span>فحص وتقييم المسودة بالذكاء الاصطناعي</span>
               </>
             )}
           </button>
@@ -364,10 +364,10 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
               <div className="space-y-2">
                 <span className="text-xs font-black text-[#ffd166]">فخ 0{idx + 1}: {m.title}</span>
                 <div className="p-2.5 rounded-xl bg-[#ff4f9a]/10 border border-[#ff4f9a]/30 text-xs text-[#ff8bb9] en font-mono">
-                  ❌ {m.wrong}
+                 {m.wrong}
                 </div>
                 <div className="p-2.5 rounded-xl bg-[#c4ff55]/10 border border-[#c4ff55]/30 text-xs text-[#c4ff55] en font-mono font-bold">
-                  ✅ {m.correct}
+                 {m.correct}
                 </div>
               </div>
               <p className="text-[11px] text-[#b9b6d5] leading-relaxed pt-2 border-t border-white/5">

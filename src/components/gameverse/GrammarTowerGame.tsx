@@ -9,7 +9,16 @@ import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { generateGrammarTowerRound, GameQuestion } from '../../services/gameGenerationService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration } from '../../utils/audio';
-import { Heart, Trophy, ArrowUp, AlertCircle, ArrowRight, ShieldCheck } from 'lucide-react';
+import {
+  Heart,
+  Trophy,
+  ArrowUp,
+  AlertCircle,
+  ArrowRight,
+  ShieldCheck,
+  Loader2,
+  Building2,
+} from 'lucide-react';
 
 interface GrammarTowerGameProps {
   onExit: () => void;
@@ -146,7 +155,7 @@ export const GrammarTowerGame: React.FC<GrammarTowerGameProps> = ({ onExit }) =>
   if (isLoading) {
     return (
       <div className="glass-panel p-12 rounded-3xl text-center space-y-4 max-w-xl mx-auto border border-white/10">
-        <div className="text-5xl animate-bounce">🏰</div>
+        <Loader2 className="w-12 h-12 mx-auto text-[#41e7ff] animate-spin" />
         <h3 className="text-xl font-black text-white font-['Cairo',sans-serif]">
           جارٍ بناء طوابق برج القواعد...
         </h3>
@@ -160,7 +169,7 @@ export const GrammarTowerGame: React.FC<GrammarTowerGameProps> = ({ onExit }) =>
   return (
     <div className="max-w-4xl mx-auto space-y-6 text-right">
       <GameHud
-        title="برج القواعد المتصاعد 🏰"
+        title="برج القواعد المتصاعد"
         category="grammar"
         currentRound={currentFloor + 1}
         totalRounds={questions.length}
@@ -214,7 +223,7 @@ export const GrammarTowerGame: React.FC<GrammarTowerGameProps> = ({ onExit }) =>
         <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6 shadow-2xl relative overflow-hidden">
           <div className="flex items-center justify-between border-b border-white/10 pb-4">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🏰</span>
+              <Building2 className="w-6 h-6 text-[#ffd166]" />
               <div>
                 <span className="text-xs font-black text-[#ffd166]">
                   الطابق {currentFloor + 1} من {questions.length} • المستوى ({currentQ.cefr})
@@ -273,7 +282,7 @@ export const GrammarTowerGame: React.FC<GrammarTowerGameProps> = ({ onExit }) =>
                     onClick={handleNextFloor}
                     className="py-2 px-5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-xs sm:text-sm flex items-center gap-1.5 cursor-pointer hover:brightness-110 shadow-md transition-transform hover:scale-105"
                   >
-                    <span>{currentFloor + 1 < questions.length ? 'اصعد للطابق التالي' : 'تتويج القمة! 🏆'}</span>
+                    <span>{currentFloor + 1 < questions.length ? 'اصعد للطابق التالي' : 'تتويج القمة!'}</span>
                     <ArrowUp className="w-4 h-4" />
                   </button>
                 )}

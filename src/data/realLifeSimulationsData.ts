@@ -49,7 +49,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
     categoryAr: 'السفر والمطارات',
     level: 'A2',
     locationName: 'Cairo International Airport - Terminal 3',
-    locationIcon: '✈️',
+    locationIcon: '',
     backdropImage: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?w=1200&auto=format&fit=crop&q=80',
     descriptionAr: 'تعلم كيف تتحدث مع موظف الطيران عند شباك التذاكر، تسليم الأمتعة، واختيار مقعد الطائرة المفضل بثقة.',
     keyVocabulary: [
@@ -160,7 +160,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
     categoryAr: 'الضيافة والمطاعم',
     level: 'B1',
     locationName: 'The Ivy Restaurant - London',
-    locationIcon: '🍽️',
+    locationIcon: '',
     backdropImage: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&auto=format&fit=crop&q=80',
     descriptionAr: 'مواقف حقيقية في المطعم: حجز الطاولة، السؤال عن مكونات الطبق، طلب الفاتورة، وتقديم ملاحظة لبقة.',
     keyVocabulary: [
@@ -238,7 +238,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
     categoryAr: 'الرعاية الصحية والعيادات',
     level: 'B1',
     locationName: 'St. Mary Medical Center',
-    locationIcon: '🩺',
+    locationIcon: '',
     backdropImage: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&auto=format&fit=crop&q=80',
     descriptionAr: 'كيف تصف للطبيب بدقة ألم الرأس، الحمى، مدة استمرار التعب، ومواضع الشعور بالدوار.',
     keyVocabulary: [
@@ -290,7 +290,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
     categoryAr: 'إنجليزي الأعمال والوظائف',
     level: 'B2',
     locationName: 'Canary Wharf Tech Headquarters',
-    locationIcon: '💼',
+    locationIcon: '',
     backdropImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop&q=80',
     descriptionAr: 'تدريب احترافي للإجابة عن أسئلة المقابلات: تحدث عن نقاط قوتك، أسباب رغبتك بالانضمام، وإنجازاتك السابقة.',
     keyVocabulary: [

@@ -151,7 +151,7 @@ export const V3BlitzGame: React.FC<V3BlitzGameProps> = ({ onExit }) => {
   return (
     <div className="max-w-2xl mx-auto space-y-6 text-right">
       <GameHud
-        title="سباق التصريف الثالث V3 ⚡"
+        title="سباق التصريف الثالث V3"
         category="grammar"
         currentRound={answersAudit.length + 1}
         totalRounds={25}

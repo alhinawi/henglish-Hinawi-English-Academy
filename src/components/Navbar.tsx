@@ -35,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const navLinks = [
     { label: 'الرئيسية', route: 'home' as PageRoute },
-    { label: 'أكاديمية الجرامر 🦅', route: 'courses/grammar' as PageRoute, isHighlighted: true },
+    { label: 'أكاديمية الجرامر', route: 'courses/grammar' as PageRoute, isHighlighted: true },
     { label: 'الكورسات', route: 'courses' as PageRoute },
     { label: 'التمارين', route: 'practice' as PageRoute },
     { label: 'الاختبارات', route: 'quizzes' as PageRoute },

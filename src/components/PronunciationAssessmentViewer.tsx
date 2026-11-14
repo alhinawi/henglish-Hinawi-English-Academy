@@ -248,7 +248,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
 
         {targetSentenceAr && (
           <p className="text-xs sm:text-sm text-[#b9b6d5] leading-relaxed">
-            💡 المعنى: {targetSentenceAr}
+           المعنى: {targetSentenceAr}
           </p>
         )}
       </div>
@@ -269,8 +269,8 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
                 {recordingState === 'PROCESSING' && 'جاري تجهيز مقطع الصوت المسجل...'}
                 {recordingState === 'EVALUATING' && 'الذكاء الاصطناعي يحلل الصوت ويقيّم مخارج الحروف...'}
                 {recordingState === 'COMPLETED' && 'اكتمل التحليل الصوتي بنجاح!'}
-                {recordingState === 'PERMISSION_DENIED' && '⚠️ تم رفض إذن الميكروفون. يرجى تفعيله من إعدادات المتصفح.'}
-                {recordingState === 'MICROPHONE_UNAVAILABLE' && '⚠️ لم يتم العثور على ميكروفون متصل بالجهاز.'}
+                {recordingState === 'PERMISSION_DENIED' && 'تم رفض إذن الميكروفون. يرجى تفعيله من إعدادات المتصفح.'}
+                {recordingState === 'MICROPHONE_UNAVAILABLE' && 'لم يتم العثور على ميكروفون متصل بالجهاز.'}
               </span>
             </div>
           )}
@@ -293,7 +293,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
               className="px-6 py-3.5 rounded-2xl bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white font-black text-sm shadow-xl hover:brightness-110 flex items-center gap-2.5 cursor-pointer transition-all duration-300"
             >
               <Mic className="w-5 h-5" />
-              <span>{recordingState === 'COMPLETED' ? 'تسجيل محاولة جديدة 🎙️' : 'اضغط وسجّل بصوتك الآن 🎙️'}</span>
+              <span>{recordingState === 'COMPLETED' ? 'تسجيل محاولة جديدة' : 'اضغط وسجّل بصوتك الآن'}</span>
             </button>
           ) : (
             <button
@@ -301,7 +301,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
               className="px-6 py-3.5 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-black text-sm shadow-xl flex items-center gap-2.5 cursor-pointer transition-all duration-300 animate-pulse"
             >
               <Square className="w-5 h-5 fill-current" />
-              <span>إنهاء التسجيل وتقييم النطق ⏹️</span>
+              <span>إنهاء التسجيل وتقييم النطق ⏹</span>
             </button>
           )}
 
@@ -339,7 +339,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
               <span className="text-[11px] font-bold text-[#ffd166]">الدرجة الكلية</span>
               <div className="text-3xl font-black text-white font-mono">{assessmentResult.overallScore}%</div>
               <span className="text-[10px] text-[#c4ff55] font-bold">
-                {assessmentResult.overallScore >= 85 ? 'ممتاز جداً 🌟' : assessmentResult.overallScore >= 70 ? 'جيد جداً 👍' : 'يحتاج تدريب 💪'}
+                {assessmentResult.overallScore >= 85 ? 'ممتاز جداً' : assessmentResult.overallScore >= 70 ? 'جيد جداً' : 'يحتاج تدريب'}
               </span>
             </div>
 
@@ -452,7 +452,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
 
               {selectedWord.phoneticTipAr && (
                 <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-[#ffd166] leading-relaxed">
-                  💡 <strong>نصيحة هناوي للنطق بالمصري:</strong> {selectedWord.phoneticTipAr}
+                 <strong>نصيحة هناوي للنطق بالمصري:</strong> {selectedWord.phoneticTipAr}
                 </div>
               )}
             </div>

@@ -104,7 +104,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-[#ffd166] text-[#ffd166] font-bold transition-colors cursor-pointer text-right"
                 >
-                  أكاديمية الجرامر الشاملة (١٦ قاعدة) 🦅
+                  أكاديمية الجرامر الشاملة (١٦ قاعدة)
                 </button>
               </li>
               <li>
@@ -115,7 +115,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-[#ffd166] transition-colors cursor-pointer text-right"
                 >
-                  ألعاب القواعد وصياد الأخطاء 🎮
+                  ألعاب القواعد وصياد الأخطاء
                 </button>
               </li>
               <li>
@@ -126,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-[#ffd166] transition-colors cursor-pointer text-right"
                 >
-                  مختبر المحادثات والنطق الصوتي 💬
+                  مختبر المحادثات والنطق الصوتي
                 </button>
               </li>
               <li>
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-[#ffd166] transition-colors cursor-pointer text-right"
                 >
-                  دليل الأفعال والتصريف الثالث V3 📚
+                  دليل الأفعال والتصريف الثالث V3
                 </button>
               </li>
               <li>
@@ -148,7 +148,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   }}
                   className="hover:text-[#ffd166] transition-colors cursor-pointer text-right"
                 >
-                  لوحة المتابعة وتتبع الإنجاز 🏆
+                  لوحة المتابعة وتتبع الإنجاز
                 </button>
               </li>
             </ul>

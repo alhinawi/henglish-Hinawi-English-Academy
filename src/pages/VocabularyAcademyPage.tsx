@@ -162,7 +162,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            منظومة معجمية شاملة تضم أكثر من <strong>55,000 كلمة إنجليزية معتمدة</strong> و <strong>10,000 تعبير ومصطلح اصطلاحي</strong> بالنطق المزدوج الأمريكي (US 🇺🇸) والبريطاني (UK 🇬🇧) والرموز الصوتية IPA، مع تصنيف دقيق لمستويات CEFR (A1-C2) وأكثر من 50 مجالاً حيوياً.
+            منظومة معجمية شاملة تضم أكثر من <strong>55,000 كلمة إنجليزية معتمدة</strong> و <strong>10,000 تعبير ومصطلح اصطلاحي</strong> بالنطق المزدوج الأمريكي (US) والبريطاني (UK) والرموز الصوتية IPA، مع تصنيف دقيق لمستويات CEFR (A1-C2) وأكثر من 50 مجالاً حيوياً.
           </p>
 
           {/* Mode Switcher Tabs */}
@@ -345,7 +345,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
       {activeTab === 'verbs' && (
         <section className="space-y-6">
           <div className="p-5 rounded-2xl bg-[#171632] border border-white/10 text-xs text-[#dedbf4]">
-            💡 <strong className="text-[#ffd166]">ملاحظة أكاديمية: </strong>
+           <strong className="text-[#ffd166]">ملاحظة أكاديمية: </strong>
             التصريف الثالث (Past Participle - V3) هو الركيزة الأساسية لكافة أزمنة التام في اللغة الإنجليزية: المستقبل التام (will have + V3)، المضارع التام (have/has + V3)، والماضي التام (had + V3).
           </div>
 

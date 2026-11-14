@@ -55,7 +55,7 @@ const LOCATIONS: WorldLocation[] = [
     nameAr: 'مطار القاهرة الدولي - صالة ٣',
     scenarioId: 'sim-airport-checkin',
     category: 'Travel & Aviation',
-    icon: '✈️',
+    icon: '',
     position: [-14, 0, -10],
     color: 0x41e7ff, // Cyan Neon
     buildingHeight: 5,
@@ -69,7 +69,7 @@ const LOCATIONS: WorldLocation[] = [
     nameAr: 'مطعم و كافيه الضيافة',
     scenarioId: 'sim-restaurant-ordering',
     category: 'Hospitality',
-    icon: '🍽️',
+    icon: '',
     position: [-6, 0, 10],
     color: 0xffd166, // Gold Neon
     buildingHeight: 4,
@@ -83,7 +83,7 @@ const LOCATIONS: WorldLocation[] = [
     nameAr: 'المركز الطبي والعيادات التخصصية',
     scenarioId: 'sim-doctor-appointment',
     category: 'Healthcare',
-    icon: '🩺',
+    icon: '',
     position: [12, 0, -12],
     color: 0xff4f9a, // Pink Neon
     buildingHeight: 6,
@@ -97,7 +97,7 @@ const LOCATIONS: WorldLocation[] = [
     nameAr: 'برج التكنولوجيا ومقابلات العمل',
     scenarioId: 'sim-job-interview',
     category: 'Business & Careers',
-    icon: '💼',
+    icon: '',
     position: [14, 0, 8],
     color: 0xc4ff55, // Lime Neon
     buildingHeight: 8,
@@ -111,7 +111,7 @@ const LOCATIONS: WorldLocation[] = [
     nameAr: 'أكاديمية هناوي المركزية للغات',
     scenarioId: 'sim-airport-checkin',
     category: 'Academic Campus',
-    icon: '🏛️',
+    icon: '',
     position: [0, 0, 0],
     color: 0x9b7bff, // Purple Neon
     buildingHeight: 7,
@@ -438,7 +438,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             <Sparkles className="w-3.5 h-3.5" />
             <span>HENGLISH 3D OPEN WORLD • عالم المحاكاة المفتوح</span>
           </div>
-          <h3 className="text-2xl font-black text-white mt-1">المدينة الإنجليزية ثلاثية الأبعاد التفاعلية 🌐</h3>
+          <h3 className="text-2xl font-black text-white mt-1">المدينة الإنجليزية ثلاثية الأبعاد التفاعلية</h3>
           <p className="text-xs text-[#b9b6d5]">
             تحرك بشخصيتك داخل المدينة باستخدام لوحة المفاتيح (W, A, S, D أو الأسهم)، اقترب من الشخصيات (NPCs) وتحدث معهم بالإنجليزية.
           </p>

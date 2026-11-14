@@ -13,7 +13,7 @@ export interface LearningResource {
 export const DOWNLOADABLE_RESOURCES: LearningResource[] = [
   {
     id: "res-cheat-sheet",
-    title: "مذكرة المراجعة السريعة الشاملة (Cheat Sheet) ⚡",
+    title: "مذكرة المراجعة السريعة الشاملة (Cheat Sheet)",
     subtitle: "Future Perfect Master Summary",
     category: "revision",
     description:
@@ -49,7 +49,7 @@ Henglish ACADEMY — FUTURE PERFECT CHEAT SHEET
   },
   {
     id: "res-worksheet",
-    title: "ورقة عمل وتمارين منزلية مع نموذج الإجابة 📝",
+    title: "ورقة عمل وتمارين منزلية مع نموذج الإجابة",
     subtitle: "Practice Worksheet & Answer Key",
     category: "worksheet",
     description:
@@ -92,7 +92,7 @@ Part B:
   },
   {
     id: "res-verbs",
-    title: "دليل التصريف الثالث للأفعال الشائعة (V3 Guide) 📚",
+    title: "دليل التصريف الثالث للأفعال الشائعة (V3 Guide)",
     subtitle: "50 Most Essential V3 Participles",
     category: "verbs",
     description:

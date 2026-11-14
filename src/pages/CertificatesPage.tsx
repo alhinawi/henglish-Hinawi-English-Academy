@@ -21,6 +21,10 @@ import {
   FileCheck2,
   Calendar,
   Building,
+  BookOpen,
+  Zap,
+  Globe2,
+  GraduationCap,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -156,7 +160,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
             <div className="space-y-1">
               <div className="flex items-center gap-2 text-xs font-black text-emerald-300">
                 <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-                <span>شهادة رسمية موثقة وسارية المفعول ✅</span>
+                <span>شهادة رسمية موثقة وسارية المفعول</span>
               </div>
               <div className="text-sm font-bold text-white">
                 الطالب: {verificationResult.studentNameAr} (
@@ -171,7 +175,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               onClick={() => setSelectedCertificate(verificationResult)}
               className="text-xs font-bold text-[#ffd166] hover:underline cursor-pointer shrink-0 self-center"
             >
-              عرض الشهادة 🔍
+              عرض الشهادة
             </button>
           </div>
         )}
@@ -179,7 +183,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
         {verificationResult === "not-found" && (
           <div className="p-4 rounded-2xl bg-red-500/10 border border-red-500/30 text-xs text-red-300 flex items-center gap-2">
             <span>
-              ❌ لم يتم العثور على شهادة مسجلة بهذا الكود. يرجى التأكد من صحة
+             لم يتم العثور على شهادة مسجلة بهذا الكود. يرجى التأكد من صحة
               الرمز المدخل.
             </span>
           </div>
@@ -208,22 +212,22 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
           <div className="relative rounded-3xl bg-linear-to-br from-[#121128] via-[#1a1738] to-[#0c0b20] p-6 sm:p-12 border-4 border-[#ffd166]/60 shadow-[0_0_50px_rgba(255,209,102,0.15)] text-center space-y-6">
             {/* Corner Decorative Accents */}
             <div className="absolute top-4 left-4 text-xs font-mono text-[#ffd166]/50">
-              ✦ ✦ ✦
+             
             </div>
             <div className="absolute top-4 right-4 text-xs font-mono text-[#ffd166]/50">
-              ✦ ✦ ✦
+             
             </div>
             <div className="absolute bottom-4 left-4 text-xs font-mono text-[#ffd166]/50">
-              ✦ ✦ ✦
+             
             </div>
             <div className="absolute bottom-4 right-4 text-xs font-mono text-[#ffd166]/50">
-              ✦ ✦ ✦
+             
             </div>
 
             {/* Header Logos & Crest */}
             <div className="space-y-2">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] text-3xl shadow-xl">
-                🦅
+               
               </div>
               <h2 className="text-xl sm:text-2xl font-black tracking-wider text-[#ffd166] uppercase font-serif">
                 Henglish Academy
@@ -327,7 +331,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-3xl">{def.badgeIcon}</span>
+                    {(() => { const CERT_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { 'cert-grammar-foundations': BookOpen, 'cert-future-mastery': Zap, 'cert-real-life-fluency': Globe2, 'cert-academy-diploma': GraduationCap }; const CertIcon = CERT_ICONS[def.id] || Award; return <CertIcon className="w-8 h-8 text-[#ffd166]" />; })()}
                     <span className="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-[#ffd166]/20 text-[#ffd166]">
                       Level {def.cefrLevel}
                     </span>
@@ -355,7 +359,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
                       className="w-full py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-md cursor-pointer flex items-center justify-center gap-1.5"
                     >
                       <Sparkles className="w-4 h-4" />
-                      <span>إصدار وعرض الشهادة الآن 🎉</span>
+                      <span>إصدار وعرض الشهادة الآن</span>
                     </button>
                   ) : (
                     <div className="flex items-center justify-center gap-2 py-2 rounded-xl bg-black/40 text-xs text-[#b9b6d5] border border-white/10">

@@ -123,11 +123,11 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
       if (matched.length > 0 || freeTextResponse.length > 15) {
         playSound('correct');
-        setFreeTextFeedback('✅ إجابة ممتازة ومفهومة جداً! استخدمت صياغة لغوية مناسبة للسياق.');
+        setFreeTextFeedback('إجابة ممتازة ومفهومة جداً! استخدمت صياغة لغوية مناسبة للسياق.');
         setTotalScore(prev => prev + 10);
       } else {
         playSound('wrong');
-        setFreeTextFeedback('⚠️ حاول إضافة مزيد من التفاصيل والكلمات الأساسية، أو اختر أحد الخيارات النموذجية أعلاه.');
+        setFreeTextFeedback('حاول إضافة مزيد من التفاصيل والكلمات الأساسية، أو اختر أحد الخيارات النموذجية أعلاه.');
       }
     } finally {
       setIsEvaluatingAi(false);
@@ -191,7 +191,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               }}
               className="px-5 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
             >
-              <span>{viewMode === 'simulator' ? 'استكشاف العالم ثلاثي الأبعاد 3D 🏛️' : 'العودة للمحاكي التفاعلي 💬'}</span>
+              <span>{viewMode === 'simulator' ? 'استكشاف العالم ثلاثي الأبعاد 3D' : 'العودة للمحاكي التفاعلي'}</span>
             </button>
           </div>
         </div>
@@ -211,10 +211,10 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
         <div className="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar">
           {[
             { id: 'all', label: 'جميع البيئات' },
-            { id: 'travel', label: '✈️ السفر والمطارات' },
-            { id: 'hospitality', label: '🍽️ المطاعم والضيافة' },
-            { id: 'healthcare', label: '🩺 الرعاية الصحية' },
-            { id: 'professional', label: '💼 الوظائف والشركات' },
+            { id: 'travel', label: 'السفر والمطارات' },
+            { id: 'hospitality', label: 'المطاعم والضيافة' },
+            { id: 'healthcare', label: 'الرعاية الصحية' },
+            { id: 'professional', label: 'الوظائف والشركات' },
           ].map(cat => (
             <button
               key={cat.id}
@@ -319,7 +319,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                     title="استمع لنطق المتحدث الصوتي"
                   >
                     <Volume2 className="w-4 h-4" />
-                    <span>تشغيل الصوت 🔊</span>
+                    <span>تشغيل الصوت</span>
                   </button>
                 </div>
 
@@ -392,7 +392,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3">
               <label className="text-xs font-bold text-[#dedbf4] flex items-center justify-between">
                 <span>أو اكتب ردك الخاص بالإنجليزية بحرية (Free-Text Practice):</span>
-                <span className="text-[10px] text-[#41e7ff]">تقييم فوري ⚡</span>
+                <span className="text-[10px] text-[#41e7ff]">تقييم فوري</span>
               </label>
 
               <div className="flex gap-2">
@@ -451,7 +451,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 disabled={!selectedOption && !freeTextFeedback}
                 className="px-8 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all flex items-center gap-2"
               >
-                <span>{currentTurnIdx < scenario.turns.length - 1 ? 'متابعة الحوار ➡️' : 'إنهاء السيناريو وحصد النقاط 🏆'}</span>
+                <span>{currentTurnIdx < scenario.turns.length - 1 ? 'متابعة الحوار' : 'إنهاء السيناريو وحصد النقاط'}</span>
               </button>
             </div>
           </div>

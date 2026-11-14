@@ -181,7 +181,7 @@ export const ExpressionsTab: React.FC = () => {
                     <button
                       onClick={e => handleSpeak(item.expression, 'US', e)}
                       className="px-2 py-1 rounded-lg text-[10px] font-black uppercase bg-[#22D3EE]/15 text-[#22D3EE] border border-[#22D3EE]/30 hover:bg-[#22D3EE]/25 transition-all flex items-center gap-1"
-                      title="استمع بالنطق الأمريكي 🇺🇸"
+                      title="استمع بالنطق الأمريكي"
                     >
                       <Volume2 className="w-3 h-3" />
                       <span>US</span>
@@ -189,7 +189,7 @@ export const ExpressionsTab: React.FC = () => {
                     <button
                       onClick={e => handleSpeak(item.expression, 'UK', e)}
                       className="px-2 py-1 rounded-lg text-[10px] font-black uppercase bg-[#A78BFA]/15 text-[#A78BFA] border border-[#A78BFA]/30 hover:bg-[#A78BFA]/25 transition-all flex items-center gap-1"
-                      title="استمع بالنطق البريطاني 🇬🇧"
+                      title="استمع بالنطق البريطاني"
                     >
                       <Volume2 className="w-3 h-3" />
                       <span>UK</span>

@@ -9,7 +9,16 @@ import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { generateReadingSpeedsterRound, GameQuestion } from '../../services/gameGenerationService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration } from '../../utils/audio';
-import { BookOpen, Eye, EyeOff, Timer, ArrowRight, CheckCircle2, XCircle } from 'lucide-react';
+import {
+  BookOpen,
+  Eye,
+  EyeOff,
+  Timer,
+  ArrowRight,
+  CheckCircle2,
+  XCircle,
+  Loader2,
+} from 'lucide-react';
 
 interface ReadingSpeedsterGameProps {
   onExit: () => void;
@@ -167,7 +176,7 @@ export const ReadingSpeedsterGame: React.FC<ReadingSpeedsterGameProps> = ({ onEx
   if (isLoading) {
     return (
       <div className="glass-panel p-12 rounded-3xl text-center space-y-4 max-w-xl mx-auto border border-white/10">
-        <div className="text-5xl animate-bounce">📖</div>
+        <Loader2 className="w-12 h-12 mx-auto text-[#41e7ff] animate-spin" />
         <h3 className="text-xl font-black text-white font-['Cairo',sans-serif]">
           جارٍ إعداد نصوص القراءة السريعة...
         </h3>
@@ -181,7 +190,7 @@ export const ReadingSpeedsterGame: React.FC<ReadingSpeedsterGameProps> = ({ onEx
   return (
     <div className="max-w-3xl mx-auto space-y-6 text-right">
       <GameHud
-        title="محقق القراءة السريعة 📖"
+        title="محقق القراءة السريعة"
         category="reading"
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
@@ -206,7 +215,7 @@ export const ReadingSpeedsterGame: React.FC<ReadingSpeedsterGameProps> = ({ onEx
                   onClick={handleFinishReadingEarly}
                   className="py-1 px-3 rounded-lg bg-white/10 hover:bg-[#41e7ff]/20 text-[#41e7ff] text-xs font-bold cursor-pointer"
                 >
-                  انتهيت، ابدأ السؤال! 🚀
+                  انتهيت، ابدأ السؤال!
                 </button>
               </div>
             ) : (
