@@ -80,7 +80,6 @@ const FREQUENCY_OPTIONS = [
   { id: 'top3000', label: 'أكثر 3,000 كلمة (Top 3,000)' },
   { id: 'top5000', label: 'أكثر 5,000 كلمة (Top 5,000)' },
   { id: 'academic', label: 'الكلمات الأكاديمية (Academic AWL)' },
-  { id: 'advanced', label: 'مفردات متقدمة ونادرة (Advanced)' },
 ];
 
 export const VocabularyExplorer: React.FC = () => {
@@ -100,6 +99,7 @@ export const VocabularyExplorer: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isFullLoading, setIsFullLoading] = useState(false);
   const [fullLoaded, setFullLoaded] = useState(false);
+  const [fullLoadFailed, setFullLoadFailed] = useState(false);
   const [manifest, setManifest] = useState<VocabularyManifest | null>(null);
 
   // Selected Word for Modal Inspector
@@ -142,6 +142,7 @@ export const VocabularyExplorer: React.FC = () => {
       playSound('success');
     } catch (err) {
       console.error('Error loading full database:', err);
+      setFullLoadFailed(true);
     } finally {
       setIsFullLoading(false);
     }
@@ -368,20 +369,26 @@ export const VocabularyExplorer: React.FC = () => {
 
           <div className="flex items-center gap-2">
             {/* Load full database trigger if not loaded */}
-            {!fullLoaded && (
+            {!fullLoaded && !fullLoadFailed && (
               <button
                 onClick={handleLoadFullDatabase}
                 disabled={isFullLoading}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30 hover:bg-[#ffd166]/25 transition-all cursor-pointer"
-                title="تفعيل البحث في كامل قاعدة الـ 55,000 كلمة"
+                title="تفعيل البحث في كامل قاعدة البيانات"
               >
                 {isFullLoading ? (
                   <Loader2 className="w-3.5 h-3.5 animate-spin" />
                 ) : (
                   <Database className="w-3.5 h-3.5" />
                 )}
-                <span>بحث في كامل الـ 55,000 كلمة</span>
+                <span>تحميل قاعدة البيانات الكاملة</span>
               </button>
+            )}
+            {fullLoadFailed && (
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-white/5 text-white/50 border border-white/10">
+                <Database className="w-3.5 h-3.5" />
+                قاعدة البيانات الكاملة غير متاحة حالياً
+              </span>
             )}
 
             {/* View Mode Toggle */}

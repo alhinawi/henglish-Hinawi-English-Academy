@@ -181,7 +181,7 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
       return data;
     } catch (err) {
       console.error('Failed to load full vocabulary database:', err);
-      return cachedWords;
+      throw err;
     } finally {
       fullLoadingPromise = null;
     }
