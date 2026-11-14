@@ -4,6 +4,7 @@ import { MainLayout } from './components/layout/MainLayout';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
 import { VoiceSettingsModal } from './components/VoiceSettingsModal';
 import { AuthModal } from './components/AuthModal';
+import { GuestNudge } from './components/GuestNudge';
 import { useProgress } from './utils/useProgress';
 import { useAuth } from './context/AuthContext';
 
@@ -47,7 +48,7 @@ import { MovieStudioPage } from './pages/MovieStudioPage';
 import { TranslationStudioPage } from './pages/TranslationStudioPage';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { Sparkles, ArrowRight, ShieldAlert } from 'lucide-react';
+import { ShieldAlert } from 'lucide-react';
 
 export const App: React.FC = () => {
   const { 
@@ -270,22 +271,11 @@ export const App: React.FC = () => {
 
   return (
     <>
-      {/* Guest Mode Persistence Alert Banner */}
-      {isGuest && (
-        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-slate-950 px-4 py-2 text-xs font-bold flex items-center justify-between sticky top-0 z-[60] shadow-md" dir="rtl">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 shrink-0" />
-            <span>أنت تتصفح الأكاديمية كزائر (Guest Mode) — لن يتم حفظ إنجازاتك ونقاطك بشكل دائم إلا بعد تسجيل حساب.</span>
-          </div>
-          <button
-            onClick={() => handleNavigate('register')}
-            className="px-3 py-1 bg-slate-950 text-white rounded-lg hover:bg-slate-900 transition-colors shrink-0 flex items-center gap-1"
-          >
-            <span>إنشاء حساب لحفظ التقدم</span>
-            <ArrowRight className="w-3.5 h-3.5 rotate-180" />
-          </button>
-        </div>
-      )}
+      <GuestNudge
+        isGuest={isGuest}
+        currentRoute={currentRoute}
+        onRegister={() => handleNavigate('register')}
+      />
 
       <MainLayout
         currentRoute={currentRoute}
