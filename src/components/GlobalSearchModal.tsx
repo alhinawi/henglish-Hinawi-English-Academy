@@ -165,7 +165,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
                 </div>
                 <div>
                   <div className="text-xs font-black text-white group-hover:text-[#ffd166] transition-colors">
-                    مكتبة 5,500 جملة إنجليزية
+                    مكتبة 5,000 جملة إنجليزية
                   </div>
                   <div className="text-[10px] text-[#dedbf4]">
                     بحث بالمعنى المصري وترجمة متدرجة A1-C2

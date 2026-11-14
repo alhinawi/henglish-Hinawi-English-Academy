@@ -246,11 +246,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
           icon: Compass,
         },
         {
-          label: 'مكتبة 5,500 جملة ',
-          labelEn: '5,500 Sentences',
+          label: 'مكتبة 5,000 جملة ',
+          labelEn: '5,000 Sentences',
           route: 'sentences' as PageRoute,
           icon: BookText,
-          badge: '5,500 جملة',
+          badge: '5,000 جملة',
         },
         {
           label: 'اتعلم من الأفلام ',

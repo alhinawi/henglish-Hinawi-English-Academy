@@ -1,5 +1,5 @@
 // ==============================================================================
-// Henglish Academy (HENGLISH) - 5,500 ESSENTIAL SENTENCES SERVICE
+// Henglish Academy (HENGLISH) - 5,000 ESSENTIAL SENTENCES SERVICE
 // High-performance search, indexing, filtering, and retrieval engine
 // ==============================================================================
 
@@ -27,7 +27,7 @@ export interface SentenceItem {
   formality: 'Casual' | 'Conversational' | 'Polite' | 'Formal' | 'Academic' | 'Professional' | 'Idiomatic';
   purpose: string;
   audioAvailable: boolean;
-  conversation: SentenceConversation;
+  conversation?: SentenceConversation;
   relatedSentences: string[];
   tags: string[];
 }

@@ -495,7 +495,7 @@ export const App: React.FC = () => {
                   />
                 )}
 
-                {/* 25. Complete 5,500 Sentences Library */}
+                {/* 25. Complete 5,000 Sentences Library */}
                 {currentRoute === 'sentences' && (
                   <SentencesLibraryPage onNavigate={handleNavigate} />
                 )}
