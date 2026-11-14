@@ -3383,6 +3383,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Are you ready to order?', arEg: 'جاهزين تطلبوا؟' }, { en: 'Would you like anything to drink?', arEg: 'تحبوا تشربوا حاجة؟' }],
   },
+  {
+    id: 'ted-lydia-secrets',
+    movieTitle: 'The Secrets of Learning a New Language - Lýdia Machová',
+    releaseYear: 2019,
+    director: 'TED',
+    genre: 'TED Talk',
+    cefrLevel: 'B2',
+    sceneTitle: 'How Polyglots Really Learn',
+    sceneDescription: 'ليديا ماتشوفا (بتتكلم 8 لغات) بتكشف سر تعلم اللغات: المتعة والاستمرارية مش الموهبة.',
+    youtubeId: 'o_XVt5rdpFY',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'TED (Official)',
+    dialogueQuote: 'There is no shortcut to fluency, but there is enjoyment.',
+    actorName: 'Lýdia Machová',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/o_XVt5rdpFY/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TED Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'There is no shortcut to fluency, but there is enjoyment.', arEg: 'مفيش طريق مختصر للطلاقة، بس فيه متعة.', arFusha: 'مفيش طريق مختصر للطلاقة، بس فيه متعة.', speaker: 'Speaker', keyWords: [{ word: 'shortcut', ipa: '', meaningAr: 'طريق مختصر', meaningEn: '' }, { word: 'fluency', ipa: '', meaningAr: 'طلاقة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Find a method you enjoy, and you will stick to it.', arEg: 'لاقي طريقة تستمتع بيها، وهتلتزم بيها.', arFusha: 'لاقي طريقة تستمتع بيها، وهتلتزم بيها.', speaker: 'Speaker', keyWords: [{ word: 'stick to', ipa: '', meaningAr: 'يلتزم بـ', meaningEn: '' }, { word: 'method', ipa: '', meaningAr: 'طريقة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'shortcut', type: 'cultural', meaningAr: 'طريق مختصر', meaningEn: '', egyptianEquivalent: 'اختصار', exampleInScene: 'There are no shortcuts in learning.' },      { term: 'stick to', type: 'phrasal-verb', meaningAr: 'يلتزم بـ / يكمل في', meaningEn: '', egyptianEquivalent: 'يكمل فيها', exampleInScene: 'Stick to your plan.' },      { term: 'enjoyment', type: 'cultural', meaningAr: 'متعة', meaningEn: '', egyptianEquivalent: 'متعة', exampleInScene: 'Enjoyment keeps you going.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the secret of polyglots, according to Lýdia?', questionAr: 'إيه سر متعددي اللغات حسب ليديا؟', options: ['الاستمتاع بالطريقة والالتزام', 'الموهبة', 'السفر للخارج', 'الحفظ الكتير'], correctIndex: 0, explanationAr: 'السر إنهم بيلاقوا طرق ممتعة ليهم شخصياً وبيستمروا عليها.' }
+    ],
+    speakingLines: [{ en: 'There is no shortcut to fluency, but there is enjoyment.', arEg: 'مفيش طريق مختصر للطلاقة، بس فيه متعة.' }, { en: 'Find a method you enjoy, and you will stick to it.', arEg: 'لاقي طريقة تستمتع بيها، وهتلتزم بيها.' }],
+  },
+  {
+    id: 'ted-lonsdale-six-months',
+    movieTitle: 'How to Learn Any Language in Six Months - Chris Lonsdale',
+    releaseYear: 2013,
+    director: 'TEDx Talks',
+    genre: 'TEDx Talk',
+    cefrLevel: 'B2',
+    sceneTitle: 'The Six-Month Method',
+    sceneDescription: 'كريس لونزديل بيشرح 5 مبادئ و7 أفعال لتعلم أي لغة في 6 شهور - من أشهر محاضرات تعلم اللغة.',
+    youtubeId: 'd0yGdNEWdn0',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'TEDx Talks (Official)',
+    dialogueQuote: 'Focus on language content that is relevant to you.',
+    actorName: 'Chris Lonsdale',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/d0yGdNEWdn0/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TEDx Talks Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Focus on language content that is relevant to you.', arEg: 'ركز على المحتوى اللي ليه علاقة بيك انت.', arFusha: 'ركز على المحتوى اللي ليه علاقة بيك انت.', speaker: 'Speaker', keyWords: [{ word: 'focus on', ipa: '', meaningAr: 'يركز على', meaningEn: '' }, { word: 'relevant', ipa: '', meaningAr: 'مرتبط / مناسب', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Use the language as a tool to communicate from day one.', arEg: 'استخدم اللغة كأداة تواصل من أول يوم.', arFusha: 'استخدم اللغة كأداة تواصل من أول يوم.', speaker: 'Speaker', keyWords: [{ word: 'tool', ipa: '', meaningAr: 'أداة', meaningEn: '' }, { word: 'communicate', ipa: '', meaningAr: 'يتواصل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'relevant', type: 'cultural', meaningAr: 'مرتبط بالموضوع / مناسب', meaningEn: '', egyptianEquivalent: 'ليه علاقة بيك', exampleInScene: 'Learn relevant words first.' },      { term: 'communicate', type: 'cultural', meaningAr: 'يتواصل', meaningEn: '', egyptianEquivalent: 'يتكلم مع ناس', exampleInScene: 'Babies communicate before they talk.' },      { term: 'from day one', type: 'collocation', meaningAr: 'من أول يوم', meaningEn: '', egyptianEquivalent: 'من أول يوم', exampleInScene: 'Speak from day one.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is Lonsdale\'s advice about content?', questionAr: 'إيه نصيحة لونزديل عن المحتوى؟', options: ['ركز على اللي مرتبط بيك', 'احفظ القاموس كله', 'اتعلم القواعد الأول', 'اسمع أغاني بس'], correctIndex: 0, explanationAr: 'التركيز على المحتوى المرتبط بحياتك بيخلي التعلم أسرع وأثبت.' }
+    ],
+    speakingLines: [{ en: 'Focus on language content that is relevant to you.', arEg: 'ركز على المحتوى اللي ليه علاقة بيك انت.' }, { en: 'Use the language as a tool to communicate from day one.', arEg: 'استخدم اللغة كأداة تواصل من أول يوم.' }],
+  },
+  {
+    id: 'ted-marianna-video-game',
+    movieTitle: 'Learning a Language? Speak it Like You Are Playing a Video Game - Marianna Pascal',
+    releaseYear: 2017,
+    director: 'TEDx Talks',
+    genre: 'TEDx Talk',
+    cefrLevel: 'B2',
+    sceneTitle: 'Confidence Over Perfection',
+    sceneDescription: 'ماريانا باسكال بتوضح إن سر التحدث هو الثقة والتركيز على الرسالة مش على صحة القواعد.',
+    youtubeId: 'Ge7c7otG2mk',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'TEDx Talks (Official)',
+    dialogueQuote: 'Focus on the other person and the result you want.',
+    actorName: 'Marianna Pascal',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ge7c7otG2mk/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TEDx Talks Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Focus on the other person and the result you want.', arEg: 'ركز على الشخص اللي قدامك والنتيجة اللي عايزها.', arFusha: 'ركز على الشخص اللي قدامك والنتيجة اللي عايزها.', speaker: 'Speaker', keyWords: [{ word: 'focus on', ipa: '', meaningAr: 'يركز على', meaningEn: '' }, { word: 'result', ipa: '', meaningAr: 'نتيجة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Mistakes do not matter when the message is clear.', arEg: 'الغلطات مش مهمة لما الرسالة توصل.', arFusha: 'الغلطات مش مهمة لما الرسالة توصل.', speaker: 'Speaker', keyWords: [{ word: 'mistakes', ipa: '', meaningAr: 'غلطات', meaningEn: '' }, { word: 'clear', ipa: '', meaningAr: 'واضحة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'mistake', type: 'cultural', meaningAr: 'غلطة', meaningEn: '', egyptianEquivalent: 'غلطة', exampleInScene: 'Do not fear mistakes.' },      { term: 'clear', type: 'cultural', meaningAr: 'واضح', meaningEn: '', egyptianEquivalent: 'واضحة', exampleInScene: 'Speak clear English.' },      { term: 'confidence', type: 'cultural', meaningAr: 'ثقة', meaningEn: '', egyptianEquivalent: 'ثقة بالنفس', exampleInScene: 'Confidence grows with practice.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What matters more than grammar, according to Marianna?', questionAr: 'إيه الأهم من القواعد حسب ماريانا؟', options: ['إن الرسالة توصل بوضوح', 'النطق المثالي', 'السرعة', 'الكلمات الصعبة'], correctIndex: 0, explanationAr: 'وضوح الرسالة والتركيز على الطرف التاني أهم من القواعد المثالية.' }
+    ],
+    speakingLines: [{ en: 'Focus on the other person and the result you want.', arEg: 'ركز على الشخص اللي قدامك والنتيجة اللي عايزها.' }, { en: 'Mistakes do not matter when the message is clear.', arEg: 'الغلطات مش مهمة لما الرسالة توصل.' }],
+  },
+  {
+    id: 'pron-rachel-uh-vowel',
+    movieTitle: 'American English - UH Vowel [ʌ] - How to Make the UH Vowel',
+    releaseYear: 2016,
+    director: 'Rachel\'s English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Mastering the UH Sound',
+    sceneDescription: 'ريتشل بتشرح صوت الـ UH الأمريكي (زي cup و love) بحركة الفم واللسان بالتفصيل.',
+    youtubeId: '_63fTgbG-yQ',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'The jaw drops just a bit for this vowel.',
+    actorName: 'Rachel',
+    characterName: 'Rachel',
+    thumbnailUrl: 'https://img.youtube.com/vi/_63fTgbG-yQ/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'The jaw drops just a bit for this vowel.', arEg: 'الفك بينزل شوية بس للصوت ده.', arFusha: 'الفك بينزل شوية بس للصوت ده.', speaker: 'Rachel', keyWords: [{ word: 'jaw', ipa: '', meaningAr: 'فك', meaningEn: '' }, { word: 'vowel', ipa: '', meaningAr: 'صوت متحرك', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Your tongue stays relaxed in the middle.', arEg: 'لسانك يفضل مرتاح في النص.', arFusha: 'لسانك يفضل مرتاح في النص.', speaker: 'Rachel', keyWords: [{ word: 'tongue', ipa: '', meaningAr: 'لسان', meaningEn: '' }, { word: 'relaxed', ipa: '', meaningAr: 'مرتاح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'vowel', type: 'cultural', meaningAr: 'صوت متحرك (a,e,i,o,u)', meaningEn: '', egyptianEquivalent: 'حرف متحرك', exampleInScene: 'English has many vowels.' },      { term: 'jaw', type: 'cultural', meaningAr: 'فك', meaningEn: '', egyptianEquivalent: 'فك', exampleInScene: 'Drop your jaw slightly.' },      { term: 'relaxed', type: 'cultural', meaningAr: 'مرتاح', meaningEn: '', egyptianEquivalent: 'مسترخي', exampleInScene: 'Keep your tongue relaxed.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should your tongue do for the UH vowel?', questionAr: 'لسانك يعمل إيه في صوت الـ UH؟', options: ['يفضل مرتاح في النص', 'يلمس السنان', 'يطلع فوق', 'يتحرك للورا'], correctIndex: 0, explanationAr: 'صوت الـ UH بيحتاج لسان مرتاح في منتصف الفم وفك مفتوح شوية.' }
+    ],
+    speakingLines: [{ en: 'The jaw drops just a bit for this vowel.', arEg: 'الفك بينزل شوية بس للصوت ده.' }, { en: 'Your tongue stays relaxed in the middle.', arEg: 'لسانك يفضل مرتاح في النص.' }],
+  },
+  {
+    id: 'pron-rachel-silent-letters',
+    movieTitle: 'Silent Letters with RULES - American English Pronunciation',
+    releaseYear: 2020,
+    director: 'Rachel\'s English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Letters You Do Not Pronounce',
+    sceneDescription: 'الحروف الساكنة في الإنجليزي ليها قواعد! ريتشل بتلخصها: متى ما تنطقش الـ B ولا K ولا W.',
+    youtubeId: 'OtT3GIO0Tqg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'The K is silent before N, like in knee.',
+    actorName: 'Rachel',
+    characterName: 'Rachel',
+    thumbnailUrl: 'https://img.youtube.com/vi/OtT3GIO0Tqg/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'The K is silent before N, like in knee.', arEg: 'حرف الـ K ساكن قبل الـ N، زي كلمة knee.', arFusha: 'حرف الـ K ساكن قبل الـ N، زي كلمة knee.', speaker: 'Rachel', keyWords: [{ word: 'silent', ipa: '', meaningAr: 'ساكن / مبيتنطقش', meaningEn: '' }, { word: 'knee', ipa: '', meaningAr: 'ركبة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Climb has a silent B at the end.', arEg: 'كلمة climb فيها B ساكنة في الآخر.', arFusha: 'كلمة climb فيها B ساكنة في الآخر.', speaker: 'Rachel', keyWords: [{ word: 'climb', ipa: '', meaningAr: 'يتسلق', meaningEn: '' }, { word: 'at the end', ipa: '', meaningAr: 'في الآخر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'silent letter', type: 'collocation', meaningAr: 'حرف ساكن (مبيتنطقش)', meaningEn: '', egyptianEquivalent: 'حرف ميت', exampleInScene: 'The B in comb is silent.' },      { term: 'knee', type: 'cultural', meaningAr: 'ركبة', meaningEn: '', egyptianEquivalent: 'ركبة', exampleInScene: 'Bend your knees.' },      { term: 'climb', type: 'cultural', meaningAr: 'يتسلق', meaningEn: '', egyptianEquivalent: 'يطلع', exampleInScene: 'Climb the stairs.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which letter is silent in \'knee\'?', questionAr: 'أنهي حرف ساكن في كلمة knee؟', options: ['الـ K', 'الـ N', 'الـ E الأولى', 'مفيش'], correctIndex: 0, explanationAr: 'قاعدة: K قبل N مبيتنطقش - زي knee, know, knife.' }
+    ],
+    speakingLines: [{ en: 'The K is silent before N, like in knee.', arEg: 'حرف الـ K ساكن قبل الـ N، زي كلمة knee.' }, { en: 'Climb has a silent B at the end.', arEg: 'كلمة climb فيها B ساكنة في الآخر.' }],
+  },
+  {
+    id: 'pron-rachel-r-sound',
+    movieTitle: 'Practice the R Sound in American English',
+    releaseYear: 2019,
+    director: 'Rachel\'s English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'The American R Drill',
+    sceneDescription: 'تدريب مكثف على حرف الـ R الأمريكي: وضع اللسان الصحيح وتمارين على كلمات شائعة.',
+    youtubeId: 'aOkcehyK_DE',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'The tongue pulls back for the R sound.',
+    actorName: 'Rachel',
+    characterName: 'Rachel',
+    thumbnailUrl: 'https://img.youtube.com/vi/aOkcehyK_DE/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'The tongue pulls back for the R sound.', arEg: 'اللسان بيرجع لورا لصوت الـ R.', arFusha: 'اللسان بيرجع لورا لصوت الـ R.', speaker: 'Rachel', keyWords: [{ word: 'pulls back', ipa: '', meaningAr: 'يرجع لورا', meaningEn: '' }, { word: 'sound', ipa: '', meaningAr: 'صوت', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Practice with the words red and car.', arEg: 'اتمرن على كلمات زي red و car.', arFusha: 'اتمرن على كلمات زي red و car.', speaker: 'Rachel', keyWords: [{ word: 'practice', ipa: '', meaningAr: 'اتمرن', meaningEn: '' }, { word: 'words', ipa: '', meaningAr: 'كلمات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'pull back', type: 'phrasal-verb', meaningAr: 'يرجع لورا', meaningEn: '', egyptianEquivalent: 'يتراجع', exampleInScene: 'Pull your tongue back.' },      { term: 'sound', type: 'cultural', meaningAr: 'صوت', meaningEn: '', egyptianEquivalent: 'صوت', exampleInScene: 'The R sound is hard.' },      { term: 'practice', type: 'cultural', meaningAr: 'يتمرن', meaningEn: '', egyptianEquivalent: 'يتدرب', exampleInScene: 'Practice every day.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How does the tongue move for the American R?', questionAr: 'اللسان بيتحرك إزاي في الـ R الأمريكية؟', options: ['بيرجع لورا', 'بيطلع برا الفم', 'بيلمس السنان الأمامية', 'بيتحركش'], correctIndex: 0, explanationAr: 'في الـ R الأمريكية اللسان بيرجع لورا ومبيلمسش سقف الفم.' }
+    ],
+    speakingLines: [{ en: 'The tongue pulls back for the R sound.', arEg: 'اللسان بيرجع لورا لصوت الـ R.' }, { en: 'Practice with the words red and car.', arEg: 'اتمرن على كلمات زي red و car.' }],
+  },
+  {
+    id: 'slang-jforrest-2024',
+    movieTitle: '13 Must-Know English Slang Words for 2024',
+    releaseYear: 2024,
+    director: 'JForrest English',
+    genre: 'Slang Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Slang You Will Hear This Year',
+    sceneDescription: 'أحدث 13 كلمة سلانج في 2024: معناها واستخدامها الصح عشان تفهم الشباب الأمريكي والكندي.',
+    youtubeId: 'NqxT8aMFGcE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'JForrest English (Official)',
+    dialogueQuote: 'That new song is a banger.',
+    actorName: 'JForrest',
+    characterName: 'JForrest',
+    thumbnailUrl: 'https://img.youtube.com/vi/NqxT8aMFGcE/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'JForrest English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'That new song is a banger.', arEg: 'الأغنية الجديدة دي تحفة.', arFusha: 'الأغنية الجديدة دي تحفة.', speaker: 'JForrest', keyWords: [{ word: 'banger', ipa: '', meaningAr: 'أغنية تحفة (سلانج)', meaningEn: '' }, { word: 'song', ipa: '', meaningAr: 'أغنية', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'He is always flexing his new car.', arEg: 'هو دايماً بيتفشخر بعربيته الجديدة.', arFusha: 'هو دايماً بيتفشخر بعربيته الجديدة.', speaker: 'JForrest', keyWords: [{ word: 'flexing', ipa: '', meaningAr: 'بيتفشخر (سلانج)', meaningEn: '' }, { word: 'always', ipa: '', meaningAr: 'دايماً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'banger', type: 'slang', meaningAr: 'أغنية أو حاجة تحفة', meaningEn: '', egyptianEquivalent: 'جامدة أوي', exampleInScene: 'This track is a banger.' },      { term: 'flex', type: 'slang', meaningAr: 'يتفشخر / يستعرض', meaningEn: '', egyptianEquivalent: 'يبرّر', exampleInScene: 'Stop flexing your watch.' },      { term: 'no cap', type: 'slang', meaningAr: 'بجد / من غير كدب', meaningEn: '', egyptianEquivalent: 'والله', exampleInScene: 'That was the best meal, no cap.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'That song is a banger\' mean?', questionAr: 'معنى That song is a banger؟', options: ['الأغنية تحفة', 'الأغنية وحشة', 'الأغنية قديمة', 'الأغنية هادية'], correctIndex: 0, explanationAr: 'banger سلانج معناها أغنية جامدة جداً بتولّع الحفلة.' }
+    ],
+    speakingLines: [{ en: 'That new song is a banger.', arEg: 'الأغنية الجديدة دي تحفة.' }, { en: 'He is always flexing his new car.', arEg: 'هو دايماً بيتفشخر بعربيته الجديدة.' }],
+  },
+  {
+    id: 'slang-letstalk-50',
+    movieTitle: '50 Slang Words To Speak English Like A Native',
+    releaseYear: 2022,
+    director: 'Let\'s Talk',
+    genre: 'Slang Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Native-Level Slang',
+    sceneDescription: 'خمسين كلمة سلانج بتخلي كلامك طبيعي زي النيتيف: من chill لـ hang out لـ gonna.',
+    youtubeId: 'tnXWVlflWpg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Let\'s Talk - Free English Lessons (Official)',
+    dialogueQuote: 'Wanna hang out this weekend?',
+    actorName: 'Nysha',
+    characterName: 'Nysha',
+    thumbnailUrl: 'https://img.youtube.com/vi/tnXWVlflWpg/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Let\'s Talk Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Wanna hang out this weekend?', arEg: 'عايز نخرج نهاية الأسبوع ده؟', arFusha: 'عايز نخرج نهاية الأسبوع ده؟', speaker: 'Nysha', keyWords: [{ word: 'wanna', ipa: '', meaningAr: 'عايز (عامية)', meaningEn: '' }, { word: 'hang out', ipa: '', meaningAr: 'يخرج / يقضي وقت', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I am gonna crash early tonight.', arEg: 'هنام بدري النهارده بالليل.', arFusha: 'هنام بدري النهارده بالليل.', speaker: 'Nysha', keyWords: [{ word: 'gonna', ipa: '', meaningAr: 'هـ (عامية)', meaningEn: '' }, { word: 'crash', ipa: '', meaningAr: 'ينام (سلانج)', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'hang out', type: 'phrasal-verb', meaningAr: 'يخرج / يقضي وقت مع حد', meaningEn: '', egyptianEquivalent: 'نقعد سوا', exampleInScene: 'Let\'s hang out Friday.' },      { term: 'gonna', type: 'slang', meaningAr: 'هـ / سوف (عامية)', meaningEn: '', egyptianEquivalent: 'هعمل', exampleInScene: 'I am gonna study.' },      { term: 'crash', type: 'slang', meaningAr: 'ينام (بعد تعب)', meaningEn: '', egyptianEquivalent: 'يبات', exampleInScene: 'I will crash at his place.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'wanna hang out\' mean?', questionAr: 'معنى wanna hang out؟', options: ['عايز نقضي وقت سوا', 'عايز نتعلق', 'عايز تمشي', 'عايز تنام'], correctIndex: 0, explanationAr: 'hang out معناها نقضي وقت مع بعض، و wanna هي want to بالعامية.' }
+    ],
+    speakingLines: [{ en: 'Wanna hang out this weekend?', arEg: 'عايز نخرج نهاية الأسبوع ده؟' }, { en: 'I am gonna crash early tonight.', arEg: 'هنام بدري النهارده بالليل.' }],
+  },
+  {
+    id: 'fluency-poc-think-english',
+    movieTitle: 'How to Think in English (Stop Translating in Your Head)',
+    releaseYear: 2022,
+    director: 'POC English',
+    genre: 'Fluency Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Stop Translating, Start Thinking',
+    sceneDescription: 'تقنيات عملية توقف بيها الترجمة في دماغك وتبدأ تفكر بالإنجليزي مباشرة - تدريبات يومية بسيطة.',
+    youtubeId: 'llPX7JMY_zw',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'POC English (Official)',
+    dialogueQuote: 'Name the objects around you in English.',
+    actorName: 'Coach',
+    characterName: 'Coach',
+    thumbnailUrl: 'https://img.youtube.com/vi/llPX7JMY_zw/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'POC English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Name the objects around you in English.', arEg: 'سمّي الحاجات اللي حواليك بالإنجليزي.', arFusha: 'سمّي الحاجات اللي حواليك بالإنجليزي.', speaker: 'Coach', keyWords: [{ word: 'objects', ipa: '', meaningAr: 'حاجات / أشياء', meaningEn: '' }, { word: 'around you', ipa: '', meaningAr: 'حواليك', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Describe your day to yourself in simple English.', arEg: 'اوصف يومك لنفسك بإنجليزي بسيط.', arFusha: 'اوصف يومك لنفسك بإنجليزي بسيط.', speaker: 'Coach', keyWords: [{ word: 'describe', ipa: '', meaningAr: 'اوصف', meaningEn: '' }, { word: 'simple', ipa: '', meaningAr: 'بسيط', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'name the objects', type: 'collocation', meaningAr: 'يسمي الأشياء', meaningEn: '', egyptianEquivalent: 'سمّي الحاجات', exampleInScene: 'Name five objects in the room.' },      { term: 'describe', type: 'cultural', meaningAr: 'يوصف', meaningEn: '', egyptianEquivalent: 'اوصف', exampleInScene: 'Describe your house.' },      { term: 'translate', type: 'cultural', meaningAr: 'يترجم', meaningEn: '', egyptianEquivalent: 'ترجم', exampleInScene: 'Stop translating in your head.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the first exercise to think in English?', questionAr: 'إيه أول تمرين عشان تفكر بالإنجليزي؟', options: ['تسمي الحاجات اللي حواليك', 'تحفظ قواعد', 'تقرا كتب', 'تتفرج على أفلام مترجمة'], correctIndex: 0, explanationAr: 'أبسط تمرين: سمّي الأشياء اللي حواليك بالإنجليزي طول اليوم.' }
+    ],
+    speakingLines: [{ en: 'Name the objects around you in English.', arEg: 'سمّي الحاجات اللي حواليك بالإنجليزي.' }, { en: 'Describe your day to yourself in simple English.', arEg: 'اوصف يومك لنفسك بإنجليزي بسيط.' }],
+  },
+  {
+    id: 'fluency-bbc-stop-translating',
+    movieTitle: 'How to Stop Translating When You Speak English - BBC Learning English',
+    releaseYear: 2021,
+    director: 'BBC Learning English',
+    genre: 'Fluency Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'BBC Fluency Tips',
+    sceneDescription: 'نصايح BBC العملية عشان تتكلم إنجليزي من غير ما تترجم كل كلمة في دماغك الأول.',
+    youtubeId: 'nnr_r6aEm8g',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Learn phrases, not single words.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/nnr_r6aEm8g/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Learn phrases, not single words.', arEg: 'اتعلم عبارات، مش كلمات لوحدها.', arFusha: 'اتعلم عبارات، مش كلمات لوحدها.', speaker: 'Presenter', keyWords: [{ word: 'phrases', ipa: '', meaningAr: 'عبارات', meaningEn: '' }, { word: 'single words', ipa: '', meaningAr: 'كلمات لوحدها', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Keep a diary in English every day.', arEg: 'اكتب يومياتك بالإنجليزي كل يوم.', arFusha: 'اكتب يومياتك بالإنجليزي كل يوم.', speaker: 'Presenter', keyWords: [{ word: 'diary', ipa: '', meaningAr: 'يوميات', meaningEn: '' }, { word: 'every day', ipa: '', meaningAr: 'كل يوم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'phrase', type: 'cultural', meaningAr: 'عبارة / جملة قصيرة', meaningEn: '', egyptianEquivalent: 'تعبير', exampleInScene: 'Learn useful phrases.' },      { term: 'keep a diary', type: 'collocation', meaningAr: 'يكتب يوميات', meaningEn: '', egyptianEquivalent: 'يكتب مذكرات', exampleInScene: 'Keep a diary in English.' },      { term: 'fluently', type: 'cultural', meaningAr: 'بطلاقة', meaningEn: '', egyptianEquivalent: 'بسلاسة', exampleInScene: 'She speaks fluently.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you learn instead of single words?', questionAr: 'تتعلم إيه بدل الكلمات المفردة؟', options: ['عبارات كاملة', 'حروف', 'أرقام', 'أسماء علم'], correctIndex: 0, explanationAr: 'تعلم العبارات الكاملة بيخليك تتكلم أسرع من غير ترجمة.' }
+    ],
+    speakingLines: [{ en: 'Learn phrases, not single words.', arEg: 'اتعلم عبارات، مش كلمات لوحدها.' }, { en: 'Keep a diary in English every day.', arEg: 'اكتب يومياتك بالإنجليزي كل يوم.' }],
+  },
 ];
 
 // Helper to get all videos
