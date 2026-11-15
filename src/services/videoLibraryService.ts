@@ -6533,6 +6533,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'They are celebrating their wedding anniversary.', arEg: 'هما بيحتفلوا بذكرى جوازهم.' }, { en: 'She got engaged last month.', arEg: 'هي اتخطبت الشهر اللي فات.' }],
   },
+  {
+    id: 'hobbies-oxford-freetime',
+    movieTitle: 'How to Talk About Your Free Time and Hobbies in English - Oxford Online English',
+    releaseYear: 2019,
+    director: 'Oxford Online English',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Hobbies Beyond \'I Like Football\'',
+    sceneDescription: 'أكسفورد أونلاين بتوسع كلامك عن الهوايات: إزاي توصف شغفك بتفاصيل تحيّر بيها الممتحنين.',
+    youtubeId: 'hoyhPZDp3dE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'I am really into photography these days.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/hoyhPZDp3dE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I am really into photography these days.', arEg: 'أنا مهووس بالتصوير الفترة دي.', arFusha: 'أنا مهووس بالتصوير الفترة دي.', speaker: 'Teacher', keyWords: [{ word: 'into', ipa: '', meaningAr: 'مهتم بـ / مهووس', meaningEn: '' }, { word: 'photography', ipa: '', meaningAr: 'تصوير', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I have taken up running recently.', arEg: 'بدأت أجري مؤخراً.', arFusha: 'بدأت أجري مؤخراً.', speaker: 'Teacher', keyWords: [{ word: 'taken up', ipa: '', meaningAr: 'بدأ هواية جديدة', meaningEn: '' }, { word: 'recently', ipa: '', meaningAr: 'مؤخراً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'be into', type: 'collocation', meaningAr: 'مهتم بـ / بيحب', meaningEn: '', egyptianEquivalent: 'مهووس بـ', exampleInScene: 'I am into cooking.' },      { term: 'take up', type: 'phrasal-verb', meaningAr: 'يبدأ هواية جديدة', meaningEn: '', egyptianEquivalent: 'بدأ', exampleInScene: 'She took up painting.' },      { term: 'free time', type: 'collocation', meaningAr: 'وقت الفراغ', meaningEn: '', egyptianEquivalent: 'الفاضي', exampleInScene: 'What do you do in your free time?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'take up a hobby\' mean?', questionAr: 'معنى take up a hobby؟', options: ['يبدأ هواية جديدة', 'يسيب هواية', 'يشتري هواية', 'يعلم هواية'], correctIndex: 0, explanationAr: 'take up معناها يبدأ نشاط أو هواية جديدة: take up running / yoga.' }
+    ],
+    speakingLines: [{ en: 'I am really into photography these days.', arEg: 'أنا مهووس بالتصوير الفترة دي.' }, { en: 'I have taken up running recently.', arEg: 'بدأت أجري مؤخراً.' }],
+  },
+  {
+    id: 'hobbies-vanessa-fluently',
+    movieTitle: 'Talk about HOBBIES Fluently in English - Speak English With Vanessa',
+    releaseYear: 2021,
+    director: 'Speak English With Vanessa',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Fluent Hobby Talk',
+    sceneDescription: 'فانيسا بتخليك تتكلم عن هواياتك بطلاقة: جمل طبيعية مش كلمات مفردة - بمستوى متقدم.',
+    youtubeId: 'dOw3G0hi4ys',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'It helps me unwind after a long day.',
+    actorName: 'Vanessa',
+    characterName: 'Vanessa',
+    thumbnailUrl: 'https://img.youtube.com/vi/dOw3G0hi4ys/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'It helps me unwind after a long day.', arEg: 'بتساعدني أسترخي بعد يوم طويل.', arFusha: 'بتساعدني أسترخي بعد يوم طويل.', speaker: 'Vanessa', keyWords: [{ word: 'unwind', ipa: '', meaningAr: 'يسترخي', meaningEn: '' }, { word: 'long day', ipa: '', meaningAr: 'يوم طويل', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I play the guitar just for fun.', arEg: 'بعزف جيتار للمتعة بس.', arFusha: 'بعزف جيتار للمتعة بس.', speaker: 'Vanessa', keyWords: [{ word: 'for fun', ipa: '', meaningAr: 'للمتعة', meaningEn: '' }, { word: 'guitar', ipa: '', meaningAr: 'جيتار', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'unwind', type: 'cultural', meaningAr: 'يسترخي بعد تعب', meaningEn: '', egyptianEquivalent: 'يفضفض', exampleInScene: 'I unwind with a book.' },      { term: 'for fun', type: 'collocation', meaningAr: 'للمتعة بس', meaningEn: '', egyptianEquivalent: 'على سبيل المتعة', exampleInScene: 'I dance for fun.' },      { term: 'pastime', type: 'cultural', meaningAr: 'هواية لقضاء الوقت', meaningEn: '', egyptianEquivalent: 'تسلية', exampleInScene: 'Reading is my favorite pastime.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'unwind\' mean?', questionAr: 'معنى unwind؟', options: ['يسترخي بعد تعب', 'يعمل رياضة', 'يشتغل أكتر', 'يسهر'], correctIndex: 0, explanationAr: 'unwind معناها تفك الضغط وتسترخي بعد يوم شاق - زي ما تفك سلك ملفوف.' }
+    ],
+    speakingLines: [{ en: 'It helps me unwind after a long day.', arEg: 'بتساعدني أسترخي بعد يوم طويل.' }, { en: 'I play the guitar just for fun.', arEg: 'بعزف جيتار للمتعة بس.' }],
+  },
+  {
+    id: 'movies-camille-b2',
+    movieTitle: 'Intermediate English Conversation about MOVIES - Learn English with Camille',
+    releaseYear: 2022,
+    director: 'Learn English with Camille',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B2',
+    sceneTitle: 'Deep Movie Talk',
+    sceneDescription: 'حوار حقيقي عن الأفلام بمستوى متوسط: الأنواع، التقييم، والتوصيات - كلام الطبيعي مش الكتب.',
+    youtubeId: 'xiikBXfoeHI',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Camille (Official)',
+    dialogueQuote: 'The plot was gripping from start to finish.',
+    actorName: 'Camille',
+    characterName: 'Camille',
+    thumbnailUrl: 'https://img.youtube.com/vi/xiikBXfoeHI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Camille Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'The plot was gripping from start to finish.', arEg: 'الحبكة كانت مشوقة من أولها لآخرها.', arFusha: 'الحبكة كانت مشوقة من أولها لآخرها.', speaker: 'Camille', keyWords: [{ word: 'plot', ipa: '', meaningAr: 'حبكة', meaningEn: '' }, { word: 'gripping', ipa: '', meaningAr: 'مشوقة / بتمسكك', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I would not recommend it, to be honest.', arEg: 'مش هنصح بيه، بصراحة.', arFusha: 'مش هنصح بيه، بصراحة.', speaker: 'Camille', keyWords: [{ word: 'recommend', ipa: '', meaningAr: 'ينصح بـ', meaningEn: '' }, { word: 'to be honest', ipa: '', meaningAr: 'بصراحة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'gripping', type: 'cultural', meaningAr: 'مشوق / بيشدك', meaningEn: '', egyptianEquivalent: 'بيمسك نفسك', exampleInScene: 'A gripping thriller.' },      { term: 'recommend', type: 'cultural', meaningAr: 'ينصح بـ / يرشح', meaningEn: '', egyptianEquivalent: 'يرشح', exampleInScene: 'I recommend this movie.' },      { term: 'plot', type: 'cultural', meaningAr: 'حبكة', meaningEn: '', egyptianEquivalent: 'قصة الفيلم', exampleInScene: 'The plot was confusing.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'gripping\' mean about a movie?', questionAr: 'معنى gripping عن فيلم؟', options: ['مشوق بيمسك انتباهك', 'ممل', 'طويل', 'قديم'], correctIndex: 0, explanationAr: 'gripping معناها الفيلم بيشدك ومش قادر تبطل تتفرج - صفة مدح قوية.' }
+    ],
+    speakingLines: [{ en: 'The plot was gripping from start to finish.', arEg: 'الحبكة كانت مشوقة من أولها لآخرها.' }, { en: 'I would not recommend it, to be honest.', arEg: 'مش هنصح بيه، بصراحة.' }],
+  },
+  {
+    id: 'movies-vanessa-tvshows',
+    movieTitle: 'How to Talk About Movies and TV Shows in English - Speak English With Vanessa',
+    releaseYear: 2021,
+    director: 'Speak English With Vanessa',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Have You Seen It Yet?',
+    sceneDescription: 'الكلام اليومي عن الأفلام والمسلسلات: توصيات، حرق أحداث (spoilers)، وتقييمات سريعة.',
+    youtubeId: 'D786BdFfOI0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'No spoilers, I have not finished it yet!',
+    actorName: 'Vanessa',
+    characterName: 'Vanessa',
+    thumbnailUrl: 'https://img.youtube.com/vi/D786BdFfOI0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'No spoilers, I have not finished it yet!', arEg: 'بلاش حرق أحداث، أنا لسه مخلصتوش!', arFusha: 'بلاش حرق أحداث، أنا لسه مخلصتوش!', speaker: 'Vanessa', keyWords: [{ word: 'spoilers', ipa: '', meaningAr: 'حرق أحداث', meaningEn: '' }, { word: 'not yet', ipa: '', meaningAr: 'لسه', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'It is totally binge-worthy.', arEg: 'المسلسل يستاهل تتفرج عليه ورا بعض.', arFusha: 'المسلسل يستاهل تتفرج عليه ورا بعض.', speaker: 'Vanessa', keyWords: [{ word: 'binge-worthy', ipa: '', meaningAr: 'يستاهل الماراثون', meaningEn: '' }, { word: 'totally', ipa: '', meaningAr: 'تماماً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'spoiler', type: 'cultural', meaningAr: 'حرق أحداث', meaningEn: '', egyptianEquivalent: 'حرق الفيلم', exampleInScene: 'No spoilers, please!' },      { term: 'binge-watch', type: 'cultural', meaningAr: 'يتفرج على حلقات ورا بعض', meaningEn: '', egyptianEquivalent: 'يعمل ماراثون', exampleInScene: 'We binge-watched the whole season.' },      { term: 'overrated', type: 'cultural', meaningAr: 'مقيّم أكتر من حجمه', meaningEn: '', egyptianEquivalent: 'معلن عنه أوي', exampleInScene: 'The movie is overrated.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'binge-worthy\' mean?', questionAr: 'معنى binge-worthy؟', options: ['يستاهل تتفرج عليه كله ورا بعض', 'ممل جداً', 'طويل أوي', 'مخيف'], correctIndex: 0, explanationAr: 'binge-worthy يعني المسلسل جامد لدرجة إنك هتخلصه كله في يوم.' }
+    ],
+    speakingLines: [{ en: 'No spoilers, I have not finished it yet!', arEg: 'بلاش حرق أحداث، أنا لسه مخلصتوش!' }, { en: 'It is totally binge-worthy.', arEg: 'المسلسل يستاهل تتفرج عليه ورا بعض.' }],
+  },
+  {
+    id: 'grammar-lucy-conditionals',
+    movieTitle: 'The Conditionals - 0, 1, 2 & 3 Conditionals + Quiz - English with Lucy',
+    releaseYear: 2020,
+    director: 'English with Lucy',
+    genre: 'Grammar Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'All Four Conditionals',
+    sceneDescription: 'لوسي بتلخص الأربع كونديشونالز بأمثلة واضحة وكويز - الدرس اللي بيفك لخبطة لو/لو كان.',
+    youtubeId: 'vXp0ETWXbWo',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Lucy (Official)',
+    dialogueQuote: 'If I were rich, I would travel the world.',
+    actorName: 'Lucy',
+    characterName: 'Lucy',
+    thumbnailUrl: 'https://img.youtube.com/vi/vXp0ETWXbWo/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Lucy Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'If I were rich, I would travel the world.', arEg: 'لو كنت غني، كنت هسافر العالم.', arFusha: 'لو كنت غني، كنت هسافر العالم.', speaker: 'Lucy', keyWords: [{ word: 'If I were', ipa: '', meaningAr: 'لو كنت (خيالي)', meaningEn: '' }, { word: 'would travel', ipa: '', meaningAr: 'كنت هسافر', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'If you heat ice, it melts.', arEg: 'لو سخنت التلج، بيذوب.', arFusha: 'لو سخنت التلج، بيذوب.', speaker: 'Lucy', keyWords: [{ word: 'heat', ipa: '', meaningAr: 'يسخن', meaningEn: '' }, { word: 'melts', ipa: '', meaningAr: 'يذوب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'second conditional', type: 'collocation', meaningAr: 'الشرطي التاني (خيالي)', meaningEn: '', egyptianEquivalent: 'لو الافتراضية', exampleInScene: 'If I were you, I would go.' },      { term: 'zero conditional', type: 'collocation', meaningAr: 'الشرطي الصفري (حقائق)', meaningEn: '', egyptianEquivalent: 'حقائق علمية', exampleInScene: 'If you heat water, it boils.' },      { term: 'If I were you', type: 'collocation', meaningAr: 'لو كنت مكانك', meaningEn: '', egyptianEquivalent: 'لو كنت مكانك', exampleInScene: 'If I were you, I would study.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which conditional is \'If I were rich, I would travel\'?', questionAr: 'جملة If I were rich, I would travel أي نوع شرطي؟', options: ['التاني (خيالي)', 'الصفري (حقائق)', 'الأول (ممكن)', 'التالت (ماضي)'], correctIndex: 0, explanationAr: 'الشرطي التاني للخيال: If + ماضي بسيط، would + مصدر.' }
+    ],
+    speakingLines: [{ en: 'If I were rich, I would travel the world.', arEg: 'لو كنت غني، كنت هسافر العالم.' }, { en: 'If you heat ice, it melts.', arEg: 'لو سخنت التلج، بيذوب.' }],
+  },
+  {
+    id: 'grammar-friendly-conditionals',
+    movieTitle: 'Conditional Sentences Made Easy - Zero, 1st, 2nd & 3rd - Friendly English Lab',
+    releaseYear: 2022,
+    director: 'Friendly English Lab',
+    genre: 'Grammar Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Conditionals Without Headaches',
+    sceneDescription: 'شرح مبسط للكونديشونالز الأربعة بجداول وأمثلة يومية - مناسب لو لسه بتتلخبط فيهم.',
+    youtubeId: '1TgQHjgV0d8',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Friendly English Lab (Official)',
+    dialogueQuote: 'If it rains tomorrow, we will stay home.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/1TgQHjgV0d8/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Friendly English Lab Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'If it rains tomorrow, we will stay home.', arEg: 'لو مطرت بكرة، هنقعد في البيت.', arFusha: 'لو مطرت بكرة، هنقعد في البيت.', speaker: 'Teacher', keyWords: [{ word: 'rains', ipa: '', meaningAr: 'تمطر', meaningEn: '' }, { word: 'will stay', ipa: '', meaningAr: 'هنقعد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'If I had studied, I would have passed.', arEg: 'لو كنت ذاكرت، كنت هنجح.', arFusha: 'لو كنت ذاكرت، كنت هنجح.', speaker: 'Teacher', keyWords: [{ word: 'had studied', ipa: '', meaningAr: 'كنت ذاكرت (ماضي تام)', meaningEn: '' }, { word: 'would have passed', ipa: '', meaningAr: 'كنت هنجح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'first conditional', type: 'collocation', meaningAr: 'الشرطي الأول (محتمل)', meaningEn: '', egyptianEquivalent: 'لو الممكنة', exampleInScene: 'If it rains, I will stay.' },      { term: 'third conditional', type: 'collocation', meaningAr: 'الشرطي التالت (ندم على الماضي)', meaningEn: '', egyptianEquivalent: 'لو الندم', exampleInScene: 'If I had known, I would have come.' },      { term: 'unless', type: 'cultural', meaningAr: 'إلا لو / ما لم', meaningEn: '', egyptianEquivalent: 'إلا إذا', exampleInScene: 'I will not go unless you come.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which conditional shows regret about the past?', questionAr: 'أنهي شرطي بيعبر عن ندم على الماضي؟', options: ['التالت', 'الأول', 'الصفري', 'التاني'], correctIndex: 0, explanationAr: 'الشرطي التالت: If + had + تصريف تالت، would have + تصريف تالت - للكلام عن ماضي ما حصلش.' }
+    ],
+    speakingLines: [{ en: 'If it rains tomorrow, we will stay home.', arEg: 'لو مطرت بكرة، هنقعد في البيت.' }, { en: 'If I had studied, I would have passed.', arEg: 'لو كنت ذاكرت، كنت هنجح.' }],
+  },
+  {
+    id: 'internet-lingoni-b1',
+    movieTitle: 'English Vocabulary: The Internet, Electronics, and Social Media - lingoni',
+    releaseYear: 2021,
+    director: 'lingoni ENGLISH',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Digital Life Words',
+    sceneDescription: 'مفردات الإنترنت والسوشيال ميديا: تحميل، مشاركة، متابعين - كلام العصر الرقمي.',
+    youtubeId: 'a16E1FWjDM0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'lingoni ENGLISH (Official)',
+    dialogueQuote: 'She posted a photo and it went viral.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/a16E1FWjDM0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'lingoni ENGLISH Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'She posted a photo and it went viral.', arEg: 'هي نزلت صورة وانتشرت انتشار مرعب.', arFusha: 'هي نزلت صورة وانتشرت انتشار مرعب.', speaker: 'Teacher', keyWords: [{ word: 'posted', ipa: '', meaningAr: 'نزلت (بوست)', meaningEn: '' }, { word: 'went viral', ipa: '', meaningAr: 'انتشرت', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Remember to back up your data regularly.', arEg: 'افتكر تعمل نسخة احتياطية لبياناتك بانتظام.', arFusha: 'افتكر تعمل نسخة احتياطية لبياناتك بانتظام.', speaker: 'Teacher', keyWords: [{ word: 'back up', ipa: '', meaningAr: 'نسخة احتياطية', meaningEn: '' }, { word: 'regularly', ipa: '', meaningAr: 'بانتظام', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'go viral', type: 'collocation', meaningAr: 'ينتشر انتشار واسع', meaningEn: '', egyptianEquivalent: 'يعمل تريند', exampleInScene: 'The video went viral.' },      { term: 'follower', type: 'cultural', meaningAr: 'متابع', meaningEn: '', egyptianEquivalent: 'متابعين', exampleInScene: 'She has many followers.' },      { term: 'upload', type: 'cultural', meaningAr: 'يرفع (ملف/فيديو)', meaningEn: '', egyptianEquivalent: 'يرفع', exampleInScene: 'Upload the video tonight.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'go viral\' mean?', questionAr: 'معنى go viral؟', options: ['ينتشر بسرعة كبيرة أونلاين', 'يصاب بفيروس', 'يتحذف', 'يتشفر'], correctIndex: 0, explanationAr: 'go viral معناها المحتوى انتشر بسرعة مرعبة على كل المنصات.' }
+    ],
+    speakingLines: [{ en: 'She posted a photo and it went viral.', arEg: 'هي نزلت صورة وانتشرت انتشار مرعب.' }, { en: 'Remember to back up your data regularly.', arEg: 'افتكر تعمل نسخة احتياطية لبياناتك بانتظام.' }],
+  },
+  {
+    id: 'internet-shaw-50',
+    movieTitle: '50 Words: Social Media and the Internet - British Pronunciation - Shaw English Online',
+    releaseYear: 2020,
+    director: 'Shaw English Online',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Say Internet Words Right',
+    sceneDescription: 'خمسين كلمة من عالم السوشيال ميديا بالنطق البريطاني الصح - meme, gif, algorithm.',
+    youtubeId: 'mL9-Uor9HEc',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Shaw English Online (Official)',
+    dialogueQuote: 'The algorithm decides what you see.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/mL9-Uor9HEc/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Shaw English Online Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'The algorithm decides what you see.', arEg: 'الخوارزمية هي اللي بتحدد تشوف إيه.', arFusha: 'الخوارزمية هي اللي بتحدد تشوف إيه.', speaker: 'Teacher', keyWords: [{ word: 'algorithm', ipa: '', meaningAr: 'خوارزمية', meaningEn: '' }, { word: 'decides', ipa: '', meaningAr: 'بتحدد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Meme is pronounced MEEM, not me-me.', arEg: 'كلمة meme بتتنطق ميم، مش مي-مي.', arFusha: 'كلمة meme بتتنطق ميم، مش مي-مي.', speaker: 'Teacher', keyWords: [{ word: 'meme', ipa: '', meaningAr: 'ميم', meaningEn: '' }, { word: 'pronounced', ipa: '', meaningAr: 'بتتنطق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'algorithm', type: 'cultural', meaningAr: 'خوارزمية', meaningEn: '', egyptianEquivalent: 'الألجوريزم', exampleInScene: 'The algorithm shows you ads.' },      { term: 'meme', type: 'cultural', meaningAr: 'ميم', meaningEn: '', egyptianEquivalent: 'ميمز', exampleInScene: 'That meme is funny.' },      { term: 'hashtag', type: 'cultural', meaningAr: 'هاشتاج', meaningEn: '', egyptianEquivalent: 'هاشتاج', exampleInScene: 'Use the right hashtag.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How is \'meme\' pronounced?', questionAr: 'كلمة meme بتتنطق إزاي؟', options: ['ميم', 'مي-مي', 'ميمي', 'ميمه'], correctIndex: 0, explanationAr: 'meme بتتنطق ميم - مقطع واحد، مش مي-مي زي ما ناس كتير بتقول.' }
+    ],
+    speakingLines: [{ en: 'The algorithm decides what you see.', arEg: 'الخوارزمية هي اللي بتحدد تشوف إيه.' }, { en: 'Meme is pronounced MEEM, not me-me.', arEg: 'كلمة meme بتتنطق ميم، مش مي-مي.' }],
+  },
+  {
+    id: 'coworkers-hll-talk',
+    movieTitle: 'How To Talk to Your Coworkers - Questions and Answers in Daily Life English - High Level Listening',
+    releaseYear: 2021,
+    director: 'High Level Listening',
+    genre: 'Business English Podcast',
+    cefrLevel: 'C1',
+    sceneTitle: 'Office Small Talk Advanced',
+    sceneDescription: 'حوارات الزمايل في الشغل بمستوى متقدم: أسئلة وردود طبيعية بين الكليجز - نطق وسرعة حقيقية.',
+    youtubeId: 'U3Vnxo4jmPM',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'High Level Listening (Official)',
+    dialogueQuote: 'How is your project coming along?',
+    actorName: 'Host',
+    characterName: 'Coworker',
+    thumbnailUrl: 'https://img.youtube.com/vi/U3Vnxo4jmPM/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'High Level Listening Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'How is your project coming along?', arEg: 'مشروعك ماشي إزاي؟', arFusha: 'مشروعك ماشي إزاي؟', speaker: 'Coworker', keyWords: [{ word: 'coming along', ipa: '', meaningAr: 'ماشي / بيتقدم', meaningEn: '' }, { word: 'project', ipa: '', meaningAr: 'مشروع', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I am swamped with deadlines this week.', arEg: 'أنا مغرقان في ميعاد التسليم الأسبوع ده.', arFusha: 'أنا مغرقان في ميعاد التسليم الأسبوع ده.', speaker: 'Coworker', keyWords: [{ word: 'swamped', ipa: '', meaningAr: 'مغرقان (شغل كتير)', meaningEn: '' }, { word: 'deadlines', ipa: '', meaningAr: 'مواعيد تسليم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'How is it coming along?', type: 'collocation', meaningAr: 'الشغل ماشي إزاي؟', meaningEn: '', egyptianEquivalent: 'عامل إيه فيه', exampleInScene: 'How is the report coming along?' },      { term: 'swamped', type: 'cultural', meaningAr: 'مغرقان في الشغل', meaningEn: '', egyptianEquivalent: 'مش فاضي خالص', exampleInScene: 'I am swamped today.' },      { term: 'deadline', type: 'cultural', meaningAr: 'ميعاد تسليم', meaningEn: '', egyptianEquivalent: 'ديدلاين', exampleInScene: 'The deadline is tight.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I am swamped\' mean at work?', questionAr: 'معنى I am swamped في الشغل؟', options: ['مغرقان في الشغل', 'فاضي تماماً', 'مستقيل', 'في أجازة'], correctIndex: 0, explanationAr: 'swamped معناها عندك شغل فوق طاقتك - تعبير شائع جداً في المكاتب.' }
+    ],
+    speakingLines: [{ en: 'How is your project coming along?', arEg: 'مشروعك ماشي إزاي؟' }, { en: 'I am swamped with deadlines this week.', arEg: 'أنا مغرقان في ميعاد التسليم الأسبوع ده.' }],
+  },
+  {
+    id: 'office-jessica-conversation',
+    movieTitle: 'English Conversation At the Office - Speaking English at Workplace - Learn English with Jessica',
+    releaseYear: 2021,
+    director: 'Learn English with Jessica',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'First Day at the Office',
+    sceneDescription: 'حوارات المكتب الأساسية: التعارف مع الزمايل، طلب مساعدة، والكلام مع المدير - سهل وبطيء.',
+    youtubeId: 'dzA7nL6cicY',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Jessica (Official)',
+    dialogueQuote: 'Could you give me a hand with this report?',
+    actorName: 'Jessica',
+    characterName: 'Coworker',
+    thumbnailUrl: 'https://img.youtube.com/vi/dzA7nL6cicY/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Jessica Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Could you give me a hand with this report?', arEg: 'ممكن تساعدني في التقرير ده؟', arFusha: 'ممكن تساعدني في التقرير ده؟', speaker: 'Coworker', keyWords: [{ word: 'give me a hand', ipa: '', meaningAr: 'تساعدني', meaningEn: '' }, { word: 'report', ipa: '', meaningAr: 'تقرير', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I will forward you the email right away.', arEg: 'هبعتلك الإيميل حالاً.', arFusha: 'هبعتلك الإيميل حالاً.', speaker: 'Coworker', keyWords: [{ word: 'forward', ipa: '', meaningAr: 'يحوّل / يبعت', meaningEn: '' }, { word: 'right away', ipa: '', meaningAr: 'حالاً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'give me a hand', type: 'idiom', meaningAr: 'ساعدني', meaningEn: '', egyptianEquivalent: 'هات إيدك معايا', exampleInScene: 'Give me a hand with these boxes.' },      { term: 'forward an email', type: 'collocation', meaningAr: 'يحوّل إيميل', meaningEn: '', egyptianEquivalent: 'يبعت الإيميل', exampleInScene: 'Forward me the email.' },      { term: 'right away', type: 'collocation', meaningAr: 'حالاً / فوراً', meaningEn: '', egyptianEquivalent: 'على طول', exampleInScene: 'I will do it right away.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'give me a hand\' mean?', questionAr: 'معنى give me a hand؟', options: ['ساعدني', 'اديني إيدك', 'صافحني', 'صفق لي'], correctIndex: 0, explanationAr: 'give me a hand تعبير ودي معناه ساعدني - مستخدم كتير بين الزمايل.' }
+    ],
+    speakingLines: [{ en: 'Could you give me a hand with this report?', arEg: 'ممكن تساعدني في التقرير ده؟' }, { en: 'I will forward you the email right away.', arEg: 'هبعتلك الإيميل حالاً.' }],
+  },
 ];
 
 // Helper to get all videos
