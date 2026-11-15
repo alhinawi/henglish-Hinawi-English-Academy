@@ -10383,6 +10383,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'I am afraid I need to reschedule my appointment for next week.', arEg: 'للأسف محتاج أغير ميعادي للأسبوع الجاي.' }, { en: 'Could you send me a confirmation text, please?', arEg: 'ممكن تبعتلي رسالة تأكيد لو سمحت؟' }],
   },
+  {
+    id: 'airport-checkin-prospeak',
+    movieTitle: 'Learn English at the Airport - Check-in and Boarding',
+    releaseYear: 2023,
+    director: 'ProSpeak English',
+    genre: 'Travel English',
+    cefrLevel: 'A2',
+    sceneTitle: 'Check-in at the Counter',
+    sceneDescription: 'محادثة كاملة عند كونتوار السفر: الباسبور، الشنط، وكارت الصعود.',
+    youtubeId: 'uYBVjc9h1G8',
+    startTime: 25,
+    endTime: 135,
+    clipDuration: '1:50',
+    videoSource: 'ProSpeak English (Official)',
+    dialogueQuote: 'I would like a window seat, please.',
+    actorName: 'Traveler',
+    characterName: 'Passenger',
+    thumbnailUrl: 'https://img.youtube.com/vi/uYBVjc9h1G8/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'ProSpeak English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Good morning. May I see your passport and ticket, please?', arEg: 'صباح الخير. ممكن أشوف الباسبور والتذكرة لو سمحت؟', arFusha: 'صباح الخير. ممكن أشوف الباسبور والتذكرة لو سمحت؟', speaker: 'Agent', keyWords: [{ word: 'May I see', ipa: '', meaningAr: 'ممكن أشوف', meaningEn: '' }, { word: 'passport and ticket', ipa: '', meaningAr: 'الباسبور والتذكرة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I would like a window seat, please.', arEg: 'عايز كرسي جنب الشباك لو سمحت.', arFusha: 'عايز كرسي جنب الشباك لو سمحت.', speaker: 'Passenger', keyWords: [{ word: 'window seat', ipa: '', meaningAr: 'كرسي جنب الشباك', meaningEn: '' }, { word: 'I would like', ipa: '', meaningAr: 'أنا عايز (بأدب)', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Your flight is boarding at gate twelve. Have a nice flight!', arEg: 'طيارتك بتقلع من بوابة 12. رحلة سعيدة!', arFusha: 'طيارتك بتقلع من بوابة 12. رحلة سعيدة!', speaker: 'Agent', keyWords: [{ word: 'boarding', ipa: '', meaningAr: 'الصعود للطيارة', meaningEn: '' }, { word: 'gate', ipa: '', meaningAr: 'بوابة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'boarding pass', type: 'collocation', meaningAr: 'بطاقة صعود', meaningEn: '', egyptianEquivalent: 'كارت الصعود', exampleInScene: 'Keep your boarding pass with you.' },      { term: 'window seat', type: 'collocation', meaningAr: 'مقعد بجوار النافذة', meaningEn: '', egyptianEquivalent: 'كرسي جنب الشباك', exampleInScene: 'I prefer a window seat.' },      { term: 'check in', type: 'phrasal-verb', meaningAr: 'يسجل وصوله', meaningEn: '', egyptianEquivalent: 'يعمل تشيك إن', exampleInScene: 'We checked in online.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you politely ask for a seat next to the window?', questionAr: 'تطلب كرسي جنب الشباك بأدب إزاي؟', options: ['I would like a window seat, please.', 'Give me window.', 'Window now, please.', 'I sit glass side.'], correctIndex: 0, explanationAr: 'I would like + الاسم + please = أدب وأناقة في الطلب.' }
+    ],
+    speakingLines: [{ en: 'I would like a window seat, please.', arEg: 'عايز كرسي جنب الشباك لو سمحت.' }, { en: 'May I see your passport and ticket, please?', arEg: 'ممكن أشوف الباسبور والتذكرة لو سمحت؟' }],
+  },
+  {
+    id: 'hotel-checkin-esc',
+    movieTitle: 'English Conversation at the Hotel - Check-in',
+    releaseYear: 2022,
+    director: 'English Speaking Course',
+    genre: 'Travel English',
+    cefrLevel: 'A2',
+    sceneTitle: 'Checking Into a Hotel',
+    sceneDescription: 'حجز فندق عند الريسبشن: اسم الحجز، عدد الليالي، والإفطار.',
+    youtubeId: 'kVG3-3nmRcI',
+    startTime: 30,
+    endTime: 140,
+    clipDuration: '1:50',
+    videoSource: 'English Speaking Course (Official)',
+    dialogueQuote: 'I have a reservation under the name Hossam.',
+    actorName: 'Guest',
+    characterName: 'Hotel Guest',
+    thumbnailUrl: 'https://img.youtube.com/vi/kVG3-3nmRcI/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking Course Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I have a reservation under the name Hossam.', arEg: 'عندي حجز باسم حسام.', arFusha: 'عندي حجز باسم حسام.', speaker: 'Guest', keyWords: [{ word: 'reservation', ipa: '', meaningAr: 'حجز', meaningEn: '' }, { word: 'under the name', ipa: '', meaningAr: 'باسم', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'How many nights will you be staying with us?', arEg: 'هتقضي معانا كام ليلة؟', arFusha: 'هتقضي معانا كام ليلة؟', speaker: 'Receptionist', keyWords: [{ word: 'How many nights', ipa: '', meaningAr: 'كام ليلة', meaningEn: '' }, { word: 'staying', ipa: '', meaningAr: 'قاعد / نازل', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Breakfast is served from seven to ten in the lobby.', arEg: 'الإفطار بيتقدم من 7 لـ 10 في اللوبي.', arFusha: 'الإفطار بيتقدم من 7 لـ 10 في اللوبي.', speaker: 'Receptionist', keyWords: [{ word: 'is served', ipa: '', meaningAr: 'بيتقدم', meaningEn: '' }, { word: 'lobby', ipa: '', meaningAr: 'بهو الفندق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'reservation', type: 'collocation', meaningAr: 'حجز', meaningEn: '', egyptianEquivalent: 'حجز', exampleInScene: 'I made a reservation online.' },      { term: 'single room', type: 'collocation', meaningAr: 'غرفة فردية', meaningEn: '', egyptianEquivalent: 'أوضة سنجل', exampleInScene: 'I booked a single room.' },      { term: 'check out', type: 'phrasal-verb', meaningAr: 'يغادر الفندق', meaningEn: '', egyptianEquivalent: 'يعمل تشيك أوت', exampleInScene: 'Check-out is at noon.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'under the name Hossam\' mean?', questionAr: 'يعني إيه under the name Hossam؟', options: ['The booking is registered with the name Hossam.', 'Hossam is under the hotel.', 'The room is named Hossam.', 'Hossam works downstairs.'], correctIndex: 0, explanationAr: 'Under the name + اسم = الحجز متسجل بالاسم ده.' }
+    ],
+    speakingLines: [{ en: 'I have a reservation under the name Hossam.', arEg: 'عندي حجز باسم حسام.' }, { en: 'How many nights will you be staying with us?', arEg: 'هتقضي معانا كام ليلة؟' }],
+  },
+  {
+    id: 'grocery-shopping-panda',
+    movieTitle: 'Grocery Shopping Vocabulary at the Supermarket',
+    releaseYear: 2023,
+    director: 'English Panda',
+    genre: 'Daily English',
+    cefrLevel: 'A2',
+    sceneTitle: 'At the Supermarket',
+    sceneDescription: 'مشتريات السوبر ماركت: الأقسام، العربية، والدفع عند الكاشير.',
+    youtubeId: '9dVoa-oXZec',
+    startTime: 20,
+    endTime: 130,
+    clipDuration: '1:50',
+    videoSource: 'English Panda (Official)',
+    dialogueQuote: 'Where can I find the dairy section?',
+    actorName: 'Shopper',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/9dVoa-oXZec/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Panda Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Excuse me, where can I find the dairy section?', arEg: 'لو سمحت، فين قسم الألبان؟', arFusha: 'لو سمحت، فين قسم الألبان؟', speaker: 'Customer', keyWords: [{ word: 'dairy section', ipa: '', meaningAr: 'قسم الألبان', meaningEn: '' }, { word: 'where can I find', ipa: '', meaningAr: 'فين ألاقي', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It is in aisle five, next to the bakery.', arEg: 'في ممر 5 جنب المخبز.', arFusha: 'في ممر 5 جنب المخبز.', speaker: 'Staff', keyWords: [{ word: 'aisle', ipa: '', meaningAr: 'ممر', meaningEn: '' }, { word: 'next to', ipa: '', meaningAr: 'جنب', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Would you like a bag? That will be twenty-five pounds.', arEg: 'تحب كيس؟ هيكون 25 جنيه.', arFusha: 'تحب كيس؟ هيكون 25 جنيه.', speaker: 'Cashier', keyWords: [{ word: 'Would you like', ipa: '', meaningAr: 'تحب (عرض مهذب)', meaningEn: '' }, { word: 'That will be', ipa: '', meaningAr: 'هيكون (الحساب)', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'aisle', type: 'collocation', meaningAr: 'ممر بين الأرفف', meaningEn: '', egyptianEquivalent: 'ممر', exampleInScene: 'The rice is in aisle three.' },      { term: 'dairy', type: 'collocation', meaningAr: 'منتجات الألبان', meaningEn: '', egyptianEquivalent: 'ألبان', exampleInScene: 'Milk is in the dairy section.' },      { term: 'check out', type: 'phrasal-verb', meaningAr: 'يدفع الحساب', meaningEn: '', egyptianEquivalent: 'يحاسب عند الكاشير', exampleInScene: 'Let us check out now.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where is the dairy section?', questionAr: 'قسم الألبان فين؟', options: ['In aisle five, next to the bakery.', 'Under the cashier.', 'Outside the market.', 'In the car.'], correctIndex: 0, explanationAr: 'Aisle + رقم = الممر اللي هتلاقي فيه القسم.' }
+    ],
+    speakingLines: [{ en: 'Where can I find the dairy section?', arEg: 'فين قسم الألبان؟' }, { en: 'It is in aisle five, next to the bakery.', arEg: 'في ممر 5 جنب المخبز.' }],
+  },
+  {
+    id: 'gym-fitness-speaknative',
+    movieTitle: 'Gym and Fitness English Conversation',
+    releaseYear: 2023,
+    director: 'Speak Native English',
+    genre: 'Daily English',
+    cefrLevel: 'A2',
+    sceneTitle: 'At the Gym',
+    sceneDescription: 'في الجيم: تسأل عن الأجهزة، تعرف تتمرن صح، وتطلب مساعدة الكوتش.',
+    youtubeId: 'K1cM3KspJDU',
+    startTime: 25,
+    endTime: 135,
+    clipDuration: '1:50',
+    videoSource: 'Speak Native English (Official)',
+    dialogueQuote: 'Are you still using this machine?',
+    actorName: 'Member',
+    characterName: 'Gym Member',
+    thumbnailUrl: 'https://img.youtube.com/vi/K1cM3KspJDU/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak Native English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Excuse me, are you still using this machine?', arEg: 'لو سمحت، لسه بتستخدم الجهاز ده؟', arFusha: 'لو سمحت، لسه بتستخدم الجهاز ده؟', speaker: 'Member', keyWords: [{ word: 'still using', ipa: '', meaningAr: 'لسه بتستخدم', meaningEn: '' }, { word: 'machine', ipa: '', meaningAr: 'جهاز', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'No, I just finished my last set. Go ahead.', arEg: 'لأ، خلصت آخر سيت. اتفضل.', arFusha: 'لأ، خلصت آخر سيت. اتفضل.', speaker: 'Member 2', keyWords: [{ word: 'just finished', ipa: '', meaningAr: 'لسه خلاص', meaningEn: '' }, { word: 'set', ipa: '', meaningAr: 'سيت / مجموعة تكرارات', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Try to keep your back straight while lifting.', arEg: 'حاول تخلي ضهرك مستقيم وانت بتشيل.', arFusha: 'حاول تخلي ضهرك مستقيم وانت بتشيل.', speaker: 'Coach', keyWords: [{ word: 'keep your back straight', ipa: '', meaningAr: 'خلي ضهرك مستقيم', meaningEn: '' }, { word: 'while lifting', ipa: '', meaningAr: 'وانت بتشيل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'set', type: 'collocation', meaningAr: 'مجموعة تكرارات', meaningEn: '', egyptianEquivalent: 'سيت', exampleInScene: 'Three sets of ten reps.' },      { term: 'warm up', type: 'phrasal-verb', meaningAr: 'يسخن قبل التمرين', meaningEn: '', egyptianEquivalent: 'يسخن / يعمل إحماء', exampleInScene: 'Always warm up first.' },      { term: 'personal trainer', type: 'collocation', meaningAr: 'مدرب شخصي', meaningEn: '', egyptianEquivalent: 'كوتش خاص', exampleInScene: 'The personal trainer helped me.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you politely ask to use a machine?', questionAr: 'تسأل عن الجهاز بأدب إزاي؟', options: ['Are you still using this machine?', 'Move now, it is mine.', 'This machine is broken?', 'I take this, ok?'], correctIndex: 0, explanationAr: 'Are you still using + الشيء = أسأل بأدب قبل ما استخدم حاجة حد شاغلها.' }
+    ],
+    speakingLines: [{ en: 'Are you still using this machine?', arEg: 'لسه بتستخدم الجهاز ده؟' }, { en: 'No, I just finished my last set. Go ahead.', arEg: 'لأ، خلصت آخر سيت. اتفضل.' }],
+  },
+  {
+    id: 'cooking-volka',
+    movieTitle: 'Learn English Naturally While Cooking',
+    releaseYear: 2023,
+    director: 'Volka English',
+    genre: 'Daily English',
+    cefrLevel: 'B1',
+    sceneTitle: 'In the Kitchen',
+    sceneDescription: 'إنجليزي المطبخ: تقطع، تقلب، وتتبل — أوامر الطبخ الأساسية.',
+    youtubeId: 'u3Bh78fKu0Q',
+    startTime: 30,
+    endTime: 140,
+    clipDuration: '1:50',
+    videoSource: 'Volka English (Official)',
+    dialogueQuote: 'First, chop the onions and fry them gently.',
+    actorName: 'Chef',
+    characterName: 'Cook',
+    thumbnailUrl: 'https://img.youtube.com/vi/u3Bh78fKu0Q/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Volka English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'First, chop the onions and fry them gently.', arEg: 'الأول قطّع البصل وقلّبه على نار هادية.', arFusha: 'الأول قطّع البصل وقلّبه على نار هادية.', speaker: 'Cook', keyWords: [{ word: 'chop', ipa: '', meaningAr: 'قطّع', meaningEn: '' }, { word: 'gently', ipa: '', meaningAr: 'بهدوء / على نار هادية', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Add a pinch of salt and stir for two minutes.', arEg: 'ضيف رشة ملح وقلّب لمدة دقيقتين.', arFusha: 'ضيف رشة ملح وقلّب لمدة دقيقتين.', speaker: 'Cook', keyWords: [{ word: 'a pinch of salt', ipa: '', meaningAr: 'رشة ملح', meaningEn: '' }, { word: 'stir', ipa: '', meaningAr: 'قلّب', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Let it simmer until the sauce thickens.', arEg: 'سيبه يغلي على نار هادية لحد ما الصوص يتقل.', arFusha: 'سيبه يغلي على نار هادية لحد ما الصوص يتقل.', speaker: 'Cook', keyWords: [{ word: 'simmer', ipa: '', meaningAr: 'يغلي على نار هادية', meaningEn: '' }, { word: 'thickens', ipa: '', meaningAr: 'يتقل / يتثقل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'a pinch of', type: 'collocation', meaningAr: 'رشة من', meaningEn: '', egyptianEquivalent: 'رشة', exampleInScene: 'Add a pinch of pepper.' },      { term: 'stir', type: 'collocation', meaningAr: 'يقلب بالملعقة', meaningEn: '', egyptianEquivalent: 'يقلّب', exampleInScene: 'Stir the soup slowly.' },      { term: 'simmer', type: 'collocation', meaningAr: 'يغلي على نار هادية', meaningEn: '', egyptianEquivalent: 'يتسبك', exampleInScene: 'Let the sauce simmer.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you do first with the onions?', questionAr: 'تعمل إيه الأول في البصل؟', options: ['Chop them and fry them gently.', 'Boil them for an hour.', 'Freeze them overnight.', 'Throw them away.'], correctIndex: 0, explanationAr: 'Chop + fry gently = أساس أغلب الأكلات المصرية كمان.' }
+    ],
+    speakingLines: [{ en: 'First, chop the onions and fry them gently.', arEg: 'الأول قطّع البصل وقلّبه على نار هادية.' }, { en: 'Add a pinch of salt and stir for two minutes.', arEg: 'ضيف رشة ملح وقلّب لمدة دقيقتين.' }],
+  },
+  {
+    id: 'weather-conversation-speakeasy',
+    movieTitle: 'Weather Conversation - Easy English for Beginners',
+    releaseYear: 2023,
+    director: 'SpeakEasy Learn English Fast',
+    genre: 'Daily English',
+    cefrLevel: 'A1',
+    sceneTitle: 'Talking About the Weather',
+    sceneDescription: 'أشهر حوار إنجليزي على الإطلاق: الجو النهارده عامل إيه؟',
+    youtubeId: '8RsEIe_H-RY',
+    startTime: 20,
+    endTime: 130,
+    clipDuration: '1:50',
+    videoSource: 'SpeakEasy Learn English Fast (Official)',
+    dialogueQuote: 'It looks like it is going to rain.',
+    actorName: 'Friend',
+    characterName: 'Friend',
+    thumbnailUrl: 'https://img.youtube.com/vi/8RsEIe_H-RY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'SpeakEasy Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'What is the weather like today?', arEg: 'الجو عامل إيه النهارده؟', arFusha: 'الجو عامل إيه النهارده؟', speaker: 'Friend', keyWords: [{ word: 'What is ... like?', ipa: '', meaningAr: 'عامل إيه؟', meaningEn: '' }, { word: 'weather', ipa: '', meaningAr: 'الجو', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It is sunny but a bit windy.', arEg: 'مشمس بس فيه شوية هوا.', arFusha: 'مشمس بس فيه شوية هوا.', speaker: 'Friend 2', keyWords: [{ word: 'sunny', ipa: '', meaningAr: 'مشمس', meaningEn: '' }, { word: 'windy', ipa: '', meaningAr: 'فيه هوا', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'It looks like it is going to rain later.', arEg: 'شكله هيمطر بعدين.', arFusha: 'شكله هيمطر بعدين.', speaker: 'Friend', keyWords: [{ word: 'It looks like', ipa: '', meaningAr: 'شكله', meaningEn: '' }, { word: 'later', ipa: '', meaningAr: 'بعدين / بعد شوية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'windy', type: 'collocation', meaningAr: 'عاصف / فيه رياح', meaningEn: '', egyptianEquivalent: 'فيه هوا', exampleInScene: 'It is very windy today.' },      { term: 'It looks like', type: 'collocation', meaningAr: 'يبدو أن', meaningEn: '', egyptianEquivalent: 'شكله', exampleInScene: 'It looks like rain.' },      { term: 'clear up', type: 'phrasal-verb', meaningAr: 'يصحو الجو', meaningEn: '', egyptianEquivalent: 'الجو يفتح', exampleInScene: 'The sky will clear up soon.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about today\'s weather?', questionAr: 'تسأل عن الجو النهارده إزاي؟', options: ['What is the weather like today?', 'How is the sky doing?', 'Where is the weather?', 'Why is today hot?'], correctIndex: 0, explanationAr: 'What is ... like = سؤال ثابت عن الوصف، لازم يتحفظ كوحدة واحدة.' }
+    ],
+    speakingLines: [{ en: 'What is the weather like today?', arEg: 'الجو عامل إيه النهارده؟' }, { en: 'It looks like it is going to rain later.', arEg: 'شكله هيمطر بعدين.' }],
+  },
+  {
+    id: 'bank-account-english101',
+    movieTitle: 'At the Bank - Opening a Bank Account',
+    releaseYear: 2022,
+    director: 'English101',
+    genre: 'Daily English',
+    cefrLevel: 'B1',
+    sceneTitle: 'Opening a Bank Account',
+    sceneDescription: 'افتح حساب بنكي: نوع الحساب، الأوراق المطلوبة، والإيداع الأول.',
+    youtubeId: '15qgr9n1tcM',
+    startTime: 25,
+    endTime: 135,
+    clipDuration: '1:50',
+    videoSource: 'English101 (Official)',
+    dialogueQuote: 'I would like to open a savings account.',
+    actorName: 'Customer',
+    characterName: 'Bank Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/15qgr9n1tcM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English101 Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I would like to open a savings account, please.', arEg: 'عايز أفتح حساب توفير لو سمحت.', arFusha: 'عايز أفتح حساب توفير لو سمحت.', speaker: 'Customer', keyWords: [{ word: 'open an account', ipa: '', meaningAr: 'يفتح حساب', meaningEn: '' }, { word: 'savings account', ipa: '', meaningAr: 'حساب توفير', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Certainly. Do you have your ID and proof of address?', arEg: 'أكيد. معاك البطاقة وإثبات العنوان؟', arFusha: 'أكيد. معاك البطاقة وإثبات العنوان؟', speaker: 'Teller', keyWords: [{ word: 'Certainly', ipa: '', meaningAr: 'أكيد / اتفضل', meaningEn: '' }, { word: 'proof of address', ipa: '', meaningAr: 'إثبات عنوان', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Your account will be active within two business days.', arEg: 'حسابك هيكون شغال في خلال يومين شغل.', arFusha: 'حسابك هيكون شغال في خلال يومين شغل.', speaker: 'Teller', keyWords: [{ word: 'active', ipa: '', meaningAr: 'شغال / مفعل', meaningEn: '' }, { word: 'business days', ipa: '', meaningAr: 'أيام عمل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'savings account', type: 'collocation', meaningAr: 'حساب توفير', meaningEn: '', egyptianEquivalent: 'حساب توفير', exampleInScene: 'She opened a savings account.' },      { term: 'deposit', type: 'collocation', meaningAr: 'إيداع', meaningEn: '', egyptianEquivalent: 'إيداع فلوس', exampleInScene: 'The first deposit is 500 pounds.' },      { term: 'withdraw', type: 'collocation', meaningAr: 'يسحب فلوس', meaningEn: '', egyptianEquivalent: 'يسحب', exampleInScene: 'You can withdraw from any ATM.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What papers does the teller ask for?', questionAr: 'موظف البنك طلب إيه؟', options: ['ID and proof of address.', 'A photo with the manager.', 'A plane ticket.', 'A gym card.'], correctIndex: 0, explanationAr: 'ID + proof of address = أشهر ورقتين مطلوبين في أي بنك.' }
+    ],
+    speakingLines: [{ en: 'I would like to open a savings account, please.', arEg: 'عايز أفتح حساب توفير لو سمحت.' }, { en: 'Your account will be active within two business days.', arEg: 'حسابك هيكون شغال في خلال يومين شغل.' }],
+  },
+  {
+    id: 'asking-directions-keyconv',
+    movieTitle: 'Asking for Directions in English - Travel Conversation',
+    releaseYear: 2023,
+    director: 'Key to Conversation',
+    genre: 'Travel English',
+    cefrLevel: 'A2',
+    sceneTitle: 'Asking for Directions',
+    sceneDescription: 'تسأل عن طريق في الشارع: امشي على طول، خش يمين، هتلاقيه قدامك.',
+    youtubeId: 'oNEf8nldLfE',
+    startTime: 20,
+    endTime: 130,
+    clipDuration: '1:50',
+    videoSource: 'Key to Conversation (Official)',
+    dialogueQuote: 'Go straight ahead, then turn left at the traffic lights.',
+    actorName: 'Passerby',
+    characterName: 'Passerby',
+    thumbnailUrl: 'https://img.youtube.com/vi/oNEf8nldLfE/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Key to Conversation Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Excuse me, how do I get to the metro station?', arEg: 'لو سمحت، أروح محطة المترو إزاي؟', arFusha: 'لو سمحت، أروح محطة المترو إزاي؟', speaker: 'Tourist', keyWords: [{ word: 'How do I get to', ipa: '', meaningAr: 'أروح ... إزاي', meaningEn: '' }, { word: 'metro station', ipa: '', meaningAr: 'محطة المترو', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Go straight ahead, then turn left at the traffic lights.', arEg: 'امشي على طول، وبعدين خش شمال عند الإشارة.', arFusha: 'امشي على طول، وبعدين خش شمال عند الإشارة.', speaker: 'Passerby', keyWords: [{ word: 'straight ahead', ipa: '', meaningAr: 'على طول', meaningEn: '' }, { word: 'turn left', ipa: '', meaningAr: 'خش شمال', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'It is about a five-minute walk. You cannot miss it.', arEg: 'حوالي 5 دقايق مشي. مستحيل تتوه عنها.', arFusha: 'حوالي 5 دقايق مشي. مستحيل تتوه عنها.', speaker: 'Passerby', keyWords: [{ word: 'a five-minute walk', ipa: '', meaningAr: 'مشي 5 دقايق', meaningEn: '' }, { word: 'You cannot miss it', ipa: '', meaningAr: 'مستحيل تتوه عنها', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'turn left', type: 'collocation', meaningAr: 'انعطف يسارا', meaningEn: '', egyptianEquivalent: 'خش شمال', exampleInScene: 'Turn left at the corner.' },      { term: 'traffic lights', type: 'collocation', meaningAr: 'إشارة مرور', meaningEn: '', egyptianEquivalent: 'إشارة', exampleInScene: 'Stop at the traffic lights.' },      { term: 'You cannot miss it', type: 'collocation', meaningAr: 'لن تخطئه', meaningEn: '', egyptianEquivalent: 'مستحيل تتوه عنها', exampleInScene: 'It is the big building; you cannot miss it.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'go straight ahead\' mean?', questionAr: 'يعني إيه go straight ahead؟', options: ['Walk forward without turning.', 'Go back home.', 'Turn right quickly.', 'Take a taxi.'], correctIndex: 0, explanationAr: 'Straight ahead = على طول من غير ما تلف.' }
+    ],
+    speakingLines: [{ en: 'How do I get to the metro station?', arEg: 'أروح محطة المترو إزاي؟' }, { en: 'Go straight ahead, then turn left at the traffic lights.', arEg: 'امشي على طول، وبعدين خش شمال عند الإشارة.' }],
+  },
+  {
+    id: 'congratulations-eel',
+    movieTitle: 'How to Congratulate Someone in English',
+    releaseYear: 2023,
+    director: 'EEL - Everyday English Lab',
+    genre: 'Daily English',
+    cefrLevel: 'A2',
+    sceneTitle: 'Congratulating a Friend',
+    sceneDescription: 'صاحبك نجح أو اتجوز؟ اتعلم تهنّي بإنجليزي طبيعي مش مترجم حرفي.',
+    youtubeId: 'NrQmM1gzXZY',
+    startTime: 20,
+    endTime: 130,
+    clipDuration: '1:50',
+    videoSource: 'EEL - Everyday English Lab (Official)',
+    dialogueQuote: 'Congratulations! I am so happy for you.',
+    actorName: 'Friend',
+    characterName: 'Friend',
+    thumbnailUrl: 'https://img.youtube.com/vi/NrQmM1gzXZY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'EEL Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Congratulations! I am so happy for you.', arEg: 'مبروك! أنا فرحان ليك جدًا.', arFusha: 'مبروك! أنا فرحان ليك جدًا.', speaker: 'Friend', keyWords: [{ word: 'Congratulations', ipa: '', meaningAr: 'مبروك', meaningEn: '' }, { word: 'happy for you', ipa: '', meaningAr: 'فرحان ليك', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'You really deserve it. You worked so hard.', arEg: 'تستاهلها بجد. انت اتعبت كتير.', arFusha: 'تستاهلها بجد. انت اتعبت كتير.', speaker: 'Friend', keyWords: [{ word: 'deserve', ipa: '', meaningAr: 'يستاهل', meaningEn: '' }, { word: 'worked so hard', ipa: '', meaningAr: 'اتعبت كتير', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'We should celebrate this weekend!', arEg: 'لازم نحتفل الويك إند ده!', arFusha: 'لازم نحتفل الويك إند ده!', speaker: 'Friend', keyWords: [{ word: 'celebrate', ipa: '', meaningAr: 'نحتفل', meaningEn: '' }, { word: 'this weekend', ipa: '', meaningAr: 'الويك إند ده', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'deserve', type: 'collocation', meaningAr: 'يستحق', meaningEn: '', egyptianEquivalent: 'يستاهل', exampleInScene: 'You deserve the best.' },      { term: 'I am happy for you', type: 'collocation', meaningAr: 'أنا سعيد من أجلك', meaningEn: '', egyptianEquivalent: 'فرحان ليك', exampleInScene: 'I am so happy for you both.' },      { term: 'cheers to', type: 'collocation', meaningAr: 'نخب لـ', meaningEn: '', egyptianEquivalent: 'في صحتك / ليك', exampleInScene: 'Cheers to your success!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Your friend passed a hard exam. What do you say?', questionAr: 'صاحبك عدى امتحان صعب. تقوله إيه؟', options: ['Congratulations! You really deserve it.', 'Better luck next time.', 'Why were you late?', 'Exams are boring.'], correctIndex: 0, explanationAr: 'Congratulations + you deserve it = تهنئة كاملة بتحسس الشخص بقيمته.' }
+    ],
+    speakingLines: [{ en: 'Congratulations! I am so happy for you.', arEg: 'مبروك! أنا فرحان ليك جدًا.' }, { en: 'You really deserve it. You worked so hard.', arEg: 'تستاهلها بجد. انت اتعبت كتير.' }],
+  },
+  {
+    id: 'restaurant-complaint-lsle',
+    movieTitle: 'Customer Complaint in English - At a Restaurant',
+    releaseYear: 2023,
+    director: 'Listen, Speak & Learn English',
+    genre: 'Daily English',
+    cefrLevel: 'B1',
+    sceneTitle: 'Complaining Politely',
+    sceneDescription: 'الأكل ساقع أو الأوردر غلط؟ اتعلم تشتكي بأدب وتوصل لحقك.',
+    youtubeId: 'AyYTrZ5fz_E',
+    startTime: 25,
+    endTime: 135,
+    clipDuration: '1:50',
+    videoSource: 'Listen, Speak & Learn English (Official)',
+    dialogueQuote: 'Excuse me, this is not what I ordered.',
+    actorName: 'Customer',
+    characterName: 'Diner',
+    thumbnailUrl: 'https://img.youtube.com/vi/AyYTrZ5fz_E/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Listen Speak Learn English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Excuse me, this is not what I ordered.', arEg: 'لو سمحت، ده مش اللي أنا طلبته.', arFusha: 'لو سمحت، ده مش اللي أنا طلبته.', speaker: 'Diner', keyWords: [{ word: 'this is not what I ordered', ipa: '', meaningAr: 'ده مش طلبي', meaningEn: '' }, { word: 'ordered', ipa: '', meaningAr: 'طلبت', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am so sorry. I will fix it right away.', arEg: 'متأسف جدًا. هصلحه حالاً.', arFusha: 'متأسف جدًا. هصلحه حالاً.', speaker: 'Waiter', keyWords: [{ word: 'I am so sorry', ipa: '', meaningAr: 'متأسف جدًا', meaningEn: '' }, { word: 'right away', ipa: '', meaningAr: 'حالاً / على طول', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Could you also bring me some water, please?', arEg: 'ممكن كمان تجيبلي مية لو سمحت؟', arFusha: 'ممكن كمان تجيبلي مية لو سمحت؟', speaker: 'Diner', keyWords: [{ word: 'Could you bring me', ipa: '', meaningAr: 'ممكن تجيبلي', meaningEn: '' }, { word: 'please', ipa: '', meaningAr: 'لو سمحت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'right away', type: 'collocation', meaningAr: 'فورا', meaningEn: '', egyptianEquivalent: 'حالاً', exampleInScene: 'I will do it right away.' },      { term: 'mix-up', type: 'collocation', meaningAr: 'خلط / لخبطة', meaningEn: '', egyptianEquivalent: 'لخبطة', exampleInScene: 'There was a mix-up with the order.' },      { term: 'on the house', type: 'idiom', meaningAr: 'على حساب المكان', meaningEn: '', egyptianEquivalent: 'على حسابنا', exampleInScene: 'Dessert is on the house.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you start a polite complaint about food?', questionAr: 'تبدأ شكوى مهذبة عن الأكل إزاي؟', options: ['Excuse me, this is not what I ordered.', 'This food is garbage!', 'I will never pay!', 'Call the police now!'], correctIndex: 0, explanationAr: 'Excuse me + this is not what I ordered = شكوى محترمة بتوصل لنتيجة.' }
+    ],
+    speakingLines: [{ en: 'Excuse me, this is not what I ordered.', arEg: 'لو سمحت، ده مش اللي أنا طلبته.' }, { en: 'I am so sorry. I will fix it right away.', arEg: 'متأسف جدًا. هصلحه حالاً.' }],
+  },
 ];
 
 // Helper to get all videos
