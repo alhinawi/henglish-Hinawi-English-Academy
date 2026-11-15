@@ -88,6 +88,28 @@ export function consumeGoogleAuthCallback(): string | null {
   return error ? `error:${error}` : null;
 }
 
+export interface AdminOverview {
+  counts: { users: number; newUsers: number; sessions: number; progress: number };
+  recentUsers: { name: string; email: string; createdAt: string }[];
+  health: { database: boolean; google: boolean; origin: string; adminCount: number };
+  generatedAt: string;
+}
+
+// Server-checked admin overview. 401 = not signed in, 403 = signed in but not admin.
+export async function apiAdminOverview(
+  token: string
+): Promise<{ status: number; body: AdminOverview | null }> {
+  try {
+    const res = await fetch(`${API_BASE}/api/admin/overview`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (!res.ok) return { status: res.status, body: null };
+    return { status: res.status, body: (await res.json()) as AdminOverview };
+  } catch {
+    return { status: 0, body: null };
+  }
+}
+
 export async function apiGetMe(token: string): Promise<{ user: ApiUser } | null> {
   try {
     const res = await fetch(`${API_BASE}/api/me`, {
