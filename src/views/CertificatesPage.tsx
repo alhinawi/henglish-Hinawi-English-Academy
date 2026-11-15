@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { PageRoute, UserProfile } from "../types";
 import {
   CERTIFICATE_DEFINITIONS,
-  INITIAL_ISSUED_CERTIFICATES,
   IssuedCertificate,
   CertificateDefinition,
 } from "../data/certificatesData";
+import {
+  CertificateDocument,
+  CERT_WIDTH,
+  CERT_HEIGHT,
+} from "../components/CertificateDocument";
 import { playSound, fireCelebration } from "../utils/audio";
 import {
   Award,
@@ -35,24 +39,114 @@ interface CertificatesPageProps {
   completedLessonsCount: number;
 }
 
+const CERTS_STORAGE_KEY = "henglish_issued_certificates_v1";
+
 export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   onNavigate,
   userProfile,
   completedLessonsCount,
 }) => {
-  const [issuedCerts, setIssuedCerts] = useState<IssuedCertificate[]>(
-    INITIAL_ISSUED_CERTIFICATES,
-  );
+  // Issued certificates persist on this device so they survive reloads.
+  const [issuedCerts, setIssuedCerts] = useState<IssuedCertificate[]>(() => {
+    try {
+      const raw = localStorage.getItem(CERTS_STORAGE_KEY);
+      return raw ? (JSON.parse(raw) as IssuedCertificate[]) : [];
+    } catch {
+      return [];
+    }
+  });
+  // Preview certificate carries the REAL logged-in student's name, never a sample.
+  // Anonymous visitors get a neutral student label (no fake person, no guest identity).
+  const isAnonymous = userProfile.id === "guest-learner" || !userProfile.name;
+  const previewCertificate: IssuedCertificate = {
+    certificateId: "HEN-2026-PREVIEW",
+    studentNameAr: isAnonymous ? "طالب Henglish Academy" : userProfile.nameAr,
+    studentNameEn: isAnonymous ? "Henglish Student" : userProfile.name,
+    courseTitleAr:
+      CERTIFICATE_DEFINITIONS.find((d) => d.id === "cert-future-mastery")
+        ?.titleAr || CERTIFICATE_DEFINITIONS[0].titleAr,
+    courseTitleEn:
+      CERTIFICATE_DEFINITIONS.find((d) => d.id === "cert-future-mastery")
+        ?.titleEn || CERTIFICATE_DEFINITIONS[0].titleEn,
+    cefrLevel:
+      CERTIFICATE_DEFINITIONS.find((d) => d.id === "cert-future-mastery")
+        ?.cefrLevel || CERTIFICATE_DEFINITIONS[0].cefrLevel,
+    issueDate: new Date().toISOString().split("T")[0],
+    verificationCode: "HEN-2026-PREVIEW",
+    finalScorePercentage: 100,
+    status: "valid",
+    instructorName: "Mr. Hinawi • Chief Academic Director",
+  };
   const [selectedCertificate, setSelectedCertificate] =
-    useState<IssuedCertificate | null>(INITIAL_ISSUED_CERTIFICATES[0]);
+    useState<IssuedCertificate | null>(null);
+  const displayedCertificate = selectedCertificate ?? issuedCerts[0] ?? previewCertificate;
   const [searchVerifyCode, setSearchVerifyCode] = useState("");
   const [verificationResult, setVerificationResult] = useState<
     IssuedCertificate | null | "not-found"
   >(null);
 
-  const handlePrintCertificate = () => {
+  const certSheetRef = useRef<HTMLDivElement>(null);
+  const certViewportRef = useRef<HTMLDivElement>(null);
+  const [certScale, setCertScale] = useState(0.35);
+  const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+
+  useEffect(() => {
+    const update = () => {
+      const w = certViewportRef.current?.offsetWidth;
+      if (w) setCertScale(Math.min(1, w / CERT_WIDTH));
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  // Real A4-landscape PDF: the certificate sheet is rendered at 2x resolution
+  // and embedded into a true PDF file (no print dialog, no screenshots).
+  const handleDownloadPdf = async () => {
+    if (!certSheetRef.current || isGeneratingPdf) return;
     playSound("click");
-    window.print();
+    setIsGeneratingPdf(true);
+    try {
+      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
+        import("html2canvas"),
+        import("jspdf"),
+      ]);
+      const canvas = await html2canvas(certSheetRef.current, {
+        scale: 2,
+        backgroundColor: "#0c0b20",
+        logging: false,
+        useCORS: true,
+      });
+      const pdf = new jsPDF({
+        orientation: "landscape",
+        unit: "mm",
+        format: "a4",
+      });
+      pdf.addImage(
+        canvas.toDataURL("image/jpeg", 0.92),
+        "JPEG",
+        0,
+        0,
+        297,
+        210,
+      );
+      pdf.setProperties({
+        title: `Henglish Academy Certificate - ${displayedCertificate.courseTitleEn}`,
+        author: "Henglish Academy",
+        subject: displayedCertificate.certificateId,
+      });
+      const safeName = displayedCertificate.studentNameEn
+        .trim()
+        .replace(/\s+/g, "-")
+        .replace(/[^\w\-\u0600-\u06FF]/g, "");
+      pdf.save(`Henglish-Academy-Certificate-${safeName}.pdf`);
+      playSound("correct");
+    } catch (err) {
+      console.error("PDF generation failed", err);
+      playSound("wrong");
+    } finally {
+      setIsGeneratingPdf(false);
+    }
   };
 
   const handleVerifySearch = () => {
@@ -90,7 +184,15 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
       instructorName: "Mr. Hinawi • Chief Academic Director",
     };
 
-    setIssuedCerts((prev) => [newCert, ...prev]);
+    setIssuedCerts((prev) => {
+      const next = [newCert, ...prev];
+      try {
+        localStorage.setItem(CERTS_STORAGE_KEY, JSON.stringify(next));
+      } catch {
+        // storage unavailable; keep in-memory only
+      }
+      return next;
+    });
     setSelectedCertificate(newCert);
   };
 
@@ -131,7 +233,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               </span>
             </h3>
             <p className="text-xs text-[#b9b6d5]">
-              أدخل كود الشهادة الفريد (مثال: HEN-2026-FP-8492) للتحقق الفوري من
+              أدخل كود الشهادة الفريد (مثال: HEN-2026-B2-1234) للتحقق الفوري من
               مصداقيتها وتاريخ إصدارها.
             </p>
           </div>
@@ -143,7 +245,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               lang="en"
               value={searchVerifyCode}
               onChange={(e) => setSearchVerifyCode(e.target.value)}
-              placeholder="e.g. HEN-2026-FP-8492"
+              placeholder="e.g. HEN-2026-B2-1234"
               className="english-input px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-mono text-xs uppercase focus:outline-none focus:border-[#41e7ff] w-full sm:w-56"
             />
             <button
@@ -191,125 +293,55 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
         )}
       </section>
 
-      {/* 3. ACTIVE CERTIFICATE LUXURY RENDERER (PRINTABLE) */}
-      {selectedCertificate && (
-        <section className="space-y-4">
-          <div className="flex items-center justify-between">
-            <h3 className="text-xl font-black text-white flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-[#ffd166]" />
-              <span>معاينة الشهادة المعتمدة</span>
-            </h3>
+      {/* 3. ACTIVE CERTIFICATE LUXURY RENDERER (REAL A4 PDF DOWNLOAD) */}
+      <section className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h3 className="text-xl font-black text-white flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-[#ffd166]" />
+            <span>معاينة الشهادة المعتمدة</span>
+          </h3>
 
-            <button
-              onClick={handlePrintCertificate}
-              className="px-5 py-2.5 rounded-xl bg-[#ffd166] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
-            >
-              <Printer className="w-4 h-4" />
-              <span>طباعة / حفظ كملف PDF</span>
-            </button>
+          <button
+            onClick={handleDownloadPdf}
+            disabled={isGeneratingPdf}
+            className="px-5 py-2.5 rounded-xl bg-[#ffd166] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2 disabled:opacity-60"
+          >
+            <Printer className="w-4 h-4" />
+            <span>{isGeneratingPdf ? "جاري تجهيز ملف PDF..." : "تحميل الشهادة PDF"}</span>
+          </button>
+        </div>
+
+        {/* On-screen preview: the exact A4 sheet, scaled to fit the screen */}
+        <div
+          ref={certViewportRef}
+          className="relative w-full overflow-hidden rounded-3xl border-2 border-[#ffd166]/40 shadow-[0_0_50px_rgba(255,209,102,0.15)]"
+          style={{ height: CERT_HEIGHT * certScale }}
+        >
+          <div
+            dir="ltr"
+            style={{
+              position: "absolute",
+              left: 0,
+              top: 0,
+              width: CERT_WIDTH,
+              transform: `scale(${certScale})`,
+              transformOrigin: "top left",
+            }}
+          >
+            <CertificateDocument cert={displayedCertificate} />
           </div>
+        </div>
 
-          {/* Decorative Certificate Frame */}
-          <div className="relative rounded-3xl bg-linear-to-br from-[#121128] via-[#1a1738] to-[#0c0b20] p-6 sm:p-12 border-4 border-[#ffd166]/60 shadow-[0_0_50px_rgba(255,209,102,0.15)] text-center space-y-6">
-            {/* Corner Decorative Accents */}
-            <div className="absolute top-4 left-4 text-xs font-mono text-[#ffd166]/50">
-             
-            </div>
-            <div className="absolute top-4 right-4 text-xs font-mono text-[#ffd166]/50">
-             
-            </div>
-            <div className="absolute bottom-4 left-4 text-xs font-mono text-[#ffd166]/50">
-             
-            </div>
-            <div className="absolute bottom-4 right-4 text-xs font-mono text-[#ffd166]/50">
-             
-            </div>
-
-            {/* Header Logos & Crest */}
-            <div className="space-y-2">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] p-0.5 shadow-xl">
-                <div className="w-full h-full bg-[#171632] rounded-[14px] flex items-center justify-center">
-                  <GraduationCap className="w-8 h-8 text-[#ffd166]" />
-                </div>
-              </div>
-              <h2 className="text-xl sm:text-2xl font-black tracking-wider text-[#ffd166] uppercase font-serif">
-                Henglish Academy
-              </h2>
-              <div className="text-xs text-[#b9b6d5] font-mono tracking-widest uppercase">
-                Certificate of Academic Achievement
-              </div>
-            </div>
-
-            {/* Certificate Body */}
-            <div className="space-y-3 max-w-2xl mx-auto py-4">
-              <p className="text-xs text-[#dedbf4]">
-                This is to proudly certify that
-              </p>
-              <div className="text-3xl sm:text-4xl font-black text-white font-serif tracking-wide border-b border-[#ffd166]/40 pb-2 inline-block px-8">
-                {selectedCertificate.studentNameEn}
-              </div>
-              <div className="text-lg font-bold text-[#ffd166]">
-                {selectedCertificate.studentNameAr}
-              </div>
-              <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed pt-2">
-                has successfully completed all requirements, practical
-                assessments, and masterclass examinations for:
-              </p>
-              <div className="text-xl sm:text-2xl font-black text-[#41e7ff]">
-                {selectedCertificate.courseTitleEn}
-              </div>
-              <div className="text-xs font-semibold text-[#b9b6d5]">
-                {selectedCertificate.courseTitleAr} • CEFR Level:{" "}
-                {selectedCertificate.cefrLevel}
-              </div>
-            </div>
-
-            {/* Seals & Signatures */}
-            <div className="pt-6 border-t border-white/10 grid grid-cols-1 sm:grid-cols-3 gap-6 items-center text-xs">
-              <div className="space-y-1">
-                <span className="text-[10px] text-[#b9b6d5] block">
-                  Date of Issuance:
-                </span>
-                <span className="font-mono font-bold text-white">
-                  {selectedCertificate.issueDate}
-                </span>
-              </div>
-
-              {/* Academy Embossed Seal */}
-              <div className="flex flex-col items-center justify-center">
-                <div className="w-16 h-16 rounded-full border-2 border-dashed border-[#ffd166] flex flex-col items-center justify-center text-[9px] font-black text-[#ffd166] uppercase shadow-lg">
-                  <span>Official</span>
-                  <span>Seal</span>
-                </div>
-              </div>
-
-              <div className="space-y-1">
-                <span className="text-[10px] text-[#b9b6d5] block">
-                  Authorized Signature:
-                </span>
-                <span className="font-serif italic font-bold text-[#ffd166] text-sm block">
-                  Mr. Hinawi
-                </span>
-                <span className="text-[9px] text-[#b9b6d5]">
-                  Chief Academic Director
-                </span>
-              </div>
-            </div>
-
-            {/* Verification Footer & Legal Disclaimer */}
-            <div className="pt-4 text-[10px] text-[#b9b6d5]/70 space-y-1 border-t border-white/5">
-              <div className="font-mono text-[#ffd166]">
-                Verification ID: {selectedCertificate.verificationCode}
-              </div>
-              <div>
-                تنويه: هذه الشهادة توثق الإنجاز الأكاديمي الداخلي لمقررات منصة
-                Henglish Academy، ولا تدعي أنها بديل عن اختبارات الهيئات الحكومية
-                أو شهادات IELTS/TOEFL الرسمية.
-              </div>
-            </div>
+        {/* Off-screen full-size sheet used for the actual PDF capture */}
+        <div
+          aria-hidden="true"
+          style={{ position: "fixed", left: -20000, top: 0, pointerEvents: "none" }}
+        >
+          <div ref={certSheetRef}>
+            <CertificateDocument cert={displayedCertificate} />
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* 4. ALL AVAILABLE CERTIFICATES CATALOG & PROGRESS */}
       <section className="space-y-4">
