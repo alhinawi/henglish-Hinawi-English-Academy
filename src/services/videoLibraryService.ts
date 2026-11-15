@@ -8283,6 +8283,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'How often do you play football?', arEg: 'بتلعب كورة كام مرة؟' }, { en: 'I play twice a week with my friends.', arEg: 'بلعب مرتين في الأسبوع مع صحابي.' }],
   },
+  {
+    id: 'news-bbc-social-media-source',
+    movieTitle: 'Social Media More Popular News Source Than TV - BBC Learning English from the News',
+    releaseYear: 2024,
+    director: 'BBC Learning English',
+    genre: 'News English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Understand a News Story',
+    sceneDescription: 'بي بي سي بتشرح خبر حقيقي: السوشيال ميديا بقت مصدر الأخبار الأول.',
+    youtubeId: 'qRsLwL9lJQg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'More people now get their news from social media than from television.',
+    actorName: 'BBC Hosts',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/qRsLwL9lJQg/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'More people now get their news from social media than from television.', arEg: 'ناس أكتر دلوقتي بتاخد أخبارها من السوشيال ميديا أكتر من التلفزيون.', arFusha: 'ناس أكتر دلوقتي بتاخد أخبارها من السوشيال ميديا أكتر من التلفزيون.', speaker: 'Host', keyWords: [{ word: 'get their news', ipa: '', meaningAr: 'بياخدوا أخبارهم', meaningEn: '' }, { word: 'more... than', ipa: '', meaningAr: 'أكتر من', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Traditional media outlets are losing ground.', arEg: 'وسائل الإعلام التقليدية بتخسر مكانتها.', arFusha: 'وسائل الإعلام التقليدية بتخسر مكانتها.', speaker: 'Host', keyWords: [{ word: 'outlets', ipa: '', meaningAr: 'وسائل / منصات', meaningEn: '' }, { word: 'losing ground', ipa: '', meaningAr: 'بتخسر مكانتها', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Experts warn that misinformation spreads quickly online.', arEg: 'الخبراء بيحذروا إن الأخبار الكاذبة بينتشر بسرعة أونلاين.', arFusha: 'الخبراء بيحذروا إن الأخبار الكاذبة بينتشر بسرعة أونلاين.', speaker: 'Host', keyWords: [{ word: 'misinformation', ipa: '', meaningAr: 'معلومات مضللة', meaningEn: '' }, { word: 'spreads', ipa: '', meaningAr: 'بينتشر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'headline', type: 'cultural', meaningAr: 'عنوان رئيسي', meaningEn: '', egyptianEquivalent: 'عنوان خبر', exampleInScene: 'Did you read the headlines today?' },      { term: 'misinformation', type: 'cultural', meaningAr: 'معلومات مضللة', meaningEn: '', egyptianEquivalent: 'أخبار كاذبة', exampleInScene: 'Misinformation spreads fast.' },      { term: 'source', type: 'cultural', meaningAr: 'مصدر', meaningEn: '', egyptianEquivalent: 'مصدر', exampleInScene: 'Check your news sources.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'losing ground\' mean in the news story?', questionAr: 'يعني إيه losing ground في الخبر؟', options: ['بتخسر مكانتها وشعبيتها', 'بتكسب فلوس', 'بتنتقل لمكان جديد', 'بتقفل نهائي'], correctIndex: 0, explanationAr: 'Lose ground = تخسر تقدمك أو مكانتك قدام منافس - تعبير شائع جدًا في الأخبار.' }
+    ],
+    speakingLines: [{ en: 'More people now get their news from social media than from television.', arEg: 'ناس أكتر دلوقتي بتاخد أخبارها من السوشيال ميديا أكتر من التلفزيون.' }, { en: 'Experts warn that misinformation spreads quickly online.', arEg: 'الخبراء بيحذروا إن الأخبار الكاذبة بينتشر بسرعة أونلاين.' }],
+  },
+  {
+    id: 'news-bbc-air-india-report',
+    movieTitle: 'Air India Crash Report Doubts - BBC Learning English from the News',
+    releaseYear: 2024,
+    director: 'BBC Learning English',
+    genre: 'News English',
+    cefrLevel: 'B2',
+    sceneTitle: 'News Vocabulary in Context',
+    sceneDescription: 'خبر عن تقرير طيران ومفرداته: تحقيق، شكوك، وأدلة - بشرح مبسط.',
+    youtubeId: 'hQ6SI8Rtp8U',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Investigators have raised doubts about the initial findings.',
+    actorName: 'BBC Hosts',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/hQ6SI8Rtp8U/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Investigators have raised doubts about the initial findings.', arEg: 'المحققين عندهم شكوك في النتايج الأولية.', arFusha: 'المحققين عندهم شكوك في النتايج الأولية.', speaker: 'Host', keyWords: [{ word: 'raised doubts', ipa: '', meaningAr: 'عندهم شكوك', meaningEn: '' }, { word: 'initial findings', ipa: '', meaningAr: 'نتايج أولية', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The report has not yet been made public.', arEg: 'التقرير لسه معملوش متاح للناس.', arFusha: 'التقرير لسه معملوش متاح للناس.', speaker: 'Host', keyWords: [{ word: 'not yet', ipa: '', meaningAr: 'لسه', meaningEn: '' }, { word: 'made public', ipa: '', meaningAr: 'متاح للناس', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Families are calling for a full investigation.', arEg: 'الأهالي بيطالبوا بتحقيق كامل.', arFusha: 'الأهالي بيطالبوا بتحقيق كامل.', speaker: 'Host', keyWords: [{ word: 'calling for', ipa: '', meaningAr: 'بيطالبوا بـ', meaningEn: '' }, { word: 'investigation', ipa: '', meaningAr: 'تحقيق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'raise doubts', type: 'collocation', meaningAr: 'إثارة شكوك', meaningEn: '', egyptianEquivalent: 'يكون عنده شكوك', exampleInScene: 'The results raised doubts.' },      { term: 'findings', type: 'cultural', meaningAr: 'نتائج', meaningEn: '', egyptianEquivalent: 'نتايج تحقيق', exampleInScene: 'The findings were surprising.' },      { term: 'call for', type: 'phrasal-verb', meaningAr: 'يطالب بـ', meaningEn: '', egyptianEquivalent: 'يطالب بـ', exampleInScene: 'They called for change.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'call for an investigation\' mean?', questionAr: 'يعني إيه call for an investigation؟', options: ['يطالبوا بتحقيق', 'يتصلوا بالمحقق', 'يلغوا التحقيق', 'يكتبوا التقرير'], correctIndex: 0, explanationAr: 'Call for = يطالب رسميًا بشيء - تعبير صحفي مهم جدًا في الأخبار.' }
+    ],
+    speakingLines: [{ en: 'Investigators have raised doubts about the initial findings.', arEg: 'المحققين عندهم شكوك في النتايج الأولية.' }, { en: 'Families are calling for a full investigation.', arEg: 'الأهالي بيطالبوا بتحقيق كامل.' }],
+  },
+  {
+    id: 'films-talk-bbc-real-easy',
+    movieTitle: 'Talking About Films - Real Easy English - BBC Learning English',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Recommend a Film',
+    sceneDescription: 'كلام بسيط عن الأفلام: نوع الفيلم، نجومك المفضلين، وترشح فيلم لحد.',
+    youtubeId: 'BSABmr8hX7s',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'What kind of films are you into?',
+    actorName: 'BBC Hosts',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/BSABmr8hX7s/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'What kind of films are you into?', arEg: 'بتعجبك أفلام من نوع إيه؟', arFusha: 'بتعجبك أفلام من نوع إيه؟', speaker: 'Host', keyWords: [{ word: 'kind of', ipa: '', meaningAr: 'نوع', meaningEn: '' }, { word: 'be into', ipa: '', meaningAr: 'تحب / تهتم بـ', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I am really into comedies. They always make me laugh.', arEg: 'أنا بحب الكوميديا جدًا. دايمًا بتضحكني.', arFusha: 'أنا بحب الكوميديا جدًا. دايمًا بتضحكني.', speaker: 'Host', keyWords: [{ word: 'comedies', ipa: '', meaningAr: 'أفلام كوميدية', meaningEn: '' }, { word: 'make me laugh', ipa: '', meaningAr: 'بتضحكني', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'You should definitely check it out.', arEg: 'لازم تتفرج عليه أكيد.', arFusha: 'لازم تتفرج عليه أكيد.', speaker: 'Host', keyWords: [{ word: 'definitely', ipa: '', meaningAr: 'أكيد', meaningEn: '' }, { word: 'check it out', ipa: '', meaningAr: 'تتفرج عليه', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'be into', type: 'phrasal-verb', meaningAr: 'يحب', meaningEn: '', egyptianEquivalent: 'يحب / يهتم بـ', exampleInScene: 'I am into horror films.' },      { term: 'genre', type: 'cultural', meaningAr: 'نوع فني', meaningEn: '', egyptianEquivalent: 'نوع الفيلم', exampleInScene: 'What genre do you prefer?' },      { term: 'check out', type: 'phrasal-verb', meaningAr: 'يتفقد', meaningEn: '', egyptianEquivalent: 'يتفرج على / يجرب', exampleInScene: 'Check out this new series.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you recommend a film casually?', questionAr: 'ترشح فيلم لحد بطريقة ودية إزاي؟', options: ['You should definitely check it out.', 'Watch it or else', 'It is mandatory viewing', 'You will see this film'], correctIndex: 0, explanationAr: 'You should check it out = ترشيح ودي وطبيعي - بيستخدمه النيتيف كل يوم.' }
+    ],
+    speakingLines: [{ en: 'What kind of films are you into?', arEg: 'بتعجبك أفلام من نوع إيه؟' }, { en: 'You should definitely check it out.', arEg: 'لازم تتفرج عليه أكيد.' }],
+  },
+  {
+    id: 'movies-music-talk-spake',
+    movieTitle: 'How to Talk About Movies and Music in English - Easy Speaking',
+    releaseYear: 2023,
+    director: 'Talk With Spake',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Share Your Taste',
+    sceneDescription: 'تتكلم عن ذوقك في الأفلام والموسيقى وتسأل عن ذوق غيرك.',
+    youtubeId: 'rAndzSQbBxE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Talk With Spake (Official)',
+    dialogueQuote: 'That song has been stuck in my head all week.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/rAndzSQbBxE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Talk With Spake Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'That song has been stuck in my head all week.', arEg: 'الأغنية دي ماسكة في دماغي الأسبوع ده كله.', arFusha: 'الأغنية دي ماسكة في دماغي الأسبوع ده كله.', speaker: 'Speaker', keyWords: [{ word: 'stuck in my head', ipa: '', meaningAr: 'ماسكة في دماغي', meaningEn: '' }, { word: 'all week', ipa: '', meaningAr: 'الأسبوع كله', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am not really a fan of action movies.', arEg: 'أنا مش من عشاق أفلام الأكشن قوي.', arFusha: 'أنا مش من عشاق أفلام الأكشن قوي.', speaker: 'Speaker', keyWords: [{ word: 'not really', ipa: '', meaningAr: 'مش قوي', meaningEn: '' }, { word: 'a fan of', ipa: '', meaningAr: 'من عشاق', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Have you heard their new album yet?', arEg: 'سمعت الألبوم الجديد بتاعهم ولا لسه؟', arFusha: 'سمعت الألبوم الجديد بتاعهم ولا لسه؟', speaker: 'Speaker', keyWords: [{ word: 'album', ipa: '', meaningAr: 'ألبوم', meaningEn: '' }, { word: 'yet', ipa: '', meaningAr: 'لسه', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'stuck in my head', type: 'idiom', meaningAr: 'عالقة في الرأس', meaningEn: '', egyptianEquivalent: 'ماسكة في دماغي', exampleInScene: 'This tune is stuck in my head.' },      { term: 'a fan of', type: 'collocation', meaningAr: 'معجب بـ', meaningEn: '', egyptianEquivalent: 'من عشاق', exampleInScene: 'I am a big fan of her voice.' },      { term: 'album', type: 'cultural', meaningAr: 'ألبوم', meaningEn: '', egyptianEquivalent: 'ألبوم', exampleInScene: 'Their new album is out.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'stuck in my head\' mean about a song?', questionAr: 'يعني إيه الأغنية stuck in my head؟', options: ['مش قادر أنساها وبرددها', 'مش عاجباني', 'صوتها عالي', 'نسيت كلماتها'], correctIndex: 0, explanationAr: 'Stuck in my head = أغنية عالقة في دماغك بترددها من غير ما تحس - تعبير يومي ممتع.' }
+    ],
+    speakingLines: [{ en: 'That song has been stuck in my head all week.', arEg: 'الأغنية دي ماسكة في دماغي الأسبوع ده كله.' }, { en: 'Have you heard their new album yet?', arEg: 'سمعت الألبوم الجديد بتاعهم ولا لسه؟' }],
+  },
+  {
+    id: 'professional-emails-engvid',
+    movieTitle: 'How to Write Professional Emails in English - engVid',
+    releaseYear: 2021,
+    director: 'English with Alex - engVid',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Write Emails That Get Answers',
+    sceneDescription: 'أليكس بيعلمك تكتب إيميل شغل محترف: افتتاحية، طلب، وختام مهذب.',
+    youtubeId: '3Tu1jN65slw',
+    startTime: 35,
+    endTime: 155,
+    clipDuration: '2:00',
+    videoSource: 'English with Alex - engVid (Official)',
+    dialogueQuote: 'I am writing to follow up on our meeting last week.',
+    actorName: 'Alex',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/3Tu1jN65slw/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 40, end: 55, en: 'I am writing to follow up on our meeting last week.', arEg: 'بكتب عشان أتابع موضوع الاجتماع اللي فات.', arFusha: 'بكتب عشان أتابع موضوع الاجتماع اللي فات.', speaker: 'Instructor', keyWords: [{ word: 'I am writing to', ipa: '', meaningAr: 'بكتب عشان', meaningEn: '' }, { word: 'follow up on', ipa: '', meaningAr: 'أتابع', meaningEn: '' }] },      { id: 'sub-2', start: 65, end: 80, en: 'Could you please send me the report by Friday?', arEg: 'ممكن لو سمحت تبعتلي التقرير قبل يوم الجمعة؟', arFusha: 'ممكن لو سمحت تبعتلي التقرير قبل يوم الجمعة؟', speaker: 'Instructor', keyWords: [{ word: 'could you please', ipa: '', meaningAr: 'ممكن لو سمحت', meaningEn: '' }, { word: 'by Friday', ipa: '', meaningAr: 'قبل يوم الجمعة', meaningEn: '' }] },      { id: 'sub-3', start: 90, end: 105, en: 'Please do not hesitate to contact me if you have any questions.', arEg: 'متترددش تتواصل معايا لو عندك أي أسئلة.', arFusha: 'متترددش تتواصل معايا لو عندك أي أسئلة.', speaker: 'Instructor', keyWords: [{ word: 'do not hesitate', ipa: '', meaningAr: 'متترددش', meaningEn: '' }, { word: 'contact me', ipa: '', meaningAr: 'تتواصل معايا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'follow up', type: 'phrasal-verb', meaningAr: 'يتابع', meaningEn: '', egyptianEquivalent: 'يتابع موضوع', exampleInScene: 'I will follow up tomorrow.' },      { term: 'attachment', type: 'cultural', meaningAr: 'مرفق', meaningEn: '', egyptianEquivalent: 'مرفق', exampleInScene: 'Please find the attachment.' },      { term: 'do not hesitate', type: 'collocation', meaningAr: 'لا تتردد', meaningEn: '', egyptianEquivalent: 'متترددش', exampleInScene: 'Do not hesitate to ask.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which line opens a professional email best?', questionAr: 'أنهي جملة تفتح بيها إيميل شغل؟', options: ['I am writing to follow up on our meeting.', 'Hey what is up', 'Yo send me that thing', 'Listen to me now'], correctIndex: 0, explanationAr: 'I am writing to... = الافتتاحية الرسمية الذهبية - بتوضح هدف الإيميل من أول سطر.' }
+    ],
+    speakingLines: [{ en: 'I am writing to follow up on our meeting last week.', arEg: 'بكتب عشان أتابع موضوع الاجتماع اللي فات.' }, { en: 'Please do not hesitate to contact me if you have any questions.', arEg: 'متترددش تتواصل معايا لو عندك أي أسئلة.' }],
+  },
+  {
+    id: 'formal-email-structure-howto',
+    movieTitle: 'How to Write a Formal Email - Professional Email Structure',
+    releaseYear: 2023,
+    director: 'how to English',
+    genre: 'Writing Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Build a Formal Email Step by Step',
+    sceneDescription: 'هيكل الإيميل الرسمي: عنوان واضح، تحية، جسم مختصر، وإمضاء صح.',
+    youtubeId: '5yAL98Hci6I',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'how to English (Official)',
+    dialogueQuote: 'Dear Mr. Hassan, I hope this email finds you well.',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/5yAL98Hci6I/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'how to English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Dear Mr. Hassan, I hope this email finds you well.', arEg: 'أستاذ حسن المحترم، أتمنى تكون بخير.', arFusha: 'أستاذ حسن المحترم، أتمنى تكون بخير.', speaker: 'Instructor', keyWords: [{ word: 'dear', ipa: '', meaningAr: 'عزيزي / أستاذ', meaningEn: '' }, { word: 'finds you well', ipa: '', meaningAr: 'تكون بخير', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I look forward to hearing from you soon.', arEg: 'مستني رد منك قريب.', arFusha: 'مستني رد منك قريب.', speaker: 'Instructor', keyWords: [{ word: 'look forward to', ipa: '', meaningAr: 'مستني بشوق', meaningEn: '' }, { word: 'hearing from you', ipa: '', meaningAr: 'رد منك', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Best regards, Mohamed Alhinawi.', arEg: 'مع أطيب التحيات، محمد الحناوي.', arFusha: 'مع أطيب التحيات، محمد الحناوي.', speaker: 'Instructor', keyWords: [{ word: 'best regards', ipa: '', meaningAr: 'أطيب التحيات', meaningEn: '' }, { word: 'regards', ipa: '', meaningAr: 'تحيات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'subject line', type: 'collocation', meaningAr: 'سطر العنوان', meaningEn: '', egyptianEquivalent: 'عنوان الإيميل', exampleInScene: 'Write a clear subject line.' },      { term: 'look forward to', type: 'collocation', meaningAr: 'يتطلع إلى', meaningEn: '', egyptianEquivalent: 'مستني بشوق', exampleInScene: 'I look forward to your reply.' },      { term: 'best regards', type: 'collocation', meaningAr: 'مع خالص التحية', meaningEn: '', egyptianEquivalent: 'أطيب التحيات', exampleInScene: 'End with \'Best regards\'.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What comes right before your name in a formal email?', questionAr: 'إيه اللي بيجي قبل اسمك في الإيميل الرسمي؟', options: ['Best regards', 'Hey there', 'LOL', 'Whatever'], correctIndex: 0, explanationAr: 'Best regards / Kind regards = الختام الرسمي - بعده اسمك على طول.' }
+    ],
+    speakingLines: [{ en: 'Dear Mr. Hassan, I hope this email finds you well.', arEg: 'أستاذ حسن المحترم، أتمنى تكون بخير.' }, { en: 'I look forward to hearing from you soon.', arEg: 'مستني رد منك قريب.' }],
+  },
+  {
+    id: 'driving-car-vocab-engvid',
+    movieTitle: 'Driving in English - Car and Road Vocabulary - engVid',
+    releaseYear: 2021,
+    director: 'Adam\'s English Lessons - engVid',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Talk About Driving Like a Native',
+    sceneDescription: 'مفردات العربية والطريق: بنزين، إشارات، زحمة، ومواقف.',
+    youtubeId: 'a5nFBQ5H62U',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Adam\'s English Lessons - engVid (Official)',
+    dialogueQuote: 'I got stuck in traffic on my way to work.',
+    actorName: 'Adam',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/a5nFBQ5H62U/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I got stuck in traffic on my way to work.', arEg: 'اتعلقت في الزحمة وأنا في طريقي للشغل.', arFusha: 'اتعلقت في الزحمة وأنا في طريقي للشغل.', speaker: 'Instructor', keyWords: [{ word: 'got stuck', ipa: '', meaningAr: 'اتعلقت', meaningEn: '' }, { word: 'traffic', ipa: '', meaningAr: 'زحمة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'You need to fill up the tank before the trip.', arEg: 'لازم تفول التنك قبل السفرية.', arFusha: 'لازم تفول التنك قبل السفرية.', speaker: 'Instructor', keyWords: [{ word: 'fill up the tank', ipa: '', meaningAr: 'تفول التنك', meaningEn: '' }, { word: 'before the trip', ipa: '', meaningAr: 'قبل السفرية', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'He ran a red light and got a ticket.', arEg: 'عدى الإشارة وهي حمرا واتعمله مخالفة.', arFusha: 'عدى الإشارة وهي حمرا واتعمله مخالفة.', speaker: 'Instructor', keyWords: [{ word: 'ran a red light', ipa: '', meaningAr: 'عدى إشارة حمرا', meaningEn: '' }, { word: 'got a ticket', ipa: '', meaningAr: 'اتعمله مخالفة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'stuck in traffic', type: 'collocation', meaningAr: 'عالق في الزحمة', meaningEn: '', egyptianEquivalent: 'اتعلقت في الزحمة', exampleInScene: 'Sorry, I was stuck in traffic.' },      { term: 'fill up', type: 'phrasal-verb', meaningAr: 'يملأ', meaningEn: '', egyptianEquivalent: 'يفول بنزين', exampleInScene: 'I need to fill up the car.' },      { term: 'ticket', type: 'cultural', meaningAr: 'مخالفة', meaningEn: '', egyptianEquivalent: 'مخالفة', exampleInScene: 'He got a parking ticket.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I got stuck in traffic\' mean?', questionAr: 'يعني إيه I got stuck in traffic؟', options: ['اتعلقت في الزحمة', 'العربية عطلت', 'نسيت الطريق', 'وقفت أشتري بنزين'], correctIndex: 0, explanationAr: 'Stuck in traffic = عالق في الزحمة - أشهر عذر تأخير في العالم.' }
+    ],
+    speakingLines: [{ en: 'I got stuck in traffic on my way to work.', arEg: 'اتعلقت في الزحمة وأنا في طريقي للشغل.' }, { en: 'You need to fill up the tank before the trip.', arEg: 'لازم تفول التنك قبل السفرية.' }],
+  },
+  {
+    id: 'vehicles-vocab-bob-canadian',
+    movieTitle: 'English Vocabulary Lesson on Vehicles - Cars, Trucks and More',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Name Every Vehicle on the Road',
+    sceneDescription: 'بوب الكندي بيعلمك أسماء كل المركبات: عربية، نقل، موتوسيكل، وإسعاف.',
+    youtubeId: 'lkMzvdjhMlI',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'An ambulance rushes people to the hospital.',
+    actorName: 'Bob the Canadian',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/lkMzvdjhMlI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Bob the Canadian Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'An ambulance rushes people to the hospital.', arEg: 'الإسعاف بينقل الناس للمستشفى بسرعة.', arFusha: 'الإسعاف بينقل الناس للمستشفى بسرعة.', speaker: 'Instructor', keyWords: [{ word: 'ambulance', ipa: '', meaningAr: 'إسعاف', meaningEn: '' }, { word: 'rushes', ipa: '', meaningAr: 'بينقل بسرعة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'A pickup truck can carry heavy loads.', arEg: 'عربية النقل بتشيل حاجات تقيلة.', arFusha: 'عربية النقل بتشيل حاجات تقيلة.', speaker: 'Instructor', keyWords: [{ word: 'pickup truck', ipa: '', meaningAr: 'عربية نقل', meaningEn: '' }, { word: 'heavy loads', ipa: '', meaningAr: 'حاجات تقيلة', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'He rides his motorcycle to work every day.', arEg: 'بيروح شغله بالموتوسيكل كل يوم.', arFusha: 'بيروح شغله بالموتوسيكل كل يوم.', speaker: 'Instructor', keyWords: [{ word: 'rides', ipa: '', meaningAr: 'بيسوق (موتوسيكل)', meaningEn: '' }, { word: 'motorcycle', ipa: '', meaningAr: 'موتوسيكل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'ambulance', type: 'cultural', meaningAr: 'سيارة إسعاف', meaningEn: '', egyptianEquivalent: 'إسعاف', exampleInScene: 'Call an ambulance!' },      { term: 'truck', type: 'cultural', meaningAr: 'شاحنة', meaningEn: '', egyptianEquivalent: 'نقل', exampleInScene: 'The truck is blocking the road.' },      { term: 'ride', type: 'cultural', meaningAr: 'يركب', meaningEn: '', egyptianEquivalent: 'يسوق (موتوسيكل/عجلة)', exampleInScene: 'I ride my bike to university.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which vehicle takes sick people to hospital?', questionAr: 'أنهي مركبة بتنقل المرضى للمستشفى؟', options: ['Ambulance', 'Truck', 'Taxi', 'Bus'], correctIndex: 0, explanationAr: 'Ambulance = إسعاف - كلمة ممكن تنقذ حياة لما تحتاجها بره.' }
+    ],
+    speakingLines: [{ en: 'An ambulance rushes people to the hospital.', arEg: 'الإسعاف بينقل الناس للمستشفى بسرعة.' }, { en: 'He rides his motorcycle to work every day.', arEg: 'بيروح شغله بالموتوسيكل كل يوم.' }],
+  },
+  {
+    id: 'shopping-clothes-english-nova',
+    movieTitle: 'Shopping for Clothes in English - Full Conversation Practice',
+    releaseYear: 2023,
+    director: 'English Nova',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Find Your Size and Pay',
+    sceneDescription: 'حوار شراء هدوم كامل: تسأل على مقاس، تقيس، وتدفع في الكاشير.',
+    youtubeId: 'IqEiAQACWIY',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'English Nova (Official)',
+    dialogueQuote: 'Do you have this shirt in a medium?',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/IqEiAQACWIY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Nova Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'Do you have this shirt in a medium?', arEg: 'عندكم القميص ده مقاس ميديم؟', arFusha: 'عندكم القميص ده مقاس ميديم؟', speaker: 'Customer', keyWords: [{ word: 'in a medium', ipa: '', meaningAr: 'مقاس ميديم', meaningEn: '' }, { word: 'do you have', ipa: '', meaningAr: 'عندكم', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'Where is the fitting room, please?', arEg: 'فين أوضة القياس لو سمحت؟', arFusha: 'فين أوضة القياس لو سمحت؟', speaker: 'Customer', keyWords: [{ word: 'fitting room', ipa: '', meaningAr: 'أوضة القياس', meaningEn: '' }, { word: 'where is', ipa: '', meaningAr: 'فين', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'I will take it. Can I pay by card?', arEg: 'هاخده. ممكن أدفع بالكارت؟', arFusha: 'هاخده. ممكن أدفع بالكارت؟', speaker: 'Customer', keyWords: [{ word: 'I will take it', ipa: '', meaningAr: 'هاخده', meaningEn: '' }, { word: 'pay by card', ipa: '', meaningAr: 'أدفع بالكارت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'fitting room', type: 'collocation', meaningAr: 'غرفة قياس', meaningEn: '', egyptianEquivalent: 'أوضة القياس', exampleInScene: 'The fitting room is over there.' },      { term: 'size', type: 'cultural', meaningAr: 'مقاس', meaningEn: '', egyptianEquivalent: 'مقاس', exampleInScene: 'What size do you wear?' },      { term: 'on sale', type: 'collocation', meaningAr: 'في التخفيضات', meaningEn: '', egyptianEquivalent: 'عليه خصم', exampleInScene: 'These shoes are on sale.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask for a different size?', questionAr: 'تطلب مقاس تاني إزاي؟', options: ['Do you have this in a medium?', 'Give me bigger now', 'This is too ugly', 'Change your stock'], correctIndex: 0, explanationAr: 'Do you have this in a + مقاس = أشيك طريقة تطلب بيها مقاس مختلف.' }
+    ],
+    speakingLines: [{ en: 'Do you have this shirt in a medium?', arEg: 'عندكم القميص ده مقاس ميديم؟' }, { en: 'I will take it. Can I pay by card?', arEg: 'هاخده. ممكن أدفع بالكارت؟' }],
+  },
+  {
+    id: 'shopping-clothes-5min-english',
+    movieTitle: '5-Minute English Conversation Practice - Shopping for Clothes',
+    releaseYear: 2024,
+    director: 'English Together',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Bargain and Return Items',
+    sceneDescription: '٥ دقايق تدريب مكثف: تفاص، تسأل على الخصم، وترجع حاجة معجبتكش.',
+    youtubeId: 'kdQYKdbAiFs',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English Together (Official)',
+    dialogueQuote: 'Is there any discount if I buy two?',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/kdQYKdbAiFs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Together Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Is there any discount if I buy two?', arEg: 'فيه خصم لو اشتريت اتنين؟', arFusha: 'فيه خصم لو اشتريت اتنين؟', speaker: 'Customer', keyWords: [{ word: 'discount', ipa: '', meaningAr: 'خصم', meaningEn: '' }, { word: 'if I buy two', ipa: '', meaningAr: 'لو اشتريت اتنين', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I would like to return this jacket, please.', arEg: 'عايز أرجع الجاكت ده لو سمحت.', arFusha: 'عايز أرجع الجاكت ده لو سمحت.', speaker: 'Customer', keyWords: [{ word: 'return', ipa: '', meaningAr: 'أرجع (منتج)', meaningEn: '' }, { word: 'jacket', ipa: '', meaningAr: 'جاكت', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Do you have the receipt with you?', arEg: 'معاك الفاتورة؟', arFusha: 'معاك الفاتورة؟', speaker: 'Cashier', keyWords: [{ word: 'receipt', ipa: '', meaningAr: 'فاتورة', meaningEn: '' }, { word: 'with you', ipa: '', meaningAr: 'معاك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'discount', type: 'cultural', meaningAr: 'خصم', meaningEn: '', egyptianEquivalent: 'خصم', exampleInScene: 'Students get a discount.' },      { term: 'return', type: 'cultural', meaningAr: 'يرجع منتج', meaningEn: '', egyptianEquivalent: 'يرجع حاجة للمحل', exampleInScene: 'I returned the shoes.' },      { term: 'receipt', type: 'cultural', meaningAr: 'إيصال', meaningEn: '', egyptianEquivalent: 'فاتورة', exampleInScene: 'Keep your receipt.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you need to return an item?', questionAr: 'محتاج إيه عشان ترجع منتج للمحل؟', options: ['The receipt', 'A friend', 'A suitcase', 'A photo'], correctIndex: 0, explanationAr: 'Receipt = الفاتورة - من غيرها معظم المحلات مش بترجع الفلوس.' }
+    ],
+    speakingLines: [{ en: 'Is there any discount if I buy two?', arEg: 'فيه خصم لو اشتريت اتنين؟' }, { en: 'I would like to return this jacket, please.', arEg: 'عايز أرجع الجاكت ده لو سمحت.' }],
+  },
 ];
 
 // Helper to get all videos
