@@ -3387,7 +3387,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 58,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'المعركة الأشهر: الفرق بين Make ﻥ Do',
+    titleAr: 'المعركة الأشهر: الفرق بين الفعلين Make / Do',
     titleEn: 'Make vs Do - The Classic Confusion',
     level: 'B1 - متوسط',
     goldenFormula: 'Make + إنتاج/خلق/قرار • Do + عمل/نشاط/واجب',
