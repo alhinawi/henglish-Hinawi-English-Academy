@@ -116,7 +116,7 @@ const LOCATIONS: WorldLocation[] = [
     color: 0x9b7bff, // Purple Neon
     buildingHeight: 7,
     descriptionAr: 'مقر المحاضرات المباشرة، الاختبارات، والمكتبة المركزية الشاملة.',
-    npcName: 'Prof. Al-Hinawi',
+    npcName: 'Prof. Hinawi',
     npcRole: 'Chief Academic Director',
   },
 ];
@@ -224,7 +224,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     // 3. Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.75));
+    const smallScreen = Math.min(width, height) < 500;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, smallScreen ? 1.25 : 1.75));
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -888,7 +889,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
           {/* Proximity Interaction Prompt with NPC */}
           {nearbyNpc && (
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 animate-in fade-in slide-in-from-bottom-4 duration-200">
+            <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 animate-in fade-in slide-in-from-bottom-4 duration-200">
               <button
                 onClick={() => {
                   playSound('click');
@@ -897,7 +898,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 className="px-6 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#0c0b20] font-black text-sm shadow-2xl hover:scale-105 transition-all flex items-center gap-2.5 cursor-pointer ring-4 ring-white/20"
               >
                 <MessageSquare className="w-4 h-4 fill-current" />
-                <span>اضغط E أو انقر لبدء المحادثة مع {nearbyNpc.npcName} ({nearbyNpc.icon})</span>
+                <span>اضغط E أو انقر للتحدث مع <bdi>{nearbyNpc.npcName}</bdi></span>
               </button>
             </div>
           )}
