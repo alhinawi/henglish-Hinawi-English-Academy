@@ -1,5 +1,5 @@
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
-import { LessonPhotoGallery, LessonPhotoSources } from '../components/LessonPhotography';
+import { LessonPhotoGallery } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
@@ -476,7 +476,6 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         </div>
       </div>
 
-      <LessonPhotoSources lessonId={currentLesson.id} />
     </div>
   );
 };
