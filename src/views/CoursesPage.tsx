@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { COURSES_CATALOG, CourseItem } from '../data/coursesData';
 import { PageRoute } from '../types';
 import { playSound } from '../utils/audio';
-import { BookOpen, Star, Clock, Users, ArrowRight, Sparkles, Filter, Rocket, RefreshCw, GitBranch, Cpu, FileText, Mic2 } from 'lucide-react';
+import { BookOpen, Star, Clock, Users, ArrowRight, Sparkles, Filter, Rocket, RefreshCw, GitBranch, Cpu, Mic2 } from 'lucide-react';
 
 const COURSE_ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   'future-perfect': Rocket,
+  'grammar-academy': GitBranch,
+  'vocabulary-academy': BookOpen,
   'present-perfect': RefreshCw,
-  'conditionals': GitBranch,
-  'tech-english': Cpu,
-  'business-writing': FileText,
-  'ielts-speaking': Mic2,
+  'conditionals': Cpu,
+  'listening-academy': Mic2,
 };
 
 interface CoursesPageProps {
@@ -28,10 +28,10 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
 
   const handleSelectCourse = (course: CourseItem) => {
     playSound('click');
-    if (course.id === 'future-perfect') {
-      onNavigate('courses/grammar/future-perfect');
-    } else {
-      onNavigate('courses/grammar');
+    if (course.ruleId) {
+      onNavigate('grammar-lesson', course.ruleId);
+    } else if (course.route) {
+      onNavigate(course.route as PageRoute);
     }
   };
 
@@ -42,7 +42,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
       <div className="space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>HINAWI COURSE CATALOG & ACADEMY</span>
+          <span>HENGLISH ACADEMY • COURSE CATALOG</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
           دليل الكورسات والأكاديمية الشاملة
@@ -62,7 +62,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
             هل تبحث عن شرح كل أزمنة وقواعد الإنجليزي بالترتيب؟
           </h2>
           <p className="text-xs sm:text-sm text-[#dedbf4]">
-            استعرض أكاديمية الجرامر الشاملة (١٦ قاعدة كاملة من الصفر للاحتراف مع النطق وكويزات الفهم).
+            استعرض أكاديمية الجرامر الشاملة: أكثر من ٥٠ قاعدة من الصفر للاحتراف، كل قاعدة بشرح مبسط وأمثلة منطوقة وكويز فهم.
           </p>
         </div>
 
@@ -132,10 +132,12 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                   {course.tag}
                 </span>
 
-                <div className="absolute top-3 left-3 flex items-center gap-1 text-xs text-[#ffd166] font-bold px-2 py-0.5 rounded-lg bg-[#09091a]/80 backdrop-blur-md border border-white/10">
-                  <Star className="w-3 h-3 fill-current" />
-                  <span>{course.rating}</span>
-                </div>
+                {typeof course.rating === 'number' && (
+                  <div className="absolute top-3 left-3 flex items-center gap-1 text-xs text-[#ffd166] font-bold px-2 py-0.5 rounded-lg bg-[#09091a]/80 backdrop-blur-md border border-white/10">
+                    <Star className="w-3 h-3 fill-current" />
+                    <span>{course.rating}</span>
+                  </div>
+                )}
               </div>
             )}
 
@@ -166,16 +168,20 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <div className="flex items-center justify-between text-xs text-[#dedbf4]">
                   <span className="flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>{course.lessonsCount} دروس</span>
+                    <span>{course.countLabel ?? `${course.lessonsCount} دروس`}</span>
                   </span>
-                  <span className="flex items-center gap-1">
-                    <Clock className="w-3.5 h-3.5 text-[#ffd166]" />
-                    <span>{course.duration}</span>
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Users className="w-3.5 h-3.5 text-[#c4ff55]" />
-                    <span>{course.studentsCount}</span>
-                  </span>
+                  {course.duration && (
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3.5 h-3.5 text-[#ffd166]" />
+                      <span>{course.duration}</span>
+                    </span>
+                  )}
+                  {typeof course.studentsCount === 'number' && (
+                    <span className="flex items-center gap-1">
+                      <Users className="w-3.5 h-3.5 text-[#c4ff55]" />
+                      <span>{course.studentsCount}</span>
+                    </span>
+                  )}
                 </div>
 
                 <button
@@ -185,7 +191,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                       : 'bg-white/10 hover:bg-white/20 text-white'
                   }`}
                 >
-                  <span>{course.id === 'future-perfect' ? 'ابدأ دراسة الكورس (٨ دروس)' : 'استعرض محتوى القاعدة'}</span>
+                  <span>{course.ctaLabel ?? 'استعرض المحتوى'}</span>
                   <ArrowRight className="w-4 h-4 rotate-180" />
                 </button>
               </div>
