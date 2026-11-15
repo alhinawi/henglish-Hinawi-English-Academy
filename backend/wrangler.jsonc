@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "henglish-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-01",
+  "vars": {
+    // Comma separated. The site address(es) allowed to call the API from a browser.
+    "ALLOWED_ORIGINS": "https://henglish.pages.dev,http://localhost:5173,http://localhost:4177"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "henglish",
+      "database_id": "9ac70148-e743-4271-9b00-1e6ace54e57a",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
