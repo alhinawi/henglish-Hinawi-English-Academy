@@ -65,8 +65,11 @@ interface MoviePlayerStudioProps {
 }
 
 export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onBackToSearch }) => {
+  // Short clips (scene starts within the first 20s) play from 0:00 so no spoken
+  // context is skipped; scenes deep inside a long video still start at their window.
+  const sceneStart = scene.startTime <= 20 ? 0 : Math.floor(scene.startTime);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState<number>(scene.startTime);
+  const [currentTime, setCurrentTime] = useState<number>(sceneStart);
   const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 0.75 | 1.0>(1.0);
   const [isLoopingCurrentLine, setIsLoopingCurrentLine] = useState(false);
   const [activeSubtitleIndex, setActiveSubtitleIndex] = useState<number>(0);
@@ -96,6 +99,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
   const loopLineRef = useRef(false);
   const activeSubIdxRef = useRef(0);
   const pendingSeekRef = useRef<number | null>(null);
+  const seekTargetRef = useRef<{ t: number; until: number } | null>(null);
   const transcriptListRef = useRef<HTMLDivElement>(null);
 
   // Create the real YouTube IFrame Player for this scene
@@ -103,7 +107,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
     let destroyed = false;
     playerReadyRef.current = false;
     setIsPlayerReady(false);
-    setCurrentTime(scene.startTime);
+    seekTargetRef.current = null;
+    setCurrentTime(sceneStart);
     setActiveSubtitleIndex(0);
     setIsPlaying(false);
     isPlayingRef.current = false;
@@ -119,7 +124,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
           height: '100%',
           videoId: scene.youtubeId,
           playerVars: {
-            start: Math.floor(scene.startTime),
+            start: sceneStart,
             rel: 0,
             enablejsapi: 1,
             playsinline: 1,
@@ -133,6 +138,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
               if (pendingSeekRef.current != null) {
                 const t = pendingSeekRef.current;
                 pendingSeekRef.current = null;
+                seekTargetRef.current = { t, until: Date.now() + 4000 };
                 try {
                   playerRef.current?.seekTo?.(t, true);
                   playerRef.current?.playVideo?.();
@@ -179,6 +185,22 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
       const t = player.getCurrentTime();
       const playing = typeof player.getPlayerState === 'function' && player.getPlayerState() === 1;
 
+      // A tap-to-seek is in flight: the player still reports the pre-seek position while
+      // buffering. Keep the tapped sentence on screen instead of snapping back to the
+      // previous one, until the real time arrives (or the guard times out).
+      const seek = seekTargetRef.current;
+      if (seek) {
+        if (Math.abs(t - seek.t) <= 1.5 || Date.now() > seek.until) {
+          seekTargetRef.current = null;
+        } else {
+          if (playing !== isPlayingRef.current) {
+            isPlayingRef.current = playing;
+            setIsPlaying(playing);
+          }
+          return;
+        }
+      }
+
       // Keep the UI play/pause state honest even if a state event was missed (mobile iframe taps)
       if (playing !== isPlayingRef.current) {
         isPlayingRef.current = playing;
@@ -198,8 +220,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
       // Stop at scene end
       if (playing && t >= scene.endTime) {
         player.pauseVideo();
-        player.seekTo(scene.startTime, true);
-        setCurrentTime(scene.startTime);
+        player.seekTo(sceneStart, true);
+        setCurrentTime(sceneStart);
         isPlayingRef.current = false;
         setIsPlaying(false);
         return;
@@ -247,6 +269,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
     setActiveSubtitleIndex(idx);
     const player = playerRef.current;
     if (player && playerReadyRef.current) {
+      seekTargetRef.current = { t: sub.start, until: Date.now() + 4000 };
       player.seekTo(sub.start, true);
       player.playVideo();
       isPlayingRef.current = true;
@@ -270,8 +293,9 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
       } else {
         // Resume inside the scene window if the pointer drifted outside it
         const t = typeof player.getCurrentTime === 'function' ? player.getCurrentTime() : currentTime;
-        if (t < scene.startTime || t >= scene.endTime) {
-          player.seekTo(scene.startTime, true);
+        if (t < sceneStart || t >= scene.endTime) {
+          seekTargetRef.current = { t: sceneStart, until: Date.now() + 4000 };
+          player.seekTo(sceneStart, true);
         }
         player.playVideo();
       }
@@ -412,12 +436,13 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
               <button
                 onClick={() => {
                   playSound('click');
-                  setCurrentTime(scene.startTime);
+                  setCurrentTime(sceneStart);
                   activeSubIdxRef.current = 0;
                   setActiveSubtitleIndex(0);
                   const player = playerRef.current;
                   if (player && playerReadyRef.current) {
-                    player.seekTo(scene.startTime, true);
+                    seekTargetRef.current = { t: sceneStart, until: Date.now() + 4000 };
+                    player.seekTo(sceneStart, true);
                     player.playVideo();
                     isPlayingRef.current = true;
                     setIsPlaying(true);
