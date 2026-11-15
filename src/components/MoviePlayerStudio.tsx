@@ -65,9 +65,9 @@ interface MoviePlayerStudioProps {
 }
 
 export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onBackToSearch }) => {
-  // Short clips (scene starts within the first 20s) play from 0:00 so no spoken
-  // context is skipped; scenes deep inside a long video still start at their window.
-  const sceneStart = scene.startTime <= 20 ? 0 : Math.floor(scene.startTime);
+  // Every clip plays from the very first second (0:00) per product decision:
+  // learners hear the full context, and the transcript stays in sync from second 0.
+  const sceneStart = 0;
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState<number>(sceneStart);
   const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 0.75 | 1.0>(1.0);
@@ -125,6 +125,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
           videoId: scene.youtubeId,
           playerVars: {
             start: sceneStart,
+            autoplay: 1,
             rel: 0,
             enablejsapi: 1,
             playsinline: 1,
@@ -134,6 +135,14 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
             onReady: () => {
               playerReadyRef.current = true;
               setIsPlayerReady(true);
+              // One tap on the clip card should start playback directly (user gesture
+              // chain from the card tap; browsers that still block it keep the play button).
+              try {
+                playerRef.current?.seekTo?.(sceneStart, true);
+                playerRef.current?.playVideo?.();
+              } catch {
+                // autoplay blocked: the on-screen play button remains
+              }
               // Apply a sentence tap that arrived while the iframe was still loading
               if (pendingSeekRef.current != null) {
                 const t = pendingSeekRef.current;
