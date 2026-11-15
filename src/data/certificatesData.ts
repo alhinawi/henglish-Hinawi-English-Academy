@@ -93,32 +93,3 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     badgeIcon: "",
   },
 ];
-
-export const INITIAL_ISSUED_CERTIFICATES: IssuedCertificate[] = [
-  {
-    certificateId: "HEN-2026-FP-8492",
-    studentNameAr: "سارة عبد الرحمن",
-    studentNameEn: "Sarah Abdulrahman",
-    courseTitleAr: "المستقبل التام الشامل (Masterclass Core)",
-    courseTitleEn: "Future Perfect Comprehensive Masterclass",
-    cefrLevel: "B2",
-    issueDate: "2026-10-30",
-    verificationCode: "HEN-2026-FP-8492",
-    finalScorePercentage: 94,
-    status: "valid",
-    instructorName: "Mr. Hinawi • Chief Academic Director",
-  },
-  {
-    certificateId: "HEN-2026-GF-1049",
-    studentNameAr: "أحمد محمود رضوان",
-    studentNameEn: "Ahmed Mahmoud Radwan",
-    courseTitleAr: "أساسيات الجرامر والأزمنة التأسيسية",
-    courseTitleEn: "English Grammar Foundations & Core Tenses",
-    cefrLevel: "A2",
-    issueDate: "2026-10-25",
-    verificationCode: "HEN-2026-GF-1049",
-    finalScorePercentage: 88,
-    status: "valid",
-    instructorName: "Mr. Hinawi • Chief Academic Director",
-  },
-];
