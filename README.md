@@ -1,265 +1,69 @@
-# 🦅 منصة وأكاديمية هناوي إنجلش التفاعلية | Henglish Academy
+# Henglish Academy | هناوي إنجلش
 
-> **"Learn it. Use it. Own it."** — منصة تعليمية وتطبيق ويب عالمي متكامل لتعلم وإتقان اللغة الإنجليزية مدعوم بالذكاء الاصطناعي، ومبني وفق معايير الإطار الأوروبي المشترك للغات (CEFR).
+[Open the live site](https://henglish.pages.dev/)
 
----
+An Arabic-first English learning platform: grammar explanations, vocabulary, real-life conversations and practice in one place. "Learn it. Use it. Own it."
 
-## 🌟 نظرة عامة (Platform Overview)
+## Live walkthrough
 
-تم تحويل منصة **هناوي إنجلش (Henglish Academy)** من موقع تعليمي بسيط إلى **أكاديمية تعليمية عالمية فائقة التطور (Production-Ready AI-Powered English Learning Platform)** مبنية بأحدث معايير الويب لعام 2026. تجمع المنصة بين جمالية التصميم البصري النيوني الداكن (Dark Neon Cyber-Aesthetic)، والشرح الاحترافي المتقن باللهجة المصرية العامية المبسطة، وعالم ثلاثي الأبعاد تفاعلي، ومحاكي محادثات واقعية متفرعة، ووكيل ذكاء اصطناعي (AI Tutor) شخصي متعدد التخصصات، ونظام اختبارات ذكي متكيف يحدد مستوى الطالب بدقة، مع معمارية صارمة لمعالجة النصوص ثنائية الاتجاه (RTL/LTR).
+![Signed-out walkthrough of Henglish Academy](docs/demo/walkthrough.gif)
 
----
+[Watch or download the MP4 recording](docs/demo/walkthrough.mp4). Two-voice Egyptian-Arabic narrated walkthrough, recorded from the live site on November 15, 2026; the interface may change as development continues.
 
-## ✨ المميزات الرئيسية للمنصة (Key Pillars & Features)
+## Features
 
-### 1. 📚 أكاديمية القواعد التعليمية الكاملة (Dedicated Full-Length Grammar Pages)
+- Grammar lessons and skill academies for reading, writing, listening, speaking and pronunciation.
+- Vocabulary practice, a sentence library and lessons built around film/series clips.
+- Real-life scenario practice, exercises, placement tests and learning notes.
+- A 3D learning world and AI-related tools. AI/provider features depend on configuration and provider availability.
+- Guest access plus account/profile settings, Google sign-in and saved learning features through the Hono API.
+- Certificate screens are platform-issued learning records, not a claim of third-party accreditation.
 
-- **16 صفحة تعليمية مستقلة ومكتملة** لكل قاعدة لغوية بدلاً من مجرد كروت ملخصة أو أكورديون.
-- يغطي المنهج:
-  1. **المضارع:** البسيط، المستمر، التام، التام المستمر.
-  2. **الماضي:** البسيط، المستمر، التام، التام المستمر.
-  3. **المستقبل:** البسيط (Will vs Going to)، المستمر، المستقبل التام الشامل (The Masterclass).
-  4. **الجمل الشرطية والأفعال الناقصة:** حالات If الأربعة (Zero, 1st, 2nd, 3rd Conditionals)، الأفعال الناقصة (Modal Verbs).
-  5. **التركيبات المتقدمة:** المبني للمجهول (Passive Voice)، الكلام المنقول (Reported Speech)، جمل الوصل (Relative Clauses).
-- **محتوى كل صفحة تفصيلية:**
-  - أهداف الدرس والمستوى المستهدف (CEFR Target).
-  - مخطط زمني تفاعلي (Interactive Timeline Visualizer).
-  - التراكيب النحوية الأربعة: الإثبات، النفي، السؤال، والإجابات القصيرة بتنسيق LTR معزول.
-  - شروحات مبسطة باللهجة المصرية الحية والأمثلة الواقعية.
-  - مقارنات نحوية معمقة لمنع الخلط بين الأزمنة المتشابهة.
-  - فخاخ وأخطاء شائعة يقع فيها المتحدثون بالعربية وكيفية تجنبها.
-  - تدريب تفاعلي فوري (Check Your Understanding) وتتبع إتمام الدرس.
+## Stack
 
-### 2. 🎬 مكتبة موارد الفيديو المعتمدة (Integrated YouTube Video Player)
+React, TypeScript, Tailwind CSS, Framer Motion and Three.js. The repository contains both the Vite application and Next.js static-export routes. The account API is Hono on Cloudflare Workers with D1; legacy Supabase integrations remain in the source.
 
-- مشغل فيديو مدمج متجاوب (16:9 Responsive Embed) لكل درس في أكاديمية الجرامر.
-- فيديوهات مختارة بعناية من أفضل القنوات التعليمية العالمية المعتمدة (English Speaking Success, mmmEnglish, Oxford Online English, BBC Learning English, Learn English with Bob the Canadian).
-- عرض اسم القناة، مدة الفيديو، وصف محتوى الفيديو، وأزرار طوابع زمنية (Timestamps) مباشرة لأهم فقرات الشرح، مع زر المشاهدة الخارجية المباشرة.
+## Run locally
 
-### 3. 🧠 معلم الذكاء الاصطناعي التفاعلي (AI English Tutor Agent)
-
-- وكيل ذكاء اصطناعي متكامل يضم 7 أوضاع تخصصية:
-  1. **مدرس القواعد (Grammar Teacher):** شرح القواعد وتبسيط الأزمنة والإجابة عن أي استفسار.
-  2. **شريك المحادثة (Conversation Partner):** دردشة حية بالإنجليزية مع تصحيح فوري وودي للأخطاء.
-  3. **مدرب المفردات (Vocabulary Coach):** سياقات استخدام الكلمات ومترادفاتها وتعبيراتها الشائعة.
-  4. **مساعد الكتابة (Writing Assistant):** تدقيق المقالات ورسائل البريد والـ Essays وتقديم اقتراحات لغوية بديلة.
-  5. **مدرب النطق (Pronunciation Coach):** الرموز الصوتية IPA والفروق بين اللكنات وتدريبات اللسان.
-  6. **مدرب اختبارات الآيلتس والتوفل (Exam Trainer):** استراتيجيات حل أسئلة IELTS و TOEFL ومحاكاة الامتحانات.
-  7. **مدرب مقابلات العمل (Mock Interviewer):** محاكاة مقابلات التوظيف بالإنجليزية وفق أسلوب STAR التقني.
-- دعم تكاملي لمزودات الذكاء الاصطناعي (Google Gemini / OpenAI) مع عقل تعليمي محلي فائق الذكاء (Local Educational Brain) يعمل فورياً حتى عند غياب مفاتيح الـ API.
-
-### 4. 🏙️ العالم الافتراضي ثلاثي الأبعاد (Interactive 3D Learning World)
-
-- تجربة بصرية مبهرة مبنية بتقنية WebGL بواسطة **Three.js**.
-- خريطة تفاعلية لمدينة تعليمية نيونيّة تشتمل على 6 مبانٍ رئيسية (المطار، المطعم، العيادة، برج الأعمال، الأكاديمية، والسينما التعليمية).
-- كاميرا مدارية سلسة (Orbit Controls)، ومؤشرات متوهجة نابضة، ونظام Raycasting للنقر المباشر والدخول إلى سيناريوهات المحاكاة.
-- مفتاح تحويل تلقائي وخفيف لشبكة ثنائية الأبعاد (2D Tactical Grid) للأجهزة الضعيفة ومراعاة الأداء وقابلية الوصول.
-
-### 5. 🎭 محاكي المحادثات الواقعية (Real-Life English Simulator)
-
-- سيناريوهات محاكاة حية متفرعة (Branching Dialogue Scenarios):
-  - **مطار هيثرو (Airport Check-in & Luggage):** التعامل مع موظفي الطيران، المقاعد، وحقائب السفر.
-  - **مطعم راقٍ (Fine Dining Restaurant):** حجز الطاولات، طلب الأطباق، ومراجعة الفاتورة.
-  - **عيادة الطبيب (Doctor's Clinic):** وصف الأعراض، مدة الألم، والجرعات الطبية.
-  - **مقابلة توظيف تقنية (Tech Job Interview):** التعريف بالنفس، الإجابة عن نقاط القوة والضعف بأسلوب احترافي.
-- تقييم فوري للردود (رد مثالي +30XP، رد مقبول +15XP، رد يحتاج تحسين +5XP).
-- إمكانية الإجابة الحرة (Free-Text Input) بتنسيق LTR مع تقييم ذكي وملاحظات تحسينية.
-- قاموس بقاء لغوي (Survival Glossary) يضم العبارات والمصطلحات الأساسية لكل سيناريو.
-
-### 6. 🎙️ محرك الصوت والنطق المطور (Voice Synthesis & Audio Quality)
-
-- **الحفاظ التام على الصوت الأنثوي الأصلي المفضل للمستخدمين** دون أي مساس بجودته.
-- **ترقية وتطوير الصوت الذكوري** ليعتمد أصواتاً طبيعية مهدئة ونقية (Microsoft Natural / Google US & UK Male) مع معايرة طبقة الصوت والنبرة.
-- نافذة إعدادات صوتية كاملة (Voice Settings Modal) تتيح:
-  - التبديل بين اللكنة الأمريكية (US) والبريطانية (UK).
-  - التحكم في سرعة النطق (0.75x، 0.92x، 1.0x، 1.25x).
-  - زر كتم وتشغيل المؤثرات الصوتية العامة.
-  - زر استماع تجريبي مباشر للصوت قبل اختياره.
-
-### 7. 📝 بنك الأسئلة الضخم وتحديد المستوى المتكيف (Massive Question Bank & Placement Test)
-
-- مئات الأسئلة المتدرجة والمصنفة وفق مستويات الـ CEFR (من A1 حتى C1) تغطي القواعد، المفردات، القراءة، والاستماع.
-- **اختبار تحديد مستوى ديناميكي متكيف:**
-  - توليد جلسات اختبار متجددة غير مكررة.
-  - تقييم تفصيلي للمستوى التقديري (A1, A2, B1, B2, C1).
-  - رادار بياني لنقاط القوة والضعف، مع مسار تعليمي مخصص مقترح.
-
-### 8. 📜 نظام الشهادات المعتمدة والتحقق العام (Certificates & Verification)
-
-- شهادات إنجاز رسمية قابلة للطباعة والتنزيل بصيغة PDF لأكاديمية القواعد والمستويات المختلفة.
-- محرك فحص وتحقق رقمي عام (Public Certificate Verification Lookup) عبر معرّف مشفر فريد (مثل `HENG-GRM-2026-X892`).
-- إخلاء طرف توضيحي يؤكد أن الشهادة تعكس إنجاز الطالب داخل المنصة وليست بديلاً عن الاختبارات الدولية الرسمية كالآيلتس والتوفل.
-
-### 9. 🔐 نظام المصادقة، وضع الضيف، وحسابات الديمو (Authentication & Guest Mode)
-
-- تسجيل دخول وحسابات عبر البريد الإلكتروني وكلمة المرور وتكامل Supabase.
-- **وضع الضيف الكامل (Guest Mode):** تصفح كافة أقسام المنصة، حل الاختبارات، وحفظ التقدم محلياً دون إجبار على التسجيل.
-- **ترحيل ذكي للبيانات (Progress Migration):** إمكانية إنشاء حساب في أي وقت ودمج كافة نقاط الخبرة والإنجازات المحفوظة محلياً دون أي فقد للبيانات.
-- **حسابات تجريبية مسبقة (Pre-seeded Demo Accounts):**
-  - حساب طالب تجريبي (`student@henglish.academy`)
-  - حساب مدرب تجريبي (`teacher@henglish.academy`)
-
-### 10. 🗄️ بنية قاعدة البيانات وسياسات الأمان (PostgreSQL & Supabase Architecture)
-
-- ملف ترحيل بيانات شامل (`supabase/migrations/20261030_henglish_core_schema.sql`) يضم 12 جدولاً علائقياً:
-  - `profiles`, `courses`, `grammar_topics`, `lessons`, `questions`, `question_attempts`, `user_progress`, `simulations`, `certificates`, `ai_conversations`, `achievements`, `user_achievements`.
-- تفعيل أمان مستوى الصفوف الصارم (**Row-Level Security - RLS**) لكل الجداول لضمان سرية واستقلالية بيانات الطلاب.
-
-### 11. 🌐 المعمارية الصارمة للنصوص ثنائية الاتجاه (Bidirectional RTL/LTR Engine)
-
-- حل شامل لمشاكل اتجاه الكتابة وتداخل اللغتين الإنجليزية والعربية عبر المنصة:
-  - **فئة `.english-input`:** فرض اتجاه `LTR` والمحاذاة لليسار وعزل المحارف الإنجليزية في كافة حقول ومربعات الإدخال (كتابة المقالات، الإملاء، دفاتر التمارين، الردود الحرة، وبيانات الدخول).
-  - **فئة `.sentence-builder-ltr`:** بناء الجمل الإنجليزية من اليسار لليمين بسلاسة مع دعم الحذف والإضافة والالتفاف المتجاوب مع الهواتف الذكية دون التأثير على التعليمات العربية المحيطة.
-  - **عزل ثنائي الاتجاه (`unicode-bidi: isolate`):** منع أي انزياح أو تشويه في علامات الترقيم (Punctuation) والأرقام والأقواس في الجمل المختلطة.
-  - **الكشف التلقائي الذكي (`dir="auto"`):** لحقول البحث الشامل وتصريفات الأفعال ومحادثات المعلم الذكي للتبديل الفوري والسلس بين العربية والإنجليزية.
-
----
-
-## 🛠️ البنية التقنية (Tech Stack)
-
-| التقنية / الأداة                   | الاستخدام                                                            |
-| :--------------------------------- | :------------------------------------------------------------------- |
-| **React 19**                       | بناء واجهات المستخدم التفاعلية والصفحات المتعددة وتدفق البيانات      |
-| **TypeScript (Strict)**            | أمان الأنواع الصارم ومنع أخطاء وقت التشغيل بالكامل                   |
-| **Vite 6**                         | خادم تطوير فائق السرعة وبناء إنتاجي محسّن مع تقسيم حزم Rollup Chunks |
-| **Tailwind CSS v4**                | أنماط وتنسيقات التصميم النيوني المتجاوب عبر محرك Tailwind v4         |
-| **Three.js**                       | محرك الرسوميات ثلاثية الأبعاد WebGL لبناء خريطة المدينة التفاعلية    |
-| **Framer Motion**                  | الرسوم المتحركة السلسة، النوافذ المنبثقة، وتأثيرات التقليب           |
-| **Lucide React**                   | مكتبة أيقونات عصرية متناسقة                                          |
-| **Web Speech API & Web Audio API** | محرك النطق الصوتي متعدد الأصوات والمؤثرات الصوتية المركبة            |
-| **Supabase / PostgreSQL**          | التخزين السحابي وقاعدة البيانات وسياسات RLS                          |
-
----
-
-## 📁 هيكل المشروع المحدث (Project Directory Structure)
-
-```text
-FP/
-├── index.html                   # صفحة البداية مع وسوم الميتا وSEO والأمان
-├── vite.config.ts               # إعدادات Vite وتقسيم الحزم البرمجية Rollup manualChunks
-├── package.json                 # التبعيات وسكربتات التشغيل
-├── tsconfig.json                # إعدادات TypeScript الصارمة
-├── .env.example                 # قالب متغيرات البيئة لـ Supabase و AI Providers
-├── public/
-│   ├── robots.txt               # تعليمات محركات البحث
-│   ├── sitemap.xml              # خريطة الموقع لمحركات البحث
-│   └── logo-clean.png           # شعار نسر هناوي المفرغ بدقة عالية
-├── supabase/
-│   └── migrations/
-│       └── 20261030_henglish_core_schema.sql # مخطط قاعدة البيانات وسياسات RLS
-└── src/
-    ├── main.tsx                 # نقطة الدخول الرئيسية للتطبيق
-    ├── App.tsx                  # إدارة التوجيه الرئيسي لـ 24 مساراً والحالة العامة
-    ├── index.css                # أنماط Tailwind والمتغيرات النيونية وقواعد RTL/LTR
-    ├── types/
-    │   └── index.ts             # واجهات TypeScript لجميع البيانات والمسارات
-    ├── data/
-    │   ├── allGrammarRules.ts   # محتوى أكاديمية الجرامر الـ 16 قاعدة
-    │   ├── videoResourcesData.ts# مكتبة فيديوهات اليوتيوب المعتمدة لكل درس
-    │   ├── massiveQuestionBank.ts# بنك الأسئلة الضخم ومولد اختبار تحديد المستوى
-    │   ├── realLifeSimulationsData.ts # سيناريوهات المحاكاة الواقعية الأربعة
-    │   ├── certificatesData.ts  # معايير الشهادات ومحرك التحقق الرقمي
-    │   ├── futurePerfectCourse.ts# محتوى الدروس الـ 8 للمستقبل التام
-    │   ├── coursesData.ts       # دليل الكورسات التعليمية
-    │   ├── dialoguesData.ts     # المحادثات الصوتية الحية
-    │   ├── flashcardsData.ts    # بطاقات المراجعة السريعة
-    │   └── verbsData.ts         # قائمة الأفعال والتصريف الثالث V3
-    ├── utils/
-    │   ├── voiceEngine.ts       # محرك الصوت وتحديث الصوت الذكوري والتحكم بالسرعة
-    │   ├── audio.ts             # مؤثرات الصوت وتوليف الترددات الصوتية
-    │   └── useProgress.ts       # إدارة التخزين المحلي LocalStorage والإنجازات
-    ├── services/
-    │   ├── authService.ts       # خدمات المصادقة والضيوف والحسابات التجريبية
-    │   └── aiTutorService.ts    # خدمات معلم الذكاء الاصطناعي والعقل التعليمي المحلي
-    ├── components/
-    │   ├── layout/
-    │   │   ├── Header.tsx       # الهيدر مع إصلاح القوائم المنسدلة بدون أي قص
-    │   │   ├── Sidebar.tsx      # القائمة الجانبية مع الروابط الجديدة
-    │   │   └── MainLayout.tsx   # تخطيط الصفحة الرئيسي الخالي من مشاكل الـ overflow
-    │   ├── SentenceBuilder.tsx  # معمل بناء الجمل بدعم كامل لاتجاه LTR الإنجليزي
-    │   ├── YouTubeVideoPlayer.tsx# مشغل فيديو يوتيوب المدمج المتجاوب
-    │   ├── Interactive3DWorld.tsx# العالم الافتراضي ثلاثي الأبعاد WebGL
-    │   ├── VoiceSettingsModal.tsx# نافذة إعدادات وتخصيص الصوت واللكنة
-    │   ├── AuthModal.tsx        # نافذة تسجيل الدخول وحسابات الديمو
-    │   └── TimelineVisualizer.tsx# الخط الزمني التفاعلي
-    └── pages/
-        ├── HomePage.tsx         # الصفحة الرئيسية ومعرض المعايشة
-        ├── GrammarAcademyPage.tsx# أكاديمية الجرامر وبطاقات القواعد الـ 16
-        ├── GrammarLessonPage.tsx# الصفحة التعليمية المفصلة المستقلة لكل قاعدة
-        ├── AiTutorPage.tsx      # واجهة معلم الذكاء الاصطناعي التفاعلي
-        ├── World3DPage.tsx      # صفحة العالم الافتراضي ثلاثي الأبعاد
-        ├── RealLifeEnglishPage.tsx # محاكي المحادثات والمواقف الواقعية
-        ├── CertificatesPage.tsx # صفحة إصدار وفحص الشهادات الرقمية
-        ├── CourseOverviewPage.tsx# نظرة عامة على كورس المستقبل التام
-        ├── PracticePage.tsx     # مركز التمارين الشامل
-        ├── QuizzesPage.tsx      # صفحة الاختبارات واختبار تحديد المستوى المتكيف
-        ├── GamesPage.tsx        # صالة الألعاب النحوية
-        ├── SpeakingPage.tsx     # مختبر المحادثة والطلاقة
-        ├── VocabularyPage.tsx   # بنك تصريفات الأفعال V3
-        └── ProgressPage.tsx     # لوحة إنجازات الطالب والشارات
-```
-
----
-
-## 🚀 التثبيت والتشغيل محلياً (Local Setup & Run)
-
-### 1. المتطلبات الأساسية
-
-- [Node.js](https://nodejs.org/) (إصدار 18 أو 20 أو أحدث).
-- [pnpm](https://pnpm.io/) (مدير الحزم الإلزامي للمشروع).
-
-### 2. تثبيت الحزم
+Use a current Node.js LTS release compatible with `package.json`.
 
 ```bash
-pnpm install
+npm install
+npm run dev           # Vite, http://localhost:5173
+npm run build         # TypeScript + Vite, dist/
+npm run preview       # preview Vite output
 ```
 
-### 3. إعداد متغيرات البيئة (اختياري)
-
-انسخ ملف الإعدادات:
+The Next.js route build is a separate workflow:
 
 ```bash
-cp .env.example .env
+npm run dev:next
+npm run build:next    # static export in out/
 ```
 
-_(ملاحظة: المنصة مهيأة لتعمل بكامل كفاءتها تلقائياً عبر العقل التعليمي المحلي ونظام التخزين المحلي دون الحاجة لإدخال مفاتيح خارجية)._
+Choose the build command and output folder that match the deployment. Do not interchange `dist/` and `out/`.
 
-### 4. تشغيل خادم التطوير المحلي
+## Accounts and configuration
+
+`backend/` contains the Hono API, D1 migrations and Google OAuth implementation. For local API development:
 
 ```bash
-pnpm dev
+cd backend
+npm install
+npm run db:migrate:local
+npm run dev
+npm run typecheck
 ```
 
-التطبيق يعمل مباشرة على المنفذ الثابت المعتمد:
-👉 **`http://localhost:5173/`**
+Configure API URLs and provider credentials in the hosting environment. Google OAuth secrets and private API keys belong on the server, never in client bundles or git. A frontend-only checkout does not supply a working AI provider or production account database.
 
-### 5. فحص الأنواع وبناء نسخة الإنتاج
+## Repository map
 
-```bash
-pnpm exec tsc --noEmit
-pnpm run build
-```
+- `src/views/`: the learning screens.
+- `src/components/`: navigation, lesson UI and shared controls.
+- `src/data/`: learning content.
+- `src/services/` and `src/context/`: integrations and app state.
+- `src/app/`: Next.js route wrappers.
+- `backend/`: account API and D1 migrations.
 
----
-
-## 🌐 نشر المشروع (Deployment)
-
-المشروع متوافق وجاهز للرفع الفوري على منصة **Vercel** أو **Netlify** كـ Single Page Application (SPA):
-
-```bash
-vercel --prod
-```
-
----
-
-## 💡 فلسفة هناوي التعليمية
-
-> **"اللغة الإنجليزية ليست مادة للحفظ بل مهارة للتعبير وصناعة الفرص العالمية."**
-
-- افهم الفكرة والموقف الحياتي قبل حفظ القاعدة النحوية.
-- تدرب مع معلم الذكاء الاصطناعي والمواقف الواقعية دون خوف من الخطأ.
-- استمع للنطق الصوتي النقي وكرر العبارات بصوت مسموع.
-
----
-
-**حقوق التطوير والملكية © 2026 أكاديمية هناوي إنجلش (Henglish Academy). جميع الحقوق محفوظة.**
+Content and game features are changing actively. This README describes the checked-in implementation rather than promising a fixed lesson count or future features.
