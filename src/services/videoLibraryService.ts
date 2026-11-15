@@ -7933,6 +7933,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Can I leave a message for him, please?', arEg: 'ممكن أسيبله رسالة لو سمحت؟' }, { en: 'I will text you the address right away.', arEg: 'هبعتلك العنوان رسالة حالًا.' }],
   },
+  {
+    id: 'airport-conversation-sunshine',
+    movieTitle: 'At the Airport - English Conversation - Travel English',
+    releaseYear: 2023,
+    director: 'Sunshine English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Check In and Board Your Flight',
+    sceneDescription: 'حوار المطار خطوة بخطوة: تسلم الشنطة، تاخد كارت الصعود، وتعرف بوابتك.',
+    youtubeId: 'juPlEnOKl48',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Sunshine English (Official)',
+    dialogueQuote: 'I would like a window seat, please.',
+    actorName: 'Host',
+    characterName: 'Traveler',
+    thumbnailUrl: 'https://img.youtube.com/vi/juPlEnOKl48/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Sunshine English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I would like a window seat, please.', arEg: 'عايز أوضة جنب الشباك لو سمحت.', arFusha: 'عايز أوضة جنب الشباك لو سمحت.', speaker: 'Traveler', keyWords: [{ word: 'window seat', ipa: '', meaningAr: 'أوضة جنب الشباك', meaningEn: '' }, { word: 'I would like', ipa: '', meaningAr: 'عايز', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'How many bags are you checking in?', arEg: 'هتسلم كام شنطة؟', arFusha: 'هتسلم كام شنطة؟', speaker: 'Agent', keyWords: [{ word: 'bags', ipa: '', meaningAr: 'شنط', meaningEn: '' }, { word: 'checking in', ipa: '', meaningAr: 'تسليم (شنط)', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Your flight is boarding now at gate B12.', arEg: 'طيارتك بتقلع دلوقتي من بوابة B12.', arFusha: 'طيارتك بتقلع دلوقتي من بوابة B12.', speaker: 'Agent', keyWords: [{ word: 'boarding', ipa: '', meaningAr: 'صعود للطيارة', meaningEn: '' }, { word: 'gate', ipa: '', meaningAr: 'بوابة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'boarding pass', type: 'collocation', meaningAr: 'بطاقة صعود', meaningEn: '', egyptianEquivalent: 'كارت الصعود', exampleInScene: 'Show your boarding pass, please.' },      { term: 'gate', type: 'cultural', meaningAr: 'بوابة', meaningEn: '', egyptianEquivalent: 'بوابة', exampleInScene: 'Our gate closes at 9 PM.' },      { term: 'check in', type: 'phrasal-verb', meaningAr: 'يسجل وصول', meaningEn: '', egyptianEquivalent: 'يسلم الشنط / يعمل تشيك إن', exampleInScene: 'We checked in online.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where do you board your plane?', questionAr: 'بتركب الطيارة منين؟', options: ['At the gate', 'At the bank', 'At the customs', 'At the hotel'], correctIndex: 0, explanationAr: 'Gate = البوابة اللي بتركب منها الطيارة - اسمع رقمها كويس في أي مطار.' }
+    ],
+    speakingLines: [{ en: 'I would like a window seat, please.', arEg: 'عايز أوضة جنب الشباك لو سمحت.' }, { en: 'Your flight is boarding now at gate B12.', arEg: 'طيارتك بتقلع دلوقتي من بوابة B12.' }],
+  },
+  {
+    id: 'airport-checkin-rachel',
+    movieTitle: 'Checking in at an Airport - American English Conversation - Rachel\'s English',
+    releaseYear: 2021,
+    director: 'Rachel\'s English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'American Airport Check-In',
+    sceneDescription: 'ريتشل بتحاكي حوار التشيك إن الأمريكي بالنطق والسرعة الطبيعيين.',
+    youtubeId: 'Lympa-566Ek',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'Did you pack your bags yourself?',
+    actorName: 'Rachel',
+    characterName: 'Agent',
+    thumbnailUrl: 'https://img.youtube.com/vi/Lympa-566Ek/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Did you pack your bags yourself?', arEg: 'انت اللي رتبت شنطك بنفسك؟', arFusha: 'انت اللي رتبت شنطك بنفسك؟', speaker: 'Agent', keyWords: [{ word: 'pack', ipa: '', meaningAr: 'يرتب شنطة', meaningEn: '' }, { word: 'yourself', ipa: '', meaningAr: 'بنفسك', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Has anyone asked you to carry anything for them?', arEg: 'حد طلب منك تشيل معاك أي حاجة ليه؟', arFusha: 'حد طلب منك تشيل معاك أي حاجة ليه؟', speaker: 'Agent', keyWords: [{ word: 'carry', ipa: '', meaningAr: 'تشيل', meaningEn: '' }, { word: 'for them', ipa: '', meaningAr: 'ليهم', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Here is your boarding pass. Enjoy your flight!', arEg: 'دي كارت الصعود بتاعك. رحلة سعيدة!', arFusha: 'دي كارت الصعود بتاعك. رحلة سعيدة!', speaker: 'Agent', keyWords: [{ word: 'here is', ipa: '', meaningAr: 'دي / ده', meaningEn: '' }, { word: 'enjoy your flight', ipa: '', meaningAr: 'رحلة سعيدة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'pack', type: 'cultural', meaningAr: 'يحزم', meaningEn: '', egyptianEquivalent: 'يرتب شنطة', exampleInScene: 'I packed my bag last night.' },      { term: 'carry-on', type: 'cultural', meaningAr: 'حقيبة يد', meaningEn: '', egyptianEquivalent: 'شنطة يد', exampleInScene: 'Only one carry-on is allowed.' },      { term: 'security check', type: 'collocation', meaningAr: 'تفتيش أمني', meaningEn: '', egyptianEquivalent: 'تفتيش الأمن', exampleInScene: 'The security check was quick.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Why does the agent ask \'Did you pack your bags yourself?\'', questionAr: 'ليه الموظف بيسأل Did you pack your bags yourself؟', options: ['سؤال أمني روتيني عن الشنط', 'عشان يمدح ترتيبك', 'عشان يبيعلك شنطة', 'سؤال عن وزن الشنطة'], correctIndex: 0, explanationAr: 'سؤال أمني ثابت في المطارات الأمريكية: لازم تكون انت اللي رتبت شنطتك وعارف جواها إيه.' }
+    ],
+    speakingLines: [{ en: 'Did you pack your bags yourself?', arEg: 'انت اللي رتبت شنطك بنفسك؟' }, { en: 'Here is your boarding pass. Enjoy your flight!', arEg: 'دي كارت الصعود بتاعك. رحلة سعيدة!' }],
+  },
+  {
+    id: 'hotel-english-bob-canadian',
+    movieTitle: 'Let\'s Learn English at a Hotel - An English Travel Lesson',
+    releaseYear: 2022,
+    director: 'Bob the Canadian',
+    genre: 'Travel Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Check Into Your Room',
+    sceneDescription: 'بوب الكندي بياخدك في جولة فندق: الاستقبال، الغرفة، والخدمات.',
+    youtubeId: 'MYX7RVOf3Yc',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I have a reservation under the name Alhinawi.',
+    actorName: 'Bob the Canadian',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/MYX7RVOf3Yc/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Bob the Canadian Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'I have a reservation under the name Alhinawi.', arEg: 'عندي حجز باسم الحناوي.', arFusha: 'عندي حجز باسم الحناوي.', speaker: 'Instructor', keyWords: [{ word: 'reservation', ipa: '', meaningAr: 'حجز', meaningEn: '' }, { word: 'under the name', ipa: '', meaningAr: 'باسم', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'Breakfast is included and served until 10 AM.', arEg: 'الفطار شامل وبيتقدم لحد الساعة ١٠ الصبح.', arFusha: 'الفطار شامل وبيتقدم لحد الساعة ١٠ الصبح.', speaker: 'Instructor', keyWords: [{ word: 'included', ipa: '', meaningAr: 'شامل', meaningEn: '' }, { word: 'served until', ipa: '', meaningAr: 'بيتقدم لحد', meaningEn: '' }] },      { id: 'sub-3', start: 95, end: 110, en: 'Could I get a late checkout on Friday?', arEg: 'ممكن أخرج متأخر يوم الجمعة؟', arFusha: 'ممكن أخرج متأخر يوم الجمعة؟', speaker: 'Instructor', keyWords: [{ word: 'late checkout', ipa: '', meaningAr: 'خروج متأخر', meaningEn: '' }, { word: 'could I get', ipa: '', meaningAr: 'ممكن أخد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'reservation', type: 'cultural', meaningAr: 'حجز', meaningEn: '', egyptianEquivalent: 'حجز', exampleInScene: 'I made a reservation online.' },      { term: 'front desk', type: 'collocation', meaningAr: 'مكتب الاستقبال', meaningEn: '', egyptianEquivalent: 'الريسيبشن', exampleInScene: 'Ask the front desk for towels.' },      { term: 'checkout', type: 'cultural', meaningAr: 'مغادرة', meaningEn: '', egyptianEquivalent: 'معاد الخروج', exampleInScene: 'Checkout is at noon.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you say your booking is under your name?', questionAr: 'تقول إن الحجز باسمك إزاي؟', options: ['I have a reservation under the name...', 'My name booked this hotel', 'The hotel knows me', 'I reserved my name here'], correctIndex: 0, explanationAr: 'Under the name + اسمك = الحجز باسمك - أول جملة بتقولها في أي فندق.' }
+    ],
+    speakingLines: [{ en: 'I have a reservation under the name Alhinawi.', arEg: 'عندي حجز باسم الحناوي.' }, { en: 'Could I get a late checkout on Friday?', arEg: 'ممكن أخرج متأخر يوم الجمعة؟' }],
+  },
+  {
+    id: 'hotel-checkin-just-speak',
+    movieTitle: 'How to Check Into a Hotel in English - Everyday English',
+    releaseYear: 2024,
+    director: 'Just Speak English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Handle Hotel Problems Politely',
+    sceneDescription: 'تشيك إن كامل + إزاي تشتكي من الغرفة أو تطلب حاجة ناقصة بأدب.',
+    youtubeId: 'Mc9WDaar6bk',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Just Speak English (Official)',
+    dialogueQuote: 'The air conditioning in my room is not working.',
+    actorName: 'Host',
+    characterName: 'Guest',
+    thumbnailUrl: 'https://img.youtube.com/vi/Mc9WDaar6bk/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Just Speak English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'The air conditioning in my room is not working.', arEg: 'التكييف في أوضتي مش شغال.', arFusha: 'التكييف في أوضتي مش شغال.', speaker: 'Guest', keyWords: [{ word: 'air conditioning', ipa: '', meaningAr: 'تكييف', meaningEn: '' }, { word: 'not working', ipa: '', meaningAr: 'مش شغال', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Could you send someone to fix it, please?', arEg: 'ممكن تبعت حد يصلحه لو سمحت؟', arFusha: 'ممكن تبعت حد يصلحه لو سمحت؟', speaker: 'Guest', keyWords: [{ word: 'send someone', ipa: '', meaningAr: 'تبعت حد', meaningEn: '' }, { word: 'fix', ipa: '', meaningAr: 'يصلح', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'I am sorry for the inconvenience. We will move you to another room.', arEg: 'متأسفين للإزعاج. هننقلك لأوضة تانية.', arFusha: 'متأسفين للإزعاج. هننقلك لأوضة تانية.', speaker: 'Receptionist', keyWords: [{ word: 'inconvenience', ipa: '', meaningAr: 'إزعاج', meaningEn: '' }, { word: 'move you to', ipa: '', meaningAr: 'ننقلك لـ', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'air conditioning', type: 'collocation', meaningAr: 'تكييف', meaningEn: '', egyptianEquivalent: 'تكييف', exampleInScene: 'The air conditioning is too cold.' },      { term: 'inconvenience', type: 'cultural', meaningAr: 'إزعاج', meaningEn: '', egyptianEquivalent: 'إزعاج / مشقة', exampleInScene: 'Sorry for the inconvenience.' },      { term: 'fix', type: 'cultural', meaningAr: 'يصلح', meaningEn: '', egyptianEquivalent: 'يصلح', exampleInScene: 'Can you fix the shower?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a polite way to report a broken AC?', questionAr: 'تبلغ عن تكييف بايظ بأدب إزاي؟', options: ['The air conditioning in my room is not working.', 'Your AC is garbage', 'Fix my room now or else', 'This hotel is terrible'], correctIndex: 0, explanationAr: 'Report the problem بهدوء + Could you... please - بتاخد خدمة أسرع وشغل أنضف.' }
+    ],
+    speakingLines: [{ en: 'The air conditioning in my room is not working.', arEg: 'التكييف في أوضتي مش شغال.' }, { en: 'Could you send someone to fix it, please?', arEg: 'ممكن تبعت حد يصلحه لو سمحت؟' }],
+  },
+  {
+    id: 'gym-english-bob-canadian',
+    movieTitle: 'Let\'s Learn English at the Gym - Fitness Vocabulary',
+    releaseYear: 2022,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Work Out in English',
+    sceneDescription: 'بوب الكندي في الجيم: أسماء الأجهزة والتمارين والجمل اللي هتسمعها.',
+    youtubeId: '8vuzfcVel6I',
+    startTime: 35,
+    endTime: 155,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I usually warm up on the treadmill before lifting weights.',
+    actorName: 'Bob the Canadian',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/8vuzfcVel6I/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Bob the Canadian Official',
+    subtitles: [
+      { id: 'sub-1', start: 40, end: 55, en: 'I usually warm up on the treadmill before lifting weights.', arEg: 'أنا عادة بسخن على المشاية قبل ما ألعب حديد.', arFusha: 'أنا عادة بسخن على المشاية قبل ما ألعب حديد.', speaker: 'Instructor', keyWords: [{ word: 'warm up', ipa: '', meaningAr: 'أسخن', meaningEn: '' }, { word: 'lifting weights', ipa: '', meaningAr: 'ألعب حديد', meaningEn: '' }] },      { id: 'sub-2', start: 65, end: 80, en: 'How many sets and reps do you do?', arEg: 'بتعمل كام سيت وكام عدة؟', arFusha: 'بتعمل كام سيت وكام عدة؟', speaker: 'Instructor', keyWords: [{ word: 'sets', ipa: '', meaningAr: 'سيتات', meaningEn: '' }, { word: 'reps', ipa: '', meaningAr: 'عدات', meaningEn: '' }] },      { id: 'sub-3', start: 90, end: 105, en: 'Do not forget to stretch after your workout.', arEg: 'متنساش تعمل إطالات بعد التمرين.', arFusha: 'متنساش تعمل إطالات بعد التمرين.', speaker: 'Instructor', keyWords: [{ word: 'stretch', ipa: '', meaningAr: 'إطالات', meaningEn: '' }, { word: 'workout', ipa: '', meaningAr: 'تمرين', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'warm up', type: 'phrasal-verb', meaningAr: 'يسخن', meaningEn: '', egyptianEquivalent: 'يسخن قبل التمرين', exampleInScene: 'Always warm up first.' },      { term: 'treadmill', type: 'cultural', meaningAr: 'جهاز مشي', meaningEn: '', egyptianEquivalent: 'مشاية', exampleInScene: 'I run on the treadmill.' },      { term: 'workout', type: 'cultural', meaningAr: 'تمرين', meaningEn: '', egyptianEquivalent: 'تمرين', exampleInScene: 'That was a great workout!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What are \'sets and reps\'?', questionAr: 'يعني إيه sets and reps؟', options: ['مجموعات وعدات التمرين', 'أنواع الأجهزة', 'أوقات الجيم', 'تمارين الإطالة'], correctIndex: 0, explanationAr: 'Set = مجموعة عدات ورا بعض، Rep = عدة واحدة - أهم مصطلحين في أي جيم.' }
+    ],
+    speakingLines: [{ en: 'I usually warm up on the treadmill before lifting weights.', arEg: 'أنا عادة بسخن على المشاية قبل ما ألعب حديد.' }, { en: 'Do not forget to stretch after your workout.', arEg: 'متنساش تعمل إطالات بعد التمرين.' }],
+  },
+  {
+    id: 'gym-vocab-giovana-real',
+    movieTitle: 'Gym Vocabulary - Real English Lesson - English by Giovana',
+    releaseYear: 2023,
+    director: 'English by Giovana',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Talk About Your Fitness Routine',
+    sceneDescription: 'جيوفانا بتعلمك تتكلم عن روتينك الرياضي بثقة: تمارين، عضلات، وأهداف.',
+    youtubeId: 'pGQzIf0Jgwo',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English by Giovana (Official)',
+    dialogueQuote: 'I am trying to build muscle and lose fat at the same time.',
+    actorName: 'Giovana',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/pGQzIf0Jgwo/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English by Giovana Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I am trying to build muscle and lose fat at the same time.', arEg: 'بحاول أبني عضل وأخس دهون في نفس الوقت.', arFusha: 'بحاول أبني عضل وأخس دهون في نفس الوقت.', speaker: 'Instructor', keyWords: [{ word: 'build muscle', ipa: '', meaningAr: 'أبني عضل', meaningEn: '' }, { word: 'lose fat', ipa: '', meaningAr: 'أخس دهون', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Squats and lunges are great for your legs.', arEg: 'السكوات واللانجز تمارين جامدة للرجلين.', arFusha: 'السكوات واللانجز تمارين جامدة للرجلين.', speaker: 'Instructor', keyWords: [{ word: 'squats', ipa: '', meaningAr: 'سكوات', meaningEn: '' }, { word: 'great for', ipa: '', meaningAr: 'جامد لـ', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Consistency is more important than intensity.', arEg: 'الاستمرارية أهم من الشدة.', arFusha: 'الاستمرارية أهم من الشدة.', speaker: 'Instructor', keyWords: [{ word: 'consistency', ipa: '', meaningAr: 'استمرارية', meaningEn: '' }, { word: 'intensity', ipa: '', meaningAr: 'شدة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'build muscle', type: 'collocation', meaningAr: 'بناء عضل', meaningEn: '', egyptianEquivalent: 'يبني عضل', exampleInScene: 'Protein helps build muscle.' },      { term: 'lose weight', type: 'collocation', meaningAr: 'خسارة وزن', meaningEn: '', egyptianEquivalent: 'يخس', exampleInScene: 'She lost weight with cardio.' },      { term: 'consistency', type: 'cultural', meaningAr: 'استمرارية', meaningEn: '', egyptianEquivalent: 'استمرارية', exampleInScene: 'Consistency beats motivation.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase means exercising regularly over time?', questionAr: 'أنهي عبارة معناها التمرن بانتظام على مدار الوقت؟', options: ['Consistency', 'Intensity', 'One big workout', 'Rest day'], correctIndex: 0, explanationAr: 'Consistency = إنك تظهر كل يوم حتى لو شوية - سر أي تقدم في الجيم أو الإنجليزي.' }
+    ],
+    speakingLines: [{ en: 'I am trying to build muscle and lose fat at the same time.', arEg: 'بحاول أبني عضل وأخس دهون في نفس الوقت.' }, { en: 'Consistency is more important than intensity.', arEg: 'الاستمرارية أهم من الشدة.' }],
+  },
+  {
+    id: 'renting-apartment-oxford',
+    movieTitle: 'Renting a House or Apartment in English - Vocabulary and Conversation',
+    releaseYear: 2021,
+    director: 'Oxford Online English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B2',
+    sceneTitle: 'View a Flat and Sign a Lease',
+    sceneDescription: 'تشوف شقة، تسأل على الإيجار والمرافق، وتفهم عقد الإيجار قبل ما توقع.',
+    youtubeId: 'vKTCzjgkzrQ',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'Does the rent include utilities like water and electricity?',
+    actorName: 'Host',
+    characterName: 'Tenant',
+    thumbnailUrl: 'https://img.youtube.com/vi/vKTCzjgkzrQ/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'Does the rent include utilities like water and electricity?', arEg: 'الإيجار شامل المرافق زي الميه والنور؟', arFusha: 'الإيجار شامل المرافق زي الميه والنور؟', speaker: 'Tenant', keyWords: [{ word: 'rent', ipa: '', meaningAr: 'إيجار', meaningEn: '' }, { word: 'utilities', ipa: '', meaningAr: 'مرافق', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'You will need to pay a two-month deposit upfront.', arEg: 'هتحتاج تدفع تأمين شهرين مقدم.', arFusha: 'هتحتاج تدفع تأمين شهرين مقدم.', speaker: 'Landlord', keyWords: [{ word: 'deposit', ipa: '', meaningAr: 'تأمين', meaningEn: '' }, { word: 'upfront', ipa: '', meaningAr: 'مقدم', meaningEn: '' }] },      { id: 'sub-3', start: 95, end: 110, en: 'The lease runs for one year with an option to renew.', arEg: 'العقد سنة كاملة مع إمكانية التجديد.', arFusha: 'العقد سنة كاملة مع إمكانية التجديد.', speaker: 'Landlord', keyWords: [{ word: 'lease', ipa: '', meaningAr: 'عقد إيجار', meaningEn: '' }, { word: 'renew', ipa: '', meaningAr: 'تجديد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'utilities', type: 'cultural', meaningAr: 'مرافق', meaningEn: '', egyptianEquivalent: 'مرافق (ميه/نور/غاز)', exampleInScene: 'Utilities are not included.' },      { term: 'deposit', type: 'cultural', meaningAr: 'وديعة تأمين', meaningEn: '', egyptianEquivalent: 'تأمين', exampleInScene: 'The deposit is refundable.' },      { term: 'lease', type: 'cultural', meaningAr: 'عقد إيجار', meaningEn: '', egyptianEquivalent: 'عقد الإيجار', exampleInScene: 'Read the lease carefully.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What question should you ask before signing?', questionAr: 'تسأل إيه قبل ما توقع العقد؟', options: ['Does the rent include utilities?', 'What color are the walls?', 'Is the sofa pretty?', 'Do you like music?'], correctIndex: 0, explanationAr: 'اسأل دايمًا: الإيجار شامل إيه؟ - المرافق ممكن تضيف مبلغ كبير على الإيجار.' }
+    ],
+    speakingLines: [{ en: 'Does the rent include utilities like water and electricity?', arEg: 'الإيجار شامل المرافق زي الميه والنور؟' }, { en: 'The lease runs for one year with an option to renew.', arEg: 'العقد سنة كاملة مع إمكانية التجديد.' }],
+  },
+  {
+    id: 'weather-talk-bob-canadian',
+    movieTitle: 'Weather Talk - Learn English Words and Phrases to Talk About Weather',
+    releaseYear: 2022,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Make Small Talk About Weather',
+    sceneDescription: 'كلمات وجمل الطقس للحديث الاجتماعي: حر، برد، مطر، ورطوبة.',
+    youtubeId: '_N2Q2_TtG0o',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'It is boiling hot today, is it not?',
+    actorName: 'Bob the Canadian',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/_N2Q2_TtG0o/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Bob the Canadian Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'It is boiling hot today, is it not?', arEg: 'الجو حر قوي النهارده، مش كده؟', arFusha: 'الجو حر قوي النهارده، مش كده؟', speaker: 'Instructor', keyWords: [{ word: 'boiling hot', ipa: '', meaningAr: 'حر قوي', meaningEn: '' }, { word: 'is it not', ipa: '', meaningAr: 'مش كده', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It looks like it might rain later.', arEg: 'شكله هيمطر بعدين.', arFusha: 'شكله هيمطر بعدين.', speaker: 'Instructor', keyWords: [{ word: 'looks like', ipa: '', meaningAr: 'شكله', meaningEn: '' }, { word: 'might rain', ipa: '', meaningAr: 'ممكن يمطر', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'The humidity makes it feel much warmer.', arEg: 'الرطوبة مخلية الجو حاسسنا إنه أحر بكتير.', arFusha: 'الرطوبة مخلية الجو حاسسنا إنه أحر بكتير.', speaker: 'Instructor', keyWords: [{ word: 'humidity', ipa: '', meaningAr: 'رطوبة', meaningEn: '' }, { word: 'feel much warmer', ipa: '', meaningAr: 'نحس إنه أحر بكتير', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'boiling hot', type: 'collocation', meaningAr: 'شديد الحرارة', meaningEn: '', egyptianEquivalent: 'حر نار', exampleInScene: 'It is boiling hot in August.' },      { term: 'freezing', type: 'cultural', meaningAr: 'شديد البرودة', meaningEn: '', egyptianEquivalent: 'برد قارص', exampleInScene: 'It is freezing outside.' },      { term: 'humidity', type: 'cultural', meaningAr: 'رطوبة', meaningEn: '', egyptianEquivalent: 'رطوبة', exampleInScene: 'The humidity is high today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase starts weather small talk naturally?', questionAr: 'أنهي عبارة بتفتح حديث طبيعي عن الجو؟', options: ['It is boiling hot today, is it not?', 'Tell me your salary', 'Why are you here?', 'Move aside please'], correctIndex: 0, explanationAr: 'الجو أأمن موضوع small talk في العالم - افتتح بيه أي حوار مع أي حد.' }
+    ],
+    speakingLines: [{ en: 'It is boiling hot today, is it not?', arEg: 'الجو حر قوي النهارده، مش كده؟' }, { en: 'It looks like it might rain later.', arEg: 'شكله هيمطر بعدين.' }],
+  },
+  {
+    id: 'sports-talk-oxford',
+    movieTitle: 'Talk About Sports in English - Improve Spoken English',
+    releaseYear: 2021,
+    director: 'Oxford Online English',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Chat About the Match Last Night',
+    sceneDescription: 'تتكلم عن الرياضة زي النيتيف: ماتشات، فرق، نتايج، وآراء.',
+    youtubeId: 'QHOmj2TO4mM',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'Did you catch the game last night?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/QHOmj2TO4mM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Did you catch the game last night?', arEg: 'شفت الماتش مبارح بالليل؟', arFusha: 'شفت الماتش مبارح بالليل؟', speaker: 'Speaker', keyWords: [{ word: 'catch the game', ipa: '', meaningAr: 'تشوف الماتش', meaningEn: '' }, { word: 'last night', ipa: '', meaningAr: 'مبارح بالليل', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'They were winning until the last minute.', arEg: 'كانوا كسبانين لحد آخر دقيقة.', arFusha: 'كانوا كسبانين لحد آخر دقيقة.', speaker: 'Speaker', keyWords: [{ word: 'winning', ipa: '', meaningAr: 'كسبانين', meaningEn: '' }, { word: 'until the last minute', ipa: '', meaningAr: 'لحد آخر دقيقة', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'I have been a fan of this team since I was a kid.', arEg: 'أنا مشجع للفريق ده من وأنا صغير.', arFusha: 'أنا مشجع للفريق ده من وأنا صغير.', speaker: 'Speaker', keyWords: [{ word: 'fan of', ipa: '', meaningAr: 'مشجع لـ', meaningEn: '' }, { word: 'since I was a kid', ipa: '', meaningAr: 'من وأنا صغير', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'catch the game', type: 'collocation', meaningAr: 'مشاهدة المباراة', meaningEn: '', egyptianEquivalent: 'يتفرج على الماتش', exampleInScene: 'Did you catch the game?' },      { term: 'score', type: 'cultural', meaningAr: 'نتيجة', meaningEn: '', egyptianEquivalent: 'نتيجة', exampleInScene: 'What was the final score?' },      { term: 'fan', type: 'cultural', meaningAr: 'مشجع', meaningEn: '', egyptianEquivalent: 'مشجع', exampleInScene: 'He is a big football fan.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'Did you catch the game?\' mean?', questionAr: 'يعني إيه Did you catch the game؟', options: ['شفت الماتش؟', 'لعبت الماتش؟', 'مسكت الكورة؟', 'اشتريت تذكرة؟'], correctIndex: 0, explanationAr: 'Catch the game = تشوف الماتش - من أكتر تعبيرات النيتيف شيوعًا في كلام الرياضة.' }
+    ],
+    speakingLines: [{ en: 'Did you catch the game last night?', arEg: 'شفت الماتش مبارح بالليل؟' }, { en: 'I have been a fan of this team since I was a kid.', arEg: 'أنا مشجع للفريق ده من وأنا صغير.' }],
+  },
+  {
+    id: 'sports-daily-mr-english',
+    movieTitle: 'Talking about Sports in English - Daily English Conversation',
+    releaseYear: 2023,
+    director: 'Mr. English Channel',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Which Sports Do You Play?',
+    sceneDescription: 'محادثة بسيطة عن الرياضة: بتلعب إيه، بتشجع مين، وكام مرة في الأسبوع.',
+    youtubeId: 'DGj-Q49rOfg',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Mr. English Channel (Official)',
+    dialogueQuote: 'How often do you play football?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/DGj-Q49rOfg/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Mr. English Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'How often do you play football?', arEg: 'بتلعب كورة كام مرة؟', arFusha: 'بتلعب كورة كام مرة؟', speaker: 'Speaker', keyWords: [{ word: 'how often', ipa: '', meaningAr: 'كام مرة / كل قد إيه', meaningEn: '' }, { word: 'play football', ipa: '', meaningAr: 'تلعب كورة', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'I play twice a week with my friends.', arEg: 'بلعب مرتين في الأسبوع مع صحابي.', arFusha: 'بلعب مرتين في الأسبوع مع صحابي.', speaker: 'Speaker', keyWords: [{ word: 'twice a week', ipa: '', meaningAr: 'مرتين في الأسبوع', meaningEn: '' }, { word: 'with my friends', ipa: '', meaningAr: 'مع صحابي', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'Which team do you support?', arEg: 'بتشجع أنهي فريق؟', arFusha: 'بتشجع أنهي فريق؟', speaker: 'Speaker', keyWords: [{ word: 'which team', ipa: '', meaningAr: 'أنهي فريق', meaningEn: '' }, { word: 'support', ipa: '', meaningAr: 'تشجع', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'how often', type: 'collocation', meaningAr: 'كم مرة', meaningEn: '', egyptianEquivalent: 'كل قد إيه', exampleInScene: 'How often do you exercise?' },      { term: 'twice a week', type: 'collocation', meaningAr: 'مرتين في الأسبوع', meaningEn: '', egyptianEquivalent: 'مرتين في الأسبوع', exampleInScene: 'I go to the gym twice a week.' },      { term: 'support', type: 'cultural', meaningAr: 'يشجع', meaningEn: '', egyptianEquivalent: 'يشجع فريق', exampleInScene: 'Which team do you support?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about frequency?', questionAr: 'تسأل عن عدد المرات إزاي؟', options: ['How often do you play?', 'How long do you play?', 'How much do you play?', 'How far do you play?'], correctIndex: 0, explanationAr: 'How often = كل قد إيه / كام مرة - للتكرار. How long للمدة، وHow much للكمية.' }
+    ],
+    speakingLines: [{ en: 'How often do you play football?', arEg: 'بتلعب كورة كام مرة؟' }, { en: 'I play twice a week with my friends.', arEg: 'بلعب مرتين في الأسبوع مع صحابي.' }],
+  },
 ];
 
 // Helper to get all videos
