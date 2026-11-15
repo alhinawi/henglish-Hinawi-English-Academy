@@ -11,7 +11,7 @@ interface MainLayoutProps {
   onOpenSearch: () => void;
   onOpenVoiceSettings: () => void;
   onOpenSettings: () => void;
-  onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
+  onOpenAuthModal: (tab?: 'login' | 'register' | 'migrate') => void;
   userProfile: UserProfile;
   notifications: AppNotification[];
   unreadCount: number;
@@ -20,7 +20,7 @@ interface MainLayoutProps {
   onToggleRole: () => void;
   onResetProgress: () => void;
   onSignOut?: () => void;
-  authSessionType?: 'guest' | 'demo' | 'authenticated';
+  authSessionType?: 'guest' | 'authenticated';
   children: React.ReactNode;
 }
 
