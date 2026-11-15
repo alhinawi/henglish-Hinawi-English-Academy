@@ -5833,6 +5833,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'What did I miss in the last class?', arEg: 'إيه اللي فاتني في الحصة اللي فاتت؟' }, { en: 'When is the assignment due?', arEg: 'الواجب تسليمه امتى؟' }],
   },
+  {
+    id: 'personality-poc-15',
+    movieTitle: '15 English Personality Adjectives - How to Talk About Someone\'s Personality - POC English',
+    releaseYear: 2022,
+    director: 'POC English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Describe Anyone\'s Character',
+    sceneDescription: '15 صفة شخصية أساسية: reliable, stubborn, easygoing - أوصف أي حد بإنجليزي دقيق.',
+    youtubeId: '8_I2sg8Z7Yk',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'POC English (Official)',
+    dialogueQuote: 'He is very reliable; he never lets you down.',
+    actorName: 'Coach',
+    characterName: 'Coach',
+    thumbnailUrl: 'https://img.youtube.com/vi/8_I2sg8Z7Yk/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'POC English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'He is very reliable; he never lets you down.', arEg: 'هو شخص معتمد عليه جداً؛ عمره ما بيخلّف وعده.', arFusha: 'هو شخص معتمد عليه جداً؛ عمره ما بيخلّف وعده.', speaker: 'Coach', keyWords: [{ word: 'reliable', ipa: '', meaningAr: 'معتمد عليه', meaningEn: '' }, { word: 'lets you down', ipa: '', meaningAr: 'بيخلّف وعده / بيخذلك', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'She is too stubborn to change her mind.', arEg: 'هي عنيدة أوي، صعب تغير رأيها.', arFusha: 'هي عنيدة أوي، صعب تغير رأيها.', speaker: 'Coach', keyWords: [{ word: 'stubborn', ipa: '', meaningAr: 'عنيد', meaningEn: '' }, { word: 'change her mind', ipa: '', meaningAr: 'تغير رأيها', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'reliable', type: 'cultural', meaningAr: 'معتمد عليه / جدير بالثقة', meaningEn: '', egyptianEquivalent: 'مضمون', exampleInScene: 'A reliable friend.' },      { term: 'stubborn', type: 'cultural', meaningAr: 'عنيد', meaningEn: '', egyptianEquivalent: 'عنيدة', exampleInScene: 'My brother is stubborn.' },      { term: 'let someone down', type: 'phrasal-verb', meaningAr: 'يخذل حد', meaningEn: '', egyptianEquivalent: 'يخلّف وعده', exampleInScene: 'Do not let me down.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'reliable\' mean?', questionAr: 'معنى reliable؟', options: ['شخص معتمد عليه', 'شخص غني', 'شخص مشهور', 'شخص سريع'], correctIndex: 0, explanationAr: 'reliable معناها تقدر تعتمد عليه - ما بيخلفش وعده أبداً.' }
+    ],
+    speakingLines: [{ en: 'He is very reliable; he never lets you down.', arEg: 'هو شخص معتمد عليه جداً؛ عمره ما بيخلّف وعده.' }, { en: 'She is too stubborn to change her mind.', arEg: 'هي عنيدة أوي، صعب تغير رأيها.' }],
+  },
+  {
+    id: 'personality-letstalk-beginner',
+    movieTitle: 'Personality Adjectives - Words to Describe Someone\'s Qualities - Let\'s Talk',
+    releaseYear: 2020,
+    director: 'Let\'s Talk',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'First Personality Words',
+    sceneDescription: 'صفات الشخصية للمبتدئين: kind, funny, lazy, clever - الكلمات اللي هتستخدمها كل يوم.',
+    youtubeId: 'hKJlw8za4cs',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Let\'s Talk - Free English Lessons (Official)',
+    dialogueQuote: 'She is so kind; she helps everyone.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/hKJlw8za4cs/hqdefault.jpg',
+    category: 'english_for_beginners',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Let\'s Talk Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'She is so kind; she helps everyone.', arEg: 'هي طيبة جداً؛ بتساعد كل الناس.', arFusha: 'هي طيبة جداً؛ بتساعد كل الناس.', speaker: 'Teacher', keyWords: [{ word: 'kind', ipa: '', meaningAr: 'طيب', meaningEn: '' }, { word: 'helps everyone', ipa: '', meaningAr: 'بتساعد الكل', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'My little brother is a bit lazy.', arEg: 'أخويا الصغير كسلان شوية.', arFusha: 'أخويا الصغير كسلان شوية.', speaker: 'Teacher', keyWords: [{ word: 'lazy', ipa: '', meaningAr: 'كسلان', meaningEn: '' }, { word: 'a bit', ipa: '', meaningAr: 'شوية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'kind', type: 'cultural', meaningAr: 'طيب', meaningEn: '', egyptianEquivalent: 'حنين', exampleInScene: 'Be kind to people.' },      { term: 'lazy', type: 'cultural', meaningAr: 'كسلان', meaningEn: '', egyptianEquivalent: 'كسلانة', exampleInScene: 'The cat is lazy.' },      { term: 'clever', type: 'cultural', meaningAr: 'شاطر / ذكي', meaningEn: '', egyptianEquivalent: 'ناصح', exampleInScene: 'A clever student.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the opposite of \'lazy\'?', questionAr: 'عكس lazy إيه؟', options: ['hard-working', 'kind', 'funny', 'quiet'], correctIndex: 0, explanationAr: 'lazy معناها كسلان، وعكسها hard-working يعني مجتهد.' }
+    ],
+    speakingLines: [{ en: 'She is so kind; she helps everyone.', arEg: 'هي طيبة جداً؛ بتساعد كل الناس.' }, { en: 'My little brother is a bit lazy.', arEg: 'أخويا الصغير كسلان شوية.' }],
+  },
+  {
+    id: 'pharmacy-speakeasy-real',
+    movieTitle: 'Real Life Pharmacy Conversation - Easy English Speaking Practice - SpeakEasy',
+    releaseYear: 2023,
+    director: 'SpeakEasy Learn English Faster',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Buying Medicine',
+    sceneDescription: 'حوار صيدلية حقيقي: تطلب دوا، توصف الألم، وتفهم الجرعة - محادثة سهلة للمبتدئين.',
+    youtubeId: '4GUuV2fCLno',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'SpeakEasy Learn English Faster (Official)',
+    dialogueQuote: 'Do you have something for a sore throat?',
+    actorName: 'Customer',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/4GUuV2fCLno/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'SpeakEasy Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Do you have something for a sore throat?', arEg: 'عندكوا حاجة لوجع الحلق؟', arFusha: 'عندكوا حاجة لوجع الحلق؟', speaker: 'Customer', keyWords: [{ word: 'sore throat', ipa: '', meaningAr: 'وجع حلق', meaningEn: '' }, { word: 'something for', ipa: '', meaningAr: 'حاجة لـ', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Take one tablet every eight hours.', arEg: 'خد قرص كل تمن ساعات.', arFusha: 'خد قرص كل تمن ساعات.', speaker: 'Pharmacist', keyWords: [{ word: 'tablet', ipa: '', meaningAr: 'قرص', meaningEn: '' }, { word: 'every eight hours', ipa: '', meaningAr: 'كل تمن ساعات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'sore throat', type: 'collocation', meaningAr: 'وجع حلق', meaningEn: '', egyptianEquivalent: 'حلقي واجعاني', exampleInScene: 'I have a sore throat.' },      { term: 'tablet', type: 'cultural', meaningAr: 'قرص دوا', meaningEn: '', egyptianEquivalent: 'حباية', exampleInScene: 'Take one tablet daily.' },      { term: 'over the counter', type: 'collocation', meaningAr: 'بدون روشتة', meaningEn: '', egyptianEquivalent: 'مباشرة من الرف', exampleInScene: 'This medicine is over the counter.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'over the counter\' mean at a pharmacy?', questionAr: 'معنى over the counter في الصيدلية؟', options: ['دوا بدون روشتة', 'دوا غالي', 'دوا مستورد', 'دوا منتهي الصلاحية'], correctIndex: 0, explanationAr: 'over the counter معناها دوا تشتريه مباشرة من غير روشتة دكتور.' }
+    ],
+    speakingLines: [{ en: 'Do you have something for a sore throat?', arEg: 'عندكوا حاجة لوجع الحلق؟' }, { en: 'Take one tablet every eight hours.', arEg: 'خد قرص كل تمن ساعات.' }],
+  },
+  {
+    id: 'pharmacy-tangerine-drugstore',
+    movieTitle: 'At the Pharmacy - Everyday English Conversation - Tangerine Academy',
+    releaseYear: 2022,
+    director: 'Learn English with Tangerine Academy',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'At the Drugstore',
+    sceneDescription: 'محادثة يومية في الصيدلية: الأعراض، الدوا البديل، والسؤال عن الآثار الجانبية.',
+    youtubeId: 'UdakI1zk0xE',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Tangerine Academy (Official)',
+    dialogueQuote: 'Does this medicine have any side effects?',
+    actorName: 'Customer',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/UdakI1zk0xE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Tangerine Academy Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Does this medicine have any side effects?', arEg: 'الدوا ده ليه آثار جانبية؟', arFusha: 'الدوا ده ليه آثار جانبية؟', speaker: 'Customer', keyWords: [{ word: 'side effects', ipa: '', meaningAr: 'آثار جانبية', meaningEn: '' }, { word: 'medicine', ipa: '', meaningAr: 'دوا', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It may cause drowsiness, so do not drive.', arEg: 'ممكن يسبب نعاس، فمتسوقش بعده.', arFusha: 'ممكن يسبب نعاس، فمتسوقش بعده.', speaker: 'Pharmacist', keyWords: [{ word: 'drowsiness', ipa: '', meaningAr: 'نعاس', meaningEn: '' }, { word: 'cause', ipa: '', meaningAr: 'يسبب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'side effects', type: 'collocation', meaningAr: 'آثار جانبية', meaningEn: '', egyptianEquivalent: 'أضرار جانبية', exampleInScene: 'Check the side effects.' },      { term: 'drowsiness', type: 'cultural', meaningAr: 'نعاس', meaningEn: '', egyptianEquivalent: 'دوخة ونوم', exampleInScene: 'This pill causes drowsiness.' },      { term: 'dose', type: 'cultural', meaningAr: 'جرعة', meaningEn: '', egyptianEquivalent: 'الجرعة', exampleInScene: 'Do not miss a dose.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What are \'side effects\'?', questionAr: 'يعني إيه side effects؟', options: ['آثار جانبية للدوا', 'فوايد الدوا', 'سعر الدوا', 'اسم الدوا'], correctIndex: 0, explanationAr: 'الـ side effects هي الآثار الجانبية اللي ممكن الدوا يسببها زي النعاس أو الدوخة.' }
+    ],
+    speakingLines: [{ en: 'Does this medicine have any side effects?', arEg: 'الدوا ده ليه آثار جانبية؟' }, { en: 'It may cause drowsiness, so do not drive.', arEg: 'ممكن يسبب نعاس، فمتسوقش بعده.' }],
+  },
+  {
+    id: 'appointment-vanessa-schedule',
+    movieTitle: 'How to Schedule an Appointment in English - Speak English With Vanessa',
+    releaseYear: 2021,
+    director: 'Speak English With Vanessa',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Booking Like a Native',
+    sceneDescription: 'فانيسا بتعلمك تحجز ميعاد بالتليفون بثقة: المواعيد المتاحة، التأكيد، والإلغاء بأدب.',
+    youtubeId: '3UYBsBnJe7U',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'I would like to schedule an appointment for Thursday.',
+    actorName: 'Vanessa',
+    characterName: 'Caller',
+    thumbnailUrl: 'https://img.youtube.com/vi/3UYBsBnJe7U/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I would like to schedule an appointment for Thursday.', arEg: 'عايز أحجز ميعاد يوم الخميس.', arFusha: 'عايز أحجز ميعاد يوم الخميس.', speaker: 'Caller', keyWords: [{ word: 'schedule', ipa: '', meaningAr: 'يحجز / يحدد ميعاد', meaningEn: '' }, { word: 'appointment', ipa: '', meaningAr: 'ميعاد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am afraid I need to cancel our meeting.', arEg: 'للأسف محتاج ألغي ميعادنا.', arFusha: 'للأسف محتاج ألغي ميعادنا.', speaker: 'Caller', keyWords: [{ word: 'cancel', ipa: '', meaningAr: 'يلغي', meaningEn: '' }, { word: 'meeting', ipa: '', meaningAr: 'ميعاد / اجتماع', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'schedule an appointment', type: 'collocation', meaningAr: 'يحجز ميعاد', meaningEn: '', egyptianEquivalent: 'يعمل أبونمنت', exampleInScene: 'Schedule an appointment online.' },      { term: 'cancel', type: 'cultural', meaningAr: 'يلغي', meaningEn: '', egyptianEquivalent: 'يلغي', exampleInScene: 'Cancel the appointment early.' },      { term: 'reschedule', type: 'cultural', meaningAr: 'يأجل لميعاد تاني', meaningEn: '', egyptianEquivalent: 'يغير الميعاد', exampleInScene: 'Can we reschedule?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'reschedule\' mean?', questionAr: 'معنى reschedule؟', options: ['يغير الميعاد لميعاد تاني', 'يلغي نهائياً', 'يأكد الميعاد', 'ينسى الميعاد'], correctIndex: 0, explanationAr: 'reschedule معناها تغير الميعاد لوقت تاني - مش إلغاء، بس تأجيل.' }
+    ],
+    speakingLines: [{ en: 'I would like to schedule an appointment for Thursday.', arEg: 'عايز أحجز ميعاد يوم الخميس.' }, { en: 'I am afraid I need to cancel our meeting.', arEg: 'للأسف محتاج ألغي ميعادنا.' }],
+  },
+  {
+    id: 'appointment-rebecca-prep',
+    movieTitle: 'How to Make an Appointment in English - Prepositions & Expressions - engVid',
+    releaseYear: 2019,
+    director: 'engVid',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Appointments and Prepositions',
+    sceneDescription: 'ريبيكا بتركز على حروف الجر في المواعيد: on Monday, at five, in the morning - الغلطة الشائعة.',
+    youtubeId: 'h967Qow7XN4',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Rebecca - engVid (Official)',
+    dialogueQuote: 'Can we meet on Friday at three?',
+    actorName: 'Rebecca',
+    characterName: 'Rebecca',
+    thumbnailUrl: 'https://img.youtube.com/vi/h967Qow7XN4/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Can we meet on Friday at three?', arEg: 'ممكن نتقابل يوم الجمعة الساعة تلاتة؟', arFusha: 'ممكن نتقابل يوم الجمعة الساعة تلاتة؟', speaker: 'Rebecca', keyWords: [{ word: 'on Friday', ipa: '', meaningAr: 'يوم الجمعة', meaningEn: '' }, { word: 'at three', ipa: '', meaningAr: 'الساعة تلاتة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Does Tuesday morning work for you?', arEg: 'الثلاثة الصبح يناسبك؟', arFusha: 'الثلاثة الصبح يناسبك؟', speaker: 'Rebecca', keyWords: [{ word: 'work for you', ipa: '', meaningAr: 'يناسبك', meaningEn: '' }, { word: 'morning', ipa: '', meaningAr: 'الصبح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'on (days)', type: 'cultural', meaningAr: 'في / يوم (للأيام)', meaningEn: '', egyptianEquivalent: 'يوم', exampleInScene: 'On Saturday we rest.' },      { term: 'at (times)', type: 'cultural', meaningAr: 'الساعة (للأوقات)', meaningEn: '', egyptianEquivalent: 'الساعة', exampleInScene: 'At nine o\'clock.' },      { term: 'work for someone', type: 'collocation', meaningAr: 'يناسب حد', meaningEn: '', egyptianEquivalent: 'يمشي معاك', exampleInScene: 'Does five o\'clock work for you?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which preposition: ___ Monday?', questionAr: 'أنهي حرف جر: ___ Monday؟', options: ['on', 'at', 'in', 'by'], correctIndex: 0, explanationAr: 'مع الأيام بنستخدم on: on Monday. ومع الساعات at، ومع الشهور والفصول in.' }
+    ],
+    speakingLines: [{ en: 'Can we meet on Friday at three?', arEg: 'ممكن نتقابل يوم الجمعة الساعة تلاتة؟' }, { en: 'Does Tuesday morning work for you?', arEg: 'الثلاثة الصبح يناسبك؟' }],
+  },
+  {
+    id: 'returns-rep-refund',
+    movieTitle: 'Refund & Return English - Real Phrases for Shopping - Real English Podcast',
+    releaseYear: 2023,
+    director: 'Real English Podcast',
+    genre: 'English Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Get Your Money Back',
+    sceneDescription: 'عبارات الإرجاع والاسترداد الحقيقية: الفاتورة، تبديل المقاس، وطلب الفلوس - من بودكاست واقعي.',
+    youtubeId: 'Auq91oy1W_Y',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Real English Podcast (Official)',
+    dialogueQuote: 'I would like to return this jacket; it does not fit.',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/Auq91oy1W_Y/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Real English Podcast Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I would like to return this jacket; it does not fit.', arEg: 'عايز أرجّع الجاكيت ده؛ مش مقاسي.', arFusha: 'عايز أرجّع الجاكيت ده؛ مش مقاسي.', speaker: 'Customer', keyWords: [{ word: 'return', ipa: '', meaningAr: 'يرجّع', meaningEn: '' }, { word: 'does not fit', ipa: '', meaningAr: 'مش مقاسي', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Can I get a refund or an exchange?', arEg: 'ممكن أسترد فلوسي ولا أبدّلها؟', arFusha: 'ممكن أسترد فلوسي ولا أبدّلها؟', speaker: 'Customer', keyWords: [{ word: 'refund', ipa: '', meaningAr: 'استرداد فلوس', meaningEn: '' }, { word: 'exchange', ipa: '', meaningAr: 'تبديل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'return an item', type: 'collocation', meaningAr: 'يرجّع منتج', meaningEn: '', egyptianEquivalent: 'يرجع الحاجة', exampleInScene: 'Return it within 30 days.' },      { term: 'refund', type: 'cultural', meaningAr: 'استرداد فلوس', meaningEn: '', egyptianEquivalent: 'فلوسي ترجع', exampleInScene: 'Get a full refund.' },      { term: 'exchange', type: 'cultural', meaningAr: 'تبديل', meaningEn: '', egyptianEquivalent: 'تغيير', exampleInScene: 'An exchange is fine too.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between \'refund\' and \'exchange\'?', questionAr: 'الفرق بين refund و exchange؟', options: ['refund فلوسك ترجع و exchange تبديل بمنتج تاني', 'الاتنين زي بعض', 'refund تبديل و exchange فلوس', 'الاتنين خصم'], correctIndex: 0, explanationAr: 'refund معناها فلوسك ترجعلك، أما exchange فبتبدل المنتج بواحد تاني.' }
+    ],
+    speakingLines: [{ en: 'I would like to return this jacket; it does not fit.', arEg: 'عايز أرجّع الجاكيت ده؛ مش مقاسي.' }, { en: 'Can I get a refund or an exchange?', arEg: 'ممكن أسترد فلوسي ولا أبدّلها؟' }],
+  },
+  {
+    id: 'returns-ellii-dialogue',
+    movieTitle: 'Returning an Item - Everyday English Dialogues - Ellii',
+    releaseYear: 2021,
+    director: 'Ellii',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Back to the Store',
+    sceneDescription: 'حوار إرجاع بسيط: الإيصال، سبب الإرجاع، وسياسة المحل - جمل جاهزة تحفظها.',
+    youtubeId: 'GfDGp9GhPaw',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Ellii (Official)',
+    dialogueQuote: 'Do you have the receipt?',
+    actorName: 'Cashier',
+    characterName: 'Cashier',
+    thumbnailUrl: 'https://img.youtube.com/vi/GfDGp9GhPaw/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Ellii Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Do you have the receipt?', arEg: 'معاك الإيصال؟', arFusha: 'معاك الإيصال؟', speaker: 'Cashier', keyWords: [{ word: 'receipt', ipa: '', meaningAr: 'إيصال', meaningEn: '' }, { word: 'have', ipa: '', meaningAr: 'معاك', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It stopped working after two days.', arEg: 'بطل يشتغل بعد يومين.', arFusha: 'بطل يشتغل بعد يومين.', speaker: 'Customer', keyWords: [{ word: 'stopped working', ipa: '', meaningAr: 'بطل يشتغل', meaningEn: '' }, { word: 'after two days', ipa: '', meaningAr: 'بعد يومين', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'receipt', type: 'cultural', meaningAr: 'إيصال / فاتورة', meaningEn: '', egyptianEquivalent: 'الفاتورة', exampleInScene: 'Keep your receipt.' },      { term: 'stopped working', type: 'collocation', meaningAr: 'بطل يشتغل', meaningEn: '', egyptianEquivalent: 'باظ', exampleInScene: 'My phone stopped working.' },      { term: 'warranty', type: 'cultural', meaningAr: 'ضمان', meaningEn: '', egyptianEquivalent: 'الضمان', exampleInScene: 'Is it under warranty?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you usually need to return an item?', questionAr: 'محتاج إيه عشان ترجّع منتج عادة؟', options: ['الإيصال', 'صورة شخصية', 'بطاقة بنك تانية', 'توقيع الدكتور'], correctIndex: 0, explanationAr: 'الـ receipt (الإيصال) هو دليل الشراء اللي المحل بيطلبه عند الإرجاع.' }
+    ],
+    speakingLines: [{ en: 'Do you have the receipt?', arEg: 'معاك الإيصال؟' }, { en: 'It stopped working after two days.', arEg: 'بطل يشتغل بعد يومين.' }],
+  },
+  {
+    id: 'appearance-bob-faces',
+    movieTitle: 'Learn English Adjectives for Describing People - Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Funny Faces, Real Words',
+    sceneDescription: 'بوب بيعمل وشوش مضحكة عشان تحفظ صفات الوصف: tall, curly, beard, glasses - حفظ بالصورة.',
+    youtubeId: 'PPEDrB14Rok',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'He is tall with curly hair and a beard.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/PPEDrB14Rok/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'He is tall with curly hair and a beard.', arEg: 'هو طويل وشعره كيرلي وعنده دقن.', arFusha: 'هو طويل وشعره كيرلي وعنده دقن.', speaker: 'Bob', keyWords: [{ word: 'curly hair', ipa: '', meaningAr: 'شعر كيرلي', meaningEn: '' }, { word: 'beard', ipa: '', meaningAr: 'دقن', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'She wears glasses and has a warm smile.', arEg: 'هي لابسة نضارة وابتسامتها حنينة.', arFusha: 'هي لابسة نضارة وابتسامتها حنينة.', speaker: 'Bob', keyWords: [{ word: 'wears glasses', ipa: '', meaningAr: 'لابسة نضارة', meaningEn: '' }, { word: 'warm smile', ipa: '', meaningAr: 'ابتسامة حنينة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'curly', type: 'cultural', meaningAr: 'كيرلي (شعر)', meaningEn: '', egyptianEquivalent: 'مقعر', exampleInScene: 'She has curly hair.' },      { term: 'beard', type: 'cultural', meaningAr: 'دقن', meaningEn: '', egyptianEquivalent: 'لحية', exampleInScene: 'He grew a beard.' },      { term: 'wear glasses', type: 'collocation', meaningAr: 'يلبس نضارة', meaningEn: '', egyptianEquivalent: 'بيلبس نضارة', exampleInScene: 'Do you wear glasses?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'curly hair\' mean?', questionAr: 'معنى curly hair؟', options: ['شعر كيرلي / مقعر', 'شعر ناعم', 'شعر أبيض', 'شعر قصير'], correctIndex: 0, explanationAr: 'curly معناها مقعر أو مجعد - عكسها straight يعني ناعم ومفرود.' }
+    ],
+    speakingLines: [{ en: 'He is tall with curly hair and a beard.', arEg: 'هو طويل وشعره كيرلي وعنده دقن.' }, { en: 'She wears glasses and has a warm smile.', arEg: 'هي لابسة نضارة وابتسامتها حنينة.' }],
+  },
+  {
+    id: 'appearance-bbc-ep17',
+    movieTitle: 'How to Describe People in English - Easy English Conversations Ep. 17 - BBC',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'What Does She Look Like?',
+    sceneDescription: 'حلقة BBC عن وصف الناس: الفرق بين What is she like و What does she look like - غلطة شائعة.',
+    youtubeId: '9OzIMC6XCiE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'What does she look like? She is short and slim.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/9OzIMC6XCiE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'What does she look like? She is short and slim.', arEg: 'شكلها إيه؟ هي قصيرة ورفيعة.', arFusha: 'شكلها إيه؟ هي قصيرة ورفيعة.', speaker: 'Presenter', keyWords: [{ word: 'look like', ipa: '', meaningAr: 'شكلها', meaningEn: '' }, { word: 'slim', ipa: '', meaningAr: 'رفيعة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'What is she like? She is really outgoing.', arEg: 'شخصيتها إيه؟ هي اجتماعية جداً.', arFusha: 'شخصيتها إيه؟ هي اجتماعية جداً.', speaker: 'Presenter', keyWords: [{ word: 'What is she like', ipa: '', meaningAr: 'شخصيتها إيه', meaningEn: '' }, { word: 'outgoing', ipa: '', meaningAr: 'اجتماعية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'look like', type: 'phrasal-verb', meaningAr: 'شكله / شكلها', meaningEn: '', egyptianEquivalent: 'باين زي', exampleInScene: 'What does he look like?' },      { term: 'outgoing', type: 'cultural', meaningAr: 'اجتماعي / بيحب الناس', meaningEn: '', egyptianEquivalent: 'اجتماعي', exampleInScene: 'An outgoing person makes friends easily.' },      { term: 'slim', type: 'cultural', meaningAr: 'رفيع', meaningEn: '', egyptianEquivalent: 'رفيعة', exampleInScene: 'She is tall and slim.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between \'What is she like?\' and \'What does she look like?\'', questionAr: 'الفرق بين What is she like و What does she look like؟', options: ['الأولى عن الشخصية والتانية عن الشكل', 'الاتنين عن الشكل', 'الاتنين عن الشخصية', 'الأولى عن الشكل والتانية عن الشخصية'], correctIndex: 0, explanationAr: 'What is she like بتسأل عن الشخصية، و What does she look like بتسأل عن الشكل - غلطة شائعة جداً.' }
+    ],
+    speakingLines: [{ en: 'What does she look like? She is short and slim.', arEg: 'شكلها إيه؟ هي قصيرة ورفيعة.' }, { en: 'What is she like? She is really outgoing.', arEg: 'شخصيتها إيه؟ هي اجتماعية جداً.' }],
+  },
 ];
 
 // Helper to get all videos
