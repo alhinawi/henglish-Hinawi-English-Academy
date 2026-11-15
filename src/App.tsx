@@ -1,5 +1,6 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { PageRoute } from './types';
+import { AdminServerGate } from './components/admin/AdminServerGate';
 import { MainLayout } from './components/layout/MainLayout';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
 import { VoiceSettingsModal } from './components/VoiceSettingsModal';
@@ -292,7 +293,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   // -------------------------------------------------------------
   // RBAC GUARD FOR ADMIN CONTROL PANEL
   // -------------------------------------------------------------
-  const isAdminBlocked = currentRoute === 'admin' && authRole !== 'admin';
+  // /admin access is enforced server-side by AdminServerGate (henglish-api checks the account email).
 
   return (
     <>
@@ -330,7 +331,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
           >
             <Suspense fallback={<div className="min-h-[40vh]" />}>
             {/* RBAC Block View for non-admins */}
-            {isAdminBlocked ? (
+            {false ? (
               <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8 bg-slate-900/60 border border-red-500/30 rounded-3xl backdrop-blur-xl" dir="rtl">
                 <div className="w-16 h-16 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center mb-4">
                   <ShieldAlert className="w-8 h-8" />
@@ -461,7 +462,9 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 17. Admin & Teacher Studio */}
                 {currentRoute === 'admin' && (
-                  <AdminDashboardPage onNavigate={handleNavigate} />
+                  <AdminServerGate>
+                    <AdminDashboardPage onNavigate={handleNavigate} />
+                  </AdminServerGate>
                 )}
 
                 {/* 18. Quizzes & Tests Lab */}
