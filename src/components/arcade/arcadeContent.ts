@@ -143,3 +143,13 @@ export function wordAccuracy(target: string, typed: string): number {
   }
   return hit / t.length;
 }
+
+/** Avoid ambiguous repeated headwords and meanings in arcade decks/options. */
+export function uniqueAcademyWords(words: VocabWord[], uniqueMeanings = false): VocabWord[] {
+  const en = new Set<string>(), ar = new Set<string>();
+  return words.filter(w => {
+    const key = w.word.trim().toLowerCase(), meaning = w.meaningAr.trim();
+    if (!key || !meaning || en.has(key) || (uniqueMeanings && ar.has(meaning))) return false;
+    en.add(key); ar.add(meaning); return true;
+  });
+}
