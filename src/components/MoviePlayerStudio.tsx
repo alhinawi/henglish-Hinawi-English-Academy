@@ -87,18 +87,28 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
   const [echoFeedback, setEchoFeedback] = useState<string | null>(null);
   const [echoScore, setEchoScore] = useState<number | null>(null);
 
+  const [isPlayerReady, setIsPlayerReady] = useState(false);
   const playerContainerRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<any>(null);
   const playerReadyRef = useRef(false);
   const timerRef = useRef<number | null>(null);
+  const isPlayingRef = useRef(false);
+  const loopLineRef = useRef(false);
+  const activeSubIdxRef = useRef(0);
+  const pendingSeekRef = useRef<number | null>(null);
+  const transcriptListRef = useRef<HTMLDivElement>(null);
 
   // Create the real YouTube IFrame Player for this scene
   useEffect(() => {
     let destroyed = false;
     playerReadyRef.current = false;
+    setIsPlayerReady(false);
     setCurrentTime(scene.startTime);
     setActiveSubtitleIndex(0);
     setIsPlaying(false);
+    isPlayingRef.current = false;
+    activeSubIdxRef.current = 0;
+    pendingSeekRef.current = null;
 
     loadYouTubeApi()
       .then(YT => {
@@ -118,10 +128,28 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
           events: {
             onReady: () => {
               playerReadyRef.current = true;
+              setIsPlayerReady(true);
+              // Apply a sentence tap that arrived while the iframe was still loading
+              if (pendingSeekRef.current != null) {
+                const t = pendingSeekRef.current;
+                pendingSeekRef.current = null;
+                try {
+                  playerRef.current?.seekTo?.(t, true);
+                  playerRef.current?.playVideo?.();
+                } catch {
+                  // ignore early player errors
+                }
+              }
             },
             onStateChange: (e: any) => {
-              if (e.data === YT.PlayerState.PLAYING) setIsPlaying(true);
-              if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) setIsPlaying(false);
+              if (e.data === YT.PlayerState.PLAYING) {
+                setIsPlaying(true);
+                isPlayingRef.current = true;
+              }
+              if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) {
+                setIsPlaying(false);
+                isPlayingRef.current = false;
+              }
             },
           },
         });
@@ -140,70 +168,104 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
     };
   }, [scene.youtubeId, scene.startTime]);
 
-  // Real player time tracker: poll the YouTube player for true playback time
+  // Real player time tracker: continuously poll the YouTube player for true playback time.
+  // Always running while mounted (not gated on play state) so taps on the native iframe
+  // controls, mobile timeline drags, and missed state events all stay in sync with the
+  // highlighted sentence.
   useEffect(() => {
-    if (isPlaying) {
-      timerRef.current = window.setInterval(() => {
-        const player = playerRef.current;
-        if (!player || !playerReadyRef.current || typeof player.getCurrentTime !== 'function') return;
-        const t = player.getCurrentTime();
+    timerRef.current = window.setInterval(() => {
+      const player = playerRef.current;
+      if (!player || !playerReadyRef.current || typeof player.getCurrentTime !== 'function') return;
+      const t = player.getCurrentTime();
+      const playing = typeof player.getPlayerState === 'function' && player.getPlayerState() === 1;
 
-        // If looping active line
-        if (isLoopingCurrentLine && scene.subtitles[activeSubtitleIndex]) {
-          const curSub = scene.subtitles[activeSubtitleIndex];
-          if (t >= curSub.end) {
-            player.seekTo(curSub.start, true);
-            setCurrentTime(curSub.start);
-            return;
-          }
-        }
+      // Keep the UI play/pause state honest even if a state event was missed (mobile iframe taps)
+      if (playing !== isPlayingRef.current) {
+        isPlayingRef.current = playing;
+        setIsPlaying(playing);
+      }
 
-        // Stop at scene end
-        if (t >= scene.endTime) {
-          player.pauseVideo();
-          player.seekTo(scene.startTime, true);
-          setCurrentTime(scene.startTime);
-          setIsPlaying(false);
+      // If looping active line
+      if (playing && loopLineRef.current && scene.subtitles[activeSubIdxRef.current]) {
+        const curSub = scene.subtitles[activeSubIdxRef.current];
+        if (t >= curSub.end || t < curSub.start) {
+          player.seekTo(curSub.start, true);
+          setCurrentTime(curSub.start);
           return;
         }
-        setCurrentTime(t);
-      }, 300);
-    } else if (timerRef.current) {
-      clearInterval(timerRef.current);
-    }
+      }
+
+      // Stop at scene end
+      if (playing && t >= scene.endTime) {
+        player.pauseVideo();
+        player.seekTo(scene.startTime, true);
+        setCurrentTime(scene.startTime);
+        isPlayingRef.current = false;
+        setIsPlaying(false);
+        return;
+      }
+      setCurrentTime(prev => (Math.abs(prev - t) > 0.15 ? t : prev));
+    }, 250);
 
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [isPlaying, isLoopingCurrentLine, activeSubtitleIndex, scene]);
+  }, [scene]);
 
-  // Synchronize active subtitle line with current time
+  // Synchronize active subtitle line with current time (tolerant of gaps between lines)
   useEffect(() => {
-    const idx = scene.subtitles.findIndex(sub => currentTime >= sub.start && currentTime <= sub.end);
-    if (idx !== -1 && idx !== activeSubtitleIndex) {
+    if (!scene.subtitles.length) return;
+    let idx = scene.subtitles.findIndex(sub => currentTime >= sub.start && currentTime <= sub.end);
+    if (idx === -1) {
+      // In a gap between lines: hold the line whose window most recently started
+      let passed = -1;
+      for (let i = 0; i < scene.subtitles.length; i++) {
+        if (scene.subtitles[i].start <= currentTime) passed = i;
+        else break;
+      }
+      idx = passed !== -1 ? passed : 0;
+    }
+    if (idx !== activeSubtitleIndex) {
+      activeSubIdxRef.current = idx;
       setActiveSubtitleIndex(idx);
     }
   }, [currentTime, scene.subtitles, activeSubtitleIndex]);
+
+  // Keep the active sentence visible in the transcript list as it changes with playback
+  useEffect(() => {
+    const list = transcriptListRef.current;
+    if (!list) return;
+    const row = list.querySelector(`[data-sub-idx="${activeSubtitleIndex}"]`);
+    row?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, [activeSubtitleIndex]);
 
   // Jump to specific subtitle time
   const handleJumpToSubtitle = (sub: TimedSubtitle, idx: number) => {
     playSound('click');
     setCurrentTime(sub.start);
+    activeSubIdxRef.current = idx;
     setActiveSubtitleIndex(idx);
     const player = playerRef.current;
     if (player && playerReadyRef.current) {
       player.seekTo(sub.start, true);
       player.playVideo();
+      isPlayingRef.current = true;
+      setIsPlaying(true);
+    } else {
+      // Player iframe still loading: apply the jump the moment it becomes ready
+      pendingSeekRef.current = sub.start;
     }
-    setIsPlaying(true);
   };
 
-  // Toggle Play / Pause
+  // Toggle Play / Pause (uses the real player state, never a blind toggle)
   const handleTogglePlay = () => {
     playSound('click');
     const player = playerRef.current;
     if (player && playerReadyRef.current) {
-      if (isPlaying) {
+      const state = typeof player.getPlayerState === 'function'
+        ? player.getPlayerState()
+        : (isPlaying ? 1 : -1);
+      if (state === 1) {
         player.pauseVideo();
       } else {
         // Resume inside the scene window if the pointer drifted outside it
@@ -214,7 +276,6 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
         player.playVideo();
       }
     }
-    setIsPlaying(!isPlaying);
   };
 
   // Speed changer
@@ -340,7 +401,9 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
             <div className="flex items-center gap-2">
               <button
                 onClick={handleTogglePlay}
-                className="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-lg shadow-purple-600/30 flex items-center gap-2 cursor-pointer"
+                disabled={!isPlayerReady}
+                title={isPlayerReady ? 'تشغيل أو إيقاف المشهد' : 'المشغل بيحمّل...'}
+                className="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-lg shadow-purple-600/30 flex items-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-wait"
               >
                 {isPlaying ? <Pause className="w-4 h-4 fill-current" /> : <Play className="w-4 h-4 fill-current" />}
                 <span>{isPlaying ? 'إيقاف مؤقت' : 'تشغيل المقطع'}</span>
@@ -350,12 +413,15 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
                 onClick={() => {
                   playSound('click');
                   setCurrentTime(scene.startTime);
+                  activeSubIdxRef.current = 0;
+                  setActiveSubtitleIndex(0);
                   const player = playerRef.current;
                   if (player && playerReadyRef.current) {
                     player.seekTo(scene.startTime, true);
                     player.playVideo();
+                    isPlayingRef.current = true;
+                    setIsPlaying(true);
                   }
-                  setIsPlaying(true);
                 }}
                 title="إعادة المشهد من البداية"
                 className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 hover:text-white border border-white/10 transition-all cursor-pointer"
@@ -367,6 +433,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
               <button
                 onClick={() => {
                   playSound('click');
+                  loopLineRef.current = !isLoopingCurrentLine;
                   setIsLoopingCurrentLine(!isLoopingCurrentLine);
                 }}
                 title="تكرار الجملة الحالية باستمرار للإتقان"
@@ -550,12 +617,13 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
                 </button>
               </div>
 
-              <div className="max-h-[500px] overflow-y-auto space-y-2.5 pr-1 scrollbar-thin">
+              <div ref={transcriptListRef} className="max-h-[500px] overflow-y-auto space-y-2.5 pr-1 scrollbar-thin">
                 {scene.subtitles.map((sub, idx) => {
                   const isActive = activeSubtitleIndex === idx;
                   return (
                     <div
                       key={sub.id}
+                      data-sub-idx={idx}
                       onClick={() => handleJumpToSubtitle(sub, idx)}
                       className={`p-3.5 rounded-2xl border transition-all cursor-pointer text-right space-y-1.5 ${
                         isActive

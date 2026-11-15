@@ -98,7 +98,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   // Sync route with URL hash
   useEffect(() => {
     const handleHashChange = () => {
-      let fullHash = window.location.hash.replace('#', '').trim();
+      // Tolerate both '#movies' and '#/movies' style hashes
+      let fullHash = window.location.hash.replace(/^#\/*/, '').trim();
 
       // Clean-URL bridge (Next.js static routes): /movies/ behaves like #movies
       if (!fullHash) {
