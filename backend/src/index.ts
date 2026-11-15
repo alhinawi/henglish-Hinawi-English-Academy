@@ -171,4 +171,42 @@ app.put('/api/progress', async (c) => {
   return c.json({ progress: JSON.parse(data), updated_at: now })
 })
 
+
+// ---------- admin (server-checked, owner account only) ----------
+const ADMIN_EMAILS = ['3asfuur@gmail.com']
+
+const adminOnly: MiddlewareHandler<Env> = async (c, next) => {
+  const u = await c.env.DB.prepare('SELECT email FROM users WHERE id = ?').bind(c.get('userId')).first<{ email: string }>()
+  if (!u || !ADMIN_EMAILS.includes(u.email.trim().toLowerCase())) return c.json({ error: 'forbidden' }, 403)
+  await next()
+}
+
+const maskEmail = (e: string) => {
+  const [name, domain] = e.split('@')
+  if (!domain) return '***'
+  return `${name.slice(0, 2)}***@${domain}`
+}
+
+app.use('/api/admin/*', auth, adminOnly)
+
+app.get('/api/admin/overview', async (c) => {
+  const db = c.env.DB
+  const users = await db.prepare('SELECT COUNT(*) AS n FROM users').first<{ n: number }>()
+  const sessions = await db.prepare('SELECT COUNT(*) AS n FROM sessions WHERE expires_at > ?').bind(new Date().toISOString()).first<{ n: number }>()
+  const progressRows = await db.prepare('SELECT COUNT(*) AS n FROM progress').first<{ n: number }>()
+  const newUsers = await db.prepare("SELECT COUNT(*) AS n FROM users WHERE created_at > strftime('%Y-%m-%dT%H:%M:%fZ', 'now', '-7 days')").first<{ n: number }>()
+  const recent = await db.prepare('SELECT name, email, created_at FROM users ORDER BY created_at DESC LIMIT 8').all<{ name: string; email: string; created_at: string }>()
+  return c.json({
+    counts: { users: users?.n ?? 0, newUsers: newUsers?.n ?? 0, sessions: sessions?.n ?? 0, progress: progressRows?.n ?? 0 },
+    recentUsers: (recent.results ?? []).map((u) => ({ name: u.name, email: maskEmail(u.email), createdAt: u.created_at })),
+    health: {
+      database: true,
+      google: googleConfigured(c.env),
+      origin: 'https://henglish.pages.dev',
+      adminCount: ADMIN_EMAILS.length,
+    },
+    generatedAt: new Date().toISOString(),
+  })
+})
+
 export default app
