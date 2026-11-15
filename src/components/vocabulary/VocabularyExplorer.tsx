@@ -28,6 +28,7 @@ import {
   loadVocabularyManifest,
   searchVocabulary,
   VocabularyManifest,
+  getLoadedVocabularyCount,
 } from '../../services/vocabularyService';
 import { WordCard } from './WordCard';
 import { WordDetailModal } from './WordDetailModal';
@@ -154,6 +155,8 @@ export const VocabularyExplorer: React.FC = () => {
   }, [searchQuery, selectedCefr, selectedPos, selectedDomain, selectedFrequency, audioFilter, sortBy]);
 
   // Execute Search & Filter
+  const loadedCount = getLoadedVocabularyCount();
+
   const searchResults = useMemo(() => {
     return searchVocabulary({
       searchQuery,
@@ -360,11 +363,9 @@ export const VocabularyExplorer: React.FC = () => {
                 {searchResults.totalMatches.toLocaleString()}
               </strong>
               <span> كلمة مطابقة</span>
-              {manifest && (
-                <span className="text-white/40 text-[11px] mr-2">
-                  (من إجمالي {manifest.totalHeadwords.toLocaleString()} كلمة معتمدة)
-                </span>
-              )}
+              <span className="text-white/40 text-[11px] mr-2">
+                (من إجمالي {loadedCount.toLocaleString()} كلمة محمّلة)
+              </span>
             </div>
           </div>
 
