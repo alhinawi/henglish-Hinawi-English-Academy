@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { VOCABULARY_ACADEMY_WORDS as WORDS, VocabWord } from '../../../data/vocabularyAcademyData';
 import { ArcadeHud, ArcadeEnd } from '../ArcadeShell';
-import { sample, shuffle } from '../arcadeContent';
+import { sample, shuffle, uniqueAcademyWords } from '../arcadeContent';
 import { ArcadeIcon } from '../ArcadeIcon';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
@@ -29,7 +29,7 @@ export function PuzzleGame({id,onExit}:{id:PuzzleId;onExit:()=>void}) {
   const [cards,setCards]=useState<Card[]>([]);const [opened,setOpened]=useState<number[]>([]);const [matched,setMatched]=useState<number[]>([]);const [moves,setMoves]=useState(0);
   const [rounds,setRounds]=useState<VocabWord[]>([]);const [options,setOptions]=useState<string[][]>([]);const [round,setRound]=useState(0);const [feedback,setFeedback]=useState<boolean|null>(null);const [wrong,setWrong]=useState<VocabWord[]>([]);
   const [score,setScore]=useState(0);const [result,setResult]=useState<{xpEarned:number;newBest:boolean}|null>(null);const [notice,setNotice]=useState('');
-  const start=()=>{const pool=WORDS.filter(w=>level==='all'||w.level===level);setFound([]);setAnchor(null);setOpened([]);setMatched([]);setMoves(0);setRound(0);setScore(0);setFeedback(null);setWrong([]);setNotice('');
+  const start=()=>{const pool=uniqueAcademyWords(WORDS.filter(w=>level==='all'||w.level===level),true);setFound([]);setAnchor(null);setOpened([]);setMatched([]);setMoves(0);setRound(0);setScore(0);setFeedback(null);setWrong([]);setNotice('');
     if(id==='word-search'){const p=createWordGrid(pool);setGrid(p.grid);setHidden(p.hidden);}
     if(id==='word-memory'){const p=sample(pool,5);setCards(shuffle(p.flatMap((w,i)=>[{text:w.word,pair:i,en:true},{text:w.meaningAr,pair:i,en:false}])));}
     if(id==='category-sort'){const p=sample(pool,10);setRounds(p);setOptions(p.map(w=>shuffle([w.category,...sample(Object.keys(CATEGORIES).filter(c=>c!==w.category),3)])));}
