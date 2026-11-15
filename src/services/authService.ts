@@ -169,7 +169,7 @@ export function normalizeAuthError(err: unknown): string {
   // Network / Connectivity errors
   if (msg.includes('Failed to fetch') || msg.includes('NetworkError') || msg.includes('fetch failed')) {
     if (!isSupabaseConfigured()) {
-      return 'تعذر الاتصال بخادم قاعدة البيانات. يرجى تهيئة متغيرات VITE_SUPABASE_URL و VITE_SUPABASE_ANON_KEY في إعدادات البيئة (Vercel).';
+      return 'تعذر الاتصال بخادم قاعدة البيانات. يرجى تهيئة متغيرات VITE_SUPABASE_URL ﻥ VITE_SUPABASE_ANON_KEY في إعدادات البيئة (Vercel).';
     }
     return 'تعذر الاتصال بخادم المصادقة. يرجى التحقق من اتصالك بالإنترنت والمحاولة مجدداً.';
   }

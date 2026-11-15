@@ -37,33 +37,33 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
 
   if (!isOpen) return null;
 
-  const trimmed = query.trim().toLowerCase();
+  const trimmed = query.trim().toLowerCase().normalize('NFKC');
 
   // Search results
   const matchedGrammar = trimmed
     ? ALL_GRAMMAR_RULES.filter(
         r =>
-          r.titleAr.toLowerCase().includes(trimmed) ||
-          r.titleEn.toLowerCase().includes(trimmed) ||
-          r.summaryAr.toLowerCase().includes(trimmed)
+          r.titleAr.toLowerCase().normalize('NFKC').includes(trimmed) ||
+          r.titleEn.toLowerCase().normalize('NFKC').includes(trimmed) ||
+          r.summaryAr.toLowerCase().normalize('NFKC').includes(trimmed)
       ).slice(0, 3)
     : [];
 
   const matchedLessons = trimmed
     ? FUTURE_PERFECT_LESSONS.filter(
         l =>
-          l.title.toLowerCase().includes(trimmed) ||
-          l.subtitle.toLowerCase().includes(trimmed) ||
-          l.description.toLowerCase().includes(trimmed) ||
-          l.kicker.toLowerCase().includes(trimmed)
+          l.title.toLowerCase().normalize('NFKC').includes(trimmed) ||
+          l.subtitle.toLowerCase().normalize('NFKC').includes(trimmed) ||
+          l.description.toLowerCase().normalize('NFKC').includes(trimmed) ||
+          l.kicker.toLowerCase().normalize('NFKC').includes(trimmed)
       )
     : FUTURE_PERFECT_LESSONS.slice(0, 4);
 
   const matchedVocab = trimmed
     ? VOCABULARY_ACADEMY_WORDS.filter(
         w =>
-          w.word.toLowerCase().includes(trimmed) ||
-          w.meaningAr.toLowerCase().includes(trimmed) ||
+          w.word.toLowerCase().normalize('NFKC').includes(trimmed) ||
+          w.meaningAr.toLowerCase().normalize('NFKC').includes(trimmed) ||
           w.exampleEn.toLowerCase().includes(trimmed)
       ).slice(0, 3)
     : [];
@@ -73,7 +73,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
         v =>
           v.v1.toLowerCase().includes(trimmed) ||
           v.v3.toLowerCase().includes(trimmed) ||
-          v.meaningAr.toLowerCase().includes(trimmed)
+          v.meaningAr.toLowerCase().normalize('NFKC').includes(trimmed)
       ).slice(0, 4)
     : [];
 

@@ -56,7 +56,7 @@ export const MASSIVE_QUESTION_BANK: AssessmentQuestion[] = [
     promptAr: 'اختر المسمى الوظيفي الصحيح للشخص الذي يقود الطائرات:',
     options: ['pilot', 'driver', 'sailor', 'engineer'],
     answerIndex: 0,
-    explanationAr: 'الطيار بالإنجليزية هو Pilot، بينما Driver يقود السيارات و Sailor يبحر بالسفن.',
+    explanationAr: 'الطيار بالإنجليزية هو Pilot، بينما Driver يقود السيارات ﻥ Sailor يبحر بالسفن.',
     topic: 'Professions',
   },
   {
@@ -768,7 +768,7 @@ export const MASSIVE_QUESTION_BANK: AssessmentQuestion[] = [
     promptAr: 'اختر الكلمة الأنسب: ملاحظاته الموجزة البليغة لخصت جوهر النقاش:',
     options: ['succinct', 'verbose', 'obscure', 'redundant'],
     answerIndex: 0,
-    explanationAr: 'succinct تعني \'موجز بليغ\' وهي الوحيدة التي تتوافق مع brief و captured the essence.',
+    explanationAr: 'succinct تعني \'موجز بليغ\' وهي الوحيدة التي تتوافق مع brief ﻥ captured the essence.',
     topic: 'Advanced Vocabulary',
   },
   {
@@ -828,7 +828,7 @@ export const MASSIVE_QUESTION_BANK: AssessmentQuestion[] = [
     promptAr: 'اختر الإجابة الصحيحة:',
     options: ['he was', 'I am', 'he is', 'I was'],
     answerIndex: 0,
-    explanationAr: 'في الكلام المنقول نرجع زمنًا للخلف: am → was، وtonight → that night.',
+    explanationAr: 'في الكلام المنقول نرجع زمنًا للخلف: am → was، ﻥtonight → that night.',
     topic: 'Reported Speech',
   },
   {

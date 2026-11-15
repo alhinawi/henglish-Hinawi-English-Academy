@@ -168,7 +168,7 @@ export const AdminAiManagementSection: React.FC = () => {
         return {
           title: 'Groq (LPUs)',
           role: 'المزود الأساسي (Primary)',
-          desc: 'معالجة فائقة السرعة بنماذج Llama 3.3 70B و 3.1 8B.',
+          desc: 'معالجة فائقة السرعة بنماذج Llama 3.3 70B ﻥ 3.1 8B.',
           color: 'from-orange-500/20 to-amber-500/20 border-orange-500/30 text-orange-400',
         };
       case 'gemini':
@@ -189,7 +189,7 @@ export const AdminAiManagementSection: React.FC = () => {
         return {
           title: 'OpenAI (GPT-4o)',
           role: 'مزود إضافي اختياري (Optional)',
-          desc: 'نماذج GPT-4o و GPT-4o-mini الموثوقة عالمياً.',
+          desc: 'نماذج GPT-4o ﻥ GPT-4o-mini الموثوقة عالمياً.',
           color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-300',
         };
       case 'local':
