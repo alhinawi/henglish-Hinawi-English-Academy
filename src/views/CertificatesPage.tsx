@@ -38,6 +38,8 @@ interface CertificatesPageProps {
   userProfile: UserProfile;
   completedLessons: string[];
   quizScores: Record<string, { score: number; total: number; date: string }>;
+  isLoggedIn: boolean;
+  onRequestAuth: () => void;
 }
 
 const CERTS_STORAGE_KEY = "henglish_issued_certificates_v1";
@@ -47,6 +49,8 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   userProfile,
   completedLessons,
   quizScores,
+  isLoggedIn,
+  onRequestAuth,
 }) => {
   // Real recorded quiz average (percentage) across all quizzes the student took.
   const quizEntries = Object.values(quizScores || {});
@@ -103,6 +107,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   const certViewportRef = useRef<HTMLDivElement>(null);
   const [certScale, setCertScale] = useState(0.35);
   const [isGeneratingPdf, setIsGeneratingPdf] = useState(false);
+  const [showAuthPrompt, setShowAuthPrompt] = useState(false);
 
   useEffect(() => {
     const update = () => {
@@ -117,6 +122,13 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   // Real A4-landscape PDF: the certificate sheet is rendered at 2x resolution
   // and embedded into a true PDF file (no print dialog, no screenshots).
   const handleDownloadPdf = async () => {
+    // Certificates carry the registered student's name, so guests must
+    // register/log in before downloading anything.
+    if (!isLoggedIn) {
+      playSound("click");
+      setShowAuthPrompt(true);
+      return;
+    }
     if (!certSheetRef.current || isGeneratingPdf) return;
     playSound("click");
     setIsGeneratingPdf(true);
@@ -445,6 +457,53 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
           })}
         </div>
       </section>
+
+      {/* Guest download prompt: registration required before PDF download */}
+      <AnimatePresence>
+        {showAuthPrompt && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowAuthPrompt(false)}
+              className="fixed inset-0 bg-black/75 backdrop-blur-sm"
+            />
+            <motion.div
+              initial={{ scale: 0.95, opacity: 0, y: 15 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.95, opacity: 0, y: 15 }}
+              className="relative w-full max-w-sm rounded-3xl border border-[#ffd166]/30 bg-[#171632] p-6 text-center shadow-2xl space-y-4"
+            >
+              <button
+                onClick={() => setShowAuthPrompt(false)}
+                className="absolute top-4 left-4 text-[#b9b6d5] hover:text-white cursor-pointer"
+              >
+                <X className="w-5 h-5" />
+              </button>
+              <div className="mx-auto w-14 h-14 rounded-2xl bg-[#ffd166]/15 border border-[#ffd166]/40 flex items-center justify-center">
+                <GraduationCap className="w-7 h-7 text-[#ffd166]" />
+              </div>
+              <h3 className="text-lg font-black text-white">
+                سجّل الأول عشان تحمّل شهادتك
+              </h3>
+              <p className="text-xs text-[#dedbf4] leading-relaxed">
+                الشهادة بتتكتب باسمك المسجل في حسابك، فلازم تسجّل دخولك الأول.
+                التسجيل مجاني وبياخد أقل من دقيقة.
+              </p>
+              <button
+                onClick={() => {
+                  setShowAuthPrompt(false);
+                  onRequestAuth();
+                }}
+                className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer"
+              >
+                تسجيل الدخول / إنشاء حساب
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
