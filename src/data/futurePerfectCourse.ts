@@ -767,7 +767,7 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
       {
         wrong: "By next month, I will have been finishing my thesis.",
         correct: "By next month, I will have finished my thesis.",
-        reason: 'لا تخلط بين Future Perfect ﻥ Future Perfect Continuous. هنا التركيز على الانتهاء التام (finished) وليس الاستمرار في الإنهاء.',
+        reason: 'لا تخلط بين Future Perfect و Future Perfect Continuous. هنا التركيز على الانتهاء التام (finished) وليس الاستمرار في الإنهاء.',
       },
       {
         wrong: "We will have make a big progress.",

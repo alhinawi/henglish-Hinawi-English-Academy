@@ -67,7 +67,7 @@ const DEFAULT_EVALUATIONS: SpeakingEvalRecord[] = [
     scores: { pronunciation: 90, fluency: 94, accuracy: 91, completeness: 100 },
     mispronouncedCount: 0,
     wpm: 128,
-    phoneticTipAr: "نطق سليم جداً لمخارج الحروف وصوت /v/ ﻥ /θ/.",
+    phoneticTipAr: "نطق سليم جداً لمخارج الحروف وصوت /v/ و /θ/.",
   },
   {
     id: "eval-def-2",
@@ -89,7 +89,7 @@ const DEFAULT_EVALUATIONS: SpeakingEvalRecord[] = [
     scores: { pronunciation: 72, fluency: 76, accuracy: 80, completeness: 90 },
     mispronouncedCount: 2,
     wpm: 98,
-    phoneticTipAr: "ركز على التفريق بين صوت /p/ ﻥ /b/ والوقفات المناسبة بين الجمل.",
+    phoneticTipAr: "ركز على التفريق بين صوت /p/ و /b/ والوقفات المناسبة بين الجمل.",
   },
 ];
 

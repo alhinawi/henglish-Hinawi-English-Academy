@@ -69,7 +69,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     id: 'present-perfect',
     title: 'المضارع التام وعلاقته بالحاضر',
     titleEn: 'Present Perfect in Real Life',
-    description: 'افهم الفرق بين الماضي البسيط والمضارع التام بدون تعقيد، مع حالات since ﻥ for ﻥ just ﻥ already وأمثلة من حياتك اليومية.',
+    description: 'افهم الفرق بين الماضي البسيط والمضارع التام بدون تعقيد، مع حالات since و for و just و already وأمثلة من حياتك اليومية.',
     level: 'متوسط',
     lessonsCount: 1,
     countLabel: 'درس تفاعلي',

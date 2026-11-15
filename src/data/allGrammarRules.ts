@@ -194,7 +194,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ],
     egyptianTips: [
       'لو حددت الوقت بالظبط (yesterday, in 2021, two days ago) استخدم ماضي بسيط مش مضارع تام!',
-      'الفرق بين gone to ﻥ been to: He has gone to London يعني سافر ولسه هناك، He has been to London يعني راح وزار ورجع.',
+      'الفرق بين gone to و been to: He has gone to London يعني سافر ولسه هناك، He has been to London يعني راح وزار ورجع.',
       'Since بيجي بعدها نقطة بداية زمنية محددة (2018, Monday, 3 PM)، بينما For بيجي بعدها مدة إجمالية (5 years, 3 hours).'
     ],
     commonTraps: [
@@ -357,7 +357,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'حدثان كانا يحدثان بالتوازي في نفس الوقت (While she was reading, he was cooking)'
     ],
     egyptianTips: [
-      'القاعدة الذهبية للربط: While بيجي بعدها ماضي مستمر (was/were + ing)، ﻥWhen غالباً بيجي بعدها الحدث القاطع في الماضي البسيط.',
+      'القاعدة الذهبية للربط: While بيجي بعدها ماضي مستمر (was/were + ing)، وWhen غالباً بيجي بعدها الحدث القاطع في الماضي البسيط.',
       'افتكر: الحدث الطويل اللي واخد وقت هو المستمر، والحدث القصير اللي قطعه فجأة هو البسيط.'
     ],
     commonTraps: [
@@ -1087,7 +1087,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'Noun + Relative Pronoun (Who / Which / That / Whose / Where) + Clause',
     negativeFormula: 'Without relative pronoun (contact clauses)',
     questionFormula: 'Who / Which...',
-    summaryAr: 'ربط الجمل والأفكار بطريقة سلسة دون تكرار الكلمات الممل: Who للعاقل، Which لغير العاقل، That للاثنين، Whose للملكية، ﻥWhere للمكان.',
+    summaryAr: 'ربط الجمل والأفكار بطريقة سلسة دون تكرار الكلمات الممل: Who للعاقل، Which لغير العاقل، That للاثنين، Whose للملكية، وWhere للمكان.',
     timelineDescription: 'وصل بين فكرتين أو جملتين لتعريف اسم معين أو إضافة معلومة إضافية عنه.',
     imageUrl: ONLINE_IMAGES.grammar.relativeClauses,
     imageAlt: 'Connected global network bridging teams together',
@@ -1202,7 +1202,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         en: 'She earned a master’s degree from an accredited university in London.',
         ar: 'حصلت على درجة الماجستير من جامعة معتمدة في لندن.',
         highlight: 'a master’s ... an accredited',
-        context: 'استخدام a ﻥ an بدقة بحسب الصوت البادئ'
+        context: 'استخدام a و an بدقة بحسب الصوت البادئ'
       }
     ],
     miniQuiz: [
@@ -1272,7 +1272,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'Verb + Gerund (V-ing) OR Verb + Full Infinitive (to + V)',
     negativeFormula: 'not to + V / not + V-ing',
     questionFormula: 'Do you enjoy doing...? / Would you like to do...?',
-    summaryAr: 'متى نضع بعد الفعل to + المصدر ومتى نضع ing؟ بعض الأفعال تشترط المصدر مثل (decide, hope, manage, promise)، وأفعال أخرى تشترط اسم الفاعل مثل (enjoy, avoid, suggest, admit). وهناك أفعال يتغير معناها بالكامل مثل stop ﻥ remember!',
+    summaryAr: 'متى نضع بعد الفعل to + المصدر ومتى نضع ing؟ بعض الأفعال تشترط المصدر مثل (decide, hope, manage, promise)، وأفعال أخرى تشترط اسم الفاعل مثل (enjoy, avoid, suggest, admit). وهناك أفعال يتغير معناها بالكامل مثل stop و remember!',
     timelineDescription: 'تحديد دلالة الفعل الثاني: هدف مستقبلي (to + V) أم تجربة وفعل مستمر (V-ing).',
     imageUrl: ONLINE_IMAGES.grammar.gerundsInfinitives,
     imageAlt: 'Writer taking handwritten notes planning creative goals',
@@ -1335,7 +1335,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ],
     commonTraps: [
       'فخ الترتيب العادي بعد الظرف السلبي: الخطأ Rarely she speaks in public، الصواب: Rarely does she speak in public.',
-      'فخ الخلط بين have ﻥ get مع الفاعل: الخطأ I had him to clean، الصواب: I had him clean / I got him to clean.'
+      'فخ الخلط بين have و get مع الفاعل: الخطأ I had him to clean، الصواب: I had him clean / I got him to clean.'
     ],
     examples: [
       {
@@ -1439,7 +1439,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 28,
     category: 'أزمنة الماضي',
     categoryEn: 'Past Habits',
-    titleAr: 'عادات الماضي المنقطعة: الفرق بين Used to ﻥ Would',
+    titleAr: 'عادات الماضي المنقطعة: الفرق بين Used to و Would',
     titleEn: 'Used To & Would for Past Habits',
     level: 'B1 - متوسط',
     goldenFormula: 'Subject + used to / would + base verb (I used to play / I would play)',
@@ -1458,7 +1458,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     egyptianTips: [
       'Used to معناها بالظبط "كنت بـ... وأيامها خلاص راحت": I used to play football = كنت بلعب كورة زمان.',
       'لو الفعل حالة مش حركة (زي أكون، أحب، أسكن) استخدم used to بس وانسَ would.',
-      "افتكر إن بعد didn't ﻥ Did بنرجع لـ use to بدون d لأن الـ d راحت للفعل المساعد."
+      "افتكر إن بعد didn't و Did بنرجع لـ use to بدون d لأن الـ d راحت للفعل المساعد."
     ],
     commonTraps: [
       "فخ كتابة didn't used to: الخطأ He didn't used to swim، الصواب: He didn't use to swim.",
@@ -1536,7 +1536,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ],
     egyptianTips: [
       'قاعدة سريعة: الصفة القصيرة تاخد er، والطويلة تاخد more. لو شكيت، more غالباً صح.',
-      'متنساش than بعد المقارنة ﻥ the قبل التفضيل: taller than / the tallest.',
+      'متنساش than بعد المقارنة و the قبل التفضيل: taller than / the tallest.',
       "طريقة not as ... as حلوة جداً للدبلوماسية: بدل ما تقول أسوأ، قول مش بنفس الجودة: not as good as."
     ],
     commonTraps: [
@@ -1575,7 +1575,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         question: 'This exercise is ______ than the one we did yesterday.',
         options: ['more easier', 'easier', 'most easy', 'easiest'],
         correct: 1,
-        explanation: 'الصفة القصيرة easy تتحول لـ easier، ولا تجمع بين more ﻥ er.'
+        explanation: 'الصفة القصيرة easy تتحول لـ easier، ولا تجمع بين more و er.'
       },
       {
         question: 'Mount Everest is ______ mountain in the world.',
@@ -1587,7 +1587,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         question: 'My new phone is ______ than my old one, but the camera is ______.',
         options: ['gooder / worse', 'better / worse', 'better / badder', 'best / worst'],
         correct: 1,
-        explanation: 'الشواذ: good تعطي better ﻥ bad تعطي worse في المقارنة.'
+        explanation: 'الشواذ: good تعطي better و bad تعطي worse في المقارنة.'
       }
     ]
   },
@@ -1602,14 +1602,14 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'Countable: a/an, many, few | Uncountable: much, little, some (no plural)',
     negativeFormula: "not many + countable | not much + uncountable",
     questionFormula: 'How many + countable? / How much + uncountable?',
-    summaryAr: 'في الإنجليزي الأسماء نوعين: حاجات بتتعد (كتاب، كتب) وحاجات متتعدش (مية، معلومة، نصيحة). والنوع التاني ممنوع ياخد a/an أو جمع s، وده اللي بيحدد تستخدم many ولا much ﻥ few ولا little.',
+    summaryAr: 'في الإنجليزي الأسماء نوعين: حاجات بتتعد (كتاب، كتب) وحاجات متتعدش (مية، معلومة، نصيحة). والنوع التاني ممنوع ياخد a/an أو جمع s، وده اللي بيحدد تستخدم many ولا much و few ولا little.',
     timelineDescription: 'قاعدة تأسيسية بتأثر على كل جملة فيها كمية أو عدد.',
     imageUrl: ONLINE_IMAGES.libraryStudy,
     imageAlt: 'Books and coffee showing countable and uncountable everyday items',
     keyUsagePoints: [
       'المعدود: يقبل a/an والجمع s: a book, two books, many books.',
       'غير المعدود: ممنوع a/an أو s: water, information, advice, money, furniture.',
-      'many/few/a few مع المعدود، ﻥ much/little/a little مع غير المعدود.',
+      'many/few/a few مع المعدود، و much/little/a little مع غير المعدود.',
       'عشان تعد غير المعدود استخدم وحدات: a piece of advice, a glass of water, two slices of bread.'
     ],
     egyptianTips: [
@@ -1665,7 +1665,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         question: 'She has very ______ friends here, so she feels lonely.',
         options: ['little', 'much', 'few', 'less'],
         correct: 2,
-        explanation: 'friends معدودة فتأخذ few، ﻥ little تصلح فقط مع غير المعدود.'
+        explanation: 'friends معدودة فتأخذ few، و little تصلح فقط مع غير المعدود.'
       }
     ]
   },
@@ -1681,7 +1681,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'Subject + adverb + main verb | Subject + be + adverb (I always study / I am always happy)',
     negativeFormula: 'Subject + adverb + negative verb (I never smoke / She is rarely late)',
     questionFormula: 'How often + do/does + subject + verb?',
-    summaryAr: 'كلمات صغيرة زي always ﻥ usually ﻥ sometimes بتوصف التكرار، وعندها مكان ثابت في الجملة: قبل الفعل الأساسي، لكن بعد فعل الكينونة be. والترتيب ده بيفرق جداً في إن جملتك تطلع طبيعية.',
+    summaryAr: 'كلمات صغيرة زي always و usually و sometimes بتوصف التكرار، وعندها مكان ثابت في الجملة: قبل الفعل الأساسي، لكن بعد فعل الكينونة be. والترتيب ده بيفرق جداً في إن جملتك تطلع طبيعية.',
     timelineDescription: 'ترتيب الكلمات داخل الجملة لوصف العادات والتكرار.',
     imageUrl: ONLINE_IMAGES.grammar.presentSimple,
     imageAlt: 'Weekly planner showing daily habits and routines',
@@ -1754,13 +1754,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 32,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Quantifiers',
-    titleAr: 'كلمات الكمية: some ﻥ any ﻥ no ﻥ a lot of في مكانهم الصح',
+    titleAr: 'كلمات الكمية: some و any و no و a lot of في مكانهم الصح',
     titleEn: 'Quantifiers: Some, Any, No, Plenty',
     level: 'A2 - تأسيسي',
     goldenFormula: 'some + positive | any + negative/question | no + positive verb (I have some / I don\'t have any / I have no time)',
     negativeFormula: "not + any (I don't have any questions) OR no + noun (I have no questions)",
     questionFormula: 'Would you like some...? / Do you have any...?',
-    summaryAr: 'Some للإيجاب والعروض، any للنفي والأسئلة، ﻥ no مع فعل موجب بتديك جملة منفية المعنى. القاعدة دي أساس المحادثة اليومية كله: طلبات، أسئلة، وصف الكميات.',
+    summaryAr: 'Some للإيجاب والعروض، any للنفي والأسئلة، و no مع فعل موجب بتديك جملة منفية المعنى. القاعدة دي أساس المحادثة اليومية كله: طلبات، أسئلة، وصف الكميات.',
     timelineDescription: 'وصف الكميات في الجمل الموجبة والمنفية والاستفهامية.',
     imageUrl: ONLINE_IMAGES.modernClassroom,
     imageAlt: 'Classroom discussion about quantities and amounts',
@@ -1838,7 +1838,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'Singular subject + singular verb (s) | Plural subject + base verb',
     negativeFormula: "He doesn't / They don't (never: He don't)",
     questionFormula: 'Does he...? / Do they...? / Is there...? / Are there...?',
-    summaryAr: 'أشهر غلطة بتفرق بين المبتدئ والمحترف: الفعل لازم يوافق فاعله في العدد. المفرد ياخد s في المضارع، والجمع ياخد المصدر. وفي كلمات مخادعة زي everyone ﻥ news شكلها جمع لكنها مفرد.',
+    summaryAr: 'أشهر غلطة بتفرق بين المبتدئ والمحترف: الفعل لازم يوافق فاعله في العدد. المفرد ياخد s في المضارع، والجمع ياخد المصدر. وفي كلمات مخادعة زي everyone و news شكلها جمع لكنها مفرد.',
     timelineDescription: 'قاعدة بنيوية تظهر في كل جملة مضارع تكتبها أو تقولها.',
     imageUrl: ONLINE_IMAGES.mentorStudent,
     imageAlt: 'Teacher correcting a sentence on a whiteboard',
@@ -1917,7 +1917,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'modal + have + V3 (should have studied / must have forgotten / can\'t have seen)',
     negativeFormula: "shouldn't have + V3 / can't have + V3",
     questionFormula: 'Could he have + V3? / Would you have + V3?',
-    summaryAr: 'التركيبة دي بتخليك تحلل الماضي زي المحترفين: should have معناها كان لازم تعمل ومعملتش، must have معناها أكيد حصل، ﻥ can\'t have معناها يستحيل يكون حصل. أساس أي محادثة عن ندم أو استنتاج أو لوم.',
+    summaryAr: 'التركيبة دي بتخليك تحلل الماضي زي المحترفين: should have معناها كان لازم تعمل ومعملتش، must have معناها أكيد حصل، و can\'t have معناها يستحيل يكون حصل. أساس أي محادثة عن ندم أو استنتاج أو لوم.',
     timelineDescription: 'تحليل أحداث ماضية بالندم أو الاستنتاج المنطقي.',
     imageUrl: ONLINE_IMAGES.grammar.pastPerfect,
     imageAlt: 'Person reflecting on a past decision at a crossroads',
@@ -1990,7 +1990,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 35,
     category: 'حالات الشرط',
     categoryEn: 'Wishes & Regrets',
-    titleAr: 'التمني والندم: Wish ﻥ If only لأحلام مستحيلة وندم حقيقي',
+    titleAr: 'التمني والندم: Wish و If only لأحلام مستحيلة وندم حقيقي',
     titleEn: 'Wish & If Only',
     level: 'B2 - فوق متوسط',
     goldenFormula: 'wish + past simple (حاضر) | wish + past perfect (ماضي) | wish + would (شكوى)',
@@ -2047,7 +2047,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         question: 'I wish I ______ taller. All my friends are taller than me.',
         options: ['am', 'were', 'would be', 'will be'],
         correct: 1,
-        explanation: 'تمني عن الحاضر يأخذ ماضي بسيط، ﻥ were هي الصيغة المثلى.'
+        explanation: 'تمني عن الحاضر يأخذ ماضي بسيط، و were هي الصيغة المثلى.'
       },
       {
         question: 'He wishes he ______ the exam more seriously last month.',
@@ -2147,20 +2147,20 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'although + sentence | despite + noun/gerund | however, + sentence | so / therefore + result',
     negativeFormula: 'despite / in spite of + noun (NOT: despite of)',
     questionFormula: 'How do you connect two contrasting ideas?',
-    summaryAr: 'الفرق بين كلام مكسّر وكلام مترابط هو أدوات الربط. لكن في فخاخ شهيرة: although ﻥ but ممنوع يجوا مع بعض، ﻥ despite ممنوع تاخد of، ﻥ however بتحتاج فاصلة. القواعد الصغيرة دي بتفرق جداً في الكتابة الأكاديمية والآيلتس.',
+    summaryAr: 'الفرق بين كلام مكسّر وكلام مترابط هو أدوات الربط. لكن في فخاخ شهيرة: although و but ممنوع يجوا مع بعض، و despite ممنوع تاخد of، و however بتحتاج فاصلة. القواعد الصغيرة دي بتفرق جداً في الكتابة الأكاديمية والآيلتس.',
     timelineDescription: 'ربط الأفكار في الكتابة والمحادثة بشكل منطقي متسلسل.',
     imageUrl: ONLINE_IMAGES.grammar.gerundsInfinitives,
     imageAlt: 'Connected chain links representing logical flow of ideas',
     keyUsagePoints: [
       'التناقض: although/even though + جملة كاملة، لكن despite/in spite of + اسم أو gerund.',
-      'النتيجة: so (غير رسمي) ﻥ therefore/as a result (رسمي) مع فاصلة.',
+      'النتيجة: so (غير رسمي) و therefore/as a result (رسمي) مع فاصلة.',
       'الإضافة: moreover / furthermore / in addition للكتابة الرسمية.',
       'السبب: because + جملة، لكن because of / due to + اسم.'
     ],
     egyptianTips: [
-      'أهم قاعدة: although ﻥ but زي بعض بالظبط، فمتحطهمش في نفس الجملة: اختار واحد بس.',
+      'أهم قاعدة: although و but زي بعض بالظبط، فمتحطهمش في نفس الجملة: اختار واحد بس.',
       'despite لوحدها أبداً: مفيش despite of. عايز of؟ استخدم in spite of.',
-      'because وراها جملة كاملة، ﻥ because of وراها اسم: because it rained / because of the rain.'
+      'because وراها جملة كاملة، و because of وراها اسم: because it rained / because of the rain.'
     ],
     commonTraps: [
       'فخ although + but: الخطأ Although it was raining, but we went out، الصواب: Although it was raining, we went out.',
@@ -2320,7 +2320,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     egyptianTips: [
       'في العربي بنقول "أنا مدرس" من غير فعل، لكن في الإنجليزي لازم: I AM a teacher. ممنوع تنساه.',
       'الاختصارات هي الطبيعي في الكلام: I\'m, He\'s, They\'re. اكتبها كاملة في الرسمي بس.',
-      'في النفي: isn\'t ﻥ aren\'t أشهر بكتير من is not ﻥ are not في المحادثة.'
+      'في النفي: isn\'t و aren\'t أشهر بكتير من is not و are not في المحادثة.'
     ],
     commonTraps: [
       'نسيان الفعل خالص: الخطأ "She doctor"، الصواب: She IS a doctor.',
@@ -2353,7 +2353,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 40,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Essentials & Sentence Structure',
-    titleAr: 'ضمائر الفاعل والمفعول: I ﻥ Me إيه الفرق؟',
+    titleAr: 'ضمائر الفاعل والمفعول: I و Me إيه الفرق؟',
     titleEn: 'Subject & Object Pronouns',
     level: 'A1 - مبتدئ',
     goldenFormula: 'فاعل: I, you, he, she, it, we, they  |  مفعول: me, you, him, her, it, us, them',
@@ -2404,7 +2404,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 41,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Essentials & Sentence Structure',
-    titleAr: 'الملكية: My ﻥ Mine وعلامة الـ \'s',
+    titleAr: 'الملكية: My و Mine وعلامة الـ \'s',
     titleEn: 'Possessive Adjectives, Pronouns & \'s',
     level: 'A1 - مبتدئ',
     goldenFormula: "صفة ملكية + اسم: my car  |  ضمير ملكية لوحده: mine  |  اسم شخص + 's: Sara's car",
@@ -2423,11 +2423,11 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     egyptianTips: [
       'العربي عنده نفس الفكرة: "عربيتي" = my car (صفة + اسم)، و"العربية بتاعتي" = the car is mine.',
       'مش كل حاجة تاخد \'s: البيت بتاع الترباس؟ لا. قول the leg of the table مش the table\'s leg.',
-      'its بدون فاصلة عليا = ملكية (its color)، ﻥ it\'s بفاصلة = اختصار it is. دي أشهر غلطة إملائية!'
+      'its بدون فاصلة عليا = ملكية (its color)، و it\'s بفاصلة = اختصار it is. دي أشهر غلطة إملائية!'
     ],
     commonTraps: [
       'وضع اسم بعد ضمير الملكية: الخطأ "This is mine book"، الصواب: This is my book / This book is mine.',
-      'الخلط بين its ﻥ it\'s: الخطأ "Its raining"، الصواب: It\'s raining.',
+      'الخلط بين its و it\'s: الخطأ "Its raining"، الصواب: It\'s raining.',
       'استخدام \'s مع الجمع المنتهي بـ s خطأ: الصواب "my parents\' house" (فاصلة بس من غير s تانية).'
     ],
     examples: [
@@ -2461,7 +2461,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'There is + مفرد/غير معدود  |  There are + جمع',
     negativeFormula: "There isn't / There aren't + ...",
     questionFormula: 'Is there / Are there + ... ?',
-    summaryAr: 'لما تعايز تقول "في" بمعنى الوجود (في مطعم كويس هنا)، استخدم There is للمفرد ﻥ There are للجمع. دي أسرع طريقة توصف بيها مكان أو تسأل عن وجود حاجة.',
+    summaryAr: 'لما تعايز تقول "في" بمعنى الوجود (في مطعم كويس هنا)، استخدم There is للمفرد و There are للجمع. دي أسرع طريقة توصف بيها مكان أو تسأل عن وجود حاجة.',
     timelineDescription: 'وصف وجود شيء في الحاضر؛ للماضي نستخدم There was / There were.',
     imageUrl: ONLINE_IMAGES.libraryStudy,
     imageAlt: 'A library with many books on shelves',
@@ -2472,7 +2472,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'There was / There were للماضي البسيط'
     ],
     egyptianTips: [
-      '"في" بالعربي مبتتغيرش، لكن الإنجليزي بيتنازع بين is ﻥ are على حسب الاسم اللي بعدها. بصّ للاسم مش لـ there.',
+      '"في" بالعربي مبتتغيرش، لكن الإنجليزي بيتنازع بين is و are على حسب الاسم اللي بعدها. بصّ للاسم مش لـ there.',
       'لو الاسم سلسلة مرتبطة (a bed, a desk, and a chair)، الإنجليزي بيمشي مع أقرب اسم: There IS a bed and two chairs.',
       'في الأسئلة السريعة اسمع للاختصار: Is there...? بتتنطق "إز ذير".'
     ],
@@ -2608,7 +2608,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 45,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Essentials & Sentence Structure',
-    titleAr: 'Can ﻥ Could: القدرة والاستطاعة والإذن',
+    titleAr: 'Can و Could: القدرة والاستطاعة والإذن',
     titleEn: 'Can / Could for Ability & Permission',
     level: 'A1 - مبتدئ',
     goldenFormula: 'Subject + can + مصدر (I can swim)  |  الماضي: could (I could swim when I was ten)',
@@ -2659,7 +2659,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 46,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Essentials & Sentence Structure',
-    titleAr: 'أدوات الاستفهام: What ﻥ Where ﻥ Why وإخواتها',
+    titleAr: 'أدوات الاستفهام: What و Where و Why وإخواتها',
     titleEn: 'Wh- Questions',
     level: 'A1 - مبتدئ',
     goldenFormula: 'Wh- word + do/does/is/are + subject + verb?',
@@ -2710,7 +2710,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 47,
     category: 'الأساسيات والتركيب اللغوي',
     categoryEn: 'Essentials & Sentence Structure',
-    titleAr: 'This ﻥ That ﻥ These ﻥ Those + جموع الأسماء',
+    titleAr: 'This و That و These و Those + جموع الأسماء',
     titleEn: 'Demonstratives & Plural Nouns',
     level: 'A1 - مبتدئ',
     goldenFormula: 'قريب: this (مفرد) / these (جمع)  |  بعيد: that (مفرد) / those (جمع)',
@@ -2761,13 +2761,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 48,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'Too ﻥ Enough ﻥ So ﻥ Such: الدرجة والزيادة والكفاية',
+    titleAr: 'Too و Enough و So و Such: الدرجة والزيادة والكفاية',
     titleEn: 'Too / Enough / So / Such',
     level: 'A2 - تأسيسي',
     goldenFormula: 'too + صفة | صفة + enough | so + صفة | such + (a/an) + صفة + اسم',
     negativeFormula: 'not + صفة + enough (The bag is not big enough)',
     questionFormula: 'Is it too far? / Is it big enough? / Is it so expensive?',
-    summaryAr: 'أربع كلمات بتوصّف الدرجة: too = زيادة عن اللزوم (سلبي)، enough = كفاية (محايد/إيجابي)، so = جداً للتأكيد والنتيجة، such = جداً لكن مع اسم. الفرق بينهم في الترتيب: too قبل الصفة، ﻥ enough بعدها.',
+    summaryAr: 'أربع كلمات بتوصّف الدرجة: too = زيادة عن اللزوم (سلبي)، enough = كفاية (محايد/إيجابي)، so = جداً للتأكيد والنتيجة، such = جداً لكن مع اسم. الفرق بينهم في الترتيب: too قبل الصفة، و enough بعدها.',
     timelineDescription: 'أدوات وصف للدرجة؛ تدخل في كل الأزمنة دون تغيير.',
     imageUrl: ONLINE_IMAGES.libraryStudy,
     imageAlt: 'A suitcase too heavy to lift at a station',
@@ -2780,7 +2780,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     egyptianTips: [
       'افتكر الميزان: too ميلة زيادة (سلبي)، enough مظبوطة بالكفاية. "الشاي سخن أوي" = too hot، "الشاي سخن كفاية؟" = hot enough?',
       'Enough مع الصفة ييجي بعدها، ومع الاسم ييجي قبلها: tall enough لكن enough money.',
-      'so ﻥ such زي "جداً": so + صفة (so beautiful)، لكن such + a + صفة + اسم مفرد (such a beautiful girl).'
+      'so و such زي "جداً": so + صفة (so beautiful)، لكن such + a + صفة + اسم مفرد (such a beautiful girl).'
     ],
     commonTraps: [
       'وضع enough قبل الصفة: الخطأ "He is enough tall"، الصواب: He is tall enough.',
@@ -2812,13 +2812,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 49,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'Both ﻥ Either ﻥ Neither: الاتنين وواحد منهم ولا واحد',
+    titleAr: 'Both و Either و Neither: الاتنين وواحد منهم ولا واحد',
     titleEn: 'Both / Either / Neither',
     level: 'A2 - تأسيسي',
     goldenFormula: 'both (الاتنين) + جمع | either (أي واحد من الاتنين) + مفرد | neither (ولا واحد) + مفرد',
     negativeFormula: 'neither بحد ذاتها نفي؛ ممنوع neither ... not',
     questionFormula: 'Which one do you want? - Either is fine. / Neither.',
-    summaryAr: 'لما الكلام عن اختيارين بس: both يعني الاتنين مع بعض، either يعني أي واحد فيهم، ﻥ neither يعني ولا واحد فيهم. مع both ... and ﻥ either ... or ﻥ neither ... nor بتبقى أقوى.',
+    summaryAr: 'لما الكلام عن اختيارين بس: both يعني الاتنين مع بعض، either يعني أي واحد فيهم، و neither يعني ولا واحد فيهم. مع both ... and و either ... or و neither ... nor بتبقى أقوى.',
     timelineDescription: 'أدوات تحديد للكمية والاختيار؛ تدخل في كل الأزمنة دون تغيير.',
     imageUrl: ONLINE_IMAGES.learningStudyGroup,
     imageAlt: 'Two paths crossing in a park, a choice between two options',
@@ -2863,14 +2863,14 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 50,
     category: 'أزمنة المستقبل',
     categoryEn: 'Future Tenses',
-    titleAr: 'Will ﻥ Be going to: الفرق الحقيقي بينهم',
+    titleAr: 'Will و Be going to: الفرق الحقيقي بينهم',
     titleEn: 'Will vs Be Going To',
     level: 'A2 - تأسيسي',
     goldenFormula: 'قرار لحظي/وعد/توقع رأي = will  |  خطة مسبقة/دليل واضح = be going to',
     negativeFormula: "won't + مصدر  |  am/is/are + not going to + مصدر",
     questionFormula: 'Will you ... ?  |  Are you going to ... ?',
-    summaryAr: 'الاتنين للمستقبل بس المعنى مختلف: will للقرار اللي اتخد في لحظة الكلام، الوعود، والتوقعات الرأيية. ﻥ be going to للخطط المتخدة من قبل الكلام، وللتوقع المبني على دليل شايفه قدامك.',
-    timelineDescription: 'نقطة مستقبلية؛ الاختيار بين will ﻥ going to يعتمد على لحظة اتخاذ القرار ووجود دليل.',
+    summaryAr: 'الاتنين للمستقبل بس المعنى مختلف: will للقرار اللي اتخد في لحظة الكلام، الوعود، والتوقعات الرأيية. و be going to للخطط المتخدة من قبل الكلام، وللتوقع المبني على دليل شايفه قدامك.',
+    timelineDescription: 'نقطة مستقبلية؛ الاختيار بين will و going to يعتمد على لحظة اتخاذ القرار ووجود دليل.',
     imageUrl: ONLINE_IMAGES.grammar.futureSimple,
     imageAlt: 'A person planning the future on a calendar',
     keyUsagePoints: [
@@ -2933,7 +2933,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     egyptianTips: [
       'شفت yesterday أو ago أو last؟ اقفل على الماضي البسيط فوراً: I SAW him yesterday (مش have seen).',
       'سؤال الخبرة المصري "جربت كذا قبل كده؟" = Have you ever tried ... ?',
-      'Since + نقطة بداية (since 2015)، ﻥ for + مدة (for ten years).'
+      'Since + نقطة بداية (since 2015)، و for + مدة (for ten years).'
     ],
     commonTraps: [
       'استخدام المضارع التام مع وقت محدد: الخطأ "I have met him yesterday"، الصواب: I MET him yesterday.',
@@ -2982,13 +2982,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'الصفات المنتهية بـ y تتحول لـ ily (easy-easily) والمنتهية بـ le تتحول لـ ly (gentle-gently)'
     ],
     egyptianTips: [
-      'Good صفة ﻥ Well ظرف: هو لاعب كويس = He is a good player، بيلعب كويس = He plays well.',
-      'Hard ﻥ late زي ما هما: يشتغل بجد = works hard (مش hardly! دي معناها "بالكاد").',
+      'Good صفة و Well ظرف: هو لاعب كويس = He is a good player، بيلعب كويس = He plays well.',
+      'Hard و late زي ما هما: يشتغل بجد = works hard (مش hardly! دي معناها "بالكاد").',
       'مكان الظرف مهم: متقولش She closed quietly the door، الصواب: She closed the door quietly.'
     ],
     commonTraps: [
       'استخدام الصفة مكان الظرف: الخطأ "He drives good"، الصواب: He drives well.',
-      'الخلط بين hard ﻥ hardly: I hardly work = بالكاد بشتغل (عكس المعنى المقصود غالباً!).',
+      'الخلط بين hard و hardly: I hardly work = بالكاد بشتغل (عكس المعنى المقصود غالباً!).',
       'وضع الظرف بين الفعل والمفعول: الخطأ "She speaks slowly English"، الصواب: She speaks English slowly.'
     ],
     examples: [
@@ -3016,13 +3016,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 53,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'Must ﻥ Have to: اللزوم والضرورة - وفرق النفي الخطير',
+    titleAr: 'Must و Have to: اللزوم والضرورة - وفرق النفي الخطير',
     titleEn: 'Must / Have to (Obligation)',
     level: 'A2 - تأسيسي',
     goldenFormula: 'must + مصدر (رأي المتكلم/قانون قوي)  |  have/has to + مصدر (ظرف خارجي يفرض)',
     negativeFormula: "mustn't = ممنوع!  |  don't have to = مش لازم (اختياري)",
     questionFormula: 'Do you have to ... ? (السؤال بـ must نادر ورسمي)',
-    summaryAr: 'الاتنين "لازم": must لما اللزوم من رأي المتكلم أو قاعدة صارمة، ﻥ have to لما ظرف خارجي هو اللي بيفرض. لكن في النفي الفرق خطير: mustn\'t يعني ممنوع، ﻥ don\'t have to يعني مش مطلوب منك (تقدر تعمله براحتك).',
+    summaryAr: 'الاتنين "لازم": must لما اللزوم من رأي المتكلم أو قاعدة صارمة، و have to لما ظرف خارجي هو اللي بيفرض. لكن في النفي الفرق خطير: mustn\'t يعني ممنوع، و don\'t have to يعني مش مطلوب منك (تقدر تعمله براحتك).',
     timelineDescription: 'لزوم في الحاضر؛ الماضي = had to، والمستقبل = will have to.',
     imageUrl: ONLINE_IMAGES.grammar.modalVerbs,
     imageAlt: 'A stop sign and a mandatory direction sign on a road',
@@ -3070,13 +3070,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 54,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'الاعتياد على شيء: الفرق بين Be used to ﻥ Get used to ﻥ Used to',
+    titleAr: 'الاعتياد على شيء: الفرق بين Be used to و Get used to و Used to',
     titleEn: 'Be Used To & Get Used To vs Used To',
     level: 'B1 - متوسط',
     goldenFormula: 'Subject + be/get used to + V-ing or noun (I am used to waking up early)',
     negativeFormula: "Subject + be not used to + V-ing (I'm not used to driving on the left)",
     questionFormula: 'Be + subject + used to + V-ing? (Are you used to working nights?)',
-    summaryAr: 'قاعدة الاعتياد: لما حاجة تكون عادية بالنسبالك دلوقتي أو بتتعود عليها لسه. Be used to معناها "متعود على"، ﻥ Get used to معناها "بدأ يتعود". احذر: بعدهم الفعل بيكون في ing مش مصدر، عكس used to بتاعة الماضي تماماً.',
+    summaryAr: 'قاعدة الاعتياد: لما حاجة تكون عادية بالنسبالك دلوقتي أو بتتعود عليها لسه. Be used to معناها "متعود على"، و Get used to معناها "بدأ يتعود". احذر: بعدهم الفعل بيكون في ing مش مصدر، عكس used to بتاعة الماضي تماماً.',
     timelineDescription: 'حالة اعتياد موجودة في الحاضر (be used to) أو عملية اعتياد لسه شغالة (get used to).',
     imageUrl: ONLINE_IMAGES.grammar.presentSimple,
     imageAlt: 'Person comfortably following a daily routine they are accustomed to',
@@ -3148,7 +3148,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 55,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'نقل الأوامر والطلبات: Tell ﻥ Ask ﻥ Order + to',
+    titleAr: 'نقل الأوامر والطلبات: Tell و Ask و Order + to',
     titleEn: 'Reported Commands & Requests',
     level: 'B1 - متوسط',
     goldenFormula: 'Verb (tell/ask/order/advise/warn) + object + (not) + to-infinitive',
@@ -3226,7 +3226,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 56,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'جمل الوصل النوعان: الفرق بين Defining ﻥ Non-Defining',
+    titleAr: 'جمل الوصل النوعان: الفرق بين Defining و Non-Defining',
     titleEn: 'Defining vs Non-Defining Relative Clauses',
     level: 'B1 - متوسط',
     goldenFormula: 'Defining: noun + who/which/that + verb (بدون فواصل) • Non-Defining: noun, who/which + verb, (بفواصل)',
@@ -3309,13 +3309,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 57,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'المستقبل في الماضي: Was going to ﻥ Would',
+    titleAr: 'المستقبل في الماضي: Was going to و Would',
     titleEn: 'Future in the Past',
     level: 'B1 - متوسط',
     goldenFormula: 'Subject + was/were going to + base verb • Subject + would + base verb',
     negativeFormula: "Subject + wasn't/weren't going to + base verb • Subject + would not (wouldn't) + base verb",
     questionFormula: 'Was/Were + subject + going to + base verb?',
-    summaryAr: 'لما تحكي عن خطة أو توقع كان موجود في لحظة ماضية: كان قاصد، كان هيعمل. Was going to هي ماضي going to، ﻥ Would هي ماضي will في الكلام المنقول والتوقعات القديمة.',
+    summaryAr: 'لما تحكي عن خطة أو توقع كان موجود في لحظة ماضية: كان قاصد، كان هيعمل. Was going to هي ماضي going to، و Would هي ماضي will في الكلام المنقول والتوقعات القديمة.',
     timelineDescription: 'نقطة في الماضي، ومنها كنا ننظر لأحداث "مستقبلية" بالنسبة لتلك اللحظة.',
     imageUrl: ONLINE_IMAGES.grammar.pastSimple,
     imageAlt: 'Calendar seen from a past moment showing plans that lay ahead then',
@@ -3393,7 +3393,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     goldenFormula: 'Make + إنتاج/خلق/قرار • Do + عمل/نشاط/واجب',
     negativeFormula: "Don't make mistakes / Don't do the work",
     questionFormula: 'What are you making? / What do you do?',
-    summaryAr: 'الفعلان معناهما "يعمل" لكن لا يتبادلان الأماكن: Make لما تكون النتيجة شيء جديد اتخلق أو اتقرر (make a cake, make a decision)، ﻥ Do للأنشطة والواجبات والشغل (do homework, do business). الباقي تصبغات ثابتة لازم تتحفظ كوحدات.',
+    summaryAr: 'الفعلان معناهما "يعمل" لكن لا يتبادلان الأماكن: Make لما تكون النتيجة شيء جديد اتخلق أو اتقرر (make a cake, make a decision)، و Do للأنشطة والواجبات والشغل (do homework, do business). الباقي تصبغات ثابتة لازم تتحفظ كوحدات.',
     timelineDescription: 'قاعدة معجمية (اختيار الفعل الصحيح مع الاسم) وليست زمناً.',
     imageUrl: ONLINE_IMAGES.grammar.gerundsInfinitives,
     imageAlt: 'Hands making something new versus doing a routine task',
@@ -3465,13 +3465,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 59,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'كل بمعنى "كله": الفرق بين All ﻥ Whole ﻥ Every ﻥ Each',
+    titleAr: 'كل بمعنى "كله": الفرق بين All و Whole و Every و Each',
     titleEn: 'All vs Whole vs Every vs Each',
     level: 'B1 - متوسط',
     goldenFormula: 'All + جمع/غير معدود • The whole + مفرد • Every/Each + مفرد',
     negativeFormula: 'Not all... / Not every... (نفي جزئي وليس كلياً)',
     questionFormula: 'Did you read the whole book? / Does every student have a book?',
-    summaryAr: 'أربع كلمات معناهم "كل" لكن بتركيبات مختلفة: All مع الجمع وغير المعدود (all students, all day)، ﻥ The whole مع المفرد (the whole day)، ﻥ Every مع المفرد بمعنى "كل واحد في المجموعة"، ﻥ Each لما تركز على كل فرد لوحده. الغلط الأشهر: whole بدون the، ﻥ every مع الجمع.',
+    summaryAr: 'أربع كلمات معناهم "كل" لكن بتركيبات مختلفة: All مع الجمع وغير المعدود (all students, all day)، و The whole مع المفرد (the whole day)، و Every مع المفرد بمعنى "كل واحد في المجموعة"، و Each لما تركز على كل فرد لوحده. الغلط الأشهر: whole بدون the، و every مع الجمع.',
     timelineDescription: 'قاعدة كميات وتحديد وليست زمناً.',
     imageUrl: ONLINE_IMAGES.grammar.presentSimple,
     imageAlt: 'A complete puzzle where all pieces and each single piece are visible',
