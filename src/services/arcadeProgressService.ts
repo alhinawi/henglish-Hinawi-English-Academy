@@ -7,6 +7,7 @@
 import { useSyncExternalStore, useCallback } from 'react';
 
 export interface ArcadeProgress {
+  history: { id: string; score: number; xp: number; at: number }[];
   xp: number;
   totalPlays: number;
   /** best score per game id */
@@ -22,6 +23,7 @@ export interface ArcadeProgress {
 const KEY = 'henglish_arcade_v1';
 
 const EMPTY: ArcadeProgress = {
+  history: [],
   xp: 0,
   totalPlays: 0,
   best: {},
@@ -41,6 +43,7 @@ function read(): ArcadeProgress {
     if (!raw) return { ...EMPTY };
     const p = JSON.parse(raw) as Partial<ArcadeProgress>;
     return {
+      history: Array.isArray(p.history) ? p.history.filter(r => r && typeof r.at === 'number' && typeof r.xp === 'number').slice(-100) : [],
       xp: typeof p.xp === 'number' ? p.xp : 0,
       totalPlays: typeof p.totalPlays === 'number' ? p.totalPlays : 0,
       best: p.best && typeof p.best === 'object' ? p.best : {},
@@ -86,6 +89,7 @@ export function recordGameResult(gameId: string, score: number): { xpEarned: num
   const xpEarned = Math.max(0, score) * 10 + 20 + (newBest && prev.totalPlays > 0 ? 40 : 0);
 
   state = {
+    history: [...prev.history, { id: gameId, score, xp: xpEarned, at: Date.now() }].slice(-100),
     xp: prev.xp + xpEarned,
     totalPlays: prev.totalPlays + 1,
     best: { ...prev.best, [gameId]: Math.max(bestScore, score) },
