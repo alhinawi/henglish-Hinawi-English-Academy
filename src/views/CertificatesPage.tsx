@@ -113,7 +113,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            احصل على شهادات إتمام المستويات المعتمدة من أكاديمية هناوي بعد
+            احصل على شهادات إتمام المستويات المعتمدة من Henglish Academy بعد
             اجتياز دروس القواعد والاختبارات التفاعلية، مع كود تحقق مشفر وفريد
             لكل شهادة.
           </p>
@@ -301,7 +301,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               </div>
               <div>
                 تنويه: هذه الشهادة توثق الإنجاز الأكاديمي الداخلي لمقررات منصة
-                أكاديمية هناوي، ولا تدعي أنها بديل عن اختبارات الهيئات الحكومية
+                Henglish Academy، ولا تدعي أنها بديل عن اختبارات الهيئات الحكومية
                 أو شهادات IELTS/TOEFL الرسمية.
               </div>
             </div>

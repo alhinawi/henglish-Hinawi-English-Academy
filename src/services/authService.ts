@@ -47,7 +47,7 @@ export const DEMO_PROFILES: Record<'student' | 'teacher' | 'admin', UserProfile>
     xp: 18900,
     streakDays: 85,
     joinedDate: '2025-01-01',
-    bio: 'مؤسس أكاديمية هناوي للغة الإنجليزية ومصمم المنهج التفاعلي.',
+    bio: 'مؤسس Henglish Academy ومصمم المنهج التفاعلي.',
   },
   admin: {
     id: 'demo-admin-super',
@@ -61,7 +61,7 @@ export const DEMO_PROFILES: Record<'student' | 'teacher' | 'admin', UserProfile>
     xp: 99999,
     streakDays: 365,
     joinedDate: '2024-01-01',
-    bio: 'التحكم الإداري الكامل في منصة ومحتوى أكاديمية هناوي.',
+    bio: 'التحكم الإداري الكامل في منصة ومحتوى Henglish Academy.',
   },
 };
 
@@ -259,7 +259,7 @@ export function mapSupabaseUserToProfile(
     xp,
     streakDays,
     joinedDate: authUser.created_at ? authUser.created_at.split('T')[0] : new Date().toISOString().split('T')[0],
-    bio: (profileRow?.bio as string) || metadata.bio || 'طالب متميز في أكاديمية هناوي',
+    bio: (profileRow?.bio as string) || metadata.bio || 'طالب متميز في Henglish Academy',
   };
 }
 

@@ -146,7 +146,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                
               </div>
               <div>
-                <h3 className="text-lg font-black text-white">بوابة أكاديمية هناوي</h3>
+                <h3 className="text-lg font-black text-white">بوابة Henglish Academy</h3>
                 <p className="text-xs text-[#b9b6d5]">سجّل دخولك أو أنشئ حسابك المجاني</p>
               </div>
             </div>

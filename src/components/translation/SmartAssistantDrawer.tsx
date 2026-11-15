@@ -51,7 +51,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
     {
       id: 'welcome',
       role: 'assistant',
-      content: `أهلاً بك! أنا مساعد الترجمة اللغوي الذكي في أكاديمية هناوي. أنا متصل مباشرة بالترجمة الحالية ومستعد للإجابة عن أي استفسار حول الصياغة، النبرة، القواعد، أو تحويل الجملة لإيميل احترافي!`,
+      content: `أهلاً بك! أنا مساعد الترجمة اللغوي الذكي في Henglish Academy. أنا متصل مباشرة بالترجمة الحالية ومستعد للإجابة عن أي استفسار حول الصياغة، النبرة، القواعد، أو تحويل الجملة لإيميل احترافي!`,
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
