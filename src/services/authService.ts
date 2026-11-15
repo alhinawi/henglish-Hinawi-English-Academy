@@ -1,7 +1,7 @@
 import { getEnvVar } from '../utils/env';
 import { createClient, SupabaseClient, User as SupabaseUser, Session as SupabaseSession } from '@supabase/supabase-js';
 import { UserProfile, CEFRLevel, UserRole } from '../types';
-import { apiRegister, apiLogin, apiLogout, ApiUser } from './henglishApi';
+import { apiRegister, apiLogin, apiLogout, apiGetMe, ApiUser } from './henglishApi';
 
 export type { UserProfile, CEFRLevel, UserRole };
 
@@ -211,6 +211,24 @@ export function getSavedAuthSession(): AuthSessionState {
   return { type: 'guest', user: GUEST_PROFILE, isLoggedIn: false, isEmailVerified: false };
 }
 
+// Completes a Google sign-in: the worker already saved the API token after the
+// OAuth redirect; we fetch the account and persist a normal session.
+export async function completeGoogleSignIn(token: string): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
+  const me = await apiGetMe(token);
+  if (!me || !me.user) {
+    return { success: false, error: 'تعذر إكمال تسجيل الدخول بحساب Google. حاول مرة تانية.' };
+  }
+  const session: AuthSessionState = {
+    type: 'authenticated',
+    user: mapApiUserToProfile(me.user),
+    isLoggedIn: true,
+    isEmailVerified: true,
+    accessToken: token,
+  };
+  saveAuthSession(session);
+  return { success: true, session };
+}
+
 export function saveAuthSession(session: AuthSessionState): void {
   if (typeof window === 'undefined') return;
   try {
@@ -278,7 +296,7 @@ export interface SignUpParams {
 }
 
 // Maps a Henglish Accounts API user record to the app's UserProfile shape.
-function mapApiUserToProfile(u: ApiUser, role: UserRole = 'student'): UserProfile {
+export function mapApiUserToProfile(u: ApiUser, role: UserRole = 'student'): UserProfile {
   return {
     id: `u-${u.id}`,
     name: u.name,

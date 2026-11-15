@@ -2,6 +2,7 @@ import { Hono, type MiddlewareHandler } from 'hono'
 import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
 import { asBody, email, str, ValidationError } from './validate'
+import { finishGoogleLogin, googleConfigured, startGoogleLogin } from './google'
 
 type Env = { Bindings: Cloudflare.Env; Variables: { userId: number } }
 
@@ -61,6 +62,14 @@ type UserRow = { id: number; name: string; email: string; created_at: string }
 const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at })
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'henglish-api' }))
+
+// Public feature flags for the auth UI (Google button stays hidden until the
+// OAuth secrets are configured on the worker).
+app.get('/api/auth/config', (c) => c.json({ google: googleConfigured(c.env) }))
+
+// Google OAuth: start (302 to Google) and callback (302 back to the site).
+app.get('/api/auth/google/start', (c) => startGoogleLogin(c.req.raw, c.env))
+app.get('/api/auth/google/callback', (c) => finishGoogleLogin(c.req.raw, c.env, openSession))
 
 // ---------- auth ----------
 app.post('/api/auth/register', async (c) => {
