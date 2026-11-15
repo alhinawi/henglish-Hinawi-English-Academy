@@ -351,18 +351,18 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
       {/* 2. ACTIVE VIDEO PLAYER STUDIO VIEW */}
       {activeScene ? (
         <section className="space-y-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <button
               onClick={() => setActiveScene(null)}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition-all cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition-all cursor-pointer shrink-0"
             >
               <ArrowRight className="w-4 h-4" />
               <span>العودة لتصفح مكتبة المقاطع</span>
             </button>
 
-            <div className="flex items-center gap-2">
-              <span className="text-xs text-white/60 font-bold">المقطع النشط:</span>
-              <span className="font-black text-[#c4ff55] text-xs sm:text-sm">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-xs text-white/60 font-bold shrink-0">المقطع النشط:</span>
+              <span className="font-black text-[#c4ff55] text-xs sm:text-sm leading-relaxed">
                 {activeScene.movieTitle} — {activeScene.sceneTitle}
               </span>
             </div>
