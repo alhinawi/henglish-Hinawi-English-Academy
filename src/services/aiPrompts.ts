@@ -43,16 +43,16 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
         promptText: 'إمتى بستخدم المستقبل التام Future Perfect وايه هو تركيبه مع أمثلة وفخاخ شائعة؟',
       },
       {
-        labelAr: 'الفرق بين will و going to بالمصري',
-        promptText: 'اشرح لي الفرق بين will و going to بالمصري مع أمثلة حية لكل حالة.',
+        labelAr: 'الفرق بين will ﻥ going to بالمصري',
+        promptText: 'اشرح لي الفرق بين will ﻥ going to بالمصري مع أمثلة حية لكل حالة.',
       },
       {
         labelAr: 'حالات If الشرطية الأربعة مع اختبار سريع',
         promptText: 'اشرح لي حالات If الشرطية الأربعة (Zero, 1st, 2nd, 3rd) واختبرني بسؤال لكل حالة.',
       },
       {
-        labelAr: 'قاعدة Since و For مع المضارع التام',
-        promptText: 'ما الفرق بين Since و For مع زمن Present Perfect وأشهر الأخطاء فيها؟',
+        labelAr: 'قاعدة Since ﻥ For مع المضارع التام',
+        promptText: 'ما الفرق بين Since ﻥ For مع زمن Present Perfect وأشهر الأخطاء فيها؟',
       },
     ],
   },
@@ -99,11 +99,11 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
         promptText: 'علمني 10 كلمات ومصطلحات متقدمة (C1/B2) مستخدمة في بيئة العمل والشركات العالمية مع أمثلة.',
       },
       {
-        labelAr: 'الفرق بين Look for و Look after و Look forward to',
+        labelAr: 'الفرق بين Look for ﻥ Look after ﻥ Look forward to',
         promptText: 'اشرح لي الفروق بين أفعال Look الاصطلاحية (Look for, look after, look forward to, look up to) مع جمل سياقية.',
       },
       {
-        labelAr: 'متلازمات لفظية قوية مع الفعل Make و Do',
+        labelAr: 'متلازمات لفظية قوية مع الفعل Make ﻥ Do',
         promptText: 'ما هي أهم المتلازمات اللفظية (Collocations) مع Make ومع Do وكيف لا أخلط بينهما؟',
       },
       {
@@ -155,8 +155,8 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
         promptText: 'اشرح لي الفرق بين صوتي TH غير المهتز /θ/ والمهتز /ð/ وكيف أضع لساني مع أمثلة وتدريب.',
       },
       {
-        labelAr: 'الفرق في النطق بين Ship و Sheep (الأصوات القصيرة والطويلة)',
-        promptText: 'ما الفرق الصوتي الدقيق بين الصوتين /ɪ/ في Ship و /iː/ في Sheep مع أزواج كلمات أخرى؟',
+        labelAr: 'الفرق في النطق بين Ship ﻥ Sheep (الأصوات القصيرة والطويلة)',
+        promptText: 'ما الفرق الصوتي الدقيق بين الصوتين /ɪ/ في Ship ﻥ /iː/ في Sheep مع أزواج كلمات أخرى؟',
       },
       {
         labelAr: 'قاعدة نطق الـ ED في نهاية الأفعال الماضية (/t/, /d/, /ɪd/)',
@@ -164,7 +164,7 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
       },
       {
         labelAr: 'التشديد في الكلمات (Word Stress) وكيف يغير المعنى',
-        promptText: 'كيف يغير التشديد (Word Stress) معنى الكلمة من اسم إلى فعل (مثل Present و Record)؟',
+        promptText: 'كيف يغير التشديد (Word Stress) معنى الكلمة من اسم إلى فعل (مثل Present ﻥ Record)؟',
       },
     ],
   },
@@ -188,7 +188,7 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
       },
       {
         labelAr: 'حل قطعة فهم قراءة سريعة مع استراتيجية Skimming 📖',
-        promptText: 'أعطني فقرة قراءة قصيرة من سياق علمي مع سؤالين لاختبار مهارة Skimming و Scanning.',
+        promptText: 'أعطني فقرة قراءة قصيرة من سياق علمي مع سؤالين لاختبار مهارة Skimming ﻥ Scanning.',
       },
       {
         labelAr: 'معايير تقييم كتابة Task 2 في اختبارات الآيلتس 📊',

@@ -94,7 +94,7 @@ export const FLASHCARD_DECK: FlashcardItem[] = [
     back: 'By = قبل أو عند الموعد (مكتمل)\nAt = في اللحظة نفسها (مستمر)',
     subBack: 'By 8 -> Future Perfect | At 8 -> Future Continuous',
     exampleEn: 'By 8 = will have finished | At 8 = will be working',
-    exampleAr: 'By تركز على النتيجة السابقة، وAt تركز على اللحظة الآنية.',
+    exampleAr: 'By تركز على النتيجة السابقة، ﻥAt تركز على اللحظة الآنية.',
   },
   {
     id: 'fc-11',
