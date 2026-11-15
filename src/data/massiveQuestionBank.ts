@@ -1083,20 +1083,20 @@ export function evaluateAssessmentSession(
   const overallPercentage = Math.round((totalCorrect / Math.max(1, questions.length)) * 100);
 
   let estimatedLevel: CEFRLevel = 'A1';
-  let levelTitleAr = 'المستوى التأسيسي الأول (Beginner - A1)';
+  let levelTitleAr = 'مبتدئ (Beginner - A1)';
 
   if (overallPercentage >= 85) {
     estimatedLevel = 'C1';
-    levelTitleAr = 'المستوى المتقدم والطلاقة الأكاديمية (Advanced - C1)';
+    levelTitleAr = 'متقدم (Advanced - C1)';
   } else if (overallPercentage >= 70) {
     estimatedLevel = 'B2';
-    levelTitleAr = 'المستوى فوق المتوسط المتمكن (Upper Intermediate - B2)';
+    levelTitleAr = 'فوق المتوسط (Upper Intermediate - B2)';
   } else if (overallPercentage >= 50) {
     estimatedLevel = 'B1';
-    levelTitleAr = 'المستوى المتوسط المستقل (Intermediate - B1)';
+    levelTitleAr = 'متوسط (Intermediate - B1)';
   } else if (overallPercentage >= 30) {
     estimatedLevel = 'A2';
-    levelTitleAr = 'المستوى الأولي العملي (Elementary - A2)';
+    levelTitleAr = 'أساسي (Elementary - A2)';
   }
 
   // Calculate skill percentages

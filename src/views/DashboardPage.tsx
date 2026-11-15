@@ -6,6 +6,16 @@ import {
   AchievementBadge,
 } from "../types";
 import { playSound, fireCelebration } from "../utils/audio";
+import { FUTURE_PERFECT_LESSONS } from "../data/futurePerfectCourse";
+import {
+  CEFR_LEVELS,
+  CEFR_LABELS_AR,
+  levelProgressPercent,
+  xpToNextLevel,
+  nextLevelOf,
+  formatStreakAr,
+  formatDaysAr,
+} from "../utils/levels";
 import {
   Sparkles,
   ArrowRight,
@@ -47,11 +57,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   badges,
   onToggleGoal,
 }) => {
-  const cefrLevels = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
-  const currentIdx = cefrLevels.indexOf(userProfile.currentLevel as any);
-  const nextLevel =
-    currentIdx < cefrLevels.length - 1 ? cefrLevels[currentIdx + 1] : "C2";
-  const levelProgressPercent = 72; // 72% towards next level
+  const currentLevel = userProfile.currentLevel;
+  const nextLevel = nextLevelOf(currentLevel);
+  const progressPercent = levelProgressPercent(userProfile.xp || 0, currentLevel);
+  const xpRemaining = xpToNextLevel(userProfile.xp || 0, currentLevel);
 
   const academies = [
     {
@@ -63,19 +72,19 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "grammar" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#ffd166]/10",
       badge: "A1 - C1 • شامل",
-      lessonsCount: "٢١+ قاعدة وماستر كلاس",
+      lessonsCount: "أكثر من ٥٠ قاعدة + ماستر كلاس",
       accentColor: "#41e7ff",
     },
     {
       id: "vocabulary",
       title: "أكاديمية الكلمات والأفعال",
       titleEn: "Vocabulary Academy",
-      desc: "كلمات الأعمال والتكنولوجيا والسفر والتصريف الثالث للأفعال الشاذة (V3).",
+      desc: "أكثر من ١٥٠٠ كلمة مصنفة بالمستوى والموضوع، مع تدريبات تصريف الأفعال الشاذة (V3).",
       icon: BookA,
       route: "vocabulary" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#41e7ff]/10",
       badge: "Spaced Repetition",
-      lessonsCount: "٥٠+ فعلاً ومصطلحاً",
+      lessonsCount: "أكثر من ١٥٠٠ كلمة",
       accentColor: "#c4ff55",
     },
     {
@@ -87,7 +96,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "speaking" as PageRoute,
       color: "from-[#ff4f9a]/20 to-[#9b7bff]/20",
       badge: "Interactive Dialogues",
-      lessonsCount: "٥ سيناريوهات واقعية",
+      lessonsCount: "١٠ سيناريوهات حوارية",
       accentColor: "#ff4f9a",
     },
     {
@@ -99,7 +108,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "listening" as PageRoute,
       color: "from-[#9b7bff]/20 to-[#41e7ff]/10",
       badge: "Audio Lab",
-      lessonsCount: "تمارين فهم صوتي",
+      lessonsCount: "٦ مقاطع استماع واقعية",
       accentColor: "#9b7bff",
     },
     {
@@ -111,7 +120,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "reading" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#c4ff55]/10",
       badge: "Reading Hub",
-      lessonsCount: "مقالات وقصص متدرجة",
+      lessonsCount: "٤ نصوص قراءة متدرجة",
       accentColor: "#41e7ff",
     },
     {
@@ -135,32 +144,43 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "pronunciation" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#ff4f9a]/15",
       badge: "IPA & Accents",
-      lessonsCount: "مقارنات US vs UK",
+      lessonsCount: "١٨ زوجاً صوتياً (Minimal Pairs)",
       accentColor: "#c4ff55",
     },
     {
       id: "real-life",
       title: "إنجليزي المواقف الحقيقية",
       titleEn: "Real-Life English",
-      desc: "في المطار، الفندق، المطعم، المستشفى، البنك، والتسوق.",
+      desc: "في المطار، الفندق، ومقابلات العمل - حوارات ومواقف جاهزة.",
       icon: Compass,
       route: "real-life" as PageRoute,
       color: "from-[#ff4f9a]/20 to-[#ffd166]/20",
       badge: "Practical Survival",
-      lessonsCount: "١٢ موديول واقعي",
+      lessonsCount: "٣ موديولات واقعية",
       accentColor: "#ff4f9a",
     },
   ];
 
-  const weeklyActivity = [
-    { day: "السبت", hours: 1.2, completed: true },
-    { day: "الأحد", hours: 0.8, completed: true },
-    { day: "الإثنين", hours: 1.5, completed: true },
-    { day: "الثلاثاء", hours: 2.1, completed: true },
-    { day: "الأربعاء", hours: 0.5, completed: false, isToday: true },
-    { day: "الخميس", hours: 0.0, completed: false },
-    { day: "الجمعة", hours: 0.0, completed: false },
-  ];
+  // Real future-perfect course progress for the "continue learning" card
+  const fpLessonIds = FUTURE_PERFECT_LESSONS.map((l) => l.id);
+  const fpCompleted = fpLessonIds.filter((id) =>
+    (progress.completedLessons || []).includes(id),
+  );
+  const nextFpLesson =
+    FUTURE_PERFECT_LESSONS.find((l) => !fpCompleted.includes(l.id)) || null;
+  const fpProgressPercent = Math.round(
+    (fpCompleted.length / Math.max(1, fpLessonIds.length)) * 100,
+  );
+
+  // Real quiz stats from actual recorded scores
+  const quizEntries = Object.entries(progress.quizScores || {});
+  const totalQuizScore = quizEntries.reduce((acc, [, q]) => acc + q.score, 0);
+  const totalQuizMax = quizEntries.reduce((acc, [, q]) => acc + q.total, 0);
+  const quizAccuracy =
+    totalQuizMax > 0 ? Math.round((totalQuizScore / totalQuizMax) * 100) : null;
+  const recentQuizzes = [...quizEntries]
+    .sort(([, a], [, b]) => (a.date < b.date ? 1 : -1))
+    .slice(0, 4);
 
   return (
     <div className="space-y-10 pb-12 text-right">
@@ -178,14 +198,23 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
 
             <h1 className="text-2xl sm:text-4xl 2xl:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-              {userProfile.id === 'guest-learner' ? 'أهلاً بك في Henglish Academy' : `أهلاً بك مجدداً، ${userProfile.nameAr}`}!
+              {userProfile.id === 'guest-learner' ? (
+                'أهلاً بك في Henglish Academy!'
+              ) : (
+                <>
+                  أهلاً بك مجدداً،{' '}
+                  <bdi dir="auto" className="whitespace-nowrap">
+                    {userProfile.nameAr}!
+                  </bdi>
+                </>
+              )}
             </h1>
 
             <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed max-w-2xl">
               أنت تسير بخطى ثابتة نحو إتقان اللغة الإنجليزية. حافظت على
               استمرارية التعلم لمدة{" "}
               <strong className="text-[#ffd166]">
-                {userProfile.streakDays} أيام متتالية
+                {formatStreakAr(userProfile.streakDays)}
               </strong>
               ، وجمعت{" "}
               <strong className="text-[#41e7ff]">
@@ -199,24 +228,33 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <div className="flex items-center justify-between text-xs font-bold">
                 <span className="text-[#ffd166] flex items-center gap-1.5">
                   <Target className="w-3.5 h-3.5" />
-                  مستواك الحالي: {userProfile.currentLevel} (Intermediate)
+                  مستواك الحالي: {currentLevel} ({CEFR_LABELS_AR[currentLevel]})
                 </span>
                 <span className="text-[#b9b6d5]">
-                  المستوى التالي:{" "}
-                  <strong className="text-white">{nextLevel}</strong> (
-                  {levelProgressPercent}%)
+                  {nextLevel ? (
+                    <>
+                      المستوى التالي:{" "}
+                      <strong className="text-white">{nextLevel}</strong> (
+                      {progressPercent}%) - يتبقى {xpRemaining.toLocaleString()} XP
+                    </>
+                  ) : (
+                    <>وصلت لأعلى مستوى - إتقان (C2)</>
+                  )}
                 </span>
               </div>
 
-              <div className="w-full h-3 rounded-full bg-white/10 overflow-hidden p-0.5 border border-white/10">
+              <div
+                dir="rtl"
+                className="w-full h-3 rounded-full bg-white/10 overflow-hidden p-0.5 border border-white/10"
+              >
                 <div
-                  className="h-full rounded-full bg-linear-to-r from-[#ffd166] via-[#ff4f9a] to-[#41e7ff] transition-all duration-1000 shadow-[0_0_12px_rgba(65,231,255,0.4)]"
-                  style={{ width: `${levelProgressPercent}%` }}
+                  className="h-full rounded-full bg-linear-to-l from-[#ffd166] via-[#ff4f9a] to-[#41e7ff] transition-all duration-1000 shadow-[0_0_12px_rgba(65,231,255,0.4)]"
+                  style={{ width: `${progressPercent}%` }}
                 />
               </div>
 
               <div className="flex justify-between text-[10px] text-[#b9b6d5]/70 font-mono">
-                {cefrLevels.map((lvl) => (
+                {CEFR_LEVELS.map((lvl) => (
                   <span
                     key={lvl}
                     className={
@@ -244,21 +282,27 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 المستقبل التام الشامل
               </div>
               <div className="text-xs text-[#b9b6d5]">
-                الدرس 03: صيغ النفي واختصارات Won't have
+                {nextFpLesson
+                  ? `الدرس ${String(nextFpLesson.number).padStart(2, "0")}: ${nextFpLesson.title}`
+                  : "أكملت كل دروس الكورس - راجع أكاديمية الجرامر"}
               </div>
             </div>
 
-            <div className="w-full bg-black/40 rounded-full h-2 overflow-hidden">
+            <div dir="rtl" className="w-full bg-black/40 rounded-full h-2 overflow-hidden">
               <div
-                className="bg-[#41e7ff] h-full rounded-full"
-                style={{ width: "40%" }}
+                className="h-full rounded-full bg-[#41e7ff]"
+                style={{ width: `${fpProgressPercent}%` }}
               />
             </div>
 
             <button
               onClick={() => {
                 playSound("click");
-                onNavigate("lesson", "lesson-3");
+                if (nextFpLesson) {
+                  onNavigate("lesson", nextFpLesson.id);
+                } else {
+                  onNavigate("courses/grammar");
+                }
               }}
               className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2 transition-transform hover:scale-[1.02]"
             >
@@ -343,54 +387,62 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 إحصائيات الأسبوع التعليمي
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                ساعات الدراسة ونسبة الإتقان التراكمية
+                إنجازاتك الفعلية من دروس وكويزات مسجلة
               </p>
             </div>
             <div className="text-xs font-black text-[#ffd166] flex items-center gap-1">
               <Clock className="w-4 h-4" />
-              <span>٦.١ ساعات هذا الأسبوع</span>
+              <span>{(userProfile.xp || 0).toLocaleString()} XP إجمالي</span>
             </div>
           </div>
 
-          {/* Bar Chart Representation */}
-          <div className="h-44 flex items-end justify-between gap-2 sm:gap-4 pt-6 px-2">
-            {weeklyActivity.map((d, idx) => {
-              const maxH = 2.5;
-              const heightPercent = Math.min(
-                100,
-                Math.round((d.hours / maxH) * 100),
-              );
-
-              return (
+          {/* Real recent quiz results */}
+          <div className="space-y-2.5">
+            <div className="text-xs font-bold text-[#b9b6d5]">أحدث نتائج الكويزات</div>
+            {recentQuizzes.length === 0 ? (
+              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 text-center text-xs text-[#b9b6d5] leading-relaxed">
+                لم تحل أي كويز بعد. ابدأ أول كويز لك من أكاديمية الجرامر
+                وسيظهر سجل نتائجك الحقيقي هنا.
+              </div>
+            ) : (
+              recentQuizzes.map(([quizId, q]) => (
                 <div
-                  key={idx}
-                  className="flex-1 flex flex-col items-center gap-2"
+                  key={quizId}
+                  className="flex items-center justify-between p-3 rounded-2xl bg-white/5 border border-white/10"
                 >
-                  <span className="text-[10px] font-mono text-[#b9b6d5]">
-                    {d.hours > 0 ? `${d.hours}h` : "—"}
-                  </span>
-
-                  <div className="w-full max-w-[28px] h-28 bg-white/5 rounded-t-lg overflow-hidden flex flex-col justify-end p-0.5 border border-white/5">
-                    <div
-                      className={`w-full rounded-t-md transition-all duration-700 ${
-                        d.isToday
-                          ? "bg-linear-to-t from-[#41e7ff] to-[#ffd166] shadow-[0_0_10px_rgba(65,231,255,0.4)]"
-                          : d.completed
-                            ? "bg-[#c4ff55]/80"
-                            : "bg-white/10"
+                  <div className="flex items-center gap-2.5">
+                    <span
+                      className={`w-9 h-9 rounded-xl flex items-center justify-center text-xs font-black border ${
+                        q.total > 0 && q.score / q.total >= 0.7
+                          ? "bg-[#c4ff55]/15 text-[#c4ff55] border-[#c4ff55]/30"
+                          : "bg-[#ff9c66]/15 text-[#ff9c66] border-[#ff9c66]/30"
                       }`}
-                      style={{ height: `${Math.max(8, heightPercent)}%` }}
-                    />
+                    >
+                      {q.total > 0 ? Math.round((q.score / q.total) * 100) : 0}%
+                    </span>
+                    <div>
+                      <div className="text-xs font-bold text-white">
+                        {q.score}/{q.total} إجابات صحيحة
+                      </div>
+                      <div className="text-[10px] text-[#b9b6d5]/70">
+                        {new Date(q.date).toLocaleDateString("ar-EG", {
+                          weekday: "long",
+                          day: "numeric",
+                          month: "long",
+                        })}
+                      </div>
+                    </div>
                   </div>
-
-                  <span
-                    className={`text-[11px] font-bold ${d.isToday ? "text-[#ffd166]" : "text-[#b9b6d5]"}`}
-                  >
-                    {d.day}
-                  </span>
+                  <Award
+                    className={`w-4 h-4 ${
+                      q.total > 0 && q.score / q.total >= 0.7
+                        ? "text-[#c4ff55]"
+                        : "text-[#b9b6d5]/40"
+                    }`}
+                  />
                 </div>
-              );
-            })}
+              ))
+            )}
           </div>
 
           <div className="grid grid-cols-3 gap-2 pt-2 text-center border-t border-white/10">
@@ -402,12 +454,14 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
             <div className="p-2 rounded-xl bg-white/5">
               <div className="text-[10px] text-[#b9b6d5]">دقة الكويزات</div>
-              <div className="text-base font-black text-[#c4ff55]">٩٤%</div>
+              <div className="text-base font-black text-[#c4ff55]">
+                {quizAccuracy === null ? "—" : `${quizAccuracy}%`}
+              </div>
             </div>
             <div className="p-2 rounded-xl bg-white/5">
               <div className="text-[10px] text-[#b9b6d5]">أيام متتالية</div>
               <div className="text-base font-black text-[#ffd166]">
-                {userProfile.streakDays} أيام
+                {formatDaysAr(userProfile.streakDays)}
               </div>
             </div>
           </div>
@@ -453,12 +507,12 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             {/* CEFR mini pills */}
             <div className="flex flex-wrap gap-1.5 pt-1">
               {[
-                { lvl: 'A1', count: '800' },
-                { lvl: 'A2', count: '1,000' },
-                { lvl: 'B1', count: '1,100' },
-                { lvl: 'B2', count: '1,100' },
-                { lvl: 'C1', count: '900' },
-                { lvl: 'C2', count: '600' },
+                { lvl: 'A1', count: '851' },
+                { lvl: 'A2', count: '1,050' },
+                { lvl: 'B1', count: '1,150' },
+                { lvl: 'B2', count: '1,050' },
+                { lvl: 'C1', count: '650' },
+                { lvl: 'C2', count: '249' },
               ].map(item => (
                 <span key={item.lvl} className="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[10px] font-mono text-[#b9b6d5]">
                   <strong className="text-white">{item.lvl}:</strong> {item.count}
@@ -682,7 +736,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
             <p className="text-xs text-[#dedbf4] leading-relaxed">
               اختبر مهاراتك في الجرامر والكلمات وفهم المقروء من خلال اختبار
-              تقييم تشخيصي مكون من ٢٠ سؤالاً مع تقرير مفصل بنقاط القوة
+              تقييم تشخيصي مكون من ١٠ أسئلة متدرجة عبر المستويات مع تقرير مفصل بنقاط القوة
               والموضوعات المقترحة.
             </p>
           </div>
