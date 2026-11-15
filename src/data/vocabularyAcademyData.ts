@@ -14427,19 +14427,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "draft",
     collocation: "first draft",
   },
-  {
-    id: "voc-u15-24",
-    word: "proofread",
-    ipa: "/ˈpruːfriːd/",
-    partOfSpeech: "verb",
-    meaningAr: "يراجع لغويًا / يدقق",
-    level: "B2",
-    category: "academic",
-    exampleEn: "Proofread your essay before you submit it.",
-    exampleAr: "راجع مقالك لغويًا قبل ما تسلّمه.",
-    highlight: "Proofread",
-    collocation: "proofread your work",
-  },
+
   {
     id: "voc-u15-25",
     word: "edit",
