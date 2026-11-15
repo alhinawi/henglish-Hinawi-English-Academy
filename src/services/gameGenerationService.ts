@@ -1181,10 +1181,10 @@ export async function generateStressDetectiveRound(count: number = 5): Promise<G
  */
 export async function generatePhonemeMatchRound(count: number = 5): Promise<GameQuestion[]> {
   const phonemes = [
-    { symbol: '/θ/', name: 'صوت الثاء المرقق', exampleWord: 'theater', distractors: ['this', 'tree', 'tide'], explanationAr: 'الرمز /θ/ يمثل صوت الثاء كما في theater ﻥ think ﻥ thought.', cefr: 'A2' },
-    { symbol: '/ð/', name: 'صوت الذال الجهور', exampleWord: 'breathe', distractors: ['breath', 'brief', 'bright'], explanationAr: 'الرمز /ð/ يمثل صوت الذال كما في breathe ﻥ father ﻥ they.', cefr: 'B1' },
+    { symbol: '/θ/', name: 'صوت الثاء المرقق', exampleWord: 'theater', distractors: ['this', 'tree', 'tide'], explanationAr: 'الرمز /θ/ يمثل صوت الثاء كما في theater و think و thought.', cefr: 'A2' },
+    { symbol: '/ð/', name: 'صوت الذال الجهور', exampleWord: 'breathe', distractors: ['breath', 'brief', 'bright'], explanationAr: 'الرمز /ð/ يمثل صوت الذال كما في breathe و father و they.', cefr: 'B1' },
     { symbol: '/ʃ/', name: 'صوت الشين', exampleWord: 'machine', distractors: ['match', 'ache', 'chemist'], explanationAr: 'الرمز /ʃ/ يمثل صوت الشين، وفي machine يلفظ الحرفان ch شِيناً ناعماً.', cefr: 'B1' },
-    { symbol: '/tʃ/', name: 'صوت تش', exampleWord: 'challenge', distractors: ['character', 'chef', 'chorus'], explanationAr: 'الرمز /tʃ/ يمثل صوت تش الصريح كما في challenge ﻥ church.', cefr: 'A2' },
+    { symbol: '/tʃ/', name: 'صوت تش', exampleWord: 'challenge', distractors: ['character', 'chef', 'chorus'], explanationAr: 'الرمز /tʃ/ يمثل صوت تش الصريح كما في challenge و church.', cefr: 'A2' },
     { symbol: '/ŋ/', name: 'صوت النون الأنفية (الغنة)', exampleWord: 'singing', distractors: ['sin', 'sign', 'sink'], explanationAr: 'الرمز /ŋ/ يمثل صوت النون الأنفية المصاحبة لـ ng في singing.', cefr: 'B1' },
   ];
 

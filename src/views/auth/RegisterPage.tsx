@@ -257,7 +257,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
               required
             />
             <span className="text-xs text-slate-400 leading-relaxed">
-              أوافق على <span className="text-indigo-400 underline">شروط الاستخدام</span> ﻥ <span className="text-indigo-400 underline">سياسة الخصوصية</span> وتلقي إشعارات التقدّم التعليمي.
+              أوافق على <span className="text-indigo-400 underline">شروط الاستخدام</span> و <span className="text-indigo-400 underline">سياسة الخصوصية</span> وتلقي إشعارات التقدّم التعليمي.
             </span>
           </label>
 
