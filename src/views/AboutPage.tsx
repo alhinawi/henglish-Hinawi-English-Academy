@@ -12,7 +12,7 @@ export const AboutPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={ONLINE_IMAGES.learningStudyGroup} 
-            alt="Students collaborating at Hinawi Academy" 
+            alt="Students collaborating at Henglish Academy" 
             className="w-full h-full object-cover filter brightness-[0.2]"
           />
           <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20] via-[#0c0b20]/80 to-transparent" />

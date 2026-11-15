@@ -108,7 +108,7 @@ const LOCATIONS: WorldLocation[] = [
   {
     id: 'university',
     nameEn: 'Hinawi Central Academy',
-    nameAr: 'أكاديمية هناوي المركزية للغات',
+    nameAr: 'المركز الرئيسي لـ Henglish Academy',
     scenarioId: 'sim-airport-checkin',
     category: 'Academic Campus',
     icon: '',

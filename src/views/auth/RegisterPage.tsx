@@ -97,7 +97,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
             <h2 className="text-xl font-bold text-white flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-cyan-400" /> إنشاء حساب جديد
             </h2>
-            <p className="text-xs text-slate-400 mt-1">ابدأ رحلتك في احتراف الإنجليزية مع أكاديمية هناوي</p>
+            <p className="text-xs text-slate-400 mt-1">ابدأ رحلتك في احتراف الإنجليزية مع Henglish Academy</p>
           </div>
           <button
             onClick={() => onNavigate('login')}
