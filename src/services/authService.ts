@@ -17,6 +17,11 @@ export interface AuthSessionState {
 }
 
 const AUTH_STORAGE_KEY = 'henglish_auth_session';
+// Neutral placeholder shown until the user picks their own picture (no
+// external photo by default). Google sign-in fills the Google picture instead.
+export const ANONYMOUS_AVATAR =
+  "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect width='96' height='96' fill='%23334155'/><circle cx='48' cy='36' r='16' fill='%2394a3b8'/><path d='M16 88c4-20 16-28 32-28s28 8 32 28z' fill='%2394a3b8'/></svg>";
+
 const GUEST_DATA_KEY = 'henglish_guest_local_progress';
 
 // Seeded Demo Profiles
@@ -70,7 +75,7 @@ export const GUEST_PROFILE: UserProfile = {
   name: 'Guest Learner',
   nameAr: 'طالب زائر (Guest)',
   email: 'guest@henglish.academy',
-  avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&auto=format&fit=crop&q=80',
+  avatar: ANONYMOUS_AVATAR,
   role: 'student',
   currentLevel: 'A1',
   targetLevel: 'B2',
@@ -263,7 +268,7 @@ export function mapSupabaseUserToProfile(
   const targetLevel: CEFRLevel = (profileRow?.target_level as CEFRLevel) || (metadata.target_level as CEFRLevel) || 'B2';
   const xp = typeof profileRow?.xp_points === 'number' ? profileRow.xp_points : (metadata.xp as number) || 100;
   const streakDays = typeof profileRow?.streak_days === 'number' ? profileRow.streak_days : (metadata.streak_days as number) || 1;
-  const avatar = (profileRow?.avatar_url as string) || (metadata.avatar_url as string) || 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80';
+  const avatar = (profileRow?.avatar_url as string) || (metadata.avatar_url as string) || ANONYMOUS_AVATAR;
 
   return {
     id: authUser.id,
@@ -302,7 +307,7 @@ export function mapApiUserToProfile(u: ApiUser, role: UserRole = 'student'): Use
     name: u.name,
     nameAr: u.name,
     email: u.email,
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
+    avatar: u.avatar || ANONYMOUS_AVATAR,
     role,
     currentLevel: 'A1',
     targetLevel: 'B2',

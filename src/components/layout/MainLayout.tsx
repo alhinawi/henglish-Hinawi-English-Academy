@@ -10,6 +10,7 @@ interface MainLayoutProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
   onOpenSearch: () => void;
   onOpenVoiceSettings: () => void;
+  onOpenSettings: () => void;
   onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
   userProfile: UserProfile;
   notifications: AppNotification[];
@@ -29,6 +30,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   onNavigate,
   onOpenSearch,
   onOpenVoiceSettings,
+  onOpenSettings,
   onOpenAuthModal,
   userProfile,
   notifications,
@@ -95,6 +97,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
           onOpenMobile={() => setMobileOpen(true)}
           onOpenSearch={onOpenSearch}
           onOpenVoiceSettings={onOpenVoiceSettings}
+          onOpenSettings={onOpenSettings}
           onOpenAuthModal={onOpenAuthModal}
           userProfile={userProfile}
           notifications={notifications}
