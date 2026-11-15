@@ -8,14 +8,32 @@ REQUIRED = ["id","word","rank","ipa","partOfSpeech","meaningAr","level","categor
 POS_SET = {"noun","verb","modal verb","adjective","adverb","pronoun","preposition","determiner","conjunction","number","interjection","particle","phrasal verb"}
 CATS = {"everyday","business","tech","academic","travel","workplace","medical","food","hotel","phrasal_verbs","idioms","collocations"}
 
+def legacy_words():
+    import glob
+    words = set()
+    for p in glob.glob('src/data/vocabularyAcademyData.ts') + glob.glob('public/data/vocabulary-*.json'):
+        try: txt = open(p, encoding='utf-8').read()
+        except OSError: continue
+        if p.endswith('.ts'):
+            words.update(w.lower() for w in re.findall(r'word: "([^"]+)"', txt))
+        else:
+            try:
+                for it in json.loads(txt):
+                    if isinstance(it, dict) and it.get('word'): words.add(str(it['word']).lower())
+            except Exception: pass
+    return words
+
 def main(tsv, chunks):
     ranks = {}
     for line in open(tsv, encoding='utf-8'):
         if line.startswith('#') or not line.strip(): continue
-        n, lemma, pos, cefr, z = line.rstrip('\n').split('\t')
+        parts = line.rstrip('\n').split('\t')
+        n, lemma, pos, cefr = parts[0], parts[1], parts[2], parts[3]
         ranks[int(n)] = (lemma, pos, cefr)
     errors = checked = 0
     seen_words = {}
+    legacy = legacy_words()
+    legacy_hits = []
     for cp in chunks:
         m = re.search(r'r(\d{5})-(\d{5})\.json$', str(cp))
         if not m:
@@ -47,6 +65,9 @@ def main(tsv, chunks):
             w = str(e.get("word","")).lower()
             if w in seen_words: print(f"ERR {cp}[{i}]: word also in {seen_words[w]}"); errors += 1
             seen_words[w] = cp
+            if w in legacy: legacy_hits.append(w)
+    if legacy_hits:
+        print(f"WARNING: {len(legacy_hits)} words also exist in legacy vocab data (integrator retires the legacy copies): {sorted(set(legacy_hits))[:20]}")
     print(f"checked {checked} entries, {errors} errors")
     sys.exit(1 if errors else 0)
 
