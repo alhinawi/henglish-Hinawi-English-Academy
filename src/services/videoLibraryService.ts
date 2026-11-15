@@ -4783,6 +4783,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Wednesday has a silent D.', arEg: 'كلمة Wednesday فيها D ساكنة.' }, { en: 'Say comfortable with three syllables, not four.', arEg: 'انطق comfortable بثلاث مقاطع مش أربعة.' }],
   },
+  {
+    id: 'feelings-sce-describe',
+    movieTitle: 'Describe Your Feelings in English - Speak Confident English',
+    releaseYear: 2021,
+    director: 'Speak Confident English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Beyond Happy and Sad',
+    sceneDescription: 'مفردات المشاعر المتقدمة: overwhelmed, relieved, frustrated - عبّر عن إحساسك بدقة زي النيتيف.',
+    youtubeId: '_uQDCru94nA',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Speak Confident English (Official)',
+    dialogueQuote: 'I felt overwhelmed by all the work.',
+    actorName: 'Anne-Marie',
+    characterName: 'Anne-Marie',
+    thumbnailUrl: 'https://img.youtube.com/vi/_uQDCru94nA/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak Confident English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I felt overwhelmed by all the work.', arEg: 'حسيت إني متخنوق من كتر الشغل.', arFusha: 'حسيت إني متخنوق من كتر الشغل.', speaker: 'Anne-Marie', keyWords: [{ word: 'overwhelmed', ipa: '', meaningAr: 'متخنوق / مغطى بالضغط', meaningEn: '' }, { word: 'felt', ipa: '', meaningAr: 'حسيت', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I was so relieved when it ended.', arEg: 'اتريحت جداً لما خلصت.', arFusha: 'اتريحت جداً لما خلصت.', speaker: 'Anne-Marie', keyWords: [{ word: 'relieved', ipa: '', meaningAr: 'مرتاح بعد قلق', meaningEn: '' }, { word: 'ended', ipa: '', meaningAr: 'خلصت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'overwhelmed', type: 'cultural', meaningAr: 'مغطى بالضغط / مش قادر', meaningEn: '', egyptianEquivalent: 'مخنوق', exampleInScene: 'I feel overwhelmed today.' },      { term: 'relieved', type: 'cultural', meaningAr: 'مرتاح بعد قلق', meaningEn: '', egyptianEquivalent: 'اتريحت', exampleInScene: 'I am relieved it is over.' },      { term: 'frustrated', type: 'cultural', meaningAr: 'محبط / متضايق', meaningEn: '', egyptianEquivalent: 'مستفز', exampleInScene: 'He felt frustrated by the delay.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'overwhelmed\' mean?', questionAr: 'معنى overwhelmed؟', options: ['مغطى بالضغط والمسؤوليات', 'سعيد جداً', 'جعان', 'ناعس'], correctIndex: 0, explanationAr: 'overwhelmed معناها الضغط غطاك ومش قادر تلحق - إحساس الإجهاد النفسي.' }
+    ],
+    speakingLines: [{ en: 'I felt overwhelmed by all the work.', arEg: 'حسيت إني متخنوق من كتر الشغل.' }, { en: 'I was so relieved when it ended.', arEg: 'اتريحت جداً لما خلصت.' }],
+  },
+  {
+    id: 'feelings-bob-emotions',
+    movieTitle: 'English Words for Emotions and Feelings - Happy, Sad, Scared - Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Basic Emotions Words',
+    sceneDescription: 'بوب بيشرح كلمات المشاعر الأساسية بتمثيل ووضوح: سعيد، زعلان، خايف، متوتر - للمبتدئين.',
+    youtubeId: 'HGCRUKBfcfE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I get nervous before exams.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/HGCRUKBfcfE/hqdefault.jpg',
+    category: 'english_for_beginners',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I get nervous before exams.', arEg: 'بتوتر قبل الامتحانات.', arFusha: 'بتوتر قبل الامتحانات.', speaker: 'Bob', keyWords: [{ word: 'nervous', ipa: '', meaningAr: 'متوتر', meaningEn: '' }, { word: 'before', ipa: '', meaningAr: 'قبل', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'She was furious when she heard the news.', arEg: 'هي كانت غضبانة جداً لما سمعت الخبر.', arFusha: 'هي كانت غضبانة جداً لما سمعت الخبر.', speaker: 'Bob', keyWords: [{ word: 'furious', ipa: '', meaningAr: 'غضبان جداً', meaningEn: '' }, { word: 'news', ipa: '', meaningAr: 'الخبر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'nervous', type: 'cultural', meaningAr: 'متوتر', meaningEn: '', egyptianEquivalent: 'قلقان', exampleInScene: 'I am nervous about the test.' },      { term: 'furious', type: 'cultural', meaningAr: 'غضبان جداً', meaningEn: '', egyptianEquivalent: 'زعلان أوي', exampleInScene: 'Dad was furious.' },      { term: 'scared', type: 'cultural', meaningAr: 'خايف', meaningEn: '', egyptianEquivalent: 'مرعوب', exampleInScene: 'The kid is scared of dogs.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'furious\' mean?', questionAr: 'معنى furious؟', options: ['غضبان جداً', 'سعيد جداً', 'تعبان جداً', 'جعان جداً'], correctIndex: 0, explanationAr: 'furious أقوى من angry - غضبان جداً أو مجنون من الزعل.' }
+    ],
+    speakingLines: [{ en: 'I get nervous before exams.', arEg: 'بتوتر قبل الامتحانات.' }, { en: 'She was furious when she heard the news.', arEg: 'هي كانت غضبانة جداً لما سمعت الخبر.' }],
+  },
+  {
+    id: 'weather-jessica-conversation',
+    movieTitle: 'What\'s The Weather Like Today? - Talking About the Weather - Learn English with Jessica',
+    releaseYear: 2021,
+    director: 'Learn English with Jessica',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Classic Weather Chat',
+    sceneDescription: 'حوار الجو الكلاسيكي: مشمس، ممطر، عاصف - أشهر موضوع سمال توك في العالم كله.',
+    youtubeId: '1MEQAQqCWoQ',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Jessica (Official)',
+    dialogueQuote: 'It is boiling hot today, isn\'t it?',
+    actorName: 'Jessica',
+    characterName: 'Jessica',
+    thumbnailUrl: 'https://img.youtube.com/vi/1MEQAQqCWoQ/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Jessica Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'It is boiling hot today, isn\'t it?', arEg: 'الجو حر نار النهارده، مش كده؟', arFusha: 'الجو حر نار النهارده، مش كده؟', speaker: 'Jessica', keyWords: [{ word: 'boiling hot', ipa: '', meaningAr: 'حر نار', meaningEn: '' }, { word: 'isn\'t it', ipa: '', meaningAr: 'مش كده؟', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It looks like it is going to rain.', arEg: 'شكله هيمطر.', arFusha: 'شكله هيمطر.', speaker: 'Jessica', keyWords: [{ word: 'looks like', ipa: '', meaningAr: 'شكله', meaningEn: '' }, { word: 'rain', ipa: '', meaningAr: 'يمطر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'boiling hot', type: 'collocation', meaningAr: 'حر شديد جداً', meaningEn: '', egyptianEquivalent: 'حر نار', exampleInScene: 'It is boiling hot in July.' },      { term: 'It looks like rain', type: 'collocation', meaningAr: 'شكله هيمطر', meaningEn: '', egyptianEquivalent: 'الجو باين عليه مطر', exampleInScene: 'Take an umbrella, it looks like rain.' },      { term: 'freezing', type: 'cultural', meaningAr: 'برد قارس', meaningEn: '', egyptianEquivalent: 'صقيع', exampleInScene: 'It is freezing outside.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'boiling hot\' mean?', questionAr: 'معنى boiling hot؟', options: ['حر شديد', 'برد شديد', 'جو معتدل', 'جو ممطر'], correctIndex: 0, explanationAr: 'boiling hot تعبير مبالغة عن الحر الشديد - زي المية اللي بتغلي.' }
+    ],
+    speakingLines: [{ en: 'It is boiling hot today, isn\'t it?', arEg: 'الجو حر نار النهارده، مش كده؟' }, { en: 'It looks like it is going to rain.', arEg: 'شكله هيمطر.' }],
+  },
+  {
+    id: 'weather-bob-talk',
+    movieTitle: 'Weather Talk! Learn English Words and Phrases to Talk about the Weather - Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Every Weather Word',
+    sceneDescription: 'كل كلمات وتعابير الجو مع بوب: درجة الحرارة، الرطوبة، الرياح - بأسلوبه الهادي والواضح.',
+    youtubeId: '_N2Q2_TtG0o',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'It is pretty humid out there.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/_N2Q2_TtG0o/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'It is pretty humid out there.', arEg: 'الجو رطب جداً بره.', arFusha: 'الجو رطب جداً بره.', speaker: 'Bob', keyWords: [{ word: 'humid', ipa: '', meaningAr: 'رطب', meaningEn: '' }, { word: 'out there', ipa: '', meaningAr: 'بره', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The wind is picking up.', arEg: 'الرياح بتشتد.', arFusha: 'الرياح بتشتد.', speaker: 'Bob', keyWords: [{ word: 'picking up', ipa: '', meaningAr: 'بتشتد', meaningEn: '' }, { word: 'wind', ipa: '', meaningAr: 'رياح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'humid', type: 'cultural', meaningAr: 'رطب (جو)', meaningEn: '', egyptianEquivalent: 'رطوبة عالية', exampleInScene: 'August is very humid.' },      { term: 'pick up', type: 'phrasal-verb', meaningAr: 'يشتد (للرياح)', meaningEn: '', egyptianEquivalent: 'تزيد', exampleInScene: 'The wind picked up at night.' },      { term: 'degrees', type: 'cultural', meaningAr: 'درجات (حرارة)', meaningEn: '', egyptianEquivalent: 'درجات', exampleInScene: 'It is thirty degrees today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'humid\' describe?', questionAr: 'كلمة humid بتوصف إيه؟', options: ['جو رطب', 'جو بارد', 'جو ممطر', 'جو عاصف'], correctIndex: 0, explanationAr: 'humid معناها الجو فيه رطوبة عالية - الإحساس اللزج في الصيف.' }
+    ],
+    speakingLines: [{ en: 'It is pretty humid out there.', arEg: 'الجو رطب جداً بره.' }, { en: 'The wind is picking up.', arEg: 'الرياح بتشتد.' }],
+  },
+  {
+    id: 'weather-bbc-ep8',
+    movieTitle: 'Describing the Weather Where You Are - Easy English Conversations Ep. 8 - BBC',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'BBC Weather Small Talk',
+    sceneDescription: 'حلقة BBC عن وصف الجو: عبارات بريطانية يومية للكلام عن الشمس والمطر والبرد.',
+    youtubeId: 'sMg4vj6ugSs',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'It is chucking it down out there!',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/sMg4vj6ugSs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'It is chucking it down out there!', arEg: 'بتمطر بغزارة بره!', arFusha: 'بتمطر بغزارة بره!', speaker: 'Presenter', keyWords: [{ word: 'chucking it down', ipa: '', meaningAr: 'بتمطر بغزارة (بريطاني)', meaningEn: '' }, { word: 'out there', ipa: '', meaningAr: 'بره', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Fingers crossed it stays sunny.', arEg: 'يا رب الجو يفضل مشمس.', arFusha: 'يا رب الجو يفضل مشمس.', speaker: 'Presenter', keyWords: [{ word: 'fingers crossed', ipa: '', meaningAr: 'يا رب (نتمنى)', meaningEn: '' }, { word: 'stays sunny', ipa: '', meaningAr: 'يفضل مشمس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'chucking it down', type: 'idiom', meaningAr: 'بتمطر بغزارة (بريطاني عامي)', meaningEn: '', egyptianEquivalent: 'بتنزل مطر جامد', exampleInScene: 'It is chucking it down in London.' },      { term: 'fingers crossed', type: 'idiom', meaningAr: 'يا رب (نتمنى حاجة تحصل)', meaningEn: '', egyptianEquivalent: 'ربنا يستر', exampleInScene: 'Fingers crossed for the exam.' },      { term: 'drizzle', type: 'cultural', meaningAr: 'رذاذ مطر خفيف', meaningEn: '', egyptianEquivalent: 'رزاز', exampleInScene: 'Just a light drizzle today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'fingers crossed\' express?', questionAr: 'fingers crossed بتعبر عن إيه؟', options: ['تمني حاجة تحصل', 'غضب', 'تعب', 'جوع'], correctIndex: 0, explanationAr: 'fingers crossed معناها يا رب / نتمنى - علامة الحظ الشهيرة.' }
+    ],
+    speakingLines: [{ en: 'It is chucking it down out there!', arEg: 'بتمطر بغزارة بره!' }, { en: 'Fingers crossed it stays sunny.', arEg: 'يا رب الجو يفضل مشمس.' }],
+  },
+  {
+    id: 'twisters-mmmenglish-50',
+    movieTitle: '50 Tongue Twisters in English for Pronunciation Practice - mmmEnglish',
+    releaseYear: 2021,
+    director: 'mmmEnglish',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Twist Your Tongue Right',
+    sceneDescription: 'خمسين تونج تويستر لتدريب مخارج الحروف والسرعة - تمرين النطق الأمتع مع إيما.',
+    youtubeId: 'xPXu5GoUHH0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'mmmEnglish (Official)',
+    dialogueQuote: 'She sells seashells by the seashore.',
+    actorName: 'Emma',
+    characterName: 'Emma',
+    thumbnailUrl: 'https://img.youtube.com/vi/xPXu5GoUHH0/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'mmmEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'She sells seashells by the seashore.', arEg: 'هي بتبيع صدف البحر على الشط.', arFusha: 'هي بتبيع صدف البحر على الشط.', speaker: 'Emma', keyWords: [{ word: 'seashells', ipa: '', meaningAr: 'صدف البحر', meaningEn: '' }, { word: 'seashore', ipa: '', meaningAr: 'شط البحر', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Red lorry, yellow lorry.', arEg: 'عربية نقل حمرا، عربية نقل صفرا.', arFusha: 'عربية نقل حمرا، عربية نقل صفرا.', speaker: 'Emma', keyWords: [{ word: 'lorry', ipa: '', meaningAr: 'عربية نقل (بريطاني)', meaningEn: '' }, { word: 'yellow', ipa: '', meaningAr: 'صفرا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'tongue twister', type: 'collocation', meaningAr: 'جملة كسر اللسان', meaningEn: '', egyptianEquivalent: 'كسر لسان', exampleInScene: 'Try this tongue twister.' },      { term: 'lorry', type: 'cultural', meaningAr: 'عربية نقل (بريطاني)', meaningEn: '', egyptianEquivalent: 'تراك', exampleInScene: 'The lorry is red.' },      { term: 'seashell', type: 'cultural', meaningAr: 'صدفة بحر', meaningEn: '', egyptianEquivalent: 'صدفة', exampleInScene: 'Collect seashells on the beach.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What are tongue twisters for?', questionAr: 'التونج تويسترز ليها فايدة إيه؟', options: ['تدريب سرعة ودقة النطق', 'حفظ القواعد', 'تعلم الإملاء', 'كتابة الإيميلات'], correctIndex: 0, explanationAr: 'جمل كسر اللسان بتدرب عضلات الفم على المخارج الصعبة وبتزود سرعتك.' }
+    ],
+    speakingLines: [{ en: 'She sells seashells by the seashore.', arEg: 'هي بتبيع صدف البحر على الشط.' }, { en: 'Red lorry, yellow lorry.', arEg: 'عربية نقل حمرا، عربية نقل صفرا.' }],
+  },
+  {
+    id: 'twisters-hadar-clear',
+    movieTitle: 'Practice the Best Tongue Twisters for Clear Pronunciation - Accent\'s Way with Hadar',
+    releaseYear: 2020,
+    director: 'Accent\'s Way English with Hadar',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Twisters with a Coach',
+    sceneDescription: 'هدار (كوتش نطق أمريكي) بتشرح تونج تويسترز مختارة لتثبيت المخارج الصعبة عند العرب.',
+    youtubeId: '_8tdqL5_Prc',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Accent\'s Way English with Hadar (Official)',
+    dialogueQuote: 'Peter Piper picked a peck of pickled peppers.',
+    actorName: 'Hadar',
+    characterName: 'Hadar',
+    thumbnailUrl: 'https://img.youtube.com/vi/_8tdqL5_Prc/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Accent\'s Way Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Peter Piper picked a peck of pickled peppers.', arEg: 'بيتر بايبر قطف شوية فلفل مخلل.', arFusha: 'بيتر بايبر قطف شوية فلفل مخلل.', speaker: 'Hadar', keyWords: [{ word: 'picked', ipa: '', meaningAr: 'قطف', meaningEn: '' }, { word: 'pickled peppers', ipa: '', meaningAr: 'فلفل مخلل', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Say it slowly first, then speed up.', arEg: 'قولها ببطء الأول، بعدين زود السرعة.', arFusha: 'قولها ببطء الأول، بعدين زود السرعة.', speaker: 'Hadar', keyWords: [{ word: 'speed up', ipa: '', meaningAr: 'يزود السرعة', meaningEn: '' }, { word: 'slowly', ipa: '', meaningAr: 'ببطء', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'speed up', type: 'phrasal-verb', meaningAr: 'يزود السرعة', meaningEn: '', egyptianEquivalent: 'يصرّع', exampleInScene: 'Start slow, then speed up.' },      { term: 'pickled', type: 'cultural', meaningAr: 'مخلل', meaningEn: '', egyptianEquivalent: 'مخلل', exampleInScene: 'Pickled cucumbers are tasty.' },      { term: 'pronunciation', type: 'cultural', meaningAr: 'نطق', meaningEn: '', egyptianEquivalent: 'نطق', exampleInScene: 'Her pronunciation is excellent.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is Hadar\'s advice for tongue twisters?', questionAr: 'إيه نصيحة هدار للتونج تويسترز؟', options: ['ابدأ ببطء بعدين زود السرعة', 'قولها بسرعة على طول', 'احفظها غيب', 'اكتبها الأول'], correctIndex: 0, explanationAr: 'القاعدة: إتقان بطيء الأول، وبعدين السرعة بتيجي لوحدها.' }
+    ],
+    speakingLines: [{ en: 'Peter Piper picked a peck of pickled peppers.', arEg: 'بيتر بايبر قطف شوية فلفل مخلل.' }, { en: 'Say it slowly first, then speed up.', arEg: 'قولها ببطء الأول، بعدين زود السرعة.' }],
+  },
+  {
+    id: 'idioms-bob-animals',
+    movieTitle: 'Animal Idioms! Learn English Idioms with Animals - Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Idioms Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Animals in English Expressions',
+    sceneDescription: 'إيديومز الحيوانات مع بوب: let the cat out of the bag و hold your horses - بشرح مبسط وأمثلة.',
+    youtubeId: 'o-RTcdqx98o',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'Hold your horses, we are not ready yet.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/o-RTcdqx98o/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Hold your horses, we are not ready yet.', arEg: 'اهدى شوية، إحنا لسه مش جاهزين.', arFusha: 'اهدى شوية، إحنا لسه مش جاهزين.', speaker: 'Bob', keyWords: [{ word: 'hold your horses', ipa: '', meaningAr: 'اهدى / استنى', meaningEn: '' }, { word: 'not ready yet', ipa: '', meaningAr: 'لسه مش جاهزين', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'She let the cat out of the bag about the surprise.', arEg: 'هي فضحت سر المفاجأة.', arFusha: 'هي فضحت سر المفاجأة.', speaker: 'Bob', keyWords: [{ word: 'let the cat out of the bag', ipa: '', meaningAr: 'يفشي سر', meaningEn: '' }, { word: 'surprise', ipa: '', meaningAr: 'مفاجأة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'hold your horses', type: 'idiom', meaningAr: 'اهدى واستنى', meaningEn: '', egyptianEquivalent: 'على مهلك', exampleInScene: 'Hold your horses, wait a minute.' },      { term: 'let the cat out of the bag', type: 'idiom', meaningAr: 'يفشي سر', meaningEn: '', egyptianEquivalent: 'يفضح المفاجأة', exampleInScene: 'He let the cat out of the bag.' },      { term: 'kill two birds with one stone', type: 'idiom', meaningAr: 'يضرب عصفورين بحجر', meaningEn: '', egyptianEquivalent: 'عصفورين بحجر', exampleInScene: 'I killed two birds with one stone.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'let the cat out of the bag\' mean?', questionAr: 'معنى let the cat out of the bag؟', options: ['يفشي سر', 'يطلق قطة', 'يشتري قطة', 'يكدب'], correctIndex: 0, explanationAr: 'التعبير معناه حد قال سر كان المفروض يتخبى - زي فضح المفاجأة.' }
+    ],
+    speakingLines: [{ en: 'Hold your horses, we are not ready yet.', arEg: 'اهدى شوية، إحنا لسه مش جاهزين.' }, { en: 'She let the cat out of the bag about the surprise.', arEg: 'هي فضحت سر المفاجأة.' }],
+  },
+  {
+    id: 'idioms-mmmenglish-animals',
+    movieTitle: 'How To Use English Animal Idioms - mmmEnglish',
+    releaseYear: 2021,
+    director: 'mmmEnglish',
+    genre: 'Idioms Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Animal Idioms in Real Sentences',
+    sceneDescription: 'إيما بتحط إيديومز الحيوانات في جمل حقيقية: busy bee, black sheep, early bird - استخدام صح.',
+    youtubeId: 'mN7zt7N549A',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'mmmEnglish (Official)',
+    dialogueQuote: 'The early bird catches the worm.',
+    actorName: 'Emma',
+    characterName: 'Emma',
+    thumbnailUrl: 'https://img.youtube.com/vi/mN7zt7N549A/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'mmmEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'The early bird catches the worm.', arEg: 'اللي يجي بدري يلحق.', arFusha: 'اللي يجي بدري يلحق.', speaker: 'Emma', keyWords: [{ word: 'early bird', ipa: '', meaningAr: 'اللي بيصحى بدري', meaningEn: '' }, { word: 'catches', ipa: '', meaningAr: 'يلحق / يمسك', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'He is the black sheep of the family.', arEg: 'هو المختلف عن عيلته.', arFusha: 'هو المختلف عن عيلته.', speaker: 'Emma', keyWords: [{ word: 'black sheep', ipa: '', meaningAr: 'المختلف / الخارج عن العيلة', meaningEn: '' }, { word: 'family', ipa: '', meaningAr: 'عيلة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'early bird', type: 'idiom', meaningAr: 'اللي بيصحى أو يجي بدري', meaningEn: '', egyptianEquivalent: 'الصبحية', exampleInScene: 'The early bird catches the worm.' },      { term: 'black sheep', type: 'idiom', meaningAr: 'المختلف سلباً عن جماعته', meaningEn: '', egyptianEquivalent: 'الخروف الأسود', exampleInScene: 'He is the black sheep at work.' },      { term: 'busy bee', type: 'idiom', meaningAr: 'شخص نشيط جداً', meaningEn: '', egyptianEquivalent: 'نحلة شغالة', exampleInScene: 'She is a busy bee today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Who is the \'black sheep\' of a family?', questionAr: 'مين الـ black sheep في العيلة؟', options: ['المختلف عنهم سلباً', 'أكبر واحد', 'أصغر واحد', 'أذكى واحد'], correctIndex: 0, explanationAr: 'black sheep تعبير عن الشخص المختلف عن عيلته أو جماعته بشكل سلبي.' }
+    ],
+    speakingLines: [{ en: 'The early bird catches the worm.', arEg: 'اللي يجي بدري يلحق.' }, { en: 'He is the black sheep of the family.', arEg: 'هو المختلف عن عيلته.' }],
+  },
+  {
+    id: 'friends-incontext-s2',
+    movieTitle: 'English with Friends Season 2 - Extended Vocab - English in Context',
+    releaseYear: 2021,
+    director: 'English in Context',
+    genre: 'TV Series Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Learning from Friends',
+    sceneDescription: 'مفردات موسعة من مسلسل فريندز الموسم التاني: التعابير اليومية والنكت بشرح في السياق.',
+    youtubeId: 'XfwNLfa0Dtk',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English in Context (Official)',
+    dialogueQuote: 'Could this be any more obvious?',
+    actorName: 'Chandler',
+    characterName: 'Chandler',
+    thumbnailUrl: 'https://img.youtube.com/vi/XfwNLfa0Dtk/hqdefault.jpg',
+    category: 'tv_series',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English in Context Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Could this be any more obvious?', arEg: 'ممكن يبقى أوضح من كده؟ (سخرية)', arFusha: 'ممكن يبقى أوضح من كده؟ (سخرية)', speaker: 'Chandler', keyWords: [{ word: 'obvious', ipa: '', meaningAr: 'واضح', meaningEn: '' }, { word: 'Could this be any more', ipa: '', meaningAr: 'ممكن يبقى أكتر من كده (ساخر)', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'We were on a break!', arEg: 'إحنا كنا منفصلين وقتها!', arFusha: 'إحنا كنا منفصلين وقتها!', speaker: 'Ross', keyWords: [{ word: 'on a break', ipa: '', meaningAr: 'في فترة انفصال', meaningEn: '' }, { word: 'were', ipa: '', meaningAr: 'كنا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Could this be any more...?', type: 'collocation', meaningAr: 'سخرية: ممكن يبقى أكتر من كده؟', meaningEn: '', egyptianEquivalent: 'دي واضحة أوي بقى', exampleInScene: 'Could this day be any worse?' },      { term: 'obvious', type: 'cultural', meaningAr: 'واضح', meaningEn: '', egyptianEquivalent: 'باين', exampleInScene: 'The answer is obvious.' },      { term: 'on a break', type: 'collocation', meaningAr: 'في فترة انفصال مؤقت', meaningEn: '', egyptianEquivalent: 'خدنا بريك', exampleInScene: 'We were on a break!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is Chandler\'s tone in \'Could this be any more obvious?\'', questionAr: 'نبرة تشاندلر في Could this be any more obvious إيه؟', options: ['سخرية', 'جدية كاملة', 'خوف', 'حزن'], correctIndex: 0, explanationAr: 'الجملة دي ساخرة - معناها إن الحاجة واضحة جداً، وهي من أشهر جمل المسلسل.' }
+    ],
+    speakingLines: [{ en: 'Could this be any more obvious?', arEg: 'ممكن يبقى أوضح من كده؟ (سخرية)' }, { en: 'We were on a break!', arEg: 'إحنا كنا منفصلين وقتها!' }],
+  },
 ];
 
 // Helper to get all videos
