@@ -5,7 +5,7 @@
 // ==============================================================================
 
 import { ArcadeIcon } from './ArcadeIcon';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Gamepad2, Zap, Flame, Trophy, Info } from 'lucide-react';
 import { useArcadeProgress } from '../../services/arcadeProgressService';
 import { playSound } from '../../utils/audio';
@@ -17,6 +17,7 @@ import { GapFillGame } from './games/GapFillGame';
 import { ListeningChallengeGame } from './games/ListeningChallengeGame';
 import { SpellingDashGame } from './games/SpellingDashGame';
 import { MovieMemoryGame } from './games/MovieMemoryGame';
+import { PUZZLE_GAMES, PuzzleGame } from './games/PuzzleGames';
 import { LAB_GAMES, WordLabGame } from './games/WordLabGames';
 import { WordRaceGame } from './games/WordRaceGame';
 
@@ -30,6 +31,7 @@ interface ArcadeEntry {
 }
 
 const GAMES: ArcadeEntry[] = [
+  ...PUZZLE_GAMES.map(g => ({ ...g, blurb: g.tagline, render: (x: () => void) => <PuzzleGame id={g.id} onExit={x}/> })),
   ...LAB_GAMES.map(g => ({ ...g, blurb: g.tagline, hot: g.id === 'daily-quest' || g.id === 'boss-run', render: (x: () => void) => <WordLabGame id={g.id} onExit={x}/> })),
   { id: 'word-sprint', title: 'سباق الكلمات', icon: '⚡', blurb: 'ترجم أكبر عدد كلمات في 60 ثانية', hot: true, render: (x) => <WordSprintGame onExit={x} /> },
   { id: 'sentence-scramble', title: 'رتّب الجملة', icon: '🧩', blurb: 'ركّب كلمات الجملة بالترتيب الصح' , render: (x) => <SentenceScrambleGame onExit={x} /> },
@@ -42,10 +44,12 @@ const GAMES: ArcadeEntry[] = [
   { id: 'word-race', title: 'سباق الترجمة', icon: '🏁', blurb: 'اختار صح قبل ما الوقت يخلص', render: (x) => <WordRaceGame onExit={x} /> },
 ];
 
-export const ArcadeHub: React.FC = () => {
+export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void }> = ({ onPlayingChange }) => {
   const progress = useArcadeProgress();
   const [search, setSearch] = useState('');
   const [active, setActive] = useState<string | null>(null);
+
+  useEffect(() => { onPlayingChange?.(!!active); window.scrollTo({ top: 0, behavior: 'instant' }); }, [active, onPlayingChange]);
 
   if (active) {
     const game = GAMES.find((g) => g.id === active)!;
