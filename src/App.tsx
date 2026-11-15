@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { PageRoute } from './types';
 import { MainLayout } from './components/layout/MainLayout';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
@@ -16,36 +16,36 @@ import { ForgotPasswordPage } from './views/auth/ForgotPasswordPage';
 import { ResetPasswordPage } from './views/auth/ResetPasswordPage';
 
 // Academies & Platform Pages
-import { DashboardPage } from './views/DashboardPage';
-import { TeacherDashboardPage } from './views/TeacherDashboardPage';
-import { GrammarAcademyPage } from './views/GrammarAcademyPage';
-import { GrammarLessonPage } from './views/GrammarLessonPage';
-import { VocabularyAcademyPage } from './views/VocabularyAcademyPage';
-import { SpeakingAcademyPage } from './views/SpeakingAcademyPage';
-import { ListeningAcademyPage } from './views/ListeningAcademyPage';
-import { ReadingAcademyPage } from './views/ReadingAcademyPage';
-import { WritingAcademyPage } from './views/WritingAcademyPage';
-import { PronunciationAcademyPage } from './views/PronunciationAcademyPage';
-import { RealLifeEnglishPage } from './views/RealLifeEnglishPage';
-import { ExamsAssessmentPage } from './views/ExamsAssessmentPage';
-import { MyLearningPage } from './views/MyLearningPage';
-import { AdminDashboardPage } from './views/AdminDashboardPage';
-import { AiTutorPage } from './views/AiTutorPage';
-import { CertificatesPage } from './views/CertificatesPage';
-import { Interactive3DWorld } from './components/Interactive3DWorld';
+const DashboardPage = lazy(() => import('./views/DashboardPage').then(m => ({ default: m.DashboardPage })));
+const TeacherDashboardPage = lazy(() => import('./views/TeacherDashboardPage').then(m => ({ default: m.TeacherDashboardPage })));
+const GrammarAcademyPage = lazy(() => import('./views/GrammarAcademyPage').then(m => ({ default: m.GrammarAcademyPage })));
+const GrammarLessonPage = lazy(() => import('./views/GrammarLessonPage').then(m => ({ default: m.GrammarLessonPage })));
+const VocabularyAcademyPage = lazy(() => import('./views/VocabularyAcademyPage').then(m => ({ default: m.VocabularyAcademyPage })));
+const SpeakingAcademyPage = lazy(() => import('./views/SpeakingAcademyPage').then(m => ({ default: m.SpeakingAcademyPage })));
+const ListeningAcademyPage = lazy(() => import('./views/ListeningAcademyPage').then(m => ({ default: m.ListeningAcademyPage })));
+const ReadingAcademyPage = lazy(() => import('./views/ReadingAcademyPage').then(m => ({ default: m.ReadingAcademyPage })));
+const WritingAcademyPage = lazy(() => import('./views/WritingAcademyPage').then(m => ({ default: m.WritingAcademyPage })));
+const PronunciationAcademyPage = lazy(() => import('./views/PronunciationAcademyPage').then(m => ({ default: m.PronunciationAcademyPage })));
+const RealLifeEnglishPage = lazy(() => import('./views/RealLifeEnglishPage').then(m => ({ default: m.RealLifeEnglishPage })));
+const ExamsAssessmentPage = lazy(() => import('./views/ExamsAssessmentPage').then(m => ({ default: m.ExamsAssessmentPage })));
+const MyLearningPage = lazy(() => import('./views/MyLearningPage').then(m => ({ default: m.MyLearningPage })));
+const AdminDashboardPage = lazy(() => import('./views/AdminDashboardPage').then(m => ({ default: m.AdminDashboardPage })));
+const AiTutorPage = lazy(() => import('./views/AiTutorPage').then(m => ({ default: m.AiTutorPage })));
+const CertificatesPage = lazy(() => import('./views/CertificatesPage').then(m => ({ default: m.CertificatesPage })));
+const Interactive3DWorld = lazy(() => import('./components/Interactive3DWorld').then(m => ({ default: m.Interactive3DWorld })));
 
 // Flagship Future Perfect & Existing Core Pages
-import { CourseOverviewPage } from './views/CourseOverviewPage';
-import { LessonPage } from './views/LessonPage';
-import { CoursesPage } from './views/CoursesPage';
-import { PracticePage } from './views/PracticePage';
-import { QuizzesPage } from './views/QuizzesPage';
-import { GamesPage } from './views/GamesPage';
-import { ResourcesPage } from './views/ResourcesPage';
-import { AboutPage } from './views/AboutPage';
-import { SentencesLibraryPage } from './views/SentencesLibraryPage';
-import { MovieStudioPage } from './views/MovieStudioPage';
-import { TranslationStudioPage } from './views/TranslationStudioPage';
+const CourseOverviewPage = lazy(() => import('./views/CourseOverviewPage').then(m => ({ default: m.CourseOverviewPage })));
+const LessonPage = lazy(() => import('./views/LessonPage').then(m => ({ default: m.LessonPage })));
+const CoursesPage = lazy(() => import('./views/CoursesPage').then(m => ({ default: m.CoursesPage })));
+const PracticePage = lazy(() => import('./views/PracticePage').then(m => ({ default: m.PracticePage })));
+const QuizzesPage = lazy(() => import('./views/QuizzesPage').then(m => ({ default: m.QuizzesPage })));
+const GamesPage = lazy(() => import('./views/GamesPage').then(m => ({ default: m.GamesPage })));
+const ResourcesPage = lazy(() => import('./views/ResourcesPage').then(m => ({ default: m.ResourcesPage })));
+const AboutPage = lazy(() => import('./views/AboutPage').then(m => ({ default: m.AboutPage })));
+const SentencesLibraryPage = lazy(() => import('./views/SentencesLibraryPage').then(m => ({ default: m.SentencesLibraryPage })));
+const MovieStudioPage = lazy(() => import('./views/MovieStudioPage').then(m => ({ default: m.MovieStudioPage })));
+const TranslationStudioPage = lazy(() => import('./views/TranslationStudioPage').then(m => ({ default: m.TranslationStudioPage })));
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { ShieldAlert } from 'lucide-react';
@@ -319,6 +319,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2, ease: 'easeInOut' }}
           >
+            <Suspense fallback={<div className="min-h-[40vh]" />}>
             {/* RBAC Block View for non-admins */}
             {isAdminBlocked ? (
               <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8 bg-slate-900/60 border border-red-500/30 rounded-3xl backdrop-blur-xl" dir="rtl">
@@ -511,6 +512,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 )}
               </>
             )}
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </MainLayout>
