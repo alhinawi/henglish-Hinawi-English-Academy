@@ -5133,6 +5133,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Could this be any more obvious?', arEg: 'ممكن يبقى أوضح من كده؟ (سخرية)' }, { en: 'We were on a break!', arEg: 'إحنا كنا منفصلين وقتها!' }],
   },
+  {
+    id: 'agree-exam-phrases',
+    movieTitle: 'Agreeing and Disagreeing in English - Phrases for IELTS & Cambridge',
+    releaseYear: 2021,
+    director: 'YouTube Account',
+    genre: 'Exam Preparation',
+    cefrLevel: 'B2',
+    sceneTitle: 'Agree and Disagree Politely',
+    sceneDescription: 'عبارات الموافقة والاختلاف بأدب لامتحانات السبيكينج: I see your point, but... - بأمثلة حوارية.',
+    youtubeId: 'MspXqjp3H8c',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'YouTube Account (Official)',
+    dialogueQuote: 'I see your point, but I have to disagree.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/MspXqjp3H8c/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'YouTube Account Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I see your point, but I have to disagree.', arEg: 'فاهم وجهة نظرك، بس لازم أختلف معاك.', arFusha: 'فاهم وجهة نظرك، بس لازم أختلف معاك.', speaker: 'Teacher', keyWords: [{ word: 'I see your point', ipa: '', meaningAr: 'فاهم وجهة نظرك', meaningEn: '' }, { word: 'disagree', ipa: '', meaningAr: 'يختلف', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I could not agree with you more.', arEg: 'متفق معاك جداً.', arFusha: 'متفق معاك جداً.', speaker: 'Teacher', keyWords: [{ word: 'could not agree more', ipa: '', meaningAr: 'متفق جداً', meaningEn: '' }, { word: 'with you', ipa: '', meaningAr: 'معاك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'I see your point', type: 'collocation', meaningAr: 'فاهم وجهة نظرك', meaningEn: '', egyptianEquivalent: 'كلامك له وجه', exampleInScene: 'I see your point, but I am not sure.' },      { term: 'I could not agree more', type: 'idiom', meaningAr: 'متفق معاك تماماً', meaningEn: '', egyptianEquivalent: 'أقوى موافقة', exampleInScene: 'I could not agree more!' },      { term: 'disagree', type: 'cultural', meaningAr: 'يختلف في الرأي', meaningEn: '', egyptianEquivalent: 'مش متفق', exampleInScene: 'I disagree with that idea.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I could not agree more\' mean?', questionAr: 'معنى I could not agree more؟', options: ['متفق معاك تماماً', 'مش متفق خالص', 'مش فاهم', 'مش مهتم'], correctIndex: 0, explanationAr: 'رغم شكلها السلبي، العبارة معناها أقوى موافقة ممكنة: مستحيل أوافق أكتر من كده.' }
+    ],
+    speakingLines: [{ en: 'I see your point, but I have to disagree.', arEg: 'فاهم وجهة نظرك، بس لازم أختلف معاك.' }, { en: 'I could not agree with you more.', arEg: 'متفق معاك جداً.' }],
+  },
+  {
+    id: 'agree-comfort-podcast',
+    movieTitle: 'How to Agree & Disagree - Phrases for Daily Use - English in Comfort',
+    releaseYear: 2023,
+    director: 'English in Comfort',
+    genre: 'English Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Everyday Agreement Phrases',
+    sceneDescription: 'بودكاست هادي عن عبارات الموافقة والاختلاف اليومية: Exactly! That\'s true, but... - للاستماع والتكرار.',
+    youtubeId: 'RBxuSfrOGDE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English in Comfort (Official)',
+    dialogueQuote: 'That is exactly what I was thinking.',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/RBxuSfrOGDE/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English in Comfort Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'That is exactly what I was thinking.', arEg: 'ده بالظبط اللي كنت بفكر فيه.', arFusha: 'ده بالظبط اللي كنت بفكر فيه.', speaker: 'Host', keyWords: [{ word: 'exactly', ipa: '', meaningAr: 'بالظبط', meaningEn: '' }, { word: 'thinking', ipa: '', meaningAr: 'بفكر', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am not so sure about that.', arEg: 'أنا مش متأكد من كده.', arFusha: 'أنا مش متأكد من كده.', speaker: 'Host', keyWords: [{ word: 'not so sure', ipa: '', meaningAr: 'مش متأكد', meaningEn: '' }, { word: 'about that', ipa: '', meaningAr: 'من كده', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'exactly', type: 'cultural', meaningAr: 'بالظبط', meaningEn: '', egyptianEquivalent: 'بالضبط', exampleInScene: 'Exactly! You are right.' },      { term: 'I am not so sure', type: 'collocation', meaningAr: 'مش متأكد (اختلاف مهذب)', meaningEn: '', egyptianEquivalent: 'مش واثق', exampleInScene: 'I am not so sure about that.' },      { term: 'That makes sense', type: 'collocation', meaningAr: 'ده منطقي', meaningEn: '', egyptianEquivalent: 'كلام مفهوم', exampleInScene: 'That makes sense to me.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you politely disagree?', questionAr: 'بتختلف بأدب إزاي؟', options: ['I am not so sure about that', 'You are wrong', 'That is stupid', 'No way, shut up'], correctIndex: 0, explanationAr: 'I am not so sure about that طريقة مهذبة للاختلاف من غير ما تجرح الطرف التاني.' }
+    ],
+    speakingLines: [{ en: 'That is exactly what I was thinking.', arEg: 'ده بالظبط اللي كنت بفكر فيه.' }, { en: 'I am not so sure about that.', arEg: 'أنا مش متأكد من كده.' }],
+  },
+  {
+    id: 'agree-derek-meetings',
+    movieTitle: '14 Ways to Agree And Disagree - Business English Meetings - Derek Callan',
+    releaseYear: 2021,
+    director: 'Derek Callan',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Meeting Diplomacy',
+    sceneDescription: '14 طريقة للموافقة والاختلاف في اجتماعات الشغل باحترافية - ديريك بيديك العبارات الجاهزة.',
+    youtubeId: 'mll-NB-G10U',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Derek Callan - English for Professionals (Official)',
+    dialogueQuote: 'I partly agree, but we should consider the costs.',
+    actorName: 'Derek Callan',
+    characterName: 'Derek',
+    thumbnailUrl: 'https://img.youtube.com/vi/mll-NB-G10U/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Derek Callan Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I partly agree, but we should consider the costs.', arEg: 'متفق جزئياً، بس لازم ناخد التكاليف في الاعتبار.', arFusha: 'متفق جزئياً، بس لازم ناخد التكاليف في الاعتبار.', speaker: 'Derek', keyWords: [{ word: 'partly', ipa: '', meaningAr: 'جزئياً', meaningEn: '' }, { word: 'consider', ipa: '', meaningAr: 'ناخد في الاعتبار', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'That is a fair point.', arEg: 'دي نقطة محترمة.', arFusha: 'دي نقطة محترمة.', speaker: 'Derek', keyWords: [{ word: 'fair point', ipa: '', meaningAr: 'نقطة محترمة / وجيهة', meaningEn: '' }, { word: 'fair', ipa: '', meaningAr: 'عادل / وجيه', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'partly agree', type: 'collocation', meaningAr: 'متفق جزئياً', meaningEn: '', egyptianEquivalent: 'متفق بس مش كله', exampleInScene: 'I partly agree with you.' },      { term: 'fair point', type: 'collocation', meaningAr: 'نقطة وجيهة', meaningEn: '', egyptianEquivalent: 'كلام معقول', exampleInScene: 'That is a fair point.' },      { term: 'take into account', type: 'collocation', meaningAr: 'يأخذ في الاعتبار', meaningEn: '', egyptianEquivalent: 'يحسب حساب', exampleInScene: 'Take the budget into account.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'partly agree\' mean?', questionAr: 'معنى partly agree؟', options: ['متفق في جزء ومش متفق في جزء', 'متفق تماماً', 'رافض تماماً', 'مش فاهم'], correctIndex: 0, explanationAr: 'partly agree موقف متوازن: موافق على جزء من الكلام ومتحفظ على جزء تاني.' }
+    ],
+    speakingLines: [{ en: 'I partly agree, but we should consider the costs.', arEg: 'متفق جزئياً، بس لازم ناخد التكاليف في الاعتبار.' }, { en: 'That is a fair point.', arEg: 'دي نقطة محترمة.' }],
+  },
+  {
+    id: 'bank-interactive-advanced',
+    movieTitle: 'Advanced Banking Vocabulary - Words and Phrases You Need to Know - Interactive English',
+    releaseYear: 2021,
+    director: 'Interactive English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Banking Like a Pro',
+    sceneDescription: 'مفردات البنوك المتقدمة: حساب جاري، فوائد، تحويلات - كل اللي تحتاجه في أي بنك أجنبي.',
+    youtubeId: '8RHGW3Utsps',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Interactive English (Official)',
+    dialogueQuote: 'I would like to open a savings account.',
+    actorName: 'Teacher',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/8RHGW3Utsps/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Interactive English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I would like to open a savings account.', arEg: 'عايز أفتح حساب توفير.', arFusha: 'عايز أفتح حساب توفير.', speaker: 'Customer', keyWords: [{ word: 'savings account', ipa: '', meaningAr: 'حساب توفير', meaningEn: '' }, { word: 'open an account', ipa: '', meaningAr: 'يفتح حساب', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'What is the interest rate on this account?', arEg: 'نسبة الفايدة على الحساب ده كام؟', arFusha: 'نسبة الفايدة على الحساب ده كام؟', speaker: 'Customer', keyWords: [{ word: 'interest rate', ipa: '', meaningAr: 'نسبة الفايدة', meaningEn: '' }, { word: 'account', ipa: '', meaningAr: 'حساب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'savings account', type: 'collocation', meaningAr: 'حساب توفير', meaningEn: '', egyptianEquivalent: 'حساب ادخار', exampleInScene: 'Open a savings account.' },      { term: 'interest rate', type: 'collocation', meaningAr: 'نسبة الفايدة', meaningEn: '', egyptianEquivalent: 'الفايدة', exampleInScene: 'The interest rate is high.' },      { term: 'transfer', type: 'cultural', meaningAr: 'يحوّل (فلوس)', meaningEn: '', egyptianEquivalent: 'يعمل تحويل', exampleInScene: 'Transfer money online.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'savings account\'?', questionAr: 'يعني إيه savings account؟', options: ['حساب توفير', 'حساب جاري', 'بطاقة ائتمان', 'شيك'], correctIndex: 0, explanationAr: 'savings account هو حساب التوفير اللي بتحوش فيه فلوس وبتكسب عليها فايدة.' }
+    ],
+    speakingLines: [{ en: 'I would like to open a savings account.', arEg: 'عايز أفتح حساب توفير.' }, { en: 'What is the interest rate on this account?', arEg: 'نسبة الفايدة على الحساب ده كام؟' }],
+  },
+  {
+    id: 'bank-ellii-finance',
+    movieTitle: 'At the Bank: Money & Finance Vocabulary - Ellii',
+    releaseYear: 2021,
+    director: 'Ellii',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'First Bank Visit',
+    sceneDescription: 'مفردات البنك الأساسية للمبتدئين: الإيداع، السحب، الرصيد - مع صور ونطق واضح.',
+    youtubeId: 'q_HL_kHzbNM',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Ellii (Official)',
+    dialogueQuote: 'I need to withdraw some money.',
+    actorName: 'Teacher',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/q_HL_kHzbNM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Ellii Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I need to withdraw some money.', arEg: 'محتاج أسحب شوية فلوس.', arFusha: 'محتاج أسحب شوية فلوس.', speaker: 'Customer', keyWords: [{ word: 'withdraw', ipa: '', meaningAr: 'يسحب فلوس', meaningEn: '' }, { word: 'money', ipa: '', meaningAr: 'فلوس', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Can I check my balance, please?', arEg: 'ممكن أعرف رصيدي، من فضلك؟', arFusha: 'ممكن أعرف رصيدي، من فضلك؟', speaker: 'Customer', keyWords: [{ word: 'balance', ipa: '', meaningAr: 'رصيد', meaningEn: '' }, { word: 'check', ipa: '', meaningAr: 'يعرف / يشيك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'withdraw', type: 'cultural', meaningAr: 'يسحب فلوس', meaningEn: '', egyptianEquivalent: 'يسحب', exampleInScene: 'Withdraw cash from the ATM.' },      { term: 'deposit', type: 'cultural', meaningAr: 'يودع فلوس', meaningEn: '', egyptianEquivalent: 'يعمل إيداع', exampleInScene: 'Deposit money into your account.' },      { term: 'balance', type: 'cultural', meaningAr: 'الرصيد', meaningEn: '', egyptianEquivalent: 'الرصيد', exampleInScene: 'My balance is low.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the opposite of \'deposit\'?', questionAr: 'عكس deposit إيه؟', options: ['withdraw', 'save', 'spend', 'lend'], correctIndex: 0, explanationAr: 'deposit معناها تودع فلوس في البنك، وعكسها withdraw يعني تسحب.' }
+    ],
+    speakingLines: [{ en: 'I need to withdraw some money.', arEg: 'محتاج أسحب شوية فلوس.' }, { en: 'Can I check my balance, please?', arEg: 'ممكن أعرف رصيدي، من فضلك؟' }],
+  },
+  {
+    id: 'bank-bob-speak',
+    movieTitle: 'Learn How to Speak English at the Bank - Bob the Canadian',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'A Real Bank Conversation',
+    sceneDescription: 'بوب بيمثل حوار بنك كامل: فتح حساب، صرف شيك، سؤال عن رسوم - ببطء وترجمة واضحة.',
+    youtubeId: '7Lh1tMsRw3U',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'Are there any fees for this account?',
+    actorName: 'Bob',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/7Lh1tMsRw3U/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Are there any fees for this account?', arEg: 'في رسوم على الحساب ده؟', arFusha: 'في رسوم على الحساب ده؟', speaker: 'Customer', keyWords: [{ word: 'fees', ipa: '', meaningAr: 'رسوم', meaningEn: '' }, { word: 'any', ipa: '', meaningAr: 'أي', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I would like to cash this cheque.', arEg: 'عايز أصرف الشيك ده.', arFusha: 'عايز أصرف الشيك ده.', speaker: 'Customer', keyWords: [{ word: 'cash a cheque', ipa: '', meaningAr: 'يصرف شيك', meaningEn: '' }, { word: 'cheque', ipa: '', meaningAr: 'شيك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'fee', type: 'cultural', meaningAr: 'رسوم', meaningEn: '', egyptianEquivalent: 'رسوم', exampleInScene: 'The bank charges monthly fees.' },      { term: 'cash a cheque', type: 'collocation', meaningAr: 'يصرف شيك', meaningEn: '', egyptianEquivalent: 'يحوّل الشيك لفلوس', exampleInScene: 'Cash the cheque at the bank.' },      { term: 'ATM', type: 'cultural', meaningAr: 'ماكينة الصراف الآلي', meaningEn: '', egyptianEquivalent: 'الصراف الآلي', exampleInScene: 'The ATM is outside.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What are \'fees\' at a bank?', questionAr: 'يعني إيه fees في البنك؟', options: ['رسوم', 'فوائد', 'هدايا', 'قروض'], correctIndex: 0, explanationAr: 'الـ fees هي الرسوم اللي البنك بيخصمها مقابل خدمات زي إدارة الحساب.' }
+    ],
+    speakingLines: [{ en: 'Are there any fees for this account?', arEg: 'في رسوم على الحساب ده؟' }, { en: 'I would like to cash this cheque.', arEg: 'عايز أصرف الشيك ده.' }],
+  },
+  {
+    id: 'cooking-success-vocab',
+    movieTitle: 'How to Cook in English: Cooking Vocabulary - English Speaking Success',
+    releaseYear: 2021,
+    director: 'English Speaking Success',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Kitchen Verbs in Action',
+    sceneDescription: 'أفعال المطبخ الأساسية: chop, fry, boil, season - اتكلم عن الطبخ زي الشيفات.',
+    youtubeId: 'QL2tNKHB6ew',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English Speaking Success (Official)',
+    dialogueQuote: 'Chop the onions and fry them gently.',
+    actorName: 'Teacher',
+    characterName: 'Chef',
+    thumbnailUrl: 'https://img.youtube.com/vi/QL2tNKHB6ew/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking Success Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Chop the onions and fry them gently.', arEg: 'قطّع البصل وقليه على نار هادية.', arFusha: 'قطّع البصل وقليه على نار هادية.', speaker: 'Chef', keyWords: [{ word: 'chop', ipa: '', meaningAr: 'يقطّع', meaningEn: '' }, { word: 'fry gently', ipa: '', meaningAr: 'يقلي بهدوء', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Let the soup simmer for ten minutes.', arEg: 'سيب الشوربة تغلي بهدوء عشر دقايق.', arFusha: 'سيب الشوربة تغلي بهدوء عشر دقايق.', speaker: 'Chef', keyWords: [{ word: 'simmer', ipa: '', meaningAr: 'تغلي بهدوء', meaningEn: '' }, { word: 'soup', ipa: '', meaningAr: 'شوربة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'chop', type: 'cultural', meaningAr: 'يقطّع', meaningEn: '', egyptianEquivalent: 'يفرم', exampleInScene: 'Chop the vegetables.' },      { term: 'fry', type: 'cultural', meaningAr: 'يقلي', meaningEn: '', egyptianEquivalent: 'يقلي', exampleInScene: 'Fry the eggs.' },      { term: 'simmer', type: 'cultural', meaningAr: 'يغلي على نار هادية', meaningEn: '', egyptianEquivalent: 'يسلق على نار هادية', exampleInScene: 'Let it simmer slowly.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'simmer\' mean?', questionAr: 'معنى simmer؟', options: ['يغلي على نار هادية', 'يحمر في الفرن', 'يحمّر في زيت', 'يبرد'], correctIndex: 0, explanationAr: 'simmer معناها يغلي بهدوء على نار قليلة - أقل من الغليان الكامل.' }
+    ],
+    speakingLines: [{ en: 'Chop the onions and fry them gently.', arEg: 'قطّع البصل وقليه على نار هادية.' }, { en: 'Let the soup simmer for ten minutes.', arEg: 'سيب الشوربة تغلي بهدوء عشر دقايق.' }],
+  },
+  {
+    id: 'cooking-bbc-kitchen',
+    movieTitle: 'The Vocabulary Show: Kitchens & Cooking - 28 Words in 11 Minutes - BBC',
+    releaseYear: 2022,
+    director: 'BBC Learning English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: '28 Kitchen Words',
+    sceneDescription: '28 كلمة للمطبخ والطبخ في 11 دقيقة من BBC - أدوات وأفعال وأوصاف الأكل.',
+    youtubeId: 'HEVxB7C3YuQ',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'This dish is a bit too salty for me.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/HEVxB7C3YuQ/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'This dish is a bit too salty for me.', arEg: 'الأكلة دي مالحة زيادة عن اللزوم بالنسبالي.', arFusha: 'الأكلة دي مالحة زيادة عن اللزوم بالنسبالي.', speaker: 'Presenter', keyWords: [{ word: 'dish', ipa: '', meaningAr: 'أكلة', meaningEn: '' }, { word: 'salty', ipa: '', meaningAr: 'مالح', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'First, preheat the oven to 180 degrees.', arEg: 'الأول، سخّن الفرن على 180 درجة.', arFusha: 'الأول، سخّن الفرن على 180 درجة.', speaker: 'Presenter', keyWords: [{ word: 'preheat', ipa: '', meaningAr: 'يسخّن مسبقاً', meaningEn: '' }, { word: 'oven', ipa: '', meaningAr: 'فرن', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'preheat', type: 'cultural', meaningAr: 'يسخّن الفرن قبل الاستخدام', meaningEn: '', egyptianEquivalent: 'يفتح الفرن', exampleInScene: 'Preheat the oven first.' },      { term: 'salty', type: 'cultural', meaningAr: 'مالح', meaningEn: '', egyptianEquivalent: 'ملحه زيادة', exampleInScene: 'The soup is too salty.' },      { term: 'dish', type: 'cultural', meaningAr: 'أكلة / طبق', meaningEn: '', egyptianEquivalent: 'طبق', exampleInScene: 'This dish is famous.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'preheat the oven\' mean?', questionAr: 'معنى preheat the oven؟', options: ['يسخّن الفرن قبل ما يحط الأكل', 'يطفي الفرن', 'ينضف الفرن', 'يفتح باب الفرن'], correctIndex: 0, explanationAr: 'preheat معناها تسخّن الفرن للدرجة المطلوبة قبل ما تحط الأكل فيه.' }
+    ],
+    speakingLines: [{ en: 'This dish is a bit too salty for me.', arEg: 'الأكلة دي مالحة زيادة عن اللزوم بالنسبالي.' }, { en: 'First, preheat the oven to 180 degrees.', arEg: 'الأول، سخّن الفرن على 180 درجة.' }],
+  },
+  {
+    id: 'humor-lucy-british',
+    movieTitle: 'British Humour Explained (with examples) - English with Lucy',
+    releaseYear: 2021,
+    director: 'English with Lucy',
+    genre: 'Culture Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Decoding British Jokes',
+    sceneDescription: 'لوسي بتوضح السخرية البريطانية بالأمثلة: التهكم، التقليل من الذات، والنكت اللي مبتتقالش مباشرة.',
+    youtubeId: 'vkL78BxZ50I',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Lucy (Official)',
+    dialogueQuote: 'I am not bad at cooking - I only burnt the kitchen twice.',
+    actorName: 'Lucy',
+    characterName: 'Lucy',
+    thumbnailUrl: 'https://img.youtube.com/vi/vkL78BxZ50I/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Lucy Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I am not bad at cooking - I only burnt the kitchen twice.', arEg: 'أنا مش وحش في الطبخ - أنا بس حرقت المطبخ مرتين. (تهكم)', arFusha: 'أنا مش وحش في الطبخ - أنا بس حرقت المطبخ مرتين. (تهكم)', speaker: 'Lucy', keyWords: [{ word: 'not bad', ipa: '', meaningAr: 'مش وحش (تهكم)', meaningEn: '' }, { word: 'burnt', ipa: '', meaningAr: 'حرقت', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'British people love self-deprecating jokes.', arEg: 'البريطانيين بيحبوا النكت اللي بيقللوا فيها من نفسهم.', arFusha: 'البريطانيين بيحبوا النكت اللي بيقللوا فيها من نفسهم.', speaker: 'Lucy', keyWords: [{ word: 'self-deprecating', ipa: '', meaningAr: 'بيقلل من نفسه (نوع هزار)', meaningEn: '' }, { word: 'jokes', ipa: '', meaningAr: 'نكت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'self-deprecating', type: 'cultural', meaningAr: 'بيقلل من نفسه بهزار', meaningEn: '', egyptianEquivalent: 'بيستحقر نفسه بضحك', exampleInScene: 'He made a self-deprecating joke.' },      { term: 'sarcasm', type: 'cultural', meaningAr: 'سخرية / تهكم', meaningEn: '', egyptianEquivalent: 'تريقة', exampleInScene: 'I love British sarcasm.' },      { term: 'understatement', type: 'cultural', meaningAr: 'التقليل من الحاجة عمداً', meaningEn: '', egyptianEquivalent: 'بخس حق الكلام', exampleInScene: 'Saying not bad is an understatement.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is \'self-deprecating\' humour?', questionAr: 'يعني إيه الهزار الـ self-deprecating؟', options: ['نكت بيقلل فيها الشخص من نفسه', 'نكت على الآخرين', 'نكت سياسية', 'نكت مكتوبة'], correctIndex: 0, explanationAr: 'الهزار البريطاني الكلاسيكي: تتريق على نفسك قبل ما حد يتريق عليك.' }
+    ],
+    speakingLines: [{ en: 'I am not bad at cooking - I only burnt the kitchen twice.', arEg: 'أنا مش وحش في الطبخ - أنا بس حرقت المطبخ مرتين. (تهكم)' }, { en: 'British people love self-deprecating jokes.', arEg: 'البريطانيين بيحبوا النكت اللي بيقللوا فيها من نفسهم.' }],
+  },
+  {
+    id: 'humor-jforrest-jokes',
+    movieTitle: 'Top 5 Jokes in English: Can YOU Understand Them? - JForrest English',
+    releaseYear: 2022,
+    director: 'JForrest English',
+    genre: 'Culture Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Get the Joke',
+    sceneDescription: 'خمس نكت إنجليزية مشهورة مع شرح لعب الكلمات - لو فهمتهم يبقى حسك اللغوي وصل لمستوى تاني.',
+    youtubeId: 'iakqm0HxxG0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'JForrest English (Official)',
+    dialogueQuote: 'Why did the scarecrow win an award? He was outstanding in his field.',
+    actorName: 'JForrest',
+    characterName: 'JForrest',
+    thumbnailUrl: 'https://img.youtube.com/vi/iakqm0HxxG0/hqdefault.jpg',
+    category: 'slang_and_expressions',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'JForrest English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Why did the scarecrow win an award? He was outstanding in his field.', arEg: 'ليه الفزاعة خدت جايزة؟ لأنها كانت متميزة في حقلها. (لعب كلمات: outstanding = واقفة بره في الحقل)', arFusha: 'ليه الفزاعة خدت جايزة؟ لأنها كانت متميزة في حقلها. (لعب كلمات: outstanding = واقفة بره في الحقل)', speaker: 'JForrest', keyWords: [{ word: 'scarecrow', ipa: '', meaningAr: 'فزاعة', meaningEn: '' }, { word: 'outstanding', ipa: '', meaningAr: 'متميز / واقف بره', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'This joke is a play on words.', arEg: 'النكتة دي لعب على الكلمات.', arFusha: 'النكتة دي لعب على الكلمات.', speaker: 'JForrest', keyWords: [{ word: 'play on words', ipa: '', meaningAr: 'لعب على الكلمات', meaningEn: '' }, { word: 'joke', ipa: '', meaningAr: 'نكتة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'play on words', type: 'collocation', meaningAr: 'لعب على الكلمات (pun)', meaningEn: '', egyptianEquivalent: 'تلاعب لفظي', exampleInScene: 'English jokes love plays on words.' },      { term: 'pun', type: 'cultural', meaningAr: 'تورية / لعب كلمات', meaningEn: '', egyptianEquivalent: 'تورية', exampleInScene: 'A good pun makes people groan.' },      { term: 'get the joke', type: 'collocation', meaningAr: 'يفهم النكتة', meaningEn: '', egyptianEquivalent: 'تفهم الهزار', exampleInScene: 'I did not get the joke.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'play on words\'?', questionAr: 'يعني إيه play on words؟', options: ['لعب على المعنى المزدوج للكلمات', 'لعبة أطفال', 'تمرين كتابة', 'خطأ لغوي'], correctIndex: 0, explanationAr: 'الـ pun أو play on words هو استغلال المعنى المزدوج للكلمة عشان النكتة - قلب الهزار الإنجليزي.' }
+    ],
+    speakingLines: [{ en: 'Why did the scarecrow win an award? He was outstanding in his field.', arEg: 'ليه الفزاعة خدت جايزة؟ لأنها كانت متميزة في حقلها. (لعب كلمات)' }, { en: 'This joke is a play on words.', arEg: 'النكتة دي لعب على الكلمات.' }],
+  },
 ];
 
 // Helper to get all videos
