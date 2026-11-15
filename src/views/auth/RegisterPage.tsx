@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
+import { GoogleSignInBlock } from '../../components/GoogleSignInBlock';
 import { playSound, fireCelebration } from '../../utils/audio';
 import {
   Lock,
@@ -105,6 +106,10 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
           >
             لديك حساب بالفعل؟
           </button>
+        </div>
+
+        <div className="mb-6">
+          <GoogleSignInBlock />
         </div>
 
         {errorMessage && (
