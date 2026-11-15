@@ -410,19 +410,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "itinerary",
     collocation: "detailed itinerary",
   },
-  {
-    id: "voc-travel-5",
-    word: "layover",
-    ipa: "/ˈleɪˌəʊ.vər/",
-    partOfSpeech: "noun",
-    meaningAr: "محطة توقف مؤقتة بين رحلتين (ترانزيت)",
-    level: "B2",
-    category: "travel",
-    exampleEn: "We have a three-hour layover in Istanbul before our flight to Cairo.",
-    exampleAr: "عندنا ترانزيت 3 ساعات في إسطنبول قبل رحلتنا للقاهرة.",
-    highlight: "layover",
-    collocation: "a long/short layover",
-  },
+
   {
     id: "voc-travel-6",
     word: "landmark",
@@ -824,18 +812,7 @@ const VOCAB_A: VocabWord[] = [
     exampleAr: "بحلول الجمعة الجاية، هنكون جهزنا جدول الرحلة بالكامل.",
     highlight: "will have finalized",
   },
-  {
-    id: "voc-travel-6-dup",
-    word: "layover",
-    ipa: "/ˈleɪ.oʊ.vɚ/",
-    partOfSpeech: "noun",
-    meaningAr: "توقف مؤقت بين رحلتين (ترانزيت)",
-    level: "B2",
-    category: "travel",
-    exampleEn: "By the time we land in Dubai, we will have spent six hours in layover.",
-    exampleAr: "بحلول ما نوصل دبي، هنكون قضينا ٦ ساعات ترانزيت.",
-    highlight: "will have spent",
-  },
+
   {
     id: "voc-biz-7",
     word: "stakeholder",
@@ -20084,19 +20061,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "cumbersome",
     collocation: "cumbersome process",
   },
-  {
-    id: "voc-u33-8",
-    word: "deplete",
-    ipa: "/dɪˈpliːt/",
-    partOfSpeech: "verb",
-    meaningAr: "ينفد / يستنزف",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "The long trip depleted their savings.",
-    exampleAr: "الرحلة الطويلة استنزفت مدّخراتهم.",
-    highlight: "depleted",
-    collocation: "deplete resources",
-  },
+
   {
     id: "voc-u33-9",
     word: "dilemma",
