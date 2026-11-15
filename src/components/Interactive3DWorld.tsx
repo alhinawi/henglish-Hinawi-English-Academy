@@ -385,11 +385,21 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
         g.stroke();
         g.textAlign = 'center';
         g.direction = 'rtl';
+        let titleSize = 46;
+        g.font = '700 ' + titleSize + 'px Cairo, Tahoma, sans-serif';
+        while (g.measureText(title).width > w - 56 && titleSize > 22) {
+          titleSize -= 3;
+          g.font = '700 ' + titleSize + 'px Cairo, Tahoma, sans-serif';
+        }
         g.fillStyle = '#ffd166';
-        g.font = '700 46px Cairo, Tahoma, sans-serif';
         g.fillText(title, w / 2, 70);
+        let subSize = 27;
+        g.font = '600 ' + subSize + 'px Cairo, Tahoma, sans-serif';
+        while (g.measureText(subtitle).width > w - 56 && subSize > 16) {
+          subSize -= 2;
+          g.font = '600 ' + subSize + 'px Cairo, Tahoma, sans-serif';
+        }
         g.fillStyle = '#cfcced';
-        g.font = '600 27px Cairo, Tahoma, sans-serif';
         g.fillText(subtitle, w / 2, 118);
       };
       draw();
@@ -604,7 +614,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     // 8. Interactive player avatar
     const player = new THREE.Group();
-    player.position.set(0, 0, 4);
+    player.position.set(0, 0, 11);
 
     const pBody = new THREE.Mesh(
       new THREE.CapsuleGeometry(0.36, 0.85, 6, 14),
@@ -731,9 +741,9 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       }
 
       const cameraOffset = new THREE.Vector3(
-        Math.sin(playerAngle) * 8.5,
-        5.9,
-        Math.cos(playerAngle) * 8.5
+        Math.sin(playerAngle) * 10.5,
+        7.2,
+        Math.cos(playerAngle) * 10.5
       );
       camera.position.lerp(player.position.clone().add(cameraOffset), 0.08);
       camera.lookAt(player.position.x, player.position.y + 1.3, player.position.z);
