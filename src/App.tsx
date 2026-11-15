@@ -4,10 +4,10 @@ import { MainLayout } from './components/layout/MainLayout';
 import { GlobalSearchModal } from './components/GlobalSearchModal';
 import { VoiceSettingsModal } from './components/VoiceSettingsModal';
 import { AuthModal } from './components/AuthModal';
-import { GuestNudge } from './components/GuestNudge';
 import { useProgress } from './utils/useProgress';
 import { useAuth } from './context/AuthContext';
-import { completeGoogleSignIn } from './services/authService';
+import { completeGoogleSignIn, getSavedAuthSession, saveAuthSession } from './services/authService';
+import { SettingsModal } from './components/SettingsModal';
 import { consumeGoogleAuthCallback } from './services/henglishApi';
 
 // Auth Pages
@@ -70,6 +70,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   const [verifyEmailParam, setVerifyEmailParam] = useState<string>('');
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const [authModalTab, setAuthModalTab] = useState<'login' | 'register' | 'demo' | 'migrate'>('login');
 
@@ -296,18 +297,13 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
   return (
     <>
-      <GuestNudge
-        isGuest={isGuest}
-        currentRoute={currentRoute}
-        onRegister={() => handleNavigate('register')}
-      />
-
       <MainLayout
         currentRoute={currentRoute}
         activeLessonId={activeLessonId}
         onNavigate={handleNavigate}
         onOpenSearch={() => setIsSearchOpen(true)}
         onOpenVoiceSettings={() => setIsVoiceModalOpen(true)}
+        onOpenSettings={() => setIsSettingsOpen(true)}
         onOpenAuthModal={openAuthWithTab}
         userProfile={activeProfile}
         notifications={notifications}
@@ -540,6 +536,26 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         onClose={() => setIsSearchOpen(false)}
         onNavigate={handleNavigate}
       />
+
+      {isSettingsOpen && (
+        <SettingsModal
+          userProfile={activeProfile}
+          accessToken={session.accessToken}
+          onClose={() => setIsSettingsOpen(false)}
+          onSaved={(patch) => {
+            const sess = getSavedAuthSession();
+            saveAuthSession({
+              ...sess,
+              user: {
+                ...sess.user,
+                ...(patch.name ? { name: patch.name, nameAr: patch.name } : {}),
+                ...(patch.avatar !== undefined ? { avatar: patch.avatar || sess.user.avatar } : {}),
+              },
+            });
+            refreshSession();
+          }}
+        />
+      )}
 
       {/* Voice Settings & Preview Modal (Natural Male / Preserved Female) */}
       <VoiceSettingsModal
