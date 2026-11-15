@@ -419,12 +419,12 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 10. Reading Academy */}
                 {currentRoute === 'reading' && (
-                  <ReadingAcademyPage onNavigate={handleNavigate} />
+                  <ReadingAcademyPage onNavigate={handleNavigate} onCompleteActivity={recordQuizScore} />
                 )}
 
                 {/* 11. Writing Academy */}
                 {currentRoute === 'writing' && (
-                  <WritingAcademyPage onNavigate={handleNavigate} />
+                  <WritingAcademyPage onNavigate={handleNavigate} onCompleteActivity={recordQuizScore} />
                 )}
 
                 {/* 12. Pronunciation & Phonetics Academy */}
