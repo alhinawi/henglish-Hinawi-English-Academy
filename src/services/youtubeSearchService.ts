@@ -86,7 +86,7 @@ export async function searchYouTubeVideos(
     // suggestions instead of a blank result so the learner always gets videos.
     let finalItems = fallbackItems;
     let totalResults = catalogResult.totalMatches;
-    let message = 'يتم عرض النتائج من مكتبة أكاديمية هناوي المعتمدة والمتحقق منها (وضع البحث المعجمي المعتمد)';
+    let message = 'يتم عرض النتائج من مكتبة Henglish Academy المعتمدة والمتحقق منها (وضع البحث المعجمي المعتمد)';
     if (cleanQ && catalogResult.totalMatches === 0) {
       const suggestions = queryVideoCatalog({ pageSize: 12 });
       finalItems = suggestions.videos.map(v => ({

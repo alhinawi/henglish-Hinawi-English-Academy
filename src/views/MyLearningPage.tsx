@@ -409,7 +409,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
               OFFICIAL CERTIFICATE OF MASTERY
             </div>
             <h2 className="text-2xl sm:text-4xl font-black text-white font-serif">
-              شهادة إتمام معتمدة • أكاديمية هناوي
+              شهادة إتمام معتمدة • Henglish Academy
             </h2>
             <p className="text-xs text-[#b9b6d5]">
               Henglish Academy Academic Credential
@@ -418,7 +418,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
           <div className="p-8 rounded-3xl bg-black/40 border border-[#ffd166]/40 space-y-4 max-w-xl mx-auto">
             <p className="text-xs text-[#dedbf4]">
-              تُشهد أكاديمية هناوي للغة الإنجليزية بأن الطالب المتميز:
+              تُشهد Henglish Academy بأن الطالب المتميز:
             </p>
             <div className="text-2xl sm:text-3xl font-black text-[#ffd166] font-['Cairo',sans-serif]">
               {userProfile.id === 'guest-learner' ? 'شهادة إتمام الكورس' : `${userProfile.nameAr} (${userProfile.name})`}

@@ -91,7 +91,7 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
     badge: 'Lexicon & Idioms Master',
     shortDescAr: 'توسيع حصيلتك اللغوية بالمتلازمات Collocations والأفعال الاصطلاحية Phrasal Verbs والرموز الصوتية.',
     avatarIcon: 'BookA',
-    welcomeGreetingAr: 'مرحباً بك! 📚 أنا مدرب المفردات في هناوي. سأعلمك كيف تختار الكلمة الدقيقة كالمتحدث الأصلي، مع النطق الصحيح والأمثلة الحية.',
+    welcomeGreetingAr: 'مرحباً بك! 📚 أنا مدرب المفردات في Henglish Academy. سأعلمك كيف تختار الكلمة الدقيقة كالمتحدث الأصلي، مع النطق الصحيح والأمثلة الحية.',
     welcomeGreetingEn: 'Welcome! I am your Vocabulary Trainer. Expand your active vocabulary, collocations, and idiomatic expressions.',
     suggestedQuestions: [
       {
@@ -235,7 +235,7 @@ export function buildAssistantSystemPrompt(
   platformContext?: StudentPlatformContext
 ): string {
   const metadata = ASSISTANTS_REGISTRY[mode];
-  const studentName = platformContext?.userProfile?.nameAr || 'طالب أكاديمية هناوي';
+  const studentName = platformContext?.userProfile?.nameAr || 'طالب Henglish Academy';
   const completedLessons = platformContext?.progress?.completedLessons || [];
   const streak = platformContext?.userProfile?.streakDays || 1;
 
@@ -251,7 +251,7 @@ export function buildAssistantSystemPrompt(
 
   const commonPlatformRules = `
 ### HENGLISH ACADEMY KNOWLEDGE & TEACHING PHILOSOPHY:
-1. You are the official AI Educator at "Henglish — Hinawi English Academy" (منصة وأكاديمية هناوي إنجلش).
+1. You are the official AI Educator at "Henglish Academy".
 2. The academy's motto is: "Learn it. Use it. Own it."
 3. You are speaking with ${studentName}, whose current verified CEFR level is ${userLevel}. Current study streak: ${streak} days. Completed lessons in academy: ${completedLessons.length}.
 4. Always honor the student's level (${userLevel}): ${levelGuidelines[userLevel]}

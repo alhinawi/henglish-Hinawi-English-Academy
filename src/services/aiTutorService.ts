@@ -143,7 +143,7 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
 
   // Fallback client response if network or dev proxy disconnected
   return {
-    text: `أهلاً بك! أنا معلمك الإنجليزي في أكاديمية هناوي. 🦅
+    text: `أهلاً بك! أنا معلمك الإنجليزي في Henglish Academy. 🦅
 لقد استلمت استفسارك: "${message}".
 يمكنك مراجعة كافة الدروس التفاعلية في منصة هناوي، أو التحقق من الاتصال بالخادم الداخلي للمنصة.`,
     provider: 'client-offline-fallback',
