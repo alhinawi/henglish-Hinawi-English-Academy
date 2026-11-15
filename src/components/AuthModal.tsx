@@ -133,21 +133,23 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           className="relative w-full max-w-md rounded-3xl bg-[#171632] border border-white/20 p-6 sm:p-8 shadow-2xl text-right z-10 space-y-6"
         >
           {/* Header */}
-          <div className="flex items-center justify-between pb-4 border-b border-white/10">
+          <div className="relative pb-5 border-b border-white/10">
             <button
               onClick={onClose}
-              className="p-2 rounded-xl text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
+              className="absolute top-0 left-0 p-2 rounded-xl text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
               aria-label="إغلاق"
             >
               <X className="w-5 h-5" />
             </button>
-            <div className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] flex items-center justify-center font-black text-[#0c0b20] text-lg shadow-md">
-               
+            <div className="flex flex-col items-center gap-3 text-center">
+              <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] p-0.5 shadow-lg shadow-[#ffd166]/20">
+                <div className="w-full h-full bg-[#171632] rounded-[14px] flex items-center justify-center">
+                  <GraduationCap className="w-7 h-7 text-[#ffd166]" />
+                </div>
               </div>
               <div>
                 <h3 className="text-lg font-black text-white">بوابة Henglish Academy</h3>
-                <p className="text-xs text-[#b9b6d5]">سجّل دخولك أو أنشئ حسابك المجاني</p>
+                <p className="text-xs text-[#b9b6d5] mt-1">سجّل دخولك أو أنشئ حسابك المجاني</p>
               </div>
             </div>
           </div>
