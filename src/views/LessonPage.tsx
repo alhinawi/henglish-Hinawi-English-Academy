@@ -1,3 +1,5 @@
+import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
+import { LessonPhotoGallery, LessonPhotoSources } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
@@ -90,11 +92,12 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         {currentLesson.imageUrl && (
           <div className="h-56 sm:h-72 w-full relative overflow-hidden">
             <img 
-              src={currentLesson.imageUrl} 
-              alt={currentLesson.imageAlt || currentLesson.title} 
-              className="w-full h-full object-cover filter brightness-[0.4]"
+              src={LESSON_PHOTOGRAPHY[currentLesson.id][0].src}
+              alt={LESSON_PHOTOGRAPHY[currentLesson.id][0].alt}
+              width={1100} height={733} loading="eager" fetchPriority="high"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20]/50 via-transparent to-transparent" />
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/90 text-[#21132c] shadow-md">
                 {currentLesson.kicker}
@@ -103,7 +106,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                 {currentLesson.level}
               </span>
             </div>
-            <div className="absolute top-4 left-4 flex items-center gap-1.5 text-xs text-white/90 bg-[#09091a]/80 px-3 py-1 rounded-full backdrop-blur-md border border-white/10">
+            <div className="absolute bottom-4 left-4 flex items-center gap-1.5 text-xs text-white/90 bg-[#09091a]/80 px-3 py-1 rounded-full backdrop-blur-md border border-white/10">
               <Clock className="w-3.5 h-3.5 text-[#ffd166]" />
               <span>{currentLesson.readTime}</span>
             </div>
@@ -201,6 +204,8 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           ))}
         </div>
       </section>
+
+      <LessonPhotoGallery lessonId={currentLesson.id} />
 
       {/* Real-Life Examples Section */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
@@ -471,6 +476,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         </div>
       </div>
 
+      <LessonPhotoSources lessonId={currentLesson.id} />
     </div>
   );
 };

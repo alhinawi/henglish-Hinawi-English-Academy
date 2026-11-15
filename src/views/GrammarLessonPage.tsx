@@ -1,3 +1,5 @@
+import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
+import { LessonPhoto, LessonPhotoGallery, LessonPhotoSources } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
@@ -129,11 +131,12 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       </div>
 
       {/* 2. COMPREHENSIVE HERO HEADER BANNER */}
-      <header className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
+      <header className="relative rounded-3xl overflow-hidden border border-white/10 bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="max-w-3xl space-y-4">
+        <LessonPhoto photo={LESSON_PHOTOGRAPHY[rule.id][0]} priority className="h-60 sm:h-80" />
+        <div className="max-w-3xl space-y-4 p-6 sm:p-10">
           <div className="flex items-center gap-2.5 flex-wrap">
             <span className="px-3.5 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
               {rule.category} • {rule.categoryEn}
@@ -146,7 +149,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
+          <h1 className="text-3xl sm:text-5xl font-black text-white leading-[1.6]">
             {rule.titleAr}
           </h1>
           <div className="text-sm sm:text-base font-mono text-[#41e7ff] font-semibold">
@@ -220,6 +223,8 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           </div>
         </section>
       </div>
+
+      <LessonPhotoGallery lessonId={rule.id} />
 
       {/* 4. THE GOLDEN SENTENCE FORMULAS (INTERACTIVE TABS) */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
@@ -519,6 +524,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           </button>
         ) : <div />}
       </div>
+      <LessonPhotoSources lessonId={rule.id} />
     </div>
   );
 };
