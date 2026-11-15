@@ -2,6 +2,7 @@
 // Henglish Academy - Arcade shared UI: intro card, HUD header, end screen
 // ==============================================================================
 
+import { ArcadeIcon } from './ArcadeIcon';
 import React from 'react';
 import { Trophy, RotateCcw, ArrowRight, Zap, Flame, Star } from 'lucide-react';
 import { playSound } from '../../utils/audio';
@@ -23,7 +24,7 @@ interface IntroProps {
 
 export const ArcadeIntro: React.FC<IntroProps> = ({ meta, best, plays, onStart, onBack }) => (
   <div className="max-w-md mx-auto text-center space-y-6 py-8">
-    <div className="text-6xl">{meta.icon}</div>
+    <ArcadeIcon id={meta.id} large/>
     <h2 className="text-3xl font-black text-white font-['Cairo',sans-serif]">{meta.title}</h2>
     <p className="text-[#b9b6d5] text-sm leading-relaxed">{meta.tagline}</p>
     <div className="flex items-center justify-center gap-3 text-xs">
@@ -115,7 +116,7 @@ interface EndProps {
 
 export const ArcadeEnd: React.FC<EndProps> = ({ meta, score, xpEarned, newBest, best, onReplay, onBack, extra }) => (
   <div className="max-w-md mx-auto text-center space-y-5 py-8">
-    <div className="text-6xl">{newBest ? '🏆' : meta.icon}</div>
+    <div className="text-6xl">{newBest ? <Trophy className="w-14 h-14 mx-auto text-[#ffd166]"/> : <ArcadeIcon id={meta.id} large/>}</div>
     <h2 className="text-2xl font-black text-white font-['Cairo',sans-serif]">
       {newBest ? 'رقم قياسي جديد!' : 'خلصت الجولة!'}
     </h2>
