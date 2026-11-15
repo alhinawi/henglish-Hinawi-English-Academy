@@ -7583,6 +7583,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'I have a dream that one day this nation will rise up.', arEg: 'عندي حلم إنه في يوم من الأيام الأمة دي هتنهض.' }, { en: 'Let freedom ring from every hill and every valley.', arEg: 'خلي الحرية تدق من كل تل وكل وادي.' }],
   },
+  {
+    id: 'doctor-conversation-sunshine',
+    movieTitle: 'At the Doctor - English Conversation - Hospital English',
+    releaseYear: 2023,
+    director: 'Sunshine English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Describe Your Symptoms',
+    sceneDescription: 'حوار كامل عند الدكتور: تحجز، توصف الأعراض، وتفهم العلاج.',
+    youtubeId: '44SL8i8h0dg',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Sunshine English (Official)',
+    dialogueQuote: 'I have had this headache for three days.',
+    actorName: 'Host',
+    characterName: 'Patient',
+    thumbnailUrl: 'https://img.youtube.com/vi/44SL8i8h0dg/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Sunshine English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I have had this headache for three days.', arEg: 'عندي الصداع ده بقاله تلات أيام.', arFusha: 'عندي الصداع ده بقاله تلات أيام.', speaker: 'Patient', keyWords: [{ word: 'headache', ipa: '', meaningAr: 'صداع', meaningEn: '' }, { word: 'for three days', ipa: '', meaningAr: 'بقاله تلات أيام', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Do you have any allergies to medication?', arEg: 'عندك حساسية من أي دوا؟', arFusha: 'عندك حساسية من أي دوا؟', speaker: 'Doctor', keyWords: [{ word: 'allergies', ipa: '', meaningAr: 'حساسية', meaningEn: '' }, { word: 'medication', ipa: '', meaningAr: 'دوا', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Take this medicine twice a day after meals.', arEg: 'خد الدوا ده مرتين في اليوم بعد الأكل.', arFusha: 'خد الدوا ده مرتين في اليوم بعد الأكل.', speaker: 'Doctor', keyWords: [{ word: 'twice a day', ipa: '', meaningAr: 'مرتين في اليوم', meaningEn: '' }, { word: 'after meals', ipa: '', meaningAr: 'بعد الأكل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'symptom', type: 'cultural', meaningAr: 'عرض مرضي', meaningEn: '', egyptianEquivalent: 'عرض / علامة', exampleInScene: 'Fever is a common symptom.' },      { term: 'allergy', type: 'cultural', meaningAr: 'حساسية', meaningEn: '', egyptianEquivalent: 'حساسية', exampleInScene: 'I have an allergy to penicillin.' },      { term: 'prescription', type: 'cultural', meaningAr: 'وصفة طبية', meaningEn: '', egyptianEquivalent: 'روشتة', exampleInScene: 'The doctor gave me a prescription.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you tell the doctor how long you have been sick?', questionAr: 'تقول للدكتور المدة اللي انت عيان فيها إزاي؟', options: ['I have had this headache for three days.', 'I headache three days ago now.', 'My head is pain since ever.', 'Three days I am headache.'], correctIndex: 0, explanationAr: 'Have had + symptom + for + مدة = الصيغة الصح عشان توصف إعراض مستمرة.' }
+    ],
+    speakingLines: [{ en: 'I have had this headache for three days.', arEg: 'عندي الصداع ده بقاله تلات أيام.' }, { en: 'Take this medicine twice a day after meals.', arEg: 'خد الدوا ده مرتين في اليوم بعد الأكل.' }],
+  },
+  {
+    id: 'bank-english-bob-canadian',
+    movieTitle: 'Learn How to Speak English at the Bank',
+    releaseYear: 2022,
+    director: 'Bob the Canadian',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Open an Account and Ask Questions',
+    sceneDescription: 'بوب الكندي بيعلمك تتكلم في البنك: حساب، إيداع، سحب، وتحويل.',
+    youtubeId: '7Lh1tMsRw3U',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I would like to open a savings account, please.',
+    actorName: 'Bob the Canadian',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/7Lh1tMsRw3U/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Bob the Canadian Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I would like to open a savings account, please.', arEg: 'عايز أفتح حساب توفير لو سمحت.', arFusha: 'عايز أفتح حساب توفير لو سمحت.', speaker: 'Instructor', keyWords: [{ word: 'open an account', ipa: '', meaningAr: 'أفتح حساب', meaningEn: '' }, { word: 'savings account', ipa: '', meaningAr: 'حساب توفير', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Could I make a withdrawal from my checking account?', arEg: 'ممكن أسحب فلوس من حسابي الجاري؟', arFusha: 'ممكن أسحب فلوس من حسابي الجاري؟', speaker: 'Instructor', keyWords: [{ word: 'withdrawal', ipa: '', meaningAr: 'سحب', meaningEn: '' }, { word: 'checking account', ipa: '', meaningAr: 'حساب جاري', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'What is the current interest rate on this account?', arEg: 'إيه سعر الفايدة الحالي على الحساب ده؟', arFusha: 'إيه سعر الفايدة الحالي على الحساب ده؟', speaker: 'Instructor', keyWords: [{ word: 'interest rate', ipa: '', meaningAr: 'سعر الفايدة', meaningEn: '' }, { word: 'current', ipa: '', meaningAr: 'الحالي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'deposit', type: 'cultural', meaningAr: 'إيداع', meaningEn: '', egyptianEquivalent: 'إيداع', exampleInScene: 'I made a deposit this morning.' },      { term: 'withdrawal', type: 'cultural', meaningAr: 'سحب', meaningEn: '', egyptianEquivalent: 'سحب فلوس', exampleInScene: 'There is a fee for each withdrawal.' },      { term: 'interest rate', type: 'collocation', meaningAr: 'سعر الفائدة', meaningEn: '', egyptianEquivalent: 'سعر الفايدة', exampleInScene: 'The interest rate went up.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the opposite of a deposit?', questionAr: 'عكس الإيداع (deposit) إيه؟', options: ['Withdrawal', 'Transfer', 'Balance', 'Loan'], correctIndex: 0, explanationAr: 'Deposit = تودع فلوس، Withdrawal = تسحب فلوس - أهم كلمتين في أي بنك.' }
+    ],
+    speakingLines: [{ en: 'I would like to open a savings account, please.', arEg: 'عايز أفتح حساب توفير لو سمحت.' }, { en: 'What is the current interest rate on this account?', arEg: 'إيه سعر الفايدة الحالي على الحساب ده؟' }],
+  },
+  {
+    id: 'bank-phrases-basic-vs-better',
+    movieTitle: 'Basic vs Better Bank English - 20 Everyday Phrases',
+    releaseYear: 2024,
+    director: 'Learn English with Alex and Alice',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Upgrade Your Bank English',
+    sceneDescription: '٢٠ عبارة بنكية: قولها أحسن - من الصيغة العادية للصيغة المحترفة.',
+    youtubeId: 'SZJBN54jeZc',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Alex and Alice (Official)',
+    dialogueQuote: 'Could you help me transfer money to another account?',
+    actorName: 'Alex and Alice',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/SZJBN54jeZc/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Alex and Alice Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Could you help me transfer money to another account?', arEg: 'ممكن تساعدني أحول فلوس لحساب تاني؟', arFusha: 'ممكن تساعدني أحول فلوس لحساب تاني؟', speaker: 'Instructor', keyWords: [{ word: 'transfer', ipa: '', meaningAr: 'تحويل', meaningEn: '' }, { word: 'another account', ipa: '', meaningAr: 'حساب تاني', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I would like to check my balance, please.', arEg: 'عايز أعرف الرصيد بتاعي لو سمحت.', arFusha: 'عايز أعرف الرصيد بتاعي لو سمحت.', speaker: 'Instructor', keyWords: [{ word: 'check', ipa: '', meaningAr: 'أعرف / أراجع', meaningEn: '' }, { word: 'balance', ipa: '', meaningAr: 'رصيد', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'There seems to be a problem with my card.', arEg: 'يبدو إن في مشكلة في الكارت بتاعي.', arFusha: 'يبدو إن في مشكلة في الكارت بتاعي.', speaker: 'Instructor', keyWords: [{ word: 'there seems to be', ipa: '', meaningAr: 'يبدو إن فيه', meaningEn: '' }, { word: 'problem with', ipa: '', meaningAr: 'مشكلة في', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'transfer', type: 'cultural', meaningAr: 'يحول', meaningEn: '', egyptianEquivalent: 'يحول فلوس', exampleInScene: 'I transferred the money yesterday.' },      { term: 'balance', type: 'cultural', meaningAr: 'رصيد', meaningEn: '', egyptianEquivalent: 'رصيد', exampleInScene: 'My balance is low this month.' },      { term: 'transaction', type: 'cultural', meaningAr: 'معاملة', meaningEn: '', egyptianEquivalent: 'عملية بنكية', exampleInScene: 'The transaction was declined.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is the most professional way to ask about your money?', questionAr: 'أنهي صيغة أشيك تسأل بيها عن فلوسك؟', options: ['I would like to check my balance, please.', 'Show me my money', 'How much cash I got?', 'Balance now!'], correctIndex: 0, explanationAr: 'I would like to... please = أدب واحترافية - بتفرق جدًا في البنك والشغل.' }
+    ],
+    speakingLines: [{ en: 'Could you help me transfer money to another account?', arEg: 'ممكن تساعدني أحول فلوس لحساب تاني؟' }, { en: 'There seems to be a problem with my card.', arEg: 'يبدو إن في مشكلة في الكارت بتاعي.' }],
+  },
+  {
+    id: 'cooking-vocab-english-success',
+    movieTitle: 'How to Cook in English - Cooking Vocabulary',
+    releaseYear: 2022,
+    director: 'English Speaking Success',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Follow a Recipe in English',
+    sceneDescription: 'مفردات المطبخ الأساسية: تقطع، تقلب، تغلي، وتتبع أي وصفة بالإنجليزي.',
+    youtubeId: 'QL2tNKHB6ew',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English Speaking Success (Official)',
+    dialogueQuote: 'First, chop the onions and fry them gently.',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/QL2tNKHB6ew/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking Success Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'First, chop the onions and fry them gently.', arEg: 'الأول، قطّع البصل وقليه على نار هادية.', arFusha: 'الأول، قطّع البصل وقليه على نار هادية.', speaker: 'Instructor', keyWords: [{ word: 'chop', ipa: '', meaningAr: 'قطّع', meaningEn: '' }, { word: 'fry gently', ipa: '', meaningAr: 'اقلي على نار هادية', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Bring the water to a boil, then add the pasta.', arEg: 'سخن الميه لحد ما تغلي، وبعدين حط المكرونة.', arFusha: 'سخن الميه لحد ما تغلي، وبعدين حط المكرونة.', speaker: 'Instructor', keyWords: [{ word: 'bring to a boil', ipa: '', meaningAr: 'نسخنها لحد ما تغلي', meaningEn: '' }, { word: 'add', ipa: '', meaningAr: 'حط / ضيف', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Let it simmer for ten minutes, stirring occasionally.', arEg: 'سيبها على نار هادية عشر دقايق، وقلب من وقت للتاني.', arFusha: 'سيبها على نار هادية عشر دقايق، وقلب من وقت للتاني.', speaker: 'Instructor', keyWords: [{ word: 'simmer', ipa: '', meaningAr: 'تتسبك على نار هادية', meaningEn: '' }, { word: 'stirring occasionally', ipa: '', meaningAr: 'قلب من وقت للتاني', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'chop', type: 'cultural', meaningAr: 'يقطع', meaningEn: '', egyptianEquivalent: 'يفرم / يقطع', exampleInScene: 'Chop the garlic finely.' },      { term: 'boil', type: 'cultural', meaningAr: 'يغلي', meaningEn: '', egyptianEquivalent: 'يغلي', exampleInScene: 'Boil the potatoes for 20 minutes.' },      { term: 'simmer', type: 'cultural', meaningAr: 'يطهو على نار هادئة', meaningEn: '', egyptianEquivalent: 'يستوي على نار هادية', exampleInScene: 'Let the sauce simmer.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between boil and simmer?', questionAr: 'إيه الفرق بين boil و simmer؟', options: ['Boil نار عالية بفقاعات و simmer نار هادية', 'الاتنين نفس الحاجة', 'Boil للحلو بس', 'Simmer أسرع من boil'], correctIndex: 0, explanationAr: 'Boil = غليان قوي بفقاعات، Simmer = نار هادية جدًا - فرق مهم في أي وصفة.' }
+    ],
+    speakingLines: [{ en: 'First, chop the onions and fry them gently.', arEg: 'الأول، قطّع البصل وقليه على نار هادية.' }, { en: 'Bring the water to a boil, then add the pasta.', arEg: 'سخن الميه لحد ما تغلي، وبعدين حط المكرونة.' }],
+  },
+  {
+    id: 'kitchen-vocab-bbc-show',
+    movieTitle: 'The Vocabulary Show - Kitchens and Cooking - 28 Words',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Name Everything in the Kitchen',
+    sceneDescription: 'بي بي سي بتعلمك ٢٨ كلمة لأدوات وأفعال المطبخ بالنطق الصح.',
+    youtubeId: 'HEVxB7C3YuQ',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'You use a whisk to beat eggs and cream.',
+    actorName: 'BBC Hosts',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/HEVxB7C3YuQ/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'You use a whisk to beat eggs and cream.', arEg: 'بتستخدم المضرب اليدوي عشان تضرب البيض والكريمة.', arFusha: 'بتستخدم المضرب اليدوي عشان تضرب البيض والكريمة.', speaker: 'Host', keyWords: [{ word: 'whisk', ipa: '', meaningAr: 'مضرب يدوي', meaningEn: '' }, { word: 'beat', ipa: '', meaningAr: 'يضرب (بيض)', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'Grate the cheese over the top before baking.', arEg: 'ابشر الجبنة فوق الأكل قبل ما يدخل الفرن.', arFusha: 'ابشر الجبنة فوق الأكل قبل ما يدخل الفرن.', speaker: 'Host', keyWords: [{ word: 'grate', ipa: '', meaningAr: 'ابشر', meaningEn: '' }, { word: 'baking', ipa: '', meaningAr: 'خَبز في الفرن', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'Peel the potatoes and slice them thinly.', arEg: 'اقشر البطاطس وقطعها شرايط رفيعة.', arFusha: 'اقشر البطاطس وقطعها شرايط رفيعة.', speaker: 'Host', keyWords: [{ word: 'peel', ipa: '', meaningAr: 'اقشر', meaningEn: '' }, { word: 'slice thinly', ipa: '', meaningAr: 'قطع شرايط رفيعة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'whisk', type: 'cultural', meaningAr: 'مضرب يدوي', meaningEn: '', egyptianEquivalent: 'مضرب بيض', exampleInScene: 'Whisk the eggs until fluffy.' },      { term: 'grate', type: 'cultural', meaningAr: 'يبشر', meaningEn: '', egyptianEquivalent: 'يبشر جبنة', exampleInScene: 'Grate some cheese on top.' },      { term: 'peel', type: 'cultural', meaningAr: 'يقشر', meaningEn: '', egyptianEquivalent: 'يقشر', exampleInScene: 'Peel the carrots first.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which tool do you use to beat eggs?', questionAr: 'بتضرب البيض بإيه؟', options: ['Whisk', 'Grater', 'Peeler', 'Kettle'], correctIndex: 0, explanationAr: 'Whisk = مضرب البيض اليدوي - من أشهر أدوات المطبخ الإنجليزية.' }
+    ],
+    speakingLines: [{ en: 'You use a whisk to beat eggs and cream.', arEg: 'بتستخدم المضرب اليدوي عشان تضرب البيض والكريمة.' }, { en: 'Peel the potatoes and slice them thinly.', arEg: 'اقشر البطاطس وقطعها شرايط رفيعة.' }],
+  },
+  {
+    id: 'ted-ai-same-person-matz',
+    movieTitle: 'Is AI Turning Us All into the Same Person? - Sandra Matz - TED',
+    releaseYear: 2024,
+    director: 'TED',
+    genre: 'TED Talk',
+    cefrLevel: 'C1',
+    sceneTitle: 'AI and Your Personality',
+    sceneDescription: 'محاضرة تيد عن الذكاء الاصطناعي: هل بيخلينا كلنا نسخة من بعض؟',
+    youtubeId: '9Ff4S1FJdRM',
+    startTime: 45,
+    endTime: 165,
+    clipDuration: '2:00',
+    videoSource: 'TED (Official)',
+    dialogueQuote: 'AI does not just predict who we are; it quietly shapes who we become.',
+    actorName: 'Sandra Matz',
+    characterName: 'Sandra Matz',
+    thumbnailUrl: 'https://img.youtube.com/vi/9Ff4S1FJdRM/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TED Official',
+    subtitles: [
+      { id: 'sub-1', start: 50, end: 65, en: 'AI does not just predict who we are; it quietly shapes who we become.', arEg: 'الذكاء الاصطناعي مش بس بيتوقع إحنا مين؛ ده بهدوء بيشكل إحنا هنبقى مين.', arFusha: 'الذكاء الاصطناعي مش بس بيتوقع إحنا مين؛ ده بهدوء بيشكل إحنا هنبقى مين.', speaker: 'Speaker', keyWords: [{ word: 'predict', ipa: '', meaningAr: 'يتوقع', meaningEn: '' }, { word: 'shapes', ipa: '', meaningAr: 'بيشكل', meaningEn: '' }] },      { id: 'sub-2', start: 75, end: 90, en: 'Algorithms learn our habits faster than we do.', arEg: 'الخوارزميات بتتعلم عاداتنا أسرع مننا.', arFusha: 'الخوارزميات بتتعلم عاداتنا أسرع مننا.', speaker: 'Speaker', keyWords: [{ word: 'algorithms', ipa: '', meaningAr: 'خوارزميات', meaningEn: '' }, { word: 'habits', ipa: '', meaningAr: 'عادات', meaningEn: '' }] },      { id: 'sub-3', start: 100, end: 115, en: 'The question is not what AI can do, but what we want it to do.', arEg: 'السؤال مش الذكاء الاصطناعي يقدر يعمل إيه، السؤال إحنا عايزينه يعمل إيه.', arFusha: 'السؤال مش الذكاء الاصطناعي يقدر يعمل إيه، السؤال إحنا عايزينه يعمل إيه.', speaker: 'Speaker', keyWords: [{ word: 'the question is not... but', ipa: '', meaningAr: 'السؤال مش... لكن', meaningEn: '' }, { word: 'want it to do', ipa: '', meaningAr: 'عايزينه يعمل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'predict', type: 'cultural', meaningAr: 'يتنبأ', meaningEn: '', egyptianEquivalent: 'يتوقع', exampleInScene: 'AI can predict your choices.' },      { term: 'shape', type: 'cultural', meaningAr: 'يشكل', meaningEn: '', egyptianEquivalent: 'يشكل / يصنع', exampleInScene: 'Friends shape our personality.' },      { term: 'algorithm', type: 'cultural', meaningAr: 'خوارزمية', meaningEn: '', egyptianEquivalent: 'خوارزمية', exampleInScene: 'The algorithm shows you similar videos.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the speaker\'s main worry about AI?', questionAr: 'إيه أكبر قلق عند المتحدثة من الذكاء الاصطناعي؟', options: ['إنه يشكل شخصيتنا ويخلينا كلنا شبه بعض', 'إنه غالي جدًا', 'إنه بطيء', 'إنه مش بيفهم العربي'], correctIndex: 0, explanationAr: 'المتحدثة قلقانة إن الـ AI مش بس بيتوقعنا - ده بيغيرنا ويوحدنا من غير ما نحس.' }
+    ],
+    speakingLines: [{ en: 'AI does not just predict who we are; it quietly shapes who we become.', arEg: 'الذكاء الاصطناعي مش بس بيتوقع إحنا مين؛ ده بهدوء بيشكل إحنا هنبقى مين.' }, { en: 'The question is not what AI can do, but what we want it to do.', arEg: 'السؤال مش الذكاء الاصطناعي يقدر يعمل إيه، السؤال إحنا عايزينه يعمل إيه.' }],
+  },
+  {
+    id: 'ted-sam-altman-chatgpt-ai',
+    movieTitle: 'OpenAI\'s Sam Altman Talks ChatGPT, AI Agents and Superintelligence - TED',
+    releaseYear: 2024,
+    director: 'TED',
+    genre: 'TED Interview',
+    cefrLevel: 'C1',
+    sceneTitle: 'The Future of AI',
+    sceneDescription: 'سام ألتمان بيتكلم عن مستقبل الذكاء الاصطناعي والوكلاء الأذكياء.',
+    youtubeId: '5MWT_doo68k',
+    startTime: 50,
+    endTime: 170,
+    clipDuration: '2:00',
+    videoSource: 'TED (Official)',
+    dialogueQuote: 'We are heading toward a world where AI agents do real work for us.',
+    actorName: 'Sam Altman',
+    characterName: 'Sam Altman',
+    thumbnailUrl: 'https://img.youtube.com/vi/5MWT_doo68k/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TED Official',
+    subtitles: [
+      { id: 'sub-1', start: 55, end: 70, en: 'We are heading toward a world where AI agents do real work for us.', arEg: 'إحنا ماشيين في اتجاه عالم وكلاء الذكاء الاصطناعي فيه بيعملوا شغل حقيقي بدلنا.', arFusha: 'إحنا ماشيين في اتجاه عالم وكلاء الذكاء الاصطناعي فيه بيعملوا شغل حقيقي بدلنا.', speaker: 'Sam Altman', keyWords: [{ word: 'heading toward', ipa: '', meaningAr: 'ماشيين في اتجاه', meaningEn: '' }, { word: 'agents', ipa: '', meaningAr: 'وكلاء أذكياء', meaningEn: '' }] },      { id: 'sub-2', start: 80, end: 95, en: 'The pace of progress is faster than most people realize.', arEg: 'سرعة التقدم أسرع مما معظم الناس متخيلة.', arFusha: 'سرعة التقدم أسرع مما معظم الناس متخيلة.', speaker: 'Sam Altman', keyWords: [{ word: 'pace', ipa: '', meaningAr: 'سرعة / إيقاع', meaningEn: '' }, { word: 'realize', ipa: '', meaningAr: 'يتخيل / يدرك', meaningEn: '' }] },      { id: 'sub-3', start: 105, end: 120, en: 'We have to make sure this technology benefits everyone.', arEg: 'لازم نتأكد إن التكنولوجيا دي بتفيد كل الناس.', arFusha: 'لازم نتأكد إن التكنولوجيا دي بتفيد كل الناس.', speaker: 'Sam Altman', keyWords: [{ word: 'make sure', ipa: '', meaningAr: 'نتأكد', meaningEn: '' }, { word: 'benefits', ipa: '', meaningAr: 'بتفيد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'head toward', type: 'phrasal-verb', meaningAr: 'يتجه نحو', meaningEn: '', egyptianEquivalent: 'ماشي في اتجاه', exampleInScene: 'We are heading toward big changes.' },      { term: 'pace', type: 'cultural', meaningAr: 'وتيرة', meaningEn: '', egyptianEquivalent: 'سرعة / إيقاع', exampleInScene: 'The pace of life in Cairo is fast.' },      { term: 'benefit', type: 'cultural', meaningAr: 'يفيد', meaningEn: '', egyptianEquivalent: 'يفيد', exampleInScene: 'Exercise benefits everyone.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'the pace of progress\' mean?', questionAr: 'يعني إيه the pace of progress؟', options: ['سرعة التقدم', 'مكان التقدم', 'تكلفة التقدم', 'نهاية التقدم'], correctIndex: 0, explanationAr: 'Pace = السرعة أو الإيقاع - the pace of progress يعني التكنولوجيا بتتطور بسرعة قد إيه.' }
+    ],
+    speakingLines: [{ en: 'We are heading toward a world where AI agents do real work for us.', arEg: 'إحنا ماشيين في اتجاه عالم وكلاء الذكاء الاصطناعي فيه بيعملوا شغل حقيقي بدلنا.' }, { en: 'We have to make sure this technology benefits everyone.', arEg: 'لازم نتأكد إن التكنولوجيا دي بتفيد كل الناس.' }],
+  },
+  {
+    id: 'tech-ai-daily-life-conversation',
+    movieTitle: 'Technology and AI in Daily Life - English Conversation',
+    releaseYear: 2024,
+    director: 'Daily English Hub',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Chat About Tech with Friends',
+    sceneDescription: 'محادثة يومية عن التكنولوجيا: موبايلات، تطبيقات، وذكاء اصطناعي.',
+    youtubeId: '8Qopt3kqLBs',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Daily English Hub (Official)',
+    dialogueQuote: 'I use AI apps almost every day now.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/8Qopt3kqLBs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Daily English Hub Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I use AI apps almost every day now.', arEg: 'أنا بستخدم تطبيقات الذكاء الاصطناعي تقريبًا كل يوم دلوقتي.', arFusha: 'أنا بستخدم تطبيقات الذكاء الاصطناعي تقريبًا كل يوم دلوقتي.', speaker: 'Speaker', keyWords: [{ word: 'almost', ipa: '', meaningAr: 'تقريبًا', meaningEn: '' }, { word: 'every day', ipa: '', meaningAr: 'كل يوم', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Technology makes our lives so much easier.', arEg: 'التكنولوجيا بتخلي حياتنا أسهل بكتير.', arFusha: 'التكنولوجيا بتخلي حياتنا أسهل بكتير.', speaker: 'Speaker', keyWords: [{ word: 'makes', ipa: '', meaningAr: 'بتخلي', meaningEn: '' }, { word: 'easier', ipa: '', meaningAr: 'أسهل', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'I cannot keep up with all these new updates.', arEg: 'مش قادر أواكب كل التحديثات الجديدة دي.', arFusha: 'مش قادر أواكب كل التحديثات الجديدة دي.', speaker: 'Speaker', keyWords: [{ word: 'keep up with', ipa: '', meaningAr: 'أواكب / ألحق', meaningEn: '' }, { word: 'updates', ipa: '', meaningAr: 'تحديثات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'keep up with', type: 'phrasal-verb', meaningAr: 'يواكب', meaningEn: '', egyptianEquivalent: 'يلحق يواكب', exampleInScene: 'It is hard to keep up with the news.' },      { term: 'update', type: 'cultural', meaningAr: 'تحديث', meaningEn: '', egyptianEquivalent: 'تحديث', exampleInScene: 'The app needs an update.' },      { term: 'device', type: 'cultural', meaningAr: 'جهاز', meaningEn: '', egyptianEquivalent: 'جهاز', exampleInScene: 'How many devices do you own?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I cannot keep up with the updates\' mean?', questionAr: 'يعني إيه I cannot keep up with the updates؟', options: ['مش لاحق على التحديثات الكتير', 'مش عايز أحدث الموبايل', 'التحديثات بايظة', 'مفيش تحديثات أصلًا'], correctIndex: 0, explanationAr: 'Keep up with = تلحق تواكب حاجة بتتغير بسرعة - تعبير يومي مهم جدًا.' }
+    ],
+    speakingLines: [{ en: 'Technology makes our lives so much easier.', arEg: 'التكنولوجيا بتخلي حياتنا أسهل بكتير.' }, { en: 'I cannot keep up with all these new updates.', arEg: 'مش قادر أواكب كل التحديثات الجديدة دي.' }],
+  },
+  {
+    id: 'phone-conversations-leo-100',
+    movieTitle: 'Master Phone Conversations in English - 100 Essential Phrases',
+    releaseYear: 2023,
+    director: 'Leo English Podcast',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Sound Natural on the Phone',
+    sceneDescription: '١٠٠ عبارة تليفون: ترد، تسأل عن حد، تستنى، وتقفل المكالمة بشيكة.',
+    youtubeId: 'w0jnsZXndAs',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Leo English Podcast (Official)',
+    dialogueQuote: 'Could you hold on for a moment, please?',
+    actorName: 'Leo',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/w0jnsZXndAs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Leo English Podcast Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Hello, this is Ahmed speaking. How can I help you?', arEg: 'ألو، معاك أحمد. أقدر أساعدك في إيه؟', arFusha: 'ألو، معاك أحمد. أقدر أساعدك في إيه؟', speaker: 'Host', keyWords: [{ word: 'this is... speaking', ipa: '', meaningAr: 'معاك...', meaningEn: '' }, { word: 'how can I help you', ipa: '', meaningAr: 'أقدر أساعدك في إيه', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Could you hold on for a moment, please?', arEg: 'ممكن تستنى لحظة لو سمحت؟', arFusha: 'ممكن تستنى لحظة لو سمحت؟', speaker: 'Host', keyWords: [{ word: 'hold on', ipa: '', meaningAr: 'استنى', meaningEn: '' }, { word: 'for a moment', ipa: '', meaningAr: 'لحظة', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'I am sorry, you have the wrong number.', arEg: 'متأسف، ده رقم غلط.', arFusha: 'متأسف، ده رقم غلط.', speaker: 'Host', keyWords: [{ word: 'wrong number', ipa: '', meaningAr: 'رقم غلط', meaningEn: '' }, { word: 'I am sorry', ipa: '', meaningAr: 'متأسف', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'hold on', type: 'phrasal-verb', meaningAr: 'ينتظر', meaningEn: '', egyptianEquivalent: 'يستنى على الخط', exampleInScene: 'Hold on, I will check.' },      { term: 'wrong number', type: 'collocation', meaningAr: 'رقم خاطئ', meaningEn: '', egyptianEquivalent: 'رقم غلط', exampleInScene: 'Sorry, wrong number!' },      { term: 'call back', type: 'phrasal-verb', meaningAr: 'يعاود الاتصال', meaningEn: '', egyptianEquivalent: 'يرد المكالمة تاني', exampleInScene: 'I will call you back later.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you politely ask someone to wait on the phone?', questionAr: 'تطلب من حد يستنى على التليفون بأدب إزاي؟', options: ['Could you hold on for a moment, please?', 'Wait and do not move', 'Stop talking now', 'Be quiet a second'], correctIndex: 0, explanationAr: 'Hold on = استنى على الخط - مع Could you... please بتبقى قمة الشياكة.' }
+    ],
+    speakingLines: [{ en: 'Hello, this is Ahmed speaking. How can I help you?', arEg: 'ألو، معاك أحمد. أقدر أساعدك في إيه؟' }, { en: 'Could you hold on for a moment, please?', arEg: 'ممكن تستنى لحظة لو سمحت؟' }],
+  },
+  {
+    id: 'phone-sentences-unleashed-50',
+    movieTitle: '50 English Phone Sentences for Daily Use - Speak Naturally',
+    releaseYear: 2024,
+    director: 'English Unleashed',
+    genre: 'Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Everyday Phone English',
+    sceneDescription: '٥٠ جملة تليفون يومية: للشغل، للصحاب، وللمواعيد.',
+    youtubeId: 'tm-Whm3zjhk',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English Unleashed Podcast (Official)',
+    dialogueQuote: 'Can I leave a message for him, please?',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/tm-Whm3zjhk/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Unleashed Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Can I leave a message for him, please?', arEg: 'ممكن أسيبله رسالة لو سمحت؟', arFusha: 'ممكن أسيبله رسالة لو سمحت؟', speaker: 'Host', keyWords: [{ word: 'leave a message', ipa: '', meaningAr: 'أسيب رسالة', meaningEn: '' }, { word: 'for him', ipa: '', meaningAr: 'له / عشانه', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The line is busy at the moment.', arEg: 'الخط مشغول دلوقتي.', arFusha: 'الخط مشغول دلوقتي.', speaker: 'Host', keyWords: [{ word: 'line is busy', ipa: '', meaningAr: 'الخط مشغول', meaningEn: '' }, { word: 'at the moment', ipa: '', meaningAr: 'دلوقتي', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'I will text you the address right away.', arEg: 'هبعتلك العنوان رسالة حالًا.', arFusha: 'هبعتلك العنوان رسالة حالًا.', speaker: 'Host', keyWords: [{ word: 'text you', ipa: '', meaningAr: 'أبعتلك رسالة', meaningEn: '' }, { word: 'right away', ipa: '', meaningAr: 'حالًا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'leave a message', type: 'collocation', meaningAr: 'ترك رسالة', meaningEn: '', egyptianEquivalent: 'يسيب رسالة', exampleInScene: 'Please leave a message after the beep.' },      { term: 'busy line', type: 'collocation', meaningAr: 'خط مشغول', meaningEn: '', egyptianEquivalent: 'خط مشغول', exampleInScene: 'The line has been busy all day.' },      { term: 'right away', type: 'collocation', meaningAr: 'فورًا', meaningEn: '', egyptianEquivalent: 'حالًا', exampleInScene: 'I will send it right away.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'The person you called is not available. What do you say?', questionAr: 'اللي بتكلمه مش موجود. تقول إيه؟', options: ['Can I leave a message for him, please?', 'Where is he hiding?', 'Call me back or else', 'I hang up angry'], correctIndex: 0, explanationAr: 'Leave a message = تسيب رسالة لما حد مش متاح - أساس آداب التليفون.' }
+    ],
+    speakingLines: [{ en: 'Can I leave a message for him, please?', arEg: 'ممكن أسيبله رسالة لو سمحت؟' }, { en: 'I will text you the address right away.', arEg: 'هبعتلك العنوان رسالة حالًا.' }],
+  },
 ];
 
 // Helper to get all videos
