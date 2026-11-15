@@ -40,21 +40,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "deadline",
     collocation: "meet a deadline / tight deadline",
   },
-  {
-    id: "voc-biz-2",
-    word: "stakeholder",
-    ipa: "/ˈsteɪkˌhəʊl.dər/",
-    partOfSpeech: "noun",
-    meaningAr: "صاحب مصلحة / شريك أو طرف معني في المشروع",
-    level: "B2",
-    category: "business",
-    exampleEn:
-      "The executive presented the strategic quarterly updates to all key stakeholders.",
-    exampleAr:
-      "قدم المدير التنفيذي التحديثات الربع سنوية الاستراتيجية لجميع الأطراف المعنية.",
-    highlight: "stakeholders",
-    collocation: "key stakeholders",
-  },
+
   {
     id: "voc-biz-3",
     word: "negotiate",
@@ -83,21 +69,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "collaboration",
     collocation: "close collaboration",
   },
-  {
-    id: "voc-biz-5",
-    word: "workflow",
-    ipa: "/ˈwɜːk.fləʊ/",
-    partOfSpeech: "noun",
-    meaningAr: "مسار وسير العمل الإداري أو التقني",
-    level: "B1",
-    category: "workplace",
-    exampleEn:
-      "Automating repetitive tasks streamlined our daily editorial workflow.",
-    exampleAr:
-      "أدت أتمتة المهام المتكررة إلى تسهيل مسار عملنا التحريري اليومي.",
-    highlight: "workflow",
-    collocation: "streamline workflow",
-  },
+
 
   // 2. Technology & Software
   {
@@ -397,19 +369,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "essential",
     collocation: "absolutely essential",
   },
-  {
-    id: "voc-travel-4",
-    word: "itinerary",
-    ipa: "/aɪˈtɪn.ər.ər.i/",
-    partOfSpeech: "noun",
-    meaningAr: "جدول الرحلة المفصل",
-    level: "B2",
-    category: "travel",
-    exampleEn: "Our travel agent sent us a detailed itinerary for the whole trip.",
-    exampleAr: "وكيل السفر بعت لنا جدول رحلة مفصل للرحلة كلها.",
-    highlight: "itinerary",
-    collocation: "detailed itinerary",
-  },
+
 
   {
     id: "voc-travel-6",
@@ -800,31 +760,9 @@ const VOCAB_A: VocabWord[] = [
   },
 
   // Expansion Pack 3 - 20 additional words
-  {
-    id: "voc-travel-5-dup",
-    word: "itinerary",
-    ipa: "/aɪˈtɪn.ə.rer.i/",
-    partOfSpeech: "noun",
-    meaningAr: "جدول رحلة مفصّل",
-    level: "B2",
-    category: "travel",
-    exampleEn: "By next Friday, we will have finalized the entire travel itinerary.",
-    exampleAr: "بحلول الجمعة الجاية، هنكون جهزنا جدول الرحلة بالكامل.",
-    highlight: "will have finalized",
-  },
 
-  {
-    id: "voc-biz-7",
-    word: "stakeholder",
-    ipa: "/ˈsteɪk.həʊl.dər/",
-    partOfSpeech: "noun",
-    meaningAr: "طرف معني بالمشروع",
-    level: "B2",
-    category: "business",
-    exampleEn: "By the quarterly meeting, we will have informed every stakeholder.",
-    exampleAr: "بحلول الاجتماع الربعي، هنكون أبلغنا كل الأطراف المعنية.",
-    highlight: "will have informed",
-  },
+
+
   {
     id: "voc-biz-8",
     word: "outsourcing",
@@ -1127,19 +1065,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "person",
     collocation: "a nice person",
   },
-  {
-    id: "voc-ev1-10",
-    word: "people",
-    ipa: "/ˈpiː.pəl/",
-    partOfSpeech: "noun (plural)",
-    meaningAr: "ناس",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "Many people drink tea in the morning in Egypt.",
-    exampleAr: "ناس كتير بتشرب شاي الصبح في مصر.",
-    highlight: "people",
-    collocation: "a lot of people",
-  },
+
   {
     id: "voc-ev1-11",
     word: "name",
@@ -1231,19 +1157,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "water",
     collocation: "cold water",
   },
-  {
-    id: "voc-ev1-18",
-    word: "day",
-    ipa: "/deɪ/",
-    partOfSpeech: "noun",
-    meaningAr: "يوم / نهار",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "Friday is my favourite day of the week.",
-    exampleAr: "يوم الجمعة هو يومي المفضل في الأسبوع.",
-    highlight: "day",
-    collocation: "every day",
-  },
+
   {
     id: "voc-ev1-19",
     word: "night",
@@ -1787,19 +1701,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "month",
     collocation: "next month",
   },
-  {
-    id: "voc-ev3-10",
-    word: "year",
-    ipa: "/jɪər/",
-    partOfSpeech: "noun",
-    meaningAr: "سنة",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "This year I want to learn English very well.",
-    exampleAr: "السنة دي عايز أتعلم إنجليزي كويس جداً.",
-    highlight: "year",
-    collocation: "every year",
-  },
+
   {
     id: "voc-ev3-11",
     word: "hour",
@@ -1826,19 +1728,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "minute",
     collocation: "in a minute",
   },
-  {
-    id: "voc-ev3-13",
-    word: "time",
-    ipa: "/taɪm/",
-    partOfSpeech: "noun",
-    meaningAr: "وقت / ميعاد",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "What time does the lesson start?",
-    exampleAr: "الحصة بتبدأ الساعة كام؟",
-    highlight: "time",
-    collocation: "free time",
-  },
+
   {
     id: "voc-ev3-14",
     word: "clock",
@@ -1878,32 +1768,8 @@ const VOCAB_A: VocabWord[] = [
     highlight: "birthday",
     collocation: "birthday party",
   },
-  {
-    id: "voc-ev3-17",
-    word: "one",
-    ipa: "/wʌn/",
-    partOfSpeech: "number",
-    meaningAr: "واحد",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "I have one brother and two sisters.",
-    exampleAr: "عندي أخ واحد وأختين.",
-    highlight: "one",
-    collocation: "one day",
-  },
-  {
-    id: "voc-ev3-18",
-    word: "two",
-    ipa: "/tuː/",
-    partOfSpeech: "number",
-    meaningAr: "اتنين",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "Two cups of tea, please, with sugar.",
-    exampleAr: "كوبايتين شاي من فضلك، بالسكر.",
-    highlight: "two",
-    collocation: "two days",
-  },
+
+
   {
     id: "voc-ev3-19",
     word: "three",
@@ -1969,19 +1835,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "hundred",
     collocation: "a hundred people",
   },
-  {
-    id: "voc-ev3-24",
-    word: "first",
-    ipa: "/fɜːst/",
-    partOfSpeech: "ordinal number",
-    meaningAr: "الأول / أول",
-    level: "A1",
-    category: "everyday",
-    exampleEn: "This is my first lesson in English.",
-    exampleAr: "دي أول حصة ليا في الإنجليزي.",
-    highlight: "first",
-    collocation: "first time",
-  },
+
   {
     id: "voc-ev3-25",
     word: "second",
@@ -3767,19 +3621,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "left",
     collocation: "turn left",
   },
-  {
-    id: "voc-tr1-10",
-    word: "right",
-    ipa: "/raɪt/",
-    partOfSpeech: "noun / adjective",
-    meaningAr: "يمين",
-    level: "A1",
-    category: "travel",
-    exampleEn: "The bank is on your right, next to the post office.",
-    exampleAr: "البنك على يمينك، جنب مكتب البريد.",
-    highlight: "right",
-    collocation: "turn right",
-  },
+
   {
     id: "voc-tr1-11",
     word: "straight",
@@ -3993,19 +3835,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "job",
     collocation: "a new job",
   },
-  {
-    id: "voc-wk1-2",
-    word: "work",
-    ipa: "/wɜːk/",
-    partOfSpeech: "verb / noun",
-    meaningAr: "يشتغل / شغل",
-    level: "A1",
-    category: "workplace",
-    exampleEn: "I work from Sunday to Thursday.",
-    exampleAr: "بشتغل من يوم الحد ليوم الخميس.",
-    highlight: "work",
-    collocation: "go to work",
-  },
+
   {
     id: "voc-wk1-3",
     word: "worker",
@@ -4427,19 +4257,7 @@ const VOCAB_A: VocabWord[] = [
     highlight: "hair",
     collocation: "long hair",
   },
-  {
-    id: "voc-md1-10",
-    word: "back",
-    ipa: "/bæk/",
-    partOfSpeech: "noun",
-    meaningAr: "ضهر",
-    level: "A1",
-    category: "medical",
-    exampleEn: "My back hurts when I carry heavy bags.",
-    exampleAr: "ضهري بيوجعني لما أشيل شنط تقيلة.",
-    highlight: "back",
-    collocation: "back pain",
-  },
+
   {
     id: "voc-md1-11",
     word: "leg",
@@ -7252,19 +7070,7 @@ const VOCAB_B: VocabWord[] = [
     highlight: "sink",
     collocation: "in the sink",
   },
-  {
-    id: "voc-fd3-25",
-    word: "napkin",
-    ipa: "/ˈnæp.kɪn/",
-    partOfSpeech: "noun",
-    meaningAr: "فوطة سفرة / منشفة ورقية",
-    level: "A2",
-    category: "food",
-    exampleEn: "Put a napkin on your lap before you eat.",
-    exampleAr: "حط فوطة السفرة على رجلك قبل ما تاكل.",
-    highlight: "napkin",
-    collocation: "a paper napkin",
-  },
+
 
 
   // ==========================================
@@ -7821,19 +7627,7 @@ const VOCAB_B: VocabWord[] = [
     highlight: "Half board",
     collocation: "half board offer",
   },
-  {
-    id: "voc-ho1-17",
-    word: "receptionist",
-    ipa: "/rɪˈsep.ʃən.ɪst/",
-    partOfSpeech: "noun",
-    meaningAr: "موظف استقبال",
-    level: "A2",
-    category: "hotel",
-    exampleEn: "The receptionist speaks three languages.",
-    exampleAr: "موظف الاستقبال بيتكلم 3 لغات.",
-    highlight: "receptionist",
-    collocation: "ask the receptionist",
-  },
+
   {
     id: "voc-ho1-18",
     word: "room key",
@@ -8708,19 +8502,7 @@ const VOCAB_B: VocabWord[] = [
     highlight: "syrup",
     collocation: "cough syrup",
   },
-  {
-    id: "voc-md2-10",
-    word: "bandage",
-    ipa: "/ˈbæn.dɪdʒ/",
-    partOfSpeech: "noun",
-    meaningAr: "رباط ضماد",
-    level: "A2",
-    category: "medical",
-    exampleEn: "The nurse put a bandage on my cut finger.",
-    exampleAr: "الممرضة حطت رباط ضماد على صباعي المجروح.",
-    highlight: "bandage",
-    collocation: "put on a bandage",
-  },
+
   {
     id: "voc-md2-11",
     word: "allergy",
@@ -10472,19 +10254,7 @@ const VOCAB_B: VocabWord[] = [
     highlight: "retail",
     collocation: "retail store",
   },
-  {
-    id: "voc-u3-19",
-    word: "freelancer",
-    ipa: "/ˈfriːlɑːnsə/",
-    partOfSpeech: "noun",
-    meaningAr: "فريلانسر / شغال حر",
-    level: "B1",
-    category: "business",
-    exampleEn: "She works as a freelancer from home.",
-    exampleAr: "شغالة فريلانسر من البيت.",
-    highlight: "freelancer",
-    collocation: "freelance work",
-  },
+
   {
     id: "voc-u3-20",
     word: "partnership",
@@ -11740,19 +11510,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "packed",
     collocation: "pack your bags",
   },
-  {
-    id: "voc-u7-16",
-    word: "unpack",
-    ipa: "/ʌnˈpæk/",
-    partOfSpeech: "verb",
-    meaningAr: "يفضّي شنطته",
-    level: "B1",
-    category: "travel",
-    exampleEn: "We unpacked our bags as soon as we arrived.",
-    exampleAr: "فضّينا شنطنا أول ما وصلنا.",
-    highlight: "unpacked",
-    collocation: "unpack your suitcase",
-  },
+
   {
     id: "voc-u7-17",
     word: "accommodation",
@@ -14114,19 +13872,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "bibliography",
     collocation: "include a bibliography",
   },
-  {
-    id: "voc-u14-25",
-    word: "plagiarism",
-    ipa: "/ˈpleɪdʒərɪzəm/",
-    partOfSpeech: "noun",
-    meaningAr: "سرقة أدبية",
-    level: "B2",
-    category: "academic",
-    exampleEn: "The university punishes plagiarism strictly.",
-    exampleAr: "الجامعة بتعاقب على السرقة الأدبية بصرامة.",
-    highlight: "plagiarism",
-    collocation: "avoid plagiarism",
-  },
+
     // ==== B5 deck 15 - B2 Academic II ====
   {
     id: "voc-u15-1",
@@ -14401,19 +14147,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "appendix",
     collocation: "see the appendix",
   },
-  {
-    id: "voc-u15-22",
-    word: "footnote",
-    ipa: "/ˈfʊtnəʊt/",
-    partOfSpeech: "noun",
-    meaningAr: "حاشية سفلية",
-    level: "B2",
-    category: "academic",
-    exampleEn: "The explanation is in a footnote.",
-    exampleAr: "الشرح موجود في حاشية تحت الصفحة.",
-    highlight: "footnote",
-    collocation: "add a footnote",
-  },
+
   {
     id: "voc-u15-23",
     word: "draft",
@@ -19436,19 +19170,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "initial public offering",
     collocation: "launch an initial public offering",
   },
-  {
-    id: "voc-u31-10",
-    word: "liquidation",
-    ipa: "/ˌlɪkwɪˈdeɪʃn/",
-    partOfSpeech: "noun",
-    meaningAr: "تصفية أعمال",
-    level: "C1",
-    category: "business",
-    exampleEn: "The factory went into liquidation.",
-    exampleAr: "المصنع دخل في التصفية.",
-    highlight: "liquidation",
-    collocation: "go into liquidation",
-  },
+
   {
     id: "voc-u31-11",
     word: "litigation",
@@ -19605,19 +19327,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "fiscal year",
     collocation: "fiscal year",
   },
-  {
-    id: "voc-u31-23",
-    word: "insolvency",
-    ipa: "/ɪnˈsɒlvənsi/",
-    partOfSpeech: "noun",
-    meaningAr: "عجز مالي / إعسار",
-    level: "C1",
-    category: "business",
-    exampleEn: "The company declared insolvency last month.",
-    exampleAr: "الشركة أعلنت إعسارها الشهر اللي فات.",
-    highlight: "insolvency",
-    collocation: "declare insolvency",
-  },
+
   {
     id: "voc-u31-24",
     word: "joint venture",
@@ -19749,32 +19459,8 @@ const VOCAB_C: VocabWord[] = [
     highlight: "digital footprint",
     collocation: "digital footprint",
   },
-  {
-    id: "voc-u32-9",
-    word: "firewall",
-    ipa: "/ˈfaɪəwɔːl/",
-    partOfSpeech: "noun",
-    meaningAr: "جدار حماية (فايروول)",
-    level: "C1",
-    category: "tech",
-    exampleEn: "The firewall blocked the attack.",
-    exampleAr: "الفايروول منع الهجوم.",
-    highlight: "firewall",
-    collocation: "firewall protection",
-  },
-  {
-    id: "voc-u32-10",
-    word: "firmware",
-    ipa: "/ˈfɜːmweə/",
-    partOfSpeech: "noun",
-    meaningAr: "البرمجيات الثابتة للجهاز (فيرموير)",
-    level: "C1",
-    category: "tech",
-    exampleEn: "Update the printer firmware regularly.",
-    exampleAr: "حدّث فيرموير الطابعة بانتظام.",
-    highlight: "firmware",
-    collocation: "firmware update",
-  },
+
+
   {
     id: "voc-u32-11",
     word: "malware",
@@ -19971,45 +19657,9 @@ const VOCAB_C: VocabWord[] = [
     highlight: "alleviate",
     collocation: "alleviate pain",
   },
-  {
-    id: "voc-u33-2",
-    word: "ambivalent",
-    ipa: "/æmˈbɪvələnt/",
-    partOfSpeech: "adjective",
-    meaningAr: "متردد بين شعورين",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "She feels ambivalent about moving abroad.",
-    exampleAr: "هي مترددة في مشاعرها ناحية السفر للخارج.",
-    highlight: "ambivalent",
-    collocation: "feel ambivalent about",
-  },
-  {
-    id: "voc-u33-3",
-    word: "apathy",
-    ipa: "/ˈæpəθi/",
-    partOfSpeech: "noun",
-    meaningAr: "لامبالاة / فتور",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "Voter apathy kept turnout low.",
-    exampleAr: "لامبالاة الناخبين خلّت المشاركة ضعيفة.",
-    highlight: "apathy",
-    collocation: "voter apathy",
-  },
-  {
-    id: "voc-u33-4",
-    word: "austere",
-    ipa: "/ɒˈstɪə/",
-    partOfSpeech: "adjective",
-    meaningAr: "بسيط جدًا وصارم (غير مريح)",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "The monks live in austere rooms.",
-    exampleAr: "الرهبان عايشين في غرف بسيطة جدًا.",
-    highlight: "austere",
-    collocation: "austere conditions",
-  },
+
+
+
   {
     id: "voc-u33-5",
     word: "benevolent",
@@ -20036,19 +19686,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "candid",
     collocation: "candid interview",
   },
-  {
-    id: "voc-u33-7",
-    word: "cumbersome",
-    ipa: "/ˈkʌmbəsəm/",
-    partOfSpeech: "adjective",
-    meaningAr: "ثقيل وصعب التعامل",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "The old system is slow and cumbersome.",
-    exampleAr: "النظام القديم بطيء وصعب التعامل.",
-    highlight: "cumbersome",
-    collocation: "cumbersome process",
-  },
+
 
   {
     id: "voc-u33-9",
@@ -20141,19 +19779,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "grueling",
     collocation: "grueling schedule",
   },
-  {
-    id: "voc-u33-16",
-    word: "hamper",
-    ipa: "/ˈhæmpə/",
-    partOfSpeech: "verb",
-    meaningAr: "يعوّق / يعطّل التقدّم",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "Heavy rain hampered the rescue work.",
-    exampleAr: "المطر الغزير عوّق أعمال الإنقاذ.",
-    highlight: "hampered",
-    collocation: "hamper progress",
-  },
+
   {
     id: "voc-u33-17",
     word: "hindsight",
@@ -20206,19 +19832,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "jaded",
     collocation: "feel jaded",
   },
-  {
-    id: "voc-u33-22",
-    word: "jeopardize",
-    ipa: "/ˈdʒepədaɪz/",
-    partOfSpeech: "verb",
-    meaningAr: "يعرّض للخطر",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "One mistake could jeopardize the whole deal.",
-    exampleAr: "غلطة واحدة ممكن تعرّض الصفقة كلها للخطر.",
-    highlight: "jeopardize",
-    collocation: "jeopardize safety",
-  },
+
   {
     id: "voc-u33-23",
     word: "mundane",
@@ -20245,19 +19859,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "ordeal",
     collocation: "terrible ordeal",
   },
-  {
-    id: "voc-u33-25",
-    word: "precarious",
-    ipa: "/prɪˈkeəriəs/",
-    partOfSpeech: "adjective",
-    meaningAr: "غير مستقر / هشّ",
-    level: "C1",
-    category: "everyday",
-    exampleEn: "The family lives in a precarious situation.",
-    exampleAr: "العيلة عايشة في وضع غير مستقر.",
-    highlight: "precarious",
-    collocation: "precarious position",
-  },
+
     // ==== B5 deck 34 - C1 Medical IV ====
   {
     id: "voc-u34-1",
@@ -20389,19 +19991,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "hypertension",
     collocation: "suffer from hypertension",
   },
-  {
-    id: "voc-u34-11",
-    word: "immunization",
-    ipa: "/ˌɪmjʊnaɪˈzeɪʃn/",
-    partOfSpeech: "noun",
-    meaningAr: "تحصين / تطعيم",
-    level: "C1",
-    category: "medical",
-    exampleEn: "Child immunization is free at the clinic.",
-    exampleAr: "تطعيم الأطفال ببلاش في الوحدة الصحية.",
-    highlight: "immunization",
-    collocation: "immunization program",
-  },
+
   {
     id: "voc-u34-12",
     word: "inflammation",
@@ -20454,19 +20044,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "outbreak",
     collocation: "outbreak of disease",
   },
-  {
-    id: "voc-u34-16",
-    word: "palliative",
-    ipa: "/ˈpæliətɪv/",
-    partOfSpeech: "adjective",
-    meaningAr: "تلطيفي (علاج للألم مش للشفاء)",
-    level: "C1",
-    category: "medical",
-    exampleEn: "She received palliative care at home.",
-    exampleAr: "استقبلت رعاية تلطيفية في البيت.",
-    highlight: "palliative",
-    collocation: "palliative care",
-  },
+
   {
     id: "voc-u34-17",
     word: "prognosis",
@@ -20493,19 +20071,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "quarantine",
     collocation: "in quarantine",
   },
-  {
-    id: "voc-u34-19",
-    word: "remission",
-    ipa: "/rɪˈmɪʃn/",
-    partOfSpeech: "noun",
-    meaningAr: "هدأة المرض / اختفاء الأعراض",
-    level: "C1",
-    category: "medical",
-    exampleEn: "Her cancer has been in remission for two years.",
-    exampleAr: "السرطان عندها في حالة هدأة من سنتين.",
-    highlight: "remission",
-    collocation: "in remission",
-  },
+
   {
     id: "voc-u34-20",
     word: "screening",
