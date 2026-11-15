@@ -421,7 +421,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
               تُشهد أكاديمية هناوي للغة الإنجليزية بأن الطالب المتميز:
             </p>
             <div className="text-2xl sm:text-3xl font-black text-[#ffd166] font-['Cairo',sans-serif]">
-              {userProfile.nameAr} ({userProfile.name})
+              {userProfile.id === 'guest-learner' ? 'شهادة إتمام الكورس' : `${userProfile.nameAr} (${userProfile.name})`}
             </div>
             <p className="text-xs text-[#dedbf4] leading-relaxed">
               قد أتم بنجاح متطلبات دراسة واجتياز كورس:

@@ -25,7 +25,9 @@ import {
   Gamepad2,
   Globe,
   Settings,
-  Lock
+  Lock,
+  LogIn,
+  UserPlus
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -537,57 +539,106 @@ export const Header: React.FC<HeaderProps> = ({
             className="flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors cursor-pointer"
             aria-label="قائمة الحساب"
           >
-            <img
-              src={userProfile.avatar}
-              alt={userProfile.name}
-              className="w-7 h-7 rounded-lg object-cover border border-[#ffd166]/40"
-            />
-            <div className="hidden lg:flex flex-col text-right">
-              <span className="text-xs font-black text-white leading-tight flex items-center gap-1">
-                {userProfile.nameAr}
-                <ChevronDown className="w-3 h-3 text-[#b9b6d5]" />
+            {authSessionType === 'guest' ? (
+              <span className="flex items-center gap-1.5 px-1 sm:px-2">
+                <LogIn className="w-4 h-4 text-[#c4ff55]" />
+                <span className="text-xs font-black text-white whitespace-nowrap">دخول / تسجيل</span>
               </span>
-              <span className="text-[10px] text-[#ffd166] font-semibold leading-tight">
-                {userProfile.role === 'teacher' ? 'مدرس معتمد ' : `مستوى ${userProfile.currentLevel}`}
-              </span>
-            </div>
+            ) : (
+              <>
+                <img
+                  src={userProfile.avatar}
+                  alt={userProfile.name}
+                  className="w-7 h-7 rounded-lg object-cover border border-[#ffd166]/40"
+                />
+                <div className="hidden lg:flex flex-col text-right">
+                  <span className="text-xs font-black text-white leading-tight flex items-center gap-1">
+                    {userProfile.nameAr}
+                    <ChevronDown className="w-3 h-3 text-[#b9b6d5]" />
+                  </span>
+                  <span className="text-[10px] text-[#ffd166] font-semibold leading-tight">
+                    {userProfile.role === 'teacher' ? 'مدرس معتمد ' : `مستوى ${userProfile.currentLevel}`}
+                  </span>
+                </div>
+              </>
+            )}
           </button>
 
           {profileOpen && (
             <div className="absolute left-0 mt-3 w-72 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
               {/* Profile Card Summary */}
-              <div className="flex items-center gap-3 pb-3 border-b border-white/10">
-                <img
-                  src={userProfile.avatar}
-                  alt={userProfile.name}
-                  className="w-11 h-11 rounded-xl object-cover border-2 border-[#ffd166]"
-                />
-                <div className="min-w-0">
-                  <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
-                  <div className="text-xs text-[#b9b6d5] truncate">{userProfile.email}</div>
-                  <div className="inline-flex items-center gap-1 mt-1 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
-                    <span>{userProfile.role === 'teacher' ? 'رتبة: معلم وأستاذ ‍' : `مستوى CEFR: ${userProfile.currentLevel}`}</span>
+              {authSessionType === 'guest' ? (
+                <div className="pb-3 border-b border-white/10 space-y-3">
+                  <div className="flex items-center gap-3">
+                    <div className="w-11 h-11 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center">
+                      <User className="w-5 h-5 text-[#b9b6d5]" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-sm font-black text-white">بتتصفح من غير حساب</div>
+                      <div className="text-[11px] text-[#b9b6d5] leading-relaxed mt-0.5">
+                        تقدمك محفوظ تلقائياً على جهازك، وأول ما تنشئ حساب هيتنقل عليه بالكامل.
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      onOpenAuthModal('register');
+                      setProfileOpen(false);
+                    }}
+                    className="w-full flex items-center justify-center gap-2 p-2.5 rounded-xl bg-[#c4ff55] text-[#09091a] font-black hover:brightness-110 cursor-pointer"
+                  >
+                    <UserPlus className="w-4 h-4" />
+                    <span>إنشاء حساب مجاني</span>
+                  </button>
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      onOpenAuthModal('login');
+                      setProfileOpen(false);
+                    }}
+                    className="w-full flex items-center justify-center gap-2 p-2 rounded-xl bg-white/5 border border-white/15 text-white font-bold hover:bg-white/10 cursor-pointer"
+                  >
+                    <LogIn className="w-4 h-4 text-[#41e7ff]" />
+                    <span>تسجيل الدخول</span>
+                  </button>
+                </div>
+              ) : (
+                <div className="flex items-center gap-3 pb-3 border-b border-white/10">
+                  <img
+                    src={userProfile.avatar}
+                    alt={userProfile.name}
+                    className="w-11 h-11 rounded-xl object-cover border-2 border-[#ffd166]"
+                  />
+                  <div className="min-w-0">
+                    <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
+                    <div className="text-xs text-[#b9b6d5] truncate">{userProfile.email}</div>
+                    <div className="inline-flex items-center gap-1 mt-1 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
+                      <span>{userProfile.role === 'teacher' ? 'رتبة: معلم وأستاذ ‍' : `مستوى CEFR: ${userProfile.currentLevel}`}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
 
               {/* Action Buttons */}
               <div className="space-y-1.5 text-xs">
                 {/* Auth Modal Trigger / Account Switch */}
-                <button
-                  onClick={() => {
-                    playSound('click');
-                    onOpenAuthModal('login');
-                    setProfileOpen(false);
-                  }}
-                  className="w-full flex items-center justify-between p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 text-white font-bold hover:brightness-110 cursor-pointer"
-                >
-                  <span className="flex items-center gap-2">
-                    <User className="w-4 h-4 text-[#ffd166]" />
-                    <span>إدارة الحساب ووضع الـ Demo</span>
-                  </span>
-                  <span className="text-[10px] text-[#ffd166] font-black underline">تغيير</span>
-                </button>
+                {authSessionType !== 'guest' && (
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      onOpenAuthModal('login');
+                      setProfileOpen(false);
+                    }}
+                    className="w-full flex items-center justify-between p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 text-white font-bold hover:brightness-110 cursor-pointer"
+                  >
+                    <span className="flex items-center gap-2">
+                      <User className="w-4 h-4 text-[#ffd166]" />
+                      <span>إدارة الحساب ووضع الـ Demo</span>
+                    </span>
+                    <span className="text-[10px] text-[#ffd166] font-black underline">تغيير</span>
+                  </button>
+                )}
 
                 <button
                   onClick={() => handleNav('my-learning')}
@@ -605,21 +656,23 @@ export const Header: React.FC<HeaderProps> = ({
                   <span>شهاداتي المعتمدة والتوثيق</span>
                 </button>
 
-                <button
-                  onClick={() => {
-                    playSound('click');
-                    onToggleRole();
-                    setProfileOpen(false);
-                  }}
-                  className="w-full flex items-center justify-between p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 transition-colors cursor-pointer"
-                >
-                  <span className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
-                    <span>تبديل الدور: {userProfile.role === 'student' ? 'المعلم' : 'الطالب'}</span>
-                  </span>
-                </button>
+                {authSessionType !== 'guest' && (
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      onToggleRole();
+                      setProfileOpen(false);
+                    }}
+                    className="w-full flex items-center justify-between p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 transition-colors cursor-pointer"
+                  >
+                    <span className="flex items-center gap-2">
+                      <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
+                      <span>تبديل الدور: {userProfile.role === 'student' ? 'المعلم' : 'الطالب'}</span>
+                    </span>
+                  </button>
+                )}
 
-                {onSignOut && (
+                {onSignOut && authSessionType === 'authenticated' && (
                   <button
                     onClick={() => {
                       playSound('click');
