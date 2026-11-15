@@ -254,6 +254,10 @@ const CEFR_ORDER: Record<string, number> = {
 /**
  * High-performance search and filter execution
  */
+export function getLoadedVocabularyCount(): number {
+  return cachedWords.length;
+}
+
 export function searchVocabulary(options: VocabularyFilterOptions = {}): {
   entries: LexicalEntry[];
   totalMatches: number;

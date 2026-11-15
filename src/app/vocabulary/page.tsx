@@ -3,7 +3,7 @@ import ClientOnly from '../ClientOnly';
 
 export const metadata: Metadata = {
   title: 'أكاديمية الكلمات | Henglish Academy',
-  description: 'أكاديمية المفردات وقاعدة الكلمات الشاملة: 55,000 كلمة بالنطق الأمريكي والبريطاني والترجمة.',
+  description: 'أكاديمية المفردات وقاعدة الكلمات الشاملة: 5,000 كلمة أساسية محققة بالنطق الأمريكي والبريطاني والترجمة.',
 };
 
 export default function Page() {
