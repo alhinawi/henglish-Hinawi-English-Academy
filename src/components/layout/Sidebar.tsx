@@ -116,6 +116,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
           route: 'courses',
           icon: Layers,
         },
+        {
+          label: 'ساحة الألعاب',
+          labelEn: 'Games Arena',
+          route: 'games',
+          icon: Gamepad2,
+          badge: 'جديد',
+        },
       ],
     },
     {
