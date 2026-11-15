@@ -8633,6 +8633,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Is there any discount if I buy two?', arEg: 'فيه خصم لو اشتريت اتنين؟' }, { en: 'I would like to return this jacket, please.', arEg: 'عايز أرجع الجاكت ده لو سمحت.' }],
   },
+  {
+    id: 'directions-bbc-easy',
+    movieTitle: 'Asking for and Giving Directions - Easy English Conversations - BBC',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Find Your Way Around Town',
+    sceneDescription: 'تسأل عن طريق وتوجه حد: يمين، شمال، على طول، وجنب المحطة.',
+    youtubeId: 'SHXPpsIJTb0',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Excuse me, how do I get to the train station?',
+    actorName: 'BBC Hosts',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/SHXPpsIJTb0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Excuse me, how do I get to the train station?', arEg: 'لو سمحت، أروح محطة القطر إزاي؟', arFusha: 'لو سمحت، أروح محطة القطر إزاي؟', speaker: 'Speaker', keyWords: [{ word: 'how do I get to', ipa: '', meaningAr: 'أروح... إزاي', meaningEn: '' }, { word: 'train station', ipa: '', meaningAr: 'محطة القطر', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Go straight on, then turn left at the traffic lights.', arEg: 'امشي على طول، وبعدين خش شمال عند الإشارة.', arFusha: 'امشي على طول، وبعدين خش شمال عند الإشارة.', speaker: 'Speaker', keyWords: [{ word: 'go straight on', ipa: '', meaningAr: 'امشي على طول', meaningEn: '' }, { word: 'turn left', ipa: '', meaningAr: 'خش شمال', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'It is just past the bank, on your right.', arEg: 'هو بعد البنك على طول، على يمينك.', arFusha: 'هو بعد البنك على طول، على يمينك.', speaker: 'Speaker', keyWords: [{ word: 'just past', ipa: '', meaningAr: 'بعد... على طول', meaningEn: '' }, { word: 'on your right', ipa: '', meaningAr: 'على يمينك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'go straight on', type: 'collocation', meaningAr: 'سر على طول', meaningEn: '', egyptianEquivalent: 'امشي على طول', exampleInScene: 'Go straight on for two blocks.' },      { term: 'turn left', type: 'collocation', meaningAr: 'انعطف يسارًا', meaningEn: '', egyptianEquivalent: 'خش شمال', exampleInScene: 'Turn left at the corner.' },      { term: 'opposite', type: 'cultural', meaningAr: 'مقابل', meaningEn: '', egyptianEquivalent: 'قدام / مقابل', exampleInScene: 'The cafe is opposite the bank.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Someone says \'It is just past the bank\'. Where is it?', questionAr: 'حد قال It is just past the bank. يعني فين؟', options: ['بعد البنك بشوية', 'جوا البنك', 'قبل البنك', 'فوق البنك'], correctIndex: 0, explanationAr: 'Just past = بعد المكان بشوية - من أهم تعبيرات وصف الأماكن.' }
+    ],
+    speakingLines: [{ en: 'Excuse me, how do I get to the train station?', arEg: 'لو سمحت، أروح محطة القطر إزاي؟' }, { en: 'Go straight on, then turn left at the traffic lights.', arEg: 'امشي على طول، وبعدين خش شمال عند الإشارة.' }],
+  },
+  {
+    id: 'directions-easy-english',
+    movieTitle: 'Asking for and Giving Directions - Easy English',
+    releaseYear: 2022,
+    director: 'Easy English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Lost in the City',
+    sceneDescription: 'حوار واقعي: واحد تايه وبيسأل عن أقرب مترو وعن مكان الفندق.',
+    youtubeId: 'DPYJQSA-x50',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Easy English (Official)',
+    dialogueQuote: 'Is it far from here? Can I walk there?',
+    actorName: 'Host',
+    characterName: 'Tourist',
+    thumbnailUrl: 'https://img.youtube.com/vi/DPYJQSA-x50/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'Is it far from here? Can I walk there?', arEg: 'ده بعيد من هنا؟ أقدر أمشي له؟', arFusha: 'ده بعيد من هنا؟ أقدر أمشي له؟', speaker: 'Tourist', keyWords: [{ word: 'far from', ipa: '', meaningAr: 'بعيد من', meaningEn: '' }, { word: 'walk there', ipa: '', meaningAr: 'أمشي له', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'It is about a ten-minute walk from here.', arEg: 'هو حوالي عشر دقايق مشي من هنا.', arFusha: 'هو حوالي عشر دقايق مشي من هنا.', speaker: 'Local', keyWords: [{ word: 'about', ipa: '', meaningAr: 'حوالي', meaningEn: '' }, { word: 'ten-minute walk', ipa: '', meaningAr: 'عشر دقايق مشي', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'You cannot miss it. It is next to the big mosque.', arEg: 'مستحيل يفوتك. هو جنب الجامع الكبير.', arFusha: 'مستحيل يفوتك. هو جنب الجامع الكبير.', speaker: 'Local', keyWords: [{ word: 'you cannot miss it', ipa: '', meaningAr: 'مستحيل يفوتك', meaningEn: '' }, { word: 'next to', ipa: '', meaningAr: 'جنب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'far from', type: 'collocation', meaningAr: 'بعيد عن', meaningEn: '', egyptianEquivalent: 'بعيد من', exampleInScene: 'Is it far from the station?' },      { term: 'next to', type: 'cultural', meaningAr: 'بجانب', meaningEn: '', egyptianEquivalent: 'جنب', exampleInScene: 'The pharmacy is next to the bank.' },      { term: 'you cannot miss it', type: 'collocation', meaningAr: 'لن يفوتك', meaningEn: '', egyptianEquivalent: 'مستحيل يفوتك', exampleInScene: 'It is the tall building - you cannot miss it.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask if a place is within walking distance?', questionAr: 'تسأل إزاي لو المكان ممكن تمشي له؟', options: ['Is it far from here? Can I walk there?', 'How many kilometers exactly?', 'Drive me there please', 'Where is my map?'], correctIndex: 0, explanationAr: 'Is it far from here? + Can I walk there? = أسئلة التايه الذكي في أي مدينة.' }
+    ],
+    speakingLines: [{ en: 'Is it far from here? Can I walk there?', arEg: 'ده بعيد من هنا؟ أقدر أمشي له؟' }, { en: 'You cannot miss it. It is next to the big mosque.', arEg: 'مستحيل يفوتك. هو جنب الجامع الكبير.' }],
+  },
+  {
+    id: 'invite-english-vanessa',
+    movieTitle: 'How to INVITE in English - Daily Life English Lesson - Vanessa',
+    releaseYear: 2022,
+    director: 'Speak English With Vanessa',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Invite Someone Out Naturally',
+    sceneDescription: 'فانيسا بتعلمك تدعو حد يخرج معاك: الصيغة الودية والرسمية والردود.',
+    youtubeId: 'JT0FKgE-qPI',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'Do you want to grab a coffee sometime?',
+    actorName: 'Vanessa',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/JT0FKgE-qPI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Do you want to grab a coffee sometime?', arEg: 'عايز ناخد قهوة مع بعض في وقت من الأوقات؟', arFusha: 'عايز ناخد قهوة مع بعض في وقت من الأوقات؟', speaker: 'Instructor', keyWords: [{ word: 'grab a coffee', ipa: '', meaningAr: 'ناخد قهوة', meaningEn: '' }, { word: 'sometime', ipa: '', meaningAr: 'في وقت ما', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Would you like to come over for dinner on Friday?', arEg: 'تحب تيجي تتعشى عندنا يوم الجمعة؟', arFusha: 'تحب تيجي تتعشى عندنا يوم الجمعة؟', speaker: 'Instructor', keyWords: [{ word: 'would you like to', ipa: '', meaningAr: 'تحب', meaningEn: '' }, { word: 'come over', ipa: '', meaningAr: 'تيجي عندنا', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'I would love to, but I already have plans.', arEg: 'ياريت والله، بس أنا عندي مشوار خلاص.', arFusha: 'ياريت والله، بس أنا عندي مشوار خلاص.', speaker: 'Instructor', keyWords: [{ word: 'I would love to', ipa: '', meaningAr: 'ياريت / بحب', meaningEn: '' }, { word: 'already have plans', ipa: '', meaningAr: 'عندي مشوار خلاص', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'grab a coffee', type: 'collocation', meaningAr: 'تناول قهوة', meaningEn: '', egyptianEquivalent: 'ناخد قهوة', exampleInScene: 'Let us grab a coffee after work.' },      { term: 'come over', type: 'phrasal-verb', meaningAr: 'يأتي للزيارة', meaningEn: '', egyptianEquivalent: 'يجي عندنا', exampleInScene: 'Come over this weekend!' },      { term: 'have plans', type: 'collocation', meaningAr: 'لديه خطط', meaningEn: '', egyptianEquivalent: 'عنده مشوار', exampleInScene: 'Sorry, I have plans tonight.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a polite way to decline an invitation?', questionAr: 'إيه الطريقة الشيكة لرفض دعوة؟', options: ['I would love to, but I already have plans.', 'No way, I hate that', 'Why would I come?', 'Leave me alone'], correctIndex: 0, explanationAr: 'I would love to, but... = رفض مهذب بيحافظ على العلاقة - اعتذر واقترح وقت تاني.' }
+    ],
+    speakingLines: [{ en: 'Do you want to grab a coffee sometime?', arEg: 'عايز ناخد قهوة مع بعض في وقت من الأوقات؟' }, { en: 'I would love to, but I already have plans.', arEg: 'ياريت والله، بس أنا عندي مشوار خلاص.' }],
+  },
+  {
+    id: 'invitations-accept-decline-letstalk',
+    movieTitle: 'Making, Accepting and Declining an Invitation - English Lesson',
+    releaseYear: 2020,
+    director: 'Let\'s Talk',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Accept and Decline Gracefully',
+    sceneDescription: 'ردود الدعوات: تقبل بحماس أو تعتذر بشياكة من غير ما تكسر بخاطر حد.',
+    youtubeId: 'GqwpBEynsyo',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Let\'s Talk (Official)',
+    dialogueQuote: 'Thanks for inviting me. I will definitely be there!',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/GqwpBEynsyo/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Let\'s Talk Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Thanks for inviting me. I will definitely be there!', arEg: 'شكرًا على الدعوة. أكيد هكون موجود!', arFusha: 'شكرًا على الدعوة. أكيد هكون موجود!', speaker: 'Instructor', keyWords: [{ word: 'thanks for inviting me', ipa: '', meaningAr: 'شكرًا على الدعوة', meaningEn: '' }, { word: 'definitely be there', ipa: '', meaningAr: 'أكيد هكون موجود', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am afraid I cannot make it this time.', arEg: 'للأسف مش هقدر أجي المرة دي.', arFusha: 'للأسف مش هقدر أجي المرة دي.', speaker: 'Instructor', keyWords: [{ word: 'I am afraid', ipa: '', meaningAr: 'للأسف', meaningEn: '' }, { word: 'cannot make it', ipa: '', meaningAr: 'مش هقدر أجي', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Can we reschedule for next week?', arEg: 'ممكن نأجلها للأسبوع الجاي؟', arFusha: 'ممكن نأجلها للأسبوع الجاي؟', speaker: 'Instructor', keyWords: [{ word: 'reschedule', ipa: '', meaningAr: 'نأجل / نغير الميعاد', meaningEn: '' }, { word: 'next week', ipa: '', meaningAr: 'الأسبوع الجاي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'make it', type: 'phrasal-verb', meaningAr: 'يستطيع الحضور', meaningEn: '', egyptianEquivalent: 'يقدر يجي', exampleInScene: 'Sorry, I cannot make it tonight.' },      { term: 'reschedule', type: 'cultural', meaningAr: 'يعيد جدولة', meaningEn: '', egyptianEquivalent: 'نأجل الميعاد', exampleInScene: 'Can we reschedule our meeting?' },      { term: 'definitely', type: 'cultural', meaningAr: 'بالتأكيد', meaningEn: '', egyptianEquivalent: 'أكيد', exampleInScene: 'I will definitely come.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I cannot make it\' mean?', questionAr: 'يعني إيه I cannot make it؟', options: ['مش هقدر أحضر', 'مش عارف أعملها', 'مش هدفع', 'مش فاهم'], correctIndex: 0, explanationAr: 'Make it = تقدر تحضر أو توصل - من أكتر التعبيرات استخدامًا في المواعيد.' }
+    ],
+    speakingLines: [{ en: 'Thanks for inviting me. I will definitely be there!', arEg: 'شكرًا على الدعوة. أكيد هكون موجود!' }, { en: 'Can we reschedule for next week?', arEg: 'ممكن نأجلها للأسبوع الجاي؟' }],
+  },
+  {
+    id: 'agreeing-disagreeing-phrases',
+    movieTitle: 'Agreeing and Disagreeing in English - Useful Phrases',
+    releaseYear: 2021,
+    director: 'English Phrases Channel',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Share Your Opinion Politely',
+    sceneDescription: 'توافق وتختلف بشياكة: في الكلام اليومي وفي الاجتماعات الرسمية.',
+    youtubeId: 'MspXqjp3H8c',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English Phrases Channel (Official)',
+    dialogueQuote: 'I see your point, but I am not sure I agree.',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/MspXqjp3H8c/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Phrases Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I see your point, but I am not sure I agree.', arEg: 'فاهم وجهة نظرك، بس مش متأكد إني موافق.', arFusha: 'فاهم وجهة نظرك، بس مش متأكد إني موافق.', speaker: 'Instructor', keyWords: [{ word: 'I see your point', ipa: '', meaningAr: 'فاهم وجهة نظرك', meaningEn: '' }, { word: 'I am not sure I agree', ipa: '', meaningAr: 'مش متأكد إني موافق', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'That is exactly what I was thinking.', arEg: 'ده بالظبط اللي كنت بفكر فيه.', arFusha: 'ده بالظبط اللي كنت بفكر فيه.', speaker: 'Instructor', keyWords: [{ word: 'exactly', ipa: '', meaningAr: 'بالظبط', meaningEn: '' }, { word: 'what I was thinking', ipa: '', meaningAr: 'اللي كنت بفكر فيه', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'We will have to agree to disagree on this one.', arEg: 'يبدو إننا هنفضل مختلفين في النقطة دي.', arFusha: 'يبدو إننا هنفضل مختلفين في النقطة دي.', speaker: 'Instructor', keyWords: [{ word: 'agree to disagree', ipa: '', meaningAr: 'نقبل الاختلاف', meaningEn: '' }, { word: 'on this one', ipa: '', meaningAr: 'في النقطة دي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'I see your point', type: 'collocation', meaningAr: 'أفهم وجهة نظرك', meaningEn: '', egyptianEquivalent: 'فاهم كلامك', exampleInScene: 'I see your point, but...' },      { term: 'exactly', type: 'cultural', meaningAr: 'بالضبط', meaningEn: '', egyptianEquivalent: 'بالظبط', exampleInScene: 'Exactly! That is what I meant.' },      { term: 'agree to disagree', type: 'idiom', meaningAr: 'القبول بالاختلاف', meaningEn: '', egyptianEquivalent: 'نقبل إننا مختلفين', exampleInScene: 'Let us agree to disagree.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase disagrees politely?', questionAr: 'أنهي عبارة بتخالف بشياكة؟', options: ['I see your point, but I am not sure I agree.', 'You are totally wrong', 'That is stupid', 'Shut up'], correctIndex: 0, explanationAr: 'اعترف بوجهة نظر الشخص الأول (I see your point) وبعدين اختلف بهدوء - دي شياكة الاختلاف.' }
+    ],
+    speakingLines: [{ en: 'I see your point, but I am not sure I agree.', arEg: 'فاهم وجهة نظرك، بس مش متأكد إني موافق.' }, { en: 'That is exactly what I was thinking.', arEg: 'ده بالظبط اللي كنت بفكر فيه.' }],
+  },
+  {
+    id: 'family-bbc-easy',
+    movieTitle: 'How to Describe Your Family - Easy English Conversations - BBC',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Introduce Your Family',
+    sceneDescription: 'تتكلم عن عيلتك: مين فيها، شغلهم، وعلاقتك بيهم.',
+    youtubeId: 'v9EU41cuhHY',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'There are five of us in my family.',
+    actorName: 'BBC Hosts',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/v9EU41cuhHY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'There are five of us in my family.', arEg: 'إحنا خمسة في عيلتي.', arFusha: 'إحنا خمسة في عيلتي.', speaker: 'Speaker', keyWords: [{ word: 'there are', ipa: '', meaningAr: 'فيه / إحنا', meaningEn: '' }, { word: 'five of us', ipa: '', meaningAr: 'خمسة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'My older brother works as an engineer.', arEg: 'أخويا الكبير بيشتغل مهندس.', arFusha: 'أخويا الكبير بيشتغل مهندس.', speaker: 'Speaker', keyWords: [{ word: 'older brother', ipa: '', meaningAr: 'أخويا الكبير', meaningEn: '' }, { word: 'works as', ipa: '', meaningAr: 'بيشتغل', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'We are very close and see each other every week.', arEg: 'إحنا قريبين من بعض جدًا وبنشوف بعض كل أسبوع.', arFusha: 'إحنا قريبين من بعض جدًا وبنشوف بعض كل أسبوع.', speaker: 'Speaker', keyWords: [{ word: 'very close', ipa: '', meaningAr: 'قريبين من بعض', meaningEn: '' }, { word: 'see each other', ipa: '', meaningAr: 'بنشوف بعض', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'older brother', type: 'collocation', meaningAr: 'أخ أكبر', meaningEn: '', egyptianEquivalent: 'أخ كبير', exampleInScene: 'My older brother lives abroad.' },      { term: 'close', type: 'cultural', meaningAr: 'قريب', meaningEn: '', egyptianEquivalent: 'قريبين من بعض', exampleInScene: 'We are a close family.' },      { term: 'relative', type: 'cultural', meaningAr: 'قريب', meaningEn: '', egyptianEquivalent: 'قريب / من الأهل', exampleInScene: 'All my relatives came to the wedding.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you say the number of people in your family?', questionAr: 'تقول عدد أفراد عيلتك إزاي؟', options: ['There are five of us in my family.', 'My family has five members only', 'We are five people inside family', 'Five my family is'], correctIndex: 0, explanationAr: 'There are + رقم + of us = أسهل وأصح صيغة تقول بيها عدد أفراد عيلتك.' }
+    ],
+    speakingLines: [{ en: 'There are five of us in my family.', arEg: 'إحنا خمسة في عيلتي.' }, { en: 'We are very close and see each other every week.', arEg: 'إحنا قريبين من بعض جدًا وبنشوف بعض كل أسبوع.' }],
+  },
+  {
+    id: 'childhood-bob-canadian',
+    movieTitle: 'Learn How to Describe Your Childhood in English - Bob the Canadian',
+    releaseYear: 2022,
+    director: 'Bob the Canadian',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Tell Childhood Stories',
+    sceneDescription: 'بوب الكندي بيعلمك تحكي عن طفولتك: used to ومفردات الذكريات.',
+    youtubeId: 'DXCnjLXhiX0',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'When I was a kid, we used to play outside until dark.',
+    actorName: 'Bob the Canadian',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/DXCnjLXhiX0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Bob the Canadian Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'When I was a kid, we used to play outside until dark.', arEg: 'لما كنت صغير، كنا بنلعب بره لحد ما الضلمة تنزل.', arFusha: 'لما كنت صغير، كنا بنلعب بره لحد ما الضلمة تنزل.', speaker: 'Instructor', keyWords: [{ word: 'when I was a kid', ipa: '', meaningAr: 'لما كنت صغير', meaningEn: '' }, { word: 'used to play', ipa: '', meaningAr: 'كنا بنلعب (في الماضي)', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I grew up in a small town near the lake.', arEg: 'اتربيت في بلد صغيرة جنب البحيرة.', arFusha: 'اتربيت في بلد صغيرة جنب البحيرة.', speaker: 'Instructor', keyWords: [{ word: 'grew up', ipa: '', meaningAr: 'اتربيت', meaningEn: '' }, { word: 'near the lake', ipa: '', meaningAr: 'جنب البحيرة', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Those were the best days of my life.', arEg: 'دي كانت أحلى أيام حياتي.', arFusha: 'دي كانت أحلى أيام حياتي.', speaker: 'Instructor', keyWords: [{ word: 'those were', ipa: '', meaningAr: 'دي كانت', meaningEn: '' }, { word: 'the best days', ipa: '', meaningAr: 'أحلى أيام', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'used to', type: 'cultural', meaningAr: 'اعتاد أن', meaningEn: '', egyptianEquivalent: 'كان بـ (في الماضي)', exampleInScene: 'I used to swim every summer.' },      { term: 'grow up', type: 'phrasal-verb', meaningAr: 'يكبر', meaningEn: '', egyptianEquivalent: 'يتربى', exampleInScene: 'I grew up in Mansoura.' },      { term: 'childhood', type: 'cultural', meaningAr: 'طفولة', meaningEn: '', egyptianEquivalent: 'طفولة', exampleInScene: 'My childhood was happy.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase talks about a past habit?', questionAr: 'أنهي عبارة بتتكلم عن عادة في الماضي؟', options: ['We used to play outside', 'We are playing outside', 'We will play outside', 'We play outside now'], correctIndex: 0, explanationAr: 'Used to + فعل = حاجة كنت بتعملها في الماضي وبطلتها - أساس حكايات الطفولة.' }
+    ],
+    speakingLines: [{ en: 'When I was a kid, we used to play outside until dark.', arEg: 'لما كنت صغير، كنا بنلعب بره لحد ما الضلمة تنزل.' }, { en: 'I grew up in a small town near the lake.', arEg: 'اتربيت في بلد صغيرة جنب البحيرة.' }],
+  },
+  {
+    id: 'money-saving-english-smart',
+    movieTitle: 'Learn How to Talk About Money and Saving - Everyday English',
+    releaseYear: 2023,
+    director: 'English Smart Practice',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Talk About Your Budget',
+    sceneDescription: 'كلام الفلوس اليومي: ميزانية، توفير، مصاريف، وأسعار.',
+    youtubeId: 'uGk4K-jMRcs',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English Smart Practice (Official)',
+    dialogueQuote: 'I am trying to save up for a new laptop.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/uGk4K-jMRcs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Smart Practice Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I am trying to save up for a new laptop.', arEg: 'بحاول أوفر فلوس عشان أجيب لابتوب جديد.', arFusha: 'بحاول أوفر فلوس عشان أجيب لابتوب جديد.', speaker: 'Speaker', keyWords: [{ word: 'save up', ipa: '', meaningAr: 'أوفر فلوس', meaningEn: '' }, { word: 'for a new laptop', ipa: '', meaningAr: 'عشان لابتوب جديد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Eating out every day costs a fortune.', arEg: 'الأكل بره كل يوم بيكلف كتير قوي.', arFusha: 'الأكل بره كل يوم بيكلف كتير قوي.', speaker: 'Speaker', keyWords: [{ word: 'eating out', ipa: '', meaningAr: 'الأكل بره', meaningEn: '' }, { word: 'costs a fortune', ipa: '', meaningAr: 'بيكلف ثروة', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'I am on a tight budget this month.', arEg: 'أنا مضغوط في الميزانية الشهر ده.', arFusha: 'أنا مضغوط في الميزانية الشهر ده.', speaker: 'Speaker', keyWords: [{ word: 'on a tight budget', ipa: '', meaningAr: 'ميزانية ضيقة', meaningEn: '' }, { word: 'this month', ipa: '', meaningAr: 'الشهر ده', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'save up', type: 'phrasal-verb', meaningAr: 'يدخر', meaningEn: '', egyptianEquivalent: 'يوفر فلوس', exampleInScene: 'I am saving up for a car.' },      { term: 'cost a fortune', type: 'idiom', meaningAr: 'يكلف ثروة', meaningEn: '', egyptianEquivalent: 'بيكلف كتير قوي', exampleInScene: 'That phone costs a fortune.' },      { term: 'tight budget', type: 'collocation', meaningAr: 'ميزانية ضيقة', meaningEn: '', egyptianEquivalent: 'ميزانية مضغوطة', exampleInScene: 'We are on a tight budget.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'it costs a fortune\' mean?', questionAr: 'يعني إيه it costs a fortune؟', options: ['غالي جدًا', 'رخيص جدًا', 'ببلاش', 'سعره عادي'], correctIndex: 0, explanationAr: 'Costs a fortune = غالي أوي - تعبير اصطلاحي شائع في كلام الأسعار.' }
+    ],
+    speakingLines: [{ en: 'I am trying to save up for a new laptop.', arEg: 'بحاول أوفر فلوس عشان أجيب لابتوب جديد.' }, { en: 'I am on a tight budget this month.', arEg: 'أنا مضغوط في الميزانية الشهر ده.' }],
+  },
+  {
+    id: 'hobbies-free-time-jessica',
+    movieTitle: 'Talking About Your Free Time and Hobbies - Daily English Conversation',
+    releaseYear: 2023,
+    director: 'Learn English with Jessica',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'What Do You Do for Fun?',
+    sceneDescription: 'تتكلم عن هواياتك ووقت فراغك: بتحب تعمل إيه ولماذا.',
+    youtubeId: '83P0QWcdHw0',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Jessica (Official)',
+    dialogueQuote: 'What do you like to do in your free time?',
+    actorName: 'Jessica',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/83P0QWcdHw0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Jessica Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'What do you like to do in your free time?', arEg: 'بتحب تعمل إيه في وقت فراغك؟', arFusha: 'بتحب تعمل إيه في وقت فراغك؟', speaker: 'Speaker', keyWords: [{ word: 'free time', ipa: '', meaningAr: 'وقت الفراغ', meaningEn: '' }, { word: 'like to do', ipa: '', meaningAr: 'بتحب تعمل', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'I am really into photography these days.', arEg: 'أنا مهتم بالتصوير جدًا الأيام دي.', arFusha: 'أنا مهتم بالتصوير جدًا الأيام دي.', speaker: 'Speaker', keyWords: [{ word: 'really into', ipa: '', meaningAr: 'مهتم جدًا بـ', meaningEn: '' }, { word: 'these days', ipa: '', meaningAr: 'الأيام دي', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'It helps me relax after a long day.', arEg: 'بيساعدني أرتاح بعد يوم طويل.', arFusha: 'بيساعدني أرتاح بعد يوم طويل.', speaker: 'Speaker', keyWords: [{ word: 'helps me relax', ipa: '', meaningAr: 'بيساعدني أرتاح', meaningEn: '' }, { word: 'a long day', ipa: '', meaningAr: 'يوم طويل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'free time', type: 'collocation', meaningAr: 'وقت فراغ', meaningEn: '', egyptianEquivalent: 'وقت الفراغ', exampleInScene: 'I read in my free time.' },      { term: 'hobby', type: 'cultural', meaningAr: 'هواية', meaningEn: '', egyptianEquivalent: 'هواية', exampleInScene: 'What is your favorite hobby?' },      { term: 'relax', type: 'cultural', meaningAr: 'يسترخي', meaningEn: '', egyptianEquivalent: 'يرتاح / يستجم', exampleInScene: 'Music helps me relax.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask someone about their hobbies?', questionAr: 'تسأل حد عن هواياته إزاي؟', options: ['What do you like to do in your free time?', 'How much money do you make?', 'Where do you work exactly?', 'What is your address?'], correctIndex: 0, explanationAr: 'What do you like to do in your free time? = سؤال الهوايات الكلاسيكي - يفتح أي حوار.' }
+    ],
+    speakingLines: [{ en: 'What do you like to do in your free time?', arEg: 'بتحب تعمل إيه في وقت فراغك؟' }, { en: 'It helps me relax after a long day.', arEg: 'بيساعدني أرتاح بعد يوم طويل.' }],
+  },
+  {
+    id: 'childhood-memories-used-to',
+    movieTitle: 'Childhood Memories - Used to and Didn\'t Use to - American English',
+    releaseYear: 2022,
+    director: 'Listen English',
+    genre: 'Grammar Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Share Your Childhood Memories',
+    sceneDescription: 'تدريب استماع على ذكريات الطفولة مع قاعدة used to بالأمثلة.',
+    youtubeId: 'U9kK_oCoPoA',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Listen English (Official)',
+    dialogueQuote: 'I did not use to like vegetables, but now I love them.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/U9kK_oCoPoA/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Listen English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I did not use to like vegetables, but now I love them.', arEg: 'ماكنتش بحب الخضار، بس دلوقتي بعشقه.', arFusha: 'ماكنتش بحب الخضار، بس دلوقتي بعشقه.', speaker: 'Speaker', keyWords: [{ word: 'did not use to', ipa: '', meaningAr: 'ماكنش بـ', meaningEn: '' }, { word: 'but now', ipa: '', meaningAr: 'بس دلوقتي', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'We used to visit our grandparents every Friday.', arEg: 'كنا بنزور جدونا كل جمعة.', arFusha: 'كنا بنزور جدونا كل جمعة.', speaker: 'Speaker', keyWords: [{ word: 'used to visit', ipa: '', meaningAr: 'كنا بنزور', meaningEn: '' }, { word: 'every Friday', ipa: '', meaningAr: 'كل جمعة', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'My best memory is playing football in the street.', arEg: 'أحلى ذكرى ليا إني كنت بلعب كورة في الشارع.', arFusha: 'أحلى ذكرى ليا إني كنت بلعب كورة في الشارع.', speaker: 'Speaker', keyWords: [{ word: 'best memory', ipa: '', meaningAr: 'أحلى ذكرى', meaningEn: '' }, { word: 'playing football', ipa: '', meaningAr: 'لعب كورة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'did not use to', type: 'cultural', meaningAr: 'لم يعتد أن', meaningEn: '', egyptianEquivalent: 'ماكنش بـ', exampleInScene: 'I did not use to drink coffee.' },      { term: 'memory', type: 'cultural', meaningAr: 'ذكرى', meaningEn: '', egyptianEquivalent: 'ذكرى', exampleInScene: 'I have good memories of school.' },      { term: 'grandparents', type: 'cultural', meaningAr: 'أجداد', meaningEn: '', egyptianEquivalent: 'جدو وتيتة', exampleInScene: 'My grandparents live in the countryside.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you say a past dislike that changed?', questionAr: 'تقول إنك كنت بتكره حاجة وبقيت بتحبها إزاي؟', options: ['I did not use to like it, but now I love it', 'I used not liking it ever', 'I never used to liked it', 'I am not use to like it'], correctIndex: 0, explanationAr: 'Did not use to + مصدر = حاجة ماكنتش بتعملها في الماضي - لاحظ المصدر من غير d.' }
+    ],
+    speakingLines: [{ en: 'I did not use to like vegetables, but now I love them.', arEg: 'ماكنتش بحب الخضار، بس دلوقتي بعشقه.' }, { en: 'We used to visit our grandparents every Friday.', arEg: 'كنا بنزور جدونا كل جمعة.' }],
+  },
 ];
 
 // Helper to get all videos
