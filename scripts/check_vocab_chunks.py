@@ -9,19 +9,24 @@ POS_SET = {"noun","verb","modal verb","adjective","adverb","pronoun","prepositio
 CATS = {"everyday","business","tech","academic","travel","workplace","medical","food","hotel","phrasal_verbs","idioms","collocations"}
 
 def legacy_words():
+    """Verified legacy sets for dedup. TS academy data = reviewed 1,555 (overlaps must be retired
+    by the integrator). Legacy JSON (headword/normalized keys) is unverified bulk that the UI
+    stops rendering; overlaps are informational only. Returns (verified_ts, legacy_json)."""
     import glob
-    words = set()
-    for p in glob.glob('src/data/vocabularyAcademyData.ts') + glob.glob('public/data/vocabulary-*.json'):
+    ts_words, json_words = set(), set()
+    for p in glob.glob('src/data/vocabularyAcademyData.ts'):
         try: txt = open(p, encoding='utf-8').read()
         except OSError: continue
-        if p.endswith('.ts'):
-            words.update(w.lower() for w in re.findall(r'word: "([^"]+)"', txt))
-        else:
-            try:
-                for it in json.loads(txt):
-                    if isinstance(it, dict) and it.get('word'): words.add(str(it['word']).lower())
-            except Exception: pass
-    return words
+        ts_words.update(w.lower() for w in re.findall(r'word: "([^"]+)"', txt))
+    for p in glob.glob('public/data/vocabulary-*.json'):
+        if p.endswith('vocabulary-manifest.json'): continue
+        try:
+            for it in json.load(open(p, encoding='utf-8')):
+                if isinstance(it, dict):
+                    w = it.get('word') or it.get('headword') or it.get('normalized')
+                    if w: json_words.add(str(w).strip().lower())
+        except Exception: pass
+    return ts_words, json_words
 
 def main(tsv, chunks):
     ranks = {}
@@ -32,8 +37,8 @@ def main(tsv, chunks):
         ranks[int(n)] = (lemma, pos, cefr)
     errors = checked = 0
     seen_words = {}
-    legacy = legacy_words()
-    legacy_hits = []
+    legacy_ts, legacy_json = legacy_words()
+    legacy_hits, json_hits = [], set()
     for cp in chunks:
         m = re.search(r'r(\d{5})-(\d{5})\.json$', str(cp))
         if not m:
@@ -65,9 +70,12 @@ def main(tsv, chunks):
             w = str(e.get("word","")).lower()
             if w in seen_words: print(f"ERR {cp}[{i}]: word also in {seen_words[w]}"); errors += 1
             seen_words[w] = cp
-            if w in legacy: legacy_hits.append(w)
+            if w in legacy_ts: legacy_hits.append(w)
+            if w in legacy_json: json_hits.add(w)
     if legacy_hits:
-        print(f"WARNING: {len(legacy_hits)} words also exist in legacy vocab data (integrator retires the legacy copies): {sorted(set(legacy_hits))[:20]}")
+        print(f"WARNING: {len(legacy_hits)} words also exist in VERIFIED legacy TS data (integrator retires the legacy copies): {sorted(set(legacy_hits))[:20]}")
+    if json_hits:
+        print(f"INFO: {len(json_hits)} words also in unverified legacy JSON bulk (stops rendering in overhaul; no action needed)")
     print(f"checked {checked} entries, {errors} errors")
     sys.exit(1 if errors else 0)
 
