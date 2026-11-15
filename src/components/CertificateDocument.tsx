@@ -331,6 +331,10 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
                 color: "#ffd166",
                 fontFamily: "'Segoe Script', 'Brush Script MT', cursive",
                 lineHeight: 1,
+                // Script fonts have deep descenders; padding keeps the
+                // signature line fully below the glyphs (lineHeight must
+                // stay 1 - larger values break html2canvas capture).
+                paddingBottom: 12,
               }}
             >
               Mr. Hinawi
