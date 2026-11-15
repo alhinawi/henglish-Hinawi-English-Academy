@@ -785,17 +785,17 @@
   },
   {
     "id": "voc-w20657",
-    "word": "pul",
+    "word": "undercharge",
     "rank": 20657,
-    "ipa": "/pʊl/",
-    "partOfSpeech": "noun",
-    "meaningAr": "بُل (عملة أفغانية صغيرة)",
+    "ipa": "/ˌʌndərˈtʃɑːrdʒ/",
+    "partOfSpeech": "verb",
+    "meaningAr": "يحاسبه بأقل من المستحق",
     "level": "C2",
     "cefrSrc": "band",
-    "category": "business",
-    "exampleEn": "One afghani equals one hundred pul.",
-    "exampleAr": "الأفغاني الواحد بيساوي مية بُل.",
-    "highlight": "pul"
+    "category": "everyday",
+    "exampleEn": "The taxi driver undercharged us by mistake.",
+    "exampleAr": "سواق التاكسي حاسبنا بأقل من المستحق بالغلط.",
+    "highlight": "undercharged"
   },
   {
     "id": "voc-w20658",
@@ -1289,17 +1289,17 @@
   },
   {
     "id": "voc-w20693",
-    "word": "waw",
+    "word": "ululate",
     "rank": 20693,
-    "ipa": "/wɔː/",
-    "partOfSpeech": "noun",
-    "meaningAr": "حرف الواو (في العبرية والعربية)",
+    "ipa": "/ˈjuːljʊleɪt/",
+    "partOfSpeech": "verb",
+    "meaningAr": "يزغرد / يولول بصوت عالي",
     "level": "C2",
     "cefrSrc": "band",
-    "category": "academic",
-    "exampleEn": "Waw is a letter in the Arabic alphabet.",
-    "exampleAr": "الواو حرف في الأبجدية العربية.",
-    "highlight": "Waw"
+    "category": "everyday",
+    "exampleEn": "The women ululated at the wedding.",
+    "exampleAr": "الستات زغردوا وولولوا في الفرح.",
+    "highlight": "ululated"
   },
   {
     "id": "voc-w20694",
