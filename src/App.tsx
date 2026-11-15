@@ -494,7 +494,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                   <CertificatesPage
                     onNavigate={handleNavigate}
                     userProfile={activeProfile}
-                    completedLessonsCount={progress.completedLessons.length}
+                    completedLessons={progress.completedLessons}
+                    quizScores={progress.quizScores}
                   />
                 )}
 

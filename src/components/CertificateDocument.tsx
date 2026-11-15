@@ -33,7 +33,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
         height: CERT_HEIGHT,
         background:
           "radial-gradient(ellipse 60% 50% at 50% 0%, #232052 0%, #14122e 55%, #0c0b20 100%)",
-        fontFamily: "Georgia, 'Times New Roman', serif",
+        fontFamily: "Georgia, 'Times New Roman', 'AmiriCert', serif",
         position: "relative",
         overflow: "hidden",
         color: "#ffffff",
@@ -162,27 +162,35 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
           This is to proudly certify that
         </div>
 
-        <div
-          style={{
-            marginTop: 10,
-            fontSize: 44,
-            fontWeight: 900,
-            color: "#ffffff",
-            borderBottom: "2px solid rgba(212,175,55,0.5)",
-            padding: "0 36px 6px",
-            lineHeight: 1.15,
-          }}
-        >
-          {cert.studentNameEn}
+        <div style={{ marginTop: 10, padding: "0 36px" }}>
+          <div
+            dir="auto"
+            style={{
+              fontSize: 44,
+              fontWeight: 900,
+              color: "#ffffff",
+              lineHeight: 1.15,
+            }}
+          >
+            {cert.studentNameEn}
+          </div>
+          <div
+            style={{
+              marginTop: 6,
+              height: 2,
+              width: "100%",
+              background: "rgba(212,175,55,0.5)",
+            }}
+          />
         </div>
         <div
-          dir="rtl"
+          dir="auto"
           style={{
             marginTop: 8,
             fontSize: 22,
             fontWeight: 700,
             color: "#ffd166",
-            fontFamily: "Tahoma, Arial, sans-serif",
+            fontFamily: "'AmiriCert', Tahoma, Arial, sans-serif",
           }}
         >
           {cert.studentNameAr}
@@ -218,7 +226,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             fontSize: 14,
             fontWeight: 700,
             color: "#b9b6d5",
-            fontFamily: "Tahoma, Arial, sans-serif",
+            fontFamily: "'AmiriCert', Tahoma, Arial, sans-serif",
           }}
         >
           {cert.courseTitleAr}
@@ -231,8 +239,9 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             fontFamily: "'Courier New', monospace",
           }}
         >
-          CEFR Level: {cert.cefrLevel} • Final Score:{" "}
-          {cert.finalScorePercentage}%
+          CEFR Level: {cert.cefrLevel}
+          {cert.finalScorePercentage != null &&
+            ` • Final Score: ${cert.finalScorePercentage}%`}
         </div>
 
         {/* Bottom row: date, seal, signature */}
@@ -323,9 +332,15 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             </div>
             <div
               style={{
-                borderTop: "1px solid rgba(255,255,255,0.4)",
                 marginTop: 6,
-                paddingTop: 4,
+                height: 1,
+                width: "100%",
+                background: "rgba(255,255,255,0.4)",
+              }}
+            />
+            <div
+              style={{
+                marginTop: 4,
                 fontSize: 11,
                 color: "#b9b6d5",
                 letterSpacing: 2,
@@ -361,7 +376,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             marginTop: 6,
             fontSize: 10,
             color: "rgba(185,182,213,0.7)",
-            fontFamily: "Tahoma, Arial, sans-serif",
+            fontFamily: "'AmiriCert', Tahoma, Arial, sans-serif",
           }}
         >
           تنويه: هذه الشهادة توثق الإنجاز الأكاديمي الداخلي لمقررات منصة
