@@ -27,7 +27,7 @@ interface AuthModalProps {
   isOpen: boolean;
   onClose: () => void;
   onSessionChange: (newSession: AuthSessionState) => void;
-  initialTab?: 'login' | 'register' | 'demo' | 'migrate';
+  initialTab?: 'login' | 'register' | 'migrate';
 }
 
 export const AuthModal: React.FC<AuthModalProps> = ({
