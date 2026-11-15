@@ -425,7 +425,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-indigo-500/10 text-indigo-300 border-indigo-500/20 hover:bg-indigo-500/20'
                 }`}
               >
-                <div className="text-xs font-black">B2 • فوق متوسط</div>
+                <div className="text-xs font-black">B2 • فوق المتوسط</div>
                 <div className="text-[11px] opacity-80">1,050 جملة</div>
               </button>
 

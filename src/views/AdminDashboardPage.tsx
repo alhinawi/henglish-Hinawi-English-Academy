@@ -652,9 +652,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#41e7ff]"
                 >
                   <option value="A1">A1 - مبتدئ</option>
-                  <option value="A2">A2 - فوق المبتدئ</option>
+                  <option value="A2">A2 - أساسي</option>
                   <option value="B1">B1 - متوسط</option>
-                  <option value="B2">B2 - فوق متوسط</option>
+                  <option value="B2">B2 - فوق المتوسط</option>
                   <option value="C1">C1 - متقدم</option>
                 </select>
               </div>
