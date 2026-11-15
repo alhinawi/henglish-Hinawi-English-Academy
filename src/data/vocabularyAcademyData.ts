@@ -17510,9 +17510,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "trust",
     collocation: "build trust",
   },
-];
-
-export const VOCABULARY_ACADEMY_WORDS: VocabWord[] = [...VOCAB_A, ...VOCAB_B, ...VOCAB_C    // ==== B5 deck 25 - C1 Academic III ====
+    // ==== B5 deck 25 - C1 Academic III ====
   {
     id: "voc-u25-1",
     word: "acquire",
@@ -17840,3 +17838,4 @@ export const VOCABULARY_ACADEMY_WORDS: VocabWord[] = [...VOCAB_A, ...VOCAB_B, ..
   },
 ];
 
+export const VOCABULARY_ACADEMY_WORDS: VocabWord[] = [...VOCAB_A, ...VOCAB_B, ...VOCAB_C];
