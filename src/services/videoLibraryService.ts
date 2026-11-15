@@ -9683,6 +9683,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'I need to refill my prescription, please.', arEg: 'محتاج أجدد الروشتة بتاعتي لو سمحت.' }, { en: 'Is it covered by my insurance?', arEg: 'ده مغطى بالتأمين بتاعي؟' }],
   },
+  {
+    id: 'interview-hardest-5-careervidz',
+    movieTitle: 'TOP 5 Hardest Interview Questions and Top-Scoring Answers - CareerVidz',
+    releaseYear: 2022,
+    director: 'CareerVidz',
+    genre: 'Job Interview',
+    cefrLevel: 'B2',
+    sceneTitle: 'Answer the Impossible Questions',
+    sceneDescription: 'أصعب ٥ أسئلة مقابلة شخصية وإجاباتها المثالية: نقاط ضعفك وراتبك المتوقع.',
+    youtubeId: 'WOHFlwYV210',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'CareerVidz (Official)',
+    dialogueQuote: 'My greatest weakness is that I sometimes take on too much work.',
+    actorName: 'Richard McMunn',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/WOHFlwYV210/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'CareerVidz Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'My greatest weakness is that I sometimes take on too much work.', arEg: 'أكبر نقطة ضعف عندي إني أحيانًا بحمل نفسي شغل كتير.', arFusha: 'أكبر نقطة ضعف عندي إني أحيانًا بحمل نفسي شغل كتير.', speaker: 'Instructor', keyWords: [{ word: 'greatest weakness', ipa: '', meaningAr: 'أكبر نقطة ضعف', meaningEn: '' }, { word: 'take on', ipa: '', meaningAr: 'أتحمل / أاخد على عاتقي', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I see myself growing within this company over the next five years.', arEg: 'شايف نفسي بكبر جوه الشركة دي على مدار الخمس سنين الجايين.', arFusha: 'شايف نفسي بكبر جوه الشركة دي على مدار الخمس سنين الجايين.', speaker: 'Instructor', keyWords: [{ word: 'see myself', ipa: '', meaningAr: 'شايف نفسي', meaningEn: '' }, { word: 'over the next five years', ipa: '', meaningAr: 'على مدار الخمس سنين الجاية', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Based on my research, the average salary for this role is...', arEg: 'بناءً على بحثي، متوسط المرتب للوظيفة دي هو...', arFusha: 'بناءً على بحثي، متوسط المرتب للوظيفة دي هو...', speaker: 'Instructor', keyWords: [{ word: 'based on my research', ipa: '', meaningAr: 'بناءً على بحثي', meaningEn: '' }, { word: 'average salary', ipa: '', meaningAr: 'متوسط المرتب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'weakness', type: 'cultural', meaningAr: 'نقطة ضعف', meaningEn: '', egyptianEquivalent: 'نقطة ضعف', exampleInScene: 'Everyone has a weakness.' },      { term: 'take on', type: 'phrasal-verb', meaningAr: 'يتحمل', meaningEn: '', egyptianEquivalent: 'ياخد على عاتقه', exampleInScene: 'Do not take on too much.' },      { term: 'salary expectations', type: 'collocation', meaningAr: 'توقعات الراتب', meaningEn: '', egyptianEquivalent: 'المرتب المتوقع', exampleInScene: 'What are your salary expectations?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the safest answer about your weakness?', questionAr: 'إيه أأمن إجابة عن نقطة ضعفك؟', options: ['نقطة ضعف حقيقية + إزاي بتتعامل معاها', 'مفيش عندي نقاط ضعف', 'أنا كسول جدًا', 'بحب أنام في الشغل'], correctIndex: 0, explanationAr: 'القاعدة الذهبية: اذكر ضعف حقيقي + خطوات عملية بتحسنه بيها - أبدًا مثالية مزيفة.' }
+    ],
+    speakingLines: [{ en: 'I see myself growing within this company over the next five years.', arEg: 'شايف نفسي بكبر جوه الشركة دي على مدار الخمس سنين الجايين.' }, { en: 'Based on my research, the average salary for this role is...', arEg: 'بناءً على بحثي، متوسط المرتب للوظيفة دي هو...' }],
+  },
+  {
+    id: 'interview-8-hardest-cass',
+    movieTitle: 'How to Answer the 8 Hardest Interview Questions - Cass Thompson',
+    releaseYear: 2022,
+    director: 'Cass Thompson Career Advice',
+    genre: 'Job Interview',
+    cefrLevel: 'B2',
+    sceneTitle: 'Tell Me About Yourself',
+    sceneDescription: 'كاس بتحلل أصعب ٨ أسئلة: حكي عن نفسك، ليه سيبت شغلك، وليه نعينك.',
+    youtubeId: 'bxqNBmnCkgY',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Cass Thompson Career Advice (Official)',
+    dialogueQuote: 'Why should we hire you over the other candidates?',
+    actorName: 'Cass Thompson',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/bxqNBmnCkgY/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Cass Thompson Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Why should we hire you over the other candidates?', arEg: 'ليه نعينك انت بدل المرشحين التانيين؟', arFusha: 'ليه نعينك انت بدل المرشحين التانيين؟', speaker: 'Instructor', keyWords: [{ word: 'hire', ipa: '', meaningAr: 'نعين', meaningEn: '' }, { word: 'candidates', ipa: '', meaningAr: 'مرشحين', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I left my last job because I was looking for new challenges.', arEg: 'سيبت شغلي اللي فات عشان كنت بدور على تحديات جديدة.', arFusha: 'سيبت شغلي اللي فات عشان كنت بدور على تحديات جديدة.', speaker: 'Instructor', keyWords: [{ word: 'left my job', ipa: '', meaningAr: 'سيبت شغلي', meaningEn: '' }, { word: 'looking for', ipa: '', meaningAr: 'بدور على', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'I bring five years of hands-on experience in digital marketing.', arEg: 'معايا خمس سنين خبرة عملية في التسويق الرقمي.', arFusha: 'معايا خمس سنين خبرة عملية في التسويق الرقمي.', speaker: 'Instructor', keyWords: [{ word: 'bring', ipa: '', meaningAr: 'معايا / أقدم', meaningEn: '' }, { word: 'hands-on experience', ipa: '', meaningAr: 'خبرة عملية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'hire', type: 'cultural', meaningAr: 'يوظف', meaningEn: '', egyptianEquivalent: 'يعين (موظف)', exampleInScene: 'They hired twenty people.' },      { term: 'candidate', type: 'cultural', meaningAr: 'مرشح', meaningEn: '', egyptianEquivalent: 'مرشح للوظيفة', exampleInScene: 'She is the best candidate.' },      { term: 'hands-on', type: 'cultural', meaningAr: 'عملي', meaningEn: '', egyptianEquivalent: 'عملي (خبرة)', exampleInScene: 'I prefer hands-on learning.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Why did you leave your last job? Best answer:', questionAr: 'ليه سيبت شغلك القديم؟ أحسن إجابة:', options: ['I was looking for new challenges.', 'My boss was terrible.', 'They paid me nothing.', 'I got fired honestly.'], correctIndex: 0, explanationAr: 'ركز على المستقبل مش الماضي: تحديات جديدة - أبدًا متشتمش مديرك القديم.' }
+    ],
+    speakingLines: [{ en: 'Why should we hire you over the other candidates?', arEg: 'ليه نعينك انت بدل المرشحين التانيين؟' }, { en: 'I bring five years of hands-on experience in digital marketing.', arEg: 'معايا خمس سنين خبرة عملية في التسويق الرقمي.' }],
+  },
+  {
+    id: 'coffee-shop-ordering-together',
+    movieTitle: 'Ordering at a Coffee Shop - English Speaking Practice - English Together',
+    releaseYear: 2023,
+    director: 'English Together',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Order Your Perfect Coffee',
+    sceneDescription: 'تطلب قهوتك زي المحترفين: الحجم، اللبن، السكر، والسفري ولا محلي.',
+    youtubeId: '9nq9ocivltk',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'English Together (Official)',
+    dialogueQuote: 'Can I get a medium latte with oat milk, please?',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/9nq9ocivltk/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Together Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'Can I get a medium latte with oat milk, please?', arEg: 'ممكن لاتيه وسط بلبن الشوفان لو سمحت؟', arFusha: 'ممكن لاتيه وسط بلبن الشوفان لو سمحت؟', speaker: 'Customer', keyWords: [{ word: 'latte', ipa: '', meaningAr: 'لاتيه', meaningEn: '' }, { word: 'oat milk', ipa: '', meaningAr: 'لبن شوفان', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'For here or to go?', arEg: 'هنا ولا تيك أواي؟', arFusha: 'هنا ولا تيك أواي؟', speaker: 'Barista', keyWords: [{ word: 'for here', ipa: '', meaningAr: 'هنا', meaningEn: '' }, { word: 'to go', ipa: '', meaningAr: 'تيك أواي', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'That will be four fifty. Anything else?', arEg: 'ده هيكلف ٤.٥٠. أي حاجة تانية؟', arFusha: 'ده هيكلف ٤.٥٠. أي حاجة تانية؟', speaker: 'Barista', keyWords: [{ word: 'that will be', ipa: '', meaningAr: 'ده هيكلف', meaningEn: '' }, { word: 'anything else', ipa: '', meaningAr: 'أي حاجة تانية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'for here or to go', type: 'collocation', meaningAr: 'هنا أم للخارج', meaningEn: '', egyptianEquivalent: 'هنا ولا سفري', exampleInScene: 'Is that for here or to go?' },      { term: 'anything else', type: 'collocation', meaningAr: 'أي شيء آخر', meaningEn: '', egyptianEquivalent: 'أي حاجة تانية', exampleInScene: 'Would you like anything else?' },      { term: 'whipped cream', type: 'collocation', meaningAr: 'كريمة مخفوقة', meaningEn: '', egyptianEquivalent: 'كريمة شانتيه', exampleInScene: 'With whipped cream on top.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'for here or to go?\' mean?', questionAr: 'يعني إيه for here or to go؟', options: ['هتقعد في المحل ولا تاخده معاك؟', 'هتدفع كاش ولا كارت؟', 'عايز سكر ولا لأ؟', 'جاي لوحدك ولا مع حد؟'], correctIndex: 0, explanationAr: 'For here = هتقعد، To go = تيك أواي - أول سؤال هتسمعه في أي كافيه.' }
+    ],
+    speakingLines: [{ en: 'Can I get a medium latte with oat milk, please?', arEg: 'ممكن لاتيه وسط بلبن الشوفان لو سمحت؟' }, { en: 'That will be four fifty. Anything else?', arEg: 'ده هيكلف ٤.٥٠. أي حاجة تانية؟' }],
+  },
+  {
+    id: 'order-coffee-smashing',
+    movieTitle: 'How to Order a Coffee in English - Come to 5 Coffee Shops - Smashing English',
+    releaseYear: 2023,
+    director: 'Smashing English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Five Real Coffee Orders',
+    sceneDescription: '٥ طلبات قهوة حقيقية من كافيهات مختلفة - كل موقف وردوده.',
+    youtubeId: 'T0uL6vJ1LsY',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Smashing English (Official)',
+    dialogueQuote: 'Could I have an iced americano with an extra shot?',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/T0uL6vJ1LsY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Smashing English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Could I have an iced americano with an extra shot?', arEg: 'ممكن أمريكانو ساقع بشوت زيادة؟', arFusha: 'ممكن أمريكانو ساقع بشوت زيادة؟', speaker: 'Customer', keyWords: [{ word: 'iced', ipa: '', meaningAr: 'ساقع', meaningEn: '' }, { word: 'extra shot', ipa: '', meaningAr: 'شوت زيادة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Would you like any syrup with that?', arEg: 'تحب أي سيرب معاه؟', arFusha: 'تحب أي سيرب معاه؟', speaker: 'Barista', keyWords: [{ word: 'syrup', ipa: '', meaningAr: 'سيرب / شربات', meaningEn: '' }, { word: 'with that', ipa: '', meaningAr: 'معاه', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Just a little bit of caramel, please.', arEg: 'شوية كراميل بس لو سمحت.', arFusha: 'شوية كراميل بس لو سمحت.', speaker: 'Customer', keyWords: [{ word: 'a little bit of', ipa: '', meaningAr: 'شوية من', meaningEn: '' }, { word: 'caramel', ipa: '', meaningAr: 'كراميل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'iced', type: 'cultural', meaningAr: 'مثلج', meaningEn: '', egyptianEquivalent: 'ساقع', exampleInScene: 'I love iced coffee in summer.' },      { term: 'extra shot', type: 'collocation', meaningAr: 'جرعة إضافية', meaningEn: '', egyptianEquivalent: 'شوت زيادة', exampleInScene: 'Add an extra shot, please.' },      { term: 'decaf', type: 'cultural', meaningAr: 'منزوع الكافيين', meaningEn: '', egyptianEquivalent: 'ديكاف', exampleInScene: 'One decaf cappuccino, please.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you order coffee with more caffeine?', questionAr: 'تطلب قهوة بكافيين زيادة إزاي؟', options: ['With an extra shot, please', 'Make it angry please', 'Double the cup size', 'More water in it'], correctIndex: 0, explanationAr: 'Extra shot = شوت إسبريسو زيادة - أشهر طلب تعديل في أي كافيه.' }
+    ],
+    speakingLines: [{ en: 'Could I have an iced americano with an extra shot?', arEg: 'ممكن أمريكانو ساقع بشوت زيادة؟' }, { en: 'Just a little bit of caramel, please.', arEg: 'شوية كراميل بس لو سمحت.' }],
+  },
+  {
+    id: 'customs-questions-ross-ielts',
+    movieTitle: 'English for the Most Common Airport Customs Questions - Ross IELTS Academy',
+    releaseYear: 2023,
+    director: 'Ross IELTS Academy',
+    genre: 'Travel English',
+    cefrLevel: 'B1',
+    sceneTitle: 'Pass Immigration Smoothly',
+    sceneDescription: 'أسئلة الجوازات والجمارك الشائعة وردودها الجاهزة: الغرض من الزيارة ومدتها.',
+    youtubeId: 'd_tYKBoOmHM',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Ross IELTS Academy (Official)',
+    dialogueQuote: 'What is the purpose of your visit?',
+    actorName: 'Host',
+    characterName: 'Officer',
+    thumbnailUrl: 'https://img.youtube.com/vi/d_tYKBoOmHM/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Ross IELTS Academy Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'What is the purpose of your visit?', arEg: 'إيه الغرض من زيارتك؟', arFusha: 'إيه الغرض من زيارتك؟', speaker: 'Officer', keyWords: [{ word: 'purpose', ipa: '', meaningAr: 'الغرض', meaningEn: '' }, { word: 'visit', ipa: '', meaningAr: 'زيارة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I am here on vacation for two weeks.', arEg: 'أنا هنا في أجازة لمدة أسبوعين.', arFusha: 'أنا هنا في أجازة لمدة أسبوعين.', speaker: 'Traveler', keyWords: [{ word: 'on vacation', ipa: '', meaningAr: 'في أجازة', meaningEn: '' }, { word: 'for two weeks', ipa: '', meaningAr: 'لمدة أسبوعين', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Where will you be staying during your trip?', arEg: 'هتقيم فين طول فترة رحلتك؟', arFusha: 'هتقيم فين طول فترة رحلتك؟', speaker: 'Officer', keyWords: [{ word: 'staying', ipa: '', meaningAr: 'مقيم', meaningEn: '' }, { word: 'during', ipa: '', meaningAr: 'طول فترة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'purpose', type: 'cultural', meaningAr: 'غرض', meaningEn: '', egyptianEquivalent: 'غرض / هدف', exampleInScene: 'What is the purpose of your trip?' },      { term: 'customs', type: 'cultural', meaningAr: 'جمارك', meaningEn: '', egyptianEquivalent: 'جمارك', exampleInScene: 'We passed through customs quickly.' },      { term: 'declare', type: 'cultural', meaningAr: 'يصرح', meaningEn: '', egyptianEquivalent: 'يصرح (في الجمارك)', exampleInScene: 'Do you have anything to declare?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'The officer asks about your trip goal. You answer:', questionAr: 'الضابط بيسأل عن هدف رحلتك. ترد:', options: ['I am here on vacation for two weeks.', 'It is a secret mission', 'Why do you care?', 'I do not know yet'], correctIndex: 0, explanationAr: 'جاوب مباشر وواضح: vacation / business / study - ومتزودش تفاصيل من عندك.' }
+    ],
+    speakingLines: [{ en: 'What is the purpose of your visit?', arEg: 'إيه الغرض من زيارتك؟' }, { en: 'I am here on vacation for two weeks.', arEg: 'أنا هنا في أجازة لمدة أسبوعين.' }],
+  },
+  {
+    id: 'immigration-10-questions',
+    movieTitle: '10 Customs and Immigration Questions at the Airport - Portable Professional',
+    releaseYear: 2023,
+    director: 'Portable Professional',
+    genre: 'Travel English',
+    cefrLevel: 'B1',
+    sceneTitle: 'Every Question You Will Hear',
+    sceneDescription: 'أهم ١٠ أسئلة في الجوازات: محل الإقامة، الفلوس، وتذكرة العودة.',
+    youtubeId: 'mWqdZZpPdFA',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Portable Professional (Official)',
+    dialogueQuote: 'How long do you intend to stay in the country?',
+    actorName: 'Host',
+    characterName: 'Officer',
+    thumbnailUrl: 'https://img.youtube.com/vi/mWqdZZpPdFA/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Portable Professional Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'How long do you intend to stay in the country?', arEg: 'نوي تقعد في البلد قد إيه؟', arFusha: 'نوي تقعد في البلد قد إيه؟', speaker: 'Officer', keyWords: [{ word: 'intend to', ipa: '', meaningAr: 'نوي', meaningEn: '' }, { word: 'stay', ipa: '', meaningAr: 'يقعد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I have a return ticket for the fifteenth of May.', arEg: 'معايا تذكرة عودة يوم ١٥ مايو.', arFusha: 'معايا تذكرة عودة يوم ١٥ مايو.', speaker: 'Traveler', keyWords: [{ word: 'return ticket', ipa: '', meaningAr: 'تذكرة عودة', meaningEn: '' }, { word: 'for the fifteenth', ipa: '', meaningAr: 'يوم ١٥', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Do you have sufficient funds for your stay?', arEg: 'معاك فلوس كفاية لفترة إقامتك؟', arFusha: 'معاك فلوس كفاية لفترة إقامتك؟', speaker: 'Officer', keyWords: [{ word: 'sufficient funds', ipa: '', meaningAr: 'فلوس كفاية', meaningEn: '' }, { word: 'for your stay', ipa: '', meaningAr: 'لإقامتك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'intend', type: 'cultural', meaningAr: 'ينوي', meaningEn: '', egyptianEquivalent: 'نوي', exampleInScene: 'I intend to stay one week.' },      { term: 'return ticket', type: 'collocation', meaningAr: 'تذكرة ذهاب وعودة', meaningEn: '', egyptianEquivalent: 'تذكرة عودة', exampleInScene: 'Show your return ticket.' },      { term: 'sufficient', type: 'cultural', meaningAr: 'كافٍ', meaningEn: '', egyptianEquivalent: 'كفاية', exampleInScene: 'Do you have sufficient funds?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'sufficient funds\' mean?', questionAr: 'يعني إيه sufficient funds؟', options: ['فلوس كفاية لتغطية إقامتك', 'حساب بنكي ضخم', 'كروت ائتمان كتير', 'فلوس للتسوق'], correctIndex: 0, explanationAr: 'Sufficient funds = إثبات إنك قادر تصرف على نفسك طول الرحلة - سؤال جوازات ثابت.' }
+    ],
+    speakingLines: [{ en: 'How long do you intend to stay in the country?', arEg: 'نوي تقعد في البلد قد إيه؟' }, { en: 'I have a return ticket for the fifteenth of May.', arEg: 'معايا تذكرة عودة يوم ١٥ مايو.' }],
+  },
+  {
+    id: 'small-talk-party-upgrade',
+    movieTitle: 'How to Make Small Talk at a Party - English Speaking Practice',
+    releaseYear: 2023,
+    director: 'Upgrade English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Break the Ice at Any Party',
+    sceneDescription: 'تكسر الجليد في أي تجمع: تعرف بنفسك، تسأل أسئلة مفتوحة، وتنهي الحوار بلطف.',
+    youtubeId: 'SeorKAiyJcA',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Upgrade English (Official)',
+    dialogueQuote: 'So, how do you know the host?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/SeorKAiyJcA/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Upgrade English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'So, how do you know the host?', arEg: 'طيب، تعرف صاحب الحفلة منين؟', arFusha: 'طيب، تعرف صاحب الحفلة منين؟', speaker: 'Speaker', keyWords: [{ word: 'how do you know', ipa: '', meaningAr: 'بتعرف... منين', meaningEn: '' }, { word: 'host', ipa: '', meaningAr: 'صاحب الحفلة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'We used to work together at the same company.', arEg: 'كنا بنشتغل مع بعض في نفس الشركة.', arFusha: 'كنا بنشتغل مع بعض في نفس الشركة.', speaker: 'Speaker', keyWords: [{ word: 'used to work together', ipa: '', meaningAr: 'كنا بنشتغل مع بعض', meaningEn: '' }, { word: 'same company', ipa: '', meaningAr: 'نفس الشركة', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'It was lovely meeting you. Let us keep in touch!', arEg: 'كان من دواعي سروري أتعرف عليك. خلينا على تواصل!', arFusha: 'كان من دواعي سروري أتعرف عليك. خلينا على تواصل!', speaker: 'Speaker', keyWords: [{ word: 'lovely meeting you', ipa: '', meaningAr: 'تشرفت بيك', meaningEn: '' }, { word: 'keep in touch', ipa: '', meaningAr: 'نفضل على تواصل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'break the ice', type: 'idiom', meaningAr: 'يكسر الجليد', meaningEn: '', egyptianEquivalent: 'يكسر حاجز الخجل', exampleInScene: 'A joke can break the ice.' },      { term: 'host', type: 'cultural', meaningAr: 'مضيف', meaningEn: '', egyptianEquivalent: 'صاحب الحفلة', exampleInScene: 'Thank the host before leaving.' },      { term: 'keep in touch', type: 'collocation', meaningAr: 'البقاء على تواصل', meaningEn: '', egyptianEquivalent: 'نفضل على تواصل', exampleInScene: 'Let us keep in touch!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the best opening question at a party?', questionAr: 'أحسن سؤال افتتاحي في حفلة؟', options: ['So, how do you know the host?', 'How much do you earn?', 'Why are you standing alone?', 'When are you leaving?'], correctIndex: 0, explanationAr: 'How do you know the host? = سؤال ذهبي: طبيعي، سهل، وبيعرفك العلاقة المشتركة.' }
+    ],
+    speakingLines: [{ en: 'So, how do you know the host?', arEg: 'طيب، تعرف صاحب الحفلة منين؟' }, { en: 'It was lovely meeting you. Let us keep in touch!', arEg: 'كان من دواعي سروري أتعرف عليك. خلينا على تواصل!' }],
+  },
+  {
+    id: 'small-talk-business-maria',
+    movieTitle: 'Improve Your Small Talk Skills - Business English Conversation - Maria Sheeran',
+    releaseYear: 2023,
+    director: 'Maria Sheeran',
+    genre: 'Business English',
+    cefrLevel: 'B1',
+    sceneTitle: 'Network Like a Professional',
+    sceneDescription: 'سمال توك في بيئة الشغل: قبل الاجتماع، في الفسحة، وفي المؤتمرات.',
+    youtubeId: 'fV2e729k-cs',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Maria Sheeran (Official)',
+    dialogueQuote: 'How has your week been so far?',
+    actorName: 'Maria Sheeran',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/fV2e729k-cs/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Maria Sheeran Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'How has your week been so far?', arEg: 'أسبوعك عامل إيه لحد دلوقتي؟', arFusha: 'أسبوعك عامل إيه لحد دلوقتي؟', speaker: 'Instructor', keyWords: [{ word: 'how has... been', ipa: '', meaningAr: 'عامل إيه', meaningEn: '' }, { word: 'so far', ipa: '', meaningAr: 'لحد دلوقتي', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Busy as usual, but I cannot complain.', arEg: 'زحمة زي العادة، بس مفيش شكوى.', arFusha: 'زحمة زي العادة، بس مفيش شكوى.', speaker: 'Instructor', keyWords: [{ word: 'busy as usual', ipa: '', meaningAr: 'زحمة زي العادة', meaningEn: '' }, { word: 'cannot complain', ipa: '', meaningAr: 'مفيش شكوى', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Have you got any plans for the weekend?', arEg: 'عندك أي خطط للويك إند؟', arFusha: 'عندك أي خطط للويك إند؟', speaker: 'Instructor', keyWords: [{ word: 'any plans', ipa: '', meaningAr: 'أي خطط', meaningEn: '' }, { word: 'for the weekend', ipa: '', meaningAr: 'للويك إند', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'small talk', type: 'collocation', meaningAr: 'حديث جانبي', meaningEn: '', egyptianEquivalent: 'كلام خفيف اجتماعي', exampleInScene: 'Small talk opens doors.' },      { term: 'cannot complain', type: 'idiom', meaningAr: 'لا أستطيع الشكوى', meaningEn: '', egyptianEquivalent: 'الحمد لله تمام', exampleInScene: 'Work is fine, cannot complain.' },      { term: 'so far', type: 'collocation', meaningAr: 'حتى الآن', meaningEn: '', egyptianEquivalent: 'لحد دلوقتي', exampleInScene: 'How is your day so far?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is a safe small-talk question at work?', questionAr: 'أنهي سؤال سمال توك آمن في الشغل؟', options: ['Have you got any plans for the weekend?', 'Why is your salary low?', 'Who do you hate here?', 'Is the boss crazy?'], correctIndex: 0, explanationAr: 'خطط الويك إند = موضوع آمن وإيجابي - بيفتح حوار من غير أي إحراج.' }
+    ],
+    speakingLines: [{ en: 'How has your week been so far?', arEg: 'أسبوعك عامل إيه لحد دلوقتي؟' }, { en: 'Busy as usual, but I cannot complain.', arEg: 'زحمة زي العادة، بس مفيش شكوى.' }],
+  },
+  {
+    id: 'phone-screen-repair-afterclass',
+    movieTitle: 'Fixing a Phone Screen - Real-Life English Conversation - AfterClass English',
+    releaseYear: 2023,
+    director: 'AfterClass English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Get Your Phone Fixed',
+    sceneDescription: 'موبايلك وقع واتكسر؟ حوار محل الموبايلات: السعر، المدة، والضمان.',
+    youtubeId: 'hMBHeuQbpZ4',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'AfterClass English (Official)',
+    dialogueQuote: 'How much would it cost to replace the screen?',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/hMBHeuQbpZ4/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'AfterClass English Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'How much would it cost to replace the screen?', arEg: 'هيكلف كام تغيير الشاشة؟', arFusha: 'هيكلف كام تغيير الشاشة؟', speaker: 'Customer', keyWords: [{ word: 'cost', ipa: '', meaningAr: 'يكلف', meaningEn: '' }, { word: 'replace the screen', ipa: '', meaningAr: 'تغيير الشاشة', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'It should be ready by tomorrow afternoon.', arEg: 'المفروض يكون جاهز بكرة الضهر.', arFusha: 'المفروض يكون جاهز بكرة الضهر.', speaker: 'Technician', keyWords: [{ word: 'should be ready', ipa: '', meaningAr: 'المفروض يكون جاهز', meaningEn: '' }, { word: 'by tomorrow afternoon', ipa: '', meaningAr: 'بكرة الضهر', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'Does the repair come with a warranty?', arEg: 'التصليح عليه ضمان؟', arFusha: 'التصليح عليه ضمان؟', speaker: 'Customer', keyWords: [{ word: 'repair', ipa: '', meaningAr: 'تصليح', meaningEn: '' }, { word: 'warranty', ipa: '', meaningAr: 'ضمان', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'replace', type: 'cultural', meaningAr: 'يستبدل', meaningEn: '', egyptianEquivalent: 'يغير (قطعة)', exampleInScene: 'They replaced my battery.' },      { term: 'warranty', type: 'cultural', meaningAr: 'ضمان', meaningEn: '', egyptianEquivalent: 'ضمان', exampleInScene: 'The phone is still under warranty.' },      { term: 'charge', type: 'cultural', meaningAr: 'يتقاضى', meaningEn: '', egyptianEquivalent: 'يحاسب', exampleInScene: 'How much do you charge?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about repair time?', questionAr: 'تسأل عن مدة التصليح إزاي؟', options: ['When should it be ready?', 'Give it back now', 'Why so slow?', 'Fix it in one minute'], correctIndex: 0, explanationAr: 'When should it be ready? = سؤال مهذب وواضح عن موعد التسليم.' }
+    ],
+    speakingLines: [{ en: 'How much would it cost to replace the screen?', arEg: 'هيكلف كام تغيير الشاشة؟' }, { en: 'Does the repair come with a warranty?', arEg: 'التصليح عليه ضمان؟' }],
+  },
+  {
+    id: 'climate-change-talk-success',
+    movieTitle: 'How to Talk About Climate Change in English - English Speaking Success',
+    releaseYear: 2022,
+    director: 'English Speaking Success',
+    genre: 'Academic English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Discuss the Environment',
+    sceneDescription: 'مفردات البيئة والمناخ للنقاشات والامتحانات: انبعاثات، طاقة متجددة، واستدامة.',
+    youtubeId: 'vjZnUl3OkCI',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English Speaking Success (Official)',
+    dialogueQuote: 'We need to reduce our carbon footprint before it is too late.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/vjZnUl3OkCI/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking Success Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'We need to reduce our carbon footprint before it is too late.', arEg: 'لازم نقلل البصمة الكربونية بتاعتنا قبل ما يفوت الأوان.', arFusha: 'لازم نقلل البصمة الكربونية بتاعتنا قبل ما يفوت الأوان.', speaker: 'Speaker', keyWords: [{ word: 'reduce', ipa: '', meaningAr: 'نقلل', meaningEn: '' }, { word: 'carbon footprint', ipa: '', meaningAr: 'بصمة كربونية', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Renewable energy is becoming cheaper every year.', arEg: 'الطاقة المتجددة بترخص كل سنة.', arFusha: 'الطاقة المتجددة بترخص كل سنة.', speaker: 'Speaker', keyWords: [{ word: 'renewable energy', ipa: '', meaningAr: 'طاقة متجددة', meaningEn: '' }, { word: 'becoming cheaper', ipa: '', meaningAr: 'بترخص', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Small changes in our daily habits can make a big difference.', arEg: 'تغييرات صغيرة في عاداتنا اليومية ممكن تعمل فرق كبير.', arFusha: 'تغييرات صغيرة في عاداتنا اليومية ممكن تعمل فرق كبير.', speaker: 'Speaker', keyWords: [{ word: 'daily habits', ipa: '', meaningAr: 'عادات يومية', meaningEn: '' }, { word: 'make a difference', ipa: '', meaningAr: 'تعمل فرق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'carbon footprint', type: 'collocation', meaningAr: 'بصمة كربونية', meaningEn: '', egyptianEquivalent: 'بصمة كربونية', exampleInScene: 'Flying increases your carbon footprint.' },      { term: 'renewable', type: 'cultural', meaningAr: 'متجدد', meaningEn: '', egyptianEquivalent: 'متجدد', exampleInScene: 'Solar power is renewable.' },      { term: 'make a difference', type: 'idiom', meaningAr: 'يحدث فرقًا', meaningEn: '', egyptianEquivalent: 'تعمل فرق', exampleInScene: 'Every little bit makes a difference.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'carbon footprint\' mean?', questionAr: 'يعني إيه carbon footprint؟', options: ['تأثيرك البيئي من انبعاثات الكربون', 'أثر رجليك على الرمل', 'نوع من الأحذية', 'فاتورة الكهربا'], correctIndex: 0, explanationAr: 'Carbon footprint = مجموع الانبعاثات اللي بتسبب فيها - كلمة أساسية في أي نقاش بيئي.' }
+    ],
+    speakingLines: [{ en: 'We need to reduce our carbon footprint before it is too late.', arEg: 'لازم نقلل البصمة الكربونية بتاعتنا قبل ما يفوت الأوان.' }, { en: 'Small changes in our daily habits can make a big difference.', arEg: 'تغييرات صغيرة في عاداتنا اليومية ممكن تعمل فرق كبير.' }],
+  },
 ];
 
 // Helper to get all videos
