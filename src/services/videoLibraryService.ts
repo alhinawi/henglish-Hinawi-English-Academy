@@ -10733,6 +10733,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Excuse me, this is not what I ordered.', arEg: 'لو سمحت، ده مش اللي أنا طلبته.' }, { en: 'I am so sorry. I will fix it right away.', arEg: 'متأسف جدًا. هصلحه حالاً.' }],
   },
+  {
+    id: 'friends-monica-chandler-debate-fluentu',
+    movieTitle: 'Learn English with TV: Friends - Monica and Chandler\'s Debate',
+    releaseYear: 2023,
+    director: 'FluentU English',
+    genre: 'TV Sitcom',
+    cefrLevel: 'B1',
+    sceneTitle: 'Monica and Chandler\'s Debate',
+    sceneDescription: 'مشهد كوميدي من فريندز: نقاش حاد بين مونيكا وتشاندلر بأسلوب سريع وطبيعي.',
+    youtubeId: 'M8iJlfCENfc',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'FluentU English (Official)',
+    dialogueQuote: 'Could this be any more ridiculous?',
+    actorName: 'Matthew Perry',
+    characterName: 'Chandler Bing',
+    thumbnailUrl: 'https://img.youtube.com/vi/M8iJlfCENfc/hqdefault.jpg',
+    category: 'sitcoms',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'FluentU English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'You are not going to believe what happened today.', arEg: 'مش هتصدق اللي حصل النهارده.', arFusha: 'مش هتصدق اللي حصل النهارده.', speaker: 'Monica', keyWords: [{ word: 'not going to believe', ipa: '', meaningAr: 'مش هتصدق', meaningEn: '' }, { word: 'happened', ipa: '', meaningAr: 'حصل', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Try me. I have heard it all before.', arEg: 'قولي بس. أنا سمعت كل حاجة قبل كده.', arFusha: 'قولي بس. أنا سمعت كل حاجة قبل كده.', speaker: 'Chandler', keyWords: [{ word: 'Try me', ipa: '', meaningAr: 'قولي بس', meaningEn: '' }, { word: 'heard it all', ipa: '', meaningAr: 'سمعت كل حاجة', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Chandler, this is serious. Stop making jokes for once.', arEg: 'تشاندلر، الموضوع جد. بطل هزار مرة واحدة.', arFusha: 'تشاندلر، الموضوع جد. بطل هزار مرة واحدة.', speaker: 'Monica', keyWords: [{ word: 'serious', ipa: '', meaningAr: 'جد', meaningEn: '' }, { word: 'for once', ipa: '', meaningAr: 'مرة واحدة', meaningEn: '' }] },      { id: 'sub-4', start: 110, end: 125, en: 'Making jokes is my defense mechanism. You knew that when you married me.', arEg: 'الهزار ده سلاحي الدفاعي. إنتي عرفتي كده لما اتجوزتيني.', arFusha: 'الهزار ده سلاحي الدفاعي. إنتي عرفتي كده لما اتجوزتيني.', speaker: 'Chandler', keyWords: [{ word: 'defense mechanism', ipa: '', meaningAr: 'سلاح دفاعي', meaningEn: '' }, { word: 'married me', ipa: '', meaningAr: 'اتجوزتيني', meaningEn: '' }] },      { id: 'sub-5', start: 135, end: 150, en: 'Fine. Joke all you want, but we are talking about this tonight.', arEg: 'ماشي. اهزر براحتك، بس هنتكلم في الموضوع ده الليلة.', arFusha: 'ماشي. اهزر براحتك، بس هنتكلم في الموضوع ده الليلة.', speaker: 'Monica', keyWords: [{ word: 'Joke all you want', ipa: '', meaningAr: 'اهزر براحتك', meaningEn: '' }, { word: 'tonight', ipa: '', meaningAr: 'الليلة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'defense mechanism', type: 'collocation', meaningAr: 'حيلة دفاعية نفسية', meaningEn: '', egyptianEquivalent: 'طريقة بنحمي بيها نفسنا', exampleInScene: 'Making jokes is my defense mechanism.' },      { term: 'Try me', type: 'idiom', meaningAr: 'قول بس / جرّبني', meaningEn: '', egyptianEquivalent: 'قولي ونشوف', exampleInScene: 'You won\'t believe it. - Try me.' },      { term: 'for once', type: 'idiom', meaningAr: 'مرة واحدة بس', meaningEn: '', egyptianEquivalent: 'مرة واحدة في العمر', exampleInScene: 'Can you be serious for once?' },      { term: 'hear it all', type: 'collocation', meaningAr: 'سمعت كل حاجة ممكنة', meaningEn: '', egyptianEquivalent: 'مفيش جديد عليا', exampleInScene: 'I\'ve heard it all before.' },      { term: 'talk about something', type: 'phrasal-verb', meaningAr: 'يتكلم في موضوع', meaningEn: '', egyptianEquivalent: 'يناقش الموضوع', exampleInScene: 'We are talking about this tonight.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Chandler say is his defense mechanism?', questionAr: 'إيه اللي تشاندلر بيقول إنه سلاحه الدفاعي؟', options: ['Making jokes', 'Cleaning the apartment', 'Cooking dinner', 'Watching TV'], correctIndex: 0, explanationAr: 'تشاندلر بيقول إن الهزار هو الـ defense mechanism بتاعه.' }
+    ],
+    speakingLines: [{ en: 'Could this be any more ridiculous?', arEg: 'ينهار ده ممكن يكون أضحك من كده؟' }, { en: 'Try me.', arEg: 'قولي بس.' }, { en: 'We are talking about this tonight.', arEg: 'هنتكلم في الموضوع ده الليلة.' }],
+  },
+  {
+    id: 'friends-part1-english-practice',
+    movieTitle: 'Friends Series for Learning English - Part 1',
+    releaseYear: 2022,
+    director: 'ENGLISH IN PRACTICE',
+    genre: 'TV Sitcom',
+    cefrLevel: 'A2',
+    sceneTitle: 'The One Where It All Began',
+    sceneDescription: 'أشهر جمل افتتاحية فريندز: التعارف والهزار اليومي بين الأصحاب الستة.',
+    youtubeId: 'JSSFDsenEV4',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'ENGLISH IN PRACTICE (Official)',
+    dialogueQuote: 'How you doin\'?',
+    actorName: 'Matt LeBlanc',
+    characterName: 'Joey Tribbiani',
+    thumbnailUrl: 'https://img.youtube.com/vi/JSSFDsenEV4/hqdefault.jpg',
+    category: 'sitcoms',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'ENGLISH IN PRACTICE Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'How you doin\'?', arEg: 'عامل إيه؟', arFusha: 'كيف حالك؟', speaker: 'Joey', keyWords: [{ word: 'How you doin\'', ipa: '', meaningAr: 'عامل إيه', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I\'m doing great. Thanks for asking.', arEg: 'أنا كويس جداً. شكراً إنك سألت.', arFusha: 'أنا كويس جداً. شكراً إنك سألت.', speaker: 'Rachel', keyWords: [{ word: 'doing great', ipa: '', meaningAr: 'كويس جداً', meaningEn: '' }, { word: 'thanks for asking', ipa: '', meaningAr: 'شكراً إنك سألت', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Could this be any more boring?', arEg: 'ينهار ده ممكن يكون أملّ من كده؟', arFusha: 'هل يمكن أن يكون هذا أكثر مللاً؟', speaker: 'Chandler', keyWords: [{ word: 'Could this be any more', ipa: '', meaningAr: 'ينهار ممكن يكون أكتر', meaningEn: '' }, { word: 'boring', ipa: '', meaningAr: 'ممل', meaningEn: '' }] },      { id: 'sub-4', start: 100, end: 115, en: 'Oh my God, you guys! Look at this!', arEg: 'يا نهار أبيض يا جماعة! بصوا على ده!', arFusha: 'يا نهار أبيض يا جماعة! بصوا على ده!', speaker: 'Janice', keyWords: [{ word: 'Oh my God', ipa: '', meaningAr: 'يا نهار أبيض', meaningEn: '' }, { word: 'you guys', ipa: '', meaningAr: 'يا جماعة', meaningEn: '' }] },      { id: 'sub-5', start: 125, end: 140, en: 'We were on a break!', arEg: 'إحنا كنا منفصلين ساعتها!', arFusha: 'إحنا كنا منفصلين ساعتها!', speaker: 'Ross', keyWords: [{ word: 'on a break', ipa: '', meaningAr: 'منفصلين مؤقتاً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'How you doin\'?', type: 'idiom', meaningAr: 'عامل إيه؟ (طريقة فلاترة)', meaningEn: '', egyptianEquivalent: 'إزيك عامل إيه', exampleInScene: 'How you doin\'? - Fine, thanks.' },      { term: 'on a break', type: 'idiom', meaningAr: 'منفصلين مؤقتاً', meaningEn: '', egyptianEquivalent: 'بينا بريك', exampleInScene: 'We were on a break!' },      { term: 'you guys', type: 'collocation', meaningAr: 'يا جماعة', meaningEn: '', egyptianEquivalent: 'يا شباب', exampleInScene: 'Oh my God, you guys!' },      { term: 'doing great', type: 'collocation', meaningAr: 'كويس جداً / مبسوط', meaningEn: '', egyptianEquivalent: 'تمام والحمد لله', exampleInScene: 'I\'m doing great, thanks.' },      { term: 'thanks for asking', type: 'collocation', meaningAr: 'شكراً إنك سألت', meaningEn: '', egyptianEquivalent: 'يسلم سؤالك', exampleInScene: 'I\'m fine, thanks for asking.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase is Joey\'s famous pickup line?', questionAr: 'إيه الجملة الشهيرة بتاعة جوي لما بيعجب بحد؟', options: ['How you doin\'?', 'We were on a break!', 'Could this be any more boring?', 'Oh my God!'], correctIndex: 0, explanationAr: 'جملة جوي الشهيرة هي How you doin\'?' }
+    ],
+    speakingLines: [{ en: 'How you doin\'?', arEg: 'عامل إيه؟' }, { en: 'We were on a break!', arEg: 'إحنا كنا منفصلين ساعتها!' }, { en: 'Thanks for asking.', arEg: 'شكراً إنك سألت.' }],
+  },
+  {
+    id: 'modern-family-rachel-english',
+    movieTitle: 'Learn English with TV - Modern Family',
+    releaseYear: 2021,
+    director: 'Rachel\'s English',
+    genre: 'TV Comedy',
+    cefrLevel: 'B1',
+    sceneTitle: 'Phil Dunphy\'s Dad Jokes',
+    sceneDescription: 'تحليل نطق أمريكي حقيقي من مودرن فاميلي: ربط الكلمات والإيقاع الطبيعي.',
+    youtubeId: 'hCF2_0G337Y',
+    startTime: 45,
+    endTime: 165,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'I am the cool dad. That is my thing.',
+    actorName: 'Ty Burrell',
+    characterName: 'Phil Dunphy',
+    thumbnailUrl: 'https://img.youtube.com/vi/hCF2_0G337Y/hqdefault.jpg',
+    category: 'tv_series',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 50, end: 65, en: 'I am the cool dad. That is my thing.', arEg: 'أنا البابا الكول. دي حاجتي أنا.', arFusha: 'أنا البابا الكول. دي حاجتي أنا.', speaker: 'Phil', keyWords: [{ word: 'the cool dad', ipa: '', meaningAr: 'البابا الكول', meaningEn: '' }, { word: 'my thing', ipa: '', meaningAr: 'حاجتي أنا', meaningEn: '' }] },      { id: 'sub-2', start: 75, end: 90, en: 'I text \'LOL\' all the time. It means \'lots of love\'.', arEg: 'أنا بكتب LOL على طول. معناها lots of love.', arFusha: 'أنا بكتب LOL على طول. معناها lots of love.', speaker: 'Phil', keyWords: [{ word: 'all the time', ipa: '', meaningAr: 'على طول', meaningEn: '' }, { word: 'lots of love', ipa: '', meaningAr: 'حب كتير', meaningEn: '' }] },      { id: 'sub-3', start: 100, end: 115, en: 'Dad, that is not what it means.', arEg: 'بابا، دي مش معناها كده.', arFusha: 'بابا، دي مش معناها كده.', speaker: 'Alex', keyWords: [{ word: 'not what it means', ipa: '', meaningAr: 'مش معناها كده', meaningEn: '' }] },      { id: 'sub-4', start: 125, end: 140, en: 'I know exactly what it means. Trust me, I\'m hip.', arEg: 'أنا عارف هي معناها إيه بالظبط. ثق فيا، أنا مواكب الموضة.', arFusha: 'أنا عارف هي معناها إيه بالظبط. ثق فيا، أنا مواكب الموضة.', speaker: 'Phil', keyWords: [{ word: 'exactly', ipa: '', meaningAr: 'بالظبط', meaningEn: '' }, { word: 'hip', ipa: '', meaningAr: 'مواكب الموضة', meaningEn: '' }] },      { id: 'sub-5', start: 150, end: 165, en: 'Being hip is not something you say about yourself.', arEg: 'كونك hip مش حاجة تقولها عن نفسك.', arFusha: 'كونك hip مش حاجة تقولها عن نفسك.', speaker: 'Claire', keyWords: [{ word: 'hip', ipa: '', meaningAr: 'كول / مواكب', meaningEn: '' }, { word: 'about yourself', ipa: '', meaningAr: 'عن نفسك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'my thing', type: 'idiom', meaningAr: 'حاجتي اللي بميز فيها', meaningEn: '', egyptianEquivalent: 'دي منطقتي', exampleInScene: 'Cooking is my thing.' },      { term: 'hip', type: 'slang', meaningAr: 'مواكب الموضة / كول', meaningEn: '', egyptianEquivalent: 'ستايل / كول', exampleInScene: 'My dad thinks he\'s hip.' },      { term: 'all the time', type: 'collocation', meaningAr: 'على طول / طول الوقت', meaningEn: '', egyptianEquivalent: 'دايماً', exampleInScene: 'She texts me all the time.' },      { term: 'trust me', type: 'collocation', meaningAr: 'ثق فيا', meaningEn: '', egyptianEquivalent: 'صدقني', exampleInScene: 'Trust me, I know what I\'m doing.' },      { term: 'exactly', type: 'cultural', meaningAr: 'بالظبط', meaningEn: '', egyptianEquivalent: 'تمام كده', exampleInScene: 'I know exactly what it means.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Phil think \'LOL\' means?', questionAr: 'فيل فاكر إن LOL معناها إيه؟', options: ['Lots of love', 'Laughing out loud', 'Little old lady', 'Lots of luck'], correctIndex: 0, explanationAr: 'فيل فاكر إن LOL معناها lots of love وده غلط، معناها laughing out loud.' }
+    ],
+    speakingLines: [{ en: 'That is my thing.', arEg: 'دي حاجتي أنا.' }, { en: 'Trust me, I\'m hip.', arEg: 'ثق فيا، أنا كول.' }, { en: 'I know exactly what it means.', arEg: 'أنا عارف معناها إيه بالظبط.' }],
+  },
+  {
+    id: 'friends-fast-english-rachel',
+    movieTitle: 'How To Speak Fast English With The TV Show Friends!',
+    releaseYear: 2020,
+    director: 'Rachel\'s English',
+    genre: 'Pronunciation Training',
+    cefrLevel: 'B2',
+    sceneTitle: 'Fast English with Friends',
+    sceneDescription: 'تدريب على الإنجليزي السريع المتصل: النطق المختزل زي whaddaya و gonna من مشاهد فريندز.',
+    youtubeId: 'WTAd2AOfTWo',
+    startTime: 60,
+    endTime: 180,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'What do you becomes whaddaya in fast speech.',
+    actorName: 'Rachel Smith',
+    characterName: 'Rachel (Coach)',
+    thumbnailUrl: 'https://img.youtube.com/vi/WTAd2AOfTWo/hqdefault.jpg',
+    category: 'american_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 65, end: 80, en: 'Native speakers link words together.', arEg: 'أصحاب اللغة بيربطوا الكلمات ببعضها.', arFusha: 'يربط الناطقون الأصليون الكلمات ببعضها.', speaker: 'Rachel', keyWords: [{ word: 'link words together', ipa: '', meaningAr: 'يربطوا الكلمات ببعض', meaningEn: '' }] },      { id: 'sub-2', start: 90, end: 105, en: 'What do you becomes whaddaya in fast speech.', arEg: 'What do you بتتحول لـ whaddaya في الكلام السريع.', arFusha: 'تتحول What do you إلى whaddaya في الكلام السريع.', speaker: 'Rachel', keyWords: [{ word: 'fast speech', ipa: '', meaningAr: 'الكلام السريع', meaningEn: '' }, { word: 'becomes', ipa: '', meaningAr: 'بتتحول لـ', meaningEn: '' }] },      { id: 'sub-3', start: 115, end: 130, en: 'Going to sounds like gonna in conversation.', arEg: 'Going to بتتنطق gonna في المحادثة.', arFusha: 'Going to بتتنطق gonna في المحادثة.', speaker: 'Rachel', keyWords: [{ word: 'sounds like', ipa: '', meaningAr: 'بتتنطق زي', meaningEn: '' }, { word: 'gonna', ipa: '', meaningAr: 'هـ (اختصار going to)', meaningEn: '' }] },      { id: 'sub-4', start: 140, end: 155, en: 'Listen to how they say it, then repeat out loud.', arEg: 'اسمع هما بيقولوها إزاي، وبعدين كرر بصوت عالي.', arFusha: 'اسمع هما بيقولوها إزاي، وبعدين كرر بصوت عالي.', speaker: 'Rachel', keyWords: [{ word: 'out loud', ipa: '', meaningAr: 'بصوت عالي', meaningEn: '' }, { word: 'repeat', ipa: '', meaningAr: 'كرر', meaningEn: '' }] },      { id: 'sub-5', start: 165, end: 180, en: 'Reduction is the key to understanding fast English.', arEg: 'الاختصار هو مفتاح فهم الإنجليزي السريع.', arFusha: 'الاختصار هو مفتاح فهم الإنجليزي السريع.', speaker: 'Rachel', keyWords: [{ word: 'reduction', ipa: '', meaningAr: 'الاختصار', meaningEn: '' }, { word: 'the key to', ipa: '', meaningAr: 'مفتاح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'reduction', type: 'collocation', meaningAr: 'الاختصار في النطق', meaningEn: '', egyptianEquivalent: 'تخفيف الكلمات', exampleInScene: 'Reduction makes fast English hard to follow.' },      { term: 'linking', type: 'collocation', meaningAr: 'ربط الكلمات في النطق', meaningEn: '', egyptianEquivalent: 'وصل الكلمات', exampleInScene: 'Linking makes your English sound natural.' },      { term: 'gonna', type: 'slang', meaningAr: 'هـ / هروح (اختصار going to)', meaningEn: '', egyptianEquivalent: 'هعمل', exampleInScene: 'I\'m gonna call you tonight.' },      { term: 'whaddaya', type: 'slang', meaningAr: 'اختصار What do you', meaningEn: '', egyptianEquivalent: 'إنت بتـ إيه', exampleInScene: 'Whaddaya think?' },      { term: 'out loud', type: 'collocation', meaningAr: 'بصوت عالي', meaningEn: '', egyptianEquivalent: 'بصوت واضح', exampleInScene: 'Read the sentence out loud.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What happens to \'What do you\' in fast speech?', questionAr: 'بيحصل إيه لـ What do you في الكلام السريع؟', options: ['It becomes whaddaya', 'It disappears completely', 'It becomes what-you-is', 'It gets louder'], correctIndex: 0, explanationAr: 'في الكلام السريع What do you بتتحول لـ whaddaya، ودي ظاهرة الـ reduction.' }
+    ],
+    speakingLines: [{ en: 'What do you becomes whaddaya.', arEg: 'What do you بتتحول لـ whaddaya.' }, { en: 'Listen, then repeat out loud.', arEg: 'اسمع، وبعدين كرر بصوت عالي.' }],
+  },
+  {
+    id: 'sherlock-first-meeting-letv',
+    movieTitle: 'Learn British English with Sherlock - Sherlock and Watson\'s First Meeting',
+    releaseYear: 2020,
+    director: 'Learn English With TV Series',
+    genre: 'TV Drama',
+    cefrLevel: 'B2',
+    sceneTitle: 'Sherlock and Watson\'s First Meeting',
+    sceneDescription: 'أول لقاء بين شيرلوك وواطسون: الاستنتاج الشهير بنطق بريطاني فخم.',
+    youtubeId: 'QCWoDO07TRM',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'You have been in Afghanistan, I perceive.',
+    actorName: 'Benedict Cumberbatch',
+    characterName: 'Sherlock Holmes',
+    thumbnailUrl: 'https://img.youtube.com/vi/QCWoDO07TRM/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'The name\'s Sherlock Holmes and the address is 221B Baker Street.', arEg: 'اسمي شيرلوك هولمز والعنوان هو 221B شارع بيكر.', arFusha: 'اسمي شيرلوك هولمز والعنوان هو 221B شارع بيكر.', speaker: 'Sherlock', keyWords: [{ word: 'the address', ipa: '', meaningAr: 'العنوان', meaningEn: '' }, { word: 'Baker Street', ipa: '', meaningAr: 'شارع بيكر', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'You have been in Afghanistan, I perceive.', arEg: 'إنت كنت في أفغانستان، على ما لاحظت.', arFusha: 'إنت كنت في أفغانستان، على ما لاحظت.', speaker: 'Sherlock', keyWords: [{ word: 'I perceive', ipa: '', meaningAr: 'على ما لاحظت', meaningEn: '' }, { word: 'Afghanistan', ipa: '', meaningAr: 'أفغانستان', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'How did you know?', arEg: 'عرفت منين؟', arFusha: 'عرفت منين؟', speaker: 'Watson', keyWords: [{ word: 'How did you know', ipa: '', meaningAr: 'عرفت منين', meaningEn: '' }] },      { id: 'sub-4', start: 110, end: 125, en: 'I knew you came from Afghanistan. Your face is tanned, but no tan above the wrists.', arEg: 'عرفت إنك جاي من أفغانستان. وشك متسمّر، بس مفيش سمرة فوق الرسغ.', arFusha: 'عرفت إنك جاي من أفغانستان. وشك متسمّر، بس مفيش سمرة فوق الرسغ.', speaker: 'Sherlock', keyWords: [{ word: 'tanned', ipa: '', meaningAr: 'متسمّر', meaningEn: '' }, { word: 'wrists', ipa: '', meaningAr: 'الرسغ', meaningEn: '' }] },      { id: 'sub-5', start: 135, end: 150, en: 'That was amazing.', arEg: 'ده كان مذهل.', arFusha: 'ده كان مذهل.', speaker: 'Watson', keyWords: [{ word: 'amazing', ipa: '', meaningAr: 'مذهل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'I perceive', type: 'collocation', meaningAr: 'على ما ألاحظ / أستنتج', meaningEn: '', egyptianEquivalent: 'من ملاحظتي', exampleInScene: 'You are upset, I perceive.' },      { term: 'How did you know?', type: 'collocation', meaningAr: 'عرفت منين؟', meaningEn: '', egyptianEquivalent: 'إزاي عرفت؟', exampleInScene: 'How did you know I was ill?' },      { term: 'tanned', type: 'cultural', meaningAr: 'متسمّر من الشمس', meaningEn: '', egyptianEquivalent: 'واخد لون', exampleInScene: 'You look tanned after the holiday.' },      { term: 'amazing', type: 'cultural', meaningAr: 'مذهل', meaningEn: '', egyptianEquivalent: 'جامد جداً', exampleInScene: 'That was amazing!' },      { term: 'the name\'s', type: 'collocation', meaningAr: 'اسمي (تقديم رسمي)', meaningEn: '', egyptianEquivalent: 'أنا اسمي', exampleInScene: 'The name\'s Bond. James Bond.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How did Sherlock know Watson was in Afghanistan?', questionAr: 'شيرلوك عرف منين إن واطسون كان في أفغانستان؟', options: ['From his tanned face but untanned wrists', 'From his passport', 'From a mutual friend', 'From his uniform'], correctIndex: 0, explanationAr: 'شيرلوك لاحظ إن وشه متسمّر بس مفيش سمرة فوق الرسغ، فاستنتج إنه كان في بلد مشمسة زي أفغانستان.' }
+    ],
+    speakingLines: [{ en: 'How did you know?', arEg: 'عرفت منين؟' }, { en: 'That was amazing.', arEg: 'ده كان مذهل.' }, { en: 'You have been in Afghanistan, I perceive.', arEg: 'إنت كنت في أفغانستان، على ما لاحظت.' }],
+  },
+  {
+    id: 'young-sherlock-letv',
+    movieTitle: 'Learn English with Young Sherlock',
+    releaseYear: 2023,
+    director: 'Learn English With TV Series',
+    genre: 'TV Drama',
+    cefrLevel: 'B1',
+    sceneTitle: 'Young Sherlock\'s First Case',
+    sceneDescription: 'شيرلوك الصغير بيحل أول قضية: مفردات التحقيق والأسئلة بنطق بريطاني واضح.',
+    youtubeId: 'cQHkFnBZQhM',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'Every detail matters when you are solving a case.',
+    actorName: 'Young Sherlock Cast',
+    characterName: 'Young Sherlock',
+    thumbnailUrl: 'https://img.youtube.com/vi/cQHkFnBZQhM/hqdefault.jpg',
+    category: 'british_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Every detail matters when you are solving a case.', arEg: 'كل تفصيلة مهمة وإنت بتحل قضية.', arFusha: 'كل تفصيلة مهمة وإنت بتحل قضية.', speaker: 'Sherlock', keyWords: [{ word: 'detail', ipa: '', meaningAr: 'تفصيلة', meaningEn: '' }, { word: 'solving a case', ipa: '', meaningAr: 'حل قضية', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Where were you on the night of the theft?', arEg: 'إنت كنت فين ليلة السرقة؟', arFusha: 'إنت كنت فين ليلة السرقة؟', speaker: 'Sherlock', keyWords: [{ word: 'on the night of', ipa: '', meaningAr: 'ليلة', meaningEn: '' }, { word: 'theft', ipa: '', meaningAr: 'السرقة', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'I was at home with my mother. Ask her if you don\'t believe me.', arEg: 'كنت في البيت مع ماما. اسألها لو مش مصدقني.', arFusha: 'كنت في البيت مع ماما. اسألها لو مش مصدقني.', speaker: 'Suspect', keyWords: [{ word: 'if you don\'t believe me', ipa: '', meaningAr: 'لو مش مصدقني', meaningEn: '' }] },      { id: 'sub-4', start: 105, end: 120, en: 'The evidence does not lie. People do.', arEg: 'الأدلة مش بتكذب. الناس اللي بتكذب.', arFusha: 'الأدلة مش بتكذب. الناس اللي بتكذب.', speaker: 'Sherlock', keyWords: [{ word: 'evidence', ipa: '', meaningAr: 'الأدلة', meaningEn: '' }, { word: 'lie', ipa: '', meaningAr: 'يكذب', meaningEn: '' }] },      { id: 'sub-5', start: 130, end: 145, en: 'You are cleverer than you look, young man.', arEg: 'إنت أشطر من شكلك يا شاب.', arFusha: 'إنت أشطر من شكلك يا شاب.', speaker: 'Inspector', keyWords: [{ word: 'cleverer than you look', ipa: '', meaningAr: 'أشطر من شكلك', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'solving a case', type: 'collocation', meaningAr: 'حل قضية', meaningEn: '', egyptianEquivalent: 'كشف اللغز', exampleInScene: 'He is solving a difficult case.' },      { term: 'theft', type: 'cultural', meaningAr: 'سرقة', meaningEn: '', egyptianEquivalent: 'حادثة سرقة', exampleInScene: 'The theft happened at midnight.' },      { term: 'evidence', type: 'cultural', meaningAr: 'دليل / أدلة', meaningEn: '', egyptianEquivalent: 'برهان', exampleInScene: 'The evidence does not lie.' },      { term: 'believe me', type: 'collocation', meaningAr: 'صدقني', meaningEn: '', egyptianEquivalent: 'والله العظيم', exampleInScene: 'Ask her if you don\'t believe me.' },      { term: 'clever', type: 'cultural', meaningAr: 'شاطر / ذكي', meaningEn: '', egyptianEquivalent: 'فهلوي', exampleInScene: 'You are cleverer than you look.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Sherlock say does not lie?', questionAr: 'شيرلوك بيقول إن إيه اللي مش بيكذب؟', options: ['The evidence', 'The suspect', 'His mother', 'The inspector'], correctIndex: 0, explanationAr: 'شيرلوك بيقول The evidence does not lie. People do - الأدلة مش بتكذب، الناس اللي بتكذب.' }
+    ],
+    speakingLines: [{ en: 'Where were you on the night of the theft?', arEg: 'إنت كنت فين ليلة السرقة؟' }, { en: 'The evidence does not lie.', arEg: 'الأدلة مش بتكذب.' }],
+  },
+  {
+    id: 'easy-english-newyork-11',
+    movieTitle: 'Easy English 11 - What do you like about New York?',
+    releaseYear: 2013,
+    director: 'Easy Languages',
+    genre: 'Street Interview',
+    cefrLevel: 'A2',
+    sceneTitle: 'What Do You Like About New York?',
+    sceneDescription: 'مقابلات شارع حقيقية في نيويورك: ناس عادية بتتكلم عن حبها للمدينة.',
+    youtubeId: 'AmlF6xq2SaQ',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Easy Languages (Official)',
+    dialogueQuote: 'What do you like most about New York?',
+    actorName: 'Easy Languages Host',
+    characterName: 'Street Interviewees',
+    thumbnailUrl: 'https://img.youtube.com/vi/AmlF6xq2SaQ/hqdefault.jpg',
+    category: 'street_interviews',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy Languages Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'What do you like most about New York?', arEg: 'أكتر حاجة بتحبها في نيويورك إيه؟', arFusha: 'ما أكثر شيء يعجبك في نيويورك؟', speaker: 'Host', keyWords: [{ word: 'like most', ipa: '', meaningAr: 'أكتر حاجة بتحبها', meaningEn: '' }, { word: 'New York', ipa: '', meaningAr: 'نيويورك', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'I love the energy and the people here.', arEg: 'بحب حيوية المدينة والناس هنا.', arFusha: 'أحب حيوية المدينة والناس هنا.', speaker: 'Passerby 1', keyWords: [{ word: 'the energy', ipa: '', meaningAr: 'الحيوية', meaningEn: '' }, { word: 'the people', ipa: '', meaningAr: 'الناس', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'There\'s always something going on.', arEg: 'في دايماً حاجة بتحصل.', arFusha: 'في دايماً حاجة بتحصل.', speaker: 'Passerby 2', keyWords: [{ word: 'going on', ipa: '', meaningAr: 'بتحصل', meaningEn: '' }] },      { id: 'sub-4', start: 95, end: 110, en: 'The food is amazing. You can eat anything you want.', arEg: 'الأكل مذهل. تقدر تاكل أي حاجة نفسك فيها.', arFusha: 'الأكل مذهل. تقدر تاكل أي حاجة نفسك فيها.', speaker: 'Passerby 3', keyWords: [{ word: 'amazing', ipa: '', meaningAr: 'مذهل', meaningEn: '' }, { word: 'anything you want', ipa: '', meaningAr: 'أي حاجة نفسك فيها', meaningEn: '' }] },      { id: 'sub-5', start: 120, end: 135, en: 'It\'s expensive, but it\'s worth it.', arEg: 'غالية، بس تستاهل.', arFusha: 'غالية، بس تستاهل.', speaker: 'Passerby 4', keyWords: [{ word: 'expensive', ipa: '', meaningAr: 'غالية', meaningEn: '' }, { word: 'worth it', ipa: '', meaningAr: 'تستاهل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'going on', type: 'phrasal-verb', meaningAr: 'بيحصل / شغال', meaningEn: '', egyptianEquivalent: 'في حركة', exampleInScene: 'There\'s always something going on.' },      { term: 'worth it', type: 'idiom', meaningAr: 'تستاهل', meaningEn: '', egyptianEquivalent: 'تسوى', exampleInScene: 'It\'s expensive, but it\'s worth it.' },      { term: 'the energy', type: 'collocation', meaningAr: 'الحيوية / الأجواء', meaningEn: '', egyptianEquivalent: 'نبض المدينة', exampleInScene: 'I love the energy of Cairo.' },      { term: 'anything you want', type: 'collocation', meaningAr: 'أي حاجة نفسك فيها', meaningEn: '', egyptianEquivalent: 'كل اللي نفسك فيه', exampleInScene: 'You can order anything you want.' },      { term: 'like most', type: 'collocation', meaningAr: 'أكتر حاجة بتحبها', meaningEn: '', egyptianEquivalent: 'اللي بيعجبك أكتر', exampleInScene: 'What do you like most about Cairo?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'According to one interviewee, New York is expensive but...', questionAr: 'واحد من الناس قال إن نيويورك غالية بس...', options: ['worth it', 'boring', 'dangerous', 'quiet'], correctIndex: 0, explanationAr: 'الرد كان It\'s expensive, but it\'s worth it - غالية بس تستاهل.' }
+    ],
+    speakingLines: [{ en: 'There\'s always something going on.', arEg: 'في دايماً حاجة بتحصل.' }, { en: 'It\'s expensive, but it\'s worth it.', arEg: 'غالية، بس تستاهل.' }],
+  },
+  {
+    id: 'london-interviews-real-teachers',
+    movieTitle: 'How To Speak English Like A Native Speaker - London Interviews Episode 01',
+    releaseYear: 2018,
+    director: 'Real English With Real Teachers',
+    genre: 'Street Interview',
+    cefrLevel: 'B1',
+    sceneTitle: 'London Street Interviews',
+    sceneDescription: 'مقابلات في شوارع لندن: لهجة بريطانية حقيقية من ناس عادية في الشارع.',
+    youtubeId: 'yl5-ygiPOkM',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Real English With Real Teachers (Official)',
+    dialogueQuote: 'What do you reckon makes someone sound like a native?',
+    actorName: 'Real English With Real Teachers',
+    characterName: 'Londoners',
+    thumbnailUrl: 'https://img.youtube.com/vi/yl5-ygiPOkM/hqdefault.jpg',
+    category: 'street_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Real English With Real Teachers Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'What do you reckon makes someone sound like a native?', arEg: 'إنت شايف إيه اللي يخلي حد صوته زي أهل اللغة؟', arFusha: 'إنت شايف إيه اللي يخلي حد صوته زي أهل اللغة؟', speaker: 'Interviewer', keyWords: [{ word: 'What do you reckon', ipa: '', meaningAr: 'إنت شايف إيه', meaningEn: '' }, { word: 'sound like a native', ipa: '', meaningAr: 'صوته زي أهل اللغة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I think it\'s the little words, innit. Like \'cheers\' and \'mate\'.', arEg: 'أعتقد إنها الكلمات الصغيرة، صح؟ زي cheers و mate.', arFusha: 'أعتقد إنها الكلمات الصغيرة، صح؟ زي cheers و mate.', speaker: 'Londoner 1', keyWords: [{ word: 'innit', ipa: '', meaningAr: 'صح؟ / مش كده؟', meaningEn: '' }, { word: 'mate', ipa: '', meaningAr: 'صاحبي', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Cheers can mean thanks or goodbye.', arEg: 'Cheers ممكن تعني شكراً أو مع السلامة.', arFusha: 'Cheers ممكن تعني شكراً أو مع السلامة.', speaker: 'Interviewer', keyWords: [{ word: 'mean', ipa: '', meaningAr: 'تعني', meaningEn: '' }, { word: 'goodbye', ipa: '', meaningAr: 'مع السلامة', meaningEn: '' }] },      { id: 'sub-4', start: 100, end: 115, en: 'I reckon rhythm matters more than perfect grammar.', arEg: 'أنا شايف إن الإيقاع أهم من القواعد المظبوطة.', arFusha: 'أنا شايف إن الإيقاع أهم من القواعد المظبوطة.', speaker: 'Londoner 2', keyWords: [{ word: 'rhythm', ipa: '', meaningAr: 'الإيقاع', meaningEn: '' }, { word: 'matters more than', ipa: '', meaningAr: 'أهم من', meaningEn: '' }] },      { id: 'sub-5', start: 125, end: 140, en: 'Don\'t be afraid to make mistakes. That\'s how you learn.', arEg: 'متخفش تعمل غلطات. كده بتتعلم.', arFusha: 'متخفش تعمل غلطات. كده بتتعلم.', speaker: 'Londoner 3', keyWords: [{ word: 'make mistakes', ipa: '', meaningAr: 'تعمل غلطات', meaningEn: '' }, { word: 'That\'s how you learn', ipa: '', meaningAr: 'كده بتتعلم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'innit', type: 'slang', meaningAr: 'صح؟ / مش كده؟ (لندنية)', meaningEn: '', egyptianEquivalent: 'مش كده؟', exampleInScene: 'It\'s hot today, innit?' },      { term: 'mate', type: 'slang', meaningAr: 'صاحبي (بريطانية)', meaningEn: '', egyptianEquivalent: 'يا معلم', exampleInScene: 'Alright, mate?' },      { term: 'cheers', type: 'slang', meaningAr: 'شكراً / مع السلامة (بريطانية)', meaningEn: '', egyptianEquivalent: 'متشكر يا معلم', exampleInScene: 'Cheers for the help!' },      { term: 'What do you reckon', type: 'collocation', meaningAr: 'إنت شايف إيه؟', meaningEn: '', egyptianEquivalent: 'إيه رأيك؟', exampleInScene: 'What do you reckon about the plan?' },      { term: 'make mistakes', type: 'collocation', meaningAr: 'يعمل غلطات', meaningEn: '', egyptianEquivalent: 'يغلط', exampleInScene: 'Don\'t be afraid to make mistakes.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'innit\' mean in London speech?', questionAr: 'كلمة innit معناها إيه في كلام اللندنيين؟', options: ['Isn\'t it / right?', 'Inside it', 'In it', 'Finish it'], correctIndex: 0, explanationAr: 'innit اختصار شعبي لـ isn\'t it وبتتقال في آخر الجملة زي صح؟ أو مش كده؟' }
+    ],
+    speakingLines: [{ en: 'Cheers, mate!', arEg: 'متشكر يا معلم!' }, { en: 'Don\'t be afraid to make mistakes.', arEg: 'متخفش تعمل غلطات.' }],
+  },
+  {
+    id: 'easy-english-stereotypes-199',
+    movieTitle: 'What are English STEREOTYPES? - Easy English 199',
+    releaseYear: 2020,
+    director: 'Easy English',
+    genre: 'Street Interview',
+    cefrLevel: 'B1',
+    sceneTitle: 'English Stereotypes',
+    sceneDescription: 'ناس من إنجلترا بترد على الصور النمطية عنهم: الشاي، الطابور، والجو.',
+    youtubeId: 'NhpkGrabLqw',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Easy English (Official)',
+    dialogueQuote: 'Is it true that the English love queuing?',
+    actorName: 'Easy English Host',
+    characterName: 'British Interviewees',
+    thumbnailUrl: 'https://img.youtube.com/vi/NhpkGrabLqw/hqdefault.jpg',
+    category: 'street_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'Is it true that the English love queuing?', arEg: 'صحيح إن الإنجليز بيحبوا يقفوا في الطابور؟', arFusha: 'صحيح إن الإنجليز بيحبوا يقفوا في الطابور؟', speaker: 'Host', keyWords: [{ word: 'queuing', ipa: '', meaningAr: 'الوقوف في الطابور', meaningEn: '' }, { word: 'Is it true that', ipa: '', meaningAr: 'صحيح إن', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'We do love a good queue. It\'s about fairness.', arEg: 'إحنا فعلاً بنحب الطابور. الموضوع عدل.', arFusha: 'إحنا فعلاً بنحب الطابور. الموضوع عدل.', speaker: 'Interviewee 1', keyWords: [{ word: 'a good queue', ipa: '', meaningAr: 'طابور منظم', meaningEn: '' }, { word: 'fairness', ipa: '', meaningAr: 'العدل', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'People say we talk about the weather too much.', arEg: 'الناس بتقول إن إحنا بنتكلم عن الجو كتير.', arFusha: 'الناس بتقول إن إحنا بنتكلم عن الجو كتير.', speaker: 'Interviewee 2', keyWords: [{ word: 'too much', ipa: '', meaningAr: 'كتير', meaningEn: '' }, { word: 'the weather', ipa: '', meaningAr: 'الجو', meaningEn: '' }] },      { id: 'sub-4', start: 95, end: 110, en: 'That\'s absolutely true. It\'s the perfect small talk.', arEg: 'ده صحيح جداً. ده أحلى موضوع كلام خفيف.', arFusha: 'ده صحيح جداً. ده أحلى موضوع كلام خفيف.', speaker: 'Interviewee 3', keyWords: [{ word: 'absolutely true', ipa: '', meaningAr: 'صحيح جداً', meaningEn: '' }, { word: 'small talk', ipa: '', meaningAr: 'كلام خفيف', meaningEn: '' }] },      { id: 'sub-5', start: 120, end: 135, en: 'And yes, we do drink a lot of tea.', arEg: 'وأيوه، إحنا فعلاً بنشرب شاي كتير.', arFusha: 'وأيوه، إحنا فعلاً بنشرب شاي كتير.', speaker: 'Interviewee 4', keyWords: [{ word: 'a lot of tea', ipa: '', meaningAr: 'شاي كتير', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'queuing', type: 'collocation', meaningAr: 'الوقوف في الطابور', meaningEn: '', egyptianEquivalent: 'الطابور', exampleInScene: 'The English are famous for queuing.' },      { term: 'small talk', type: 'collocation', meaningAr: 'كلام خفيف / مجاملات', meaningEn: '', egyptianEquivalent: 'دردشة سريعة', exampleInScene: 'The weather is perfect for small talk.' },      { term: 'fairness', type: 'cultural', meaningAr: 'العدل / الإنصاف', meaningEn: '', egyptianEquivalent: 'الذوق', exampleInScene: 'Queuing is about fairness.' },      { term: 'absolutely', type: 'cultural', meaningAr: 'تماماً / جداً', meaningEn: '', egyptianEquivalent: 'والله', exampleInScene: 'That\'s absolutely true.' },      { term: 'stereotype', type: 'cultural', meaningAr: 'صورة نمطية', meaningEn: '', egyptianEquivalent: 'فكرة جاهزة عن الناس', exampleInScene: 'It\'s just a stereotype about the English.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Why do the English love queuing, according to the interview?', questionAr: 'ليه الإنجليز بيحبوا الطابور حسب اللقاء؟', options: ['It\'s about fairness', 'It is the law', 'They have nothing to do', 'It is a sport'], correctIndex: 0, explanationAr: 'الإجابة: It\'s about fairness - الموضوع عدل وإنصاف.' }
+    ],
+    speakingLines: [{ en: 'We do love a good queue.', arEg: 'إحنا فعلاً بنحب الطابور.' }, { en: 'It\'s the perfect small talk.', arEg: 'ده أحلى موضوع كلام خفيف.' }],
+  },
+  {
+    id: 'bigbang-sheldon-bongos-subjunctive',
+    movieTitle: 'Sheldon\'s Bongos and the Subjunctive - The Big Bang Theory',
+    releaseYear: 2015,
+    director: 'learnwithvideos by Carlos Gontow',
+    genre: 'TV Comedy Grammar',
+    cefrLevel: 'B2',
+    sceneTitle: 'Sheldon Plays the Bongos',
+    sceneDescription: 'شيلدون بيعزف على البونجو في نص الليل وشرح ظرفي للـ subjunctive من المشهد.',
+    youtubeId: 'LFW4QNBY_yk',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'learnwithvideos by Carlos Gontow (Official)',
+    dialogueQuote: 'If I were you, I would be more careful.',
+    actorName: 'Jim Parsons',
+    characterName: 'Sheldon Cooper',
+    thumbnailUrl: 'https://img.youtube.com/vi/LFW4QNBY_yk/hqdefault.jpg',
+    category: 'tv_series',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'learnwithvideos by Carlos Gontow',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Sheldon, it\'s three in the morning. What are you doing?', arEg: 'شيلدون، الساعة 3 الفجر. إنت بتعمل إيه؟', arFusha: 'شيلدون، الساعة 3 الفجر. إنت بتعمل إيه؟', speaker: 'Leonard', keyWords: [{ word: 'in the morning', ipa: '', meaningAr: 'الفجر', meaningEn: '' }, { word: 'What are you doing', ipa: '', meaningAr: 'إنت بتعمل إيه', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I\'m playing the bongos. I couldn\'t sleep.', arEg: 'بعزف على البونجو. مش قادر أنام.', arFusha: 'بعزف على البونجو. مش قادر أنام.', speaker: 'Sheldon', keyWords: [{ word: 'playing the bongos', ipa: '', meaningAr: 'بعزف على البونجو', meaningEn: '' }, { word: 'couldn\'t sleep', ipa: '', meaningAr: 'مش قادر أنام', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'If I were you, I would stop right now.', arEg: 'لو كنت مكانك، كنت هبطل دلوقتي حالاً.', arFusha: 'لو كنت مكانك، كنت هبطل دلوقتي حالاً.', speaker: 'Leonard', keyWords: [{ word: 'If I were you', ipa: '', meaningAr: 'لو كنت مكانك', meaningEn: '' }, { word: 'right now', ipa: '', meaningAr: 'دلوقتي حالاً', meaningEn: '' }] },      { id: 'sub-4', start: 110, end: 125, en: 'If I were interested in your opinion, I would ask for it.', arEg: 'لو كنت مهتم برأيك، كنت هسألك عليه.', arFusha: 'لو كنت مهتم برأيك، كنت هسألك عليه.', speaker: 'Sheldon', keyWords: [{ word: 'If I were interested', ipa: '', meaningAr: 'لو كنت مهتم', meaningEn: '' }, { word: 'ask for it', ipa: '', meaningAr: 'أطلبه', meaningEn: '' }] },      { id: 'sub-5', start: 135, end: 150, en: 'I suggest that he be quieter. That is the subjunctive.', arEg: 'أنا أقترح إنه يبقى أهدى. دي صيغة الـ subjunctive.', arFusha: 'أنا أقترح إنه يبقى أهدى. دي صيغة الـ subjunctive.', speaker: 'Narrator', keyWords: [{ word: 'I suggest that he be', ipa: '', meaningAr: 'أقترح إنه يبقى', meaningEn: '' }, { word: 'subjunctive', ipa: '', meaningAr: 'صيغة الافتراض', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'If I were you', type: 'collocation', meaningAr: 'لو كنت مكانك', meaningEn: '', egyptianEquivalent: 'لو أنا مكانك', exampleInScene: 'If I were you, I would apologize.' },      { term: 'right now', type: 'collocation', meaningAr: 'دلوقتي حالاً', meaningEn: '', egyptianEquivalent: 'فوراً', exampleInScene: 'Stop right now!' },      { term: 'ask for', type: 'phrasal-verb', meaningAr: 'يطلب', meaningEn: '', egyptianEquivalent: 'يسأل على', exampleInScene: 'If you need help, ask for it.' },      { term: 'couldn\'t sleep', type: 'collocation', meaningAr: 'مش قادر ينام', meaningEn: '', egyptianEquivalent: 'عيونه مش جاياها نوم', exampleInScene: 'I couldn\'t sleep last night.' },      { term: 'I suggest that', type: 'collocation', meaningAr: 'أقترح إن (مع subjunctive)', meaningEn: '', egyptianEquivalent: 'أنا أرشح إن', exampleInScene: 'I suggest that he be on time.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Why is Leonard upset with Sheldon?', questionAr: 'ليه ليونارد متضايق من شيلدون؟', options: ['Sheldon is playing the bongos at 3 AM', 'Sheldon ate his food', 'Sheldon invited guests', 'Sheldon broke the TV'], correctIndex: 0, explanationAr: 'شيلدون بيعزف على البونجو الساعة 3 الفجر، فليونارد قاله If I were you, I would stop right now.' }
+    ],
+    speakingLines: [{ en: 'If I were you, I would stop right now.', arEg: 'لو كنت مكانك، كنت هبطل دلوقتي حالاً.' }, { en: 'I couldn\'t sleep.', arEg: 'مش قادر أنام.' }],
+  },
 ];
 
 // Helper to get all videos
