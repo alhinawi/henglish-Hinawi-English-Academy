@@ -68,8 +68,6 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
       cefr,
       ipaUs: ipaUs.trim() || `/${headword}/`,
       ipaUk: ipaUk.trim() || ipaUs.trim() || `/${headword}/`,
-      audioUsUrl: `https://commons.wikimedia.org/wiki/Special:FilePath/En-us-${headword.toLowerCase()}.ogg`,
-      audioUkUrl: `https://commons.wikimedia.org/wiki/Special:FilePath/En-uk-${headword.toLowerCase()}.ogg`,
       frequencyTier: 'academic',
       domain: 'academic',
       formality: 'Neutral',

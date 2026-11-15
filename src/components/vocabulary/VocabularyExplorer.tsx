@@ -1,21 +1,17 @@
 // ==============================================================================
 // Henglish Academy (HENGLISH) - INTELLIGENT VOCABULARY EXPLORER
-// Multi-filter search engine across 5,000+ words with dual US/UK pronunciation
+// Verified words only: legacy hand-reviewed set + frequency chunks
+// Search-first layout with bottom-sheet filters
 // ==============================================================================
 
 import React, { useState, useEffect, useMemo } from 'react';
 import {
   Search,
-  Filter,
-  Volume2,
-  Sparkles,
   LayoutGrid,
   List,
   RotateCcw,
   ChevronLeft,
   ChevronRight,
-  Database,
-  CheckCircle2,
   Loader2,
   X,
   SlidersHorizontal,
@@ -25,9 +21,7 @@ import {
   CEFRLevel,
   loadVocabularyCore,
   loadFullVocabulary,
-  loadVocabularyManifest,
   searchVocabulary,
-  VocabularyManifest,
   getLoadedVocabularyCount,
 } from '../../services/vocabularyService';
 import { WordCard } from './WordCard';
@@ -35,52 +29,56 @@ import { WordDetailModal } from './WordDetailModal';
 import { playSound } from '../../utils/audio';
 
 const CEFR_OPTIONS: Array<{ id: CEFRLevel | 'all'; label: string }> = [
-  { id: 'all', label: 'جميع المستويات' },
-  { id: 'A1', label: 'A1 مبتدئ' },
-  { id: 'A2', label: 'A2 أساسي' },
-  { id: 'B1', label: 'B1 متوسط' },
-  { id: 'B2', label: 'B2 فوق المتوسط' },
-  { id: 'C1', label: 'C1 متقدم' },
-  { id: 'C2', label: 'C2 متقن' },
+  { id: 'all', label: 'الكل' },
+  { id: 'A1', label: 'A1' },
+  { id: 'A2', label: 'A2' },
+  { id: 'B1', label: 'B1' },
+  { id: 'B2', label: 'B2' },
+  { id: 'C1', label: 'C1' },
+  { id: 'C2', label: 'C2' },
 ];
 
 const POS_OPTIONS = [
-  { id: 'all', label: 'جميع الأقسام' },
-  { id: 'noun', label: 'أسماء (Nouns)' },
-  { id: 'verb', label: 'أفعال (Verbs)' },
-  { id: 'adjective', label: 'صفات (Adjectives)' },
-  { id: 'adverb', label: 'ظروف (Adverbs)' },
+  { id: 'all', label: 'كل الأنواع' },
+  { id: 'noun', label: 'أسماء' },
+  { id: 'verb', label: 'أفعال' },
+  { id: 'adjective', label: 'صفات' },
+  { id: 'adverb', label: 'ظروف' },
 ];
 
 const DOMAIN_OPTIONS = [
-  { id: 'all', label: 'جميع المجالات (All Domains)' },
-  { id: 'everyday', label: 'الحياة اليومية (Everyday)' },
-  { id: 'business', label: 'إدارة الأعمال (Business)' },
-  { id: 'ai_tech', label: 'التكنولوجيا والذكاء الاصطناعي (AI & Tech)' },
-  { id: 'medicine', label: 'الطب والصحة (Medicine)' },
-  { id: 'science', label: 'العلوم والأبحاث (Science)' },
-  { id: 'finance', label: 'المالية والبنوك (Finance)' },
-  { id: 'law', label: 'القانون والعدالة (Law)' },
-  { id: 'travel', label: 'السفر والمطارات (Travel)' },
-  { id: 'food', label: 'المطاعم والطهي (Food)' },
-  { id: 'education', label: 'التعليم والجامعات (Education)' },
-  { id: 'media', label: 'الإعلام والصحافة (Media)' },
-  { id: 'aviation', label: 'الطيران والملاحة (Aviation)' },
-  { id: 'arts', label: 'الفنون والإبداع (Arts)' },
-  { id: 'music', label: 'الموسيقى والصوتيات (Music)' },
-  { id: 'sports', label: 'الرياضة واللياقة (Sports)' },
-  { id: 'environment', label: 'البيئة والمناخ (Environment)' },
-  { id: 'politics', label: 'السياسة والعلاقات الدولية (Politics)' },
+  { id: 'all', label: 'كل المجالات' },
+  { id: 'everyday', label: 'يومية' },
+  { id: 'business', label: 'بيزنس' },
+  { id: 'tech', label: 'تكنولوجيا' },
+  { id: 'academic', label: 'أكاديمي' },
+  { id: 'travel', label: 'سفر' },
+  { id: 'workplace', label: 'شغل' },
+  { id: 'medical', label: 'طبي' },
+  { id: 'food', label: 'أكل' },
+  { id: 'hotel', label: 'فنادق' },
+  { id: 'phrasal_verbs', label: 'أفعال مركبة' },
+  { id: 'idioms', label: 'تعبيرات' },
+  { id: 'collocations', label: 'متلازمات' },
 ];
 
 const FREQUENCY_OPTIONS = [
-  { id: 'all', label: 'جميع درجات الشيوع' },
-  { id: 'top500', label: 'أكثر 500 كلمة شيوعاً (Top 500)' },
-  { id: 'top1000', label: 'أكثر 1,000 كلمة (Top 1,000)' },
-  { id: 'top2000', label: 'أكثر 2,000 كلمة (Top 2,000)' },
-  { id: 'top3000', label: 'أكثر 3,000 كلمة (Top 3,000)' },
-  { id: 'top5000', label: 'أكثر 5,000 كلمة (Top 5,000)' },
-  { id: 'academic', label: 'الكلمات الأكاديمية (Academic AWL)' },
+  { id: 'all', label: 'كل الدرجات' },
+  { id: 'top500', label: 'أول 500' },
+  { id: 'top1000', label: 'أول 1,000' },
+  { id: 'top2000', label: 'أول 2,000' },
+  { id: 'top3000', label: 'أول 3,000' },
+  { id: 'top5000', label: 'أول 5,000' },
+  { id: 'advanced', label: 'متقدمة' },
+  { id: 'rare', label: 'نادرة' },
+];
+
+const SORT_OPTIONS = [
+  { id: 'popular', label: 'الأكثر شيوعًا' },
+  { id: 'alpha_asc', label: 'أبجدي A-Z' },
+  { id: 'alpha_desc', label: 'أبجدي Z-A' },
+  { id: 'cefr_asc', label: 'A1 إلى C2' },
+  { id: 'cefr_desc', label: 'C2 إلى A1' },
 ];
 
 export const VocabularyExplorer: React.FC = () => {
@@ -90,18 +88,17 @@ export const VocabularyExplorer: React.FC = () => {
   const [selectedPos, setSelectedPos] = useState<string>('all');
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
   const [selectedFrequency, setSelectedFrequency] = useState<string>('all');
-  const [audioFilter, setAudioFilter] = useState<'all' | 'has_us' | 'has_uk' | 'has_both'>('all');
   const [sortBy, setSortBy] = useState<'popular' | 'alpha_asc' | 'alpha_desc' | 'cefr_asc' | 'cefr_desc'>('popular');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(30);
+  const [pageSize] = useState(30);
 
-  // Data Loading & Manifest State
+  // Bottom sheet
+  const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
+
+  // Data Loading State
   const [isLoading, setIsLoading] = useState(true);
   const [isFullLoading, setIsFullLoading] = useState(false);
-  const [fullLoaded, setFullLoaded] = useState(false);
-  const [fullLoadFailed, setFullLoadFailed] = useState(false);
-  const [manifest, setManifest] = useState<VocabularyManifest | null>(null);
 
   // Selected Word for Modal Inspector
   const [selectedModalWord, setSelectedModalWord] = useState<LexicalEntry | null>(null);
@@ -110,21 +107,25 @@ export const VocabularyExplorer: React.FC = () => {
   // Saved words mutation trigger
   const [savedUpdateCount, setSavedUpdateCount] = useState(0);
 
-  // Initial load: Core (~5,000 words) for instant hydration + Manifest
+  // Initial load: verified legacy set for instant hydration,
+  // then every verified chunk in the background
   useEffect(() => {
     let mounted = true;
     (async () => {
       setIsLoading(true);
       try {
         await loadVocabularyCore();
-        const m = await loadVocabularyManifest();
-        if (mounted) {
-          setManifest(m);
-          setIsLoading(false);
-        }
+        if (!mounted) return;
+        setIsLoading(false);
+        setIsFullLoading(true);
+        await loadFullVocabulary();
       } catch (err) {
         console.error('Failed to initialize vocabulary explorer:', err);
-        if (mounted) setIsLoading(false);
+      } finally {
+        if (mounted) {
+          setIsLoading(false);
+          setIsFullLoading(false);
+        }
       }
     })();
     return () => {
@@ -132,29 +133,11 @@ export const VocabularyExplorer: React.FC = () => {
     };
   }, []);
 
-  // When user types a specific search query or clicks to load full dataset
-  const handleLoadFullDatabase = async () => {
-    if (fullLoaded || isFullLoading) return;
-    setIsFullLoading(true);
-    playSound('click');
-    try {
-      await loadFullVocabulary();
-      setFullLoaded(true);
-      playSound('success');
-    } catch (err) {
-      console.error('Error loading full database:', err);
-      setFullLoadFailed(true);
-    } finally {
-      setIsFullLoading(false);
-    }
-  };
-
   // Reset page when any filter changes
   useEffect(() => {
     setPage(1);
-  }, [searchQuery, selectedCefr, selectedPos, selectedDomain, selectedFrequency, audioFilter, sortBy]);
+  }, [searchQuery, selectedCefr, selectedPos, selectedDomain, selectedFrequency, sortBy]);
 
-  // Execute Search & Filter
   const loadedCount = getLoadedVocabularyCount();
 
   const searchResults = useMemo(() => {
@@ -164,7 +147,6 @@ export const VocabularyExplorer: React.FC = () => {
       pos: selectedPos,
       domain: selectedDomain,
       frequencyTier: selectedFrequency,
-      audioFilter,
       sortBy,
       page,
       pageSize,
@@ -175,12 +157,11 @@ export const VocabularyExplorer: React.FC = () => {
     selectedPos,
     selectedDomain,
     selectedFrequency,
-    audioFilter,
     sortBy,
     page,
     pageSize,
     isLoading,
-    fullLoaded,
+    isFullLoading,
     savedUpdateCount,
   ]);
 
@@ -197,253 +178,198 @@ export const VocabularyExplorer: React.FC = () => {
     setSelectedPos('all');
     setSelectedDomain('all');
     setSelectedFrequency('all');
-    setAudioFilter('all');
     setSortBy('popular');
   };
 
-  const hasActiveFilters =
-    searchQuery !== '' ||
-    selectedCefr !== 'all' ||
-    selectedPos !== 'all' ||
-    selectedDomain !== 'all' ||
-    selectedFrequency !== 'all' ||
-    audioFilter !== 'all' ||
-    sortBy !== 'popular';
+  const activeChips: Array<{ key: string; label: string; clear: () => void }> = [];
+  if (searchQuery !== '') {
+    activeChips.push({ key: 'q', label: `بحث: ${searchQuery}`, clear: () => setSearchQuery('') });
+  }
+  if (selectedCefr !== 'all') {
+    activeChips.push({ key: 'cefr', label: selectedCefr, clear: () => setSelectedCefr('all') });
+  }
+  if (selectedPos !== 'all') {
+    activeChips.push({
+      key: 'pos',
+      label: POS_OPTIONS.find(p => p.id === selectedPos)?.label || selectedPos,
+      clear: () => setSelectedPos('all'),
+    });
+  }
+  if (selectedDomain !== 'all') {
+    activeChips.push({
+      key: 'domain',
+      label: DOMAIN_OPTIONS.find(d => d.id === selectedDomain)?.label || selectedDomain,
+      clear: () => setSelectedDomain('all'),
+    });
+  }
+  if (selectedFrequency !== 'all') {
+    activeChips.push({
+      key: 'freq',
+      label: FREQUENCY_OPTIONS.find(f => f.id === selectedFrequency)?.label || selectedFrequency,
+      clear: () => setSelectedFrequency('all'),
+    });
+  }
+  if (sortBy !== 'popular') {
+    activeChips.push({
+      key: 'sort',
+      label: SORT_OPTIONS.find(s => s.id === sortBy)?.label || sortBy,
+      clear: () => setSortBy('popular'),
+    });
+  }
+
+  const sheetFilterCount =
+    (selectedPos !== 'all' ? 1 : 0) +
+    (selectedDomain !== 'all' ? 1 : 0) +
+    (selectedFrequency !== 'all' ? 1 : 0) +
+    (sortBy !== 'popular' ? 1 : 0);
+
+  const hasActiveFilters = activeChips.length > 0;
+
+  const selectClass =
+    'w-full px-3 py-2.5 rounded-xl bg-[#09091a] border border-white/10 text-sm font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer';
 
   return (
-    <div className="space-y-8 text-right">
-      {/* Search & Dynamic Control Bar */}
-      <section className="glass-panel p-5 sm:p-7 rounded-3xl border border-white/10 space-y-6">
-        
-        {/* Main Search Input */}
-        <div className="relative">
-          <Search className="w-5 h-5 text-[#41e7ff] absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
-          <input
-            type="text"
-            dir="auto"
-            value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
-            placeholder="ابحث عن أي كلمة بالإنجليزية أو العربية (develop, project, يبتكر...)"
-            className="w-full pl-12 pr-12 py-3.5 sm:py-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm sm:text-base font-sans focus:outline-none focus:border-[#41e7ff] shadow-inner transition-colors"
-          />
-          {searchQuery && (
+    <div className="space-y-5 text-right">
+      {/* Search bar */}
+      <div className="relative">
+        <Search className="w-5 h-5 text-[#41e7ff] absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+        <input
+          type="text"
+          dir="auto"
+          value={searchQuery}
+          onChange={e => setSearchQuery(e.target.value)}
+          placeholder="ابحث بالإنجليزية أو العربية..."
+          className="w-full pl-12 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm sm:text-base font-sans focus:outline-none focus:border-[#41e7ff] shadow-inner transition-colors"
+        />
+        {searchQuery && (
+          <button
+            onClick={() => setSearchQuery('')}
+            className="absolute left-4 top-1/2 -translate-y-1/2 p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 cursor-pointer"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        )}
+      </div>
+
+      {/* CEFR chip row + filter button */}
+      <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1">
+          {CEFR_OPTIONS.map(c => (
             <button
-              onClick={() => setSearchQuery('')}
-              className="absolute left-4 top-1/2 -translate-y-1/2 p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 cursor-pointer"
+              key={c.id}
+              onClick={() => {
+                playSound('click');
+                setSelectedCefr(c.id);
+              }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer border ${
+                selectedCefr === c.id
+                  ? 'bg-[#c4ff55]/20 text-[#c4ff55] border-[#c4ff55]/50 shadow-sm'
+                  : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
+              }`}
             >
-              <X className="w-4 h-4" />
+              {c.label}
+            </button>
+          ))}
+        </div>
+        <button
+          onClick={() => {
+            playSound('click');
+            setIsFilterSheetOpen(true);
+          }}
+          className="relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all cursor-pointer shrink-0"
+        >
+          <SlidersHorizontal className="w-4 h-4" />
+          <span>فلاتر</span>
+          {sheetFilterCount > 0 && (
+            <span className="absolute -top-1.5 -left-1.5 w-4.5 h-4.5 min-w-[18px] min-h-[18px] px-0.5 rounded-full bg-[#c4ff55] text-[#09091a] text-[10px] font-black flex items-center justify-center">
+              {sheetFilterCount}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* Sticky count + view toggle */}
+      <div className="sticky top-2 z-20 flex flex-wrap items-center justify-between gap-2 px-3 py-2 rounded-2xl bg-[#0c0c20]/90 backdrop-blur-md border border-white/10">
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="text-xs text-white/70 font-bold">
+            <strong className="text-[#c4ff55]">{searchResults.totalMatches.toLocaleString()}</strong>
+            <span> كلمة</span>
+            <span className="text-white/40 text-[11px] mr-1.5">
+              (من {loadedCount.toLocaleString()} محققة)
+            </span>
+            {isFullLoading && (
+              <Loader2 className="w-3 h-3 inline-block animate-spin text-[#41e7ff] mr-1" />
+            )}
+          </div>
+          {activeChips.map(chip => (
+            <button
+              key={chip.key}
+              onClick={() => {
+                playSound('click');
+                chip.clear();
+              }}
+              className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-[11px] font-bold bg-[#41e7ff]/10 text-[#41e7ff] border border-[#41e7ff]/30 hover:bg-[#41e7ff]/20 transition-all cursor-pointer"
+            >
+              <span>{chip.label}</span>
+              <X className="w-3 h-3" />
+            </button>
+          ))}
+          {hasActiveFilters && (
+            <button
+              onClick={handleClearFilters}
+              className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-[11px] font-black text-red-400 hover:bg-red-500/10 transition-all cursor-pointer"
+            >
+              <RotateCcw className="w-3 h-3" />
+              <span>مسح الكل</span>
             </button>
           )}
         </div>
-
-        {/* Level Pills (CEFR) */}
-        <div className="space-y-2">
-          <div className="flex items-center justify-between text-xs text-white/60 font-bold">
-            <span>المستوى الأوروبي المرجعي (CEFR Level):</span>
-            <span className="text-[11px] text-[#41e7ff]">A1C2</span>
-          </div>
-          <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
-            {CEFR_OPTIONS.map(c => (
-              <button
-                key={c.id}
-                onClick={() => {
-                  playSound('click');
-                  setSelectedCefr(c.id);
-                }}
-                className={`px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer border ${
-                  selectedCefr === c.id
-                    ? 'bg-[#c4ff55]/20 text-[#c4ff55] border-[#c4ff55]/50 shadow-sm'
-                    : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
-                }`}
-              >
-                {c.label}
-              </button>
-            ))}
-          </div>
+        <div className="flex items-center p-0.5 rounded-lg bg-white/5 border border-white/10">
+          <button
+            onClick={() => setViewMode('grid')}
+            className={`p-1.5 rounded-md transition-all cursor-pointer ${
+              viewMode === 'grid' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
+            }`}
+            title="عرض شبكي"
+          >
+            <LayoutGrid className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => setViewMode('list')}
+            className={`p-1.5 rounded-md transition-all cursor-pointer ${
+              viewMode === 'list' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
+            }`}
+            title="عرض قائمة"
+          >
+            <List className="w-4 h-4" />
+          </button>
         </div>
-
-        {/* Dropdowns Row: POS, Domain, Frequency, Audio, Sorting */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-1">
-          {/* 1. Part of Speech */}
-          <div className="space-y-1">
-            <label className="text-[11px] font-bold text-white/60">نوع الكلمة (POS)</label>
-            <select
-              value={selectedPos}
-              onChange={e => setSelectedPos(e.target.value)}
-              className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
-            >
-              {POS_OPTIONS.map(p => (
-                <option key={p.id} value={p.id} className="bg-[#121124] text-white">
-                  {p.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* 2. Domain Taxonomy */}
-          <div className="space-y-1">
-            <label className="text-[11px] font-bold text-white/60">مجال الاستخدام (Domain)</label>
-            <select
-              value={selectedDomain}
-              onChange={e => setSelectedDomain(e.target.value)}
-              className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
-            >
-              {DOMAIN_OPTIONS.map(d => (
-                <option key={d.id} value={d.id} className="bg-[#121124] text-white">
-                  {d.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* 3. Frequency Tier */}
-          <div className="space-y-1">
-            <label className="text-[11px] font-bold text-white/60">درجة الشيوع (Frequency)</label>
-            <select
-              value={selectedFrequency}
-              onChange={e => setSelectedFrequency(e.target.value)}
-              className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
-            >
-              {FREQUENCY_OPTIONS.map(f => (
-                <option key={f.id} value={f.id} className="bg-[#121124] text-white">
-                  {f.label}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* 4. Audio Availability Filter */}
-          <div className="space-y-1">
-            <label className="text-[11px] font-bold text-white/60">الصوت والنطق (Audio)</label>
-            <select
-              value={audioFilter}
-              onChange={e => setAudioFilter(e.target.value as any)}
-              className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
-            >
-              <option value="all" className="bg-[#121124]">الكل (All Audio)</option>
-              <option value="has_us" className="bg-[#121124]">صوت أمريكي</option>
-              <option value="has_uk" className="bg-[#121124]">صوت بريطاني</option>
-              <option value="has_both" className="bg-[#121124]">صوت مزدوج (US + UK)</option>
-            </select>
-          </div>
-
-          {/* 5. Sort By */}
-          <div className="space-y-1">
-            <label className="text-[11px] font-bold text-white/60">الترتيب (Sort By)</label>
-            <select
-              value={sortBy}
-              onChange={e => setSortBy(e.target.value as any)}
-              className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/10 text-xs font-bold text-white focus:outline-none focus:border-[#41e7ff] cursor-pointer"
-            >
-              <option value="popular" className="bg-[#121124]">الأكثر استخداماً (Default)</option>
-              <option value="alpha_asc" className="bg-[#121124]">أبجدياً AZ</option>
-              <option value="alpha_desc" className="bg-[#121124]">أبجدياً ZA</option>
-              <option value="cefr_asc" className="bg-[#121124]">المستوى A1C2</option>
-              <option value="cefr_desc" className="bg-[#121124]">المستوى C2A1</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Active Filters Bar & View Switch */}
-        <div className="pt-3 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex flex-wrap items-center gap-2">
-            {hasActiveFilters && (
-              <button
-                onClick={handleClearFilters}
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-black bg-red-500/15 text-red-400 border border-red-500/30 hover:bg-red-500/25 transition-all cursor-pointer"
-              >
-                <RotateCcw className="w-3.5 h-3.5" />
-                <span>إعادة ضبط الفلاتر</span>
-              </button>
-            )}
-
-            <div className="text-xs text-white/70 font-bold">
-              <span>تم العثور على: </span>
-              <strong className="text-[#c4ff55] text-sm">
-                {searchResults.totalMatches.toLocaleString()}
-              </strong>
-              <span> كلمة مطابقة</span>
-              <span className="text-white/40 text-[11px] mr-2">
-                (من إجمالي {loadedCount.toLocaleString()} كلمة محمّلة)
-              </span>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2">
-            {/* Load full database trigger if not loaded */}
-            {!fullLoaded && !fullLoadFailed && (
-              <button
-                onClick={handleLoadFullDatabase}
-                disabled={isFullLoading}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30 hover:bg-[#ffd166]/25 transition-all cursor-pointer"
-                title="تفعيل البحث في كامل قاعدة البيانات"
-              >
-                {isFullLoading ? (
-                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                ) : (
-                  <Database className="w-3.5 h-3.5" />
-                )}
-                <span>تحميل قاعدة البيانات الكاملة</span>
-              </button>
-            )}
-            {fullLoadFailed && (
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-white/5 text-white/50 border border-white/10">
-                <Database className="w-3.5 h-3.5" />
-                قاعدة البيانات الكاملة غير متاحة حالياً
-              </span>
-            )}
-
-            {/* View Mode Toggle */}
-            <div className="flex items-center p-1 rounded-xl bg-white/5 border border-white/10">
-              <button
-                onClick={() => setViewMode('grid')}
-                className={`p-1.5 rounded-lg transition-all cursor-pointer ${
-                  viewMode === 'grid' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
-                }`}
-                title="عرض بطاقات شبكية"
-              >
-                <LayoutGrid className="w-4 h-4" />
-              </button>
-              <button
-                onClick={() => setViewMode('list')}
-                className={`p-1.5 rounded-lg transition-all cursor-pointer ${
-                  viewMode === 'list' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
-                }`}
-                title="عرض قائمة مدمجة"
-              >
-                <List className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
 
       {/* Words Grid / List Content */}
       {isLoading ? (
         <div className="p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <Loader2 className="w-10 h-10 text-[#41e7ff] animate-spin mx-auto" />
-          <p className="text-white/80 font-bold text-sm">
-            جارٍ تحميل وفهرسة بنك المفردات الذكي...
-          </p>
+          <p className="text-white/80 font-bold text-sm">جارٍ تحميل الكلمات المحققة...</p>
         </div>
       ) : searchResults.entries.length === 0 ? (
         <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto text-white/40">
             <Search className="w-8 h-8" />
           </div>
-          <h3 className="text-xl font-black text-white">لم يتم العثور على كلمات مطابقة</h3>
+          <h3 className="text-xl font-black text-white">مفيش كلمات مطابقة</h3>
           <p className="text-sm text-white/60 max-w-md mx-auto">
-            جرّب تغيير كلمات البحث، أو توسيع الفلاتر، أو اضغط زر إعادة الضبط لمشاهدة جميع الكلمات.
+            جرّب تغيير البحث أو توسيع الفلاتر.
           </p>
           <button
             onClick={handleClearFilters}
             className="px-4 py-2 rounded-xl bg-[#41e7ff] text-[#09091a] text-xs font-black hover:bg-[#70efff] transition-all cursor-pointer"
           >
-            إعادة ضبط الفلاتر
+            مسح الفلاتر
           </button>
         </div>
       ) : (
-        <div className="space-y-8">
+        <div className="space-y-6">
           <div
             className={
               viewMode === 'grid'
@@ -467,8 +393,7 @@ export const VocabularyExplorer: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl glass-panel border border-white/10">
               <div className="text-xs text-white/60 font-bold">
                 صفحة <strong className="text-white">{searchResults.page}</strong> من{' '}
-                <strong className="text-white">{searchResults.totalPages}</strong> (
-                {searchResults.totalMatches.toLocaleString()} كلمة)
+                <strong className="text-white">{searchResults.totalPages}</strong>
               </div>
 
               <div className="flex items-center gap-2">
@@ -484,7 +409,6 @@ export const VocabularyExplorer: React.FC = () => {
                   <span>السابق</span>
                 </button>
 
-                {/* Page Numbers */}
                 <div className="flex items-center gap-1">
                   {[...Array(Math.min(5, searchResults.totalPages))].map((_, i) => {
                     let pageNum = searchResults.page - 2 + i;
@@ -526,6 +450,97 @@ export const VocabularyExplorer: React.FC = () => {
         </div>
       )}
 
+      {/* Filter bottom sheet */}
+      {isFilterSheetOpen && (
+        <div className="fixed inset-0 z-50 flex items-end justify-center">
+          <div
+            className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+            onClick={() => setIsFilterSheetOpen(false)}
+          />
+          <div className="relative w-full max-w-lg bg-[#121124] border-t border-white/15 rounded-t-3xl p-6 space-y-5 text-right shadow-2xl">
+            <div className="flex items-center justify-between">
+              <h3 className="text-base font-black text-white">فلاتر البحث</h3>
+              <button
+                onClick={() => setIsFilterSheetOpen(false)}
+                className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-white/60">نوع الكلمة</label>
+              <select
+                value={selectedPos}
+                onChange={e => setSelectedPos(e.target.value)}
+                className={selectClass}
+              >
+                {POS_OPTIONS.map(p => (
+                  <option key={p.id} value={p.id} className="bg-[#121124] text-white">
+                    {p.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-white/60">المجال</label>
+              <select
+                value={selectedDomain}
+                onChange={e => setSelectedDomain(e.target.value)}
+                className={selectClass}
+              >
+                {DOMAIN_OPTIONS.map(d => (
+                  <option key={d.id} value={d.id} className="bg-[#121124] text-white">
+                    {d.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-white/60">درجة الشيوع</label>
+              <select
+                value={selectedFrequency}
+                onChange={e => setSelectedFrequency(e.target.value)}
+                className={selectClass}
+              >
+                {FREQUENCY_OPTIONS.map(f => (
+                  <option key={f.id} value={f.id} className="bg-[#121124] text-white">
+                    {f.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-white/60">الترتيب</label>
+              <select
+                value={sortBy}
+                onChange={e => setSortBy(e.target.value as any)}
+                className={selectClass}
+              >
+                {SORT_OPTIONS.map(s => (
+                  <option key={s.id} value={s.id} className="bg-[#121124] text-white">
+                    {s.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <button
+              onClick={() => {
+                playSound('click');
+                setIsFilterSheetOpen(false);
+              }}
+              className="w-full py-3 rounded-xl bg-[#c4ff55] text-[#09091a] text-sm font-black hover:bg-[#d4ff75] transition-all cursor-pointer"
+            >
+              عرض النتائج
+            </button>
+          </div>
+        </div>
+      )}
+
       {/* Comprehensive Word Detail Modal */}
       <WordDetailModal
         entry={selectedModalWord}
@@ -536,4 +551,3 @@ export const VocabularyExplorer: React.FC = () => {
     </div>
   );
 };
-
