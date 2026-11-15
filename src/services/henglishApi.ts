@@ -12,6 +12,7 @@ export interface ApiUser {
   name: string;
   email: string;
   created_at: string;
+  avatar: string | null;
 }
 
 export interface ApiAuthResult {
@@ -98,6 +99,23 @@ export async function apiGetMe(token: string): Promise<{ user: ApiUser } | null>
     return null;
   }
 }
+export async function apiUpdateMe(
+  token: string,
+  patch: { name?: string; avatar?: string | null }
+): Promise<{ user: ApiUser } | null> {
+  try {
+    const res = await fetch(`${API_BASE}/api/me`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+      body: JSON.stringify(patch),
+    });
+    if (!res.ok) return null;
+    return (await res.json()) as { user: ApiUser };
+  } catch {
+    return null;
+  }
+}
+
 
 function mapApiError(status: number, body: any): string {
   const fields = body && body.fields ? body.fields : {};

@@ -72,6 +72,7 @@ interface GoogleUserInfo {
   email?: string
   email_verified?: boolean
   name?: string
+  picture?: string
 }
 
 interface UserRow {
@@ -128,13 +129,13 @@ export async function finishGoogleLogin(request: Request, env: GoogleEnv, openSe
   const displayName = (info.name || mail.split('@')[0]).trim().slice(0, 60) || 'Learner'
 
   // 1) Known Google identity -> its account.
-  let user = await env.DB.prepare('SELECT id, name, email, created_at FROM users WHERE google_sub = ?')
+  let user = await env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE google_sub = ?')
     .bind(info.sub)
     .first<UserRow>()
 
   // 2) Same email already registered with a password -> link Google to that account.
   if (!user) {
-    const byEmail = await env.DB.prepare('SELECT id, name, email, created_at FROM users WHERE email = ?')
+    const byEmail = await env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE email = ?')
       .bind(mail)
       .first<UserRow>()
     if (byEmail) {
@@ -145,12 +146,17 @@ export async function finishGoogleLogin(request: Request, env: GoogleEnv, openSe
 
   // 3) Brand new learner -> create the account (no password; Google-only).
   if (!user) {
-    const res = await env.DB.prepare('INSERT INTO users (name, email, password_hash, google_sub) VALUES (?, ?, ?, ?)')
-      .bind(displayName, mail, '', info.sub)
+    const res = await env.DB.prepare('INSERT INTO users (name, email, password_hash, google_sub, avatar) VALUES (?, ?, ?, ?, ?)')
+      .bind(displayName, mail, '', info.sub, info.picture ?? null)
       .run()
-    user = (await env.DB.prepare('SELECT id, name, email, created_at FROM users WHERE id = ?')
+    user = (await env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?')
       .bind(Number(res.meta.last_row_id))
       .first<UserRow>())!
+  }
+
+  // Pull the Google profile picture when the account has no avatar yet.
+  if (info.picture && !(user as { avatar?: string | null }).avatar) {
+    await env.DB.prepare('UPDATE users SET avatar = ? WHERE id = ?').bind(info.picture, user.id).run()
   }
 
   const token = await openSession(env.DB, user.id)
