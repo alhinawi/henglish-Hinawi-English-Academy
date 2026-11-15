@@ -8983,6 +8983,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'I did not use to like vegetables, but now I love them.', arEg: 'ماكنتش بحب الخضار، بس دلوقتي بعشقه.' }, { en: 'We used to visit our grandparents every Friday.', arEg: 'كنا بنزور جدونا كل جمعة.' }],
   },
+  {
+    id: 'presentations-maria-50-phrases',
+    movieTitle: '50 English Phrases for Presentations - Maria Sheeran',
+    releaseYear: 2023,
+    director: 'Maria Sheeran',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Open Your Presentation Strong',
+    sceneDescription: '٥٠ عبارة برزنتيشن: الافتتاحية، الانتقال بين النقاط، والختام الواثق.',
+    youtubeId: 'Ri4zLmpyz-E',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Maria Sheeran (Official)',
+    dialogueQuote: 'Good morning everyone, and thank you all for being here today.',
+    actorName: 'Maria Sheeran',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ri4zLmpyz-E/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Maria Sheeran Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Good morning everyone, and thank you all for being here today.', arEg: 'صباح الخير يا جماعة، وشكرًا لوجودكم معانا النهارده.', arFusha: 'صباح الخير يا جماعة، وشكرًا لوجودكم معانا النهارده.', speaker: 'Instructor', keyWords: [{ word: 'thank you for being here', ipa: '', meaningAr: 'شكرًا لوجودكم', meaningEn: '' }, { word: 'everyone', ipa: '', meaningAr: 'يا جماعة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Let me start by giving you an overview of our plan.', arEg: 'خليني أبدأ بإنى أديكم نظرة عامة على خطتنا.', arFusha: 'خليني أبدأ بإنى أديكم نظرة عامة على خطتنا.', speaker: 'Instructor', keyWords: [{ word: 'let me start by', ipa: '', meaningAr: 'خليني أبدأ بـ', meaningEn: '' }, { word: 'overview', ipa: '', meaningAr: 'نظرة عامة', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Are there any questions so far?', arEg: 'فيه أي أسئلة لحد دلوقتي؟', arFusha: 'فيه أي أسئلة لحد دلوقتي؟', speaker: 'Instructor', keyWords: [{ word: 'any questions', ipa: '', meaningAr: 'أي أسئلة', meaningEn: '' }, { word: 'so far', ipa: '', meaningAr: 'لحد دلوقتي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'overview', type: 'cultural', meaningAr: 'نظرة عامة', meaningEn: '', egyptianEquivalent: 'نظرة عامة', exampleInScene: 'Let me give you an overview.' },      { term: 'so far', type: 'collocation', meaningAr: 'حتى الآن', meaningEn: '', egyptianEquivalent: 'لحد دلوقتي', exampleInScene: 'So far, so good.' },      { term: 'move on to', type: 'phrasal-verb', meaningAr: 'ينتقل إلى', meaningEn: '', egyptianEquivalent: 'ننتقل لـ', exampleInScene: 'Let us move on to the next point.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is a professional presentation opening?', questionAr: 'أنهي افتتاحية برزنتيشن احترافية؟', options: ['Good morning everyone, and thank you all for being here today.', 'Listen up people', 'I guess we should start', 'Okay whatever let us go'], correctIndex: 0, explanationAr: 'الافتتاحية الرسمية: تحية + شكر الحضور - بتديك ثقة من أول ثانية.' }
+    ],
+    speakingLines: [{ en: 'Good morning everyone, and thank you all for being here today.', arEg: 'صباح الخير يا جماعة، وشكرًا لوجودكم معانا النهارده.' }, { en: 'Let me start by giving you an overview of our plan.', arEg: 'خليني أبدأ بإنى أديكم نظرة عامة على خطتنا.' }],
+  },
+  {
+    id: 'presenting-derek-40-phrases',
+    movieTitle: '40 Phrases For Presenting In English - Business English - Derek Callan',
+    releaseYear: 2023,
+    director: 'Derek Callan',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Signpost and Summarize',
+    sceneDescription: 'عبارات الربط في البرزنتيشن: تقول النقطة الجاية، تلخص، وتختم بقوة.',
+    youtubeId: 'bgFNTuRYtKE',
+    startTime: 35,
+    endTime: 155,
+    clipDuration: '2:00',
+    videoSource: 'Derek Callan - English for Professionals (Official)',
+    dialogueQuote: 'To sum up, I would like to leave you with one final thought.',
+    actorName: 'Derek Callan',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/bgFNTuRYtKE/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Derek Callan Official',
+    subtitles: [
+      { id: 'sub-1', start: 40, end: 55, en: 'Moving on to my next point, let us look at the numbers.', arEg: 'بالانتقال للنقطة الجاية، خلينا نبص على الأرقام.', arFusha: 'بالانتقال للنقطة الجاية، خلينا نبص على الأرقام.', speaker: 'Instructor', keyWords: [{ word: 'moving on to', ipa: '', meaningAr: 'بالانتقال لـ', meaningEn: '' }, { word: 'look at', ipa: '', meaningAr: 'نبص على', meaningEn: '' }] },      { id: 'sub-2', start: 65, end: 80, en: 'As you can see from this slide, sales have doubled.', arEg: 'زي ما انتو شايفين من الشريحة دي، المبيعات اتضاعفت.', arFusha: 'زي ما انتو شايفين من الشريحة دي، المبيعات اتضاعفت.', speaker: 'Instructor', keyWords: [{ word: 'as you can see', ipa: '', meaningAr: 'زي ما انتو شايفين', meaningEn: '' }, { word: 'doubled', ipa: '', meaningAr: 'اتضاعفت', meaningEn: '' }] },      { id: 'sub-3', start: 90, end: 105, en: 'To sum up, I would like to leave you with one final thought.', arEg: 'باختصار، حابب أسيبكم مع فكرة أخيرة.', arFusha: 'باختصار، حابب أسيبكم مع فكرة أخيرة.', speaker: 'Instructor', keyWords: [{ word: 'to sum up', ipa: '', meaningAr: 'باختصار', meaningEn: '' }, { word: 'final thought', ipa: '', meaningAr: 'فكرة أخيرة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'move on to', type: 'phrasal-verb', meaningAr: 'ينتقل إلى', meaningEn: '', egyptianEquivalent: 'ننتقل لـ', exampleInScene: 'Moving on to the budget.' },      { term: 'to sum up', type: 'collocation', meaningAr: 'للتلخيص', meaningEn: '', egyptianEquivalent: 'باختصار', exampleInScene: 'To sum up, we did great.' },      { term: 'slide', type: 'cultural', meaningAr: 'شريحة عرض', meaningEn: '', egyptianEquivalent: 'شريحة', exampleInScene: 'Look at the next slide.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase starts your conclusion?', questionAr: 'أنهي عبارة بتبدأ بيها الخاتمة؟', options: ['To sum up', 'By the way', 'Guess what', 'Never mind'], correctIndex: 0, explanationAr: 'To sum up = باختصار - العبارة اللي بتقول للجمهور: الخلاصة جاية.' }
+    ],
+    speakingLines: [{ en: 'As you can see from this slide, sales have doubled.', arEg: 'زي ما انتو شايفين من الشريحة دي، المبيعات اتضاعفت.' }, { en: 'To sum up, I would like to leave you with one final thought.', arEg: 'باختصار، حابب أسيبكم مع فكرة أخيرة.' }],
+  },
+  {
+    id: 'online-meetings-maria-40',
+    movieTitle: '40 English Phrases You Need for Online Meetings - Maria Sheeran',
+    releaseYear: 2023,
+    director: 'Maria Sheeran',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Survive Any Zoom Call',
+    sceneDescription: 'عبارات الاجتماعات الأونلاين: الصوت، الشاشة، التقاطعات، والتأخير.',
+    youtubeId: 'PLhAzAymMsY',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Maria Sheeran (Official)',
+    dialogueQuote: 'You are on mute. Could you unmute yourself?',
+    actorName: 'Maria Sheeran',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/PLhAzAymMsY/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Maria Sheeran Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'You are on mute. Could you unmute yourself?', arEg: 'انت ميوت. ممكن تفتح المايك؟', arFusha: 'انت ميوت. ممكن تفتح المايك؟', speaker: 'Instructor', keyWords: [{ word: 'on mute', ipa: '', meaningAr: 'ميوت', meaningEn: '' }, { word: 'unmute yourself', ipa: '', meaningAr: 'تفتح المايك', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Let me share my screen with you.', arEg: 'خليني أشير الشاشة معاكم.', arFusha: 'خليني أشير الشاشة معاكم.', speaker: 'Instructor', keyWords: [{ word: 'share my screen', ipa: '', meaningAr: 'أشير الشاشة', meaningEn: '' }, { word: 'with you', ipa: '', meaningAr: 'معاكم', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Sorry, you broke up for a second. Could you repeat that?', arEg: 'متأسف، الصوت قطع ثانية. ممكن تعيد اللي قلته؟', arFusha: 'متأسف، الصوت قطع ثانية. ممكن تعيد اللي قلته؟', speaker: 'Instructor', keyWords: [{ word: 'broke up', ipa: '', meaningAr: 'الصوت قطع', meaningEn: '' }, { word: 'repeat that', ipa: '', meaningAr: 'تعيد اللي قلته', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'on mute', type: 'collocation', meaningAr: 'صامت', meaningEn: '', egyptianEquivalent: 'ميوت', exampleInScene: 'Sorry, I was on mute.' },      { term: 'share your screen', type: 'collocation', meaningAr: 'مشاركة الشاشة', meaningEn: '', egyptianEquivalent: 'تشير الشاشة', exampleInScene: 'Can you share your screen?' },      { term: 'break up', type: 'phrasal-verb', meaningAr: 'يتقطع (الصوت)', meaningEn: '', egyptianEquivalent: 'الصوت يقطع', exampleInScene: 'You are breaking up a little.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'The audio is cutting out. What do you say?', questionAr: 'الصوت بيقطع. تقول إيه؟', options: ['Sorry, you broke up for a second.', 'Your voice is ugly.', 'Stop talking forever.', 'I will hang up now.'], correctIndex: 0, explanationAr: 'Break up = الصوت بيقطع في المكالمة - أشهر مشكلة أونلاين وليها تعبيرها الخاص.' }
+    ],
+    speakingLines: [{ en: 'You are on mute. Could you unmute yourself?', arEg: 'انت ميوت. ممكن تفتح المايك؟' }, { en: 'Let me share my screen with you.', arEg: 'خليني أشير الشاشة معاكم.' }],
+  },
+  {
+    id: 'confident-meetings-harry-36',
+    movieTitle: 'Speak More Confidently in English Meetings - 36 Phrases - Harry',
+    releaseYear: 2022,
+    director: 'Learn English with Harry',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Jump Into the Discussion',
+    sceneDescription: '٣٦ عبارة تدخل بيها النقاش في الاجتماع: تقاطع بشياكة وتدافع عن رأيك.',
+    youtubeId: 'QOUOsneeB-w',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Harry (Official)',
+    dialogueQuote: 'Sorry to jump in, but I have a quick question.',
+    actorName: 'Harry',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/QOUOsneeB-w/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Harry Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Sorry to jump in, but I have a quick question.', arEg: 'متأسف إني هقاطعك، بس عندي سؤال سريع.', arFusha: 'متأسف إني هقاطعك، بس عندي سؤال سريع.', speaker: 'Instructor', keyWords: [{ word: 'jump in', ipa: '', meaningAr: 'أقاطع / أدخل النقاش', meaningEn: '' }, { word: 'quick question', ipa: '', meaningAr: 'سؤال سريع', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I would like to add something to what Sara said.', arEg: 'حابب أضيف حاجة على اللي سارة قالتها.', arFusha: 'حابب أضيف حاجة على اللي سارة قالتها.', speaker: 'Instructor', keyWords: [{ word: 'add something', ipa: '', meaningAr: 'أضيف حاجة', meaningEn: '' }, { word: 'what Sara said', ipa: '', meaningAr: 'اللي سارة قالته', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Could you clarify what you mean by that?', arEg: 'ممكن توضح تقصد إيه بالكلام ده؟', arFusha: 'ممكن توضح تقصد إيه بالكلام ده؟', speaker: 'Instructor', keyWords: [{ word: 'clarify', ipa: '', meaningAr: 'توضح', meaningEn: '' }, { word: 'what you mean', ipa: '', meaningAr: 'تقصد إيه', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'jump in', type: 'phrasal-verb', meaningAr: 'يقاطع بأدب', meaningEn: '', egyptianEquivalent: 'يدخل النقاش', exampleInScene: 'Can I jump in here?' },      { term: 'clarify', type: 'cultural', meaningAr: 'يوضح', meaningEn: '', egyptianEquivalent: 'يوضح', exampleInScene: 'Could you clarify that point?' },      { term: 'add', type: 'cultural', meaningAr: 'يضيف', meaningEn: '', egyptianEquivalent: 'يضيف', exampleInScene: 'May I add something?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you interrupt politely in a meeting?', questionAr: 'تقاطع حد في اجتماع بشياكة إزاي؟', options: ['Sorry to jump in, but I have a quick question.', 'Stop talking, my turn', 'You are wrong, listen', 'Be quiet a minute'], correctIndex: 0, explanationAr: 'Sorry to jump in = مقاطعة مهذبة - بتدخلك النقاش من غير ما تزعج حد.' }
+    ],
+    speakingLines: [{ en: 'Sorry to jump in, but I have a quick question.', arEg: 'متأسف إني هقاطعك، بس عندي سؤال سريع.' }, { en: 'Could you clarify what you mean by that?', arEg: 'ممكن توضح تقصد إيه بالكلام ده؟' }],
+  },
+  {
+    id: 'apologise-british-council',
+    movieTitle: 'How to Apologise in English - British Council',
+    releaseYear: 2021,
+    director: 'British Council',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Say Sorry Properly',
+    sceneDescription: 'المجلس الثقافي البريطاني بيعلمك تعتذر صح: غلطة صغيرة ولا كبيرة.',
+    youtubeId: 'T-IV_B3JGgk',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'British Council (Official)',
+    dialogueQuote: 'I am so sorry for being late. The traffic was terrible.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/T-IV_B3JGgk/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'British Council Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I am so sorry for being late. The traffic was terrible.', arEg: 'أنا متأسف جدًا على التأخير. الزحمة كانت فظيعة.', arFusha: 'أنا متأسف جدًا على التأخير. الزحمة كانت فظيعة.', speaker: 'Speaker', keyWords: [{ word: 'sorry for being late', ipa: '', meaningAr: 'متأسف على التأخير', meaningEn: '' }, { word: 'terrible', ipa: '', meaningAr: 'فظيعة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Please accept my apologies for the confusion.', arEg: 'أرجو تقبلوا اعتذاري عن اللخبطة دي.', arFusha: 'أرجو تقبلوا اعتذاري عن اللخبطة دي.', speaker: 'Speaker', keyWords: [{ word: 'accept my apologies', ipa: '', meaningAr: 'تقبلوا اعتذاري', meaningEn: '' }, { word: 'confusion', ipa: '', meaningAr: 'لخبطة', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'That is okay. These things happen.', arEg: 'ولا يهمك. الحاجات دي بتحصل.', arFusha: 'ولا يهمك. الحاجات دي بتحصل.', speaker: 'Speaker', keyWords: [{ word: 'that is okay', ipa: '', meaningAr: 'ولا يهمك', meaningEn: '' }, { word: 'these things happen', ipa: '', meaningAr: 'الحاجات دي بتحصل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'apologise', type: 'cultural', meaningAr: 'يعتذر', meaningEn: '', egyptianEquivalent: 'يعتذر', exampleInScene: 'He apologised for the mistake.' },      { term: 'my bad', type: 'slang', meaningAr: 'غلطتي', meaningEn: '', egyptianEquivalent: 'غلطتي (عامية)', exampleInScene: 'My bad, I forgot.' },      { term: 'these things happen', type: 'idiom', meaningAr: 'هذه الأمور تحدث', meaningEn: '', egyptianEquivalent: 'بتحصل عادي', exampleInScene: 'Do not worry, these things happen.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a natural response to an apology?', questionAr: 'إيه الرد الطبيعي على اعتذار؟', options: ['That is okay. These things happen.', 'I will never forgive you', 'Sorry is not enough ever', 'Do not talk to me'], correctIndex: 0, explanationAr: 'That is okay + These things happen = رد لطيف بيطمن الشخص اللي اعتذر.' }
+    ],
+    speakingLines: [{ en: 'I am so sorry for being late. The traffic was terrible.', arEg: 'أنا متأسف جدًا على التأخير. الزحمة كانت فظيعة.' }, { en: 'That is okay. These things happen.', arEg: 'ولا يهمك. الحاجات دي بتحصل.' }],
+  },
+  {
+    id: 'sorry-my-bad-excuse-pardon',
+    movieTitle: 'How To Use I\'m Sorry, My Bad, Excuse Me and Pardon in Everyday English',
+    releaseYear: 2023,
+    director: 'Business English Desk',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Choose the Right Sorry',
+    sceneDescription: 'الفرق بين Sorry و My Bad و Excuse Me و Pardon - وامتى تستخدم كل واحدة.',
+    youtubeId: 'S05qOis4T4I',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Business English Desk (Official)',
+    dialogueQuote: 'Excuse me, could I get past, please?',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/S05qOis4T4I/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Business English Desk Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Excuse me, could I get past, please?', arEg: 'لو سمحت، ممكن أعدي؟', arFusha: 'لو سمحت، ممكن أعدي؟', speaker: 'Instructor', keyWords: [{ word: 'excuse me', ipa: '', meaningAr: 'لو سمحت', meaningEn: '' }, { word: 'get past', ipa: '', meaningAr: 'أعدي', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Pardon? I did not quite catch that.', arEg: 'آسف مسمعتش، ممكن تعيد؟', arFusha: 'آسف مسمعتش، ممكن تعيد؟', speaker: 'Instructor', keyWords: [{ word: 'pardon', ipa: '', meaningAr: 'آسف مسمعتش', meaningEn: '' }, { word: 'did not catch that', ipa: '', meaningAr: 'مسمعتش', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'My bad! I sent the email to the wrong person.', arEg: 'غلطتي! بعت الإيميل لشخص غلط.', arFusha: 'غلطتي! بعت الإيميل لشخص غلط.', speaker: 'Instructor', keyWords: [{ word: 'my bad', ipa: '', meaningAr: 'غلطتي', meaningEn: '' }, { word: 'wrong person', ipa: '', meaningAr: 'شخص غلط', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'excuse me', type: 'collocation', meaningAr: 'عذرًا', meaningEn: '', egyptianEquivalent: 'لو سمحت', exampleInScene: 'Excuse me, where is the exit?' },      { term: 'pardon', type: 'collocation', meaningAr: 'عذرًا؟', meaningEn: '', egyptianEquivalent: 'آسف مسمعتش', exampleInScene: 'Pardon? Could you repeat that?' },      { term: 'my bad', type: 'slang', meaningAr: 'خطأي', meaningEn: '', egyptianEquivalent: 'غلطتي', exampleInScene: 'My bad, I forgot your call.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase do you use when you did not hear something?', questionAr: 'تستخدم أنهي عبارة لما تسمعش حاجة كويس؟', options: ['Pardon?', 'My bad!', 'Excuse me, get past', 'Bless you'], correctIndex: 0, explanationAr: 'Pardon? = مسمعتش - أشيك طريقة تطلب من حد يعيد كلامه.' }
+    ],
+    speakingLines: [{ en: 'Excuse me, could I get past, please?', arEg: 'لو سمحت، ممكن أعدي؟' }, { en: 'Pardon? I did not quite catch that.', arEg: 'آسف مسمعتش، ممكن تعيد؟' }],
+  },
+  {
+    id: 'congratulations-35-natural',
+    movieTitle: 'Don\'t Just Say Congratulations - 35 Natural Celebration Phrases',
+    releaseYear: 2023,
+    director: 'Speak English Daily',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Celebrate Good News',
+    sceneDescription: '٣٥ طريقة تهني بيها: نجاح، ترقية، جواز، وخطوبة - بعيد عن الكليشيهات.',
+    youtubeId: 'GHp9LtbvEFI',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Speak English Daily (Official)',
+    dialogueQuote: 'I am so happy for you! You totally deserve it.',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/GHp9LtbvEFI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English Daily Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I am so happy for you! You totally deserve it.', arEg: 'أنا فرحان جدًا عشانك! تستاهلها وبجدارة.', arFusha: 'أنا فرحان جدًا عشانك! تستاهلها وبجدارة.', speaker: 'Instructor', keyWords: [{ word: 'happy for you', ipa: '', meaningAr: 'فرحان عشانك', meaningEn: '' }, { word: 'deserve it', ipa: '', meaningAr: 'تستاهلها', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Well done! I knew you could do it.', arEg: 'برافو عليك! كنت عارف إنك هتقدر.', arFusha: 'برافو عليك! كنت عارف إنك هتقدر.', speaker: 'Instructor', keyWords: [{ word: 'well done', ipa: '', meaningAr: 'برافو', meaningEn: '' }, { word: 'I knew you could do it', ipa: '', meaningAr: 'كنت عارف إنك هتقدر', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Congratulations on the new job! When do you start?', arEg: 'مبروك الشغلانة الجديدة! هتبدأ امتى؟', arFusha: 'مبروك الشغلانة الجديدة! هتبدأ امتى؟', speaker: 'Instructor', keyWords: [{ word: 'congratulations on', ipa: '', meaningAr: 'مبروك', meaningEn: '' }, { word: 'when do you start', ipa: '', meaningAr: 'هتبدأ امتى', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'well done', type: 'collocation', meaningAr: 'أحسنت', meaningEn: '', egyptianEquivalent: 'برافو', exampleInScene: 'Well done on passing the exam!' },      { term: 'deserve', type: 'cultural', meaningAr: 'يستحق', meaningEn: '', egyptianEquivalent: 'يستاهل', exampleInScene: 'You deserve all the success.' },      { term: 'congratulations on', type: 'collocation', meaningAr: 'تهانينا بـ', meaningEn: '', egyptianEquivalent: 'مبروك', exampleInScene: 'Congratulations on your graduation!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Your friend passed a hard exam. What do you say?', questionAr: 'صاحبك نجح في امتحان صعب. تقول إيه؟', options: ['Well done! I knew you could do it.', 'Finally, it took forever', 'Lucky guess, right?', 'Exams are easy anyway'], correctIndex: 0, explanationAr: 'Well done + I knew you could do it = تهنئة بتدعم وتفرح بجد - أحسن من مبروك الجافة.' }
+    ],
+    speakingLines: [{ en: 'I am so happy for you! You totally deserve it.', arEg: 'أنا فرحان جدًا عشانك! تستاهلها وبجدارة.' }, { en: 'Congratulations on the new job! When do you start?', arEg: 'مبروك الشغلانة الجديدة! هتبدأ امتى؟' }],
+  },
+  {
+    id: 'describe-city-hannah',
+    movieTitle: 'How to Describe Your City or Town in English - Hannah Daily English',
+    releaseYear: 2023,
+    director: 'Hannah Daily English',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Paint a Picture of Your City',
+    sceneDescription: 'تتكلم عن مدينتك: حجمها، معالمها، مزاياها وعيوبها.',
+    youtubeId: 'qyY-Ex7GQiw',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Hannah Daily English (Official)',
+    dialogueQuote: 'My city is known for its busy markets and friendly people.',
+    actorName: 'Hannah',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/qyY-Ex7GQiw/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Hannah Daily English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'My city is known for its busy markets and friendly people.', arEg: 'مدينتي معروفة بأسواقها الزحمة وناسها الطيبين.', arFusha: 'مدينتي معروفة بأسواقها الزحمة وناسها الطيبين.', speaker: 'Instructor', keyWords: [{ word: 'known for', ipa: '', meaningAr: 'معروفة بـ', meaningEn: '' }, { word: 'busy markets', ipa: '', meaningAr: 'أسواق زحمة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'It is located on the coast, about two hours from the capital.', arEg: 'هي موجودة على البحر، حوالي ساعتين من العاصمة.', arFusha: 'هي موجودة على البحر، حوالي ساعتين من العاصمة.', speaker: 'Instructor', keyWords: [{ word: 'located', ipa: '', meaningAr: 'موجودة', meaningEn: '' }, { word: 'on the coast', ipa: '', meaningAr: 'على البحر', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'The only downside is the traffic in the city center.', arEg: 'العيب الوحيد هو الزحمة في وسط البلد.', arFusha: 'العيب الوحيد هو الزحمة في وسط البلد.', speaker: 'Instructor', keyWords: [{ word: 'downside', ipa: '', meaningAr: 'عيب', meaningEn: '' }, { word: 'city center', ipa: '', meaningAr: 'وسط البلد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'known for', type: 'collocation', meaningAr: 'مشهور بـ', meaningEn: '', egyptianEquivalent: 'معروف بـ', exampleInScene: 'Italy is known for its food.' },      { term: 'located', type: 'cultural', meaningAr: 'يقع', meaningEn: '', egyptianEquivalent: 'موجود (مكان)', exampleInScene: 'The hotel is located downtown.' },      { term: 'downside', type: 'cultural', meaningAr: 'جانب سلبي', meaningEn: '', egyptianEquivalent: 'عيب', exampleInScene: 'Every city has its downsides.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you mention a negative point politely?', questionAr: 'تتكلم عن نقطة سلبية في مدينتك إزاي؟', options: ['The only downside is the traffic.', 'My city is a disaster.', 'Everything is horrible here.', 'Do not visit ever.'], correctIndex: 0, explanationAr: 'The only downside is... = طريقة متوازنة تذكر بيها العيب من غير ما تشتم المكان.' }
+    ],
+    speakingLines: [{ en: 'My city is known for its busy markets and friendly people.', arEg: 'مدينتي معروفة بأسواقها الزحمة وناسها الطيبين.' }, { en: 'It is located on the coast, about two hours from the capital.', arEg: 'هي موجودة على البحر، حوالي ساعتين من العاصمة.' }],
+  },
+  {
+    id: 'describe-city-english-learner',
+    movieTitle: 'Tell Me About Your City - Describing Places in English',
+    releaseYear: 2022,
+    director: 'English Learner',
+    genre: 'Speaking Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Answer Where Are You From',
+    sceneDescription: 'تدريب بسيط: ترد على سؤال انت منين وتصف بلدك في جمل سهلة.',
+    youtubeId: 'S_vgzMcjV84',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'English Learner (Official)',
+    dialogueQuote: 'I come from Mansoura. It is a big city in the Nile Delta.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/S_vgzMcjV84/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Learner Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'I come from Mansoura. It is a big city in the Nile Delta.', arEg: 'أنا من المنصورة. هي مدينة كبيرة في الدلتا.', arFusha: 'أنا من المنصورة. هي مدينة كبيرة في الدلتا.', speaker: 'Speaker', keyWords: [{ word: 'come from', ipa: '', meaningAr: 'من / أصولي من', meaningEn: '' }, { word: 'Nile Delta', ipa: '', meaningAr: 'الدلتا', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'It is famous for its universities and hospitals.', arEg: 'هي مشهورة بجامعاتها ومستشفياتها.', arFusha: 'هي مشهورة بجامعاتها ومستشفياتها.', speaker: 'Speaker', keyWords: [{ word: 'famous for', ipa: '', meaningAr: 'مشهورة بـ', meaningEn: '' }, { word: 'universities', ipa: '', meaningAr: 'جامعات', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'There is always something to do on weekends.', arEg: 'دايمًا فيه حاجة تعملها في الويك إند.', arFusha: 'دايمًا فيه حاجة تعملها في الويك إند.', speaker: 'Speaker', keyWords: [{ word: 'there is always', ipa: '', meaningAr: 'دايمًا فيه', meaningEn: '' }, { word: 'something to do', ipa: '', meaningAr: 'حاجة تعملها', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'come from', type: 'phrasal-verb', meaningAr: 'يأتي من', meaningEn: '', egyptianEquivalent: 'يكون من (مدينة)', exampleInScene: 'I come from Egypt.' },      { term: 'famous for', type: 'collocation', meaningAr: 'مشهور بـ', meaningEn: '', egyptianEquivalent: 'مشهور بـ', exampleInScene: 'Paris is famous for the Eiffel Tower.' },      { term: 'capital', type: 'cultural', meaningAr: 'عاصمة', meaningEn: '', egyptianEquivalent: 'عاصمة', exampleInScene: 'Cairo is the capital of Egypt.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is the natural answer to \'Where are you from?\'', questionAr: 'إيه الرد الطبيعي على سؤال Where are you from؟', options: ['I come from Mansoura.', 'My city has people.', 'I live in a house.', 'Egypt is a country.'], correctIndex: 0, explanationAr: 'I come from + مدينتك = الرد المباشر والطبيعي - وبعدها جملة واحدة تصف المكان.' }
+    ],
+    speakingLines: [{ en: 'I come from Mansoura. It is a big city in the Nile Delta.', arEg: 'أنا من المنصورة. هي مدينة كبيرة في الدلتا.' }, { en: 'There is always something to do on weekends.', arEg: 'دايمًا فيه حاجة تعملها في الويك إند.' }],
+  },
+  {
+    id: 'public-transport-talkco',
+    movieTitle: 'Public Transportation English for Beginners - Bus, Train and Metro',
+    releaseYear: 2023,
+    director: 'Talkco English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Ride the Bus and Metro',
+    sceneDescription: 'مواصلات عامة بسهولة: تسأل عن الخط، تشتري تذكرة، وتعرف محطتك.',
+    youtubeId: 'P2BbGlNgNf8',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Talkco English (Official)',
+    dialogueQuote: 'Does this bus go to the city center?',
+    actorName: 'Host',
+    characterName: 'Passenger',
+    thumbnailUrl: 'https://img.youtube.com/vi/P2BbGlNgNf8/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Talkco English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Does this bus go to the city center?', arEg: 'الأوتوبيس ده بيروح وسط البلد؟', arFusha: 'الأوتوبيس ده بيروح وسط البلد؟', speaker: 'Passenger', keyWords: [{ word: 'go to', ipa: '', meaningAr: 'بيروح', meaningEn: '' }, { word: 'city center', ipa: '', meaningAr: 'وسط البلد', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Where can I buy a ticket for the metro?', arEg: 'أشتري تذكرة المترو منين؟', arFusha: 'أشتري تذكرة المترو منين؟', speaker: 'Passenger', keyWords: [{ word: 'buy a ticket', ipa: '', meaningAr: 'أشتري تذكرة', meaningEn: '' }, { word: 'metro', ipa: '', meaningAr: 'مترو', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'You need to change lines at the next station.', arEg: 'لازم تغير الخط في المحطة الجاية.', arFusha: 'لازم تغير الخط في المحطة الجاية.', speaker: 'Employee', keyWords: [{ word: 'change lines', ipa: '', meaningAr: 'تغير الخط', meaningEn: '' }, { word: 'next station', ipa: '', meaningAr: 'المحطة الجاية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'get on', type: 'phrasal-verb', meaningAr: 'يركب', meaningEn: '', egyptianEquivalent: 'يركب (مواصلات)', exampleInScene: 'Get on the bus at the stop.' },      { term: 'get off', type: 'phrasal-verb', meaningAr: 'ينزل', meaningEn: '', egyptianEquivalent: 'ينزل (من مواصلات)', exampleInScene: 'Get off at the third station.' },      { term: 'change lines', type: 'collocation', meaningAr: 'تغيير الخط', meaningEn: '', egyptianEquivalent: 'تغير الخط', exampleInScene: 'You change lines at Sadat.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the opposite of \'get on the bus\'?', questionAr: 'عكس get on the bus إيه؟', options: ['Get off the bus', 'Get up the bus', 'Get in the bus stop', 'Get out the bus'], correctIndex: 0, explanationAr: 'Get on = تركب، Get off = تنزل - أهم فعلين في أي مواصلات عامة.' }
+    ],
+    speakingLines: [{ en: 'Does this bus go to the city center?', arEg: 'الأوتوبيس ده بيروح وسط البلد؟' }, { en: 'You need to change lines at the next station.', arEg: 'لازم تغير الخط في المحطة الجاية.' }],
+  },
 ];
 
 // Helper to get all videos
