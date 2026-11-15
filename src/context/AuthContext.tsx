@@ -13,7 +13,6 @@ import {
   requestPasswordRecovery, 
   updatePassword, 
   signOutUser, 
-  switchDemoAccount, 
   switchGuestMode,
   SignUpParams,
   supabase,
@@ -36,10 +35,6 @@ interface AuthContextType {
   resendOtp: (email: string) => Promise<{ success: boolean; error?: string }>;
   forgotPassword: (email: string) => Promise<{ success: boolean; error?: string }>;
   resetPassword: (newPassword: string) => Promise<{ success: boolean; error?: string }>;
-  continueAsGuest: () => void;
-  loginDemoStudent: () => void;
-  loginDemoTeacher: () => void;
-  loginDemoAdmin: () => void;
   // Re-read the saved session from storage (used after the auth modal signs in/out directly).
   refreshSession: () => void;
 }
@@ -172,38 +167,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return await updatePassword(newPassword);
   };
 
-  const continueAsGuest = () => {
-    const guest = switchGuestMode();
-    setSession(guest);
-    if (typeof window !== 'undefined') {
-      window.location.hash = 'dashboard';
-    }
-  };
-
-  const loginDemoStudent = () => {
-    const demo = switchDemoAccount('student');
-    setSession(demo);
-    if (typeof window !== 'undefined') {
-      window.location.hash = 'dashboard';
-    }
-  };
-
-  const loginDemoTeacher = () => {
-    const demo = switchDemoAccount('teacher');
-    setSession(demo);
-    if (typeof window !== 'undefined') {
-      window.location.hash = 'teacher-dashboard';
-    }
-  };
-
-  const loginDemoAdmin = () => {
-    const demo = switchDemoAccount('admin');
-    setSession(demo);
-    if (typeof window !== 'undefined') {
-      window.location.hash = 'admin';
-    }
-  };
-
   const refreshSession = () => {
     setSession(getSavedAuthSession());
   };
@@ -224,10 +187,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     resendOtp,
     forgotPassword,
     resetPassword,
-    continueAsGuest,
-    loginDemoStudent,
-    loginDemoTeacher,
-    loginDemoAdmin,
     refreshSession,
   };
 

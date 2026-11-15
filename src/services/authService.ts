@@ -544,28 +544,6 @@ export function switchGuestMode(): AuthSessionState {
   return session;
 }
 
-export function migrateGuestProgressToAccount(accountName: string, accountEmail: string): AuthSessionState {
-  const guestSession = getSavedAuthSession();
-  const migratedProfile: UserProfile = {
-    ...guestSession.user,
-    id: `usr-${Date.now()}`,
-    name: accountName,
-    nameAr: accountName,
-    email: accountEmail,
-    role: 'student',
-  };
-
-  const session: AuthSessionState = {
-    type: 'authenticated',
-    user: migratedProfile,
-    isLoggedIn: true,
-    isEmailVerified: true,
-  };
-
-  saveAuthSession(session);
-  return session;
-}
-
 export function saveGuestLocalData(key: string, data: unknown): void {
   if (typeof window === 'undefined') return;
   try {
