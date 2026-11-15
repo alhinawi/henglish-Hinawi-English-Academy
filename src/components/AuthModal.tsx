@@ -1,11 +1,8 @@
-import React, { useState } from 'react';
-import { 
-  AuthSessionState, 
-  signInUser, 
-  signUpUser, 
-  switchDemoAccount, 
-  switchGuestMode, 
-  migrateGuestProgressToAccount 
+import React, { useState, useEffect } from 'react';
+import {
+  AuthSessionState,
+  signInUser,
+  signUpUser,
 } from '../services/authService';
 import { playSound, fireCelebration } from '../utils/audio';
 import {
@@ -38,7 +35,15 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   onSessionChange,
   initialTab = 'login',
 }) => {
-  const [activeTab, setActiveTab] = useState<'login' | 'register' | 'forgot' | 'demo' | 'migrate'>(initialTab);
+  const [activeTab, setActiveTab] = useState<'login' | 'register' | 'forgot'>(initialTab === 'register' ? 'register' : 'login');
+
+  // Honor the requested tab every time the modal opens (it stays mounted between opens)
+  useEffect(() => {
+    if (isOpen) {
+      setActiveTab(initialTab === 'register' ? 'register' : 'login');
+      setFeedbackMsg(null);
+    }
+  }, [isOpen, initialTab]);
 
   // Form states
   const [email, setEmail] = useState('');
@@ -75,8 +80,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email.trim() || !fullName.trim() || password.length < 6) {
-      setFeedbackMsg({ type: 'error', text: 'يرجى إدخال اسم صحيح وكلمة مرور من 6 خانات على الأقل.' });
+    if (!email.trim() || !fullName.trim() || password.length < 8) {
+      setFeedbackMsg({ type: 'error', text: 'يرجى إدخال اسم صحيح وكلمة مرور من 8 خانات على الأقل.' });
       return;
     }
 
@@ -107,26 +112,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
     setFeedbackMsg({ type: 'success', text: 'تم إرسال تعليمات إعادة ضبط كلمة المرور إلى بريدك بنجاح!' });
   };
 
-  const handleSelectDemo = (role: 'student' | 'teacher') => {
-    playSound('click');
-    const session = switchDemoAccount(role);
-    onSessionChange(session);
-    onClose();
-  };
-
-  const handleMigrateGuest = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!fullName.trim() || !email.trim()) {
-      setFeedbackMsg({ type: 'error', text: 'يرجى إدخال الاسم والبريد لربط التقدم بحسابك الجديد.' });
-      return;
-    }
-
-    const session = migrateGuestProgressToAccount(fullName, email);
-    playSound('correct');
-    fireCelebration();
-    onSessionChange(session);
-    onClose();
-  };
 
   return (
     <AnimatePresence>
@@ -162,13 +147,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
               <div>
                 <h3 className="text-lg font-black text-white">بوابة أكاديمية هناوي</h3>
-                <p className="text-xs text-[#b9b6d5]">إدارة الحسابات ووضع الزائر والـ Demo</p>
+                <p className="text-xs text-[#b9b6d5]">سجّل دخولك أو أنشئ حسابك المجاني</p>
               </div>
             </div>
           </div>
 
           {/* Navigation Tabs */}
-          <div className="grid grid-cols-4 gap-1 p-1 bg-black/40 rounded-2xl border border-white/10 text-xs font-bold">
+          <div className="grid grid-cols-2 gap-1 p-1 bg-black/40 rounded-2xl border border-white/10 text-xs font-bold">
             <button
               onClick={() => {
                 setActiveTab('login');
@@ -190,28 +175,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               }`}
             >
               تسجيل
-            </button>
-            <button
-              onClick={() => {
-                setActiveTab('demo');
-                setFeedbackMsg(null);
-              }}
-              className={`py-2 rounded-xl transition-all cursor-pointer ${
-                activeTab === 'demo' ? 'bg-[#41e7ff] text-[#0c0b20] font-black shadow-md' : 'text-[#b9b6d5] hover:text-white'
-              }`}
-            >
-              Demo
-            </button>
-            <button
-              onClick={() => {
-                setActiveTab('migrate');
-                setFeedbackMsg(null);
-              }}
-              className={`py-2 rounded-xl transition-all cursor-pointer ${
-                activeTab === 'migrate' ? 'bg-[#c4ff55] text-[#0c0b20] font-black shadow-md' : 'text-[#b9b6d5] hover:text-white'
-              }`}
-            >
-              حفظ الزائر
             </button>
           </div>
 
@@ -321,7 +284,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">كلمة المرور (6 خانات على الأقل):</label>
+                <label className="text-xs font-bold text-[#dedbf4]">كلمة المرور (8 خانات على الأقل):</label>
                 <div className="relative">
                   <input
                     type="password"
@@ -377,89 +340,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           )}
 
           {/* 4. DEMO ACCOUNTS SWITCHER */}
-          {activeTab === 'demo' && (
-            <div className="space-y-3">
-              <p className="text-xs text-[#b9b6d5]">
-                استكشف المنصة بحسابات تجريبية مهيأة مسبقاً بنقرة واحدة:
-              </p>
-
-              <button
-                type="button"
-                onClick={() => handleSelectDemo('student')}
-                className="w-full p-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-right flex items-center justify-between cursor-pointer group"
-              >
-                <div>
-                  <div className="text-sm font-black text-white group-hover:text-[#ffd166]">
-                    سارة عبد الرحمن (حساب طالب B1)
-                  </div>
-                  <div className="text-xs text-[#b9b6d5]">
-                    3,450 XP • استمرارية 14 يوماً • مسار المستقبل التام
-                  </div>
-                </div>
-                <ChevronLeft className="w-5 h-5 text-[#ffd166]" />
-              </button>
-
-              <button
-                type="button"
-                onClick={() => handleSelectDemo('teacher')}
-                className="w-full p-4 rounded-2xl bg-linear-to-r from-[#ffd166]/10 to-[#41e7ff]/10 hover:brightness-110 border border-[#ffd166]/30 text-right flex items-center justify-between cursor-pointer group"
-              >
-                <div>
-                  <div className="text-sm font-black text-[#ffd166]">
-                    أ. هناوي (حساب المعلم واستوديو المحتوى)‍
-                  </div>
-                  <div className="text-xs text-[#b9b6d5]">
-                    صلاحيات كاملة • إدارة الدروس والأسئلة • لوحة المعلم
-                  </div>
-                </div>
-                <ChevronLeft className="w-5 h-5 text-[#ffd166]" />
-              </button>
-            </div>
-          )}
-
-          {/* 5. MIGRATE GUEST PROGRESS */}
-          {activeTab === 'migrate' && (
-            <form onSubmit={handleMigrateGuest} className="space-y-4">
-              <div className="p-3.5 rounded-2xl bg-[#c4ff55]/10 border border-[#c4ff55]/30 text-xs text-[#c4ff55] leading-relaxed">
-                هل بدأت كزائر وترغب بحفظ إنجازاتك ونقاطك وشهاداتك دون فقدان أي بيانات؟ أدخل بياناتك لإنشاء حساب ونقل تقدمك فوراً!
-              </div>
-
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">الاسم الكامل:</label>
-                <input
-                  type="text"
-                  dir="auto"
-                  value={fullName}
-                  onChange={e => setFullName(e.target.value)}
-                  placeholder="اسمك لحفظ الشهادات"
-                  required
-                  className="w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
-                />
-              </div>
-
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">البريد الإلكتروني:</label>
-                <input
-                  type="email"
-                  dir="ltr"
-                  lang="en"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  placeholder="yourname@gmail.com"
-                  required
-                  className="english-input w-full px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#c4ff55]"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="w-full py-3 rounded-xl bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer"
-              >
-                حفظ وترحيل تقدم الزائر لحساب دائم
-              </button>
-            </form>
-          )}
-        </motion.div>
+          </motion.div>
       </div>
     </AnimatePresence>
   );

@@ -40,6 +40,8 @@ interface AuthContextType {
   loginDemoStudent: () => void;
   loginDemoTeacher: () => void;
   loginDemoAdmin: () => void;
+  // Re-read the saved session from storage (used after the auth modal signs in/out directly).
+  refreshSession: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -202,6 +204,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  const refreshSession = () => {
+    setSession(getSavedAuthSession());
+  };
+
   const value: AuthContextType = {
     session,
     user: session.user,
@@ -222,6 +228,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     loginDemoStudent,
     loginDemoTeacher,
     loginDemoAdmin,
+    refreshSession,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
