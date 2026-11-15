@@ -1,3 +1,5 @@
+import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
+import { LessonPhoto } from '../components/LessonPhotography';
 import React from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
@@ -164,7 +166,8 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
               key={lesson.id}
               className="glass-panel p-5 sm:p-6 rounded-2xl border border-white/10 hover:border-[#41e7ff]/40 transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
             >
-              <div className="space-y-1">
+              <LessonPhoto photo={LESSON_PHOTOGRAPHY[lesson.id][0]} className="h-40 rounded-xl sm:h-28 sm:w-40 shrink-0" />
+              <div className="space-y-1 flex-1">
                 <div className="flex items-center gap-2">
                   <span className="en font-black text-xs text-[#ffd166]">
                     MODULE 0{lesson.number}
