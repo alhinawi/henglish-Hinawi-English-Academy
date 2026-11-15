@@ -10033,6 +10033,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'We need to reduce our carbon footprint before it is too late.', arEg: 'لازم نقلل البصمة الكربونية بتاعتنا قبل ما يفوت الأوان.' }, { en: 'Small changes in our daily habits can make a big difference.', arEg: 'تغييرات صغيرة في عاداتنا اليومية ممكن تعمل فرق كبير.' }],
   },
+  {
+    id: 'dentist-vanessa-confident',
+    movieTitle: 'Speak English Confidently at the Dentist - Vanessa',
+    releaseYear: 2022,
+    director: 'Speak English With Vanessa',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Describe Tooth Pain',
+    sceneDescription: 'فانيسا بتجهزك لدكتور الأسنان: توصف الوجع وتفهم تعليمات الدكتور.',
+    youtubeId: 'EjeNiWFyWq0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'I have a sharp pain in my back tooth when I chew.',
+    actorName: 'Vanessa',
+    characterName: 'Patient',
+    thumbnailUrl: 'https://img.youtube.com/vi/EjeNiWFyWq0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I have a sharp pain in my back tooth when I chew.', arEg: 'عندي وجع حاد في الضرس اللي ورا لما بمضغ.', arFusha: 'عندي وجع حاد في الضرس اللي ورا لما بمضغ.', speaker: 'Patient', keyWords: [{ word: 'sharp pain', ipa: '', meaningAr: 'وجع حاد', meaningEn: '' }, { word: 'when I chew', ipa: '', meaningAr: 'لما بمضغ', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Your gums look a little swollen. We may need a filling.', arEg: 'لثتك شكلها منتفخة شوية. ممكن نحتاج حشو.', arFusha: 'لثتك شكلها منتفخة شوية. ممكن نحتاج حشو.', speaker: 'Dentist', keyWords: [{ word: 'gums', ipa: '', meaningAr: 'لثة', meaningEn: '' }, { word: 'filling', ipa: '', meaningAr: 'حشو', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Try to avoid very cold drinks for a few days.', arEg: 'حاول تبعد عن المشروبات الساقعة جدًا لكام يوم.', arFusha: 'حاول تبعد عن المشروبات الساقعة جدًا لكام يوم.', speaker: 'Dentist', keyWords: [{ word: 'avoid', ipa: '', meaningAr: 'تبعد عن', meaningEn: '' }, { word: 'for a few days', ipa: '', meaningAr: 'لكام يوم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'cavity', type: 'cultural', meaningAr: 'تسوس', meaningEn: '', egyptianEquivalent: 'تسوس', exampleInScene: 'The dentist found a cavity.' },      { term: 'filling', type: 'cultural', meaningAr: 'حشوة', meaningEn: '', egyptianEquivalent: 'حشوة ضرس', exampleInScene: 'I need a filling.' },      { term: 'swollen', type: 'cultural', meaningAr: 'منتفخ', meaningEn: '', egyptianEquivalent: 'ورم / منتفخ', exampleInScene: 'My gum is swollen.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you describe chewing pain?', questionAr: 'توصف وجع المضغ إزاي؟', options: ['I have a sharp pain when I chew.', 'My tooth is crying.', 'Eating makes angry teeth.', 'My mouth is broken.'], correctIndex: 0, explanationAr: 'Sharp pain + when I chew = وصف دقيق يخلّي الدكتور يشخص بسرعة.' }
+    ],
+    speakingLines: [{ en: 'I have a sharp pain in my back tooth when I chew.', arEg: 'عندي وجع حاد في الضرس اللي ورا لما بمضغ.' }, { en: 'Try to avoid very cold drinks for a few days.', arEg: 'حاول تبعد عن المشروبات الساقعة جدًا لكام يوم.' }],
+  },
+  {
+    id: 'dentist-10-minutes-course',
+    movieTitle: '10 Minutes to Improve Your English - Conversation at the Dentist',
+    releaseYear: 2023,
+    director: 'English Speaking Course',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Book and Sit in the Chair',
+    sceneDescription: 'من تحجز ميعادك عند دكتور الأسنان لحد ما تقعد على الكرسي.',
+    youtubeId: '-6PlqMt2ZXs',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'English Speaking Course (Official)',
+    dialogueQuote: 'I would like to make an appointment for a check-up.',
+    actorName: 'Host',
+    characterName: 'Patient',
+    thumbnailUrl: 'https://img.youtube.com/vi/-6PlqMt2ZXs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking Course Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'I would like to make an appointment for a check-up.', arEg: 'عايز أحجز ميعاد للكشف.', arFusha: 'عايز أحجز ميعاد للكشف.', speaker: 'Patient', keyWords: [{ word: 'make an appointment', ipa: '', meaningAr: 'أحجز ميعاد', meaningEn: '' }, { word: 'check-up', ipa: '', meaningAr: 'كشف', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'Open wide, please. This will only take a minute.', arEg: 'افتح بقك كويس لو سمحت. ده هياخد دقيقة بس.', arFusha: 'افتح بقك كويس لو سمحت. ده هياخد دقيقة بس.', speaker: 'Dentist', keyWords: [{ word: 'open wide', ipa: '', meaningAr: 'افتح كويس', meaningEn: '' }, { word: 'take a minute', ipa: '', meaningAr: 'ياخد دقيقة', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'Do not forget to floss every day.', arEg: 'متنساش تستخدم خيط الأسنان كل يوم.', arFusha: 'متنساش تستخدم خيط الأسنان كل يوم.', speaker: 'Dentist', keyWords: [{ word: 'floss', ipa: '', meaningAr: 'خيط الأسنان', meaningEn: '' }, { word: 'every day', ipa: '', meaningAr: 'كل يوم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'appointment', type: 'cultural', meaningAr: 'موعد', meaningEn: '', egyptianEquivalent: 'ميعاد', exampleInScene: 'I have a dentist appointment.' },      { term: 'check-up', type: 'cultural', meaningAr: 'فحص', meaningEn: '', egyptianEquivalent: 'كشف دوري', exampleInScene: 'Time for my yearly check-up.' },      { term: 'floss', type: 'cultural', meaningAr: 'يستخدم خيط الأسنان', meaningEn: '', egyptianEquivalent: 'يستخدم خيط الأسنان', exampleInScene: 'You should floss daily.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'open wide\' mean at the dentist?', questionAr: 'يعني إيه open wide عند دكتور الأسنان؟', options: ['افتح بقك كويس', 'افتح الشباك', 'خد نفس عميق', 'اقفل عينيك'], correctIndex: 0, explanationAr: 'Open wide = افتح بقك على الآخر - أول جملة هتسمعها وأنت على الكرسي.' }
+    ],
+    speakingLines: [{ en: 'I would like to make an appointment for a check-up.', arEg: 'عايز أحجز ميعاد للكشف.' }, { en: 'Do not forget to floss every day.', arEg: 'متنساش تستخدم خيط الأسنان كل يوم.' }],
+  },
+  {
+    id: 'appointment-telephone-home',
+    movieTitle: 'Making an Appointment - Telephone English - english-at-home',
+    releaseYear: 2021,
+    director: 'english-at-home.com',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Book Over the Phone',
+    sceneDescription: 'تحجز ميعاد في التليفون: تختار اليوم والساعة وتأكد الحجز.',
+    youtubeId: 'ka-dwb-O-uE',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'english-at-home.com (Official)',
+    dialogueQuote: 'Do you have anything available on Thursday morning?',
+    actorName: 'Host',
+    characterName: 'Caller',
+    thumbnailUrl: 'https://img.youtube.com/vi/ka-dwb-O-uE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'english-at-home Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Do you have anything available on Thursday morning?', arEg: 'فيه أي ميعاد متاح يوم الخميس الصبح؟', arFusha: 'فيه أي ميعاد متاح يوم الخميس الصبح؟', speaker: 'Caller', keyWords: [{ word: 'available', ipa: '', meaningAr: 'متاح', meaningEn: '' }, { word: 'on Thursday morning', ipa: '', meaningAr: 'الخميس الصبح', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'We have a slot at ten thirty, if that suits you.', arEg: 'فيه ميعاد الساعة ١٠ ونص، لو ده يناسبك.', arFusha: 'فيه ميعاد الساعة ١٠ ونص، لو ده يناسبك.', speaker: 'Receptionist', keyWords: [{ word: 'slot', ipa: '', meaningAr: 'ميعاد', meaningEn: '' }, { word: 'suits you', ipa: '', meaningAr: 'يناسبك', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Could I take your name and phone number, please?', arEg: 'ممكن اسمك ورقم تليفونك لو سمحت؟', arFusha: 'ممكن اسمك ورقم تليفونك لو سمحت؟', speaker: 'Receptionist', keyWords: [{ word: 'could I take', ipa: '', meaningAr: 'ممكن أاخد', meaningEn: '' }, { word: 'phone number', ipa: '', meaningAr: 'رقم تليفون', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'available', type: 'cultural', meaningAr: 'متاح', meaningEn: '', egyptianEquivalent: 'متاح / فاضي', exampleInScene: 'Is the doctor available today?' },      { term: 'slot', type: 'cultural', meaningAr: 'موعد', meaningEn: '', egyptianEquivalent: 'ميعاد / خانة', exampleInScene: 'We have one slot left.' },      { term: 'suit', type: 'cultural', meaningAr: 'يناسب', meaningEn: '', egyptianEquivalent: 'يناسب', exampleInScene: 'Does Tuesday suit you?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about free appointment times?', questionAr: 'تسأل عن المواعيد الفاضية إزاي؟', options: ['Do you have anything available on Thursday?', 'When is your lunch break?', 'Is the shop closed?', 'Who is free now?'], correctIndex: 0, explanationAr: 'Do you have anything available on... = سؤال المواعيد القياسي في أي عيادة أو مكتب.' }
+    ],
+    speakingLines: [{ en: 'Do you have anything available on Thursday morning?', arEg: 'فيه أي ميعاد متاح يوم الخميس الصبح؟' }, { en: 'We have a slot at ten thirty, if that suits you.', arEg: 'فيه ميعاد الساعة ١٠ ونص، لو ده يناسبك.' }],
+  },
+  {
+    id: 'advice-should-explained',
+    movieTitle: 'Giving Advice - SHOULD + Practice - American English',
+    releaseYear: 2021,
+    director: 'English Explained Vids',
+    genre: 'Grammar Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Give Great Advice',
+    sceneDescription: 'قاعدة should بالتدريب: تنصح صاحبك في المرض والشغل والدراسة.',
+    youtubeId: '7xuZG_YN-Yo',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English Explained Vids (Official)',
+    dialogueQuote: 'You look tired. You should get some rest.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/7xuZG_YN-Yo/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Explained Vids Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'You look tired. You should get some rest.', arEg: 'شكلك تعبان. المفروض ترتاح شوية.', arFusha: 'شكلك تعبان. المفروض ترتاح شوية.', speaker: 'Speaker', keyWords: [{ word: 'look tired', ipa: '', meaningAr: 'شكلك تعبان', meaningEn: '' }, { word: 'get some rest', ipa: '', meaningAr: 'ترتاح شوية', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'If I were you, I would talk to the manager directly.', arEg: 'لو كنت مكانك، كنت هكلم المدير على طول.', arFusha: 'لو كنت مكانك، كنت هكلم المدير على طول.', speaker: 'Speaker', keyWords: [{ word: 'if I were you', ipa: '', meaningAr: 'لو كنت مكانك', meaningEn: '' }, { word: 'directly', ipa: '', meaningAr: 'على طول', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'You had better not miss the deadline again.', arEg: 'الأحسن متأخرش عن الميعاد النهائي تاني.', arFusha: 'الأحسن متأخرش عن الميعاد النهائي تاني.', speaker: 'Speaker', keyWords: [{ word: 'had better not', ipa: '', meaningAr: 'الأحسن متـ...ش', meaningEn: '' }, { word: 'miss the deadline', ipa: '', meaningAr: 'تأخر عن الميعاد', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'should', type: 'cultural', meaningAr: 'يجب أن', meaningEn: '', egyptianEquivalent: 'المفروض / الأحسن', exampleInScene: 'You should see a doctor.' },      { term: 'if I were you', type: 'collocation', meaningAr: 'لو كنت مكانك', meaningEn: '', egyptianEquivalent: 'لو كنت مكانك', exampleInScene: 'If I were you, I would apologize.' },      { term: 'had better', type: 'cultural', meaningAr: 'من الأفضل أن', meaningEn: '', egyptianEquivalent: 'الأحسن', exampleInScene: 'You had better hurry up.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is the strongest advice phrase?', questionAr: 'أنهي أقوى صيغة نصيحة؟', options: ['You had better not miss the deadline.', 'Maybe you could think about it', 'It is your life', 'Whatever happens happens'], correctIndex: 0, explanationAr: 'Had better = نصيحة قوية فيها تحذير خفيف - أقوى من should بدرجة.' }
+    ],
+    speakingLines: [{ en: 'You look tired. You should get some rest.', arEg: 'شكلك تعبان. المفروض ترتاح شوية.' }, { en: 'If I were you, I would talk to the manager directly.', arEg: 'لو كنت مكانك، كنت هكلم المدير على طول.' }],
+  },
+  {
+    id: 'future-plans-panda',
+    movieTitle: 'Future Plans in English Conversation - Will, Going to and Present Continuous',
+    releaseYear: 2022,
+    director: 'English Panda',
+    genre: 'Grammar Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Talk About Tomorrow',
+    sceneDescription: 'الفرق بين will و going to والمضارع المستمر للمستقبل - بمحادثات حقيقية.',
+    youtubeId: '79Yxp84s0KI',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English Panda (Official)',
+    dialogueQuote: 'I am meeting my friends for dinner tonight.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/79Yxp84s0KI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Panda Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I am meeting my friends for dinner tonight.', arEg: 'أنا قابل صحابي على العشا الليلة.', arFusha: 'أنا قابل صحابي على العشا الليلة.', speaker: 'Speaker', keyWords: [{ word: 'meeting', ipa: '', meaningAr: 'قابل', meaningEn: '' }, { word: 'tonight', ipa: '', meaningAr: 'الليلة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'We are going to travel to Greece next summer.', arEg: 'إحنا ناويين نسافر اليونان الصيف الجاي.', arFusha: 'إحنا ناويين نسافر اليونان الصيف الجاي.', speaker: 'Speaker', keyWords: [{ word: 'going to travel', ipa: '', meaningAr: 'ناويين نسافر', meaningEn: '' }, { word: 'next summer', ipa: '', meaningAr: 'الصيف الجاي', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'I will probably stay home and watch a series.', arEg: 'غالبًا هقعد في البيت وأتفرج على مسلسل.', arFusha: 'غالبًا هقعد في البيت وأتفرج على مسلسل.', speaker: 'Speaker', keyWords: [{ word: 'probably', ipa: '', meaningAr: 'غالبًا', meaningEn: '' }, { word: 'stay home', ipa: '', meaningAr: 'أقعد في البيت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'going to', type: 'cultural', meaningAr: 'سوف', meaningEn: '', egyptianEquivalent: 'ناوي على', exampleInScene: 'I am going to study tonight.' },      { term: 'probably', type: 'cultural', meaningAr: 'على الأرجح', meaningEn: '', egyptianEquivalent: 'غالبًا', exampleInScene: 'I will probably come.' },      { term: 'plan', type: 'cultural', meaningAr: 'خطة', meaningEn: '', egyptianEquivalent: 'خطة', exampleInScene: 'What is the plan for Friday?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which sentence shows a fixed arrangement?', questionAr: 'أنهي جملة بتعبر عن ترتيب مؤكد؟', options: ['I am meeting my friends tonight.', 'Maybe I will see them', 'I might go out', 'I could meet someone'], correctIndex: 0, explanationAr: 'المضارع المستمر للمستقبل = ترتيب مظبوط بمعاد وناس - مش مجرد نية.' }
+    ],
+    speakingLines: [{ en: 'I am meeting my friends for dinner tonight.', arEg: 'أنا قابل صحابي على العشا الليلة.' }, { en: 'We are going to travel to Greece next summer.', arEg: 'إحنا ناويين نسافر اليونان الصيف الجاي.' }],
+  },
+  {
+    id: 'future-plans-mr-english',
+    movieTitle: 'Talking About Future Plans in English - English Speaking Practice',
+    releaseYear: 2023,
+    director: 'Mr. English Channel',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'What Are Your Plans?',
+    sceneDescription: 'محادثة بسيطة عن الخطط الجاية: الويك إند، الأجازة، والسنة الجديدة.',
+    youtubeId: '6M4yTipgffk',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Mr. English Channel (Official)',
+    dialogueQuote: 'What are you going to do this weekend?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/6M4yTipgffk/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Mr. English Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'What are you going to do this weekend?', arEg: 'هتعمل إيه في الويك إند ده؟', arFusha: 'هتعمل إيه في الويك إند ده؟', speaker: 'Speaker', keyWords: [{ word: 'going to do', ipa: '', meaningAr: 'هتعمل', meaningEn: '' }, { word: 'this weekend', ipa: '', meaningAr: 'الويك إند ده', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'I am going to visit my family in the countryside.', arEg: 'هزور عيلتي في الريف.', arFusha: 'هزور عيلتي في الريف.', speaker: 'Speaker', keyWords: [{ word: 'visit', ipa: '', meaningAr: 'أزور', meaningEn: '' }, { word: 'countryside', ipa: '', meaningAr: 'ريف', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'Next year, I hope to start my own business.', arEg: 'السنة الجاية، نفسي أبدأ البيزنس بتاعي.', arFusha: 'السنة الجاية، نفسي أبدأ البيزنس بتاعي.', speaker: 'Speaker', keyWords: [{ word: 'next year', ipa: '', meaningAr: 'السنة الجاية', meaningEn: '' }, { word: 'start my own business', ipa: '', meaningAr: 'أبدأ بيزنس خاص بيا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'weekend', type: 'cultural', meaningAr: 'عطلة نهاية الأسبوع', meaningEn: '', egyptianEquivalent: 'ويك إند', exampleInScene: 'See you this weekend!' },      { term: 'hope to', type: 'collocation', meaningAr: 'يأمل أن', meaningEn: '', egyptianEquivalent: 'نفسي / أتمنى', exampleInScene: 'I hope to graduate soon.' },      { term: 'own business', type: 'collocation', meaningAr: 'مشروع خاص', meaningEn: '', egyptianEquivalent: 'بيزنس خاص', exampleInScene: 'She started her own business.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about weekend plans?', questionAr: 'تسأل عن خطط الويك إند إزاي؟', options: ['What are you going to do this weekend?', 'What did the weekend do?', 'When is weekend coming?', 'Who is the weekend?'], correctIndex: 0, explanationAr: 'What are you going to do this weekend? = سؤال الخميس الكلاسيكي في أي شغل.' }
+    ],
+    speakingLines: [{ en: 'What are you going to do this weekend?', arEg: 'هتعمل إيه في الويك إند ده؟' }, { en: 'Next year, I hope to start my own business.', arEg: 'السنة الجاية، نفسي أبدأ البيزنس بتاعي.' }],
+  },
+  {
+    id: 'tell-story-past-oxford',
+    movieTitle: 'How to Tell a Story in English - Using Past Tense - Oxford',
+    releaseYear: 2021,
+    director: 'Oxford Online English',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B2',
+    sceneTitle: 'Tell a Story That Grips People',
+    sceneDescription: 'أكسفورد بتعلمك تحكي قصة: الترتيب، الأزمنة، والتشويق.',
+    youtubeId: 'm04lQ5BUAn0',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'You will never guess what happened to me on the way here!',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/m04lQ5BUAn0/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'You will never guess what happened to me on the way here!', arEg: 'مش هتصدق اللي حصلي وأنا في الطريق لحد هنا!', arFusha: 'مش هتصدق اللي حصلي وأنا في الطريق لحد هنا!', speaker: 'Instructor', keyWords: [{ word: 'you will never guess', ipa: '', meaningAr: 'مش هتصدق', meaningEn: '' }, { word: 'on the way', ipa: '', meaningAr: 'في الطريق', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'While I was walking to the station, it started pouring with rain.', arEg: 'بينما كنت ماشي للمحطة، الدنيا بدأت تمطر جامد.', arFusha: 'بينما كنت ماشي للمحطة، الدنيا بدأت تمطر جامد.', speaker: 'Instructor', keyWords: [{ word: 'while I was walking', ipa: '', meaningAr: 'بينما كنت ماشي', meaningEn: '' }, { word: 'pouring with rain', ipa: '', meaningAr: 'مطر جامد', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Anyway, to cut a long story short, I missed the train.', arEg: 'المهم، عشان نقصر الحكاية، القطر فاتني.', arFusha: 'المهم، عشان نقصر الحكاية، القطر فاتني.', speaker: 'Instructor', keyWords: [{ word: 'to cut a long story short', ipa: '', meaningAr: 'نقصر الحكاية', meaningEn: '' }, { word: 'missed', ipa: '', meaningAr: 'فاتني', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'you will never guess', type: 'collocation', meaningAr: 'لن تخمن أبدًا', meaningEn: '', egyptianEquivalent: 'مش هتصدق', exampleInScene: 'You will never guess who I met!' },      { term: 'pouring with rain', type: 'collocation', meaningAr: 'مطر غزير', meaningEn: '', egyptianEquivalent: 'مطر جامد', exampleInScene: 'It was pouring with rain.' },      { term: 'to cut a long story short', type: 'idiom', meaningAr: 'باختصار', meaningEn: '', egyptianEquivalent: 'المهم / نختصر', exampleInScene: 'To cut a long story short, we won.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase skips boring details in a story?', questionAr: 'أنهي عبارة بتتخطى التفاصيل المملة في الحكاية؟', options: ['To cut a long story short', 'At the very beginning', 'Every single detail', 'Once upon a time'], correctIndex: 0, explanationAr: 'To cut a long story short = بتوصل للخلاصة على طول - بتخلي حكايتك أشيق.' }
+    ],
+    speakingLines: [{ en: 'You will never guess what happened to me on the way here!', arEg: 'مش هتصدق اللي حصلي وأنا في الطريق لحد هنا!' }, { en: 'Anyway, to cut a long story short, I missed the train.', arEg: 'المهم، عشان نقصر الحكاية، القطر فاتني.' }],
+  },
+  {
+    id: 'tell-great-story-mmmenglish',
+    movieTitle: 'Tell a Great Story in English - Speaking Practice Lesson - mmmEnglish',
+    releaseYear: 2021,
+    director: 'mmmEnglish',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B2',
+    sceneTitle: 'Keep Your Listeners Hooked',
+    sceneDescription: 'إيما بتعلمك تتقن الحكي: البداية، التصعيد، والنهاية اللي تفتكر.',
+    youtubeId: 'IqJlqzEfyKo',
+    startTime: 35,
+    endTime: 155,
+    clipDuration: '2:00',
+    videoSource: 'mmmEnglish (Official)',
+    dialogueQuote: 'It all started on a perfectly normal Tuesday morning.',
+    actorName: 'Emma',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/IqJlqzEfyKo/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'mmmEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 40, end: 55, en: 'It all started on a perfectly normal Tuesday morning.', arEg: 'كل ده بدأ في صبح يوم تلاتاء عادي جدًا.', arFusha: 'كل ده بدأ في صبح يوم تلاتاء عادي جدًا.', speaker: 'Instructor', keyWords: [{ word: 'it all started', ipa: '', meaningAr: 'كل ده بدأ', meaningEn: '' }, { word: 'perfectly normal', ipa: '', meaningAr: 'عادي جدًا', meaningEn: '' }] },      { id: 'sub-2', start: 65, end: 80, en: 'All of a sudden, the lights went out in the whole building.', arEg: 'فجأة، النور قطع في العمارة كلها.', arFusha: 'فجأة، النور قطع في العمارة كلها.', speaker: 'Instructor', keyWords: [{ word: 'all of a sudden', ipa: '', meaningAr: 'فجأة', meaningEn: '' }, { word: 'went out', ipa: '', meaningAr: 'قطع (نور)', meaningEn: '' }] },      { id: 'sub-3', start: 90, end: 105, en: 'Looking back, it was the best thing that ever happened to me.', arEg: 'بصيت ورا، لقيتها أحسن حاجة حصلتلي في حياتي.', arFusha: 'بصيت ورا، لقيتها أحسن حاجة حصلتلي في حياتي.', speaker: 'Instructor', keyWords: [{ word: 'looking back', ipa: '', meaningAr: 'لما أبص ورا', meaningEn: '' }, { word: 'the best thing', ipa: '', meaningAr: 'أحسن حاجة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'all of a sudden', type: 'collocation', meaningAr: 'فجأة', meaningEn: '', egyptianEquivalent: 'فجأة', exampleInScene: 'All of a sudden, it started snowing.' },      { term: 'go out', type: 'phrasal-verb', meaningAr: 'ينطفئ', meaningEn: '', egyptianEquivalent: 'يقطع (نور)', exampleInScene: 'The lights went out.' },      { term: 'looking back', type: 'collocation', meaningAr: 'بالنظر للماضي', meaningEn: '', egyptianEquivalent: 'لما أبص ورا', exampleInScene: 'Looking back, I made the right choice.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase signals a sudden change in a story?', questionAr: 'أنهي عبارة بتعلن عن تغيير مفاجئ في الحكاية؟', options: ['All of a sudden', 'Little by little', 'As usual', 'In the meantime'], correctIndex: 0, explanationAr: 'All of a sudden = فجأة - لحظة التشويق اللي بتخلي الكل يسمعك.' }
+    ],
+    speakingLines: [{ en: 'It all started on a perfectly normal Tuesday morning.', arEg: 'كل ده بدأ في صبح يوم تلاتاء عادي جدًا.' }, { en: 'All of a sudden, the lights went out in the whole building.', arEg: 'فجأة، النور قطع في العمارة كلها.' }],
+  },
+  {
+    id: 'ramadan-talk-english-journey',
+    movieTitle: 'How to Talk About Ramadan in English - Easy English Conversation',
+    releaseYear: 2023,
+    director: 'English Journey Conversation',
+    genre: 'Cultural English',
+    cefrLevel: 'B1',
+    sceneTitle: 'Explain Ramadan to Anyone',
+    sceneDescription: 'تشرح رمضان بالإنجليزي لزمايلك الأجانب: الصيام، الإفطار، والعادات.',
+    youtubeId: '9QfR4ShLVPc',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English Journey Conversation (Official)',
+    dialogueQuote: 'During Ramadan, we fast from dawn to sunset.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/9QfR4ShLVPc/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Journey Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'During Ramadan, we fast from dawn to sunset.', arEg: 'في رمضان، بنصوم من الفجر لغروب الشمس.', arFusha: 'في رمضان، بنصوم من الفجر لغروب الشمس.', speaker: 'Speaker', keyWords: [{ word: 'during', ipa: '', meaningAr: 'خلال', meaningEn: '' }, { word: 'fast', ipa: '', meaningAr: 'نصوم', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'At sunset, families gather to break their fast together.', arEg: 'عند المغرب، العيلات بتتجمع تفطر مع بعض.', arFusha: 'عند المغرب، العيلات بتتجمع تفطر مع بعض.', speaker: 'Speaker', keyWords: [{ word: 'gather', ipa: '', meaningAr: 'بتتجمع', meaningEn: '' }, { word: 'break their fast', ipa: '', meaningAr: 'يفطروا', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'The meal before dawn is called suhoor.', arEg: 'الأكلة قبل الفجر اسمها سحور.', arFusha: 'الأكلة قبل الفجر اسمها سحور.', speaker: 'Speaker', keyWords: [{ word: 'before dawn', ipa: '', meaningAr: 'قبل الفجر', meaningEn: '' }, { word: 'is called', ipa: '', meaningAr: 'اسمها', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'fast', type: 'cultural', meaningAr: 'يصوم', meaningEn: '', egyptianEquivalent: 'يصوم', exampleInScene: 'Muslims fast during Ramadan.' },      { term: 'break the fast', type: 'collocation', meaningAr: 'الإفطار', meaningEn: '', egyptianEquivalent: 'يفطر', exampleInScene: 'We break the fast with dates.' },      { term: 'gather', type: 'cultural', meaningAr: 'يتجمع', meaningEn: '', egyptianEquivalent: 'يتجمع', exampleInScene: 'The whole family gathers for iftar.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you explain fasting simply?', questionAr: 'تشرح الصيام ببساطة إزاي؟', options: ['We do not eat or drink from dawn to sunset.', 'It is a food festival', 'We eat more at night only', 'It is about sleeping'], correctIndex: 0, explanationAr: 'أبسط شرح: no eating or drinking from dawn to sunset - واضح ومحترم.' }
+    ],
+    speakingLines: [{ en: 'During Ramadan, we fast from dawn to sunset.', arEg: 'في رمضان، بنصوم من الفجر لغروب الشمس.' }, { en: 'At sunset, families gather to break their fast together.', arEg: 'عند المغرب، العيلات بتتجمع تفطر مع بعض.' }],
+  },
+  {
+    id: 'book-appointment-phone-ev',
+    movieTitle: 'How to Book an Appointment Over the Phone - English Conversation',
+    releaseYear: 2023,
+    director: 'Improve your English with Ev',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Change or Confirm Your Booking',
+    sceneDescription: 'تحجز، تغير ميعاد، وتلغي حجز في التليفون بشياكة.',
+    youtubeId: 'yI4zDCQ7tNs',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Improve your English with Ev (Official)',
+    dialogueQuote: 'I am afraid I need to reschedule my appointment for next week.',
+    actorName: 'Host',
+    characterName: 'Caller',
+    thumbnailUrl: 'https://img.youtube.com/vi/yI4zDCQ7tNs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Improve your English with Ev Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I am afraid I need to reschedule my appointment for next week.', arEg: 'للأسف محتاج أغير ميعادي للأسبوع الجاي.', arFusha: 'للأسف محتاج أغير ميعادي للأسبوع الجاي.', speaker: 'Caller', keyWords: [{ word: 'reschedule', ipa: '', meaningAr: 'أغير الميعاد', meaningEn: '' }, { word: 'for next week', ipa: '', meaningAr: 'للأسبوع الجاي', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Would Friday afternoon work for you instead?', arEg: 'يناسبك الجمعة بعد الضهر بدل كده؟', arFusha: 'يناسبك الجمعة بعد الضهر بدل كده؟', speaker: 'Receptionist', keyWords: [{ word: 'work for you', ipa: '', meaningAr: 'يناسبك', meaningEn: '' }, { word: 'instead', ipa: '', meaningAr: 'بدل كده', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Could you send me a confirmation text, please?', arEg: 'ممكن تبعتلي رسالة تأكيد لو سمحت؟', arFusha: 'ممكن تبعتلي رسالة تأكيد لو سمحت؟', speaker: 'Caller', keyWords: [{ word: 'confirmation', ipa: '', meaningAr: 'تأكيد', meaningEn: '' }, { word: 'text', ipa: '', meaningAr: 'رسالة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'reschedule', type: 'cultural', meaningAr: 'يعيد جدولة', meaningEn: '', egyptianEquivalent: 'يغير الميعاد', exampleInScene: 'Can we reschedule?' },      { term: 'confirm', type: 'cultural', meaningAr: 'يؤكد', meaningEn: '', egyptianEquivalent: 'يأكد', exampleInScene: 'Please confirm your booking.' },      { term: 'cancel', type: 'cultural', meaningAr: 'يلغي', meaningEn: '', egyptianEquivalent: 'يلغي', exampleInScene: 'I need to cancel my appointment.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you politely move an appointment?', questionAr: 'تغير ميعادك بشياكة إزاي؟', options: ['I am afraid I need to reschedule my appointment.', 'I am not coming, bye', 'Your times are bad', 'Cancel everything now'], correctIndex: 0, explanationAr: 'I am afraid I need to reschedule = اعتذار خفيف + طلب واضح - المعادلة المثالية.' }
+    ],
+    speakingLines: [{ en: 'I am afraid I need to reschedule my appointment for next week.', arEg: 'للأسف محتاج أغير ميعادي للأسبوع الجاي.' }, { en: 'Could you send me a confirmation text, please?', arEg: 'ممكن تبعتلي رسالة تأكيد لو سمحت؟' }],
+  },
 ];
 
 // Helper to get all videos
