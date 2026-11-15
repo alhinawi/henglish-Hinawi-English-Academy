@@ -25,7 +25,6 @@ interface AuthContextType {
   role: UserRole;
   isAuthenticated: boolean;
   isGuest: boolean;
-  isDemo: boolean;
   isEmailVerified: boolean;
   isLoading: boolean;
   login: (identifier: string, password?: string) => Promise<{ success: boolean; error?: string }>;
@@ -177,7 +176,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     role: session.user.role,
     isAuthenticated: session.isLoggedIn && session.type === 'authenticated',
     isGuest: session.type === 'guest',
-    isDemo: session.type === 'demo',
     isEmailVerified: session.isEmailVerified,
     isLoading,
     login,

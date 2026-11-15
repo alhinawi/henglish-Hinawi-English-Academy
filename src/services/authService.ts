@@ -5,7 +5,7 @@ import { apiRegister, apiLogin, apiLogout, apiGetMe, ApiUser } from './henglishA
 
 export type { UserProfile, CEFRLevel, UserRole };
 
-export type SessionType = 'guest' | 'demo' | 'authenticated';
+export type SessionType = 'guest' | 'authenticated';
 
 export interface AuthSessionState {
   type: SessionType;
@@ -23,52 +23,6 @@ export const ANONYMOUS_AVATAR =
   "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96'><rect width='96' height='96' fill='%23334155'/><circle cx='48' cy='36' r='16' fill='%2394a3b8'/><path d='M16 88c4-20 16-28 32-28s28 8 32 28z' fill='%2394a3b8'/></svg>";
 
 const GUEST_DATA_KEY = 'henglish_guest_local_progress';
-
-// Seeded Demo Profiles
-export const DEMO_PROFILES: Record<'student' | 'teacher' | 'admin', UserProfile> = {
-  student: {
-    id: 'demo-student-sarah',
-    name: 'Sarah Abdulrahman',
-    nameAr: 'سارة عبد الرحمن (طالب تجريبي)',
-    email: 'sarah.demo@henglish.academy',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
-    role: 'student',
-    currentLevel: 'B1',
-    targetLevel: 'C1',
-    xp: 3450,
-    streakDays: 14,
-    joinedDate: '2026-09-15',
-    bio: 'طالبة هندسة شغوفة بإتقان الإنجليزية للعمل في الشركات العالمية.',
-  },
-  teacher: {
-    id: 'demo-teacher-hinawi',
-    name: 'Mr. Hinawi',
-    nameAr: 'أ. هناوي (المعلم الأكاديمي)',
-    email: 'hinawi.academic@henglish.academy',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80',
-    role: 'teacher',
-    currentLevel: 'C2',
-    targetLevel: 'C2',
-    xp: 18900,
-    streakDays: 85,
-    joinedDate: '2025-01-01',
-    bio: 'مؤسس Henglish Academy ومصمم المنهج التفاعلي.',
-  },
-  admin: {
-    id: 'demo-admin-super',
-    name: 'System Administrator',
-    nameAr: 'مدير المنصة الرئيسي',
-    email: 'admin@henglish.academy',
-    avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&auto=format&fit=crop&q=80',
-    role: 'admin',
-    currentLevel: 'C2',
-    targetLevel: 'C2',
-    xp: 99999,
-    streakDays: 365,
-    joinedDate: '2024-01-01',
-    bio: 'التحكم الإداري الكامل في منصة ومحتوى Henglish Academy.',
-  },
-};
 
 export const GUEST_PROFILE: UserProfile = {
   id: 'guest-learner',
@@ -354,17 +308,6 @@ export async function signInUser(
 ): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
   const clean = identifier.trim().toLowerCase();
 
-  // 1. Direct Demo Account Interception (Instant Zero-Latency Demo)
-  if (clean === 'sarah.demo@henglish.academy' || clean === 'student-demo') {
-    return { success: true, session: switchDemoAccount('student') };
-  }
-  if (clean === 'hinawi.academic@henglish.academy' || clean === 'teacher-demo') {
-    return { success: true, session: switchDemoAccount('teacher') };
-  }
-  if (clean === 'admin@henglish.academy' || clean === 'admin-demo') {
-    return { success: true, session: switchDemoAccount('admin') };
-  }
-
   // 2. Henglish Accounts API (Cloudflare Workers + D1) - the production backend
   if (password) {
     if (!clean.includes('@')) {
@@ -541,20 +484,8 @@ export async function signOutUser(): Promise<void> {
 }
 
 // ==============================================================================
-// DEMO & GUEST MODE CONTROLS
+// GUEST MODE CONTROLS
 // ==============================================================================
-
-export function switchDemoAccount(role: 'student' | 'teacher' | 'admin'): AuthSessionState {
-  const profile = DEMO_PROFILES[role];
-  const session: AuthSessionState = {
-    type: 'demo',
-    user: profile,
-    isLoggedIn: true,
-    isEmailVerified: true,
-  };
-  saveAuthSession(session);
-  return session;
-}
 
 export function switchGuestMode(): AuthSessionState {
   const session: AuthSessionState = {
