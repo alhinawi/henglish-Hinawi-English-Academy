@@ -170,6 +170,11 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
               fontWeight: 900,
               color: "#ffffff",
               lineHeight: 1.15,
+              // Amiri (Arabic fallback) has very deep descenders; the extra
+              // bottom padding keeps Arabic glyphs clear of the underline.
+              // (Do NOT raise lineHeight instead: lineHeight > 1.15 breaks
+              // html2canvas capture with a 0-size canvas createPattern error.)
+              paddingBottom: 14,
             }}
           >
             {cert.studentNameEn}
@@ -201,7 +206,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             marginTop: 12,
             fontSize: 14,
             color: "#dedbf4",
-            lineHeight: 1.6,
+            lineHeight: 1.15,
             maxWidth: 700,
           }}
         >
