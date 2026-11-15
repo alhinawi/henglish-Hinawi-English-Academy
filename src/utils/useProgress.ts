@@ -129,49 +129,22 @@ const DEFAULT_NOTIFICATIONS: AppNotification[] = [
   },
 ];
 
+// New students start from a genuinely empty record: certificates and progress
+// must reflect real work, so nothing is pre-seeded here.
 const DEFAULT_PROGRESS: UserProgressState = {
-  completedLessons: ["lesson-1", "lesson-2"],
-  quizScores: {
-    "q-intro": { score: 5, total: 5, date: new Date().toISOString() },
-  },
-  knownFlashcards: ["v3-1", "v3-2", "v3-3", "v3-4", "v3-5"],
-  reviewFlashcards: ["v3-6"],
-  studyStreakDays: 4,
+  completedLessons: [],
+  quizScores: {},
+  knownFlashcards: [],
+  reviewFlashcards: [],
+  studyStreakDays: 0,
   lastStudyDate: new Date().toISOString().split("T")[0],
-  dailyChallengeCompleted: true,
-  totalTimeMinutes: 125,
+  dailyChallengeCompleted: false,
+  totalTimeMinutes: 0,
   dailyGoals: DEFAULT_GOALS,
-  notes: [
-    {
-      id: "note-1",
-      lessonId: "lesson-1",
-      lessonTitle: "المفهوم الأساسي والخط الزمني",
-      content:
-        "تذكر دائماً: بعد will يأتي have فقط في المستقبل التام، ولا تستخدم has أبداً مع أي ضمير!",
-      updatedAt: "2026-10-28",
-    },
-  ],
-  bookmarks: [
-    {
-      id: "bm-1",
-      title: "المستقبل التام الشامل",
-      subtitle: "الدرس 01: المفهوم الأساسي والخط الزمني",
-      route: "lesson",
-      lessonId: "lesson-1",
-      category: "قواعد",
-      savedAt: "2026-10-28",
-    },
-    {
-      id: "bm-2",
-      title: "أكاديمية الجرامر",
-      subtitle: "المضارع التام وعلاقته بالماضي",
-      route: "grammar",
-      category: "قواعد",
-      savedAt: "2026-10-29",
-    },
-  ],
-  xp: 1450,
-  level: "B1",
+  notes: [],
+  bookmarks: [],
+  xp: 0,
+  level: "A1",
 };
 
 export function useProgress(activeUserId?: string) {
@@ -385,7 +358,7 @@ export function useProgress(activeUserId?: string) {
           date: new Date().toISOString(),
         },
       },
-      xp: (prev.xp || 1450) + earnedXp,
+      xp: (prev.xp || 0) + earnedXp,
     }));
     setUserProfile((prev) => ({
       ...prev,

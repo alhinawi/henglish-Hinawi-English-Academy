@@ -36,7 +36,8 @@ import { motion, AnimatePresence } from "framer-motion";
 interface CertificatesPageProps {
   onNavigate: (route: PageRoute) => void;
   userProfile: UserProfile;
-  completedLessonsCount: number;
+  completedLessons: string[];
+  quizScores: Record<string, { score: number; total: number; date: string }>;
 }
 
 const CERTS_STORAGE_KEY = "henglish_issued_certificates_v1";
@@ -44,8 +45,26 @@ const CERTS_STORAGE_KEY = "henglish_issued_certificates_v1";
 export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   onNavigate,
   userProfile,
-  completedLessonsCount,
+  completedLessons,
+  quizScores,
 }) => {
+  // Real recorded quiz average (percentage) across all quizzes the student took.
+  const quizEntries = Object.values(quizScores || {});
+  const quizAverage =
+    quizEntries.length > 0
+      ? Math.round(
+          quizEntries.reduce(
+            (sum, q) => sum + (q.total > 0 ? (q.score / q.total) * 100 : 0),
+            0,
+          ) / quizEntries.length,
+        )
+      : null;
+  const lessonsCompletedFor = (def: CertificateDefinition) =>
+    def.requiredLessonIds.filter((id) => completedLessons.includes(id)).length;
+  const isEligibleFor = (def: CertificateDefinition) =>
+    lessonsCompletedFor(def) === def.requiredLessonIds.length &&
+    (def.minQuizAverage === 0 ||
+      (quizAverage !== null && quizAverage >= def.minQuizAverage));
   // Issued certificates persist on this device so they survive reloads.
   const [issuedCerts, setIssuedCerts] = useState<IssuedCertificate[]>(() => {
     try {
@@ -58,22 +77,17 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
   // Preview certificate carries the REAL logged-in student's name, never a sample.
   // Anonymous visitors get a neutral student label (no fake person, no guest identity).
   const isAnonymous = userProfile.id === "guest-learner" || !userProfile.name;
+  const previewDef = CERTIFICATE_DEFINITIONS[0];
   const previewCertificate: IssuedCertificate = {
     certificateId: "HEN-2026-PREVIEW",
-    studentNameAr: isAnonymous ? "طالب Henglish Academy" : userProfile.nameAr,
-    studentNameEn: isAnonymous ? "Henglish Student" : userProfile.name,
-    courseTitleAr:
-      CERTIFICATE_DEFINITIONS.find((d) => d.id === "cert-future-mastery")
-        ?.titleAr || CERTIFICATE_DEFINITIONS[0].titleAr,
-    courseTitleEn:
-      CERTIFICATE_DEFINITIONS.find((d) => d.id === "cert-future-mastery")
-        ?.titleEn || CERTIFICATE_DEFINITIONS[0].titleEn,
-    cefrLevel:
-      CERTIFICATE_DEFINITIONS.find((d) => d.id === "cert-future-mastery")
-        ?.cefrLevel || CERTIFICATE_DEFINITIONS[0].cefrLevel,
+    studentNameAr: isAnonymous ? "Henglish Academy Student" : userProfile.nameAr,
+    studentNameEn: isAnonymous ? "Student Name" : userProfile.name,
+    courseTitleAr: previewDef.titleAr,
+    courseTitleEn: previewDef.titleEn,
+    cefrLevel: previewDef.cefrLevel,
     issueDate: new Date().toISOString().split("T")[0],
     verificationCode: "HEN-2026-PREVIEW",
-    finalScorePercentage: 100,
+    finalScorePercentage: null,
     status: "valid",
     instructorName: "Mr. Hinawi • Chief Academic Director",
   };
@@ -107,6 +121,12 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
     playSound("click");
     setIsGeneratingPdf(true);
     try {
+      // Make sure the Amiri certificate font is fully loaded before capture.
+      try {
+        await document.fonts.ready;
+      } catch {
+        // older browsers: proceed with whatever is loaded
+      }
       const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
         import("html2canvas"),
         import("jspdf"),
@@ -179,7 +199,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
       cefrLevel: def.cefrLevel,
       issueDate: new Date().toISOString().split("T")[0],
       verificationCode: `HEN-2026-${def.cefrLevel}-${Math.floor(1000 + Math.random() * 9000)}`,
-      finalScorePercentage: 92,
+      finalScorePercentage: quizAverage,
       status: "valid",
       instructorName: "Mr. Hinawi • Chief Academic Director",
     };
@@ -352,8 +372,13 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {CERTIFICATE_DEFINITIONS.map((def) => {
-            const isEligible =
-              completedLessonsCount >= def.requiredCompletedLessons;
+            const isEligible = isEligibleFor(def);
+            const doneLessons = lessonsCompletedFor(def);
+            const totalLessons = def.requiredLessonIds.length;
+            const remainingLessons = totalLessons - doneLessons;
+            const quizShortfall =
+              def.minQuizAverage > 0 &&
+              (quizAverage === null || quizAverage < def.minQuizAverage);
 
             return (
               <div
@@ -366,7 +391,7 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    {(() => { const CERT_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { 'cert-grammar-foundations': BookOpen, 'cert-future-mastery': Zap, 'cert-real-life-fluency': Globe2, 'cert-academy-diploma': GraduationCap, 'cert-vocab-builder': BookOpen, 'cert-speaking-confidence': Mic }; const CertIcon = CERT_ICONS[def.id] || Award; return <CertIcon className="w-8 h-8 text-[#ffd166]" />; })()}
+                    {(() => { const CERT_ICONS: Record<string, React.ComponentType<{ className?: string }>> = { 'cert-level-a1': BookOpen, 'cert-level-a2': BookOpen, 'cert-level-b1': Globe2, 'cert-level-b2': Globe2, 'cert-future-perfect': Zap, 'cert-grammar-diploma': GraduationCap }; const CertIcon = CERT_ICONS[def.id] || Award; return <CertIcon className="w-8 h-8 text-[#ffd166]" />; })()}
                     <span className="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-[#ffd166]/20 text-[#ffd166]">
                       Level {def.cefrLevel}
                     </span>
@@ -385,7 +410,13 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
                 <div className="space-y-3 pt-3 border-t border-white/10">
                   <div className="flex items-center justify-between text-xs font-bold text-[#b9b6d5]">
                     <span>شرط الإنجاز:</span>
-                    <span>{def.requiredCompletedLessons} دروس مكتملة</span>
+                    <span>{def.requirementAr}</span>
+                  </div>
+                  <div className="flex items-center justify-between text-xs font-bold text-[#b9b6d5]">
+                    <span>تقدمك:</span>
+                    <span>
+                      {doneLessons} من {totalLessons} درساً مكتملاً
+                    </span>
                   </div>
 
                   {isEligible ? (
@@ -400,9 +431,11 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
                     <div className="flex items-center justify-center gap-2 py-2 rounded-xl bg-black/40 text-xs text-[#b9b6d5] border border-white/10">
                       <Lock className="w-3.5 h-3.5" />
                       <span>
-                        أكمل{" "}
-                        {def.requiredCompletedLessons - completedLessonsCount}{" "}
-                        دروس إضافية للفتح
+                        {remainingLessons > 0 &&
+                          `أكمل ${remainingLessons} دروس إضافية`}
+                        {remainingLessons > 0 && quizShortfall && " • "}
+                        {quizShortfall &&
+                          `متوسط اختباراتك ${quizAverage === null ? 0 : quizAverage}% والمطلوب ${def.minQuizAverage}%`}
                       </span>
                     </div>
                   )}
