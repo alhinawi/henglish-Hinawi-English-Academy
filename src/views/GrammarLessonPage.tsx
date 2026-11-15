@@ -135,7 +135,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <div className="absolute top-0 left-0 w-96 h-96 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <LessonPhoto photo={LESSON_PHOTOGRAPHY[rule.id][0]} priority className="h-60 sm:h-80" />
+        {LESSON_PHOTOGRAPHY[rule.id]?.[0] && <LessonPhoto photo={LESSON_PHOTOGRAPHY[rule.id][0]} priority className="h-60 sm:h-80" />}
         <div className="max-w-3xl space-y-4 p-6 sm:p-10">
           <div className="flex items-center gap-2.5 flex-wrap">
             <span className="px-3.5 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
