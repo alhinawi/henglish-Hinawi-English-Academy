@@ -227,8 +227,10 @@ export const CertificatesPage: React.FC<CertificatesPageProps> = ({
 
             {/* Header Logos & Crest */}
             <div className="space-y-2">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] text-3xl shadow-xl">
-               
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-linear-to-br from-[#ffd166] to-[#ff9c66] p-0.5 shadow-xl">
+                <div className="w-full h-full bg-[#171632] rounded-[14px] flex items-center justify-center">
+                  <GraduationCap className="w-8 h-8 text-[#ffd166]" />
+                </div>
               </div>
               <h2 className="text-xl sm:text-2xl font-black tracking-wider text-[#ffd166] uppercase font-serif">
                 Henglish Academy
