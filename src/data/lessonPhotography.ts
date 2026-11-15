@@ -1,6 +1,6 @@
 export interface LessonPhotograph { src: string; alt: string; source: string; author: string; license: string; licenseUrl: string; }
 
-// 183 distinct free-license photographs, bundled locally. Content is unchanged.
+// 201 distinct free-license photographs, bundled locally. Content is unchanged.
 export const LESSON_PHOTOGRAPHY: Record<string, LessonPhotograph[]> = {
   "present-simple": [
     {
@@ -1583,6 +1583,162 @@ export const LESSON_PHOTOGRAPHY: Record<string, LessonPhotograph[]> = {
       "src": "/images/lessons/lesson-8-3.webp",
       "alt": "People inside room",
       "source": "https://unsplash.com/photos/people-inside-room--VHQ0cw2euA",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    }
+  ],
+  "be-get-used-to": [
+    {
+      "src": "/images/lessons/be-get-used-to-1.webp",
+      "alt": "A cup of coffee on a saucer with a book in the background",
+      "source": "https://unsplash.com/photos/a-cup-of-coffee-on-a-saucer-with-a-book-in-the-background-MMve7lHD8-c",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/be-get-used-to-2.webp",
+      "alt": "A group of people sitting at desks in a classroom",
+      "source": "https://unsplash.com/photos/a-group-of-people-sitting-at-desks-in-a-classroom-RzPWYL3G6Pw",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/be-get-used-to-3.webp",
+      "alt": "Four friends walking together in a park",
+      "source": "https://unsplash.com/photos/four-friends-walking-together-in-a-park-uZrfnZ19-h4",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    }
+  ],
+  "reported-commands": [
+    {
+      "src": "/images/lessons/reported-commands-1.webp",
+      "alt": "Woman standing in front of children",
+      "source": "https://unsplash.com/photos/woman-standing-in-front-of-children-N_aihp118p8",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/reported-commands-2.webp",
+      "alt": "Woman pointing at paper",
+      "source": "https://unsplash.com/photos/woman-pointing-at-paper-vFJNeWJAA2g",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/reported-commands-3.webp",
+      "alt": "Elderly teacher helps young student with math",
+      "source": "https://unsplash.com/photos/elderly-teacher-helps-young-student-with-math-0WJjFt-LNps",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    }
+  ],
+  "defining-non-defining-relatives": [
+    {
+      "src": "/images/lessons/defining-non-defining-relatives-1.webp",
+      "alt": "A group of people standing around a table filled with books",
+      "source": "https://unsplash.com/photos/a-group-of-people-standing-around-a-table-filled-with-books-UTC-DavT7P8",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/defining-non-defining-relatives-2.webp",
+      "alt": "A woman sitting on a stool in a library",
+      "source": "https://unsplash.com/photos/a-woman-sitting-on-a-stool-in-a-library-oDt460dt1hE",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/defining-non-defining-relatives-3.webp",
+      "alt": "A large number of books are on display",
+      "source": "https://unsplash.com/photos/a-large-number-of-books-are-on-display-jU_miPI3OYs",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    }
+  ],
+  "future-in-the-past": [
+    {
+      "src": "/images/lessons/future-in-the-past-1.webp",
+      "alt": "A hand holding a passport over a map",
+      "source": "https://unsplash.com/photos/a-hand-holding-a-passport-over-a-map-wOj5HTw2YMc",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/future-in-the-past-2.webp",
+      "alt": "Hand placing item into a travel guide.",
+      "source": "https://unsplash.com/photos/hand-placing-item-into-a-travel-guide-5zt-5oDN8EQ",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/future-in-the-past-3.webp",
+      "alt": "Travel essentials, passport, laptop and breakfast",
+      "source": "https://unsplash.com/photos/travel-essentials-passport-laptop-and-breakfast-4NkooaqwutU",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    }
+  ],
+  "make-vs-do": [
+    {
+      "src": "/images/lessons/make-vs-do-1.webp",
+      "alt": "A bright cafe interior with tables and a service counter",
+      "source": "https://unsplash.com/photos/baked-cake-near-lemon-fruits-in-glass-container-in-a-kitchen-nuTE2cjR1xQ",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/make-vs-do-2.webp",
+      "alt": "Food cooking in a pan over a hot stove",
+      "source": "https://unsplash.com/photos/food-photography-of-baked-cake-jnBdj0gXzQs",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/make-vs-do-3.webp",
+      "alt": "Couple smiling and talking in a kitchen",
+      "source": "https://unsplash.com/photos/couple-smiling-and-talking-in-a-kitchen-4L951JUxUlk",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    }
+  ],
+  "all-whole-every-each": [
+    {
+      "src": "/images/lessons/all-whole-every-each-1.webp",
+      "alt": "Basket of citrus fruits",
+      "source": "https://unsplash.com/photos/basket-of-citrus-fruits-L5zlzopnuWw",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/all-whole-every-each-2.webp",
+      "alt": "Yellow lemons on brown wicker basket",
+      "source": "https://unsplash.com/photos/yellow-lemons-on-brown-wicker-basket-KpDmXcJQj8E?amp=",
+      "author": "Unsplash photographer (see original photo)",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license"
+    },
+    {
+      "src": "/images/lessons/all-whole-every-each-3.webp",
+      "alt": "A bunch of bananas",
+      "source": "https://unsplash.com/photos/a-bunch-of-bananas-S2Gjr1JCasw",
       "author": "Unsplash photographer (see original photo)",
       "license": "Unsplash License",
       "licenseUrl": "https://unsplash.com/license"
