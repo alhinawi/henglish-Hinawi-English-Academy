@@ -872,18 +872,7 @@ const VOCAB_A: VocabWord[] = [
     exampleAr: "بحلول منتصف الليل، هيكون الفريق خلص نشر النظام.",
     highlight: "will have completed",
   },
-  {
-    id: "voc-tech-8",
-    word: "scalability",
-    ipa: "/ˌskeɪ.ləˈbɪl.ə.ti/",
-    partOfSpeech: "noun",
-    meaningAr: "قابلية التوسع",
-    level: "C1",
-    category: "tech",
-    exampleEn: "By next year, we will have proven the platform's scalability.",
-    exampleAr: "بحلول السنة الجاية، هنكون أثبتنا قابلية المنصة للتوسع.",
-    highlight: "will have proven",
-  },
+
   {
     id: "voc-medical-6",
     word: "prescription",
@@ -8029,19 +8018,7 @@ const VOCAB_B: VocabWord[] = [
     highlight: "paper",
     collocation: "a piece of paper",
   },
-  {
-    id: "voc-wk2-5",
-    word: "photocopy",
-    ipa: "/ˈfəʊ.təʊˌkɒp.i/",
-    partOfSpeech: "noun / verb",
-    meaningAr: "صورة ورق / يصور ورق",
-    level: "A2",
-    category: "workplace",
-    exampleEn: "I made two photocopies of my ID card.",
-    exampleAr: "عملت صورتين من بطاقتي.",
-    highlight: "photocopies",
-    collocation: "make a photocopy",
-  },
+
   {
     id: "voc-wk2-6",
     word: "signature",
@@ -13234,19 +13211,7 @@ const VOCAB_C: VocabWord[] = [
     highlight: "migraines",
     collocation: "severe migraine",
   },
-  {
-    id: "voc-u12-2",
-    word: "toothache",
-    ipa: "/ˈtuːθeɪk/",
-    partOfSpeech: "noun",
-    meaningAr: "وجع أسنان",
-    level: "B1",
-    category: "medical",
-    exampleEn: "He could not sleep because of the toothache.",
-    exampleAr: "معرفش ينام من وجع الأسنان.",
-    highlight: "toothache",
-    collocation: "bad toothache",
-  },
+
   {
     id: "voc-u12-3",
     word: "medication",
