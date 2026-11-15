@@ -7,6 +7,8 @@ import { AuthModal } from './components/AuthModal';
 import { GuestNudge } from './components/GuestNudge';
 import { useProgress } from './utils/useProgress';
 import { useAuth } from './context/AuthContext';
+import { completeGoogleSignIn } from './services/authService';
+import { consumeGoogleAuthCallback } from './services/henglishApi';
 
 // Auth Pages
 import { LoginPage } from './views/auth/LoginPage';
@@ -95,6 +97,16 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
   // Active profile from auth session or fallback
   const activeProfile = authUser || userProfile;
+
+  // Consume a Google sign-in redirect (#auth-callback?token=...) once on mount.
+  useEffect(() => {
+    const result = consumeGoogleAuthCallback();
+    if (!result || result.startsWith('error:')) return;
+    completeGoogleSignIn(result).then((res) => {
+      if (res.success) refreshSession();
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // Sync route with URL hash
   useEffect(() => {
