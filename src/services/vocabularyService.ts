@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import { supabase } from './authService';
+import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../data/vocabularyAcademyData';
 import { calculateSM2, ReviewRating } from './spacedRepetitionService';
 
 export type CEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2' | 'Unclassified';
@@ -19,6 +20,8 @@ export interface LexicalEntry {
   audioUsUrl?: string;
   audioUkUrl?: string;
   frequencyTier: string; // 'top500' | 'top1000' | 'top2000' | 'top3000' | 'top5000' | 'academic' | 'advanced' | 'rare'
+  rank?: number;
+  zipf?: number;
   domain: string;
   formality: string;
   meaningAr: string;
@@ -136,7 +139,92 @@ function buildIndices(items: LexicalEntry[]) {
 }
 
 /**
- * Load initial core vocabulary (~5,000 words) for instant hydration
+ * Map a verified VocabWord (legacy reviewed data or frequency chunk) to LexicalEntry.
+ * Never sets audio URLs: playback falls back to speech synthesis.
+ */
+function freqTierFromRank(rank?: number): string {
+  if (!rank) return 'rare';
+  if (rank <= 500) return 'top500';
+  if (rank <= 1000) return 'top1000';
+  if (rank <= 2000) return 'top2000';
+  if (rank <= 3000) return 'top3000';
+  if (rank <= 5000) return 'top5000';
+  if (rank <= 10000) return 'advanced';
+  return 'rare';
+}
+
+let ranksIndexPromise: Promise<Record<string, [number, number]>> | null = null;
+
+function loadRanksIndex(): Promise<Record<string, [number, number]>> {
+  if (!ranksIndexPromise) {
+    ranksIndexPromise = fetch('/data/vocab/ranks-index.json')
+      .then(res => (res.ok ? res.json() : {}))
+      .catch(() => ({}));
+  }
+  return ranksIndexPromise;
+}
+
+function mapLegacyWord(w: VocabWord, ranks: Record<string, [number, number]>): LexicalEntry {
+  const r = ranks[w.word];
+  return {
+    id: w.id,
+    headword: w.word,
+    normalized: w.word.toLowerCase(),
+    pos: w.partOfSpeech,
+    cefr: (w.level as CEFRLevel) || 'Unclassified',
+    ipaUs: w.ipa,
+    ipaUk: '',
+    frequencyTier: freqTierFromRank(r?.[0]),
+    domain: w.category,
+    formality: '',
+    meaningAr: w.meaningAr,
+    definitionEn: '',
+    exampleEn: w.exampleEn,
+    exampleAr: w.exampleAr,
+    collocations: w.collocation ? [w.collocation] : undefined,
+    rank: r?.[0],
+    zipf: r?.[1],
+  };
+}
+
+interface VocabChunkEntry {
+  id: string;
+  word: string;
+  rank: number;
+  ipa: string;
+  partOfSpeech: string;
+  meaningAr: string;
+  level: string;
+  category: string;
+  exampleEn: string;
+  exampleAr: string;
+  highlight: string;
+}
+
+function mapChunkEntry(e: VocabChunkEntry, ranks: Record<string, [number, number]>): LexicalEntry {
+  return {
+    id: e.id,
+    headword: e.word,
+    normalized: e.word.toLowerCase(),
+    pos: e.partOfSpeech,
+    cefr: (e.level as CEFRLevel) || 'Unclassified',
+    ipaUs: e.ipa,
+    ipaUk: '',
+    frequencyTier: freqTierFromRank(e.rank),
+    domain: e.category,
+    formality: '',
+    meaningAr: e.meaningAr,
+    definitionEn: '',
+    exampleEn: e.exampleEn,
+    exampleAr: e.exampleAr,
+    collocations: e.highlight ? [e.highlight] : undefined,
+    rank: e.rank,
+    zipf: ranks[e.word]?.[1],
+  };
+}
+
+/**
+ * Load the verified vocabulary (legacy hand-reviewed entries) for instant hydration.
  */
 export async function loadVocabularyCore(): Promise<LexicalEntry[]> {
   if (cachedWords.length > 0) return cachedWords;
@@ -144,17 +232,13 @@ export async function loadVocabularyCore(): Promise<LexicalEntry[]> {
 
   coreLoadingPromise = (async () => {
     try {
-      const res = await fetch('/data/vocabulary-core.json');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data: LexicalEntry[] = await res.json();
+      const ranks = await loadRanksIndex();
+      const data = VOCABULARY_ACADEMY_WORDS.map(w => mapLegacyWord(w, ranks));
       if (!fullDatasetLoaded) {
         cachedWords = data;
         buildIndices(data);
       }
       return cachedWords;
-    } catch (err) {
-      console.warn('Could not load vocabulary-core.json, falling back to full dataset:', err);
-      return loadFullVocabulary();
     } finally {
       coreLoadingPromise = null;
     }
@@ -164,7 +248,7 @@ export async function loadVocabularyCore(): Promise<LexicalEntry[]> {
 }
 
 /**
- * Load complete vocabulary dataset (full headword list)
+ * Load every verified frequency chunk (100 words per file) and merge with core.
  */
 export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
   if (fullDatasetLoaded) return cachedWords;
@@ -172,24 +256,32 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
 
   fullLoadingPromise = (async () => {
     try {
-      // Full dataset is split into chunks to stay under static-host file-size limits
-      const chunkUrls = [
-        '/data/vocabulary-full-1.json',
-        '/data/vocabulary-full-2.json',
-        '/data/vocabulary-full-3.json',
-      ];
-      const parts: LexicalEntry[][] = await Promise.all(
-        chunkUrls.map(async (url) => {
-          const res = await fetch(url);
-          if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-          return res.json();
-        })
-      );
-      const data: LexicalEntry[] = parts.flat();
-      cachedWords = data;
+      const [ranks, indexRes] = await Promise.all([
+        loadRanksIndex(),
+        fetch('/data/vocab/chunks-index.json'),
+      ]);
+      if (!indexRes.ok) throw new Error(`HTTP ${indexRes.status}`);
+      const index: { files: string[] } = await indexRes.json();
+
+      const core = VOCABULARY_ACADEMY_WORDS.map(w => mapLegacyWord(w, ranks));
+      const chunkEntries: LexicalEntry[] = [];
+      const BATCH = 24;
+      for (let i = 0; i < index.files.length; i += BATCH) {
+        const batch = index.files.slice(i, i + BATCH);
+        const parts: VocabChunkEntry[][] = await Promise.all(
+          batch.map(async name => {
+            const res = await fetch(`/data/vocab/chunks/${name}`);
+            if (!res.ok) throw new Error(`HTTP ${res.status} for ${name}`);
+            return res.json();
+          })
+        );
+        parts.flat().forEach(e => chunkEntries.push(mapChunkEntry(e, ranks)));
+      }
+
+      cachedWords = [...core, ...chunkEntries];
       fullDatasetLoaded = true;
-      buildIndices(data);
-      return data;
+      buildIndices(cachedWords);
+      return cachedWords;
     } catch (err) {
       console.error('Failed to load full vocabulary database:', err);
       throw err;
@@ -351,8 +443,11 @@ export function searchVocabulary(options: VocabularyFilterOptions = {}): {
     if (sortBy === 'cefr_desc') {
       return (CEFR_ORDER[b.cefr] || 99) - (CEFR_ORDER[a.cefr] || 99);
     }
-    // Default 'popular' maintains the initial frequency-based ordering
-    return 0;
+    // Default 'popular': most frequent first (zipf DESC, rank ASC fallback)
+    const az = a.zipf ?? -1;
+    const bz = b.zipf ?? -1;
+    if (az !== bz) return bz - az;
+    return (a.rank ?? 99999) - (b.rank ?? 99999);
   });
 
   const totalMatches = filtered.length;
