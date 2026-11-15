@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
+import { GoogleSignInBlock } from '../../components/GoogleSignInBlock';
 import { playSound, fireCelebration } from '../../utils/audio';
 import {
   Lock,
@@ -86,6 +87,10 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           >
             إنشاء حساب جديد
           </button>
+        </div>
+
+        <div className="mb-6">
+          <GoogleSignInBlock />
         </div>
 
         {errorMessage && (
