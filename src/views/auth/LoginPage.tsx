@@ -6,10 +6,8 @@ import {
   Mail,
   Eye,
   EyeOff,
-  Sparkles,
   ArrowRight,
   GraduationCap,
-  Users,
   ShieldCheck,
   CheckCircle2,
   LogIn,
@@ -21,7 +19,7 @@ interface LoginPageProps {
 }
 
 export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
-  const { login, continueAsGuest, loginDemoStudent, loginDemoTeacher, loginDemoAdmin, isLoading } = useAuth();
+  const { login, isLoading } = useAuth();
 
   const [identifier, setIdentifier] = useState('');
   const [password, setPassword] = useState('');
@@ -178,41 +176,6 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           </button>
         </form>
 
-        {/* Guest Mode & Demo Accounts Section */}
-        <div className="mt-8 pt-6 border-t border-slate-800 space-y-3">
-          <p className="text-center text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
-            أو جرب الأكاديمية بدون تسجيل
-          </p>
-
-          <button
-            type="button"
-            onClick={continueAsGuest}
-            className="w-full py-2.5 px-4 bg-slate-800/80 hover:bg-slate-800 border border-slate-700/80 rounded-xl text-xs font-medium text-slate-200 flex items-center justify-center gap-2 transition-colors"
-          >
-            <Sparkles className="w-4 h-4 text-amber-400" />
-            <span>المتابعة كزائر (Guest Mode)</span>
-          </button>
-
-          <div className="grid grid-cols-2 gap-2.5 pt-1">
-            <button
-              type="button"
-              onClick={loginDemoStudent}
-              className="py-2.5 px-3 bg-indigo-950/40 hover:bg-indigo-900/50 border border-indigo-800/40 rounded-xl text-xs font-medium text-indigo-300 flex items-center justify-center gap-1.5 transition-colors"
-            >
-              <GraduationCap className="w-3.5 h-3.5 text-indigo-400" />
-              <span>حساب طالب تجريبي</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={loginDemoTeacher}
-              className="py-2.5 px-3 bg-purple-950/40 hover:bg-purple-900/50 border border-purple-800/40 rounded-xl text-xs font-medium text-purple-300 flex items-center justify-center gap-1.5 transition-colors"
-            >
-              <Users className="w-3.5 h-3.5 text-purple-400" />
-              <span>حساب معلّم تجريبي</span>
-            </button>
-          </div>
-        </div>
       </div>
 
       {/* Footer info */}
