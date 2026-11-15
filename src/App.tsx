@@ -409,7 +409,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 8. Speaking Academy */}
                 {currentRoute === 'speaking' && (
-                  <SpeakingAcademyPage onNavigate={handleNavigate} />
+                  <SpeakingAcademyPage onNavigate={handleNavigate} onCompleteActivity={recordQuizScore} completedActivityIds={Object.keys(progress.quizScores)} />
                 )}
 
                 {/* 9. Listening Academy */}

@@ -1,0 +1,1385 @@
+export type SpeakingLevel = 'A1' | 'A2' | 'B1' | 'B2';
+export interface SpeakingLesson {
+ id: string; level: SpeakingLevel; unit: string; title: string; titleEn: string;
+ dialogue: {role: string; en: string; ar: string}[]; options: string[]; answer: number;
+ phrase: string; gap: string; gapPrompt: string; image: string; imageAlt: string; photoSource: string; prompt: string; tip: string;
+}
+// Original learning dialogues. Levels describe intended practice difficulty, not certification.
+export const SPEAKING_LESSONS: SpeakingLesson[] = [
+  {
+    "id": "conversation-01",
+    "level": "A1",
+    "unit": "التعارف والبدايات",
+    "title": "أول مقابلة",
+    "titleEn": "Meeting someone new",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What is your name?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "My name is Salma. Nice to meet you.",
+        "ar": "اسمي سلمى. مبسوطة بمعرفتك."
+      },
+      {
+        "role": "A",
+        "en": "Nice to meet you too. Are you a student?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, I study English.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "My name is Salma. Nice to meet you.",
+      "My name are Salma.",
+      "I am name Salma."
+    ],
+    "answer": 0,
+    "phrase": "My name is Salma. Nice to meet you.",
+    "gap": "name",
+    "gapPrompt": "My ____ is Salma. Nice to meet you.",
+    "image": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Portrait of a woman",
+    "photoSource": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+    "prompt": "What is your name? Nice to meet you too. Are you a student?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-02",
+    "level": "A1",
+    "unit": "التعارف والبدايات",
+    "title": "تقديم صديق",
+    "titleEn": "Introducing a friend",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Who is this?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "This is my friend Omar.",
+        "ar": "ده صاحبي عمر."
+      },
+      {
+        "role": "A",
+        "en": "Hello, Omar. Where are you from?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I am from Cairo.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "This is my friend Omar.",
+      "This my friend Omar is.",
+      "These is my friend Omar."
+    ],
+    "answer": 0,
+    "phrase": "This is my friend Omar.",
+    "gap": "friend",
+    "gapPrompt": "This is my ____ Omar.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Young man",
+    "photoSource": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    "prompt": "Who is this? Hello, Omar. Where are you from?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-03",
+    "level": "A1",
+    "unit": "التعارف والبدايات",
+    "title": "في الفصل",
+    "titleEn": "In the classroom",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Can you spell your surname?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes. It is H-A-S-S-A-N.",
+        "ar": "أيوه، هجاء اسم العيلة حسن هو H-A-S-S-A-N."
+      },
+      {
+        "role": "A",
+        "en": "Thank you. Please write it here.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Of course.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Yes. It is H-A-S-S-A-N.",
+      "Yes. It are Hassan.",
+      "Yes. I spell not."
+    ],
+    "answer": 0,
+    "phrase": "Yes. It is H-A-S-S-A-N.",
+    "gap": "Yes",
+    "gapPrompt": "____ It is H-A-S-S-A-N.",
+    "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Classroom",
+    "photoSource": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
+    "prompt": "Can you spell your surname? Thank you. Please write it here.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-04",
+    "level": "A1",
+    "unit": "التعارف والبدايات",
+    "title": "طلب التوضيح",
+    "titleEn": "Asking for repetition",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Please turn to page fourteen.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Could you say that again, please?",
+        "ar": "ممكن تقول ده تاني لو سمحت؟"
+      },
+      {
+        "role": "A",
+        "en": "Page fourteen. One four.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Thank you. I understand now.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Could you say that again, please?",
+      "You speak again now!",
+      "Could say again you?"
+    ],
+    "answer": 0,
+    "phrase": "Could you say that again, please?",
+    "gap": "again",
+    "gapPrompt": "Could you say that ____ please?",
+    "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Teacher helping a learner",
+    "photoSource": "https://images.unsplash.com/photo-1577896851231-70ef18881754",
+    "prompt": "Please turn to page fourteen. Page fourteen. One four.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-05",
+    "level": "A1",
+    "unit": "يومي وحياتي",
+    "title": "روتين الصبح",
+    "titleEn": "Morning routine",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What time do you get up?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I get up at seven every day.",
+        "ar": "بصحى الساعة 7 كل يوم."
+      },
+      {
+        "role": "A",
+        "en": "Do you have breakfast at home?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, I usually have eggs.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I get up at seven every day.",
+      "I gets up at seven.",
+      "I getting up at seven."
+    ],
+    "answer": 0,
+    "phrase": "I get up at seven every day.",
+    "gap": "seven",
+    "gapPrompt": "I get up at ____ every day.",
+    "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Coffee and work desk",
+    "photoSource": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+    "prompt": "What time do you get up? Do you have breakfast at home?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-06",
+    "level": "A1",
+    "unit": "يومي وحياتي",
+    "title": "كتاب مفضل",
+    "titleEn": "A favourite book",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What do you like reading?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I like reading short stories.",
+        "ar": "بحب أقرأ قصص قصيرة."
+      },
+      {
+        "role": "A",
+        "en": "Do you read every evening?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, before I go to bed.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I like reading short stories.",
+      "I like readed stories.",
+      "I likes reading stories."
+    ],
+    "answer": 0,
+    "phrase": "I like reading short stories.",
+    "gap": "stories",
+    "gapPrompt": "I like reading short ____",
+    "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Stack of books",
+    "photoSource": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6",
+    "prompt": "What do you like reading? Do you read every evening?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-07",
+    "level": "A1",
+    "unit": "يومي وحياتي",
+    "title": "مذاكرة مع صاحبك",
+    "titleEn": "Studying together",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Are you free this afternoon?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes. Shall we study together?",
+        "ar": "أيوه. إيه رأيك نذاكر سوا؟"
+      },
+      {
+        "role": "A",
+        "en": "Good idea. At the library?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, see you there at three.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Yes. Shall we study together?",
+      "Yes. We shall studying?",
+      "Yes. Shall study we together?"
+    ],
+    "answer": 0,
+    "phrase": "Yes. Shall we study together?",
+    "gap": "together",
+    "gapPrompt": "Yes. Shall we study ____",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Students working together",
+    "photoSource": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "prompt": "Are you free this afternoon? Good idea. At the library?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-08",
+    "level": "A1",
+    "unit": "يومي وحياتي",
+    "title": "هواية الكتابة",
+    "titleEn": "Talking about a hobby",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What do you do in your free time?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I write stories in my notebook.",
+        "ar": "بكتب قصص في كشكولي."
+      },
+      {
+        "role": "A",
+        "en": "That sounds interesting. How often?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Every weekend.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I write stories in my notebook.",
+      "I writing stories yesterday every day.",
+      "I writes stories."
+    ],
+    "answer": 0,
+    "phrase": "I write stories in my notebook.",
+    "gap": "notebook",
+    "gapPrompt": "I write stories in my ____",
+    "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Writing in a notebook",
+    "photoSource": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "prompt": "What do you do in your free time? That sounds interesting. How often?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-09",
+    "level": "A2",
+    "unit": "سفر ومشاوير",
+    "title": "في المطار",
+    "titleEn": "At the airport",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "May I see your passport, please?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Here you are. Is this the right queue?",
+        "ar": "اتفضل. ده الطابور الصح؟"
+      },
+      {
+        "role": "A",
+        "en": "Yes. Where are you flying today?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I am flying to London.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Here you are. Is this the right queue?",
+      "Here are you passport I.",
+      "Where queue right is this?"
+    ],
+    "answer": 0,
+    "phrase": "Here you are. Is this the right queue?",
+    "gap": "queue",
+    "gapPrompt": "Here you are. Is this the right ____",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Aircraft in flight",
+    "photoSource": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    "prompt": "May I see your passport, please? Yes. Where are you flying today?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-10",
+    "level": "A2",
+    "unit": "سفر ومشاوير",
+    "title": "بوابة الطيارة",
+    "titleEn": "Finding the gate",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Excuse me, where is gate twelve?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Go straight ahead and turn left.",
+        "ar": "امشي على طول وبعدها لف شمال."
+      },
+      {
+        "role": "A",
+        "en": "Is it near the coffee shop?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, just past it.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Go straight ahead and turn left.",
+      "Go straighted and turning left.",
+      "Go ahead straightly yesterday."
+    ],
+    "answer": 0,
+    "phrase": "Go straight ahead and turn left.",
+    "gap": "left",
+    "gapPrompt": "Go straight ahead and turn ____",
+    "image": "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Airport terminal",
+    "photoSource": "https://images.unsplash.com/photo-1517400508447-f8dd518b86db",
+    "prompt": "Excuse me, where is gate twelve? Is it near the coffee shop?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-11",
+    "level": "A2",
+    "unit": "سفر ومشاوير",
+    "title": "تغيير خطة",
+    "titleEn": "Changing a plan",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Shall we meet in the city centre?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Could we meet at the station instead?",
+        "ar": "ينفع نتقابل في المحطة بدل كده؟"
+      },
+      {
+        "role": "A",
+        "en": "Sure. Would five o'clock suit you?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, that works for me.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Could we meet at the station instead?",
+      "Could we met at station instead?",
+      "We could meeting instead station?"
+    ],
+    "answer": 0,
+    "phrase": "Could we meet at the station instead?",
+    "gap": "instead",
+    "gapPrompt": "Could we meet at the station ____",
+    "image": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "City skyline",
+    "photoSource": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000",
+    "prompt": "Shall we meet in the city centre? Sure. Would five o'clock suit you?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-12",
+    "level": "A2",
+    "unit": "سفر ومشاوير",
+    "title": "في سوق الخضار",
+    "titleEn": "At the market",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "How much are these tomatoes?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "They are twenty pounds a kilo.",
+        "ar": "سعرها 20 جنيه للكيلو في الحوار ده."
+      },
+      {
+        "role": "A",
+        "en": "I would like half a kilo, please.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Certainly. Anything else?",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "They are twenty pounds a kilo.",
+      "They is twenty pounds kilo.",
+      "It are twenty pounds."
+    ],
+    "answer": 0,
+    "phrase": "They are twenty pounds a kilo.",
+    "gap": "kilo",
+    "gapPrompt": "They are twenty pounds a ____",
+    "image": "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Fresh produce at a market",
+    "photoSource": "https://images.unsplash.com/photo-1488459716781-31db52582fe9",
+    "prompt": "How much are these tomatoes? I would like half a kilo, please.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-13",
+    "level": "A2",
+    "unit": "خبرات وتجارب",
+    "title": "زيارة الدكتور",
+    "titleEn": "At the doctor's",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "How long have you had this cough?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I have had it since Monday.",
+        "ar": "الكحة عندي من يوم الاتنين."
+      },
+      {
+        "role": "A",
+        "en": "Do you have any other symptoms?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I also have a sore throat.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I have had it since Monday.",
+      "I have it since Monday had have.",
+      "I has had it since Monday."
+    ],
+    "answer": 0,
+    "phrase": "I have had it since Monday.",
+    "gap": "since",
+    "gapPrompt": "I have had it ____ Monday.",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Healthcare consultation",
+    "photoSource": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
+    "prompt": "How long have you had this cough? Do you have any other symptoms?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-14",
+    "level": "A2",
+    "unit": "خبرات وتجارب",
+    "title": "حكاية امبارح",
+    "titleEn": "Telling a short story",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "How was your weekend?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I visited a museum with my sister.",
+        "ar": "زرت متحف مع أختي."
+      },
+      {
+        "role": "A",
+        "en": "What did you enjoy most?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "The old maps were amazing.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I visited a museum with my sister.",
+      "I visit a museum yesterday usually.",
+      "I visited to a museum with yesterday."
+    ],
+    "answer": 0,
+    "phrase": "I visited a museum with my sister.",
+    "gap": "visited",
+    "gapPrompt": "I ____ a museum with my sister.",
+    "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Old books and history",
+    "photoSource": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d",
+    "prompt": "How was your weekend? What did you enjoy most?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-15",
+    "level": "A2",
+    "unit": "خبرات وتجارب",
+    "title": "التحضير للامتحان",
+    "titleEn": "Preparing for an exam",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Have you finished your revision yet?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Not yet, but I have reviewed two chapters.",
+        "ar": "لسه، بس راجعت فصلين."
+      },
+      {
+        "role": "A",
+        "en": "Would you like to revise together?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, that would help.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Not yet, but I have reviewed two chapters.",
+      "I has reviewed two chapters.",
+      "I have review two chapters."
+    ],
+    "answer": 0,
+    "phrase": "Not yet, but I have reviewed two chapters.",
+    "gap": "reviewed",
+    "gapPrompt": "Not yet, but I have ____ two chapters.",
+    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Exam preparation desk",
+    "photoSource": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173",
+    "prompt": "Have you finished your revision yet? Would you like to revise together?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-16",
+    "level": "A2",
+    "unit": "خبرات وتجارب",
+    "title": "يوم التخرج",
+    "titleEn": "Graduation plans",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What are you going to do after graduation?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I am going to apply for a teaching job.",
+        "ar": "ناوي أقدم على وظيفة مدرس."
+      },
+      {
+        "role": "A",
+        "en": "That sounds exciting. Where?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "At a local language school.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I am going to apply for a teaching job.",
+      "I going apply job.",
+      "I am going to applied for a job."
+    ],
+    "answer": 0,
+    "phrase": "I am going to apply for a teaching job.",
+    "gap": "apply",
+    "gapPrompt": "I am going to ____ for a teaching job.",
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Students planning together",
+    "photoSource": "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+    "prompt": "What are you going to do after graduation? That sounds exciting. Where?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-17",
+    "level": "B1",
+    "unit": "علاقات ومحادثات",
+    "title": "استمرار الكلام",
+    "titleEn": "Keeping a conversation going",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "I started learning Italian last month.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Really? What made you choose Italian?",
+        "ar": "بجد؟ إيه اللي خلاك تختار الإيطالي؟"
+      },
+      {
+        "role": "A",
+        "en": "I want to visit my cousins in Rome.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "That sounds like a good reason.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Really? What made you choose Italian?",
+      "That is irrelevant. Stop talking.",
+      "No question. Conversation finished."
+    ],
+    "answer": 0,
+    "phrase": "Really? What made you choose Italian?",
+    "gap": "choose",
+    "gapPrompt": "Really? What made you ____ Italian?",
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Group of colleagues",
+    "photoSource": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    "prompt": "I started learning Italian last month. I want to visit my cousins in Rome.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-18",
+    "level": "B1",
+    "unit": "علاقات ومحادثات",
+    "title": "نصيحة لصاحبك",
+    "titleEn": "Giving friendly advice",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "I find it hard to study after work.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Why don't you try a short session before work?",
+        "ar": "ليه متجربش تذاكر شوية قبل الشغل؟"
+      },
+      {
+        "role": "A",
+        "en": "That might work. How long should I study?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Start with fifteen minutes.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Why don't you try a short session before work?",
+      "You must never sleep again.",
+      "Your problem is not important."
+    ],
+    "answer": 0,
+    "phrase": "Why don't you try a short session before work?",
+    "gap": "try",
+    "gapPrompt": "Why don't you ____ a short session before work?",
+    "image": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Study materials",
+    "photoSource": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8",
+    "prompt": "I find it hard to study after work. That might work. How long should I study?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-19",
+    "level": "B1",
+    "unit": "علاقات ومحادثات",
+    "title": "اعتذار مناسب",
+    "titleEn": "Apologising and repairing",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "You missed our meeting yesterday.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I am sorry. I should have let you know.",
+        "ar": "أنا آسف. كان المفروض أبلغك."
+      },
+      {
+        "role": "A",
+        "en": "Thanks for saying that. Can we reschedule?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes. Would tomorrow afternoon work?",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I am sorry. I should have let you know.",
+      "It is your fault I forgot.",
+      "I never need to apologise."
+    ],
+    "answer": 0,
+    "phrase": "I am sorry. I should have let you know.",
+    "gap": "sorry",
+    "gapPrompt": "I am ____ I should have let you know.",
+    "image": "https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Planning and calendar",
+    "photoSource": "https://images.unsplash.com/photo-1506784365847-bbad939e9335",
+    "prompt": "You missed our meeting yesterday. Thanks for saying that. Can we reschedule?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-20",
+    "level": "B1",
+    "unit": "علاقات ومحادثات",
+    "title": "مقابلة عمل",
+    "titleEn": "A job interview",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Why would you like to work here?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Your training programme matches my career goals.",
+        "ar": "برنامج التدريب عندكم مناسب لأهدافي المهنية."
+      },
+      {
+        "role": "A",
+        "en": "Could you give us an example?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I want to develop my classroom skills.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Your training programme matches my career goals.",
+      "Because every other company is terrible.",
+      "I have no interest in the role."
+    ],
+    "answer": 0,
+    "phrase": "Your training programme matches my career goals.",
+    "gap": "career",
+    "gapPrompt": "Your training programme matches my ____ goals.",
+    "image": "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Job interview",
+    "photoSource": "https://images.unsplash.com/photo-1565688534245-05d6b5be184a",
+    "prompt": "Why would you like to work here? Could you give us an example?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-21",
+    "level": "B1",
+    "unit": "شغل وتعاون",
+    "title": "تحديث مشروع",
+    "titleEn": "A project update",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "How is the website coming along?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "We have finished the design, but testing is still in progress.",
+        "ar": "خلصنا التصميم، لكن الاختبار لسه شغال."
+      },
+      {
+        "role": "A",
+        "en": "What do you need from us?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Feedback on the mobile layout, please.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "We have finished the design, but testing is still in progress.",
+      "Everything is finished, but nothing has started.",
+      "I cannot discuss any update ever."
+    ],
+    "answer": 0,
+    "phrase": "We have finished the design, but testing is still in progress.",
+    "gap": "testing",
+    "gapPrompt": "We have finished the design, but ____ is still in progress.",
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Computer used for development",
+    "photoSource": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "prompt": "How is the website coming along? What do you need from us?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-22",
+    "level": "B1",
+    "unit": "شغل وتعاون",
+    "title": "توزيع المهام",
+    "titleEn": "Sharing the workload",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Could you take care of the slides?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, as long as you send me the figures today.",
+        "ar": "أيوه، بشرط تبعتلي الأرقام النهارده."
+      },
+      {
+        "role": "A",
+        "en": "That is fine. I will send them by noon.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Great. I will start after lunch.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Yes, as long as you send me the figures today.",
+      "Yes, although I refuse to do the slides.",
+      "No. You always do everything wrong."
+    ],
+    "answer": 0,
+    "phrase": "Yes, as long as you send me the figures today.",
+    "gap": "send",
+    "gapPrompt": "Yes, as long as you ____ me the figures today.",
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Team meeting",
+    "photoSource": "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
+    "prompt": "Could you take care of the slides? That is fine. I will send them by noon.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-23",
+    "level": "B1",
+    "unit": "شغل وتعاون",
+    "title": "تأكيد التسليم",
+    "titleEn": "Confirming a deadline",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Will the report be ready by Friday?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes. We will have completed it by Thursday evening.",
+        "ar": "أيوه. هنكون خلصناه بحلول مساء الخميس."
+      },
+      {
+        "role": "A",
+        "en": "Will there be time for a final check?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, we have allowed an extra day.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Yes. We will have completed it by Thursday evening.",
+      "Yes. We will have complete it Thursday.",
+      "Yes. We will had completed it."
+    ],
+    "answer": 0,
+    "phrase": "Yes. We will have completed it by Thursday evening.",
+    "gap": "completed",
+    "gapPrompt": "Yes. We will have ____ it by Thursday evening.",
+    "image": "https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Clock and time management",
+    "photoSource": "https://images.unsplash.com/photo-1508962914676-134849a727f0",
+    "prompt": "Will the report be ready by Friday? Will there be time for a final check?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-24",
+    "level": "B1",
+    "unit": "شغل وتعاون",
+    "title": "شرح مشكلة تقنية",
+    "titleEn": "Explaining a technical problem",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What happens when you open the file?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "An error message appears, and the screen goes blank.",
+        "ar": "بتظهر رسالة خطأ والشاشة بتفضى."
+      },
+      {
+        "role": "A",
+        "en": "Have you tried restarting the application?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, but the problem is still there.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "An error message appears, and the screen goes blank.",
+      "Everything works, so the file never opens.",
+      "It is definitely your fault without checking."
+    ],
+    "answer": 0,
+    "phrase": "An error message appears, and the screen goes blank.",
+    "gap": "appears",
+    "gapPrompt": "An error message ____ and the screen goes blank.",
+    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Laptop and digital work",
+    "photoSource": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "prompt": "What happens when you open the file? Have you tried restarting the application?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-25",
+    "level": "B2",
+    "unit": "نقاش وإقناع",
+    "title": "اختلاف باحترام",
+    "titleEn": "Disagreeing respectfully",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "We should cancel all face-to-face meetings.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I see your point, but some discussions work better in person.",
+        "ar": "فاهم وجهة نظرك، بس بعض النقاشات بتكون أحسن وجها لوجه."
+      },
+      {
+        "role": "A",
+        "en": "Which discussions do you have in mind?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Sensitive feedback and team planning.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I see your point, but some discussions work better in person.",
+      "That is the stupidest idea I have heard.",
+      "You are not allowed to disagree with me."
+    ],
+    "answer": 0,
+    "phrase": "I see your point, but some discussions work better in person.",
+    "gap": "point",
+    "gapPrompt": "I see your ____ but some discussions work better in person.",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "People discussing ideas",
+    "photoSource": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+    "prompt": "We should cancel all face-to-face meetings. Which discussions do you have in mind?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-26",
+    "level": "B2",
+    "unit": "نقاش وإقناع",
+    "title": "اقتراح بديل",
+    "titleEn": "Suggesting an alternative",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "The only solution is to hire more staff.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Have we considered improving the booking system first?",
+        "ar": "فكرنا نحسن نظام الحجز الأول؟"
+      },
+      {
+        "role": "A",
+        "en": "How would that help?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "It could reduce the time spent on routine tasks.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Have we considered improving the booking system first?",
+      "There are no other solutions, ever.",
+      "Do what I say and stop asking."
+    ],
+    "answer": 0,
+    "phrase": "Have we considered improving the booking system first?",
+    "gap": "considered",
+    "gapPrompt": "Have we ____ improving the booking system first?",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Team brainstorming",
+    "photoSource": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "prompt": "The only solution is to hire more staff. How would that help?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-27",
+    "level": "B2",
+    "unit": "نقاش وإقناع",
+    "title": "مميزات وعيوب",
+    "titleEn": "Weighing up options",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Should we move the course online?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "On the one hand, it is flexible; on the other hand, some learners need classroom support.",
+        "ar": "من ناحية ده مرن، ومن ناحية تانية بعض الطلبة محتاجين دعم في الفصل."
+      },
+      {
+        "role": "A",
+        "en": "Could we offer both formats?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Yes, a mixed approach might work.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "On the one hand, it is flexible; on the other hand, some learners need classroom support.",
+      "There can never be any disadvantages.",
+      "Only my preference matters here."
+    ],
+    "answer": 0,
+    "phrase": "On the one hand, it is flexible; on the other hand, some learners need classroom support.",
+    "gap": "hand",
+    "gapPrompt": "On the one ____ it is flexible; on the other hand, some learners need classroom support.",
+    "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Learning with technology",
+    "photoSource": "https://images.unsplash.com/photo-1531482615713-2afd69097998",
+    "prompt": "Should we move the course online? Could we offer both formats?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-28",
+    "level": "B2",
+    "unit": "نقاش وإقناع",
+    "title": "حل وسط",
+    "titleEn": "Reaching a compromise",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "We need the whole budget for advertising.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "What if we split it between advertising and training?",
+        "ar": "إيه رأيك نقسمه بين الإعلان والتدريب؟"
+      },
+      {
+        "role": "A",
+        "en": "I could agree to that if we review the results next month.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "That seems fair.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "What if we split it between advertising and training?",
+      "Give me everything and do not discuss it.",
+      "There is no need to hear your view."
+    ],
+    "answer": 0,
+    "phrase": "What if we split it between advertising and training?",
+    "gap": "split",
+    "gapPrompt": "What if we ____ it between advertising and training?",
+    "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Business discussion",
+    "photoSource": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+    "prompt": "We need the whole budget for advertising. I could agree to that if we review the results next month.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-29",
+    "level": "B2",
+    "unit": "عرض وحكي متقدم",
+    "title": "افتتاح عرض",
+    "titleEn": "Opening a presentation",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "What will your presentation cover?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I will outline the problem, compare two options, and recommend a solution.",
+        "ar": "هوضح المشكلة وأقارن اختيارين وأقترح حل."
+      },
+      {
+        "role": "A",
+        "en": "How will you involve the audience?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "I will begin with a short question.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "I will outline the problem, compare two options, and recommend a solution.",
+      "I will talk randomly with no purpose.",
+      "There is nothing for the audience to understand."
+    ],
+    "answer": 0,
+    "phrase": "I will outline the problem, compare two options, and recommend a solution.",
+    "gap": "outline",
+    "gapPrompt": "I will ____ the problem, compare two options, and recommend a solution.",
+    "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Professional in business clothing",
+    "photoSource": "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
+    "prompt": "What will your presentation cover? How will you involve the audience?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-30",
+    "level": "B2",
+    "unit": "عرض وحكي متقدم",
+    "title": "متابعة إجابة",
+    "titleEn": "Asking a follow-up question",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "The new design is more accessible.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Could you explain what you mean by accessible in this context?",
+        "ar": "ممكن توضح قصدك بإمكانية الوصول في السياق ده؟"
+      },
+      {
+        "role": "A",
+        "en": "The text is easier to read, and the buttons work with a keyboard.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Thank you. That makes it clearer.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Could you explain what you mean by accessible in this context?",
+      "I already know everything, so stop.",
+      "That word cannot mean anything."
+    ],
+    "answer": 0,
+    "phrase": "Could you explain what you mean by accessible in this context?",
+    "gap": "context",
+    "gapPrompt": "Could you explain what you mean by accessible in this ____",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Design and planning",
+    "photoSource": "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+    "prompt": "The new design is more accessible. The text is easier to read, and the buttons work with a keyboard.",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-31",
+    "level": "B2",
+    "unit": "عرض وحكي متقدم",
+    "title": "سرد تجربة صعبة",
+    "titleEn": "Reflecting on a challenge",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "Tell us about a difficult project.",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Although we missed the first deadline, we used the feedback to improve the final result.",
+        "ar": "رغم إننا فوتنا أول موعد، استخدمنا الملاحظات عشان نحسن النتيجة."
+      },
+      {
+        "role": "A",
+        "en": "What did you learn from it?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "To test our assumptions earlier.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "Although we missed the first deadline, we used the feedback to improve the final result.",
+      "We failed once, therefore learning is impossible.",
+      "I blame everyone and learned nothing."
+    ],
+    "answer": 0,
+    "phrase": "Although we missed the first deadline, we used the feedback to improve the final result.",
+    "gap": "Although",
+    "gapPrompt": "____ we missed the first deadline, we used the feedback to improve the final result.",
+    "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Engineering project work",
+    "photoSource": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+    "prompt": "Tell us about a difficult project. What did you learn from it?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  },
+  {
+    "id": "conversation-32",
+    "level": "B2",
+    "unit": "عرض وحكي متقدم",
+    "title": "خاتمة مقنعة",
+    "titleEn": "Closing a discussion",
+    "dialogue": [
+      {
+        "role": "A",
+        "en": "How would you sum up the discussion?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "We agree on the goal, but we still need to compare the costs before deciding.",
+        "ar": "متفقين على الهدف، لكن لسه محتاجين نقارن التكاليف قبل القرار."
+      },
+      {
+        "role": "A",
+        "en": "What is the next step?",
+        "ar": ""
+      },
+      {
+        "role": "B",
+        "en": "Let us gather the figures and meet again on Monday.",
+        "ar": ""
+      }
+    ],
+    "options": [
+      "We agree on the goal, but we still need to compare the costs before deciding.",
+      "We have agreed on nothing, so I will decide alone.",
+      "No next step is needed for an unresolved decision."
+    ],
+    "answer": 0,
+    "phrase": "We agree on the goal, but we still need to compare the costs before deciding.",
+    "gap": "costs",
+    "gapPrompt": "We agree on the goal, but we still need to compare the ____ before deciding.",
+    "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+    "imageAlt": "Colleagues reviewing a decision",
+    "photoSource": "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+    "prompt": "How would you sum up the discussion? What is the next step?",
+    "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
+  }
+];
