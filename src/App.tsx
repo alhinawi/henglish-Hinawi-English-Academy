@@ -496,6 +496,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                     userProfile={activeProfile}
                     completedLessons={progress.completedLessons}
                     quizScores={progress.quizScores}
+                    isLoggedIn={session.isLoggedIn && session.type === 'authenticated'}
+                    onRequestAuth={() => openAuthWithTab('register')}
                   />
                 )}
 
