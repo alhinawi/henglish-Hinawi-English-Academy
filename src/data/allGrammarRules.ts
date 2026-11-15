@@ -2292,5 +2292,774 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
         explanation: 'إقلاع الطائرة هو take off.'
       }
     ]
-  }
+  },
+  // ==========================================
+  // BATCH A1-A2 COMPLETION (الأساسيات)
+  // ==========================================
+  {
+    id: 'verb-to-be',
+    order: 40,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'فعل To Be: عمود الجملة الإنجليزية (am / is / are)',
+    titleEn: 'Verb To Be (am / is / are)',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'I + am  |  He/She/It + is  |  You/We/They + are',
+    negativeFormula: "Subject + am/is/are + not  (isn't / aren't / 'm not)",
+    questionFormula: 'Am / Is / Are + Subject + ... ?',
+    summaryAr: 'فعل To Be هو أول فعل لازم تتقنه: بيستخدم للوصف والتعريف والحالة، ومعناه "يكون" لكن في الإنجليزي بنحطه في الجملة دايماً، حتى لو مالوش ترجمة واضحة بالعربي.',
+    timelineDescription: 'حالة أو وصف ثابت في الزمن الحاضر: الاسم، السن، الشغلانة، المكان، الإحساس.',
+    imageUrl: ONLINE_IMAGES.learningStudyGroup,
+    imageAlt: 'Students introducing themselves in a study group',
+    keyUsagePoints: [
+      'التعريف بالنفس والآخرين (I am Mohamed / She is Sara)',
+      'الوصف والحالة (The test is easy / We are tired)',
+      'المكان والموقع (They are at home / Cairo is big)',
+      'السن والمهنة (I am 27 years old / He is a doctor)'
+    ],
+    egyptianTips: [
+      'في العربي بنقول "أنا مدرس" من غير فعل، لكن في الإنجليزي لازم: I AM a teacher. ممنوع تنساه.',
+      'الاختصارات هي الطبيعي في الكلام: I\'m, He\'s, They\'re. اكتبها كاملة في الرسمي بس.',
+      'في النفي: isn\'t و aren\'t أشهر بكتير من is not و are not في المحادثة.'
+    ],
+    commonTraps: [
+      'نسيان الفعل خالص: الخطأ "She doctor"، الصواب: She IS a doctor.',
+      'خلط is مع I: الخطأ "I is"، الصواب: I am. الـ is مخصصة لـ He/She/It بس.',
+      'ترجمة "عمري 27 سنة" حرفياً: الخطأ "I have 27 years" (دي فرنساوي!)، الصواب: I am 27 years old.'
+    ],
+    examples: [
+      { en: 'My brother is a pharmacist in Alexandria.', ar: 'أخويا صيدلي في الإسكندرية.', highlight: 'is', context: 'مهنة وتعريف' },
+      { en: 'We are very proud of our national team.', ar: 'إحنا فخورين جداً بمنتخبنا القومي.', highlight: 'are', context: 'شعور وحالة' },
+      { en: 'Is the new metro line open yet?', ar: 'هل خط المترو الجديد اتفتح لسه؟', highlight: 'Is', context: 'سؤال عن حالة' },
+      { en: 'The streets are not crowded this morning.', ar: 'الشوارع مش زحمة الصبح ده.', highlight: 'are not', context: 'نفي وصف' }
+    ],
+    miniQuiz: [
+      {
+        question: 'My parents ______ at work right now.',
+        options: ['is', 'am', 'are', 'be'],
+        correct: 2,
+        explanation: 'الفاعل My parents جمع (they)، ومع الجمع دايماً are.'
+      },
+      {
+        question: '______ your sister a student at Cairo University?',
+        options: ['Are', 'Am', 'Is', 'Does'],
+        correct: 2,
+        explanation: 'الفاعل your sister مفرد غائب (she)، فالسؤال يبدأ بـ Is.'
+      }
+    ]
+  },
+  {
+    id: 'subject-object-pronouns',
+    order: 41,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'ضمائر الفاعل والمفعول: I و Me إيه الفرق؟',
+    titleEn: 'Subject & Object Pronouns',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'فاعل: I, you, he, she, it, we, they  |  مفعول: me, you, him, her, it, us, them',
+    negativeFormula: 'لا يوجد نفي خاص بالضمائر؛ النفي في الفعل الذي يليها',
+    questionFormula: 'الضمير يحل محل الاسم في نفس مكانه في السؤال',
+    summaryAr: 'الضمائر بتغنيك عن تكرار الأسماء. سرّها بسيط: الضمير اللي بيعمل الفعل = فاعل (I, he, they)، واللي بيتعمل فيه الفعل أو بييجي بعد حرف جر = مفعول (me, him, them).',
+    timelineDescription: 'قاعدة تركيبية ثابتة لا ترتبط بزمن معين؛ تُستخدم في كل الجمل.',
+    imageUrl: ONLINE_IMAGES.mentorStudent,
+    imageAlt: 'Teacher pointing at pronouns chart with a student',
+    keyUsagePoints: [
+      'ضمائر الفاعل تأتي قبل الفعل مباشرة (She loves coffee)',
+      'ضمائر المفعول تأتي بعد الفعل أو حرف الجر (I called him / Talk to me)',
+      'It للأشياء والحيوانات وغير العاقل عموماً',
+      'They يمكن استخدامها للمفرد عند عدم تحديد النوع (Someone left their bag)'
+    ],
+    egyptianTips: [
+      'اسأل نفسك: مين اللي عمل الفعل؟ الإجابة هي الفاعل. "أنا شفته" = I (فاعل) saw him (مفعول).',
+      'بعد with, to, for, about لازم ضمير مفعول: Come with me (مش with I).',
+      'بالعامية بنقول "هو" و"هي" كتير، وفي الإنجليزي نفس الراحة موجودة: he للولد، she للبنت، it للحاجة.'
+    ],
+    commonTraps: [
+      'استخدام I مكان me بعد حرف الجر: الخطأ "between you and I"، الصواب: between you and me.',
+      'نسيان ضمير الفاعل في الجملة: الخطأ "Is raining"، الصواب: IT is raining.',
+      'استخدام her كفاعل: الخطأ "Her is my friend"، الصواب: SHE is my friend.'
+    ],
+    examples: [
+      { en: 'Ahmed called me after the match finished.', ar: 'أحمد كلمّني بعد ما الماتش خلص.', highlight: 'me', context: 'ضمير مفعول بعد الفعل' },
+      { en: 'We watched the movie yesterday, but we did not like it.', ar: 'إحنا اتفرجنا على الفيلم إمبارح، بس معجبنيش.', highlight: 'it', context: 'It للحاجة (الفيلم)' },
+      { en: 'My neighbours are kind; I always help them with their groceries.', ar: 'جيراني ناس لطاف؛ دايماً بساعدهم في المشتريات.', highlight: 'them', context: 'ضمير مفعول للجمع' }
+    ],
+    miniQuiz: [
+      {
+        question: 'My manager is busy today; please send the report to ______.',
+        options: ['she', 'her', 'hers', 'herself'],
+        correct: 1,
+        explanation: 'بعد حرف الجر to نستخدم ضمير المفعول: her.'
+      },
+      {
+        question: '______ are planning a trip to Siwa next month.',
+        options: ['Us', 'Them', 'We', 'Our'],
+        correct: 2,
+        explanation: 'محتاجين ضمير فاعل قبل الفعل are planning: We.'
+      }
+    ]
+  },
+  {
+    id: 'possessives',
+    order: 42,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'الملكية: My و Mine وعلامة الـ \'s',
+    titleEn: 'Possessive Adjectives, Pronouns & \'s',
+    level: 'A1 - مبتدئ',
+    goldenFormula: "صفة ملكية + اسم: my car  |  ضمير ملكية لوحده: mine  |  اسم شخص + 's: Sara's car",
+    negativeFormula: 'لا نفي خاص؛ النفي في الفعل: This is not my bag',
+    questionFormula: 'Whose + اسم؟ (Whose bag is this?)',
+    summaryAr: 'ثلاث طرق للملكية: صفة ملكية قبل الاسم (my, his, their)، ضمير ملكية يستغني عن الاسم (mine, hers, theirs)، والـ \'s بعد اسم الشخص أو الحيوان (my father\'s house).',
+    timelineDescription: 'قاعدة تركيبية ثابتة للتعبير عن الملكية أو النسبة في أي زمن.',
+    imageUrl: ONLINE_IMAGES.modernClassroom,
+    imageAlt: 'Students pointing at their own books in a classroom',
+    keyUsagePoints: [
+      'صفات الملكية لا تأتي أبداً بدون اسم بعدها (my phone, our house)',
+      'ضمائر الملكية تأتي بدون اسم بعدها (The phone is mine)',
+      "الـ 's للعاقل أساساً: Omar's car / the cat's tail",
+      'للأشياء غير العاقلة نفضّل of: the leg of the table (وليس the table\'s leg في الرسمي)'
+    ],
+    egyptianTips: [
+      'العربي عنده نفس الفكرة: "عربيتي" = my car (صفة + اسم)، و"العربية بتاعتي" = the car is mine.',
+      'مش كل حاجة تاخد \'s: البيت بتاع الترباس؟ لا. قول the leg of the table مش the table\'s leg.',
+      'its بدون فاصلة عليا = ملكية (its color)، و it\'s بفاصلة = اختصار it is. دي أشهر غلطة إملائية!'
+    ],
+    commonTraps: [
+      'وضع اسم بعد ضمير الملكية: الخطأ "This is mine book"، الصواب: This is my book / This book is mine.',
+      'الخلط بين its و it\'s: الخطأ "Its raining"، الصواب: It\'s raining.',
+      'استخدام \'s مع الجمع المنتهي بـ s خطأ: الصواب "my parents\' house" (فاصلة بس من غير s تانية).'
+    ],
+    examples: [
+      { en: 'My sister\'s wedding is next Friday.', ar: 'فرح أختي الجمعة الجاية.', highlight: "sister's", context: 'الـ \'s مع شخص' },
+      { en: 'This umbrella is not mine; I think it is hers.', ar: 'الشمسية دي مش بتاعتي؛ أظن إنها بتاعتها هي.', highlight: 'mine', context: 'ضمير ملكية بدون اسم' },
+      { en: 'We painted our balcony before Eid.', ar: 'إحنا دهنّا البلكونة بتاعتنا قبل العيد.', highlight: 'our', context: 'صفة ملكية قبل الاسم' }
+    ],
+    miniQuiz: [
+      {
+        question: 'This is not my dictionary. It is ______.',
+        options: ['her', 'hers', 'she', 'she\'s'],
+        correct: 1,
+        explanation: 'مفيش اسم بعد الفراغ، فمحتاجين ضمير ملكية: hers.'
+      },
+      {
+        question: 'The cat is playing with ______ tail.',
+        options: ["it's", 'its', 'it', 'theirs'],
+        correct: 1,
+        explanation: 'ملكية للحيوان = its بدون فاصلة عليا. it\'s معناها it is.'
+      }
+    ]
+  },
+  {
+    id: 'there-is-there-are',
+    order: 43,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'There is / There are: التعبير عن الوجود',
+    titleEn: 'There is / There are',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'There is + مفرد/غير معدود  |  There are + جمع',
+    negativeFormula: "There isn't / There aren't + ...",
+    questionFormula: 'Is there / Are there + ... ?',
+    summaryAr: 'لما تعايز تقول "في" بمعنى الوجود (في مطعم كويس هنا)، استخدم There is للمفرد و There are للجمع. دي أسرع طريقة توصف بيها مكان أو تسأل عن وجود حاجة.',
+    timelineDescription: 'وصف وجود شيء في الحاضر؛ للماضي نستخدم There was / There were.',
+    imageUrl: ONLINE_IMAGES.libraryStudy,
+    imageAlt: 'A library with many books on shelves',
+    keyUsagePoints: [
+      'There is + اسم مفرد (There is a pharmacy nearby)',
+      'There is + اسم غير معدود (There is some water)',
+      'There are + اسم جمع (There are three banks in this street)',
+      'There was / There were للماضي البسيط'
+    ],
+    egyptianTips: [
+      '"في" بالعربي مبتتغيرش، لكن الإنجليزي بيتنازع بين is و are على حسب الاسم اللي بعدها. بصّ للاسم مش لـ there.',
+      'لو الاسم سلسلة مرتبطة (a bed, a desk, and a chair)، الإنجليزي بيمشي مع أقرب اسم: There IS a bed and two chairs.',
+      'في الأسئلة السريعة اسمع للاختصار: Is there...? بتتنطق "إز ذير".'
+    ],
+    commonTraps: [
+      'استخدام There is مع جمع: الخطأ "There is many people"، الصواب: There ARE many people.',
+      'ترجمة "في" بالحرف have: الخطأ "The room has a window" لما تقصد الوجود العام، الأدق: There is a window in the room.',
+      'نسيان some/any: في النفي نقول There aren\'t any taxis (مش There aren\'t taxis في وصف عدم الوجود المطلق).'
+    ],
+    examples: [
+      { en: 'There is a famous koshary restaurant near my office.', ar: 'في مطعم كشري مشهور جنب شغلي.', highlight: 'There is', context: 'وجود مفرد' },
+      { en: 'Are there any seats left for the nine o\'clock show?', ar: 'في كراسي فاضلة لعرض الساعة تسعة؟', highlight: 'Are there', context: 'سؤال عن وجود جمع' },
+      { en: 'There were a lot of fans outside the stadium last night.', ar: 'كان في جماهير كتير بره الاستاد مبارح بالليل.', highlight: 'There were', context: 'وجود في الماضي' }
+    ],
+    miniQuiz: [
+      {
+        question: 'There ______ a lot of traffic on the bridge this morning.',
+        options: ['are', 'is', 'be', 'were'],
+        correct: 1,
+        explanation: 'Traffic اسم غير معدود (زي المية)، فنستخدم is رغم إن المعنى "زحمة كبيرة".'
+      },
+      {
+        question: '______ any ATMs in this neighbourhood?',
+        options: ['Is there', 'There is', 'Are there', 'There are'],
+        correct: 2,
+        explanation: 'سؤال عن جمع (ATMs) في الحاضر = Are there.'
+      }
+    ]
+  },
+  {
+    id: 'have-got',
+    order: 44,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'Have got: "عندي" بالإنجليزي البريطاني',
+    titleEn: 'Have Got (Possession)',
+    level: 'A1 - مبتدئ',
+    goldenFormula: "I/You/We/They + have got  |  He/She/It + has got  ('ve got / 's got)",
+    negativeFormula: "haven't got / hasn't got",
+    questionFormula: 'Have you got ... ? / Has she got ... ?',
+    summaryAr: 'Have got = "عندي/معايا" في الإنجليزي البريطاني المحكي. معناها ملكية أو صفة ثابتة، وليست زمن تام رغم شكلها. الأمريكي بيقول have بس، لكن البريطاني والكتب بتفضّل have got في الكلام.',
+    timelineDescription: 'ملكية أو صفة ثابتة في الحاضر فقط؛ لا تُستخدم للماضي (نستخدم had).',
+    imageUrl: ONLINE_IMAGES.graduationCelebration,
+    imageAlt: 'Friends celebrating, showing what they have achieved',
+    keyUsagePoints: [
+      'الملكية (I have got a new phone)',
+      'الصفات الجسدية والعائلية (She has got blue eyes / We have got two kids)',
+      'الأمراض والحالات المؤقتة (I have got a headache)',
+      'الماضي = had (I had a bike when I was young)، وليس had got'
+    ],
+    egyptianTips: [
+      'Have got هنا شكلها مضارع تام لكن معناها مضارع بسيط خالص. متترجمهاش "لقد حصلت".',
+      'في الكلام الـ have بتختفي تقريباً: "I\'ve got an idea" بتتسمع "آي ڤْ جَت".',
+      'الماضي الوحيد المقبول هو had: "كان عندي عربية" = I had a car (مش I had got).'
+    ],
+    commonTraps: [
+      'استخدام do في السؤال: الخطأ "Do you have got a pen?"، الصواب: Have you got a pen? أو Do you have a pen?',
+      'استخدامها للماضي: الخطأ "I had got a bike"، الصواب: I had a bike.',
+      'الخلط مع got للحصول: I have got a car = عندي عربية، أما I got a car أمس = اشتريت عربية.'
+    ],
+    examples: [
+      { en: 'I have got a big family; we are six brothers and sisters.', ar: 'أنا عندي عيلة كبيرة؛ إحنا ستة إخوات ولاد وبنات.', highlight: 'have got', context: 'ملكية/عائلة' },
+      { en: 'Has your flat got a balcony overlooking the Nile?', ar: 'شقتك فيها بلكونة على النيل؟', highlight: 'Has', context: 'سؤال عن صفة ثابتة' },
+      { en: 'She has not got any free time this week.', ar: 'ماعندهاش أي وقت فاضي الأسبوع ده.', highlight: 'has not got', context: 'نفي الملكية' }
+    ],
+    miniQuiz: [
+      {
+        question: 'Ahmed ______ two tickets for the concert tonight.',
+        options: ['have got', 'has got', 'is got', 'got have'],
+        correct: 1,
+        explanation: 'الفاعل Ahmed مفرد غائب (he)، فنستخدم has got.'
+      },
+      {
+        question: '______ a charger I can borrow, please?',
+        options: ['Do you have got', 'Have you got', 'You have got', 'Got you'],
+        correct: 1,
+        explanation: 'السؤال بـ have got يبدأ بـ Have you got ... ?'
+      }
+    ]
+  },
+  {
+    id: 'imperatives',
+    order: 45,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'صيغة الأمر: الأوامر والتعليمات والنصايح',
+    titleEn: 'Imperatives',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'فعل في المصدر (V1) في أول الجملة: Open the door.',
+    negativeFormula: "Don't + V1: Don't be late.",
+    questionFormula: 'لا توجد صيغة سؤال؛ للطلب المهذب: Could you / Can you + V1 ... ?',
+    summaryAr: 'صيغة الأمر أبسط صيغة في الإنجليزي: جملة بتبدأ بالفعل في المصدر من غير فاعل. بنستخدمها للأوامر، التعليمات، الإرشادات، الوصفات، والتحذيرات.',
+    timelineDescription: 'لا زمن محدد؛ توجه المستمع لفعل مطلوب الآن أو كقاعدة عامة.',
+    imageUrl: ONLINE_IMAGES.mentorStudent,
+    imageAlt: 'Coach giving instructions to a player',
+    keyUsagePoints: [
+      'الأوامر والتعليمات المباشرة (Sit down. / Turn left at the corner.)',
+      'الإرشادات والوصفات (Add two spoons of sugar.)',
+      'التحذيرات واللافتات (Do not smoke. / Watch your step.)',
+      'العروض والدعوات الودودة (Have some tea. / Come in!)'
+    ],
+    egyptianTips: [
+      'زي العربي بالظبط: "افتح الباب" = Open the door. مفيش فاعل ومفيش تعقيد.',
+      'عشان تبقى مهذب، زوّد please في الأول أو الآخر: Close the window, please.',
+      'النفي دايماً Don\'t: "متتأخرش" = Don\'t be late. ومتقولش "No + فعل" زي اللافتات المصرية الغلط.'
+    ],
+    commonTraps: [
+      'إضافة to قبل الفعل: الخطأ "To open the door"، الصواب: Open the door.',
+      'استخدام الفاعل you بصوت عالي: "You sit down!" تبدو فظة؛ الأفضل: Sit down, please.',
+      'نفي خاطئ: الخطأ "Not touch"، الصواب: Don\'t touch. / Do not touch.'
+    ],
+    examples: [
+      { en: 'Take the second street on your left, then go straight.', ar: 'خد تاني شارع على شمالك، وبعدين امشي على طول.', highlight: 'Take', context: 'إرشادات طريق' },
+      { en: 'Do not park here; your car will be towed.', ar: 'متركنش هنا؛ عربيتك هتتسحب.', highlight: 'Do not park', context: 'تحذير رسمي' },
+      { en: 'Try the molokhia here; it is their best dish.', ar: 'جرّب الملوخية هنا؛ أحسن حاجة عندهم.', highlight: 'Try', context: 'نصيحة ودودة' }
+    ],
+    miniQuiz: [
+      {
+        question: '______ quiet, please. The baby is sleeping.',
+        options: ['To be', 'Be', 'Being', 'You are'],
+        correct: 1,
+        explanation: 'صيغة الأمر تبدأ بالفعل في المصدر: Be quiet.'
+      },
+      {
+        question: '______ your phone in the classroom.',
+        options: ['Not use', 'No use', "Don't use", "Doesn't use"],
+        correct: 2,
+        explanation: 'نفي الأمر = Don\'t + المصدر: Don\'t use.'
+      }
+    ]
+  },
+  {
+    id: 'can-for-ability',
+    order: 46,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'Can و Could: القدرة والاستطاعة والإذن',
+    titleEn: 'Can / Could for Ability & Permission',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'Subject + can + مصدر (I can swim)  |  الماضي: could (I could swim when I was ten)',
+    negativeFormula: "can't / cannot  |  الماضي: couldn't",
+    questionFormula: 'Can you ... ? / Could you ... ? (أكثر تهذيباً)',
+    summaryAr: 'Can معناها "يقدر / يعرف / ممكن": قدرة، مهارة، أو إذن. ماضيها could. سهلة لأن الفعل بعدها دايماً في المصدر من غير to ومن غير أي إضافات.',
+    timelineDescription: 'قدرة حالية (can) أو قدرة في الماضي (could)؛ لا تصريف ثالث لها.',
+    imageUrl: ONLINE_IMAGES.learningStudyGroup,
+    imageAlt: 'Young people learning new skills together',
+    keyUsagePoints: [
+      'القدرة والمهارة (She can drive / I can cook)',
+      'الإذن والسماح (Can I go out? / You can use my laptop)',
+      'الطلبات (Can you open the window?)',
+      'الإمكانية العامة (It can get very hot in August)'
+    ],
+    egyptianTips: [
+      'بعد can الفعل في المصدر دايماً: He can swim (مش swims ومش to swim).',
+      'النفي can\'t بتتنطق أمريكي "كانت" وبريطاني "كانت" بحركة أطول؛ في الامتحانات اسمع للـ t.',
+      'Could you ... ؟ أسلوب أشيك للطلبات: Could you help me, please?'
+    ],
+    commonTraps: [
+      'إضافة s للمفرد الغائب: الخطأ "He cans swim"، الصواب: He can swim.',
+      'إضافة to بعد can: الخطأ "I can to speak"، الصواب: I can speak.',
+      'استخدام could للحاضر: الخطأ "I could help you tomorrow" لو تقصد عرض حاضر، الصواب: I can help you tomorrow.'
+    ],
+    examples: [
+      { en: 'My grandmother can read without glasses.', ar: 'جدتي تقدر تقرا من غير نضارة.', highlight: 'can read', context: 'قدرة حالية' },
+      { en: 'When I lived in Hurghada, I could swim every day.', ar: 'لما كنت ساكن في الغردقة، كنت أقدر أعوم كل يوم.', highlight: 'could swim', context: 'قدرة في الماضي' },
+      { en: 'Could you send me the file before noon, please?', ar: 'ممكن تبعتلي الملف قبل الضهر من فضلك؟', highlight: 'Could you send', context: 'طلب مهذب' }
+    ],
+    miniQuiz: [
+      {
+        question: 'Omar is a mechanic. He ______ fix any car.',
+        options: ['cans', 'can to', 'can', 'is can'],
+        correct: 2,
+        explanation: 'Can لا تأخذ s ولا to بعدها: He can fix.'
+      },
+      {
+        question: 'I ______ ride a bike when I was five, but now I can.',
+        options: ["can't", 'could', "couldn't", 'cannot'],
+        correct: 2,
+        explanation: 'الجملة فيها but now I can، يعني الماضي كان منفياً: couldn\'t.'
+      }
+    ]
+  },
+  {
+    id: 'wh-questions',
+    order: 47,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'أدوات الاستفهام: What و Where و Why وإخواتها',
+    titleEn: 'Wh- Questions',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'Wh- word + do/does/is/are + subject + verb?',
+    negativeFormula: 'Why don\'t you ... ? (للاقتراح) / Why didn\'t ... ?',
+    questionFormula: 'هي نفسها صيغة السؤال: What do you want? / Where does he live?',
+    summaryAr: 'أدوات الاستفهام هي مفاتيح أي محادثة: What لمين/إيه، Where لفين، When لإمتى، Why ليه، Who لمين، How إزاي، Which أنهي، Whose بتاعة مين. ترتيبها ثابت: أداة + فعل مساعد + فاعل + فعل.',
+    timelineDescription: 'تُستخدم في كل الأزمنة؛ المساعد يتغير حسب الزمن (do/did/will/is).',
+    imageUrl: ONLINE_IMAGES.onlineTechLecture,
+    imageAlt: 'A student asking questions in an online class',
+    keyUsagePoints: [
+      'What للأشياء والمعلومات / Who للأشخاص',
+      'Where للمكان / When للوقت / Why للسبب',
+      'How للطريقة والحال (How are you?) ومركباتها: How much/how many/how often',
+      'Which للاختيار بين محدود / Whose للملكية'
+    ],
+    egyptianTips: [
+      'الترتيب الذهبي: أداة الاستفهام + المساعد + الفاعل + الفعل: Where DO you LIVE?',
+      'متنساش المساعد: الخطأ الشائع "Where you live?"، الصواب: Where do you live?',
+      'لو Who/What هي نفسها الفاعل، منحتاجش مساعد: Who called you? (مين اتصل؟) مش Who did call you?'
+    ],
+    commonTraps: [
+      'نسيان المساعد do/does: الخطأ "What he wants?"، الصواب: What DOES he want?',
+      'إضافة s للفعل بعد does: الخطأ "Where does he lives?"، الصواب: Where does he live?',
+      'استخدام How بمعنى What: الخطأ "How is your name?"، الصواب: What is your name?'
+    ],
+    examples: [
+      { en: 'What time does the train to Mansoura leave?', ar: 'الساعة كام بيتحرك قطار المنصورة؟', highlight: 'What time does', context: 'سؤال عن موعد' },
+      { en: 'Why did you choose engineering?', ar: 'ليه اخترت الهندسة؟', highlight: 'Why did', context: 'سؤال عن سبب في الماضي' },
+      { en: 'How often do you go to the gym?', ar: 'بتروح الجيم كام مرة؟ / بتروح الجيم كل قد إيه؟', highlight: 'How often do', context: 'سؤال عن التكرار' }
+    ],
+    miniQuiz: [
+      {
+        question: '______ does your father work? - At a bank.',
+        options: ['When', 'Why', 'Where', 'Who'],
+        correct: 2,
+        explanation: 'الإجابة مكان (at a bank)، فالسؤال بـ Where.'
+      },
+      {
+        question: 'Who ______ the window? - Tamer did.',
+        options: ['did break', 'breaks', 'broke', 'break'],
+        correct: 2,
+        explanation: 'Who هنا هي الفاعل، فالفعل يتصرف مباشرة بدون مساعد: broke.'
+      }
+    ]
+  },
+  {
+    id: 'demonstratives-plurals',
+    order: 48,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'This و That و These و Those + جموع الأسماء',
+    titleEn: 'Demonstratives & Plural Nouns',
+    level: 'A1 - مبتدئ',
+    goldenFormula: 'قريب: this (مفرد) / these (جمع)  |  بعيد: that (مفرد) / those (جمع)',
+    negativeFormula: 'النفي في الفعل: This is not mine. / These are not mine.',
+    questionFormula: 'What is this/that? / What are these/those?',
+    summaryAr: 'أسماء الإشارة بتشاور على الحاجات: this/these للقريب، that/those للبعيد، والمفرد ياخد is والجمع ياخد are. ومعاها جموع الأسماء: أغلبها s منتظمة، وشوية شواذ لازم يتحفظوا.',
+    timelineDescription: 'قاعدة تركيبية ثابتة للإشارة والعد؛ تُستخدم في كل الأزمنة.',
+    imageUrl: ONLINE_IMAGES.modernClassroom,
+    imageAlt: 'A teacher pointing at near and far objects in class',
+    keyUsagePoints: [
+      'This + is للمفرد القريب / That + is للمفرد البعيد',
+      'These + are للجمع القريب / Those + are للجمع البعيد',
+      'الجمع المنتظم: +s أو +es (books, watches, boxes)',
+      'الجموع الشاذة الشهيرة: men, women, children, people, feet, teeth, mice'
+    ],
+    egyptianTips: [
+      'this = ده/دي (قريب)، that = ده/دا البعيد، these = دول، those = دول بتوع بعيد. الفرق في الإنجليزي أهم لأن الفعل بيتغير.',
+      'الاسم اللي بينتهي بـ s/sh/ch/x/o بياخد es: bus-buses, dish-dishes, watch-watches, potato-potatoes.',
+      'الاسم اللي بينتهي بحرف علة + y بياخد s عادي (days)، لكن ساكن + y يتحول لـ ies (city-cities, story-stories).'
+    ],
+    commonTraps: [
+      'خلط this مع الجمع: الخطأ "This are my friends"، الصواب: These are my friends.',
+      'جمع مزدوج: الخطأ "childs / childrens"، الصواب: children.',
+      'نسيان التحويل لـ ies: الخطأ "citys"، الصواب: cities.'
+    ],
+    examples: [
+      { en: 'This is my colleague Mariam, and those are her brothers over there.', ar: 'دي زميلتي مريم، ودول إخواتها اللي واقفين هناك.', highlight: 'those', context: 'إشارة لجمع بعيد' },
+      { en: 'These boxes are too heavy for one person.', ar: 'الكراتين دي تقيلة أوي على واحد لوحده.', highlight: 'These boxes', context: 'جمع منتظم +es' },
+      { en: 'How many people live in this building?', ar: 'كام شخص ساكن في العمارة دي؟', highlight: 'people', context: 'جمع شاذ' }
+    ],
+    miniQuiz: [
+      {
+        question: '______ are my new glasses; I bought them yesterday.',
+        options: ['This', 'That', 'These', 'It'],
+        correct: 2,
+        explanation: 'Glasses جمع وقريبة (بتتكلم عنها)، فالإشارة These.'
+      },
+      {
+        question: 'The ______ are playing in the garden.',
+        options: ['childs', 'childrens', 'children', 'child'],
+        correct: 2,
+        explanation: 'جمع child الشاذ هو children بدون أي إضافة.'
+      }
+    ]
+  },
+  {
+    id: 'too-enough-so-such',
+    order: 49,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'Too و Enough و So و Such: الدرجة والزيادة والكفاية',
+    titleEn: 'Too / Enough / So / Such',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'too + صفة | صفة + enough | so + صفة | such + (a/an) + صفة + اسم',
+    negativeFormula: 'not + صفة + enough (The bag is not big enough)',
+    questionFormula: 'Is it too far? / Is it big enough? / Is it so expensive?',
+    summaryAr: 'أربع كلمات بتوصّف الدرجة: too = زيادة عن اللزوم (سلبي)، enough = كفاية (محايد/إيجابي)، so = جداً للتأكيد والنتيجة، such = جداً لكن مع اسم. الفرق بينهم في الترتيب: too قبل الصفة، و enough بعدها.',
+    timelineDescription: 'أدوات وصف للدرجة؛ تدخل في كل الأزمنة دون تغيير.',
+    imageUrl: ONLINE_IMAGES.libraryStudy,
+    imageAlt: 'A suitcase too heavy to lift at a station',
+    keyUsagePoints: [
+      'too + صفة (+ to + مصدر): too tired to work',
+      'صفة + enough (+ to + مصدر): old enough to drive',
+      'enough + اسم: enough money / enough time',
+      'so + صفة + that للنتيجة: so hot that we stayed home | such + a + اسم: such a nice day'
+    ],
+    egyptianTips: [
+      'افتكر الميزان: too ميلة زيادة (سلبي)، enough مظبوطة بالكفاية. "الشاي سخن أوي" = too hot، "الشاي سخن كفاية؟" = hot enough?',
+      'Enough مع الصفة ييجي بعدها، ومع الاسم ييجي قبلها: tall enough لكن enough money.',
+      'so و such زي "جداً": so + صفة (so beautiful)، لكن such + a + صفة + اسم مفرد (such a beautiful girl).'
+    ],
+    commonTraps: [
+      'وضع enough قبل الصفة: الخطأ "He is enough tall"، الصواب: He is tall enough.',
+      'استخدام too بمعنى إيجابي "جداً": الخطأ "She is too beautiful" لو تقصد مدح، الصواب: so/very beautiful. Too دايماً فيها إحساس سلبي.',
+      'نسيان a بعد such: الخطأ "It is such nice car"، الصواب: It is such a nice car.'
+    ],
+    examples: [
+      { en: 'The exam was too difficult; nobody finished on time.', ar: 'الامتحان كان صعب زيادة عن اللزوم؛ محدش خلص في الوقت.', highlight: 'too difficult', context: 'زيادة سلبية' },
+      { en: 'You are old enough to make your own decisions.', ar: 'انت كبير كفاية إنك تاخد قراراتك بنفسك.', highlight: 'old enough', context: 'كفاية بعد الصفة' },
+      { en: 'It was such a crowded train that we stood all the way to Tanta.', ar: 'القطار كان زحمة جداً لدرجة إننا وقفنا طول الطريق لطنطا.', highlight: 'such a crowded', context: 'such + a + صفة + اسم' }
+    ],
+    miniQuiz: [
+      {
+        question: 'This coffee is ______ hot to drink now; wait a minute.',
+        options: ['enough', 'so', 'too', 'such'],
+        correct: 2,
+        explanation: 'سخونة زيادة عن اللزوم (سلبي) + to drink = too hot to drink.'
+      },
+      {
+        question: 'He is not tall ______ to reach the top shelf.',
+        options: ['too', 'enough', 'so', 'such'],
+        correct: 1,
+        explanation: 'الكفاية مع الصفة تأتي بعدها: tall enough.'
+      }
+    ]
+  },
+  {
+    id: 'both-either-neither',
+    order: 50,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'Both و Either و Neither: الاتنين وواحد منهم ولا واحد',
+    titleEn: 'Both / Either / Neither',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'both (الاتنين) + جمع | either (أي واحد من الاتنين) + مفرد | neither (ولا واحد) + مفرد',
+    negativeFormula: 'neither بحد ذاتها نفي؛ ممنوع neither ... not',
+    questionFormula: 'Which one do you want? - Either is fine. / Neither.',
+    summaryAr: 'لما الكلام عن اختيارين بس: both يعني الاتنين مع بعض، either يعني أي واحد فيهم، و neither يعني ولا واحد فيهم. مع both ... and و either ... or و neither ... nor بتبقى أقوى.',
+    timelineDescription: 'أدوات تحديد للكمية والاختيار؛ تدخل في كل الأزمنة دون تغيير.',
+    imageUrl: ONLINE_IMAGES.learningStudyGroup,
+    imageAlt: 'Two paths crossing in a park, a choice between two options',
+    keyUsagePoints: [
+      'Both + جمع: Both restaurants are good',
+      'Either + مفرد: Either restaurant is fine (أي واحد ينفع)',
+      'Neither + مفرد بمعنى نفي: Neither answer is correct',
+      'التراكيب: both A and B / either A or B / neither A nor B'
+    ],
+    egyptianTips: [
+      'neither لوحدها نفي كامل: Neither bus came = ولا أوتوبيس جه. متقولش Neither bus didn\'t come.',
+      'في الكلام، "مش أنا كمان" = Me neither (مش Me either!). "I don\'t like foul" - "Me neither".',
+      'either أو neither مع or/nor بيراعوا أقرب اسم في الفعل: Neither the players nor the COACH was ready.'
+    ],
+    commonTraps: [
+      'نفي مزدوج مع neither: الخطأ "Neither of them isn\'t coming"، الصواب: Neither of them is coming.',
+      'استخدام both بمعنى سلبي: الخطأ "I don\'t like both" لما تقصد ولا واحد، الصواب: I like neither.',
+      'استخدام either مع أكثر من اختيارين: لثلاثة أو أكثر استخدم any، مش either.'
+    ],
+    examples: [
+      { en: 'Both teams played well, but only one could win the cup.', ar: 'الفريقين لعبوا كويس، بس واحد بس اللي يقدر ياخد الكأس.', highlight: 'Both teams', context: 'الاتنين مع بعض' },
+      { en: 'You can take either road; they both lead to the corniche.', ar: 'خد أي طريق فيهم؛ الاتنين بيوصلوا للكورنيش.', highlight: 'either road', context: 'أي واحد من الاتنين' },
+      { en: 'Neither of my parents speaks English, so I translate for them.', ar: 'ولا واحد من والديّ بيتكلم إنجليزي، فأنا بترجملهم.', highlight: 'Neither of', context: 'نفي الاتنين' }
+    ],
+    miniQuiz: [
+      {
+        question: '______ of the two buses goes to the airport; you can take any of them.',
+        options: ['Both', 'Neither', 'Either', 'All'],
+        correct: 2,
+        explanation: 'أي واحد من الاتنين + فعل مفرد goes = Either.'
+      },
+      {
+        question: 'I like ______ tea nor coffee; I prefer fresh juice.',
+        options: ['both', 'either', 'neither', 'not'],
+        correct: 2,
+        explanation: 'التركيب neither ... nor للنفي الكامل: neither tea nor coffee.'
+      }
+    ]
+  },
+  {
+    id: 'going-to-vs-will',
+    order: 51,
+    category: 'أزمنة المستقبل',
+    categoryEn: 'Future Tenses',
+    titleAr: 'Will و Be going to: الفرق الحقيقي بينهم',
+    titleEn: 'Will vs Be Going To',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'قرار لحظي/وعد/توقع رأي = will  |  خطة مسبقة/دليل واضح = be going to',
+    negativeFormula: "won't + مصدر  |  am/is/are + not going to + مصدر",
+    questionFormula: 'Will you ... ?  |  Are you going to ... ?',
+    summaryAr: 'الاتنين للمستقبل بس المعنى مختلف: will للقرار اللي اتخد في لحظة الكلام، الوعود، والتوقعات الرأيية. و be going to للخطط المتخدة من قبل الكلام، وللتوقع المبني على دليل شايفه قدامك.',
+    timelineDescription: 'نقطة مستقبلية؛ الاختيار بين will و going to يعتمد على لحظة اتخاذ القرار ووجود دليل.',
+    imageUrl: ONLINE_IMAGES.grammar.futureSimple,
+    imageAlt: 'A person planning the future on a calendar',
+    keyUsagePoints: [
+      'Will: قرار فوري (I will help you with that bag!)',
+      'Will: وعد أو عرض (I will call you tonight / Will you marry me?)',
+      'Going to: خطة مسبقة (We are going to visit Aswan in December)',
+      'Going to: توقع بدليل حاضر (Look at those clouds; it is going to rain)'
+    ],
+    egyptianTips: [
+      'اختبار سريع: قررت إمتى؟ لو دلوقتي وأنت بتتكلم = will. لو من بدري = going to.',
+      'شايف دليل قدامك؟ going to: "العيادة مقفولة، هتتأجل المعاد" = Look, nobody is here; the appointment is going to be delayed.',
+      'التوقعات مع I think / I hope / probably غالباً will: I think Egypt will win.'
+    ],
+    commonTraps: [
+      'استخدام will لخطة متفق عليها: الخطأ "I will travel next Friday; I booked last month"، الأدق: I am going to travel / I am travelling.',
+      'نسيان be في going to: الخطأ "I going to study"، الصواب: I AM going to study.',
+      'استخدام going to لقرار لحظي: الخطأ "The phone is ringing! I am going to answer it"، الطبيعي: I WILL answer it.'
+    ],
+    examples: [
+      { en: 'We are going to renovate the flat next summer; we already bought the paint.', ar: 'إحنا هنعمل الصيانة للشقة الصيف الجاي؛ إحنا أصلاً اشترينا الدهانات.', highlight: 'are going to renovate', context: 'خطة مسبقة بدليل' },
+      { en: 'It is very hot in here. I will open the window.', ar: 'الجو حر أوي هنا. هفتح الشباك.', highlight: 'will open', context: 'قرار لحظي' },
+      { en: 'Watch out! You are going to drop your phone.', ar: 'حاول تاخد بالك! موبايلك هيقع.', highlight: 'going to drop', context: 'توقع بدليل واضح' }
+    ],
+    miniQuiz: [
+      {
+        question: 'A: I have decided to lose weight. B: Really? I ______ join the gym with you!',
+        options: ['am going to', 'will', 'go to', 'would'],
+        correct: 1,
+        explanation: 'قرار اتخذ في لحظة الكلام (رد فعل فوري) = will.'
+      },
+      {
+        question: 'Look at the dark sky! It ______ rain any minute.',
+        options: ['will', 'is going to', 'rains', 'would'],
+        correct: 1,
+        explanation: 'توقع مبني على دليل حاضر (السما مغيمة) = is going to.'
+      }
+    ]
+  },
+  {
+    id: 'present-perfect-vs-past-simple',
+    order: 52,
+    category: 'أزمنة الماضي',
+    categoryEn: 'Past Tenses',
+    titleAr: 'المضارع التام ضد الماضي البسيط: أشهر معركة في القواعد',
+    titleEn: 'Present Perfect vs Past Simple',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'زمن محدد في الماضي؟ = Past Simple  |  زمن مفتوح/خبرة/أثر حاضر؟ = Present Perfect',
+    negativeFormula: "didn't + مصدر  |  haven't/hasn't + تصريف ثالث",
+    questionFormula: 'Did you ... ?  |  Have you ever ... ?',
+    summaryAr: 'القاعدة الذهبية: لو في وقت ماضي محدد في الجملة (yesterday, in 2019, last week) استخدم الماضي البسيط. لو الكلام عن خبرة من غير وقت، أو حاجة ليها أثر دلوقتي، استخدم المضارع التام. ممنوع تخلط وقت ماضي محدد مع المضارع التام!',
+    timelineDescription: 'الماضي البسيط نقطة مغلقة انتهت؛ المضارع التام جسر بين الماضي والحاضر.',
+    imageUrl: ONLINE_IMAGES.grammar.presentPerfect,
+    imageAlt: 'A bridge between past and present on a timeline',
+    keyUsagePoints: [
+      'Past Simple مع أدوات الوقت المحدد: yesterday, ago, last, in 2010',
+      'Present Perfect للخبرة العامة: Have you ever tried koshary?',
+      'Present Perfect مع just/already/yet/since/for: I have just eaten',
+      'Present Perfect لحدث له أثر حاضر: I have lost my keys (يعني مش معايا دلوقتي)'
+    ],
+    egyptianTips: [
+      'شفت yesterday أو ago أو last؟ اقفل على الماضي البسيط فوراً: I SAW him yesterday (مش have seen).',
+      'سؤال الخبرة المصري "جربت كذا قبل كده؟" = Have you ever tried ... ?',
+      'Since + نقطة بداية (since 2015)، و for + مدة (for ten years).'
+    ],
+    commonTraps: [
+      'استخدام المضارع التام مع وقت محدد: الخطأ "I have met him yesterday"، الصواب: I MET him yesterday.',
+      'استخدام الماضي البسيط مع ever: الخطأ "Did you ever visit Luxor?" في سؤال خبرة عامة، الأدق: Have you ever visited Luxor?',
+      'نسيان التصريف الثالث: الخطأ "I have went"، الصواب: I have gone.'
+    ],
+    examples: [
+      { en: 'I visited the Grand Egyptian Museum last month.', ar: 'زرت المتحف المصري الكبير الشهر اللي فات.', highlight: 'visited', context: 'وقت محدد = ماضي بسيط' },
+      { en: 'Have you ever eaten liver sandwiches from a street cart?', ar: 'كلت سندوتشات كبدة من عربة شارع قبل كده؟', highlight: 'Have you ever eaten', context: 'خبرة عامة = مضارع تام' },
+      { en: 'She has lived in Mansoura since 2018, but she was born in Port Said.', ar: 'هي عايشة في المنصورة من 2018، بس اتولدت في بورسعيد.', highlight: 'has lived', context: 'مدة ممتدة للحاضر + ميلاد منتهي' }
+    ],
+    miniQuiz: [
+      {
+        question: 'I ______ my best friend in 2015, and we are still close.',
+        options: ['have met', 'met', 'meet', 'have been meeting'],
+        correct: 1,
+        explanation: 'وجود سنة محددة (2015) يفرض الماضي البسيط: met.'
+      },
+      {
+        question: 'We ______ already ______ this series; let us watch something else.',
+        options: ['did / watch', 'have / watched', 'are / watching', 'had / watch'],
+        correct: 1,
+        explanation: 'Already من أدوات المضارع التام: have watched.'
+      }
+    ]
+  },
+  {
+    id: 'adverbs-of-manner',
+    order: 53,
+    category: 'الأساسيات والتركيب اللغوي',
+    categoryEn: 'Essentials & Sentence Structure',
+    titleAr: 'ظروف الحال: بإتقان، بسرعة، بهدوء',
+    titleEn: 'Adverbs of Manner',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'صفة + ly = ظرف حال: slow -> slowly  |  مكانها: بعد الفعل أو بعد المفعول',
+    negativeFormula: 'النفي في الفعل: He does not drive carefully',
+    questionFormula: 'How + فعل مساعد + فاعل + فعل؟ (How does she sing?)',
+    summaryAr: 'ظرف الحال بيجاوب على سؤال "إزاي؟": بيسوّق إزاي؟ بيتكلم إزاي؟ أغلبها صفة + ly، بمكانها الطبيعي بعد الفعل أو بعد المفعول مباشرة، مش بين الفعل ومفعوله.',
+    timelineDescription: 'تصف كيفية الفعل في أي زمن دون أن تتصرف.',
+    imageUrl: ONLINE_IMAGES.grammar.pastContinuous,
+    imageAlt: 'A person driving carefully on a wet road',
+    keyUsagePoints: [
+      'التكوين: صفة + ly (quick-quickly, careful-carefully)',
+      'الشواذ المهمة: good -> well / fast -> fast / hard -> hard / late -> late',
+      'المكان: بعد الفعل أو بعد المفعول (She sings beautifully / She closed the door quietly)',
+      'الصفات المنتهية بـ y تتحول لـ ily (easy-easily) والمنتهية بـ le تتحول لـ ly (gentle-gently)'
+    ],
+    egyptianTips: [
+      'Good صفة و Well ظرف: هو لاعب كويس = He is a good player، بيلعب كويس = He plays well.',
+      'Hard و late زي ما هما: يشتغل بجد = works hard (مش hardly! دي معناها "بالكاد").',
+      'مكان الظرف مهم: متقولش She closed quietly the door، الصواب: She closed the door quietly.'
+    ],
+    commonTraps: [
+      'استخدام الصفة مكان الظرف: الخطأ "He drives good"، الصواب: He drives well.',
+      'الخلط بين hard و hardly: I hardly work = بالكاد بشتغل (عكس المعنى المقصود غالباً!).',
+      'وضع الظرف بين الفعل والمفعول: الخطأ "She speaks slowly English"، الصواب: She speaks English slowly.'
+    ],
+    examples: [
+      { en: 'The taxi driver drove quickly through the empty streets at dawn.', ar: 'سواق التاكسي ساق بسرعة في الشوارع الفاضية وقت الفجر.', highlight: 'quickly', context: 'ظرف بعد الفعل' },
+      { en: 'She explained the lesson so clearly that everyone understood.', ar: 'هي شرحت الدرس بوضوح لدرجة إن الكل فهم.', highlight: 'clearly', context: 'صفة + ly' },
+      { en: 'The team trained hard all week for the final.', ar: 'الفريق اتمرن بجد طول الأسبوع عشان النهائي.', highlight: 'hard', context: 'ظرف شاذ' }
+    ],
+    miniQuiz: [
+      {
+        question: 'My little sister draws really ______ for her age.',
+        options: ['good', 'well', 'nice', 'beautiful'],
+        correct: 1,
+        explanation: 'بنوصف الفعل draws فمحتاجين ظرف: well.'
+      },
+      {
+        question: 'He works ______; he barely takes a day off.',
+        options: ['hardly', 'hard', 'harderly', 'good'],
+        correct: 1,
+        explanation: 'يعمل بجد = works hard. Hardly معناها "بالكاد" وهي عكس المعنى هنا.'
+      }
+    ]
+  },
+  {
+    id: 'must-and-have-to',
+    order: 54,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'Must و Have to: اللزوم والضرورة - وفرق النفي الخطير',
+    titleEn: 'Must / Have to (Obligation)',
+    level: 'A2 - تأسيسي',
+    goldenFormula: 'must + مصدر (رأي المتكلم/قانون قوي)  |  have/has to + مصدر (ظرف خارجي يفرض)',
+    negativeFormula: "mustn't = ممنوع!  |  don't have to = مش لازم (اختياري)",
+    questionFormula: 'Do you have to ... ? (السؤال بـ must نادر ورسمي)',
+    summaryAr: 'الاتنين "لازم": must لما اللزوم من رأي المتكلم أو قاعدة صارمة، و have to لما ظرف خارجي هو اللي بيفرض. لكن في النفي الفرق خطير: mustn\'t يعني ممنوع، و don\'t have to يعني مش مطلوب منك (تقدر تعمله براحتك).',
+    timelineDescription: 'لزوم في الحاضر؛ الماضي = had to، والمستقبل = will have to.',
+    imageUrl: ONLINE_IMAGES.grammar.modalVerbs,
+    imageAlt: 'A stop sign and a mandatory direction sign on a road',
+    keyUsagePoints: [
+      'Must: قواعد صارمة ونصيحة قوية (You must see a doctor)',
+      'Have to: التزامات خارجية (I have to wear a uniform at work)',
+      "Mustn't: منع صريح (You mustn't smoke here)",
+      "Don't have to: غياب اللزوم (You don't have to come early)"
+    ],
+    egyptianTips: [
+      'المصري بيقول "مش لازم" بمعنى اختياري: ترجمتها don\'t have to. لو قلت mustn\'t فانت بتقول "ممنوع"!',
+      'Has to للمفرد الغائب: She has to leave early.',
+      'الماضي من الاتنين = had to: I had to work yesterday. مفيش musted!'
+    ],
+    commonTraps: [
+      'ترجمة "مش لازم" بـ mustn\'t: الخطأ "You mustn\'t bring food" لو تقصد مش مطلوب، الصواب: You don\'t have to bring food.',
+      'إضافة to بعد must: الخطأ "You must to go"، الصواب: You must go.',
+      'نسيان do في سؤال have to: الخطأ "Have you to work?"، الصواب: Do you have to work?'
+    ],
+    examples: [
+      { en: 'All passengers must show their tickets before boarding the train.', ar: 'كل الركاب لازم يورّوا تذاكرهم قبل ركوب القطار.', highlight: 'must show', context: 'قاعدة رسمية' },
+      { en: 'You must not use your phone during the exam.', ar: 'ممنوع تستخدم موبايلك أثناء الامتحان.', highlight: 'must not use', context: 'منع صريح' },
+      { en: 'Tomorrow is a holiday, so you do not have to wake up early.', ar: 'بكرة أجازة، فمش لازم تصحى بدري.', highlight: 'do not have to wake', context: 'غياب اللزوم' }
+    ],
+    miniQuiz: [
+      {
+        question: 'You ______ bring your laptop; the office provides computers. (مش لازم)',
+        options: ["mustn't", "don't have to", 'must', 'have to'],
+        correct: 1,
+        explanation: 'المعنى "مش مطلوب منك" (اختياري) = don\'t have to. Mustn\'t تعني ممنوع.'
+      },
+      {
+        question: 'Visitors ______ touch the paintings in the museum. (ممنوع)',
+        options: ["don't have to", 'must', "mustn't", 'has to'],
+        correct: 2,
+        explanation: 'المنع الصريح = mustn\'t.'
+      }
+    ]
+  },
 ];
