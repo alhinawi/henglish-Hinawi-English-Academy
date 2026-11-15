@@ -4433,6 +4433,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Is this the real life? Is this just fantasy?', arEg: 'ده الواقع الحقيقي؟ ولا مجرد خيال؟' }, { en: 'It does not really matter to me.', arEg: 'مش فارقة معايا بجد.' }],
   },
+  {
+    id: 'intro-ready-confident',
+    movieTitle: 'How to Introduce Yourself in English - English At The Ready',
+    releaseYear: 2022,
+    director: 'English At The Ready',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Your First Impression',
+    sceneDescription: 'عرف بنفسك بثقة في أي موقف: الاسم، الشغل، الهوايات - صيغة بسيطة تحفظها مرة وتستخدمها دايماً.',
+    youtubeId: '5whkCF7TgZ0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English At The Ready (Official)',
+    dialogueQuote: 'Hi, I\'m Sara. Nice to meet you.',
+    actorName: 'Teacher',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/5whkCF7TgZ0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English At The Ready Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Hi, I\'m Sara. Nice to meet you.', arEg: 'أهلاً، أنا سارة. تشرفنا.', arFusha: 'أهلاً، أنا سارة. تشرفنا.', speaker: 'Speaker', keyWords: [{ word: 'Nice to meet you', ipa: '', meaningAr: 'تشرفنا / فرصة سعيدة', meaningEn: '' }, { word: 'Hi', ipa: '', meaningAr: 'أهلاً', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I\'m from Egypt and I work as an engineer.', arEg: 'أنا من مصر وبشتغل مهندس.', arFusha: 'أنا من مصر وبشتغل مهندس.', speaker: 'Speaker', keyWords: [{ word: 'I\'m from', ipa: '', meaningAr: 'أنا من', meaningEn: '' }, { word: 'work as', ipa: '', meaningAr: 'بشتغل كـ', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Nice to meet you', type: 'collocation', meaningAr: 'تشرفنا (عند التعارف)', meaningEn: '', egyptianEquivalent: 'فرصة سعيدة', exampleInScene: 'Nice to meet you, Ahmed.' },      { term: 'work as', type: 'collocation', meaningAr: 'يعمل كـ (مهنة)', meaningEn: '', egyptianEquivalent: 'بشتغل', exampleInScene: 'She works as a doctor.' },      { term: 'introduce yourself', type: 'collocation', meaningAr: 'يعرّف بنفسه', meaningEn: '', egyptianEquivalent: 'عرّف بنفسك', exampleInScene: 'Introduce yourself in English.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you say right after meeting someone new?', questionAr: 'تقول إيه أول ما تتعرف على حد جديد؟', options: ['Nice to meet you', 'See you later', 'Good night', 'Excuse me'], correctIndex: 0, explanationAr: 'Nice to meet you هي التحية المعتادة عند التعارف لأول مرة.' }
+    ],
+    speakingLines: [{ en: 'Hi, I\'m Sara. Nice to meet you.', arEg: 'أهلاً، أنا سارة. تشرفنا.' }, { en: 'I\'m from Egypt and I work as an engineer.', arEg: 'أنا من مصر وبشتغل مهندس.' }],
+  },
+  {
+    id: 'intro-lucy-interview',
+    movieTitle: 'How to Introduce Yourself - Tell Me About Yourself Interview Answer - English with Lucy',
+    releaseYear: 2021,
+    director: 'English with Lucy',
+    genre: 'Job Interview Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Tell Me About Yourself',
+    sceneDescription: 'لوسي بتفكك أصعب سؤال في الانترفيو: Tell me about yourself - بصيغة جاهزة وإجابات نموذجية.',
+    youtubeId: 'QgjkjsqAzvo',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English with Lucy (Official)',
+    dialogueQuote: 'I am a motivated graduate with a passion for marketing.',
+    actorName: 'Lucy',
+    characterName: 'Lucy',
+    thumbnailUrl: 'https://img.youtube.com/vi/QgjkjsqAzvo/hqdefault.jpg',
+    category: 'job_interviews',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Lucy Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I am a motivated graduate with a passion for marketing.', arEg: 'أنا خريج طموح وعندي شغف بالتسويق.', arFusha: 'أنا خريج طموح وعندي شغف بالتسويق.', speaker: 'Lucy', keyWords: [{ word: 'motivated', ipa: '', meaningAr: 'طموح / عنده دافع', meaningEn: '' }, { word: 'passion', ipa: '', meaningAr: 'شغف', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Keep your answer under two minutes.', arEg: 'خلي إجابتك أقل من دقيقتين.', arFusha: 'خلي إجابتك أقل من دقيقتين.', speaker: 'Lucy', keyWords: [{ word: 'under two minutes', ipa: '', meaningAr: 'أقل من دقيقتين', meaningEn: '' }, { word: 'answer', ipa: '', meaningAr: 'إجابة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'passion for', type: 'collocation', meaningAr: 'شغف بـ', meaningEn: '', egyptianEquivalent: 'شغف في', exampleInScene: 'She has a passion for teaching.' },      { term: 'motivated', type: 'cultural', meaningAr: 'طموح / عنده دافع', meaningEn: '', egyptianEquivalent: 'جاد', exampleInScene: 'A motivated student learns fast.' },      { term: 'graduate', type: 'cultural', meaningAr: 'خريج', meaningEn: '', egyptianEquivalent: 'خريجة', exampleInScene: 'A fresh graduate.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How long should your \'Tell me about yourself\' answer be?', questionAr: 'إجابة Tell me about yourself المفروض تبقى قد إيه؟', options: ['أقل من دقيقتين', 'عشر دقايق', 'خمس ثواني', 'ساعة'], correctIndex: 0, explanationAr: 'الإجابة المثالية مركزة: أقل من دقيقتين تغطي خبرتك ونقاط قوتك.' }
+    ],
+    speakingLines: [{ en: 'I am a motivated graduate with a passion for marketing.', arEg: 'أنا خريج طموح وعندي شغف بالتسويق.' }, { en: 'Keep your answer under two minutes.', arEg: 'خلي إجابتك أقل من دقيقتين.' }],
+  },
+  {
+    id: 'intro-vanessa-formula',
+    movieTitle: 'A Formula for Introducing Yourself Perfectly Every Time - Vanessa Van Edwards',
+    releaseYear: 2021,
+    director: 'Vanessa Van Edwards',
+    genre: 'Communication Skills',
+    cefrLevel: 'B2',
+    sceneTitle: 'The Perfect Introduction Formula',
+    sceneDescription: 'فانيسا فان إدواردز (خبيرة لغة الجسد) بتديك معادلة التعارف المثالية اللي بتخلي الناس تفتكرك.',
+    youtubeId: '5c5P8YQeymI',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Vanessa Van Edwards (Official)',
+    dialogueQuote: 'Lead with what excites you, not your job title.',
+    actorName: 'Vanessa Van Edwards',
+    characterName: 'Vanessa',
+    thumbnailUrl: 'https://img.youtube.com/vi/5c5P8YQeymI/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Vanessa Van Edwards Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Lead with what excites you, not your job title.', arEg: 'ابدأ بالحاجة اللي بتحمسك، مش بمسمى وظيفتك.', arFusha: 'ابدأ بالحاجة اللي بتحمسك، مش بمسمى وظيفتك.', speaker: 'Vanessa', keyWords: [{ word: 'lead with', ipa: '', meaningAr: 'يبدأ بـ', meaningEn: '' }, { word: 'excites', ipa: '', meaningAr: 'بتحمس', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'A memorable introduction sparks curiosity.', arEg: 'التعارف اللي بيتفكر بيثير الفضول.', arFusha: 'التعارف اللي بيتفكر بيثير الفضول.', speaker: 'Vanessa', keyWords: [{ word: 'memorable', ipa: '', meaningAr: 'بيتفكر', meaningEn: '' }, { word: 'sparks curiosity', ipa: '', meaningAr: 'بيثير الفضول', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'lead with', type: 'phrasal-verb', meaningAr: 'يبدأ بـ / يفتتح بـ', meaningEn: '', egyptianEquivalent: 'يبدأ بـ', exampleInScene: 'Lead with your best story.' },      { term: 'memorable', type: 'cultural', meaningAr: 'بيتفكر / لا ينسى', meaningEn: '', egyptianEquivalent: 'مش بينتسى', exampleInScene: 'A memorable first day.' },      { term: 'spark curiosity', type: 'collocation', meaningAr: 'يثير الفضول', meaningEn: '', egyptianEquivalent: 'يفتح شهية السؤال', exampleInScene: 'Good intros spark curiosity.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you lead with, according to Vanessa?', questionAr: 'نبدأ بإيه حسب فانيسا؟', options: ['الحاجة اللي بتحمسك', 'مسمى وظيفتك', 'راتبك', 'عنوانك'], correctIndex: 0, explanationAr: 'ابدأ بالحاجة اللي بتحمسك فعلاً - ده اللي بيخلي الناس تفتكرك.' }
+    ],
+    speakingLines: [{ en: 'Lead with what excites you, not your job title.', arEg: 'ابدأ بالحاجة اللي بتحمسك، مش بمسمى وظيفتك.' }, { en: 'A memorable introduction sparks curiosity.', arEg: 'التعارف اللي بيتفكر بيثير الفضول.' }],
+  },
+  {
+    id: 'present-maria-50',
+    movieTitle: '50 English Phrases for Presentations - Maria Sheeran',
+    releaseYear: 2022,
+    director: 'Maria Sheeran',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Present Like a Professional',
+    sceneDescription: 'خمسين عبارة للعروض التقديمية: الافتتاح، عرض الأرقام، الإجابة على الأسئلة، والختام القوي.',
+    youtubeId: 'Ri4zLmpyz-E',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Maria Sheeran (Official)',
+    dialogueQuote: 'Today I will walk you through our results.',
+    actorName: 'Maria',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ri4zLmpyz-E/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Maria Sheeran Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Today I will walk you through our results.', arEg: 'النهارده هعرض عليكوا نتايجنا خطوة بخطوة.', arFusha: 'النهارده هعرض عليكوا نتايجنا خطوة بخطوة.', speaker: 'Presenter', keyWords: [{ word: 'walk you through', ipa: '', meaningAr: 'يشرح خطوة بخطوة', meaningEn: '' }, { word: 'results', ipa: '', meaningAr: 'نتايج', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Let me move on to the next point.', arEg: 'خليني أنتقل للنقطة اللي بعدها.', arFusha: 'خليني أنتقل للنقطة اللي بعدها.', speaker: 'Presenter', keyWords: [{ word: 'move on to', ipa: '', meaningAr: 'ينتقل لـ', meaningEn: '' }, { word: 'point', ipa: '', meaningAr: 'نقطة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'walk through', type: 'phrasal-verb', meaningAr: 'يشرح خطوة بخطوة', meaningEn: '', egyptianEquivalent: 'يفصّل', exampleInScene: 'Let me walk you through the plan.' },      { term: 'move on to', type: 'phrasal-verb', meaningAr: 'ينتقل لـ (نقطة تانية)', meaningEn: '', egyptianEquivalent: 'نروح للي بعدها', exampleInScene: 'Let\'s move on to sales.' },      { term: 'to sum up', type: 'collocation', meaningAr: 'باختصار / للتلخيص', meaningEn: '', egyptianEquivalent: 'الخلاصة', exampleInScene: 'To sum up, we grew 20%.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'walk you through\' mean?', questionAr: 'معنى walk you through؟', options: ['يشرحلك خطوة بخطوة', 'يمشي معاك', 'يوريك المكان', 'يسيبك تمشي'], correctIndex: 0, explanationAr: 'walk someone through معناها يشرحلهم حاجة خطوة بخطوة بتفصيل.' }
+    ],
+    speakingLines: [{ en: 'Today I will walk you through our results.', arEg: 'النهارده هعرض عليكوا نتايجنا خطوة بخطوة.' }, { en: 'Let me move on to the next point.', arEg: 'خليني أنتقل للنقطة اللي بعدها.' }],
+  },
+  {
+    id: 'present-derek-40',
+    movieTitle: '40 Phrases For Presenting In English - Business English - Derek Callan',
+    releaseYear: 2021,
+    director: 'Derek Callan',
+    genre: 'Business English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Boardroom-Ready English',
+    sceneDescription: 'ديريك كالان بيجهزك للبرزنتيشن في الشغل: 40 عبارة احترافية من الافتتاح لحد أسئلة الجمهور.',
+    youtubeId: 'bgFNTuRYtKE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Derek Callan - English for Professionals (Official)',
+    dialogueQuote: 'I would like to draw your attention to this chart.',
+    actorName: 'Derek Callan',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/bgFNTuRYtKE/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Derek Callan Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I would like to draw your attention to this chart.', arEg: 'حابب ألفت انتباهكم للرسم البياني ده.', arFusha: 'حابب ألفت انتباهكم للرسم البياني ده.', speaker: 'Presenter', keyWords: [{ word: 'draw your attention', ipa: '', meaningAr: 'يلفت انتباهكم', meaningEn: '' }, { word: 'chart', ipa: '', meaningAr: 'رسم بياني', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Are there any questions so far?', arEg: 'في أسئلة لحد دلوقتي؟', arFusha: 'في أسئلة لحد دلوقتي؟', speaker: 'Presenter', keyWords: [{ word: 'so far', ipa: '', meaningAr: 'لحد دلوقتي', meaningEn: '' }, { word: 'questions', ipa: '', meaningAr: 'أسئلة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'draw attention to', type: 'collocation', meaningAr: 'يلفت الانتباه لـ', meaningEn: '', egyptianEquivalent: 'يركّزكم على', exampleInScene: 'Let me draw your attention to page two.' },      { term: 'so far', type: 'collocation', meaningAr: 'لحد دلوقتي', meaningEn: '', egyptianEquivalent: 'لحد هنا', exampleInScene: 'So far, so good.' },      { term: 'Any questions?', type: 'collocation', meaningAr: 'في أسئلة؟', meaningEn: '', egyptianEquivalent: 'حد عنده سؤال؟', exampleInScene: 'Any questions before we finish?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'so far\' mean?', questionAr: 'معنى so far؟', options: ['لحد دلوقتي', 'بعيد أوي', 'بعد كده', 'قبل كده'], correctIndex: 0, explanationAr: 'so far معناها لحد دلوقتي - أي من أول الحاجة لحد اللحظة دي.' }
+    ],
+    speakingLines: [{ en: 'I would like to draw your attention to this chart.', arEg: 'حابب ألفت انتباهكم للرسم البياني ده.' }, { en: 'Are there any questions so far?', arEg: 'في أسئلة لحد دلوقتي؟' }],
+  },
+  {
+    id: 'money-hll-phrasal',
+    movieTitle: 'Money Phrasal Verbs - Improve Your English Money Vocabulary - High Level Listening',
+    releaseYear: 2021,
+    director: 'High Level Listening',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'C1',
+    sceneTitle: 'Advanced Money Talk',
+    sceneDescription: 'فيرزال فيربز الفلوس للمستوى المتقدم: save up, pay off, cut back - بلغة النيتيف الحقيقية.',
+    youtubeId: 'LVyWC2XPVKA',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'High Level Listening (Official)',
+    dialogueQuote: 'I am saving up for a new laptop.',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/LVyWC2XPVKA/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'High Level Listening Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I am saving up for a new laptop.', arEg: 'بحوش عشان لابتوب جديد.', arFusha: 'بحوش عشان لابتوب جديد.', speaker: 'Host', keyWords: [{ word: 'saving up', ipa: '', meaningAr: 'بحوش فلوس', meaningEn: '' }, { word: 'laptop', ipa: '', meaningAr: 'لابتوب', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'We need to cut back on eating out.', arEg: 'لازم نقلل الأكل بره.', arFusha: 'لازم نقلل الأكل بره.', speaker: 'Host', keyWords: [{ word: 'cut back on', ipa: '', meaningAr: 'يقلل', meaningEn: '' }, { word: 'eating out', ipa: '', meaningAr: 'الأكل بره', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'save up', type: 'phrasal-verb', meaningAr: 'يحوش فلوس لهدف', meaningEn: '', egyptianEquivalent: 'يحوش', exampleInScene: 'I am saving up for a trip.' },      { term: 'cut back on', type: 'phrasal-verb', meaningAr: 'يقلل من (مصاريف)', meaningEn: '', egyptianEquivalent: 'يقلل', exampleInScene: 'Cut back on coffee.' },      { term: 'pay off', type: 'phrasal-verb', meaningAr: 'يسدد (دين) بالكامل', meaningEn: '', egyptianEquivalent: 'يخلّص دين', exampleInScene: 'She paid off her loan.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'cut back on eating out\' mean?', questionAr: 'معنى cut back on eating out؟', options: ['نقلل الأكل بره', 'نكتر أكل بره', 'نمنع الأكل خالص', 'نتعلم نطبخ'], correctIndex: 0, explanationAr: 'cut back on معناها تقلل من حاجة (خصوصاً مصاريف) مش تمتنع عنها تماماً.' }
+    ],
+    speakingLines: [{ en: 'I am saving up for a new laptop.', arEg: 'بحوش عشان لابتوب جديد.' }, { en: 'We need to cut back on eating out.', arEg: 'لازم نقلل الأكل بره.' }],
+  },
+  {
+    id: 'money-engvid-finance',
+    movieTitle: 'English Vocabulary for Personal Finances - assets, equity, collateral - engVid',
+    releaseYear: 2019,
+    director: 'engVid',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Bank and Finance Words',
+    sceneDescription: 'آدم من engVid بيشرح مفردات البنوك والتمويل الشخصي: أصول، رهن، ضمانات - للشغل والحياة.',
+    youtubeId: 'bM9XlH_bCRQ',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Adam\'s English Lessons - engVid (Official)',
+    dialogueQuote: 'Your house is an asset, but your loan is a liability.',
+    actorName: 'Adam',
+    characterName: 'Adam',
+    thumbnailUrl: 'https://img.youtube.com/vi/bM9XlH_bCRQ/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Your house is an asset, but your loan is a liability.', arEg: 'بيتك أصل من أصولك، بس القرض التزام عليك.', arFusha: 'بيتك أصل من أصولك، بس القرض التزام عليك.', speaker: 'Adam', keyWords: [{ word: 'asset', ipa: '', meaningAr: 'أصل / ممتلكات', meaningEn: '' }, { word: 'liability', ipa: '', meaningAr: 'التزام / دين', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'The bank asked for collateral before the loan.', arEg: 'البنك طلب ضمان قبل القرض.', arFusha: 'البنك طلب ضمان قبل القرض.', speaker: 'Adam', keyWords: [{ word: 'collateral', ipa: '', meaningAr: 'ضمان / رهن', meaningEn: '' }, { word: 'loan', ipa: '', meaningAr: 'قرض', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'asset', type: 'cultural', meaningAr: 'أصل / ممتلكات قيمة', meaningEn: '', egyptianEquivalent: 'أصول', exampleInScene: 'A car can be an asset.' },      { term: 'liability', type: 'cultural', meaningAr: 'التزام / دين عليك', meaningEn: '', egyptianEquivalent: 'مديونية', exampleInScene: 'Too many liabilities are risky.' },      { term: 'collateral', type: 'cultural', meaningAr: 'ضمان مقابل قرض', meaningEn: '', egyptianEquivalent: 'ضمانة', exampleInScene: 'The house is the collateral.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is an \'asset\'?', questionAr: 'يعني إيه asset؟', options: ['حاجة قيمة تملكها', 'دين عليك', 'مصروف شهري', 'راتب'], correctIndex: 0, explanationAr: 'الـ asset هو حاجة قيمة تملكها زي بيت أو عربية، وعكسها liability وهو الالتزام أو الدين.' }
+    ],
+    speakingLines: [{ en: 'Your house is an asset, but your loan is a liability.', arEg: 'بيتك أصل من أصولك، بس القرض التزام عليك.' }, { en: 'The bank asked for collateral before the loan.', arEg: 'البنك طلب ضمان قبل القرض.' }],
+  },
+  {
+    id: 'money-bob-class',
+    movieTitle: 'Free English Class! Topic: Money - Learn English with Bob the Canadian',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Everyday Money Words',
+    sceneDescription: 'حصة بوب المجانية عن الفلوس: الكلمات اليومية للأسعار والخصومات والدفع - بأسلوبه البسيط.',
+    youtubeId: 'BAnOiX4yMzE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'Can I pay in cash, or do you take cards?',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/BAnOiX4yMzE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Can I pay in cash, or do you take cards?', arEg: 'ممكن أدفع كاش، ولا بتقبلوا كروت؟', arFusha: 'ممكن أدفع كاش، ولا بتقبلوا كروت؟', speaker: 'Bob', keyWords: [{ word: 'in cash', ipa: '', meaningAr: 'كاش', meaningEn: '' }, { word: 'take cards', ipa: '', meaningAr: 'بتقبلوا كروت', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'That is too expensive for my budget.', arEg: 'ده غالي أوي على ميزانيتي.', arFusha: 'ده غالي أوي على ميزانيتي.', speaker: 'Bob', keyWords: [{ word: 'too expensive', ipa: '', meaningAr: 'غالي أوي', meaningEn: '' }, { word: 'budget', ipa: '', meaningAr: 'ميزانية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'pay in cash', type: 'collocation', meaningAr: 'يدفع كاش', meaningEn: '', egyptianEquivalent: 'يدفع نقدي', exampleInScene: 'I prefer to pay in cash.' },      { term: 'budget', type: 'cultural', meaningAr: 'ميزانية', meaningEn: '', egyptianEquivalent: 'ميزانية', exampleInScene: 'I am on a tight budget.' },      { term: 'afford', type: 'cultural', meaningAr: 'يقدر على تكلفة', meaningEn: '', egyptianEquivalent: 'يلحق يشتري', exampleInScene: 'I cannot afford it now.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I cannot afford it\' mean?', questionAr: 'معنى I cannot afford it؟', options: ['مش قادر أدفع تمنها', 'مش عايزها', 'مش لاقيها', 'مش فاهمها'], correctIndex: 0, explanationAr: 'afford معناها تقدر مادياً على حاجة - cannot afford يعني مش معاك تمنها.' }
+    ],
+    speakingLines: [{ en: 'Can I pay in cash, or do you take cards?', arEg: 'ممكن أدفع كاش، ولا بتقبلوا كروت؟' }, { en: 'That is too expensive for my budget.', arEg: 'ده غالي أوي على ميزانيتي.' }],
+  },
+  {
+    id: 'sports-tiffani-vocab',
+    movieTitle: 'Topical English Vocabulary - English Words About Sports - Tiffani',
+    releaseYear: 2021,
+    director: 'English Vocabulary With Tiffani',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Talk Sports Like a Fan',
+    sceneDescription: 'تيفاني بتعلمك مفردات الرياضة الأساسية: الفرق، البطولات، والتشجيع - عشان تتكلم عن ماتشاتك المفضلة.',
+    youtubeId: 'gA2H_wc1lGw',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English Vocabulary With Tiffani (Official)',
+    dialogueQuote: 'Our team won the championship last year.',
+    actorName: 'Tiffani',
+    characterName: 'Tiffani',
+    thumbnailUrl: 'https://img.youtube.com/vi/gA2H_wc1lGw/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Vocabulary With Tiffani Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Our team won the championship last year.', arEg: 'فريقنا كسب البطولة السنة اللي فاتت.', arFusha: 'فريقنا كسب البطولة السنة اللي فاتت.', speaker: 'Tiffani', keyWords: [{ word: 'won', ipa: '', meaningAr: 'كسب', meaningEn: '' }, { word: 'championship', ipa: '', meaningAr: 'بطولة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The match ended in a draw.', arEg: 'الماتش خلص بالتعادل.', arFusha: 'الماتش خلص بالتعادل.', speaker: 'Tiffani', keyWords: [{ word: 'ended in', ipa: '', meaningAr: 'خلص بـ', meaningEn: '' }, { word: 'draw', ipa: '', meaningAr: 'تعادل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'championship', type: 'cultural', meaningAr: 'بطولة', meaningEn: '', egyptianEquivalent: 'الدوري / البطولة', exampleInScene: 'They won the championship.' },      { term: 'draw', type: 'cultural', meaningAr: 'تعادل', meaningEn: '', egyptianEquivalent: 'تعادل', exampleInScene: 'The game was a draw.' },      { term: 'score', type: 'cultural', meaningAr: 'النتيجة', meaningEn: '', egyptianEquivalent: 'السكور', exampleInScene: 'What is the score?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'The match ended in a draw\' mean?', questionAr: 'معنى The match ended in a draw؟', options: ['الماتش خلص بالتعادل', 'الماتش اتلغى', 'الماتش خلص بدري', 'فريق انسحب'], correctIndex: 0, explanationAr: 'draw في الرياضة معناها تعادل - الاتنين جابوا نفس النتيجة.' }
+    ],
+    speakingLines: [{ en: 'Our team won the championship last year.', arEg: 'فريقنا كسب البطولة السنة اللي فاتت.' }, { en: 'The match ended in a draw.', arEg: 'الماتش خلص بالتعادل.' }],
+  },
+  {
+    id: 'pron-rachel-mispronounce',
+    movieTitle: 'English Words You Are Probably Mispronouncing - Rachel\'s English',
+    releaseYear: 2021,
+    director: 'Rachel\'s English',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Stop Mispronouncing These Words',
+    sceneDescription: 'كلمات بتنطقها غلط من غير ما تاخد بالك: comfortable, vegetable, Wednesday - ريتشل بتصححها.',
+    youtubeId: 'opKPVqxE_QY',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Rachel\'s English (Official)',
+    dialogueQuote: 'Wednesday has a silent D.',
+    actorName: 'Rachel',
+    characterName: 'Rachel',
+    thumbnailUrl: 'https://img.youtube.com/vi/opKPVqxE_QY/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Rachel\'s English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Wednesday has a silent D.', arEg: 'كلمة Wednesday فيها D ساكنة.', arFusha: 'كلمة Wednesday فيها D ساكنة.', speaker: 'Rachel', keyWords: [{ word: 'silent D', ipa: '', meaningAr: 'حرف D ساكن', meaningEn: '' }, { word: 'Wednesday', ipa: '', meaningAr: 'يوم الأربعاء', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Say comfortable with three syllables, not four.', arEg: 'انطق comfortable بثلاث مقاطع مش أربعة.', arFusha: 'انطق comfortable بثلاث مقاطع مش أربعة.', speaker: 'Rachel', keyWords: [{ word: 'syllables', ipa: '', meaningAr: 'مقاطع صوتية', meaningEn: '' }, { word: 'comfortable', ipa: '', meaningAr: 'مريح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'mispronounce', type: 'cultural', meaningAr: 'ينطق غلط', meaningEn: '', egyptianEquivalent: 'ينطق غلط', exampleInScene: 'Many learners mispronounce this word.' },      { term: 'syllable', type: 'cultural', meaningAr: 'مقطع صوتي', meaningEn: '', egyptianEquivalent: 'مقطع', exampleInScene: 'Water has two syllables.' },      { term: 'silent', type: 'cultural', meaningAr: 'ساكن (حرف مبيتنطقش)', meaningEn: '', egyptianEquivalent: 'مبيتنطقش', exampleInScene: 'The D is silent.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How many syllables in the American pronunciation of \'comfortable\'?', questionAr: 'كام مقطع صوتي في نطق comfortable الأمريكي؟', options: ['تلاتة', 'أربعة', 'اتنين', 'خمسة'], correctIndex: 0, explanationAr: 'بالأمريكي بتتنطق كامف-تر-بل: تلات مقاطع مش أربعة.' }
+    ],
+    speakingLines: [{ en: 'Wednesday has a silent D.', arEg: 'كلمة Wednesday فيها D ساكنة.' }, { en: 'Say comfortable with three syllables, not four.', arEg: 'انطق comfortable بثلاث مقاطع مش أربعة.' }],
+  },
 ];
 
 // Helper to get all videos
