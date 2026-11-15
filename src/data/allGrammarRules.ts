@@ -3062,4 +3062,485 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       }
     ]
   },
+  // ==========================================
+  // BATCH 2 - B1 EXPANSION (مواضيع وقواعد أخرى)
+  // ==========================================
+  {
+    id: 'be-get-used-to',
+    order: 54,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'الاعتياد على شيء: الفرق بين Be used to ﻥ Get used to ﻥ Used to',
+    titleEn: 'Be Used To & Get Used To vs Used To',
+    level: 'B1 - متوسط',
+    goldenFormula: 'Subject + be/get used to + V-ing or noun (I am used to waking up early)',
+    negativeFormula: "Subject + be not used to + V-ing (I'm not used to driving on the left)",
+    questionFormula: 'Be + subject + used to + V-ing? (Are you used to working nights?)',
+    summaryAr: 'قاعدة الاعتياد: لما حاجة تكون عادية بالنسبالك دلوقتي أو بتتعود عليها لسه. Be used to معناها "متعود على"، ﻥ Get used to معناها "بدأ يتعود". احذر: بعدهم الفعل بيكون في ing مش مصدر، عكس used to بتاعة الماضي تماماً.',
+    timelineDescription: 'حالة اعتياد موجودة في الحاضر (be used to) أو عملية اعتياد لسه شغالة (get used to).',
+    imageUrl: ONLINE_IMAGES.grammar.presentSimple,
+    imageAlt: 'Person comfortably following a daily routine they are accustomed to',
+    keyUsagePoints: [
+      'Be used to + V-ing/اسم: حاجة بقت عادية ليك: I am used to the noise (الصوت العالي بقى عادي).',
+      'Get used to + V-ing/اسم: عملية التعود نفسها: You will get used to the new system (هتتعود عليه مع الوقت).',
+      'Used to + مصدر: عادة ماضية انتهت (راجع قاعدة Used to & Would): I used to live in Cairo.',
+      "بعد be/get used to يجي الفعل في ing دائماً: I'm used to studying at night (مش to study)."
+    ],
+    egyptianTips: [
+      'احفظها كده: "used to + مصدر" = كنت بعمل كده زمان وخلاص. "be used to + ing" = أنا متعود على كده دلوقتي.',
+      'لو لقيت to وبعدها ing متستغربش: هنا to حرف جر مش جزء من المصدر، زي look forward to meeting you.',
+      "في السؤال والنفي مع be used to بنتعامل مع be عادي: Are you used to it? / I'm not used to it."
+    ],
+    commonTraps: [
+      "فخ المصدر بعد be used to: الخطأ I'm used to wake up early، الصواب: I'm used to waking up early.",
+      'فخ الخلط مع العادة الماضية: I used to wake up early معناها كنت بصحى بدري زمان وبطلت؛ أما I am used to waking up early معناها الصحيان بدري عادي عندي دلوقتي.',
+      "فخ نسيان الـ d: الخطأ I'm use to، الصواب: I'm used to (الـ d إجبارية هنا)."
+    ],
+    examples: [
+      {
+        en: "I've lived in Cairo for ten years, so I'm used to the traffic.",
+        ar: 'أنا عايش في القاهرة من عشر سنين، فأنا متعود على الزحمة.',
+        highlight: "'m used to",
+        context: 'حالة اعتياد حالية + اسم (the traffic)'
+      },
+      {
+        en: 'When Sara moved to London, it took her months to get used to driving on the left.',
+        ar: 'لما سارة نقلت لندن، خدت منها شهور عشان تتعود على السواقة على الشمال.',
+        highlight: 'get used to driving',
+        context: 'عملية التعود + فعل في ing'
+      },
+      {
+        en: "He's not used to speaking in public, so he gets nervous before presentations.",
+        ar: 'هو مش متعود على الكلام قدام ناس، عشان كده بيتوتر قبل العروض.',
+        highlight: "not used to speaking",
+        context: 'نفي الاعتياد + V-ing'
+      },
+      {
+        en: 'Are you used to working from home, or do you miss the office?',
+        ar: 'انت متعود على الشغل من البيت ولا بتفتقد المكتب؟',
+        highlight: 'Are you used to working',
+        context: 'صيغة سؤال عن حالة الاعتياد'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'I come from a small village, so I ______ the noise of big cities yet.',
+        options: ["am not used to", "didn't use to", 'used to', "don't use to"],
+        correct: 0,
+        explanation: 'الجملة عن عدم الاعتياد الحالي (yet)، فنستخدم be not used to.'
+      },
+      {
+        question: 'After a few weeks at the new job, she ______ waking up at 5 AM.',
+        options: ['used to', 'got used to', 'is used to wake', 'uses to'],
+        correct: 1,
+        explanation: 'عملية التعود التدريجية (after a few weeks) تاخد get used to + V-ing.'
+      },
+      {
+        question: 'When I was a student, I ______ in the library every night.',
+        options: ['am used to studying', 'get used to study', 'used to study', 'used to studying'],
+        correct: 2,
+        explanation: 'عادة ماضية انتهت (when I was a student) تاخد used to + مصدر بدون ing.'
+      }
+    ]
+  },
+  {
+    id: 'reported-commands',
+    order: 55,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'نقل الأوامر والطلبات: Tell ﻥ Ask ﻥ Order + to',
+    titleEn: 'Reported Commands & Requests',
+    level: 'B1 - متوسط',
+    goldenFormula: 'Verb (tell/ask/order/advise/warn) + object + (not) + to-infinitive',
+    negativeFormula: "Verb + object + not to-infinitive (He told me not to be late)",
+    questionFormula: 'لا تُستخدم في صيغة سؤال - هي نفسها نقل لجمل أخرى',
+    summaryAr: 'لما تنقل أمر أو طلب حد قاله، مش بنستخدم صيغة الأمر تاني، بنستخدم فعل زي tell أو ask وبعدين الشخص وبعدين to والمصدر: "Open the door" تتحول لـ He told me to open the door.',
+    timelineDescription: 'نقل أمر أو طلب قيل في الماضي بصيغة محايدة.',
+    imageUrl: ONLINE_IMAGES.grammar.reportedSpeech,
+    imageAlt: 'Teacher giving instructions that students report to each other',
+    keyUsagePoints: [
+      'القاعدة الذهبية: tell/ask/order/advise/warn + المفعول به + to + المصدر: She asked me to wait.',
+      'نفي الأمر المنقول: not قبل to: The doctor told me not to smoke.',
+      'اختيار الفعل يعكس المعنى: order للأوامر الصارمة، ask للطلبات المهذبة، advise للنصيحة، warn للتحذير، tell للتعليمات العادية.',
+      'Say ممنوعة في نقل الأوامر: مينفعش He said me to go؛ الصواب: He told me to go.'
+    ],
+    egyptianTips: [
+      'بالبلدي: الأمر "افتح الباب" لما تحكيه يبقى "قالي أفتح الباب" = He told me to open the door. حرف الجر to هو اللي بيعمل دور "أ".',
+      'افتكر إن tell لازم يجي بعدها مين الشخص: told ME/told THEM، عكس say.',
+      'التحذير الشهير: The sign warned us not to touch the wires = اللافتة حذرتنا ما نلمسش الأسلاك.'
+    ],
+    commonTraps: [
+      'فخ استخدام say في نقل الأمر: الخطأ He said me to sit down، الصواب: He told me to sit down.',
+      'فخ نسيان to: الخطأ She asked me wait outside، الصواب: She asked me to wait outside.',
+      'فخ مكان not: الخطأ He told me to not go، الأفصح: He told me not to go.'
+    ],
+    examples: [
+      {
+        en: 'The teacher told the students to open their books to page fifty.',
+        ar: 'المدرس قال للطلبة يفتحوا كتبهم على صفحة خمسين.',
+        highlight: 'told the students to open',
+        context: 'نقل أمر عادي بـ tell + object + to'
+      },
+      {
+        en: 'My mother always asks me to call her when I arrive.',
+        ar: 'ماما دايماً بتطلب مني أطمنها أول ما أوصل.',
+        highlight: 'asks me to call',
+        context: 'نقل طلب مهذب بـ ask'
+      },
+      {
+        en: 'The doctor advised him not to eat fast food for a month.',
+        ar: 'الدكتور نصحه مياكلش أكلات سريعة لمدة شهر.',
+        highlight: 'advised him not to eat',
+        context: 'نفي الأمر المنقول: not قبل to'
+      },
+      {
+        en: 'The lifeguard warned the children not to swim far from the shore.',
+        ar: 'الغطاس حذر الأطفال مايبعدوش عن الشاطئ في العوم.',
+        highlight: 'warned the children not to swim',
+        context: 'نقل تحذير بـ warn + not to'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: '"Don\'t be late!" - My boss ______ late.',
+        options: ['said me not to be', 'told me to not be', 'told me not to be', 'told to me not be'],
+        correct: 2,
+        explanation: 'نقل الأمر يحتاج tell + object + not + to: told me not to be.'
+      },
+      {
+        question: '"Could you help me with the bags?" - She ______ her with the bags.',
+        options: ['asked me to help', 'asked me help', 'told to help', 'said me to help'],
+        correct: 0,
+        explanation: 'الطلب المهذب (Could you) يُنقل بـ ask + object + to-infinitive.'
+      },
+      {
+        question: 'The officer ______ the soldiers ______ at six o\'clock.',
+        options: ['ordered / to assemble', 'ordered / assemble', 'said / to assemble', 'asked / assembling'],
+        correct: 0,
+        explanation: 'الأمر العسكري الصارم يُنقل بـ order + object + to-infinitive.'
+      }
+    ]
+  },
+  {
+    id: 'defining-non-defining-relatives',
+    order: 56,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'جمل الوصل النوعان: الفرق بين Defining ﻥ Non-Defining',
+    titleEn: 'Defining vs Non-Defining Relative Clauses',
+    level: 'B1 - متوسط',
+    goldenFormula: 'Defining: noun + who/which/that + verb (بدون فواصل) • Non-Defining: noun, who/which + verb, (بفواصل)',
+    negativeFormula: 'تُنفى حسب فعل الجملة الأصلية وليس لها صيغة خاصة',
+    questionFormula: 'تُستخدم في صيغة سؤال عادية: Is this the book that you bought?',
+    summaryAr: 'جملة الوصل إما "محددة" (Defining): معلومة ضرورية بدونها الجملة مش مفهومة، وتكتب بدون فواصل ويجوز فيها that وحذف الضمير. أو "غير محددة" (Non-Defining): معلومة إضافية ممكن نشيلها، وتحط بين فاصلين وممنوع فيها that وحذف الضمير.',
+    timelineDescription: 'وصف الأسماء وتحديدها في أي زمن - القاعدة عن البنية لا الزمن.',
+    imageUrl: ONLINE_IMAGES.grammar.relativeClauses,
+    imageAlt: 'Two paths illustrating essential versus extra information in a sentence',
+    keyUsagePoints: [
+      'Defining: بتحدد مين أو إيه بالظبط اللي بنتكلم عنه: The student who studies hard succeeds (أي طالب؟ اللي بيذاكر).',
+      'Non-Defining: معلومة زيادة عن شخص أو شيء معروف: My father, who is 60, still works (أبويا معروف مين هو).',
+      'That مسموحة في Defining فقط: The book that I bought؛ ممنوعة بعد الفاصلة في Non-Defining.',
+      'حذف ضمير الوصل مسموح في Defining لما يكون مفعولاً به: The film (that) we watched was great؛ وممنوع الحذف في Non-Defining أبداً.'
+    ],
+    egyptianTips: [
+      'اختبرها بالحذف: شيل جملة الوصل - لو الجملة لسه مفهومة ومين الشخص واضح، يبقى Non-Defining وحط فواصل. لو الجملة بوظت، يبقى Defining من غير فواصل.',
+      'بالعامية: Defining بتجاوب على سؤال "أنهي واحد؟"، أما Non-Defining بتقول "وبالمناسبة كده...".',
+      'افتكر: الفاصلة معناها "معلومة على الهامش"، فمينفعش بعدها that - دي للكلام اللي في صلب الجملة بس.'
+    ],
+    commonTraps: [
+      'فخ that في Non-Defining: الخطأ My car, that is new, is outside، الصواب: My car, which is new, is outside.',
+      'فخ الفواصل في Defining: الخطأ The man, who lives next door, is a doctor (لو عندك كذا جار)، الصواب بدون فواصل: The man who lives next door is a doctor.',
+      'فخ حذف الضمير في Non-Defining: الخطأ London, I visited last year, was amazing، الصواب: London, which I visited last year, was amazing.'
+    ],
+    examples: [
+      {
+        en: 'Students who revise regularly usually pass the exam.',
+        ar: 'الطلبة اللي بتراجع بانتظام عادة بتنجح في الامتحان.',
+        highlight: 'who revise regularly',
+        context: 'Defining - تحدد أي طلبة نقصد بالظبط (بدون فواصل)'
+      },
+      {
+        en: 'Mr Adel, who teaches us physics, is retiring next year.',
+        ar: 'أستاذ عادل - اللي بيدرسنا فيزيا - هيتقاعد السنة الجاية.',
+        highlight: ', who teaches us physics,',
+        context: 'Non-Defining - معلومة إضافية عن شخص معروف بالفعل (بفواصل)'
+      },
+      {
+        en: 'The phone that she bought yesterday is already broken.',
+        ar: 'التليفون اللي اشترته إمبارح بوظ بالفعل.',
+        highlight: 'that she bought',
+        context: 'Defining - that مسموحة هنا لأنها في صلب التحديد'
+      },
+      {
+        en: 'Alexandria, which I visit every summer, has the best seafood in Egypt.',
+        ar: 'إسكندرية - اللي بزورها كل صيف - عندها أحلى سي فود في مصر.',
+        highlight: ', which I visit every summer,',
+        context: 'Non-Defining - ممنوع that وممنوع حذف which'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'My brother, ______ lives in Dubai, is coming home next week.',
+        options: ['that', 'who', 'which', '-'],
+        correct: 1,
+        explanation: 'Non-Defining (بفواصل عن شخص معروف) تأخذ who للأشخاص، وممنوع that أو الحذف.'
+      },
+      {
+        question: 'The movie ______ we watched last night won three awards.',
+        options: ['which,', ', which', 'who', 'that'],
+        correct: 3,
+        explanation: 'جملة Defining بدون فواصل تحدد أي فيلم، فتصلح that (ويجوز أيضاً which أو حذف الضمير).'
+      },
+      {
+        question: 'اختر الجملة الصحيحة:',
+        options: [
+          'Cairo, that is the capital, is crowded.',
+          'Cairo, which is the capital, is crowded.',
+          'Cairo which is the capital, is crowded.',
+          'Cairo, is the capital, is crowded.'
+        ],
+        correct: 1,
+        explanation: 'معلومة إضافية عن مكان معروف: فاصلة + which + فاصلة، وممنوع that.'
+      }
+    ]
+  },
+  {
+    id: 'future-in-the-past',
+    order: 57,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'المستقبل في الماضي: Was going to ﻥ Would',
+    titleEn: 'Future in the Past',
+    level: 'B1 - متوسط',
+    goldenFormula: 'Subject + was/were going to + base verb • Subject + would + base verb',
+    negativeFormula: "Subject + wasn't/weren't going to + base verb • Subject + would not (wouldn't) + base verb",
+    questionFormula: 'Was/Were + subject + going to + base verb?',
+    summaryAr: 'لما تحكي عن خطة أو توقع كان موجود في لحظة ماضية: كان قاصد، كان هيعمل. Was going to هي ماضي going to، ﻥ Would هي ماضي will في الكلام المنقول والتوقعات القديمة.',
+    timelineDescription: 'نقطة في الماضي، ومنها كنا ننظر لأحداث "مستقبلية" بالنسبة لتلك اللحظة.',
+    imageUrl: ONLINE_IMAGES.grammar.pastSimple,
+    imageAlt: 'Calendar seen from a past moment showing plans that lay ahead then',
+    keyUsagePoints: [
+      'Was/Were going to: نية أو خطة ماضية (تحققت أو لا): I was going to call you, but I forgot (كنت أنوي).',
+      'Would: ماضي will في الكلام المنقول: He said he would help us = قال إنه هيساعدنا.',
+      'Was about to: شيء كان على وشك الحدوث: The train was about to leave when we arrived.',
+      'بتتفيد في سرد القصص: كنت في نقطة ماضية وبتحكي اللي كان جاي بعدها.'
+    ],
+    egyptianTips: [
+      'بالعامية عندنا نفس الفكرة: "كنت هروح" = I was going to go. "قالي إنه هيجي" = He told me he would come.',
+      'Was about to = "كان على وشك": I was about to sleep when the phone rang = كنت على وشك النوم لما التليفون رن.',
+      'في الكلام المنقول: will تتحول لـ would تلقائياً: "I will win" ➔ He said he would win.'
+    ],
+    commonTraps: [
+      'فخ استخدام will في الكلام المنقول الماضي: الخطأ He said he will come، الصواب: He said he would come.',
+      'فخ نسيان was/were: الخطأ I going to visit her yesterday، الصواب: I was going to visit her.',
+      'فخ الخلط مع الاستخدام الشرطي لـ would: في If I were rich, I would travel دي مش خطة ماضية بل شرط خيالي (قاعدة مختلفة).'
+    ],
+    examples: [
+      {
+        en: 'I was going to study medicine, but I discovered my passion for teaching.',
+        ar: 'كنت ناوي أدرس طب، بس اكتشفت شغفي بالتدريس.',
+        highlight: 'was going to study',
+        context: 'خطة ماضية لم تتحقق'
+      },
+      {
+        en: 'She promised that she would send the report before Friday.',
+        ar: 'هي وعدت إنها هتبعت التقرير قبل الجمعة.',
+        highlight: 'would send',
+        context: 'will منقولة في وعد ماضي'
+      },
+      {
+        en: 'We were about to leave the house when the storm started.',
+        ar: 'كنا على وشك نخرج من البيت لما العاصفة بدأت.',
+        highlight: 'were about to leave',
+        context: 'حدث كان على وشك الحدوث'
+      },
+      {
+        en: 'Did you know back then that you would become a teacher?',
+        ar: 'كنت عارف ساعتها إنك هتبقى مدرس؟',
+        highlight: 'would become',
+        context: 'توقع أو قدر منظور من لحظة ماضية'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'He said he ______ me as soon as he arrived.',
+        options: ['will call', 'would call', 'calls', 'is calling'],
+        correct: 1,
+        explanation: 'في الكلام المنقول عن لحظة ماضية، will تتحول إلى would.'
+      },
+      {
+        question: 'I ______ travel to Aswan last weekend, but I got sick.',
+        options: ['was going to', 'will', 'am going to', 'would to'],
+        correct: 0,
+        explanation: 'خطة ماضية لم تتحقق (but I got sick) تاخد was/were going to.'
+      },
+      {
+        question: 'The plane ______ when we finally reached the gate.',
+        options: ['was about to leave', 'is about to leave', 'will about leave', 'about to leave'],
+        correct: 0,
+        explanation: 'حدث كان على وشك الحدوث في الماضي: was/were about to + مصدر.'
+      }
+    ]
+  },
+  {
+    id: 'make-vs-do',
+    order: 58,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'المعركة الأشهر: الفرق بين Make ﻥ Do',
+    titleEn: 'Make vs Do - The Classic Confusion',
+    level: 'B1 - متوسط',
+    goldenFormula: 'Make + إنتاج/خلق/قرار • Do + عمل/نشاط/واجب',
+    negativeFormula: "Don't make mistakes / Don't do the work",
+    questionFormula: 'What are you making? / What do you do?',
+    summaryAr: 'الفعلان معناهما "يعمل" لكن لا يتبادلان الأماكن: Make لما تكون النتيجة شيء جديد اتخلق أو اتقرر (make a cake, make a decision)، ﻥ Do للأنشطة والواجبات والشغل (do homework, do business). الباقي تصبغات ثابتة لازم تتحفظ كوحدات.',
+    timelineDescription: 'قاعدة معجمية (اختيار الفعل الصحيح مع الاسم) وليست زمناً.',
+    imageUrl: ONLINE_IMAGES.grammar.gerundsInfinitives,
+    imageAlt: 'Hands making something new versus doing a routine task',
+    keyUsagePoints: [
+      'Make = خلق وإنتاج: make food, make a cake, make a plan, make money.',
+      'Make = قرارات وكلام ومشاعر: make a decision, make a suggestion, make a promise, make someone happy.',
+      'Do = واجبات وعمل: do homework, do housework, do business, do a job, do exercise.',
+      'Do = أنشطة عامة بلا نتيجة ملموسة: do nothing, do your best, do the shopping.'
+    ],
+    egyptianTips: [
+      'قاعدة إبهام سريعة: لو في حاجة جديدة "اتعملت" وتقدر تمسكها أو تشوفها (أكل، فلوس، خطة) غالباً Make. لو مجرد "نشاط وخلاص" غالباً Do.',
+      'احفظ الثلاثي الأشهر في الامتحانات: make a mistake (مش do)، do homework (مش make)، make a decision (مش do).',
+      'Do your best = اختلص / اعمل اللي عليك. Make friends = صادق ناس جداد (بـ make لأنك بتخلق صداقة جديدة).'
+    ],
+    commonTraps: [
+      'فخ do a mistake: الخطأ I did a mistake، الصواب: I made a mistake.',
+      'فخ make homework: الخطأ I made my homework، الصواب: I did my homework.',
+      'فخ do money: الخطأ He does a lot of money، الصواب: He makes a lot of money.'
+    ],
+    examples: [
+      {
+        en: 'Stop worrying - everyone makes mistakes when they learn something new.',
+        ar: 'بطل قلق - كله بيغلط وهو بيتعلم حاجة جديدة.',
+        highlight: 'makes mistakes',
+        context: 'تصبغة ثابتة: make a mistake'
+      },
+      {
+        en: 'I usually do the shopping on Friday morning before work.',
+        ar: 'أنا عادة بعمل مشتريات البيت يوم الجمعة الصبح قبل الشغل.',
+        highlight: 'do the shopping',
+        context: 'نشاط روتيني بلا منتج ملموس'
+      },
+      {
+        en: 'The manager made an important decision about the new branch.',
+        ar: 'المدير خد قرار مهم بخصوص الفرع الجديد.',
+        highlight: 'made an important decision',
+        context: 'تصبغة ثابتة: make a decision'
+      },
+      {
+        en: 'Our company does business with partners in ten countries.',
+        ar: 'شركتنا بتشتغل وتتعامل تجارياً مع شركاء في عشر دول.',
+        highlight: 'does business',
+        context: 'تصبغة ثابتة: do business'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'Could you ______ me a favour and open the window?',
+        options: ['make', 'do', 'take', 'give'],
+        correct: 1,
+        explanation: 'تصبغة ثابتة: do someone a favour.'
+      },
+      {
+        question: 'She ______ a lot of progress in English this year.',
+        options: ['did', 'made', 'took', 'gave'],
+        correct: 1,
+        explanation: 'تصبغة ثابتة: make progress (نتيجة جديدة تحققت).'
+      },
+      {
+        question: 'I have to ______ my project before the deadline on Sunday.',
+        options: ['make', 'do', 'build', 'create'],
+        correct: 1,
+        explanation: 'إنجاز عمل أو واجب مطلوب: do a project (do للأعمال والواجبات).'
+      }
+    ]
+  },
+  {
+    id: 'all-whole-every-each',
+    order: 59,
+    category: 'مواضيع وقواعد أخرى',
+    categoryEn: 'Other Grammar Topics',
+    titleAr: 'كل بمعنى "كله": الفرق بين All ﻥ Whole ﻥ Every ﻥ Each',
+    titleEn: 'All vs Whole vs Every vs Each',
+    level: 'B1 - متوسط',
+    goldenFormula: 'All + جمع/غير معدود • The whole + مفرد • Every/Each + مفرد',
+    negativeFormula: 'Not all... / Not every... (نفي جزئي وليس كلياً)',
+    questionFormula: 'Did you read the whole book? / Does every student have a book?',
+    summaryAr: 'أربع كلمات معناهم "كل" لكن بتركيبات مختلفة: All مع الجمع وغير المعدود (all students, all day)، ﻥ The whole مع المفرد (the whole day)، ﻥ Every مع المفرد بمعنى "كل واحد في المجموعة"، ﻥ Each لما تركز على كل فرد لوحده. الغلط الأشهر: whole بدون the، ﻥ every مع الجمع.',
+    timelineDescription: 'قاعدة كميات وتحديد وليست زمناً.',
+    imageUrl: ONLINE_IMAGES.grammar.presentSimple,
+    imageAlt: 'A complete puzzle where all pieces and each single piece are visible',
+    keyUsagePoints: [
+      'All + اسم جمع أو غير معدود: All students passed / All the water is clean.',
+      'The whole + اسم مفرد: the whole day = all day، the whole family = all the family.',
+      'Every + مفرد: كل أفراد المجموعة ككتلة واحدة: Every student has a book (وممنوع every مع جمع).',
+      'Each + مفرد: تركيز على كل فرد على حدة (وتصلح حتى مع اتنين بس، عكس every اللي لازم 3+): Each student got a different question.'
+    ],
+    egyptianTips: [
+      'All day = the whole day، بس افتكر: whole مش بتشتغل من غير the، ومبتيجيش مع الجمع أصلاً.',
+      'Every بتفكر في "الكل كمجموعة"، Each بتفكر في "كل واحد لوحده": I gave each student a different topic (وزعت واحد واحد).',
+      'في اللغة الرسمية: Each of + جمع + فعل مفرد: Each of the students has a book.'
+    ],
+    commonTraps: [
+      'فخ whole مع الجمع: الخطأ the whole students، الصواب: all the students.',
+      'فخ نسيان the مع whole: الخطأ I slept whole day، الصواب: I slept the whole day (أو all day).',
+      'فخ الجمع بعد every: الخطأ every students، الصواب: every student (اسم مفرد + فعل مفرد).'
+    ],
+    examples: [
+      {
+        en: 'All the students in my class passed the final exam.',
+        ar: 'كل الطلبة في فصلي نجحوا في الامتحان النهائي.',
+        highlight: 'All the students',
+        context: 'All + جمع: المجموعة كاملة'
+      },
+      {
+        en: 'It rained the whole day, so we stayed at home.',
+        ar: 'الدنيا مطرت اليوم كله، ففضلنا في البيت.',
+        highlight: 'the whole day',
+        context: 'The whole + مفرد (= all day)'
+      },
+      {
+        en: 'Every learner on the platform gets a personal study plan.',
+        ar: 'كل متعلم على المنصة بياخد خطة مذاكرة شخصية.',
+        highlight: 'Every learner',
+        context: 'Every + مفرد: كل أفراد المجموعة'
+      },
+      {
+        en: 'The teacher gave each student a different word to translate.',
+        ar: 'المدرس إدّى لكل طالب كلمة مختلفة يترجمها.',
+        highlight: 'each student',
+        context: 'Each: تركيز على كل فرد على حدة'
+      }
+    ],
+    miniQuiz: [
+      {
+        question: 'I spent ______ morning answering emails.',
+        options: ['the whole', 'every the', 'all of whole', 'each the'],
+        correct: 0,
+        explanation: 'مع الاسم المفرد (morning) نستخدم the whole (= all morning).'
+      },
+      {
+        question: '______ student in the exam room received a sealed paper.',
+        options: ['All', 'Every', 'Whole', 'All of'],
+        correct: 1,
+        explanation: 'Every + اسم مفرد (student)؛ All كانت ستحتاج الجمع: all students.'
+      },
+      {
+        question: 'اختر الجملة الصحيحة:',
+        options: [
+          'Whole the class was quiet.',
+          'The whole class was quiet.',
+          'Every the class was quiet.',
+          'Each the class was quiet.'
+        ],
+        correct: 1,
+        explanation: 'الصيغة الصحيحة: the whole + اسم مفرد (class).'
+      }
+    ]
+  },
 ];
