@@ -1,5 +1,5 @@
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
-import { LessonPhoto, LessonPhotoGallery, LessonPhotoSources } from '../components/LessonPhotography';
+import { LessonPhoto, LessonPhotoGallery } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
@@ -524,7 +524,6 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           </button>
         ) : <div />}
       </div>
-      <LessonPhotoSources lessonId={rule.id} />
     </div>
   );
 };
