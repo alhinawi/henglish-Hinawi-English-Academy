@@ -243,7 +243,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-red-600/20 text-red-300 border border-red-500/30">
               <Film className="w-4 h-4 text-red-400" />
-              <span>HINAWI CINEMA & VIDEO STUDIO • استوديو الفيديو والسينما الذكي</span>
+              <span>HENGLISH CINEMA & VIDEO STUDIO • استوديو الفيديو والسينما الذكي</span>
             </div>
 
             <div className="flex items-center gap-2">
