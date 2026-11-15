@@ -45,6 +45,60 @@ export function clearHenglishApiToken(): void {
   }
 }
 
+// ---------- Google OAuth ----------
+
+export interface AuthConfig {
+  google: boolean;
+}
+
+// Which sign-in providers the backend is configured for. Defaults to
+// google:false so the button stays hidden whenever the check fails.
+export async function apiGetAuthConfig(): Promise<AuthConfig> {
+  try {
+    const res = await fetch(`${API_BASE}/api/auth/config`);
+    if (!res.ok) return { google: false };
+    const body = await res.json();
+    return { google: Boolean(body && body.google) };
+  } catch {
+    return { google: false };
+  }
+}
+
+// Where the site sends the browser to start Google sign-in.
+export function googleLoginUrl(): string {
+  return `${API_BASE}/api/auth/google/start?origin=${encodeURIComponent(window.location.origin)}`;
+}
+
+// The worker redirects back to <origin>/#auth-callback?token=...&provider=google
+// after Google sign-in. Reads and clears that hash, saving the API token.
+// Returns the token (or an "error:<code>" string) when a callback was consumed.
+export function consumeGoogleAuthCallback(): string | null {
+  if (typeof window === 'undefined') return null;
+  const m = /^#auth-callback\?(.*)$/.exec(window.location.hash);
+  if (!m) return null;
+  const params = new URLSearchParams(m[1]);
+  const token = params.get('token');
+  const error = params.get('error');
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#movies`);
+  if (token) {
+    saveHenglishApiToken(token);
+    return token;
+  }
+  return error ? `error:${error}` : null;
+}
+
+export async function apiGetMe(token: string): Promise<{ user: ApiUser } | null> {
+  try {
+    const res = await fetch(`${API_BASE}/api/me`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
 function mapApiError(status: number, body: any): string {
   const fields = body && body.fields ? body.fields : {};
   if (fields.email === 'already registered') return 'الإيميل ده مسجل قبل كده. جرّب تسجيل الدخول.';
