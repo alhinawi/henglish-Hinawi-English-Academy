@@ -58,7 +58,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     isAuthenticated, 
     isGuest, 
     isDemo, 
-    logout 
+    logout,
+    refreshSession,
   } = useAuth();
 
   const [currentRoute, setCurrentRoute] = useState<PageRoute>(initialRoute ?? 'login');
@@ -536,7 +537,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
         initialTab={authModalTab}
-        onSessionChange={() => {}}
+        onSessionChange={refreshSession}
       />
     </>
   );
