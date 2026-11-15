@@ -23,6 +23,13 @@ export const GuestNudge: React.FC<GuestNudgeProps> = ({ isGuest, currentRoute, o
   const [visible, setVisible] = useState(false);
   const shownFor = useRef<Set<string>>(new Set());
 
+  // Hide the moment the session resolves to a signed-in user (e.g. right after
+  // a Google sign-in redirect, where the route effect can fire while the
+  // session is still guest).
+  useEffect(() => {
+    if (!isGuest) setVisible(false);
+  }, [isGuest]);
+
   useEffect(() => {
     if (!isGuest || !SERVICE_ROUTES.includes(currentRoute)) return;
     if (shownFor.current.has(currentRoute)) return;
