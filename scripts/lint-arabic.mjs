@@ -1,44 +1,48 @@
-// Arabic content lint (Hinawi accuracy bar):
-// 1) Standalone U+0648 (waw) adjacent to a Latin word must be written as U+FEE5
-//    (ARABIC LETTER WAW ISOLATED FORM). Chrome does not apply Arabic shaping to a
-//    waw in a Latin bidi run, and Cairo's default waw glyph looks exactly like a
-//    Latin "g" there. U+FEE5 renders the classic waw everywhere.
-// 2) A lone Latin "g" surrounded by Arabic words is the corrupted-waw signature.
-// NOTE: JS \W treats Arabic letters as non-word chars - use explicit classes.
+// Arabic content lint (Hinawi accuracy bar).
+// Use normal Unicode Arabic letters. U+0648 is WAW (و).
+// U+FEE5 is ARABIC LETTER NOON ISOLATED FORM, not waw. A previous lint rule
+// incorrectly recommended it for conjunctions next to Latin text.
 import { readFileSync } from 'node:fs';
 import { execSync } from 'node:child_process';
+import assert from 'node:assert/strict';
 
-const files = execSync("git ls-files 'src/**/*.ts' 'src/**/*.tsx'", { encoding: 'utf8' }).trim().split('\n');
-const WORD = 'A-Za-z\\u0600-\\u06FF\\uFE70-\\uFEFF';
-const SEP = '^A-Za-z0-9_\\u0600-\\u06FF\\u0660-\\u0669\\uFE70-\\uFEFF';
-const ARAB = '\\u0600-\\u06FF';
-const standaloneWaw = /(?<![\u0621-\u064A\u0671-\u06D3])\u0648(?![\u0621-\u064A\u0671-\u06D3])/g;
-const leftWord = new RegExp(`([${WORD}]+)[${SEP}]*$`);
-const rightWord = new RegExp(`^[${SEP}]*([${WORD}]+)`);
-const loneG = new RegExp(`[${ARAB}]\\s+g\\s+[${ARAB}]`, 'g');
-let errors = 0;
-for (const f of files) {
-  const lines = readFileSync(f, 'utf8').split('\n');
-  lines.forEach((line, i) => {
-    if (!/[\u0600-\u06FF]/.test(line)) return; // content lines only, skip escaped-code lines
-    standaloneWaw.lastIndex = 0;
-    let m;
-    while ((m = standaloneWaw.exec(line))) {
-      const left = line.slice(Math.max(0, m.index - 60), m.index);
-      const right = line.slice(m.index + 1, m.index + 61);
-      const lw = left.match(leftWord);
-      const rw = right.match(rightWord);
-      if ((lw && /[A-Za-z]/.test(lw[1])) || (rw && /[A-Za-z]/.test(rw[1]))) {
-        console.error(`${f}:${i + 1} standalone و next to Latin text - use U+FEE5 (ARABIC LETTER WAW ISOLATED FORM) or it renders as a Latin "g" with web fonts`);
+const loneG = /[\u0600-\u06FF]\s+g\s+[\u0600-\u06FF]/g;
+
+export function lintArabicLine(line) {
+  const issues = [];
+  if (line.includes('\uFEE5')) {
+    issues.push('U+FEE5 is an isolated NOON, not WAW. For the Arabic conjunction use normal و (U+0648); do not substitute presentation-form letters.');
+  }
+  loneG.lastIndex = 0;
+  let match;
+  while ((match = loneG.exec(line))) {
+    issues.push(`lone Latin "g" between Arabic words - corrupted و? ${match[0].trim()}`);
+  }
+  return issues;
+}
+
+if (process.argv.includes('--self-test')) {
+  assert.deepEqual(lintArabicLine('الفرق بين Make و Do'), []);
+  assert.deepEqual(lintArabicLine('الاستخدام مع While وWhen'), []);
+  assert.deepEqual(lintArabicLine('و + كلمة English'), []);
+  assert.equal(lintArabicLine('Make \uFEE5 Do').length, 1);
+  assert.equal(lintArabicLine('الكلمة g الثانية').length, 1);
+  assert.deepEqual(lintArabicLine('الكلمة الإنجليزية beginning صحيحة'), []);
+  console.log('Arabic lint regression tests passed (6 cases).');
+} else {
+  const files = execSync("git ls-files 'src/**/*.ts' 'src/**/*.tsx'", { encoding: 'utf8' }).trim().split('\n').filter(Boolean);
+  let errors = 0;
+  for (const file of files) {
+    readFileSync(file, 'utf8').split('\n').forEach((line, index) => {
+      for (const issue of lintArabicLine(line)) {
+        console.error(`${file}:${index + 1} ${issue}`);
         errors++;
       }
-    }
-    loneG.lastIndex = 0;
-    while ((m = loneG.exec(line))) {
-      console.error(`${f}:${i + 1} lone Latin "g" between Arabic words - corrupted و? ${m[0].trim()}`);
-      errors++;
-    }
-  });
+    });
+  }
+  if (errors) {
+    console.error(`\n${errors} Arabic content error(s)`);
+    process.exit(1);
+  }
+  console.log('Arabic content lint passed.');
 }
-if (errors) { console.error(`\n${errors} Arabic content error(s)`); process.exit(1); }
-console.log('Arabic content lint passed.');

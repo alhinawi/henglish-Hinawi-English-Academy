@@ -559,7 +559,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             textAr: 'أيوه من فضلك. ممكن تقولي كلمة سر الواي فاي؟ وممكن مغادرة متأخرة يوم الجمعة؟',
             isOptimal: true,
             score: 10,
-            feedbackAr: 'استفسار احترافي متكامل بصيغتي Could you tell me ﻥ Could I get.',
+            feedbackAr: 'استفسار احترافي متكامل بصيغتي Could you tell me و Could I get.',
           },
           {
             textEn: 'No. Everything is finished. Goodbye.',
