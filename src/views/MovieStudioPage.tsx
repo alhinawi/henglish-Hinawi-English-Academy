@@ -520,7 +520,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                         <div
                           key={scene.id}
                           onClick={() => handleSelectScene(scene)}
-                          className="glass-panel rounded-3xl border border-white/10 hover:border-red-500/50 transition-all overflow-hidden cursor-pointer group shadow-xl bg-[#141124] flex flex-col justify-between"
+                          className="rounded-3xl border border-white/10 hover:border-red-500/50 transition-all overflow-hidden cursor-pointer group shadow-xl bg-[#141124] flex flex-col justify-between"
                         >
                           {/* Video Thumbnail with Badges */}
                           <div className="relative aspect-video w-full bg-black/80 overflow-hidden">
@@ -538,10 +538,10 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
 
                             {/* Top Badges */}
                             <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5">
-                              <span className="px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-[#ffd166] text-[10px] font-black uppercase border border-white/10">
+                              <span className="px-2 py-0.5 rounded-md bg-[#0c0b20]/95 text-[#ffd166] text-[10px] font-black uppercase border border-white/10">
                                 {scene.cefrLevel}
                               </span>
-                              <span className="px-2 py-0.5 rounded-md bg-black/75 backdrop-blur-md text-white text-[10px] font-bold border border-white/10">
+                              <span className="px-2 py-0.5 rounded-md bg-[#0c0b20]/95 text-white text-[10px] font-bold border border-white/10">
                                 {scene.accent === 'American' ? 'US' : scene.accent === 'British' ? 'UK' : ''}
                               </span>
                             </div>
@@ -549,7 +549,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                             {/* Bookmark Button */}
                             <button
                               onClick={e => handleToggleBookmark(scene, e)}
-                              className="absolute top-2.5 left-2.5 p-1.5 rounded-lg bg-black/75 backdrop-blur-md text-white/80 hover:text-white transition-colors"
+                              className="absolute top-2.5 left-2.5 p-1.5 rounded-lg bg-[#0c0b20]/95 text-white/80 hover:text-white transition-colors"
                               title={isSaved ? 'إزالة من المحفوظات' : 'حفظ المقطع'}
                             >
                               {isSaved ? (
