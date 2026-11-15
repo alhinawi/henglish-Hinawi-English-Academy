@@ -42,7 +42,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
       <div className="space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>HINAWI COURSE CATALOG & ACADEMY</span>
+          <span>HENGLISH ACADEMY • COURSE CATALOG</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
           دليل الكورسات والأكاديمية الشاملة
