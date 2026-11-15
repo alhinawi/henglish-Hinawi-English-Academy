@@ -414,7 +414,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 9. Listening Academy */}
                 {currentRoute === 'listening' && (
-                  <ListeningAcademyPage onNavigate={handleNavigate} />
+                  <ListeningAcademyPage onNavigate={handleNavigate} onCompleteActivity={recordQuizScore} learnerId={authUser?.id} />
                 )}
 
                 {/* 10. Reading Academy */}
