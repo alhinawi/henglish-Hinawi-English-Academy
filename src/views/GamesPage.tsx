@@ -5,6 +5,7 @@
 
 import React, { useState } from 'react';
 import { GameVerseDashboard } from '../components/gameverse/GameVerseDashboard';
+import { ArcadeHub } from '../components/arcade/ArcadeHub';
 import { VocabularyRushGame } from '../components/gameverse/VocabularyRushGame';
 import { WordDetectiveGame } from '../components/gameverse/WordDetectiveGame';
 import { SentenceBuilderGame } from '../components/gameverse/SentenceBuilderGame';
@@ -46,7 +47,7 @@ import {
 import { Gamepad2, Swords, Layers } from 'lucide-react';
 
 export const GamesPage: React.FC = () => {
-  const [activeView, setActiveView] = useState<string>('dashboard');
+  const [activeView, setActiveView] = useState<string>('arcade');
   const [showMultiplayerModal, setShowMultiplayerModal] = useState<boolean>(false);
 
   const handleLaunchGame = (gameId: string) => {
@@ -77,6 +78,21 @@ export const GamesPage: React.FC = () => {
 
       {/* Quick Navigation Tabs */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar border-b border-white/10">
+        <button
+          onClick={() => {
+            playSound('click');
+            setActiveView('arcade');
+          }}
+          className={`px-4 py-2.5 rounded-2xl text-xs sm:text-sm font-black transition-all cursor-pointer shrink-0 flex items-center gap-1.5 ${
+            activeView === 'arcade'
+              ? 'bg-linear-to-r from-[#c4ff55] to-[#41e7ff] text-[#0c0b20] shadow-lg'
+              : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
+          }`}
+        >
+          <Gamepad2 className="w-4 h-4" />
+          <span>مركز الألعاب السريعة</span>
+        </button>
+
         <button
           onClick={() => {
             playSound('click');
@@ -223,6 +239,9 @@ export const GamesPage: React.FC = () => {
       {/* ==================================================================== */}
       {/* 1. DASHBOARD & BESPOKE GAME VIEWS */}
       {/* ==================================================================== */}
+
+      {/* VIEW: ARCADE HUB (quick games + XP/streak) */}
+      {activeView === 'arcade' && <ArcadeHub />}
 
       {/* VIEW: MAIN DASHBOARD */}
       {activeView === 'dashboard' && (
