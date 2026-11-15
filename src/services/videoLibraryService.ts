@@ -4083,6 +4083,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'These reefs are home to thousands of species.', arEg: 'الشعاب دي بيت لآلاف الأنواع.' }, { en: 'The ocean hides more secrets than we imagine.', arEg: 'المحيط بيخبي أسرار أكتر مما نتخيل.' }],
   },
+  {
+    id: 'shopping-giovana-clothes',
+    movieTitle: 'Buying Clothes in Your Second Language - English by Giovana',
+    releaseYear: 2023,
+    director: 'English by Giovana',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'At the Clothing Store',
+    sceneDescription: 'جيوفانا بتمثل تجربة شراء هدوم حقيقية: المقاسات، البروفة، والأسعار - كلها بالإنجليزي.',
+    youtubeId: 'yKo-AeH1qH8',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English by Giovana (Official)',
+    dialogueQuote: 'Can I try this on?',
+    actorName: 'Giovana',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/yKo-AeH1qH8/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English by Giovana Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Can I try this on?', arEg: 'ممكن أقيس ده؟', arFusha: 'ممكن أقيس ده؟', speaker: 'Customer', keyWords: [{ word: 'try on', ipa: '', meaningAr: 'يقيس / يجرب لبس', meaningEn: '' }, { word: 'this', ipa: '', meaningAr: 'ده', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Do you have this in a smaller size?', arEg: 'عندكوا ده مقاس أصغر؟', arFusha: 'عندكوا ده مقاس أصغر؟', speaker: 'Customer', keyWords: [{ word: 'smaller', ipa: '', meaningAr: 'أصغر', meaningEn: '' }, { word: 'size', ipa: '', meaningAr: 'مقاس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'try on', type: 'phrasal-verb', meaningAr: 'يقيس / يجرب هدوم', meaningEn: '', egyptianEquivalent: 'يقيس', exampleInScene: 'Try on the jacket first.' },      { term: 'size', type: 'cultural', meaningAr: 'مقاس', meaningEn: '', egyptianEquivalent: 'مقاس', exampleInScene: 'What size are you?' },      { term: 'on sale', type: 'collocation', meaningAr: 'في الخصم', meaningEn: '', egyptianEquivalent: 'عليه عرض', exampleInScene: 'These shoes are on sale.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'try on\' mean?', questionAr: 'معنى try on؟', options: ['يقيس هدوم', 'يجرب عربية', 'يفتح', 'يرجع حاجة'], correctIndex: 0, explanationAr: 'try on معناها تقيس أو تجرب لبس قبل ما تشتريه.' }
+    ],
+    speakingLines: [{ en: 'Can I try this on?', arEg: 'ممكن أقيس ده؟' }, { en: 'Do you have this in a smaller size?', arEg: 'عندكوا ده مقاس أصغر؟' }],
+  },
+  {
+    id: 'shopping-caro-grocery',
+    movieTitle: 'Grocery Shopping in My Second Language - Caro Kowanz English',
+    releaseYear: 2023,
+    director: 'Caro Kowanz English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Supermarket Run',
+    sceneDescription: 'كارو بتاخدك معاها السوبرماركت: أسماء الأقسام، سؤال عن الأسعار، والدفع عند الكاشير.',
+    youtubeId: 'nd9zJ1tMDDs',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Caro Kowanz English (Official)',
+    dialogueQuote: 'Where can I find the dairy section?',
+    actorName: 'Caro',
+    characterName: 'Shopper',
+    thumbnailUrl: 'https://img.youtube.com/vi/nd9zJ1tMDDs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Caro Kowanz English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Where can I find the dairy section?', arEg: 'فين قسم الألبان؟', arFusha: 'فين قسم الألبان؟', speaker: 'Shopper', keyWords: [{ word: 'dairy', ipa: '', meaningAr: 'ألبان', meaningEn: '' }, { word: 'section', ipa: '', meaningAr: 'قسم', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'That will be twelve fifty, please.', arEg: 'ده هيبقى 12.50، لو سمحت.', arFusha: 'ده هيبقى 12.50، لو سمحت.', speaker: 'Cashier', keyWords: [{ word: 'twelve fifty', ipa: '', meaningAr: 'اتناشر ونص', meaningEn: '' }, { word: 'please', ipa: '', meaningAr: 'لو سمحت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'dairy section', type: 'collocation', meaningAr: 'قسم الألبان', meaningEn: '', egyptianEquivalent: 'قسم اللبن والجبن', exampleInScene: 'Milk is in the dairy section.' },      { term: 'aisle', type: 'cultural', meaningAr: 'ممر في السوبرماركت', meaningEn: '', egyptianEquivalent: 'الرواق', exampleInScene: 'Bread is in aisle three.' },      { term: 'checkout', type: 'cultural', meaningAr: 'الكاشير / نقطة الدفع', meaningEn: '', egyptianEquivalent: 'الكاشير', exampleInScene: 'Pay at the checkout.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where is milk usually found in a supermarket?', questionAr: 'اللبن بيبقى فين في السوبرماركت؟', options: ['قسم الألبان', 'قسم المنظفات', 'عند الخضار', 'عند الكاشير'], correctIndex: 0, explanationAr: 'الألبان (dairy) ليها قسم لوحدها - اسأل Where is the dairy section?' }
+    ],
+    speakingLines: [{ en: 'Where can I find the dairy section?', arEg: 'فين قسم الألبان؟' }, { en: 'That will be twelve fifty, please.', arEg: 'ده هيبقى 12.50، لو سمحت.' }],
+  },
+  {
+    id: 'doctor-caro-office',
+    movieTitle: 'At the Doctor\'s Office - Learn Useful English Vocabulary - Caro Kowanz',
+    releaseYear: 2023,
+    director: 'Caro Kowanz English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Describing Your Symptoms',
+    sceneDescription: 'مفردات عيادة الدكتور: إزاي توصف وجعك وتفهم أسئلة الدكتور من غير ما تتوه.',
+    youtubeId: 'cd8d_eCLR8c',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Caro Kowanz English (Official)',
+    dialogueQuote: 'I have a terrible headache.',
+    actorName: 'Caro',
+    characterName: 'Patient',
+    thumbnailUrl: 'https://img.youtube.com/vi/cd8d_eCLR8c/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Caro Kowanz English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I have a terrible headache.', arEg: 'عندي صداع جامد.', arFusha: 'عندي صداع جامد.', speaker: 'Patient', keyWords: [{ word: 'terrible', ipa: '', meaningAr: 'جامد / فظيع', meaningEn: '' }, { word: 'headache', ipa: '', meaningAr: 'صداع', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'How long have you felt like this?', arEg: 'حاسس كده من امتى؟', arFusha: 'حاسس كده من امتى؟', speaker: 'Doctor', keyWords: [{ word: 'how long', ipa: '', meaningAr: 'من امتى / قد إيه', meaningEn: '' }, { word: 'felt', ipa: '', meaningAr: 'حاسس', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'headache', type: 'cultural', meaningAr: 'صداع', meaningEn: '', egyptianEquivalent: 'وجع دماغ', exampleInScene: 'I have a bad headache.' },      { term: 'symptom', type: 'cultural', meaningAr: 'عرض (مرضي)', meaningEn: '', egyptianEquivalent: 'عرض المرض', exampleInScene: 'What are your symptoms?' },      { term: 'prescription', type: 'cultural', meaningAr: 'روشتة', meaningEn: '', egyptianEquivalent: 'روشتة', exampleInScene: 'The doctor wrote a prescription.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does a doctor write for medicine?', questionAr: 'الدكتور بيكتب إيه عشان الدوا؟', options: ['روشتة (prescription)', 'رسالة', 'فاتورة', 'تقرير'], correctIndex: 0, explanationAr: 'الروشتة بالإنجليزي اسمها prescription - الدكتور يكتبها والصيدلي يصرفها.' }
+    ],
+    speakingLines: [{ en: 'I have a terrible headache.', arEg: 'عندي صداع جامد.' }, { en: 'How long have you felt like this?', arEg: 'حاسس كده من امتى؟' }],
+  },
+  {
+    id: 'doctor-universal-conversation',
+    movieTitle: 'English Conversation at the Doctor - Everyday English for Beginners',
+    releaseYear: 2022,
+    director: 'Universal Language Center',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'A Full Doctor Visit',
+    sceneDescription: 'حوار كامل في العيادة للمبتدئين: الحجز، وصف الأعراض، وفهم نصايح الدكتور - بطيء وواضح.',
+    youtubeId: 'B5mdSaSZtWw',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Universal Language Center (Official)',
+    dialogueQuote: 'Take this medicine twice a day.',
+    actorName: 'Doctor',
+    characterName: 'Doctor',
+    thumbnailUrl: 'https://img.youtube.com/vi/B5mdSaSZtWw/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Universal Language Center Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Take this medicine twice a day.', arEg: 'خد الدوا ده مرتين في اليوم.', arFusha: 'خد الدوا ده مرتين في اليوم.', speaker: 'Doctor', keyWords: [{ word: 'twice', ipa: '', meaningAr: 'مرتين', meaningEn: '' }, { word: 'medicine', ipa: '', meaningAr: 'دوا', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I have been coughing since yesterday.', arEg: 'بكح من إمبارح.', arFusha: 'بكح من إمبارح.', speaker: 'Patient', keyWords: [{ word: 'coughing', ipa: '', meaningAr: 'بكح', meaningEn: '' }, { word: 'since yesterday', ipa: '', meaningAr: 'من إمبارح', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'twice a day', type: 'collocation', meaningAr: 'مرتين في اليوم', meaningEn: '', egyptianEquivalent: 'مرتين يومياً', exampleInScene: 'Take it twice a day.' },      { term: 'cough', type: 'cultural', meaningAr: 'يكح', meaningEn: '', egyptianEquivalent: 'يكح', exampleInScene: 'He has been coughing all night.' },      { term: 'appointment', type: 'cultural', meaningAr: 'ميعاد', meaningEn: '', egyptianEquivalent: 'حجز ميعاد', exampleInScene: 'I have a doctor appointment.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'twice a day\' mean?', questionAr: 'معنى twice a day؟', options: ['مرتين في اليوم', 'مرة في اليوم', 'كل يومين', 'ثلاث مرات'], correctIndex: 0, explanationAr: 'twice معناها مرتين - خد الدوا twice a day يعني مرتين في اليوم.' }
+    ],
+    speakingLines: [{ en: 'Take this medicine twice a day.', arEg: 'خد الدوا ده مرتين في اليوم.' }, { en: 'I have been coughing since yesterday.', arEg: 'بكح من إمبارح.' }],
+  },
+  {
+    id: 'tech-wordwisdom-it',
+    movieTitle: 'Exploring Information Technology Vocabulary - Word Wisdom',
+    releaseYear: 2022,
+    director: 'Word Wisdom',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'IT Words You Need',
+    sceneDescription: 'مفردات تكنولوجيا المعلومات الأساسية: سوفتوير، هاردوير، باك أب - شرح مبسط بأمثلة.',
+    youtubeId: 'vaQv65vjIT4',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Word Wisdom (Official)',
+    dialogueQuote: 'Always back up your important files.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/vaQv65vjIT4/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Word Wisdom Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Always back up your important files.', arEg: 'دايماً اعمل نسخة احتياطية لملفاتك المهمة.', arFusha: 'دايماً اعمل نسخة احتياطية لملفاتك المهمة.', speaker: 'Teacher', keyWords: [{ word: 'back up', ipa: '', meaningAr: 'يعمل نسخة احتياطية', meaningEn: '' }, { word: 'files', ipa: '', meaningAr: 'ملفات', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The software needs an update.', arEg: 'البرنامج محتاج تحديث.', arFusha: 'البرنامج محتاج تحديث.', speaker: 'Teacher', keyWords: [{ word: 'software', ipa: '', meaningAr: 'برنامج', meaningEn: '' }, { word: 'update', ipa: '', meaningAr: 'تحديث', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'back up', type: 'phrasal-verb', meaningAr: 'يعمل نسخة احتياطية', meaningEn: '', egyptianEquivalent: 'يعمل باك أب', exampleInScene: 'Back up your photos.' },      { term: 'software', type: 'cultural', meaningAr: 'برنامج / سوفتوير', meaningEn: '', egyptianEquivalent: 'سوفتوير', exampleInScene: 'Install the new software.' },      { term: 'update', type: 'cultural', meaningAr: 'تحديث', meaningEn: '', egyptianEquivalent: 'أبديت', exampleInScene: 'The update fixed the bug.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'back up your files\' mean?', questionAr: 'معنى back up your files؟', options: ['اعمل نسخة احتياطية', 'امسح الملفات', 'افتح الملفات', 'اطبع الملفات'], correctIndex: 0, explanationAr: 'back up معناها تعمل نسخة احتياطية تحفظها لو الجهاز بوظ.' }
+    ],
+    speakingLines: [{ en: 'Always back up your important files.', arEg: 'دايماً اعمل نسخة احتياطية لملفاتك المهمة.' }, { en: 'The software needs an update.', arEg: 'البرنامج محتاج تحديث.' }],
+  },
+  {
+    id: 'tech-native-advanced',
+    movieTitle: 'Speaking Advanced English Vocabulary For Technology - English Like A Native',
+    releaseYear: 2021,
+    director: 'English Like A Native',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'C1',
+    sceneTitle: 'Advanced Tech Talk',
+    sceneDescription: 'مفردات تقنية متقدمة باللهجة البريطانية: للنقاشات الجادة عن التكنولوجيا والذكاء الاصطناعي.',
+    youtubeId: 'PAjXvjQDYcE',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'English Like A Native (Official)',
+    dialogueQuote: 'This technology could revolutionise the industry.',
+    actorName: 'Anna',
+    characterName: 'Anna',
+    thumbnailUrl: 'https://img.youtube.com/vi/PAjXvjQDYcE/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Like A Native Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'This technology could revolutionise the industry.', arEg: 'التكنولوجيا دي ممكن تعمل ثورة في المجال.', arFusha: 'التكنولوجيا دي ممكن تعمل ثورة في المجال.', speaker: 'Anna', keyWords: [{ word: 'revolutionise', ipa: '', meaningAr: 'تعمل ثورة في', meaningEn: '' }, { word: 'industry', ipa: '', meaningAr: 'مجال / صناعة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'It is a double-edged sword, though.', arEg: 'بس دي سلاح ذو حدين.', arFusha: 'بس دي سلاح ذو حدين.', speaker: 'Anna', keyWords: [{ word: 'double-edged sword', ipa: '', meaningAr: 'سلاح ذو حدين', meaningEn: '' }, { word: 'though', ipa: '', meaningAr: 'بس / لكن', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'revolutionise', type: 'cultural', meaningAr: 'يعمل ثورة في / يغير جذرياً', meaningEn: '', egyptianEquivalent: 'يقلب الطاولة', exampleInScene: 'AI could revolutionise healthcare.' },      { term: 'double-edged sword', type: 'idiom', meaningAr: 'سلاح ذو حدين', meaningEn: '', egyptianEquivalent: 'ليه مميزات وعيوب', exampleInScene: 'Social media is a double-edged sword.' },      { term: 'cutting-edge', type: 'cultural', meaningAr: 'متطور جداً / أحدث تكنولوجيا', meaningEn: '', egyptianEquivalent: 'آخر نقلة', exampleInScene: 'They use cutting-edge tools.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'double-edged sword\' mean?', questionAr: 'معنى double-edged sword؟', options: ['حاجة ليها مميزات وعيوب', 'حاجة خطيرة بس', 'حاجة قديمة', 'حاجة رخيصة'], correctIndex: 0, explanationAr: 'زي السلاح ذو الحدين بالظبط - حاجة نافعة بس ممكن تضر، زي السوشيال ميديا.' }
+    ],
+    speakingLines: [{ en: 'This technology could revolutionise the industry.', arEg: 'التكنولوجيا دي ممكن تعمل ثورة في المجال.' }, { en: 'It is a double-edged sword, though.', arEg: 'بس دي سلاح ذو حدين.' }],
+  },
+  {
+    id: 'podcast-bbc-tech-boxset',
+    movieTitle: '6 Minute English - Internet and Technology English Mega-Class',
+    releaseYear: 2021,
+    director: 'BBC Learning English',
+    genre: 'English Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'One Hour of Tech English',
+    sceneDescription: 'ساعة كاملة من BBC 6 Minute English عن الإنترنت والتكنولوجيا - مفردات + نقاشات بريطانية واضحة.',
+    youtubeId: 'rnBQXmO_StE',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'We are glued to our screens these days.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/rnBQXmO_StE/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'We are glued to our screens these days.', arEg: 'إحنا ملزوقين في الشاشات الأيام دي.', arFusha: 'إحنا ملزوقين في الشاشات الأيام دي.', speaker: 'Presenter', keyWords: [{ word: 'glued to', ipa: '', meaningAr: 'ملزوق في (لازق)', meaningEn: '' }, { word: 'screens', ipa: '', meaningAr: 'شاشات', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'How much time do you spend online?', arEg: 'بتقضي وقت قد إيه على النت؟', arFusha: 'بتقضي وقت قد إيه على النت؟', speaker: 'Presenter', keyWords: [{ word: 'spend', ipa: '', meaningAr: 'يقضي', meaningEn: '' }, { word: 'online', ipa: '', meaningAr: 'على النت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'glued to', type: 'idiom', meaningAr: 'ملزوق في / مش قادر يسيب', meaningEn: '', egyptianEquivalent: 'لازق فيها', exampleInScene: 'Kids are glued to their phones.' },      { term: 'screen time', type: 'collocation', meaningAr: 'وقت الشاشة', meaningEn: '', egyptianEquivalent: 'وقت الموبايل', exampleInScene: 'Reduce your screen time.' },      { term: 'spend time', type: 'collocation', meaningAr: 'يقضي وقت', meaningEn: '', egyptianEquivalent: 'يعدي وقت', exampleInScene: 'I spend time online.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'glued to our screens\' mean?', questionAr: 'معنى glued to our screens؟', options: ['ملزوقين في الشاشات مش قادرين نسيبها', 'بنلزق الشاشات', 'بنكسر الشاشات', 'بننضف الشاشات'], correctIndex: 0, explanationAr: 'glued to تعبير مجازي معناه مش قادر تبعد عن حاجة - زي اللزق.' }
+    ],
+    speakingLines: [{ en: 'We are glued to our screens these days.', arEg: 'إحنا ملزوقين في الشاشات الأيام دي.' }, { en: 'How much time do you spend online?', arEg: 'بتقضي وقت قد إيه على النت؟' }],
+  },
+  {
+    id: 'news-bbc-brain-exercise',
+    movieTitle: 'Exercise Helps the Brain - BBC News Review',
+    releaseYear: 2022,
+    director: 'BBC Learning English',
+    genre: 'News English',
+    cefrLevel: 'B2',
+    sceneTitle: 'News Vocabulary Unpacked',
+    sceneDescription: 'نيوز ريفيو من BBC: عنوان خبري حقيقي عن الرياضة والمخ، وشرح مفرداته الإنجليزية الصعبة.',
+    youtubeId: 'eRqYUTA5JJo',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Exercise gives your brain a boost.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/eRqYUTA5JJo/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Exercise gives your brain a boost.', arEg: 'الرياضة بتدي مخك دفعة.', arFusha: 'الرياضة بتدي مخك دفعة.', speaker: 'Presenter', keyWords: [{ word: 'boost', ipa: '', meaningAr: 'دفعة / تحسين', meaningEn: '' }, { word: 'brain', ipa: '', meaningAr: 'مخ', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Scientists say it sharpens your memory.', arEg: 'العلماء بيقولوا إنها بتقوي الذاكرة.', arFusha: 'العلماء بيقولوا إنها بتقوي الذاكرة.', speaker: 'Presenter', keyWords: [{ word: 'sharpens', ipa: '', meaningAr: 'بتقوي / بتشحذ', meaningEn: '' }, { word: 'memory', ipa: '', meaningAr: 'ذاكرة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'boost', type: 'cultural', meaningAr: 'دفعة / تحسين', meaningEn: '', egyptianEquivalent: 'دفعة', exampleInScene: 'Coffee gives me a boost.' },      { term: 'sharpen', type: 'cultural', meaningAr: 'يقوي / يشحذ', meaningEn: '', egyptianEquivalent: 'يحدّد', exampleInScene: 'Reading sharpens the mind.' },      { term: 'workout', type: 'cultural', meaningAr: 'تمرين رياضي', meaningEn: '', egyptianEquivalent: 'تمرين', exampleInScene: 'A daily workout helps.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'give your brain a boost\' mean?', questionAr: 'معنى give your brain a boost؟', options: ['تدي مخك دفعة وتحسين', 'تصدع دماغك', 'تنام أكتر', 'تاكل أكتر'], correctIndex: 0, explanationAr: 'boost معناها دفعة أو تحسين - الرياضة بتنشط المخ وتحسن أداءه.' }
+    ],
+    speakingLines: [{ en: 'Exercise gives your brain a boost.', arEg: 'الرياضة بتدي مخك دفعة.' }, { en: 'Scientists say it sharpens your memory.', arEg: 'العلماء بيقولوا إنها بتقوي الذاكرة.' }],
+  },
+  {
+    id: 'news-bbc-late-nights',
+    movieTitle: 'Late Nights: Bad for Health? - BBC News Review',
+    releaseYear: 2022,
+    director: 'BBC Learning English',
+    genre: 'News English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Sleep and Health Headlines',
+    sceneDescription: 'عنوان إخباري عن السهر وصحتك - تعلم مفردات الأخبار والصحة بطريقة BBC الممتعة.',
+    youtubeId: 'LXrh2AJa8nU',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Staying up late takes a toll on your body.',
+    actorName: 'Presenter',
+    characterName: 'Presenter',
+    thumbnailUrl: 'https://img.youtube.com/vi/LXrh2AJa8nU/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Staying up late takes a toll on your body.', arEg: 'السهر بيأثر على جسمك مع الوقت.', arFusha: 'السهر بيأثر على جسمك مع الوقت.', speaker: 'Presenter', keyWords: [{ word: 'takes a toll', ipa: '', meaningAr: 'بيأثر سلباً مع الوقت', meaningEn: '' }, { word: 'staying up', ipa: '', meaningAr: 'السهر', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'A good night\'s sleep is vital.', arEg: 'نوم الليل الكويس ضروري جداً.', arFusha: 'نوم الليل الكويس ضروري جداً.', speaker: 'Presenter', keyWords: [{ word: 'vital', ipa: '', meaningAr: 'ضروري', meaningEn: '' }, { word: 'sleep', ipa: '', meaningAr: 'نوم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'take a toll', type: 'idiom', meaningAr: 'يأثر سلباً مع الوقت', meaningEn: '', egyptianEquivalent: 'يجي على الصحة', exampleInScene: 'Stress takes a toll on you.' },      { term: 'stay up', type: 'phrasal-verb', meaningAr: 'يسهر / يفضل صاحي', meaningEn: '', egyptianEquivalent: 'يسهر', exampleInScene: 'I stayed up late watching TV.' },      { term: 'vital', type: 'cultural', meaningAr: 'ضروري / حيوي', meaningEn: '', egyptianEquivalent: 'مهم جداً', exampleInScene: 'Sleep is vital for health.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'take a toll on your body\' mean?', questionAr: 'معنى take a toll on your body؟', options: ['يأثر سلباً على جسمك مع الوقت', 'يقوي جسمك', 'ياخد فلوس منك', 'يعمل رياضة'], correctIndex: 0, explanationAr: 'take a toll تعبير معناه الضرر اللي بيجمع ببطء مع الوقت - زي السهر على الصحة.' }
+    ],
+    speakingLines: [{ en: 'Staying up late takes a toll on your body.', arEg: 'السهر بيأثر على جسمك مع الوقت.' }, { en: 'A good night\'s sleep is vital.', arEg: 'نوم الليل الكويس ضروري جداً.' }],
+  },
+  {
+    id: 'music-queen-learn',
+    movieTitle: 'Learn English With Queen - Learn English With TV Series',
+    releaseYear: 2021,
+    director: 'Learn English With TV Series',
+    genre: 'Music English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Bohemian Rhapsody English Class',
+    sceneDescription: 'اتعلم إنجليزي بأغاني كوين الأسطورية: تحليل كلمات، نطق، وتعابير من أشهر الأغاني.',
+    youtubeId: 'o82oNazflnc',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English With TV Series (Official)',
+    dialogueQuote: 'Is this the real life? Is this just fantasy?',
+    actorName: 'Freddie Mercury',
+    characterName: 'Singer',
+    thumbnailUrl: 'https://img.youtube.com/vi/o82oNazflnc/hqdefault.jpg',
+    category: 'tv_series',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English With TV Series Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Is this the real life? Is this just fantasy?', arEg: 'ده الواقع الحقيقي؟ ولا مجرد خيال؟', arFusha: 'ده الواقع الحقيقي؟ ولا مجرد خيال؟', speaker: 'Singer', keyWords: [{ word: 'real life', ipa: '', meaningAr: 'الواقع', meaningEn: '' }, { word: 'fantasy', ipa: '', meaningAr: 'خيال', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Anyway the wind blows does not really matter to me.', arEg: 'الريح تهب في أي اتجاه، مش فارقة معايا.', arFusha: 'الريح تهب في أي اتجاه، مش فارقة معايا.', speaker: 'Singer', keyWords: [{ word: 'wind blows', ipa: '', meaningAr: 'الريح تهب', meaningEn: '' }, { word: 'matter', ipa: '', meaningAr: 'يفرق / يهم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'fantasy', type: 'cultural', meaningAr: 'خيال', meaningEn: '', egyptianEquivalent: 'خيال', exampleInScene: 'It is just a fantasy.' },      { term: 'real life', type: 'collocation', meaningAr: 'الواقع الحقيقي', meaningEn: '', egyptianEquivalent: 'الحقيقة', exampleInScene: 'This is real life, not a movie.' },      { term: 'does not matter', type: 'collocation', meaningAr: 'مش مهم / مش فارقة', meaningEn: '', egyptianEquivalent: 'مش فارقة', exampleInScene: 'It does not matter to me.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'It does not matter to me\' mean?', questionAr: 'معنى It does not matter to me؟', options: ['مش فارقة معايا', 'مش قادر أفهمها', 'مش عاجباني', 'مش سامعها'], correctIndex: 0, explanationAr: 'does not matter معناها مش فارقة أو مش مهمة - تعبير شائع جداً.' }
+    ],
+    speakingLines: [{ en: 'Is this the real life? Is this just fantasy?', arEg: 'ده الواقع الحقيقي؟ ولا مجرد خيال؟' }, { en: 'It does not really matter to me.', arEg: 'مش فارقة معايا بجد.' }],
+  },
 ];
 
 // Helper to get all videos
