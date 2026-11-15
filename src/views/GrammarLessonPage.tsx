@@ -142,7 +142,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               {rule.level}
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#ff4f9a]/20 text-[#ff8bb9] border border-[#ff4f9a]/30">
-              درس {rule.order} من 16
+              درس {rule.order} من {ALL_GRAMMAR_RULES.length}
             </span>
           </div>
 
