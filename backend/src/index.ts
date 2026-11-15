@@ -58,8 +58,8 @@ async function saveProgress(db: D1Database, userId: number, data: string, now: s
   ).bind(userId, data, now).run()
 }
 
-type UserRow = { id: number; name: string; email: string; created_at: string }
-const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at })
+type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null }
+const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null })
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'henglish-api' }))
 
@@ -86,7 +86,7 @@ app.post('/api/auth/register', async (c) => {
     .bind(name, mail, await hashPassword(password))
     .run()
   const userId = Number(res.meta.last_row_id)
-  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at FROM users WHERE id = ?').bind(userId).first<UserRow>())!
+  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(userId).first<UserRow>())!
 
   // Optional one-time migration: the visitor's localStorage progress blob moves into the account.
   const local = b.progress
@@ -122,14 +122,27 @@ app.post('/api/auth/logout', async (c) => {
 // ---------- me ----------
 app.use('/api/me', auth)
 app.get('/api/me', async (c) => {
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
   return c.json({ user: publicUser(u) })
 })
+const AVATAR_RE = /^(https:\/\/lh3\.googleusercontent\.com\/[\w=\-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/
+const AVATAR_MAX = 41_000 // ~30KB image as a base64 data URL
+
 app.patch('/api/me', async (c) => {
   const b = await json(c)
   const name = str(b, 'name', { min: 2, max: 60 })?.trim()
   if (name) await c.env.DB.prepare('UPDATE users SET name = ? WHERE id = ?').bind(name, c.get('userId')).run()
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  if ('avatar' in b) {
+    const a = b.avatar
+    if (a === null || a === '') {
+      await c.env.DB.prepare('UPDATE users SET avatar = NULL WHERE id = ?').bind(c.get('userId')).run()
+    } else if (typeof a === 'string' && a.length <= AVATAR_MAX && AVATAR_RE.test(a)) {
+      await c.env.DB.prepare('UPDATE users SET avatar = ? WHERE id = ?').bind(a, c.get('userId')).run()
+    } else {
+      throw new ValidationError({ avatar: 'image must be a jpeg/png/webp data URL under 30KB' })
+    }
+  }
+  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
   return c.json({ user: publicUser(u) })
 })
 

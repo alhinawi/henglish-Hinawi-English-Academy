@@ -41,6 +41,7 @@ interface HeaderProps {
   onCloseMobile?: () => void;
   onOpenSearch: () => void;
   onOpenVoiceSettings: () => void;
+  onOpenSettings: () => void;
   onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
   userProfile: UserProfile;
   notifications: AppNotification[];
@@ -63,6 +64,7 @@ export const Header: React.FC<HeaderProps> = ({
   onCloseMobile,
   onOpenSearch,
   onOpenVoiceSettings,
+  onOpenSettings,
   onOpenAuthModal,
   userProfile,
   notifications,
@@ -669,6 +671,20 @@ export const Header: React.FC<HeaderProps> = ({
                       <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
                       <span>تبديل الدور: {userProfile.role === 'student' ? 'المعلم' : 'الطالب'}</span>
                     </span>
+                  </button>
+                )}
+
+                {authSessionType === 'authenticated' && (
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      onOpenSettings();
+                      setProfileOpen(false);
+                    }}
+                    className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <Settings className="w-4 h-4 text-[#41e7ff]" />
+                    <span>الإعدادات</span>
                   </button>
                 )}
 
