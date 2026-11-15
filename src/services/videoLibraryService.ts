@@ -9333,6 +9333,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Does this bus go to the city center?', arEg: 'الأوتوبيس ده بيروح وسط البلد؟' }, { en: 'You need to change lines at the next station.', arEg: 'لازم تغير الخط في المحطة الجاية.' }],
   },
+  {
+    id: 'ielts-part2-fastrack-tips',
+    movieTitle: 'IELTS Speaking Part 2 Sample Answer and Useful Tips - Fastrack IELTS',
+    releaseYear: 2022,
+    director: 'Fastrack IELTS',
+    genre: 'Exam Preparation',
+    cefrLevel: 'B2',
+    sceneTitle: 'Speak for Two Minutes Confidently',
+    sceneDescription: 'نموذج إجابة آيلتس Part 2 مع نصايح: تنظم كلامك وتملى الدقيقتين.',
+    youtubeId: 'DtoCY9lCYug',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Fastrack IELTS (Official)',
+    dialogueQuote: 'I would like to talk about a person who has inspired me a lot.',
+    actorName: 'Asiya',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/DtoCY9lCYug/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Fastrack IELTS Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I would like to talk about a person who has inspired me a lot.', arEg: 'حابب أتكلم عن شخص ألهمني جدًا.', arFusha: 'حابب أتكلم عن شخص ألهمني جدًا.', speaker: 'Instructor', keyWords: [{ word: 'I would like to talk about', ipa: '', meaningAr: 'حابب أتكلم عن', meaningEn: '' }, { word: 'inspired me', ipa: '', meaningAr: 'ألهمني', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'First of all, let me give you some background.', arEg: 'أول حاجة، خليني أديكم خلفية عن الموضوع.', arFusha: 'أول حاجة، خليني أديكم خلفية عن الموضوع.', speaker: 'Instructor', keyWords: [{ word: 'first of all', ipa: '', meaningAr: 'أول حاجة', meaningEn: '' }, { word: 'background', ipa: '', meaningAr: 'خلفية', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'To be honest, I could talk about this for hours.', arEg: 'بصراحة، أقدر أتكلم في الموضوع ده لساعات.', arFusha: 'بصراحة، أقدر أتكلم في الموضوع ده لساعات.', speaker: 'Instructor', keyWords: [{ word: 'to be honest', ipa: '', meaningAr: 'بصراحة', meaningEn: '' }, { word: 'for hours', ipa: '', meaningAr: 'لساعات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'inspire', type: 'cultural', meaningAr: 'يلهم', meaningEn: '', egyptianEquivalent: 'يلهم', exampleInScene: 'My teacher inspired me to learn.' },      { term: 'first of all', type: 'collocation', meaningAr: 'أولًا', meaningEn: '', egyptianEquivalent: 'أول حاجة', exampleInScene: 'First of all, thank you.' },      { term: 'to be honest', type: 'collocation', meaningAr: 'بصراحة', meaningEn: '', egyptianEquivalent: 'بصراحة', exampleInScene: 'To be honest, I was nervous.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you start an IELTS Part 2 answer?', questionAr: 'تبدأ إجابة آيلتس Part 2 إزاي؟', options: ['I would like to talk about...', 'Ummm I do not know', 'This is boring', 'Next question please'], correctIndex: 0, explanationAr: 'I would like to talk about... = الافتتاحية المثالية - بتديك ثبات من أول جملة.' }
+    ],
+    speakingLines: [{ en: 'I would like to talk about a person who has inspired me a lot.', arEg: 'حابب أتكلم عن شخص ألهمني جدًا.' }, { en: 'To be honest, I could talk about this for hours.', arEg: 'بصراحة، أقدر أتكلم في الموضوع ده لساعات.' }],
+  },
+  {
+    id: 'ielts-part2-describe-place',
+    movieTitle: 'IELTS Speaking Part 2 - Describe a Place You Like to Visit - EngZone',
+    releaseYear: 2023,
+    director: 'The EngZone IELTS',
+    genre: 'Exam Preparation',
+    cefrLevel: 'B2',
+    sceneTitle: 'Describe a Place in Detail',
+    sceneDescription: 'كارت آيلتس عن مكان بتحبه: الوصف، الأسباب، والخاتمة القوية.',
+    youtubeId: 'HKtH2oaClj8',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'The EngZone IELTS (Official)',
+    dialogueQuote: 'What I love most about this place is its peaceful atmosphere.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/HKtH2oaClj8/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'The EngZone IELTS Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'What I love most about this place is its peaceful atmosphere.', arEg: 'أكتر حاجة بحبها في المكان ده هي أجواؤه الهادية.', arFusha: 'أكتر حاجة بحبها في المكان ده هي أجواؤه الهادية.', speaker: 'Speaker', keyWords: [{ word: 'what I love most', ipa: '', meaningAr: 'أكتر حاجة بحبها', meaningEn: '' }, { word: 'peaceful atmosphere', ipa: '', meaningAr: 'أجواء هادية', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'It is situated in the heart of the old town.', arEg: 'هو موجود في قلب البلد القديمة.', arFusha: 'هو موجود في قلب البلد القديمة.', speaker: 'Speaker', keyWords: [{ word: 'situated', ipa: '', meaningAr: 'موجود', meaningEn: '' }, { word: 'in the heart of', ipa: '', meaningAr: 'في قلب', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'I try to go there whenever I get the chance.', arEg: 'بحاول أروح هناك كل ما تتاحلي الفرصة.', arFusha: 'بحاول أروح هناك كل ما تتاحلي الفرصة.', speaker: 'Speaker', keyWords: [{ word: 'whenever', ipa: '', meaningAr: 'كل ما', meaningEn: '' }, { word: 'get the chance', ipa: '', meaningAr: 'تتاح الفرصة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'atmosphere', type: 'cultural', meaningAr: 'أجواء', meaningEn: '', egyptianEquivalent: 'أجواء المكان', exampleInScene: 'The cafe has a cozy atmosphere.' },      { term: 'situated', type: 'cultural', meaningAr: 'يقع', meaningEn: '', egyptianEquivalent: 'موجود (مكان)', exampleInScene: 'The hotel is situated by the sea.' },      { term: 'whenever', type: 'cultural', meaningAr: 'كلما', meaningEn: '', egyptianEquivalent: 'كل ما', exampleInScene: 'Call me whenever you need help.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase adds strong detail to a description?', questionAr: 'أنهي عبارة بتضيف تفصيل قوي للوصف؟', options: ['What I love most about this place is...', 'It is a place, I guess', 'There is a place somewhere', 'Places are nice'], correctIndex: 0, explanationAr: 'What I love most about X is Y = تركيبة متقدمة بترفع درجتك في آيلتس فورًا.' }
+    ],
+    speakingLines: [{ en: 'What I love most about this place is its peaceful atmosphere.', arEg: 'أكتر حاجة بحبها في المكان ده هي أجواؤه الهادية.' }, { en: 'I try to go there whenever I get the chance.', arEg: 'بحاول أروح هناك كل ما تتاحلي الفرصة.' }],
+  },
+  {
+    id: 'university-life-english-success',
+    movieTitle: 'How to Talk About University Life in English - English Speaking Success',
+    releaseYear: 2022,
+    director: 'English Speaking Success',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Chat About Your Studies',
+    sceneDescription: 'كلام الجامعة: الكلية، المواد، الامتحانات، والحياة في الحرم.',
+    youtubeId: 'Dr4I3nps3nc',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English Speaking Success (Official)',
+    dialogueQuote: 'I am majoring in computer science at Cairo University.',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/Dr4I3nps3nc/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speaking Success Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I am majoring in computer science at Cairo University.', arEg: 'أنا بدرس علوم الحاسب في جامعة القاهرة.', arFusha: 'أنا بدرس علوم الحاسب في جامعة القاهرة.', speaker: 'Speaker', keyWords: [{ word: 'majoring in', ipa: '', meaningAr: 'متخصص في', meaningEn: '' }, { word: 'computer science', ipa: '', meaningAr: 'علوم الحاسب', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I have three lectures and one lab today.', arEg: 'عندي تلات محاضرات ومعمل النهارده.', arFusha: 'عندي تلات محاضرات ومعمل النهارده.', speaker: 'Speaker', keyWords: [{ word: 'lectures', ipa: '', meaningAr: 'محاضرات', meaningEn: '' }, { word: 'lab', ipa: '', meaningAr: 'معمل', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'I am pulling an all-nighter to finish my assignment.', arEg: 'هسهر طول الليل أخلص التكليف.', arFusha: 'هسهر طول الليل أخلص التكليف.', speaker: 'Speaker', keyWords: [{ word: 'pulling an all-nighter', ipa: '', meaningAr: 'سهران طول الليل', meaningEn: '' }, { word: 'assignment', ipa: '', meaningAr: 'تكليف', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'major in', type: 'phrasal-verb', meaningAr: 'يتخصص في', meaningEn: '', egyptianEquivalent: 'يدرس تخصص', exampleInScene: 'She majors in medicine.' },      { term: 'lecture', type: 'cultural', meaningAr: 'محاضرة', meaningEn: '', egyptianEquivalent: 'محاضرة', exampleInScene: 'The lecture starts at nine.' },      { term: 'deadline', type: 'cultural', meaningAr: 'موعد نهائي', meaningEn: '', egyptianEquivalent: 'آخر ميعاد', exampleInScene: 'The deadline is tomorrow.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you say what you study at university?', questionAr: 'تقول بتدرس إيه في الجامعة إزاي؟', options: ['I am majoring in computer science.', 'I am a computer of science.', 'My study is computers only.', 'University is my science.'], correctIndex: 0, explanationAr: 'Major in = تخصصك الجامعي - الجملة اللي هتقولها مليون مرة في حياتك.' }
+    ],
+    speakingLines: [{ en: 'I am majoring in computer science at Cairo University.', arEg: 'أنا بدرس علوم الحاسب في جامعة القاهرة.' }, { en: 'I have three lectures and one lab today.', arEg: 'عندي تلات محاضرات ومعمل النهارده.' }],
+  },
+  {
+    id: 'describe-people-bbc',
+    movieTitle: 'How to Describe People in English - Easy English Conversations - BBC',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Describe Looks and Character',
+    sceneDescription: 'توصف شكل وشخصية أي حد: طويل، شعره إيه، ولطيف ولا جاد.',
+    youtubeId: '9OzIMC6XCiE',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'She is tall with curly dark hair, and she is really easy-going.',
+    actorName: 'BBC Hosts',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/9OzIMC6XCiE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'She is tall with curly dark hair, and she is really easy-going.', arEg: 'هي طويلة وشعرها كيرلي غامق، وهي سلسة جدًا في التعامل.', arFusha: 'هي طويلة وشعرها كيرلي غامق، وهي سلسة جدًا في التعامل.', speaker: 'Speaker', keyWords: [{ word: 'curly dark hair', ipa: '', meaningAr: 'شعر كيرلي غامق', meaningEn: '' }, { word: 'easy-going', ipa: '', meaningAr: 'سلسة / هادية', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'What does he look like? Is he the one with glasses?', arEg: 'شكله إيه؟ هو اللي لابس نضارة؟', arFusha: 'شكله إيه؟ هو اللي لابس نضارة؟', speaker: 'Speaker', keyWords: [{ word: 'what does he look like', ipa: '', meaningAr: 'شكله إيه', meaningEn: '' }, { word: 'with glasses', ipa: '', meaningAr: 'لابس نضارة', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'He is very hardworking but a bit shy.', arEg: 'هو شاطر جدًا في شغله بس خجول شوية.', arFusha: 'هو شاطر جدًا في شغله بس خجول شوية.', speaker: 'Speaker', keyWords: [{ word: 'hardworking', ipa: '', meaningAr: 'مجتهد في الشغل', meaningEn: '' }, { word: 'a bit shy', ipa: '', meaningAr: 'خجول شوية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'look like', type: 'phrasal-verb', meaningAr: 'يبدو مثل', meaningEn: '', egyptianEquivalent: 'شكله إيه', exampleInScene: 'What does your brother look like?' },      { term: 'easy-going', type: 'cultural', meaningAr: 'سهل المعشر', meaningEn: '', egyptianEquivalent: 'سلس / هادي', exampleInScene: 'My boss is very easy-going.' },      { term: 'hardworking', type: 'cultural', meaningAr: 'مجتهد', meaningEn: '', egyptianEquivalent: 'شاطر في شغله', exampleInScene: 'She is a hardworking student.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which question asks about appearance?', questionAr: 'أنهي سؤال بيسأل عن الشكل؟', options: ['What does he look like?', 'What is he like doing?', 'How is he like?', 'What does he likes?'], correctIndex: 0, explanationAr: 'What does he look like? = الشكل. What is he like? = الشخصية - فرق مهم جدًا.' }
+    ],
+    speakingLines: [{ en: 'She is tall with curly dark hair, and she is really easy-going.', arEg: 'هي طويلة وشعرها كيرلي غامق، وهي سلسة جدًا في التعامل.' }, { en: 'He is very hardworking but a bit shy.', arEg: 'هو شاطر جدًا في شغله بس خجول شوية.' }],
+  },
+  {
+    id: 'appearance-visual-oxford',
+    movieTitle: 'Describing People\'s Appearance in English - Visual Vocabulary - Oxford',
+    releaseYear: 2021,
+    director: 'Oxford Online English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Build the Full Picture',
+    sceneDescription: 'مفردات الشكل بالصور: الطول، الوزن، الشعر، والملامح المميزة.',
+    youtubeId: 'Jq9juAScEdg',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'He is of average height and has a short beard.',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/Jq9juAScEdg/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'He is of average height and has a short beard.', arEg: 'هو متوسط الطول وعنده دقن قصيرة.', arFusha: 'هو متوسط الطول وعنده دقن قصيرة.', speaker: 'Instructor', keyWords: [{ word: 'average height', ipa: '', meaningAr: 'متوسط الطول', meaningEn: '' }, { word: 'short beard', ipa: '', meaningAr: 'دقن قصيرة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'She has shoulder-length blonde hair and green eyes.', arEg: 'عندها شعر أشقر لحد الكتف وعيونها خضرا.', arFusha: 'عندها شعر أشقر لحد الكتف وعيونها خضرا.', speaker: 'Instructor', keyWords: [{ word: 'shoulder-length', ipa: '', meaningAr: 'لحد الكتف', meaningEn: '' }, { word: 'blonde', ipa: '', meaningAr: 'أشقر', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'The man in the photo is bald with a big smile.', arEg: 'الراجل اللي في الصورة أصلع وضحكته كبيرة.', arFusha: 'الراجل اللي في الصورة أصلع وضحكته كبيرة.', speaker: 'Instructor', keyWords: [{ word: 'bald', ipa: '', meaningAr: 'أصلع', meaningEn: '' }, { word: 'big smile', ipa: '', meaningAr: 'ضحكة كبيرة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'average height', type: 'collocation', meaningAr: 'متوسط الطول', meaningEn: '', egyptianEquivalent: 'طول عادي', exampleInScene: 'He is of average height.' },      { term: 'bald', type: 'cultural', meaningAr: 'أصلع', meaningEn: '', egyptianEquivalent: 'أصلع', exampleInScene: 'My grandfather is bald.' },      { term: 'shoulder-length', type: 'cultural', meaningAr: 'بطول الأكتاف', meaningEn: '', egyptianEquivalent: 'لحد الكتف', exampleInScene: 'She has shoulder-length hair.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you describe someone with no hair?', questionAr: 'توصف حد أصلع إزاي؟', options: ['He is bald.', 'He has no head.', 'His hair is empty.', 'He is hair-less man.'], correctIndex: 0, explanationAr: 'Bald = أصلع - كلمة واحدة محترمة بتغني عن أي وصف غلط.' }
+    ],
+    speakingLines: [{ en: 'He is of average height and has a short beard.', arEg: 'هو متوسط الطول وعنده دقن قصيرة.' }, { en: 'She has shoulder-length blonde hair and green eyes.', arEg: 'عندها شعر أشقر لحد الكتف وعيونها خضرا.' }],
+  },
+  {
+    id: 'suggestions-oxford-spoken',
+    movieTitle: 'Making Suggestions in English - Spoken English Lesson - Oxford',
+    releaseYear: 2021,
+    director: 'Oxford Online English',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Suggest Plans and Ideas',
+    sceneDescription: 'تقترح خطط وبرامج: Why don\'t we، How about، وردود القبول والرفض.',
+    youtubeId: '7wT7BzAoyj0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Oxford Online English (Official)',
+    dialogueQuote: 'Why do not we try that new restaurant downtown?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/7wT7BzAoyj0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Oxford Online English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Why do not we try that new restaurant downtown?', arEg: 'ليه ما نجربش المطعم الجديد اللي في وسط البلد؟', arFusha: 'ليه ما نجربش المطعم الجديد اللي في وسط البلد؟', speaker: 'Speaker', keyWords: [{ word: 'why do not we', ipa: '', meaningAr: 'ليه ما...ش', meaningEn: '' }, { word: 'try', ipa: '', meaningAr: 'نجرب', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'How about watching a movie instead?', arEg: 'إيه رأيك نتفرج على فيلم بدل كده؟', arFusha: 'إيه رأيك نتفرج على فيلم بدل كده؟', speaker: 'Speaker', keyWords: [{ word: 'how about', ipa: '', meaningAr: 'إيه رأيك في', meaningEn: '' }, { word: 'instead', ipa: '', meaningAr: 'بدل كده', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'That sounds like a great idea. Let us do it!', arEg: 'ده صوته فكرة جامدة. يلا بينا!', arFusha: 'ده صوته فكرة جامدة. يلا بينا!', speaker: 'Speaker', keyWords: [{ word: 'sounds like', ipa: '', meaningAr: 'صوته', meaningEn: '' }, { word: 'let us do it', ipa: '', meaningAr: 'يلا بينا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'why do not we', type: 'collocation', meaningAr: 'لماذا لا نـ', meaningEn: '', egyptianEquivalent: 'ليه ما نـش', exampleInScene: 'Why do not we go out?' },      { term: 'how about', type: 'collocation', meaningAr: 'ما رأيك في', meaningEn: '', egyptianEquivalent: 'إيه رأيك في', exampleInScene: 'How about some tea?' },      { term: 'that sounds great', type: 'collocation', meaningAr: 'يبدو رائعًا', meaningEn: '', egyptianEquivalent: 'فكرة جامدة', exampleInScene: 'That sounds great to me!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which is a friendly way to accept a suggestion?', questionAr: 'إيه الطريقة الودية لقبول اقتراح؟', options: ['That sounds like a great idea!', 'If you insist', 'Whatever you say', 'I guess so, maybe'], correctIndex: 0, explanationAr: 'That sounds great! = قبول بحماس - بيخلي اللي اقترح مبسوط وبيشجع الاقتراحات الجاية.' }
+    ],
+    speakingLines: [{ en: 'Why do not we try that new restaurant downtown?', arEg: 'ليه ما نجربش المطعم الجديد اللي في وسط البلد؟' }, { en: 'How about watching a movie instead?', arEg: 'إيه رأيك نتفرج على فيلم بدل كده؟' }],
+  },
+  {
+    id: 'favors-politely-jish',
+    movieTitle: 'How to Ask for Favors Politely in English - JISH Podcast',
+    releaseYear: 2023,
+    director: 'JISH - Learn English Podcast',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Ask for Help the Right Way',
+    sceneDescription: 'تطلب معروف بأدب: من صاحبك ولا من زميلك في الشغل.',
+    youtubeId: 'bqnNOmsiOcw',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'JISH - Learn English Podcast (Official)',
+    dialogueQuote: 'Could you do me a favor and pick up my package?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/bqnNOmsiOcw/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'JISH Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Could you do me a favor and pick up my package?', arEg: 'ممكن تعملي معروف وتستلم الطرد بتاعي؟', arFusha: 'ممكن تعملي معروف وتستلم الطرد بتاعي؟', speaker: 'Speaker', keyWords: [{ word: 'do me a favor', ipa: '', meaningAr: 'تعملي معروف', meaningEn: '' }, { word: 'pick up', ipa: '', meaningAr: 'تستلم', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I was wondering if you could help me move this weekend.', arEg: 'كنت بسأل نفسي لو ممكن تساعدني أنقل الأسبوع ده.', arFusha: 'كنت بسأل نفسي لو ممكن تساعدني أنقل الأسبوع ده.', speaker: 'Speaker', keyWords: [{ word: 'I was wondering if', ipa: '', meaningAr: 'كنت أتساءل لو', meaningEn: '' }, { word: 'move', ipa: '', meaningAr: 'أنقل (شقة)', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'I owe you one. Thanks a lot!', arEg: 'بقت ليك عندي معروف. شكرًا جدًا!', arFusha: 'بقت ليك عندي معروف. شكرًا جدًا!', speaker: 'Speaker', keyWords: [{ word: 'I owe you one', ipa: '', meaningAr: 'بقت ليك عندي', meaningEn: '' }, { word: 'thanks a lot', ipa: '', meaningAr: 'شكرًا جدًا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'do me a favor', type: 'collocation', meaningAr: 'افعل لي معروفًا', meaningEn: '', egyptianEquivalent: 'اعملي معروف', exampleInScene: 'Can you do me a favor?' },      { term: 'I was wondering if', type: 'collocation', meaningAr: 'كنت أتساءل إذا', meaningEn: '', egyptianEquivalent: 'كنت بسأل لو', exampleInScene: 'I was wondering if you could help.' },      { term: 'I owe you one', type: 'idiom', meaningAr: 'أنا مدين لك', meaningEn: '', egyptianEquivalent: 'بقت ليك عندي معروف', exampleInScene: 'Thanks! I owe you one.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the softest way to ask for help?', questionAr: 'إيه ألطف طريقة تطلب بيها مساعدة؟', options: ['I was wondering if you could help me.', 'Help me right now.', 'You must help me.', 'It is your job to help.'], correctIndex: 0, explanationAr: 'I was wondering if you could... = ألطف صيغة طلب في الإنجليزي - بتحترم وقت الشخص.' }
+    ],
+    speakingLines: [{ en: 'Could you do me a favor and pick up my package?', arEg: 'ممكن تعملي معروف وتستلم الطرد بتاعي؟' }, { en: 'I owe you one. Thanks a lot!', arEg: 'بقت ليك عندي معروف. شكرًا جدًا!' }],
+  },
+  {
+    id: 'ask-favour-british-council',
+    movieTitle: 'How to Ask for a Favour in English - British Council',
+    releaseYear: 2021,
+    director: 'British Council',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Request and Respond',
+    sceneDescription: 'المجلس الثقافي البريطاني: تطلب خدمة وترد على طلبات الناس.',
+    youtubeId: 'hO98Bjn87KM',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'British Council (Official)',
+    dialogueQuote: 'Would you mind covering my shift on Saturday?',
+    actorName: 'Host',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/hO98Bjn87KM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'British Council Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Would you mind covering my shift on Saturday?', arEg: 'ممكن تغطي الوردية بتاعتي يوم السبت؟', arFusha: 'ممكن تغطي الوردية بتاعتي يوم السبت؟', speaker: 'Speaker', keyWords: [{ word: 'would you mind', ipa: '', meaningAr: 'ممكن (صيغة أدب)', meaningEn: '' }, { word: 'covering my shift', ipa: '', meaningAr: 'تغطي ورديتي', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'No problem at all. Happy to help!', arEg: 'ولا مشكلة خالص. تحت أمرك!', arFusha: 'ولا مشكلة خالص. تحت أمرك!', speaker: 'Speaker', keyWords: [{ word: 'no problem at all', ipa: '', meaningAr: 'ولا مشكلة خالص', meaningEn: '' }, { word: 'happy to help', ipa: '', meaningAr: 'مبسوط أساعد', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'I am sorry, but I will not be able to make it.', arEg: 'متأسف، بس مش هقدر أعملها المرة دي.', arFusha: 'متأسف، بس مش هقدر أعملها المرة دي.', speaker: 'Speaker', keyWords: [{ word: 'I am sorry but', ipa: '', meaningAr: 'متأسف بس', meaningEn: '' }, { word: 'will not be able to', ipa: '', meaningAr: 'مش هقدر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'would you mind', type: 'collocation', meaningAr: 'هل تمانع', meaningEn: '', egyptianEquivalent: 'ممكن (صيغة أدب عالية)', exampleInScene: 'Would you mind opening the window?' },      { term: 'cover a shift', type: 'collocation', meaningAr: 'تغطية وردية', meaningEn: '', egyptianEquivalent: 'يغطي وردية', exampleInScene: 'Can you cover my shift?' },      { term: 'no problem at all', type: 'collocation', meaningAr: 'لا مشكلة إطلاقًا', meaningEn: '', egyptianEquivalent: 'ولا مشكلة خالص', exampleInScene: 'No problem at all!' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'Would you mind covering my shift?\' mean?', questionAr: 'يعني إيه Would you mind covering my shift؟', options: ['ممكن تشتغل مكاني في الوردية؟', 'انت زعلان مني؟', 'هتستقيل من الشغل؟', 'عايز تغير مكانك؟'], correctIndex: 0, explanationAr: 'Would you mind + ing = أرقى صيغة طلب - ولازم الفعل بعدها يكون بـ ing.' }
+    ],
+    speakingLines: [{ en: 'Would you mind covering my shift on Saturday?', arEg: 'ممكن تغطي الوردية بتاعتي يوم السبت؟' }, { en: 'No problem at all. Happy to help!', arEg: 'ولا مشكلة خالص. تحت أمرك!' }],
+  },
+  {
+    id: 'pharmacy-real-life-speakeasy',
+    movieTitle: 'Real Life Pharmacy Conversation - Easy English Speaking',
+    releaseYear: 2023,
+    director: 'SpeakEasy Learn English Fast',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Buy Medicine at the Pharmacy',
+    sceneDescription: 'حوار صيدلية حقيقي: توصف الوجع، تسأل على الدوا، وتفهم الجرعة.',
+    youtubeId: '4GUuV2fCLno',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'SpeakEasy Learn English Fast (Official)',
+    dialogueQuote: 'Do you have anything for a sore throat?',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/4GUuV2fCLno/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'SpeakEasy Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'Do you have anything for a sore throat?', arEg: 'عندكم حاجة لوجع الزور؟', arFusha: 'عندكم حاجة لوجع الزور؟', speaker: 'Customer', keyWords: [{ word: 'anything for', ipa: '', meaningAr: 'حاجة لـ', meaningEn: '' }, { word: 'sore throat', ipa: '', meaningAr: 'وجع زور', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'Take one tablet three times a day with water.', arEg: 'خد حبة تلات مرات في اليوم مع ميه.', arFusha: 'خد حبة تلات مرات في اليوم مع ميه.', speaker: 'Pharmacist', keyWords: [{ word: 'tablet', ipa: '', meaningAr: 'حبة / قرص', meaningEn: '' }, { word: 'three times a day', ipa: '', meaningAr: 'تلات مرات في اليوم', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'If the pain does not go away, see a doctor.', arEg: 'لو الوجع مراحش، شوف دكتور.', arFusha: 'لو الوجع مراحش، شوف دكتور.', speaker: 'Pharmacist', keyWords: [{ word: 'go away', ipa: '', meaningAr: 'يروح / يختفي', meaningEn: '' }, { word: 'see a doctor', ipa: '', meaningAr: 'شوف دكتور', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'sore throat', type: 'collocation', meaningAr: 'التهاب حلق', meaningEn: '', egyptianEquivalent: 'وجع زور', exampleInScene: 'I have a sore throat.' },      { term: 'tablet', type: 'cultural', meaningAr: 'قرص دواء', meaningEn: '', egyptianEquivalent: 'حبة دوا', exampleInScene: 'Take two tablets daily.' },      { term: 'side effects', type: 'collocation', meaningAr: 'آثار جانبية', meaningEn: '', egyptianEquivalent: 'أعراض جانبية', exampleInScene: 'This medicine has no side effects.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask for medicine for a pain?', questionAr: 'تطلب دوا لوجع إزاي؟', options: ['Do you have anything for a sore throat?', 'Give me drugs now', 'I need the strongest pill', 'Where is the hospital?'], correctIndex: 0, explanationAr: 'Do you have anything for... = أشيك طريقة تطلب بيها دوا من غير روشتة.' }
+    ],
+    speakingLines: [{ en: 'Do you have anything for a sore throat?', arEg: 'عندكم حاجة لوجع الزور؟' }, { en: 'Take one tablet three times a day with water.', arEg: 'خد حبة تلات مرات في اليوم مع ميه.' }],
+  },
+  {
+    id: 'pharmacy-everyday-english',
+    movieTitle: 'English Conversation at the Pharmacy - EverydayEnglish',
+    releaseYear: 2023,
+    director: 'EverydayEnglish',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Refill a Prescription',
+    sceneDescription: 'تجيب دوا بروشتة: تسلم الورقة، تسأل عن البديل، وتدفع.',
+    youtubeId: 'ma8Yd25t1fE',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'EverydayEnglish (Official)',
+    dialogueQuote: 'I need to refill my prescription, please.',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/ma8Yd25t1fE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'EverydayEnglish Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I need to refill my prescription, please.', arEg: 'محتاج أجدد الروشتة بتاعتي لو سمحت.', arFusha: 'محتاج أجدد الروشتة بتاعتي لو سمحت.', speaker: 'Customer', keyWords: [{ word: 'refill', ipa: '', meaningAr: 'أجدد', meaningEn: '' }, { word: 'prescription', ipa: '', meaningAr: 'روشتة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'We do not have this brand, but we have the generic one.', arEg: 'مش متوفر البراند ده، بس عندنا البديل بتاعه.', arFusha: 'مش متوفر البراند ده، بس عندنا البديل بتاعه.', speaker: 'Pharmacist', keyWords: [{ word: 'brand', ipa: '', meaningAr: 'براند / ماركة', meaningEn: '' }, { word: 'generic', ipa: '', meaningAr: 'البديل', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Is it covered by my insurance?', arEg: 'ده مغطى بالتأمين بتاعي؟', arFusha: 'ده مغطى بالتأمين بتاعي؟', speaker: 'Customer', keyWords: [{ word: 'covered by', ipa: '', meaningAr: 'مغطى بـ', meaningEn: '' }, { word: 'insurance', ipa: '', meaningAr: 'تأمين', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'refill', type: 'cultural', meaningAr: 'يعيد ملء', meaningEn: '', egyptianEquivalent: 'يجدد (روشتة)', exampleInScene: 'I need to refill my medicine.' },      { term: 'generic', type: 'cultural', meaningAr: 'مكافئ', meaningEn: '', egyptianEquivalent: 'بديل (دوا)', exampleInScene: 'The generic is much cheaper.' },      { term: 'insurance', type: 'cultural', meaningAr: 'تأمين', meaningEn: '', egyptianEquivalent: 'تأمين', exampleInScene: 'Does insurance cover this?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'generic\' medicine?', questionAr: 'يعني إيه دوا generic؟', options: ['البديل الأرخص بنفس المادة الفعالة', 'دوا مستورد بس', 'دوا للأطفال', 'دوا من غير مادة فعالة'], correctIndex: 0, explanationAr: 'Generic = نفس المادة الفعالة بسعر أقل - الصيدلي هيسألك عليه كتير.' }
+    ],
+    speakingLines: [{ en: 'I need to refill my prescription, please.', arEg: 'محتاج أجدد الروشتة بتاعتي لو سمحت.' }, { en: 'Is it covered by my insurance?', arEg: 'ده مغطى بالتأمين بتاعي؟' }],
+  },
 ];
 
 // Helper to get all videos
