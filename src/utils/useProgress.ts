@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { getHenglishApiToken, apiGetProgress, apiPutProgress } from "../services/henglishApi";
 import {
   UserProgressState,
   AchievementBadge,
@@ -234,6 +235,47 @@ export function useProgress(activeUserId?: string) {
       // Ignore
     }
   }, [notifications]);
+
+  // Henglish Accounts API sync: pull the account's saved progress on login,
+  // then push local changes (debounced). Hydration guard prevents the first
+  // render's local state from overwriting the remote blob before the pull lands.
+  const apiHydratedRef = useRef<string | null>(null);
+  useEffect(() => {
+    const token = getHenglishApiToken();
+    if (!token || !activeUserId || activeUserId.startsWith('guest-') || activeUserId.startsWith('demo-')) {
+      return;
+    }
+    let cancelled = false;
+    (async () => {
+      const remote = await apiGetProgress(token);
+      if (cancelled) return;
+      if (remote && remote.progress && typeof remote.progress === 'object') {
+        setProgress(prev => ({ ...prev, ...remote.progress }));
+      } else {
+        // No remote blob yet (account created before sync existed): upload local.
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) {
+          try { await apiPutProgress(token, JSON.parse(raw)); } catch { /* ignore */ }
+        }
+      }
+      apiHydratedRef.current = activeUserId;
+    })();
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeUserId]);
+
+  useEffect(() => {
+    const token = getHenglishApiToken();
+    if (!token || !activeUserId || activeUserId.startsWith('guest-') || activeUserId.startsWith('demo-')) {
+      return;
+    }
+    if (apiHydratedRef.current !== activeUserId) return;
+    const t = setTimeout(() => {
+      apiPutProgress(token, progress);
+    }, 2000);
+    return () => clearTimeout(t);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [progress, activeUserId]);
 
   // Database Synchronization on authenticated login
   useEffect(() => {

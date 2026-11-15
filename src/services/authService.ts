@@ -1,6 +1,7 @@
 import { getEnvVar } from '../utils/env';
 import { createClient, SupabaseClient, User as SupabaseUser, Session as SupabaseSession } from '@supabase/supabase-js';
 import { UserProfile, CEFRLevel, UserRole } from '../types';
+import { apiRegister, apiLogin, apiLogout, ApiUser } from './henglishApi';
 
 export type { UserProfile, CEFRLevel, UserRole };
 
@@ -276,73 +277,52 @@ export interface SignUpParams {
   role?: UserRole;
 }
 
-export async function signUpUser(params: SignUpParams): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
-  const { email, password, fullName, fullNameAr, username, phone, role = 'student' } = params;
-  const cleanEmail = email.trim().toLowerCase();
-
-  // If Supabase is properly configured, execute real Auth API call
-  if (supabase) {
-    try {
-      const { data, error } = await supabase.auth.signUp({
-        email: cleanEmail,
-        password,
-        options: {
-          data: {
-            full_name: fullName,
-            full_name_ar: fullNameAr || fullName,
-            username: username?.trim().toLowerCase(),
-            phone,
-            role,
-          },
-          emailRedirectTo: typeof window !== 'undefined' ? `${window.location.origin}/#verify-email` : undefined,
-        },
-      });
-
-      if (error) {
-        return { success: false, error: normalizeAuthError(error) };
-      }
-
-      if (data.user) {
-        const isVerified = Boolean(data.user.email_confirmed_at);
-        const profile = mapSupabaseUserToProfile(data.user);
-        const sessionState: AuthSessionState = {
-          type: 'authenticated',
-          user: profile,
-          isLoggedIn: true,
-          isEmailVerified: isVerified,
-          accessToken: data.session?.access_token,
-        };
-        saveAuthSession(sessionState);
-        return { success: true, session: sessionState };
-      }
-    } catch (err: unknown) {
-      return { success: false, error: normalizeAuthError(err) };
-    }
-  }
-
-  // Graceful local development fallback when Supabase credentials have not yet been configured in Vercel
-  const fallbackProfile: UserProfile = {
-    id: `usr-${Date.now()}`,
-    name: fullName,
-    nameAr: fullNameAr || fullName,
-    email: cleanEmail,
+// Maps a Henglish Accounts API user record to the app's UserProfile shape.
+function mapApiUserToProfile(u: ApiUser, role: UserRole = 'student'): UserProfile {
+  return {
+    id: `u-${u.id}`,
+    name: u.name,
+    nameAr: u.name,
+    email: u.email,
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80',
     role,
     currentLevel: 'A1',
     targetLevel: 'B2',
-    xp: 200,
+    xp: 0,
     streakDays: 1,
-    joinedDate: new Date().toISOString().split('T')[0],
+    joinedDate: (u.created_at || new Date().toISOString()).split('T')[0],
   };
+}
 
-  const session: AuthSessionState = {
+export async function signUpUser(params: SignUpParams): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
+  const { email, password, fullName, fullNameAr, username, phone, role = 'student' } = params;
+  const cleanEmail = email.trim().toLowerCase();
+
+  // 1. Henglish Accounts API (Cloudflare Workers + D1) - the production backend.
+  // The visitor's localStorage progress blob migrates into the new account in the same call.
+  let localProgress: unknown = undefined;
+  try {
+    const raw = typeof window !== 'undefined' ? localStorage.getItem('hinawi_english_progress_v2') : null;
+    if (raw) localProgress = JSON.parse(raw);
+  } catch {
+    localProgress = undefined;
+  }
+  const apiResult = await apiRegister({
+    name: (fullNameAr || fullName).trim(),
+    email: cleanEmail,
+    password,
+    ...(localProgress ? { progress: localProgress } : {}),
+  });
+  if (!apiResult.success) return { success: false, error: apiResult.error };
+  const apiSession: AuthSessionState = {
     type: 'authenticated',
-    user: fallbackProfile,
+    user: mapApiUserToProfile(apiResult.user!, role),
     isLoggedIn: true,
-    isEmailVerified: false,
+    isEmailVerified: true,
+    accessToken: apiResult.token,
   };
-  saveAuthSession(session);
-  return { success: true, session };
+  saveAuthSession(apiSession);
+  return { success: true, session: apiSession };
 }
 
 export async function signInUser(
@@ -362,7 +342,25 @@ export async function signInUser(
     return { success: true, session: switchDemoAccount('admin') };
   }
 
-  // 2. Real Supabase Authentication
+  // 2. Henglish Accounts API (Cloudflare Workers + D1) - the production backend
+  if (password) {
+    if (!clean.includes('@')) {
+      return { success: false, error: 'سجّل الدخول بالإيميل بتاعك.' };
+    }
+    const apiResult = await apiLogin(clean, password);
+    if (!apiResult.success) return { success: false, error: apiResult.error };
+    const apiSession: AuthSessionState = {
+      type: 'authenticated',
+      user: mapApiUserToProfile(apiResult.user!),
+      isLoggedIn: true,
+      isEmailVerified: true,
+      accessToken: apiResult.token,
+    };
+    saveAuthSession(apiSession);
+    return { success: true, session: apiSession };
+  }
+
+  // 3. Legacy Supabase Authentication (kept for reference if configured later)
   if (supabase && password) {
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
@@ -405,23 +403,7 @@ export async function signInUser(
     }
   }
 
-  // 3. Resilient fallback when Supabase keys are not configured yet in environment
-  const fallbackProfile: UserProfile = {
-    ...DEMO_PROFILES.student,
-    id: `usr-${Date.now()}`,
-    email: clean,
-    name: clean.split('@')[0],
-    nameAr: clean.split('@')[0],
-  };
-
-  const session: AuthSessionState = {
-    type: 'authenticated',
-    user: fallbackProfile,
-    isLoggedIn: true,
-    isEmailVerified: true,
-  };
-  saveAuthSession(session);
-  return { success: true, session };
+  return { success: false, error: 'خادم الحسابات غير متاح حالياً. حاول مرة تانية.' };
 }
 
 export async function verifyEmailOtp(email: string, token: string): Promise<{ success: boolean; error?: string }> {
@@ -524,6 +506,7 @@ export async function updatePassword(newPassword: string): Promise<{ success: bo
 }
 
 export async function signOutUser(): Promise<void> {
+  await apiLogout();
   if (supabase) {
     try {
       await supabase.auth.signOut();
