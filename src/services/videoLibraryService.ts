@@ -6183,6 +6183,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'What does she look like? She is short and slim.', arEg: 'شكلها إيه؟ هي قصيرة ورفيعة.' }, { en: 'What is she like? She is really outgoing.', arEg: 'شخصيتها إيه؟ هي اجتماعية جداً.' }],
   },
+  {
+    id: 'cafe-ara-pro',
+    movieTitle: 'How to Order Coffee Like a Pro at Any Café - Ara English Channel',
+    releaseYear: 2023,
+    director: 'Ara English Channel',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Coffee Shop Confidence',
+    sceneDescription: 'اطلب قهوتك زي المحترفين: الحجم، النوع، بالحليب ولا بدون - كل تفاصيل الكافيه بالإنجليزي.',
+    youtubeId: 'eEZ6O4w1_hM',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Ara English Channel (Official)',
+    dialogueQuote: 'Can I get a large latte, please?',
+    actorName: 'Customer',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/eEZ6O4w1_hM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Ara English Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Can I get a large latte, please?', arEg: 'ممكن لاتيه كبير، من فضلك؟', arFusha: 'ممكن لاتيه كبير، من فضلك؟', speaker: 'Customer', keyWords: [{ word: 'large', ipa: '', meaningAr: 'كبير', meaningEn: '' }, { word: 'latte', ipa: '', meaningAr: 'لاتيه', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'For here or to go?', arEg: 'هنا ولا تيك أواي؟', arFusha: 'هنا ولا تيك أواي؟', speaker: 'Barista', keyWords: [{ word: 'for here', ipa: '', meaningAr: 'هنا', meaningEn: '' }, { word: 'to go', ipa: '', meaningAr: 'تيك أواي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Can I get...?', type: 'collocation', meaningAr: 'ممكن آخد...؟ (طلب)', meaningEn: '', egyptianEquivalent: 'ممكن', exampleInScene: 'Can I get a tea?' },      { term: 'to go', type: 'collocation', meaningAr: 'تيك أواي / معاك', meaningEn: '', egyptianEquivalent: 'سفري', exampleInScene: 'One coffee to go.' },      { term: 'barista', type: 'cultural', meaningAr: 'باريستا (صانع القهوة)', meaningEn: '', egyptianEquivalent: 'الباريستا', exampleInScene: 'The barista made my latte.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'to go\' mean at a café?', questionAr: 'معنى to go في الكافيه؟', options: ['تاخد الطلب معاك بره', 'تاكل في المكان', 'تلغي الطلب', 'تدفع بعدين'], correctIndex: 0, explanationAr: 'for here or to go يعني هتقعد في المكان ولا تاخد طلبك معاك.' }
+    ],
+    speakingLines: [{ en: 'Can I get a large latte, please?', arEg: 'ممكن لاتيه كبير، من فضلك؟' }, { en: 'For here or to go?', arEg: 'هنا ولا تيك أواي؟' }],
+  },
+  {
+    id: 'cafe-better-talk-beginners',
+    movieTitle: 'Ordering Coffee in English - Easy Café Conversation for Beginners - better talk english',
+    releaseYear: 2023,
+    director: 'better talk english',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Your First Café Order',
+    sceneDescription: 'حوار كافيه سهل للمبتدئين: الطلب، الإضافات، والدفع - جمل قصيرة وبطيئة.',
+    youtubeId: '0vWnfQc_-Qs',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'better talk english (Official)',
+    dialogueQuote: 'Anything else with that?',
+    actorName: 'Barista',
+    characterName: 'Barista',
+    thumbnailUrl: 'https://img.youtube.com/vi/0vWnfQc_-Qs/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'better talk english Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Anything else with that?', arEg: 'أي حاجة تانية معاها؟', arFusha: 'أي حاجة تانية معاها؟', speaker: 'Barista', keyWords: [{ word: 'anything else', ipa: '', meaningAr: 'أي حاجة تانية', meaningEn: '' }, { word: 'with that', ipa: '', meaningAr: 'معاها', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'That is all, thank you.', arEg: 'كده كفاية، شكراً.', arFusha: 'كده كفاية، شكراً.', speaker: 'Customer', keyWords: [{ word: 'that is all', ipa: '', meaningAr: 'كده كفاية / بس كده', meaningEn: '' }, { word: 'thank you', ipa: '', meaningAr: 'شكراً', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'Anything else?', type: 'collocation', meaningAr: 'أي حاجة تانية؟', meaningEn: '', egyptianEquivalent: 'حاجة كمان؟', exampleInScene: 'Anything else for you today?' },      { term: 'That is all', type: 'collocation', meaningAr: 'كده كفاية / بس كده', meaningEn: '', egyptianEquivalent: 'بس كده', exampleInScene: 'That is all, thanks.' },      { term: 'receipt', type: 'cultural', meaningAr: 'إيصال', meaningEn: '', egyptianEquivalent: 'الفاتورة', exampleInScene: 'Here is your receipt.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you say you finished ordering?', questionAr: 'تقول إنك خلصت طلبك إزاي؟', options: ['That is all, thank you', 'I stop now', 'No more food forever', 'Finish me'], correctIndex: 0, explanationAr: 'That is all معناها بس كده / كفاية كده - الرد الطبيعي لما بتخلص طلب.' }
+    ],
+    speakingLines: [{ en: 'Anything else with that?', arEg: 'أي حاجة تانية معاها؟' }, { en: 'That is all, thank you.', arEg: 'كده كفاية، شكراً.' }],
+  },
+  {
+    id: 'emergency-smarter-phrases',
+    movieTitle: 'Emergency English Phrases - Speak Confidently in Real-Life Situations - Learn Smarter',
+    releaseYear: 2023,
+    director: 'Learn Smarter',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'When Every Word Counts',
+    sceneDescription: 'عبارات الطوارئ اللي لازم تحفظها: المستشفى، الضياع، طلب المساعدة - ممكن تنقذك يوم ما.',
+    youtubeId: 'DtothKABPOM',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn Smarter (Official)',
+    dialogueQuote: 'I need help, please call an ambulance.',
+    actorName: 'Teacher',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/DtothKABPOM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn Smarter Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I need help, please call an ambulance.', arEg: 'محتاج مساعدة، اتصلوا بالإسعاف من فضلكم.', arFusha: 'محتاج مساعدة، اتصلوا بالإسعاف من فضلكم.', speaker: 'Speaker', keyWords: [{ word: 'call an ambulance', ipa: '', meaningAr: 'يتصل بالإسعاف', meaningEn: '' }, { word: 'help', ipa: '', meaningAr: 'مساعدة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am lost. Can you help me find this address?', arEg: 'أنا تايه. ممكن تساعدني أوصل للعنوان ده؟', arFusha: 'أنا تايه. ممكن تساعدني أوصل للعنوان ده؟', speaker: 'Speaker', keyWords: [{ word: 'lost', ipa: '', meaningAr: 'تايه', meaningEn: '' }, { word: 'address', ipa: '', meaningAr: 'عنوان', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'call an ambulance', type: 'collocation', meaningAr: 'يتصل بالإسعاف', meaningEn: '', egyptianEquivalent: 'اطلبوا إسعاف', exampleInScene: 'Call an ambulance now!' },      { term: 'I am lost', type: 'collocation', meaningAr: 'أنا تايه', meaningEn: '', egyptianEquivalent: 'ضعت', exampleInScene: 'I am lost in the city.' },      { term: 'emergency', type: 'cultural', meaningAr: 'طوارئ', meaningEn: '', egyptianEquivalent: 'حالة طارئة', exampleInScene: 'In an emergency, call 911.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you say when you cannot find your way?', questionAr: 'تقول إيه لما تتايه؟', options: ['I am lost', 'I am found', 'I am late', 'I am lucky'], correctIndex: 0, explanationAr: 'I am lost معناها أنا تايه - أهم جملة لما تضيع في بلد أجنبية.' }
+    ],
+    speakingLines: [{ en: 'I need help, please call an ambulance.', arEg: 'محتاج مساعدة، اتصلوا بالإسعاف من فضلكم.' }, { en: 'I am lost. Can you help me find this address?', arEg: 'أنا تايه. ممكن تساعدني أوصل للعنوان ده؟' }],
+  },
+  {
+    id: 'emergency-class101-10',
+    movieTitle: '10 Phrases to Help You in an Emergency in English - EnglishClass101',
+    releaseYear: 2020,
+    director: 'EnglishClass101',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Ten Life-Saving Phrases',
+    sceneDescription: 'عشر جمل طوارئ من EnglishClass101: الشرطة، الدكتور، التصريح عن حساسية - احفظهم غيب.',
+    youtubeId: 'SQ8VWMq5tKY',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with EnglishClass101.com (Official)',
+    dialogueQuote: 'I am allergic to peanuts.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/SQ8VWMq5tKY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'EnglishClass101 Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I am allergic to peanuts.', arEg: 'عندي حساسية من الفول السوداني.', arFusha: 'عندي حساسية من الفول السوداني.', speaker: 'Teacher', keyWords: [{ word: 'allergic to', ipa: '', meaningAr: 'عنده حساسية من', meaningEn: '' }, { word: 'peanuts', ipa: '', meaningAr: 'فول سوداني', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Where is the nearest hospital?', arEg: 'فين أقرب مستشفى؟', arFusha: 'فين أقرب مستشفى؟', speaker: 'Teacher', keyWords: [{ word: 'nearest', ipa: '', meaningAr: 'أقرب', meaningEn: '' }, { word: 'hospital', ipa: '', meaningAr: 'مستشفى', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'allergic to', type: 'collocation', meaningAr: 'عنده حساسية من', meaningEn: '', egyptianEquivalent: 'حساسية من', exampleInScene: 'I am allergic to seafood.' },      { term: 'nearest', type: 'cultural', meaningAr: 'أقرب', meaningEn: '', egyptianEquivalent: 'أقرب حاجة', exampleInScene: 'Where is the nearest pharmacy?' },      { term: 'help', type: 'cultural', meaningAr: 'يساعد', meaningEn: '', egyptianEquivalent: 'ساعدني', exampleInScene: 'Help me, please.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Why is \'I am allergic to...\' important?', questionAr: 'ليه جملة I am allergic to مهمة؟', options: ['بتمنع خطر الحساسية في الأكل والدوا', 'بتطلب خصم', 'بتعرف بنفسك', 'بتطلب الواي فاي'], correctIndex: 0, explanationAr: 'جملة الحساسية من أهم الجمل الصحية - ممكن تنقذك في مطعم أو مستشفى.' }
+    ],
+    speakingLines: [{ en: 'I am allergic to peanuts.', arEg: 'عندي حساسية من الفول السوداني.' }, { en: 'Where is the nearest hospital?', arEg: 'فين أقرب مستشفى؟' }],
+  },
+  {
+    id: 'customs-reallife-us',
+    movieTitle: 'U.S. Airport Customs Questions in English - Easy Travel Dialogue - Real Life English',
+    releaseYear: 2023,
+    director: 'Real Life English',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Facing the Customs Officer',
+    sceneDescription: 'أسئلة الجمارك الأمريكية الأشهر: الغرض من الزيارة، مدة الإقامة، مكان السكن - جاوب بثقة.',
+    youtubeId: '5dEkqdSqwbE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Real Life English (Official)',
+    dialogueQuote: 'What is the purpose of your visit?',
+    actorName: 'Officer',
+    characterName: 'Officer',
+    thumbnailUrl: 'https://img.youtube.com/vi/5dEkqdSqwbE/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Real Life English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'What is the purpose of your visit?', arEg: 'إيه الغرض من زيارتك؟', arFusha: 'إيه الغرض من زيارتك؟', speaker: 'Officer', keyWords: [{ word: 'purpose', ipa: '', meaningAr: 'غرض', meaningEn: '' }, { word: 'visit', ipa: '', meaningAr: 'زيارة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am here for tourism for two weeks.', arEg: 'أنا هنا للسياحة لمدة أسبوعين.', arFusha: 'أنا هنا للسياحة لمدة أسبوعين.', speaker: 'Traveler', keyWords: [{ word: 'tourism', ipa: '', meaningAr: 'سياحة', meaningEn: '' }, { word: 'two weeks', ipa: '', meaningAr: 'أسبوعين', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'purpose of visit', type: 'collocation', meaningAr: 'الغرض من الزيارة', meaningEn: '', egyptianEquivalent: 'سبب السفر', exampleInScene: 'State the purpose of your visit.' },      { term: 'tourism', type: 'cultural', meaningAr: 'سياحة', meaningEn: '', egyptianEquivalent: 'سياحة', exampleInScene: 'I am here for tourism.' },      { term: 'declare', type: 'cultural', meaningAr: 'يصرّح (في الجمارك)', meaningEn: '', egyptianEquivalent: 'يصرّح', exampleInScene: 'Do you have anything to declare?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does the officer mean by \'purpose of your visit\'?', questionAr: 'الضابط بيقصد إيه بـ purpose of your visit؟', options: ['سبب سفرك', 'عنوان بيتك', 'رقم طيارتك', 'وزن شنطك'], correctIndex: 0, explanationAr: 'سؤال الجمارك الأساسي: إيه الغرض من زيارتك - سياحة، شغل، دراسة؟' }
+    ],
+    speakingLines: [{ en: 'What is the purpose of your visit?', arEg: 'إيه الغرض من زيارتك؟' }, { en: 'I am here for tourism for two weeks.', arEg: 'أنا هنا للسياحة لمدة أسبوعين.' }],
+  },
+  {
+    id: 'customs-verse-interview',
+    movieTitle: 'Airport Immigration Interview - English Conversation Practice for Travelers - English Verse Academy',
+    releaseYear: 2023,
+    director: 'English Verse Academy',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Immigration Made Easy',
+    sceneDescription: 'تدريب كامل على مقابلة الجوازات: جوازك، تذكرة العودة، وأسئلة الفلوس والإقامة.',
+    youtubeId: 'C7PKHBmejmg',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English Verse Academy (Official)',
+    dialogueQuote: 'Where will you be staying during your trip?',
+    actorName: 'Officer',
+    characterName: 'Officer',
+    thumbnailUrl: 'https://img.youtube.com/vi/C7PKHBmejmg/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Verse Academy Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Where will you be staying during your trip?', arEg: 'هتقيم فين طول رحلتك؟', arFusha: 'هتقيم فين طول رحلتك؟', speaker: 'Officer', keyWords: [{ word: 'staying', ipa: '', meaningAr: 'هتقيم', meaningEn: '' }, { word: 'during your trip', ipa: '', meaningAr: 'طول رحلتك', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Here is my return ticket and hotel booking.', arEg: 'دي تذكرة العودة وحجز الفندق.', arFusha: 'دي تذكرة العودة وحجز الفندق.', speaker: 'Traveler', keyWords: [{ word: 'return ticket', ipa: '', meaningAr: 'تذكرة العودة', meaningEn: '' }, { word: 'hotel booking', ipa: '', meaningAr: 'حجز الفندق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'return ticket', type: 'collocation', meaningAr: 'تذكرة العودة', meaningEn: '', egyptianEquivalent: 'تذكرة الرجوع', exampleInScene: 'Show your return ticket.' },      { term: 'booking', type: 'cultural', meaningAr: 'حجز', meaningEn: '', egyptianEquivalent: 'حجز', exampleInScene: 'My booking is confirmed.' },      { term: 'stay', type: 'cultural', meaningAr: 'يقيم / يسكن مؤقتاً', meaningEn: '', egyptianEquivalent: 'هقيم', exampleInScene: 'I will stay at a hotel.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'return ticket\'?', questionAr: 'يعني إيه return ticket؟', options: ['تذكرة العودة', 'تذكرة الذهاب بس', 'تأشيرة', 'بطاقة صعود'], correctIndex: 0, explanationAr: 'return ticket هي تذكرة الرجوع لبلدك - الجمارك غالباً بتطلبها كدليل إنك هترجع.' }
+    ],
+    speakingLines: [{ en: 'Where will you be staying during your trip?', arEg: 'هتقيم فين طول رحلتك؟' }, { en: 'Here is my return ticket and hotel booking.', arEg: 'دي تذكرة العودة وحجز الفندق.' }],
+  },
+  {
+    id: 'celebrations-bob-class',
+    movieTitle: 'Free English Class! Topic: Celebrations - Bob the Canadian',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Party English',
+    sceneDescription: 'حصة بوب عن الاحتفالات: أعياد الميلاد، التهاني، والمناسبات - كلمات الفرح كلها.',
+    youtubeId: 'Pn3MXGxNWCM',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'Happy birthday! I hope all your wishes come true.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/Pn3MXGxNWCM/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Happy birthday! I hope all your wishes come true.', arEg: 'عيد ميلاد سعيد! يارب كل أمنياتك تتحقق.', arFusha: 'عيد ميلاد سعيد! يارب كل أمنياتك تتحقق.', speaker: 'Bob', keyWords: [{ word: 'wishes come true', ipa: '', meaningAr: 'أمنيات تتحقق', meaningEn: '' }, { word: 'hope', ipa: '', meaningAr: 'يارب / أتمنى', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Congratulations on your graduation!', arEg: 'مبروك التخرج!', arFusha: 'مبروك التخرج!', speaker: 'Bob', keyWords: [{ word: 'congratulations on', ipa: '', meaningAr: 'مبروك على', meaningEn: '' }, { word: 'graduation', ipa: '', meaningAr: 'تخرج', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'congratulations on', type: 'collocation', meaningAr: 'مبروك على', meaningEn: '', egyptianEquivalent: 'ألف مبروك', exampleInScene: 'Congratulations on the new job!' },      { term: 'come true', type: 'phrasal-verb', meaningAr: 'يتحقق (حلم/أمنية)', meaningEn: '', egyptianEquivalent: 'تتحقق', exampleInScene: 'May your dreams come true.' },      { term: 'celebrate', type: 'cultural', meaningAr: 'يحتفل', meaningEn: '', egyptianEquivalent: 'يحتفل', exampleInScene: 'We celebrate every year.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you say when someone graduates?', questionAr: 'تقول إيه لما حد يتخرج؟', options: ['Congratulations on your graduation', 'Happy birthday', 'Good luck tomorrow', 'Sorry to hear that'], correctIndex: 0, explanationAr: 'Congratulations on + المناسبة هي صيغة التهنئة الرسمية والودية.' }
+    ],
+    speakingLines: [{ en: 'Happy birthday! I hope all your wishes come true.', arEg: 'عيد ميلاد سعيد! يارب كل أمنياتك تتحقق.' }, { en: 'Congratulations on your graduation!', arEg: 'مبروك التخرج!' }],
+  },
+  {
+    id: 'celebrations-class101-birthdays',
+    movieTitle: 'Master Everyday English: Birthdays & Celebrations - EnglishClass101',
+    releaseYear: 2021,
+    director: 'EnglishClass101',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Birthday Party Words',
+    sceneDescription: 'مفردات أعياد الميلاد والمناسبات: الهدايا، الكيك، الدعوات - للكلام اليومي.',
+    youtubeId: 'bJ5jGXzfC1o',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with EnglishClass101.com (Official)',
+    dialogueQuote: 'Are you coming to my party on Saturday?',
+    actorName: 'Teacher',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/bJ5jGXzfC1o/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'EnglishClass101 Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Are you coming to my party on Saturday?', arEg: 'جاي حفلتي يوم السبت؟', arFusha: 'جاي حفلتي يوم السبت؟', speaker: 'Host', keyWords: [{ word: 'coming to', ipa: '', meaningAr: 'جاي', meaningEn: '' }, { word: 'party', ipa: '', meaningAr: 'حفلة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Thanks for inviting me! I would not miss it.', arEg: 'شكراً على الدعوة! مستحيل أفوّتها.', arFusha: 'شكراً على الدعوة! مستحيل أفوّتها.', speaker: 'Guest', keyWords: [{ word: 'inviting me', ipa: '', meaningAr: 'دعوتك ليا', meaningEn: '' }, { word: 'miss it', ipa: '', meaningAr: 'أفوّتها', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'invite', type: 'cultural', meaningAr: 'يدعو', meaningEn: '', egyptianEquivalent: 'يعزم', exampleInScene: 'She invited me to dinner.' },      { term: 'I would not miss it', type: 'collocation', meaningAr: 'مستحيل أفوّتها', meaningEn: '', egyptianEquivalent: 'لازم أحضر', exampleInScene: 'The match? I would not miss it!' },      { term: 'gift', type: 'cultural', meaningAr: 'هدية', meaningEn: '', egyptianEquivalent: 'هدية', exampleInScene: 'A birthday gift.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I would not miss it\' mean?', questionAr: 'معنى I would not miss it؟', options: ['مستحيل أفوّت المناسبة', 'مش هروح', 'هنسى الميعاد', 'هتأخر'], correctIndex: 0, explanationAr: 'الجملة دي بتعبر عن حماس للحضور - مستحيل أفوّتها.' }
+    ],
+    speakingLines: [{ en: 'Are you coming to my party on Saturday?', arEg: 'جاي حفلتي يوم السبت؟' }, { en: 'Thanks for inviting me! I would not miss it.', arEg: 'شكراً على الدعوة! مستحيل أفوّتها.' }],
+  },
+  {
+    id: 'time-etb-telling',
+    movieTitle: 'Telling the Time in English - ETB Education',
+    releaseYear: 2020,
+    director: 'ETB Education',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'What Time Is It?',
+    sceneDescription: 'قراءة الساعة بالإنجليزي: o\'clock, half past, quarter to - الأساس اللي محدش بيعلمه صح.',
+    youtubeId: 'WLAZpKY-9Ks',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'ETB Education (Official)',
+    dialogueQuote: 'It is half past nine.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/WLAZpKY-9Ks/hqdefault.jpg',
+    category: 'english_for_beginners',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'ETB Education Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'It is half past nine.', arEg: 'الساعة تسعة ونص.', arFusha: 'الساعة تسعة ونص.', speaker: 'Teacher', keyWords: [{ word: 'half past', ipa: '', meaningAr: 'ونص', meaningEn: '' }, { word: 'nine', ipa: '', meaningAr: 'تسعة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'It is a quarter to five.', arEg: 'الساعة خمسة إلا ربع.', arFusha: 'الساعة خمسة إلا ربع.', speaker: 'Teacher', keyWords: [{ word: 'a quarter to', ipa: '', meaningAr: 'إلا ربع', meaningEn: '' }, { word: 'five', ipa: '', meaningAr: 'خمسة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'half past', type: 'collocation', meaningAr: 'ونص (الساعة)', meaningEn: '', egyptianEquivalent: 'والنص', exampleInScene: 'Half past seven.' },      { term: 'a quarter to', type: 'collocation', meaningAr: 'إلا ربع', meaningEn: '', egyptianEquivalent: 'إلا ربع', exampleInScene: 'A quarter to eight.' },      { term: 'a quarter past', type: 'collocation', meaningAr: 'والربع', meaningEn: '', egyptianEquivalent: 'والربع', exampleInScene: 'A quarter past ten.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What time is \'a quarter to five\'?', questionAr: 'يعني إيه a quarter to five؟', options: ['خمسة إلا ربع', 'خمسة وربع', 'أربعة ونص', 'خمسة بالظبط'], correctIndex: 0, explanationAr: 'a quarter to five يعني الساعة خمسة إلا ربع (4:45) - to معناها للوقت الجاي.' }
+    ],
+    speakingLines: [{ en: 'It is half past nine.', arEg: 'الساعة تسعة ونص.' }, { en: 'It is a quarter to five.', arEg: 'الساعة خمسة إلا ربع.' }],
+  },
+  {
+    id: 'celebrations-zeina-b2',
+    movieTitle: 'Master English Vocabulary: Celebrations & Special Occasions - English with Zeina',
+    releaseYear: 2023,
+    director: 'English with Zeina',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Special Occasions Vocabulary',
+    sceneDescription: 'مفردات المناسبات الخاصة للمستوى المتوسط: الخطوبة، الذكرى السنوية، حفلات التقاعد.',
+    youtubeId: '3m1lfXr64CE',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'English with Zeina (Official)',
+    dialogueQuote: 'They are celebrating their wedding anniversary.',
+    actorName: 'Zeina',
+    characterName: 'Zeina',
+    thumbnailUrl: 'https://img.youtube.com/vi/3m1lfXr64CE/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English with Zeina Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'They are celebrating their wedding anniversary.', arEg: 'هما بيحتفلوا بذكرى جوازهم.', arFusha: 'هما بيحتفلوا بذكرى جوازهم.', speaker: 'Zeina', keyWords: [{ word: 'wedding anniversary', ipa: '', meaningAr: 'ذكرى الجواز', meaningEn: '' }, { word: 'celebrating', ipa: '', meaningAr: 'بيحتفلوا', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'She got engaged last month.', arEg: 'هي اتخطبت الشهر اللي فات.', arFusha: 'هي اتخطبت الشهر اللي فات.', speaker: 'Zeina', keyWords: [{ word: 'got engaged', ipa: '', meaningAr: 'اتخطبت', meaningEn: '' }, { word: 'last month', ipa: '', meaningAr: 'الشهر اللي فات', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'anniversary', type: 'cultural', meaningAr: 'ذكرى سنوية', meaningEn: '', egyptianEquivalent: 'الذكرى', exampleInScene: 'Our anniversary is in June.' },      { term: 'get engaged', type: 'collocation', meaningAr: 'يخطب / يتخطب', meaningEn: '', egyptianEquivalent: 'اتخطبت', exampleInScene: 'They got engaged in Paris.' },      { term: 'retirement', type: 'cultural', meaningAr: 'تقاعد', meaningEn: '', egyptianEquivalent: 'المعاش', exampleInScene: 'A retirement party.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'got engaged\' mean?', questionAr: 'معنى got engaged؟', options: ['اتخطبت', 'اتجوزت', 'اتطلقت', 'سافرت'], correctIndex: 0, explanationAr: 'got engaged معناها اتخطبت (قبل الجواز)، أما الجواز نفسه فهو got married.' }
+    ],
+    speakingLines: [{ en: 'They are celebrating their wedding anniversary.', arEg: 'هما بيحتفلوا بذكرى جوازهم.' }, { en: 'She got engaged last month.', arEg: 'هي اتخطبت الشهر اللي فات.' }],
+  },
 ];
 
 // Helper to get all videos
