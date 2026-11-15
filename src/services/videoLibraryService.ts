@@ -5483,6 +5483,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Why did the scarecrow win an award? He was outstanding in his field.', arEg: 'ليه الفزاعة خدت جايزة؟ لأنها كانت متميزة في حقلها. (لعب كلمات)' }, { en: 'This joke is a play on words.', arEg: 'النكتة دي لعب على الكلمات.' }],
   },
+  {
+    id: 'family-7esl-tree',
+    movieTitle: 'Family Tree Chart - Family Words in English - 7ESL',
+    releaseYear: 2020,
+    director: '7ESL Learning English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'The Whole Family Tree',
+    sceneDescription: 'شجرة العيلة كاملة بالإنجليزي: أقارب الدرجة الأولى والتانية - بالصور والنطق.',
+    youtubeId: 'zNLRiB-qOAs',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: '7ESL Learning English (Official)',
+    dialogueQuote: 'My uncle is my father\'s brother.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/zNLRiB-qOAs/hqdefault.jpg',
+    category: 'english_for_beginners',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: '7ESL Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'My uncle is my father\'s brother.', arEg: 'عمي هو أخو بابا.', arFusha: 'عمي هو أخو بابا.', speaker: 'Teacher', keyWords: [{ word: 'uncle', ipa: '', meaningAr: 'عم / خال', meaningEn: '' }, { word: 'brother', ipa: '', meaningAr: 'أخ', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'She is my niece, my sister\'s daughter.', arEg: 'دي بنت أختي - أنا خالها.', arFusha: 'دي بنت أختي - أنا خالها.', speaker: 'Teacher', keyWords: [{ word: 'niece', ipa: '', meaningAr: 'بنت الأخ أو الأخت', meaningEn: '' }, { word: 'daughter', ipa: '', meaningAr: 'بنت', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'uncle', type: 'cultural', meaningAr: 'عم / خال', meaningEn: '', egyptianEquivalent: 'عمي', exampleInScene: 'My uncle lives in Cairo.' },      { term: 'niece', type: 'cultural', meaningAr: 'بنت الأخ أو الأخت', meaningEn: '', egyptianEquivalent: 'بنت أختي', exampleInScene: 'My niece is five.' },      { term: 'nephew', type: 'cultural', meaningAr: 'ابن الأخ أو الأخت', meaningEn: '', egyptianEquivalent: 'ابن أخويا', exampleInScene: 'My nephew plays football.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Who is your \'niece\'?', questionAr: 'مين الـ niece بتاعتك؟', options: ['بنت أخوك أو أختك', 'أختك', 'مرات أخوك', 'بنت عمك'], correctIndex: 0, explanationAr: 'niece هي بنت الأخ أو الأخت، وابنهم اسمه nephew.' }
+    ],
+    speakingLines: [{ en: 'My uncle is my father\'s brother.', arEg: 'عمي هو أخو بابا.' }, { en: 'She is my niece, my sister\'s daughter.', arEg: 'دي بنت أختي - أنا خالها.' }],
+  },
+  {
+    id: 'family-rebecca-pron',
+    movieTitle: 'Improve Your English Pronunciation: FAMILY - engVid',
+    releaseYear: 2019,
+    director: 'engVid',
+    genre: 'Pronunciation Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Say Family Words Right',
+    sceneDescription: 'ريبيكا بتصحح نطق كلمات العيلة: mother, father, daughter - المخارج اللي بتغلط فيها.',
+    youtubeId: 'q52T7aAMmtQ',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Rebecca - engVid (Official)',
+    dialogueQuote: 'Mother is pronounced MUH-ther.',
+    actorName: 'Rebecca',
+    characterName: 'Rebecca',
+    thumbnailUrl: 'https://img.youtube.com/vi/q52T7aAMmtQ/hqdefault.jpg',
+    category: 'pronunciation_practice',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Mother is pronounced MUH-ther.', arEg: 'كلمة mother بتتنطق ماذَر.', arFusha: 'كلمة mother بتتنطق ماذَر.', speaker: 'Rebecca', keyWords: [{ word: 'pronounced', ipa: '', meaningAr: 'بتتنطق', meaningEn: '' }, { word: 'mother', ipa: '', meaningAr: 'ماما', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Daughter sounds like DAW-ter.', arEg: 'كلمة daughter بتتنطق دوتَر.', arFusha: 'كلمة daughter بتتنطق دوتَر.', speaker: 'Rebecca', keyWords: [{ word: 'daughter', ipa: '', meaningAr: 'بنت', meaningEn: '' }, { word: 'sounds like', ipa: '', meaningAr: 'بتتنطق زي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'pronounce', type: 'cultural', meaningAr: 'ينطق', meaningEn: '', egyptianEquivalent: 'انطق', exampleInScene: 'Pronounce it slowly.' },      { term: 'daughter', type: 'cultural', meaningAr: 'بنت (الابنة)', meaningEn: '', egyptianEquivalent: 'بنتي', exampleInScene: 'Their daughter is ten.' },      { term: 'husband', type: 'cultural', meaningAr: 'جوز', meaningEn: '', egyptianEquivalent: 'جوزها', exampleInScene: 'Her husband is a doctor.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How is \'daughter\' pronounced?', questionAr: 'كلمة daughter بتتنطق إزاي؟', options: ['دوتَر', 'دوجتر', 'داهتر', 'دافتر'], correctIndex: 0, explanationAr: 'الـ gh في daughter ساكنة - الكلمة بتتنطق دوتَر.' }
+    ],
+    speakingLines: [{ en: 'Mother is pronounced MUH-ther.', arEg: 'كلمة mother بتتنطق ماذَر.' }, { en: 'Daughter sounds like DAW-ter.', arEg: 'كلمة daughter بتتنطق دوتَر.' }],
+  },
+  {
+    id: 'house-bob-around',
+    movieTitle: 'Let\'s Learn English Around the House and Home - Bob the Canadian',
+    releaseYear: 2020,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Every Room, Every Object',
+    sceneDescription: 'جولة في بيت بوب: أسماء الأوض والأثاث والأدوات - كل حاجة في البيت بالإنجليزي.',
+    youtubeId: 'WHYMGNbPv2U',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'The couch is in the living room.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/WHYMGNbPv2U/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'The couch is in the living room.', arEg: 'الكنبة في الصالون.', arFusha: 'الكنبة في الصالون.', speaker: 'Bob', keyWords: [{ word: 'couch', ipa: '', meaningAr: 'كنبة', meaningEn: '' }, { word: 'living room', ipa: '', meaningAr: 'صالون', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The stairs lead to the bedrooms upstairs.', arEg: 'السلالم بتوصل للأوض اللي فوق.', arFusha: 'السلالم بتوصل للأوض اللي فوق.', speaker: 'Bob', keyWords: [{ word: 'stairs', ipa: '', meaningAr: 'سلالم', meaningEn: '' }, { word: 'upstairs', ipa: '', meaningAr: 'فوق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'couch', type: 'cultural', meaningAr: 'كنبة', meaningEn: '', egyptianEquivalent: 'الأريكة', exampleInScene: 'Sit on the couch.' },      { term: 'living room', type: 'collocation', meaningAr: 'الصالون / أوضة المعيشة', meaningEn: '', egyptianEquivalent: 'الصالة', exampleInScene: 'We watch TV in the living room.' },      { term: 'upstairs', type: 'cultural', meaningAr: 'الدور اللي فوق', meaningEn: '', egyptianEquivalent: 'فوق', exampleInScene: 'The bedrooms are upstairs.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'couch\'?', questionAr: 'يعني إيه couch؟', options: ['كنبة', 'سجادة', 'ترابيزة', 'سرير'], correctIndex: 0, explanationAr: 'couch هي الكنبة اللي في الصالون - اسمها كمان sofa.' }
+    ],
+    speakingLines: [{ en: 'The couch is in the living room.', arEg: 'الكنبة في الصالون.' }, { en: 'The stairs lead to the bedrooms upstairs.', arEg: 'السلالم بتوصل للأوض اللي فوق.' }],
+  },
+  {
+    id: 'house-easy-furniture',
+    movieTitle: 'House Vocabulary - Parts of the House, Rooms, Furniture - Easy English',
+    releaseYear: 2021,
+    director: 'Easy English',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Rooms and Furniture',
+    sceneDescription: 'أجزاء البيت والأثاث بالصور: المطبخ، الحمام، الأنتريه - مفردات أساسية لأي حوار يومي.',
+    youtubeId: 'm27Cck_LGHc',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Easy English (Official)',
+    dialogueQuote: 'The fridge is next to the stove.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/m27Cck_LGHc/hqdefault.jpg',
+    category: 'english_for_beginners',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Easy English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'The fridge is next to the stove.', arEg: 'التلاجة جنب البوتاجاز.', arFusha: 'التلاجة جنب البوتاجاز.', speaker: 'Teacher', keyWords: [{ word: 'fridge', ipa: '', meaningAr: 'تلاجة', meaningEn: '' }, { word: 'next to', ipa: '', meaningAr: 'جنب', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'There is a mirror above the sink.', arEg: 'في مراية فوق الحوض.', arFusha: 'في مراية فوق الحوض.', speaker: 'Teacher', keyWords: [{ word: 'mirror', ipa: '', meaningAr: 'مراية', meaningEn: '' }, { word: 'above', ipa: '', meaningAr: 'فوق', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'fridge', type: 'cultural', meaningAr: 'تلاجة', meaningEn: '', egyptianEquivalent: 'التلاجة', exampleInScene: 'The milk is in the fridge.' },      { term: 'sink', type: 'cultural', meaningAr: 'حوض', meaningEn: '', egyptianEquivalent: 'الحوض', exampleInScene: 'Wash your hands in the sink.' },      { term: 'wardrobe', type: 'cultural', meaningAr: 'دولاب', meaningEn: '', egyptianEquivalent: 'الدولاب', exampleInScene: 'My clothes are in the wardrobe.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Where do you wash your hands?', questionAr: 'بتغسل إيدك فين؟', options: ['في الحوض (sink)', 'في التلاجة', 'على الكنبة', 'في الدولاب'], correctIndex: 0, explanationAr: 'الـ sink هو الحوض - في المطبخ أو الحمام.' }
+    ],
+    speakingLines: [{ en: 'The fridge is next to the stove.', arEg: 'التلاجة جنب البوتاجاز.' }, { en: 'There is a mirror above the sink.', arEg: 'في مراية فوق الحوض.' }],
+  },
+  {
+    id: 'directions-bbc-ep5',
+    movieTitle: 'Asking for and Giving Directions - Easy English Conversations Ep. 5 - BBC',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Lost? Just Ask',
+    sceneDescription: 'تسأل عن الطريق وتوصفه بالإنجليزي: على طول، يمين، شمال، جنب - حلقة BBC العملية.',
+    youtubeId: 'SHXPpsIJTb0',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Excuse me, how do I get to the station?',
+    actorName: 'Tourist',
+    characterName: 'Tourist',
+    thumbnailUrl: 'https://img.youtube.com/vi/SHXPpsIJTb0/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'Excuse me, how do I get to the station?', arEg: 'لو سمحت، أروح المحطة إزاي؟', arFusha: 'لو سمحت، أروح المحطة إزاي؟', speaker: 'Tourist', keyWords: [{ word: 'how do I get to', ipa: '', meaningAr: 'أروح إزاي', meaningEn: '' }, { word: 'station', ipa: '', meaningAr: 'محطة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Go straight on, then turn left at the lights.', arEg: 'امشي على طول، وبعدين خش شمال عند الإشارة.', arFusha: 'امشي على طول، وبعدين خش شمال عند الإشارة.', speaker: 'Local', keyWords: [{ word: 'go straight on', ipa: '', meaningAr: 'امشي على طول', meaningEn: '' }, { word: 'turn left', ipa: '', meaningAr: 'خش شمال', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'How do I get to...?', type: 'collocation', meaningAr: 'أروح... إزاي؟', meaningEn: '', egyptianEquivalent: 'فين طريق', exampleInScene: 'How do I get to the museum?' },      { term: 'go straight on', type: 'collocation', meaningAr: 'امشي على طول', meaningEn: '', egyptianEquivalent: 'كمل على طول', exampleInScene: 'Go straight on for two minutes.' },      { term: 'turn left', type: 'collocation', meaningAr: 'خش شمال', meaningEn: '', egyptianEquivalent: 'خد شمال', exampleInScene: 'Turn left at the corner.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'go straight on\' mean?', questionAr: 'معنى go straight on؟', options: ['امشي على طول', 'ارجع ورا', 'خش يمين', 'اقف مكانك'], correctIndex: 0, explanationAr: 'go straight on معناها كمل ماشي على طول من غير ما تلف.' }
+    ],
+    speakingLines: [{ en: 'Excuse me, how do I get to the station?', arEg: 'لو سمحت، أروح المحطة إزاي؟' }, { en: 'Go straight on, then turn left at the lights.', arEg: 'امشي على طول، وبعدين خش شمال عند الإشارة.' }],
+  },
+  {
+    id: 'gym-bob-learn',
+    movieTitle: 'Let\'s Learn English at the Gym! - Bob the Canadian',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Gym Day with Bob',
+    sceneDescription: 'بوب في الجيم بجد: أسماء الأجهزة والتمارين - dumbbells, treadmill, warm up - من المكان نفسه.',
+    youtubeId: '8vuzfcVel6I',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'I always warm up before lifting weights.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/8vuzfcVel6I/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I always warm up before lifting weights.', arEg: 'دايماً بسخّن قبل ما ألعب حديد.', arFusha: 'دايماً بسخّن قبل ما ألعب حديد.', speaker: 'Bob', keyWords: [{ word: 'warm up', ipa: '', meaningAr: 'يسخّن', meaningEn: '' }, { word: 'lifting weights', ipa: '', meaningAr: 'لعب حديد', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'The treadmill is my favorite machine.', arEg: 'الجهاز المفضل عندي هو المشاية.', arFusha: 'الجهاز المفضل عندي هو المشاية.', speaker: 'Bob', keyWords: [{ word: 'treadmill', ipa: '', meaningAr: 'مشاية كهربائية', meaningEn: '' }, { word: 'machine', ipa: '', meaningAr: 'جهاز', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'warm up', type: 'phrasal-verb', meaningAr: 'يسخّن قبل التمرين', meaningEn: '', egyptianEquivalent: 'يعمل إحماء', exampleInScene: 'Warm up for five minutes.' },      { term: 'lift weights', type: 'collocation', meaningAr: 'يلعب حديد', meaningEn: '', egyptianEquivalent: 'يشيل أوزان', exampleInScene: 'He lifts weights daily.' },      { term: 'treadmill', type: 'cultural', meaningAr: 'مشاية كهربائية', meaningEn: '', egyptianEquivalent: 'جهاز الجري', exampleInScene: 'Run on the treadmill.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What do you do before lifting weights?', questionAr: 'بتعمل إيه قبل ما تلعب حديد؟', options: ['warm up (تسخين)', 'cool down', 'sleep', 'eat'], correctIndex: 0, explanationAr: 'لازم تعمل warm up (تسخين/إحماء) قبل التمرين عشان تحمي عضلاتك.' }
+    ],
+    speakingLines: [{ en: 'I always warm up before lifting weights.', arEg: 'دايماً بسخّن قبل ما ألعب حديد.' }, { en: 'The treadmill is my favorite machine.', arEg: 'الجهاز المفضل عندي هو المشاية.' }],
+  },
+  {
+    id: 'gym-giovana-real',
+    movieTitle: 'Gym Vocabulary - REAL ENGLISH LESSON - English by Giovana',
+    releaseYear: 2023,
+    director: 'English by Giovana',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Real Gym English',
+    sceneDescription: 'جيوفانا بتاخدك الجيم بجد وتعلمك الكلام اللي بتسمعه هناك: sets, reps, personal trainer.',
+    youtubeId: 'pGQzIf0Jgwo',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English by Giovana (Official)',
+    dialogueQuote: 'Do three sets of ten reps.',
+    actorName: 'Giovana',
+    characterName: 'Trainer',
+    thumbnailUrl: 'https://img.youtube.com/vi/pGQzIf0Jgwo/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English by Giovana Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Do three sets of ten reps.', arEg: 'اعمل تلات جولات كل واحدة عشر عدات.', arFusha: 'اعمل تلات جولات كل واحدة عشر عدات.', speaker: 'Trainer', keyWords: [{ word: 'sets', ipa: '', meaningAr: 'جولات', meaningEn: '' }, { word: 'reps', ipa: '', meaningAr: 'عدات', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I need to work on my cardio.', arEg: 'محتاج أركز على الكارديو.', arFusha: 'محتاج أركز على الكارديو.', speaker: 'Giovana', keyWords: [{ word: 'work on', ipa: '', meaningAr: 'يركز على', meaningEn: '' }, { word: 'cardio', ipa: '', meaningAr: 'كارديو', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'set', type: 'cultural', meaningAr: 'جولة تمرين', meaningEn: '', egyptianEquivalent: 'مجموعة عدات', exampleInScene: 'Three sets of squats.' },      { term: 'rep', type: 'cultural', meaningAr: 'عدة', meaningEn: '', egyptianEquivalent: 'عدة', exampleInScene: 'Ten reps per set.' },      { term: 'cardio', type: 'cultural', meaningAr: 'تمارين كارديو', meaningEn: '', egyptianEquivalent: 'كارديو', exampleInScene: 'Cardio burns fat.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'rep\'?', questionAr: 'يعني إيه rep؟', options: ['عدة واحدة من التمرين', 'جهاز رياضي', 'مدرب خاص', 'لبس الجيم'], correctIndex: 0, explanationAr: 'الـ rep هي العدة الواحدة، والـ set هي مجموعة العدات - 3 sets of 10 reps.' }
+    ],
+    speakingLines: [{ en: 'Do three sets of ten reps.', arEg: 'اعمل تلات جولات كل واحدة عشر عدات.' }, { en: 'I need to work on my cardio.', arEg: 'محتاج أركز على الكارديو.' }],
+  },
+  {
+    id: 'gym-adam-exercise',
+    movieTitle: 'English Vocabulary for EXERCISING at the GYM - engVid',
+    releaseYear: 2019,
+    director: 'engVid',
+    genre: 'Vocabulary Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Fitness Words Explained',
+    sceneDescription: 'آدم بيشرح مفردات التمرين بالتفصيل: stretch, muscle, sore - كلام اللياقة الصح.',
+    youtubeId: 'nBR9Rh2-Xww',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Adam\'s English Lessons - engVid (Official)',
+    dialogueQuote: 'My muscles are sore after yesterday\'s workout.',
+    actorName: 'Adam',
+    characterName: 'Adam',
+    thumbnailUrl: 'https://img.youtube.com/vi/nBR9Rh2-Xww/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'My muscles are sore after yesterday\'s workout.', arEg: 'عضلاتي واجعاني بعد تمرين إمبارح.', arFusha: 'عضلاتي واجعاني بعد تمرين إمبارح.', speaker: 'Adam', keyWords: [{ word: 'muscles', ipa: '', meaningAr: 'عضلات', meaningEn: '' }, { word: 'sore', ipa: '', meaningAr: 'واجعاني (ألم عضلي)', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'Remember to stretch after you exercise.', arEg: 'افتكر تعمل إطالة بعد التمرين.', arFusha: 'افتكر تعمل إطالة بعد التمرين.', speaker: 'Adam', keyWords: [{ word: 'stretch', ipa: '', meaningAr: 'يعمل إطالة', meaningEn: '' }, { word: 'exercise', ipa: '', meaningAr: 'تتمرن', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'sore', type: 'cultural', meaningAr: 'واجعان (ألم عضلات)', meaningEn: '', egyptianEquivalent: 'مشدود من التمرين', exampleInScene: 'My legs are sore.' },      { term: 'stretch', type: 'cultural', meaningAr: 'يعمل إطالة', meaningEn: '', egyptianEquivalent: 'يفرد عضلاته', exampleInScene: 'Stretch before running.' },      { term: 'workout', type: 'cultural', meaningAr: 'تمرين', meaningEn: '', egyptianEquivalent: 'حصة تمرين', exampleInScene: 'A good workout today.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'sore muscles\' mean?', questionAr: 'معنى sore muscles؟', options: ['عضلات واجعانا بعد التمرين', 'عضلات قوية', 'عضلات مرتاحة', 'عضلات ممزقة'], correctIndex: 0, explanationAr: 'sore هو وجع العضلات الطبيعي اللي بييجي بعد تمرين جامد - علامة إنك اشتغلت صح.' }
+    ],
+    speakingLines: [{ en: 'My muscles are sore after yesterday\'s workout.', arEg: 'عضلاتي واجعاني بعد تمرين إمبارح.' }, { en: 'Remember to stretch after you exercise.', arEg: 'افتكر تعمل إطالة بعد التمرين.' }],
+  },
+  {
+    id: 'classroom-vanessa-50',
+    movieTitle: '50 English Phrases for the Classroom - Advanced Vocabulary - Speak English With Vanessa',
+    releaseYear: 2021,
+    director: 'Speak English With Vanessa',
+    genre: 'Academic English Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Classroom Confidence',
+    sceneDescription: 'خمسين عبارة للفصل والمحاضرة: تسأل، تعتذر، تشارك رأيك - للطلبة في الجامعات الأجنبية.',
+    youtubeId: 'sVX7imbwEq4',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Vanessa (Official)',
+    dialogueQuote: 'Could you elaborate on that point?',
+    actorName: 'Vanessa',
+    characterName: 'Student',
+    thumbnailUrl: 'https://img.youtube.com/vi/sVX7imbwEq4/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Vanessa Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Could you elaborate on that point?', arEg: 'ممكن تشرح النقطة دي أكتر؟', arFusha: 'ممكن تشرح النقطة دي أكتر؟', speaker: 'Student', keyWords: [{ word: 'elaborate', ipa: '', meaningAr: 'يشرح بالتفصيل', meaningEn: '' }, { word: 'point', ipa: '', meaningAr: 'نقطة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'I would like to add something to the discussion.', arEg: 'حابب أضيف حاجة للنقاش.', arFusha: 'حابب أضيف حاجة للنقاش.', speaker: 'Student', keyWords: [{ word: 'add', ipa: '', meaningAr: 'يضيف', meaningEn: '' }, { word: 'discussion', ipa: '', meaningAr: 'نقاش', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'elaborate', type: 'cultural', meaningAr: 'يشرح بالتفصيل', meaningEn: '', egyptianEquivalent: 'يفصّل أكتر', exampleInScene: 'Could you elaborate?' },      { term: 'participate', type: 'cultural', meaningAr: 'يشارك', meaningEn: '', egyptianEquivalent: 'يشارك', exampleInScene: 'Participate in class discussions.' },      { term: 'hand in', type: 'phrasal-verb', meaningAr: 'يسلّم (واجب)', meaningEn: '', egyptianEquivalent: 'يسلّم', exampleInScene: 'Hand in your essays Friday.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'elaborate\' mean?', questionAr: 'معنى elaborate؟', options: ['يشرح بالتفصيل', 'يختصر', 'يترجم', 'يكتب'], correctIndex: 0, explanationAr: 'elaborate معناها يتكلم عن حاجة بتفصيل أكتر - سؤال ممتاز في المحاضرات.' }
+    ],
+    speakingLines: [{ en: 'Could you elaborate on that point?', arEg: 'ممكن تشرح النقطة دي أكتر؟' }, { en: 'I would like to add something to the discussion.', arEg: 'حابب أضيف حاجة للنقاش.' }],
+  },
+  {
+    id: 'classroom-adam-students',
+    movieTitle: 'Classroom English: Vocabulary & Expressions for Students - engVid',
+    releaseYear: 2019,
+    director: 'engVid',
+    genre: 'Academic English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Survive Any Class in English',
+    sceneDescription: 'آدم بيجهزك للفصل الإنجليزي: إزاي تسأل عن الواجب، تطلب توضيح، وتتكلم مع الدكتور.',
+    youtubeId: 'OqaL1YP0pNM',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Adam\'s English Lessons - engVid (Official)',
+    dialogueQuote: 'What did I miss in the last class?',
+    actorName: 'Adam',
+    characterName: 'Student',
+    thumbnailUrl: 'https://img.youtube.com/vi/OqaL1YP0pNM/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'International',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'engVid Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'What did I miss in the last class?', arEg: 'إيه اللي فاتني في الحصة اللي فاتت؟', arFusha: 'إيه اللي فاتني في الحصة اللي فاتت؟', speaker: 'Student', keyWords: [{ word: 'miss', ipa: '', meaningAr: 'يفوته', meaningEn: '' }, { word: 'last class', ipa: '', meaningAr: 'الحصة اللي فاتت', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'When is the assignment due?', arEg: 'الواجب تسليمه امتى؟', arFusha: 'الواجب تسليمه امتى؟', speaker: 'Student', keyWords: [{ word: 'assignment', ipa: '', meaningAr: 'واجب / تكليف', meaningEn: '' }, { word: 'due', ipa: '', meaningAr: 'ميعاد تسليمه', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'assignment', type: 'cultural', meaningAr: 'واجب / تكليف', meaningEn: '', egyptianEquivalent: 'التكليف', exampleInScene: 'The assignment is hard.' },      { term: 'due', type: 'cultural', meaningAr: 'ميعاد تسليمه', meaningEn: '', egyptianEquivalent: 'مستحق', exampleInScene: 'The essay is due Monday.' },      { term: 'miss a class', type: 'collocation', meaningAr: 'يفوته حصة', meaningEn: '', egyptianEquivalent: 'يغيب عن الحصة', exampleInScene: 'I missed yesterday\'s class.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'When is the assignment due?\' ask?', questionAr: 'سؤال When is the assignment due بيسأل عن إيه؟', options: ['ميعاد تسليم الواجب', 'صعوبة الواجب', 'مكان الحصة', 'اسم الدكتور'], correctIndex: 0, explanationAr: 'due معناها ميعاد الاستحقاق أو التسليم - سؤال أساسي لأي طالب.' }
+    ],
+    speakingLines: [{ en: 'What did I miss in the last class?', arEg: 'إيه اللي فاتني في الحصة اللي فاتت؟' }, { en: 'When is the assignment due?', arEg: 'الواجب تسليمه امتى؟' }],
+  },
 ];
 
 // Helper to get all videos
