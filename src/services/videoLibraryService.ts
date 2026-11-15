@@ -2253,7 +2253,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     isEmbeddable: true,
     contentSource: 'Speak English With Vanessa Official',
     subtitles: [
-      { id: 'sub-1', start: 45, end: 60, en: 'Let\'s practice every sound slowly and clearly.', arEg: 'هنتدرب على كل صوت ببطء وبوضوح.', arFusha: 'هنتدرب على كل صوت ببطء وبوضوح.', speaker: 'Vanessa', keyWords: [{ word: 'practice', ipa: '', meaningAr: 'يتدرب', meaningEn: '' }, { word: 'sound', ipa: '', meaningAr: 'صوت', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'Repeat after me: ship and sheep.', arEg: 'كرر ورايا: ship ﻥ sheep.', arFusha: 'كرر ورايا: ship ﻥ sheep.', speaker: 'Vanessa', keyWords: [{ word: 'repeat', ipa: '', meaningAr: 'يكرر', meaningEn: '' }, { word: 'after me', ipa: '', meaningAr: 'ورايا', meaningEn: '' }] }
+      { id: 'sub-1', start: 45, end: 60, en: 'Let\'s practice every sound slowly and clearly.', arEg: 'هنتدرب على كل صوت ببطء وبوضوح.', arFusha: 'هنتدرب على كل صوت ببطء وبوضوح.', speaker: 'Vanessa', keyWords: [{ word: 'practice', ipa: '', meaningAr: 'يتدرب', meaningEn: '' }, { word: 'sound', ipa: '', meaningAr: 'صوت', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'Repeat after me: ship and sheep.', arEg: 'كرر ورايا: ship و sheep.', arFusha: 'كرر ورايا: ship و sheep.', speaker: 'Vanessa', keyWords: [{ word: 'repeat', ipa: '', meaningAr: 'يكرر', meaningEn: '' }, { word: 'after me', ipa: '', meaningAr: 'ورايا', meaningEn: '' }] }
     ],
     vocabulary: [
       { term: 'practice', type: 'cultural', meaningAr: 'يتدرب', meaningEn: '', egyptianEquivalent: 'يتمرن', exampleInScene: 'Practice every day.' },      { term: 'repeat after me', type: 'cultural', meaningAr: 'كرر ورايا', meaningEn: '', egyptianEquivalent: 'قلدني', exampleInScene: 'Repeat after me: hello.' },      { term: 'clearly', type: 'cultural', meaningAr: 'بوضوح', meaningEn: '', egyptianEquivalent: 'بوضوح', exampleInScene: 'Speak clearly, please.' }
@@ -2261,7 +2261,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     quizzes: [
       { id: 'quiz-1', type: 'comprehension', questionEn: 'What does Vanessa ask you to do?', questionAr: 'فانيسا طالبة منك تعمل إيه؟', options: ['Repeat after her', 'Write an essay', 'Close the video', 'Read a book'], correctIndex: 0, explanationAr: 'قالت Repeat after me يعني كرر ورايا عشان تتدرب على النطق.' }
     ],
-    speakingLines: [{ en: 'Let\'s practice every sound slowly and clearly.', arEg: 'هنتدرب على كل صوت ببطء وبوضوح.' }, { en: 'Repeat after me: ship and sheep.', arEg: 'كرر ورايا: ship ﻥ sheep.' }],
+    speakingLines: [{ en: 'Let\'s practice every sound slowly and clearly.', arEg: 'هنتدرب على كل صوت ببطء وبوضوح.' }, { en: 'Repeat after me: ship and sheep.', arEg: 'كرر ورايا: ship و sheep.' }],
   },
   {
     id: 'pron-american-flap-t',
@@ -2271,7 +2271,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Pronunciation Lesson',
     cefrLevel: 'B2',
     sceneTitle: 'The Disappearing T',
-    sceneDescription: 'ليه الأمريكان بياكلوا حرف الـ T في كلمات زي water ﻥ better - درس قصير يفرق معاك جداً في الفهم والنطق.',
+    sceneDescription: 'ليه الأمريكان بياكلوا حرف الـ T في كلمات زي water و better - درس قصير يفرق معاك جداً في الفهم والنطق.',
     youtubeId: '8bm-YzF5yVE',
     startTime: 15,
     endTime: 135,
@@ -2673,15 +2673,15 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     isEmbeddable: true,
     contentSource: 'Rachel\'s English Official',
     subtitles: [
-      { id: 'sub-1', start: 35, end: 50, en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.', arFusha: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.', speaker: 'Rachel', keyWords: [{ word: 'slow down', ipa: '', meaningAr: 'يهدي / يبطئ', meaningEn: '' }, { word: 'breathe', ipa: '', meaningAr: 'ياخد نفس', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um ﻥ like.', arFusha: 'ابعد عن كلمات الحشو زي um ﻥ like.', speaker: 'Rachel', keyWords: [{ word: 'avoid', ipa: '', meaningAr: 'يبعد عن', meaningEn: '' }, { word: 'filler words', ipa: '', meaningAr: 'كلمات حشو', meaningEn: '' }] }
+      { id: 'sub-1', start: 35, end: 50, en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.', arFusha: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.', speaker: 'Rachel', keyWords: [{ word: 'slow down', ipa: '', meaningAr: 'يهدي / يبطئ', meaningEn: '' }, { word: 'breathe', ipa: '', meaningAr: 'ياخد نفس', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um و like.', arFusha: 'ابعد عن كلمات الحشو زي um و like.', speaker: 'Rachel', keyWords: [{ word: 'avoid', ipa: '', meaningAr: 'يبعد عن', meaningEn: '' }, { word: 'filler words', ipa: '', meaningAr: 'كلمات حشو', meaningEn: '' }] }
     ],
     vocabulary: [
       { term: 'slow down', type: 'phrasal-verb', meaningAr: 'يهدي / يبطئ', meaningEn: '', egyptianEquivalent: 'مش على مهلك', exampleInScene: 'Slow down, no rush.' },      { term: 'avoid', type: 'cultural', meaningAr: 'يبعد عن / يتجنب', meaningEn: '', egyptianEquivalent: 'يبعد عن', exampleInScene: 'Avoid slang in interviews.' },      { term: 'filler words', type: 'collocation', meaningAr: 'كلمات حشو', meaningEn: '', egyptianEquivalent: 'كلام زيادة', exampleInScene: 'Cut the filler words.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you avoid in an interview?', questionAr: 'المفروض تبعد عن إيه في الانترفيو؟', options: ['Filler words', 'Clear answers', 'Breathing', 'Eye contact'], correctIndex: 0, explanationAr: 'كلمات الحشو زي um ﻥ like بتضعف إجابتك - اتكلم بهدوء وبجمل واضحة.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What should you avoid in an interview?', questionAr: 'المفروض تبعد عن إيه في الانترفيو؟', options: ['Filler words', 'Clear answers', 'Breathing', 'Eye contact'], correctIndex: 0, explanationAr: 'كلمات الحشو زي um و like بتضعف إجابتك - اتكلم بهدوء وبجمل واضحة.' }
     ],
-    speakingLines: [{ en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.' }, { en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um ﻥ like.' }],
+    speakingLines: [{ en: 'Don\'t speak too quickly; slow down and breathe.', arEg: 'متتكلمش بسرعة جداً؛ هدي وخد نفسك.' }, { en: 'Avoid filler words like um and like.', arEg: 'ابعد عن كلمات الحشو زي um و like.' }],
   },
   {
     id: 'smalltalk-bob-work-friends',
@@ -3274,7 +3274,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'flat / apartment', type: 'collocation', meaningAr: 'شقة (بريطاني / أمريكي)', meaningEn: '', egyptianEquivalent: 'شقة', exampleInScene: 'I live in a small flat.' },      { term: 'holiday / vacation', type: 'collocation', meaningAr: 'أجازة (بريطاني / أمريكي)', meaningEn: '', egyptianEquivalent: 'أجازة', exampleInScene: 'We\'re on holiday.' },      { term: 'lift / elevator', type: 'collocation', meaningAr: 'أسانسير (بريطاني / أمريكي)', meaningEn: '', egyptianEquivalent: 'أسانسير', exampleInScene: 'Take the lift.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the American word for \'flat\'?', questionAr: 'إيه الكلمة الأمريكية لكلمة flat؟', options: ['apartment', 'house', 'room', 'office'], correctIndex: 0, explanationAr: 'flat بريطانية ﻥ apartment أمريكية - الاتنين معناهم شقة.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the American word for \'flat\'?', questionAr: 'إيه الكلمة الأمريكية لكلمة flat؟', options: ['apartment', 'house', 'room', 'office'], correctIndex: 0, explanationAr: 'flat بريطانية و apartment أمريكية - الاتنين معناهم شقة.' }
     ],
     speakingLines: [{ en: 'In Britain it\'s a flat; in America it\'s an apartment.', arEg: 'في بريطانيا اسمها flat؛ في أمريكا apartment.' }, { en: 'The British say holiday; Americans say vacation.', arEg: 'البريطانيين بيقولوا holiday؛ الأمريكان vacation.' }],
   },
@@ -3496,7 +3496,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Pronunciation Lesson',
     cefrLevel: 'B1',
     sceneTitle: 'Mastering the UH Sound',
-    sceneDescription: 'ريتشل بتشرح صوت الـ UH الأمريكي (زي cup ﻥ love) بحركة الفم واللسان بالتفصيل.',
+    sceneDescription: 'ريتشل بتشرح صوت الـ UH الأمريكي (زي cup و love) بحركة الفم واللسان بالتفصيل.',
     youtubeId: '_63fTgbG-yQ',
     startTime: 30,
     endTime: 150,
@@ -3583,7 +3583,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     isEmbeddable: true,
     contentSource: 'Rachel\'s English Official',
     subtitles: [
-      { id: 'sub-1', start: 35, end: 50, en: 'The tongue pulls back for the R sound.', arEg: 'اللسان بيرجع لورا لصوت الـ R.', arFusha: 'اللسان بيرجع لورا لصوت الـ R.', speaker: 'Rachel', keyWords: [{ word: 'pulls back', ipa: '', meaningAr: 'يرجع لورا', meaningEn: '' }, { word: 'sound', ipa: '', meaningAr: 'صوت', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Practice with the words red and car.', arEg: 'اتمرن على كلمات زي red ﻥ car.', arFusha: 'اتمرن على كلمات زي red ﻥ car.', speaker: 'Rachel', keyWords: [{ word: 'practice', ipa: '', meaningAr: 'اتمرن', meaningEn: '' }, { word: 'words', ipa: '', meaningAr: 'كلمات', meaningEn: '' }] }
+      { id: 'sub-1', start: 35, end: 50, en: 'The tongue pulls back for the R sound.', arEg: 'اللسان بيرجع لورا لصوت الـ R.', arFusha: 'اللسان بيرجع لورا لصوت الـ R.', speaker: 'Rachel', keyWords: [{ word: 'pulls back', ipa: '', meaningAr: 'يرجع لورا', meaningEn: '' }, { word: 'sound', ipa: '', meaningAr: 'صوت', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Practice with the words red and car.', arEg: 'اتمرن على كلمات زي red و car.', arFusha: 'اتمرن على كلمات زي red و car.', speaker: 'Rachel', keyWords: [{ word: 'practice', ipa: '', meaningAr: 'اتمرن', meaningEn: '' }, { word: 'words', ipa: '', meaningAr: 'كلمات', meaningEn: '' }] }
     ],
     vocabulary: [
       { term: 'pull back', type: 'phrasal-verb', meaningAr: 'يرجع لورا', meaningEn: '', egyptianEquivalent: 'يتراجع', exampleInScene: 'Pull your tongue back.' },      { term: 'sound', type: 'cultural', meaningAr: 'صوت', meaningEn: '', egyptianEquivalent: 'صوت', exampleInScene: 'The R sound is hard.' },      { term: 'practice', type: 'cultural', meaningAr: 'يتمرن', meaningEn: '', egyptianEquivalent: 'يتدرب', exampleInScene: 'Practice every day.' }
@@ -3591,7 +3591,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     quizzes: [
       { id: 'quiz-1', type: 'comprehension', questionEn: 'How does the tongue move for the American R?', questionAr: 'اللسان بيتحرك إزاي في الـ R الأمريكية؟', options: ['بيرجع لورا', 'بيطلع برا الفم', 'بيلمس السنان الأمامية', 'بيتحركش'], correctIndex: 0, explanationAr: 'في الـ R الأمريكية اللسان بيرجع لورا ومبيلمسش سقف الفم.' }
     ],
-    speakingLines: [{ en: 'The tongue pulls back for the R sound.', arEg: 'اللسان بيرجع لورا لصوت الـ R.' }, { en: 'Practice with the words red and car.', arEg: 'اتمرن على كلمات زي red ﻥ car.' }],
+    speakingLines: [{ en: 'The tongue pulls back for the R sound.', arEg: 'اللسان بيرجع لورا لصوت الـ R.' }, { en: 'Practice with the words red and car.', arEg: 'اتمرن على كلمات زي red و car.' }],
   },
   {
     id: 'slang-jforrest-2024',
@@ -3659,7 +3659,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'hang out', type: 'phrasal-verb', meaningAr: 'يخرج / يقضي وقت مع حد', meaningEn: '', egyptianEquivalent: 'نقعد سوا', exampleInScene: 'Let\'s hang out Friday.' },      { term: 'gonna', type: 'slang', meaningAr: 'هـ / سوف (عامية)', meaningEn: '', egyptianEquivalent: 'هعمل', exampleInScene: 'I am gonna study.' },      { term: 'crash', type: 'slang', meaningAr: 'ينام (بعد تعب)', meaningEn: '', egyptianEquivalent: 'يبات', exampleInScene: 'I will crash at his place.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'wanna hang out\' mean?', questionAr: 'معنى wanna hang out؟', options: ['عايز نقضي وقت سوا', 'عايز نتعلق', 'عايز تمشي', 'عايز تنام'], correctIndex: 0, explanationAr: 'hang out معناها نقضي وقت مع بعض، ﻥ wanna هي want to بالعامية.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'wanna hang out\' mean?', questionAr: 'معنى wanna hang out؟', options: ['عايز نقضي وقت سوا', 'عايز نتعلق', 'عايز تمشي', 'عايز تنام'], correctIndex: 0, explanationAr: 'hang out معناها نقضي وقت مع بعض، و wanna هي want to بالعامية.' }
     ],
     speakingLines: [{ en: 'Wanna hang out this weekend?', arEg: 'عايز نخرج نهاية الأسبوع ده؟' }, { en: 'I am gonna crash early tonight.', arEg: 'هنام بدري النهارده بالليل.' }],
   },
@@ -5036,7 +5036,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Idioms Lesson',
     cefrLevel: 'B1',
     sceneTitle: 'Animals in English Expressions',
-    sceneDescription: 'إيديومز الحيوانات مع بوب: let the cat out of the bag ﻥ hold your horses - بشرح مبسط وأمثلة.',
+    sceneDescription: 'إيديومز الحيوانات مع بوب: let the cat out of the bag و hold your horses - بشرح مبسط وأمثلة.',
     youtubeId: 'o-RTcdqx98o',
     startTime: 25,
     endTime: 145,
@@ -6074,7 +6074,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'return an item', type: 'collocation', meaningAr: 'يرجّع منتج', meaningEn: '', egyptianEquivalent: 'يرجع الحاجة', exampleInScene: 'Return it within 30 days.' },      { term: 'refund', type: 'cultural', meaningAr: 'استرداد فلوس', meaningEn: '', egyptianEquivalent: 'فلوسي ترجع', exampleInScene: 'Get a full refund.' },      { term: 'exchange', type: 'cultural', meaningAr: 'تبديل', meaningEn: '', egyptianEquivalent: 'تغيير', exampleInScene: 'An exchange is fine too.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between \'refund\' and \'exchange\'?', questionAr: 'الفرق بين refund ﻥ exchange؟', options: ['refund فلوسك ترجع ﻥ exchange تبديل بمنتج تاني', 'الاتنين زي بعض', 'refund تبديل ﻥ exchange فلوس', 'الاتنين خصم'], correctIndex: 0, explanationAr: 'refund معناها فلوسك ترجعلك، أما exchange فبتبدل المنتج بواحد تاني.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between \'refund\' and \'exchange\'?', questionAr: 'الفرق بين refund و exchange؟', options: ['refund فلوسك ترجع و exchange تبديل بمنتج تاني', 'الاتنين زي بعض', 'refund تبديل و exchange فلوس', 'الاتنين خصم'], correctIndex: 0, explanationAr: 'refund معناها فلوسك ترجعلك، أما exchange فبتبدل المنتج بواحد تاني.' }
     ],
     speakingLines: [{ en: 'I would like to return this jacket; it does not fit.', arEg: 'عايز أرجّع الجاكيت ده؛ مش مقاسي.' }, { en: 'Can I get a refund or an exchange?', arEg: 'ممكن أسترد فلوسي ولا أبدّلها؟' }],
   },
@@ -6156,7 +6156,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Daily English Lesson',
     cefrLevel: 'A2',
     sceneTitle: 'What Does She Look Like?',
-    sceneDescription: 'حلقة BBC عن وصف الناس: الفرق بين What is she like ﻥ What does she look like - غلطة شائعة.',
+    sceneDescription: 'حلقة BBC عن وصف الناس: الفرق بين What is she like و What does she look like - غلطة شائعة.',
     youtubeId: '9OzIMC6XCiE',
     startTime: 25,
     endTime: 145,
@@ -6179,7 +6179,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'look like', type: 'phrasal-verb', meaningAr: 'شكله / شكلها', meaningEn: '', egyptianEquivalent: 'باين زي', exampleInScene: 'What does he look like?' },      { term: 'outgoing', type: 'cultural', meaningAr: 'اجتماعي / بيحب الناس', meaningEn: '', egyptianEquivalent: 'اجتماعي', exampleInScene: 'An outgoing person makes friends easily.' },      { term: 'slim', type: 'cultural', meaningAr: 'رفيع', meaningEn: '', egyptianEquivalent: 'رفيعة', exampleInScene: 'She is tall and slim.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between \'What is she like?\' and \'What does she look like?\'', questionAr: 'الفرق بين What is she like ﻥ What does she look like؟', options: ['الأولى عن الشخصية والتانية عن الشكل', 'الاتنين عن الشكل', 'الاتنين عن الشخصية', 'الأولى عن الشكل والتانية عن الشخصية'], correctIndex: 0, explanationAr: 'What is she like بتسأل عن الشخصية، ﻥ What does she look like بتسأل عن الشكل - غلطة شائعة جداً.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between \'What is she like?\' and \'What does she look like?\'', questionAr: 'الفرق بين What is she like و What does she look like؟', options: ['الأولى عن الشخصية والتانية عن الشكل', 'الاتنين عن الشكل', 'الاتنين عن الشخصية', 'الأولى عن الشكل والتانية عن الشخصية'], correctIndex: 0, explanationAr: 'What is she like بتسأل عن الشخصية، و What does she look like بتسأل عن الشكل - غلطة شائعة جداً.' }
     ],
     speakingLines: [{ en: 'What does she look like? She is short and slim.', arEg: 'شكلها إيه؟ هي قصيرة ورفيعة.' }, { en: 'What is she like? She is really outgoing.', arEg: 'شخصيتها إيه؟ هي اجتماعية جداً.' }],
   },
@@ -6996,7 +6996,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'English Podcast',
     cefrLevel: 'A2',
     sceneTitle: 'Future Plans Chat',
-    sceneDescription: 'حوار سهل عن الأحلام والخطط المستقبلية: going to ﻥ want to في سياق طبيعي.',
+    sceneDescription: 'حوار سهل عن الأحلام والخطط المستقبلية: going to و want to في سياق طبيعي.',
     youtubeId: 'PRpzuPpIej0',
     startTime: 20,
     endTime: 140,
@@ -7509,7 +7509,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'break down', type: 'phrasal-verb', meaningAr: 'يحلل', meaningEn: '', egyptianEquivalent: 'يفكك لأجزاء', exampleInScene: 'Let me break down the problem.' },      { term: 'mix up', type: 'phrasal-verb', meaningAr: 'يخلط بين', meaningEn: '', egyptianEquivalent: 'يلخبط بين', exampleInScene: 'I always mix up their names.' },      { term: 'pattern', type: 'cultural', meaningAr: 'نمط', meaningEn: '', egyptianEquivalent: 'قاعدة / نمط', exampleInScene: 'English spelling has patterns.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'mix up\' mean?', questionAr: 'يعني إيه mix up؟', options: ['يلخبط بين حاجتين', 'يخلط مكونات', 'يصلح غلطة', 'ينسى كلمة'], correctIndex: 0, explanationAr: 'Mix up = تلخبط بين حاجتين شبه بعض - زي accept ﻥ except.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'mix up\' mean?', questionAr: 'يعني إيه mix up؟', options: ['يلخبط بين حاجتين', 'يخلط مكونات', 'يصلح غلطة', 'ينسى كلمة'], correctIndex: 0, explanationAr: 'Mix up = تلخبط بين حاجتين شبه بعض - زي accept و except.' }
     ],
     speakingLines: [{ en: 'Let us break down this mistake and fix it step by step.', arEg: 'خلينا نحلل الغلطة دي ونصلحها خطوة بخطوة.' }, { en: 'Many learners mix up these two words.', arEg: 'متعلمين كتير بيلخبطوا بين الكلمتين دول.' }],
   },
@@ -7719,7 +7719,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'chop', type: 'cultural', meaningAr: 'يقطع', meaningEn: '', egyptianEquivalent: 'يفرم / يقطع', exampleInScene: 'Chop the garlic finely.' },      { term: 'boil', type: 'cultural', meaningAr: 'يغلي', meaningEn: '', egyptianEquivalent: 'يغلي', exampleInScene: 'Boil the potatoes for 20 minutes.' },      { term: 'simmer', type: 'cultural', meaningAr: 'يطهو على نار هادئة', meaningEn: '', egyptianEquivalent: 'يستوي على نار هادية', exampleInScene: 'Let the sauce simmer.' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between boil and simmer?', questionAr: 'إيه الفرق بين boil ﻥ simmer؟', options: ['Boil نار عالية بفقاعات ﻥ simmer نار هادية', 'الاتنين نفس الحاجة', 'Boil للحلو بس', 'Simmer أسرع من boil'], correctIndex: 0, explanationAr: 'Boil = غليان قوي بفقاعات، Simmer = نار هادية جدًا - فرق مهم في أي وصفة.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the difference between boil and simmer?', questionAr: 'إيه الفرق بين boil و simmer؟', options: ['Boil نار عالية بفقاعات و simmer نار هادية', 'الاتنين نفس الحاجة', 'Boil للحلو بس', 'Simmer أسرع من boil'], correctIndex: 0, explanationAr: 'Boil = غليان قوي بفقاعات، Simmer = نار هادية جدًا - فرق مهم في أي وصفة.' }
     ],
     speakingLines: [{ en: 'First, chop the onions and fry them gently.', arEg: 'الأول، قطّع البصل وقليه على نار هادية.' }, { en: 'Bring the water to a boil, then add the pasta.', arEg: 'سخن الميه لحد ما تغلي، وبعدين حط المكرونة.' }],
   },
@@ -8279,7 +8279,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
       { term: 'how often', type: 'collocation', meaningAr: 'كم مرة', meaningEn: '', egyptianEquivalent: 'كل قد إيه', exampleInScene: 'How often do you exercise?' },      { term: 'twice a week', type: 'collocation', meaningAr: 'مرتين في الأسبوع', meaningEn: '', egyptianEquivalent: 'مرتين في الأسبوع', exampleInScene: 'I go to the gym twice a week.' },      { term: 'support', type: 'cultural', meaningAr: 'يشجع', meaningEn: '', egyptianEquivalent: 'يشجع فريق', exampleInScene: 'Which team do you support?' }
     ],
     quizzes: [
-      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about frequency?', questionAr: 'تسأل عن عدد المرات إزاي؟', options: ['How often do you play?', 'How long do you play?', 'How much do you play?', 'How far do you play?'], correctIndex: 0, explanationAr: 'How often = كل قد إيه / كام مرة - للتكرار. How long للمدة، ﻥHow much للكمية.' }
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you ask about frequency?', questionAr: 'تسأل عن عدد المرات إزاي؟', options: ['How often do you play?', 'How long do you play?', 'How much do you play?', 'How far do you play?'], correctIndex: 0, explanationAr: 'How often = كل قد إيه / كام مرة - للتكرار. How long للمدة، وHow much للكمية.' }
     ],
     speakingLines: [{ en: 'How often do you play football?', arEg: 'بتلعب كورة كام مرة؟' }, { en: 'I play twice a week with my friends.', arEg: 'بلعب مرتين في الأسبوع مع صحابي.' }],
   },
@@ -9166,7 +9166,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Speaking Practice',
     cefrLevel: 'B1',
     sceneTitle: 'Choose the Right Sorry',
-    sceneDescription: 'الفرق بين Sorry ﻥ My Bad ﻥ Excuse Me ﻥ Pardon - وامتى تستخدم كل واحدة.',
+    sceneDescription: 'الفرق بين Sorry و My Bad و Excuse Me و Pardon - وامتى تستخدم كل واحدة.',
     youtubeId: 'S05qOis4T4I',
     startTime: 25,
     endTime: 145,
@@ -10181,7 +10181,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Grammar Practice',
     cefrLevel: 'B1',
     sceneTitle: 'Talk About Tomorrow',
-    sceneDescription: 'الفرق بين will ﻥ going to والمضارع المستمر للمستقبل - بمحادثات حقيقية.',
+    sceneDescription: 'الفرق بين will و going to والمضارع المستمر للمستقبل - بمحادثات حقيقية.',
     youtubeId: '79Yxp84s0KI',
     startTime: 25,
     endTime: 145,
@@ -10846,7 +10846,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     genre: 'Pronunciation Training',
     cefrLevel: 'B2',
     sceneTitle: 'Fast English with Friends',
-    sceneDescription: 'تدريب على الإنجليزي السريع المتصل: النطق المختزل زي whaddaya ﻥ gonna من مشاهد فريندز.',
+    sceneDescription: 'تدريب على الإنجليزي السريع المتصل: النطق المختزل زي whaddaya و gonna من مشاهد فريندز.',
     youtubeId: 'WTAd2AOfTWo',
     startTime: 60,
     endTime: 180,
@@ -11003,7 +11003,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     isEmbeddable: true,
     contentSource: 'Real English With Real Teachers Official',
     subtitles: [
-      { id: 'sub-1', start: 25, end: 40, en: 'What do you reckon makes someone sound like a native?', arEg: 'إنت شايف إيه اللي يخلي حد صوته زي أهل اللغة؟', arFusha: 'إنت شايف إيه اللي يخلي حد صوته زي أهل اللغة؟', speaker: 'Interviewer', keyWords: [{ word: 'What do you reckon', ipa: '', meaningAr: 'إنت شايف إيه', meaningEn: '' }, { word: 'sound like a native', ipa: '', meaningAr: 'صوته زي أهل اللغة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I think it\'s the little words, innit. Like \'cheers\' and \'mate\'.', arEg: 'أعتقد إنها الكلمات الصغيرة، صح؟ زي cheers ﻥ mate.', arFusha: 'أعتقد إنها الكلمات الصغيرة، صح؟ زي cheers ﻥ mate.', speaker: 'Londoner 1', keyWords: [{ word: 'innit', ipa: '', meaningAr: 'صح؟ / مش كده؟', meaningEn: '' }, { word: 'mate', ipa: '', meaningAr: 'صاحبي', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Cheers can mean thanks or goodbye.', arEg: 'Cheers ممكن تعني شكراً أو مع السلامة.', arFusha: 'Cheers ممكن تعني شكراً أو مع السلامة.', speaker: 'Interviewer', keyWords: [{ word: 'mean', ipa: '', meaningAr: 'تعني', meaningEn: '' }, { word: 'goodbye', ipa: '', meaningAr: 'مع السلامة', meaningEn: '' }] },      { id: 'sub-4', start: 100, end: 115, en: 'I reckon rhythm matters more than perfect grammar.', arEg: 'أنا شايف إن الإيقاع أهم من القواعد المظبوطة.', arFusha: 'أنا شايف إن الإيقاع أهم من القواعد المظبوطة.', speaker: 'Londoner 2', keyWords: [{ word: 'rhythm', ipa: '', meaningAr: 'الإيقاع', meaningEn: '' }, { word: 'matters more than', ipa: '', meaningAr: 'أهم من', meaningEn: '' }] },      { id: 'sub-5', start: 125, end: 140, en: 'Don\'t be afraid to make mistakes. That\'s how you learn.', arEg: 'متخفش تعمل غلطات. كده بتتعلم.', arFusha: 'متخفش تعمل غلطات. كده بتتعلم.', speaker: 'Londoner 3', keyWords: [{ word: 'make mistakes', ipa: '', meaningAr: 'تعمل غلطات', meaningEn: '' }, { word: 'That\'s how you learn', ipa: '', meaningAr: 'كده بتتعلم', meaningEn: '' }] }
+      { id: 'sub-1', start: 25, end: 40, en: 'What do you reckon makes someone sound like a native?', arEg: 'إنت شايف إيه اللي يخلي حد صوته زي أهل اللغة؟', arFusha: 'إنت شايف إيه اللي يخلي حد صوته زي أهل اللغة؟', speaker: 'Interviewer', keyWords: [{ word: 'What do you reckon', ipa: '', meaningAr: 'إنت شايف إيه', meaningEn: '' }, { word: 'sound like a native', ipa: '', meaningAr: 'صوته زي أهل اللغة', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I think it\'s the little words, innit. Like \'cheers\' and \'mate\'.', arEg: 'أعتقد إنها الكلمات الصغيرة، صح؟ زي cheers و mate.', arFusha: 'أعتقد إنها الكلمات الصغيرة، صح؟ زي cheers و mate.', speaker: 'Londoner 1', keyWords: [{ word: 'innit', ipa: '', meaningAr: 'صح؟ / مش كده؟', meaningEn: '' }, { word: 'mate', ipa: '', meaningAr: 'صاحبي', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'Cheers can mean thanks or goodbye.', arEg: 'Cheers ممكن تعني شكراً أو مع السلامة.', arFusha: 'Cheers ممكن تعني شكراً أو مع السلامة.', speaker: 'Interviewer', keyWords: [{ word: 'mean', ipa: '', meaningAr: 'تعني', meaningEn: '' }, { word: 'goodbye', ipa: '', meaningAr: 'مع السلامة', meaningEn: '' }] },      { id: 'sub-4', start: 100, end: 115, en: 'I reckon rhythm matters more than perfect grammar.', arEg: 'أنا شايف إن الإيقاع أهم من القواعد المظبوطة.', arFusha: 'أنا شايف إن الإيقاع أهم من القواعد المظبوطة.', speaker: 'Londoner 2', keyWords: [{ word: 'rhythm', ipa: '', meaningAr: 'الإيقاع', meaningEn: '' }, { word: 'matters more than', ipa: '', meaningAr: 'أهم من', meaningEn: '' }] },      { id: 'sub-5', start: 125, end: 140, en: 'Don\'t be afraid to make mistakes. That\'s how you learn.', arEg: 'متخفش تعمل غلطات. كده بتتعلم.', arFusha: 'متخفش تعمل غلطات. كده بتتعلم.', speaker: 'Londoner 3', keyWords: [{ word: 'make mistakes', ipa: '', meaningAr: 'تعمل غلطات', meaningEn: '' }, { word: 'That\'s how you learn', ipa: '', meaningAr: 'كده بتتعلم', meaningEn: '' }] }
     ],
     vocabulary: [
       { term: 'innit', type: 'slang', meaningAr: 'صح؟ / مش كده؟ (لندنية)', meaningEn: '', egyptianEquivalent: 'مش كده؟', exampleInScene: 'It\'s hot today, innit?' },      { term: 'mate', type: 'slang', meaningAr: 'صاحبي (بريطانية)', meaningEn: '', egyptianEquivalent: 'يا معلم', exampleInScene: 'Alright, mate?' },      { term: 'cheers', type: 'slang', meaningAr: 'شكراً / مع السلامة (بريطانية)', meaningEn: '', egyptianEquivalent: 'متشكر يا معلم', exampleInScene: 'Cheers for the help!' },      { term: 'What do you reckon', type: 'collocation', meaningAr: 'إنت شايف إيه؟', meaningEn: '', egyptianEquivalent: 'إيه رأيك؟', exampleInScene: 'What do you reckon about the plan?' },      { term: 'make mistakes', type: 'collocation', meaningAr: 'يعمل غلطات', meaningEn: '', egyptianEquivalent: 'يغلط', exampleInScene: 'Don\'t be afraid to make mistakes.' }

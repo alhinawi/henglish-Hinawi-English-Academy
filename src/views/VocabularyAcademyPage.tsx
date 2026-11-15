@@ -164,7 +164,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            منظومة معجمية شاملة تضم <strong>5,000 كلمة إنجليزية مختارة بعناية</strong> ﻥ <strong>10,000 تعبير ومصطلح اصطلاحي</strong> بالنطق المزدوج الأمريكي (US) والبريطاني (UK) والرموز الصوتية IPA، مع تصنيف دقيق لمستويات CEFR (A1-C2) وأكثر من 50 مجالاً حيوياً.
+            منظومة معجمية شاملة تضم <strong>5,000 كلمة إنجليزية مختارة بعناية</strong> و <strong>10,000 تعبير ومصطلح اصطلاحي</strong> بالنطق المزدوج الأمريكي (US) والبريطاني (UK) والرموز الصوتية IPA، مع تصنيف دقيق لمستويات CEFR (A1-C2) وأكثر من 50 مجالاً حيوياً.
           </p>
 
           {/* Mode Switcher Tabs */}

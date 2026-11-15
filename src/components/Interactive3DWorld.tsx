@@ -889,16 +889,19 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
           {/* Proximity Interaction Prompt with NPC */}
           {nearbyNpc && (
-            <div className="absolute bottom-24 left-1/2 -translate-x-1/2 z-20 animate-in fade-in slide-in-from-bottom-4 duration-200">
+            <div className="absolute bottom-36 sm:bottom-24 left-1/2 -translate-x-1/2 z-20 w-[calc(100%-2rem)] max-w-[22rem]">
               <button
                 onClick={() => {
                   playSound('click');
                   handleSelectLoc(nearbyNpc);
                 }}
-                className="px-6 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#0c0b20] font-black text-sm shadow-2xl hover:scale-105 transition-all flex items-center gap-2.5 cursor-pointer ring-4 ring-white/20"
+                className="w-full px-4 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#0c0b20] font-black text-sm shadow-2xl flex items-center justify-center gap-2.5 cursor-pointer ring-4 ring-white/20"
               >
-                <MessageSquare className="w-4 h-4 fill-current" />
-                <span>اضغط E أو انقر للتحدث مع <bdi>{nearbyNpc.npcName}</bdi></span>
+                <MessageSquare className="w-4 h-4 fill-current shrink-0" />
+                <span className="text-center leading-relaxed">
+                  <span className="block whitespace-nowrap">تحدث مع <bdi>{nearbyNpc.npcName}</bdi></span>
+                  <span className="block text-xs font-semibold">اضغط E أو انقر</span>
+                </span>
               </button>
             </div>
           )}
