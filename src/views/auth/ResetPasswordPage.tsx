@@ -71,7 +71,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
 
         <h2 className="text-2xl font-bold text-white mb-2">تعيين كلمة مرور جديدة</h2>
         <p className="text-xs text-slate-400 leading-relaxed mb-6">
-          أدخل كلمة مرور قوية وجديدة لحسابك في أكاديمية هناوي.
+          أدخل كلمة مرور قوية وجديدة لحسابك في Henglish Academy.
         </p>
 
         {feedback && (

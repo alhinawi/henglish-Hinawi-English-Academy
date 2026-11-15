@@ -369,7 +369,7 @@ export const VOCABULARY_ACADEMY_WORDS: VocabWord[] = [
     exampleEn:
       "Henglish Academy provides a comprehensive curriculum from A1 to C2.",
     exampleAr:
-      "تقدم أكاديمية هناوي إنجلش منهجاً شاملاً يمتد من مستوى A1 وحتى C2.",
+      "تقدم Henglish Academy منهجاً شاملاً يمتد من مستوى A1 وحتى C2.",
     highlight: "comprehensive",
     collocation: "comprehensive curriculum",
   },

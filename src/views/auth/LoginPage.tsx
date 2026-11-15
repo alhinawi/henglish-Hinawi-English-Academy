@@ -64,7 +64,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           </div>
         </div>
         <h1 className="text-3xl font-extrabold text-white tracking-tight">
-          أكاديمية <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">هناوي</span> للغة الإنجليزية
+          Henglish <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Academy</span>
         </h1>
         <p className="text-sm text-slate-400 mt-2">
           منصة تعليمية متكاملة مدعومة بالذكاء الاصطناعي والمحاكاة التفاعلية
@@ -180,7 +180,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
 
       {/* Footer info */}
       <div className="mt-8 text-center text-xs text-slate-500">
-        جميع الحقوق محفوظة © {new Date().getFullYear()} أكاديمية هناوي للغة الإنجليزية
+        جميع الحقوق محفوظة © {new Date().getFullYear()} Henglish Academy
       </div>
     </div>
   );

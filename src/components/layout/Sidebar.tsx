@@ -363,7 +363,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           <button
             onClick={() => handleNav('dashboard')}
             className={`flex items-center ${isCollapsed ? 'justify-center' : 'gap-3'} cursor-pointer focus:outline-none`}
-            title="الرئيسية هناوي إنجلش"
+            title="الرئيسية هنجلش"
           >
             <Logo size="sm" showText={!isCollapsed} />
           </button>
@@ -560,7 +560,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {!isCollapsed && (
           <div className="p-3 border-t border-white/10 text-center">
             <div className="text-[11px] text-[#b9b6d5]">
-              <span className="font-bold text-white">Hinawi Academy</span> • v2.0
+              <span className="font-bold text-white">Henglish Academy</span> • v2.0
             </div>
             <div className="text-[10px] text-[#b9b6d5]/70">منهج الإنجليزية التفاعلي المعتمد</div>
           </div>

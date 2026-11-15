@@ -178,7 +178,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
 
             <h1 className="text-2xl sm:text-4xl 2xl:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-              {userProfile.id === 'guest-learner' ? 'أهلاً بك في أكاديمية هناوي' : `أهلاً بك مجدداً، ${userProfile.nameAr}`}!
+              {userProfile.id === 'guest-learner' ? 'أهلاً بك في Henglish Academy' : `أهلاً بك مجدداً، ${userProfile.nameAr}`}!
             </h1>
 
             <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed max-w-2xl">
@@ -543,7 +543,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2.5">
               <GraduationCap className="w-6 h-6 text-[#ffd166]" />
-              أكاديميات هناوي المتخصصة (Curriculum Hubs)
+              أقسام Henglish Academy المتخصصة (Curriculum Hubs)
             </h2>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
               منهج تعليمي شامل يغطي كافة المهارات من المبتدئ (A1) وحتى الاحتراف

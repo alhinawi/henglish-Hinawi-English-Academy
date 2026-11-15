@@ -259,7 +259,7 @@ export function getStudentLearningSummary(context?: StudentPlatformContext): {
   }
 
   return {
-    studentName: profile?.nameAr || profile?.name || 'طالب أكاديمية هناوي',
+    studentName: profile?.nameAr || profile?.name || 'طالب Henglish Academy',
     currentLevel: (profile?.currentLevel as CEFRLevel) || 'B1',
     targetLevel: (profile?.targetLevel as CEFRLevel) || 'C1',
     xp: profile?.xp ?? 1450,
