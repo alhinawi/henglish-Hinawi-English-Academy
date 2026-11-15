@@ -27,7 +27,10 @@ import {
   Settings,
   Lock,
   LogIn,
-  UserPlus
+  UserPlus,
+  ChevronLeft,
+  Mail,
+  KeyRound
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -42,7 +45,7 @@ interface HeaderProps {
   onOpenSearch: () => void;
   onOpenVoiceSettings: () => void;
   onOpenSettings: () => void;
-  onOpenAuthModal: (tab?: 'login' | 'register' | 'demo' | 'migrate') => void;
+  onOpenAuthModal: (tab?: 'login' | 'register' | 'migrate') => void;
   userProfile: UserProfile;
   notifications: AppNotification[];
   unreadCount: number;
@@ -51,7 +54,7 @@ interface HeaderProps {
   onToggleRole: () => void;
   onResetProgress: () => void;
   onSignOut?: () => void;
-  authSessionType?: 'guest' | 'demo' | 'authenticated';
+  authSessionType?: 'guest' | 'authenticated';
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -76,6 +79,7 @@ export const Header: React.FC<HeaderProps> = ({
   onSignOut,
   authSessionType = 'authenticated',
 }) => {
+  const [accountOpen, setAccountOpen] = useState(false);
   const [grammarMenuOpen, setGrammarMenuOpen] = useState(false);
   const [skillsMenuOpen, setSkillsMenuOpen] = useState(false);
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
@@ -624,21 +628,21 @@ export const Header: React.FC<HeaderProps> = ({
 
               {/* Action Buttons */}
               <div className="space-y-1.5 text-xs">
-                {/* Auth Modal Trigger / Account Switch */}
-                {authSessionType !== 'guest' && (
+                {/* Account Management */}
+                {authSessionType === 'authenticated' && (
                   <button
                     onClick={() => {
                       playSound('click');
-                      onOpenAuthModal('login');
+                      setAccountOpen(true);
                       setProfileOpen(false);
                     }}
                     className="w-full flex items-center justify-between p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border border-[#ffd166]/40 text-white font-bold hover:brightness-110 cursor-pointer"
                   >
                     <span className="flex items-center gap-2">
                       <User className="w-4 h-4 text-[#ffd166]" />
-                      <span>إدارة الحساب ووضع الـ Demo</span>
+                      <span>إدارة الحساب</span>
                     </span>
-                    <span className="text-[10px] text-[#ffd166] font-black underline">تغيير</span>
+                    <ChevronLeft className="w-4 h-4 text-[#ffd166]" />
                   </button>
                 )}
 
@@ -707,6 +711,107 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
       </div>
+
+      {/* Account Management Modal */}
+      <AnimatePresence>
+        {accountOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-md"
+            onClick={() => setAccountOpen(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 12 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 12 }}
+              onClick={e => e.stopPropagation()}
+              className="w-full max-w-md rounded-3xl bg-linear-to-b from-[#1b1939] to-[#0c0b20] border border-white/20 p-6 sm:p-7 space-y-5 shadow-2xl text-right"
+            >
+              <div className="flex items-start justify-between">
+                <div className="flex items-center gap-3.5">
+                  <img
+                    src={userProfile.avatar}
+                    alt={userProfile.name}
+                    className="w-14 h-14 rounded-2xl object-cover border-2 border-[#ffd166] shadow-lg"
+                  />
+                  <div className="min-w-0">
+                    <h3 className="text-lg font-black text-white truncate">{userProfile.nameAr}</h3>
+                    <div className="text-xs text-[#b9b6d5] truncate flex items-center gap-1.5 mt-0.5">
+                      <Mail className="w-3 h-3 shrink-0" />
+                      <span dir="ltr">{userProfile.email}</span>
+                    </div>
+                    <div className="inline-flex items-center gap-1 mt-1.5 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
+                      {userProfile.role === 'teacher' ? 'رتبة: معلم وأستاذ' : 'مستوى CEFR: ' + userProfile.currentLevel}
+                    </div>
+                  </div>
+                </div>
+                <button
+                  onClick={() => setAccountOpen(false)}
+                  className="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer shrink-0"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+
+              <div className="h-px bg-white/10" />
+
+              <div className="space-y-2 text-xs">
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setAccountOpen(false);
+                    onNavigate('my-learning');
+                  }}
+                  className="w-full flex items-center gap-2.5 p-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold transition-colors cursor-pointer"
+                >
+                  <BookOpen className="w-4 h-4 text-[#41e7ff]" />
+                  <span>مساحتي الخاصة والتقدّم</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setAccountOpen(false);
+                    onNavigate('certificates');
+                  }}
+                  className="w-full flex items-center gap-2.5 p-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold transition-colors cursor-pointer"
+                >
+                  <Award className="w-4 h-4 text-[#ffd166]" />
+                  <span>شهاداتي المعتمدة</span>
+                </button>
+
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setAccountOpen(false);
+                    onNavigate('forgot-password');
+                  }}
+                  className="w-full flex items-center gap-2.5 p-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold transition-colors cursor-pointer"
+                >
+                  <KeyRound className="w-4 h-4 text-[#c4ff55]" />
+                  <span>تغيير كلمة المرور</span>
+                </button>
+
+                {onSignOut && (
+                  <button
+                    onClick={() => {
+                      playSound('click');
+                      setAccountOpen(false);
+                      onSignOut();
+                    }}
+                    className="w-full flex items-center gap-2.5 p-3 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20 font-bold"
+                  >
+                    <LogOut className="w-4 h-4 text-red-400" />
+                    <span>تسجيل الخروج من الحساب</span>
+                  </button>
+                )}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
     </header>
   );

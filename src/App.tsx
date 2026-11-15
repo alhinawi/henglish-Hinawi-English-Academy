@@ -59,7 +59,6 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     role: authRole, 
     isAuthenticated, 
     isGuest, 
-    isDemo, 
     logout,
     refreshSession,
   } = useAuth();
@@ -72,7 +71,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   const [isVoiceModalOpen, setIsVoiceModalOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [authModalTab, setAuthModalTab] = useState<'login' | 'register' | 'demo' | 'migrate'>('login');
+  const [authModalTab, setAuthModalTab] = useState<'login' | 'register' | 'migrate'>('login');
 
   const {
     progress,
@@ -153,8 +152,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
       }
 
       // 2. Unauthenticated root route handler:
-      // If user is neither authenticated, nor demo, nor active guest: default to 'login'
-      const hasActiveSession = session.isLoggedIn || session.type === 'guest' || session.type === 'demo';
+      // If user is neither authenticated nor an active guest: default to 'login'
+      const hasActiveSession = session.isLoggedIn || session.type === 'guest';
       if (!hasActiveSession && (!hash || hash === 'dashboard' || hash === 'home')) {
         setCurrentRoute('login');
         return;
@@ -266,7 +265,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const openAuthWithTab = (tab: 'login' | 'register' | 'demo' | 'migrate' = 'login') => {
+  const openAuthWithTab = (tab: 'login' | 'register' | 'migrate' = 'login') => {
     setAuthModalTab(tab);
     setIsAuthModalOpen(true);
   };
@@ -563,7 +562,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         onClose={() => setIsVoiceModalOpen(false)}
       />
 
-      {/* Authentication, Guest Mode & Demo Accounts Modal */}
+      {/* Authentication & Guest Mode Modal */}
       <AuthModal
         isOpen={isAuthModalOpen}
         onClose={() => setIsAuthModalOpen(false)}
