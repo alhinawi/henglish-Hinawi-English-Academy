@@ -4,7 +4,7 @@ import { VOCABULARY_ACADEMY_WORDS as WORDS } from '../../../data/vocabularyAcade
 import { VERB_TOOLKIT } from '../../../data/verbsData';
 import { MISTAKE_HUNTER_CASES } from '../../../data/gamesData';
 import { ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
-import { shuffle, normalizeTyped } from '../arcadeContent';
+import { shuffle, normalizeTyped, uniqueAcademyWords } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound, speakEnglish } from '../../../utils/audio';
 
@@ -28,7 +28,7 @@ function seeded<T>(items: T[], seed: number): T[] {
   return a;
 }
 export function buildWordLabRounds(id: LabId, level: string): Round[] {
-  const pool = WORDS.filter(w => (level === 'all' || w.level === level) && /^[a-z]{3,16}$/i.test(w.word) && (!['context-clues', 'daily-quest', 'boss-run'].includes(id) || new RegExp(`\\b${w.word}\\b`, 'i').test(w.exampleEn)));
+  const pool = uniqueAcademyWords(WORDS.filter(w => (level === 'all' || w.level === level) && /^[a-z]{3,16}$/i.test(w.word) && (!['context-clues', 'daily-quest', 'boss-run'].includes(id) || new RegExp(`\\b${w.word}\\b`, 'i').test(w.exampleEn))));
   const today = new Date();
   const seed = Number(`${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`);
   const arrange = <T,>(arr: T[]) => id === 'daily-quest' ? seeded(arr, seed) : shuffle(arr);
