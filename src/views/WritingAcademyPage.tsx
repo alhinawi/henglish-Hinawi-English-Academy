@@ -1,3 +1,4 @@
+import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
@@ -17,9 +18,10 @@ import {
 
 interface WritingAcademyPageProps {
   onNavigate: (route: PageRoute) => void;
+  onCompleteActivity?: (id: string, score: number, total: number) => void;
 }
 
-export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNavigate }) => {
+export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNavigate, onCompleteActivity }) => {
   const [activeTemplate, setActiveTemplate] = useState<'formal_email' | 'job_application' | 'essay' | 'complaint' | 'university'>('formal_email');
   const [userInput, setUserInput] = useState('');
   const [submissionFeedback, setSubmissionFeedback] = useState<string | null>(null);
@@ -32,10 +34,10 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       subject: 'Subject: Project Milestone Delivery & Q4 Roadmap',
       salutation: 'Dear Mr. Henderson,',
       body: 'I am writing to provide you with a comprehensive status update regarding our software migration. By next Friday at 5:00 PM, our engineering team will have deployed all microservices to the production cluster. Furthermore, we will have conducted rigorous performance testing before your scheduled board meeting.',
-      signoff: 'Best regards,\nAhmed Elhinawi\nLead Systems Architect',
+      signoff: 'Best regards,\nSample Applicant\nLead Systems Architect',
       keyRules: [
         'ابدأ دائماً بتحية رسمية مثل Dear Mr. / Ms. متبوعة باسم العائلة.',
-        'استخدم روابط متقدمة مثل Furthermore, However, Consequently بدلاً من and/but.',
+        'اختر الرابط الذي يعبر عن العلاقة الصحيحة؛ and، وكذلك but مناسبان أيضا عند الحاجة.',
         'استخدم المستقبل التام للتأكيد على التزامك بالمواعيد: will have deployed.',
       ],
     },
@@ -44,7 +46,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       subject: 'Application for Senior Software Engineering Specialist',
       salutation: 'Dear Hiring Committee,',
       body: 'I am writing to express my strong enthusiasm for the Senior Software Engineering position. Throughout my career, I have delivered resilient cloud applications. By the completion of this quarter, I will have led three international software initiatives, demonstrating my ability to deliver results under tight deadlines.',
-      signoff: 'Sincerely,\nAhmed Elhinawi',
+      signoff: 'Sincerely,\nSample Applicant',
       keyRules: [
         'حدد اسم الوظيفة بوضوح في السطر الأول.',
         'اربط إنجازاتك السابقة بالأهداف المستقبلية للشركة.',
@@ -55,7 +57,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       title: 'Academic Opinion Essay • مقال رأي أكاديمي',
       subject: 'The Impact of Renewable Energy on Future Cities',
       salutation: 'Thesis & Topic Sentence:',
-      body: 'In recent decades, urban centers have increasingly embraced sustainable infrastructure. Environmental economists predict that by 2040, major metropolitan cities will have transitioned to ninety percent clean solar and wind energy. This monumental shift will significantly alleviate climate hazards.',
+      body: 'This imagined city is considering a transition to renewable energy. If the plan succeeds, the city will have expanded its use of solar and wind power by the end of the project. However, the proposal must address cost, reliability and access before its benefits can be assessed.',
       signoff: 'Concluding Thought:\nTherefore, strategic green investments today are imperative for long-term ecological stability.',
       keyRules: [
         'ابدأ بجملة افتتاحية قوية تجذب القارئ (Hook + Topic Sentence).',
@@ -68,7 +70,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       subject: 'Subject: Formal Complaint Regarding Delayed Order #4821',
       salutation: 'Dear Customer Service Manager,',
       body: 'I am writing to express my deep dissatisfaction with the handling of my recent order. By the time your team responds, three weeks will have passed since the promised delivery date. I expect that by the end of this business week, you will have investigated the delay and will have provided a full refund to my account.',
-      signoff: 'Yours faithfully,\nAhmed Elhinawi',
+      signoff: 'Yours faithfully,\nSample Applicant',
       keyRules: [
         'حافظ على نبرة رسمية هادئة بدون غضب أو عواطف زائدة.',
         'حدد المشكلة بالأرقام والتواريخ: order number, delivery date.',
@@ -127,27 +129,14 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       }
 
       const data = await response.json();
-      const feedbackText = data.text || data.response || 'تم فحص المسودة بنجاح!';
+      const feedbackText = data.text || data.response || 'لم تصل ملاحظات قابلة للعرض. لا يوجد تقييم مؤكد لهذه المحاولة.';
       setSubmissionFeedback(feedbackText);
       playSound('correct');
       fireCelebration();
     } catch (err) {
       console.warn('AI analysis fallback:', err);
-      // Fallback local pattern checker
-      const hasFuturePerfect = userInput.toLowerCase().includes('will have');
-      const hasConnector = /however|furthermore|therefore|because|although|in addition/i.test(userInput);
+      setSubmissionFeedback('تعذر الاتصال بخدمة التحليل. مسودتك ما زالت هنا. لا يوجد تقييم آلي متاح الآن؛ استخدم قائمة المراجعة الذاتية في الورش أعلاه.');
 
-      let fallbackFeedback = `رائع جداً! عدد الكلمات: ${wordCount} كلمة.\n\n`;
-      if (hasFuturePerfect) {
-        fallbackFeedback += 'استخدام ممتاز ومتقن لقاعدة المستقبل التام (will have + V3)!\n';
-      }
-      if (hasConnector) {
-        fallbackFeedback += 'استخدام رائع للروابط الأكاديمية مما جعل النص متماسكاً.\n';
-      }
-      fallbackFeedback += 'نصيحة: تأكد دائماً من مراجعة علامات الترقيم وبدء الجمل بحرف كبير (Capital Letter).';
-
-      setSubmissionFeedback(fallbackFeedback);
-      playSound('correct');
     } finally {
       setIsAnalyzing(false);
     }
@@ -155,7 +144,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
   const commonMistakes = [
     {
-      title: 'فخ الجمع الخاطئ أو الجمع العشوائي (Run-on Sentences)',
+      title: 'وصل جمل مستقلة دون ترقيم مناسب (Run-on Sentences)',
       wrong: 'I finished my homework I went to sleep.',
       correct: 'I finished my homework, and then I went to sleep. / After finishing my homework, I went to sleep.',
       explanation: 'لا تجمع جملتين كاملتين دون رابط زمني أو فاصلة مناسبة.',
@@ -176,6 +165,9 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
   return (
     <div className="space-y-10 pb-16 text-right">
+      <LiteracyAcademy kind="writing" onCompleteActivity={onCompleteActivity} />
+      <details className="rounded-3xl border border-white/10 p-4"><summary className="cursor-pointer font-bold text-slate-200">النماذج المهنية والمحرر الذكي</summary>
+      <div className="mt-6 space-y-8">
       
       {/* Academy Hero */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
@@ -384,9 +376,9 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
               <div className="flex items-center justify-between border-b border-white/10 pb-2">
                 <span className="font-bold text-[#ffd166] flex items-center gap-1.5">
                   <Award className="w-4 h-4 text-[#ffd166]" />
-                  تقرير التقييم اللغوي والأكاديمي (AI Writing Report)
+                  حالة التحليل وملاحظاته
                 </span>
-                <span className="text-[10px] text-[#c4ff55] font-mono">Gemini Evaluator</span>
+                <span className="text-[10px] text-[#c4ff55] font-mono">ملاحظات آلية قد تخطئ</span>
               </div>
               <div className="whitespace-pre-line text-xs text-[#dedbf4] leading-relaxed">
                 {submissionFeedback}
@@ -405,7 +397,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             أشهر الأخطاء الشائعة في الكتابة (Common Writing Mistakes)
           </h2>
           <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-            تجنب هذه الهفوات الثلاث التي تُقلل من درجة كتابتك في امتحانات الآيلتس والتوأم الوظيفي:
+            تجنب هذه الهفوات الثلاث التي تُقلل من درجة كتابتك في الكتابة الأكاديمية والمهنية:
           </p>
         </div>
 
@@ -432,6 +424,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         </div>
       </section>
 
+      </div></details>
     </div>
   );
 };

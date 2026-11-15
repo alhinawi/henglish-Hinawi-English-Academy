@@ -1,6 +1,8 @@
+import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
-import { READING_PASSAGES, ReadingPassage } from '../data/skillsAcademyData';
+import { LITERACY_READING } from '../data/literacyAcademyData';
+const READING_PASSAGES = LITERACY_READING.filter(p => p.level === 'B1').slice(0, 4).map(p => ({ ...p, wordCount: p.content.split(/\s+/).length, estimatedTime: 'تدريب حر', category: 'Original teaching scenario', contentAr: 'نص تعليمي أصلي. راجع مفردات السياق والأنشطة في المسار أعلاه.', comprehensionQuestions: [{ id: p.id + '-legacy', question: p.question, options: p.options, answer: p.answer, explanation: 'راجع النص؛ الإجابة الصحيحة: ' + p.options[p.answer] }] }));
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
   BookOpen,
@@ -15,9 +17,10 @@ import {
 
 interface ReadingAcademyPageProps {
   onNavigate: (route: PageRoute) => void;
+  onCompleteActivity?: (id: string, score: number, total: number) => void;
 }
 
-export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNavigate }) => {
+export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNavigate, onCompleteActivity }) => {
   const [selectedPassageIdx, setSelectedPassageIdx] = useState(0);
   const [showArabic, setShowArabic] = useState(false);
   const [timerSeconds, setTimerSeconds] = useState(0);
@@ -44,6 +47,9 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
 
   return (
     <div className="space-y-10 pb-16 text-right">
+      <LiteracyAcademy kind="reading" onCompleteActivity={onCompleteActivity} />
+      <details className="rounded-3xl border border-white/10 p-4"><summary className="cursor-pointer font-bold text-slate-200">أدوات القراءة الإضافية</summary>
+      <div className="mt-6 space-y-8">
       
       {/* Academy Hero */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
@@ -202,6 +208,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
         </div>
       </section>
 
+      </div></details>
     </div>
   );
 };
