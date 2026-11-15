@@ -6883,6 +6883,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'Could you give me a hand with this report?', arEg: 'ممكن تساعدني في التقرير ده؟' }, { en: 'I will forward you the email right away.', arEg: 'هبعتلك الإيميل حالاً.' }],
   },
+  {
+    id: 'opinion-talkspire-phrases',
+    movieTitle: 'In My Opinion Phrases Practice - TalkspireX Podcast',
+    releaseYear: 2023,
+    director: 'TalkspireX',
+    genre: 'Speaking Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Say What You Really Think',
+    sceneDescription: 'تدريب على عبارات الرأي: In my opinion, From my point of view, As far as I am concerned.',
+    youtubeId: 'iPJR4s6Jg7A',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'TalkspireX Podcast (Official)',
+    dialogueQuote: 'As far as I am concerned, this is the best option.',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/iPJR4s6Jg7A/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'TalkspireX Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'As far as I am concerned, this is the best option.', arEg: 'بالنسبة لي، ده أحسن اختيار.', arFusha: 'بالنسبة لي، ده أحسن اختيار.', speaker: 'Host', keyWords: [{ word: 'as far as I am concerned', ipa: '', meaningAr: 'بالنسبة لي', meaningEn: '' }, { word: 'option', ipa: '', meaningAr: 'اختيار', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'From my point of view, the plan needs work.', arEg: 'من وجهة نظري، الخطة محتاجة شغل.', arFusha: 'من وجهة نظري، الخطة محتاجة شغل.', speaker: 'Host', keyWords: [{ word: 'point of view', ipa: '', meaningAr: 'وجهة نظر', meaningEn: '' }, { word: 'needs work', ipa: '', meaningAr: 'محتاجة شغل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'in my opinion', type: 'collocation', meaningAr: 'في رأيي', meaningEn: '', egyptianEquivalent: 'من وجهة نظري', exampleInScene: 'In my opinion, he is right.' },      { term: 'as far as I am concerned', type: 'collocation', meaningAr: 'بالنسبة لي (رأي رسمي)', meaningEn: '', egyptianEquivalent: 'أنا شايف', exampleInScene: 'As far as I am concerned, we are done.' },      { term: 'point of view', type: 'collocation', meaningAr: 'وجهة نظر', meaningEn: '', egyptianEquivalent: 'رأي', exampleInScene: 'That is my point of view.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase is the most formal for giving an opinion?', questionAr: 'أنهي عبارة أرسم واحدة للرأي؟', options: ['As far as I am concerned', 'I think', 'I guess', 'Maybe'], correctIndex: 0, explanationAr: 'As far as I am concerned صيغة رسمية قوية للرأي - مناسبة للاجتماعات والامتحانات.' }
+    ],
+    speakingLines: [{ en: 'As far as I am concerned, this is the best option.', arEg: 'بالنسبة لي، ده أحسن اختيار.' }, { en: 'From my point of view, the plan needs work.', arEg: 'من وجهة نظري، الخطة محتاجة شغل.' }],
+  },
+  {
+    id: 'opinion-fluency-stopithink',
+    movieTitle: 'Stop Saying \'I Think\'! Smarter Ways to Express Your Opinion - Fluency in Real Life',
+    releaseYear: 2023,
+    director: 'Fluency in Real Life',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'B2',
+    sceneTitle: 'Beyond I Think',
+    sceneDescription: 'بدائل ذكية لـ I think: عبارات بتخلي رأيك يبان أقوى وأطبيعي في النقاشات.',
+    youtubeId: 'xKRfDKjQosk',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Fluency in Real Life (Official)',
+    dialogueQuote: 'The way I see it, we have two choices.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/xKRfDKjQosk/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Fluency in Real Life Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'The way I see it, we have two choices.', arEg: 'أنا شايف إن قدامنا اختيارين.', arFusha: 'أنا شايف إن قدامنا اختيارين.', speaker: 'Teacher', keyWords: [{ word: 'the way I see it', ipa: '', meaningAr: 'أنا شايف إن', meaningEn: '' }, { word: 'choices', ipa: '', meaningAr: 'اختيارات', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am convinced that practice beats talent.', arEg: 'أنا مقتنع إن الممارسة بتغلب الموهبة.', arFusha: 'أنا مقتنع إن الممارسة بتغلب الموهبة.', speaker: 'Teacher', keyWords: [{ word: 'convinced', ipa: '', meaningAr: 'مقتنع', meaningEn: '' }, { word: 'beats', ipa: '', meaningAr: 'بتغلب', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'the way I see it', type: 'idiom', meaningAr: 'أنا شايف إن (رأي)', meaningEn: '', egyptianEquivalent: 'من نظرتي', exampleInScene: 'The way I see it, we should wait.' },      { term: 'I am convinced that', type: 'collocation', meaningAr: 'أنا مقتنع إن', meaningEn: '', egyptianEquivalent: 'متأكد إن', exampleInScene: 'I am convinced that he is honest.' },      { term: 'believe', type: 'cultural', meaningAr: 'يؤمن / يعتقد', meaningEn: '', egyptianEquivalent: 'شايف', exampleInScene: 'I believe in hard work.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'the way I see it\' mean?', questionAr: 'معنى the way I see it؟', options: ['أنا شايف إن (رأيي)', 'الطريق اللي بشوفه', 'بشوف التلفزيون', 'بصيت عليه'], correctIndex: 0, explanationAr: 'the way I see it طريقة طبيعية لتقديم رأيك بدل I think المتكررة.' }
+    ],
+    speakingLines: [{ en: 'The way I see it, we have two choices.', arEg: 'أنا شايف إن قدامنا اختيارين.' }, { en: 'I am convinced that practice beats talent.', arEg: 'أنا مقتنع إن الممارسة بتغلب الموهبة.' }],
+  },
+  {
+    id: 'goals-bob-dreams',
+    movieTitle: 'How to Talk About Your Goals and Dreams in English - Bob the Canadian',
+    releaseYear: 2021,
+    director: 'Bob the Canadian',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Dream Out Loud',
+    sceneDescription: 'بوب بيعلمك تتكلم عن أهدافك وأحلامك: الخطط المستقبلية بجمل بسيطة وواضحة.',
+    youtubeId: 'JS9KpbF_804',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Bob the Canadian (Official)',
+    dialogueQuote: 'My goal is to speak English fluently.',
+    actorName: 'Bob',
+    characterName: 'Bob',
+    thumbnailUrl: 'https://img.youtube.com/vi/JS9KpbF_804/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Bob the Canadian',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'My goal is to speak English fluently.', arEg: 'هدفي إني أتكلم إنجليزي بطلاقة.', arFusha: 'هدفي إني أتكلم إنجليزي بطلاقة.', speaker: 'Bob', keyWords: [{ word: 'goal', ipa: '', meaningAr: 'هدف', meaningEn: '' }, { word: 'fluently', ipa: '', meaningAr: 'بطلاقة', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I hope to visit Canada one day.', arEg: 'نفسي أزور كندا يوم ما.', arFusha: 'نفسي أزور كندا يوم ما.', speaker: 'Bob', keyWords: [{ word: 'hope to', ipa: '', meaningAr: 'نفسي في', meaningEn: '' }, { word: 'one day', ipa: '', meaningAr: 'يوم ما', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'goal', type: 'cultural', meaningAr: 'هدف', meaningEn: '', egyptianEquivalent: 'هدفي', exampleInScene: 'Set small goals.' },      { term: 'hope to', type: 'collocation', meaningAr: 'يأمل / نفسه في', meaningEn: '', egyptianEquivalent: 'نفسي', exampleInScene: 'I hope to travel soon.' },      { term: 'achieve', type: 'cultural', meaningAr: 'يحقق (هدف)', meaningEn: '', egyptianEquivalent: 'يوصل لهدفه', exampleInScene: 'You can achieve your dreams.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'I hope to visit Canada one day\' express?', questionAr: 'جملة I hope to visit Canada one day بتعبر عن إيه؟', options: ['أمنية مستقبلية', 'ذكرى قديمة', 'خطة مؤكدة', 'شكوى'], correctIndex: 0, explanationAr: 'hope to + مصدر للأمنيات المستقبلية - نفسي أعمل كده يوم ما.' }
+    ],
+    speakingLines: [{ en: 'My goal is to speak English fluently.', arEg: 'هدفي إني أتكلم إنجليزي بطلاقة.' }, { en: 'I hope to visit Canada one day.', arEg: 'نفسي أزور كندا يوم ما.' }],
+  },
+  {
+    id: 'goals-mr-english-plans',
+    movieTitle: 'Easy English Conversation - Dreams, Goals & Future Plans - Mr. English Channel',
+    releaseYear: 2023,
+    director: 'Mr. English Channel',
+    genre: 'English Podcast',
+    cefrLevel: 'A2',
+    sceneTitle: 'Future Plans Chat',
+    sceneDescription: 'حوار سهل عن الأحلام والخطط المستقبلية: going to و want to في سياق طبيعي.',
+    youtubeId: 'PRpzuPpIej0',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Mr. English Channel (Official)',
+    dialogueQuote: 'I am going to start my own business next year.',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/PRpzuPpIej0/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Mr. English Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I am going to start my own business next year.', arEg: 'هبدأ مشروعي الخاص السنة الجاية.', arFusha: 'هبدأ مشروعي الخاص السنة الجاية.', speaker: 'Host', keyWords: [{ word: 'going to', ipa: '', meaningAr: 'هـ (للمستقبل)', meaningEn: '' }, { word: 'my own business', ipa: '', meaningAr: 'مشروعي الخاص', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'What do you want to do in the future?', arEg: 'عايز تعمل إيه في المستقبل؟', arFusha: 'عايز تعمل إيه في المستقبل؟', speaker: 'Host', keyWords: [{ word: 'want to', ipa: '', meaningAr: 'عايز', meaningEn: '' }, { word: 'in the future', ipa: '', meaningAr: 'في المستقبل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'be going to', type: 'collocation', meaningAr: 'هـ (خطة مستقبلية)', meaningEn: '', egyptianEquivalent: 'هعمل', exampleInScene: 'I am going to study abroad.' },      { term: 'my own', type: 'collocation', meaningAr: 'الخاص بي', meaningEn: '', egyptianEquivalent: 'بتاعي أنا', exampleInScene: 'My own room.' },      { term: 'in the future', type: 'collocation', meaningAr: 'في المستقبل', meaningEn: '', egyptianEquivalent: 'قدام', exampleInScene: 'I want to travel in the future.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'When do we use \'going to\'?', questionAr: 'بنستخدم going to امتى؟', options: ['للخطط المستقبلية المقصودة', 'للماضي البعيد', 'للعادات اليومية', 'للأوامر'], correctIndex: 0, explanationAr: 'going to للخطط والنوايا المستقبلية: I am going to start a business.' }
+    ],
+    speakingLines: [{ en: 'I am going to start my own business next year.', arEg: 'هبدأ مشروعي الخاص السنة الجاية.' }, { en: 'What do you want to do in the future?', arEg: 'عايز تعمل إيه في المستقبل؟' }],
+  },
+  {
+    id: 'taxi-prospeak-ride',
+    movieTitle: 'Real English Conversation: Taking an Uber / Taxi - ProSpeak English',
+    releaseYear: 2023,
+    director: 'ProSpeak English',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Your Ride in English',
+    sceneDescription: 'حوار أوبر حقيقي من الطلب للنزول: الوجهة، الطريق الأسرع، والدفع - مستوى A1-A2.',
+    youtubeId: 'fsOqBHuKeSM',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'ProSpeak English (Official)',
+    dialogueQuote: 'Could you take the fastest route, please?',
+    actorName: 'Passenger',
+    characterName: 'Passenger',
+    thumbnailUrl: 'https://img.youtube.com/vi/fsOqBHuKeSM/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'ProSpeak English Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Could you take the fastest route, please?', arEg: 'ممكن تاخد أسرع طريق، من فضلك؟', arFusha: 'ممكن تاخد أسرع طريق، من فضلك؟', speaker: 'Passenger', keyWords: [{ word: 'fastest route', ipa: '', meaningAr: 'أسرع طريق', meaningEn: '' }, { word: 'take', ipa: '', meaningAr: 'ياخد (طريق)', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'You can drop me off at the corner.', arEg: 'ممكن تنزلني عند الكورنر.', arFusha: 'ممكن تنزلني عند الكورنر.', speaker: 'Passenger', keyWords: [{ word: 'drop me off', ipa: '', meaningAr: 'تنزلني', meaningEn: '' }, { word: 'corner', ipa: '', meaningAr: 'الناصية', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'drop off', type: 'phrasal-verb', meaningAr: 'ينزل حد من العربية', meaningEn: '', egyptianEquivalent: 'يوصلني وينزلني', exampleInScene: 'Drop me off here.' },      { term: 'route', type: 'cultural', meaningAr: 'طريق / مسار', meaningEn: '', egyptianEquivalent: 'المسار', exampleInScene: 'The fastest route.' },      { term: 'fare', type: 'cultural', meaningAr: 'أجرة الرحلة', meaningEn: '', egyptianEquivalent: 'الأجرة', exampleInScene: 'The fare was twenty pounds.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'drop me off at the corner\' mean?', questionAr: 'معنى drop me off at the corner؟', options: ['نزلني عند الناصية', 'وصلني للبيت', 'خدني لفة', 'استنى عند الناصية'], correctIndex: 0, explanationAr: 'drop off معناها توصل حد وتنزله في مكان - عكسها pick up يعني تاخده.' }
+    ],
+    speakingLines: [{ en: 'Could you take the fastest route, please?', arEg: 'ممكن تاخد أسرع طريق، من فضلك؟' }, { en: 'You can drop me off at the corner.', arEg: 'ممكن تنزلني عند الكورنر.' }],
+  },
+  {
+    id: 'taxi-giovana-phrases',
+    movieTitle: 'Useful Phrases When Taking a Taxi/Uber - English by Giovana',
+    releaseYear: 2023,
+    director: 'English by Giovana',
+    genre: 'Travel English Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Taxi Phrases That Work',
+    sceneDescription: 'جيوفانا بتلخص عبارات التاكسي والأوبر: تأكيد المشوار، السؤال عن السعر، وتقييم السواق.',
+    youtubeId: '61tey0auDIk',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'English by Giovana (Official)',
+    dialogueQuote: 'Is this the right address on the app?',
+    actorName: 'Driver',
+    characterName: 'Driver',
+    thumbnailUrl: 'https://img.youtube.com/vi/61tey0auDIk/hqdefault.jpg',
+    category: 'travel_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English by Giovana Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Is this the right address on the app?', arEg: 'ده العنوان الصح على التطبيق؟', arFusha: 'ده العنوان الصح على التطبيق؟', speaker: 'Driver', keyWords: [{ word: 'right address', ipa: '', meaningAr: 'العنوان الصح', meaningEn: '' }, { word: 'app', ipa: '', meaningAr: 'تطبيق', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Keep the change.', arEg: 'خلي الباقي ليك.', arFusha: 'خلي الباقي ليك.', speaker: 'Passenger', keyWords: [{ word: 'keep the change', ipa: '', meaningAr: 'خلي الباقي (بقشيش)', meaningEn: '' }, { word: 'change', ipa: '', meaningAr: 'الباقي / الفكة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'keep the change', type: 'collocation', meaningAr: 'خلي الباقي ليك (بقشيش)', meaningEn: '', egyptianEquivalent: 'الباقي ليك', exampleInScene: 'Keep the change, thanks.' },      { term: 'rate the driver', type: 'collocation', meaningAr: 'يقيّم السواق', meaningEn: '', egyptianEquivalent: 'اديله تقييم', exampleInScene: 'Do not forget to rate the driver.' },      { term: 'pickup location', type: 'collocation', meaningAr: 'مكان الاستلام', meaningEn: '', egyptianEquivalent: 'نقطة الركوب', exampleInScene: 'Set your pickup location.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'keep the change\' mean?', questionAr: 'معنى keep the change؟', options: ['خلي الباقي بقشيش', 'ماتدفعش', 'رجّع الفلوس', 'غيّر الفلوس'], correctIndex: 0, explanationAr: 'keep the change بتتقال لما تسيب الفكة للسواق أو الجارسون كبقشيش.' }
+    ],
+    speakingLines: [{ en: 'Is this the right address on the app?', arEg: 'ده العنوان الصح على التطبيق؟' }, { en: 'Keep the change.', arEg: 'خلي الباقي ليك.' }],
+  },
+  {
+    id: 'barber-conversation-e1',
+    movieTitle: 'At the Barber Shop Conversation - Haircut Vocabulary - ConversationAcademy',
+    releaseYear: 2022,
+    director: 'ConversationAcademy',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Getting a Haircut',
+    sceneDescription: 'حوار الحلاق كامل: تحجز ميعاد، توصف القصة، وتقول رأيك في النتيجة - بالمفردات الصح.',
+    youtubeId: 'R2vYbhXLvYg',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'ConversationAcademy (Official)',
+    dialogueQuote: 'Just a trim, please. Not too short.',
+    actorName: 'Customer',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/R2vYbhXLvYg/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'ConversationAcademy Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'Just a trim, please. Not too short.', arEg: 'تخفيف بس، من فضلك. مش قصير أوي.', arFusha: 'تخفيف بس، من فضلك. مش قصير أوي.', speaker: 'Customer', keyWords: [{ word: 'trim', ipa: '', meaningAr: 'تخفيف / قص خفيف', meaningEn: '' }, { word: 'too short', ipa: '', meaningAr: 'قصير أوي', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'How would you like your hair cut?', arEg: 'عايز تحلق شعرك إزاي؟', arFusha: 'عايز تحلق شعرك إزاي؟', speaker: 'Barber', keyWords: [{ word: 'would you like', ipa: '', meaningAr: 'عايز', meaningEn: '' }, { word: 'cut', ipa: '', meaningAr: 'قصة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'trim', type: 'cultural', meaningAr: 'قصة خفيفة / تخفيف', meaningEn: '', egyptianEquivalent: 'تخفيف بس', exampleInScene: 'I just need a trim.' },      { term: 'fade', type: 'cultural', meaningAr: 'تدريج (قصة شعر)', meaningEn: '', egyptianEquivalent: 'فيد', exampleInScene: 'A skin fade, please.' },      { term: 'appointment', type: 'cultural', meaningAr: 'ميعاد', meaningEn: '', egyptianEquivalent: 'حجز', exampleInScene: 'Book an appointment first.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a \'trim\' at the barber?', questionAr: 'يعني إيه trim عند الحلاق؟', options: ['قصة خفيفة', 'حلاقة زيرو', 'صبغة شعر', 'غسيل شعر'], correctIndex: 0, explanationAr: 'trim معناها تخفيف بسيط للشعر من غير تغيير كبير في الطول.' }
+    ],
+    speakingLines: [{ en: 'Just a trim, please. Not too short.', arEg: 'تخفيف بس، من فضلك. مش قصير أوي.' }, { en: 'How would you like your hair cut?', arEg: 'عايز تحلق شعرك إزاي؟' }],
+  },
+  {
+    id: 'salon-mr-english-real',
+    movieTitle: 'Real English Conversation at the Salon & Barber Shop - Mr. English Channel',
+    releaseYear: 2023,
+    director: 'Mr. English Channel',
+    genre: 'Daily English Lesson',
+    cefrLevel: 'A2',
+    sceneTitle: 'Salon Day Dialogue',
+    sceneDescription: 'حوار كوافير واقعي للمبتدئين: الصبغة، القصة، الاستشوار - كلام الكوافيرات اليومي.',
+    youtubeId: 'aOZZFing8qA',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Mr. English Channel (Official)',
+    dialogueQuote: 'I would like to dye my hair brown.',
+    actorName: 'Customer',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/aOZZFing8qA/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Mr. English Channel Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'I would like to dye my hair brown.', arEg: 'عايزة أصبغ شعري بني.', arFusha: 'عايزة أصبغ شعري بني.', speaker: 'Customer', keyWords: [{ word: 'dye', ipa: '', meaningAr: 'تصبغ', meaningEn: '' }, { word: 'brown', ipa: '', meaningAr: 'بني', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'Should I cut the split ends?', arEg: 'أقص الأطراف المتقصفة؟', arFusha: 'أقص الأطراف المتقصفة؟', speaker: 'Hairdresser', keyWords: [{ word: 'split ends', ipa: '', meaningAr: 'أطراف متقصفة', meaningEn: '' }, { word: 'cut', ipa: '', meaningAr: 'تقص', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'dye', type: 'cultural', meaningAr: 'يصبغ (شعر)', meaningEn: '', egyptianEquivalent: 'تصبغ', exampleInScene: 'She dyed her hair red.' },      { term: 'split ends', type: 'collocation', meaningAr: 'أطراف متقصفة', meaningEn: '', egyptianEquivalent: 'تقصف الشعر', exampleInScene: 'Cut the split ends monthly.' },      { term: 'blow-dry', type: 'cultural', meaningAr: 'استشوار', meaningEn: '', egyptianEquivalent: 'سشوار', exampleInScene: 'A cut and blow-dry.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What are \'split ends\'?', questionAr: 'يعني إيه split ends؟', options: ['أطراف الشعر المتقصفة', 'قصة قصيرة', 'نوع صبغة', 'تسريحة شعر'], correctIndex: 0, explanationAr: 'split ends هي الأطراف المتقصفة اللي الكوافير بيقصها عشان الشعر يفضل صحي.' }
+    ],
+    speakingLines: [{ en: 'I would like to dye my hair brown.', arEg: 'عايزة أصبغ شعري بني.' }, { en: 'Should I cut the split ends?', arEg: 'أقص الأطراف المتقصفة؟' }],
+  },
+  {
+    id: 'dreams-swc-podcast',
+    movieTitle: 'Talk About Dreams and Goals - Speak English With Class Podcast',
+    releaseYear: 2023,
+    director: 'Speak English With Class',
+    genre: 'English Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Dream Big in English',
+    sceneDescription: 'بودكاست عن الأحلام والأهداف بمستوى متوسط: طموح، تحديات، وخطط - استماع ومفردات.',
+    youtubeId: 'uVkFrqugXFQ',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Speak English With Class (Official)',
+    dialogueQuote: 'I am working towards becoming a doctor.',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/uVkFrqugXFQ/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak English With Class Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I am working towards becoming a doctor.', arEg: 'أنا شغال عشان أبقى دكتور.', arFusha: 'أنا شغال عشان أبقى دكتور.', speaker: 'Host', keyWords: [{ word: 'working towards', ipa: '', meaningAr: 'شغال عشان أوصل لـ', meaningEn: '' }, { word: 'becoming', ipa: '', meaningAr: 'أبقى', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'My dream is to make a difference.', arEg: 'حلمي إني أعمل فرق.', arFusha: 'حلمي إني أعمل فرق.', speaker: 'Host', keyWords: [{ word: 'make a difference', ipa: '', meaningAr: 'يعمل فرق', meaningEn: '' }, { word: 'dream', ipa: '', meaningAr: 'حلم', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'work towards', type: 'phrasal-verb', meaningAr: 'يشتغل في اتجاه هدف', meaningEn: '', egyptianEquivalent: 'شغال عشان', exampleInScene: 'She is working towards her degree.' },      { term: 'make a difference', type: 'idiom', meaningAr: 'يعمل فرق', meaningEn: '', egyptianEquivalent: 'يأثر إيجابياً', exampleInScene: 'Teachers make a difference.' },      { term: 'ambition', type: 'cultural', meaningAr: 'طموح', meaningEn: '', egyptianEquivalent: 'هدف كبير', exampleInScene: 'Her ambition is inspiring.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'make a difference\' mean?', questionAr: 'معنى make a difference؟', options: ['يعمل تأثير إيجابي حقيقي', 'يحسب فرق السعر', 'يغير رأيه', 'يعمل مشكلة'], correctIndex: 0, explanationAr: 'make a difference معناها تأثيرك بيفرق فعلاً في حياة الناس أو في الموقف.' }
+    ],
+    speakingLines: [{ en: 'I am working towards becoming a doctor.', arEg: 'أنا شغال عشان أبقى دكتور.' }, { en: 'My dream is to make a difference.', arEg: 'حلمي إني أعمل فرق.' }],
+  },
+  {
+    id: 'opinion-fuel-5ways',
+    movieTitle: 'Stop Saying I Think! 5 Natural Ways to Give Your Opinion - English Fuel',
+    releaseYear: 2023,
+    director: 'English Fuel',
+    genre: 'Speaking Lesson',
+    cefrLevel: 'B1',
+    sceneTitle: 'Five Opinion Upgrades',
+    sceneDescription: 'خمس بدائل طبيعية لـ I think: If you ask me, To be honest, Honestly speaking - سريعة ومفيدة.',
+    youtubeId: 'Lq_1zsPKI_o',
+    startTime: 10,
+    endTime: 110,
+    clipDuration: '1:40',
+    videoSource: 'English Fuel (Official)',
+    dialogueQuote: 'If you ask me, the movie was boring.',
+    actorName: 'Teacher',
+    characterName: 'Teacher',
+    thumbnailUrl: 'https://img.youtube.com/vi/Lq_1zsPKI_o/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Fuel Official',
+    subtitles: [
+      { id: 'sub-1', start: 15, end: 30, en: 'If you ask me, the movie was boring.', arEg: 'لو تسألني، الفيلم كان ممل.', arFusha: 'لو تسألني، الفيلم كان ممل.', speaker: 'Teacher', keyWords: [{ word: 'if you ask me', ipa: '', meaningAr: 'لو تسألني', meaningEn: '' }, { word: 'boring', ipa: '', meaningAr: 'ممل', meaningEn: '' }] },      { id: 'sub-2', start: 40, end: 55, en: 'Honestly speaking, I prefer tea over coffee.', arEg: 'بصراحة شديدة، بفضل الشاي عن القهوة.', arFusha: 'بصراحة شديدة، بفضل الشاي عن القهوة.', speaker: 'Teacher', keyWords: [{ word: 'honestly speaking', ipa: '', meaningAr: 'بصراحة شديدة', meaningEn: '' }, { word: 'prefer over', ipa: '', meaningAr: 'يفضل عن', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'if you ask me', type: 'idiom', meaningAr: 'لو تسألني (رأي صريح)', meaningEn: '', egyptianEquivalent: 'من وجهة نظري', exampleInScene: 'If you ask me, he is wrong.' },      { term: 'honestly speaking', type: 'collocation', meaningAr: 'بصراحة شديدة', meaningEn: '', egyptianEquivalent: 'بكل صراحة', exampleInScene: 'Honestly speaking, I disagree.' },      { term: 'prefer', type: 'cultural', meaningAr: 'يفضل', meaningEn: '', egyptianEquivalent: 'أحب أكتر', exampleInScene: 'I prefer winter over summer.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'If you ask me\' introduce?', questionAr: 'عبارة If you ask me بتقدم إيه؟', options: ['رأي صريح', 'سؤال', 'طلب', 'اعتذار'], correctIndex: 0, explanationAr: 'If you ask me بتدخّل رأيك الصريح - تعبير ودي بيستخدم كتير في الحوارات.' }
+    ],
+    speakingLines: [{ en: 'If you ask me, the movie was boring.', arEg: 'لو تسألني، الفيلم كان ممل.' }, { en: 'Honestly speaking, I prefer tea over coffee.', arEg: 'بصراحة شديدة، بفضل الشاي عن القهوة.' }],
+  },
 ];
 
 // Helper to get all videos
