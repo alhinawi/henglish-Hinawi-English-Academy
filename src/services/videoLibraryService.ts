@@ -7233,6 +7233,356 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
     ],
     speakingLines: [{ en: 'If you ask me, the movie was boring.', arEg: 'لو تسألني، الفيلم كان ممل.' }, { en: 'Honestly speaking, I prefer tea over coffee.', arEg: 'بصراحة شديدة، بفضل الشاي عن القهوة.' }],
   },
+  {
+    id: 'negotiation-derek-62-phrases',
+    movieTitle: '62 Useful Phrases For Negotiating - Business English',
+    releaseYear: 2023,
+    director: 'Derek Callan',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Open and Close a Negotiation',
+    sceneDescription: 'عبارات تفاوض احترافية: افتتاح العرض، الرد على السعر، والوصول لاتفاق.',
+    youtubeId: 'lPinxUDxhVs',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Derek Callan - English for Professionals (Official)',
+    dialogueQuote: 'I was hoping we could come to an agreement today.',
+    actorName: 'Derek Callan',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/lPinxUDxhVs/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Derek Callan Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'I was hoping we could come to an agreement today.', arEg: 'كنت متمني إننا نوصل لاتفاق النهارده.', arFusha: 'كنت متمني إننا نوصل لاتفاق النهارده.', speaker: 'Instructor', keyWords: [{ word: 'come to an agreement', ipa: '', meaningAr: 'نوصل لاتفاق', meaningEn: '' }, { word: 'I was hoping', ipa: '', meaningAr: 'كنت متمني', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'That is a bit more than we had in mind.', arEg: 'ده أكتر شوية من اللي كنا ناويين عليه.', arFusha: 'ده أكتر شوية من اللي كنا ناويين عليه.', speaker: 'Instructor', keyWords: [{ word: 'a bit more than', ipa: '', meaningAr: 'أكتر شوية من', meaningEn: '' }, { word: 'had in mind', ipa: '', meaningAr: 'كنا ناويين عليه', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Let us meet in the middle on this one.', arEg: 'خلينا نتقابل في النص في النقطة دي.', arFusha: 'خلينا نتقابل في النص في النقطة دي.', speaker: 'Instructor', keyWords: [{ word: 'meet in the middle', ipa: '', meaningAr: 'نتقابل في النص', meaningEn: '' }, { word: 'on this one', ipa: '', meaningAr: 'في النقطة دي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'come to an agreement', type: 'collocation', meaningAr: 'التوصل إلى اتفاق', meaningEn: '', egyptianEquivalent: 'نوصل لاتفاق', exampleInScene: 'Both sides came to an agreement.' },      { term: 'meet in the middle', type: 'idiom', meaningAr: 'الوصول إلى حل وسط', meaningEn: '', egyptianEquivalent: 'نتقابل في النص', exampleInScene: 'They met in the middle on price.' },      { term: 'have in mind', type: 'collocation', meaningAr: 'أن يكون في الذهن', meaningEn: '', egyptianEquivalent: 'يكون ناوي على', exampleInScene: 'What did you have in mind?' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which phrase suggests a compromise?', questionAr: 'أنهي عبارة بتقترح حل وسط؟', options: ['Let us meet in the middle', 'Take it or leave it', 'That is final', 'No way'], correctIndex: 0, explanationAr: 'Meet in the middle معناها نقسم الفرق ونوصل لحل وسط - أساس أي تفاوض ناجح.' }
+    ],
+    speakingLines: [{ en: 'I was hoping we could come to an agreement today.', arEg: 'كنت متمني إننا نوصل لاتفاق النهارده.' }, { en: 'Let us meet in the middle on this one.', arEg: 'خلينا نتقابل في النص في النقطة دي.' }],
+  },
+  {
+    id: 'negotiate-confident-english-tips',
+    movieTitle: 'How to Successfully Negotiate in English - 4 Tips + 20 Phrases',
+    releaseYear: 2022,
+    director: 'Speak Confident English',
+    genre: 'Business English',
+    cefrLevel: 'B2',
+    sceneTitle: 'Negotiate with Confidence',
+    sceneDescription: '٤ نصائح و٢٠ عبارة عشان تتفاوض بثقة بالإنجليزي في الشغل.',
+    youtubeId: 'V9up8rWL3zQ',
+    startTime: 40,
+    endTime: 160,
+    clipDuration: '2:00',
+    videoSource: 'Speak Confident English (Official)',
+    dialogueQuote: 'Could you be more flexible on the deadline?',
+    actorName: 'Annemarie',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/V9up8rWL3zQ/hqdefault.jpg',
+    category: 'business_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Speak Confident English Official',
+    subtitles: [
+      { id: 'sub-1', start: 45, end: 60, en: 'Could you be more flexible on the deadline?', arEg: 'ممكن تكونوا أكتر مرونة في الميعاد النهائي؟', arFusha: 'ممكن تكونوا أكتر مرونة في الميعاد النهائي؟', speaker: 'Instructor', keyWords: [{ word: 'flexible', ipa: '', meaningAr: 'مرن', meaningEn: '' }, { word: 'deadline', ipa: '', meaningAr: 'ميعاد نهائي', meaningEn: '' }] },      { id: 'sub-2', start: 70, end: 85, en: 'We would need some time to consider your offer.', arEg: 'هنحتاج شوية وقت نفكر في العرض بتاعكم.', arFusha: 'هنحتاج شوية وقت نفكر في العرض بتاعكم.', speaker: 'Instructor', keyWords: [{ word: 'consider', ipa: '', meaningAr: 'نفكر في', meaningEn: '' }, { word: 'offer', ipa: '', meaningAr: 'عرض', meaningEn: '' }] },      { id: 'sub-3', start: 95, end: 110, en: 'I am confident we can find a solution that works for both of us.', arEg: 'أنا متأكدة إننا نقدر نلاقي حل يناسبنا الاتنين.', arFusha: 'أنا متأكدة إننا نقدر نلاقي حل يناسبنا الاتنين.', speaker: 'Instructor', keyWords: [{ word: 'I am confident', ipa: '', meaningAr: 'أنا متأكد', meaningEn: '' }, { word: 'works for both of us', ipa: '', meaningAr: 'يناسبنا الاتنين', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'be flexible on', type: 'collocation', meaningAr: 'أن تكون مرنًا بشأن', meaningEn: '', egyptianEquivalent: 'تبقى مرن في', exampleInScene: 'Please be flexible on the price.' },      { term: 'consider an offer', type: 'collocation', meaningAr: 'النظر في عرض', meaningEn: '', egyptianEquivalent: 'نفكر في عرض', exampleInScene: 'We will consider your offer.' },      { term: 'find a solution', type: 'collocation', meaningAr: 'إيجاد حل', meaningEn: '', egyptianEquivalent: 'نلاقي حل', exampleInScene: 'Let us find a solution together.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is a polite way to ask for a better deadline?', questionAr: 'إيه الطريقة المهذبة نطلب بيها ميعاد أحسن؟', options: ['Could you be more flexible on the deadline?', 'Change the deadline now', 'The deadline is bad', 'I refuse this date'], correctIndex: 0, explanationAr: 'Could you be more flexible... صيغة مهذبة واحترافية للتفاوض على المواعيد.' }
+    ],
+    speakingLines: [{ en: 'Could you be more flexible on the deadline?', arEg: 'ممكن تكونوا أكتر مرونة في الميعاد النهائي؟' }, { en: 'We would need some time to consider your offer.', arEg: 'هنحتاج شوية وقت نفكر في العرض بتاعكم.' }],
+  },
+  {
+    id: 'customer-service-complaints-refunds',
+    movieTitle: 'Customer Service English - Complaints, Refunds and Manager Requests',
+    releaseYear: 2024,
+    director: 'Daily Duo English',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Complain and Ask for a Refund',
+    sceneDescription: 'حوار خدمة عملاء: تشتكي من منتج، تطلب فلوسك ترجع، وتطلب تكلم المدير.',
+    youtubeId: 'XX9W8lP3NmY',
+    startTime: 25,
+    endTime: 145,
+    clipDuration: '2:00',
+    videoSource: 'Daily Duo English (Official)',
+    dialogueQuote: 'I would like to speak to the manager, please.',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/XX9W8lP3NmY/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Daily Duo English Official',
+    subtitles: [
+      { id: 'sub-1', start: 30, end: 45, en: 'I would like to make a complaint about my order.', arEg: 'عايز أقدم شكوى عن الطلب بتاعي.', arFusha: 'عايز أقدم شكوى عن الطلب بتاعي.', speaker: 'Customer', keyWords: [{ word: 'make a complaint', ipa: '', meaningAr: 'أقدم شكوى', meaningEn: '' }, { word: 'order', ipa: '', meaningAr: 'طلب', meaningEn: '' }] },      { id: 'sub-2', start: 55, end: 70, en: 'I am afraid the product arrived damaged.', arEg: 'للأسف المنتج وصل مكسور.', arFusha: 'للأسف المنتج وصل مكسور.', speaker: 'Customer', keyWords: [{ word: 'I am afraid', ipa: '', meaningAr: 'للأسف', meaningEn: '' }, { word: 'arrived damaged', ipa: '', meaningAr: 'وصل مكسور', meaningEn: '' }] },      { id: 'sub-3', start: 80, end: 95, en: 'Could I get a full refund, please?', arEg: 'ممكن فلوسي ترجع كاملة لو سمحت؟', arFusha: 'ممكن فلوسي ترجع كاملة لو سمحت؟', speaker: 'Customer', keyWords: [{ word: 'refund', ipa: '', meaningAr: 'استرجاع فلوس', meaningEn: '' }, { word: 'full', ipa: '', meaningAr: 'كامل', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'make a complaint', type: 'collocation', meaningAr: 'تقديم شكوى', meaningEn: '', egyptianEquivalent: 'أقدم شكوى', exampleInScene: 'She made a complaint about the service.' },      { term: 'refund', type: 'cultural', meaningAr: 'استرداد الأموال', meaningEn: '', egyptianEquivalent: 'فلوس ترجع', exampleInScene: 'They gave me a full refund.' },      { term: 'speak to the manager', type: 'collocation', meaningAr: 'التحدث إلى المدير', meaningEn: '', egyptianEquivalent: 'أكلم المدير', exampleInScene: 'I want to speak to the manager.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'How do you politely ask for your money back?', questionAr: 'تطلب فلوسك ترجع بأدب إزاي؟', options: ['Could I get a full refund, please?', 'Give me my money now', 'I want cash back fast', 'Refund me immediately'], correctIndex: 0, explanationAr: 'Could I get a full refund, please? أدب + وضوح - أحسن صيغة مع خدمة العملاء.' }
+    ],
+    speakingLines: [{ en: 'I would like to make a complaint about my order.', arEg: 'عايز أقدم شكوى عن الطلب بتاعي.' }, { en: 'Could I get a full refund, please?', arEg: 'ممكن فلوسي ترجع كاملة لو سمحت؟' }],
+  },
+  {
+    id: 'online-order-complaint-damaged',
+    movieTitle: 'Online Order Complaint in English - Damaged Product Conversation',
+    releaseYear: 2024,
+    director: 'Key to Conversation',
+    genre: 'Conversation Practice',
+    cefrLevel: 'B1',
+    sceneTitle: 'Report a Damaged Delivery',
+    sceneDescription: 'حوار كامل: طلب أونلاين وصل بايظ، وتتفاوض على استبدال أو استرجاع.',
+    youtubeId: 'Cbz2jdWQHQU',
+    startTime: 20,
+    endTime: 140,
+    clipDuration: '2:00',
+    videoSource: 'Key to Conversation (Official)',
+    dialogueQuote: 'The package arrived, but the item inside was broken.',
+    actorName: 'Host',
+    characterName: 'Customer',
+    thumbnailUrl: 'https://img.youtube.com/vi/Cbz2jdWQHQU/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Key to Conversation Official',
+    subtitles: [
+      { id: 'sub-1', start: 25, end: 40, en: 'The package arrived, but the item inside was broken.', arEg: 'الشحنة وصلت، بس الحاجة اللي جواها كانت مكسورة.', arFusha: 'الشحنة وصلت، بس الحاجة اللي جواها كانت مكسورة.', speaker: 'Customer', keyWords: [{ word: 'package', ipa: '', meaningAr: 'شحنة', meaningEn: '' }, { word: 'broken', ipa: '', meaningAr: 'مكسور', meaningEn: '' }] },      { id: 'sub-2', start: 50, end: 65, en: 'I would prefer a replacement rather than a refund.', arEg: 'أفضل استبدال بدل ما فلوسي ترجع.', arFusha: 'أفضل استبدال بدل ما فلوسي ترجع.', speaker: 'Customer', keyWords: [{ word: 'replacement', ipa: '', meaningAr: 'استبدال', meaningEn: '' }, { word: 'rather than', ipa: '', meaningAr: 'بدل ما', meaningEn: '' }] },      { id: 'sub-3', start: 75, end: 90, en: 'We will ship a new one right away at no extra cost.', arEg: 'هنبعتلك واحد جديد فورًا من غير أي تكلفة زيادة.', arFusha: 'هنبعتلك واحد جديد فورًا من غير أي تكلفة زيادة.', speaker: 'Agent', keyWords: [{ word: 'right away', ipa: '', meaningAr: 'فورًا', meaningEn: '' }, { word: 'at no extra cost', ipa: '', meaningAr: 'من غير تكلفة زيادة', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'damaged', type: 'cultural', meaningAr: 'تالف', meaningEn: '', egyptianEquivalent: 'بايظ / مكسور', exampleInScene: 'The screen was damaged.' },      { term: 'replacement', type: 'cultural', meaningAr: 'بديل', meaningEn: '', egyptianEquivalent: 'حاجة بديلة', exampleInScene: 'They sent a free replacement.' },      { term: 'at no extra cost', type: 'collocation', meaningAr: 'بدون تكلفة إضافية', meaningEn: '', egyptianEquivalent: 'من غير فلوس زيادة', exampleInScene: 'Delivery is at no extra cost.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'You want a new item, not money back. What do you say?', questionAr: 'عايز منتج جديد مش فلوسك. تقول إيه؟', options: ['I would prefer a replacement rather than a refund.', 'Keep the item and the money', 'Cancel everything forever', 'Send it to my friend'], correctIndex: 0, explanationAr: 'Replacement بدل Refund: استبدال بدل استرجاع فلوس - rather than بتربط الاختيارين.' }
+    ],
+    speakingLines: [{ en: 'The package arrived, but the item inside was broken.', arEg: 'الشحنة وصلت، بس الحاجة اللي جواها كانت مكسورة.' }, { en: 'I would prefer a replacement rather than a refund.', arEg: 'أفضل استبدال بدل ما فلوسي ترجع.' }],
+  },
+  {
+    id: 'relationships-basic-conversation-jessica',
+    movieTitle: 'Basic English Conversation for Relationships',
+    releaseYear: 2023,
+    director: 'Learn English with Jessica',
+    genre: 'Conversation Practice',
+    cefrLevel: 'A2',
+    sceneTitle: 'Talk About Your Relationships',
+    sceneDescription: 'محادثة بسيطة عن العلاقات: صحاب، عيلة، وإزاي تسأل عن حد.',
+    youtubeId: 'YeXPDTLURy4',
+    startTime: 15,
+    endTime: 135,
+    clipDuration: '2:00',
+    videoSource: 'Learn English with Jessica (Official)',
+    dialogueQuote: 'We have been friends since high school.',
+    actorName: 'Jessica',
+    characterName: 'Speaker',
+    thumbnailUrl: 'https://img.youtube.com/vi/YeXPDTLURy4/hqdefault.jpg',
+    category: 'daily_conversations',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English with Jessica Official',
+    subtitles: [
+      { id: 'sub-1', start: 20, end: 35, en: 'We have been friends since high school.', arEg: 'إحنا صحاب من أيام السنوي.', arFusha: 'إحنا صحاب من أيام السنوي.', speaker: 'Speaker', keyWords: [{ word: 'since', ipa: '', meaningAr: 'من (وقت)', meaningEn: '' }, { word: 'high school', ipa: '', meaningAr: 'الثانوية', meaningEn: '' }] },      { id: 'sub-2', start: 45, end: 60, en: 'How long have you known each other?', arEg: 'بتعرفوا بعض بقالكم قد إيه؟', arFusha: 'بتعرفوا بعض بقالكم قد إيه؟', speaker: 'Speaker', keyWords: [{ word: 'how long', ipa: '', meaningAr: 'قد إيه / كام مدة', meaningEn: '' }, { word: 'know each other', ipa: '', meaningAr: 'نعرف بعض', meaningEn: '' }] },      { id: 'sub-3', start: 70, end: 85, en: 'We get along really well.', arEg: 'إحنا متفاهمين جدًا مع بعض.', arFusha: 'إحنا متفاهمين جدًا مع بعض.', speaker: 'Speaker', keyWords: [{ word: 'get along', ipa: '', meaningAr: 'نتفاهم مع بعض', meaningEn: '' }, { word: 'really well', ipa: '', meaningAr: 'جدًا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'since', type: 'cultural', meaningAr: 'منذ', meaningEn: '', egyptianEquivalent: 'من (وقت)', exampleInScene: 'We have known each other since 2015.' },      { term: 'get along', type: 'phrasal-verb', meaningAr: 'ينسجم مع', meaningEn: '', egyptianEquivalent: 'يتفاهم مع حد', exampleInScene: 'I get along with my neighbors.' },      { term: 'each other', type: 'collocation', meaningAr: 'بعضهما البعض', meaningEn: '', egyptianEquivalent: 'بعض', exampleInScene: 'They help each other.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'Which sentence uses the present perfect correctly?', questionAr: 'أنهي جملة فيها present perfect صح؟', options: ['We have been friends since high school.', 'We are friends since high school yesterday.', 'We been friends since now.', 'We having friends since school.'], correctIndex: 0, explanationAr: 'Have been + since + نقطة زمنية = علاقة بدأت في الماضي ومستمرة لحد دلوقتي.' }
+    ],
+    speakingLines: [{ en: 'We have been friends since high school.', arEg: 'إحنا صحاب من أيام السنوي.' }, { en: 'We get along really well.', arEg: 'إحنا متفاهمين جدًا مع بعض.' }],
+  },
+  {
+    id: 'dating-relationships-unleashed-podcast',
+    movieTitle: 'Dating and Relationships in English - Real-Life Speaking',
+    releaseYear: 2024,
+    director: 'English Unleashed',
+    genre: 'Podcast',
+    cefrLevel: 'B1',
+    sceneTitle: 'Real Talk About Dating',
+    sceneDescription: 'بودكاست عن المواعدة والعلاقات: مفردات حقيقية بتستخدمها في الكلام اليومي.',
+    youtubeId: 'KMv3DXOzGIg',
+    startTime: 60,
+    endTime: 180,
+    clipDuration: '2:00',
+    videoSource: 'English Unleashed Podcast (Official)',
+    dialogueQuote: 'We went on a few dates and really hit it off.',
+    actorName: 'Host',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/KMv3DXOzGIg/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Unleashed Official',
+    subtitles: [
+      { id: 'sub-1', start: 65, end: 80, en: 'We went on a few dates and really hit it off.', arEg: 'خرجنا مع بعض كام مرة واتفقنا جدًا من أول مرة.', arFusha: 'خرجنا مع بعض كام مرة واتفقنا جدًا من أول مرة.', speaker: 'Host', keyWords: [{ word: 'go on a date', ipa: '', meaningAr: 'نخرج مع بعض', meaningEn: '' }, { word: 'hit it off', ipa: '', meaningAr: 'ننجذب لبعض من أول مرة', meaningEn: '' }] },      { id: 'sub-2', start: 90, end: 105, en: 'They have been together for three years.', arEg: 'هم مع بعض بقالهم تلات سنين.', arFusha: 'هم مع بعض بقالهم تلات سنين.', speaker: 'Host', keyWords: [{ word: 'be together', ipa: '', meaningAr: 'يكونوا مع بعض', meaningEn: '' }, { word: 'for three years', ipa: '', meaningAr: 'بقالهم تلات سنين', meaningEn: '' }] },      { id: 'sub-3', start: 115, end: 130, en: 'Things did not work out, so they broke up.', arEg: 'الدنيا ممشيتش معاهم، فافترقوا.', arFusha: 'الدنيا ممشيتش معاهم، فافترقوا.', speaker: 'Host', keyWords: [{ word: 'work out', ipa: '', meaningAr: 'تمشي / تنجح', meaningEn: '' }, { word: 'break up', ipa: '', meaningAr: 'يفترقوا', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'hit it off', type: 'idiom', meaningAr: 'ينجذبا لبعضهما فورًا', meaningEn: '', egyptianEquivalent: 'يحبوا بعض من أول مرة', exampleInScene: 'We hit it off at the party.' },      { term: 'work out', type: 'phrasal-verb', meaningAr: 'ينجح', meaningEn: '', egyptianEquivalent: 'تمشي الدنيا', exampleInScene: 'I hope things work out between them.' },      { term: 'break up', type: 'phrasal-verb', meaningAr: 'ينفصل', meaningEn: '', egyptianEquivalent: 'يفترقوا', exampleInScene: 'They broke up last month.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'hit it off\' mean?', questionAr: 'يعني إيه hit it off؟', options: ['ينجذبوا لبعض من أول مرة', 'يتخانقوا', 'يتأخروا عن معاد', 'يسافروا مع بعض'], correctIndex: 0, explanationAr: 'Hit it off = كيمياء من أول لقاء - تعبير شائع جدًا في كلام العلاقات.' }
+    ],
+    speakingLines: [{ en: 'We went on a few dates and really hit it off.', arEg: 'خرجنا مع بعض كام مرة واتفقنا جدًا من أول مرة.' }, { en: 'Things did not work out, so they broke up.', arEg: 'الدنيا ممشيتش معاهم، فافترقوا.' }],
+  },
+  {
+    id: 'science-trust-bbc-6min',
+    movieTitle: 'Restoring Trust in Science - 6 Minute English',
+    releaseYear: 2023,
+    director: 'BBC Learning English',
+    genre: 'Podcast',
+    cefrLevel: 'B2',
+    sceneTitle: 'Can We Trust Science?',
+    sceneDescription: 'بودكاست بي بي سي: إزاي نرجع الثقة في العلم، ومفردات أكاديمية مهمة.',
+    youtubeId: 'obpKWRcXezA',
+    startTime: 45,
+    endTime: 165,
+    clipDuration: '2:00',
+    videoSource: 'BBC Learning English (Official)',
+    dialogueQuote: 'Public trust in science has been shaken in recent years.',
+    actorName: 'BBC Hosts',
+    characterName: 'Host',
+    thumbnailUrl: 'https://img.youtube.com/vi/obpKWRcXezA/hqdefault.jpg',
+    category: 'podcasts',
+    accent: 'British',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'BBC Learning English Official',
+    subtitles: [
+      { id: 'sub-1', start: 50, end: 65, en: 'Public trust in science has been shaken in recent years.', arEg: 'ثقة الناس في العلم اتهزت في السنين الأخيرة.', arFusha: 'ثقة الناس في العلم اتهزت في السنين الأخيرة.', speaker: 'Host', keyWords: [{ word: 'trust', ipa: '', meaningAr: 'ثقة', meaningEn: '' }, { word: 'shaken', ipa: '', meaningAr: 'اتهزّت', meaningEn: '' }] },      { id: 'sub-2', start: 75, end: 90, en: 'Scientists need to be transparent about their methods.', arEg: 'العلماء محتاجين يكونوا واضحين في طريقة شغلهم.', arFusha: 'العلماء محتاجين يكونوا واضحين في طريقة شغلهم.', speaker: 'Host', keyWords: [{ word: 'transparent', ipa: '', meaningAr: 'شفاف / واضح', meaningEn: '' }, { word: 'methods', ipa: '', meaningAr: 'طرق', meaningEn: '' }] },      { id: 'sub-3', start: 100, end: 115, en: 'The evidence speaks for itself.', arEg: 'الأدلة بتتكلم عن نفسها.', arFusha: 'الأدلة بتتكلم عن نفسها.', speaker: 'Host', keyWords: [{ word: 'evidence', ipa: '', meaningAr: 'أدلة', meaningEn: '' }, { word: 'speaks for itself', ipa: '', meaningAr: 'بتتكلم عن نفسها', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'trust', type: 'cultural', meaningAr: 'ثقة', meaningEn: '', egyptianEquivalent: 'ثقة', exampleInScene: 'Trust takes years to build.' },      { term: 'transparent', type: 'cultural', meaningAr: 'شفاف', meaningEn: '', egyptianEquivalent: 'واضح ومكشوف', exampleInScene: 'The process should be transparent.' },      { term: 'evidence', type: 'cultural', meaningAr: 'دليل', meaningEn: '', egyptianEquivalent: 'دليل', exampleInScene: 'There is no evidence for that claim.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'the evidence speaks for itself\' mean?', questionAr: 'يعني إيه the evidence speaks for itself؟', options: ['الأدلة واضحة من غير شرح', 'الأدلة مش موجودة', 'العلم بيكدب', 'لازم نسأل خبير'], correctIndex: 0, explanationAr: 'لما الدليل speaks for itself يعني واضح لوحده ومش محتاج تفسير زيادة.' }
+    ],
+    speakingLines: [{ en: 'Public trust in science has been shaken in recent years.', arEg: 'ثقة الناس في العلم اتهزت في السنين الأخيرة.' }, { en: 'Scientists need to be transparent about their methods.', arEg: 'العلماء محتاجين يكونوا واضحين في طريقة شغلهم.' }],
+  },
+  {
+    id: 'science-common-mistakes-learn',
+    movieTitle: 'Top 5 Common Mistakes Everyone Makes - Learn English Through Science',
+    releaseYear: 2024,
+    director: 'Learn English Through Science',
+    genre: 'Educational',
+    cefrLevel: 'B1',
+    sceneTitle: 'Fix Your English with Science',
+    sceneDescription: '٥ أخطاء شائعة في الإنجليزي متشرحة بطريقة علمية سهلة.',
+    youtubeId: 'Yh-rwpUbhq8',
+    startTime: 30,
+    endTime: 150,
+    clipDuration: '2:00',
+    videoSource: 'Learn English Through Science (Official)',
+    dialogueQuote: 'Let us break down this mistake and fix it step by step.',
+    actorName: 'Host',
+    characterName: 'Instructor',
+    thumbnailUrl: 'https://img.youtube.com/vi/Yh-rwpUbhq8/hqdefault.jpg',
+    category: 'academic_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'Learn English Through Science Official',
+    subtitles: [
+      { id: 'sub-1', start: 35, end: 50, en: 'Let us break down this mistake and fix it step by step.', arEg: 'خلينا نحلل الغلطة دي ونصلحها خطوة بخطوة.', arFusha: 'خلينا نحلل الغلطة دي ونصلحها خطوة بخطوة.', speaker: 'Instructor', keyWords: [{ word: 'break down', ipa: '', meaningAr: 'نحلل', meaningEn: '' }, { word: 'step by step', ipa: '', meaningAr: 'خطوة بخطوة', meaningEn: '' }] },      { id: 'sub-2', start: 60, end: 75, en: 'Many learners mix up these two words.', arEg: 'متعلمين كتير بيلخبطوا بين الكلمتين دول.', arFusha: 'متعلمين كتير بيلخبطوا بين الكلمتين دول.', speaker: 'Instructor', keyWords: [{ word: 'mix up', ipa: '', meaningAr: 'يلخبط بين', meaningEn: '' }, { word: 'learners', ipa: '', meaningAr: 'متعلمين', meaningEn: '' }] },      { id: 'sub-3', start: 85, end: 100, en: 'Once you understand the pattern, you will not forget it.', arEg: 'أول ما تفهم النمط، مش هتنساه تاني.', arFusha: 'أول ما تفهم النمط، مش هتنساه تاني.', speaker: 'Instructor', keyWords: [{ word: 'pattern', ipa: '', meaningAr: 'نمط / قاعدة', meaningEn: '' }, { word: 'once', ipa: '', meaningAr: 'أول ما', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'break down', type: 'phrasal-verb', meaningAr: 'يحلل', meaningEn: '', egyptianEquivalent: 'يفكك لأجزاء', exampleInScene: 'Let me break down the problem.' },      { term: 'mix up', type: 'phrasal-verb', meaningAr: 'يخلط بين', meaningEn: '', egyptianEquivalent: 'يلخبط بين', exampleInScene: 'I always mix up their names.' },      { term: 'pattern', type: 'cultural', meaningAr: 'نمط', meaningEn: '', egyptianEquivalent: 'قاعدة / نمط', exampleInScene: 'English spelling has patterns.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What does \'mix up\' mean?', questionAr: 'يعني إيه mix up؟', options: ['يلخبط بين حاجتين', 'يخلط مكونات', 'يصلح غلطة', 'ينسى كلمة'], correctIndex: 0, explanationAr: 'Mix up = تلخبط بين حاجتين شبه بعض - زي accept و except.' }
+    ],
+    speakingLines: [{ en: 'Let us break down this mistake and fix it step by step.', arEg: 'خلينا نحلل الغلطة دي ونصلحها خطوة بخطوة.' }, { en: 'Many learners mix up these two words.', arEg: 'متعلمين كتير بيلخبطوا بين الكلمتين دول.' }],
+  },
+  {
+    id: 'speech-steve-jobs-stanford',
+    movieTitle: 'Steve Jobs - Stanford Commencement Speech (English Subtitles)',
+    releaseYear: 2005,
+    director: 'English Speeches',
+    genre: 'Famous Speech',
+    cefrLevel: 'C1',
+    sceneTitle: 'Stay Hungry, Stay Foolish',
+    sceneDescription: 'أشهر خطاب تخرج في التاريخ: ستيف جوبز يحكي ٣ قصص غيرت حياته.',
+    youtubeId: '1i9kcBHX2Nw',
+    startTime: 60,
+    endTime: 180,
+    clipDuration: '2:00',
+    videoSource: 'English Speeches (Official)',
+    dialogueQuote: 'You have got to find what you love.',
+    actorName: 'Steve Jobs',
+    characterName: 'Steve Jobs',
+    thumbnailUrl: 'https://img.youtube.com/vi/1i9kcBHX2Nw/hqdefault.jpg',
+    category: 'ted_talks',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speeches Official',
+    subtitles: [
+      { id: 'sub-1', start: 65, end: 80, en: 'You have got to find what you love.', arEg: 'لازم تلاقي الحاجة اللي بتحبها.', arFusha: 'لازم تلاقي الحاجة اللي بتحبها.', speaker: 'Steve Jobs', keyWords: [{ word: 'have got to', ipa: '', meaningAr: 'لازم', meaningEn: '' }, { word: 'what you love', ipa: '', meaningAr: 'اللي بتحبه', meaningEn: '' }] },      { id: 'sub-2', start: 90, end: 105, en: 'The only way to do great work is to love what you do.', arEg: 'الطريقة الوحيدة إنك تعمل شغل عظيم هي إنك تحب اللي بتعمله.', arFusha: 'الطريقة الوحيدة إنك تعمل شغل عظيم هي إنك تحب اللي بتعمله.', speaker: 'Steve Jobs', keyWords: [{ word: 'great work', ipa: '', meaningAr: 'شغل عظيم', meaningEn: '' }, { word: 'the only way', ipa: '', meaningAr: 'الطريقة الوحيدة', meaningEn: '' }] },      { id: 'sub-3', start: 115, end: 130, en: 'Stay hungry, stay foolish.', arEg: 'فضل جعان، فضل مجنون (بالطموح).', arFusha: 'فضل جعان، فضل مجنون (بالطموح).', speaker: 'Steve Jobs', keyWords: [{ word: 'stay hungry', ipa: '', meaningAr: 'فضل جعان', meaningEn: '' }, { word: 'foolish', ipa: '', meaningAr: 'مجنون / مغامر', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'have got to', type: 'cultural', meaningAr: 'يجب أن', meaningEn: '', egyptianEquivalent: 'لازم', exampleInScene: 'You have got to try this.' },      { term: 'commencement', type: 'cultural', meaningAr: 'حفل تخرج', meaningEn: '', egyptianEquivalent: 'حفل التخرج', exampleInScene: 'He gave the commencement speech.' },      { term: 'stay hungry', type: 'collocation', meaningAr: 'ابقَ طموحًا', meaningEn: '', egyptianEquivalent: 'فضل طموحك', exampleInScene: 'Stay hungry for knowledge.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What is the main message of \'Stay hungry, stay foolish\'?', questionAr: 'إيه الرسالة الأساسية في Stay hungry, stay foolish؟', options: ['خليك طموح ومغامر طول عمرك', 'كُل كتير ومتفكرش', 'اشتغل من غير فلوس', 'اسمع كلام الناس دايمًا'], correctIndex: 0, explanationAr: 'ستيف جوبز بيقول: متشبعش أبدًا من التعلم، ومتخفش تغامر - دي فلسفة حياته.' }
+    ],
+    speakingLines: [{ en: 'The only way to do great work is to love what you do.', arEg: 'الطريقة الوحيدة إنك تعمل شغل عظيم هي إنك تحب اللي بتعمله.' }, { en: 'Stay hungry, stay foolish.', arEg: 'فضل جعان، فضل مجنون (بالطموح).' }],
+  },
+  {
+    id: 'speech-mlk-i-have-a-dream',
+    movieTitle: 'Martin Luther King - I Have a Dream (English Subtitles)',
+    releaseYear: 1963,
+    director: 'English Speeches',
+    genre: 'Famous Speech',
+    cefrLevel: 'C1',
+    sceneTitle: 'I Have a Dream',
+    sceneDescription: 'خطاب مارتن لوثر كينج التاريخي: أقوى أمثلة البلاغة في الإنجليزية.',
+    youtubeId: '6dKimoybmEo',
+    startTime: 60,
+    endTime: 180,
+    clipDuration: '2:00',
+    videoSource: 'English Speeches (Official)',
+    dialogueQuote: 'I have a dream that one day this nation will rise up.',
+    actorName: 'Martin Luther King Jr.',
+    characterName: 'Martin Luther King Jr.',
+    thumbnailUrl: 'https://img.youtube.com/vi/6dKimoybmEo/hqdefault.jpg',
+    category: 'advanced_english',
+    accent: 'American',
+    verificationStatus: 'verified_playable',
+    lastVerifiedAt: '2026-11-14',
+    isEmbeddable: true,
+    contentSource: 'English Speeches Official',
+    subtitles: [
+      { id: 'sub-1', start: 65, end: 80, en: 'I have a dream that one day this nation will rise up.', arEg: 'عندي حلم إنه في يوم من الأيام الأمة دي هتنهض.', arFusha: 'عندي حلم إنه في يوم من الأيام الأمة دي هتنهض.', speaker: 'MLK', keyWords: [{ word: 'one day', ipa: '', meaningAr: 'في يوم من الأيام', meaningEn: '' }, { word: 'rise up', ipa: '', meaningAr: 'تنهض', meaningEn: '' }] },      { id: 'sub-2', start: 90, end: 105, en: 'We will not be satisfied until justice rolls down like waters.', arEg: 'مش هنرتاح لحد ما العدالة تنساب زي الميه.', arFusha: 'مش هنرتاح لحد ما العدالة تنساب زي الميه.', speaker: 'MLK', keyWords: [{ word: 'satisfied', ipa: '', meaningAr: 'مرتاح / راضي', meaningEn: '' }, { word: 'justice', ipa: '', meaningAr: 'عدالة', meaningEn: '' }] },      { id: 'sub-3', start: 115, end: 130, en: 'Let freedom ring from every hill and every valley.', arEg: 'خلي الحرية تدق من كل تل وكل وادي.', arFusha: 'خلي الحرية تدق من كل تل وكل وادي.', speaker: 'MLK', keyWords: [{ word: 'let freedom ring', ipa: '', meaningAr: 'خلي الحرية تدق', meaningEn: '' }, { word: 'valley', ipa: '', meaningAr: 'وادي', meaningEn: '' }] }
+    ],
+    vocabulary: [
+      { term: 'rise up', type: 'phrasal-verb', meaningAr: 'ينهض', meaningEn: '', egyptianEquivalent: 'ينهض / يقف', exampleInScene: 'The people rose up together.' },      { term: 'justice', type: 'cultural', meaningAr: 'عدالة', meaningEn: '', egyptianEquivalent: 'عدالة', exampleInScene: 'They fought for justice.' },      { term: 'freedom', type: 'cultural', meaningAr: 'حرية', meaningEn: '', egyptianEquivalent: 'حرية', exampleInScene: 'Freedom is a basic right.' }
+    ],
+    quizzes: [
+      { id: 'quiz-1', type: 'comprehension', questionEn: 'What rhetorical device repeats \'I have a dream\'?', questionAr: 'إيه الأسلوب البلاغي في تكرار I have a dream؟', options: ['التكرار (Anaphora)', 'السخرية', 'الاختصار', 'السؤال البلاغي'], correctIndex: 0, explanationAr: 'تكرار نفس العبارة في بداية الجمل اسمه Anaphora - من أقوى أدوات الخطابة.' }
+    ],
+    speakingLines: [{ en: 'I have a dream that one day this nation will rise up.', arEg: 'عندي حلم إنه في يوم من الأيام الأمة دي هتنهض.' }, { en: 'Let freedom ring from every hill and every valley.', arEg: 'خلي الحرية تدق من كل تل وكل وادي.' }],
+  },
 ];
 
 // Helper to get all videos
