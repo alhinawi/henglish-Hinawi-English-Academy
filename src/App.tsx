@@ -50,7 +50,7 @@ import { TranslationStudioPage } from './views/TranslationStudioPage';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ShieldAlert } from 'lucide-react';
 
-export const App: React.FC = () => {
+export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) => {
   const { 
     session, 
     user: authUser, 
@@ -61,7 +61,7 @@ export const App: React.FC = () => {
     logout 
   } = useAuth();
 
-  const [currentRoute, setCurrentRoute] = useState<PageRoute>('login');
+  const [currentRoute, setCurrentRoute] = useState<PageRoute>(initialRoute ?? 'login');
   const [activeLessonId, setActiveLessonId] = useState<string>('lesson-1');
   const [activeGrammarRuleId, setActiveGrammarRuleId] = useState<string>('present-simple');
   const [verifyEmailParam, setVerifyEmailParam] = useState<string>('');
