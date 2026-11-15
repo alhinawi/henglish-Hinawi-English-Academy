@@ -1,0 +1,145 @@
+// ==============================================================================
+// Henglish Academy - Arcade content builders
+// Every round is generated from real platform content: the vocabulary academy,
+// the movie scenes library and the 5,000-sentence bank. Nothing is made up.
+// ==============================================================================
+
+import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../../data/vocabularyAcademyData';
+import { MOVIE_SCENES_CATALOG } from '../../data/movieScenesData';
+import { loadSentences, SentenceItem } from '../../services/sentencesService';
+
+export interface WordPair {
+  en: string;
+  ar: string;
+  exampleEn?: string;
+}
+
+export interface SentencePair {
+  en: string;
+  ar: string;
+}
+
+export function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+export function sample<T>(arr: T[], n: number): T[] {
+  return shuffle(arr).slice(0, Math.max(0, Math.min(n, arr.length)));
+}
+
+/** All word->meaning pairs on the platform: vocabulary academy + movie keywords. */
+export function allWordPairs(): WordPair[] {
+  const fromAcademy: WordPair[] = VOCABULARY_ACADEMY_WORDS.map((w: VocabWord) => ({
+    en: w.word,
+    ar: w.meaningAr,
+    exampleEn: w.exampleEn,
+  }));
+  const fromScenes: WordPair[] = MOVIE_SCENES_CATALOG.flatMap((s) =>
+    s.subtitles.flatMap((t) => t.keyWords.map((k) => ({ en: k.word, ar: k.meaningAr }))),
+  );
+  const seen = new Set<string>();
+  return [...fromAcademy, ...fromScenes].filter((p) => {
+    const key = p.en.toLowerCase();
+    if (seen.has(key) || !p.en.trim() || !p.ar.trim()) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+/** Movie-scene subtitle lines, always available synchronously. */
+export function sceneSentencePairs(): SentencePair[] {
+  return MOVIE_SCENES_CATALOG.flatMap((s) =>
+    s.subtitles
+      .filter((t) => t.en.trim() && t.arEg.trim())
+      .map((t) => ({ en: t.en.trim(), ar: t.arEg.trim() })),
+  );
+}
+
+/**
+ * The 5,000-sentence bank (async, cached by sentencesService) reduced to the
+ * word counts that work for arcade rounds.
+ */
+export async function bankSentencePairs(minWords = 3, maxWords = 9): Promise<SentencePair[]> {
+  const items: SentenceItem[] = await loadSentences();
+  return items
+    .filter((s) => {
+      const words = s.english.trim().split(/\s+/).length;
+      return words >= minWords && words <= maxWords && s.arabicEg.trim();
+    })
+    .map((s) => ({ en: s.english.trim(), ar: s.arabicEg.trim() }));
+}
+
+/** Every sentence pool we have, movie lines first (they are the platform's face). */
+export async function allSentencePairs(minWords = 3, maxWords = 9): Promise<SentencePair[]> {
+  const scene = sceneSentencePairs().filter((p) => {
+    const w = p.en.split(/\s+/).length;
+    return w >= minWords && w <= maxWords;
+  });
+  const bank = await bankSentencePairs(minWords, maxWords);
+  const seen = new Set<string>();
+  return [...scene, ...bank].filter((p) => {
+    const key = p.en.toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+/** Vocabulary words whose example sentence actually contains the word. */
+export interface GapItem {
+  sentence: string; // with the word replaced by _____
+  answer: string;
+  distractors: string[];
+  translationAr: string;
+}
+
+export function gapFillItems(count: number): GapItem[] {
+  const usable = VOCABULARY_ACADEMY_WORDS.filter((w) =>
+    new RegExp(`\\b${w.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(w.exampleEn),
+  );
+  return sample(usable, count).map((w) => {
+    const re = new RegExp(`\\b${w.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i');
+    const others = sample(
+      usable.filter((o) => o.word.toLowerCase() !== w.word.toLowerCase()),
+      3,
+    ).map((o) => o.word);
+    return {
+      sentence: w.exampleEn.replace(re, '_____'),
+      answer: w.word,
+      distractors: others,
+      translationAr: w.exampleAr,
+    };
+  });
+}
+
+/** Normalize free typing for the listening/spelling games. */
+export function normalizeTyped(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[^a-z0-9'\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/** Fraction (0..1) of the target words the typed answer got right, in order-free comparison. */
+export function wordAccuracy(target: string, typed: string): number {
+  const t = normalizeTyped(target).split(' ').filter(Boolean);
+  const a = normalizeTyped(typed).split(' ').filter(Boolean);
+  if (!t.length) return 0;
+  const remaining = [...a];
+  let hit = 0;
+  for (const w of t) {
+    const i = remaining.indexOf(w);
+    if (i >= 0) {
+      hit++;
+      remaining.splice(i, 1);
+    }
+  }
+  return hit / t.length;
+}
