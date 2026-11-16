@@ -27,6 +27,7 @@ import {
   SourceCost,
   LearningSource,
 } from '../data/sourcesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound } from '../utils/audio';
 
 const CATEGORY_ICONS: Record<SourceCategoryId, React.ReactNode> = {
@@ -58,6 +59,7 @@ const BOOKMARKS_KEY = 'henglish-source-bookmarks';
 
 export const SourcesPage: React.FC = () => {
   const [query, setQuery] = useState('');
+  const appText = useAppTextMap('sourcesData');
   const [costFilter, setCostFilter] = useState<'all' | SourceCost>('all');
   const [levelFilter, setLevelFilter] = useState<string>('all');
   const [bookmarksOnly, setBookmarksOnly] = useState(false);
@@ -119,10 +121,10 @@ export const SourcesPage: React.FC = () => {
             </span>
             <div className="min-w-0">
               <h3 className="text-white font-black text-sm leading-snug truncate" dir="ltr">
-                {source.name}
+                {txText(appText, source.name)}
               </h3>
               {source.subcategory && (
-                <span className="text-[11px] text-[#b9b6d5]">{source.subcategory}</span>
+                <span className="text-[11px] text-[#b9b6d5]">{txText(appText, source.subcategory)}</span>
               )}
             </div>
           </div>
@@ -137,7 +139,7 @@ export const SourcesPage: React.FC = () => {
           </button>
         </div>
 
-        <p className="text-[13px] leading-relaxed text-[#dedbf4]">{source.descriptionAr}</p>
+        <p className="text-[13px] leading-relaxed text-[#dedbf4]">{txText(appText, source.descriptionAr)}</p>
 
         <div className="mt-auto flex items-center justify-between gap-2 flex-wrap">
           <div className="flex items-center gap-1.5 flex-wrap">
@@ -295,7 +297,7 @@ export const SourcesPage: React.FC = () => {
                   onClick={() => setFiltersOpen(false)}
                   className="px-2 py-0.5 rounded-lg hover:bg-white/5 hover:text-[#41e7ff] transition-colors"
                 >
-                  {cat.labelAr}
+                  {txText(appText, cat.labelAr)}
                 </a>
               ))}
             </div>
@@ -335,8 +337,8 @@ export const SourcesPage: React.FC = () => {
                     {items.length}
                   </span>
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-black text-white">{cat.labelAr}</h2>
-                <p className="text-sm text-[#dedbf4] max-w-2xl">{cat.descriptionAr}</p>
+                <h2 className="text-2xl sm:text-3xl font-black text-white">{txText(appText, cat.labelAr)}</h2>
+                <p className="text-sm text-[#dedbf4] max-w-2xl">{txText(appText, cat.descriptionAr)}</p>
               </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">{items.map(renderCard)}</div>
@@ -364,8 +366,8 @@ export const SourcesPage: React.FC = () => {
               key={tip.id}
               className="glass-panel rounded-2xl border border-white/10 p-4 space-y-2 hover:border-[#ffd166]/40 transition-colors"
             >
-              <h3 className="text-[#ffd166] font-black text-sm">{tip.title}</h3>
-              <p className="text-[13px] leading-relaxed text-[#dedbf4]">{tip.body}</p>
+              <h3 className="text-[#ffd166] font-black text-sm">{txText(appText, tip.title)}</h3>
+              <p className="text-[13px] leading-relaxed text-[#dedbf4]">{txText(appText, tip.body)}</p>
             </div>
           ))}
         </div>
