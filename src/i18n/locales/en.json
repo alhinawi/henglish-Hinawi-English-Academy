@@ -1892,5 +1892,6 @@
   "tts.licenseStatus": "License status:",
   "tts.licLicensed": "Commercial licensed",
   "tts.licEval": "Evaluation only",
-  "tts.licOpen": "Open / local"
+  "tts.licOpen": "Open / local",
+  "tts.healthUnavailable": "TTS engine health metrics are unavailable right now. Try refreshing."
 }

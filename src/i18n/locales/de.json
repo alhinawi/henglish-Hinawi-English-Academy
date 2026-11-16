@@ -1892,5 +1892,6 @@
   "tts.licenseStatus": "Lizenzstatus:",
   "tts.licLicensed": "Kommerziell lizenziert",
   "tts.licEval": "Nur Testversion",
-  "tts.licOpen": "Offen / lokal"
+  "tts.licOpen": "Offen / lokal",
+  "tts.healthUnavailable": "Die Gesundheitsmetriken der TTS-Engines sind derzeit nicht verfügbar. Bitte aktualisieren."
 }
