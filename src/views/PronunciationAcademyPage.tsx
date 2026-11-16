@@ -81,7 +81,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
       {/* 1. MINIMAL PAIRS TRAINER */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10 min-w-0">
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
               <Ear className="w-6 h-6 text-[#ffd166]" />
@@ -92,7 +92,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             </p>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 overflow-x-auto max-w-full pb-1 [scrollbar-width:thin]">
             {MINIMAL_PAIRS_DATA.map((p, idx) => (
               <button
                 key={p.id}
@@ -102,7 +102,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
                   setTestedSound(null);
                   setQuizScore(null);
                 }}
-                className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   activePairIdx === idx
                     ? 'bg-[#c4ff55] text-[#0c0b20] font-black'
                     : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
