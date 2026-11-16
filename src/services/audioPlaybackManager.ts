@@ -19,6 +19,8 @@ type Listener = (state: PlaybackState) => void;
 
 class AudioPlaybackManager {
   private static instance: AudioPlaybackManager;
+  private generation = 0;
+  private resetTimer: ReturnType<typeof setTimeout> | null = null;
   private currentAudio: HTMLAudioElement | null = null;
   private state: PlaybackState = {
     wordId: null,
@@ -58,6 +60,9 @@ class AudioPlaybackManager {
    * Stop any running audio immediately
    */
   public stop(): void {
+    this.generation++;
+    if (this.resetTimer !== null) clearTimeout(this.resetTimer);
+    this.resetTimer = null;
     if (this.currentAudio) {
       try {
         this.currentAudio.pause();
@@ -102,6 +107,7 @@ class AudioPlaybackManager {
 
     // Cancel any previous playback
     this.stop();
+    const generation = this.generation;
 
     this.notify({
       wordId,
@@ -116,36 +122,44 @@ class AudioPlaybackManager {
         this.currentAudio = audio;
 
         audio.addEventListener('play', () => {
+          if (generation !== this.generation || this.currentAudio !== audio) return;
           this.notify({ status: 'playing', source: 'remote-audio' });
         });
 
         audio.addEventListener('ended', () => {
+          if (generation !== this.generation || this.currentAudio !== audio) return;
           this.notify({ status: 'idle', wordId: null, accent: null, source: null });
           this.currentAudio = null;
         });
 
         audio.addEventListener('error', () => {
           // Gracefully fallback to Web Speech API
-          this.fallbackSpeechSynthesis(wordId, wordText, accent);
+          this.fallbackSpeechSynthesis(wordId, wordText, accent, generation);
         });
 
         await audio.play();
         return;
       } catch {
         // Fallback to speech synthesis
-        this.fallbackSpeechSynthesis(wordId, wordText, accent);
+        this.fallbackSpeechSynthesis(wordId, wordText, accent, generation);
         return;
       }
     }
 
     // Directly use speech synthesis if no remote URL
-    this.fallbackSpeechSynthesis(wordId, wordText, accent);
+    this.fallbackSpeechSynthesis(wordId, wordText, accent, generation);
   }
 
-  private fallbackSpeechSynthesis(wordId: string, text: string, accent: PronunciationAccent): void {
+  private fallbackSpeechSynthesis(wordId: string, text: string, accent: PronunciationAccent, generation: number): void {
+    if (generation !== this.generation || this.state.source === 'speech-synthesis' && this.state.status === 'playing') return;
+    // Both an error event and a rejected play promise can arrive for one remote clip.
+    if (this.currentAudio) {
+      try { this.currentAudio.pause(); } catch { /* already stopped */ }
+      this.currentAudio = null;
+    }
     if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
       this.notify({ status: 'error', source: null });
-      setTimeout(() => this.stop(), 1500);
+      this.resetTimer = setTimeout(() => { if (generation === this.generation) this.stop(); }, 1500);
       return;
     }
 
@@ -156,14 +170,14 @@ class AudioPlaybackManager {
 
       // Automatically reset status after approximate duration based on word length
       const durationMs = Math.max(1200, text.length * 90);
-      setTimeout(() => {
-        if (this.state.wordId === wordId && this.state.accent === accent) {
+      this.resetTimer = setTimeout(() => {
+        if (generation === this.generation) {
           this.notify({ status: 'idle', wordId: null, accent: null, source: null });
         }
       }, durationMs);
     } catch {
       this.notify({ status: 'error', source: null });
-      setTimeout(() => this.stop(), 1500);
+      this.resetTimer = setTimeout(() => { if (generation === this.generation) this.stop(); }, 1500);
     }
   }
 }
