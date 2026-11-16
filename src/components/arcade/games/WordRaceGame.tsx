@@ -1,20 +1,17 @@
 // سباق الترجمة - which English word matches this Arabic meaning? (reverse sprint)
 import React, { useEffect, useRef, useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
-const META: ArcadeGameMeta = {
-  id: 'word-race',
-  title: 'سباق الترجمة',
-  tagline: 'المعنى بالعربي و4 كلمات إنجليزية.. اختار الصح قبل ما العد ينزل. كل إجابة صح بترجعلك وقت!',
-};
-
 const START_TIME = 10;
 const MAX_TIME = 15;
 
 export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const META: ArcadeGameMeta = { id: 'word-race', title: t('ah.gameWordRace'), tagline: t('arc.raceIntro') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [pool, setPool] = useState<WordPair[]>([]);

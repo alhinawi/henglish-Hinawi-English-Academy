@@ -2691,5 +2691,17 @@
   "mm.intro": "12 face-down cards: 6 sentences from the platform and 6 translations. Remember where each matching pair is.",
   "mm.loading": "Preparing cards...",
   "mm.result": "Completed in {count} moves. Fewer moves mean a higher score.",
-  "mm.moves": "Moves: {count}"
+  "mm.moves": "Moves: {count}",
+  "arc.sprintIntro": "An English word and 4 Arabic choices. Translate as many as you can in 60 seconds. Each correct answer earns a point, with a bonus every 3 in a row.",
+  "arc.raceIntro": "An Arabic meaning and 4 English words. Pick the right word before time runs out. Each correct answer adds time.",
+  "arc.matchIntro": "Match 8 English words with their shuffled Arabic meanings. Try to make as few mistakes as possible.",
+  "arc.spellIntro": "Read the Arabic meaning and spell the English word. You can listen to it too. 10 words.",
+  "arc.gapIntro": "Complete sentences from the platform by picking the missing word from 4 choices. 10 rounds.",
+  "arc.combo": "{count} in a row! Next one earns a bonus",
+  "arc.mistakes": "Mistakes: {count}. Mistakes reduce your score.",
+  "arc.listen": "Listen to the word",
+  "arc.correct": "Correct answer:",
+  "arc.check": "Check",
+  "arc.spellPlaceholder": "Spell it in English...",
+  "arc.spellLabel": "Spell the English word"
 }

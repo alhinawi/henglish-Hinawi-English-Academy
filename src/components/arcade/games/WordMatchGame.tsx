@@ -1,19 +1,16 @@
 // اقتران الكلمات - match every English word with its Arabic meaning.
 import React, { useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
-const META: ArcadeGameMeta = {
-  id: 'word-match',
-  title: 'اقتران الكلمات',
-  tagline: '8 كلمات إنجليزية قصادهم معانيهم بالعربي متلخبطين.. وصّل كل كلمة بمعناها بأقل غلطات.',
-};
-
 const PAIRS = 8;
 
 export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const META: ArcadeGameMeta = { id: 'word-match', title: t('ah.gameWordMatch'), tagline: t('arc.matchIntro') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [left, setLeft] = useState<WordPair[]>([]);
@@ -84,7 +81,7 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
         best={progress.best[META.id] ?? score}
         onReplay={start}
         onBack={onExit}
-        extra={<p className="text-xs text-[#8f8cb0]">غلطات: {mistakes} - كل غلطة بتنقص نقطتين</p>}
+        extra={<p className="text-xs text-[#8f8cb0]">{t('arc.mistakes').replace('{count}', String(mistakes))}</p>}
       />
     );
 
