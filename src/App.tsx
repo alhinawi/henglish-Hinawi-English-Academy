@@ -1,7 +1,7 @@
 import { BadgesPage } from './components/BadgeCollection';
 import { useArcadeProgress } from './services/arcadeProgressService';
 import { combinedStudyStreak } from './utils/studyStreak';
-import React, { useState, useEffect, lazy, Suspense } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { PageRoute } from './types';
 import { AdminServerGate } from './components/admin/AdminServerGate';
 import { MainLayout } from './components/layout/MainLayout';
@@ -81,6 +81,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     refreshSession,
   } = useAuth();
 
+  const navigationVersion = useRef(0);
+  useEffect(() => () => { navigationVersion.current += 1; }, []);
   const [currentRoute, setCurrentRoute] = useState<PageRoute | null>(initialRoute ?? null);
   const [activeLessonId, setActiveLessonId] = useState<string>('lesson-1');
   const [activeGrammarRuleId, setActiveGrammarRuleId] = useState<string>('present-simple');
@@ -285,6 +287,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   }, [session]);
 
   const handleNavigate = (route: PageRoute | string, targetId?: string) => {
+    const version = ++navigationVersion.current;
     const castRoute = route as PageRoute;
     setCurrentRoute(castRoute);
 
@@ -313,11 +316,19 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
       }
     }
     if (castRoute === 'grammar' || castRoute === 'courses/grammar') {
-      const savedScrollY = sessionStorage.getItem('henglish:grammarScrollY');
-      if (savedScrollY) {
-        const y = parseInt(savedScrollY, 10) || 0;
-        requestAnimationFrame(() => window.scrollTo({ top: y, behavior: 'instant' as ScrollBehavior }));
-        setTimeout(() => window.scrollTo({ top: y, behavior: 'instant' as ScrollBehavior }), 250);
+      let savedScrollY: string | null = null;
+      try { savedScrollY = sessionStorage.getItem('henglish:grammarScrollY'); } catch {
+        // Optional scroll storage must not interrupt navigation.
+      }
+      const y = savedScrollY?.trim() ? Number(savedScrollY) : NaN;
+      if (Number.isFinite(y) && y >= 0) {
+        const expectedHash = window.location.hash;
+        const restore = () => {
+          if (navigationVersion.current !== version || window.location.hash !== expectedHash) return;
+          window.scrollTo({ top: y, behavior: 'instant' as ScrollBehavior });
+        };
+        requestAnimationFrame(restore);
+        setTimeout(restore, 250);
         return;
       }
     }
