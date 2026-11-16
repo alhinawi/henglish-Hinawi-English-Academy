@@ -46,6 +46,9 @@ export function loadExamVocabIndex(exam: ExamId): Promise<ExamVocabIndex> {
     indexCache[exam] = fetch(`/data/${exam}/vocab/vocab-index.json`).then((res) => {
       if (!res.ok) throw new Error(`Failed to load ${exam} index: ${res.status}`);
       return res.json() as Promise<ExamVocabIndex>;
+    }).catch((error) => {
+      delete indexCache[exam];
+      throw error;
     });
   }
   return indexCache[exam]!;
@@ -59,6 +62,9 @@ function loadChunk(exam: ExamId, file: string): Promise<ExamVocabEntry[]> {
       fetch(`/data/${exam}/vocab/chunks/${file}`).then((res) => {
         if (!res.ok) throw new Error(`Failed to load ${exam} chunk ${file}: ${res.status}`);
         return res.json() as Promise<ExamVocabEntry[]>;
+      }).catch((error) => {
+        chunkCache.delete(key);
+        throw error;
       })
     );
   }
