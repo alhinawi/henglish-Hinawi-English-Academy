@@ -53,8 +53,11 @@ interface PhraseBankPanelProps {
 }
 
 export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr, blurbAr }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const txMap = useContentMap(bank);
+  // The bank's verified/reviewed label covers the ar/en source only; other
+  // UI languages show machine-translated overlays, so drop the claim there.
+  const showVerified = lang === 'ar' || lang === 'en';
   const [total, setTotal] = useState<number | null>(null);
   const [entries, setEntries] = useState<PhraseEntry[]>([]);
   const [loading, setLoading] = useState(true);
@@ -211,7 +214,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
         <p className="text-sm text-[#b9b6d5] leading-relaxed">{blurbAr}</p>
         {total !== null && (
           <p className="text-xs font-bold text-[#ffd166]">
-            {total.toLocaleString('en')} {bank === 'idioms' ? 'Idiom' : bank === 'slang' ? 'Slang' : 'Gen Z'} {t('pb.verifiedSuffix')}
+            {total.toLocaleString('en')} {bank === 'idioms' ? 'Idiom' : bank === 'slang' ? 'Slang' : 'Gen Z'} {showVerified ? t('pb.verifiedSuffix') : ''}
           </p>
         )}
       </div>
