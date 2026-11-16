@@ -80,3 +80,17 @@ export const COURSES_CATALOG: CourseItem[] = [
     ctaLabel: 'ابدأ التدريب',
   },
 ];
+
+/** Page-level copy for the courses catalog (Arabic source of truth). */
+export const COURSES_PAGE_COPY = {
+  heroTitle: 'دليل الكورسات والأكاديمية الشاملة',
+  heroSubtitle: 'اختر مسارك التعليمي المفضل لتطوير قواعدك، طلاقتك النطقية، ومراسلاتك المهنية باللغة الإنجليزية بأعلى معايير الإتقان.',
+  promoChip: 'أكاديمية القواعد الكبرى',
+  promoTitle: 'هل تبحث عن شرح كل أزمنة وقواعد الإنجليزي بالترتيب؟',
+  promoBody: 'استعرض أكاديمية الجرامر الشاملة: أكثر من 50 قاعدة من الصفر للاحتراف، كل قاعدة بشرح مبسط وأمثلة منطوقة وكويز فهم.',
+  promoCta: 'تصفح الأكاديمية الشاملة',
+  filterLabel: 'تصفية حسب المستوى:',
+  allLevels: 'جميع المستويات',
+  lessonsSuffix: 'دروس',
+  defaultCta: 'استعرض المحتوى',
+};
