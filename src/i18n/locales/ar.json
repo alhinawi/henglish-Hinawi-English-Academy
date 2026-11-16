@@ -2804,5 +2804,19 @@
   "vie.unverified": "مش ممكن تأكيد السماح بتضمين الفيديو. الاستيراد متوقف لحد ما التحقق ينجح.",
   "vcl.business": "إنجليزي الأعمال والشركات",
   "vcl.idioms": "تعبيرات واصطلاحات متقدمة",
-  "vcl.daily": "محادثات الحياة اليومية"
+  "vcl.daily": "محادثات الحياة اليومية",
+  "atm.grammar-teacher.name": "معلم القواعد",
+  "atm.grammar-teacher.description": "يشرح قواعد وأزمنة الإنجليزية بالتفصيل وبالمصري المبسط مع ربطها بدروس المنصة.",
+  "atm.conversation-partner.name": "شريك المحادثة",
+  "atm.conversation-partner.description": "حوار حي وتفاعلي في مواقف حقيقية (مطارات، فنادق، مطاعم، عمل) مع تصحيح ذكي وودي.",
+  "atm.vocabulary-coach.name": "مدرب المفردات",
+  "atm.vocabulary-coach.description": "توسيع حصيلتك اللغوية بالمتلازمات Collocations والأفعال الاصطلاحية Phrasal Verbs والرموز الصوتية.",
+  "atm.writing-assistant.name": "مساعد الكتابة",
+  "atm.writing-assistant.description": "تدقيق المقالات والإيميلات المهنية، تصويب القواعد، وإعادة صياغة العبارات بأسلوب طبيعي.",
+  "atm.pronunciation-coach.name": "مدرب النطق",
+  "atm.pronunciation-coach.description": "مخارج الحروف، أصوات IPA، التشديد اللفظي Stress، والفروق بين اللكنة الأمريكية والبريطانية.",
+  "atm.exam-trainer.name": "مدرب الامتحانات",
+  "atm.exam-trainer.description": "تدريب على أسئلة اختبارات الكفاءة الرسمية، إدارة الوقت، ونماذج امتحانات تفاعلية مع التصحيح.",
+  "atm.interview-coach.name": "مدرب المقابلات",
+  "atm.interview-coach.description": "محاكاة مقابلات التوظيف بالإنجليزية للشركات العالمية وفق أسلوب STAR وتطوير الإجابات السلوكية."
 }
