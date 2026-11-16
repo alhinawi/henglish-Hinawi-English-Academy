@@ -29,6 +29,8 @@ export const GeneratedQuestionSchema = z.object({
   skillCategory: z
     .enum(['grammar', 'vocabulary', 'reading', 'listening', 'writing', 'usage'])
     .optional(),
+}).refine(q => q.correctAnswerIndex < q.options.length, {
+  message: 'Answer index must be within options', path: ['correctAnswerIndex'],
 });
 
 export const GeneratedQuestionsListSchema = z.array(GeneratedQuestionSchema).min(1);
@@ -149,19 +151,13 @@ export function validateQuestionsJson(rawText: string): ValidatedGeneratedQuesti
     throw new Error('AI response is not an array of questions');
   }
 
-  // Parse each question, repairing minor index mismatches if safe
+  // IDs may be supplied locally; the correct answer must come from the source.
   const parsed = GeneratedQuestionsListSchema.parse(
     arrayData.map((q, idx) => {
       const qObj = q as Record<string, unknown>;
-      const options = Array.isArray(qObj.options) ? qObj.options : [];
-      let ansIdx = Number(qObj.correctAnswerIndex ?? 0);
-      if (ansIdx < 0 || ansIdx >= options.length) {
-        ansIdx = 0;
-      }
       return {
         ...qObj,
         id: qObj.id || `gen-${Date.now()}-${idx + 1}`,
-        correctAnswerIndex: ansIdx,
       };
     })
   );
