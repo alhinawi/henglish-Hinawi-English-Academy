@@ -43,12 +43,15 @@ import {
   Trophy,
   HelpCircle,
 } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
+import { isAiServiceUnavailable } from '../services/aiAvailability';
 
 interface TranslationStudioPageProps {
   userProfile?: UserProfile;
 }
 
 export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ userProfile }) => {
+  const { t } = useLanguage();
   // Navigation active tab
   const [activeTab, setActiveTab] = useState<'studio' | 'documents' | 'voice' | 'ocr' | 'practice' | 'vocab'>('studio');
 
@@ -93,8 +96,12 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       setTranslationResult(result);
       playSound('correct');
     } catch (err) {
-      console.error('Translation execution error:', err);
-      setError('تعذر إتمام الترجمة الذكية. تفضل بالمحاولة مجدداً.');
+      if (isAiServiceUnavailable(err)) {
+        setError(t('ai.unavailable'));
+      } else {
+        console.error('Translation execution error:', err);
+        setError(t('ai.translateFailed'));
+      }
       playSound('wrong');
     } finally {
       setIsLoading(false);
