@@ -2436,5 +2436,13 @@
   "wam.placeholder": "Example: I used this in a work email...",
   "wam.saved": "Saved to vocabulary and the review schedule!",
   "wam.save": "Save to my vocabulary",
-  "wam.unspecified": "Not specified"
+  "wam.unspecified": "Not specified",
+  "pg.lessonTitle": "Complete an interactive grammar lesson",
+  "pg.lessonUnit": "lesson",
+  "pg.flashcardTitle": "Review 10 V3 flashcards",
+  "pg.flashcardUnit": "card",
+  "pg.speakingTitle": "Practice a spoken dialogue",
+  "pg.speakingUnit": "scenario",
+  "pg.quizTitle": "Score 80%+ on a quiz",
+  "pg.quizUnit": "quiz"
 }
