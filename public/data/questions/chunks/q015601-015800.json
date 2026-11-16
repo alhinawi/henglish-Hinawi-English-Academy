@@ -1,0 +1,3538 @@
+[
+ {
+  "id": "q-grm1-013601",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This film is different _____ the book.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "from",
+   "as",
+   "to of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: from.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013602",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Tea is not _____ strong as coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more",
+   "as",
+   "than",
+   "so than"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013603",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is not as old _____ he looks.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "than",
+   "as",
+   "that",
+   "like"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013604",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Her English is as good _____ mine.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "as",
+   "like",
+   "that",
+   "than"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013605",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The test was _____ difficult as I expected.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so than",
+   "than",
+   "more",
+   "as"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013606",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This book is the same _____ that one.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "as",
+   "like",
+   "that",
+   "than"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013607",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Winter here is not as cold _____ in London.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that",
+   "than",
+   "as",
+   "like"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013608",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I earn as _____ as you do.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more",
+   "much",
+   "many",
+   "most"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: much.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013609",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "There are as _____ people here as there.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "most",
+   "more",
+   "many",
+   "much"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: many.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013610",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is so tall as her mother.",
+   "She is as taller as her mother.",
+   "She is as tall than her mother.",
+   "She is as tall as her mother."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: She is as tall as her mother..",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013611",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This phone is not as better as that one.",
+   "This phone is no as good as that one.",
+   "This phone is not so good than that one.",
+   "This phone is not as good as that one."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: This phone is not as good as that one..",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013612",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My bag is the same than yours.",
+   "My bag is same as yours.",
+   "My bag is the same like yours.",
+   "My bag is the same as yours."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: My bag is the same as yours..",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013613",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is different as his brother.",
+   "He is differently from his brother.",
+   "He is different of his brother.",
+   "He is different from his brother."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: He is different from his brother..",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013614",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"As tall than\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح as tall as. as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013615",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Different from\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013616",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Not as big as\" means smaller.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013617",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The same than\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح the same as. as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013618",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I won't go _____ you come with me. (if not)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "unless",
+   "if",
+   "in case"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013619",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Take an umbrella _____ it rains.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "unless",
+   "so that",
+   "in case",
+   "if"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: in case.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013620",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He will fail _____ he studies harder.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "if",
+   "in case",
+   "unless",
+   "because"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013621",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll call you _____ I'm late. (just in case)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "unless",
+   "if",
+   "in case"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: in case.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013622",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You can't enter _____ you have a ticket.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "if",
+   "although",
+   "unless",
+   "in case"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013623",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Take some water _____ you get thirsty.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in case",
+   "so that",
+   "unless",
+   "if"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: in case.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013624",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She won't pass _____ she works hard.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "in case",
+   "unless",
+   "if"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013625",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll stay at home _____ it rains.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in case of",
+   "because",
+   "unless",
+   "if"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: if.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013626",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Keep the receipt _____ you need to return it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "unless",
+   "if",
+   "in case"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: in case.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013627",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ you hurry, you will miss the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Because",
+   "Unless",
+   "In case",
+   "If not"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: Unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013628",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Don't call me _____ it is urgent.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "in case",
+   "if",
+   "unless"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013629",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He took a jacket _____ it got cold.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "if",
+   "so",
+   "in case",
+   "unless"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: in case.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013630",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We'll go to the beach _____ it is too hot.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "unless",
+   "because",
+   "in case",
+   "if"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: unless.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013631",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Write it down _____ you forget.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in case",
+   "if",
+   "unless",
+   "because"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: in case.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013632",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I won't help you unless you will ask.",
+   "I won't help you in case you ask.",
+   "I won't help you unless you don't ask.",
+   "I won't help you unless you ask."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: I won't help you unless you ask..",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013633",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Take a map unless you get lost.",
+   "Take a map if case you get lost.",
+   "Take a map in case you will get lost.",
+   "Take a map in case you get lost."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: Take a map in case you get lost..",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013634",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Unless you will leave now, you'll be late.",
+   "Unless leave now, you'll be late.",
+   "Unless you don't leave now, you'll be late.",
+   "Unless you leave now, you'll be late."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل. الإجابة الصحيحة: Unless you leave now, you'll be late..",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013635",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Unless\" means \"if not\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013636",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Unless you don't hurry\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. unless فيها معنى النفي فبنقول Unless you hurry. unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013637",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"In case\" is used for being prepared.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013638",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I'll go unless it rains\" means I'll go if it doesn't rain.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. unless معناها if not. in case معناها احتياطا لو حصل حاجة. وبعدهم مضارع بسيط للمستقبل.",
+  "topic": "Grammar: unless and in case (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013639",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ student has a book. (one by one)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Whole",
+   "Both",
+   "Each",
+   "All"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Each.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013640",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ day I walk to school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Whole",
+   "Both",
+   "All",
+   "Every"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Every.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013641",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ the students are here.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Every",
+   "All",
+   "Whole",
+   "Each"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: All.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013642",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I spent the _____ day at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "all",
+   "each",
+   "every",
+   "whole"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: whole.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013643",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has read the _____ book.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "all",
+   "every",
+   "whole",
+   "both"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: whole.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013644",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "There are 30 students and _____ of them passed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "each",
+   "whole",
+   "all",
+   "every"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: all.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013645",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ person in the room was quiet.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Whole",
+   "Both",
+   "Every",
+   "All"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Every.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013646",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ of the boys has a bike.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Both",
+   "Whole",
+   "All",
+   "Each"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Each.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013647",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She worked _____ day yesterday. (the full day)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "each",
+   "whole",
+   "every",
+   "all"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: all.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013648",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We eat out _____ Friday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "every",
+   "all",
+   "each of",
+   "whole"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: every.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013649",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The _____ family came to the party.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "all",
+   "whole",
+   "every",
+   "each"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: whole.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013650",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ people like music.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Most",
+   "Every",
+   "Whole",
+   "Each"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Most.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013651",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He gave a gift to _____ child.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "all",
+   "whole",
+   "both of",
+   "each"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: each.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013652",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It rained _____ night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "all",
+   "every",
+   "each",
+   "whole"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: all.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013653",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Every student have a pen.",
+   "All student has a pen.",
+   "Every students has a pen.",
+   "Every student has a pen."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Every student has a pen..",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013654",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Every the children are happy.",
+   "Each the children are happy.",
+   "All the children is happy.",
+   "All the children are happy."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: All the children are happy..",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013655",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I ate whole the cake.",
+   "I ate every cake whole.",
+   "I ate the all cake.",
+   "I ate the whole cake."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: I ate the whole cake..",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013656",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Each girl have a bag.",
+   "Each of girl has a bag.",
+   "Each girls has a bag.",
+   "Each girl has a bag."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد. الإجابة الصحيحة: Each girl has a bag..",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013657",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Every\" is followed by a singular noun.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013658",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Every students\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح every student. every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013659",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The whole day\" means the full day.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013660",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"All the students are here\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. every وeach مع المفرد. all مع الجمع أو غير المعدود. whole بعد the/my + اسم مفرد.",
+  "topic": "Grammar: each, every, all, whole (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013661",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is good _____ math.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "at",
+   "of",
+   "in"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: at.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013662",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is afraid _____ spiders.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "with",
+   "of",
+   "from",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: of.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013663",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I am interested _____ history.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "of",
+   "in",
+   "at",
+   "on"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: in.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013664",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They are proud _____ their son.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "about",
+   "from",
+   "of",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: of.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013665",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I am worried _____ the exam.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "of",
+   "about",
+   "from",
+   "with"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: about.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013666",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is angry _____ his brother.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "with",
+   "of",
+   "from"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: with.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013667",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is tired _____ waiting.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "from to",
+   "in",
+   "about",
+   "of"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: of.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013668",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My sister is bad _____ cooking.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "of",
+   "at",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: at.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013669",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We are excited _____ the trip.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "about",
+   "of",
+   "from",
+   "with"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: about.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013670",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is married _____ my cousin.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "from",
+   "with",
+   "to",
+   "of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: to.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013671",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The room is full _____ people.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "with of",
+   "in",
+   "of",
+   "from"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: of.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013672",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is different _____ her sister.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "from",
+   "in",
+   "of",
+   "than"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: from.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013673",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I am sorry _____ the mistake.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "with",
+   "for",
+   "of",
+   "from"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: for.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013674",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is famous _____ his songs.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "with",
+   "from",
+   "of",
+   "for"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: for.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013675",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Are you ready _____ the test?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "from",
+   "of",
+   "with"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: for.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013676",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is kind _____ everyone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "of",
+   "from",
+   "in"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: to.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013677",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The city is close _____ the sea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "of",
+   "to",
+   "with",
+   "from"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: to.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013678",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm very pleased _____ your results.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "from",
+   "in",
+   "with",
+   "of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: with.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013679",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm not satisfied _____ my grade.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "of",
+   "with",
+   "in",
+   "from"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: with.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013680",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is jealous _____ his friend's success.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "from",
+   "of",
+   "in",
+   "with"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: of.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013681",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I am good of English.",
+   "I am good on English.",
+   "I am good in English.",
+   "I am good at English."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: I am good at English..",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013682",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is afraid at dogs.",
+   "She is afraid with dogs.",
+   "She is afraid from dogs.",
+   "She is afraid of dogs."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: She is afraid of dogs..",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013683",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is interested of football.",
+   "He is interested on football.",
+   "He is interested at football.",
+   "He is interested in football."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: He is interested in football..",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013684",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We are proud about you.",
+   "We are proud for you.",
+   "We are proud from you.",
+   "We are proud of you."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: We are proud of you..",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013685",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I am worried from him.",
+   "I am worried with him.",
+   "I am worried of him.",
+   "I am worried about him."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about. الإجابة الصحيحة: I am worried about him..",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013686",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Good at\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013687",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Afraid from\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح afraid of. بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013688",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Interested on\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح interested in. بعض الصفات بتتبعها حروف جر ثابتة: good at, afraid of, interested in, tired of, angry with, proud of, worried about.",
+  "topic": "Grammar: adjectives with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013689",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Please listen _____ me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "on",
+   "to",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013690",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Look _____ this picture.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "on",
+   "to",
+   "at"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: at.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013691",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm waiting _____ the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "on",
+   "for",
+   "to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: for.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013692",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It depends _____ the weather.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "of",
+   "to",
+   "from"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: on.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013693",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This book belongs _____ me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "at",
+   "on",
+   "for"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013694",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I was thinking _____ you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at of",
+   "for",
+   "on",
+   "about"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: about.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013695",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He talked _____ the manager.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "on",
+   "for",
+   "to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013696",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She looks _____ her baby. (takes care)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "for",
+   "after",
+   "at to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: after.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013697",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm looking _____ my keys. (searching)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "for",
+   "on",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: for.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013698",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We arrived _____ the airport at six.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "to",
+   "at",
+   "in the"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: at.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013699",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is laughing _____ my joke.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "to",
+   "on",
+   "at"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: at.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013700",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She apologized _____ being late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "of",
+   "for",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: for.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013701",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I agree _____ you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "with",
+   "on",
+   "of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: with.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013702",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He pays _____ the tickets.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "at",
+   "to",
+   "for"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: for.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013703",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They are arguing _____ money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "about",
+   "from",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: about.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013704",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I believe _____ you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "to",
+   "in",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: in.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013705",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is searching _____ a job.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "at",
+   "for",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: for.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013706",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We insisted _____ paying.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "to",
+   "for",
+   "at"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: on.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013707",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He complained _____ the noise.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to",
+   "about",
+   "of",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: about.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013708",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The movie starts _____ eight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "to",
+   "on",
+   "at"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: at.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013709",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I listen at music.",
+   "I listen for music.",
+   "I listen music.",
+   "I listen to music."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: I listen to music..",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013710",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We are waiting to you.",
+   "We are waiting at you.",
+   "We are waiting you.",
+   "We are waiting for you."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: We are waiting for you..",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013711",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is looking to the sky.",
+   "She is looking on the sky.",
+   "She is looking the sky.",
+   "She is looking at the sky."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: She is looking at the sky..",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013712",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It depends to you.",
+   "It depends from you.",
+   "It depends of you.",
+   "It depends on you."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to. الإجابة الصحيحة: It depends on you..",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013713",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Listen music\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح listen to music. بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013714",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Wait for me\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013715",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Depend of\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح depend on. بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013716",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Belong to\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعض الأفعال ليها حروف جر ثابتة: listen to, look at, wait for, depend on, belong to, think about, talk to.",
+  "topic": "Grammar: verbs with prepositions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013717",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ TV when the phone rang.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was watching",
+   "watch",
+   "am watching",
+   "watched"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was watching.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013718",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ when I arrived. (a sleeping process)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is sleeping",
+   "sleeps",
+   "was sleeping",
+   "sleep"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was sleeping.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013719",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "While they _____ football, it started to rain.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are playing",
+   "plays",
+   "were playing",
+   "play"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: were playing.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013720",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ his leg while he was skiing.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "broke",
+   "breaks",
+   "is breaking",
+   "was breaking"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: broke.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013721",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We were having dinner when the lights _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "go out",
+   "went out",
+   "were going out",
+   "are going out"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: went out.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013722",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ a shower when you called.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "take",
+   "takes",
+   "am taking",
+   "was taking"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was taking.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013723",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The boy fell while he _____ a tree.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "climbs",
+   "was climbing",
+   "is climbing",
+   "climb"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was climbing.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013724",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "When I was young, I _____ in a small village. (a state)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "lived",
+   "am living",
+   "living",
+   "live"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: lived.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013725",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ at 8 o'clock last night. (in progress)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "eat",
+   "were eating",
+   "eating",
+   "eats"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: were eating.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013726",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She was crossing the road when a car _____ her.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is hitting",
+   "hit",
+   "hits",
+   "was hitting"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: hit.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013727",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I saw him while I _____ to work.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am walking",
+   "walks",
+   "walk",
+   "was walking"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was walking.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013728",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It _____ when we left the house.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was raining",
+   "is raining",
+   "rains",
+   "rained"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was raining.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013729",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ the news, then he went to bed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watches",
+   "is watching",
+   "watched",
+   "was watching"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: watched.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013730",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "At this time yesterday, I _____ in the garden.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "work",
+   "was working",
+   "am working",
+   "worked"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: was working.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013731",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "What _____ you doing when I called?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "are",
+   "did",
+   "do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: were.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013732",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I was read when he came.",
+   "I reading when he came.",
+   "I read when he was coming.",
+   "I was reading when he came."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: I was reading when he came..",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013733",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "While she was cook, the phone rang.",
+   "While she cooking, the phone rang.",
+   "While she cooked, the phone was ringing.",
+   "While she was cooking, the phone rang."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: While she was cooking, the phone rang..",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013734",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They were talk when the teacher entered.",
+   "They talking when the teacher entered.",
+   "They talked when the teacher was entering.",
+   "They were talking when the teacher entered."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها. الإجابة الصحيحة: They were talking when the teacher entered..",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013735",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I was seeing him yesterday\" is the best choice for a short event.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الأفضل I saw him yesterday لأنها حاجة قصيرة. past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013736",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She was sleeping when I called\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013737",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He was knowing the answer\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. know فعل حالة فبنقول He knew the answer. past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013738",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I was walking when it started to rain\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. past continuous للحاجة الطويلة اللي كانت شغالة، وpast simple للحاجة القصيرة اللي قاطعتها.",
+  "topic": "Grammar: past simple vs past continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013739",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ English every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "study",
+   "studies",
+   "studying",
+   "am studying"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: study.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013740",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Look! The baby _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "smiles",
+   "is smiling",
+   "smile",
+   "smiled"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: is smiling.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013741",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She usually _____ tea, but today she is drinking coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drinks",
+   "is drinking",
+   "drank",
+   "drink"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: drinks.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013742",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ to the gym three times a week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "goes",
+   "is going",
+   "go",
+   "going"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: goes.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013743",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Be quiet! The children _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are sleeping",
+   "sleep",
+   "slept",
+   "sleeps"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: are sleeping.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013744",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Water _____ at 100 degrees.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "boils",
+   "boiled",
+   "boil",
+   "is boiling"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: boils.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013745",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ the answer. (a state)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "know",
+   "knew to",
+   "knows",
+   "am knowing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: know.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013746",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ a new dress today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wears",
+   "is wearing",
+   "wore",
+   "wear"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: is wearing.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013747",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My father _____ at a bank. (his job)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "works",
+   "is working",
+   "working",
+   "work"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: works.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013748",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Where is Ali? He _____ in the kitchen.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cook",
+   "cooked",
+   "cooks",
+   "is cooking"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: is cooking.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013749",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ this film. It is great! (a state)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "liked to",
+   "likes",
+   "am liking",
+   "like"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: like.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013750",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "At the moment, I _____ for a new job.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "looks",
+   "looked",
+   "am looking",
+   "look"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: am looking.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013751",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We _____ to the park every Sunday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "go",
+   "going",
+   "are going",
+   "goes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: go.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013752",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It _____ a lot in winter here.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rains",
+   "is raining",
+   "rained",
+   "rain"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: rains.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013753",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ her homework right now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "do",
+   "is doing",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: is doing.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013754",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ to be a doctor. (a state)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wants",
+   "wanting",
+   "want",
+   "is wanting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: wants.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013755",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I knowing the answer.",
+   "I knows the answer.",
+   "I am knowing the answer.",
+   "I know the answer."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: I know the answer..",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013756",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She working now.",
+   "She is work now.",
+   "She works now.",
+   "She is working now."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: She is working now..",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013757",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He always arriving late.",
+   "He always arrive late.",
+   "He is always arrives late.",
+   "He always arrives late."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: He always arrives late..",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013758",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They watching TV at the moment.",
+   "They are watch TV at the moment.",
+   "They watch TV at the moment.",
+   "They are watching TV at the moment."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous. الإجابة الصحيحة: They are watching TV at the moment..",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013759",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I am wanting a coffee\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. want فعل حالة والصح I want a coffee. present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013760",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She goes to school by bus\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013761",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Look! It rains\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Look! It is raining. present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013762",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I am having lunch now\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن have هنا معناها بتناول. present simple للعادات والحقائق، present continuous لحاجة بتحصل دلوقتي أو مؤقتة. أفعال الحالة (know, like, want) مش بتيجي continuous.",
+  "topic": "Grammar: present simple vs present continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013763",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I am used to _____ up early.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "gets",
+   "got",
+   "getting",
+   "get"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: getting.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013764",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is not used to _____ spicy food.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "eats",
+   "ate",
+   "eat",
+   "eating"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: eating.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013765",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It took me a month to get used to _____ here.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "living",
+   "lives",
+   "live",
+   "lived"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: living.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013766",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ to the cold weather now. (he is accustomed)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "use",
+   "used",
+   "uses",
+   "is used"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: is used.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013767",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They are used to _____ in a big city.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "live",
+   "lives",
+   "living",
+   "lived"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: living.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013768",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You will soon get used to _____ the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "takes",
+   "took",
+   "taking",
+   "take"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: taking.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013769",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I am not used to _____ so much homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "having",
+   "had",
+   "have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: having.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013770",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My grandfather _____ to walk a lot, but now he can't.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "used",
+   "is used",
+   "gets used",
+   "was used"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: used.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013771",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ to driving on the left now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "use",
+   "is used",
+   "uses",
+   "used"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: is used.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013772",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We got used to _____ early.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wake up",
+   "woke up",
+   "wakes up",
+   "waking up"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: waking up.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013773",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I used to working late.",
+   "I am use to working late.",
+   "I am used to work late.",
+   "I am used to working late."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: I am used to working late..",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013774",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He used to smoking.",
+   "He is used smoking.",
+   "He is used to smoke.",
+   "He used to smoke."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: He used to smoke..",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013775",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She got used the noise.",
+   "She get used to the noise.",
+   "She got use to the noise.",
+   "She got used to the noise."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة. الإجابة الصحيحة: She got used to the noise..",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013776",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I am used to get up early\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I am used to getting up early. be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013777",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I used to play chess\" talks about a past habit.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013778",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She is used to the heat\" means she is accustomed to it.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. be used to + اسم أو V-ing معناها متعود على. get used to معناها بتتعود. وused to + فعل للعادة القديمة.",
+  "topic": "Grammar: be used to and get used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013779",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I like pizza.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "So am",
+   "So do",
+   "Neither am",
+   "Neither do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So do.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013780",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I don't like fish.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Neither do",
+   "So do",
+   "Neither don't",
+   "So don't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: Neither do.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013781",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I am tired.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "So am",
+   "So do",
+   "Neither am",
+   "Neither do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So am.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013782",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"She can swim.\" - \"_____ he.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Neither does",
+   "So does",
+   "So can",
+   "Neither can"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So can.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013783",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I haven't finished.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "So have",
+   "Neither haven't",
+   "So haven't",
+   "Neither have"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: Neither have.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013784",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"They went home.\" - \"_____ we.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "So did",
+   "Neither did",
+   "So do",
+   "Neither do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So did.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013785",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I'm not ready.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "So am",
+   "So do",
+   "Neither do",
+   "Neither am"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: Neither am.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013786",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"He works hard.\" - \"_____ his sister.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "So do",
+   "Neither do",
+   "So does",
+   "Neither does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So does.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013787",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I didn't see him.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Neither didn't",
+   "Neither did",
+   "So didn't",
+   "So did"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: Neither did.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013788",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I will help.\" - \"_____ I.\"",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Neither will",
+   "So do",
+   "Neither do",
+   "So will"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So will.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013789",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct agreement. \"I love music.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "So do I.",
+   "Neither do I.",
+   "So am I.",
+   "So I do not."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: So do I..",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013790",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct agreement. \"I can't swim.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Neither I can.",
+   "So can't I.",
+   "So can I.",
+   "Neither can I."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية. الإجابة الصحيحة: Neither can I..",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013791",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I don't know.\" - \"So do I.\" is a correct agreement.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. للموافقة على جملة منفية بنقول Neither do I. للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013792",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I am hungry.\" - \"So am I.\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. للموافقة: so + مساعد + فاعل في الجمل المثبتة، وneither/nor + مساعد + فاعل في الجمل المنفية.",
+  "topic": "Grammar: so do I / neither do I (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013793",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You _____ see a doctor. It looks serious.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have better",
+   "had better",
+   "are better",
+   "would better"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: had better.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013794",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We _____ leave now, or we'll miss the train.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are better",
+   "would better",
+   "have better",
+   "had better"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: had better.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013795",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'd rather _____ at home tonight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to stay",
+   "stay",
+   "staying",
+   "stayed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: stay.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013796",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You had better _____ late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "not be",
+   "aren't",
+   "don't be",
+   "not being"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: not be.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013797",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I would rather _____ tea than coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "to have",
+   "have",
+   "having"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: have.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013798",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She'd rather _____ than watch TV.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "reading",
+   "read",
+   "reads",
+   "to read"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: read.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013799",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He had better _____ his homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to do",
+   "does",
+   "doing",
+   "do"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: do.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013800",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'd rather _____ go out. It's raining.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "no",
+   "not",
+   "never to",
+   "don't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had better + فعل للنصيحة القوية والتحذير. would rather + فعل معناها يفضل. النفي had better not وwould rather not. الإجابة الصحيحة: not.",
+  "topic": "Grammar: had better and would rather (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
