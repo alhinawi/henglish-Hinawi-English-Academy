@@ -350,7 +350,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             {/* Quick Stats Badges */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 shrink-0">
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <span className="text-xl sm:text-2xl font-black text-white block">5,000</span>
+                <span className="text-xl sm:text-2xl font-black text-white block">{allSentences.length.toLocaleString('en-US')}</span>
                 <span className="text-[11px] font-bold text-white/60">{t('sl.stats.total')}</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">

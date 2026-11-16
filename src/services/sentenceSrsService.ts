@@ -37,6 +37,7 @@ export interface SentenceLearningStats {
   streakDays: number;
   lastStudyDate: string;
   masteryScore: number; // 0 to 100 percentage
+  studyDates?: string[]; // UTC review days, recorded only from real reviews
 }
 
 const STORAGE_KEY_SRS = 'henglish_srs_sentences_v1';
@@ -109,6 +110,8 @@ function persistAll() {
  */
 export function reviewSentence(sentenceId: string, rating: ReviewRating): SentenceSrsRecord {
   initStorage();
+  // Retain older latest-review evidence before replacing this record.
+  recomputeStats();
 
   const now = new Date();
   const existing = srsRecords[sentenceId] || {
@@ -169,7 +172,7 @@ export function reviewSentence(sentenceId: string, rating: ReviewRating): Senten
   markRecentlyStudied(sentenceId);
 
   // Update general learning stats
-  recomputeStats();
+  recomputeStats(now);
   persistAll();
 
   return updated;
@@ -178,7 +181,7 @@ export function reviewSentence(sentenceId: string, rating: ReviewRating): Senten
 /**
  * Recomputes aggregate stats, learning streak, and mastery score
  */
-function recomputeStats() {
+function recomputeStats(reviewedAt?: Date) {
   const records = Object.values(srsRecords);
   const total = records.length;
   const remembered = records.filter(r => r.status === 'remembered').length;
@@ -187,19 +190,33 @@ function recomputeStats() {
   const now = new Date();
   const due = records.filter(r => new Date(r.nextReviewAt) <= now).length;
 
-  // Check streak
-  const todayStr = new Date().toISOString().split('T')[0];
-  let streak = stats.streakDays;
-  if (!stats.lastStudyDate) {
-    streak = 1;
-  } else if (stats.lastStudyDate !== todayStr) {
-    const lastDate = new Date(stats.lastStudyDate);
-    const diffDays = Math.floor((now.getTime() - lastDate.getTime()) / (1000 * 3600 * 24));
-    if (diffDays === 1) {
-      streak += 1;
-    } else if (diffDays > 1) {
-      streak = 1; // streak reset
+  // Do not count page views as study. Older aggregate streak/lastStudyDate
+  // fields were polluted by reads, so recover only dated review evidence.
+  const dayMs = 24 * 60 * 60 * 1000;
+  const todayStr = now.toISOString().slice(0, 10);
+  const reviewDays = new Set<string>();
+  if (total > 0) {
+    for (const day of Array.isArray(stats.studyDates) ? stats.studyDates : []) {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(day) && day <= todayStr &&
+          Number.isFinite(Date.parse(day)) && new Date(day).toISOString().slice(0, 10) === day) reviewDays.add(day);
     }
+    for (const record of records) {
+      if (!(record.timesReviewed > 0)) continue;
+      const date = new Date(record.lastReviewedAt);
+      if (Number.isFinite(date.getTime())) {
+        const day = date.toISOString().slice(0, 10);
+        if (day <= todayStr) reviewDays.add(day);
+      }
+    }
+    if (reviewedAt) reviewDays.add(reviewedAt.toISOString().slice(0, 10));
+  }
+  const studyDates = [...reviewDays].sort();
+  let cursor = Date.parse(todayStr);
+  if (!reviewDays.has(todayStr)) cursor -= dayMs;
+  let streak = 0;
+  while (reviewDays.has(new Date(cursor).toISOString().slice(0, 10))) {
+    streak += 1;
+    cursor -= dayMs;
   }
 
   // Mastery score = weighted remembered vs total studied (0 to 100)
@@ -211,7 +228,8 @@ function recomputeStats() {
     forgottenCount: forgotten,
     dueTodayCount: due,
     streakDays: streak,
-    lastStudyDate: todayStr,
+    lastStudyDate: studyDates[studyDates.length - 1] || '',
+    studyDates,
     masteryScore: mastery,
   };
 }
