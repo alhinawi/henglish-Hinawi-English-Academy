@@ -18,40 +18,40 @@ export type AiTutorMode =
 export interface AssistantMetadata {
   id: AiTutorMode;
   nameEn: string;
-  nameAr: string;
+ nameAr: string;
   badge: string;
   shortDescAr: string;
   avatarIcon: string;
-  welcomeGreetingAr: string;
+ welcomeGreetingAr: string;
   welcomeGreetingEn: string;
-  suggestedQuestions: { labelAr: string; promptText: string }[];
+ suggestedQuestions: { labelAr: string; promptText: string }[];
 }
 
 export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'grammar-teacher': {
     id: 'grammar-teacher',
     nameEn: 'Grammar Teacher',
-    nameAr: 'معلم القواعد 🦅',
+ nameAr: 'معلم القواعد',
     badge: 'Master Grammarian',
     shortDescAr: 'يشرح قواعد وأزمنة الإنجليزية بالتفصيل وبالمصري المبسط مع ربطها بدروس المنصة.',
     avatarIcon: 'GraduationCap',
-    welcomeGreetingAr: 'أهلاً بك في أكاديمية القواعد! 🦅 أنا معلمك لشرح وتبسيط أزمنة وتراكيب الإنجليزية. اسألني عن أي زمن، أو الفرق بين قاعدتين، أو اطلب مني كويز سريع لاختبار فهمك!',
+ welcomeGreetingAr: 'أهلاً بك في أكاديمية القواعد! أنا معلمك لشرح وتبسيط أزمنة وتراكيب الإنجليزية. اسألني عن أي زمن، أو الفرق بين قاعدتين، أو اطلب مني كويز سريع لاختبار فهمك!',
     welcomeGreetingEn: 'Welcome to the Grammar Academy! I am your dedicated Grammar Teacher. Ask me any rule or confusion!',
     suggestedQuestions: [
       {
-        labelAr: 'إمتى بستخدم المستقبل التام Future Perfect؟',
+ labelAr: 'إمتى بستخدم المستقبل التام Future Perfect؟',
         promptText: 'إمتى بستخدم المستقبل التام Future Perfect وايه هو تركيبه مع أمثلة وفخاخ شائعة؟',
       },
       {
-        labelAr: 'الفرق بين will و going to بالمصري',
+ labelAr: 'الفرق بين will و going to بالمصري',
         promptText: 'اشرح لي الفرق بين will و going to بالمصري مع أمثلة حية لكل حالة.',
       },
       {
-        labelAr: 'حالات If الشرطية الأربعة مع اختبار سريع',
+ labelAr: 'حالات If الشرطية الأربعة مع اختبار سريع',
         promptText: 'اشرح لي حالات If الشرطية الأربعة (Zero, 1st, 2nd, 3rd) واختبرني بسؤال لكل حالة.',
       },
       {
-        labelAr: 'قاعدة Since و For مع المضارع التام',
+ labelAr: 'قاعدة Since و For مع المضارع التام',
         promptText: 'ما الفرق بين Since و For مع زمن Present Perfect وأشهر الأخطاء فيها؟',
       },
     ],
@@ -59,27 +59,27 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'conversation-partner': {
     id: 'conversation-partner',
     nameEn: 'Conversation Partner',
-    nameAr: 'شريك المحادثة 💬',
+ nameAr: 'شريك المحادثة',
     badge: 'Native Fluency Partner',
     shortDescAr: 'حوار حي وتفاعلي في مواقف حقيقية (مطارات، فنادق، مطاعم، عمل) مع تصحيح ذكي وودي.',
     avatarIcon: 'MessageSquare',
-    welcomeGreetingAr: 'Hi there! 💬 I am your English Conversation Partner. Let\'s practice speaking naturally! Pick a scenario like a coffee shop, an airport, or tell me about your day.',
+ welcomeGreetingAr: 'Hi there! I am your English Conversation Partner. Let\'s practice speaking naturally! Pick a scenario like a coffee shop, an airport, or tell me about your day.',
     welcomeGreetingEn: 'Hi there! I am your conversation partner. Let\'s chat and build your speaking fluency naturally!',
     suggestedQuestions: [
       {
-        labelAr: 'محاكاة في مطار: حجز التذاكر والوزن ✈️',
+ labelAr: 'محاكاة في مطار: حجز التذاكر والوزن',
         promptText: "Let's simulate a conversation at the airport check-in desk. You are the airport agent, and I am the passenger.",
       },
       {
-        labelAr: 'طلب طعام وحجز طاولة في مطعم راقٍ 🍽️',
+ labelAr: 'طلب طعام وحجز طاولة في مطعم راقٍ',
         promptText: "Let's roleplay at a fine dining restaurant. You are the waiter welcoming me and recommending the chef's special.",
       },
       {
-        labelAr: 'محادثة تعارف يومية وتطوير الطلاقة ☕',
+ labelAr: 'محادثة تعارف يومية وتطوير الطلاقة',
         promptText: "Hi! Let's have a friendly casual conversation about hobbies, weekend plans, and learning languages.",
       },
       {
-        labelAr: 'موقف في فندق: طلب خدمة الغرف وتغيير الغرفة 🏨',
+ labelAr: 'موقف في فندق: طلب خدمة الغرف وتغيير الغرفة',
         promptText: "Let's do a roleplay at a hotel reception. I am checking in and want to request a quiet room with a nice view.",
       },
     ],
@@ -87,27 +87,27 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'vocabulary-coach': {
     id: 'vocabulary-coach',
     nameEn: 'Vocabulary Trainer',
-    nameAr: 'مدرب المفردات 📚',
+ nameAr: 'مدرب المفردات',
     badge: 'Lexicon & Idioms Master',
     shortDescAr: 'توسيع حصيلتك اللغوية بالمتلازمات Collocations والأفعال الاصطلاحية Phrasal Verbs والرموز الصوتية.',
     avatarIcon: 'BookA',
-    welcomeGreetingAr: 'مرحباً بك! 📚 أنا مدرب المفردات في Henglish Academy. سأعلمك كيف تختار الكلمة الدقيقة كالمتحدث الأصلي، مع النطق الصحيح والأمثلة الحية.',
+ welcomeGreetingAr: 'مرحباً بك! أنا مدرب المفردات في Henglish Academy. سأعلمك كيف تختار الكلمة الدقيقة كالمتحدث الأصلي، مع النطق الصحيح والأمثلة الحية.',
     welcomeGreetingEn: 'Welcome! I am your Vocabulary Trainer. Expand your active vocabulary, collocations, and idiomatic expressions.',
     suggestedQuestions: [
       {
-        labelAr: '10 كلمات ومصطلحات متقدمة لإنجليزي البيزنس 💼',
+ labelAr: '10 كلمات ومصطلحات متقدمة لإنجليزي البيزنس',
         promptText: 'علمني 10 كلمات ومصطلحات متقدمة (C1/B2) مستخدمة في بيئة العمل والشركات العالمية مع أمثلة.',
       },
       {
-        labelAr: 'الفرق بين Look for و Look after و Look forward to',
+ labelAr: 'الفرق بين Look for و Look after و Look forward to',
         promptText: 'اشرح لي الفروق بين أفعال Look الاصطلاحية (Look for, look after, look forward to, look up to) مع جمل سياقية.',
       },
       {
-        labelAr: 'متلازمات لفظية قوية مع الفعل Make و Do',
+ labelAr: 'متلازمات لفظية قوية مع الفعل Make و Do',
         promptText: 'ما هي أهم المتلازمات اللفظية (Collocations) مع Make ومع Do وكيف لا أخلط بينهما؟',
       },
       {
-        labelAr: 'اختبرني في تصريفات الأفعال الشاذة V1-V2-V3 🎯',
+ labelAr: 'اختبرني في تصريفات الأفعال الشاذة V1-V2-V3',
         promptText: 'اختبرني في 5 أفعال غير منتظمة (Irregular Verbs) نستخدمها يومياً، واطلب مني وضع كل فعل في جملة.',
       },
     ],
@@ -115,27 +115,27 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'writing-assistant': {
     id: 'writing-assistant',
     nameEn: 'Writing Assistant',
-    nameAr: 'مساعد الكتابة ✍️',
+ nameAr: 'مساعد الكتابة',
     badge: 'Editorial & Academic Specialist',
     shortDescAr: 'تدقيق المقالات والإيميلات المهنية، تصويب القواعد، وإعادة صياغة العبارات بأسلوب طبيعي.',
     avatarIcon: 'PenTool',
-    welcomeGreetingAr: 'أهلاً بك في استوديو الكتابة! ✍️ أرسل لي أي إيميل، مقال، أو فقرة كتبتها بالإنجليزية. سأقوم بتدقيقها، تصحيح الأخطاء، واقتراح صياغات أكثر احترافية.',
+ welcomeGreetingAr: 'أهلاً بك في استوديو الكتابة! أرسل لي أي إيميل، مقال، أو فقرة كتبتها بالإنجليزية. سأقوم بتدقيقها، تصحيح الأخطاء، واقتراح صياغات أكثر احترافية.',
     welcomeGreetingEn: 'Welcome to the Writing Studio! Paste your draft here, and I will refine your grammar, clarity, and tone.',
     suggestedQuestions: [
       {
-        labelAr: 'راجع هذه الجملة وصحح أخطاءها: "I am agree with you"',
+ labelAr: 'راجع هذه الجملة وصحح أخطاءها: "I am agree with you"',
         promptText: 'راجع هذه الجملة وصحح أخطاءها واشرح السبب: "I am agree with your proposal because it is make a big sense."',
       },
       {
-        labelAr: 'صياغة إيميل رسمي للاعتذار عن تأخر التسليم ✉️',
+ labelAr: 'صياغة إيميل رسمي للاعتذار عن تأخر التسليم',
         promptText: 'اكتب لي نموذج إيميل عمل رسمي ومهذب للاعتذار لعميل عن تأخير تسليم مشروع ليومين مع تقديم حل بديل.',
       },
       {
-        labelAr: 'كيف أحسن كتابة الإيسي (Essay) وأستخدم روابط أكاديمية؟',
+ labelAr: 'كيف أحسن كتابة الإيسي (Essay) وأستخدم روابط أكاديمية؟',
         promptText: 'ما هي أفضل الروابط الأكاديمية (Cohesive Devices) لتنظيم الأفكار في مقال الرأي أو الآيلتس؟',
       },
       {
-        labelAr: 'إعادة صياغة سيرة ذاتية (CV Bullet Points) 📄',
+ labelAr: 'إعادة صياغة سيرة ذاتية (CV Bullet Points)',
         promptText: 'كيف أعيد صياغة مهامي في الـ CV باستخدام أفعال حركة قوية (Action Verbs) ونتائج ملموسة؟',
       },
     ],
@@ -143,27 +143,27 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'pronunciation-coach': {
     id: 'pronunciation-coach',
     nameEn: 'Pronunciation Coach',
-    nameAr: 'مدرب النطق 🗣️',
+ nameAr: 'مدرب النطق',
     badge: 'Phonetics & Accent Guide',
     shortDescAr: 'مخارج الحروف، أصوات IPA، التشديد اللفظي Stress، والفروق بين اللكنة الأمريكية والبريطانية.',
     avatarIcon: 'Mic',
-    welcomeGreetingAr: 'أهلاً بك! 🗣️ أنا مدرب النطق والأصوات. سأشرح لك مخارج الحروف الصعبة على المتحدثين بالعربية (P/B, TH, V/F)، وتدريبات الحد الأدنى Minimal Pairs.',
+ welcomeGreetingAr: 'أهلاً بك! أنا مدرب النطق والأصوات. سأشرح لك مخارج الحروف الصعبة على المتحدثين بالعربية (P/B, TH, V/F)، وتدريبات الحد الأدنى Minimal Pairs.',
     welcomeGreetingEn: 'Welcome! I am your Pronunciation & Phonetics Coach. Master native sounds, syllable stress, and accents.',
     suggestedQuestions: [
       {
-        labelAr: 'كيف أنطق صوت TH في Think مقابل This؟ 🎙️',
+ labelAr: 'كيف أنطق صوت TH في Think مقابل This؟',
         promptText: 'اشرح لي الفرق بين صوتي TH غير المهتز /θ/ والمهتز /ð/ وكيف أضع لساني مع أمثلة وتدريب.',
       },
       {
-        labelAr: 'الفرق في النطق بين Ship و Sheep (الأصوات القصيرة والطويلة)',
+ labelAr: 'الفرق في النطق بين Ship و Sheep (الأصوات القصيرة والطويلة)',
         promptText: 'ما الفرق الصوتي الدقيق بين الصوتين /ɪ/ في Ship و /iː/ في Sheep مع أزواج كلمات أخرى؟',
       },
       {
-        labelAr: 'قاعدة نطق الـ ED في نهاية الأفعال الماضية (/t/, /d/, /ɪd/)',
+ labelAr: 'قاعدة نطق الـ ED في نهاية الأفعال الماضية (/t/, /d/, /ɪd/)',
         promptText: 'اشرح لي قاعدة نطق الـ -ed في نهاية الأفعال الماضية: متى تنطق /t/، ومتى /d/، ومتى /ɪd/؟',
       },
       {
-        labelAr: 'التشديد في الكلمات (Word Stress) وكيف يغير المعنى',
+ labelAr: 'التشديد في الكلمات (Word Stress) وكيف يغير المعنى',
         promptText: 'كيف يغير التشديد (Word Stress) معنى الكلمة من اسم إلى فعل (مثل Present و Record)؟',
       },
     ],
@@ -171,27 +171,27 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'exam-trainer': {
     id: 'exam-trainer',
     nameEn: 'Exam Trainer',
-    nameAr: 'مدرب الامتحانات 🎯',
+ nameAr: 'مدرب الامتحانات',
     badge: 'IELTS / TOEFL / CEFR Strategist',
     shortDescAr: 'تدريب على أسئلة اختبارات الكفاءة الرسمية، إدارة الوقت، ونماذج امتحانات تفاعلية مع التصحيح.',
     avatarIcon: 'FileCheck',
-    welcomeGreetingAr: 'مرحباً يا بطل! 🎯 أنا مدرب اختبارات الكفاءة (CEFR, IELTS, TOEFL). سأزودك بنماذج أسئلة وتكتيكات إدارة الوقت لتحقيق أعلى سكور.',
+ welcomeGreetingAr: 'مرحباً يا بطل! أنا مدرب اختبارات الكفاءة (CEFR, IELTS, TOEFL). سأزودك بنماذج أسئلة وتكتيكات إدارة الوقت لتحقيق أعلى سكور.',
     welcomeGreetingEn: 'Welcome! I am your Exam Strategist. Let\'s conquer IELTS, TOEFL, and CEFR test sections together.',
     suggestedQuestions: [
       {
-        labelAr: 'اختبرني في سؤال قواعد متقدم (B2/C1) مع تصحيح فوري 📝',
+ labelAr: 'اختبرني في سؤال قواعد متقدم (B2/C1) مع تصحيح فوري',
         promptText: 'أعطني سؤالاً متقدماً في القواعد بمستوى B2/C1 متعدد الخيارات، وانتظر إجابتي ثم قيمني بالتفصيل.',
       },
       {
-        labelAr: 'تكتيكات الإجابة على سؤال الآيلتس في المحادثة Part 2 ⏱️',
+ labelAr: 'تكتيكات الإجابة على سؤال الآيلتس في المحادثة Part 2',
         promptText: 'كيف أتحدث لمدة دقيقتين متواصلتين في IELTS Speaking Part 2 دون توقف أو تردد؟',
       },
       {
-        labelAr: 'حل قطعة فهم قراءة سريعة مع استراتيجية Skimming 📖',
+ labelAr: 'حل قطعة فهم قراءة سريعة مع استراتيجية Skimming',
         promptText: 'أعطني فقرة قراءة قصيرة من سياق علمي مع سؤالين لاختبار مهارة Skimming و Scanning.',
       },
       {
-        labelAr: 'معايير تقييم كتابة Task 2 في اختبارات الآيلتس 📊',
+ labelAr: 'معايير تقييم كتابة Task 2 في اختبارات الآيلتس',
         promptText: 'ما هي معايير التصحيح الأربعة في IELTS Writing Task 2 وكيف أحصل على باند 7+ في كل منها؟',
       },
     ],
@@ -199,27 +199,27 @@ export const ASSISTANTS_REGISTRY: Record<AiTutorMode, AssistantMetadata> = {
   'interview-coach': {
     id: 'interview-coach',
     nameEn: 'Interview Trainer',
-    nameAr: 'مدرب المقابلات 💼',
+ nameAr: 'مدرب المقابلات',
     badge: 'Corporate Career Strategist',
     shortDescAr: 'محاكاة مقابلات التوظيف بالإنجليزية للشركات العالمية وفق أسلوب STAR وتطوير الإجابات السلوكية.',
     avatarIcon: 'Briefcase',
-    welcomeGreetingAr: 'أهلاً بك! 💼 أنا مدرب مقابلات العمل باللغة الإنجليزية. سأطرح عليك أسئلة مقابلات حقيقية وأعلمك كيف تجيب باحترافية بأسلوب STAR.',
+ welcomeGreetingAr: 'أهلاً بك! أنا مدرب مقابلات العمل باللغة الإنجليزية. سأطرح عليك أسئلة مقابلات حقيقية وأعلمك كيف تجيب باحترافية بأسلوب STAR.',
     welcomeGreetingEn: 'Welcome! I am your Mock Interview Coach. Let\'s practice real behavioral and technical interview questions.',
     suggestedQuestions: [
       {
-        labelAr: 'ابدأ معي المقابلة بالسؤال الأول: "Tell me about yourself" 🤝',
+ labelAr: 'ابدأ معي المقابلة بالسؤال الأول: "Tell me about yourself"',
         promptText: 'Let\'s start a job interview simulation for a professional role. Ask me: "Tell me about yourself", and evaluate my response.',
       },
       {
-        labelAr: 'كيف أجيب بذكاء عن: "What are your greatest weaknesses?" 💡',
+ labelAr: 'كيف أجيب بذكاء عن: "What are your greatest weaknesses?"',
         promptText: 'What is the best professional way to answer the interview question: "What is your greatest weakness?" without hurting my chances?',
       },
       {
-        labelAr: 'محاكاة سؤال سلوكي بطريقة STAR: موقف واجهت فيه ضغطاً ⏱️',
+ labelAr: 'محاكاة سؤال سلوكي بطريقة STAR: موقف واجهت فيه ضغطاً',
         promptText: 'Ask me a behavioral question about handling tight deadlines or conflicts, and evaluate my use of the STAR method.',
       },
       {
-        labelAr: 'أقوى الأسئلة التي يجب أن أطرحها على الـ Interviewer في النهاية ❓',
+ labelAr: 'أقوى الأسئلة التي يجب أن أطرحها على الـ Interviewer في النهاية',
         promptText: 'What are 5 impressive questions a candidate should ask the hiring manager at the end of the interview?',
       },
     ],
