@@ -86,6 +86,12 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
         userRole={userProfile.role}
         cefrLevel={userProfile.currentLevel}
         xp={userProfile.xp}
+        userProfile={userProfile}
+        authSessionType={authSessionType}
+        onOpenSettings={onOpenSettings}
+        onOpenAuthModal={onOpenAuthModal}
+        onToggleRole={onToggleRole}
+        onSignOut={onSignOut}
       />
 
       {/* Main Content Area - no overflow-x-hidden on parent of Header to prevent dropdown clipping */}
