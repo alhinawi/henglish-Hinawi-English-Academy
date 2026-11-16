@@ -390,6 +390,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         onSignOut={logout}
         authSessionType={session.type}
       >
+        <Suspense fallback={<div className="min-h-[40vh]" />}>
         <AnimatePresence mode="wait">
           <motion.div
             key={
@@ -404,7 +405,6 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2, ease: 'easeInOut' }}
           >
-            <Suspense fallback={<div className="min-h-[40vh]" />}>
             {/* RBAC Block View for non-admins */}
             {false ? (
               <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8 bg-slate-900/60 border border-red-500/30 rounded-3xl backdrop-blur-xl" dir="rtl">
@@ -640,9 +640,10 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 )}
               </>
             )}
-            </Suspense>
+
           </motion.div>
         </AnimatePresence>
+        </Suspense>
       </MainLayout>
 
       {/* Global Search Modal (Ctrl+K) */}
