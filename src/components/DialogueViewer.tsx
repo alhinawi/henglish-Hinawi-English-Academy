@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglishVoice, fireCelebration, getAudioQueuePlayer, stopSpeech } from '../utils/audio';
 import {
   Volume2,
@@ -15,6 +16,7 @@ import { motion } from 'framer-motion';
 
 export const DialogueViewer: React.FC = () => {
   const [selectedDialogueIndex, setSelectedDialogueIndex] = useState(0);
+  const appText = useAppTextMap('dialoguesData');
   const currentScenario = REAL_LIFE_DIALOGUES[selectedDialogueIndex];
 
   const [isPlayingAll, setIsPlayingAll] = useState(false);
@@ -117,7 +119,7 @@ export const DialogueViewer: React.FC = () => {
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
             }`}
           >
-            {dia.title}
+            {txText(appText, dia.title)}
           </button>
         ))}
       </div>
@@ -137,13 +139,13 @@ export const DialogueViewer: React.FC = () => {
         <div className="relative z-10 p-5 sm:p-6 w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3">
           <div>
             <span className="px-2.5 py-0.5 rounded-lg text-xs font-bold bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 mb-2 inline-block">
-              {currentScenario.category}
+              {txText(appText, currentScenario.category)}
             </span>
             <h4 className="font-black text-white text-lg sm:text-xl">
-              {currentScenario.title}
+              {txText(appText, currentScenario.title)}
             </h4>
             <p className="text-xs sm:text-sm text-[#dedbf4] mt-1">
-              {currentScenario.description}
+              {txText(appText, currentScenario.description)}
             </p>
           </div>
         </div>
