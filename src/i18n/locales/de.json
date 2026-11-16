@@ -2669,5 +2669,11 @@
   "rs.pages": "{count} Seiten",
   "rs.copy": "Kopie herunterladen",
   "rs.revision": "Kurzwiederholung",
-  "rs.page": "1 Seite"
+  "rs.page": "1 Seite",
+  "ta.title": "Alternative Übersetzungen",
+  "ta.intro": "Wähle die passende Formulierung für deine Situation",
+  "ta.when": "Wann verwenden?",
+  "ta.select": "Diese Formulierung verwenden",
+  "ta.listen": "Aussprache anhören",
+  "ta.copy": "Alternative kopieren"
 }
