@@ -8,6 +8,7 @@ import {
   QuestionSkill
 } from '../data/massiveQuestionBank';
 import { generatePlacementSessionFromBank } from '../services/placementService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
   FileCheck2,
@@ -40,6 +41,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   onRecordScore,
 }) => {
   // Adaptive test session generated dynamically on mount or restart
+  const { t } = useLanguage();
   const [sessionQuestions, setSessionQuestions] = useState<AssessmentQuestion[]>([]);
   const [loadingSession, setLoadingSession] = useState(true);
 
@@ -152,7 +154,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
       {/* 1. PLACEMENT TEST IN PROGRESS */}
       {loadingSession ? (
         <section className="glass-panel rounded-3xl p-10 border border-white/10 max-w-3xl mx-auto text-center text-[#b9b6d5] font-bold">
-          جاري تجهيز أسئلة الاختبار...
+          {t('exams.loadingSession')}
         </section>
       ) : !testFinished && currentQ ? (
         <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8 max-w-3xl mx-auto shadow-2xl">
