@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "ielts-v-000601",
+   "sentences": [
+    {
+     "en": "He has a lot of discipline.",
+     "ar": "عنده انضباط كبير."
+    },
+    {
+     "en": "She studies the discipline of economics.",
+     "ar": "بتدرس مادة الاقتصاد."
+    },
+    {
+     "en": "Discipline is very important.",
+     "ar": "الانضباط مهم جدا."
+    },
+    {
+     "en": "He lacks discipline.",
+     "ar": "ماعندوش انضباط."
+    },
+    {
+     "en": "The army teaches discipline.",
+     "ar": "الجيش بيعلم الانضباط."
+    },
+    {
+     "en": "She is a master of her discipline.",
+     "ar": "هي متقنة لمادتها العلمية."
+    },
+    {
+     "en": "Discipline is the key to success.",
+     "ar": "الانضباط هو مفتاح النجاح."
+    },
+    {
+     "en": "He learned discipline from his father.",
+     "ar": "اتعلم الانضباط من أبوه."
+    },
+    {
+     "en": "The school enforces discipline.",
+     "ar": "المدرسة بتفرض الانضباط."
+    },
+    {
+     "en": "She admires his discipline.",
+     "ar": "بتعجب بانضباطه."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000602",
+   "sentences": [
+    {
+     "en": "The course is compulsory.",
+     "ar": "الكورس إجباري."
+    },
+    {
+     "en": "Attendance is compulsory.",
+     "ar": "الحضور إجباري."
+    },
+    {
+     "en": "The exam is compulsory.",
+     "ar": "الامتحان إجباري."
+    },
+    {
+     "en": "The uniform is compulsory.",
+     "ar": "الزي إجباري."
+    },
+    {
+     "en": "The training is compulsory.",
+     "ar": "التدريب إجباري."
+    },
+    {
+     "en": "The subject is compulsory.",
+     "ar": "المادة إجبارية."
+    },
+    {
+     "en": "The meeting is compulsory.",
+     "ar": "الاجتماع إجباري."
+    },
+    {
+     "en": "The vaccination is compulsory.",
+     "ar": "التطعيم إجباري."
+    },
+    {
+     "en": "The registration is compulsory.",
+     "ar": "التسجيل إجباري."
+    },
+    {
+     "en": "The test is compulsory for all students.",
+     "ar": "الاختبار إجباري لكل الطلبة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000603",
+   "sentences": [
+    {
+     "en": "The course is optional.",
+     "ar": "الكورس اختياري."
+    },
+    {
+     "en": "Attendance is optional.",
+     "ar": "الحضور اختياري."
+    },
+    {
+     "en": "The exam is optional.",
+     "ar": "الامتحان اختياري."
+    },
+    {
+     "en": "The uniform is optional.",
+     "ar": "الزي اختياري."
+    },
+    {
+     "en": "The training is optional.",
+     "ar": "التدريب اختياري."
+    },
+    {
+     "en": "The subject is optional.",
+     "ar": "المادة اختيارية."
+    },
+    {
+     "en": "The meeting is optional.",
+     "ar": "الاجتماع اختياري."
+    },
+    {
+     "en": "The vaccination is optional.",
+     "ar": "التطعيم اختياري."
+    },
+    {
+     "en": "The registration is optional.",
+     "ar": "التسجيل اختياري."
+    },
+    {
+     "en": "The test is optional for some students.",
+     "ar": "الاختبار اختياري لبعض الطلبة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000604",
+   "sentences": [
+    {
+     "en": "Literacy is very important.",
+     "ar": "القدرة على القراية والكتابة مهمة جدا."
+    },
+    {
+     "en": "The literacy rate is high.",
+     "ar": "معدل القدرة على القراية والكتابة عالي."
+    },
+    {
+     "en": "She works to improve literacy.",
+     "ar": "بتشتغل على تحسين القدرة على القراية والكتابة."
+    },
+    {
+     "en": "Literacy is a basic skill.",
+     "ar": "القراية والكتابة مهارة أساسية."
+    },
+    {
+     "en": "He promotes literacy in the village.",
+     "ar": "بيروج للقراية والكتابة في القرية."
+    },
+    {
+     "en": "The literacy program is very successful.",
+     "ar": "برنامج محو الأمية ناجح جدا."
+    },
+    {
+     "en": "Literacy opens many doors.",
+     "ar": "القراية والكتابة بتفتح أبواب كتير."
+    },
+    {
+     "en": "She teaches literacy to adults.",
+     "ar": "بتعلم الكبار القراية والكتابة."
+    },
+    {
+     "en": "The country has a high literacy rate.",
+     "ar": "البلد عندها معدل عالي في القراية والكتابة."
+    },
+    {
+     "en": "Literacy is a human right.",
+     "ar": "القراية والكتابة حق من حقوق الإنسان."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000605",
+   "sentences": [
+    {
+     "en": "He is illiterate.",
+     "ar": "هو أمي."
+    },
+    {
+     "en": "She was illiterate but she learned to read.",
+     "ar": "كانت أمية بس اتعلمت تقرا."
+    },
+    {
+     "en": "Many people in the village are illiterate.",
+     "ar": "ناس كتير في القرية أمية."
+    },
+    {
+     "en": "He is illiterate but very smart.",
+     "ar": "هو أمي بس شاطر جدا."
+    },
+    {
+     "en": "She is helping illiterate people.",
+     "ar": "بتساعد الناس الأمية."
+    },
+    {
+     "en": "He is illiterate and proud of it.",
+     "ar": "هو أمي وفخور بكده."
+    },
+    {
+     "en": "She was born illiterate.",
+     "ar": "اتولدت أمية."
+    },
+    {
+     "en": "He is illiterate but he can count.",
+     "ar": "هو أمي بس بيعرف يعد."
+    },
+    {
+     "en": "She is teaching illiterate adults.",
+     "ar": "بتعلم الكبار الأميين."
+    },
+    {
+     "en": "He is illiterate in English.",
+     "ar": "هو أمي في الإنجليزي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000606",
+   "sentences": [
+    {
+     "en": "He dropped out of school.",
+     "ar": "ساب الدراسة."
+    },
+    {
+     "en": "She dropped out of university.",
+     "ar": "سابت الجامعة."
+    },
+    {
+     "en": "He dropped out to work.",
+     "ar": "ساب الدراسة عشان يشتغل."
+    },
+    {
+     "en": "She dropped out because of money.",
+     "ar": "سابت الدراسة عشان الفلوس."
+    },
+    {
+     "en": "He dropped out and regretted it.",
+     "ar": "ساب الدراسة وندم."
+    },
+    {
+     "en": "She dropped out and started a business.",
+     "ar": "سابت الدراسة وبدأت شغل."
+    },
+    {
+     "en": "He dropped out of the course.",
+     "ar": "ساب الكورس."
+    },
+    {
+     "en": "She dropped out of the race.",
+     "ar": "انسحبت من السباق."
+    },
+    {
+     "en": "He dropped out and never went back.",
+     "ar": "ساب الدراسة وعمره ما رجع."
+    },
+    {
+     "en": "She dropped out and became a singer.",
+     "ar": "سابت الدراسة وبقت مطربة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000607",
+   "sentences": [
+    {
+     "en": "He enrolled in the university.",
+     "ar": "التحق بالجامعة."
+    },
+    {
+     "en": "She enrolled in a course.",
+     "ar": "سجلت في كورس."
+    },
+    {
+     "en": "He enrolled his son in school.",
+     "ar": "سجل ابنه في المدرسة."
+    },
+    {
+     "en": "She enrolled in the program.",
+     "ar": "سجلت في البرنامج."
+    },
+    {
+     "en": "He enrolled in the army.",
+     "ar": "التحق بالجيش."
+    },
+    {
+     "en": "She enrolled in a cooking class.",
+     "ar": "سجلت في فصل طبخ."
+    },
+    {
+     "en": "He enrolled in the gym.",
+     "ar": "سجل في الجيم."
+    },
+    {
+     "en": "She enrolled in a language course.",
+     "ar": "سجلت في كورس لغة."
+    },
+    {
+     "en": "He enrolled in the club.",
+     "ar": "انضم للنادي."
+    },
+    {
+     "en": "She enrolled in the competition.",
+     "ar": "سجلت في المسابقة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000608",
+   "sentences": [
+    {
+     "en": "She is revising for the exam.",
+     "ar": "بتراجع للامتحان."
+    },
+    {
+     "en": "He revised his notes.",
+     "ar": "راجع ملاحظاته."
+    },
+    {
+     "en": "She revised the essay.",
+     "ar": "راجعت المقال."
+    },
+    {
+     "en": "He revised the plan.",
+     "ar": "راجع الخطة."
+    },
+    {
+     "en": "She revised the report.",
+     "ar": "راجعت التقرير."
+    },
+    {
+     "en": "He revised his opinion.",
+     "ar": "غير رأيه."
+    },
+    {
+     "en": "She revised the contract.",
+     "ar": "راجعت العقد."
+    },
+    {
+     "en": "He revised the budget.",
+     "ar": "راجع الميزانية."
+    },
+    {
+     "en": "She revised her answer.",
+     "ar": "راجعت إجابتها."
+    },
+    {
+     "en": "He revised the schedule.",
+     "ar": "راجع الجدول."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000609",
+   "sentences": [
+    {
+     "en": "She memorised the poem.",
+     "ar": "حفظت القصيدة عن ظهر قلب."
+    },
+    {
+     "en": "He memorised the speech.",
+     "ar": "حفظ الخطبة عن ظهر قلب."
+    },
+    {
+     "en": "She memorised the Quran.",
+     "ar": "حفظت القرآن عن ظهر قلب."
+    },
+    {
+     "en": "He memorised the phone number.",
+     "ar": "حفظ رقم التليفون عن ظهر قلب."
+    },
+    {
+     "en": "She memorised the lyrics.",
+     "ar": "حفظت الكلمات عن ظهر قلب."
+    },
+    {
+     "en": "He memorised the facts.",
+     "ar": "حفظ الحقايق عن ظهر قلب."
+    },
+    {
+     "en": "She memorised the recipe.",
+     "ar": "حفظت الوصفة عن ظهر قلب."
+    },
+    {
+     "en": "He memorised the route.",
+     "ar": "حفظ الطريق عن ظهر قلب."
+    },
+    {
+     "en": "She memorised the answers.",
+     "ar": "حفظت الإجابات عن ظهر قلب."
+    },
+    {
+     "en": "He memorised the song.",
+     "ar": "حفظ الأغنية عن ظهر قلب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000610",
+   "sentences": [
+    {
+     "en": "He is concentrating on his work.",
+     "ar": "بيركز في شغله."
+    },
+    {
+     "en": "She can't concentrate.",
+     "ar": "مش قادرة تركز."
+    },
+    {
+     "en": "He concentrated on the task.",
+     "ar": "ركز في المهمة."
+    },
+    {
+     "en": "She concentrated on her studies.",
+     "ar": "ركزت في دراستها."
+    },
+    {
+     "en": "He concentrated on the road.",
+     "ar": "ركز في الطريق."
+    },
+    {
+     "en": "She concentrated on the lecture.",
+     "ar": "ركزت في المحاضرة."
+    },
+    {
+     "en": "He concentrated his efforts.",
+     "ar": "ركز مجهوده."
+    },
+    {
+     "en": "She concentrated on the game.",
+     "ar": "ركزت في اللعبة."
+    },
+    {
+     "en": "He concentrated on the problem.",
+     "ar": "ركز في المشكلة."
+    },
+    {
+     "en": "She concentrated on her breathing.",
+     "ar": "ركزت في نفسها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000611",
+   "sentences": [
+    {
+     "en": "He has a lot of motivation.",
+     "ar": "عنده حماس كبير."
+    },
+    {
+     "en": "She lost her motivation.",
+     "ar": "فقدت حماسها."
+    },
+    {
+     "en": "The coach gave him motivation.",
+     "ar": "الكابتن داله دافع."
+    },
+    {
+     "en": "He needs motivation to study.",
+     "ar": "محتاج دافع عشان يذاكر."
+    },
+    {
+     "en": "She found her motivation.",
+     "ar": "لقت حماسها."
+    },
+    {
+     "en": "The speech gave him motivation.",
+     "ar": "الخطبة دته دافع."
+    },
+    {
+     "en": "He has no motivation.",
+     "ar": "ماعندوش حماس."
+    },
+    {
+     "en": "She is a source of motivation.",
+     "ar": "هي مصدر حماس."
+    },
+    {
+     "en": "He needs external motivation.",
+     "ar": "محتاج دافع خارجي."
+    },
+    {
+     "en": "She is full of motivation.",
+     "ar": "مليانة حماس."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000612",
+   "sentences": [
+    {
+     "en": "He has a lot of potential.",
+     "ar": "عنده إمكانيات كبيرة."
+    },
+    {
+     "en": "She has the potential to succeed.",
+     "ar": "عندها القابلية للنجاح."
+    },
+    {
+     "en": "He realized his potential.",
+     "ar": "حقق إمكانياته."
+    },
+    {
+     "en": "She has great potential.",
+     "ar": "عندها إمكانيات عظيمة."
+    },
+    {
+     "en": "He is not using his potential.",
+     "ar": "مش بيستخدم إمكانياته."
+    },
+    {
+     "en": "She has the potential to be a star.",
+     "ar": "عندها القابلية تبقى نجمة."
+    },
+    {
+     "en": "He is developing his potential.",
+     "ar": "بيطور إمكانياته."
+    },
+    {
+     "en": "She has untapped potential.",
+     "ar": "عندها إمكانيات مش مستغلة."
+    },
+    {
+     "en": "He is reaching his full potential.",
+     "ar": "بيوصل لكامل إمكانياته."
+    },
+    {
+     "en": "She has the potential to change the world.",
+     "ar": "عندها القابلية تغير العالم."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000613",
+   "sentences": [
+    {
+     "en": "She has a great talent.",
+     "ar": "عندها موهبة عظيمة."
+    },
+    {
+     "en": "He is a talented singer.",
+     "ar": "هو مطرب موهوب."
+    },
+    {
+     "en": "She discovered her talent.",
+     "ar": "اكتشفت موهبتها."
+    },
+    {
+     "en": "He has a natural talent.",
+     "ar": "عنده موهبة طبيعية."
+    },
+    {
+     "en": "She is using her talent.",
+     "ar": "بتستخدم موهبتها."
+    },
+    {
+     "en": "He has a talent for languages.",
+     "ar": "عنده موهبة في اللغات."
+    },
+    {
+     "en": "She is a rare talent.",
+     "ar": "هي موهبة نادرة."
+    },
+    {
+     "en": "He is wasting his talent.",
+     "ar": "بيديع موهبته."
+    },
+    {
+     "en": "She has a talent for painting.",
+     "ar": "عندها موهبة في الرسم."
+    },
+    {
+     "en": "He is proud of his talent.",
+     "ar": "فخور بموهبته."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000614",
+   "sentences": [
+    {
+     "en": "She is a gifted student.",
+     "ar": "هي طالبة موهوبة."
+    },
+    {
+     "en": "He is a gifted musician.",
+     "ar": "هو موسيقي موهوب."
+    },
+    {
+     "en": "She is gifted in math.",
+     "ar": "هي متفوقة في الرياضيات."
+    },
+    {
+     "en": "He is a gifted writer.",
+     "ar": "هو كاتب موهوب."
+    },
+    {
+     "en": "She is a gifted artist.",
+     "ar": "هي فنانة موهوبة."
+    },
+    {
+     "en": "He is gifted with a good memory.",
+     "ar": "موهوب بذاكرة كويسة."
+    },
+    {
+     "en": "She is a gifted athlete.",
+     "ar": "هي رياضية موهوبة."
+    },
+    {
+     "en": "He is a gifted speaker.",
+     "ar": "هو متحدث موهوب."
+    },
+    {
+     "en": "She is gifted in many areas.",
+     "ar": "هي موهوبة في مجالات كتير."
+    },
+    {
+     "en": "He is a gifted leader.",
+     "ar": "هو قائد موهوب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000615",
+   "sentences": [
+    {
+     "en": "She is very intelligent.",
+     "ar": "هي ذكية جدا."
+    },
+    {
+     "en": "He is an intelligent boy.",
+     "ar": "هو ولد ذكي."
+    },
+    {
+     "en": "She gave an intelligent answer.",
+     "ar": "ردت إجابة ذكية."
+    },
+    {
+     "en": "He is intelligent but lazy.",
+     "ar": "هو ذكي بس كسلان."
+    },
+    {
+     "en": "She is the most intelligent in the class.",
+     "ar": "هي أذكى واحدة في الفصل."
+    },
+    {
+     "en": "He is intelligent and hardworking.",
+     "ar": "هو ذكي ومجتهد."
+    },
+    {
+     "en": "She has an intelligent mind.",
+     "ar": "عندها عقل ذكي."
+    },
+    {
+     "en": "He is intelligent enough to solve the problem.",
+     "ar": "هو ذكي كفاية يحل المشكلة."
+    },
+    {
+     "en": "She is intelligent beyond her years.",
+     "ar": "هي ذكية أكتر من سنها."
+    },
+    {
+     "en": "He is a very intelligent person.",
+     "ar": "هو شخص ذكي جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000616",
+   "sentences": [
+    {
+     "en": "He was accused of plagiarism.",
+     "ar": "اتتهم بالسرقة الأدبية."
+    },
+    {
+     "en": "Plagiarism is a serious offence.",
+     "ar": "السرقة الأدبية جرم خطير."
+    },
+    {
+     "en": "She was caught for plagiarism.",
+     "ar": "اتمسكت بسبب السرقة الأدبية."
+    },
+    {
+     "en": "He committed plagiarism.",
+     "ar": "ارتكب سرقة أدبية."
+    },
+    {
+     "en": "Plagiarism is not allowed.",
+     "ar": "السرقة الأدبية ممنوعة."
+    },
+    {
+     "en": "She avoided plagiarism.",
+     "ar": "اتجنبت السرقة الأدبية."
+    },
+    {
+     "en": "He is guilty of plagiarism.",
+     "ar": "هو مذنب في السرقة الأدبية."
+    },
+    {
+     "en": "Plagiarism is a big problem.",
+     "ar": "السرقة الأدبية مشكلة كبيرة."
+    },
+    {
+     "en": "She checked for plagiarism.",
+     "ar": "راجعت من السرقة الأدبية."
+    },
+    {
+     "en": "He was punished for plagiarism.",
+     "ar": "اتعاقب عشان السرقة الأدبية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000617",
+   "sentences": [
+    {
+     "en": "The deadline is tomorrow.",
+     "ar": "آخر موعد بكرة."
+    },
+    {
+     "en": "He missed the deadline.",
+     "ar": "فاته آخر موعد."
+    },
+    {
+     "en": "She met the deadline.",
+     "ar": "لحقت آخر موعد."
+    },
+    {
+     "en": "The deadline is very tight.",
+     "ar": "آخر موعد قريب جدا."
+    },
+    {
+     "en": "He extended the deadline.",
+     "ar": "مد آخر موعد."
+    },
+    {
+     "en": "She is working to meet the deadline.",
+     "ar": "بتشتغل عشان تلحق آخر موعد."
+    },
+    {
+     "en": "The deadline passed.",
+     "ar": "آخر موعد فات."
+    },
+    {
+     "en": "He is stressed about the deadline.",
+     "ar": "مضغوط عشان آخر موعد."
+    },
+    {
+     "en": "The deadline is next Friday.",
+     "ar": "آخر موعد الجمعة الجاية."
+    },
+    {
+     "en": "She finished before the deadline.",
+     "ar": "خلصت قبل آخر موعد."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000618",
+   "sentences": [
+    {
+     "en": "He finished the assignment.",
+     "ar": "خلص التكليف."
+    },
+    {
+     "en": "She is working on the assignment.",
+     "ar": "بتشتغل على التكليف."
+    },
+    {
+     "en": "The assignment is due tomorrow.",
+     "ar": "التكليف مستحق بكرة."
+    },
+    {
+     "en": "He forgot about the assignment.",
+     "ar": "نسي التكليف."
+    },
+    {
+     "en": "The assignment is very difficult.",
+     "ar": "التكليف صعب جدا."
+    },
+    {
+     "en": "She submitted the assignment.",
+     "ar": "سلمت التكليف."
+    },
+    {
+     "en": "He got a good grade on the assignment.",
+     "ar": "خد درجة كويسة في التكليف."
+    },
+    {
+     "en": "The assignment took a long time.",
+     "ar": "التكليف خد وقت طويل."
+    },
+    {
+     "en": "She is doing the assignment now.",
+     "ar": "بتعمل التكليف دلوقتي."
+    },
+    {
+     "en": "The assignment is very important.",
+     "ar": "التكليف مهم جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000619",
+   "sentences": [
+    {
+     "en": "She is writing her thesis.",
+     "ar": "بتكتب رسالتها العلمية."
+    },
+    {
+     "en": "He finished his thesis.",
+     "ar": "خلص رسالته العلمية."
+    },
+    {
+     "en": "The thesis is very long.",
+     "ar": "الرسالة العلمية طويلة جدا."
+    },
+    {
+     "en": "She defended her thesis.",
+     "ar": "دافعت عن رسالتها العلمية."
+    },
+    {
+     "en": "He is working on his thesis.",
+     "ar": "بيشتغل على رسالته العلمية."
+    },
+    {
+     "en": "The thesis was published.",
+     "ar": "الرسالة العلمية اتنشرت."
+    },
+    {
+     "en": "She got a high grade on her thesis.",
+     "ar": "خدت درجة عالية في رسالتها العلمية."
+    },
+    {
+     "en": "He is proud of his thesis.",
+     "ar": "فخور برسالته العلمية."
+    },
+    {
+     "en": "The thesis is about history.",
+     "ar": "الرسالة العلمية عن التاريخ."
+    },
+    {
+     "en": "She submitted her thesis.",
+     "ar": "سلمت رسالتها العلمية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000620",
+   "sentences": [
+    {
+     "en": "He attended a seminar.",
+     "ar": "حضر ندوة دراسية."
+    },
+    {
+     "en": "The seminar was very interesting.",
+     "ar": "الندوة كانت ممتعة جدا."
+    },
+    {
+     "en": "She gave a seminar.",
+     "ar": "قدمت ندوة."
+    },
+    {
+     "en": "The seminar is about economics.",
+     "ar": "الندوة عن الاقتصاد."
+    },
+    {
+     "en": "He is preparing for the seminar.",
+     "ar": "بيجهز للندوة."
+    },
+    {
+     "en": "The seminar was cancelled.",
+     "ar": "الندوة اتلغت."
+    },
+    {
+     "en": "She learned a lot at the seminar.",
+     "ar": "اتعلمت كتير في الندوة."
+    },
+    {
+     "en": "The seminar is next week.",
+     "ar": "الندوة الأسبوع الجاي."
+    },
+    {
+     "en": "He asked a question at the seminar.",
+     "ar": "سأل سؤال في الندوة."
+    },
+    {
+     "en": "The seminar was very useful.",
+     "ar": "الندوة كانت مفيدة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000621",
+   "sentences": [
+    {
+     "en": "The campus is very big.",
+     "ar": "الحرم الجامعي كبير جدا."
+    },
+    {
+     "en": "She lives on campus.",
+     "ar": "ساكنة في الحرم الجامعي."
+    },
+    {
+     "en": "He walked around the campus.",
+     "ar": "مشى حوالين الحرم الجامعي."
+    },
+    {
+     "en": "The campus has many buildings.",
+     "ar": "الحرم الجامعي فيه مباني كتير."
+    },
+    {
+     "en": "She loves the campus.",
+     "ar": "بتحب الحرم الجامعي."
+    },
+    {
+     "en": "The campus is very green.",
+     "ar": "الحرم الجامعي أخضر جدا."
+    },
+    {
+     "en": "He works on campus.",
+     "ar": "بيشتغل في الحرم الجامعي."
+    },
+    {
+     "en": "The campus is very safe.",
+     "ar": "الحرم الجامعي آمن جدا."
+    },
+    {
+     "en": "She met her friends on campus.",
+     "ar": "قابلت صحابها في الحرم الجامعي."
+    },
+    {
+     "en": "The campus is very beautiful.",
+     "ar": "الحرم الجامعي جميل جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000622",
+   "sentences": [
+    {
+     "en": "She lives in a dormitory.",
+     "ar": "ساكنة في سكن جامعي."
+    },
+    {
+     "en": "The dormitory is very crowded.",
+     "ar": "السكن الجامعي زحمة جدا."
+    },
+    {
+     "en": "He shares a room in the dormitory.",
+     "ar": "مشارك أوضة في السكن الجامعي."
+    },
+    {
+     "en": "The dormitory is very cheap.",
+     "ar": "السكن الجامعي رخيص جدا."
+    },
+    {
+     "en": "She moved into the dormitory.",
+     "ar": "نقلت للسكن الجامعي."
+    },
+    {
+     "en": "The dormitory has a cafeteria.",
+     "ar": "السكن الجامعي فيه كافيتيريا."
+    },
+    {
+     "en": "He likes the dormitory.",
+     "ar": "بيحب السكن الجامعي."
+    },
+    {
+     "en": "The dormitory is very noisy.",
+     "ar": "السكن الجامعي مشوش جدا."
+    },
+    {
+     "en": "She has many friends in the dormitory.",
+     "ar": "عندها صحاب كتير في السكن الجامعي."
+    },
+    {
+     "en": "The dormitory is near the campus.",
+     "ar": "السكن الجامعي جنب الحرم الجامعي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000623",
+   "sentences": [
+    {
+     "en": "She is in the faculty of medicine.",
+     "ar": "هي في كلية الطب."
+    },
+    {
+     "en": "He is a member of the faculty.",
+     "ar": "هو عضو في هيئة التدريس."
+    },
+    {
+     "en": "The faculty is very big.",
+     "ar": "الكلية كبيرة جدا."
+    },
+    {
+     "en": "She teaches in the faculty.",
+     "ar": "بتدرس في الكلية."
+    },
+    {
+     "en": "He is the dean of the faculty.",
+     "ar": "هو عميد الكلية."
+    },
+    {
+     "en": "The faculty has many professors.",
+     "ar": "الكلية فيها أساتذة كتير."
+    },
+    {
+     "en": "She graduated from the faculty.",
+     "ar": "اتخرجت من الكلية."
+    },
+    {
+     "en": "The faculty is very famous.",
+     "ar": "الكلية مشهورة جدا."
+    },
+    {
+     "en": "He is a faculty member.",
+     "ar": "هو عضو هيئة تدريس."
+    },
+    {
+     "en": "The faculty organized a conference.",
+     "ar": "الكلية نظمت مؤتمر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000624",
+   "sentences": [
+    {
+     "en": "She is an undergraduate.",
+     "ar": "هي طالبة بكالوريوس."
+    },
+    {
+     "en": "He is an undergraduate student.",
+     "ar": "هو طالب بكالوريوس."
+    },
+    {
+     "en": "She finished her undergraduate studies.",
+     "ar": "خلصت دراسة البكالوريوس."
+    },
+    {
+     "en": "He is an undergraduate at Cairo University.",
+     "ar": "هو طالب بكالوريوس في جامعة القاهرة."
+    },
+    {
+     "en": "She is in her undergraduate year.",
+     "ar": "هي في سنة البكالوريوس."
+    },
+    {
+     "en": "He is an undergraduate in engineering.",
+     "ar": "هو طالب بكالوريوس في الهندسة."
+    },
+    {
+     "en": "She is an undergraduate student of history.",
+     "ar": "هي طالبة بكالوريوس في التاريخ."
+    },
+    {
+     "en": "He is an undergraduate in his final year.",
+     "ar": "هو طالب بكالوريوس في سنته الأخيرة."
+    },
+    {
+     "en": "She is an undergraduate at the university.",
+     "ar": "هي طالبة بكالوريوس في الجامعة."
+    },
+    {
+     "en": "He is an undergraduate in business.",
+     "ar": "هو طالب بكالوريوس في التجارة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000625",
+   "sentences": [
+    {
+     "en": "She is a postgraduate.",
+     "ar": "هي طالبة دراسات عليا."
+    },
+    {
+     "en": "He is a postgraduate student.",
+     "ar": "هو طالب دراسات عليا."
+    },
+    {
+     "en": "She finished her postgraduate studies.",
+     "ar": "خلصت الدراسات العليا."
+    },
+    {
+     "en": "He is a postgraduate at the university.",
+     "ar": "هو طالب دراسات عليا في الجامعة."
+    },
+    {
+     "en": "She is doing her postgraduate degree.",
+     "ar": "بتعمل درجة الدراسات العليا."
+    },
+    {
+     "en": "He is a postgraduate in economics.",
+     "ar": "هو طالب دراسات عليا في الاقتصاد."
+    },
+    {
+     "en": "She is a postgraduate student of law.",
+     "ar": "هي طالبة دراسات عليا في الحقوق."
+    },
+    {
+     "en": "He is a postgraduate in his second year.",
+     "ar": "هو طالب دراسات عليا في سنته التانية."
+    },
+    {
+     "en": "She is a postgraduate at the college.",
+     "ar": "هي طالبة دراسات عليا في الكلية."
+    },
+    {
+     "en": "He is a postgraduate in medicine.",
+     "ar": "هو طالب دراسات عليا في الطب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000626",
+   "sentences": [
+    {
+     "en": "She is one of the alumni.",
+     "ar": "هي واحدة من الخريجين القدامى."
+    },
+    {
+     "en": "He is a member of the alumni.",
+     "ar": "هو عضو في الخريجين القدامى."
+    },
+    {
+     "en": "The alumni organized a reunion.",
+     "ar": "الخريجين القدامى نظموا لم شمل."
+    },
+    {
+     "en": "She is proud to be an alumni.",
+     "ar": "فخورة إنها من الخريجين القدامى."
+    },
+    {
+     "en": "He keeps in touch with the alumni.",
+     "ar": "بيفضل على تواصل مع الخريجين القدامى."
+    },
+    {
+     "en": "The alumni donated money.",
+     "ar": "الخريجين القدامى اتبرعوا بفلوس."
+    },
+    {
+     "en": "She is a successful alumni.",
+     "ar": "هي خريجة قديمة ناجحة."
+    },
+    {
+     "en": "He met the alumni at the event.",
+     "ar": "قابل الخريجين القدامى في الحدث."
+    },
+    {
+     "en": "The alumni are very active.",
+     "ar": "الخريجين القدامى نشيطين جدا."
+    },
+    {
+     "en": "She is a famous alumni.",
+     "ar": "هي خريجة قديمة مشهورة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000627",
+   "sentences": [
+    {
+     "en": "She is my peer.",
+     "ar": "هي زميلتي."
+    },
+    {
+     "en": "He is a peer of mine.",
+     "ar": "هو زميل ليا."
+    },
+    {
+     "en": "She is respected by her peers.",
+     "ar": "محترمة من زمايلها."
+    },
+    {
+     "en": "He is a peer in the same class.",
+     "ar": "هو زميل في نفس الفصل."
+    },
+    {
+     "en": "She is a peer in the same age group.",
+     "ar": "هي زميلة في نفس الفئة العمرية."
+    },
+    {
+     "en": "He is a peer in the same profession.",
+     "ar": "هو زميل في نفس المهنة."
+    },
+    {
+     "en": "She is a peer in the same university.",
+     "ar": "هي زميلة في نفس الجامعة."
+    },
+    {
+     "en": "He is a peer in the same team.",
+     "ar": "هو زميل في نفس الفريق."
+    },
+    {
+     "en": "She is a peer in the same company.",
+     "ar": "هي زميلة في نفس الشركة."
+    },
+    {
+     "en": "He is a peer in the same club.",
+     "ar": "هو زميل في نفس النادي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000628",
+   "sentences": [
+    {
+     "en": "He is a bully.",
+     "ar": "هو متنمر."
+    },
+    {
+     "en": "She stood up to the bully.",
+     "ar": "وقفت في وش المتنمر."
+    },
+    {
+     "en": "The bully was punished.",
+     "ar": "المتنمر اتعاقب."
+    },
+    {
+     "en": "He is afraid of the bully.",
+     "ar": "خايف من المتنمر."
+    },
+    {
+     "en": "She reported the bully.",
+     "ar": "بلغت عن المتنمر."
+    },
+    {
+     "en": "The bully is very mean.",
+     "ar": "المتنمر وحش جدا."
+    },
+    {
+     "en": "He ignored the bully.",
+     "ar": "تجاهل المتنمر."
+    },
+    {
+     "en": "She is a victim of the bully.",
+     "ar": "هي ضحية المتنمر."
+    },
+    {
+     "en": "The bully was expelled.",
+     "ar": "المتنمر اتفصل."
+    },
+    {
+     "en": "He confronted the bully.",
+     "ar": "واجه المتنمر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000629",
+   "sentences": [
+    {
+     "en": "Bullying is a big problem in schools.",
+     "ar": "التنمر مشكلة كبيرة في المدارس."
+    },
+    {
+     "en": "She was a victim of bullying.",
+     "ar": "كانت ضحية تنمر."
+    },
+    {
+     "en": "He reported the bullying.",
+     "ar": "بلغ عن التنمر."
+    },
+    {
+     "en": "The school is fighting bullying.",
+     "ar": "المدرسة بتحارب التنمر."
+    },
+    {
+     "en": "Bullying can cause depression.",
+     "ar": "التنمر ممكن يسبب اكتئاب."
+    },
+    {
+     "en": "She spoke against bullying.",
+     "ar": "اتكلمت ضد التنمر."
+    },
+    {
+     "en": "The school punished him for bullying.",
+     "ar": "المدرسة عاقبته عشان التنمر."
+    },
+    {
+     "en": "Bullying is not acceptable.",
+     "ar": "التنمر مش مقبول."
+    },
+    {
+     "en": "She started a campaign against bullying.",
+     "ar": "بدأت حملة ضد التنمر."
+    },
+    {
+     "en": "He suffered from bullying.",
+     "ar": "عانى من التنمر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000630",
+   "sentences": [
+    {
+     "en": "Attendance at the lecture was high.",
+     "ar": "الحضور في المحاضرة كان عالي."
+    },
+    {
+     "en": "His attendance is very good.",
+     "ar": "حضوره كويس جدا."
+    },
+    {
+     "en": "She has perfect attendance.",
+     "ar": "عندها حضور كامل."
+    },
+    {
+     "en": "The attendance was very low.",
+     "ar": "الحضور كان واطي جدا."
+    },
+    {
+     "en": "He took the attendance.",
+     "ar": "خد الحضور."
+    },
+    {
+     "en": "Her attendance is required.",
+     "ar": "حضورها مطلوب."
+    },
+    {
+     "en": "The attendance improved.",
+     "ar": "الحضور اتحسن."
+    },
+    {
+     "en": "He has a bad attendance record.",
+     "ar": "سجل حضوره وحش."
+    },
+    {
+     "en": "The attendance is mandatory.",
+     "ar": "الحضور إجباري."
+    },
+    {
+     "en": "She checked the attendance.",
+     "ar": "راجعت الحضور."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000631",
+   "sentences": [
+    {
+     "en": "His absence was noticed.",
+     "ar": "غيابه اتلاحظ."
+    },
+    {
+     "en": "Her absence from class was noticed.",
+     "ar": "غيابها عن الفصل اتلاحظ."
+    },
+    {
+     "en": "His absence caused problems.",
+     "ar": "غيابه سبب مشاكل."
+    },
+    {
+     "en": "She explained her absence.",
+     "ar": "شرحت سبب غيابها."
+    },
+    {
+     "en": "His absence was excused.",
+     "ar": "غيابه اتعذر."
+    },
+    {
+     "en": "She has many absences.",
+     "ar": "عندها غيابات كتير."
+    },
+    {
+     "en": "His absence was unexpected.",
+     "ar": "غيابه كان غير متوقع."
+    },
+    {
+     "en": "She covered his absence.",
+     "ar": "غطت غيابه."
+    },
+    {
+     "en": "His absence is a big loss.",
+     "ar": "غيابه خسارة كبيرة."
+    },
+    {
+     "en": "His long absence worried his friends.",
+     "ar": "غيابه الطويل قلق صحابه."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000632",
+   "sentences": [
+    {
+     "en": "He was expelled from school.",
+     "ar": "اتفصل من المدرسة."
+    },
+    {
+     "en": "She was expelled for cheating.",
+     "ar": "اتفصلت عشان الغش."
+    },
+    {
+     "en": "The student was expelled.",
+     "ar": "الطالب اتفصل."
+    },
+    {
+     "en": "He was expelled from the club.",
+     "ar": "اتفصل من النادي."
+    },
+    {
+     "en": "She was expelled from the university.",
+     "ar": "اتفصلت من الجامعة."
+    },
+    {
+     "en": "He was expelled for bad behavior.",
+     "ar": "اتفصل عشان تصرف وحش."
+    },
+    {
+     "en": "The school expelled him.",
+     "ar": "المدرسة فصلته."
+    },
+    {
+     "en": "She was expelled and never came back.",
+     "ar": "اتفصلت وعمرها ما رجعت."
+    },
+    {
+     "en": "He was expelled from the team.",
+     "ar": "اتفصل من الفريق."
+    },
+    {
+     "en": "The principal expelled the student.",
+     "ar": "الناظر فصل الطالب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000633",
+   "sentences": [
+    {
+     "en": "He cheated in the exam.",
+     "ar": "غش في الامتحان."
+    },
+    {
+     "en": "She never cheats.",
+     "ar": "عمرها ما بتغش."
+    },
+    {
+     "en": "He was caught cheating.",
+     "ar": "اتمسك وهو بيغش."
+    },
+    {
+     "en": "She cheated on the test.",
+     "ar": "غشت في الاختبار."
+    },
+    {
+     "en": "He admitted to cheating.",
+     "ar": "اعترف بالغش."
+    },
+    {
+     "en": "She refused to cheat.",
+     "ar": "رفضت تغش."
+    },
+    {
+     "en": "He cheated his way to the top.",
+     "ar": "غش طريقه للقمة."
+    },
+    {
+     "en": "She accused him of cheating.",
+     "ar": "اتهمته بالغش."
+    },
+    {
+     "en": "He cheated on his taxes.",
+     "ar": "غش في ضرايبه."
+    },
+    {
+     "en": "She was punished for cheating.",
+     "ar": "اتعاقبت عشان الغش."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000634",
+   "sentences": [
+    {
+     "en": "She got a certificate.",
+     "ar": "خدت شهادة."
+    },
+    {
+     "en": "He received a certificate of completion.",
+     "ar": "استلم شهادة إتمام."
+    },
+    {
+     "en": "The certificate is very important.",
+     "ar": "الشهادة مهمة جدا."
+    },
+    {
+     "en": "She framed her certificate.",
+     "ar": "علقت شهادتها في برواز."
+    },
+    {
+     "en": "He has many certificates.",
+     "ar": "عنده شهادات كتير."
+    },
+    {
+     "en": "The certificate is valid for one year.",
+     "ar": "الشهادة صالحة لسنة."
+    },
+    {
+     "en": "She lost her certificate.",
+     "ar": "ضيعت شهادتها."
+    },
+    {
+     "en": "He earned a certificate in accounting.",
+     "ar": "خد شهادة في المحاسبة."
+    },
+    {
+     "en": "The certificate was awarded to her.",
+     "ar": "الشهادة اتدتلها."
+    },
+    {
+     "en": "She is proud of her certificate.",
+     "ar": "فخورة بشهادتها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000635",
+   "sentences": [
+    {
+     "en": "She is bilingual.",
+     "ar": "هي ثنائية اللغة."
+    },
+    {
+     "en": "He speaks two languages, he is bilingual.",
+     "ar": "بيتكلم لغتين، هو ثنائي اللغة."
+    },
+    {
+     "en": "She is bilingual in Arabic and English.",
+     "ar": "هي ثنائية اللغة في العربي والإنجليزي."
+    },
+    {
+     "en": "He is bilingual and very proud of it.",
+     "ar": "هو ثنائي اللغة وفخور جدا بكده."
+    },
+    {
+     "en": "She is bilingual and works as a translator.",
+     "ar": "هي ثنائية اللغة وبتشتغل مترجمة."
+    },
+    {
+     "en": "He is bilingual in French and English.",
+     "ar": "هو ثنائي اللغة في الفرنساوي والإنجليزي."
+    },
+    {
+     "en": "She is bilingual and teaches languages.",
+     "ar": "هي ثنائية اللغة وبتدرس لغات."
+    },
+    {
+     "en": "He is bilingual and travels a lot.",
+     "ar": "هو ثنائي اللغة وبيسافر كتير."
+    },
+    {
+     "en": "She is bilingual and writes in both languages.",
+     "ar": "هي ثنائية اللغة وبتكتب باللغتين."
+    },
+    {
+     "en": "He is bilingual and reads in both languages.",
+     "ar": "هو ثنائي اللغة وبيقرا باللغتين."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000636",
+   "sentences": [
+    {
+     "en": "She is a native speaker of English.",
+     "ar": "هي متكلمة أصلية للإنجليزي."
+    },
+    {
+     "en": "He is a native speaker of Arabic.",
+     "ar": "هو متكلم أصلي للعربي."
+    },
+    {
+     "en": "She is a native speaker and teaches English.",
+     "ar": "هي متكلمة أصلية وبتدرس إنجليزي."
+    },
+    {
+     "en": "He is a native speaker of French.",
+     "ar": "هو متكلم أصلي للفرنساوي."
+    },
+    {
+     "en": "She is a native speaker and writes books.",
+     "ar": "هي متكلمة أصلية وبتكتب كتب."
+    },
+    {
+     "en": "He is a native speaker of Spanish.",
+     "ar": "هو متكلم أصلي للإسباني."
+    },
+    {
+     "en": "She is a native speaker and works as a translator.",
+     "ar": "هي متكلمة أصلية وبتشتغل مترجمة."
+    },
+    {
+     "en": "He is a native speaker of German.",
+     "ar": "هو متكلم أصلي للألماني."
+    },
+    {
+     "en": "She is a native speaker and travels a lot.",
+     "ar": "هي متكلمة أصلية وبتسافر كتير."
+    },
+    {
+     "en": "He is a native speaker of Italian.",
+     "ar": "هو متكلم أصلي للإيطالي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000637",
+   "sentences": [
+    {
+     "en": "She has a strong accent.",
+     "ar": "عندها لهجة قوية."
+    },
+    {
+     "en": "He speaks with a British accent.",
+     "ar": "بيتكلم بلهجة بريطانية."
+    },
+    {
+     "en": "She has a beautiful accent.",
+     "ar": "عندها لهجة جميلة."
+    },
+    {
+     "en": "He lost his accent.",
+     "ar": "فقد لهجته."
+    },
+    {
+     "en": "She has a foreign accent.",
+     "ar": "عندها لهجة أجنبية."
+    },
+    {
+     "en": "He imitates the accent.",
+     "ar": "بيقلد اللهجة."
+    },
+    {
+     "en": "She has a soft accent.",
+     "ar": "عندها لهجة ناعمة."
+    },
+    {
+     "en": "He is proud of his accent.",
+     "ar": "فخور بلهجته."
+    },
+    {
+     "en": "She has a thick accent.",
+     "ar": "عندها لهجة تقيلة."
+    },
+    {
+     "en": "He changed his accent.",
+     "ar": "غير لهجته."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000638",
+   "sentences": [
+    {
+     "en": "Her pronunciation is very good.",
+     "ar": "نطقها كويس جدا."
+    },
+    {
+     "en": "He is working on his pronunciation.",
+     "ar": "بيشتغل على نطقه."
+    },
+    {
+     "en": "The pronunciation is difficult.",
+     "ar": "النطق صعب."
+    },
+    {
+     "en": "She has perfect pronunciation.",
+     "ar": "عندها نطق مثالي."
+    },
+    {
+     "en": "He is learning the pronunciation.",
+     "ar": "بيتعلم النطق."
+    },
+    {
+     "en": "The pronunciation of this word is hard.",
+     "ar": "نطق الكلمة دي صعب."
+    },
+    {
+     "en": "She practices her pronunciation.",
+     "ar": "بتتدرب على نطقها."
+    },
+    {
+     "en": "He has a clear pronunciation.",
+     "ar": "عنده نطق واضح."
+    },
+    {
+     "en": "The pronunciation is very important.",
+     "ar": "النطق مهم جدا."
+    },
+    {
+     "en": "She improved her pronunciation.",
+     "ar": "حسنت نطقها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000639",
+   "sentences": [
+    {
+     "en": "He is good at grammar.",
+     "ar": "هو شاطر في الجرامر."
+    },
+    {
+     "en": "She studies grammar.",
+     "ar": "بتدرس قواعد اللغة."
+    },
+    {
+     "en": "The grammar is very difficult.",
+     "ar": "الجرامر صعب جدا."
+    },
+    {
+     "en": "He makes grammar mistakes.",
+     "ar": "بيعمل غلطات جرامر."
+    },
+    {
+     "en": "She teaches grammar.",
+     "ar": "بتدرس جرامر."
+    },
+    {
+     "en": "He is learning grammar.",
+     "ar": "بيتعلم قواعد اللغة."
+    },
+    {
+     "en": "The grammar rules are complex.",
+     "ar": "قواعد الجرامر معقدة."
+    },
+    {
+     "en": "She has a good grasp of grammar.",
+     "ar": "عندها فهم كويس للجرامر."
+    },
+    {
+     "en": "He is weak in grammar.",
+     "ar": "هو ضعيف في الجرامر."
+    },
+    {
+     "en": "She corrects the grammar.",
+     "ar": "بتصحح الجرامر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000640",
+   "sentences": [
+    {
+     "en": "He used an idiom.",
+     "ar": "استخدم تعبير اصطلاحي."
+    },
+    {
+     "en": "She is learning idioms.",
+     "ar": "بتتعلم التعبيرات الاصطلاحية."
+    },
+    {
+     "en": "The idiom is very common.",
+     "ar": "التعبير الاصطلاحي شايع جدا."
+    },
+    {
+     "en": "He knows many idioms.",
+     "ar": "عارف تعبيرات اصطلاحية كتير."
+    },
+    {
+     "en": "She explained the idiom.",
+     "ar": "شرحت التعبير الاصطلاحي."
+    },
+    {
+     "en": "The idiom is difficult to understand.",
+     "ar": "التعبير الاصطلاحي صعب يتفهم."
+    },
+    {
+     "en": "He loves using idioms.",
+     "ar": "بيحب يستخدم التعبيرات الاصطلاحية."
+    },
+    {
+     "en": "She wrote an idiom in her essay.",
+     "ar": "كتبت تعبير اصطلاحي في مقالها."
+    },
+    {
+     "en": "The idiom has a special meaning.",
+     "ar": "التعبير الاصطلاحي ليه معنى خاص."
+    },
+    {
+     "en": "He teaches idioms to his students.",
+     "ar": "بيعلم التعبيرات الاصطلاحية لطلبته."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000641",
+   "sentences": [
+    {
+     "en": "The context is very important.",
+     "ar": "السياق مهم جدا."
+    },
+    {
+     "en": "He understood the context.",
+     "ar": "فهم السياق."
+    },
+    {
+     "en": "She read the context.",
+     "ar": "قرت السياق."
+    },
+    {
+     "en": "The context changed the meaning.",
+     "ar": "السياق غير المعنى."
+    },
+    {
+     "en": "He explained the context.",
+     "ar": "شرح السياق."
+    },
+    {
+     "en": "She is familiar with the context.",
+     "ar": "عارفة السياق."
+    },
+    {
+     "en": "The context is very complex.",
+     "ar": "السياق معقد جدا."
+    },
+    {
+     "en": "He missed the context.",
+     "ar": "فاته السياق."
+    },
+    {
+     "en": "She analyzed the context.",
+     "ar": "حللت السياق."
+    },
+    {
+     "en": "The context is very clear.",
+     "ar": "السياق واضح جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000642",
+   "sentences": [
+    {
+     "en": "He wrote a paragraph.",
+     "ar": "كتب فقرة."
+    },
+    {
+     "en": "She read the paragraph.",
+     "ar": "قرت الفقرة."
+    },
+    {
+     "en": "The paragraph is very long.",
+     "ar": "الفقرة طويلة جدا."
+    },
+    {
+     "en": "He summarized the paragraph.",
+     "ar": "لخص الفقرة."
+    },
+    {
+     "en": "She wrote a paragraph about her family.",
+     "ar": "كتبت فقرة عن عيلتها."
+    },
+    {
+     "en": "The paragraph is very interesting.",
+     "ar": "الفقرة ممتعة جدا."
+    },
+    {
+     "en": "He translated the paragraph.",
+     "ar": "ترجم الفقرة."
+    },
+    {
+     "en": "She analyzed the paragraph.",
+     "ar": "حللت الفقرة."
+    },
+    {
+     "en": "The paragraph is very clear.",
+     "ar": "الفقرة واضحة جدا."
+    },
+    {
+     "en": "He deleted the paragraph.",
+     "ar": "مسح الفقرة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000643",
+   "sentences": [
+    {
+     "en": "She wrote an essay.",
+     "ar": "كتبت مقال."
+    },
+    {
+     "en": "The essay is very long.",
+     "ar": "المقال طويل جدا."
+    },
+    {
+     "en": "He is writing an essay.",
+     "ar": "بيكتب مقال."
+    },
+    {
+     "en": "The essay is about history.",
+     "ar": "المقال عن التاريخ."
+    },
+    {
+     "en": "She got a good grade on her essay.",
+     "ar": "خدت درجة كويسة في مقالها."
+    },
+    {
+     "en": "He finished the essay.",
+     "ar": "خلص المقال."
+    },
+    {
+     "en": "The essay is very interesting.",
+     "ar": "المقال ممتع جدا."
+    },
+    {
+     "en": "She is working on her essay.",
+     "ar": "بتشتغل على مقالها."
+    },
+    {
+     "en": "He submitted the essay.",
+     "ar": "سلم المقال."
+    },
+    {
+     "en": "The essay won a prize.",
+     "ar": "المقال كسب جايزة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000644",
+   "sentences": [
+    {
+     "en": "She wrote a summary.",
+     "ar": "كتبت ملخص."
+    },
+    {
+     "en": "The summary is very short.",
+     "ar": "الملخص قصير جدا."
+    },
+    {
+     "en": "He read the summary.",
+     "ar": "قرا الملخص."
+    },
+    {
+     "en": "She gave a summary of the book.",
+     "ar": "ادت ملخص للكتاب."
+    },
+    {
+     "en": "The summary is very clear.",
+     "ar": "الملخص واضح جدا."
+    },
+    {
+     "en": "He asked for a summary.",
+     "ar": "طلب ملخص."
+    },
+    {
+     "en": "The summary covers the main points.",
+     "ar": "الملخص بيغطي النقاط الرئيسية."
+    },
+    {
+     "en": "She wrote a summary of the report.",
+     "ar": "كتبت ملخص للتقرير."
+    },
+    {
+     "en": "The summary is very useful.",
+     "ar": "الملخص مفيد جدا."
+    },
+    {
+     "en": "He prepared a summary for the meeting.",
+     "ar": "جهز ملخص للاجتماع."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000645",
+   "sentences": [
+    {
+     "en": "She wrote a draft.",
+     "ar": "كتبت مسودة."
+    },
+    {
+     "en": "The draft is not finished.",
+     "ar": "المسودة مش مخلصة."
+    },
+    {
+     "en": "He reviewed the draft.",
+     "ar": "راجع المسودة."
+    },
+    {
+     "en": "She made a draft of the letter.",
+     "ar": "عملت مسودة للخطاب."
+    },
+    {
+     "en": "The draft is very rough.",
+     "ar": "المسودة خام جدا."
+    },
+    {
+     "en": "He sent the draft to his boss.",
+     "ar": "بعت المسودة لمديره."
+    },
+    {
+     "en": "She revised the draft.",
+     "ar": "راجعت المسودة."
+    },
+    {
+     "en": "The draft needs more work.",
+     "ar": "المسودة محتاجة شغل أكتر."
+    },
+    {
+     "en": "He kept the draft.",
+     "ar": "احتفظ بالمسودة."
+    },
+    {
+     "en": "She threw away the draft.",
+     "ar": "رمّت المسودة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000646",
+   "sentences": [
+    {
+     "en": "He edited the document.",
+     "ar": "حرر المستند."
+    },
+    {
+     "en": "She edited the video.",
+     "ar": "منتجت الفيديو."
+    },
+    {
+     "en": "He edited the photo.",
+     "ar": "عدل الصورة."
+    },
+    {
+     "en": "She edited the article.",
+     "ar": "حررت المقال."
+    },
+    {
+     "en": "He edited the book.",
+     "ar": "حرر الكتاب."
+    },
+    {
+     "en": "She edited the report.",
+     "ar": "راجعت التقرير."
+    },
+    {
+     "en": "He edited the film.",
+     "ar": "منتج الفيلم."
+    },
+    {
+     "en": "She edited the text.",
+     "ar": "حررت النص."
+    },
+    {
+     "en": "He edited the website.",
+     "ar": "عدل الموقع."
+    },
+    {
+     "en": "She edited the essay.",
+     "ar": "راجعت المقال."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000647",
+   "sentences": [
+    {
+     "en": "She proofread the essay.",
+     "ar": "راجعت المقال لغويا."
+    },
+    {
+     "en": "He proofread the report.",
+     "ar": "راجع التقرير لغويا."
+    },
+    {
+     "en": "She proofread the letter.",
+     "ar": "راجعت الخطاب لغويا."
+    },
+    {
+     "en": "He proofread the book.",
+     "ar": "راجع الكتاب لغويا."
+    },
+    {
+     "en": "She proofread the article.",
+     "ar": "راجعت المقال لغويا."
+    },
+    {
+     "en": "He proofread the document.",
+     "ar": "راجع المستند لغويا."
+    },
+    {
+     "en": "She proofread the thesis.",
+     "ar": "راجعت الرسالة لغويا."
+    },
+    {
+     "en": "He proofread the email.",
+     "ar": "راجع الإيميل لغويا."
+    },
+    {
+     "en": "She proofread the manuscript.",
+     "ar": "راجعت المخطوطة لغويا."
+    },
+    {
+     "en": "He proofread the website.",
+     "ar": "راجع الموقع لغويا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000648",
+   "sentences": [
+    {
+     "en": "He cited the reference.",
+     "ar": "استشهد بالمرجع."
+    },
+    {
+     "en": "She checked the reference.",
+     "ar": "راجعت المرجع."
+    },
+    {
+     "en": "The reference is very important.",
+     "ar": "المرجع مهم جدا."
+    },
+    {
+     "en": "He used a reference.",
+     "ar": "استخدم مرجع."
+    },
+    {
+     "en": "She found the reference.",
+     "ar": "لقت المرجع."
+    },
+    {
+     "en": "The reference is very old.",
+     "ar": "المرجع قديم جدا."
+    },
+    {
+     "en": "He has many references.",
+     "ar": "عنده مراجع كتير."
+    },
+    {
+     "en": "She listed the references.",
+     "ar": "عملت قايمة بالمراجع."
+    },
+    {
+     "en": "The reference is very reliable.",
+     "ar": "المرجع موثوق جدا."
+    },
+    {
+     "en": "He quoted the reference.",
+     "ar": "اقتبس المرجع."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000649",
+   "sentences": [
+    {
+     "en": "She quoted the author.",
+     "ar": "اقتبست من المؤلف."
+    },
+    {
+     "en": "He quoted a famous saying.",
+     "ar": "اقتبس مثل مشهور."
+    },
+    {
+     "en": "She quoted the book.",
+     "ar": "اقتبست من الكتاب."
+    },
+    {
+     "en": "He quoted the speech.",
+     "ar": "اقتبس من الخطبة."
+    },
+    {
+     "en": "She quoted the poem.",
+     "ar": "اقتبست من القصيدة."
+    },
+    {
+     "en": "He quoted the article.",
+     "ar": "اقتبس من المقال."
+    },
+    {
+     "en": "She quoted the expert.",
+     "ar": "اقتبست من الخبير."
+    },
+    {
+     "en": "He quoted the report.",
+     "ar": "اقتبس من التقرير."
+    },
+    {
+     "en": "She quoted the president.",
+     "ar": "اقتبست من الرئيس."
+    },
+    {
+     "en": "He quoted the study.",
+     "ar": "اقتبس من الدراسة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000650",
+   "sentences": [
+    {
+     "en": "She paraphrased the text.",
+     "ar": "أعادت صياغة النص."
+    },
+    {
+     "en": "He paraphrased the quote.",
+     "ar": "أعاد صياغة الاقتباس."
+    },
+    {
+     "en": "She paraphrased the paragraph.",
+     "ar": "أعادت صياغة الفقرة."
+    },
+    {
+     "en": "He paraphrased the sentence.",
+     "ar": "أعاد صياغة الجملة."
+    },
+    {
+     "en": "She paraphrased the article.",
+     "ar": "أعادت صياغة المقال."
+    },
+    {
+     "en": "He paraphrased the poem.",
+     "ar": "أعاد صياغة القصيدة."
+    },
+    {
+     "en": "She paraphrased the speech.",
+     "ar": "أعادت صياغة الخطبة."
+    },
+    {
+     "en": "He paraphrased the report.",
+     "ar": "أعاد صياغة التقرير."
+    },
+    {
+     "en": "She paraphrased the book.",
+     "ar": "أعادت صياغة الكتاب."
+    },
+    {
+     "en": "He paraphrased the story.",
+     "ar": "أعاد صياغة القصة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000651",
+   "sentences": [
+    {
+     "en": "He tested the hypothesis.",
+     "ar": "اختبر الفرضية."
+    },
+    {
+     "en": "The hypothesis was proven wrong.",
+     "ar": "الفرضية اتثبت إنها غلط."
+    },
+    {
+     "en": "She proposed a hypothesis.",
+     "ar": "اقترحت فرضية."
+    },
+    {
+     "en": "The hypothesis is very interesting.",
+     "ar": "الفرضية ممتعة جدا."
+    },
+    {
+     "en": "He rejected the hypothesis.",
+     "ar": "رفض الفرضية."
+    },
+    {
+     "en": "The hypothesis needs more evidence.",
+     "ar": "الفرضية محتاجة أدلة أكتر."
+    },
+    {
+     "en": "She supported the hypothesis.",
+     "ar": "دعمت الفرضية."
+    },
+    {
+     "en": "The hypothesis was confirmed.",
+     "ar": "الفرضية اتأكدت."
+    },
+    {
+     "en": "He is working on a hypothesis.",
+     "ar": "بيشتغل على فرضية."
+    },
+    {
+     "en": "The hypothesis is very complex.",
+     "ar": "الفرضية معقدة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000652",
+   "sentences": [
+    {
+     "en": "The theory is very famous.",
+     "ar": "النظرية مشهورة جدا."
+    },
+    {
+     "en": "He explained the theory.",
+     "ar": "شرح النظرية."
+    },
+    {
+     "en": "She believes in the theory.",
+     "ar": "مؤمنة بالنظرية."
+    },
+    {
+     "en": "The theory was proven.",
+     "ar": "النظرية اتثبتت."
+    },
+    {
+     "en": "He rejected the theory.",
+     "ar": "رفض النظرية."
+    },
+    {
+     "en": "The theory is very complex.",
+     "ar": "النظرية معقدة جدا."
+    },
+    {
+     "en": "She is studying the theory.",
+     "ar": "بتدرس النظرية."
+    },
+    {
+     "en": "The theory changed the world.",
+     "ar": "النظرية غيرت العالم."
+    },
+    {
+     "en": "He supports the theory.",
+     "ar": "بيدعم النظرية."
+    },
+    {
+     "en": "The theory is still being tested.",
+     "ar": "النظرية لسه بتتختبر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000653",
+   "sentences": [
+    {
+     "en": "He did an experiment.",
+     "ar": "عمل تجربة علمية."
+    },
+    {
+     "en": "The experiment was successful.",
+     "ar": "التجربة العلمية نجحت."
+    },
+    {
+     "en": "She conducted an experiment.",
+     "ar": "أجرت تجربة علمية."
+    },
+    {
+     "en": "The experiment failed.",
+     "ar": "التجربة العلمية فشلت."
+    },
+    {
+     "en": "He repeated the experiment.",
+     "ar": "كرر التجربة العلمية."
+    },
+    {
+     "en": "The experiment proved the theory.",
+     "ar": "التجربة العلمية أثبتت النظرية."
+    },
+    {
+     "en": "She designed the experiment.",
+     "ar": "صممت التجربة العلمية."
+    },
+    {
+     "en": "The experiment took a long time.",
+     "ar": "التجربة العلمية خدت وقت طويل."
+    },
+    {
+     "en": "He is analyzing the experiment.",
+     "ar": "بيحلل التجربة العلمية."
+    },
+    {
+     "en": "The experiment was very dangerous.",
+     "ar": "التجربة العلمية كانت خطرة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000654",
+   "sentences": [
+    {
+     "en": "She works in a laboratory.",
+     "ar": "بتشتغل في معمل."
+    },
+    {
+     "en": "The laboratory is very modern.",
+     "ar": "المعمل حديث جدا."
+    },
+    {
+     "en": "He conducted the experiment in the laboratory.",
+     "ar": "أجرى التجربة في المعمل."
+    },
+    {
+     "en": "The laboratory has many instruments.",
+     "ar": "المعمل فيه أدوات كتير."
+    },
+    {
+     "en": "She is a laboratory technician.",
+     "ar": "هي فنية معمل."
+    },
+    {
+     "en": "The laboratory is very clean.",
+     "ar": "المعمل نضيف جدا."
+    },
+    {
+     "en": "He spends all day in the laboratory.",
+     "ar": "بيقضي اليوم كله في المعمل."
+    },
+    {
+     "en": "The laboratory is closed on weekends.",
+     "ar": "المعمل مقفول في الأجازات."
+    },
+    {
+     "en": "She discovered something in the laboratory.",
+     "ar": "اكتشفت حاجة في المعمل."
+    },
+    {
+     "en": "The laboratory is very expensive.",
+     "ar": "المعمل غالي جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000655",
+   "sentences": [
+    {
+     "en": "He took a blood sample.",
+     "ar": "خد عينة دم."
+    },
+    {
+     "en": "The sample was analyzed.",
+     "ar": "العينة اتحللت."
+    },
+    {
+     "en": "She collected a sample.",
+     "ar": "جمعت عينة."
+    },
+    {
+     "en": "The sample is very small.",
+     "ar": "العينة صغيرة جدا."
+    },
+    {
+     "en": "He sent the sample to the lab.",
+     "ar": "بعت العينة للمعمل."
+    },
+    {
+     "en": "The sample was contaminated.",
+     "ar": "العينة اتلوثت."
+    },
+    {
+     "en": "She studied the sample.",
+     "ar": "درست العينة."
+    },
+    {
+     "en": "The sample is very rare.",
+     "ar": "العينة نادرة جدا."
+    },
+    {
+     "en": "He took a sample of the water.",
+     "ar": "خد عينة من المية."
+    },
+    {
+     "en": "The sample was lost.",
+     "ar": "العينة ضاعت."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000656",
+   "sentences": [
+    {
+     "en": "The experiment has many variables.",
+     "ar": "التجربة فيها متغيرات كتير."
+    },
+    {
+     "en": "He controlled the variable.",
+     "ar": "تحكم في المتغير."
+    },
+    {
+     "en": "The variable changed the result.",
+     "ar": "المتغير غير النتيجة."
+    },
+    {
+     "en": "She studied the variable.",
+     "ar": "درست المتغير."
+    },
+    {
+     "en": "The variable is very important.",
+     "ar": "المتغير مهم جدا."
+    },
+    {
+     "en": "He measured the variable.",
+     "ar": "قاس المتغير."
+    },
+    {
+     "en": "The variable is difficult to control.",
+     "ar": "المتغير صعب يتتحكم فيه."
+    },
+    {
+     "en": "She changed the variable.",
+     "ar": "غيرت المتغير."
+    },
+    {
+     "en": "The variable affected the outcome.",
+     "ar": "المتغير أثر على النتيجة."
+    },
+    {
+     "en": "He identified the variable.",
+     "ar": "حدد المتغير."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000657",
+   "sentences": [
+    {
+     "en": "The observation was very important.",
+     "ar": "الملاحظة العلمية كانت مهمة جدا."
+    },
+    {
+     "en": "He made an observation.",
+     "ar": "عمل ملاحظة علمية."
+    },
+    {
+     "en": "She recorded the observation.",
+     "ar": "سجلت الملاحظة العلمية."
+    },
+    {
+     "en": "The observation confirmed the theory.",
+     "ar": "الملاحظة العلمية أكدت النظرية."
+    },
+    {
+     "en": "He wrote down his observations.",
+     "ar": "كتب ملاحظاته العلمية."
+    },
+    {
+     "en": "The observation was unexpected.",
+     "ar": "الملاحظة العلمية كانت غير متوقعة."
+    },
+    {
+     "en": "She shared her observations.",
+     "ar": "شاركت ملاحظاتها العلمية."
+    },
+    {
+     "en": "The observation led to a discovery.",
+     "ar": "الملاحظة العلمية قادت لاكتشاف."
+    },
+    {
+     "en": "He is making observations.",
+     "ar": "بيعمل ملاحظات علمية."
+    },
+    {
+     "en": "The observation was very accurate.",
+     "ar": "الملاحظة العلمية كانت دقيقة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000658",
+   "sentences": [
+    {
+     "en": "The finding was very important.",
+     "ar": "النتيجة البحثية كانت مهمة جدا."
+    },
+    {
+     "en": "He published his findings.",
+     "ar": "نشر نتايجه البحثية."
+    },
+    {
+     "en": "The finding surprised everyone.",
+     "ar": "النتيجة البحثية فاجأت الكل."
+    },
+    {
+     "en": "She reported her findings.",
+     "ar": "بلغت عن نتايجها البحثية."
+    },
+    {
+     "en": "The finding was controversial.",
+     "ar": "النتيجة البحثية كانت مثيرة للجدل."
+    },
+    {
+     "en": "He shared his findings.",
+     "ar": "شارك نتايجه البحثية."
+    },
+    {
+     "en": "The finding was confirmed.",
+     "ar": "النتيجة البحثية اتأكدت."
+    },
+    {
+     "en": "She presented her findings.",
+     "ar": "قدمت نتايجها البحثية."
+    },
+    {
+     "en": "The finding changed everything.",
+     "ar": "النتيجة البحثية غيرت كل حاجة."
+    },
+    {
+     "en": "He is analyzing his findings.",
+     "ar": "بيحلل نتايجه البحثية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000659",
+   "sentences": [
+    {
+     "en": "He reached a conclusion.",
+     "ar": "وصل لاستنتاج."
+    },
+    {
+     "en": "The conclusion is very clear.",
+     "ar": "الاستنتاج واضح جدا."
+    },
+    {
+     "en": "She wrote the conclusion.",
+     "ar": "كتبت الخاتمة."
+    },
+    {
+     "en": "The conclusion is based on evidence.",
+     "ar": "الاستنتاج مبني على أدلة."
+    },
+    {
+     "en": "He came to a conclusion.",
+     "ar": "وصل لاستنتاج."
+    },
+    {
+     "en": "The conclusion is very important.",
+     "ar": "الاستنتاج مهم جدا."
+    },
+    {
+     "en": "She presented her conclusion.",
+     "ar": "قدمت استنتاجها."
+    },
+    {
+     "en": "The conclusion was wrong.",
+     "ar": "الاستنتاج كان غلط."
+    },
+    {
+     "en": "He agreed with the conclusion.",
+     "ar": "وافق على الاستنتاج."
+    },
+    {
+     "en": "The conclusion is very logical.",
+     "ar": "الاستنتاج منطقي جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000660",
+   "sentences": [
+    {
+     "en": "He used a new method.",
+     "ar": "استخدم طريقة جديدة."
+    },
+    {
+     "en": "The method is very effective.",
+     "ar": "الطريقة فعالة جدا."
+    },
+    {
+     "en": "She developed a method.",
+     "ar": "طورت طريقة."
+    },
+    {
+     "en": "The method is very simple.",
+     "ar": "الطريقة بسيطة جدا."
+    },
+    {
+     "en": "He followed the method.",
+     "ar": "مشى على المنهج."
+    },
+    {
+     "en": "The method is very old.",
+     "ar": "الطريقة قديمة جدا."
+    },
+    {
+     "en": "She prefers this method.",
+     "ar": "بتفضل الطريقة دي."
+    },
+    {
+     "en": "The method works well.",
+     "ar": "الطريقة بتشتغل كويس."
+    },
+    {
+     "en": "He changed the method.",
+     "ar": "غير الطريقة."
+    },
+    {
+     "en": "The method is very scientific.",
+     "ar": "الطريقة علمية جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000661",
+   "sentences": [
+    {
+     "en": "He took a different approach.",
+     "ar": "خد منهج مختلف."
+    },
+    {
+     "en": "She has a unique approach.",
+     "ar": "عندها أسلوب تعامل مميز."
+    },
+    {
+     "en": "The approach is very effective.",
+     "ar": "المنهج فعال جدا."
+    },
+    {
+     "en": "He changed his approach.",
+     "ar": "غير أسلوبه."
+    },
+    {
+     "en": "She prefers a practical approach.",
+     "ar": "بتفضل منهج عملي."
+    },
+    {
+     "en": "The approach is very modern.",
+     "ar": "الأسلوب حديث جدا."
+    },
+    {
+     "en": "She took a very practical approach.",
+     "ar": "خدت أسلوب عملي جدا."
+    },
+    {
+     "en": "She has a scientific approach.",
+     "ar": "عندها منهج علمي."
+    },
+    {
+     "en": "The approach is very simple.",
+     "ar": "المنهج بسيط جدا."
+    },
+    {
+     "en": "He criticized the approach.",
+     "ar": "انتقد الأسلوب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000662",
+   "sentences": [
+    {
+     "en": "He has a good strategy.",
+     "ar": "عنده استراتيجية كويسة."
+    },
+    {
+     "en": "She developed a strategy.",
+     "ar": "طورت خطة."
+    },
+    {
+     "en": "The strategy is very effective.",
+     "ar": "الاستراتيجية فعالة جدا."
+    },
+    {
+     "en": "He changed his strategy.",
+     "ar": "غير استراتيجيته."
+    },
+    {
+     "en": "She followed the strategy.",
+     "ar": "مشت على الخطة."
+    },
+    {
+     "en": "The strategy failed.",
+     "ar": "الاستراتيجية فشلت."
+    },
+    {
+     "en": "He planned the strategy.",
+     "ar": "خطط الاستراتيجية."
+    },
+    {
+     "en": "She is a strategy expert.",
+     "ar": "هي خبيرة استراتيجية."
+    },
+    {
+     "en": "The strategy worked well.",
+     "ar": "الخطة اشتغلت كويس."
+    },
+    {
+     "en": "He is reviewing the strategy.",
+     "ar": "بيراجع الاستراتيجية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000663",
+   "sentences": [
+    {
+     "en": "He used a new technique.",
+     "ar": "استخدم تقنية جديدة."
+    },
+    {
+     "en": "The technique is very effective.",
+     "ar": "التقنية فعالة جدا."
+    },
+    {
+     "en": "She learned the technique.",
+     "ar": "اتعلمت الأسلوب."
+    },
+    {
+     "en": "The technique is very old.",
+     "ar": "التقنية قديمة جدا."
+    },
+    {
+     "en": "He mastered the technique.",
+     "ar": "أتقن الأسلوب."
+    },
+    {
+     "en": "She improved the technique.",
+     "ar": "حسنت التقنية."
+    },
+    {
+     "en": "The technique is very simple.",
+     "ar": "الأسلوب بسيط جدا."
+    },
+    {
+     "en": "He taught the technique.",
+     "ar": "علم التقنية."
+    },
+    {
+     "en": "She is an expert in the technique.",
+     "ar": "هي خبيرة في الأسلوب."
+    },
+    {
+     "en": "The technique is widely used.",
+     "ar": "التقنية مستخدمة على نطاق واسع."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000664",
+   "sentences": [
+    {
+     "en": "The process is very long.",
+     "ar": "العملية طويلة جدا."
+    },
+    {
+     "en": "He explained the process.",
+     "ar": "شرح العملية."
+    },
+    {
+     "en": "She is learning the process.",
+     "ar": "بتتعلم العملية."
+    },
+    {
+     "en": "The process is very complex.",
+     "ar": "العملية معقدة جدا."
+    },
+    {
+     "en": "He simplified the process.",
+     "ar": "بسط العملية."
+    },
+    {
+     "en": "The process takes time.",
+     "ar": "العملية بتاخد وقت."
+    },
+    {
+     "en": "She followed the process.",
+     "ar": "مشت على المراحل."
+    },
+    {
+     "en": "The process is very important.",
+     "ar": "العملية مهمة جدا."
+    },
+    {
+     "en": "He improved the process.",
+     "ar": "حسن العملية."
+    },
+    {
+     "en": "The process is very efficient.",
+     "ar": "العملية كفؤة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000665",
+   "sentences": [
+    {
+     "en": "He is in the final stage.",
+     "ar": "هو في المرحلة الأخيرة."
+    },
+    {
+     "en": "The project is in an early stage.",
+     "ar": "المشروع في مرحلة مبكرة."
+    },
+    {
+     "en": "She reached the next stage.",
+     "ar": "وصلت للمرحلة التالية."
+    },
+    {
+     "en": "The stage is very important.",
+     "ar": "المرحلة مهمة جدا."
+    },
+    {
+     "en": "He is going through a difficult stage.",
+     "ar": "بيمر بمرحلة صعبة."
+    },
+    {
+     "en": "The stage was completed.",
+     "ar": "المرحلة اتخلصت."
+    },
+    {
+     "en": "She is in a new stage of her life.",
+     "ar": "هي في مرحلة جديدة من حياتها."
+    },
+    {
+     "en": "The stage is very critical.",
+     "ar": "المرحلة حرجة جدا."
+    },
+    {
+     "en": "He skipped a stage.",
+     "ar": "اتخطى مرحلة."
+    },
+    {
+     "en": "The stage is very exciting.",
+     "ar": "المرحلة مثيرة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000666",
+   "sentences": [
+    {
+     "en": "He considered every aspect.",
+     "ar": "فكر في كل جانب."
+    },
+    {
+     "en": "The aspect is very important.",
+     "ar": "الجانب مهم جدا."
+    },
+    {
+     "en": "She studied every aspect of the problem.",
+     "ar": "درست كل جانب من المشكلة."
+    },
+    {
+     "en": "He ignored an important aspect.",
+     "ar": "تجاهل جانب مهم."
+    },
+    {
+     "en": "The aspect is very interesting.",
+     "ar": "الجانب ممتع جدا."
+    },
+    {
+     "en": "She focused on one aspect.",
+     "ar": "ركزت على جانب واحد."
+    },
+    {
+     "en": "The aspect is very complex.",
+     "ar": "الجانب معقد جدا."
+    },
+    {
+     "en": "He explored every aspect.",
+     "ar": "استكشف كل جانب."
+    },
+    {
+     "en": "The aspect is very relevant.",
+     "ar": "الجانب مرتبط جدا."
+    },
+    {
+     "en": "She covered every aspect.",
+     "ar": "غطت كل جانب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000667",
+   "sentences": [
+    {
+     "en": "The phone has a new feature.",
+     "ar": "التليفون عنده ميزة جديدة."
+    },
+    {
+     "en": "She likes this feature.",
+     "ar": "بتحب الميزة دي."
+    },
+    {
+     "en": "The feature is very useful.",
+     "ar": "الميزة مفيدة جدا."
+    },
+    {
+     "en": "He added a feature.",
+     "ar": "ضاف ميزة."
+    },
+    {
+     "en": "The feature is very popular.",
+     "ar": "الميزة مشهورة جدا."
+    },
+    {
+     "en": "She discovered a hidden feature.",
+     "ar": "اكتشفت ميزة مخفية."
+    },
+    {
+     "en": "The feature is very important.",
+     "ar": "السمة مهمة جدا."
+    },
+    {
+     "en": "He explained the feature.",
+     "ar": "شرح الميزة."
+    },
+    {
+     "en": "The feature is very advanced.",
+     "ar": "الميزة متقدمة جدا."
+    },
+    {
+     "en": "She uses the feature every day.",
+     "ar": "بتستخدم الميزة كل يوم."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000668",
+   "sentences": [
+    {
+     "en": "The structure is very strong.",
+     "ar": "الهيكل قوي جدا."
+    },
+    {
+     "en": "He studied the structure.",
+     "ar": "درس التركيب."
+    },
+    {
+     "en": "The structure is very complex.",
+     "ar": "الهيكل معقد جدا."
+    },
+    {
+     "en": "She analyzed the structure.",
+     "ar": "حللت التركيب."
+    },
+    {
+     "en": "The structure is very old.",
+     "ar": "الهيكل قديم جدا."
+    },
+    {
+     "en": "He designed the structure.",
+     "ar": "صمم الهيكل."
+    },
+    {
+     "en": "The structure is very beautiful.",
+     "ar": "التركيب جميل جدا."
+    },
+    {
+     "en": "She explained the structure.",
+     "ar": "شرحت التركيب."
+    },
+    {
+     "en": "The structure is very important.",
+     "ar": "الهيكل مهم جدا."
+    },
+    {
+     "en": "He built the structure.",
+     "ar": "بنى الهيكل."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000669",
+   "sentences": [
+    {
+     "en": "The concept is very difficult.",
+     "ar": "المفهوم صعب جدا."
+    },
+    {
+     "en": "He explained the concept.",
+     "ar": "شرح المفهوم."
+    },
+    {
+     "en": "She understood the concept.",
+     "ar": "فهمت المفهوم."
+    },
+    {
+     "en": "The concept is very new.",
+     "ar": "المفهوم جديد جدا."
+    },
+    {
+     "en": "He is familiar with the concept.",
+     "ar": "عارف المفهوم."
+    },
+    {
+     "en": "The concept is very important.",
+     "ar": "المفهوم مهم جدا."
+    },
+    {
+     "en": "She introduced the concept.",
+     "ar": "قدمت المفهوم."
+    },
+    {
+     "en": "The concept is very abstract.",
+     "ar": "المفهوم مجرد جدا."
+    },
+    {
+     "en": "He explained the concept clearly.",
+     "ar": "شرح المفهوم بوضوح."
+    },
+    {
+     "en": "The concept is very useful.",
+     "ar": "المفهوم مفيد جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000670",
+   "sentences": [
+    {
+     "en": "The principle is very important.",
+     "ar": "المبدأ مهم جدا."
+    },
+    {
+     "en": "He follows the principle.",
+     "ar": "بيمشي على المبدأ."
+    },
+    {
+     "en": "She explained the principle.",
+     "ar": "شرحت القاعدة الأساسية."
+    },
+    {
+     "en": "The principle is very simple.",
+     "ar": "المبدأ بسيط جدا."
+    },
+    {
+     "en": "He believes in the principle.",
+     "ar": "مؤمن بالمبدأ."
+    },
+    {
+     "en": "The principle is very old.",
+     "ar": "القاعدة قديمة جدا."
+    },
+    {
+     "en": "She applied the principle.",
+     "ar": "طبقت المبدأ."
+    },
+    {
+     "en": "The principle is very useful.",
+     "ar": "المبدأ مفيد جدا."
+    },
+    {
+     "en": "He is a man of principle.",
+     "ar": "هو راجل مبادئ."
+    },
+    {
+     "en": "She explained the basic principle.",
+     "ar": "شرحت القاعدة الأساسية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000671",
+   "sentences": [
+    {
+     "en": "The criterion is very important.",
+     "ar": "المعيار مهم جدا."
+    },
+    {
+     "en": "He met the criterion.",
+     "ar": "استوفى المعيار."
+    },
+    {
+     "en": "She set the criterion.",
+     "ar": "حددت المعيار."
+    },
+    {
+     "en": "The criterion is very strict.",
+     "ar": "المعيار صارم جدا."
+    },
+    {
+     "en": "He failed to meet the criterion.",
+     "ar": "فشل في استيفاء المعيار."
+    },
+    {
+     "en": "She explained the criterion.",
+     "ar": "شرحت المعيار."
+    },
+    {
+     "en": "The criterion is very clear.",
+     "ar": "المعيار واضح جدا."
+    },
+    {
+     "en": "He used the criterion.",
+     "ar": "استخدم المعيار."
+    },
+    {
+     "en": "The criterion is very useful.",
+     "ar": "المعيار مفيد جدا."
+    },
+    {
+     "en": "She applied the criterion.",
+     "ar": "طبقت المعيار."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000672",
+   "sentences": [
+    {
+     "en": "The standard is very high.",
+     "ar": "المستوى عالي جدا."
+    },
+    {
+     "en": "He met the standard.",
+     "ar": "استوفى المعيار."
+    },
+    {
+     "en": "She set a new standard.",
+     "ar": "وضعت معيار جديد."
+    },
+    {
+     "en": "The standard is very low.",
+     "ar": "المستوى واطي جدا."
+    },
+    {
+     "en": "He followed the standard.",
+     "ar": "مشى على المعيار."
+    },
+    {
+     "en": "She exceeded the standard.",
+     "ar": "اتخطت المعيار."
+    },
+    {
+     "en": "The standard is very strict.",
+     "ar": "المعيار صارم جدا."
+    },
+    {
+     "en": "He maintained the standard.",
+     "ar": "حافظ على المستوى."
+    },
+    {
+     "en": "She raised the standard.",
+     "ar": "رفعت المعيار."
+    },
+    {
+     "en": "The standard is very important.",
+     "ar": "المعيار مهم جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000673",
+   "sentences": [
+    {
+     "en": "Family is his priority.",
+     "ar": "العيلة هي أولويته."
+    },
+    {
+     "en": "She set her priorities.",
+     "ar": "حددت أولوياتها."
+    },
+    {
+     "en": "Health is a priority.",
+     "ar": "الصحة أولوية."
+    },
+    {
+     "en": "He made it a priority.",
+     "ar": "خلى ده أولوية."
+    },
+    {
+     "en": "The priority is to finish on time.",
+     "ar": "الأولوية هي تخلص في المعاد."
+    },
+    {
+     "en": "She has different priorities.",
+     "ar": "عندها أولويات مختلفة."
+    },
+    {
+     "en": "Safety is a priority.",
+     "ar": "الأمان أولوية."
+    },
+    {
+     "en": "He changed his priorities.",
+     "ar": "غير أولوياته."
+    },
+    {
+     "en": "The priority is very clear.",
+     "ar": "الأولوية واضحة جدا."
+    },
+    {
+     "en": "She is his top priority.",
+     "ar": "هي أولويته الأولى."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000674",
+   "sentences": [
+    {
+     "en": "The trend is very popular.",
+     "ar": "الاتجاه مشهور جدا."
+    },
+    {
+     "en": "He follows the latest trend.",
+     "ar": "بيتبع أحدث ترند."
+    },
+    {
+     "en": "She started a new trend.",
+     "ar": "بدأت ترند جديد."
+    },
+    {
+     "en": "The trend is changing.",
+     "ar": "الاتجاه بيتغير."
+    },
+    {
+     "en": "He is aware of the trend.",
+     "ar": "عارف الاتجاه."
+    },
+    {
+     "en": "She set the trend.",
+     "ar": "حددت الترند."
+    },
+    {
+     "en": "The trend is very positive.",
+     "ar": "الاتجاه إيجابي جدا."
+    },
+    {
+     "en": "He studied the trend.",
+     "ar": "درس الاتجاه."
+    },
+    {
+     "en": "She is following the trend.",
+     "ar": "بتمشي ورا الترند."
+    },
+    {
+     "en": "The trend is very clear.",
+     "ar": "الاتجاه واضح جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000675",
+   "sentences": [
+    {
+     "en": "There was a big shift.",
+     "ar": "حصل تحول كبير."
+    },
+    {
+     "en": "He noticed a shift in the market.",
+     "ar": "لاحظ تحول في السوق."
+    },
+    {
+     "en": "The shift is very important.",
+     "ar": "التحول مهم جدا."
+    },
+    {
+     "en": "She works the night shift.",
+     "ar": "بتشتغل الوردية الليلية."
+    },
+    {
+     "en": "He is on the morning shift.",
+     "ar": "هو في الوردية الصباحية."
+    },
+    {
+     "en": "The shift was very sudden.",
+     "ar": "التحول كان مفاجئ جدا."
+    },
+    {
+     "en": "She explained the shift.",
+     "ar": "شرحت التحول."
+    },
+    {
+     "en": "The shift is very gradual.",
+     "ar": "التحول تدريجي جدا."
+    },
+    {
+     "en": "He adapted to the shift.",
+     "ar": "تأقلم على التحول."
+    },
+    {
+     "en": "The shift changed everything.",
+     "ar": "التحول غير كل حاجة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000676",
+   "sentences": [
+    {
+     "en": "It is a strange phenomenon.",
+     "ar": "دي ظاهرة غريبة."
+    },
+    {
+     "en": "He studied the phenomenon.",
+     "ar": "درس الظاهرة."
+    },
+    {
+     "en": "The phenomenon is very rare.",
+     "ar": "الظاهرة نادرة جدا."
+    },
+    {
+     "en": "She explained the phenomenon.",
+     "ar": "شرحت الظاهرة."
+    },
+    {
+     "en": "The phenomenon is very common.",
+     "ar": "الظاهرة شايعة جدا."
+    },
+    {
+     "en": "He observed the phenomenon.",
+     "ar": "لاحظ الظاهرة."
+    },
+    {
+     "en": "The phenomenon is very interesting.",
+     "ar": "الظاهرة ممتعة جدا."
+    },
+    {
+     "en": "She is researching the phenomenon.",
+     "ar": "بتبحث في الظاهرة."
+    },
+    {
+     "en": "The phenomenon is very complex.",
+     "ar": "الظاهرة معقدة جدا."
+    },
+    {
+     "en": "He documented the phenomenon.",
+     "ar": "وثق الظاهرة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000677",
+   "sentences": [
+    {
+     "en": "He acted under the circumstances.",
+     "ar": "تصرف تحت الظروف."
+    },
+    {
+     "en": "She explained the circumstance.",
+     "ar": "شرحت الظرف."
+    },
+    {
+     "en": "The circumstance was very difficult.",
+     "ar": "الظرف كان صعب جدا."
+    },
+    {
+     "en": "He is a victim of circumstance.",
+     "ar": "هو ضحية الظروف."
+    },
+    {
+     "en": "She adapted to the circumstance.",
+     "ar": "تأقلمت على الظرف."
+    },
+    {
+     "en": "The circumstance is very unusual.",
+     "ar": "الظرف غير عادي جدا."
+    },
+    {
+     "en": "He considered the circumstance.",
+     "ar": "فكر في الظرف."
+    },
+    {
+     "en": "She overcame the circumstance.",
+     "ar": "اتغلبت على الظرف."
+    },
+    {
+     "en": "The circumstance changed everything.",
+     "ar": "الظرف غير كل حاجة."
+    },
+    {
+     "en": "He is in a difficult circumstance.",
+     "ar": "هو في ظرف صعب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000678",
+   "sentences": [
+    {
+     "en": "The situation is very difficult.",
+     "ar": "الموقف صعب جدا."
+    },
+    {
+     "en": "He handled the situation.",
+     "ar": "تعامل مع الموقف."
+    },
+    {
+     "en": "She is in a bad situation.",
+     "ar": "هي في وضع وحش."
+    },
+    {
+     "en": "The situation is getting worse.",
+     "ar": "الوضع بيسوء."
+    },
+    {
+     "en": "He explained the situation.",
+     "ar": "شرح الموقف."
+    },
+    {
+     "en": "She is in a good situation.",
+     "ar": "هي في وضع كويس."
+    },
+    {
+     "en": "The situation is very complex.",
+     "ar": "الموقف معقد جدا."
+    },
+    {
+     "en": "He analyzed the situation.",
+     "ar": "حلل الموقف."
+    },
+    {
+     "en": "She improved the situation.",
+     "ar": "حسنت الوضع."
+    },
+    {
+     "en": "The situation is under control.",
+     "ar": "الوضع تحت السيطرة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000679",
+   "sentences": [
+    {
+     "en": "The condition is very serious.",
+     "ar": "الحالة خطيرة جدا."
+    },
+    {
+     "en": "He is in a good condition.",
+     "ar": "هو في حالة كويسة."
+    },
+    {
+     "en": "He suffers from a heart condition.",
+     "ar": "عنده حالة في القلب."
+    },
+    {
+     "en": "The condition is very rare.",
+     "ar": "الحالة نادرة جدا."
+    },
+    {
+     "en": "He set a condition.",
+     "ar": "حط شرط."
+    },
+    {
+     "en": "The condition must be met.",
+     "ar": "الشرط لازم يتنفذ."
+    },
+    {
+     "en": "She is in a stable condition.",
+     "ar": "هي في حالة مستقرة."
+    },
+    {
+     "en": "The condition is very common.",
+     "ar": "الحالة شايعة جدا."
+    },
+    {
+     "en": "He agreed to the condition.",
+     "ar": "وافق على الشرط."
+    },
+    {
+     "en": "The condition is very painful.",
+     "ar": "الحالة مؤلمة جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000680",
+   "sentences": [
+    {
+     "en": "He has a different perspective.",
+     "ar": "عنده وجهة نظر مختلفة."
+    },
+    {
+     "en": "She sees things from a new perspective.",
+     "ar": "بتشوف الحاجات من منظور جديد."
+    },
+    {
+     "en": "The perspective is very interesting.",
+     "ar": "وجهة النظر ممتعة جدا."
+    },
+    {
+     "en": "He changed his perspective.",
+     "ar": "غير وجهة نظره."
+    },
+    {
+     "en": "She has a unique perspective.",
+     "ar": "عندها منظور مميز."
+    },
+    {
+     "en": "The perspective is very broad.",
+     "ar": "وجهة النظر واسعة جدا."
+    },
+    {
+     "en": "He shared his perspective.",
+     "ar": "شارك وجهة نظره."
+    },
+    {
+     "en": "She has a global perspective.",
+     "ar": "عندها منظور عالمي."
+    },
+    {
+     "en": "The perspective is very narrow.",
+     "ar": "وجهة النظر ضيقة جدا."
+    },
+    {
+     "en": "He respects her perspective.",
+     "ar": "بيحترم وجهة نظرها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000681",
+   "sentences": [
+    {
+     "en": "He expressed his viewpoint.",
+     "ar": "عبر عن وجهة نظره."
+    },
+    {
+     "en": "She has a strong viewpoint.",
+     "ar": "عندها وجهة نظر قوية."
+    },
+    {
+     "en": "The viewpoint is very interesting.",
+     "ar": "وجهة النظر ممتعة جدا."
+    },
+    {
+     "en": "He shared his viewpoint.",
+     "ar": "شارك وجهة نظره."
+    },
+    {
+     "en": "She respects his viewpoint.",
+     "ar": "بتحترم وجهة نظره."
+    },
+    {
+     "en": "The viewpoint is very different.",
+     "ar": "وجهة النظر مختلفة جدا."
+    },
+    {
+     "en": "He defended his viewpoint.",
+     "ar": "دافع عن وجهة نظره."
+    },
+    {
+     "en": "She changed her viewpoint.",
+     "ar": "غيرت وجهة نظرها."
+    },
+    {
+     "en": "The viewpoint is very valid.",
+     "ar": "وجهة النظر صحيحة جدا."
+    },
+    {
+     "en": "He understands her viewpoint.",
+     "ar": "فاهم وجهة نظرها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000682",
+   "sentences": [
+    {
+     "en": "He made a strong argument.",
+     "ar": "قدم حجة قوية."
+    },
+    {
+     "en": "The argument is very convincing.",
+     "ar": "الحجة مقنعة جدا."
+    },
+    {
+     "en": "She won the argument.",
+     "ar": "كسبت الجدل."
+    },
+    {
+     "en": "He lost the argument.",
+     "ar": "خسر الجدل."
+    },
+    {
+     "en": "The argument is very weak.",
+     "ar": "الحجة ضعيفة جدا."
+    },
+    {
+     "en": "She presented her argument.",
+     "ar": "قدمت حجتها."
+    },
+    {
+     "en": "He supported his argument with facts.",
+     "ar": "دعم حجته بالحقايق."
+    },
+    {
+     "en": "The argument lasted for hours.",
+     "ar": "الجدل استمر ساعات."
+    },
+    {
+     "en": "She disagreed with his argument.",
+     "ar": "ماوافقتش على حجته."
+    },
+    {
+     "en": "The argument is very logical.",
+     "ar": "الحجة منطقية جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000683",
+   "sentences": [
+    {
+     "en": "The debate was very heated.",
+     "ar": "النقاش كان ساخن جدا."
+    },
+    {
+     "en": "He participated in the debate.",
+     "ar": "شارك في النقاش."
+    },
+    {
+     "en": "The debate is ongoing.",
+     "ar": "الجدل مستمر."
+    },
+    {
+     "en": "She won the debate.",
+     "ar": "كسبت النقاش."
+    },
+    {
+     "en": "The debate is very important.",
+     "ar": "النقاش مهم جدا."
+    },
+    {
+     "en": "He watched the debate.",
+     "ar": "اتفرج على النقاش."
+    },
+    {
+     "en": "The debate was very long.",
+     "ar": "النقاش كان طويل جدا."
+    },
+    {
+     "en": "She started the debate.",
+     "ar": "بدأت النقاش."
+    },
+    {
+     "en": "The debate is about education.",
+     "ar": "النقاش عن التعليم."
+    },
+    {
+     "en": "He is good at debate.",
+     "ar": "هو شاطر في النقاش."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000684",
+   "sentences": [
+    {
+     "en": "The issue caused a lot of controversy.",
+     "ar": "القضية سببت جدل كبير."
+    },
+    {
+     "en": "He is at the center of the controversy.",
+     "ar": "هو في وسط الجدل."
+    },
+    {
+     "en": "The controversy is very big.",
+     "ar": "الجدل كبير جدا."
+    },
+    {
+     "en": "She avoided the controversy.",
+     "ar": "اتجنبت الجدل."
+    },
+    {
+     "en": "The controversy lasted for months.",
+     "ar": "الجدل استمر شهور."
+    },
+    {
+     "en": "He sparked the controversy.",
+     "ar": "أشعل الجدل."
+    },
+    {
+     "en": "The controversy is very heated.",
+     "ar": "الجدل ساخن جدا."
+    },
+    {
+     "en": "She is involved in the controversy.",
+     "ar": "هي متورطة في الجدل."
+    },
+    {
+     "en": "The controversy died down.",
+     "ar": "الجدل هدا."
+    },
+    {
+     "en": "He commented on the controversy.",
+     "ar": "علق على الجدل."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000685",
+   "sentences": [
+    {
+     "en": "There is a consensus on the issue.",
+     "ar": "فيه إجماع على القضية."
+    },
+    {
+     "en": "They reached a consensus.",
+     "ar": "وصلوا لاتفاق عام."
+    },
+    {
+     "en": "The consensus is very important.",
+     "ar": "الإجماع مهم جدا."
+    },
+    {
+     "en": "He helped build the consensus.",
+     "ar": "ساعد في بناء الإجماع."
+    },
+    {
+     "en": "There is no consensus.",
+     "ar": "مفيش إجماع."
+    },
+    {
+     "en": "She sought a consensus.",
+     "ar": "دورت على إجماع."
+    },
+    {
+     "en": "The consensus was very strong.",
+     "ar": "الإجماع كان قوي جدا."
+    },
+    {
+     "en": "They failed to reach a consensus.",
+     "ar": "فشلوا يوصلوا لاتفاق عام."
+    },
+    {
+     "en": "The consensus is very rare.",
+     "ar": "الإجماع نادر جدا."
+    },
+    {
+     "en": "He respected the consensus.",
+     "ar": "احترم الإجماع."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000686",
+   "sentences": [
+    {
+     "en": "The assumption is very dangerous.",
+     "ar": "الافتراض خطير جدا."
+    },
+    {
+     "en": "He made an assumption.",
+     "ar": "عمل افتراض."
+    },
+    {
+     "en": "The assumption was wrong.",
+     "ar": "الافتراض كان غلط."
+    },
+    {
+     "en": "She based her decision on an assumption.",
+     "ar": "بنت قرارها على افتراض."
+    },
+    {
+     "en": "The assumption is very common.",
+     "ar": "الافتراض شايع جدا."
+    },
+    {
+     "en": "He challenged the assumption.",
+     "ar": "تحدى الافتراض."
+    },
+    {
+     "en": "The assumption is very risky.",
+     "ar": "الافتراض خطر جدا."
+    },
+    {
+     "en": "She proved the assumption.",
+     "ar": "أثبتت الافتراض."
+    },
+    {
+     "en": "The assumption is very logical.",
+     "ar": "الافتراض منطقي جدا."
+    },
+    {
+     "en": "He rejected the assumption.",
+     "ar": "رفض الافتراض."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000687",
+   "sentences": [
+    {
+     "en": "His perception of the world changed.",
+     "ar": "تصوره للعالم اتغير."
+    },
+    {
+     "en": "She has a different perception.",
+     "ar": "عندها إدراك مختلف."
+    },
+    {
+     "en": "The perception is very important.",
+     "ar": "التصور مهم جدا."
+    },
+    {
+     "en": "He has a clear perception.",
+     "ar": "عنده إدراك واضح."
+    },
+    {
+     "en": "The perception is very distorted.",
+     "ar": "التصور مشوه جدا."
+    },
+    {
+     "en": "She changed her perception.",
+     "ar": "غيرت تصورها."
+    },
+    {
+     "en": "The perception is very common.",
+     "ar": "التصور شايع جدا."
+    },
+    {
+     "en": "He has a unique perception.",
+     "ar": "عنده إدراك مميز."
+    },
+    {
+     "en": "The perception is very accurate.",
+     "ar": "التصور دقيق جدا."
+    },
+    {
+     "en": "She studied human perception.",
+     "ar": "درست الإدراك البشري."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000688",
+   "sentences": [
+    {
+     "en": "She raised awareness about the issue.",
+     "ar": "رفعت الوعي عن القضية."
+    },
+    {
+     "en": "He has a lot of awareness.",
+     "ar": "عنده وعي كبير."
+    },
+    {
+     "en": "The campaign raised awareness.",
+     "ar": "الحملة رفعت الوعي."
+    },
+    {
+     "en": "She is spreading awareness.",
+     "ar": "بتنشر الوعي."
+    },
+    {
+     "en": "He has no awareness of the problem.",
+     "ar": "ماعندوش وعي بالمشكلة."
+    },
+    {
+     "en": "The awareness is very important.",
+     "ar": "الوعي مهم جدا."
+    },
+    {
+     "en": "She increased awareness.",
+     "ar": "زودت الوعي."
+    },
+    {
+     "en": "He has a high level of awareness.",
+     "ar": "عنده مستوى عالي من الوعي."
+    },
+    {
+     "en": "The awareness is growing.",
+     "ar": "الوعي بيزيد."
+    },
+    {
+     "en": "She is an awareness advocate.",
+     "ar": "هي مناصرة للوعي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000689",
+   "sentences": [
+    {
+     "en": "He expressed his concern.",
+     "ar": "عبر عن قلقه."
+    },
+    {
+     "en": "She has a lot of concern.",
+     "ar": "عندها قلق كبير."
+    },
+    {
+     "en": "The concern is very valid.",
+     "ar": "القلق مبرر جدا."
+    },
+    {
+     "en": "He shared his concern.",
+     "ar": "شارك قلقه."
+    },
+    {
+     "en": "She has no concern.",
+     "ar": "ماعندهاش قلق."
+    },
+    {
+     "en": "The concern is growing.",
+     "ar": "القلق بيزيد."
+    },
+    {
+     "en": "He addressed the concern.",
+     "ar": "تناول القلق."
+    },
+    {
+     "en": "She has a genuine concern.",
+     "ar": "عندها اهتمام حقيقي."
+    },
+    {
+     "en": "The concern is very serious.",
+     "ar": "القلق خطير جدا."
+    },
+    {
+     "en": "He ignored the concern.",
+     "ar": "تجاهل القلق."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000690",
+   "sentences": [
+    {
+     "en": "The threat is very real.",
+     "ar": "التهديد حقيقي جدا."
+    },
+    {
+     "en": "He received a threat.",
+     "ar": "استلم تهديد."
+    },
+    {
+     "en": "The threat is very serious.",
+     "ar": "التهديد خطير جدا."
+    },
+    {
+     "en": "She ignored the threat.",
+     "ar": "تجاهلت التهديد."
+    },
+    {
+     "en": "The threat is growing.",
+     "ar": "التهديد بيزيد."
+    },
+    {
+     "en": "He faced the threat.",
+     "ar": "واجه التهديد."
+    },
+    {
+     "en": "The threat was eliminated.",
+     "ar": "التهديد اتشال."
+    },
+    {
+     "en": "She is under threat.",
+     "ar": "هي تحت تهديد."
+    },
+    {
+     "en": "The threat is very immediate.",
+     "ar": "التهديد مباشر جدا."
+    },
+    {
+     "en": "He responded to the threat.",
+     "ar": "رد على التهديد."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000691",
+   "sentences": [
+    {
+     "en": "He is in danger.",
+     "ar": "هو في خطر."
+    },
+    {
+     "en": "The danger is very real.",
+     "ar": "الخطر حقيقي جدا."
+    },
+    {
+     "en": "She sensed the danger.",
+     "ar": "حست بالخطر."
+    },
+    {
+     "en": "He is out of danger.",
+     "ar": "هو بره الخطر."
+    },
+    {
+     "en": "The danger is very immediate.",
+     "ar": "الخطر مباشر جدا."
+    },
+    {
+     "en": "She warned him of the danger.",
+     "ar": "حذرته من الخطر."
+    },
+    {
+     "en": "He faced the danger.",
+     "ar": "واجه الخطر."
+    },
+    {
+     "en": "The danger is very great.",
+     "ar": "الخطر كبير جدا."
+    },
+    {
+     "en": "She is aware of the danger.",
+     "ar": "عارفة الخطر."
+    },
+    {
+     "en": "He put himself in danger.",
+     "ar": "حط نفسه في خطر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000692",
+   "sentences": [
+    {
+     "en": "The hazard is very dangerous.",
+     "ar": "مصدر الخطر خطير جدا."
+    },
+    {
+     "en": "He identified the hazard.",
+     "ar": "حدد مصدر الخطر."
+    },
+    {
+     "en": "The hazard is very common.",
+     "ar": "مصدر الخطر شايع جدا."
+    },
+    {
+     "en": "She reported the hazard.",
+     "ar": "بلغت عن مصدر الخطر."
+    },
+    {
+     "en": "The hazard was removed.",
+     "ar": "مصدر الخطر اتشال."
+    },
+    {
+     "en": "He is aware of the hazard.",
+     "ar": "عارف مصدر الخطر."
+    },
+    {
+     "en": "The hazard is very serious.",
+     "ar": "مصدر الخطر خطير جدا."
+    },
+    {
+     "en": "She warned about the hazard.",
+     "ar": "حذرت من مصدر الخطر."
+    },
+    {
+     "en": "The hazard is very visible.",
+     "ar": "مصدر الخطر واضح جدا."
+    },
+    {
+     "en": "He avoided the hazard.",
+     "ar": "اتجنب مصدر الخطر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000693",
+   "sentences": [
+    {
+     "en": "He drove with caution.",
+     "ar": "ساق بحذر."
+    },
+    {
+     "en": "She approached the dog with caution.",
+     "ar": "قربت من الكلب بحذر."
+    },
+    {
+     "en": "Caution is very important.",
+     "ar": "الحذر مهم جدا."
+    },
+    {
+     "en": "He acted with caution.",
+     "ar": "تصرف بحذر."
+    },
+    {
+     "en": "She showed great caution.",
+     "ar": "أظهرت حذر كبير."
+    },
+    {
+     "en": "He threw caution to the wind.",
+     "ar": "رمى الحذر ورا ضهره."
+    },
+    {
+     "en": "Caution is needed here.",
+     "ar": "الحذر مطلوب هنا."
+    },
+    {
+     "en": "She proceeded with caution.",
+     "ar": "كملت بحذر."
+    },
+    {
+     "en": "He advised caution.",
+     "ar": "نصح بالحذر."
+    },
+    {
+     "en": "Caution saved his life.",
+     "ar": "الحذر أنقذ حياته."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000694",
+   "sentences": [
+    {
+     "en": "He took a measure.",
+     "ar": "خد إجراء."
+    },
+    {
+     "en": "The measure is very effective.",
+     "ar": "الإجراء فعال جدا."
+    },
+    {
+     "en": "She measured the room.",
+     "ar": "قاست الأوضة."
+    },
+    {
+     "en": "The measure is very important.",
+     "ar": "الإجراء مهم جدا."
+    },
+    {
+     "en": "He took preventive measures.",
+     "ar": "خد إجراءات وقائية."
+    },
+    {
+     "en": "She took extra safety measures.",
+     "ar": "خدت إجراءات أمان إضافية."
+    },
+    {
+     "en": "The measure was very strict.",
+     "ar": "الإجراء كان صارم جدا."
+    },
+    {
+     "en": "He measured his success.",
+     "ar": "قاس نجاحه."
+    },
+    {
+     "en": "The measure is very necessary.",
+     "ar": "الإجراء ضروري جدا."
+    },
+    {
+     "en": "She measured the distance.",
+     "ar": "قاست المسافة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000695",
+   "sentences": [
+    {
+     "en": "He took precautions.",
+     "ar": "خد احتياطات."
+    },
+    {
+     "en": "The precaution is very important.",
+     "ar": "الاحتياط مهم جدا."
+    },
+    {
+     "en": "She took every precaution.",
+     "ar": "خدت كل احتياط."
+    },
+    {
+     "en": "He ignored the precautions.",
+     "ar": "تجاهل الاحتياطات."
+    },
+    {
+     "en": "The precaution saved his life.",
+     "ar": "الاحتياط أنقذ حياته."
+    },
+    {
+     "en": "She followed the precautions.",
+     "ar": "مشت على الاحتياطات."
+    },
+    {
+     "en": "He took safety precautions.",
+     "ar": "خد احتياطات أمان."
+    },
+    {
+     "en": "The precaution is very simple.",
+     "ar": "الاحتياط بسيط جدا."
+    },
+    {
+     "en": "She emphasized the precautions.",
+     "ar": "شددت على الاحتياطات."
+    },
+    {
+     "en": "He forgot the precautions.",
+     "ar": "نسي الاحتياطات."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000696",
+   "sentences": [
+    {
+     "en": "The energy is sustainable.",
+     "ar": "الطاقة مستدامة."
+    },
+    {
+     "en": "He is a sustainable farmer.",
+     "ar": "هو مزارع مستدام."
+    },
+    {
+     "en": "The development is sustainable.",
+     "ar": "التنمية مستدامة."
+    },
+    {
+     "en": "She supports sustainable practices.",
+     "ar": "بتدعم الممارسات المستدامة."
+    },
+    {
+     "en": "The company is sustainable.",
+     "ar": "الشركة مستدامة."
+    },
+    {
+     "en": "He is interested in sustainable energy.",
+     "ar": "مهتم بالطاقة المستدامة."
+    },
+    {
+     "en": "The project is sustainable.",
+     "ar": "المشروع مستدام."
+    },
+    {
+     "en": "She studies sustainable development.",
+     "ar": "بتدرس التنمية المستدامة."
+    },
+    {
+     "en": "The solution is sustainable.",
+     "ar": "الحل مستدام."
+    },
+    {
+     "en": "He promotes sustainable living.",
+     "ar": "بيروج للعيش المستدام."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000697",
+   "sentences": [
+    {
+     "en": "He works in conservation.",
+     "ar": "بيشتغل في حماية الطبيعة."
+    },
+    {
+     "en": "The conservation is very important.",
+     "ar": "حماية الطبيعة مهمة جدا."
+    },
+    {
+     "en": "She supports conservation.",
+     "ar": "بتدعم حماية الطبيعة."
+    },
+    {
+     "en": "The conservation project is very successful.",
+     "ar": "مشروع حماية الطبيعة ناجح جدا."
+    },
+    {
+     "en": "He is a conservation expert.",
+     "ar": "هو خبير في حماية الطبيعة."
+    },
+    {
+     "en": "She studies conservation.",
+     "ar": "بتدرس حماية الطبيعة."
+    },
+    {
+     "en": "The conservation area is very big.",
+     "ar": "منطقة حماية الطبيعة كبيرة جدا."
+    },
+    {
+     "en": "He is involved in conservation.",
+     "ar": "هو متورط في حماية الطبيعة."
+    },
+    {
+     "en": "The conservation efforts are paying off.",
+     "ar": "جهود حماية الطبيعة بتجيب نتيجة."
+    },
+    {
+     "en": "She is passionate about conservation.",
+     "ar": "شغوفة بحماية الطبيعة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000698",
+   "sentences": [
+    {
+     "en": "The rainforest has a lot of biodiversity.",
+     "ar": "الغابة المطيرة عندها تنوع بيولوجي كبير."
+    },
+    {
+     "en": "Biodiversity is very important.",
+     "ar": "التنوع البيولوجي مهم جدا."
+    },
+    {
+     "en": "He studies biodiversity.",
+     "ar": "بيدرس التنوع البيولوجي."
+    },
+    {
+     "en": "The island has unique biodiversity.",
+     "ar": "الجزيرة عندها تنوع بيولوجي مميز."
+    },
+    {
+     "en": "She is working to protect biodiversity.",
+     "ar": "بتشتغل على حماية التنوع البيولوجي."
+    },
+    {
+     "en": "Biodiversity is threatened.",
+     "ar": "التنوع البيولوجي مهدد."
+    },
+    {
+     "en": "He is an expert in biodiversity.",
+     "ar": "هو خبير في التنوع البيولوجي."
+    },
+    {
+     "en": "The park has rich biodiversity.",
+     "ar": "الحديقة عندها تنوع بيولوجي غني."
+    },
+    {
+     "en": "She wrote a book about biodiversity.",
+     "ar": "كتبت كتاب عن التنوع البيولوجي."
+    },
+    {
+     "en": "Biodiversity is decreasing.",
+     "ar": "التنوع البيولوجي بيقل."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000699",
+   "sentences": [
+    {
+     "en": "Deforestation is a big problem.",
+     "ar": "إزالة الغابات مشكلة كبيرة."
+    },
+    {
+     "en": "He is fighting deforestation.",
+     "ar": "بيحارب إزالة الغابات."
+    },
+    {
+     "en": "Deforestation causes climate change.",
+     "ar": "إزالة الغابات بتسبب تغير المناخ."
+    },
+    {
+     "en": "She studied deforestation.",
+     "ar": "درست إزالة الغابات."
+    },
+    {
+     "en": "Deforestation is very rapid.",
+     "ar": "إزالة الغابات سريعة جدا."
+    },
+    {
+     "en": "He wrote about deforestation.",
+     "ar": "كتب عن إزالة الغابات."
+    },
+    {
+     "en": "Deforestation affects the animals.",
+     "ar": "إزالة الغابات بتأثر على الحيوانات."
+    },
+    {
+     "en": "She is against deforestation.",
+     "ar": "هي ضد إزالة الغابات."
+    },
+    {
+     "en": "Deforestation is a global issue.",
+     "ar": "إزالة الغابات قضية عالمية."
+    },
+    {
+     "en": "He is trying to stop deforestation.",
+     "ar": "بيحاول يوقف إزالة الغابات."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000700",
+   "sentences": [
+    {
+     "en": "The ecosystem is very delicate.",
+     "ar": "النظام البيئي حساس جدا."
+    },
+    {
+     "en": "He studied the ecosystem.",
+     "ar": "درس النظام البيئي."
+    },
+    {
+     "en": "The ecosystem is very diverse.",
+     "ar": "النظام البيئي متنوع جدا."
+    },
+    {
+     "en": "She is protecting the ecosystem.",
+     "ar": "بتحمي النظام البيئي."
+    },
+    {
+     "en": "The ecosystem is in danger.",
+     "ar": "النظام البيئي في خطر."
+    },
+    {
+     "en": "He is an expert on ecosystems.",
+     "ar": "هو خبير في الأنظمة البيئية."
+    },
+    {
+     "en": "The ecosystem is very complex.",
+     "ar": "النظام البيئي معقد جدا."
+    },
+    {
+     "en": "She wrote about the ecosystem.",
+     "ar": "كتبت عن النظام البيئي."
+    },
+    {
+     "en": "The ecosystem is changing.",
+     "ar": "النظام البيئي بيتغير."
+    },
+    {
+     "en": "He is researching the ecosystem.",
+     "ar": "بيبحث في النظام البيئي."
+    }
+   ]
+  }
+ ]
+}
