@@ -507,7 +507,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
                 <div>
                   <div className="text-xs font-black text-white leading-tight">
-                    {asst.nameAr}
+                    {t(`atm.${asst.id}.name`)}
                   </div>
                   <div className="text-[10px] text-[#b9b6d5] font-mono mt-0.5 truncate">
                     {asst.nameEn}
@@ -526,8 +526,8 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             <ActiveIcon className="w-4 h-4" />
           </div>
           <div>
-            <span className="font-bold text-white ml-1.5">{activeAssistant.nameAr}:</span>
-            <span>{activeAssistant.shortDescAr}</span>
+            <span className="font-bold text-white me-1.5">{t(`atm.${activeMode}.name`)}:</span>
+            <span>{t(`atm.${activeMode}.description`)}</span>
           </div>
         </div>
 
@@ -542,7 +542,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               title={t('at.voiceTitle')}
             >
               <Volume2 className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>{t('at.changeVoice')}({getVoiceSettings().selectedVoiceName || t('at.defaultVoice')})</span>
+              <span>{t('at.changeVoice')} <bdi dir="auto">({getVoiceSettings().selectedVoiceName || t('at.defaultVoice')})</bdi></span>
             </button>
           )}
 
@@ -552,7 +552,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             title={t('at.historyTitle')}
           >
             <History className="w-3.5 h-3.5 text-[#41e7ff]" />
-            <span>{t('at.sessions')} ({sessions.length})</span>
+            <span>{t('at.sessions')} <bdi dir="ltr" className="whitespace-nowrap">({sessions.length})</bdi></span>
           </button>
 
           <button
@@ -579,7 +579,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               <div className="flex items-center justify-between text-xs font-bold text-white pb-2 border-b border-white/10">
                 <span className="flex items-center gap-1.5">
                   <History className="w-4 h-4 text-[#41e7ff]" />
-                  {t('at.historyWith')}: {activeAssistant.nameAr}
+                  {t('at.historyWith')}: {t(`atm.${activeMode}.name`)}
                 </span>
                 <span className="text-[10px] text-[#b9b6d5]">
                   {t('at.autoSave')}
@@ -717,7 +717,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                   <div className="flex items-center justify-between gap-3 text-[10px] text-[#b9b6d5] pb-2 border-b border-white/10">
                     <div className="flex items-center gap-1.5">
                       <span className="font-bold text-white">
-                        {isUser ? userProfile.nameAr : activeAssistant.nameAr}
+                        {isUser ? userProfile.nameAr : t(`atm.${activeMode}.name`)}
                       </span>
                       {!isUser && msg.provider && (
                         <span className="px-1.5 py-0.2 rounded bg-white/10 text-[9px] text-[#41e7ff] font-mono">
@@ -796,7 +796,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               </div>
               <div className="p-4 rounded-2xl bg-[#151430] border border-white/15 flex items-center gap-2.5 shadow-lg">
                 <span className="text-xs text-[#ffd166] font-bold">
-                  {activeAssistant.nameAr} {t('at.preparing')}
+                  {t(`atm.${activeMode}.name`)} {t('at.preparing')}
                 </span>
                 <div className="flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#ffd166] animate-bounce" />
@@ -862,7 +862,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             placeholder={
               isRecordingVoice
                 ? t('at.listening')
-                : `${t('at.askPre')} ${activeAssistant.nameAr}...`
+                : `${t('at.askPre')} ${t(`atm.${activeMode}.name`)}...`
             }
             className="flex-1 min-w-0 px-4 py-3 rounded-2xl bg-[#151430] border border-white/15 text-white text-xs sm:text-sm focus:outline-none focus:border-[#ffd166] transition-colors"
           />
