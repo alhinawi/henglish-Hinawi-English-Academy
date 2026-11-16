@@ -5,6 +5,7 @@
 
 import { videoVerificationDetail } from '../../services/videoVerificationDetail';
 import { txText, useAppTextMap } from '../../services/contentI18nService';
+import { videoImportError } from '../../services/videoImportError';
 import React, { useState } from 'react';
 import {
   X,
@@ -155,7 +156,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
       onClose();
     } else {
       playSound('wrong');
-      setErrorMsg(res.error || t('vi.importError'));
+      if (res.error === 'vie.unverified') setVerification(null);
+      setErrorMsg(videoImportError(res.error, t) || t('vi.importError'));
     }
   };
 
