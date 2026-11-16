@@ -10,3 +10,6 @@ for(const [id,m] of Object.entries(verbs))assert.equal(de[id].m,m);
 
 const relations={"voc-w00002": "zu / nach / an / bis", "voc-w00008": "für / seit / denn / weil", "voc-w00018": "an / bei / um / in", "voc-w00034": "gerade / nur / genau / eben", "voc-w00059": "andere / sonstige / weitere", "voc-w00061": "als (beim Vergleich)", "voc-w00063": "nur / lediglich / einzig"};
 for(const [id,m] of Object.entries(relations))assert.equal(de[id].m,m);
+
+const earlyMeanings={"voc-w00006": "in / auf / bei / an", "voc-w00066": "ihn / ihm", "voc-w00067": "in (+Akkusativ) / in ... hinein", "voc-w00074": "dann / danach / damals", "voc-w00078": "diese (Plural)", "voc-w00087": "sogar / selbst", "voc-w00090": "brauchen / benötigen", "voc-w00093": "Arbeit / Werk / Tätigkeit"};
+for(const [id,m] of Object.entries(earlyMeanings))assert.equal(de[id].m,m);
