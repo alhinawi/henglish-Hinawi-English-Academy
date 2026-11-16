@@ -251,6 +251,15 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         window.location.hash = castRoute;
       }
     }
+    if (castRoute === 'grammar' || castRoute === 'courses/grammar') {
+      const savedScrollY = sessionStorage.getItem('henglish:grammarScrollY');
+      if (savedScrollY) {
+        const y = parseInt(savedScrollY, 10) || 0;
+        requestAnimationFrame(() => window.scrollTo({ top: y, behavior: 'instant' as ScrollBehavior }));
+        setTimeout(() => window.scrollTo({ top: y, behavior: 'instant' as ScrollBehavior }), 250);
+        return;
+      }
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
