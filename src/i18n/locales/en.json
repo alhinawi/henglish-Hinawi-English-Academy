@@ -2236,5 +2236,20 @@
   "reg.and": "and",
   "reg.privacy": "Privacy Policy",
   "reg.agreeSuffix": "and to receiving learning progress notifications.",
-  "reg.submit": "Create account and start"
+  "reg.submit": "Create account and start",
+  "sad.q1": "Why was this specific translation chosen?",
+  "sad.q2": "Make the sentence sound more natural to native speakers.",
+  "sad.q3": "Rephrase this sentence for a formal corporate email.",
+  "sad.q4": "Give me 5 other expressions and alternatives for the same meaning.",
+  "sad.q5": "Explain the idiom and grammar in this sentence.",
+  "sad.q6": "Is the sentence 100% grammatically correct?",
+  "sad.q7": "Simplify this sentence for an A2 beginner.",
+  "sad.welcome": "Welcome! I am the smart translation assistant at Henglish Academy. I am directly connected to the current translation and ready to answer any question about phrasing, tone, grammar, or turning the sentence into a professional email!",
+  "sad.tempError": "Sorry, a temporary error occurred while contacting the smart translation assistant. Please try again.",
+  "sad.title": "Translation language assistant",
+  "sad.subtitle": "Interactive context expert",
+  "sad.activeContext": "Current active context:",
+  "sad.thinking": "The assistant is thinking about an accurate answer...",
+  "sad.quickPrompts": "Suggested quick prompts:",
+  "sad.inputPlaceholder": "Ask the assistant about any detail in the translation..."
 }
