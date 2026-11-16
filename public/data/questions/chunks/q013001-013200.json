@@ -1,0 +1,3538 @@
+[
+ {
+  "id": "q-grm1-012201",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The plane is _____ the clouds. (higher than)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "between",
+   "above",
+   "in",
+   "under"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: above.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012202",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shop is _____ the corner of the street.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "under",
+   "between",
+   "in",
+   "on"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012203",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There is a bridge _____ the river. (going across over it)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "between",
+   "in",
+   "over",
+   "behind"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: over.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012204",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He is standing _____ the door.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "between",
+   "under",
+   "at",
+   "behind of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: at.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012205",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The teacher is _____ the board. (facing it)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in front of",
+   "under",
+   "between",
+   "behind"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: in front of.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012206",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The dog is sleeping _____ the table.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on of",
+   "under",
+   "between",
+   "in front"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: under.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012207",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The pen is at the desk top.",
+   "The pen is between the desk top.",
+   "The pen is in the desk top.",
+   "The pen is on the desk."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: The pen is on the desk..",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012208",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is sitting next of me.",
+   "She is sitting nexts to me.",
+   "She is sitting next me.",
+   "She is sitting next to me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: She is sitting next to me..",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012209",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The fish are at the water inside.",
+   "The fish are between the water inside.",
+   "The fish are on the water inside.",
+   "The fish are in the water."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: The fish are in the water..",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012210",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My school is at between a bank and a shop.",
+   "My school is between of a bank and a shop.",
+   "My school is among a bank and a shop.",
+   "My school is between a bank and a shop."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: My school is between a bank and a shop..",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012211",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Behind\" means at the back of something.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، behind = ورا. in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012212",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Under\" means on top of something.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. under معناها تحت، وon معناها فوق. in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012213",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"In front of\" means before something.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، in front of = قدام. in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012214",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Between\" is used with two things or people.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012215",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The class starts _____ 9 o'clock.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "in",
+   "at",
+   "by"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: at.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012216",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I have a lesson _____ Monday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "in",
+   "at",
+   "by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012217",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My birthday is _____ June.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "on",
+   "at",
+   "in"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012218",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We go to the beach _____ summer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "on",
+   "in",
+   "at"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012219",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She wakes up _____ 6:30.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "in",
+   "on",
+   "by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: at.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012220",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They travel _____ Friday morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "by",
+   "on",
+   "in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012221",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I was born _____ 2002.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "at",
+   "on",
+   "in"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012222",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It is cold _____ winter.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "in",
+   "on",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012223",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I study _____ the evening.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "on",
+   "in",
+   "by"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012224",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He sleeps _____ night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "in",
+   "on",
+   "by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: at.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012225",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The party is _____ 5 May.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "on",
+   "in",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012226",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We have lunch _____ noon.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "on",
+   "at",
+   "in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: at.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012227",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The film starts _____ half past seven.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "in",
+   "at",
+   "by"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: at.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012228",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My sister visits us _____ Saturdays.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "by",
+   "at",
+   "in"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012229",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She reads _____ the morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "by",
+   "at",
+   "in"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012230",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We fast _____ Ramadan.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "on",
+   "by",
+   "at"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012231",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shops are busy _____ Saturday afternoon.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "at",
+   "on",
+   "in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012232",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The exam is _____ Sunday morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "on",
+   "in",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012233",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I do homework _____ the afternoon.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "on",
+   "by",
+   "in"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012234",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We meet _____ 1 January every year.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "by",
+   "in",
+   "at"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012235",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I get up on 7.",
+   "I get up by of 7.",
+   "I get up in 7.",
+   "I get up at 7."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: I get up at 7..",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012236",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She works at Tuesdays.",
+   "She works by Tuesdays.",
+   "She works in Tuesdays.",
+   "She works on Tuesdays."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: She works on Tuesdays..",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012237",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We travel at August.",
+   "We travel by of August.",
+   "We travel on August.",
+   "We travel in August."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: We travel in August..",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012238",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He studies on night.",
+   "He studies by of night.",
+   "He studies in night.",
+   "He studies at night."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night). الإجابة الصحيحة: He studies at night..",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012239",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"On Monday\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night).",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012240",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"In 7 o'clock\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح at 7 o'clock. at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night).",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012241",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"At July\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح in July لأن الشهور مع in. at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night).",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012242",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"In the morning\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. at مع الساعة، on مع الأيام والتواريخ، in مع الشهور والفصول والسنين وأجزاء اليوم (ما عدا at night).",
+  "topic": "Grammar: prepositions of time - in/on/at (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012243",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ got a new phone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "have",
+   "has",
+   "do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012244",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ got long hair.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "have",
+   "is",
+   "does"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: has.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012245",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ got two cars.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "has",
+   "are",
+   "do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012246",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ got a big family.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "is",
+   "has",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: has.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012247",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ got a garden.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "do",
+   "have",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012248",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The house _____ got four rooms.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "have",
+   "has",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: has.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012249",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ you got a pen?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Do",
+   "Have",
+   "Has"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: Have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012250",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ she got a brother?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Have",
+   "Is",
+   "Does",
+   "Has"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: Has.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012251",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ got any money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hasn't",
+   "am not",
+   "haven't",
+   "don't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: haven't.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012252",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ got a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hasn't",
+   "isn't",
+   "don't",
+   "haven't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: hasn't.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012253",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My parents _____ got a farm.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "are",
+   "have",
+   "has"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012254",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ your teacher got a laptop?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Have",
+   "Is",
+   "Does",
+   "Has"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: Has.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012255",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ got four legs.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "have",
+   "is",
+   "does"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: has.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012256",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You _____ got beautiful eyes.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "does",
+   "are",
+   "has"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012257",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ali and Sara _____ got a dog.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "is",
+   "have",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: have.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012258",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She has gots a bike.",
+   "She is got a bike.",
+   "She have got a bike.",
+   "She has got a bike."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: She has got a bike..",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012259",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Have you got a ticket?",
+   "You have got a ticket?",
+   "Has you got a ticket?",
+   "Do you got a ticket?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: Have you got a ticket?.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012260",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We aren't got time.",
+   "We don't got time.",
+   "We haven't got time.",
+   "We hasn't got time."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: We haven't got time..",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012261",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Has he got a car?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, he have.",
+   "Yes, he has.",
+   "Yes, he does.",
+   "Yes, he got."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: Yes, he has..",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012262",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Have they got a house?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "No, they don't.",
+   "No, they hasn't.",
+   "No, they haven't.",
+   "No, they aren't."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got. الإجابة الصحيحة: No, they haven't..",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012263",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He have got a book\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He has got a book. have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012264",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I have got a sister\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012265",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She hasn't got a phone\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012266",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"They has got a cat\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح They have got a cat. have got مع I/you/we/they وhas got مع he/she/it. النفي haven't/hasn't got. السؤال Have/Has + فاعل + got.",
+  "topic": "Grammar: have got / has got (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012267",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ the door, please. (I want it closed)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Closes",
+   "Closing",
+   "To close",
+   "Close"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Close.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012268",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ late for school! (negative)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Not be",
+   "Doesn't be",
+   "Be not",
+   "Don't be"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Don't be.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012269",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ your hands before you eat.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Washing",
+   "To wash",
+   "Wash",
+   "Washes"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Wash.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012270",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ here. This is a quiet room.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Doesn't talk",
+   "Don't talk",
+   "Talking not",
+   "Not talk"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Don't talk.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012271",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ to me, please.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "To listen",
+   "Listen",
+   "Listens",
+   "Listening"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Listen.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012272",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ the window. It's cold.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Closes",
+   "To closes",
+   "Close",
+   "Closing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Close.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012273",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ your phone in the exam!",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Don't use",
+   "Not use",
+   "Using not",
+   "Doesn't use"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Don't use.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012274",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ careful with the hot tea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Being",
+   "Are",
+   "Is",
+   "Be"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Be.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012275",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ down, please.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Sits",
+   "Sit",
+   "To sit",
+   "Sitting"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Sit.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012276",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ run in the hall.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Not",
+   "Never to",
+   "Doesn't",
+   "Don't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Don't.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012277",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ me your book, please.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Give",
+   "Giving",
+   "Gives",
+   "To give"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Give.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012278",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ forget your homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "No to",
+   "Don't",
+   "Doesn't",
+   "Not"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Don't.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012279",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ the board, everyone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Looks at",
+   "To look at",
+   "Look at",
+   "Looking at"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Look at.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012280",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ quiet, please.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Being",
+   "Be",
+   "Are",
+   "Is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Be.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012281",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ open your books to page ten.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Pleases",
+   "Pleasing",
+   "Please",
+   "Pleased"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Please.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012282",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "You opens the door.",
+   "To open the door.",
+   "Opening the door.",
+   "Open the door."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Open the door..",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012283",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Doesn't touch that.",
+   "No touching that to.",
+   "Not touch that.",
+   "Don't touch that."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Don't touch that..",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012284",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Being quiet, please.",
+   "You be quiet are.",
+   "Are quiet, please.",
+   "Be quiet, please."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Be quiet, please..",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012285",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Please sitting down.",
+   "Please to sit down.",
+   "Please sits down.",
+   "Please sit down."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب. الإجابة الصحيحة: Please sit down..",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012286",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Don't to run\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Don't run بدون to. الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012287",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Close the door\" is an imperative.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، أمر. الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012288",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Doesn't talk here\" is correct as an order.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Don't talk here. الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012289",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Wait here, please\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الأمر بنستخدم الفعل الأساسي بدون فاعل. للنهي بنقول Don't + فعل. وبنضيف please للتهذيب.",
+  "topic": "Grammar: imperatives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012290",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is your name? - My name is Hana.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "What",
+   "Where",
+   "When",
+   "Who"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012291",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is that man? - He is my uncle.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "What",
+   "Where",
+   "Why",
+   "Who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Who.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012292",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ do you live? - In Mansoura.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Who",
+   "What",
+   "When",
+   "Where"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Where.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012293",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is your birthday? - In March.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How",
+   "Where",
+   "When",
+   "Who"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: When.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012294",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ are you sad? - Because I lost my phone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "What",
+   "Who",
+   "Why",
+   "Where"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Why.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012295",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ do you go to school? - By bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How",
+   "Who",
+   "Where",
+   "When"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012296",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ brothers have you got? - Two.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How old",
+   "How long",
+   "How much",
+   "How many"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How many.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012297",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is this shirt? - It's 200 pounds.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How old",
+   "How long",
+   "How many",
+   "How much"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How much.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012298",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ old are you? - I'm twelve.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Who",
+   "What",
+   "Where",
+   "How"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012299",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ time is it? - It's five o'clock.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "What",
+   "Who",
+   "Where",
+   "Why"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012300",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is your teacher? - Mr. Samy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Where",
+   "Who",
+   "When",
+   "What"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Who.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012301",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is the bank? - Next to the school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Why",
+   "Who",
+   "Where",
+   "When"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Where.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012302",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ do you get up? - At seven.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "What time",
+   "What",
+   "Who",
+   "Why"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What time.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012303",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is your favorite color? - Blue.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How many",
+   "Who",
+   "Where",
+   "What"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012304",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is the exam? - On Sunday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Where",
+   "Who",
+   "When",
+   "Why"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: When.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012305",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ eggs do you want? - Six, please.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How long",
+   "How many",
+   "How old",
+   "How much"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How many.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012306",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ water do you drink every day? - Two liters.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How much",
+   "How often",
+   "How many",
+   "How old"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How much.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012307",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ does she go to the gym? - Three times a week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How old",
+   "How often",
+   "How many",
+   "How much"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How often.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012308",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is your phone number? - 0122 555 0199.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "What",
+   "Who",
+   "Where",
+   "How"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012309",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ are those boys? - They are my cousins.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "How",
+   "What",
+   "Where",
+   "Who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Who.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012310",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Where do you work?",
+   "Where do you works?",
+   "Where you work?",
+   "Where does you work?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Where do you work?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012311",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "What is your job?",
+   "What does your job?",
+   "What your job is?",
+   "What are your job?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What is your job?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012312",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "How many books do you have?",
+   "How many books you have?",
+   "How much books do you have?",
+   "How many book you have?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How many books do you have?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012313",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Why are you late?",
+   "Why are late you?",
+   "Why you are late?",
+   "Why do you late?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Why are you late?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012314",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "When does the film start?",
+   "When does the film starts?",
+   "When the film starts?",
+   "When do the film start?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: When does the film start?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012315",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Who is she?",
+   "Who are she?",
+   "Who she is?",
+   "Who does she?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: Who is she?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012316",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "How much is this bag?",
+   "How is much this bag?",
+   "How many is this bag?",
+   "How much are this bag?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: How much is this bag?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012317",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "What time does the bus leave?",
+   "What time does the bus leaves?",
+   "What time the bus leaves?",
+   "What time do the bus leave?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر. الإجابة الصحيحة: What time does the bus leave?.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012318",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Where\" is used to ask about a place.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012319",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Who\" is used to ask about time.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. who للسؤال عن شخص، وwhen للسؤال عن الوقت. what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012320",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"How many\" is used with countable nouns.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012321",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"How much\" is used to ask about price.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. what للشيء، who للشخص، where للمكان، when للوقت، why للسبب، how للطريقة، how many للعدد، how much للكمية والسعر.",
+  "topic": "Grammar: question words (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012322",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I have _____ friends in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "a",
+   "any",
+   "some"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012323",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She doesn't have _____ brothers.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "a",
+   "some",
+   "an"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012324",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Do you have _____ questions?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "some",
+   "a",
+   "any",
+   "an"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012325",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There is _____ milk in the fridge.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "any",
+   "some",
+   "an"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012326",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There aren't _____ eggs.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "some",
+   "a",
+   "any"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012327",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Is there _____ sugar in your tea?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "a",
+   "some",
+   "any"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012328",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Would you like _____ tea?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "a",
+   "any",
+   "some"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012329",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We need _____ bread.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "a",
+   "an",
+   "some"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012330",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I haven't got _____ money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "some",
+   "an",
+   "a"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012331",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He bought _____ apples at the market.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "some",
+   "an",
+   "any"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012332",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Are there _____ chairs in the room?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "a",
+   "some",
+   "an"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012333",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She didn't eat _____ rice.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "some",
+   "a",
+   "any",
+   "an"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012334",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Can I have _____ water, please?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "a",
+   "some",
+   "any"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012335",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There isn't _____ juice left.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "some",
+   "an",
+   "a"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012336",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They have _____ new books.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "some",
+   "a",
+   "any"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: some.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012337",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Have you got _____ brothers or sisters?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "some",
+   "a",
+   "an",
+   "any"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: any.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012338",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't need some help.",
+   "I haven't some help.",
+   "I need any help.",
+   "I need some help."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: I need some help..",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012339",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We have any bread.",
+   "Do we have some bread yes?",
+   "We don't have some bread.",
+   "We don't have any bread."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: We don't have any bread..",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012340",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Do you want any coffee?",
+   "Do you want a coffee any?",
+   "Does you want any coffee?",
+   "Do you wants any coffee?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: Do you want any coffee?.",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012341",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "There isn't some cheese on the plate.",
+   "There are some cheese on the plate.",
+   "There is any cheese on the plate.",
+   "There is some cheese on the plate."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea? الإجابة الصحيحة: There is some cheese on the plate..",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012342",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I don't have some money\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I don't have any money لأن النفي بنستخدم معاه any. some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea?",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012343",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She has some friends\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea?",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012344",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Are there any eggs?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea?",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012345",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I have any problems\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I have some problems أو I don't have any problems. some في الجمل المثبتة، وany في النفي والأسئلة. some ممكن في العرض والطلب مثل Would you like some tea?",
+  "topic": "Grammar: some and any (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012346",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mona is my friend. I like _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hers",
+   "his",
+   "her",
+   "she"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: her.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012347",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ali is here. Please help _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "him",
+   "himself",
+   "he",
+   "his"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: him.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012348",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We love our teacher. She teaches _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "our",
+   "we",
+   "ours",
+   "us"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: us.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012349",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Give the book to _____. (to Sara and Omar)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "their",
+   "them",
+   "they",
+   "theirs"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: them.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012350",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My mother calls _____ every day. (she calls me)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "my",
+   "mine",
+   "me",
+   "I"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: me.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012351",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The dog is hungry. Feed _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "its",
+   "they",
+   "he",
+   "it"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: it.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012352",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I know you. I see _____ every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "your",
+   "yourself",
+   "yours",
+   "you"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: you.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012353",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Look at those birds! Look at _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "theirs",
+   "them",
+   "their",
+   "they"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: them.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012354",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My brother is sick. I visit _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "his",
+   "he",
+   "him",
+   "her"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: him.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012355",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She is talking to _____. (to you and me)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "our",
+   "we",
+   "ours",
+   "us"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: us.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012356",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Don't wait for _____. (for me)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "my",
+   "me",
+   "mine",
+   "I"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: me.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012357",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Where are the keys? I can't find _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "them",
+   "they",
+   "their",
+   "it's"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: them.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012358",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Can you help _____, please? (help me)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "mine",
+   "my",
+   "I",
+   "me"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: me.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012359",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "These shoes are nice. I want to buy _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "they",
+   "them",
+   "their",
+   "its"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: them.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012360",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Sara is my sister. I am older than _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hers",
+   "her",
+   "herself",
+   "she"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: her.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012361",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I like Mr. Hassan. I talk to _____ every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "he",
+   "himself",
+   "him",
+   "his"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: him.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012362",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She sees my.",
+   "She see me.",
+   "She sees I.",
+   "She sees me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: She sees me..",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012363",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Please call his.",
+   "Please call himself.",
+   "Please call he.",
+   "Please call him."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: Please call him..",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012364",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We invited their.",
+   "We invited theirs.",
+   "We invited they.",
+   "We invited them."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: We invited them..",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012365",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The teacher helps our.",
+   "The teacher helps ours.",
+   "The teacher helps we.",
+   "The teacher helps us."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر. الإجابة الصحيحة: The teacher helps us..",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012366",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Give it to I\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Give it to me. ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012367",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I like them\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012368",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She loves he\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She loves him. ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012369",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Look at us\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. ضمائر المفعول: me, you, him, her, it, us, them. بتيجي بعد الفعل أو حرف الجر.",
+  "topic": "Grammar: object pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012370",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "This is _____ car. (the car of Ali)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Ali",
+   "Ali's",
+   "Alis",
+   "Alis'"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: Ali's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012371",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "That is my _____ house. (house of my sister)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sisters'",
+   "sisters",
+   "sister's",
+   "sister"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: sister's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012372",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ toys are on the floor. (toys of the children)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "children",
+   "childrens'",
+   "children's",
+   "childrens"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: children's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012373",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My _____ job is interesting. (job of my father)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "fathers",
+   "father",
+   "fathers'",
+   "father's"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: father's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012374",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ books are new. (books of the students)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studentes",
+   "students",
+   "student's",
+   "students'"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: students'.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012375",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Where is _____ bag? (bag of Mona)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Mona",
+   "Monas'",
+   "Mona's",
+   "Monas"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: Mona's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012376",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ name is Max. (name of the dog)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "dog's",
+   "dogs",
+   "dogs'",
+   "dog"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: dog's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012377",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "This is my _____ room. (room of my brother)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "brothers",
+   "brother",
+   "brother's",
+   "brothers'"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: brother's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012378",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ voices are loud. (voices of the boys)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "boyes",
+   "boys'",
+   "boys",
+   "boy's"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: boys'.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012379",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What is your _____ phone number? (number of your friend)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "friends",
+   "friend's",
+   "friend",
+   "friendes"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: friend's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012380",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Hana is _____ best friend. (best friend of Sara)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Sara",
+   "Saras'",
+   "Saras",
+   "Sara's"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: Sara's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012381",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ office is on the fourth floor. (office of the manager)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "manager's",
+   "manager",
+   "managers'",
+   "managers"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: manager's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012382",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ clothes are cheap. (clothes of the women)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "womens'",
+   "women's",
+   "woman",
+   "womens"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: women's.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012383",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This is Ahmed pen's.",
+   "This is the pen Ahmed's.",
+   "This is Ahmeds pen.",
+   "This is Ahmed's pen."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: This is Ahmed's pen..",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012384",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The girl bag's is red.",
+   "The girls's bag is red.",
+   "The girls bag is red.",
+   "The girl's bag is red."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: The girl's bag is red..",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012385",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My parents car's is old.",
+   "My parents's car is old.",
+   "My parent's cars is old.",
+   "My parents' car is old."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: My parents' car is old..",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012386",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The teacher desk's is big.",
+   "The teacher's's desk is big.",
+   "The teachers desk is big.",
+   "The teacher's desk is big."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s. الإجابة الصحيحة: The teacher's desk is big..",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012387",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Ali's book\" means the book belongs to Ali.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012388",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"The dog's bone\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012389",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Mona book's\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Mona's book. بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012390",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"The students' classroom\" refers to one student.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. students' معناها أكتر من طالب. بنضيف 's للمفرد للتعبير عن الملكية، وبنضيف ' فقط للجمع المنتهي بـ s.",
+  "topic": "Grammar: possessive 's (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012391",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ at home yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "am",
+   "were",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012392",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ very tired last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "was",
+   "were",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012393",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ in Cairo last week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "is",
+   "are",
+   "were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012394",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ happy yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "are",
+   "were",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012395",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ a student in 2020.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "were",
+   "are",
+   "was"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012396",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The weather _____ cold yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "were",
+   "is",
+   "are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012397",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You _____ late for school this morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "are",
+   "were",
+   "was"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012398",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The children _____ at the park.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "was",
+   "were",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012399",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ a great film.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "was",
+   "were",
+   "are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012400",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My parents _____ at work yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "is",
+   "were",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
