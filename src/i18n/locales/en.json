@@ -2457,5 +2457,7 @@
   "ve.noCode": "Did not get the code?",
   "ve.resend": "Resend now",
   "ve.back": "Back to sign in",
-  "ve.resendIn": "Resend in {seconds} seconds"
+  "ve.resendIn": "Resend in {seconds} seconds",
+  "ve.noneTitle": "No email verification pending",
+  "ve.noneBody": "There is no email verification pending for this account. You can return to sign in."
 }
