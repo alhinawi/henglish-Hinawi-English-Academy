@@ -102,6 +102,7 @@ import {
   Quote,
   MessagesSquare,
   Zap,
+  Library,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -208,6 +209,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Games Arena',
           route: 'games',
           icon: Gamepad2,
+          badge: 'جديد',
+        },
+        {
+          label: 'أهم المصادر',
+          labelEn: 'Resources',
+          route: 'sources',
+          icon: Library,
           badge: 'جديد',
         },
       ],
