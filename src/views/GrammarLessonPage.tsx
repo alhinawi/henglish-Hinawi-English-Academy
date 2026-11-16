@@ -40,14 +40,26 @@ interface GrammarLessonPageProps {
   isCompleted?: boolean;
 }
 
-export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
-  ruleId,
+export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = (props) => {
+  const { t } = useLanguage();
+  const rule = ALL_GRAMMAR_RULES.find(r => r.id === props.ruleId);
+  if (!rule) {
+    return <section className="max-w-3xl mx-auto my-10 rounded-3xl border border-white/10 bg-[#171632] p-6 sm:p-10 space-y-5 text-start">
+      <h1 className="text-2xl font-black text-white">{t('gl.notFoundTitle')}</h1>
+      <p className="text-sm leading-7 text-slate-300">{t('gl.notFoundBody')}</p>
+      <button onClick={() => props.onNavigate('grammar')} className="min-h-12 rounded-xl bg-[#ffd166] px-5 font-bold text-slate-950">{t('gl.academy')}</button>
+    </section>;
+  }
+  return <ResolvedGrammarLesson key={rule.id} {...props} rule={rule} />;
+};
+
+const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRuleItem }> = ({
+  rule,
   onNavigate,
   onMarkComplete,
   isCompleted = false,
 }) => {
   const { t } = useLanguage();
-  const rule: GrammarRuleItem = ALL_GRAMMAR_RULES.find(r => r.id === ruleId) || ALL_GRAMMAR_RULES[0];
   const ruleIndex = ALL_GRAMMAR_RULES.findIndex(r => r.id === rule.id);
   const prevRule = ruleIndex > 0 ? ALL_GRAMMAR_RULES[ruleIndex - 1] : null;
   const nextRule = ruleIndex < ALL_GRAMMAR_RULES.length - 1 ? ALL_GRAMMAR_RULES[ruleIndex + 1] : null;
