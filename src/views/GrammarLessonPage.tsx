@@ -277,7 +277,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
             <div className="space-y-3">
               <div className="text-xs font-bold text-[#ffd166]">قالب الجملة المثبتة (Golden Formula):</div>
               <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#ffd166]/30 text-base sm:text-xl font-mono text-[#ffd166] font-bold text-center tracking-wide">
-                {rule.goldenFormula}
+                {txText(appText, rule.goldenFormula)}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
                 تطبق هذه الصيغة مع مراعاة الضمائر المفردة والجمع والتصريف المناسب للفعل.
