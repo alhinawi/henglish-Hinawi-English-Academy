@@ -51,6 +51,16 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
     return matchesCategory && matchesLevel && matchesSearch;
   });
 
+  const openLesson = (id: string) => {
+    playSound('click');
+    try {
+      sessionStorage.setItem('henglish:grammarScrollY', String(window.scrollY));
+    } catch {
+      // Scroll restoration is optional; blocked storage must not block a lesson.
+    }
+    onNavigate('grammar-lesson', id);
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       
@@ -186,11 +196,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
               >
                 {/* Rule Card - tapping anywhere opens the full lesson on its own page */}
                 <div 
-                  onClick={() => {
-                    playSound('click');
-                    sessionStorage.setItem('henglish:grammarScrollY', String(window.scrollY));
-                    onNavigate('grammar-lesson', rule.id);
-                  }}
+                  onClick={() => openLesson(rule.id)}
                   className="cursor-pointer relative overflow-hidden"
                 >
                   <div className="flex flex-col md:flex-row items-stretch">
@@ -231,7 +237,18 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         </div>
 
                         <h3 className="text-xl sm:text-2xl font-black text-white hover:text-[#41e7ff] transition-colors">
-                          {txText(appText, rule.titleAr)}
+                          <a
+                            href={`#grammar/${rule.id}`}
+                            onClick={e => {
+                              e.stopPropagation();
+                              if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+                              e.preventDefault();
+                              openLesson(rule.id);
+                            }}
+                            className="rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#41e7ff]"
+                          >
+                            {txText(appText, rule.titleAr)}
+                          </a>
                         </h3>
                         <span className="en block text-xs sm:text-sm font-bold text-[#ffd166] mt-0.5">
                           {rule.titleEn}
@@ -255,10 +272,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                           <button
                             onClick={(e) => {
                               e.stopPropagation();
-                              playSound('click');
-                              sessionStorage.setItem('henglish:grammarScrollY', String(window.scrollY));
-                              window.location.hash = `grammar/${rule.id}`;
-                              onNavigate('grammar-lesson', rule.id);
+                              openLesson(rule.id);
                             }}
                             className="px-4 py-1.5 rounded-xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] text-xs font-black hover:brightness-110 flex items-center gap-1.5 shadow-md cursor-pointer transition-transform hover:-translate-y-0.5"
                           >
