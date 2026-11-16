@@ -10,6 +10,7 @@ import {
   MOVIE_SCENES_CATALOG,
   MovieSceneItem,
 } from '../data/movieScenesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import {
   searchMovieScenesBySentence,
   MovieSearchResult,
@@ -83,6 +84,7 @@ interface MovieStudioPageProps {
 type MainTab = 'catalog' | 'youtube_search' | 'sentence_search' | 'saved_and_history';
 
 export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) => {
+  const videoText = useAppTextMap('videoLibraryService');
   const [activeTab, setActiveTab] = useState<MainTab>('catalog');
   const [activeScene, setActiveScene] = useState<MovieSceneItem | null>(null);
 
@@ -413,7 +415,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                           : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
                       }`}
                     >
-                      <span>{cat.nameAr}</span>
+                      <span>{txText(videoText, cat.nameAr)}</span>
                     </button>
                   ))}
                 </div>

@@ -7,6 +7,7 @@ import {
   AssessmentResultBreakdown,
   QuestionSkill
 } from '../data/massiveQuestionBank';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { generatePlacementSessionFromBank } from '../services/placementService';
 import { useLanguage } from '../i18n/LanguageContext';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
@@ -41,6 +42,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   onRecordScore,
 }) => {
   // Adaptive test session generated dynamically on mount or restart
+  const appText = useAppTextMap('massiveQuestionBank');
   const { t } = useLanguage();
   const [sessionQuestions, setSessionQuestions] = useState<AssessmentQuestion[]>([]);
   const [loadingSession, setLoadingSession] = useState(true);
@@ -209,7 +211,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
           {/* Question Prompt */}
           <div className="p-6 rounded-2xl bg-[#09091a] border border-white/10 space-y-3">
             {currentQ.promptAr && (
-              <div className="text-xs font-bold text-[#ffd166]">{currentQ.promptAr}</div>
+              <div className="text-xs font-bold text-[#ffd166]">{txText(appText, currentQ.promptAr)}</div>
             )}
             <p dir="ltr" className="text-left font-sans text-lg sm:text-xl font-black text-white leading-relaxed">
               {currentQ.prompt}

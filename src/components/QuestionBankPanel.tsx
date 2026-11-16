@@ -15,6 +15,7 @@ import {
   loadAllQuestions,
   resetServedQuestions,
 } from '../services/questionBankService';
+import { useAppTextMap } from '../services/contentI18nService';
 import { QuizQuestion } from '../types';
 import { QuizEngine } from './QuizEngine';
 import { playSound } from '../utils/audio';
@@ -72,6 +73,9 @@ function toQuizQuestion(q: BankQuestion): QuizQuestion {
 }
 
 export const QuestionBankPanel: React.FC = () => {
+  const qbText = useAppTextMap('massiveQuestionBank');
+  const quizText = useAppTextMap('quizzesData');
+  const tx = (s: string) => qbText?.[s] ?? quizText?.[s] ?? s;
   const [all, setAll] = useState<BankQuestion[] | null>(null);
   const [loadError, setLoadError] = useState(false);
   const [skill, setSkill] = useState('all');
@@ -224,7 +228,7 @@ export const QuestionBankPanel: React.FC = () => {
       {drawn && drawn.length > 0 && (
         <QuizEngine
           key={`qbank-${round}`}
-          questions={drawn.map(toQuizQuestion)}
+          questions={drawn.map(q => ({ ...toQuizQuestion(q), explanation: tx(q.explanationAr ?? '') }))}
           quizTitle={`بنك الأسئلة الشامل - ${drawn.length} سؤال`}
         />
       )}
