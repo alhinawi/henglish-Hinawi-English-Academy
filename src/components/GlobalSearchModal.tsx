@@ -1,318 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import { Search, X, BookOpen, HelpCircle, ArrowRight, GraduationCap, Film, BookText, Sparkles, Languages } from 'lucide-react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Search, X, ArrowRight, Clock, Compass } from 'lucide-react';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
-import { COMPREHENSIVE_QUIZ_BANK } from '../data/quizzesData';
 import { VERB_TOOLKIT } from '../data/verbsData';
 import { ALL_GRAMMAR_RULES } from '../data/allGrammarRules';
 import { VOCABULARY_ACADEMY_WORDS } from '../data/vocabularyAcademyData';
 import { PageRoute } from '../types';
 import { playSound } from '../utils/audio';
-
-interface GlobalSearchModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onNavigate: (route: PageRoute, lessonId?: string) => void;
-}
-
-export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
-  isOpen,
-  onClose,
-  onNavigate,
-}) => {
-  const [query, setQuery] = useState('');
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        // toggle
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onClose]);
-
-  if (!isOpen) return null;
-
-  const trimmed = query.trim().toLowerCase().normalize('NFKC');
-
-  // Search results
-  const matchedGrammar = trimmed
-    ? ALL_GRAMMAR_RULES.filter(
-        r =>
-          r.titleAr.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          r.titleEn.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          r.summaryAr.toLowerCase().normalize('NFKC').includes(trimmed)
-      ).slice(0, 3)
-    : [];
-
-  const matchedLessons = trimmed
-    ? FUTURE_PERFECT_LESSONS.filter(
-        l =>
-          l.title.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          l.subtitle.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          l.description.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          l.kicker.toLowerCase().normalize('NFKC').includes(trimmed)
-      )
-    : FUTURE_PERFECT_LESSONS.slice(0, 4);
-
-  const matchedVocab = trimmed
-    ? VOCABULARY_ACADEMY_WORDS.filter(
-        w =>
-          w.word.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          w.meaningAr.toLowerCase().normalize('NFKC').includes(trimmed) ||
-          w.exampleEn.toLowerCase().includes(trimmed)
-      ).slice(0, 3)
-    : [];
-
-  const matchedVerbs = trimmed
-    ? VERB_TOOLKIT.filter(
-        v =>
-          v.v1.toLowerCase().includes(trimmed) ||
-          v.v3.toLowerCase().includes(trimmed) ||
-          v.meaningAr.toLowerCase().normalize('NFKC').includes(trimmed)
-      ).slice(0, 4)
-    : [];
-
-  const matchedQuestions = trimmed
-    ? COMPREHENSIVE_QUIZ_BANK.filter(
-        q =>
-          q.question.toLowerCase().includes(trimmed) ||
-          q.explanation.toLowerCase().includes(trimmed) ||
-          q.topic.toLowerCase().includes(trimmed)
-      ).slice(0, 3)
-    : [];
-
-  const handleSelectLesson = (lessonId: string) => {
-    playSound('click');
-    onNavigate('lesson', lessonId);
-    onClose();
-  };
-
-  const handleSelectRoute = (route: PageRoute) => {
-    playSound('click');
-    onNavigate(route);
-    onClose();
-  };
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 px-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-      <div 
-        className="w-full max-w-2xl bg-[#171632] border border-white/20 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[80vh]"
-        onClick={e => e.stopPropagation()}
-      >
-        {/* Search Input Bar */}
-        <div className="p-4 sm:p-5 border-b border-white/10 flex items-center gap-3 bg-[#0c0b20]">
-          <Search className="w-5 h-5 text-[#41e7ff] shrink-0" />
-          <input
-            type="text"
-            dir="auto"
-            value={query}
-            onChange={e => setQuery(e.target.value)}
-            placeholder="ابحث عن درس، قاعدة، فعل V3، سؤال، أو مذكرة..."
-            className="w-full bg-transparent text-white placeholder-[#b9b6d5] text-base focus:outline-none"
-            autoFocus
-          />
-          {query && (
-            <button
-              onClick={() => setQuery('')}
-              className="text-[#b9b6d5] hover:text-white p-1"
-            >
-              <X className="w-4 h-4" />
-            </button>
-          )}
-          <button
-            onClick={onClose}
-            className="px-2.5 py-1 rounded-lg text-xs bg-white/10 hover:bg-white/20 text-[#dedbf4] cursor-pointer"
-          >
-            ESC
-          </button>
-        </div>
-
-        {/* Results List */}
-        <div className="p-4 sm:p-6 overflow-y-auto space-y-6">
-          {/* Quick Shortcuts to Major Systems */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pb-2">
-            <button
-              onClick={() => handleSelectRoute('translation')}
-              className="p-3 rounded-2xl bg-gradient-to-r from-[#41e7ff]/15 to-transparent border border-[#41e7ff]/30 hover:border-[#41e7ff] text-right transition-all cursor-pointer flex items-center justify-between group"
-            >
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-[#41e7ff]/20 border border-[#41e7ff]/40 flex items-center justify-center text-[#41e7ff]">
-                  <Languages className="w-4 h-4" />
-                </div>
-                <div>
-                  <div className="text-xs font-black text-white group-hover:text-[#41e7ff] transition-colors">
-                    استوديو الترجمة AI
-                  </div>
-                  <div className="text-[10px] text-[#dedbf4]">
-                    شرح نحوي، فونيتكس، ومستندات
-                  </div>
-                </div>
-              </div>
-              <ArrowRight className="w-3.5 h-3.5 text-[#41e7ff] rotate-180 transition-transform group-hover:-translate-x-1" />
-            </button>
-            <button
-              onClick={() => handleSelectRoute('sentences')}
-              className="p-3 rounded-2xl bg-linear-to-r from-[#ffd166]/15 to-transparent border border-[#ffd166]/30 hover:border-[#ffd166] text-right transition-all cursor-pointer flex items-center justify-between group"
-            >
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-[#ffd166]/20 border border-[#ffd166]/40 flex items-center justify-center text-[#ffd166]">
-                  <BookText className="w-4 h-4" />
-                </div>
-                <div>
-                  <div className="text-xs font-black text-white group-hover:text-[#ffd166] transition-colors">
-                    مكتبة 5,000 جملة إنجليزية
-                  </div>
-                  <div className="text-[10px] text-[#dedbf4]">
-                    بحث بالمعنى المصري وترجمة متدرجة A1-C2
-                  </div>
-                </div>
-              </div>
-              <ArrowRight className="w-3.5 h-3.5 text-[#ffd166] rotate-180 transition-transform group-hover:-translate-x-1" />
-            </button>
-
-            <button
-              onClick={() => handleSelectRoute('movies')}
-              className="p-3 rounded-2xl bg-linear-to-r from-[#ff4f9a]/15 to-transparent border border-[#ff4f9a]/30 hover:border-[#ff4f9a] text-right transition-all cursor-pointer flex items-center justify-between group"
-            >
-              <div className="flex items-center gap-2.5">
-                <div className="w-9 h-9 rounded-xl bg-[#ff4f9a]/20 border border-[#ff4f9a]/40 flex items-center justify-center text-[#ff4f9a]">
-                  <Film className="w-4 h-4" />
-                </div>
-                <div>
-                  <div className="text-xs font-black text-white group-hover:text-[#ff4f9a] transition-colors">
-                    اتعلم من الأفلام
-                  </div>
-                  <div className="text-[10px] text-[#dedbf4]">
-                    ابحث بجمل المشاهد وتدرّب مع الفيديو
-                  </div>
-                </div>
-              </div>
-              <ArrowRight className="w-3.5 h-3.5 text-[#ff4f9a] rotate-180 transition-transform group-hover:-translate-x-1" />
-            </button>
-          </div>
-          {/* Grammar Rules */}
-          {matchedGrammar.length > 0 && (
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-[#41e7ff] uppercase tracking-wider mb-2">
-                <GraduationCap className="w-3.5 h-3.5" />
-                <span>أكاديمية الجرامر (قواعد الإنجليزية)</span>
-              </div>
-              <div className="space-y-1.5">
-                {matchedGrammar.map(g => (
-                  <button
-                    key={g.id}
-                    onClick={() => handleSelectRoute('grammar')}
-                    className="w-full text-right p-3 rounded-xl bg-white/5 hover:bg-[#41e7ff]/10 border border-white/5 hover:border-[#41e7ff]/30 transition-all cursor-pointer flex items-center justify-between group"
-                  >
-                    <div>
-                      <span className="text-xs text-[#41e7ff] font-bold block en">
-                        {g.titleEn} • {g.level}
-                      </span>
-                      <h5 className="text-sm font-black text-white group-hover:text-[#ffd166]">
-                        {g.titleAr}
-                      </h5>
-                    </div>
-                    <ArrowRight className="w-4 h-4 text-[#b9b6d5] group-hover:text-[#41e7ff] rotate-180 transition-transform group-hover:-translate-x-1" />
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Lessons */}
-          {matchedLessons.length > 0 && (
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-[#ffd166] uppercase tracking-wider mb-2">
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>دروس كورس المستقبل التام</span>
-              </div>
-              <div className="space-y-1.5">
-                {matchedLessons.map(l => (
-                  <button
-                    key={l.id}
-                    onClick={() => handleSelectLesson(l.id)}
-                    className="w-full text-right p-3 rounded-xl bg-white/5 hover:bg-[#41e7ff]/10 border border-white/5 hover:border-[#41e7ff]/30 transition-all cursor-pointer flex items-center justify-between group"
-                  >
-                    <div>
-                      <span className="text-xs text-[#41e7ff] font-bold block">
-                        الدرس 0{l.number}: {l.subtitle}
-                      </span>
-                      <h5 className="text-sm font-black text-white group-hover:text-[#ffd166]">
-                        {l.title}
-                      </h5>
-                    </div>
-                    <ArrowRight className="w-4 h-4 text-[#b9b6d5] group-hover:text-[#41e7ff] rotate-180 transition-transform group-hover:-translate-x-1" />
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Verbs */}
-          {matchedVerbs.length > 0 && (
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-[#c4ff55] uppercase tracking-wider mb-2">
-                <span>أفعال التصريف الثالث (Verbs V3)</span>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {matchedVerbs.map(v => (
-                  <button
-                    key={v.v1}
-                    onClick={() => handleSelectRoute('vocabulary')}
-                    className="p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 text-right transition-all cursor-pointer"
-                  >
-                    <div className="en font-bold text-sm text-[#41e7ff]">
-                      {v.v1}<span className="text-[#c4ff55]">{v.v3}</span>
-                    </div>
-                    <div className="text-xs text-[#b9b6d5] mt-0.5">
-                      {v.meaningAr}
-                    </div>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Questions */}
-          {matchedQuestions.length > 0 && (
-            <div>
-              <div className="flex items-center gap-2 text-xs font-bold text-[#ff4f9a] uppercase tracking-wider mb-2">
-                <HelpCircle className="w-3.5 h-3.5" />
-                <span>أسئلة مطابقة من بنك الاختبارات</span>
-              </div>
-              <div className="space-y-1.5">
-                {matchedQuestions.map(q => (
-                  <button
-                    key={q.id}
-                    onClick={() => handleSelectRoute('quizzes')}
-                    className="w-full text-right p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 transition-all cursor-pointer"
-                  >
-                    <p className="en text-xs font-bold text-white">
-                      {q.question}
-                    </p>
-                    <span className="text-[11px] text-[#ffd166] mt-1 block">
-                      {q.explanation}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Empty search state */}
-          {trimmed && matchedLessons.length === 0 && matchedVerbs.length === 0 && matchedQuestions.length === 0 && (
-            <div className="text-center py-10 text-[#b9b6d5]">
-              <p className="text-base font-bold">لم نجد نتائج مطابقة لـ "{query}"</p>
-              <p className="text-xs mt-1">جرّب البحث بكلمة مختلفة مثل: finish, by the time, will have, V3...</p>
-            </div>
-          )}
-        </div>
-      </div>
+interface Props { isOpen:boolean; onClose:()=>void; onNavigate:(route:PageRoute,lessonId?:string)=>void; userLevel?:string; }
+interface Entry { id:string; title:string; subtitle:string; route:PageRoute; target?:string; group:string; level?:string; keywords?:string; }
+const RECENT_KEY='henglish_search_recent_v1';
+const ACADEMIES:Entry[]=[
+  {id:'grammar',title:'أكاديمية الجرامر',subtitle:'قواعد وأمثلة وتدريبات',route:'grammar',group:'الأكاديميات'},
+  {id:'vocabulary',title:'أكاديمية الكلمات',subtitle:'المعاني والنطق والأمثلة',route:'vocabulary',group:'الأكاديميات'},
+  {id:'listening',title:'أكاديمية الاستماع',subtitle:'اسمع وافهم وتدرب',route:'listening',group:'الأكاديميات'},
+  {id:'speaking',title:'أكاديمية المحادثة',subtitle:'ممارسة الكلام والمواقف',route:'speaking',group:'الأكاديميات'},
+  {id:'reading',title:'أكاديمية القراءة',subtitle:'نصوص وفهم المقروء',route:'reading',group:'الأكاديميات'},
+  {id:'writing',title:'أكاديمية الكتابة',subtitle:'اكتب وراجع مهاراتك',route:'writing',group:'الأكاديميات'},
+  {id:'translation',title:'استوديو الترجمة',subtitle:'ترجمة وشرح لغوي ومستندات',route:'translation',group:'الأكاديميات'},
+  {id:'sentences',title:'مكتبة الجمل',subtitle:'المعنى المصري والنطق',route:'sentences',group:'الأكاديميات'},
+  {id:'movies',title:'اتعلم من الأفلام',subtitle:'مشاهد وحوار وتدريبات',route:'movies',group:'الأكاديميات'},
+  {id:'games',title:'ساحة الألعاب',subtitle:'تحديات الكلمات والجمل',route:'games',group:'الأكاديميات'},
+];
+const norm=(s:string)=>s.toLowerCase().normalize('NFKC').replace(/[أإآ]/g,'ا').replace(/[\u064B-\u065F]/g,'');
+export const GlobalSearchModal:React.FC<Props>=({isOpen,onClose,onNavigate,userLevel='A1'})=>{
+  const [query,setQuery]=useState(''); const [recent,setRecent]=useState<string[]>(()=>{try{const p=JSON.parse(localStorage.getItem(RECENT_KEY)||'[]');return Array.isArray(p)?p.filter(x=>typeof x==='string').slice(0,5):[];}catch{return [];}});
+  useEffect(()=>{if(!isOpen)return;setQuery('');const handle=(e:KeyboardEvent)=>{if(e.key==='Escape')onClose();};window.addEventListener('keydown',handle);return()=>window.removeEventListener('keydown',handle);},[isOpen,onClose]);
+  const index=useMemo<Entry[]>(()=>[
+    ...ACADEMIES,
+    ...ALL_GRAMMAR_RULES.map(r=>({id:`grammar:${r.id}`,title:r.titleAr,subtitle:r.titleEn,keywords:r.summaryAr,level:r.level.split(' ')[0],route:'grammar-lesson' as PageRoute,target:r.id,group:'قواعد الإنجليزية'})),
+    ...VOCABULARY_ACADEMY_WORDS.map(w=>({id:`word:${w.id}`,title:w.word,subtitle:w.meaningAr,keywords:w.exampleEn,level:w.level,route:'vocabulary' as PageRoute,group:'كلمات وأمثلة'})),
+    ...VERB_TOOLKIT.map(v=>({id:`verb:${v.v1}`,title:`${v.v1} · ${v.v2} · ${v.v3}`,subtitle:v.meaningAr,route:'vocabulary' as PageRoute,group:'الأفعال وتصريفاتها'})),
+    ...FUTURE_PERFECT_LESSONS.map(l=>({id:`course:${l.id}`,title:l.title,subtitle:l.subtitle,keywords:`future perfect المستقبل التام ${l.description}`,route:'lesson' as PageRoute,target:l.id,group:'دروس متخصصة',level:'B2'})),
+  ],[]);
+  if(!isOpen)return null;
+  const q=norm(query.trim());
+  const select=(e:Entry)=>{const ids=[e.id,...recent.filter(id=>id!==e.id)].slice(0,5);setRecent(ids);try{localStorage.setItem(RECENT_KEY,JSON.stringify(ids));}catch{/* Private mode */}playSound('click');onNavigate(e.route,e.target);onClose();};
+  const matches=q?index.filter(e=>norm(`${e.title} ${e.subtitle} ${e.keywords||''}`).includes(q)):[];
+  // Per-group caps prevent a long specialist course or vocabulary list taking over.
+  const groups=q?['الأكاديميات','قواعد الإنجليزية','كلمات وأمثلة','الأفعال وتصريفاتها','دروس متخصصة'].map(group=>({title:group,entries:matches.filter(e=>e.group===group).slice(0,group==='دروس متخصصة'?2:3)})).filter(g=>g.entries.length):[
+    {title:'كمل من آخر زيارة',entries:recent.map(id=>index.find(e=>e.id===id)).filter((e):e is Entry=>!!e)},
+    {title:`اقتراحات لمستوى ${userLevel}`,entries:[...index.filter(e=>e.group==='قواعد الإنجليزية'&&e.level===userLevel).slice(0,2),...index.filter(e=>e.group==='كلمات وأمثلة'&&e.level===userLevel).slice(0,2)]},
+    {title:'استكشف الأكاديميات',entries:ACADEMIES},
+  ].filter(g=>g.entries.length);
+  return <div role="dialog" aria-modal="true" aria-label="البحث في الأكاديمية" dir="rtl" className="fixed inset-0 z-[100] flex items-start justify-center pt-10 sm:pt-20 px-3 bg-black/80 backdrop-blur-md" onClick={onClose}>
+    <div className="w-full max-w-2xl rounded-3xl border border-white/20 bg-[#171632] shadow-2xl overflow-hidden flex flex-col max-h-[85dvh]" onClick={e=>e.stopPropagation()}>
+      <div className="p-4 border-b border-white/10 flex items-center gap-2 bg-[#0c0b20]"><Search className="w-5 h-5 text-[#41e7ff] shrink-0"/><input aria-label="ابحث في الأكاديمية" dir="auto" value={query} onChange={e=>setQuery(e.target.value)} placeholder="ابحث عن درس، كلمة، أو مهارة..." className="min-w-0 w-full bg-transparent text-white placeholder-[#b9b6d5] text-sm focus:outline-none" autoFocus/>{query&&<button aria-label="مسح البحث" onClick={()=>setQuery('')} className="p-1 text-[#b9b6d5]"><X className="w-4 h-4"/></button>}<button onClick={onClose} aria-label="إغلاق البحث" className="shrink-0 rounded-lg bg-white/10 p-2 text-xs text-[#dedbf4]">ESC</button></div>
+      <div className="p-4 overflow-y-auto space-y-5">{groups.map(g=><section key={g.title}><h2 className="flex items-center gap-2 text-xs font-bold text-[#ffd166] mb-3">{g.title==='كمل من آخر زيارة'?<Clock className="w-4 h-4"/>:<Compass className="w-4 h-4"/>}{g.title}</h2><div className={g.title==='استكشف الأكاديميات'?'grid grid-cols-2 gap-2':'space-y-2'}>{g.entries.map(e=><button key={e.id} onClick={()=>select(e)} className="w-full min-w-0 text-right rounded-2xl border border-white/10 bg-white/5 hover:border-[#41e7ff]/40 p-3 flex justify-between items-center gap-2"><div className="min-w-0"><p dir="auto" className="text-sm font-bold text-white break-words">{e.title}</p><p dir="auto" className="text-xs text-[#b9b6d5] mt-1 leading-6 break-words">{e.subtitle}{e.level?` · ${e.level}`:''}</p></div><ArrowRight className="w-3.5 h-3.5 shrink-0 text-[#41e7ff] rotate-180"/></button>)}</div></section>)}{q&&groups.length===0&&<div role="status" className="py-8 text-center text-[#b9b6d5]"><p>مفيش نتيجة مطابقة لـ "{query}"</p><p className="text-xs mt-2">جرّب كلمة أو مهارة: سفر، استماع، present simple، food</p></div>}</div>
     </div>
-  );
+  </div>;
 };
