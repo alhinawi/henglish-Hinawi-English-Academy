@@ -166,7 +166,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                 <span className="px-2 py-0.5 rounded bg-[#ffd166]/15 text-[#ffd166] font-mono">
                   {currentQ.level}
                 </span>
-                <span className="text-[#41e7ff] font-semibold">{currentQ.topic}</span>
+                <span dir="ltr" className="text-[#41e7ff] font-semibold">{currentQ.topic}</span>
               </div>
             </div>
 
@@ -197,7 +197,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                 )}
               </div>
               {currentQ.passage ? (
-                <p className="text-left font-sans text-sm sm:text-base text-[#dedbf4] leading-relaxed italic bg-black/30 p-3.5 rounded-xl border border-white/5">
+                <p dir="ltr" className="text-left font-sans text-sm sm:text-base text-[#dedbf4] leading-relaxed italic bg-black/30 p-3.5 rounded-xl border border-white/5">
                   "{currentQ.passage}"
                 </p>
               ) : (
@@ -211,7 +211,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
             {currentQ.promptAr && (
               <div className="text-xs font-bold text-[#ffd166]">{currentQ.promptAr}</div>
             )}
-            <p className="text-left font-sans text-lg sm:text-xl font-black text-white leading-relaxed">
+            <p dir="ltr" className="text-left font-sans text-lg sm:text-xl font-black text-white leading-relaxed">
               {currentQ.prompt}
             </p>
             {/* Quick Audio for Prompt */}
@@ -246,7 +246,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                     <span className="w-6 h-6 rounded-lg bg-white/10 text-xs font-mono flex items-center justify-center text-[#ffd166]">
                       {String.fromCharCode(65 + optIdx)}
                     </span>
-                    <span>{opt}</span>
+                    <span dir="ltr" className="text-left">{opt}</span>
                   </div>
                   {isSelected && <CheckCircle2 className="w-5 h-5 text-[#41e7ff]" />}
                 </button>
