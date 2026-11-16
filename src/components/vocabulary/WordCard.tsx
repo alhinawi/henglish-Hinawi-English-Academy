@@ -12,6 +12,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { LexicalEntry, isWordSaved, saveWord, removeSavedWord } from '../../services/vocabularyService';
+import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
 import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 
@@ -39,6 +40,9 @@ export const WordCard: React.FC<WordCardProps> = ({
   viewMode = 'grid',
 }) => {
   const [saved, setSaved] = useState(() => isWordSaved(entry.headword));
+  const txMap = useContentMap('vocab');
+  const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
+  const shownExample = txExample(txMap, entry.id, entry.exampleAr);
 
   const handleToggleSave = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -89,7 +93,7 @@ export const WordCard: React.FC<WordCardProps> = ({
               </span>
             </div>
             <p className="text-xs font-bold text-[#c4ff55] mt-0.5">
-              {entry.meaningAr}
+              {shownMeaning}
             </p>
           </div>
         </div>
@@ -157,7 +161,7 @@ export const WordCard: React.FC<WordCardProps> = ({
           {entry.headword}
         </h3>
         <p className="text-base font-black text-[#c4ff55] leading-snug">
-          {entry.meaningAr}
+          {shownMeaning}
         </p>
       </div>
 
@@ -193,7 +197,7 @@ export const WordCard: React.FC<WordCardProps> = ({
             "{entry.exampleEn}"
           </p>
           <p className="text-white/50 text-[11px] truncate">
-            {entry.exampleAr}
+            {shownExample}
           </p>
         </div>
       )}
