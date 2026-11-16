@@ -26,6 +26,7 @@ const checks = [
   'check-vocabulary-claims.cjs',
   'check-vocabulary-real-stats.cjs',
   'check-vocabulary-saved-card.cjs',
+  'check-custom-word-content.cjs',
   'check-function-word-glosses.cjs',
   'check-sentence-stats.cjs',
   'check-copy-success.cjs',
