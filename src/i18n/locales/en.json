@@ -2750,5 +2750,7 @@
   "ad.channelLabel": "Channel:",
   "ad.speakingLog": "Speaking and pronunciation assessment log",
   "ad.speakingDesc": "Recorded speaking assessments, fluency and words per minute (WPM)",
-  "ad.unavailable": "Content editing is unavailable. Adding, deleting, saving and publishing are disabled; no changes will be saved."
+  "ad.unavailable": "Content editing is unavailable. Adding, deleting, saving and publishing are disabled; no changes will be saved.",
+  "cd.sample": "SAMPLE",
+  "cd.disclaimer": "Notice: This certificate records internal academic achievement in Henglish Academy courses. It does not replace government exams or official IELTS/TOEFL certificates."
 }
