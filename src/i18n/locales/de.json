@@ -1828,5 +1828,7 @@
   "am.creating": "Konto wird erstellt...",
   "am.createFree": "Neues kostenloses Konto erstellen",
   "am.resetBody": "Gib deine E-Mail ein und wir senden dir einen verschlüsselten Link, um ein neues Passwort für dein Konto zu setzen.",
-  "am.sendReset": "Wiederherstellungslink senden"
+  "am.sendReset": "Wiederherstellungslink senden",
+  "gs.google": "Mit Google fortfahren",
+  "gs.divider": "oder per E-Mail"
 }
