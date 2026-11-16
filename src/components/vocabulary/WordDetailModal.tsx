@@ -49,6 +49,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
 }) => {
   const { t } = useLanguage();
   const [saved, setSaved] = useState(false);
+  const [saveError, setSaveError] = useState(false);
   const [userNote, setUserNote] = useState('');
   const txMap = useContentMap('vocab');
   const shownMeaning = entry ? txMeaning(txMap, entry.id, entry.meaningAr) : '';
@@ -56,6 +57,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
 
   useEffect(() => {
     if (entry) {
+      setSaveError(false);
       const isSaved = isWordSaved(entry.headword);
       setSaved(isSaved);
       const savedItems = getSavedWords();
@@ -78,23 +80,29 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   if (!isOpen || !entry) return null;
 
   const handleToggleSave = () => {
-    playSound('click');
-    if (saved) {
-      removeSavedWord(entry.headword);
-      setSaved(false);
-    } else {
-      saveWord(entry, userNote);
-      setSaved(true);
-      playSound('success');
-    }
-    if (onWordSavedChange) onWordSavedChange();
+    setSaveError(false);
+    try {
+      playSound('click');
+      if (saved) {
+        removeSavedWord(entry.headword);
+        setSaved(false);
+      } else {
+        saveWord(entry, userNote);
+        setSaved(true);
+        playSound('success');
+      }
+      if (onWordSavedChange) onWordSavedChange();
+    } catch { setSaveError(true); playSound('wrong'); }
   };
 
   const handleSaveNote = () => {
-    saveWord(entry, userNote);
-    setSaved(true);
-    playSound('success');
-    if (onWordSavedChange) onWordSavedChange();
+    setSaveError(false);
+    try {
+      saveWord(entry, userNote);
+      setSaved(true);
+      playSound('success');
+      if (onWordSavedChange) onWordSavedChange();
+    } catch { setSaveError(true); playSound('wrong'); }
   };
 
   const cefrStyle = CEFR_COLORS[entry.cefr] || CEFR_COLORS.Unclassified;
@@ -139,6 +147,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
           </div>
         </div>
 
+        {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
         {/* Word Title & Pronunciation Header */}
         <div className="space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">

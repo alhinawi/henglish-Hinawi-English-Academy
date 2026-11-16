@@ -16,7 +16,8 @@ import {
   BarChart3,
   Layers,
 } from 'lucide-react';
-import { loadFullVocabulary, LexicalEntry, saveWord } from '../../services/vocabularyService';
+import { loadFullVocabulary, LexicalEntry, saveWord, saveWords, VocabularyStorageError } from '../../services/vocabularyService';
+import { parseVocabularyImport } from '../../services/vocabularyImport';
 import { playSound } from '../../utils/audio';
 
 interface AdminVocabularyModalProps {
@@ -45,6 +46,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   const [ipaUk, setIpaUk] = useState('');
   const [exampleEn, setExampleEn] = useState('');
   const [exampleAr, setExampleAr] = useState('');
+  const [addError, setAddError] = useState(false);
   const [successMsg, setSuccessMsg] = useState('');
 
   // Bulk Import
@@ -90,7 +92,10 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
       exampleAr: exampleAr.trim(),
     };
 
-    saveWord(newEntry);
+    setAddError(false);
+    setSuccessMsg('');
+    try { saveWord(newEntry); }
+    catch { setAddError(true); playSound('wrong'); return; }
     playSound('success');
     setSuccessMsg(t('avm.addSuccess').replace('{w}', headword));
 
@@ -109,34 +114,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
   const handleBulkImport = () => {
     try {
-      const parsed = JSON.parse(bulkData);
-      if (!Array.isArray(parsed)) {
-        throw new Error(t('avm.bulkInvalid'));
-      }
-      let count = 0;
-      parsed.forEach((item: any) => {
-        if (item.headword && item.meaningAr) {
-          saveWord({
-            id: item.id || `bulk-${Date.now()}-${count}`,
-            headword: item.headword,
-            normalized: item.headword.toLowerCase(),
-            pos: item.pos || '',
-            cefr: item.cefr || 'Unclassified',
-            ipaUs: item.ipaUs || '',
-            ipaUk: item.ipaUk || '',
-            audioUsUrl: item.audioUsUrl,
-            audioUkUrl: item.audioUkUrl,
-            frequencyTier: item.frequencyTier || '',
-            domain: item.domain || 'custom',
-            formality: item.formality || '',
-            meaningAr: item.meaningAr,
-            definitionEn: item.definitionEn || '',
-            exampleEn: item.exampleEn || '',
-            exampleAr: item.exampleAr || '',
-          });
-          count++;
-        }
-      });
+      const entries = parseVocabularyImport(bulkData);
+      saveWords(entries);
+      const count = entries.length;
       playSound('success');
       setBulkOk(true);
       setBulkStatus(t('avm.bulkSuccess').replace('{n}', String(count)));
@@ -145,7 +125,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
     } catch (err: any) {
       playSound('wrong');
       setBulkOk(false);
-      setBulkStatus(`${t('avm.bulkError')} ${err.message}`);
+      setBulkStatus(err instanceof VocabularyStorageError ? t('vocab.saveError') : t('avm.bulkInvalid'));
     }
   };
 
@@ -244,6 +224,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
         {/* TAB 2: ADD WORD */}
         {activeTab === 'add' && (
           <form onSubmit={handleAddWord} className="space-y-4">
+            {addError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
             {successMsg && (
               <div className="p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />

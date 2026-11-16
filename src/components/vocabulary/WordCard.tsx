@@ -43,6 +43,7 @@ export const WordCard: React.FC<WordCardProps> = ({
   viewMode = 'grid',
 }) => {
   const { t, dir } = useLanguage();
+  const [saveError, setSaveError] = useState(false);
   const [saved, setSaved] = useState(() => isWordSaved(entry.headword));
   // A detail-modal save/remove changes the same persisted word as this card.
   useEffect(() => {
@@ -54,16 +55,19 @@ export const WordCard: React.FC<WordCardProps> = ({
 
   const handleToggleSave = (e: React.MouseEvent) => {
     e.stopPropagation();
-    playSound('click');
-    if (saved) {
-      removeSavedWord(entry.headword);
-      setSaved(false);
-    } else {
-      saveWord(entry);
-      setSaved(true);
-      playSound('success');
-    }
-    if (onSavedChange) onSavedChange();
+    setSaveError(false);
+    try {
+      playSound('click');
+      if (saved) {
+        removeSavedWord(entry.headword);
+        setSaved(false);
+      } else {
+        saveWord(entry);
+        setSaved(true);
+        playSound('success');
+      }
+      if (onSavedChange) onSavedChange();
+    } catch { setSaveError(true); playSound('wrong'); }
   };
 
   const cefrStyle = CEFR_COLORS[entry.cefr] || CEFR_COLORS.Unclassified;
@@ -75,6 +79,7 @@ export const WordCard: React.FC<WordCardProps> = ({
         onClick={() => onOpenDetails(entry)}
         className="glass-panel p-4 rounded-2xl border border-white/10 hover:border-white/25 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-right cursor-pointer group"
       >
+        {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
         <div className="flex items-center gap-3">
           <button
             onClick={handleToggleSave}
@@ -137,6 +142,7 @@ export const WordCard: React.FC<WordCardProps> = ({
       onClick={() => onOpenDetails(entry)}
       className="glass-panel p-5 rounded-2xl border border-white/10 hover:border-white/30 transition-all flex flex-col justify-between space-y-4 text-right cursor-pointer group hover:shadow-xl hover:shadow-black/40"
     >
+      {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
       {/* Top row: Badges + Save Button */}
       <div className="flex items-center justify-between">
         <button
