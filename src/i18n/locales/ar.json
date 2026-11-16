@@ -2681,5 +2681,10 @@
   "ss.loading": "بنجهز الجمل...",
   "ss.empty": "دوس على الكلمات تحت بالترتيب",
   "ss.correct": "الصح:",
-  "ss.check": "تأكد"
+  "ss.check": "تأكد",
+  "md.listen": "استمع للنطق",
+  "md.copyText": "نسخ النص",
+  "md.copied": "تم النسخ",
+  "md.copy": "نسخ",
+  "md.expression": "تعبير إنجليزي / صيغة"
 }
