@@ -11220,6 +11220,10 @@ export async function importEducationalVideo(params: {
     return { ok: false, error: 'صاحب الفيديو عطل التضمين الخارجي (Embedding Disabled by Owner)' };
   }
 
+  if (!check.isEmbeddable) {
+    return { ok: false, error: 'vie.unverified' };
+  }
+
   const existingVideos = getStoredVideos();
   const existing = existingVideos.find(v => v.youtubeId === ytid);
   if (existing) {

@@ -2796,5 +2796,10 @@
   "vd.missing": "Das Video ist gelöscht, privat oder nicht verfügbar (HTTP 404).",
   "vd.thumbnail": "Vorschaubild gefunden. Wiedergabe und Einbettung konnten nicht bestätigt werden.",
   "vd.response": "Unerwartete YouTube-Antwort (HTTP {status}).",
-  "vd.network": "Das Video konnte nicht geprüft werden: {message}"
+  "vd.network": "Das Video konnte nicht geprüft werden: {message}",
+  "vie.invalid": "Ungültige YouTube-URL oder ID.",
+  "vie.missing": "Das Video ist gelöscht oder privat und kann nicht importiert werden.",
+  "vie.restricted": "Die externe Einbettung ist für dieses Video deaktiviert.",
+  "vie.replacement": "Die Einbettung des Ersatzvideos konnte nicht bestätigt werden: {detail}",
+  "vie.unverified": "Die Einbettungserlaubnis konnte nicht bestätigt werden. Der Import bleibt bis zur erfolgreichen Prüfung gesperrt."
 }
