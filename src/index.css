@@ -247,3 +247,7 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   }
 }
+
+/* Exception to the themed focus-visible ring: the global search input opens
+   already focused inside its modal, so the ring is noise there (Hinawi 8:01). */
+html[data-site-theme] .no-focus-ring:focus-visible { outline: none; }
