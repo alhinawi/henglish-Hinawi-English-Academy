@@ -1,5 +1,7 @@
 
 
+export const COURSE_LEVELS = ['مبتدئ', 'متوسط', 'متقدم', 'شامل'] as const;
+
 export interface CourseItem {
   id: string;
   title: string;
