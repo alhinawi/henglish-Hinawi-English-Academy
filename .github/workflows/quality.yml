@@ -45,5 +45,8 @@ jobs:
       - name: i18n gates (locale key parity + no new hardcoded Arabic UI strings)
         run: python3 scripts/check_i18n.py
 
+      - name: Offline safety and skills regression checks
+        run: pnpm test:regressions
+
       - name: Run production build (includes TypeScript project build)
         run: pnpm build
