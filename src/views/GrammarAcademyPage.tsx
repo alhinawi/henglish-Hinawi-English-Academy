@@ -69,15 +69,15 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
         <div className="relative z-10 max-w-3xl space-y-5">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>HENGLISH GRAMMAR ACADEMY • المنهج الأكاديمي الشامل</span>
+            <span>{t('grammar.heroBadge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-            أكاديمية قواعد اللغة الإنجليزية بالكامل 
+            {t('grammar.heroTitle')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            منهج تفاعلي متكامل يغطي كافة قواعد الجرامر بالترتيب: من أزمنة المضارع والماضي والمستقبل، وحتى حالات الشرط والمبني للمجهول والتركيبات المتقدمة، بشرح مبسط بالمصري وأمثلة واقعية ونطق صوتي حي.
+            {t('grammar.heroSub')}
           </p>
 
           <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -87,11 +87,11 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
             </span>
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#41e7ff]" />
-              أمثلة صوتية لكل قاعدة
+              {t('grammar.heroAudioBadge')}
             </span>
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#ffd166]" />
-              كويزات استيعاب فورية
+              {t('grammar.heroQuizBadge')}
             </span>
           </div>
         </div>
@@ -107,7 +107,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
             dir="auto"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="ابحث عن أي زمن أو قاعدة (مثال: المضارع التام، will، passive، conditionals)..."
+            placeholder={t('grammar.searchPlaceholder')}
             className="w-full pr-12 pl-4 py-3.5 rounded-2xl bg-white/5 border border-white/10 focus:border-[#41e7ff] text-white placeholder-[#b9b6d5]/60 text-sm outline-none transition-colors"
           />
         </div>
@@ -116,7 +116,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
         <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
           <span className="text-xs text-[#b9b6d5] flex items-center gap-1 ml-2 font-bold shrink-0">
             <Filter className="w-3.5 h-3.5" />
-            الأقسام:
+            {t('grammar.sectionsLabel')}
           </span>
           {categories.map(cat => (
             <button
@@ -131,7 +131,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                   : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
               }`}
             >
-              {cat === 'All' ? `جميع القواعد (${ALL_GRAMMAR_RULES.length})` : cat}
+              {cat === 'All' ? t('grammar.allRules').replace('{count}', String(ALL_GRAMMAR_RULES.length)) : txText(appText, cat)}
             </button>
           ))}
         </div>
@@ -139,7 +139,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
         {/* Level Filters */}
         <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar">
           <span className="text-xs text-[#b9b6d5] font-bold ml-2 shrink-0">
-            المستوى:
+            {t('grammar.levelLabel')}
           </span>
           {levels.map(lvl => (
             <button
@@ -154,7 +154,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                   : 'bg-white/5 text-[#b9b6d5] hover:bg-white/10'
               }`}
             >
-              {lvl === 'All' ? 'الكل' : lvl}
+              {lvl === 'All' ? t('grammar.levelAll') : lvl}
             </button>
           ))}
         </div>
@@ -164,7 +164,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
       <section className="space-y-6">
         {filteredRules.length === 0 ? (
           <div className="p-12 text-center glass-panel rounded-3xl border border-white/10 space-y-3">
-            <p className="text-lg font-bold text-white">لم نجد قواعد تطابق بحثك حالياً.</p>
+            <p className="text-lg font-bold text-white">{t('grammar.noResults')}</p>
             <button
               onClick={() => {
                 setSearchQuery('');
@@ -173,7 +173,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
               }}
               className="text-xs text-[#ffd166] underline cursor-pointer"
             >
-              إعادة تعيين فلاتر البحث
+              {t('grammar.resetFilters')}
             </button>
           </div>
         ) : (
@@ -225,7 +225,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                           </div>
 
                           <span className="text-xs text-[#b9b6d5] font-semibold flex items-center gap-1">
-                            <span>اضغط لدخول الدرس</span>
+                            <span>{t('grammar.enterLesson')}</span>
                             <ArrowRight className="w-4 h-4 rotate-180 text-[#41e7ff]" />
                           </span>
                         </div>
@@ -245,7 +245,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                       {/* Golden Formula Preview & Action Buttons */}
                       <div className="mt-4 pt-3 border-t border-white/5 flex flex-wrap items-center justify-between gap-2">
                         <div className="flex items-center gap-2">
-                          <span className="text-[11px] font-bold text-[#ffd166]">التركيبة:</span>
+                          <span className="text-[11px] font-bold text-[#ffd166]">{t('grammar.structureLabel')}</span>
                           <code className="en text-xs font-black text-[#41e7ff] px-2.5 py-1 rounded-lg bg-black/40 border border-white/10">
                             {txText(appText, rule.goldenFormula)}
                           </code>
@@ -263,7 +263,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                             className="px-4 py-1.5 rounded-xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#41e7ff] text-[#0c0b20] text-xs font-black hover:brightness-110 flex items-center gap-1.5 shadow-md cursor-pointer transition-transform hover:-translate-y-0.5"
                           >
                             <BookOpen className="w-3.5 h-3.5" />
-                            <span>ابدأ الدرس التعليمي الكامل </span>
+                            <span>{t('grammar.startLesson')}</span>
                           </button>
 
                           {rule.id === 'future-perfect' && (
@@ -275,7 +275,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                               }}
                               className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#ffd166] text-xs font-bold flex items-center gap-1 cursor-pointer border border-white/10"
                             >
-                              <span>الكورس الرائد (8 دروس)</span>
+                              <span>{t('grammar.flagshipCourse')}</span>
                             </button>
                           )}
                         </div>
