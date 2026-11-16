@@ -3,6 +3,7 @@ import { LessonPhoto } from '../components/LessonPhotography';
 import React from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound } from '../utils/audio';
 import { 
   Sparkles, 
@@ -24,6 +25,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
   onNavigate,
   completionPercentage,
 }) => {
+  const appText = useAppTextMap('futurePerfectCourse');
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
       
@@ -172,16 +174,16 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
                   <span className="en font-black text-xs text-[#ffd166]">
                     MODULE 0{lesson.number}
                   </span>
-                  <span className="text-xs text-[#b9b6d5]">• {lesson.readTime}</span>
+                  <span className="text-xs text-[#b9b6d5]">• {txText(appText, lesson.readTime)}</span>
                   <span className="text-xs px-2 py-0.5 rounded bg-white/5 text-[#c4ff55]">
-                    {lesson.level}
+                    {txText(appText, lesson.level)}
                   </span>
                 </div>
                 <h3 className="text-lg font-black text-white">
-                  {lesson.title}
+                  {txText(appText, lesson.title)}
                 </h3>
                 <p className="text-xs sm:text-sm text-[#b9b6d5]">
-                  {lesson.description}
+                  {txText(appText, lesson.description)}
                 </p>
               </div>
 

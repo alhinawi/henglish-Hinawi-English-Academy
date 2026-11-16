@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish } from '../utils/audio';
 import { SpeakingRecorder } from './SpeakingPracticeStudio';
 import {
@@ -20,6 +21,7 @@ interface SpeakingLegacyPracticeProps {
 
 export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ onNavigate }) => {
   const [activeScenarioIdx, setActiveScenarioIdx] = useState(0);
+  const appText = useAppTextMap('dialoguesData');
   const [shadowingLineIdx, setShadowingLineIdx] = useState(0);
   const [customPrompt, setCustomPrompt] = useState<string | null>(null);
 
@@ -124,7 +126,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
             }`}
           >
-            <span>{d.title}</span>
+            <span>{txText(appText, d.title)}</span>
             <span className="text-[10px] opacity-80">({d.difficulty})</span>
           </button>
         ))}
@@ -137,8 +139,8 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
         <div className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
           <div className="flex items-center justify-between pb-3 border-b border-white/10">
             <div>
-              <h2 className="text-xl font-black text-white">{scenario.title}</h2>
-              <p className="text-xs text-[#b9b6d5]">{scenario.description}</p>
+              <h2 className="text-xl font-black text-white">{txText(appText, scenario.title)}</h2>
+              <p className="text-xs text-[#b9b6d5]">{txText(appText, scenario.description)}</p>
             </div>
             <button
               onClick={() => {

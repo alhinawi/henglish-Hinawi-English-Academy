@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { SENTENCE_BUILDER_CHALLENGES } from '../data/gamesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import { Volume2, RotateCcw, Lightbulb, CheckCircle, ArrowRight, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const SentenceBuilder: React.FC = () => {
   const [challengeIndex, setChallengeIndex] = useState(0);
+  const appText = useAppTextMap('gamesData');
   const current = SENTENCE_BUILDER_CHALLENGES[challengeIndex];
 
   const [availableWords, setAvailableWords] = useState<string[]>(() => [...current.scrambledWords]);
@@ -132,7 +134,7 @@ export const SentenceBuilder: React.FC = () => {
             exit={{ opacity: 0, height: 0 }}
             className="mb-4 p-3.5 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-[#ffd166]"
           >
-           {current.hintAr}
+           {txText(appText, current.hintAr)}
           </motion.div>
         )}
       </AnimatePresence>
