@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """i18n gates for CI:
-1. Key parity - every locale file in src/i18n/locales must carry exactly the
-   same key set as en.json (the fallback).
+1. Key parity - the reviewed locales (ar/en/de) must carry exactly the same
+   key set as en.json (the fallback). Machine-generated locales only warn on
+   drift: missing keys fall back to English at runtime, and delta translation
+   PRs catch them up.
 2. Arabic ratchet - no new hardcoded Arabic UI strings in components. Counts
    per file may only shrink against scripts/i18n-arabic-baseline.json.
 """
-import glob, json, re, sys
+import glob, json, os, re, sys
 
 fail = False
 
-# --- gate 1: locale key parity ---
+# --- gate 1: locale key parity (strict for reviewed locales, warn-only for machine ones) ---
+REVIEWED = {'ar', 'en', 'de'}
 locales = sorted(glob.glob('src/i18n/locales/*.json'))
 sets = {}
 for path in locales:
@@ -20,9 +23,15 @@ if base is None:
 for path, keys in sets.items():
     missing = base - keys
     extra = keys - base
-    if missing or extra:
+    if not missing and not extra:
+        continue
+    lang = os.path.basename(path).removesuffix('.json')
+    detail = f'missing {len(missing)} {sorted(missing)[:5]} extra {len(extra)} {sorted(extra)[:5]}'
+    if lang in REVIEWED:
         fail = True
-        print(f'FAIL parity {path}: missing {len(missing)} {sorted(missing)[:5]} extra {len(extra)} {sorted(extra)[:5]}')
+        print(f'FAIL parity {path}: {detail}')
+    else:
+        print(f'WARN parity {path}: {detail} (falls back to en until next delta)')
 
 # --- gate 2: arabic ratchet ---
 baseline = json.load(open('scripts/i18n-arabic-baseline.json', encoding='utf-8'))
