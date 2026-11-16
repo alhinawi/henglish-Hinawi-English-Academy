@@ -3,6 +3,7 @@ import { AlertCircle, ChevronRight, ExternalLink, Languages, Pause, Play, Repeat
 import type { MovieSceneItem } from '../data/movieScenesData';
 import { applyMovieTranscriptCorrections } from '../data/movieTranscriptCorrections';
 import { movieSourceSummaries } from '../data/movieSourceSummaries';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { activeSubtitleAt } from '../utils/movieTimeline';
 import './movieStudio.css';
 
@@ -31,6 +32,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
   const unavailable = scene.transcriptTimingStatus === 'quarantined';
   const start = scene.startTime;
   const end = scene.endTime;
+  const appText = useAppTextMap('movieScenesData');
+  const summaryText = useAppTextMap('movieSourceSummaries');
   const [currentTime, setCurrentTime] = useState(start);
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
@@ -254,11 +257,11 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           {scene.subtitles.map((sub, index) => <button key={sub.id} data-sub-idx={index} aria-current={active === index ? 'true' : undefined} onClick={() => { if (loopBounds.current) loopBounds.current = { start: sub.start, end: sub.end }; loadClip(sub.start); }} className={`movie-studio-cue ${active === index ? 'is-active' : ''}`}>
             <span className="mb-2 flex justify-between text-[11px] text-purple-200"><span>{sub.speaker || 'نص المصدر'}</span><span dir="ltr">{timeLabel(sub.start - start)} - {timeLabel(sub.end - start)}</span></span>
             <span dir="ltr" lang="en" className="block text-left text-base font-bold leading-8">{sub.en}</span>
-            <span lang="ar-EG" className="mt-2 block text-sm leading-8 text-white/85">{sub.arEg}</span>
+            <span className="mt-2 block text-sm leading-8 text-white/85">{txText(appText, sub.arEg)}</span>
             {fusha && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
           </button>)}
           <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? 'إخفاء الفصحى' : 'عرض الفصحى'}</button>
-          {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>فكرة المشهد: </strong>{movieSourceSummaries[scene.youtubeId]}</p>}
+          {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>فكرة المشهد: </strong>{txText(summaryText, movieSourceSummaries[scene.youtubeId])}</p>}
           <p className="text-[11px] leading-7 text-white/50">النص للمشهد القصير المعروض بس، مش للفيديو الأصلي كله. اضغط على الجملة لإعادتها. الجملة الحالية بتظهر تلقائيا مع تقدم المشهد.</p>
         </div>
         <footer className="border-t border-white/10 px-4 py-3 text-[11px] leading-6 text-white/55">
