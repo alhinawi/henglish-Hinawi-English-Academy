@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { COURSES_CATALOG, CourseItem } from '../data/coursesData';
+import { COURSES_CATALOG, COURSES_PAGE_COPY, CourseItem } from '../data/coursesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { PageRoute } from '../types';
 import { playSound } from '../utils/audio';
@@ -47,10 +47,10 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
           <span>HENGLISH ACADEMY • COURSE CATALOG</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          دليل الكورسات والأكاديمية الشاملة
+          {txText(appText, COURSES_PAGE_COPY.heroTitle)}
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
-          اختر مسارك التعليمي المفضل لتطوير قواعدك، طلاقتك النطقية، ومراسلاتك المهنية باللغة الإنجليزية بأعلى معايير الإتقان.
+          {txText(appText, COURSES_PAGE_COPY.heroSubtitle)}
         </p>
       </div>
 
@@ -58,13 +58,13 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
       <div className="relative rounded-3xl overflow-hidden border border-[#41e7ff]/40 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(65,231,255,0.1)]">
         <div className="space-y-2">
           <span className="text-xs font-black px-3 py-1 rounded-full bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30">
-            أكاديمية القواعد الكبرى
+            {txText(appText, COURSES_PAGE_COPY.promoChip)}
           </span>
           <h2 className="text-xl sm:text-2xl font-black text-white">
-            هل تبحث عن شرح كل أزمنة وقواعد الإنجليزي بالترتيب؟
+            {txText(appText, COURSES_PAGE_COPY.promoTitle)}
           </h2>
           <p className="text-xs sm:text-sm text-[#dedbf4]">
-            استعرض أكاديمية الجرامر الشاملة: أكثر من 50 قاعدة من الصفر للاحتراف، كل قاعدة بشرح مبسط وأمثلة منطوقة وكويز فهم.
+            {txText(appText, COURSES_PAGE_COPY.promoBody)}
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
           }}
           className="px-5 py-3 rounded-2xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg shrink-0 cursor-pointer flex items-center gap-2"
         >
-          <span>تصفح الأكاديمية الشاملة</span>
+          <span>{txText(appText, COURSES_PAGE_COPY.promoCta)}</span>
           <ArrowRight className="w-4 h-4 rotate-180" />
         </button>
       </div>
@@ -84,7 +84,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
       <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-white/10 no-scrollbar">
         <span className="text-xs text-[#b9b6d5] flex items-center gap-1 ml-2 font-bold shrink-0">
           <Filter className="w-3.5 h-3.5" />
-          تصفية حسب المستوى:
+          {txText(appText, COURSES_PAGE_COPY.filterLabel)}
         </span>
         {levels.map(lvl => (
           <button
@@ -99,7 +99,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
             }`}
           >
-            {lvl === 'All' ? 'جميع المستويات' : lvl}
+            {lvl === 'All' ? txText(appText, COURSES_PAGE_COPY.allLevels) : txText(appText, lvl)}
           </button>
         ))}
       </div>
@@ -174,7 +174,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <div className="flex items-center justify-between text-xs text-[#dedbf4]">
                   <span className="flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>{course.countLabel ? txText(appText, course.countLabel) : `${course.lessonsCount} دروس`}</span>
+                    <span>{course.countLabel ? txText(appText, course.countLabel) : `${course.lessonsCount} ${txText(appText, COURSES_PAGE_COPY.lessonsSuffix)}`}</span>
                   </span>
                   {course.duration && (
                     <span className="flex items-center gap-1">
@@ -197,7 +197,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                       : 'bg-white/10 hover:bg-white/20 text-white'
                   }`}
                 >
-                  <span>{course.ctaLabel ? txText(appText, course.ctaLabel) : 'استعرض المحتوى'}</span>
+                  <span>{course.ctaLabel ? txText(appText, course.ctaLabel) : txText(appText, COURSES_PAGE_COPY.defaultCta)}</span>
                   <ArrowRight className="w-4 h-4 rotate-180" />
                 </button>
               </div>
