@@ -1,5 +1,5 @@
 {
-  "totalQuestions": 14736,
+  "totalQuestions": 14936,
   "chunkSize": 200,
   "chunks": [
     "q000001-000200.json",
@@ -75,33 +75,34 @@
     "q014001-014200.json",
     "q014201-014400.json",
     "q014401-014600.json",
-    "q014601-014736.json"
+    "q014601-014800.json",
+    "q014801-014936.json"
   ],
   "counts": {
     "byLevel": {
-      "A1": 2581,
-      "A2": 2180,
-      "B2": 1419,
-      "B1": 1376,
-      "C2": 6595,
-      "C1": 585
+      "A1": 2605,
+      "A2": 2212,
+      "B2": 1457,
+      "B1": 1410,
+      "C2": 6631,
+      "C1": 621
     },
     "bySkill": {
       "vocabulary": 11756,
       "grammar": 1873,
-      "reading": 296,
-      "listening": 304,
+      "reading": 396,
+      "listening": 404,
       "usage": 507
     },
     "byType": {
-      "multiple-choice": 11267,
-      "fill-blank": 3099,
-      "true-false": 370
+      "multiple-choice": 11361,
+      "fill-blank": 3174,
+      "true-false": 401
     },
     "bySource": {
       "generated-vocab": 11756,
       "worker-b-grammar-a1-b1": 1180,
-      "worker-d-reading-listening": 600,
+      "worker-d-reading-listening": 800,
       "worker-c-grammar-b2-c2-usage": 1200
     }
   }
