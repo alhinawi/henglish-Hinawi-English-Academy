@@ -187,7 +187,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
         <div className="absolute top-0 right-1/4 w-80 h-80 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 min-w-0 w-full md:w-auto space-y-2 text-start">
-          <div className="flex items-start gap-2 min-w-0">
+          <div className="flex flex-col min-[360px]:flex-row items-start gap-2 min-w-0">
             <span className="shrink-0 p-2 rounded-xl bg-gradient-to-br from-[#41e7ff]/20 to-[#a855f7]/20 border border-[#41e7ff]/30 text-[#41e7ff]">
               <Languages className="w-6 h-6" />
             </span>
