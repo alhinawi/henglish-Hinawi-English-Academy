@@ -3,7 +3,7 @@ import ClientOnly from '../ClientOnly';
 
 export const metadata: Metadata = {
   title: 'المعلم الذكي AI | Henglish Academy',
-  description: 'أكاديمية الذكاء الاصطناعي التفاعلية: معلم إنجليزي شخصي يجاوب ويصحح.',
+  description: 'أكاديمية المعلم التفاعلي: معلم إنجليزي شخصي يجاوب ويصحح.',
 };
 
 export default function Page() {

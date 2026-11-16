@@ -68,7 +68,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           Henglish <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Academy</span>
         </h1>
         <p className="text-sm text-slate-400 mt-2">
-          منصة تعليمية متكاملة مدعومة بالذكاء الاصطناعي والمحاكاة التفاعلية
+          منصة تعليمية متكاملة بالممارسة التفاعلية ومسارات مخصصة لكل طالب
         </p>
       </div>
 

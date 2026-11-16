@@ -362,12 +362,12 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             {isAnalyzing ? (
               <>
                 <RefreshCw className="w-4 h-4 animate-spin" />
-                <span>جاري تحليل المسودة بالذكاء الاصطناعي...</span>
+                <span>جاري تحليل المسودة...</span>
               </>
             ) : (
               <>
                 <Brain className="w-4 h-4" />
-                <span>فحص وتقييم المسودة بالذكاء الاصطناعي</span>
+                <span>فحص وتقييم المسودة</span>
               </>
             )}
           </button>

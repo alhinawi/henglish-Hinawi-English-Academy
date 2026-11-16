@@ -368,7 +368,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       const errMsg: AiChatMessage = {
         id: `ai-err-${Date.now()}`,
         sender: 'assistant',
-        content: 'عذراً، حدث خطأ مؤقت في الاتصال بمزود الذكاء الاصطناعي. يرجى المحاولة مرة أخرى.',
+        content: 'عذراً، حدث خطأ مؤقت في الاتصال بالخدمة. يرجى المحاولة مرة أخرى.',
         timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
@@ -408,10 +408,10 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 shadow-sm">
               <Bot className="w-4 h-4" />
-              <span>HINAWI AI TUTOR ACADEMY • المعلم الذكي التفاعلي</span>
+              <span>HINAWI LEARNING ASSISTANT • المعلم التفاعلي</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-              أكاديمية الذكاء الاصطناعي التفاعلية
+              أكاديمية المعلم التفاعلي
             </h1>
             <p className="text-xs sm:text-sm text-[#dedbf4] max-w-2xl leading-relaxed">
               7 معلمين متخصصين في القواعد، المحادثة، المفردات، تدقيق الكتابة، تصحيح النطق، واختبارات الآيلتس ومقابلات العمل.

@@ -224,13 +224,13 @@ export const AdminAiManagementSection: React.FC = () => {
         <div className="space-y-1.5">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#41e7ff]/15 text-[#41e7ff] border border-[#41e7ff]/30">
             <Cpu className="w-3.5 h-3.5" />
-            <span>CENTRAL MULTI-PROVIDER AI ROUTER • معمارية الذكاء الاصطناعي الموحدة</span>
+            <span>CENTRAL MULTI-PROVIDER ROUTER • معمارية التوجيه الموحدة</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-black text-white font-['Cairo',sans-serif]">
-            إدارة مزودي الذكاء الاصطناعي والمراقبة السحابية
+            إدارة المزودين والمراقبة السحابية
           </h2>
           <p className="text-xs text-[#b9b6d5] max-w-xl">
-            نظام توجيه سحابي فائق الذكاء: Groq (الأساسي)Gemini (البديل الأول)Cloudflare (البديل الثاني)OpenAIHenglish Local Brain.
+            توجيه سحابي متعدد المزودين: Groq (الأساسي)، Gemini (البديل الأول)، Cloudflare (البديل الثاني)، OpenAI، Henglish Local Brain.
           </p>
         </div>
 
