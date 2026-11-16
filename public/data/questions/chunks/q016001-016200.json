@@ -1,0 +1,3548 @@
+[
+ {
+  "id": "q-grm2-015201",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "You've finished, _____ you?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "haven't",
+   "don't",
+   "aren't",
+   "didn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: have → haven't.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015202",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She doesn't like coffee, _____ she?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "doesn't",
+   "does",
+   "is",
+   "did"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "نفي ثم تأكيد.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015203",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Let's go out, _____ we?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "don't",
+   "shall",
+   "let's"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: let's → shall we.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015204",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Open the window, _____ you?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "shall",
+   "do",
+   "did",
+   "will"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر → will you.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015205",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I am late, _____ I?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "aren't",
+   "amn't",
+   "am not",
+   "don't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: I am → aren't I.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015206",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Nobody called, _____ they?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "didn't",
+   "did",
+   "do",
+   "was"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "nobody → they + مثبت.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015207",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He never complains, _____ he?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "doesn't",
+   "is",
+   "does",
+   "did"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "never نفي.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015208",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "There is a problem, _____ there?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "doesn't",
+   "wasn't",
+   "is",
+   "isn't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: there is → isn't there.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015209",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They would help, _____ they?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wouldn't",
+   "won't",
+   "didn't",
+   "aren't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: would → wouldn't.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015210",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "You can swim, _____ you?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "don't",
+   "can't",
+   "aren't",
+   "couldn't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: can → can't.",
+  "topic": "Grammar: question tags (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015211",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Could you tell me where is the bank?",
+   "Could you tell me where the bank was is?",
+   "Could you tell me where the bank is?",
+   "Could you tell me where does the bank?"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ترتيب خبري.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015212",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Do you know what time is it?",
+   "Do you know what is time it?",
+   "Do you know what time does it?",
+   "Do you know what time it is?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ترتيب خبري.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015213",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I wonder if he will come.",
+   "I wonder will he come.",
+   "I wonder if will he come.",
+   "I wonder does he come."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "if + ترتيب خبري.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015214",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'd like to know how much does it cost.",
+   "I'd like to know how much it costs.",
+   "I'd like to know how much costs it.",
+   "I'd like know how much it cost."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ترتيب خبري.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015215",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She asked me why was I crying.",
+   "She asked me why did I cry.",
+   "She asked me why I was crying.",
+   "She asked me why I am crying."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: reported question.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015216",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Who you did see?",
+   "Who saw you?",
+   "Who do you saw?",
+   "Who did you see?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "سؤال المفعول: Who did you see.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015217",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "What happened?",
+   "What did happen?",
+   "What it happened?",
+   "What does happened?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "سؤال الفاعل بدون did.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015218",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (indirect questions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Who did write this book?",
+   "Who wrote this book?",
+   "Who does wrote this book?",
+   "Who is wrote this book?"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "سؤال الفاعل.",
+  "topic": "Grammar: indirect questions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015219",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ a lot of traffic this morning.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "It was",
+   "They were",
+   "There was",
+   "There were"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a lot of traffic مفرد غير معدود.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015220",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ raining heavily outside.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "There is",
+   "He is",
+   "That is",
+   "It is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الطقس: it.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015221",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ a pleasure to meet you.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "It is",
+   "There is",
+   "That",
+   "This"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: it is a pleasure.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015222",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ no point in waiting.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "It is",
+   "There is",
+   "That is",
+   "This is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: there is no point.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015223",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ possible that he forgot.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "There is",
+   "That is",
+   "It is",
+   "This is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: it is possible that.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015224",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ several reasons for the delay.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "It was",
+   "There was",
+   "They were",
+   "There were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "there were + جمع.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015225",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ nobody at home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "There was",
+   "It was",
+   "Nobody was",
+   "That was"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: there was.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015226",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I don't like _____ when people shout.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "there",
+   "it",
+   "that it",
+   "this there"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: like it when.",
+  "topic": "Grammar: there is and it is (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015227",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I _____ to play football every day when I was young.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "use",
+   "am used",
+   "used",
+   "would used"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: used to.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015228",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "When we were kids, we _____ swim in the river every summer.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "will",
+   "used be",
+   "would"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "would للعادة.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015229",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She _____ to living alone now.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is used",
+   "used",
+   "uses",
+   "has used"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: be used to + -ing.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015230",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He didn't _____ to smoke.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "used",
+   "use",
+   "using",
+   "be used"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: didn't use to.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015231",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Did you _____ to live here?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "used",
+   "using",
+   "use",
+   "be used"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: did + use to.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015232",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'm getting used to _____ on the left.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "drive",
+   "to drive",
+   "drove",
+   "driving"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: get used to + -ing.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015233",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We _____ to have a dog, but he died.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "used",
+   "use",
+   "were use",
+   "would use to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: used to.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015234",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It took me a while to get used _____ the heat.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "to",
+   "at",
+   "in"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: get used to.",
+  "topic": "Grammar: used to, would, be used to (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015235",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "This book is my.",
+   "This book is me.",
+   "This book is mine.",
+   "This book is mines."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: mine.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015236",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She hurt her.",
+   "She hurt hers.",
+   "She hurt she.",
+   "She hurt herself."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: reflexive.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015237",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "A friend of mine called.",
+   "A friend of me called.",
+   "A friend of my called.",
+   "A my friend called."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: a friend of mine.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015238",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "They enjoyed theirselves.",
+   "They enjoyed themselves.",
+   "They enjoyed them.",
+   "They enjoyed theirs."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: themselves.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015239",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Each of us have our own room.",
+   "Each of us has ours own room.",
+   "Each of us has our own room.",
+   "Each of us has us own room."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "each + مفرد.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015240",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I did it me.",
+   "I did it by me.",
+   "I did it mine.",
+   "I did it myself."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself للتأكيد.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015241",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It's their decision, not ours.",
+   "It's theirs decision, not ours.",
+   "It's their decision, not our.",
+   "It's theirs decision, not ours own."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: their + noun.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015242",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Who's car is this?",
+   "Whose car is this?",
+   "Whom car is this?",
+   "Whos car is this?"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: whose.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015243",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Ali and me went to school.",
+   "Me and Ali went to school.",
+   "Ali and I went to school.",
+   "Ali and myself went to school."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "فاعل: I.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015244",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (possessives and pronouns)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Between you and I, it's a secret.",
+   "Between you and myself, it's secret.",
+   "Between yours and me, it's secret.",
+   "Between you and me, it's a secret."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "between + مفعول.",
+  "topic": "Grammar: possessives and pronouns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015245",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "There isn't much _____ in the fridge.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "food",
+   "foods",
+   "a food",
+   "many food"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "food غير معدود.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015246",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Could I have some _____?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "informations",
+   "information",
+   "an information",
+   "a informations"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غير معدود.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015247",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She gave me two pieces of _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "advices",
+   "an advice",
+   "advice",
+   "adviced"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: pieces of advice.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015248",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "How many _____ are there in the bag?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "apple",
+   "much apples",
+   "a apple",
+   "apples"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "apples معدود.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015249",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We need a loaf of _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bread",
+   "breads",
+   "a bread",
+   "many bread"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: loaf of bread.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015250",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The _____ is very heavy.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "luggages",
+   "luggage",
+   "a luggage",
+   "luggage are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "luggage غير معدود.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015251",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "There _____ some good news today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "were",
+   "is",
+   "have"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "news مفرد.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015252",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I need some _____ for my project.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "equipments",
+   "an equipment",
+   "equipped",
+   "equipment"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "equipment غير معدود.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015253",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Can I have a glass of _____?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "water",
+   "waters",
+   "a water",
+   "many water"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: glass of water.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015254",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "There are too many _____ on the road.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "car",
+   "cars",
+   "traffic",
+   "much cars"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "cars معدود.",
+  "topic": "Grammar: countable and uncountable (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015255",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He works _____ a waiter in a cafe.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "like",
+   "such as",
+   "as",
+   "likes"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "as = وظيفة.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015256",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She looks _____ her mother.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as",
+   "such",
+   "alike to",
+   "like"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: look like.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015257",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Do _____ I say, not as I do.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as",
+   "like",
+   "such",
+   "likewise"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: as I say.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015258",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Many fruits, _____ oranges and lemons, are rich in vitamin C.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "like as",
+   "such as",
+   "as",
+   "alike"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "such as للأمثلة.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015259",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It tastes _____ chicken.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as",
+   "such as",
+   "like",
+   "alike of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: taste like.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015260",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "_____ I said, I will come.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Like",
+   "Alike",
+   "Such",
+   "As"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: as I said.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015261",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He talks _____ he knows everything.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as if",
+   "like if",
+   "as like",
+   "such"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "as if + جملة.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015262",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She sings _____ an angel.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as",
+   "like",
+   "such",
+   "alike"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "like + اسم للتشبيه.",
+  "topic": "Grammar: like, as, such as (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015263",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "My parents let me _____ out late.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to stay",
+   "staying",
+   "stay",
+   "stayed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: let + base.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015264",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She made him _____ the room.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to clean",
+   "cleaning",
+   "cleaned",
+   "clean"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: make + base.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015265",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They allowed us _____ early.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to leave",
+   "leave",
+   "leaving",
+   "left"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: allow + to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015266",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He forced me _____ the contract.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sign",
+   "to sign",
+   "signing",
+   "signed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: force + to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015267",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I saw him _____ the street.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to cross",
+   "crossed",
+   "cross",
+   "to crossing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "saw + base (كامل).",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015268",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She wants me _____ with her.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "go",
+   "going",
+   "went",
+   "to go"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: want + obj + to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015269",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The teacher expects us _____ on time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to arrive",
+   "arrive",
+   "arriving",
+   "arrived"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: expect + to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015270",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I heard someone _____ in the garden.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to sing",
+   "singing",
+   "sang",
+   "sung"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: heard + -ing.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015271",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He warned us _____ the river.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "don't cross",
+   "not crossing",
+   "not to cross",
+   "to not crossing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: warn + not to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015272",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She advised me _____ a doctor.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "see",
+   "seeing",
+   "saw",
+   "to see"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: advise + to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015273",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They made me _____ the truth.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "tell",
+   "to tell",
+   "telling",
+   "told"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: make + base.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015274",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'd like you _____ here at nine.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "be",
+   "to be",
+   "being",
+   "been"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: would like + obj + to.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015275",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He is known _____ a generous man.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "being",
+   "be",
+   "to be",
+   "to being"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: known to be.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015276",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The film is worth _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to see",
+   "see",
+   "saw",
+   "seeing"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: worth + -ing.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015277",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She prefers _____ rather than driving.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "walking",
+   "to walk",
+   "walk",
+   "walked"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: prefer -ing to -ing.",
+  "topic": "Grammar: verb patterns (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015278",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He got fire last week.",
+   "He got fired last week.",
+   "He got firing last week.",
+   "He gets fire last week."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: get + p.p.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015279",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I am knowing the answer.",
+   "I have known the answer now.",
+   "I know the answer.",
+   "I knowing the answer."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "know ليست مستمرة.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015280",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She is owning three cars.",
+   "She owning three cars.",
+   "She has owned of three cars.",
+   "She owns three cars."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "own فعل حالة.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015281",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "This soup tastes delicious.",
+   "This soup tastes deliciously.",
+   "This soup is tasting delicious now.",
+   "This soup tasting delicious."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "taste + صفة.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015282",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'm seeing the doctor yesterday.",
+   "I'm seeing the doctor tomorrow.",
+   "I seeing the doctor tomorrow.",
+   "I'm see the doctor tomorrow."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "see بمعنى يقابل تقبل المستمر.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015283",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He being silly today.",
+   "He is be silly today.",
+   "He is being silly today.",
+   "He are being silly today."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "be + -ing لسلوك مؤقت.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015284",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (get passive and stative verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It smells wonderfully.",
+   "It is smelling wonderful to.",
+   "It smell wonderful.",
+   "It smells wonderful."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "smell + صفة.",
+  "topic": "Grammar: get passive and stative verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015285",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It's _____ cold today. Wear a coat.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "really",
+   "real",
+   "very much",
+   "so much"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: really + adj.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015286",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She was _____ tired that she fell asleep.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "such",
+   "so",
+   "too",
+   "enough"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: so ... that.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015287",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I _____ agree with you.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "complete",
+   "completeness",
+   "completely",
+   "completed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015288",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The soup is _____ hot. Wait a minute.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "enough",
+   "very much",
+   "such",
+   "too"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: too hot.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015289",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He is _____ intelligent; he got full marks.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "extremely",
+   "extreme",
+   "extremity",
+   "extremes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015290",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'm _____ sure that he will come.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fair",
+   "fairly",
+   "fairness",
+   "fairly of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: fairly sure.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015291",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We were _____ surprised by the result.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "absolute",
+   "absoluteness",
+   "absolutely",
+   "absolves"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: absolutely.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015292",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It's _____ impossible to finish in an hour.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "virtual",
+   "virtue",
+   "virtuous",
+   "virtually"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: virtually impossible.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015293",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He was _____ angry about the delay.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "deeply",
+   "deep",
+   "depth",
+   "deepen"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: deeply.",
+  "topic": "Grammar: adverbs of degree (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015294",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "While I read, he sleeps yesterday.",
+   "While I was reading, he was sleeping.",
+   "While I was read, he slept.",
+   "While I am reading, he slept."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: while + past continuous.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015295",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'll stay until you will come.",
+   "I'll stay until you came.",
+   "I'll stay until you come.",
+   "I'll stay till you coming."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: until + present.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015296",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He left as soon as she will arrive.",
+   "He left as soon as she arriving.",
+   "He leaves as soon as she arrived.",
+   "He left as soon as she arrived."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: as soon as.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015297",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Since he left, I've been alone.",
+   "Since he left, I was alone.",
+   "Since he left, I am alone.",
+   "Since he leaves, I've been alone."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: since + past, present perfect.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015298",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Neither Ali or Omar came.",
+   "Neither Ali nor Omar came.",
+   "Neither Ali nor Omar did came.",
+   "Either Ali nor Omar came."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: neither ... nor.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015299",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Either come with us nor stay here.",
+   "Neither come with us or stay.",
+   "Either come with us or stay here.",
+   "Either come with us and stay here."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: either ... or.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015300",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Both she and her brother is teachers.",
+   "Both she or her brother are teachers.",
+   "Both she and her brother teachers.",
+   "Both she and her brother are teachers."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: both ... and.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015301",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (conjunctions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Whether you like it or not, you must go.",
+   "Whether you like it nor not, you must go.",
+   "If you like it or not, you must go.",
+   "Whether if you like it, you must go."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: whether ... or not.",
+  "topic": "Grammar: conjunctions (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015302",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Please _____ the form in capital letters.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fill on",
+   "fill in",
+   "fill at",
+   "fill to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: fill in a form.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015303",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'll _____ you a call tonight.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "make",
+   "do",
+   "give",
+   "have to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: give someone a call.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015304",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She _____ a lot of money on clothes.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wastes of",
+   "costs",
+   "pays out",
+   "spends"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: spend money on.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015305",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "How much does this jacket _____?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "cost",
+   "spend",
+   "pay",
+   "price"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: cost.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015306",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It took me two hours _____ the report.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "finishing",
+   "to finish",
+   "finish",
+   "for finish"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: it takes + time + to.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015307",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I can't _____ to buy a new car.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "offer",
+   "spare of",
+   "afford",
+   "manage"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: afford to.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015308",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He _____ me a favour.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "made",
+   "gave to",
+   "took",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: do a favour.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015309",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She's _____ a lot of weight recently.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lost",
+   "missed",
+   "dropped of",
+   "failed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: lose weight.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015310",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I _____ my train because I overslept.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lost",
+   "missed",
+   "failed",
+   "left"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: miss a train.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015311",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We _____ a great time at the party.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "made",
+   "did",
+   "had",
+   "took"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: have a great time.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015312",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'll _____ you home after the party.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bring",
+   "carry",
+   "fetch",
+   "take"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: take someone home.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015313",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Could you _____ me that book from the shelf?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "pass",
+   "give out",
+   "throw of",
+   "put"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: pass.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015314",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He _____ a shower every morning.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "does",
+   "takes",
+   "makes",
+   "gives"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: take a shower.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015315",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She _____ her hair a different colour.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "died",
+   "dived",
+   "dyed",
+   "dyes to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "dye = تصبغ.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015316",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They _____ the floor with a mop.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "cleared",
+   "cleans of",
+   "clean up",
+   "cleaned"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: clean.",
+  "topic": "Usage: vocabulary in context: everyday verbs (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015317",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a ticket for going and coming back\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "return",
+   "single",
+   "one-way",
+   "open-ended"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: return ticket.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015318",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"money you pay for a journey\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "fee",
+   "fare",
+   "fine",
+   "cost of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: fare.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015319",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"money you pay to a doctor or school\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "fare",
+   "fine",
+   "fee",
+   "wage"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: fee.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015320",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"money paid for breaking a rule\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "fee",
+   "fare",
+   "bill",
+   "fine"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: fine.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015321",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"money you earn every month from a job\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "salary",
+   "wage packet",
+   "pension",
+   "allowance of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: salary.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015322",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a person who travels on public transport\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "pedestrian",
+   "passenger",
+   "driver",
+   "tourist only"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: passenger.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015323",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a person who walks on the street\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "passenger",
+   "cyclist",
+   "pedestrian",
+   "driver"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: pedestrian.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015324",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a long trip by sea\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "journey by land",
+   "trip on foot",
+   "commute",
+   "voyage"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: voyage.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015325",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"regular trip to work\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "commute",
+   "voyage",
+   "excursion",
+   "trek"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: commute.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015326",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a short trip for pleasure\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "commute",
+   "excursion",
+   "expedition",
+   "migration"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: excursion.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015327",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a place where you wait for a bus\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "bus lane",
+   "bus fare",
+   "bus stop",
+   "bus pass"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: bus stop.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015328",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"luggage you carry on a plane\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "heavy luggage of",
+   "hold luggage",
+   "checked-in up",
+   "hand luggage"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: hand luggage.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015329",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a person who cooks professionally\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "chef",
+   "waiter",
+   "host",
+   "barista"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: chef.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015330",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"someone who is learning a job\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "trainer",
+   "trainee",
+   "supervisor",
+   "inspector"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: trainee.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015331",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a person who is in charge of a team\" (travel and daily-life vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "subordinate",
+   "colleague",
+   "supervisor",
+   "trainee"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: supervisor.",
+  "topic": "Usage: travel and daily-life vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015332",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'm applying _____ a job at a bank.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to for",
+   "at",
+   "on",
+   "for"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: apply for.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015333",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She got a _____ at the university.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "degree",
+   "diploma of",
+   "graduate",
+   "certificate of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: get a degree.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015334",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He was _____ from school for bad behaviour.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "exiled",
+   "expelled",
+   "expired",
+   "exposed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: expelled.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015335",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'm going to _____ for the exam tonight.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "review of",
+   "repeat",
+   "revise",
+   "rewrite"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: revise for exam.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015336",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She _____ the exam with high marks.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "past",
+   "passing",
+   "has pass",
+   "passed"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: pass an exam.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015337",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The company _____ 200 people.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "employs",
+   "employees",
+   "employers",
+   "employed by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: employ.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015338",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He was _____ because the company closed.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fired of",
+   "made redundant",
+   "dismissed up",
+   "rejected"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: made redundant.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015339",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She works _____ a team of five.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: work in a team.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015340",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He is _____ for managing the project.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "responsive",
+   "respective",
+   "respectful",
+   "responsible"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: responsible for.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015341",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I need to _____ my CV before applying.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "update",
+   "upload on",
+   "upgrade up",
+   "update at"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: update.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015342",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Applicants must have relevant _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "experiences",
+   "experience",
+   "an experience",
+   "experienced"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "experience غير معدود هنا.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015343",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We are looking for someone to _____ our team.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "enter",
+   "come",
+   "join",
+   "go"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: join a team.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015344",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She was _____ to manager last month.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "promised",
+   "prompted",
+   "proposed",
+   "promoted"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "promote = يرقي.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015345",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He _____ an interview with the director.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "had",
+   "did",
+   "made",
+   "took"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: have an interview.",
+  "topic": "Usage: work and study vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015346",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The doctor told him to _____ on a diet.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "do",
+   "go",
+   "take",
+   "make"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: go on a diet.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015347",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She has a _____ cough and a sore throat.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "big",
+   "strong of",
+   "bad",
+   "heavy to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: bad cough.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015348",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I've got a _____ on my knee after the fall.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "burn",
+   "brush",
+   "bridge",
+   "bruise"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "bruise = كدمة.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015349",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Smoking is _____ to your health.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "harmful",
+   "harmless",
+   "helpful",
+   "healthy"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: harmful.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015350",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We must _____ energy to protect the planet.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "spend",
+   "save",
+   "waste",
+   "lose"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: save energy.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015351",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The factory _____ the river with chemicals.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "purified",
+   "prevented",
+   "polluted",
+   "produced"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: pollute.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015352",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Many animals are in _____ of extinction.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "risk of",
+   "threat",
+   "hazard",
+   "danger"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: in danger of.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015353",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Recycling helps to _____ waste.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "reduce",
+   "raise",
+   "rise",
+   "reach"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: reduce waste.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015354",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Global _____ is causing sea levels to rise.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "heating",
+   "warming",
+   "burning",
+   "boiling"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: global warming.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015355",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It's important to _____ a balanced diet.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "retain of",
+   "remain",
+   "maintain",
+   "detain"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: maintain.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015356",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He _____ from a serious illness last year.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "reduced",
+   "rejected",
+   "recorded",
+   "recovered"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: recover from.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015357",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She is allergic _____ dust.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to",
+   "with",
+   "from",
+   "at"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: allergic to.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015358",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The patient was _____ to hospital.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "admired",
+   "admitted",
+   "admitted of",
+   "admiting"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: admit to hospital.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015359",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Doctors recommend _____ exercise regularly.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to do",
+   "do",
+   "doing",
+   "done"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: recommend + -ing.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015360",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She _____ a cold last week.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "catched",
+   "catch",
+   "has caught last",
+   "caught"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: caught.",
+  "topic": "Usage: health and environment vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015361",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"to put a file onto the internet\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "upload",
+   "download",
+   "unload",
+   "offload"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: upload.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015362",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"to copy a file from the internet\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "upload",
+   "download",
+   "reload",
+   "unload"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: download.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015363",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a short summary of news\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "headset",
+   "headache",
+   "headline",
+   "headquarters"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: headline.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015364",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a person who watches TV\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "reader",
+   "listener",
+   "driver",
+   "viewer"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: viewer.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015365",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a program on your phone\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "app",
+   "ape",
+   "apt",
+   "add"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: app.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015366",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"to move through web pages\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "brows",
+   "browse",
+   "breeze",
+   "bruise"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: browse.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015367",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a secret word to access an account\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "passport",
+   "passage",
+   "password",
+   "pastword"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: password.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015368",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a message you send by phone\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "textbook",
+   "textile",
+   "texture",
+   "text"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: text.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015369",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a machine that prints documents\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "printer",
+   "printery",
+   "printing out",
+   "printable"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: printer.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015370",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"an advertisement on TV\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "comment",
+   "commercial",
+   "commuter",
+   "commission"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: commercial.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015371",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"false news\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "real news",
+   "old news",
+   "fake news",
+   "top news"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: fake news.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015372",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"a person who posts videos online\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "blogger of text",
+   "viewer",
+   "listener",
+   "vlogger"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: vlogger.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015373",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word means \"something that happens often on social media and spreads quickly\" (technology and media vocabulary)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "trend",
+   "trendy of",
+   "trap",
+   "track"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: trend.",
+  "topic": "Usage: technology and media vocabulary (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015374",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Borrow\" means to take something temporarily.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تستلف.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015375",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Lend\" means to take something from someone temporarily.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "lend = تدي.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015376",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Salary\" is usually paid monthly.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المرتب شهري.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015377",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Wage\" is the same as \"fare\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "wage أجر، fare أجرة مواصلات.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015378",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Fee\" can be paid for a service like school or a doctor.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "رسوم.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015379",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Fine\" is money you earn.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "fine غرامة.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015380",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Hold luggage\" is luggage checked in on a flight.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الشنط المسجلة.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015381",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Pedestrian\" means a driver.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "pedestrian = ماشي على الرجلين.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015382",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Commute\" means to travel regularly to work.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "التنقل للشغل.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015383",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Excursion\" means a daily trip to work.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "excursion = رحلة قصيرة للمتعة.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015384",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Recover\" can mean to get better after illness.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "يتعافى.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015385",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Admire\" and \"admit\" mean the same.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "admire = يعجب، admit = يعترف.",
+  "topic": "Usage: vocabulary and usage (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015386",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"She suggested that we take a break\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: suggest that + base.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015387",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"He is looking forward to meet you\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: meeting.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015388",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"If I were you, I'd apologise\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: were.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015389",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"I have seen her yesterday\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: I saw her yesterday.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015390",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"The letter was written by Sara\" is a passive sentence.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مبني للمجهول.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015391",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"There is many people here\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: There are many people.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015392",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"I'd rather stay home\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: would rather + base.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015393",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"She asked me where was the station\" is correct reported speech.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: where the station was.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015394",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Neither of them knows the answer\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "neither + مفرد.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015395",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"I wish I have more time\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: I wish I had.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015396",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"He's been working here since 2015\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: since + present perfect continuous.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015397",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Despite of the rain, we went out\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Despite the rain.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015398",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"The children were made to apologise\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "made + to في المبني للمجهول.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015399",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"She is more taller than me\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015400",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"It's the first time I've visited Luxor\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present perfect بعد the first time.",
+  "topic": "Grammar: mixed grammar (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ }
+]
