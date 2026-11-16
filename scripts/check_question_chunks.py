@@ -21,6 +21,11 @@ Schema per question:
   explanationAr non-empty string, must contain Arabic
   topic         non-empty string
   source        non-empty string (generator/worker provenance)
+
+Optional fields (validated only when present):
+  passage       reading-comprehension text the question refers to
+  audioText     listening transcript the question refers to
+Extra unknown fields are allowed; workers may attach provenance metadata.
 """
 import json
 import os
@@ -142,6 +147,9 @@ def main(index_path):
                 fail(errors, where, "empty topic")
             if not str(q.get("source", "")).strip():
                 fail(errors, where, "empty source")
+            for opt_field in ("passage", "audioText"):
+                if opt_field in q and not str(q[opt_field]).strip():
+                    fail(errors, where, f"optional field '{opt_field}' present but empty")
             bump("byLevel", str(q.get("level")))
             bump("bySkill", str(q.get("skill")))
             bump("byType", str(q.get("type")))
