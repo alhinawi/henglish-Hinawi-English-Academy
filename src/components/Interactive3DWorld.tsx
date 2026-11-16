@@ -8,6 +8,7 @@ import { createPortal, flushSync } from 'react-dom';
 import * as THREE from 'three';
 import { createCityAssets, pavementTexture } from './cityAssets';
 import { WORLD_GREETINGS, playWorldGreeting, stopWorldGreeting } from './worldGreetings';
+import { WorldAudio } from './worldAudio';
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 import { PageRoute } from '../types';
 import { REAL_LIFE_SCENARIOS, SimulationScenario } from '../data/realLifeSimulationsData';
@@ -143,12 +144,18 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   onNavigate,
   onSelectScenario,
 }) => {
+  const soundRef = useRef<WorldAudio | null>(null);
+  const [muted, setMuted] = useState(false);
+  const mutedRef = useRef(false);
+  const [soundNotice, setSoundNotice] = useState('');
+  useEffect(() => { return () => soundRef.current?.dispose(); }, []);
   const worldRef = useRef<HTMLDivElement>(null);
   const nearbyNpcRef = useRef<WorldLocation | null>(null);
   const [greetingId, setGreetingId] = useState<string | null>(null);
   const [voiceStatus, setVoiceStatus] = useState('');
   const greet = useCallback((id: string) => {
     setGreetingId(id);
+    if (mutedRef.current) { setVoiceStatus('الصوت مقفول. شغّله من زر الصوت.'); return; }
     void playWorldGreeting(id).then(mode => setVoiceStatus(mode === 'browser' ? 'صوت المتصفح مؤقتًا. اللهجة حسب الأصوات الموجودة على جهازك.' : mode === 'clip' ? 'تسجيل صوتي مصري' : 'مفيش صوت عربي متاح على الجهاز. التحية مكتوبة تحت.'));
   }, []);
   const [immersive, setImmersive] = useState(false);
@@ -163,6 +170,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   const exitWorld = useCallback(() => {
     keysPressed.current = {};
     joystickRef.current = { active: false, dx: 0, dy: 0 };
+    soundRef.current?.stop();
     setSelectedLocation(null);
     setGreetingId(null);
     stopWorldGreeting();
@@ -171,6 +179,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     screen.orientation?.unlock?.();
   }, []);
   const enterWorld = () => {
+    soundRef.current ??= new WorldAudio();
+    void soundRef.current.start().then(() => soundRef.current?.chime()).catch(() => setSoundNotice('تعذر تشغيل الصوت. جرّب زر الصوت بعد الدخول.'));
     // The request must run directly in a user gesture, after the portal is mounted.
     flushSync(() => { setIs3DMode(true); setImmersive(true); });
     const element = worldRef.current;
@@ -241,6 +251,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
   const handleSelectLoc = useCallback((loc: WorldLocation) => {
     setSelectedLocation(loc);
+    soundRef.current?.door();
     greet(loc.id);
   }, [greet]);
 
@@ -250,12 +261,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     const currentMount = mountRef.current;
     const width = currentMount.clientWidth || 800;
     const height = currentMount.clientHeight || 480;
-    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let reducedMotion = true;
+    try { reducedMotion = localStorage.getItem('henglish-motion') !== 'full' || window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch { /* Storage can be disabled in private browsing. */ }
     const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
     // 1. Scene, dusk sky dome & fog
     const scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0xc4d8dc, 45, 115);
+    scene.fog = new THREE.Fog(0xc4d8dc, 35, 100);
     const assets = createCityAssets();
 
     const skyCanvas = document.createElement('canvas');
@@ -304,15 +316,15 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     // 2. Camera
     const camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 260);
-    camera.position.set(0, 9, 24);
+    camera.position.set(0, 3.1, 16);
 
     // 3. Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
     renderer.setSize(width, height);
     const smallScreen = Math.min(width, height) < 500;
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, smallScreen ? 1.25 : 1.75));
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, isTouch ? 1 : smallScreen ? 1.25 : 1.5));
     renderer.shadowMap.enabled = true;
-    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.shadowMap.type = isTouch ? THREE.PCFShadowMap : THREE.PCFSoftShadowMap;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.12;
     currentMount.appendChild(renderer.domElement);
@@ -334,7 +346,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     const sun = new THREE.DirectionalLight(0xffdfae, 2.4);
     sun.position.set(-18, 32, 22);
     sun.castShadow = true;
-    sun.shadow.mapSize.set(isTouch ? 1024 : 2048, isTouch ? 1024 : 2048);
+    sun.shadow.mapSize.set(isTouch ? 512 : 1024, isTouch ? 512 : 1024);
     sun.shadow.camera.left = -34;
     sun.shadow.camera.right = 34;
     sun.shadow.camera.top = 34;
@@ -349,7 +361,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     // 5. Ground platform, plaza & roads
     const ground = new THREE.Mesh(
-      new THREE.CircleGeometry(34, 72),
+      new THREE.PlaneGeometry(1600, 1600),
       new THREE.MeshStandardMaterial({ color: 0x7b9465, roughness: 0.95 })
     );
     ground.rotation.x = -Math.PI / 2;
@@ -602,6 +614,12 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       const floors = [2, 1, 3, 4, 2, 1, 1][li];
       const oldBuildingParts = bGroup.children.filter(child => child !== sign);
       void assets.building(buildingVisual, floors, oldBuildingParts);
+      if (['restaurant', 'clothing', 'supermarket'].includes(loc.id)) {
+        const shopfront = new THREE.Group(); shopfront.position.copy(bGroup.position); shopfront.rotation.copy(bGroup.rotation);
+        const offset = new THREE.Vector3(0, 0, 3.1).applyAxisAngle(new THREE.Vector3(0, 1, 0), shopfront.rotation.y);
+        shopfront.position.add(offset); shopfront.rotation.y += Math.PI;
+        scene.add(shopfront); void assets.model('shopfront-authored', shopfront, 5.4);
+      }
 
       // NPC: stylized capsule person with floating name label
       const npcGroup = new THREE.Group();
@@ -759,7 +777,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     scene.add(player);
     travelToRef.current = loc => {
-      player.position.set(loc.position[0] + 2.5, 0, loc.position[2] + 5.4);
+      player.position.set(loc.position[0] + 4.7, 0, loc.position[2] + 5.4);
       keysPressed.current = {};
       joystickRef.current = { active: false, dx: 0, dy: 0 };
     };
@@ -823,63 +841,57 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     // 11. Movement, camera & ambience loop
     let animId: number;
-    const playerSpeed = 0.16;
     let playerAngle = 0;
+    const velocity = new THREE.Vector3();
+    const desiredVelocity = new THREE.Vector3();
+    const previousPosition = new THREE.Vector3();
+    const cameraTarget = new THREE.Vector3();
+    const desiredCamera = new THREE.Vector3();
+    const lookTarget = new THREE.Vector3();
+    const direction = new THREE.Vector3();
+    // Each lot is a 6m square and can rotate. Test in the lot's own coordinates.
+    const insideBuilding = (x: number, z: number, margin = 0.45) => LOCATIONS.some(loc => {
+      const angle = loc.position[0] === 0 && loc.position[2] === 0 ? 0 : Math.atan2(-loc.position[0], -loc.position[2]) + Math.PI;
+      const dx = x - loc.position[0], dz = z - loc.position[2];
+      return Math.abs(dx * Math.cos(angle) - dz * Math.sin(angle)) < 3 + margin && Math.abs(dx * Math.sin(angle) + dz * Math.cos(angle)) < 3 + margin;
+    });
     const clock = new THREE.Clock();
     let lastCoords = { x: 0, z: 4 };
     let lastNearby: string | null = null;
 
     const animate = () => {
       animId = requestAnimationFrame(animate);
-      const delta = Math.min(clock.getDelta(), 0.05);
+      const delta = Math.min(clock.getDelta(), 0.15);
       const t = clock.elapsedTime;
-      const speed = playerSpeed * delta * 60;
-
-      const previousPosition = player.position.clone();
-      let moved = false;
+      previousPosition.copy(player.position);
+      desiredVelocity.set(0, 0, 0);
       const keys = keysPressed.current;
-
-      if (keys['w'] || keys['arrowup']) {
-        player.position.x -= Math.sin(playerAngle) * speed;
-        player.position.z -= Math.cos(playerAngle) * speed;
-        moved = true;
-      }
-      if (keys['s'] || keys['arrowdown']) {
-        player.position.x += Math.sin(playerAngle) * speed;
-        player.position.z += Math.cos(playerAngle) * speed;
-        moved = true;
-      }
-      if (keys['a'] || keys['arrowleft']) {
-        playerAngle += 2.4 * delta;
-        player.rotation.y = playerAngle;
-      }
-      if (keys['d'] || keys['arrowright']) {
-        playerAngle -= 2.4 * delta;
-        player.rotation.y = playerAngle;
-      }
-
-      // Virtual joystick (touch / pointer)
+      desiredVelocity.x = Number(!!(keys['d'] || keys['arrowright'])) - Number(!!(keys['a'] || keys['arrowleft']));
+      desiredVelocity.z = Number(!!(keys['s'] || keys['arrowdown'])) - Number(!!(keys['w'] || keys['arrowup']));
       const joy = joystickRef.current;
       if (joy.active) {
-        const len = Math.hypot(joy.dx, joy.dy);
-        if (len > 6) {
-          const nx = joy.dx / len;
-          const nz = joy.dy / len;
-          const mag = Math.min(1, len / 40);
-          playerAngle = Math.atan2(-nx, -nz);
-          player.rotation.y = playerAngle;
-          player.position.x += nx * speed * mag * 1.5;
-          player.position.z += nz * speed * mag * 1.5;
-          moved = true;
+        const length = Math.hypot(joy.dx, joy.dy);
+        if (length > 7) {
+          const magnitude = Math.pow(Math.min(1, (length - 7) / 33), 1.25);
+          desiredVelocity.set(joy.dx / length * magnitude, 0, joy.dy / length * magnitude);
         }
       }
-
-      if (LOCATIONS.some(loc => Math.hypot(player.position.x - loc.position[0], player.position.z - loc.position[2]) < 3.7)) {
-        player.position.copy(previousPosition);
+      if (desiredVelocity.lengthSq() > 1) desiredVelocity.normalize();
+      desiredVelocity.multiplyScalar(3.4);
+      velocity.lerp(desiredVelocity, 1 - Math.exp(-(desiredVelocity.lengthSq() ? 9 : 13) * delta));
+      const nextX = Math.max(-25, Math.min(25, player.position.x + velocity.x * delta));
+      const nextZ = Math.max(-25, Math.min(25, player.position.z + velocity.z * delta));
+      // Slide along walls instead of stopping both axes or entering a rotated corner.
+      if (!insideBuilding(nextX, player.position.z)) player.position.x = nextX; else velocity.x = 0;
+      if (!insideBuilding(player.position.x, nextZ)) player.position.z = nextZ; else velocity.z = 0;
+      const moved = player.position.distanceToSquared(previousPosition) > 0.000001;
+      if (moved) {
+        const targetAngle = Math.atan2(-velocity.x, -velocity.z);
+        const difference = Math.atan2(Math.sin(targetAngle - playerAngle), Math.cos(targetAngle - playerAngle));
+        playerAngle += difference * (1 - Math.exp(-12 * delta));
+        player.rotation.y = playerAngle;
       }
-      player.position.x = Math.max(-23, Math.min(23, player.position.x));
-      player.position.z = Math.max(-23, Math.min(23, player.position.z));
-
+      soundRef.current?.step(delta, moved && immersive);
       if (!reducedMotion) {
         pBody.position.y = moved ? 0.85 + Math.sin(t * 14) * 0.07 : 0.85;
         pShadowRing.scale.setScalar(1 + Math.sin(t * 2.2) * 0.07);
@@ -887,13 +899,24 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       }
 
 
-      const cameraOffset = new THREE.Vector3(
-        Math.sin(playerAngle) * 13,
-        7.5,
-        Math.cos(playerAngle) * 13
-      );
-      camera.position.lerp(player.position.clone().add(cameraOffset), 1 - Math.exp(-5 * delta));
-      camera.lookAt(player.position.x, player.position.y + 1.3, player.position.z);
+      // Fixed north-facing camera: moving sideways does not spin the world.
+      lookTarget.copy(player.position); lookTarget.y += 1.25;
+      desiredCamera.copy(player.position); desiredCamera.y += 2.1; desiredCamera.z += camera.aspect < 1 ? 7 : 5.4;
+      direction.copy(desiredCamera).sub(lookTarget);
+      // Conservative lot bounds along the sight line keep roofs out of the camera.
+      let allowed = 1;
+      for (let fraction = 0.08; fraction <= 1; fraction += 0.04) {
+        const x = lookTarget.x + direction.x * fraction;
+        const z = lookTarget.z + direction.z * fraction;
+        if (insideBuilding(x, z, 0.7)) { allowed = Math.max(0.04, fraction - 0.06); break; }
+      }
+      desiredCamera.copy(lookTarget).addScaledVector(direction, allowed);
+      cameraTarget.copy(camera.position).lerp(desiredCamera, 1 - Math.exp(-9 * delta));
+      // Collision shortening is immediate; smoothing is only used when space is clear.
+      if (insideBuilding(cameraTarget.x, cameraTarget.z, 0.7) || allowed < 1) cameraTarget.copy(desiredCamera);
+      cameraTarget.y = Math.min(3.4, Math.max(1.4, cameraTarget.y));
+      camera.position.copy(cameraTarget);
+      camera.lookAt(lookTarget);
 
       let foundNearby: WorldLocation | null = null;
       npcMarkers.forEach(({ mesh, loc, ring, body }, i) => {
@@ -981,9 +1004,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     <div ref={worldRef} role={immersive ? 'dialog' : undefined} aria-modal={immersive || undefined} aria-label={immersive ? 'المدينة الإنجليزية' : undefined}
       className={immersive ? 'fixed inset-0 z-[9999] bg-[#0a091a] text-right flex flex-col' : 'space-y-6 text-right'}
       style={immersive ? { height: '100dvh', paddingTop: 'env(safe-area-inset-top)', paddingBottom: 'env(safe-area-inset-bottom)' } : undefined}>
-      {immersive && <div className="absolute top-3 left-3 z-30 flex gap-2" style={{ left: 'max(12px, env(safe-area-inset-left))' }}>
-        <button onClick={exitWorld} className="min-h-11 px-4 rounded-xl bg-black/80 border border-white/30 text-white font-bold flex items-center gap-2"><X className="w-4 h-4" />خروج</button>
-      </div>}
+      <div className={immersive ? "absolute top-3 left-3 z-[60] flex gap-1.5 flex-wrap max-w-[calc(100%-1.5rem)]" : "flex gap-2 flex-wrap"} style={{ left: 'max(12px, env(safe-area-inset-left))' }}>
+        <button onClick={() => { exitWorld(); onNavigate('dashboard'); }} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white font-bold text-xs">الرئيسية</button>
+        <button onClick={() => { exitWorld(); onNavigate('real-life'); }} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white font-bold text-xs">رجوع</button>
+        {immersive && <button onClick={() => { const value = !muted; mutedRef.current = value; setMuted(value); if (value) stopWorldGreeting(); soundRef.current?.mute(value); if (!value) void soundRef.current?.start(); }} aria-label={muted ? 'تشغيل الصوت' : 'كتم الصوت'} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white text-xs">{muted ? 'الصوت مقفول' : 'الصوت شغال'}</button>}
+        {immersive && <button onClick={exitWorld} className="min-h-11 px-4 rounded-xl bg-black/80 border border-white/30 text-white font-bold flex items-center gap-2"><X className="w-4 h-4" />خروج</button>}
+      </div>
+      {immersive && soundNotice && <p role="status" className="absolute top-20 left-3 z-30 text-white bg-black/80 p-2 text-xs">{soundNotice}</p>}
       {immersive && fullscreenHint && <p role="status" className="absolute top-16 left-3 right-3 z-30 bg-black/80 text-white text-xs p-3 rounded-xl pointer-events-none">{fullscreenHint}</p>}
       
       {/* 3D World Section Header */}
@@ -1045,7 +1072,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           <div ref={mountRef} className={immersive ? 'w-full h-full touch-none' : 'w-full h-[430px] sm:h-[540px] touch-none'} />
 
           {/* Virtual Joystick (touch devices) */}
-          {isTouchDevice && (
+          {isTouchDevice && immersive && (
             <div
               className="absolute bottom-6 left-6 z-20 w-28 h-28 rounded-full bg-black/40 backdrop-blur-md border border-white/20 flex items-center justify-center touch-none select-none"
               onPointerDown={handleJoyStart}
@@ -1060,7 +1087,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           )}
 
           {/* Interactive HUD Overlay */}
-          <div className="absolute top-4 right-4 flex flex-col items-end gap-2 z-10 pointer-events-none max-w-[65%]">
+          <div className="absolute top-16 right-4 flex flex-col items-end gap-2 z-10 pointer-events-none max-w-[65%]">
             <div className="px-3 py-1.5 rounded-xl bg-black/60 backdrop-blur-md border border-white/15 text-[11px] font-mono text-white flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span>X: {playerCoords.x} | Z: {playerCoords.z}</span>
@@ -1080,7 +1107,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             </div>
           )}
           {/* Proximity Interaction Prompt with NPC */}
-          {nearbyNpc && (
+          {nearbyNpc && immersive && (
             <div className="absolute bottom-36 sm:bottom-24 left-1/2 -translate-x-1/2 z-20 w-[calc(100%-2rem)] max-w-[22rem]">
               <button onClick={() => greet(nearbyNpc.id)} className="mb-3 mx-auto flex items-center justify-center gap-2 min-h-11 px-4 rounded-xl bg-black/80 text-white border border-white/25 text-xs font-bold"><Volume2 className="w-4 h-4" />اسمع الترحيب بالمصري</button>
               <button
@@ -1100,7 +1127,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           )}
 
           {/* Quick Fast-Travel Toolbar */}
-          <div className="absolute bottom-4 right-4 flex items-center gap-1.5 z-10 bg-black/60 backdrop-blur-md p-1.5 rounded-2xl border border-white/10 overflow-x-auto max-w-[calc(100%-10rem)]">
+          <div className={`${immersive ? "flex" : "hidden"} absolute bottom-4 right-4 items-center gap-1.5 z-10 bg-black/60 backdrop-blur-md p-1.5 rounded-2xl border border-white/10 overflow-x-auto max-w-[calc(100%-10rem)]`}>
             <span className="text-[10px] text-[#ffd166] font-bold px-2 flex items-center gap-1">
               <Navigation className="w-3 h-3" />
               انتقال سريع:
