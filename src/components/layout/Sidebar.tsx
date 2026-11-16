@@ -498,7 +498,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
         )}
 
         {/* Navigation Scroll Area */}
-        <div className="flex-1 overflow-y-auto px-2.5 py-2 space-y-5 custom-scrollbar">
+        {/* Scrollbar sits on the panel's outer edge: flip direction on the scroll
+            container only, restore content direction inside. The mobile drawer
+            opens right in RTL languages (scrollbar right) and left otherwise
+            (scrollbar left); the desktop sidebar sits on the right (scrollbar right). */}
+        <div
+          dir={isMobileDrawer ? (dir === 'rtl' ? 'ltr' : 'rtl') : 'ltr'}
+          className="flex-1 overflow-y-auto px-2.5 py-2 custom-scrollbar"
+        >
+        <div dir={dir} className="space-y-5">
           {navGroups.map((group, gIdx) => (
             <div key={gIdx} className="space-y-1">
               {!isCollapsed && (
@@ -640,6 +648,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               })}
             </div>
           ))}
+        </div>
         </div>
 
         {/* Footer info in sidebar */}
