@@ -88,5 +88,6 @@
   "ev.loadError": "Wörter konnten nicht geladen werden. Bitte erneut versuchen.",
   "ev.empty": "Liste in Vorbereitung",
   "ev.emptyHint": "Geprüfte Wörter werden laufend ergänzt.",
-  "ev.noResults": "Keine Treffer für Suche oder Filter."
+  "ev.noResults": "Keine Treffer für Suche oder Filter.",
+  "pb.detail.comingSoon": "Das 10-Satze-Paket fur dieses Wort wird noch vorbereitet - oben steht das vorhandene Beispiel."
 }

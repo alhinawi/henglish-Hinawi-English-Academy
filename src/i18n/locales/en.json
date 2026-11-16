@@ -88,5 +88,6 @@
   "ev.loadError": "Could not load the words right now. Try again.",
   "ev.empty": "List coming soon",
   "ev.emptyHint": "Verified words are being added. Check back soon.",
-  "ev.noResults": "No results match the search or filters."
+  "ev.noResults": "No results match the search or filters.",
+  "pb.detail.comingSoon": "The 10-sentence pack for this word is still being prepared - the built-in example is shown above."
 }
