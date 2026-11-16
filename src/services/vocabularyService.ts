@@ -69,6 +69,7 @@ export interface VocabularyFilterOptions {
   cefr?: CEFRLevel | 'all';
   pos?: string | 'all';
   domain?: string | 'all';
+  letter?: string | 'all';
   frequencyTier?: string | 'all';
   audioFilter?: 'all' | 'has_us' | 'has_uk' | 'has_both';
   sortBy?: 'popular' | 'alpha_asc' | 'alpha_desc' | 'cefr_asc' | 'cefr_desc';
@@ -362,6 +363,7 @@ export function searchVocabulary(options: VocabularyFilterOptions = {}): {
     cefr = 'all',
     pos = 'all',
     domain = 'all',
+    letter = 'all',
     frequencyTier = 'all',
     audioFilter = 'all',
     sortBy = 'popular',
@@ -400,6 +402,11 @@ export function searchVocabulary(options: VocabularyFilterOptions = {}): {
 
     // 4. Domain
     if (domain !== 'all' && item.domain.toLowerCase() !== domain.toLowerCase()) {
+      return false;
+    }
+
+    // 4b. First letter (A-Z browse)
+    if (letter !== 'all' && !item.normalized.startsWith(letter.toLowerCase())) {
       return false;
     }
 
