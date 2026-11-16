@@ -10,6 +10,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Search, RefreshCw, AlertTriangle, SlidersHorizontal, Copy, Check, X } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { FilterSheet, ActiveFilterChips, FilterSection } from './FilterSheet';
+import PronounceButton from './PronounceButton';
 import {
   PhraseBankId,
   PhraseEntry,
@@ -284,7 +285,10 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
             className="text-right glass-panel p-5 rounded-2xl border border-white/10 bg-linear-to-br from-[#121128] to-[#1a1836] space-y-3 hover:border-[#ffd166]/40 transition-all w-full"
           >
             <div className="flex flex-wrap items-center gap-2 justify-between">
-              <h3 className="text-lg font-black text-[#ffd166] font-mono" dir="ltr">{e.phrase}</h3>
+              <span className="flex items-center gap-2">
+                <h3 className="text-lg font-black text-[#ffd166] font-mono" dir="ltr">{e.phrase}</h3>
+                <PronounceButton text={e.phrase} />
+              </span>
               <div className="flex items-center gap-2">
                 <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black border ${REGISTER_BADGE[e.register]}`}>
                   {t(`pb.reg.${e.register}`)}
@@ -414,7 +418,10 @@ const PhraseDetailSheet: React.FC<{
           <span className="w-10 h-1 rounded-full bg-white/20 absolute top-2 left-1/2 -translate-x-1/2" />
           <div className="flex items-start justify-between gap-3 mt-2">
             <div className="space-y-1">
-              <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.phrase}</h2>
+              <span className="flex items-center gap-2">
+                <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.phrase}</h2>
+                <PronounceButton text={entry.phrase} />
+              </span>
               <p className="text-sm font-bold text-white leading-relaxed">{shownMeaning}</p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
