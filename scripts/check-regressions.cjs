@@ -28,6 +28,7 @@ const checks = [
   'check-vocabulary-saved-card.cjs',
   'check-custom-word-content.cjs',
   'check-vocabulary-persistence.cjs',
+  'check-content-overlay-locale.cjs',
   'check-function-word-glosses.cjs',
   'check-sentence-stats.cjs',
   'check-copy-success.cjs',

@@ -44,21 +44,22 @@ export function loadContentMap(bankPath: string, lang: string): Promise<ContentM
 /** React hook: translation overlay for a bank in the active UI language. */
 export function useContentMap(bankPath: string): ContentMap | null {
   const { lang } = useLanguage();
-  const [map, setMap] = useState<ContentMap | null>(null);
+  const key = `${bankPath}/${lang}`;
+  const [loaded, setLoaded] = useState<{ key: string; map: ContentMap | null } | null>(null);
   useEffect(() => {
     let cancelled = false;
     if (!needsContentTranslation(lang)) {
-      setMap(null);
+      setLoaded(null);
       return;
     }
     loadContentMap(bankPath, lang).then((m) => {
-      if (!cancelled) setMap(m);
+      if (!cancelled) setLoaded({ key, map: m });
     });
     return () => {
       cancelled = true;
     };
-  }, [bankPath, lang]);
-  return map;
+  }, [bankPath, lang, key]);
+  return needsContentTranslation(lang) && loaded?.key === key ? loaded.map : null;
 }
 
 // -----------------------------------------------------------------------------
@@ -88,21 +89,22 @@ export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap
 /** React hook: Arabic-source translation map for one data module. */
 export function useAppTextMap(module: string): AppTextMap | null {
   const { lang } = useLanguage();
-  const [map, setMap] = useState<AppTextMap | null>(null);
+  const key = `${module}/${lang}`;
+  const [loaded, setLoaded] = useState<{ key: string; map: AppTextMap | null } | null>(null);
   useEffect(() => {
     let cancelled = false;
     if (!needsContentTranslation(lang)) {
-      setMap(null);
+      setLoaded(null);
       return;
     }
     loadAppTextMap(module, lang).then((m) => {
-      if (!cancelled) setMap(m);
+      if (!cancelled) setLoaded({ key, map: m });
     });
     return () => {
       cancelled = true;
     };
-  }, [module, lang]);
-  return map;
+  }, [module, lang, key]);
+  return needsContentTranslation(lang) && loaded?.key === key ? loaded.map : null;
 }
 
 /** Translate an Arabic source string through the module overlay. */
