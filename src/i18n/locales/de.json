@@ -2824,5 +2824,7 @@
   "atm.interview-coach.name": "Bewerbungstrainer",
   "atm.interview-coach.description": "Übe Bewerbungsgespräche auf Englisch, STAR-Antworten und Verhaltensfragen.",
   "copy.failed": "Kopieren fehlgeschlagen. Markiere den Text und kopiere ihn manuell.",
-  "vocab.saveError": "Die Änderung konnte auf diesem Gerät nicht gespeichert werden. Erlaube das Speichern und versuche es erneut. Deine bisherigen Daten wurden nicht geändert."
+  "vocab.saveError": "Die Änderung konnte auf diesem Gerät nicht gespeichert werden. Erlaube das Speichern und versuche es erneut. Deine bisherigen Daten wurden nicht geändert.",
+  "ex.loadError": "Die Ausdrücke konnten nicht geladen werden. Dies ist ein Ladefehler, kein leeres Suchergebnis. Versuche es erneut.",
+  "ex.retry": "Erneut versuchen"
 }

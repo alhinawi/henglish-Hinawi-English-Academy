@@ -17,6 +17,7 @@ import {
   Briefcase,
   Loader2,
   X,
+  RotateCcw,
 } from 'lucide-react';
 import { ExpressionEntry, loadExpressions } from '../../services/vocabularyService';
 import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
@@ -39,6 +40,8 @@ export const ExpressionsTab: React.FC = () => {
   const txMap = useContentMap('expressions');
   const [expressions, setExpressions] = useState<ExpressionEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedCefr, setSelectedCefr] = useState<string>('all');
@@ -49,6 +52,7 @@ export const ExpressionsTab: React.FC = () => {
     let mounted = true;
     (async () => {
       setIsLoading(true);
+      setLoadError(false);
       try {
         const data = await loadExpressions();
         if (mounted) {
@@ -57,13 +61,13 @@ export const ExpressionsTab: React.FC = () => {
         }
       } catch (err) {
         console.error('Error loading expressions:', err);
-        if (mounted) setIsLoading(false);
+        if (mounted) { setLoadError(true); setIsLoading(false); }
       }
     })();
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [loadAttempt]);
 
   useEffect(() => {
     setPage(1);
@@ -160,7 +164,14 @@ export const ExpressionsTab: React.FC = () => {
       </section>
 
       {/* Grid of Expressions */}
-      {isLoading ? (
+      {loadError ? (
+        <div role="alert" className="glass-panel p-8 rounded-3xl border border-red-400/20 text-center space-y-4">
+          <p className="text-sm text-red-200">{t('ex.loadError')}</p>
+          <button onClick={() => setLoadAttempt(n => n + 1)} className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 text-white text-sm font-bold cursor-pointer">
+            <RotateCcw className="w-4 h-4" />{t('ex.retry')}
+          </button>
+        </div>
+      ) : isLoading ? (
         <div className="p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <Loader2 className="w-10 h-10 text-[#ffd166] animate-spin mx-auto" />
           <p className="text-white/80 font-bold text-sm">{t('ex.loading')}</p>
