@@ -4,6 +4,7 @@ import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish } from '../utils/audio';
 import { SpeakingRecorder } from './SpeakingPracticeStudio';
+import { useLanguage } from '../i18n/LanguageContext';
 import {
   Mic,
   Volume2,
@@ -20,6 +21,7 @@ interface SpeakingLegacyPracticeProps {
 }
 
 export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ onNavigate }) => {
+  const { t } = useLanguage();
   const [activeScenarioIdx, setActiveScenarioIdx] = useState(0);
   const appText = useAppTextMap('dialoguesData');
   const [shadowingLineIdx, setShadowingLineIdx] = useState(0);
@@ -27,61 +29,61 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
 
   const scenario = REAL_LIFE_DIALOGUES[activeScenarioIdx] || REAL_LIFE_DIALOGUES[0];
   const activeTargetLine = customPrompt || scenario.lines[shadowingLineIdx]?.en || 'Omar, will you have finished revising the grammar units by Thursday night?';
-  const activeTargetLineAr = customPrompt ? 'تدريب حر على المحادثة والطلاقة' : scenario.lines[shadowingLineIdx]?.ar;
+  const activeTargetLineAr = customPrompt ? t('slp.freeDesc') : scenario.lines[shadowingLineIdx]?.ar;
 
   const speakingPrompts = [
     {
-      topic: 'Career & Goals (المستقبل المهني)',
+      topic: t('slp.topic.0'),
       q: 'What major professional milestone will you have achieved before 2028?',
-      hintAr: 'تحدث عن إنجاز وظيفي أو دراسي ستكون قد حققته قبل حلول عام 2028.',
+      hintAr: t('slp.hint.0'),
       starter: 'Before 2028, I will have...',
     },
     {
-      topic: 'Travel & Exploration (السفر والاستكشاف)',
+      topic: t('slp.topic.1'),
       q: 'Which countries will you have visited by the time you turn thirty-five?',
-      hintAr: 'اذكر البلدان التي تخطط لزيارتها قبل سن الخامسة والثلاثين.',
+      hintAr: t('slp.hint.1'),
       starter: 'By the time I turn 35, I will have visited...',
     },
     {
-      topic: 'Daily Sprint & Work (تسليم المهام اليومية)',
+      topic: t('slp.topic.2'),
       q: 'Will your team have delivered the complete client report by 6 PM today?',
-      hintAr: 'أجب بنعم أو لا موضحاً موعد الانتهاء المتوقع.',
+      hintAr: t('slp.hint.2'),
       starter: 'Yes, we will have delivered it because...',
     },
     {
-      topic: 'Education & Learning (التعليم والمذاكرة)',
+      topic: t('slp.topic.3'),
       q: 'How many English words will you have mastered by the end of this academic year?',
-      hintAr: 'تحدث عن خطة حفظ الكلمات وعددها المستهدف قبل نهاية العام الدراسي.',
+      hintAr: t('slp.hint.3'),
       starter: 'By the end of this year, I will have mastered...',
     },
     {
-      topic: 'Family & Celebrations (العيلة والمناسبات)',
+      topic: t('slp.topic.4'),
       q: 'What special preparations will your family have made before the next big gathering?',
-      hintAr: 'صف استعدادات العيلة للعزومة أو المناسبة القادمة.',
+      hintAr: t('slp.hint.4'),
       starter: 'Before the gathering, my family will have...',
     },
     {
-      topic: 'Technology & The Future (التكنولوجيا والمستقبل)',
+      topic: t('slp.topic.5'),
       q: 'Which daily habits will technology have changed by 2035?',
-      hintAr: 'تخيل تأثير التكنولوجيا على العادات اليومية بحلول عام 2035.',
+      hintAr: t('slp.hint.5'),
       starter: 'By 2035, technology will have changed...',
     },
     {
-      topic: 'Health & Fitness (الصحة واللياقة)',
+      topic: t('slp.topic.6'),
       q: 'What fitness goals will you have achieved by the end of this year?',
-      hintAr: 'تحدث عن أهدافك الصحية والرياضية اللي هتكون حققتها قبل نهاية السنة.',
+      hintAr: t('slp.hint.6'),
       starter: 'By the end of this year, I will have...',
     },
     {
-      topic: 'Money & Savings (الفلوس والادخار)',
+      topic: t('slp.topic.7'),
       q: 'How much money will you have saved before your next big purchase?',
-      hintAr: 'احكي عن خطة ادخارك قبل شراء حاجة كبيرة زي عربية أو لابتوب.',
+      hintAr: t('slp.hint.7'),
       starter: 'Before my next big purchase, I will have saved...',
     },
     {
-      topic: 'Community & Environment (المجتمع والبيئة)',
+      topic: t('slp.topic.8'),
       q: 'What positive changes will your neighborhood have seen by 2030?',
-      hintAr: 'تخيل التحسينات اللي هتكون حصلت في منطقتك بحلول 2030.',
+      hintAr: t('slp.hint.8'),
       starter: 'By 2030, my neighborhood will have...',
     },
   ];
@@ -96,15 +98,15 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ff4f9a]/20 text-[#ff8bb9] border border-[#ff4f9a]/40 shadow-sm">
             <Mic className="w-4 h-4" />
-            <span>HINAWI SPEAKING ACADEMY • استوديو الطلاقة والمحادثة الحية</span>
+            <span>HINAWI SPEAKING ACADEMY • {t('slp.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية المحادثة والطلاقة الشفوية
+            {t('slp.heroTitle')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            اللغة خُلقت لتُنطق! تدرب على الحوارات الحية بسيناريوهات واقعية متعددة الأطراف، واستخدم تقنية التظليل الصوتي (Shadowing) لكسر حاجز الخوف وتطوير سرعة التحدث التلقائي.
+            {t('slp.heroBody')}
           </p>
         </div>
       </section>
@@ -151,7 +153,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
               className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#41e7ff] text-xs font-bold flex items-center gap-1.5 cursor-pointer"
             >
               <Volume2 className="w-4 h-4" />
-              <span>تشغيل الحوار كاملاً</span>
+              <span>{t('slp.playFull')}</span>
             </button>
           </div>
 
@@ -177,7 +179,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                         speakEnglish(line.en);
                       }}
                       className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer"
-                      title="استمع لهذه الجملة"
+                      title={t('slp.listenTitle')}
                     >
                       <Volume2 className="w-3.5 h-3.5" />
                     </button>
@@ -185,7 +187,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                       onClick={() => setShadowingLineIdx(idx)}
                       className="text-[10px] text-[#b9b6d5] hover:text-white underline cursor-pointer"
                     >
-                      تحديد للتظليل
+                      {t('slp.selectShadow')}
                     </button>
                   </div>
                 </div>
@@ -199,7 +201,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
 
                 {line.targetStructure && (
                   <div className="mt-2 inline-flex items-center gap-1 text-[11px] font-mono text-[#c4ff55] bg-[#c4ff55]/10 px-2 py-0.5 rounded">
-                    <span>الهيكل المستهدف: {line.targetStructure}</span>
+                    <span>{t('slp.targetStructure')}: {line.targetStructure}</span>
                   </div>
                 )}
               </div>
@@ -222,10 +224,10 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
         <div>
           <h2 className="text-xl font-black text-white flex items-center gap-2">
             <MessageSquare className="w-5 h-5 text-[#ffd166]" />
-            تحديات المحادثة الحرة (Speak Out Loud)
+            {t('slp.challengesTitle')}
           </h2>
           <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-            اقرأ السؤال، ثم حاول التحدث لمدة 30 ثانية باستخدام أزمنة القواعد الصحيحة بدون قراءة من ورقة.
+            {t('slp.challengesBody')}
           </p>
         </div>
 
@@ -249,7 +251,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
 
               <div className="pt-3 border-t border-white/5 space-y-2">
                 <div className="text-[11px] text-[#41e7ff] font-mono">
-                  ابدأ جملتك هكذا: <span className="en font-bold">{p.starter}</span>
+                  {t('slp.starterPrefix')}: <span className="en font-bold">{p.starter}</span>
                 </div>
                 <div className="flex items-center gap-2 pt-1">
                   <button
@@ -260,12 +262,12 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                     className="flex-1 py-1.5 px-2 rounded-lg bg-[#ff4f9a]/20 hover:bg-[#ff4f9a]/30 text-[#ff8bb9] text-[11px] font-bold flex items-center justify-center gap-1 cursor-pointer transition-colors"
                   >
                     <Mic className="w-3 h-3" />
-                    <span>تدرب وسجّل بصوتك</span>
+                    <span>{t('slp.record')}</span>
                   </button>
                   <button
                     onClick={() => speakEnglish(p.q)}
                     className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-[#b9b6d5] hover:text-white cursor-pointer"
-                    title="نطق السؤال"
+                    title={t('slp.pronounceTitle')}
                   >
                     <Volume2 className="w-3.5 h-3.5" />
                   </button>
