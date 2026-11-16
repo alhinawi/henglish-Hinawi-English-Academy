@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageRoute, UserProfile } from '../types';
 import { useLanguage } from '../i18n/LanguageContext';
+import { AvatarImg } from '../components/AvatarImg';
 import { playSound } from '../utils/audio';
 import {
   Settings, BookOpen, Award, ShieldCheck, Repeat, LogOut,
@@ -72,9 +73,10 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
 
       {/* Identity card */}
       <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
-        <img
+        <AvatarImg
           src={userProfile.avatar}
           alt={userProfile.name}
+          name={userProfile.name}
           className="w-16 h-16 rounded-2xl object-cover border-2 border-[#ffd166]/60 shadow-lg shrink-0"
         />
         <div className="min-w-0 flex-1" style={{ textAlign: 'start' }}>
