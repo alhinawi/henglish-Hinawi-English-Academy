@@ -19,6 +19,14 @@ import {
   loadExamSentences,
   sortExamVocab,
 } from '../services/examVocabService';
+import {
+  loadSentenceOverlay,
+  needsContentTranslation,
+  txExample,
+  txMeaning,
+  useContentMap,
+  ContentMap,
+} from '../services/contentI18nService';
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 const PAGE = 50;
@@ -71,6 +79,7 @@ interface ExamVocabPanelProps {
 
 export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, blurbAr }) => {
   const { t } = useLanguage();
+  const txMap = useContentMap(`${exam}/vocab`);
   const [total, setTotal] = useState<number | null>(null);
   const [entries, setEntries] = useState<ExamVocabEntry[]>([]);
   const [loading, setLoading] = useState(true);
@@ -308,7 +317,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
                 </span>
               </div>
             </div>
-            <p className="text-base font-bold text-white leading-relaxed">{e.meaningAr}</p>
+            <p className="text-base font-bold text-white leading-relaxed">{txMeaning(txMap, e.id, e.meaningAr)}</p>
             {e.collocation && (
               <p className="text-xs text-[#41e7ff]" dir="ltr">
                 {e.collocation}
@@ -316,7 +325,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
             )}
             <div className="space-y-1 border-r-2 border-[#ffd166]/30 pr-3">
               <p className="text-sm text-[#b9b6d5]" dir="ltr">{e.exampleEn}</p>
-              <p className="text-sm text-white/80">{e.exampleAr}</p>
+              <p className="text-sm text-white/80">{txExample(txMap, e.id, e.exampleAr)}</p>
             </div>
           </button>
         ))}
@@ -324,7 +333,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
       <div ref={sentinelRef} className="h-1" />
 
       {selected && (
-        <ExamDetailSheet exam={exam} entry={selected} onClose={closeDetail} />
+        <ExamDetailSheet exam={exam} entry={selected} onClose={closeDetail} txMap={txMap} />
       )}
 
       <FilterSheet
@@ -348,14 +357,21 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
 // a clean "more coming" placeholder.
 // -------------------------------------------------------------------------------
 
-const ExamDetailSheet: React.FC<{ exam: ExamId; entry: ExamVocabEntry; onClose: () => void }> = ({
+const ExamDetailSheet: React.FC<{
+  exam: ExamId;
+  entry: ExamVocabEntry;
+  onClose: () => void;
+  txMap: ContentMap | null;
+}> = ({
   exam,
   entry,
   onClose,
+  txMap,
 }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [sentences, setSentences] = useState<ExamSentence[] | null>(null);
   const [sentencesLoading, setSentencesLoading] = useState(true);
+  const [overlay, setOverlay] = useState<string[] | null>(null);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -379,10 +395,29 @@ const ExamDetailSheet: React.FC<{ exam: ExamId; entry: ExamVocabEntry; onClose: 
     };
   }, [exam, entry.id]);
 
+  // Translated sentence lines for non-ar/en UI languages, index-aligned with
+  // the source pack.
+  useEffect(() => {
+    let cancelled = false;
+    setOverlay(null);
+    if (!needsContentTranslation(lang)) return;
+    const idPrefix = entry.id.split('-')[0];
+    loadSentenceOverlay(`${exam}/vocab`, lang, idPrefix, entry.id).then((o) => {
+      if (!cancelled) setOverlay(o);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [exam, entry.id, lang]);
+
+  const shown = sentences
+    ? sentences.map((s, i) => ({ en: s.en, ar: overlay?.[i] ?? s.ar }))
+    : [{ en: entry.exampleEn, ar: txExample(txMap, entry.id, entry.exampleAr) }];
+  const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
+
   const copyAll = async () => {
-    const lines: string[] = [`${entry.word}`, entry.meaningAr, ''];
-    const pairs = sentences ?? [{ en: entry.exampleEn, ar: entry.exampleAr }];
-    pairs.forEach((s, i) => {
+    const lines: string[] = [`${entry.word}`, shownMeaning, ''];
+    shown.forEach((s, i) => {
       lines.push(`${i + 1}. ${s.en}`);
       lines.push(`   ${s.ar}`);
     });
@@ -400,8 +435,6 @@ const ExamDetailSheet: React.FC<{ exam: ExamId; entry: ExamVocabEntry; onClose: 
     window.setTimeout(() => setCopied(false), 2000);
   };
 
-  const shown = sentences ?? [{ en: entry.exampleEn, ar: entry.exampleAr }];
-
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true">
       <button aria-label={t('fs.close')} onClick={onClose} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -411,7 +444,7 @@ const ExamDetailSheet: React.FC<{ exam: ExamId; entry: ExamVocabEntry; onClose: 
           <div className="flex items-start justify-between gap-3 mt-2">
             <div className="space-y-1">
               <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.word}</h2>
-              <p className="text-sm font-bold text-white leading-relaxed">{entry.meaningAr}</p>
+              <p className="text-sm font-bold text-white leading-relaxed">{shownMeaning}</p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <button

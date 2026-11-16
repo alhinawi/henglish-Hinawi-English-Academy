@@ -23,6 +23,14 @@ import {
   loadPhraseSentences,
   sortPhrases,
 } from '../services/phraseBankService';
+import {
+  loadSentenceOverlay,
+  needsContentTranslation,
+  txExample,
+  txMeaning,
+  useContentMap,
+  ContentMap,
+} from '../services/contentI18nService';
 
 const REGISTER_BADGE: Record<PhraseRegister, string> = {
   formal: 'bg-[#6ecbff]/15 text-[#6ecbff] border-[#6ecbff]/30',
@@ -46,6 +54,7 @@ interface PhraseBankPanelProps {
 
 export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr, blurbAr }) => {
   const { t } = useLanguage();
+  const txMap = useContentMap(bank);
   const [total, setTotal] = useState<number | null>(null);
   const [entries, setEntries] = useState<PhraseEntry[]>([]);
   const [loading, setLoading] = useState(true);
@@ -282,10 +291,10 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
                 </span>
               </div>
             </div>
-            <p className="text-base font-bold text-white leading-relaxed">{e.meaningAr}</p>
+            <p className="text-base font-bold text-white leading-relaxed">{txMeaning(txMap, e.id, e.meaningAr)}</p>
             <div className="space-y-1 border-r-2 border-[#ffd166]/30 pr-3">
               <p className="text-sm text-[#b9b6d5]" dir="ltr">{e.exampleEn}</p>
-              <p className="text-sm text-white/80">{e.exampleAr}</p>
+              <p className="text-sm text-white/80">{txExample(txMap, e.id, e.exampleAr)}</p>
             </div>
           </button>
         ))}
@@ -305,7 +314,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       />
 
       {selected && (
-        <PhraseDetailSheet bank={bank} entry={selected} onClose={closeDetail} />
+        <PhraseDetailSheet bank={bank} entry={selected} onClose={closeDetail} txMap={txMap} />
       )}
     </div>
   );
@@ -316,14 +325,21 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
 // copy button, falls back to the entry's built-in example when no file exists.
 // -------------------------------------------------------------------------------
 
-const PhraseDetailSheet: React.FC<{ bank: PhraseBankId; entry: PhraseEntry; onClose: () => void }> = ({
+const PhraseDetailSheet: React.FC<{
+  bank: PhraseBankId;
+  entry: PhraseEntry;
+  onClose: () => void;
+  txMap: ContentMap | null;
+}> = ({
   bank,
   entry,
   onClose,
+  txMap,
 }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [sentences, setSentences] = useState<PhraseSentence[] | null>(null);
   const [sentencesLoading, setSentencesLoading] = useState(true);
+  const [overlay, setOverlay] = useState<string[] | null>(null);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -347,10 +363,29 @@ const PhraseDetailSheet: React.FC<{ bank: PhraseBankId; entry: PhraseEntry; onCl
     };
   }, [bank, entry.id]);
 
+  // Translated sentence lines for non-ar/en UI languages, index-aligned with
+  // the source pack.
+  useEffect(() => {
+    let cancelled = false;
+    setOverlay(null);
+    if (!needsContentTranslation(lang)) return;
+    const idPrefix = entry.id.split('-')[0];
+    loadSentenceOverlay(bank, lang, idPrefix, entry.id).then((o) => {
+      if (!cancelled) setOverlay(o);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [bank, entry.id, lang]);
+
+  const shown = sentences
+    ? sentences.map((s, i) => ({ en: s.en, ar: overlay?.[i] ?? s.ar }))
+    : [{ en: entry.exampleEn, ar: txExample(txMap, entry.id, entry.exampleAr) }];
+  const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
+
   const copyAll = async () => {
-    const lines: string[] = [`${entry.phrase}`, entry.meaningAr, ''];
-    const pairs = sentences ?? [{ en: entry.exampleEn, ar: entry.exampleAr }];
-    pairs.forEach((s, i) => {
+    const lines: string[] = [`${entry.phrase}`, shownMeaning, ''];
+    shown.forEach((s, i) => {
       lines.push(`${i + 1}. ${s.en}`);
       lines.push(`   ${s.ar}`);
     });
@@ -368,8 +403,6 @@ const PhraseDetailSheet: React.FC<{ bank: PhraseBankId; entry: PhraseEntry; onCl
     window.setTimeout(() => setCopied(false), 2000);
   };
 
-  const shown = sentences ?? [{ en: entry.exampleEn, ar: entry.exampleAr }];
-
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true">
       <button aria-label={t('fs.close')} onClick={onClose} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -379,7 +412,7 @@ const PhraseDetailSheet: React.FC<{ bank: PhraseBankId; entry: PhraseEntry; onCl
           <div className="flex items-start justify-between gap-3 mt-2">
             <div className="space-y-1">
               <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.phrase}</h2>
-              <p className="text-sm font-bold text-white leading-relaxed">{entry.meaningAr}</p>
+              <p className="text-sm font-bold text-white leading-relaxed">{shownMeaning}</p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <button

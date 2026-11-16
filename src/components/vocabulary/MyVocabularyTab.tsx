@@ -28,6 +28,7 @@ import {
 import { ReviewRating } from '../../services/spacedRepetitionService';
 import { PronunciationButton } from './PronunciationButton';
 import { WordDetailModal } from './WordDetailModal';
+import { txMeaning, useContentMap } from '../../services/contentI18nService';
 import { playSound, fireCelebration } from '../../utils/audio';
 
 interface MyVocabularyTabProps {
@@ -35,6 +36,7 @@ interface MyVocabularyTabProps {
 }
 
 export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords }) => {
+  const txMap = useContentMap('vocab');
   const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords());
   const [reviewFilter, setReviewFilter] = useState<'all' | 'due' | 'learning' | 'mastered'>('all');
   const [isReviewMode, setIsReviewMode] = useState(false);
@@ -205,7 +207,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
             {isFlipped ? (
               <div className="space-y-2 pt-2 border-t border-white/10 w-full animate-fadeIn">
                 <div className="text-xl font-black text-[#c4ff55]">
-                  {currentReviewItem.entry.meaningAr}
+                  {txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.meaningAr)}
                 </div>
                 <p className="text-xs text-white/70 max-w-md mx-auto font-sans" dir="ltr">
                   "{currentReviewItem.entry.exampleEn}"
@@ -334,7 +336,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
                   {item.word}
                 </div>
                 <div className="text-sm font-bold text-[#c4ff55] mt-0.5">
-                  {item.entry.meaningAr}
+                  {txMeaning(txMap, item.entry.id, item.entry.meaningAr)}
                 </div>
               </div>
 
