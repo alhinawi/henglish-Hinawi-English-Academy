@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
 import { txText, useAppTextMap } from '../services/contentI18nService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { ONLINE_IMAGES } from '../data/imageAssets';
 import { playSound } from '../utils/audio';
 import { 
@@ -19,6 +20,7 @@ interface GrammarAcademyPageProps {
 export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNavigate }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const appText = useAppTextMap('allGrammarRules');
+  const { t } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
 
@@ -81,7 +83,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#c4ff55]" />
-              21+ قاعدة تخصصية وماستر كلاس متكامل
+              {t('grammar.heroRulesBadge').replace('{count}', String(ALL_GRAMMAR_RULES.length))}
             </span>
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#41e7ff]" />
