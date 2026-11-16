@@ -43,6 +43,9 @@ export function loadPhraseIndex(bank: PhraseBankId): Promise<PhraseBankIndex> {
     indexCache[bank] = fetch(`/data/${bank}/${bank}-index.json`).then((res) => {
       if (!res.ok) throw new Error(`Failed to load ${bank} index: ${res.status}`);
       return res.json() as Promise<PhraseBankIndex>;
+    }).catch((error) => {
+      delete indexCache[bank];
+      throw error;
     });
   }
   return indexCache[bank]!;
@@ -56,6 +59,9 @@ function loadChunk(bank: PhraseBankId, file: string): Promise<PhraseEntry[]> {
       fetch(`/data/${bank}/chunks/${file}`).then((res) => {
         if (!res.ok) throw new Error(`Failed to load ${bank} chunk ${file}: ${res.status}`);
         return res.json() as Promise<PhraseEntry[]>;
+      }).catch((error) => {
+        chunkCache.delete(key);
+        throw error;
       })
     );
   }
