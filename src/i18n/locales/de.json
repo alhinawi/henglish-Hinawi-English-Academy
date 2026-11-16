@@ -2703,5 +2703,11 @@
   "arc.correct": "Richtige Antwort:",
   "arc.check": "Prüfen",
   "arc.spellPlaceholder": "Auf Englisch schreiben...",
-  "arc.spellLabel": "Schreibe das englische Wort"
+  "arc.spellLabel": "Schreibe das englische Wort",
+  "pr.play": "Aussprache abspielen",
+  "pr.stop": "Aussprache stoppen",
+  "pr.us": "Amerikanische Aussprache anhören (US)",
+  "pr.uk": "Britische Aussprache anhören (UK)",
+  "lc.wrong": "Falsch",
+  "lc.correct": "Richtig"
 }
