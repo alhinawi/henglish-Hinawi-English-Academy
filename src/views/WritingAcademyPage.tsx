@@ -1,3 +1,4 @@
+import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
@@ -409,12 +410,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             >
               <div className="space-y-2">
                 <span className="text-xs font-black text-[#ffd166]">فخ 0{idx + 1}: {m.title}</span>
-                <div className="p-2.5 rounded-xl bg-[#ff4f9a]/10 border border-[#ff4f9a]/30 text-xs text-[#ff8bb9] en font-mono">
-                 {m.wrong}
-                </div>
-                <div className="p-2.5 rounded-xl bg-[#c4ff55]/10 border border-[#c4ff55]/30 text-xs text-[#c4ff55] en font-mono font-bold">
-                 {m.correct}
-                </div>
+                <LessonCorrection wrong={m.wrong} correct={m.correct} />
               </div>
               <p className="text-[11px] text-[#b9b6d5] leading-relaxed pt-2 border-t border-white/5">
                 {m.explanation}

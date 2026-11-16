@@ -1,3 +1,4 @@
+import { LessonCorrection } from '../components/LessonCorrection';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - AI ACADEMY CHAT STUDIO (AiTutorPage)
 // 7 Specialized Assistants • Platform-Aware • Streaming • Speech-to-Text • Session History
@@ -757,12 +758,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       </span>
                       {msg.grammarCorrections.map((corr, cIdx) => (
                         <div key={cIdx} className="text-xs space-y-0.5 bg-black/30 p-2.5 rounded-lg border border-red-500/20">
-                          <div dir="ltr" className="line-through text-red-300 font-mono">
-                           {corr.wrong}
-                          </div>
-                          <div dir="ltr" className="text-emerald-300 font-mono font-bold">
-                           {corr.correct}
-                          </div>
+                          <LessonCorrection wrong={corr.wrong} correct={corr.correct} />
                           <div className="text-[#dedbf4] text-[11px] pt-1">
                            {corr.explanationAr}
                           </div>

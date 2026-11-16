@@ -1,3 +1,4 @@
+import { LessonCorrection } from '../LessonCorrection';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION PEDAGOGICAL EXPLANATION PANEL
 // Comprehensive analysis: Meaning, Grammar, Vocabulary, Idioms, Culture & Traps
@@ -283,14 +284,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                     key={idx}
                     className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-xs space-y-1 text-slate-200"
                   >
-                    <div className="flex items-center gap-2 font-bold text-red-300">
-                      <span>الخطأ الشائع:</span>
-                      <span>{trap.wrongAr}</span>
-                    </div>
-                    <div className="flex items-center gap-2 font-bold text-[#10b981]">
-                      <span>الصواب البليغ:</span>
-                      <span>{trap.correctAr}</span>
-                    </div>
+                    <LessonCorrection wrong={trap.wrongAr} correct={trap.correctAr} />
                     <p className="text-[#b9b6d5] pt-1">
                       <strong className="text-white ml-1">لماذا هذا فخ؟</strong> {trap.whyTrapAr}
                     </p>
