@@ -186,34 +186,34 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
         {/* Glow backdrop */}
         <div className="absolute top-0 right-1/4 w-80 h-80 bg-[#41e7ff]/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 space-y-1 text-right">
-          <div className="flex items-center gap-2">
-            <span className="p-2 rounded-xl bg-gradient-to-br from-[#41e7ff]/20 to-[#a855f7]/20 border border-[#41e7ff]/30 text-[#41e7ff]">
+        <div className="relative z-10 min-w-0 w-full md:w-auto space-y-2 text-start">
+          <div className="flex items-start gap-2 min-w-0">
+            <span className="shrink-0 p-2 rounded-xl bg-gradient-to-br from-[#41e7ff]/20 to-[#a855f7]/20 border border-[#41e7ff]/30 text-[#41e7ff]">
               <Languages className="w-6 h-6" />
             </span>
-            <h1 className="text-2xl md:text-3xl font-black text-white tracking-tight flex items-center gap-2">
-              <span>{t('ts.badge')}</span>
-              <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-[#41e7ff] text-black">
+            <h1 className="text-2xl md:text-3xl font-black text-white tracking-tight min-w-0 flex flex-wrap items-center gap-2">
+              <span className="min-w-0 break-words [overflow-wrap:anywhere]">{t('ts.badge')}</span>
+              <span className="shrink-0 whitespace-nowrap text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-[#41e7ff] text-black">
                 PRO STUDIO
               </span>
             </h1>
           </div>
-          <p className="text-xs md:text-sm text-[#b9b6d5] max-w-2xl leading-relaxed">
+          <p className="text-xs md:text-sm text-[#b9b6d5] max-w-2xl leading-relaxed break-words">
             {t('ts.blurb')}
           </p>
         </div>
 
         {/* Co-Pilot & Stats Widget */}
-        <div className="relative z-10 flex items-center gap-3">
+        <div className="relative z-10 min-w-0 max-w-full flex items-center gap-3">
           <button
             type="button"
             onClick={() => {
               playSound('click');
               setIsAssistantOpen(true);
             }}
-            className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-[#41e7ff]/20 border border-white/10 hover:border-[#41e7ff]/40 text-slate-200 hover:text-[#41e7ff] text-xs font-bold transition-all cursor-pointer shadow-lg active:scale-95"
+            className="flex min-w-0 max-w-full items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-[#41e7ff]/20 border border-white/10 hover:border-[#41e7ff]/40 text-slate-200 hover:text-[#41e7ff] text-xs font-bold transition-all cursor-pointer shadow-lg active:scale-95"
           >
-            <Bot className="w-4 h-4 text-[#41e7ff]" />
+            <Bot className="w-4 h-4 shrink-0 text-[#41e7ff]" />
             <span>{t('ts.assistant')}</span>
           </button>
         </div>
