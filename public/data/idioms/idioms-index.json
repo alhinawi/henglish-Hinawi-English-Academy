@@ -1,11 +1,23 @@
 {
   "bank": "idioms",
   "idPrefix": "idm",
-  "totalEntries": 0,
+  "totalEntries": 1000,
   "chunkSize": 500,
-  "chunks": [],
+  "chunks": [
+    "idm000001-000500.json",
+    "idm000501-001000.json"
+  ],
   "counts": {
-    "byRegister": {},
-    "byOrigin": {}
+    "byRegister": {
+      "neutral": 455,
+      "informal": 525,
+      "formal": 16,
+      "vulgar": 4
+    },
+    "byOrigin": {
+      "global": 811,
+      "US": 115,
+      "UK": 74
+    }
   }
 }
