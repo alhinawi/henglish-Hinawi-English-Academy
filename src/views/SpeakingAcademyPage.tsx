@@ -16,10 +16,16 @@ interface SpeakingAcademyPageProps {
 const levels: (SpeakingLevel | 'all')[] = ['all', 'A1', 'A2', 'B1', 'B2'];
 const labels: Record<SpeakingLevel, string> = { A1: 'sa.levelDesc.A1', A2: 'sa.levelDesc.A2', B1: 'sa.levelDesc.B1', B2: 'sa.levelDesc.B2' };
 
-export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = ({ onNavigate, onCompleteActivity, completedActivityIds = [] }) => {
+export const SpeakingAcademyPage: React.FC<SpeakingAcademyPageProps> = (props) => {
   const { user } = useAuth();
-  const { t } = useLanguage();
   const storageKey = `henglish-speaking-v1:${user?.id || 'local'}`;
+  // Account changes must discard the previous learner's in-memory lesson,
+  // recorder and completion state before the new storage key can be written.
+  return <LearnerSpeakingAcademy key={storageKey} {...props} storageKey={storageKey} />;
+};
+
+const LearnerSpeakingAcademy: React.FC<SpeakingAcademyPageProps & { storageKey: string }> = ({ onNavigate, onCompleteActivity, completedActivityIds = [], storageKey }) => {
+  const { t } = useLanguage();
   const [localDone, setDone] = useState<string[]>(() => {
     try { const saved: unknown = JSON.parse(localStorage.getItem(storageKey) || '[]'); return Array.isArray(saved) ? saved.filter((s): s is string => typeof s === 'string' && SPEAKING_LESSONS.some(l=>l.id===s)) : []; } catch { return []; }
   });
