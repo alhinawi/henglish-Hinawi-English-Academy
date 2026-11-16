@@ -1085,7 +1085,10 @@ export function evaluateAssessmentSession(
   let estimatedLevel: CEFRLevel = 'A1';
   let levelTitleAr = 'مبتدئ (Beginner - A1)';
 
-  if (overallPercentage >= 85) {
+  if (overallPercentage >= 95) {
+    estimatedLevel = 'C2';
+    levelTitleAr = 'إتقان (Proficiency - C2)';
+  } else if (overallPercentage >= 85) {
     estimatedLevel = 'C1';
     levelTitleAr = 'متقدم (Advanced - C1)';
   } else if (overallPercentage >= 70) {
@@ -1129,7 +1132,7 @@ export function evaluateAssessmentSession(
       startRoute: 'courses/grammar/future-perfect',
       focusTopics: ['المستقبل التام Will have + V3', 'إنجليزي الاجتماعات والمطارات', 'أفعال V3 الشاذة'],
     };
-  } else if (estimatedLevel === 'C1') {
+  } else if (estimatedLevel === 'C1' || estimatedLevel === 'C2') {
     recommendedPath = {
       startAcademy: 'المحادثة المتقدمة وإنجليزي الأعمال',
       startRoute: 'speaking',
