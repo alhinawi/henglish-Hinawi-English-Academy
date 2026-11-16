@@ -372,7 +372,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-12 border border-[#ffd166]/40 max-w-3xl mx-auto space-y-8 text-center shadow-2xl relative overflow-hidden">
           {/* Certificate Watermark */}
           <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-            <span className="text-9xl font-black">HINAWI</span>
+            <span className="text-9xl font-black">HENGLISH</span>
           </div>
 
           <div className="space-y-2">
