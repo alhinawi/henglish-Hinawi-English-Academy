@@ -1,12 +1,41 @@
 {
   "exam": "ielts",
   "idPrefix": "ielts-v",
-  "totalEntries": 0,
+  "totalEntries": 1000,
   "chunkSize": 500,
-  "chunks": [],
+  "chunks": [
+    "ie000001-000500.json",
+    "ie000501-001000.json"
+  ],
   "counts": {
-    "byLevel": {},
-    "byPos": {},
-    "byTopic": {}
+    "byLevel": {
+      "B1": 501,
+      "B2": 499
+    },
+    "byPos": {
+      "verb": 168,
+      "noun": 637,
+      "adjective": 158,
+      "determiner": 1,
+      "number": 2,
+      "adverb": 11,
+      "phrasal verb": 18,
+      "modal verb": 2,
+      "conjunction": 3
+    },
+    "byTopic": {
+      "education": 178,
+      "environment": 130,
+      "health": 125,
+      "society": 136,
+      "technology": 42,
+      "economy": 115,
+      "culture": 49,
+      "travel": 25,
+      "work": 66,
+      "law": 48,
+      "media": 60,
+      "science": 26
+    }
   }
 }
