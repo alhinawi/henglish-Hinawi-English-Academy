@@ -2356,5 +2356,20 @@
   "mvt.exploreCta": "استكشف بنك الكلمات الآن",
   "mvt.deleteTitle": "حذف من المحفوظات",
   "mvt.repetition": "تكرار:",
-  "mvt.note": "ملاحظة:"
+  "mvt.note": "ملاحظة:",
+  "qe.defaultTitle": "اختبار تفاعلي شامل",
+  "qe.diffBeginner": "مبتدئ",
+  "qe.diffIntermediate": "متوسط",
+  "qe.diffAdvanced": "متقدم",
+  "qe.score": "النتيجة:",
+  "qe.reset": "إعادة تعيين الاختبار",
+  "qe.question": "السؤال",
+  "qe.of": "من",
+  "qe.listenQuestion": "استمع للسؤال (Audio)",
+  "qe.goToQuestion": "الانتقال للسؤال",
+  "qe.correct": "إجابة صحيحة وممتازة!",
+  "qe.wrong": "مش دي الإجابة الصحيحة.",
+  "qe.explanationLabel": "التفسير بالمصري:",
+  "qe.prevQuestion": "السؤال السابق",
+  "qe.nextQuestion": "السؤال التالي"
 }

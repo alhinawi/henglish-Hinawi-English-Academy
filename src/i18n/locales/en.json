@@ -2356,5 +2356,20 @@
   "mvt.exploreCta": "Explore the word bank now",
   "mvt.deleteTitle": "Remove from saved",
   "mvt.repetition": "Repeats:",
-  "mvt.note": "Note:"
+  "mvt.note": "Note:",
+  "qe.defaultTitle": "Full interactive quiz",
+  "qe.diffBeginner": "Beginner",
+  "qe.diffIntermediate": "Intermediate",
+  "qe.diffAdvanced": "Advanced",
+  "qe.score": "Score:",
+  "qe.reset": "Reset quiz",
+  "qe.question": "Question",
+  "qe.of": "of",
+  "qe.listenQuestion": "Listen to the question (Audio)",
+  "qe.goToQuestion": "Go to question",
+  "qe.correct": "Correct, well done!",
+  "qe.wrong": "That is not the right answer.",
+  "qe.explanationLabel": "Explanation in Egyptian Arabic:",
+  "qe.prevQuestion": "Previous question",
+  "qe.nextQuestion": "Next question"
 }
