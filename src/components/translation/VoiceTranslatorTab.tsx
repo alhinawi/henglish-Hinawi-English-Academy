@@ -20,6 +20,7 @@ import {
   Check,
   RotateCcw,
 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface VoiceTranslatorTabProps {
   sourceLang: LanguageCode;
@@ -32,6 +33,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   targetLang,
   mode,
 }) => {
+  const { t } = useLanguage();
   const [recorder] = useState(() => new RealAudioRecorder());
   const [isRecording, setIsRecording] = useState(false);
   const [recordDuration, setRecordDuration] = useState(0);
@@ -103,7 +105,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         }
       } catch (err) {
         console.error('Audio transcription error:', err);
-        setErrorMsg('تعذر تحويل الصوت إلى نص. يرجى التأكد من تشغيل الميكروفون بوضوح والمحاولة مجدداً.');
+        setErrorMsg(t('vt.errTranscribe'));
         playSound('wrong');
       } finally {
         setIsTranscribing(false);
@@ -120,7 +122,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       if (success) {
         setIsRecording(true);
       } else {
-        setErrorMsg('تعذر الوصول إلى الميكروفون. يرجى منح الإذن في المتصفح.');
+        setErrorMsg(t('vt.errMic'));
       }
     }
   };
@@ -160,7 +162,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       };
       reader.readAsDataURL(file);
     } catch {
-      setErrorMsg('تعذر قراءة الملف الصوتي.');
+      setErrorMsg(t('vt.errFile'));
       playSound('wrong');
     } finally {
       setIsTranscribing(false);
@@ -191,16 +193,16 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         <div>
           <h3 className="text-lg font-bold text-white flex items-center gap-2">
             <Mic className="w-5 h-5 text-[#41e7ff]" />
-            <span>الترجمة الصوتية الحية (Real Voice Translation)</span>
+            <span>{t('vt.title')}</span>
           </h3>
           <p className="text-xs text-[#b9b6d5] mt-1">
-            تحدث بحرية بصوتك، وسيقوم النظام بتفريغ كلامك بدقة، ترجمته سياقياً، ونطقه باللغة الهدف فوراً.
+            {t('vt.blurb')}
           </p>
         </div>
 
         <label className="flex items-center gap-2 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs text-slate-300 hover:text-white cursor-pointer transition-colors shrink-0">
           <Upload className="w-4 h-4 text-[#ffb84d]" />
-          <span>رفع ملف صوتي (MP3, WAV, M4A)</span>
+          <span>{t('vt.upload')}</span>
           <input
             type="file"
             accept="audio/*"
@@ -246,16 +248,16 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
               ? 'bg-red-500 text-white shadow-red-500/40 ring-4 ring-red-500/30 animate-pulse'
               : 'bg-gradient-to-r from-[#41e7ff] to-[#7c3aed] text-black shadow-[#41e7ff]/30 hover:scale-105'
           }`}
-          aria-label={isRecording ? 'إيقاف التسجيل الصوتي' : 'بدء التسجيل الصوتي'}
+          aria-label={isRecording ? t('vt.stopRecording') : t('vt.startRecording')}
         >
           {isRecording ? <MicOff className="w-8 h-8" /> : <Mic className="w-8 h-8" />}
         </button>
 
         <span className="text-sm font-bold text-white mt-4 z-10">
-          {isRecording ? `جارٍ الاستماع... (${recordDuration} ثانية)` : 'انقر على الميكروفون وابدأ في التحدث'}
+          {isRecording ? `${t('vt.listening')} (${recordDuration} ${t('vt.seconds')})` : t('vt.tapToSpeak')}
         </span>
         <span className="text-xs text-[#b9b6d5]/60 mt-1 z-10">
-          {isRecording ? 'انقر مرة أخرى عند الانتهاء لتفريغ الكلام وترجمته' : 'يدعم التعرف التلقائي على اللغة الإنجليزية والعربية'}
+          {isRecording ? t('vt.tapWhenDone') : t('vt.autoDetect')}
         </span>
       </div>
 
@@ -274,17 +276,17 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
           <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 space-y-3">
             <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
               <span className="font-bold text-white flex items-center gap-1.5">
-                <span>1. النص المنطوق المستخرج (Transcribed Speech)</span>
+                <span>{t('vt.transcribedTitle')}</span>
               </span>
               <span className="text-[11px] text-[#41e7ff] bg-[#41e7ff]/10 px-2 py-0.5 rounded">
-                أصل الكلام
+                {t('vt.speechSource')}
               </span>
             </div>
 
             {isTranscribing ? (
               <div className="py-6 text-center text-xs text-[#41e7ff] flex items-center justify-center gap-2">
                 <Sparkles className="w-4 h-4 animate-spin text-[#ffb84d]" />
-                <span>جارٍ تفريغ التسجيل الصوتي بدقة عالية...</span>
+                <span>{t('vt.transcribing')}</span>
               </div>
             ) : (
               <p
@@ -300,7 +302,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
           <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 space-y-3">
             <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
               <span className="font-bold text-white flex items-center gap-1.5">
-                <span>2. الترجمة السياقية والنطق (Translated Result)</span>
+                <span>{t('vt.translatedTitle')}</span>
               </span>
 
               <div className="flex items-center gap-1">
@@ -308,7 +310,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
                   type="button"
                   onClick={handleSpeakTranslation}
                   disabled={!translatedVoiceText}
-                  title="استمع للترجمة"
+                  title={t('vt.listenTranslation')}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30"
                 >
                   <Volume2 className="w-4 h-4" />
@@ -317,7 +319,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
                   type="button"
                   onClick={handleCopy}
                   disabled={!translatedVoiceText}
-                  title="نسخ الترجمة"
+                  title={t('vt.copyTranslation')}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer disabled:opacity-30"
                 >
                   {copied ? <Check className="w-4 h-4 text-[#10b981]" /> : <Copy className="w-4 h-4" />}
@@ -328,7 +330,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
             {isTranslating ? (
               <div className="py-6 text-center text-xs text-[#a855f7] flex items-center justify-center gap-2">
                 <Sparkles className="w-4 h-4 animate-spin text-[#41e7ff]" />
-                <span>جارٍ ترجمة الكلام وتجهيز النطق الطبيعي...</span>
+                <span>{t('vt.translating')}</span>
               </div>
             ) : (
               <p
