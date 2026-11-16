@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy, Volume2 } from 'lucide-react';
 import { LITERACY_LEVELS, LITERACY_READING, LITERACY_WRITING, type LiteracyReading, type LiteracyWriting } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { speakEnglish } from '../utils/audio';
 
 type Props = { kind: 'reading' | 'writing'; onCompleteActivity?: (id: string, score: number, total: number) => void };
@@ -15,6 +16,7 @@ const button = 'rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm t
 const normalise = (s: string) => s.trim().toLowerCase().replace(/[.!?,;:]/g, '').replace(/\s+/g, ' ');
 
 export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
+  const { t, dir, lang } = useLanguage();
   const reading = kind === 'reading';
   const [level, setLevel] = useState('A1');
   const appText = useAppTextMap('literacyAcademyData');
@@ -24,7 +26,7 @@ export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
   const [storageError, setStorageError] = useState(false);
   useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(saved)); setStorageError(false); } catch { setStorageError(true); } }, [saved]);
   const lessons: (LiteracyReading | LiteracyWriting)[] = reading ? LITERACY_READING : LITERACY_WRITING;
-  const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr}`.toLowerCase().includes(query.toLowerCase()));
+  const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.toLowerCase()));
   const current = lessons.find(l => l.id === active);
   const completed = lessons.filter(l => saved.done.includes(l.id)).length;
   const complete = (id: string) => {
@@ -32,39 +34,39 @@ export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
     setSaved(p => ({ ...p, done: [...p.done, id] }));
     onCompleteActivity?.(id, 3, 3);
   };
-  return <div dir="rtl" className="space-y-6 pb-8 min-w-0">
+  return <div dir={dir} className="space-y-6 pb-8 min-w-0 text-start">
     <section className="relative isolate overflow-hidden rounded-[28px] border border-white/10 bg-[#11182a]">
-      <img src={lessons[0].image} alt={reading ? 'فصل لتعلم اللغة' : 'صورة توضيحية لمتعلم'} className="absolute inset-0 h-full w-full object-cover opacity-25" />
+      <img src={lessons[0].image} alt={reading ? t('lit.readingAlt') : t('lit.writingAlt')} className="absolute inset-0 h-full w-full object-cover opacity-25" />
       <div className="absolute inset-0 bg-linear-to-l from-[#101626] via-[#101626]/90 to-[#101626]/40" />
       <div className="relative p-6 sm:p-10 max-w-3xl space-y-4">
-        <span className="inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs text-cyan-200">{reading ? <BookOpen size={15} /> : <PenLine size={15} />} HENGLISH · {reading ? 'READING ROOM' : 'WRITING STUDIO'}</span>
-        <h1 className="text-3xl sm:text-5xl font-black leading-snug text-white">{reading ? 'اقرأ بعمق. افهم بثقة.' : 'من أول جملة إلى حجة مقنعة.'}</h1>
-        <p className="text-sm leading-7 text-slate-300">{reading ? 'نصوص تعليمية أصلية، وأسئلة فهم، ومفردات في سياقها. رحلة من المواقف اليومية إلى القراءة النقدية.' : 'ورش متدرجة، ونماذج أصلية، وتدريب على ترتيب الجمل والتحرير. اكتب مسودتك وراجعها بوعي.'}</p>
-        <div className="flex flex-wrap gap-2 text-xs text-slate-200">{['6 مستويات', `${lessons.length} ${reading ? 'درس قراءة' : 'ورشة كتابة'}`, `${lessons.length * 3} نشاط`, 'صور لكل درس'].map(s => <span key={s} className="rounded-lg bg-white/10 px-3 py-2">{s}</span>)}</div>
+        <span className="inline-flex items-center gap-2 rounded-full border border-cyan-300/25 bg-cyan-300/10 px-3 py-1.5 text-xs text-cyan-200">{reading ? <BookOpen size={15} /> : <PenLine size={15} />} HENGLISH · {t(reading ? 'lit.readingBadge' : 'lit.writingBadge')}</span>
+        <h1 className="text-3xl sm:text-5xl font-black leading-snug text-white">{reading ? t('lit.readingTitle') : t('lit.writingTitle')}</h1>
+        <p className="text-sm leading-7 text-slate-300">{reading ? t('lit.readingIntro') : t('lit.writingIntro')}</p>
+        <div className="flex flex-wrap gap-2 text-xs text-slate-200">{[t('lit.levels'), t(reading ? 'lit.readingCount' : 'lit.writingCount').replace('{count}', String(lessons.length)), t('lit.activityCount').replace('{count}', String(lessons.length * 3)), t('lit.images')].map(s => <span key={s} className="rounded-lg bg-white/10 px-3 py-2">{s}</span>)}</div>
       </div>
     </section>
-    <section className="flex flex-wrap items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
-      <Trophy className="text-amber-300" size={20} /><span>{completed} / {lessons.length} مكتمل</span><div className="h-1.5 min-w-16 flex-1 rounded-full bg-white/10 overflow-hidden"><div className="h-full bg-cyan-300" style={{ width: `${completed / lessons.length * 100}%` }} /></div><span className="text-xs">50 XP لأول إتمام · بلا مكافأة مكررة</span>
+    <section className="grid grid-cols-[auto_1fr] items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
+      <Trophy className="shrink-0 text-amber-300" size={20} /><span className="shrink-0">{t('lit.completed').replace('{done}', String(completed)).replace('{total}', String(lessons.length))}</span><div className="col-span-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden"><div className="h-full bg-cyan-300" style={{ width: `${completed / lessons.length * 100}%` }} /></div><span className="col-span-2 text-xs">{t('lit.xp')}</span>
     </section>
-    <p className="text-xs leading-6 text-slate-400">المستويات تقدير تعليمي وليست شهادة CEFR. التقدم والمسودات محفوظة على هذا المتصفح؛ نقاط XP تستخدم سجل المنصة. {storageError && <strong className="text-amber-200">تعذر الحفظ المحلي. لا تغلق الصفحة قبل نسخ مسودتك.</strong>}</p>
+    <p className="text-xs leading-6 text-slate-400">{t('lit.progressNote')} {storageError && <strong className="text-amber-200">{t('lit.storageError')}</strong>}</p>
     {current ? <>
-      <button className={button} onClick={() => setActive(null)}><span className="flex items-center gap-2"><ArrowLeft size={16} />العودة إلى مسار {current.level}</span></button>
+      <button className={button} onClick={() => setActive(null)}><span className="flex items-center gap-2"><ArrowLeft size={16} className={dir === 'rtl' ? 'rotate-180' : ''} aria-hidden="true" />{t('lit.back').replace('{level}', current.level)}</span></button>
       <article className={panel}>
-        <img src={current.image} alt={`صورة سياقية لدرس ${current.titleAr}`} className="h-48 w-full rounded-2xl object-cover sm:h-64" />
-        <div className="mt-4 flex items-center gap-2 text-xs text-cyan-200"><span>{current.level}</span><span>·</span><span>درس {lessons.indexOf(current) + 1}</span></div>
-        <h2 className="mt-2 text-2xl font-black text-white">{txText(appText, current.titleAr)}</h2><p dir="ltr" lang="en" className="mt-1 text-left text-sm text-slate-400">{current.title}</p>
+        <img src={current.image} alt={t('lit.lessonImage').replace('{title}', lang === 'en' ? current.title : txText(appText, current.titleAr))} className="h-48 w-full rounded-2xl object-cover sm:h-64" />
+        <div className="mt-4 flex items-center gap-2 text-xs text-cyan-200"><span>{current.level}</span><span>·</span><span>{t('lit.lessonNumber').replace('{count}', String(lessons.indexOf(current) + 1))}</span></div>
+        <h2 className="mt-2 text-2xl font-black text-white">{lang === 'en' ? current.title : txText(appText, current.titleAr)}</h2><p dir="ltr" lang="en" className="mt-1 text-left text-sm text-slate-400">{current.title}</p>
       </article>
       {reading ? <ReadingWorkshop key={current.id} lesson={current as LiteracyReading} done={saved.done.includes(current.id)} onComplete={() => complete(current.id)} /> : <WritingWorkshop key={current.id} lesson={current as LiteracyWriting} done={saved.done.includes(current.id)} draft={saved.drafts[current.id] || ''} onDraft={text => setSaved(p => ({ ...p, drafts: { ...p.drafts, [current.id]: text } }))} onComplete={() => complete(current.id)} />}
-      <button className={`${button} w-full`} onClick={() => { const next = lessons[(lessons.indexOf(current) + 1) % lessons.length]; setLevel(next.level); setActive(next.id); window.scrollTo({ top: 0, behavior: 'instant' }); }}>الدرس التالي <ChevronLeft size={15} className="inline" /></button>
+      <button className={`${button} w-full`} onClick={() => { const next = lessons[(lessons.indexOf(current) + 1) % lessons.length]; setLevel(next.level); setActive(next.id); window.scrollTo({ top: 0, behavior: 'instant' }); }}>{t('lit.next')} <ChevronLeft size={15} className={`inline ${dir === 'ltr' ? 'rotate-180' : ''}`} aria-hidden="true" /></button>
     </> : <>
-      <nav aria-label="مستوى التعلم" className="grid grid-cols-6 gap-1.5" dir="ltr">{LITERACY_LEVELS.map(l => <button key={l} onClick={() => { setLevel(l); setQuery(''); }} aria-pressed={level === l} className={`rounded-xl py-3 text-sm font-bold ${level === l ? 'bg-cyan-200 text-slate-950' : 'border border-white/10 bg-white/5 text-slate-300'}`}>{l}</button>)}</nav>
-      <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-xl font-black text-white">{level} · {reading ? 'مكتبة القراءة' : 'ورش الكتابة'}</h2><p className="text-xs text-slate-400 mt-1">اختر أي درس. كل المستويات متاحة.</p></div><label className="flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2"><Search size={16} className="text-slate-400" /><input aria-label="ابحث عن درس" placeholder="ابحث عن درس..." value={query} onChange={e => setQuery(e.target.value)} className="w-40 bg-transparent text-sm text-white outline-none" /></label></div>
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{visible.map((l, i) => <button key={l.id} onClick={() => { setActive(l.id); window.scrollTo({ top: 0, behavior: 'instant' }); }} className="group overflow-hidden rounded-3xl border border-white/10 bg-[#121629] text-right hover:border-cyan-300/50 focus-visible:outline-2 focus-visible:outline-cyan-300">
-        <div className="relative"><img loading="lazy" src={l.image} alt={`صورة سياقية: ${l.titleAr}`} className="h-40 w-full object-cover" /><span className="absolute left-3 top-3 rounded-lg bg-slate-950/85 px-2 py-1 text-xs text-white">{l.level} · {String(i + 1).padStart(2, '0')}</span>{saved.done.includes(l.id) && <span className="absolute right-3 top-3 rounded-full bg-emerald-300 p-1 text-slate-950"><Check size={16} /></span>}</div>
-        <div className="p-5 space-y-2"><h3 className="text-lg font-bold text-white">{txText(appText, l.titleAr)}</h3><p className="text-xs text-slate-400" dir="ltr" lang="en">{l.title}</p><div className="flex justify-between pt-3 text-xs text-cyan-200"><span>3 أنشطة · تغذية راجعة فورية</span><span>{saved.done.includes(l.id) ? 'مراجعة' : 'ابدأ الدرس'} ←</span></div></div>
-      </button>)}</div>{!visible.length && <p className={panel}>لا توجد نتيجة بهذا العنوان. جرّب كلمة أخرى.</p>}
+      <nav aria-label={t('lit.learningLevel')} className="grid grid-cols-6 gap-1.5" dir="ltr">{LITERACY_LEVELS.map(l => <button key={l} onClick={() => { setLevel(l); setQuery(''); }} aria-pressed={level === l} className={`rounded-xl py-3 text-sm font-bold ${level === l ? 'bg-cyan-200 text-slate-950' : 'border border-white/10 bg-white/5 text-slate-300'}`}>{l}</button>)}</nav>
+      <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-xl font-black text-white">{level} · {reading ? t('lit.readingLibrary') : t('lit.writingLibrary')}</h2><p className="text-xs text-slate-400 mt-1">{t('lit.choose')}</p></div><label className="flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2"><Search size={16} className="text-slate-400" /><input aria-label={t('lit.search')} placeholder={t('lit.searchPlaceholder')} value={query} onChange={e => setQuery(e.target.value)} className="w-40 bg-transparent text-sm text-white outline-none" /></label></div>
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{visible.map((l, i) => <button key={l.id} onClick={() => { setActive(l.id); window.scrollTo({ top: 0, behavior: 'instant' }); }} className="group overflow-hidden rounded-3xl border border-white/10 bg-[#121629] text-start hover:border-cyan-300/50 focus-visible:outline-2 focus-visible:outline-cyan-300">
+        <div className="relative"><img loading="lazy" src={l.image} alt={t('lit.cardImage').replace('{title}', lang === 'en' ? l.title : txText(appText, l.titleAr))} className="h-40 w-full object-cover" /><span className="absolute left-3 top-3 rounded-lg bg-slate-950/85 px-2 py-1 text-xs text-white">{l.level} · {String(i + 1).padStart(2, '0')}</span>{saved.done.includes(l.id) && <span className="absolute right-3 top-3 rounded-full bg-emerald-300 p-1 text-slate-950"><Check size={16} /></span>}</div>
+        <div className="p-5 space-y-2"><h3 className="text-lg font-bold text-white">{lang === 'en' ? l.title : txText(appText, l.titleAr)}</h3><p className="text-xs text-slate-400" dir="ltr" lang="en">{l.title}</p><div className="flex justify-between pt-3 text-xs text-cyan-200"><span>{t('lit.activities')}</span><span>{saved.done.includes(l.id) ? t('lit.review') : t('lit.start')} <ArrowLeft size={14} className={`inline ${dir === 'ltr' ? 'rotate-180' : ''}`} aria-hidden="true" /></span></div></div>
+      </button>)}</div>{!visible.length && <p className={panel}>{t('lit.noResults')}</p>}
     </>}
-    <details className="rounded-2xl border border-white/10 p-4 text-xs leading-6 text-slate-400"><summary className="cursor-pointer text-slate-200">عن المحتوى والصور والتقييم</summary><p>النصوص والمواقف والنماذج مؤلفة للتدريب، وليست أخبارا أو دراسات أو قصص أشخاص موثقة. لا نعرض تقييم مستوى آليا لهذه الأنشطة. أنشطة الكتابة الحرة تتضمن مراجعة ذاتية؛ نجاح الفحوص الشكلية لا يعني صحة المعنى أو القواعد.</p></details>
+    <details className="rounded-2xl border border-white/10 p-4 text-xs leading-6 text-slate-400"><summary className="cursor-pointer text-slate-200">{t('lit.about')}</summary><p>{t('lit.contentNote')}</p></details>
   </div>;
 }
 function Feedback({ correct, children }: { correct: boolean; children: React.ReactNode }) { return <div role="status" className={`rounded-xl p-4 text-sm leading-7 ${correct ? 'bg-emerald-300/10 text-emerald-200' : 'bg-amber-300/10 text-amber-200'}`}>{children}</div>; }
