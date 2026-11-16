@@ -2782,5 +2782,7 @@
   "ae.expired": "Deine Sitzung ist abgelaufen. Melde dich erneut an.",
   "ae.incomplete": "Einige erforderliche Angaben fehlen oder sind ungültig.",
   "ae.retry": "Ein unerwarteter Fehler ist aufgetreten. Versuche es erneut.",
-  "ae.offline": "Der Server ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut."
+  "ae.offline": "Der Server ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut.",
+  "auth.otpUnavailable": "Die E-Mail-Bestätigung ist nicht verfügbar. Dein Bestätigungsstatus wurde nicht geändert.",
+  "auth.otpResendUnavailable": "Bestätigungscodes können derzeit nicht erneut gesendet werden. Es wurde kein Code gesendet."
 }
