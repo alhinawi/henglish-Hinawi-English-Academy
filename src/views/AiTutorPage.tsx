@@ -1,3 +1,4 @@
+import { copyText } from '../services/copyText';
 import { LessonCorrection } from '../components/LessonCorrection';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - AI ACADEMY CHAT STUDIO (AiTutorPage)
@@ -91,6 +92,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
   const [editingSessionId, setEditingSessionId] = useState<string | null>(null);
   const [editSessionTitle, setEditSessionTitle] = useState('');
   const [copiedMsgId, setCopiedMsgId] = useState<string | null>(null);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<any>(null);
@@ -253,8 +255,10 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
     setEditingSessionId(null);
   };
 
-  const handleCopyMessage = (msgId: string, text: string) => {
-    navigator.clipboard.writeText(text);
+  const handleCopyMessage = async (msgId: string, text: string) => {
+    setCopiedMsgId(null);
+    setCopyFailed(false);
+    if (!(await copyText(text))) { setCopyFailed(true); return; }
     playSound('click');
     setCopiedMsgId(msgId);
     setTimeout(() => setCopiedMsgId(null), 2000);
@@ -406,6 +410,8 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
   return (
     <div className="space-y-6 pb-20 text-right max-w-6xl mx-auto px-2 sm:px-4">
       
+      {copyFailed && <p role="status" className="fixed bottom-4 inset-x-4 z-50 mx-auto max-w-lg rounded-xl border border-amber-300/30 bg-[#171320] p-4 text-sm text-amber-100 shadow-xl">{t('copy.failed')}</p>}
+
       {/* 1. Header Banner */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-8 bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] shadow-2xl">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
