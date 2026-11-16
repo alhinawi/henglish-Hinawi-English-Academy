@@ -1,4 +1,4 @@
-import { ONLINE_IMAGES } from './imageAssets';
+
 
 export interface CourseItem {
   id: string;
@@ -33,7 +33,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     isFlagship: true,
     tag: 'أكاديمية الجرامر 👑',
     icon: '',
-    imageUrl: ONLINE_IMAGES.courses.futurePerfect,
+    imageUrl: '/images/catalog/future-perfect.webp',
     route: 'courses/grammar/future-perfect',
     ctaLabel: 'ابدأ دراسة الكورس (٨ دروس)',
   },
@@ -47,7 +47,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     countLabel: 'أكثر من ٥٠ قاعدة',
     tag: 'الأساس الكامل',
     icon: '',
-    imageUrl: ONLINE_IMAGES.courses.conditionals,
+    imageUrl: '/images/catalog/grammar-academy.webp',
     route: 'courses/grammar',
     ctaLabel: 'تصفح الأكاديمية',
   },
@@ -61,7 +61,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     countLabel: 'أكثر من ١٥٠٠ كلمة',
     tag: 'بناء الحصيلة اللغوية',
     icon: '',
-    imageUrl: ONLINE_IMAGES.courses.techEnglish,
+    imageUrl: '/images/catalog/vocabulary-academy.webp',
     route: 'vocabulary',
     ctaLabel: 'ابدأ حفظ الكلمات',
   },
@@ -75,7 +75,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     countLabel: '٦ مقاطع',
     tag: 'مهارة الاستماع',
     icon: '',
-    imageUrl: ONLINE_IMAGES.courses.businessWriting,
+    imageUrl: '/images/catalog/listening-academy.webp',
     route: 'listening',
     ctaLabel: 'ابدأ التدريب',
   },
