@@ -7,6 +7,7 @@ import {
   DialogueOption 
 } from '../data/realLifeSimulationsData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { Interactive3DWorld } from '../components/Interactive3DWorld';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
@@ -44,6 +45,7 @@ const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>
 };
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
+  const { t } = useLanguage();
   const appText = useAppTextMap('realLifeSimulationsData');
   const [selectedScenarioId, setSelectedScenarioId] = useState<string | null>(() => {
     try {
@@ -140,19 +142,19 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             <div className="max-w-2xl space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ff4f9a]/20 text-[#ff8bb9] border border-[#ff4f9a]/40 shadow-sm">
                 <Compass className="w-4 h-4" />
-                <span>IMMERSIVE LIVING SIMULATOR • محاكي الإنجليزية الواقعية التفاعلي</span>
+                <span>IMMERSIVE LIVING SIMULATOR • {t('rle.badge')}</span>
               </div>
 
               <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-                إنجليزي المواقف الحقيقية والحياة اليومية
+                {t('rle.heroTitle')}
               </h1>
 
               <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-                مارس الإنجليزية في مواقفك اليومية دون خوف: محادثات حية ومتفرعة في المطار، الفندق، المطعم، المستشفى، ومقابلات العمل، مع نطق بشري حي واختبارات لغوية ذكية.
+                {t('rle.heroBody')}
               </p>
 
               <p className="text-xs text-[#41e7ff] font-bold">
-                اختر موقفاً واحداً لتفتح محادثته وحدها في شاشة تدريب مركزة.
+                {t('rle.heroNote')}
               </p>
             </div>
 
@@ -165,7 +167,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 }}
                 className="px-5 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
               >
-                <span>{viewMode === 'simulator' ? 'استكشاف العالم ثلاثي الأبعاد 3D' : 'العودة لقائمة المواقف'}</span>
+                <span>{viewMode === 'simulator' ? t('rle.explore3d') : t('rle.backToList')}</span>
               </button>
             </div>
           </div>
@@ -184,11 +186,11 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           {/* Category Filter Pills */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar">
             {[
-              { id: 'all', label: 'جميع البيئات' },
-              { id: 'travel', label: 'السفر والمطارات' },
-              { id: 'hospitality', label: 'المطاعم والضيافة' },
-              { id: 'healthcare', label: 'الرعاية الصحية' },
-              { id: 'professional', label: 'الوظائف والشركات' },
+              { id: 'all', label: t('rle.cat.all') },
+              { id: 'travel', label: t('rle.cat.travel') },
+              { id: 'hospitality', label: t('rle.cat.hospitality') },
+              { id: 'healthcare', label: t('rle.cat.healthcare') },
+              { id: 'professional', label: t('rle.cat.professional') },
             ].map(cat => (
               <button
                 key={cat.id}
@@ -227,7 +229,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 </div>
 
                 <div className="text-[11px] text-[#41e7ff] font-semibold flex items-center justify-between pt-2 border-t border-white/10">
-                  <span>{sc.turns.length} محطات حوارية</span>
+                  <span>{sc.turns.length} {t('rle.stops')}</span>
                   <span className="text-[#c4ff55]">+{sc.rewardXp} XP</span>
                 </div>
               </button>
@@ -256,7 +258,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             className="shrink-0 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 text-white text-xs font-bold cursor-pointer flex items-center gap-1.5"
           >
             <ArrowRight className="w-4 h-4" />
-            <span>كل المواقف</span>
+            <span>{t('rle.allScenarios')}</span>
           </button>
 
           <div className="flex-1 min-w-0">
@@ -298,7 +300,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             </div>
 
             <div className="absolute bottom-4 right-6 left-6">
-              <span className="text-xs text-[#ffd166] font-bold">المشهد الحواري {currentTurnIdx + 1} من {scenario.turns.length}</span>
+              <span className="text-xs text-[#ffd166] font-bold">{t('rle.scene')} {currentTurnIdx + 1} {t('rle.of')} {scenario.turns.length}</span>
               <h2 className="text-xl sm:text-2xl font-black text-white">{txText(appText, scenario.titleAr)}</h2>
             </div>
           </div>
@@ -324,10 +326,10 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                       speakEnglish(currentTurn.textEn);
                     }}
                     className="p-2 rounded-xl bg-white/10 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-xs font-bold"
-                    title="استمع لنطق المتحدث الصوتي"
+                    title={t('rle.listenSpeaker')}
                   >
                     <Volume2 className="w-4 h-4" />
-                    <span>تشغيل الصوت</span>
+                    <span>{t('rle.playAudio')}</span>
                   </button>
                 </div>
 
@@ -344,7 +346,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             {currentTurn.grammarTipAr && (
               <div className="p-4 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/30 flex items-start gap-3 text-xs text-[#ffd166]">
                 <Sparkles className="w-4 h-4 shrink-0 mt-0.5" />
-                <span><strong className="font-bold">نصيحة الحوار: </strong>{currentTurn.grammarTipAr}</span>
+                <span><strong className="font-bold">{t('rle.tipLabel')}: </strong>{currentTurn.grammarTipAr}</span>
               </div>
             )}
 
@@ -352,7 +354,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             <div className="space-y-3">
               <h4 className="text-xs font-bold text-[#41e7ff] flex items-center gap-1.5">
                 <MessageSquare className="w-3.5 h-3.5" />
-                <span>اختر الرد الأنسب والأكثر لباقة في هذا الموقف:</span>
+                <span>{t('rle.chooseReply')}</span>
               </h4>
 
               <div className="space-y-2.5">
@@ -404,7 +406,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 className="px-4 py-2.5 rounded-xl text-xs font-bold text-[#b9b6d5] hover:text-white cursor-pointer flex items-center gap-1.5"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
-                <span>إعادة المحادثة من البداية</span>
+                <span>{t('rle.restartDialogue')}</span>
               </button>
 
               <button
@@ -412,7 +414,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 disabled={!selectedOption}
                 className="px-8 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all flex items-center gap-2"
               >
-                <span>{currentTurnIdx < scenario.turns.length - 1 ? 'متابعة الحوار' : 'إنهاء السيناريو وحصد النقاط'}</span>
+                <span>{currentTurnIdx < scenario.turns.length - 1 ? t('rle.continueDialogue') : t('rle.finishScenario')}</span>
               </button>
             </div>
           </div>
@@ -425,16 +427,16 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-black text-white">تهانينا! أتممت سيناريو {txText(appText, scenario.titleAr)} بنجاح</h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">{t('rle.donePre')} {txText(appText, scenario.titleAr)} {t('rle.donePost')}</h2>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
-              لقد مارست الحوار بنجاح كمتحدث أصلي وتجاوزت التحديات اللغوية للموقف.
+              {t('rle.doneBody')}
             </p>
           </div>
 
           <div className="p-6 rounded-2xl bg-black/40 border border-white/10 max-w-md mx-auto space-y-2">
-            <div className="text-xs text-[#b9b6d5]">إجمالي مكافأة النقاط:</div>
+            <div className="text-xs text-[#b9b6d5]">{t('rle.totalReward')}:</div>
             <div className="text-4xl font-black text-[#ffd166] font-mono" dir="ltr">+{scenario.rewardXp + totalScore} XP</div>
-            <div className="text-xs text-[#c4ff55]">تم تسجيل الإنجاز في ملفك الأكاديمي</div>
+            <div className="text-xs text-[#c4ff55]">{t('rle.recorded')}</div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
@@ -443,7 +445,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               className="w-full sm:w-auto px-6 py-3 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold border border-white/10 cursor-pointer flex items-center justify-center gap-2"
             >
               <RotateCcw className="w-4 h-4" />
-              <span>إعادة تشغيل المحاكاة</span>
+              <span>{t('rle.replay')}</span>
             </button>
 
             <button
@@ -451,7 +453,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               className="w-full sm:w-auto px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
             >
               <ArrowRight className="w-4 h-4" />
-              <span>العودة لقائمة المواقف</span>
+              <span>{t('rle.backToList')}</span>
             </button>
           </div>
         </section>
@@ -461,8 +463,8 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div>
-            <span className="text-xs font-bold text-[#ffd166]">قاموس النجاة للموقف (Survival Glossary)</span>
-            <h3 className="text-xl font-black text-white">أهم الكلمات والعبارات التلقائية لموقف {txText(appText, scenario.titleAr)}</h3>
+            <span className="text-xs font-bold text-[#ffd166]">{t('rle.glossaryBadge')}</span>
+            <h3 className="text-xl font-black text-white">{t('rle.glossaryTitle')} {txText(appText, scenario.titleAr)}</h3>
           </div>
         </div>
 
@@ -486,7 +488,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   speakEnglish(vocab.en);
                 }}
                 className="p-2 rounded-lg bg-white/10 hover:bg-[#41e7ff] text-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer"
-                title="استمع للنطق"
+                title={t('rle.listenPronunciation')}
               >
                 <Volume2 className="w-4 h-4" />
               </button>
