@@ -1,3 +1,4 @@
+import { useLanguage } from '../i18n/LanguageContext';
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { 
   AuthSessionState, 
@@ -41,6 +42,7 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { t } = useLanguage();
   const [session, setSession] = useState<AuthSessionState>(() => getSavedAuthSession());
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
@@ -121,7 +123,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setSession(result.session);
       return { success: true };
     }
-    return { success: false, error: result.error || 'فشل تسجيل الدخول' };
+    return { success: false, error: result.error || t('am.errLogin') };
   };
 
   const register = async (params: SignUpParams) => {
@@ -132,7 +134,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setSession(result.session);
       return { success: true };
     }
-    return { success: false, error: result.error || 'فشل إنشاء الحساب' };
+    return { success: false, error: result.error || t('am.errCreate') };
   };
 
   const logout = async () => {
