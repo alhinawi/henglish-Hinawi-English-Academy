@@ -1930,7 +1930,7 @@
   "qb.loadError": "Fehler beim Laden der Fragendatenbank. Bitte Seite neu laden.",
   "qb.loading": "Die komplette Fragendatenbank wird geladen...",
   "qb.bankInfoPre": "Die Datenbank hat",
-  "qb.bankInfoPost": "geprüfte Fragen - jede Ziehung liefert einen anderen Satz, und keine Frage wiederholt sich, bis alle Fragen des Filters verbraucht sind.",
+  "qb.bankInfoPost": "Übungsfragen. Wähle Fragen mit den Filtern aus.",
   "qb.countLabel": "Fragen:",
   "qb.matching": "Fragen passen zum Filter",
   "qb.drawNew": "Neue Fragen ziehen",

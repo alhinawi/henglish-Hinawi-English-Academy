@@ -1930,7 +1930,7 @@
   "qb.loadError": "Failed to load the question bank. Try refreshing the page.",
   "qb.loading": "Loading the full question bank...",
   "qb.bankInfoPre": "The bank has",
-  "qb.bankInfoPost": "verified questions - every draw serves a different set, and no question repeats until you exhaust every question in the filter.",
+  "qb.bankInfoPost": "practice questions. Use the filters to choose questions.",
   "qb.countLabel": "Questions:",
   "qb.matching": "questions match the filter",
   "qb.drawNew": "Draw new questions",
