@@ -2511,5 +2511,20 @@
   "lit.about": "About the content, images, and assessment",
   "lit.contentNote": "Texts, situations, and models are written for practice, not news, studies, or verified personal stories. These activities do not provide automated level assessments. Free-writing activities include self-review; passing format checks does not mean the meaning or grammar is correct.",
   "lit.readingBadge": "READING ROOM",
-  "lit.writingBadge": "WRITING STUDIO"
+  "lit.writingBadge": "WRITING STUDIO",
+  "vs.close": "Close",
+  "vs.title": "Voice settings",
+  "vs.intro": "Choose a voice preset and playback speed. Available playback depends on the speech service or your browser.",
+  "vs.female": "Female voices",
+  "vs.male": "Male voices",
+  "vs.us": "American accent",
+  "vs.uk": "British accent",
+  "vs.selected": "Selected",
+  "vs.stop": "Stop audio",
+  "vs.preview": "Preview this voice preset",
+  "vs.speed": "Speaking speed:",
+  "vs.muted": "Muted",
+  "vs.enabled": "Sound on",
+  "vs.done": "Done",
+  "vs.all": "All voices"
 }
