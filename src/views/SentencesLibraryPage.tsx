@@ -543,6 +543,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG-u-nu-latn')}</span>
           </div>
           <SentenceCard onLearningChange={handleLearningChange}
+            key={dailySentence.id}
             sentence={dailySentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
           />
@@ -560,6 +561,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <span className="text-xs font-mono">Mastery Expression</span>
           </div>
           <SentenceCard onLearningChange={handleLearningChange}
+            key={weeklySentence.id}
             sentence={weeklySentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
           />
@@ -580,6 +582,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </button>
           </div>
           <SentenceCard onLearningChange={handleLearningChange}
+            key={randomSentence.id}
             sentence={randomSentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
           />
@@ -711,7 +714,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </button>
           ) : (
             <div className="max-w-2xl mx-auto text-right">
-              <SentenceCard onLearningChange={handleLearningChange} sentence={randomSentence} />
+              <SentenceCard key={randomSentence.id} onLearningChange={handleLearningChange} sentence={randomSentence} />
             </div>
           )}
 
