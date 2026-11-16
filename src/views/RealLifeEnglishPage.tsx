@@ -43,7 +43,14 @@ const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>
 };
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
-  const [selectedScenarioId, setSelectedScenarioId] = useState<string | null>(null);
+  const [selectedScenarioId, setSelectedScenarioId] = useState<string | null>(() => {
+    try {
+      const requested = sessionStorage.getItem('henglish-world-scenario');
+      sessionStorage.removeItem('henglish-world-scenario');
+      if (REAL_LIFE_SCENARIOS.some(item => item.id === requested)) return requested;
+    } catch { /* Storage is optional. */ }
+    return null;
+  });
   const [activeCategory, setActiveCategory] = useState<string>('all');
   const [viewMode, setViewMode] = useState<'simulator' | '3d-world'>('simulator');
 
