@@ -51,7 +51,6 @@ export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
         <img src={current.image} alt={`صورة سياقية لدرس ${current.titleAr}`} className="h-48 w-full rounded-2xl object-cover sm:h-64" />
         <div className="mt-4 flex items-center gap-2 text-xs text-cyan-200"><span>{current.level}</span><span>·</span><span>درس {lessons.indexOf(current) + 1}</span></div>
         <h2 className="mt-2 text-2xl font-black text-white">{current.titleAr}</h2><p dir="ltr" lang="en" className="mt-1 text-left text-sm text-slate-400">{current.title}</p>
-        <p className="mt-3 text-[11px] text-slate-400">الصورة: Unsplash · صورة سياقية وليست توثيقا للشخصيات. <a className="text-cyan-200 underline" href={current.imageSource} target="_blank" rel="noreferrer">المصدر الأصلي</a></p>
       </article>
       {reading ? <ReadingWorkshop key={current.id} lesson={current as LiteracyReading} done={saved.done.includes(current.id)} onComplete={() => complete(current.id)} /> : <WritingWorkshop key={current.id} lesson={current as LiteracyWriting} done={saved.done.includes(current.id)} draft={saved.drafts[current.id] || ''} onDraft={text => setSaved(p => ({ ...p, drafts: { ...p.drafts, [current.id]: text } }))} onComplete={() => complete(current.id)} />}
       <button className={`${button} w-full`} onClick={() => { const next = lessons[(lessons.indexOf(current) + 1) % lessons.length]; setLevel(next.level); setActive(next.id); window.scrollTo({ top: 0, behavior: 'instant' }); }}>الدرس التالي <ChevronLeft size={15} className="inline" /></button>
@@ -63,7 +62,7 @@ export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
         <div className="p-5 space-y-2"><h3 className="text-lg font-bold text-white">{l.titleAr}</h3><p className="text-xs text-slate-400" dir="ltr" lang="en">{l.title}</p><div className="flex justify-between pt-3 text-xs text-cyan-200"><span>3 أنشطة · تغذية راجعة فورية</span><span>{saved.done.includes(l.id) ? 'مراجعة' : 'ابدأ الدرس'} ←</span></div></div>
       </button>)}</div>{!visible.length && <p className={panel}>لا توجد نتيجة بهذا العنوان. جرّب كلمة أخرى.</p>}
     </>}
-    <details className="rounded-2xl border border-white/10 p-4 text-xs leading-6 text-slate-400"><summary className="cursor-pointer text-slate-200">عن المحتوى والصور والتقييم</summary><p>النصوص والمواقف والنماذج مؤلفة للتدريب، وليست أخبارا أو دراسات أو قصص أشخاص موثقة. الصور مرخصة عبر Unsplash ومصدر كل صورة داخل درسها. لا نعرض تقييم مستوى آليا لهذه الأنشطة. أنشطة الكتابة الحرة تتضمن مراجعة ذاتية؛ نجاح الفحوص الشكلية لا يعني صحة المعنى أو القواعد.</p></details>
+    <details className="rounded-2xl border border-white/10 p-4 text-xs leading-6 text-slate-400"><summary className="cursor-pointer text-slate-200">عن المحتوى والصور والتقييم</summary><p>النصوص والمواقف والنماذج مؤلفة للتدريب، وليست أخبارا أو دراسات أو قصص أشخاص موثقة. لا نعرض تقييم مستوى آليا لهذه الأنشطة. أنشطة الكتابة الحرة تتضمن مراجعة ذاتية؛ نجاح الفحوص الشكلية لا يعني صحة المعنى أو القواعد.</p></details>
   </div>;
 }
 function Feedback({ correct, children }: { correct: boolean; children: React.ReactNode }) { return <div role="status" className={`rounded-xl p-4 text-sm leading-7 ${correct ? 'bg-emerald-300/10 text-emerald-200' : 'bg-amber-300/10 text-amber-200'}`}>{children}</div>; }
