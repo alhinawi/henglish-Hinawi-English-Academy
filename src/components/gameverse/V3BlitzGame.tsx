@@ -7,6 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { GameHud } from './GameHud';
 import { GameResultsModal, AnswerAuditItem } from './GameResultsModal';
 import { VERB_TOOLKIT } from '../../data/verbsData';
+import { txText, useAppTextMap } from '../../services/contentI18nService';
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration, speakEnglish } from '../../utils/audio';
 import { Zap, Volume2, Timer } from 'lucide-react';
@@ -16,6 +17,7 @@ interface V3BlitzGameProps {
 }
 
 export const V3BlitzGame: React.FC<V3BlitzGameProps> = ({ onExit }) => {
+  const appText = useAppTextMap('verbsData');
   const [currentVerbIndex, setCurrentVerbIndex] = useState(0);
   const [options, setOptions] = useState<string[]>([]);
   const [score, setScore] = useState(0);
@@ -135,7 +137,7 @@ export const V3BlitzGame: React.FC<V3BlitzGameProps> = ({ onExit }) => {
     setAnswersAudit(prev => [
       ...prev,
       {
-        question: `V1: ${currentVerb.v1} (${currentVerb.meaningAr})`,
+        question: `V1: ${currentVerb.v1} (${txText(appText, currentVerb.meaningAr)})`,
         isCorrect,
         userAnswer: selected,
         correctAnswer: currentVerb.v3,

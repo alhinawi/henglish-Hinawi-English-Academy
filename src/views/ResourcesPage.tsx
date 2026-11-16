@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { DOWNLOADABLE_RESOURCES, LearningResource } from '../data/resourcesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound } from '../utils/audio';
 import { Download, Printer, Sparkles } from 'lucide-react';
 
 export const ResourcesPage: React.FC = () => {
+  const appText = useAppTextMap('resourcesData');
   const [downloadedIds, setDownloadedIds] = useState<string[]>([]);
   const [previewResource, setPreviewResource] = useState<LearningResource | null>(DOWNLOADABLE_RESOURCES[0]);
 
@@ -80,7 +82,7 @@ export const ResourcesPage: React.FC = () => {
               <div className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
-                    {res.badge}
+                    {txText(appText, res.badge)}
                   </span>
                   <span className="text-xs text-[#b9b6d5] font-semibold">
                     {res.pages} صفحات
@@ -88,14 +90,14 @@ export const ResourcesPage: React.FC = () => {
                 </div>
 
                 <h3 className="text-lg font-black text-white leading-snug">
-                  {res.title}
+                  {txText(appText, res.title)}
                 </h3>
                 <span className="en block text-xs font-bold text-[#41e7ff]">
                   {res.subtitle}
                 </span>
 
                 <p className="text-xs text-[#b9b6d5] leading-relaxed line-clamp-3">
-                  {res.description}
+                  {txText(appText, res.description)}
                 </p>
               </div>
 
@@ -129,7 +131,7 @@ export const ResourcesPage: React.FC = () => {
                 LIVE DOCUMENT PREVIEW
               </span>
               <h3 className="text-xl font-black text-white mt-0.5">
-                {previewResource.title}
+                {txText(appText, previewResource.title)}
               </h3>
             </div>
             <button
