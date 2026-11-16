@@ -2477,5 +2477,20 @@
   "ra.explanation": "التفسير:",
   "ra.questionCount": "عدد الأسئلة: {count}",
   "ra.wordCount": "عدد الكلمات: {count}",
-  "ra.category": "نص تعليمي أصلي"
+  "ra.category": "نص تعليمي أصلي",
+  "vs.close": "إغلاق",
+  "vs.title": "إعدادات الصوت",
+  "vs.intro": "اختر إعداد الصوت وسرعة النطق. يعتمد الصوت المتاح على خدمة النطق أو متصفحك.",
+  "vs.female": "أصوات حريمي (Female)",
+  "vs.male": "أصوات رجالي (Male)",
+  "vs.us": "لكنة أمريكية (American)",
+  "vs.uk": "لكنة بريطانية (British)",
+  "vs.selected": "مُفعّل الآن",
+  "vs.stop": "إيقاف الصوت",
+  "vs.preview": "استمع لإعداد الصوت",
+  "vs.speed": "سرعة النطق:",
+  "vs.muted": "صوت مكتوم",
+  "vs.enabled": "الصوت مفعل",
+  "vs.done": "حفظ واعتماد",
+  "vs.all": "جميع الأصوات"
 }
