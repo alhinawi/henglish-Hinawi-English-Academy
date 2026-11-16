@@ -850,6 +850,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     const lookTarget = new THREE.Vector3();
     const direction = new THREE.Vector3();
     // Each lot is a 6m square and can rotate. Test in the lot's own coordinates.
+    const hitsLamp = (x: number, z: number) => lampPositions.some(([lx, lz]) => Math.hypot(x - lx, z - lz) < 0.45);
     const insideBuilding = (x: number, z: number, margin = 0.45) => LOCATIONS.some(loc => {
       const angle = loc.position[0] === 0 && loc.position[2] === 0 ? 0 : Math.atan2(-loc.position[0], -loc.position[2]) + Math.PI;
       const dx = x - loc.position[0], dz = z - loc.position[2];
@@ -882,8 +883,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       const nextX = Math.max(-25, Math.min(25, player.position.x + velocity.x * delta));
       const nextZ = Math.max(-25, Math.min(25, player.position.z + velocity.z * delta));
       // Slide along walls instead of stopping both axes or entering a rotated corner.
-      if (!insideBuilding(nextX, player.position.z)) player.position.x = nextX; else velocity.x = 0;
-      if (!insideBuilding(player.position.x, nextZ)) player.position.z = nextZ; else velocity.z = 0;
+      if (!insideBuilding(nextX, player.position.z) && !hitsLamp(nextX, player.position.z)) player.position.x = nextX; else velocity.x = 0;
+      if (!insideBuilding(player.position.x, nextZ) && !hitsLamp(player.position.x, nextZ)) player.position.z = nextZ; else velocity.z = 0;
       const moved = player.position.distanceToSquared(previousPosition) > 0.000001;
       if (moved) {
         const targetAngle = Math.atan2(-velocity.x, -velocity.z);
@@ -892,6 +893,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
         player.rotation.y = playerAngle;
       }
       soundRef.current?.step(delta, moved && immersive);
+      assets.animatePerson(player, moved, delta);
       if (!reducedMotion) {
         pBody.position.y = moved ? 0.85 + Math.sin(t * 14) * 0.07 : 0.85;
         pShadowRing.scale.setScalar(1 + Math.sin(t * 2.2) * 0.07);
@@ -920,12 +922,19 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
       let foundNearby: WorldLocation | null = null;
       npcMarkers.forEach(({ mesh, loc, ring, body }, i) => {
+        const anchorX = loc.position[0] + 2.5, anchorZ = loc.position[2] + 3.2;
+        const approaching = player.position.distanceTo(mesh.position) < 6.5;
+        const pace = !reducedMotion && !approaching && immersive;
+        if (pace) {
+          const x = anchorX + Math.sin(t * 0.55 + i) * 0.7;
+          const z = anchorZ + Math.cos(t * 0.55 + i) * 0.35;
+          if (!insideBuilding(x, z)) { mesh.lookAt(x, 0, z); mesh.position.set(x, 0, z); }
+        }
+        assets.animatePerson(mesh, pace, delta);
         const dist = player.position.distanceTo(mesh.position);
         if (dist < 4.2) foundNearby = loc;
         if (dist < 6.5) {
           mesh.lookAt(player.position.x, 0, player.position.z);
-        } else if (!reducedMotion) {
-          mesh.rotation.y = Math.sin(t * 0.6 + i * 1.7) * 0.35;
         }
         if (!reducedMotion) {
           ring.scale.setScalar(1 + Math.sin(t * 2.4 + i) * 0.09);
