@@ -19,7 +19,7 @@ export const DOWNLOADABLE_RESOURCES: LearningResource[] = [
     description:
       "ملخص مركز في صفحة واحدة يجمع القاعدة الذهبية، حالات النفي والسؤال، فخ by the time، والمقارنة مع باقي الأزمنة.",
     pages: 1,
-    badge: "الأكثر تحميلاً",
+    badge: "مراجعة سريعة",
     downloadFilename: "hinawi-future-perfect-summary.txt",
     contentMarkdown: `==========================================================
 Henglish ACADEMY — FUTURE PERFECT CHEAT SHEET

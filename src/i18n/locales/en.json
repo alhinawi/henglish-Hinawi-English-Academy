@@ -2656,5 +2656,18 @@
   "sb.wrong": "The order is not quite right. Rearrange the words or check the hint.",
   "sb.check": "Check answer",
   "sb.next": "Next challenge",
-  "sb.count": "Challenge {current} of {total}"
+  "sb.count": "Challenge {current} of {total}",
+  "rs.chip": "LEARNING RESOURCES & PRINTABLES",
+  "rs.title": "Downloadable notes and worksheets",
+  "rs.intro": "Download revision notes, worksheets and verb tables as text files, or print this page for paper study.",
+  "rs.print": "Print this page",
+  "rs.downloaded": "Downloaded",
+  "rs.download": "Download file",
+  "rs.active": "Preview active",
+  "rs.preview": "Tap to preview",
+  "rs.previewTitle": "DOCUMENT PREVIEW",
+  "rs.pages": "{count} pages",
+  "rs.copy": "Download copy",
+  "rs.revision": "Quick revision",
+  "rs.page": "1 page"
 }
