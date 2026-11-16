@@ -1,0 +1,2426 @@
+[
+ {
+  "id": "q-grm2-014665",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She _____ as well stay at home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "can",
+   "will to",
+   "must",
+   "might"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: might as well.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014666",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We _____ rather you didn't smoke here.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would",
+   "will",
+   "can",
+   "should to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: would rather.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014667",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "You _____ better see a doctor.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would",
+   "had",
+   "should have",
+   "ought"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: had better.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014668",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They _____ to have left already.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "should have",
+   "must have to",
+   "ought",
+   "can"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: ought to have p.p.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014669",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I _____ say he is a genius.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "do to",
+   "have",
+   "am",
+   "would"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "I would say = تحفظ.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014670",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ to be a good player in his youth.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "used",
+   "was use",
+   "would be use",
+   "did"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: used to.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014671",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ visit us every Sunday when I was a child.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "would",
+   "can",
+   "must"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "would للعادة الماضية المتكررة.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014672",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I wonder if you _____ help me.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "can to",
+   "do",
+   "could",
+   "will to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "could للتهذيب.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014673",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced modality)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "You can't to be serious!",
+   "You can't being serious!",
+   "You can't have been serious now!",
+   "You can't be serious!"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: can't be.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014674",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced modality)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He was to have arrived yesterday.",
+   "He was to arrive have yesterday.",
+   "He had to have arrived yesterday going.",
+   "He was arrive yesterday."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "was to have + p.p. = كان من المفروض.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014675",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced modality)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It might to have been worse.",
+   "It might have been worse.",
+   "It might had been worse.",
+   "It might be been worse."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: might have been.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014676",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced modality)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She needn't bothered.",
+   "She didn't need have bothered.",
+   "She needn't have bothered.",
+   "She needn't to have bother."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: needn't have p.p.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014677",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced modality)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I dare to say you right.",
+   "I dared saying you're right.",
+   "I dare says you're right.",
+   "I dare say you're right."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: I dare say.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014678",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced modality)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "You'd better not be late.",
+   "You'd better don't be late.",
+   "You had better not to be late.",
+   "You'd better not being late."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: had better not + base.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014679",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Not until he left did she cry\" is a correct sentence.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "not until + انقلاب.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014680",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Hardly he had come when it rained\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Hardly had he come.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014681",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Were it not for you, I would be lost\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "لولا.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014682",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"I wish I would have a car now\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: I wish I had a car now.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014683",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"It is high time we left\" uses the past form for present meaning.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: high time + past.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014684",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"He is said to have been rich\" means he is rich now.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بالعكس: كان غني.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014685",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Be that as it may\" means despite that.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ده تعبير بمعنى مهما يكن.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014686",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Suppose I would win, what would happen?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Suppose I won.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014687",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"I'd rather you stayed\" means I prefer you to stay.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: would rather + past.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014688",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Rarely does he goes out\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Rarely does he go out.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014689",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Little did he know\" means he did not know.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "little did he know = ما كانش يعرف.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014690",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Had I known, I would told you\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: would have told.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014691",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The rumour turned _____ to be false.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "out",
+   "over",
+   "away"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: turn out.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014692",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "They called _____ the meeting due to illness.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "up",
+   "in on",
+   "off",
+   "back out"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "call off = يلغي.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014693",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He took _____ the business from his father.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on up",
+   "off",
+   "after",
+   "over"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: take over.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014694",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She's coming _____ with a cold.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "down",
+   "up",
+   "over",
+   "round"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "come down with = يمرض.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014695",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We need to cut _____ on sugar.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "down",
+   "up to",
+   "away"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: cut down on.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014696",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I can't keep _____ with all these changes.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "down",
+   "up",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: keep up with.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014697",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He backed _____ of the deal at the last minute.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "away",
+   "down",
+   "out"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: back out of.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014698",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The plan fell _____ because of lack of money.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "through",
+   "down",
+   "over",
+   "off"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: fall through.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014699",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Let's go _____ the details again.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "over",
+   "through to",
+   "away"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: go over.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014700",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She got _____ with the crime.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "over",
+   "away",
+   "out"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: get away with.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014701",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We should look _____ the matter carefully.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "up",
+   "out",
+   "after",
+   "into"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: look into.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014702",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He came _____ a lot of old photos in the attic.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "across",
+   "over",
+   "by up",
+   "along"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: come across.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014703",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I'll get back _____ you tomorrow.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "at",
+   "to",
+   "for",
+   "by"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: get back to.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014704",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The company is going to lay _____ 100 workers.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "out",
+   "up",
+   "off",
+   "down"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "lay off = يسرح.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014705",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "They put _____ a good fight.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "in off",
+   "on",
+   "down",
+   "up"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: put up a fight.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014706",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The rain held _____ the game.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "up",
+   "off",
+   "on",
+   "out"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "hold up = يعطل.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014707",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He passed _____ at the age of ninety.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "out",
+   "away",
+   "off",
+   "by"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "pass away = توفى.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014708",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She stood _____ for me when I was ill.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "by up",
+   "out",
+   "in",
+   "off"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: stand in for.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014709",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "It's hard to make _____ what he said.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "up",
+   "off",
+   "over",
+   "out"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "make out = يفهم.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014710",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We're running _____ time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "short of",
+   "out in",
+   "short on of",
+   "down to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: run short of.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014711",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to deal with\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "cope on",
+   "cope with",
+   "cope at",
+   "cope for"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: cope with.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014712",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to reduce\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "cut up",
+   "cut off",
+   "cut back",
+   "cut in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: cut back.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014713",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to examine carefully\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "go off",
+   "go out",
+   "go on",
+   "go over"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: go over.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014714",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to disappoint\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "let down",
+   "let up",
+   "let in",
+   "let off"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: let down.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014715",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to explode\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "go in",
+   "go off",
+   "go over",
+   "go away"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: go off.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014716",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to stop doing something\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "give in",
+   "give out",
+   "give up",
+   "give away"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: give up.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014717",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to surrender\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "give up on",
+   "give out",
+   "give off",
+   "give in"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: give in.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014718",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to distribute\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "give out",
+   "give up",
+   "give off",
+   "give in"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: give out.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014719",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to emit (a smell)\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "give out up",
+   "give off",
+   "give in",
+   "give up"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: give off.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014720",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to leave a place\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "move on",
+   "move up",
+   "move out",
+   "move in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: move out.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014721",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to arrange\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "set out",
+   "set in",
+   "set on",
+   "set up"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: set up.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014722",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to appear unexpectedly\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "turn up",
+   "turn out",
+   "turn off",
+   "turn in"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: turn up.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014723",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to go to bed\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "turn off",
+   "turn in",
+   "turn out",
+   "turn on"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: turn in.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014724",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to refuse\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "turn up",
+   "turn on",
+   "turn down",
+   "turn in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: turn down.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014725",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to rely on\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "count in",
+   "count out",
+   "count off",
+   "count on"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: count on.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014726",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to pretend\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "make believe",
+   "make up",
+   "make for",
+   "make off"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: make believe.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014727",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to leave quickly\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "make up",
+   "make off",
+   "make for",
+   "make out"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: make off.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014728",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to invent\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "make out",
+   "make for",
+   "make up",
+   "make off"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: make up.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014729",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to resemble\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "take over",
+   "take up",
+   "take in",
+   "take after"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: take after.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014730",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrasal verb means \"to understand\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "take in",
+   "take off",
+   "take on",
+   "take out"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: take in.",
+  "topic": "Usage: advanced phrasal verbs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014731",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of the report was clear.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "propose",
+   "purpose",
+   "purposes of",
+   "porpose"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "purpose = غرض.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014732",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He was _____ to the idea of moving abroad.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "adverse",
+   "aversion",
+   "averse",
+   "avers"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "averse to = معارض.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014733",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The drug had no _____ effects.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "averse",
+   "advert",
+   "adversely",
+   "adverse"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "adverse effects = ضارة.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014734",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is very _____ about her work.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "conscientious",
+   "conscious",
+   "consciously",
+   "conscience"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "conscientious = ضمير حي.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014735",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He was _____ of the danger.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "conscientious",
+   "conscious",
+   "conscience",
+   "conscientiously"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: conscious of.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014736",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of the sentence was clear.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "mean",
+   "meant",
+   "meaning",
+   "meanly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: meaning.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014737",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is an _____ person and nobody likes her.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "unpleasing",
+   "unplease",
+   "displease",
+   "unpleasant"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: unpleasant.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014738",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ was very _____ about the results.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "professor, enthusiastic",
+   "professor, enthusiasm",
+   "profession, enthusiastic",
+   "professional, enthusiast"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: professor ≠ profession.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014739",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I am _____ to hear that.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sorrow",
+   "sorry",
+   "sorely",
+   "sorrowful"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: sorry to hear.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014740",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They discussed the _____ of living in a big city.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "advantage of",
+   "advantaging",
+   "advantages",
+   "advantageous"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: advantages.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014741",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Please be _____ and wait.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "patience",
+   "patiently",
+   "patients",
+   "patient"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "patient صفة.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014742",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The doctor treated many _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "patients",
+   "patience",
+   "patient's",
+   "patiences"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "patients = مرضى.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014743",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Water is _____ for life.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "essence",
+   "essential",
+   "essentially",
+   "essentials of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: essential.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014744",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We _____ the invitation with pleasure.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "except",
+   "expect",
+   "accept",
+   "excerpt"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "accept = يقبل.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014745",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Everyone came _____ Ali.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "accept",
+   "expect",
+   "exempt",
+   "except"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "except = ما عدا.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014746",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ to be the winner.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "likely",
+   "likelihood",
+   "liking",
+   "alike"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: likely to.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014747",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "This is a _____ of luck.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "struck",
+   "stroke",
+   "stroked",
+   "strokes of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: stroke of luck.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014748",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I'm _____ of him. He is clever.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "envy",
+   "enviable",
+   "envious",
+   "envying"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: envious of.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014749",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She has an _____ memory.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "excellence",
+   "excellently",
+   "excel",
+   "excellent"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: excellent.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014750",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"not interested\" (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "uninterested",
+   "disinterested",
+   "interesting",
+   "unintersted"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "uninterested = مش مهتم.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014751",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"impartial\" (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "uninterested",
+   "disinterested",
+   "interesting",
+   "interested"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "disinterested = محايد.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014752",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The data is are clear.",
+   "The datas are clear.",
+   "The data are clear.",
+   "The datum are clear."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "data جمع في الرسمي.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014753",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Less students attended this year.",
+   "Lesser students attended this year.",
+   "Least students attended this year.",
+   "Fewer students attended this year."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "fewer للمعدود.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014754",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'd like to lie down.",
+   "I'd like to lay down myself.",
+   "I'd like to lain down.",
+   "I'd like to lied down."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "lie = يرقد.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014755",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She lay the book on the table.",
+   "She laid the book on the table.",
+   "She lied the book on the table.",
+   "She layed the book on the table."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "lay = يضع.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014756",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Please sit besides me.",
+   "Please sit beside of me.",
+   "Please sit beside me.",
+   "Please sit by to me."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "beside = بجانب.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014757",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Beside English, he speaks French.",
+   "Besides of English, he speaks French.",
+   "Besides to English he speaks.",
+   "Besides English, he speaks French."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "besides = بالإضافة إلى.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014758",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It was a historical novel.",
+   "It was a historic novel.",
+   "It was a historian novel.",
+   "It was a history novel's."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "historical = متعلق بالتاريخ.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014759",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He is continuously late all the time of.",
+   "He is continually late.",
+   "He is continued late.",
+   "He is continuous late."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "continually = بشكل متكرر.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014760",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He assured that the door was locked.",
+   "He insured that the door was locked by.",
+   "He ensured that the door was locked.",
+   "He ensure the door locked."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ensure = يتأكد.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014761",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I ensure you, it's safe.",
+   "I insure you, it's safe by.",
+   "I assured you it's safe now.",
+   "I assure you, it's safe."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: assure someone.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014762",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "They have complimentary tickets.",
+   "They have complementary tickets for free.",
+   "They have complemented tickets.",
+   "They have complimented tickets."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "complimentary = مجاني.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014763",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (confused words advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The two colours compliment each other.",
+   "The two colours complement each other.",
+   "The two colours complemented to each other.",
+   "The two colours complimenting."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "complement = يكمل.",
+  "topic": "Usage: confused words advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014764",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The committee, most of _____ were women, voted yes.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "who",
+   "them",
+   "whom",
+   "which"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: most of whom.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014765",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She has three brothers, two of _____ live abroad.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "who",
+   "them",
+   "which",
+   "whom"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: two of whom.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014766",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The house, the roof of _____ was damaged, was sold.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "which",
+   "whose",
+   "that",
+   "what"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: the roof of which.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014767",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is a man _____ I have great respect.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "who",
+   "for whom",
+   "whom for",
+   "whose"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: for whom.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014768",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He won the lottery, _____ made everyone jealous.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "that",
+   "what",
+   "which",
+   "who"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "which للجملة كلها.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014769",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "This is the reason _____ I called.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "what",
+   "whom",
+   "whose",
+   "why"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: the reason why.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014770",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The film _____ we saw last night was awful.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "that",
+   "whom",
+   "whose",
+   "where"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "that للأشياء.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014771",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It was an agreement _____ both sides were satisfied.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "which",
+   "with which",
+   "whose",
+   "that with"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: with which.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014772",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "A student _____ work is excellent will get a prize.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "who",
+   "which",
+   "whose",
+   "whom"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: whose.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014773",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (relative clauses advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The book, that I bought yesterday, is great.",
+   "The book which I bought yesterday, is great.",
+   "The book, what I bought yesterday, is great.",
+   "The book, which I bought yesterday, is great."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "non-defining تأخذ which وفواصل.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014774",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (relative clauses advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Everything she said was true.",
+   "Everything what she said was true.",
+   "Everything which she said was true.",
+   "Everything whom she said was true."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: everything that.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014775",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (relative clauses advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Those which want to leave may do so.",
+   "Those who want to leave may do so.",
+   "Those whom want to leave may do so.",
+   "Those whose want to leave may do so."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: those who.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014776",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (relative clauses advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She's the person who I trust.",
+   "She's the person whose I trust most.",
+   "She's the person whom I trust most.",
+   "She's the person whom I trust her."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whom رسمي.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014777",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (relative clauses advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The man (whom) I saw him was tall.",
+   "The man (who) I saw him was tall.",
+   "The man (whose) I saw was tall.",
+   "The man (whom) I saw was tall."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بدون ضمير زائد.",
+  "topic": "Grammar: relative clauses advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014778",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ more you practise, the better you get.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "The",
+   "A",
+   "An",
+   "Those"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: the more.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014779",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is _____ only person who knows.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "an",
+   "the",
+   "a",
+   "no article"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: the only.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014780",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It's _____ same old story.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: the same.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014781",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ Egyptian.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "a",
+   "the",
+   "no article",
+   "an"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: an Egyptian.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014782",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Both _____ brothers are doctors.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "my",
+   "a",
+   "an",
+   "of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both + my + اسم.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014783",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Such _____ nice day!",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "the",
+   "a",
+   "an",
+   "no article"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: such a.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014784",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Quite _____ few people came.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "the",
+   "an",
+   "a",
+   "of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "quite a few = كتير.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014785",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Many _____ student has failed this test.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "the",
+   "an",
+   "of",
+   "a"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many a + مفرد.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014786",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ Alps are in Europe.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "The",
+   "A",
+   "An",
+   "No article"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجبال المتعددة تأخذ the.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014787",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ Mount Everest is the highest mountain.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "The",
+   "No article",
+   "A",
+   "An"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "جبل مفرد بدون the.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014788",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (articles and determiners advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "United States is large.",
+   "A United States is large.",
+   "The United States is large.",
+   "The United State is large."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: the United States.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014789",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (articles and determiners advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I have been to USA the.",
+   "I have been to a USA.",
+   "I have been to an USA.",
+   "I have been to the USA."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: the USA.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014790",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (articles and determiners advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Society should help the old.",
+   "Society should help old.",
+   "Society should help an old.",
+   "Society should help olds."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: the + adjective.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014791",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (articles and determiners advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "What surprise!",
+   "What a surprise!",
+   "A what surprise!",
+   "What an surprise!"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: what a.",
+  "topic": "Grammar: articles and determiners advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014792",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The weather _____ good, we went out.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "been",
+   "to be",
+   "being",
+   "being as"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: absolute construction.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014793",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The work _____ finished, they went home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "being to",
+   "been",
+   "to have",
+   "having been"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: having been.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014794",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ I live in Cairo, I know the traffic.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "As",
+   "Having",
+   "Being",
+   "Lived"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "as = لأن.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014795",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ what to say, he stayed silent.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Not known",
+   "Not knowing",
+   "Not to know",
+   "Knew not"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: participle.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014796",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ by hard work, he became rich.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Helping",
+   "To help",
+   "Helped",
+   "Having help"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: passive participle.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014797",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ the door, she walked out.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Slammed",
+   "To slam",
+   "Having slam",
+   "Slamming"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: participle.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014798",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Strictly _____, this is not allowed.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "speaking",
+   "spoken",
+   "speak",
+   "spoke"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: strictly speaking.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014799",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Generally _____, men are taller.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "spoken",
+   "speaking",
+   "speak",
+   "said"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: generally speaking.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014800",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Judging _____ the clouds, it will rain.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "to",
+   "by",
+   "with"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: judging by.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ }
+]
