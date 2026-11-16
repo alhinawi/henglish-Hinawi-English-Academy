@@ -395,14 +395,7 @@ export async function verifyEmailOtp(email: string, token: string): Promise<{ su
     }
   }
 
-  // Local fallback: any 6-digit token succeeds for unconfigured environments
-  if (token.trim().length === 6) {
-    const current = getSavedAuthSession();
-    current.isEmailVerified = true;
-    saveAuthSession(current);
-    return { success: true };
-  }
-  return { success: false, error: 'ae.otp' };
+  return { success: false, error: 'auth.otpUnavailable' };
 }
 
 export async function resendVerificationOtp(email: string): Promise<{ success: boolean; error?: string }> {
@@ -418,7 +411,7 @@ export async function resendVerificationOtp(email: string): Promise<{ success: b
       return { success: false, error: normalizeAuthError(err) };
     }
   }
-  return { success: true };
+  return { success: false, error: 'auth.otpResendUnavailable' };
 }
 
 export async function requestPasswordRecovery(email: string): Promise<{ success: boolean; error?: string }> {
