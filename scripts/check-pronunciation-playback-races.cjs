@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require(
 const code=ts.transpileModule(fs.readFileSync('src/services/audioPlaybackManager.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
 const clips=[],spoken=[],timers=new Map();let timer=0;
 class Audio{constructor(url){this.url=url;this.events={};clips.push(this);}addEventListener(k,fn){this.events[k]=fn;}pause(){this.paused=true;}play(){return new Promise((resolve,reject)=>{this.resolve=resolve;this.reject=reject;});}emit(k){this.events[k]?.();}}
-const c={exports:{},Audio,window:{speechSynthesis:{cancel(){}}},require:()=>({speakEnglishVoice:(text,options)=>spoken.push({text,options})}),setTimeout:fn=>{timers.set(++timer,fn);return timer;},clearTimeout:id=>timers.delete(id)};vm.runInNewContext(code,c);const api=c.exports.audioPlayback;
+const c={exports:{},Audio,window:{speechSynthesis:{cancel(){}}},require:()=>({stopSpeech(){},speakEnglishVoice:(text,options)=>spoken.push({text,options})}),setTimeout:fn=>{timers.set(++timer,fn);return timer;},clearTimeout:id=>timers.delete(id)};vm.runInNewContext(code,c);const api=c.exports.audioPlayback;
 (async()=>{
  const old=api.playPronunciation('old','old','US','https://example.invalid/old.mp3');const a=clips[0];
  const next=api.playPronunciation('next','next','UK','https://example.invalid/next.mp3');const b=clips[1];b.emit('play');
