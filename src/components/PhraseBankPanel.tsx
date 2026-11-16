@@ -213,14 +213,15 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       <div className="space-y-2">
         <h1 dir="auto" className="text-3xl sm:text-4xl font-black text-white font-['Cairo',sans-serif]" style={{ textAlign: 'start' }}>{titleAr}</h1>
         <p dir="auto" className="text-sm text-[#b9b6d5] leading-relaxed" style={{ textAlign: 'start' }}>{blurbAr}</p>
-        {total !== null && (
+        {total !== null && total > 0 && (
           <p className="text-xs font-bold text-[#ffd166]">
             {total.toLocaleString('en')} {bank === 'idioms' ? 'Idiom' : bank === 'slang' ? 'Slang' : 'Gen Z'} {showVerified ? t('pb.verifiedSuffix') : ''}
           </p>
         )}
       </div>
 
-      {/* Search + slim filters button */}
+      {/* Search + slim filters button (hidden while the bank is still empty) */}
+      {total !== 0 && (
       <div className="flex items-center gap-2">
         <div className="relative flex-1">
           <Search className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#b9b6d5]" />
@@ -245,8 +246,9 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
           )}
         </button>
       </div>
+      )}
 
-      <ActiveFilterChips chips={activeChips} resultCount={visible.length} />
+      {total !== 0 && <ActiveFilterChips chips={activeChips} resultCount={visible.length} />}
 
       {/* States */}
       {loading && (
