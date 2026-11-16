@@ -211,8 +211,8 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
     <div className="space-y-5">
       {/* Header */}
       <div className="space-y-2">
-        <h1 className="text-3xl sm:text-4xl font-black text-white font-['Cairo',sans-serif]">{titleAr}</h1>
-        <p className="text-sm text-[#b9b6d5] leading-relaxed">{blurbAr}</p>
+        <h1 dir="auto" className="text-3xl sm:text-4xl font-black text-white font-['Cairo',sans-serif]" style={{ textAlign: 'start' }}>{titleAr}</h1>
+        <p dir="auto" className="text-sm text-[#b9b6d5] leading-relaxed" style={{ textAlign: 'start' }}>{blurbAr}</p>
         {total !== null && (
           <p className="text-xs font-bold text-[#ffd166]">
             {total.toLocaleString('en')} {bank === 'idioms' ? 'Idiom' : bank === 'slang' ? 'Slang' : 'Gen Z'} {showVerified ? t('pb.verifiedSuffix') : ''}
@@ -298,10 +298,10 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
                 </span>
               </div>
             </div>
-            <p className="text-base font-bold text-white leading-relaxed">{txMeaning(txMap, e.id, e.meaningAr)}</p>
+            <p dir="auto" className="text-base font-bold text-white leading-relaxed" style={{ textAlign: 'start' }}>{txMeaning(txMap, e.id, e.meaningAr)}</p>
             <div className="space-y-1 border-r-2 border-[#ffd166]/30 pr-3">
               <p className="text-sm text-[#b9b6d5]" dir="ltr">{e.exampleEn}</p>
-              <p className="text-sm text-white/80">{txExample(txMap, e.id, e.exampleAr)}</p>
+              <p dir="auto" className="text-sm text-white/80" style={{ textAlign: 'start' }}>{txExample(txMap, e.id, e.exampleAr)}</p>
             </div>
           </button>
         ))}
@@ -422,7 +422,7 @@ const PhraseDetailSheet: React.FC<{
                 <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.phrase}</h2>
                 <PronounceButton text={entry.phrase} />
               </span>
-              <p className="text-sm font-bold text-white leading-relaxed">{shownMeaning}</p>
+              <p dir="auto" className="text-sm font-bold text-white leading-relaxed" style={{ textAlign: 'start' }}>{shownMeaning}</p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <button
@@ -464,7 +464,7 @@ const PhraseDetailSheet: React.FC<{
                 <p className="text-sm text-white leading-relaxed" dir="ltr">
                   <span className="text-[#ffd166] font-black ml-1">{i + 1}.</span> {s.en}
                 </p>
-                <p className="text-sm text-[#b9b6d5]">{s.ar}</p>
+                <p dir="auto" className="text-sm text-[#b9b6d5]" style={{ textAlign: 'start' }}>{s.ar}</p>
               </div>
             ))}
         </div>
