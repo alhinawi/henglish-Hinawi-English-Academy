@@ -2526,5 +2526,17 @@
   "vs.muted": "Muted",
   "vs.enabled": "Sound on",
   "vs.done": "Done",
-  "vs.all": "All voices"
+  "vs.all": "All voices",
+  "wdm.close": "Close (Esc)",
+  "wdm.saved": "Saved to my vocabulary",
+  "wdm.save": "Save to vocabulary",
+  "wdm.pronunciation": "US and UK pronunciation:",
+  "wdm.other": "Other meanings and contexts in Arabic:",
+  "wdm.definition": "English definition",
+  "wdm.forms": "Grammatical forms:",
+  "wdm.example": "Example in context:",
+  "wdm.collocations": "Collocations:",
+  "wdm.notes": "Personal note for spaced repetition:",
+  "wdm.placeholder": "Write a note to help remember this word...",
+  "wdm.saveNote": "Save note"
 }
