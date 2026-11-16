@@ -698,7 +698,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                 {ytResults?.message && (
                   <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-white/70 flex items-center gap-2">
                     <Sparkles className="w-3.5 h-3.5 text-[#ffd166] shrink-0" />
-                    <span>{ytResults.message}</span>
+                    <span>{t(ytResults.message)}</span>
                   </div>
                 )}
               </div>

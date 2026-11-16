@@ -711,8 +711,8 @@
   "ms.watchPronunciation": "Aussprache des Satzes in der Szene ansehen",
   "ms.ytPlaceholder": "Suche nach Szene, Schauspieler, Thema oder Podcast (z. B. Steve Jobs speech, Friends pivot, London interview...)",
   "ms.ytSearch": "YouTube suchen",
-  "ms.ytSub": "Eine sichere Suchmaschine, die Einbettbarkeit und Wiedergabe automatisch prüft und defekte Links blockiert.",
-  "ms.ytTitle": "Durchsuche die Welt der YouTube-Videos und importiere sofort jede Szene oder jedes Interview",
+  "ms.ytSub": "Die Quelle wird bei den Ergebnissen angezeigt. Metadatenprüfungen garantieren weder Wiedergabe noch Einbettung.",
+  "ms.ytTitle": "Clips auf YouTube oder im Henglish-Katalog finden",
   "nav.about": "Über uns",
   "nav.academies": "Akademien",
   "nav.assistant": "Lern-Assistent",
@@ -2784,5 +2784,10 @@
   "ae.retry": "Ein unerwarteter Fehler ist aufgetreten. Versuche es erneut.",
   "ae.offline": "Der Server ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut.",
   "auth.otpUnavailable": "Die E-Mail-Bestätigung ist nicht verfügbar. Dein Bestätigungsstatus wurde nicht geändert.",
-  "auth.otpResendUnavailable": "Bestätigungscodes können derzeit nicht erneut gesendet werden. Es wurde kein Code gesendet."
+  "auth.otpResendUnavailable": "Bestätigungscodes können derzeit nicht erneut gesendet werden. Es wurde kein Code gesendet.",
+  "ys.notice0": "Ergebnisse aus dem Videokatalog der Henglish Academy.",
+  "ys.notice1": "Keine passenden Katalogtreffer. Stattdessen werden vorgeschlagene Clips angezeigt.",
+  "ys.notice2": "Das YouTube-API-Kontingent ist vorübergehend überschritten. Katalogergebnisse werden angezeigt.",
+  "ys.notice3": "Live-Ergebnisse aus der YouTube Data API v3.",
+  "ys.notice4": "Keine Verbindung zur YouTube-API. Katalogergebnisse werden angezeigt."
 }
