@@ -1,9 +1,10 @@
+import { Award } from 'lucide-react';
+import { BadgeCollection } from '../components/BadgeCollection';
 import React from 'react';
 import { UserProgressState, AchievementBadge, PageRoute } from '../types';
 import { playSound } from '../utils/audio';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { 
-  Award, 
   CheckCircle2, 
   Flame, 
   RotateCcw, 
@@ -129,48 +130,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
         </div>
       </div>
 
-      {/* Achievement Badges Section */}
-      <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
-        <div>
-          <h3 className="text-xl font-black text-white flex items-center gap-2">
-            <Award className="w-5 h-5 text-[#ffd166]" />
-            <span>شارات التميز والإنجاز (Achievement Badges)</span>
-          </h3>
-          <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-            أكمل الدروس والاختبارات لفتح جميع الشارات التقديرية.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          {badges.map(badge => (
-            <div
-              key={badge.id}
-              className={`p-5 rounded-2xl border text-center transition-all ${
-                badge.unlocked
-                  ? 'bg-linear-to-b from-[#1b1939] to-[#13122b] border-[#ffd166]/50 shadow-[0_0_20px_rgba(255,209,102,0.15)]'
-                  : 'bg-white/5 border-white/5 opacity-40'
-              }`}
-            >
-              <span className="text-4xl block mb-2 filter drop-shadow">
-                {badge.icon}
-              </span>
-              <h4 className="text-sm font-black text-white">
-                {badge.title}
-              </h4>
-              <p className="text-[11px] text-[#b9b6d5] mt-1 leading-relaxed">
-                {badge.description}
-              </p>
-              <span className={`inline-block mt-3 text-[10px] font-black px-2 py-0.5 rounded-full ${
-                badge.unlocked
-                  ? 'bg-[#c4ff55]/20 text-[#c4ff55]'
-                  : 'bg-white/10 text-[#b9b6d5]'
-              }`}>
-                {badge.unlocked ? 'مكتسبة' : 'مغلقة'}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
+      <BadgeCollection badges={badges} compact onNavigate={onNavigate} />
 
       {/* Course Lessons Checklist */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">

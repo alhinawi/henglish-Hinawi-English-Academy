@@ -1,3 +1,4 @@
+import { BadgeCollection } from '../components/BadgeCollection';
 import React, { useState } from "react";
 import { CEFR_LABELS_AR } from "../utils/levels";
 import {
@@ -13,7 +14,6 @@ import {
   BookmarkCheck,
   NotebookPen,
   BookOpen,
-  Award,
   Sparkles,
   Trash2,
   Calendar,
@@ -193,36 +193,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
             </div>
           </div>
 
-          {/* Badges Collection */}
-          <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-5">
-            <h2 className="text-xl font-black text-white flex items-center gap-2">
-              <Award className="w-5 h-5 text-[#ffd166]" />
-              شارات التميز والإنجازات الحاصل عليها
-            </h2>
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-              {badges.map((b) => (
-                <div
-                  key={b.id}
-                  className={`p-4 rounded-2xl border text-center transition-all ${
-                    b.unlocked
-                      ? "bg-linear-to-b from-[#ffd166]/15 to-transparent border-[#ffd166]/40 shadow-sm"
-                      : "bg-white/5 border-white/5 opacity-40 grayscale"
-                  }`}
-                >
-                  <div className="text-3xl mb-1.5 filter drop-shadow">
-                    {b.icon}
-                  </div>
-                  <div className="text-xs font-bold text-white mb-0.5">
-                    {b.title}
-                  </div>
-                  <div className="text-[10px] text-[#b9b6d5] line-clamp-2 leading-tight">
-                    {b.description}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          <BadgeCollection badges={badges} compact onNavigate={onNavigate} />
         </section>
       )}
 

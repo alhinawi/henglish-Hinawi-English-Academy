@@ -1,3 +1,4 @@
+import { mountBadges } from './badges'
 import { buildLeaderboard, isOwner, isOwnerGoogleSession } from './leaderboard'
 import { mountCertificates } from './certificates'
 import { Hono, type MiddlewareHandler } from 'hono'
@@ -322,5 +323,6 @@ app.get('/api/leaderboard', async (c) => {
   return c.json(buildLeaderboard(rows.results ?? [], viewerId))
 })
 mountCertificates(app, auth)
+mountBadges(app, auth)
 
 export default app
