@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   ShieldCheck,
   LogOut,
@@ -33,6 +34,7 @@ const day = (iso: string) => {
  * No client-side role or email check is trusted.
  */
 export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { t } = useLanguage();
   const [gate, setGate] = useState<GateState>('loading');
   const [email, setEmail] = useState('');
   const [data, setData] = useState<AdminOverview | null>(null);
@@ -85,7 +87,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
     );
   }
 
-  if (gate === 'error') return <div role="alert" className="p-8 text-center space-y-4" dir="rtl"><p>مش قادرين نحمّل لوحة التحكم دلوقتي. جلستك لسه محفوظة.</p><button onClick={load} className="px-5 py-3 rounded-xl bg-white/10">حاول تاني</button></div>;
+  if (gate === 'error') return <div role="alert" className="p-8 text-center space-y-4" dir="rtl"><p>{t('sg.loadError')}</p><button onClick={load} className="px-5 py-3 rounded-xl bg-white/10">{t('sg.retry')}</button></div>;
 
   if (gate === 'anon') {
     return (
@@ -93,9 +95,9 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
         <div className="w-16 h-16 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/20 text-[#ffd166] flex items-center justify-center mb-4">
           <ShieldCheck className="w-8 h-8" />
         </div>
-        <h2 className="text-xl font-black text-white mb-2">لوحة التحكم</h2>
+        <h2 className="text-xl font-black text-white mb-2">{t('sg.gateTitle')}</h2>
         <p className="text-xs text-white/50 max-w-md mb-6 leading-relaxed">
-          الصفحة دي للأدمن بس. ادخل بحساب Google المخصص للإدارة. لو عندك جلسة قديمة، سجّل دخولك من جديد لتأكيد الحساب.
+          {t('sg.gateBody')}
         </p>
         <a
           href={googleLoginUrl()}
@@ -107,7 +109,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
             <path fill="#FBBC05" d="M5.27 14.28A7.2 7.2 0 0 1 4.89 12c0-.79.14-1.56.38-2.28v-3.1H1.29a12 12 0 0 0 0 10.76l3.98-3.1z"/>
             <path fill="#EA4335" d="M12 4.76c1.76 0 3.34.61 4.58 1.8l3.44-3.44A11.98 11.98 0 0 0 12 0 12 12 0 0 0 1.29 6.62l3.98 3.1C6.22 6.87 8.87 4.76 12 4.76z"/>
           </svg>
-          الدخول بحساب Google
+          {t('sg.googleSignIn')}
         </a>
       </div>
     );
@@ -119,9 +121,9 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
         <div className="w-16 h-16 rounded-2xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center justify-center mb-4">
           <ShieldCheck className="w-8 h-8" />
         </div>
-        <h2 className="text-xl font-black text-white mb-2">مش متاح للحساب ده</h2>
+        <h2 className="text-xl font-black text-white mb-2">{t('sg.deniedTitle')}</h2>
         <p className="text-xs text-white/50 max-w-md mb-6 leading-relaxed">
-          الصفحة دي للأدمن بس. إنت داخل بحساب <span dir="ltr" className="text-white/70">{email}</span>.
+          {t('sg.deniedBody')} <span dir="ltr" className="text-white/70">{email}</span>.
         </p>
         <div className="flex items-center gap-3">
           <button
@@ -129,7 +131,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
             className="px-5 py-2.5 rounded-xl bg-white/5 border border-white/10 text-white text-xs font-bold flex items-center gap-2 hover:bg-white/10 transition-colors cursor-pointer"
           >
             <LogOut className="w-4 h-4" />
-            تسجيل الخروج
+            {t('sg.signOut')}
           </button>
         </div>
       </div>
@@ -138,7 +140,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
 
   return (
     <div dir="rtl" className="space-y-8">
-      <header className="flex flex-wrap items-center justify-between gap-4"><div className="space-y-2"><p className="text-[#ffd166] text-xs font-bold">HENGLISH ADMIN</p><h1 className="text-2xl sm:text-3xl font-black">لوحة تحكم الأدمن</h1><p className="text-xs text-[#b9b6d5]">بيانات مباشرة من الحسابات وسجلات التعلّم، مش أرقام تجريبية.</p></div><button onClick={load} className="flex items-center gap-2 rounded-xl border border-white/10 px-4 py-3 text-xs"><RefreshCw className="w-4 h-4"/>تحديث</button></header>
+      <header className="flex flex-wrap items-center justify-between gap-4"><div className="space-y-2"><p className="text-[#ffd166] text-xs font-bold">HENGLISH ADMIN</p><h1 className="text-2xl sm:text-3xl font-black">{t('sg.adminTitle')}</h1><p className="text-xs text-[#b9b6d5]">{t('sg.adminSub')}</p></div><button onClick={load} className="flex items-center gap-2 rounded-xl border border-white/10 px-4 py-3 text-xs"><RefreshCw className="w-4 h-4"/>{t('lb.refresh')}</button></header>
       {/* Overview - same shape as the egypti admin dashboard */}
       {data && (
         <section className="space-y-6">
@@ -146,28 +148,28 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
             <div className="p-5 rounded-3xl bg-white/5 border border-white/10 space-y-1">
               <div className="flex items-center gap-2 text-[#41e7ff]">
                 <Users className="w-4 h-4" />
-                <span className="text-[11px] font-bold text-white/50">حسابات</span>
+                <span className="text-[11px] font-bold text-white/50">{t('sg.statAccounts')}</span>
               </div>
               <div className="text-3xl font-black text-white">{data.counts.users}</div>
             </div>
             <div className="p-5 rounded-3xl bg-white/5 border border-white/10 space-y-1">
               <div className="flex items-center gap-2 text-emerald-300">
                 <UserPlus className="w-4 h-4" />
-                <span className="text-[11px] font-bold text-white/50">جداد الأسبوع ده</span>
+                <span className="text-[11px] font-bold text-white/50">{t('sg.statNewWeek')}</span>
               </div>
               <div className="text-3xl font-black text-white">{data.counts.newUsers}</div>
             </div>
             <div className="p-5 rounded-3xl bg-white/5 border border-white/10 space-y-1">
               <div className="flex items-center gap-2 text-[#ffd166]">
                 <Activity className="w-4 h-4" />
-                <span className="text-[11px] font-bold text-white/50">جلسات نشطة</span>
+                <span className="text-[11px] font-bold text-white/50">{t('sg.statSessions')}</span>
               </div>
               <div className="text-3xl font-black text-white">{data.counts.sessions}</div>
             </div>
             <div className="p-5 rounded-3xl bg-white/5 border border-white/10 space-y-1">
               <div className="flex items-center gap-2 text-[#ff4f9a]">
                 <Database className="w-4 h-4" />
-                <span className="text-[11px] font-bold text-white/50">سجلات تقدم</span>
+                <span className="text-[11px] font-bold text-white/50">{t('sg.statRecords')}</span>
               </div>
               <div className="text-3xl font-black text-white">{data.counts.progress}</div>
             </div>
@@ -177,7 +179,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
             <div className="p-5 rounded-3xl bg-white/5 border border-white/10 space-y-3">
               <h3 className="text-sm font-black text-white flex items-center gap-2">
                 <Users className="w-4 h-4 text-[#41e7ff]" />
-                آخر المسجّلين
+                {t('sg.recentUsers')}
               </h3>
               {data.recentUsers.length ? (
                 <ul className="space-y-2">
@@ -190,31 +192,31 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
                   ))}
                 </ul>
               ) : (
-                <p className="text-xs text-white/40">مفيش حسابات لسه.</p>
+                <p className="text-xs text-white/40">{t('sg.noAccounts')}</p>
               )}
-              <p className="text-[10px] text-white/30">الإيميلات مخفية جزئيًا.</p>
+              <p className="text-[10px] text-white/30">{t('sg.emailsMasked')}</p>
             </div>
 
             <div className="p-5 rounded-3xl bg-white/5 border border-white/10 space-y-3">
               <h3 className="text-sm font-black text-white flex items-center gap-2">
                 <Activity className="w-4 h-4 text-emerald-300" />
-                صحة النظام
+                {t('sg.healthTitle')}
               </h3>
               <ul className="space-y-2 text-xs">
                 <li className="flex items-center justify-between">
-                  <span className="text-white/60 flex items-center gap-2"><Database className="w-3.5 h-3.5" /> قاعدة البيانات (D1)</span>
-                  <span className={data.health.database ? 'text-emerald-300 font-bold' : 'text-red-400 font-bold'}>{data.health.database ? 'شغالة' : 'في مشكلة'}</span>
+                  <span className="text-white/60 flex items-center gap-2"><Database className="w-3.5 h-3.5" /> {t('sg.healthDb')}</span>
+                  <span className={data.health.database ? 'text-emerald-300 font-bold' : 'text-red-400 font-bold'}>{data.health.database ? t('sg.healthOk') : t('sg.healthBad')}</span>
                 </li>
                 <li className="flex items-center justify-between">
-                  <span className="text-white/60 flex items-center gap-2"><Globe className="w-3.5 h-3.5" /> تسجيل الدخول بجوجل</span>
-                  <span className={data.health.google ? 'text-emerald-300 font-bold' : 'text-red-400 font-bold'}>{data.health.google ? 'متضبط' : 'ناقص إعداد'}</span>
+                  <span className="text-white/60 flex items-center gap-2"><Globe className="w-3.5 h-3.5" /> {t('sg.healthGoogle')}</span>
+                  <span className={data.health.google ? 'text-emerald-300 font-bold' : 'text-red-400 font-bold'}>{data.health.google ? t('sg.healthGoogleOk') : t('sg.healthGoogleBad')}</span>
                 </li>
                 <li className="flex items-center justify-between">
-                  <span className="text-white/60 flex items-center gap-2"><KeyRound className="w-3.5 h-3.5" /> حسابات الأدمن</span>
-                  <span className="text-white/80 font-bold">{data.health.adminCount} حساب</span>
+                  <span className="text-white/60 flex items-center gap-2"><KeyRound className="w-3.5 h-3.5" /> {t('sg.healthAdmins')}</span>
+                  <span className="text-white/80 font-bold">{data.health.adminCount} {t('sg.accountUnit')}</span>
                 </li>
                 <li className="flex items-center justify-between">
-                  <span className="text-white/60 flex items-center gap-2"><Globe className="w-3.5 h-3.5" /> عنوان الموقع</span>
+                  <span className="text-white/60 flex items-center gap-2"><Globe className="w-3.5 h-3.5" /> {t('sg.healthSite')}</span>
                   <span dir="ltr" className="text-white/40 font-mono text-[11px]">{data.health.origin}</span>
                 </li>
               </ul>
@@ -223,7 +225,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
         </section>
       )}
 
-      <details className="rounded-2xl border border-white/10 bg-white/[0.025] p-5 space-y-5"><summary className="cursor-pointer font-bold text-sm text-[#ffd166]">معاينة أدوات المحتوى المحلية</summary><p className="text-xs text-[#b9b6d5] leading-7">الأدوات القديمة دي مساحة معاينة. أرقام الطلاب وأسماء الطلاب داخلها تجريبية، والتعديلات فيها محلية ومش نشر للموقع ولا تغيير لحسابات الطلاب. البيانات الحقيقية موجودة فوق.</p>{children}</details>
+      <details className="rounded-2xl border border-white/10 bg-white/[0.025] p-5 space-y-5"><summary className="cursor-pointer font-bold text-sm text-[#ffd166]">{t('sg.previewTitle')}</summary><p className="text-xs text-[#b9b6d5] leading-7">{t('sg.previewNote')}</p>{children}</details>
     </div>
   );
 };
