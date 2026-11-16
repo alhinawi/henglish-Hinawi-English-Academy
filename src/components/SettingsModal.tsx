@@ -159,7 +159,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
           />
         </div>
 
-        {error && <p className="text-xs text-red-300">{error}</p>}
+        {error && <p className="text-xs text-red-300">{t(error)}</p>}
         {needsGoogleReauth && (
           <button
             onClick={() => { window.location.href = googleLoginUrl(); }}

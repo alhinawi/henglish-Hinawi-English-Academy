@@ -117,7 +117,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
         {errorMessage && (
           <div className="mb-6 p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs flex items-center gap-2">
             <AlertCircle className="w-4 h-4 shrink-0" />
-            <span>{errorMessage}</span>
+            <span>{t(errorMessage)}</span>
           </div>
         )}
 

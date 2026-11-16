@@ -83,7 +83,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
               : 'bg-red-500/10 border border-red-500/30 text-red-300'
           }`}>
             {feedback.type === 'success' ? <CheckCircle2 className="w-4 h-4 shrink-0" /> : <AlertCircle className="w-4 h-4 shrink-0" />}
-            <span>{feedback.text}</span>
+            <span>{t(feedback.text)}</span>
           </div>
         )}
 

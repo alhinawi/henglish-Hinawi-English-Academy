@@ -12,7 +12,7 @@ const TOKEN_KEY = 'henglish_api_token';
 // app listens for this event, drops the dead session and offers Google sign-in.
 export const GOOGLE_REAUTH_EVENT = 'henglish:google-reauth-required';
 export const GOOGLE_REAUTH_MESSAGE =
-  'حساب الإدارة بيدخل بحساب Google بس. استخدم زر الدخول بجوجل.';
+  'ae.googleRequired';
 
 function notifyGoogleReauth(): void {
   clearHenglishApiToken();
@@ -181,14 +181,14 @@ export async function apiUpdateMe(
 function mapApiError(status: number, body: any): string {
   if (body?.error === 'owner_google_required' || body?.error === 'google_reauth_required') return GOOGLE_REAUTH_MESSAGE;
   const fields = body && body.fields ? body.fields : {};
-  if (fields.email === 'already registered') return 'الإيميل ده مسجل قبل كده. جرّب تسجيل الدخول.';
-  if (fields.password) return 'كلمة السر لازم تكون 8 حروف على الأقل.';
-  if (fields.name) return 'الاسم لازم يكون حرفين على الأقل.';
-  if (fields.email) return 'صيغة الإيميل مش صحيحة.';
-  if (body && body.error === 'invalid_credentials') return 'الإيميل أو كلمة السر غلط.';
-  if (body && body.error === 'unauthorized') return 'الجلسة انتهت. سجّل الدخول من جديد.';
-  if (status === 422) return 'البيانات المدخلة غير مكتملة.';
-  return 'حدث خطأ غير متوقع. حاول مرة تانية.';
+  if (fields.email === 'already registered') return 'ae.already';
+  if (fields.password) return 'ae.password8';
+  if (fields.name) return 'ae.name';
+  if (fields.email) return 'ae.email';
+  if (body && body.error === 'invalid_credentials') return 'ae.invalid';
+  if (body && body.error === 'unauthorized') return 'ae.expired';
+  if (status === 422) return 'ae.incomplete';
+  return 'ae.retry';
 }
 
 async function post<T>(path: string, payload: unknown, token?: string): Promise<{ status: number; body: T | any }> {
@@ -218,7 +218,7 @@ export async function apiRegister(params: {
     }
     return { success: false, error: mapApiError(status, body) };
   } catch {
-    return { success: false, error: 'مش قادرين نوصل للسيرفر. اتأكد من النت وجرب تاني.' };
+    return { success: false, error: 'ae.offline' };
   }
 }
 
@@ -231,7 +231,7 @@ export async function apiLogin(email: string, password: string): Promise<ApiAuth
     }
     return { success: false, error: mapApiError(status, body) };
   } catch {
-    return { success: false, error: 'مش قادرين نوصل للسيرفر. اتأكد من النت وجرب تاني.' };
+    return { success: false, error: 'ae.offline' };
   }
 }
 
