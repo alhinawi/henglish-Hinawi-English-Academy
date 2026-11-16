@@ -232,9 +232,24 @@ export interface UserProgressState {
   totalTimeMinutes: number;
   notes?: PersonalNote[];
   bookmarks?: BookmarkItem[];
-  dailyGoals?: DailyGoal[];
+  // Real per-day activity counters that drive the Daily Goals card. Stored
+  // under the key `dailyGoals` because the API sanitizer passes a non-array
+  // dailyGoals blob through verbatim (arrays are dropped) — no worker change.
+  // Legacy blobs may still hold the old fake DailyGoal[] array; readers must
+  // tolerate that and treat it as no activity.
+  dailyGoals?: DailyActivity | DailyGoal[];
   xp?: number;
   level?: CEFRLevel;
+}
+
+export interface DailyActivity {
+  date: string; // local YYYY-MM-DD; counts reset when the day rolls over
+  lessons: number;
+  flashcards: number;
+  speaking: number;
+  quizzes: number;
+  quiz80: boolean; // scored 80%+ on at least one quiz today
+  xpAwarded?: boolean; // the all-goals 150 XP bonus was already paid today
 }
 
 export interface PlacementQuestion {
