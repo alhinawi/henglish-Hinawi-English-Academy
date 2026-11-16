@@ -2656,5 +2656,18 @@
   "sb.wrong": "Die Reihenfolge stimmt noch nicht. Ordne die Wörter neu oder sieh dir den Tipp an.",
   "sb.check": "Antwort prüfen",
   "sb.next": "Nächste Aufgabe",
-  "sb.count": "Aufgabe {current} von {total}"
+  "sb.count": "Aufgabe {current} von {total}",
+  "rs.chip": "LERNMATERIAL ZUM HERUNTERLADEN",
+  "rs.title": "Notizen und Arbeitsblätter zum Download",
+  "rs.intro": "Lade Wiederholungsnotizen, Arbeitsblätter und Verbtabellen als Textdateien herunter oder drucke diese Seite zum Lernen aus.",
+  "rs.print": "Diese Seite drucken",
+  "rs.downloaded": "Heruntergeladen",
+  "rs.download": "Datei herunterladen",
+  "rs.active": "Vorschau aktiv",
+  "rs.preview": "Vorschau öffnen",
+  "rs.previewTitle": "DOKUMENTVORSCHAU",
+  "rs.pages": "{count} Seiten",
+  "rs.copy": "Kopie herunterladen",
+  "rs.revision": "Kurzwiederholung",
+  "rs.page": "1 Seite"
 }
