@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
 import { playSound, fireCelebration } from '../../utils/audio';
 import {
@@ -18,6 +19,7 @@ interface VerifyEmailPageProps {
 
 export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, defaultEmail = '' }) => {
   const { verifyOtp, resendOtp, user } = useAuth();
+  const { t, dir } = useLanguage();
 
   const [email, setEmail] = useState(defaultEmail || user?.email || '');
   const [code, setCode] = useState(['', '', '', '', '', '']);
@@ -61,7 +63,7 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
     e.preventDefault();
     const token = code.join('');
     if (token.length !== 6) {
-      setFeedback({ type: 'error', text: 'يرجى إدخال رمز التحقق المكون من 6 أرقام بالكامل.' });
+      setFeedback({ type: 'error', text: t('ve.incomplete') });
       return;
     }
 
@@ -74,13 +76,13 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
     if (res.success) {
       playSound('correct');
       fireCelebration();
-      setFeedback({ type: 'success', text: 'تم تأكيد بريدك الإلكتروني بنجاح! جاري تحويلك للأكاديمية...' });
+      setFeedback({ type: 'success', text: t('ve.verified') });
       setTimeout(() => {
         onNavigate('dashboard');
       }, 1500);
     } else {
       playSound('wrong');
-      setFeedback({ type: 'error', text: res.error || 'رمز التحقق غير صحيح أو انتهت صلاحيته.' });
+      setFeedback({ type: 'error', text: res.error || t('ve.invalid') });
     }
   };
 
@@ -90,14 +92,14 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
     setCountdown(60);
     const res = await resendOtp(email);
     if (res.success) {
-      setFeedback({ type: 'success', text: 'تم إرسال رمز تحقق جديد إلى بريدك الإلكتروني.' });
+      setFeedback({ type: 'success', text: t('ve.resent') });
     } else {
-      setFeedback({ type: 'error', text: res.error || 'فشل إعادة الإرسال. حاول لاحقاً.' });
+      setFeedback({ type: 'error', text: res.error || t('ve.resendFailed') });
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir={dir}>
       {/* Decorative Blur */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -107,11 +109,11 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
           <Mail className="w-8 h-8" />
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-2">تأكيد البريد الإلكتروني</h2>
+        <h2 className="text-2xl font-bold text-white mb-2">{t('ve.title')}</h2>
         <p className="text-xs text-slate-400 leading-relaxed mb-6">
-          أرسلنا رمز تحقق مكوناً من 6 أرقام إلى:
+          {t('ve.sentTo')}
           <br />
-          <span className="font-semibold text-cyan-300 dir-ltr inline-block mt-1">{email || 'بريدك الإلكتروني'}</span>
+          <span className="font-semibold text-cyan-300 dir-ltr inline-block mt-1">{email || t('ve.email')}</span>
         </p>
 
         {feedback && (
@@ -153,25 +155,25 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
             ) : (
               <>
                 <ShieldCheck className="w-4 h-4" />
-                <span>تأكيد الحساب ومتابعة التعلم</span>
+                <span>{t('ve.confirm')}</span>
               </>
             )}
           </button>
         </form>
 
         <div className="mt-6 pt-5 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
-          <span>لم يصلك الرمز؟</span>
+          <span>{t('ve.noCode')}</span>
           {canResend ? (
             <button
               type="button"
               onClick={handleResend}
               className="text-cyan-400 font-semibold hover:text-cyan-300 flex items-center gap-1 transition-colors"
             >
-              <RefreshCw className="w-3.5 h-3.5" /> إعادة الإرسال الآن
+              <RefreshCw className="w-3.5 h-3.5" /> {t('ve.resend')}
             </button>
           ) : (
-            <span className="text-slate-500 font-mono">
-              إعادة الإرسال خلال {countdown} ثانية
+            <span className="text-slate-500">
+              {t('ve.resendIn').replace('{seconds}', String(countdown))}
             </span>
           )}
         </div>
@@ -181,7 +183,7 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
           onClick={() => onNavigate('login')}
           className="mt-4 text-xs text-slate-500 hover:text-slate-400 transition-colors inline-flex items-center gap-1"
         >
-          <span>العودة لصفحة تسجيل الدخول</span>
+          <span>{t('ve.back')}</span>
         </button>
       </div>
     </div>
