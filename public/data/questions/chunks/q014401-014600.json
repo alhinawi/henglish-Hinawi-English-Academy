@@ -2422,5 +2422,1147 @@
   "explanationAr": "القاعدة: judging by.",
   "topic": "Grammar: participles and absolute constructions (C2)",
   "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014801",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Considering _____ tired he was, he did well.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "what",
+   "that",
+   "so",
+   "how"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: considering how.",
+  "topic": "Grammar: participles and absolute constructions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014802",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I'll never forget _____ the pyramids for the first time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "seeing",
+   "to see",
+   "see",
+   "to seeing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "forget + -ing = ذكرى.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014803",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Don't forget _____ the milk on your way home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "buying",
+   "to buy",
+   "buy",
+   "to buying"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "forget to = ما تنساش تعمل.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014804",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I meant _____ you, but I forgot.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "calling",
+   "call",
+   "to call",
+   "to calling"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "mean to = ناوي.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014805",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Missing the bus meant _____ for an hour.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to wait",
+   "wait",
+   "to waiting",
+   "waiting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "mean + -ing = يعني.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014806",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He went on _____ about his problems for hours.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "talking",
+   "to talk",
+   "talk",
+   "to talking"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "go on + -ing = استمر.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014807",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "After the introduction, she went on _____ the results.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "presenting",
+   "to present",
+   "present",
+   "to presenting"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "go on to = انتقل إلى.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014808",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I'm afraid _____ him the truth.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "telling",
+   "tell",
+   "to tell",
+   "to telling"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "afraid to = خايف أعمل.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014809",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She is afraid of _____ alone.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to be",
+   "be",
+   "been",
+   "being"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: afraid of + -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014810",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "They were made _____ for hours.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to wait",
+   "waiting",
+   "wait",
+   "to waiting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: passive of make + to.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014811",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He was seen _____ out of the building.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "run",
+   "to run",
+   "to running",
+   "ran"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: passive of see + to.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014812",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I can't stand _____ in queues.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to waiting",
+   "wait",
+   "waiting",
+   "waited"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: can't stand + -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014813",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I'd rather _____ at home tonight.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to stay",
+   "staying",
+   "stayed",
+   "stay"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: would rather + base.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014814",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She is not used to _____ so early.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "getting up",
+   "get up",
+   "got up",
+   "be get up"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: used to + -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014815",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He let me _____ his phone.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to use",
+   "use",
+   "using",
+   "used"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: let + object + base.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014816",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence means \"I didn't call\" (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I forgot calling him.",
+   "I forgot he called.",
+   "I forgot to call him.",
+   "I called him."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "forget to = ما اتصلتش.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014817",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence means \"I called, but now I don't remember\" (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I forgot to call him.",
+   "I stopped to call him.",
+   "I'll call him.",
+   "I forgot calling him."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: forget -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014818",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence means \"I tried and it worked as an experiment\" (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I tried adding salt.",
+   "I tried to add salt.",
+   "I tried add salt.",
+   "I tried salt to add."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "try -ing = جرب.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014819",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence means \"I made an effort\" (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I tried opening the door.",
+   "I tried to open the door.",
+   "I tried open the door.",
+   "I tried the door to open."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "try to = حاول.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014820",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He risks to lose everything.",
+   "He risks lose everything.",
+   "He risks losing everything.",
+   "He risks of losing everything."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: risk + -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014821",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I can't afford buying a car.",
+   "I can't afford buy a car.",
+   "I can't afford for buying a car.",
+   "I can't afford to buy a car."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: afford to.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014822",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She pretended to be asleep.",
+   "She pretended being asleep.",
+   "She pretended be asleep.",
+   "She pretended for sleeping."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: pretend to.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014823",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He seems knowing everything.",
+   "He seems to know everything.",
+   "He seems know everything.",
+   "He seems for know."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: seem to.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014824",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I look forward to meet you.",
+   "I look forward meeting you.",
+   "I look forward to meeting you.",
+   "I look forward for meet you."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: look forward to + -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014825",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (gerund or infinitive meaning change)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She is committed to improve.",
+   "She is committed improving.",
+   "She is committed for improve.",
+   "She is committed to improving."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: committed to + -ing.",
+  "topic": "Grammar: gerund or infinitive meaning change (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014826",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "By 2030 scientists _____ a cure.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will have found",
+   "will find",
+   "are finding",
+   "have found"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: future perfect.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014827",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I'm sure it _____ tomorrow.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is raining",
+   "will rain",
+   "rains",
+   "rain"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "توقع.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014828",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I _____ you with that. It looks heavy.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "am helping",
+   "help",
+   "'ll help",
+   "have helped"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "قرار لحظي: will.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014829",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We _____ to Paris next week. The tickets are booked.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fly will",
+   "will fly",
+   "have flown",
+   "are flying"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ترتيب مؤكد: present continuous.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014830",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The plane _____ at 6 pm tomorrow.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lands",
+   "is landing to",
+   "will have landed to",
+   "landed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "جدول: present simple.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014831",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I was about _____ when you called.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "leaving",
+   "to leave",
+   "leave",
+   "to leaving"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: be about to.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014832",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She is due _____ next month.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "giving birth to",
+   "give birth",
+   "to give birth",
+   "gave birth"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: due to + inf.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014833",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We _____ to start in a minute.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will about",
+   "have about",
+   "about",
+   "are about"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: are about to.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014834",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "By this time next year, I _____ my degree.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will have finished",
+   "will finish",
+   "am finishing",
+   "finish"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: future perfect.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014835",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He said he _____ be late.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "would",
+   "shall",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: future in the past.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014836",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I thought it _____ rain, but it didn't.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "is going to",
+   "was going to",
+   "goes"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: future in the past.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014837",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (future forms)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'll finishing by noon.",
+   "I'll have finish by noon.",
+   "I'll finished by noon.",
+   "I'll have finished by noon."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: future perfect.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014838",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (future forms)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "This time tomorrow I'll be flying to Dubai.",
+   "This time tomorrow I'll fly to Dubai being.",
+   "This time tomorrow I be flying.",
+   "This time tomorrow I'll flown."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: future continuous.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014839",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (future forms)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'm going to being a doctor.",
+   "I'm going to be a doctor.",
+   "I'm go to be a doctor.",
+   "I going to be a doctor."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: going to + base.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014840",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (future forms)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The exam is going be difficult.",
+   "The exam going to be difficult.",
+   "The exam is going to be difficult.",
+   "The exam is go to be difficult."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: going to be.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014841",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (future forms)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Will you using the car tonight?",
+   "Will you be use the car tonight?",
+   "Do you be using the car?",
+   "Will you be using the car tonight?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "future continuous للسؤال المهذب.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014842",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "\"I'm meeting Sara at six\" is a fixed arrangement.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present continuous للمستقبل.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014843",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "\"I will to go tomorrow\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: I will go.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014844",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "\"The train leaves at 8\" uses present simple for a timetable.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "جدول.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014845",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "\"By next year I will finish for ten years\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: will have been working.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014846",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "\"I was going to call, but I forgot\" shows an unfulfilled plan.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: was going to.",
+  "topic": "Grammar: future forms (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014847",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The decision is _____ to the manager.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "up",
+   "on",
+   "at",
+   "by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: up to.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014848",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He was convicted _____ fraud.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "of",
+   "with",
+   "about"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: convicted of.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014849",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She has no tolerance _____ lies.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "of to",
+   "against",
+   "for",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: tolerance for.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014850",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "There is a demand _____ skilled workers.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "of",
+   "on",
+   "at",
+   "for"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: demand for.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014851",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The reason _____ his absence is unknown.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "of",
+   "to",
+   "about"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: reason for.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014852",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He has an advantage _____ his rivals.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "over",
+   "at",
+   "to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: advantage over.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014853",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "They are in favour _____ the plan.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "with",
+   "of",
+   "to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: in favour of.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014854",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She took pride _____ her work.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "of",
+   "for",
+   "on",
+   "in"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: take pride in.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014855",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We have no control _____ the weather.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "over",
+   "on",
+   "at",
+   "to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: control over.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014856",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "It's a matter _____ opinion.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "of",
+   "on",
+   "to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: a matter of.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014857",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He is anxious _____ the results.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for at",
+   "on",
+   "about",
+   "to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: anxious about.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014858",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "There's no need _____ panic.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for to",
+   "of",
+   "in",
+   "to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: no need to / for.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014859",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I am familiar _____ this topic.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "with",
+   "to of",
+   "about",
+   "on"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: familiar with.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014860",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Her success is due _____ hard work.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "to",
+   "of",
+   "by"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: due to.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014861",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He was disappointed _____ the result.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to",
+   "at of",
+   "with",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: disappointed with.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014862",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "We are aware _____ the problem.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "about",
+   "to",
+   "of"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: aware of.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014863",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He is relevant _____ the case.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to",
+   "for",
+   "at",
+   "on"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: relevant to.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014864",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She is preoccupied _____ her studies.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "by of",
+   "with",
+   "on",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: preoccupied with.",
+  "topic": "Usage: prepositions advanced (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
  }
 ]
