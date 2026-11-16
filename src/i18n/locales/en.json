@@ -2675,5 +2675,11 @@
   "ta.when": "When to use it",
   "ta.select": "Use this wording",
   "ta.listen": "Listen to pronunciation",
-  "ta.copy": "Copy alternative"
+  "ta.copy": "Copy alternative",
+  "ss.title": "Sentence Scramble",
+  "ss.intro": "Rebuild sentences from the platform by tapping the words in the right order. 8 rounds.",
+  "ss.loading": "Preparing sentences...",
+  "ss.empty": "Tap the words below in order",
+  "ss.correct": "Correct answer:",
+  "ss.check": "Check"
 }
