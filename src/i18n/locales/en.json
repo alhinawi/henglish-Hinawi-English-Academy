@@ -2824,5 +2824,7 @@
   "atm.interview-coach.name": "Interview Trainer",
   "atm.interview-coach.description": "Practice English job interviews, STAR answers and behavioral questions.",
   "copy.failed": "Could not copy. Select the text and copy it manually.",
-  "vocab.saveError": "Could not save this change on this device. Allow storage and try again. Your existing data was not changed."
+  "vocab.saveError": "Could not save this change on this device. Allow storage and try again. Your existing data was not changed.",
+  "ex.loadError": "Could not load expressions. This is a loading error, not an empty search result. Try again.",
+  "ex.retry": "Try again"
 }
