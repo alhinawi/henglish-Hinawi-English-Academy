@@ -1,6 +1,6 @@
 // ==============================================================================
 // Henglish Academy (HENGLISH) - QUESTION BANK PANEL
-// Random-draw quiz from the verified chunked question bank
+// Random-draw quiz from the chunked practice question bank
 // (public/data/questions). Every draw serves a different set per user; no
 // question repeats until the matching pool is exhausted.
 // ==============================================================================
