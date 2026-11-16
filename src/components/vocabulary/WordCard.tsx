@@ -97,9 +97,9 @@ export const WordCard: React.FC<WordCardProps> = ({
               <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase border ${cefrStyle}`}>
                 {entry.cefr}
               </span>
-              <span className="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase bg-white/10 text-white/70">
+              {entry.pos && <span className="px-1.5 py-0.5 rounded text-[10px] font-bold uppercase bg-white/10 text-white/70">
                 {entry.pos}
-              </span>
+              </span>}
             </div>
             <p className="text-xs font-bold text-[#c4ff55] mt-0.5">
               {shownMeaning}
@@ -156,9 +156,9 @@ export const WordCard: React.FC<WordCardProps> = ({
           <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-white/5 text-white/60">
             {entry.domain}
           </span>
-          <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-white/10 text-white/80">
+          {entry.pos && <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-white/10 text-white/80">
             {entry.pos}
-          </span>
+          </span>}
           <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase border ${cefrStyle}`}>
             {entry.cefr}
           </span>
@@ -216,7 +216,7 @@ export const WordCard: React.FC<WordCardProps> = ({
       <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs text-white/60 font-bold group-hover:text-white transition-colors">
         <div className="flex items-center gap-1 text-[#ffd166]">
           <Sparkles className="w-3.5 h-3.5" />
-          <span className="text-[10px] font-mono uppercase">{entry.frequencyTier}</span>
+          {entry.frequencyTier && <span className="text-[10px] font-mono uppercase">{entry.frequencyTier}</span>}
         </div>
         <div className="flex items-center gap-1 text-[#41e7ff]">
           <span>{t('wc.details')}</span>
