@@ -28,9 +28,11 @@ export function SpeakingRecorder({ prompt, description }: { prompt: string; desc
       setError(t('sp.rec.unavailable')); return;
     }
     setStarting(true);
+    let acquiredMedia: MediaStream | null = null;
     try {
       stopSpeech();
       const media = await navigator.mediaDevices.getUserMedia({ audio: true });
+      acquiredMedia = media;
       if (!mounted.current) { media.getTracks().forEach(t => t.stop()); return; }
       stream.current = media;
       const r = new MediaRecorder(media); recorder.current = r;
@@ -46,7 +48,23 @@ export function SpeakingRecorder({ prompt, description }: { prompt: string; desc
       };
       r.start(); setRecording(true);
       timer.current = setTimeout(() => { if (r.state === 'recording') r.stop(); }, 90000);
-    } catch { if (mounted.current) setError(t('sp.rec.micError')); } finally { if (mounted.current) setStarting(false); }
+    } catch {
+      // Permission may succeed before recorder construction or start throws.
+      // Release that stream immediately, even when no recorder ever started.
+      acquiredMedia?.getTracks().forEach(track => track.stop());
+      if (stream.current === acquiredMedia) {
+        if (recorder.current) {
+          recorder.current.ondataavailable = null;
+          recorder.current.onstop = null;
+        }
+        recorder.current = null;
+        stream.current = null;
+      }
+      if (mounted.current) {
+        setRecording(false);
+        setError(t('sp.rec.micError'));
+      }
+    } finally { if (mounted.current) setStarting(false); }
   }
   return <div className="rounded-2xl border border-white/10 bg-black/20 p-4 space-y-4">
     <p dir="ltr" className="text-left text-lg font-semibold leading-8 text-white">{prompt}</p>
