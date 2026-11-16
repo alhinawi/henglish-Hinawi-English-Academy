@@ -2042,5 +2042,10 @@
   "ocr.translating": "Translating...",
   "ocr.translatedPlaceholder": "The full translation will appear here...",
   "ocr.listenTranslation": "Listen to the translation",
-  "ocr.copyTranslation": "Copy translation"
+  "ocr.copyTranslation": "Copy translation",
+  "tf.title": "True or False",
+  "tf.tagline": "An English sentence with a translation in front of you - is it really correct or not? 10 quick rounds.",
+  "tf.loading": "Preparing the sentences...",
+  "tf.trueBtn": "True",
+  "tf.falseBtn": "False"
 }
