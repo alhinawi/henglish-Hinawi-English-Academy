@@ -17,6 +17,8 @@ export interface CertificateDefinition {
 }
 
 export interface IssuedCertificate {
+  localOnly?: boolean;
+  preview?: boolean;
   certificateId: string;
   studentNameAr: string;
   studentNameEn: string;
@@ -57,10 +59,10 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     titleEn: "Certificate of Completion - Level A1",
     cefrLevel: "A1",
     requiredLessonIds: A1_RULE_IDS,
-    minQuizAverage: 0,
+    minQuizAverage: 70,
     descriptionAr:
       "تُمنح للطالب الذي أكمل دراسة جميع قواعد المستوى A1 في أكاديمية الجرامر: الأساسيات والتركيب اللغوي وأزمنة المضارع.",
-    requirementAr: `إتمام قواعد المستوى A1 كاملة (${A1_RULE_IDS.length} قواعد)`,
+    requirementAr: `اجتياز التقييم النهائي بنسبة 70% وإتمام قواعد المستوى A1 كاملة (${A1_RULE_IDS.length} قواعد)`,
   },
   {
     id: "cert-level-a2",
@@ -68,10 +70,10 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     titleEn: "Certificate of Completion - Level A2",
     cefrLevel: "A2",
     requiredLessonIds: A2_RULE_IDS,
-    minQuizAverage: 0,
+    minQuizAverage: 70,
     descriptionAr:
       "تُمنح للطالب الذي أكمل دراسة جميع قواعد المستوى A2 في أكاديمية الجرامر: أزمنة الماضي وأساسيات التأسيس اللغوي.",
-    requirementAr: `إتمام قواعد المستوى A2 كاملة (${A2_RULE_IDS.length} قاعدة)`,
+    requirementAr: `اجتياز التقييم النهائي بنسبة 70% وإتمام قواعد المستوى A2 كاملة (${A2_RULE_IDS.length} قاعدة)`,
   },
   {
     id: "cert-level-b1",
@@ -79,10 +81,10 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     titleEn: "Certificate of Completion - Level B1",
     cefrLevel: "B1",
     requiredLessonIds: B1_RULE_IDS,
-    minQuizAverage: 0,
+    minQuizAverage: 70,
     descriptionAr:
       "تُمنح للطالب الذي أكمل دراسة جميع قواعد المستوى B1 في أكاديمية الجرامر: حالات الشرط والأزمنة المتوسطة.",
-    requirementAr: `إتمام قواعد المستوى B1 كاملة (${B1_RULE_IDS.length} قواعد)`,
+    requirementAr: `اجتياز التقييم النهائي بنسبة 70% وإتمام قواعد المستوى B1 كاملة (${B1_RULE_IDS.length} قواعد)`,
   },
   {
     id: "cert-level-b2",
@@ -90,10 +92,10 @@ export const CERTIFICATE_DEFINITIONS: CertificateDefinition[] = [
     titleEn: "Certificate of Completion - Level B2",
     cefrLevel: "B2",
     requiredLessonIds: B2_RULE_IDS,
-    minQuizAverage: 0,
+    minQuizAverage: 70,
     descriptionAr:
       "تُمنح للطالب الذي أكمل دراسة جميع قواعد المستوى B2 في أكاديمية الجرامر: المبني للمجهول والتراكيب فوق المتوسطة.",
-    requirementAr: `إتمام قواعد المستوى B2 كاملة (${B2_RULE_IDS.length} قواعد)`,
+    requirementAr: `اجتياز التقييم النهائي بنسبة 70% وإتمام قواعد المستوى B2 كاملة (${B2_RULE_IDS.length} قواعد)`,
   },
   {
     id: "cert-future-perfect",
