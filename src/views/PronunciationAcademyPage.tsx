@@ -12,12 +12,14 @@ import {
   Layers,
   ArrowRight,
 } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface PronunciationAcademyPageProps {
   onNavigate: (route: PageRoute) => void;
 }
 
 export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> = ({ onNavigate }) => {
+  const { t } = useLanguage();
   const [activePairIdx, setActivePairIdx] = useState(0);
   const appText = useAppTextMap('skillsAcademyData');
   const [testedSound, setTestedSound] = useState<'A' | 'B' | null>(null);
@@ -46,14 +48,14 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
   };
 
   const ipaVowels = [
-    { symbol: '/iː/', ex: 'see, sheep', ar: 'ياء ممدودة واضحة' },
-    { symbol: '/ɪ/', ex: 'sit, ship', ar: 'كسرة خفيفة سريعة' },
-    { symbol: '/e/', ex: 'bed, men', ar: 'فتحة مرققة قصيرة' },
-    { symbol: '/æ/', ex: 'cat, black', ar: 'ألف مفتوحة ومفخمة' },
-    { symbol: '/ɑː/', ex: 'car, dark', ar: 'ألف ممدودة من الحلق' },
-    { symbol: '/uː/', ex: 'blue, moon', ar: 'واو ممدودة مضمومة' },
-    { symbol: '/ʊ/', ex: 'put, book', ar: 'ضمة خفيفة وسريعة' },
-    { symbol: '/ə/', ex: 'about, banana', ar: 'صوت الشوا (Schwa) المحايد' },
+    { symbol: '/iː/', ex: 'see, sheep', ar: 'pa.vowel1' },
+    { symbol: '/ɪ/', ex: 'sit, ship', ar: 'pa.vowel2' },
+    { symbol: '/e/', ex: 'bed, men', ar: 'pa.vowel3' },
+    { symbol: '/æ/', ex: 'cat, black', ar: 'pa.vowel4' },
+    { symbol: '/ɑː/', ex: 'car, dark', ar: 'pa.vowel5' },
+    { symbol: '/uː/', ex: 'blue, moon', ar: 'pa.vowel6' },
+    { symbol: '/ʊ/', ex: 'put, book', ar: 'pa.vowel7' },
+    { symbol: '/ə/', ex: 'about, banana', ar: 'pa.vowel8' },
   ];
 
   return (
@@ -66,15 +68,15 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#c4ff55]/20 text-[#c4ff55] border border-[#c4ff55]/40 shadow-sm">
             <Volume2 className="w-4 h-4" />
-            <span>HINAWI PRONUNCIATION ACADEMY • استوديو الفونيتكس ومخارج الحروف</span>
+            <span>{t('pa.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية النطق والفونيتكس (IPA)
+            {t('pa.title')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            تخلص من اللهجة العربية الثقيلة، وافهم الفرق الدقيق بين الأصوات المتقاربة مثل (ship vs sheep) أو (p vs b)، وتعرف على أبجدية الصوتيات الدولية (IPA) والنبر الصوتي للكلمات.
+            {t('pa.blurb')}
           </p>
         </div>
       </section>
@@ -85,10 +87,10 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
               <Ear className="w-6 h-6 text-[#ffd166]" />
-              الأزواج الصوتية الصغرى (Minimal Pairs Trainer)
+              {t('pa.pairsTitle')}
             </h2>
             <p className="text-xs text-[#b9b6d5]">
-              كلمتان متطابقتان تماماً باستثناء صوت واحد فقط يغير المعنى بنسبة 180 درجة!
+              {t('pa.pairsBlurb')}
             </p>
           </div>
 
@@ -108,7 +110,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
                     : 'bg-white/5 text-white hover:bg-white/10 border border-white/10'
                 }`}
               >
-                تحدي 0{idx + 1}
+                {t('pa.challenge')} 0{idx + 1}
               </button>
             ))}
           </div>
@@ -129,7 +131,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
               className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
               <Volume2 className="w-4 h-4 text-[#ffd166]" />
-              <span>استمع لصوت (A)</span>
+              <span>{t('pa.listenA')}</span>
             </button>
           </div>
 
@@ -145,7 +147,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
               className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
               <Volume2 className="w-4 h-4 text-[#ff4f9a]" />
-              <span>استمع لصوت (B)</span>
+              <span>{t('pa.listenB')}</span>
             </button>
           </div>
 
@@ -153,22 +155,22 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
         {/* Pronunciation Tip */}
         <div className="p-4 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-white space-y-1">
-          <strong className="text-[#ffd166]">نصيحة الخبير لنطق هذا الزوج: </strong>
+          <strong className="text-[#ffd166]">{t('pa.tipTitle')} </strong>
           <span>{txText(appText, pair.tipAr)}</span>
         </div>
 
         {/* Ear Training Game */}
         <div className="p-6 rounded-2xl bg-[#09091a] border border-white/10 text-center space-y-4">
-          <h3 className="text-base font-black text-white">لعبة التمييز السمعي: أي الكلمتين نطقنا؟</h3>
+          <h3 className="text-base font-black text-white">{t('pa.earGameTitle')}</h3>
           <p className="text-xs text-[#b9b6d5]">
-            اضغط على الزر للاستماع لكلمة عشوائية من الاثنين، ثم خمّن هل كانت (A) أم (B):
+            {t('pa.earGameBlurb')}
           </p>
 
           <button
             onClick={handleTestEar}
             className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
           >
-           شغّل صوتاً عشوائياً للاختبار
+           {t('pa.playRandom')}
           </button>
 
           {testedSound && (
@@ -177,13 +179,13 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
                 onClick={() => handleGuess('A')}
                 className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer"
               >
-                كانت: {pair.wordA} (A)
+                {t('pa.wasLabel')} {pair.wordA} (A)
               </button>
               <button
                 onClick={() => handleGuess('B')}
                 className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer"
               >
-                كانت: {pair.wordB} (B)
+                {t('pa.wasLabel')} {pair.wordB} (B)
               </button>
             </div>
           )}
@@ -192,7 +194,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <div className={`p-3 rounded-xl text-xs font-bold ${
               quizScore === 1 ? 'text-[#c4ff55] bg-[#c4ff55]/10' : 'text-[#ff8bb9] bg-[#ff4f9a]/10'
             }`}>
-              {quizScore === 1 ? 'إجابة صحيحة مذهلة! أذنك تميز الفروق الدقيقة.' : 'إجابة خاطئة! استمع مجدداً وقارن بين الصوتين.'}
+              {quizScore === 1 ? t('pa.correct') : t('pa.wrong')}
             </div>
           )}
         </div>
@@ -204,10 +206,10 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         <div>
           <h2 className="text-xl font-black text-white flex items-center gap-2">
             <Layers className="w-5 h-5 text-[#41e7ff]" />
-            جدول رموز الأصوات المتحركة (IPA Vowels Chart)
+            {t('pa.chartTitle')}
           </h2>
           <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-            الأصوات الأساسية التي تجعل قراءة أي قاموس إنجليزي سهلة وبديهية:
+            {t('pa.chartBlurb')}
           </p>
         </div>
 
@@ -219,11 +221,11 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             >
               <div className="en text-2xl font-black text-[#ffd166]">{v.symbol}</div>
               <div className="en text-xs font-mono text-white">{v.ex}</div>
-              <div className="text-[11px] text-[#b9b6d5]">{v.ar}</div>
+              <div className="text-[11px] text-[#b9b6d5]">{t(v.ar)}</div>
               <button
                 onClick={() => speakEnglish(v.ex)}
                 className="p-1 rounded text-[#41e7ff] hover:text-white"
-                title="استمع للكلمات"
+                title={t('pa.listenWords')}
               >
                 <Volume2 className="w-3.5 h-3.5 mx-auto" />
               </button>
