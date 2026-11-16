@@ -1,9 +1,9 @@
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
 import { LITERACY_READING } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-const READING_PASSAGES = LITERACY_READING.filter(p => p.level === 'B1').slice(0, 4).map(p => ({ ...p, wordCount: p.content.split(/\s+/).length, estimatedTime: 'تدريب حر', category: 'Original teaching scenario', contentAr: 'نص تعليمي أصلي. راجع مفردات السياق والأنشطة في المسار أعلاه.', comprehensionQuestions: [{ id: p.id + '-legacy', question: p.question, options: p.options, answer: p.answer, explanation: 'راجع النص؛ الإجابة الصحيحة: ' + p.options[p.answer] }] }));
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
   BookOpen,
@@ -22,6 +22,8 @@ interface ReadingAcademyPageProps {
 }
 
 export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNavigate, onCompleteActivity }) => {
+  const { t } = useLanguage();
+  const READING_PASSAGES = LITERACY_READING.filter(p => p.level === 'B1').slice(0, 4).map(p => ({ ...p, wordCount: p.content.split(/\s+/).length, estimatedTime: t('ra.free'), category: t('ra.category'), contentAr: t('ra.note'), comprehensionQuestions: [{ id: p.id + '-legacy', question: p.question, options: p.options, answer: p.answer, explanation: t('ra.answer') + p.options[p.answer] }] }));
   const [selectedPassageIdx, setSelectedPassageIdx] = useState(0);
   const appText = useAppTextMap('literacyAcademyData');
   const [showArabic, setShowArabic] = useState(false);
@@ -50,7 +52,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
   return (
     <div className="space-y-10 pb-16 text-right">
       <LiteracyAcademy kind="reading" onCompleteActivity={onCompleteActivity} />
-      <details className="rounded-3xl border border-white/10 p-4"><summary className="cursor-pointer font-bold text-slate-200">أدوات القراءة الإضافية</summary>
+      <details className="rounded-3xl border border-white/10 p-4"><summary className="cursor-pointer font-bold text-slate-200">{t('ra.extras')}</summary>
       <div className="mt-6 space-y-8">
       
       {/* Academy Hero */}
@@ -60,15 +62,15 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/40 shadow-sm">
             <BookOpen className="w-4 h-4" />
-            <span>HINAWI READING ACADEMY • نصوص متدرجة وتقنيات القراءة السريعة</span>
+            <span>{t('ra.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية القراءة والفهم السريع
+            {t('ra.title')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            طوّر قدرتك على القراءة الاستيعابية باللغة الإنجليزية، وتدرّب على مهارات المسح البصري (Scanning) والقراءة الخاطفة (Skimming) لاستخلاص الأفكار الرئيسية دون توقف عند كل كلمة مجهولة.
+            {t('ra.intro')}
           </p>
         </div>
       </section>
@@ -105,9 +107,9 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
             <div className="inline-flex items-center gap-2 text-xs font-bold text-[#ffd166] mb-1">
               <span>{txText(appText, passage.category)}</span>
               <span>•</span>
-              <span className="en">{passage.wordCount} words</span>
+              <span className="en">{t('ra.wordCount').replace('{count}', String(passage.wordCount))}</span>
               <span>•</span>
-              <span>مستوى CEFR: {passage.level}</span>
+              <span>{t('ra.level')} {passage.level}</span>
             </div>
             <h2 className="text-2xl sm:text-3xl font-black text-white">{txText(appText, passage.title)}</h2>
           </div>
@@ -121,13 +123,13 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-[#dedbf4] flex items-center gap-1.5 cursor-pointer"
             >
               <Languages className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>{showArabic ? 'إخفاء الترجمة العربية' : 'إظهار الترجمة العربية'}</span>
+              <span>{showArabic ? t('ra.hideNote') : t('ra.showNote')}</span>
             </button>
 
             <button
               onClick={() => speakEnglish(passage.content)}
               className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] cursor-pointer"
-              title="الاستماع للنص كاملاً بصوت واضح"
+              title={t('ra.listen')}
             >
               <Volume2 className="w-4 h-4" />
             </button>
@@ -142,7 +144,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
 
           {showArabic && (
             <div className="text-right text-sm text-[#dedbf4] leading-relaxed bg-[#171632] p-5 rounded-2xl border border-white/10 space-y-2">
-              <span className="text-xs font-bold text-[#ffd166]">الترجمة العربية السياقية:</span>
+              <span className="text-xs font-bold text-[#ffd166]">{t('ra.noteTitle')}</span>
               <p>{txText(appText, passage.contentAr)}</p>
             </div>
           )}
@@ -151,12 +153,12 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
 
       {/* 3. READING COMPREHENSION QUESTIONS */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
-        <div className="flex items-center justify-between pb-3 border-b border-white/10">
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between pb-3 border-b border-white/10">
           <h3 className="text-lg font-black text-white flex items-center gap-2">
             <HelpCircle className="w-5 h-5 text-[#ffd166]" />
-            اختبار فهم واستيعاب المقروء (Comprehension Check)
+            {t('ra.quiz')}
           </h3>
-          <span className="text-xs text-[#b9b6d5]">{passage.comprehensionQuestions.length} أسئلة</span>
+          <span className="shrink-0 text-xs text-[#b9b6d5]">{t('ra.questionCount').replace('{count}', String(passage.comprehensionQuestions.length))}</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -166,7 +168,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
 
             return (
               <div key={q.id} className="p-5 rounded-2xl bg-[#09091a] border border-white/10 space-y-4">
-                <div className="text-xs font-bold text-[#ffd166]">سؤال 0{qIdx + 1}</div>
+                <div className="text-xs font-bold text-[#ffd166]">{t('ra.question')} {qIdx + 1}</div>
                 <p className="en text-sm sm:text-base font-bold text-white">{q.question}</p>
 
                 <div className="space-y-2">
@@ -200,7 +202,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
 
                 {answered && (
                   <div className="p-3 rounded-xl bg-white/5 text-xs text-[#dedbf4]">
-                    <strong className="text-[#ffd166]">التفسير: </strong>
+                    <strong className="text-[#ffd166]">{t('ra.explanation')} </strong>
                     {q.explanation}
                   </div>
                 )}
