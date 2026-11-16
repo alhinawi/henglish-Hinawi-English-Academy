@@ -2444,5 +2444,18 @@
   "pg.speakingTitle": "Einen gesprochenen Dialog üben",
   "pg.speakingUnit": "Szenario",
   "pg.quizTitle": "Mindestens 80 % in einem Quiz erreichen",
-  "pg.quizUnit": "Quiz"
+  "pg.quizUnit": "Quiz",
+  "ve.incomplete": "Gib alle sechs Ziffern des Bestätigungscodes ein.",
+  "ve.verified": "E-Mail bestätigt! Die Akademie wird geöffnet...",
+  "ve.invalid": "Der Bestätigungscode ist falsch oder abgelaufen.",
+  "ve.resent": "Ein neuer Bestätigungscode wurde an deine E-Mail-Adresse gesendet.",
+  "ve.resendFailed": "Code konnte nicht erneut gesendet werden. Versuche es später noch einmal.",
+  "ve.title": "E-Mail bestätigen",
+  "ve.sentTo": "Wir haben einen sechsstelligen Bestätigungscode gesendet an:",
+  "ve.email": "deine E-Mail-Adresse",
+  "ve.confirm": "Konto bestätigen und weiterlernen",
+  "ve.noCode": "Keinen Code erhalten?",
+  "ve.resend": "Jetzt erneut senden",
+  "ve.back": "Zurück zur Anmeldung",
+  "ve.resendIn": "Erneut senden in {seconds} Sekunden"
 }
