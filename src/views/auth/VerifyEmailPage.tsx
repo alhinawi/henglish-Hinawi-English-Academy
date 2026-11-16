@@ -18,10 +18,13 @@ interface VerifyEmailPageProps {
 }
 
 export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, defaultEmail = '' }) => {
-  const { verifyOtp, resendOtp, user } = useAuth();
+  const { verifyOtp, resendOtp, user, isAuthenticated, isEmailVerified } = useAuth();
   const { t, dir } = useLanguage();
 
-  const [email, setEmail] = useState(defaultEmail || user?.email || '');
+  const email = user?.email?.trim() || '';
+  const hasPendingVerification = isAuthenticated && !isEmailVerified &&
+    Boolean(email) && !user.id.startsWith('guest-') &&
+    (!defaultEmail || defaultEmail.trim().toLowerCase() === email.toLowerCase());
   const [code, setCode] = useState(['', '', '', '', '', '']);
   const [countdown, setCountdown] = useState(60);
   const [canResend, setCanResend] = useState(false);
@@ -61,6 +64,7 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
 
   const handleVerify = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!hasPendingVerification) return;
     const token = code.join('');
     if (token.length !== 6) {
       setFeedback({ type: 'error', text: t('ve.incomplete') });
@@ -87,7 +91,7 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
   };
 
   const handleResend = async () => {
-    if (!canResend) return;
+    if (!hasPendingVerification || !canResend) return;
     setCanResend(false);
     setCountdown(60);
     const res = await resendOtp(email);
@@ -97,6 +101,19 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
       setFeedback({ type: 'error', text: res.error || t('ve.resendFailed') });
     }
   };
+
+  if (!hasPendingVerification) {
+    return (
+      <div dir={dir} className="min-h-screen bg-slate-950 px-4 py-12 flex items-center justify-center text-slate-100">
+        <section className="w-full max-w-md rounded-3xl border border-slate-800 bg-slate-900 p-6 text-center space-y-5">
+          <Mail className="w-10 h-10 mx-auto text-cyan-300" />
+          <h2 className="text-xl font-bold">{t('ve.noneTitle')}</h2>
+          <p className="text-sm text-slate-300 leading-relaxed">{t('ve.noneBody')}</p>
+          <button type="button" onClick={() => onNavigate('login')} className="min-h-11 rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950">{t('ve.back')}</button>
+        </section>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir={dir}>

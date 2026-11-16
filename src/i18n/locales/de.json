@@ -2457,5 +2457,7 @@
   "ve.noCode": "Keinen Code erhalten?",
   "ve.resend": "Jetzt erneut senden",
   "ve.back": "Zurück zur Anmeldung",
-  "ve.resendIn": "Erneut senden in {seconds} Sekunden"
+  "ve.resendIn": "Erneut senden in {seconds} Sekunden",
+  "ve.noneTitle": "Keine E-Mail-Bestätigung ausstehend",
+  "ve.noneBody": "Für dieses Konto steht derzeit keine E-Mail-Bestätigung aus. Du kannst zur Anmeldung zurückkehren."
 }
