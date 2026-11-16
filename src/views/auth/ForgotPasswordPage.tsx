@@ -41,7 +41,7 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
       playSound('correct');
       setIsSubmitted(true);
     } else {
-      setFeedback({ type: 'error', text: res.error || t('fp.failed') });
+      setFeedback({ type: 'error', text: res.error === 'auth.recoveryUnavailable' ? t('auth.recoveryUnavailable') : res.error || t('fp.failed') });
     }
   };
 

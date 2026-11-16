@@ -2574,5 +2574,7 @@
   "fp.back": "Back to sign in",
   "fp.email": "Registered email",
   "fp.send": "Send reset link",
-  "fp.remembered": "Remember your password? Sign in"
+  "fp.remembered": "Remember your password? Sign in",
+  "auth.recoveryUnavailable": "Password recovery is currently unavailable. No reset link was sent.",
+  "auth.passwordUpdateUnavailable": "Password updates are currently unavailable. Your password was not changed."
 }

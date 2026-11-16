@@ -56,7 +56,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
       }, 1500);
     } else {
       playSound('wrong');
-      setFeedback({ type: 'error', text: res.error || t('rp.failed') });
+      setFeedback({ type: 'error', text: res.error === 'auth.passwordUpdateUnavailable' ? t('auth.passwordUpdateUnavailable') : res.error || t('rp.failed') });
     }
   };
 
