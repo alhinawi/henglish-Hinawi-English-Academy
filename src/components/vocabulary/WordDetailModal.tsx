@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   X,
   Bookmark,
@@ -46,6 +47,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   onClose,
   onWordSavedChange,
 }) => {
+  const { t } = useLanguage();
   const [saved, setSaved] = useState(false);
   const [userNote, setUserNote] = useState('');
   const txMap = useContentMap('vocab');
@@ -108,7 +110,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
           <button
             onClick={onClose}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all cursor-pointer"
-            title="إغلاق (Esc)"
+            title={t('wdm.close')}
           >
             <X className="w-5 h-5" />
           </button>
@@ -125,12 +127,12 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
               {saved ? (
                 <>
                   <BookmarkCheck className="w-4 h-4 text-[#c4ff55]" />
-                  <span>محفوظة في بنك كلماتي</span>
+                  <span>{t('wdm.saved')}</span>
                 </>
               ) : (
                 <>
                   <Bookmark className="w-4 h-4" />
-                  <span>حفظ في المفردات</span>
+                  <span>{t('wdm.save')}</span>
                 </>
               )}
             </button>
@@ -141,7 +143,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         <div className="space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap items-center gap-3">
                 <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight font-sans">
                   {entry.headword}
                 </h2>
@@ -169,7 +171,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
 
           {/* Dual Pronunciation Bar */}
           <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex flex-wrap items-center gap-4">
-            <span className="text-xs font-black text-[#dedbf4]">النطق المزدوج (Dual Pronunciation):</span>
+            <span className="text-xs font-black text-[#dedbf4]">{t('wdm.pronunciation')}</span>
             <div className="flex items-center gap-3">
               <PronunciationButton
                 wordId={entry.id}
@@ -196,7 +198,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
           <div className="space-y-2">
             <h4 className="text-xs font-black text-white/70 flex items-center gap-1.5">
               <Tag className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>معانٍ وسياقات أخرى بالعربية:</span>
+              <span>{t('wdm.other')}</span>
             </h4>
             <div className="flex flex-wrap gap-2">
               {entry.otherMeaningsAr.map((m, i) => (
@@ -211,23 +213,23 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
           </div>
         )}
 
-        {/* English Definition */}
-        <div className="space-y-2 p-4 rounded-2xl bg-white/5 border border-white/10">
+        {/* English definition */}
+        {entry.definitionEn?.trim() && <div className="space-y-2 p-4 rounded-2xl bg-white/5 border border-white/10">
           <h4 className="text-xs font-black text-[#41e7ff] flex items-center gap-1.5">
             <BookOpen className="w-3.5 h-3.5" />
-            <span>English Definition</span>
+            <span>{t('wdm.definition')}</span>
           </h4>
           <p className="text-sm text-white/90 leading-relaxed font-sans" dir="ltr">
             {entry.definitionEn}
           </p>
-        </div>
+        </div>}
 
         {/* Grammatical Inflections */}
         {entry.inflections && Object.keys(entry.inflections).length > 0 && (
           <div className="space-y-2">
             <h4 className="text-xs font-black text-[#ffd166] flex items-center gap-1.5">
               <Layers className="w-3.5 h-3.5" />
-              <span>التصريفات والأشكال النحوية (Grammatical Forms):</span>
+              <span>{t('wdm.forms')}</span>
             </h4>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5" dir="ltr">
               {Object.entries(entry.inflections).map(([key, val]) => (
@@ -244,7 +246,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         <div className="space-y-3 p-4 rounded-2xl bg-[#c4ff55]/5 border border-[#c4ff55]/20">
           <h4 className="text-xs font-black text-[#c4ff55] flex items-center gap-1.5">
             <Quote className="w-3.5 h-3.5" />
-            <span>مثال عملي في سياق واقعي (Real Context Example):</span>
+            <span>{t('wdm.example')}</span>
           </h4>
           <div className="space-y-1.5">
             <p className="text-sm sm:text-base font-bold text-white font-sans" dir="ltr">
@@ -260,7 +262,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         {entry.collocations && entry.collocations.length > 0 && (
           <div className="space-y-2">
             <h4 className="text-xs font-black text-white/70">
-              متلازمات لفظية طبيعية (Collocations):
+              {t('wdm.collocations')}
             </h4>
             <div className="flex flex-wrap gap-2" dir="ltr">
               {entry.collocations.map((col, idx) => (
@@ -279,21 +281,21 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         <div className="space-y-3 p-4 rounded-2xl bg-white/5 border border-white/10">
           <h4 className="text-xs font-black text-[#ffd166] flex items-center gap-1.5">
             <Brain className="w-3.5 h-3.5" />
-            <span>ملاحظاتك الشخصية للتكرار المتباعد (Spaced Repetition Note):</span>
+            <span>{t('wdm.notes')}</span>
           </h4>
           <div className="flex gap-2">
             <input
               type="text"
               value={userNote}
               onChange={e => setUserNote(e.target.value)}
-              placeholder="اكتب ملاحظة خاصة لتثبيت الكلمة في ذاكرتك..."
-              className="flex-1 px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-xs focus:outline-none focus:border-[#ffd166]"
+              placeholder={t('wdm.placeholder')}
+              className="min-w-0 flex-1 px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-xs focus:outline-none focus:border-[#ffd166]"
             />
             <button
               onClick={handleSaveNote}
               className="px-4 py-2 rounded-xl bg-[#ffd166] text-[#09091a] text-xs font-black hover:bg-[#ffe18d] transition-all cursor-pointer"
             >
-              حفظ الملاحظة
+              {t('wdm.saveNote')}
             </button>
           </div>
         </div>
