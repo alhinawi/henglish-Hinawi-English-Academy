@@ -50,6 +50,7 @@ const PracticePage = lazy(() => import('./views/PracticePage').then(m => ({ defa
 const QuizzesPage = lazy(() => import('./views/QuizzesPage').then(m => ({ default: m.QuizzesPage })));
 const GamesPage = lazy(() => import('./views/GamesPage').then(m => ({ default: m.GamesPage })));
 const ResourcesPage = lazy(() => import('./views/ResourcesPage').then(m => ({ default: m.ResourcesPage })));
+const SourcesPage = lazy(() => import('./views/SourcesPage').then(m => ({ default: m.SourcesPage })));
 const AboutPage = lazy(() => import('./views/AboutPage').then(m => ({ default: m.AboutPage })));
 const SentencesLibraryPage = lazy(() => import('./views/SentencesLibraryPage').then(m => ({ default: m.SentencesLibraryPage })));
 const MovieStudioPage = lazy(() => import('./views/MovieStudioPage').then(m => ({ default: m.MovieStudioPage })));
@@ -231,6 +232,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('games');
       } else if (hash === 'resources') {
         setCurrentRoute('resources');
+      } else if (hash === 'sources' || hash === 'best-resources' || hash === 'top-resources') {
+        setCurrentRoute('sources');
       } else if (hash === 'about') {
         setCurrentRoute('about');
       } else if (hash === 'sentences' || hash === 'library' || hash === 'sentences-library') {
@@ -527,6 +530,11 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 {/* 20. Resources & Cheat Sheets */}
                 {currentRoute === 'resources' && (
                   <ResourcesPage />
+                )}
+
+                {/* 20b. Top External Resources Directory */}
+                {currentRoute === 'sources' && (
+                  <SourcesPage />
                 )}
 
                 {/* 21. About Academy & Methodology */}

@@ -43,6 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { label: 'المحادثات', route: 'speaking' as PageRoute },
     { label: 'الأفعال V3', route: 'vocabulary' as PageRoute },
     { label: 'المذكرات', route: 'resources' as PageRoute },
+    { label: 'أهم المصادر', route: 'sources' as PageRoute },
   ];
 
   return (
