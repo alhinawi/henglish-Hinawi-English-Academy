@@ -46,7 +46,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'قنوات يوتيوب',
     labelEn: 'YouTube Channels',
     descriptionAr: 'قنوات بتنزل دروس جديدة كل أسبوع، من الشرح بالعربي للنطق الأمريكي والبريطاني.',
-    imageUrl: 'https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/youtube.webp',
     imageAlt: 'YouTube logo on a screen',
   },
   {
@@ -54,7 +54,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'تطبيقات التعلم',
     labelEn: 'Learning Apps',
     descriptionAr: 'تطبيقات موبايل تخلي المذاكرة عادة يومية، من الكلمات للنطق والمحادثة.',
-    imageUrl: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/apps.webp',
     imageAlt: 'Hand holding a smartphone',
   },
   {
@@ -62,7 +62,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'مواقع التعلم',
     labelEn: 'Learning Websites',
     descriptionAr: 'مواقع كاملة فيها دروس وتمارين تفاعلية لكل المستويات، أغلبها مجاني.',
-    imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/websites.webp',
     imageAlt: 'Laptop with code on screen',
   },
   {
@@ -70,7 +70,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'الممارسة مع النيتيف',
     labelEn: 'Native Speaker Practice',
     descriptionAr: 'اتكلم مع ناس لغتها الأم إنجليزي: تبادل لغات مجاني أو مدرسين بالساعة.',
-    imageUrl: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/native.webp',
     imageAlt: 'Two people shaking hands',
   },
   {
@@ -78,7 +78,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'بودكاست',
     labelEn: 'Podcasts',
     descriptionAr: 'اسمع وأنت في المواصلات أو المشي، حلقات على كل المستويات من 6 دقايق لساعة.',
-    imageUrl: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/podcasts.webp',
     imageAlt: 'Studio microphone',
   },
   {
@@ -86,7 +86,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'قواميس وأدوات',
     labelEn: 'Dictionaries & Tools',
     descriptionAr: 'قاموسك اليومي وأدوات النطق والكتابة والترجمة اللي محدش يستغنى عنها.',
-    imageUrl: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/dictionaries.webp',
     imageAlt: 'Old dictionary book',
   },
   {
@@ -94,7 +94,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'IELTS و TOEFL',
     labelEn: 'Exam Preparation',
     descriptionAr: 'كل اللي محتاجه لامتحانات IELTS و TOEFL وكشف مستواك الرسمي.',
-    imageUrl: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/exams.webp',
     imageAlt: 'Student writing an exam',
   },
   {
@@ -102,7 +102,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'كتب لكل مستوى',
     labelEn: 'Books by Level',
     descriptionAr: 'أشهر الكتب العالمية في الجرامر والكلمات والمناهج، مرتبة حسب مستواك.',
-    imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/books.webp',
     imageAlt: 'Library bookshelves',
   },
   {
@@ -110,7 +110,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'قراءة واستماع متدرج',
     labelEn: 'Graded Readers & Listening',
     descriptionAr: 'قصص ومقالات مكتوبة بمستويات من A1 لحد C1 عشان تقرأ كتير من غير ما تزهق.',
-    imageUrl: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/readers.webp',
     imageAlt: 'Open book with lights',
   },
   {
@@ -118,7 +118,7 @@ export const SOURCE_CATEGORIES: SourceCategoryInfo[] = [
     labelAr: 'للمتعلم المصري والعربي',
     labelEn: 'For Egyptian & Arabic Learners',
     descriptionAr: 'مصادر بتشرح بالعربي ومنصات عربية فيها كورسات إنجليزي قوية.',
-    imageUrl: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80',
+    imageUrl: '/images/sources/arabic.webp',
     imageAlt: 'Students learning together',
   },
 ];
