@@ -1506,7 +1506,7 @@
   "qz.topicModals": "Modal Verbs",
   "qz.topicPhrasalVerbs": "Phrasal Verbs",
   "qz.distractorAnalysis": "Wrong-option analysis:",
-  "qz.genError": "Could not prepare the quiz right now. The backup question bank was used.",
+  "qz.genError": "Could not prepare a valid quiz right now. Try again or use the question bank.",
   "qz.heroTitle": "Interactive quiz and test bank",
   "qz.heroBody": "Test your skills with the comprehensive question bank, or create unlimited instant quizzes tailored to your level in any English rule.",
   "qz.tabCustom": "Instant custom quizzes",
