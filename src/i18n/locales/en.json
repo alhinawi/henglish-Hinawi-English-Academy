@@ -2371,5 +2371,16 @@
   "qe.wrong": "That is not the right answer.",
   "qe.explanationLabel": "Explanation in Egyptian Arabic:",
   "qe.prevQuestion": "Previous question",
-  "qe.nextQuestion": "Next question"
+  "qe.nextQuestion": "Next question",
+  "ts.badge": "AI translation and language analysis studio",
+  "ts.blurb": "Contextual translation, grammar explanations, word analysis and spaced repetition.",
+  "ts.assistant": "Ask the translation assistant",
+  "ts.studio": "Translation and explanations",
+  "ts.main": "Main",
+  "ts.documents": "Document translation (DOCX/PDF)",
+  "ts.voice": "Live voice translation",
+  "ts.ocr": "Image scanning (OCR)",
+  "ts.practice": "Translation challenges and practice",
+  "ts.vocab": "Vocabulary and history (SRS)",
+  "ts.analysisUnavailable": "No verified analysis is available for this word in the current translation result."
 }
