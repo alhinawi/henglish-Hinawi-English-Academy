@@ -67,7 +67,7 @@ const COURSE_LEVEL_OPTIONS = COURSE_LEVELS.map((value, i) => [value, COURSE_LEVE
 export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   onNavigate,
 }) => {
-  const [courses, setCourses] = useState<CourseItem[]>(COURSES_CATALOG);
+  const [courses] = useState<CourseItem[]>(COURSES_CATALOG);
   const [activeTab, setActiveTab] = useState<
     "courses" | "lessons" | "students" | "videos" | "speaking" | "ai" | "tts"
   >("courses");
@@ -76,7 +76,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const initialVideos: (LessonVideoResource & { topicKey: string })[] = Object.entries(GRAMMAR_VIDEO_RESOURCES).flatMap(
     ([topicKey, vids]) => vids.map(v => ({ ...v, topicKey }))
   );
-  const [videoList, setVideoList] = useState(initialVideos);
+  const [videoList] = useState(initialVideos);
   const [previewVideo, setPreviewVideo] = useState<(LessonVideoResource & { topicKey: string }) | null>(null);
 
   // New Video Form State
@@ -84,13 +84,12 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const [vidUrl, setVidUrl] = useState("");
   const [vidTitle, setVidTitle] = useState("");
   const [vidTitleAr, setVidTitleAr] = useState("");
-  const [vidChannel, setVidChannel] = useState("BBC Learning English");
-  const [vidDuration, setVidDuration] = useState("10:00");
-  const [vidSaved, setVidSaved] = useState(false);
+  const [vidChannel, setVidChannel] = useState("");
+  const [vidDuration, setVidDuration] = useState("");
   const [vidError, setVidError] = useState("");
 
   // Speaking Evaluations State
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   // Real speaking evaluations only (local log); no seeded demo records.
   const [speakingEvals, setSpeakingEvals] = useState<SpeakingEvalRecord[]>(() => {
     try {
@@ -123,7 +122,6 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const [newTitleEn, setNewTitleEn] = useState("");
   const [newDesc, setNewDesc] = useState("");
   const [newLevel, setNewLevel] = useState<CourseItem["level"]>(COURSE_LEVELS[1]);
-  const [formSaved, setFormSaved] = useState(false);
 
   // New Lesson Form State
   const [lessonTitle, setLessonTitle] = useState("");
@@ -133,94 +131,6 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const [lessonLevel, setLessonLevel] = useState<CEFRLevel>("B2");
   const [lessonExplanation, setLessonExplanation] = useState("");
   const [isPublished, setIsPublished] = useState(true);
-  const [lessonSaved, setLessonSaved] = useState(false);
-
-  const handleAddCourse = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!newTitle.trim()) return;
-
-    playSound("correct");
-    fireCelebration();
-
-    const newCourse: CourseItem = {
-      id: `course-${Date.now()}`,
-      title: newTitle,
-      titleEn: newTitleEn || "New Course",
-      description: newDesc || t("admin.defaultCourseDesc"),
-      level: newLevel,
-      lessonsCount: 6,
-      duration: t("admin.defaultCourseDuration"),
-      rating: 5.0,
-      studentsCount: 1,
-      tag: t("admin.newCourseTag"),
-      icon: "",
-    };
-
-    setCourses((prev) => [newCourse, ...prev]);
-    setNewTitle("");
-    setNewTitleEn("");
-    setNewDesc("");
-    setFormSaved(true);
-    setTimeout(() => setFormSaved(false), 3000);
-  };
-
-  const handleDeleteCourse = (id: string) => {
-    playSound("click");
-    setCourses((prev) => prev.filter((c) => c.id !== id));
-  };
-
-  const handleCreateLesson = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!lessonTitle.trim()) return;
-
-    playSound("correct");
-    fireCelebration();
-    setLessonSaved(true);
-    setTimeout(() => {
-      setLessonSaved(false);
-      setLessonTitle("");
-      setLessonSubtitle("");
-      setLessonDesc("");
-      setLessonExplanation("");
-    }, 2500);
-  };
-
-  const handleAddVideo = (e: React.FormEvent) => {
-    e.preventDefault();
-    setVidError("");
-    const extractedId = extractYouTubeId(vidUrl);
-    if (!extractedId || !isValidYouTubeId(extractedId)) {
-      setVidError(t("admin.invalidYouTube"));
-      playSound("wrong");
-      return;
-    }
-
-    const newVid: LessonVideoResource & { topicKey: string } = {
-      id: `vid-${Date.now()}`,
-      youtubeId: extractedId,
-      title: vidTitle || "Grammar Video Lesson",
-      titleAr: vidTitleAr || t("admin.defaultVideoTitleAr"),
-      channelName: vidChannel || "BBC Learning English",
-      duration: vidDuration || "10:00",
-      thumbnailUrl: `https://img.youtube.com/vi/${extractedId}/hqdefault.jpg`,
-      descriptionAr: t("admin.defaultVideoDescAr"),
-      topicKey: vidTopic,
-    };
-
-    setVideoList((prev) => [newVid, ...prev]);
-    playSound("correct");
-    fireCelebration();
-    setVidSaved(true);
-    setVidUrl("");
-    setVidTitle("");
-    setVidTitleAr("");
-    setTimeout(() => setVidSaved(false), 3000);
-  };
-
-  const handleDeleteVideo = (id: string) => {
-    playSound("click");
-    setVideoList((prev) => prev.filter((v) => v.id !== id));
-  };
 
   const handleClearSpeakingEvals = () => {
     playSound("click");
@@ -229,7 +139,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   };
 
   return (
-    <div className="space-y-10 pb-16 text-right">
+    <div dir={dir} className="space-y-10 pb-16 text-start">
       {/* Admin Hero */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -238,7 +148,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm">
             <ShieldCheck className="w-4 h-4" />
             <span>
-              TEACHER & CONTENT STUDIO • استوديو المعلم وإدارة المحتوى
+              {t('ad.studio')}
             </span>
           </div>
 
@@ -397,14 +307,15 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-5">
             <h2 className="text-lg font-black text-white flex items-center gap-2">
               <Plus className="w-5 h-5 text-[#ffd166]" />
-              إضافة كورس أو مسار تعليمي جديد
+              {t('ad.addCourse')}
             </h2>
 
-            <form onSubmit={handleAddCourse} className="space-y-4">
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+              <p role="status" className="text-xs leading-6 text-[#ffd166]">{t('ad.unavailable')}</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    عنوان الكورس بالعربية:
+                    {t('ad.courseTitle')}
                   </label>
                   <input
                     type="text"
@@ -418,7 +329,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    العنوان بالإنجليزية (Title En):
+                    {t('ad.englishTitle')}
                   </label>
                   <input
                     type="text"
@@ -435,7 +346,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    المستوى المستهدف:
+                    {t('ad.targetLevel')}
                   </label>
                   <select
                     value={newLevel}
@@ -450,7 +361,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    الوصف التعليمي المختصر:
+                    {t('ad.shortDesc')}
                   </label>
                   <input
                     type="text"
@@ -463,25 +374,19 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               </div>
 
               <button
-                type="submit"
-                className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
+                type="submit" disabled title={t('ad.unavailable')}
+                className="disabled:opacity-40 disabled:cursor-not-allowed px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center gap-2"
               >
                 <Plus className="w-4 h-4" />
                 <span>{t('admin.saveCourse')}</span>
               </button>
-
-              {formSaved && (
-                <div className="p-3 rounded-xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-                 تم إنشاء الكورس وإضافته لقائمة الكورسات النشطة بنجاح!
-                </div>
-              )}
             </form>
           </div>
 
           {/* Active Courses List */}
           <div className="space-y-4">
             <h2 className="text-xl font-black text-white">
-              قائمة الكورسات الحالية في المنصة
+              {t('ad.courseList')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {courses.map((c) => (
@@ -503,9 +408,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                       {c.description}
                     </div>
                     <div className="flex items-center gap-2 pt-1 text-[10px] text-[#ffd166]">
-                      <span>{c.level}</span>
+                      <span>{t(COURSE_LEVEL_OPTIONS.find(([value]) => value === c.level)?.[1] || c.level)}</span>
                       <span>•</span>
-                      <span>{c.lessonsCount} دروس</span>
+                      <span>{t('dash.lessonsCount').replace('{n}', String(c.lessonsCount))}</span>
                       <span>•</span>
                       <span>{c.duration}</span>
                     </div>
@@ -526,9 +431,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                       <Eye className="w-4 h-4" />
                     </button>
                     <button
-                      onClick={() => handleDeleteCourse(c.id)}
+                      disabled
                       className="p-2 rounded-xl bg-[#ff4f9a]/10 hover:bg-[#ff4f9a]/20 text-[#ff4f9a] cursor-pointer"
-                      title={t('admin.deleteCourse')}
+                      title={t('ad.unavailable')}
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>
@@ -546,19 +451,19 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           <div className="space-y-1">
             <h2 className="text-xl font-black text-white flex items-center gap-2">
               <Edit3 className="w-5 h-5 text-[#41e7ff]" />
-              محرر الدروس الأكاديمية (Lesson Studio)
+              {t('ad.lessonStudio')}
             </h2>
             <p className="text-xs text-[#b9b6d5]">
-              أضف درساً جديداً إلى المنظومة بمفاهيم الشرح، الأمثلة، والصيغة
-              الذهبية:
+              {t('ad.lessonIntro')}
             </p>
           </div>
 
-          <form onSubmit={handleCreateLesson} className="space-y-5">
+          <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+            <p role="status" className="text-xs leading-6 text-[#ffd166]">{t('ad.unavailable')}</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="space-y-1">
                 <label className="text-xs font-bold text-white">
-                  عنوان الدرس بالعربية:
+                  {t('ad.lessonTitle')}
                 </label>
                 <input
                   type="text"
@@ -572,7 +477,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
               <div className="space-y-1">
                 <label className="text-xs font-bold text-white">
-                  العنوان بالإنجليزية (Subtitle):
+                  {t('ad.subtitle')}
                 </label>
                 <input
                   type="text"
@@ -587,7 +492,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
               <div className="space-y-1">
                 <label className="text-xs font-bold text-white">
-                  المستوى المعياري CEFR:
+                  {t('ad.cefr')}
                 </label>
                 <select
                   value={lessonLevel}
@@ -605,7 +510,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
             <div className="space-y-1">
               <label className="text-xs font-bold text-white">
-                مقدمة وفكرة الدرس:
+                {t('ad.lessonIdea')}
               </label>
               <textarea
                 rows={3}
@@ -618,7 +523,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
             <div className="space-y-1">
               <label className="text-xs font-bold text-white">
-                الشرح التفصيلي والنصائح بالمصري (Egyptian Tips):
+                {t('ad.egyptianTips')}
               </label>
               <textarea
                 rows={4}
@@ -632,7 +537,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
             <div className="flex items-center justify-between pt-2">
               <label className="flex items-center gap-2 cursor-pointer text-xs font-bold text-white">
                 <input
-                  type="checkbox"
+                  type="checkbox" disabled
                   checked={isPublished}
                   onChange={(e) => setIsPublished(e.target.checked)}
                   className="w-4 h-4 rounded accent-[#41e7ff]"
@@ -641,19 +546,13 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               </label>
 
               <button
-                type="submit"
-                className="px-8 py-3 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
+                type="submit" disabled title={t('ad.unavailable')}
+                className="disabled:opacity-40 disabled:cursor-not-allowed px-8 py-3 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
               >
                 <Save className="w-4 h-4" />
                 <span>{t('admin.saveLesson')}</span>
               </button>
             </div>
-
-            {lessonSaved && (
-              <div className="p-4 rounded-2xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-                {t('admin.lessonSaved')}
-              </div>
-            )}
           </form>
         </section>
       )}
@@ -725,11 +624,12 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               {t('admin.videoFormDesc')}
             </p>
 
-            <form onSubmit={handleAddVideo} className="space-y-4">
+            <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+              <p role="status" className="text-xs leading-6 text-[#ffd166]">{t('ad.unavailable')}</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    الدرس / القاعدة المرتبطة:
+                    {t('ad.linkedLesson')}
                   </label>
                   <select
                     value={vidTopic}
@@ -752,7 +652,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 <div className="space-y-1 sm:col-span-2">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    رابط الفيديو على يوتيوب (URL or ID):
+                    {t('ad.youtubeUrl')}
                   </label>
                   <input
                     type="text"
@@ -767,11 +667,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     <div className="text-[11px] pt-1">
                       {isValidYouTubeId(extractYouTubeId(vidUrl) || "") ? (
                         <span className="text-[#c4ff55] font-bold">
-                         معرف يوتيوب صالح: {extractYouTubeId(vidUrl)}
+                         {t('ad.idValid')} {extractYouTubeId(vidUrl)}
                         </span>
                       ) : (
                         <span className="text-[#ff4f9a] font-bold">
-                         الرابط أو المعرف غير صالح
+                         {t('ad.idInvalid')}
                         </span>
                       )}
                     </div>
@@ -782,7 +682,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    عنوان الفيديو بالإنجليزية:
+                    {t('ad.videoTitle')}
                   </label>
                   <input
                     type="text"
@@ -797,7 +697,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    العنوان والشرح بالعربية:
+                    {t('ad.arabicTitle')}
                   </label>
                   <input
                     type="text"
@@ -813,7 +713,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    اسم القناة التعليمية:
+                    {t('ad.channel')}
                   </label>
                   <input
                     type="text"
@@ -825,7 +725,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-[#dedbf4]">
-                    مدة الفيديو:
+                    {t('ad.duration')}
                   </label>
                   <input
                     type="text"
@@ -844,15 +744,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 </div>
               )}
 
-              {vidSaved && (
-                <div className="p-3 rounded-xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-                 تم التحقق من الفيديو وإضافته إلى قائمة موارد المنهج بنجاح!
-                </div>
-              )}
-
               <button
-                type="submit"
-                className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ff8bb9] to-[#ffd166] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
+                type="submit" disabled title={t('ad.unavailable')}
+                className="disabled:opacity-40 disabled:cursor-not-allowed px-8 py-3 rounded-xl bg-linear-to-r from-[#ff8bb9] to-[#ffd166] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer flex items-center gap-2"
               >
                 <Plus className="w-4 h-4" />
                 <span>{t('admin.addVideo')}</span>
@@ -867,7 +761,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 <div>
                   <h3 className="text-base font-black text-white flex items-center gap-2">
                     <Play className="w-4 h-4 text-[#ff8bb9]" />
-                    {t('admin.previewPlayer')} التفاعلي: {previewVideo.titleAr}
+                    {t('admin.previewPlayer')}: {previewVideo.titleAr}
                   </h3>
                   <p className="text-xs text-[#b9b6d5] font-mono">
                     YouTube ID: {previewVideo.youtubeId} • {previewVideo.channelName}
@@ -877,7 +771,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   onClick={() => setPreviewVideo(null)}
                   className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold cursor-pointer"
                 >
-                  إغلاق المعاينة
+                  {t('ad.closePreview')}
                 </button>
               </div>
 
@@ -894,7 +788,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-black text-white">
-                مكتبة الفيديوهات المعتمدة ({videoList.length} فيديو تم التحقق منها)
+                {t('ad.videoLibrary')} ({videoList.length})
               </h2>
               <span className="text-xs text-[#c4ff55] font-mono">100% Live & Embeddable</span>
             </div>
@@ -927,7 +821,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                         {vid.title}
                       </p>
                       <span className="text-[11px] text-[#ff8bb9] block pt-1">
-                        قناة: {vid.channelName}
+                        {t('ad.channelLabel')} {vid.channelName}
                       </span>
                     </div>
                   </div>
@@ -955,9 +849,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                         <ExternalLink className="w-4 h-4" />
                       </a>
                       <button
-                        onClick={() => handleDeleteVideo(vid.id)}
+                        disabled
                         className="p-1.5 rounded-lg bg-[#ff4f9a]/10 hover:bg-[#ff4f9a]/25 text-[#ff4f9a] cursor-pointer"
-                        title={t('admin.removeFromSystem')}
+                        title={t('ad.unavailable')}
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
@@ -977,10 +871,10 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
             <div>
               <h2 className="text-xl font-black text-white flex items-center gap-2">
                 <Mic className="w-5 h-5 text-[#9b7bff]" />
-                سجل تقييمات التحدث الصوتي ومخارج الحروف
+                {t('ad.speakingLog')}
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                نتائج التقييم الصوتي الحقيقي للطلاب ومعدلات الطلاقة وسرعة الكلمات بالدقيقة (WPM)
+                {t('ad.speakingDesc')}
               </p>
             </div>
 
