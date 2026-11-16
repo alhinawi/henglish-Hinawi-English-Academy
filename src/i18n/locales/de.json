@@ -2619,5 +2619,8 @@
   "as.playCount": "Gespielt: {count}",
   "as.round": "Runde {round} von {total}",
   "as.seconds": "{count} s",
-  "as.points": "{count} Punkte"
+  "as.points": "{count} Punkte",
+  "gp.title": "Spielearena",
+  "gp.hero": "Lernen. Spielen. Behalten.",
+  "gp.intro": "Englischspiele mit Wörtern, Sätzen und Verben aus der Akademie. Wähle eine Herausforderung und schlage deinen Bestwert."
 }
