@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { txText, useAppTextMap } from '../services/contentI18nService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import { 
   Clock, 
@@ -33,6 +34,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
   isCompleted,
   embedded = false,
 }) => {
+  const { t } = useLanguage();
   const currentLesson = FUTURE_PERFECT_LESSONS.find(l => l.id === lessonId) || FUTURE_PERFECT_LESSONS[0];
   const currentIndex = FUTURE_PERFECT_LESSONS.findIndex(l => l.id === currentLesson.id);
 
@@ -82,24 +84,24 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           onClick={() => { playSound('click'); onNavigate('home'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          الرئيسية
+          {t('lp.home')}
         </button>
         <span>/</span>
         <button 
           onClick={() => { playSound('click'); onNavigate('grammar'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          أكاديمية الجرامر
+          {t('lp.grammarAcademy')}
         </button>
         <span>/</span>
         <button 
           onClick={() => { playSound('click'); onNavigate('courses/grammar/future-perfect'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          أزمنة المستقبل: المستقبل التام
+          {t('lp.courseName')}
         </button>
         <span>/</span>
-        <span className="text-[#ffd166] font-bold">الدرس 0{currentLesson.number}</span>
+        <span className="text-[#ffd166] font-bold">{t('lp.lesson')} 0{currentLesson.number}</span>
       </nav>
       )}
 
@@ -140,7 +142,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <button
               onClick={() => speakEnglish(currentLesson.subtitle)}
               className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-[#41e7ff] transition-colors cursor-pointer"
-              title="استمع للعنوان بالإنجليزي"
+              title={t('lp.listenTitle')}
             >
               <Volume2 className="w-3.5 h-3.5" />
             </button>
@@ -154,7 +156,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           <div className="mt-4 p-4 rounded-2xl bg-linear-to-r from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 flex items-start gap-3">
             <Lightbulb className="w-5 h-5 text-[#ffd166] shrink-0 mt-0.5" />
             <div className="text-sm text-white leading-relaxed">
-              <strong className="text-[#ffd166]">الخلاصة الجوهرية: </strong>
+              <strong className="text-[#ffd166]">{t('lp.keyTakeaway')} </strong>
               <MixedLessonText text={txText(appText, currentLesson.keyTakeaway)} />
             </div>
           </div>
@@ -166,7 +168,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <div className="flex items-center gap-2 text-xs font-black text-[#41e7ff] uppercase tracking-wider">
             <Sparkles className="w-4 h-4" />
-            <span>THE GOLDEN FORMULA • التركيبة الذهبية</span>
+            <span>THE GOLDEN FORMULA • {t('lp.goldenFormula')}</span>
           </div>
           
           <div className="en flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 p-4 sm:p-6 rounded-2xl bg-black/40 border border-white/10 text-center">
@@ -204,7 +206,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
       {/* Egyptian Arabic Tips & Mindset */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
         <h3 className="text-lg font-black text-white flex items-center gap-2">
-          <span>شرح بطريقة سهلة وبالمصري</span>
+          <span>{t('lp.easyExplain')}</span>
         </h3>
         <div className="space-y-3">
           {currentLesson.egyptianArabicTips.map((tip, idx) => (
@@ -226,9 +228,9 @@ export const LessonPage: React.FC<LessonPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-black text-white flex items-center gap-2">
-            <span>أمثلة واقعية مع النطق الصوتي</span>
+            <span>{t('lp.examplesTitle')}</span>
           </h3>
-          <span className="text-xs text-[#b9b6d5]">اضغط على أيقونة الصوت للاستماع</span>
+          <span className="text-xs text-[#b9b6d5]">{t('lp.tapToListen')}</span>
         </div>
 
         <div className="grid grid-cols-1 gap-3.5">
@@ -239,7 +241,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-[#ffd166]">
-                  {ex.context ? txText(appText, ex.context) : `مثال 0${idx + 1}`}
+                  {ex.context ? txText(appText, ex.context) : `${t('lp.example')} 0${idx + 1}`}
                 </span>
                 <button
                   onClick={() => {
@@ -247,10 +249,10 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                     speakEnglish(ex.en);
                   }}
                   className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] transition-colors cursor-pointer flex items-center gap-1.5 text-xs font-bold"
-                  title="استمع للمثال الإنجليزي"
+                  title={t('lp.listenExample')}
                 >
                   <Volume2 className="w-3.5 h-3.5" />
-                  <span>استماع</span>
+                  <span>{t('lp.listen')}</span>
                 </button>
               </div>
 
@@ -298,7 +300,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                   {c.sentence}
                 </p>
                 <p className="text-xs sm:text-sm text-[#ffd166] font-semibold">
-                  المعنى: {txText(appText, c.meaning)}
+                  {t('lp.meaning')} {txText(appText, c.meaning)}
                 </p>
                 <p className="text-xs text-[#b9b6d5]">
                   {c.explanation}
@@ -314,7 +316,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <h3 className="text-lg font-black text-[#ff4f9a] flex items-center gap-2">
             <AlertTriangle className="w-5 h-5" />
-            <span>احذر من هذه الأخطاء الشائعة</span>
+            <span>{t('lp.trapsTitle')}</span>
           </h3>
 
           <div className="space-y-3">
@@ -325,7 +327,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               >
                 <LessonCorrection wrong={m.wrong} correct={m.correct} />
                 <p className="text-xs text-[#dedbf4]">
-                  <strong className="text-[#ffd166]">السبب: </strong>
+                  <strong className="text-[#ffd166]">{t('lp.reason')} </strong>
                   {txText(appText, m.reason)}
                 </p>
               </div>
@@ -339,7 +341,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
           <div className="flex items-center gap-2 text-xs font-black text-[#ffd166] uppercase tracking-wider">
             <HelpCircle className="w-4 h-4" />
-            <span>MINI KNOWLEDGE CHECK • اختبار سريع على الدرس</span>
+            <span>MINI KNOWLEDGE CHECK • {t('lp.miniQuiz')}</span>
           </div>
 
           <div className="space-y-6">
@@ -386,7 +388,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                   {answered && (
                     <div className="p-3 rounded-xl bg-white/5 border border-white/10 text-xs text-[#dedbf4]">
                       <strong className={isCorrect ? 'text-[#c4ff55]' : 'text-[#ff4f9a]'}>
-                        {isCorrect ? 'إجابة صحيحة! ' : 'إجابة غير صحيحة. '}
+                        {isCorrect ? t('lp.correct') + ' ' : t('lp.incorrect') + ' '}
                       </strong>
                       {q.explanation}
                     </div>
@@ -402,7 +404,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
       {currentLesson.homeworkPrompt && (
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <h3 className="text-lg font-black text-white flex items-center gap-2">
-            <span>تحدي التطبيق الشخصي (Notebook)</span>
+            <span>{t('lp.homeworkTitle')}</span>
           </h3>
           <p className="text-xs sm:text-sm text-[#b9b6d5]">
             {txText(appText, currentLesson.homeworkPrompt)}
@@ -427,9 +429,9 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               }}
               className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-[#41e7ff] font-bold cursor-pointer transition-colors"
             >
-              حفظ الملاحظة
+              {t('lp.saveNote')}
             </button>
-            {noteSaved && <span className="text-[#c4ff55] font-bold">تم الحفظ بنجاح!</span>}
+            {noteSaved && <span className="text-[#c4ff55] font-bold">{t('lp.saved')}</span>}
           </div>
         </section>
       )}
@@ -440,14 +442,14 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           {isCompleted ? (
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#c4ff55]/15 border border-[#c4ff55]/30 text-[#c4ff55] text-sm font-black">
               <CheckCircle2 className="w-4 h-4" />
-              <span>أكملت هذا الدرس بنجاح!</span>
+              <span>{t('lp.completed')}</span>
             </div>
           ) : (
             <button
               onClick={handleCompleteLesson}
               className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all hover:scale-105"
             >
-              تحديد كدرس مكتمل
+              {t('lp.markComplete')}
             </button>
           )}
         </div>
@@ -467,7 +469,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               className="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-bold text-[#dedbf4] transition-colors cursor-pointer flex items-center gap-1.5"
             >
               <ChevronRight className="w-4 h-4" />
-              <span>الدرس السابق (0{prevLesson.number})</span>
+              <span>{t('lp.prevLesson')} (0{prevLesson.number})</span>
             </button>
           )}
 
@@ -483,7 +485,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               }}
               className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-md transition-all cursor-pointer flex items-center gap-1.5"
             >
-              <span>الدرس التالي (0{nextLesson.number})</span>
+              <span>{t('lp.nextLesson')} (0{nextLesson.number})</span>
               <ChevronLeft className="w-4 h-4" />
             </button>
           )}
