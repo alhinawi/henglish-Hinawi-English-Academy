@@ -2,6 +2,7 @@ import React from 'react';
 import { CheckCircle2, ListTree } from 'lucide-react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound } from '../utils/audio';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CourseOverviewPage } from './CourseOverviewPage';
@@ -24,6 +25,7 @@ export const FuturePerfectCoursePage: React.FC<FuturePerfectCoursePageProps> = (
   completionPercentage,
 }) => {
   const { t } = useLanguage();
+  const appText = useAppTextMap('futurePerfectCourse');
   const scrollToLesson = (id: string) => {
     playSound('click');
     document.getElementById(`fp-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -59,7 +61,7 @@ export const FuturePerfectCoursePage: React.FC<FuturePerfectCoursePageProps> = (
                 >
                   {done && <CheckCircle2 className="w-3.5 h-3.5" />}
                   <span>0{lesson.number}</span>
-                  <span className="max-w-36 truncate">{lesson.title}</span>
+                  <span className="max-w-36 truncate">{txText(appText, lesson.title)}</span>
                 </button>
               );
             })}
