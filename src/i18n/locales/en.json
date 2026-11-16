@@ -2804,5 +2804,19 @@
   "vie.unverified": "Embedding permission could not be confirmed. Import is blocked until verification succeeds.",
   "vcl.business": "Business & Career",
   "vcl.idioms": "Idioms & Phrasal Verbs",
-  "vcl.daily": "Daily Spoken English"
+  "vcl.daily": "Daily Spoken English",
+  "atm.grammar-teacher.name": "Grammar Teacher",
+  "atm.grammar-teacher.description": "Explains English grammar and tenses in simple Egyptian Arabic, with links to academy lessons.",
+  "atm.conversation-partner.name": "Conversation Partner",
+  "atm.conversation-partner.description": "Practice real-life conversations at airports, hotels, restaurants and work, with friendly corrections.",
+  "atm.vocabulary-coach.name": "Vocabulary Trainer",
+  "atm.vocabulary-coach.description": "Build vocabulary with collocations, phrasal verbs and pronunciation guides.",
+  "atm.writing-assistant.name": "Writing Assistant",
+  "atm.writing-assistant.description": "Review essays and work emails, correct grammar and improve phrasing.",
+  "atm.pronunciation-coach.name": "Pronunciation Coach",
+  "atm.pronunciation-coach.description": "Practice speech sounds, IPA, word stress and differences between American and British pronunciation.",
+  "atm.exam-trainer.name": "Exam Trainer",
+  "atm.exam-trainer.description": "Practice proficiency-test questions, time management and interactive exam tasks with corrections.",
+  "atm.interview-coach.name": "Interview Trainer",
+  "atm.interview-coach.description": "Practice English job interviews, STAR answers and behavioral questions."
 }
