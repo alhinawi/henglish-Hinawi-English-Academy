@@ -20,6 +20,33 @@ const STATIC: Record<string, Messages> = {
 // the Next.js production build, so every locale file gets one literal entry.
 const loaders: Record<string, () => Promise<Messages>> = {
   de: () => import('./locales/de.json').then((m) => m.default as Messages),
+  fr: () => import('./locales/fr.json').then((m) => m.default as Messages),
+  es: () => import('./locales/es.json').then((m) => m.default as Messages),
+  pt: () => import('./locales/pt.json').then((m) => m.default as Messages),
+  it: () => import('./locales/it.json').then((m) => m.default as Messages),
+  ru: () => import('./locales/ru.json').then((m) => m.default as Messages),
+  tr: () => import('./locales/tr.json').then((m) => m.default as Messages),
+  zh: () => import('./locales/zh.json').then((m) => m.default as Messages),
+  ja: () => import('./locales/ja.json').then((m) => m.default as Messages),
+  ko: () => import('./locales/ko.json').then((m) => m.default as Messages),
+  hi: () => import('./locales/hi.json').then((m) => m.default as Messages),
+  ur: () => import('./locales/ur.json').then((m) => m.default as Messages),
+  fa: () => import('./locales/fa.json').then((m) => m.default as Messages),
+  id: () => import('./locales/id.json').then((m) => m.default as Messages),
+  ms: () => import('./locales/ms.json').then((m) => m.default as Messages),
+  bn: () => import('./locales/bn.json').then((m) => m.default as Messages),
+  nl: () => import('./locales/nl.json').then((m) => m.default as Messages),
+  pl: () => import('./locales/pl.json').then((m) => m.default as Messages),
+  uk: () => import('./locales/uk.json').then((m) => m.default as Messages),
+  sv: () => import('./locales/sv.json').then((m) => m.default as Messages),
+  el: () => import('./locales/el.json').then((m) => m.default as Messages),
+  he: () => import('./locales/he.json').then((m) => m.default as Messages),
+  th: () => import('./locales/th.json').then((m) => m.default as Messages),
+  vi: () => import('./locales/vi.json').then((m) => m.default as Messages),
+  ro: () => import('./locales/ro.json').then((m) => m.default as Messages),
+  cs: () => import('./locales/cs.json').then((m) => m.default as Messages),
+  hu: () => import('./locales/hu.json').then((m) => m.default as Messages),
+  sw: () => import('./locales/sw.json').then((m) => m.default as Messages),
 };
 
 async function loadMessages(code: string): Promise<Messages | null> {
