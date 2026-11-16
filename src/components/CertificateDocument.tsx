@@ -160,7 +160,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
         />
 
         <div style={{ fontSize: 14, color: "#dedbf4", fontStyle: "italic" }}>
-          {cert.preview ? 'Preview only. No completion has been certified.' : 'This local learning record is issued to'}
+          {cert.preview ? 'Preview only. No completion has been certified.' : cert.localOnly ? 'This local learning record is issued to' : 'This server-verified course completion is issued to'}
         </div>
 
         <div style={{ marginTop: 10, padding: "0 36px" }}>
@@ -372,7 +372,9 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             justifyContent: "space-between",
             alignItems: "center",
             fontFamily: "'Courier New', monospace",
-            fontSize: 11,
+            fontSize: cert.localOnly ? 11 : 6,
+            overflowWrap: "anywhere",
+            gap: 20,
             color: "#ffd166",
           }}
         >
