@@ -1,0 +1,15 @@
+const fs = require('fs'), vm = require('vm'), ts = require('typescript'), assert = require('assert/strict');
+const source = fs.readFileSync('src/views/SpeakingAcademyPage.tsx', 'utf8');
+const wrapper = source.slice(source.indexOf('export const SpeakingAcademyPage:'), source.indexOf('const LearnerSpeakingAcademy:'));
+let user = {id: 'learner-a'};
+const c = {exports: {}, useAuth: () => ({user}), LearnerSpeakingAcademy: {}, React: {createElement: (type, props) => ({type, props})}};
+vm.runInNewContext(ts.transpileModule(wrapper, {compilerOptions: {module: ts.ModuleKind.CommonJS, jsx: ts.JsxEmit.React}}).outputText, c);
+const props = {onNavigate() {}, completedActivityIds: []};
+const a = c.exports.SpeakingAcademyPage(props);user = {id: 'learner-b'};
+const b = c.exports.SpeakingAcademyPage(props);user = {id: 'learner-a'};
+const again = c.exports.SpeakingAcademyPage(props);
+assert.notEqual(a.props.key, b.props.key);assert.equal(a.props.key, again.props.key);
+assert.equal(a.props.storageKey, 'henglish-speaking-v1:learner-a');assert.equal(b.props.storageKey, 'henglish-speaking-v1:learner-b');
+assert.equal(a.type, c.LearnerSpeakingAcademy);assert.equal(a.props.completedActivityIds, props.completedActivityIds);
+for (const state of ['localDone', 'activeId', 'saveError']) assert.ok(source.indexOf(`const [${state}`) > source.indexOf('const LearnerSpeakingAcademy:'));
+console.log('Speaking page remounts learner-local completion, active practice and recorder state on identity change; existing storage keys preserved: PASS');
