@@ -6,6 +6,9 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { createPortal, flushSync } from 'react-dom';
 import * as THREE from 'three';
+import { createCityAssets, pavementTexture } from './cityAssets';
+import { WORLD_GREETINGS, playWorldGreeting, stopWorldGreeting } from './worldGreetings';
+import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 import { PageRoute } from '../types';
 import { REAL_LIFE_SCENARIOS, SimulationScenario } from '../data/realLifeSimulationsData';
 import { playSound } from '../utils/audio';
@@ -53,7 +56,7 @@ const LOCATIONS: WorldLocation[] = [
   {
     id: 'airport',
     nameEn: 'International Airport',
-    nameAr: 'مطار القاهرة الدولي - صالة ٣',
+    nameAr: 'مطار القاهرة الدولي - صالة 3',
     scenarioId: 'sim-airport-checkin',
     category: 'Travel & Aviation',
     icon: '',
@@ -110,7 +113,7 @@ const LOCATIONS: WorldLocation[] = [
     id: 'university',
     nameEn: 'Hinawi Central Academy',
     nameAr: 'المركز الرئيسي لـ Henglish Academy',
-    scenarioId: 'sim-airport-checkin',
+    scenarioId: 'academy-guide',
     category: 'Academic Campus',
     icon: '',
     position: [0, 0, 0],
@@ -120,6 +123,20 @@ const LOCATIONS: WorldLocation[] = [
     npcName: 'Prof. Hinawi',
     npcRole: 'Chief Academic Director',
   },
+  {
+    id: 'clothing', nameEn: 'Clothing Studio', nameAr: 'محل الملابس',
+    scenarioId: 'sim-clothing-shopping', category: 'Shopping', icon: '',
+    position: [-15, 0, 9], color: 0xdfa5b5, buildingHeight: 4,
+    descriptionAr: 'السؤال عن المقاسات والألوان والسعر وتجربة الملابس بالإنجليزي.',
+    npcName: 'Mona', npcRole: 'Shop Assistant',
+  },
+  {
+    id: 'supermarket', nameEn: 'Neighbourhood Market', nameAr: 'السوبر ماركت',
+    scenarioId: 'sim-supermarket-shopping', category: 'Everyday English', icon: '',
+    position: [0, 0, -18], color: 0x91b5a1, buildingHeight: 4,
+    descriptionAr: 'السؤال عن أماكن المنتجات والدفع عند الكاشير بالإنجليزي.',
+    npcName: 'Omar', npcRole: 'Store Assistant',
+  },
 ];
 
 export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
@@ -128,12 +145,27 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 }) => {
   const worldRef = useRef<HTMLDivElement>(null);
   const nearbyNpcRef = useRef<WorldLocation | null>(null);
+  const [greetingId, setGreetingId] = useState<string | null>(null);
+  const [voiceStatus, setVoiceStatus] = useState('');
+  const greet = useCallback((id: string) => {
+    setGreetingId(id);
+    void playWorldGreeting(id).then(mode => setVoiceStatus(mode === 'browser' ? 'صوت المتصفح مؤقتًا. اللهجة حسب الأصوات الموجودة على جهازك.' : mode === 'clip' ? 'تسجيل صوتي مصري' : 'مفيش صوت عربي متاح على الجهاز. التحية مكتوبة تحت.'));
+  }, []);
   const [immersive, setImmersive] = useState(false);
   const [fullscreenHint, setFullscreenHint] = useState('');
+  const [showControlsHint, setShowControlsHint] = useState(false);
+  useEffect(() => {
+    if (!immersive) return;
+    setShowControlsHint(true);
+    const timer = window.setTimeout(() => { setFullscreenHint(''); setShowControlsHint(false); }, 3200);
+    return () => window.clearTimeout(timer);
+  }, [immersive]);
   const exitWorld = useCallback(() => {
     keysPressed.current = {};
     joystickRef.current = { active: false, dx: 0, dy: 0 };
     setSelectedLocation(null);
+    setGreetingId(null);
+    stopWorldGreeting();
     setImmersive(false);
     if (document.fullscreenElement) void document.exitFullscreen().catch(() => {});
     screen.orientation?.unlock?.();
@@ -169,6 +201,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       window.removeEventListener('keydown', onEscape);
     };
   }, [immersive, exitWorld]);
+  const travelToRef = useRef<((loc: WorldLocation) => void) | null>(null);
   const mountRef = useRef<HTMLDivElement>(null);
   const [selectedLocation, setSelectedLocation] = useState<WorldLocation | null>(null);
   const [nearbyNpc, setNearbyNpc] = useState<WorldLocation | null>(null);
@@ -208,7 +241,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
   const handleSelectLoc = useCallback((loc: WorldLocation) => {
     setSelectedLocation(loc);
-  }, []);
+    greet(loc.id);
+  }, [greet]);
 
   useEffect(() => {
     if (!is3DMode || !mountRef.current) return;
@@ -221,18 +255,19 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     // 1. Scene, dusk sky dome & fog
     const scene = new THREE.Scene();
-    scene.fog = new THREE.Fog(0x191536, 34, 110);
+    scene.fog = new THREE.Fog(0xc4d8dc, 45, 115);
+    const assets = createCityAssets();
 
     const skyCanvas = document.createElement('canvas');
     skyCanvas.width = 4;
     skyCanvas.height = 512;
     const skyCtx = skyCanvas.getContext('2d')!;
     const skyGrad = skyCtx.createLinearGradient(0, 0, 0, 512);
-    skyGrad.addColorStop(0, '#04030d');
-    skyGrad.addColorStop(0.45, '#151130');
-    skyGrad.addColorStop(0.72, '#2b2354');
-    skyGrad.addColorStop(0.88, '#5b3f78');
-    skyGrad.addColorStop(1, '#a06644');
+    skyGrad.addColorStop(0, '#4a8bb8');
+    skyGrad.addColorStop(0.45, '#78b3d3');
+    skyGrad.addColorStop(0.72, '#afd1df');
+    skyGrad.addColorStop(0.88, '#e8ddd0');
+    skyGrad.addColorStop(1, '#ffe1b2');
     skyCtx.fillStyle = skyGrad;
     skyCtx.fillRect(0, 0, 4, 512);
     const skyTex = new THREE.CanvasTexture(skyCanvas);
@@ -242,6 +277,9 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       new THREE.MeshBasicMaterial({ map: skyTex, side: THREE.BackSide, fog: false })
     );
     scene.add(skyDome);
+    let cancelled = false;
+    let environmentTarget: THREE.WebGLRenderTarget | undefined;
+    const skyPromise = new RGBELoader().loadAsync('/models/city/sky.hdr');
 
     // Stars
     const starCount = 420;
@@ -260,10 +298,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       starGeo,
       new THREE.PointsMaterial({ color: 0xfff3d0, size: 0.32, transparent: true, opacity: 0.85, sizeAttenuation: true, fog: false })
     );
+    // Daylight keeps windows, signs and faces readable on phone displays.
+    stars.visible = false;
     scene.add(stars);
 
     // 2. Camera
-    const camera = new THREE.PerspectiveCamera(46, width / height, 0.1, 260);
+    const camera = new THREE.PerspectiveCamera(55, width / height, 0.1, 260);
+    camera.position.set(0, 9, 24);
 
     // 3. Renderer
     const renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
@@ -275,13 +316,23 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.12;
     currentMount.appendChild(renderer.domElement);
+    void skyPromise.then(texture => {
+      if (cancelled) { texture.dispose(); return; }
+      texture.mapping = THREE.EquirectangularReflectionMapping;
+      const pmrem = new THREE.PMREMGenerator(renderer);
+      environmentTarget = pmrem.fromEquirectangular(texture);
+      scene.environment = environmentTarget.texture;
+      scene.background = texture;
+      skyDome.visible = false;
+      pmrem.dispose();
+    }).catch(() => {});
 
     // 4. Cinematic dusk lighting
-    const hemi = new THREE.HemisphereLight(0x8f86e8, 0x1c1630, 0.65);
+    const hemi = new THREE.HemisphereLight(0xdcefff, 0x677b52, 2.2);
     scene.add(hemi);
 
     const sun = new THREE.DirectionalLight(0xffdfae, 2.4);
-    sun.position.set(26, 30, 14);
+    sun.position.set(-18, 32, 22);
     sun.castShadow = true;
     sun.shadow.mapSize.set(isTouch ? 1024 : 2048, isTouch ? 1024 : 2048);
     sun.shadow.camera.left = -34;
@@ -299,7 +350,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     // 5. Ground platform, plaza & roads
     const ground = new THREE.Mesh(
       new THREE.CircleGeometry(34, 72),
-      new THREE.MeshStandardMaterial({ color: 0x14122b, roughness: 0.95, metalness: 0.05 })
+      new THREE.MeshStandardMaterial({ color: 0x7b9465, roughness: 0.95 })
     );
     ground.rotation.x = -Math.PI / 2;
     ground.position.y = -0.05;
@@ -307,8 +358,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     scene.add(ground);
 
     const plaza = new THREE.Mesh(
-      new THREE.CircleGeometry(6.8, 48),
-      new THREE.MeshStandardMaterial({ color: 0x262252, roughness: 0.7, metalness: 0.15 })
+      new THREE.CircleGeometry(21, 64),
+      new THREE.MeshStandardMaterial({ map: pavementTexture(), normalMap: new THREE.TextureLoader().load('/models/city/paving-nor_gl.webp', t => { t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(12, 12); }), roughnessMap: new THREE.TextureLoader().load('/models/city/paving-Rough.webp', t => { t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(12, 12); }), roughness: 0.95 })
     );
     plaza.rotation.x = -Math.PI / 2;
     plaza.position.y = 0.005;
@@ -327,7 +378,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     roadCanvas.width = 64;
     roadCanvas.height = 256;
     const roadCtx = roadCanvas.getContext('2d')!;
-    roadCtx.fillStyle = '#101021';
+    roadCtx.fillStyle = '#535b60';
     roadCtx.fillRect(0, 0, 64, 256);
     roadCtx.fillStyle = '#ffd166';
     for (let y = 8; y < 256; y += 42) roadCtx.fillRect(29, y, 6, 24);
@@ -349,16 +400,16 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       );
       road.geometry.rotateX(-Math.PI / 2);
       road.rotation.y = Math.atan2(px, pz);
-      road.position.set(px * 0.55, 0.002, pz * 0.55);
+      road.position.set(px * 0.55, 0.02, pz * 0.55);
       road.receiveShadow = true;
       scene.add(road);
 
       const sidewalk = new THREE.Mesh(
         new THREE.CircleGeometry(3.9, 40),
-        new THREE.MeshStandardMaterial({ color: 0x232048, roughness: 0.85 })
+        new THREE.MeshStandardMaterial({ color: 0xb4b7af, roughness: 0.95 })
       );
       sidewalk.rotation.x = -Math.PI / 2;
-      sidewalk.position.set(px, 0.001, pz);
+      sidewalk.position.set(px, 0.025, pz);
       sidewalk.receiveShadow = true;
       scene.add(sidewalk);
     });
@@ -538,10 +589,19 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
         new THREE.PlaneGeometry(3.1, 0.9),
         new THREE.MeshBasicMaterial({ map: signTex, transparent: true })
       );
-      sign.position.set(0, 3.35, 2.28);
+      sign.position.set(0, 2.6, 3.5);
       bGroup.add(sign);
 
       scene.add(bGroup);
+      // Swap the temporary primitives for authored doors, windows, balconies and roofs.
+      const buildingVisual = new THREE.Group();
+      buildingVisual.position.copy(bGroup.position);
+      buildingVisual.rotation.copy(bGroup.rotation);
+
+      scene.add(buildingVisual);
+      const floors = [2, 1, 3, 4, 2, 1, 1][li];
+      const oldBuildingParts = bGroup.children.filter(child => child !== sign);
+      void assets.building(buildingVisual, floors, oldBuildingParts);
 
       // NPC: stylized capsule person with floating name label
       const npcGroup = new THREE.Group();
@@ -573,11 +633,12 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
       const labelTex = makeLabelTexture(loc.npcName, loc.npcRole, loc.color, 512, 150);
       const label = new THREE.Sprite(
-        new THREE.SpriteMaterial({ map: labelTex, transparent: true, depthWrite: false })
+        new THREE.SpriteMaterial({ map: labelTex, transparent: true, depthWrite: false, sizeAttenuation: true })
       );
-      label.scale.set(3.3, 0.97, 1);
-      label.position.y = 2.65;
+      label.scale.set(2.6, 0.76, 1);
+      label.position.y = 2.45;
       npcGroup.add(label);
+      void assets.person(npcGroup, [0, 2, 5].includes(li), false, [npcBody, npcHead]);
 
       scene.add(npcGroup);
       npcMarkers.push({ mesh: npcGroup, loc, ring, body: npcBody });
@@ -616,7 +677,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       scene.add(lamp);
     });
 
-    const treePositions: [number, number][] = [[-18, 4], [18, -4], [-4, 18], [6, 17], [-17, -16], [17, 16], [4, -17], [-12, 14]];
+    const treePositions: [number, number][] = [[-18, 4], [18, -4], [-20, 18], [20, 17], [-17, -16], [17, 16], [4, -17], [-12, 14]];
     treePositions.forEach(([tx, tz]) => {
       const tree = new THREE.Group();
       tree.position.set(tx, 0, tz);
@@ -636,6 +697,10 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       foliage.castShadow = true;
       tree.add(foliage);
       scene.add(tree);
+      const treeModel = new THREE.Group();
+      treeModel.position.copy(tree.position);
+      scene.add(treeModel);
+      void assets.model(tx < 0 ? 'tree_oak' : 'tree_palm', treeModel, 3.5, [trunk, foliage]);
     });
 
     // Floating dusk particles (decorative, skipped for reduced motion)
@@ -693,9 +758,39 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     player.add(pShadowRing);
 
     scene.add(player);
+    travelToRef.current = loc => {
+      player.position.set(loc.position[0] + 2.5, 0, loc.position[2] + 5.4);
+      keysPressed.current = {};
+      joystickRef.current = { active: false, dx: 0, dy: 0 };
+    };
+    void assets.person(player, false, true, [pBody, pHead, headphones]);
+
+    // Parked vehicles with wheels, mirrors and glass. All models are bundled locally.
+    const parkedCars: [string, number, number, number][] = [
+      ['sedan', -9, -7, 0.6], ['ambulance', 9, -13, -0.5], ['van', 16, 4, 0.2],
+    ];
+    parkedCars.forEach(([name, x, z, angle]) => {
+      const group = new THREE.Group(); group.position.set(x, 0.05, z); group.rotation.y = angle;
+      scene.add(group); void assets.model(name, group, 3.3);
+    });
+    // Slatted benches, feet and planters use shared materials to limit GPU work.
+    const timber = new THREE.MeshStandardMaterial({ color: 0x815c3f, roughness: 0.88 });
+    const steel = new THREE.MeshStandardMaterial({ color: 0x374449, metalness: 0.6, roughness: 0.5 });
+    [-1, 1].forEach(side => {
+      const bench = new THREE.Group(); bench.position.set(side * 5, 0, 2); bench.rotation.y = side * Math.PI / 2;
+      for (let i = 0; i < 4; i++) {
+        const seat = new THREE.Mesh(new THREE.BoxGeometry(1.9, 0.08, 0.12), timber);
+        seat.position.set(0, 0.52, i * 0.15); seat.castShadow = true; bench.add(seat);
+        const back = new THREE.Mesh(new THREE.BoxGeometry(1.9, 0.1, 0.08), timber);
+        back.position.set(0, 0.72 + i * 0.13, 0.48); back.castShadow = true; bench.add(back);
+      }
+      [-0.72, 0.72].forEach(x => { const leg = new THREE.Mesh(new THREE.BoxGeometry(0.1, 0.5, 0.5), steel); leg.position.set(x, 0.25, 0.22); bench.add(leg); });
+      scene.add(bench);
+    });
 
     // 9. Key listeners
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (['arrowup', 'arrowdown', 'arrowleft', 'arrowright', ' '].includes(e.key.toLowerCase())) e.preventDefault();
       keysPressed.current[e.key.toLowerCase()] = true;
       if (e.key.toLowerCase() === 'e' && nearbyNpcRef.current) {
         playSound('click');
@@ -736,27 +831,30 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     const animate = () => {
       animId = requestAnimationFrame(animate);
-      const t = clock.getElapsedTime();
+      const delta = Math.min(clock.getDelta(), 0.05);
+      const t = clock.elapsedTime;
+      const speed = playerSpeed * delta * 60;
 
+      const previousPosition = player.position.clone();
       let moved = false;
       const keys = keysPressed.current;
 
       if (keys['w'] || keys['arrowup']) {
-        player.position.x -= Math.sin(playerAngle) * playerSpeed;
-        player.position.z -= Math.cos(playerAngle) * playerSpeed;
+        player.position.x -= Math.sin(playerAngle) * speed;
+        player.position.z -= Math.cos(playerAngle) * speed;
         moved = true;
       }
       if (keys['s'] || keys['arrowdown']) {
-        player.position.x += Math.sin(playerAngle) * playerSpeed;
-        player.position.z += Math.cos(playerAngle) * playerSpeed;
+        player.position.x += Math.sin(playerAngle) * speed;
+        player.position.z += Math.cos(playerAngle) * speed;
         moved = true;
       }
       if (keys['a'] || keys['arrowleft']) {
-        playerAngle += 0.04;
+        playerAngle += 2.4 * delta;
         player.rotation.y = playerAngle;
       }
       if (keys['d'] || keys['arrowright']) {
-        playerAngle -= 0.04;
+        playerAngle -= 2.4 * delta;
         player.rotation.y = playerAngle;
       }
 
@@ -770,12 +868,15 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           const mag = Math.min(1, len / 40);
           playerAngle = Math.atan2(-nx, -nz);
           player.rotation.y = playerAngle;
-          player.position.x += nx * playerSpeed * mag * 1.5;
-          player.position.z += nz * playerSpeed * mag * 1.5;
+          player.position.x += nx * speed * mag * 1.5;
+          player.position.z += nz * speed * mag * 1.5;
           moved = true;
         }
       }
 
+      if (LOCATIONS.some(loc => Math.hypot(player.position.x - loc.position[0], player.position.z - loc.position[2]) < 3.7)) {
+        player.position.copy(previousPosition);
+      }
       player.position.x = Math.max(-23, Math.min(23, player.position.x));
       player.position.z = Math.max(-23, Math.min(23, player.position.z));
 
@@ -785,12 +886,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
         if (dust) dust.rotation.y = t * 0.012;
       }
 
+
       const cameraOffset = new THREE.Vector3(
-        Math.sin(playerAngle) * 10.5,
-        7.2,
-        Math.cos(playerAngle) * 10.5
+        Math.sin(playerAngle) * 13,
+        7.5,
+        Math.cos(playerAngle) * 13
       );
-      camera.position.lerp(player.position.clone().add(cameraOffset), 0.08);
+      camera.position.lerp(player.position.clone().add(cameraOffset), 1 - Math.exp(-5 * delta));
       camera.lookAt(player.position.x, player.position.y + 1.3, player.position.z);
 
       let foundNearby: WorldLocation | null = null;
@@ -854,6 +956,22 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       if (currentMount.contains(renderer.domElement)) {
         currentMount.removeChild(renderer.domElement);
       }
+      cancelled = true;
+      environmentTarget?.dispose();
+      if (scene.background instanceof THREE.Texture) scene.background.dispose();
+      stopWorldGreeting();
+      travelToRef.current = null;
+      assets.dispose();
+      scene.traverse(child => {
+        if (child instanceof THREE.Mesh || child instanceof THREE.Points || child instanceof THREE.Sprite) {
+          if ('geometry' in child) child.geometry.dispose();
+          const materials = Array.isArray(child.material) ? child.material : [child.material];
+          materials.forEach(material => {
+            Object.values(material).forEach(value => { if (value instanceof THREE.Texture) value.dispose(); });
+            material.dispose();
+          });
+        }
+      });
       renderer.dispose();
     };
   }, [is3DMode, handleSelectLoc, immersive]);
@@ -920,7 +1038,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
         <div className={immersive ? 'relative flex-1 min-h-0 overflow-hidden bg-[#0a091a]' : 'relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0a091a]'}>
           {!immersive && <button onClick={enterWorld} className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-3 bg-black/35 text-white cursor-pointer" aria-label="دخول العالم بملء الشاشة">
             <span className="rounded-2xl px-6 py-4 bg-[#ffd166] text-[#0c0b20] font-black flex items-center gap-3 shadow-xl"><Maximize2 className="w-5 h-5" />دخول العالم بملء الشاشة</span>
-            <span className="rounded-xl px-3 py-2 bg-black/70 text-xs">تحرك بحرية واقترب من الشخصيات للتحدث</span>
+            <span className="absolute top-20 rounded-xl px-3 py-2 bg-black/70 text-xs">تحرك بحرية واقترب من الشخصيات للتحدث</span>
           </button>}
           
           {/* Real Three.js Canvas Container */}
@@ -947,15 +1065,24 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span>X: {playerCoords.x} | Z: {playerCoords.z}</span>
             </div>
-            <div className="px-3 py-1.5 rounded-xl bg-[#ff4f9a]/20 backdrop-blur-md border border-[#ff4f9a]/30 text-[11px] font-bold text-[#ff8bb9] flex items-center gap-1.5">
+            {showControlsHint && <div className="px-3 py-1.5 rounded-xl bg-black/70 backdrop-blur-md border border-white/20 text-[11px] font-bold text-white flex items-center gap-1.5">
               <Gamepad2 className="w-3.5 h-3.5" />
               <span>{isTouchDevice ? 'اسحب عصا التحكم للتحرك' : 'تحرك بـ W, A, S, D أو الأسهم'}</span>
-            </div>
+            </div>}
           </div>
 
+          {greetingId && WORLD_GREETINGS[greetingId] && (
+            <div role="status" className="absolute top-24 left-3 right-3 z-20 max-w-lg mx-auto rounded-2xl bg-[#101521]/95 text-white p-4 border border-white/20 text-xs shadow-xl max-h-[32vh] overflow-auto">
+              <button aria-label="إغلاق الترجمة" onClick={() => { setGreetingId(null); stopWorldGreeting(); }} className="float-left p-1"><X className="w-4 h-4" /></button>
+              <p className="font-bold leading-7">{WORLD_GREETINGS[greetingId].ar}</p>
+              <p dir="ltr" className="text-left leading-6 text-cyan-100 mt-2">{WORLD_GREETINGS[greetingId].en}</p>
+              <p className="text-[10px] text-slate-300 mt-2">{voiceStatus}</p>
+            </div>
+          )}
           {/* Proximity Interaction Prompt with NPC */}
           {nearbyNpc && (
             <div className="absolute bottom-36 sm:bottom-24 left-1/2 -translate-x-1/2 z-20 w-[calc(100%-2rem)] max-w-[22rem]">
+              <button onClick={() => greet(nearbyNpc.id)} className="mb-3 mx-auto flex items-center justify-center gap-2 min-h-11 px-4 rounded-xl bg-black/80 text-white border border-white/25 text-xs font-bold"><Volume2 className="w-4 h-4" />اسمع الترحيب بالمصري</button>
               <button
                 onClick={() => {
                   playSound('click');
@@ -983,8 +1110,10 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 key={loc.id}
                 onClick={() => {
                   playSound('click');
-                  handleSelectLoc(loc);
+                  travelToRef.current?.(loc);
+                  greet(loc.id);
                 }}
+                aria-label={`انتقال إلى ${loc.nameAr}`}
                 className="px-2.5 py-1 rounded-xl bg-white/5 hover:bg-white/15 text-white text-xs font-bold transition-colors cursor-pointer flex items-center gap-1 shrink-0"
               >
                 <span>{loc.icon}</span>
@@ -1035,13 +1164,14 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto"
           >
-            <div className="w-full max-w-2xl rounded-3xl bg-linear-to-b from-[#1b1939] to-[#0c0b20] border border-white/20 p-6 sm:p-8 space-y-6 shadow-2xl relative text-right">
+            <div className="w-full max-w-2xl max-h-[90dvh] overflow-y-auto rounded-3xl bg-linear-to-b from-[#1b1939] to-[#0c0b20] border border-white/20 p-6 sm:p-8 space-y-6 shadow-2xl relative text-right">
               
               {/* Close Button */}
               <button
-                onClick={() => setSelectedLocation(null)}
+                onClick={() => { setSelectedLocation(null); setGreetingId(null); stopWorldGreeting(); }}
+                aria-label="إغلاق المحادثة"
                 className="absolute top-6 left-6 p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
               >
                 <X className="w-5 h-5" />
@@ -1058,13 +1188,19 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 </div>
               </div>
 
+              <div className="rounded-2xl p-4 bg-white/5 border border-white/10 space-y-2 text-sm">
+                <p className="text-white leading-7">{WORLD_GREETINGS[selectedLocation.id]?.ar}</p>
+                <p dir="ltr" className="text-left text-cyan-100 text-xs">{WORLD_GREETINGS[selectedLocation.id]?.en}</p>
+                <button onClick={() => greet(selectedLocation.id)} className="min-h-11 text-[#ffd166] flex items-center gap-2"><Volume2 className="w-4 h-4" />إعادة الترحيب بالمصري</button>
+                <p className="text-[10px] text-slate-300">{voiceStatus}</p>
+              </div>
               {/* NPC Intro Card */}
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-[#ff4f9a]/20 border border-[#ff4f9a]/40 flex items-center justify-center text-white">
                   <User className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#b9b6d5]">شخصية الذكاء الاصطناعي المسؤولة:</div>
+                  <div className="text-xs text-[#b9b6d5]">شخصية التدريب:</div>
                   <div className="text-sm font-bold text-white">{selectedLocation.npcName} — <span className="text-xs text-[#41e7ff]">{selectedLocation.npcRole}</span></div>
                 </div>
               </div>
@@ -1078,8 +1214,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 <button
                   onClick={() => {
                     playSound('click');
+                    if (selectedLocation.id === 'university') {
+                      exitWorld(); onNavigate('speaking'); return;
+                    }
                     if (onSelectScenario) {
                       onSelectScenario(selectedLocation.scenarioId);
+                    } else {
+                      try { sessionStorage.setItem('henglish-world-scenario', selectedLocation.scenarioId); } catch { /* Private browsing can disable storage. */ }
                     }
                     exitWorld();
                     onNavigate('real-life');
@@ -1088,7 +1229,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                   className="w-full sm:flex-1 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-sm shadow-xl hover:brightness-110 flex items-center justify-center gap-2 cursor-pointer transition-all"
                 >
                   <MessageSquare className="w-4 h-4 fill-current" />
-                  <span>بدء محاكاة المحادثة الحية الآن</span>
+                  <span>بدء تدريب المحادثة الآن</span>
                 </button>
 
                 <button
