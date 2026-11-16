@@ -19,20 +19,21 @@ import { useAppTextMap } from '../services/contentI18nService';
 import { QuizQuestion } from '../types';
 import { QuizEngine } from './QuizEngine';
 import { playSound } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 
-const SKILL_OPTIONS: Array<{ id: string; label: string }> = [
-  { id: 'all', label: 'كل المهارات' },
-  { id: 'vocabulary', label: 'مفردات' },
-  { id: 'grammar', label: 'جرامر' },
-  { id: 'usage', label: 'استخدام' },
-  { id: 'reading', label: 'قراءة' },
-  { id: 'listening', label: 'استماع' },
+const SKILL_OPTIONS: Array<{ id: string; label?: string; labelKey?: string }> = [
+  { id: 'all', labelKey: 'qb.skillAll' },
+  { id: 'vocabulary', labelKey: 'qb.skillVocabulary' },
+  { id: 'grammar', labelKey: 'qb.skillGrammar' },
+  { id: 'usage', labelKey: 'qb.skillUsage' },
+  { id: 'reading', labelKey: 'qb.skillReading' },
+  { id: 'listening', labelKey: 'qb.skillListening' },
   { id: 'ielts', label: 'IELTS' },
   { id: 'toefl', label: 'TOEFL' },
 ];
 
-const LEVEL_OPTIONS: Array<{ id: QuestionLevel | 'all'; label: string }> = [
-  { id: 'all', label: 'كل المستويات' },
+const LEVEL_OPTIONS: Array<{ id: QuestionLevel | 'all'; label?: string; labelKey?: string }> = [
+  { id: 'all', labelKey: 'so.allLevels' },
   { id: 'A1', label: 'A1' },
   { id: 'A2', label: 'A2' },
   { id: 'B1', label: 'B1' },
@@ -41,11 +42,11 @@ const LEVEL_OPTIONS: Array<{ id: QuestionLevel | 'all'; label: string }> = [
   { id: 'C2', label: 'C2' },
 ];
 
-const TYPE_OPTIONS: Array<{ id: string; label: string }> = [
-  { id: 'all', label: 'كل الأنواع' },
-  { id: 'multiple-choice', label: 'اختياري' },
-  { id: 'fill-blank', label: 'أكمل الفراغ' },
-  { id: 'true-false', label: 'صح أم خطأ' },
+const TYPE_OPTIONS: Array<{ id: string; label?: string; labelKey?: string }> = [
+  { id: 'all', labelKey: 'qb.typeAll' },
+  { id: 'multiple-choice', labelKey: 'qb.typeMc' },
+  { id: 'fill-blank', labelKey: 'qb.typeFill' },
+  { id: 'true-false', labelKey: 'qb.typeTf' },
 ];
 
 const COUNT_OPTIONS = [10, 20, 30];
@@ -56,10 +57,10 @@ function levelToDifficulty(level: string): QuizQuestion['difficulty'] {
   return 'advanced';
 }
 
-function toQuizQuestion(q: BankQuestion): QuizQuestion {
+function toQuizQuestion(q: BankQuestion, t: (k: string) => string): QuizQuestion {
   const parts: string[] = [];
   if (q.passage) parts.push(q.passage);
-  if (q.audioText) parts.push(`نص الاستماع: ${q.audioText}`);
+  if (q.audioText) parts.push(`${t('qb.listeningScript')}: ${q.audioText}`);
   parts.push(q.prompt);
   return {
     id: q.id,
@@ -73,6 +74,7 @@ function toQuizQuestion(q: BankQuestion): QuizQuestion {
 }
 
 export const QuestionBankPanel: React.FC = () => {
+  const { t } = useLanguage();
   const qbText = useAppTextMap('massiveQuestionBank');
   const quizText = useAppTextMap('quizzesData');
   const tx = (s: string) => qbText?.[s] ?? quizText?.[s] ?? s;
@@ -143,7 +145,7 @@ export const QuestionBankPanel: React.FC = () => {
   if (loadError) {
     return (
       <div className="glass-panel p-10 rounded-3xl border border-white/10 text-center text-white/70 text-sm font-bold">
-        حصل خطأ في تحميل بنك الأسئلة. جرّب تحديث الصفحة.
+        {t('qb.loadError')}
       </div>
     );
   }
@@ -152,7 +154,7 @@ export const QuestionBankPanel: React.FC = () => {
     return (
       <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
         <Loader2 className="w-10 h-10 text-[#41e7ff] animate-spin mx-auto" />
-        <p className="text-white/80 font-bold text-sm">جارٍ تحميل بنك الأسئلة الكامل...</p>
+        <p className="text-white/80 font-bold text-sm">{t('qb.loading')}</p>
       </div>
     );
   }
@@ -160,8 +162,8 @@ export const QuestionBankPanel: React.FC = () => {
   return (
     <div className="space-y-5 text-right">
       <div className="text-xs text-white/60 font-bold">
-        البنك فيه <strong className="text-[#c4ff55]">{all.length.toLocaleString()}</strong> سؤال
-        محقق - كل سحبة بتطلع أسئلة مختلفة، ومفيش سؤال بيتكرر لحد ما تخلّص كل أسئلة الفلتر.
+        {t('qb.bankInfoPre')} <strong className="text-[#c4ff55]">{all.length.toLocaleString()}</strong>{' '}
+        {t('qb.bankInfoPost')}
       </div>
 
       {/* Filters */}
@@ -169,33 +171,33 @@ export const QuestionBankPanel: React.FC = () => {
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
           {SKILL_OPTIONS.map(o => (
             <button key={o.id} onClick={() => { playSound('click'); setSkill(o.id); setDrawn(null); }} className={chip(skill === o.id)}>
-              {o.label}
+              {o.labelKey ? t(o.labelKey) : o.label}
             </button>
           ))}
         </div>
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
           {LEVEL_OPTIONS.map(o => (
             <button key={o.id} onClick={() => { playSound('click'); setLevel(o.id); setDrawn(null); }} className={chip(level === o.id)}>
-              {o.label}
+              {o.labelKey ? t(o.labelKey) : o.label}
             </button>
           ))}
         </div>
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
           {TYPE_OPTIONS.map(o => (
             <button key={o.id} onClick={() => { playSound('click'); setType(o.id); setDrawn(null); }} className={chip(type === o.id)}>
-              {o.label}
+              {o.labelKey ? t(o.labelKey) : o.label}
             </button>
           ))}
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs text-white/60 font-bold">عدد الأسئلة:</span>
+          <span className="text-xs text-white/60 font-bold">{t('qb.countLabel')}</span>
           {COUNT_OPTIONS.map(n => (
             <button key={n} onClick={() => { playSound('click'); setCount(n); setDrawn(null); }} className={chip(count === n)}>
               {n}
             </button>
           ))}
           <span className="text-[11px] text-white/40 font-bold mr-auto">
-            {poolSize.toLocaleString()} سؤال مطابق للفلتر
+            {poolSize.toLocaleString()} {t('qb.matching')}
           </span>
         </div>
       </div>
@@ -208,11 +210,11 @@ export const QuestionBankPanel: React.FC = () => {
           className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-2xl bg-[#41e7ff] text-[#09091a] text-sm font-black hover:bg-[#70efff] transition-all cursor-pointer disabled:opacity-40 disabled:pointer-events-none"
         >
           <Shuffle className="w-4 h-4" />
-          {drawn ? 'اسحب أسئلة جديدة' : 'ابدأ الكويز'}
+          {drawn ? t('qb.drawNew') : t('qb.startQuiz')}
         </button>
         <button
           onClick={handleResetHistory}
-          title="صفّر الأسئلة المسحوبة قبل كده للفلتر ده"
+          title={t('qb.resetTitle')}
           className="p-3 rounded-2xl bg-white/5 border border-white/10 text-white/60 hover:bg-white/10 transition-all cursor-pointer"
         >
           <RotateCcw className="w-4 h-4" />
@@ -221,15 +223,15 @@ export const QuestionBankPanel: React.FC = () => {
 
       {poolSize === 0 && (
         <div className="glass-panel p-8 rounded-2xl border border-white/10 text-center text-white/60 text-sm font-bold">
-          مفيش أسئلة مطابقة للفلتر ده لسه - جرّب فلتر تاني.
+          {t('qb.noMatch')}
         </div>
       )}
 
       {drawn && drawn.length > 0 && (
         <QuizEngine
           key={`qbank-${round}`}
-          questions={drawn.map(q => ({ ...toQuizQuestion(q), explanation: tx(q.explanationAr ?? '') }))}
-          quizTitle={`بنك الأسئلة الشامل - ${drawn.length} سؤال`}
+          questions={drawn.map(q => ({ ...toQuizQuestion(q, t), explanation: tx(q.explanationAr ?? '') }))}
+          quizTitle={`${t('qb.quizTitle')} - ${drawn.length} ${t('qb.questions')}`}
         />
       )}
     </div>
