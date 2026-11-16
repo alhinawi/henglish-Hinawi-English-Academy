@@ -200,3 +200,28 @@
     color: #111 !important;
   }
 }
+
+/* ==========================================================================
+   Mobile scroll performance
+   backdrop-filter blur + large shadows on every glass card are expensive to
+   rasterize: on Android Chrome a fast fling scroll outruns tile painting and
+   the page shows blank background until the cards catch up. The glass
+   gradient is already 85-90% opaque, so dropping the blur on small screens
+   changes almost nothing visually but makes scrolling smooth.
+   ========================================================================== */
+@media (max-width: 768px) {
+  .glass-panel,
+  .backdrop-blur-xs,
+  .backdrop-blur-sm,
+  .backdrop-blur,
+  .backdrop-blur-md,
+  .backdrop-blur-lg,
+  .backdrop-blur-xl {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .glass-panel {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+}
