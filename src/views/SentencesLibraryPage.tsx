@@ -354,26 +354,29 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </div>
 
             {/* Quick Stats Badges */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 shrink-0">
-              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <span className="text-xl sm:text-2xl font-black text-white block">{allSentences.length.toLocaleString('en-US')}</span>
-                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.total')}</span>
+            <div className="space-y-2 md:max-w-xl">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
+                  <span className="text-xl sm:text-2xl font-black text-white block">{allSentences.length.toLocaleString('en-US')}</span>
+                  <span className="text-[11px] font-bold text-white/60">{t('sl.stats.total')}</span>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
+                  <span className="text-xl sm:text-2xl font-black text-emerald-400 block">{stats.totalStudied}</span>
+                  <span className="text-[11px] font-bold text-white/60">{t('sl.stats.studied')}</span>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
+                  <span className="text-xl sm:text-2xl font-black text-amber-400 block flex items-center justify-center gap-1">
+                    <Flame className="w-5 h-5 text-amber-400 fill-current" />
+                    <span>{stats.streakDays}</span>
+                  </span>
+                  <span className="text-[11px] font-bold text-white/60">{t('sl.stats.streak')}</span>
+                </div>
+                <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
+                  <span className="text-xl sm:text-2xl font-black text-purple-400 block">{stats.masteryScore}%</span>
+                  <span className="text-[11px] font-bold text-white/60">{t('sl.stats.mastery')}</span>
+                </div>
               </div>
-              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <span className="text-xl sm:text-2xl font-black text-emerald-400 block">{stats.totalStudied}</span>
-                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.studied')}</span>
-              </div>
-              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <span className="text-xl sm:text-2xl font-black text-amber-400 block flex items-center justify-center gap-1">
-                  <Flame className="w-5 h-5 text-amber-400 fill-current" />
-                  <span>{stats.streakDays}</span>
-                </span>
-                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.streak')}</span>
-              </div>
-              <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
-                <span className="text-xl sm:text-2xl font-black text-purple-400 block">{stats.masteryScore}%</span>
-                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.mastery')}</span>
-              </div>
+              <p className="text-xs leading-relaxed text-white/60">{t('sl.stats.recallNote')}</p>
             </div>
           </div>
 

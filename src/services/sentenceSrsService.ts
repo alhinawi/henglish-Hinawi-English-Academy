@@ -219,7 +219,7 @@ function recomputeStats(reviewedAt?: Date) {
     cursor -= dayMs;
   }
 
-  // Mastery score = weighted remembered vs total studied (0 to 100)
+  // Legacy field name: share last self-rated remembered, not proficiency (0 to 100)
   const mastery = total > 0 ? Math.round((remembered / total) * 100) : 0;
 
   stats = {

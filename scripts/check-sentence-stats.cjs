@@ -8,3 +8,6 @@ s=setup({s1:rec('2026-11-15T23:55:00Z')});s.api.reviewSentence('s1',4);assert.eq
 s=setup({s1:rec('bad')});assert.equal(s.api.getSentenceStats().streakDays,0);
 for(const l of ['ar','en','de']){const d=JSON.parse(fs.readFileSync('src/i18n/locales/'+l+'.json'));assert.ok(!/100%|Approved|Zugelassene|المعتمدة/.test(d['sl.dist.title']+d['sl.dist.coverage']))}
 console.log('Sentence stats: fresh0/read no-write, real UTC reviews/dedup/stale streak, legacy polluted aggregate ignored: PASS');
+
+for(const l of ['ar','en','de']){const d=JSON.parse(fs.readFileSync('src/i18n/locales/'+l+'.json'));assert.ok(d['sl.stats.recallNote']);assert.ok(!/mastery|Beherrschung|الإتقان/i.test(d['sl.stats.mastery']))}
+assert.ok(fs.readFileSync('src/views/SentencesLibraryPage.tsx','utf8').includes("t('sl.stats.recallNote')"));
