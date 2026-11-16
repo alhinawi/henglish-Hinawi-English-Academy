@@ -119,7 +119,11 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
               <div className="h-44 relative overflow-hidden shrink-0">
                 <img 
                   src={course.imageUrl} 
-                  alt={course.title} 
+                  alt={course.title}
+                  loading="lazy"
+                  decoding="async"
+                  width={1200}
+                  height={675}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-[#171632] via-transparent to-transparent" />
