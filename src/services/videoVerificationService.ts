@@ -186,10 +186,10 @@ export async function verifyYouTubeVideo(
       if (imgRes.ok) {
         const result: VerificationResult = {
           youtubeId,
-          status: 'verified_playable',
-          isEmbeddable: true,
+          status: 'needs_review',
+          isEmbeddable: false,
           thumbnailUrl: thumbUrl,
-          details: 'تم التحقق من وجود الفيديو عبر المعاينة الصورية الرسمية (Thumbnail verified)',
+          details: 'Thumbnail found. Playback and embedding could not be verified.',
           verifiedAt: new Date().toISOString(),
         };
         memoryCache.set(youtubeId, result);
@@ -203,7 +203,7 @@ export async function verifyYouTubeVideo(
     const result: VerificationResult = {
       youtubeId,
       status: 'needs_review',
-      isEmbeddable: true, // fallback to allow attempt
+      isEmbeddable: false, // Network failure is not evidence of embedding permission.
       details: `تعذر الاتصال بفاحص يوتيوب: ${err.message || 'Network error'}`,
       verifiedAt: new Date().toISOString(),
     };
