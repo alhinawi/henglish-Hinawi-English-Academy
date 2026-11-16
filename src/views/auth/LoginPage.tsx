@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
 import { GoogleSignInBlock } from '../../components/GoogleSignInBlock';
 import { playSound, fireCelebration } from '../../utils/audio';
@@ -20,6 +21,7 @@ interface LoginPageProps {
 }
 
 export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
+  const { t, dir } = useLanguage();
   const { login, isLoading } = useAuth();
 
   const [identifier, setIdentifier] = useState('');
@@ -33,11 +35,11 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
     setErrorMessage(null);
 
     if (!identifier.trim()) {
-      setErrorMessage('يرجى إدخال البريد الإلكتروني أو اسم المستخدم.');
+      setErrorMessage(t('lp.identifierRequired'));
       return;
     }
     if (!password) {
-      setErrorMessage('يرجى إدخال كلمة المرور.');
+      setErrorMessage(t('lp.passwordRequired'));
       return;
     }
 
@@ -46,13 +48,13 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
       playSound('correct');
       onNavigate('dashboard');
     } else {
-      setErrorMessage(res.error || 'فشل تسجيل الدخول. يرجى التحقق من بياناتك.');
+      setErrorMessage(res.error || t('lp.failed'));
       playSound('wrong');
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir={dir}>
       {/* Background decorative glows */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -68,24 +70,24 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           Henglish <span className="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Academy</span>
         </h1>
         <p className="text-sm text-slate-400 mt-2">
-          منصة تعليمية متكاملة بالممارسة التفاعلية ومسارات مخصصة لكل طالب
+          {t('lp.intro')}
         </p>
       </div>
 
       {/* Main Login Card */}
       <div className="w-full max-w-md bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative z-10">
-        <div className="flex items-center justify-between pb-6 mb-6 border-b border-slate-800">
+        <div className="flex flex-wrap items-center justify-between gap-3 pb-6 mb-6 border-b border-slate-800">
           <div>
             <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <LogIn className="w-5 h-5 text-indigo-400" /> تسجيل الدخول
+              <LogIn className="w-5 h-5 text-indigo-400" /> {t('lp.signIn')}
             </h2>
-            <p className="text-xs text-slate-400 mt-1">أدخل بيانات حسابك للمتابعة والوصول لمسارك التعليمي</p>
+            <p className="text-xs text-slate-400 mt-1">{t('lp.subtitle')}</p>
           </div>
           <button
             onClick={() => onNavigate('register')}
             className="text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
           >
-            إنشاء حساب جديد
+            {t('lp.register')}
           </button>
         </div>
 
@@ -103,7 +105,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1.5">
-              البريد الإلكتروني أو اسم المستخدم
+              {t('lp.identifier')}
             </label>
             <div className="relative">
               <Mail className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -111,7 +113,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
                 type="text"
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
-                placeholder="name@example.com أو username"
+                placeholder={t('lp.placeholder')}
                 className="w-full pr-11 pl-4 py-3 bg-slate-950/60 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-left"
                 dir="ltr"
                 required
@@ -122,14 +124,14 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
           <div>
             <div className="flex items-center justify-between mb-1.5">
               <label className="block text-xs font-medium text-slate-300">
-                كلمة المرور
+                {t('lp.password')}
               </label>
               <button
                 type="button"
                 onClick={() => onNavigate('forgot-password')}
                 className="text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
               >
-                نسيت كلمة المرور؟
+                {t('lp.forgot')}
               </button>
             </div>
             <div className="relative">
@@ -146,6 +148,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
+                aria-label={showPassword ? t('rp.hide') : t('rp.show')}
                 className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200 transition-colors"
               >
                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -161,7 +164,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
                 onChange={(e) => setRememberMe(e.target.checked)}
                 className="rounded border-slate-700 bg-slate-950 text-indigo-600 focus:ring-indigo-500 w-4 h-4"
               />
-              <span className="text-xs text-slate-400">تذكرني على هذا الجهاز</span>
+              <span className="text-xs text-slate-400">{t('lp.remember')}</span>
             </label>
           </div>
 
@@ -174,8 +177,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
               <span className="inline-block w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
             ) : (
               <>
-                <span>تسجيل الدخول</span>
-                <ArrowRight className="w-4 h-4 rotate-180" />
+                <span>{t('lp.signIn')}</span>
+                <ArrowRight className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
               </>
             )}
           </button>
@@ -185,7 +188,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
 
       {/* Footer info */}
       <div className="mt-8 text-center text-xs text-slate-500">
-        جميع الحقوق محفوظة © {new Date().getFullYear()} Henglish Academy
+        {t('lp.rights')} {new Date().getFullYear()} Henglish Academy
       </div>
     </div>
   );
