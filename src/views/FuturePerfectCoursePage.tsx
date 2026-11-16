@@ -3,6 +3,7 @@ import { CheckCircle2, ListTree } from 'lucide-react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { playSound } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import { CourseOverviewPage } from './CourseOverviewPage';
 import { LessonPage } from './LessonPage';
 
@@ -22,6 +23,7 @@ export const FuturePerfectCoursePage: React.FC<FuturePerfectCoursePageProps> = (
   completedLessons,
   completionPercentage,
 }) => {
+  const { t } = useLanguage();
   const scrollToLesson = (id: string) => {
     playSound('click');
     document.getElementById(`fp-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -33,13 +35,13 @@ export const FuturePerfectCoursePage: React.FC<FuturePerfectCoursePageProps> = (
 
       {/* Table of contents */}
       <nav
-        aria-label="فهرس دروس المستقبل التام"
+        aria-label={t('fp.tocAria')}
         className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <div className="glass-panel rounded-2xl border border-white/10 p-4 sm:p-5 space-y-3">
           <div className="flex items-center gap-2 text-white font-black text-sm">
             <ListTree className="w-4 h-4 text-[#41e7ff]" />
-            <span>محتويات الكورس - {FUTURE_PERFECT_LESSONS.length} دروس في صفحة واحدة</span>
+            <span>{t('fp.tocTitle').replace('{count}', String(FUTURE_PERFECT_LESSONS.length))}</span>
             <span className="ms-auto text-xs font-bold text-[#ffd166]">{completionPercentage}%</span>
           </div>
           <div className="flex gap-2 overflow-x-auto pb-1 custom-scrollbar sm:flex-wrap sm:overflow-visible">
