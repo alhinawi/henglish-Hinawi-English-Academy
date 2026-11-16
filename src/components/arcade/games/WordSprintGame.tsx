@@ -1,20 +1,17 @@
 // سباق الكلمات - translate as many words as you can in 60 seconds.
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Flame } from 'lucide-react';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
-const META: ArcadeGameMeta = {
-  id: 'word-sprint',
-  title: 'سباق الكلمات',
-  tagline: 'كلمة إنجليزية و4 اختيارات بالعربي.. ترجم أكبر عدد في 60 ثانية. إجابة صح = نقطة، وكل 3 ورا بعض بونص!',
-};
-
 const DURATION = 60;
 
 export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const META: ArcadeGameMeta = { id: 'word-sprint', title: t('ah.gameWordSprint'), tagline: t('arc.sprintIntro') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [pool, setPool] = useState<WordPair[]>([]);
@@ -105,7 +102,7 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
     <div className="max-w-lg mx-auto">
       <ArcadeHud title={META.title} score={score} timeLeft={timeLeft} onQuit={quit} />
       {combo >= 2 && (
-        <div className="text-center text-[#ffd166] text-xs font-black mb-2 flex items-center justify-center gap-1"><Flame className="w-3.5 h-3.5" /> {combo} ورا بعض! الجاية بونص</div>
+        <div className="text-center text-[#ffd166] text-xs font-black mb-2 flex items-center justify-center gap-1"><Flame className="w-3.5 h-3.5" /> {t('arc.combo').replace('{count}', String(combo))}</div>
       )}
       <div className="p-6 sm:p-8 rounded-3xl bg-[#121124] border border-white/10 text-center space-y-6">
         <div className="text-3xl sm:text-4xl font-black text-white" dir="ltr">
