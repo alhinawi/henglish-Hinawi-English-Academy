@@ -6,6 +6,7 @@ import {
   SimulationTurn,
   DialogueOption 
 } from '../data/realLifeSimulationsData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { Interactive3DWorld } from '../components/Interactive3DWorld';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
@@ -43,6 +44,7 @@ const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>
 };
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
+  const appText = useAppTextMap('realLifeSimulationsData');
   const [selectedScenarioId, setSelectedScenarioId] = useState<string | null>(() => {
     try {
       const requested = sessionStorage.getItem('henglish-world-scenario');
@@ -220,7 +222,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                       {sc.level}
                     </span>
                   </div>
-                  <h4 className="text-sm font-black text-white">{sc.titleAr}</h4>
+                  <h4 className="text-sm font-black text-white">{txText(appText, sc.titleAr)}</h4>
                   <div className="text-[11px] font-mono text-[#b9b6d5] line-clamp-1">{sc.title}</div>
                 </div>
 
@@ -258,7 +260,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </button>
 
           <div className="flex-1 min-w-0">
-            <h1 className="text-sm font-black text-white truncate">{scenario.titleAr}</h1>
+            <h1 className="text-sm font-black text-white truncate">{txText(appText, scenario.titleAr)}</h1>
             <div className="text-[10px] font-mono text-[#b9b6d5]" dir="ltr">
               {scenarioCompleted ? scenario.turns.length : currentTurnIdx + 1} / {scenario.turns.length}
             </div>
@@ -283,7 +285,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           <div className="relative h-40 sm:h-56 w-full overflow-hidden">
             <img
               src={scenario.backdropImage}
-              alt={scenario.locationName}
+              alt={txText(appText, scenario.locationName)}
               className="w-full h-full object-cover filter brightness-[0.35]"
             />
             <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20] via-[#0c0b20]/60 to-transparent" />
@@ -291,13 +293,13 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <span className="px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166] text-[#0c0b20] shadow-lg flex items-center gap-1.5">
                 <MapPin className="w-3.5 h-3.5" />
-                <span>{scenario.locationName}</span>
+                <span>{txText(appText, scenario.locationName)}</span>
               </span>
             </div>
 
             <div className="absolute bottom-4 right-6 left-6">
               <span className="text-xs text-[#ffd166] font-bold">المشهد الحواري {currentTurnIdx + 1} من {scenario.turns.length}</span>
-              <h2 className="text-xl sm:text-2xl font-black text-white">{scenario.titleAr}</h2>
+              <h2 className="text-xl sm:text-2xl font-black text-white">{txText(appText, scenario.titleAr)}</h2>
             </div>
           </div>
 
@@ -423,7 +425,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-black text-white">تهانينا! أتممت سيناريو {scenario.titleAr} بنجاح</h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white">تهانينا! أتممت سيناريو {txText(appText, scenario.titleAr)} بنجاح</h2>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
               لقد مارست الحوار بنجاح كمتحدث أصلي وتجاوزت التحديات اللغوية للموقف.
             </p>
@@ -460,7 +462,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div>
             <span className="text-xs font-bold text-[#ffd166]">قاموس النجاة للموقف (Survival Glossary)</span>
-            <h3 className="text-xl font-black text-white">أهم الكلمات والعبارات التلقائية لموقف {scenario.titleAr}</h3>
+            <h3 className="text-xl font-black text-white">أهم الكلمات والعبارات التلقائية لموقف {txText(appText, scenario.titleAr)}</h3>
           </div>
         </div>
 
