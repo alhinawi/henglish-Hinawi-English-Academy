@@ -34,6 +34,7 @@ export type PageRoute =
   | 'homework'
   | 'progress'
   | 'resources'
+  | 'sources'
   | 'about'
   | 'grammar-lesson'
   | 'ai-tutor'

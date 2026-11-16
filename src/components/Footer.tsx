@@ -6,7 +6,7 @@ import { playSound } from '../utils/audio';
 const SECTIONS: {title:string;links:{title:string;route:PageRoute}[]}[]=[
   {title:'ابني لغتك',links:[{title:'الكلمات والتعبيرات',route:'vocabulary'},{title:'القواعد والجرامر',route:'grammar'},{title:'الاستماع',route:'listening'},{title:'المحادثة',route:'speaking'},{title:'القراءة',route:'reading'},{title:'الكتابة',route:'writing'},{title:'النطق والفونيتكس',route:'pronunciation'}]},
   {title:'عيش الإنجليزي',links:[{title:'مواقف الحياة الحقيقية',route:'real-life'},{title:'اتعلم من الأفلام',route:'movies'},{title:'ساحة الألعاب',route:'games'},{title:'العالم ثلاثي الأبعاد',route:'world-3d'},{title:'مكتبة الجمل',route:'sentences'},{title:'استوديو الترجمة',route:'translation'}]},
-  {title:'كمّل رحلتك',links:[{title:'استكشف الكورسات',route:'courses'},{title:'الاختبارات وتحديد المستوى',route:'exams'},{title:'تقدمي وإنجازاتي',route:'progress'},{title:'الموارد والمذكرات',route:'resources'},{title:'الشهادات',route:'certificates'},{title:'عن هناوي إنجلش',route:'about'}]},
+  {title:'كمّل رحلتك',links:[{title:'استكشف الكورسات',route:'courses'},{title:'الاختبارات وتحديد المستوى',route:'exams'},{title:'تقدمي وإنجازاتي',route:'progress'},{title:'الموارد والمذكرات',route:'resources'},{title:'أهم المصادر',route:'sources'},{title:'الشهادات',route:'certificates'},{title:'عن هناوي إنجلش',route:'about'}]},
 ];
 export const Footer:React.FC<{onNavigate:(route:PageRoute)=>void}>=({onNavigate})=><footer dir="rtl" className="mt-24 border-t border-white/10 bg-[#09091a]">
   <div className="max-w-7xl mx-auto px-5 sm:px-8 py-12"><div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-9">
