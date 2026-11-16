@@ -2526,5 +2526,17 @@
   "vs.muted": "Stumm",
   "vs.enabled": "Ton an",
   "vs.done": "Fertig",
-  "vs.all": "Alle Stimmen"
+  "vs.all": "Alle Stimmen",
+  "wdm.close": "Schließen (Esc)",
+  "wdm.saved": "In meinem Wortschatz gespeichert",
+  "wdm.save": "Im Wortschatz speichern",
+  "wdm.pronunciation": "Amerikanische und britische Aussprache:",
+  "wdm.other": "Weitere Bedeutungen und Kontexte auf Arabisch:",
+  "wdm.definition": "Englische Definition",
+  "wdm.forms": "Grammatische Formen:",
+  "wdm.example": "Beispiel im Kontext:",
+  "wdm.collocations": "Kollokationen:",
+  "wdm.notes": "Persönliche Notiz für verteiltes Wiederholen:",
+  "wdm.placeholder": "Schreibe eine Notiz, um dir dieses Wort zu merken...",
+  "wdm.saveNote": "Notiz speichern"
 }
