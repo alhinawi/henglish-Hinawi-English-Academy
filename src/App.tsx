@@ -45,6 +45,7 @@ const Interactive3DWorld = lazy(() => import('./components/Interactive3DWorld').
 
 // Flagship Future Perfect & Existing Core Pages
 const CourseOverviewPage = lazy(() => import('./views/CourseOverviewPage').then(m => ({ default: m.CourseOverviewPage })));
+const FuturePerfectCoursePage = lazy(() => import('./views/FuturePerfectCoursePage').then(m => ({ default: m.FuturePerfectCoursePage })));
 const LessonPage = lazy(() => import('./views/LessonPage').then(m => ({ default: m.LessonPage })));
 const CoursesPage = lazy(() => import('./views/CoursesPage').then(m => ({ default: m.CoursesPage })));
 const PracticePage = lazy(() => import('./views/PracticePage').then(m => ({ default: m.PracticePage })));
@@ -187,8 +188,10 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('grammar-lesson');
         setActiveGrammarRuleId(hash.replace('grammar/', ''));
       } else if (hash.startsWith('lesson-')) {
-        setCurrentRoute('lesson');
-        setActiveLessonId(hash);
+        setCurrentRoute('courses/grammar/future-perfect');
+        requestAnimationFrame(() =>
+          setTimeout(() => document.getElementById(`fp-${hash}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 250)
+        );
       } else if (hash === 'courses') {
         setCurrentRoute('courses');
       } else if (hash === 'grammar' || hash === 'courses/grammar') {
@@ -273,6 +276,15 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     if (castRoute === 'grammar-lesson' && targetId) {
       setActiveGrammarRuleId(targetId);
       window.location.hash = `grammar/${targetId}`;
+    } else if (castRoute === 'lesson' && targetId && targetId.startsWith('lesson-')) {
+      // Future Perfect is a single scrolling page now: land on it and scroll
+      // to the module anchor instead of opening a separate lesson route.
+      setCurrentRoute('courses/grammar/future-perfect');
+      window.location.hash = 'future-perfect';
+      requestAnimationFrame(() =>
+        setTimeout(() => document.getElementById(`fp-${targetId}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150)
+      );
+      return;
     } else if (castRoute === 'lesson' && targetId) {
       setActiveLessonId(targetId);
       window.location.hash = targetId;
@@ -430,8 +442,10 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 4. Flagship Course: Future Perfect */}
                 {currentRoute === 'courses/grammar/future-perfect' && (
-                  <CourseOverviewPage
+                  <FuturePerfectCoursePage
                     onNavigate={handleNavigate}
+                    onMarkComplete={(lId: string) => markLessonComplete(lId)}
+                    completedLessons={progress.completedLessons}
                     completionPercentage={completionPercentage}
                   />
                 )}
