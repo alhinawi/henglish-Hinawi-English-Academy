@@ -1,11 +1,22 @@
 {
   "bank": "genz",
   "idPrefix": "gnz",
-  "totalEntries": 0,
+  "totalEntries": 1000,
   "chunkSize": 500,
-  "chunks": [],
+  "chunks": [
+    "gnz000001-000500.json",
+    "gnz000501-001000.json"
+  ],
   "counts": {
-    "byRegister": {},
-    "byOrigin": {}
+    "byRegister": {
+      "informal": 995,
+      "vulgar": 5
+    },
+    "byOrigin": {
+      "UK": 6,
+      "US": 779,
+      "both": 1,
+      "global": 214
+    }
   }
 }
