@@ -1430,7 +1430,7 @@
   "avm.bulkSuccess": "تم استيراد {n} كلمة بنجاح إلى قاعدة البيانات المحلية!",
   "avm.bulkError": "خطأ في صيغة البيانات:",
   "avm.title": "لوحة إدارة وتوسيع بنك المفردات (Vocabulary Admin)",
-  "avm.tabStats": "إحصائيات وقوة القاعدة المعتمدة",
+  "avm.tabStats": "مكتبة الكلمات",
   "avm.tabAdd": "إضافة كلمة جديدة",
   "avm.tabBulk": "استيراد دفعة (JSON / CSV Bulk)",
   "avm.statWords": "إجمالي الكلمات الموثقة",

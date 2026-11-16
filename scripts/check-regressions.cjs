@@ -24,6 +24,7 @@ const checks = [
   'check-question-cycles.cjs',
   'check-question-bank-copy.cjs',
   'check-vocabulary-claims.cjs',
+  'check-vocabulary-real-stats.cjs',
   'check-sentence-stats.cjs',
   'check-copy-success.cjs',
   'check-sentence-rating-bidi.cjs',
