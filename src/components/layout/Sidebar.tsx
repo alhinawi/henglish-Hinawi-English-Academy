@@ -13,6 +13,8 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   'Idioms': 'nav.idioms',
   'Slang': 'nav.slang',
   'Gen Z': 'nav.genz',
+  'IELTS': 'nav.ielts',
+  'TOEFL': 'nav.toefl',
   'أكاديمية المحادثة': 'nav.speaking',
   'أكاديمية الاستماع': 'nav.listening',
   'أكاديمية القراءة': 'nav.reading',
@@ -33,6 +35,7 @@ import { playSound } from '../../utils/audio';
 import {
   LayoutDashboard,
   GraduationCap,
+  BookMarked,
   BookA,
   Mic,
   Headphones,
@@ -270,6 +273,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Gen Z Slang',
           route: 'genz',
           icon: Zap,
+        },
+        {
+          label: 'IELTS',
+          labelEn: 'IELTS Vocabulary',
+          route: 'ielts',
+          icon: GraduationCap,
+        },
+        {
+          label: 'TOEFL',
+          labelEn: 'TOEFL Vocabulary',
+          route: 'toefl',
+          icon: BookMarked,
         },
         {
           label: 'أكاديمية المحادثة',

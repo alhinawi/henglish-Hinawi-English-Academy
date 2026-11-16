@@ -27,8 +27,7 @@ export const DEFAULT_STUDENT_PROFILE: UserProfile = {
   name: "Ahmed Elhinawi",
   nameAr: "محمد الهناوي",
   email: "ahmed@hinawi-english.com",
-  avatar:
-    "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+  avatar: "/images/avatars/default-user.png",
   role: "student",
   currentLevel: "B1",
   targetLevel: "C1",
@@ -43,8 +42,7 @@ export const DEFAULT_TEACHER_PROFILE: UserProfile = {
   name: "Prof. Hinawi",
   nameAr: "أ. د. هناوي",
   email: "instructor@hinawi-english.com",
-  avatar:
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+  avatar: "/images/avatars/default-user.png",
   role: "teacher",
   currentLevel: "C2",
   targetLevel: "C2",

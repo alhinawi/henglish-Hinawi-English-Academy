@@ -327,6 +327,14 @@ const PhraseDetailSheet: React.FC<{ bank: PhraseBankId; entry: PhraseEntry; onCl
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  useEffect(() => {
     let cancelled = false;
     setSentencesLoading(true);
     loadPhraseSentences(bank, entry.id).then((s) => {
