@@ -40,6 +40,7 @@ import {
   ChevronLeft,
   Film,
   BookText,
+  Library,
 } from "lucide-react";
 
 interface DashboardPageProps {
@@ -158,6 +159,18 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       badge: "Practical Survival",
       lessonsCount: "3 موديولات واقعية",
       accentColor: "#ff4f9a",
+    },
+    {
+      id: "sources",
+      title: "أهم المصادر",
+      titleEn: "Resources",
+      desc: "أهم القنوات والكتب والتطبيقات والمواقع لتعلم الإنجليزي وممارسته مع نيتيف، لينكات رسمية متحقق منها.",
+      icon: Library,
+      route: "sources" as PageRoute,
+      color: "from-[#ffd166]/20 to-[#41e7ff]/10",
+      badge: "222+ مصدر",
+      lessonsCount: "10 أقسام مختارة بعناية",
+      accentColor: "#ffd166",
     },
   ];
 
