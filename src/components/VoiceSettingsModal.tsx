@@ -18,6 +18,7 @@ import {
   SpeechSpeed,
 } from "../utils/audio";
 import { VOICES_CATALOG, VoiceItem } from "../data/voicesCatalog";
+import { txText, useAppTextMap } from "../services/contentI18nService";
 import {
   Volume2,
   VolumeX,
@@ -45,6 +46,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
   isOpen,
   onClose,
 }) => {
+  const appText = useAppTextMap('voicesCatalog');
   const [settings, setSettings] = useState(getVoiceSettings());
   const [filter, setFilter] = useState<FilterCategory>("all");
   const [playingVoiceId, setPlayingVoiceId] = useState<string | null>(null);
@@ -207,7 +209,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2">
                           <span className="font-black text-sm text-white">
-                            {voice.nameAr} ({voice.name})
+                            {txText(appText, voice.nameAr)} ({voice.name})
                           </span>
                           <span className="text-[10px] font-black tracking-wider text-[#41e7ff] bg-[#41e7ff]/10 px-1.5 py-0.5 rounded-md border border-[#41e7ff]/20">{voice.accent}</span>
                           {isSelected && (
@@ -222,11 +224,11 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                             {voice.styleTag}
                           </span>
                           <span>•</span>
-                          <span>{voice.accentAr}</span>
+                          <span>{txText(appText, voice.accentAr)}</span>
                         </div>
 
                         <p className="text-[11px] text-[#dedbf4]/80 mt-1.5 line-clamp-2 leading-relaxed">
-                          {voice.descriptionAr}
+                          {txText(appText, voice.descriptionAr)}
                         </p>
                       </div>
                     </div>
