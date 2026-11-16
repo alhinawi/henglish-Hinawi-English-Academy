@@ -546,8 +546,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         {/* Mobile account block (Hinawi 7:32): profile + account actions at
             the top of the burger drawer; the header avatar is hidden on mobile. */}
-        {isMobileDrawer && userProfile && (
-          authSessionType === 'guest' ? (
+        {/* Mobile account block (Hinawi 7:32 + 7:51): guests keep the
+            sign-in prompt at the top of the burger drawer; signed-in users
+            get a compact profile row pinned at the bottom (opens /profile). */}
+        {isMobileDrawer && userProfile && authSessionType === 'guest' && (
             <div className="mx-3 mt-3 p-3 rounded-2xl bg-white/5 border border-white/10 space-y-2.5">
               <div className="flex items-center gap-2.5">
                 <div className="w-9 h-9 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center shrink-0">
@@ -576,76 +578,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </div>
               )}
             </div>
-          ) : (
-            <div className="mx-3 mt-3 rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
-              <div className="flex items-center gap-3 p-3 border-b border-white/10">
-                <img
-                  src={userProfile.avatar}
-                  alt={userProfile.name}
-                  className="w-10 h-10 rounded-xl object-cover border border-[#ffd166]/40 shrink-0"
-                />
-                <div className="min-w-0 flex-1">
-                  <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
-                  <div dir="ltr" className="text-[11px] text-[#b9b6d5] truncate" style={{ textAlign: 'start' }}>{userProfile.email}</div>
-                </div>
-                <span className="shrink-0 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
-                  {userProfile.role === 'teacher' ? t('header.rankTeacher') : t('header.cefrLevel').replace('{level}', userProfile.currentLevel)}
-                </span>
-              </div>
-              <div className="p-1.5 space-y-0.5 text-xs font-bold">
-                {onOpenSettings && (
-                  <button
-                    onClick={() => { playSound('click'); onCloseMobile(); onOpenSettings(); }}
-                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                  >
-                    <Settings className="w-4 h-4 text-[#41e7ff]" />
-                    <span dir="auto">{t('settings.title')}</span>
-                  </button>
-                )}
-                <button
-                  onClick={() => handleNav('my-learning')}
-                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                >
-                  <BookOpen className="w-4 h-4 text-[#41e7ff]" />
-                  <span dir="auto">{t('header.mySpaceNotes')}</span>
-                </button>
-                <button
-                  onClick={() => handleNav('certificates')}
-                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                >
-                  <Award className="w-4 h-4 text-[#ffd166]" />
-                  <span dir="auto">{t('header.myCertificates')}</span>
-                </button>
-                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && (
-                  <button
-                    onClick={() => handleNav('admin')}
-                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                  >
-                    <ShieldCheck className="w-4 h-4 text-[#ffd166]" />
-                    <span dir="auto">{t('header.adminPanel')}</span>
-                  </button>
-                )}
-                {onToggleRole && (
-                  <button
-                    onClick={() => { playSound('click'); onToggleRole(); onCloseMobile(); }}
-                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                  >
-                    <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
-                    <span dir="auto">{t('header.roleToggle')}{userProfile.role === 'student' ? t('header.teacher') : t('header.student')}</span>
-                  </button>
-                )}
-                {onSignOut && (
-                  <button
-                    onClick={() => { playSound('click'); onCloseMobile(); onSignOut(); }}
-                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20"
-                  >
-                    <LogOut className="w-4 h-4 text-red-400" />
-                    <span dir="auto">{t('header.logout')}</span>
-                  </button>
-                )}
-              </div>
-            </div>
-          )
         )}
 
         {/* Expand control (collapsed rail): in-flow so it can never clip at
@@ -849,6 +781,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
           ))}
         </div>
+
+        {/* Mobile profile footer (Hinawi 7:51): ChatGPT-style pinned row at
+            the bottom of the drawer; tap opens the dedicated profile page. */}
+        {isMobileDrawer && userProfile && authSessionType !== 'guest' && (
+          <button
+            onClick={() => handleNav('profile')}
+            className="mx-3 mt-2 mb-1 flex items-center gap-3 p-2.5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer shrink-0"
+          >
+            <img
+              src={userProfile.avatar}
+              alt={userProfile.name}
+              className="w-9 h-9 rounded-xl object-cover border border-[#ffd166]/40 shrink-0"
+            />
+            <div className="min-w-0 flex-1" style={{ textAlign: 'start' }}>
+              <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
+              <div dir="ltr" className="text-[11px] text-[#b9b6d5] truncate">{userProfile.email}</div>
+            </div>
+            {dir === 'rtl'
+              ? <ChevronLeft className="w-4 h-4 text-[#b9b6d5] shrink-0" />
+              : <ChevronRight className="w-4 h-4 text-[#b9b6d5] shrink-0" />}
+          </button>
+        )}
 
         {/* Footer info in sidebar */}
         {!isCollapsed && (

@@ -41,6 +41,7 @@ const MyLearningPage = lazy(() => import('./views/MyLearningPage').then(m => ({ 
 const AdminDashboardPage = lazy(() => import('./views/AdminDashboardPage').then(m => ({ default: m.AdminDashboardPage })));
 const AiTutorPage = lazy(() => import('./views/AiTutorPage').then(m => ({ default: m.AiTutorPage })));
 const CertificatesPage = lazy(() => import('./views/CertificatesPage').then(m => ({ default: m.CertificatesPage })));
+const ProfilePage = lazy(() => import('./views/ProfilePage').then(m => ({ default: m.ProfilePage })));
 const Interactive3DWorld = lazy(() => import('./components/Interactive3DWorld').then(m => ({ default: m.Interactive3DWorld })));
 
 // Flagship Future Perfect & Existing Core Pages
@@ -242,6 +243,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('badges');
       } else if (hash === 'certificates') {
         setCurrentRoute('certificates');
+      } else if (hash === 'profile' || hash === 'account') {
+        setCurrentRoute('profile');
       } else if (hash === 'exams' || hash === 'assessment') {
         setCurrentRoute('exams');
       } else if (hash === 'practice' || hash === 'homework') {
@@ -606,6 +609,18 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                     quizScores={progress.quizScores}
                     isLoggedIn={session.isLoggedIn && session.type === 'authenticated'}
                     onRequestAuth={() => openAuthWithTab('register')}
+                  />
+                )}
+
+                {currentRoute === 'profile' && (
+                  <ProfilePage
+                    userProfile={activeProfile}
+                    isLoggedIn={session.isLoggedIn && session.type === 'authenticated'}
+                    onNavigate={handleNavigate}
+                    onOpenSettings={() => setIsSettingsOpen(true)}
+                    onToggleRole={toggleUserRole}
+                    onSignOut={logout}
+                    onRequestAuth={() => openAuthWithTab('login')}
                   />
                 )}
 
