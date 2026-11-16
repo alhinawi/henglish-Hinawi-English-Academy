@@ -6,7 +6,7 @@ import { X, Camera, Save } from 'lucide-react';
 import { UserProfile } from '../types';
 import { ANONYMOUS_AVATAR } from '../services/authService';
 import { PRESET_COUNT, presetSvg, svgToDataUrl } from '../utils/avatarPresets';
-import { apiUpdateMe } from '../services/henglishApi';
+import { apiUpdateMe, googleLoginUrl, GOOGLE_REAUTH_MESSAGE } from '../services/henglishApi';
 
 interface SettingsModalProps {
   userProfile: UserProfile;
@@ -33,6 +33,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   const [avatar, setAvatar] = useState<string | null>(initialAvatar);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [needsGoogleReauth, setNeedsGoogleReauth] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
 
   const pickFile = () => fileRef.current?.click();
@@ -75,8 +76,13 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
       ...(avatarChanged ? { avatar: avatar || null } : {}),
     });
     setSaving(false);
-    if (!res) {
-      setError('حصلت مشكلة أثناء الحفظ. حاول تاني.');
+    if (!res.ok) {
+      if (res.googleReauth) {
+        setError(GOOGLE_REAUTH_MESSAGE);
+        setNeedsGoogleReauth(true);
+      } else {
+        setError('حصلت مشكلة أثناء الحفظ. حاول تاني.');
+      }
       return;
     }
     onSaved({
@@ -153,6 +159,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
         </div>
 
         {error && <p className="text-xs text-red-300">{error}</p>}
+        {needsGoogleReauth && (
+          <button
+            onClick={() => { window.location.href = googleLoginUrl(); }}
+            className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white text-gray-800 font-bold text-sm hover:bg-gray-100 cursor-pointer"
+          >
+            المتابعة بحساب Google
+          </button>
+        )}
 
         <button
           onClick={save}
