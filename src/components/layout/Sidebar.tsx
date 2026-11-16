@@ -486,13 +486,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 {cefrLevel}
               </div>
               <div>
-                <div className="text-xs font-bold text-white">المستوى الحالي</div>
+                <div dir="auto" className="text-xs font-bold text-white" style={{ textAlign: 'start' }}>المستوى الحالي</div>
                 <div className="text-[11px] text-[#41e7ff] font-semibold">{xp.toLocaleString()} XP</div>
               </div>
             </div>
             <div className="flex items-center gap-1 text-[11px] font-black text-[#ff8bb9] bg-[#ff4f9a]/15 px-2 py-0.5 rounded-full border border-[#ff4f9a]/30">
               <Flame className="w-3 h-3 text-[#ff4f9a]" />
-              <span>نشط</span>
+              <span dir="auto">نشط</span>
             </div>
           </div>
         )}
@@ -502,7 +502,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           {navGroups.map((group, gIdx) => (
             <div key={gIdx} className="space-y-1">
               {!isCollapsed && (
-                <h3 className="px-3 text-[10px] font-black uppercase tracking-wider text-[#b9b6d5]/70 mb-1">
+                <h3 dir="auto" className="px-3 text-[10px] font-black uppercase tracking-wider text-[#b9b6d5]/70 mb-1" style={{ textAlign: 'start' }}>
                   {group.groupTitle}
                 </h3>
               )}
@@ -547,7 +547,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                         {!isCollapsed && (
                           <div className="flex-1 flex items-center justify-between min-w-0">
-                            <span className="truncate">{tl(item.label)}</span>
+                            <span className="truncate flex-1" dir="auto" style={{ textAlign: 'start' }}>{tl(item.label)}</span>
                             {item.badge && (
                               <span
                                 className={`text-[9px] font-black px-1.5 py-0.5 rounded-md ${
@@ -556,7 +556,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                     : 'bg-white/10 text-[#ffd166] border border-white/10'
                                 }`}
                               >
-                                {item.badge}
+                                <span dir="auto">{item.badge}</span>
                               </span>
                             )}
                           </div>
@@ -597,7 +597,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                     : 'text-[#b9b6d5] hover:text-white hover:bg-white/5'
                                 }`}
                               >
-                                {sec.title}
+                                <span dir="auto">{sec.title}</span>
                               </button>
                             );
                           })}
@@ -615,7 +615,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                 <button
                                   key={subItem.labelEn}
                                   onClick={() => handleNav(subItem.route, subItem.targetId)}
-                                  className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-[11px] font-semibold text-right cursor-pointer transition-all ${
+                                  className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-[11px] font-semibold cursor-pointer transition-all ${
                                     isSubActive
                                       ? 'bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 font-black shadow-xs'
                                       : subItem.isFlagship
@@ -623,7 +623,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                       : 'text-[#dedbf4]/80 hover:text-white hover:bg-white/5'
                                   }`}
                                 >
-                                  <span className="truncate">{tl(subItem.label)}</span>
+                                  <span className="truncate flex-1" dir="auto" style={{ textAlign: 'start' }}>{tl(subItem.label)}</span>
                                   {subItem.badge && (
                                     <span className="text-[9px] font-black px-1.5 py-0.2 rounded bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 shrink-0 mr-1">
                                       {subItem.badge}
@@ -680,8 +680,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Mobile Drawer */}
       <aside
         dir={dir}
-        className={`fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] z-50 md:hidden transform transition-transform duration-300 shadow-2xl ${
-          mobileOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 bottom-0 w-80 max-w-[85vw] z-50 md:hidden transform transition-transform duration-300 shadow-2xl ${
+          dir === 'rtl' ? 'right-0' : 'left-0'
+        } ${
+          mobileOpen ? 'translate-x-0' : dir === 'rtl' ? 'translate-x-full' : '-translate-x-full'
         }`}
         aria-label="القائمة الجانبية للشاشات الصغيرة"
       >

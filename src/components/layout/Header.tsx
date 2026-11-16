@@ -86,7 +86,8 @@ export const Header: React.FC<HeaderProps> = ({
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
+  const isAr = dir === 'rtl';
 
   const grammarRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -149,6 +150,28 @@ export const Header: React.FC<HeaderProps> = ({
     onNavigate(route, lessonId);
   };
 
+  const mobileMenuButton = (
+    <button
+      onClick={() => {
+        playSound('click');
+        if (onToggleMobile) {
+          onToggleMobile();
+        } else if (onOpenMobile) {
+          onOpenMobile();
+        }
+      }}
+      className={`md:hidden p-2 rounded-xl transition-all cursor-pointer relative z-50 ${
+        mobileOpen
+          ? 'bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm'
+          : 'text-[#dedbf4] hover:text-white hover:bg-white/5 border border-transparent'
+      }`}
+      aria-label={mobileOpen ? 'إغلاق القائمة الجانبية' : 'فتح القائمة الجانبية'}
+      aria-expanded={mobileOpen}
+    >
+      {mobileOpen ? <X className="w-5 h-5 text-[#ffd166]" /> : <Menu className="w-5 h-5" />}
+    </button>
+  );
+
   return (
     <header
       dir="ltr"
@@ -158,25 +181,7 @@ export const Header: React.FC<HeaderProps> = ({
       
       {/* LEFT: Mobile Menu Hamburger & Desktop Main Navigation Menus */}
       <div className="flex items-center gap-3 xl:gap-4 min-w-0">
-        <button
-          onClick={() => {
-            playSound('click');
-            if (onToggleMobile) {
-              onToggleMobile();
-            } else if (onOpenMobile) {
-              onOpenMobile();
-            }
-          }}
-          className={`md:hidden p-2 rounded-xl transition-all cursor-pointer relative z-50 ${
-            mobileOpen
-              ? 'bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm'
-              : 'text-[#dedbf4] hover:text-white hover:bg-white/5 border border-transparent'
-          }`}
-          aria-label={mobileOpen ? 'إغلاق القائمة الجانبية' : 'فتح القائمة الجانبية'}
-          aria-expanded={mobileOpen}
-        >
-          {mobileOpen ? <X className="w-5 h-5 text-[#ffd166]" /> : <Menu className="w-5 h-5" />}
-        </button>
+        {!isAr && mobileMenuButton}
 
         {/* Brand: site name + logo, links home (hidden on xl where the full nav shows) */}
         <button
@@ -206,7 +211,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            الرئيسية
+            <span dir="auto">الرئيسية</span>
           </button>
 
           {/* 2. Grammar Academy Dropdown */}
@@ -227,7 +232,7 @@ export const Header: React.FC<HeaderProps> = ({
               aria-haspopup="true"
               aria-expanded={grammarMenuOpen}
             >
-              <span>أكاديمية الجرامر </span>
+              <span dir="auto">أكاديمية الجرامر </span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${grammarMenuOpen ? 'rotate-180' : ''}`} />
             </button>
 
@@ -245,19 +250,19 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleNav('grammar')}
                     className="w-full p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/15 to-[#41e7ff]/15 hover:brightness-110 text-white font-black text-xs flex items-center justify-between cursor-pointer border border-[#ffd166]/30"
                   >
-                    <span>فهرس القواعد الشامل (38 قاعدة) </span>
+                    <span dir="auto">فهرس القواعد الشامل (38 قاعدة) </span>
                     <span className="text-[10px] text-[#ffd166]">A1 - C1</span>
                   </button>
 
                   <div className="pt-1 pb-1 border-t border-white/10 text-[10px] text-[#b9b6d5] font-bold px-2">
-                    أهم الدروس المباشرة:
+                    <span dir="auto">أهم الدروس المباشرة:</span>
                   </div>
 
                   <button
                     onClick={() => handleNav('grammar-lesson', 'past-simple')}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#41e7ff] hover:text-white text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>الماضي البسيط: حكايات وأحداث انتهت</span>
+                    <span dir="auto">الماضي البسيط: حكايات وأحداث انتهت</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#41e7ff]/20 text-[#41e7ff]">B2</span>
                   </button>
 
@@ -268,7 +273,7 @@ export const Header: React.FC<HeaderProps> = ({
                     }}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
                   >
-                    <span>المستقبل البسيط: Will مقابل Going to</span>
+                    <span dir="auto">المستقبل البسيط: Will مقابل Going to</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A2</span>
                   </button>
 
@@ -279,7 +284,7 @@ export const Header: React.FC<HeaderProps> = ({
                     }}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
                   >
-                    <span>المضارع البسيط: العادات والحقائق الثابتة</span>
+                    <span dir="auto">المضارع البسيط: العادات والحقائق الثابتة</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A1</span>
                   </button>
 
@@ -290,7 +295,7 @@ export const Header: React.FC<HeaderProps> = ({
                     }}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
                   >
-                    <span>المضارع التام: الخبرات وأثر الماضي</span>
+                    <span dir="auto">المضارع التام: الخبرات وأثر الماضي</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A2</span>
                   </button>
 
@@ -301,7 +306,7 @@ export const Header: React.FC<HeaderProps> = ({
                     }}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
                   >
-                    <span>حالات لو والشرط الأربعة (Conditionals 0-3)</span>
+                    <span dir="auto">حالات لو والشرط الأربعة (Conditionals 0-3)</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">B1</span>
                   </button>
 
@@ -312,7 +317,7 @@ export const Header: React.FC<HeaderProps> = ({
                     }}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
                   >
-                    <span>المبني للمجهول (Passive Voice) الشامل</span>
+                    <span dir="auto">المبني للمجهول (Passive Voice) الشامل</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">B2</span>
                   </button>
                 </motion.div>
@@ -334,7 +339,7 @@ export const Header: React.FC<HeaderProps> = ({
               aria-haspopup="true"
               aria-expanded={skillsMenuOpen}
             >
-              <span>الأكاديميات المهارية </span>
+              <span dir="auto">الأكاديميات المهارية </span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${skillsMenuOpen ? 'rotate-180' : ''}`} />
             </button>
 
@@ -351,42 +356,42 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleNav('vocabulary')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الكلمات والتعبيرات </span>
+                    <span dir="auto">أكاديمية الكلمات والتعبيرات </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">معجم</span>
                   </button>
                   <button
                     onClick={() => handleNav('speaking')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية المحادثة والطلاقة </span>
+                    <span dir="auto">أكاديمية المحادثة والطلاقة </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">حوار</span>
                   </button>
                   <button
                     onClick={() => handleNav('listening')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الاستماع والفهم </span>
+                    <span dir="auto">أكاديمية الاستماع والفهم </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">لهجات</span>
                   </button>
                   <button
                     onClick={() => handleNav('reading')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية القراءة واستيعاب النصوص </span>
+                    <span dir="auto">أكاديمية القراءة واستيعاب النصوص </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">نصوص</span>
                   </button>
                   <button
                     onClick={() => handleNav('writing')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الكتابة والمراسلات </span>
+                    <span dir="auto">أكاديمية الكتابة والمراسلات </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">إيميل</span>
                   </button>
                   <button
                     onClick={() => handleNav('pronunciation')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية النطق والفونيتكس </span>
+                    <span dir="auto">أكاديمية النطق والفونيتكس </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">IPA</span>
                   </button>
                 </motion.div>
@@ -403,7 +408,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            إنجليزي المواقف الحقيقية 
+            <span dir="auto">إنجليزي المواقف الحقيقية</span>
           </button>
 
           {/* 5. AI English Tutor */}
@@ -416,7 +421,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <Bot className="w-3.5 h-3.5" />
-            <span>مساعد التعلم </span>
+            <span dir="auto">مساعد التعلم </span>
           </button>
 
           {/* 6. Placement & Exams */}
@@ -428,7 +433,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            تحديد المستوى 
+            <span dir="auto">تحديد المستوى</span>
           </button>
 
           {/* 7. Certificates & Verification */}
@@ -440,7 +445,7 @@ export const Header: React.FC<HeaderProps> = ({
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            الشهادات 
+            <span dir="auto">الشهادات</span>
           </button>
         </nav>
       </div>
@@ -523,7 +528,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className="text-[11px] text-[#41e7ff] hover:underline cursor-pointer flex items-center gap-1"
                   >
                     <CheckCheck className="w-3.5 h-3.5" />
-                    تحديد الكل كمقروء
+                    <span dir="auto">تحديد الكل كمقروء</span>
                   </button>
                 )}
               </div>
@@ -604,8 +609,8 @@ export const Header: React.FC<HeaderProps> = ({
                       <User className="w-5 h-5 text-[#b9b6d5]" />
                     </div>
                     <div className="min-w-0">
-                      <div className="text-sm font-black text-white">بتتصفح من غير حساب</div>
-                      <div className="text-[11px] text-[#b9b6d5] leading-relaxed mt-0.5">
+                      <div dir="auto" className="text-sm font-black text-white">بتتصفح من غير حساب</div>
+                      <div dir="auto" className="text-[11px] text-[#b9b6d5] leading-relaxed mt-0.5">
                         تقدمك محفوظ تلقائياً على جهازك، وأول ما تنشئ حساب هيتنقل عليه بالكامل.
                       </div>
                     </div>
@@ -619,7 +624,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className="w-full flex items-center justify-center gap-2 p-2.5 rounded-xl bg-[#c4ff55] text-[#09091a] font-black hover:brightness-110 cursor-pointer"
                   >
                     <UserPlus className="w-4 h-4" />
-                    <span>إنشاء حساب مجاني</span>
+                    <span dir="auto">إنشاء حساب مجاني</span>
                   </button>
                   <button
                     onClick={() => {
@@ -630,7 +635,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className="w-full flex items-center justify-center gap-2 p-2 rounded-xl bg-white/5 border border-white/15 text-white font-bold hover:bg-white/10 cursor-pointer"
                   >
                     <LogIn className="w-4 h-4 text-[#41e7ff]" />
-                    <span>تسجيل الدخول</span>
+                    <span dir="auto">تسجيل الدخول</span>
                   </button>
                 </div>
               ) : (
@@ -701,22 +706,22 @@ export const Header: React.FC<HeaderProps> = ({
                   >
                     <span className="flex items-center gap-2">
                       <User className="w-4 h-4 text-[#ffd166]" />
-                      <span>إدارة الحساب</span>
+                      <span dir="auto">إدارة الحساب</span>
                     </span>
                     <ChevronLeft className="w-4 h-4 text-[#ffd166]" />
                   </button>
                 )}
 
-                <button onClick={() => handleNav('leaderboard')} className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5"><Award className="w-4 h-4 text-[#ffd166]"/>لوحة المتصدرين</button>
+                <button onClick={() => handleNav('leaderboard')} className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5"><Award className="w-4 h-4 text-[#ffd166]"/><span dir="auto">لوحة المتصدرين</span></button>
 
-                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && <button onClick={() => handleNav('admin')} className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5"><ShieldCheck className="w-4 h-4 text-[#ffd166]"/>لوحة تحكم الأدمن</button>}
+                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && <button onClick={() => handleNav('admin')} className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5"><ShieldCheck className="w-4 h-4 text-[#ffd166]"/><span dir="auto">لوحة تحكم الأدمن</span></button>}
 
                 <button
                   onClick={() => handleNav('my-learning')}
                   className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
                 >
                   <BookOpen className="w-4 h-4 text-[#41e7ff]" />
-                  <span>مساحتي الخاصة والملاحظات</span>
+                  <span dir="auto">مساحتي الخاصة والملاحظات</span>
                 </button>
 
                 <button
@@ -724,7 +729,7 @@ export const Header: React.FC<HeaderProps> = ({
                   className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
                 >
                   <Award className="w-4 h-4 text-[#ffd166]" />
-                  <span>شهاداتي المعتمدة والتوثيق</span>
+                  <span dir="auto">شهاداتي المعتمدة والتوثيق</span>
                 </button>
 
                 {authSessionType !== 'guest' && (
@@ -753,7 +758,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
                   >
                     <Settings className="w-4 h-4 text-[#41e7ff]" />
-                    <span>الإعدادات</span>
+                    <span dir="auto">الإعدادات</span>
                   </button>
                 )}
 
@@ -767,7 +772,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className="w-full flex items-center gap-2.5 p-2 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20 font-bold"
                   >
                     <LogOut className="w-4 h-4 text-red-400" />
-                    <span>تسجيل الخروج من الحساب</span>
+                    <span dir="auto">تسجيل الخروج من الحساب</span>
                   </button>
                 )}
               </div>
@@ -775,6 +780,7 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
 
+        {isAr && mobileMenuButton}
       </div>
 
       {/* Account Management Modal */}
@@ -832,7 +838,7 @@ export const Header: React.FC<HeaderProps> = ({
                   className="w-full flex items-center gap-2.5 p-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold transition-colors cursor-pointer"
                 >
                   <BookOpen className="w-4 h-4 text-[#41e7ff]" />
-                  <span>مساحتي الخاصة والتقدّم</span>
+                  <span dir="auto">مساحتي الخاصة والتقدّم</span>
                 </button>
 
                 <button
@@ -844,7 +850,7 @@ export const Header: React.FC<HeaderProps> = ({
                   className="w-full flex items-center gap-2.5 p-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold transition-colors cursor-pointer"
                 >
                   <Award className="w-4 h-4 text-[#ffd166]" />
-                  <span>شهاداتي المعتمدة</span>
+                  <span dir="auto">شهاداتي المعتمدة</span>
                 </button>
 
                 <button
@@ -856,7 +862,7 @@ export const Header: React.FC<HeaderProps> = ({
                   className="w-full flex items-center gap-2.5 p-3 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold transition-colors cursor-pointer"
                 >
                   <KeyRound className="w-4 h-4 text-[#c4ff55]" />
-                  <span>تغيير كلمة المرور</span>
+                  <span dir="auto">تغيير كلمة المرور</span>
                 </button>
 
                 {onSignOut && (
@@ -869,7 +875,7 @@ export const Header: React.FC<HeaderProps> = ({
                     className="w-full flex items-center gap-2.5 p-3 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20 font-bold"
                   >
                     <LogOut className="w-4 h-4 text-red-400" />
-                    <span>تسجيل الخروج من الحساب</span>
+                    <span dir="auto">تسجيل الخروج من الحساب</span>
                   </button>
                 )}
               </div>

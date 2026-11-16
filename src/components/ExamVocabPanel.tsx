@@ -235,8 +235,8 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
   return (
     <div className="space-y-5">
       <div className="space-y-2">
-        <h1 className="text-3xl sm:text-4xl font-black text-white font-['Cairo',sans-serif]">{titleAr}</h1>
-        <p className="text-sm text-[#b9b6d5] leading-relaxed">{blurbAr}</p>
+        <h1 dir="auto" className="text-3xl sm:text-4xl font-black text-white font-['Cairo',sans-serif]" style={{ textAlign: 'start' }}>{titleAr}</h1>
+        <p dir="auto" className="text-sm text-[#b9b6d5] leading-relaxed" style={{ textAlign: 'start' }}>{blurbAr}</p>
         {total !== null && (
           <p className="text-xs font-bold text-[#ffd166]">
             {total.toLocaleString('en')} {exam === 'ielts' ? 'IELTS' : 'TOEFL'} {showVerified ? t('ev.wordSuffix') : ''}
@@ -324,7 +324,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
                 </span>
               </div>
             </div>
-            <p className="text-base font-bold text-white leading-relaxed">{txMeaning(txMap, e.id, e.meaningAr)}</p>
+            <p dir="auto" className="text-base font-bold text-white leading-relaxed" style={{ textAlign: 'start' }}>{txMeaning(txMap, e.id, e.meaningAr)}</p>
             {e.collocation && (
               <p className="text-xs text-[#41e7ff]" dir="ltr">
                 {e.collocation}
@@ -332,7 +332,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
             )}
             <div className="space-y-1 border-r-2 border-[#ffd166]/30 pr-3">
               <p className="text-sm text-[#b9b6d5]" dir="ltr">{e.exampleEn}</p>
-              <p className="text-sm text-white/80">{txExample(txMap, e.id, e.exampleAr)}</p>
+              <p dir="auto" className="text-sm text-white/80" style={{ textAlign: 'start' }}>{txExample(txMap, e.id, e.exampleAr)}</p>
             </div>
           </button>
         ))}
@@ -454,7 +454,7 @@ const ExamDetailSheet: React.FC<{
                 <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.word}</h2>
                 <PronounceButton text={entry.word} />
               </span>
-              <p className="text-sm font-bold text-white leading-relaxed">{shownMeaning}</p>
+              <p dir="auto" className="text-sm font-bold text-white leading-relaxed" style={{ textAlign: 'start' }}>{shownMeaning}</p>
             </div>
             <div className="flex items-center gap-2 shrink-0">
               <button
@@ -503,7 +503,7 @@ const ExamDetailSheet: React.FC<{
                 <p className="text-sm text-white leading-relaxed" dir="ltr">
                   <span className="text-[#ffd166] font-black ml-1">{i + 1}.</span> {s.en}
                 </p>
-                <p className="text-sm text-[#b9b6d5]">{s.ar}</p>
+                <p dir="auto" className="text-sm text-[#b9b6d5]" style={{ textAlign: 'start' }}>{s.ar}</p>
               </div>
             ))}
           {!sentencesLoading && !sentences && (
