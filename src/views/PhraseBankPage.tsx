@@ -10,7 +10,7 @@ import { PhraseBankId } from '../services/phraseBankService';
 const BANK_COPY: Record<PhraseBankId, { titleAr: string; blurbAr: string }> = {
   idioms: {
     titleAr: 'Idioms',
-    blurbAr: 'أشهر الـ Idioms الإنجليزية بمعناها بالمصري، مع مثال إنجليزي وترجمته لكل تعبير. كل التعابير مراجعة ومحققة يدوياً.',
+    blurbAr: 'أشهر الـ Idioms الإنجليزية بمعناها بالمصري، مع مثال إنجليزي وترجمته لكل تعبير. المحتوى الأصلي بالعربي والإنجليزي مراجع يدوياً.',
   },
   slang: {
     titleAr: 'Slang',
