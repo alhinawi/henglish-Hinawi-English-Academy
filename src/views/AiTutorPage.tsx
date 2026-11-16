@@ -862,9 +862,9 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             placeholder={
               isRecordingVoice
                 ? t('at.listening')
-                : `${t('at.askPre')} ${activeAssistant.nameAr} ${t('at.askPost')}`
+                : `${t('at.askPre')} ${activeAssistant.nameAr}...`
             }
-            className="flex-1 px-4 py-3 rounded-2xl bg-[#151430] border border-white/15 text-white text-xs sm:text-sm focus:outline-none focus:border-[#ffd166] transition-colors"
+            className="flex-1 min-w-0 px-4 py-3 rounded-2xl bg-[#151430] border border-white/15 text-white text-xs sm:text-sm focus:outline-none focus:border-[#ffd166] transition-colors"
           />
 
           {/* Regenerate Button if messages exist */}
