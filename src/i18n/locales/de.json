@@ -2382,5 +2382,19 @@
   "ts.ocr": "Bilderkennung (OCR)",
   "ts.practice": "Übersetzungsaufgaben und Übungen",
   "ts.vocab": "Wortschatz und Verlauf (SRS)",
-  "ts.analysisUnavailable": "Für dieses Wort liegt im aktuellen Übersetzungsergebnis keine geprüfte Analyse vor."
+  "ts.analysisUnavailable": "Für dieses Wort liegt im aktuellen Übersetzungsergebnis keine geprüfte Analyse vor.",
+  "to.title": "KI-Übersetzung",
+  "to.done": "Abgeschlossen",
+  "to.copy": "Übersetzung kopieren",
+  "to.speak": "Übersetzung anhören",
+  "to.loading": "Übersetzung läuft...",
+  "to.failed": "Übersetzung konnte nicht abgeschlossen werden",
+  "to.retry": "Erneut versuchen",
+  "to.empty": "Verfügbare Übersetzungsergebnisse erscheinen hier.",
+  "to.emptyHint": "Klicke auf ein Wort, um die vom Übersetzungsdienst bereitgestellte Analyse zu sehen.",
+  "to.wordTitle": "Verfügbare Wortanalyse und Wortschatzoptionen ansehen",
+  "to.hint": "Klicke auf ein Wort für verfügbare Analysen",
+  "to.explain": "Übersetzungs- und Grammatikerklärung",
+  "to.characters": "Zeichen",
+  "to.footer": "KI-Übersetzungsdienst"
 }

@@ -2382,5 +2382,19 @@
   "ts.ocr": "Image scanning (OCR)",
   "ts.practice": "Translation challenges and practice",
   "ts.vocab": "Vocabulary and history (SRS)",
-  "ts.analysisUnavailable": "No verified analysis is available for this word in the current translation result."
+  "ts.analysisUnavailable": "No verified analysis is available for this word in the current translation result.",
+  "to.title": "AI Translation",
+  "to.done": "Complete",
+  "to.copy": "Copy translation",
+  "to.speak": "Listen to the translation",
+  "to.loading": "Translating...",
+  "to.failed": "Translation could not be completed",
+  "to.retry": "Try again",
+  "to.empty": "Translation results will appear here when available.",
+  "to.emptyHint": "Click a word to view its analysis when provided by the translation service.",
+  "to.wordTitle": "View available word analysis and vocabulary options",
+  "to.hint": "Click a word to view available analysis",
+  "to.explain": "Translation and grammar explanation",
+  "to.characters": "characters",
+  "to.footer": "AI translation service"
 }
