@@ -1,0 +1,3538 @@
+[
+ {
+  "id": "q-grm1-013201",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The thief have been arrested.",
+   "The thief has be arrested.",
+   "The thief has arrested.",
+   "The thief has been arrested."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: The thief has been arrested..",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013202",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The task can be finish today.",
+   "The task can been finished today.",
+   "The task can finished today.",
+   "The task can be finished today."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: The task can be finished today..",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013203",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The film was directed of a young man.",
+   "The film directed by a young man.",
+   "The film was directed from a young man.",
+   "The film was directed by a young man."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: The film was directed by a young man..",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013204",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The room is been cleaned now.",
+   "The room being clean now.",
+   "The room is cleaning now.",
+   "The room is being cleaned now."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: The room is being cleaned now..",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013205",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The report will be finished tomorrow\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3).",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013206",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The work has been done\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3).",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013207",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The book was written from Naguib Mahfouz\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح The book was written by Naguib Mahfouz. by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3).",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013208",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The cake can be eaten now\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3).",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013209",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I am tired,\" she said. -> She said that she _____ tired.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "is",
+   "were",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: was.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013210",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I like pizza,\" he said. -> He said that he _____ pizza.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had liked",
+   "liked",
+   "likes",
+   "like"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: liked.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013211",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"We will help you,\" they said. -> They said that they _____ help me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "would",
+   "can",
+   "did"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: would.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013212",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I can swim,\" she said. -> She said that she _____ swim.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can",
+   "was",
+   "would",
+   "could"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: could.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013213",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I live in Cairo,\" he said. -> He said that he _____ in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was lived",
+   "lived",
+   "live",
+   "lives"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: lived.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013214",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"We are playing,\" they said. -> They said that they _____ playing.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have been",
+   "were",
+   "are",
+   "was"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: were.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013215",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I have finished,\" she said. -> She said that she _____ finished.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "had",
+   "has",
+   "was"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: had.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013216",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I don't know,\" he said. -> He said that he _____ know.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "didn't",
+   "don't",
+   "doesn't",
+   "wasn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013217",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I will call you tomorrow,\" Ali said. -> Ali said that he would call me _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the next day",
+   "yesterday",
+   "a week ago",
+   "last week"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: the next day.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013218",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I am busy now,\" she said. -> She said that she was busy _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "next year",
+   "tomorrow",
+   "then",
+   "yesterday"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: then.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013219",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I went to the market,\" he said. -> He said that he _____ to the market.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had gone",
+   "goes",
+   "has gone",
+   "went to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: had gone.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013220",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I work here,\" she said. -> She said that she worked _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "here",
+   "where",
+   "that",
+   "there"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: there.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013221",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"We are happy,\" they said. -> They said that _____ happy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "we were",
+   "we are",
+   "they are",
+   "they were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: they were.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013222",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I love my job,\" he said. -> He said that he _____ his job.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had loves",
+   "loves",
+   "love",
+   "loved"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: loved.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013223",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I have a car,\" Mona said. -> Mona said that she _____ a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "had",
+   "was",
+   "have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: had.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013224",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I am going to travel,\" he said. -> He said that he _____ going to travel.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "is",
+   "am",
+   "were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: was.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013225",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"It is raining,\" she said. -> She said that it _____ raining.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "were",
+   "is",
+   "has been"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: was.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013226",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"I can't hear you,\" he said. -> He said that he _____ hear me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "couldn't",
+   "can't",
+   "wouldn't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: couldn't.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013227",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported sentence. \"I am hungry,\" said Omar.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Omar said that he is hungry.",
+   "Omar said that he was hungry.",
+   "Omar said that he were hungry.",
+   "Omar said that I was hungry."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: Omar said that he was hungry..",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013228",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported sentence. \"We like music,\" they said.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They said that they had like music.",
+   "They said that they liked music.",
+   "They said that we liked music.",
+   "They said that they like music."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: They said that they liked music..",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013229",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported sentence. \"I will help,\" Sara said.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Sara said that she would help.",
+   "Sara said that she will help.",
+   "Sara said that I would help.",
+   "Sara said that she helped."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: Sara said that she would help..",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013230",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported sentence. \"I can drive,\" he said.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He said that he can drive.",
+   "He said that I could drive.",
+   "He said that he could drive.",
+   "He said that he would drive."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: He said that he could drive..",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013231",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported sentence. \"I don't like tea,\" she said.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She said that she didn't like tea.",
+   "She said that she hadn't like tea.",
+   "She said that I didn't like tea.",
+   "She said that she doesn't like tea."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف. الإجابة الصحيحة: She said that she didn't like tea..",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013232",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He said that he is tired\" is the standard backshifted form of \"I am tired\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He said that he was tired لأن الزمن بيرجع خطوة لورا. حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013233",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She said that she could swim\" reports \"I can swim\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013234",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"They said they would come\" reports \"We will come\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013235",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He said that he liked it\" reports \"I like it\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. حسب قاعدة الامتحانات المعتادة، في الكلام المنقول بنرجع الزمن خطوة لورا: present simple يبقى past simple، will يبقى would، can يبقى could، ونغير الضمائر والظروف.",
+  "topic": "Grammar: reported speech statements (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013236",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Where do you live?\" -> She asked me where I _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did live",
+   "live",
+   "do live",
+   "lived"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: lived.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013237",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Are you tired?\" -> He asked me _____ I was tired.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "what",
+   "do",
+   "if",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: if.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013238",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"What is your name?\" -> She asked me what my name _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "did",
+   "were",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: was.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013239",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Do you like tea?\" -> He asked her if she _____ tea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "like",
+   "liked",
+   "likes",
+   "did like"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: liked.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013240",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Close the door,\" he said. -> He told me _____ the door.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that close",
+   "closing",
+   "close",
+   "to close"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: to close.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013241",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Don't be late,\" she said. -> She told us _____ late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "not to be",
+   "don't be",
+   "not be",
+   "to not being"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: not to be.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013242",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Where did you go?\" -> He asked me where I _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had gone",
+   "go",
+   "went did",
+   "did go"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: had gone.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013243",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Can you help me?\" -> She asked me _____ I could help her.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that",
+   "if",
+   "what",
+   "do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: if.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013244",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Please sit down,\" he said. -> He asked me _____ down.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sitting",
+   "sit",
+   "that sit",
+   "to sit"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: to sit.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013245",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"How old are you?\" -> She asked him how old he _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "was",
+   "were",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: was.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013246",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Why are you crying?\" -> He asked her why she _____ crying.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "was",
+   "did",
+   "were"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: was.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013247",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Open your books,\" the teacher said. -> The teacher told us _____ our books.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "opening",
+   "open",
+   "that open",
+   "to open"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: to open.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013248",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Do you speak French?\" -> She asked me _____ I spoke French.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "that",
+   "what",
+   "whether"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: whether.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013249",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"When will you arrive?\" -> He asked when I _____ arrive.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "will",
+   "would",
+   "did"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: would.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013250",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Don't touch it,\" she said. -> She told him _____ it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "not touch",
+   "to not touching",
+   "not to touch",
+   "don't touch"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: not to touch.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013251",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "\"Is she at home?\" -> I asked _____ she was at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "what",
+   "if",
+   "did",
+   "that"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: if.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013252",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported question. \"Where are you going?\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He asked where I was going.",
+   "He asked where I am going to.",
+   "He asked where was I going.",
+   "He asked where am I going."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: He asked where I was going..",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013253",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported question. \"What do you want?\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She asked what do I want.",
+   "She asked what I wanted.",
+   "She asked what I want did.",
+   "She asked what did I want."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: She asked what I wanted..",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013254",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported question. \"Do you play chess?\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He asked me that I played chess.",
+   "He asked me if I played chess.",
+   "He asked me if did I play chess.",
+   "He asked me did I play chess."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: He asked me if I played chess..",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013255",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported command. \"Be quiet!\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He told us to be quiet.",
+   "He told us that be quiet.",
+   "He told us be quiet.",
+   "He told us to being quiet."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: He told us to be quiet..",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013256",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct reported command. \"Don't run!\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She told them to not running.",
+   "She told them not run.",
+   "She told them don't run.",
+   "She told them not to run."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل. الإجابة الصحيحة: She told them not to run..",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013257",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He asked me where did I live\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He asked me where I lived لأن ترتيب الجملة العادي. الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013258",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She asked if I was tired\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013259",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He told me to sit\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013260",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She asked me that I was tired\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. لازم if أو whether في سؤال yes/no. الأسئلة المنقولة بنستخدم ترتيب الجملة العادي (من غير do/does/did) وبنستخدم if/whether في أسئلة yes/no. الأوامر بنستخدم told/asked + to + فعل.",
+  "topic": "Grammar: reported questions and commands (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013261",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ play football every day when I was a child.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "use to",
+   "am used to",
+   "used to",
+   "was used to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013262",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ live in Alexandria, but now she lives in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is used to",
+   "use to",
+   "was use to",
+   "used to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013263",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We didn't _____ have a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "used to",
+   "using to",
+   "use to",
+   "be used to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013264",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ you use to smoke?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Did",
+   "Were",
+   "Do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: Did.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013265",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ be shy, but now he is confident.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "uses to",
+   "use to",
+   "used to",
+   "is used to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013266",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ go to the beach every summer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "use to",
+   "used to",
+   "were use to",
+   "are used to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013267",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My grandfather _____ tell us stories.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is used to",
+   "uses to",
+   "used to",
+   "use to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013268",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "There _____ be a cinema here, but it closed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "uses to",
+   "is used to",
+   "use to",
+   "used to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013269",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I didn't _____ like vegetables as a kid.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be used to",
+   "using to",
+   "used to",
+   "use to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013270",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Did she _____ live here?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "using to",
+   "uses to",
+   "use to",
+   "used to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013271",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "People _____ write letters. Now they send emails.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are used to",
+   "used to",
+   "were use to",
+   "use to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013272",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ drink coffee, but now he drinks tea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is used to",
+   "uses to",
+   "use to",
+   "used to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013273",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We _____ be best friends at school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "used to",
+   "uses to",
+   "use to",
+   "are used to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013274",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "When I was young, I _____ climb trees.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "use to",
+   "am used to",
+   "was use to",
+   "used to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: used to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013275",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She didn't _____ wear glasses.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "use to",
+   "be used to",
+   "using to",
+   "used to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013276",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Where did you _____ live?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "using to",
+   "use to",
+   "used to",
+   "uses to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013277",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I used to played chess.",
+   "I was used to play chess.",
+   "I use to play chess.",
+   "I used to play chess."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: I used to play chess..",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013278",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She not used to like coffee.",
+   "She doesn't use to like coffee.",
+   "She didn't used to like coffee.",
+   "She didn't use to like coffee."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: She didn't use to like coffee..",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013279",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Did you use to live here?",
+   "You used to live here?",
+   "Did you used to live here?",
+   "Do you used to live here?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: Did you use to live here?.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013280",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We used to visiting our grandparents every Friday.",
+   "We are used to visit our grandparents every Friday.",
+   "We use to visit our grandparents every Friday.",
+   "We used to visit our grandparents every Friday."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to. الإجابة الصحيحة: We used to visit our grandparents every Friday..",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013281",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I used to went to school by bus\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I used to go لأن بعد used to الفعل الأصلي. used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013282",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He used to live in Cairo\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013283",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Used to\" talks about past habits.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013284",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Did she used to work here?\" is the standard form.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Did she use to work here? لأن did بتشيل ed من used. used to + فعل للعادات والحالات في الماضي اللي مبقتش موجودة. النفي didn't use to والسؤال Did ... use to.",
+  "topic": "Grammar: used to (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013285",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has been working all day. He _____ be tired.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can't",
+   "won't",
+   "must",
+   "might not"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: must.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013286",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is only five years old. She _____ be a teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "must",
+   "might",
+   "can't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013287",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm not sure where Ali is. He _____ be at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "must",
+   "will",
+   "can't",
+   "might"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: might.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013288",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The lights are on. They _____ be at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "must",
+   "couldn't",
+   "can't",
+   "shouldn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: must.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013289",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "That _____ be Sara. She is in Dubai this week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can't",
+   "must",
+   "might",
+   "should"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013290",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Take an umbrella. It _____ rain later.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "shall",
+   "might",
+   "can't",
+   "must"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: might.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013291",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You have been traveling all day. You _____ be exhausted.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "must",
+   "might not",
+   "won't",
+   "can't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: must.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013292",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ be rich. He lives in a tiny flat and takes the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can't",
+   "might",
+   "must",
+   "should"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013293",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "There is no answer. I'm not sure, but they _____ be out.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "won't",
+   "might",
+   "must",
+   "can't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: might.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013294",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The phone is ringing. It _____ be Mom. She always calls now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can't",
+   "wouldn't",
+   "couldn't",
+   "must"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: must.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013295",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ be a doctor. He doesn't know anything about medicine.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can't",
+   "must",
+   "might",
+   "will"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013296",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm not sure, but she _____ be 30 years old.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "might",
+   "must",
+   "will",
+   "can't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: might.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013297",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has a lot of books. He _____ love reading.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "couldn't",
+   "can't",
+   "must",
+   "wouldn't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: must.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013298",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He must to be at home. His car is outside.",
+   "He musts be at home. His car is outside.",
+   "He must at home. His car is outside.",
+   "He must be at home. His car is outside."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: He must be at home. His car is outside..",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013299",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She can't being a student. She is too old.",
+   "She cans't be a student. She is too old.",
+   "She can't to be a student. She is too old.",
+   "She can't be a student. She is too old."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: She can't be a student. She is too old..",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013300",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It might rains tomorrow.",
+   "It mights rain tomorrow.",
+   "It might to rain tomorrow.",
+   "It might rain tomorrow."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: It might rain tomorrow..",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013301",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They must been tired after the match.",
+   "They musts be tired after the match.",
+   "They must are tired after the match.",
+   "They must be tired after the match."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي. الإجابة الصحيحة: They must be tired after the match..",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013302",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Must\" in deductions shows you are almost sure.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013303",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Can't\" in deductions means it is impossible.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013304",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He might to be late\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He might be late بدون to. must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013305",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Might\" shows a small possibility.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. must لو متأكد إنه حقيقي، might/may/could لو محتمل، can't لو متأكد إنه مش حقيقي.",
+  "topic": "Grammar: modals of deduction - must, might, can't (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013306",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You are a student, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "isn't you",
+   "don't you",
+   "aren't you",
+   "are you"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: aren't you.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013307",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She likes tea, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does she",
+   "doesn't she",
+   "isn't she",
+   "don't she"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: doesn't she.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013308",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They didn't come, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did they",
+   "didn't they",
+   "do they",
+   "were they"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: did they.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013309",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He can swim, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can't he",
+   "doesn't he",
+   "can he",
+   "isn't he"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: can't he.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013310",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It is cold today, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't it",
+   "aren't it",
+   "is it",
+   "isn't it"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: isn't it.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013311",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We have finished, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "didn't we",
+   "haven't we",
+   "don't we",
+   "have we"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: haven't we.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013312",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You don't know him, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't you",
+   "did you",
+   "do you",
+   "are you"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: do you.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013313",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She went home, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did she",
+   "wasn't she",
+   "didn't she",
+   "doesn't she"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: didn't she.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013314",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He will come tomorrow, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will he",
+   "isn't he",
+   "doesn't he",
+   "won't he"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: won't he.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013315",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They are late, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are they",
+   "isn't they",
+   "aren't they",
+   "don't they"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: aren't they.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013316",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You can help me, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "aren't you",
+   "can you",
+   "can't you",
+   "don't you"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: can't you.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013317",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I am right, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am I",
+   "don't I",
+   "isn't I",
+   "aren't I"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: aren't I.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013318",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Let's go, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "shall we",
+   "don't we",
+   "let we",
+   "will we"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: shall we.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013319",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It wasn't easy, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wasn't it",
+   "did it",
+   "was it",
+   "is it"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: was it.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013320",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Ali plays chess, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "isn't he",
+   "does he",
+   "doesn't he",
+   "don't he"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: doesn't he.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013321",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You've seen this film, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "haven't you",
+   "don't you",
+   "have you",
+   "didn't you"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: haven't you.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013322",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "There is a problem, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "isn't it there",
+   "isn't there",
+   "doesn't there",
+   "is there"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: isn't there.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013323",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He doesn't like fish, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't he",
+   "is he",
+   "does he",
+   "did he"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: does he.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013324",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Open the window, _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do you",
+   "aren't you",
+   "don't you",
+   "will you"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: will you.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013325",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question tag. \"She is nice, ...\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "is she?",
+   "isn't it?",
+   "doesn't she?",
+   "isn't she?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: isn't she?.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013326",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question tag. \"You didn't call, ...\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "were you?",
+   "do you?",
+   "didn't you?",
+   "did you?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: did you?.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013327",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question tag. \"They live here, ...\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "do they?",
+   "doesn't they?",
+   "aren't they?",
+   "don't they?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: don't they?.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013328",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question tag. \"He has left, ...\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "has he?",
+   "hasn't he?",
+   "didn't he?",
+   "doesn't he?"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: hasn't he?.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013329",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question tag. \"We should go, ...\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "shouldn't we?",
+   "aren't we?",
+   "should we?",
+   "don't we?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت. الإجابة الصحيحة: shouldn't we?.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013330",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "The tag for \"She isn't here\" is \"is she?\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن الجملة منفية فالذيل مثبت. الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013331",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "The tag for \"He plays\" is \"isn't he?\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح doesn't he? لأن play فعل في المضارع البسيط. الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013332",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "The tag for \"I am late\" is \"aren't I?\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، aren't I هو الشكل الشائع. الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013333",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "The tag for \"They came\" is \"didn't they?\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الذيل بيتكون من مساعد + ضمير. لو الجملة مثبتة الذيل منفي، ولو منفية الذيل مثبت.",
+  "topic": "Grammar: question tags (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013334",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I enjoy _____ to music.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "listening",
+   "listen",
+   "listened",
+   "to listen"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: listening.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013335",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She wants _____ a doctor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "being",
+   "been",
+   "be",
+   "to be"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to be.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013336",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He decided _____ a new car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "bought",
+   "buying",
+   "buy",
+   "to buy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to buy.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013337",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They finished _____ the room.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "clean",
+   "cleaning",
+   "cleaned",
+   "to clean"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: cleaning.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013338",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I hope _____ you soon.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "seen",
+   "see",
+   "to see",
+   "seeing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to see.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013339",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Would you mind _____ the window?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "closing",
+   "close",
+   "closed",
+   "to close"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: closing.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013340",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She avoids _____ fast food.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ate",
+   "to eat",
+   "eating",
+   "eat"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: eating.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013341",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We plan _____ to Aswan next week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to travel",
+   "travel",
+   "traveling",
+   "traveled"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to travel.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013342",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He keeps _____ the same mistake.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to make",
+   "making",
+   "made",
+   "make"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: making.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013343",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I promised _____ you tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "calling",
+   "called",
+   "to call",
+   "call"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to call.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013344",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They can't stand _____ in line.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wait",
+   "waited",
+   "waiting",
+   "waits"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: waiting.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013345",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My brother wants _____ English.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "learned",
+   "learning",
+   "learn",
+   "to learn"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to learn.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013346",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She suggested _____ to the park.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "went",
+   "go",
+   "going",
+   "to go"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: going.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013347",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I forgot _____ the door, so it was open.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to lock",
+   "locked",
+   "lock",
+   "locking"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to lock.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013348",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He refused _____ the money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to take",
+   "take",
+   "taking",
+   "took"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to take.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013349",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We are looking forward to _____ you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "seeing",
+   "see",
+   "saw",
+   "to see"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: seeing.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013350",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'm good at _____ pictures.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to draw",
+   "drawing",
+   "draw",
+   "drew"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: drawing.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013351",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is interested in _____ languages.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "learn",
+   "to learn",
+   "learning",
+   "learned"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: learning.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013352",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It's important _____ early.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sleeping",
+   "sleep",
+   "slept",
+   "to sleep"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: to sleep.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013353",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He can _____ five languages.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "speaking",
+   "speak",
+   "spoke",
+   "to speak"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: speak.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013354",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I enjoy read.",
+   "I enjoy reads.",
+   "I enjoy to read.",
+   "I enjoy reading."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: I enjoy reading..",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013355",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She decided leave.",
+   "She decided left.",
+   "She decided leaving.",
+   "She decided to leave."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: She decided to leave..",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013356",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He finished eat.",
+   "He finished eaten.",
+   "He finished to eat.",
+   "He finished eating."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: He finished eating..",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013357",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They want go home.",
+   "They want went home.",
+   "They want going home.",
+   "They want to go home."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: They want to go home..",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013358",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't mind wait.",
+   "I don't mind waited.",
+   "I don't mind to wait.",
+   "I don't mind waiting."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي. الإجابة الصحيحة: I don't mind waiting..",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013359",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I enjoy to swim\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I enjoy swimming. بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013360",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She wants to go\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013361",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He avoided to talk\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He avoided talking. بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013362",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I'm looking forward to seeing you\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن to هنا حرف جر بعده ing. بعد enjoy, finish, mind, avoid, keep بنستخدم V+ing. وبعد want, decide, hope, plan, promise بنستخدم to + فعل. وبعد can/must/should بنستخدم الفعل الأصلي.",
+  "topic": "Grammar: gerund or infinitive (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013363",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The girl _____ father is a pilot is my friend.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "which",
+   "who",
+   "whose"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: whose.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013364",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This is the town _____ I was born.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "whose",
+   "where",
+   "when"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: where.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013365",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I remember the day _____ we met.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "when",
+   "who",
+   "whose"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: when.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013366",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is the man _____ car was stolen.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "who",
+   "which",
+   "where"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: whose.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013367",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "That is the school _____ I studied.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "who",
+   "where",
+   "when"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: where.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013368",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The woman _____ lives next door is a nurse.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "when",
+   "whose",
+   "where",
+   "who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013369",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Summer is the season _____ we go to the beach.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "when",
+   "whose",
+   "who"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: when.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013370",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "A cafe is a place _____ you drink coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "when",
+   "whose",
+   "where",
+   "who"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: where.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013371",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The boy _____ bike is broken is crying.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "where",
+   "whose",
+   "who"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: whose.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013372",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I know a family _____ children speak four languages.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "who",
+   "when",
+   "whose"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: whose.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013373",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This is the house _____ we lived for ten years.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "when",
+   "where",
+   "whose",
+   "who"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: where.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013374",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The book _____ cover is red is mine.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "whose",
+   "who",
+   "which"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: whose.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013375",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Do you remember the time _____ we got lost?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "whose",
+   "when",
+   "who"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: when.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013376",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The teacher _____ taught me English is retired.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "when",
+   "where",
+   "who",
+   "whose"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013377",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The hotel _____ we stayed was very clean.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "who",
+   "when",
+   "whose"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: where.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013378",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Monday is the day _____ I start work.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "who",
+   "where",
+   "when"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: when.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013379",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The man which phone rang left the room.",
+   "The man whom phone rang left the room.",
+   "The man who phone rang left the room.",
+   "The man whose phone rang left the room."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: The man whose phone rang left the room..",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013380",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This is the park whose we play.",
+   "This is the park who we play.",
+   "This is the park when we play.",
+   "This is the park where we play."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: This is the park where we play..",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013381",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I love the day whose it snows.",
+   "I love the day who it snows.",
+   "I love the day where it snows.",
+   "I love the day when it snows."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: I love the day when it snows..",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013382",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is the girl which dog ran away.",
+   "She is the girl where dog ran away.",
+   "She is the girl who dog ran away.",
+   "She is the girl whose dog ran away."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء. الإجابة الصحيحة: She is the girl whose dog ran away..",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013383",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Whose\" shows possession.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013384",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The shop where I bought it\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013385",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The day where we met\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح The day when we met لأن day زمن. whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013386",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The man who car I bought\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح The man whose car I bought. whose للملكية، where للمكان، when للزمن. وبنستخدم who للأشخاص وwhich للأشياء.",
+  "topic": "Grammar: relative clauses with whose, where, when (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013387",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My brother, _____ lives in Dubai, is an engineer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "that",
+   "which",
+   "whose"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: who.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013388",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Cairo, _____ is the capital of Egypt, is very big.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "who",
+   "where",
+   "that"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: which.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013389",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My car, _____ is very old, still works.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "who",
+   "that",
+   "which"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: which.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013390",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Mr. Ahmed, _____ teaches math, is my neighbor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "who",
+   "that",
+   "which"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: who.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013391",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The Nile, _____ is the longest river, flows through Egypt.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "whose",
+   "that",
+   "who"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: which.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013392",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My mother, _____ is a doctor, works at night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "whose",
+   "who",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: who.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013393",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Our teacher, _____ car is red, is late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "whose",
+   "who",
+   "that"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: whose.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013394",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Alexandria, _____ I was born, is by the sea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "which",
+   "who",
+   "that"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: where.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013395",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My phone, _____ I bought last week, is broken.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "which",
+   "that",
+   "where"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: which.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013396",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Sara, _____ you met yesterday, is my cousin.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "that",
+   "who",
+   "which"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: who.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013397",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The film, _____ lasted three hours, was boring.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "where",
+   "which",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: which.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013398",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My best friend, _____ lives next to me, is a pilot.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "whose",
+   "which",
+   "that"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: who.",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013399",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My sister who, lives in Paris is a doctor.",
+   "My sister, which lives in Paris, is a doctor.",
+   "My sister, that lives in Paris, is a doctor.",
+   "My sister, who lives in Paris, is a doctor."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: My sister, who lives in Paris, is a doctor..",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013400",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The Pyramids who are in Giza, are famous.",
+   "The Pyramids, who are in Giza, are famous.",
+   "The Pyramids, that are in Giza, are famous.",
+   "The Pyramids, which are in Giza, are famous."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: The Pyramids, which are in Giza, are famous..",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]

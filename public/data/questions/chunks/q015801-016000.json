@@ -1,0 +1,3554 @@
+[
+ {
+  "id": "q-grm2-015001",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "\"He asked me whether I was ready\" is correct reported speech.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "whether + ترتيب خبري.",
+  "topic": "Grammar: advanced grammar (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015002",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Had I been told earlier, I _____ in a different way.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would be acting",
+   "would have acted",
+   "acted",
+   "will act"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مختلط: ماضي ثم حاضر ممتد.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015003",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "If he _____ so stubborn, he would have listened.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "hadn't",
+   "weren't",
+   "isn't",
+   "wouldn't be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "صفة دائمة حالية والنتيجة ماضية.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015004",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "If I had studied medicine, I _____ a doctor now.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would have been",
+   "will be",
+   "would be",
+   "had been"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ماضي ثم الآن.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015005",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "But for the delay, we _____ on time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would arrive",
+   "will have arrived",
+   "had arrived",
+   "would have arrived"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "لولا التأخير.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015006",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "If it were not for my family, I _____ alone now.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would be",
+   "would have been",
+   "will be",
+   "had been"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "لولا الآن.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015007",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Were he to find out, he _____ furious.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would have been",
+   "would be",
+   "had been",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "احتمال ضعيف.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015008",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I'd have gone if I _____ the time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "have",
+   "would have",
+   "had had",
+   "had"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: if + had had.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015009",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Should he arrive late, _____ him in.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lets",
+   "letting",
+   "to let",
+   "let"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأمر بعد should.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015010",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "If you were to see her now, you _____ her.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wouldn't recognise",
+   "didn't recognise",
+   "won't have recognised",
+   "hadn't recognised"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: were to + would.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015011",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Supposing he _____ told you, what would you have done?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "has",
+   "had",
+   "would have",
+   "will have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: supposing + had p.p.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015012",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Imagine you _____ the chance to live abroad. Would you take it?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "have",
+   "had had",
+   "had",
+   "would have"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: imagine + past.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015013",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I wish he _____ stop interrupting me.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "did",
+   "had",
+   "would"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + would للتذمر.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015014",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "If only they _____ the instructions!",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "had followed",
+   "follow",
+   "would follow",
+   "have followed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: if only + had p.p.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015015",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He acts as though he _____ everything.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "owns to",
+   "owned",
+   "has owned",
+   "will own"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: as though + past.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015016",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I'd sooner you _____ it to anybody.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "don't mention",
+   "won't mention",
+   "didn't mention",
+   "hadn't to mention"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: would sooner + past.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015017",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (mixed conditionals and counterfactuals)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If I wouldn't have taken that job, I wouldn't be here now.",
+   "If I didn't take that job, I wouldn't have been here now.",
+   "If I hadn't take that job, I won't be here.",
+   "If I hadn't taken that job, I wouldn't be here now."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "مختلط.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015018",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (mixed conditionals and counterfactuals)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I wish I had never met him.",
+   "I wish I never met him.",
+   "I wish I would never meet him.",
+   "I wish I have never met him."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: wish + had p.p.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015019",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (mixed conditionals and counterfactuals)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It's as if he didn't hear a word before.",
+   "It's as if he hadn't heard a word.",
+   "It's as if he hasn't heard a word.",
+   "It's as if he wouldn't hear a word."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: as if + had p.p.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015020",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (mixed conditionals and counterfactuals)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If only I can turn back time!",
+   "If only I will turn back time!",
+   "If only I could turn back time!",
+   "If only I could turned back time!"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: if only + could.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015021",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (mixed conditionals and counterfactuals)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Had they leave earlier, they'd have caught the train.",
+   "Have they left earlier, they'd catch the train.",
+   "If had they left earlier, they'd have caught it.",
+   "Had they left earlier, they'd have caught the train."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: inverted third.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015022",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (mixed conditionals and counterfactuals)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I wouldn't have gone had I known.",
+   "I wouldn't have gone had I know.",
+   "I wouldn't go had I known.",
+   "I wouldn't have gone if I would known."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: inverted had I known.",
+  "topic": "Grammar: mixed conditionals and counterfactuals (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015023",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It is imperative that the report _____ submitted today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is",
+   "be",
+   "was",
+   "being"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: imperative that + base.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015024",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They insisted that she _____ present.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is",
+   "was",
+   "be",
+   "were being"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: insist that + base.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015025",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The doctor recommended that he _____ rest.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "takes",
+   "took",
+   "taking",
+   "take"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: recommended + base.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015026",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I would prefer it if you _____ there.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "weren't",
+   "aren't",
+   "won't be",
+   "hadn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: prefer it if + past.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015027",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We demand that the minister _____ resign.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "resigns",
+   "resign",
+   "resigned",
+   "resigning"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: demand that + base.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015028",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The rule requires that every student _____ a uniform.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wears",
+   "wore",
+   "wear",
+   "wearing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: requires that + base.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015029",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It is essential that he _____ told immediately.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is",
+   "was",
+   "being",
+   "be"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: essential that + be.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015030",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She suggested that he _____ a lawyer.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "consult",
+   "consults",
+   "consulted",
+   "consulting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: suggest that + base.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015031",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "So be it. This means: _____ it happen.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lets",
+   "let",
+   "letting",
+   "to let"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: so be it.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015032",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "God _____ you!",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "blesses",
+   "blessed",
+   "bless",
+   "blessing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "دعاء بالصيغة التقليدية.",
+  "topic": "Grammar: subjunctive and formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015033",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is most formal (formal structures)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If you need help, just call us.",
+   "Give us a ring if you need help.",
+   "Shout if you need anything.",
+   "Should you require assistance, please contact us."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "رسمي بانقلاب should.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015034",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is most formal (formal structures)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It is regretted that the event has been cancelled.",
+   "We're sorry it's off.",
+   "Sorry, the event is off.",
+   "It's off, sorry."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "رسمي بالمبني للمجهول.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015035",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is most formal (formal structures)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The committee still hasn't decided.",
+   "The committee has yet to reach a decision.",
+   "They haven't made up their minds.",
+   "It's still up in the air."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: has yet to.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015036",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (formal structures)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Not a single students passed.",
+   "Not any single student passed.",
+   "Not a single student passed.",
+   "No single students passed."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "not a single + مفرد.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015037",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (formal structures)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Hardly nobody came.",
+   "Hardly not anyone came.",
+   "Hardly no one came.",
+   "Hardly anyone came."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: hardly anyone.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015038",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (formal structures)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Barely had she sat down when the phone rang.",
+   "Barely she had sat down when the phone rang.",
+   "Barely had she sat down than the phone rang.",
+   "Barely she sat down when rang the phone."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: barely had...when.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015039",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Should you need help, call me\" is a conditional without \"if\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should للانقلاب.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015040",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"It is imperative that he be present\" is correct subjunctive.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: be.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015041",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Not only she sang, but she also danced\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Not only did she sing.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015042",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"I'd rather you didn't\" refers to the present or future.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: would rather + past.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015043",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Never I have seen it\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Never have I seen it.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015044",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"No sooner had he left than it rained\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: no sooner...than.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015045",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Barely had I arrived than he left\" is the preferred form.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأفضل barely...when.",
+  "topic": "Grammar: formal structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015046",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He seems _____ the point entirely.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "missing to",
+   "to have missed",
+   "to miss have",
+   "have missed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: seem to have p.p.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015047",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is believed _____ working on a new novel.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "being",
+   "to being",
+   "to be",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: is believed to be.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015048",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He claims _____ the first person to climb it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "being to",
+   "to be have",
+   "have been",
+   "to have been"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: claims to have been.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015049",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The first man _____ the moon was Armstrong.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to walk on",
+   "walked on",
+   "walking on to",
+   "walk on"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: the first ... to.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015050",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He was the last person _____ I expected to see.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "which",
+   "that",
+   "what",
+   "to who"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: the last person (that).",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015051",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The best way _____ a language is to speak it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "learning of",
+   "learn",
+   "to learn",
+   "for learn"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: the way to.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015052",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "There is nothing _____ than a good book.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "best",
+   "good",
+   "well",
+   "better"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: nothing better than.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015053",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ be honest, I disagree.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "To",
+   "For",
+   "So",
+   "In"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: to be honest.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015054",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ cut a long story short, we lost.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "For",
+   "To",
+   "So as",
+   "By"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: to cut a long story short.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015055",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He turned up, _____ to find the office closed.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "just",
+   "but",
+   "only",
+   "yet"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "only to find = لقى بعدين.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015056",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She woke up _____ the house on fire.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "finding to",
+   "find",
+   "found to",
+   "to find"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: woke up to find.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015057",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He left without _____ goodbye.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "saying",
+   "to say",
+   "say",
+   "said"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: without + -ing.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015058",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Rather than _____ the exam, he stayed home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "taking to",
+   "take",
+   "took",
+   "to taking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: rather than + base.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015059",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It's no good _____ about the past.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to worry",
+   "worry",
+   "worrying",
+   "worried"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: no good + -ing.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015060",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is said _____ been a spy.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "having to",
+   "to has",
+   "to had",
+   "to have"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: is said to have.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015061",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (complex sentences with participles and infinitives)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Having been warned, he was careful.",
+   "Having warned, he was careful.",
+   "Been warned, he was careful.",
+   "Having being warned, he was careful."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: having been + p.p.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015062",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (complex sentences with participles and infinitives)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He is thought leaving the country.",
+   "He is thought to have left the country.",
+   "He thinks to have left the country.",
+   "He is thought have left."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: is thought to have.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015063",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (complex sentences with participles and infinitives)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The patient is reported improving.",
+   "The patient reports to be improved.",
+   "The patient is reported to be improving.",
+   "The patient is reported be improving."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: is reported to be.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015064",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (complex sentences with participles and infinitives)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Not wanted to be late, she ran.",
+   "Wanting not to be late, she ran.",
+   "No wanting to be late, she ran.",
+   "Not wanting to be late, she ran."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: not + participle.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015065",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (complex sentences with participles and infinitives)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Born in Cairo, he moved to Dubai.",
+   "Bearing in Cairo, he moved to Dubai.",
+   "Being born Cairo, he moved to Dubai.",
+   "Born on Cairo, he moved to Dubai."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: Born in.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015066",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (complex sentences with participles and infinitives)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "To be successful, need to work hard.",
+   "To be successful, you need to work hard.",
+   "To succeed, you needing to work hard.",
+   "Be successful, you need to work hard."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: infinitive of purpose.",
+  "topic": "Grammar: complex sentences with participles and infinitives (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015067",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The politician's speech was full of _____ promises that he never kept.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "hollow of",
+   "blank",
+   "empty",
+   "void of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: empty promises.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015068",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Her _____ remarks upset the whole team.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "tactful",
+   "tactile",
+   "tactical",
+   "tactless"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "tactless = قليل الذوق.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015069",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He gave a _____ explanation that satisfied nobody.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "vague",
+   "vogue",
+   "valid",
+   "vacant"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: vague.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015070",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The new rules are _____ and hard to understand.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "convinced",
+   "convoluted",
+   "convenient",
+   "conventional"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "convoluted = معقدة.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015071",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The company's growth has been _____ over the past decade.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "steadfast of",
+   "stable up",
+   "steady",
+   "firm"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: steady growth.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015072",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She has a _____ sense of humour.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "dried",
+   "drying",
+   "drought",
+   "dry"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: dry humour.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015073",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The film received _____ reviews from critics.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "mixed",
+   "mixing",
+   "mix",
+   "mixture"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: mixed reviews.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015074",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He made a _____ attempt to hide his disappointment.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "feeble of",
+   "feeble",
+   "failing",
+   "frail up"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: feeble attempt.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015075",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The evidence was _____ , so the case was dropped.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "conclusive",
+   "concluded",
+   "inconclusive",
+   "concluding"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "inconclusive = غير حاسم.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015076",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "His arguments are _____ ; they don't make sense.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "illegible",
+   "illegal",
+   "illiterate",
+   "illogical"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: illogical.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015077",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It was a _____ victory; the margin was tiny.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "narrow",
+   "thin",
+   "slim of",
+   "small"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: narrow victory.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015078",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She spoke with _____ confidence.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "silent of",
+   "quiet",
+   "mute",
+   "calm of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: quiet confidence.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015079",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "His story is highly _____ ; I don't believe it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "implacable",
+   "impeccable",
+   "implausible",
+   "implicit"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "implausible = غير معقول.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015080",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The two sides reached an _____ compromise.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "unease of",
+   "uneasily",
+   "uneasiness",
+   "uneasy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: uneasy compromise.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015081",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We are facing an _____ task.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "daunting",
+   "dauntless",
+   "daunted of",
+   "daunt"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "daunting = مرعب.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015082",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ to criticism.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "obvious",
+   "oblivious",
+   "oblique",
+   "obsolete"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "oblivious to = غافل.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015083",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Her success is _____ to her hard work.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "attributive",
+   "attributed of",
+   "attributable",
+   "attribute"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: attributable to.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015084",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The scheme was _____ with problems from the start.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fought",
+   "frought",
+   "fraud",
+   "fraught"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: fraught with.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015085",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ of his achievements.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "boastful",
+   "boasting of",
+   "boastfully",
+   "boast"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: boastful.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015086",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She has a _____ for languages.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "flare",
+   "flair",
+   "fair",
+   "flavour"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "flair for = موهبة.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015087",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"reluctant\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "eager",
+   "keen",
+   "unwilling",
+   "ready"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: unwilling.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015088",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"frugal\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "generous",
+   "lavish",
+   "wasteful",
+   "thrifty"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: thrifty.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015089",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"ambiguous\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "unclear",
+   "obvious",
+   "plain",
+   "certain"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: unclear.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015090",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"meticulous\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "careless",
+   "careful",
+   "lazy",
+   "casual"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: careful.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015091",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"scarce\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "plentiful",
+   "abundant",
+   "rare",
+   "common"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: rare.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015092",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"obsolete\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "modern",
+   "current",
+   "fashionable",
+   "outdated"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: outdated.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015093",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"prudent\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "wise",
+   "foolish",
+   "reckless",
+   "rash"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: wise.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015094",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"mundane\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "exciting",
+   "ordinary",
+   "unusual",
+   "thrilling"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: ordinary.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015095",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"candid\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "secretive",
+   "sly",
+   "honest",
+   "deceitful"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: honest.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015096",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"hinder\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "assist",
+   "help",
+   "encourage",
+   "obstruct"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: obstruct.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015097",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"mitigate\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "reduce",
+   "increase",
+   "worsen",
+   "ignore"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: reduce.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015098",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"ubiquitous\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "rare",
+   "everywhere",
+   "hidden",
+   "absent"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: everywhere.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015099",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"tenacious\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "weak",
+   "lazy",
+   "persistent",
+   "timid"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: persistent.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015100",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"lucid\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "confusing",
+   "dark",
+   "blurred",
+   "clear"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: clear.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015101",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"arduous\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "difficult",
+   "simple",
+   "easy",
+   "pleasant"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: difficult.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015102",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"conceal\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "reveal",
+   "hide",
+   "show",
+   "expose"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: hide.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015103",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is closest to \"diminish\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "grow",
+   "expand",
+   "decrease",
+   "boost"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: decrease.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015104",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"scarce\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "rare",
+   "limited",
+   "sparse",
+   "abundant"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: abundant.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015105",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"verbose\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "concise",
+   "wordy",
+   "lengthy",
+   "talkative"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: concise.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015106",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"benevolent\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "kind",
+   "malicious",
+   "generous",
+   "charitable"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: malicious.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015107",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"transparent\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "clear",
+   "obvious",
+   "opaque",
+   "plain"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: opaque.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015108",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"ancient\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "old",
+   "antique",
+   "archaic",
+   "modern"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: modern.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015109",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"reluctant\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "willing",
+   "unwilling",
+   "hesitant",
+   "doubtful"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: willing.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015110",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word is the opposite of \"expand\" (nuance of meaning)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "extend",
+   "shrink",
+   "grow",
+   "stretch"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: shrink.",
+  "topic": "Usage: nuance of meaning (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015111",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He showed great _____ in the face of danger.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "courageous",
+   "encouraged",
+   "courage",
+   "courageously"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015112",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Her _____ was clear to everyone.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sincere",
+   "sincerely",
+   "sincerer",
+   "sincerity"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015113",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It is _____ to predict the future.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "impossible",
+   "impossibly",
+   "impossibility",
+   "possibility"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: adjective.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015114",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ between the two is obvious.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "differ",
+   "difference",
+   "different",
+   "differently"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015115",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "There has been a _____ improvement.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "signify",
+   "significance",
+   "significant",
+   "significantly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: adjective.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015116",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The product is _____ available.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wide",
+   "width",
+   "widen",
+   "widely"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: adverb.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015117",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is a very _____ writer.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "creative",
+   "create",
+   "creation",
+   "creatively"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: adjective.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015118",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is known for his _____ to detail.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "attend",
+   "attention",
+   "attentive",
+   "attentively"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015119",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We need an _____ solution.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "effect",
+   "effectiveness",
+   "effective",
+   "effectively"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: adjective.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015120",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ was held in secret.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "elect",
+   "elective",
+   "electorate to",
+   "election"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015121",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She spoke _____ about her plans.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "passionately",
+   "passionate",
+   "passion",
+   "passions"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: adverb.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015122",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of the building took ten years.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "complete",
+   "completion",
+   "completely",
+   "completed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015123",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ of his mistakes.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "shame",
+   "shameful",
+   "ashamed",
+   "shamed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: ashamed of.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015124",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of living has risen.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "costly",
+   "costing",
+   "costed",
+   "cost"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015125",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It was an _____ performance.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "outstanding",
+   "outstand",
+   "outstandingly",
+   "outstood"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: adjective.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015126",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the noun form of \"decide\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "decisive",
+   "decision",
+   "decided",
+   "decisively"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: decision.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015127",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the adjective form of \"danger\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "dangerously",
+   "endanger",
+   "dangerous",
+   "dangered"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: dangerous.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015128",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the adverb form of \"obvious\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "obviousness",
+   "obviate",
+   "obvious",
+   "obviously"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "obviously = ظرف.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015129",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the verb form of \"strength\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "strengthen",
+   "strong",
+   "strongly",
+   "strengthful"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: strengthen.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015130",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the noun form of \"mature\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "maturely",
+   "maturity",
+   "maturing",
+   "maturate"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: maturity.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015131",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the noun form of \"fail\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "failing up",
+   "failed",
+   "failure",
+   "failly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: failure.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015132",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which is the adjective form of \"choose\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "choice of",
+   "chosing",
+   "choosing it",
+   "choosy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "choosy = دقيق في الاختيار.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015133",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"against\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "anti-social",
+   "pre-war",
+   "sub-zero",
+   "multi-colour"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "anti = ضد.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015134",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"too much\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "undercooked",
+   "overcrowded",
+   "subway",
+   "prewar"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "over = زيادة.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015135",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"too little\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "overpaid",
+   "overweight",
+   "underpaid",
+   "oversleep"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "under = ناقص.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015136",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"before\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "postwar",
+   "antiwar",
+   "subzero",
+   "prehistoric"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "pre = قبل.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015137",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"after\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "postwar",
+   "prewar",
+   "antiwar",
+   "subzero"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "post = بعد.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015138",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"half\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "multicolour",
+   "semicircle",
+   "subway",
+   "prewar"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: semi.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015139",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word has the prefix meaning \"many\" (word families and derivations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "semicircle",
+   "prewar",
+   "multinational",
+   "antiwar"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: multi.",
+  "topic": "Usage: word families and derivations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015140",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They launched a _____ campaign against corruption.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "hard of",
+   "heavy up",
+   "strong of",
+   "fierce"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: fierce campaign.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015141",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The two leaders held _____ talks.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bilateral",
+   "bilingual",
+   "bicycle",
+   "bifocal"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: bilateral talks.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015142",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The team suffered a _____ defeat.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "crashing",
+   "crushing",
+   "crumbling",
+   "crunchy"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: crushing defeat.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015143",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is a _____ supporter of the cause.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "stout of",
+   "stiff",
+   "staunch",
+   "strict"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: staunch supporter.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015144",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She won _____ acclaim for her novel.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wide",
+   "width",
+   "widened",
+   "widespread"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: widespread acclaim.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015145",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They fought a _____ battle for survival.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "losing",
+   "lost up",
+   "loser",
+   "loosing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: losing battle.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015146",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The town was hit by a _____ flood.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "devastated up",
+   "devastating",
+   "devastation",
+   "devastate"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: devastating.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015147",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He has a _____ knowledge of history.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "profit",
+   "profuse of",
+   "profound",
+   "prolonged"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: profound knowledge.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015148",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "There was a _____ silence in the room.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "deaf",
+   "deafened of",
+   "deafly",
+   "deafening"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: deafening silence.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015149",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The suspect has a _____ alibi.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "watertight",
+   "waterlogged",
+   "waterfall",
+   "watery"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: watertight alibi.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015150",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She made a _____ recovery.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "remark",
+   "remarkable",
+   "remarked",
+   "remarkably of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: remarkable recovery.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015151",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He kept a _____ eye on the children.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "watched",
+   "watching",
+   "watchful",
+   "watch of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: watchful eye.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015152",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We had a _____ escape from the fire.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "thin",
+   "tight of",
+   "slim",
+   "narrow"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: narrow escape.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015153",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It was a _____ coincidence.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "pure",
+   "clean",
+   "plain of",
+   "clear"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: pure coincidence.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015154",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They offered _____ resistance.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "stuffy",
+   "stiff",
+   "steep",
+   "sturdy up"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: stiff resistance.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015155",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He gave a _____ account of the accident.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "vital",
+   "visible",
+   "vivid",
+   "vivacious"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: vivid account.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015156",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She has a _____ appetite.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "healing",
+   "health",
+   "heal",
+   "healthy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: healthy appetite.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015157",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The city is a _____ of cultures.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "melting pot",
+   "cooking pot",
+   "mixing bowl",
+   "boiling pot"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: melting pot.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015158",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is a man of _____ means.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "modern",
+   "modest",
+   "mode",
+   "moderate of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: modest means.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015159",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Her work has earned _____ praise.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "tall",
+   "steep",
+   "high",
+   "long"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: high praise.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015160",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a forgone conclusion",
+   "a foregoing conclusion",
+   "a forward conclusion",
+   "a foregone conclusion"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: foregone conclusion.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015161",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "bear in mind",
+   "bear on mind",
+   "bring in mind",
+   "hold on mind"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: bear in mind.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015162",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "come to term of",
+   "come to terms with",
+   "come in terms with",
+   "come to terms on"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: come to terms with.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015163",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a vicious round",
+   "a vicious ring",
+   "a vicious circle",
+   "a vicious wheel"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: vicious circle.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015164",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "turn a blind look",
+   "turn a blind sight",
+   "turn a blind view",
+   "turn a blind eye"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: turn a blind eye.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015165",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a sore point",
+   "a sore spot of",
+   "a sick point",
+   "a hurt point"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: a sore point.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015166",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a sharp comparison of",
+   "a sharp contrast",
+   "a sharp compare",
+   "a sharp difference of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: sharp contrast.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015167",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a long order of",
+   "a high order",
+   "a tall order",
+   "a big order of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "tall order = طلب صعب.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015168",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a bone of competition",
+   "a bone of conflict",
+   "a bone of fight",
+   "a bone of contention"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: bone of contention.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015169",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "beyond reasonable doubt",
+   "beyond reasonable fear",
+   "beyond right doubt",
+   "over reasonable doubt"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: beyond reasonable doubt.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015170",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "at the long run",
+   "in the long run",
+   "on the long run",
+   "by the long run"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: in the long run.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015171",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "the top of the iceberg",
+   "the end of the iceberg",
+   "the tip of the iceberg",
+   "the point of the iceberg"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: tip of the iceberg.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015172",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a gray place of",
+   "a dull area",
+   "a pale area",
+   "a grey area"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "grey area = منطقة رمادية.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015173",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "take for granted",
+   "take as granted",
+   "take to granted",
+   "take on granted"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: take for granted.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015174",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which collocation is correct (advanced collocations)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "in the nick on time",
+   "in the nick of time",
+   "at the nick of time",
+   "on the nick of time"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: in the nick of time.",
+  "topic": "Usage: advanced collocations (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015175",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Disinterested\" and \"uninterested\" are not exact synonyms in careful usage.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "disinterested = محايد.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015176",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Imply\" and \"infer\" mean exactly the same.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "imply = يلمح، infer = يستنتج.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015177",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Elicit\" and \"illicit\" are different words.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "elicit فعل، illicit غير قانوني.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015178",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Flaunt\" and \"flout\" mean the same.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "flaunt = يتباهى، flout = يتجاهل القانون.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015179",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Continual\" can mean happening repeatedly with breaks.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "continual = متكرر.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015180",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Principal\" and \"principle\" are interchangeable.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مختلفين.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015181",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Elder\" is used for family members, not usually with \"than\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: elder brother.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015182",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Hanged\" is the standard past tense for hanging a picture.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: picture = hung.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015183",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Hanged\" is used for executions.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "hanged للإعدام.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015184",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Compose\" and \"comprise\" are not exactly the same.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "comprise = يتكون من.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015185",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Ensure\" and \"insure\" always mean the same thing.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ensure = يتأكد، insure = يؤمّن.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015186",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Lay\" needs an object; \"lie\" does not.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "lay يحتاج مفعول.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015187",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Alternate\" and \"alternative\" are identical in meaning.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "alternate = بالتناوب.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015188",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Stationary\" means not moving.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ثابت.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015189",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Stationery\" means not moving.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "stationery = أدوات مكتبية.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015190",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The weather _____ my mood.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "effects",
+   "effected",
+   "affects",
+   "affected on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "affect فعل.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015191",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ his argument with several examples.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "illuminated",
+   "illusioned",
+   "illegal",
+   "illustrated"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "illustrate = يوضح.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015192",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She _____ him that the plan would work.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "assured",
+   "ensured",
+   "insured",
+   "assumed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: assure someone.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015193",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The new policy _____ to improve safety.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "aids",
+   "aims",
+   "aims at to",
+   "aimed up"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: aim to.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015194",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "His speech _____ the audience to tears.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "removed",
+   "moving",
+   "moved",
+   "mood"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: move to tears.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015195",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The company _____ a loss last year.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "occurred",
+   "recurred",
+   "concurred",
+   "incurred"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: incur a loss.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015196",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "An accident _____ at the junction last night.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "occurred",
+   "incurred",
+   "recurred",
+   "reoccurred up"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "occur = يحدث.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015197",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She _____ from the wedding and went home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "withheld",
+   "withdrew",
+   "withstood",
+   "withdrawn"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "withdrew = انسحبت.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015198",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ to getting the promotion.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "titled",
+   "entailed",
+   "entitled",
+   "enticed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: entitled to.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015199",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The audience _____ with laughter.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "corrupted",
+   "interrupted",
+   "disrupted",
+   "erupted"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: erupted.",
+  "topic": "Usage: commonly misused words (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015200",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Fewer\" is used with countable nouns, \"less\" with uncountable nouns.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "fewer للمعدود.",
+  "topic": "Usage: vocabulary and usage (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ }
+]

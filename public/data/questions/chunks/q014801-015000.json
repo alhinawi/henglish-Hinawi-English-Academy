@@ -2552,5 +2552,1141 @@
   "explanationAr": "جمود القواعد.",
   "topic": "Listening: Interview (C2)",
   "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-grm1-012937",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ TV at eight o'clock last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watches",
+   "am watching",
+   "was watching",
+   "were watching"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was watching.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012938",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ football when it started to rain.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "played",
+   "was playing",
+   "were playing",
+   "are playing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: were playing.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012939",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ a book when I called.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is reading",
+   "were reading",
+   "was reading",
+   "reads"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was reading.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012940",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ dinner at seven.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "am having",
+   "were having",
+   "was having"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: were having.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012941",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He was _____ when the phone rang.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sleeps",
+   "slept",
+   "sleep",
+   "sleeping"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: sleeping.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012942",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "What _____ you doing at nine?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "was",
+   "did",
+   "were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: were.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012943",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The children _____ in the garden at that time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are playing",
+   "plays",
+   "was playing",
+   "were playing"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: were playing.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012944",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It _____ when we left home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is raining",
+   "were raining",
+   "was raining",
+   "rains"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was raining.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012945",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ studying at that time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "did",
+   "am",
+   "were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012946",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ talking on the phone all evening.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "did",
+   "was",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012947",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The students _____ listening to the teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "did",
+   "are",
+   "was"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: were.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012948",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "While I _____ cooking, the lights went out.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "did",
+   "am",
+   "was"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012949",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He cut his finger while he _____ vegetables.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were cutting",
+   "is cutting",
+   "was cutting",
+   "cuts"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was cutting.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012950",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ waiting for the bus when I saw them.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "were",
+   "was",
+   "are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: were.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012951",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ you sleeping when I called?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Were",
+   "Was",
+   "Are",
+   "Did"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: Were.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012952",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I broke my phone while I _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were running",
+   "was running",
+   "runs",
+   "am running"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was running.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012953",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My mother _____ cooking when I came home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "was",
+   "were",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012954",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The sun _____ shining all day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "did",
+   "is",
+   "were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: was.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012955",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I studying at 8.",
+   "I was study at 8.",
+   "I were studying at 8.",
+   "I was studying at 8."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: I was studying at 8..",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012956",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They watching TV.",
+   "They were watch TV.",
+   "They was watching TV.",
+   "They were watching TV."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: They were watching TV..",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012957",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Was she sleeping?",
+   "Was she sleep?",
+   "Were she sleeping?",
+   "Did she sleeping?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: Was she sleeping?.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012958",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He was walk when it started to rain.",
+   "He were walking when it started to rain.",
+   "He walked when it was started to rain.",
+   "He was walking when it started to rain."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: He was walking when it started to rain..",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012959",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "When I arrived, they having lunch.",
+   "When I was arrived, they had lunch.",
+   "When I arrived, they was having lunch.",
+   "When I arrived, they were having lunch."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية. الإجابة الصحيحة: When I arrived, they were having lunch..",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012960",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"We was playing\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح We were playing. was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012961",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He was reading\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012962",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"They were sleeped\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح They were sleeping. was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012963",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I was cooking at six\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. was/were + الفعل + ing للحاجة اللي كانت شغالة في وقت معين في الماضي، أو بتتقاطع مع حاجة تانية.",
+  "topic": "Grammar: past continuous (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012964",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If it rains, we _____ at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "stay",
+   "will stay",
+   "stayed",
+   "would stay"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: will stay.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012965",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If you study hard, you _____ the exam.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would pass",
+   "pass",
+   "will pass",
+   "passed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: will pass.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012966",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If I _____ time, I will help you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would have",
+   "will have",
+   "have",
+   "had"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: have.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012967",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If she _____ early, she will catch the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would leave",
+   "leaves",
+   "left",
+   "will leave"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: leaves.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012968",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If they come, we _____ a party.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "had",
+   "will have",
+   "would have"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: will have.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012969",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If you _____ the news, you will know.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will watch",
+   "would watch",
+   "watch",
+   "watched"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: watch.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012970",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If he _____ the test, he will be sad.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "fails",
+   "would fail",
+   "will fail",
+   "failed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: fails.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012971",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We will go to the beach if the weather _____ nice.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would be",
+   "was",
+   "is",
+   "will be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: is.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012972",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If you _____ me, I'll tell you the truth.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will ask",
+   "asked",
+   "ask",
+   "would ask"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: ask.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012973",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If it is sunny tomorrow, we _____ a picnic.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will have",
+   "have",
+   "had",
+   "would have"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: will have.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012974",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I'll call you if I _____ late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will be",
+   "would be",
+   "am",
+   "was"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: am.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012975",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If you don't hurry, you _____ the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "missed",
+   "will miss",
+   "would miss",
+   "miss"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: will miss.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012976",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She will be happy if you _____ her.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "visit",
+   "visited",
+   "will visit",
+   "would visit"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: visit.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012977",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If he doesn't come, I _____ angry.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "was",
+   "would be",
+   "will be"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: will be.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012978",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "If we _____ now, we will arrive on time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "leave",
+   "would leave",
+   "will leave",
+   "left"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: leave.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012979",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "What will you do if you _____ the job?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "won't get",
+   "didn't get",
+   "wouldn't get",
+   "don't get"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: don't get.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012980",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If it rains, I stay will home.",
+   "If it rained, I will stay home.",
+   "If it will rain, I will stay home.",
+   "If it rains, I will stay home."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: If it rains, I will stay home..",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012981",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If you help me, I would thank you.",
+   "If you helped me, I will thank you.",
+   "If you will help me, I will thank you.",
+   "If you help me, I will thank you."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: If you help me, I will thank you..",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012982",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We win will if we play well.",
+   "We will win if we played well.",
+   "We will win if we will play well.",
+   "We will win if we play well."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: We will win if we play well..",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012983",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If she called, I will answer.",
+   "If she calls, I would answer.",
+   "If she will call, I will answer.",
+   "If she calls, I will answer."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل. الإجابة الصحيحة: If she calls, I will answer..",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012984",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"If I will see him, I will tell him\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح If I see him, I will tell him لأن بعد if بنستخدم المضارع البسيط. If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012985",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"If it rains, we will stay home\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012986",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"If you hurry, you will catch the train\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012987",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"If he will come, I will go\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح If he comes, I will go. If + مضارع بسيط، will + فعل. للكلام عن احتمال حقيقي في المستقبل.",
+  "topic": "Grammar: first conditional (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012988",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I cut _____ with a knife.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "me",
+   "my",
+   "I",
+   "myself"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: myself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012989",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She looked at _____ in the mirror.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "her",
+   "she",
+   "herself",
+   "hers"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: herself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012990",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He taught _____ to play the guitar.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "he",
+   "his",
+   "him",
+   "himself"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: himself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012991",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We enjoyed _____ at the party.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "we",
+   "our",
+   "us",
+   "ourselves"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: ourselves.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012992",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They built the house _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "themselves",
+   "they",
+   "their",
+   "them"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: themselves.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012993",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The cat washed _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "it",
+   "itself",
+   "its",
+   "him"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: itself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012994",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Be careful or you will hurt _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "you",
+   "yours",
+   "your",
+   "yourself"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: yourself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012995",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Did you make this cake _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "yours",
+   "yourself",
+   "your",
+   "you"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: yourself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012996",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He talks to _____ when he is nervous.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "himself",
+   "him",
+   "he",
+   "his"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: himself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012997",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She introduced _____ to the teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hers",
+   "her",
+   "herself",
+   "she"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: herself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012998",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I painted the room _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "my",
+   "me",
+   "myself",
+   "mine"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: myself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012999",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Help _____ to some food, everyone!",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "your",
+   "yourselves",
+   "yourself",
+   "you"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: yourselves.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013000",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The children dressed _____ for school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "themselves",
+   "they",
+   "theirs",
+   "them"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: themselves.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
  }
 ]
