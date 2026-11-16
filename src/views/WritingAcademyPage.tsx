@@ -2,7 +2,7 @@ import { copyText } from '../services/copyText';
 import { writingFeedback } from '../services/writingFeedback';
 import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { PageRoute } from '../types';
 import { isAiServiceUnavailable, throwForAiResponse } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -34,6 +34,20 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
+
+  const analysisVersion = useRef(0);
+  const analysisController = useRef<AbortController | null>(null);
+  const invalidateAnalysis = () => {
+    analysisVersion.current += 1;
+    analysisController.current?.abort();
+    analysisController.current = null;
+    setSubmissionFeedback(null);
+    setIsAnalyzing(false);
+  };
+  useEffect(() => () => {
+    analysisVersion.current += 1;
+    analysisController.current?.abort();
+  }, []);
 
   const templates = {
     formal_email: {
@@ -92,6 +106,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
   const handleAnalyzeWriting = async () => {
     playSound('click');
+    invalidateAnalysis();
     const wordCount = userInput.trim().split(/\s+/).filter(Boolean).length;
     if (wordCount < 10) {
       setSubmissionFeedback(t('wa.feedback.tooShort'));
@@ -99,11 +114,15 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       return;
     }
 
+    const version = analysisVersion.current;
+    const controller = new AbortController();
+    analysisController.current = controller;
+    const isCurrent = () => version === analysisVersion.current;
     setIsAnalyzing(true);
-    setSubmissionFeedback(null);
 
     try {
       const response = await fetch('/api/ai/chat', {
+        signal: controller.signal,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -113,9 +132,11 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         }),
       });
 
+      if (!isCurrent()) return;
       await throwForAiResponse(response, `AI writing analysis failed with status: ${response.status}`);
 
       const data = await response.json();
+      if (!isCurrent()) return;
       const feedbackText = writingFeedback(data);
       if (!feedbackText) {
         setSubmissionFeedback(t('wa.feedback.unavailable'));
@@ -125,6 +146,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       playSound('correct');
       fireCelebration();
     } catch (err) {
+      if (!isCurrent()) return;
       if (isAiServiceUnavailable(err)) {
         setSubmissionFeedback(t('ai.unavailable'));
       } else {
@@ -133,7 +155,10 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       }
 
     } finally {
-      setIsAnalyzing(false);
+      if (isCurrent()) {
+        analysisController.current = null;
+        setIsAnalyzing(false);
+      }
     }
   };
 
@@ -192,7 +217,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           onClick={() => {
             playSound('click');
             setActiveTemplate('formal_email');
-            setSubmissionFeedback(null);
+            invalidateAnalysis();
           }}
           className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
             activeTemplate === 'formal_email'
@@ -207,7 +232,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           onClick={() => {
             playSound('click');
             setActiveTemplate('job_application');
-            setSubmissionFeedback(null);
+            invalidateAnalysis();
           }}
           className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
             activeTemplate === 'job_application'
@@ -222,7 +247,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           onClick={() => {
             playSound('click');
             setActiveTemplate('essay');
-            setSubmissionFeedback(null);
+            invalidateAnalysis();
           }}
           className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
             activeTemplate === 'essay'
@@ -237,7 +262,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           onClick={() => {
             playSound('click');
             setActiveTemplate('complaint');
-            setSubmissionFeedback(null);
+            invalidateAnalysis();
           }}
           className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
             activeTemplate === 'complaint'
@@ -252,7 +277,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           onClick={() => {
             playSound('click');
             setActiveTemplate('university');
-            setSubmissionFeedback(null);
+            invalidateAnalysis();
           }}
           className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold shrink-0 transition-all cursor-pointer ${
             activeTemplate === 'university'
@@ -269,7 +294,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         
         {/* Template Showcase */}
         <div className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10">
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-white/10">
             <h2 className="text-xl font-black text-white">{t(currentTemplate.titleKey)}</h2>
             <div className="flex items-center gap-2">
               <button
@@ -334,7 +359,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             value={userInput}
             onChange={e => {
               setUserInput(e.target.value);
-              setSubmissionFeedback(null);
+              invalidateAnalysis();
             }}
             placeholder="Dear Mr. Smith, I am writing to inform you that by Friday, we will have finished the assignment..."
             className="english-input en w-full p-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#ffd166] leading-relaxed"
@@ -343,7 +368,10 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
             <span>{t('wa.words')}: {userInput.trim().split(/\s+/).filter(Boolean).length}</span>
             <button
-              onClick={() => setUserInput(currentTemplate.body)}
+              onClick={() => {
+                invalidateAnalysis();
+                setUserInput(currentTemplate.body);
+              }}
               className="text-[#41e7ff] hover:underline cursor-pointer"
             >
               {t('wa.importTemplate')}
