@@ -42,7 +42,8 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords());
   const [reviewFilter, setReviewFilter] = useState<'all' | 'due' | 'learning' | 'mastered'>('all');
   const [isReviewMode, setIsReviewMode] = useState(false);
-  const [reviewIdx, setReviewIdx] = useState(0);
+  const [reviewQueue, setReviewQueue] = useState<string[]>([]);
+  const [reviewedCount, setReviewedCount] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
   // Inspector modal state
@@ -65,8 +66,20 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
     return true;
   });
 
-  const activeReviewDeck = dueWords.length > 0 ? dueWords : savedWords;
-  const currentReviewItem = activeReviewDeck[reviewIdx % Math.max(1, activeReviewDeck.length)];
+  const currentReviewItem = savedWords.find(item => item.word === reviewQueue[0]);
+
+  const toggleReview = () => {
+    setIsFlipped(false);
+    if (isReviewMode) {
+      setIsReviewMode(false);
+      setReviewQueue([]);
+      return;
+    }
+    const deck = dueWords.length > 0 ? dueWords : savedWords;
+    setReviewQueue(deck.map(item => item.word));
+    setReviewedCount(0);
+    setIsReviewMode(true);
+  };
 
   const handleRate = (rating: ReviewRating) => {
     if (!currentReviewItem) return;
@@ -81,7 +94,8 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
     const updated = rateSavedWord(currentReviewItem.word, rating);
     setSavedWords(updated);
     setIsFlipped(false);
-    setReviewIdx(prev => prev + 1);
+    setReviewQueue(queue => queue.slice(1));
+    setReviewedCount(count => count + 1);
   };
 
   const handleRemove = (word: string, e: React.MouseEvent) => {
@@ -89,6 +103,8 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
     playSound('click');
     const updated = removeSavedWord(word);
     setSavedWords(updated);
+    setReviewQueue(queue => queue.filter(item => item !== word));
+    if (currentReviewItem?.word === word) setIsFlipped(false);
   };
 
   return (
@@ -151,7 +167,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
         <button
           onClick={() => {
             playSound('click');
-            setIsReviewMode(!isReviewMode);
+            toggleReview();
           }}
           disabled={savedWords.length === 0}
           className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
@@ -161,7 +177,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
           }`}
         >
           <Brain className="w-4 h-4" />
-          <span>{isReviewMode ? t('mvt.endReview') : t('mvt.startReview')}</span>
+          <span>{isReviewMode ? t('mvt.endReview') : dueWords.length ? t('mvt.startReview') : t('mvt.practiceSaved')}</span>
         </button>
       </div>
 
@@ -169,7 +185,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
       {isReviewMode && currentReviewItem && (
         <section className="glass-panel p-6 sm:p-10 rounded-3xl border border-[#ffd166]/30 bg-linear-to-b from-[#18162e] to-[#0c0b1a] space-y-6 max-w-2xl mx-auto shadow-2xl">
           <div className="flex items-center justify-between text-xs text-white/60 font-bold">
-            <span>{t('mvt.card')} {reviewIdx + 1} {t('mvt.of')} {activeReviewDeck.length}</span>
+            <span>{t('mvt.card')} {reviewedCount + 1} {t('mvt.of')} {reviewedCount + reviewQueue.length}</span>
             <span className="px-2 py-0.5 rounded bg-white/10 text-white/80">
               {currentReviewItem.entry.cefr} • {currentReviewItem.entry.pos}
             </span>
@@ -262,6 +278,14 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
             </div>
           )}
         </section>
+      )}
+
+      {isReviewMode && !currentReviewItem && (
+        <div role="status" className="glass-panel rounded-3xl border border-emerald-400/30 p-6 text-center space-y-2">
+          <CheckCircle2 className="w-6 h-6 text-emerald-400 mx-auto" />
+          <h3 className="font-black text-white">{t('mvt.sessionDone')}</h3>
+          <p className="text-sm text-white/70">{t('mvt.sessionCount').replace('{n}', String(reviewedCount))}</p>
+        </div>
       )}
 
       {/* FILTER PILLS */}
