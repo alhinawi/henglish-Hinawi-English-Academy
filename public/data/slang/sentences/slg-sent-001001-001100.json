@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "slg-001001",
+   "sentences": [
+    {
+     "en": "The test was a breeze.",
+     "ar": "الامتحان كان سهل جدًا."
+    },
+    {
+     "en": "The job was a breeze.",
+     "ar": "الشغل كان سهل جدًا."
+    },
+    {
+     "en": "The task was a breeze.",
+     "ar": "المهمة كانت سهلة جدًا."
+    },
+    {
+     "en": "The exam was a breeze.",
+     "ar": "الامتحان كان سهل جدًا."
+    },
+    {
+     "en": "The workout was a breeze.",
+     "ar": "التمرين كان سهل جدًا."
+    },
+    {
+     "en": "The interview was a breeze.",
+     "ar": "المقابلة كانت سهلة جدًا."
+    },
+    {
+     "en": "The project was a breeze.",
+     "ar": "المشروع كان سهل جدًا."
+    },
+    {
+     "en": "The game was a breeze.",
+     "ar": "اللعبة كانت سهلة جدًا."
+    },
+    {
+     "en": "The recipe was a breeze.",
+     "ar": "الوصفة كانت سهلة جدًا."
+    },
+    {
+     "en": "The trip was a breeze.",
+     "ar": "السفر كان سهل جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001002",
+   "sentences": [
+    {
+     "en": "The test was a cinch.",
+     "ar": "الامتحان كان سهل ومضمون."
+    },
+    {
+     "en": "The job was a cinch.",
+     "ar": "الشغل كان سهل ومضمون."
+    },
+    {
+     "en": "The task was a cinch.",
+     "ar": "المهمة كانت سهلة ومضمونة."
+    },
+    {
+     "en": "The exam was a cinch.",
+     "ar": "الامتحان كان سهل ومضمون."
+    },
+    {
+     "en": "The workout was a cinch.",
+     "ar": "التمرين كان سهل ومضمون."
+    },
+    {
+     "en": "The interview was a cinch.",
+     "ar": "المقابلة كانت سهلة ومضمونة."
+    },
+    {
+     "en": "The project was a cinch.",
+     "ar": "المشروع كان سهل ومضمون."
+    },
+    {
+     "en": "The game was a cinch.",
+     "ar": "اللعبة كانت سهلة ومضمونة."
+    },
+    {
+     "en": "The recipe was a cinch.",
+     "ar": "الوصفة كانت سهلة ومضمونة."
+    },
+    {
+     "en": "The trip was a cinch.",
+     "ar": "السفر كان سهل ومضمون."
+    }
+   ]
+  },
+  {
+   "id": "slg-001003",
+   "sentences": [
+    {
+     "en": "The test was a snap.",
+     "ar": "الامتحان كان سهل جدًا."
+    },
+    {
+     "en": "The job was a snap.",
+     "ar": "الشغل كان سهل جدًا."
+    },
+    {
+     "en": "The task was a snap.",
+     "ar": "المهمة كانت سهلة جدًا."
+    },
+    {
+     "en": "The exam was a snap.",
+     "ar": "الامتحان كان سهل جدًا."
+    },
+    {
+     "en": "The workout was a snap.",
+     "ar": "التمرين كان سهل جدًا."
+    },
+    {
+     "en": "The interview was a snap.",
+     "ar": "المقابلة كانت سهلة جدًا."
+    },
+    {
+     "en": "The project was a snap.",
+     "ar": "المشروع كان سهل جدًا."
+    },
+    {
+     "en": "The game was a snap.",
+     "ar": "اللعبة كانت سهلة جدًا."
+    },
+    {
+     "en": "The recipe was a snap.",
+     "ar": "الوصفة كانت سهلة جدًا."
+    },
+    {
+     "en": "The trip was a snap.",
+     "ar": "السفر كان سهل جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001004",
+   "sentences": [
+    {
+     "en": "It's no sweat.",
+     "ar": "سهلة، مفيش مشكلة."
+    },
+    {
+     "en": "He said no sweat.",
+     "ar": "قال سهلة."
+    },
+    {
+     "en": "She said no sweat.",
+     "ar": "قالت سهلة."
+    },
+    {
+     "en": "It's no sweat for him.",
+     "ar": "سهلة بالنسباله."
+    },
+    {
+     "en": "It's no sweat for her.",
+     "ar": "سهلة بالنسبالها."
+    },
+    {
+     "en": "He said no sweat and did it.",
+     "ar": "قال سهلة وعملها."
+    },
+    {
+     "en": "She said no sweat and did it.",
+     "ar": "قالت سهلة وعملتها."
+    },
+    {
+     "en": "He said no sweat and smiled.",
+     "ar": "قال سهلة وابتسم."
+    },
+    {
+     "en": "She said no sweat and smiled.",
+     "ar": "قالت سهلة وابتسمت."
+    },
+    {
+     "en": "It's no sweat, don't worry.",
+     "ar": "سهلة، ما تقلقش."
+    }
+   ]
+  },
+  {
+   "id": "slg-001005",
+   "sentences": [
+    {
+     "en": "It's easy-peasy.",
+     "ar": "سهل جدًا."
+    },
+    {
+     "en": "The test was easy-peasy.",
+     "ar": "الامتحان كان سهل جدًا."
+    },
+    {
+     "en": "The job was easy-peasy.",
+     "ar": "الشغل كان سهل جدًا."
+    },
+    {
+     "en": "The task was easy-peasy.",
+     "ar": "المهمة كانت سهلة جدًا."
+    },
+    {
+     "en": "He said it was easy-peasy.",
+     "ar": "قال إنه كان سهل جدًا."
+    },
+    {
+     "en": "She said it was easy-peasy.",
+     "ar": "قالت إنه كان سهل جدًا."
+    },
+    {
+     "en": "The game was easy-peasy.",
+     "ar": "اللعبة كانت سهلة جدًا."
+    },
+    {
+     "en": "The recipe was easy-peasy.",
+     "ar": "الوصفة كانت سهلة جدًا."
+    },
+    {
+     "en": "The trip was easy-peasy.",
+     "ar": "السفر كان سهل جدًا."
+    },
+    {
+     "en": "The project was easy-peasy.",
+     "ar": "المشروع كان سهل جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001006",
+   "sentences": [
+    {
+     "en": "The test was a doddle.",
+     "ar": "الامتحان كان سهل خالص."
+    },
+    {
+     "en": "The job was a doddle.",
+     "ar": "الشغل كان سهل خالص."
+    },
+    {
+     "en": "The task was a doddle.",
+     "ar": "المهمة كانت سهلة خالص."
+    },
+    {
+     "en": "The exam was a doddle.",
+     "ar": "الامتحان كان سهل خالص."
+    },
+    {
+     "en": "He said it was a doddle.",
+     "ar": "قال إنه كان سهل خالص."
+    },
+    {
+     "en": "She said it was a doddle.",
+     "ar": "قالت إنه كان سهل خالص."
+    },
+    {
+     "en": "The game was a doddle.",
+     "ar": "اللعبة كانت سهلة خالص."
+    },
+    {
+     "en": "The recipe was a doddle.",
+     "ar": "الوصفة كانت سهلة خالص."
+    },
+    {
+     "en": "The trip was a doddle.",
+     "ar": "السفر كان سهل خالص."
+    },
+    {
+     "en": "The project was a doddle.",
+     "ar": "المشروع كان سهل خالص."
+    }
+   ]
+  },
+  {
+   "id": "slg-001007",
+   "sentences": [
+    {
+     "en": "It was child's play.",
+     "ar": "كان لعبة أطفال."
+    },
+    {
+     "en": "The test was child's play.",
+     "ar": "الامتحان كان لعبة أطفال."
+    },
+    {
+     "en": "The job was child's play.",
+     "ar": "الشغل كان لعبة أطفال."
+    },
+    {
+     "en": "The task was child's play.",
+     "ar": "المهمة كانت لعبة أطفال."
+    },
+    {
+     "en": "He said it was child's play.",
+     "ar": "قال إنه كان لعبة أطفال."
+    },
+    {
+     "en": "She said it was child's play.",
+     "ar": "قالت إنه كان لعبة أطفال."
+    },
+    {
+     "en": "The game was child's play.",
+     "ar": "اللعبة كانت لعبة أطفال."
+    },
+    {
+     "en": "The recipe was child's play.",
+     "ar": "الوصفة كانت لعبة أطفال."
+    },
+    {
+     "en": "The trip was child's play.",
+     "ar": "السفر كان لعبة أطفال."
+    },
+    {
+     "en": "The project was child's play.",
+     "ar": "المشروع كان لعبة أطفال."
+    }
+   ]
+  },
+  {
+   "id": "slg-001008",
+   "sentences": [
+    {
+     "en": "The test was tough.",
+     "ar": "الامتحان كان صعب."
+    },
+    {
+     "en": "The job is tough.",
+     "ar": "الشغل صعب."
+    },
+    {
+     "en": "He is tough.",
+     "ar": "هو قاسي."
+    },
+    {
+     "en": "She is tough.",
+     "ar": "هي قاسية."
+    },
+    {
+     "en": "The workout was tough.",
+     "ar": "التمرين كان صعب."
+    },
+    {
+     "en": "The interview was tough.",
+     "ar": "المقابلة كانت صعبة."
+    },
+    {
+     "en": "The situation is tough.",
+     "ar": "الموقف صعب."
+    },
+    {
+     "en": "The decision was tough.",
+     "ar": "القرار كان صعب."
+    },
+    {
+     "en": "The competition is tough.",
+     "ar": "المنافسة صعبة."
+    },
+    {
+     "en": "The training was tough.",
+     "ar": "التدريب كان صعب."
+    }
+   ]
+  },
+  {
+   "id": "slg-001009",
+   "sentences": [
+    {
+     "en": "The test was a nightmare.",
+     "ar": "الامتحان كان كابوس."
+    },
+    {
+     "en": "The job is a nightmare.",
+     "ar": "الشغل كابوس."
+    },
+    {
+     "en": "The trip was a nightmare.",
+     "ar": "السفر كان كابوس."
+    },
+    {
+     "en": "The traffic was a nightmare.",
+     "ar": "الزحمة كانت كابوس."
+    },
+    {
+     "en": "The meeting was a nightmare.",
+     "ar": "الاجتماع كان كابوس."
+    },
+    {
+     "en": "The project was a nightmare.",
+     "ar": "المشروع كان كابوس."
+    },
+    {
+     "en": "The interview was a nightmare.",
+     "ar": "المقابلة كانت كابوس."
+    },
+    {
+     "en": "The day was a nightmare.",
+     "ar": "اليوم كان كابوس."
+    },
+    {
+     "en": "The experience was a nightmare.",
+     "ar": "التجربة كانت كابوس."
+    },
+    {
+     "en": "The move was a nightmare.",
+     "ar": "النقل كان كابوس."
+    }
+   ]
+  },
+  {
+   "id": "slg-001010",
+   "sentences": [
+    {
+     "en": "The job is a pain.",
+     "ar": "الشغل مزعج."
+    },
+    {
+     "en": "The trip was a pain.",
+     "ar": "السفر كان مزعج."
+    },
+    {
+     "en": "The traffic is a pain.",
+     "ar": "الزحمة مزعجة."
+    },
+    {
+     "en": "The meeting was a pain.",
+     "ar": "الاجتماع كان مزعج."
+    },
+    {
+     "en": "The project is a pain.",
+     "ar": "المشروع مزعج."
+    },
+    {
+     "en": "The interview was a pain.",
+     "ar": "المقابلة كانت مزعجة."
+    },
+    {
+     "en": "The paperwork is a pain.",
+     "ar": "الأوراق مزعجة."
+    },
+    {
+     "en": "The wait was a pain.",
+     "ar": "الاستنى كان مزعج."
+    },
+    {
+     "en": "The commute is a pain.",
+     "ar": "المواصلات مزعجة."
+    },
+    {
+     "en": "The noise is a pain.",
+     "ar": "الصوت العالي مزعج."
+    }
+   ]
+  },
+  {
+   "id": "slg-001011",
+   "sentences": [
+    {
+     "en": "He's a pain in the neck.",
+     "ar": "هو شخص مزعج جدًا."
+    },
+    {
+     "en": "She's a pain in the neck.",
+     "ar": "هي شخص مزعج جدًا."
+    },
+    {
+     "en": "The job is a pain in the neck.",
+     "ar": "الشغل مزعج جدًا."
+    },
+    {
+     "en": "The traffic is a pain in the neck.",
+     "ar": "الزحمة مزعجة جدًا."
+    },
+    {
+     "en": "The paperwork is a pain in the neck.",
+     "ar": "الأوراق مزعجة جدًا."
+    },
+    {
+     "en": "The wait was a pain in the neck.",
+     "ar": "الاستنى كان مزعج جدًا."
+    },
+    {
+     "en": "The commute is a pain in the neck.",
+     "ar": "المواصلات مزعجة جدًا."
+    },
+    {
+     "en": "The noise is a pain in the neck.",
+     "ar": "الصوت العالي مزعج جدًا."
+    },
+    {
+     "en": "The project is a pain in the neck.",
+     "ar": "المشروع مزعج جدًا."
+    },
+    {
+     "en": "The meeting was a pain in the neck.",
+     "ar": "الاجتماع كان مزعج جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001012",
+   "sentences": [
+    {
+     "en": "The movie was a drag.",
+     "ar": "الفيلم كان ممل."
+    },
+    {
+     "en": "The meeting was a drag.",
+     "ar": "الاجتماع كان ممل."
+    },
+    {
+     "en": "The party was a drag.",
+     "ar": "الحفلة كانت مملة."
+    },
+    {
+     "en": "The class was a drag.",
+     "ar": "الحصة كانت مملة."
+    },
+    {
+     "en": "The lecture was a drag.",
+     "ar": "المحاضرة كانت مملة."
+    },
+    {
+     "en": "The trip was a drag.",
+     "ar": "السفر كان ممل."
+    },
+    {
+     "en": "The wait was a drag.",
+     "ar": "الاستنى كان ممل."
+    },
+    {
+     "en": "The job is a drag.",
+     "ar": "الشغل ممل."
+    },
+    {
+     "en": "The day was a drag.",
+     "ar": "اليوم كان ممل."
+    },
+    {
+     "en": "The event was a drag.",
+     "ar": "المناسبة كانت مملة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001013",
+   "sentences": [
+    {
+     "en": "The job is a slog.",
+     "ar": "الشغل طويل ومرهق وممل."
+    },
+    {
+     "en": "The project was a slog.",
+     "ar": "المشروع كان طويل ومرهق."
+    },
+    {
+     "en": "The commute is a slog.",
+     "ar": "المواصلات طويلة ومرهقة."
+    },
+    {
+     "en": "The day was a slog.",
+     "ar": "اليوم كان طويل ومرهق."
+    },
+    {
+     "en": "The week was a slog.",
+     "ar": "الأسبوع كان طويل ومرهق."
+    },
+    {
+     "en": "The course was a slog.",
+     "ar": "الكورس كان طويل ومرهق."
+    },
+    {
+     "en": "The training was a slog.",
+     "ar": "التدريب كان طويل ومرهق."
+    },
+    {
+     "en": "The wait was a slog.",
+     "ar": "الاستنى كان طويل ومرهق."
+    },
+    {
+     "en": "The hike was a slog.",
+     "ar": "الهايكنج كان طويل ومرهق."
+    },
+    {
+     "en": "The journey was a slog.",
+     "ar": "الرحلة كانت طويلة ومرهقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001014",
+   "sentences": [
+    {
+     "en": "The test was murder.",
+     "ar": "الامتحان كان صعب جدًا."
+    },
+    {
+     "en": "The job is murder.",
+     "ar": "الشغل صعب جدًا."
+    },
+    {
+     "en": "The traffic was murder.",
+     "ar": "الزحمة كانت صعبة جدًا."
+    },
+    {
+     "en": "The workout was murder.",
+     "ar": "التمرين كان صعب جدًا."
+    },
+    {
+     "en": "The hike was murder.",
+     "ar": "الهايكنج كان صعب جدًا."
+    },
+    {
+     "en": "The wait was murder.",
+     "ar": "الاستنى كان صعب جدًا."
+    },
+    {
+     "en": "The heat is murder.",
+     "ar": "الحر صعب جدًا."
+    },
+    {
+     "en": "The schedule is murder.",
+     "ar": "الجدول صعب جدًا."
+    },
+    {
+     "en": "The exam was murder.",
+     "ar": "الامتحان كان صعب جدًا."
+    },
+    {
+     "en": "The day was murder.",
+     "ar": "اليوم كان صعب جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001015",
+   "sentences": [
+    {
+     "en": "The test was hell.",
+     "ar": "الامتحان كان جحيم."
+    },
+    {
+     "en": "The job is hell.",
+     "ar": "الشغل جحيم."
+    },
+    {
+     "en": "The traffic was hell.",
+     "ar": "الزحمة كانت جحيم."
+    },
+    {
+     "en": "The workout was hell.",
+     "ar": "التمرين كان جحيم."
+    },
+    {
+     "en": "The wait was hell.",
+     "ar": "الاستنى كان جحيم."
+    },
+    {
+     "en": "The heat is hell.",
+     "ar": "الحر جحيم."
+    },
+    {
+     "en": "The exam was hell.",
+     "ar": "الامتحان كان جحيم."
+    },
+    {
+     "en": "The day was hell.",
+     "ar": "اليوم كان جحيم."
+    },
+    {
+     "en": "The experience was hell.",
+     "ar": "التجربة كانت جحيم."
+    },
+    {
+     "en": "The meeting was hell.",
+     "ar": "الاجتماع كان جحيم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001016",
+   "sentences": [
+    {
+     "en": "The test was brutal.",
+     "ar": "الامتحان كان قاسي جدًا."
+    },
+    {
+     "en": "The workout was brutal.",
+     "ar": "التمرين كان قاسي جدًا."
+    },
+    {
+     "en": "The heat is brutal.",
+     "ar": "الحر قاسي جدًا."
+    },
+    {
+     "en": "The competition is brutal.",
+     "ar": "المنافسة قاسية جدًا."
+    },
+    {
+     "en": "The schedule is brutal.",
+     "ar": "الجدول قاسي جدًا."
+    },
+    {
+     "en": "The exam was brutal.",
+     "ar": "الامتحان كان قاسي جدًا."
+    },
+    {
+     "en": "The training was brutal.",
+     "ar": "التدريب كان قاسي جدًا."
+    },
+    {
+     "en": "The criticism was brutal.",
+     "ar": "النقد كان قاسي جدًا."
+    },
+    {
+     "en": "The day was brutal.",
+     "ar": "اليوم كان قاسي جدًا."
+    },
+    {
+     "en": "The loss was brutal.",
+     "ar": "الخسارة كانت قاسية جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001017",
+   "sentences": [
+    {
+     "en": "The work is backbreaking.",
+     "ar": "الشغل بيكسر الضهر."
+    },
+    {
+     "en": "The job is backbreaking.",
+     "ar": "الشغل بيكسر الضهر."
+    },
+    {
+     "en": "The labor is backbreaking.",
+     "ar": "الشغل بيكسر الضهر."
+    },
+    {
+     "en": "The digging was backbreaking.",
+     "ar": "الحفر كان بيكسر الضهر."
+    },
+    {
+     "en": "The lifting was backbreaking.",
+     "ar": "الشيل كان بيكسر الضهر."
+    },
+    {
+     "en": "The farming is backbreaking.",
+     "ar": "الزراعة بتكسر الضهر."
+    },
+    {
+     "en": "The construction is backbreaking.",
+     "ar": "البناء بيكسر الضهر."
+    },
+    {
+     "en": "The moving was backbreaking.",
+     "ar": "النقل كان بيكسر الضهر."
+    },
+    {
+     "en": "The cleaning was backbreaking.",
+     "ar": "التنضيف كان بيكسر الضهر."
+    },
+    {
+     "en": "The training was backbreaking.",
+     "ar": "التدريب كان بيكسر الضهر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001018",
+   "sentences": [
+    {
+     "en": "It's a tall order.",
+     "ar": "ده طلب صعب التنفيذ."
+    },
+    {
+     "en": "The request is a tall order.",
+     "ar": "الطلب ده صعب التنفيذ."
+    },
+    {
+     "en": "The task is a tall order.",
+     "ar": "المهمة دي صعبة التنفيذ."
+    },
+    {
+     "en": "The goal is a tall order.",
+     "ar": "الهدف ده صعب التنفيذ."
+    },
+    {
+     "en": "The deadline is a tall order.",
+     "ar": "الموعد النهائي ده صعب التنفيذ."
+    },
+    {
+     "en": "The demand is a tall order.",
+     "ar": "المطلب ده صعب التنفيذ."
+    },
+    {
+     "en": "The expectation is a tall order.",
+     "ar": "التوقع ده صعب التنفيذ."
+    },
+    {
+     "en": "The promise is a tall order.",
+     "ar": "الوعد ده صعب التنفيذ."
+    },
+    {
+     "en": "The challenge is a tall order.",
+     "ar": "التحدي ده صعب التنفيذ."
+    },
+    {
+     "en": "The dream is a tall order.",
+     "ar": "الحلم ده صعب التنفيذ."
+    }
+   ]
+  },
+  {
+   "id": "slg-001019",
+   "sentences": [
+    {
+     "en": "It's a sticky situation.",
+     "ar": "ده موقف صعب."
+    },
+    {
+     "en": "He got into a sticky situation.",
+     "ar": "دخل في موقف صعب."
+    },
+    {
+     "en": "She got into a sticky situation.",
+     "ar": "دخلت في موقف صعب."
+    },
+    {
+     "en": "It's a sticky problem.",
+     "ar": "ده مشكلة صعبة."
+    },
+    {
+     "en": "It's a sticky mess.",
+     "ar": "ده كركبة صعبة."
+    },
+    {
+     "en": "He faced a sticky question.",
+     "ar": "واجه سؤال صعب."
+    },
+    {
+     "en": "She faced a sticky question.",
+     "ar": "واجهت سؤال صعب."
+    },
+    {
+     "en": "It's a sticky issue.",
+     "ar": "ده موضوع صعب."
+    },
+    {
+     "en": "He avoided the sticky topic.",
+     "ar": "اتجنب الموضوع الصعب."
+    },
+    {
+     "en": "She avoided the sticky topic.",
+     "ar": "اتجنبت الموضوع الصعب."
+    }
+   ]
+  },
+  {
+   "id": "slg-001020",
+   "sentences": [
+    {
+     "en": "It's a dicey situation.",
+     "ar": "ده موقف خطير ومش مضمون."
+    },
+    {
+     "en": "The plan is dicey.",
+     "ar": "الخطة خطيرة ومش مضمونة."
+    },
+    {
+     "en": "The situation is dicey.",
+     "ar": "الموقف خطير ومش مضمون."
+    },
+    {
+     "en": "The road is dicey.",
+     "ar": "الطريق خطير."
+    },
+    {
+     "en": "The weather is dicey.",
+     "ar": "الجو خطير."
+    },
+    {
+     "en": "The bet is dicey.",
+     "ar": "الرهان خطير."
+    },
+    {
+     "en": "The move is dicey.",
+     "ar": "الحركة خطيرة."
+    },
+    {
+     "en": "The decision is dicey.",
+     "ar": "القرار خطير."
+    },
+    {
+     "en": "The investment is dicey.",
+     "ar": "الاستثمار خطير."
+    },
+    {
+     "en": "The game is dicey.",
+     "ar": "اللعبة خطيرة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001021",
+   "sentences": [
+    {
+     "en": "The situation got hairy.",
+     "ar": "الموقف بقى خطير ومخيف."
+    },
+    {
+     "en": "It got hairy.",
+     "ar": "بقى خطير ومخيف."
+    },
+    {
+     "en": "The ride got hairy.",
+     "ar": "الرحلة بقت خطيرة ومخيفة."
+    },
+    {
+     "en": "The drive got hairy.",
+     "ar": "السواقة بقت خطيرة ومخيفة."
+    },
+    {
+     "en": "The climb got hairy.",
+     "ar": "التسلق بقى خطير ومخيف."
+    },
+    {
+     "en": "The moment got hairy.",
+     "ar": "اللحظة بقت خطيرة ومخيفة."
+    },
+    {
+     "en": "The game got hairy.",
+     "ar": "اللعبة بقت خطيرة ومخيفة."
+    },
+    {
+     "en": "The fight got hairy.",
+     "ar": "الخناقة بقت خطيرة ومخيفة."
+    },
+    {
+     "en": "The escape got hairy.",
+     "ar": "الهروب بقى خطير ومخيف."
+    },
+    {
+     "en": "The plan got hairy.",
+     "ar": "الخطة بقت خطيرة ومخيفة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001022",
+   "sentences": [
+    {
+     "en": "It was touch-and-go.",
+     "ar": "كان وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The surgery was touch-and-go.",
+     "ar": "العملية كانت وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The landing was touch-and-go.",
+     "ar": "الهبوط كان وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The rescue was touch-and-go.",
+     "ar": "الإنقاذ كان وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The recovery was touch-and-go.",
+     "ar": "الشفاء كان وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The birth was touch-and-go.",
+     "ar": "الولادة كانت وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The escape was touch-and-go.",
+     "ar": "الهروب كان وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The game was touch-and-go.",
+     "ar": "اللعبة كانت وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The negotiation was touch-and-go.",
+     "ar": "التفاوض كان وضع خطير ومش مضمون."
+    },
+    {
+     "en": "The flight was touch-and-go.",
+     "ar": "الطيران كان وضع خطير ومش مضمون."
+    }
+   ]
+  },
+  {
+   "id": "slg-001023",
+   "sentences": [
+    {
+     "en": "It's no picnic.",
+     "ar": "مش نزهة."
+    },
+    {
+     "en": "The job is no picnic.",
+     "ar": "الشغل مش نزهة."
+    },
+    {
+     "en": "The trip was no picnic.",
+     "ar": "السفر كان مش نزهة."
+    },
+    {
+     "en": "The task is no picnic.",
+     "ar": "المهمة مش نزهة."
+    },
+    {
+     "en": "The day was no picnic.",
+     "ar": "اليوم كان مش نزهة."
+    },
+    {
+     "en": "The hike was no picnic.",
+     "ar": "الهايكنج كان مش نزهة."
+    },
+    {
+     "en": "The exam was no picnic.",
+     "ar": "الامتحان كان مش نزهة."
+    },
+    {
+     "en": "The project is no picnic.",
+     "ar": "المشروع مش نزهة."
+    },
+    {
+     "en": "The training was no picnic.",
+     "ar": "التدريب كان مش نزهة."
+    },
+    {
+     "en": "The move was no picnic.",
+     "ar": "النقل كان مش نزهة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001024",
+   "sentences": [
+    {
+     "en": "It's no joke.",
+     "ar": "مش هزار."
+    },
+    {
+     "en": "The situation is no joke.",
+     "ar": "الموقف مش هزار."
+    },
+    {
+     "en": "The problem is no joke.",
+     "ar": "المشكلة مش هزار."
+    },
+    {
+     "en": "The pain is no joke.",
+     "ar": "الألم مش هزار."
+    },
+    {
+     "en": "The heat is no joke.",
+     "ar": "الحر مش هزار."
+    },
+    {
+     "en": "The cold is no joke.",
+     "ar": "البرد مش هزار."
+    },
+    {
+     "en": "The workload is no joke.",
+     "ar": "الشغل مش هزار."
+    },
+    {
+     "en": "The schedule is no joke.",
+     "ar": "الجدول مش هزار."
+    },
+    {
+     "en": "The competition is no joke.",
+     "ar": "المنافسة مش هزار."
+    },
+    {
+     "en": "The pressure is no joke.",
+     "ar": "الضغط مش هزار."
+    }
+   ]
+  },
+  {
+   "id": "slg-001025",
+   "sentences": [
+    {
+     "en": "That's heavy.",
+     "ar": "ده عميق."
+    },
+    {
+     "en": "The news is heavy.",
+     "ar": "الخبر تقيل."
+    },
+    {
+     "en": "The conversation was heavy.",
+     "ar": "الكلام كان تقيل."
+    },
+    {
+     "en": "The topic is heavy.",
+     "ar": "الموضوع تقيل."
+    },
+    {
+     "en": "The book is heavy.",
+     "ar": "الكتاب تقيل."
+    },
+    {
+     "en": "The movie was heavy.",
+     "ar": "الفيلم كان تقيل."
+    },
+    {
+     "en": "The situation is heavy.",
+     "ar": "الموقف تقيل."
+    },
+    {
+     "en": "The discussion was heavy.",
+     "ar": "النقاش كان تقيل."
+    },
+    {
+     "en": "The decision is heavy.",
+     "ar": "القرار تقيل."
+    },
+    {
+     "en": "The loss was heavy.",
+     "ar": "الخسارة كانت تقيلة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001026",
+   "sentences": [
+    {
+     "en": "That's deep.",
+     "ar": "ده عميق."
+    },
+    {
+     "en": "The conversation was deep.",
+     "ar": "الكلام كان عميق."
+    },
+    {
+     "en": "The topic is deep.",
+     "ar": "الموضوع عميق."
+    },
+    {
+     "en": "The book is deep.",
+     "ar": "الكتاب عميق."
+    },
+    {
+     "en": "The movie was deep.",
+     "ar": "الفيلم كان عميق."
+    },
+    {
+     "en": "The thought is deep.",
+     "ar": "الفكرة عميقة."
+    },
+    {
+     "en": "The question is deep.",
+     "ar": "السؤال عميق."
+    },
+    {
+     "en": "The discussion was deep.",
+     "ar": "النقاش كان عميق."
+    },
+    {
+     "en": "The poem is deep.",
+     "ar": "القصيدة عميقة."
+    },
+    {
+     "en": "The song is deep.",
+     "ar": "الأغنية عميقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001027",
+   "sentences": [
+    {
+     "en": "Let's have real talk.",
+     "ar": "خلينا نتكلم بجد."
+    },
+    {
+     "en": "He gave real talk.",
+     "ar": "اتكلم بجد."
+    },
+    {
+     "en": "She gave real talk.",
+     "ar": "اتكلمت بجد."
+    },
+    {
+     "en": "It's time for real talk.",
+     "ar": "وقت الكلام الجاد."
+    },
+    {
+     "en": "He appreciated the real talk.",
+     "ar": "قدّر الكلام الجاد."
+    },
+    {
+     "en": "She appreciated the real talk.",
+     "ar": "قدّرت الكلام الجاد."
+    },
+    {
+     "en": "He needed real talk.",
+     "ar": "محتاج كلام جاد."
+    },
+    {
+     "en": "She needed real talk.",
+     "ar": "محتاجة كلام جاد."
+    },
+    {
+     "en": "He offered real talk.",
+     "ar": "عرض كلام جاد."
+    },
+    {
+     "en": "She offered real talk.",
+     "ar": "عرضت كلام جاد."
+    }
+   ]
+  },
+  {
+   "id": "slg-001028",
+   "sentences": [
+    {
+     "en": "He dropped a truth bomb.",
+     "ar": "قال حقيقة قاسية فجأة."
+    },
+    {
+     "en": "She dropped a truth bomb.",
+     "ar": "قالت حقيقة قاسية فجأة."
+    },
+    {
+     "en": "He dropped a truth bomb and left.",
+     "ar": "قال حقيقة قاسية ومشي."
+    },
+    {
+     "en": "She dropped a truth bomb and left.",
+     "ar": "قالت حقيقة قاسية ومشت."
+    },
+    {
+     "en": "He dropped a truth bomb and shocked everyone.",
+     "ar": "قال حقيقة قاسية وصدم الكل."
+    },
+    {
+     "en": "She dropped a truth bomb and shocked everyone.",
+     "ar": "قالت حقيقة قاسية وصدمت الكل."
+    },
+    {
+     "en": "He dropped a truth bomb in the meeting.",
+     "ar": "قال حقيقة قاسية في الاجتماع."
+    },
+    {
+     "en": "She dropped a truth bomb in the meeting.",
+     "ar": "قالت حقيقة قاسية في الاجتماع."
+    },
+    {
+     "en": "He dropped a truth bomb and smiled.",
+     "ar": "قال حقيقة قاسية وابتسم."
+    },
+    {
+     "en": "She dropped a truth bomb and smiled.",
+     "ar": "قالت حقيقة قاسية وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001029",
+   "sentences": [
+    {
+     "en": "She dropped a bombshell.",
+     "ar": "قالت خبر مفاجئ وصادم."
+    },
+    {
+     "en": "He dropped a bombshell.",
+     "ar": "قال خبر مفاجئ وصادم."
+    },
+    {
+     "en": "She announced a bombshell.",
+     "ar": "أعلنت خبر مفاجئ وصادم."
+    },
+    {
+     "en": "He announced a bombshell.",
+     "ar": "أعلن خبر مفاجئ وصادم."
+    },
+    {
+     "en": "She revealed a bombshell.",
+     "ar": "كشفت خبر مفاجئ وصادم."
+    },
+    {
+     "en": "He revealed a bombshell.",
+     "ar": "كشف خبر مفاجئ وصادم."
+    },
+    {
+     "en": "She heard a bombshell.",
+     "ar": "سمعت خبر مفاجئ وصادم."
+    },
+    {
+     "en": "He heard a bombshell.",
+     "ar": "سمع خبر مفاجئ وصادم."
+    },
+    {
+     "en": "She shared a bombshell.",
+     "ar": "شاركت خبر مفاجئ وصادم."
+    },
+    {
+     "en": "He shared a bombshell.",
+     "ar": "شارك خبر مفاجئ وصادم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001030",
+   "sentences": [
+    {
+     "en": "It was a wake-up call.",
+     "ar": "كانت صحوة."
+    },
+    {
+     "en": "The news was a wake-up call.",
+     "ar": "الخبر كان صحوة."
+    },
+    {
+     "en": "The accident was a wake-up call.",
+     "ar": "الحادثة كانت صحوة."
+    },
+    {
+     "en": "The diagnosis was a wake-up call.",
+     "ar": "التشخيص كان صحوة."
+    },
+    {
+     "en": "The failure was a wake-up call.",
+     "ar": "الفشل كان صحوة."
+    },
+    {
+     "en": "The loss was a wake-up call.",
+     "ar": "الخسارة كانت صحوة."
+    },
+    {
+     "en": "The warning was a wake-up call.",
+     "ar": "التحذير كان صحوة."
+    },
+    {
+     "en": "The call was a wake-up call.",
+     "ar": "المكالمة كانت صحوة."
+    },
+    {
+     "en": "The visit was a wake-up call.",
+     "ar": "الزيارة كانت صحوة."
+    },
+    {
+     "en": "The letter was a wake-up call.",
+     "ar": "الرسالة كانت صحوة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001031",
+   "sentences": [
+    {
+     "en": "It was an eye-opener.",
+     "ar": "كانت تجربة فتحت عينيه."
+    },
+    {
+     "en": "The trip was an eye-opener.",
+     "ar": "السفر كان تجربة فتحت عينيه."
+    },
+    {
+     "en": "The visit was an eye-opener.",
+     "ar": "الزيارة كانت تجربة فتحت عينيه."
+    },
+    {
+     "en": "The meeting was an eye-opener.",
+     "ar": "الاجتماع كان تجربة فتحت عينيه."
+    },
+    {
+     "en": "The conversation was an eye-opener.",
+     "ar": "الكلام كان تجربة فتحت عينيه."
+    },
+    {
+     "en": "The experience was an eye-opener.",
+     "ar": "التجربة كانت فتحت عينيه."
+    },
+    {
+     "en": "The book was an eye-opener.",
+     "ar": "الكتاب كان فتح عينيه."
+    },
+    {
+     "en": "The movie was an eye-opener.",
+     "ar": "الفيلم كان فتح عينيه."
+    },
+    {
+     "en": "The class was an eye-opener.",
+     "ar": "الحصة كانت فتح عينيه."
+    },
+    {
+     "en": "The event was an eye-opener.",
+     "ar": "المناسبة كانت فتح عينيه."
+    }
+   ]
+  },
+  {
+   "id": "slg-001032",
+   "sentences": [
+    {
+     "en": "It's a game changer.",
+     "ar": "ده بيغير قواعد اللعبة."
+    },
+    {
+     "en": "The app is a game changer.",
+     "ar": "التطبيق بيغير قواعد اللعبة."
+    },
+    {
+     "en": "The phone is a game changer.",
+     "ar": "الموبايل بيغير قواعد اللعبة."
+    },
+    {
+     "en": "The car is a game changer.",
+     "ar": "العربية بتغير قواعد اللعبة."
+    },
+    {
+     "en": "The idea is a game changer.",
+     "ar": "الفكرة بتغير قواعد اللعبة."
+    },
+    {
+     "en": "The tool is a game changer.",
+     "ar": "الأداة بتغير قواعد اللعبة."
+    },
+    {
+     "en": "The method is a game changer.",
+     "ar": "الطريقة بتغير قواعد اللعبة."
+    },
+    {
+     "en": "The player is a game changer.",
+     "ar": "اللاعب بيغير قواعد اللعبة."
+    },
+    {
+     "en": "The move was a game changer.",
+     "ar": "الحركة غيرت قواعد اللعبة."
+    },
+    {
+     "en": "The decision was a game changer.",
+     "ar": "القرار غيّر قواعد اللعبة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001033",
+   "sentences": [
+    {
+     "en": "It's a big deal.",
+     "ar": "ده حاجة مهمة."
+    },
+    {
+     "en": "It's not a big deal.",
+     "ar": "مش حاجة مهمة."
+    },
+    {
+     "en": "He made a big deal of it.",
+     "ar": "عمل منها حاجة مهمة."
+    },
+    {
+     "en": "She made a big deal of it.",
+     "ar": "عملت منها حاجة مهمة."
+    },
+    {
+     "en": "It's a big deal for him.",
+     "ar": "ده حاجة مهمة بالنسباله."
+    },
+    {
+     "en": "It's a big deal for her.",
+     "ar": "ده حاجة مهمة بالنسبالها."
+    },
+    {
+     "en": "He said it's a big deal.",
+     "ar": "قال إنه حاجة مهمة."
+    },
+    {
+     "en": "She said it's a big deal.",
+     "ar": "قالت إنه حاجة مهمة."
+    },
+    {
+     "en": "He said it's no big deal.",
+     "ar": "قال إنه مش حاجة مهمة."
+    },
+    {
+     "en": "She said it's no big deal.",
+     "ar": "قالت إنه مش حاجة مهمة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001034",
+   "sentences": [
+    {
+     "en": "It's no biggie.",
+     "ar": "مش مشكلة."
+    },
+    {
+     "en": "He said no biggie.",
+     "ar": "قال مش مشكلة."
+    },
+    {
+     "en": "She said no biggie.",
+     "ar": "قالت مش مشكلة."
+    },
+    {
+     "en": "It's no biggie for him.",
+     "ar": "مش مشكلة بالنسباله."
+    },
+    {
+     "en": "It's no biggie for her.",
+     "ar": "مش مشكلة بالنسبالها."
+    },
+    {
+     "en": "He said no biggie and smiled.",
+     "ar": "قال مش مشكلة وابتسم."
+    },
+    {
+     "en": "She said no biggie and smiled.",
+     "ar": "قالت مش مشكلة وابتسمت."
+    },
+    {
+     "en": "He said no biggie and forgot.",
+     "ar": "قال مش مشكلة ونسي."
+    },
+    {
+     "en": "She said no biggie and forgot.",
+     "ar": "قالت مش مشكلة ونسيت."
+    },
+    {
+     "en": "It's no biggie, don't worry.",
+     "ar": "مش مشكلة، ما تقلقش."
+    }
+   ]
+  },
+  {
+   "id": "slg-001035",
+   "sentences": [
+    {
+     "en": "He said whatever.",
+     "ar": "قال أيًا كان."
+    },
+    {
+     "en": "She said whatever.",
+     "ar": "قالت أيًا كان."
+    },
+    {
+     "en": "He said whatever and walked away.",
+     "ar": "قال أيًا كان ومشي."
+    },
+    {
+     "en": "She said whatever and walked away.",
+     "ar": "قالت أيًا كان ومشت."
+    },
+    {
+     "en": "He said whatever and didn't care.",
+     "ar": "قال أيًا كان ومش مهتم."
+    },
+    {
+     "en": "She said whatever and didn't care.",
+     "ar": "قالت أيًا كان ومش مهتمة."
+    },
+    {
+     "en": "He said whatever and shrugged.",
+     "ar": "قال أيًا كان وهز كتفه."
+    },
+    {
+     "en": "She said whatever and shrugged.",
+     "ar": "قالت أيًا كان وهزت كتفها."
+    },
+    {
+     "en": "He said whatever and left.",
+     "ar": "قال أيًا كان ومشي."
+    },
+    {
+     "en": "She said whatever and left.",
+     "ar": "قالت أيًا كان ومشت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001036",
+   "sentences": [
+    {
+     "en": "He said meh.",
+     "ar": "قال عادي مش عاجبني."
+    },
+    {
+     "en": "She said meh.",
+     "ar": "قالت عادي مش عاجبني."
+    },
+    {
+     "en": "He felt meh about it.",
+     "ar": "حس إنه عادي مش عاجبه."
+    },
+    {
+     "en": "She felt meh about it.",
+     "ar": "حست إنه عادي مش عاجبها."
+    },
+    {
+     "en": "He said meh and shrugged.",
+     "ar": "قال عادي وهز كتفه."
+    },
+    {
+     "en": "She said meh and shrugged.",
+     "ar": "قالت عادي وهزت كتفها."
+    },
+    {
+     "en": "He said meh and left.",
+     "ar": "قال عادي ومشي."
+    },
+    {
+     "en": "She said meh and left.",
+     "ar": "قالت عادي ومشت."
+    },
+    {
+     "en": "He said meh and didn't care.",
+     "ar": "قال عادي ومش مهتم."
+    },
+    {
+     "en": "She said meh and didn't care.",
+     "ar": "قالت عادي ومش مهتمة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001037",
+   "sentences": [
+    {
+     "en": "The food was so-so.",
+     "ar": "الأكل كان عادي."
+    },
+    {
+     "en": "The movie was so-so.",
+     "ar": "الفيلم كان عادي."
+    },
+    {
+     "en": "The day was so-so.",
+     "ar": "اليوم كان عادي."
+    },
+    {
+     "en": "The service was so-so.",
+     "ar": "الخدمة كانت عادية."
+    },
+    {
+     "en": "The party was so-so.",
+     "ar": "الحفلة كانت عادية."
+    },
+    {
+     "en": "The trip was so-so.",
+     "ar": "السفر كان عادي."
+    },
+    {
+     "en": "The game was so-so.",
+     "ar": "اللعبة كانت عادية."
+    },
+    {
+     "en": "The concert was so-so.",
+     "ar": "الحفلة كانت عادية."
+    },
+    {
+     "en": "The meal was so-so.",
+     "ar": "الأكل كان عادي."
+    },
+    {
+     "en": "The show was so-so.",
+     "ar": "العرض كان عادي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001038",
+   "sentences": [
+    {
+     "en": "He said can't complain.",
+     "ar": "قال مش زعلان."
+    },
+    {
+     "en": "She said can't complain.",
+     "ar": "قالت مش زعلانة."
+    },
+    {
+     "en": "He said can't complain and smiled.",
+     "ar": "قال مش زعلان وابتسم."
+    },
+    {
+     "en": "She said can't complain and smiled.",
+     "ar": "قالت مش زعلانة وابتسمت."
+    },
+    {
+     "en": "He said can't complain and was happy.",
+     "ar": "قال مش زعلان وكان مبسوط."
+    },
+    {
+     "en": "She said can't complain and was happy.",
+     "ar": "قالت مش زعلانة وكانت مبسوطة."
+    },
+    {
+     "en": "He said can't complain and relaxed.",
+     "ar": "قال مش زعلان وارتاح."
+    },
+    {
+     "en": "She said can't complain and relaxed.",
+     "ar": "قالت مش زعلانة وارتاحت."
+    },
+    {
+     "en": "He said can't complain and worked.",
+     "ar": "قال مش زعلان واشتغل."
+    },
+    {
+     "en": "She said can't complain and worked.",
+     "ar": "قالت مش زعلانة واشتغلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001039",
+   "sentences": [
+    {
+     "en": "He said same old same old.",
+     "ar": "قال نفس الروتين القديم."
+    },
+    {
+     "en": "She said same old same old.",
+     "ar": "قالت نفس الروتين القديم."
+    },
+    {
+     "en": "He said same old same old and sighed.",
+     "ar": "قال نفس الروتين القديم وتنهد."
+    },
+    {
+     "en": "She said same old same old and sighed.",
+     "ar": "قالت نفس الروتين القديم وتنهدت."
+    },
+    {
+     "en": "He said same old same old and worked.",
+     "ar": "قال نفس الروتين القديم واشتغل."
+    },
+    {
+     "en": "She said same old same old and worked.",
+     "ar": "قالت نفس الروتين القديم واشتغلت."
+    },
+    {
+     "en": "He said same old same old and smiled.",
+     "ar": "قال نفس الروتين القديم وابتسم."
+    },
+    {
+     "en": "She said same old same old and smiled.",
+     "ar": "قالت نفس الروتين القديم وابتسمت."
+    },
+    {
+     "en": "He said same old same old and left.",
+     "ar": "قال نفس الروتين القديم ومشي."
+    },
+    {
+     "en": "She said same old same old and left.",
+     "ar": "قالت نفس الروتين القديم ومشت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001040",
+   "sentences": [
+    {
+     "en": "The movie was nothing to write home about.",
+     "ar": "الفيلم كان عادي."
+    },
+    {
+     "en": "The food was nothing to write home about.",
+     "ar": "الأكل كان عادي."
+    },
+    {
+     "en": "The party was nothing to write home about.",
+     "ar": "الحفلة كانت عادية."
+    },
+    {
+     "en": "The trip was nothing to write home about.",
+     "ar": "السفر كان عادي."
+    },
+    {
+     "en": "The game was nothing to write home about.",
+     "ar": "اللعبة كانت عادية."
+    },
+    {
+     "en": "The concert was nothing to write home about.",
+     "ar": "الحفلة كانت عادية."
+    },
+    {
+     "en": "The meal was nothing to write home about.",
+     "ar": "الأكل كان عادي."
+    },
+    {
+     "en": "The show was nothing to write home about.",
+     "ar": "العرض كان عادي."
+    },
+    {
+     "en": "The day was nothing to write home about.",
+     "ar": "اليوم كان عادي."
+    },
+    {
+     "en": "The experience was nothing to write home about.",
+     "ar": "التجربة كانت عادية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001041",
+   "sentences": [
+    {
+     "en": "The job is run-of-the-mill.",
+     "ar": "الشغل عادي وتقليدي."
+    },
+    {
+     "en": "The car is run-of-the-mill.",
+     "ar": "العربية عادية وتقليدية."
+    },
+    {
+     "en": "The house is run-of-the-mill.",
+     "ar": "البيت عادي وتقليدي."
+    },
+    {
+     "en": "The phone is run-of-the-mill.",
+     "ar": "الموبايل عادي وتقليدي."
+    },
+    {
+     "en": "The movie was run-of-the-mill.",
+     "ar": "الفيلم كان عادي وتقليدي."
+    },
+    {
+     "en": "The restaurant is run-of-the-mill.",
+     "ar": "المطعم عادي وتقليدي."
+    },
+    {
+     "en": "The hotel is run-of-the-mill.",
+     "ar": "الفندق عادي وتقليدي."
+    },
+    {
+     "en": "The product is run-of-the-mill.",
+     "ar": "المنتج عادي وتقليدي."
+    },
+    {
+     "en": "The service is run-of-the-mill.",
+     "ar": "الخدمة عادية وتقليدية."
+    },
+    {
+     "en": "The design is run-of-the-mill.",
+     "ar": "التصميم عادي وتقليدي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001042",
+   "sentences": [
+    {
+     "en": "The design is vanilla.",
+     "ar": "التصميم عادي وبسيط."
+    },
+    {
+     "en": "The website is vanilla.",
+     "ar": "الموقع عادي وبسيط."
+    },
+    {
+     "en": "The car is vanilla.",
+     "ar": "العربية عادية وبسيطة."
+    },
+    {
+     "en": "The phone is vanilla.",
+     "ar": "الموبايل عادي وبسيط."
+    },
+    {
+     "en": "The interface is vanilla.",
+     "ar": "الواجهة عادية وبسيطة."
+    },
+    {
+     "en": "The setup is vanilla.",
+     "ar": "الإعداد عادي وبسيط."
+    },
+    {
+     "en": "The plan is vanilla.",
+     "ar": "الخطة عادية وبسيطة."
+    },
+    {
+     "en": "The approach is vanilla.",
+     "ar": "الطريقة عادية وبسيطة."
+    },
+    {
+     "en": "The style is vanilla.",
+     "ar": "الستايل عادي وبسيط."
+    },
+    {
+     "en": "The look is vanilla.",
+     "ar": "الشكل عادي وبسيط."
+    }
+   ]
+  },
+  {
+   "id": "slg-001043",
+   "sentences": [
+    {
+     "en": "The phone is bog-standard.",
+     "ar": "الموبايل عادي خالص."
+    },
+    {
+     "en": "The car is bog-standard.",
+     "ar": "العربية عادية خالص."
+    },
+    {
+     "en": "The house is bog-standard.",
+     "ar": "البيت عادي خالص."
+    },
+    {
+     "en": "The computer is bog-standard.",
+     "ar": "الكمبيوتر عادي خالص."
+    },
+    {
+     "en": "The camera is bog-standard.",
+     "ar": "الكاميرا عادية خالص."
+    },
+    {
+     "en": "The TV is bog-standard.",
+     "ar": "التلفزيون عادي خالص."
+    },
+    {
+     "en": "The bike is bog-standard.",
+     "ar": "العجلة عادية خالص."
+    },
+    {
+     "en": "The watch is bog-standard.",
+     "ar": "الساعة عادية خالص."
+    },
+    {
+     "en": "The bag is bog-standard.",
+     "ar": "الشنطة عادية خالص."
+    },
+    {
+     "en": "The shoes are bog-standard.",
+     "ar": "الجزمة عادية خالص."
+    }
+   ]
+  },
+  {
+   "id": "slg-001044",
+   "sentences": [
+    {
+     "en": "He's an average Joe.",
+     "ar": "هو شخص عادي."
+    },
+    {
+     "en": "She's an average Joe.",
+     "ar": "هي شخص عادي."
+    },
+    {
+     "en": "He's just an average Joe.",
+     "ar": "هو مجرد شخص عادي."
+    },
+    {
+     "en": "She's just an average Joe.",
+     "ar": "هي مجرد شخص عادي."
+    },
+    {
+     "en": "He's an average Joe and works hard.",
+     "ar": "هو شخص عادي وبيشتغل بجد."
+    },
+    {
+     "en": "She's an average Joe and saves money.",
+     "ar": "هي شخص عادي وبتوفر فلوس."
+    },
+    {
+     "en": "He's an average Joe and pays taxes.",
+     "ar": "هو شخص عادي وبيدفع ضرايب."
+    },
+    {
+     "en": "She's an average Joe and votes.",
+     "ar": "هي شخص عادي وبتنتخب."
+    },
+    {
+     "en": "He's an average Joe and dreams big.",
+     "ar": "هو شخص عادي وبيحلم كبير."
+    },
+    {
+     "en": "She's an average Joe and lives simply.",
+     "ar": "هي شخص عادي وبتعيش ببساطة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001045",
+   "sentences": [
+    {
+     "en": "The house is cookie-cutter.",
+     "ar": "البيت نسخة مكررة."
+    },
+    {
+     "en": "The design is cookie-cutter.",
+     "ar": "التصميم نسخة مكررة."
+    },
+    {
+     "en": "The website is cookie-cutter.",
+     "ar": "الموقع نسخة مكررة."
+    },
+    {
+     "en": "The car is cookie-cutter.",
+     "ar": "العربية نسخة مكررة."
+    },
+    {
+     "en": "The phone is cookie-cutter.",
+     "ar": "الموبايل نسخة مكررة."
+    },
+    {
+     "en": "The apartment is cookie-cutter.",
+     "ar": "الشقة نسخة مكررة."
+    },
+    {
+     "en": "The plan is cookie-cutter.",
+     "ar": "الخطة نسخة مكررة."
+    },
+    {
+     "en": "The approach is cookie-cutter.",
+     "ar": "الطريقة نسخة مكررة."
+    },
+    {
+     "en": "The style is cookie-cutter.",
+     "ar": "الستايل نسخة مكررة."
+    },
+    {
+     "en": "The look is cookie-cutter.",
+     "ar": "الشكل نسخة مكررة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001046",
+   "sentences": [
+    {
+     "en": "That style is so yesterday.",
+     "ar": "الستايل ده قديم وعدى الموضة."
+    },
+    {
+     "en": "That phone is so yesterday.",
+     "ar": "الموبايل ده قديم وعدى الموضة."
+    },
+    {
+     "en": "That song is so yesterday.",
+     "ar": "الأغنية دي قديمة وعدت الموضة."
+    },
+    {
+     "en": "That trend is so yesterday.",
+     "ar": "الموضة دي قديمة وعدت."
+    },
+    {
+     "en": "That look is so yesterday.",
+     "ar": "الشكل ده قديم وعدى الموضة."
+    },
+    {
+     "en": "That idea is so yesterday.",
+     "ar": "الفكرة دي قديمة وعدت الموضة."
+    },
+    {
+     "en": "That gadget is so yesterday.",
+     "ar": "الجهاز ده قديم وعدى الموضة."
+    },
+    {
+     "en": "That game is so yesterday.",
+     "ar": "اللعبة دي قديمة وعدت الموضة."
+    },
+    {
+     "en": "That app is so yesterday.",
+     "ar": "التطبيق ده قديم وعدى الموضة."
+    },
+    {
+     "en": "That joke is so yesterday.",
+     "ar": "النكتة دي قديمة وعدت الموضة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001047",
+   "sentences": [
+    {
+     "en": "That trick is old hat.",
+     "ar": "الخدعة دي قديمة."
+    },
+    {
+     "en": "That song is old hat.",
+     "ar": "الأغنية دي قديمة."
+    },
+    {
+     "en": "That style is old hat.",
+     "ar": "الستايل ده قديم."
+    },
+    {
+     "en": "That technology is old hat.",
+     "ar": "التكنولوجيا دي قديمة."
+    },
+    {
+     "en": "That method is old hat.",
+     "ar": "الطريقة دي قديمة."
+    },
+    {
+     "en": "That idea is old hat.",
+     "ar": "الفكرة دي قديمة."
+    },
+    {
+     "en": "That gadget is old hat.",
+     "ar": "الجهاز ده قديم."
+    },
+    {
+     "en": "That game is old hat.",
+     "ar": "اللعبة دي قديمة."
+    },
+    {
+     "en": "That joke is old hat.",
+     "ar": "النكتة دي قديمة."
+    },
+    {
+     "en": "That news is old hat.",
+     "ar": "الخبر ده قديم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001048",
+   "sentences": [
+    {
+     "en": "The trend is played out.",
+     "ar": "الموضة اتهلكت."
+    },
+    {
+     "en": "The song is played out.",
+     "ar": "الأغنية اتهلكت."
+    },
+    {
+     "en": "The joke is played out.",
+     "ar": "النكتة اتهلكت."
+    },
+    {
+     "en": "The style is played out.",
+     "ar": "الستايل اتهلك."
+    },
+    {
+     "en": "The idea is played out.",
+     "ar": "الفكرة اتهلكت."
+    },
+    {
+     "en": "The meme is played out.",
+     "ar": "الميم اتهلك."
+    },
+    {
+     "en": "The dance is played out.",
+     "ar": "الرقصة اتهلكت."
+    },
+    {
+     "en": "The challenge is played out.",
+     "ar": "التحدي اتهلك."
+    },
+    {
+     "en": "The phrase is played out.",
+     "ar": "العبارة اتهلكت."
+    },
+    {
+     "en": "The fad is played out.",
+     "ar": "الموضة اتهلكت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001049",
+   "sentences": [
+    {
+     "en": "The joke is stale.",
+     "ar": "النكتة بايتة."
+    },
+    {
+     "en": "The bread is stale.",
+     "ar": "العيش بايت."
+    },
+    {
+     "en": "The meme is stale.",
+     "ar": "الميم بايت."
+    },
+    {
+     "en": "The content is stale.",
+     "ar": "المحتوى بايت."
+    },
+    {
+     "en": "The news is stale.",
+     "ar": "الخبر بايت."
+    },
+    {
+     "en": "The gossip is stale.",
+     "ar": "القيل والقال بايت."
+    },
+    {
+     "en": "The idea is stale.",
+     "ar": "الفكرة بايتة."
+    },
+    {
+     "en": "The story is stale.",
+     "ar": "القصة بايتة."
+    },
+    {
+     "en": "The trend is stale.",
+     "ar": "الموضة بايتة."
+    },
+    {
+     "en": "The style is stale.",
+     "ar": "الستايل بايت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001050",
+   "sentences": [
+    {
+     "en": "He's in luck.",
+     "ar": "هو محظوظ المرة دي."
+    },
+    {
+     "en": "She's in luck.",
+     "ar": "هي محظوظة المرة دي."
+    },
+    {
+     "en": "We're in luck.",
+     "ar": "إحنا محظوظين المرة دي."
+    },
+    {
+     "en": "They're in luck.",
+     "ar": "هما محظوظين المرة دي."
+    },
+    {
+     "en": "He was in luck and won.",
+     "ar": "كان محظوظ وكسب."
+    },
+    {
+     "en": "She was in luck and found it.",
+     "ar": "كانت محظوظة ولقتها."
+    },
+    {
+     "en": "He was in luck and got the job.",
+     "ar": "كان محظوظ وجاب الشغل."
+    },
+    {
+     "en": "She was in luck and passed.",
+     "ar": "كانت محظوظة ونجحت."
+    },
+    {
+     "en": "He was in luck and survived.",
+     "ar": "كان محظوظ ونجا."
+    },
+    {
+     "en": "She was in luck and smiled.",
+     "ar": "كانت محظوظة وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001051",
+   "sentences": [
+    {
+     "en": "He's out of luck.",
+     "ar": "حظه وحش المرة دي."
+    },
+    {
+     "en": "She's out of luck.",
+     "ar": "حظها وحش المرة دي."
+    },
+    {
+     "en": "We're out of luck.",
+     "ar": "حظنا وحش المرة دي."
+    },
+    {
+     "en": "They're out of luck.",
+     "ar": "حظهم وحش المرة دي."
+    },
+    {
+     "en": "He was out of luck and lost.",
+     "ar": "حظه كان وحش وخسر."
+    },
+    {
+     "en": "She was out of luck and missed it.",
+     "ar": "حظها كان وحش وفاتها."
+    },
+    {
+     "en": "He was out of luck and failed.",
+     "ar": "حظه كان وحش وفشل."
+    },
+    {
+     "en": "She was out of luck and cried.",
+     "ar": "حظها كان وحش وعيطت."
+    },
+    {
+     "en": "He was out of luck and tried again.",
+     "ar": "حظه كان وحش وحاول تاني."
+    },
+    {
+     "en": "She was out of luck and gave up.",
+     "ar": "حظها كان وحش واستسلمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001052",
+   "sentences": [
+    {
+     "en": "No such luck.",
+     "ar": "للأسف لأ، مفيش حظ."
+    },
+    {
+     "en": "He said no such luck.",
+     "ar": "قال للأسف لأ."
+    },
+    {
+     "en": "She said no such luck.",
+     "ar": "قالت للأسف لأ."
+    },
+    {
+     "en": "He hoped but no such luck.",
+     "ar": "كان بيتمنى بس للأسف لأ."
+    },
+    {
+     "en": "She hoped but no such luck.",
+     "ar": "كانت بتتمنى بس للأسف لأ."
+    },
+    {
+     "en": "He tried but no such luck.",
+     "ar": "حاول بس للأسف لأ."
+    },
+    {
+     "en": "She tried but no such luck.",
+     "ar": "حاولت بس للأسف لأ."
+    },
+    {
+     "en": "He waited but no such luck.",
+     "ar": "استنى بس للأسف لأ."
+    },
+    {
+     "en": "She waited but no such luck.",
+     "ar": "استنّت بس للأسف لأ."
+    },
+    {
+     "en": "He wished but no such luck.",
+     "ar": "تمنى بس للأسف لأ."
+    }
+   ]
+  },
+  {
+   "id": "slg-001053",
+   "sentences": [
+    {
+     "en": "It was a fluke.",
+     "ar": "كانت صدفة."
+    },
+    {
+     "en": "The win was a fluke.",
+     "ar": "الفوز كان صدفة."
+    },
+    {
+     "en": "The goal was a fluke.",
+     "ar": "الجول كان صدفة."
+    },
+    {
+     "en": "The shot was a fluke.",
+     "ar": "الضربة كانت صدفة."
+    },
+    {
+     "en": "The answer was a fluke.",
+     "ar": "الإجابة كانت صدفة."
+    },
+    {
+     "en": "The discovery was a fluke.",
+     "ar": "الاكتشاف كان صدفة."
+    },
+    {
+     "en": "The success was a fluke.",
+     "ar": "النجاح كان صدفة."
+    },
+    {
+     "en": "The catch was a fluke.",
+     "ar": "اللقطة كانت صدفة."
+    },
+    {
+     "en": "The find was a fluke.",
+     "ar": "اللقطة كانت صدفة."
+    },
+    {
+     "en": "The result was a fluke.",
+     "ar": "النتيجة كانت صدفة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001054",
+   "sentences": [
+    {
+     "en": "He got a lucky break.",
+     "ar": "لقى فرصة حظ."
+    },
+    {
+     "en": "She got a lucky break.",
+     "ar": "لقت فرصة حظ."
+    },
+    {
+     "en": "He had a lucky break.",
+     "ar": "كان عنده فرصة حظ."
+    },
+    {
+     "en": "She had a lucky break.",
+     "ar": "كانت عندها فرصة حظ."
+    },
+    {
+     "en": "He got a lucky break and won.",
+     "ar": "لقى فرصة حظ وكسب."
+    },
+    {
+     "en": "She got a lucky break and passed.",
+     "ar": "لقت فرصة حظ ونجحت."
+    },
+    {
+     "en": "He got a lucky break and got the job.",
+     "ar": "لقى فرصة حظ وجاب الشغل."
+    },
+    {
+     "en": "She got a lucky break and found it.",
+     "ar": "لقت فرصة حظ ولقتها."
+    },
+    {
+     "en": "He got a lucky break and survived.",
+     "ar": "لقى فرصة حظ ونجا."
+    },
+    {
+     "en": "She got a lucky break and smiled.",
+     "ar": "لقت فرصة حظ وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001055",
+   "sentences": [
+    {
+     "en": "He's jammy.",
+     "ar": "هو محظوظ جدًا."
+    },
+    {
+     "en": "She's jammy.",
+     "ar": "هي محظوظة جدًا."
+    },
+    {
+     "en": "He was jammy and won.",
+     "ar": "كان محظوظ جدًا وكسب."
+    },
+    {
+     "en": "She was jammy and found it.",
+     "ar": "كانت محظوظة جدًا ولقتها."
+    },
+    {
+     "en": "He was jammy and got the job.",
+     "ar": "كان محظوظ جدًا وجاب الشغل."
+    },
+    {
+     "en": "She was jammy and passed.",
+     "ar": "كانت محظوظة جدًا ونجحت."
+    },
+    {
+     "en": "He's jammy and knows it.",
+     "ar": "هو محظوظ جدًا وعارف ده."
+    },
+    {
+     "en": "She's jammy and knows it.",
+     "ar": "هي محظوظة جدًا وعارفة ده."
+    },
+    {
+     "en": "He's jammy and jokes about it.",
+     "ar": "هو محظوظ جدًا وبيضحك على ده."
+    },
+    {
+     "en": "She's jammy and jokes about it.",
+     "ar": "هي محظوظة جدًا وبتضحك على ده."
+    }
+   ]
+  },
+  {
+   "id": "slg-001056",
+   "sentences": [
+    {
+     "en": "He hit the jackpot.",
+     "ar": "ضرب ضربة حظ كبيرة."
+    },
+    {
+     "en": "She hit the jackpot.",
+     "ar": "ضربت ضربة حظ كبيرة."
+    },
+    {
+     "en": "He won the jackpot.",
+     "ar": "كسب ضربة حظ كبيرة."
+    },
+    {
+     "en": "She won the jackpot.",
+     "ar": "كسبت ضربة حظ كبيرة."
+    },
+    {
+     "en": "He found the jackpot.",
+     "ar": "لقى ضربة حظ كبيرة."
+    },
+    {
+     "en": "She found the jackpot.",
+     "ar": "لقت ضربة حظ كبيرة."
+    },
+    {
+     "en": "He got the jackpot.",
+     "ar": "جاب ضربة حظ كبيرة."
+    },
+    {
+     "en": "She got the jackpot.",
+     "ar": "جابت ضربة حظ كبيرة."
+    },
+    {
+     "en": "He hit the jackpot and celebrated.",
+     "ar": "ضرب ضربة حظ كبيرة واحتفل."
+    },
+    {
+     "en": "She hit the jackpot and screamed.",
+     "ar": "ضربت ضربة حظ كبيرة وصرخت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001057",
+   "sentences": [
+    {
+     "en": "He struck it lucky.",
+     "ar": "الحظ ضربه فجأة."
+    },
+    {
+     "en": "She struck it lucky.",
+     "ar": "الحظ ضربها فجأة."
+    },
+    {
+     "en": "He struck it lucky and won.",
+     "ar": "الحظ ضربه فجأة وكسب."
+    },
+    {
+     "en": "She struck it lucky and found it.",
+     "ar": "الحظ ضربها فجأة ولقتها."
+    },
+    {
+     "en": "He struck it lucky and got the job.",
+     "ar": "الحظ ضربه فجأة وجاب الشغل."
+    },
+    {
+     "en": "She struck it lucky and passed.",
+     "ar": "الحظ ضربها فجأة ونجحت."
+    },
+    {
+     "en": "He struck it lucky and smiled.",
+     "ar": "الحظ ضربه فجأة وابتسم."
+    },
+    {
+     "en": "She struck it lucky and smiled.",
+     "ar": "الحظ ضربها فجأة وابتسمت."
+    },
+    {
+     "en": "He struck it lucky and celebrated.",
+     "ar": "الحظ ضربه فجأة واحتفل."
+    },
+    {
+     "en": "She struck it lucky and celebrated.",
+     "ar": "الحظ ضربها فجأة واحتفلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001058",
+   "sentences": [
+    {
+     "en": "He doesn't have a prayer.",
+     "ar": "مفيش عنده أي أمل خالص."
+    },
+    {
+     "en": "She doesn't have a prayer.",
+     "ar": "مفيش عندها أي أمل خالص."
+    },
+    {
+     "en": "They don't have a prayer.",
+     "ar": "مفيش عندهم أي أمل خالص."
+    },
+    {
+     "en": "We don't have a prayer.",
+     "ar": "مفيش عندنا أي أمل خالص."
+    },
+    {
+     "en": "He has not a prayer.",
+     "ar": "مفيش عنده أي أمل خالص."
+    },
+    {
+     "en": "She has not a prayer.",
+     "ar": "مفيش عندها أي أمل خالص."
+    },
+    {
+     "en": "They have not a prayer.",
+     "ar": "مفيش عندهم أي أمل خالص."
+    },
+    {
+     "en": "We have not a prayer.",
+     "ar": "مفيش عندنا أي أمل خالص."
+    },
+    {
+     "en": "He knew he had not a prayer.",
+     "ar": "عرف إنه مفيش عنده أمل."
+    },
+    {
+     "en": "She knew she had not a prayer.",
+     "ar": "عرفت إن مفيش عندها أمل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001059",
+   "sentences": [
+    {
+     "en": "It was a shot in the dark.",
+     "ar": "كان تخمين من غير معلومات."
+    },
+    {
+     "en": "He took a shot in the dark.",
+     "ar": "خمن من غير معلومات."
+    },
+    {
+     "en": "She took a shot in the dark.",
+     "ar": "خمنت من غير معلومات."
+    },
+    {
+     "en": "He made a shot in the dark.",
+     "ar": "عمل تخمين من غير معلومات."
+    },
+    {
+     "en": "She made a shot in the dark.",
+     "ar": "عملت تخمين من غير معلومات."
+    },
+    {
+     "en": "He took a shot in the dark and won.",
+     "ar": "خمن من غير معلومات وكسب."
+    },
+    {
+     "en": "She took a shot in the dark and won.",
+     "ar": "خمنت من غير معلومات وكسبت."
+    },
+    {
+     "en": "He took a shot in the dark and lost.",
+     "ar": "خمن من غير معلومات وخسر."
+    },
+    {
+     "en": "She took a shot in the dark and lost.",
+     "ar": "خمنت من غير معلومات وخسرت."
+    },
+    {
+     "en": "It was a shot in the dark that worked.",
+     "ar": "كان تخمين من غير معلومات ونجح."
+    }
+   ]
+  },
+  {
+   "id": "slg-001060",
+   "sentences": [
+    {
+     "en": "He's a shoo-in.",
+     "ar": "هو شبه مضمون يكسب."
+    },
+    {
+     "en": "She's a shoo-in.",
+     "ar": "هي شبه مضمونة تكسب."
+    },
+    {
+     "en": "The team is a shoo-in.",
+     "ar": "الفريق شبه مضمون يكسب."
+    },
+    {
+     "en": "The candidate is a shoo-in.",
+     "ar": "المرشح شبه مضمون يكسب."
+    },
+    {
+     "en": "He was a shoo-in and won.",
+     "ar": "كان شبه مضمون وكسب."
+    },
+    {
+     "en": "She was a shoo-in and won.",
+     "ar": "كانت شبه مضمونة وكسبت."
+    },
+    {
+     "en": "He's a shoo-in for the job.",
+     "ar": "هو شبه مضمون للشغل."
+    },
+    {
+     "en": "She's a shoo-in for the award.",
+     "ar": "هي شبه مضمونة للجايزة."
+    },
+    {
+     "en": "He's a shoo-in and relaxed.",
+     "ar": "هو شبه مضمون ومستريح."
+    },
+    {
+     "en": "She's a shoo-in and confident.",
+     "ar": "هي شبه مضمونة وواثقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001061",
+   "sentences": [
+    {
+     "en": "The win is in the bag.",
+     "ar": "الفوز خلاص مضمون."
+    },
+    {
+     "en": "The deal is in the bag.",
+     "ar": "الصفقة خلاص مضمونة."
+    },
+    {
+     "en": "The job is in the bag.",
+     "ar": "الشغل خلاص مضمون."
+    },
+    {
+     "en": "The game is in the bag.",
+     "ar": "اللعبة خلاص مضمونة."
+    },
+    {
+     "en": "The contract is in the bag.",
+     "ar": "العقد خلاص مضمون."
+    },
+    {
+     "en": "The sale is in the bag.",
+     "ar": "البيع خلاص مضمون."
+    },
+    {
+     "en": "The vote is in the bag.",
+     "ar": "الصوت خلاص مضمون."
+    },
+    {
+     "en": "The prize is in the bag.",
+     "ar": "الجايزة خلاص مضمونة."
+    },
+    {
+     "en": "The trip is in the bag.",
+     "ar": "السفر خلاص مضمون."
+    },
+    {
+     "en": "The plan is in the bag.",
+     "ar": "الخطة خلاص مضمونة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001062",
+   "sentences": [
+    {
+     "en": "It's a toss-up.",
+     "ar": "ممكن كده ممكن كده."
+    },
+    {
+     "en": "The game is a toss-up.",
+     "ar": "اللعبة ممكن كده ممكن كده."
+    },
+    {
+     "en": "The race is a toss-up.",
+     "ar": "السباق ممكن كده ممكن كده."
+    },
+    {
+     "en": "The election is a toss-up.",
+     "ar": "الانتخابات ممكن كده ممكن كده."
+    },
+    {
+     "en": "The decision is a toss-up.",
+     "ar": "القرار ممكن كده ممكن كده."
+    },
+    {
+     "en": "The outcome is a toss-up.",
+     "ar": "النتيجة ممكن كده ممكن كده."
+    },
+    {
+     "en": "The bet is a toss-up.",
+     "ar": "الرهان ممكن كده ممكن كده."
+    },
+    {
+     "en": "The choice is a toss-up.",
+     "ar": "الاختيار ممكن كده ممكن كده."
+    },
+    {
+     "en": "The match is a toss-up.",
+     "ar": "الماتش ممكن كده ممكن كده."
+    },
+    {
+     "en": "The result is a toss-up.",
+     "ar": "النتيجة ممكن كده ممكن كده."
+    }
+   ]
+  },
+  {
+   "id": "slg-001063",
+   "sentences": [
+    {
+     "en": "It's fifty-fifty.",
+     "ar": "نص نص."
+    },
+    {
+     "en": "The chances are fifty-fifty.",
+     "ar": "الفرص نص نص."
+    },
+    {
+     "en": "The odds are fifty-fifty.",
+     "ar": "الاحتمالات نص نص."
+    },
+    {
+     "en": "The split is fifty-fifty.",
+     "ar": "التقسيم نص نص."
+    },
+    {
+     "en": "The vote was fifty-fifty.",
+     "ar": "التصويت كان نص نص."
+    },
+    {
+     "en": "The chance is fifty-fifty.",
+     "ar": "الفرصة نص نص."
+    },
+    {
+     "en": "The probability is fifty-fifty.",
+     "ar": "الاحتمال نص نص."
+    },
+    {
+     "en": "The risk is fifty-fifty.",
+     "ar": "الخطر نص نص."
+    },
+    {
+     "en": "The outcome is fifty-fifty.",
+     "ar": "النتيجة نص نص."
+    },
+    {
+     "en": "The game is fifty-fifty.",
+     "ar": "اللعبة نص نص."
+    }
+   ]
+  },
+  {
+   "id": "slg-001064",
+   "sentences": [
+    {
+     "en": "Touch wood, everything is fine.",
+     "ar": "امسك الخشب، كل حاجة كويسة."
+    },
+    {
+     "en": "He said touch wood.",
+     "ar": "قال امسك الخشب."
+    },
+    {
+     "en": "She said touch wood.",
+     "ar": "قالت امسك الخشب."
+    },
+    {
+     "en": "Touch wood, the car is working.",
+     "ar": "امسك الخشب، العربية شغالة."
+    },
+    {
+     "en": "Touch wood, the plan is working.",
+     "ar": "امسك الخشب، الخطة شغالة."
+    },
+    {
+     "en": "Touch wood, the weather is good.",
+     "ar": "امسك الخشب، الجو حلو."
+    },
+    {
+     "en": "Touch wood, the trip is safe.",
+     "ar": "امسك الخشب، السفر آمن."
+    },
+    {
+     "en": "Touch wood, the job is secure.",
+     "ar": "امسك الخشب، الشغل مضمون."
+    },
+    {
+     "en": "Touch wood, the health is good.",
+     "ar": "امسك الخشب، الصحة كويسة."
+    },
+    {
+     "en": "Touch wood, the family is safe.",
+     "ar": "امسك الخشب، العيلة بأمان."
+    }
+   ]
+  },
+  {
+   "id": "slg-001065",
+   "sentences": [
+    {
+     "en": "Knock on wood, everything is fine.",
+     "ar": "امسك الخشب، كل حاجة كويسة."
+    },
+    {
+     "en": "He said knock on wood.",
+     "ar": "قال امسك الخشب."
+    },
+    {
+     "en": "She said knock on wood.",
+     "ar": "قالت امسك الخشب."
+    },
+    {
+     "en": "Knock on wood, the car is working.",
+     "ar": "امسك الخشب، العربية شغالة."
+    },
+    {
+     "en": "Knock on wood, the plan is working.",
+     "ar": "امسك الخشب، الخطة شغالة."
+    },
+    {
+     "en": "Knock on wood, the weather is good.",
+     "ar": "امسك الخشب، الجو حلو."
+    },
+    {
+     "en": "Knock on wood, the trip is safe.",
+     "ar": "امسك الخشب، السفر آمن."
+    },
+    {
+     "en": "Knock on wood, the job is secure.",
+     "ar": "امسك الخشب، الشغل مضمون."
+    },
+    {
+     "en": "Knock on wood, the health is good.",
+     "ar": "امسك الخشب، الصحة كويسة."
+    },
+    {
+     "en": "Knock on wood, the family is safe.",
+     "ar": "امسك الخشب، العيلة بأمان."
+    }
+   ]
+  },
+  {
+   "id": "slg-001066",
+   "sentences": [
+    {
+     "en": "Don't jinx it.",
+     "ar": "ما تجيبش الحظ الوحش بالكلام."
+    },
+    {
+     "en": "He jinxed it.",
+     "ar": "جاب الحظ الوحش بالكلام."
+    },
+    {
+     "en": "She jinxed it.",
+     "ar": "جابت الحظ الوحش بالكلام."
+    },
+    {
+     "en": "He said don't jinx it.",
+     "ar": "قال ما تجيبش الحظ الوحش."
+    },
+    {
+     "en": "She said don't jinx it.",
+     "ar": "قالت ما تجيبش الحظ الوحش."
+    },
+    {
+     "en": "He jinxed the game.",
+     "ar": "جاب الحظ الوحش للعبة."
+    },
+    {
+     "en": "She jinxed the plan.",
+     "ar": "جابت الحظ الوحش للخطة."
+    },
+    {
+     "en": "He jinxed the trip.",
+     "ar": "جاب الحظ الوحش للسفر."
+    },
+    {
+     "en": "She jinxed the date.",
+     "ar": "جابت الحظ الوحش للموعد."
+    },
+    {
+     "en": "He jinxed the deal.",
+     "ar": "جاب الحظ الوحش للصفقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001067",
+   "sentences": [
+    {
+     "en": "That's bad juju.",
+     "ar": "ده طاقة وحشة."
+    },
+    {
+     "en": "He has bad juju.",
+     "ar": "عنده طاقة وحشة."
+    },
+    {
+     "en": "She has bad juju.",
+     "ar": "عندها طاقة وحشة."
+    },
+    {
+     "en": "The place has bad juju.",
+     "ar": "المكان فيه طاقة وحشة."
+    },
+    {
+     "en": "The house has bad juju.",
+     "ar": "البيت فيه طاقة وحشة."
+    },
+    {
+     "en": "He felt bad juju.",
+     "ar": "حس بطاقة وحشة."
+    },
+    {
+     "en": "She felt bad juju.",
+     "ar": "حست بطاقة وحشة."
+    },
+    {
+     "en": "He avoided the bad juju.",
+     "ar": "اتجنب الطاقة الوحشة."
+    },
+    {
+     "en": "She avoided the bad juju.",
+     "ar": "اتجنبت الطاقة الوحشة."
+    },
+    {
+     "en": "He removed the bad juju.",
+     "ar": "شال الطاقة الوحشة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001068",
+   "sentences": [
+    {
+     "en": "It's karma.",
+     "ar": "ده اللي يعمله يرجعله."
+    },
+    {
+     "en": "He believes in karma.",
+     "ar": "بيؤمن إن اللي يعمله يرجعله."
+    },
+    {
+     "en": "She believes in karma.",
+     "ar": "بتؤمن إن اللي يعمله يرجعله."
+    },
+    {
+     "en": "Karma is real.",
+     "ar": "اللي يعمله يرجعله حقيقي."
+    },
+    {
+     "en": "He got his karma.",
+     "ar": "اللي عمله رجعله."
+    },
+    {
+     "en": "She got her karma.",
+     "ar": "اللي عملته رجعلها."
+    },
+    {
+     "en": "He waited for karma.",
+     "ar": "استنى اللي يعمله يرجعله."
+    },
+    {
+     "en": "She waited for karma.",
+     "ar": "استنّت اللي يعمله يرجعله."
+    },
+    {
+     "en": "He trusted karma.",
+     "ar": "وثق إن اللي يعمله يرجعله."
+    },
+    {
+     "en": "She trusted karma.",
+     "ar": "وثقت إن اللي يعمله يرجعله."
+    }
+   ]
+  },
+  {
+   "id": "slg-001069",
+   "sentences": [
+    {
+     "en": "Serves you right.",
+     "ar": "يستاهل."
+    },
+    {
+     "en": "He said serves you right.",
+     "ar": "قال يستاهل."
+    },
+    {
+     "en": "She said serves you right.",
+     "ar": "قالت يستاهل."
+    },
+    {
+     "en": "He said it serves you right.",
+     "ar": "قال يستاهل."
+    },
+    {
+     "en": "She said it serves you right.",
+     "ar": "قالت يستاهل."
+    },
+    {
+     "en": "He thought it serves you right.",
+     "ar": "فكر إنه يستاهل."
+    },
+    {
+     "en": "She thought it serves you right.",
+     "ar": "فكرت إنه يستاهل."
+    },
+    {
+     "en": "He said serves you right and laughed.",
+     "ar": "قال يستاهل وضحك."
+    },
+    {
+     "en": "She said serves you right and laughed.",
+     "ar": "قالت يستاهل وضحكت."
+    },
+    {
+     "en": "He said serves you right and left.",
+     "ar": "قال يستاهل ومشي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001070",
+   "sentences": [
+    {
+     "en": "He had it coming.",
+     "ar": "كان مستاهل اللي حصله."
+    },
+    {
+     "en": "She had it coming.",
+     "ar": "كانت مستاهلة اللي حصلها."
+    },
+    {
+     "en": "He said he had it coming.",
+     "ar": "قال إنه كان مستاهل."
+    },
+    {
+     "en": "She said she had it coming.",
+     "ar": "قالت إنها كانت مستاهلة."
+    },
+    {
+     "en": "He knew he had it coming.",
+     "ar": "عرف إنه كان مستاهل."
+    },
+    {
+     "en": "She knew she had it coming.",
+     "ar": "عرفت إنها كانت مستاهلة."
+    },
+    {
+     "en": "He admitted he had it coming.",
+     "ar": "اعترف إنه كان مستاهل."
+    },
+    {
+     "en": "She admitted she had it coming.",
+     "ar": "اعترفت إنها كانت مستاهلة."
+    },
+    {
+     "en": "He said he had it coming and laughed.",
+     "ar": "قال إنه كان مستاهل وضحك."
+    },
+    {
+     "en": "She said she had it coming and laughed.",
+     "ar": "قالت إنها كانت مستاهلة وضحكت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001071",
+   "sentences": [
+    {
+     "en": "You asked for it.",
+     "ar": "انت اللي جبتها لنفسك."
+    },
+    {
+     "en": "He said you asked for it.",
+     "ar": "قال انت اللي جبتها لنفسك."
+    },
+    {
+     "en": "She said you asked for it.",
+     "ar": "قالت انت اللي جبتها لنفسك."
+    },
+    {
+     "en": "He said you asked for it and laughed.",
+     "ar": "قال انت اللي جبتها لنفسك وضحك."
+    },
+    {
+     "en": "She said you asked for it and laughed.",
+     "ar": "قالت انت اللي جبتها لنفسك وضحكت."
+    },
+    {
+     "en": "He said you asked for it and left.",
+     "ar": "قال انت اللي جبتها لنفسك ومشي."
+    },
+    {
+     "en": "She said you asked for it and left.",
+     "ar": "قالت انت اللي جبتها لنفسك ومشت."
+    },
+    {
+     "en": "He thought you asked for it.",
+     "ar": "فكر إنك انت اللي جبتها لنفسك."
+    },
+    {
+     "en": "She thought you asked for it.",
+     "ar": "فكرت إنك انت اللي جبتها لنفسك."
+    },
+    {
+     "en": "He said you asked for it and shook his head.",
+     "ar": "قال انت اللي جبتها لنفسك وهز راسه."
+    }
+   ]
+  },
+  {
+   "id": "slg-001072",
+   "sentences": [
+    {
+     "en": "Tough luck.",
+     "ar": "حظ وحش."
+    },
+    {
+     "en": "He said tough luck.",
+     "ar": "قال حظ وحش."
+    },
+    {
+     "en": "She said tough luck.",
+     "ar": "قالت حظ وحش."
+    },
+    {
+     "en": "He said tough luck and left.",
+     "ar": "قال حظ وحش ومشي."
+    },
+    {
+     "en": "She said tough luck and left.",
+     "ar": "قالت حظ وحش ومشت."
+    },
+    {
+     "en": "He said tough luck and shrugged.",
+     "ar": "قال حظ وحش وهز كتفه."
+    },
+    {
+     "en": "She said tough luck and shrugged.",
+     "ar": "قالت حظ وحش وهزت كتفها."
+    },
+    {
+     "en": "He said tough luck and smiled.",
+     "ar": "قال حظ وحش وابتسم."
+    },
+    {
+     "en": "She said tough luck and smiled.",
+     "ar": "قالت حظ وحش وابتسمت."
+    },
+    {
+     "en": "He said tough luck and walked away.",
+     "ar": "قال حظ وحش ومشي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001073",
+   "sentences": [
+    {
+     "en": "Hard luck.",
+     "ar": "حظ وحش."
+    },
+    {
+     "en": "He said hard luck.",
+     "ar": "قال حظ وحش."
+    },
+    {
+     "en": "She said hard luck.",
+     "ar": "قالت حظ وحش."
+    },
+    {
+     "en": "He said hard luck and left.",
+     "ar": "قال حظ وحش ومشي."
+    },
+    {
+     "en": "She said hard luck and left.",
+     "ar": "قالت حظ وحش ومشت."
+    },
+    {
+     "en": "He said hard luck and shrugged.",
+     "ar": "قال حظ وحش وهز كتفه."
+    },
+    {
+     "en": "She said hard luck and shrugged.",
+     "ar": "قالت حظ وحش وهزت كتفها."
+    },
+    {
+     "en": "He said hard luck and smiled.",
+     "ar": "قال حظ وحش وابتسم."
+    },
+    {
+     "en": "She said hard luck and smiled.",
+     "ar": "قالت حظ وحش وابتسمت."
+    },
+    {
+     "en": "He said hard luck and walked away.",
+     "ar": "قال حظ وحش ومشي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001074",
+   "sentences": [
+    {
+     "en": "Tough break.",
+     "ar": "حظ وحش."
+    },
+    {
+     "en": "He said tough break.",
+     "ar": "قال حظ وحش."
+    },
+    {
+     "en": "She said tough break.",
+     "ar": "قالت حظ وحش."
+    },
+    {
+     "en": "He said tough break and left.",
+     "ar": "قال حظ وحش ومشي."
+    },
+    {
+     "en": "She said tough break and left.",
+     "ar": "قالت حظ وحش ومشت."
+    },
+    {
+     "en": "He said tough break and shrugged.",
+     "ar": "قال حظ وحش وهز كتفه."
+    },
+    {
+     "en": "She said tough break and shrugged.",
+     "ar": "قالت حظ وحش وهزت كتفها."
+    },
+    {
+     "en": "He said tough break and smiled.",
+     "ar": "قال حظ وحش وابتسم."
+    },
+    {
+     "en": "She said tough break and smiled.",
+     "ar": "قالت حظ وحش وابتسمت."
+    },
+    {
+     "en": "He said tough break and walked away.",
+     "ar": "قال حظ وحش ومشي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001075",
+   "sentences": [
+    {
+     "en": "Better luck next time.",
+     "ar": "حظ أوفر المرة الجاية."
+    },
+    {
+     "en": "He said better luck next time.",
+     "ar": "قال حظ أوفر المرة الجاية."
+    },
+    {
+     "en": "She said better luck next time.",
+     "ar": "قالت حظ أوفر المرة الجاية."
+    },
+    {
+     "en": "He said better luck next time and smiled.",
+     "ar": "قال حظ أوفر المرة الجاية وابتسم."
+    },
+    {
+     "en": "She said better luck next time and smiled.",
+     "ar": "قالت حظ أوفر المرة الجاية وابتسمت."
+    },
+    {
+     "en": "He said better luck next time and left.",
+     "ar": "قال حظ أوفر المرة الجاية ومشي."
+    },
+    {
+     "en": "She said better luck next time and left.",
+     "ar": "قالت حظ أوفر المرة الجاية ومشت."
+    },
+    {
+     "en": "He said better luck next time and hugged.",
+     "ar": "قال حظ أوفر المرة الجاية واتعانق."
+    },
+    {
+     "en": "She said better luck next time and hugged.",
+     "ar": "قالت حظ أوفر المرة الجاية واتعانقت."
+    },
+    {
+     "en": "He said better luck next time and encouraged.",
+     "ar": "قال حظ أوفر المرة الجاية وشجع."
+    }
+   ]
+  },
+  {
+   "id": "slg-001076",
+   "sentences": [
+    {
+     "en": "It was a close call.",
+     "ar": "كان موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "He had a close call.",
+     "ar": "كان عنده موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "She had a close call.",
+     "ar": "كان عندها موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "The accident was a close call.",
+     "ar": "الحادثة كانت موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "The near miss was a close call.",
+     "ar": "الخطر القريب كان موقف عدّى بشعرة."
+    },
+    {
+     "en": "The escape was a close call.",
+     "ar": "الهروب كان موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "The rescue was a close call.",
+     "ar": "الإنقاذ كان موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "The landing was a close call.",
+     "ar": "الهبوط كان موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "The surgery was a close call.",
+     "ar": "العملية كانت موقف خطر عدّى بشعرة."
+    },
+    {
+     "en": "The birth was a close call.",
+     "ar": "الولادة كانت موقف خطر عدّى بشعرة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001077",
+   "sentences": [
+    {
+     "en": "He just made it.",
+     "ar": "لحق بالعافية."
+    },
+    {
+     "en": "She just made it.",
+     "ar": "لحقت بالعافية."
+    },
+    {
+     "en": "He just made it to the train.",
+     "ar": "لحق القطر بالعافية."
+    },
+    {
+     "en": "She just made it to the bus.",
+     "ar": "لحقت الأوتوبيس بالعافية."
+    },
+    {
+     "en": "He just made it to the meeting.",
+     "ar": "لحق الاجتماع بالعافية."
+    },
+    {
+     "en": "She just made it to the class.",
+     "ar": "لحقت الحصة بالعافية."
+    },
+    {
+     "en": "He just made it to the airport.",
+     "ar": "لحق المطار بالعافية."
+    },
+    {
+     "en": "She just made it to the party.",
+     "ar": "لحقت الحفلة بالعافية."
+    },
+    {
+     "en": "He just made it to the deadline.",
+     "ar": "لحق الموعد النهائي بالعافية."
+    },
+    {
+     "en": "She just made it to the finish line.",
+     "ar": "لحقت خط النهاية بالعافية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001078",
+   "sentences": [
+    {
+     "en": "He cut it close.",
+     "ar": "لحق في آخر ثانية."
+    },
+    {
+     "en": "She cut it close.",
+     "ar": "لحقت في آخر ثانية."
+    },
+    {
+     "en": "He cut it close to the deadline.",
+     "ar": "لحق الموعد النهائي في آخر ثانية."
+    },
+    {
+     "en": "She cut it close to the train.",
+     "ar": "لحقت القطر في آخر ثانية."
+    },
+    {
+     "en": "He cut it close to the bus.",
+     "ar": "لحق الأوتوبيس في آخر ثانية."
+    },
+    {
+     "en": "She cut it close to the meeting.",
+     "ar": "لحقت الاجتماع في آخر ثانية."
+    },
+    {
+     "en": "He cut it close to the airport.",
+     "ar": "لحق المطار في آخر ثانية."
+    },
+    {
+     "en": "She cut it close to the party.",
+     "ar": "لحقت الحفلة في آخر ثانية."
+    },
+    {
+     "en": "He cut it close and made it.",
+     "ar": "لحق في آخر ثانية ونجح."
+    },
+    {
+     "en": "She cut it close and made it.",
+     "ar": "لحقت في آخر ثانية ونجحت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001079",
+   "sentences": [
+    {
+     "en": "He squeaked by.",
+     "ar": "نجح بفارق ضعيف جدًا."
+    },
+    {
+     "en": "She squeaked by.",
+     "ar": "نجحت بفارق ضعيف جدًا."
+    },
+    {
+     "en": "He squeaked by the test.",
+     "ar": "نجح في الامتحان بفارق ضعيف جدًا."
+    },
+    {
+     "en": "She squeaked by the exam.",
+     "ar": "نجحت في الامتحان بفارق ضعيف جدًا."
+    },
+    {
+     "en": "He squeaked by the interview.",
+     "ar": "نجح في المقابلة بفارق ضعيف جدًا."
+    },
+    {
+     "en": "She squeaked by the review.",
+     "ar": "نجحت في المراجعة بفارق ضعيف جدًا."
+    },
+    {
+     "en": "He squeaked by and was relieved.",
+     "ar": "نجح بفارق ضعيف جدًا وارتاح."
+    },
+    {
+     "en": "She squeaked by and was relieved.",
+     "ar": "نجحت بفارق ضعيف جدًا وارتاحت."
+    },
+    {
+     "en": "He squeaked by and celebrated.",
+     "ar": "نجح بفارق ضعيف جدًا واحتفل."
+    },
+    {
+     "en": "She squeaked by and celebrated.",
+     "ar": "نجحت بفارق ضعيف جدًا واحتفلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001080",
+   "sentences": [
+    {
+     "en": "He won by a whisker.",
+     "ar": "كسب بفرق ضئيل جدًا."
+    },
+    {
+     "en": "She won by a whisker.",
+     "ar": "كسبت بفرق ضئيل جدًا."
+    },
+    {
+     "en": "He lost by a whisker.",
+     "ar": "خسر بفرق ضئيل جدًا."
+    },
+    {
+     "en": "She lost by a whisker.",
+     "ar": "خسرت بفرق ضئيل جدًا."
+    },
+    {
+     "en": "He missed by a whisker.",
+     "ar": "فاته بفرق ضئيل جدًا."
+    },
+    {
+     "en": "She missed by a whisker.",
+     "ar": "فاتها بفرق ضئيل جدًا."
+    },
+    {
+     "en": "He passed by a whisker.",
+     "ar": "نجح بفرق ضئيل جدًا."
+    },
+    {
+     "en": "She passed by a whisker.",
+     "ar": "نجحت بفرق ضئيل جدًا."
+    },
+    {
+     "en": "He escaped by a whisker.",
+     "ar": "هرب بفرق ضئيل جدًا."
+    },
+    {
+     "en": "She escaped by a whisker.",
+     "ar": "هربت بفرق ضئيل جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001081",
+   "sentences": [
+    {
+     "en": "He sailed through the test.",
+     "ar": "نجح في الامتحان بسهولة جدًا."
+    },
+    {
+     "en": "She sailed through the exam.",
+     "ar": "نجحت في الامتحان بسهولة جدًا."
+    },
+    {
+     "en": "He sailed through the interview.",
+     "ar": "نجح في المقابلة بسهولة جدًا."
+    },
+    {
+     "en": "She sailed through the review.",
+     "ar": "نجحت في المراجعة بسهولة جدًا."
+    },
+    {
+     "en": "He sailed through the course.",
+     "ar": "نجح في الكورس بسهولة جدًا."
+    },
+    {
+     "en": "She sailed through the training.",
+     "ar": "نجحت في التدريب بسهولة جدًا."
+    },
+    {
+     "en": "He sailed through the project.",
+     "ar": "نجح في المشروع بسهولة جدًا."
+    },
+    {
+     "en": "She sailed through the presentation.",
+     "ar": "نجحت في العرض بسهولة جدًا."
+    },
+    {
+     "en": "He sailed through and smiled.",
+     "ar": "نجح بسهولة جدًا وابتسم."
+    },
+    {
+     "en": "She sailed through and celebrated.",
+     "ar": "نجحت بسهولة جدًا واحتفلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001082",
+   "sentences": [
+    {
+     "en": "He aced it.",
+     "ar": "جاب أعلى درجة."
+    },
+    {
+     "en": "She aced it.",
+     "ar": "جابت أعلى درجة."
+    },
+    {
+     "en": "He aced it on the test.",
+     "ar": "جاب أعلى درجة في الامتحان."
+    },
+    {
+     "en": "She aced it on the exam.",
+     "ar": "جابت أعلى درجة في الامتحان."
+    },
+    {
+     "en": "He aced it in the interview.",
+     "ar": "جاب أعلى درجة في المقابلة."
+    },
+    {
+     "en": "She aced it in the presentation.",
+     "ar": "جابت أعلى درجة في العرض."
+    },
+    {
+     "en": "He aced it in the course.",
+     "ar": "جاب أعلى درجة في الكورس."
+    },
+    {
+     "en": "She aced it in the training.",
+     "ar": "جابت أعلى درجة في التدريب."
+    },
+    {
+     "en": "He aced it and celebrated.",
+     "ar": "جاب أعلى درجة واحتفل."
+    },
+    {
+     "en": "She aced it and was proud.",
+     "ar": "جابت أعلى درجة وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001083",
+   "sentences": [
+    {
+     "en": "He crushed it.",
+     "ar": "أدى أداء خرافي."
+    },
+    {
+     "en": "She crushed it.",
+     "ar": "أدت أداء خرافي."
+    },
+    {
+     "en": "He crushed it in the presentation.",
+     "ar": "أدى العرض بشكل خرافي."
+    },
+    {
+     "en": "She crushed it in the interview.",
+     "ar": "أدت المقابلة بشكل خرافي."
+    },
+    {
+     "en": "He crushed it in the game.",
+     "ar": "أدى اللعبة بشكل خرافي."
+    },
+    {
+     "en": "She crushed it in the exam.",
+     "ar": "أدت الامتحان بشكل خرافي."
+    },
+    {
+     "en": "He crushed it in the project.",
+     "ar": "أدى المشروع بشكل خرافي."
+    },
+    {
+     "en": "She crushed it in the workout.",
+     "ar": "أدت التمرين بشكل خرافي."
+    },
+    {
+     "en": "He crushed it and celebrated.",
+     "ar": "أدى أداء خرافي واحتفل."
+    },
+    {
+     "en": "She crushed it and was proud.",
+     "ar": "أدت أداء خرافي وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001084",
+   "sentences": [
+    {
+     "en": "He killed it.",
+     "ar": "أدى أداء مبهر جدًا."
+    },
+    {
+     "en": "She killed it.",
+     "ar": "أدت أداء مبهر جدًا."
+    },
+    {
+     "en": "He killed it in the presentation.",
+     "ar": "أدى العرض بشكل مبهر."
+    },
+    {
+     "en": "She killed it in the interview.",
+     "ar": "أدت المقابلة بشكل مبهر."
+    },
+    {
+     "en": "He killed it in the game.",
+     "ar": "أدى اللعبة بشكل مبهر."
+    },
+    {
+     "en": "She killed it in the exam.",
+     "ar": "أدت الامتحان بشكل مبهر."
+    },
+    {
+     "en": "He killed it in the project.",
+     "ar": "أدى المشروع بشكل مبهر."
+    },
+    {
+     "en": "She killed it in the workout.",
+     "ar": "أدت التمرين بشكل مبهر."
+    },
+    {
+     "en": "He killed it and celebrated.",
+     "ar": "أدى أداء مبهر واحتفل."
+    },
+    {
+     "en": "She killed it and was proud.",
+     "ar": "أدت أداء مبهر وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001085",
+   "sentences": [
+    {
+     "en": "He smashed it.",
+     "ar": "أدى أداء خرافي."
+    },
+    {
+     "en": "She smashed it.",
+     "ar": "أدت أداء خرافي."
+    },
+    {
+     "en": "He smashed it in the presentation.",
+     "ar": "أدى العرض بشكل خرافي."
+    },
+    {
+     "en": "She smashed it in the interview.",
+     "ar": "أدت المقابلة بشكل خرافي."
+    },
+    {
+     "en": "He smashed it in the game.",
+     "ar": "أدى اللعبة بشكل خرافي."
+    },
+    {
+     "en": "She smashed it in the exam.",
+     "ar": "أدت الامتحان بشكل خرافي."
+    },
+    {
+     "en": "He smashed it in the project.",
+     "ar": "أدى المشروع بشكل خرافي."
+    },
+    {
+     "en": "She smashed it in the workout.",
+     "ar": "أدت التمرين بشكل خرافي."
+    },
+    {
+     "en": "He smashed it and celebrated.",
+     "ar": "أدى أداء خرافي واحتفل."
+    },
+    {
+     "en": "She smashed it and was proud.",
+     "ar": "أدت أداء خرافي وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001086",
+   "sentences": [
+    {
+     "en": "He bossed it.",
+     "ar": "سيطر وأدى أداء ممتاز."
+    },
+    {
+     "en": "She bossed it.",
+     "ar": "سيطرت وأدت أداء ممتاز."
+    },
+    {
+     "en": "He bossed it in the game.",
+     "ar": "سيطر على اللعبة."
+    },
+    {
+     "en": "She bossed it in the match.",
+     "ar": "سيطرت على الماتش."
+    },
+    {
+     "en": "He bossed it in the meeting.",
+     "ar": "سيطر على الاجتماع."
+    },
+    {
+     "en": "She bossed it in the presentation.",
+     "ar": "سيطرت على العرض."
+    },
+    {
+     "en": "He bossed it in the project.",
+     "ar": "سيطر على المشروع."
+    },
+    {
+     "en": "She bossed it with the team.",
+     "ar": "سيطرت مع الفريق."
+    },
+    {
+     "en": "He bossed it and celebrated.",
+     "ar": "سيطر واحتفل."
+    },
+    {
+     "en": "She bossed it and was proud.",
+     "ar": "سيطرت وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001087",
+   "sentences": [
+    {
+     "en": "He came through.",
+     "ar": "وفّى بوعده."
+    },
+    {
+     "en": "She came through.",
+     "ar": "وفّت بوعدها."
+    },
+    {
+     "en": "He came through for the team.",
+     "ar": "وفّى بوعده للفريق."
+    },
+    {
+     "en": "She came through for the family.",
+     "ar": "وفّت بوعدها للعيلة."
+    },
+    {
+     "en": "He came through in the end.",
+     "ar": "وفّى بوعده في الآخر."
+    },
+    {
+     "en": "She came through in the end.",
+     "ar": "وفّت بوعدها في الآخر."
+    },
+    {
+     "en": "He came through and delivered.",
+     "ar": "وفّى بوعده وسلّم."
+    },
+    {
+     "en": "She came through and delivered.",
+     "ar": "وفّت بوعدها وسلّمت."
+    },
+    {
+     "en": "He came through and saved the day.",
+     "ar": "وفّى بوعده ونقذ الموقف."
+    },
+    {
+     "en": "She came through and saved the day.",
+     "ar": "وفّت بوعدها ونقذت الموقف."
+    }
+   ]
+  },
+  {
+   "id": "slg-001088",
+   "sentences": [
+    {
+     "en": "He delivered.",
+     "ar": "وفّى بالوعد."
+    },
+    {
+     "en": "She delivered.",
+     "ar": "وفّت بالوعد."
+    },
+    {
+     "en": "He delivered the goods.",
+     "ar": "سلّم المطلوب."
+    },
+    {
+     "en": "She delivered the goods.",
+     "ar": "سلّمت المطلوب."
+    },
+    {
+     "en": "He delivered on time.",
+     "ar": "سلّم في المعاد."
+    },
+    {
+     "en": "She delivered on time.",
+     "ar": "سلّمت في المعاد."
+    },
+    {
+     "en": "He delivered and impressed.",
+     "ar": "سلّم وأبهر."
+    },
+    {
+     "en": "She delivered and impressed.",
+     "ar": "سلّمت وأبهرت."
+    },
+    {
+     "en": "He delivered and was proud.",
+     "ar": "سلّم وكان فخور."
+    },
+    {
+     "en": "She delivered and was proud.",
+     "ar": "سلّمت وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001089",
+   "sentences": [
+    {
+     "en": "He pulled it off.",
+     "ar": "نجح في حاجة صعبة."
+    },
+    {
+     "en": "She pulled it off.",
+     "ar": "نجحت في حاجة صعبة."
+    },
+    {
+     "en": "He pulled it off with the win.",
+     "ar": "نجح في الفوز الصعب."
+    },
+    {
+     "en": "She pulled it off with the victory.",
+     "ar": "نجحت في الفوز الصعب."
+    },
+    {
+     "en": "He pulled it off with the trick.",
+     "ar": "نجح في الخدعة الصعبة."
+    },
+    {
+     "en": "She pulled it off with the escape.",
+     "ar": "نجحت في الهروب الصعب."
+    },
+    {
+     "en": "He pulled it off with the surprise.",
+     "ar": "نجح في المفاجأة الصعبة."
+    },
+    {
+     "en": "She pulled it off with the big surprise.",
+     "ar": "نجحت في المفاجأة الكبيرة."
+    },
+    {
+     "en": "He pulled it off and celebrated.",
+     "ar": "نجح في حاجة صعبة واحتفل."
+    },
+    {
+     "en": "She pulled it off and celebrated.",
+     "ar": "نجحت في حاجة صعبة واحتفلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001090",
+   "sentences": [
+    {
+     "en": "It did the trick.",
+     "ar": "الحل اشتغل."
+    },
+    {
+     "en": "The medicine did the trick.",
+     "ar": "الدوا اشتغل."
+    },
+    {
+     "en": "The fix did the trick.",
+     "ar": "التصليح اشتغل."
+    },
+    {
+     "en": "The restart did the trick.",
+     "ar": "إعادة التشغيل اشتغلت."
+    },
+    {
+     "en": "The advice did the trick.",
+     "ar": "النصيحة اشتغلت."
+    },
+    {
+     "en": "The nap did the trick.",
+     "ar": "القيلولة اشتغلت."
+    },
+    {
+     "en": "The coffee did the trick.",
+     "ar": "القهوة اشتغلت."
+    },
+    {
+     "en": "The exercise did the trick.",
+     "ar": "الرياضة اشتغلت."
+    },
+    {
+     "en": "The change did the trick.",
+     "ar": "التغيير اشتغل."
+    },
+    {
+     "en": "The call did the trick.",
+     "ar": "المكالمة اشتغلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001091",
+   "sentences": [
+    {
+     "en": "He got the job done.",
+     "ar": "خلص الشغل المطلوب."
+    },
+    {
+     "en": "She got the job done.",
+     "ar": "خلصت الشغل المطلوب."
+    },
+    {
+     "en": "He got the job done on time.",
+     "ar": "خلص الشغل في المعاد."
+    },
+    {
+     "en": "She got the job done on time.",
+     "ar": "خلصت الشغل في المعاد."
+    },
+    {
+     "en": "He got the job done and left.",
+     "ar": "خلص الشغل ومشي."
+    },
+    {
+     "en": "She got the job done and left.",
+     "ar": "خلصت الشغل ومشت."
+    },
+    {
+     "en": "He got the job done and was proud.",
+     "ar": "خلص الشغل وكان فخور."
+    },
+    {
+     "en": "She got the job done and was proud.",
+     "ar": "خلصت الشغل وكانت فخورة."
+    },
+    {
+     "en": "He got the job done and relaxed.",
+     "ar": "خلص الشغل وارتاح."
+    },
+    {
+     "en": "She got the job done and relaxed.",
+     "ar": "خلصت الشغل وارتاحت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001092",
+   "sentences": [
+    {
+     "en": "He botched it.",
+     "ar": "بوّظ الحاجة."
+    },
+    {
+     "en": "She botched it.",
+     "ar": "بوّظت الحاجة."
+    },
+    {
+     "en": "He botched it on the job.",
+     "ar": "بوّظ الشغل."
+    },
+    {
+     "en": "She botched it on the project.",
+     "ar": "بوّظت المشروع."
+    },
+    {
+     "en": "He botched it on the repair.",
+     "ar": "بوّظ التصليح."
+    },
+    {
+     "en": "She botched it on the presentation.",
+     "ar": "بوّظت العرض."
+    },
+    {
+     "en": "He botched it in the interview.",
+     "ar": "بوّظ المقابلة."
+    },
+    {
+     "en": "She botched it on the exam.",
+     "ar": "بوّظت الامتحان."
+    },
+    {
+     "en": "He botched it and apologized.",
+     "ar": "بوّظ الحاجة واعتذر."
+    },
+    {
+     "en": "She botched it and apologized.",
+     "ar": "بوّظت الحاجة واعتذرت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001093",
+   "sentences": [
+    {
+     "en": "He blew it.",
+     "ar": "ضيّع الفرصة."
+    },
+    {
+     "en": "She blew it.",
+     "ar": "ضيّعت الفرصة."
+    },
+    {
+     "en": "He blew it on the big chance.",
+     "ar": "ضيّع الفرصة الكبيرة."
+    },
+    {
+     "en": "She blew it on her big chance.",
+     "ar": "ضيّعت فرصتها الكبيرة."
+    },
+    {
+     "en": "He blew it in the interview.",
+     "ar": "بوّظ المقابلة."
+    },
+    {
+     "en": "She blew it in the interview too.",
+     "ar": "بوّظت المقابلة هي كمان."
+    },
+    {
+     "en": "He blew it in the game.",
+     "ar": "ضيّع اللعبة."
+    },
+    {
+     "en": "She blew it in the game too.",
+     "ar": "ضيّعت اللعبة هي كمان."
+    },
+    {
+     "en": "He blew it and regretted.",
+     "ar": "ضيّع الفرصة وندم."
+    },
+    {
+     "en": "She blew it and regretted.",
+     "ar": "ضيّعت الفرصة وندمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001094",
+   "sentences": [
+    {
+     "en": "The movie flopped.",
+     "ar": "الفيلم فشل فشل ذريع."
+    },
+    {
+     "en": "The show flopped.",
+     "ar": "العرض فشل فشل ذريع."
+    },
+    {
+     "en": "The product flopped.",
+     "ar": "المنتج فشل فشل ذريع."
+    },
+    {
+     "en": "The launch flopped.",
+     "ar": "الإطلاق فشل فشل ذريع."
+    },
+    {
+     "en": "The party flopped.",
+     "ar": "الحفلة فشلت فشل ذريع."
+    },
+    {
+     "en": "The plan flopped.",
+     "ar": "الخطة فشلت فشل ذريع."
+    },
+    {
+     "en": "The idea flopped.",
+     "ar": "الفكرة فشلت فشل ذريع."
+    },
+    {
+     "en": "The business flopped.",
+     "ar": "البيزنس فشل فشل ذريع."
+    },
+    {
+     "en": "The album flopped.",
+     "ar": "الألبوم فشل فشل ذريع."
+    },
+    {
+     "en": "The game flopped.",
+     "ar": "اللعبة فشلت فشل ذريع."
+    }
+   ]
+  },
+  {
+   "id": "slg-001095",
+   "sentences": [
+    {
+     "en": "He bombed the test.",
+     "ar": "فشل في الامتحان بشكل مذل."
+    },
+    {
+     "en": "She bombed the exam.",
+     "ar": "فشلت في الامتحان بشكل مذل."
+    },
+    {
+     "en": "He bombed the interview.",
+     "ar": "فشل في المقابلة بشكل مذل."
+    },
+    {
+     "en": "She bombed the presentation.",
+     "ar": "فشلت في العرض بشكل مذل."
+    },
+    {
+     "en": "He bombed the performance.",
+     "ar": "فشل في الأداء بشكل مذل."
+    },
+    {
+     "en": "She bombed the audition.",
+     "ar": "فشلت في التجربة بشكل مذل."
+    },
+    {
+     "en": "He bombed and was embarrassed.",
+     "ar": "فشل بشكل مذل وكان محرج."
+    },
+    {
+     "en": "She bombed and was embarrassed.",
+     "ar": "فشلت بشكل مذل وكانت محرجة."
+    },
+    {
+     "en": "He bombed and left.",
+     "ar": "فشل بشكل مذل ومشي."
+    },
+    {
+     "en": "She bombed and left.",
+     "ar": "فشلت بشكل مذل ومشت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001096",
+   "sentences": [
+    {
+     "en": "The stock tanked.",
+     "ar": "السهم وقع بشكل كبير."
+    },
+    {
+     "en": "The company tanked.",
+     "ar": "الشركة فشلت بشكل كبير."
+    },
+    {
+     "en": "The movie tanked.",
+     "ar": "الفيلم فشل بشكل كبير."
+    },
+    {
+     "en": "The product tanked.",
+     "ar": "المنتج فشل بشكل كبير."
+    },
+    {
+     "en": "The sales tanked.",
+     "ar": "المبيعات وقعت بشكل كبير."
+    },
+    {
+     "en": "The economy tanked.",
+     "ar": "الاقتصاد وقع بشكل كبير."
+    },
+    {
+     "en": "The team tanked.",
+     "ar": "الفريق فشل بشكل كبير."
+    },
+    {
+     "en": "The plan tanked.",
+     "ar": "الخطة فشلت بشكل كبير."
+    },
+    {
+     "en": "The launch tanked.",
+     "ar": "الإطلاق فشل بشكل كبير."
+    },
+    {
+     "en": "The project tanked.",
+     "ar": "المشروع فشل بشكل كبير."
+    }
+   ]
+  },
+  {
+   "id": "slg-001097",
+   "sentences": [
+    {
+     "en": "The joke fell flat.",
+     "ar": "النكتة ما نجحتش."
+    },
+    {
+     "en": "The plan fell flat.",
+     "ar": "الخطة ما نجحتش."
+    },
+    {
+     "en": "The idea fell flat.",
+     "ar": "الفكرة ما نجحتش."
+    },
+    {
+     "en": "The performance fell flat.",
+     "ar": "الأداء ما نجحش."
+    },
+    {
+     "en": "The presentation fell flat.",
+     "ar": "العرض ما نجحش."
+    },
+    {
+     "en": "The speech fell flat.",
+     "ar": "الخطاب ما نجحش."
+    },
+    {
+     "en": "The surprise fell flat.",
+     "ar": "المفاجأة ما نجحتش."
+    },
+    {
+     "en": "The party fell flat.",
+     "ar": "الحفلة ما نجحتش."
+    },
+    {
+     "en": "The event fell flat.",
+     "ar": "المناسبة ما نجحتش."
+    },
+    {
+     "en": "The launch fell flat.",
+     "ar": "الإطلاق ما نجحش."
+    }
+   ]
+  },
+  {
+   "id": "slg-001098",
+   "sentences": [
+    {
+     "en": "The plan backfired.",
+     "ar": "الخطة رجعت عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The trick backfired.",
+     "ar": "الخدعة رجعت عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The prank backfired.",
+     "ar": "المقلب رجع عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The lie backfired.",
+     "ar": "الكدبة رجعت عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The scheme backfired.",
+     "ar": "المخطط رجع عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The strategy backfired.",
+     "ar": "الاستراتيجية رجعت عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The joke backfired.",
+     "ar": "النكتة رجعت عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The move backfired.",
+     "ar": "الحركة رجعت عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The decision backfired.",
+     "ar": "القرار رجع عليه بنتيجة عكسية."
+    },
+    {
+     "en": "The plan backfired and he regretted it.",
+     "ar": "الخطة رجعت عليه وندم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001099",
+   "sentences": [
+    {
+     "en": "The plan went south.",
+     "ar": "الخطة باظت."
+    },
+    {
+     "en": "The trip went south.",
+     "ar": "السفر باظ."
+    },
+    {
+     "en": "The deal went south.",
+     "ar": "الصفقة باظت."
+    },
+    {
+     "en": "The day went south.",
+     "ar": "اليوم باظ."
+    },
+    {
+     "en": "The project went south.",
+     "ar": "المشروع باظ."
+    },
+    {
+     "en": "The relationship went south.",
+     "ar": "العلاقة باظت."
+    },
+    {
+     "en": "The business went south.",
+     "ar": "البيزنس باظ."
+    },
+    {
+     "en": "The situation went south.",
+     "ar": "الموقف باظ."
+    },
+    {
+     "en": "The meeting went south.",
+     "ar": "الاجتماع باظ."
+    },
+    {
+     "en": "The conversation went south.",
+     "ar": "الكلام باظ."
+    }
+   ]
+  },
+  {
+   "id": "slg-001100",
+   "sentences": [
+    {
+     "en": "The plan went sideways.",
+     "ar": "الخطة ماشيت غلط."
+    },
+    {
+     "en": "The trip went sideways.",
+     "ar": "السفر ماشي غلط."
+    },
+    {
+     "en": "The deal went sideways.",
+     "ar": "الصفقة ماشيت غلط."
+    },
+    {
+     "en": "The day went sideways.",
+     "ar": "اليوم ماشي غلط."
+    },
+    {
+     "en": "The project went sideways.",
+     "ar": "المشروع ماشي غلط."
+    },
+    {
+     "en": "The relationship went sideways.",
+     "ar": "العلاقة ماشيت غلط."
+    },
+    {
+     "en": "The business went sideways.",
+     "ar": "البيزنس ماشي غلط."
+    },
+    {
+     "en": "The situation went sideways.",
+     "ar": "الموقف ماشي غلط."
+    },
+    {
+     "en": "The meeting went sideways.",
+     "ar": "الاجتماع ماشي غلط."
+    },
+    {
+     "en": "The conversation went sideways.",
+     "ar": "الكلام ماشي غلط."
+    }
+   ]
+  }
+ ]
+}
