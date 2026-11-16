@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   Bookmark,
   BookmarkCheck,
@@ -39,6 +40,7 @@ export const WordCard: React.FC<WordCardProps> = ({
   onSavedChange,
   viewMode = 'grid',
 }) => {
+  const { t, dir } = useLanguage();
   const [saved, setSaved] = useState(() => isWordSaved(entry.headword));
   const txMap = useContentMap('vocab');
   const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
@@ -71,7 +73,7 @@ export const WordCard: React.FC<WordCardProps> = ({
           <button
             onClick={handleToggleSave}
             className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-white/70 hover:text-white transition-all shrink-0 cursor-pointer"
-            title={saved ? 'إزالة من المحفوظات' : 'حفظ الكلمة'}
+            title={saved ? t('wc.remove') : t('wc.save')}
           >
             {saved ? (
               <BookmarkCheck className="w-4 h-4 text-[#c4ff55]" />
@@ -116,7 +118,7 @@ export const WordCard: React.FC<WordCardProps> = ({
             audioUrl={entry.audioUkUrl}
             size="sm"
           />
-          <ChevronLeft className="w-4 h-4 text-white/40 group-hover:text-white transition-transform group-hover:-translate-x-1" />
+          <ChevronLeft className={`w-4 h-4 text-white/40 group-hover:text-white ${dir === 'ltr' ? 'rotate-180' : ''}`} />
         </div>
       </div>
     );
@@ -133,7 +135,7 @@ export const WordCard: React.FC<WordCardProps> = ({
         <button
           onClick={handleToggleSave}
           className="p-1.5 rounded-xl bg-white/5 hover:bg-white/15 text-white/70 hover:text-white transition-all cursor-pointer"
-          title={saved ? 'إزالة من المحفوظات' : 'حفظ الكلمة'}
+          title={saved ? t('wc.remove') : t('wc.save')}
         >
           {saved ? (
             <BookmarkCheck className="w-4 h-4 text-[#c4ff55]" />
@@ -209,8 +211,8 @@ export const WordCard: React.FC<WordCardProps> = ({
           <span className="text-[10px] font-mono uppercase">{entry.frequencyTier}</span>
         </div>
         <div className="flex items-center gap-1 text-[#41e7ff]">
-          <span>التفاصيل الكاملة</span>
-          <ChevronLeft className="w-3.5 h-3.5 group-hover:-translate-x-1 transition-transform" />
+          <span>{t('wc.details')}</span>
+          <ChevronLeft className={`w-3.5 h-3.5 ${dir === 'ltr' ? 'rotate-180' : ''}`} />
         </div>
       </div>
     </div>
