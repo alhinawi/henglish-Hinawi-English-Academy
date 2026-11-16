@@ -19,6 +19,7 @@ const checks = [
   'check-generated-quiz.cjs',
   'check-saved-review-queue.cjs',
   'check-pronunciation-guess.cjs',
+  'check-speaking-recorder-cleanup.cjs',
   'check-pronunciation-playback-races.cjs',
   'check-voice-engine-races.cjs',
   'check-audio-queue-lifecycle.cjs',
