@@ -5,6 +5,7 @@
 // ==============================================================================
 
 import { CEFRLevel } from '../types';
+import { applyMovieTranscriptCorrections } from './movieTranscriptCorrections';
 
 export interface SubtitleWord {
   word: string;
@@ -66,13 +67,14 @@ export interface MovieSceneItem {
   verificationStatus?: 'verified_playable' | 'embed_disabled' | 'unavailable' | 'private_or_deleted' | 'needs_review' | 'video_only';
   lastVerifiedAt?: string;
   isEmbeddable?: boolean;
+  transcriptTimingStatus?: 'reviewed-excerpts' | 'unverified';
   subtitles: TimedSubtitle[];
   vocabulary: SceneVocabulary[];
   quizzes: SceneQuiz[];
   speakingLines: { en: string; arEg: string; targetSpeed?: number }[];
 }
 
-export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
+const ORIGINAL_MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
   {
     id: 'scene-godfather-offer',
     movieTitle: 'The Godfather',
@@ -798,3 +800,5 @@ export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = [
     ],
   },
 ];
+
+export const MOVIE_SCENES_CATALOG: MovieSceneItem[] = ORIGINAL_MOVIE_SCENES_CATALOG.map(applyMovieTranscriptCorrections);
