@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { speakEnglishVoice, stopSpeech, subscribeSpeechState } from '../utils/audio';
 
@@ -10,6 +11,7 @@ import { speakEnglishVoice, stopSpeech, subscribeSpeechState } from '../utils/au
  * Rendered as a span with button semantics so it can live inside card buttons.
  */
 const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text, className = '' }) => {
+  const { t } = useLanguage();
   const [playing, setPlaying] = useState(false);
 
   useEffect(
@@ -34,8 +36,8 @@ const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text,
     <span
       role="button"
       tabIndex={0}
-      aria-label="تشغيل النطق"
-      title="تشغيل النطق"
+      aria-label={t(playing ? 'pr.stop' : 'pr.play')}
+      title={t(playing ? 'pr.stop' : 'pr.play')}
       onClick={handle}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') handle(e);

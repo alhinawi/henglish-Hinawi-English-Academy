@@ -2703,5 +2703,11 @@
   "arc.correct": "Correct answer:",
   "arc.check": "Check",
   "arc.spellPlaceholder": "Spell it in English...",
-  "arc.spellLabel": "Spell the English word"
+  "arc.spellLabel": "Spell the English word",
+  "pr.play": "Play pronunciation",
+  "pr.stop": "Stop pronunciation",
+  "pr.us": "Listen to American pronunciation (US)",
+  "pr.uk": "Listen to British pronunciation (UK)",
+  "lc.wrong": "Incorrect",
+  "lc.correct": "Correct"
 }

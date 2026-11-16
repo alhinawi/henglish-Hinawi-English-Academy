@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useEffect, useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { Volume2, Loader2, Sparkles } from 'lucide-react';
 import { audioPlayback, PlaybackState, PronunciationAccent } from '../../services/audioPlaybackManager';
 
@@ -26,6 +27,7 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
   size = 'md',
   showIpa = true,
 }) => {
+  const { t } = useLanguage();
   const [playbackState, setPlaybackState] = useState<PlaybackState>(() => audioPlayback.getState());
 
   useEffect(() => {
@@ -73,7 +75,8 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
     <button
       type="button"
       onClick={handleClick}
-      title={`استمع للنطق ${isUS ? 'الأمريكي (American US)' : 'البريطاني (British UK)'}`}
+      title={t(isUS ? 'pr.us' : 'pr.uk')}
+      aria-label={t(isUS ? 'pr.us' : 'pr.uk')}
       className={`inline-flex items-center gap-1.5 rounded-xl border transition-all cursor-pointer font-sans select-none ${
         size === 'sm'
           ? 'px-2 py-1 text-[11px]'
