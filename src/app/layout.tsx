@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     title: 'Henglish Academy | منصة شاملة لتعلم الإنجليزية',
     description:
       'هناوي إنجلش منصة شاملة لتعلم الإنجليزية: كلمات وقواعد، استماع ومحادثة، قراءة وكتابة ونطق، أفلام وألعاب ومواقف وعالم ثلاثي الأبعاد واختبارات.',
-    images: ['/hinawi-logo-clean.png'],
+    images: ['/logo-clean.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Henglish Academy | منصة شاملة لتعلم الإنجليزية',
     description:
       'المنصة الأكاديمية التفاعلية لتعلم الإنجليزية بذكاء وعمق وفق الإطار الأوروبي CEFR.',
-    images: ['/hinawi-logo-clean.png'],
+    images: ['/logo-clean.png'],
   },
 };
 

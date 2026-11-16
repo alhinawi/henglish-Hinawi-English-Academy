@@ -32,7 +32,6 @@ import {
   ChevronLeft,
   Mail,
   KeyRound,
-  MoreHorizontal
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -87,7 +86,6 @@ export const Header: React.FC<HeaderProps> = ({
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
-  const [mobileMoreOpen, setMobileMoreOpen] = useState(false);
   const { t } = useLanguage();
 
   const grammarRef = useRef<HTMLDivElement>(null);
@@ -95,7 +93,6 @@ export const Header: React.FC<HeaderProps> = ({
   const moreRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
-  const mobileMoreRef = useRef<HTMLDivElement>(null);
 
   // Close all dropdowns on outside click or ESC key
   useEffect(() => {
@@ -116,9 +113,6 @@ export const Header: React.FC<HeaderProps> = ({
       if (profileRef.current && !profileRef.current.contains(target)) {
         setProfileOpen(false);
       }
-      if (mobileMoreRef.current && !mobileMoreRef.current.contains(target)) {
-        setMobileMoreOpen(false);
-      }
     };
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -131,7 +125,6 @@ export const Header: React.FC<HeaderProps> = ({
         setMoreMenuOpen(false);
         setNotifOpen(false);
         setProfileOpen(false);
-        setMobileMoreOpen(false);
       }
     };
 
@@ -153,7 +146,6 @@ export const Header: React.FC<HeaderProps> = ({
     setMoreMenuOpen(false);
     setNotifOpen(false);
     setProfileOpen(false);
-    setMobileMoreOpen(false);
     onNavigate(route, lessonId);
   };
 
@@ -197,11 +189,8 @@ export const Header: React.FC<HeaderProps> = ({
             alt="Henglish Academy"
             width={32}
             height={32}
-            className="w-8 h-8 object-contain filter drop-shadow-[0_0_10px_rgba(255,209,102,0.4)]"
+            className="w-9 h-9 object-contain filter drop-shadow-[0_0_10px_rgba(255,209,102,0.4)]"
           />
-          <span className="font-black font-['Plus_Jakarta_Sans',sans-serif] tracking-wider text-[#ffd166] uppercase text-xs whitespace-nowrap">
-            Henglish Academy
-          </span>
         </button>
 
         {/* Desktop Primary Navigation with Non-Clipped Dropdowns */}
@@ -457,84 +446,6 @@ export const Header: React.FC<HeaderProps> = ({
 
       {/* RIGHT: Search, Voice Settings, Streak, Notifications, Account */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-        
-        {/* Mobile overflow: search, notifications, voice and settings in one menu */}
-        <div className="relative md:hidden" ref={mobileMoreRef}>
-          <button
-            onClick={() => {
-              playSound('click');
-              setMobileMoreOpen(prev => !prev);
-              setNotifOpen(false);
-              setProfileOpen(false);
-            }}
-            className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
-            aria-label={t('header.moreTools')}
-            aria-expanded={mobileMoreOpen}
-          >
-            <MoreHorizontal className="w-4 h-4" />
-            {unreadCount > 0 && (
-              <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#ff4f9a] text-[10px] font-black text-white flex items-center justify-center">
-                {unreadCount}
-              </span>
-            )}
-          </button>
-
-          {mobileMoreOpen && (
-            <div className="absolute left-0 mt-3 w-64 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-3 z-50 text-right space-y-1">
-              <button
-                onClick={() => {
-                  playSound('click');
-                  setMobileMoreOpen(false);
-                  onOpenSearch();
-                }}
-                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
-              >
-                <Search className="w-4 h-4 text-[#41e7ff]" />
-                {t('header.search')}
-              </button>
-              <button
-                onClick={() => {
-                  playSound('click');
-                  setMobileMoreOpen(false);
-                  setNotifOpen(true);
-                }}
-                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
-              >
-                <span className="relative">
-                  <Bell className="w-4 h-4 text-[#ffd166]" />
-                  {unreadCount > 0 && (
-                    <span className="absolute -top-1.5 -right-1.5 w-3.5 h-3.5 rounded-full bg-[#ff4f9a] text-[9px] font-black text-white flex items-center justify-center">
-                      {unreadCount}
-                    </span>
-                  )}
-                </span>
-                {t('header.notifications')}
-              </button>
-              <button
-                onClick={() => {
-                  playSound('click');
-                  setMobileMoreOpen(false);
-                  onOpenVoiceSettings();
-                }}
-                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
-              >
-                <Volume2 className="w-4 h-4 text-[#c4ff55]" />
-                {t('header.voice')}
-              </button>
-              <button
-                onClick={() => {
-                  playSound('click');
-                  setMobileMoreOpen(false);
-                  onOpenSettings();
-                }}
-                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
-              >
-                <Settings className="w-4 h-4 text-[#41e7ff]" />
-                {t('header.settings')} (المظهر واللغة)
-              </button>
-            </div>
-          )}
-        </div>
 
         {/* Search Trigger */}
         <button
@@ -577,7 +488,7 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Notifications Popover (on mobile it opens from the overflow menu) */}
-        <div className={`relative md:block ${notifOpen ? 'block' : 'hidden'}`} ref={notifRef}>
+        <div className="relative" ref={notifRef}>
           <button
             onClick={() => {
               playSound('click');
@@ -586,7 +497,7 @@ export const Header: React.FC<HeaderProps> = ({
               setGrammarMenuOpen(false);
               setSkillsMenuOpen(false);
             }}
-            className="hidden md:block p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
+            className="p-2 sm:p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
             aria-label="الإشعارات"
             title="الإشعارات والتحديثات"
           >
@@ -683,7 +594,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {profileOpen && (
-            <div className="absolute left-0 mt-3 w-72 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
+            <div className="absolute end-0 mt-3 w-72 max-w-[calc(100vw-1rem)] rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
               {/* Profile Card Summary */}
               {authSessionType === 'guest' ? (
                 <div className="pb-3 border-b border-white/10 space-y-3">
@@ -737,6 +648,43 @@ export const Header: React.FC<HeaderProps> = ({
                   </div>
                 </div>
               )}
+
+              {/* Mobile tools: search, notifications, voice, settings */}
+              <div className="md:hidden pb-3 border-b border-white/10 space-y-1">
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setProfileOpen(false);
+                    onOpenSearch();
+                  }}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+                >
+                  <Search className="w-4 h-4 text-[#41e7ff]" />
+                  {t('header.search')}
+                </button>
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setProfileOpen(false);
+                    onOpenVoiceSettings();
+                  }}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+                >
+                  <Volume2 className="w-4 h-4 text-[#c4ff55]" />
+                  {t('header.voice')}
+                </button>
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setProfileOpen(false);
+                    onOpenSettings();
+                  }}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+                >
+                  <Settings className="w-4 h-4 text-[#b9b6d5]" />
+                  {t('header.settings')}
+                </button>
+              </div>
 
               {/* Action Buttons */}
               <div className="space-y-1.5 text-xs">
