@@ -7,6 +7,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { RealAudioRecorder, RecordingState, RecordedAudioData } from '../utils/audioRecorder';
 import { WordAssessment, PronunciationAssessmentResult } from '../../api/speaking/assess';
 import { speakEnglish, playSound, fireCelebration } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import {
   Mic,
   Square,
@@ -35,6 +36,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
   targetSentenceAr,
   onAssessmentComplete,
 }) => {
+  const { t } = useLanguage();
   const [recorder] = useState(() => new RealAudioRecorder());
   const [recordingState, setRecordingState] = useState<RecordingState>('IDLE');
   const [duration, setDuration] = useState(0);
@@ -145,7 +147,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
       try {
         const historyItem = {
           id: `eval-${Date.now()}`,
-          studentName: 'الطالب الحالي (Current Learner)',
+          studentName: t('pv.studentFallback'),
           timestamp: new Date().toISOString(),
           targetSentence,
           overallScore: result.overallScore,
@@ -157,7 +159,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
           },
           mispronouncedCount: result.problematicSounds?.length || 0,
           wpm: result.wordsPerMinute,
-          phoneticTipAr: result.recommendationsAr?.[0] || 'استمر في التكرار والمحاكاة لضبط مخارج الحروف.',
+          phoneticTipAr: result.recommendationsAr?.[0] || t('pv.tipFallback'),
         };
         const existing = JSON.parse(localStorage.getItem('henglish_speaking_evaluations_v2') || '[]');
         localStorage.setItem('henglish_speaking_evaluations_v2', JSON.stringify([historyItem, ...existing.slice(0, 49)]));
@@ -221,21 +223,21 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
         <div className="flex items-center justify-between">
           <span className="text-xs font-bold text-[#ffd166] flex items-center gap-1.5">
             <Sparkles className="w-4 h-4" />
-            الجملة المستهدفة للتدريب والنطق:
+            {t('pv.targetLabel')}
           </span>
           <div className="flex items-center gap-2">
             <button
               onClick={() => handlePlayNativeAudio(false)}
               className="px-3 py-1 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-bold flex items-center gap-1.5 cursor-pointer transition-colors"
-              title="استمع لصوت المعلم الأصلي"
+              title={t('pv.listenNativeTitle')}
             >
               <Volume2 className="w-3.5 h-3.5 text-[#41e7ff]" />
-              <span>استمع للأصل</span>
+              <span>{t('pv.listenNative')}</span>
             </button>
             <button
               onClick={() => handlePlayNativeAudio(true)}
               className="px-2.5 py-1 rounded-xl bg-white/5 hover:bg-white/10 text-[#dedbf4] text-xs font-bold cursor-pointer transition-colors"
-              title="استمع ببطء 0.75x"
+              title={t('pv.listenSlowTitle')}
             >
               <span>0.75x</span>
             </button>
@@ -248,7 +250,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
 
         {targetSentenceAr && (
           <p className="text-xs sm:text-sm text-[#b9b6d5] leading-relaxed">
-           المعنى: {targetSentenceAr}
+           {t('pv.meaning')} {targetSentenceAr}
           </p>
         )}
       </div>
@@ -264,13 +266,13 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
             <div className="text-xs font-bold text-[#b9b6d5] flex items-center gap-2">
               <Activity className="w-4 h-4 text-[#41e7ff]" />
               <span>
-                {recordingState === 'IDLE' && 'الميكروفون في وضع الاستعداد - اضغط الزر للتسجيل'}
-                {recordingState === 'REQUESTING_PERMISSION' && 'جاري طلب إذن الميكروفون من المتصفح...'}
-                {recordingState === 'PROCESSING' && 'جاري تجهيز مقطع الصوت المسجل...'}
-                {recordingState === 'EVALUATING' && 'جاري تحليل الصوت وتقييم النطق...'}
-                {recordingState === 'COMPLETED' && 'اكتمل التحليل الصوتي بنجاح!'}
-                {recordingState === 'PERMISSION_DENIED' && 'تم رفض إذن الميكروفون. يرجى تفعيله من إعدادات المتصفح.'}
-                {recordingState === 'MICROPHONE_UNAVAILABLE' && 'لم يتم العثور على ميكروفون متصل بالجهاز.'}
+                {recordingState === 'IDLE' && t('pv.state.idle')}
+                {recordingState === 'REQUESTING_PERMISSION' && t('pv.state.requesting')}
+                {recordingState === 'PROCESSING' && t('pv.state.processing')}
+                {recordingState === 'EVALUATING' && t('pv.state.evaluating')}
+                {recordingState === 'COMPLETED' && t('pv.state.completed')}
+                {recordingState === 'PERMISSION_DENIED' && t('pv.state.denied')}
+                {recordingState === 'MICROPHONE_UNAVAILABLE' && t('pv.state.noMic')}
               </span>
             </div>
           )}
@@ -293,7 +295,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
               className="px-6 py-3.5 rounded-2xl bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white font-black text-sm shadow-xl hover:brightness-110 flex items-center gap-2.5 cursor-pointer transition-all duration-300"
             >
               <Mic className="w-5 h-5" />
-              <span>{recordingState === 'COMPLETED' ? 'تسجيل محاولة جديدة' : 'اضغط وسجّل بصوتك الآن'}</span>
+              <span>{recordingState === 'COMPLETED' ? t('pv.recordNew') : t('pv.recordStart')}</span>
             </button>
           ) : (
             <button
@@ -301,7 +303,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
               className="px-6 py-3.5 rounded-2xl bg-rose-600 hover:bg-rose-500 text-white font-black text-sm shadow-xl flex items-center gap-2.5 cursor-pointer transition-all duration-300 animate-pulse"
             >
               <Square className="w-5 h-5 fill-current" />
-              <span>إنهاء التسجيل وتقييم النطق ⏹</span>
+              <span>{t('pv.recordStop')}</span>
             </button>
           )}
 
@@ -311,16 +313,16 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
                 onClick={handlePlayUserAudio}
                 disabled={userAudioPlaying}
                 className="px-4 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs flex items-center gap-2 cursor-pointer transition-colors"
-                title="استمع لتسجيلك الصوتي"
+                title={t('pv.playTitle')}
               >
                 <Play className={`w-4 h-4 ${userAudioPlaying ? 'text-[#c4ff55]' : 'text-white'}`} />
-                <span>{userAudioPlaying ? 'جاري التشغيل...' : 'صوتك المسجل'}</span>
+                <span>{userAudioPlaying ? t('pv.playing') : t('pv.yourRecording')}</span>
               </button>
 
               <button
                 onClick={handleReset}
                 className="p-3.5 rounded-2xl bg-white/5 hover:bg-white/10 text-[#b9b6d5] hover:text-white border border-white/10 cursor-pointer transition-colors"
-                title="إعادة التعيين"
+                title={t('pv.resetTitle')}
               >
                 <RotateCcw className="w-4 h-4" />
               </button>
@@ -336,30 +338,30 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
           {/* Score Cards Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             <div className="col-span-2 sm:col-span-1 p-4 rounded-2xl bg-linear-to-br from-[#1b193d] to-[#121128] border border-[#ffd166]/40 text-center space-y-1">
-              <span className="text-[11px] font-bold text-[#ffd166]">الدرجة الكلية</span>
+              <span className="text-[11px] font-bold text-[#ffd166]">{t('pv.overall')}</span>
               <div className="text-3xl font-black text-white font-mono">{assessmentResult.overallScore}%</div>
               <span className="text-[10px] text-[#c4ff55] font-bold">
-                {assessmentResult.overallScore >= 85 ? 'ممتاز جداً' : assessmentResult.overallScore >= 70 ? 'جيد جداً' : 'يحتاج تدريب'}
+                {assessmentResult.overallScore >= 85 ? t('pv.verdict.excellent') : assessmentResult.overallScore >= 70 ? t('pv.verdict.good') : t('pv.verdict.needsWork')}
               </span>
             </div>
 
             <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-center space-y-1">
-              <span className="text-[11px] font-bold text-[#b9b6d5]">النطق (Pronunciation)</span>
+              <span className="text-[11px] font-bold text-[#b9b6d5]">{t('pv.score.pron')}</span>
               <div className="text-xl font-bold text-[#41e7ff] font-mono">{assessmentResult.pronunciationScore}%</div>
             </div>
 
             <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-center space-y-1">
-              <span className="text-[11px] font-bold text-[#b9b6d5]">الطلاقة (Fluency)</span>
+              <span className="text-[11px] font-bold text-[#b9b6d5]">{t('pv.score.flu')}</span>
               <div className="text-xl font-bold text-[#ff4f9a] font-mono">{assessmentResult.fluencyScore}%</div>
             </div>
 
             <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-center space-y-1">
-              <span className="text-[11px] font-bold text-[#b9b6d5]">الدقة (Accuracy)</span>
+              <span className="text-[11px] font-bold text-[#b9b6d5]">{t('pv.score.acc')}</span>
               <div className="text-xl font-bold text-[#c4ff55] font-mono">{assessmentResult.accuracyScore}%</div>
             </div>
 
             <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-center space-y-1">
-              <span className="text-[11px] font-bold text-[#b9b6d5]">السرعة (Pace)</span>
+              <span className="text-[11px] font-bold text-[#b9b6d5]">{t('pv.score.pace')}</span>
               <div className="text-xl font-bold text-[#ffd166] font-mono">{assessmentResult.wordsPerMinute} <span className="text-xs font-normal">WPM</span></div>
             </div>
           </div>
@@ -369,12 +371,12 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-white flex items-center gap-1.5">
                 <CheckCircle2 className="w-4 h-4 text-[#c4ff55]" />
-                التحليل الصوتي التفصيلي لكل كلمة (اضغط على أي كلمة لمعاينة مخارج الحروف):
+                {t('pv.wordAnalysis')}
               </span>
               <div className="flex items-center gap-3 text-[11px] text-[#b9b6d5]">
-                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-400" /> ممتاز</span>
-                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400" /> مقبول</span>
-                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-rose-400" /> يحتاج تصحيح</span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-emerald-400" /> {t('pv.legend.excellent')}</span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-amber-400" /> {t('pv.legend.ok')}</span>
+                <span className="flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-rose-400" /> {t('pv.legend.fix')}</span>
               </div>
             </div>
 
@@ -429,10 +431,10 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
                 <div className="space-y-1">
-                  <span className="text-[#b9b6d5]">تقييم الكلمة:</span>
+                  <span className="text-[#b9b6d5]">{t('pv.wordScore')}</span>
                   <div className="font-bold text-white flex items-center gap-1.5">
                     <span className={`w-2 h-2 rounded-full ${selectedWord.score >= 85 ? 'bg-emerald-400' : selectedWord.score >= 65 ? 'bg-amber-400' : 'bg-rose-400'}`} />
-                    <span>{selectedWord.score >= 85 ? 'نطق متقن وأصيل' : selectedWord.score >= 65 ? 'نطق مفهوم مع لكنة خفيفة' : 'يحتاج تكرار وتدريب مخارج'} ({selectedWord.score}%)</span>
+                    <span>{selectedWord.score >= 85 ? t('pv.word.verdict.excellent') : selectedWord.score >= 65 ? t('pv.word.verdict.ok') : t('pv.word.verdict.fix')} ({selectedWord.score}%)</span>
                   </div>
                 </div>
 
@@ -445,14 +447,14 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
                     className="px-3.5 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs flex items-center gap-1.5 cursor-pointer transition-colors"
                   >
                     <Volume2 className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>استمع لنطق الكلمة منفرداً</span>
+                    <span>{t('pv.listenWord')}</span>
                   </button>
                 </div>
               </div>
 
               {selectedWord.phoneticTipAr && (
                 <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-xs text-[#ffd166] leading-relaxed">
-                 <strong>نصيحة هناوي للنطق بالمصري:</strong> {selectedWord.phoneticTipAr}
+                 <strong>{t('pv.hinawiTip')}</strong> {selectedWord.phoneticTipAr}
                 </div>
               )}
             </div>
@@ -463,7 +465,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
             <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-2">
               <span className="text-xs font-bold text-[#ffd166] flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4" />
-                توصيات مخصصة لتحسين نطقك في المحاولة القادمة:
+                {t('pv.recs')}
               </span>
               <ul className="text-xs text-[#dedbf4] space-y-1.5 pr-4 list-disc">
                 {assessmentResult.recommendationsAr.map((rec, i) => (
