@@ -63,12 +63,12 @@ export const LISTENING_LESSONS: ListeningLesson[] = seeds.map((s, i) => {
   const options = [...wrong]; options.splice(answer, 0, correct);
   return {
     id: `listening-studio-${i + 1}`, title, titleAr, level: level as ListeningTrack['level'], accent: i % 2 ? 'American' : 'British', duration: '', category: 'Original practice', transcript, transcriptAr, dictationSentence,
-    image: `/images/listening/${topic}.webp`, imageSource: `https://images.unsplash.com/photo-${photo}`, imageAlt,
+    image: `/images/listening/${topic}.webp`, imageSource: '', imageAlt,
     focusAr: i < 12 ? 'التقاط التفاصيل وترتيب التعليمات' : i < 24 ? 'الفكرة الرئيسية والسبب والنتيجة' : 'المعنى الضمني وحدود الادعاء', unit: Math.floor(i / 6) + 1, original: true,
     comprehensionQuiz: [{ id: `ls-${i}-meaning`, question, options, answer, explanation: `${correct}. ${transcriptAr}`, topic: 'Listening comprehension', difficulty: i < 12 ? 'beginner' : i < 24 ? 'intermediate' : 'advanced' }],
   };
 });
 const legacyPhotos = ['1569154941061-e231b4725ef1','1531482615713-2afd69097998','1507679799987-c73779587ccf','1559839734-2b71ea197ec2','1517248135467-4c7edcad34c4','1447752875215-b2761acb3c5d'];
-export const LEGACY_LISTENING_LESSONS: ListeningLesson[] = LISTENING_TRACKS.map((t, i) => ({ ...t, image: `/images/listening/legacy-${i}.webp`, imageSource: `https://images.unsplash.com/photo-${legacyPhotos[i]}`, imageAlt: ['Airport terminal','Teamwork','Professional at work','A medical professional','Hospitality interior','A forest landscape'][i], focusAr: 'من مكتبة الاستماع الأصلية', unit: 7, original: false }));
+export const LEGACY_LISTENING_LESSONS: ListeningLesson[] = LISTENING_TRACKS.map((t, i) => ({ ...t, image: `/images/listening/legacy-${i}.webp`, imageSource: '', imageAlt: ['Airport terminal','Teamwork','Professional at work','A medical professional','Hospitality interior','A forest landscape'][i], focusAr: 'من مكتبة الاستماع الأصلية', unit: 7, original: false }));
 export const ALL_LISTENING_LESSONS = [...LISTENING_LESSONS, ...LEGACY_LISTENING_LESSONS];
 export const normalizeListeningAnswer = (text: string) => text.normalize('NFKC').toLowerCase().replace(/[’']/g, '').replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
