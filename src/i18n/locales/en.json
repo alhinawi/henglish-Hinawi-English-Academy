@@ -467,10 +467,12 @@
   "sidebar.brandHome": "Henglish home",
   "sidebar.close": "Close menu",
   "sidebar.collapse": "Collapse menu",
+  "sidebar.collapseSections": "Collapse subsections",
   "sidebar.collapseSubs": "Collapse subsections",
   "sidebar.currentLevel": "Current level",
   "sidebar.desktopAria": "Desktop sidebar",
   "sidebar.expand": "Expand menu",
+  "sidebar.expandSections": "Expand subsections",
   "sidebar.expandSubs": "Expand subsections",
   "sidebar.group.academies": "Core academies (A1 - C2)",
   "sidebar.group.home": "Home & dashboard",
@@ -481,6 +483,7 @@
   "sidebar.official": "Official",
   "sidebar.rulesBadge": "{count}+ rules",
   "sidebar.sentencesBadge": "{count} sentences",
+  "sidebar.tagline": "Certified interactive English curriculum",
   "sidebar.teacherPanel": "Teacher panel",
   "sidebar.toggle": "Toggle menu view"
 }
