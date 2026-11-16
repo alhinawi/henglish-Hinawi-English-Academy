@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "slg-000001",
+   "sentences": [
+    {
+     "en": "Dude, you left your phone in the microbus.",
+     "ar": "يا معلم، انت نسيت موبايلك في الميكروباص."
+    },
+    {
+     "en": "That dude at the gym lifts more than anybody I know.",
+     "ar": "الواد ده في الجيم بيلعب حديد أكتر من أي حد أعرفه."
+    },
+    {
+     "en": "Dude, the match starts in five minutes, come on!",
+     "ar": "يا صاحبي، الماتش هيبدأ بعد خمس دقايق، يلا!"
+    },
+    {
+     "en": "Some dude knocked on the door asking about the apartment upstairs.",
+     "ar": "في واحد خبط على الباب بيسأل عن الشقة اللي فوق."
+    },
+    {
+     "en": "Calm down, dude, the exam is tomorrow not today.",
+     "ar": "اهدا يا معلم، الامتحان بكرة مش النهاردة."
+    },
+    {
+     "en": "My cousin is a cool dude, he fixes laptops for free.",
+     "ar": "ابن عمي واد جدع، بيصلح اللابتوبات ببلاش."
+    },
+    {
+     "en": "Dude, this koshary place is the best in the whole area.",
+     "ar": "يا صاحبي، محل الكشري ده أحسن واحد في المنطقة كلها."
+    },
+    {
+     "en": "Who is that dude standing next to your father?",
+     "ar": "مين الواد الواقف جنب والدك ده؟"
+    },
+    {
+     "en": "The dude at the ticket window said the bus is full.",
+     "ar": "الموظف اللي على شباك التذاكر قاللي الأوتوبيس كامل."
+    },
+    {
+     "en": "Dude, you should have seen his face when he lost the game.",
+     "ar": "يا معلم، كان لازم تشوف وشه لما خسر اللعبة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000002",
+   "sentences": [
+    {
+     "en": "Cheers mate, you really saved me today.",
+     "ar": "شكرًا يا صاحبي، انت النهاردة أنقذتني بجد."
+    },
+    {
+     "en": "My mate from work is coming over for dinner tonight.",
+     "ar": "صاحبي من الشغل جاي يتعشى معايا النهاردة بالليل."
+    },
+    {
+     "en": "Sorry mate, the last bus to the city center already left.",
+     "ar": "معلش يا صاحبي، آخر أوتوبيس لوسط البلد مشي خلاص."
+    },
+    {
+     "en": "He has been my best mate since we were in primary school.",
+     "ar": "ده أقرب صاحب ليا من أيام الابتدائي."
+    },
+    {
+     "en": "Mate, you have to taste this tea, it is amazing.",
+     "ar": "يا صاحبي، لازم تدوق الشاي ده، تحفة."
+    },
+    {
+     "en": "I play football with a few mates every Friday.",
+     "ar": "بلعب كورة مع كام صاحب كل جمعة."
+    },
+    {
+     "en": "Can you lend me your charger, mate? Mine just died.",
+     "ar": "ممكن تسلفني الشاحن بتاعك يا صاحبي؟ بتاعي خرب."
+    },
+    {
+     "en": "His mates surprised him with a cake on his birthday.",
+     "ar": "أصحابه فاجأوه بجاتوه يوم عيد ميلاده."
+    },
+    {
+     "en": "Take it easy, mate, the queue is moving fast.",
+     "ar": "اهدى يا صاحبي، الطابور بيمشي بسرعة."
+    },
+    {
+     "en": "A good mate never lets you face a problem alone.",
+     "ar": "الصاحب الحقيقي مبيسيبكش تواجه مشكلة لوحدك."
+    }
+   ]
+  },
+  {
+   "id": "slg-000003",
+   "sentences": [
+    {
+     "en": "Bro, did you see that goal in the last minute?",
+     "ar": "يا أخويا، شفت الجون في الدقيقة الأخيرة؟"
+    },
+    {
+     "en": "Come with us, bro, the whole group is going to the beach.",
+     "ar": "تعالى معانا يا أخويا، الجروب كله رايح المصيف."
+    },
+    {
+     "en": "Bro, your mother called three times, call her back.",
+     "ar": "يا أخويا، ماما كلمتك تلت مرات، رد عليها."
+    },
+    {
+     "en": "He is not just a friend, he is like a bro to me.",
+     "ar": "ده مش مجرد صاحب، ده زي أخويا بالظبط."
+    },
+    {
+     "en": "Bro, slow down, the road is full of holes here.",
+     "ar": "يا أخويا بطّل سرعة، الطريق مليان حفر هنا."
+    },
+    {
+     "en": "Trust me, bro, this mechanic is honest and cheap.",
+     "ar": "صدقني يا أخويا، الميكانيكي ده أمين ورخيص."
+    },
+    {
+     "en": "We grew up in the same street, so he is basically my bro.",
+     "ar": "احنا كبرنا في نفس الشارع، فده بقى أخويا بجد."
+    },
+    {
+     "en": "Bro, you still owe me money from last week.",
+     "ar": "يا أخويا، انت لسه عليك الفلوس بتاعت الأسبوع اللي فات."
+    },
+    {
+     "en": "My bro always picks me up when my car breaks down.",
+     "ar": "صاحبي دايمًا بييجي ياخدني لما العربية بتعطل."
+    },
+    {
+     "en": "Bro, this is the last piece of pizza, do you want it?",
+     "ar": "يا أخويا، دي آخر قطمة بيتزا، عايزها؟"
+    }
+   ]
+  },
+  {
+   "id": "slg-000004",
+   "sentences": [
+    {
+     "en": "My pal Omar taught me how to swim when we were kids.",
+     "ar": "صاحبي عمر هو اللي علمني العوم واحنا صغيرين."
+    },
+    {
+     "en": "Thanks pal, I could not have moved the sofa without you.",
+     "ar": "شكرًا يا صاحبي، كنتش هقدر أشيل الانتريه من غيرك."
+    },
+    {
+     "en": "He talks to his old pal on the phone every Sunday.",
+     "ar": "بيكلم صاحبه القديم في التليفون كل حد."
+    },
+    {
+     "en": "Listen pal, that is not how we treat customers here.",
+     "ar": "اسمع يا صاحبي، مش كده بنتعامل مع الزباين هنا."
+    },
+    {
+     "en": "She has been my closest pal since university.",
+     "ar": "دي أقرب صاحبة ليا من أيام الجامعة."
+    },
+    {
+     "en": "Hey pal, your car lights are still on.",
+     "ar": "يا صاحبي، نور عربيتك لسه والع."
+    },
+    {
+     "en": "We became pals in the army and stayed in touch ever since.",
+     "ar": "بقينا أصحاب في الجيش وفضلنا على تواصل من ساعتها."
+    },
+    {
+     "en": "My little pal, the neighbor's son, always asks me for help with math.",
+     "ar": "صاحبي الصغير، ابن الجيران، دايمًا بيطلب مني مساعدة في الحساب."
+    },
+    {
+     "en": "Pal, you need a jacket, it is freezing outside.",
+     "ar": "يا صاحبي، انت محتاج جاكيت، الجو بره تلج."
+    },
+    {
+     "en": "A pal like you is hard to find these days.",
+     "ar": "صاحب زيك صعب الواحد يلاقيه الأيام دي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000005",
+   "sentences": [
+    {
+     "en": "Hey buddy, you dropped your wallet near the door.",
+     "ar": "يا صاحبي، محفظتك وقعت منك جنب الباب."
+    },
+    {
+     "en": "My buddy and I are opening a small café next month.",
+     "ar": "أنا وصاحبي هنفتح كافيه صغير الشهر الجاي."
+    },
+    {
+     "en": "Come here, buddy, let me show you a magic trick.",
+     "ar": "تعالى هنا يا بطل، أوريك لعبة خفة."
+    },
+    {
+     "en": "He cried for a week when his old buddy moved abroad.",
+     "ar": "عيط أسبوع كامل لما صاحبه سافر بره."
+    },
+    {
+     "en": "Buddy, the dentist appointment is at four, don't be late.",
+     "ar": "يا صاحبي، معاد دكتور الأسنان الساعة أربعة، متتأخرش."
+    },
+    {
+     "en": "My gym buddy pushes me to finish every workout.",
+     "ar": "صاحبي في الجيم بيشجعني أخلص التمرين للآخر."
+    },
+    {
+     "en": "Watch the road, buddy, the traffic here is crazy.",
+     "ar": "بص على الطريق يا صاحبي، المرور هنا مجنون."
+    },
+    {
+     "en": "The little boy calls his big dog his best buddy.",
+     "ar": "الولد الصغير بيقول على كلبه الكبير أحسن صاحب."
+    },
+    {
+     "en": "Buddy, you deserve a break after all this work.",
+     "ar": "يا صاحبي، انت تستاهل ترتاح بعد كل الشغل ده."
+    },
+    {
+     "en": "I promised my buddy I would go with him to the interview for support.",
+     "ar": "وعدت صاحبي إني أروح معاه المقابلة عشان أشد من أزره."
+    }
+   ]
+  },
+  {
+   "id": "slg-000006",
+   "sentences": [
+    {
+     "en": "That bloke over there sells the best sugar cane juice.",
+     "ar": "الراجل اللي واقف هناك ده بيبيع أحلى عصير قصب."
+    },
+    {
+     "en": "A bloke stopped me in the street to ask about the bus station.",
+     "ar": "في واحد وقفني في الشارع يسأل عن موقف الأوتوبيس."
+    },
+    {
+     "en": "He is a funny bloke, always joking with the customers.",
+     "ar": "ده راجل خفيف دم، طول الوقت بيهزر مع الزباين."
+    },
+    {
+     "en": "The bloke who fixed our fridge did a great job.",
+     "ar": "الراجل اللي صلح التلاجة عمل شغل عالي."
+    },
+    {
+     "en": "Some bloke was singing loudly on the train this morning.",
+     "ar": "في واحد كان بيغني بصوت عالي في القطر الصبح."
+    },
+    {
+     "en": "That bloke owns three shops in the same market.",
+     "ar": "الراجل ده عنده تلت محلات في نفس السوق."
+    },
+    {
+     "en": "I asked a bloke at the café for directions and he walked with me there.",
+     "ar": "سألت واحد في القهوة عن الطريق فمشي معايا لحد ما وصلت."
+    },
+    {
+     "en": "The bloke next door paints houses for a living.",
+     "ar": "الراجل اللي ساكن جنبنا بيشتغل نقاش."
+    },
+    {
+     "en": "He seems like a decent bloke, I would trust him with the shop.",
+     "ar": "شكله راجل محترم، هثق فيه على المحل."
+    },
+    {
+     "en": "That bloke talks too much but he means well.",
+     "ar": "الراجل ده بيكلم كتير بس نيته كويسة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000007",
+   "sentences": [
+    {
+     "en": "The old chap at the corner shop knows everyone in the street.",
+     "ar": "الراجل الكبير اللي في محل الناصية عارف كل أهل الشارع."
+    },
+    {
+     "en": "Poor chap, he missed the last train home.",
+     "ar": "مسكين، فاته آخر قطر رايح البيت."
+    },
+    {
+     "en": "That chap from accounting always brings sweets on Fridays.",
+     "ar": "الراجل اللي في الحسابات دايمًا بيجيب حلاوة يوم الجمعة."
+    },
+    {
+     "en": "He is a cheerful chap, never seen without a smile.",
+     "ar": "ده راجل مبسوط على طول، عمري ما شفته من غير ابتسامة."
+    },
+    {
+     "en": "A polite chap helped the old lady carry her bags.",
+     "ar": "في راجل محترم ساعد الحجة في شيل الشنط."
+    },
+    {
+     "en": "The chap selling newspapers starts work before sunrise.",
+     "ar": "الراجل اللي بيبيع الجرايد بيبدأ شغل قبل الشروق."
+    },
+    {
+     "en": "Good chap, he returned the money he found on the floor.",
+     "ar": "راجل جدع، رجّع الفلوس اللي لقاها على الأرض."
+    },
+    {
+     "en": "That young chap wants to be a pilot when he grows up.",
+     "ar": "الشاب الصغير ده نفسه يبقى طيار لما يكبر."
+    },
+    {
+     "en": "The chap at the bank explained the new account in five minutes.",
+     "ar": "الموظف في البنك شرحلي الحساب الجديد في خمس دقايق."
+    },
+    {
+     "en": "Every chap in the workshop respects the old manager.",
+     "ar": "كل الرجالة في الورشة بتحترم المدير الكبير."
+    }
+   ]
+  },
+  {
+   "id": "slg-000008",
+   "sentences": [
+    {
+     "en": "That lad scored two goals in the school match yesterday.",
+     "ar": "الواد ده جاب جونين في ماتش المدرسة مبارح."
+    },
+    {
+     "en": "The lads meet at the café every evening after work.",
+     "ar": "الشباب بيتقابلوا على القهوة كل يوم بعد الشغل."
+    },
+    {
+     "en": "He is a hard-working lad, he helps his father in the bakery.",
+     "ar": "ده واد شاطر ومجتهد، بيساعد أبوه في المخبز."
+    },
+    {
+     "en": "The young lad carried the heavy boxes without complaining.",
+     "ar": "الواد الصغير شال الكراتين التقيلة من غير ما يشتكي."
+    },
+    {
+     "en": "Our lad is getting married next summer, finally.",
+     "ar": "ابننا هيتجوز الصيف الجاي أخيرًا."
+    },
+    {
+     "en": "That lad over there fixed my bike in ten minutes.",
+     "ar": "الواد الواقف هناك ده صلحلي العجلة في عشر دقايق."
+    },
+    {
+     "en": "The lads from the neighborhood organized a football tournament.",
+     "ar": "شباب الحارة نظموا دورة كورة."
+    },
+    {
+     "en": "He was a naughty lad, always playing tricks on his teachers.",
+     "ar": "كان واد شقي، طول الوقت بيعمل مقالب في مدرسينه."
+    },
+    {
+     "en": "Give the lad a chance, he is still learning the job.",
+     "ar": "اديله فرصة، الواد لسه بيتعلم الشغلانة."
+    },
+    {
+     "en": "The lad next door won a scholarship to study abroad.",
+     "ar": "واد الجيران كسب منحة يدرس بره."
+    }
+   ]
+  },
+  {
+   "id": "slg-000009",
+   "sentences": [
+    {
+     "en": "The lass who works at the pharmacy is very kind to everyone.",
+     "ar": "البنت اللي بتشتغل في الصيدلية دمها خفيف مع كل الناس."
+    },
+    {
+     "en": "He married a lass from his village last spring.",
+     "ar": "اتجوز بنت من قريته الربيع اللي فات."
+    },
+    {
+     "en": "That young lass sings beautifully at family weddings.",
+     "ar": "البنت الصغيرة دي بتغني بصوت جميل في فراح العيلة."
+    },
+    {
+     "en": "The lass at the ticket office gave us a student discount.",
+     "ar": "البنت اللي على شباك التذاكر عملتلنا خصم طلبة."
+    },
+    {
+     "en": "She was a clever lass, top of her class every year.",
+     "ar": "كانت بنت شاطرة، الأولى على فصلها كل سنة."
+    },
+    {
+     "en": "The little lass helped her grandmother water the plants.",
+     "ar": "البنت الصغيرة ساعدت تدتها في سقي الزرع."
+    },
+    {
+     "en": "A lass from the neighborhood won the drawing competition.",
+     "ar": "بنت من الحارة كسبت مسابقة الرسم."
+    },
+    {
+     "en": "The lass smiled and handed me my change.",
+     "ar": "البنت ابتسمت ودتني الباقي."
+    },
+    {
+     "en": "His daughter is a brave lass, never afraid of anything.",
+     "ar": "بنته بنت جريئة، مش بتخاف من حاجة."
+    },
+    {
+     "en": "The lass next door teaches kids how to read on weekends.",
+     "ar": "بنت الجيران بتعلم الأطفال القراءة في الأجازات."
+    }
+   ]
+  },
+  {
+   "id": "slg-000010",
+   "sentences": [
+    {
+     "en": "That gal from the office organized the whole event by herself.",
+     "ar": "البنت اللي في المكتب دي نظمت الحفلة كلها لوحدها."
+    },
+    {
+     "en": "He has been in love with the same gal since high school.",
+     "ar": "بايحب نفس البنت من أيام الثانوي."
+    },
+    {
+     "en": "The gal at the bakery always gives me an extra piece of bread.",
+     "ar": "البنت اللي في المخبز دايمًا بتزودلي رغيف زيادة."
+    },
+    {
+     "en": "She is a smart gal, she learned the software in a week.",
+     "ar": "دي بنت شاطرة، اتعلمت البرنامج في أسبوع."
+    },
+    {
+     "en": "My gal friends and I meet for coffee every Thursday.",
+     "ar": "أنا وصحباتي البنات بنتقابل على القهوة كل خميس."
+    },
+    {
+     "en": "That little gal beat all the boys in the chess tournament.",
+     "ar": "البنت الصغيرة دي كسبت كل الولاد في بطولة الشطرنج."
+    },
+    {
+     "en": "The gal who cuts my hair knows exactly what I like.",
+     "ar": "البنت اللي بتقصلي شعري عارفة بالظبط أنا بحب إيه."
+    },
+    {
+     "en": "He finally asked the gal out and she said yes.",
+     "ar": "أخيرًا طلب من البنت يخرجوا سوا ووافقت."
+    },
+    {
+     "en": "Every gal in the team trained hard for the finals.",
+     "ar": "كل البنات في الفريق تمرنوا كويس عشان النهائي."
+    },
+    {
+     "en": "That gal can fix any phone in under an hour.",
+     "ar": "البنت دي بتقدر تصلح أي موبايل في أقل من ساعة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000011",
+   "sentences": [
+    {
+     "en": "Guys, the teacher is coming, open your books quickly.",
+     "ar": "يا جماعة، المستر جاي، افتحوا الكتب بسرعة."
+    },
+    {
+     "en": "Are you guys coming to the wedding on Friday?",
+     "ar": "يا جماعة انتوا جايين الفرح يوم الجمعة؟"
+    },
+    {
+     "en": "Listen guys, we need to finish the project by tonight.",
+     "ar": "اسمعوا يا جماعة، لازم نخلص المشروع قبل الليل."
+    },
+    {
+     "en": "You guys are the best team I have ever worked with.",
+     "ar": "انتوا أحسن فريق اشتغلت معاه في حياتي."
+    },
+    {
+     "en": "Guys, the food is on the table, come and eat.",
+     "ar": "يا جماعة، الأكل على السفرة، تعالوا كلوا."
+    },
+    {
+     "en": "I told the guys about the trip and everyone agreed.",
+     "ar": "قلت للشباب على الرحلة وكلهم وافقوا."
+    },
+    {
+     "en": "Wait for me, guys, I am still tying my shoes.",
+     "ar": "استنوني يا جماعة، أنا لسه بربط جزمتي."
+    },
+    {
+     "en": "These guys helped me move to the new apartment.",
+     "ar": "الناس دي ساعدتني أنقل للشقة الجديدة."
+    },
+    {
+     "en": "Guys, keep it down, the baby is sleeping.",
+     "ar": "يا جماعة، وطوا الصوت، البيبي نايم."
+    },
+    {
+     "en": "I miss you guys so much, we should meet soon.",
+     "ar": "وحشتوني قوي يا جماعة، لازم نتقابل قريب."
+    }
+   ]
+  },
+  {
+   "id": "slg-000012",
+   "sentences": [
+    {
+     "en": "My folks are visiting us for the holiday next week.",
+     "ar": "أهلي جايين يزورونا في العيد الأسبوع الجاي."
+    },
+    {
+     "en": "The folks in this neighborhood are very friendly.",
+     "ar": "أهل الحتة دي ناس ودودة جدًا."
+    },
+    {
+     "en": "I called my folks to tell them the good news.",
+     "ar": "كلمت أهلي عشان أقولهم الخبر الحلو."
+    },
+    {
+     "en": "Folks, please take your seats, the show is about to begin.",
+     "ar": "يا جماعة، ممكن تقعدوا في أماكنكم، العرض هيبدأ حالًا."
+    },
+    {
+     "en": "He grew up with simple folks who taught him honesty.",
+     "ar": "اتربى وسط ناس بسيطة علمته الأمانة."
+    },
+    {
+     "en": "The folks at the clinic took good care of my mother.",
+     "ar": "الناس في العيادة اهتموا بماما كويس."
+    },
+    {
+     "en": "Young folks these days spend hours on their phones.",
+     "ar": "الشباب دلوقتي بيقضوا ساعات على موبايلاتهم."
+    },
+    {
+     "en": "We invited the folks from work to our housewarming party.",
+     "ar": "عزمنا ناس الشغل على حفلة الشقة الجديدة."
+    },
+    {
+     "en": "His folks live in the countryside and grow their own vegetables.",
+     "ar": "أهله عايشين في الريف وبيزرعوا خضارهم بنفسهم."
+    },
+    {
+     "en": "Some folks still write letters by hand, which is lovely.",
+     "ar": "في ناس لسه بتكتب جوابات بإيدها، ودي حاجة جميلة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000013",
+   "sentences": [
+    {
+     "en": "My homie Kareem has been with me since the first day of school.",
+     "ar": "صاحبي كريم معايا من أول يوم في المدرسة."
+    },
+    {
+     "en": "Homie, I got your back no matter what happens.",
+     "ar": "يا صاحبي، أنا في ضهرك مهما حصل."
+    },
+    {
+     "en": "He introduced me to his homies at the barbershop.",
+     "ar": "عرفني على صحابه في محل الحلاقة."
+    },
+    {
+     "en": "That is my homie, we grew up in the same building.",
+     "ar": "ده صاحبي المقرب، كبرنا في نفس العمارة."
+    },
+    {
+     "en": "Homie, you cannot wear flip-flops to a wedding.",
+     "ar": "يا صاحبي، مش ممكن تلبس شبشب في فرح."
+    },
+    {
+     "en": "All my homies came to support me at the final match.",
+     "ar": "كل صحابي جه يشجعني في الماتش النهائي."
+    },
+    {
+     "en": "He calls every friend of his a homie, even the new ones.",
+     "ar": "بيقول على أي صاحب له صاحبي المقرب، حتى الجداد."
+    },
+    {
+     "en": "My homie lent me his car when mine was in the workshop.",
+     "ar": "صاحبي سلّفني عربيته لما عربيتي كانت في الورشة."
+    },
+    {
+     "en": "Homie, this tea needs more sugar, trust me.",
+     "ar": "يا صاحبي، الشاي ده محتاج سكر أكتر، صدقني."
+    },
+    {
+     "en": "We were homies in childhood and we are still close today.",
+     "ar": "كنا أصحاب مقربين واحنا صغيرين ولسه قريبين من بعض لحد النهاردة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000014",
+   "sentences": [
+    {
+     "en": "What is up, dawg? Long time no see.",
+     "ar": "إيه الأخبار يا معلم؟ وحشتني من زمان."
+    },
+    {
+     "en": "Dawg, you have to listen to this new song.",
+     "ar": "يا صاحبي، لازم تسمع الأغنية الجديدة دي."
+    },
+    {
+     "en": "He has been my dawg since we played on the same team.",
+     "ar": "ده صاحبي المقرب من أيام ما كنا بنلعب في نفس الفريق."
+    },
+    {
+     "en": "Relax, dawg, everything is under control.",
+     "ar": "اهدا يا معلم، كل حاجة تحت السيطرة."
+    },
+    {
+     "en": "Dawg, that haircut makes you look ten years younger.",
+     "ar": "يا صاحبي، الحلاقة دي مخلياك أصغر بعشر سنين."
+    },
+    {
+     "en": "My dawg always knows where to find the cheapest prices.",
+     "ar": "صاحبي دايمًا عارف مكان أرخص الأسعار."
+    },
+    {
+     "en": "Dawg, save me a seat, I am on my way.",
+     "ar": "يا معلم، احجزلي مكان، أنا في الطريق."
+    },
+    {
+     "en": "He calls all his close friends dawg.",
+     "ar": "بيقول على كل صحابه المقربين يا معلم."
+    },
+    {
+     "en": "Dawg, you ate my sandwich, that is not cool.",
+     "ar": "يا صاحبي، انت أكلت السندوتش بتاعي، ده مش كويس."
+    },
+    {
+     "en": "Me and my dawg are fixing his old motorcycle this weekend.",
+     "ar": "أنا وصاحبي هنصلح الموتوسيكل القديم بتاعه في الأجازة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000015",
+   "sentences": [
+    {
+     "en": "Happy birthday, fam! May all your wishes come true.",
+     "ar": "عيد ميلاد سعيد يا عيلة! ربنا يحققلك كل أمنياتك."
+    },
+    {
+     "en": "Thanks for the support, fam, you are the best.",
+     "ar": "شكرًا على الدعم يا جماعة، انتوا الأحسن."
+    },
+    {
+     "en": "The whole fam is gathering at grandma's house for lunch.",
+     "ar": "العيلة كلها متجمعة في بيت تدتي للغدا."
+    },
+    {
+     "en": "Fam, did you watch the episode last night?",
+     "ar": "يا جماعة، شفتوا الحلقة مبارح بالليل؟"
+    },
+    {
+     "en": "He treats his old friends like fam.",
+     "ar": "بيعامل صحابه القدامى زي عيلته بالظبط."
+    },
+    {
+     "en": "Fam, I finally passed the driving test!",
+     "ar": "يا جماعة، أنا أخيرًا نجحت في اختبار السواقة!"
+    },
+    {
+     "en": "Our group chat is basically one big fam.",
+     "ar": "جروب الشات بتاعنا بقى عيلة كبيرة واحدة."
+    },
+    {
+     "en": "You are not just a colleague, you are fam now.",
+     "ar": "انت مش مجرد زميل، انت بقيت من العيلة دلوقتي."
+    },
+    {
+     "en": "The fam celebrated when their son graduated with honors.",
+     "ar": "العيلة احتفلت لما ابنهم اتخرج بامتياز."
+    },
+    {
+     "en": "Fam, bring your swimsuit, we are going to the pool.",
+     "ar": "يا جماعة، هاتوا مايوهاتكم، رايحين حمام السباحة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000016",
+   "sentences": [
+    {
+     "en": "I am going out with my peeps tonight.",
+     "ar": "خارج مع صحابي الليلة."
+    },
+    {
+     "en": "All my peeps from college are coming to the reunion.",
+     "ar": "كل صحابي من الجامعة جايين اللمة."
+    },
+    {
+     "en": "These are my peeps, we have known each other forever.",
+     "ar": "دول صحابي، احنا عارفين بعض من زمان جدًا."
+    },
+    {
+     "en": "My peeps at work always share their lunch with me.",
+     "ar": "زمايلي في الشغل دايمًا بيشاركوني الغدا."
+    },
+    {
+     "en": "Peeps, listen up, the plan for tomorrow changed.",
+     "ar": "يا جماعة، اسمعوا، خطة بكرة اتغيرت."
+    },
+    {
+     "en": "He sends holiday greetings to all his peeps every year.",
+     "ar": "بيبعت تهاني العيد لكل صحابه كل سنة."
+    },
+    {
+     "en": "I can always count on my peeps when things get hard.",
+     "ar": "دايمًا بقدر أعتمد على صحابي لما الأمور تزنق."
+    },
+    {
+     "en": "My peeps and I rented a place by the sea for a week.",
+     "ar": "أنا وصحابي أجرنا مكان على البحر لمدة أسبوع."
+    },
+    {
+     "en": "She introduced me to her peeps at the party.",
+     "ar": "عرفتني على صحابها في الحفلة."
+    },
+    {
+     "en": "Good peeps make hard days easier.",
+     "ar": "الصحاب الكويسين بيخففوا الأيام الصعبة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000017",
+   "sentences": [
+    {
+     "en": "He posted a photo with his bae at the beach.",
+     "ar": "نزل صورة مع حبيبته على البحر."
+    },
+    {
+     "en": "Bae cooked my favorite meal for our anniversary.",
+     "ar": "حبيبي طبخ أكلتي المفضلة في ذكرانا."
+    },
+    {
+     "en": "She calls her boyfriend bae all the time.",
+     "ar": "بتقول على جوزها حبيبها طول الوقت."
+    },
+    {
+     "en": "Bae, did you remember to buy the cake for tonight?",
+     "ar": "يا حبيبي، فاكر تشتري الجاتوه بتاع الليلة؟"
+    },
+    {
+     "en": "He surprised his bae with flowers at her workplace.",
+     "ar": "فاجأ حبيبته بورد في شغلها."
+    },
+    {
+     "en": "My bae and I watched the sunset from the balcony.",
+     "ar": "أنا وحبيبتي اتفرجنا على الغروب من البلكونة."
+    },
+    {
+     "en": "Bae said the movie was boring, so we left early.",
+     "ar": "حبيبتي قالت إن الفيلم ممل، فمشينا بدري."
+    },
+    {
+     "en": "He writes poems for his bae every month.",
+     "ar": "بيكتب قصايد لحبيبته كل شهر."
+    },
+    {
+     "en": "Bae, your mother invited us for lunch on Friday.",
+     "ar": "يا حبيبي، والدتك عزمتنا على الغدا يوم الجمعة."
+    },
+    {
+     "en": "She is saving money to buy a gift for her bae.",
+     "ar": "بتدخر فلوس عشان تشتري هدية لحبيبها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000018",
+   "sentences": [
+    {
+     "en": "Hey boo, I missed you so much today.",
+     "ar": "أهلا يا حبيبي، وحشتني قوي النهاردة."
+    },
+    {
+     "en": "She texted her boo as soon as she landed.",
+     "ar": "بعتت لحبيبها رسالة أول ما طيارتها نزلت."
+    },
+    {
+     "en": "Boo, can you pick up some milk on your way home?",
+     "ar": "يا حبيبي، ممكن تجيب لبن وانت راجع البيت؟"
+    },
+    {
+     "en": "He sings love songs to his boo in the car.",
+     "ar": "بيغني أغاني رومانسية لحبيبته في العربية."
+    },
+    {
+     "en": "My boo surprised me with tickets to the concert.",
+     "ar": "حبيبي فاجأني بتذاكر الحفلة."
+    },
+    {
+     "en": "She and her boo celebrate every small win together.",
+     "ar": "هي وحبيبها بيحتفلوا بأي نجاح صغير مع بعض."
+    },
+    {
+     "en": "Boo, the dinner you made was delicious.",
+     "ar": "يا حبيبي، الأكل اللي عملته كان جميل جدًا."
+    },
+    {
+     "en": "He calls his wife boo even after twenty years.",
+     "ar": "بيقول على مراته حبيبته حتى بعد عشرين سنة."
+    },
+    {
+     "en": "My boo hates horror movies but watches them with me anyway.",
+     "ar": "حبيبتي بيكره أفلام الرعب بس بيتفرج عليها معايا برضه."
+    },
+    {
+     "en": "Good morning boo, your coffee is ready.",
+     "ar": "صباح الخير يا حبيبي، قهوتك جاهزة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000019",
+   "sentences": [
+    {
+     "en": "My sis helped me choose my graduation dress.",
+     "ar": "أختي ساعدتني أختار فستان التخرج."
+    },
+    {
+     "en": "Sis, can I borrow your red bag for the party?",
+     "ar": "يا أختي، ممكن أستعير شنطتك الحمرا للحفلة؟"
+    },
+    {
+     "en": "She is not my real sister but I call her sis.",
+     "ar": "هي مش أختي الحقيقية بس بقولها يا أختي."
+    },
+    {
+     "en": "You did great in the presentation, sis, I am proud of you.",
+     "ar": "عملتي شغل عالي في العرض يا أختي، أنا فخور بيكي."
+    },
+    {
+     "en": "My little sis is starting university this year.",
+     "ar": "أختي الصغيرة داخلة الجامعة السنة دي."
+    },
+    {
+     "en": "Sis, the wedding photos came out amazing.",
+     "ar": "يا أختي، صور الفرح طلعت تحفة."
+    },
+    {
+     "en": "Her older sis taught her how to drive.",
+     "ar": "أختها الكبيرة هي اللي علمتها السواقة."
+    },
+    {
+     "en": "Come on sis, we are going to be late for the appointment.",
+     "ar": "يلا يا أختي، هنتأخر على المعاد."
+    },
+    {
+     "en": "My best friend is like a sis to me, we share everything.",
+     "ar": "أقرب صاحبة ليا زي أختي، بنقسم مع بعض كل حاجة."
+    },
+    {
+     "en": "Sis, mom is looking for you everywhere.",
+     "ar": "يا أختي، ماما بتدور عليكي في كل حتة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000020",
+   "sentences": [
+    {
+     "en": "Bruh, you ate the whole cake by yourself?",
+     "ar": "يا عم انت جاد؟ أكلت الجاتوه كله لوحدك؟"
+    },
+    {
+     "en": "He forgot his keys again, bruh.",
+     "ar": "نسي مفاتيحه تاني، يا عم الحج."
+    },
+    {
+     "en": "Bruh, the teacher saw you sleeping in class.",
+     "ar": "يا عم، المستر شافك وانت نايم في الحصة."
+    },
+    {
+     "en": "You paid that much for a shirt? Bruh.",
+     "ar": "دفعت الفلوس دي كلها في قميص؟ يا عم انت."
+    },
+    {
+     "en": "Bruh, the match got cancelled because of the rain.",
+     "ar": "يا عم، الماتش اتلغى بسبب المطر."
+    },
+    {
+     "en": "She said bruh when her brother broke her phone charger.",
+     "ar": "قالت يا عم انت لما أخوها كسر شاحن موبايلها."
+    },
+    {
+     "en": "Bruh, we have been waiting for an hour.",
+     "ar": "يا عم، احنا مستنيين من ساعة."
+    },
+    {
+     "en": "He looked at the price and just said bruh.",
+     "ar": "بص على السعر وقال يا عم الحج وبس."
+    },
+    {
+     "en": "Bruh, the internet is down again in the whole street.",
+     "ar": "يا عم، النت فاصل تاني في الشارع كله."
+    },
+    {
+     "en": "Bruh moment: he waved back at someone who was not waving at him.",
+     "ar": "موقف محرج: رد التحية على حد كان مش بيسلم عليه أصلًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-000021",
+   "sentences": [
+    {
+     "en": "You fixed the engine in one day? My man!",
+     "ar": "صلحت الموتور في يوم واحد؟ يا وحش!"
+    },
+    {
+     "en": "My man, the tea is on me today.",
+     "ar": "يا بطل، الشاي عليا النهاردة."
+    },
+    {
+     "en": "He shook hands and said good job, my man.",
+     "ar": "صافحه وقاله شغل عالي يا وحش."
+    },
+    {
+     "en": "My man here sells the freshest fish in the market.",
+     "ar": "الأسطى ده بيبيع أطازة سمك في السوق كله."
+    },
+    {
+     "en": "Thank you, my man, you really helped me out.",
+     "ar": "شكرًا يا غالي، وقفت جنبي بجد."
+    },
+    {
+     "en": "My man scored the winning goal in the final.",
+     "ar": "البطل بتاعنا جاب جون الفوز في النهائي."
+    },
+    {
+     "en": "Take a seat, my man, and tell me everything.",
+     "ar": "اتفضل اقعد يا معلم، واحكيلي كل حاجة."
+    },
+    {
+     "en": "That is my man, the one who taught me carpentry.",
+     "ar": "ده الأسطى بتاعي، اللي علمني النجارة."
+    },
+    {
+     "en": "My man, you deserve all the success coming your way.",
+     "ar": "يا غالي، انت تستاهل كل النجاح اللي جايلك."
+    },
+    {
+     "en": "The coach pointed at him and shouted that is my man.",
+     "ar": "الكابتن أشار عليه وصرخ ده البطل بتاعي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000022",
+   "sentences": [
+    {
+     "en": "Morning chief, the report is ready on your desk.",
+     "ar": "صباح الخير يا ريس، التقرير جاهز على مكتبك."
+    },
+    {
+     "en": "Sure thing, chief, I will finish it before noon.",
+     "ar": "حاضر يا كابتن، هخلصه قبل الضهر."
+    },
+    {
+     "en": "The chief of the fire station visited our school.",
+     "ar": "ريس قسم المطافي زار مدرستنا."
+    },
+    {
+     "en": "Easy there, chief, one coffee is enough for you.",
+     "ar": "على مهلك يا ريس، قهوة واحدة تكفيك."
+    },
+    {
+     "en": "He calls his taxi driver chief every morning.",
+     "ar": "بيقول على سواق التاكسي يا كابتن كل صبح."
+    },
+    {
+     "en": "Chief, the customers are asking for you in the lobby.",
+     "ar": "يا ريس، في زباين بتسأل عنك في الصالة."
+    },
+    {
+     "en": "The team respects their chief because he listens to everyone.",
+     "ar": "الفريق بيحترم ريسهم عشان بيسمع للكل."
+    },
+    {
+     "en": "Whatever you say, chief, you know best.",
+     "ar": "زي ما تقول يا كابتن، انت أعرف."
+    },
+    {
+     "en": "Our chief at the workshop started as a simple worker.",
+     "ar": "الأسطى الكبير بتاعنا في الورشة بدأ عامل عادي."
+    },
+    {
+     "en": "Chief, we ran out of bread for the day.",
+     "ar": "يا ريس، العيش خلص لليوم."
+    }
+   ]
+  },
+  {
+   "id": "slg-000023",
+   "sentences": [
+    {
+     "en": "Right away, boss, the order will be ready in ten minutes.",
+     "ar": "حاضر يا كابتن، الأوردر هيكون جاهز في عشر دقايق."
+    },
+    {
+     "en": "The boss gave everyone a bonus this month.",
+     "ar": "المدير داله كل واحد مكافأة الشهر ده."
+    },
+    {
+     "en": "Whatever you need, boss, I am on it.",
+     "ar": "أي حاجة تحتاجها يا بيه، أنا عليها."
+    },
+    {
+     "en": "My boss asked me to present the project on Monday.",
+     "ar": "مديري طلب مني أقدم المشروع يوم الاتنين."
+    },
+    {
+     "en": "Thanks boss, I will not let you down.",
+     "ar": "شكرًا يا كابتن، مش هخذلك."
+    },
+    {
+     "en": "The boss of the workshop knows every machine by heart.",
+     "ar": "صاحب الورشة عارف كل مكنة عن ظهر قلب."
+    },
+    {
+     "en": "Boss, two customers are waiting at table five.",
+     "ar": "يا كابتن، في زبونين مستنيين على ترابيزة خمسة."
+    },
+    {
+     "en": "He acts like a boss but he is very kind inside.",
+     "ar": "شكله مدير قاسي بس قلبه طيب جدًا."
+    },
+    {
+     "en": "The boss wants the shop cleaned before opening.",
+     "ar": "المدير عايز المحل يتنضف قبل الفتح."
+    },
+    {
+     "en": "Ask the boss before you change anything in the menu.",
+     "ar": "اسأل المدير قبل ما تغير أي حاجة في المنيو."
+    }
+   ]
+  },
+  {
+   "id": "slg-000024",
+   "sentences": [
+    {
+     "en": "Watch your head, big guy, the door frame is low.",
+     "ar": "خد بالك من دماغك يا عملاق، عتبة الباب واطية."
+    },
+    {
+     "en": "The big guy at the door checks the tickets.",
+     "ar": "الراجل الضخم اللي على الباب بيراجع التذاكر."
+    },
+    {
+     "en": "Come here, big guy, help me lift this table.",
+     "ar": "تعالى هنا يا جبل، ساعدني أشيل الترابيزة دي."
+    },
+    {
+     "en": "Everyone calls him big guy because he is two meters tall.",
+     "ar": "كله بيقوله يا عملاق عشان طوله مترين."
+    },
+    {
+     "en": "The big guy looks scary but he is very gentle with kids.",
+     "ar": "الراجل الضخم ده شكله مخيف بس حنين جدًا مع الأطفال."
+    },
+    {
+     "en": "Hey big guy, the coach wants you on the field.",
+     "ar": "يا عملاق، الكابتن عايزك في الملعب."
+    },
+    {
+     "en": "Our big guy carried all the luggage up to the third floor.",
+     "ar": "الجبل بتاعنا شال الشنط كلها للدور التالت."
+    },
+    {
+     "en": "The big guy in our team blocks every shot.",
+     "ar": "الراجل الضخم في فريقنا بيصد كل كورة."
+    },
+    {
+     "en": "He eats like a big guy, three plates of rice at lunch.",
+     "ar": "بياكل زي الوحوش، تلت طباق رز في الغدا."
+    },
+    {
+     "en": "Do not worry, big guy, we will fix the car together.",
+     "ar": "متقلقش يا جبل، هنصلح العربية سوا."
+    }
+   ]
+  },
+  {
+   "id": "slg-000025",
+   "sentences": [
+    {
+     "en": "My old man taught me how to ride a bike.",
+     "ar": "والدي علمني أسوق عجلة."
+    },
+    {
+     "en": "His old man still works at the same factory after thirty years.",
+     "ar": "والده لسه شغال في نفس المصنع بعد تلاتين سنة."
+    },
+    {
+     "en": "The old man asked me to fix the TV antenna.",
+     "ar": "الوالد طلب مني أصلح إيريال التلفزيون."
+    },
+    {
+     "en": "Her old man was a pilot in his younger days.",
+     "ar": "والدها كان طيار في شبابه."
+    },
+    {
+     "en": "I go fishing with my old man every Friday.",
+     "ar": "بروح أصطاد سمك مع الوالد كل جمعة."
+    },
+    {
+     "en": "The old man sits in the garden drinking tea all afternoon.",
+     "ar": "الوالد بيقعد في الجنينة يشرب شاي طول العصر."
+    },
+    {
+     "en": "His old man gave him the family car for graduation.",
+     "ar": "والده اداه عربية العيلة هدية التخرج."
+    },
+    {
+     "en": "My old man never misses the Friday prayer at the mosque.",
+     "ar": "والدي عمري ما فاته صلاة الجمعة في المسجد."
+    },
+    {
+     "en": "The old man tells the best stories about the old days.",
+     "ar": "الوالد بيحكي أحلى حكايات عن زمان."
+    },
+    {
+     "en": "Her old man refuses to use a smartphone.",
+     "ar": "والدها رافض يستخدم موبايل ذكي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000026",
+   "sentences": [
+    {
+     "en": "His old lady makes the best stuffed vegetables in the family.",
+     "ar": "مراته بتعمل أحلى محشي في العيلة."
+    },
+    {
+     "en": "The old lady asked me to fix the leaking tap.",
+     "ar": "الوالدة طلبت مني أصلح الحنفية اللي بتنقط."
+    },
+    {
+     "en": "My old lady and I celebrated our anniversary at a small restaurant.",
+     "ar": "أنا ومراتي احتفلنا بذكرانا في مطعم صغير."
+    },
+    {
+     "en": "Her old lady still wakes up at dawn every day.",
+     "ar": "والدتها لسه بتصحى الفجر كل يوم."
+    },
+    {
+     "en": "The old lady next door feeds all the street cats.",
+     "ar": "الحجة اللي جنبنا بتاكل كل قطط الشارع."
+    },
+    {
+     "en": "My old lady wants me home before ten tonight.",
+     "ar": "مراتي عايزاني في البيت قبل الساعة عشرة الليلة."
+    },
+    {
+     "en": "He kissed his old lady on the forehead before leaving for work.",
+     "ar": "باس مراته على جبهتها قبل ما ينزل الشغل."
+    },
+    {
+     "en": "The old lady at the market sells homemade cheese.",
+     "ar": "الحجة اللي في السوق بتبيع جبنة بيتي."
+    },
+    {
+     "en": "His old lady runs the household like a general.",
+     "ar": "مراته بتدير البيت زي قائد جيش."
+    },
+    {
+     "en": "The old lady gave the kids biscuits and juice.",
+     "ar": "الوالدة دات للأطفال بسكوت وعصير."
+    }
+   ]
+  },
+  {
+   "id": "slg-000027",
+   "sentences": [
+    {
+     "en": "The Mrs wants us to repaint the kitchen this summer.",
+     "ar": "مراتي عايزانا ندهن المطبخ الصيف ده."
+    },
+    {
+     "en": "I have to check with the Mrs before I book the tickets.",
+     "ar": "لازم أسأل مراتي قبل ما أحجز التذاكر."
+    },
+    {
+     "en": "The Mrs packed me lunch for the trip.",
+     "ar": "مراتي جهزتلي أكل للسفر."
+    },
+    {
+     "en": "He says the Mrs makes all the big decisions at home.",
+     "ar": "بيقول إن مراته هي اللي بتاخد القرارات الكبيرة في البيت."
+    },
+    {
+     "en": "The Mrs and I are celebrating ten years together.",
+     "ar": "أنا ومراتي بنحتفل بعشر سنين مع بعض."
+    },
+    {
+     "en": "Tell the Mrs I said thank you for the lovely dinner.",
+     "ar": "قول لمراتك شكرًا على العشا الجميل."
+    },
+    {
+     "en": "The Mrs called twice while you were in the meeting.",
+     "ar": "مراتك كلمت مرتين وانت في الاجتماع."
+    },
+    {
+     "en": "My friend says the Mrs always wins their arguments.",
+     "ar": "صاحبي بيقول إن مراته دايمًا بتكسب أي نقاش بينهم."
+    },
+    {
+     "en": "The Mrs picked this wallpaper, not me.",
+     "ar": "مراتي هي اللي اختارت ورق الحيطة ده، مش أنا."
+    },
+    {
+     "en": "How is the Mrs doing after her operation?",
+     "ar": "إزاي مراتك بعد العملية؟"
+    }
+   ]
+  },
+  {
+   "id": "slg-000028",
+   "sentences": [
+    {
+     "en": "My hubby surprised me with a weekend trip to the seaside.",
+     "ar": "جوزي فاجأني برحلة ويك إند على البحر."
+    },
+    {
+     "en": "Her hubby works as an engineer in a big company.",
+     "ar": "جوزها بيشتغل مهندس في شركة كبيرة."
+    },
+    {
+     "en": "Hubby, can you help me carry these bags upstairs?",
+     "ar": "يا جوزي، ممكن تساعدني أشيل الشنط دي فوق؟"
+    },
+    {
+     "en": "Her hubby cooks dinner every Saturday.",
+     "ar": "جوزها بيطبخ العشا كل سبت."
+    },
+    {
+     "en": "My hubby fixed the washing machine all by himself.",
+     "ar": "جوزي صلح الغسالة لوحده خالص."
+    },
+    {
+     "en": "She met her hubby at university fifteen years ago.",
+     "ar": "اتعرفت على جوزها في الجامعة من خمستاشر سنة."
+    },
+    {
+     "en": "Hubby forgot our anniversary again this year.",
+     "ar": "جوزي نسي ذكرانا تاني السنة دي."
+    },
+    {
+     "en": "Her hubby waters the plants every morning before work.",
+     "ar": "جوزها بيسقي الزرع كل صبح قبل الشغل."
+    },
+    {
+     "en": "My hubby is teaching our son how to play chess.",
+     "ar": "جوزي بيعلم ابننا يلعب شطرنج."
+    },
+    {
+     "en": "Her hubby brought her breakfast in bed on her birthday.",
+     "ar": "جوزها جابلها الفطار على السرير يوم عيد ميلادها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000029",
+   "sentences": [
+    {
+     "en": "My wifey makes the house feel like a home.",
+     "ar": "مراتي بتخلي البيت له روح ودفا."
+    },
+    {
+     "en": "Wifey, dinner smells amazing, what did you cook?",
+     "ar": "يا مراتي، ريحة الأكل تحفة، طبختي إيه؟"
+    },
+    {
+     "en": "He took his wifey to the movies for her birthday.",
+     "ar": "خد مراته السينما في عيد ميلادها."
+    },
+    {
+     "en": "His wifey is the manager of a big hospital department.",
+     "ar": "مراته مديرة قسم كبير في مستشفى."
+    },
+    {
+     "en": "Wifey said the sofa should go against the wall.",
+     "ar": "مراتي قالت إن الكنبة المفروض تتحط على الحيطة."
+    },
+    {
+     "en": "He calls his wife wifey whenever he wants something.",
+     "ar": "بيقول لمراته يا حبيبتي بالدلع لما يكون عايز حاجة."
+    },
+    {
+     "en": "My wifey and I go for a walk every evening.",
+     "ar": "أنا ومراتي بنتمشى مع بعض كل ليلة."
+    },
+    {
+     "en": "His wifey baked a cake for the whole office.",
+     "ar": "مراته عملت جاتوه لكل المكتب."
+    },
+    {
+     "en": "Wifey, the kids are waiting for their bedtime story.",
+     "ar": "يا مراتي، العيال مستنية حكاية قبل النوم."
+    },
+    {
+     "en": "He always says his wifey is his best friend.",
+     "ar": "دايمًا بيقول إن مراته أقرب صاحبة ليه."
+    }
+   ]
+  },
+  {
+   "id": "slg-000030",
+   "sentences": [
+    {
+     "en": "Come on kiddo, finish your milk before school.",
+     "ar": "يلا يا بطل، خلص لبنك قبل المدرسة."
+    },
+    {
+     "en": "The kiddo scored a goal in his first football match.",
+     "ar": "البطل الصغير جاب جون في أول ماتش كورة ليه."
+    },
+    {
+     "en": "Hey kiddo, do you want some ice cream?",
+     "ar": "يا حبيبي، عايز أيس كريم؟"
+    },
+    {
+     "en": "My little kiddo lost his first tooth yesterday.",
+     "ar": "ابني الصغير وقعت أول سنة ليه مبارح."
+    },
+    {
+     "en": "The teacher said the kiddo is doing great in math.",
+     "ar": "المدرسة قالت إن البطل شاطر جدًا في الحساب."
+    },
+    {
+     "en": "Kiddo, wash your hands before you touch the food.",
+     "ar": "يا ابني، اغسل إيديك قبل ما تمسك الأكل."
+    },
+    {
+     "en": "The kiddo next door loves drawing dinosaurs.",
+     "ar": "واد الجيران الصغير بيحب يرسم ديناصورات."
+    },
+    {
+     "en": "Good night kiddo, sweet dreams.",
+     "ar": "تصبح على خير يا بطل، أحلام سعيدة."
+    },
+    {
+     "en": "The kiddo cried when his balloon flew away.",
+     "ar": "الطفل عيط لما البالونة طارت منه."
+    },
+    {
+     "en": "Our kiddo won first place in the reading competition.",
+     "ar": "بطلنا كسب المركز الأول في مسابقة القراءة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000031",
+   "sentences": [
+    {
+     "en": "The rugrat spilled juice all over the new carpet.",
+     "ar": "الطفل الصغير سكب العصير على السجادة الجديدة كلها."
+    },
+    {
+     "en": "My sister's rugrats are visiting this weekend.",
+     "ar": "عيال أختي الصغيرين جايين يزورونا في الأجازة."
+    },
+    {
+     "en": "That little rugrat hid my keys under the sofa.",
+     "ar": "الطفل الشقي ده خبى مفاتيحي تحت الكنبة."
+    },
+    {
+     "en": "The rugrat drew on the wall with my pens.",
+     "ar": "الطفل رسم على الحيطة بأقلامي."
+    },
+    {
+     "en": "Two rugrats were chasing each other around the garden.",
+     "ar": "طفلين صغيرين كانوا بيجروا ورا بعض في الجنينة."
+    },
+    {
+     "en": "The rugrat finally fell asleep after three stories.",
+     "ar": "الطفل نام أخيرًا بعد تلت حكايات."
+    },
+    {
+     "en": "Our rugrat starts nursery school next month.",
+     "ar": "طفلنا الصغير هيبدأ الحضانة الشهر الجاي."
+    },
+    {
+     "en": "The rugrat ate all the chocolate before dinner.",
+     "ar": "الطفل أكل الشوكولاتة كلها قبل العشا."
+    },
+    {
+     "en": "Her rugrats love playing in the mud after the rain.",
+     "ar": "عيالها الصغيرين بيحبوا يلعبوا في الطين بعد المطر."
+    },
+    {
+     "en": "The little rugrat fell asleep in the car on the way home.",
+     "ar": "الطفل الصغير نام في العربية واحنا راجعين البيت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000032",
+   "sentences": [
+    {
+     "en": "The munchkin fell asleep hugging his teddy bear.",
+     "ar": "الطفل الصغير نام وهو حضن الدبدوب بتاعه."
+    },
+    {
+     "en": "Come here, munchkin, grandma baked cookies for you.",
+     "ar": "تعالى هنا يا حبيبي، تدتي عملالك بسكوت."
+    },
+    {
+     "en": "Her little munchkin said his first word today.",
+     "ar": "ابنها الصغير قال أول كلمة ليه النهاردة."
+    },
+    {
+     "en": "The munchkin at the party ate three pieces of cake.",
+     "ar": "الطفل الصغير في الحفلة أكل تلت قطع جاتوه."
+    },
+    {
+     "en": "My munchkin loves bath time more than anything.",
+     "ar": "ابني الصغير بيحب وقت الحمام أكتر من أي حاجة."
+    },
+    {
+     "en": "The little munchkin waved goodbye from the window.",
+     "ar": "الطفل الصغير لوّح بإيده من الشباك وداعًا."
+    },
+    {
+     "en": "Our munchkin is learning to count with her fingers.",
+     "ar": "بنتنا الصغيرة بتتعلم تعد بصوابعها."
+    },
+    {
+     "en": "The munchkin hid under the table during the game.",
+     "ar": "الطفل الصغير اتخبى تحت الترابيزة وقت اللعبة."
+    },
+    {
+     "en": "That munchkin over there is my nephew.",
+     "ar": "الطفل الصغير اللي هناك ده ابن أخويا."
+    },
+    {
+     "en": "The munchkin refused to wear his shoes to the park.",
+     "ar": "الطفل رفض يلبس جزمته وهو رايح الجنينة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000033",
+   "sentences": [
+    {
+     "en": "That brat screamed until his mother bought him the toy.",
+     "ar": "الطفل المدلع ده صرخ لحد ما أمه اشتريتله اللعبة."
+    },
+    {
+     "en": "Stop acting like a brat and share your sweets.",
+     "ar": "بطّل تدلع وشيل منها، وشارك الحلاوة مع غيرك."
+    },
+    {
+     "en": "The little brat broke my phone and did not even apologize.",
+     "ar": "الطفل المدلع كسر موبايلي ومعتذرش كمان."
+    },
+    {
+     "en": "Her son is such a brat when he does not get enough sleep.",
+     "ar": "ابنها بيبقى مزعج جدًا لما ماينامش كويس."
+    },
+    {
+     "en": "The brat next door keeps ringing our bell and running away.",
+     "ar": "الطفل الشقي اللي جنبنا بيجرس علينا ويجري."
+    },
+    {
+     "en": "He was a spoiled brat as a child but grew into a kind man.",
+     "ar": "كان طفل مدلع وهو صغير بس كبر وبقى إنسان طيب."
+    },
+    {
+     "en": "The brat refused to eat anything but fries.",
+     "ar": "الطفل المدلع رفض ياكل أي حاجة غير البطاطس."
+    },
+    {
+     "en": "My cousin's kid is a real brat at restaurants.",
+     "ar": "ابن قريبتي بيبقى مزعج جدًا في المطاعم."
+    },
+    {
+     "en": "The teacher sent the brat to the principal's office.",
+     "ar": "المدرس بعت الطفل الشقي لمكتب الناظر."
+    },
+    {
+     "en": "Do not be a brat, wait for your turn like everyone else.",
+     "ar": "متتدلعش، استنى دورك زي كل الناس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000034",
+   "sentences": [
+    {
+     "en": "Nobody asked for your opinion, wise guy.",
+     "ar": "محدش سأل على رأيك يا أستاذ فهلوة."
+    },
+    {
+     "en": "The wise guy in class always has a comment about everything.",
+     "ar": "الواد اللي بيستذكى في الفصل عنده دايمًا تعليق على كل حاجة."
+    },
+    {
+     "en": "Do not be a wise guy with the customers, it costs us money.",
+     "ar": "متستذكاش على الزباين، ده بيخسرنا فلوس."
+    },
+    {
+     "en": "The wise guy answered the teacher with a joke and got punished.",
+     "ar": "الواد اللي بيستعرض رد على المدرس بنكتة واتعاقب."
+    },
+    {
+     "en": "Every office has a wise guy who thinks he knows better than the boss.",
+     "ar": "أي مكتب فيه واحد مستذكى فاكر إنه يعرف أكتر من المدير."
+    },
+    {
+     "en": "Listen, wise guy, I have been doing this job for twenty years.",
+     "ar": "اسمع يا فهلوي، أنا بشتغل في المجال ده من عشرين سنة."
+    },
+    {
+     "en": "The wise guy parked his car in two spots at once.",
+     "ar": "الواد الفهلوي وقف عربيته على مكانين في نفس الوقت."
+    },
+    {
+     "en": "He always plays the wise guy at family gatherings.",
+     "ar": "دايمًا بيعمل دور الفهلوي في لمة العيلة."
+    },
+    {
+     "en": "The wise guy in the queue tried to slip in front of everyone.",
+     "ar": "الواد المستذكى في الطابور حاول يدخل قبل الكل."
+    },
+    {
+     "en": "Stop being a wise guy and just follow the instructions.",
+     "ar": "بطّل استذكاء وامشي على التعليمات وبس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000035",
+   "sentences": [
+    {
+     "en": "The smart aleck corrected the teacher in front of everyone.",
+     "ar": "الواد اللي بيستذكى صحح للمدرس قدام الفصل كله."
+    },
+    {
+     "en": "Nobody likes a smart aleck at work meetings.",
+     "ar": "محدش بيحب الواحد المستذكى في اجتماعات الشغل."
+    },
+    {
+     "en": "That smart aleck always has an answer for everything.",
+     "ar": "الواد المستذكى ده عنده دايمًا إجابة لكل حاجة."
+    },
+    {
+     "en": "She is such a smart aleck, she finished the puzzle in five minutes and bragged about it.",
+     "ar": "هي شاطرة وبتتفاخر، خلصت اللغز في خمس دقايق وفضلت تتكلم عن ده."
+    },
+    {
+     "en": "The smart aleck in our group ruined the surprise party.",
+     "ar": "الواد اللي بيعرف كل حاجة في الجروب ضيع مفاجأة الحفلة."
+    },
+    {
+     "en": "Do not be a smart aleck with your grandmother.",
+     "ar": "متستذكاش على تدتك."
+    },
+    {
+     "en": "The smart aleck raised his hand before the question was even finished.",
+     "ar": "الواد المستذكى رفع إيده قبل ما السؤال يخلص أصلًا."
+    },
+    {
+     "en": "He acts like a smart aleck but he fails every exam.",
+     "ar": "بيتصرف إنه يعرف كل حاجة بس بيسقط في كل امتحان."
+    },
+    {
+     "en": "The smart aleck told the chef how to cook his own soup.",
+     "ar": "الواد المستذكى قال للشيف يطبخ الشوربة بتاعته إزاي."
+    },
+    {
+     "en": "Our smart aleck cousin explains the rules then breaks them himself.",
+     "ar": "ابن خالتي المستذكى بيشرح القوانين وبعدين يكسرها بنفسه."
+    }
+   ]
+  },
+  {
+   "id": "slg-000036",
+   "sentences": [
+    {
+     "en": "The know-it-all in our class argues with the teacher daily.",
+     "ar": "الواد اللي فاكر نفسه عارف كل حاجة في فصلنا بيتناقش مع المدرس كل يوم."
+    },
+    {
+     "en": "My cousin is a know-it-all, he corrects everyone at dinner.",
+     "ar": "ابن خالي فاكر نفسه موسوعة، بيصحح لكل حد على السفرة."
+    },
+    {
+     "en": "Nobody invited the know-it-all to explain the menu.",
+     "ar": "محدش طلب من الأستاذ اللي يعرف كل حاجة يشرح المنيو."
+    },
+    {
+     "en": "She is such a know-it-all about cars, it gets boring.",
+     "ar": "هي عارفة كل حاجة عن العربيات، وده بيملل."
+    },
+    {
+     "en": "The know-it-all gave wrong directions with full confidence.",
+     "ar": "الواد اللي فاهم كل حاجة وصف الطريق غلط وهو واثق تمامًا."
+    },
+    {
+     "en": "Being a know-it-all will not win you friends here.",
+     "ar": "إنك تمثّل إنك عارف كل حاجة مش هيجيبلك أصحاب هنا."
+    },
+    {
+     "en": "The know-it-all at work interrupts everyone mid-sentence.",
+     "ar": "الواحد اللي فاكر نفسه فاهم في الشغل بيقاطع الكل في نص الكلام."
+    },
+    {
+     "en": "He is a nice guy but a bit of a know-it-all about football.",
+     "ar": "هو إنسان كويس بس شوية فهلوي في موضوع الكورة."
+    },
+    {
+     "en": "Our know-it-all neighbor gives advice about gardening every morning.",
+     "ar": "جارنا اللي عارف كل حاجة بيدي نصايح في الزراعة كل صبح."
+    },
+    {
+     "en": "Even the know-it-all could not answer that question.",
+     "ar": "حتى اللي فاكر نفسه موسوعة معرفش يجاوب على السؤال ده."
+    }
+   ]
+  },
+  {
+   "id": "slg-000037",
+   "sentences": [
+    {
+     "en": "The busybody next door watches everyone from her window.",
+     "ar": "الست الفضولية اللي جنبنا بتراقب الكل من شباكها."
+    },
+    {
+     "en": "Do not be such a busybody, it is none of your business.",
+     "ar": "متبقاش فضولي كده، ده مش شغلك."
+    },
+    {
+     "en": "That busybody told the whole street about the new car.",
+     "ar": "الواحد الفضولي ده قال للشارع كله على العربية الجديدة."
+    },
+    {
+     "en": "Every family has a busybody who knows all the gossip.",
+     "ar": "كل عيلة فيها واحد فضولي عارف كل الأخبار."
+    },
+    {
+     "en": "The busybody at work reads everyone's emails over their shoulders.",
+     "ar": "الفضولي في الشغل بيقرا إيميلات الناس من ورا كتفهم."
+    },
+    {
+     "en": "She is a sweet lady but a bit of a busybody.",
+     "ar": "هي ست لطيفة بس فضولية شوية."
+    },
+    {
+     "en": "The busybody asked the bride about her wedding budget in public.",
+     "ar": "الفضولية سألت العروسة عن ميزانية الفرح قدام الناس."
+    },
+    {
+     "en": "Our busybody neighbor counts how many bags we carry home.",
+     "ar": "جارتنا الفضولية بتعد الشنط اللي بنطلع بيها البيت."
+    },
+    {
+     "en": "The busybody called my mother to report what time I came home.",
+     "ar": "الفضولي كلم ماما يبلغها أنا جيت البيت الساعة كام."
+    },
+    {
+     "en": "A busybody in the market told everyone my salary.",
+     "ar": "واحد فضولي في السوق قال للكل مرتبي كام."
+    }
+   ]
+  },
+  {
+   "id": "slg-000038",
+   "sentences": [
+    {
+     "en": "He became a couch potato after he hurt his knee.",
+     "ar": "بقى قاعد قدام التلفزيون طول اليوم بعد ما ركبته وجعته."
+    },
+    {
+     "en": "My brother is a couch potato, he never leaves the sofa.",
+     "ar": "أخويا كسلان، عمرو ما بيقوم من على الكنبة."
+    },
+    {
+     "en": "Stop being a couch potato and come play football with us.",
+     "ar": "بطّل قعودة قدام التلفزيون وتعالى العب كورة معانا."
+    },
+    {
+     "en": "On rainy days I turn into a complete couch potato.",
+     "ar": "في أيام المطر بتحول لقاعدة على الكنبة بالكامل."
+    },
+    {
+     "en": "The couch potato ordered food three times in one day.",
+     "ar": "الكسلان ده طلب أكل تلت مرات في يوم واحد."
+    },
+    {
+     "en": "She calls herself a couch potato but she reads five books a week.",
+     "ar": "بتقول على نفسها قاعدة بيت بس بيقرا خمس كتب في الأسبوع."
+    },
+    {
+     "en": "Our couch potato cat sleeps eighteen hours a day.",
+     "ar": "قطتنا الكسلانة بتنام معظم ساعات اليوم."
+    },
+    {
+     "en": "He was a couch potato all winter and gained ten kilos.",
+     "ar": "قعد قدام التلفزيون الشتا كله وزاد عشرة كيلو."
+    },
+    {
+     "en": "A couch potato lifestyle will ruin your back.",
+     "ar": "قعدة الكنبة طول اليوم هتبوظ ضهرك."
+    },
+    {
+     "en": "The kids became couch potatoes during the summer holiday.",
+     "ar": "العيال بقوا لازقين في التلفزيون طول أجازة الصيف."
+    }
+   ]
+  },
+  {
+   "id": "slg-000039",
+   "sentences": [
+    {
+     "en": "The slacker in our group never does his part of the project.",
+     "ar": "الواد الكسلان في جروبنا عمرو ما بيعمل جزءه في المشروع."
+    },
+    {
+     "en": "He was a slacker in school but now he runs his own company.",
+     "ar": "كان كسلان في المدرسة بس دلوقتي عنده شركته الخاصة."
+    },
+    {
+     "en": "The boss fired the slacker who slept in the storage room.",
+     "ar": "المدير فصل الموظف الكسلان اللي كان بينام في المخزن."
+    },
+    {
+     "en": "Do not be a slacker, the exam is in two days.",
+     "ar": "متهربش من المذاكرة، الامتحان بعد يومين."
+    },
+    {
+     "en": "That slacker always finds excuses to skip training.",
+     "ar": "الكسلان ده دايمًا بيلاقي حجة يهرب من التمرين."
+    },
+    {
+     "en": "She called her brother a slacker for missing the family lunch.",
+     "ar": "قالت على أخوها كسلان عشان ما جاش غدا العيلة."
+    },
+    {
+     "en": "The slacker submitted his homework a week late.",
+     "ar": "الكسلان سلّم واجبه بعد أسبوع كامل من المعاد."
+    },
+    {
+     "en": "Every office has one slacker who drinks coffee all day.",
+     "ar": "كل مكتب فيه واحد كسلان بيشرب قهوة طول اليوم."
+    },
+    {
+     "en": "He stopped being a slacker when he became a father.",
+     "ar": "بطّل كسل لما بقى أب."
+    },
+    {
+     "en": "The coach benched the slacker for the whole season.",
+     "ar": "الكابتن قاعد الكسلان على الدكة طول الموسم."
+    }
+   ]
+  },
+  {
+   "id": "slg-000040",
+   "sentences": [
+    {
+     "en": "My father is a workaholic, he never takes a day off.",
+     "ar": "والدي مدمن شغل، عمرو ما بياخد أجازة."
+    },
+    {
+     "en": "The workaholic answered emails during his daughter's wedding.",
+     "ar": "مدمن الشغل ده كان بيرد على الإيميلات في فرح بنته."
+    },
+    {
+     "en": "She is such a workaholic that she forgot her own birthday.",
+     "ar": "هي مدمنة شغل لدرجة إنها نسيت عيد ميلادها."
+    },
+    {
+     "en": "The doctor told the workaholic to rest for a month.",
+     "ar": "الدكتور قال لمدمن الشغل يرتاح شهر كامل."
+    },
+    {
+     "en": "Being a workaholic destroyed his health by forty.",
+     "ar": "إدمان الشغل ضيع صحته وهو في الأربعين."
+    },
+    {
+     "en": "Our manager is a workaholic who sleeps four hours a night.",
+     "ar": "مديرنا مدمن شغل بينام أربع ساعات في الليلة."
+    },
+    {
+     "en": "The workaholic brought his laptop to the beach.",
+     "ar": "مدمن الشغل جاب اللابتوب معاه على البحر."
+    },
+    {
+     "en": "He became a workaholic after he started his own business.",
+     "ar": "بقى مدمن شغل بعد ما فتح مشروعه الخاص."
+    },
+    {
+     "en": "The workaholic in the family missed every holiday gathering.",
+     "ar": "مدمن الشغل في العيلة فاتته كل لمة في الأعياد."
+    },
+    {
+     "en": "Her workaholic husband finally agreed to a vacation.",
+     "ar": "جوزها مدمن الشغل وافق أخيرًا على أجازة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000041",
+   "sentences": [
+    {
+     "en": "My cousin is a party animal, he goes out every single night.",
+     "ar": "ابن خالي بيحب السهر، بيخرج كل ليلة."
+    },
+    {
+     "en": "The party animal danced until the sun came up.",
+     "ar": "عاشق الحفلات ده رقص لحد ما الشمس طلعت."
+    },
+    {
+     "en": "She was a party animal in college but now she prefers quiet evenings.",
+     "ar": "كانت بتحب السهر في الجامعة بس دلوقتي بتحب السهرات الهادية."
+    },
+    {
+     "en": "That party animal knows every club in the city.",
+     "ar": "الواد ده بيحب السهر وعارف كل الأماكن في المدينة."
+    },
+    {
+     "en": "The party animal of the group always starts the dancing.",
+     "ar": "عاشق الحفلات في الجروب دايمًا هو اللي بيبدأ الرقص."
+    },
+    {
+     "en": "He is too much of a party animal to stay home on weekends.",
+     "ar": "بيحب السهر جدًا لدرجة إنه مش بيقدر يقعد في البيت في الأجازات."
+    },
+    {
+     "en": "The party animal invited fifty people to his birthday.",
+     "ar": "عاشق الحفلات عزم خمسين واحد على عيد ميلاده."
+    },
+    {
+     "en": "Even the party animal got tired after three weddings in one week.",
+     "ar": "حتى محب السهر اتعب بعد تلت أفراح في أسبوع واحد."
+    },
+    {
+     "en": "My roommate is a party animal and I cannot sleep before two.",
+     "ar": "صاحبي في السكن بيحب السهر وأنا مش بقدر أنام قبل الساعة اتنين."
+    },
+    {
+     "en": "The party animal organized the best New Year party in town.",
+     "ar": "عاشق الحفلات نظم أحلى حفلة رأس سنة في المنطقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000042",
+   "sentences": [
+    {
+     "en": "I am a night owl, I do my best work after midnight.",
+     "ar": "أنا بحب السهر، بشتغل أحسن شغل بعد نص الليل."
+    },
+    {
+     "en": "My sister is a night owl, she studies until three in the morning.",
+     "ar": "أختي بتسهر، بتذاكر لحد الساعة تلاتة الفجر."
+    },
+    {
+     "en": "The night owl next door plays music late at night.",
+     "ar": "الجار اللي بيسهر بيشغل مزيكا بالليل متأخر."
+    },
+    {
+     "en": "As a night owl, mornings feel like torture to me.",
+     "ar": "أنا بحب السهر، فالصبح بيبقى عذاب بالنسبالي."
+    },
+    {
+     "en": "The night owl finished the whole book before sunrise.",
+     "ar": "السهران ده خلص الكتاب كله قبل الشروق."
+    },
+    {
+     "en": "Being a night owl is hard when your job starts at seven.",
+     "ar": "إنك تحب السهر حاجة صعبة لما شغلك يبدأ الساعة سبعة."
+    },
+    {
+     "en": "He is such a night owl, he answers messages at dawn.",
+     "ar": "هو سهران جدًا، بيرد على الرسايل وقت الفجر."
+    },
+    {
+     "en": "The night owl in our house makes tea at two in the morning.",
+     "ar": "السهران في بيتنا بيعمل شاي الساعة اتنين بالليل."
+    },
+    {
+     "en": "My night owl habits got worse during the holiday.",
+     "ar": "عادات السهر عندي زادت في الأجازة."
+    },
+    {
+     "en": "The night owl finally slept when the birds started singing.",
+     "ar": "السهران نام أخيرًا لما العصافير بدأت تغني."
+    }
+   ]
+  },
+  {
+   "id": "slg-000043",
+   "sentences": [
+    {
+     "en": "My grandfather is an early bird, he wakes up before dawn.",
+     "ar": "جدي بيصحى بدري، بيصحى قبل الفجر."
+    },
+    {
+     "en": "The early bird in our family makes breakfast for everyone.",
+     "ar": "اللي بيصحى بدري في عيلتنا بيعمل الفطار للكل."
+    },
+    {
+     "en": "She is an early bird, she finishes her workout by six.",
+     "ar": "هي بتصحى بدري، بتخلص تمرينها الساعة ستة."
+    },
+    {
+     "en": "The early bird catches the best tomatoes at the market.",
+     "ar": "اللي بيصحى بدري بيلاقي أحسن طماطم في السوق."
+    },
+    {
+     "en": "He became an early bird after he joined the army.",
+     "ar": "بقى بيصحى بدري بعد ما دخل الجيش."
+    },
+    {
+     "en": "The early bird got to the sale before the crowd.",
+     "ar": "اللي صحي بدري وصل للتخفيضات قبل الزحمة."
+    },
+    {
+     "en": "My mother is an early bird, she reads the news at five.",
+     "ar": "ماما بتصحى بدري، بتقرا الأخبار الساعة خمسة."
+    },
+    {
+     "en": "The early bird in the office opens all the windows.",
+     "ar": "اللي بييجي بدري للمكتب بيفتح كل الشبابيك."
+    },
+    {
+     "en": "Being an early bird helped him finish the marathon.",
+     "ar": "إنه بيصحى بدري ساعده يخلص الماراثون."
+    },
+    {
+     "en": "The early bird always gets the freshest bread from the bakery.",
+     "ar": "اللي بيصحى بدري دايمًا بيلاقي أطازة عيش من الفرن."
+    }
+   ]
+  },
+  {
+   "id": "slg-000044",
+   "sentences": [
+    {
+     "en": "My uncle is a loner, he lives by himself in the mountains.",
+     "ar": "عمي بيحب العزلة، عايش لوحده في الجبال."
+    },
+    {
+     "en": "The loner at school eats lunch by himself every day.",
+     "ar": "الواد اللي بيحب العزلة في المدرسة بياكل لوحده كل يوم."
+    },
+    {
+     "en": "She is not rude, she is just a loner who loves quiet.",
+     "ar": "هي مش وحشة، هي بس بتحب تقعد لوحدها في هدوء."
+    },
+    {
+     "en": "The loner in the office never joins us for coffee.",
+     "ar": "الزميل اللي بيحب العزلة في المكتب عمرو ما بيشرب قهوة معانا."
+    },
+    {
+     "en": "He was a loner as a kid but has many friends now.",
+     "ar": "كان بيحب العزلة وهو صغير بس عنده أصحاب كتير دلوقتي."
+    },
+    {
+     "en": "The old loner feeds the birds in the park every morning.",
+     "ar": "العجوز اللي بيحب العزلة بياكل العصافير في الجنينة كل صبح."
+    },
+    {
+     "en": "Being a loner does not mean being unhappy.",
+     "ar": "إنك تحب العزلة مش معناه إنك تعيس."
+    },
+    {
+     "en": "The loner refused every invitation to the team dinners.",
+     "ar": "اللي بيحب العزلة رفض كل عزومة على عشا الفريق."
+    },
+    {
+     "en": "My neighbor is a loner, he waves but never talks.",
+     "ar": "جاري بيحب العزلة، بيلوح بإيده بس مش بيتكلم."
+    },
+    {
+     "en": "The loner finally joined the book club after a year of invitations.",
+     "ar": "اللي بيحب العزلة انضم أخيرًا لنادي الكتاب بعد سنة من الدعوات."
+    }
+   ]
+  },
+  {
+   "id": "slg-000045",
+   "sentences": [
+    {
+     "en": "The weirdo next door collects hundreds of plastic frogs.",
+     "ar": "الجار الغريب اللي جنبنا بيجمع مئات الضفادع البلاستيك."
+    },
+    {
+     "en": "Everyone calls him a weirdo because he wears slippers in winter.",
+     "ar": "كله بيقول عليه غريب عشان بيلبس شبشب في الشتا."
+    },
+    {
+     "en": "I am a bit of a weirdo, I love cold pizza for breakfast.",
+     "ar": "أنا غريب شوية، بحب البيتزا الساقعة في الفطار."
+    },
+    {
+     "en": "The weirdo at the bus stop talks to pigeons.",
+     "ar": "الراجل الغريب عند موقف الأوتوبيس بيكلم الحمام."
+    },
+    {
+     "en": "She is a lovely weirdo, always laughing at her own jokes.",
+     "ar": "هي غريبة بس لطيفة، دايمًا بتضحك على نكاتها بنفسها."
+    },
+    {
+     "en": "My friends call me a weirdo for eating watermelon with salt.",
+     "ar": "صحابي بيقولوا عليا غريب عشان بياكل البطيخ بالملح."
+    },
+    {
+     "en": "The weirdo in our class knew everything about insects.",
+     "ar": "الواد الغريب في فصلنا كان عارف كل حاجة عن الحشرات."
+    },
+    {
+     "en": "That old weirdo dances in the rain every year.",
+     "ar": "العجوز الغريب ده بيرقص تحت المطر كل سنة."
+    },
+    {
+     "en": "Being a weirdo is fine, at least you are honest.",
+     "ar": "إنك تبقى غريب حاجة عادية، المهم تكون صريح."
+    },
+    {
+     "en": "The weirdo brought his pet chicken to the picnic.",
+     "ar": "الراجل الغريب جاب الفرخة بتاعته في الخروجة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000046",
+   "sentences": [
+    {
+     "en": "The creep kept staring at people on the train.",
+     "ar": "الراجل المريب فضل يبص على الناس في القطر."
+    },
+    {
+     "en": "She told her friend about the creep at the gym who follows her.",
+     "ar": "حكت لصاحبتها عن الواد المقزز في الجيم اللي بيتبعها."
+    },
+    {
+     "en": "The security guard asked the creep to leave the shop.",
+     "ar": "راجل الأمن طلب من الشخص المريب يمشي من المحل."
+    },
+    {
+     "en": "That creep sends strange messages to everyone in the building.",
+     "ar": "الواد المريب ده بيبعت رسايل غريبة لكل سكان العمارة."
+    },
+    {
+     "en": "The creep parked outside her house for three nights in a row.",
+     "ar": "الشخص المريب وقف بعربيته قدام بيتها تلت ليالي ورا بعض."
+    },
+    {
+     "en": "Do not be a creep, stop following people with your camera.",
+     "ar": "متبقاش مريب كده، بطّل تتبع الناس بالكاميرا."
+    },
+    {
+     "en": "The creep was reported to the police by the neighbors.",
+     "ar": "الجيران بلغوا الشرطة عن الشخص المريب."
+    },
+    {
+     "en": "She felt uncomfortable because a creep sat too close on the bus.",
+     "ar": "حست بعدم راحة لأن واحد مريب قعد قريب منها جدًا في الأوتوبيس."
+    },
+    {
+     "en": "The creep at the café kept asking personal questions.",
+     "ar": "الواد المريب في القهوة فضل يسأل أسئلة شخصية."
+    },
+    {
+     "en": "Nobody trusts the creep who lies about where he lives.",
+     "ar": "محدش بيثق في الشخص المريب اللي بيكدب في سكنه فين."
+    }
+   ]
+  },
+  {
+   "id": "slg-000047",
+   "sentences": [
+    {
+     "en": "The jerk pushed in front of the whole queue.",
+     "ar": "الواد قليل الذوق دخل في الطابور قبل الكل."
+    },
+    {
+     "en": "He was a jerk to the waiter for no reason.",
+     "ar": "كان وحش مع الجرسون من غير أي سبب."
+    },
+    {
+     "en": "That jerk parked his car and blocked our gate.",
+     "ar": "الواد قليل الذوق ده وقف عربيته وقفل بابنا."
+    },
+    {
+     "en": "She broke up with the jerk who lied to her.",
+     "ar": "سابت الواد الوحش اللي كدب عليها."
+    },
+    {
+     "en": "The jerk laughed when the old man dropped his bags.",
+     "ar": "الواد قليل الذوق ضحك لما الراجل العجوز وقعت منه الشنط."
+    },
+    {
+     "en": "Do not be a jerk, help your sister with the boxes.",
+     "ar": "متبقاش وحش، ساعد أختك في الكراتين."
+    },
+    {
+     "en": "The jerk at work takes credit for everyone's ideas.",
+     "ar": "الواد الوحش في الشغل بينسب أفكار الكل لنفسه."
+    },
+    {
+     "en": "Only a jerk would leave the table without paying.",
+     "ar": "بس واحد قليل الذوق اللي يمشي من على الترابيزة من غير ما يدفع."
+    },
+    {
+     "en": "The jerk honked at the ambulance instead of moving.",
+     "ar": "الواد قليل الذوق زمّر على الإسعاف بدل ما يفتحلها الطريق."
+    },
+    {
+     "en": "He apologized for being a jerk at the meeting.",
+     "ar": "اعتذر إنه كان وحش في الاجتماع."
+    }
+   ]
+  },
+  {
+   "id": "slg-000048",
+   "sentences": [
+    {
+     "en": "My little brother is a dork, he wears socks with sandals.",
+     "ar": "أخويا الصغير بيتصرف بشكل مضحك، بيلبس شراب مع صندل."
+    },
+    {
+     "en": "The dork tripped over his own shoelaces in front of everyone.",
+     "ar": "الواد اتعثر في رباط جزمته قدام الناس كلها."
+    },
+    {
+     "en": "She is a sweet dork who loves old movies.",
+     "ar": "هي بنت لطيفة بس بتتصرف ببراءة غريبة، بتحب الأفلام القديمة."
+    },
+    {
+     "en": "I felt like a dork when I waved at the wrong person.",
+     "ar": "حسيت إني غبي لما لوحت لشخص غلط."
+    },
+    {
+     "en": "The dork wore his shirt backwards to the party.",
+     "ar": "الواد لبس قميصه بالمقلوب في الحفلة."
+    },
+    {
+     "en": "He is a dork but everyone loves him anyway.",
+     "ar": "هو بيتصرف بشكل مضحك بس الكل بيحبه برضه."
+    },
+    {
+     "en": "The dork laughed so hard he snorted juice out of his nose.",
+     "ar": "الواد ضحك جدًا لدرجة إن العصير طلع من مناخيره."
+    },
+    {
+     "en": "My dork of a cousin still believes in sea monsters.",
+     "ar": "ابن خالتي اللي بتصرفاته مضحكة لسه مؤمن بوحوش البحر."
+    },
+    {
+     "en": "The dork spent the whole evening talking to the dog.",
+     "ar": "الواد قضى الليلة كلها بيكلم الكلب."
+    },
+    {
+     "en": "She calls her husband a dork with love in her voice.",
+     "ar": "بتقول على جوزها غبي بصوت فيه حب."
+    }
+   ]
+  },
+  {
+   "id": "slg-000049",
+   "sentences": [
+    {
+     "en": "The nerd in our class fixed the teacher's laptop.",
+     "ar": "الشاطر في التكنولوجيا اللي في فصلنا صلح لابتوب المدرس."
+    },
+    {
+     "en": "My brother is a math nerd, he solves problems for fun.",
+     "ar": "أخويا مهووس بالحساب، بيحل المسائل للمتعة."
+    },
+    {
+     "en": "She is a history nerd, she knows every pharaoh's name.",
+     "ar": "هي مهووسة بالتاريخ، عارفة اسم كل فرعون."
+    },
+    {
+     "en": "The nerd spent the whole weekend reading science books.",
+     "ar": "الشاطر المذاكر قضى الأجازة كلها بيقرا كتب علوم."
+    },
+    {
+     "en": "He is proud to be a nerd about space and rockets.",
+     "ar": "هو فخور إنه مهووس بالفضاء والصواريخ."
+    },
+    {
+     "en": "The nerd built his own computer from spare parts.",
+     "ar": "المهووس بالتكنولوجيا ركب كمبيوتر بنفسه من قطع غيار."
+    },
+    {
+     "en": "My friend is a language nerd, he speaks five languages.",
+     "ar": "صاحبي مهووس باللغات، بيتكلم خمس لغات."
+    },
+    {
+     "en": "The nerd won the school quiz for the third year in a row.",
+     "ar": "الشاطر كسب مسابقة المدرسة تلت سنين ورا بعض."
+    },
+    {
+     "en": "Being a nerd is cool now, thanks to technology.",
+     "ar": "إنك تبقى مهووس بالعلم بقى حاجة شيك دلوقتي بسبب التكنولوجيا."
+    },
+    {
+     "en": "The nerd explained the entire plot of the series in one breath.",
+     "ar": "المهووس شرح أحداث المسلسل كله في نفس واحد."
+    }
+   ]
+  },
+  {
+   "id": "slg-000050",
+   "sentences": [
+    {
+     "en": "My cousin is a computer geek, he codes all night.",
+     "ar": "ابن خالي مهووس بالكمبيوتر، بيكتب كود طول الليل."
+    },
+    {
+     "en": "The geek in the shop explained every camera model to me.",
+     "ar": "المهووس في المحل شرحلي كل موديلات الكاميرات."
+    },
+    {
+     "en": "She is a gaming geek, she has every console ever made.",
+     "ar": "هي مهووسة بالألعاب، عندها كل أجهزة الألعاب اللي اتعملت."
+    },
+    {
+     "en": "The geek built a robot for the school fair.",
+     "ar": "المهووس بالتكنولوجيا عمل روبوت لمعرض المدرسة."
+    },
+    {
+     "en": "He is a car geek, he can name every engine sound.",
+     "ar": "هو مهووس بالعربيات، يقدر يسمي أي صوت موتور."
+    },
+    {
+     "en": "The geek fixed my tablet in five minutes.",
+     "ar": "المهووس بالكمبيوتر صلحلي التابلت في خمس دقايق."
+    },
+    {
+     "en": "My geek friends meet every week to play board games.",
+     "ar": "صحابي المهووسين بيتقابلوا كل أسبوع يلعبوا ألعاب طاولة."
+    },
+    {
+     "en": "She is a science geek, always watching documentaries.",
+     "ar": "هي مهووسة بالعلوم، دايمًا بتتفرج على أفلام وثائقية."
+    },
+    {
+     "en": "The geek at work knows every keyboard shortcut.",
+     "ar": "المهووس بالكمبيوتر في الشغل عارف كل اختصارات الكيبورد."
+    },
+    {
+     "en": "Being a geek is fun when you find people like you.",
+     "ar": "إنك تبقى مهووس بحاجة حاجة حلوة لما تلاقي ناس زيك."
+    }
+   ]
+  },
+  {
+   "id": "slg-000051",
+   "sentences": [
+    {
+     "en": "My sister is a bookworm, she reads two novels a week.",
+     "ar": "أختي مدمنة قراية، بتخلص روايتين في الأسبوع."
+    },
+    {
+     "en": "The bookworm spent his whole summer at the library.",
+     "ar": "الواد اللي بيحب القراية قضى الصيف كله في المكتبة."
+    },
+    {
+     "en": "As a bookworm, she prefers books over parties.",
+     "ar": "هي بتحب القراية، فبتفضل الكتب عن الحفلات."
+    },
+    {
+     "en": "The little bookworm read every book in the school library.",
+     "ar": "الطفل اللي بيحب القراية خلص كل كتب مكتبة المدرسة."
+    },
+    {
+     "en": "He became a bookworm after his father gave him a novel.",
+     "ar": "بقى مدمن قراية بعد ما أبوه اداه رواية."
+    },
+    {
+     "en": "The bookworm carried three books in his bag to the beach.",
+     "ar": "مدمن القراية شال تلت كتب في شنطته للمصيف."
+    },
+    {
+     "en": "Being a bookworm helped her pass the literature exam easily.",
+     "ar": "حبها للقراية ساعدها تنجح في امتحان الأدب بسهولة."
+    },
+    {
+     "en": "The bookworm did not notice the time and missed his bus.",
+     "ar": "اللي بيحب القراية ما خدش باله من الوقت وفاته الأوتوبيس."
+    },
+    {
+     "en": "Our bookworm friend always recommends the best novels.",
+     "ar": "صاحبتنا اللي بتحب القراية دايمًا بترشحلنا أحسن الروايات."
+    },
+    {
+     "en": "The bookworm asked for books instead of toys on his birthday.",
+     "ar": "الطفل اللي بيحب القراية طلب كتب بدل اللعب في عيد ميلاده."
+    }
+   ]
+  },
+  {
+   "id": "slg-000052",
+   "sentences": [
+    {
+     "en": "The jock in our class is the captain of the football team.",
+     "ar": "اللاعب الرياضي في فصلنا هو كابتن فريق الكورة."
+    },
+    {
+     "en": "He was a jock in school and never opened a book.",
+     "ar": "كان لاعب رياضي في المدرسة وعمرو ما فتح كتاب."
+    },
+    {
+     "en": "The jock could not solve the simple math problem.",
+     "ar": "اللاعب الرياضي معرفش يحل مسألة الحساب البسيطة."
+    },
+    {
+     "en": "Every jock in the college goes to the gym at six.",
+     "ar": "كل لاعب رياضي في الكلية بيروح الجيم الساعة ستة."
+    },
+    {
+     "en": "The jock surprised everyone by winning the poetry contest.",
+     "ar": "اللاعب الرياضي فاجأ الكل وكسب مسابقة الشعر."
+    },
+    {
+     "en": "She married the high school jock ten years after graduation.",
+     "ar": "اتجوزت اللاعب الرياضي بتاع المدرسة بعد عشر سنين من التخرج."
+    },
+    {
+     "en": "The jock spends more time training than studying.",
+     "ar": "اللاعب الرياضي بيقضي وقت في التمرين أكتر من المذاكرة."
+    },
+    {
+     "en": "That jock can run a hundred meters in under twelve seconds.",
+     "ar": "اللاعب الرياضي ده بيجري مية متر في أقل من اتناشر ثانية."
+    },
+    {
+     "en": "The jock carried the injured player off the field.",
+     "ar": "اللاعب الرياضي شال اللاعب المصاب بره الملعب."
+    },
+    {
+     "en": "Every school has a jock who thinks muscles are everything.",
+     "ar": "كل مدرسة فيها لاعب رياضي فاكر إن العضلات هي كل حاجة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000053",
+   "sentences": [
+    {
+     "en": "That wannabe copies everything the singer wears.",
+     "ar": "الواد ده بيقلد كل حاجة المطرب بيلبسها."
+    },
+    {
+     "en": "He is a wannabe chef who burns rice every time.",
+     "ar": "هو واحد بيدّعي إنه شيف وبيكلكع الرز كل مرة."
+    },
+    {
+     "en": "The wannabe actor talks about Hollywood all day.",
+     "ar": "اللي بيدّعي إنه ممثل بيكلم عن هوليوود طول اليوم."
+    },
+    {
+     "en": "She called him a wannabe because he bought a fake designer bag.",
+     "ar": "قالت عليه مقلد عشان اشترى شنطة ماركة مضروبة."
+    },
+    {
+     "en": "The wannabe influencer has only ten followers.",
+     "ar": "اللي بيدّعي إنه مشهور عنده عشرة متابعين بس."
+    },
+    {
+     "en": "Every wannabe singer posts videos online hoping to be discovered.",
+     "ar": "كل واحد نفسه يبقى مطرب بينزل فيديوهات على النت أمل إنه ينكتشف."
+    },
+    {
+     "en": "The wannabe businessman wore a suit but had no job.",
+     "ar": "اللي بيدّعي إنه رجل أعمال لبس بدلة بس ماعندوش شغل."
+    },
+    {
+     "en": "He is just a wannabe, he never trained a day in his life.",
+     "ar": "هو مجرد مقلد، عمرو ما اتمرن يوم في حياته."
+    },
+    {
+     "en": "The wannabe footballer watches matches but never plays.",
+     "ar": "اللي بيدّعي إنه لاعب كورة بيتفرج على الماتشات بس ومش بيلعب."
+    },
+    {
+     "en": "She is not a real artist, just a wannabe with expensive brushes.",
+     "ar": "هي مش فنانة حقيقية، مجرد واحدة بتتصنع وعندها فرش غالية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000054",
+   "sentences": [
+    {
+     "en": "That poser bought a guitar but cannot play a single chord.",
+     "ar": "الواد المتصنع ده اشترى جيتار بس مش بيعرف يعزف وتر واحد."
+    },
+    {
+     "en": "The poser acted rich but his shoes were torn.",
+     "ar": "المتصنع بيظهر إنه غني بس جزمته مخرومة."
+    },
+    {
+     "en": "He is such a poser, he pretends to love jazz to look smart.",
+     "ar": "هو متصنع جدًا، بيدّعي إنه بيحب الجاز عشان يبان مثقف."
+    },
+    {
+     "en": "The poser at the gym takes more photos than he lifts weights.",
+     "ar": "المتصنع في الجيم بيصور أكتر ما بيلعب حديد."
+    },
+    {
+     "en": "Everyone saw through the poser's fake accent.",
+     "ar": "كل الناس كشفت اللهجة المضروبة بتاعة المتصنع."
+    },
+    {
+     "en": "The poser wore a football shirt but did not know any player.",
+     "ar": "المتصنع لبس تيشيرت الكورة بس مش عارف اسم أي لاعب."
+    },
+    {
+     "en": "She called him a poser after he lied about traveling abroad.",
+     "ar": "قالت عليه متصنع بعد ما كدب إنه سافر بره."
+    },
+    {
+     "en": "The poser rented a fancy car just for the photos.",
+     "ar": "المتصنع أجر عربية فخمة عشان الصور بس."
+    },
+    {
+     "en": "That poser carries a thick book he never reads.",
+     "ar": "المتصنع ده شايل كتاب تخين عمرو ما بيقراه."
+    },
+    {
+     "en": "A real skater can always spot a poser at the park.",
+     "ar": "اللاعب الحقيقي بيعرف يميز المتصنع في الملعب على طول."
+    }
+   ]
+  },
+  {
+   "id": "slg-000055",
+   "sentences": [
+    {
+     "en": "The show-off did push-ups in the middle of the café.",
+     "ar": "الواد اللي بيفشخر عمل تمارين ضغط في نص القهوة."
+    },
+    {
+     "en": "Nobody likes a show-off who talks about money all the time.",
+     "ar": "محدش بيحب اللي بيفشخر ويتكلم عن الفلوس طول الوقت."
+    },
+    {
+     "en": "The show-off brought his diploma to the family dinner.",
+     "ar": "الواد اللي بيحب يلفت الانتباه جاب شهادته لعزومة العيلة."
+    },
+    {
+     "en": "He is such a show-off, he revs his car engine at every corner.",
+     "ar": "هو بيفشخر جدًا، بيعلي صوت الموتور عند كل ناصية."
+    },
+    {
+     "en": "The show-off wore sunglasses indoors to look important.",
+     "ar": "الواد اللي بيفشخر لبس نضارة شمس جوه المكان عشان يبان مهم."
+    },
+    {
+     "en": "She is a show-off, she posts every gift she gets online.",
+     "ar": "هي بتحب الفشخرة، بتنزل صورة كل هدية بتاخدها على النت."
+    },
+    {
+     "en": "The show-off answered every question before anyone else could.",
+     "ar": "الواد اللي بيفشخر جاوب على كل سؤال قبل ما حد يقدر."
+    },
+    {
+     "en": "Our show-off cousin keeps talking about his new phone.",
+     "ar": "ابن خالتي اللي بيفشخر بيفضل يتكلم عن موبايله الجديد."
+    },
+    {
+     "en": "The show-off bought the biggest TV in the shop just to brag.",
+     "ar": "الواد اللي بيفشخر اشترى أكبر تلفزيون في المحل عشان يتفشخر بس."
+    },
+    {
+     "en": "Do not be a show-off, let someone else talk for once.",
+     "ar": "متبقاش بتحب تفشخر، سيب حد تاني يتكلم مرة واحدة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000056",
+   "sentences": [
+    {
+     "en": "Do not tell the bigmouth about the surprise party.",
+     "ar": "متقولش للواد اللي مش بيعرف يكتم سر عن حفلة المفاجأة."
+    },
+    {
+     "en": "The bigmouth told everyone my exam results before I did.",
+     "ar": "اللي مش بيكتم سر قال للكل نتيجتي قبل ما أقول."
+    },
+    {
+     "en": "That bigmouth revealed the secret plan in one day.",
+     "ar": "الواد اللي لسانه طويل كشف الخطة السرية في يوم واحد."
+    },
+    {
+     "en": "Our bigmouth neighbor knows every secret in the building.",
+     "ar": "جارتنا اللي لسانها طويل عارفة كل أسرار العمارة."
+    },
+    {
+     "en": "He is such a bigmouth, he told the boss about the complaint.",
+     "ar": "هو مش بيعرف يكتم سر خالص، قال للمدير على الشكوى."
+    },
+    {
+     "en": "The bigmouth spoiled the ending of the movie for everyone.",
+     "ar": "اللي لسانه طويل حرق نهاية الفيلم على الكل."
+    },
+    {
+     "en": "Never share your salary with a bigmouth.",
+     "ar": "متقولش مرتبك أبدًا لحد مش بيعرف يكتم سر."
+    },
+    {
+     "en": "The bigmouth announced the engagement before the couple did.",
+     "ar": "اللي لسانه طويل أعلن الخطوبة قبل ما العرسان يعلنوا."
+    },
+    {
+     "en": "My bigmouth cousin told my mother I failed the test.",
+     "ar": "ابن خالتي اللي لسانه طويل قال لماما إني سقطت في الامتحان."
+    },
+    {
+     "en": "A bigmouth cannot be trusted with a wedding surprise.",
+     "ar": "اللي لسانه طويل مش يتأمن على مفاجأة فرح."
+    }
+   ]
+  },
+  {
+   "id": "slg-000057",
+   "sentences": [
+    {
+     "en": "The chatterbox talked through the entire movie.",
+     "ar": "اللي بيتكلم كتير فضل يتكلم طول الفيلم."
+    },
+    {
+     "en": "My aunt is a chatterbox, she can talk for hours.",
+     "ar": "خالتي بتحب الكلام، تقدر تتكلم ساعات."
+    },
+    {
+     "en": "The chatterbox sat next to me on the bus and talked the whole way.",
+     "ar": "اللي بيتكلم كتير قعد جنبي في الأوتوبيس واتكلم طول الطريق."
+    },
+    {
+     "en": "The little chatterbox asked a hundred questions before breakfast.",
+     "ar": "الطفل الثرثار سأل مية سؤال قبل الفطار."
+    },
+    {
+     "en": "Being a chatterbox got him in trouble during the exam.",
+     "ar": "كلامه الكتير جابله مشاكل في وقت الامتحان."
+    },
+    {
+     "en": "The chatterbox at work never lets anyone concentrate.",
+     "ar": "الثرثار في الشغل مش بيسيب حد يركز."
+    },
+    {
+     "en": "She is a chatterbox when she drinks coffee.",
+     "ar": "هي بتتكلم كتير لما بتشرب قهوة."
+    },
+    {
+     "en": "The chatterbox told the taxi driver his whole life story.",
+     "ar": "الثرثار حكى لسواق التاكسي قصة حياته كلها."
+    },
+    {
+     "en": "Even the teacher could not stop the chatterbox from talking.",
+     "ar": "حتى المدرس معرفش يسكت الواد الثرثار."
+    },
+    {
+     "en": "My chatterbox niece describes every cartoon she watches in detail.",
+     "ar": "بنت أخويا الثرثارة بتوصف كل كرتون بتتفرج عليه بالتفصيل."
+    }
+   ]
+  },
+  {
+   "id": "slg-000058",
+   "sentences": [
+    {
+     "en": "The gossip in our street knows who is getting married before anyone.",
+     "ar": "النمامة في شارعنا بتعرف مين هيتجوز قبل أي حد."
+    },
+    {
+     "en": "Do not be a gossip, keep the news to yourself.",
+     "ar": "متبقاش نمام، سيب الخبر عندك."
+    },
+    {
+     "en": "That gossip spread a rumor about the new teacher.",
+     "ar": "النمام ده نشر إشاعة عن المدرس الجديد."
+    },
+    {
+     "en": "The office gossip told everyone who was getting fired.",
+     "ar": "نمام المكتب قال للكل مين هيتفصل."
+    },
+    {
+     "en": "She is a terrible gossip, she cannot keep a secret for one day.",
+     "ar": "هي نمامة بشعة، مش بتقدر تكتم سر يوم واحد."
+    },
+    {
+     "en": "The gossip at the café talks about everyone who passes by.",
+     "ar": "النمام اللي على القهوة بيتكلم عن كل واحد بيعدي."
+    },
+    {
+     "en": "My neighbor is such a gossip, she knows everyone's business.",
+     "ar": "جارتي نمامة جدًا، عارفة أخبار كل الناس."
+    },
+    {
+     "en": "The gossip made up a story about the wedding being cancelled.",
+     "ar": "النمام اخترع حكاية إن الفرح اتلغى."
+    },
+    {
+     "en": "Being a gossip cost her many friendships.",
+     "ar": "النميمة خسرتها صداقات كتير."
+    },
+    {
+     "en": "The gossip whispered the news to three people before noon.",
+     "ar": "النمام همس الخبر لتلت أشخاص قبل الضهر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000059",
+   "sentences": [
+    {
+     "en": "The snitch told the teacher who wrote on the wall.",
+     "ar": "الواشي قال للمدرس مين اللي كتب على الحيطة."
+    },
+    {
+     "en": "Nobody trusts a snitch in the neighborhood.",
+     "ar": "محدش بيثق في الواشي في الحارة."
+    },
+    {
+     "en": "The snitch reported his friend to the manager.",
+     "ar": "الواشي بلّغ المدير عن صاحبه."
+    },
+    {
+     "en": "He got the nickname snitch after he told on his brother.",
+     "ar": "خد لقب الواشي بعد ما وشى بأخوه."
+    },
+    {
+     "en": "The snitch in class tells the teacher everything.",
+     "ar": "الواشي في الفصل بيقول للمدرس كل حاجة."
+    },
+    {
+     "en": "Being a snitch made him lose all his friends.",
+     "ar": "الوشاية خلته يخسر كل أصحابه."
+    },
+    {
+     "en": "The snitch called the police about the loud party.",
+     "ar": "الواشي كلم الشرطة عشان الحفلة العالية الصوت."
+    },
+    {
+     "en": "Nobody likes a snitch, even the teachers.",
+     "ar": "محدش بيحب الواشي، حتى المدرسين."
+    },
+    {
+     "en": "The snitch told my parents where I was hiding.",
+     "ar": "الواشي قال لأهلي أنا كنت مستخبي فين."
+    },
+    {
+     "en": "He acted like a snitch when he told the coach about the prank.",
+     "ar": "تصرف زي الواشي لما قال للكابتن على المقلب."
+    }
+   ]
+  },
+  {
+   "id": "slg-000060",
+   "sentences": [
+    {
+     "en": "The tattletale told the teacher that his friend cheated.",
+     "ar": "الطفل الواشي قال للمدرس إن صاحبه غش."
+    },
+    {
+     "en": "Stop being a tattletale and solve your own problems.",
+     "ar": "بطّل وشاية وحل مشاكلك بنفسك."
+    },
+    {
+     "en": "The little tattletale ran to his mother every five minutes.",
+     "ar": "الطفل الواشي الصغير بيجري لأمه كل خمس دقايق."
+    },
+    {
+     "en": "Nobody wants to play with the tattletale.",
+     "ar": "محدش عايز يلعب مع الطفل الواشي."
+    },
+    {
+     "en": "The tattletale told his father who broke the window.",
+     "ar": "الطفل الواشي قال لأبوه مين اللي كسر الشباك."
+    },
+    {
+     "en": "My sister was a tattletale when we were kids.",
+     "ar": "أختي كانت واشية واحنا صغيرين."
+    },
+    {
+     "en": "The tattletale told the whole class about the secret note.",
+     "ar": "الطفل الواشي قال للفصل كله على الورقة السرية."
+    },
+    {
+     "en": "Being a tattletale will not make you popular.",
+     "ar": "الوشاية مش هتخليك محبوب."
+    },
+    {
+     "en": "The tattletale reported his sister for staying up late.",
+     "ar": "الطفل الواشي بلّغ عن أخته إنها بتسهر."
+    },
+    {
+     "en": "The teacher told the tattletale to focus on his own behavior.",
+     "ar": "المدرس قال للطفل الواشي يركز في تصرفاته هو."
+    }
+   ]
+  },
+  {
+   "id": "slg-000061",
+   "sentences": [
+    {
+     "en": "Do not be a chicken, jump into the pool.",
+     "ar": "متبقاش جبان، انط في حمام السباحة."
+    },
+    {
+     "en": "He is too chicken to ask for a raise.",
+     "ar": "هو جبان جدًا عشان يطلب زيادة مرتب."
+    },
+    {
+     "en": "The kids called him chicken because he refused to climb the tree.",
+     "ar": "الأطفال قالوا عليه جبان عشان رفض يتسلق الشجرة."
+    },
+    {
+     "en": "She is not chicken, she faced the angry dog alone.",
+     "ar": "هي مش جبانة، واجهت الكلب العصبي لوحدها."
+    },
+    {
+     "en": "Stop being a chicken and tell her the truth.",
+     "ar": "بطّل جبن وقولها الحقيقة."
+    },
+    {
+     "en": "He acted like a chicken when the lights went out.",
+     "ar": "تصرف بجبن لما النور قطع."
+    },
+    {
+     "en": "The chicken in our group never tries the scary rides.",
+     "ar": "الجبان في جروبنا عمرو ما بيركب الألعاب المخيفة."
+    },
+    {
+     "en": "I was too chicken to speak in front of the crowd.",
+     "ar": "كنت جبان جدًا عشان أتكلم قدام الناس."
+    },
+    {
+     "en": "They dared the chicken to knock on the old door.",
+     "ar": "تحدوا الجبان إنه يخبط على الباب القديم."
+    },
+    {
+     "en": "Being a chicken will not help you in life.",
+     "ar": "الجبن مش هينفعك في الحياة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000062",
+   "sentences": [
+    {
+     "en": "He is such a wimp, he cried during the scary movie.",
+     "ar": "هو ضعيف جدًا، عيط في فيلم الرعب."
+    },
+    {
+     "en": "The wimp could not lift the small bag.",
+     "ar": "الضعيف معرفش يشيل الشنطة الصغيرة."
+    },
+    {
+     "en": "Do not be a wimp, finish the race.",
+     "ar": "متبقاش ضعيف، خلص السباق."
+    },
+    {
+     "en": "The wimp ran away from a little spider.",
+     "ar": "الضعيف جري من عنكبوت صغير."
+    },
+    {
+     "en": "She called her brother a wimp for complaining about the cold.",
+     "ar": "قالت على أخوها ضعيف عشان بيشتكي من البرد."
+    },
+    {
+     "en": "The wimp quit the team after the first hard training.",
+     "ar": "الضعيف ساب الفريق بعد أول تمرين صعب."
+    },
+    {
+     "en": "He is too much of a wimp to try spicy food.",
+     "ar": "هو ضعيف جدًا عشان يجرب الأكل الحراق."
+    },
+    {
+     "en": "The wimp hid behind his friends when the dog barked.",
+     "ar": "الضعيف اتخبى ورا أصحابه لما الكلب نبح."
+    },
+    {
+     "en": "Stop acting like a wimp and stand up for yourself.",
+     "ar": "بطّل تتصرف بضعف ودافع عن نفسك."
+    },
+    {
+     "en": "The wimp apologized to the bully instead of fighting back.",
+     "ar": "الضعيف اعتذر للمتنمر بدل ما يرد."
+    }
+   ]
+  },
+  {
+   "id": "slg-000063",
+   "sentences": [
+    {
+     "en": "The crybaby started crying when he lost the game.",
+     "ar": "الطفل اللي بيعيط بسرعة بدأ يعيط لما خسر اللعبة."
+    },
+    {
+     "en": "Do not be a crybaby, it is just a small scratch.",
+     "ar": "متبقاش بتعيط على طول، دي مجرد خبطة صغيرة."
+    },
+    {
+     "en": "The crybaby cried because his ice cream fell.",
+     "ar": "الطفل اللي بيعيط بسرعة عيط لما الأيس كريم وقع منه."
+    },
+    {
+     "en": "My little cousin is a crybaby, he cries over everything.",
+     "ar": "ابن خالي الصغير بيعيط على طول، بيعيط على أي حاجة."
+    },
+    {
+     "en": "The crybaby complained to the teacher about every little thing.",
+     "ar": "الطفل اللي بيعيط بسرعة اشتكى للمدرس على كل حاجة صغيرة."
+    },
+    {
+     "en": "Stop being a crybaby and try again.",
+     "ar": "بطّل عياط وحاول تاني."
+    },
+    {
+     "en": "The crybaby cried when his team lost by one point.",
+     "ar": "اللي بيعيط بسرعة عيط لما فريقه خسر بنقطة واحدة."
+    },
+    {
+     "en": "She called her brother a crybaby for crying at the cartoon.",
+     "ar": "قالت على أخوها بيعيط على طول عشان عيط على الكرتون."
+    },
+    {
+     "en": "The crybaby ran to his mother when he fell off the swing.",
+     "ar": "الطفل اللي بيعيط بسرعة جري لأمه لما وقع من المرجيحة."
+    },
+    {
+     "en": "Even the crybaby laughed when the clown fell down.",
+     "ar": "حتى الطفل اللي بيعيط بسرعة ضحك لما المهرج وقع."
+    }
+   ]
+  },
+  {
+   "id": "slg-000064",
+   "sentences": [
+    {
+     "en": "The scaredy-cat refused to enter the dark room.",
+     "ar": "الخواف رفض يدخل الأوضة المضلمة."
+    },
+    {
+     "en": "Do not be a scaredy-cat, the dog is friendly.",
+     "ar": "متبقاش خايف كده، الكلب ودود."
+    },
+    {
+     "en": "My little sister is a scaredy-cat, she hides during storms.",
+     "ar": "أختي الصغيرة خوايفة، بتستخبى وقت العواصف."
+    },
+    {
+     "en": "The scaredy-cat screamed when the lights flickered.",
+     "ar": "الخواف صرخ لما النور رمش."
+    },
+    {
+     "en": "He is such a scaredy-cat, he sleeps with the light on.",
+     "ar": "هو خواف جدًا، بينام والنور والع."
+    },
+    {
+     "en": "The scaredy-cat would not touch the fish tank.",
+     "ar": "الخواف مرضيش يمسك حوض السمك."
+    },
+    {
+     "en": "Being a scaredy-cat kept him from trying new things.",
+     "ar": "الخوف الزيادة منعه يجرب حاجات جديدة."
+    },
+    {
+     "en": "The scaredy-cat jumped at the sound of thunder.",
+     "ar": "الخواف اتخض من صوت الرعد."
+    },
+    {
+     "en": "She teased her brother for being a scaredy-cat about the dentist.",
+     "ar": "عيّرت أخوها إنه خايف من دكتور الأسنان."
+    },
+    {
+     "en": "The scaredy-cat ran out of the haunted house in seconds.",
+     "ar": "الخواف جري بره بيت الرعب في ثواني."
+    }
+   ]
+  },
+  {
+   "id": "slg-000065",
+   "sentences": [
+    {
+     "en": "The salesman convinced the pushover to buy two phones.",
+     "ar": "البياع قنع الشخص اللي بينقاد بسهولة يشتري موبايلين."
+    },
+    {
+     "en": "Do not be a pushover, learn to say no.",
+     "ar": "متبقاش سهل الانقياد، اتعلم تقول لأ."
+    },
+    {
+     "en": "The pushover lent his car to everyone who asked.",
+     "ar": "اللي بينقاد بسهولة سلّف عربيته لأي حد طلبها."
+    },
+    {
+     "en": "She is a pushover, she agrees with whatever anyone says.",
+     "ar": "هي سهلة الإقناع، بتوافق على أي حاجة أي حد يقولها."
+    },
+    {
+     "en": "The pushover paid for everyone's dinner again.",
+     "ar": "اللي بينقاد بسهولة دفع حساب عشا الكل تاني."
+    },
+    {
+     "en": "Being a pushover cost him a lot of money.",
+     "ar": "ضعف شخصيته كلفه فلوس كتير."
+    },
+    {
+     "en": "The kids know their grandfather is a pushover, so they always ask him for sweets.",
+     "ar": "الأطفال عارفين إن جدهم سهل الإقناع، فدايمًا بيطلبوا منه حلاوة."
+    },
+    {
+     "en": "The pushover gave in after the first excuse.",
+     "ar": "اللي بينقاد بسهولة استسلم بعد أول عذر."
+    },
+    {
+     "en": "He is such a pushover, he agreed to work on his day off.",
+     "ar": "هو سهل الانقياد جدًا، وافق يشتغل يوم أجازته."
+    },
+    {
+     "en": "The pushover apologized even though he was right.",
+     "ar": "اللي بينقاد بسهولة اعتذر مع إنه كان صح."
+    }
+   ]
+  },
+  {
+   "id": "slg-000066",
+   "sentences": [
+    {
+     "en": "He is a doormat, he lets everyone take advantage of him.",
+     "ar": "هو بيسمح للناس تستغله، أي حد بيدوس على كرامته."
+    },
+    {
+     "en": "Stop being a doormat and defend yourself.",
+     "ar": "متسيبش الناس تدوس عليك ودافع عن نفسك."
+    },
+    {
+     "en": "The doormat never complains even when treated badly.",
+     "ar": "اللي بيسمح بالإهانة عمرو ما بيشتكي حتى لما بيتعامل وحش."
+    },
+    {
+     "en": "She was a doormat in her old job, always doing others' work.",
+     "ar": "كانت بتتحمل إهانات في شغلها القديم، دايمًا بتعمل شغل غيرها."
+    },
+    {
+     "en": "Being a doormat will not earn you respect.",
+     "ar": "إنك تسيب الناس تدوس عليك مش هيكسبلك احترام."
+    },
+    {
+     "en": "The doormat agreed to every unfair request.",
+     "ar": "اللي بيسمح بالظلم وافق على كل طلب مش عادل."
+    },
+    {
+     "en": "He became a doormat because he was afraid of conflict.",
+     "ar": "بقى بيسمح بالإهانة عشان كان خايف من المشاكل."
+    },
+    {
+     "en": "The doormat cleaned the whole office while others chatted.",
+     "ar": "اللي بيسمح بالاستغلال نضف المكتب كله والتانيين بيتكلموا."
+    },
+    {
+     "en": "She stopped being a doormat when she learned to say no.",
+     "ar": "بطّلت تسمح للناس تستغلها لما اتعلمت تقول لأ."
+    },
+    {
+     "en": "The doormat apologized for mistakes that were not his.",
+     "ar": "اللي بيسمح بالظلم اعتذر عن غلطات مش غلطاته."
+    }
+   ]
+  },
+  {
+   "id": "slg-000067",
+   "sentences": [
+    {
+     "en": "The suck-up brought the boss coffee every morning.",
+     "ar": "المتملق جاب للمدير قهوة كل صبح."
+    },
+    {
+     "en": "Nobody respects a suck-up who flatters the manager.",
+     "ar": "محدش بيحترم المتملق اللي بيتملق المدير."
+    },
+    {
+     "en": "The suck-up agreed with every word the boss said.",
+     "ar": "المتملق وافق على كل كلمة المدير قالها."
+    },
+    {
+     "en": "He is such a suck-up, he laughs at all the boss's bad jokes.",
+     "ar": "هو متملق جدًا، بيضحك على كل نكات المدير الوحشة."
+    },
+    {
+     "en": "The suck-up offered to work overtime without being asked.",
+     "ar": "المتملق عرض يشتغل ساعات إضافية من غير ما حد يطلب."
+    },
+    {
+     "en": "Being a suck-up will not get you a real promotion.",
+     "ar": "التملق مش هيجيبلك ترقية حقيقية."
+    },
+    {
+     "en": "The suck-up praised the manager's old car for an hour.",
+     "ar": "المتملق مدح عربية المدير القديمة لمدة ساعة."
+    },
+    {
+     "en": "She is a suck-up, always complimenting the teacher.",
+     "ar": "هي متملقة، دايمًا بتمدح المدرس."
+    },
+    {
+     "en": "The suck-up volunteered to organize the boss's birthday party.",
+     "ar": "المتملق تطوع ينظم حفلة عيد ميلاد المدير."
+    },
+    {
+     "en": "The suck-up got the promotion but lost everyone's respect.",
+     "ar": "المتملق خد الترقية بس خسر احترام الكل."
+    }
+   ]
+  },
+  {
+   "id": "slg-000068",
+   "sentences": [
+    {
+     "en": "The brown-noser flattered the manager in front of everyone.",
+     "ar": "المتملق تملق المدير قدام الكل."
+    },
+    {
+     "en": "Nobody likes a brown-noser who flatters to get ahead.",
+     "ar": "محدش بيحب المتملق اللي بيتملق عشان يترقى."
+    },
+    {
+     "en": "The brown-noser washed the boss's car on his day off.",
+     "ar": "المتملق غسل عربية المدير يوم أجازته."
+    },
+    {
+     "en": "He is such a brown-noser, he agrees with everything the director says.",
+     "ar": "هو متملق جدًا، بيوافق على كل حاجة المدير يقولها."
+    },
+    {
+     "en": "The brown-noser remembered the boss's birthday before anyone else.",
+     "ar": "المتملق افتكر عيد ميلاد المدير قبل أي حد."
+    },
+    {
+     "en": "Being a brown-noser made him unpopular with his colleagues.",
+     "ar": "التملق خلاه مش محبوب من زمايله."
+    },
+    {
+     "en": "The brown-noser offered to carry the boss's heavy bags.",
+     "ar": "المتملق عرض يشيل شنط المدير التقيلة."
+    },
+    {
+     "en": "She is a brown-noser, always complimenting the teacher's outfits.",
+     "ar": "هي متملقة، دايمًا بتمدح هدوم المدرسة."
+    },
+    {
+     "en": "The brown-noser stayed late just to be seen by the manager.",
+     "ar": "المتملق قعد لوقت متأخر بس عشان المدير يشوفه."
+    },
+    {
+     "en": "The brown-noser got caught lying about working late.",
+     "ar": "المتملق اتكشف وهو بيكدب إنه اشتغل لوقت متأخر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000069",
+   "sentences": [
+    {
+     "en": "The yes-man agreed to every bad idea the boss suggested.",
+     "ar": "اللي بيوافق على كل حاجة وافق على كل فكرة وحشة المدير اقترحها."
+    },
+    {
+     "en": "Do not be a yes-man, share your real opinion.",
+     "ar": "متبقاش بتوافق على طول، قول رأيك الحقيقي."
+    },
+    {
+     "en": "The yes-man nodded along with everything in the meeting.",
+     "ar": "اللي بيوافق على كل حاجة هز راسه مع كل حاجة في الاجتماع."
+    },
+    {
+     "en": "He is a yes-man, he never disagrees with the manager.",
+     "ar": "هو بيوافق على طول، عمرو ما بيختلف مع المدير."
+    },
+    {
+     "en": "The yes-man clapped for every idea, even the terrible ones.",
+     "ar": "اللي بيوافق على كل حاجة صفق لكل فكرة، حتى الوحشة."
+    },
+    {
+     "en": "Being a yes-man will not help the company grow.",
+     "ar": "الموافقة على كل حاجة مش هتساعد الشركة تكبر."
+    },
+    {
+     "en": "The yes-man praised the plan he secretly hated.",
+     "ar": "اللي بيوافق على كل حاجة مدح الخطة اللي كان بيكرهها في السر."
+    },
+    {
+     "en": "The manager surrounded himself with yes-men.",
+     "ar": "المدير حط حواليه ناس بتوافق على كل حاجة."
+    },
+    {
+     "en": "The yes-man lost the team's trust after the failed project.",
+     "ar": "اللي بيوافق على كل حاجة خسر ثقة الفريق بعد المشروع الفاشل."
+    },
+    {
+     "en": "She is a yes-man in meetings but complains afterwards.",
+     "ar": "هي بتوافق على كل حاجة في الاجتماعات بس بتشتكي بعدها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000070",
+   "sentences": [
+    {
+     "en": "The cheapskate refused to tip the waiter.",
+     "ar": "البخيل رفض يديله بقشيش للجرسون."
+    },
+    {
+     "en": "Do not be a cheapskate, pay your share of the bill.",
+     "ar": "متبقاش بخيل، ادفع نصيبك من الحساب."
+    },
+    {
+     "en": "The cheapskate reused the same tea bag three times.",
+     "ar": "البخيل استخدم نفس كيس الشاي تلت مرات."
+    },
+    {
+     "en": "He is such a cheapskate, he waters down the soap.",
+     "ar": "هو بخيل جدًا، بيخفف الصابون بالمية."
+    },
+    {
+     "en": "The cheapskate brought one small gift to the big wedding.",
+     "ar": "البخيل جاب هدية صغيرة واحدة للفرح الكبير."
+    },
+    {
+     "en": "Being a cheapskate will lose you friends quickly.",
+     "ar": "البخل هيخليك تخسر أصحابك بسرعة."
+    },
+    {
+     "en": "The cheapskate walked an hour to save the bus fare.",
+     "ar": "البخيل مشي ساعة عشان يوفر أجرة الأوتوبيس."
+    },
+    {
+     "en": "She is a cheapskate, she never buys anything new.",
+     "ar": "هي بخيلة، عمرو ما بتشتري حاجة جديدة."
+    },
+    {
+     "en": "The cheapskate counted every penny at the restaurant.",
+     "ar": "البخيل عد كل قرش في المطعم."
+    },
+    {
+     "en": "The cheapskate asked for a discount on a five-pound item.",
+     "ar": "البخيل طلب خصم على حاجة بخمسة جنيه."
+    }
+   ]
+  },
+  {
+   "id": "slg-000071",
+   "sentences": [
+    {
+     "en": "The tightwad refused to buy his son a new ball.",
+     "ar": "البخيل رفض يشتري لابنه كورة جديدة."
+    },
+    {
+     "en": "He is such a tightwad, he splits every bill to the last penny.",
+     "ar": "هو بخيل جدًا، بيقسم كل حساب لحد آخر قرش."
+    },
+    {
+     "en": "The tightwad kept the restaurant mints in his pocket.",
+     "ar": "البخيل حط النعناع بتاع المطعم في جيبه."
+    },
+    {
+     "en": "Do not be a tightwad, it is your brother's birthday.",
+     "ar": "متبقاش بخيل، ده عيد ميلاد أخوك."
+    },
+    {
+     "en": "The tightwad drove an old car for twenty years to save money.",
+     "ar": "البخيل ساق عربية قديمة عشرين سنة عشان يوفر فلوس."
+    },
+    {
+     "en": "The tightwad counted the change twice before leaving.",
+     "ar": "البخيل عد الباقي مرتين قبل ما يمشي."
+    },
+    {
+     "en": "Being a tightwad, he never eats out.",
+     "ar": "عشان هو بخيل، عمرو ما بياكل بره."
+    },
+    {
+     "en": "The tightwad haggled over a one-pound difference.",
+     "ar": "البخيل اتفاصل على فرق جنيه واحد."
+    },
+    {
+     "en": "My tightwad uncle gives old newspapers as gifts.",
+     "ar": "عمي البخيل بيدي جرايد قديمة كهدايا."
+    },
+    {
+     "en": "The tightwad refused to buy a round of drinks.",
+     "ar": "البخيل رفض يشتري مشروبات لأصحابه."
+    }
+   ]
+  },
+  {
+   "id": "slg-000072",
+   "sentences": [
+    {
+     "en": "The big spender bought everyone dinner at the fancy restaurant.",
+     "ar": "اللي بينفق كتير اشترى عشا للكل في المطعم الفخم."
+    },
+    {
+     "en": "He is a big spender, he buys new shoes every week.",
+     "ar": "هو بينفق فلوس كتير، بيشتري جزمة جديدة كل أسبوع."
+    },
+    {
+     "en": "The big spender tipped the waiter more than the meal cost.",
+     "ar": "اللي بينفق كتير داله الجرسون بقشيش أكتر من سعر الأكل."
+    },
+    {
+     "en": "Being a big spender, he has no savings at all.",
+     "ar": "عشان بينفق كتير، ماعندوش أي توفير خالص."
+    },
+    {
+     "en": "The big spender booked the whole floor of the hotel.",
+     "ar": "اللي بينفق كتير حجز الدور كله في الفندق."
+    },
+    {
+     "en": "She is a big spender when it comes to clothes.",
+     "ar": "هي بتنفق كتير لما ييجي على الهدوم."
+    },
+    {
+     "en": "The big spender bought a new car without checking the price.",
+     "ar": "اللي بينفق كتير اشترى عربية جديدة من غير ما يسأل على السعر."
+    },
+    {
+     "en": "My big spender friend paid for everyone's tickets.",
+     "ar": "صاحبي اللي بينفق كتير دفع تذاكر الكل."
+    },
+    {
+     "en": "The big spender learned his lesson when the money ran out.",
+     "ar": "اللي بينفق كتير اتعلم الدرس لما الفلوس خلصت."
+    },
+    {
+     "en": "Being a big spender is fun until the bills arrive.",
+     "ar": "إنك تنفق كتير حاجة حلوة لحد ما الفواتير توصل."
+    }
+   ]
+  },
+  {
+   "id": "slg-000073",
+   "sentences": [
+    {
+     "en": "Everyone warned him about the gold digger he was dating.",
+     "ar": "كل الناس حذرته من البنت اللي بترتبط عشان الفلوس اللي كان بيخرج معاها."
+    },
+    {
+     "en": "The gold digger only called when she needed money.",
+     "ar": "اللي بترتبط عشان الفلوس كلمت بس لما احتاجت فلوس."
+    },
+    {
+     "en": "He realized she was a gold digger when she left after he lost his job.",
+     "ar": "اكتشف إنها بترتبط عشان الفلوس لما سابته بعد ما خسر شغله."
+    },
+    {
+     "en": "The gold digger asked about his salary on the first date.",
+     "ar": "اللي بترتبط عشان الفلوس سألت على مرتبه في أول ميعاد."
+    },
+    {
+     "en": "She is not in love, she is just a gold digger.",
+     "ar": "هي مش بتحبه، هي بس بترتبط عشان الفلوس."
+    },
+    {
+     "en": "The gold digger chose the rich old man over the kind young one.",
+     "ar": "اللي بترتبط عشان الفلوس اختارت العجوز الغني على الشاب الطيب."
+    },
+    {
+     "en": "His family called his fiancée a gold digger.",
+     "ar": "عيلته قالوا على خطيبته إنها بترتبط عشان الفلوس."
+    },
+    {
+     "en": "The gold digger spent his money on expensive bags.",
+     "ar": "اللي بترتبط عشان الفلوس صرفت فلوسه على شنط غالية."
+    },
+    {
+     "en": "He divorced the gold digger after one year.",
+     "ar": "طلق اللي كانت مرتبطة بيه عشان الفلوس بعد سنة."
+    },
+    {
+     "en": "A gold digger never stays when the money is gone.",
+     "ar": "اللي بترتبط عشان الفلوس عمرو ما بيفضل لما الفلوس تخلص."
+    }
+   ]
+  },
+  {
+   "id": "slg-000074",
+   "sentences": [
+    {
+     "en": "The freeloader stayed at our house for a month without paying anything.",
+     "ar": "اللي بيعيش على حساب غيره قعد في بيتنا شهر من غير ما يدفع حاجة."
+    },
+    {
+     "en": "He is such a freeloader, he always forgets his wallet.",
+     "ar": "هو بياكل على حساب غيره جدًا، دايمًا بينسى محفظته."
+    },
+    {
+     "en": "The freeloader ate my lunch and did not even thank me.",
+     "ar": "اللي بيعيش على حساب غيره أكل غدايا ومشكرنيش كمان."
+    },
+    {
+     "en": "Nobody wants a freeloader on the trip.",
+     "ar": "محدش عايز واحد بيعيش على حساب غيره في الرحلة."
+    },
+    {
+     "en": "The freeloader asked for a ride every day without offering petrol money.",
+     "ar": "اللي بيعيش على حساب غيره طلب توصيلة كل يوم من غير ما يعرض فلوس البنزين."
+    },
+    {
+     "en": "Being a freeloader is not a lifestyle to be proud of.",
+     "ar": "إنك تعيش على حساب غيرك مش حاجة تتفاخر بيها."
+    },
+    {
+     "en": "The freeloader watched the match at my house and ate all the snacks.",
+     "ar": "اللي بيعيش على حساب غيره اتفرج على الماتش في بيتي وأكل كل الحاجات الخفيفة."
+    },
+    {
+     "en": "My cousin is a freeloader, he never pays for his own coffee.",
+     "ar": "ابن خالي بيعيش على حساب غيره، عمرو ما بيدفع ثمن قهوته."
+    },
+    {
+     "en": "The freeloader borrowed money and never returned it.",
+     "ar": "اللي بيعيش على حساب غيره استلف فلوس وعمرو ما رجعها."
+    },
+    {
+     "en": "Stop being a freeloader and buy your own food.",
+     "ar": "متبقاش بتعيش على حساب غيرك واشتري أكل لوحدك."
+    }
+   ]
+  },
+  {
+   "id": "slg-000075",
+   "sentences": [
+    {
+     "en": "The mooch asked for a cigarette and then my lighter too.",
+     "ar": "اللي بياخد من الناس طلب سيجارة وبعدين الولاعة كمان."
+    },
+    {
+     "en": "He is such a mooch, he always takes food from our fridge.",
+     "ar": "هو بياخد من الناس جدًا، دايمًا بياخد أكل من تلاجتنا."
+    },
+    {
+     "en": "The mooch borrowed my bike and never brought it back.",
+     "ar": "اللي بياخد من الناس استلف عجلتي ومرجعهاش أبد."
+    },
+    {
+     "en": "Stop being a mooch and buy your own snacks.",
+     "ar": "متبقاش بتاخد من الناس واشتري حاجاتك بنفسك."
+    },
+    {
+     "en": "The mooch stayed for dinner without being invited.",
+     "ar": "اللي بياخد من الناس قعد للعشا من غير ما حد يعزمه."
+    },
+    {
+     "en": "She is a mooch, always asking to borrow things.",
+     "ar": "هي بتاخد من الناس، دايمًا بتطلب تستلف حاجات."
+    },
+    {
+     "en": "The mooch took my charger and lost it.",
+     "ar": "اللي بياخد من الناس أخد شاحنى وضيعه."
+    },
+    {
+     "en": "Being a mooch will make people avoid you.",
+     "ar": "إنك تاخد من الناس هيخليهم يتجنبوك."
+    },
+    {
+     "en": "The mooch asked for money every week.",
+     "ar": "اللي بياخد من الناس طلب فلوس كل أسبوع."
+    },
+    {
+     "en": "The mooch ate our food and left without helping to clean.",
+     "ar": "اللي بياخد من الناس أكل أكلنا ومشي من غير ما يساعد في التنضيف."
+    }
+   ]
+  },
+  {
+   "id": "slg-000076",
+   "sentences": [
+    {
+     "en": "The bum on the corner asked me for spare change.",
+     "ar": "المتسول اللي على الناصية طلب مني فلوس صغيرة."
+    },
+    {
+     "en": "He was a bum for years before he found a job.",
+     "ar": "كان عاطل سنين قبل ما يلاقي شغل."
+    },
+    {
+     "en": "Stop being a bum and look for work.",
+     "ar": "متبقاش عاطل كده ودوّر على شغل."
+    },
+    {
+     "en": "The bum slept on the park bench every night.",
+     "ar": "المشرد بينام على دكة الجنينة كل ليلة."
+    },
+    {
+     "en": "My brother was a bum after college until he started his shop.",
+     "ar": "أخويا كان عاطل بعد الجامعة لحد ما فتح محله."
+    },
+    {
+     "en": "The bum asked the restaurant for leftover food.",
+     "ar": "المتسول طلب من المطعم الأكل الباقي."
+    },
+    {
+     "en": "Being a bum at thirty is nothing to be proud of.",
+     "ar": "إنك تبقى عاطل وانت في التلاتين مش حاجة تتفاخر بيها."
+    },
+    {
+     "en": "The bum collected bottles to sell for a few pounds.",
+     "ar": "المشرد بيجمع الزجاجات عشان يبيعها بكام جنيه."
+    },
+    {
+     "en": "He called himself a beach bum because he surfed all day.",
+     "ar": "بيقول على نفسه عاطل البحر عشان بيركب الأمواج طول اليوم."
+    },
+    {
+     "en": "The bum on the street had a sign asking for food, not money.",
+     "ar": "المتسول في الشارع كان معاه لافتة بيطلب فيها أكل مش فلوس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000077",
+   "sentences": [
+    {
+     "en": "The old hobo traveled from town to town by train.",
+     "ar": "المشرد العجوز بيسافر من بلد لبلد بالقطر."
+    },
+    {
+     "en": "The hobo asked the farmer for work in exchange for food.",
+     "ar": "المشرد طلب من الفلاح شغل مقابل أكل."
+    },
+    {
+     "en": "In the old movies, the hobo always carries a stick with a bag.",
+     "ar": "في الأفلام القديمة، المشرد دايمًا شايل عصاية عليها شنطة."
+    },
+    {
+     "en": "The hobo shared his bread with the stray dog.",
+     "ar": "المشرد قسم عيشه مع الكلب الضال."
+    },
+    {
+     "en": "My grandfather said he met a hobo who knew amazing stories.",
+     "ar": "جدي قال إنه قابل مشرد كان عارف حكايات عجيبة."
+    },
+    {
+     "en": "The hobo slept under the bridge during the storm.",
+     "ar": "المشرد نام تحت الكوبري وقت العاصفة."
+    },
+    {
+     "en": "The kind lady gave the hobo a warm coat for winter.",
+     "ar": "الست الطيبة دات للمشرد جاكيت دافي للشتا."
+    },
+    {
+     "en": "The hobo played the harmonica for the passengers at the station.",
+     "ar": "المشرد عزف على الهارمونيكا للمسافرين في المحطة."
+    },
+    {
+     "en": "A hobo taught him how to fish in the river.",
+     "ar": "مشرد علمه يصطاد سمك في النهر."
+    },
+    {
+     "en": "The hobo refused money and only asked for water.",
+     "ar": "المشرد رفض الفلوس وطلب مية بس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000078",
+   "sentences": [
+    {
+     "en": "The newbie made a lot of mistakes on his first day.",
+     "ar": "الجديد غلط غلطات كتير في أول يوم ليه."
+    },
+    {
+     "en": "Do not worry, every expert was once a newbie.",
+     "ar": "متقلقش، كل خبير كان يوم من الأيام مبتدئ."
+    },
+    {
+     "en": "The newbie asked where the coffee machine was.",
+     "ar": "الجديد سأل مكان مكنة القهوة فين."
+    },
+    {
+     "en": "As a newbie, she listened more than she spoke.",
+     "ar": "عشان لسه جديدة، كانت بتسمع أكتر ما بتتكلم."
+    },
+    {
+     "en": "The newbie broke the printer on his second day.",
+     "ar": "الجديد كسر الطابعة في تاني يوم ليه."
+    },
+    {
+     "en": "Our newbie is learning fast, he will be great soon.",
+     "ar": "الجديد بتاعنا بيتعلم بسرعة، هيبقى شاطر قريب."
+    },
+    {
+     "en": "The manager assigned a mentor to help the newbie.",
+     "ar": "المدير عين واحد يساعد الجديد يتعلم."
+    },
+    {
+     "en": "The newbie did not know the password for the system.",
+     "ar": "الجديد مش عارف الباسورد بتاع السيستم."
+    },
+    {
+     "en": "Every newbie gets a tour of the office on the first day.",
+     "ar": "كل واحد جديد بياخد جولة في المكتب في أول يوم."
+    },
+    {
+     "en": "The newbie was nervous but eager to learn.",
+     "ar": "الجديد كان متوتر بس متحمس يتعلم."
+    }
+   ]
+  },
+  {
+   "id": "slg-000079",
+   "sentences": [
+    {
+     "en": "The rookie scored a goal in his first professional match.",
+     "ar": "المبتدئ جاب جون في أول ماتش محترف ليه."
+    },
+    {
+     "en": "The rookie policeman was nervous on his first patrol.",
+     "ar": "الظابط المبتدئ كان متوتر في أول دورية ليه."
+    },
+    {
+     "en": "Every rookie makes mistakes in the beginning.",
+     "ar": "كل مبتدئ بيغلط في البداية."
+    },
+    {
+     "en": "The rookie firefighter saved a cat on his first mission.",
+     "ar": "رجل الإطفاء المبتدئ أنقذ قطة في أول مهمة ليه."
+    },
+    {
+     "en": "The coach praised the rookie for his hard work.",
+     "ar": "الكابتن مدح المبتدئ على شغله الجاد."
+    },
+    {
+     "en": "The rookie chef cut his finger on the first day.",
+     "ar": "الشيف المبتدئ جرح صوابعه في أول يوم."
+    },
+    {
+     "en": "Our rookie goalkeeper blocked three penalty shots.",
+     "ar": "حارسنا المبتدئ صد تلت ضربات جزاء."
+    },
+    {
+     "en": "The rookie asked the veteran for advice before the match.",
+     "ar": "المبتدئ طلب نصيحة من القديم قبل الماتش."
+    },
+    {
+     "en": "Being a rookie is hard, but it gets easier with time.",
+     "ar": "إنك تبقى مبتدئ حاجة صعبة، بس بتسهل مع الوقت."
+    },
+    {
+     "en": "The rookie forgot the rules and got a yellow card.",
+     "ar": "المبتدئ نسي القوانين وخد كارت أصفر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000080",
+   "sentences": [
+    {
+     "en": "The old hand at the factory taught the new workers everything.",
+     "ar": "الخبرة القديمة في المصنع علم العمال الجداد كل حاجة."
+    },
+    {
+     "en": "He is an old hand at fixing cars, ask him anything.",
+     "ar": "هو خبرة قديمة في تصليح العربيات، اسأله أي حاجة."
+    },
+    {
+     "en": "The old hand showed the rookie how to use the machine.",
+     "ar": "الخبرة القديمة ورّى المبتدئ يستخدم المكنة إزاي."
+    },
+    {
+     "en": "My grandfather is an old hand at farming.",
+     "ar": "جدي خبرة قديمة في الزراعة."
+    },
+    {
+     "en": "The old hand knew exactly why the engine was failing.",
+     "ar": "الخبرة القديمة كان عارف بالظبط ليه الموتور بيعطل."
+    },
+    {
+     "en": "Ask the old hand, he has been here for thirty years.",
+     "ar": "اسأل القديم الخبرة، هو هنا من تلاتين سنة."
+    },
+    {
+     "en": "The old hand at the bakery wakes up at three every morning.",
+     "ar": "الخبرة القديمة في المخبز بيصحى الساعة تلاتة كل صبح."
+    },
+    {
+     "en": "She is an old hand at dealing with difficult customers.",
+     "ar": "هي خبرة قديمة في التعامل مع الزباين الصعبين."
+    },
+    {
+     "en": "The old hand fixed the problem in five minutes.",
+     "ar": "الخبرة القديمة حل المشكلة في خمس دقايق."
+    },
+    {
+     "en": "Being an old hand, he rarely makes mistakes.",
+     "ar": "عشان هو خبرة قديمة، نادرًا ما بيغلط."
+    }
+   ]
+  },
+  {
+   "id": "slg-000081",
+   "sentences": [
+    {
+     "en": "He is a pro at fixing phones, he does it in minutes.",
+     "ar": "هو محترف في تصليح الموبايلات، بيصلح في دقايق."
+    },
+    {
+     "en": "She cooks like a pro, everything tastes amazing.",
+     "ar": "هي بتطبخ زي المحترفين، كل حاجة بتطلع طعمها تحفة."
+    },
+    {
+     "en": "The pro golfer won the tournament easily.",
+     "ar": "لاعب الجولف المحترف كسب البطولة بسهولة."
+    },
+    {
+     "en": "He drives like a pro, smooth and careful.",
+     "ar": "هو بيسوق زي المحترفين، بهدوء وحذر."
+    },
+    {
+     "en": "The pro photographer took amazing shots at the wedding.",
+     "ar": "المصور المحترف خد صور تحفة في الفرح."
+    },
+    {
+     "en": "She plays chess like a pro, beating everyone in the club.",
+     "ar": "هي بتلعب شطرنج زي المحترفين، بتكسب كل حد في النادي."
+    },
+    {
+     "en": "The pro mechanic found the problem right away.",
+     "ar": "الميكانيكي المحترف لقى المشكلة على طول."
+    },
+    {
+     "en": "He is a pro at negotiating prices in the market.",
+     "ar": "هو محترف في الفصال في السوق."
+    },
+    {
+     "en": "The pro swimmer trains four hours every day.",
+     "ar": "العوام المحترف بيتمرن أربع ساعات كل يوم."
+    },
+    {
+     "en": "Being a pro takes years of practice and patience.",
+     "ar": "إنك تبقى محترف محتاج سنين من التمرين والصبر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000082",
+   "sentences": [
+    {
+     "en": "The math whiz solved the problem in seconds.",
+     "ar": "عبقري الحساب حل المسألة في ثواني."
+    },
+    {
+     "en": "She is a whiz at computers, she can fix anything.",
+     "ar": "هي عبقرية في الكمبيوترات، بتقدر تصلح أي حاجة."
+    },
+    {
+     "en": "The whiz kid won the science competition again.",
+     "ar": "الطفل العبقري كسب مسابقة العلوم تاني."
+    },
+    {
+     "en": "He is a whiz with numbers, ask him anything about math.",
+     "ar": "هو عبقري في الأرقام، اسأله أي حاجة في الحساب."
+    },
+    {
+     "en": "The whiz at the office fixed the broken software in an hour.",
+     "ar": "العبقري في المكتب صلح البرنامج البايز في ساعة."
+    },
+    {
+     "en": "My nephew is a whiz at video games.",
+     "ar": "ابن أخويا عبقري في ألعاب الفيديو."
+    },
+    {
+     "en": "The whiz built a website from scratch in one weekend.",
+     "ar": "العبقري عمل موقع من الصفر في أجازة واحدة."
+    },
+    {
+     "en": "She is a whiz in the kitchen, her cakes are famous.",
+     "ar": "هي عبقرية في المطبخ، الكيك بتاعها مشهور."
+    },
+    {
+     "en": "The whiz solved the puzzle before anyone else.",
+     "ar": "العبقري حل اللغز قبل أي حد تاني."
+    },
+    {
+     "en": "Being a whiz at languages, he learned Arabic in six months.",
+     "ar": "عشان هو عبقري في اللغات، اتعلم العربي في ستة شهور."
+    }
+   ]
+  },
+  {
+   "id": "slg-000083",
+   "sentences": [
+    {
+     "en": "The brainiac answered every question correctly.",
+     "ar": "الشاطر الذكي جاوب على كل سؤال صح."
+    },
+    {
+     "en": "My sister is a brainiac, she gets top marks in everything.",
+     "ar": "أختي شاطرة جدًا، بتجيب أعلى درجات في كل حاجة."
+    },
+    {
+     "en": "The brainiac explained the theory to the whole class.",
+     "ar": "الذكي شرح النظرية للفصل كله."
+    },
+    {
+     "en": "He is a brainiac, he memorized the entire book.",
+     "ar": "هو شاطر جدًا، حفظ الكتاب كله."
+    },
+    {
+     "en": "The brainiac in our group solved the puzzle in one minute.",
+     "ar": "الشاطر في جروبنا حل اللغز في دقيقة واحدة."
+    },
+    {
+     "en": "She is such a brainiac, she reads scientific papers for fun.",
+     "ar": "هي شاطرة جدًا، بتقرا أبحاث علمية للمتعة."
+    },
+    {
+     "en": "The brainiac corrected the professor's mistake politely.",
+     "ar": "الذكي صحح غلطة البروفيسور بأدب."
+    },
+    {
+     "en": "Our brainiac friend helped us all pass the exam.",
+     "ar": "صاحبنا الشاطر ساعدنا كلنا ننجح في الامتحان."
+    },
+    {
+     "en": "The brainiac invented a new way to save electricity.",
+     "ar": "العبقري اخترع طريقة جديدة لتوفير الكهربا."
+    },
+    {
+     "en": "Being a brainiac is not everything, social skills matter too.",
+     "ar": "إنك تبقى شاطر مش كل حاجة، المهارات الاجتماعية مهمة كمان."
+    }
+   ]
+  },
+  {
+   "id": "slg-000084",
+   "sentences": [
+    {
+     "en": "The egghead talked about philosophy for three hours.",
+     "ar": "المثقف الزيادة اتكلم عن الفلسفة تلت ساعات."
+    },
+    {
+     "en": "Nobody understood the egghead's complicated explanation.",
+     "ar": "محدش فهم شرح المثقف المعقد."
+    },
+    {
+     "en": "The egghead corrected everyone's grammar at the party.",
+     "ar": "المثقف الزيادة صحح قواعد كل الناس في الحفلة."
+    },
+    {
+     "en": "He is an egghead, always quoting books nobody has read.",
+     "ar": "هو مثقف زيادة عن اللزوم، دايمًا بيقتبس من كتب محدش قراها."
+    },
+    {
+     "en": "The egghead solved the math problem but could not change a tire.",
+     "ar": "المثقف حل مسألة الحساب بس معرفش يغير كاوتش."
+    },
+    {
+     "en": "She is an egghead, she reads dictionaries for fun.",
+     "ar": "هي مثقفة زيادة عن اللزوم، بتقرا قواميس للمتعة."
+    },
+    {
+     "en": "The egghead bored everyone with his lecture about ancient history.",
+     "ar": "المثقف الزيادة ملل الكل بمحاضرته عن التاريخ القديم."
+    },
+    {
+     "en": "Our egghead professor knows everything about ancient Egypt.",
+     "ar": "أستاذنا المثقف عارف كل حاجة عن مصر القديمة."
+    },
+    {
+     "en": "The egghead used words nobody in the room understood.",
+     "ar": "المثقف الزيادة استخدم كلمات محدش في الأوضة فهمها."
+    },
+    {
+     "en": "Being an egghead is fine, but learn to talk like normal people.",
+     "ar": "إنك تبقى مثقف حاجة كويسة، بس اتعلم تتكلم زي الناس العادية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000085",
+   "sentences": [
+    {
+     "en": "You dummy, you locked the keys inside the car.",
+     "ar": "يا غبي، انت قفلت المفاتيح جوه العربية."
+    },
+    {
+     "en": "The dummy forgot his own birthday.",
+     "ar": "الغبي نسي عيد ميلاده هو."
+    },
+    {
+     "en": "I felt like a dummy when I wore mismatched socks.",
+     "ar": "حسيت إني غبي لما لبست شراب مش شبه بعضه."
+    },
+    {
+     "en": "The dummy put the milk in the cupboard instead of the fridge.",
+     "ar": "الغبي حط اللبن في الدولاب بدل التلاجة."
+    },
+    {
+     "en": "Do not be a dummy, read the instructions first.",
+     "ar": "متبقاش غبي، اقرا التعليمات الأول."
+    },
+    {
+     "en": "The dummy tried to open the door the wrong way.",
+     "ar": "الغبي حاول يفتح الباب من الاتجاه الغلط."
+    },
+    {
+     "en": "He called himself a dummy for forgetting the meeting.",
+     "ar": "قال على نفسه غبي عشان نسي الاجتماع."
+    },
+    {
+     "en": "The dummy washed his phone with his jeans.",
+     "ar": "الغبي غسل موبايله مع البنطلون."
+    },
+    {
+     "en": "Only a dummy would wear a white shirt to a barbecue.",
+     "ar": "بس غبي اللي يلبس قميص أبيض في حفلة شواء."
+    },
+    {
+     "en": "The dummy asked if the sun rises in the west.",
+     "ar": "الغبي سأل لو الشمس بتطلع من الغرب."
+    }
+   ]
+  },
+  {
+   "id": "slg-000086",
+   "sentences": [
+    {
+     "en": "The dimwit did not understand the simple joke.",
+     "ar": "البطيء الفهم مفهمش النكتة البسيطة."
+    },
+    {
+     "en": "He is a dimwit, he needs everything explained twice.",
+     "ar": "هو بطيء الفهم، محتاج كل حاجة تتشرح مرتين."
+    },
+    {
+     "en": "The dimwit put sugar in the salt shaker.",
+     "ar": "البطيء الفهم حط سكر في الملاحة."
+    },
+    {
+     "en": "Do not be a dimwit, think before you act.",
+     "ar": "متبقاش بطيء الفهم، فكر قبل ما تعمل."
+    },
+    {
+     "en": "The dimwit wore his shirt inside out all day.",
+     "ar": "البطيء الفهم لبس قميصه مقلوب طول اليوم."
+    },
+    {
+     "en": "She is not a dimwit, she just does not pay attention.",
+     "ar": "هي مش بطيئة الفهم، هي بس مش بتركز."
+    },
+    {
+     "en": "The dimwit asked why the ice was cold.",
+     "ar": "البطيء الفهم سأل ليه التلج ساقع."
+    },
+    {
+     "en": "The dimwit tried to charge his phone with a spoon.",
+     "ar": "البطيء الفهم حاول يشحن موبايله بمعلقة."
+    },
+    {
+     "en": "Even the dimwit understood the story in the end.",
+     "ar": "حتى بطيء الفهم فهم الحكاية في الآخر."
+    },
+    {
+     "en": "The dimwit forgot where he parked his bicycle.",
+     "ar": "البطيء الفهم نسي مكان عجلته فين."
+    }
+   ]
+  },
+  {
+   "id": "slg-000087",
+   "sentences": [
+    {
+     "en": "The blockhead broke the remote by hitting it too hard.",
+     "ar": "الغبي كسر الريموت لأنه ضربه بقوة زيادة."
+    },
+    {
+     "en": "Do not be a blockhead, listen to what I am saying.",
+     "ar": "متبقاش راسك ناشفة، اسمع اللي بقوله."
+    },
+    {
+     "en": "The blockhead tried to fix the TV with a hammer.",
+     "ar": "الغبي حاول يصلح التلفزيون بشاكوش."
+    },
+    {
+     "en": "He is a blockhead, he never learns from his mistakes.",
+     "ar": "هو راسه ناشفة، عمرو ما بيتعلم من غلطاته."
+    },
+    {
+     "en": "The blockhead wore a winter coat in the summer heat.",
+     "ar": "الغبي لبس جاكيت شتا في حر الصيف."
+    },
+    {
+     "en": "She called her brother a blockhead for breaking her favorite mug.",
+     "ar": "قالت على أخوها غبي عشان كسر كوبايتها المفضلة."
+    },
+    {
+     "en": "The blockhead asked for directions three times and still got lost.",
+     "ar": "الغبي سأل على الطريق تلت مرات وبرضه ضاع."
+    },
+    {
+     "en": "The blockhead put diesel in a petrol car.",
+     "ar": "الغبي حط سولار في عربية بنزين."
+    },
+    {
+     "en": "Stop being a blockhead and follow the recipe.",
+     "ar": "بطّل غباوة وامشي على الوصفة."
+    },
+    {
+     "en": "The blockhead tried to open the window with a key.",
+     "ar": "الغبي حاول يفتح الشباك بمفتاح."
+    }
+   ]
+  },
+  {
+   "id": "slg-000088",
+   "sentences": [
+    {
+     "en": "The airhead forgot why she walked into the room.",
+     "ar": "الخفيفة العقل نسيت ليه دخلت الأوضة."
+    },
+    {
+     "en": "He is an airhead, he cannot remember anything.",
+     "ar": "هو خفيف العقل، مش بيفتكر أي حاجة."
+    },
+    {
+     "en": "The airhead put her keys in the freezer.",
+     "ar": "الخفيفة العقل حطت مفاتيحها في الفريزر."
+    },
+    {
+     "en": "She is a sweet airhead, always forgetting her own phone.",
+     "ar": "هي لطيفة بس خفيفة العقل، دايمًا بتنسى موبايلها."
+    },
+    {
+     "en": "The airhead asked if fish have ears.",
+     "ar": "الخفيفة العقل سألت لو السمك عنده ودان."
+    },
+    {
+     "en": "Do not be an airhead, pay attention to the road.",
+     "ar": "متبقاش خفيف العقل، ركز في الطريق."
+    },
+    {
+     "en": "The airhead wore two different shoes to work.",
+     "ar": "الخفيفة العقل لبست جزمتين مش شبه بعض للشغل."
+    },
+    {
+     "en": "He is an airhead, he forgot his own wedding anniversary.",
+     "ar": "هو خفيف العقل، نسي ذكرى جوازه هو."
+    },
+    {
+     "en": "The airhead tried to open the car with the house key.",
+     "ar": "الخفيفة العقل حاولت تفتح العربية بمفتاح البيت."
+    },
+    {
+     "en": "Even the airhead remembered to bring the cake.",
+     "ar": "حتى الخفيفة العقل افتكرت تجيب الجاتوه."
+    }
+   ]
+  },
+  {
+   "id": "slg-000089",
+   "sentences": [
+    {
+     "en": "The space cadet stared at the wall during the whole meeting.",
+     "ar": "الشارد بص على الحيطة طول الاجتماع."
+    },
+    {
+     "en": "He is a space cadet, he forgets where he is half the time.",
+     "ar": "هو شارد، بينسى هو فين نص الوقت."
+    },
+    {
+     "en": "The space cadet put salt in his coffee instead of sugar.",
+     "ar": "الشارد حط ملح في قهوته بدل السكر."
+    },
+    {
+     "en": "She is a space cadet, always lost in her own thoughts.",
+     "ar": "هي شاردة، دايمًا تايهة في أفكارها."
+    },
+    {
+     "en": "The space cadet missed his bus stop because he was daydreaming.",
+     "ar": "الشارد فاته محطته لأنه كان بيحلم وهو صاحي."
+    },
+    {
+     "en": "Do not be a space cadet, focus on the lesson.",
+     "ar": "متبقاش شارد، ركز في الدرس."
+    },
+    {
+     "en": "The space cadet walked into a glass door.",
+     "ar": "الشارد خبط في باب زجاج."
+    },
+    {
+     "en": "My space cadet friend forgets his own phone number.",
+     "ar": "صاحبي الشارد بينسى رقم موبايله هو."
+    },
+    {
+     "en": "The space cadet answered a question that was asked ten minutes ago.",
+     "ar": "الشارد جاوب على سؤال اتسأل من عشر دقايق."
+    },
+    {
+     "en": "Being a space cadet makes him miss important details.",
+     "ar": "شروده بيخليه يفوّت تفاصيل مهمة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000090",
+   "sentences": [
+    {
+     "en": "The daydreamer stared out the window during class.",
+     "ar": "اللي بيحلم وهو صاحي بص من الشباك طول الحصة."
+    },
+    {
+     "en": "She is a daydreamer, always imagining faraway places.",
+     "ar": "هي بتحلم وهي صاحية، دايمًا بتتخيل أماكن بعيدة."
+    },
+    {
+     "en": "The daydreamer forgot to do his homework again.",
+     "ar": "اللي بيحلم وهو صاحي نسي يعمل واجبه تاني."
+    },
+    {
+     "en": "Being a daydreamer, he missed half of the lecture.",
+     "ar": "عشان بيحلم وهو صاحي، فاته نص المحاضرة."
+    },
+    {
+     "en": "The daydreamer imagined winning the lottery.",
+     "ar": "اللي بيحلم وهو صاحي اتخيل إنه كسب اليانصيب."
+    },
+    {
+     "en": "My daydreamer friend always has his head in the clouds.",
+     "ar": "صاحبي اللي بيحلم وهو صاحي دايمًا سايب عقله في السما."
+    },
+    {
+     "en": "The daydreamer did not hear his name being called.",
+     "ar": "اللي بيحلم وهو صاحي مسمعش اسمه بيتنادى."
+    },
+    {
+     "en": "She is a daydreamer, she writes stories in her head all day.",
+     "ar": "هي بتحلم وهي صاحية، بتكتب قصص في دماغها طول اليوم."
+    },
+    {
+     "en": "The daydreamer missed the important announcement.",
+     "ar": "اللي بيحلم وهو صاحي فاته الإعلان المهم."
+    },
+    {
+     "en": "Being a daydreamer is fine, but sometimes you need to focus.",
+     "ar": "إنك تحلم وانت صاحي حاجة كويسة، بس أحيانًا لازم تركز."
+    }
+   ]
+  },
+  {
+   "id": "slg-000091",
+   "sentences": [
+    {
+     "en": "The hothead shouted at the referee over a small mistake.",
+     "ar": "العصبي صرخ في وش الحكم بسبب غلطة صغيرة."
+    },
+    {
+     "en": "Do not be a hothead, count to ten before you speak.",
+     "ar": "متبقاش عصبي، عد لحد عشرة قبل ما تتكلم."
+    },
+    {
+     "en": "The hothead broke his phone when he got angry.",
+     "ar": "العصبي كسر موبايله لما اتعصب."
+    },
+    {
+     "en": "He is such a hothead, he argues with everyone.",
+     "ar": "هو عصبي جدًا، بيتخانق مع أي حد."
+    },
+    {
+     "en": "The hothead quit his job after one argument with the boss.",
+     "ar": "العصبي قدم استقالته بعد خناقة واحدة مع المدير."
+    },
+    {
+     "en": "Being a hothead will get you in trouble.",
+     "ar": "العصبية هتجيبلك مشاكل."
+    },
+    {
+     "en": "The hothead threw his racket after losing the point.",
+     "ar": "العصبي رمى المضرب بعد ما خسر النقطة."
+    },
+    {
+     "en": "She is a hothead, she gets angry over nothing.",
+     "ar": "هي عصبية، بتتعصب على لا حاجة."
+    },
+    {
+     "en": "The hothead calmed down after drinking a glass of water.",
+     "ar": "العصبي هدا بعد ما شرب كوباية مية."
+    },
+    {
+     "en": "The hothead in our team got a red card for arguing.",
+     "ar": "العصبي في فريقنا خد كارت أحمر عشان الاعتراض."
+    }
+   ]
+  },
+  {
+   "id": "slg-000092",
+   "sentences": [
+    {
+     "en": "The loose cannon shouted at the customer for no reason.",
+     "ar": "الشخص غير المتوقع صرخ في وش الزبون من غير سبب."
+    },
+    {
+     "en": "He is a loose cannon, you never know what he will do next.",
+     "ar": "هو مش متوقع، عمري ما تعرف هيعمل إيه بعد كده."
+    },
+    {
+     "en": "The loose cannon quit the project in the middle of the meeting.",
+     "ar": "الشخص غير المتوقع ساب المشروع في نص الاجتماع."
+    },
+    {
+     "en": "Being a loose cannon makes people nervous around him.",
+     "ar": "إنه مش متوقع بيخلي الناس متوترة حواليه."
+    },
+    {
+     "en": "The loose cannon revealed the secret plan to the press.",
+     "ar": "الشخص غير المتوقع كشف الخطة السرية للصحافة."
+    },
+    {
+     "en": "The manager cannot control the loose cannon in the team.",
+     "ar": "المدير مش قادر يتحكم في الشخص غير المتوقع في الفريق."
+    },
+    {
+     "en": "He is a loose cannon, he started a fight at the wedding.",
+     "ar": "هو مش متوقع، عمل خناقة في الفرح."
+    },
+    {
+     "en": "The loose cannon changed the plan without telling anyone.",
+     "ar": "الشخص غير المتوقع غير الخطة من غير ما يقول لحد."
+    },
+    {
+     "en": "Nobody wants to work with a loose cannon.",
+     "ar": "محدش عايز يشتغل مع شخص مش متوقع."
+    },
+    {
+     "en": "The loose cannon apologized after causing chaos at the event.",
+     "ar": "الشخص غير المتوقع اعتذر بعد ما عمل دوشة في الحفلة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000093",
+   "sentences": [
+    {
+     "en": "The control freak checked every detail of the project twice.",
+     "ar": "الشخص اللي عايز يتحكم في كل حاجة راجع كل تفصيلة في المشروع مرتين."
+    },
+    {
+     "en": "She is a control freak, she organizes everyone's desk.",
+     "ar": "هي بتحب تتحكم في كل حاجة، بترتب مكتب الكل."
+    },
+    {
+     "en": "The control freak would not let anyone else plan the trip.",
+     "ar": "الشخص اللي بيحب يتحكم مرضيش يخلي حد تاني يخطط الرحلة."
+    },
+    {
+     "en": "Being a control freak makes teamwork difficult.",
+     "ar": "إنك تحب تتحكم في كل حاجة بيخلي الشغل الجماعي صعب."
+    },
+    {
+     "en": "The control freak rearranged the entire kitchen without asking.",
+     "ar": "الشخص اللي بيحب يتحكم رتب المطبخ كله من غير ما يسأل."
+    },
+    {
+     "en": "He is a control freak, he checks his emails every five minutes.",
+     "ar": "هو بيحب يتحكم في كل حاجة، بيراجع إيميلاته كل خمس دقايق."
+    },
+    {
+     "en": "The control freak planned the party down to the last napkin.",
+     "ar": "الشخص اللي بيحب يتحكم خطط الحفلة لحد آخر منديل."
+    },
+    {
+     "en": "My control freak boss approves every single email before it is sent.",
+     "ar": "مديري اللي بيحب يتحكم في كل حاجة بيوافق على كل إيميل قبل ما يتبعت."
+    },
+    {
+     "en": "The control freak could not sleep until everything was perfect.",
+     "ar": "الشخص اللي بيحب يتحكم مقدرش ينام لحد ما كل حاجة تبقى مظبوطة."
+    },
+    {
+     "en": "Being a control freak exhausted her, but she could not stop.",
+     "ar": "حبها للتحكم أرهقها، بس ماقدرتش تبطل."
+    }
+   ]
+  },
+  {
+   "id": "slg-000094",
+   "sentences": [
+    {
+     "en": "The neat freak organized all the books by color.",
+     "ar": "المهووس بالنظافة رتب كل الكتب بالألوان."
+    },
+    {
+     "en": "She is a neat freak, she cleans the house three times a day.",
+     "ar": "هي مهووسة بالنظافة، بتنضف البيت تلت مرات في اليوم."
+    },
+    {
+     "en": "The neat freak could not sleep because of one crooked picture frame.",
+     "ar": "المهووس بالنظافة مقدرش ينام عشان إطار صورة واحد معوج."
+    },
+    {
+     "en": "My neat freak roommate labels everything in the fridge.",
+     "ar": "صاحبي في السكن اللي مهووس بالنظافة بيلزق ورق بأسماء على كل حاجة في التلاجة."
+    },
+    {
+     "en": "The neat freak vacuumed the carpet four times.",
+     "ar": "المهووس بالنظافة كنّس السجادة بالمكنسة أربع مرات."
+    },
+    {
+     "en": "Being a neat freak is good, but do not stress over small things.",
+     "ar": "إنك تبقى مهووس بالنظافة حاجة كويسة، بس متتنرفزش على الحاجات الصغيرة."
+    },
+    {
+     "en": "The neat freak aligned all the chairs perfectly.",
+     "ar": "المهووس بالنظافة ظبط كل الكراسي بشكل مظبوط."
+    },
+    {
+     "en": "He is a neat freak, his desk is always spotless.",
+     "ar": "هو مهووس بالنظافة، مكتبه دايمًا نضيف تمامًا."
+    },
+    {
+     "en": "The neat freak washed the dishes before we finished eating.",
+     "ar": "المهووس بالنظافة غسل المواعين قبل ما نخلص أكل."
+    },
+    {
+     "en": "The neat freak could not stand the messy garage.",
+     "ar": "المهووس بالنظافة ماقدرش يستحمل الجراج الوسخ."
+    }
+   ]
+  },
+  {
+   "id": "slg-000095",
+   "sentences": [
+    {
+     "en": "The drama queen cried because her favorite show was cancelled.",
+     "ar": "اللي بتعمل من الحبة قبة عيطت عشان برنامجها المفضل اتلغى."
+    },
+    {
+     "en": "She is a drama queen, she makes a big deal out of everything.",
+     "ar": "هي بتعمل من الحبة قبة، بتضخم أي حاجة."
+    },
+    {
+     "en": "The drama queen fainted when she saw a small spider.",
+     "ar": "اللي بتعمل من الحبة قبة أغمى عليها لما شافت عنكبوت صغير."
+    },
+    {
+     "en": "Do not be a drama queen, it is just a small cut.",
+     "ar": "متعمليش من الحبة قبة، دي مجرد جرح صغير."
+    },
+    {
+     "en": "The drama queen announced her headache to the whole office.",
+     "ar": "اللي بتعمل من الحبة قبة أعلنت صداعها للمكتب كله."
+    },
+    {
+     "en": "My drama queen cousin cried over a broken nail.",
+     "ar": "بنت خالتي اللي بتعمل من الحبة قبة عيطت على ضافر مكسور."
+    },
+    {
+     "en": "The drama queen said the traffic was the worst day of her life.",
+     "ar": "اللي بتعمل من الحبة قبة قالت إن الزحمة كانت أسوأ يوم في حياتها."
+    },
+    {
+     "en": "Being a drama queen will not solve your problems.",
+     "ar": "إنك تعمل من الحبة قبة مش هيحل مشاكلك."
+    },
+    {
+     "en": "The drama queen threatened to quit over a small comment.",
+     "ar": "اللي بتعمل من الحبة قبة هددت تستقيل بسبب تعليق صغير."
+    },
+    {
+     "en": "Even the drama queen admitted it was not that bad.",
+     "ar": "حتى اللي بتعمل من الحبة قبة اعترفت إن الموضوع مش أوحش حاجة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000096",
+   "sentences": [
+    {
+     "en": "The diva demanded a special dressing room for the concert.",
+     "ar": "المطربة المتطلبة طلبت أوضة ملابس خاصة للحفلة."
+    },
+    {
+     "en": "She is a diva, she wants everything her way.",
+     "ar": "هي متطلبة، عايزة كل حاجة على مزاجها."
+    },
+    {
+     "en": "The diva refused to perform because the flowers were the wrong color.",
+     "ar": "المتطلبة رفضت تغني عشان لون الورد غلط."
+    },
+    {
+     "en": "My sister is a diva, she takes two hours to get ready.",
+     "ar": "أختي متطلبة، بتاخد ساعتين عشان تجهز."
+    },
+    {
+     "en": "The diva complained about the water temperature.",
+     "ar": "المتطلبة اشتكت من درجة حرارة المية."
+    },
+    {
+     "en": "Being a diva will not make people like you more.",
+     "ar": "إنك تبقى متطلب مش هيخلي الناس تحبك أكتر."
+    },
+    {
+     "en": "The diva demanded only red candies in her room.",
+     "ar": "المتطلبة طلبت بس بونبون أحمر في أوضتها."
+    },
+    {
+     "en": "He acts like a diva, always needing special treatment.",
+     "ar": "هو بيتصرف كأنه متطلب، دايمًا محتاج معاملة خاصة."
+    },
+    {
+     "en": "The diva made everyone wait while she changed her outfit three times.",
+     "ar": "المتطلبة خلت الكل يستنى وهي بتغير هدومها تلت مرات."
+    },
+    {
+     "en": "The little diva refused to wear the same dress twice.",
+     "ar": "المتطلبة الصغيرة رفضت تلبس نفس الفستان مرتين."
+    }
+   ]
+  },
+  {
+   "id": "slg-000097",
+   "sentences": [
+    {
+     "en": "The princess refused to eat anything homemade.",
+     "ar": "البنت المدلعة رفضت تاكل أي حاجة بيتي."
+    },
+    {
+     "en": "She acts like a princess, expecting everything to be done for her.",
+     "ar": "هي بتتصرف كأنها أميرة، متوقعة كل حاجة تتعملها."
+    },
+    {
+     "en": "The princess would not walk, she demanded a car for five minutes.",
+     "ar": "البنت المدلعة مرضيتش تمشي، طلبت عربية لمشوار خمس دقايق."
+    },
+    {
+     "en": "My cousin is a princess, she never helps with the chores.",
+     "ar": "بنت خالتي مدلعة، عمرو ما بتساعد في الشغل."
+    },
+    {
+     "en": "The princess complained that the hotel room was too small.",
+     "ar": "البنت المدلعة اشتكت إن أوضة الفندق صغيرة."
+    },
+    {
+     "en": "Stop acting like a princess and wash your own dishes.",
+     "ar": "بطّلي تتصرفي كأنك أميرة واغسلي مواعينك بنفسك."
+    },
+    {
+     "en": "The princess cried because her dress was the wrong shade of pink.",
+     "ar": "البنت المدلعة عيطت عشان لون الفستان مش الدرجة اللي عايزاها."
+    },
+    {
+     "en": "Being a princess will not prepare you for real life.",
+     "ar": "إنك تبقي مدلعة مش هيجهزك للحياة الحقيقية."
+    },
+    {
+     "en": "The princess demanded fresh flowers in her room every day.",
+     "ar": "البنت المدلعة طلبت ورد طازة في أوضتها كل يوم."
+    },
+    {
+     "en": "The little princess made her father carry her everywhere.",
+     "ar": "البنت المدلعة الصغيرة خلت أبوها يشيلها في كل حتة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000098",
+   "sentences": [
+    {
+     "en": "The heartbreaker left three girls crying in one month.",
+     "ar": "اللي بيكسر القلوب ساب تلت بنات عيانين في شهر واحد."
+    },
+    {
+     "en": "He is a heartbreaker, he never stays in one relationship.",
+     "ar": "هو بيكسر القلوب، عمرو ما بيفضل في علاقة واحدة."
+    },
+    {
+     "en": "The heartbreaker promised to call but never did.",
+     "ar": "اللي بيكسر القلوب وعد إنه هيكلم بس مكلمش أبد."
+    },
+    {
+     "en": "She is a heartbreaker, every man who loves her gets hurt.",
+     "ar": "هي بتكسر القلوب، كل راجل بيحبها بيتأذى."
+    },
+    {
+     "en": "The heartbreaker smiled and walked away without explaining.",
+     "ar": "اللي بيكسر القلوب ابتسم ومشي من غير ما يشرح."
+    },
+    {
+     "en": "My friend warned me about the heartbreaker from college.",
+     "ar": "صاحبي حذرني من اللي بيكسر القلوب بتاع الجامعة."
+    },
+    {
+     "en": "The heartbreaker sent flowers after breaking up with her.",
+     "ar": "اللي بيكسر القلوب بعت ورد بعد ما سابها."
+    },
+    {
+     "en": "He became a heartbreaker after his first love hurt him.",
+     "ar": "بقى بيكسر القلوب بعد ما أول حب في حياته أذاه."
+    },
+    {
+     "en": "The heartbreaker dated two people at the same time.",
+     "ar": "اللي بيكسر القلوب كان بيخرج مع شخصين في نفس الوقت."
+    },
+    {
+     "en": "Being a heartbreaker will leave you alone in the end.",
+     "ar": "إنك تكسر القلوب هيسيبك لوحدك في الآخر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000099",
+   "sentences": [
+    {
+     "en": "The ladies' man had a different date every weekend.",
+     "ar": "راجل البنات كان عنده ميعاد مختلف كل أسبوع."
+    },
+    {
+     "en": "He is a ladies' man, all the girls at work like him.",
+     "ar": "هو راجل البنات، كل البنات في الشغل بيحبوه."
+    },
+    {
+     "en": "The ladies' man bought flowers for three different women.",
+     "ar": "راجل البنات اشترى ورد لتلت ستات مختلفات."
+    },
+    {
+     "en": "Being a ladies' man comes naturally to him.",
+     "ar": "إنه يبقى محبوب من البنات حاجة طبيعية عنده."
+    },
+    {
+     "en": "The ladies' man knew exactly what to say to make them smile.",
+     "ar": "راجل البنات كان عارف بالظبط يقول إيه عشان يخليهم يبتسموا."
+    },
+    {
+     "en": "My uncle was a ladies' man in his youth.",
+     "ar": "عمي كان محبوب البنات في شبابه."
+    },
+    {
+     "en": "The ladies' man danced with every woman at the party.",
+     "ar": "راجل البنات رقص مع كل ست في الحفلة."
+    },
+    {
+     "en": "He is a ladies' man, but he is looking for true love now.",
+     "ar": "هو محبوب البنات، بس بيدور على حب حقيقي دلوقتي."
+    },
+    {
+     "en": "The ladies' man got a phone number at the café in five minutes.",
+     "ar": "راجل البنات خد رقم تليفون في القهوة في خمس دقايق."
+    },
+    {
+     "en": "Being a ladies' man did not help him find real happiness.",
+     "ar": "إنه كان محبوب البنات مساعدهوش يلاقي سعادة حقيقية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000100",
+   "sentences": [
+    {
+     "en": "The smooth talker convinced me to buy a watch I did not need.",
+     "ar": "الكلامه معسول قنعني أشتري ساعة مش محتاجها."
+    },
+    {
+     "en": "He is a smooth talker, he can sell ice to Eskimos.",
+     "ar": "هو كلامه معسول، يقدر يبيع تلج لأهل القطب."
+    },
+    {
+     "en": "The smooth talker got a discount just by smiling.",
+     "ar": "الكلامه معسول خد خصم بس لأنه ابتسم."
+    },
+    {
+     "en": "She is a smooth talker, she convinced the teacher to extend the deadline.",
+     "ar": "هي كلامها معسول، قنعت المدرس يمدد المعاد."
+    },
+    {
+     "en": "The smooth talker talked his way out of a parking ticket.",
+     "ar": "الكلامه معسول طلع من مخالفة الركن بكلامه."
+    },
+    {
+     "en": "Being a smooth talker helped him in his sales job.",
+     "ar": "كلامه المعسول ساعده في شغل المبيعات."
+    },
+    {
+     "en": "The smooth talker convinced the whole group to change the plan.",
+     "ar": "الكلامه معسول قنع الجروب كله يغير الخطة."
+    },
+    {
+     "en": "My smooth talker friend got us a table without a reservation.",
+     "ar": "صاحبي اللي كلامه معسول جبلنا ترابيزة من غير حجز."
+    },
+    {
+     "en": "The smooth talker apologized so well that everyone forgave him.",
+     "ar": "الكلامه معسول اعتذر بشكل كويس لدرجة إن الكل سامحه."
+    },
+    {
+     "en": "Being a smooth talker is a gift, but use it honestly.",
+     "ar": "إن كلامك يبقى معسول حاجة جميلة، بس استخدمها بصدق."
+    }
+   ]
+  }
+ ]
+}
