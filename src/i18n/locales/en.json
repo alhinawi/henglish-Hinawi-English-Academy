@@ -2619,5 +2619,8 @@
   "as.playCount": "Times played: {count}",
   "as.round": "Round {round} of {total}",
   "as.seconds": "{count} s",
-  "as.points": "{count} points"
+  "as.points": "{count} points",
+  "gp.title": "Games arena",
+  "gp.hero": "Learn it. Play it. Remember it.",
+  "gp.intro": "English games with words, sentences and verbs from the academy. Choose a challenge and beat your best score."
 }
