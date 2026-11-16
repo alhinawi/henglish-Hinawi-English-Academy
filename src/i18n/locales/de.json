@@ -2752,5 +2752,13 @@
   "ad.speakingDesc": "Aufgezeichnete Sprechbewertungen, Sprachfluss und Wörter pro Minute (WPM)",
   "ad.unavailable": "Die Inhaltsverwaltung ist nicht verfügbar. Hinzufügen, Löschen, Speichern und Veröffentlichen sind deaktiviert. Änderungen werden nicht gespeichert.",
   "cd.sample": "MUSTER",
-  "cd.disclaimer": "Hinweis: Dieses Zertifikat dokumentiert interne Lernleistungen in Kursen der Henglish Academy. Es ersetzt keine staatlichen Prüfungen oder offiziellen IELTS-/TOEFL-Zertifikate."
+  "cd.disclaimer": "Hinweis: Dieses Zertifikat dokumentiert interne Lernleistungen in Kursen der Henglish Academy. Es ersetzt keine staatlichen Prüfungen oder offiziellen IELTS-/TOEFL-Zertifikate.",
+  "ce.error0": "Melde dich zuerst mit deinem Konto an.",
+  "ce.error1": "Du hast das Limit von 3 Versuchen pro Lernpfad in 24 Stunden erreicht. Versuche es danach erneut.",
+  "ce.error2": "Prüfe deine Antworten in Ruhe. Die Abgabe wird nach der Mindestdauer der Bewertung freigegeben.",
+  "ce.error3": "Die Bewertung ist abgelaufen. Starte einen neuen Versuch.",
+  "ce.error4": "Dieser Versuch wurde bereits abgegeben oder nicht gefunden.",
+  "ce.error5": "Es sind noch Lektionsbewertungen auf dem Server erforderlich.",
+  "ce.error6": "Die Zertifikatsausstellung ist nicht bereit. Bis zur Aktivierung wird kein Zertifikat ausgestellt.",
+  "ce.error7": "Keine Verbindung zum Zertifikatsdienst. Versuche es erneut. Der Download bleibt bis zur Bestätigung durch den Server gesperrt."
 }
