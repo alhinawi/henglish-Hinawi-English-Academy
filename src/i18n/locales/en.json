@@ -2251,5 +2251,20 @@
   "sad.activeContext": "Current active context:",
   "sad.thinking": "The assistant is thinking about an accurate answer...",
   "sad.quickPrompts": "Suggested quick prompts:",
-  "sad.inputPlaceholder": "Ask the assistant about any detail in the translation..."
+  "sad.inputPlaceholder": "Ask the assistant about any detail in the translation...",
+  "dt.errTooLarge": "The file is too large (maximum 10 MB).",
+  "dt.errFormat": "Unsupported file format. Please choose a TXT, PDF, or DOCX file.",
+  "dt.decoding": "Decoding the document and extracting structured paragraphs...",
+  "dt.translatingChunk": "Translating section {n} of {m}...",
+  "dt.done": "Document translated successfully with formatting and paragraphs preserved!",
+  "dt.errTranslate": "Could not complete the document translation. Check your internet connection and the file.",
+  "dt.title": "Full document translation (Document Translation Studio)",
+  "dt.blurb": "Upload TXT, PDF, or DOCX files. The system extracts the content and translates it fully while preserving paragraph order.",
+  "dt.formats": "Supported formats: TXT, PDF, DOCX",
+  "dt.pickFile": "Click to choose a document from your device",
+  "dt.kb": "KB",
+  "dt.dropHint": "Or drag and drop the file here (max 10MB)",
+  "dt.start": "Start translating the document now",
+  "dt.preview": "Translated document preview:",
+  "dt.download": "Download the translated document (.txt)"
 }
