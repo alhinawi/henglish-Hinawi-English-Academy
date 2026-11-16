@@ -7,6 +7,8 @@ import {
   AssessmentResultBreakdown,
   QuestionSkill
 } from '../data/massiveQuestionBank';
+import { generatePlacementSessionFromBank } from '../services/placementService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
   FileCheck2,
@@ -39,7 +41,27 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   onRecordScore,
 }) => {
   // Adaptive test session generated dynamically on mount or restart
-  const [sessionQuestions, setSessionQuestions] = useState<AssessmentQuestion[]>(() => generateAdaptivePlacementSession());
+  const { t } = useLanguage();
+  const [sessionQuestions, setSessionQuestions] = useState<AssessmentQuestion[]>([]);
+  const [loadingSession, setLoadingSession] = useState(true);
+
+  const loadSession = async () => {
+    setLoadingSession(true);
+    try {
+      const fromBank = await generatePlacementSessionFromBank();
+      // Fall back to the small built-in set only if the bank could not supply a full test.
+      setSessionQuestions(fromBank.length >= 10 ? fromBank : generateAdaptivePlacementSession());
+    } catch {
+      setSessionQuestions(generateAdaptivePlacementSession());
+    } finally {
+      setLoadingSession(false);
+    }
+  };
+
+  useEffect(() => {
+    void loadSession();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [currentQIdx, setCurrentQIdx] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [testFinished, setTestFinished] = useState(false);
@@ -99,8 +121,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
 
   const handleRestart = () => {
     playSound('click');
-    const newSession = generateAdaptivePlacementSession();
-    setSessionQuestions(newSession);
+    void loadSession();
     setCurrentQIdx(0);
     setSelectedAnswers({});
     setTestFinished(false);
@@ -131,7 +152,11 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
       </section>
 
       {/* 1. PLACEMENT TEST IN PROGRESS */}
-      {!testFinished && currentQ ? (
+      {loadingSession ? (
+        <section className="glass-panel rounded-3xl p-10 border border-white/10 max-w-3xl mx-auto text-center text-[#b9b6d5] font-bold">
+          {t('exams.loadingSession')}
+        </section>
+      ) : !testFinished && currentQ ? (
         <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8 max-w-3xl mx-auto shadow-2xl">
           {/* Header & Progress Indicator */}
           <div className="space-y-3">
@@ -154,7 +179,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
           </div>
 
           {/* Reading or Listening Passage Card if exists */}
-          {currentQ.passage && (
+          {(currentQ.passage || currentQ.audioText) && (
             <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
               <div className="flex items-center justify-between text-xs font-bold text-[#ffd166]">
                 <span>{currentQ.skill === 'listening' ? 'نص الاستماع الصوتي:' : 'القطعة القرائية القصيرة:'}</span>
@@ -171,9 +196,13 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                   </button>
                 )}
               </div>
-              <p className="text-left font-sans text-sm sm:text-base text-[#dedbf4] leading-relaxed italic bg-black/30 p-3.5 rounded-xl border border-white/5">
-                "{currentQ.passage}"
-              </p>
+              {currentQ.passage ? (
+                <p className="text-left font-sans text-sm sm:text-base text-[#dedbf4] leading-relaxed italic bg-black/30 p-3.5 rounded-xl border border-white/5">
+                  "{currentQ.passage}"
+                </p>
+              ) : (
+                <p className="text-right text-xs text-[#b9b6d5]">{t('exams.listenHint')}</p>
+              )}
             </div>
           )}
 
