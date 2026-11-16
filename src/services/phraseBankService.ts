@@ -18,6 +18,8 @@ export interface PhraseEntry {
   exampleAr: string;
   register: PhraseRegister;
   origin: PhraseOrigin;
+  /** 1 = most common ... 5 = rare; missing treated as 3. */
+  popularity?: number;
   source: string;
 }
 
@@ -75,16 +77,76 @@ export async function loadAllPhrases(bank: PhraseBankId): Promise<PhraseEntry[]>
   return parts.flat();
 }
 
+export type PhraseSortMode = 'popularity' | 'alpha';
+
+export function sortPhrases(entries: PhraseEntry[], mode: PhraseSortMode): PhraseEntry[] {
+  const sorted = [...entries];
+  if (mode === 'alpha') {
+    sorted.sort((a, b) => a.phrase.localeCompare(b.phrase, 'en'));
+  } else {
+    sorted.sort(
+      (a, b) => (a.popularity ?? 3) - (b.popularity ?? 3) || a.phrase.localeCompare(b.phrase, 'en')
+    );
+  }
+  return sorted;
+}
+
+// -----------------------------------------------------------------------------
+// 10-sentence detail data (per-entry examples). Files cover 100 ids each:
+// public/data/<bank>/sentences/<prefix>-sent-NNNNNN-NNNNNN.json
+// Contract: scripts/check_phrase_sentences.py. Partial coverage is expected;
+// callers fall back to the entry's built-in example.
+// -----------------------------------------------------------------------------
+
+export interface PhraseSentence {
+  en: string;
+  ar: string;
+}
+
+const sentenceBlockCache = new Map<string, Promise<Record<string, PhraseSentence[]> | null>>();
+
+export async function loadPhraseSentences(
+  bank: PhraseBankId,
+  entryId: string
+): Promise<PhraseSentence[] | null> {
+  const index = await loadPhraseIndex(bank);
+  const numeric = parseInt(entryId.replace(`${index.idPrefix}-`, ''), 10);
+  if (!Number.isFinite(numeric) || numeric < 1) return null;
+  const lo = Math.floor((numeric - 1) / 100) * 100 + 1;
+  const hi = lo + 99;
+  const pad = (n: number) => String(n).padStart(6, '0');
+  const file = `${index.idPrefix}-sent-${pad(lo)}-${pad(hi)}.json`;
+  const key = `${bank}/${file}`;
+  if (!sentenceBlockCache.has(key)) {
+    sentenceBlockCache.set(
+      key,
+      fetch(`/data/${bank}/sentences/${file}`)
+        .then(async (res) => {
+          if (!res.ok) return null;
+          const data = (await res.json()) as { items?: { id: string; sentences: PhraseSentence[] }[] };
+          const map: Record<string, PhraseSentence[]> = {};
+          for (const item of data.items ?? []) map[item.id] = item.sentences;
+          return map;
+        })
+        .catch(() => null)
+    );
+  }
+  const block = await sentenceBlockCache.get(key)!;
+  return block?.[entryId] ?? null;
+}
+
 export function filterPhrases(
   entries: PhraseEntry[],
   query: string,
   register: PhraseRegister | 'all',
-  origin: PhraseOrigin | 'all'
+  origin: PhraseOrigin | 'all',
+  tier: number | 'all' = 'all'
 ): PhraseEntry[] {
   const q = query.trim().toLowerCase();
   return entries.filter((e) => {
     if (register !== 'all' && e.register !== register) return false;
     if (origin !== 'all' && e.origin !== origin) return false;
+    if (tier !== 'all' && (e.popularity ?? 3) !== tier) return false;
     if (!q) return true;
     return (
       e.phrase.toLowerCase().includes(q) ||
