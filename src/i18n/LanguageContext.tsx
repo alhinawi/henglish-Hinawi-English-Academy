@@ -16,14 +16,18 @@ const STATIC: Record<string, Messages> = {
   en: enMessages as Messages,
 };
 
-const loaders = import.meta.glob<Messages>('./locales/*.json', { eager: false, import: 'default' });
+// Explicit literal dynamic imports: import.meta.glob is Vite-only and crashes
+// the Next.js production build, so every locale file gets one literal entry.
+const loaders: Record<string, () => Promise<Messages>> = {
+  de: () => import('./locales/de.json').then((m) => m.default as Messages),
+};
 
 async function loadMessages(code: string): Promise<Messages | null> {
   if (STATIC[code]) return STATIC[code];
-  const loader = loaders[`./locales/${code}.json`];
+  const loader = loaders[code];
   if (!loader) return null;
   try {
-    return (await loader()) as Messages;
+    return await loader();
   } catch {
     return null;
   }
