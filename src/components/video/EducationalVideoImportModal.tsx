@@ -3,6 +3,8 @@
 // Verified YouTube video importer with metadata verification and subtitle editor
 // ==============================================================================
 
+import { videoVerificationDetail } from '../../services/videoVerificationDetail';
+import { txText, useAppTextMap } from '../../services/contentI18nService';
 import React, { useState } from 'react';
 import {
   X,
@@ -42,7 +44,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
   onClose,
   onImportSuccess,
 }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
+  const videoText = useAppTextMap('videoLibraryService');
   const [youtubeInput, setYoutubeInput] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<VideoCategoryType>('movie_scenes');
   const [selectedCefr, setSelectedCefr] = useState<CEFRLevel>('B1');
@@ -157,9 +160,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+    <div dir={dir} className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
       <div
-        className="w-full max-w-3xl rounded-3xl border border-white/15 bg-linear-to-b from-[#14132b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-right space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
+        className="w-full max-w-3xl rounded-3xl border border-white/15 bg-linear-to-b from-[#14132b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-start space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
         onClick={e => e.stopPropagation()}
       >
         {/* Top Header */}
@@ -244,9 +247,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                 </div>
                 <div className="font-bold">
                   {verification.isEmbeddable ? (
-                    <span className="text-emerald-400">{verification.details}</span>
+                    <span className="text-emerald-400">{videoVerificationDetail(verification.details, t)}</span>
                   ) : (
-                    <span className="text-red-400">{verification.details}</span>
+                    <span className="text-red-400">{videoVerificationDetail(verification.details, t)}</span>
                   )}
                 </div>
               </div>
@@ -265,7 +268,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
               >
                 {VIDEO_20_CATEGORIES.map(cat => (
                   <option key={cat.id} value={cat.id} className="bg-[#121124]">
-                    {cat.nameAr}
+                    {txText(videoText, cat.nameAr)}
                   </option>
                 ))}
               </select>
