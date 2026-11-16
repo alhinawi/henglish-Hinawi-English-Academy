@@ -69,6 +69,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   // Modals & Drawers
   const [selectedWordDetail, setSelectedWordDetail] = useState<WordAnalysisDetail | null>(null);
   const [isWordModalOpen, setIsWordModalOpen] = useState(false);
+  const [wordAnalysisUnavailable, setWordAnalysisUnavailable] = useState(false);
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
   const [collections, setCollections] = useState<VocabularyCollection[]>(() => getVocabularyCollections());
 
@@ -140,26 +141,14 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       w => w.cleanWord.toLowerCase() === cleanWord || w.word.toLowerCase() === cleanWord
     );
 
-    if (found) {
-      setSelectedWordDetail(found);
-    } else {
-      // Craft on-the-fly analysis card
-      setSelectedWordDetail({
-        word,
-        cleanWord,
-        meaningAr: `المعنى السياقي لكلمة "${word}"`,
-        partOfSpeech: 'Word',
-        partOfSpeechAr: 'كلمة معجمية',
-        ipa: `/${cleanWord}/`,
-        cefrLevel: cleanWord.length > 7 ? 'B2' : 'B1',
-        exampleEn: `She pronounced the word "${word}" with great precision.`,
-        exampleAr: `نطقت كلمة "${word}" بدقة بالغة.`,
-        synonyms: [cleanWord + ' equivalent'],
-        antonyms: [],
-        collocations: [cleanWord + ' phrase'],
-        relatedTerms: [],
-      });
+    if (!found) {
+      setSelectedWordDetail(null);
+      setIsWordModalOpen(false);
+      setWordAnalysisUnavailable(true);
+      return;
     }
+    setWordAnalysisUnavailable(false);
+    setSelectedWordDetail(found);
 
     setIsWordModalOpen(true);
   };
@@ -187,6 +176,11 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
 
   return (
     <div className="min-h-screen bg-[#060417] text-white p-4 md:p-8 space-y-6 max-w-7xl mx-auto">
+      {wordAnalysisUnavailable && (
+        <p role="status" className="rounded-xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-100">
+          {t('ts.analysisUnavailable')}
+        </p>
+      )}
       {/* Studio Header & Brand Identity */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 p-6 rounded-3xl bg-gradient-to-r from-[#0d0c24] via-[#120f38] to-[#0d0c24] border border-white/10 shadow-2xl relative overflow-hidden">
         {/* Glow backdrop */}
@@ -198,14 +192,14 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
               <Languages className="w-6 h-6" />
             </span>
             <h1 className="text-2xl md:text-3xl font-black text-white tracking-tight flex items-center gap-2">
-              <span>استوديو الترجمة والتحليل اللغوي AI</span>
+              <span>{t('ts.badge')}</span>
               <span className="text-xs font-mono font-bold px-2 py-0.5 rounded-full bg-[#41e7ff] text-black">
                 PRO STUDIO
               </span>
             </h1>
           </div>
           <p className="text-xs md:text-sm text-[#b9b6d5] max-w-2xl leading-relaxed">
-            محرك ترجمة سياقي متقدم يجمع بين دقة الترجمة الذكية، الشرح النحوي الأكاديمي، تحليل الفونيتكس لكل كلمة، ونظام التكرار المتباعد.
+            {t('ts.blurb')}
           </p>
         </div>
 
@@ -220,7 +214,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
             className="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-white/5 hover:bg-[#41e7ff]/20 border border-white/10 hover:border-[#41e7ff]/40 text-slate-200 hover:text-[#41e7ff] text-xs font-bold transition-all cursor-pointer shadow-lg active:scale-95"
           >
             <Bot className="w-4 h-4 text-[#41e7ff]" />
-            <span>اسأل مساعد الترجمة الذكي</span>
+            <span>{t('ts.assistant')}</span>
           </button>
         </div>
       </div>
@@ -228,12 +222,12 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       {/* Primary Studio Tabs Navigation */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-thin">
         {[
-          { id: 'studio', label: 'المترجم الذكي والشرح', icon: Languages, badge: 'رئيسي' },
-          { id: 'documents', label: 'ترجمة المستندات (DOCX/PDF)', icon: FileText },
-          { id: 'voice', label: 'الترجمة الصوتية الحية', icon: Mic },
-          { id: 'ocr', label: 'المسح البصري والصور (OCR)', icon: Camera },
-          { id: 'practice', label: 'تحديات ومعمل الترجمة', icon: Target, badge: 'XP' },
-          { id: 'vocab', label: 'المفردات والسجل (SRS)', icon: BookmarkCheck },
+          { id: 'studio', label: t('ts.studio'), icon: Languages, badge: t('ts.main') },
+          { id: 'documents', label: t('ts.documents'), icon: FileText },
+          { id: 'voice', label: t('ts.voice'), icon: Mic },
+          { id: 'ocr', label: t('ts.ocr'), icon: Camera },
+          { id: 'practice', label: t('ts.practice'), icon: Target, badge: 'XP' },
+          { id: 'vocab', label: t('ts.vocab'), icon: BookmarkCheck },
         ].map(tab => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
