@@ -98,7 +98,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ff4f9a]/20 text-[#ff8bb9] border border-[#ff4f9a]/40 shadow-sm">
             <Mic className="w-4 h-4" />
-            <span>HINAWI SPEAKING ACADEMY • {t('slp.badge')}</span>
+            <span>HENGLISH SPEAKING ACADEMY • {t('slp.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
