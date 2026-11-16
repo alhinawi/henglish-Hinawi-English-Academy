@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { ONLINE_IMAGES } from '../data/imageAssets';
 import { playSound } from '../utils/audio';
 import { 
@@ -17,6 +18,7 @@ interface GrammarAcademyPageProps {
 
 export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNavigate }) => {
   const [searchQuery, setSearchQuery] = useState('');
+  const appText = useAppTextMap('allGrammarRules');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
 
@@ -213,7 +215,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                           <div className="flex items-center gap-2">
                             <span className="px-2.5 py-0.5 rounded-md text-[11px] font-black bg-[#41e7ff]/15 text-[#41e7ff] border border-[#41e7ff]/30">
-                              {rule.category}
+                              {txText(appText, rule.category)}
                             </span>
                             <span className="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-white/5 text-[#c4ff55]">
                               {rule.level}
@@ -227,14 +229,14 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         </div>
 
                         <h3 className="text-xl sm:text-2xl font-black text-white hover:text-[#41e7ff] transition-colors">
-                          {rule.titleAr}
+                          {txText(appText, rule.titleAr)}
                         </h3>
                         <span className="en block text-xs sm:text-sm font-bold text-[#ffd166] mt-0.5">
                           {rule.titleEn}
                         </span>
 
                         <p className="text-xs sm:text-sm text-[#dedbf4] mt-2.5 line-clamp-2 leading-relaxed">
-                          {rule.summaryAr}
+                          {txText(appText, rule.summaryAr)}
                         </p>
                       </div>
 
