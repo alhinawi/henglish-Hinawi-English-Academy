@@ -8,7 +8,6 @@ import { playSound } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'movie-memory',
   title: 'ذاكرة الأفلام',
-  icon: '🃏',
   tagline: '12 كارت وشهم لتحت: 6 جمل من محتوى المنصة و6 ترجمات.. افتكر مكان كل جملة وترجمتها.',
 };
 

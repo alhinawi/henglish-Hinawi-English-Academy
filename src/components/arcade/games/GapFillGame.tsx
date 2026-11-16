@@ -8,7 +8,6 @@ import { playSound } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'gap-fill',
   title: 'املأ الفراغ',
-  icon: '🎬',
   tagline: 'جمل حقيقية من محتوى المنصة ناقصها كلمة.. اختر الكلمة الصح من 4 اختيارات. 10 جولات.',
 };
 
