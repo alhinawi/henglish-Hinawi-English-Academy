@@ -396,7 +396,11 @@ export class AudioQueuePlayer {
     accent?: VoiceAccent;
     speakerName?: string;
   }> = [];
-  private isStopped = false;
+  private isStopped = true;
+  private generation = 0;
+  private releaseWait: (() => void) | null = null;
+  private resumeWait: (() => void) | null = null;
+  private gapTimer: ReturnType<typeof setTimeout> | null = null;
   private isPaused = false;
   private currentIndex = 0;
   private onSentenceChange?: (index: number) => void;
@@ -420,55 +424,69 @@ export class AudioQueuePlayer {
     this.onSentenceChange = onSentenceChange;
     this.onQueueFinished = onQueueFinished;
 
-    await this.processNextSentence();
+    await this.processNextSentence(this.generation);
   }
 
-  private async processNextSentence(): Promise<void> {
-    if (this.isStopped || this.currentIndex >= this.queue.length) {
-      this.isStopped = true;
-      if (this.onQueueFinished) this.onQueueFinished();
-      return;
-    }
-
-    const currentItem = this.queue[this.currentIndex];
-    if (this.onSentenceChange) {
-      this.onSentenceChange(this.currentIndex);
-    }
-
-    await new Promise<void>(resolve => {
-      speakEnglishVoice(currentItem.text, {
-        gender: currentItem.gender,
-        accent: currentItem.accent,
-        onEnd: () => resolve(),
-        onError: () => resolve(),
+  private async processNextSentence(generation: number): Promise<void> {
+    const isCurrent = () => generation === this.generation && !this.isStopped;
+    while (isCurrent() && this.currentIndex < this.queue.length) {
+      if (this.isPaused) await new Promise<void>(resolve => { this.resumeWait = resolve; });
+      if (!isCurrent()) return;
+      const currentItem = this.queue[this.currentIndex];
+      this.onSentenceChange?.(this.currentIndex);
+      await new Promise<void>(resolve => {
+        const finish = () => { if (this.releaseWait === finish) this.releaseWait = null; resolve(); };
+        this.releaseWait = finish;
+        speakEnglishVoice(currentItem.text, {
+          gender: currentItem.gender, accent: currentItem.accent,
+          onEnd: finish, onError: finish,
+        });
       });
-    });
-
-    if (this.isStopped) return;
-
-    this.currentIndex++;
-    // Brief natural pause between dialogue turns (300ms)
-    await new Promise(r => setTimeout(r, 300));
-    await this.processNextSentence();
+      if (!isCurrent()) return;
+      this.currentIndex++;
+      // Preserve the existing natural pause, but let Stop settle it immediately.
+      await new Promise<void>(resolve => {
+        const finish = () => { if (this.releaseWait === finish) this.releaseWait = null; resolve(); };
+        this.releaseWait = finish;
+        this.gapTimer = setTimeout(() => { this.gapTimer = null; finish(); }, 300);
+      });
+    }
+    if (!isCurrent()) return;
+    this.isStopped = true;
+    const finished = this.onQueueFinished;
+    this.onQueueFinished = undefined;
+    finished?.();
   }
 
   public stop(): void {
+    this.generation++;
+    const wasActive = !this.isStopped;
     this.isStopped = true;
     this.isPaused = false;
     this.queue = [];
+    if (this.gapTimer !== null) clearTimeout(this.gapTimer);
+    this.gapTimer = null;
+    this.releaseWait?.();
+    this.releaseWait = null;
+    this.resumeWait?.();
+    this.resumeWait = null;
     stopSpeech();
-    if (this.onQueueFinished) {
-      this.onQueueFinished();
-    }
+    const finished = this.onQueueFinished;
+    this.onQueueFinished = undefined;
+    if (wasActive) finished?.();
   }
 
   public pause(): void {
+    if (this.isStopped) return;
     this.isPaused = true;
     pauseSpeech();
   }
 
   public resume(): void {
+    if (this.isStopped || !this.isPaused) return;
     this.isPaused = false;
+    this.resumeWait?.();
+    this.resumeWait = null;
     resumeSpeech();
   }
 

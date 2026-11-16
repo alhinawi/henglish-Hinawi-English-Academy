@@ -21,6 +21,7 @@ const checks = [
   'check-pronunciation-guess.cjs',
   'check-pronunciation-playback-races.cjs',
   'check-voice-engine-races.cjs',
+  'check-audio-queue-lifecycle.cjs',
   'check-phrase-retry.cjs',
   'check-exam-vocab-retry.cjs',
   'check-expressions-retry.cjs',
