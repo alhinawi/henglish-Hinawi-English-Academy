@@ -25,6 +25,7 @@ const checks = [
   'check-expressions-retry.cjs',
   'check-vocabulary-load-retry.cjs',
   'check-vocabulary-payload.cjs',
+  'check-word-details-keyboard.cjs',
   'check-question-cycles.cjs',
   'check-question-bank-copy.cjs',
   'check-vocabulary-claims.cjs',

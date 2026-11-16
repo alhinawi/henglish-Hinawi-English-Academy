@@ -3,7 +3,7 @@
 // Full-depth lexical inspector with inflections, dual pronunciation, senses, and SRS
 // ==============================================================================
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useId } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import {
   X,
@@ -48,6 +48,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   onWordSavedChange,
 }) => {
   const { t } = useLanguage();
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const titleId = useId();
   const [saved, setSaved] = useState(false);
   const [saveError, setSaveError] = useState(false);
   const [userNote, setUserNote] = useState('');
@@ -65,6 +67,28 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
       setUserNote(current?.notes || '');
     }
   }, [entry, isOpen]);
+
+  useEffect(() => {
+    if (!isOpen || !entry) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    focusable()[0]?.focus();
+    const trap = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', trap);
+    return () => { document.removeEventListener('keydown', trap); if (opener?.isConnected) opener.focus(); };
+  }, [isOpen, entry?.id]);
 
   // Handle Escape key to close
   useEffect(() => {
@@ -110,6 +134,11 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto bg-black/80 backdrop-blur-md">
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
         className="relative w-full max-w-3xl rounded-3xl border border-white/15 bg-linear-to-b from-[#14132b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-right space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
         onClick={e => e.stopPropagation()}
       >
@@ -153,7 +182,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <div className="flex flex-wrap items-center gap-3">
-                <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight font-sans">
+                <h2 id={titleId} className="text-3xl sm:text-5xl font-black text-white tracking-tight font-sans">
                   {entry.headword}
                 </h2>
                 <span className={`px-2.5 py-1 rounded-lg text-xs font-black uppercase border ${cefrStyle}`}>
