@@ -2789,5 +2789,12 @@
   "ys.notice1": "Keine passenden Katalogtreffer. Stattdessen werden vorgeschlagene Clips angezeigt.",
   "ys.notice2": "Das YouTube-API-Kontingent ist vorübergehend überschritten. Katalogergebnisse werden angezeigt.",
   "ys.notice3": "Live-Ergebnisse aus der YouTube Data API v3.",
-  "ys.notice4": "Keine Verbindung zur YouTube-API. Katalogergebnisse werden angezeigt."
+  "ys.notice4": "Keine Verbindung zur YouTube-API. Katalogergebnisse werden angezeigt.",
+  "vd.invalid": "Ungültiges YouTube-ID-Format.",
+  "vd.metadata": "YouTube-Metadaten sind verfügbar. Die Wiedergabe kann dennoch von Konto, Region und Videobeschränkungen abhängen.",
+  "vd.restricted": "Die externe Einbettung ist eingeschränkt.",
+  "vd.missing": "Das Video ist gelöscht, privat oder nicht verfügbar (HTTP 404).",
+  "vd.thumbnail": "Vorschaubild gefunden. Wiedergabe und Einbettung konnten nicht bestätigt werden.",
+  "vd.response": "Unerwartete YouTube-Antwort (HTTP {status}).",
+  "vd.network": "Das Video konnte nicht geprüft werden: {message}"
 }
