@@ -26,6 +26,7 @@ const TeacherDashboardPage = lazy(() => import('./views/TeacherDashboardPage').t
 const GrammarAcademyPage = lazy(() => import('./views/GrammarAcademyPage').then(m => ({ default: m.GrammarAcademyPage })));
 const GrammarLessonPage = lazy(() => import('./views/GrammarLessonPage').then(m => ({ default: m.GrammarLessonPage })));
 const VocabularyAcademyPage = lazy(() => import('./views/VocabularyAcademyPage').then(m => ({ default: m.VocabularyAcademyPage })));
+const PhraseBankPage = lazy(() => import('./views/PhraseBankPage').then(m => ({ default: m.PhraseBankPage })));
 const SpeakingAcademyPage = lazy(() => import('./views/SpeakingAcademyPage').then(m => ({ default: m.SpeakingAcademyPage })));
 const ListeningAcademyPage = lazy(() => import('./views/ListeningAcademyPage').then(m => ({ default: m.ListeningAcademyPage })));
 const ReadingAcademyPage = lazy(() => import('./views/ReadingAcademyPage').then(m => ({ default: m.ReadingAcademyPage })));
@@ -184,6 +185,12 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('courses/grammar/future-perfect');
       } else if (hash === 'vocabulary') {
         setCurrentRoute('vocabulary');
+      } else if (hash === 'idioms') {
+        setCurrentRoute('idioms');
+      } else if (hash === 'slang') {
+        setCurrentRoute('slang');
+      } else if (hash === 'genz' || hash === 'gen-z') {
+        setCurrentRoute('genz');
       } else if (hash === 'speaking') {
         setCurrentRoute('speaking');
       } else if (hash === 'listening') {
@@ -420,6 +427,16 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 {/* 7. Vocabulary Academy */}
                 {currentRoute === 'vocabulary' && (
                   <VocabularyAcademyPage onNavigate={handleNavigate} />
+                )}
+
+                {currentRoute === 'idioms' && (
+                  <PhraseBankPage bank="idioms" />
+                )}
+                {currentRoute === 'slang' && (
+                  <PhraseBankPage bank="slang" />
+                )}
+                {currentRoute === 'genz' && (
+                  <PhraseBankPage bank="genz" />
                 )}
 
                 {/* 8. Speaking Academy */}
