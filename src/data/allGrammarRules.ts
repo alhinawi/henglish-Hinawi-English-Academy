@@ -71,9 +71,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'بعد does أو doesn\'t بنشيل الـ s من الفعل فوراً: He doesn\'t speak (مش speaks)!'
     ],
     commonTraps: [
-      'فخ نسيان الـ s مع المفرد الغائب: الخطأ She work here، الصواب: She works here.',
-      'فخ وضع s بعد doesn\'t: الخطأ He doesn\'t knows، الصواب: He doesn\'t know.',
-      'استخدامه للحدث الذي يقع في نفس اللحظة: الخطأ I eat now، الصواب: I am eating now.'
+      'فخ نسيان الـ s مع المفرد الغائب: الخطأ She work here، الصح: She works here.',
+      'فخ وضع s بعد doesn\'t: الخطأ He doesn\'t knows، الصح: He doesn\'t know.',
+      'استخدامه للحدث الذي يقع في نفس اللحظة: الخطأ I eat now، الصح: I am eating now.'
     ],
     examples: [
       {
@@ -138,8 +138,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'لما تقول I am meeting the CEO tomorrow، ده معناه إنك حاجز الميعاد ومأكده خلاص.'
     ],
     commonTraps: [
-      'فخ وضع ing بدون am/is/are: الخطأ I studying now، الصواب: I am studying now.',
-      'فخ استخدام ing مع أفعال المشاعر والحواس: الخطأ I am knowing the answer، الصواب: I know the answer.'
+      'فخ وضع ing بدون am/is/are: الخطأ I studying now، الصح: I am studying now.',
+      'فخ استخدام ing مع أفعال المشاعر والحواس: الخطأ I am knowing the answer، الصح: I know the answer.'
     ],
     examples: [
       {
@@ -198,8 +198,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Since بيجي بعدها نقطة بداية زمنية محددة (2018, Monday, 3 PM)، بينما For بيجي بعدها مدة إجمالية (5 years, 3 hours).'
     ],
     commonTraps: [
-      'فخ استخدام الماضي البسيط مع الكلمات التي لها أثر: الخطأ I lost my keys so I can\'t enter، الصواب: I have lost my keys (لأن النتيجة أنني عاجز عن الدخول الآن).',
-      'فخ استخدام المضارع التام مع وقت ماضٍ محدد: الخطأ I have visited Paris last year، الصواب: I visited Paris last year.'
+      'فخ استخدام الماضي البسيط مع الكلمات التي لها أثر: الخطأ I lost my keys so I can\'t enter، الصح: I have lost my keys (لأن النتيجة أنني عاجز عن الدخول الآن).',
+      'فخ استخدام المضارع التام مع وقت ماضٍ محدد: الخطأ I have visited Paris last year، الصح: I visited Paris last year.'
     ],
     examples: [
       {
@@ -256,7 +256,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'لو بتركز على "العدد المنجز" (قرأت ٣ كتب) استخدم التام البسيط I have read 3 books، لو بتركز على "المدة" استخدم المستمر I have been reading all morning.'
     ],
     commonTraps: [
-      'فخ استخدام أفعال الحالة (stative verbs) في هذا الزمن: الخطأ I have been knowing him for years، الصواب: I have known him for years.'
+      'فخ استخدام أفعال الحالة (stative verbs) في هذا الزمن: الخطأ I have been knowing him for years، الصح: I have known him for years.'
     ],
     examples: [
       {
@@ -310,7 +310,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'الأفعال غير المنتظمة (Irregular verbs) زي go ➔ went، write ➔ wrote، لازم تتحفظ كويس لأنها العمود الفقري للتحدث.'
     ],
     commonTraps: [
-      'فخ استخدام التصريف الثاني بعد didn\'t: الخطأ I didn\'t saw him، الصواب: I didn\'t see him.'
+      'فخ استخدام التصريف الثاني بعد didn\'t: الخطأ I didn\'t saw him، الصح: I didn\'t see him.'
     ],
     examples: [
       {
@@ -361,7 +361,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'افتكر: الحدث الطويل اللي واخد وقت هو المستمر، والحدث القصير اللي قطعه فجأة هو البسيط.'
     ],
     commonTraps: [
-      'فخ الخلط بين الحدث القصير والطويل: الخطأ When I was dropping my phone, it broke، الصواب: While I was walking, I dropped my phone.'
+      'فخ الخلط بين الحدث القصير والطويل: الخطأ When I was dropping my phone, it broke، الصح: While I was walking, I dropped my phone.'
     ],
     examples: [
       {
@@ -413,7 +413,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'مع Before أو By the time: بيجي بعدها الحدث الثاني الماضي البسيط: Before I slept, I had studied.'
     ],
     commonTraps: [
-      'فخ استخدام had + V3 للحدثين معاً: الخطأ After I had studied, I had gone to bed، الصواب: After I had studied, I went to bed.'
+      'فخ استخدام had + V3 للحدثين معاً: الخطأ After I had studied, I had gone to bed، الصح: After I had studied, I went to bed.'
     ],
     examples: [
       {
@@ -513,7 +513,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'اختصار will هو \'ll، واختصار will not هو won\'t (انتبه لنطقها مش want).'
     ],
     commonTraps: [
-      'فخ استخدام will مع أحداث لها دليل مرئي مباشر: الصواب استخدام Going to.'
+      'فخ استخدام will مع أحداث لها دليل مرئي مباشر: الصح استخدام Going to.'
     ],
     examples: [
       {
@@ -565,7 +565,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في النطق السريع اليومي للأمريكان بتتنطق Gonna بس متكتبهاش في الإيميلات الرسمية.'
     ],
     commonTraps: [
-      'فخ نسيان verb to be: الخطأ I going to travel، الصواب: I am going to travel.'
+      'فخ نسيان verb to be: الخطأ I going to travel، الصح: I am going to travel.'
     ],
     examples: [
       {
@@ -616,7 +616,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'بالمصري: "زي دلوقتي بكرة، هكون طاير في الطيارة فوق السحاب" = I will be flying over the clouds.'
     ],
     commonTraps: [
-      'فخ نسيان be: الخطأ I will working at 5 PM، الصواب: I will be working at 5 PM.'
+      'فخ نسيان be: الخطأ I will working at 5 PM، الصح: I will be working at 5 PM.'
     ],
     examples: [
       {
@@ -717,7 +717,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'أفعال السكون Stative Verbs (زي know, believe) لا تقبل الاستمرار، فتستخدم معها المستقبل التام العادي: By 2030, I will have known him for a decade.'
     ],
     commonTraps: [
-      'فخ استخدام أفعال الحالة في صيغة الاستمرار: الخطأ will have been knowing، الصواب: will have known.'
+      'فخ استخدام أفعال الحالة في صيغة الاستمرار: الخطأ will have been knowing، الصح: will have known.'
     ],
     examples: [
       {
@@ -765,7 +765,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'بالمصري: "لما بتسخن المية لـ 100 بتغلي" — دي حقيقة كونية مش مجرد احتمال!'
     ],
     commonTraps: [
-      'فخ وضع will في جواب الشرط: الخطأ If ice melts, it will become water، الصواب: it becomes water.'
+      'فخ وضع will في جواب الشرط: الخطأ If ice melts, it will become water، الصح: it becomes water.'
     ],
     examples: [
       {
@@ -810,7 +810,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'إياك تحط will جنب If على طول: الخطأ الشائع If I will study!'
     ],
     commonTraps: [
-      'فخ وضع will في جملة الشرط: الخطأ If it will rain, we will stay، الصواب: If it rains, we will stay.'
+      'فخ وضع will في جملة الشرط: الخطأ If it will rain, we will stay، الصح: If it rains, we will stay.'
     ],
     examples: [
       {
@@ -855,7 +855,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في النصيحة بنقول If I were you مش was.'
     ],
     commonTraps: [
-      'فخ وضع would في جملة If: الخطأ If I would have money، الصواب: If I had money.'
+      'فخ وضع would في جملة If: الخطأ If I would have money، الصح: If I had money.'
     ],
     examples: [
       {
@@ -906,7 +906,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'طالما الحدث في الماضي ومستحيل يتغير، دي الحالة التالتة فوراً.'
     ],
     commonTraps: [
-      'فخ نسيان have في جواب الشرط: الخطأ would passed، الصواب: would have passed.'
+      'فخ نسيان have في جواب الشرط: الخطأ would passed، الصح: would have passed.'
     ],
     examples: [
       {
@@ -953,7 +953,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في الاستنتاج: He must be rich يعني "أكيد غني جداً من غير شك". He can\'t be poor يعني "مستحيل يكون فقير".'
     ],
     commonTraps: [
-      'فخ وضع to بعد can أو must أو should: الخطأ He must to go، الصواب: He must go.'
+      'فخ وضع to بعد can أو must أو should: الخطأ He must to go، الصح: He must go.'
     ],
     examples: [
       {
@@ -1005,7 +1005,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في المضارع المستمر: is doing ➔ is being done: The bridge is being repaired.'
     ],
     commonTraps: [
-      'فخ نسيان تصريف be: الخطأ The email sent yesterday، الصواب: The email was sent yesterday.'
+      'فخ نسيان تصريف be: الخطأ The email sent yesterday، الصح: The email was sent yesterday.'
     ],
     examples: [
       {
@@ -1056,7 +1056,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Said بيجي بعدها الكلام مباشرة، بينما Told لازم يجي بعدها مفعول به يوضح مين اللي سمع: He told ME that...'
     ],
     commonTraps: [
-      'فخ إبقاء صيغة السؤال المعكوس: الخطأ She asked me what was my name، الصواب: She asked me what my name was.'
+      'فخ إبقاء صيغة السؤال المعكوس: الخطأ She asked me what was my name، الصح: She asked me what my name was.'
     ],
     examples: [
       {
@@ -1101,7 +1101,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Whose بتيجي بين اسمين وبتعبر عن ملكية الاسم التاني للأولاني: The student whose car was stolen.'
     ],
     commonTraps: [
-      'فخ استخدام that بعد فاصلة: الخطأ Cairo, that is the capital...، الصواب: Cairo, which is the capital...'
+      'فخ استخدام that بعد فاصلة: الخطأ Cairo, that is the capital...، الصح: Cairo, which is the capital...'
     ],
     examples: [
       {
@@ -1147,8 +1147,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'مستحيل في الإنجليزية جملة بدون فعل! جملة زي "هو طبيب" في العربي لازم في الإنجليزي يبقى فيها فعل كينونة: He is a doctor.'
     ],
     commonTraps: [
-      'فخ الجملة بدون فعل: الخطأ He doctor، الصواب: He is a doctor.',
-      'فخ موقع الصفة الخاطئ: الخطأ He bought a car red، الصواب: He bought a red car.'
+      'فخ الجملة بدون فعل: الخطأ He doctor، الصح: He is a doctor.',
+      'فخ موقع الصفة الخاطئ: الخطأ He bought a car red، الصح: He bought a red car.'
     ],
     examples: [
       {
@@ -1194,8 +1194,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'الأسماء المعنوية والوجبات والرياضات واللغات مبتاخدش the في العموم: English is fun (مش The English).'
     ],
     commonTraps: [
-      'فخ وضع a مع اسم لا يُعد: الخطأ a news / an advice، الصواب: a piece of news / a piece of advice.',
-      'فخ استخدام an مع University: الخطأ an university، الصواب: a university لأن الصوت الأول ي /j/ ساكن وليس متحركاً.'
+      'فخ وضع a مع اسم لا يُعد: الخطأ a news / an advice، الصح: a piece of news / a piece of advice.',
+      'فخ استخدام an مع University: الخطأ an university، الصح: a university لأن الصوت الأول ي /j/ ساكن وليس متحركاً.'
     ],
     examples: [
       {
@@ -1240,8 +1240,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'مع عطلة نهاية الأسبوع البريطانيون بيقولوا at the weekend، بينما الأمريكيون بيفضلوا on the weekend.'
     ],
     commonTraps: [
-      'فخ استخدام at مع الشهور والسنوات: الخطأ at July / at 2026، الصواب: in July / in 2026.',
-      'فخ وضع on قبل الساعات: الخطأ on 8:00 AM، الصواب: at 8:00 AM.'
+      'فخ استخدام at مع الشهور والسنوات: الخطأ at July / at 2026، الصح: in July / in 2026.',
+      'فخ وضع on قبل الساعات: الخطأ on 8:00 AM، الصح: at 8:00 AM.'
     ],
     examples: [
       {
@@ -1287,8 +1287,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'فعل stop to do معناها توقف لكي يفعل شيئاً آخر: He stopped to drink water (وقف عشان يشرب). أما stop doing معناها امتنع عن العادة: He stopped smoking (بطل تدخين نهائياً).'
     ],
     commonTraps: [
-      'فخ استخدام المصدر بعد look forward to: الخطأ I look forward to meet you، الصواب: I look forward to meeting you.',
-      'فخ وضع to بعد enjoy: الخطأ I enjoy to swim، الصواب: I enjoy swimming.'
+      'فخ استخدام المصدر بعد look forward to: الخطأ I look forward to meet you، الصح: I look forward to meeting you.',
+      'فخ وضع to بعد enjoy: الخطأ I enjoy to swim، الصح: I enjoy swimming.'
     ],
     examples: [
       {
@@ -1334,8 +1334,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في الـ Inversion، أول ما تبدأ الجملة بـ Never أو Seldom، عامل باقي الجملة زي تكوين السؤال: حط الفعل المساعد قبل الفاعل.'
     ],
     commonTraps: [
-      'فخ الترتيب العادي بعد الظرف السلبي: الخطأ Rarely she speaks in public، الصواب: Rarely does she speak in public.',
-      'فخ الخلط بين have و get مع الفاعل: الخطأ I had him to clean، الصواب: I had him clean / I got him to clean.'
+      'فخ الترتيب العادي بعد الظرف السلبي: الخطأ Rarely she speaks in public، الصح: Rarely does she speak in public.',
+      'فخ الخلط بين have و get مع الفاعل: الخطأ I had him to clean، الصح: I had him clean / I got him to clean.'
     ],
     examples: [
       {
@@ -1382,8 +1382,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       "متنساش قاعدة I am: الذيل بتاعها aren't I مش amn't I: I'm late, aren't I?"
     ],
     commonTraps: [
-      "فخ تطابق الإيجاب مع الإيجاب: الخطأ You are tired, are you? الصواب: You are tired, aren't you?",
-      "فخ نسيان do مع الأفعال العادية: الخطأ He plays well, playsn't he? الصواب: He plays well, doesn't he?",
+      "فخ تطابق الإيجاب مع الإيجاب: الخطأ You are tired, are you? الصح: You are tired, aren't you?",
+      "فخ نسيان do مع الأفعال العادية: الخطأ He plays well, playsn't he? الصح: He plays well, doesn't he?",
       "فخ ترجمة 'صح' حرفياً بـ true: الذيل لازم يكون فعل مساعد + ضمير، مش كلمة ثابتة."
     ],
     examples: [
@@ -1461,8 +1461,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       "افتكر إن بعد didn't و Did بنرجع لـ use to بدون d لأن الـ d راحت للفعل المساعد."
     ],
     commonTraps: [
-      "فخ كتابة didn't used to: الخطأ He didn't used to swim، الصواب: He didn't use to swim.",
-      'فخ استخدام would مع حالة: الخطأ I would be very shy as a child، الصواب: I used to be very shy as a child.',
+      "فخ كتابة didn't used to: الخطأ He didn't used to swim، الصح: He didn't use to swim.",
+      'فخ استخدام would مع حالة: الخطأ I would be very shy as a child، الصح: I used to be very shy as a child.',
       'فخ الخلط مع be used to + gerund (معتاد على): I am used to waking up early معناها أنا متعود، مش عادة ماضية.'
     ],
     examples: [
@@ -1540,9 +1540,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       "طريقة not as ... as حلوة جداً للدبلوماسية: بدل ما تقول أسوأ، قول مش بنفس الجودة: not as good as."
     ],
     commonTraps: [
-      'فخ جمع الاثنين: الخطأ more taller، الصواب: taller (اختار طريقة واحدة بس).',
-      'فخ نسيان the مع التفضيل: الخطأ Cairo is biggest city، الصواب: Cairo is the biggest city.',
-      'فخ الشواذ: الخطأ gooder / baddest، الصواب: better / worst.'
+      'فخ جمع الاثنين: الخطأ more taller، الصح: taller (اختار طريقة واحدة بس).',
+      'فخ نسيان the مع التفضيل: الخطأ Cairo is biggest city، الصح: Cairo is the biggest city.',
+      'فخ الشواذ: الخطأ gooder / baddest، الصح: better / worst.'
     ],
     examples: [
       {
@@ -1618,9 +1618,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Money غير معدودة رغم إن الفلوس بتتعد عندنا! قول much money مش many money.'
     ],
     commonTraps: [
-      'فخ جمع غير المعدود: الخطأ informations / furnitures / homeworks، الصواب: information / furniture / homework.',
-      'فخ a مع غير المعدود: الخطأ an advice، الصواب: a piece of advice أو some advice.',
-      'فخ many مع غير المعدود: الخطأ How many money? الصواب: How much money?'
+      'فخ جمع غير المعدود: الخطأ informations / furnitures / homeworks، الصح: information / furniture / homework.',
+      'فخ a مع غير المعدود: الخطأ an advice، الصح: a piece of advice أو some advice.',
+      'فخ many مع غير المعدود: الخطأ How many money? الصح: How much money?'
     ],
     examples: [
       {
@@ -1697,9 +1697,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'How often هو سؤال التكرار الجاهز: How often do you exercise? = بتلعب رياضة كل قد إيه؟'
     ],
     commonTraps: [
-      'فخ آخر الجملة: الخطأ I drink coffee always في بداية التعلم، الصواب الطبيعي: I always drink coffee.',
-      'فخ النفي المزدوج: الخطأ I don\'t never go، الصواب: I never go.',
-      'فخ مكان الظرف مع be: الخطأ She always is late، الصواب: She is always late.'
+      'فخ آخر الجملة: الخطأ I drink coffee always في بداية التعلم، الصح الطبيعي: I always drink coffee.',
+      'فخ النفي المزدوج: الخطأ I don\'t never go، الصح: I never go.',
+      'فخ مكان الظرف مع be: الخطأ She always is late، الصح: She is always late.'
     ],
     examples: [
       {
@@ -1776,8 +1776,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Plenty of معناها كتير أوي وكفاية: plenty of time = وقت كتير ومفيش ضغط.'
     ],
     commonTraps: [
-      'فخ any في الجملة الموجبة العادية: الخطأ I have any friends، الصواب: I have some friends.',
-      'فخ النفي المزدوج مع no: الخطأ I don\'t have no money، الصواب: I have no money أو I don\'t have any money.',
+      'فخ any في الجملة الموجبة العادية: الخطأ I have any friends، الصح: I have some friends.',
+      'فخ النفي المزدوج مع no: الخطأ I don\'t have no money، الصح: I have no money أو I don\'t have any money.',
       'فخ any في العرض المهذب: الطبيعي Would you like some coffee؟ مش any coffee.'
     ],
     examples: [
@@ -1854,9 +1854,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'لو لقيت everyone أو each في الجملة، عاملها زي He بالظبط: Everyone is welcome.'
     ],
     commonTraps: [
-      'فخ everyone تعتبر جمع: الخطأ Everyone are here، الصواب: Everyone is here.',
-      'فخ الفاعل البعيد عن الفعل: الخطأ The list of names are long، الصواب: The list of names is long (الفاعل list).',
-      'فخ people تعتبر مفرد: الخطأ People is kind here، الصواب: People are kind here.'
+      'فخ everyone تعتبر جمع: الخطأ Everyone are here، الصح: Everyone is here.',
+      'فخ الفاعل البعيد عن الفعل: الخطأ The list of names are long، الصح: The list of names is long (الفاعل list).',
+      'فخ people تعتبر مفرد: الخطأ People is kind here، الصح: People are kind here.'
     ],
     examples: [
       {
@@ -1933,9 +1933,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في النطق الطبيعي should have بتتقال shoulda /ʃʊdə/ - اسمعها كتير في الأغاني والأفلام.'
     ],
     commonTraps: [
-      'فخ should have + مصدر: الخطأ I should have study، الصواب: I should have studied (لازم V3).',
-      'فخ ترجمة كان لازم بـ must have: الخطأ I must have studied بمعنى الندم، الصواب: should have. Must have معناها استنتاج مش ندم.',
-      'فخ نسيان have: الخطأ You should told me، الصواب: You should have told me.'
+      'فخ should have + مصدر: الخطأ I should have study، الصح: I should have studied (لازم V3).',
+      'فخ ترجمة كان لازم بـ must have: الخطأ I must have studied بمعنى الندم، الصح: should have. Must have معناها استنتاج مش ندم.',
+      'فخ نسيان have: الخطأ You should told me، الصح: You should have told me.'
     ],
     examples: [
       {
@@ -2012,8 +2012,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'wish + would بتستخدمها لما بتزعق من تصرف حد تاني: I wish the weather would change.'
     ],
     commonTraps: [
-      'فخ استخدام المضارع بعد wish: الخطأ I wish I have a car، الصواب: I wish I had a car.',
-      'فخ would مع نفس الفاعل للتمني الشخصي: الخطأ I wish I would be taller، الصواب: I wish I were taller.',
+      'فخ استخدام المضارع بعد wish: الخطأ I wish I have a car، الصح: I wish I had a car.',
+      'فخ would مع نفس الفاعل للتمني الشخصي: الخطأ I wish I would be taller، الصح: I wish I were taller.',
       'فخ نسيان had للندم: الخطأ I wish I didn\'t miss the bus (لو الندم على ماضي بعيد)، الأدق: I wish I hadn\'t missed the bus.'
     ],
     examples: [
@@ -2091,8 +2091,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ],
     commonTraps: [
       'فخ استخدام النوع التالت كامل مع نتيجة حاضرة: الخطأ If I had studied, I would have a job now (تصلح لكنها تعني نتيجة ماضية)، الأدق للحاضر: I would have a job now مع would + مصدر: If I had studied, I would have... انتبه: الصح هنا would have مش would have had إلا للملكية.',
-      'فخ الخلط: الخطأ If I studied harder, I would be passed، الصواب: If I had studied harder, I would pass / would have passed.',
-      'فخ will بعد if: الخطأ If I will have time، الصواب: If I had time (في الشرط غير الحقيقي).'
+      'فخ الخلط: الخطأ If I studied harder, I would be passed، الصح: If I had studied harder, I would pass / would have passed.',
+      'فخ will بعد if: الخطأ If I will have time، الصح: If I had time (في الشرط غير الحقيقي).'
     ],
     examples: [
       {
@@ -2163,9 +2163,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'because وراها جملة كاملة، و because of وراها اسم: because it rained / because of the rain.'
     ],
     commonTraps: [
-      'فخ although + but: الخطأ Although it was raining, but we went out، الصواب: Although it was raining, we went out.',
-      'فخ despite of: الخطأ Despite of the traffic، الصواب: Despite the traffic / In spite of the traffic.',
-      'فخ because of + جملة: الخطأ because of I was late، الصواب: because I was late / because of my delay.'
+      'فخ although + but: الخطأ Although it was raining, but we went out، الصح: Although it was raining, we went out.',
+      'فخ despite of: الخطأ Despite of the traffic، الصح: Despite the traffic / In spite of the traffic.',
+      'فخ because of + جملة: الخطأ because of I was late، الصح: because I was late / because of my delay.'
     ],
     examples: [
       {
@@ -2242,9 +2242,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'أشهر 10 بداية: get up, go on, come back, find out, give up, look for, put on, take off, turn on, work out.'
     ],
     commonTraps: [
-      'فخ الضمير في الآخر مع القابل للفصل: الخطأ I picked up it، الصواب: I picked it up.',
-      'فخ المصدر بعد look forward to: الخطأ I look forward to meet you، الصواب: to meeting you.',
-      'فخ الترجمة الحرفية: الخطأ ترجمة give up على إنها يعطي لفوق، الصواب: يستسلم أو يقلع عن عادة.'
+      'فخ الضمير في الآخر مع القابل للفصل: الخطأ I picked up it، الصح: I picked it up.',
+      'فخ المصدر بعد look forward to: الخطأ I look forward to meet you، الصح: to meeting you.',
+      'فخ الترجمة الحرفية: الخطأ ترجمة give up على إنها يعطي لفوق، الصح: يستسلم أو يقلع عن عادة.'
     ],
     examples: [
       {
@@ -2323,9 +2323,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في النفي: isn\'t و aren\'t أشهر بكتير من is not و are not في المحادثة.'
     ],
     commonTraps: [
-      'نسيان الفعل خالص: الخطأ "She doctor"، الصواب: She IS a doctor.',
-      'خلط is مع I: الخطأ "I is"، الصواب: I am. الـ is مخصصة لـ He/She/It بس.',
-      'ترجمة "عمري 27 سنة" حرفياً: الخطأ "I have 27 years" (دي فرنساوي!)، الصواب: I am 27 years old.'
+      'نسيان الفعل خالص: الخطأ "She doctor"، الصح: She IS a doctor.',
+      'خلط is مع I: الخطأ "I is"، الصح: I am. الـ is مخصصة لـ He/She/It بس.',
+      'ترجمة "عمري 27 سنة" حرفياً: الخطأ "I have 27 years" (دي فرنساوي!)، الصح: I am 27 years old.'
     ],
     examples: [
       { en: 'My brother is a pharmacist in Alexandria.', ar: 'أخويا صيدلي في الإسكندرية.', highlight: 'is', context: 'مهنة وتعريف' },
@@ -2375,9 +2375,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'بالعامية بنقول "هو" و"هي" كتير، وفي الإنجليزي نفس الراحة موجودة: he للولد، she للبنت، it للحاجة.'
     ],
     commonTraps: [
-      'استخدام I مكان me بعد حرف الجر: الخطأ "between you and I"، الصواب: between you and me.',
-      'نسيان ضمير الفاعل في الجملة: الخطأ "Is raining"، الصواب: IT is raining.',
-      'استخدام her كفاعل: الخطأ "Her is my friend"، الصواب: SHE is my friend.'
+      'استخدام I مكان me بعد حرف الجر: الخطأ "between you and I"، الصح: between you and me.',
+      'نسيان ضمير الفاعل في الجملة: الخطأ "Is raining"، الصح: IT is raining.',
+      'استخدام her كفاعل: الخطأ "Her is my friend"، الصح: SHE is my friend.'
     ],
     examples: [
       { en: 'Ahmed called me after the match finished.', ar: 'أحمد كلمّني بعد ما الماتش خلص.', highlight: 'me', context: 'ضمير مفعول بعد الفعل' },
@@ -2426,9 +2426,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'its بدون فاصلة عليا = ملكية (its color)، و it\'s بفاصلة = اختصار it is. دي أشهر غلطة إملائية!'
     ],
     commonTraps: [
-      'وضع اسم بعد ضمير الملكية: الخطأ "This is mine book"، الصواب: This is my book / This book is mine.',
-      'الخلط بين its و it\'s: الخطأ "Its raining"، الصواب: It\'s raining.',
-      'استخدام \'s مع الجمع المنتهي بـ s خطأ: الصواب "my parents\' house" (فاصلة بس من غير s تانية).'
+      'وضع اسم بعد ضمير الملكية: الخطأ "This is mine book"، الصح: This is my book / This book is mine.',
+      'الخلط بين its و it\'s: الخطأ "Its raining"، الصح: It\'s raining.',
+      'استخدام \'s مع الجمع المنتهي بـ s خطأ: الصح "my parents\' house" (فاصلة بس من غير s تانية).'
     ],
     examples: [
       { en: 'My sister\'s wedding is next Friday.', ar: 'فرح أختي الجمعة الجاية.', highlight: "sister's", context: 'الـ \'s مع شخص' },
@@ -2477,7 +2477,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في الأسئلة السريعة اسمع للاختصار: Is there...? بتتنطق "إز ذير".'
     ],
     commonTraps: [
-      'استخدام There is مع جمع: الخطأ "There is many people"، الصواب: There ARE many people.',
+      'استخدام There is مع جمع: الخطأ "There is many people"، الصح: There ARE many people.',
       'ترجمة "في" بالحرف have: الخطأ "The room has a window" لما تقصد الوجود العام، الأدق: There is a window in the room.',
       'نسيان some/any: في النفي نقول There aren\'t any taxis (مش There aren\'t taxis في وصف عدم الوجود المطلق).'
     ],
@@ -2528,8 +2528,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'الماضي الوحيد المقبول هو had: "كان عندي عربية" = I had a car (مش I had got).'
     ],
     commonTraps: [
-      'استخدام do في السؤال: الخطأ "Do you have got a pen?"، الصواب: Have you got a pen? أو Do you have a pen?',
-      'استخدامها للماضي: الخطأ "I had got a bike"، الصواب: I had a bike.',
+      'استخدام do في السؤال: الخطأ "Do you have got a pen?"، الصح: Have you got a pen? أو Do you have a pen?',
+      'استخدامها للماضي: الخطأ "I had got a bike"، الصح: I had a bike.',
       'الخلط مع got للحصول: I have got a car = عندي عربية، أما I got a car أمس = اشتريت عربية.'
     ],
     examples: [
@@ -2579,9 +2579,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'النفي دايماً Don\'t: "متتأخرش" = Don\'t be late. ومتقولش "No + فعل" زي اللافتات المصرية الغلط.'
     ],
     commonTraps: [
-      'إضافة to قبل الفعل: الخطأ "To open the door"، الصواب: Open the door.',
+      'إضافة to قبل الفعل: الخطأ "To open the door"، الصح: Open the door.',
       'استخدام الفاعل you بصوت عالي: "You sit down!" تبدو فظة؛ الأفضل: Sit down, please.',
-      'نفي خاطئ: الخطأ "Not touch"، الصواب: Don\'t touch. / Do not touch.'
+      'نفي خاطئ: الخطأ "Not touch"، الصح: Don\'t touch. / Do not touch.'
     ],
     examples: [
       { en: 'Take the second street on your left, then go straight.', ar: 'خد تاني شارع على شمالك، وبعدين امشي على طول.', highlight: 'Take', context: 'إرشادات طريق' },
@@ -2630,9 +2630,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Could you ... ؟ أسلوب أشيك للطلبات: Could you help me, please?'
     ],
     commonTraps: [
-      'إضافة s للمفرد الغائب: الخطأ "He cans swim"، الصواب: He can swim.',
-      'إضافة to بعد can: الخطأ "I can to speak"، الصواب: I can speak.',
-      'استخدام could للحاضر: الخطأ "I could help you tomorrow" لو تقصد عرض حاضر، الصواب: I can help you tomorrow.'
+      'إضافة s للمفرد الغائب: الخطأ "He cans swim"، الصح: He can swim.',
+      'إضافة to بعد can: الخطأ "I can to speak"، الصح: I can speak.',
+      'استخدام could للحاضر: الخطأ "I could help you tomorrow" لو تقصد عرض حاضر، الصح: I can help you tomorrow.'
     ],
     examples: [
       { en: 'My grandmother can read without glasses.', ar: 'جدتي تقدر تقرا من غير نضارة.', highlight: 'can read', context: 'قدرة حالية' },
@@ -2677,13 +2677,13 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ],
     egyptianTips: [
       'الترتيب الذهبي: أداة الاستفهام + المساعد + الفاعل + الفعل: Where DO you LIVE?',
-      'متنساش المساعد: الخطأ الشائع "Where you live?"، الصواب: Where do you live?',
+      'متنساش المساعد: الخطأ الشائع "Where you live?"، الصح: Where do you live?',
       'لو Who/What هي نفسها الفاعل، منحتاجش مساعد: Who called you? (مين اتصل؟) مش Who did call you?'
     ],
     commonTraps: [
-      'نسيان المساعد do/does: الخطأ "What he wants?"، الصواب: What DOES he want?',
-      'إضافة s للفعل بعد does: الخطأ "Where does he lives?"، الصواب: Where does he live?',
-      'استخدام How بمعنى What: الخطأ "How is your name?"، الصواب: What is your name?'
+      'نسيان المساعد do/does: الخطأ "What he wants?"، الصح: What DOES he want?',
+      'إضافة s للفعل بعد does: الخطأ "Where does he lives?"، الصح: Where does he live?',
+      'استخدام How بمعنى What: الخطأ "How is your name?"، الصح: What is your name?'
     ],
     examples: [
       { en: 'What time does the train to Mansoura leave?', ar: 'الساعة كام بيتحرك قطار المنصورة؟', highlight: 'What time does', context: 'سؤال عن موعد' },
@@ -2732,9 +2732,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'الاسم اللي بينتهي بحرف علة + y بياخد s عادي (days)، لكن ساكن + y يتحول لـ ies (city-cities, story-stories).'
     ],
     commonTraps: [
-      'خلط this مع الجمع: الخطأ "This are my friends"، الصواب: These are my friends.',
-      'جمع مزدوج: الخطأ "childs / childrens"، الصواب: children.',
-      'نسيان التحويل لـ ies: الخطأ "citys"، الصواب: cities.'
+      'خلط this مع الجمع: الخطأ "This are my friends"، الصح: These are my friends.',
+      'جمع مزدوج: الخطأ "childs / childrens"، الصح: children.',
+      'نسيان التحويل لـ ies: الخطأ "citys"، الصح: cities.'
     ],
     examples: [
       { en: 'This is my colleague Mariam, and those are her brothers over there.', ar: 'دي زميلتي مريم، ودول إخواتها اللي واقفين هناك.', highlight: 'those', context: 'إشارة لجمع بعيد' },
@@ -2783,9 +2783,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'so و such زي "جداً": so + صفة (so beautiful)، لكن such + a + صفة + اسم مفرد (such a beautiful girl).'
     ],
     commonTraps: [
-      'وضع enough قبل الصفة: الخطأ "He is enough tall"، الصواب: He is tall enough.',
-      'استخدام too بمعنى إيجابي "جداً": الخطأ "She is too beautiful" لو تقصد مدح، الصواب: so/very beautiful. Too دايماً فيها إحساس سلبي.',
-      'نسيان a بعد such: الخطأ "It is such nice car"، الصواب: It is such a nice car.'
+      'وضع enough قبل الصفة: الخطأ "He is enough tall"، الصح: He is tall enough.',
+      'استخدام too بمعنى إيجابي "جداً": الخطأ "She is too beautiful" لو تقصد مدح، الصح: so/very beautiful. Too دايماً فيها إحساس سلبي.',
+      'نسيان a بعد such: الخطأ "It is such nice car"، الصح: It is such a nice car.'
     ],
     examples: [
       { en: 'The exam was too difficult; nobody finished on time.', ar: 'الامتحان كان صعب زيادة عن اللزوم؛ محدش خلص في الوقت.', highlight: 'too difficult', context: 'زيادة سلبية' },
@@ -2834,8 +2834,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'either أو neither مع or/nor بيراعوا أقرب اسم في الفعل: Neither the players nor the COACH was ready.'
     ],
     commonTraps: [
-      'نفي مزدوج مع neither: الخطأ "Neither of them isn\'t coming"، الصواب: Neither of them is coming.',
-      'استخدام both بمعنى سلبي: الخطأ "I don\'t like both" لما تقصد ولا واحد، الصواب: I like neither.',
+      'نفي مزدوج مع neither: الخطأ "Neither of them isn\'t coming"، الصح: Neither of them is coming.',
+      'استخدام both بمعنى سلبي: الخطأ "I don\'t like both" لما تقصد ولا واحد، الصح: I like neither.',
       'استخدام either مع أكثر من اختيارين: لثلاثة أو أكثر استخدم any، مش either.'
     ],
     examples: [
@@ -2886,7 +2886,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     ],
     commonTraps: [
       'استخدام will لخطة متفق عليها: الخطأ "I will travel next Friday; I booked last month"، الأدق: I am going to travel / I am travelling.',
-      'نسيان be في going to: الخطأ "I going to study"، الصواب: I AM going to study.',
+      'نسيان be في going to: الخطأ "I going to study"، الصح: I AM going to study.',
       'استخدام going to لقرار لحظي: الخطأ "The phone is ringing! I am going to answer it"، الطبيعي: I WILL answer it.'
     ],
     examples: [
@@ -2936,9 +2936,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Since + نقطة بداية (since 2015)، و for + مدة (for ten years).'
     ],
     commonTraps: [
-      'استخدام المضارع التام مع وقت محدد: الخطأ "I have met him yesterday"، الصواب: I MET him yesterday.',
+      'استخدام المضارع التام مع وقت محدد: الخطأ "I have met him yesterday"، الصح: I MET him yesterday.',
       'استخدام الماضي البسيط مع ever: الخطأ "Did you ever visit Luxor?" في سؤال خبرة عامة، الأدق: Have you ever visited Luxor?',
-      'نسيان التصريف الثالث: الخطأ "I have went"، الصواب: I have gone.'
+      'نسيان التصريف الثالث: الخطأ "I have went"، الصح: I have gone.'
     ],
     examples: [
       { en: 'I visited the Grand Egyptian Museum last month.', ar: 'زرت المتحف المصري الكبير الشهر اللي فات.', highlight: 'visited', context: 'وقت محدد = ماضي بسيط' },
@@ -2984,12 +2984,12 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     egyptianTips: [
       'Good صفة و Well ظرف: هو لاعب كويس = He is a good player، بيلعب كويس = He plays well.',
       'Hard و late زي ما هما: يشتغل بجد = works hard (مش hardly! دي معناها "بالكاد").',
-      'مكان الظرف مهم: متقولش She closed quietly the door، الصواب: She closed the door quietly.'
+      'مكان الظرف مهم: متقولش She closed quietly the door، الصح: She closed the door quietly.'
     ],
     commonTraps: [
-      'استخدام الصفة مكان الظرف: الخطأ "He drives good"، الصواب: He drives well.',
+      'استخدام الصفة مكان الظرف: الخطأ "He drives good"، الصح: He drives well.',
       'الخلط بين hard و hardly: I hardly work = بالكاد بشتغل (عكس المعنى المقصود غالباً!).',
-      'وضع الظرف بين الفعل والمفعول: الخطأ "She speaks slowly English"، الصواب: She speaks English slowly.'
+      'وضع الظرف بين الفعل والمفعول: الخطأ "She speaks slowly English"، الصح: She speaks English slowly.'
     ],
     examples: [
       { en: 'The taxi driver drove quickly through the empty streets at dawn.', ar: 'سواق التاكسي ساق بسرعة في الشوارع الفاضية وقت الفجر.', highlight: 'quickly', context: 'ظرف بعد الفعل' },
@@ -3038,9 +3038,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'الماضي من الاتنين = had to: I had to work yesterday. مفيش musted!'
     ],
     commonTraps: [
-      'ترجمة "مش لازم" بـ mustn\'t: الخطأ "You mustn\'t bring food" لو تقصد مش مطلوب، الصواب: You don\'t have to bring food.',
-      'إضافة to بعد must: الخطأ "You must to go"، الصواب: You must go.',
-      'نسيان do في سؤال have to: الخطأ "Have you to work?"، الصواب: Do you have to work?'
+      'ترجمة "مش لازم" بـ mustn\'t: الخطأ "You mustn\'t bring food" لو تقصد مش مطلوب، الصح: You don\'t have to bring food.',
+      'إضافة to بعد must: الخطأ "You must to go"، الصح: You must go.',
+      'نسيان do في سؤال have to: الخطأ "Have you to work?"، الصح: Do you have to work?'
     ],
     examples: [
       { en: 'All passengers must show their tickets before boarding the train.', ar: 'كل الركاب لازم يورّوا تذاكرهم قبل ركوب القطار.', highlight: 'must show', context: 'قاعدة رسمية' },
@@ -3092,9 +3092,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       "في السؤال والنفي مع be used to بنتعامل مع be عادي: Are you used to it? / I'm not used to it."
     ],
     commonTraps: [
-      "فخ المصدر بعد be used to: الخطأ I'm used to wake up early، الصواب: I'm used to waking up early.",
+      "فخ المصدر بعد be used to: الخطأ I'm used to wake up early، الصح: I'm used to waking up early.",
       'فخ الخلط مع العادة الماضية: I used to wake up early معناها كنت بصحى بدري زمان وبطلت؛ أما I am used to waking up early معناها الصحيان بدري عادي عندي دلوقتي.',
-      "فخ نسيان الـ d: الخطأ I'm use to، الصواب: I'm used to (الـ d إجبارية هنا)."
+      "فخ نسيان الـ d: الخطأ I'm use to، الصح: I'm used to (الـ d إجبارية هنا)."
     ],
     examples: [
       {
@@ -3162,7 +3162,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'القاعدة الذهبية: tell/ask/order/advise/warn + المفعول به + to + المصدر: She asked me to wait.',
       'نفي الأمر المنقول: not قبل to: The doctor told me not to smoke.',
       'اختيار الفعل يعكس المعنى: order للأوامر الصارمة، ask للطلبات المهذبة، advise للنصيحة، warn للتحذير، tell للتعليمات العادية.',
-      'Say ممنوعة في نقل الأوامر: مينفعش He said me to go؛ الصواب: He told me to go.'
+      'Say ممنوعة في نقل الأوامر: مينفعش He said me to go؛ الصح: He told me to go.'
     ],
     egyptianTips: [
       'بالبلدي: الأمر "افتح الباب" لما تحكيه يبقى "قالي أفتح الباب" = He told me to open the door. حرف الجر to هو اللي بيعمل دور "أ".',
@@ -3170,8 +3170,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'التحذير الشهير: The sign warned us not to touch the wires = اللافتة حذرتنا ما نلمسش الأسلاك.'
     ],
     commonTraps: [
-      'فخ استخدام say في نقل الأمر: الخطأ He said me to sit down، الصواب: He told me to sit down.',
-      'فخ نسيان to: الخطأ She asked me wait outside، الصواب: She asked me to wait outside.',
+      'فخ استخدام say في نقل الأمر: الخطأ He said me to sit down، الصح: He told me to sit down.',
+      'فخ نسيان to: الخطأ She asked me wait outside، الصح: She asked me to wait outside.',
       'فخ مكان not: الخطأ He told me to not go، الأفصح: He told me not to go.'
     ],
     examples: [
@@ -3248,9 +3248,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'افتكر: الفاصلة معناها "معلومة على الهامش"، فمينفعش بعدها that - دي للكلام اللي في صلب الجملة بس.'
     ],
     commonTraps: [
-      'فخ that في Non-Defining: الخطأ My car, that is new, is outside، الصواب: My car, which is new, is outside.',
-      'فخ الفواصل في Defining: الخطأ The man, who lives next door, is a doctor (لو عندك كذا جار)، الصواب بدون فواصل: The man who lives next door is a doctor.',
-      'فخ حذف الضمير في Non-Defining: الخطأ London, I visited last year, was amazing، الصواب: London, which I visited last year, was amazing.'
+      'فخ that في Non-Defining: الخطأ My car, that is new, is outside، الصح: My car, which is new, is outside.',
+      'فخ الفواصل في Defining: الخطأ The man, who lives next door, is a doctor (لو عندك كذا جار)، الصح بدون فواصل: The man who lives next door is a doctor.',
+      'فخ حذف الضمير في Non-Defining: الخطأ London, I visited last year, was amazing، الصح: London, which I visited last year, was amazing.'
     ],
     examples: [
       {
@@ -3331,8 +3331,8 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في الكلام المنقول: will تتحول لـ would تلقائياً: "I will win" ➔ He said he would win.'
     ],
     commonTraps: [
-      'فخ استخدام will في الكلام المنقول الماضي: الخطأ He said he will come، الصواب: He said he would come.',
-      'فخ نسيان was/were: الخطأ I going to visit her yesterday، الصواب: I was going to visit her.',
+      'فخ استخدام will في الكلام المنقول الماضي: الخطأ He said he will come، الصح: He said he would come.',
+      'فخ نسيان was/were: الخطأ I going to visit her yesterday، الصح: I was going to visit her.',
       'فخ الخلط مع الاستخدام الشرطي لـ would: في If I were rich, I would travel دي مش خطة ماضية بل شرط خيالي (قاعدة مختلفة).'
     ],
     examples: [
@@ -3409,9 +3409,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'Do your best = اختلص / اعمل اللي عليك. Make friends = صادق ناس جداد (بـ make لأنك بتخلق صداقة جديدة).'
     ],
     commonTraps: [
-      'فخ do a mistake: الخطأ I did a mistake، الصواب: I made a mistake.',
-      'فخ make homework: الخطأ I made my homework، الصواب: I did my homework.',
-      'فخ do money: الخطأ He does a lot of money، الصواب: He makes a lot of money.'
+      'فخ do a mistake: الخطأ I did a mistake، الصح: I made a mistake.',
+      'فخ make homework: الخطأ I made my homework، الصح: I did my homework.',
+      'فخ do money: الخطأ He does a lot of money، الصح: He makes a lot of money.'
     ],
     examples: [
       {
@@ -3487,9 +3487,9 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'في اللغة الرسمية: Each of + جمع + فعل مفرد: Each of the students has a book.'
     ],
     commonTraps: [
-      'فخ whole مع الجمع: الخطأ the whole students، الصواب: all the students.',
-      'فخ نسيان the مع whole: الخطأ I slept whole day، الصواب: I slept the whole day (أو all day).',
-      'فخ الجمع بعد every: الخطأ every students، الصواب: every student (اسم مفرد + فعل مفرد).'
+      'فخ whole مع الجمع: الخطأ the whole students، الصح: all the students.',
+      'فخ نسيان the مع whole: الخطأ I slept whole day، الصح: I slept the whole day (أو all day).',
+      'فخ الجمع بعد every: الخطأ every students، الصح: every student (اسم مفرد + فعل مفرد).'
     ],
     examples: [
       {

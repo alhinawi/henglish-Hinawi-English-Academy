@@ -1,3 +1,4 @@
+import { LessonCorrection } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
 import { LessonPhotoGallery } from '../components/LessonPhotography';
 import React, { useState } from 'react';
@@ -308,14 +309,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                 key={idx}
                 className="p-4 rounded-2xl bg-[#09091a] border border-[#ff4f9a]/20 space-y-2 text-sm"
               >
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
-                  <div className="en text-[#ff4f9a] font-bold">
-                   غلط: {m.wrong}
-                  </div>
-                  <div className="en text-[#c4ff55] font-bold">
-                   صح: {m.correct}
-                  </div>
-                </div>
+                <LessonCorrection wrong={m.wrong} correct={m.correct} />
                 <p className="text-xs text-[#dedbf4]">
                   <strong className="text-[#ffd166]">السبب: </strong>
                   {m.reason}

@@ -88,7 +88,7 @@ export const COMPREHENSIVE_QUIZ_BANK: QuizQuestion[] = [
       'dinner should be the dinner',
     ],
     answer: 2,
-    explanation: 'الخطأ هو will has والصواب هو will have لأن المصدر بعد will هو have دائماً.',
+    explanation: 'الخطأ هو will has والصح هو will have لأن المصدر بعد will هو have دائماً.',
     topic: 'Common Traps',
     difficulty: 'beginner',
   },

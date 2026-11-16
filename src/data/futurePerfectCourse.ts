@@ -800,7 +800,7 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
           'Should be "will had resolved".',
         ],
         answer: 1,
-        explanation: 'الخطأ هو will has، والصواب will have resolved دائماً.',
+        explanation: 'الخطأ هو will has، والصح will have resolved دائماً.',
         topic: 'Common Traps',
         difficulty: 'advanced',
       },
