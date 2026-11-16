@@ -1,3 +1,4 @@
+import { LessonCorrection } from '../LessonCorrection';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION PRACTICE & CHALLENGE LAB
 // Educational translation challenges (Ar<->En) with multi-criteria AI grading & XP
@@ -348,10 +349,7 @@ export const PracticeModeTab: React.FC<PracticeModeTabProps> = ({
                   <span className="font-bold text-white block">ملاحظات دقيقة لتطوير الصياغة:</span>
                   {evaluationResult.mistakesAndCorrections.map((m, idx) => (
                     <div key={idx} className="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-slate-200 space-y-1">
-                      <div className="flex items-center gap-2">
-                        <span className="text-red-400 font-bold">صياغتك: "{m.userPart}"</span>
-                        <span className="text-[#10b981] font-bold">الأنسب: "{m.correction}"</span>
-                      </div>
+                      <LessonCorrection wrong={m.userPart} correct={m.correction} />
                       <p className="text-[#b9b6d5]">{m.reasonAr}</p>
                     </div>
                   ))}
