@@ -16,6 +16,7 @@ import {
   Lightbulb,
   Bookmark,
   ShieldCheck,
+  SlidersHorizontal,
 } from 'lucide-react';
 import {
   LEARNING_SOURCES,
@@ -43,7 +44,7 @@ const CATEGORY_ICONS: Record<SourceCategoryId, React.ReactNode> = {
 
 const COST_LABELS: Record<SourceCost, string> = {
   free: 'مجاني',
-  freemium: 'فريميوم',
+  freemium: 'مجاني وفيه مدفوع',
   paid: 'مدفوع',
 };
 
@@ -60,6 +61,7 @@ export const SourcesPage: React.FC = () => {
   const [costFilter, setCostFilter] = useState<'all' | SourceCost>('all');
   const [levelFilter, setLevelFilter] = useState<string>('all');
   const [bookmarksOnly, setBookmarksOnly] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
 
   useEffect(() => {
@@ -194,82 +196,101 @@ export const SourcesPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Filters */}
-      <div className="glass-panel rounded-3xl border border-white/10 p-4 sm:p-5 space-y-4 sticky top-24 z-40 bg-[#0c0b20]/90 backdrop-blur-xl">
-        <div className="relative">
-          <Search className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-[#b9b6d5]" />
-          <input
-            type="text"
-            value={query}
-            onChange={e => setQuery(e.target.value)}
-            placeholder="ابحث عن مصدر... مثلا: جرامر، محادثة، IELTS"
-            className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pr-11 pl-4 text-white text-sm placeholder:text-[#b9b6d5]/60 focus:outline-none focus:border-[#41e7ff]/50"
-          />
-        </div>
-        <div className="flex items-center gap-2 flex-wrap">
-          {(['all', 'free', 'freemium', 'paid'] as const).map(c => (
-            <button
-              key={c}
-              onClick={() => {
-                playSound('click');
-                setCostFilter(c);
-              }}
-              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
-                costFilter === c
-                  ? 'bg-[#41e7ff]/20 text-[#41e7ff] border-[#41e7ff]/50'
-                  : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
-              }`}
-            >
-              {c === 'all' ? 'كل الأسعار' : COST_LABELS[c]}
-            </button>
-          ))}
-          <span className="w-px h-5 bg-white/10 hidden sm:block" />
-          {['all', ...LEVELS].map(lv => (
-            <button
-              key={lv}
-              onClick={() => {
-                playSound('click');
-                setLevelFilter(lv);
-              }}
-              dir="ltr"
-              className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
-                levelFilter === lv
-                  ? 'bg-[#ffd166]/20 text-[#ffd166] border-[#ffd166]/50'
-                  : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
-              }`}
-            >
-              {lv === 'all' ? 'كل المستويات' : lv}
-            </button>
-          ))}
-          <span className="w-px h-5 bg-white/10 hidden sm:block" />
+      {/* Filters: slim sticky bar + collapsible panel (never overlaps cards) */}
+      <div className="sticky top-24 z-40 glass-panel rounded-2xl border border-white/10 bg-[#0c0b20]/95 backdrop-blur-xl p-2.5 flex items-center gap-2">
+          <div className="relative flex-1 min-w-0">
+            <Search className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#b9b6d5]" />
+            <input
+              type="text"
+              value={query}
+              onChange={e => setQuery(e.target.value)}
+              placeholder="ابحث عن مصدر..."
+              className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pr-9 pl-3 text-white text-sm placeholder:text-[#b9b6d5]/60 focus:outline-none focus:border-[#41e7ff]/50"
+            />
+          </div>
+          <button
+            onClick={() => {
+              playSound('click');
+              setFiltersOpen(o => !o);
+            }}
+            aria-expanded={filtersOpen}
+            className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
+              filtersOpen || costFilter !== 'all' || levelFilter !== 'all'
+                ? 'bg-[#41e7ff]/20 text-[#41e7ff] border-[#41e7ff]/50'
+                : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
+            }`}
+          >
+            <SlidersHorizontal className="w-3.5 h-3.5" />
+            <span>الفلاتر</span>
+          </button>
           <button
             onClick={() => {
               playSound('click');
               setBookmarksOnly(b => !b);
             }}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
+            className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
               bookmarksOnly
                 ? 'bg-[#ffd166]/20 text-[#ffd166] border-[#ffd166]/50'
                 : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
             }`}
           >
             <Bookmark className="w-3.5 h-3.5" fill={bookmarksOnly ? 'currentColor' : 'none'} />
-            <span>المحفوظات ({bookmarks.length})</span>
+            <span dir="ltr">{bookmarks.length}</span>
           </button>
         </div>
-        <div className="flex items-center gap-1.5 flex-wrap text-[11px] text-[#b9b6d5]">
-          <span>الأقسام:</span>
-          {SOURCE_CATEGORIES.map(cat => (
-            <a
-              key={cat.id}
-              href={`#sources-${cat.id}`}
-              className="px-2 py-0.5 rounded-lg hover:bg-white/5 hover:text-[#41e7ff] transition-colors"
-            >
-              {cat.labelAr}
-            </a>
-          ))}
-        </div>
-      </div>
+
+        {filtersOpen && (
+          <div className="glass-panel rounded-2xl border border-white/10 p-4 space-y-4">
+            <div className="flex items-center gap-2 flex-wrap">
+              {(['all', 'free', 'freemium', 'paid'] as const).map(c => (
+                <button
+                  key={c}
+                  onClick={() => {
+                    playSound('click');
+                    setCostFilter(c);
+                  }}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
+                    costFilter === c
+                      ? 'bg-[#41e7ff]/20 text-[#41e7ff] border-[#41e7ff]/50'
+                      : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
+                  }`}
+                >
+                  {c === 'all' ? 'الكل' : COST_LABELS[c]}
+                </button>
+              ))}
+              <span className="w-px h-5 bg-white/10 hidden sm:block" />
+              {['all', ...LEVELS].map(lv => (
+                <button
+                  key={lv}
+                  onClick={() => {
+                    playSound('click');
+                    setLevelFilter(lv);
+                  }}
+                  dir="ltr"
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
+                    levelFilter === lv
+                      ? 'bg-[#ffd166]/20 text-[#ffd166] border-[#ffd166]/50'
+                      : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
+                  }`}
+                >
+                  {lv === 'all' ? 'كل المستويات' : lv}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center gap-1.5 flex-wrap text-[11px] text-[#b9b6d5]">
+              <span>الأقسام:</span>
+              {SOURCE_CATEGORIES.map(cat => (
+                <a
+                  key={cat.id}
+                  href={`#sources-${cat.id}`}
+                  className="px-2 py-0.5 rounded-lg hover:bg-white/5 hover:text-[#41e7ff] transition-colors"
+                >
+                  {cat.labelAr}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
 
       {totalShown === 0 && (
         <div className="glass-panel rounded-3xl border border-white/10 p-10 text-center space-y-2">
