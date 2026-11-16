@@ -1,3 +1,4 @@
+import { writingFeedback } from '../services/writingFeedback';
 import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
@@ -111,7 +112,11 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       await throwForAiResponse(response, `AI writing analysis failed with status: ${response.status}`);
 
       const data = await response.json();
-      const feedbackText = data.text || data.response || t('wa.feedback.unavailable');
+      const feedbackText = writingFeedback(data);
+      if (!feedbackText) {
+        setSubmissionFeedback(t('wa.feedback.unavailable'));
+        return;
+      }
       setSubmissionFeedback(feedbackText);
       playSound('correct');
       fireCelebration();
