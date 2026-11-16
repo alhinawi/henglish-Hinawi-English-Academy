@@ -60,7 +60,6 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   'الكلام المنقول': 'grammar.item.reportedSpeech',
   'ضمائر وجمل الوصل': 'grammar.item.relativeClauses',
   'جديد': 'sidebar.new',
-  '21+ قاعدة': 'sidebar.rulesBadge',
   'رسمي': 'sidebar.official',
   'مساحتي الخاصة': 'nav.mySpace',
   'لوحة المتصدرين': 'header.leaderboard',
@@ -71,6 +70,8 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   'الرئيسية هنجلش': 'sidebar.brandHome',
 };
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import { ALL_GRAMMAR_RULES } from '../../data/allGrammarRules';
+import { loadSentences } from '../../services/sentencesService';
 import { playSound } from '../../utils/audio';
 import {
   LayoutDashboard,
@@ -152,6 +153,8 @@ interface NavItem {
   route: PageRoute;
   icon: React.ComponentType<{ className?: string }>;
   badge?: string;
+  badgeKey?: string;
+  badgeCount?: number;
   isFlagship?: boolean;
   adminOnly?: boolean;
   subSections?: NavSubSection[];
@@ -196,7 +199,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const { t, dir } = useLanguage();
   const reduceMotion = useReducedMotion();
-  const [profileSheetOpen, setProfileSheetOpen] = React.useState(false);
+  const [profileMenuOpen, setProfileMenuOpen] = React.useState(false);
+  const [sentenceCount, setSentenceCount] = React.useState<number | null>(null);
+  React.useEffect(() => {
+    let live = true;
+    loadSentences().then(list => { if (live) setSentenceCount(list.length); }).catch(() => {});
+    return () => { live = false; };
+  }, []);
   const tl = (label: string) => {
     const key = NAV_LABEL_KEYS[label.trim()];
     return key ? t(key) : label;
@@ -254,7 +263,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Grammar Academy',
           route: 'grammar',
           icon: GraduationCap,
-          badge: '21+ قاعدة',
+          badgeKey: 'sidebar.rulesBadge',
+          badgeCount: ALL_GRAMMAR_RULES.length,
           subSections: [
             {
               title: 'أزمنة المستقبل',
@@ -408,7 +418,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: '5,000 Sentences',
           route: 'sentences' as PageRoute,
           icon: BookText,
-          badge: '5,000 جملة',
+          badgeKey: 'sidebar.sentencesBadge',
+          badgeCount: sentenceCount ?? 0,
         },
         {
           label: 'اتعلم من الأفلام ',
@@ -512,7 +523,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     const isCollapsed = isMobileDrawer ? false : collapsed;
 
     return (
-      <div className="flex flex-col h-full bg-[#0c0b20] border-l border-white/10 select-none text-right">
+      <div className="relative flex flex-col h-full bg-[#0c0b20] border-l border-white/10 select-none text-right">
+        {isMobileDrawer && profileMenuOpen && (
+          <div className="absolute inset-0 z-10" onClick={() => setProfileMenuOpen(false)} aria-hidden="true" />
+        )}
         {/* Top controls row - the logo lives in the site header only
             (Hinawi 7:01: one logo, no duplicate in the sidebar). */}
         {(!isCollapsed || isMobileDrawer) && (
@@ -692,7 +706,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                         {!isCollapsed && (
                           <div className="flex-1 flex items-center justify-between min-w-0">
                             <span className="truncate flex-1" dir="auto" style={{ textAlign: 'start' }}>{tl(item.label)}</span>
-                            {item.badge && (
+                            {(item.badgeKey ? (item.badgeCount ?? 0) > 0 : !!item.badge) && (
                               <span
                                 className={`text-[9px] font-black px-1.5 py-0.5 rounded-md ${
                                   item.isFlagship
@@ -700,7 +714,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                     : 'bg-white/10 text-[#ffd166] border border-white/10'
                                 }`}
                               >
-                                <span dir="auto">{tl(item.badge)}</span>
+                                <span dir="auto">{item.badgeKey ? t(item.badgeKey).replace('{count}', (item.badgeCount ?? 0).toLocaleString('en-US')) : tl(item.badge!)}</span>
                               </span>
                             )}
                           </div>
@@ -786,13 +800,93 @@ export const Sidebar: React.FC<SidebarProps> = ({
           ))}
         </div>
 
+        {/* In-drawer profile popover (Hinawi 8:02): pops up above the pinned
+            row, inside the drawer; the drawer itself stays open. */}
+        <AnimatePresence>
+          {isMobileDrawer && profileMenuOpen && userProfile && authSessionType !== 'guest' && (
+            <motion.div
+              initial={{ opacity: 0, y: reduceMotion ? 0 : 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: reduceMotion ? 0 : 16 }}
+              transition={{ duration: reduceMotion ? 0.05 : 0.16, ease: 'easeOut' }}
+              role="dialog"
+              aria-label={t('profile.title')}
+              className="mx-3 mt-2 rounded-2xl bg-[#1b1939] border border-white/15 shadow-xl overflow-hidden relative z-20"
+            >
+              <div className="flex items-center justify-between px-3 py-1.5 border-b border-white/10">
+                <span dir="auto" className="text-[11px] font-black text-[#b9b6d5]">{t('profile.title')}</span>
+                <button
+                  onClick={() => setProfileMenuOpen(false)}
+                  className="p-1.5 rounded-lg text-[#dedbf4] hover:text-white hover:bg-white/10 cursor-pointer"
+                  aria-label={t('sidebar.close')}
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </div>
+              <div className="p-1.5 space-y-0.5 text-xs font-bold">
+                {onOpenSettings && (
+                  <button
+                    onClick={() => { playSound('click'); setProfileMenuOpen(false); onCloseMobile(); onOpenSettings(); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <Settings className="w-4 h-4 text-[#41e7ff]" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('settings.title')}</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => { setProfileMenuOpen(false); handleNav('my-learning'); }}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                >
+                  <BookOpen className="w-4 h-4 text-[#41e7ff]" />
+                  <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.mySpaceNotes')}</span>
+                </button>
+                <button
+                  onClick={() => { setProfileMenuOpen(false); handleNav('certificates'); }}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                >
+                  <Award className="w-4 h-4 text-[#ffd166]" />
+                  <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.myCertificates')}</span>
+                </button>
+                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && (
+                  <button
+                    onClick={() => { setProfileMenuOpen(false); handleNav('admin'); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <ShieldCheck className="w-4 h-4 text-[#ffd166]" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.adminPanel')}</span>
+                  </button>
+                )}
+                {onToggleRole && (
+                  <button
+                    onClick={() => { playSound('click'); setProfileMenuOpen(false); onToggleRole(); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <Repeat className="w-4 h-4 text-[#c4ff55]" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.roleToggle')}{userProfile.role === 'student' ? t('header.teacher') : t('header.student')}</span>
+                  </button>
+                )}
+                {onSignOut && (
+                  <button
+                    onClick={() => { playSound('click'); setProfileMenuOpen(false); onCloseMobile(); onSignOut(); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20"
+                  >
+                    <LogOut className="w-4 h-4 text-red-400" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.logout')}</span>
+                  </button>
+                )}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         {/* Mobile profile footer (Hinawi 7:51): ChatGPT-style pinned row at
             the bottom of the drawer; tap opens the dedicated profile page. */}
         {isMobileDrawer && userProfile && authSessionType !== 'guest' && (
           <button
-            onClick={() => { playSound('click'); onCloseMobile(); setProfileSheetOpen(true); }}
-            className="mx-3 mt-2 mb-1 flex items-center gap-3 p-2.5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer shrink-0"
+            onClick={() => { playSound('click'); setProfileMenuOpen(v => !v); }}
+            className="mx-3 mt-2 mb-1 flex items-center gap-3 p-2.5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer shrink-0 relative z-20"
             aria-haspopup="dialog"
+            aria-expanded={profileMenuOpen}
           >
             <img
               src={userProfile.avatar}
@@ -857,114 +951,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {renderSidebarContent(true)}
       </aside>
 
-      {/* Profile bottom sheet (Hinawi 7:57): slides up from the bottom,
-          ChatGPT-style; closes on backdrop, X or swipe-down. */}
-      <AnimatePresence>
-        {profileSheetOpen && userProfile && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: reduceMotion ? 0.05 : 0.18 }}
-              className="fixed inset-0 z-[95] bg-black/70 backdrop-blur-sm md:hidden"
-              onClick={() => setProfileSheetOpen(false)}
-              aria-hidden="true"
-            />
-            <motion.div
-              role="dialog"
-              aria-label={t('profile.title')}
-              initial={{ y: '100%' }}
-              animate={{ y: 0 }}
-              exit={{ y: '100%' }}
-              transition={{ type: 'tween', duration: reduceMotion ? 0.08 : 0.24, ease: 'easeOut' }}
-              drag={reduceMotion ? false : 'y'}
-              dragConstraints={{ top: 0, bottom: 0 }}
-              dragElastic={{ top: 0, bottom: 0.5 }}
-              onDragEnd={(_e, info) => {
-                if (info.offset.y > 80 || info.velocity.y > 400) setProfileSheetOpen(false);
-              }}
-              className="fixed bottom-0 inset-x-0 z-[96] md:hidden rounded-t-3xl bg-[#171632] border-t border-white/15 shadow-2xl px-4 pt-2.5"
-              style={{ paddingBottom: 'calc(env(safe-area-inset-bottom, 0px) + 1rem)' }}
-            >
-              <div className="w-10 h-1 rounded-full bg-white/25 mx-auto mb-3" />
-              <div className="flex items-center gap-3 pb-3 border-b border-white/10">
-                <img
-                  src={userProfile.avatar}
-                  alt={userProfile.name}
-                  className="w-11 h-11 rounded-xl object-cover border border-[#ffd166]/40 shrink-0"
-                />
-                <div className="min-w-0 flex-1" style={{ textAlign: 'start' }}>
-                  <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
-                  <div dir="ltr" className="text-[11px] text-[#b9b6d5] truncate">{userProfile.email}</div>
-                </div>
-                <span className="shrink-0 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
-                  {userProfile.role === 'teacher' ? t('header.rankTeacher') : t('header.cefrLevel').replace('{level}', userProfile.currentLevel)}
-                </span>
-                <button
-                  onClick={() => setProfileSheetOpen(false)}
-                  className="p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/10 cursor-pointer shrink-0"
-                  aria-label={t('sidebar.close')}
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              </div>
-              <div className="py-2 space-y-0.5 text-sm font-bold max-h-[55vh] overflow-y-auto overscroll-contain">
-                {onOpenSettings && (
-                  <button
-                    onClick={() => { playSound('click'); setProfileSheetOpen(false); onOpenSettings(); }}
-                    className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                  >
-                    <Settings className="w-[18px] h-[18px] text-[#41e7ff]" />
-                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('settings.title')}</span>
-                  </button>
-                )}
-                <button
-                  onClick={() => { setProfileSheetOpen(false); handleNav('my-learning'); }}
-                  className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                >
-                  <BookOpen className="w-[18px] h-[18px] text-[#41e7ff]" />
-                  <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.mySpaceNotes')}</span>
-                </button>
-                <button
-                  onClick={() => { setProfileSheetOpen(false); handleNav('certificates'); }}
-                  className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                >
-                  <Award className="w-[18px] h-[18px] text-[#ffd166]" />
-                  <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.myCertificates')}</span>
-                </button>
-                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && (
-                  <button
-                    onClick={() => { setProfileSheetOpen(false); handleNav('admin'); }}
-                    className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                  >
-                    <ShieldCheck className="w-[18px] h-[18px] text-[#ffd166]" />
-                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.adminPanel')}</span>
-                  </button>
-                )}
-                {onToggleRole && (
-                  <button
-                    onClick={() => { playSound('click'); setProfileSheetOpen(false); onToggleRole(); }}
-                    className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
-                  >
-                    <Repeat className="w-[18px] h-[18px] text-[#c4ff55]" />
-                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.roleToggle')}{userProfile.role === 'student' ? t('header.teacher') : t('header.student')}</span>
-                  </button>
-                )}
-                {onSignOut && (
-                  <button
-                    onClick={() => { playSound('click'); setProfileSheetOpen(false); onSignOut(); }}
-                    className="w-full flex items-center gap-3 p-3 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20 mt-1.5"
-                  >
-                    <LogOut className="w-[18px] h-[18px] text-red-400" />
-                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.logout')}</span>
-                  </button>
-                )}
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
     </>
   );
 };
