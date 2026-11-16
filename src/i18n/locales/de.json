@@ -2396,5 +2396,19 @@
   "to.hint": "Klicke auf ein Wort für verfügbare Analysen",
   "to.explain": "Übersetzungs- und Grammatikerklärung",
   "to.characters": "Zeichen",
-  "to.footer": "KI-Übersetzungsdienst"
+  "to.footer": "KI-Übersetzungsdienst",
+  "se.title": "Ausgangstext",
+  "se.auto": "Automatisch erkennen",
+  "se.paste": "Aus Zwischenablage einfügen",
+  "se.copy": "Ausgangstext kopieren",
+  "se.speak": "Ausgangstext anhören",
+  "se.clear": "Text leeren",
+  "se.samples": "Probiere einen Beispielsatz:",
+  "se.microphone": "Spracheingabe über Mikrofon",
+  "se.listening": "Hört zu...",
+  "se.speakNow": "Jetzt sprechen",
+  "se.characters": "Zeichen",
+  "se.loading": "Übersetzung läuft...",
+  "se.translate": "Jetzt übersetzen",
+  "se.placeholder": "Text zum Übersetzen hier eingeben oder einfügen..."
 }
