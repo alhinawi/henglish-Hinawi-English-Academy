@@ -2675,5 +2675,11 @@
   "ta.when": "Wann verwenden?",
   "ta.select": "Diese Formulierung verwenden",
   "ta.listen": "Aussprache anhören",
-  "ta.copy": "Alternative kopieren"
+  "ta.copy": "Alternative kopieren",
+  "ss.title": "Satzpuzzle",
+  "ss.intro": "Setze Sätze aus den Lerninhalten zusammen, indem du die Wörter in der richtigen Reihenfolge antippst. 8 Runden.",
+  "ss.loading": "Sätze werden vorbereitet...",
+  "ss.empty": "Tippe die Wörter unten in der richtigen Reihenfolge an",
+  "ss.correct": "Richtige Antwort:",
+  "ss.check": "Prüfen"
 }
