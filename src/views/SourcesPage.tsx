@@ -196,8 +196,9 @@ export const SourcesPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Filters: slim sticky bar + collapsible panel (never overlaps cards) */}
-      <div className="sticky top-24 z-40 glass-panel rounded-2xl border border-white/10 bg-[#0c0b20]/95 backdrop-blur-xl p-2.5 flex items-center gap-2">
+      {/* Filters: slim sticky bar + dropdown panel attached to the bar (visible at any scroll position) */}
+      <div className="sticky top-24 z-40">
+        <div className="glass-panel rounded-2xl border border-white/10 bg-[#0c0b20]/95 backdrop-blur-xl p-2.5 flex items-center gap-2">
           <div className="relative flex-1 min-w-0">
             <Search className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#b9b6d5]" />
             <input
@@ -241,7 +242,14 @@ export const SourcesPage: React.FC = () => {
         </div>
 
         {filtersOpen && (
-          <div className="glass-panel rounded-2xl border border-white/10 p-4 space-y-4">
+          <>
+            {/* outside-tap backdrop: sits behind bar+panel, above page cards */}
+            <div
+              aria-hidden="true"
+              className="fixed inset-0 -z-10 cursor-default"
+              onClick={() => setFiltersOpen(false)}
+            />
+          <div className="absolute top-full left-0 right-0 mt-2 z-10 glass-panel rounded-2xl border border-white/10 bg-[#0c0b20]/95 backdrop-blur-xl p-4 space-y-4 max-h-[calc(100vh-190px)] overflow-y-auto shadow-2xl shadow-black/60">
             <div className="flex items-center gap-2 flex-wrap">
               {(['all', 'free', 'freemium', 'paid'] as const).map(c => (
                 <button
@@ -284,6 +292,7 @@ export const SourcesPage: React.FC = () => {
                 <a
                   key={cat.id}
                   href={`#sources-${cat.id}`}
+                  onClick={() => setFiltersOpen(false)}
                   className="px-2 py-0.5 rounded-lg hover:bg-white/5 hover:text-[#41e7ff] transition-colors"
                 >
                   {cat.labelAr}
@@ -291,7 +300,9 @@ export const SourcesPage: React.FC = () => {
               ))}
             </div>
           </div>
+          </>
         )}
+      </div>
 
       {totalShown === 0 && (
         <div className="glass-panel rounded-3xl border border-white/10 p-10 text-center space-y-2">
