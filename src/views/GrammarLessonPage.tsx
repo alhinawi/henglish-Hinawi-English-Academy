@@ -4,6 +4,7 @@ import { LessonPhoto } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { GRAMMAR_VIDEO_RESOURCES } from '../data/videoResourcesData';
 import { YouTubeVideoPlayer } from '../components/YouTubeVideoPlayer';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
@@ -50,6 +51,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
   const nextRule = ruleIndex < ALL_GRAMMAR_RULES.length - 1 ? ALL_GRAMMAR_RULES[ruleIndex + 1] : null;
 
   // State for active tab in detailed structures
+  const appText = useAppTextMap('allGrammarRules');
   const [activeStructureTab, setActiveStructureTab] = useState<'affirmative' | 'negative' | 'question' | 'spelling'>('affirmative');
 
   // Guided practice interactive exercise state
@@ -140,7 +142,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <div className="max-w-3xl space-y-4 p-6 sm:p-10">
           <div className="flex items-center gap-2.5 flex-wrap">
             <span className="px-3.5 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
-              {rule.category} • {rule.categoryEn}
+              {txText(appText, rule.category)} • {rule.categoryEn}
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-[#41e7ff] border border-white/10">
               {rule.level}
@@ -151,14 +153,14 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-[1.6]">
-            <MixedLessonText text={rule.titleAr} />
+            <MixedLessonText text={txText(appText, rule.titleAr)} />
           </h1>
           <div className="text-sm sm:text-base font-mono text-[#41e7ff] font-semibold">
             {rule.titleEn}
           </div>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
-            <MixedLessonText text={rule.summaryAr} />
+            <MixedLessonText text={txText(appText, rule.summaryAr)} />
           </p>
 
           {/* Quick Voice Audio Pronunciation of Rule Title */}
@@ -190,7 +192,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
             {rule.keyUsagePoints.map((point, idx) => (
               <li key={idx} className="flex items-start gap-2.5">
                 <CheckCircle2 className="w-4 h-4 text-[#c4ff55] shrink-0 mt-0.5" />
-                <span>{point}</span>
+                <span>{txText(appText, point)}</span>
               </li>
             ))}
           </ul>
@@ -204,7 +206,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           </div>
           <h3 className="text-lg font-black text-white">أين يقع هذا الفعل على شريط الزمن؟</h3>
           <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
-            {rule.timelineDescription}
+            {txText(appText, rule.timelineDescription)}
           </p>
           <div className="p-4 rounded-2xl bg-black/40 border border-white/10 flex items-center justify-between text-xs font-mono text-[#b9b6d5]">
             <div className="text-center">
@@ -324,7 +326,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                 {idx + 1}
               </div>
               <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
-                {tip}
+                {txText(appText, tip)}
               </p>
             </div>
           ))}
@@ -391,7 +393,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               <div className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 !
               </div>
-              <LessonTrap text={trap} />
+              <LessonTrap text={txText(appText, trap)} />
             </div>
           ))}
         </div>
@@ -401,7 +403,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       {videoResources.length > 0 && (
         <YouTubeVideoPlayer
           resources={videoResources}
-          lessonTitle={rule.titleAr}
+          lessonTitle={txText(appText, rule.titleAr)}
         />
       )}
 
@@ -493,7 +495,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
             <ChevronRight className="w-4 h-4 text-[#ffd166]" />
             <div className="text-right">
               <span className="block text-[10px] text-[#b9b6d5]">الدرس السابق</span>
-              <span>{prevRule.titleAr.split(':')[0]}</span>
+              <span>{txText(appText, prevRule.titleAr).split(':')[0]}</span>
             </div>
           </button>
         ) : <div />}
@@ -517,7 +519,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           >
             <div className="text-left">
               <span className="block text-[10px] text-[#b9b6d5]">الدرس التالي</span>
-              <span>{nextRule.titleAr.split(':')[0]}</span>
+              <span>{txText(appText, nextRule.titleAr).split(':')[0]}</span>
             </div>
             <ChevronLeft className="w-4 h-4 text-[#41e7ff]" />
           </button>
