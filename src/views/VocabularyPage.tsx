@@ -3,19 +3,21 @@ import { VERB_TOOLKIT } from '../data/verbsData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish } from '../utils/audio';
 import { Search, Volume2, Sparkles } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const VocabularyPage: React.FC = () => {
+  const { t } = useLanguage();
   const appText = useAppTextMap('verbsData');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [irregularOnly, setIrregularOnly] = useState(false);
 
   const categories = [
-    { id: 'all', label: 'جميع الأفعال' },
-    { id: 'study', label: 'الدراسة والتعليم' },
-    { id: 'work', label: 'العمل والمشاريع' },
-    { id: 'tech', label: 'البرمجة والتكنولوجيا' },
-    { id: 'daily', label: 'الحياة اليومية' },
+    { id: 'all', label: t('voc.catAll') },
+    { id: 'study', label: t('voc.catStudy') },
+    { id: 'work', label: t('voc.catWork') },
+    { id: 'tech', label: t('voc.catTech') },
+    { id: 'daily', label: t('voc.catDaily') },
   ];
 
   const filteredVerbs = VERB_TOOLKIT.filter(v => {
@@ -39,13 +41,13 @@ export const VocabularyPage: React.FC = () => {
       <div className="space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#c4ff55]/15 text-[#c4ff55] border border-[#c4ff55]/30">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>V3 VERB TOOLKIT • حقيبة أفعال التصريف الثالث</span>
+          <span>{t('voc.badge')}</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          دليل تصريفات الأفعال V1, V2, V3
+          {t('voc.title')}
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
-          المستقبل التام يعتمد كلياً على التصريف الثالث (V3). ابحث عن أي فعل واستمع لنطقه الإنجليزي واقرأ أمثلة عملية جاهزة.
+          {t('voc.blurb')}
         </p>
       </div>
 
@@ -60,7 +62,7 @@ export const VocabularyPage: React.FC = () => {
               dir="auto"
               value={searchTerm}
               onChange={e => setSearchTerm(e.target.value)}
-              placeholder="ابحث عن فعل بالإنجليزية أو العربية (write, done, يكتب...)"
+              placeholder={t('voc.searchPlaceholder')}
               className="w-full pl-4 pr-12 py-3 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#41e7ff]"
             />
           </div>
@@ -73,7 +75,7 @@ export const VocabularyPage: React.FC = () => {
               onChange={e => setIrregularOnly(e.target.checked)}
               className="w-4 h-4 rounded accent-[#ffd166]"
             />
-            <span>أفعال شاذة فقط (Irregular only)</span>
+            <span>{t('voc.irregularOnly')}</span>
           </label>
         </div>
 
@@ -107,9 +109,9 @@ export const VocabularyPage: React.FC = () => {
                 <th className="p-4 sm:p-5">Base (V1)</th>
                 <th className="p-4 sm:p-5">Past Simple (V2)</th>
                 <th className="p-4 sm:p-5 text-[#c4ff55]">Past Participle (V3)</th>
-                <th className="p-4 sm:p-5">المعنى بالعربي</th>
-                <th className="p-4 sm:p-5">مثال في المستقبل التام</th>
-                <th className="p-4 sm:p-5 text-center">نطق</th>
+                <th className="p-4 sm:p-5">{t('voc.thMeaning')}</th>
+                <th className="p-4 sm:p-5">{t('voc.thExample')}</th>
+                <th className="p-4 sm:p-5 text-center">{t('voc.thSpeak')}</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-white/5 text-xs sm:text-sm">
@@ -122,7 +124,7 @@ export const VocabularyPage: React.FC = () => {
                     {verb.v1}
                     {verb.isIrregular && (
                       <span className="mr-2 px-1.5 py-0.5 rounded text-[10px] bg-[#ffd166]/20 text-[#ffd166] font-['Cairo']">
-                        شاذ
+                        {t('voc.irregularBadge')}
                       </span>
                     )}
                   </td>
@@ -145,7 +147,7 @@ export const VocabularyPage: React.FC = () => {
                         speakEnglish(`${verb.v1}, ${verb.v2}, ${verb.v3}`);
                       }}
                       className="p-2 rounded-xl bg-white/5 hover:bg-white/15 text-[#41e7ff] transition-colors cursor-pointer inline-flex items-center justify-center"
-                      title="استمع لتصريفات الفعل"
+                      title={t('voc.listenForms')}
                     >
                       <Volume2 className="w-4 h-4" />
                     </button>
@@ -158,7 +160,7 @@ export const VocabularyPage: React.FC = () => {
 
         {filteredVerbs.length === 0 && (
           <div className="p-12 text-center text-[#b9b6d5]">
-            <p className="text-base font-bold">لم نجد أفعالاً مطابقة لبحثك.</p>
+            <p className="text-base font-bold">{t('voc.emptyState')}</p>
           </div>
         )}
       </div>
