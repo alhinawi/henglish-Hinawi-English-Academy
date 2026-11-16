@@ -8,6 +8,7 @@ import {
   AchievementBadge,
 } from "../types";
 import { playSound, fireCelebration } from "../utils/audio";
+import { useLanguage } from "../i18n/LanguageContext";
 import {
   CEFR_LEVELS,
   CEFR_LABELS_AR,
@@ -58,6 +59,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   badges,
   onToggleGoal,
 }) => {
+  const { t } = useLanguage();
   const currentLevel = userProfile.currentLevel;
   const nextLevel = nextLevelOf(currentLevel);
   const progressPercent = levelProgressPercent(userProfile.xp || 0, currentLevel);
@@ -162,14 +164,14 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
     },
     {
       id: "sources",
-      title: "أهم المصادر",
+      title: t("home.sources.title"),
       titleEn: "Resources",
-      desc: "أهم القنوات والكتب والتطبيقات والمواقع لتعلم الإنجليزي وممارسته مع نيتيف، لينكات رسمية متحقق منها.",
+      desc: t("home.sources.desc"),
       icon: Library,
       route: "sources" as PageRoute,
       color: "from-[#ffd166]/20 to-[#41e7ff]/10",
-      badge: "222+ مصدر",
-      lessonsCount: "10 أقسام مختارة بعناية",
+      badge: t("home.sources.badge"),
+      lessonsCount: t("home.sources.lessons"),
       accentColor: "#ffd166",
     },
   ];

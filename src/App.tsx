@@ -65,7 +65,7 @@ import { ShieldAlert } from 'lucide-react';
 // so signed-in users never see the login page flash on load.
 const BootSplash: React.FC = () => (
   <div className="min-h-screen bg-[#0c0b20] flex items-center justify-center">
-    <img src="/logo-clean.png" alt="Henglish" className="w-20 h-20 rounded-3xl animate-pulse" />
+    <img src="/logo-splash.png" alt="Henglish" className="w-28 h-28 object-contain animate-pulse filter drop-shadow-[0_0_18px_rgba(255,209,102,0.45)]" />
   </div>
 );
 
