@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { createPortal, flushSync } from 'react-dom';
 import * as THREE from 'three';
 import { PageRoute } from '../types';
 import { REAL_LIFE_SCENARIOS, SimulationScenario } from '../data/realLifeSimulationsData';
@@ -125,6 +126,49 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   onNavigate,
   onSelectScenario,
 }) => {
+  const worldRef = useRef<HTMLDivElement>(null);
+  const nearbyNpcRef = useRef<WorldLocation | null>(null);
+  const [immersive, setImmersive] = useState(false);
+  const [fullscreenHint, setFullscreenHint] = useState('');
+  const exitWorld = useCallback(() => {
+    keysPressed.current = {};
+    joystickRef.current = { active: false, dx: 0, dy: 0 };
+    setSelectedLocation(null);
+    setImmersive(false);
+    if (document.fullscreenElement) void document.exitFullscreen().catch(() => {});
+    screen.orientation?.unlock?.();
+  }, []);
+  const enterWorld = () => {
+    // The request must run directly in a user gesture, after the portal is mounted.
+    flushSync(() => { setIs3DMode(true); setImmersive(true); });
+    const element = worldRef.current;
+    if (!element?.requestFullscreen) {
+      setFullscreenHint('وضع ملء الشاشة داخل الصفحة. يمكنك تدوير الموبايل أفقيًا.');
+      return;
+    }
+    void element.requestFullscreen().then(() => {
+      const orientation = screen.orientation as ScreenOrientation & { lock?: (value: string) => Promise<void> };
+      void orientation?.lock?.('landscape').catch(() => {});
+    }).catch(() => {
+      setFullscreenHint('المتصفح لا يسمح بإخفاء شريط العنوان. العالم مفتوح بحجم الشاشة داخل الصفحة.');
+    });
+  };
+  useEffect(() => {
+    if (!immersive) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    const onFullscreen = () => {
+      if (!document.fullscreenElement) exitWorld();
+    };
+    const onEscape = (event: KeyboardEvent) => { if (event.key === 'Escape') exitWorld(); };
+    document.addEventListener('fullscreenchange', onFullscreen);
+    window.addEventListener('keydown', onEscape);
+    return () => {
+      document.body.style.overflow = previous;
+      document.removeEventListener('fullscreenchange', onFullscreen);
+      window.removeEventListener('keydown', onEscape);
+    };
+  }, [immersive, exitWorld]);
   const mountRef = useRef<HTMLDivElement>(null);
   const [selectedLocation, setSelectedLocation] = useState<WorldLocation | null>(null);
   const [nearbyNpc, setNearbyNpc] = useState<WorldLocation | null>(null);
@@ -653,9 +697,9 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
     // 9. Key listeners
     const handleKeyDown = (e: KeyboardEvent) => {
       keysPressed.current[e.key.toLowerCase()] = true;
-      if (e.key.toLowerCase() === 'e' && nearbyNpc) {
+      if (e.key.toLowerCase() === 'e' && nearbyNpcRef.current) {
         playSound('click');
-        handleSelectLoc(nearbyNpc);
+        handleSelectLoc(nearbyNpcRef.current);
       }
     };
     const handleKeyUp = (e: KeyboardEvent) => {
@@ -767,6 +811,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       const newId = foundNearby ? (foundNearby as WorldLocation).id : null;
       if (newId !== lastNearby) {
         lastNearby = newId;
+        nearbyNpcRef.current = foundNearby;
         setNearbyNpc(foundNearby);
       }
       const cx = Math.round(player.position.x);
@@ -790,8 +835,17 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       renderer.setSize(newWidth, newHeight);
     };
     window.addEventListener('resize', handleResize);
+    const resizeObserver = new ResizeObserver(handleResize);
+    resizeObserver.observe(currentMount);
+    const clearMovement = () => {
+      keysPressed.current = {};
+      joystickRef.current = { active: false, dx: 0, dy: 0 };
+    };
+    window.addEventListener('blur', clearMovement);
 
     return () => {
+      resizeObserver.disconnect();
+      window.removeEventListener('blur', clearMovement);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('keydown', handleKeyDown);
       window.removeEventListener('keyup', handleKeyUp);
@@ -802,14 +856,20 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       }
       renderer.dispose();
     };
-  }, [is3DMode, handleSelectLoc, nearbyNpc]);
+  }, [is3DMode, handleSelectLoc, immersive]);
 
 
-  return (
-    <div className="space-y-6 text-right">
+  const content = (
+    <div ref={worldRef} role={immersive ? 'dialog' : undefined} aria-modal={immersive || undefined} aria-label={immersive ? 'المدينة الإنجليزية' : undefined}
+      className={immersive ? 'fixed inset-0 z-[9999] bg-[#0a091a] text-right flex flex-col' : 'space-y-6 text-right'}
+      style={immersive ? { height: '100dvh', paddingTop: 'env(safe-area-inset-top)', paddingBottom: 'env(safe-area-inset-bottom)' } : undefined}>
+      {immersive && <div className="absolute top-3 left-3 z-30 flex gap-2" style={{ left: 'max(12px, env(safe-area-inset-left))' }}>
+        <button onClick={exitWorld} className="min-h-11 px-4 rounded-xl bg-black/80 border border-white/30 text-white font-bold flex items-center gap-2"><X className="w-4 h-4" />خروج</button>
+      </div>}
+      {immersive && fullscreenHint && <p role="status" className="absolute top-16 left-3 right-3 z-30 bg-black/80 text-white text-xs p-3 rounded-xl pointer-events-none">{fullscreenHint}</p>}
       
       {/* 3D World Section Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-white/10">
+      <div className={`${immersive ? 'hidden' : 'flex'} flex-col sm:flex-row sm:items-center justify-between gap-4 pb-3 border-b border-white/10`}>
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
             <Sparkles className="w-3.5 h-3.5" />
@@ -857,10 +917,14 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
       {/* 3D Canvas Viewport */}
       {is3DMode ? (
-        <div className="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0a091a]">
+        <div className={immersive ? 'relative flex-1 min-h-0 overflow-hidden bg-[#0a091a]' : 'relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0a091a]'}>
+          {!immersive && <button onClick={enterWorld} className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-3 bg-black/35 text-white cursor-pointer" aria-label="دخول العالم بملء الشاشة">
+            <span className="rounded-2xl px-6 py-4 bg-[#ffd166] text-[#0c0b20] font-black flex items-center gap-3 shadow-xl"><Maximize2 className="w-5 h-5" />دخول العالم بملء الشاشة</span>
+            <span className="rounded-xl px-3 py-2 bg-black/70 text-xs">تحرك بحرية واقترب من الشخصيات للتحدث</span>
+          </button>}
           
           {/* Real Three.js Canvas Container */}
-          <div ref={mountRef} className="w-full h-[430px] sm:h-[540px] cursor-grab active:cursor-grabbing touch-none" />
+          <div ref={mountRef} className={immersive ? 'w-full h-full touch-none' : 'w-full h-[430px] sm:h-[540px] touch-none'} />
 
           {/* Virtual Joystick (touch devices) */}
           {isTouchDevice && (
@@ -870,13 +934,15 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               onPointerMove={handleJoyMove}
               onPointerUp={handleJoyEnd}
               onPointerCancel={handleJoyEnd}
+              onLostPointerCapture={handleJoyEnd}
+              aria-label="عصا التحكم للتحرك"
             >
               <div ref={joyKnobRef} className="w-12 h-12 rounded-full bg-linear-to-br from-[#ffd166] to-[#ff9c66] shadow-lg shadow-[#ffd166]/30 pointer-events-none" />
             </div>
           )}
 
           {/* Interactive HUD Overlay */}
-          <div className="absolute top-4 right-4 flex items-center gap-2 z-10 pointer-events-none">
+          <div className="absolute top-4 right-4 flex flex-col items-end gap-2 z-10 pointer-events-none max-w-[65%]">
             <div className="px-3 py-1.5 rounded-xl bg-black/60 backdrop-blur-md border border-white/15 text-[11px] font-mono text-white flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
               <span>X: {playerCoords.x} | Z: {playerCoords.z}</span>
@@ -907,7 +973,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           )}
 
           {/* Quick Fast-Travel Toolbar */}
-          <div className="absolute bottom-4 right-4 flex items-center gap-1.5 z-10 bg-black/60 backdrop-blur-md p-1.5 rounded-2xl border border-white/10 overflow-x-auto max-w-[90vw]">
+          <div className="absolute bottom-4 right-4 flex items-center gap-1.5 z-10 bg-black/60 backdrop-blur-md p-1.5 rounded-2xl border border-white/10 overflow-x-auto max-w-[calc(100%-10rem)]">
             <span className="text-[10px] text-[#ffd166] font-bold px-2 flex items-center gap-1">
               <Navigation className="w-3 h-3" />
               انتقال سريع:
@@ -922,7 +988,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 className="px-2.5 py-1 rounded-xl bg-white/5 hover:bg-white/15 text-white text-xs font-bold transition-colors cursor-pointer flex items-center gap-1 shrink-0"
               >
                 <span>{loc.icon}</span>
-                <span className="hidden sm:inline">{loc.nameEn.split(' ')[0]}</span>
+                <span>{loc.nameAr.split(' - ')[0]}</span>
               </button>
             ))}
           </div>
@@ -1015,6 +1081,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                     if (onSelectScenario) {
                       onSelectScenario(selectedLocation.scenarioId);
                     }
+                    exitWorld();
                     onNavigate('real-life');
                     setSelectedLocation(null);
                   }}
@@ -1027,6 +1094,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 <button
                   onClick={() => {
                     playSound('click');
+                    exitWorld();
                     onNavigate('speaking');
                     setSelectedLocation(null);
                   }}
@@ -1044,4 +1112,5 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
     </div>
   );
+  return immersive ? createPortal(content, document.body) : content;
 };
