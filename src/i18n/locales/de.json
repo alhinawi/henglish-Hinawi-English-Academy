@@ -2371,5 +2371,16 @@
   "qe.wrong": "Das ist nicht die richtige Antwort.",
   "qe.explanationLabel": "Erklärung auf Ägyptisch-Arabisch:",
   "qe.prevQuestion": "Vorherige Frage",
-  "qe.nextQuestion": "Nächste Frage"
+  "qe.nextQuestion": "Nächste Frage",
+  "ts.badge": "KI-Übersetzungs- und Sprachanalysestudio",
+  "ts.blurb": "Kontextübersetzung, Grammatikerklärungen, Wortanalyse und verteilte Wiederholung.",
+  "ts.assistant": "Übersetzungsassistenten fragen",
+  "ts.studio": "Übersetzung und Erklärungen",
+  "ts.main": "Hauptbereich",
+  "ts.documents": "Dokumentübersetzung (DOCX/PDF)",
+  "ts.voice": "Live-Sprachübersetzung",
+  "ts.ocr": "Bilderkennung (OCR)",
+  "ts.practice": "Übersetzungsaufgaben und Übungen",
+  "ts.vocab": "Wortschatz und Verlauf (SRS)",
+  "ts.analysisUnavailable": "Für dieses Wort liegt im aktuellen Übersetzungsergebnis keine geprüfte Analyse vor."
 }
