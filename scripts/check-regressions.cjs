@@ -15,6 +15,7 @@ const checks = [
   'check-tutor-metadata.cjs',
   'check-metadata-consumers.cjs',
   'check-writing-feedback.cjs',
+  'check-ai-availability.cjs',
   'check-pronunciation-guess.cjs',
   'check-phrase-retry.cjs',
   'check-exam-vocab-retry.cjs',
