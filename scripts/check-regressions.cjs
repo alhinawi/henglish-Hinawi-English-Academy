@@ -23,6 +23,7 @@ const checks = [
   'check-speaking-learner-state.cjs',
   'check-grammar-navigation.cjs',
   'check-grammar-missing-lesson.cjs',
+  'check-translation-request-identity.cjs',
   'check-pronunciation-playback-races.cjs',
   'check-voice-engine-races.cjs',
   'check-audio-queue-lifecycle.cjs',
