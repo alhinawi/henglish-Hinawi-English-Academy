@@ -1430,7 +1430,7 @@
   "avm.bulkSuccess": "{n} Wörter erfolgreich in die lokale Datenbank importiert!",
   "avm.bulkError": "Fehler im Datenformat:",
   "avm.title": "Verwaltung des Wortschatzbestands (Vocabulary Admin)",
-  "avm.tabStats": "Statistiken der geprüften Datenbank",
+  "avm.tabStats": "Wortbibliothek",
   "avm.tabAdd": "Neues Wort hinzufügen",
   "avm.tabBulk": "Massenimport (JSON / CSV)",
   "avm.statWords": "Geprüfte Wörter insgesamt",

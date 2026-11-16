@@ -1,6 +1,6 @@
 // ==============================================================================
 // Henglish Academy (HENGLISH) - ADMIN VOCABULARY MANAGEMENT MODAL
-// Real-time verified stats, headword authoring, and JSON/CSV bulk import
+// Loaded vocabulary counts, headword authoring, and JSON/CSV bulk import
 // ==============================================================================
 
 import React, { useState, useEffect } from 'react';
@@ -16,7 +16,7 @@ import {
   BarChart3,
   Layers,
 } from 'lucide-react';
-import { loadVocabularyManifest, VocabularyManifest, LexicalEntry, saveWord } from '../../services/vocabularyService';
+import { loadFullVocabulary, LexicalEntry, saveWord } from '../../services/vocabularyService';
 import { playSound } from '../../utils/audio';
 
 interface AdminVocabularyModalProps {
@@ -31,7 +31,8 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   onWordAdded,
 }) => {
   const { t } = useLanguage();
-  const [manifest, setManifest] = useState<VocabularyManifest | null>(null);
+  const [stats, setStats] = useState<{ words: number; audioUs: number; audioUk: number; levels: Record<string, number> } | null>(null);
+  const [statsError, setStatsError] = useState(false);
   const [activeTab, setActiveTab] = useState<'stats' | 'add' | 'bulk'>('stats');
 
   // Add form fields
@@ -52,9 +53,18 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   const [bulkOk, setBulkOk] = useState(false);
 
   useEffect(() => {
-    if (isOpen) {
-      loadVocabularyManifest().then(setManifest);
-    }
+    if (!isOpen) return;
+    let active = true;
+    setStats(null);
+    setStatsError(false);
+    loadFullVocabulary().then(words => {
+      if (!active) return;
+      const levels: Record<string, number> = {};
+      for (const word of words) levels[word.cefr] = (levels[word.cefr] || 0) + 1;
+      setStats({ words: words.length, audioUs: words.filter(w => !!w.audioUsUrl).length,
+        audioUk: words.filter(w => !!w.audioUkUrl).length, levels });
+    }).catch(() => { if (active) setStatsError(true); });
+    return () => { active = false; };
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -198,48 +208,36 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
           </button>
         </div>
 
-        {/* TAB 1: VERIFIED DATABASE STATS */}
+        {/* TAB 1: LOADED VOCABULARY STATS */}
         {activeTab === 'stats' && (
           <div className="space-y-6">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">{t('avm.statWords')}</span>
-                <div className="text-2xl font-black text-[#c4ff55]">5,000</div>
-              </div>
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">{t('avm.statPhrases')}</span>
-                <div className="text-2xl font-black text-[#ffd166]">10,000</div>
-              </div>
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">{t('avm.statAudioUs')}</span>
-                <div className="text-2xl font-black text-[#22D3EE]">37,636+</div>
-              </div>
-              <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">{t('avm.statAudioUk')}</span>
-                <div className="text-2xl font-black text-[#A78BFA]">37,223+</div>
-              </div>
-            </div>
+            {statsError ? <p role="status">{t('ev.loadError')}</p> : !stats ? <p role="status">{t('vx.loading')}</p> : (
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              {[
+                { label: t('vx.words'), value: stats.words },
+                { label: t('avm.statAudioUs'), value: stats.audioUs },
+                { label: t('avm.statAudioUk'), value: stats.audioUk },
+              ].map(item => <div key={item.label} className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
+                <span className="text-[11px] text-white/60 font-bold">{item.label}</span>
+                <div className="text-2xl font-black text-[#c4ff55]">{item.value.toLocaleString('en-US')}</div>
+              </div>)}
+            </div>)}
 
-            {manifest && (
+            {stats && (
               <div className="space-y-3">
-                <h4 className="text-xs font-black text-white/80">{t('avm.cefrDist')}</h4>
+                <h4 className="text-xs font-black text-white/80">CEFR</h4>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
-                  {Object.entries(manifest.distributionCefr).map(([lvl, count]) => (
+                  {Object.entries(stats.levels).map(([lvl, count]) => (
                     <div key={lvl} className="p-2.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                       <span className="font-bold text-white">{lvl}</span>
-                      <span className="font-mono text-[#c4ff55]">{count.toLocaleString()} {t('avm.wordUnit')}</span>
+                      <span className="font-mono text-[#c4ff55]">{count.toLocaleString('en-US')} {t('avm.wordUnit')}</span>
                     </div>
                   ))}
                 </div>
               </div>
             )}
 
-            <div className="p-4 rounded-2xl bg-[#41e7ff]/10 border border-[#41e7ff]/20 text-xs text-[#dedbf4] space-y-1">
-              <p className="font-bold text-white">{t('avm.standardsTitle')}</p>
-              <p>{t('avm.standard1')}</p>
-              <p>{t('avm.standard2')}</p>
-              <p>{t('avm.standard3')}</p>
-            </div>
+
           </div>
         )}
 
