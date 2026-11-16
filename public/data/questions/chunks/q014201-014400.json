@@ -1,0 +1,3696 @@
+[
+ {
+  "id": "q-read-016265",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Cities have more jobs, but rents are _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Living in a city has both advantages and disadvantages. There are more jobs, better hospitals and plenty of entertainment. On the other hand, rents are high, the air is polluted and the streets are often crowded and noisy. Some people prefer to live in the suburbs and travel in for work.",
+  "options": [
+   "fixed",
+   "low",
+   "high",
+   "free"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الإيجارات عالية.",
+  "topic": "Reading: City life (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016266",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What do some people prefer?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Living in a city has both advantages and disadvantages. There are more jobs, better hospitals and plenty of entertainment. On the other hand, rents are high, the air is polluted and the streets are often crowded and noisy. Some people prefer to live in the suburbs and travel in for work.",
+  "options": [
+   "Living on farms",
+   "Living in the suburbs",
+   "Living abroad",
+   "Working from home"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضواحي.",
+  "topic": "Reading: City life (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016267",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which is a disadvantage of city life?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Living in a city has both advantages and disadvantages. There are more jobs, better hospitals and plenty of entertainment. On the other hand, rents are high, the air is polluted and the streets are often crowded and noisy. Some people prefer to live in the suburbs and travel in for work.",
+  "options": [
+   "More jobs",
+   "Better hospitals",
+   "Entertainment",
+   "Polluted air"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "التلوث.",
+  "topic": "Reading: City life (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016268",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The writer says city life has only advantages.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Living in a city has both advantages and disadvantages. There are more jobs, better hospitals and plenty of entertainment. On the other hand, rents are high, the air is polluted and the streets are often crowded and noisy. Some people prefer to live in the suburbs and travel in for work.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "فيه مزايا وعيوب.",
+  "topic": "Reading: City life (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016269",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Early results suggest employees are happier and just as _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The four-day working week, once considered unrealistic, is being tested by several companies. Early results suggest that employees are happier and just as productive, since they waste less time in unnecessary meetings. Sceptics warn, however, that the model may not suit sectors such as healthcare, where continuous cover is essential.",
+  "options": [
+   "late",
+   "expensive",
+   "productive",
+   "tired"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "إنتاجيتهم نفس المستوى.",
+  "topic": "Reading: Work (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016270",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why might productivity stay high?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The four-day working week, once considered unrealistic, is being tested by several companies. Early results suggest that employees are happier and just as productive, since they waste less time in unnecessary meetings. Sceptics warn, however, that the model may not suit sectors such as healthcare, where continuous cover is essential.",
+  "options": [
+   "Tasks are easier",
+   "Less time is wasted in meetings",
+   "Salaries are higher",
+   "Workers are younger"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "وقت أقل في اجتماعات.",
+  "topic": "Reading: Work (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016271",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sector is mentioned as unsuitable?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The four-day working week, once considered unrealistic, is being tested by several companies. Early results suggest that employees are happier and just as productive, since they waste less time in unnecessary meetings. Sceptics warn, however, that the model may not suit sectors such as healthcare, where continuous cover is essential.",
+  "options": [
+   "Banking",
+   "Healthcare",
+   "Retail",
+   "Education"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الرعاية الصحية.",
+  "topic": "Reading: Work (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016272",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The idea is accepted everywhere without criticism.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The four-day working week, once considered unrealistic, is being tested by several companies. Early results suggest that employees are happier and just as productive, since they waste less time in unnecessary meetings. Sceptics warn, however, that the model may not suit sectors such as healthcare, where continuous cover is essential.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "فيه شكاكين.",
+  "topic": "Reading: Work (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016273",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "English words like 'sugar' and 'coffee' entered through _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "English has borrowed thousands of words from other languages. Words such as 'sugar', 'algebra' and 'coffee' all entered English through Arabic, often by way of Spanish or Italian. Far from weakening the language, such borrowing has enriched it, giving speakers a remarkably rich choice of vocabulary.",
+  "options": [
+   "Chinese",
+   "Latin only",
+   "Arabic",
+   "German"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "عن طريق العربية.",
+  "topic": "Reading: Language (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016274",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How does the writer view borrowing?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "English has borrowed thousands of words from other languages. Words such as 'sugar', 'algebra' and 'coffee' all entered English through Arabic, often by way of Spanish or Italian. Far from weakening the language, such borrowing has enriched it, giving speakers a remarkably rich choice of vocabulary.",
+  "options": [
+   "It has enriched English",
+   "It has harmed English",
+   "It is recent",
+   "It is rare"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أثرت اللغة.",
+  "topic": "Reading: Language (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016275",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: 'Algebra' is mentioned as an Arabic-origin word.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "English has borrowed thousands of words from other languages. Words such as 'sugar', 'algebra' and 'coffee' all entered English through Arabic, often by way of Spanish or Italian. Far from weakening the language, such borrowing has enriched it, giving speakers a remarkably rich choice of vocabulary.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص ذكرها.",
+  "topic": "Reading: Language (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016276",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "\"enriched\" is closest to",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "English has borrowed thousands of words from other languages. Words such as 'sugar', 'algebra' and 'coffee' all entered English through Arabic, often by way of Spanish or Italian. Far from weakening the language, such borrowing has enriched it, giving speakers a remarkably rich choice of vocabulary.",
+  "options": [
+   "made better",
+   "made harder",
+   "made shorter",
+   "made older"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "enriched أي أغنى وحسّن.",
+  "topic": "Reading: Language (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016277",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The architect believed buildings should _____ people first.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The architect insisted that buildings should serve people before they impress them. His design for the library therefore features large windows, quiet reading corners and wide staircases that double as seating. Although critics called it plain, visitor numbers have tripled since it opened.",
+  "options": [
+   "impress",
+   "worry",
+   "ignore",
+   "serve"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تخدم الناس.",
+  "topic": "Reading: Architecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016278",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do the staircases do?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The architect insisted that buildings should serve people before they impress them. His design for the library therefore features large windows, quiet reading corners and wide staircases that double as seating. Although critics called it plain, visitor numbers have tripled since it opened.",
+  "options": [
+   "They also work as seating",
+   "Lead to the roof only",
+   "Block light",
+   "Cost more"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: double as seating.",
+  "topic": "Reading: Architecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016279",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What has happened to visitor numbers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The architect insisted that buildings should serve people before they impress them. His design for the library therefore features large windows, quiet reading corners and wide staircases that double as seating. Although critics called it plain, visitor numbers have tripled since it opened.",
+  "options": [
+   "They have tripled",
+   "They halved",
+   "They doubled",
+   "They stayed same"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "زادوا 3 أضعاف.",
+  "topic": "Reading: Architecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016280",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: All critics loved the design.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The architect insisted that buildings should serve people before they impress them. His design for the library therefore features large windows, quiet reading corners and wide staircases that double as seating. Although critics called it plain, visitor numbers have tripled since it opened.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قالوا عنه plain.",
+  "topic": "Reading: Architecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016281",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Determinists argue every action is the _____ consequence of prior causes.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Whether free will exists has been debated for centuries. Determinists argue that every action is the inevitable consequence of prior causes, leaving no room for genuine choice. Compatibilists, by contrast, contend that freedom merely requires that we act on our own desires, even if those desires are themselves caused.",
+  "options": [
+   "inevitable",
+   "accidental",
+   "optional",
+   "rare"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "نتيجة حتمية.",
+  "topic": "Reading: Philosophy (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016282",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do compatibilists claim?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Whether free will exists has been debated for centuries. Determinists argue that every action is the inevitable consequence of prior causes, leaving no room for genuine choice. Compatibilists, by contrast, contend that freedom merely requires that we act on our own desires, even if those desires are themselves caused.",
+  "options": [
+   "Desires are random",
+   "Freedom means acting on our own desires",
+   "Free will is impossible",
+   "Causes do not exist"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الحرية = تصرف طبقا لرغباتنا.",
+  "topic": "Reading: Philosophy (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016283",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: Determinists believe in genuine choice.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Whether free will exists has been debated for centuries. Determinists argue that every action is the inevitable consequence of prior causes, leaving no room for genuine choice. Compatibilists, by contrast, contend that freedom merely requires that we act on our own desires, even if those desires are themselves caused.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيقولوا مفيش مجال لاختيار حقيقي.",
+  "topic": "Reading: Philosophy (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016284",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"contend\" in this context means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Whether free will exists has been debated for centuries. Determinists argue that every action is the inevitable consequence of prior causes, leaving no room for genuine choice. Compatibilists, by contrast, contend that freedom merely requires that we act on our own desires, even if those desires are themselves caused.",
+  "options": [
+   "contain",
+   "fight",
+   "avoid",
+   "argue"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "contend هنا أي يجادل.",
+  "topic": "Reading: Philosophy (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016285",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The principle protects individuals from the _____ power of the state.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The principle that a person is innocent until proven guilty protects individuals from the immense power of the state. Without it, the burden would fall on the accused to demonstrate that they did not commit a crime, a task that is frequently impossible. It is therefore regarded as a cornerstone of just legal systems.",
+  "options": [
+   "weak",
+   "hidden",
+   "immense",
+   "tiny"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "سلطة ضخمة.",
+  "topic": "Reading: Law (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016286",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Without the principle, who would need to prove innocence?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The principle that a person is innocent until proven guilty protects individuals from the immense power of the state. Without it, the burden would fall on the accused to demonstrate that they did not commit a crime, a task that is frequently impossible. It is therefore regarded as a cornerstone of just legal systems.",
+  "options": [
+   "The witness",
+   "The judge",
+   "The accused",
+   "The police"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المتهم.",
+  "topic": "Reading: Law (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016287",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"cornerstone\" means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The principle that a person is innocent until proven guilty protects individuals from the immense power of the state. Without it, the burden would fall on the accused to demonstrate that they did not commit a crime, a task that is frequently impossible. It is therefore regarded as a cornerstone of just legal systems.",
+  "options": [
+   "punishment",
+   "small detail",
+   "essential foundation",
+   "old law"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "حجر الأساس.",
+  "topic": "Reading: Law (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016288",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The writer says the burden of proof on the accused would be easy.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The principle that a person is innocent until proven guilty protects individuals from the immense power of the state. Without it, the burden would fall on the accused to demonstrate that they did not commit a crime, a task that is frequently impossible. It is therefore regarded as a cornerstone of just legal systems.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غالبا مستحيل.",
+  "topic": "Reading: Law (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016289",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Her blurred forms appear to be a _____ vocabulary.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It is tempting to read the painter's late works as the product of failing eyesight, yet this explanation, however popular, sits uneasily with the deliberate sophistication of her compositions. The blurring of forms, rather than being an involuntary symptom, appears to be a chosen vocabulary, one she exploited with increasing assurance.",
+  "options": [
+   "chosen",
+   "forced",
+   "random",
+   "borrowed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "اختيار متعمد.",
+  "topic": "Reading: Art (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016290",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the writer doubt?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It is tempting to read the painter's late works as the product of failing eyesight, yet this explanation, however popular, sits uneasily with the deliberate sophistication of her compositions. The blurring of forms, rather than being an involuntary symptom, appears to be a chosen vocabulary, one she exploited with increasing assurance.",
+  "options": [
+   "That failing eyesight explains her late works",
+   "That she was popular",
+   "That the paintings are late",
+   "That she was a painter"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بيشكك في تفسير ضعف النظر.",
+  "topic": "Reading: Art (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016291",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "\"involuntary\" means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It is tempting to read the painter's late works as the product of failing eyesight, yet this explanation, however popular, sits uneasily with the deliberate sophistication of her compositions. The blurring of forms, rather than being an involuntary symptom, appears to be a chosen vocabulary, one she exploited with increasing assurance.",
+  "options": [
+   "highly skilled",
+   "carefully planned",
+   "not controlled by choice",
+   "very quick"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "involuntary لا إرادي.",
+  "topic": "Reading: Art (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016292",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The writer believes the style was deliberate.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "It is tempting to read the painter's late works as the product of failing eyesight, yet this explanation, however popular, sits uneasily with the deliberate sophistication of her compositions. The blurring of forms, rather than being an involuntary symptom, appears to be a chosen vocabulary, one she exploited with increasing assurance.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: deliberate sophistication.",
+  "topic": "Reading: Art (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016293",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The coalition has survived through mutual _____ rather than shared conviction.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The coalition's survival has depended less on shared conviction than on mutual fear: each partner calculates that an early election would cost it more seats than the compromises it currently tolerates. Such arrangements can prove surprisingly durable, though they rarely produce bold legislation.",
+  "options": [
+   "fear",
+   "trust",
+   "affection",
+   "pride"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "خوف متبادل.",
+  "topic": "Reading: Politics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016294",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why do partners tolerate compromise?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The coalition's survival has depended less on shared conviction than on mutual fear: each partner calculates that an early election would cost it more seats than the compromises it currently tolerates. Such arrangements can prove surprisingly durable, though they rarely produce bold legislation.",
+  "options": [
+   "They love each other",
+   "An early election would cost them seats",
+   "The voters demand it",
+   "The law forces them"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الانتخابات المبكرة هتخسرهم.",
+  "topic": "Reading: Politics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016295",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What do such coalitions rarely produce?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The coalition's survival has depended less on shared conviction than on mutual fear: each partner calculates that an early election would cost it more seats than the compromises it currently tolerates. Such arrangements can prove surprisingly durable, though they rarely produce bold legislation.",
+  "options": [
+   "Bold legislation",
+   "Elections",
+   "Stability",
+   "Compromise"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "نادرا ما ينتجوا تشريعات جريئة.",
+  "topic": "Reading: Politics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016296",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The writer says the coalition is held by shared conviction.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The coalition's survival has depended less on shared conviction than on mutual fear: each partner calculates that an early election would cost it more seats than the compromises it currently tolerates. Such arrangements can prove surprisingly durable, though they rarely produce bold legislation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: less on shared conviction.",
+  "topic": "Reading: Politics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016297",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Karim is _____ years old.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hi, I'm Karim. I'm eleven years old. I have a brother named Adam.",
+  "options": [
+   "nine",
+   "ten",
+   "eleven",
+   "twelve"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "قال \"I'm eleven\".",
+  "topic": "Listening: Name (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016298",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What is his brother's name?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hi, I'm Karim. I'm eleven years old. I have a brother named Adam.",
+  "options": [
+   "Hady",
+   "Ali",
+   "Omar",
+   "Adam"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "اسم أخوه Adam.",
+  "topic": "Listening: Name (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016299",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker has two _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I have two fish and one bird. I do not have a cat. My bird is green.",
+  "options": [
+   "fish",
+   "birds",
+   "dogs",
+   "cats"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "عنده سمكتين.",
+  "topic": "Listening: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016300",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: The speaker has a cat.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I have two fish and one bird. I do not have a cat. My bird is green.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"I do not have a cat\".",
+  "topic": "Listening: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016301",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker eats lunch at _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I eat lunch at school at twelve. I have a sandwich and an apple.",
+  "options": [
+   "one",
+   "twelve",
+   "two",
+   "eleven"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الساعة 12.",
+  "topic": "Listening: Lunch (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016302",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does the speaker eat?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I eat lunch at school at twelve. I have a sandwich and an apple.",
+  "options": [
+   "Pizza",
+   "Soup and bread",
+   "A sandwich and an apple",
+   "Rice and fish"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ساندويتش وتفاحة.",
+  "topic": "Listening: Lunch (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016303",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shop is on the _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The shop is on the left. The school is on the right. The park is straight ahead.",
+  "options": [
+   "right",
+   "left",
+   "corner",
+   "bridge"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الشمال.",
+  "topic": "Listening: Street (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016304",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What is straight ahead?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The shop is on the left. The school is on the right. The park is straight ahead.",
+  "options": [
+   "The shop",
+   "The mosque",
+   "The park",
+   "The school"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الحديقة قدامك.",
+  "topic": "Listening: Street (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016305",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker wakes up at _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I wake up at six. I wash my face. I eat breakfast at half past six.",
+  "options": [
+   "six",
+   "eight",
+   "five",
+   "seven"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الساعة 6.",
+  "topic": "Listening: Morning (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016306",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "When does the speaker eat breakfast?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I wake up at six. I wash my face. I eat breakfast at half past six.",
+  "options": [
+   "At half past six",
+   "At seven",
+   "At eight",
+   "At six"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 6:30.",
+  "topic": "Listening: Morning (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016307",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Bananas are _____ pounds.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Apples are two pounds. Bananas are three pounds. Oranges are four pounds.",
+  "options": [
+   "four",
+   "three",
+   "two",
+   "five"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الموز بتلاتة.",
+  "topic": "Listening: Fruit (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016308",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which fruit is the cheapest?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Apples are two pounds. Bananas are three pounds. Oranges are four pounds.",
+  "options": [
+   "Grapes",
+   "Oranges",
+   "Apples",
+   "Bananas"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "التفاح أرخص (جنيهين).",
+  "topic": "Listening: Fruit (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016309",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There are twenty _____ in the classroom.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "This is my classroom. There are twenty desks and one board. There is a map on the wall.",
+  "options": [
+   "boards",
+   "desks",
+   "chairs",
+   "books"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "عشرين مكتب.",
+  "topic": "Listening: Class (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016310",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: There is a map on the wall.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "This is my classroom. There are twenty desks and one board. There is a map on the wall.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "فيه خريطة على الحيطة.",
+  "topic": "Listening: Class (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016311",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "On Sunday, they visit the speaker's _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "On Sunday, we visit my grandmother. She cooks fish. We love her cooking.",
+  "options": [
+   "friend",
+   "teacher",
+   "uncle",
+   "grandmother"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "جدته.",
+  "topic": "Listening: Sunday (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016312",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does she cook?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "On Sunday, we visit my grandmother. She cooks fish. We love her cooking.",
+  "options": [
+   "Rice",
+   "Chicken",
+   "Meat",
+   "Fish"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "سمك.",
+  "topic": "Listening: Sunday (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016313",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker asks you to call after _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "My phone number is zero one one, two two three, four four five. Please call me after six.",
+  "options": [
+   "six",
+   "eight",
+   "seven",
+   "five"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد الساعة 6.",
+  "topic": "Listening: Phone (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016314",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: He asks you to call before six.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "My phone number is zero one one, two two three, four four five. Please call me after six.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد.",
+  "topic": "Listening: Phone (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016315",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker's sister likes _____ music.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I like pop music. My sister likes rock music. We listen to music in the car.",
+  "options": [
+   "classical",
+   "rock",
+   "pop",
+   "jazz"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأخت بتحب روك.",
+  "topic": "Listening: Music (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016316",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where do they listen to music?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I like pop music. My sister likes rock music. We listen to music in the car.",
+  "options": [
+   "In the car",
+   "In the park",
+   "At school",
+   "At the club"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في العربية.",
+  "topic": "Listening: Music (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016317",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The party starts at _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Would you like to come to my birthday party on Friday? It starts at four at my house. There will be a cake and games.",
+  "options": [
+   "five",
+   "three",
+   "four",
+   "six"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الساعة 4.",
+  "topic": "Listening: Invitation (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016318",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where is the party?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Would you like to come to my birthday party on Friday? It starts at four at my house. There will be a cake and games.",
+  "options": [
+   "At a restaurant",
+   "At the speaker's house",
+   "At a club",
+   "At school"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في بيته.",
+  "topic": "Listening: Invitation (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016319",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The shop only has the blue shirt in _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Can I help you? Yes, I'm looking for a blue shirt in medium. I'm afraid we only have large in blue, but we have medium in green.",
+  "options": [
+   "large",
+   "medium",
+   "small",
+   "extra large"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "large بس.",
+  "topic": "Listening: Shop (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016320",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does the shop have in medium?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Can I help you? Yes, I'm looking for a blue shirt in medium. I'm afraid we only have large in blue, but we have medium in green.",
+  "options": [
+   "A blue shirt",
+   "A black shirt",
+   "A green shirt",
+   "A red shirt"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أخضر.",
+  "topic": "Listening: Shop (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016321",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The train takes about _____ hours.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The train from Cairo to Aswan takes about thirteen hours. The sleeper train leaves at eight in the evening and arrives the next morning.",
+  "options": [
+   "fifteen",
+   "three",
+   "thirteen",
+   "thirty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "13 ساعة.",
+  "topic": "Listening: Journey (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016322",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When does the sleeper train leave?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The train from Cairo to Aswan takes about thirteen hours. The sleeper train leaves at eight in the evening and arrives the next morning.",
+  "options": [
+   "At eight in the morning",
+   "At eight in the evening",
+   "At midnight",
+   "At noon"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "8 مساء.",
+  "topic": "Listening: Journey (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016323",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The patient has twisted his _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Does it hurt here? Yes, a little. You have twisted your ankle. Rest it for a week and don't play football.",
+  "options": [
+   "wrist",
+   "knee",
+   "arm",
+   "ankle"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكاحل.",
+  "topic": "Listening: Doctor (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016324",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What must he avoid?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Does it hurt here? Yes, a little. You have twisted your ankle. Rest it for a week and don't play football.",
+  "options": [
+   "Playing football",
+   "Eating",
+   "Sleeping",
+   "Walking"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ممنوع كورة.",
+  "topic": "Listening: Doctor (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016325",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Members can borrow up to _____ books.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "You can borrow up to three books for two weeks. If you return them late, you will pay five pounds a day.",
+  "options": [
+   "ten",
+   "two",
+   "three",
+   "five"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "تلات كتب.",
+  "topic": "Listening: Library (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016326",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What is the late fee?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "You can borrow up to three books for two weeks. If you return them late, you will pay five pounds a day.",
+  "options": [
+   "One pound",
+   "Five pounds a day",
+   "Nothing",
+   "Ten pounds"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "5 جنيه في اليوم.",
+  "topic": "Listening: Library (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016327",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The customer orders grilled _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd like the grilled fish with rice, please. And to drink? Just water, thanks. Would you like dessert? No, thank you. Just the bill.",
+  "options": [
+   "vegetables",
+   "chicken",
+   "meat",
+   "fish"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "سمك مشوي.",
+  "topic": "Listening: Restaurant (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016328",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The customer orders dessert.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I'd like the grilled fish with rice, please. And to drink? Just water, thanks. Would you like dessert? No, thank you. Just the bill.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قال No, thank you.",
+  "topic": "Listening: Restaurant (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016329",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The meeting started at ten _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The meeting was supposed to start at ten, but it began at ten forty-five because the manager was stuck in traffic.",
+  "options": [
+   "fifty",
+   "fifteen",
+   "forty-five",
+   "thirty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: 10:45.",
+  "topic": "Listening: Time (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016330",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why was it late?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The meeting was supposed to start at ten, but it began at ten forty-five because the manager was stuck in traffic.",
+  "options": [
+   "The staff was sick",
+   "The room was closed",
+   "The manager was in traffic",
+   "It rained"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المدير في زحمة.",
+  "topic": "Listening: Time (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016331",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Ahmed scored _____ goals.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Our team won the match three to one. Ahmed scored two goals and Tamer scored one. We're going to celebrate with pizza.",
+  "options": [
+   "one",
+   "two",
+   "four",
+   "three"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "جولين.",
+  "topic": "Listening: Sports (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016332",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How will they celebrate?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Our team won the match three to one. Ahmed scored two goals and Tamer scored one. We're going to celebrate with pizza.",
+  "options": [
+   "With a film",
+   "With a trip",
+   "With pizza",
+   "With a cake"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بيتزا.",
+  "topic": "Listening: Sports (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016333",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Breakfast is served from seven to _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Your room is on the fifth floor, number five-oh-six. Breakfast is served from seven to ten in the restaurant.",
+  "options": [
+   "nine",
+   "ten",
+   "eleven",
+   "twelve"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "من 7 لـ 10.",
+  "topic": "Listening: Hotel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016334",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which floor is the room on?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Your room is on the fifth floor, number five-oh-six. Breakfast is served from seven to ten in the restaurant.",
+  "options": [
+   "The sixth floor",
+   "The tenth floor",
+   "The fifth floor",
+   "The first floor"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الخامس.",
+  "topic": "Listening: Hotel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016335",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The speaker has to finish a _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'll be late tonight. I have to finish a report at work. Please don't wait for me. There's food in the fridge.",
+  "options": [
+   "report",
+   "game",
+   "meal",
+   "lesson"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تقرير.",
+  "topic": "Listening: Message (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016336",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The speaker wants you to wait.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I'll be late tonight. I have to finish a report at work. Please don't wait for me. There's food in the fridge.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"Please don't wait\".",
+  "topic": "Listening: Message (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016337",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Temperatures will reach _____ degrees.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Tomorrow will be hot and dry, with temperatures reaching thirty-eight degrees. Don't forget your sun hat and water.",
+  "options": [
+   "thirty-eight",
+   "eighteen",
+   "forty-eight",
+   "thirty-three"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 38.",
+  "topic": "Listening: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016338",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What should you not forget?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Tomorrow will be hot and dry, with temperatures reaching thirty-eight degrees. Don't forget your sun hat and water.",
+  "options": [
+   "A coat",
+   "An umbrella",
+   "A scarf",
+   "A sun hat and water"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "قبعة ومية.",
+  "topic": "Listening: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016339",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Cook the rice for _____ minutes.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "First, wash the rice. Then cook it for fifteen minutes. Finally, add the chicken and a little salt.",
+  "options": [
+   "fifteen",
+   "fifty",
+   "five",
+   "thirty"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 15.",
+  "topic": "Listening: Recipe (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016340",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What do you add last?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "First, wash the rice. Then cook it for fifteen minutes. Finally, add the chicken and a little salt.",
+  "options": [
+   "Water",
+   "Oil",
+   "Chicken and salt",
+   "Rice"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الآخر.",
+  "topic": "Listening: Recipe (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016341",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The speaker is applying for _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've been thinking about studying abroad next year. The problem is that tuition fees are extremely high, so I'm applying for scholarships.",
+  "options": [
+   "jobs",
+   "scholarships",
+   "loans",
+   "visas"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "منح.",
+  "topic": "Listening: Plans (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016342",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is the problem?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've been thinking about studying abroad next year. The problem is that tuition fees are extremely high, so I'm applying for scholarships.",
+  "options": [
+   "The distance",
+   "Tuition fees are high",
+   "The language",
+   "The weather"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المصاريف عالية.",
+  "topic": "Listening: Plans (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016343",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "To track your delivery, press _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Thank you for calling. If you have a problem with your order, press one. If you want to track your delivery, press two.",
+  "options": [
+   "two",
+   "zero",
+   "one",
+   "three"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "اتنين.",
+  "topic": "Listening: Customer service (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016344",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does pressing one do?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Thank you for calling. If you have a problem with your order, press one. If you want to track your delivery, press two.",
+  "options": [
+   "Track delivery",
+   "Speak to sales",
+   "Cancel",
+   "Report a problem with an order"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "مشكلة في الطلب.",
+  "topic": "Listening: Customer service (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016345",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The speaker hates _____ up.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I don't mind cooking, but I really hate washing up. That's why we bought a dishwasher last year.",
+  "options": [
+   "setting",
+   "cleaning",
+   "cooking",
+   "washing"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "غسيل الأطباق.",
+  "topic": "Listening: Opinion (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016346",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What did they buy?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I don't mind cooking, but I really hate washing up. That's why we bought a dishwasher last year.",
+  "options": [
+   "A washing machine",
+   "A dishwasher",
+   "A cooker",
+   "A fridge"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غسالة أطباق.",
+  "topic": "Listening: Opinion (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016347",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The band played for _____ hours.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've never been to a concert before, so I was really excited. The band played for two hours, and the atmosphere was amazing.",
+  "options": [
+   "three",
+   "one",
+   "four",
+   "two"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ساعتين.",
+  "topic": "Listening: Experience (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016348",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The speaker has been to many concerts.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I've never been to a concert before, so I was really excited. The band played for two hours, and the atmosphere was amazing.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"never been to a concert before\".",
+  "topic": "Listening: Experience (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016349",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The speaker advises the listener to _____ for the job.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "If I were you, I'd apply for the job. You have the right experience, and the worst they can say is no.",
+  "options": [
+   "apply",
+   "pay",
+   "train",
+   "wait"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "يقدم.",
+  "topic": "Listening: Advice (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016350",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why does the speaker give this advice?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "If I were you, I'd apply for the job. You have the right experience, and the worst they can say is no.",
+  "options": [
+   "The job pays well",
+   "It is close",
+   "The listener is bored",
+   "The listener has the right experience"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "عنده خبرة.",
+  "topic": "Listening: Advice (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016351",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Sales rose by _____ percent.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Sales rose by ten percent in the first quarter, but they fell slightly in the second quarter because of the summer holidays.",
+  "options": [
+   "twenty",
+   "two",
+   "fifty",
+   "ten"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: 10%.",
+  "topic": "Listening: Report (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016352",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why did sales fall later?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Sales rose by ten percent in the first quarter, but they fell slightly in the second quarter because of the summer holidays.",
+  "options": [
+   "Higher prices",
+   "A strike",
+   "Bad products",
+   "Summer holidays"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الإجازة الصيفية.",
+  "topic": "Listening: Report (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016353",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Take one tablet in the morning and one in the _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Before you take this medicine, read the leaflet carefully. Take one tablet in the morning and one in the evening with water.",
+  "options": [
+   "night only",
+   "noon",
+   "afternoon",
+   "evening"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "مساء.",
+  "topic": "Listening: Instructions (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016354",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What should you take it with?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Before you take this medicine, read the leaflet carefully. Take one tablet in the morning and one in the evening with water.",
+  "options": [
+   "Juice",
+   "Food only",
+   "Milk",
+   "Water"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "مية.",
+  "topic": "Listening: Instructions (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016355",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They missed the last _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Our plane was supposed to land at five, but it was an hour late, so we missed the last bus into town and had to take a taxi.",
+  "options": [
+   "plane",
+   "bus",
+   "train",
+   "taxi"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأتوبيس الأخير.",
+  "topic": "Listening: Travel (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016356",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How did they get to town?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Our plane was supposed to land at five, but it was an hour late, so we missed the last bus into town and had to take a taxi.",
+  "options": [
+   "By train",
+   "On foot",
+   "By bus",
+   "By taxi"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تاكسي.",
+  "topic": "Listening: Travel (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016357",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The speaker is worried it will affect his _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm thinking of getting a part-time job at the weekend, but I'm worried it will affect my studies.",
+  "options": [
+   "family",
+   "money",
+   "studies",
+   "health"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "دراسته.",
+  "topic": "Listening: Chat (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016358",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What job does he want?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm thinking of getting a part-time job at the weekend, but I'm worried it will affect my studies.",
+  "options": [
+   "A summer job",
+   "A part-time job",
+   "No job",
+   "A full-time job"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "جزئي.",
+  "topic": "Listening: Chat (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016359",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The service was a bit _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The food was delicious, though the service was a bit slow. We waited twenty minutes for our drinks, but the manager apologised.",
+  "options": [
+   "cheap",
+   "rude",
+   "slow",
+   "fast"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بطيء.",
+  "topic": "Listening: Review (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016360",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The manager did not apologise.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The food was delicious, though the service was a bit slow. We waited twenty minutes for our drinks, but the manager apologised.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "اعتذر.",
+  "topic": "Listening: Review (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016361",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Unemployment is at its lowest level in a _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Unemployment has fallen to its lowest level in a decade, although economists warn that many of the new jobs are temporary or part-time.",
+  "options": [
+   "century",
+   "month",
+   "year",
+   "decade"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "عشر سنين.",
+  "topic": "Listening: Radio (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016362",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do economists warn?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Unemployment has fallen to its lowest level in a decade, although economists warn that many of the new jobs are temporary or part-time.",
+  "options": [
+   "Many new jobs are temporary",
+   "Jobs are permanent",
+   "Unemployment will vanish",
+   "Salaries have doubled"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مؤقتة.",
+  "topic": "Listening: Radio (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016363",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The speaker realised that outsiders often _____ the community's priorities.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The more time I spent with the community, the more I realised that outsiders often misunderstand their priorities.",
+  "options": [
+   "fund",
+   "share",
+   "misunderstand",
+   "copy"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بيسيئوا فهم.",
+  "topic": "Listening: Talk (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016364",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The speaker believes outsiders understand everything.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The more time I spent with the community, the more I realised that outsiders often misunderstand their priorities.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "عكس ذلك.",
+  "topic": "Listening: Talk (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016365",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Producing batteries has a considerable _____ cost.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Admittedly, electric cars are cleaner to run, but producing their batteries has a considerable environmental cost, which supporters rarely mention.",
+  "options": [
+   "medical",
+   "environmental",
+   "legal",
+   "financial"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيئية.",
+  "topic": "Listening: Debate (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016366",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do supporters rarely mention?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Admittedly, electric cars are cleaner to run, but producing their batteries has a considerable environmental cost, which supporters rarely mention.",
+  "options": [
+   "The cost of battery production",
+   "Running costs",
+   "Speed",
+   "Design"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تصنيع البطاريات.",
+  "topic": "Listening: Debate (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016367",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Consistent _____ matters more than talent.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd always assumed that talent was enough, but my coach taught me that consistent practice matters far more.",
+  "options": [
+   "speed",
+   "luck",
+   "money",
+   "practice"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "التمرين.",
+  "topic": "Listening: Interview (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016368",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What had the speaker assumed?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd always assumed that talent was enough, but my coach taught me that consistent practice matters far more.",
+  "options": [
+   "That money mattered",
+   "That talent was enough",
+   "That coaching was useless",
+   "That luck decided"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "افتكر الموهبة كفاية.",
+  "topic": "Listening: Interview (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016369",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The company will cut _____ jobs.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The company has announced that it will cut two hundred jobs over the next year, blaming rising costs and weak demand.",
+  "options": [
+   "one hundred",
+   "two thousand",
+   "two hundred",
+   "twenty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: 200.",
+  "topic": "Listening: News (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016370",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does the company blame?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The company has announced that it will cut two hundred jobs over the next year, blaming rising costs and weak demand.",
+  "options": [
+   "A fire",
+   "Competitors only",
+   "A strike",
+   "Rising costs and weak demand"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "التكاليف والطلب الضعيف.",
+  "topic": "Listening: News (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016371",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Memory is _____ each time we recall an event.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Although memory feels like a recording of the past, it is in fact reconstructed each time we recall an event, which is why eyewitness accounts can be unreliable.",
+  "options": [
+   "deleted",
+   "reconstructed",
+   "recorded",
+   "copied"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بتتعاد بناؤها.",
+  "topic": "Listening: Lecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016372",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why can eyewitnesses be unreliable?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Although memory feels like a recording of the past, it is in fact reconstructed each time we recall an event, which is why eyewitness accounts can be unreliable.",
+  "options": [
+   "They lie",
+   "They are tired",
+   "Memory is reconstructed",
+   "They are paid"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بتتعاد بناؤها.",
+  "topic": "Listening: Lecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016373",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The car park will be closed owing to _____ work.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Owing to maintenance work, the car park will be closed from Monday to Wednesday. Staff are advised to use the side entrance.",
+  "options": [
+   "cleaning only",
+   "maintenance",
+   "building",
+   "security"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "صيانة.",
+  "topic": "Listening: Announcement (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016374",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The car park closes on Thursday.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "Owing to maintenance work, the car park will be closed from Monday to Wednesday. Staff are advised to use the side entrance.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "من الاتنين للأربع.",
+  "topic": "Listening: Announcement (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016375",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The pace of change seems _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm not opposed to change as such, but the pace at which they are introducing it seems reckless, given how little consultation has taken place.",
+  "options": [
+   "careful",
+   "modest",
+   "slow",
+   "reckless"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "متهورة.",
+  "topic": "Listening: Opinion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016376",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the speaker's concern?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm not opposed to change as such, but the pace at which they are introducing it seems reckless, given how little consultation has taken place.",
+  "options": [
+   "Cost",
+   "Language",
+   "Weather",
+   "Little consultation"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "قلة التشاور.",
+  "topic": "Listening: Opinion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016377",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "No _____ link could be inferred.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The researchers acknowledged that their findings were, strictly speaking, correlational, and that no causal link could be inferred without further experimentation.",
+  "options": [
+   "social",
+   "legal",
+   "random",
+   "causal"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "سببية.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016378",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What kind of findings were they?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The researchers acknowledged that their findings were, strictly speaking, correlational, and that no causal link could be inferred without further experimentation.",
+  "options": [
+   "Fictional",
+   "Correlational",
+   "Medical",
+   "Conclusive"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ارتباطية.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016379",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The new road has _____ congestion.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Far from alleviating congestion, the new ring road has merely redirected it, so that formerly quiet residential streets now carry heavy traffic.",
+  "options": [
+   "ignored",
+   "caused",
+   "removed",
+   "redirected"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حولت الزحام.",
+  "topic": "Listening: Radio (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016380",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The ring road solved congestion.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "Far from alleviating congestion, the new ring road has merely redirected it, so that formerly quiet residential streets now carry heavy traffic.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: far from alleviating.",
+  "topic": "Listening: Radio (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016381",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The speaker does not _____ accepting the role.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Had I known how demanding the role would be, I might well have hesitated, though I certainly don't regret accepting it.",
+  "options": [
+   "hide",
+   "explain",
+   "enjoy",
+   "regret"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "مش ندمان.",
+  "topic": "Listening: Interview (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016382",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What was the role like?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Had I known how demanding the role would be, I might well have hesitated, though I certainly don't regret accepting it.",
+  "options": [
+   "Boring",
+   "Short",
+   "Easy",
+   "More demanding than expected"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "متطلبة.",
+  "topic": "Listening: Interview (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016383",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The decline of the village was _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The decline of the village was gradual rather than abrupt: each year a few more families departed, until the school finally closed.",
+  "options": [
+   "sudden",
+   "imaginary",
+   "gradual",
+   "small"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "تدريجي.",
+  "topic": "Listening: Lecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016384",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What marked the final stage?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The decline of the village was gradual rather than abrupt: each year a few more families departed, until the school finally closed.",
+  "options": [
+   "A new road",
+   "The school closed",
+   "A flood",
+   "A fire"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قفلت المدرسة.",
+  "topic": "Listening: Lecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016385",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Automation increases _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "While nobody denies that automation increases efficiency, it is far from clear that the displaced workers will find equally rewarding jobs elsewhere.",
+  "options": [
+   "unemployment",
+   "noise",
+   "efficiency",
+   "wages"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكفاءة.",
+  "topic": "Listening: Debate (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016386",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is unclear?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "While nobody denies that automation increases efficiency, it is far from clear that the displaced workers will find equally rewarding jobs elsewhere.",
+  "options": [
+   "Who pays",
+   "Whether displaced workers will find equally good jobs",
+   "When it started",
+   "Whether automation works"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غير واضح.",
+  "topic": "Listening: Debate (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016387",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She rose to prominence through a steady _____ of small successes.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "She rose to prominence not through any single achievement, but through a steady accumulation of small successes that eventually became impossible to ignore.",
+  "options": [
+   "prize",
+   "list",
+   "loss",
+   "accumulation"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تراكم.",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016388",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: She became famous after one major achievement.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "She rose to prominence not through any single achievement, but through a steady accumulation of small successes that eventually became impossible to ignore.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مش بإنجاز واحد.",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016389",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Early indications point to an _____ fault.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Investigators have yet to establish the cause of the fire, though early indications point to an electrical fault in the basement.",
+  "options": [
+   "human",
+   "electrical",
+   "engine",
+   "structural"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "كهربائي.",
+  "topic": "Listening: News (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016390",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Has the cause been established?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Investigators have yet to establish the cause of the fire, though early indications point to an electrical fault in the basement.",
+  "options": [
+   "It is unnecessary",
+   "Not yet",
+   "It was arson",
+   "Yes"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لسه.",
+  "topic": "Listening: News (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016391",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The novel's _____ subject is a family feud.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The novel's ostensible subject is a family feud, but the true concern, discernible only on rereading, is the corrosive effect of secrecy.",
+  "options": [
+   "real",
+   "hidden",
+   "dull",
+   "ostensible"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظاهري.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016392",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the true concern?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The novel's ostensible subject is a family feud, but the true concern, discernible only on rereading, is the corrosive effect of secrecy.",
+  "options": [
+   "Wealth",
+   "War",
+   "The corrosive effect of secrecy",
+   "Family feuds"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أثر السرية.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016393",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The speaker _____ grand gestures.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've never been one for grand gestures; if anything, I distrust them, since sincerity tends to be quieter than showmanship.",
+  "options": [
+   "plans",
+   "distrusts",
+   "needs",
+   "loves"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيتشكك.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016394",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The speaker thinks sincerity is loud.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I've never been one for grand gestures; if anything, I distrust them, since sincerity tends to be quieter than showmanship.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: quieter.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016395",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The recommendations are _____ independent.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The committee's recommendations, while nominally independent, bear a striking resemblance to the government's own preferences, which raises questions about how impartial the process really was.",
+  "options": [
+   "nominally",
+   "barely",
+   "never",
+   "truly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "اسميا.",
+  "topic": "Listening: Seminar (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016396",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the resemblance raise?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The committee's recommendations, while nominally independent, bear a striking resemblance to the government's own preferences, which raises questions about how impartial the process really was.",
+  "options": [
+   "Praise",
+   "Deadlines",
+   "Questions about impartiality",
+   "Costs"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أسئلة عن الحياد.",
+  "topic": "Listening: Seminar (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016397",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The scheme has widened _____ to higher education.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Whatever its shortcomings, the scheme has undeniably widened access to higher education, a fact its fiercest critics are reluctant to acknowledge.",
+  "options": [
+   "costs",
+   "delay",
+   "access",
+   "fees"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "فرصة.",
+  "topic": "Listening: Radio (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016398",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The critics readily acknowledge the benefit.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "Whatever its shortcomings, the scheme has undeniably widened access to higher education, a fact its fiercest critics are reluctant to acknowledge.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مترددين.",
+  "topic": "Listening: Radio (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016399",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It would be _____ to pretend the outcome was unforeseeable.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It would be disingenuous to pretend that the outcome was unforeseeable; the warning signs were there for anyone willing to look.",
+  "options": [
+   "wise",
+   "fair",
+   "disingenuous",
+   "honest"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "غير صادق.",
+  "topic": "Listening: Talk (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016400",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the speaker say about the warning signs?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It would be disingenuous to pretend that the outcome was unforeseeable; the warning signs were there for anyone willing to look.",
+  "options": [
+   "They were late",
+   "They were false",
+   "They were visible",
+   "They were hidden"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "كانت ظاهرة.",
+  "topic": "Listening: Talk (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-usag-014601",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which phrase is informal (register: formal vs informal)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "somewhat",
+   "slightly",
+   "marginally",
+   "a bit"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a bit عامية نسبيًا.",
+  "topic": "Usage: register: formal vs informal (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014602",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence avoids contractions (formal) (register: formal vs informal)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It is not possible to attend.",
+   "It isn't possible to attend.",
+   "It's not possible to attend.",
+   "It ain't possible to attend."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بدون اختصارات.",
+  "topic": "Usage: register: formal vs informal (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014603",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which is correct for a formal email (register: formal vs informal)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Here's the report, attached.",
+   "Please find attached the report.",
+   "Attached is the thingy.",
+   "The report is stuck on."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: please find attached.",
+  "topic": "Usage: register: formal vs informal (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014604",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The ship will _____ at dawn.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sale",
+   "sell",
+   "sail",
+   "sael"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "sail = يبحر.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014605",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The shop has a _____ on shoes today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sail",
+   "sell",
+   "sael",
+   "sale"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "sale = تخفيضات.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014606",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I can't _____ the sound of that.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bear",
+   "bare",
+   "beer",
+   "bair"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "bear = يتحمل.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014607",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The _____ walls were white.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bear",
+   "bare",
+   "bair",
+   "beir"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "bare = عاري.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014608",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She has a _____ of keys.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sit",
+   "sat",
+   "set",
+   "seat"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "set = مجموعة.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014609",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The _____ is cold in winter.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "whether",
+   "wether",
+   "wheather",
+   "weather"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: weather.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014610",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I haven't decided _____ to go.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "whether",
+   "weather",
+   "wether",
+   "whither"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: whether.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014611",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "He _____ the letter yesterday.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "right",
+   "wrote",
+   "rote",
+   "writ"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "wrote = كتب.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014612",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Turn _____ at the corner.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "write",
+   "rite",
+   "right",
+   "wright"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "right = يمين.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014613",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The _____ of the story is clear.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "morale",
+   "mural",
+   "mortal",
+   "moral"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "moral = عبرة.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014614",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The team's _____ was low after the defeat.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "morale",
+   "moral",
+   "mural",
+   "mortal"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "morale = معنويات.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014615",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The _____ asked him to sit down.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "principle",
+   "principal",
+   "principel",
+   "princepal"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "principal = ناظر.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014616",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "I will _____ you at the station.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "meat",
+   "mete",
+   "meet",
+   "mit"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "meet = يقابل.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014617",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "She is going to _____ a letter.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "right",
+   "rite",
+   "wright",
+   "write"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "write = يكتب.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014618",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The _____ of the building is old.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "foundation",
+   "foundition",
+   "fundation",
+   "foundatoin"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: foundation.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014619",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "acommodation",
+   "accommodation",
+   "accomodation",
+   "acomodation"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: double c, double m.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014620",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "neccessary",
+   "necesary",
+   "necessary",
+   "necessery"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: one c two s.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014621",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "definately",
+   "definitly",
+   "defanitely",
+   "definitely"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: definitely.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014622",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "occurrence",
+   "occurence",
+   "ocurrence",
+   "occurrance"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: double c double r.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014623",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "seperate",
+   "separate",
+   "separete",
+   "seprate"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: sep-a-rate.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014624",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "embarass",
+   "embarrasse",
+   "embarrass",
+   "embarras"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: double r double s.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014625",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "recieve",
+   "receeve",
+   "receve",
+   "receive"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: i before e except after c.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014626",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "environment",
+   "enviroment",
+   "envirenment",
+   "enviorment"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: environment.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014627",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "goverment",
+   "government",
+   "govenment",
+   "governmant"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "government = فيها n قبل m.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014628",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "begining",
+   "beginnning",
+   "beginning",
+   "beggining"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: double n.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014629",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which spelling is correct (homophones and spelling)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "commitee",
+   "comittee",
+   "comitee",
+   "committee"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: double m double t double e.",
+  "topic": "Usage: homophones and spelling (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014630",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "So fierce _____ the storm that the roof collapsed.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "was",
+   "did",
+   "were being",
+   "has"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: so + adj + was.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014631",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Such was his anger _____ he could not speak.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "which",
+   "that",
+   "what",
+   "as that"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: such ... that.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014632",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Beside the house _____ a huge oak tree.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "did stand",
+   "has stood to",
+   "stood",
+   "standing is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: inversion with place adverbial.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014633",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Into the room _____ the children.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "did run",
+   "have run to",
+   "running",
+   "ran"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "فعل حركة بعد ظرف مكان.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014634",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Among the guests _____ the mayor.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "was",
+   "were",
+   "has been of",
+   "being"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الفعل يتبع الاسم المفرد the mayor.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014635",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Gone _____ the days when we could leave doors open.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "were",
+   "are",
+   "is",
+   "have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: gone are the days.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014636",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Nothing _____ I do seems to please her.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "which",
+   "what",
+   "that",
+   "whose"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: nothing that.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014637",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Not only _____ the exam, but she also won a prize.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "she passed",
+   "passed she",
+   "has she passed to",
+   "did she pass"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: inversion.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014638",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Never again _____ I trust him.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "would to",
+   "do",
+   "can to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: never again will.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014639",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ great the risk, he went ahead.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Whatever",
+   "However",
+   "Whichever",
+   "Whoever"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: however + adj.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014640",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ you may think, I'm right.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "However",
+   "Wherever",
+   "Whatever",
+   "Whenever"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: whatever you may think.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014641",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is, _____ I know, the best candidate.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as long",
+   "so far to",
+   "as soon",
+   "as far as"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: as far as I know.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014642",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (fronting and emphasis)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Only by working hard can you succeed.",
+   "Only by working hard you can succeed.",
+   "Only by work hard can you succeed.",
+   "Only by working hard can succeed you."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "only by + انقلاب.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014643",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (fronting and emphasis)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Little she realised the danger.",
+   "Little did she realise the danger.",
+   "Little did she realised the danger.",
+   "Little realised she the danger."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: little did.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014644",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (fronting and emphasis)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Not until I got home I noticed it.",
+   "Not until did I get home I notice.",
+   "Not until I got home did I notice it.",
+   "Not until I got home did I noticed."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "not until + انقلاب في الجزء الثاني.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014645",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (fronting and emphasis)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Scarcely he had left when it rained.",
+   "Scarcely had he left than it rained.",
+   "Scarcely had left he when it rained.",
+   "Scarcely had he left when it rained."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: scarcely had...when.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014646",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (fronting and emphasis)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Seldom have I seen such courage.",
+   "Seldom I have seen such courage.",
+   "Seldom I saw such courage.",
+   "Seldom have seen I such courage."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: seldom + have I.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014647",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (fronting and emphasis)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "What he needs are a long holiday.",
+   "What he needs is a long holiday.",
+   "What needs he is a long holiday.",
+   "What he needs it's a long holiday."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: what-cleft.",
+  "topic": "Grammar: fronting and emphasis (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014648",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of the new law caused protests.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "introduce",
+   "introduced",
+   "introduction",
+   "introducing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014649",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Her _____ to resign surprised everyone.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "decide",
+   "decisive",
+   "decided",
+   "decision"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014650",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of pollution is alarming.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "increase",
+   "increasing to",
+   "increased",
+   "increasingly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014651",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "His _____ for helping others is well known.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "enthusiastic",
+   "enthusiasm",
+   "enthuse",
+   "enthusiastically"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014652",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "There is a growing _____ that prices will rise.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "expect",
+   "expected",
+   "expectation",
+   "expectedly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014653",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of the survey were surprising.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "finds of",
+   "found",
+   "findable",
+   "findings"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "findings = نتائج.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014654",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We discussed the _____ of building a new school.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "feasibility",
+   "feasible",
+   "feasibly",
+   "feasibles"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014655",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ for success is hard work.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "keying",
+   "key",
+   "keyed",
+   "keys of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: key to / for success.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014656",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She spoke with great _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "convict",
+   "convincing of",
+   "conviction",
+   "convinced"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014657",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The _____ of evidence led to his release.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lacking",
+   "lacked",
+   "lacks",
+   "lack"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: lack of evidence.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014658",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is more formal (nominalised) (nominalisation and complex noun phrases)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The rise in prices caused concern.",
+   "Prices rose and people worried.",
+   "Prices went up, so people got worried.",
+   "People got worried as prices rose."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: nominalisation.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014659",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (nominalisation and complex noun phrases)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The fact he lied surprised to us.",
+   "The fact that he lied surprised us.",
+   "The fact that lied surprised us.",
+   "The fact of that he lied surprised us."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: the fact that.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014660",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (nominalisation and complex noun phrases)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "His refusal cooperating caused delays.",
+   "His refuse to cooperate caused delays.",
+   "His refusal to cooperate caused delays.",
+   "His refusing for cooperate caused delays."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: refusal to.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014661",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (nominalisation and complex noun phrases)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "There is no point to arguing about.",
+   "There is no point argue.",
+   "There is no point of argue.",
+   "There is no point in arguing."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: no point in -ing.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014662",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (nominalisation and complex noun phrases)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It is a question of time.",
+   "It is a question for time.",
+   "It is question of the time.",
+   "It is a questions of time."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: a question of.",
+  "topic": "Grammar: nominalisation and complex noun phrases (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014663",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "You _____ have told me! I would have helped.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "can",
+   "could",
+   "may to",
+   "might to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "could have للوم.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014664",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ well have missed the train.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "can to",
+   "will",
+   "may",
+   "must to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: may well have.",
+  "topic": "Grammar: advanced modality (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ }
+]
