@@ -96,9 +96,9 @@ export const WordCard: React.FC<WordCardProps> = ({
 
           <div>
             <div className="flex items-center gap-2">
-              <span className="en text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors">
+              <button type="button" onClick={e => { e.stopPropagation(); onOpenDetails(entry); }} className="en text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors cursor-pointer">
                 {entry.headword}
-              </span>
+              </button>
               <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase border ${cefrStyle}`}>
                 {entry.cefr}
               </span>
@@ -174,7 +174,7 @@ export const WordCard: React.FC<WordCardProps> = ({
       {/* Headword & Arabic Translation */}
       <div className="space-y-1">
         <h3 className="en text-2xl font-black text-white group-hover:text-[#41e7ff] transition-colors tracking-tight">
-          {entry.headword}
+          <button type="button" onClick={e => { e.stopPropagation(); onOpenDetails(entry); }} className="cursor-pointer">{entry.headword}</button>
         </h3>
         <p className="text-base font-black text-[#c4ff55] leading-snug">
           {shownMeaning}
