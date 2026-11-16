@@ -22,18 +22,20 @@ import { ExpressionEntry, loadExpressions } from '../../services/vocabularyServi
 import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
 import { speakEnglishVoice } from '../../utils/audio';
 import { playSound } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 
-const CATEGORIES = [
-  { id: 'all', label: 'جميع التعابير (All 10,000+)' },
-  { id: 'phrasal_verb', label: 'الأفعال المركبة (Phrasal Verbs)' },
-  { id: 'idiom', label: 'التعبيرات الاصطلاحية (Idioms)' },
-  { id: 'collocation', label: 'المتلازمات اللفظية (Collocations)' },
-  { id: 'conversational', label: 'محادثات وحوارات (Conversational)' },
-  { id: 'business_tech', label: 'الشركات والتقنية (Business & Tech)' },
-  { id: 'common_expression', label: 'تعبيرات شائعة (Common)' },
+const CATEGORIES: Array<{ id: string; label?: string; labelKey?: string }> = [
+  { id: 'all', labelKey: 'ex.catAll' },
+  { id: 'phrasal_verb', labelKey: 'ex.catPhrasalVerb' },
+  { id: 'idiom', labelKey: 'ex.catIdiom' },
+  { id: 'collocation', labelKey: 'ex.catCollocation' },
+  { id: 'conversational', labelKey: 'ex.catConversational' },
+  { id: 'business_tech', labelKey: 'ex.catBusinessTech' },
+  { id: 'common_expression', labelKey: 'ex.catCommon' },
 ];
 
 export const ExpressionsTab: React.FC = () => {
+  const { t } = useLanguage();
   const txMap = useContentMap('expressions');
   const [expressions, setExpressions] = useState<ExpressionEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -108,7 +110,7 @@ export const ExpressionsTab: React.FC = () => {
             dir="auto"
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
-            placeholder="ابحث عن تعبير، مصطلح اصطلاحي، أو فعل مركب (give up, piece of cake, يستسلم...)"
+            placeholder={t('ex.searchPlaceholder')}
             className="w-full pl-12 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm font-sans focus:outline-none focus:border-[#ffd166]"
           />
           {searchQuery && (
@@ -136,7 +138,7 @@ export const ExpressionsTab: React.FC = () => {
                   : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
               }`}
             >
-              {cat.label}
+              {cat.labelKey ? t(cat.labelKey) : cat.label}
             </button>
           ))}
         </div>
@@ -144,15 +146,15 @@ export const ExpressionsTab: React.FC = () => {
         {/* Count overview */}
         <div className="text-xs text-white/60 font-bold flex items-center justify-between pt-2 border-t border-white/10">
           <div>
-            <span>تم العثور على: </span>
+            <span>{t('ex.found')} </span>
             <strong className="text-[#ffd166] text-sm">
               {totalMatches.toLocaleString()}
             </strong>
-            <span> تعبير وعبارة اصطلاحية</span>
+            <span> {t('ex.foundSuffix')}</span>
           </div>
 
           <span className="text-[11px] text-white/40">
-            مجموعة معتمدة تضم 10,000 تعبير جاهز للحفظ والاستخدام
+            {t('ex.approvedSet')}
           </span>
         </div>
       </section>
@@ -161,13 +163,13 @@ export const ExpressionsTab: React.FC = () => {
       {isLoading ? (
         <div className="p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <Loader2 className="w-10 h-10 text-[#ffd166] animate-spin mx-auto" />
-          <p className="text-white/80 font-bold text-sm">جارٍ تحميل مجموعة التعابير والمصطلحات (10,000+)...</p>
+          <p className="text-white/80 font-bold text-sm">{t('ex.loading')}</p>
         </div>
       ) : pagedItems.length === 0 ? (
         <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-3">
           <BookOpen className="w-10 h-10 text-white/30 mx-auto" />
-          <h4 className="text-lg font-black text-white">لم يتم العثور على نتائج</h4>
-          <p className="text-xs text-white/60">جرّب البحث بكلمة مختلفة أو اختر فئة أخرى.</p>
+          <h4 className="text-lg font-black text-white">{t('ex.noResults')}</h4>
+          <p className="text-xs text-white/60">{t('ex.noResultsHint')}</p>
         </div>
       ) : (
         <div className="space-y-8">
@@ -183,7 +185,7 @@ export const ExpressionsTab: React.FC = () => {
                     <button
                       onClick={e => handleSpeak(item.expression, 'US', e)}
                       className="px-2 py-1 rounded-lg text-[10px] font-black uppercase bg-[#22D3EE]/15 text-[#22D3EE] border border-[#22D3EE]/30 hover:bg-[#22D3EE]/25 transition-all flex items-center gap-1"
-                      title="استمع بالنطق الأمريكي"
+                      title={t('ex.listenUs')}
                     >
                       <Volume2 className="w-3 h-3" />
                       <span>US</span>
@@ -191,7 +193,7 @@ export const ExpressionsTab: React.FC = () => {
                     <button
                       onClick={e => handleSpeak(item.expression, 'UK', e)}
                       className="px-2 py-1 rounded-lg text-[10px] font-black uppercase bg-[#A78BFA]/15 text-[#A78BFA] border border-[#A78BFA]/30 hover:bg-[#A78BFA]/25 transition-all flex items-center gap-1"
-                      title="استمع بالنطق البريطاني"
+                      title={t('ex.listenUk')}
                     >
                       <Volume2 className="w-3 h-3" />
                       <span>UK</span>
@@ -242,8 +244,8 @@ export const ExpressionsTab: React.FC = () => {
           {totalPages > 1 && (
             <div className="flex items-center justify-between p-4 rounded-2xl glass-panel border border-white/10">
               <span className="text-xs text-white/60 font-bold">
-                صفحة <strong className="text-white">{currentPage}</strong> من{' '}
-                <strong className="text-white">{totalPages}</strong> ({totalMatches.toLocaleString()} تعبير)
+                {t('ex.page')} <strong className="text-white">{currentPage}</strong> {t('ex.of')}{' '}
+                <strong className="text-white">{totalPages}</strong> ({totalMatches.toLocaleString()} {t('ex.expressions')})
               </span>
 
               <div className="flex items-center gap-2">
@@ -256,7 +258,7 @@ export const ExpressionsTab: React.FC = () => {
                   className="px-3 py-1.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-bold text-white disabled:opacity-30 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-1"
                 >
                   <ChevronRight className="w-4 h-4" />
-                  <span>السابق</span>
+                  <span>{t('ex.prev')}</span>
                 </button>
 
                 <button
@@ -267,7 +269,7 @@ export const ExpressionsTab: React.FC = () => {
                   disabled={currentPage >= totalPages}
                   className="px-3 py-1.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-bold text-white disabled:opacity-30 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-1"
                 >
-                  <span>التالي</span>
+                  <span>{t('ex.next')}</span>
                   <ChevronLeft className="w-4 h-4" />
                 </button>
               </div>
