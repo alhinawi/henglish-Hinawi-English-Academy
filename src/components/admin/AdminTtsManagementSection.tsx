@@ -49,6 +49,7 @@ export const AdminTtsManagementSection: React.FC = () => {
   const [cacheStats, setCacheStats] = useState<TtsCacheTelemetry>({ size: 0, hitRate: 0 });
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [feedback, setFeedback] = useState<string | null>(null);
+  const [loadError, setLoadError] = useState<boolean>(false);
 
   const fetchTtsHealth = async () => {
     setIsLoading(true);
@@ -58,68 +59,13 @@ export const AdminTtsManagementSection: React.FC = () => {
         const data = await res.json();
         setProviders(data.providers || []);
         setCacheStats(data.cache || { size: 0, hitRate: 0 });
+        setLoadError(false);
       }
     } catch {
-      // Mock fallback data for offline development
-      setProviders([
-        {
-          id: 'elevenlabs',
-          name: 'ElevenLabs',
-          role: 'primary',
-          status: 'healthy',
-          hasApiKey: true,
-          totalRequests: 142,
-          successCount: 138,
-          failureCount: 4,
-          consecutiveFailures: 0,
-          averageLatencyMs: 310,
-          commercialLicenseStatus: 'licensed',
-          notes: t('tts.noteElevenlabs'),
-        },
-        {
-          id: 'deepgram',
-          name: 'Deepgram Aura-2',
-          role: 'fallback_1',
-          status: 'healthy',
-          hasApiKey: true,
-          totalRequests: 28,
-          successCount: 28,
-          failureCount: 0,
-          consecutiveFailures: 0,
-          averageLatencyMs: 145,
-          commercialLicenseStatus: 'licensed',
-          notes: t('tts.noteDeepgram'),
-        },
-        {
-          id: 'cartesia',
-          name: 'Cartesia Sonic-3.6',
-          role: 'fallback_2',
-          status: 'degraded',
-          hasApiKey: true,
-          totalRequests: 12,
-          successCount: 11,
-          failureCount: 1,
-          consecutiveFailures: 0,
-          averageLatencyMs: 180,
-          commercialLicenseStatus: 'evaluation_only',
-          notes: t('tts.noteCartesia'),
-        },
-        {
-          id: 'browser',
-          name: 'Browser SpeechSynthesis',
-          role: 'final_fallback',
-          status: 'healthy',
-          hasApiKey: true,
-          totalRequests: 6,
-          successCount: 6,
-          failureCount: 0,
-          consecutiveFailures: 0,
-          averageLatencyMs: 15,
-          commercialLicenseStatus: 'unrestricted',
-          notes: t('tts.noteBrowser'),
-        },
-      ]);
-      setCacheStats({ size: 84, hitRate: 64 });
+      // No fabricated telemetry: show an honest unavailable state instead.
+      setProviders([]);
+      setCacheStats({ size: 0, hitRate: 0 });
+      setLoadError(true);
     } finally {
       setIsLoading(false);
     }
@@ -198,6 +144,20 @@ export const AdminTtsManagementSection: React.FC = () => {
       </div>
 
       {/* Provider Status Cards */}
+      {loadError && (
+        <div className="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 text-center space-y-3">
+          <AlertTriangle className="w-8 h-8 text-amber-400 mx-auto" />
+          <p className="text-slate-300 text-sm">{t('tts.healthUnavailable')}</p>
+          <button
+            onClick={fetchTtsHealth}
+            className="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs text-slate-200 inline-flex items-center gap-1.5 transition-colors cursor-pointer"
+          >
+            <RefreshCw className="w-3.5 h-3.5" />
+            <span>{t('tts.refresh')}</span>
+          </button>
+        </div>
+      )}
+      {!loadError && (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {providers.map((p) => {
           const successRate = p.totalRequests > 0 ? Math.round((p.successCount / p.totalRequests) * 100) : 100;
@@ -299,6 +259,7 @@ export const AdminTtsManagementSection: React.FC = () => {
           );
         })}
       </div>
+      )}
     </div>
   );
 };
