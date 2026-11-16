@@ -394,5 +394,9 @@
   "badges.name.rank-3": "Top 3",
   "badges.description.rank-3": "Rank from verified scores only, excluding administrative pins.",
   "badges.name.rank-1": "Top 1",
-  "badges.description.rank-1": "Rank from verified scores only, excluding administrative pins."
+  "badges.description.rank-1": "Rank from verified scores only, excluding administrative pins.",
+  "home.sources.title": "Top Resources",
+  "home.sources.desc": "The best channels, books, apps and sites for learning and practicing English with natives, with official verified links.",
+  "home.sources.badge": "222+ resources",
+  "home.sources.lessons": "10 curated sections"
 }
