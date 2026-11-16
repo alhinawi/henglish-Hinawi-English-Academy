@@ -2806,5 +2806,785 @@
   "explanationAr": "معنى \"bearish\" هو: متوقع نزول السوق. مثال: المستثمرين لسه متوقعين نزول السوق الشهر ده.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
+ },
+ {
+  "id": "q-grm1-011757",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ a student.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "am",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: am.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011758",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ my sister.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "are",
+   "be",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011759",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ in the garden.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "are",
+   "is",
+   "be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011760",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ a doctor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "are",
+   "be",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011761",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ very tired today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "be",
+   "are",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011762",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You _____ my best friend.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "be",
+   "is",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011763",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ a big city.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "am",
+   "be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011764",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The books _____ on the table.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "be",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011765",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My father _____ at work now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "am",
+   "is",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011766",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ali and Omar _____ brothers.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "are",
+   "am",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011767",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ from Egypt.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "be",
+   "am",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: am.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011768",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The cat _____ under the chair.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "am",
+   "is",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011769",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mona _____ happy today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "are",
+   "is",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011770",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You and I _____ classmates.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "are",
+   "am",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011771",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The weather _____ hot in summer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "be",
+   "is",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011772",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My parents _____ at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "be",
+   "are",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011773",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "This room _____ very small.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "be",
+   "is",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011774",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ ten years old.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "is",
+   "are",
+   "be"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: am.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011775",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The children _____ in the park.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "be",
+   "are",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011776",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ a nurse at a big hospital.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "be",
+   "is",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011777",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I are a teacher.",
+   "I be a teacher.",
+   "I is a teacher.",
+   "I am a teacher."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: I am a teacher..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011778",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They am students.",
+   "They be students.",
+   "They is students.",
+   "They are students."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: They are students..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011779",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He am tall.",
+   "He be tall.",
+   "He are tall.",
+   "He is tall."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: He is tall..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011780",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We am late.",
+   "We be late.",
+   "We is late.",
+   "We are late."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: We are late..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011781",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My name am Sara.",
+   "My name be Sara.",
+   "My name are Sara.",
+   "My name is Sara."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: My name is Sara..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011782",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The students am in class.",
+   "The students be in class.",
+   "The students is in class.",
+   "The students are in class."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: The students are in class..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011783",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It am a red car.",
+   "It be a red car.",
+   "It are a red car.",
+   "It is a red car."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: It is a red car..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011784",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "You am very kind.",
+   "You be very kind.",
+   "You is very kind.",
+   "You are very kind."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع. الإجابة الصحيحة: You are very kind..",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011785",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "She are a good singer.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح: She is a good singer لأن she بتاخد is. بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011786",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We are friends.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن we بتاخد are. بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011787",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "I is hungry.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح: I am hungry لأن I بتاخد am. بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011788",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The dog is in the house.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن the dog مفرد فبناخد is. بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011789",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "My brothers is doctors.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح: My brothers are doctors لأن brothers جمع فبناخد are. بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011790",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "It am cold today.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح: It is cold today. بنستخدم am مع I، وis مع he/she/it والمفرد، وare مع you/we/they والجمع.",
+  "topic": "Grammar: verb to be - am/is/are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011791",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ not a teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "do",
+   "are",
+   "am"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: am.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011792",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ not at school today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "does",
+   "are",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011793",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ not happy with the result.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "do",
+   "am",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011794",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He isn't tired. He _____ very energetic.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "is",
+   "am",
+   "are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011795",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ you ready for the test?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Am",
+   "Do",
+   "Are",
+   "Is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Are.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011796",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ she your cousin?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Is",
+   "Am",
+   "Does",
+   "Are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011797",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ I late?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Is",
+   "Are",
+   "Do",
+   "Am"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Am.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011798",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ they from Alexandria?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Is",
+   "Are",
+   "Am",
+   "Do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Are.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011799",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ your mother at home?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Am",
+   "Is",
+   "Does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011800",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ not in the same class.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "am",
+   "are",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
  }
 ]

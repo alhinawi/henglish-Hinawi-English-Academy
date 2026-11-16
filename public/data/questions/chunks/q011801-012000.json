@@ -1,0 +1,3546 @@
+[
+ {
+  "id": "q-grm1-011801",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shops _____ not open on Friday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "do",
+   "are",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: are.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011802",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ not a difficult question.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "are",
+   "does",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011803",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ the keys on the table?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Do",
+   "Am",
+   "Are",
+   "Is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Are.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011804",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ this your bag?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Am",
+   "Are",
+   "Is",
+   "Do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011805",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ahmed _____ not my neighbor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "am",
+   "is",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: is.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011806",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Are you hungry?",
+   "Is you hungry?",
+   "Do you hungry?",
+   "You are hungry?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Are you hungry?.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011807",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He are not a lawyer.",
+   "He does not a lawyer.",
+   "He is not a lawyer.",
+   "He not is a lawyer."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: He is not a lawyer..",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011808",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Is it cold outside?",
+   "It is cold outside?",
+   "Does it cold outside?",
+   "Are it cold outside?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Is it cold outside?.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011809",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I do not afraid.",
+   "I amn't afraid.",
+   "I am not afraid.",
+   "I not am afraid."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: I am not afraid..",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011810",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Where is my phone?",
+   "Where does my phone?",
+   "Where my phone is?",
+   "Where are my phone?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Where is my phone?.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011811",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Are the children asleep?",
+   "Are asleep the children?",
+   "Is the children asleep?",
+   "Do the children asleep?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Are the children asleep?.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011812",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They don't at the cinema.",
+   "They isn't at the cinema.",
+   "They aren't at the cinema.",
+   "They doesn't at the cinema."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: They aren't at the cinema..",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011813",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Are you a student?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, I is.",
+   "Yes, I do.",
+   "Yes, I are.",
+   "Yes, I am."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Yes, I am..",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011814",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Is she a doctor?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "No, she isn't.",
+   "No, she doesn't.",
+   "No, she aren't.",
+   "No, she not is."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: No, she isn't..",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011815",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Are they at home?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, they is.",
+   "Yes, they am.",
+   "Yes, they are.",
+   "Yes, they do."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل. الإجابة الصحيحة: Yes, they are..",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011816",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "Do you tired? is a correct question.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح: Are you tired? لأن tired صفة فبنستخدم are مش do. النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011817",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "She isn't at home.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، النفي بـ isn't مع she. النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011818",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "Am I late? is a correct question.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن السؤال مع I بيبدأ بـ Am. النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011819",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "They doesn't teachers.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح: They aren't teachers. النفي بنضيف not بعد am/is/are، والسؤال بنقدم am/is/are على الفاعل.",
+  "topic": "Grammar: verb to be - negative and questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011820",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mona is my friend. _____ is very funny.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "She",
+   "He",
+   "They",
+   "It"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: She.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011821",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Omar is my brother. _____ is a pilot.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "It",
+   "He",
+   "They",
+   "She"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: He.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011822",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The book is on the desk. _____ is new.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "She",
+   "He",
+   "It",
+   "They"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: It.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011823",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My parents are kind. _____ help everyone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "It",
+   "They",
+   "We",
+   "He"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: They.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011824",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Sara and I are classmates. _____ study together.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "You",
+   "We",
+   "She",
+   "They"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: We.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011825",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ali and Hany are tired. _____ want to sleep.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "They",
+   "We",
+   "He",
+   "It"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: They.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011826",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The dog is hungry. _____ wants food.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "It",
+   "They",
+   "We",
+   "He"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: It.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011827",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mr. Hassan is a teacher. _____ teaches English.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "He",
+   "They",
+   "It",
+   "She"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: He.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011828",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mrs. Laila is a doctor. _____ works at night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "It",
+   "He",
+   "She",
+   "They"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: She.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011829",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ahmed and you are late. _____ must hurry.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "He",
+   "You",
+   "They",
+   "We"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: You.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011830",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The cars are fast. _____ are expensive too.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "We",
+   "They",
+   "He",
+   "It"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: They.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011831",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My sister and I live here. _____ like this street.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "She",
+   "You",
+   "We",
+   "They"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: We.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011832",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The sun is hot. _____ shines all day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "She",
+   "He",
+   "They",
+   "It"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: It.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011833",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Fatma is my aunt. _____ lives in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "She",
+   "They",
+   "He",
+   "It"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: She.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011834",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Hello! _____ am Karim.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "He",
+   "She",
+   "I",
+   "It"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: I.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011835",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"my mother\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It",
+   "They",
+   "He",
+   "She"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: She.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011836",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"the boys\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It",
+   "He",
+   "We",
+   "They"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: They.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011837",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"the table\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She",
+   "It",
+   "They",
+   "He"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: It.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011838",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"Ahmed and I\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They",
+   "We",
+   "You",
+   "He"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: We.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011839",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"my uncle\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They",
+   "He",
+   "It",
+   "She"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: He.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011840",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"the girls and the boys\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We",
+   "They",
+   "It",
+   "She"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: They.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011841",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"my cat\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They",
+   "It",
+   "We",
+   "You"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: It.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011842",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which pronoun replaces \"you and Mona\"?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We",
+   "She",
+   "You",
+   "They"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل. الإجابة الصحيحة: You.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011843",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We use \"he\" for a woman.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. بنستخدم she للست وhe للراجل. الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011844",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We use \"they\" for more than one person.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، they للجمع. الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011845",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We use \"it\" for a table.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، it لغير العاقل. الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011846",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I\" is a plural pronoun.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. I ضمير مفرد. الضمائر الفاعلة: I, you, he, she, it, we, they. he للمذكر وshe للمؤنث وit لغير العاقل.",
+  "topic": "Grammar: subject pronouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011847",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I love _____ family.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "I",
+   "my",
+   "mine",
+   "me"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: my.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011848",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She is reading _____ book.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "she",
+   "her",
+   "hers",
+   "his"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: her.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011849",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He lost _____ keys yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "him",
+   "he",
+   "her",
+   "his"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: his.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011850",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We like _____ teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ours",
+   "we",
+   "our",
+   "us"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: our.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011851",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They sell _____ car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "their",
+   "theirs",
+   "them",
+   "they"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: their.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011852",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You must bring _____ homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "you",
+   "your",
+   "yourself",
+   "yours"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: your.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011853",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The dog wagged _____ tail.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "it's",
+   "its",
+   "his",
+   "their"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: its.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011854",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My sister and I love _____ grandmother.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "our",
+   "their",
+   "her",
+   "my"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: our.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011855",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mona has a brother. _____ name is Omar.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Her",
+   "Their",
+   "His",
+   "My"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: Her.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011856",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ahmed has a sister. _____ name is Hala.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "His",
+   "Her",
+   "My",
+   "Their"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: His.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011857",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Where is _____ phone, Sara?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "your",
+   "you",
+   "yours",
+   "she"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: your.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011858",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I forgot _____ bag at school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "I",
+   "me",
+   "mine",
+   "my"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: my.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011859",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The students open _____ books.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "their",
+   "there",
+   "them",
+   "they"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: their.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011860",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mr. and Mrs. Samir love _____ garden.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "them",
+   "their",
+   "they",
+   "there"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: their.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011861",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What is _____ name? - My name is Adam.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "he",
+   "you",
+   "yours",
+   "your"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: your.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011862",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She loves hers job.",
+   "She loves herself job.",
+   "She loves she job.",
+   "She loves her job."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: She loves her job..",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011863",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They are with theirs friends.",
+   "They are with they friends.",
+   "They are with them friends.",
+   "They are with their friends."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: They are with their friends..",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011864",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I like mine room.",
+   "I like I room.",
+   "I like me room.",
+   "I like my room."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: I like my room..",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011865",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He washes him car every week.",
+   "He washes himself car every week.",
+   "He washes he car every week.",
+   "He washes his car every week."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: He washes his car every week..",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011866",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We are proud of us school.",
+   "We are proud of ours school.",
+   "We are proud of we school.",
+   "We are proud of our school."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: We are proud of our school..",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011867",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The cat drinks his's milk.",
+   "The cat drinks them milk.",
+   "The cat drinks it's milk.",
+   "The cat drinks its milk."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم. الإجابة الصحيحة: The cat drinks its milk..",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011868",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Their\" is the possessive adjective for they.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، their = بتاعهم. الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011869",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She is her friend\" is a correct way to say \"Her friend is a girl\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. her صفة ملكية بتيجي قبل اسم، ومش بتتاخد مكان الفاعل. الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011870",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"My\" comes before a noun.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، الصفة الملكية بتيجي قبل الاسم. الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011871",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"It's\" and \"its\" mean the same thing.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. it's معناها it is، لكن its معناها بتاعه/بتاعها. الصفات الملكية: my, your, his, her, its, our, their. بتيجي قبل الاسم.",
+  "topic": "Grammar: possessive adjectives (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011872",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She has _____ apple.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "the",
+   "an",
+   "some"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011873",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He is _____ engineer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "the",
+   "any",
+   "a"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011874",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I have _____ dog.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "any",
+   "many",
+   "a"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: a.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011875",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It is _____ umbrella.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "the",
+   "some",
+   "a"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011876",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My brother is _____ teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "an",
+   "any",
+   "some"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: a.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011877",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She eats _____ orange every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "an",
+   "any",
+   "some"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011878",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There is _____ book on the table. _____ book is red.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a / A",
+   "an / The",
+   "a / The",
+   "the / A"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: a / The.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011879",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We saw _____ elephant at the zoo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "an",
+   "the",
+   "a"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011880",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He is _____ honest man.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "any",
+   "an",
+   "the"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011881",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She wants _____ university degree.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the",
+   "any",
+   "an",
+   "a"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: a.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011882",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I need _____ hour to finish.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the",
+   "any",
+   "an",
+   "a"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011883",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Please close _____ door.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "an",
+   "the",
+   "any"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: the.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011884",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ sun is hot in August.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "An",
+   "The",
+   "A",
+   "Some"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: The.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011885",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My dad has _____ old car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "an",
+   "the",
+   "a"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011886",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Cairo is _____ big city.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "an",
+   "any",
+   "a",
+   "the"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: a.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011887",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I bought _____ ice cream.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "the",
+   "a",
+   "an"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011888",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Do you have _____ pen?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a",
+   "any",
+   "the",
+   "an"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: a.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011889",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She is _____ actress.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "a",
+   "an",
+   "the"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011890",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Look at _____ moon tonight!",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "the",
+   "a",
+   "an"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: the.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011891",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He has _____ uncle in Dubai.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the",
+   "an",
+   "a",
+   "any"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: an.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011892",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I have cat a.",
+   "I have a cats.",
+   "I have an cat.",
+   "I have a cat."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: I have a cat..",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011893",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is artist an.",
+   "She is the an artist.",
+   "She is a artist.",
+   "She is an artist."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: She is an artist..",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011894",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He eats egg an for breakfast.",
+   "He eats the an egg for breakfast.",
+   "He eats a egg for breakfast.",
+   "He eats an egg for breakfast."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: He eats an egg for breakfast..",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011895",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It is useful a book.",
+   "It is the an useful book.",
+   "It is an useful book.",
+   "It is a useful book."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: It is a useful book..",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011896",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We live in small a house.",
+   "We live in the a small house.",
+   "We live in an small house.",
+   "We live in a small house."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: We live in a small house..",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011897",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Open an window, please.",
+   "Open window the, please.",
+   "Open a the window, please.",
+   "Open the window, please."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده. الإجابة الصحيحة: Open the window, please..",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011898",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"An hour\" is correct because hour starts with a vowel sound.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، h في hour مش بتتنطق فبتبدأ بصوت علة. بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011899",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We say \"a umbrella\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح an umbrella لأن umbrella بتبدأ بصوت علة. بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011900",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We say \"a university\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن university بتبدأ بصوت y الساكن. بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011901",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We say \"an teacher\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح a teacher لأن teacher بتبدأ بصوت ساكن. بنستخدم a قبل الصوت الساكن وan قبل صوت العلة (a, e, i, o, u)، وthe لما الشيء معروف أو اتذكر قبل كده.",
+  "topic": "Grammar: articles a/an/the (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011902",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one book - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "bookies",
+   "bookes",
+   "book",
+   "books"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: books.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011903",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one box - three _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "boxen",
+   "boxes",
+   "boxs",
+   "boxies"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: boxes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011904",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one bus - five _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "buss",
+   "buses",
+   "buss'",
+   "busies"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: buses.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011905",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one city - many _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "citis",
+   "cities",
+   "citys",
+   "cityes"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: cities.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011906",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one watch - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watches",
+   "watchies",
+   "watchen",
+   "watchs"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: watches.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011907",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one dish - four _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "dishes",
+   "dishs",
+   "dishen",
+   "dishies"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: dishes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011908",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one baby - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "babis",
+   "babyes",
+   "babys",
+   "babies"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: babies.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011909",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one boy - three _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "boys",
+   "boyies",
+   "boyes",
+   "boies"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: boys.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011910",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one pen - six _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "pens",
+   "penes",
+   "pen",
+   "penies"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: pens.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011911",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one class - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "classies",
+   "classes",
+   "classs",
+   "class"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: classes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011912",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one day - seven _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "dayies",
+   "daies",
+   "dayes",
+   "days"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: days.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011913",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one country - many _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "countries",
+   "countryes",
+   "countrys",
+   "countris"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: countries.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011914",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one brush - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "brushies",
+   "brushen",
+   "brushes",
+   "brushs"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: brushes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011915",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one key - three _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "keyes",
+   "keies",
+   "keyies",
+   "keys"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: keys.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011916",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one lady - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ladyes",
+   "ladys",
+   "ladis",
+   "ladies"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: ladies.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011917",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one tomato - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "tomatos",
+   "tomatoen",
+   "tomatoies",
+   "tomatoes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: tomatoes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011918",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one kiss - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "kissies",
+   "kisss",
+   "kisses",
+   "kiss"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: kisses.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011919",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one story - five _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "storyes",
+   "storys",
+   "stories",
+   "storis"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: stories.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011920",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one girl - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "girlies",
+   "girls",
+   "girl",
+   "girles"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: girls.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011921",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one fox - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "foxies",
+   "foxen",
+   "foxs",
+   "foxes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: foxes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011922",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"party\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "partis",
+   "partyes",
+   "parties",
+   "partys"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: parties.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011923",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"sandwich\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "sandwichs",
+   "sandwichen",
+   "sandwichies",
+   "sandwiches"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: sandwiches.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011924",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"toy\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "toies",
+   "toyes",
+   "toys",
+   "toyies"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: toys.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011925",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"glass\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "glassen",
+   "glasss",
+   "glasses",
+   "glassies"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: glasses.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011926",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"potato\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "potatos",
+   "potatoies",
+   "potatoen",
+   "potatoes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: potatoes.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011927",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"leaf\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "leafes",
+   "leavs",
+   "leafs",
+   "leaves"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: leaves.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011928",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"movie\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "movys",
+   "moviees",
+   "movies",
+   "moviess"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: movies.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011929",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct plural of \"church\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "churchen",
+   "churchs",
+   "churchies",
+   "churches"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن. الإجابة الصحيحة: churches.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011930",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"bus\" is \"buss\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الجمع الصح buses لأن الكلمة بتنتهي بـ s. الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011931",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"city\" is \"cities\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن y بتتحول لـ ies بعد حرف ساكن. الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011932",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"day\" is \"daies\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح days لأن قبل y حرف علة. الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011933",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"box\" is \"boxes\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن الكلمة بتنتهي بـ x. الجمع العادي بنضيف s. بنضيف es بعد s, x, ch, sh. وبنحول y لـ ies لو قبلها حرف ساكن.",
+  "topic": "Grammar: regular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011934",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one man - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "manes",
+   "mens",
+   "men",
+   "mans"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: men.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011935",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one woman - three _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "women",
+   "womens",
+   "womanes",
+   "womans"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: women.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011936",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one child - four _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "children",
+   "childs",
+   "childes",
+   "childrens"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: children.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011937",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one foot - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "footes",
+   "feet",
+   "feets",
+   "foots"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: feet.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011938",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one tooth - thirty-two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "teeths",
+   "teeth",
+   "toothes",
+   "tooths"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: teeth.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011939",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one mouse - two _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "meese",
+   "mouses",
+   "mice",
+   "mices"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: mice.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011940",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one person - many _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "people",
+   "peoples",
+   "persones",
+   "persons"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: people.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011941",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one fish - three _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "fishs",
+   "fishen",
+   "fish",
+   "fishies"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: fish.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011942",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "one sheep - ten _____",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "shipes",
+   "sheep",
+   "sheeps",
+   "sheepes"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: sheep.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011943",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ are playing football.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "child",
+   "childs",
+   "children",
+   "childrens"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: children.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011944",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Two _____ are waiting outside.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "womens",
+   "womans",
+   "women",
+   "woman"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: women.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011945",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There are three _____ in the room.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "mans",
+   "mens",
+   "man",
+   "men"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: men.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011946",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My _____ hurt after the long walk.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "feets",
+   "feet",
+   "foots",
+   "foot"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: feet.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011947",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The _____ in my class are friendly.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "people",
+   "persons",
+   "person",
+   "peoples"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: people.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011948",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She brushes her _____ twice a day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "tooths",
+   "teeth",
+   "tooth",
+   "teeths"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: teeth.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011949",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Look! There are two _____ in the kitchen.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "mouse",
+   "mouses",
+   "mices",
+   "mice"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: mice.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011950",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There are many _____ in the lake.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "fishen",
+   "fish",
+   "fishies",
+   "fishs"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: fish.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011951",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The childrens are happy.",
+   "The child are happy.",
+   "The childs are happy.",
+   "The children are happy."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: The children are happy..",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011952",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Two man are at the door.",
+   "Two mens are at the door.",
+   "Two mans are at the door.",
+   "Two men are at the door."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: Two men are at the door..",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011953",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "These woman are teachers.",
+   "These womens are teachers.",
+   "These womans are teachers.",
+   "These women are teachers."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: These women are teachers..",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011954",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The sheepes are in the field.",
+   "The sheep is in the fields.",
+   "The sheeps are in the field.",
+   "The sheep are in the field."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: The sheep are in the field..",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011955",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My feets are cold.",
+   "My foot are cold.",
+   "My foots are cold.",
+   "My feet are cold."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: My feet are cold..",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011956",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Peoples are very kind here.",
+   "Persons is very kind here.",
+   "People is very kind here.",
+   "People are very kind here."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet. الإجابة الصحيحة: People are very kind here..",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011957",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"child\" is \"childs\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الجمع الصح children. في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011958",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"tooth\" is \"teeth\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، جمع غير منتظم. في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011959",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"sheep\" is \"sheeps\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. sheep جمعها sheep بدون تغيير. في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011960",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "The plural of \"mouse\" is \"mice\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، جمع غير منتظم. في أسماء جمعها مش بيتبع القاعدة العادية مثل man-men وchild-children وfoot-feet.",
+  "topic": "Grammar: irregular plural nouns (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011961",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is my pen here in my hand.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Those",
+   "That",
+   "These",
+   "This"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: This.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011962",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Look at _____ birds over there in the sky.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "this",
+   "these",
+   "those",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: those.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011963",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ are my shoes. I am wearing them.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "That",
+   "Those",
+   "These",
+   "This"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: These.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011964",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ house across the street is big.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "These",
+   "This",
+   "Those",
+   "That"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: That.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011965",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Who are _____ boys near the door?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that",
+   "these",
+   "those",
+   "this"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: those.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011966",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ apples in my hand are fresh.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "That",
+   "This",
+   "These",
+   "Those"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: These.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011967",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Is _____ your bag on the far chair?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that",
+   "those",
+   "this",
+   "these"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: that.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011968",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ is my mother, standing next to me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "This",
+   "These",
+   "Those",
+   "That"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: This.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011969",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "How much are _____ shoes in the shop window over there?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "these",
+   "this",
+   "those",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: those.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011970",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ cake in front of me is delicious.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "This",
+   "These",
+   "That",
+   "Those"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: This.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011971",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I love _____ flowers in my hand.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "these",
+   "that",
+   "this",
+   "those"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: these.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011972",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Can you see _____ mountain far away?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "this",
+   "that",
+   "these",
+   "those"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: that.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011973",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ are my keys on the table next to me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "That",
+   "These",
+   "This",
+   "Those"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: These.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011974",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ boy over there is my cousin.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "These",
+   "Those",
+   "That",
+   "This"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: That.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011975",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What is _____ in your hand?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "they",
+   "those",
+   "these",
+   "this"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: this.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011976",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ children across the road are noisy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "That",
+   "Those",
+   "This",
+   "These"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: Those.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011977",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "That are my books.",
+   "These is my books.",
+   "This are my books.",
+   "These are my books."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: These are my books..",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011978",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "These is a nice car over there.",
+   "That are a nice car over there.",
+   "Those is a nice car over there.",
+   "That is a nice car over there."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: That is a nice car over there..",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011979",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Those is my brother next to me.",
+   "This are my brother next to me.",
+   "These is my brother next to me.",
+   "This is my brother next to me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: This is my brother next to me..",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011980",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This are old buildings far away.",
+   "Those is old buildings far away.",
+   "That are old buildings far away.",
+   "Those are old buildings far away."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع. الإجابة الصحيحة: Those are old buildings far away..",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011981",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"These\" is the plural of \"this\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، these جمع this. this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011982",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Those\" is used for things near you.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. those للجمع البعيد، وللقريب بنستخدم these. this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011983",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"That\" is used for one thing far away.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011984",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "We say \"This are my friends\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح These are my friends. this/these للقريب، وthat/those للبعيد. this وthat للمفرد، وthese وthose للجمع.",
+  "topic": "Grammar: this/that/these/those (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011985",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ a book on the desk.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "are",
+   "is",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011986",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ three chairs in the room.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "am",
+   "be",
+   "are"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011987",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ a cat under the car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "be",
+   "are",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011988",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ some milk in the fridge.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "be",
+   "are",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011989",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ many students in the hall.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "am",
+   "be"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011990",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ a park near my house.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "is",
+   "be",
+   "are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011991",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ two windows in my room.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "are",
+   "am",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011992",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ any water in the bottle.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "doesn't",
+   "isn't",
+   "aren't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: isn't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011993",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ any apples in the basket.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "aren't",
+   "isn't",
+   "doesn't",
+   "don't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: aren't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011994",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ there a bank near here?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Do",
+   "Is",
+   "Are",
+   "Does"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: Is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011995",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ there any eggs in the box?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Is",
+   "Does",
+   "Are",
+   "Do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: Are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011996",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ a lot of people at the party.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "is",
+   "are",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011997",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ a lot of traffic in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "be",
+   "is",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011998",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ no sugar in my tea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "am",
+   "be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-011999",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ five days in the working week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "are",
+   "am",
+   "be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012000",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Is there a pool in the hotel? Yes, _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "it is",
+   "there does",
+   "there is",
+   "there are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: there is.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
