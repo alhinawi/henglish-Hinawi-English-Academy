@@ -7,3 +7,6 @@ console.log('German8 dictionary-grounded function-word fixes;3corrupt meanings f
 const de=JSON.parse(fs.readFileSync('public/data/vocab/i18n/de.json'));
 const verbs={"voc-w00014": "sein", "voc-w00017": "haben", "voc-w00021": "von / durch / mit / bei / neben / bis", "voc-w00033": "können", "voc-w00035": "mögen / wie / ähnlich", "voc-w00040": "wann / wenn / als", "voc-w00050": "würde / würden (je nach Person und Kontext)"};
 for(const [id,m] of Object.entries(verbs))assert.equal(de[id].m,m);
+
+const relations={"voc-w00002": "zu / nach / an / bis", "voc-w00008": "für / seit / denn / weil", "voc-w00018": "an / bei / um / in", "voc-w00034": "gerade / nur / genau / eben", "voc-w00059": "andere / sonstige / weitere", "voc-w00061": "als (beim Vergleich)", "voc-w00063": "nur / lediglich / einzig"};
+for(const [id,m] of Object.entries(relations))assert.equal(de[id].m,m);
