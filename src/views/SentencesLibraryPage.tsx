@@ -31,6 +31,7 @@ import { SentenceCard } from '../components/SentenceCard';
 import { playSound } from '../utils/audio';
 import { useLanguage } from '../i18n/LanguageContext';
 import { speakText } from '../utils/voiceEngine';
+import { sentencePracticeWords, isSentencePracticeCorrect } from '../utils/sentencePractice';
 import {
   BookA,
   Search,
@@ -282,7 +283,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     const rand = allSentences[Math.floor(Math.random() * allSentences.length)] || allSentences[0];
     if (!rand) return;
     setPracticeSentence(rand);
-    const words = rand.english.replace(/[.,!?;:]/g, '').split(' ');
+    const words = sentencePracticeWords(rand.english);
     const scrambled = [...words].sort(() => Math.random() - 0.5);
     setScrambledWords(scrambled);
     setSelectedWordIndices([]);
@@ -292,6 +293,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   // Handle clicking a word in scramble
   const handleSelectWord = (idx: number) => {
     playSound('click');
+    setPracticeStatus('idle');
     if (selectedWordIndices.includes(idx)) {
       setSelectedWordIndices(selectedWordIndices.filter(i => i !== idx));
     } else {
@@ -302,10 +304,9 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   // Check scramble answer
   const handleCheckPractice = () => {
     if (!practiceSentence) return;
-    const userBuilt = selectedWordIndices.map(i => scrambledWords[i]).join(' ');
-    const targetClean = practiceSentence.english.replace(/[.,!?;:]/g, '').trim();
+    const answer = selectedWordIndices.map(i => scrambledWords[i]);
 
-    if (userBuilt.toLowerCase() === targetClean.toLowerCase()) {
+    if (isSentencePracticeCorrect(answer, practiceSentence.english)) {
       setPracticeStatus('correct');
       playSound('success');
     } else {
@@ -601,9 +602,9 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           </div>
 
           {/* User's Assembled Sentence */}
-          <div className="min-h-16 p-4 rounded-2xl bg-black/40 border border-white/15 flex items-center justify-center gap-2 flex-wrap">
+          <div dir="ltr" className="min-h-16 p-4 rounded-2xl bg-black/40 border border-white/15 flex items-center justify-center gap-2 flex-wrap">
             {selectedWordIndices.length === 0 ? (
-              <span className="text-white/30 text-sm italic">{t('sl.practiceHint')}</span>
+              <span dir="auto" className="text-white/30 text-sm italic">{t('sl.practiceHint')}</span>
             ) : (
               selectedWordIndices.map((wordIdx, order) => (
                 <button
@@ -618,7 +619,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           </div>
 
           {/* Word Bank */}
-          <div className="flex items-center justify-center gap-2 flex-wrap">
+          <div dir="ltr" lang="en" className="flex items-center justify-center gap-2 flex-wrap">
             {scrambledWords.map((word, idx) => {
               const isUsed = selectedWordIndices.includes(idx);
               return (
