@@ -31,7 +31,8 @@ import {
   UserPlus,
   ChevronLeft,
   Mail,
-  KeyRound
+  KeyRound,
+  MoreHorizontal
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -86,12 +87,14 @@ export const Header: React.FC<HeaderProps> = ({
   const [moreMenuOpen, setMoreMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
+  const [mobileMoreOpen, setMobileMoreOpen] = useState(false);
 
   const grammarRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
   const moreRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
+  const mobileMoreRef = useRef<HTMLDivElement>(null);
 
   // Close all dropdowns on outside click or ESC key
   useEffect(() => {
@@ -112,6 +115,9 @@ export const Header: React.FC<HeaderProps> = ({
       if (profileRef.current && !profileRef.current.contains(target)) {
         setProfileOpen(false);
       }
+      if (mobileMoreRef.current && !mobileMoreRef.current.contains(target)) {
+        setMobileMoreOpen(false);
+      }
     };
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -124,6 +130,7 @@ export const Header: React.FC<HeaderProps> = ({
         setMoreMenuOpen(false);
         setNotifOpen(false);
         setProfileOpen(false);
+        setMobileMoreOpen(false);
       }
     };
 
@@ -145,11 +152,15 @@ export const Header: React.FC<HeaderProps> = ({
     setMoreMenuOpen(false);
     setNotifOpen(false);
     setProfileOpen(false);
+    setMobileMoreOpen(false);
     onNavigate(route, lessonId);
   };
 
   return (
-    <header className="sticky top-0 z-50 h-20 bg-[#0c0b20]/95 backdrop-blur-2xl border-b border-white/10 px-4 sm:px-6 flex items-center justify-between gap-3 select-none">
+    <header
+      className="sticky top-0 z-50 min-h-20 bg-[#0c0b20]/95 backdrop-blur-2xl border-b border-white/10 px-4 sm:px-6 flex items-center justify-between gap-2 sm:gap-3 select-none"
+      style={{ paddingTop: 'env(safe-area-inset-top)' }}
+    >
       
       {/* LEFT: Mobile Menu Hamburger & Desktop Main Navigation Menus */}
       <div className="flex items-center gap-3 xl:gap-4 min-w-0">
@@ -171,6 +182,25 @@ export const Header: React.FC<HeaderProps> = ({
           aria-expanded={mobileOpen}
         >
           {mobileOpen ? <X className="w-5 h-5 text-[#ffd166]" /> : <Menu className="w-5 h-5" />}
+        </button>
+
+        {/* Brand: site name + logo, links home (hidden on xl where the full nav shows) */}
+        <button
+          onClick={() => handleNav('dashboard')}
+          className="xl:hidden flex items-center gap-2 rounded-xl cursor-pointer hover:bg-white/5 transition-colors p-1 -m-1 shrink-0"
+          aria-label="Henglish Academy - الرئيسية"
+          title="Henglish Academy - الرئيسية"
+        >
+          <img
+            src="/logo-clean.png"
+            alt="Henglish Academy"
+            width={32}
+            height={32}
+            className="w-8 h-8 object-contain filter drop-shadow-[0_0_10px_rgba(255,209,102,0.4)]"
+          />
+          <span className="font-black font-['Plus_Jakarta_Sans',sans-serif] tracking-wider text-[#ffd166] uppercase text-xs whitespace-nowrap">
+            Henglish Academy
+          </span>
         </button>
 
         {/* Desktop Primary Navigation with Non-Clipped Dropdowns */}
@@ -427,14 +457,88 @@ export const Header: React.FC<HeaderProps> = ({
       {/* RIGHT: Search, Voice Settings, Streak, Notifications, Account */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
         
-        <ThemePicker />
+        <div className="hidden md:block">
+          <ThemePicker />
+        </div>
+
+        {/* Mobile overflow: search, notifications, voice and theme in one menu */}
+        <div className="relative md:hidden" ref={mobileMoreRef}>
+          <button
+            onClick={() => {
+              playSound('click');
+              setMobileMoreOpen(prev => !prev);
+              setNotifOpen(false);
+              setProfileOpen(false);
+            }}
+            className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
+            aria-label="أدوات إضافية: بحث وإشعارات وصوت ومظهر"
+            aria-expanded={mobileMoreOpen}
+          >
+            <MoreHorizontal className="w-4 h-4" />
+            {unreadCount > 0 && (
+              <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#ff4f9a] text-[10px] font-black text-white flex items-center justify-center">
+                {unreadCount}
+              </span>
+            )}
+          </button>
+
+          {mobileMoreOpen && (
+            <div className="absolute left-0 mt-3 w-64 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-3 z-50 text-right space-y-1">
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setMobileMoreOpen(false);
+                  onOpenSearch();
+                }}
+                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+              >
+                <Search className="w-4 h-4 text-[#41e7ff]" />
+                بحث شامل في الأكاديميات
+              </button>
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setMobileMoreOpen(false);
+                  setNotifOpen(true);
+                }}
+                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+              >
+                <span className="relative">
+                  <Bell className="w-4 h-4 text-[#ffd166]" />
+                  {unreadCount > 0 && (
+                    <span className="absolute -top-1.5 -right-1.5 w-3.5 h-3.5 rounded-full bg-[#ff4f9a] text-[9px] font-black text-white flex items-center justify-center">
+                      {unreadCount}
+                    </span>
+                  )}
+                </span>
+                الإشعارات والتحديثات
+              </button>
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setMobileMoreOpen(false);
+                  onOpenVoiceSettings();
+                }}
+                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+              >
+                <Volume2 className="w-4 h-4 text-[#c4ff55]" />
+                إعدادات الصوت والنطق
+              </button>
+              <div className="flex items-center justify-between gap-2 p-2.5 rounded-xl hover:bg-white/5">
+                <span className="text-xs font-bold text-white">مظهر الموقع</span>
+                <ThemePicker />
+              </div>
+            </div>
+          )}
+        </div>
+
         {/* Search Trigger */}
         <button
           onClick={() => {
             playSound('click');
             onOpenSearch();
           }}
-          className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-[#dedbf4] hover:text-[#41e7ff] transition-all cursor-pointer"
+          className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-[#dedbf4] hover:text-[#41e7ff] transition-all cursor-pointer"
           title="بحث شامل في الأكاديميات (Ctrl+K)"
         >
           <Search className="w-4 h-4 text-[#41e7ff]" />
@@ -450,7 +554,7 @@ export const Header: React.FC<HeaderProps> = ({
             playSound('click');
             onOpenVoiceSettings();
           }}
-          className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-[#ffd166] transition-colors cursor-pointer"
+          className="hidden md:block p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-[#ffd166] transition-colors cursor-pointer"
           title="إعدادات الصوت والنطق الصوتي (ذكر / أنثى طبيعي)"
           aria-label="إعدادات الصوت"
         >
@@ -468,8 +572,8 @@ export const Header: React.FC<HeaderProps> = ({
           <span dir="ltr" className="tabular-nums">{userProfile.streakDays.toLocaleString('en-US')}</span><span className="hidden sm:inline">أيام</span>
         </div>
 
-        {/* Notifications Popover */}
-        <div className="relative" ref={notifRef}>
+        {/* Notifications Popover (on mobile it opens from the overflow menu) */}
+        <div className={`relative md:block ${notifOpen ? 'block' : 'hidden'}`} ref={notifRef}>
           <button
             onClick={() => {
               playSound('click');
@@ -478,7 +582,7 @@ export const Header: React.FC<HeaderProps> = ({
               setGrammarMenuOpen(false);
               setSkillsMenuOpen(false);
             }}
-            className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
+            className="hidden md:block p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
             aria-label="الإشعارات"
             title="الإشعارات والتحديثات"
           >
@@ -491,7 +595,7 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
 
           {notifOpen && (
-            <div className="absolute left-0 mt-3 w-80 sm:w-96 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
+            <div className="absolute left-0 mt-3 w-80 sm:w-96 max-sm:fixed max-sm:left-4 max-sm:right-4 max-sm:w-auto max-sm:top-24 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-4 z-50 text-right space-y-3">
               <div className="flex items-center justify-between pb-2 border-b border-white/10">
                 <span className="text-xs font-bold text-white flex items-center gap-1.5">
                   <Bell className="w-3.5 h-3.5 text-[#ffd166]" />
