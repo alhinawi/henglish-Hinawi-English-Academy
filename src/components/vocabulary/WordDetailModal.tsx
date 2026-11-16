@@ -150,9 +150,9 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                 <span className={`px-2.5 py-1 rounded-lg text-xs font-black uppercase border ${cefrStyle}`}>
                   {entry.cefr}
                 </span>
-                <span className="px-2.5 py-1 rounded-lg text-xs font-bold uppercase bg-white/10 text-white/80">
+                {entry.pos && <span className="px-2.5 py-1 rounded-lg text-xs font-bold uppercase bg-white/10 text-white/80">
                   {entry.pos}
-                </span>
+                </span>}
               </div>
               <p className="text-xl sm:text-2xl font-black text-[#c4ff55] mt-2 font-['Cairo',sans-serif]">
                 {shownMeaning}
@@ -160,9 +160,9 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
             </div>
 
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-[11px] font-bold px-2 py-1 rounded bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
+              {entry.frequencyTier && <span className="text-[11px] font-bold px-2 py-1 rounded bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
                 {entry.frequencyTier.toUpperCase()}
-              </span>
+              </span>}
               <span className="text-[11px] font-bold px-2 py-1 rounded bg-white/10 text-white/70">
                 {entry.domain}
               </span>
@@ -243,20 +243,20 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         )}
 
         {/* Example Sentence */}
-        <div className="space-y-3 p-4 rounded-2xl bg-[#c4ff55]/5 border border-[#c4ff55]/20">
+        {(entry.exampleEn?.trim() || shownExample?.trim()) && <div className="space-y-3 p-4 rounded-2xl bg-[#c4ff55]/5 border border-[#c4ff55]/20">
           <h4 className="text-xs font-black text-[#c4ff55] flex items-center gap-1.5">
             <Quote className="w-3.5 h-3.5" />
             <span>{t('wdm.example')}</span>
           </h4>
           <div className="space-y-1.5">
             <p className="text-sm sm:text-base font-bold text-white font-sans" dir="ltr">
-              "{entry.exampleEn}"
+              {entry.exampleEn ? `"${entry.exampleEn}"` : ''}
             </p>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
               {shownExample}
             </p>
           </div>
-        </div>
+        </div>}
 
         {/* Collocations */}
         {entry.collocations && entry.collocations.length > 0 && (
