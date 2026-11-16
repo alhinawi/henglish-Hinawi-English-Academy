@@ -1,0 +1,3540 @@
+[
+ {
+  "id": "q-grm2-015601",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The suspect is thought to _____ the country.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "leave to",
+   "be leaving of",
+   "have left",
+   "has left"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: thought to have left.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015602",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The building is _____ to be demolished next year.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "owed",
+   "ought",
+   "bound by",
+   "due"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: due to be.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015603",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Nothing _____ be done about it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "can",
+   "can to",
+   "could be to",
+   "is can"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: can be done.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015604",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The matter is _____ looked into.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "been",
+   "being",
+   "to be being",
+   "be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: is being looked into.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015605",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The road was _____ blocked by fallen trees.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "complete",
+   "completeness",
+   "completely",
+   "completed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015606",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is rumoured _____ been offered the job.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "having",
+   "to has",
+   "to had",
+   "to have"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: rumoured to have.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015607",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He objects _____ treated like a child.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to being",
+   "to be",
+   "being",
+   "for being"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: object to + being.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015608",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They were _____ to leave the building.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "ordered of",
+   "ordered",
+   "said",
+   "ordering"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: ordered to.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015609",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The report _____ to have been leaked.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "believes",
+   "believing",
+   "is believed",
+   "believed up"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: is believed to have.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015610",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It _____ to be a good idea at the time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "was seeming",
+   "had seemed to",
+   "seems to have",
+   "seemed"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: seemed + to be.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015611",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It is high time something _____ about the problem.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "was done",
+   "is done by",
+   "has done",
+   "did"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: high time + past passive.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015612",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The applicants _____ interviewed next week.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are being to",
+   "are to be",
+   "will being",
+   "have to being"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: are to be.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015613",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced passive and agent)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The book is said to be written in 1850 before.",
+   "The book says to have been written in 1850.",
+   "The book is said to have been written in 1850.",
+   "The book is saying written in 1850."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: said to have been.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015614",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced passive and agent)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He is thought hiding abroad.",
+   "He thinks to be hiding abroad.",
+   "He is thought be hiding abroad.",
+   "He is thought to be hiding abroad."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: thought to be hiding.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015615",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced passive and agent)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I don't like being told what to do.",
+   "I don't like to being told what to do.",
+   "I don't like been told what to do.",
+   "I don't like be told what to do."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: being told.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015616",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced passive and agent)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The windows broke by the storm.",
+   "The windows were broken by the storm.",
+   "The windows were broke by the storm.",
+   "The windows are broken the storm."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: passive.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015617",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced passive and agent)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It is expecting to rain tomorrow.",
+   "It expects to rain tomorrow.",
+   "It is expected to rain tomorrow.",
+   "It is expected raining tomorrow."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: is expected to.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015618",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (advanced passive and agent)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She was awarded for a prize her work.",
+   "She awarded a prize by her work.",
+   "She was award a prize for her work.",
+   "She was awarded a prize for her work."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: was awarded.",
+  "topic": "Grammar: advanced passive and agent (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015619",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ in a hurry, he forgot his keys.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Leaving",
+   "Left to",
+   "Leave",
+   "To leave"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: participle.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015620",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ on the table, the letter was easy to find.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Placing",
+   "Placed",
+   "Having place",
+   "To place"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: passive participle.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015621",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ that he was ill, we cancelled the meeting.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Known to",
+   "Know",
+   "Knowing",
+   "Having known to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: participle of reason.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015622",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "There's no point _____ for him.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to wait",
+   "wait",
+   "waited",
+   "waiting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: no point + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015623",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I don't mind _____ for you.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "waiting",
+   "to wait",
+   "wait",
+   "waited"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: mind + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015624",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She is capable _____ solving the problem.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "for",
+   "of",
+   "to",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: capable of.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015625",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He denied _____ the document.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to see",
+   "see",
+   "having seen",
+   "seeing to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: deny + having p.p.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015626",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I'm looking forward _____ you.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to see",
+   "seeing",
+   "for seeing",
+   "to seeing"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: look forward to + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015627",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Their _____ the rules was unexpected.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "breaking",
+   "break",
+   "broke",
+   "broken"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: gerund as noun.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015628",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We object to _____ treated unfairly.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "be",
+   "being",
+   "been",
+   "to be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: object to being.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015629",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He prevented them _____ leaving.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "of",
+   "to",
+   "from",
+   "at"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: prevent from.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015630",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She insisted _____ seeing the manager.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "in",
+   "to",
+   "at",
+   "on"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: insist on.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015631",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She was suspected _____ stealing the jewels.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "of",
+   "for",
+   "with",
+   "about"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: suspected of.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015632",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It is worth _____ the extra effort.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to make",
+   "making",
+   "make",
+   "made"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: worth + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015633",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Do you mind _____ the window?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "to open",
+   "open",
+   "opening",
+   "opened"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: mind + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015634",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (participle and gerund subtleties)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Having been finish, she left.",
+   "Have finished, she left.",
+   "Having finish, she left.",
+   "Having finished, she left."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: having p.p.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015635",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (participle and gerund subtleties)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The man being questioned is a suspect.",
+   "The man questioning is a suspect.",
+   "The man to question is a suspect now.",
+   "The man questioned being is a suspect."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: passive continuous reduced.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015636",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (participle and gerund subtleties)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Do you mind me smoke here?",
+   "Do you mind my smoking here?",
+   "Do you mind I smoking here?",
+   "Do you mind of smoking here?"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: mind + possessive + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015637",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (participle and gerund subtleties)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "On arrive, she called her mother.",
+   "On to arrive, she called her mother.",
+   "On arriving, she called her mother.",
+   "On arrived, she called her mother."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: on + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015638",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (participle and gerund subtleties)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Without know it, he helped me.",
+   "Without to know it, he helped me.",
+   "Without known it, he helped me.",
+   "Without knowing it, he helped me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: without + -ing.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015639",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (participle and gerund subtleties)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'm used to being told what to do.",
+   "I'm used to be told what to do.",
+   "I used to being told what to do.",
+   "I'm using to be told what to do."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: be used to + being.",
+  "topic": "Grammar: participle and gerund subtleties (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015640",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Not knowing what to do, she called me\" is a correct participle clause.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: not + -ing.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015641",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Having seen the film, it was boring\" is a correct sentence.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: dangling participle.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015642",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Seen from the hill, the city looks small\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: passive participle.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015643",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"I look forward to hear from you\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: hearing.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015644",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The more I read, the less I understand\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: the + comp, the + comp.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015645",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"He is the more tall of the three\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: the tallest of the three.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015646",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Were I rich, I'd travel\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "انقلاب.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015647",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"No sooner he came than she left\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: No sooner had he come.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015648",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"It's no use crying\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: no use + -ing.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015649",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"She suggested him to go\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: suggested that he go.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015650",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The negotiations _____ down after weeks of talks.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fell",
+   "broke",
+   "went",
+   "turned"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: break down.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015651",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ up a story to explain his absence.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "set",
+   "put",
+   "made",
+   "took"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: make up a story.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015652",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The company is _____ out its new range next month.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "running",
+   "going",
+   "turning",
+   "rolling"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: roll out.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015653",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She _____ through a lot of money last year.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "went",
+   "ran",
+   "got",
+   "broke"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: go through.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015654",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We need to _____ down on spending.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "clap",
+   "clamp",
+   "clip",
+   "chop"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: clamp down on.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015655",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He's _____ with the flu.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "going up",
+   "breaking up",
+   "coming down",
+   "turning off"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: come down with.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015656",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Please _____ off your shoes at the door.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "put",
+   "pull",
+   "bring",
+   "take"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: take off.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015657",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They _____ into a heated argument.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "got",
+   "put",
+   "made",
+   "took"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: get into an argument.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015658",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The scandal _____ the party apart.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "took",
+   "tore",
+   "put",
+   "turned"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: tear apart.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015659",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The meeting was _____ off until next week.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "set",
+   "run",
+   "put",
+   "took"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: put off.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015660",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "It _____ out that he was lying.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "came",
+   "went",
+   "got",
+   "turned"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: turn out that.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015661",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The plan _____ through at the last minute.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "fell",
+   "came",
+   "went",
+   "put"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: fall through.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015662",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ away with murder.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "went",
+   "got",
+   "ran",
+   "put"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: get away with.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015663",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They _____ out a new strategy.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "put",
+   "made",
+   "worked",
+   "took"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: work out.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015664",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to reject politely\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "turn up",
+   "turn in",
+   "turn on",
+   "turn down"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: turn down.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015665",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to be revealed\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "come out",
+   "come in",
+   "come up",
+   "come off"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: come out.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015666",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to cause something to happen\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "bring up",
+   "bring about",
+   "bring in",
+   "bring on of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: bring about.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015667",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to raise a child\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "bring out",
+   "bring down",
+   "bring up",
+   "bring off"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: bring up.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015668",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to mention a topic\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "bring in",
+   "bring about",
+   "bring down",
+   "bring up"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: bring up.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015669",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to be successful in a difficult task\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "pull off",
+   "pull out",
+   "pull in",
+   "pull up"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: pull off.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015670",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to withdraw from an agreement\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "pull off",
+   "pull out",
+   "pull up",
+   "pull in"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: pull out.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015671",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to understand someone's meaning\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "get over",
+   "get away",
+   "get across",
+   "get off"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "get across = يوصّل الفكرة.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015672",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to tolerate bad behaviour\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "put out",
+   "put up",
+   "put by",
+   "put up with"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: put up with.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015673",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to criticise someone severely\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "tear into",
+   "tear up",
+   "tear down",
+   "tear off"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: tear into.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015674",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to deal with a problem\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "sort off",
+   "sort out",
+   "sort up",
+   "sort in"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: sort out.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015675",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to approach someone with an idea\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "come off",
+   "come out",
+   "come up to",
+   "come by"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: come up to.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015676",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to start a business\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "set off",
+   "set back",
+   "set aside",
+   "set up"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: set up.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015677",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to delay progress\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "set back",
+   "set up",
+   "set off",
+   "set in"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: set back.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015678",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which means \"to save for later\" (advanced phrasal verbs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "set off",
+   "set aside",
+   "set up",
+   "set in"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: set aside.",
+  "topic": "Usage: advanced phrasal verbs (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015679",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He did it _____ his will.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "at",
+   "against",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: against his will.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015680",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They met _____ chance.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "by"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: by chance.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015681",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We're _____ the verge of a breakthrough.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "in",
+   "at",
+   "by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: on the verge of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015682",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ my knowledge, he left yesterday.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "At",
+   "To",
+   "By",
+   "On"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: to my knowledge.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015683",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He's _____ the mood for a party.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "by"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: in the mood.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015684",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The matter is _____ our control.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "behind",
+   "before",
+   "besides",
+   "beyond"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: beyond control.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015685",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ no time, we were there.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "In",
+   "At",
+   "By",
+   "On"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "in no time = بسرعة.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015686",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ the whole, I agree.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "At",
+   "On",
+   "By",
+   "In"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: on the whole.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015687",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He refused _____ any circumstances.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "at",
+   "under",
+   "in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: under any circumstances.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015688",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She's _____ pains to help us.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "in great",
+   "on great",
+   "by great",
+   "at great"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: at great pains.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015689",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ the face of danger, he stayed calm.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "In",
+   "At",
+   "On",
+   "By"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: in the face of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015690",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They did it _____ the sake of their children.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "by",
+   "for",
+   "on",
+   "at"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: for the sake of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015691",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "I'm writing _____ behalf of the manager.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: on behalf of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015692",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ account of the weather, the game was cancelled.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "At",
+   "By",
+   "In",
+   "On"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: on account of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015693",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "She succeeded _____ spite of everything.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "in",
+   "at",
+   "on",
+   "by"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: in spite of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015694",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He is _____ his best behaviour today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "in",
+   "on",
+   "at",
+   "by"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: on his best behaviour.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015695",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "We did it _____ accordance with the rules.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "on",
+   "at",
+   "in",
+   "by"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: in accordance with.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015696",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ regard to your request, we agree.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "At",
+   "On",
+   "In",
+   "With"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: with regard to.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015697",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ the circumstances, you did well.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "Given",
+   "Giving",
+   "Gave",
+   "Gives"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: given the circumstances.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015698",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "_____ the way, did you call him?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "At",
+   "By",
+   "On",
+   "In"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: by the way.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015699",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "In regard of your letter, we have decided.",
+   "At regard to your letter, we have decided.",
+   "With regard to your letter, we have decided.",
+   "By regard to your letter, we have decided."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: with regard to.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015700",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "In the view of the delay, we apologise on.",
+   "At view of the delay, we apologise.",
+   "By view of the delay, we apologise.",
+   "In view of the delay, we apologise."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: in view of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015701",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "It is out of the question.",
+   "It is out from the question.",
+   "It is outside of question.",
+   "It is off the question."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: out of the question.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015702",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He is no means stupid.",
+   "He is by no means stupid.",
+   "He is by no mean stupid.",
+   "He is at no means stupid."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: by no means.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015703",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "In any rate, we tried.",
+   "On any rate, we tried.",
+   "At any rate, we tried.",
+   "By any rate, we tried."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: at any rate.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015704",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "In the meantimes, please wait.",
+   "At the meantime, please wait.",
+   "On the meantime, please wait.",
+   "In the meantime, please wait."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: in the meantime.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015705",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He did it behind my back.",
+   "He did it at my back.",
+   "He did it on my back by.",
+   "He did it in my back."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: behind my back.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015706",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (prepositional phrases and fixed expressions)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She is on charge of the department.",
+   "She is in charge of the department.",
+   "She is at charge of the department.",
+   "She is by charge of the department."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: in charge of.",
+  "topic": "Usage: prepositional phrases and fixed expressions (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015707",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The committee will _____ the proposal next week.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "consist",
+   "consent",
+   "consider",
+   "console"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: consider.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015708",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The law _____ that all children attend school.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "stimulates",
+   "stipends",
+   "stitches",
+   "stipulates"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "stipulate = ينص.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015709",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The new policy will _____ in the spring.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "come into force",
+   "come in force",
+   "come at force",
+   "come on force"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: come into force.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015710",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He was _____ of all charges.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "accused",
+   "acquitted",
+   "acquired",
+   "acquainted"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "acquit = يبرأ.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015711",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The company aims to _____ costs.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "curve",
+   "curl",
+   "curb",
+   "curtain"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: curb costs.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015712",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The judge _____ the case due to lack of evidence.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "dismissed up",
+   "disbanded",
+   "discarded",
+   "dismissed"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: dismiss a case.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015713",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The two parties _____ an agreement.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "reached",
+   "reached to",
+   "arrived",
+   "met"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: reach an agreement.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015714",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The article _____ the issue of climate change.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "adresses",
+   "addresses",
+   "addicts",
+   "adds"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: address an issue.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015715",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The university has _____ strict rules.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "exposed",
+   "supposed",
+   "imposed",
+   "opposed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: impose rules.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015716",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "They _____ the contract after a dispute.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "terminal",
+   "terminated up",
+   "terrified",
+   "terminated"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: terminate a contract.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015717",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The charity _____ funds for the victims.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "raised",
+   "rose",
+   "arose",
+   "arisen"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: raise funds.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015718",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He _____ his position as chairman.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "resisted",
+   "resigned",
+   "resolved",
+   "resumed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: resign from.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015719",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The scandal _____ public trust.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "undertook",
+   "understood",
+   "undermined",
+   "underlined"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: undermine trust.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015720",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The findings _____ our expectations.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "excluded",
+   "exceeded to",
+   "expelled",
+   "exceeded"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: exceed expectations.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015721",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "He was _____ for his bravery.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "commended",
+   "commanded",
+   "commented",
+   "committed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "commend = يشيد.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015722",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to officially end a law\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "repeat",
+   "repeal",
+   "repel",
+   "replace"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: repeal.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015723",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to officially approve\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "rectify",
+   "ratio",
+   "ratify",
+   "rarify"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: ratify.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015724",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to cancel an order\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "revolve",
+   "revive",
+   "revise",
+   "revoke"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: revoke.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015725",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to make a rule stronger\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "reinforce",
+   "reinvent",
+   "reinforce of",
+   "refund"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: reinforce.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015726",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to say something is not true\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "refuse",
+   "refute",
+   "refund",
+   "refresh"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: refute.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015727",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to make someone calm\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "purify",
+   "pamper",
+   "pacify",
+   "pardon"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: pacify.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015728",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to give up power\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "abduct",
+   "abolish",
+   "abbreviate",
+   "abdicate"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: abdicate.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015729",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to officially end something\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "abolish",
+   "abdicate",
+   "absorb",
+   "abstain"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: abolish.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015730",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to choose not to vote\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "abstract",
+   "abstain",
+   "absorb",
+   "abolish"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: abstain.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015731",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to gain by effort\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "acquit",
+   "acquaint",
+   "acquire",
+   "accuse"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: acquire.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015732",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to make bigger\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "enlist",
+   "enrol",
+   "enrich",
+   "enlarge"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: enlarge.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015733",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to make rich in quality\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "enrich",
+   "enlist",
+   "enrol",
+   "enlarge"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: enrich.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015734",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to officially join a course\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "enlist up",
+   "enrol",
+   "enrich",
+   "enlarge"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: enrol.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015735",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to give someone power to do something\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "author",
+   "authentic",
+   "authorise",
+   "autograph"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: authorise.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015736",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to pay someone back\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "reinforce",
+   "rehearse",
+   "reiterate",
+   "reimburse"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: reimburse.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015737",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which word means \"to repeat for emphasis\" (formal verbs in context)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "reiterate",
+   "reimburse",
+   "rehearse",
+   "reinstate"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: reiterate.",
+  "topic": "Usage: formal verbs in context (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015738",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of sheep was crossing the road.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "herd",
+   "flock",
+   "swarm",
+   "pack"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: flock of sheep.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015739",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of cattle grazed in the field.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "flock",
+   "swarm",
+   "herd",
+   "pack"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: herd of cattle.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015740",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of bees attacked him.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "flock",
+   "herd",
+   "pack",
+   "swarm"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: swarm of bees.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015741",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of wolves hunted at night.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "pack",
+   "flock",
+   "swarm",
+   "herd"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: pack of wolves.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015742",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of fish swam by.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "flock",
+   "shoal",
+   "herd",
+   "pack"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: shoal of fish.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015743",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of news reached us.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "slice",
+   "part",
+   "piece",
+   "portion"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: piece of news.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015744",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of bread is on the table.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "piece of loaf",
+   "bar",
+   "slab",
+   "loaf"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: loaf of bread.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015745",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I need a _____ of paper.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sheet",
+   "slice",
+   "sheeting",
+   "bar"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: sheet of paper.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015746",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She bought a _____ of soap.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "slice",
+   "bar",
+   "loaf",
+   "sheet"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: bar of soap.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015747",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He drank a _____ of tea.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "slice",
+   "sheet",
+   "cup",
+   "loaf"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: cup of tea.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015748",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of thieves was arrested.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "herd",
+   "flock",
+   "swarm",
+   "gang"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: gang of thieves.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015749",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of singers performed.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "choir",
+   "crew",
+   "crowd of",
+   "class"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: choir.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015750",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The _____ of the ship were rescued.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "choir",
+   "crew",
+   "crowd",
+   "class"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: crew.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015751",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A large _____ gathered outside.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "crew",
+   "pack",
+   "crowd",
+   "herd"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: crowd.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015752",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "A _____ of keys was on the table.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "flock",
+   "swarm",
+   "slice",
+   "bunch"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: bunch of keys.",
+  "topic": "Usage: nouns for groups and quantities (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015753",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which sentence is correct (noun and verb pairs)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The report was rejected.",
+   "The report was rejection.",
+   "The report was rejecting.",
+   "The report was to rejection."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: verb p.p.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015754",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"Her _____ was accepted.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "apply",
+   "application",
+   "applicant",
+   "applying"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015755",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"He is a very _____ man.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "rely",
+   "reliability",
+   "reliable",
+   "relied"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: adjective.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015756",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"We discussed the _____ of the plan.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "implement",
+   "implemented",
+   "implementing",
+   "implementation"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015757",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"His _____ surprised everyone.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "resignation",
+   "resign",
+   "resigned",
+   "resigning"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015758",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"There is a clear _____ between them.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "distinct",
+   "distinction",
+   "distinguish",
+   "distinctly"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015759",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"The _____ of the project was delayed.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "complete",
+   "completely",
+   "completion",
+   "completed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: noun.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-015760",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which word completes: \"She spoke _____ about her work.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "enthusiastic",
+   "enthusiasm",
+   "enthuse",
+   "enthusiastically"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: adverb.",
+  "topic": "Usage: noun and verb pairs (C1)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015761",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The committee _____ divided on the issue.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "is being",
+   "has been to",
+   "were being"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "committee يمكن جمع في البريطاني: are divided.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015762",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Neither the teacher nor the students _____ ready.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "was",
+   "were",
+   "is",
+   "has been"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأقرب جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015763",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "A number of students _____ absent.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is",
+   "was",
+   "are",
+   "has been"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a number of + جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015764",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The majority of people _____ tea.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "prefers",
+   "has preferred",
+   "is preferring",
+   "prefer"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "majority + people جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015765",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Mathematics _____ my favourite subject.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is",
+   "are",
+   "were",
+   "have been"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "اسم علم مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015766",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Fifty dollars _____ too much for a book.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "is",
+   "were",
+   "have been"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مبلغ مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015767",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The staff _____ meeting today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is being",
+   "was",
+   "are",
+   "has been to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "staff جمع في البريطاني.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015768",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "One of the reasons _____ the cost.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "were",
+   "have been",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "one of + مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015769",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Each of the boys _____ a bike.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "has",
+   "have",
+   "are having",
+   "were having"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "each + مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015770",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The news _____ not good.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "is",
+   "were",
+   "have been"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "news مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015771",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Everyone _____ present.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "were",
+   "is",
+   "have been"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "everyone مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015772",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Either of the options _____ acceptable.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "were",
+   "have been",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "either of + مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015773",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The police _____ looking for him.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "is",
+   "was",
+   "has been"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "police جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015774",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Ten years _____ a long time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "is",
+   "were",
+   "have been"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مدة مفردة.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015775",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The rich _____ not always happy.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "is",
+   "was",
+   "are",
+   "has been"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "the + adj جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015776",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (subject-verb agreement advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Bread and butter are my usual breakfast.",
+   "Bread and butters is my usual breakfast.",
+   "Bread and butter being my usual breakfast.",
+   "Bread and butter is my usual breakfast."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "اسمان بمعنى واحد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015777",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (subject-verb agreement advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Physics is difficult.",
+   "Physics are difficult.",
+   "Physic is difficult.",
+   "Physics were difficult."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015778",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (subject-verb agreement advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The scissors is on the table.",
+   "The scissors are on the table.",
+   "The scissor is on the table.",
+   "A scissors are on the table."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "scissors جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015779",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Which sentence is correct (subject-verb agreement advanced)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Not only the manager but also the staff was angry.",
+   "Not only the manager but also the staff is angry.",
+   "Not only the manager but also the staff were angry.",
+   "Not only the manager but also the staff being angry."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأقرب staff جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015780",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Mathematics is difficult\" uses a singular verb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "اسم علم مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015781",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The news are good\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: news is.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015782",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The police are investigating\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "police جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015783",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Each of the girls have a book\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: has.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015784",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Neither the manager nor the workers were happy\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأقرب جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015785",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"A number of problems has arisen\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: have arisen.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015786",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The number of problems has increased\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "the number of + مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015787",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Ten dollars are a lot\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Ten dollars is a lot.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015788",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Everyone has their own opinion\" is widely accepted.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "their مقبولة.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015789",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"One of my friends are a doctor\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: is.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015790",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The scissors are sharp\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "scissors جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015791",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Physics are hard\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: Physics is hard.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015792",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The jury has reached a verdict\" is acceptable.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ممكن جماعة.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015793",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Either he or I am wrong\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأقرب I am.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015794",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The rich are getting richer\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "the + adj جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015795",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Bread and butter is nice\" can use a singular verb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "وحدة واحدة.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015796",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The majority of the students is happy\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: are.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015797",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"The committee are divided\" is acceptable in British English.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "جمع.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015798",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Measles is a serious illness\" uses a singular verb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "اسم مرض مفرد.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015799",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Politics are my passion\" is the standard singular-subject form.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الشائع Politics is.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-015800",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "\"Two hours is a long time to wait\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مدة مفردة.",
+  "topic": "Grammar: subject-verb agreement advanced (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ }
+]
