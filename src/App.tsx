@@ -1,3 +1,5 @@
+import { useArcadeProgress } from './services/arcadeProgressService';
+import { combinedStudyStreak } from './utils/studyStreak';
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { PageRoute } from './types';
 import { AdminServerGate } from './components/admin/AdminServerGate';
@@ -97,7 +99,10 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   } = useProgress(authUser?.id);
 
   // Active profile from auth session or fallback
-  const activeProfile = authUser || userProfile;
+  const arcadeProgress = useArcadeProgress();
+  const [streakClock, setStreakClock] = useState(() => new Date());
+  useEffect(() => { const timer = setInterval(() => setStreakClock(new Date()), 60_000); return () => clearInterval(timer); }, []);
+  const activeProfile = { ...(authUser || userProfile), streakDays: combinedStudyStreak(progress, arcadeProgress, streakClock) };
 
   // Consume a Google sign-in redirect (#auth-callback?token=...) once on mount.
   useEffect(() => {
