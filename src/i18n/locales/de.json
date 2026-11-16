@@ -2709,5 +2709,12 @@
   "pr.us": "Amerikanische Aussprache anhören (US)",
   "pr.uk": "Britische Aussprache anhören (UK)",
   "lc.wrong": "Falsch",
-  "lc.correct": "Richtig"
+  "lc.correct": "Richtig",
+  "cv.title": "Abschlusszertifikat prüfen",
+  "cv.loading": "Ausstellungsnachweis wird geprüft...",
+  "cv.registered": "Zertifikat ausgestellt und auf dem Server registriert",
+  "cv.summary": "Niveau {level} • Ergebnis {score}% • {date}",
+  "cv.disclaimer": "Dies bestätigt den Abschluss von Henglish-Kursen und Bewertungen. Es ist keine externe Akkreditierung und keine beaufsichtigte Prüfung mit Identitätskontrolle.",
+  "cv.unverified": "Der Code ist ungültig, das Zertifikat wurde nicht gefunden oder der Prüfdienst ist nicht verfügbar. Das Zertifikat kann nicht bestätigt werden.",
+  "cv.back": "Zurück zur Akademie"
 }
