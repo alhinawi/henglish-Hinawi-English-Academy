@@ -214,14 +214,15 @@ export const SourcesPage: React.FC = () => {
               setFiltersOpen(o => !o);
             }}
             aria-expanded={filtersOpen}
-            className={`shrink-0 inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black border transition-colors cursor-pointer ${
+            aria-label="الفلاتر"
+            title="الفلاتر"
+            className={`shrink-0 inline-flex items-center justify-center p-2.5 rounded-xl border transition-colors cursor-pointer ${
               filtersOpen || costFilter !== 'all' || levelFilter !== 'all'
                 ? 'bg-[#41e7ff]/20 text-[#41e7ff] border-[#41e7ff]/50'
                 : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
             }`}
           >
-            <SlidersHorizontal className="w-3.5 h-3.5" />
-            <span>الفلاتر</span>
+            <SlidersHorizontal className="w-4 h-4" />
           </button>
           <button
             onClick={() => {
