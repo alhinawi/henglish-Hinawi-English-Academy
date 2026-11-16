@@ -10,7 +10,8 @@
     "prebuild:next": "tailwindcss -i src/index.css -o src/app/globals.built.css --minify",
     "build:next": "next build",
     "dev:next": "tailwindcss -i src/index.css -o src/app/globals.built.css && next dev",
-    "lint:arabic": "node scripts/lint-arabic.mjs"
+    "lint:arabic": "node scripts/lint-arabic.mjs",
+    "test:regressions": "node scripts/check-regressions.cjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^6.0.2",
