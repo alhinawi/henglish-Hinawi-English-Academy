@@ -22,6 +22,7 @@ const checks = [
   'check-phrase-retry.cjs',
   'check-exam-vocab-retry.cjs',
   'check-question-cycles.cjs',
+  'check-question-bank-copy.cjs',
   'check-sentence-stats.cjs',
   'check-copy-success.cjs',
   'check-sentence-rating-bidi.cjs',
