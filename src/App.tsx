@@ -12,7 +12,7 @@ import { useProgress } from './utils/useProgress';
 import { useAuth } from './context/AuthContext';
 import { completeGoogleSignIn, getSavedAuthSession, saveAuthSession } from './services/authService';
 import { SettingsModal } from './components/SettingsModal';
-import { consumeGoogleAuthCallback } from './services/henglishApi';
+import { consumeGoogleAuthCallback, GOOGLE_REAUTH_EVENT } from './services/henglishApi';
 
 // Auth Pages
 import { LoginPage } from './views/auth/LoginPage';
@@ -127,6 +127,18 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Owner account must use Google: when any API call gets 428
+  // google_reauth_required (stale password session), sign out locally so the
+  // login page (with the Google button) replaces the half-broken session.
+  useEffect(() => {
+    const onReauthRequired = () => {
+      if (session.type === 'authenticated') logout();
+    };
+    window.addEventListener(GOOGLE_REAUTH_EVENT, onReauthRequired);
+    return () => window.removeEventListener(GOOGLE_REAUTH_EVENT, onReauthRequired);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session.type]);
 
   // Sync route with URL hash
   useEffect(() => {

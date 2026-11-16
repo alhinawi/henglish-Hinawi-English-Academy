@@ -7,6 +7,33 @@
 const API_BASE = 'https://henglish-api.hnz.workers.dev';
 const TOKEN_KEY = 'henglish_api_token';
 
+// The owner account must sign in via Google. A stale password-minted session
+// makes the API answer 428 google_reauth_required on every authed call; the
+// app listens for this event, drops the dead session and offers Google sign-in.
+export const GOOGLE_REAUTH_EVENT = 'henglish:google-reauth-required';
+export const GOOGLE_REAUTH_MESSAGE =
+  'حساب الإدارة بيدخل بحساب Google بس. استخدم زر الدخول بجوجل.';
+
+function notifyGoogleReauth(): void {
+  clearHenglishApiToken();
+  try {
+    window.dispatchEvent(new CustomEvent(GOOGLE_REAUTH_EVENT));
+  } catch {
+    // ignore
+  }
+}
+
+// True when the response is the owner-Google 428 (and handles it).
+async function checkGoogleReauth(res: Response): Promise<boolean> {
+  if (res.status !== 428) return false;
+  const body = await res.clone().json().catch(() => null);
+  if (body && body.error === 'google_reauth_required') {
+    notifyGoogleReauth();
+    return true;
+  }
+  return false;
+}
+
 export interface ApiUser {
   is_admin?: boolean;
   id: number;
@@ -104,7 +131,10 @@ export async function apiAdminOverview(
     const res = await fetch(`${API_BASE}/api/admin/overview`, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    if (!res.ok) return { status: res.status, body: null };
+    if (!res.ok) {
+      await checkGoogleReauth(res);
+      return { status: res.status, body: null };
+    }
     return { status: res.status, body: (await res.json()) as AdminOverview };
   } catch {
     return { status: 0, body: null };
@@ -116,32 +146,40 @@ export async function apiGetMe(token: string): Promise<{ user: ApiUser } | null>
     const res = await fetch(`${API_BASE}/api/me`, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      await checkGoogleReauth(res);
+      return null;
+    }
     return await res.json();
   } catch {
     return null;
   }
 }
+export type ApiUpdateMeResult =
+  | { ok: true; user: ApiUser }
+  | { ok: false; googleReauth: boolean };
+
 export async function apiUpdateMe(
   token: string,
   patch: { name?: string; avatar?: string | null }
-): Promise<{ user: ApiUser } | null> {
+): Promise<ApiUpdateMeResult> {
   try {
     const res = await fetch(`${API_BASE}/api/me`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
       body: JSON.stringify(patch),
     });
-    if (!res.ok) return null;
-    return (await res.json()) as { user: ApiUser };
+    if (!res.ok) return { ok: false, googleReauth: await checkGoogleReauth(res) };
+    const body = (await res.json()) as { user: ApiUser };
+    return { ok: true, user: body.user };
   } catch {
-    return null;
+    return { ok: false, googleReauth: false };
   }
 }
 
 
 function mapApiError(status: number, body: any): string {
-  if (body?.error === 'owner_google_required' || body?.error === 'google_reauth_required') return 'حساب الإدارة بيدخل بحساب Google بس. استخدم زر الدخول بجوجل.';
+  if (body?.error === 'owner_google_required' || body?.error === 'google_reauth_required') return GOOGLE_REAUTH_MESSAGE;
   const fields = body && body.fields ? body.fields : {};
   if (fields.email === 'already registered') return 'الإيميل ده مسجل قبل كده. جرّب تسجيل الدخول.';
   if (fields.password) return 'كلمة السر لازم تكون 8 حروف على الأقل.';
@@ -213,7 +251,10 @@ export async function apiGetProgress(token: string): Promise<{ progress: any; up
     const res = await fetch(`${API_BASE}/api/progress`, {
       headers: { Authorization: `Bearer ${token}` },
     });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      await checkGoogleReauth(res);
+      return null;
+    }
     return await res.json();
   } catch {
     return null;
@@ -230,6 +271,7 @@ export async function apiPutProgress(token: string, progress: unknown): Promise<
       },
       body: JSON.stringify({ progress }),
     });
+    if (!res.ok) await checkGoogleReauth(res);
     return res.ok;
   } catch {
     return false;
@@ -243,7 +285,10 @@ export async function apiLeaderboard(): Promise<LeaderboardResult | null> {
   try {
     const token = getHenglishApiToken();
     const res = await fetch(`${API_BASE}/api/leaderboard`, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      await checkGoogleReauth(res);
+      return null;
+    }
     return await res.json();
   } catch { return null; }
 }
