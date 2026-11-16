@@ -2251,5 +2251,20 @@
   "sad.activeContext": "Aktuell aktiver Kontext:",
   "sad.thinking": "Der Assistent denkt über eine präzise Antwort nach...",
   "sad.quickPrompts": "Vorgeschlagene Schnellfragen:",
-  "sad.inputPlaceholder": "Frage den Assistenten zu einem Detail der Übersetzung..."
+  "sad.inputPlaceholder": "Frage den Assistenten zu einem Detail der Übersetzung...",
+  "dt.errTooLarge": "Die Datei ist zu groß (maximal 10 MB).",
+  "dt.errFormat": "Nicht unterstütztes Dateiformat. Bitte wähle eine TXT-, PDF- oder DOCX-Datei.",
+  "dt.decoding": "Dokument wird dekodiert und Absätze werden extrahiert...",
+  "dt.translatingChunk": "Abschnitt {n} von {m} wird übersetzt...",
+  "dt.done": "Dokument erfolgreich übersetzt - Formatierung und Absätze erhalten!",
+  "dt.errTranslate": "Die Dokumentübersetzung konnte nicht abgeschlossen werden. Prüfe Internetverbindung und Datei.",
+  "dt.title": "Vollständige Dokumentübersetzung (Document Translation Studio)",
+  "dt.blurb": "Lade TXT-, PDF- oder DOCX-Dateien hoch. Das System extrahiert den Inhalt und übersetzt ihn vollständig unter Beibehaltung der Absatzreihenfolge.",
+  "dt.formats": "Unterstützte Formate: TXT, PDF, DOCX",
+  "dt.pickFile": "Klicke, um ein Dokument von deinem Gerät zu wählen",
+  "dt.kb": "KB",
+  "dt.dropHint": "Oder ziehe die Datei hierher (max. 10MB)",
+  "dt.start": "Dokument jetzt übersetzen",
+  "dt.preview": "Vorschau des übersetzten Dokuments:",
+  "dt.download": "Übersetztes Dokument herunterladen (.txt)"
 }
