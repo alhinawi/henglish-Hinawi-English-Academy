@@ -1,10 +1,12 @@
+import { applyMovieTranscriptCorrections } from '../data/movieTranscriptCorrections';
+import { activeSubtitleAt } from '../utils/movieTimeline';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - LEARN ENGLISH THROUGH MOVIES SMART STUDIO PLAYER
 // Official YouTube IFrame Player with synchronized bilingual Egyptian Arabic subtitles,
 // interactive word lookup, scene-based quizzes, vocabulary extraction, and echo speaking mode.
 // ==============================================================================
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { MovieSceneItem, TimedSubtitle, SubtitleWord } from '../data/movieScenesData';
 import { speakText } from '../utils/voiceEngine';
 import { playSound } from '../utils/audio';
@@ -64,15 +66,15 @@ interface MoviePlayerStudioProps {
   onBackToSearch?: () => void;
 }
 
-export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onBackToSearch }) => {
-  // Every clip plays from the very first second (0:00) per product decision:
-  // learners hear the full context, and the transcript stays in sync from second 0.
+export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: originalScene, onBackToSearch }) => {
+  const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
+  // Play the complete source from 0:00; subtitle times use the same source clock.
   const sceneStart = 0;
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState<number>(sceneStart);
   const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 0.75 | 1.0>(1.0);
   const [isLoopingCurrentLine, setIsLoopingCurrentLine] = useState(false);
-  const [activeSubtitleIndex, setActiveSubtitleIndex] = useState<number>(0);
+  const [activeSubtitleIndex, setActiveSubtitleIndex] = useState<number>(-1);
   const [activeTab, setActiveTab] = useState<'transcript' | 'vocabulary' | 'quizzes' | 'echo'>('transcript');
   const [selectedWord, setSelectedWord] = useState<SubtitleWord | null>(null);
   const [savedWords, setSavedWords] = useState<string[]>([]);
@@ -97,7 +99,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
   const timerRef = useRef<number | null>(null);
   const isPlayingRef = useRef(false);
   const loopLineRef = useRef(false);
-  const activeSubIdxRef = useRef(0);
+  const activeSubIdxRef = useRef(-1);
   const pendingSeekRef = useRef<number | null>(null);
   const seekTargetRef = useRef<{ t: number; until: number } | null>(null);
   const transcriptListRef = useRef<HTMLDivElement>(null);
@@ -109,11 +111,13 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
     setIsPlayerReady(false);
     seekTargetRef.current = null;
     setCurrentTime(sceneStart);
-    setActiveSubtitleIndex(0);
+    setActiveSubtitleIndex(-1);
     setIsPlaying(false);
     isPlayingRef.current = false;
-    activeSubIdxRef.current = 0;
+    activeSubIdxRef.current = -1;
     pendingSeekRef.current = null;
+    loopLineRef.current = false;
+    setIsLoopingCurrentLine(false);
 
     loadYouTubeApi()
       .then(YT => {
@@ -181,7 +185,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
       playerRef.current = null;
       playerReadyRef.current = false;
     };
-  }, [scene.youtubeId, scene.startTime]);
+  }, [scene.id, scene.youtubeId]);
 
   // Real player time tracker: continuously poll the YouTube player for true playback time.
   // Always running while mounted (not gated on play state) so taps on the native iframe
@@ -226,15 +230,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
         }
       }
 
-      // Stop at scene end
-      if (playing && t >= scene.endTime) {
-        player.pauseVideo();
-        player.seekTo(sceneStart, true);
-        setCurrentTime(sceneStart);
-        isPlayingRef.current = false;
-        setIsPlaying(false);
-        return;
-      }
+      // The catalog's historical excerpt endTime is not a verified video duration.
+      // Let YouTube stop at its actual end so no opening or closing dialogue is cut.
       setCurrentTime(prev => (Math.abs(prev - t) > 0.15 ? t : prev));
     }, 250);
 
@@ -243,31 +240,19 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
     };
   }, [scene]);
 
-  // Synchronize active subtitle line with current time (tolerant of gaps between lines)
+  // Never show a future or already-finished excerpt as currently spoken.
   useEffect(() => {
-    if (!scene.subtitles.length) return;
-    let idx = scene.subtitles.findIndex(sub => currentTime >= sub.start && currentTime <= sub.end);
-    if (idx === -1) {
-      // In a gap between lines: hold the line whose window most recently started
-      let passed = -1;
-      for (let i = 0; i < scene.subtitles.length; i++) {
-        if (scene.subtitles[i].start <= currentTime) passed = i;
-        else break;
-      }
-      idx = passed !== -1 ? passed : 0;
-    }
-    if (idx !== activeSubtitleIndex) {
-      activeSubIdxRef.current = idx;
-      setActiveSubtitleIndex(idx);
-    }
-  }, [currentTime, scene.subtitles, activeSubtitleIndex]);
+    const idx = activeSubtitleAt(scene.subtitles, currentTime);
+    activeSubIdxRef.current = idx;
+    setActiveSubtitleIndex(idx);
+  }, [currentTime, scene.subtitles]);
 
   // Keep the active sentence visible in the transcript list as it changes with playback
   useEffect(() => {
     const list = transcriptListRef.current;
     if (!list) return;
     const row = list.querySelector(`[data-sub-idx="${activeSubtitleIndex}"]`);
-    row?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    row?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
   }, [activeSubtitleIndex]);
 
   // Jump to specific subtitle time
@@ -302,7 +287,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
       } else {
         // Resume inside the scene window if the pointer drifted outside it
         const t = typeof player.getCurrentTime === 'function' ? player.getCurrentTime() : currentTime;
-        if (t < sceneStart || t >= scene.endTime) {
+        if (t < sceneStart || (typeof player.getDuration === 'function' && player.getDuration() > 0 && t >= player.getDuration())) {
           seekTargetRef.current = { t: sceneStart, until: Date.now() + 4000 };
           player.seekTo(sceneStart, true);
         }
@@ -446,8 +431,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
                 onClick={() => {
                   playSound('click');
                   setCurrentTime(sceneStart);
-                  activeSubIdxRef.current = 0;
-                  setActiveSubtitleIndex(0);
+                  activeSubIdxRef.current = -1;
+                  setActiveSubtitleIndex(-1);
                   const player = playerRef.current;
                   if (player && playerReadyRef.current) {
                     seekTargetRef.current = { t: sceneStart, until: Date.now() + 4000 };
@@ -467,9 +452,11 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
               <button
                 onClick={() => {
                   playSound('click');
+                  if (activeSubtitleIndex < 0) return;
                   loopLineRef.current = !isLoopingCurrentLine;
                   setIsLoopingCurrentLine(!isLoopingCurrentLine);
                 }}
+                disabled={activeSubtitleIndex < 0}
                 title="تكرار الجملة الحالية باستمرار للإتقان"
                 className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
                   isLoopingCurrentLine
@@ -501,13 +488,23 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
             </div>
           </div>
 
+          <div className="rounded-2xl border border-amber-300/20 bg-amber-300/5 p-4 text-xs leading-7 text-amber-100">
+            الفيديو بيبدأ من 0:00. التوقيت المعروض هو توقيت الفيديو الأصلي، مش مؤقت جديد للمقتطف.
+            النصوص التعليمية المتاحة مش بالضرورة تفريغا كاملا؛ الفترات اللي من غير نص مش بنعرض فيها جملة من وقت تاني.
+            {scene.transcriptTimingStatus !== 'reviewed-excerpts' && ' توقيتات المقتطفات دي لسه محتاجة مراجعة على المصدر، ومش بنعتبرها تفريغا متزامنا موثقا.'}
+          </div>
+          {activeSubtitleIndex === -1 && (
+            <p role="status" className="rounded-2xl border border-white/10 p-5 text-sm leading-7 text-white/65">
+              مفيش سطر نصي مطابق للحظة دي في النص المتاح. الفيديو بيكمل من غير تخطي.
+            </p>
+          )}
           {/* Current Subtitle Spotlight Card */}
           {scene.subtitles[activeSubtitleIndex] && (
             <div className="p-5 rounded-3xl bg-gradient-to-r from-purple-950/40 via-[#181333] to-[#141226] border border-purple-500/30 space-y-3 shadow-xl">
               <div className="flex items-center justify-between text-xs text-purple-300">
                 <span className="font-bold flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-purple-400" />
-                  <span>الجملة الجاري نطقها في المشهد:</span>
+                  <span>{scene.transcriptTimingStatus === 'reviewed-excerpts' ? 'الجملة الجاري نطقها في المشهد:' : 'مقتطف تعليمي: توقيته محتاج مراجعة'}</span>
                 </span>
                 <span className="font-mono text-white/40">
                   {scene.subtitles[activeSubtitleIndex].start}s - {scene.subtitles[activeSubtitleIndex].end}s
@@ -642,7 +639,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene, onB
           {activeTab === 'transcript' && (
             <div className="space-y-3">
               <div className="flex items-center justify-between text-xs text-white/50 px-1">
-                <span>اضغط على أي جملة للانتقال إليها فوراً في الفيديو:</span>
+                <span>المقتطفات النصية المتاحة. اضغط على جملة للانتقال لتوقيتها:</span>
                 <button
                   onClick={() => setShowFushaSubtitles(!showFushaSubtitles)}
                   className="text-purple-300 hover:text-purple-200 underline cursor-pointer"
