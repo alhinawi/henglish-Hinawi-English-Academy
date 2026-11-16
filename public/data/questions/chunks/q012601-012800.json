@@ -2782,5 +2782,787 @@
   "explanationAr": "borrow = تاخد وترجع.",
   "topic": "Usage: commonly confused words (B2)",
   "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014201",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Can you _____ me your pen for a minute?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "borrow",
+   "rent",
+   "hire out",
+   "lend"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "lend = تدي حد حاجة.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014202",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word completes: \"The _____ of the film was exciting.\"?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "plot",
+   "plan",
+   "plant",
+   "plate"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "plot = حبكة.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014203",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'm boring with this lesson.",
+   "I'm bored with this lesson.",
+   "I'm bore with this lesson.",
+   "I'm bored by of this lesson."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "bored = حاسس بالملل.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014204",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The lesson was bored.",
+   "The lesson was bore.",
+   "The lesson was boring.",
+   "The lesson was boredom."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "boring = ممل.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014205",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She is interesting in music.",
+   "She is interest in music.",
+   "She is interested on music.",
+   "She is interested in music."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: interested in.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014206",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He gave me a lift to the station.",
+   "He gave me a lift for the station.",
+   "He did me a lift to the station.",
+   "He made me a lift station."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: give someone a lift.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014207",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'll do a decision tomorrow.",
+   "I'll make a decision tomorrow.",
+   "I'll take a decision tomorrow by do.",
+   "I'll have do a decision tomorrow."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: make a decision.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014208",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The whether is nice today.",
+   "The wether is nice today.",
+   "The weather is nice today.",
+   "The wheather is nice today."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "weather = طقس.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014209",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I don't know weather he will come.",
+   "I don't know wether he will come.",
+   "I don't know whither he will come to.",
+   "I don't know whether he will come."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whether = إذا.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014210",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Their house is big, and they're proud of it.",
+   "There house is big, and they're proud of it.",
+   "Their house is big, and there proud of it.",
+   "They're house is big."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "their ملكية، they're = they are.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014211",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Its raining, so the dog lost it's way.",
+   "It's raining, so the dog lost its way.",
+   "It's raining, so the dog lost it's way.",
+   "Its raining, so the dog lost its' way."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "it's = it is، its ملكية.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014212",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Whose coming to the party?",
+   "Who's' coming to the party?",
+   "Who's coming to the party?",
+   "Whos coming to the party?"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: who's = who is.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014213",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Who's bag is this?",
+   "Whos bag is this?",
+   "Whose' bag is this?",
+   "Whose bag is this?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "whose للملكية.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014214",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "You're late again.",
+   "Your late again.",
+   "Youre late again.",
+   "You'r late again."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: you're = you are.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014215",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She quite her job last month.",
+   "She quit her job last month.",
+   "She quiet her job last month.",
+   "She quits her job last month ago."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "quit = يستقيل.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014216",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The room was quiet small.",
+   "The room was quit small.",
+   "The room was quite small.",
+   "The room was quietly small."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "quite = إلى حد ما.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014217",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Please be quite in the library.",
+   "Please be quit in the library.",
+   "Please be quietly in the library.",
+   "Please be quiet in the library."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "quiet = هادئ.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014218",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I would rather stay home.",
+   "I would rather to stay home.",
+   "I would rather staying home.",
+   "I would rather stayed home."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: would rather + base.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014219",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "The principle of the school spoke to us.",
+   "The principal of the school spoke to us.",
+   "The principals of school spoke to us.",
+   "The prince of the school spoke."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "principal = مدير.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014220",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (commonly confused words)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Honesty is a good principal.",
+   "Honesty is a good principel.",
+   "Honesty is a good principle.",
+   "Honesty is a good principles."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "principle = مبدأ.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014221",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Affect\" is usually a verb and \"effect\" is usually a noun.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ده الاستخدام الشائع.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014222",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Lose\" and \"loose\" mean the same.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مختلفين: lose = يخسر، loose = واسع.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014223",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Quiet\" and \"quite\" are different words.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "quiet هادئ، quite إلى حد ما.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014224",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Advice\" is a verb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "advice اسم، advise فعل.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014225",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Borrow\" and \"lend\" are opposite actions.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تستلف مقابل تسلّف.",
+  "topic": "Usage: commonly confused words (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014226",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She made a good _____ at the interview.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "impress",
+   "impressed",
+   "impressing",
+   "impression"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: make an impression.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014227",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I need to take a _____ before I decide.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "break",
+   "stop",
+   "rest of",
+   "pause of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: take a break.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014228",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He caught a bad _____ last week.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "illness",
+   "cold",
+   "disease cold",
+   "sick"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: catch a cold.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014229",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They reached an _____ after long talks.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "accord of",
+   "contract of",
+   "agreement",
+   "treaty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: reach an agreement.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014230",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We should pay _____ to the details.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "care to",
+   "interest to",
+   "notice to",
+   "attention"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: pay attention.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014231",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He took _____ of the situation.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "advantage",
+   "benefit",
+   "profit",
+   "use"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: take advantage of.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014232",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Please keep your _____ down. I'm sleeping.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "noise",
+   "voice",
+   "sound",
+   "speaking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: keep your voice down.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014233",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It is _____ cold today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bitter",
+   "bitterness",
+   "bitterly",
+   "strongly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: bitterly cold.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014234",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She is _____ in love with him.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "highly",
+   "strongly",
+   "heavily",
+   "deeply"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: deeply in love.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014235",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We had a heated _____ about politics.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "argument",
+   "discussion of",
+   "say",
+   "talk of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: heated argument.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014236",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "That is a(n) _____ mistake.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "usual",
+   "common",
+   "general of",
+   "ordinary of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: common mistake.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014237",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He told a _____ to get out of trouble.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "lying",
+   "liar",
+   "lie",
+   "lies of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: tell a lie.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014238",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Heavy _____ is expected tonight.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "rains",
+   "raining",
+   "rainy",
+   "rain"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: heavy rain.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014239",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She is a _____ sleeper.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "light",
+   "small",
+   "weak",
+   "low"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: light sleeper.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014240",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I have a _____ headache.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "breaking",
+   "splitting",
+   "cutting",
+   "tearing"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: splitting headache.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014241",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We're running _____ of time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "off",
+   "away",
+   "out",
+   "down"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: run out of.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014242",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He broke his _____ and came late.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "word of",
+   "oath of",
+   "vow to",
+   "promise"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: break a promise.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014243",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They made _____ progress this year.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "significant",
+   "big of",
+   "large of",
+   "thick"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: significant progress.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014244",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Please give me a _____ hand with this box.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "helped",
+   "helping",
+   "helpful",
+   "help"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: give a helping hand.",
+  "topic": "Usage: collocations (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
  }
 ]
