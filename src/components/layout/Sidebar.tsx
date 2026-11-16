@@ -121,6 +121,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
   xp,
 }) => {
   const [openGrammarSubMenu, setOpenGrammarSubMenu] = React.useState(true);
+  // Collapse the grammar sub-menu whenever the mobile drawer closes so the
+  // next open starts collapsed.
+  const prevMobileOpen = React.useRef(mobileOpen);
+  React.useEffect(() => {
+    if (prevMobileOpen.current && !mobileOpen) setOpenGrammarSubMenu(false);
+    prevMobileOpen.current = mobileOpen;
+  }, [mobileOpen]);
   const [activeGrammarSection, setActiveGrammarSection] = React.useState<string>('Future Tenses');
 
   const { t, dir } = useLanguage();
