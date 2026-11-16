@@ -2410,5 +2410,15 @@
   "se.characters": "characters",
   "se.loading": "Translating...",
   "se.translate": "Translate now",
-  "se.placeholder": "Type or paste text here to translate..."
+  "se.placeholder": "Type or paste text here to translate...",
+  "tpr.title": "Compare your translation",
+  "tpr.intro": "Try translating the sentence yourself, then reveal the suggested answers and compare. There is no automatic grading or score.",
+  "tpr.enAr": "English to Arabic",
+  "tpr.arEn": "Arabic to English",
+  "tpr.listen": "Listen to the sentence",
+  "tpr.hide": "Hide suggested answers",
+  "tpr.show": "Show suggested answers",
+  "tpr.answers": "Suggested answers, not every possible translation",
+  "tpr.previous": "Previous",
+  "tpr.next": "Next"
 }
