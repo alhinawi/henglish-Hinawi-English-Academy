@@ -1,0 +1,776 @@
+[
+  {
+    "id": "first-login",
+    "category": "account",
+    "metric": "account",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.first-login",
+    "descriptionKey": "badges.description.first-login"
+  },
+  {
+    "id": "profile-photo",
+    "category": "account",
+    "metric": "avatar",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.profile-photo",
+    "descriptionKey": "badges.description.profile-photo"
+  },
+  {
+    "id": "streak-3",
+    "category": "streak",
+    "metric": "streak",
+    "target": 3,
+    "tier": "bronze",
+    "titleKey": "badges.name.streak-3",
+    "descriptionKey": "badges.description.streak-3"
+  },
+  {
+    "id": "streak-7",
+    "category": "streak",
+    "metric": "streak",
+    "target": 7,
+    "tier": "silver",
+    "titleKey": "badges.name.streak-7",
+    "descriptionKey": "badges.description.streak-7"
+  },
+  {
+    "id": "streak-30",
+    "category": "streak",
+    "metric": "streak",
+    "target": 30,
+    "tier": "gold",
+    "titleKey": "badges.name.streak-30",
+    "descriptionKey": "badges.description.streak-30"
+  },
+  {
+    "id": "streak-100",
+    "category": "streak",
+    "metric": "streak",
+    "target": 100,
+    "tier": "diamond",
+    "titleKey": "badges.name.streak-100",
+    "descriptionKey": "badges.description.streak-100"
+  },
+  {
+    "id": "streak-365",
+    "category": "streak",
+    "metric": "streak",
+    "target": 365,
+    "tier": "diamond",
+    "titleKey": "badges.name.streak-365",
+    "descriptionKey": "badges.description.streak-365"
+  },
+  {
+    "id": "xp-100",
+    "category": "xp",
+    "metric": "xp",
+    "target": 100,
+    "tier": "bronze",
+    "titleKey": "badges.name.xp-100",
+    "descriptionKey": "badges.description.xp-100"
+  },
+  {
+    "id": "xp-500",
+    "category": "xp",
+    "metric": "xp",
+    "target": 500,
+    "tier": "silver",
+    "titleKey": "badges.name.xp-500",
+    "descriptionKey": "badges.description.xp-500"
+  },
+  {
+    "id": "xp-1000",
+    "category": "xp",
+    "metric": "xp",
+    "target": 1000,
+    "tier": "gold",
+    "titleKey": "badges.name.xp-1000",
+    "descriptionKey": "badges.description.xp-1000"
+  },
+  {
+    "id": "xp-5000",
+    "category": "xp",
+    "metric": "xp",
+    "target": 5000,
+    "tier": "diamond",
+    "titleKey": "badges.name.xp-5000",
+    "descriptionKey": "badges.description.xp-5000"
+  },
+  {
+    "id": "xp-10000",
+    "category": "xp",
+    "metric": "xp",
+    "target": 10000,
+    "tier": "diamond",
+    "titleKey": "badges.name.xp-10000",
+    "descriptionKey": "badges.description.xp-10000"
+  },
+  {
+    "id": "xp-50000",
+    "category": "xp",
+    "metric": "xp",
+    "target": 50000,
+    "tier": "diamond",
+    "titleKey": "badges.name.xp-50000",
+    "descriptionKey": "badges.description.xp-50000"
+  },
+  {
+    "id": "level-a1",
+    "category": "levels",
+    "metric": "level:A1",
+    "target": 1,
+    "tier": "gold",
+    "titleKey": "badges.name.level-a1",
+    "descriptionKey": "badges.description.level-a1"
+  },
+  {
+    "id": "level-a2",
+    "category": "levels",
+    "metric": "level:A2",
+    "target": 1,
+    "tier": "gold",
+    "titleKey": "badges.name.level-a2",
+    "descriptionKey": "badges.description.level-a2"
+  },
+  {
+    "id": "level-b1",
+    "category": "levels",
+    "metric": "level:B1",
+    "target": 1,
+    "tier": "gold",
+    "titleKey": "badges.name.level-b1",
+    "descriptionKey": "badges.description.level-b1"
+  },
+  {
+    "id": "level-b2",
+    "category": "levels",
+    "metric": "level:B2",
+    "target": 1,
+    "tier": "gold",
+    "titleKey": "badges.name.level-b2",
+    "descriptionKey": "badges.description.level-b2"
+  },
+  {
+    "id": "level-c1",
+    "category": "levels",
+    "metric": "level:C1",
+    "target": 1,
+    "tier": "gold",
+    "titleKey": "badges.name.level-c1",
+    "descriptionKey": "badges.description.level-c1"
+  },
+  {
+    "id": "level-c2",
+    "category": "levels",
+    "metric": "level:C2",
+    "target": 1,
+    "tier": "gold",
+    "titleKey": "badges.name.level-c2",
+    "descriptionKey": "badges.description.level-c2"
+  },
+  {
+    "id": "lessons-1",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.lessons-1",
+    "descriptionKey": "badges.description.lessons-1"
+  },
+  {
+    "id": "lessons-5",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.lessons-5",
+    "descriptionKey": "badges.description.lessons-5"
+  },
+  {
+    "id": "lessons-10",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 10,
+    "tier": "gold",
+    "titleKey": "badges.name.lessons-10",
+    "descriptionKey": "badges.description.lessons-10"
+  },
+  {
+    "id": "lessons-25",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 25,
+    "tier": "diamond",
+    "titleKey": "badges.name.lessons-25",
+    "descriptionKey": "badges.description.lessons-25"
+  },
+  {
+    "id": "lessons-50",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 50,
+    "tier": "diamond",
+    "titleKey": "badges.name.lessons-50",
+    "descriptionKey": "badges.description.lessons-50"
+  },
+  {
+    "id": "lessons-75",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 75,
+    "tier": "diamond",
+    "titleKey": "badges.name.lessons-75",
+    "descriptionKey": "badges.description.lessons-75"
+  },
+  {
+    "id": "lessons-100",
+    "category": "lessons",
+    "metric": "lessons",
+    "target": 100,
+    "tier": "diamond",
+    "titleKey": "badges.name.lessons-100",
+    "descriptionKey": "badges.description.lessons-100"
+  },
+  {
+    "id": "perfect-1",
+    "category": "mastery",
+    "metric": "perfect",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.perfect-1",
+    "descriptionKey": "badges.description.perfect-1"
+  },
+  {
+    "id": "perfect-5",
+    "category": "mastery",
+    "metric": "perfect",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.perfect-5",
+    "descriptionKey": "badges.description.perfect-5"
+  },
+  {
+    "id": "perfect-10",
+    "category": "mastery",
+    "metric": "perfect",
+    "target": 10,
+    "tier": "gold",
+    "titleKey": "badges.name.perfect-10",
+    "descriptionKey": "badges.description.perfect-10"
+  },
+  {
+    "id": "perfect-25",
+    "category": "mastery",
+    "metric": "perfect",
+    "target": 25,
+    "tier": "diamond",
+    "titleKey": "badges.name.perfect-25",
+    "descriptionKey": "badges.description.perfect-25"
+  },
+  {
+    "id": "cert-1",
+    "category": "certificates",
+    "metric": "certificates",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.cert-1",
+    "descriptionKey": "badges.description.cert-1"
+  },
+  {
+    "id": "cert-2",
+    "category": "certificates",
+    "metric": "certificates",
+    "target": 2,
+    "tier": "silver",
+    "titleKey": "badges.name.cert-2",
+    "descriptionKey": "badges.description.cert-2"
+  },
+  {
+    "id": "cert-3",
+    "category": "certificates",
+    "metric": "certificates",
+    "target": 3,
+    "tier": "gold",
+    "titleKey": "badges.name.cert-3",
+    "descriptionKey": "badges.description.cert-3"
+  },
+  {
+    "id": "cert-5",
+    "category": "certificates",
+    "metric": "certificates",
+    "target": 5,
+    "tier": "diamond",
+    "titleKey": "badges.name.cert-5",
+    "descriptionKey": "badges.description.cert-5"
+  },
+  {
+    "id": "grammar-1",
+    "category": "academies",
+    "metric": "section:grammar",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.grammar-1",
+    "descriptionKey": "badges.description.grammar-1"
+  },
+  {
+    "id": "grammar-5",
+    "category": "academies",
+    "metric": "section:grammar",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.grammar-5",
+    "descriptionKey": "badges.description.grammar-5"
+  },
+  {
+    "id": "grammar-20",
+    "category": "academies",
+    "metric": "section:grammar",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.grammar-20",
+    "descriptionKey": "badges.description.grammar-20"
+  },
+  {
+    "id": "listening-1",
+    "category": "academies",
+    "metric": "section:listening",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.listening-1",
+    "descriptionKey": "badges.description.listening-1"
+  },
+  {
+    "id": "listening-5",
+    "category": "academies",
+    "metric": "section:listening",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.listening-5",
+    "descriptionKey": "badges.description.listening-5"
+  },
+  {
+    "id": "listening-20",
+    "category": "academies",
+    "metric": "section:listening",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.listening-20",
+    "descriptionKey": "badges.description.listening-20"
+  },
+  {
+    "id": "speaking-1",
+    "category": "academies",
+    "metric": "section:speaking",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.speaking-1",
+    "descriptionKey": "badges.description.speaking-1"
+  },
+  {
+    "id": "speaking-5",
+    "category": "academies",
+    "metric": "section:speaking",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.speaking-5",
+    "descriptionKey": "badges.description.speaking-5"
+  },
+  {
+    "id": "speaking-20",
+    "category": "academies",
+    "metric": "section:speaking",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.speaking-20",
+    "descriptionKey": "badges.description.speaking-20"
+  },
+  {
+    "id": "reading-1",
+    "category": "academies",
+    "metric": "section:reading",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.reading-1",
+    "descriptionKey": "badges.description.reading-1"
+  },
+  {
+    "id": "reading-5",
+    "category": "academies",
+    "metric": "section:reading",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.reading-5",
+    "descriptionKey": "badges.description.reading-5"
+  },
+  {
+    "id": "reading-20",
+    "category": "academies",
+    "metric": "section:reading",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.reading-20",
+    "descriptionKey": "badges.description.reading-20"
+  },
+  {
+    "id": "writing-1",
+    "category": "academies",
+    "metric": "section:writing",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.writing-1",
+    "descriptionKey": "badges.description.writing-1"
+  },
+  {
+    "id": "writing-5",
+    "category": "academies",
+    "metric": "section:writing",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.writing-5",
+    "descriptionKey": "badges.description.writing-5"
+  },
+  {
+    "id": "writing-20",
+    "category": "academies",
+    "metric": "section:writing",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.writing-20",
+    "descriptionKey": "badges.description.writing-20"
+  },
+  {
+    "id": "pronunciation-1",
+    "category": "academies",
+    "metric": "section:pronunciation",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.pronunciation-1",
+    "descriptionKey": "badges.description.pronunciation-1"
+  },
+  {
+    "id": "pronunciation-5",
+    "category": "academies",
+    "metric": "section:pronunciation",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.pronunciation-5",
+    "descriptionKey": "badges.description.pronunciation-5"
+  },
+  {
+    "id": "pronunciation-20",
+    "category": "academies",
+    "metric": "section:pronunciation",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.pronunciation-20",
+    "descriptionKey": "badges.description.pronunciation-20"
+  },
+  {
+    "id": "real-life-1",
+    "category": "academies",
+    "metric": "section:real-life",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.real-life-1",
+    "descriptionKey": "badges.description.real-life-1"
+  },
+  {
+    "id": "real-life-5",
+    "category": "academies",
+    "metric": "section:real-life",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.real-life-5",
+    "descriptionKey": "badges.description.real-life-5"
+  },
+  {
+    "id": "real-life-20",
+    "category": "academies",
+    "metric": "section:real-life",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.real-life-20",
+    "descriptionKey": "badges.description.real-life-20"
+  },
+  {
+    "id": "sentences-1",
+    "category": "academies",
+    "metric": "section:sentences",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.sentences-1",
+    "descriptionKey": "badges.description.sentences-1"
+  },
+  {
+    "id": "sentences-5",
+    "category": "academies",
+    "metric": "section:sentences",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.sentences-5",
+    "descriptionKey": "badges.description.sentences-5"
+  },
+  {
+    "id": "sentences-20",
+    "category": "academies",
+    "metric": "section:sentences",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.sentences-20",
+    "descriptionKey": "badges.description.sentences-20"
+  },
+  {
+    "id": "movies-1",
+    "category": "academies",
+    "metric": "section:movies",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.movies-1",
+    "descriptionKey": "badges.description.movies-1"
+  },
+  {
+    "id": "movies-5",
+    "category": "academies",
+    "metric": "section:movies",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.movies-5",
+    "descriptionKey": "badges.description.movies-5"
+  },
+  {
+    "id": "movies-20",
+    "category": "academies",
+    "metric": "section:movies",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.movies-20",
+    "descriptionKey": "badges.description.movies-20"
+  },
+  {
+    "id": "translation-1",
+    "category": "academies",
+    "metric": "section:translation",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.translation-1",
+    "descriptionKey": "badges.description.translation-1"
+  },
+  {
+    "id": "translation-5",
+    "category": "academies",
+    "metric": "section:translation",
+    "target": 5,
+    "tier": "silver",
+    "titleKey": "badges.name.translation-5",
+    "descriptionKey": "badges.description.translation-5"
+  },
+  {
+    "id": "translation-20",
+    "category": "academies",
+    "metric": "section:translation",
+    "target": 20,
+    "tier": "gold",
+    "titleKey": "badges.name.translation-20",
+    "descriptionKey": "badges.description.translation-20"
+  },
+  {
+    "id": "idioms-10",
+    "category": "vocabulary",
+    "metric": "words:idioms",
+    "target": 10,
+    "tier": "bronze",
+    "titleKey": "badges.name.idioms-10",
+    "descriptionKey": "badges.description.idioms-10"
+  },
+  {
+    "id": "idioms-50",
+    "category": "vocabulary",
+    "metric": "words:idioms",
+    "target": 50,
+    "tier": "silver",
+    "titleKey": "badges.name.idioms-50",
+    "descriptionKey": "badges.description.idioms-50"
+  },
+  {
+    "id": "idioms-100",
+    "category": "vocabulary",
+    "metric": "words:idioms",
+    "target": 100,
+    "tier": "gold",
+    "titleKey": "badges.name.idioms-100",
+    "descriptionKey": "badges.description.idioms-100"
+  },
+  {
+    "id": "slang-10",
+    "category": "vocabulary",
+    "metric": "words:slang",
+    "target": 10,
+    "tier": "bronze",
+    "titleKey": "badges.name.slang-10",
+    "descriptionKey": "badges.description.slang-10"
+  },
+  {
+    "id": "slang-50",
+    "category": "vocabulary",
+    "metric": "words:slang",
+    "target": 50,
+    "tier": "silver",
+    "titleKey": "badges.name.slang-50",
+    "descriptionKey": "badges.description.slang-50"
+  },
+  {
+    "id": "slang-100",
+    "category": "vocabulary",
+    "metric": "words:slang",
+    "target": 100,
+    "tier": "gold",
+    "titleKey": "badges.name.slang-100",
+    "descriptionKey": "badges.description.slang-100"
+  },
+  {
+    "id": "ielts-10",
+    "category": "vocabulary",
+    "metric": "words:ielts",
+    "target": 10,
+    "tier": "bronze",
+    "titleKey": "badges.name.ielts-10",
+    "descriptionKey": "badges.description.ielts-10"
+  },
+  {
+    "id": "ielts-50",
+    "category": "vocabulary",
+    "metric": "words:ielts",
+    "target": 50,
+    "tier": "silver",
+    "titleKey": "badges.name.ielts-50",
+    "descriptionKey": "badges.description.ielts-50"
+  },
+  {
+    "id": "ielts-100",
+    "category": "vocabulary",
+    "metric": "words:ielts",
+    "target": 100,
+    "tier": "gold",
+    "titleKey": "badges.name.ielts-100",
+    "descriptionKey": "badges.description.ielts-100"
+  },
+  {
+    "id": "toefl-10",
+    "category": "vocabulary",
+    "metric": "words:toefl",
+    "target": 10,
+    "tier": "bronze",
+    "titleKey": "badges.name.toefl-10",
+    "descriptionKey": "badges.description.toefl-10"
+  },
+  {
+    "id": "toefl-50",
+    "category": "vocabulary",
+    "metric": "words:toefl",
+    "target": 50,
+    "tier": "silver",
+    "titleKey": "badges.name.toefl-50",
+    "descriptionKey": "badges.description.toefl-50"
+  },
+  {
+    "id": "toefl-100",
+    "category": "vocabulary",
+    "metric": "words:toefl",
+    "target": 100,
+    "tier": "gold",
+    "titleKey": "badges.name.toefl-100",
+    "descriptionKey": "badges.description.toefl-100"
+  },
+  {
+    "id": "verbs-10",
+    "category": "vocabulary",
+    "metric": "words:verbs",
+    "target": 10,
+    "tier": "bronze",
+    "titleKey": "badges.name.verbs-10",
+    "descriptionKey": "badges.description.verbs-10"
+  },
+  {
+    "id": "verbs-50",
+    "category": "vocabulary",
+    "metric": "words:verbs",
+    "target": 50,
+    "tier": "silver",
+    "titleKey": "badges.name.verbs-50",
+    "descriptionKey": "badges.description.verbs-50"
+  },
+  {
+    "id": "verbs-100",
+    "category": "vocabulary",
+    "metric": "words:verbs",
+    "target": 100,
+    "tier": "gold",
+    "titleKey": "badges.name.verbs-100",
+    "descriptionKey": "badges.description.verbs-100"
+  },
+  {
+    "id": "games-1",
+    "category": "games",
+    "metric": "games",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.games-1",
+    "descriptionKey": "badges.description.games-1"
+  },
+  {
+    "id": "games-10",
+    "category": "games",
+    "metric": "games",
+    "target": 10,
+    "tier": "silver",
+    "titleKey": "badges.name.games-10",
+    "descriptionKey": "badges.description.games-10"
+  },
+  {
+    "id": "games-50",
+    "category": "games",
+    "metric": "games",
+    "target": 50,
+    "tier": "gold",
+    "titleKey": "badges.name.games-50",
+    "descriptionKey": "badges.description.games-50"
+  },
+  {
+    "id": "early-bird",
+    "category": "mastery",
+    "metric": "early",
+    "target": 1,
+    "tier": "bronze",
+    "titleKey": "badges.name.early-bird",
+    "descriptionKey": "badges.description.early-bird"
+  },
+  {
+    "id": "rank-10",
+    "category": "community",
+    "metric": "rank:10",
+    "target": 1,
+    "tier": "diamond",
+    "titleKey": "badges.name.rank-10",
+    "descriptionKey": "badges.description.rank-10"
+  },
+  {
+    "id": "rank-3",
+    "category": "community",
+    "metric": "rank:3",
+    "target": 1,
+    "tier": "diamond",
+    "titleKey": "badges.name.rank-3",
+    "descriptionKey": "badges.description.rank-3"
+  },
+  {
+    "id": "rank-1",
+    "category": "community",
+    "metric": "rank:1",
+    "target": 1,
+    "tier": "diamond",
+    "titleKey": "badges.name.rank-1",
+    "descriptionKey": "badges.description.rank-1"
+  }
+]

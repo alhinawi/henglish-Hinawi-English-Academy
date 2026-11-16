@@ -8,7 +8,8 @@
     "db:migrate:local": "wrangler d1 migrations apply henglish --local --persist-to .wrangler/state",
     "typecheck": "tsc --noEmit",
     "deploy": "wrangler deploy",
-    "test:certificates": "tsx test-certificates.ts"
+    "test:certificates": "tsx test-certificates.ts",
+    "test:badges": "tsx test-badges.ts"
   },
   "dependencies": {
     "hono": "^4.13.18"
