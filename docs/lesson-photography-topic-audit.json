@@ -1,0 +1,538 @@
+[
+  {
+    "lesson": "present-simple",
+    "previousHero": "/images/lessons/present-simple-1.webp",
+    "hero": "/images/lessons/adverbs-frequency-3.webp",
+    "changed": true,
+    "reason": "Daily exercise is a repeated habit, the core Present Simple use.",
+    "newDownload": false
+  },
+  {
+    "lesson": "present-continuous",
+    "previousHero": "/images/lessons/present-continuous-1.webp",
+    "hero": "/images/lessons/present-continuous-topic.webp",
+    "changed": true,
+    "reason": "Developers testing software right now is the first lesson example.",
+    "newDownload": true
+  },
+  {
+    "lesson": "present-perfect",
+    "previousHero": "/images/lessons/present-perfect-1.webp",
+    "hero": "/images/lessons/present-perfect-1.webp",
+    "changed": false,
+    "reason": "Graduation is a completed achievement with a present result, not a generic city view.",
+    "newDownload": false
+  },
+  {
+    "lesson": "present-perfect-continuous",
+    "previousHero": "/images/lessons/present-perfect-continuous-1.webp",
+    "hero": "/images/lessons/present-perfect-continuous-topic.webp",
+    "changed": true,
+    "reason": "Directly matches the example I have been painting the studio walls.",
+    "newDownload": true
+  },
+  {
+    "lesson": "past-simple",
+    "previousHero": "/images/lessons/past-simple-1.webp",
+    "hero": "/images/lessons/future-continuous-3.webp",
+    "changed": true,
+    "reason": "A company presentation illustrates the completed product-launch example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "past-continuous",
+    "previousHero": "/images/lessons/past-continuous-1.webp",
+    "hero": "/images/lessons/past-continuous-topic.webp",
+    "changed": true,
+    "reason": "Directly matches Karim was debugging server scripts when the power went out.",
+    "newDownload": true
+  },
+  {
+    "lesson": "past-perfect",
+    "previousHero": "/images/lessons/past-perfect-1.webp",
+    "hero": "/images/lessons/past-perfect-topic.webp",
+    "changed": true,
+    "reason": "The doctor had stabilized the patient before the ambulance arrived is the lesson example.",
+    "newDownload": true
+  },
+  {
+    "lesson": "past-perfect-continuous",
+    "previousHero": "/images/lessons/past-perfect-continuous-1.webp",
+    "hero": "/images/lessons/lesson-2-2.webp",
+    "changed": true,
+    "reason": "Engineering inspection is sustained work leading up to a later discovery in the lesson example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "future-simple",
+    "previousHero": "/images/lessons/future-simple-1.webp",
+    "hero": "/images/lessons/future-simple-topic.webp",
+    "changed": true,
+    "reason": "Directly matches The phone is ringing; I will answer it, a spontaneous decision.",
+    "newDownload": true
+  },
+  {
+    "lesson": "be-going-to",
+    "previousHero": "/images/lessons/be-going-to-1.webp",
+    "hero": "/images/lessons/be-going-to-3.webp",
+    "changed": true,
+    "reason": "Direct evidence for It is going to rain, the first example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "future-continuous",
+    "previousHero": "/images/lessons/future-continuous-1.webp",
+    "hero": "/images/lessons/future-continuous-1.webp",
+    "changed": false,
+    "reason": "Directly matches This time tomorrow we will be flying over the Atlantic.",
+    "newDownload": false
+  },
+  {
+    "lesson": "future-perfect",
+    "previousHero": "/images/lessons/future-perfect-1.webp",
+    "hero": "/images/lessons/future-perfect-1.webp",
+    "changed": false,
+    "reason": "A construction project to be completed by a deadline matches the terminal example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "future-perfect-continuous",
+    "previousHero": "/images/lessons/future-perfect-continuous-1.webp",
+    "hero": "/images/lessons/future-perfect-continuous-2.webp",
+    "changed": true,
+    "reason": "Running for a duration before a future milestone illustrates continuous duration, unlike a vineyard.",
+    "newDownload": false
+  },
+  {
+    "lesson": "zero-conditional",
+    "previousHero": "/images/lessons/zero-conditional-1.webp",
+    "hero": "/images/lessons/zero-conditional-2.webp",
+    "changed": true,
+    "reason": "A visible physical law illustrates general cause and effect, unlike a random rainy street.",
+    "newDownload": false
+  },
+  {
+    "lesson": "first-conditional",
+    "previousHero": "/images/lessons/first-conditional-1.webp",
+    "hero": "/images/lessons/first-conditional-1.webp",
+    "changed": false,
+    "reason": "Rain and an umbrella directly illustrate If it rains, I will take an umbrella: a possible future condition and response.",
+    "newDownload": false
+  },
+  {
+    "lesson": "second-conditional",
+    "previousHero": "/images/lessons/second-conditional-1.webp",
+    "hero": "/images/lessons/second-conditional-2.webp",
+    "changed": true,
+    "reason": "A luxury yacht makes the hypothetical If I were rich situation concrete, rather than a generic empty island.",
+    "newDownload": false
+  },
+  {
+    "lesson": "third-conditional",
+    "previousHero": "/images/lessons/third-conditional-1.webp",
+    "hero": "/images/lessons/be-going-to-2.webp",
+    "changed": true,
+    "reason": "Direct context for If we had booked airline tickets earlier, we would have saved money.",
+    "newDownload": false
+  },
+  {
+    "lesson": "modal-verbs",
+    "previousHero": "/images/lessons/modal-verbs-1.webp",
+    "hero": "/images/lessons/modal-verbs-2.webp",
+    "changed": true,
+    "reason": "A safety requirement illustrates must, should and obligation.",
+    "newDownload": false
+  },
+  {
+    "lesson": "passive-voice",
+    "previousHero": "/images/lessons/passive-voice-1.webp",
+    "hero": "/images/lessons/passive-voice-3.webp",
+    "changed": true,
+    "reason": "Towels are folded by workers visibly shows object receiving action; replaces unrelated loaf close-up.",
+    "newDownload": false
+  },
+  {
+    "lesson": "reported-speech",
+    "previousHero": "/images/lessons/reported-speech-1.webp",
+    "hero": "/images/lessons/reported-speech-3.webp",
+    "changed": true,
+    "reason": "Speech being communicated by a reporter is a direct reporting scene.",
+    "newDownload": false
+  },
+  {
+    "lesson": "relative-clauses",
+    "previousHero": "/images/lessons/relative-clauses-1.webp",
+    "hero": "/images/lessons/relative-clauses-1.webp",
+    "changed": false,
+    "reason": "The girl who is reading identifies a person through an action, the core purpose of a relative clause.",
+    "newDownload": false
+  },
+  {
+    "lesson": "parts-of-speech",
+    "previousHero": "/images/lessons/parts-of-speech-1.webp",
+    "hero": "/images/lessons/parts-of-speech-3.webp",
+    "changed": true,
+    "reason": "Actual words and phrase building support word classes; replaces an empty library aisle.",
+    "newDownload": false
+  },
+  {
+    "lesson": "articles-determiners",
+    "previousHero": "/images/lessons/articles-determiners-1.webp",
+    "hero": "/images/lessons/articles-determiners-1.webp",
+    "changed": false,
+    "reason": "A single countable object supports a/an/the reference, a direct grammar example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "prepositions-mastery",
+    "previousHero": "/images/lessons/prepositions-mastery-1.webp",
+    "hero": "/images/lessons/prepositions-mastery-1.webp",
+    "changed": false,
+    "reason": "The cat is in the box is a visually unambiguous spatial relation.",
+    "newDownload": false
+  },
+  {
+    "lesson": "gerunds-infinitives",
+    "previousHero": "/images/lessons/gerunds-infinitives-1.webp",
+    "hero": "/images/lessons/gerunds-infinitives-1.webp",
+    "changed": false,
+    "reason": "Swimming provides a clear activity noun and verb-complement scene.",
+    "newDownload": false
+  },
+  {
+    "lesson": "causatives-inversion",
+    "previousHero": "/images/lessons/causatives-inversion-1.webp",
+    "hero": "/images/lessons/causatives-inversion-1.webp",
+    "changed": false,
+    "reason": "Have/get your hair cut directly illustrates causative structure.",
+    "newDownload": false
+  },
+  {
+    "lesson": "question-tags",
+    "previousHero": "/images/lessons/question-tags-1.webp",
+    "hero": "/images/lessons/question-tags-1.webp",
+    "changed": false,
+    "reason": "Checking information with a conversation partner is the function of question tags.",
+    "newDownload": false
+  },
+  {
+    "lesson": "used-to-would",
+    "previousHero": "/images/lessons/used-to-would-1.webp",
+    "hero": "/images/lessons/used-to-would-topic.webp",
+    "changed": true,
+    "reason": "Family memories match childhood and grandfather stories in the examples.",
+    "newDownload": true
+  },
+  {
+    "lesson": "comparatives-superlatives",
+    "previousHero": "/images/lessons/comparatives-superlatives-1.webp",
+    "hero": "/images/lessons/comparatives-superlatives-topic.webp",
+    "changed": true,
+    "reason": "Side-by-side visible heights allow taller and tallest comparisons.",
+    "newDownload": true
+  },
+  {
+    "lesson": "countable-uncountable",
+    "previousHero": "/images/lessons/countable-uncountable-1.webp",
+    "hero": "/images/lessons/countable-uncountable-3.webp",
+    "changed": true,
+    "reason": "Bottle/glass can be counted while water is a mass noun, visibly supporting the distinction.",
+    "newDownload": false
+  },
+  {
+    "lesson": "adverbs-frequency",
+    "previousHero": "/images/lessons/adverbs-frequency-1.webp",
+    "hero": "/images/lessons/adverbs-frequency-topic.webp",
+    "changed": true,
+    "reason": "Vocabulary revision and regular study are the lesson examples, rather than an isolated clock.",
+    "newDownload": true
+  },
+  {
+    "lesson": "quantifiers",
+    "previousHero": "/images/lessons/quantifiers-1.webp",
+    "hero": "/images/lessons/countable-uncountable-1.webp",
+    "changed": true,
+    "reason": "Visible quantities support many, some, a few and a lot of.",
+    "newDownload": false
+  },
+  {
+    "lesson": "subject-verb-agreement",
+    "previousHero": "/images/lessons/subject-verb-agreement-1.webp",
+    "hero": "/images/lessons/subject-verb-agreement-1.webp",
+    "changed": false,
+    "reason": "The teacher is and the students are directly illustrate singular versus plural subjects.",
+    "newDownload": false
+  },
+  {
+    "lesson": "modal-perfect",
+    "previousHero": "/images/lessons/modal-perfect-1.webp",
+    "hero": "/images/lessons/modal-perfect-2.webp",
+    "changed": true,
+    "reason": "Could have caught the train if we had left earlier is a direct lesson example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "wish-if-only",
+    "previousHero": "/images/lessons/wish-if-only-1.webp",
+    "hero": "/images/lessons/first-conditional-2.webp",
+    "changed": true,
+    "reason": "Directly illustrates I wish I were on a beach instead of studying.",
+    "newDownload": false
+  },
+  {
+    "lesson": "mixed-conditionals",
+    "previousHero": "/images/lessons/mixed-conditionals-1.webp",
+    "hero": "/images/lessons/lesson-8-2.webp",
+    "changed": true,
+    "reason": "A past education choice affecting the present career is the lesson's mixed-time example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "linking-words",
+    "previousHero": "/images/lessons/linking-words-1.webp",
+    "hero": "/images/lessons/present-perfect-continuous-1.webp",
+    "changed": true,
+    "reason": "Despite difficulty and because of practice in the study examples; replaces a metaphorical bridge.",
+    "newDownload": false
+  },
+  {
+    "lesson": "phrasal-verbs-mastery",
+    "previousHero": "/images/lessons/phrasal-verbs-mastery-1.webp",
+    "hero": "/images/lessons/phrasal-verbs-mastery-1.webp",
+    "changed": false,
+    "reason": "Take off is an unmistakable concrete phrasal verb, not a generic door.",
+    "newDownload": false
+  },
+  {
+    "lesson": "verb-to-be",
+    "previousHero": "/images/lessons/verb-to-be-1.webp",
+    "hero": "/images/lessons/verb-to-be-2.webp",
+    "changed": true,
+    "reason": "He is a doctor illustrates identity and profession with be.",
+    "newDownload": false
+  },
+  {
+    "lesson": "subject-object-pronouns",
+    "previousHero": "/images/lessons/subject-object-pronouns-1.webp",
+    "hero": "/images/lessons/subject-object-pronouns-1.webp",
+    "changed": false,
+    "reason": "A person and their group support I, we, they, us and them in social actions.",
+    "newDownload": false
+  },
+  {
+    "lesson": "possessives",
+    "previousHero": "/images/lessons/possessives-1.webp",
+    "hero": "/images/lessons/possessives-1.webp",
+    "changed": false,
+    "reason": "Personal belongings directly support my, mine and possession.",
+    "newDownload": false
+  },
+  {
+    "lesson": "there-is-there-are",
+    "previousHero": "/images/lessons/there-is-there-are-1.webp",
+    "hero": "/images/lessons/there-is-there-are-1.webp",
+    "changed": false,
+    "reason": "Visible singular/plural objects allow There is a window and There are chairs.",
+    "newDownload": false
+  },
+  {
+    "lesson": "have-got",
+    "previousHero": "/images/lessons/have-got-1.webp",
+    "hero": "/images/lessons/have-got-1.webp",
+    "changed": false,
+    "reason": "Have got expresses owning a concrete object such as a camera.",
+    "newDownload": false
+  },
+  {
+    "lesson": "imperatives",
+    "previousHero": "/images/lessons/imperatives-1.webp",
+    "hero": "/images/lessons/imperatives-1.webp",
+    "changed": false,
+    "reason": "A real instruction is the clearest imperative, not decorative stationery.",
+    "newDownload": false
+  },
+  {
+    "lesson": "can-for-ability",
+    "previousHero": "/images/lessons/can-for-ability-1.webp",
+    "hero": "/images/lessons/can-for-ability-2.webp",
+    "changed": true,
+    "reason": "Directly matches I could swim every day, an ability example.",
+    "newDownload": false
+  },
+  {
+    "lesson": "wh-questions",
+    "previousHero": "/images/lessons/wh-questions-1.webp",
+    "hero": "/images/lessons/wh-questions-1.webp",
+    "changed": false,
+    "reason": "Directly matches What time does the train leave?",
+    "newDownload": false
+  },
+  {
+    "lesson": "demonstratives-plurals",
+    "previousHero": "/images/lessons/demonstratives-plurals-1.webp",
+    "hero": "/images/lessons/demonstratives-plurals-2.webp",
+    "changed": true,
+    "reason": "Several nearby objects support these books and plural reference; replaces novelty shoes.",
+    "newDownload": false
+  },
+  {
+    "lesson": "too-enough-so-such",
+    "previousHero": "/images/lessons/too-enough-so-such-1.webp",
+    "hero": "/images/lessons/too-enough-so-such-topic.webp",
+    "changed": true,
+    "reason": "Directly matches such a crowded train that we stood all the way to Tanta.",
+    "newDownload": true
+  },
+  {
+    "lesson": "both-either-neither",
+    "previousHero": "/images/lessons/both-either-neither-1.webp",
+    "hero": "/images/lessons/both-either-neither-1.webp",
+    "changed": false,
+    "reason": "An explicit pair makes both/either/neither concrete.",
+    "newDownload": false
+  },
+  {
+    "lesson": "going-to-vs-will",
+    "previousHero": "/images/lessons/going-to-vs-will-1.webp",
+    "hero": "/images/lessons/going-to-vs-will-1.webp",
+    "changed": false,
+    "reason": "Visible evidence supports going to versus spontaneous will decisions.",
+    "newDownload": false
+  },
+  {
+    "lesson": "present-perfect-vs-past-simple",
+    "previousHero": "/images/lessons/present-perfect-vs-past-simple-1.webp",
+    "hero": "/images/lessons/present-perfect-vs-past-simple-3.webp",
+    "changed": true,
+    "reason": "Have you ever visited versus visited last month is the travel-experience contrast.",
+    "newDownload": false
+  },
+  {
+    "lesson": "adverbs-of-manner",
+    "previousHero": "/images/lessons/adverbs-of-manner-1.webp",
+    "hero": "/images/lessons/adverbs-of-manner-3.webp",
+    "changed": true,
+    "reason": "An action that can be done carefully illustrates how, not merely when an action happens.",
+    "newDownload": false
+  },
+  {
+    "lesson": "must-and-have-to",
+    "previousHero": "/images/lessons/must-and-have-to-1.webp",
+    "hero": "/images/lessons/must-and-have-to-1.webp",
+    "changed": false,
+    "reason": "Required safety equipment at work illustrates must and external have to obligations.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-1",
+    "previousHero": "/images/lessons/lesson-1-1.webp",
+    "hero": "/images/lessons/lesson-1-1.webp",
+    "changed": false,
+    "reason": "The lesson explicitly introduces the Future Perfect timeline and future reference point.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-2",
+    "previousHero": "/images/lessons/lesson-2-1.webp",
+    "hero": "/images/lessons/future-perfect-2.webp",
+    "changed": true,
+    "reason": "Positive will have completed/graduated statements are core affirmative Future Perfect examples.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-3",
+    "previousHero": "/images/lessons/lesson-3-1.webp",
+    "hero": "/images/lessons/lesson-3-topic.webp",
+    "changed": true,
+    "reason": "A visible negative statement supports negation and a not-yet-open situation, rather than an unrelated gate.",
+    "newDownload": true
+  },
+  {
+    "lesson": "lesson-4",
+    "previousHero": "/images/lessons/lesson-4-1.webp",
+    "hero": "/images/lessons/reported-commands-1.webp",
+    "changed": true,
+    "reason": "A learner asking a question directly supports question forms.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-5",
+    "previousHero": "/images/lessons/lesson-5-1.webp",
+    "hero": "/images/lessons/lesson-5-3.webp",
+    "changed": true,
+    "reason": "Visible dates support by, before, deadlines and time markers.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-6",
+    "previousHero": "/images/lessons/lesson-6-1.webp",
+    "hero": "/images/lessons/lesson-6-2.webp",
+    "changed": true,
+    "reason": "Travel arrival provides the paired events used in by the time clauses.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-7",
+    "previousHero": "/images/lessons/lesson-7-1.webp",
+    "hero": "/images/lessons/lesson-7-1.webp",
+    "changed": false,
+    "reason": "Reaching a finish contrasts completed result with activity in progress, the tense-comparison topic.",
+    "newDownload": false
+  },
+  {
+    "lesson": "lesson-8",
+    "previousHero": "/images/lessons/lesson-8-1.webp",
+    "hero": "/images/lessons/lesson-8-1.webp",
+    "changed": false,
+    "reason": "Project completion by a future deadline is a direct practical Future Perfect scene.",
+    "newDownload": false
+  },
+  {
+    "lesson": "be-get-used-to",
+    "previousHero": "/images/lessons/be-get-used-to-1.webp",
+    "hero": "/images/lessons/be-get-used-to-topic.webp",
+    "changed": true,
+    "reason": "Directly matches being used to city traffic and adjusting to driving.",
+    "newDownload": true
+  },
+  {
+    "lesson": "reported-commands",
+    "previousHero": "/images/lessons/reported-commands-1.webp",
+    "hero": "/images/lessons/reported-commands-2.webp",
+    "changed": true,
+    "reason": "A teacher giving an instruction directly illustrates told the students to do something.",
+    "newDownload": false
+  },
+  {
+    "lesson": "defining-non-defining-relatives",
+    "previousHero": "/images/lessons/defining-non-defining-relatives-1.webp",
+    "hero": "/images/lessons/defining-non-defining-relatives-2.webp",
+    "changed": true,
+    "reason": "The person who is reading identifies a person; a named person adds non-defining detail.",
+    "newDownload": false
+  },
+  {
+    "lesson": "future-in-the-past",
+    "previousHero": "/images/lessons/future-in-the-past-1.webp",
+    "hero": "/images/lessons/future-in-the-past-1.webp",
+    "changed": false,
+    "reason": "Past plans for study and travel illustrate was going to before a changed plan.",
+    "newDownload": false
+  },
+  {
+    "lesson": "make-vs-do",
+    "previousHero": "/images/lessons/make-vs-do-1.webp",
+    "hero": "/images/lessons/make-vs-do-2.webp",
+    "changed": true,
+    "reason": "Making a meal is a concrete make collocation, not a random cafe interior.",
+    "newDownload": false
+  },
+  {
+    "lesson": "all-whole-every-each",
+    "previousHero": "/images/lessons/all-whole-every-each-1.webp",
+    "hero": "/images/lessons/reported-commands-3.webp",
+    "changed": true,
+    "reason": "Each student gets individual help, contrasting a single learner with all the class.",
+    "newDownload": false
+  }
+]

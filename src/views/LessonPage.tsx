@@ -1,6 +1,5 @@
 import { LessonCorrection } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
-import { LessonPhotoGallery } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
@@ -206,7 +205,6 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         </div>
       </section>
 
-      <LessonPhotoGallery lessonId={currentLesson.id} />
 
       {/* Real-Life Examples Section */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">

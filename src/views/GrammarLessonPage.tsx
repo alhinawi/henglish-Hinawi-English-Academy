@@ -1,6 +1,6 @@
 import { LessonTrap } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
-import { LessonPhoto, LessonPhotoGallery } from '../components/LessonPhotography';
+import { LessonPhoto } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
@@ -225,7 +225,6 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         </section>
       </div>
 
-      <LessonPhotoGallery lessonId={rule.id} />
 
       {/* 4. THE GOLDEN SENTENCE FORMULAS (INTERACTIVE TABS) */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
