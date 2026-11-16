@@ -67,7 +67,7 @@ export interface MovieSceneItem {
   verificationStatus?: 'verified_playable' | 'embed_disabled' | 'unavailable' | 'private_or_deleted' | 'needs_review' | 'video_only';
   lastVerifiedAt?: string;
   isEmbeddable?: boolean;
-  transcriptTimingStatus?: 'reviewed-excerpts' | 'unverified';
+  transcriptTimingStatus?: 'reviewed-excerpts' | 'caption-reviewed' | 'quarantined' | 'unverified';
   subtitles: TimedSubtitle[];
   vocabulary: SceneVocabulary[];
   quizzes: SceneQuiz[];

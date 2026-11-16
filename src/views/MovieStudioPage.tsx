@@ -562,6 +562,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                             <span className="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-black/80 text-white font-mono text-[11px]">
                               {scene.clipDuration}
                             </span>
+                            {scene.transcriptTimingStatus === 'quarantined' && <span className="absolute bottom-2 right-2 rounded-lg bg-amber-200 px-3 py-1 text-xs font-bold text-slate-950">تحت المراجعة</span>}
                           </div>
 
                           {/* Scene Meta Info */}

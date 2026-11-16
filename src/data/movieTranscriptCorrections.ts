@@ -1,3 +1,5 @@
+import reviewReports from './movieReviews/shards123.json';
+import { canPublishCaptionReview, captionReviewCues, type CaptionReviewRecord } from './movieReviews/reviewAdapter';
 import type { MovieSceneItem, TimedSubtitle } from './movieScenesData';
 
 // Source reviewed 2026-11-16: https://www.youtube.com/watch?v=D6me2-OurCw
@@ -22,6 +24,19 @@ const GODFATHER_REVIEWED_EXCERPTS: TimedSubtitle[] = [
 
 /** Correct by source ID, including old saved/history objects and direct scene links. */
 export function applyMovieTranscriptCorrections<T extends MovieSceneItem>(scene: T): T {
+  const report = reviewReports.find(record => record.youtubeId === scene.youtubeId) as CaptionReviewRecord | undefined;
+  if (report) {
+    if (!canPublishCaptionReview(report)) {
+      return { ...scene, transcriptTimingStatus: 'quarantined', verificationStatus: 'needs_review', isEmbeddable: false,
+        subtitles: [], vocabulary: [], quizzes: [], speakingLines: [] };
+    }
+    const duration = report.durationSeconds!;
+    return { ...scene, startTime: 0, endTime: duration,
+      clipDuration: `${Math.floor(duration / 60)}:${String(Math.floor(duration % 60)).padStart(2, '0')}`,
+      transcriptTimingStatus: 'caption-reviewed', subtitles: captionReviewCues(scene, report, true),
+      // Old quizzes and echo lines can refer to rejected or paraphrased seed text.
+      quizzes: [], speakingLines: [] };
+  }
   if (scene.youtubeId !== 'D6me2-OurCw') return scene;
   return { ...scene, startTime: 0, endTime: 88.321, clipDuration: '1:28', transcriptTimingStatus: 'reviewed-excerpts',
     subtitles: GODFATHER_REVIEWED_EXCERPTS,
