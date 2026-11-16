@@ -1430,7 +1430,7 @@
   "avm.bulkSuccess": "Imported {n} words into the local database successfully!",
   "avm.bulkError": "Data format error:",
   "avm.title": "Vocabulary bank admin panel (Vocabulary Admin)",
-  "avm.tabStats": "Verified database stats and strength",
+  "avm.tabStats": "Word library",
   "avm.tabAdd": "Add a new word",
   "avm.tabBulk": "Bulk import (JSON / CSV)",
   "avm.statWords": "Total verified words",
