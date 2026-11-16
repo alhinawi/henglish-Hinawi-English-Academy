@@ -59,6 +59,14 @@ const TranslationStudioPage = lazy(() => import('./views/TranslationStudioPage')
 import { AnimatePresence, motion } from 'framer-motion';
 import { ShieldAlert } from 'lucide-react';
 
+// Neutral boot screen shown for a frame while the initial route resolves,
+// so signed-in users never see the login page flash on load.
+const BootSplash: React.FC = () => (
+  <div className="min-h-screen bg-[#0c0b20] flex items-center justify-center">
+    <img src="/logo-clean.png" alt="Henglish" className="w-20 h-20 rounded-3xl animate-pulse" />
+  </div>
+);
+
 export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) => {
   const { 
     session, 
@@ -70,7 +78,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     refreshSession,
   } = useAuth();
 
-  const [currentRoute, setCurrentRoute] = useState<PageRoute>(initialRoute ?? 'login');
+  const [currentRoute, setCurrentRoute] = useState<PageRoute | null>(initialRoute ?? null);
   const [activeLessonId, setActiveLessonId] = useState<string>('lesson-1');
   const [activeGrammarRuleId, setActiveGrammarRuleId] = useState<string>('present-simple');
   const [verifyEmailParam, setVerifyEmailParam] = useState<string>('');
@@ -194,9 +202,9 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('slang');
       } else if (hash === 'genz' || hash === 'gen-z' || hash.startsWith('genz/')) {
         setCurrentRoute('genz');
-      } else if (hash === 'ielts') {
+      } else if (hash === 'ielts' || hash.startsWith('ielts/')) {
         setCurrentRoute('ielts');
-      } else if (hash === 'toefl') {
+      } else if (hash === 'toefl' || hash.startsWith('toefl/')) {
         setCurrentRoute('toefl');
       } else if (hash === 'speaking') {
         setCurrentRoute('speaking');
@@ -306,6 +314,11 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
   // -------------------------------------------------------------
   // RENDER DEDICATED AUTH PAGES
   // -------------------------------------------------------------
+  // Boot splash: the initial route resolves in the mount effect (hash + saved
+  // session). Render a neutral splash instead of flashing the login page.
+  if (currentRoute === null) {
+    return <BootSplash />;
+  }
   if (currentRoute === 'login') {
     return <LoginPage onNavigate={handleNavigate} />;
   }

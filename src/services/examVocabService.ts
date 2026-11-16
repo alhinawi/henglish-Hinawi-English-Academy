@@ -86,6 +86,49 @@ export function sortExamVocab(entries: ExamVocabEntry[], mode: ExamSortMode): Ex
   return sorted;
 }
 
+// -----------------------------------------------------------------------------
+// 10-sentence detail data (same contract as the phrase banks):
+// public/data/<exam>/vocab/sentences/<prefix>-sent-NNNNNN-NNNNNN.json
+// Partial coverage expected; callers fall back to the built-in example.
+// -----------------------------------------------------------------------------
+
+export interface ExamSentence {
+  en: string;
+  ar: string;
+}
+
+const sentenceBlockCache = new Map<string, Promise<Record<string, ExamSentence[]> | null>>();
+
+export async function loadExamSentences(
+  exam: ExamId,
+  entryId: string
+): Promise<ExamSentence[] | null> {
+  const index = await loadExamVocabIndex(exam);
+  const numeric = parseInt(entryId.replace(`${index.idPrefix}-`, ''), 10);
+  if (!Number.isFinite(numeric) || numeric < 1) return null;
+  const lo = Math.floor((numeric - 1) / 100) * 100 + 1;
+  const hi = lo + 99;
+  const pad = (n: number) => String(n).padStart(6, '0');
+  const file = `${index.idPrefix}-sent-${pad(lo)}-${pad(hi)}.json`;
+  const key = `${exam}/${file}`;
+  if (!sentenceBlockCache.has(key)) {
+    sentenceBlockCache.set(
+      key,
+      fetch(`/data/${exam}/vocab/sentences/${file}`)
+        .then(async (res) => {
+          if (!res.ok) return null;
+          const data = (await res.json()) as { items?: { id: string; sentences: ExamSentence[] }[] };
+          const map: Record<string, ExamSentence[]> = {};
+          for (const item of data.items ?? []) map[item.id] = item.sentences;
+          return map;
+        })
+        .catch(() => null)
+    );
+  }
+  const block = await sentenceBlockCache.get(key)!;
+  return block?.[entryId] ?? null;
+}
+
 export function filterExamVocab(
   entries: ExamVocabEntry[],
   query: string,
