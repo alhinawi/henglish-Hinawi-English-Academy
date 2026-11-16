@@ -2789,5 +2789,12 @@
   "ys.notice1": "No catalog matches for your search. Showing suggested clips instead.",
   "ys.notice2": "The YouTube API quota is temporarily exceeded. Showing catalog results.",
   "ys.notice3": "Live results from YouTube Data API v3.",
-  "ys.notice4": "Could not connect to the YouTube API. Showing catalog results."
+  "ys.notice4": "Could not connect to the YouTube API. Showing catalog results.",
+  "vd.invalid": "Invalid YouTube ID format.",
+  "vd.metadata": "YouTube metadata is available. Playback may still depend on account, region and video restrictions.",
+  "vd.restricted": "External embedding is restricted.",
+  "vd.missing": "The video is deleted, private or unavailable (HTTP 404).",
+  "vd.thumbnail": "Thumbnail found. Playback and embedding could not be verified.",
+  "vd.response": "Unexpected YouTube response (HTTP {status}).",
+  "vd.network": "Could not verify the video: {message}"
 }
