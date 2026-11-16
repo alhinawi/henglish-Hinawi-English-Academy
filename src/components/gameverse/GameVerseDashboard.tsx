@@ -47,6 +47,7 @@ import {
 } from 'lucide-react';
 import { playSound } from '../../utils/audio';
 import { COMPLETE_GAMES_CATALOG, GameDefinition, GameCategory } from '../../data/gamesCatalogData';
+import { txText, useAppTextMap } from '../../services/contentI18nService';
 
 interface GameVerseDashboardProps {
   onSelectGame: (gameId: string) => void;
@@ -93,6 +94,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
   onOpenMultiplayer,
 }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const appText = useAppTextMap('gamesCatalogData');
   const [searchQuery, setSearchQuery] = useState<string>('');
 
   const counts: Record<string, number> = {
@@ -240,7 +242,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
               {/* Titles */}
               <div className="space-y-1">
                 <h3 className="text-base font-black text-white group-hover:text-[#41e7ff] transition-colors">
-                  {game.titleAr}
+                  {txText(appText, game.titleAr)}
                 </h3>
                 <span dir="ltr" className="text-xs text-white/50 block font-['Outfit',sans-serif]">
                   {game.titleEn}
@@ -249,7 +251,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
 
               {/* Description */}
               <p className="text-xs text-[#b9b6d5] leading-relaxed line-clamp-2">
-                {game.descriptionAr}
+                {txText(appText, game.descriptionAr)}
               </p>
             </div>
 
