@@ -118,32 +118,32 @@ initSupabaseClient();
 // ==============================================================================
 
 export function normalizeAuthError(err: unknown): string {
-  if (!err) return 'حدث خطأ غير متوقع. يرجى المحاولة لاحقاً.';
+  if (!err) return 'ae.unexpected';
   const msg = err instanceof Error ? err.message : String(err);
 
   // Network / Connectivity errors
   if (msg.includes('Failed to fetch') || msg.includes('NetworkError') || msg.includes('fetch failed')) {
     if (!isSupabaseConfigured()) {
-      return 'تعذر الاتصال بخادم قاعدة البيانات. يرجى تهيئة متغيرات VITE_SUPABASE_URL و VITE_SUPABASE_ANON_KEY في إعدادات البيئة (Vercel).';
+      return 'ae.configuration';
     }
-    return 'تعذر الاتصال بخادم المصادقة. يرجى التحقق من اتصالك بالإنترنت والمحاولة مجدداً.';
+    return 'ae.network';
   }
 
   // Supabase Auth specific error codes & descriptions
   if (msg.includes('Invalid login credentials')) {
-    return 'البريد الإلكتروني أو كلمة المرور غير صحيحة. يرجى التحقق والمحاولة مرة أخرى.';
+    return 'ae.credentials';
   }
   if (msg.includes('Email not confirmed')) {
-    return 'البريد الإلكتروني لم يتم تأكيده بعد. يرجى تفعيل حسابك عبر رمز التحقق (OTP).';
+    return 'ae.unconfirmed';
   }
   if (msg.includes('User already registered') || msg.includes('email address is already registered')) {
-    return 'هذا البريد الإلكتروني مسجل بالفعل. يرجى تسجيل الدخول أو استعادة كلمة المرور.';
+    return 'ae.registered';
   }
   if (msg.includes('Password should be at least')) {
-    return 'كلمة المرور ضعيفة. يجب ألا تقل عن 6 أحرف.';
+    return 'ae.weak';
   }
   if (msg.includes('rate limit') || msg.includes('over_email_send_rate_limit')) {
-    return 'تم إرسال عدد كبير من الطلبات. يرجى الانتظار دقيقة قبل المحاولة مجدداً.';
+    return 'ae.rate';
   }
 
   return msg;
@@ -176,7 +176,7 @@ export function getSavedAuthSession(): AuthSessionState {
 export async function completeGoogleSignIn(token: string): Promise<{ success: boolean; session?: AuthSessionState; error?: string }> {
   const me = await apiGetMe(token);
   if (!me || !me.user) {
-    return { success: false, error: 'تعذر إكمال تسجيل الدخول بحساب Google. حاول مرة تانية.' };
+    return { success: false, error: 'ae.google' };
   }
   const session: AuthSessionState = {
     type: 'authenticated',
@@ -312,7 +312,7 @@ export async function signInUser(
   // 2. Henglish Accounts API (Cloudflare Workers + D1) - the production backend
   if (password) {
     if (!clean.includes('@')) {
-      return { success: false, error: 'سجّل الدخول بالإيميل بتاعك.' };
+      return { success: false, error: 'ae.emailRequired' };
     }
     const apiResult = await apiLogin(clean, password);
     if (!apiResult.success) return { success: false, error: apiResult.error };
@@ -370,7 +370,7 @@ export async function signInUser(
     }
   }
 
-  return { success: false, error: 'خادم الحسابات غير متاح حالياً. حاول مرة تانية.' };
+  return { success: false, error: 'ae.unavailable' };
 }
 
 export async function verifyEmailOtp(email: string, token: string): Promise<{ success: boolean; error?: string }> {
@@ -402,7 +402,7 @@ export async function verifyEmailOtp(email: string, token: string): Promise<{ su
     saveAuthSession(current);
     return { success: true };
   }
-  return { success: false, error: 'رمز التحقق غير صالح، يرجى إدخال 6 أرقام.' };
+  return { success: false, error: 'ae.otp' };
 }
 
 export async function resendVerificationOtp(email: string): Promise<{ success: boolean; error?: string }> {
