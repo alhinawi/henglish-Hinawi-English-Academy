@@ -1,3 +1,5 @@
+import { Award } from 'lucide-react';
+import { BadgeCollection } from '../components/BadgeCollection';
 import React from "react";
 import {
   PageRoute,
@@ -29,7 +31,6 @@ import {
   CheckCircle2,
   Clock,
   Flame,
-  Award,
   TrendingUp,
   Target,
   Play,
@@ -657,45 +658,8 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       {/* 4. UPCOMING ASSIGNMENTS & BADGES SHOWCASE */}
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Badges and Trophies */}
-        <div className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-7 border border-white/10 space-y-5">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10">
-            <h2 className="text-lg font-black text-white flex items-center gap-2">
-              <Award className="w-5 h-5 text-[#ffd166]" />
-              شارات التميز والإنجازات الأكاديمية
-            </h2>
-            <button
-              onClick={() => {
-                playSound("click");
-                onNavigate("my-learning");
-              }}
-              className="text-xs text-[#41e7ff] hover:underline cursor-pointer"
-            >
-              عرض الكل ({badges.length})
-            </button>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5">
-            {badges.map((b) => (
-              <div
-                key={b.id}
-                className={`p-3.5 rounded-2xl border text-center transition-all ${
-                  b.unlocked
-                    ? "bg-linear-to-b from-[#ffd166]/10 to-transparent border-[#ffd166]/40 shadow-sm"
-                    : "bg-white/5 border-white/5 opacity-50 grayscale"
-                }`}
-              >
-                <div className="text-3xl mb-1.5 filter drop-shadow">
-                  {b.icon}
-                </div>
-                <div className="text-xs font-bold text-white mb-0.5">
-                  {b.title}
-                </div>
-                <div className="text-[10px] text-[#b9b6d5] line-clamp-2 leading-tight">
-                  {b.description}
-                </div>
-              </div>
-            ))}
-          </div>
+        <div className="lg:col-span-7 min-w-0">
+          <BadgeCollection badges={badges} compact onNavigate={onNavigate} />
         </div>
 
         {/* Practice Lab & Placement Test Promotion */}

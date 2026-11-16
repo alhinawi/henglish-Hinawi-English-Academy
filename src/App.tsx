@@ -1,3 +1,4 @@
+import { BadgesPage } from './components/BadgeCollection';
 import { useArcadeProgress } from './services/arcadeProgressService';
 import { combinedStudyStreak } from './utils/studyStreak';
 import React, { useState, useEffect, lazy, Suspense } from 'react';
@@ -222,6 +223,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('ai-tutor');
       } else if (hash === 'world-3d' || hash === '3d-world') {
         setCurrentRoute('world-3d');
+      } else if (hash === 'badges') {
+        setCurrentRoute('badges');
       } else if (hash === 'certificates') {
         setCurrentRoute('certificates');
       } else if (hash === 'exams' || hash === 'assessment') {
@@ -568,6 +571,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 )}
 
                 {/* 24. Official Certificates System */}
+                {currentRoute === 'badges' && <BadgesPage onNavigate={handleNavigate} />}
                 {currentRoute === 'certificates' && (
                   <CertificatesPage
                     onRecordScore={recordQuizScore}

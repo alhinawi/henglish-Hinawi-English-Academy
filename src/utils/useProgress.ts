@@ -1,9 +1,9 @@
+import { useBadges } from './useBadges';
 import { addStudyDay } from "./studyStreak";
 import { useState, useEffect, useRef } from "react";
 import { getHenglishApiToken, apiGetProgress, apiPutProgress } from "../services/henglishApi";
 import {
   UserProgressState,
-  AchievementBadge,
   UserProfile,
   DailyGoal,
   AppNotification,
@@ -555,52 +555,7 @@ export function useProgress(activeUserId?: string) {
     Math.round((progress.completedLessons.length / totalLessons) * 100),
   );
 
-  const badges: AchievementBadge[] = [
-    {
-      id: "first_step",
-      title: "الخطوة الأولى",
-      description: "أكملت أول درس في الأكاديمية",
-      icon: "🌱",
-      unlocked: progress.completedLessons.length >= 1,
-    },
-    {
-      id: "quiz_master",
-      title: "صياد الدرجات",
-      description: "أكملت اختباراً بدرجة كاملة",
-      icon: "🎯",
-      unlocked: Object.values(progress.quizScores).some(
-        (q) => q.score === q.total && q.total > 0,
-      ),
-    },
-    {
-      id: "streak_warrior",
-      title: "استمرارية مذهلة",
-      description: "حافظت على التعلم لعدة أيام متتالية",
-      icon: "🔥",
-      unlocked: progress.studyStreakDays >= 3,
-    },
-    {
-      id: "flashcard_champ",
-      title: "خبير الكلمات والأفعال",
-      description: "حفظت 5 بطاقات فلاش كارد على الأقل",
-      icon: "⚡",
-      unlocked: progress.knownFlashcards.length >= 5,
-    },
-    {
-      id: "cefr_b1_climber",
-      title: "متسلق مستوى B1",
-      description: "تخطيت أكثر من 1,000 نقطة خبرة XP",
-      icon: "🧗‍♂️",
-      unlocked: (progress.xp || 0) >= 1000,
-    },
-    {
-      id: "future_perfect_master",
-      title: "فارس المستقبل التام",
-      description: "أكملت جميع دروس كورس Future Perfect",
-      icon: "👑",
-      unlocked: progress.completedLessons.length >= totalLessons,
-    },
-  ];
+  const { badges } = useBadges(activeUserId);
 
   return {
     progress,

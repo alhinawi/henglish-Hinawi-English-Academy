@@ -4,6 +4,7 @@ export type PageRoute =
   | 'verify-email'
   | 'forgot-password'
   | 'reset-password'
+  | 'badges'
   | 'dashboard'
   | 'home'
   | 'teacher-dashboard'
@@ -213,6 +214,11 @@ export interface AchievementBadge {
   icon: string;
   unlocked: boolean;
   progressPercentage?: number;
+  category?: string;
+  tier?: 'bronze' | 'silver' | 'gold' | 'diamond';
+  available?: boolean;
+  current?: number;
+  target?: number;
 }
 
 export interface UserProgressState {
