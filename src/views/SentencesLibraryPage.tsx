@@ -119,6 +119,12 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   const [weeklySentence, setWeeklySentence] = useState<SentenceItem | null>(null);
   const [randomSentence, setRandomSentence] = useState<SentenceItem | null>(null);
 
+  const [learningRevision, setLearningRevision] = useState(0);
+  const handleLearningChange = () => {
+    setStats(getSentenceStats());
+    setLearningRevision(n => n + 1);
+  };
+
   // SRS and Stats
   const [stats, setStats] = useState<SentenceLearningStats>(getSentenceStats());
   const [collections, setCollections] = useState<UserSentenceCollection[]>(getCollections());
@@ -240,7 +246,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
       default:
         return allSentences;
     }
-  }, [allSentences, activeMode, selectedCefr, selectedSection, selectedGrammar, searchQuery, isLoading]);
+  }, [allSentences, activeMode, selectedCefr, selectedSection, selectedGrammar, searchQuery, isLoading, learningRevision]);
 
   // Pagination slice
   const paginatedSentences = useMemo(() => {
@@ -532,7 +538,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </span>
             <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG-u-nu-latn')}</span>
           </div>
-          <SentenceCard
+          <SentenceCard onLearningChange={handleLearningChange}
             sentence={dailySentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
           />
@@ -549,7 +555,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </span>
             <span className="text-xs font-mono">Mastery Expression</span>
           </div>
-          <SentenceCard
+          <SentenceCard onLearningChange={handleLearningChange}
             sentence={weeklySentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
           />
@@ -569,7 +575,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               <span>{t('sl.anotherRandom')}</span>
             </button>
           </div>
-          <SentenceCard
+          <SentenceCard onLearningChange={handleLearningChange}
             sentence={randomSentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
           />
@@ -701,7 +707,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </button>
           ) : (
             <div className="max-w-2xl mx-auto text-right">
-              <SentenceCard sentence={randomSentence} />
+              <SentenceCard onLearningChange={handleLearningChange} sentence={randomSentence} />
             </div>
           )}
 
@@ -837,7 +843,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {paginatedSentences.map(sentence => (
-                <SentenceCard
+                <SentenceCard onLearningChange={handleLearningChange}
                   key={sentence.id}
                   sentence={sentence}
                   onPracticeWithAi={() => onNavigate('ai-tutor')}
