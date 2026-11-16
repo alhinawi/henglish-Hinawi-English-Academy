@@ -2042,5 +2042,10 @@
   "ocr.translating": "جارٍ الترجمة...",
   "ocr.translatedPlaceholder": "ستظهر الترجمة الكاملة هنا...",
   "ocr.listenTranslation": "استمع للترجمة",
-  "ocr.copyTranslation": "نسخ الترجمة"
+  "ocr.copyTranslation": "نسخ الترجمة",
+  "tf.title": "صح ولا غلط",
+  "tf.tagline": "جملة إنجليزية وترجمة قدامك.. الترجمة بتاعتها فعلا ولا لأ؟ 10 جولات سريعة.",
+  "tf.loading": "بنجهز الجمل...",
+  "tf.trueBtn": "صح",
+  "tf.falseBtn": "غلط"
 }

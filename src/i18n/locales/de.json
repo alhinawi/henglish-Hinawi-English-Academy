@@ -2042,5 +2042,10 @@
   "ocr.translating": "Übersetzt...",
   "ocr.translatedPlaceholder": "Die vollständige Übersetzung erscheint hier...",
   "ocr.listenTranslation": "Übersetzung anhören",
-  "ocr.copyTranslation": "Übersetzung kopieren"
+  "ocr.copyTranslation": "Übersetzung kopieren",
+  "tf.title": "Richtig oder falsch",
+  "tf.tagline": "Ein englischer Satz mit Übersetzung - stimmt sie wirklich oder nicht? 10 schnelle Runden.",
+  "tf.loading": "Sätze werden vorbereitet...",
+  "tf.trueBtn": "Richtig",
+  "tf.falseBtn": "Falsch"
 }
