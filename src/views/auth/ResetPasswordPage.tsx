@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
 import { playSound, fireCelebration } from '../../utils/audio';
 import {
@@ -16,6 +17,7 @@ interface ResetPasswordPageProps {
 }
 
 export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate }) => {
+  const { t, dir } = useLanguage();
   const { resetPassword } = useAuth();
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -33,11 +35,11 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
     setFeedback(null);
 
     if (!isPasswordValid) {
-      setFeedback({ type: 'error', text: 'يجب أن تتكون كلمة المرور من 8 أحرف وأرقام على الأقل.' });
+      setFeedback({ type: 'error', text: t('rp.invalid') });
       return;
     }
     if (password !== confirmPassword) {
-      setFeedback({ type: 'error', text: 'كلمتا المرور غير متطابقتين.' });
+      setFeedback({ type: 'error', text: t('rp.mismatch') });
       return;
     }
 
@@ -48,18 +50,18 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
     if (res.success) {
       playSound('correct');
       fireCelebration();
-      setFeedback({ type: 'success', text: 'تم تحديث كلمة المرور بنجاح! جاري تحويلك لتسجيل الدخول...' });
+      setFeedback({ type: 'success', text: t('rp.success') });
       setTimeout(() => {
         onNavigate('login');
       }, 1500);
     } else {
       playSound('wrong');
-      setFeedback({ type: 'error', text: res.error || 'فشل تحديث كلمة المرور. قد يكون الرابط منتهي الصلاحية.' });
+      setFeedback({ type: 'error', text: res.error || t('rp.failed') });
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir={dir}>
       {/* Decorative Glow */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -69,9 +71,9 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
           <ShieldCheck className="w-8 h-8" />
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-2">تعيين كلمة مرور جديدة</h2>
+        <h2 className="text-2xl font-bold text-white mb-2">{t('rp.title')}</h2>
         <p className="text-xs text-slate-400 leading-relaxed mb-6">
-          أدخل كلمة مرور قوية وجديدة لحسابك في Henglish Academy.
+          {t('rp.intro')}
         </p>
 
         {feedback && (
@@ -85,10 +87,10 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4 text-right">
+        <form onSubmit={handleSubmit} className="space-y-4 text-start">
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1.5">
-              كلمة المرور الجديدة
+              {t('rp.password')}
             </label>
             <div className="relative">
               <Lock className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -96,7 +98,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="8 أحرف وأرقام"
+                placeholder={t('rp.placeholder')}
                 className="w-full pr-11 pl-11 py-3 bg-slate-950/60 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-left"
                 dir="ltr"
                 required
@@ -104,6 +106,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
+                aria-label={showPassword ? t('rp.hide') : t('rp.show')}
                 className="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200"
               >
                 {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -113,7 +116,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
 
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1.5">
-              تأكيد كلمة المرور الجديدة
+              {t('rp.confirm')}
             </label>
             <div className="relative">
               <Lock className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -121,7 +124,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
                 type={showPassword ? 'text' : 'password'}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                placeholder="أعد إدخال كلمة المرور"
+                placeholder={t('rp.repeat')}
                 className="w-full pr-11 pl-4 py-3 bg-slate-950/60 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-left"
                 dir="ltr"
                 required
@@ -139,7 +142,7 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
             ) : (
               <>
                 <ShieldCheck className="w-4 h-4" />
-                <span>حفظ كلمة المرور الجديدة</span>
+                <span>{t('rp.save')}</span>
               </>
             )}
           </button>

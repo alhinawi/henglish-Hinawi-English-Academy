@@ -2538,5 +2538,18 @@
   "wdm.collocations": "Collocations:",
   "wdm.notes": "Personal note for spaced repetition:",
   "wdm.placeholder": "Write a note to help remember this word...",
-  "wdm.saveNote": "Save note"
+  "wdm.saveNote": "Save note",
+  "rp.invalid": "Use at least 8 characters, including letters and numbers.",
+  "rp.mismatch": "The passwords do not match.",
+  "rp.success": "Password updated. Redirecting to sign in...",
+  "rp.failed": "Could not update the password. The link may have expired.",
+  "rp.title": "Set a new password",
+  "rp.intro": "Enter a strong new password for your Henglish Academy account.",
+  "rp.password": "New password",
+  "rp.placeholder": "8+ letters and numbers",
+  "rp.confirm": "Confirm new password",
+  "rp.repeat": "Re-enter the password",
+  "rp.save": "Save new password",
+  "rp.show": "Show password",
+  "rp.hide": "Hide password"
 }
