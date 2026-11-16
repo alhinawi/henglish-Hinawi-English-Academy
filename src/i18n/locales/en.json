@@ -1828,5 +1828,7 @@
   "am.creating": "Creating account...",
   "am.createFree": "Create a new free account",
   "am.resetBody": "Enter your email and we will send you an encrypted link to set a new password for your account.",
-  "am.sendReset": "Send recovery link"
+  "am.sendReset": "Send recovery link",
+  "gs.google": "Continue with Google",
+  "gs.divider": "or with email"
 }
