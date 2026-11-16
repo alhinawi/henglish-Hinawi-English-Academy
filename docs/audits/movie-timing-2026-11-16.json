@@ -1,0 +1,3010 @@
+{
+  "auditedAt": "2026-11-16",
+  "entries": 300,
+  "uniqueSources": 286,
+  "scope": "Static data audit only; does not verify spoken audio or timestamps.",
+  "videos": [
+    {
+      "id": "scene-godfather-offer",
+      "youtubeId": "D6me2-OurCw",
+      "source": "https://www.youtube.com/watch?v=D6me2-OurCw",
+      "firstStoredStart": 12,
+      "configuredStart": 10,
+      "configuredEnd": 95,
+      "lines": 4,
+      "verification": "opening_and_selected_excerpts_audio_reviewed",
+      "correctedFirstStart": 0,
+      "sourceDuration": 88.321
+    },
+    {
+      "id": "scene-forrest-gump-chocolates",
+      "youtubeId": "vdtqSaJO-iM",
+      "source": "https://www.youtube.com/watch?v=vdtqSaJO-iM",
+      "firstStoredStart": 6,
+      "configuredStart": 5,
+      "configuredEnd": 80,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-dark-knight-defines",
+      "youtubeId": "H19vDg1iLRs",
+      "source": "https://www.youtube.com/watch?v=H19vDg1iLRs",
+      "firstStoredStart": 8,
+      "configuredStart": 5,
+      "configuredEnd": 70,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-dead-poets-seize",
+      "youtubeId": "vi0Lbjs5ECI",
+      "source": "https://www.youtube.com/watch?v=vi0Lbjs5ECI",
+      "firstStoredStart": 18,
+      "configuredStart": 15,
+      "configuredEnd": 95,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-terminator-back",
+      "youtubeId": "tYc2jQaM8gM",
+      "source": "https://www.youtube.com/watch?v=tYc2jQaM8gM",
+      "firstStoredStart": 12,
+      "configuredStart": 10,
+      "configuredEnd": 60,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-pursuit-of-happyness-dream",
+      "youtubeId": "UZb2NOHPA2A",
+      "source": "https://www.youtube.com/watch?v=UZb2NOHPA2A",
+      "firstStoredStart": 18,
+      "configuredStart": 15,
+      "configuredEnd": 85,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-jerry-maguire-hello",
+      "youtubeId": "AyrP-pwDayE",
+      "source": "https://www.youtube.com/watch?v=AyrP-pwDayE",
+      "firstStoredStart": 12,
+      "configuredStart": 10,
+      "configuredEnd": 90,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-the-office-first-aid",
+      "youtubeId": "Vmb1tqYqyII",
+      "source": "https://www.youtube.com/watch?v=Vmb1tqYqyII",
+      "firstStoredStart": 12,
+      "configuredStart": 10,
+      "configuredEnd": 90,
+      "lines": 1,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-steve-jobs-stanford",
+      "youtubeId": "UF8uR6Z6KLc",
+      "source": "https://www.youtube.com/watch?v=UF8uR6Z6KLc",
+      "firstStoredStart": 22,
+      "configuredStart": 20,
+      "configuredEnd": 95,
+      "lines": 1,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "talk-matt-cutts-30days",
+      "youtubeId": "JnfBXjWm7hc",
+      "source": "https://www.youtube.com/watch?v=JnfBXjWm7hc",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 210,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "talk-susan-cain-introverts",
+      "youtubeId": "c0KYU2j0TM4",
+      "source": "https://www.youtube.com/watch?v=c0KYU2j0TM4",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 240,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sitcom-friends-howyoudoin",
+      "youtubeId": "CLvXFVbb82Q",
+      "source": "https://www.youtube.com/watch?v=CLvXFVbb82Q",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 120,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "podcast-bbc-6min-housework",
+      "youtubeId": "D9jZMLm72a8",
+      "source": "https://www.youtube.com/watch?v=D9jZMLm72a8",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 360,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-toystory-infinity",
+      "youtubeId": "LdMb9D9WF5k",
+      "source": "https://www.youtube.com/watch?v=LdMb9D9WF5k",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 60,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-titanic-king",
+      "youtubeId": "ItjXTieWKyI",
+      "source": "https://www.youtube.com/watch?v=ItjXTieWKyI",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 70,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "lesson-friends-monica-sick",
+      "youtubeId": "21_5JLwqLso",
+      "source": "https://www.youtube.com/watch?v=21_5JLwqLso",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "interview-taylor-ellen",
+      "youtubeId": "on4bHNdUm-I",
+      "source": "https://www.youtube.com/watch?v=on4bHNdUm-I",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-harrypotter-wizard",
+      "youtubeId": "nnD8FKXzIGs",
+      "source": "https://www.youtube.com/watch?v=nnD8FKXzIGs",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 90,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "scene-lionking-hakuna",
+      "youtubeId": "0MxulhivCvI",
+      "source": "https://www.youtube.com/watch?v=0MxulhivCvI",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 120,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doc-bbcearth-iguana",
+      "youtubeId": "el4CQj-TCbA",
+      "source": "https://www.youtube.com/watch?v=el4CQj-TCbA",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 240,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doc-bbcearth-survival",
+      "youtubeId": "Wf_zwkZXMiw",
+      "source": "https://www.youtube.com/watch?v=Wf_zwkZXMiw",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 240,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "daily-oxford-talk-job",
+      "youtubeId": "235MNImhIko",
+      "source": "https://www.youtube.com/watch?v=235MNImhIko",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "travel-easyenglish-airport",
+      "youtubeId": "jy88ejZrPWw",
+      "source": "https://www.youtube.com/watch?v=jy88ejZrPWw",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 240,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "job-begin-interview-conv",
+      "youtubeId": "Tb4OllD9D1A",
+      "source": "https://www.youtube.com/watch?v=Tb4OllD9D1A",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-rachels-any-word",
+      "youtubeId": "Ci4lp_vf9WA",
+      "source": "https://www.youtube.com/watch?v=Ci4lp_vf9WA",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "biz-derek-meetings",
+      "youtubeId": "18nwywmeCH0",
+      "source": "https://www.youtube.com/watch?v=18nwywmeCH0",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sitcom-seinfeld-opposite",
+      "youtubeId": "CizwH_T7pjg",
+      "source": "https://www.youtube.com/watch?v=CizwH_T7pjg",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 180,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "daily-easyenglish-personalinfo",
+      "youtubeId": "MYFSBowiN8k",
+      "source": "https://www.youtube.com/watch?v=MYFSBowiN8k",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 240,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "job-c1-interview-advanced",
+      "youtubeId": "Xa2Cxw6CsUA",
+      "source": "https://www.youtube.com/watch?v=Xa2Cxw6CsUA",
+      "firstStoredStart": 5,
+      "configuredStart": 0,
+      "configuredEnd": 300,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "daily-bbc-introduce-yourself",
+      "youtubeId": "I_tRSrPru94",
+      "source": "https://www.youtube.com/watch?v=I_tRSrPru94",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "daily-bbc-where-from",
+      "youtubeId": "31y2Bq1RYQA",
+      "source": "https://www.youtube.com/watch?v=31y2Bq1RYQA",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "interviews-easyenglish-newyork",
+      "youtubeId": "M380ySm1vOk",
+      "source": "https://www.youtube.com/watch?v=M380ySm1vOk",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "travel-train-station",
+      "youtubeId": "PDv7Q8eiDUQ",
+      "source": "https://www.youtube.com/watch?v=PDv7Q8eiDUQ",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "job-bbc-english-at-work-interview",
+      "youtubeId": "KN2jyw6D1ak",
+      "source": "https://www.youtube.com/watch?v=KN2jyw6D1ak",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "listening-bbc-art-of-conversation",
+      "youtubeId": "xGhbhWUqL-w",
+      "source": "https://www.youtube.com/watch?v=xGhbhWUqL-w",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "speech-steve-jobs-stanford",
+      "youtubeId": "1i9kcBHX2Nw",
+      "source": "https://www.youtube.com/watch?v=1i9kcBHX2Nw",
+      "firstStoredStart": 65,
+      "configuredStart": 60,
+      "configuredEnd": 180,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "speech-emma-watson-equality",
+      "youtubeId": "nIwU-9ZTTJc",
+      "source": "https://www.youtube.com/watch?v=nIwU-9ZTTJc",
+      "firstStoredStart": 50,
+      "configuredStart": 45,
+      "configuredEnd": 165,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "speech-tom-hanks-human",
+      "youtubeId": "71c6FmZwCW4",
+      "source": "https://www.youtube.com/watch?v=71c6FmZwCW4",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-bbc-fast-speech",
+      "youtubeId": "3zN7TjX7h18",
+      "source": "https://www.youtube.com/watch?v=3zN7TjX7h18",
+      "firstStoredStart": 65,
+      "configuredStart": 60,
+      "configuredEnd": 180,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sitcom-friends-learn-english",
+      "youtubeId": "L5RgaKQLChw",
+      "source": "https://www.youtube.com/watch?v=L5RgaKQLChw",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movie-incredibles-lesson",
+      "youtubeId": "Rnwwo9Zol6w",
+      "source": "https://www.youtube.com/watch?v=Rnwwo9Zol6w",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movie-pursuit-happyness-lesson",
+      "youtubeId": "pKoH9GkEKxQ",
+      "source": "https://www.youtube.com/watch?v=pKoH9GkEKxQ",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movie-pirates-lesson",
+      "youtubeId": "UUAENx1NANg",
+      "source": "https://www.youtube.com/watch?v=UUAENx1NANg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movie-tangled-lesson",
+      "youtubeId": "oZXiFpqxTuw",
+      "source": "https://www.youtube.com/watch?v=oZXiFpqxTuw",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "daily-voa-lesson1-welcome",
+      "youtubeId": "WR9_nsLyaEY",
+      "source": "https://www.youtube.com/watch?v=WR9_nsLyaEY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "daily-voa-lesson8-busy",
+      "youtubeId": "sp0cwcd1fGE",
+      "source": "https://www.youtube.com/watch?v=sp0cwcd1fGE",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "listening-voa-podcast",
+      "youtubeId": "2mZqR9qlneY",
+      "source": "https://www.youtube.com/watch?v=2mZqR9qlneY",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-vanessa-all-sounds",
+      "youtubeId": "tpN9CPwZ-oE",
+      "source": "https://www.youtube.com/watch?v=tpN9CPwZ-oE",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-american-flap-t",
+      "youtubeId": "8bm-YzF5yVE",
+      "source": "https://www.youtube.com/watch?v=8bm-YzF5yVE",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "story-empty-park",
+      "youtubeId": "cYOMDUV6aTg",
+      "source": "https://www.youtube.com/watch?v=cYOMDUV6aTg",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "biz-derek-leading-meetings",
+      "youtubeId": "cdq6onYgtSg",
+      "source": "https://www.youtube.com/watch?v=cdq6onYgtSg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "biz-vanessa-20-phrases",
+      "youtubeId": "T2hOSdvaiRk",
+      "source": "https://www.youtube.com/watch?v=T2hOSdvaiRk",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "idioms-marina-15",
+      "youtubeId": "HclqADvf35Y",
+      "source": "https://www.youtube.com/watch?v=HclqADvf35Y",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "idioms-lucy-100",
+      "youtubeId": "Hm-n-_uqCvQ",
+      "source": "https://www.youtube.com/watch?v=Hm-n-_uqCvQ",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phrasal-mmmenglish-50",
+      "youtubeId": "r7VKVXbaj_Y",
+      "source": "https://www.youtube.com/watch?v=r7VKVXbaj_Y",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phrasal-bob-part1",
+      "youtubeId": "NKT6f6XlYhQ",
+      "source": "https://www.youtube.com/watch?v=NKT6f6XlYhQ",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ielts-advantage-secrets",
+      "youtubeId": "ELxGmf9f_ZM",
+      "source": "https://www.youtube.com/watch?v=ELxGmf9f_ZM",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ielts-liz-home",
+      "youtubeId": "61izqh7ZBww",
+      "source": "https://www.youtube.com/watch?v=61izqh7ZBww",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "job-cass-top10",
+      "youtubeId": "U0YdO6zGSHk",
+      "source": "https://www.youtube.com/watch?v=U0YdO6zGSHk",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "job-rachel-dos-donts",
+      "youtubeId": "-JNjsOX0N0c",
+      "source": "https://www.youtube.com/watch?v=-JNjsOX0N0c",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "smalltalk-bob-work-friends",
+      "youtubeId": "4zXys7i8Zrc",
+      "source": "https://www.youtube.com/watch?v=4zXys7i8Zrc",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "smalltalk-lucy-100",
+      "youtubeId": "8vPXIsAqmjg",
+      "source": "https://www.youtube.com/watch?v=8vPXIsAqmjg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "smalltalk-jefferson-tips",
+      "youtubeId": "ZcI2B92JlJU",
+      "source": "https://www.youtube.com/watch?v=ZcI2B92JlJU",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "listening-comfort-beginners",
+      "youtubeId": "4EtXW3nnfPI",
+      "source": "https://www.youtube.com/watch?v=4EtXW3nnfPI",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "listening-david-alice-b1",
+      "youtubeId": "3vrJKNOUeK4",
+      "source": "https://www.youtube.com/watch?v=3vrJKNOUeK4",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "listening-david-alice-c1",
+      "youtubeId": "3OdsuB6PED8",
+      "source": "https://www.youtube.com/watch?v=3OdsuB6PED8",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "mistakes-accurate-7",
+      "youtubeId": "xCBz-O8nHrc",
+      "source": "https://www.youtube.com/watch?v=xCBz-O8nHrc",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "mistakes-vanessa-20",
+      "youtubeId": "aQQbtwnJUtg",
+      "source": "https://www.youtube.com/watch?v=aQQbtwnJUtg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phone-bob-phrases",
+      "youtubeId": "u40ZKHC98k0",
+      "source": "https://www.youtube.com/watch?v=u40ZKHC98k0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phone-mmmenglish-mustknow",
+      "youtubeId": "H9jUV2AQphY",
+      "source": "https://www.youtube.com/watch?v=H9jUV2AQphY",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "travel-podcast-airport-hotel",
+      "youtubeId": "fsY6mF9rUCk",
+      "source": "https://www.youtube.com/watch?v=fsY6mF9rUCk",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "travel-mr-english-beginners",
+      "youtubeId": "WyDcfIz08Eo",
+      "source": "https://www.youtube.com/watch?v=WyDcfIz08Eo",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "travel-jay-hotel",
+      "youtubeId": "BJsOHCUPnWY",
+      "source": "https://www.youtube.com/watch?v=BJsOHCUPnWY",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "street-easy-english-london",
+      "youtubeId": "DDjWTWHHkpk",
+      "source": "https://www.youtube.com/watch?v=DDjWTWHHkpk",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "street-aydan-salaries",
+      "youtubeId": "6IFsllMF8OI",
+      "source": "https://www.youtube.com/watch?v=6IFsllMF8OI",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "accents-us-uk-au",
+      "youtubeId": "fy-bd5AC-Ms",
+      "source": "https://www.youtube.com/watch?v=fy-bd5AC-Ms",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ukus-letstalk-50",
+      "youtubeId": "V-Ro66uMBX4",
+      "source": "https://www.youtube.com/watch?v=V-Ro66uMBX4",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ukus-360-explained",
+      "youtubeId": "e5JnMFfEX0k",
+      "source": "https://www.youtube.com/watch?v=e5JnMFfEX0k",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "restaurant-bob-order",
+      "youtubeId": "uUMPULuwdLI",
+      "source": "https://www.youtube.com/watch?v=uUMPULuwdLI",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "restaurant-easy-english",
+      "youtubeId": "bgfdqVmVjfk",
+      "source": "https://www.youtube.com/watch?v=bgfdqVmVjfk",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ted-lydia-secrets",
+      "youtubeId": "o_XVt5rdpFY",
+      "source": "https://www.youtube.com/watch?v=o_XVt5rdpFY",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ted-lonsdale-six-months",
+      "youtubeId": "d0yGdNEWdn0",
+      "source": "https://www.youtube.com/watch?v=d0yGdNEWdn0",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ted-marianna-video-game",
+      "youtubeId": "Ge7c7otG2mk",
+      "source": "https://www.youtube.com/watch?v=Ge7c7otG2mk",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-rachel-uh-vowel",
+      "youtubeId": "_63fTgbG-yQ",
+      "source": "https://www.youtube.com/watch?v=_63fTgbG-yQ",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-rachel-silent-letters",
+      "youtubeId": "OtT3GIO0Tqg",
+      "source": "https://www.youtube.com/watch?v=OtT3GIO0Tqg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-rachel-r-sound",
+      "youtubeId": "aOkcehyK_DE",
+      "source": "https://www.youtube.com/watch?v=aOkcehyK_DE",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "slang-jforrest-2024",
+      "youtubeId": "NqxT8aMFGcE",
+      "source": "https://www.youtube.com/watch?v=NqxT8aMFGcE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "slang-letstalk-50",
+      "youtubeId": "tnXWVlflWpg",
+      "source": "https://www.youtube.com/watch?v=tnXWVlflWpg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "fluency-poc-think-english",
+      "youtubeId": "llPX7JMY_zw",
+      "source": "https://www.youtube.com/watch?v=llPX7JMY_zw",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "fluency-bbc-stop-translating",
+      "youtubeId": "nnr_r6aEm8g",
+      "source": "https://www.youtube.com/watch?v=nnr_r6aEm8g",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "email-hbr-etiquette",
+      "youtubeId": "1XctnF7C74s",
+      "source": "https://www.youtube.com/watch?v=1XctnF7C74s",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "email-engvid-alex",
+      "youtubeId": "3Tu1jN65slw",
+      "source": "https://www.youtube.com/watch?v=3Tu1jN65slw",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "routine-bob-act-out",
+      "youtubeId": "ecF1y2bI2T4",
+      "source": "https://www.youtube.com/watch?v=ecF1y2bI2T4",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "routine-bbc-episode4",
+      "youtubeId": "bq6GBbh3uhU",
+      "source": "https://www.youtube.com/watch?v=bq6GBbh3uhU",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "podcast-bbc-breakfast",
+      "youtubeId": "C830bmzNjDc",
+      "source": "https://www.youtube.com/watch?v=C830bmzNjDc",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "grammar-brian-tenses",
+      "youtubeId": "sCiG6rlk2Bc",
+      "source": "https://www.youtube.com/watch?v=sCiG6rlk2Bc",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "grammar-lucy-16-tenses",
+      "youtubeId": "Ljjiw9mC_Cg",
+      "source": "https://www.youtube.com/watch?v=Ljjiw9mC_Cg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "grammar-rebecca-12",
+      "youtubeId": "mScixcyubUY",
+      "source": "https://www.youtube.com/watch?v=mScixcyubUY",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doc-attenborough-creatures",
+      "youtubeId": "EYJm7hIYLSU",
+      "source": "https://www.youtube.com/watch?v=EYJm7hIYLSU",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doc-coral-paradise",
+      "youtubeId": "vHmL6xdkdAg",
+      "source": "https://www.youtube.com/watch?v=vHmL6xdkdAg",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "shopping-giovana-clothes",
+      "youtubeId": "yKo-AeH1qH8",
+      "source": "https://www.youtube.com/watch?v=yKo-AeH1qH8",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "shopping-caro-grocery",
+      "youtubeId": "nd9zJ1tMDDs",
+      "source": "https://www.youtube.com/watch?v=nd9zJ1tMDDs",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doctor-caro-office",
+      "youtubeId": "cd8d_eCLR8c",
+      "source": "https://www.youtube.com/watch?v=cd8d_eCLR8c",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doctor-universal-conversation",
+      "youtubeId": "B5mdSaSZtWw",
+      "source": "https://www.youtube.com/watch?v=B5mdSaSZtWw",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "tech-wordwisdom-it",
+      "youtubeId": "vaQv65vjIT4",
+      "source": "https://www.youtube.com/watch?v=vaQv65vjIT4",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "tech-native-advanced",
+      "youtubeId": "PAjXvjQDYcE",
+      "source": "https://www.youtube.com/watch?v=PAjXvjQDYcE",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "podcast-bbc-tech-boxset",
+      "youtubeId": "rnBQXmO_StE",
+      "source": "https://www.youtube.com/watch?v=rnBQXmO_StE",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "news-bbc-brain-exercise",
+      "youtubeId": "eRqYUTA5JJo",
+      "source": "https://www.youtube.com/watch?v=eRqYUTA5JJo",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "news-bbc-late-nights",
+      "youtubeId": "LXrh2AJa8nU",
+      "source": "https://www.youtube.com/watch?v=LXrh2AJa8nU",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "music-queen-learn",
+      "youtubeId": "o82oNazflnc",
+      "source": "https://www.youtube.com/watch?v=o82oNazflnc",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "intro-ready-confident",
+      "youtubeId": "5whkCF7TgZ0",
+      "source": "https://www.youtube.com/watch?v=5whkCF7TgZ0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "intro-lucy-interview",
+      "youtubeId": "QgjkjsqAzvo",
+      "source": "https://www.youtube.com/watch?v=QgjkjsqAzvo",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "intro-vanessa-formula",
+      "youtubeId": "5c5P8YQeymI",
+      "source": "https://www.youtube.com/watch?v=5c5P8YQeymI",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "present-maria-50",
+      "youtubeId": "Ri4zLmpyz-E",
+      "source": "https://www.youtube.com/watch?v=Ri4zLmpyz-E",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "present-derek-40",
+      "youtubeId": "bgFNTuRYtKE",
+      "source": "https://www.youtube.com/watch?v=bgFNTuRYtKE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "money-hll-phrasal",
+      "youtubeId": "LVyWC2XPVKA",
+      "source": "https://www.youtube.com/watch?v=LVyWC2XPVKA",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "money-engvid-finance",
+      "youtubeId": "bM9XlH_bCRQ",
+      "source": "https://www.youtube.com/watch?v=bM9XlH_bCRQ",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "money-bob-class",
+      "youtubeId": "BAnOiX4yMzE",
+      "source": "https://www.youtube.com/watch?v=BAnOiX4yMzE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sports-tiffani-vocab",
+      "youtubeId": "gA2H_wc1lGw",
+      "source": "https://www.youtube.com/watch?v=gA2H_wc1lGw",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pron-rachel-mispronounce",
+      "youtubeId": "opKPVqxE_QY",
+      "source": "https://www.youtube.com/watch?v=opKPVqxE_QY",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "feelings-sce-describe",
+      "youtubeId": "_uQDCru94nA",
+      "source": "https://www.youtube.com/watch?v=_uQDCru94nA",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "feelings-bob-emotions",
+      "youtubeId": "HGCRUKBfcfE",
+      "source": "https://www.youtube.com/watch?v=HGCRUKBfcfE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "weather-jessica-conversation",
+      "youtubeId": "1MEQAQqCWoQ",
+      "source": "https://www.youtube.com/watch?v=1MEQAQqCWoQ",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "weather-bob-talk",
+      "youtubeId": "_N2Q2_TtG0o",
+      "source": "https://www.youtube.com/watch?v=_N2Q2_TtG0o",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "weather-bbc-ep8",
+      "youtubeId": "sMg4vj6ugSs",
+      "source": "https://www.youtube.com/watch?v=sMg4vj6ugSs",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "twisters-mmmenglish-50",
+      "youtubeId": "xPXu5GoUHH0",
+      "source": "https://www.youtube.com/watch?v=xPXu5GoUHH0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "twisters-hadar-clear",
+      "youtubeId": "_8tdqL5_Prc",
+      "source": "https://www.youtube.com/watch?v=_8tdqL5_Prc",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "idioms-bob-animals",
+      "youtubeId": "o-RTcdqx98o",
+      "source": "https://www.youtube.com/watch?v=o-RTcdqx98o",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "idioms-mmmenglish-animals",
+      "youtubeId": "mN7zt7N549A",
+      "source": "https://www.youtube.com/watch?v=mN7zt7N549A",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "friends-incontext-s2",
+      "youtubeId": "XfwNLfa0Dtk",
+      "source": "https://www.youtube.com/watch?v=XfwNLfa0Dtk",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "agree-exam-phrases",
+      "youtubeId": "MspXqjp3H8c",
+      "source": "https://www.youtube.com/watch?v=MspXqjp3H8c",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "agree-comfort-podcast",
+      "youtubeId": "RBxuSfrOGDE",
+      "source": "https://www.youtube.com/watch?v=RBxuSfrOGDE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "agree-derek-meetings",
+      "youtubeId": "mll-NB-G10U",
+      "source": "https://www.youtube.com/watch?v=mll-NB-G10U",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bank-interactive-advanced",
+      "youtubeId": "8RHGW3Utsps",
+      "source": "https://www.youtube.com/watch?v=8RHGW3Utsps",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bank-ellii-finance",
+      "youtubeId": "q_HL_kHzbNM",
+      "source": "https://www.youtube.com/watch?v=q_HL_kHzbNM",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bank-bob-speak",
+      "youtubeId": "7Lh1tMsRw3U",
+      "source": "https://www.youtube.com/watch?v=7Lh1tMsRw3U",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "cooking-success-vocab",
+      "youtubeId": "QL2tNKHB6ew",
+      "source": "https://www.youtube.com/watch?v=QL2tNKHB6ew",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "cooking-bbc-kitchen",
+      "youtubeId": "HEVxB7C3YuQ",
+      "source": "https://www.youtube.com/watch?v=HEVxB7C3YuQ",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "humor-lucy-british",
+      "youtubeId": "vkL78BxZ50I",
+      "source": "https://www.youtube.com/watch?v=vkL78BxZ50I",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "humor-jforrest-jokes",
+      "youtubeId": "iakqm0HxxG0",
+      "source": "https://www.youtube.com/watch?v=iakqm0HxxG0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "family-7esl-tree",
+      "youtubeId": "zNLRiB-qOAs",
+      "source": "https://www.youtube.com/watch?v=zNLRiB-qOAs",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "family-rebecca-pron",
+      "youtubeId": "q52T7aAMmtQ",
+      "source": "https://www.youtube.com/watch?v=q52T7aAMmtQ",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "house-bob-around",
+      "youtubeId": "WHYMGNbPv2U",
+      "source": "https://www.youtube.com/watch?v=WHYMGNbPv2U",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "house-easy-furniture",
+      "youtubeId": "m27Cck_LGHc",
+      "source": "https://www.youtube.com/watch?v=m27Cck_LGHc",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "directions-bbc-ep5",
+      "youtubeId": "SHXPpsIJTb0",
+      "source": "https://www.youtube.com/watch?v=SHXPpsIJTb0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "gym-bob-learn",
+      "youtubeId": "8vuzfcVel6I",
+      "source": "https://www.youtube.com/watch?v=8vuzfcVel6I",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "gym-giovana-real",
+      "youtubeId": "pGQzIf0Jgwo",
+      "source": "https://www.youtube.com/watch?v=pGQzIf0Jgwo",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "gym-adam-exercise",
+      "youtubeId": "nBR9Rh2-Xww",
+      "source": "https://www.youtube.com/watch?v=nBR9Rh2-Xww",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "classroom-vanessa-50",
+      "youtubeId": "sVX7imbwEq4",
+      "source": "https://www.youtube.com/watch?v=sVX7imbwEq4",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "classroom-adam-students",
+      "youtubeId": "OqaL1YP0pNM",
+      "source": "https://www.youtube.com/watch?v=OqaL1YP0pNM",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "personality-poc-15",
+      "youtubeId": "8_I2sg8Z7Yk",
+      "source": "https://www.youtube.com/watch?v=8_I2sg8Z7Yk",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "personality-letstalk-beginner",
+      "youtubeId": "hKJlw8za4cs",
+      "source": "https://www.youtube.com/watch?v=hKJlw8za4cs",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pharmacy-speakeasy-real",
+      "youtubeId": "4GUuV2fCLno",
+      "source": "https://www.youtube.com/watch?v=4GUuV2fCLno",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pharmacy-tangerine-drugstore",
+      "youtubeId": "UdakI1zk0xE",
+      "source": "https://www.youtube.com/watch?v=UdakI1zk0xE",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "appointment-vanessa-schedule",
+      "youtubeId": "3UYBsBnJe7U",
+      "source": "https://www.youtube.com/watch?v=3UYBsBnJe7U",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "appointment-rebecca-prep",
+      "youtubeId": "h967Qow7XN4",
+      "source": "https://www.youtube.com/watch?v=h967Qow7XN4",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "returns-rep-refund",
+      "youtubeId": "Auq91oy1W_Y",
+      "source": "https://www.youtube.com/watch?v=Auq91oy1W_Y",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "returns-ellii-dialogue",
+      "youtubeId": "GfDGp9GhPaw",
+      "source": "https://www.youtube.com/watch?v=GfDGp9GhPaw",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "appearance-bob-faces",
+      "youtubeId": "PPEDrB14Rok",
+      "source": "https://www.youtube.com/watch?v=PPEDrB14Rok",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "appearance-bbc-ep17",
+      "youtubeId": "9OzIMC6XCiE",
+      "source": "https://www.youtube.com/watch?v=9OzIMC6XCiE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "cafe-ara-pro",
+      "youtubeId": "eEZ6O4w1_hM",
+      "source": "https://www.youtube.com/watch?v=eEZ6O4w1_hM",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "cafe-better-talk-beginners",
+      "youtubeId": "0vWnfQc_-Qs",
+      "source": "https://www.youtube.com/watch?v=0vWnfQc_-Qs",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "emergency-smarter-phrases",
+      "youtubeId": "DtothKABPOM",
+      "source": "https://www.youtube.com/watch?v=DtothKABPOM",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "emergency-class101-10",
+      "youtubeId": "SQ8VWMq5tKY",
+      "source": "https://www.youtube.com/watch?v=SQ8VWMq5tKY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "customs-reallife-us",
+      "youtubeId": "5dEkqdSqwbE",
+      "source": "https://www.youtube.com/watch?v=5dEkqdSqwbE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "customs-verse-interview",
+      "youtubeId": "C7PKHBmejmg",
+      "source": "https://www.youtube.com/watch?v=C7PKHBmejmg",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "celebrations-bob-class",
+      "youtubeId": "Pn3MXGxNWCM",
+      "source": "https://www.youtube.com/watch?v=Pn3MXGxNWCM",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "celebrations-class101-birthdays",
+      "youtubeId": "bJ5jGXzfC1o",
+      "source": "https://www.youtube.com/watch?v=bJ5jGXzfC1o",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "time-etb-telling",
+      "youtubeId": "WLAZpKY-9Ks",
+      "source": "https://www.youtube.com/watch?v=WLAZpKY-9Ks",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "celebrations-zeina-b2",
+      "youtubeId": "3m1lfXr64CE",
+      "source": "https://www.youtube.com/watch?v=3m1lfXr64CE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "hobbies-oxford-freetime",
+      "youtubeId": "hoyhPZDp3dE",
+      "source": "https://www.youtube.com/watch?v=hoyhPZDp3dE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "hobbies-vanessa-fluently",
+      "youtubeId": "dOw3G0hi4ys",
+      "source": "https://www.youtube.com/watch?v=dOw3G0hi4ys",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movies-camille-b2",
+      "youtubeId": "xiikBXfoeHI",
+      "source": "https://www.youtube.com/watch?v=xiikBXfoeHI",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movies-vanessa-tvshows",
+      "youtubeId": "D786BdFfOI0",
+      "source": "https://www.youtube.com/watch?v=D786BdFfOI0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "grammar-lucy-conditionals",
+      "youtubeId": "vXp0ETWXbWo",
+      "source": "https://www.youtube.com/watch?v=vXp0ETWXbWo",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "grammar-friendly-conditionals",
+      "youtubeId": "1TgQHjgV0d8",
+      "source": "https://www.youtube.com/watch?v=1TgQHjgV0d8",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "internet-lingoni-b1",
+      "youtubeId": "a16E1FWjDM0",
+      "source": "https://www.youtube.com/watch?v=a16E1FWjDM0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "internet-shaw-50",
+      "youtubeId": "mL9-Uor9HEc",
+      "source": "https://www.youtube.com/watch?v=mL9-Uor9HEc",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "coworkers-hll-talk",
+      "youtubeId": "U3Vnxo4jmPM",
+      "source": "https://www.youtube.com/watch?v=U3Vnxo4jmPM",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "office-jessica-conversation",
+      "youtubeId": "dzA7nL6cicY",
+      "source": "https://www.youtube.com/watch?v=dzA7nL6cicY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "opinion-talkspire-phrases",
+      "youtubeId": "iPJR4s6Jg7A",
+      "source": "https://www.youtube.com/watch?v=iPJR4s6Jg7A",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "opinion-fluency-stopithink",
+      "youtubeId": "xKRfDKjQosk",
+      "source": "https://www.youtube.com/watch?v=xKRfDKjQosk",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "goals-bob-dreams",
+      "youtubeId": "JS9KpbF_804",
+      "source": "https://www.youtube.com/watch?v=JS9KpbF_804",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "goals-mr-english-plans",
+      "youtubeId": "PRpzuPpIej0",
+      "source": "https://www.youtube.com/watch?v=PRpzuPpIej0",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "taxi-prospeak-ride",
+      "youtubeId": "fsOqBHuKeSM",
+      "source": "https://www.youtube.com/watch?v=fsOqBHuKeSM",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "taxi-giovana-phrases",
+      "youtubeId": "61tey0auDIk",
+      "source": "https://www.youtube.com/watch?v=61tey0auDIk",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "barber-conversation-e1",
+      "youtubeId": "R2vYbhXLvYg",
+      "source": "https://www.youtube.com/watch?v=R2vYbhXLvYg",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "salon-mr-english-real",
+      "youtubeId": "aOZZFing8qA",
+      "source": "https://www.youtube.com/watch?v=aOZZFing8qA",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "dreams-swc-podcast",
+      "youtubeId": "uVkFrqugXFQ",
+      "source": "https://www.youtube.com/watch?v=uVkFrqugXFQ",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "opinion-fuel-5ways",
+      "youtubeId": "Lq_1zsPKI_o",
+      "source": "https://www.youtube.com/watch?v=Lq_1zsPKI_o",
+      "firstStoredStart": 15,
+      "configuredStart": 10,
+      "configuredEnd": 110,
+      "lines": 2,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "negotiation-derek-62-phrases",
+      "youtubeId": "lPinxUDxhVs",
+      "source": "https://www.youtube.com/watch?v=lPinxUDxhVs",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "negotiate-confident-english-tips",
+      "youtubeId": "V9up8rWL3zQ",
+      "source": "https://www.youtube.com/watch?v=V9up8rWL3zQ",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "customer-service-complaints-refunds",
+      "youtubeId": "XX9W8lP3NmY",
+      "source": "https://www.youtube.com/watch?v=XX9W8lP3NmY",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "online-order-complaint-damaged",
+      "youtubeId": "Cbz2jdWQHQU",
+      "source": "https://www.youtube.com/watch?v=Cbz2jdWQHQU",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "relationships-basic-conversation-jessica",
+      "youtubeId": "YeXPDTLURy4",
+      "source": "https://www.youtube.com/watch?v=YeXPDTLURy4",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "dating-relationships-unleashed-podcast",
+      "youtubeId": "KMv3DXOzGIg",
+      "source": "https://www.youtube.com/watch?v=KMv3DXOzGIg",
+      "firstStoredStart": 65,
+      "configuredStart": 60,
+      "configuredEnd": 180,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "science-trust-bbc-6min",
+      "youtubeId": "obpKWRcXezA",
+      "source": "https://www.youtube.com/watch?v=obpKWRcXezA",
+      "firstStoredStart": 50,
+      "configuredStart": 45,
+      "configuredEnd": 165,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "science-common-mistakes-learn",
+      "youtubeId": "Yh-rwpUbhq8",
+      "source": "https://www.youtube.com/watch?v=Yh-rwpUbhq8",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "speech-steve-jobs-stanford",
+      "youtubeId": "1i9kcBHX2Nw",
+      "source": "https://www.youtube.com/watch?v=1i9kcBHX2Nw",
+      "firstStoredStart": 65,
+      "configuredStart": 60,
+      "configuredEnd": 180,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "speech-mlk-i-have-a-dream",
+      "youtubeId": "6dKimoybmEo",
+      "source": "https://www.youtube.com/watch?v=6dKimoybmEo",
+      "firstStoredStart": 65,
+      "configuredStart": 60,
+      "configuredEnd": 180,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "doctor-conversation-sunshine",
+      "youtubeId": "44SL8i8h0dg",
+      "source": "https://www.youtube.com/watch?v=44SL8i8h0dg",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bank-english-bob-canadian",
+      "youtubeId": "7Lh1tMsRw3U",
+      "source": "https://www.youtube.com/watch?v=7Lh1tMsRw3U",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bank-phrases-basic-vs-better",
+      "youtubeId": "SZJBN54jeZc",
+      "source": "https://www.youtube.com/watch?v=SZJBN54jeZc",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "cooking-vocab-english-success",
+      "youtubeId": "QL2tNKHB6ew",
+      "source": "https://www.youtube.com/watch?v=QL2tNKHB6ew",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "kitchen-vocab-bbc-show",
+      "youtubeId": "HEVxB7C3YuQ",
+      "source": "https://www.youtube.com/watch?v=HEVxB7C3YuQ",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ted-ai-same-person-matz",
+      "youtubeId": "9Ff4S1FJdRM",
+      "source": "https://www.youtube.com/watch?v=9Ff4S1FJdRM",
+      "firstStoredStart": 50,
+      "configuredStart": 45,
+      "configuredEnd": 165,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ted-sam-altman-chatgpt-ai",
+      "youtubeId": "5MWT_doo68k",
+      "source": "https://www.youtube.com/watch?v=5MWT_doo68k",
+      "firstStoredStart": 55,
+      "configuredStart": 50,
+      "configuredEnd": 170,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "tech-ai-daily-life-conversation",
+      "youtubeId": "8Qopt3kqLBs",
+      "source": "https://www.youtube.com/watch?v=8Qopt3kqLBs",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phone-conversations-leo-100",
+      "youtubeId": "w0jnsZXndAs",
+      "source": "https://www.youtube.com/watch?v=w0jnsZXndAs",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phone-sentences-unleashed-50",
+      "youtubeId": "tm-Whm3zjhk",
+      "source": "https://www.youtube.com/watch?v=tm-Whm3zjhk",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "airport-conversation-sunshine",
+      "youtubeId": "juPlEnOKl48",
+      "source": "https://www.youtube.com/watch?v=juPlEnOKl48",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "airport-checkin-rachel",
+      "youtubeId": "Lympa-566Ek",
+      "source": "https://www.youtube.com/watch?v=Lympa-566Ek",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "hotel-english-bob-canadian",
+      "youtubeId": "MYX7RVOf3Yc",
+      "source": "https://www.youtube.com/watch?v=MYX7RVOf3Yc",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "hotel-checkin-just-speak",
+      "youtubeId": "Mc9WDaar6bk",
+      "source": "https://www.youtube.com/watch?v=Mc9WDaar6bk",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "gym-english-bob-canadian",
+      "youtubeId": "8vuzfcVel6I",
+      "source": "https://www.youtube.com/watch?v=8vuzfcVel6I",
+      "firstStoredStart": 40,
+      "configuredStart": 35,
+      "configuredEnd": 155,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "gym-vocab-giovana-real",
+      "youtubeId": "pGQzIf0Jgwo",
+      "source": "https://www.youtube.com/watch?v=pGQzIf0Jgwo",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "renting-apartment-oxford",
+      "youtubeId": "vKTCzjgkzrQ",
+      "source": "https://www.youtube.com/watch?v=vKTCzjgkzrQ",
+      "firstStoredStart": 45,
+      "configuredStart": 40,
+      "configuredEnd": 160,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "weather-talk-bob-canadian",
+      "youtubeId": "_N2Q2_TtG0o",
+      "source": "https://www.youtube.com/watch?v=_N2Q2_TtG0o",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sports-talk-oxford",
+      "youtubeId": "QHOmj2TO4mM",
+      "source": "https://www.youtube.com/watch?v=QHOmj2TO4mM",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sports-daily-mr-english",
+      "youtubeId": "DGj-Q49rOfg",
+      "source": "https://www.youtube.com/watch?v=DGj-Q49rOfg",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "news-bbc-social-media-source",
+      "youtubeId": "qRsLwL9lJQg",
+      "source": "https://www.youtube.com/watch?v=qRsLwL9lJQg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "news-bbc-air-india-report",
+      "youtubeId": "hQ6SI8Rtp8U",
+      "source": "https://www.youtube.com/watch?v=hQ6SI8Rtp8U",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "films-talk-bbc-real-easy",
+      "youtubeId": "BSABmr8hX7s",
+      "source": "https://www.youtube.com/watch?v=BSABmr8hX7s",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "movies-music-talk-spake",
+      "youtubeId": "rAndzSQbBxE",
+      "source": "https://www.youtube.com/watch?v=rAndzSQbBxE",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "professional-emails-engvid",
+      "youtubeId": "3Tu1jN65slw",
+      "source": "https://www.youtube.com/watch?v=3Tu1jN65slw",
+      "firstStoredStart": 40,
+      "configuredStart": 35,
+      "configuredEnd": 155,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "formal-email-structure-howto",
+      "youtubeId": "5yAL98Hci6I",
+      "source": "https://www.youtube.com/watch?v=5yAL98Hci6I",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "driving-car-vocab-engvid",
+      "youtubeId": "a5nFBQ5H62U",
+      "source": "https://www.youtube.com/watch?v=a5nFBQ5H62U",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "vehicles-vocab-bob-canadian",
+      "youtubeId": "lkMzvdjhMlI",
+      "source": "https://www.youtube.com/watch?v=lkMzvdjhMlI",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "shopping-clothes-english-nova",
+      "youtubeId": "IqEiAQACWIY",
+      "source": "https://www.youtube.com/watch?v=IqEiAQACWIY",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "shopping-clothes-5min-english",
+      "youtubeId": "kdQYKdbAiFs",
+      "source": "https://www.youtube.com/watch?v=kdQYKdbAiFs",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "directions-bbc-easy",
+      "youtubeId": "SHXPpsIJTb0",
+      "source": "https://www.youtube.com/watch?v=SHXPpsIJTb0",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "directions-easy-english",
+      "youtubeId": "DPYJQSA-x50",
+      "source": "https://www.youtube.com/watch?v=DPYJQSA-x50",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "invite-english-vanessa",
+      "youtubeId": "JT0FKgE-qPI",
+      "source": "https://www.youtube.com/watch?v=JT0FKgE-qPI",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "invitations-accept-decline-letstalk",
+      "youtubeId": "GqwpBEynsyo",
+      "source": "https://www.youtube.com/watch?v=GqwpBEynsyo",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "agreeing-disagreeing-phrases",
+      "youtubeId": "MspXqjp3H8c",
+      "source": "https://www.youtube.com/watch?v=MspXqjp3H8c",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "family-bbc-easy",
+      "youtubeId": "v9EU41cuhHY",
+      "source": "https://www.youtube.com/watch?v=v9EU41cuhHY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "childhood-bob-canadian",
+      "youtubeId": "DXCnjLXhiX0",
+      "source": "https://www.youtube.com/watch?v=DXCnjLXhiX0",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "money-saving-english-smart",
+      "youtubeId": "uGk4K-jMRcs",
+      "source": "https://www.youtube.com/watch?v=uGk4K-jMRcs",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "hobbies-free-time-jessica",
+      "youtubeId": "83P0QWcdHw0",
+      "source": "https://www.youtube.com/watch?v=83P0QWcdHw0",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "childhood-memories-used-to",
+      "youtubeId": "U9kK_oCoPoA",
+      "source": "https://www.youtube.com/watch?v=U9kK_oCoPoA",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "presentations-maria-50-phrases",
+      "youtubeId": "Ri4zLmpyz-E",
+      "source": "https://www.youtube.com/watch?v=Ri4zLmpyz-E",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "presenting-derek-40-phrases",
+      "youtubeId": "bgFNTuRYtKE",
+      "source": "https://www.youtube.com/watch?v=bgFNTuRYtKE",
+      "firstStoredStart": 40,
+      "configuredStart": 35,
+      "configuredEnd": 155,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "online-meetings-maria-40",
+      "youtubeId": "PLhAzAymMsY",
+      "source": "https://www.youtube.com/watch?v=PLhAzAymMsY",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "confident-meetings-harry-36",
+      "youtubeId": "QOUOsneeB-w",
+      "source": "https://www.youtube.com/watch?v=QOUOsneeB-w",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "apologise-british-council",
+      "youtubeId": "T-IV_B3JGgk",
+      "source": "https://www.youtube.com/watch?v=T-IV_B3JGgk",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sorry-my-bad-excuse-pardon",
+      "youtubeId": "S05qOis4T4I",
+      "source": "https://www.youtube.com/watch?v=S05qOis4T4I",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "congratulations-35-natural",
+      "youtubeId": "GHp9LtbvEFI",
+      "source": "https://www.youtube.com/watch?v=GHp9LtbvEFI",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "describe-city-hannah",
+      "youtubeId": "qyY-Ex7GQiw",
+      "source": "https://www.youtube.com/watch?v=qyY-Ex7GQiw",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "describe-city-english-learner",
+      "youtubeId": "S_vgzMcjV84",
+      "source": "https://www.youtube.com/watch?v=S_vgzMcjV84",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "public-transport-talkco",
+      "youtubeId": "P2BbGlNgNf8",
+      "source": "https://www.youtube.com/watch?v=P2BbGlNgNf8",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ielts-part2-fastrack-tips",
+      "youtubeId": "DtoCY9lCYug",
+      "source": "https://www.youtube.com/watch?v=DtoCY9lCYug",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ielts-part2-describe-place",
+      "youtubeId": "HKtH2oaClj8",
+      "source": "https://www.youtube.com/watch?v=HKtH2oaClj8",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "university-life-english-success",
+      "youtubeId": "Dr4I3nps3nc",
+      "source": "https://www.youtube.com/watch?v=Dr4I3nps3nc",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "describe-people-bbc",
+      "youtubeId": "9OzIMC6XCiE",
+      "source": "https://www.youtube.com/watch?v=9OzIMC6XCiE",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "appearance-visual-oxford",
+      "youtubeId": "Jq9juAScEdg",
+      "source": "https://www.youtube.com/watch?v=Jq9juAScEdg",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "suggestions-oxford-spoken",
+      "youtubeId": "7wT7BzAoyj0",
+      "source": "https://www.youtube.com/watch?v=7wT7BzAoyj0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "favors-politely-jish",
+      "youtubeId": "bqnNOmsiOcw",
+      "source": "https://www.youtube.com/watch?v=bqnNOmsiOcw",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ask-favour-british-council",
+      "youtubeId": "hO98Bjn87KM",
+      "source": "https://www.youtube.com/watch?v=hO98Bjn87KM",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pharmacy-real-life-speakeasy",
+      "youtubeId": "4GUuV2fCLno",
+      "source": "https://www.youtube.com/watch?v=4GUuV2fCLno",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "pharmacy-everyday-english",
+      "youtubeId": "ma8Yd25t1fE",
+      "source": "https://www.youtube.com/watch?v=ma8Yd25t1fE",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "interview-hardest-5-careervidz",
+      "youtubeId": "WOHFlwYV210",
+      "source": "https://www.youtube.com/watch?v=WOHFlwYV210",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "interview-8-hardest-cass",
+      "youtubeId": "bxqNBmnCkgY",
+      "source": "https://www.youtube.com/watch?v=bxqNBmnCkgY",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "coffee-shop-ordering-together",
+      "youtubeId": "9nq9ocivltk",
+      "source": "https://www.youtube.com/watch?v=9nq9ocivltk",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "order-coffee-smashing",
+      "youtubeId": "T0uL6vJ1LsY",
+      "source": "https://www.youtube.com/watch?v=T0uL6vJ1LsY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "customs-questions-ross-ielts",
+      "youtubeId": "d_tYKBoOmHM",
+      "source": "https://www.youtube.com/watch?v=d_tYKBoOmHM",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "immigration-10-questions",
+      "youtubeId": "mWqdZZpPdFA",
+      "source": "https://www.youtube.com/watch?v=mWqdZZpPdFA",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "small-talk-party-upgrade",
+      "youtubeId": "SeorKAiyJcA",
+      "source": "https://www.youtube.com/watch?v=SeorKAiyJcA",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "small-talk-business-maria",
+      "youtubeId": "fV2e729k-cs",
+      "source": "https://www.youtube.com/watch?v=fV2e729k-cs",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "phone-screen-repair-afterclass",
+      "youtubeId": "hMBHeuQbpZ4",
+      "source": "https://www.youtube.com/watch?v=hMBHeuQbpZ4",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "climate-change-talk-success",
+      "youtubeId": "vjZnUl3OkCI",
+      "source": "https://www.youtube.com/watch?v=vjZnUl3OkCI",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "dentist-vanessa-confident",
+      "youtubeId": "EjeNiWFyWq0",
+      "source": "https://www.youtube.com/watch?v=EjeNiWFyWq0",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "dentist-10-minutes-course",
+      "youtubeId": "-6PlqMt2ZXs",
+      "source": "https://www.youtube.com/watch?v=-6PlqMt2ZXs",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "appointment-telephone-home",
+      "youtubeId": "ka-dwb-O-uE",
+      "source": "https://www.youtube.com/watch?v=ka-dwb-O-uE",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "advice-should-explained",
+      "youtubeId": "7xuZG_YN-Yo",
+      "source": "https://www.youtube.com/watch?v=7xuZG_YN-Yo",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "future-plans-panda",
+      "youtubeId": "79Yxp84s0KI",
+      "source": "https://www.youtube.com/watch?v=79Yxp84s0KI",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "future-plans-mr-english",
+      "youtubeId": "6M4yTipgffk",
+      "source": "https://www.youtube.com/watch?v=6M4yTipgffk",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "tell-story-past-oxford",
+      "youtubeId": "m04lQ5BUAn0",
+      "source": "https://www.youtube.com/watch?v=m04lQ5BUAn0",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "tell-great-story-mmmenglish",
+      "youtubeId": "IqJlqzEfyKo",
+      "source": "https://www.youtube.com/watch?v=IqJlqzEfyKo",
+      "firstStoredStart": 40,
+      "configuredStart": 35,
+      "configuredEnd": 155,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "ramadan-talk-english-journey",
+      "youtubeId": "9QfR4ShLVPc",
+      "source": "https://www.youtube.com/watch?v=9QfR4ShLVPc",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "book-appointment-phone-ev",
+      "youtubeId": "yI4zDCQ7tNs",
+      "source": "https://www.youtube.com/watch?v=yI4zDCQ7tNs",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "airport-checkin-prospeak",
+      "youtubeId": "uYBVjc9h1G8",
+      "source": "https://www.youtube.com/watch?v=uYBVjc9h1G8",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "hotel-checkin-esc",
+      "youtubeId": "kVG3-3nmRcI",
+      "source": "https://www.youtube.com/watch?v=kVG3-3nmRcI",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "grocery-shopping-panda",
+      "youtubeId": "9dVoa-oXZec",
+      "source": "https://www.youtube.com/watch?v=9dVoa-oXZec",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 130,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "gym-fitness-speaknative",
+      "youtubeId": "K1cM3KspJDU",
+      "source": "https://www.youtube.com/watch?v=K1cM3KspJDU",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "cooking-volka",
+      "youtubeId": "u3Bh78fKu0Q",
+      "source": "https://www.youtube.com/watch?v=u3Bh78fKu0Q",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 140,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "weather-conversation-speakeasy",
+      "youtubeId": "8RsEIe_H-RY",
+      "source": "https://www.youtube.com/watch?v=8RsEIe_H-RY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 130,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bank-account-english101",
+      "youtubeId": "15qgr9n1tcM",
+      "source": "https://www.youtube.com/watch?v=15qgr9n1tcM",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "asking-directions-keyconv",
+      "youtubeId": "oNEf8nldLfE",
+      "source": "https://www.youtube.com/watch?v=oNEf8nldLfE",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 130,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "congratulations-eel",
+      "youtubeId": "NrQmM1gzXZY",
+      "source": "https://www.youtube.com/watch?v=NrQmM1gzXZY",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 130,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "restaurant-complaint-lsle",
+      "youtubeId": "AyYTrZ5fz_E",
+      "source": "https://www.youtube.com/watch?v=AyYTrZ5fz_E",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 135,
+      "lines": 3,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "friends-monica-chandler-debate-fluentu",
+      "youtubeId": "M8iJlfCENfc",
+      "source": "https://www.youtube.com/watch?v=M8iJlfCENfc",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "friends-part1-english-practice",
+      "youtubeId": "JSSFDsenEV4",
+      "source": "https://www.youtube.com/watch?v=JSSFDsenEV4",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "modern-family-rachel-english",
+      "youtubeId": "hCF2_0G337Y",
+      "source": "https://www.youtube.com/watch?v=hCF2_0G337Y",
+      "firstStoredStart": 50,
+      "configuredStart": 45,
+      "configuredEnd": 165,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "friends-fast-english-rachel",
+      "youtubeId": "WTAd2AOfTWo",
+      "source": "https://www.youtube.com/watch?v=WTAd2AOfTWo",
+      "firstStoredStart": 65,
+      "configuredStart": 60,
+      "configuredEnd": 180,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "sherlock-first-meeting-letv",
+      "youtubeId": "QCWoDO07TRM",
+      "source": "https://www.youtube.com/watch?v=QCWoDO07TRM",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "young-sherlock-letv",
+      "youtubeId": "cQHkFnBZQhM",
+      "source": "https://www.youtube.com/watch?v=cQHkFnBZQhM",
+      "firstStoredStart": 30,
+      "configuredStart": 25,
+      "configuredEnd": 145,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "easy-english-newyork-11",
+      "youtubeId": "AmlF6xq2SaQ",
+      "source": "https://www.youtube.com/watch?v=AmlF6xq2SaQ",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "london-interviews-real-teachers",
+      "youtubeId": "yl5-ygiPOkM",
+      "source": "https://www.youtube.com/watch?v=yl5-ygiPOkM",
+      "firstStoredStart": 25,
+      "configuredStart": 20,
+      "configuredEnd": 140,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "easy-english-stereotypes-199",
+      "youtubeId": "NhpkGrabLqw",
+      "source": "https://www.youtube.com/watch?v=NhpkGrabLqw",
+      "firstStoredStart": 20,
+      "configuredStart": 15,
+      "configuredEnd": 135,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    },
+    {
+      "id": "bigbang-sheldon-bongos-subjunctive",
+      "youtubeId": "LFW4QNBY_yk",
+      "source": "https://www.youtube.com/watch?v=LFW4QNBY_yk",
+      "firstStoredStart": 35,
+      "configuredStart": 30,
+      "configuredEnd": 150,
+      "lines": 5,
+      "verification": "unverified_excerpt_timings"
+    }
+  ]
+}
