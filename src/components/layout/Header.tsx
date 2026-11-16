@@ -181,7 +181,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand: site name + logo, links home (hidden on xl where the full nav shows) */}
         <button
           onClick={() => handleNav('dashboard')}
-          className="xl:hidden flex items-center gap-2 rounded-xl cursor-pointer hover:bg-white/5 transition-colors p-1 -m-1 shrink-0"
+          className="xl:hidden flex items-center gap-2 cursor-pointer p-1 -m-1 shrink-0"
           aria-label={t('header.brandHome')}
           title={t('header.brandHome')}
         >
@@ -190,7 +190,7 @@ export const Header: React.FC<HeaderProps> = ({
             alt="Henglish Academy"
             width={32}
             height={32}
-            className="w-9 h-9 object-contain filter drop-shadow-[0_0_10px_rgba(255,209,102,0.4)]"
+            className="w-9 h-9 object-contain"
           />
         </button>
 
