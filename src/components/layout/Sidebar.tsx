@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageRoute, CEFRLevel, UserRole } from '../../types';
+import { PageRoute, CEFRLevel, UserRole, UserProfile } from '../../types';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { Logo } from '../Logo';
 
@@ -103,6 +103,11 @@ import {
   MessagesSquare,
   Zap,
   Library,
+  User,
+  Settings,
+  LogOut,
+  LogIn,
+  UserPlus,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -115,6 +120,13 @@ interface SidebarProps {
   userRole: UserRole;
   cefrLevel: CEFRLevel;
   xp: number;
+  // Mobile drawer account block (Hinawi 7:32: profile lives in the burger menu).
+  userProfile?: UserProfile;
+  authSessionType?: 'guest' | 'authenticated';
+  onOpenSettings?: () => void;
+  onOpenAuthModal?: (tab?: 'login' | 'register' | 'migrate') => void;
+  onToggleRole?: () => void;
+  onSignOut?: () => void;
 }
 
 interface NavSubItem {
@@ -159,6 +171,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
   userRole,
   cefrLevel,
   xp,
+  userProfile,
+  authSessionType = 'authenticated',
+  onOpenSettings,
+  onOpenAuthModal,
+  onToggleRole,
+  onSignOut,
 }) => {
   const [openGrammarSubMenu, setOpenGrammarSubMenu] = React.useState(true);
   // Collapse the grammar sub-menu whenever the mobile drawer closes so the
@@ -524,6 +542,110 @@ export const Sidebar: React.FC<SidebarProps> = ({
               </>
             )}
           </div>
+        )}
+
+        {/* Mobile account block (Hinawi 7:32): profile + account actions at
+            the top of the burger drawer; the header avatar is hidden on mobile. */}
+        {isMobileDrawer && userProfile && (
+          authSessionType === 'guest' ? (
+            <div className="mx-3 mt-3 p-3 rounded-2xl bg-white/5 border border-white/10 space-y-2.5">
+              <div className="flex items-center gap-2.5">
+                <div className="w-9 h-9 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center shrink-0">
+                  <User className="w-4 h-4 text-[#b9b6d5]" />
+                </div>
+                <div dir="auto" className="text-xs font-bold text-white" style={{ textAlign: 'start' }}>
+                  {t('header.guestTitle')}
+                </div>
+              </div>
+              {onOpenAuthModal && (
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => { playSound('click'); onCloseMobile(); onOpenAuthModal('register'); }}
+                    className="flex-1 flex items-center justify-center gap-1.5 p-2.5 rounded-xl bg-[#c4ff55] text-[#09091a] text-xs font-black hover:brightness-110 cursor-pointer"
+                  >
+                    <UserPlus className="w-4 h-4" />
+                    <span dir="auto">{t('header.createAccount')}</span>
+                  </button>
+                  <button
+                    onClick={() => { playSound('click'); onCloseMobile(); onOpenAuthModal('login'); }}
+                    className="flex-1 flex items-center justify-center gap-1.5 p-2.5 rounded-xl bg-white/5 border border-white/15 text-white text-xs font-bold hover:bg-white/10 cursor-pointer"
+                  >
+                    <LogIn className="w-4 h-4 text-[#41e7ff]" />
+                    <span dir="auto">{t('header.login')}</span>
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="mx-3 mt-3 rounded-2xl bg-white/5 border border-white/10 overflow-hidden">
+              <div className="flex items-center gap-3 p-3 border-b border-white/10">
+                <img
+                  src={userProfile.avatar}
+                  alt={userProfile.name}
+                  className="w-10 h-10 rounded-xl object-cover border border-[#ffd166]/40 shrink-0"
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
+                  <div dir="ltr" className="text-[11px] text-[#b9b6d5] truncate" style={{ textAlign: 'start' }}>{userProfile.email}</div>
+                </div>
+                <span className="shrink-0 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
+                  {userProfile.role === 'teacher' ? t('header.rankTeacher') : t('header.cefrLevel').replace('{level}', userProfile.currentLevel)}
+                </span>
+              </div>
+              <div className="p-1.5 space-y-0.5 text-xs font-bold">
+                {onOpenSettings && (
+                  <button
+                    onClick={() => { playSound('click'); onCloseMobile(); onOpenSettings(); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <Settings className="w-4 h-4 text-[#41e7ff]" />
+                    <span dir="auto">{t('settings.title')}</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => handleNav('my-learning')}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                >
+                  <BookOpen className="w-4 h-4 text-[#41e7ff]" />
+                  <span dir="auto">{t('header.mySpaceNotes')}</span>
+                </button>
+                <button
+                  onClick={() => handleNav('certificates')}
+                  className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                >
+                  <Award className="w-4 h-4 text-[#ffd166]" />
+                  <span dir="auto">{t('header.myCertificates')}</span>
+                </button>
+                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && (
+                  <button
+                    onClick={() => handleNav('admin')}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <ShieldCheck className="w-4 h-4 text-[#ffd166]" />
+                    <span dir="auto">{t('header.adminPanel')}</span>
+                  </button>
+                )}
+                {onToggleRole && (
+                  <button
+                    onClick={() => { playSound('click'); onToggleRole(); onCloseMobile(); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <ShieldCheck className="w-4 h-4 text-[#c4ff55]" />
+                    <span dir="auto">{t('header.roleToggle')}{userProfile.role === 'student' ? t('header.teacher') : t('header.student')}</span>
+                  </button>
+                )}
+                {onSignOut && (
+                  <button
+                    onClick={() => { playSound('click'); onCloseMobile(); onSignOut(); }}
+                    className="w-full flex items-center gap-2.5 p-2.5 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20"
+                  >
+                    <LogOut className="w-4 h-4 text-red-400" />
+                    <span dir="auto">{t('header.logout')}</span>
+                  </button>
+                )}
+              </div>
+            </div>
+          )
         )}
 
         {/* Expand control (collapsed rail): in-flow so it can never clip at

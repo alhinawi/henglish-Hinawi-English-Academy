@@ -383,8 +383,9 @@ export const Header: React.FC<HeaderProps> = ({
             playSound('click');
             onOpenSearch();
           }}
-          className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-[#dedbf4] hover:text-[#41e7ff] transition-all cursor-pointer"
+          className="flex items-center gap-1.5 p-2 sm:px-3 sm:py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-[#dedbf4] hover:text-[#41e7ff] transition-all cursor-pointer"
           title={t('header.searchTitle')}
+          aria-label={t('header.searchTitle')}
         >
           <Search className="w-4 h-4 text-[#41e7ff]" />
           <span className="hidden 2xl:inline">{t('header.searchDots')}</span>
@@ -485,8 +486,10 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
 
-        {/* User Account / Auth Menu */}
-        <div className="relative" ref={profileRef}>
+        {/* User Account / Auth Menu. Signed-in: hidden on mobile (lives at the
+            top of the burger drawer). Guest: the one-word دخول button stays
+            visible on every screen size (Hinawi: sign-in is one word). */}
+        <div className={`relative ${authSessionType === 'guest' ? '' : 'hidden md:block'}`} ref={profileRef}>
           <button
             onClick={() => {
               playSound('click');
