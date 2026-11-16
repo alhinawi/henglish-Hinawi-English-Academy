@@ -25,8 +25,9 @@ export const PRESET_COUNT = PALETTES.length;
 
 export function presetSvg(index: number): string {
   const [dark, mid, accent] = PALETTES[index % PALETTES.length];
+  const gradientId = `avatar-gradient-${index}`;
   const glyph = GLYPHS[index % GLYPHS.length].replaceAll('{c}', accent);
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${mid}"/><stop offset="1" stop-color="${dark}"/></linearGradient></defs><rect width="128" height="128" fill="url(#g)"/>${glyph}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="${gradientId}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${mid}"/><stop offset="1" stop-color="${dark}"/></linearGradient></defs><rect width="128" height="128" fill="url(#${gradientId})"/>${glyph}</svg>`;
 }
 
 /** Rasterize an SVG string to a webp data URL via an offscreen canvas. */
