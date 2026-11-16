@@ -87,7 +87,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       fireCelebration();
     } catch (err: any) {
       console.error('Quiz generation error:', err);
-      setGenerationError('تعذر توليد الكويز عبر الذكاء الاصطناعي حالياً. تم استدعاء بنك الأسئلة الاحتياطي.');
+      setGenerationError('تعذر تجهيز الكويز حالياً. تم استدعاء بنك الأسئلة الاحتياطي.');
       playSound('wrong');
     } finally {
       setIsGenerating(false);
@@ -104,10 +104,10 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
           <span>HENGLISH DYNAMIC ASSESSMENT REPOSITORY</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white font-['Cairo',sans-serif]">
-          بنك الاختبارات ومولّد الكويزات الذكي
+          بنك الاختبارات والكويزات التفاعلية
         </h1>
         <p className="text-base text-[#b9b6d5] leading-relaxed">
-          اختبر مهاراتك مع بنك الأسئلة الشامل، أو قم بتوليد كويزات غير محدودة وفورية مخصصة لمستواك في أي قاعدة إنجليزية بواسطة الذكاء الاصطناعي (Gemini Multimodal).
+          اختبر مهاراتك مع بنك الأسئلة الشامل، أو أنشئ كويزات غير محدودة وفورية مخصصة لمستواك في أي قاعدة إنجليزية.
         </p>
 
         {/* Mode Switcher Tabs */}
@@ -124,7 +124,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             }`}
           >
             <Brain className="w-4 h-4" />
-            <span>مولّد الكويزات بالذكاء الاصطناعي</span>
+            <span>كويزات مخصصة فورية</span>
           </button>
 
           <button
@@ -151,10 +151,10 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             <div className="space-y-1">
               <h2 className="text-lg font-black text-white flex items-center gap-2">
                 <Zap className="w-5 h-5 text-[#c4ff55]" />
-                تخصيص الكويز التوليدي الفوري (Dynamic AI Generator)
+                تخصيص الكويز الفوري
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                اختر القاعدة والمستوى وسيقوم الذكاء الاصطناعي بصياغة أسئلة فريدة مع تحليل البدائل الخاطئة وتفسيرات بالمصري.
+                اختر القاعدة والمستوى وستحصل على أسئلة فريدة مع تحليل البدائل الخاطئة وتفسيرات بالمصري.
               </p>
             </div>
 
@@ -229,12 +229,12 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 {isGenerating ? (
                   <>
                     <RefreshCw className="w-4 h-4 animate-spin" />
-                    <span>جاري توليد الأسئلة بالذكاء الاصطناعي...</span>
+                    <span>جاري تجهيز الأسئلة...</span>
                   </>
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4" />
-                    <span>توليد كويز جديد فوراً</span>
+                    <span>إنشاء كويز جديد فوراً</span>
                   </>
                 )}
               </button>
@@ -253,7 +253,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
               <div className="flex items-center justify-between">
                 <h3 className="text-base font-black text-white flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-[#c4ff55]" />
-                  كويز الذكاء الاصطناعي الجاهز ({aiGeneratedQuestions.length} أسئلة)
+                  الكويز الجاهز ({aiGeneratedQuestions.length} أسئلة)
                 </h3>
                 <span className="text-xs text-[#c4ff55] font-mono">
                   {aiLevel} • {aiDifficulty.toUpperCase()}
@@ -263,7 +263,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
               <QuizEngine
                 key={`ai-quiz-${aiGeneratedQuestions.length}-${Date.now()}`}
                 questions={aiGeneratedQuestions}
-                quizTitle={`كويز تفاعلي مولّد بالذكاء الاصطناعي: ${
+                quizTitle={`كويز تفاعلي مخصص: ${
                   GRAMMAR_TOPICS.find(t => t.id === aiTopic)?.label || aiTopic
                 }`}
                 onComplete={handleComplete}
