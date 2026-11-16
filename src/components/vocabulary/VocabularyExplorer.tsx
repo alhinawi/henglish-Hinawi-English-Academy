@@ -408,6 +408,7 @@ export const VocabularyExplorer: React.FC = () => {
                 key={entry.id}
                 entry={entry}
                 onOpenDetails={handleOpenDetails}
+                savedVersion={savedUpdateCount}
                 onSavedChange={() => setSavedUpdateCount(c => c + 1)}
                 viewMode={viewMode}
               />

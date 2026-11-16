@@ -3,7 +3,7 @@
 // Displays headword, dual audio (US Cyan / UK Purple), CEFR, Arabic meaning, and SRS save
 // ==============================================================================
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import {
   Bookmark,
@@ -21,6 +21,7 @@ interface WordCardProps {
   entry: LexicalEntry;
   onOpenDetails: (entry: LexicalEntry) => void;
   onSavedChange?: () => void;
+  savedVersion: number;
   viewMode?: 'grid' | 'list';
 }
 
@@ -38,10 +39,15 @@ export const WordCard: React.FC<WordCardProps> = ({
   entry,
   onOpenDetails,
   onSavedChange,
+  savedVersion,
   viewMode = 'grid',
 }) => {
   const { t, dir } = useLanguage();
   const [saved, setSaved] = useState(() => isWordSaved(entry.headword));
+  // A detail-modal save/remove changes the same persisted word as this card.
+  useEffect(() => {
+    setSaved(isWordSaved(entry.headword));
+  }, [entry.headword, savedVersion]);
   const txMap = useContentMap('vocab');
   const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
   const shownExample = txExample(txMap, entry.id, entry.exampleAr);
@@ -74,6 +80,7 @@ export const WordCard: React.FC<WordCardProps> = ({
             onClick={handleToggleSave}
             className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-white/70 hover:text-white transition-all shrink-0 cursor-pointer"
             title={saved ? t('wc.remove') : t('wc.save')}
+            aria-pressed={saved}
           >
             {saved ? (
               <BookmarkCheck className="w-4 h-4 text-[#c4ff55]" />
@@ -136,6 +143,7 @@ export const WordCard: React.FC<WordCardProps> = ({
           onClick={handleToggleSave}
           className="p-1.5 rounded-xl bg-white/5 hover:bg-white/15 text-white/70 hover:text-white transition-all cursor-pointer"
           title={saved ? t('wc.remove') : t('wc.save')}
+            aria-pressed={saved}
         >
           {saved ? (
             <BookmarkCheck className="w-4 h-4 text-[#c4ff55]" />
