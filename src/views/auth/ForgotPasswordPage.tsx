@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
 import { playSound } from '../../utils/audio';
 import {
@@ -16,6 +17,7 @@ interface ForgotPasswordPageProps {
 }
 
 export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNavigate }) => {
+  const { t, dir } = useLanguage();
   const { forgotPassword } = useAuth();
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -25,7 +27,7 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim() || !email.includes('@')) {
-      setFeedback({ type: 'error', text: 'يرجى إدخال عنوان بريد إلكتروني صالح.' });
+      setFeedback({ type: 'error', text: t('fp.invalid') });
       return;
     }
 
@@ -39,12 +41,12 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
       playSound('correct');
       setIsSubmitted(true);
     } else {
-      setFeedback({ type: 'error', text: res.error || 'حدث خطأ أثناء معالجة الطلب. يرجى المحاولة مرة أخرى.' });
+      setFeedback({ type: 'error', text: res.error || t('fp.failed') });
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir={dir}>
       {/* Decorative Glow */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
@@ -54,16 +56,16 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
           <KeyRound className="w-8 h-8" />
         </div>
 
-        <h2 className="text-2xl font-bold text-white mb-2">استعادة كلمة المرور</h2>
+        <h2 className="text-2xl font-bold text-white mb-2">{t('fp.title')}</h2>
         <p className="text-xs text-slate-400 leading-relaxed mb-6">
-          أدخل عنوان بريدك الإلكتروني المسجل وسنرسل لك رابطاً مشفراً لإعادة ضبط كلمة المرور بأمان.
+          {t('fp.intro')}
         </p>
 
         {isSubmitted ? (
           <div className="space-y-6 text-center">
             <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs leading-relaxed flex flex-col items-center gap-2">
               <CheckCircle2 className="w-8 h-8 text-emerald-400 shrink-0" />
-              <span>تم إرسال رابط استعادة كلمة المرور إلى <strong>{email}</strong>. يرجى تفقد صندوق الوارد أو البريد غير المرغوب فيه (Spam).</span>
+              <span>{t('fp.sent')} <strong>{email}</strong>{t('fp.check')}</span>
             </div>
 
             <button
@@ -71,11 +73,11 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
               className="w-full py-3.5 px-4 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-xl text-sm transition-colors flex items-center justify-center gap-2"
             >
               <ChevronLeft className="w-4 h-4" />
-              <span>العودة لصفحة تسجيل الدخول</span>
+              <span>{t('fp.back')}</span>
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4 text-right">
+          <form onSubmit={handleSubmit} className="space-y-4 text-start">
             {feedback && (
               <div className="p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs flex items-center gap-2">
                 <AlertCircle className="w-4 h-4 shrink-0" />
@@ -85,7 +87,7 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
 
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1.5">
-                البريد الإلكتروني المسجل
+                {t('fp.email')}
               </label>
               <div className="relative">
                 <Mail className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -110,8 +112,8 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
                 <span className="inline-block w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
               ) : (
                 <>
-                  <span>إرسال رابط الاستعادة</span>
-                  <ArrowRight className="w-4 h-4 rotate-180" />
+                  <span>{t('fp.send')}</span>
+                  <ArrowRight className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
                 </>
               )}
             </button>
@@ -122,7 +124,7 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
                 onClick={() => onNavigate('login')}
                 className="text-xs text-slate-400 hover:text-cyan-400 transition-colors"
               >
-                تذكرت كلمة المرور؟ تسجيل الدخول
+                {t('fp.remembered')}
               </button>
             </div>
           </form>
