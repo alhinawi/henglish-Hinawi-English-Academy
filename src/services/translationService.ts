@@ -10,7 +10,6 @@ import {
   SavedVocabularyCard,
   VocabularyCollection,
   PracticeChallenge,
-  PracticeEvaluationResult,
   OcrResult,
   LanguageCode,
   TranslationMode,
@@ -152,32 +151,6 @@ export async function transcribeAudioRecording(
 
   if (!response.ok) {
     throw new Error('Voice transcription failed');
-  }
-
-  return response.json();
-}
-
-/**
- * Practice Translation Evaluation
- */
-export async function evaluatePracticeAnswer(
-  challenge: PracticeChallenge,
-  userTranslation: string
-): Promise<PracticeEvaluationResult> {
-  const response = await fetch('/api/ai/evaluate-practice', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      direction: challenge.direction,
-      difficulty: challenge.difficulty,
-      sourceSentence: challenge.sourceSentence,
-      userTranslation,
-      expectedTranslations: challenge.modelTranslations,
-    }),
-  });
-
-  if (!response.ok) {
-    throw new Error('Practice answer evaluation failed');
   }
 
   return response.json();
