@@ -2006,5 +2006,21 @@
   "ex.of": "of",
   "ex.expressions": "expressions",
   "ex.prev": "Previous",
-  "ex.next": "Next"
+  "ex.next": "Next",
+  "eh.hasError": "Contains an error",
+  "eh.clean": "Completely correct",
+  "eh.hasGrammarError": "Contains a grammar error",
+  "eh.loading": "Reviewing and preparing grammar cases...",
+  "eh.title": "Grammar Error Hunter",
+  "eh.category": "Grammar",
+  "eh.examine": "Examine the sentence with a grammar expert's eye:",
+  "eh.question": "Does this sentence contain a language or grammar error?",
+  "eh.listen": "Listen to pronunciation",
+  "eh.yesError": "Yes, it has an error",
+  "eh.greatDiagnosis": "Excellent, accurate diagnosis!",
+  "eh.wrongDiagnosis": "Incorrect diagnosis",
+  "eh.sentenceHasError": "The sentence has an error",
+  "eh.sentenceWasCorrect": "The sentence was correct",
+  "eh.correction": "Suggested correction:",
+  "eh.nextCase": "Next case"
 }

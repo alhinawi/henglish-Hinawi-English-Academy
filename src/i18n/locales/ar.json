@@ -2006,5 +2006,21 @@
   "ex.of": "من",
   "ex.expressions": "تعبير",
   "ex.prev": "السابق",
-  "ex.next": "التالي"
+  "ex.next": "التالي",
+  "eh.hasError": "تحتوي على خطأ",
+  "eh.clean": "سليمة تماماً",
+  "eh.hasGrammarError": "تحتوي على خطأ قواعدي",
+  "eh.loading": "جاري فحص وتجهيز الحالات القواعدية...",
+  "eh.title": "صائد الأخطاء القواعدية",
+  "eh.category": "القواعد (Grammar)",
+  "eh.examine": "افحص الجملة بعين خبير القواعد:",
+  "eh.question": "هل تحتوي هذه الجملة على خطأ لغوي أو قواعدي؟",
+  "eh.listen": "استمع للنطق",
+  "eh.yesError": "نعم، بها خطأ",
+  "eh.greatDiagnosis": "تشخيص ممتاز ودقيق!",
+  "eh.wrongDiagnosis": "تشخيص غير صحيح",
+  "eh.sentenceHasError": "الجملة بها خطأ",
+  "eh.sentenceWasCorrect": "الجملة كانت صحيحة",
+  "eh.correction": "التصحيح المقترح:",
+  "eh.nextCase": "الحالة التالية"
 }
