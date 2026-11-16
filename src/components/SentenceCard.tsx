@@ -43,6 +43,7 @@ interface SentenceCardProps {
   onPracticeWithAi?: (sentence: SentenceItem) => void;
   onAddToCollection?: (sentence: SentenceItem) => void;
   compact?: boolean;
+  onLearningChange?: () => void;
 }
 
 export const SentenceCard: React.FC<SentenceCardProps> = ({
@@ -50,6 +51,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   onPracticeWithAi,
   onAddToCollection,
   compact = false,
+  onLearningChange,
 }) => {
   const { t } = useLanguage();
   const [showFusha, setShowFusha] = useState(false);
@@ -80,6 +82,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
     playSound('pop');
     const newState = toggleFavoriteSentence(sentence.id);
     setIsFavorite(newState);
+    onLearningChange?.();
   };
 
   // Toggle difficult
@@ -87,6 +90,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
     playSound('click');
     const newState = toggleDifficultSentence(sentence.id);
     setIsDifficult(newState);
+    onLearningChange?.();
   };
 
   // Copy sentence text
@@ -104,6 +108,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
     playSound('success');
     const rec = reviewSentence(sentence.id, rating);
     setSrsRecord(rec);
+    onLearningChange?.();
   };
 
 
