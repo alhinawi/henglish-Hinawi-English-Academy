@@ -16,12 +16,14 @@ import {
   AlertCircle,
   CheckCircle2
 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface RegisterPageProps {
   onNavigate: (route: string) => void;
 }
 
 export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
+  const { t } = useLanguage();
   const { register, isLoading } = useAuth();
 
   const [fullName, setFullName] = useState('');
@@ -45,23 +47,23 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
     setErrorMessage(null);
 
     if (!fullName.trim() || fullName.trim().length < 3) {
-      setErrorMessage('يرجى إدخال اسمك الكامل بشكل صحيح.');
+      setErrorMessage(t('reg.errName'));
       return;
     }
     if (!email.trim() || !email.includes('@')) {
-      setErrorMessage('يرجى إدخال بريد إلكتروني صالح.');
+      setErrorMessage(t('reg.errEmail'));
       return;
     }
     if (!isPasswordValid) {
-      setErrorMessage('كلمة المرور يجب ألا تقل عن 8 خانات وتحتوي على أحرف وأرقام.');
+      setErrorMessage(t('reg.errPassword'));
       return;
     }
     if (password !== confirmPassword) {
-      setErrorMessage('كلمتا المرور غير متطابقتين.');
+      setErrorMessage(t('reg.errPasswordMatch'));
       return;
     }
     if (!agreeTerms) {
-      setErrorMessage('يرجى الموافقة على شروط الاستخدام وسياسة الخصوصية.');
+      setErrorMessage(t('reg.errTerms'));
       return;
     }
 
@@ -80,7 +82,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
       // Redirect to email verification instruction
       onNavigate(`verify-email?email=${encodeURIComponent(email)}`);
     } else {
-      setErrorMessage(res.error || 'حدث خطأ أثناء إنشاء الحساب. قد يكون البريد مسجلاً مسبقاً.');
+      setErrorMessage(res.error || t('reg.errSubmit'));
       playSound('wrong');
     }
   };
@@ -96,15 +98,15 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
         <div className="flex items-center justify-between pb-6 mb-6 border-b border-slate-800">
           <div>
             <h2 className="text-xl font-bold text-white flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-cyan-400" /> إنشاء حساب جديد
+              <Sparkles className="w-5 h-5 text-cyan-400" /> {t('reg.title')}
             </h2>
-            <p className="text-xs text-slate-400 mt-1">ابدأ رحلتك في احتراف الإنجليزية مع Henglish Academy</p>
+            <p className="text-xs text-slate-400 mt-1">{t('reg.subtitle')}</p>
           </div>
           <button
             onClick={() => onNavigate('login')}
             className="text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors"
           >
-            لديك حساب بالفعل؟
+            {t('reg.haveAccount')}
           </button>
         </div>
 
@@ -122,7 +124,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1.5">
-              الاسم الكامل (بالعربية أو الإنجليزية) <span className="text-red-400">*</span>
+              {t('reg.fullName')} <span className="text-red-400">*</span>
             </label>
             <div className="relative">
               <User className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -130,7 +132,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
                 type="text"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
-                placeholder="أحمد محمد أو Ahmed Mohamed"
+                placeholder={t('reg.fullNamePlaceholder')}
                 className="w-full pr-11 pl-4 py-3 bg-slate-950/60 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all"
                 required
               />
@@ -140,7 +142,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1.5">
-                اسم المستخدم (اختياري)
+                {t('reg.username')}
               </label>
               <input
                 type="text"
@@ -153,7 +155,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
             </div>
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1.5">
-                رقم الهاتف (اختياري)
+                {t('reg.phone')}
               </label>
               <div className="relative">
                 <Phone className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -171,7 +173,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
 
           <div>
             <label className="block text-xs font-medium text-slate-300 mb-1.5">
-              البريد الإلكتروني <span className="text-red-400">*</span>
+              {t('reg.email')} <span className="text-red-400">*</span>
             </label>
             <div className="relative">
               <Mail className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -190,7 +192,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1.5">
-                كلمة المرور <span className="text-red-400">*</span>
+                {t('reg.password')} <span className="text-red-400">*</span>
               </label>
               <div className="relative">
                 <Lock className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -198,7 +200,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="8 أحرف وأرقام"
+                  placeholder={t('reg.passwordPlaceholder')}
                   className="w-full pr-10 pl-10 py-3 bg-slate-950/60 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-left"
                   dir="ltr"
                   required
@@ -215,7 +217,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
 
             <div>
               <label className="block text-xs font-medium text-slate-300 mb-1.5">
-                تأكيد كلمة المرور <span className="text-red-400">*</span>
+                {t('reg.confirmPassword')} <span className="text-red-400">*</span>
               </label>
               <div className="relative">
                 <Lock className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
@@ -223,7 +225,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
                   type={showPassword ? 'text' : 'password'}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  placeholder="أعد إدخال كلمة المرور"
+                  placeholder={t('reg.confirmPlaceholder')}
                   className="w-full pr-10 pl-4 py-3 bg-slate-950/60 border border-slate-800 rounded-xl text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-left"
                   dir="ltr"
                   required
@@ -234,16 +236,16 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
 
           {/* Password requirements indicators */}
           <div className="p-3 bg-slate-950/40 rounded-xl border border-slate-800/80 space-y-1.5">
-            <div className="text-[11px] font-medium text-slate-400 mb-1">شروط الأمان:</div>
+            <div className="text-[11px] font-medium text-slate-400 mb-1">{t('reg.securityRules')}</div>
             <div className="grid grid-cols-3 gap-1 text-[10px]">
               <span className={`flex items-center gap-1 ${hasMinLength ? 'text-emerald-400 font-semibold' : 'text-slate-500'}`}>
-                <CheckCircle2 className="w-3 h-3" /> 8+ أحرف
+                <CheckCircle2 className="w-3 h-3" /> {t('reg.ruleLength')}
               </span>
               <span className={`flex items-center gap-1 ${hasLetter ? 'text-emerald-400 font-semibold' : 'text-slate-500'}`}>
-                <CheckCircle2 className="w-3 h-3" /> أحرف إنجليزية
+                <CheckCircle2 className="w-3 h-3" /> {t('reg.ruleLetters')}
               </span>
               <span className={`flex items-center gap-1 ${hasNumber ? 'text-emerald-400 font-semibold' : 'text-slate-500'}`}>
-                <CheckCircle2 className="w-3 h-3" /> أرقام
+                <CheckCircle2 className="w-3 h-3" /> {t('reg.ruleNumbers')}
               </span>
             </div>
           </div>
@@ -257,7 +259,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
               required
             />
             <span className="text-xs text-slate-400 leading-relaxed">
-              أوافق على <span className="text-indigo-400 underline">شروط الاستخدام</span> و <span className="text-indigo-400 underline">سياسة الخصوصية</span> وتلقي إشعارات التقدّم التعليمي.
+              {t('reg.agreePrefix')} <span className="text-indigo-400 underline">{t('reg.terms')}</span> {t('reg.and')} <span className="text-indigo-400 underline">{t('reg.privacy')}</span> {t('reg.agreeSuffix')}
             </span>
           </label>
 
@@ -270,7 +272,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
               <span className="inline-block w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
             ) : (
               <>
-                <span>إنشاء الحساب والبدء</span>
+                <span>{t('reg.submit')}</span>
                 <ArrowRight className="w-4 h-4 rotate-180" />
               </>
             )}
