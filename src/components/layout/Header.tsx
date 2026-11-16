@@ -486,8 +486,10 @@ export const Header: React.FC<HeaderProps> = ({
           )}
         </div>
 
-        {/* User Account / Auth Menu (on mobile it lives at the top of the burger drawer) */}
-        <div className="relative hidden md:block" ref={profileRef}>
+        {/* User Account / Auth Menu. Signed-in: hidden on mobile (lives at the
+            top of the burger drawer). Guest: the one-word دخول button stays
+            visible on every screen size (Hinawi: sign-in is one word). */}
+        <div className={`relative ${authSessionType === 'guest' ? '' : 'hidden md:block'}`} ref={profileRef}>
           <button
             onClick={() => {
               playSound('click');
