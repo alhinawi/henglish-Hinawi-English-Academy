@@ -247,7 +247,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                         <div className="flex items-center gap-2">
                           <span className="text-[11px] font-bold text-[#ffd166]">التركيبة:</span>
                           <code className="en text-xs font-black text-[#41e7ff] px-2.5 py-1 rounded-lg bg-black/40 border border-white/10">
-                            {rule.goldenFormula}
+                            {txText(appText, rule.goldenFormula)}
                           </code>
                         </div>
 
