@@ -50,7 +50,7 @@ export const SpeakingPage: React.FC = () => {
             <Sparkles className="w-5 h-5 text-[#ffd166]" />
             <span>استوديو التحليل الصوتي المباشر (Live Voice Recording Studio)</span>
           </h2>
-          <span className="text-xs text-[#c4ff55] font-bold">● نظام تقييم الذكاء الاصطناعي نشط</span>
+          <span className="text-xs text-[#c4ff55] font-bold">● نظام التقييم الصوتي نشط</span>
         </div>
         <PronunciationAssessmentViewer
           targetSentence={activeTarget}

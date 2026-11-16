@@ -392,7 +392,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Cpu className="w-4 h-4" />
-              <span>إدارة الذكاء الاصطناعي (AI Router)</span>
+              <span>إدارة المزودين (Router)</span>
             </button>
 
             <button

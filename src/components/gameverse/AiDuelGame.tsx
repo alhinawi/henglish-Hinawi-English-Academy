@@ -178,10 +178,10 @@ export const AiDuelGame: React.FC<AiDuelGameProps> = ({ onExit }) => {
 
         <div className="space-y-2">
           <h2 className="text-2xl sm:text-4xl font-black text-white font-['Cairo',sans-serif]">
-            مبارزة الذكاء الاصطناعي 1v1
+            مبارزة الروبوت 1v1
           </h2>
           <p className="text-xs sm:text-sm text-[#b9b6d5] max-w-md mx-auto leading-relaxed">
-            اختر مستوى خصم الذكاء الاصطناعي وادخل في معركة أسئلة بالوقت الحقيقي. كل روبوت يمتلك معدل دقة وسرعة تفكير حقيقية!
+            اختر مستوى الروبوت الخصم وادخل في معركة أسئلة بالوقت الحقيقي. كل روبوت يمتلك معدل دقة وسرعة تفكير مختلفة!
           </p>
         </div>
 
