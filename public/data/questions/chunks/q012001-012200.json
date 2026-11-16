@@ -2756,5 +2756,819 @@
   "explanationAr": "الجملة صح. can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can.",
   "topic": "Grammar: can and can't (A1)",
   "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-read-015801",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How old is Sara?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "My name is Sara. I am ten years old. I live in Cairo with my mother, my father and my little brother. I have a cat. Her name is Lola. Lola is white and she likes milk.",
+  "options": [
+   "Nine",
+   "Twelve",
+   "Ten",
+   "Eleven"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص بيقول \"I am ten years old\" يعني عمرها عشر سنين.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015802",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where does Sara live?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "My name is Sara. I am ten years old. I live in Cairo with my mother, my father and my little brother. I have a cat. Her name is Lola. Lola is white and she likes milk.",
+  "options": [
+   "In Mansoura",
+   "In Cairo",
+   "In Alexandria",
+   "In London"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة \"I live in Cairo\" بتقول إنها عايشة في القاهرة.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015803",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: Sara has a dog.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "My name is Sara. I am ten years old. I live in Cairo with my mother, my father and my little brother. I have a cat. Her name is Lola. Lola is white and she likes milk.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "سارة عندها قطة اسمها Lola مش كلب.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015804",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What colour is Lola?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "My name is Sara. I am ten years old. I live in Cairo with my mother, my father and my little brother. I have a cat. Her name is Lola. Lola is white and she likes milk.",
+  "options": [
+   "Black",
+   "Grey",
+   "White",
+   "Brown"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص بيقول \"Lola is white\" يعني لونها أبيض.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015805",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does Lola like?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "My name is Sara. I am ten years old. I live in Cairo with my mother, my father and my little brother. I have a cat. Her name is Lola. Lola is white and she likes milk.",
+  "options": [
+   "Water",
+   "Bread",
+   "Fish",
+   "Milk"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في آخر النص: \"she likes milk\" يعني بتحب اللبن.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015806",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What time does Ali get up?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ali gets up at seven o'clock. He has breakfast with his family. He eats eggs and bread. Then he goes to school by bus. School starts at eight o'clock.",
+  "options": [
+   "At nine",
+   "At seven",
+   "At six",
+   "At eight"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص: \"Ali gets up at seven o'clock\" يعني بيصحى الساعة سبعة.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015807",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does Ali eat for breakfast?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ali gets up at seven o'clock. He has breakfast with his family. He eats eggs and bread. Then he goes to school by bus. School starts at eight o'clock.",
+  "options": [
+   "Cake and milk",
+   "Cheese and tea only",
+   "Rice and fish",
+   "Eggs and bread"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النص بيقول \"He eats eggs and bread\".",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015808",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How does Ali go to school?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ali gets up at seven o'clock. He has breakfast with his family. He eats eggs and bread. Then he goes to school by bus. School starts at eight o'clock.",
+  "options": [
+   "By bus",
+   "By train",
+   "On foot",
+   "By car"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "\"goes to school by bus\" يعني بيروح المدرسة بالأتوبيس.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015809",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: School starts at nine o'clock.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Ali gets up at seven o'clock. He has breakfast with his family. He eats eggs and bread. Then he goes to school by bus. School starts at eight o'clock.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المدرسة بتبدأ الساعة ثمانية (eight) مش تسعة.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015810",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: Ali has breakfast with his family.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Ali gets up at seven o'clock. He has breakfast with his family. He eats eggs and bread. Then he goes to school by bus. School starts at eight o'clock.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص بيقول \"He has breakfast with his family\" يعني بيفطر مع أسرته.",
+  "topic": "Reading: Daily life (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015811",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What day is it?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Today is Friday. Mona and her friends are at the park. They have a picnic. They have sandwiches, apples and orange juice. They play football after lunch. They are very happy.",
+  "options": [
+   "Monday",
+   "Saturday",
+   "Sunday",
+   "Friday"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "أول جملة: \"Today is Friday\".",
+  "topic": "Reading: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015812",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where are Mona and her friends?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Today is Friday. Mona and her friends are at the park. They have a picnic. They have sandwiches, apples and orange juice. They play football after lunch. They are very happy.",
+  "options": [
+   "At home",
+   "At the park",
+   "At the club",
+   "At school"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "\"are at the park\" يعني في الحديقة.",
+  "topic": "Reading: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015813",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: They have fish sandwiches.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Today is Friday. Mona and her friends are at the park. They have a picnic. They have sandwiches, apples and orange juice. They play football after lunch. They are very happy.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص ما ذكرش سمك. الأكل: sandwiches وتفاح وعصير برتقال.",
+  "topic": "Reading: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015814",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "When do they play football?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Today is Friday. Mona and her friends are at the park. They have a picnic. They have sandwiches, apples and orange juice. They play football after lunch. They are very happy.",
+  "options": [
+   "At night",
+   "In the morning",
+   "After lunch",
+   "Before lunch"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "\"They play football after lunch\" يعني بعد الغدا.",
+  "topic": "Reading: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015815",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How do they feel?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Today is Friday. Mona and her friends are at the park. They have a picnic. They have sandwiches, apples and orange juice. They play football after lunch. They are very happy.",
+  "options": [
+   "Happy",
+   "Angry",
+   "Tired",
+   "Sad"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "آخر جملة \"They are very happy\" يعني مبسوطين.",
+  "topic": "Reading: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015816",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Is the room big?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "This is my room. It is small but nice. There is a bed next to the window. There is a desk and a chair. My books are on the desk. My bag is under the chair.",
+  "options": [
+   "Yes, it is very big",
+   "No, it is small",
+   "The text does not say",
+   "Yes, it is huge"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول \"small but nice\" يعني صغيرة بس حلوة.",
+  "topic": "Reading: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015817",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where is the bed?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "This is my room. It is small but nice. There is a bed next to the window. There is a desk and a chair. My books are on the desk. My bag is under the chair.",
+  "options": [
+   "Next to the window",
+   "Behind the door",
+   "On the chair",
+   "Under the desk"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "\"a bed next to the window\" يعني السرير جنب الشباك.",
+  "topic": "Reading: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015818",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where are the books?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "This is my room. It is small but nice. There is a bed next to the window. There is a desk and a chair. My books are on the desk. My bag is under the chair.",
+  "options": [
+   "In the bag",
+   "On the bed",
+   "On the desk",
+   "Under the chair"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "\"My books are on the desk\" يعني الكتب على المكتب.",
+  "topic": "Reading: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015819",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where is the bag?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "This is my room. It is small but nice. There is a bed next to the window. There is a desk and a chair. My books are on the desk. My bag is under the chair.",
+  "options": [
+   "Next to the bed",
+   "Near the window",
+   "On the desk",
+   "Under the chair"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "\"My bag is under the chair\" يعني الشنطة تحت الكرسي.",
+  "topic": "Reading: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015820",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: There is a computer in the room.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "This is my room. It is small but nice. There is a bed next to the window. There is a desk and a chair. My books are on the desk. My bag is under the chair.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكمبيوتر مش مذكور في النص.",
+  "topic": "Reading: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015821",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How often does Karim swim?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Karim loves swimming. He goes to the pool three times a week: on Sunday, Tuesday and Thursday. His coach, Mr Adel, is very strict, but Karim likes him. Last month Karim won his first medal in a school competition. His parents were very proud of him.",
+  "options": [
+   "Once a week",
+   "Twice a week",
+   "Three times a week",
+   "Every day"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص: \"three times a week\" يعني تلات مرات في الأسبوع.",
+  "topic": "Reading: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015822",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What is Mr Adel like?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Karim loves swimming. He goes to the pool three times a week: on Sunday, Tuesday and Thursday. His coach, Mr Adel, is very strict, but Karim likes him. Last month Karim won his first medal in a school competition. His parents were very proud of him.",
+  "options": [
+   "Lazy",
+   "Funny",
+   "Quiet",
+   "Strict"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النص وصفه بـ \"very strict\" يعني صارم.",
+  "topic": "Reading: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015823",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What happened last month?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Karim loves swimming. He goes to the pool three times a week: on Sunday, Tuesday and Thursday. His coach, Mr Adel, is very strict, but Karim likes him. Last month Karim won his first medal in a school competition. His parents were very proud of him.",
+  "options": [
+   "Karim stopped swimming",
+   "Karim lost a race",
+   "Karim won a medal",
+   "Karim changed his coach"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "\"Last month Karim won his first medal\" يعني كسب ميدالية الشهر اللي فات.",
+  "topic": "Reading: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015824",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Karim swims on Saturday.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Karim loves swimming. He goes to the pool three times a week: on Sunday, Tuesday and Thursday. His coach, Mr Adel, is very strict, but Karim likes him. Last month Karim won his first medal in a school competition. His parents were very proud of him.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "أيام السباحة: الأحد والثلاثاء والخميس، مفيش سبت.",
+  "topic": "Reading: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015825",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Karim's parents were proud of him.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Karim loves swimming. He goes to the pool three times a week: on Sunday, Tuesday and Thursday. His coach, Mr Adel, is very strict, but Karim likes him. Last month Karim won his first medal in a school competition. His parents were very proud of him.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص بيقول إن أهله كانوا فخورين بيه (very proud).",
+  "topic": "Reading: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015826",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How long did the family stay in Alexandria?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Last summer, Huda's family went to Alexandria for a week. They stayed in a small hotel near the sea. Every morning they swam, and in the evening they walked along the corniche and ate ice cream. On the last day it rained, so they visited a museum. Huda wants to go back next year.",
+  "options": [
+   "Two weeks",
+   "A month",
+   "A week",
+   "Two days"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص: \"for a week\" يعني أسبوع.",
+  "topic": "Reading: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015827",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where did they stay?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Last summer, Huda's family went to Alexandria for a week. They stayed in a small hotel near the sea. Every morning they swam, and in the evening they walked along the corniche and ate ice cream. On the last day it rained, so they visited a museum. Huda wants to go back next year.",
+  "options": [
+   "In a big apartment",
+   "In a tent",
+   "With relatives",
+   "In a small hotel"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"stayed in a small hotel near the sea\".",
+  "topic": "Reading: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015828",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What did they do in the evening?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Last summer, Huda's family went to Alexandria for a week. They stayed in a small hotel near the sea. Every morning they swam, and in the evening they walked along the corniche and ate ice cream. On the last day it rained, so they visited a museum. Huda wants to go back next year.",
+  "options": [
+   "They visited museums",
+   "They played football",
+   "They walked and ate ice cream",
+   "They swam"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المساء: walked along the corniche and ate ice cream.",
+  "topic": "Reading: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015829",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why did they visit a museum?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Last summer, Huda's family went to Alexandria for a week. They stayed in a small hotel near the sea. Every morning they swam, and in the evening they walked along the corniche and ate ice cream. On the last day it rained, so they visited a museum. Huda wants to go back next year.",
+  "options": [
+   "Because it rained",
+   "Because it was cheap",
+   "Because the sea was closed",
+   "Because Huda asked"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "\"On the last day it rained, so they visited a museum\"، الـ so بتدل على النتيجة.",
+  "topic": "Reading: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015830",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Huda does not want to return to Alexandria.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Last summer, Huda's family went to Alexandria for a week. They stayed in a small hotel near the sea. Every morning they swam, and in the evening they walked along the corniche and ate ice cream. On the last day it rained, so they visited a museum. Huda wants to go back next year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "هدى عايزة ترجع السنة الجاية: \"wants to go back next year\".",
+  "topic": "Reading: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015831",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why did Omar go to the mall?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Omar needed a new pair of shoes for school. He went to a shop in the mall with his father. The first pair was too small, and the second pair was too expensive. The third pair was comfortable and cost 600 pounds. His father said it was a good price, so they bought them.",
+  "options": [
+   "To buy shoes",
+   "To see a film",
+   "To eat lunch",
+   "To meet friends"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "\"needed a new pair of shoes\" يعني محتاج جزمة.",
+  "topic": "Reading: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015832",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What was wrong with the first pair?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Omar needed a new pair of shoes for school. He went to a shop in the mall with his father. The first pair was too small, and the second pair was too expensive. The third pair was comfortable and cost 600 pounds. His father said it was a good price, so they bought them.",
+  "options": [
+   "It was dirty",
+   "It was too expensive",
+   "It was too small",
+   "It was ugly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"The first pair was too small\".",
+  "topic": "Reading: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015833",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How much were the shoes they bought?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Omar needed a new pair of shoes for school. He went to a shop in the mall with his father. The first pair was too small, and the second pair was too expensive. The third pair was comfortable and cost 600 pounds. His father said it was a good price, so they bought them.",
+  "options": [
+   "6,000 pounds",
+   "600 pounds",
+   "160 pounds",
+   "60 pounds"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السعر المذكور 600 جنيه.",
+  "topic": "Reading: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015834",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The second pair was too expensive.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Omar needed a new pair of shoes for school. He went to a shop in the mall with his father. The first pair was too small, and the second pair was too expensive. The third pair was comfortable and cost 600 pounds. His father said it was a good price, so they bought them.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص: \"the second pair was too expensive\".",
+  "topic": "Reading: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015835",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Omar's mother paid for the shoes.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Omar needed a new pair of shoes for school. He went to a shop in the mall with his father. The first pair was too small, and the second pair was too expensive. The third pair was comfortable and cost 600 pounds. His father said it was a good price, so they bought them.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "اللي راح معاه أبوه، والنص مذكرش إن أمه دفعت.",
+  "topic": "Reading: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015836",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where can the temperature reach 45 degrees?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "In Egypt, summer is very hot, especially in Aswan, where the temperature can reach 45 degrees. Winter is mild, but in some cities like Alexandria it can be rainy and windy. Spring brings a hot, dusty wind called khamasin. Many people prefer autumn because the weather is pleasant.",
+  "options": [
+   "In Cairo",
+   "In Mansoura",
+   "In Aswan",
+   "In Alexandria"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص: \"especially in Aswan, where the temperature can reach 45\".",
+  "topic": "Reading: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015837",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What is winter like in Egypt?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "In Egypt, summer is very hot, especially in Aswan, where the temperature can reach 45 degrees. Winter is mild, but in some cities like Alexandria it can be rainy and windy. Spring brings a hot, dusty wind called khamasin. Many people prefer autumn because the weather is pleasant.",
+  "options": [
+   "Snowy",
+   "Very hot",
+   "Mild",
+   "Freezing"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "\"Winter is mild\" يعني معتدل.",
+  "topic": "Reading: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015838",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What is khamasin?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "In Egypt, summer is very hot, especially in Aswan, where the temperature can reach 45 degrees. Winter is mild, but in some cities like Alexandria it can be rainy and windy. Spring brings a hot, dusty wind called khamasin. Many people prefer autumn because the weather is pleasant.",
+  "options": [
+   "A hot, dusty wind",
+   "A winter storm",
+   "A cold wind",
+   "A kind of rain"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص بيعرفها: \"a hot, dusty wind\" في الربيع.",
+  "topic": "Reading: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015839",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why do many people prefer autumn?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "In Egypt, summer is very hot, especially in Aswan, where the temperature can reach 45 degrees. Winter is mild, but in some cities like Alexandria it can be rainy and windy. Spring brings a hot, dusty wind called khamasin. Many people prefer autumn because the weather is pleasant.",
+  "options": [
+   "It is rainy",
+   "It is the hottest season",
+   "There is no school",
+   "The weather is pleasant"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "\"because the weather is pleasant\" يعني الجو لطيف.",
+  "topic": "Reading: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015840",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Alexandria can be rainy in winter.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "In Egypt, summer is very hot, especially in Aswan, where the temperature can reach 45 degrees. Winter is mild, but in some cities like Alexandria it can be rainy and windy. Spring brings a hot, dusty wind called khamasin. Many people prefer autumn because the weather is pleasant.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص بيقول إن في الشتا ممكن تبقى ممطرة وعاصفة في إسكندرية.",
+  "topic": "Reading: Weather (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015841",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is the main idea of the passage?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many schools now allow students to use tablets in class. Supporters say tablets make learning more interesting because students can watch videos and look up information quickly. However, some teachers worry that students may get distracted by games or social media. A recent study in one school found that results improved only when teachers set clear rules about how tablets could be used.",
+  "options": [
+   "Tablets should be banned from schools",
+   "Tablets can help learning, but only if they are used carefully",
+   "Teachers prefer tablets to books",
+   "Tablets are cheaper than books"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيعرض فايدة وخطر التابلت، وبيخلص إن النتايج اتحسنت مع قواعد واضحة.",
+  "topic": "Reading: Technology (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015842",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What do supporters say about tablets?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many schools now allow students to use tablets in class. Supporters say tablets make learning more interesting because students can watch videos and look up information quickly. However, some teachers worry that students may get distracted by games or social media. A recent study in one school found that results improved only when teachers set clear rules about how tablets could be used.",
+  "options": [
+   "They save teachers' time",
+   "They are free",
+   "They improve handwriting",
+   "They make lessons more interesting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "\"make learning more interesting\" هي حجة المؤيدين.",
+  "topic": "Reading: Technology (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015843",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What worries some teachers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many schools now allow students to use tablets in class. Supporters say tablets make learning more interesting because students can watch videos and look up information quickly. However, some teachers worry that students may get distracted by games or social media. A recent study in one school found that results improved only when teachers set clear rules about how tablets could be used.",
+  "options": [
+   "Tablets are too heavy",
+   "Tablets break easily",
+   "Students may lose them",
+   "Students may be distracted"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"worry that students may get distracted\".",
+  "topic": "Reading: Technology (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015844",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "According to the study, when did results improve?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many schools now allow students to use tablets in class. Supporters say tablets make learning more interesting because students can watch videos and look up information quickly. However, some teachers worry that students may get distracted by games or social media. A recent study in one school found that results improved only when teachers set clear rules about how tablets could be used.",
+  "options": [
+   "When teachers set clear rules",
+   "When students used tablets freely",
+   "When tablets were banned",
+   "When lessons were shorter"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدراسة لقت التحسن \"only when teachers set clear rules\".",
+  "topic": "Reading: Technology (B1)",
+  "source": "worker-d-reading-listening"
  }
 ]
