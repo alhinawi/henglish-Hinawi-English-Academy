@@ -22,6 +22,10 @@ export interface BankQuestion {
   explanationAr: string;
   topic: string;
   source: string;
+  /** Reading-comprehension text the question refers to (reading skill). */
+  passage?: string;
+  /** Listening transcript the question refers to (listening skill). */
+  audioText?: string;
 }
 
 interface QuestionIndex {
