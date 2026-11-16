@@ -196,7 +196,7 @@ export const AuthModal: React.FC<AuthModalProps> = (props) => {
                   : 'bg-red-500/20 border border-red-500/40 text-red-200'
               }`}
             >
-              {feedbackMsg.text}
+              {t(feedbackMsg.text)}
             </div>
           )}
 
