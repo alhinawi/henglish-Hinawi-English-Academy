@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "ielts-v-000301",
+   "sentences": [
+    {
+     "en": "The temperature is very high today.",
+     "ar": "درجة الحرارة عالية جدا النهارده."
+    },
+    {
+     "en": "She checked the temperature before going out.",
+     "ar": "اتأكدت من درجة الحرارة قبل ما تخرج."
+    },
+    {
+     "en": "The temperature dropped at night.",
+     "ar": "درجة الحرارة نزلت بالليل."
+    },
+    {
+     "en": "He has a high temperature.",
+     "ar": "عنده سخونية عالية."
+    },
+    {
+     "en": "The temperature rose suddenly.",
+     "ar": "درجة الحرارة ارتفعت فجأة."
+    },
+    {
+     "en": "She measured the temperature of the water.",
+     "ar": "قاست درجة حرارة المية."
+    },
+    {
+     "en": "The temperature is below zero.",
+     "ar": "درجة الحرارة تحت الصفر."
+    },
+    {
+     "en": "He likes a moderate temperature.",
+     "ar": "بيحب درجة حرارة معتدلة."
+    },
+    {
+     "en": "The temperature affects the crops.",
+     "ar": "درجة الحرارة بتأثر على المحاصيل."
+    },
+    {
+     "en": "She set the air conditioner to a low temperature.",
+     "ar": "ظبطت التكييف على درجة حرارة منخفضة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000302",
+   "sentences": [
+    {
+     "en": "The drought killed the crops.",
+     "ar": "الجفاف ميت المحاصيل."
+    },
+    {
+     "en": "The country suffered from a long drought.",
+     "ar": "البلد عانت من جفاف طويل."
+    },
+    {
+     "en": "The drought caused water shortages.",
+     "ar": "الجفاف سبب نقص في المية."
+    },
+    {
+     "en": "Farmers are worried about the drought.",
+     "ar": "الفلاحين قلقانين من الجفاف."
+    },
+    {
+     "en": "The drought lasted for two years.",
+     "ar": "الجفاف فضل لسنتين."
+    },
+    {
+     "en": "The government helped during the drought.",
+     "ar": "الحكومة ساعدت أثناء الجفاف."
+    },
+    {
+     "en": "The drought affected the whole region.",
+     "ar": "الجفاف أثر على المنطقة كلها."
+    },
+    {
+     "en": "Animals died because of the drought.",
+     "ar": "حيوانات ماتت بسبب الجفاف."
+    },
+    {
+     "en": "The drought made the land dry.",
+     "ar": "الجفاف خلّى الأرض ناشفة."
+    },
+    {
+     "en": "People prayed for rain during the drought.",
+     "ar": "الناس صلت للمطر أثناء الجفاف."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000303",
+   "sentences": [
+    {
+     "en": "The flood destroyed the village.",
+     "ar": "الفيضان دمر القرية."
+    },
+    {
+     "en": "Heavy rain caused a flood.",
+     "ar": "المطر التقيل سبب فيضان."
+    },
+    {
+     "en": "The flood water entered the houses.",
+     "ar": "مية الفيضان دخلت البيوت."
+    },
+    {
+     "en": "People were rescued from the flood.",
+     "ar": "الناس اتنقذت من الفيضان."
+    },
+    {
+     "en": "The flood damaged the roads.",
+     "ar": "الفيضان ضر الطرق."
+    },
+    {
+     "en": "The river caused a flood.",
+     "ar": "النهر سبب فيضان."
+    },
+    {
+     "en": "The flood left mud everywhere.",
+     "ar": "الفيضان ساب طين في كل حتة."
+    },
+    {
+     "en": "They built walls against the flood.",
+     "ar": "بنوا أسوار ضد الفيضان."
+    },
+    {
+     "en": "The flood was the worst in years.",
+     "ar": "الفيضان كان أسوأ واحد في سنين."
+    },
+    {
+     "en": "The flood affected thousands of people.",
+     "ar": "الفيضان أثر على آلاف الناس."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000304",
+   "sentences": [
+    {
+     "en": "The earthquake shook the city.",
+     "ar": "الزلزال هز المدينة."
+    },
+    {
+     "en": "The earthquake destroyed buildings.",
+     "ar": "الزلزال دمر مباني."
+    },
+    {
+     "en": "She felt the earthquake at night.",
+     "ar": "حست بالزلزال بالليل."
+    },
+    {
+     "en": "The earthquake measured six on the scale.",
+     "ar": "الزلزال قاس ستة على المقياس."
+    },
+    {
+     "en": "People ran outside during the earthquake.",
+     "ar": "الناس جريت بره أثناء الزلزال."
+    },
+    {
+     "en": "The earthquake caused a tsunami.",
+     "ar": "الزلزال سبب تسونامي."
+    },
+    {
+     "en": "The earthquake damaged the bridge.",
+     "ar": "الزلزال ضر الكوبري."
+    },
+    {
+     "en": "They survived the earthquake.",
+     "ar": "نجوا من الزلزال."
+    },
+    {
+     "en": "The earthquake was felt in many cities.",
+     "ar": "الزلزال اتحس في مدن كتير."
+    },
+    {
+     "en": "The earthquake left many homeless.",
+     "ar": "الزلزال ساب ناس كتير من غير بيت."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000305",
+   "sentences": [
+    {
+     "en": "The earthquake was a disaster.",
+     "ar": "الزلزال كان كارثة."
+    },
+    {
+     "en": "The flood was a natural disaster.",
+     "ar": "الفيضان كان كارثة طبيعية."
+    },
+    {
+     "en": "The fire was a disaster for the family.",
+     "ar": "الحرايق كانت كارثة للعيلة."
+    },
+    {
+     "en": "The project was a complete disaster.",
+     "ar": "المشروع كان كارثة كاملة."
+    },
+    {
+     "en": "The disaster left thousands homeless.",
+     "ar": "الكارثة سابت آلاف من غير بيت."
+    },
+    {
+     "en": "They declared a state of disaster.",
+     "ar": "أعلنوا حالة كارثة."
+    },
+    {
+     "en": "The disaster affected the whole country.",
+     "ar": "الكارثة أثرت على البلد كلها."
+    },
+    {
+     "en": "The disaster relief team arrived quickly.",
+     "ar": "فريق إغاثة الكوارث وصل بسرعة."
+    },
+    {
+     "en": "The disaster was unexpected.",
+     "ar": "الكارثة كانت مش متوقعة."
+    },
+    {
+     "en": "The disaster changed the city forever.",
+     "ar": "الكارثة غيرت المدينة للأبد."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000306",
+   "sentences": [
+    {
+     "en": "This species of bird is rare.",
+     "ar": "النوع ده من الطيور نادر."
+    },
+    {
+     "en": "Many species are in danger.",
+     "ar": "أنواع كتير في خطر."
+    },
+    {
+     "en": "The species lives only in Africa.",
+     "ar": "الفصيلة دي بتعيش في أفريقيا بس."
+    },
+    {
+     "en": "Scientists discovered a new species.",
+     "ar": "العلماء اكتشفوا نوع جديد."
+    },
+    {
+     "en": "The species is protected by law.",
+     "ar": "النوع محمي بالقانون."
+    },
+    {
+     "en": "Each species has its own habitat.",
+     "ar": "كل فصيلة عندها موطنها الخاص."
+    },
+    {
+     "en": "The species is dying out.",
+     "ar": "النوع بيموت."
+    },
+    {
+     "en": "This species of plant is useful.",
+     "ar": "النوع ده من النبات مفيد."
+    },
+    {
+     "en": "The species adapted to the cold.",
+     "ar": "الفصيلة اتأقلمت مع البرد."
+    },
+    {
+     "en": "Many species live in the ocean.",
+     "ar": "أنواع كتير بتعيش في المحيط."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000307",
+   "sentences": [
+    {
+     "en": "The park protects the wildlife.",
+     "ar": "الجنينة بتحمي الحياة البرية."
+    },
+    {
+     "en": "She loves watching wildlife.",
+     "ar": "بتحب تتفرج على الحياة البرية."
+    },
+    {
+     "en": "The wildlife in the forest is rich.",
+     "ar": "الحياة البرية في الغابة غنية."
+    },
+    {
+     "en": "He took photos of the wildlife.",
+     "ar": "صور الحياة البرية."
+    },
+    {
+     "en": "The wildlife is threatened by pollution.",
+     "ar": "الحياة البرية مهددة بالتلوث."
+    },
+    {
+     "en": "They studied the wildlife in the area.",
+     "ar": "درسوا الحياة البرية في المنطقة."
+    },
+    {
+     "en": "The wildlife reserve is huge.",
+     "ar": "محمية الحياة البرية ضخمة."
+    },
+    {
+     "en": "She works to protect wildlife.",
+     "ar": "بتشتغل عشان تحمي الحياة البرية."
+    },
+    {
+     "en": "The wildlife is active at night.",
+     "ar": "الحياة البرية نشيطة بالليل."
+    },
+    {
+     "en": "He is interested in wildlife photography.",
+     "ar": "مهتم بتصوير الحياة البرية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000308",
+   "sentences": [
+    {
+     "en": "The forest is the habitat of many animals.",
+     "ar": "الغابة موطن طبيعي لحيوانات كتير."
+    },
+    {
+     "en": "The bird's habitat is being destroyed.",
+     "ar": "موطن الطائر بيتدمر."
+    },
+    {
+     "en": "Each animal has its own habitat.",
+     "ar": "كل حيوان عنده موطنه الطبيعي."
+    },
+    {
+     "en": "The habitat of the fish is the river.",
+     "ar": "موطن السمك هو النهر."
+    },
+    {
+     "en": "Pollution destroys the habitat.",
+     "ar": "التلوث بيدمر الموطن الطبيعي."
+    },
+    {
+     "en": "The habitat is protected by law.",
+     "ar": "الموطن محمي بالقانون."
+    },
+    {
+     "en": "The desert is a harsh habitat.",
+     "ar": "الصحرا موطن قاسي."
+    },
+    {
+     "en": "The habitat provides food and shelter.",
+     "ar": "الموطن بيوفر أكل ومأوى."
+    },
+    {
+     "en": "They restored the natural habitat.",
+     "ar": "رجعوا الموطن الطبيعي."
+    },
+    {
+     "en": "The habitat is shrinking due to development.",
+     "ar": "الموطن بيصغر بسبب التطوير."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000309",
+   "sentences": [
+    {
+     "en": "The dinosaur is extinct.",
+     "ar": "الديناصور منقرض."
+    },
+    {
+     "en": "Many species are now extinct.",
+     "ar": "أنواع كتير دلوقتي منقرضة."
+    },
+    {
+     "en": "The bird is nearly extinct.",
+     "ar": "الطائر قريب من الانقراض."
+    },
+    {
+     "en": "The volcano is extinct.",
+     "ar": "البركان خامد."
+    },
+    {
+     "en": "The species became extinct long ago.",
+     "ar": "النوع انقرض من زمان."
+    },
+    {
+     "en": "They are trying to save the extinct species.",
+     "ar": "بيحاولوا ينقذوا النوع المنقرض."
+    },
+    {
+     "en": "The language is almost extinct.",
+     "ar": "اللغة قريبة من الانقراض."
+    },
+    {
+     "en": "The animal is extinct in the wild.",
+     "ar": "الحيوان منقرض في البرية."
+    },
+    {
+     "en": "The tradition is nearly extinct.",
+     "ar": "التقليد قريب من الانقراض."
+    },
+    {
+     "en": "The plant is extinct in this region.",
+     "ar": "النبات منقرض في المنطقة دي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000310",
+   "sentences": [
+    {
+     "en": "The panda is an endangered species.",
+     "ar": "الباندا نوع مهدد بالانقراض."
+    },
+    {
+     "en": "Many animals are endangered.",
+     "ar": "حيوانات كتير مهددة بالانقراض."
+    },
+    {
+     "en": "The bird is endangered because of hunting.",
+     "ar": "الطائر مهدد بالانقراض بسبب الصيد."
+    },
+    {
+     "en": "They protect endangered animals.",
+     "ar": "بيحموا الحيوانات المهددة بالانقراض."
+    },
+    {
+     "en": "The species is on the endangered list.",
+     "ar": "النوع على قائمة المهدد بالانقراض."
+    },
+    {
+     "en": "The habitat of the endangered bird is shrinking.",
+     "ar": "موطن الطائر المهدد بالانقراض بيصغر."
+    },
+    {
+     "en": "She works to save endangered species.",
+     "ar": "بتشتغل عشان تنقذ الأنواع المهددة بالانقراض."
+    },
+    {
+     "en": "The endangered turtle lays eggs on the beach.",
+     "ar": "السلحفاة المهددة بالانقراض بتبيض على الشط."
+    },
+    {
+     "en": "He photographed the endangered animal.",
+     "ar": "صور الحيوان المهدد بالانقراض."
+    },
+    {
+     "en": "The endangered plant is protected.",
+     "ar": "النبات المهدد بالانقراض محمي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000311",
+   "sentences": [
+    {
+     "en": "The forest is full of trees.",
+     "ar": "الغابة مليانة شجر."
+    },
+    {
+     "en": "They walked through the forest.",
+     "ar": "مشيوا في الغابة."
+    },
+    {
+     "en": "The forest is home to many animals.",
+     "ar": "الغابة بيت لحيوانات كتير."
+    },
+    {
+     "en": "The fire destroyed the forest.",
+     "ar": "النار دمرت الغابة."
+    },
+    {
+     "en": "She loves the sound of the forest.",
+     "ar": "بتحب صوت الغابة."
+    },
+    {
+     "en": "The forest is being cut down.",
+     "ar": "الغابة بتتقطع."
+    },
+    {
+     "en": "He works in the forest.",
+     "ar": "بيشتغل في الغابة."
+    },
+    {
+     "en": "The forest provides oxygen.",
+     "ar": "الغابة بتوفر أكسجين."
+    },
+    {
+     "en": "They planted a new forest.",
+     "ar": "زرعوا غابة جديدة."
+    },
+    {
+     "en": "The forest is dense and dark.",
+     "ar": "الغابة كثيفة ومضلمة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000312",
+   "sentences": [
+    {
+     "en": "The desert is very hot.",
+     "ar": "الصحرا حر جدا."
+    },
+    {
+     "en": "They crossed the desert by car.",
+     "ar": "عدوا الصحرا بالعربية."
+    },
+    {
+     "en": "The desert has no water.",
+     "ar": "الصحرا مفيهاش مية."
+    },
+    {
+     "en": "She loves the desert at sunset.",
+     "ar": "بتحب الصحرا وقت الغروب."
+    },
+    {
+     "en": "The desert is home to many animals.",
+     "ar": "الصحرا بيت لحيوانات كتير."
+    },
+    {
+     "en": "He got lost in the desert.",
+     "ar": "ضاع في الصحرا."
+    },
+    {
+     "en": "The desert is expanding.",
+     "ar": "الصحرا بتكبر."
+    },
+    {
+     "en": "They built a road through the desert.",
+     "ar": "بنوا طريق في الصحرا."
+    },
+    {
+     "en": "The desert nights are cold.",
+     "ar": "ليالي الصحرا ساععة."
+    },
+    {
+     "en": "She took photos of the desert.",
+     "ar": "صورت الصحرا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000313",
+   "sentences": [
+    {
+     "en": "The ocean is very deep.",
+     "ar": "المحيط عميق جدا."
+    },
+    {
+     "en": "They sailed across the ocean.",
+     "ar": "أبحروا عبر المحيط."
+    },
+    {
+     "en": "The ocean is full of life.",
+     "ar": "المحيط مليان حياة."
+    },
+    {
+     "en": "She loves the sound of the ocean.",
+     "ar": "بتحب صوت المحيط."
+    },
+    {
+     "en": "The ocean is polluted.",
+     "ar": "المحيط ملوث."
+    },
+    {
+     "en": "He swam in the ocean.",
+     "ar": "عام في المحيط."
+    },
+    {
+     "en": "The ocean covers most of the earth.",
+     "ar": "المحيط بيغطي معظم الأرض."
+    },
+    {
+     "en": "They studied the ocean currents.",
+     "ar": "درسوا تيارات المحيط."
+    },
+    {
+     "en": "The ocean is a source of food.",
+     "ar": "المحيط مصدر للأكل."
+    },
+    {
+     "en": "She watched the ocean from the beach.",
+     "ar": "تفرجت على المحيط من الشط."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000314",
+   "sentences": [
+    {
+     "en": "The Nile is a long river.",
+     "ar": "النيل نهر طويل."
+    },
+    {
+     "en": "They crossed the river by boat.",
+     "ar": "عدوا النهر بالمركب."
+    },
+    {
+     "en": "The river is polluted.",
+     "ar": "النهر ملوث."
+    },
+    {
+     "en": "She swam in the river.",
+     "ar": "عامت في النهر."
+    },
+    {
+     "en": "The river flows into the sea.",
+     "ar": "النهر بيصب في البحر."
+    },
+    {
+     "en": "He fished in the river.",
+     "ar": "اصطاد في النهر."
+    },
+    {
+     "en": "The river flooded the fields.",
+     "ar": "النهر غمر الحقول."
+    },
+    {
+     "en": "They built a bridge over the river.",
+     "ar": "بنوا كوبري فوق النهر."
+    },
+    {
+     "en": "The river is the source of life.",
+     "ar": "النهر مصدر الحياة."
+    },
+    {
+     "en": "She walked along the river.",
+     "ar": "مشت على طول النهر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000315",
+   "sentences": [
+    {
+     "en": "The soil is very fertile.",
+     "ar": "الطربة خصبة جدا."
+    },
+    {
+     "en": "The farmer checked the soil.",
+     "ar": "الفلاح اتأكد من الطربة."
+    },
+    {
+     "en": "The soil needs water.",
+     "ar": "الطربة محتاجة مية."
+    },
+    {
+     "en": "The plant grows in rich soil.",
+     "ar": "النبات بينمو في طربة غنية."
+    },
+    {
+     "en": "The soil is dry in the summer.",
+     "ar": "الطربة ناشفة في الصيف."
+    },
+    {
+     "en": "They added fertiliser to the soil.",
+     "ar": "ضافوا سماد للطربة."
+    },
+    {
+     "en": "The soil is good for growing cotton.",
+     "ar": "الطربة كويسة لزراعة القطن."
+    },
+    {
+     "en": "The rain softened the soil.",
+     "ar": "المطر طري الطربة."
+    },
+    {
+     "en": "The soil is full of nutrients.",
+     "ar": "الطربة مليانة مغذيات."
+    },
+    {
+     "en": "He dug into the soil.",
+     "ar": "حفر في الطربة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000316",
+   "sentences": [
+    {
+     "en": "The crop was destroyed by the storm.",
+     "ar": "المحصول اتدمر بسبب العاصفة."
+    },
+    {
+     "en": "They harvested the crop in October.",
+     "ar": "حصدوا المحصول في أكتوبر."
+    },
+    {
+     "en": "The crop needs a lot of water.",
+     "ar": "المحصول محتاج مية كتير."
+    },
+    {
+     "en": "The farmer is proud of his crop.",
+     "ar": "الفلاح فخور بمحصوله."
+    },
+    {
+     "en": "The crop is ready for harvest.",
+     "ar": "المحصول جاهز للحصاد."
+    },
+    {
+     "en": "They grew a new crop this year.",
+     "ar": "زرعوا محصول جديد السنة دي."
+    },
+    {
+     "en": "The crop failed because of the drought.",
+     "ar": "المحصول فشل بسبب الجفاف."
+    },
+    {
+     "en": "The crop is sold in the market.",
+     "ar": "المحصول بيتباع في السوق."
+    },
+    {
+     "en": "The crop is organic.",
+     "ar": "المحصول عضوي."
+    },
+    {
+     "en": "He protected the crop from insects.",
+     "ar": "حما المحصول من الحشرات."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000317",
+   "sentences": [
+    {
+     "en": "The harvest was good this year.",
+     "ar": "الحصاد كان كويس السنة دي."
+    },
+    {
+     "en": "They celebrated the harvest.",
+     "ar": "احتفلوا بالحصاد."
+    },
+    {
+     "en": "The harvest season is in autumn.",
+     "ar": "موسم الحصاد في الخريف."
+    },
+    {
+     "en": "The farmer sold his harvest.",
+     "ar": "الفلاح باع حصاده."
+    },
+    {
+     "en": "The harvest was ruined by the rain.",
+     "ar": "الحصاد اتدمر بسبب المطر."
+    },
+    {
+     "en": "They stored the harvest in the barn.",
+     "ar": "خزنوا الحصاد في المخزن."
+    },
+    {
+     "en": "The harvest festival is famous.",
+     "ar": "مهرجان الحصاد مشهور."
+    },
+    {
+     "en": "The harvest provides food for the winter.",
+     "ar": "الحصاد بيوفر أكل للشتا."
+    },
+    {
+     "en": "He helped with the harvest.",
+     "ar": "ساعد في الحصاد."
+    },
+    {
+     "en": "The harvest was smaller than expected.",
+     "ar": "الحصاد كان أصغر من المتوقع."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000318",
+   "sentences": [
+    {
+     "en": "He owns a big farm.",
+     "ar": "عنده مزرعة كبيرة."
+    },
+    {
+     "en": "The farm has many animals.",
+     "ar": "المزرعة فيها حيوانات كتير."
+    },
+    {
+     "en": "She works on the farm.",
+     "ar": "بتشتغل في المزرعة."
+    },
+    {
+     "en": "The farm produces milk.",
+     "ar": "المزرعة بتنتج لبن."
+    },
+    {
+     "en": "They visited the farm last weekend.",
+     "ar": "زروا المزرعة الويك إند اللي فات."
+    },
+    {
+     "en": "The farm is very old.",
+     "ar": "المزرعة قديمة جدا."
+    },
+    {
+     "en": "He grew up on a farm.",
+     "ar": "كبر في مزرعة."
+    },
+    {
+     "en": "The farm sells fresh eggs.",
+     "ar": "المزرعة بتبيع بيض طازة."
+    },
+    {
+     "en": "She loves life on the farm.",
+     "ar": "بتحب الحياة في المزرعة."
+    },
+    {
+     "en": "The farm is near the river.",
+     "ar": "المزرعة جنب النهر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000319",
+   "sentences": [
+    {
+     "en": "Agriculture is the main activity in the village.",
+     "ar": "الزراعة هي النشاط الرئيسي في القرية."
+    },
+    {
+     "en": "He studies agriculture.",
+     "ar": "بيدرس زراعة."
+    },
+    {
+     "en": "Agriculture provides food for everyone.",
+     "ar": "الزراعة بتوفر أكل للكل."
+    },
+    {
+     "en": "The country depends on agriculture.",
+     "ar": "البلد بتعتمد على الزراعة."
+    },
+    {
+     "en": "Modern agriculture uses machines.",
+     "ar": "الزراعة الحديثة بتستخدم مكينات."
+    },
+    {
+     "en": "Agriculture is affected by the weather.",
+     "ar": "الزراعة بتتأثر بالجو."
+    },
+    {
+     "en": "She works in agriculture.",
+     "ar": "بتشتغل في الزراعة."
+    },
+    {
+     "en": "The government supports agriculture.",
+     "ar": "الحكومة بتدعم الزراعة."
+    },
+    {
+     "en": "Agriculture needs a lot of water.",
+     "ar": "الزراعة محتاجة مية كتير."
+    },
+    {
+     "en": "He is an expert in agriculture.",
+     "ar": "هو خبير في الزراعة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000320",
+   "sentences": [
+    {
+     "en": "The farmer used fertiliser on the crops.",
+     "ar": "الفلاح استخدم سماد على المحاصيل."
+    },
+    {
+     "en": "The fertiliser helps the plants grow.",
+     "ar": "السماد بيساعد النباتات تنمو."
+    },
+    {
+     "en": "They bought organic fertiliser.",
+     "ar": "اشتروا سماد عضوي."
+    },
+    {
+     "en": "The fertiliser improved the soil.",
+     "ar": "السماد حسن الطربة."
+    },
+    {
+     "en": "He spread the fertiliser on the field.",
+     "ar": "نثر السماد على الحقل."
+    },
+    {
+     "en": "The fertiliser is made from natural materials.",
+     "ar": "السماد مصنوع من مواد طبيعية."
+    },
+    {
+     "en": "She learned about fertilisers in school.",
+     "ar": "اتعلمت عن الأسمدة في المدرسة."
+    },
+    {
+     "en": "The fertiliser increased the yield.",
+     "ar": "السماد زود المحصول."
+    },
+    {
+     "en": "They store the fertiliser in the shed.",
+     "ar": "بيخزنوا السماد في المخزن."
+    },
+    {
+     "en": "The fertiliser smells strong.",
+     "ar": "السماد ريحته نفاذة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000321",
+   "sentences": [
+    {
+     "en": "She buys organic food.",
+     "ar": "بتشتري أكل عضوي."
+    },
+    {
+     "en": "The farm is organic.",
+     "ar": "المزرعة عضوية."
+    },
+    {
+     "en": "Organic vegetables are expensive.",
+     "ar": "الخضار العضوي غالي."
+    },
+    {
+     "en": "He prefers organic products.",
+     "ar": "بيحب المنتجات العضوية."
+    },
+    {
+     "en": "The shop sells organic honey.",
+     "ar": "المحل بيبيع عسل عضوي."
+    },
+    {
+     "en": "Organic farming is good for the environment.",
+     "ar": "الزراعة العضوية كويسة للبيئة."
+    },
+    {
+     "en": "She grows organic tomatoes.",
+     "ar": "بتزرع طماطم عضوية."
+    },
+    {
+     "en": "The label says it is organic.",
+     "ar": "العلبة مكتوب عليها إنها عضوية."
+    },
+    {
+     "en": "He eats organic food only.",
+     "ar": "بياكل أكل عضوي بس."
+    },
+    {
+     "en": "Organic milk is healthier.",
+     "ar": "اللبن العضوي أصح."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000322",
+   "sentences": [
+    {
+     "en": "Carbon is a chemical element.",
+     "ar": "الكربون عنصر كيميائي."
+    },
+    {
+     "en": "The car emits carbon.",
+     "ar": "العربية بتطلع كربون."
+    },
+    {
+     "en": "They measured the carbon in the air.",
+     "ar": "قاسوا الكربون في الهوا."
+    },
+    {
+     "en": "The factory reduces its carbon footprint.",
+     "ar": "المصنع بيقلل بصمته الكربونية."
+    },
+    {
+     "en": "Carbon dioxide is a greenhouse gas.",
+     "ar": "ثاني أكسيد الكربون غاز دفيئة."
+    },
+    {
+     "en": "Trees absorb carbon.",
+     "ar": "الشجر بيمتص الكربون."
+    },
+    {
+     "en": "The carbon emissions are high.",
+     "ar": "انبعاثات الكربون عالية."
+    },
+    {
+     "en": "He studies carbon chemistry.",
+     "ar": "بيدرس كيمياء الكربون."
+    },
+    {
+     "en": "The carbon tax was introduced.",
+     "ar": "ضريبة الكربون اتطبقت."
+    },
+    {
+     "en": "She calculated the carbon footprint.",
+     "ar": "حسبت البصمة الكربونية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000323",
+   "sentences": [
+    {
+     "en": "The car's emission is high.",
+     "ar": "انبعاث العربية عالي."
+    },
+    {
+     "en": "They measured the emissions from the factory.",
+     "ar": "قاسوا الانبعاثات من المصنع."
+    },
+    {
+     "en": "The emission of gases is dangerous.",
+     "ar": "انبعاث الغازات خطير."
+    },
+    {
+     "en": "The government limits emissions.",
+     "ar": "الحكومة بتحد الانبعاثات."
+    },
+    {
+     "en": "The emission standards are strict.",
+     "ar": "معايير الانبعاثات صارمة."
+    },
+    {
+     "en": "He reduced his carbon emissions.",
+     "ar": "قلل انبعاثات الكربون بتاعته."
+    },
+    {
+     "en": "The emission test was failed.",
+     "ar": "اختبار الانبعاثات سقط."
+    },
+    {
+     "en": "The city has high emission levels.",
+     "ar": "المدينة عندها مستويات انبعاثات عالية."
+    },
+    {
+     "en": "They monitor the emissions daily.",
+     "ar": "بيراقبوا الانبعاثات يوميا."
+    },
+    {
+     "en": "The emission of smoke is visible.",
+     "ar": "انبعاث الدخان باين."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000324",
+   "sentences": [
+    {
+     "en": "The car needs fuel.",
+     "ar": "العربية محتاجة وقود."
+    },
+    {
+     "en": "The price of fuel went up.",
+     "ar": "سعر الوقود زاد."
+    },
+    {
+     "en": "They use solar fuel.",
+     "ar": "بيستخدموا وقود شمسي."
+    },
+    {
+     "en": "The fuel tank is empty.",
+     "ar": "خزان الوقود فاضي."
+    },
+    {
+     "en": "He filled the car with fuel.",
+     "ar": "ملى العربية وقود."
+    },
+    {
+     "en": "The fuel is expensive.",
+     "ar": "الوقود غالي."
+    },
+    {
+     "en": "Fuel prices went up this month.",
+     "ar": "أسعار الوقود ارتفعت الشهر ده."
+    },
+    {
+     "en": "The fuel efficiency is good.",
+     "ar": "كفاءة الوقود كويسة."
+    },
+    {
+     "en": "The fuel spill caused a fire.",
+     "ar": "تسرب الوقود سبب حريق."
+    },
+    {
+     "en": "She checked the fuel level.",
+     "ar": "اتأكدت من مستوى الوقود."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000325",
+   "sentences": [
+    {
+     "en": "They installed solar panels.",
+     "ar": "ركبوا ألواح شمسية."
+    },
+    {
+     "en": "Solar energy is clean.",
+     "ar": "الطاقة الشمسية نضيفة."
+    },
+    {
+     "en": "The house uses solar power.",
+     "ar": "البيت بيستخدم طاقة شمسية."
+    },
+    {
+     "en": "She has a solar water heater.",
+     "ar": "عندها سخان مية شمسي."
+    },
+    {
+     "en": "The solar system is complex.",
+     "ar": "النظام الشمسي معقد."
+    },
+    {
+     "en": "He works in solar energy.",
+     "ar": "بيشتغل في الطاقة الشمسية."
+    },
+    {
+     "en": "The solar farm is huge.",
+     "ar": "مزرعة الطاقة الشمسية ضخمة."
+    },
+    {
+     "en": "They use solar lights in the garden.",
+     "ar": "بيستخدموا لمبات شمسية في الجنينة."
+    },
+    {
+     "en": "The solar battery lasts long.",
+     "ar": "البطارية الشمسية بتعيش طويل."
+    },
+    {
+     "en": "Solar power is the future.",
+     "ar": "الطاقة الشمسية هي المستقبل."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000326",
+   "sentences": [
+    {
+     "en": "The wind is very strong today.",
+     "ar": "الهوا قوي جدا النهارده."
+    },
+    {
+     "en": "They use wind to make electricity.",
+     "ar": "بيستخدموا الهوا لعمل كهربا."
+    },
+    {
+     "en": "The wind blew the papers away.",
+     "ar": "الهوا طير الورق."
+    },
+    {
+     "en": "The wind farm is on the hill.",
+     "ar": "مزرعة الرياح على التل."
+    },
+    {
+     "en": "She loves the sound of the wind.",
+     "ar": "بتحب صوت الهوا."
+    },
+    {
+     "en": "The wind knocked down the tree.",
+     "ar": "الهوا وقع الشجرة."
+    },
+    {
+     "en": "He felt the wind on his face.",
+     "ar": "حس بالهوا على وشه."
+    },
+    {
+     "en": "The wind is cold in winter.",
+     "ar": "الهوا ساقع في الشتا."
+    },
+    {
+     "en": "They built a wind turbine.",
+     "ar": "بنوا توربينة رياح."
+    },
+    {
+     "en": "The wind changed direction.",
+     "ar": "الهوا غير اتجاهه."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000327",
+   "sentences": [
+    {
+     "en": "Solar is a renewable energy.",
+     "ar": "الطاقة الشمسية طاقة متجددة."
+    },
+    {
+     "en": "They use renewable resources.",
+     "ar": "بيستخدموا موارد متجددة."
+    },
+    {
+     "en": "Renewable energy is the future.",
+     "ar": "الطاقة المتجددة هي المستقبل."
+    },
+    {
+     "en": "The country invests in renewable energy.",
+     "ar": "البلد بتستثمر في الطاقة المتجددة."
+    },
+    {
+     "en": "Wind is a renewable source.",
+     "ar": "الرياح مصدر متجدد."
+    },
+    {
+     "en": "They promote renewable energy.",
+     "ar": "بيروجوا للطاقة المتجددة."
+    },
+    {
+     "en": "The project uses renewable materials.",
+     "ar": "المشروع بيستخدم مواد متجددة."
+    },
+    {
+     "en": "Renewable energy is cheap.",
+     "ar": "الطاقة المتجددة رخيصة."
+    },
+    {
+     "en": "She studies renewable energy.",
+     "ar": "بتدرس الطاقة المتجددة."
+    },
+    {
+     "en": "The goal is to use only renewable energy.",
+     "ar": "الهدف نستخدم طاقة متجددة بس."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000328",
+   "sentences": [
+    {
+     "en": "The electricity went out.",
+     "ar": "الكهربا قطعت."
+    },
+    {
+     "en": "They use electricity for everything.",
+     "ar": "بيستخدموا الكهربا في كل حاجة."
+    },
+    {
+     "en": "The electricity bill is high.",
+     "ar": "فاتورة الكهربا عالية."
+    },
+    {
+     "en": "He fixed the electricity.",
+     "ar": "صلح الكهربا."
+    },
+    {
+     "en": "The village has no electricity.",
+     "ar": "القرية مفيهاش كهربا."
+    },
+    {
+     "en": "She saved electricity by turning off lights.",
+     "ar": "وفت كهربا بإطفاء النور."
+    },
+    {
+     "en": "The electricity is generated from water.",
+     "ar": "الكهربا بتتولد من المية."
+    },
+    {
+     "en": "They need electricity for the machines.",
+     "ar": "محتاجين كهربا للمكينات."
+    },
+    {
+     "en": "The electricity is expensive.",
+     "ar": "الكهربا غالية."
+    },
+    {
+     "en": "He works with electricity.",
+     "ar": "بيشتغل في الكهربا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000329",
+   "sentences": [
+    {
+     "en": "The battery is dead.",
+     "ar": "البطارية فاضية."
+    },
+    {
+     "en": "She charged the battery.",
+     "ar": "شحنت البطارية."
+    },
+    {
+     "en": "The battery lasts for hours.",
+     "ar": "البطارية بتعيش ساعات."
+    },
+    {
+     "en": "He bought a new battery.",
+     "ar": "اشترى بطارية جديدة."
+    },
+    {
+     "en": "The battery is low.",
+     "ar": "البطارية ضعيفة."
+    },
+    {
+     "en": "She replaced the battery.",
+     "ar": "غيرت البطارية."
+    },
+    {
+     "en": "The battery is rechargeable.",
+     "ar": "البطارية بتتشحن."
+    },
+    {
+     "en": "He checked the battery level.",
+     "ar": "اتأكد من مستوى البطارية."
+    },
+    {
+     "en": "The battery died during the call.",
+     "ar": "البطارية فصلت أثناء المكالمة."
+    },
+    {
+     "en": "The battery is not working.",
+     "ar": "البطارية مش شغالة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000330",
+   "sentences": [
+    {
+     "en": "The device is easy to use.",
+     "ar": "الجهاز سهل الاستخدام."
+    },
+    {
+     "en": "She bought a new device.",
+     "ar": "اشترت جهاز جديد."
+    },
+    {
+     "en": "The device measures the temperature.",
+     "ar": "الجهاز بيقيس درجة الحرارة."
+    },
+    {
+     "en": "He connected the device to the computer.",
+     "ar": "وصل الجهاز بالكمبيوتر."
+    },
+    {
+     "en": "The device is broken.",
+     "ar": "الجهاز بايظ."
+    },
+    {
+     "en": "She uses the device for work.",
+     "ar": "بتستخدم الجهاز للشغل."
+    },
+    {
+     "en": "The device is very small.",
+     "ar": "الجهاز صغير جدا."
+    },
+    {
+     "en": "He invented a new device.",
+     "ar": "اخترع جهاز جديد."
+    },
+    {
+     "en": "The device needs charging.",
+     "ar": "الجهاز محتاج شحن."
+    },
+    {
+     "en": "She turned off the device.",
+     "ar": "طفت الجهاز."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000331",
+   "sentences": [
+    {
+     "en": "The machine is broken.",
+     "ar": "الماكينة بايظة."
+    },
+    {
+     "en": "She uses the washing machine.",
+     "ar": "بتستخدم الغسالة."
+    },
+    {
+     "en": "The machine makes a loud noise.",
+     "ar": "الماكينة بتعمل صوت عالي."
+    },
+    {
+     "en": "He fixed the machine.",
+     "ar": "صلح الماكينة."
+    },
+    {
+     "en": "The machine is very old.",
+     "ar": "الماكينة قديمة جدا."
+    },
+    {
+     "en": "She operates the machine.",
+     "ar": "بتشغل الماكينة."
+    },
+    {
+     "en": "The machine stopped working.",
+     "ar": "الماكينة وقفت عن الشغل."
+    },
+    {
+     "en": "He bought a new machine.",
+     "ar": "اشترى ماكينة جديدة."
+    },
+    {
+     "en": "The machine is easy to use.",
+     "ar": "الماكينة سهلة الاستخدام."
+    },
+    {
+     "en": "She cleaned the machine.",
+     "ar": "نضفت الماكينة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000332",
+   "sentences": [
+    {
+     "en": "The robot can talk.",
+     "ar": "الروبوت بيتكلم."
+    },
+    {
+     "en": "She built a robot.",
+     "ar": "بنت روبوت."
+    },
+    {
+     "en": "The robot cleans the house.",
+     "ar": "الروبوت بينضف البيت."
+    },
+    {
+     "en": "He programmed the robot.",
+     "ar": "برمج الروبوت."
+    },
+    {
+     "en": "The robot is very smart.",
+     "ar": "الروبوت ذكي جدا."
+    },
+    {
+     "en": "They use robots in the factory.",
+     "ar": "بيستخدموا روبوتات في المصنع."
+    },
+    {
+     "en": "The robot helped the doctor.",
+     "ar": "الروبوت ساعد الدكتور."
+    },
+    {
+     "en": "She is afraid of robots.",
+     "ar": "خايفة من الروبوتات."
+    },
+    {
+     "en": "The robot can learn.",
+     "ar": "الروبوت بيتعلم."
+    },
+    {
+     "en": "He watched a movie about robots.",
+     "ar": "اتفرج على فيلم عن الروبوتات."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000333",
+   "sentences": [
+    {
+     "en": "She installed new software.",
+     "ar": "نزلت سوفتوير جديد."
+    },
+    {
+     "en": "The software is easy to use.",
+     "ar": "السوفتوير سهل الاستخدام."
+    },
+    {
+     "en": "He developed the software.",
+     "ar": "طور السوفتوير."
+    },
+    {
+     "en": "The software needs an update.",
+     "ar": "السوفتوير محتاج تحديث."
+    },
+    {
+     "en": "She works in software development.",
+     "ar": "بتشتغل في تطوير البرمجيات."
+    },
+    {
+     "en": "The software crashed.",
+     "ar": "السوفتوير وقف."
+    },
+    {
+     "en": "He uses the software for work.",
+     "ar": "بيستخدم السوفتوير للشغل."
+    },
+    {
+     "en": "The software is free.",
+     "ar": "السوفتوير مجاني."
+    },
+    {
+     "en": "She learned to use the software.",
+     "ar": "اتعلمت تستخدم السوفتوير."
+    },
+    {
+     "en": "The software protects the computer.",
+     "ar": "السوفتوير بيحمي الكمبيوتر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000334",
+   "sentences": [
+    {
+     "en": "She downloaded the app.",
+     "ar": "نزلت التطبيق."
+    },
+    {
+     "en": "The app is very useful.",
+     "ar": "التطبيق مفيد جدا."
+    },
+    {
+     "en": "He uses the app every day.",
+     "ar": "بيستخدم التطبيق كل يوم."
+    },
+    {
+     "en": "The app is free.",
+     "ar": "التطبيق مجاني."
+    },
+    {
+     "en": "She developed a new app.",
+     "ar": "طورت تطبيق جديد."
+    },
+    {
+     "en": "The app helps you learn.",
+     "ar": "التطبيق بيساعدك تتعلم."
+    },
+    {
+     "en": "He deleted the app.",
+     "ar": "مسح التطبيق."
+    },
+    {
+     "en": "The app has a good design.",
+     "ar": "التطبيق عنده تصميم كويس."
+    },
+    {
+     "en": "She recommended the app.",
+     "ar": "رشحت التطبيق."
+    },
+    {
+     "en": "The app is popular.",
+     "ar": "التطبيق مشهور."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000335",
+   "sentences": [
+    {
+     "en": "She visited the website.",
+     "ar": "زارت الموقع."
+    },
+    {
+     "en": "The website is easy to use.",
+     "ar": "الموقع سهل الاستخدام."
+    },
+    {
+     "en": "He built a website for his business.",
+     "ar": "بنى موقع لبيزنسه."
+    },
+    {
+     "en": "The website has a lot of information.",
+     "ar": "الموقع فيه معلومات كتير."
+    },
+    {
+     "en": "She ordered from the website.",
+     "ar": "طلبت من الموقع."
+    },
+    {
+     "en": "The website is down.",
+     "ar": "الموقع واقع."
+    },
+    {
+     "en": "He found the answer on the website.",
+     "ar": "لقى الإجابة على الموقع."
+    },
+    {
+     "en": "The website is updated daily.",
+     "ar": "الموقع بيتحدث يوميا."
+    },
+    {
+     "en": "She designed the website.",
+     "ar": "صممت الموقع."
+    },
+    {
+     "en": "The website is very popular.",
+     "ar": "الموقع مشهور جدا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000336",
+   "sentences": [
+    {
+     "en": "She forgot her password.",
+     "ar": "نسيت كلمة السر بتاعتها."
+    },
+    {
+     "en": "He changed his password.",
+     "ar": "غير كلمة السر بتاعته."
+    },
+    {
+     "en": "The password is too short.",
+     "ar": "كلمة السر قصيرة أوي."
+    },
+    {
+     "en": "She wrote down the password.",
+     "ar": "كتبت كلمة السر."
+    },
+    {
+     "en": "He entered the wrong password.",
+     "ar": "دخل كلمة سر غلط."
+    },
+    {
+     "en": "The password protects the account.",
+     "ar": "كلمة السر بتحمي الحساب."
+    },
+    {
+     "en": "She has a strong password.",
+     "ar": "عندها كلمة سر قوية."
+    },
+    {
+     "en": "He shared his password by mistake.",
+     "ar": "شارك كلمة السر بالغلط."
+    },
+    {
+     "en": "The password expired.",
+     "ar": "كلمة السر خلصت."
+    },
+    {
+     "en": "She reset her password.",
+     "ar": "عملت إعادة تعيين لكلمة السر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000337",
+   "sentences": [
+    {
+     "en": "The data is stored safely.",
+     "ar": "البيانات متخزنة بأمان."
+    },
+    {
+     "en": "She analysed the data.",
+     "ar": "حللت البيانات."
+    },
+    {
+     "en": "The data shows a clear trend.",
+     "ar": "البيانات بتوضح اتجاه واضح."
+    },
+    {
+     "en": "He collected the data.",
+     "ar": "جمع البيانات."
+    },
+    {
+     "en": "The data is important.",
+     "ar": "البيانات مهمة."
+    },
+    {
+     "en": "She entered the data into the computer.",
+     "ar": "دخلت البيانات في الكمبيوتر."
+    },
+    {
+     "en": "The data was lost.",
+     "ar": "البيانات اتفقدت."
+    },
+    {
+     "en": "He protected the data.",
+     "ar": "حما البيانات."
+    },
+    {
+     "en": "The data is accurate.",
+     "ar": "البيانات دقيقة."
+    },
+    {
+     "en": "She shared the data with the team.",
+     "ar": "شاركت البيانات مع الفريق."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000338",
+   "sentences": [
+    {
+     "en": "The database contains all the information.",
+     "ar": "قاعدة البيانات فيها كل المعلومات."
+    },
+    {
+     "en": "She searched the database.",
+     "ar": "دورت في قاعدة البيانات."
+    },
+    {
+     "en": "He updated the database.",
+     "ar": "حدث قاعدة البيانات."
+    },
+    {
+     "en": "The database is very large.",
+     "ar": "قاعدة البيانات كبيرة جدا."
+    },
+    {
+     "en": "She built the database.",
+     "ar": "بنت قاعدة البيانات."
+    },
+    {
+     "en": "The database crashed.",
+     "ar": "قاعدة البيانات وقفت."
+    },
+    {
+     "en": "He manages the database.",
+     "ar": "بيدير قاعدة البيانات."
+    },
+    {
+     "en": "The database stores customer details.",
+     "ar": "قاعدة البيانات بتخزن تفاصيل العملاء."
+    },
+    {
+     "en": "She backed up the database.",
+     "ar": "عملت نسخة احتياطية لقاعدة البيانات."
+    },
+    {
+     "en": "The database is secure.",
+     "ar": "قاعدة البيانات آمنة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000339",
+   "sentences": [
+    {
+     "en": "She values her privacy.",
+     "ar": "بتقدر خصوصيتها."
+    },
+    {
+     "en": "The app respects your privacy.",
+     "ar": "التطبيق بيحترم خصوصيتك."
+    },
+    {
+     "en": "He invaded her privacy.",
+     "ar": "انتهك خصوصيتها."
+    },
+    {
+     "en": "Privacy is important online.",
+     "ar": "الخصوصية مهمة أونلاين."
+    },
+    {
+     "en": "She closed the door for privacy.",
+     "ar": "قفلت الباب عشان الخصوصية."
+    },
+    {
+     "en": "He protects his privacy.",
+     "ar": "بيحمي خصوصيته."
+    },
+    {
+     "en": "The law protects privacy.",
+     "ar": "القانون بيحمي الخصوصية."
+    },
+    {
+     "en": "She needs some privacy.",
+     "ar": "محتاجة شوية خصوصية."
+    },
+    {
+     "en": "The camera invaded their privacy.",
+     "ar": "الكاميرا انتهكت خصوصيتهم."
+    },
+    {
+     "en": "He is careful about his privacy.",
+     "ar": "حذر في خصوصيته."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000340",
+   "sentences": [
+    {
+     "en": "Security is very important.",
+     "ar": "الأمان مهم جدا."
+    },
+    {
+     "en": "The building has good security.",
+     "ar": "المبنى عنده أمان كويس."
+    },
+    {
+     "en": "She works in security.",
+     "ar": "بتشتغل في الأمن."
+    },
+    {
+     "en": "He checked the security cameras.",
+     "ar": "اتأكد من كاميرات المراقبة."
+    },
+    {
+     "en": "The security guard stopped him.",
+     "ar": "رجل الأمن وقفه."
+    },
+    {
+     "en": "They improved the security system.",
+     "ar": "حسنوا نظام الأمان."
+    },
+    {
+     "en": "She feels a sense of security.",
+     "ar": "بتحس بإحساس الأمان."
+    },
+    {
+     "en": "The security is tight at the airport.",
+     "ar": "الأمن مشدد في المطار."
+    },
+    {
+     "en": "He is responsible for security.",
+     "ar": "هو مسئول عن الأمن."
+    },
+    {
+     "en": "The company invested in security.",
+     "ar": "الشركة استثمرت في الأمان."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000341",
+   "sentences": [
+    {
+     "en": "The hacker hacked the system.",
+     "ar": "الهاكر اخترق النظام."
+    },
+    {
+     "en": "She learned how to hack.",
+     "ar": "اتعلمت إزاي تخترق."
+    },
+    {
+     "en": "He hacked into the account.",
+     "ar": "اخترق الحساب."
+    },
+    {
+     "en": "They hacked the website.",
+     "ar": "اخترقوا الموقع."
+    },
+    {
+     "en": "The company was hacked.",
+     "ar": "الشركة اتخترقت."
+    },
+    {
+     "en": "He hacked the password.",
+     "ar": "اخترق كلمة السر."
+    },
+    {
+     "en": "She reported the hack.",
+     "ar": "بلغت عن الاختراق."
+    },
+    {
+     "en": "They tried to hack the server.",
+     "ar": "حاولوا يخترقوا السيرفر."
+    },
+    {
+     "en": "He was accused of hacking.",
+     "ar": "اتهم بالاختراق."
+    },
+    {
+     "en": "The bank was hacked last week.",
+     "ar": "البنك اتخترق الأسبوع اللي فات."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000342",
+   "sentences": [
+    {
+     "en": "She downloaded the file.",
+     "ar": "نزلت الملف."
+    },
+    {
+     "en": "He downloaded the app.",
+     "ar": "نزل التطبيق."
+    },
+    {
+     "en": "The download is complete.",
+     "ar": "التنزيل خلص."
+    },
+    {
+     "en": "She downloaded the song.",
+     "ar": "نزلت الأغنية."
+    },
+    {
+     "en": "He downloaded the movie.",
+     "ar": "نزل الفيلم."
+    },
+    {
+     "en": "The download speed is slow.",
+     "ar": "سرعة التنزيل بطيئة."
+    },
+    {
+     "en": "She downloaded the photos.",
+     "ar": "نزلت الصور."
+    },
+    {
+     "en": "He downloaded the document.",
+     "ar": "نزل المستند."
+    },
+    {
+     "en": "The download failed.",
+     "ar": "التنزيل فشل."
+    },
+    {
+     "en": "She downloaded the game.",
+     "ar": "نزلت اللعبة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000343",
+   "sentences": [
+    {
+     "en": "She uploaded the photo.",
+     "ar": "رفعت الصورة."
+    },
+    {
+     "en": "He uploaded the video to the website.",
+     "ar": "رفع الفيديو على الموقع."
+    },
+    {
+     "en": "The upload is complete.",
+     "ar": "الرفع خلص."
+    },
+    {
+     "en": "She uploaded her CV.",
+     "ar": "رفعت السي في بتاعها."
+    },
+    {
+     "en": "He uploaded the document.",
+     "ar": "رفع المستند."
+    },
+    {
+     "en": "The upload speed is fast.",
+     "ar": "سرعة الرفع سريعة."
+    },
+    {
+     "en": "She uploaded the pictures to the cloud.",
+     "ar": "رفعت الصور على الكلاود."
+    },
+    {
+     "en": "He uploaded the file by mistake.",
+     "ar": "رفع الملف بالغلط."
+    },
+    {
+     "en": "The upload failed.",
+     "ar": "الرفع فشل."
+    },
+    {
+     "en": "She uploaded the assignment.",
+     "ar": "رفعت الواجب."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000344",
+   "sentences": [
+    {
+     "en": "She subscribed to the channel.",
+     "ar": "اشتركت في القناة."
+    },
+    {
+     "en": "He subscribes to the newsletter.",
+     "ar": "بيشترك في النشرة البريدية."
+    },
+    {
+     "en": "They subscribed to the service.",
+     "ar": "اشتركوا في الخدمة."
+    },
+    {
+     "en": "She subscribed to the magazine.",
+     "ar": "اشتركت في المجلة."
+    },
+    {
+     "en": "He subscribed to the gym.",
+     "ar": "اشترك في الجيم."
+    },
+    {
+     "en": "Many people subscribe to the channel.",
+     "ar": "ناس كتير بتشترك في القناة."
+    },
+    {
+     "en": "She subscribed to the online course.",
+     "ar": "اشتركت في الكورس الأونلاين."
+    },
+    {
+     "en": "He subscribed to the streaming service.",
+     "ar": "اشترك في خدمة البث."
+    },
+    {
+     "en": "They subscribed to the internet package.",
+     "ar": "اشتركوا في باقة الإنترنت."
+    },
+    {
+     "en": "She subscribed to the podcast.",
+     "ar": "اشتركت في البودكاست."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000345",
+   "sentences": [
+    {
+     "en": "She searched for her keys.",
+     "ar": "دورت على مفاتيحها."
+    },
+    {
+     "en": "He searched the internet for information.",
+     "ar": "دوّر على النت عن معلومات."
+    },
+    {
+     "en": "They searched the house.",
+     "ar": "فتشوا البيت."
+    },
+    {
+     "en": "She searched for a new job.",
+     "ar": "بتدور على شغل جديد."
+    },
+    {
+     "en": "He searched his pockets.",
+     "ar": "دوّر في جيوبه."
+    },
+    {
+     "en": "The police searched the area.",
+     "ar": "الشرطة فتشت المنطقة."
+    },
+    {
+     "en": "She searched for the word in the dictionary.",
+     "ar": "دورت على الكلمة في القاموس."
+    },
+    {
+     "en": "He searched for his phone everywhere.",
+     "ar": "دوّر على موبايله في كل حتة."
+    },
+    {
+     "en": "They searched for a solution.",
+     "ar": "دوّروا على حل."
+    },
+    {
+     "en": "He did a quick search online.",
+     "ar": "عمل بحث سريع أونلاين."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000346",
+   "sentences": [
+    {
+     "en": "She posted the photo on social media.",
+     "ar": "نشرت الصورة على السوشيال ميديا."
+    },
+    {
+     "en": "He posted a comment.",
+     "ar": "نشر تعليق."
+    },
+    {
+     "en": "They posted the letter yesterday.",
+     "ar": "بعتوا الخطاب بالبريد مبارح."
+    },
+    {
+     "en": "She posted the package.",
+     "ar": "بعتت الطرد بالبريد."
+    },
+    {
+     "en": "He posted the news on the group.",
+     "ar": "نشر الخبر على الجروب."
+    },
+    {
+     "en": "She posted a video online.",
+     "ar": "نشرت فيديو أونلاين."
+    },
+    {
+     "en": "He posted the update.",
+     "ar": "نشر التحديث."
+    },
+    {
+     "en": "They posted the notice on the board.",
+     "ar": "لزقوا الإعلان على اللوحة."
+    },
+    {
+     "en": "She posted her thoughts on the blog.",
+     "ar": "نشرت أفكارها على المدونة."
+    },
+    {
+     "en": "He posted the job advertisement.",
+     "ar": "نشر إعلان الوظيفة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000347",
+   "sentences": [
+    {
+     "en": "She has many followers on social media.",
+     "ar": "عندها متابعين كتير على السوشيال ميديا."
+    },
+    {
+     "en": "He gained a new follower.",
+     "ar": "كسب متابع جديد."
+    },
+    {
+     "en": "The singer has millions of followers.",
+     "ar": "المطرب عنده ملايين المتابعين."
+    },
+    {
+     "en": "She thanked her followers.",
+     "ar": "شكرت متابعيها."
+    },
+    {
+     "en": "He lost some followers.",
+     "ar": "خسر شوية متابعين."
+    },
+    {
+     "en": "The influencer has loyal followers.",
+     "ar": "المؤثر عنده متابعين أوفياء."
+    },
+    {
+     "en": "She interacts with her followers.",
+     "ar": "بتتفاعل مع متابعيها."
+    },
+    {
+     "en": "He has a small number of followers.",
+     "ar": "عنده عدد صغير من المتابعين."
+    },
+    {
+     "en": "The followers loved the new post.",
+     "ar": "المتابعين حبوا البوست الجديد."
+    },
+    {
+     "en": "She gained followers quickly.",
+     "ar": "كسبت متابعين بسرعة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000348",
+   "sentences": [
+    {
+     "en": "She is a famous influencer.",
+     "ar": "هي مؤثرة مشهورة."
+    },
+    {
+     "en": "The influencer promoted the product.",
+     "ar": "المؤثر روج للمنتج."
+    },
+    {
+     "en": "He follows an influencer on social media.",
+     "ar": "بيتابع مؤثر على السوشيال ميديا."
+    },
+    {
+     "en": "She became an influencer quickly.",
+     "ar": "بقت مؤثرة بسرعة."
+    },
+    {
+     "en": "The influencer has a lot of followers.",
+     "ar": "المؤثر عنده متابعين كتير."
+    },
+    {
+     "en": "He works as an influencer.",
+     "ar": "بيشتغل كمؤثر."
+    },
+    {
+     "en": "The influencer shared a new video.",
+     "ar": "المؤثر نشر فيديو جديد."
+    },
+    {
+     "en": "She trusts the influencer's opinion.",
+     "ar": "بتثق في رأي المؤثر."
+    },
+    {
+     "en": "The influencer lives in Cairo.",
+     "ar": "المؤثر عايش في القاهرة."
+    },
+    {
+     "en": "He wants to be an influencer.",
+     "ar": "عايز يبقى مؤثر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000349",
+   "sentences": [
+    {
+     "en": "The advertisement was very funny.",
+     "ar": "الإعلان كان مضحك جدا."
+    },
+    {
+     "en": "She saw the advertisement on TV.",
+     "ar": "شافت الإعلان على التلفزيون."
+    },
+    {
+     "en": "He created an advertisement for the product.",
+     "ar": "عمل إعلان للمنتج."
+    },
+    {
+     "en": "The advertisement attracted many customers.",
+     "ar": "الإعلان جذب عملاء كتير."
+    },
+    {
+     "en": "She is in the advertisement.",
+     "ar": "هي في الإعلان."
+    },
+    {
+     "en": "The advertisement was banned.",
+     "ar": "الإعلان اتمنع."
+    },
+    {
+     "en": "He watched the advertisement online.",
+     "ar": "اتفرج على الإعلان أونلاين."
+    },
+    {
+     "en": "The advertisement is misleading.",
+     "ar": "الإعلان مضلل."
+    },
+    {
+     "en": "The advertisement was very creative.",
+     "ar": "الإعلان كان مبدع جدا."
+    },
+    {
+     "en": "The advertisement cost a lot of money.",
+     "ar": "الإعلان كلف فلوس كتير."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000350",
+   "sentences": [
+    {
+     "en": "The match was broadcast live.",
+     "ar": "الماتش اتذاع لايف."
+    },
+    {
+     "en": "She broadcasts the news every night.",
+     "ar": "بتذيع الأخبار كل ليلة."
+    },
+    {
+     "en": "The radio station broadcasts music.",
+     "ar": "إذاعة الراديو بتذيع مزيكا."
+    },
+    {
+     "en": "He watched the broadcast.",
+     "ar": "اتفرج على البث."
+    },
+    {
+     "en": "The event was broadcast on TV.",
+     "ar": "الفعالية اتبثت على التلفزيون."
+    },
+    {
+     "en": "She broadcast the interview.",
+     "ar": "بثت المقابلة."
+    },
+    {
+     "en": "The program is broadcast weekly.",
+     "ar": "البرنامج بيتبث أسبوعيا."
+    },
+    {
+     "en": "He listened to the broadcast.",
+     "ar": "سمع البث."
+    },
+    {
+     "en": "The station broadcasts in many languages.",
+     "ar": "المحطة بتذيع بلغات كتير."
+    },
+    {
+     "en": "The broadcast reached millions.",
+     "ar": "البث وصل لملايين."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000351",
+   "sentences": [
+    {
+     "en": "She watches the programme every week.",
+     "ar": "بتتفرج على البرنامج كل أسبوع."
+    },
+    {
+     "en": "The programme is very interesting.",
+     "ar": "البرنامج مثير جدا."
+    },
+    {
+     "en": "He produced the programme.",
+     "ar": "أنتج البرنامج."
+    },
+    {
+     "en": "The programme starts at eight.",
+     "ar": "البرنامج بيبدأ الساعة تمانية."
+    },
+    {
+     "en": "She is on a fitness programme.",
+     "ar": "هي على برنامج لياقة."
+    },
+    {
+     "en": "The programme was cancelled.",
+     "ar": "البرنامج اتلغى."
+    },
+    {
+     "en": "He follows the programme strictly.",
+     "ar": "بيتبع البرنامج بصرامة."
+    },
+    {
+     "en": "The programme is educational.",
+     "ar": "البرنامج تعليمي."
+    },
+    {
+     "en": "She recorded the programme.",
+     "ar": "سجلت البرنامج."
+    },
+    {
+     "en": "The programme is broadcast live.",
+     "ar": "البرنامج بيتبث لايف."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000352",
+   "sentences": [
+    {
+     "en": "She changed the channel.",
+     "ar": "غيرت القناة."
+    },
+    {
+     "en": "The channel shows movies.",
+     "ar": "القناة بتعرض أفلام."
+    },
+    {
+     "en": "He has a YouTube channel.",
+     "ar": "عنده قناة يوتيوب."
+    },
+    {
+     "en": "The channel is very popular.",
+     "ar": "القناة مشهورة جدا."
+    },
+    {
+     "en": "She watches the news channel.",
+     "ar": "بتتفرج على قناة الأخبار."
+    },
+    {
+     "en": "The channel broadcasts in Arabic.",
+     "ar": "القناة بتذيع بالعربي."
+    },
+    {
+     "en": "He subscribed to the channel.",
+     "ar": "اشترك في القناة."
+    },
+    {
+     "en": "The channel is free to watch.",
+     "ar": "القناة مجانية للمشاهدة."
+    },
+    {
+     "en": "She has her own channel.",
+     "ar": "عندها قناتها الخاصة."
+    },
+    {
+     "en": "The channel shows educational content.",
+     "ar": "القناة بتعرض محتوى تعليمي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000353",
+   "sentences": [
+    {
+     "en": "The audience clapped loudly.",
+     "ar": "الجمهور صفق بصوت عالي."
+    },
+    {
+     "en": "She spoke to the audience.",
+     "ar": "كلمت الجمهور."
+    },
+    {
+     "en": "The audience loved the show.",
+     "ar": "الجمهور حب العرض."
+    },
+    {
+     "en": "He has a large audience.",
+     "ar": "عنده جمهور كبير."
+    },
+    {
+     "en": "The audience was silent.",
+     "ar": "الجمهور كان ساكت."
+    },
+    {
+     "en": "She entertained the audience.",
+     "ar": "سلّت الجمهور."
+    },
+    {
+     "en": "The audience asked questions.",
+     "ar": "الجمهور سأل أسئلة."
+    },
+    {
+     "en": "He is popular with the audience.",
+     "ar": "محبوب عند الجمهور."
+    },
+    {
+     "en": "The audience laughed at the joke.",
+     "ar": "الجمهور ضحك على النكتة."
+    },
+    {
+     "en": "She addressed the audience.",
+     "ar": "خاطبت الجمهور."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000354",
+   "sentences": [
+    {
+     "en": "She reads the newspaper every morning.",
+     "ar": "بتقرا الجورنال كل صبح."
+    },
+    {
+     "en": "The newspaper reported the news.",
+     "ar": "الجورنال نشر الخبر."
+    },
+    {
+     "en": "He works for a newspaper.",
+     "ar": "بيشتغل في جورنال."
+    },
+    {
+     "en": "The newspaper is very old.",
+     "ar": "الجورنال قديم جدا."
+    },
+    {
+     "en": "She bought the newspaper.",
+     "ar": "اشترت الجورنال."
+    },
+    {
+     "en": "The newspaper has a sports section.",
+     "ar": "الجورنال عنده قسم رياضة."
+    },
+    {
+     "en": "He wrote for the newspaper.",
+     "ar": "كتب للجورنال."
+    },
+    {
+     "en": "The newspaper is printed daily.",
+     "ar": "الجورنال بيتطبع يوميا."
+    },
+    {
+     "en": "She found the article in the newspaper.",
+     "ar": "لقت المقال في الجورنال."
+    },
+    {
+     "en": "The newspaper is free online.",
+     "ar": "الجورنال مجاني أونلاين."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000355",
+   "sentences": [
+    {
+     "en": "She reads a fashion magazine.",
+     "ar": "بتقرا مجلة موضة."
+    },
+    {
+     "en": "The magazine is monthly.",
+     "ar": "المجلة شهرية."
+    },
+    {
+     "en": "He bought the magazine at the airport.",
+     "ar": "اشترى المجلة في المطار."
+    },
+    {
+     "en": "The magazine has beautiful photos.",
+     "ar": "المجلة فيها صور جميلة."
+    },
+    {
+     "en": "She writes for a magazine.",
+     "ar": "بتكتب لمجلة."
+    },
+    {
+     "en": "The magazine is about travel.",
+     "ar": "المجلة عن السفر."
+    },
+    {
+     "en": "He collects old magazines.",
+     "ar": "بيجمع مجلات قديمة."
+    },
+    {
+     "en": "The magazine is very popular.",
+     "ar": "المجلة مشهورة جدا."
+    },
+    {
+     "en": "She found the recipe in a magazine.",
+     "ar": "لقت الوصفة في مجلة."
+    },
+    {
+     "en": "The magazine is available online.",
+     "ar": "المجلة متاحة أونلاين."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000356",
+   "sentences": [
+    {
+     "en": "She wrote an article about health.",
+     "ar": "كتبت مقال عن الصحة."
+    },
+    {
+     "en": "He read the article in the newspaper.",
+     "ar": "قرا المقال في الجورنال."
+    },
+    {
+     "en": "The article is very long.",
+     "ar": "المقال طويل جدا."
+    },
+    {
+     "en": "She published an article online.",
+     "ar": "نشرت مقال أونلاين."
+    },
+    {
+     "en": "The article discusses the environment.",
+     "ar": "المقال بيناقش البيئة."
+    },
+    {
+     "en": "He found the article interesting.",
+     "ar": "لقى المقال مثير."
+    },
+    {
+     "en": "The article was written by a journalist.",
+     "ar": "المقال اتكتب بصحفي."
+    },
+    {
+     "en": "She shared the article with her friends.",
+     "ar": "شاركت المقال مع أصحابها."
+    },
+    {
+     "en": "The article is about technology.",
+     "ar": "المقال عن التكنولوجيا."
+    },
+    {
+     "en": "He cited the article in his research.",
+     "ar": "استشهد بالمقال في بحثه."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000357",
+   "sentences": [
+    {
+     "en": "She wrote a report about the project.",
+     "ar": "كتبت تقرير عن المشروع."
+    },
+    {
+     "en": "He read the report carefully.",
+     "ar": "قرا التقرير بعناية."
+    },
+    {
+     "en": "The report was published yesterday.",
+     "ar": "التقرير اتنشر مبارح."
+    },
+    {
+     "en": "She submitted the report.",
+     "ar": "سلمت التقرير."
+    },
+    {
+     "en": "The report shows a decline in sales.",
+     "ar": "التقرير بيوضح انخفاض في المبيعات."
+    },
+    {
+     "en": "He is working on the report.",
+     "ar": "بيشتغل على التقرير."
+    },
+    {
+     "en": "The report is confidential.",
+     "ar": "التقرير سري."
+    },
+    {
+     "en": "She presented the report to the manager.",
+     "ar": "قدمت التقرير للمدير."
+    },
+    {
+     "en": "The report contains important information.",
+     "ar": "التقرير فيه معلومات مهمة."
+    },
+    {
+     "en": "He summarized the report.",
+     "ar": "لخص التقرير."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000358",
+   "sentences": [
+    {
+     "en": "They conducted a survey about health.",
+     "ar": "عملوا استطلاع عن الصحة."
+    },
+    {
+     "en": "The survey included a thousand people.",
+     "ar": "الاستطلاع شمل ألف شخص."
+    },
+    {
+     "en": "She answered the survey.",
+     "ar": "جاوبت على الاستطلاع."
+    },
+    {
+     "en": "The survey shows interesting results.",
+     "ar": "الاستطلاع بيوضح نتايج مثيرة."
+    },
+    {
+     "en": "He designed the survey.",
+     "ar": "صمم الاستطلاع."
+    },
+    {
+     "en": "The survey was about education.",
+     "ar": "الاستطلاع كان عن التعليم."
+    },
+    {
+     "en": "They analysed the survey results.",
+     "ar": "حللوا نتايج الاستطلاع."
+    },
+    {
+     "en": "She participated in the survey.",
+     "ar": "شاركت في الاستطلاع."
+    },
+    {
+     "en": "The survey was conducted online.",
+     "ar": "الاستطلاع اتعمل أونلاين."
+    },
+    {
+     "en": "He wrote a report about the survey.",
+     "ar": "كتب تقرير عن الاستطلاع."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000359",
+   "sentences": [
+    {
+     "en": "They advertised the product on TV.",
+     "ar": "أعلنوا عن المنتج على التلفزيون."
+    },
+    {
+     "en": "She advertised her business online.",
+     "ar": "أعلنت عن بيزنسها أونلاين."
+    },
+    {
+     "en": "The company advertised the new phone.",
+     "ar": "الشركة أعلنت عن الموبايل الجديد."
+    },
+    {
+     "en": "He advertised the job in the newspaper.",
+     "ar": "أعلن عن الوظيفة في الجورنال."
+    },
+    {
+     "en": "They advertised the event on social media.",
+     "ar": "أعلنوا عن الفعالية على السوشيال ميديا."
+    },
+    {
+     "en": "She advertised the course.",
+     "ar": "أعلنت عن الكورس."
+    },
+    {
+     "en": "The shop advertised a sale.",
+     "ar": "المحل أعلن عن تخفيضات."
+    },
+    {
+     "en": "He advertised his services.",
+     "ar": "أعلن عن خدماته."
+    },
+    {
+     "en": "They advertised the concert.",
+     "ar": "أعلنوا عن الحفلة."
+    },
+    {
+     "en": "She advertised the apartment for rent.",
+     "ar": "أعلنت عن الشقة للإيجار."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000360",
+   "sentences": [
+    {
+     "en": "She published her first book.",
+     "ar": "نشرت أول كتاب ليها."
+    },
+    {
+     "en": "The article was published yesterday.",
+     "ar": "المقال اتنشر مبارح."
+    },
+    {
+     "en": "He published a research paper.",
+     "ar": "نشر ورقة بحثية."
+    },
+    {
+     "en": "The magazine publishes monthly.",
+     "ar": "المجلة بتنشر شهريا."
+    },
+    {
+     "en": "She published her photos online.",
+     "ar": "نشرت صورها أونلاين."
+    },
+    {
+     "en": "He published a poem.",
+     "ar": "نشر قصيدة."
+    },
+    {
+     "en": "The company published the report.",
+     "ar": "الشركة نشرت التقرير."
+    },
+    {
+     "en": "She published her thesis.",
+     "ar": "نشرت رسالتها."
+    },
+    {
+     "en": "He published the news.",
+     "ar": "نشر الخبر."
+    },
+    {
+     "en": "The book was published last year.",
+     "ar": "الكتاب اتنشر السنة اللي فاتت."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000361",
+   "sentences": [
+    {
+     "en": "The editor checked the article.",
+     "ar": "المحرر راجع المقال."
+    },
+    {
+     "en": "She is the editor of the magazine.",
+     "ar": "هي محررة المجلة."
+    },
+    {
+     "en": "He works as an editor.",
+     "ar": "بيشتغل كمحرر."
+    },
+    {
+     "en": "The editor made some changes.",
+     "ar": "المحرر عمل شوية تغييرات."
+    },
+    {
+     "en": "She is a good editor.",
+     "ar": "هي محررة كويسة."
+    },
+    {
+     "en": "The editor approved the story.",
+     "ar": "المحرر وافق على الحكاية."
+    },
+    {
+     "en": "He sent the article to the editor.",
+     "ar": "بعت المقال للمحرر."
+    },
+    {
+     "en": "The editor corrected the mistakes.",
+     "ar": "المحرر صحح الأخطاء."
+    },
+    {
+     "en": "She is the chief editor.",
+     "ar": "هي رئيسة التحرير."
+    },
+    {
+     "en": "The editor liked the idea.",
+     "ar": "المحرر عجبته الفكرة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000362",
+   "sentences": [
+    {
+     "en": "She is a famous journalist.",
+     "ar": "هي صحفية مشهورة."
+    },
+    {
+     "en": "The journalist interviewed the minister.",
+     "ar": "الصحفي عمل مقابلة مع الوزير."
+    },
+    {
+     "en": "He works as a journalist.",
+     "ar": "بيشتغل كصحفي."
+    },
+    {
+     "en": "The journalist wrote an article.",
+     "ar": "الصحفي كتب مقال."
+    },
+    {
+     "en": "She wants to be a journalist.",
+     "ar": "عايزة تبقى صحفية."
+    },
+    {
+     "en": "The journalist reported the news.",
+     "ar": "الصحفي نقل الخبر."
+    },
+    {
+     "en": "He is a freelance journalist.",
+     "ar": "هو صحفي حر."
+    },
+    {
+     "en": "The journalist asked many questions.",
+     "ar": "الصحفي سأل أسئلة كتير."
+    },
+    {
+     "en": "She is a brave journalist.",
+     "ar": "هي صحفية شجاعة."
+    },
+    {
+     "en": "The journalist covered the event.",
+     "ar": "الصحفي غطى الفعالية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000363",
+   "sentences": [
+    {
+     "en": "The source of the news is reliable.",
+     "ar": "مصدر الخبر موثوق."
+    },
+    {
+     "en": "She cited her sources.",
+     "ar": "استشهدت بمصادرها."
+    },
+    {
+     "en": "He is a reliable source.",
+     "ar": "هو مصدر موثوق."
+    },
+    {
+     "en": "The source of the river is in the mountains.",
+     "ar": "مصدر النهر في الجبال."
+    },
+    {
+     "en": "She found the source of the problem.",
+     "ar": "لقت مصدر المشكلة."
+    },
+    {
+     "en": "The source is anonymous.",
+     "ar": "المصدر مجهول."
+    },
+    {
+     "en": "He checked the source.",
+     "ar": "اتأكد من المصدر."
+    },
+    {
+     "en": "The source of income is tourism.",
+     "ar": "مصدر الدخل هو السياحة."
+    },
+    {
+     "en": "She is a source of inspiration.",
+     "ar": "هي مصدر إلهام."
+    },
+    {
+     "en": "The source of the information is unknown.",
+     "ar": "مصدر المعلومات مجهول."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000364",
+   "sentences": [
+    {
+     "en": "The news is fake.",
+     "ar": "الخبر مزيف."
+    },
+    {
+     "en": "She bought a fake bag.",
+     "ar": "اشترت شنطة مزيفة."
+    },
+    {
+     "en": "He has a fake ID.",
+     "ar": "عنده بطاقة مزيفة."
+    },
+    {
+     "en": "The story is fake.",
+     "ar": "الحكاية مزيفة."
+    },
+    {
+     "en": "She has a fake smile.",
+     "ar": "عندها ابتسامة مزيفة."
+    },
+    {
+     "en": "The document is fake.",
+     "ar": "المستند مزيف."
+    },
+    {
+     "en": "He spread fake news.",
+     "ar": "نشر أخبار مزيفة."
+    },
+    {
+     "en": "The painting is fake.",
+     "ar": "اللوحة مزيفة."
+    },
+    {
+     "en": "She has fake nails.",
+     "ar": "عندها أظافر صناعية."
+    },
+    {
+     "en": "The account is fake.",
+     "ar": "الحساب مزيف."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000365",
+   "sentences": [
+    {
+     "en": "The story is true.",
+     "ar": "الحكاية حقيقية."
+    },
+    {
+     "en": "It is true that he left.",
+     "ar": "صح إنه مشي."
+    },
+    {
+     "en": "She told the true story.",
+     "ar": "حكت الحكاية الحقيقية."
+    },
+    {
+     "en": "The news is true.",
+     "ar": "الخبر حقيقي."
+    },
+    {
+     "en": "He is a true friend.",
+     "ar": "هو صاحب حقيقي."
+    },
+    {
+     "en": "The report is true.",
+     "ar": "التقرير صح."
+    },
+    {
+     "en": "She spoke the true words.",
+     "ar": "قالت الكلام الصح."
+    },
+    {
+     "en": "It is true that water boils at a hundred degrees.",
+     "ar": "صح إن المية بتغلي على مية درجة."
+    },
+    {
+     "en": "He has a true heart.",
+     "ar": "عنده قلب حقيقي."
+    },
+    {
+     "en": "The statement is true.",
+     "ar": "الكلام صح."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000366",
+   "sentences": [
+    {
+     "en": "The news is false.",
+     "ar": "الخبر مش حقيقي."
+    },
+    {
+     "en": "He gave a false name.",
+     "ar": "ادى اسم مزيف."
+    },
+    {
+     "en": "The information is false.",
+     "ar": "المعلومات غلط."
+    },
+    {
+     "en": "She made a false statement.",
+     "ar": "قالت كلام مش حقيقي."
+    },
+    {
+     "en": "The alarm was false.",
+     "ar": "الإنذار كان غلط."
+    },
+    {
+     "en": "He has false teeth.",
+     "ar": "عنده أسنان صناعية."
+    },
+    {
+     "en": "The report is false.",
+     "ar": "التقرير غلط."
+    },
+    {
+     "en": "His statement was completely false.",
+     "ar": "كلامه كان غلط تماما."
+    },
+    {
+     "en": "The story is completely false.",
+     "ar": "الحكاية مش حقيقية خالص."
+    },
+    {
+     "en": "He has a false sense of security.",
+     "ar": "عنده إحساس أمان مزيف."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000367",
+   "sentences": [
+    {
+     "en": "It is a fact that the earth is round.",
+     "ar": "حقيقة إن الأرض مدورة."
+    },
+    {
+     "en": "She knows the facts.",
+     "ar": "عارفة الحقايق."
+    },
+    {
+     "en": "He presented the facts.",
+     "ar": "عرض الحقايق."
+    },
+    {
+     "en": "The fact is that we need more time.",
+     "ar": "الحقيقة إننا محتاجين وقت أكتر."
+    },
+    {
+     "en": "She checked the facts.",
+     "ar": "اتأكدت من الحقايق."
+    },
+    {
+     "en": "He ignored the facts.",
+     "ar": "تجاهل الحقايق."
+    },
+    {
+     "en": "The fact remains that he lied.",
+     "ar": "الحقيقة تفضل إنه كدب."
+    },
+    {
+     "en": "She stated the facts clearly.",
+     "ar": "ذكرت الحقايق بوضوح."
+    },
+    {
+     "en": "The fact surprised everyone.",
+     "ar": "الحقيقة فاجأت الكل."
+    },
+    {
+     "en": "He accepted the fact.",
+     "ar": "قبل الحقيقة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000368",
+   "sentences": [
+    {
+     "en": "He is very opinionated.",
+     "ar": "متشبث برأيه جدا."
+    },
+    {
+     "en": "She is opinionated about politics.",
+     "ar": "متشبثة برأيها في السياسة."
+    },
+    {
+     "en": "He has an opinionated boss.",
+     "ar": "عنده مدير متشبث برأيه."
+    },
+    {
+     "en": "She is opinionated and loud.",
+     "ar": "متشبثة برأيها وصوتها عالي."
+    },
+    {
+     "en": "He is too opinionated to listen.",
+     "ar": "متشبث برأيه أوي عشان يسمع."
+    },
+    {
+     "en": "She is opinionated about food.",
+     "ar": "متشبثة برأيها في الأكل."
+    },
+    {
+     "en": "He is an opinionated writer.",
+     "ar": "هو كاتب متشبث برأيه."
+    },
+    {
+     "en": "She is opinionated but fair.",
+     "ar": "متشبثة برأيها بس عادلة."
+    },
+    {
+     "en": "He is opinionated about everything.",
+     "ar": "متشبث برأيه في كل حاجة."
+    },
+    {
+     "en": "She is opinionated about fashion.",
+     "ar": "متشبثة برأيها في الموضة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000369",
+   "sentences": [
+    {
+     "en": "The report is biased.",
+     "ar": "التقرير متحيز."
+    },
+    {
+     "en": "He is biased towards his team.",
+     "ar": "متحيز لفريقه."
+    },
+    {
+     "en": "The judge was not biased.",
+     "ar": "القاضي مكانش متحيز."
+    },
+    {
+     "en": "She is biased against him.",
+     "ar": "متحيزة ضده."
+    },
+    {
+     "en": "The news is biased.",
+     "ar": "الأخبار متحيزة."
+    },
+    {
+     "en": "He wrote a biased article.",
+     "ar": "كتب مقال متحيز."
+    },
+    {
+     "en": "She is biased in her opinion.",
+     "ar": "متحيزة في رأيها."
+    },
+    {
+     "en": "The referee was biased.",
+     "ar": "الحكم كان متحيز."
+    },
+    {
+     "en": "He is biased towards the rich.",
+     "ar": "متحيز للأغنيا."
+    },
+    {
+     "en": "The survey was biased.",
+     "ar": "الاستطلاع كان متحيز."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000370",
+   "sentences": [
+    {
+     "en": "She is very objective.",
+     "ar": "موضوعية جدا."
+    },
+    {
+     "en": "He gave an objective opinion.",
+     "ar": "ادى رأي موضوعي."
+    },
+    {
+     "en": "The report is objective.",
+     "ar": "التقرير موضوعي."
+    },
+    {
+     "en": "She tries to be objective.",
+     "ar": "بتحاول تبقى موضوعية."
+    },
+    {
+     "en": "He is an objective observer.",
+     "ar": "هو مراقب محايد."
+    },
+    {
+     "en": "The analysis is objective.",
+     "ar": "التحليل موضوعي."
+    },
+    {
+     "en": "She made an objective decision.",
+     "ar": "اخدت قرار موضوعي."
+    },
+    {
+     "en": "He is objective in his work.",
+     "ar": "موضوعي في شغله."
+    },
+    {
+     "en": "The review is objective.",
+     "ar": "التقييم موضوعي."
+    },
+    {
+     "en": "She is objective about the issue.",
+     "ar": "موضوعية في القضية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000371",
+   "sentences": [
+    {
+     "en": "She believes in hard work.",
+     "ar": "مؤمنة بالشغل الجامد."
+    },
+    {
+     "en": "He believes in himself.",
+     "ar": "مؤمن بنفسه."
+    },
+    {
+     "en": "They believe in God.",
+     "ar": "مؤمنين بالله."
+    },
+    {
+     "en": "She believes in education.",
+     "ar": "مؤمنة بالتعليم."
+    },
+    {
+     "en": "He believes in justice.",
+     "ar": "مؤمن بالعدل."
+    },
+    {
+     "en": "They believe in love.",
+     "ar": "مؤمنين بالحب."
+    },
+    {
+     "en": "She believes in the project.",
+     "ar": "مؤمنة بالمشروع."
+    },
+    {
+     "en": "He believes in his team.",
+     "ar": "مؤمن بفريقه."
+    },
+    {
+     "en": "They believe in peace.",
+     "ar": "مؤمنين بالسلام."
+    },
+    {
+     "en": "She believes in his ability.",
+     "ar": "مؤمنة بقدرته."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000372",
+   "sentences": [
+    {
+     "en": "You can rely on him.",
+     "ar": "تقدر تعتمد عليه."
+    },
+    {
+     "en": "She relies on her family.",
+     "ar": "بتعتمد على عيلتها."
+    },
+    {
+     "en": "He relies on his car.",
+     "ar": "بيعتمد على عربيته."
+    },
+    {
+     "en": "They rely on the rain for water.",
+     "ar": "بيعتمدوا على المطر للمية."
+    },
+    {
+     "en": "She relies on her memory.",
+     "ar": "بتعتمد على ذاكرتها."
+    },
+    {
+     "en": "He relies on his friends.",
+     "ar": "بيعتمد على أصحابه."
+    },
+    {
+     "en": "They rely on technology.",
+     "ar": "بيعتمدوا على التكنولوجيا."
+    },
+    {
+     "en": "She relies on her instincts.",
+     "ar": "بتعتمد على غريزتها."
+    },
+    {
+     "en": "He relies on his experience.",
+     "ar": "بيعتمد على خبرته."
+    },
+    {
+     "en": "They rely on each other.",
+     "ar": "بيعتمدوا على بعض."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000373",
+   "sentences": [
+    {
+     "en": "She looks after her grandmother.",
+     "ar": "بتعتني بجدةها."
+    },
+    {
+     "en": "He looks after the children.",
+     "ar": "بيهتم بالأطفال."
+    },
+    {
+     "en": "She looks after the garden.",
+     "ar": "بتعتني بالجنينة."
+    },
+    {
+     "en": "He looks after his health.",
+     "ar": "بيهتم بصحته."
+    },
+    {
+     "en": "She looks after the shop.",
+     "ar": "بتعتني بالمحل."
+    },
+    {
+     "en": "He looks after his parents.",
+     "ar": "بيهتم بأهله."
+    },
+    {
+     "en": "She looks after the house.",
+     "ar": "بتعتني بالبيت."
+    },
+    {
+     "en": "He looks after the animals.",
+     "ar": "بيهتم بالحيوانات."
+    },
+    {
+     "en": "She looks after her younger brother.",
+     "ar": "بتعتني بأخوها الأصغر."
+    },
+    {
+     "en": "He looks after his appearance.",
+     "ar": "بيهتم بمظهره."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000374",
+   "sentences": [
+    {
+     "en": "He gave up smoking.",
+     "ar": "بطل التدخين."
+    },
+    {
+     "en": "She never gives up.",
+     "ar": "عمرها ما بتستسلم."
+    },
+    {
+     "en": "He gave up his seat.",
+     "ar": "تنازل عن كرسيه."
+    },
+    {
+     "en": "She gave up her job.",
+     "ar": "سابت شغلها."
+    },
+    {
+     "en": "He gave up on his dream.",
+     "ar": "استسلم عن حلمه."
+    },
+    {
+     "en": "She gave up eating sugar.",
+     "ar": "بطلت تاكل سكر."
+    },
+    {
+     "en": "He gave up the fight.",
+     "ar": "استسلم في الخناقة."
+    },
+    {
+     "en": "She gave up her rights.",
+     "ar": "تنازلت عن حقوقها."
+    },
+    {
+     "en": "He gave up drinking coffee.",
+     "ar": "بطل يشرب قهوة."
+    },
+    {
+     "en": "She gave up easily.",
+     "ar": "استسلمت بسهولة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000375",
+   "sentences": [
+    {
+     "en": "He cut down on sugar.",
+     "ar": "قلل من السكر."
+    },
+    {
+     "en": "She cut down on coffee.",
+     "ar": "قللت من القهوة."
+    },
+    {
+     "en": "He cut down on spending.",
+     "ar": "قلل من الصرف."
+    },
+    {
+     "en": "She cut down on smoking.",
+     "ar": "قللت من التدخين."
+    },
+    {
+     "en": "He cut down on fast food.",
+     "ar": "قلل من الأكل السريع."
+    },
+    {
+     "en": "She cut down on screen time.",
+     "ar": "قللت من وقت الشاشة."
+    },
+    {
+     "en": "He cut down on salt.",
+     "ar": "قلل من الملح."
+    },
+    {
+     "en": "She cut down on social media.",
+     "ar": "قللت من السوشيال ميديا."
+    },
+    {
+     "en": "He cut down on alcohol.",
+     "ar": "قلل من الكحول."
+    },
+    {
+     "en": "She cut down on eating out.",
+     "ar": "قللت من الأكل بره."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000376",
+   "sentences": [
+    {
+     "en": "We ran out of milk.",
+     "ar": "اللبن خلص منا."
+    },
+    {
+     "en": "They ran out of water.",
+     "ar": "المية خلصت منهم."
+    },
+    {
+     "en": "She ran out of money.",
+     "ar": "الفلوس خلصت منها."
+    },
+    {
+     "en": "He ran out of time.",
+     "ar": "الوقت خلص منه."
+    },
+    {
+     "en": "We ran out of gas.",
+     "ar": "البنزين خلص منا."
+    },
+    {
+     "en": "They ran out of food.",
+     "ar": "الأكل خلص منهم."
+    },
+    {
+     "en": "She ran out of patience.",
+     "ar": "الصبر خلص منها."
+    },
+    {
+     "en": "He ran out of ideas.",
+     "ar": "الأفكار خلصت منه."
+    },
+    {
+     "en": "We ran out of paper.",
+     "ar": "الورق خلص منا."
+    },
+    {
+     "en": "They ran out of options.",
+     "ar": "الخيارات خلصت منهم."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000377",
+   "sentences": [
+    {
+     "en": "She deals with stress well.",
+     "ar": "بتتعامل مع التوتر كويس."
+    },
+    {
+     "en": "He deals with customers.",
+     "ar": "بيتعامل مع العملاء."
+    },
+    {
+     "en": "She deals with the problem.",
+     "ar": "بتتعامل مع المشكلة."
+    },
+    {
+     "en": "He deals with difficult people.",
+     "ar": "بيتعامل مع ناس صعبة."
+    },
+    {
+     "en": "She deals with the situation calmly.",
+     "ar": "بتتعامل مع الموقف بهدوء."
+    },
+    {
+     "en": "He deals with complaints.",
+     "ar": "بيتعامل مع الشكاوى."
+    },
+    {
+     "en": "She deals with the pressure.",
+     "ar": "بتتعامل مع الضغط."
+    },
+    {
+     "en": "He deals with the issue directly.",
+     "ar": "بيتعامل مع المشكلة مباشرة."
+    },
+    {
+     "en": "She deals with the paperwork.",
+     "ar": "بتتعامل مع الأوراق."
+    },
+    {
+     "en": "He deals with the crisis.",
+     "ar": "بيتعامل مع الأزمة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000378",
+   "sentences": [
+    {
+     "en": "Smoking leads to disease.",
+     "ar": "التدخين بيؤدي للمرض."
+    },
+    {
+     "en": "Hard work leads to success.",
+     "ar": "الشغل الجامد بيؤدي للنجاح."
+    },
+    {
+     "en": "The road leads to the city.",
+     "ar": "الطريق بيؤدي للمدينة."
+    },
+    {
+     "en": "Stress leads to health problems.",
+     "ar": "التوتر بيؤدي لمشاكل صحية."
+    },
+    {
+     "en": "The path leads to the beach.",
+     "ar": "الطريق بيؤدي للشط."
+    },
+    {
+     "en": "Bad habits lead to failure.",
+     "ar": "العادات الوحشة بتؤدي للفشل."
+    },
+    {
+     "en": "The decision led to disaster.",
+     "ar": "القرار أدى لكارثة."
+    },
+    {
+     "en": "Education leads to better jobs.",
+     "ar": "التعليم بيؤدي لشغل أحسن."
+    },
+    {
+     "en": "The mistake led to a loss.",
+     "ar": "الغلطة أدت لخسارة."
+    },
+    {
+     "en": "The discovery led to a cure.",
+     "ar": "الاكتشاف أدى لعلاج."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000379",
+   "sentences": [
+    {
+     "en": "The rain resulted in a flood.",
+     "ar": "المطر نتج عنه فيضان."
+    },
+    {
+     "en": "The mistake resulted in a loss.",
+     "ar": "الغلطة نتج عنها خسارة."
+    },
+    {
+     "en": "The change resulted in improvement.",
+     "ar": "التغيير نتج عنه تحسن."
+    },
+    {
+     "en": "The accident resulted in injuries.",
+     "ar": "الحادثة نتج عنها إصابات."
+    },
+    {
+     "en": "The policy resulted in job losses.",
+     "ar": "السياسة نتج عنها فقدان وظايف."
+    },
+    {
+     "en": "The effort resulted in success.",
+     "ar": "المجهود نتج عنه نجاح."
+    },
+    {
+     "en": "The storm resulted in damage.",
+     "ar": "العاصفة نتج عنها ضرر."
+    },
+    {
+     "en": "The decision resulted in chaos.",
+     "ar": "القرار نتج عنه فوضى."
+    },
+    {
+     "en": "The treatment resulted in recovery.",
+     "ar": "العلاج نتج عنه شفا."
+    },
+    {
+     "en": "The project resulted in new jobs.",
+     "ar": "المشروع نتج عنه وظايف جديدة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000380",
+   "sentences": [
+    {
+     "en": "She focuses on her studies.",
+     "ar": "بتركز على مذاكرتها."
+    },
+    {
+     "en": "He focuses on the positive side.",
+     "ar": "بيركز على الجانب الإيجابي."
+    },
+    {
+     "en": "She wants to focus on her studies.",
+     "ar": "عايزة تركز على دراستها."
+    },
+    {
+     "en": "She focuses on her goals.",
+     "ar": "بتركز على أهدافها."
+    },
+    {
+     "en": "He focuses on his work.",
+     "ar": "بيركز على شغله."
+    },
+    {
+     "en": "The course focuses on speaking.",
+     "ar": "الكورس بيركز على المحادثة."
+    },
+    {
+     "en": "She focuses on the details.",
+     "ar": "بتركز على التفاصيل."
+    },
+    {
+     "en": "He focuses on the solution.",
+     "ar": "بيركز على الحل."
+    },
+    {
+     "en": "The article focuses on education.",
+     "ar": "المقال بيركز على التعليم."
+    },
+    {
+     "en": "She focuses on her health.",
+     "ar": "بتركز على صحتها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000381",
+   "sentences": [
+    {
+     "en": "She took part in the competition.",
+     "ar": "شاركت في المسابقة."
+    },
+    {
+     "en": "He took part in the meeting.",
+     "ar": "شارك في الاجتماع."
+    },
+    {
+     "en": "They took part in the project.",
+     "ar": "شاركوا في المشروع."
+    },
+    {
+     "en": "She took part in the discussion.",
+     "ar": "شاركت في النقاش."
+    },
+    {
+     "en": "He took part in the race.",
+     "ar": "شارك في السباق."
+    },
+    {
+     "en": "They took part in the celebration.",
+     "ar": "شاركوا في الاحتفال."
+    },
+    {
+     "en": "She took part in the survey.",
+     "ar": "شاركت في الاستطلاع."
+    },
+    {
+     "en": "He took part in the workshop.",
+     "ar": "شارك في الورشة."
+    },
+    {
+     "en": "They took part in the protest.",
+     "ar": "شاركوا في المظاهرة."
+    },
+    {
+     "en": "She took part in the play.",
+     "ar": "شاركت في المسرحية."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000382",
+   "sentences": [
+    {
+     "en": "She got rid of the old clothes.",
+     "ar": "اتخلصت من الهدوم القديمة."
+    },
+    {
+     "en": "He got rid of the car.",
+     "ar": "اتخلص من العربية."
+    },
+    {
+     "en": "They got rid of the furniture.",
+     "ar": "اتخلصوا من الفرش."
+    },
+    {
+     "en": "She got rid of the bad habit.",
+     "ar": "اتخلصت من العادة الوحشة."
+    },
+    {
+     "en": "He got rid of the debt.",
+     "ar": "اتخلص من الدين."
+    },
+    {
+     "en": "They got rid of the waste.",
+     "ar": "اتخلصوا من المخلفات."
+    },
+    {
+     "en": "She got rid of the pain.",
+     "ar": "اتخلصت من الوجع."
+    },
+    {
+     "en": "He got rid of the old phone.",
+     "ar": "اتخلص من الموبايل القديم."
+    },
+    {
+     "en": "They got rid of the insects.",
+     "ar": "اتخلصوا من الحشرات."
+    },
+    {
+     "en": "She got rid of the stress.",
+     "ar": "اتخلصت من التوتر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000383",
+   "sentences": [
+    {
+     "en": "Please pay attention to the teacher.",
+     "ar": "لو سمحت انتبه للمدرس."
+    },
+    {
+     "en": "She pays attention to details.",
+     "ar": "بتركز على التفاصيل."
+    },
+    {
+     "en": "He didn't pay attention to the warning.",
+     "ar": "منتبهش للتحذير."
+    },
+    {
+     "en": "They pay attention to the news.",
+     "ar": "بينتبهوا للأخبار."
+    },
+    {
+     "en": "She pays attention to her health.",
+     "ar": "بتركز على صحتها."
+    },
+    {
+     "en": "He pays attention to the road.",
+     "ar": "بينتبه للطريق."
+    },
+    {
+     "en": "They pay attention to the rules.",
+     "ar": "بينتبهوا للقواعد."
+    },
+    {
+     "en": "She pays attention to her diet.",
+     "ar": "بتركز على أكلها."
+    },
+    {
+     "en": "He pays attention to the lesson.",
+     "ar": "بينتبه للدرس."
+    },
+    {
+     "en": "They pay attention to the environment.",
+     "ar": "بينتبهوا للبيئة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000384",
+   "sentences": [
+    {
+     "en": "Make sure the door is locked.",
+     "ar": "اتأكد إن الباب مقفول."
+    },
+    {
+     "en": "She made sure the gas was off.",
+     "ar": "اتأكدت إن الغاز مقفول."
+    },
+    {
+     "en": "He made sure he had his keys.",
+     "ar": "اتأكد إن معاه مفاتيحه."
+    },
+    {
+     "en": "They made sure the children were safe.",
+     "ar": "اتأكدوا إن الأطفال بأمان."
+    },
+    {
+     "en": "She made sure the food was fresh.",
+     "ar": "اتأكدت إن الأكل طازة."
+    },
+    {
+     "en": "He made sure he was on time.",
+     "ar": "اتأكد إنه في المعاد."
+    },
+    {
+     "en": "They made sure everything was ready.",
+     "ar": "اتأكدوا إن كل حاجة جاهزة."
+    },
+    {
+     "en": "She made sure the baby was asleep.",
+     "ar": "اتأكدت إن الطفل نايم."
+    },
+    {
+     "en": "He made sure the car was locked.",
+     "ar": "اتأكد إن العربية مقفولة."
+    },
+    {
+     "en": "They made sure the water was clean.",
+     "ar": "اتأكدوا إن المية نضيفة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000385",
+   "sentences": [
+    {
+     "en": "She looks forward to the weekend.",
+     "ar": "بتستنى الويك إند بفارغ الصبر."
+    },
+    {
+     "en": "He looks forward to the holiday.",
+     "ar": "بيستنى الأجازة بفارغ الصبر."
+    },
+    {
+     "en": "They look forward to seeing you.",
+     "ar": "بيستنوا يشوفوك بفارغ الصبر."
+    },
+    {
+     "en": "She looks forward to the party.",
+     "ar": "بتستنى الحفلة بفارغ الصبر."
+    },
+    {
+     "en": "He looks forward to the trip.",
+     "ar": "بيستنى الرحلة بفارغ الصبر."
+    },
+    {
+     "en": "They look forward to the match.",
+     "ar": "بيستنوا الماتش بفارغ الصبر."
+    },
+    {
+     "en": "She looks forward to the summer.",
+     "ar": "بتستنى الصيف بفارغ الصبر."
+    },
+    {
+     "en": "He looks forward to the meeting.",
+     "ar": "بيستنى الاجتماع بفارغ الصبر."
+    },
+    {
+     "en": "They look forward to the results.",
+     "ar": "بيستنوا النتايج بفارغ الصبر."
+    },
+    {
+     "en": "She looks forward to hearing from you.",
+     "ar": "بتستنى تسمع منك بفارغ الصبر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000386",
+   "sentences": [
+    {
+     "en": "She used to live in Cairo.",
+     "ar": "كانت عايشة في القاهرة زمان."
+    },
+    {
+     "en": "He used to smoke.",
+     "ar": "كان بيدخن زمان."
+    },
+    {
+     "en": "They used to play football.",
+     "ar": "كانوا بيلعبوا كورة زمان."
+    },
+    {
+     "en": "She used to be a teacher.",
+     "ar": "كانت مدرسة زمان."
+    },
+    {
+     "en": "He used to work in a factory.",
+     "ar": "كان بيشتغل في مصنع زمان."
+    },
+    {
+     "en": "They used to visit every summer.",
+     "ar": "كانوا بيزوروا كل صيف زمان."
+    },
+    {
+     "en": "She used to have long hair.",
+     "ar": "كان عندها شعر طويل زمان."
+    },
+    {
+     "en": "He used to drive a taxi.",
+     "ar": "كان بيسوق تاكسي زمان."
+    },
+    {
+     "en": "They used to be friends.",
+     "ar": "كانوا أصحاب زمان."
+    },
+    {
+     "en": "She used to sing in a choir.",
+     "ar": "كانت بتغني في كورال زمان."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000387",
+   "sentences": [
+    {
+     "en": "You ought to see a doctor.",
+     "ar": "المفروض تشوف دكتور."
+    },
+    {
+     "en": "She ought to study more.",
+     "ar": "المفروض تذاكر أكتر."
+    },
+    {
+     "en": "He ought to apologize.",
+     "ar": "المفروض يعتذر."
+    },
+    {
+     "en": "They ought to be careful.",
+     "ar": "المفروض يكونوا حذرين."
+    },
+    {
+     "en": "She ought to eat healthier.",
+     "ar": "المفروض تاكل أصح."
+    },
+    {
+     "en": "He ought to listen to his parents.",
+     "ar": "المفروض يسمع أهله."
+    },
+    {
+     "en": "They ought to respect the rules.",
+     "ar": "المفروض يحترموا القواعد."
+    },
+    {
+     "en": "She ought to rest.",
+     "ar": "المفروض ترتاح."
+    },
+    {
+     "en": "He ought to save money.",
+     "ar": "المفروض يوفر فلوس."
+    },
+    {
+     "en": "They ought to arrive early.",
+     "ar": "المفروض يوصلوا بدري."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000388",
+   "sentences": [
+    {
+     "en": "She speaks English as well as Arabic.",
+     "ar": "بتتكلم إنجليزي وكمان عربي."
+    },
+    {
+     "en": "He works as a teacher as well as a writer.",
+     "ar": "بيشتغل مدرس وكمان كاتب."
+    },
+    {
+     "en": "They sell food as well as drinks.",
+     "ar": "بيبيعوا أكل وكمان مشروبات."
+    },
+    {
+     "en": "She is smart as well as beautiful.",
+     "ar": "هي شاطرة وكمان جميلة."
+    },
+    {
+     "en": "He plays football as well as basketball.",
+     "ar": "بيلعب كورة وكمان باسكت."
+    },
+    {
+     "en": "They offer courses as well as workshops.",
+     "ar": "بيقدموا كورسات وكمان ورش."
+    },
+    {
+     "en": "She is a mother as well as a doctor.",
+     "ar": "هي أم وكمان دكتورة."
+    },
+    {
+     "en": "He is a singer as well as an actor.",
+     "ar": "هو مطرب وكمان ممثل."
+    },
+    {
+     "en": "They have a house as well as a car.",
+     "ar": "عندهم بيت وكمان عربية."
+    },
+    {
+     "en": "She is a student as well as a worker.",
+     "ar": "هي طالبة وكمان شغالة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000389",
+   "sentences": [
+    {
+     "en": "In addition, she speaks three languages.",
+     "ar": "بالإضافة لكده، بتتكلم تلات لغات."
+    },
+    {
+     "en": "He is a doctor. In addition, he teaches.",
+     "ar": "هو دكتور. بالإضافة لكده، بيدرس."
+    },
+    {
+     "en": "The hotel has a pool. In addition, it has a gym.",
+     "ar": "الفندق عنده حمام سباحة. بالإضافة لكده، عنده جيم."
+    },
+    {
+     "en": "She is smart. In addition, she is kind.",
+     "ar": "هي شاطرة. بالإضافة لكده، هي طيبة."
+    },
+    {
+     "en": "He works hard. In addition, he helps others.",
+     "ar": "بيشتغل جامد. بالإضافة لكده، بيساعد الناس."
+    },
+    {
+     "en": "The course is free. In addition, it offers a certificate.",
+     "ar": "الكورس مجاني. بالإضافة لكده، بيدي شهادة."
+    },
+    {
+     "en": "She is a writer. In addition, she is a painter.",
+     "ar": "هي كاتبة. بالإضافة لكده، هي رسامة."
+    },
+    {
+     "en": "He has a car. In addition, he has a bike.",
+     "ar": "عنده عربية. بالإضافة لكده، عنده عجلة."
+    },
+    {
+     "en": "The food is good. In addition, the service is fast.",
+     "ar": "الأكل كويس. بالإضافة لكده، الخدمة سريعة."
+    },
+    {
+     "en": "She is a student. In addition, she works part-time.",
+     "ar": "هي طالبة. بالإضافة لكده، بتشتغل بدوام جزئي."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000390",
+   "sentences": [
+    {
+     "en": "He is rich. However, he is not happy.",
+     "ar": "هو غني. لكن مش مبسوط."
+    },
+    {
+     "en": "She studied hard. However, she failed.",
+     "ar": "ذاكرت جامد. لكن سقطت."
+    },
+    {
+     "en": "The weather was bad. However, they went out.",
+     "ar": "الجو كان وحش. لكن خرجوا."
+    },
+    {
+     "en": "He is old. However, he is strong.",
+     "ar": "هو كبير. لكن قوي."
+    },
+    {
+     "en": "She was tired. However, she kept working.",
+     "ar": "كانت تعبانة. لكن فضلت تشتغل."
+    },
+    {
+     "en": "The car is old. However, it works well.",
+     "ar": "العربية قديمة. لكن شغالة كويس."
+    },
+    {
+     "en": "He is poor. However, he is generous.",
+     "ar": "هو فقير. لكن كريم."
+    },
+    {
+     "en": "She was sick. However, she went to work.",
+     "ar": "كانت عيانة. لكن راحت الشغل."
+    },
+    {
+     "en": "The exam was hard. However, he passed.",
+     "ar": "الامتحان كان صعب. لكن نجح."
+    },
+    {
+     "en": "He is young. However, he is wise.",
+     "ar": "هو صغير. لكن حكيم."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000391",
+   "sentences": [
+    {
+     "en": "It was raining. Therefore, they stayed home.",
+     "ar": "كان بيمطر. لذلك فضلوا في البيت."
+    },
+    {
+     "en": "He was sick. Therefore, he didn't go to work.",
+     "ar": "كان عيان. لذلك مراحش الشغل."
+    },
+    {
+     "en": "She studied hard. Therefore, she passed.",
+     "ar": "ذاكرت جامد. لذلك نجحت."
+    },
+    {
+     "en": "The shop was closed. Therefore, we went home.",
+     "ar": "المحل كان مقفول. لذلك روحنا البيت."
+    },
+    {
+     "en": "He was tired. Therefore, he slept early.",
+     "ar": "كان تعبان. لذلك نام بدري."
+    },
+    {
+     "en": "The car broke down. Therefore, we took a taxi.",
+     "ar": "العربية عطلت. لذلك خدنا تاكسي."
+    },
+    {
+     "en": "She was hungry. Therefore, she ate.",
+     "ar": "كانت جعانة. لذلك كلت."
+    },
+    {
+     "en": "He was late. Therefore, he missed the bus.",
+     "ar": "كان متأخر. لذلك فاته الأتوبيس."
+    },
+    {
+     "en": "The weather was cold. Therefore, we wore coats.",
+     "ar": "الجو كان ساقع. لذلك لبسنا بالطو."
+    },
+    {
+     "en": "She was busy. Therefore, she didn't call.",
+     "ar": "كانت مشغولة. لذلك متصلتش."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000392",
+   "sentences": [
+    {
+     "en": "Although it was raining, they went out.",
+     "ar": "رغم إن كان بيمطر، خرجوا."
+    },
+    {
+     "en": "Although he is rich, he is simple.",
+     "ar": "رغم إنه غني، هو بسيط."
+    },
+    {
+     "en": "Although she was tired, she kept working.",
+     "ar": "رغم إنها كانت تعبانة، فضلت تشتغل."
+    },
+    {
+     "en": "Although the exam was hard, he passed.",
+     "ar": "رغم إن الامتحان كان صعب، نجح."
+    },
+    {
+     "en": "Although he is young, he is responsible.",
+     "ar": "رغم إنه صغير، هو مسئول."
+    },
+    {
+     "en": "Although the food was bad, they ate it.",
+     "ar": "رغم إن الأكل كان وحش، كلوه."
+    },
+    {
+     "en": "Although she was sick, she went to work.",
+     "ar": "رغم إنها كانت عيانة، راحت الشغل."
+    },
+    {
+     "en": "Although the car is old, it works well.",
+     "ar": "رغم إن العربية قديمة، شغالة كويس."
+    },
+    {
+     "en": "Although he is poor, he is happy.",
+     "ar": "رغم إنه فقير، هو مبسوط."
+    },
+    {
+     "en": "Although the weather was cold, they swam.",
+     "ar": "رغم إن الجو كان ساقع، عموا."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000393",
+   "sentences": [
+    {
+     "en": "He likes tea, whereas she likes coffee.",
+     "ar": "هو بيحب الشاي، بينما هي بتحب القهوة."
+    },
+    {
+     "en": "The city is big, whereas the village is small.",
+     "ar": "المدينة كبيرة، في حين إن القرية صغيرة."
+    },
+    {
+     "en": "He is tall, whereas his brother is short.",
+     "ar": "هو طويل، بينما أخوه قصير."
+    },
+    {
+     "en": "She works hard, whereas he is lazy.",
+     "ar": "هي بتشتغل جامد، في حين إنه كسلان."
+    },
+    {
+     "en": "The north is cold, whereas the south is hot.",
+     "ar": "الشمال ساقع، بينما الجنوب حر."
+    },
+    {
+     "en": "He is rich, whereas she is poor.",
+     "ar": "هو غني، في حين إنها فقيرة."
+    },
+    {
+     "en": "She is quiet, whereas he is loud.",
+     "ar": "هي هادية، بينما هو صوته عالي."
+    },
+    {
+     "en": "The old house is small, whereas the new one is big.",
+     "ar": "البيت القديم صغير، في حين إن الجديد كبير."
+    },
+    {
+     "en": "He is serious, whereas she is funny.",
+     "ar": "هو جد، بينما هي مضحكة."
+    },
+    {
+     "en": "The winter is cold, whereas the summer is hot.",
+     "ar": "الشتا ساقع، في حين إن الصيف حر."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000394",
+   "sentences": [
+    {
+     "en": "He is smart. Moreover, he is kind.",
+     "ar": "هو شاطر. وعلاوة على كده، هو طيب."
+    },
+    {
+     "en": "The house is big. Moreover, it is cheap.",
+     "ar": "البيت كبير. وعلاوة على كده، رخيص."
+    },
+    {
+     "en": "She is a doctor. Moreover, she is a writer.",
+     "ar": "هي دكتورة. وعلاوة على كده، هي كاتبة."
+    },
+    {
+     "en": "The car is fast. Moreover, it is safe.",
+     "ar": "العربية سريعة. وعلاوة على كده، آمنة."
+    },
+    {
+     "en": "He is rich. Moreover, he is generous.",
+     "ar": "هو غني. وعلاوة على كده، هو كريم."
+    },
+    {
+     "en": "The food is good. Moreover, it is healthy.",
+     "ar": "الأكل كويس. وعلاوة على كده، صحي."
+    },
+    {
+     "en": "She is beautiful. Moreover, she is smart.",
+     "ar": "هي جميلة. وعلاوة على كده، شاطرة."
+    },
+    {
+     "en": "The job is easy. Moreover, it pays well.",
+     "ar": "الشغلانة سهلة. وعلاوة على كده، مرتبها كويس."
+    },
+    {
+     "en": "He is a teacher. Moreover, he is a researcher.",
+     "ar": "هو مدرس. وعلاوة على كده، هو باحث."
+    },
+    {
+     "en": "The city is beautiful. Moreover, it is safe.",
+     "ar": "المدينة جميلة. وعلاوة على كده، آمنة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000395",
+   "sentences": [
+    {
+     "en": "He is smart. Furthermore, he is hardworking.",
+     "ar": "هو شاطر. وكمان، هو مجتهد."
+    },
+    {
+     "en": "The house is big. Furthermore, it has a garden.",
+     "ar": "البيت كبير. وكمان، عنده جنينة."
+    },
+    {
+     "en": "She is a doctor. Furthermore, she is a professor.",
+     "ar": "هي دكتورة. وكمان، هي أستاذة جامعية."
+    },
+    {
+     "en": "The car is fast. Furthermore, it is comfortable.",
+     "ar": "العربية سريعة. وكمان، مريحة."
+    },
+    {
+     "en": "He is rich. Furthermore, he is humble.",
+     "ar": "هو غني. وكمان، هو متواضع."
+    },
+    {
+     "en": "The food is good. Furthermore, it is cheap.",
+     "ar": "الأكل كويس. وكمان، رخيص."
+    },
+    {
+     "en": "She is beautiful. Furthermore, she is talented.",
+     "ar": "هي جميلة. وكمان، موهوبة."
+    },
+    {
+     "en": "The job is easy. Furthermore, it is flexible.",
+     "ar": "الشغلانة سهلة. وكمان، مرنة."
+    },
+    {
+     "en": "He is a teacher. Furthermore, he is a coach.",
+     "ar": "هو مدرس. وكمان، هو مدرب."
+    },
+    {
+     "en": "The city is beautiful. Furthermore, it is clean.",
+     "ar": "المدينة جميلة. وكمان، نضيفة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000396",
+   "sentences": [
+    {
+     "en": "He was sick. Nevertheless, he went to work.",
+     "ar": "كان عيان. ومع ذلك، راح الشغل."
+    },
+    {
+     "en": "The weather was bad. Nevertheless, they went out.",
+     "ar": "الجو كان وحش. ومع ذلك، خرجوا."
+    },
+    {
+     "en": "She was tired. Nevertheless, she kept working.",
+     "ar": "كانت تعبانة. ومع ذلك، فضلت تشتغل."
+    },
+    {
+     "en": "He is poor. Nevertheless, he is happy.",
+     "ar": "هو فقير. ومع ذلك، هو مبسوط."
+    },
+    {
+     "en": "The exam was hard. Nevertheless, she passed.",
+     "ar": "الامتحان كان صعب. ومع ذلك، نجحت."
+    },
+    {
+     "en": "He is old. Nevertheless, he is strong.",
+     "ar": "هو كبير. ومع ذلك، هو قوي."
+    },
+    {
+     "en": "The car is old. Nevertheless, it works well.",
+     "ar": "العربية قديمة. ومع ذلك، شغالة كويس."
+    },
+    {
+     "en": "She was afraid. Nevertheless, she jumped.",
+     "ar": "كانت خايفة. ومع ذلك، نطت."
+    },
+    {
+     "en": "He is young. Nevertheless, he is wise.",
+     "ar": "هو صغير. ومع ذلك، هو حكيم."
+    },
+    {
+     "en": "The task was difficult. Nevertheless, they finished it.",
+     "ar": "المهمة كانت صعبة. ومع ذلك، خلصوها."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000397",
+   "sentences": [
+    {
+     "en": "It rained heavily. Consequently, the streets flooded.",
+     "ar": "المطر نزل تقيل. ونتيجة لكده، الشوارع غرقت."
+    },
+    {
+     "en": "He didn't study. Consequently, he failed.",
+     "ar": "مذاكرش. ونتيجة لكده، سقط."
+    },
+    {
+     "en": "She was sick. Consequently, she stayed home.",
+     "ar": "كانت عيانة. ونتيجة لكده، قعدت في البيت."
+    },
+    {
+     "en": "The car broke down. Consequently, we were late.",
+     "ar": "العربية عطلت. ونتيجة لكده، اتأخرنا."
+    },
+    {
+     "en": "He worked hard. Consequently, he succeeded.",
+     "ar": "اشتغل جامد. ونتيجة لكده، نجح."
+    },
+    {
+     "en": "The shop was closed. Consequently, we went home.",
+     "ar": "المحل كان مقفول. ونتيجة لكده، روحنا البيت."
+    },
+    {
+     "en": "She ate too much. Consequently, she felt sick.",
+     "ar": "كلت كتير. ونتيجة لكده، حست بتعب."
+    },
+    {
+     "en": "He missed the bus. Consequently, he was late.",
+     "ar": "فاته الأتوبيس. ونتيجة لكده، اتأخر."
+    },
+    {
+     "en": "The weather was cold. Consequently, we stayed inside.",
+     "ar": "الجو كان ساقع. ونتيجة لكده، فضلنا جوه."
+    },
+    {
+     "en": "She didn't sleep. Consequently, she was tired.",
+     "ar": "منمتش. ونتيجة لكده، كانت تعبانة."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000398",
+   "sentences": [
+    {
+     "en": "He didn't go to the party. Instead, he stayed home.",
+     "ar": "مراحش الحفلة. بدل كده، قعد في البيت."
+    },
+    {
+     "en": "She didn't buy the red dress. Instead, she bought the blue one.",
+     "ar": "ماشترتش الفستان الأحمر. بدل كده، اشترت الأزرق."
+    },
+    {
+     "en": "He didn't take the bus. Instead, he walked.",
+     "ar": "ماخدش الأتوبيس. بدل كده، مشى."
+    },
+    {
+     "en": "She didn't eat meat. Instead, she ate fish.",
+     "ar": "ماكلتش لحمة. بدل كده، كلت سمك."
+    },
+    {
+     "en": "He didn't watch TV. Instead, he read a book.",
+     "ar": "ماتفرجش على التلفزيون. بدل كده، قرا كتاب."
+    },
+    {
+     "en": "She didn't go to the beach. Instead, she went to the mountains.",
+     "ar": "مراحتش الشط. بدل كده، راحت الجبال."
+    },
+    {
+     "en": "He didn't drink coffee. Instead, he drank tea.",
+     "ar": "ماشربش قهوة. بدل كده، شرب شاي."
+    },
+    {
+     "en": "She didn't take a taxi. Instead, she took the metro.",
+     "ar": "ماخدتش تاكسي. بدل كده، خدت المترو."
+    },
+    {
+     "en": "He didn't sleep. Instead, he studied.",
+     "ar": "منامش. بدل كده، ذاكر."
+    },
+    {
+     "en": "She didn't go out. Instead, she cooked.",
+     "ar": "ماخرجتش. بدل كده، طبخت."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000399",
+   "sentences": [
+    {
+     "en": "He is rather tall.",
+     "ar": "هو طويل إلى حد ما."
+    },
+    {
+     "en": "She would rather stay home.",
+     "ar": "هي تفضل تقعد في البيت."
+    },
+    {
+     "en": "The movie was rather boring.",
+     "ar": "الفيلم كان ممل إلى حد ما."
+    },
+    {
+     "en": "He is rather shy.",
+     "ar": "هو خجول إلى حد ما."
+    },
+    {
+     "en": "She would rather eat at home.",
+     "ar": "هي تفضل تاكل في البيت."
+    },
+    {
+     "en": "The weather is rather cold.",
+     "ar": "الجو ساقع إلى حد ما."
+    },
+    {
+     "en": "He is rather old.",
+     "ar": "هو كبير إلى حد ما."
+    },
+    {
+     "en": "She would rather walk than drive.",
+     "ar": "هي تفضل تمشي عن تسوق."
+    },
+    {
+     "en": "The book is rather long.",
+     "ar": "الكتاب طويل إلى حد ما."
+    },
+    {
+     "en": "He is rather quiet.",
+     "ar": "هو هادي إلى حد ما."
+    }
+   ]
+  },
+  {
+   "id": "ielts-v-000400",
+   "sentences": [
+    {
+     "en": "He is actually very kind.",
+     "ar": "هو في الحقيقة طيب جدا."
+    },
+    {
+     "en": "She actually passed the exam.",
+     "ar": "هي فعلا نجحت في الامتحان."
+    },
+    {
+     "en": "He actually likes the food.",
+     "ar": "هو في الحقيقة بيحب الأكل."
+    },
+    {
+     "en": "She actually lives in Cairo.",
+     "ar": "هي فعلا عايشة في القاهرة."
+    },
+    {
+     "en": "He actually knows the answer.",
+     "ar": "هو في الحقيقة عارف الإجابة."
+    },
+    {
+     "en": "She actually works here.",
+     "ar": "هي فعلا بتشتغل هنا."
+    },
+    {
+     "en": "He actually enjoys the cold.",
+     "ar": "هو في الحقيقة بيستمتع بالبرد."
+    },
+    {
+     "en": "She actually speaks five languages.",
+     "ar": "هي فعلا بتتكلم خمس لغات."
+    },
+    {
+     "en": "He actually built the house himself.",
+     "ar": "هو في الحقيقة بنى البيت بنفسه."
+    },
+    {
+     "en": "She actually won the prize.",
+     "ar": "هي فعلا كسبت الجايزة."
+    }
+   ]
+  }
+ ]
+}
