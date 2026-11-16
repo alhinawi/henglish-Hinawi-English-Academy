@@ -2830,5 +2830,7 @@
   "vx.loadError": "Die Wortbibliothek wurde nicht vollständig geladen. Die Ergebnisse enthalten nur bereits geladene Wörter. Versuche es erneut, um den Rest zu laden.",
   "wdm.discardNote": "Deine Notiz enthält ungespeicherte Änderungen. Ohne Speichern schließen?",
   "wdm.noteUnsaved": "Deine Notiz enthält ungespeicherte Änderungen.",
-  "wdm.noteSaved": "Notiz auf diesem Gerät gespeichert."
+  "wdm.noteSaved": "Notiz auf diesem Gerät gespeichert.",
+  "gl.notFoundTitle": "Lektion nicht gefunden",
+  "gl.notFoundBody": "Dieser Link gehört zu keiner verfügbaren Grammatiklektion. Gehe zurück zur Akademie und wähle eine Lektion."
 }
