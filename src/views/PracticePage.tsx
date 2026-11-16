@@ -4,8 +4,10 @@ import { MISTAKE_HUNTER_CASES } from '../data/gamesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
 import { Sparkles, AlertTriangle, Eye, EyeOff, Volume2 } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export const PracticePage: React.FC = () => {
+  const { t } = useLanguage();
   // Homework answers reveal state
   const [showHomeworkAnswers, setShowHomeworkAnswers] = useState(false);
   const appText = useAppTextMap('gamesData');
@@ -45,17 +47,17 @@ export const PracticePage: React.FC = () => {
           <span>INTERACTIVE PRACTICE CENTER</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
-          مركز التدريبات والتمارين التفاعلية
+          {t('pp.title')}
         </h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
-          التطبيق العملي هو سر ثبات المعلومة. ركّب الجمل، اصطد الأخطاء النحوية، وحل أسئلة الواجب المنزلي مع التحقق الفوري.
+          {t('pp.blurb')}
         </p>
       </div>
 
       {/* Activity 1: Sentence Builder */}
       <section className="space-y-4">
         <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
-          <span>01 • معمل تركيب الجملة (Sentence Builder)</span>
+          <span>{t('pp.section1')}</span>
         </h2>
         <SentenceBuilder />
       </section>
@@ -66,10 +68,10 @@ export const PracticePage: React.FC = () => {
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
               <AlertTriangle className="w-6 h-6 text-[#ff4f9a]" />
-              <span>02 • تحدي صياد الأخطاء (Mistake Hunter)</span>
+              <span>{t('pp.section2')}</span>
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-              اقرأ كل جملة وحدد: هل تحتوي على خطأ نحوي أم أنها صحيحة وسليمة؟
+              {t('pp.hunterBlurb')}
             </p>
           </div>
         </div>
@@ -91,7 +93,7 @@ export const PracticePage: React.FC = () => {
                   <button
                     onClick={() => speakEnglish(item.sentence)}
                     className="p-1 text-[#41e7ff] hover:text-white shrink-0 ml-2"
-                    title="استمع للجملة"
+                    title={t('pp.listenSentence')}
                   >
                     <Volume2 className="w-4 h-4" />
                   </button>
@@ -103,27 +105,27 @@ export const PracticePage: React.FC = () => {
                       onClick={() => handleHunterAnswer(item.id, true, item.hasError)}
                       className="px-4 py-2 rounded-xl bg-[#ff4f9a]/15 hover:bg-[#ff4f9a]/25 text-[#ff4f9a] border border-[#ff4f9a]/30 font-bold text-xs cursor-pointer transition-colors"
                     >
-                     الجملة بها خطأ
+                     {t('pp.hasError')}
                     </button>
                     <button
                       onClick={() => handleHunterAnswer(item.id, false, item.hasError)}
                       className="px-4 py-2 rounded-xl bg-[#c4ff55]/15 hover:bg-[#c4ff55]/25 text-[#c4ff55] border border-[#c4ff55]/30 font-bold text-xs cursor-pointer transition-colors"
                     >
-                     الجملة سليمة
+                     {t('pp.noError')}
                     </button>
                   </div>
                 ) : (
                   <div className="pt-2 border-t border-white/5 text-xs sm:text-sm text-[#dedbf4] space-y-1">
                     <div className="font-bold">
                       {wasCorrect ? (
-                        <span className="text-[#c4ff55]">أحسنت! تقييمك صحيح تماماً.</span>
+                        <span className="text-[#c4ff55]">{t('pp.correct')}</span>
                       ) : (
-                        <span className="text-[#ff4f9a]">تقييمك لم يكن دقيقاً.</span>
+                        <span className="text-[#ff4f9a]">{t('pp.wrong')}</span>
                       )}
                     </div>
                     {item.hasError ? (
                       <p className="text-[#ffd166]">
-                        التصحيح السليم: <span className="en font-bold text-white" dir="ltr" lang="en">{item.correction}</span>
+                        {t('pp.correction')} <span className="en font-bold text-white" dir="ltr" lang="en">{item.correction}</span>
                       </p>
                     ) : (
                       <p className="text-[#c4ff55]">{item.correction}</p>
@@ -142,10 +144,10 @@ export const PracticePage: React.FC = () => {
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
-              <span>03 • الواجب المنزلي الشامل (Homework Lab)</span>
+              <span>{t('pp.section3')}</span>
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-              حل التمارين بنفسك أولاً، ثم اضغط على زر إظهار الإجابات للمراجعة.
+              {t('pp.homeworkBlurb')}
             </p>
           </div>
 
@@ -157,7 +159,7 @@ export const PracticePage: React.FC = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-[#ffd166] text-xs font-bold border border-white/10 transition-colors cursor-pointer"
           >
             {showHomeworkAnswers ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-            <span>{showHomeworkAnswers ? 'إخفاء الإجابات' : 'إظهار مفتاح الإجابات'}</span>
+            <span>{showHomeworkAnswers ? t('pp.hideAnswers') : t('pp.showAnswers')}</span>
           </button>
         </div>
 
@@ -182,32 +184,32 @@ export const PracticePage: React.FC = () => {
         {/* Self Checklist */}
         <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3 mt-6">
           <h4 className="text-sm font-black text-[#ffd166]">
-            قائمة المراجعة الذاتية السريعة قبل التسليم
+            {t('pp.checklistTitle')}
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#dedbf4]">
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="rounded accent-[#ffd166]" />
-              <span>استخدمت will have في الإثبات</span>
+              <span>{t('pp.check1')}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="rounded accent-[#ffd166]" />
-              <span>كتبت V3 وليس V2</span>
+              <span>{t('pp.check2')}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="rounded accent-[#ffd166]" />
-              <span>استخدمت won't have في النفي</span>
+              <span>{t('pp.check3')}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="rounded accent-[#ffd166]" />
-              <span>بدأت السؤال بـ Will</span>
+              <span>{t('pp.check4')}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="rounded accent-[#ffd166]" />
-              <span>استخدمت المضارع البسيط بعد by the time</span>
+              <span>{t('pp.check5')}</span>
             </label>
             <label className="flex items-center gap-2 cursor-pointer">
               <input type="checkbox" className="rounded accent-[#ffd166]" />
-              <span>حددت نقطة زمنية مستقبلية واضحة</span>
+              <span>{t('pp.check6')}</span>
             </label>
           </div>
         </div>
