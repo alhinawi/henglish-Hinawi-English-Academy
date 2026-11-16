@@ -1,3 +1,4 @@
+import { copyText } from '../services/copyText';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - INTERACTIVE SENTENCE CARD
 // Rich multimedia card with Egyptian/Standard Arabic, TTS, Pronunciation assessment,
@@ -54,6 +55,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   const [showFusha, setShowFusha] = useState(false);
   const [showDetails, setShowDetails] = useState(!compact);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id));
   const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id));
@@ -88,9 +90,11 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   };
 
   // Copy sentence text
-  const handleCopy = () => {
+  const handleCopy = async () => {
     playSound('click');
-    navigator.clipboard.writeText(sentence.english);
+    setCopied(false);
+    setCopyFailed(false);
+    if (!(await copyText(sentence.english))) { setCopyFailed(true); return; }
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -180,6 +184,8 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           </button>
         </div>
       </div>
+
+      {copyFailed && <p role="status" className="text-xs text-amber-200">{t('copy.failed')}</p>}
 
       {/* Main Sentence Content */}
       <div className="space-y-3">
