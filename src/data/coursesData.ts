@@ -33,7 +33,7 @@ export const COURSES_CATALOG: CourseItem[] = [
     level: 'شامل',
     lessonsCount: 8,
     isFlagship: true,
-    tag: 'أكاديمية الجرامر 👑',
+    tag: 'أكاديمية الجرامر',
     icon: '',
     imageUrl: '/images/catalog/future-perfect.webp',
     route: 'courses/grammar/future-perfect',
