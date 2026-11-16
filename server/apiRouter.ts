@@ -22,7 +22,6 @@ import {
 import {
   dispatchTranslation,
   dispatchTranslationAssistant,
-  dispatchPracticeEvaluation,
   dispatchImageOcr,
   dispatchVoiceTranscription,
 } from './translationService';
@@ -426,31 +425,6 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
     } catch (err) {
       console.error('API /api/ai/assistant error:', err);
       sendJson(res, 500, { error: 'Assistant service error', message: String(err) });
-    }
-    return true;
-  }
-
-  // Educational Practice Mode Translation Evaluation
-  if (url === '/api/ai/evaluate-practice' && req.method === 'POST') {
-    try {
-      const body = (await parseJsonBody(req)) as {
-        direction: 'ar-to-en' | 'en-to-ar';
-        difficulty: import('../src/types').CEFRLevel;
-        sourceSentence: string;
-        userTranslation: string;
-        expectedTranslations: string[];
-      };
-
-      if (!body.sourceSentence || !body.userTranslation) {
-        sendJson(res, 400, { error: 'Missing required evaluation fields' });
-        return true;
-      }
-
-      const result = await dispatchPracticeEvaluation(body);
-      sendJson(res, 200, result);
-    } catch (err) {
-      console.error('API /api/ai/evaluate-practice error:', err);
-      sendJson(res, 500, { error: 'Practice evaluation error', message: String(err) });
     }
     return true;
   }
