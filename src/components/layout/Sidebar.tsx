@@ -123,7 +123,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const [openGrammarSubMenu, setOpenGrammarSubMenu] = React.useState(true);
   const [activeGrammarSection, setActiveGrammarSection] = React.useState<string>('Future Tenses');
 
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const tl = (label: string) => {
     const key = NAV_LABEL_KEYS[label.trim()];
     return key ? t(key) : label;
@@ -652,7 +652,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     <>
       {/* Desktop Sidebar */}
       <aside
-        className={`hidden md:block shrink-0 transition-[width] duration-300 z-40 sticky top-0 h-screen ${
+        dir={dir}
+        className={`hidden md:block shrink-0 order-2 transition-[width] duration-300 z-40 sticky top-0 h-screen ${
           collapsed ? 'w-20' : 'w-72'
         }`}
         aria-label="القائمة الجانبية للكمبيوتر"
@@ -671,6 +672,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       {/* Mobile Drawer */}
       <aside
+        dir={dir}
         className={`fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] z-50 md:hidden transform transition-transform duration-300 shadow-2xl ${
           mobileOpen ? 'translate-x-0' : 'translate-x-full'
         }`}

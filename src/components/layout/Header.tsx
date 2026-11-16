@@ -151,6 +151,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <header
+      dir="ltr"
       className="sticky top-0 z-50 min-h-20 bg-[#0c0b20]/95 backdrop-blur-2xl border-b border-white/10 px-4 sm:px-6 flex items-center justify-between gap-2 sm:gap-3 select-none"
       style={{ paddingTop: 'env(safe-area-inset-top)' }}
     >
