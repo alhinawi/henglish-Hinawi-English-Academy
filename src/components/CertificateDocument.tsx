@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../i18n/LanguageContext";
 import { GraduationCap } from "lucide-react";
 import { IssuedCertificate } from "../data/certificatesData";
 
@@ -25,6 +26,7 @@ const formatDateEn = (iso: string): string => {
 export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
   cert,
 }) => {
+  const { t, dir } = useLanguage();
   return (
     <div
       dir="ltr"
@@ -39,7 +41,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
         color: "#ffffff",
       }}
     >
-      {cert.preview && <div style={{position:'absolute',inset:0,zIndex:10,display:'flex',alignItems:'center',justifyContent:'center',pointerEvents:'none',fontSize:110,fontWeight:900,color:'rgba(255,209,102,0.2)',transform:'rotate(-25deg)'}}>نموذج • SAMPLE</div>}
+      {cert.preview && <div style={{position:'absolute',inset:0,zIndex:10,display:'flex',alignItems:'center',justifyContent:'center',pointerEvents:'none',fontSize:110,fontWeight:900,color:'rgba(255,209,102,0.2)',transform:'rotate(-25deg)'}}>{t('cd.sample')}</div>}
       {/* Outer gold frame */}
       <div
         style={{
@@ -382,7 +384,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
           <span>{cert.localOnly ? "No public verification ID" : `Verification ID: ${cert.verificationCode}`}</span>
         </div>
         <div
-          dir="rtl"
+          dir={dir}
           style={{
             marginTop: 6,
             fontSize: 10,
@@ -390,9 +392,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             fontFamily: "'AmiriCert', Tahoma, Arial, sans-serif",
           }}
         >
-          تنويه: هذه الشهادة توثق الإنجاز الأكاديمي الداخلي لمقررات منصة
-          Henglish Academy، ولا تدعي أنها بديل عن اختبارات الهيئات الحكومية أو
-          شهادات IELTS/TOEFL الرسمية.
+          {t('cd.disclaimer')}
         </div>
       </div>
     </div>
