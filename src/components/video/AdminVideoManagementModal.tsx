@@ -26,6 +26,7 @@ import {
   adminReplaceVideoId,
   VIDEO_20_CATEGORIES,
 } from '../../services/videoLibraryService';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { verifyYouTubeVideo, VerificationResult } from '../../services/videoVerificationService';
 import { playSound } from '../../utils/audio';
 
@@ -42,6 +43,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   onOpenImportModal,
   onCatalogChanged,
 }) => {
+  const { t } = useLanguage();
   const [videos, setVideos] = useState<EducationalVideoItem[]>(() => getStoredVideos());
   const [editingVideo, setEditingVideo] = useState<EducationalVideoItem | null>(null);
   const [replaceIdInput, setReplaceIdInput] = useState('');
@@ -87,7 +89,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     setIsAuditingAll(false);
     setAuditProgress(null);
     playSound('success');
-    setStatusMsg(`اكتمل تدقيق وفحص كافة المقاطع بنجاح (${updatedCount} مقطع).`);
+    setStatusMsg(t('avmm.auditDone').replace('{n}', String(updatedCount)));
     if (onCatalogChanged) onCatalogChanged();
   };
 
@@ -104,7 +106,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     if (replaceIdInput.trim() !== editingVideo.youtubeId) {
       const res = await adminReplaceVideoId(editingVideo.id, replaceIdInput.trim());
       if (!res.ok) {
-        setStatusMsg(`خطأ في تحديث معرف الفيديو: ${res.error}`);
+        setStatusMsg(`${t('avmm.idError')} ${res.error}`);
         playSound('wrong');
         return;
       }
@@ -123,12 +125,12 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     setVideos(updated);
     setEditingVideo(null);
     playSound('success');
-    setStatusMsg('تم حفظ التعديلات بنجاح.');
+    setStatusMsg(t('avmm.saved'));
     if (onCatalogChanged) onCatalogChanged();
   };
 
   const handleMarkUnavailable = (v: EducationalVideoItem) => {
-    const reason = prompt('أدخل سبب وضع الفيديو كغير متاح (مثال: حظر جغرافي، حقوق طبع، إلخ):', 'Unavailable on YouTube');
+    const reason = prompt(t('avmm.unavailablePrompt'), 'Unavailable on YouTube');
     if (reason) {
       const updated = adminMarkUnavailable(v.id, reason);
       setVideos(updated);
@@ -157,7 +159,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               <ShieldCheck className="w-5 h-5" />
             </span>
             <h3 className="text-lg font-black text-white">
-              لوحة إدارة وتدقيق مكتبة الفيديوهات (Admin Video Console)
+              {t('avmm.title')}
             </h3>
           </div>
         </div>
@@ -172,8 +174,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
         {/* Action Controls */}
         <div className="flex flex-wrap items-center justify-between gap-3 p-4 rounded-2xl bg-white/5 border border-white/10">
           <div className="text-xs text-white/70">
-            إجمالي المقاطع في المكتبة:{' '}
-            <strong className="text-white text-sm">{videos.length}</strong> مقطع
+            {t('avmm.totalVideos')}{' '}
+            <strong className="text-white text-sm">{videos.length}</strong> {t('avmm.videoUnit')}
           </div>
 
           <div className="flex items-center gap-2">
@@ -189,8 +191,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               )}
               <span>
                 {auditProgress
-                  ? `جارٍ الفحص (${auditProgress.current}/${auditProgress.total})...`
-                  : 'تدقيق روابط جميع الفيديوهات الآن'}
+                  ? `${t('avmm.auditing')} (${auditProgress.current}/${auditProgress.total})...`
+                  : t('avmm.auditAll')}
               </span>
             </button>
 
@@ -202,7 +204,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               className="px-4 py-2 rounded-xl bg-[#c4ff55] text-[#09091a] text-xs font-black hover:bg-[#d5ff78] transition-all cursor-pointer flex items-center gap-1.5"
             >
               <Plus className="w-4 h-4" />
-              <span>استيراد مقطع جديد</span>
+              <span>{t('avmm.importNew')}</span>
             </button>
           </div>
         </div>
@@ -211,18 +213,18 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
         {editingVideo && (
           <div className="p-5 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/30 space-y-4">
             <div className="flex items-center justify-between">
-              <span className="text-xs font-black text-[#ffd166]">تعديل بيانات المقطع: {editingVideo.sceneTitle}</span>
+              <span className="text-xs font-black text-[#ffd166]">{t('avmm.editTitle')} {editingVideo.sceneTitle}</span>
               <button
                 onClick={() => setEditingVideo(null)}
                 className="text-xs text-white/60 hover:text-white"
               >
-                إلغاء التعديل
+                {t('avmm.cancelEdit')}
               </button>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">معرف يوتيوب (YouTube ID)</label>
+                <label className="text-[11px] font-bold text-white">{t('avmm.youtubeId')}</label>
                 <input
                   type="text"
                   value={replaceIdInput}
@@ -232,7 +234,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">عنوان المشهد</label>
+                <label className="text-[11px] font-bold text-white">{t('avmm.sceneTitle')}</label>
                 <input
                   type="text"
                   value={editingVideo.sceneTitle}
@@ -242,7 +244,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">الفئة (Category)</label>
+                <label className="text-[11px] font-bold text-white">{t('avmm.category')}</label>
                 <select
                   value={editingVideo.category}
                   onChange={e => setEditingVideo({ ...editingVideo, category: e.target.value as any })}
@@ -257,7 +259,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">المستوى الأوروبي (CEFR)</label>
+                <label className="text-[11px] font-bold text-white">{t('avmm.cefr')}</label>
                 <select
                   value={editingVideo.cefrLevel}
                   onChange={e => setEditingVideo({ ...editingVideo, cefrLevel: e.target.value as any })}
@@ -278,13 +280,13 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 onClick={() => setEditingVideo(null)}
                 className="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-white"
               >
-                إلغاء
+                {t('avmm.cancel')}
               </button>
               <button
                 onClick={handleSaveEdit}
                 className="px-5 py-2 rounded-xl bg-[#c4ff55] text-[#09091a] text-xs font-black hover:bg-[#d5ff78]"
               >
-                حفظ وتأكيد التغييرات
+                {t('avmm.saveChanges')}
               </button>
             </div>
           </div>
@@ -325,11 +327,11 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                     {v.verificationStatus === 'verified_playable' ? (
                       <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400 bg-emerald-500/15 px-2 py-0.5 rounded-full">
                         <CheckCircle2 className="w-3 h-3" />
-                        <span>معتمد ومتاح للتشغيل (Playable)</span>
+                        <span>{t('avmm.playable')}</span>
                       </span>
                     ) : v.verificationStatus === 'video_only' ? (
                       <span className="inline-flex items-center gap-1 text-[10px] font-bold text-cyan-400 bg-cyan-500/15 px-2 py-0.5 rounded-full">
-                        <span>مشاهدة فقط (Video-Only)</span>
+                        <span>{t('avmm.videoOnly')}</span>
                       </span>
                     ) : (
                       <span className="inline-flex items-center gap-1 text-[10px] font-bold text-red-400 bg-red-500/15 px-2 py-0.5 rounded-full">
@@ -348,7 +350,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                   target="_blank"
                   rel="noreferrer"
                   className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors"
-                  title="فتح في يوتيوب للتأكد"
+                  title={t('avmm.openYoutube')}
                 >
                   <ExternalLink className="w-4 h-4" />
                 </a>
@@ -356,7 +358,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 <button
                   onClick={() => handleStartEdit(v)}
                   className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] transition-colors"
-                  title="تعديل البيانات واستبدال الرابط"
+                  title={t('avmm.editReplace')}
                 >
                   <Edit3 className="w-4 h-4" />
                 </button>
@@ -364,7 +366,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 <button
                   onClick={() => handleMarkUnavailable(v)}
                   className="p-2 rounded-xl bg-white/5 hover:bg-red-500/20 text-red-400 transition-colors"
-                  title="تعيين كغير متاح"
+                  title={t('avmm.markUnavailable')}
                 >
                   <Trash2 className="w-4 h-4" />
                 </button>
