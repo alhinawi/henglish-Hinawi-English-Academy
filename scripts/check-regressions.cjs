@@ -17,6 +17,7 @@ const checks = [
   'check-writing-feedback.cjs',
   'check-pronunciation-guess.cjs',
   'check-phrase-retry.cjs',
+  'check-exam-vocab-retry.cjs',
   'check_progress_fallbacks.cjs',
   'check_recovery_fallbacks.cjs',
 ];
