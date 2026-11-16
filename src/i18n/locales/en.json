@@ -2782,5 +2782,7 @@
   "ae.expired": "Your session has expired. Sign in again.",
   "ae.incomplete": "Some required details are missing or invalid.",
   "ae.retry": "An unexpected error occurred. Try again.",
-  "ae.offline": "Could not reach the server. Check your connection and try again."
+  "ae.offline": "Could not reach the server. Check your connection and try again.",
+  "auth.otpUnavailable": "Email verification is unavailable. Your account verification status has not changed.",
+  "auth.otpResendUnavailable": "Resending verification codes is unavailable. No code was sent."
 }
