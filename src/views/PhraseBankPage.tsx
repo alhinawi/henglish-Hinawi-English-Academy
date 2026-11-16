@@ -4,21 +4,22 @@
 // ==============================================================================
 
 import React from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { PhraseBankPanel } from '../components/PhraseBankPanel';
 import { PhraseBankId } from '../services/phraseBankService';
 
-const BANK_COPY: Record<PhraseBankId, { titleAr: string; blurbAr: string }> = {
+const BANK_COPY: Record<PhraseBankId, { titleAr: string; blurbKey: string }> = {
   idioms: {
     titleAr: 'Idioms',
-    blurbAr: 'أشهر الـ Idioms الإنجليزية بمعناها بالمصري، مع مثال إنجليزي وترجمته لكل تعبير. المحتوى الأصلي بالعربي والإنجليزي مراجع يدوياً.',
+    blurbKey: 'pb.idiomsBlurb',
   },
   slang: {
     titleAr: 'Slang',
-    blurbAr: 'الـ Slang الأمريكي والبريطاني المستخدم في الحياة اليومية، بمعناه بالمصري وتوضيح السياق المناسب لاستخدامه.',
+    blurbKey: 'pb.slangBlurb',
   },
   genz: {
     titleAr: 'Gen Z',
-    blurbAr: 'تعبيرات الجيل الجديد وثقافة الإنترنت - اللي بتسمعه على السوشيال ميديا وفي الأغاني، مترجم وموضح بالمصري.',
+    blurbKey: 'pb.genzBlurb',
   },
 };
 
@@ -27,10 +28,11 @@ interface PhraseBankPageProps {
 }
 
 export const PhraseBankPage: React.FC<PhraseBankPageProps> = ({ bank }) => {
+  const { t } = useLanguage();
   const copy = BANK_COPY[bank];
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-right">
-      <PhraseBankPanel bank={bank} titleAr={copy.titleAr} blurbAr={copy.blurbAr} />
+      <PhraseBankPanel bank={bank} titleAr={copy.titleAr} blurbAr={t(copy.blurbKey)} />
     </div>
   );
 };

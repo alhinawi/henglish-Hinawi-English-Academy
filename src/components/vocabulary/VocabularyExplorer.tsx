@@ -418,7 +418,7 @@ export const VocabularyExplorer: React.FC = () => {
           {searchResults.totalPages > 1 && (
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl glass-panel border border-white/10">
               <div className="text-xs text-white/60 font-bold">
-                صفحة <strong className="text-white">{searchResults.page}</strong> من{' '}
+                {t('ex.page')} <strong className="text-white">{searchResults.page}</strong> {t('ex.of')}{' '}
                 <strong className="text-white">{searchResults.totalPages}</strong>
               </div>
 
@@ -508,7 +508,7 @@ export const VocabularyExplorer: React.FC = () => {
                       : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
                   }`}
                 >
-                  الكل
+                  {t('vx.all')}
                 </button>
                 {LETTERS.map(l => (
                   <button
@@ -603,7 +603,7 @@ export const VocabularyExplorer: React.FC = () => {
               }}
               className="w-full py-3 rounded-xl bg-[#c4ff55] text-[#09091a] text-sm font-black hover:bg-[#d4ff75] transition-all cursor-pointer"
             >
-              عرض النتائج
+              {t('vx.showResults')}
             </button>
           </div>
         </div>

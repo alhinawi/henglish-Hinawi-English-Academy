@@ -2716,5 +2716,11 @@
   "cv.summary": "Level {level} • Score {score}% • {date}",
   "cv.disclaimer": "This records completion of Henglish courses and assessments. It is not external accreditation or an identity-proctored exam.",
   "cv.unverified": "The code is invalid, the certificate was not found, or the verification service is unavailable. The certificate cannot be confirmed.",
-  "cv.back": "Back to the academy"
+  "cv.back": "Back to the academy",
+  "pb.idiomsBlurb": "Common English idioms with Egyptian Arabic meanings, an English example and its translation. The original Arabic and English content is manually reviewed.",
+  "pb.slangBlurb": "Everyday American and British slang with Egyptian Arabic meanings and guidance on when to use it.",
+  "pb.genzBlurb": "Gen Z expressions and internet culture from social media and songs, translated and explained in Egyptian Arabic.",
+  "ex.ieltsBlurb": "Key IELTS vocabulary ordered by frequency, with Egyptian Arabic meanings, examples, levels, bands and common collocations.",
+  "ex.toeflBlurb": "Core TOEFL vocabulary ordered by frequency, with Egyptian Arabic meanings, examples, levels and topics.",
+  "vx.showResults": "Show results"
 }

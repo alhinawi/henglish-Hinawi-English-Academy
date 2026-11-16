@@ -1,3 +1,4 @@
+import { useLanguage } from '../i18n/LanguageContext';
 import React, { useState } from 'react';
 import { COURSES_CATALOG, COURSES_PAGE_COPY, CourseItem } from '../data/coursesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
@@ -19,6 +20,7 @@ interface CoursesPageProps {
 }
 
 export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
+  const { t } = useLanguage();
   const [filterLevel, setFilterLevel] = useState<string>('All');
   const appText = useAppTextMap('coursesData');
 
@@ -174,7 +176,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <div className="flex items-center justify-between text-xs text-[#dedbf4]">
                   <span className="flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>{course.countLabel ? txText(appText, course.countLabel) : (appText ? txText(appText, `${course.lessonsCount} دروس`) : `${course.lessonsCount} دروس`)}</span>
+                    <span>{course.countLabel ? txText(appText, course.countLabel) : t('dash.lessonsCount').replace('{n}', String(course.lessonsCount))}</span>
                   </span>
                   {course.duration && (
                     <span className="flex items-center gap-1">
