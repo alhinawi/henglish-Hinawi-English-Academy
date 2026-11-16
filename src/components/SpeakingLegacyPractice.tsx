@@ -60,9 +60,9 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
     },
     {
       topic: 'Technology & The Future (التكنولوجيا والمستقبل)',
-      q: 'Which daily habits will AI assistants have completely changed by 2035?',
-      hintAr: 'تخيل تأثير الذكاء الاصطناعي على العادات اليومية بحلول عام 2035.',
-      starter: 'By 2035, AI assistants will have changed...',
+      q: 'Which daily habits will technology have changed by 2035?',
+      hintAr: 'تخيل تأثير التكنولوجيا على العادات اليومية بحلول عام 2035.',
+      starter: 'By 2035, technology will have changed...',
     },
     {
       topic: 'Health & Fitness (الصحة واللياقة)',

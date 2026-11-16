@@ -307,7 +307,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 alt={currentTurn.speaker}
                 className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-[#ffd166] shrink-0"
               />
-              <div className="space-y-2 flex-1">
+              <div className="space-y-2 flex-1 min-w-0">
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <div>
                     <span className="text-sm font-black text-white">{currentTurn.speaker}</span>
@@ -369,7 +369,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                             : 'bg-white/5 hover:bg-white/10 border-white/10 text-white'
                         }`}
                       >
-                        <div className="space-y-1 text-left" dir="ltr">
+                        <div className="space-y-1 text-left min-w-0 break-words" dir="ltr">
                           <div dir="ltr" lang="en">{opt.textEn}</div>
                           <div className="text-xs text-[#b9b6d5] text-right font-sans font-normal" dir="rtl">{opt.textAr}</div>
                         </div>
@@ -394,12 +394,12 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
             {/* Optional Free-Text Answer Input */}
             <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3">
-              <label className="text-xs font-bold text-[#dedbf4] flex items-center justify-between">
+              <label className="text-xs font-bold text-[#dedbf4] flex flex-wrap items-start justify-between gap-2">
                 <span>أو اكتب ردك الخاص بالإنجليزية بحرية (Free-Text Practice):</span>
                 <span className="text-[10px] text-[#41e7ff]">تقييم فوري</span>
               </label>
 
-              <div className="flex gap-2">
+              <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-stretch">
                 <input
                   type="text"
                   dir="ltr"
@@ -408,12 +408,12 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   onChange={e => setFreeTextResponse(e.target.value)}
                   onKeyDown={e => e.key === 'Enter' && handleEvaluateFreeText()}
                   placeholder="Type your reply in English here..."
-                  className="english-input flex-1 px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-sm focus:outline-none focus:border-[#41e7ff]"
+                  className="english-input w-full min-w-0 sm:flex-1 px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-sm focus:outline-none focus:border-[#41e7ff]"
                 />
                 <button
                   onClick={handleEvaluateFreeText}
                   disabled={!freeTextResponse.trim() || isEvaluatingAi}
-                  className="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-[#41e7ff] hover:text-[#0c0b20] text-white text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 disabled:opacity-50"
+                  className="w-full min-h-12 sm:w-auto shrink-0 justify-center px-5 py-2.5 rounded-xl bg-white/10 hover:bg-[#41e7ff] hover:text-[#0c0b20] text-white text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 disabled:opacity-50"
                 >
                   {isEvaluatingAi ? (
                     <>
@@ -423,7 +423,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   ) : (
                     <>
                       <Send className="w-3.5 h-3.5" />
-                      <span>تحقق بالذكاء الاصطناعي</span>
+                      <span>تحقق</span>
                     </>
                   )}
                 </button>
@@ -441,7 +441,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             </div>
 
             {/* Advance to next turn */}
-            <div className="pt-4 flex items-center justify-between border-t border-white/10">
+            <div className="pt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-white/10">
               <button
                 onClick={handleRestartScenario}
                 className="px-4 py-2.5 rounded-xl text-xs font-bold text-[#b9b6d5] hover:text-white cursor-pointer flex items-center gap-1.5"

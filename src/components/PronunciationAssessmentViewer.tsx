@@ -267,7 +267,7 @@ export const PronunciationAssessmentViewer: React.FC<PronunciationAssessmentView
                 {recordingState === 'IDLE' && 'الميكروفون في وضع الاستعداد - اضغط الزر للتسجيل'}
                 {recordingState === 'REQUESTING_PERMISSION' && 'جاري طلب إذن الميكروفون من المتصفح...'}
                 {recordingState === 'PROCESSING' && 'جاري تجهيز مقطع الصوت المسجل...'}
-                {recordingState === 'EVALUATING' && 'الذكاء الاصطناعي يحلل الصوت ويقيّم مخارج الحروف...'}
+                {recordingState === 'EVALUATING' && 'جاري تحليل الصوت وتقييم النطق...'}
                 {recordingState === 'COMPLETED' && 'اكتمل التحليل الصوتي بنجاح!'}
                 {recordingState === 'PERMISSION_DENIED' && 'تم رفض إذن الميكروفون. يرجى تفعيله من إعدادات المتصفح.'}
                 {recordingState === 'MICROPHONE_UNAVAILABLE' && 'لم يتم العثور على ميكروفون متصل بالجهاز.'}
