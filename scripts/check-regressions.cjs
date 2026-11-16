@@ -20,6 +20,7 @@ const checks = [
   'check-exam-vocab-retry.cjs',
   'check-question-cycles.cjs',
   'check-sentence-stats.cjs',
+  'check-copy-success.cjs',
   'check_progress_fallbacks.cjs',
   'check_recovery_fallbacks.cjs',
 ];
