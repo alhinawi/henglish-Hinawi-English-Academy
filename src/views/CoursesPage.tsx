@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { COURSES_CATALOG, CourseItem } from '../data/coursesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { PageRoute } from '../types';
 import { playSound } from '../utils/audio';
 import { BookOpen, Star, Clock, Users, ArrowRight, Sparkles, Filter, Rocket, RefreshCw, GitBranch, Cpu, Mic2 } from 'lucide-react';
@@ -19,6 +20,7 @@ interface CoursesPageProps {
 
 export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
   const [filterLevel, setFilterLevel] = useState<string>('All');
+  const appText = useAppTextMap('coursesData');
 
   const levels = ['All', 'مبتدئ', 'متوسط', 'متقدم', 'شامل'];
 
@@ -133,7 +135,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                     ? 'bg-[#ffd166]/90 text-[#21132c] shadow-md'
                     : 'bg-[#09091a]/80 text-[#41e7ff] border border-white/15'
                 }`}>
-                  {course.tag}
+                  {txText(appText, course.tag)}
                 </span>
 
                 {typeof course.rating === 'number' && (
@@ -154,7 +156,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                   </span>
                   <div>
                     <h3 className="text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors leading-snug">
-                      {course.title}
+                      {txText(appText, course.title)}
                     </h3>
                     <span className="en block text-xs font-bold text-[#b9b6d5] mt-0.5">
                       {course.titleEn}
@@ -163,7 +165,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 </div>
 
                 <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed line-clamp-3 mb-4">
-                  {course.description}
+                  {txText(appText, course.description)}
                 </p>
               </div>
 
@@ -172,12 +174,12 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <div className="flex items-center justify-between text-xs text-[#dedbf4]">
                   <span className="flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>{course.countLabel ?? `${course.lessonsCount} دروس`}</span>
+                    <span>{course.countLabel ? txText(appText, course.countLabel) : `${course.lessonsCount} دروس`}</span>
                   </span>
                   {course.duration && (
                     <span className="flex items-center gap-1">
                       <Clock className="w-3.5 h-3.5 text-[#ffd166]" />
-                      <span>{course.duration}</span>
+                      <span>{txText(appText, course.duration)}</span>
                     </span>
                   )}
                   {typeof course.studentsCount === 'number' && (
@@ -195,7 +197,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                       : 'bg-white/10 hover:bg-white/20 text-white'
                   }`}
                 >
-                  <span>{course.ctaLabel ?? 'استعرض المحتوى'}</span>
+                  <span>{course.ctaLabel ? txText(appText, course.ctaLabel) : 'استعرض المحتوى'}</span>
                   <ArrowRight className="w-4 h-4 rotate-180" />
                 </button>
               </div>
