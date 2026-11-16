@@ -2420,5 +2420,21 @@
   "tpr.show": "عرض الإجابات المقترحة",
   "tpr.answers": "إجابات مقترحة، وليست كل الترجمات الممكنة",
   "tpr.previous": "السابق",
-  "tpr.next": "التالي"
+  "tpr.next": "التالي",
+  "wam.title": "التحليل المعجمي والصوتي",
+  "wam.listen": "استمع للنطق",
+  "wam.meaning": "المعنى في السياق الحالي:",
+  "wam.example": "مثال تطبيقي في جملة:",
+  "wam.synonyms": "المرادفات (Synonyms):",
+  "wam.antonyms": "المتضادات (Antonyms):",
+  "wam.collocations": "متلازمات لفظية شائعة (Common Collocations):",
+  "wam.saveTitle": "حفظ في المفردات ونظام التكرار المتباعد (SRS)",
+  "wam.algorithm": "خوارزمية SM-2",
+  "wam.collection": "اختر المجموعة أو المجلد:",
+  "wam.noCollection": "بدون مجموعة خاصة (المفردات العامة)",
+  "wam.notes": "ملاحظاتك الشخصية للتذكر (اختياري):",
+  "wam.placeholder": "مثال: استخدمتها في إيميل شركة كذا...",
+  "wam.saved": "تم الحفظ في بنك المفردات وجدول المراجعة!",
+  "wam.save": "حفظ في مفرداتي (Save to My Vocabulary)",
+  "wam.unspecified": "غير محدد"
 }
