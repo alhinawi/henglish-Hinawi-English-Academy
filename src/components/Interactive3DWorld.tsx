@@ -13,6 +13,7 @@ import { RGBELoader } from 'three/addons/loaders/RGBELoader.js';
 import { PageRoute } from '../types';
 import { REAL_LIFE_SCENARIOS, SimulationScenario } from '../data/realLifeSimulationsData';
 import { playSound } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import {
   Sparkles,
   Compass,
@@ -57,85 +58,85 @@ const LOCATIONS: WorldLocation[] = [
   {
     id: 'airport',
     nameEn: 'International Airport',
-    nameAr: 'مطار القاهرة الدولي - صالة 3',
+    nameAr: 'w3.loc.airport.name',
     scenarioId: 'sim-airport-checkin',
     category: 'Travel & Aviation',
     icon: '',
     position: [-14, 0, -10],
     color: 0x41e7ff, // Cyan Neon
     buildingHeight: 5,
-    descriptionAr: 'مواقف إنهاء إجراءات السفر، وزن الحقائب، بطاقات الصعود، والاستفسار عن بوابات الإقلاع.',
+    descriptionAr: 'w3.loc.airport.desc',
     npcName: 'Officer Sarah',
     npcRole: 'Airline Check-in Agent',
   },
   {
     id: 'restaurant',
     nameEn: 'The Ivy Restaurant & Café',
-    nameAr: 'مطعم و كافيه الضيافة',
+    nameAr: 'w3.loc.restaurant.name',
     scenarioId: 'sim-restaurant-ordering',
     category: 'Hospitality',
     icon: '',
     position: [-6, 0, 10],
     color: 0xffd166, // Gold Neon
     buildingHeight: 4,
-    descriptionAr: 'طلب الطعام الفاخر، حجز الطاولات، السؤال عن مكونات الأطباق، وطلب الحساب بلباقة.',
+    descriptionAr: 'w3.loc.restaurant.desc',
     npcName: 'Chef Marco',
     npcRole: 'Head Waiter & Sommelier',
   },
   {
     id: 'hospital',
     nameEn: 'St. Mary Medical Center',
-    nameAr: 'المركز الطبي والعيادات التخصصية',
+    nameAr: 'w3.loc.hospital.name',
     scenarioId: 'sim-doctor-appointment',
     category: 'Healthcare',
     icon: '',
     position: [12, 0, -12],
     color: 0xff4f9a, // Pink Neon
     buildingHeight: 6,
-    descriptionAr: 'شرح الأعراض المرضية، مواعيد الطبيب، وصف الأدوية، والصيدلية.',
+    descriptionAr: 'w3.loc.hospital.desc',
     npcName: 'Dr. Emily Watson',
     npcRole: 'General Practitioner',
   },
   {
     id: 'tech-office',
     nameEn: 'Tech Innovation Hub',
-    nameAr: 'برج التكنولوجيا ومقابلات العمل',
+    nameAr: 'w3.loc.tech-office.name',
     scenarioId: 'sim-job-interview',
     category: 'Business & Careers',
     icon: '',
     position: [14, 0, 8],
     color: 0xc4ff55, // Lime Neon
     buildingHeight: 8,
-    descriptionAr: 'مقابلات التوظيف بالإنجليزية، اجتماعات تطوير المنتجات، والتفاوض الوظيفي.',
+    descriptionAr: 'w3.loc.tech-office.desc',
     npcName: 'David Vance',
     npcRole: 'Senior Talent Acquisition',
   },
   {
     id: 'university',
     nameEn: 'Hinawi Central Academy',
-    nameAr: 'المركز الرئيسي لـ Henglish Academy',
+    nameAr: 'w3.loc.university.name',
     scenarioId: 'academy-guide',
     category: 'Academic Campus',
     icon: '',
     position: [0, 0, 0],
     color: 0x9b7bff, // Purple Neon
     buildingHeight: 7,
-    descriptionAr: 'مقر المحاضرات المباشرة، الاختبارات، والمكتبة المركزية الشاملة.',
+    descriptionAr: 'w3.loc.university.desc',
     npcName: 'Prof. Hinawi',
     npcRole: 'Chief Academic Director',
   },
   {
-    id: 'clothing', nameEn: 'Clothing Studio', nameAr: 'محل الملابس',
+    id: 'clothing', nameEn: 'Clothing Studio', nameAr: 'w3.loc.clothing.name',
     scenarioId: 'sim-clothing-shopping', category: 'Shopping', icon: '',
     position: [-15, 0, 9], color: 0xdfa5b5, buildingHeight: 4,
-    descriptionAr: 'السؤال عن المقاسات والألوان والسعر وتجربة الملابس بالإنجليزي.',
+    descriptionAr: 'w3.loc.clothing.desc',
     npcName: 'Mona', npcRole: 'Shop Assistant',
   },
   {
-    id: 'supermarket', nameEn: 'Neighbourhood Market', nameAr: 'السوبر ماركت',
+    id: 'supermarket', nameEn: 'Neighbourhood Market', nameAr: 'w3.loc.supermarket.name',
     scenarioId: 'sim-supermarket-shopping', category: 'Everyday English', icon: '',
     position: [0, 0, -18], color: 0x91b5a1, buildingHeight: 4,
-    descriptionAr: 'السؤال عن أماكن المنتجات والدفع عند الكاشير بالإنجليزي.',
+    descriptionAr: 'w3.loc.supermarket.desc',
     npcName: 'Omar', npcRole: 'Store Assistant',
   },
 ];
@@ -145,6 +146,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   onSelectScenario,
 }) => {
   const soundRef = useRef<WorldAudio | null>(null);
+  const { t } = useLanguage();
   const [muted, setMuted] = useState(false);
   const mutedRef = useRef(false);
   const [soundNotice, setSoundNotice] = useState('');
@@ -155,8 +157,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   const [voiceStatus, setVoiceStatus] = useState('');
   const greet = useCallback((id: string) => {
     setGreetingId(id);
-    if (mutedRef.current) { setVoiceStatus('الصوت مقفول. شغّله من زر الصوت.'); return; }
-    void playWorldGreeting(id).then(mode => setVoiceStatus(mode === 'browser' ? 'صوت المتصفح مؤقتًا. اللهجة حسب الأصوات الموجودة على جهازك.' : mode === 'clip' ? 'تسجيل صوتي مصري' : 'مفيش صوت عربي متاح على الجهاز. التحية مكتوبة تحت.'));
+    if (mutedRef.current) { setVoiceStatus(t('w3.voice.muted')); return; }
+    void playWorldGreeting(id).then(mode => setVoiceStatus(mode === 'browser' ? t('w3.voice.browser') : mode === 'clip' ? t('w3.voice.clip') : t('w3.voice.none')));
   }, []);
   const [immersive, setImmersive] = useState(false);
   const [fullscreenHint, setFullscreenHint] = useState('');
@@ -180,19 +182,19 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   }, []);
   const enterWorld = () => {
     soundRef.current ??= new WorldAudio();
-    void soundRef.current.start().then(() => soundRef.current?.chime()).catch(() => setSoundNotice('تعذر تشغيل الصوت. جرّب زر الصوت بعد الدخول.'));
+    void soundRef.current.start().then(() => soundRef.current?.chime()).catch(() => setSoundNotice(t('w3.soundError')));
     // The request must run directly in a user gesture, after the portal is mounted.
     flushSync(() => { setIs3DMode(true); setImmersive(true); });
     const element = worldRef.current;
     if (!element?.requestFullscreen) {
-      setFullscreenHint('وضع ملء الشاشة داخل الصفحة. يمكنك تدوير الموبايل أفقيًا.');
+      setFullscreenHint(t('w3.fsInline'));
       return;
     }
     void element.requestFullscreen().then(() => {
       const orientation = screen.orientation as ScreenOrientation & { lock?: (value: string) => Promise<void> };
       void orientation?.lock?.('landscape').catch(() => {});
     }).catch(() => {
-      setFullscreenHint('المتصفح لا يسمح بإخفاء شريط العنوان. العالم مفتوح بحجم الشاشة داخل الصفحة.');
+      setFullscreenHint(t('w3.fsNoHide'));
     });
   };
   useEffect(() => {
@@ -596,7 +598,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       );
       canopy.position.set(0, 2.42, 2.45);
       bGroup.add(canopy);
-      const signTex = makeLabelTexture(loc.nameAr, loc.nameEn, loc.color, 512, 150);
+      const signTex = makeLabelTexture(t(loc.nameAr), loc.nameEn, loc.color, 512, 150);
       const sign = new THREE.Mesh(
         new THREE.PlaneGeometry(3.1, 0.9),
         new THREE.MeshBasicMaterial({ map: signTex, transparent: true })
@@ -1010,14 +1012,14 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
 
 
   const content = (
-    <div ref={worldRef} role={immersive ? 'dialog' : undefined} aria-modal={immersive || undefined} aria-label={immersive ? 'المدينة الإنجليزية' : undefined}
+    <div ref={worldRef} role={immersive ? 'dialog' : undefined} aria-modal={immersive || undefined} aria-label={immersive ? t('w3.cityAria') : undefined}
       className={immersive ? 'fixed inset-0 z-[9999] bg-[#0a091a] text-right flex flex-col' : 'space-y-6 text-right'}
       style={immersive ? { height: '100dvh', paddingTop: 'env(safe-area-inset-top)', paddingBottom: 'env(safe-area-inset-bottom)' } : undefined}>
       <div className={immersive ? "absolute top-3 left-3 z-[60] flex gap-1.5 flex-wrap max-w-[calc(100%-1.5rem)]" : "flex gap-2 flex-wrap"} style={{ left: 'max(12px, env(safe-area-inset-left))' }}>
-        <button onClick={() => { exitWorld(); onNavigate('dashboard'); }} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white font-bold text-xs">الرئيسية</button>
-        <button onClick={() => { exitWorld(); onNavigate('real-life'); }} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white font-bold text-xs">رجوع</button>
-        {immersive && <button onClick={() => { const value = !muted; mutedRef.current = value; setMuted(value); if (value) stopWorldGreeting(); soundRef.current?.mute(value); if (!value) void soundRef.current?.start(); }} aria-label={muted ? 'تشغيل الصوت' : 'كتم الصوت'} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white text-xs">{muted ? 'الصوت مقفول' : 'الصوت شغال'}</button>}
-        {immersive && <button onClick={exitWorld} className="min-h-11 px-4 rounded-xl bg-black/80 border border-white/30 text-white font-bold flex items-center gap-2"><X className="w-4 h-4" />خروج</button>}
+        <button onClick={() => { exitWorld(); onNavigate('dashboard'); }} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white font-bold text-xs">{t('w3.home')}</button>
+        <button onClick={() => { exitWorld(); onNavigate('real-life'); }} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white font-bold text-xs">{t('w3.back')}</button>
+        {immersive && <button onClick={() => { const value = !muted; mutedRef.current = value; setMuted(value); if (value) stopWorldGreeting(); soundRef.current?.mute(value); if (!value) void soundRef.current?.start(); }} aria-label={muted ? t('w3.unmute') : t('w3.muteAria')} className="min-h-11 px-3 rounded-xl bg-black/80 border border-white/30 text-white text-xs">{muted ? t('w3.mutedOn') : t('w3.mutedOff')}</button>}
+        {immersive && <button onClick={exitWorld} className="min-h-11 px-4 rounded-xl bg-black/80 border border-white/30 text-white font-bold flex items-center gap-2"><X className="w-4 h-4" />{t('w3.exit')}</button>}
       </div>
       {immersive && soundNotice && <p role="status" className="absolute top-20 left-3 z-30 text-white bg-black/80 p-2 text-xs">{soundNotice}</p>}
       {immersive && fullscreenHint && <p role="status" className="absolute top-16 left-3 right-3 z-30 bg-black/80 text-white text-xs p-3 rounded-xl pointer-events-none">{fullscreenHint}</p>}
@@ -1027,11 +1029,11 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>HENGLISH 3D OPEN WORLD • عالم المحاكاة المفتوح</span>
+            <span>{t('w3.headerBadge')}</span>
           </div>
-          <h3 className="text-2xl font-black text-white mt-1">المدينة الإنجليزية ثلاثية الأبعاد التفاعلية</h3>
+          <h3 className="text-2xl font-black text-white mt-1">{t('w3.title')}</h3>
           <p className="text-xs text-[#b9b6d5]">
-            تحرك بشخصيتك داخل المدينة بلوحة المفاتيح (W, A, S, D أو الأسهم) أو بعصا التحكم على الموبايل، اقترب من الشخصيات (NPCs) وتحدث معهم بالإنجليزية.
+            {t('w3.subtitle')}
           </p>
         </div>
 
@@ -1049,7 +1051,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             }`}
           >
             <Compass className="w-3.5 h-3.5" />
-            <span>عالم 3D التفاعلي</span>
+            <span>{t('w3.mode3d')}</span>
           </button>
 
           <button
@@ -1064,7 +1066,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             }`}
           >
             <Layers className="w-3.5 h-3.5" />
-            <span>الخريطة السريعة (2D)</span>
+            <span>{t('w3.mode2d')}</span>
           </button>
         </div>
       </div>
@@ -1072,9 +1074,9 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       {/* 3D Canvas Viewport */}
       {is3DMode ? (
         <div className={immersive ? 'relative flex-1 min-h-0 overflow-hidden bg-[#0a091a]' : 'relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-[#0a091a]'}>
-          {!immersive && <button onClick={enterWorld} className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-3 bg-black/35 text-white cursor-pointer" aria-label="دخول العالم بملء الشاشة">
-            <span className="rounded-2xl px-6 py-4 bg-[#ffd166] text-[#0c0b20] font-black flex items-center gap-3 shadow-xl"><Maximize2 className="w-5 h-5" />دخول العالم بملء الشاشة</span>
-            <span className="absolute top-20 rounded-xl px-3 py-2 bg-black/70 text-xs">تحرك بحرية واقترب من الشخصيات للتحدث</span>
+          {!immersive && <button onClick={enterWorld} className="absolute inset-0 z-30 flex flex-col items-center justify-center gap-3 bg-black/35 text-white cursor-pointer" aria-label={t('w3.enterFullscreen')}>
+            <span className="rounded-2xl px-6 py-4 bg-[#ffd166] text-[#0c0b20] font-black flex items-center gap-3 shadow-xl"><Maximize2 className="w-5 h-5" />{t('w3.enterFullscreen')}</span>
+            <span className="absolute top-20 rounded-xl px-3 py-2 bg-black/70 text-xs">{t('w3.moveHint')}</span>
           </button>}
           
           {/* Real Three.js Canvas Container */}
@@ -1089,7 +1091,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               onPointerUp={handleJoyEnd}
               onPointerCancel={handleJoyEnd}
               onLostPointerCapture={handleJoyEnd}
-              aria-label="عصا التحكم للتحرك"
+              aria-label={t('w3.joystickAria')}
             >
               <div ref={joyKnobRef} className="w-12 h-12 rounded-full bg-linear-to-br from-[#ffd166] to-[#ff9c66] shadow-lg shadow-[#ffd166]/30 pointer-events-none" />
             </div>
@@ -1103,13 +1105,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
             </div>
             {showControlsHint && <div className="px-3 py-1.5 rounded-xl bg-black/70 backdrop-blur-md border border-white/20 text-[11px] font-bold text-white flex items-center gap-1.5">
               <Gamepad2 className="w-3.5 h-3.5" />
-              <span>{isTouchDevice ? 'اسحب عصا التحكم للتحرك' : 'تحرك بـ W, A, S, D أو الأسهم'}</span>
+              <span>{isTouchDevice ? t('w3.controlsTouch') : t('w3.controlsKeys')}</span>
             </div>}
           </div>
 
           {greetingId && WORLD_GREETINGS[greetingId] && (
             <div role="status" className="absolute top-24 left-3 right-3 z-20 max-w-lg mx-auto rounded-2xl bg-[#101521]/95 text-white p-4 border border-white/20 text-xs shadow-xl max-h-[32vh] overflow-auto">
-              <button aria-label="إغلاق الترجمة" onClick={() => { setGreetingId(null); stopWorldGreeting(); }} className="float-left p-1"><X className="w-4 h-4" /></button>
+              <button aria-label={t('w3.closeCaptions')} onClick={() => { setGreetingId(null); stopWorldGreeting(); }} className="float-left p-1"><X className="w-4 h-4" /></button>
               <p className="font-bold leading-7">{WORLD_GREETINGS[greetingId].ar}</p>
               <p dir="ltr" className="text-left leading-6 text-cyan-100 mt-2">{WORLD_GREETINGS[greetingId].en}</p>
               <p className="text-[10px] text-slate-300 mt-2">{voiceStatus}</p>
@@ -1118,7 +1120,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           {/* Proximity Interaction Prompt with NPC */}
           {nearbyNpc && immersive && (
             <div className="absolute bottom-36 sm:bottom-24 left-1/2 -translate-x-1/2 z-20 w-[calc(100%-2rem)] max-w-[22rem]">
-              <button onClick={() => greet(nearbyNpc.id)} className="mb-3 mx-auto flex items-center justify-center gap-2 min-h-11 px-4 rounded-xl bg-black/80 text-white border border-white/25 text-xs font-bold"><Volume2 className="w-4 h-4" />اسمع الترحيب بالمصري</button>
+              <button onClick={() => greet(nearbyNpc.id)} className="mb-3 mx-auto flex items-center justify-center gap-2 min-h-11 px-4 rounded-xl bg-black/80 text-white border border-white/25 text-xs font-bold"><Volume2 className="w-4 h-4" />{t('w3.hearGreeting')}</button>
               <button
                 onClick={() => {
                   playSound('click');
@@ -1128,8 +1130,8 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               >
                 <MessageSquare className="w-4 h-4 fill-current shrink-0" />
                 <span className="text-center leading-relaxed">
-                  <span className="block whitespace-nowrap">تحدث مع <bdi>{nearbyNpc.npcName}</bdi></span>
-                  <span className="block text-xs font-semibold">اضغط E أو انقر</span>
+                  <span className="block whitespace-nowrap">{t('w3.talkTo')} <bdi>{nearbyNpc.npcName}</bdi></span>
+                  <span className="block text-xs font-semibold">{t('w3.pressE')}</span>
                 </span>
               </button>
             </div>
@@ -1139,7 +1141,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           <div className={`${immersive ? "flex" : "hidden"} absolute bottom-4 right-4 items-center gap-1.5 z-10 bg-black/60 backdrop-blur-md p-1.5 rounded-2xl border border-white/10 overflow-x-auto max-w-[calc(100%-10rem)]`}>
             <span className="text-[10px] text-[#ffd166] font-bold px-2 flex items-center gap-1">
               <Navigation className="w-3 h-3" />
-              انتقال سريع:
+              {t('w3.fastTravel')}
             </span>
             {LOCATIONS.map(loc => (
               <button
@@ -1149,11 +1151,11 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                   travelToRef.current?.(loc);
                   greet(loc.id);
                 }}
-                aria-label={`انتقال إلى ${loc.nameAr}`}
+                aria-label={t('w3.travelTo').replace('{name}', t(loc.nameAr))}
                 className="px-2.5 py-1 rounded-xl bg-white/5 hover:bg-white/15 text-white text-xs font-bold transition-colors cursor-pointer flex items-center gap-1 shrink-0"
               >
                 <span>{loc.icon}</span>
-                <span>{loc.nameAr.split(' - ')[0]}</span>
+                <span>{t(loc.nameAr).split(' - ')[0]}</span>
               </button>
             ))}
           </div>
@@ -1178,14 +1180,14 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 </span>
               </div>
               <div>
-                <h4 className="text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors">{loc.nameAr}</h4>
+                <h4 className="text-lg font-black text-white group-hover:text-[#41e7ff] transition-colors">{t(loc.nameAr)}</h4>
                 <div className="text-xs font-mono text-[#b9b6d5]">{loc.nameEn}</div>
               </div>
-              <p className="text-xs text-[#dedbf4] leading-relaxed">{loc.descriptionAr}</p>
+              <p className="text-xs text-[#dedbf4] leading-relaxed">{t(loc.descriptionAr)}</p>
               <div className="pt-2 border-t border-white/5 flex items-center justify-between text-xs">
-                <span className="text-[#c4ff55] font-bold">الشخصية: {loc.npcName}</span>
+                <span className="text-[#c4ff55] font-bold">{t('w3.character')} {loc.npcName}</span>
                 <span className="text-[#ffd166] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  دخول المحاكاة <ChevronLeft className="w-3.5 h-3.5" />
+                  {t('w3.enterSim')} <ChevronLeft className="w-3.5 h-3.5" />
                 </span>
               </div>
             </div>
@@ -1207,7 +1209,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               {/* Close Button */}
               <button
                 onClick={() => { setSelectedLocation(null); setGreetingId(null); stopWorldGreeting(); }}
-                aria-label="إغلاق المحادثة"
+                aria-label={t('w3.closeChat')}
                 className="absolute top-6 left-6 p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-colors cursor-pointer"
               >
                 <X className="w-5 h-5" />
@@ -1227,7 +1229,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               <div className="rounded-2xl p-4 bg-white/5 border border-white/10 space-y-2 text-sm">
                 <p className="text-white leading-7">{WORLD_GREETINGS[selectedLocation.id]?.ar}</p>
                 <p dir="ltr" className="text-left text-cyan-100 text-xs">{WORLD_GREETINGS[selectedLocation.id]?.en}</p>
-                <button onClick={() => greet(selectedLocation.id)} className="min-h-11 text-[#ffd166] flex items-center gap-2"><Volume2 className="w-4 h-4" />إعادة الترحيب بالمصري</button>
+                <button onClick={() => greet(selectedLocation.id)} className="min-h-11 text-[#ffd166] flex items-center gap-2"><Volume2 className="w-4 h-4" />{t('w3.replayGreeting')}</button>
                 <p className="text-[10px] text-slate-300">{voiceStatus}</p>
               </div>
               {/* NPC Intro Card */}
@@ -1236,13 +1238,13 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                   <User className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="text-xs text-[#b9b6d5]">شخصية التدريب:</div>
+                  <div className="text-xs text-[#b9b6d5]">{t('w3.trainer')}</div>
                   <div className="text-sm font-bold text-white">{selectedLocation.npcName} — <span className="text-xs text-[#41e7ff]">{selectedLocation.npcRole}</span></div>
                 </div>
               </div>
 
               <p className="text-sm text-[#dedbf4] leading-relaxed">
-                {selectedLocation.descriptionAr}
+                {t(selectedLocation.descriptionAr)}
               </p>
 
               {/* Action Buttons */}
@@ -1265,7 +1267,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                   className="w-full sm:flex-1 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-sm shadow-xl hover:brightness-110 flex items-center justify-center gap-2 cursor-pointer transition-all"
                 >
                   <MessageSquare className="w-4 h-4 fill-current" />
-                  <span>بدء تدريب المحادثة الآن</span>
+                  <span>{t('w3.startTraining')}</span>
                 </button>
 
                 <button
@@ -1278,7 +1280,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                   className="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-bold text-xs flex items-center justify-center gap-2 cursor-pointer transition-colors"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  <span>معمل النطق الصوتي</span>
+                  <span>{t('w3.pronLab')}</span>
                 </button>
               </div>
 
