@@ -2643,5 +2643,18 @@
   "yt.open": "Video auf YouTube öffnen",
   "yt.loading": "Video wird geladen...",
   "yt.watch": "Auf YouTube ansehen",
-  "yt.timestamps": "Wichtige Stellen im Video:"
+  "yt.timestamps": "Wichtige Stellen im Video:",
+  "sb.chip": "INTERAKTIVER SATZBAU",
+  "sb.title": "Satzbau",
+  "sb.intro": "Ordne die Wörter zu einem korrekten Satz im Future Perfect.",
+  "sb.reset": "Aufgabe neu starten",
+  "sb.listen": "Satz anhören",
+  "sb.hideHint": "Tipp ausblenden",
+  "sb.hint": "Tipp anzeigen",
+  "sb.empty": "Tippe auf die Wörter unten, um sie hier anzuordnen.",
+  "sb.correct": "Richtig! Gut gemacht.",
+  "sb.wrong": "Die Reihenfolge stimmt noch nicht. Ordne die Wörter neu oder sieh dir den Tipp an.",
+  "sb.check": "Antwort prüfen",
+  "sb.next": "Nächste Aufgabe",
+  "sb.count": "Aufgabe {current} von {total}"
 }

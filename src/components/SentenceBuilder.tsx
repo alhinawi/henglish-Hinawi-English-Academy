@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { SENTENCE_BUILDER_CHALLENGES } from '../data/gamesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
@@ -6,6 +7,8 @@ import { Volume2, RotateCcw, Lightbulb, CheckCircle, ArrowRight, Sparkles } from
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const SentenceBuilder: React.FC = () => {
+  const { t, lang: language } = useLanguage();
+  const isAr = language === 'ar';
   const [challengeIndex, setChallengeIndex] = useState(0);
   const appText = useAppTextMap('gamesData');
   const current = SENTENCE_BUILDER_CHALLENGES[challengeIndex];
@@ -70,30 +73,30 @@ export const SentenceBuilder: React.FC = () => {
   };
 
   return (
-    <div className="glass-panel rounded-3xl p-6 sm:p-8 relative overflow-hidden">
+    <div dir={isAr ? 'rtl' : 'ltr'} className="glass-panel rounded-3xl p-6 sm:p-8 relative overflow-hidden">
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30 mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>INTERACTIVE SENTENCE BUILDER</span>
+            <span>{t('sb.chip')}</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white">
-            معمل بناء الجملة (Sentence Construction)
+            {t('sb.title')}
           </h3>
           <p className="text-sm text-[#b9b6d5] mt-1">
-            رتب الكلمات لبناء جملة مستقبل تام صحيحة نحوياً وسياقياً.
+            {t('sb.intro')}
           </p>
         </div>
 
         <div className="flex items-center gap-2">
           <span className="text-xs font-bold text-[#b9b6d5] px-3 py-1 rounded-xl bg-white/5 border border-white/10">
-            تحدي {challengeIndex + 1} من {SENTENCE_BUILDER_CHALLENGES.length}
+            {t('sb.count').replace('{current}', String(challengeIndex + 1)).replace('{total}', String(SENTENCE_BUILDER_CHALLENGES.length))}
           </span>
           <button
             onClick={() => resetCurrent()}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-[#dedbf4] hover:text-white transition-colors cursor-pointer"
-            title="إعادة التحدي الحالي"
+            title={t('sb.reset')}
           >
             <RotateCcw className="w-4 h-4" />
           </button>
@@ -101,7 +104,7 @@ export const SentenceBuilder: React.FC = () => {
       </div>
 
       {/* Target Audio Listen Button */}
-      <div className="flex items-center gap-3 mb-4">
+      <div className="flex flex-wrap items-center gap-3 mb-4">
         <button
           onClick={() => {
             playSound('click');
@@ -110,7 +113,7 @@ export const SentenceBuilder: React.FC = () => {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#41e7ff]/15 hover:bg-[#41e7ff]/25 text-[#41e7ff] text-xs font-bold transition-colors cursor-pointer border border-[#41e7ff]/30"
         >
           <Volume2 className="w-4 h-4" />
-          <span>استمع لنطق الجملة الصحيحة (Listen)</span>
+          <span>{t('sb.listen')}</span>
         </button>
 
         <button
@@ -121,7 +124,7 @@ export const SentenceBuilder: React.FC = () => {
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-[#ffd166] text-xs font-bold transition-colors cursor-pointer border border-white/10"
         >
           <Lightbulb className="w-3.5 h-3.5" />
-          <span>{showHint ? 'إخفاء التلميح' : 'تلميح بالمصري'}</span>
+          <span>{showHint ? t('sb.hideHint') : t('sb.hint')}</span>
         </button>
       </div>
 
@@ -151,8 +154,8 @@ export const SentenceBuilder: React.FC = () => {
           : 'bg-[#09091a] border-dashed border-white/20'
       }`}>
         {selectedWords.length === 0 ? (
-          <span className="text-sm text-[#b9b6d5]/60 italic mx-auto text-center" dir="rtl">
-            اضغط على الكلمات بالأسفل لترتيبها هنا بالترتيب الصحيح...
+          <span className="text-sm text-[#b9b6d5]/60 italic mx-auto text-center" dir={isAr ? 'rtl' : 'ltr'} lang={language}>
+            {t('sb.empty')}
           </span>
         ) : (
           selectedWords.map((word, idx) => (
@@ -194,12 +197,12 @@ export const SentenceBuilder: React.FC = () => {
           {isCorrect === true && (
             <div className="flex items-center gap-2 text-[#c4ff55] font-black text-sm sm:text-base">
               <CheckCircle className="w-5 h-5" />
-              <span>إجابة عبقرية وصحيحة تماماً! أحسنت</span>
+              <span>{t('sb.correct')}</span>
             </div>
           )}
           {isCorrect === false && (
             <div className="text-[#ff4f9a] font-bold text-sm">
-             الترتيب مش مظبوط تماماً. حاول تعدل ترتيب الكلمات أو راجع التلميح.
+             {t('sb.wrong')}
             </div>
           )}
         </div>
@@ -210,7 +213,7 @@ export const SentenceBuilder: React.FC = () => {
               onClick={() => checkResult()}
               className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-xs sm:text-sm hover:brightness-110 cursor-pointer shadow-lg transition-transform hover:-translate-y-0.5"
             >
-              تحقق من الإجابة
+              {t('sb.check')}
             </button>
           )}
 
@@ -219,8 +222,8 @@ export const SentenceBuilder: React.FC = () => {
               onClick={handleNextChallenge}
               className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 cursor-pointer shadow-lg flex items-center gap-2 transition-transform hover:-translate-y-0.5"
             >
-              <span>التحدي التالي</span>
-              <ArrowRight className="w-4 h-4 rotate-180" />
+              <span>{t('sb.next')}</span>
+              <ArrowRight className={`w-4 h-4 ${isAr ? 'rotate-180' : ''}`} />
             </button>
           )}
         </div>
