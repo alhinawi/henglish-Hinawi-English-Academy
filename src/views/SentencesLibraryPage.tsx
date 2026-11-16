@@ -29,6 +29,7 @@ import {
 } from '../services/sentenceSrsService';
 import { SentenceCard } from '../components/SentenceCard';
 import { playSound } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import { speakText } from '../utils/voiceEngine';
 import {
   BookA,
@@ -84,18 +85,18 @@ type LearningMode =
 const CEFR_LEVELS: CEFRLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
 
 const SECTIONS_METADATA = [
-  { id: 'Section 1 — Everyday English', title: 'Everyday English', titleAr: 'الإنجليزية اليومية والتواصل الأساسي', icon: '', subCount: 20 },
-  { id: 'Section 2 — Daily Activities', title: 'Daily Activities', titleAr: 'الأنشطة والروتين اليومي', icon: '⏰', subCount: 13 },
-  { id: 'Section 3 — Social Conversations', title: 'Social Conversations', titleAr: 'المحادثات الاجتماعية وبناء العلاقات', icon: '', subCount: 13 },
-  { id: 'Section 4 — Travel and Tourism', title: 'Travel & Tourism', titleAr: 'السفر والسياحة والمطارات', icon: '', subCount: 15 },
-  { id: 'Section 5 — Shopping and Money', title: 'Shopping & Money', titleAr: 'التسوق والمعاملات المالية', icon: '', subCount: 11 },
-  { id: 'Section 6 — Work and Business English', title: 'Work & Business', titleAr: 'الإنجليزية المهنية وبيئة العمل', icon: '', subCount: 14 },
-  { id: 'Section 7 — Technology and Modern Life', title: 'Technology & AI', titleAr: 'التكنولوجيا والحياة الرقمية والذكاء الاصطناعي', icon: '', subCount: 10 },
-  { id: 'Section 8 — Health and Lifestyle', title: 'Health & Lifestyle', titleAr: 'الصحة وأسلوب الحياة والاستشارات الطبية', icon: '', subCount: 9 },
-  { id: 'Section 9 — Academic and Intellectual English', title: 'Academic & Intellectual', titleAr: 'الإنجليزية الأكاديمية والبحث العلمي', icon: '', subCount: 10 },
-  { id: 'Section 10 — Advanced Natural English', title: 'Advanced Natural English', titleAr: 'التعبيرات المتقدمة والإنجليزية الفطرية', icon: '', subCount: 10 },
-  { id: 'Section 11 — Grammar-Based Sentences', title: 'Grammar Mastery', titleAr: 'جمل تطبيقية على كافة قواعد الجرامر والأزمنة', icon: '', subCount: 20 },
-  { id: 'Section 12 — Real Conversation Expressions', title: 'Real Spoken English', titleAr: 'تعبيرات المحادثة الواقعية واللغة المحكية الدارجة', icon: '', subCount: 10 },
+  { id: 'Section 1 — Everyday English', title: 'Everyday English', titleAr: 'sl.sec.1', icon: '', subCount: 20 },
+  { id: 'Section 2 — Daily Activities', title: 'Daily Activities', titleAr: 'sl.sec.2', icon: '⏰', subCount: 13 },
+  { id: 'Section 3 — Social Conversations', title: 'Social Conversations', titleAr: 'sl.sec.3', icon: '', subCount: 13 },
+  { id: 'Section 4 — Travel and Tourism', title: 'Travel & Tourism', titleAr: 'sl.sec.4', icon: '', subCount: 15 },
+  { id: 'Section 5 — Shopping and Money', title: 'Shopping & Money', titleAr: 'sl.sec.5', icon: '', subCount: 11 },
+  { id: 'Section 6 — Work and Business English', title: 'Work & Business', titleAr: 'sl.sec.6', icon: '', subCount: 14 },
+  { id: 'Section 7 — Technology and Modern Life', title: 'Technology & AI', titleAr: 'sl.sec.7', icon: '', subCount: 10 },
+  { id: 'Section 8 — Health and Lifestyle', title: 'Health & Lifestyle', titleAr: 'sl.sec.8', icon: '', subCount: 9 },
+  { id: 'Section 9 — Academic and Intellectual English', title: 'Academic & Intellectual', titleAr: 'sl.sec.9', icon: '', subCount: 10 },
+  { id: 'Section 10 — Advanced Natural English', title: 'Advanced Natural English', titleAr: 'sl.sec.10', icon: '', subCount: 10 },
+  { id: 'Section 11 — Grammar-Based Sentences', title: 'Grammar Mastery', titleAr: 'sl.sec.11', icon: '', subCount: 20 },
+  { id: 'Section 12 — Real Conversation Expressions', title: 'Real Spoken English', titleAr: 'sl.sec.12', icon: '', subCount: 10 },
 ];
 
 export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNavigate }) => {
@@ -132,6 +133,14 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
 
   // Listening mode state
   const [isListeningRevealed, setIsListeningRevealed] = useState(false);
+
+  const { t } = useLanguage();
+
+  const cefrCounts = useMemo(() => {
+    const c: Record<string, number> = {};
+    for (const s of allSentences) c[s.cefr] = (c[s.cefr] || 0) + 1;
+    return c;
+  }, [allSentences]);
 
   // Load database once on mount
   useEffect(() => {
@@ -328,13 +337,13 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <div className="space-y-2">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30">
                 <BookA className="w-3.5 h-3.5" />
-                <span>مكتبة الـ 5,000 جملة الإنجليزية القياسية • CEFR A1 - C2</span>
+                <span>{t('sl.heroBadge')}</span>
               </div>
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight flex items-center gap-3">
-                <span>موسوعة التحدث الإنجليزي الذكية</span>
+                <span>{t('sl.heroTitle')}</span>
               </h1>
               <p className="text-sm sm:text-base text-white/70 max-w-2xl leading-relaxed">
-                5,000 جملة واقعية مصنفة بدقة طبقاً للإطار الأوروبي المشترك (CEFR)، ومترجمة للعامية المصرية الفطرية والفصحى مع نطق صوتي فوري وتكرار متباعد SM-2.
+                {t('sl.heroSub')}
               </p>
             </div>
 
@@ -342,22 +351,22 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 shrink-0">
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
                 <span className="text-xl sm:text-2xl font-black text-white block">5,000</span>
-                <span className="text-[11px] font-bold text-white/60">إجمالي الجمل</span>
+                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.total')}</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
                 <span className="text-xl sm:text-2xl font-black text-emerald-400 block">{stats.totalStudied}</span>
-                <span className="text-[11px] font-bold text-white/60">تمت دراستها</span>
+                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.studied')}</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
                 <span className="text-xl sm:text-2xl font-black text-amber-400 block flex items-center justify-center gap-1">
                   <Flame className="w-5 h-5 text-amber-400 fill-current" />
                   <span>{stats.streakDays}</span>
                 </span>
-                <span className="text-[11px] font-bold text-white/60">أيام حماس</span>
+                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.streak')}</span>
               </div>
               <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 text-center">
                 <span className="text-xl sm:text-2xl font-black text-purple-400 block">{stats.masteryScore}%</span>
-                <span className="text-[11px] font-bold text-white/60">نسبة الإتقان</span>
+                <span className="text-[11px] font-bold text-white/60">{t('sl.stats.mastery')}</span>
               </div>
             </div>
           </div>
@@ -365,8 +374,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           {/* CEFR Level Distribution Bar */}
           <div className="space-y-2 pt-4 border-t border-white/10">
             <div className="flex items-center justify-between text-xs text-white/60 font-bold">
-              <span>توزيع مستويات الـ CEFR المعتمدة:</span>
-              <span>100% تغطية شاملة لجميع المراحل</span>
+              <span>{t('sl.dist.title')}</span>
+              <span>{t('sl.dist.coverage')}</span>
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-6 gap-2">
               <button
@@ -380,8 +389,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-emerald-500/10 text-emerald-300 border-emerald-500/20 hover:bg-emerald-500/20'
                 }`}
               >
-                <div className="text-xs font-black">A1 • مبتدئ</div>
-                <div className="text-[11px] opacity-80">851 جملة</div>
+                <div className="text-xs font-black">A1 • {t('sl.level.a1')}</div>
+                <div className="text-[11px] opacity-80">{t('sl.sentCount').replace('{n}', (cefrCounts.A1 ?? 0).toLocaleString('en-US'))}</div>
               </button>
 
               <button
@@ -395,8 +404,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-cyan-500/10 text-cyan-300 border-cyan-500/20 hover:bg-cyan-500/20'
                 }`}
               >
-                <div className="text-xs font-black">A2 • أساسي</div>
-                <div className="text-[11px] opacity-80">1,050 جملة</div>
+                <div className="text-xs font-black">A2 • {t('sl.level.a2')}</div>
+                <div className="text-[11px] opacity-80">{t('sl.sentCount').replace('{n}', (cefrCounts.A2 ?? 0).toLocaleString('en-US'))}</div>
               </button>
 
               <button
@@ -410,8 +419,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-blue-500/10 text-blue-300 border-blue-500/20 hover:bg-blue-500/20'
                 }`}
               >
-                <div className="text-xs font-black">B1 • متوسط</div>
-                <div className="text-[11px] opacity-80">1,150 جملة</div>
+                <div className="text-xs font-black">B1 • {t('sl.level.b1')}</div>
+                <div className="text-[11px] opacity-80">{t('sl.sentCount').replace('{n}', (cefrCounts.B1 ?? 0).toLocaleString('en-US'))}</div>
               </button>
 
               <button
@@ -425,8 +434,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-indigo-500/10 text-indigo-300 border-indigo-500/20 hover:bg-indigo-500/20'
                 }`}
               >
-                <div className="text-xs font-black">B2 • فوق المتوسط</div>
-                <div className="text-[11px] opacity-80">1,050 جملة</div>
+                <div className="text-xs font-black">B2 • {t('sl.level.b2')}</div>
+                <div className="text-[11px] opacity-80">{t('sl.sentCount').replace('{n}', (cefrCounts.B2 ?? 0).toLocaleString('en-US'))}</div>
               </button>
 
               <button
@@ -440,8 +449,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-amber-500/10 text-amber-300 border-amber-500/20 hover:bg-amber-500/20'
                 }`}
               >
-                <div className="text-xs font-black">C1 • متقدم</div>
-                <div className="text-[11px] opacity-80">650 جملة</div>
+                <div className="text-xs font-black">C1 • {t('sl.level.c1')}</div>
+                <div className="text-[11px] opacity-80">{t('sl.sentCount').replace('{n}', (cefrCounts.C1 ?? 0).toLocaleString('en-US'))}</div>
               </button>
 
               <button
@@ -455,8 +464,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                     : 'bg-rose-500/10 text-rose-300 border-rose-500/20 hover:bg-rose-500/20'
                 }`}
               >
-                <div className="text-xs font-black">C2 • طلاقة تامة</div>
-                <div className="text-[11px] opacity-80">249 جملة</div>
+                <div className="text-xs font-black">C2 • {t('sl.level.c2')}</div>
+                <div className="text-[11px] opacity-80">{t('sl.sentCount').replace('{n}', (cefrCounts.C2 ?? 0).toLocaleString('en-US'))}</div>
               </button>
             </div>
           </div>
@@ -468,28 +477,28 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
         <div className="flex items-center justify-between text-xs font-black text-white/70">
           <span className="flex items-center gap-1.5 text-purple-300">
             <Compass className="w-4 h-4" />
-            <span>أنماط الدراسة والممارسة التفاعلية (15 نمطاً):</span>
+            <span>{t('sl.modesTitle')}</span>
           </span>
-          <span className="text-white/40">{allSentences.length} جملة متوفرة</span>
+          <span className="text-white/40">{t('sl.availableCount').replace('{n}', String(allSentences.length))}</span>
         </div>
 
         <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
           {[
-            { id: 'browse', label: 'تصفح الكل', icon: Layers },
-            { id: 'cefr', label: 'المستويات CEFR', icon: Award },
-            { id: 'sections', label: 'الأقسام والمواضيع', icon: Compass },
-            { id: 'grammar', label: 'القواعد والأزمنة', icon: BookA },
-            { id: 'daily', label: 'جملة اليوم', icon: Calendar },
-            { id: 'weekly', label: 'جملة الأسبوع', icon: Sparkles },
-            { id: 'random', label: 'جملة عشوائية', icon: Shuffle },
-            { id: 'favorites', label: 'المفضلة', icon: Heart },
-            { id: 'difficult', label: 'الجمل الصعبة', icon: AlertCircle },
-            { id: 'recent', label: 'دُرست حديثاً', icon: Clock },
-            { id: 'srs', label: 'مراجعة SM-2', icon: Flame },
-            { id: 'practice', label: 'معمل الترتيب', icon: HelpCircle },
-            { id: 'listening', label: 'تحدي الاستماع', icon: Volume2 },
-            { id: 'speaking', label: 'تحدي النطق', icon: Mic },
-            { id: 'translation', label: 'تحدي الترجمة', icon: Languages },
+            { id: 'browse', label: 'sl.mode.browse', icon: Layers },
+            { id: 'cefr', label: 'sl.mode.cefr', icon: Award },
+            { id: 'sections', label: 'sl.mode.sections', icon: Compass },
+            { id: 'grammar', label: 'sl.mode.grammar', icon: BookA },
+            { id: 'daily', label: 'sl.mode.daily', icon: Calendar },
+            { id: 'weekly', label: 'sl.mode.weekly', icon: Sparkles },
+            { id: 'random', label: 'sl.mode.random', icon: Shuffle },
+            { id: 'favorites', label: 'sl.mode.favorites', icon: Heart },
+            { id: 'difficult', label: 'sl.mode.difficult', icon: AlertCircle },
+            { id: 'recent', label: 'sl.mode.recent', icon: Clock },
+            { id: 'srs', label: 'sl.mode.srs', icon: Flame },
+            { id: 'practice', label: 'sl.mode.practice', icon: HelpCircle },
+            { id: 'listening', label: 'sl.mode.listening', icon: Volume2 },
+            { id: 'speaking', label: 'sl.mode.speaking', icon: Mic },
+            { id: 'translation', label: 'sl.mode.translation', icon: Languages },
           ].map(m => {
             const Icon = m.icon;
             const isActive = activeMode === m.id;
@@ -504,7 +513,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
-                <span>{m.label}</span>
+                <span>{t(m.label)}</span>
               </button>
             );
           })}
@@ -519,7 +528,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-between text-amber-300">
             <span className="font-bold flex items-center gap-2">
               <Calendar className="w-5 h-5" />
-              <span>جملة اليوم المختارة بعناية لجميع طلاب المنصة:</span>
+              <span>{t('sl.dailyIntro')}</span>
             </span>
             <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG-u-nu-latn')}</span>
           </div>
@@ -536,7 +545,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           <div className="p-4 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-between text-purple-300">
             <span className="font-bold flex items-center gap-2">
               <Sparkles className="w-5 h-5" />
-              <span>جملة الأسبوع الذهبية المتقدمة:</span>
+              <span>{t('sl.weeklyIntro')}</span>
             </span>
             <span className="text-xs font-mono">Mastery Expression</span>
           </div>
@@ -551,13 +560,13 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
       {activeMode === 'random' && randomSentence && (
         <div className="space-y-4">
           <div className="flex items-center justify-between gap-4">
-            <span className="text-sm font-bold text-white/70">توليد جمل عشوائية للتدريب السريع:</span>
+            <span className="text-sm font-bold text-white/70">{t('sl.randomIntro')}</span>
             <button
               onClick={setupNewRandom}
               className="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white text-xs font-black transition-all cursor-pointer flex items-center gap-2 shadow-lg shadow-purple-600/30"
             >
               <Shuffle className="w-4 h-4" />
-              <span>جملة عشوائية أخرى</span>
+              <span>{t('sl.anotherRandom')}</span>
             </button>
           </div>
           <SentenceCard
@@ -572,10 +581,10 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
         <div className="p-6 sm:p-8 rounded-3xl glass-panel border border-white/10 space-y-6 text-center">
           <div className="space-y-2">
             <span className="px-3 py-1 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30">
-              معمل ترتيب الكلمات • Word Scramble
+              {t('sl.practiceBadge')}
             </span>
             <h3 className="text-xl sm:text-2xl font-black text-white">
-              رتّب الكلمات الإنجليزية لتكوين هذه الجملة:
+              {t('sl.practicePrompt')}
             </h3>
             <p className="text-base text-amber-300 font-bold max-w-xl mx-auto">
               "{practiceSentence.arabicEg}"
@@ -585,7 +594,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           {/* User's Assembled Sentence */}
           <div className="min-h-16 p-4 rounded-2xl bg-black/40 border border-white/15 flex items-center justify-center gap-2 flex-wrap">
             {selectedWordIndices.length === 0 ? (
-              <span className="text-white/30 text-sm italic">اضغط على الكلمات بالترتيب الصحيح بالأسفل...</span>
+              <span className="text-white/30 text-sm italic">{t('sl.practiceHint')}</span>
             ) : (
               selectedWordIndices.map((wordIdx, order) => (
                 <button
@@ -625,13 +634,13 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             {practiceStatus === 'correct' && (
               <div className="p-3 rounded-2xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-sm font-bold flex items-center justify-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                <span>إجابة نموذجية صحيحة 100%! أحسنت يا بطل!</span>
+                <span>{t('sl.practiceCorrect')}</span>
               </div>
             )}
             {practiceStatus === 'wrong' && (
               <div className="p-3 rounded-2xl bg-rose-500/20 text-rose-300 border border-rose-500/30 text-sm font-bold flex items-center justify-center gap-2">
                 <AlertCircle className="w-5 h-5 text-rose-400" />
-                <span>الترتيب غير دقيق. حاول مجدداً أو استمع للجملة!</span>
+                <span>{t('sl.practiceWrong')}</span>
               </div>
             )}
 
@@ -640,13 +649,13 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 onClick={handleCheckPractice}
                 className="px-6 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-black text-sm transition-all shadow-lg shadow-purple-600/30 cursor-pointer"
               >
-                تحقق من الإجابة
+                {t('sl.checkAnswer')}
               </button>
               <button
                 onClick={setupNewPractice}
                 className="px-6 py-2.5 rounded-2xl bg-white/10 hover:bg-white/15 text-white font-bold text-sm transition-all border border-white/10 cursor-pointer"
               >
-                جملة تالية
+                {t('sl.nextSentence')}
               </button>
             </div>
           </div>
@@ -658,10 +667,10 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
         <div className="p-6 sm:p-8 rounded-3xl glass-panel border border-white/10 space-y-6 text-center">
           <div className="space-y-2">
             <span className="px-3 py-1 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30">
-              تحدي الاستماع الحقيقي • Listening Mode
+              {t('sl.listeningBadge')}
             </span>
             <h3 className="text-xl sm:text-2xl font-black text-white">
-              استمع أولاً دون قراءة النص، وحاول تخمين المعنى:
+              {t('sl.listeningHint')}
             </h3>
           </div>
 
@@ -676,7 +685,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <button
               onClick={() => speakText(randomSentence.english, { speed: 0.75 })}
               className="w-14 h-14 rounded-2xl bg-white/10 hover:bg-white/20 text-white/80 hover:text-white flex items-center justify-center transition-all border border-white/10 cursor-pointer"
-              title="نطق بطيء 0.75x"
+              title={t('sl.slowSpeech')}
             >
               <span className="font-bold text-xs">0.75x</span>
             </button>
@@ -688,7 +697,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               onClick={() => setIsListeningRevealed(true)}
               className="px-6 py-3 rounded-2xl bg-white/10 hover:bg-white/20 text-white font-black text-sm border border-white/15 cursor-pointer transition-all"
             >
-              كشف النص والترجمة الآن
+              {t('sl.revealText')}
             </button>
           ) : (
             <div className="max-w-2xl mx-auto text-right">
@@ -704,7 +713,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               }}
               className="px-6 py-2.5 rounded-2xl bg-purple-600 hover:bg-purple-500 text-white font-black text-sm transition-all shadow-lg shadow-purple-600/30 cursor-pointer"
             >
-              استمع لجملة أخرى
+              {t('sl.anotherListen')}
             </button>
           </div>
         </div>
@@ -731,11 +740,11 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-2xl">{sec.icon}</span>
-                    <span className="text-xs font-mono font-bold opacity-75">{sec.subCount} تصنيف فرعي</span>
+                    <span className="text-xs font-mono font-bold opacity-75">{t('sl.subCount').replace('{n}', String(sec.subCount))}</span>
                   </div>
                   <div>
                     <h4 className="text-base font-black">{sec.title}</h4>
-                    <p className="text-xs opacity-80 mt-0.5">{sec.titleAr}</p>
+                    <p className="text-xs opacity-80 mt-0.5">{t(sec.titleAr)}</p>
                   </div>
                 </button>
               );
@@ -764,7 +773,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 setSearchQuery(e.target.value);
                 setPage(1);
               }}
-              placeholder="ابحث بالإنجليزية، أو العامية المصرية (مثال: 'أنا كنت مستنيك')، أو القاعدة اللغوية، أو المفردات..."
+              placeholder={t('sl.searchPlaceholder')}
               className="w-full pl-12 pr-12 py-4 rounded-2xl bg-[#16132b] border border-white/15 text-white placeholder:text-white/40 text-sm sm:text-base focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all text-right"
             />
             {searchQuery && (
@@ -782,7 +791,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 space-y-1 text-right">
               <span className="text-xs font-black text-amber-300 flex items-center gap-1.5">
                 <Lightbulb className="w-4 h-4 text-amber-400" />
-                <span>إضاءة لغوية حول نتائج البحث:</span>
+                <span>{t('sl.searchInsight')}</span>
               </span>
               <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
                 {semanticMatches[0].nuanceExplanationAr}
@@ -793,7 +802,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           {/* Results Counter & Pagination Controls */}
           <div className="flex items-center justify-between text-xs text-white/60 font-bold flex-wrap gap-2">
             <span>
-              عرض {paginatedSentences.length} من أصل {currentSentencesPool.length} جملة
+              {t('sl.showing').replace('{a}', String(paginatedSentences.length)).replace('{b}', String(currentSentencesPool.length))}
             </span>
             {totalPages > 1 && (
               <div className="flex items-center gap-2">
@@ -802,15 +811,15 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                   disabled={page === 1}
                   className="px-3 py-1 rounded-lg bg-white/5 hover:bg-white/10 disabled:opacity-30 border border-white/10 cursor-pointer"
                 >
-                  السابق
+                  {t('sl.prev')}
                 </button>
-                <span>صفحة {page} من {totalPages}</span>
+                <span>{t('sl.pageOf').replace('{page}', String(page)).replace('{total}', String(totalPages))}</span>
                 <button
                   onClick={() => setPage(p => Math.min(totalPages, p + 1))}
                   disabled={page === totalPages}
                   className="px-3 py-1 rounded-lg bg-white/5 hover:bg-white/10 disabled:opacity-30 border border-white/10 cursor-pointer"
                 >
-                  التالي
+                  {t('sl.next')}
                 </button>
               </div>
             )}
@@ -820,9 +829,9 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           {paginatedSentences.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
               <AlertCircle className="w-10 h-10 text-white/30 mx-auto" />
-              <h4 className="text-lg font-bold text-white">لم يتم العثور على جمل مطابقة</h4>
+              <h4 className="text-lg font-bold text-white">{t('sl.noMatches')}</h4>
               <p className="text-xs text-white/60">
-                جرب تغيير خيارات التصفية أو استخدام كلمات بحث مختلفة.
+                {t('sl.noMatchesHint')}
               </p>
             </div>
           ) : (
@@ -848,7 +857,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 disabled={page === 1}
                 className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 text-white font-bold text-xs cursor-pointer"
               >
-                الصفحة السابقة
+                {t('sl.prevPage')}
               </button>
               <span className="text-xs font-bold text-white/70">
                 {page} / {totalPages}
@@ -861,7 +870,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 disabled={page === totalPages}
                 className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 disabled:opacity-30 text-white font-bold text-xs cursor-pointer"
               >
-                الصفحة التالية
+                {t('sl.nextPage')}
               </button>
             </div>
           )}
