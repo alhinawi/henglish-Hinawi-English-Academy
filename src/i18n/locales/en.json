@@ -2669,5 +2669,11 @@
   "rs.pages": "{count} pages",
   "rs.copy": "Download copy",
   "rs.revision": "Quick revision",
-  "rs.page": "1 page"
+  "rs.page": "1 page",
+  "ta.title": "Alternative translations",
+  "ta.intro": "Choose the wording that fits your situation",
+  "ta.when": "When to use it",
+  "ta.select": "Use this wording",
+  "ta.listen": "Listen to pronunciation",
+  "ta.copy": "Copy alternative"
 }
