@@ -13,3 +13,9 @@ for(const [id,m] of Object.entries(relations))assert.equal(de[id].m,m);
 
 const earlyMeanings={"voc-w00006": "in / auf / bei / an", "voc-w00066": "ihn / ihm", "voc-w00067": "in (+Akkusativ) / in ... hinein", "voc-w00074": "dann / danach / damals", "voc-w00078": "diese (Plural)", "voc-w00087": "sogar / selbst", "voc-w00090": "brauchen / benötigen", "voc-w00093": "Arbeit / Werk / Tätigkeit"};
 for(const [id,m] of Object.entries(earlyMeanings))assert.equal(de[id].m,m);
+
+const sourceFallbacks=['voc-w00066','voc-w00074','voc-w00078','voc-w00087','voc-w00093'];
+for(const file of fs.readdirSync('public/data/vocab/i18n').filter(f=>f.endsWith('.json')&&f!=='de.json')){
+ const map=JSON.parse(fs.readFileSync('public/data/vocab/i18n/'+file));
+ for(const id of sourceFallbacks){assert.equal(map[id].m,byId[id].meaningAr);assert.ok(map[id].e);}
+}
