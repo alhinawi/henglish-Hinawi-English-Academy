@@ -3,72 +3,6 @@ import { PageRoute, CEFRLevel, UserRole, UserProfile } from '../../types';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { Logo } from '../Logo';
 
-// Maps the hardcoded Arabic nav labels to i18n keys (labels stay as fallback).
-const NAV_LABEL_KEYS: Record<string, string> = {
-  'لوحة التحكم': 'nav.dashboard',
-  'الكورسات الشاملة': 'nav.courses',
-  'ساحة الألعاب': 'nav.games',
-  'أكاديمية الجرامر': 'nav.grammar',
-  'أكاديمية الكلمات': 'nav.vocabulary',
-  'Idioms': 'nav.idioms',
-  'Slang': 'nav.slang',
-  'Gen Z': 'nav.genz',
-  'IELTS': 'nav.ielts',
-  'TOEFL': 'nav.toefl',
-  'أكاديمية المحادثة': 'nav.speaking',
-  'أكاديمية الاستماع': 'nav.listening',
-  'أكاديمية القراءة': 'nav.reading',
-  'أكاديمية الكتابة': 'nav.writing',
-  'أكاديمية النطق والفونيتكس': 'nav.pronunciation',
-  'إنجليزي المواقف الحقيقية': 'nav.realLife',
-  'مساعد التعلم': 'nav.assistant',
-  'العالم الافتراضي 3D': 'nav.world3d',
-  'مكتبة 5,000 جملة': 'nav.sentences',
-  'اتعلم من الأفلام': 'nav.movies',
-  'استوديو الترجمة': 'nav.translation',
-  'تحديد المستوى والاختبارات': 'nav.exams',
-  'الشهادات والتوثيق': 'nav.certificates',
-  'معمل التمارين والألعاب': 'nav.practice',
-  'تعلمي والملاحظات': 'nav.myLearning',
-  'الرئيسية واللوحة': 'sidebar.group.home',
-  'الأكاديميات الأساسية (A1 - C2)': 'sidebar.group.academies',
-  'المعمل والشهادات': 'sidebar.group.lab',
-  '5,000 جملة': 'sidebar.group.sentences',
-  'أزمنة المستقبل': 'grammar.section.future',
-  'أزمنة المضارع': 'grammar.section.present',
-  'أزمنة الماضي': 'grammar.section.past',
-  'مواضيع وقواعد أخرى': 'grammar.section.other',
-  'المستقبل التام': 'grammar.item.futurePerfect',
-  'المستقبل البسيط (Will)': 'grammar.item.futureSimpleWill',
-  'صيغة Be Going To': 'grammar.item.beGoingTo',
-  'المستقبل المستمر': 'grammar.item.futureContinuous',
-  'المستقبل التام المستمر': 'grammar.item.futurePerfectContinuous',
-  'المضارع البسيط': 'grammar.item.presentSimple',
-  'المضارع المستمر': 'grammar.item.presentContinuous',
-  'المضارع التام': 'grammar.item.presentPerfect',
-  'المضارع التام المستمر': 'grammar.item.presentPerfectContinuous',
-  'الماضي البسيط': 'grammar.item.pastSimple',
-  'الماضي المستمر': 'grammar.item.pastContinuous',
-  'الماضي التام': 'grammar.item.pastPerfect',
-  'الماضي التام المستمر': 'grammar.item.pastPerfectContinuous',
-  'حالة الشرط الصفرية': 'grammar.item.conditional0',
-  'حالة الشرط الأولى': 'grammar.item.conditional1',
-  'حالة الشرط الثانية': 'grammar.item.conditional2',
-  'حالة الشرط الثالثة': 'grammar.item.conditional3',
-  'الأفعال الناقصة': 'grammar.item.modals',
-  'المبني للمجهول': 'grammar.item.passive',
-  'الكلام المنقول': 'grammar.item.reportedSpeech',
-  'ضمائر وجمل الوصل': 'grammar.item.relativeClauses',
-  'جديد': 'sidebar.new',
-  'رسمي': 'sidebar.official',
-  'مساحتي الخاصة': 'nav.mySpace',
-  'لوحة المتصدرين': 'header.leaderboard',
-  'الإدارة الأكاديمية': 'sidebar.adminSection',
-  'لوحة المعلم الأكاديمي': 'sidebar.teacherPanel',
-  'معلم': 'header.teacher',
-  'لوحة التحكم الإدارية': 'header.adminPanel',
-  'الرئيسية هنجلش': 'sidebar.brandHome',
-};
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ALL_GRAMMAR_RULES } from '../../data/allGrammarRules';
 import { loadSentences } from '../../services/sentencesService';
@@ -206,10 +140,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     loadSentences().then(list => { if (live) setSentenceCount(list.length); }).catch(() => {});
     return () => { live = false; };
   }, []);
-  const tl = (label: string) => {
-    const key = NAV_LABEL_KEYS[label.trim()];
-    return key ? t(key) : label;
-  };
+  // Nav data stores i18n keys directly.
+  const tl = (key: string) => t(key);
 
   const handleNav = (route: PageRoute, targetId?: string) => {
     playSound('click');
@@ -225,41 +157,41 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const navGroups: NavGroup[] = [
     {
-      groupTitle: 'الرئيسية واللوحة',
+      groupTitle: 'sidebar.group.home',
       items: [
         {
-          label: 'لوحة التحكم',
+          label: 'nav.dashboard',
           labelEn: 'Dashboard',
           route: 'dashboard',
           icon: LayoutDashboard,
         },
         {
-          label: 'الكورسات الشاملة',
+          label: 'nav.courses',
           labelEn: 'Courses Catalog',
           route: 'courses',
           icon: Layers,
         },
         {
-          label: 'ساحة الألعاب',
+          label: 'nav.games',
           labelEn: 'Games Arena',
           route: 'games',
           icon: Gamepad2,
-          badge: 'جديد',
+          badge: 'sidebar.new',
         },
         {
-          label: 'أهم المصادر',
+          label: 'nav.resources',
           labelEn: 'Resources',
           route: 'sources',
           icon: Library,
-          badge: 'جديد',
+          badge: 'sidebar.new',
         },
       ],
     },
     {
-      groupTitle: 'الأكاديميات الأساسية (A1 - C2)',
+      groupTitle: 'sidebar.group.academies',
       items: [
         {
-          label: 'أكاديمية الجرامر',
+          label: 'nav.grammar',
           labelEn: 'Grammar Academy',
           route: 'grammar',
           icon: GraduationCap,
@@ -267,36 +199,36 @@ export const Sidebar: React.FC<SidebarProps> = ({
           badgeCount: ALL_GRAMMAR_RULES.length,
           subSections: [
             {
-              title: 'أزمنة المستقبل',
+              title: 'grammar.section.future',
               titleEn: 'Future Tenses',
               items: [
                 {
-                  label: 'المستقبل التام ',
+                  label: 'grammar.item.futurePerfect',
                   labelEn: 'Future Perfect',
                   route: 'courses/grammar/future-perfect',
                   
                   
                 },
                 {
-                  label: 'المستقبل البسيط (Will)',
+                  label: 'grammar.item.futureSimpleWill',
                   labelEn: 'Future Simple (Will)',
                   route: 'grammar',
                   targetId: 'future-simple',
                 },
                 {
-                  label: 'صيغة Be Going To',
+                  label: 'grammar.item.beGoingTo',
                   labelEn: 'Be Going To',
                   route: 'grammar',
                   targetId: 'be-going-to',
                 },
                 {
-                  label: 'المستقبل المستمر',
+                  label: 'grammar.item.futureContinuous',
                   labelEn: 'Future Continuous',
                   route: 'grammar',
                   targetId: 'future-continuous',
                 },
                 {
-                  label: 'المستقبل التام المستمر',
+                  label: 'grammar.item.futurePerfectContinuous',
                   labelEn: 'Future Perfect Continuous',
                   route: 'grammar',
                   targetId: 'future-perfect-continuous',
@@ -304,43 +236,43 @@ export const Sidebar: React.FC<SidebarProps> = ({
               ],
             },
             {
-              title: 'أزمنة المضارع',
+              title: 'grammar.section.present',
               titleEn: 'Present Tenses',
               items: [
-                { label: 'المضارع البسيط', labelEn: 'Present Simple', route: 'grammar', targetId: 'present-simple' },
-                { label: 'المضارع المستمر', labelEn: 'Present Continuous', route: 'grammar', targetId: 'present-continuous' },
-                { label: 'المضارع التام', labelEn: 'Present Perfect', route: 'grammar', targetId: 'present-perfect' },
-                { label: 'المضارع التام المستمر', labelEn: 'Present Perfect Continuous', route: 'grammar', targetId: 'present-perfect-continuous' },
+                { label: 'grammar.item.presentSimple', labelEn: 'Present Simple', route: 'grammar', targetId: 'present-simple' },
+                { label: 'grammar.item.presentContinuous', labelEn: 'Present Continuous', route: 'grammar', targetId: 'present-continuous' },
+                { label: 'grammar.item.presentPerfect', labelEn: 'Present Perfect', route: 'grammar', targetId: 'present-perfect' },
+                { label: 'grammar.item.presentPerfectContinuous', labelEn: 'Present Perfect Continuous', route: 'grammar', targetId: 'present-perfect-continuous' },
               ],
             },
             {
-              title: 'أزمنة الماضي',
+              title: 'grammar.section.past',
               titleEn: 'Past Tenses',
               items: [
-                { label: 'الماضي البسيط', labelEn: 'Past Simple', route: 'grammar', targetId: 'past-simple' },
-                { label: 'الماضي المستمر', labelEn: 'Past Continuous', route: 'grammar', targetId: 'past-continuous' },
-                { label: 'الماضي التام', labelEn: 'Past Perfect', route: 'grammar', targetId: 'past-perfect' },
-                { label: 'الماضي التام المستمر', labelEn: 'Past Perfect Continuous', route: 'grammar', targetId: 'past-perfect-continuous' },
+                { label: 'grammar.item.pastSimple', labelEn: 'Past Simple', route: 'grammar', targetId: 'past-simple' },
+                { label: 'grammar.item.pastContinuous', labelEn: 'Past Continuous', route: 'grammar', targetId: 'past-continuous' },
+                { label: 'grammar.item.pastPerfect', labelEn: 'Past Perfect', route: 'grammar', targetId: 'past-perfect' },
+                { label: 'grammar.item.pastPerfectContinuous', labelEn: 'Past Perfect Continuous', route: 'grammar', targetId: 'past-perfect-continuous' },
               ],
             },
             {
-              title: 'مواضيع وقواعد أخرى',
+              title: 'grammar.section.other',
               titleEn: 'Other Grammar Topics',
               items: [
-                { label: 'حالة الشرط الصفرية', labelEn: 'Zero Conditional', route: 'grammar', targetId: 'zero-conditional' },
-                { label: 'حالة الشرط الأولى', labelEn: 'First Conditional', route: 'grammar', targetId: 'first-conditional' },
-                { label: 'حالة الشرط الثانية', labelEn: 'Second Conditional', route: 'grammar', targetId: 'second-conditional' },
-                { label: 'حالة الشرط الثالثة', labelEn: 'Third Conditional', route: 'grammar', targetId: 'third-conditional' },
-                { label: 'الأفعال الناقصة', labelEn: 'Modal Verbs', route: 'grammar', targetId: 'modal-verbs' },
-                { label: 'المبني للمجهول', labelEn: 'Passive Voice', route: 'grammar', targetId: 'passive-voice' },
-                { label: 'الكلام المنقول', labelEn: 'Reported Speech', route: 'grammar', targetId: 'reported-speech' },
-                { label: 'ضمائر وجمل الوصل', labelEn: 'Relative Clauses', route: 'grammar', targetId: 'relative-clauses' },
+                { label: 'grammar.item.conditional0', labelEn: 'Zero Conditional', route: 'grammar', targetId: 'zero-conditional' },
+                { label: 'grammar.item.conditional1', labelEn: 'First Conditional', route: 'grammar', targetId: 'first-conditional' },
+                { label: 'grammar.item.conditional2', labelEn: 'Second Conditional', route: 'grammar', targetId: 'second-conditional' },
+                { label: 'grammar.item.conditional3', labelEn: 'Third Conditional', route: 'grammar', targetId: 'third-conditional' },
+                { label: 'grammar.item.modals', labelEn: 'Modal Verbs', route: 'grammar', targetId: 'modal-verbs' },
+                { label: 'grammar.item.passive', labelEn: 'Passive Voice', route: 'grammar', targetId: 'passive-voice' },
+                { label: 'grammar.item.reportedSpeech', labelEn: 'Reported Speech', route: 'grammar', targetId: 'reported-speech' },
+                { label: 'grammar.item.relativeClauses', labelEn: 'Relative Clauses', route: 'grammar', targetId: 'relative-clauses' },
               ],
             },
           ],
         },
         {
-          label: 'أكاديمية الكلمات',
+          label: 'nav.vocabulary',
           labelEn: 'Vocabulary Academy',
           route: 'vocabulary',
           icon: BookA,
@@ -377,44 +309,44 @@ export const Sidebar: React.FC<SidebarProps> = ({
           icon: BookMarked,
         },
         {
-          label: 'أكاديمية المحادثة',
+          label: 'nav.speaking',
           labelEn: 'Speaking Academy',
           route: 'speaking',
           icon: Mic,
         },
         {
-          label: 'أكاديمية الاستماع',
+          label: 'nav.listening',
           labelEn: 'Listening Academy',
           route: 'listening',
           icon: Headphones,
         },
         {
-          label: 'أكاديمية القراءة',
+          label: 'nav.reading',
           labelEn: 'Reading Academy',
           route: 'reading',
           icon: BookOpen,
         },
         {
-          label: 'أكاديمية الكتابة',
+          label: 'nav.writing',
           labelEn: 'Writing Academy',
           route: 'writing',
           icon: PenTool,
         },
         {
-          label: 'أكاديمية النطق والفونيتكس',
+          label: 'nav.pronunciation',
           labelEn: 'Pronunciation Academy',
           route: 'pronunciation',
           icon: Volume2,
           badge: 'IPA',
         },
         {
-          label: 'إنجليزي المواقف الحقيقية',
+          label: 'nav.realLife',
           labelEn: 'Real-Life English',
           route: 'real-life',
           icon: Compass,
         },
         {
-          label: 'مكتبة 5,000 جملة ',
+          label: 'nav.sentences',
           labelEn: '5,000 Sentences',
           route: 'sentences' as PageRoute,
           icon: BookText,
@@ -422,28 +354,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
           badgeCount: sentenceCount ?? 0,
         },
         {
-          label: 'اتعلم من الأفلام ',
+          label: 'nav.movies',
           labelEn: 'Movie Studio',
           route: 'movies' as PageRoute,
           icon: Film,
           
         },
         {
-          label: 'استوديو الترجمة',
+          label: 'nav.translation',
           labelEn: 'Translation',
           route: 'translation' as PageRoute,
           icon: Languages,
           
         },
         {
-          label: 'مساعد التعلم',
+          label: 'nav.assistant',
           labelEn: 'Learning Assistant',
           route: 'ai-tutor' as PageRoute,
           icon: Bot,
           
         },
         {
-          label: 'العالم الافتراضي 3D ',
+          label: 'nav.world3d',
           labelEn: '3D Campus World',
           route: 'world-3d' as PageRoute,
           icon: Globe,
@@ -452,24 +384,24 @@ export const Sidebar: React.FC<SidebarProps> = ({
       ],
     },
     {
-      groupTitle: 'المعمل والشهادات',
+      groupTitle: 'sidebar.group.lab',
       items: [
         {
-          label: 'تحديد المستوى والاختبارات',
+          label: 'nav.exams',
           labelEn: 'Exams & Placement',
           route: 'exams',
           icon: FileCheck2,
           badge: 'CEFR',
         },
         {
-          label: 'الشهادات والتوثيق ',
+          label: 'nav.certificates',
           labelEn: 'Certificates',
           route: 'certificates' as PageRoute,
           icon: Award,
-          badge: 'رسمي',
+          badge: 'sidebar.official',
         },
         {
-          label: 'معمل التمارين والألعاب',
+          label: 'nav.practice',
           labelEn: 'Practice Lab',
           route: 'practice',
           icon: Gamepad2,
@@ -477,11 +409,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
       ],
     },
     {
-      groupTitle: 'مساحتي الخاصة',
+      groupTitle: 'nav.mySpace',
       items: [
-        { label: 'لوحة المتصدرين', labelEn: 'Leaderboard', route: 'leaderboard', icon: Award },
+        { label: 'header.leaderboard', labelEn: 'Leaderboard', route: 'leaderboard', icon: Award },
         {
-          label: 'تعلمي والملاحظات',
+          label: 'nav.myLearning',
           labelEn: 'My Learning & Notes',
           route: 'my-learning',
           icon: BookmarkCheck,
@@ -489,16 +421,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
       ],
     },
     {
-      groupTitle: 'الإدارة الأكاديمية',
+      groupTitle: 'sidebar.adminSection',
       items: [
         ...(userRole === 'teacher' || userRole === 'admin'
           ? [
               {
-                label: 'لوحة المعلم الأكاديمي ‍',
+                label: 'sidebar.teacherPanel',
                 labelEn: 'Teacher Dashboard',
                 route: 'teacher-dashboard' as PageRoute,
                 icon: GraduationCap,
-                badge: 'معلم',
+                badge: 'header.teacher',
                 adminOnly: false,
               },
             ]
@@ -506,7 +438,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         ...(userRole === 'admin'
           ? [
               {
-                label: 'لوحة التحكم الإدارية ',
+                label: 'header.adminPanel',
                 labelEn: 'Admin Control Panel',
                 route: 'admin' as PageRoute,
                 icon: ShieldCheck,
@@ -728,7 +660,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                             setOpenGrammarSubMenu(prev => !prev);
                           }}
                           className="p-2 rounded-lg text-[#b9b6d5] hover:text-white hover:bg-white/5 cursor-pointer transition-transform"
-                          title={openGrammarSubMenu ? 'طي الأقسام الفرعية' : 'عرض الأقسام الفرعية'}
+                          title={openGrammarSubMenu ? t('sidebar.collapseSections') : t('sidebar.expandSections')}
                         >
                           <ChevronDown className={`w-3.5 h-3.5 transition-transform ${openGrammarSubMenu ? 'rotate-180 text-[#41e7ff]' : ''}`} />
                         </button>
@@ -909,7 +841,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className="text-[11px] text-[#b9b6d5]">
               <span className="font-bold text-white">Henglish Academy</span> • v2.0
             </div>
-            <div className="text-[10px] text-[#b9b6d5]/70">منهج الإنجليزية التفاعلي المعتمد</div>
+            <div className="text-[10px] text-[#b9b6d5]/70">{t('sidebar.tagline')}</div>
           </div>
         )}
       </div>

@@ -467,10 +467,12 @@
   "sidebar.brandHome": "Henglish Start",
   "sidebar.close": "Menü schließen",
   "sidebar.collapse": "Menü einklappen",
+  "sidebar.collapseSections": "Unterabschnitte einklappen",
   "sidebar.collapseSubs": "Unterabschnitte einklappen",
   "sidebar.currentLevel": "Aktuelles Niveau",
   "sidebar.desktopAria": "Desktop-Seitenleiste",
   "sidebar.expand": "Menü erweitern",
+  "sidebar.expandSections": "Unterabschnitte ausklappen",
   "sidebar.expandSubs": "Unterabschnitte erweitern",
   "sidebar.group.academies": "Kernakademien (A1 - C2)",
   "sidebar.group.home": "Start & Übersicht",
@@ -481,6 +483,7 @@
   "sidebar.official": "Offiziell",
   "sidebar.rulesBadge": "{count}+ Regeln",
   "sidebar.sentencesBadge": "{count} Sätze",
+  "sidebar.tagline": "Zertifiziertes interaktives Englischcurriculum",
   "sidebar.teacherPanel": "Lehrer-Panel",
   "sidebar.toggle": "Menüansicht umschalten"
 }
