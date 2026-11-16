@@ -20,7 +20,7 @@ import {
   AdminOverview,
 } from '../../services/henglishApi';
 
-type GateState = 'loading' | 'anon' | 'denied' | 'admin';
+type GateState = 'loading' | 'anon' | 'denied' | 'admin' | 'error';
 
 const day = (iso: string) => {
   const d = new Date(iso);
@@ -50,14 +50,15 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
       setGate('admin');
       return;
     }
+    if (status === 428) { setGate('anon'); return; }
     if (status === 403) {
       const me = await apiGetMe(token);
       setEmail(me?.user?.email || '');
       setGate('denied');
       return;
     }
-    clearHenglishApiToken();
-    setGate('anon');
+    if (status === 401) { clearHenglishApiToken(); setGate('anon'); return; }
+    setGate('error');
   };
 
   useEffect(() => {
@@ -84,6 +85,8 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
     );
   }
 
+  if (gate === 'error') return <div role="alert" className="p-8 text-center space-y-4" dir="rtl"><p>مش قادرين نحمّل لوحة التحكم دلوقتي. جلستك لسه محفوظة.</p><button onClick={load} className="px-5 py-3 rounded-xl bg-white/10">حاول تاني</button></div>;
+
   if (gate === 'anon') {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center p-8" dir="rtl">
@@ -92,7 +95,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
         </div>
         <h2 className="text-xl font-black text-white mb-2">لوحة التحكم</h2>
         <p className="text-xs text-white/50 max-w-md mb-6 leading-relaxed">
-          الصفحة دي للأدمن بس. ادخل بحساب Google بتاعك.
+          الصفحة دي للأدمن بس. ادخل بحساب Google المخصص للإدارة. لو عندك جلسة قديمة، سجّل دخولك من جديد لتأكيد الحساب.
         </p>
         <a
           href={googleLoginUrl()}
@@ -135,6 +138,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
 
   return (
     <div dir="rtl" className="space-y-8">
+      <header className="flex flex-wrap items-center justify-between gap-4"><div className="space-y-2"><p className="text-[#ffd166] text-xs font-bold">HENGLISH ADMIN</p><h1 className="text-2xl sm:text-3xl font-black">لوحة تحكم الأدمن</h1><p className="text-xs text-[#b9b6d5]">بيانات مباشرة من الحسابات وسجلات التعلّم، مش أرقام تجريبية.</p></div><button onClick={load} className="flex items-center gap-2 rounded-xl border border-white/10 px-4 py-3 text-xs"><RefreshCw className="w-4 h-4"/>تحديث</button></header>
       {/* Overview - same shape as the egypti admin dashboard */}
       {data && (
         <section className="space-y-6">
@@ -219,7 +223,7 @@ export const AdminServerGate: React.FC<{ children: React.ReactNode }> = ({ child
         </section>
       )}
 
-      {children}
+      <details className="rounded-2xl border border-white/10 bg-white/[0.025] p-5 space-y-5"><summary className="cursor-pointer font-bold text-sm text-[#ffd166]">معاينة أدوات المحتوى المحلية</summary><p className="text-xs text-[#b9b6d5] leading-7">الأدوات القديمة دي مساحة معاينة. أرقام الطلاب وأسماء الطلاب داخلها تجريبية، والتعديلات فيها محلية ومش نشر للموقع ولا تغيير لحسابات الطلاب. البيانات الحقيقية موجودة فوق.</p>{children}</details>
     </div>
   );
 };
