@@ -6,6 +6,7 @@
 
 import React, { useEffect, useMemo, useState } from 'react';
 import { Search, RefreshCw, ChevronDown, AlertTriangle } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 import {
   PhraseBankId,
   PhraseEntry,
@@ -47,6 +48,7 @@ interface PhraseBankPanelProps {
 }
 
 export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr, blurbAr }) => {
+  const { t } = useLanguage();
   const [total, setTotal] = useState<number | null>(null);
   const [entries, setEntries] = useState<PhraseEntry[]>([]);
   const [loadedChunks, setLoadedChunks] = useState(0);
@@ -137,7 +139,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
         <p className="text-sm text-[#b9b6d5] leading-relaxed">{blurbAr}</p>
         {total !== null && (
           <p className="text-xs font-bold text-[#ffd166]">
-            {total.toLocaleString('en')} {bank === 'idioms' ? 'تعبير اصطلاحي' : 'تعبير'} موثق
+            {total.toLocaleString('en')} {bank === 'idioms' ? 'Idiom' : bank === 'slang' ? 'Slang' : 'Gen Z'} {t('pb.verifiedSuffix')}
           </p>
         )}
       </div>
@@ -149,7 +151,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="ابحث بالإنجليزي أو بالمصري..."
+          placeholder={t('pb.searchPlaceholder')}
           className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pr-11 pl-4 text-sm text-white placeholder:text-[#b9b6d5]/60 focus:outline-none focus:border-[#ffd166]/50"
         />
       </div>
@@ -157,20 +159,20 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       {/* Filters */}
       <div className="space-y-3">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-black text-[#b9b6d5]">السياق:</span>
-          <button className={chip(register === 'all')} onClick={() => setRegister('all')}>الكل</button>
+          <span className="text-xs font-black text-[#b9b6d5]">{t('pb.register')}</span>
+          <button className={chip(register === 'all')} onClick={() => setRegister('all')}>{t('common.all')}</button>
           {(Object.keys(REGISTER_LABELS) as PhraseRegister[]).map((r) => (
             <button key={r} className={chip(register === r)} onClick={() => setRegister(r)}>
-              {REGISTER_LABELS[r]}
+              {t(`pb.reg.${r}`)}
             </button>
           ))}
         </div>
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-black text-[#b9b6d5]">الأصل:</span>
-          <button className={chip(origin === 'all')} onClick={() => setOrigin('all')}>الكل</button>
+          <span className="text-xs font-black text-[#b9b6d5]">{t('pb.origin')}</span>
+          <button className={chip(origin === 'all')} onClick={() => setOrigin('all')}>{t('common.all')}</button>
           {(Object.keys(ORIGIN_LABELS) as PhraseOrigin[]).map((o) => (
             <button key={o} className={chip(origin === o)} onClick={() => setOrigin(o)}>
-              {ORIGIN_LABELS[o]}
+              {t(`pb.orig.${o}`)}
             </button>
           ))}
         </div>
@@ -180,27 +182,27 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       {loading && (
         <div className="flex items-center justify-center gap-2 py-16 text-[#b9b6d5]">
           <RefreshCw className="w-5 h-5 animate-spin" />
-          <span className="text-sm font-bold">جاري تحميل البنك...</span>
+          <span className="text-sm font-bold">{t('pb.loadingBank')}</span>
         </div>
       )}
 
       {error && (
         <div className="flex items-center gap-2 p-4 rounded-2xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-sm font-bold">
           <AlertTriangle className="w-4 h-4" />
-          {error}
+          {t('pb.loadError')}
         </div>
       )}
 
       {!loading && !error && total === 0 && (
         <div className="text-center py-16 space-y-2">
-          <p className="text-lg font-black text-white">البنك قيد الإعداد</p>
-          <p className="text-sm text-[#b9b6d5]">تُضاف العبارات الموثقة تباعاً. ارجع قريباً.</p>
+          <p className="text-lg font-black text-white">{t('pb.empty')}</p>
+          <p className="text-sm text-[#b9b6d5]">{t('pb.emptyHint')}</p>
         </div>
       )}
 
       {!loading && !error && total !== null && total > 0 && visible.length === 0 && (
         <div className="text-center py-16 text-sm text-[#b9b6d5] font-bold">
-          لا نتائج مطابقة للبحث أو الفلاتر الحالية.
+          {t('pb.noResults')}
         </div>
       )}
 
@@ -215,10 +217,10 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
               <h3 className="text-lg font-black text-[#ffd166] font-mono" dir="ltr">{e.phrase}</h3>
               <div className="flex items-center gap-2">
                 <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black border ${REGISTER_BADGE[e.register]}`}>
-                  {REGISTER_LABELS[e.register]}
+                  {t(`pb.reg.${e.register}`)}
                 </span>
                 <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black border bg-white/5 text-[#b9b6d5] border-white/10">
-                  {ORIGIN_LABELS[e.origin]}
+                  {t(`pb.orig.${e.origin}`)}
                 </span>
               </div>
             </div>
@@ -238,7 +240,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
             className="flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 border border-white/15 text-sm font-black text-white hover:border-[#ffd166]/50 transition-all"
           >
             <ChevronDown className="w-4 h-4" />
-            عرض المزيد ({entries.length.toLocaleString('en')} من {total?.toLocaleString('en')})
+            {t('pb.loadMore')} ({entries.length.toLocaleString('en')} / {total?.toLocaleString('en')})
           </button>
         </div>
       )}

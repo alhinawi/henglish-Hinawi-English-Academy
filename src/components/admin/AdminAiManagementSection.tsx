@@ -485,7 +485,7 @@ export const AdminAiManagementSection: React.FC = () => {
                 {analytics.slice(0, 15).map(item => (
                   <tr key={item.id} className="hover:bg-white/5 transition-colors">
                     <td className="py-2.5 px-3 text-white/50 font-['Outfit',sans-serif]">
-                      {new Date(item.timestamp).toLocaleTimeString('ar-EG')}
+                      {new Date(item.timestamp).toLocaleTimeString('ar-EG-u-nu-latn')}
                     </td>
                     <td className="py-2.5 px-3 font-bold text-white">{item.taskType}</td>
                     <td className="py-2.5 px-3 font-black text-[#ffd166]">{item.provider}</td>

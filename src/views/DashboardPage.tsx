@@ -83,7 +83,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "vocabulary" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#41e7ff]/10",
       badge: "Spaced Repetition",
-      lessonsCount: "أكثر من ١٥٠٠ كلمة",
+      lessonsCount: "أكثر من 1500 كلمة",
       accentColor: "#c4ff55",
     },
     {
@@ -95,7 +95,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "speaking" as PageRoute,
       color: "from-[#ff4f9a]/20 to-[#9b7bff]/20",
       badge: "Interactive Dialogues",
-      lessonsCount: "١٠ سيناريوهات حوارية",
+      lessonsCount: "10 سيناريوهات حوارية",
       accentColor: "#ff4f9a",
     },
     {
@@ -107,7 +107,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "listening" as PageRoute,
       color: "from-[#9b7bff]/20 to-[#41e7ff]/10",
       badge: "Audio Lab",
-      lessonsCount: "٦ مقاطع استماع واقعية",
+      lessonsCount: "6 مقاطع استماع واقعية",
       accentColor: "#9b7bff",
     },
     {
@@ -119,7 +119,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "reading" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#c4ff55]/10",
       badge: "Reading Hub",
-      lessonsCount: "٤ نصوص قراءة متدرجة",
+      lessonsCount: "4 نصوص قراءة متدرجة",
       accentColor: "#41e7ff",
     },
     {
@@ -143,7 +143,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "pronunciation" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#ff4f9a]/15",
       badge: "IPA & Accents",
-      lessonsCount: "١٨ زوجاً صوتياً (Minimal Pairs)",
+      lessonsCount: "18 زوجاً صوتياً (Minimal Pairs)",
       accentColor: "#c4ff55",
     },
     {
@@ -155,7 +155,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       route: "real-life" as PageRoute,
       color: "from-[#ff4f9a]/20 to-[#ffd166]/20",
       badge: "Practical Survival",
-      lessonsCount: "٣ موديولات واقعية",
+      lessonsCount: "3 موديولات واقعية",
       accentColor: "#ff4f9a",
     },
   ];
@@ -401,7 +401,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                         {q.score}/{q.total} إجابات صحيحة
                       </div>
                       <div className="text-[10px] text-[#b9b6d5]/70">
-                        {new Date(q.date).toLocaleDateString("ar-EG", {
+                        {new Date(q.date).toLocaleDateString("ar-EG-u-nu-latn", {
                           weekday: "long",
                           day: "numeric",
                           month: "long",
@@ -712,7 +712,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
             <p className="text-xs text-[#dedbf4] leading-relaxed">
               اختبر مهاراتك في الجرامر والكلمات وفهم المقروء من خلال اختبار
-              تقييم تشخيصي مكون من ١٠ أسئلة متدرجة عبر المستويات مع تقرير مفصل بنقاط القوة
+              تقييم تشخيصي مكون من 10 أسئلة متدرجة عبر المستويات مع تقرير مفصل بنقاط القوة
               والموضوعات المقترحة.
             </p>
           </div>

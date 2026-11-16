@@ -418,7 +418,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
           <div className="text-xs text-[#b9b6d5]">إجمالي الطلاب النشطين</div>
           <div className="text-2xl font-black text-[#41e7ff]">
-            ١٤,٢٥٠ طالباً
+            14,250 طالباً
           </div>
           <div className="text-[11px] text-[#c4ff55]">+180 هذا الأسبوع</div>
         </div>
@@ -435,14 +435,14 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
           <div className="text-xs text-[#b9b6d5]">معدل إتمام الدروس</div>
-          <div className="text-2xl font-black text-[#c4ff55]">٨٨.٤%</div>
+          <div className="text-2xl font-black text-[#c4ff55]">88.4%</div>
           <div className="text-[11px] text-[#b9b6d5]">معدل ممتاز قياسياً</div>
         </div>
 
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
           <div className="text-xs text-[#b9b6d5]">الكويزات المكتملة</div>
-          <div className="text-2xl font-black text-[#ff8bb9]">٣٤,٩١٠ كويز</div>
-          <div className="text-[11px] text-[#b9b6d5]">متوسط الدقة ٩١%</div>
+          <div className="text-2xl font-black text-[#ff8bb9]">34,910 كويز</div>
+          <div className="text-[11px] text-[#b9b6d5]">متوسط الدقة 91%</div>
         </div>
       </div>
 

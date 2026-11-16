@@ -1,4 +1,4 @@
-import { ThemePicker } from '../ThemePicker';
+import { useLanguage } from '../../i18n/LanguageContext';
 import React, { useState, useRef, useEffect } from 'react';
 import { PageRoute, UserProfile, AppNotification } from '../../types';
 import { playSound } from '../../utils/audio';
@@ -88,6 +88,7 @@ export const Header: React.FC<HeaderProps> = ({
   const [notifOpen, setNotifOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const [mobileMoreOpen, setMobileMoreOpen] = useState(false);
+  const { t } = useLanguage();
 
   const grammarRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
@@ -188,8 +189,8 @@ export const Header: React.FC<HeaderProps> = ({
         <button
           onClick={() => handleNav('dashboard')}
           className="xl:hidden flex items-center gap-2 rounded-xl cursor-pointer hover:bg-white/5 transition-colors p-1 -m-1 shrink-0"
-          aria-label="Henglish Academy - الرئيسية"
-          title="Henglish Academy - الرئيسية"
+          aria-label={t('header.brandHome')}
+          title={t('header.brandHome')}
         >
           <img
             src="/logo-clean.png"
@@ -457,11 +458,7 @@ export const Header: React.FC<HeaderProps> = ({
       {/* RIGHT: Search, Voice Settings, Streak, Notifications, Account */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
         
-        <div className="hidden md:block">
-          <ThemePicker />
-        </div>
-
-        {/* Mobile overflow: search, notifications, voice and theme in one menu */}
+        {/* Mobile overflow: search, notifications, voice and settings in one menu */}
         <div className="relative md:hidden" ref={mobileMoreRef}>
           <button
             onClick={() => {
@@ -471,7 +468,7 @@ export const Header: React.FC<HeaderProps> = ({
               setProfileOpen(false);
             }}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
-            aria-label="أدوات إضافية: بحث وإشعارات وصوت ومظهر"
+            aria-label={t('header.moreTools')}
             aria-expanded={mobileMoreOpen}
           >
             <MoreHorizontal className="w-4 h-4" />
@@ -493,7 +490,7 @@ export const Header: React.FC<HeaderProps> = ({
                 className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
               >
                 <Search className="w-4 h-4 text-[#41e7ff]" />
-                بحث شامل في الأكاديميات
+                {t('header.search')}
               </button>
               <button
                 onClick={() => {
@@ -511,7 +508,7 @@ export const Header: React.FC<HeaderProps> = ({
                     </span>
                   )}
                 </span>
-                الإشعارات والتحديثات
+                {t('header.notifications')}
               </button>
               <button
                 onClick={() => {
@@ -522,12 +519,19 @@ export const Header: React.FC<HeaderProps> = ({
                 className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
               >
                 <Volume2 className="w-4 h-4 text-[#c4ff55]" />
-                إعدادات الصوت والنطق
+                {t('header.voice')}
               </button>
-              <div className="flex items-center justify-between gap-2 p-2.5 rounded-xl hover:bg-white/5">
-                <span className="text-xs font-bold text-white">مظهر الموقع</span>
-                <ThemePicker />
-              </div>
+              <button
+                onClick={() => {
+                  playSound('click');
+                  setMobileMoreOpen(false);
+                  onOpenSettings();
+                }}
+                className="w-full flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs font-bold text-white transition-colors cursor-pointer"
+              >
+                <Settings className="w-4 h-4 text-[#41e7ff]" />
+                {t('header.settings')} (المظهر واللغة)
+              </button>
             </div>
           )}
         </div>
@@ -656,7 +660,7 @@ export const Header: React.FC<HeaderProps> = ({
             {authSessionType === 'guest' ? (
               <span className="flex items-center gap-1.5 px-1 sm:px-2">
                 <LogIn className="w-4 h-4 text-[#c4ff55]" />
-                <span className="text-xs font-black text-white whitespace-nowrap">دخول / تسجيل</span>
+                <span className="text-xs font-black text-white whitespace-nowrap">{t('header.login')}</span>
               </span>
             ) : (
               <>
