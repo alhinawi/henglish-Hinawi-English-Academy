@@ -1,42 +1,44 @@
 {
   "exam": "toefl",
   "idPrefix": "toefl-v",
-  "totalEntries": 1000,
+  "totalEntries": 1500,
   "chunkSize": 500,
   "chunks": [
     "tf000001-000500.json",
-    "tf000501-001000.json"
+    "tf000501-001000.json",
+    "tf001001-001500.json"
   ],
   "counts": {
     "byLevel": {
       "B1": 500,
-      "B2": 500
+      "B2": 504,
+      "C1": 496
     },
     "byPos": {
-      "noun": 331,
-      "verb": 325,
-      "adjective": 328,
+      "noun": 688,
+      "verb": 366,
+      "adjective": 429,
       "preposition": 2,
-      "adverb": 11,
+      "adverb": 12,
       "conjunction": 2,
       "phrasal verb": 1
     },
     "byTopic": {
-      "science": 131,
-      "campus life": 150,
-      "environment": 99,
-      "health": 57,
-      "literature": 37,
-      "geology": 73,
-      "astronomy": 22,
-      "biology": 91,
-      "economics": 57,
-      "sociology": 81,
-      "psychology": 44,
-      "history": 50,
-      "technology": 47,
-      "archaeology": 24,
-      "art": 37
+      "science": 143,
+      "campus life": 171,
+      "environment": 126,
+      "health": 64,
+      "literature": 81,
+      "geology": 177,
+      "astronomy": 32,
+      "biology": 136,
+      "economics": 62,
+      "sociology": 110,
+      "psychology": 53,
+      "history": 151,
+      "technology": 61,
+      "archaeology": 42,
+      "art": 91
     }
   }
 }
