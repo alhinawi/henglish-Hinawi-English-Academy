@@ -467,10 +467,12 @@
   "sidebar.brandHome": "الرئيسية هنجلش",
   "sidebar.close": "إغلاق القائمة",
   "sidebar.collapse": "تصغير القائمة",
+  "sidebar.collapseSections": "طي الأقسام الفرعية",
   "sidebar.collapseSubs": "طي الأقسام الفرعية",
   "sidebar.currentLevel": "المستوى الحالي",
   "sidebar.desktopAria": "القائمة الجانبية للكمبيوتر",
   "sidebar.expand": "توسيع القائمة",
+  "sidebar.expandSections": "عرض الأقسام الفرعية",
   "sidebar.expandSubs": "عرض الأقسام الفرعية",
   "sidebar.group.academies": "الأكاديميات الأساسية (A1 - C2)",
   "sidebar.group.home": "الرئيسية واللوحة",
@@ -481,6 +483,7 @@
   "sidebar.official": "رسمي",
   "sidebar.rulesBadge": "{count}+ قاعدة",
   "sidebar.sentencesBadge": "{count} جملة",
+  "sidebar.tagline": "منهج الإنجليزية التفاعلي المعتمد",
   "sidebar.teacherPanel": "لوحة المعلم الأكاديمي",
   "sidebar.toggle": "تبديل عرض القائمة"
 }
