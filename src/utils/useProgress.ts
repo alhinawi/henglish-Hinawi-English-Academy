@@ -222,7 +222,56 @@ export function useProgress(activeUserId?: string) {
       const remote = await apiGetProgress(token);
       if (cancelled) return;
       if (remote && remote.progress && typeof remote.progress === 'object') {
-        setProgress(prev => ({ ...prev, ...remote.progress }));
+        // Merge remote with local instead of remote-wins: guest progress made
+        // before login/Google sign-in (which never migrated the local blob at
+        // auth time) must survive the first sync. Union lists, keep the best
+        // numbers, then push the merged blob back so both sides converge.
+        const r = remote.progress as Partial<UserProgressState>;
+        setProgress(prev => {
+          const union = (a?: string[], b?: string[]) =>
+            Array.from(new Set([...(a ?? []), ...(b ?? [])]));
+          const unionById = <T extends { id: string }>(a?: T[], b?: T[]): T[] => {
+            const seen = new Set<string>();
+            const out: T[] = [];
+            for (const item of [...(a ?? []), ...(b ?? [])]) {
+              if (item && typeof item.id === 'string' && !seen.has(item.id)) {
+                seen.add(item.id);
+                out.push(item);
+              }
+            }
+            return out;
+          };
+          const mergedQuiz: UserProgressState['quizScores'] = { ...(prev.quizScores ?? {}) };
+          for (const [k, v] of Object.entries(r.quizScores ?? {})) {
+            const pct = (q: unknown): number => {
+              if (typeof q === 'number') return q;
+              if (q && typeof q === 'object' && 'score' in q && 'total' in q && (q as { total: number }).total > 0) {
+                const o = q as { score: number; total: number };
+                return (o.score / o.total) * 100;
+              }
+              return -1;
+            };
+            if (pct(v) >= pct(mergedQuiz[k])) (mergedQuiz as Record<string, unknown>)[k] = v;
+          }
+          const merged: UserProgressState = {
+            ...prev,
+            ...r,
+            completedLessons: union(prev.completedLessons, r.completedLessons),
+            knownFlashcards: union(prev.knownFlashcards, r.knownFlashcards),
+            reviewFlashcards: union(prev.reviewFlashcards, r.reviewFlashcards),
+            bookmarks: unionById(prev.bookmarks, r.bookmarks),
+            notes: unionById(prev.notes, r.notes),
+            quizScores: mergedQuiz,
+            xp: Math.max(prev.xp ?? 0, r.xp ?? 0),
+            studyStreakDays: Math.max(prev.studyStreakDays ?? 0, r.studyStreakDays ?? 0),
+            totalTimeMinutes: Math.max(prev.totalTimeMinutes ?? 0, r.totalTimeMinutes ?? 0),
+            dailyChallengeCompleted: Boolean(prev.dailyChallengeCompleted || r.dailyChallengeCompleted),
+          };
+          if (!cancelled) {
+            apiPutProgress(token, merged).catch(() => { /* retried by the debounced sync */ });
+          }
+          return merged;
+        });
       } else {
         // No remote blob yet (account created before sync existed): upload local.
         const raw = localStorage.getItem(STORAGE_KEY);
