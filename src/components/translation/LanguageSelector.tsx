@@ -7,6 +7,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { LanguageCode, SupportedLanguage, SUPPORTED_LANGUAGES } from '../../types/translation';
 import { ArrowLeftRight, ChevronDown, Search, Sparkles } from 'lucide-react';
 import { playSound } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface LanguageSelectorProps {
   sourceLang: LanguageCode;
@@ -25,6 +26,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   onTargetChange,
   onSwap,
 }) => {
+  const { t } = useLanguage();
   const [isSourceOpen, setIsSourceOpen] = useState(false);
   const [isTargetOpen, setIsTargetOpen] = useState(false);
   const [searchSource, setSearchSource] = useState('');
@@ -58,14 +60,14 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   const filteredSourceLanguages = SUPPORTED_LANGUAGES.filter(
     l =>
       l.nameEn.toLowerCase().includes(searchSource.toLowerCase()) ||
-      l.nameAr.includes(searchSource)
+      t(l.nameAr).includes(searchSource)
   );
 
   const filteredTargetLanguages = SUPPORTED_LANGUAGES.filter(
     l =>
       l.code !== 'auto' &&
       (l.nameEn.toLowerCase().includes(searchTarget.toLowerCase()) ||
-        l.nameAr.includes(searchTarget))
+        t(l.nameAr).includes(searchTarget))
   );
 
   const handleSwapClick = () => {
@@ -89,12 +91,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           <div className="flex items-center gap-2.5 min-w-0">
             <span className="text-xl shrink-0">{sourceInfo.flag}</span>
             <div className="flex flex-col text-right leading-tight min-w-0">
-              <span className="text-xs text-[#b9b6d5]">لغة المصدر</span>
+              <span className="text-xs text-[#b9b6d5]">{t('tl.sourceLang')}</span>
               <span className="text-sm font-semibold text-white truncate">
-                {sourceInfo.nameAr}
+                {t(sourceInfo.nameAr)}
                 {sourceLang === 'auto' && detectedInfo && (
                   <span className="mr-1.5 text-xs text-[#41e7ff] font-normal">
-                    (تم كشف: {detectedInfo.nameAr})
+                    {t('tl.detected').replace('{lang}', t(detectedInfo.nameAr))}
                   </span>
                 )}
               </span>
@@ -112,7 +114,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 type="text"
                 value={searchSource}
                 onChange={e => setSearchSource(e.target.value)}
-                placeholder="ابحث عن لغة..."
+                placeholder={t('tl.searchLang')}
                 className="w-full bg-black/40 border border-white/10 rounded-lg pr-9 pl-3 py-1.5 text-xs text-white placeholder-[#b9b6d5]/50 focus:outline-none focus:border-[#41e7ff]"
                 autoFocus
               />
@@ -136,7 +138,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 >
                   <div className="flex items-center gap-2">
                     <span>{lang.flag}</span>
-                    <span>{lang.nameAr}</span>
+                    <span>{t(lang.nameAr)}</span>
                   </div>
                   <span className="text-[11px] text-[#b9b6d5]/70">{lang.nameEn}</span>
                 </button>
@@ -150,9 +152,9 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       <button
         type="button"
         onClick={handleSwapClick}
-        title="تبديل لغة المصدر والهدف"
+        title={t('tl.swapLangs')}
         className="p-2.5 rounded-xl bg-white/5 hover:bg-[#41e7ff]/20 border border-white/10 text-[#b9b6d5] hover:text-[#41e7ff] hover:border-[#41e7ff]/40 transition-all cursor-pointer active:scale-95 shrink-0"
-        aria-label="تبديل اللغات"
+        aria-label={t('tl.swapLangs')}
       >
         <ArrowLeftRight className="w-4 h-4" />
       </button>
@@ -171,8 +173,8 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
           <div className="flex items-center gap-2.5 min-w-0">
             <span className="text-xl shrink-0">{targetInfo.flag}</span>
             <div className="flex flex-col text-right leading-tight min-w-0">
-              <span className="text-xs text-[#b9b6d5]">لغة الترجمة</span>
-              <span className="text-sm font-semibold text-white truncate">{targetInfo.nameAr}</span>
+              <span className="text-xs text-[#b9b6d5]">{t('tl.targetLang')}</span>
+              <span className="text-sm font-semibold text-white truncate">{t(targetInfo.nameAr)}</span>
             </div>
           </div>
           <ChevronDown className="w-4 h-4 text-[#b9b6d5] shrink-0" />
@@ -187,7 +189,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 type="text"
                 value={searchTarget}
                 onChange={e => setSearchTarget(e.target.value)}
-                placeholder="ابحث عن لغة..."
+                placeholder={t('tl.searchLang')}
                 className="w-full bg-black/40 border border-white/10 rounded-lg pr-9 pl-3 py-1.5 text-xs text-white placeholder-[#b9b6d5]/50 focus:outline-none focus:border-[#41e7ff]"
                 autoFocus
               />
@@ -211,7 +213,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
                 >
                   <div className="flex items-center gap-2">
                     <span>{lang.flag}</span>
-                    <span>{lang.nameAr}</span>
+                    <span>{t(lang.nameAr)}</span>
                   </div>
                   <span className="text-[11px] text-[#b9b6d5]/70">{lang.nameEn}</span>
                 </button>
