@@ -1,0 +1,11 @@
+{
+  "bank": "slang",
+  "idPrefix": "slg",
+  "totalEntries": 0,
+  "chunkSize": 500,
+  "chunks": [],
+  "counts": {
+    "byRegister": {},
+    "byOrigin": {}
+  }
+}
