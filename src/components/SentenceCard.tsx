@@ -108,6 +108,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
     playSound('success');
     const rec = reviewSentence(sentence.id, rating);
     setSrsRecord(rec);
+    setIsDifficult(isDifficultSentence(sentence.id));
     onLearningChange?.();
   };
 
@@ -145,6 +146,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Favorite Button */}
           <button
             onClick={handleToggleFavorite}
+            aria-pressed={isFavorite}
             title={t('sc.favorite')}
             className={`p-2 rounded-xl transition-all cursor-pointer ${
               isFavorite
@@ -158,6 +160,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Mark Difficult */}
           <button
             onClick={handleToggleDifficult}
+            aria-pressed={isDifficult}
             title={t('sc.markHard')}
             className={`p-2 rounded-xl transition-all cursor-pointer ${
               isDifficult
