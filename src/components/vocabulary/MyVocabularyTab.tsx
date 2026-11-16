@@ -30,12 +30,14 @@ import { PronunciationButton } from './PronunciationButton';
 import { WordDetailModal } from './WordDetailModal';
 import { txMeaning, useContentMap } from '../../services/contentI18nService';
 import { playSound, fireCelebration } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface MyVocabularyTabProps {
   onExploreWords: () => void;
 }
 
 export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords }) => {
+  const { t } = useLanguage();
   const txMap = useContentMap('vocab');
   const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords());
   const [reviewFilter, setReviewFilter] = useState<'all' | 'due' | 'learning' | 'mastered'>('all');
@@ -95,7 +97,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div className="glass-panel p-4 rounded-2xl border border-white/10 space-y-1">
           <div className="text-xs text-white/60 font-bold flex items-center justify-between">
-            <span>إجمالي المحفوظات</span>
+            <span>{t('mvt.totalSaved')}</span>
             <Bookmark className="w-4 h-4 text-[#41e7ff]" />
           </div>
           <div className="text-2xl sm:text-3xl font-black text-white">
@@ -105,7 +107,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
         <div className="glass-panel p-4 rounded-2xl border border-white/10 space-y-1">
           <div className="text-xs text-white/60 font-bold flex items-center justify-between">
-            <span>مستحقة للمراجعة الآن</span>
+            <span>{t('mvt.dueNow')}</span>
             <Clock className="w-4 h-4 text-[#ffd166]" />
           </div>
           <div className="text-2xl sm:text-3xl font-black text-[#ffd166]">
@@ -115,7 +117,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
         <div className="glass-panel p-4 rounded-2xl border border-white/10 space-y-1">
           <div className="text-xs text-white/60 font-bold flex items-center justify-between">
-            <span>قيد التثبيت</span>
+            <span>{t('mvt.learning')}</span>
             <Brain className="w-4 h-4 text-[#c4ff55]" />
           </div>
           <div className="text-2xl sm:text-3xl font-black text-[#c4ff55]">
@@ -125,7 +127,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
         <div className="glass-panel p-4 rounded-2xl border border-white/10 space-y-1">
           <div className="text-xs text-white/60 font-bold flex items-center justify-between">
-            <span>تم إتقانها تماماً</span>
+            <span>{t('mvt.mastered')}</span>
             <CheckCircle2 className="w-4 h-4 text-emerald-400" />
           </div>
           <div className="text-2xl sm:text-3xl font-black text-emerald-400">
@@ -139,10 +141,10 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
         <div className="space-y-1 text-center sm:text-right">
           <h3 className="text-lg font-black text-white flex items-center gap-2 justify-center sm:justify-start">
             <Repeat className="w-5 h-5 text-[#ffd166]" />
-            <span>جلسة التكرار المتباعد الخوارزمية (SM-2 Spaced Repetition)</span>
+            <span>{t('mvt.srsTitle')}</span>
           </h3>
           <p className="text-xs sm:text-sm text-white/60">
-            راجع الكلمات في المواعيد المحددة بدقة لتنتقل من الذاكرة قصيرة المدى إلى الذاكرة الدائمة.
+            {t('mvt.srsBlurb')}
           </p>
         </div>
 
@@ -159,7 +161,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
           }`}
         >
           <Brain className="w-4 h-4" />
-          <span>{isReviewMode ? 'إنهاء جلسة المراجعة' : 'ابدأ جلسة المراجعة الآن'}</span>
+          <span>{isReviewMode ? t('mvt.endReview') : t('mvt.startReview')}</span>
         </button>
       </div>
 
@@ -167,7 +169,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
       {isReviewMode && currentReviewItem && (
         <section className="glass-panel p-6 sm:p-10 rounded-3xl border border-[#ffd166]/30 bg-linear-to-b from-[#18162e] to-[#0c0b1a] space-y-6 max-w-2xl mx-auto shadow-2xl">
           <div className="flex items-center justify-between text-xs text-white/60 font-bold">
-            <span>بطاقة {reviewIdx + 1} من {activeReviewDeck.length}</span>
+            <span>{t('mvt.card')} {reviewIdx + 1} {t('mvt.of')} {activeReviewDeck.length}</span>
             <span className="px-2 py-0.5 rounded bg-white/10 text-white/80">
               {currentReviewItem.entry.cefr} • {currentReviewItem.entry.pos}
             </span>
@@ -214,13 +216,13 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
                 </p>
                 {currentReviewItem.notes && (
                   <p className="text-[11px] text-[#ffd166] italic">
-                    ملاحظتك: {currentReviewItem.notes}
+                    {t('mvt.yourNote')} {currentReviewItem.notes}
                   </p>
                 )}
               </div>
             ) : (
               <p className="text-xs text-white/40 pt-2">
-                انقر على البطاقة لإظهار المعنى والمثال العربي
+                {t('mvt.tapToFlip')}
               </p>
             )}
           </div>
@@ -229,32 +231,32 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
           {isFlipped && (
             <div className="space-y-2">
               <p className="text-xs text-center text-white/60 font-bold">
-                ما مدى سهولة تذكرك لهذه الكلمة؟
+                {t('mvt.ratePrompt')}
               </p>
               <div className="grid grid-cols-4 gap-2">
                 <button
                   onClick={() => handleRate(1)}
                   className="p-2.5 rounded-xl bg-red-500/15 hover:bg-red-500/25 border border-red-500/30 text-red-400 text-xs font-bold transition-all cursor-pointer"
                 >
-                  نسيتها (Again)
+                  {t('mvt.rateAgain')}
                 </button>
                 <button
                   onClick={() => handleRate(3)}
                   className="p-2.5 rounded-xl bg-amber-500/15 hover:bg-amber-500/25 border border-amber-500/30 text-amber-400 text-xs font-bold transition-all cursor-pointer"
                 >
-                  صعبة (Hard)
+                  {t('mvt.rateHard')}
                 </button>
                 <button
                   onClick={() => handleRate(4)}
                   className="p-2.5 rounded-xl bg-blue-500/15 hover:bg-blue-500/25 border border-blue-500/30 text-blue-400 text-xs font-bold transition-all cursor-pointer"
                 >
-                  جيدة (Good)
+                  {t('mvt.rateGood')}
                 </button>
                 <button
                   onClick={() => handleRate(5)}
                   className="p-2.5 rounded-xl bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 text-emerald-400 text-xs font-bold transition-all cursor-pointer"
                 >
-                  سهلة جداً (Easy)
+                  {t('mvt.rateEasy')}
                 </button>
               </div>
             </div>
@@ -265,10 +267,10 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
       {/* FILTER PILLS */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 no-scrollbar">
         {[
-          { id: 'all', label: `جميع المحفوظات (${savedWords.length})` },
-          { id: 'due', label: `المستحقة للمراجعة (${dueWords.length})` },
-          { id: 'learning', label: `قيد التعلم (${learningWords.length})` },
-          { id: 'mastered', label: `المتقنة (${masteredWords.length})` },
+          { id: 'all', label: `${t('mvt.fAll')} (${savedWords.length})` },
+          { id: 'due', label: `${t('mvt.fDue')} (${dueWords.length})` },
+          { id: 'learning', label: `${t('mvt.fLearning')} (${learningWords.length})` },
+          { id: 'mastered', label: `${t('mvt.fMastered')} (${masteredWords.length})` },
         ].map(tab => (
           <button
             key={tab.id}
@@ -291,15 +293,15 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
       {filteredWords.length === 0 ? (
         <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <Bookmark className="w-10 h-10 text-white/30 mx-auto" />
-          <h4 className="text-lg font-black text-white">لا توجد كلمات محفوظة في هذا القسم</h4>
+          <h4 className="text-lg font-black text-white">{t('mvt.emptyTitle')}</h4>
           <p className="text-xs text-white/60 max-w-sm mx-auto">
-            استكشف بنك المفردات الذكي واحفظ الكلمات التي تود تثبيتها في جدول مراجعاتك.
+            {t('mvt.emptyBlurb')}
           </p>
           <button
             onClick={onExploreWords}
             className="px-4 py-2 rounded-xl bg-[#c4ff55] text-[#09091a] text-xs font-black hover:bg-[#d4ff75] transition-all cursor-pointer"
           >
-            استكشف بنك الكلمات الآن
+            {t('mvt.exploreCta')}
           </button>
         </div>
       ) : (
@@ -317,7 +319,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
                 <button
                   onClick={e => handleRemove(item.word, e)}
                   className="p-1 rounded-lg hover:bg-red-500/20 text-white/40 hover:text-red-400 transition-colors"
-                  title="حذف من المحفوظات"
+                  title={t('mvt.deleteTitle')}
                 >
                   <Trash2 className="w-3.5 h-3.5" />
                 </button>
@@ -326,7 +328,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
                     {item.entry.cefr}
                   </span>
                   <span className="text-[10px] text-white/50">
-                    تكرار: {item.repetitionCount}x
+                    {t('mvt.repetition')} {item.repetitionCount}x
                   </span>
                 </div>
               </div>
@@ -361,7 +363,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
               {item.notes && (
                 <div className="p-2 rounded-lg bg-white/5 text-[11px] text-[#ffd166]/90 border border-white/5">
-                  ملاحظة: {item.notes}
+                  {t('mvt.note')} {item.notes}
                 </div>
               )}
             </div>
