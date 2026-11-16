@@ -262,7 +262,10 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
         fetch('/data/vocab/chunks-index.json'),
       ]);
       if (!indexRes.ok) throw new Error(`HTTP ${indexRes.status}`);
-      const index: { files: string[] } = await indexRes.json();
+      const index = await indexRes.json();
+      if (!index || !Array.isArray(index.files) || index.files.length === 0 ||
+        index.files.some((name: unknown) => typeof name !== 'string' || !/^[a-zA-Z0-9_-]+\.json$/.test(name)) ||
+        new Set(index.files).size !== index.files.length) throw new Error('Invalid vocabulary chunk index');
 
       const core = VOCABULARY_ACADEMY_WORDS.map(w => mapLegacyWord(w, ranks));
       const chunkEntries: LexicalEntry[] = [];
@@ -270,18 +273,25 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
       for (let i = 0; i < index.files.length; i += BATCH) {
         const batch = index.files.slice(i, i + BATCH);
         const parts: VocabChunkEntry[][] = await Promise.all(
-          batch.map(async name => {
+          batch.map(async (name: string) => {
             const res = await fetch(`/data/vocab/chunks/${name}`);
             if (!res.ok) throw new Error(`HTTP ${res.status} for ${name}`);
-            return res.json();
+            const data: unknown = await res.json();
+            if (!Array.isArray(data) || data.length === 0 || data.some(item => !item ||
+              ['id', 'word', 'ipa', 'partOfSpeech', 'meaningAr', 'level', 'category', 'exampleEn', 'exampleAr']
+                .some(field => typeof item[field] !== 'string') || !item.id.trim() || !item.word.trim() ||
+              !Number.isFinite(item.rank) || item.rank < 1)) throw new Error(`Invalid vocabulary chunk ${name}`);
+            return data as VocabChunkEntry[];
           })
         );
         parts.flat().forEach(e => chunkEntries.push(mapChunkEntry(e, ranks)));
       }
 
-      cachedWords = [...core, ...chunkEntries];
+      const merged = [...core, ...chunkEntries];
+      if (new Set(merged.map(item => item.id)).size !== merged.length) throw new Error('Duplicate vocabulary IDs');
+      buildIndices(merged);
+      cachedWords = merged;
       fullDatasetLoaded = true;
-      buildIndices(cachedWords);
       return cachedWords;
     } catch (err) {
       console.error('Failed to load full vocabulary database:', err);
