@@ -2420,5 +2420,21 @@
   "tpr.show": "Vorschläge anzeigen",
   "tpr.answers": "Lösungsvorschläge, nicht alle möglichen Übersetzungen",
   "tpr.previous": "Zurück",
-  "tpr.next": "Weiter"
+  "tpr.next": "Weiter",
+  "wam.title": "Wort- und Lautanalyse",
+  "wam.listen": "Aussprache anhören",
+  "wam.meaning": "Bedeutung im aktuellen Kontext:",
+  "wam.example": "Beispielsatz:",
+  "wam.synonyms": "Synonyme:",
+  "wam.antonyms": "Gegensätze:",
+  "wam.collocations": "Häufige Wortverbindungen:",
+  "wam.saveTitle": "Im Wortschatz und Wiederholsystem (SRS) speichern",
+  "wam.algorithm": "SM-2-Algorithmus",
+  "wam.collection": "Sammlung oder Ordner wählen:",
+  "wam.noCollection": "Keine Sammlung (allgemeiner Wortschatz)",
+  "wam.notes": "Persönliche Merkhilfe (optional):",
+  "wam.placeholder": "Beispiel: In einer beruflichen E-Mail verwendet...",
+  "wam.saved": "Im Wortschatz und Wiederholplan gespeichert!",
+  "wam.save": "In meinem Wortschatz speichern",
+  "wam.unspecified": "Nicht angegeben"
 }

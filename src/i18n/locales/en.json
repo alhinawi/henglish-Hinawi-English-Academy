@@ -2420,5 +2420,21 @@
   "tpr.show": "Show suggested answers",
   "tpr.answers": "Suggested answers, not every possible translation",
   "tpr.previous": "Previous",
-  "tpr.next": "Next"
+  "tpr.next": "Next",
+  "wam.title": "Lexical and phonetic analysis",
+  "wam.listen": "Listen to pronunciation",
+  "wam.meaning": "Meaning in the current context:",
+  "wam.example": "Example sentence:",
+  "wam.synonyms": "Synonyms:",
+  "wam.antonyms": "Antonyms:",
+  "wam.collocations": "Common collocations:",
+  "wam.saveTitle": "Save to vocabulary and spaced repetition (SRS)",
+  "wam.algorithm": "SM-2 algorithm",
+  "wam.collection": "Choose a collection or folder:",
+  "wam.noCollection": "No collection (general vocabulary)",
+  "wam.notes": "Personal memory notes (optional):",
+  "wam.placeholder": "Example: I used this in a work email...",
+  "wam.saved": "Saved to vocabulary and the review schedule!",
+  "wam.save": "Save to my vocabulary",
+  "wam.unspecified": "Not specified"
 }
