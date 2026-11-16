@@ -3,6 +3,7 @@
 // Catalog auditing, broken link replacement, metadata editing, and verification logs
 // ==============================================================================
 
+import { txText, useAppTextMap } from '../../services/contentI18nService';
 import { videoImportError } from '../../services/videoImportError';
 import React, { useState, useEffect } from 'react';
 import {
@@ -44,7 +45,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   onOpenImportModal,
   onCatalogChanged,
 }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const videoText = useAppTextMap('videoLibraryService');
   const [videos, setVideos] = useState<EducationalVideoItem[]>(() => getStoredVideos());
   const [editingVideo, setEditingVideo] = useState<EducationalVideoItem | null>(null);
   const [replaceIdInput, setReplaceIdInput] = useState('');
@@ -253,7 +255,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 >
                   {VIDEO_20_CATEGORIES.map(c => (
                     <option key={c.id} value={c.id} className="bg-[#121124]">
-                      {c.nameAr}
+                      {lang === 'en' ? c.nameEn : txText(videoText, c.nameAr)}
                     </option>
                   ))}
                 </select>
