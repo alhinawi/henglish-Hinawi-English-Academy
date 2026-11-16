@@ -61,6 +61,55 @@ export function useContentMap(bankPath: string): ContentMap | null {
   return map;
 }
 
+// -----------------------------------------------------------------------------
+// App-content overlays: Arabic string literals from src/data + src/services,
+// translated per language into static /data/app-i18n/<module>/<lang>.json files
+// mapping the Arabic source string to its translation. Loaded lazily per module
+// on language switch; Arabic/English keep the original strings.
+// -----------------------------------------------------------------------------
+
+export type AppTextMap = Record<string, string>;
+
+const appTextCache = new Map<string, Promise<AppTextMap | null>>();
+
+export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap | null> {
+  const key = `${module}/${lang}`;
+  if (!appTextCache.has(key)) {
+    appTextCache.set(
+      key,
+      fetch(`/data/app-i18n/${module}/${lang}.json`)
+        .then((res) => (res.ok ? (res.json() as Promise<AppTextMap>) : null))
+        .catch(() => null)
+    );
+  }
+  return appTextCache.get(key)!;
+}
+
+/** React hook: Arabic-source translation map for one data module. */
+export function useAppTextMap(module: string): AppTextMap | null {
+  const { lang } = useLanguage();
+  const [map, setMap] = useState<AppTextMap | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    if (!needsContentTranslation(lang)) {
+      setMap(null);
+      return;
+    }
+    loadAppTextMap(module, lang).then((m) => {
+      if (!cancelled) setMap(m);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [module, lang]);
+  return map;
+}
+
+/** Translate an Arabic source string through the module overlay. */
+export function txText(map: AppTextMap | null, source: string): string {
+  return map?.[source] ?? source;
+}
+
 /** Resolve the meaning/example for an entry in the active overlay. */
 export function txMeaning(map: ContentMap | null, id: string, fallback: string): string {
   return map?.[id]?.m ?? fallback;
