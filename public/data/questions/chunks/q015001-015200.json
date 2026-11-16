@@ -1,0 +1,3544 @@
+[
+ {
+  "id": "q-grm1-013001",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My brother burned _____ in the kitchen.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "himself",
+   "he",
+   "his",
+   "him"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: himself.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013002",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We made the dinner _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ours",
+   "ourselves",
+   "us",
+   "we"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: ourselves.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013003",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I did it my.",
+   "I did it mine.",
+   "I did it me.",
+   "I did it myself."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: I did it myself..",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013004",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She hurt she.",
+   "She hurt hers.",
+   "She hurt her.",
+   "She hurt herself."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: She hurt herself..",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013005",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They enjoyed they.",
+   "They enjoyed theirs.",
+   "They enjoyed them.",
+   "They enjoyed themselves."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: They enjoyed themselves..",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013006",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He looked at he.",
+   "He looked at his.",
+   "He looked at him.",
+   "He looked at himself."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص. الإجابة الصحيحة: He looked at himself..",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013007",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Himself\" is used for a man.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013008",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Themself\" is the standard plural reflexive.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح themselves للجمع. myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013009",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I hurt me\" is correct when I hurt my own body.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I hurt myself. myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013010",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"We did it ourselves\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. myself, yourself, himself, herself, itself, ourselves, yourselves, themselves. بنستخدمها لما الفاعل والمفعول نفس الشخص.",
+  "topic": "Grammar: reflexive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013011",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The man _____ lives next door is a doctor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "where",
+   "which",
+   "who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013012",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is the book _____ I bought yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "which",
+   "where",
+   "whose"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: which.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013013",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is the girl _____ won the prize.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "whose",
+   "who",
+   "which"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013014",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The car _____ is outside is mine.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "where",
+   "which",
+   "who"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: which.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013015",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I know a teacher _____ speaks five languages.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "when",
+   "which",
+   "who",
+   "where"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013016",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The phone _____ I lost was new.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "who",
+   "where",
+   "that"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: that.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013017",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "A doctor is a person _____ helps sick people.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "which",
+   "when",
+   "who",
+   "where"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013018",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "A key is something _____ opens a door.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "which",
+   "when",
+   "where"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: which.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013019",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The boy _____ is sitting there is my cousin.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "which",
+   "when",
+   "who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013020",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The film _____ we saw was great.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "which",
+   "where",
+   "who"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: which.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013021",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "People _____ work hard succeed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "whose",
+   "which",
+   "where"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013022",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The bag _____ is on the table is hers.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "who",
+   "that",
+   "where"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: that.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013023",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is the player _____ scored two goals.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "who",
+   "which",
+   "where",
+   "whose"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013024",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is the shop _____ sells cheap shoes.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "which",
+   "who",
+   "where"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: which.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013025",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The woman _____ called you is my aunt.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "whose",
+   "which",
+   "where",
+   "who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013026",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I like songs _____ are slow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that",
+   "where",
+   "whose",
+   "who"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: that.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013027",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The people _____ live here are friendly.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "where",
+   "which",
+   "whose",
+   "who"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: who.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013028",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The bus _____ goes to the airport is late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "that",
+   "where",
+   "whose",
+   "who"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: that.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013029",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The girl who sing is my sister.",
+   "The girl what sings is my sister.",
+   "The girl which sings is my sister.",
+   "The girl who sings is my sister."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: The girl who sings is my sister..",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013030",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The book what I read was good.",
+   "The book whom I read was good.",
+   "The book who I read was good.",
+   "The book which I read was good."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: The book which I read was good..",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013031",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This is the man what helped me.",
+   "This is the man whose helped me.",
+   "This is the man which helped me.",
+   "This is the man who helped me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: This is the man who helped me..",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013032",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I have a friend what plays chess.",
+   "I have a friend where plays chess.",
+   "I have a friend which plays chess.",
+   "I have a friend who plays chess."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: I have a friend who plays chess..",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013033",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It is a tool what cuts wood.",
+   "It is a tool whose cuts wood.",
+   "It is a tool who cuts wood.",
+   "It is a tool that cuts wood."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد. الإجابة الصحيحة: It is a tool that cuts wood..",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013034",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Who\" is used for people.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013035",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Which\" is used for people.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. which للأشياء وwho للأشخاص. who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013036",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"That\" can be used for things.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013037",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"The man which called me\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح The man who called me. who للأشخاص، which للأشياء، that للاتنين. بنستخدمهم عشان نوصف حاجة أو حد.",
+  "topic": "Grammar: relative pronouns who/which/that (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013038",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ to Alexandria last summer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have gone",
+   "went",
+   "have been",
+   "go"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: went.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013039",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She has _____ in Cairo since 2019.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "living",
+   "lives",
+   "lived",
+   "live"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: lived.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013040",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ him yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had seen",
+   "see",
+   "saw",
+   "have seen"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: saw.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013041",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We have known each other _____ ten years.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "during",
+   "ago",
+   "since",
+   "for"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: for.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013042",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has worked here _____ 2018.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "since",
+   "during",
+   "ago"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: since.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013043",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ the match last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have won",
+   "has won",
+   "win",
+   "won"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: won.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013044",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ you ever visited Luxor?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Have",
+   "Did",
+   "Are",
+   "Do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: Have.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013045",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "When _____ you finish your homework?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "do",
+   "did",
+   "were"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: did.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013046",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have just _____ my lunch.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "finishes",
+   "finished",
+   "finish",
+   "finishing"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: finished.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013047",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ his leg two weeks ago.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has broken",
+   "breaks",
+   "breaking",
+   "broke"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: broke.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013048",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We have lived here _____ a long time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "since",
+   "for",
+   "ago",
+   "from"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: for.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013049",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I haven't seen her _____ last Monday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "since",
+   "during",
+   "ago"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: since.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013050",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ married in 2015.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "got",
+   "have got",
+   "have been got",
+   "get"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: got.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013051",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My phone is broken. I _____ it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am dropping",
+   "have dropped",
+   "drop",
+   "dropped yesterday"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: have dropped.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013052",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "How long _____ you known him?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "do",
+   "are",
+   "did"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: have.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013053",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ never _____ sushi before.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have / eaten",
+   "have / ate",
+   "am / eating",
+   "did / eat"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: have / eaten.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013054",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ for the company for five years now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "works",
+   "has worked",
+   "is worked",
+   "worked"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: has worked.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013055",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ to London three times.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has been",
+   "was",
+   "goes",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: has been.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013056",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It _____ two hours ago.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "starts",
+   "has started",
+   "started",
+   "starting"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: started.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013057",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ that film twice.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "saw ago",
+   "have seen",
+   "see",
+   "am seeing"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: have seen.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013058",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Mona _____ a new job last month.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has got",
+   "gets",
+   "got",
+   "is getting"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: got.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013059",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ in Dubai for three years before moving. (finished)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are living",
+   "have lived",
+   "lived",
+   "live"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: lived.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013060",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ lunch yet.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hadn't have",
+   "doesn't have",
+   "hasn't have",
+   "hasn't had"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: hasn't had.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013061",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Look! I _____ my wallet.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am finding",
+   "find",
+   "found yesterday",
+   "have found"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: have found.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013062",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I live here for five years.",
+   "I am living here for five years.",
+   "I have lived here since five years.",
+   "I have lived here for five years."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: I have lived here for five years..",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013063",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She has been to Paris in 2020.",
+   "She goes to Paris in 2020.",
+   "She has gone to Paris in 2020.",
+   "She went to Paris in 2020."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: She went to Paris in 2020..",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013064",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We are friends since childhood.",
+   "We were friends since childhood.",
+   "We have been friends for childhood.",
+   "We have been friends since childhood."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: We have been friends since childhood..",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013065",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Do you see the film last night?",
+   "Are you seeing the film last night?",
+   "Have you seen the film last night?",
+   "Did you see the film last night?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: Did you see the film last night?.",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013066",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't eat today.",
+   "I haven't ate today.",
+   "I didn't eat today yet.",
+   "I haven't eaten today."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: I haven't eaten today..",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013067",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He just has leave.",
+   "He has just leaved.",
+   "He has just leaves.",
+   "He has just left."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020). الإجابة الصحيحة: He has just left..",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013068",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I have seen him yesterday\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. مع yesterday بنستخدم past simple: I saw him yesterday. present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020).",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013069",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I have lived here since 2010\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020).",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013070",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She has been ill for two days\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020).",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013071",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"We have met last year\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح We met last year. present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020).",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013072",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"How long have you lived here?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. present perfect لحاجة حصلت وليها علاقة بالحاضر أو من غير وقت محدد. past simple لحاجة خلصت في وقت محدد في الماضي (yesterday, last year, in 2020).",
+  "topic": "Grammar: present perfect vs past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013073",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have lived here _____ 2015.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "during",
+   "for",
+   "since",
+   "ago"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013074",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She has studied English _____ three years.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ago",
+   "from",
+   "for",
+   "since"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013075",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They have been married _____ ten years.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "since",
+   "from",
+   "during"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013076",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has been absent _____ Monday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ago",
+   "for",
+   "during",
+   "since"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013077",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We have waited _____ two hours.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ago",
+   "for",
+   "since",
+   "from"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013078",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I haven't seen him _____ last week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "during",
+   "for",
+   "since",
+   "ago"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013079",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It has been raining _____ morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ago",
+   "from",
+   "for",
+   "since"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013080",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My father has worked here _____ 1995.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ago",
+   "from",
+   "since",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013081",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She has had this phone _____ a year.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "since",
+   "ago",
+   "for",
+   "from"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013082",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I've known him _____ I was a child.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ago",
+   "during",
+   "since",
+   "for"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013083",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We haven't spoken _____ weeks.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "since",
+   "from",
+   "ago",
+   "for"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013084",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has played the guitar _____ he was ten.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "ago",
+   "since",
+   "from"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013085",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They have lived in Egypt _____ many years.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "since",
+   "ago",
+   "for",
+   "from"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013086",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have been here _____ 8 o'clock.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "for",
+   "since",
+   "during",
+   "ago"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013087",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She hasn't called _____ Friday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "during",
+   "since",
+   "for",
+   "ago"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013088",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "How long have you had your car? _____ two years.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Since",
+   "During",
+   "For",
+   "Ago"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: For.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013089",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "How long has he been in hospital? _____ last Sunday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Since",
+   "During",
+   "For",
+   "Ago"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: Since.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013090",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The shop has been closed _____ a month.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "since",
+   "from",
+   "for",
+   "ago"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: for.",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013091",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I have studied here ago 2020.",
+   "I have studied here during 2020.",
+   "I have studied here for 2020.",
+   "I have studied here since 2020."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: I have studied here since 2020..",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013092",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She has been sick ago three days.",
+   "She has been sick from three days.",
+   "She has been sick since three days.",
+   "She has been sick for three days."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: She has been sick for three days..",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013093",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He has lived there ago he was born.",
+   "He has lived there during he was born.",
+   "He has lived there for he was born.",
+   "He has lived there since he was born."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: He has lived there since he was born..",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013094",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We have known her ago years.",
+   "We have known her from years.",
+   "We have known her since years.",
+   "We have known her for years."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child). الإجابة الصحيحة: We have known her for years..",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013095",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"For\" is used with a period of time.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child).",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013096",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Since\" is used with a point in time.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child).",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013097",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I have waited since two hours\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I have waited for two hours. for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child).",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013098",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She has worked here for 2018\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح since 2018. for + مدة (two hours, three years)، وsince + نقطة بداية في الزمن (2020, Monday, I was a child).",
+  "topic": "Grammar: for and since (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013099",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have been _____ for two hours. (study)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studying",
+   "studies",
+   "study",
+   "studied"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: studying.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013100",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She has been _____ since morning. (work)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "work",
+   "worked",
+   "working",
+   "works"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: working.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013101",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They have been _____ football all afternoon. (play)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "playing",
+   "play",
+   "played",
+   "plays"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: playing.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013102",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "How long _____ you been waiting?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "have",
+   "has",
+   "are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: have.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013103",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ been running. He is tired.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "was",
+   "has",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: has.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013104",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It _____ been raining all day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "has",
+   "is",
+   "have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: has.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013105",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We _____ been living here since 2020.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "are",
+   "has",
+   "were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: have.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013106",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My eyes hurt. I _____ been reading too long.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "did",
+   "have",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: have.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013107",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is exhausted. She _____ been cleaning all day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "has",
+   "have",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: has.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013108",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have been _____ you for an hour! (call)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "calls",
+   "call",
+   "called",
+   "calling"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: calling.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013109",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They have been _____ English for five years. (learn)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "learn",
+   "learning",
+   "learns",
+   "learned"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: learning.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013110",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Why are you wet? _____ you been swimming?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Have",
+   "Did",
+   "Has"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: Have.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013111",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He has been _____ the same song all day. (sing)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sing",
+   "sang",
+   "singing",
+   "sung"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: singing.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013112",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The kids have been _____ outside since lunch. (play)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "play",
+   "playing",
+   "plays",
+   "played"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: playing.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013113",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "How long _____ she been teaching?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "have",
+   "has",
+   "did"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: has.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013114",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I haven't been _____ well lately. (feel)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "felt",
+   "feel",
+   "feels",
+   "feeling"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: feeling.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013115",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We have been _____ for the bus for 30 minutes. (wait)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wait",
+   "waits",
+   "waited",
+   "waiting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: waiting.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013116",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My brother has been _____ a lot. (travel)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "travel",
+   "traveled",
+   "traveling",
+   "travels"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: traveling.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013117",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I have waiting for an hour.",
+   "I was been waiting for an hour.",
+   "I am waiting for an hour.",
+   "I have been waiting for an hour."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: I have been waiting for an hour..",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013118",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is been studying since 6.",
+   "She have been studying since 6.",
+   "She has studying since 6.",
+   "She has been studying since 6."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: She has been studying since 6..",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013119",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "How long have you been learning English?",
+   "How long did you been learning English?",
+   "How long are you learning English?",
+   "How long have you learning English?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: How long have you been learning English?.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013120",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It have been snowing all night.",
+   "It is been snowing all night.",
+   "It has snowing all night.",
+   "It has been snowing all night."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince. الإجابة الصحيحة: It has been snowing all night..",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013121",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"He has been working here for years\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013122",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I have been knowing him\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. know فعل حالة وبنقول I have known him. have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013123",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"They have been waiting since noon\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013124",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She has been work\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She has been working. have/has been + ing للحاجة اللي بدأت في الماضي وما زالت مستمرة أو لسه نتيجتها ظاهرة. مفيدة مع how long وfor وsince.",
+  "topic": "Grammar: present perfect continuous (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013125",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I _____ rich, I would buy a big house.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "will be",
+   "were",
+   "would be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013126",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If she _____ more time, she would travel more.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "will have",
+   "would have",
+   "has"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013127",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I were you, I _____ study harder.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "am",
+   "would",
+   "did"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013128",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "What would you do if you _____ a million pounds?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "win",
+   "won",
+   "would win",
+   "will win"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: won.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013129",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If he _____ English, he would get the job.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would speak",
+   "speaks",
+   "will speak",
+   "spoke"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: spoke.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013130",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If it _____ sunny, we would go to the beach.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would be",
+   "will be",
+   "is",
+   "were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013131",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ help you if I knew how.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "would",
+   "will",
+   "did"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013132",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If they _____ earlier, they would catch the train.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "leave",
+   "left",
+   "will leave",
+   "would leave"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: left.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013133",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I _____ a bird, I would fly to the moon.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "will be",
+   "were",
+   "would be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013134",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She would be happy if you _____ her.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will visit",
+   "visit",
+   "would visit",
+   "visited"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: visited.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013135",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If we had a car, we _____ drive to Alexandria.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "are",
+   "will",
+   "would"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013136",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I lived near the sea, I _____ swim every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "would",
+   "did",
+   "am"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013137",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If you _____ harder, you would pass.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "study",
+   "would study",
+   "will study",
+   "studied"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: studied.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013138",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ be angry if he knew the truth.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "is",
+   "would",
+   "did"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013139",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I _____ more money, I would help the poor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would have",
+   "had",
+   "have",
+   "will have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013140",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If she _____ here, she would help us.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would be",
+   "is",
+   "were",
+   "will be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013141",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "What _____ you do if you lost your phone?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "would",
+   "did",
+   "will"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013142",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I _____ the answer, I would tell you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "know",
+   "would know",
+   "knew",
+   "will know"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: knew.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013143",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If I have wings, I would fly.",
+   "If I had wings, I will fly.",
+   "If I would have wings, I would fly.",
+   "If I had wings, I would fly."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: If I had wings, I would fly..",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013144",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If he is taller, he would play basketball.",
+   "If he were taller, he will play basketball.",
+   "If he would be taller, he would play basketball.",
+   "If he were taller, he would play basketball."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: If he were taller, he would play basketball..",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013145",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I will buy it if I had enough money.",
+   "I would buy it if I have enough money.",
+   "I would buy it if I would have enough money.",
+   "I would buy it if I had enough money."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: I would buy it if I had enough money..",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013146",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If you ask, she would help.",
+   "If you asked, she will help.",
+   "If you would ask, she would help.",
+   "If you asked, she would help."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي. الإجابة الصحيحة: If you asked, she would help..",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013147",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If I would know, I would tell you\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح If I knew, I would tell you. If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013148",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If I were you, I would go\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013149",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If I won the lottery, I would travel\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013150",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If she will come, I would be happy\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح If she came, I would be happy. If + ماضي بسيط، would + فعل. للكلام عن حاجة مش حقيقية أو مستحيلة أو غير محتملة دلوقتي.",
+  "topic": "Grammar: second conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013151",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "English _____ all over the world.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is spoken",
+   "is speak",
+   "speaks",
+   "are spoken"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: is spoken.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013152",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The cars _____ in this factory.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are made",
+   "are making",
+   "is made",
+   "make"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: are made.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013153",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The window _____ yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was broken",
+   "broke",
+   "is broken",
+   "were broken"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was broken.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013154",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This book _____ by a famous writer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is wrote",
+   "were written",
+   "wrote",
+   "was written"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was written.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013155",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Rice _____ in Egypt.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are grown",
+   "is grown",
+   "is growing",
+   "grows"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: is grown.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013156",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The letters _____ every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are delivered",
+   "is delivered",
+   "are delivering",
+   "deliver"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: are delivered.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013157",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The room _____ every morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is cleaned",
+   "cleans",
+   "are cleaned",
+   "is cleaning"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: is cleaned.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013158",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The thief _____ by the police last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is caught",
+   "were caught",
+   "was caught",
+   "caught"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was caught.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013159",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "These shoes _____ in Italy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is made",
+   "make",
+   "made",
+   "are made"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: are made.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013160",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The Pyramids _____ thousands of years ago.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are built",
+   "were built",
+   "was built",
+   "built"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: were built.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013161",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My bike _____ last week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "stole",
+   "was stolen",
+   "were stolen",
+   "is stolen"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was stolen.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013162",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Coffee _____ in Brazil.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are grown",
+   "is grown",
+   "grow",
+   "is grew"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: is grown.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013163",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The dinner _____ by my mother.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were cooked",
+   "is cooked",
+   "was cooked",
+   "cooked"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was cooked.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013164",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The meeting _____ at ten o'clock yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was held",
+   "is held",
+   "were held",
+   "held"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was held.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013165",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Many tourists _____ to Egypt every year.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are welcomed",
+   "was welcomed",
+   "welcome",
+   "is welcomed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: are welcomed.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013166",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The song _____ by millions of people.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "heard",
+   "is heard",
+   "was heard",
+   "were heard"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was heard.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013167",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Football _____ in many countries.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are played",
+   "is playing",
+   "is played",
+   "plays"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: is played.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013168",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The book _____ into Arabic in 2010.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was translated",
+   "translated",
+   "is translated",
+   "were translated"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: was translated.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013169",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The homework _____ by the students every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is doing",
+   "does",
+   "are done",
+   "is done"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: is done.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013170",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct passive sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The cake eaten by the children.",
+   "The cake were eaten by the children.",
+   "The cake was ate by the children.",
+   "The cake was eaten by the children."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: The cake was eaten by the children..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013171",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct passive sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The room are cleaned every day.",
+   "The room cleaned every day.",
+   "The room is clean every day by.",
+   "The room is cleaned every day."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: The room is cleaned every day..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013172",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct passive sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The letter written by Ali.",
+   "The letter were written by Ali.",
+   "The letter was wrote by Ali.",
+   "The letter was written by Ali."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: The letter was written by Ali..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013173",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct passive sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "These phones are make in China.",
+   "These phones made in China are.",
+   "These phones is made in China.",
+   "These phones are made in China."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: These phones are made in China..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013174",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the passive form of: \"They built this bridge in 1990.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This bridge is built in 1990 by them.",
+   "This bridge were built in 1990.",
+   "This bridge built in 1990.",
+   "This bridge was built in 1990."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: This bridge was built in 1990..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013175",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the passive form of: \"People speak Arabic in Egypt.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Arabic are spoken in Egypt.",
+   "Arabic is spoken in Egypt.",
+   "Arabic is speak in Egypt.",
+   "Arabic speaks in Egypt."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: Arabic is spoken in Egypt..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013176",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the passive form of: \"Someone stole my car.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My car were stolen.",
+   "My car was stole.",
+   "My car was stolen.",
+   "My car stolen."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: My car was stolen..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013177",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the passive form of: \"They clean the streets every night.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The streets are clean every night.",
+   "The streets are cleaned every night.",
+   "The streets is cleaned every night.",
+   "The streets cleaned every night."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف. الإجابة الصحيحة: The streets are cleaned every night..",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013178",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The window was broke\" is a correct passive sentence.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح The window was broken لأن لازم التصريف الثالث broken. المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013179",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The letters are sent every day\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013180",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"The house were built in 1990\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح The house was built لأن house مفرد. المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013181",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"English is spoken here\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. المبني للمجهول: be + التصريف الثالث للفعل. am/is/are للحاضر، was/were للماضي. بنستخدمه لما الفاعل مش مهم أو مش معروف.",
+  "topic": "Grammar: passive voice present simple and past simple (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013182",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The report will _____ tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "finish",
+   "finished",
+   "being finished",
+   "be finished"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: be finished.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013183",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The work has _____ finished.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "been",
+   "being",
+   "was"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: been.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013184",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The letter _____ by Sara. (past)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was written",
+   "is written",
+   "were written",
+   "has write"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: was written.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013185",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The cake can _____ in 20 minutes.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "make",
+   "be made",
+   "making",
+   "made"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: be made.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013186",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The problem has _____ solved.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "been",
+   "was",
+   "be",
+   "being"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: been.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013187",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The new bridge _____ next year. (future)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will open",
+   "opens",
+   "is open",
+   "will be opened"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: will be opened.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013188",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The room must _____ before ten.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be cleaned",
+   "clean",
+   "cleaned",
+   "cleaning"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: be cleaned.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013189",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This song was sung _____ a famous singer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "of",
+   "with",
+   "from"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: by.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013190",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The match was won _____ the home team.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "from",
+   "of",
+   "with"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: by.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013191",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The doors _____ been locked.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "has",
+   "are",
+   "have"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: have.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013192",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The students will _____ the results tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "tell",
+   "be told",
+   "told",
+   "telling"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: be told.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013193",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The mistake could _____ avoided.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has been",
+   "being",
+   "have been",
+   "been"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: have been.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013194",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The house is _____ painted now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "been",
+   "being",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: being.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013195",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The tickets have _____ sold out.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "being",
+   "was",
+   "been",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: been.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013196",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The package will _____ by Friday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "delivering",
+   "delivered",
+   "deliver",
+   "be delivered"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: be delivered.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013197",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This room _____ used for meetings.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "be",
+   "being"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: is.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013198",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The picture was painted _____ Picasso.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "by",
+   "with",
+   "from",
+   "of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: by.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013199",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The gate _____ locked at night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "be",
+   "are",
+   "has",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: is.",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013200",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The work will be do tomorrow.",
+   "The work will been done tomorrow.",
+   "The work will done tomorrow.",
+   "The work will be done tomorrow."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "by + الفاعل لو مهم نذكره. وبنقدر نستخدم المبني للمجهول مع will (will be + V3) ومع can (can be + V3) ومع present perfect (has been + V3). الإجابة الصحيحة: The work will be done tomorrow..",
+  "topic": "Grammar: passive voice with by and other tenses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]

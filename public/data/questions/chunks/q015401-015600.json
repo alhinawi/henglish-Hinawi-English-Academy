@@ -1,0 +1,3530 @@
+[
+ {
+  "id": "q-grm1-013401",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Tom, which father is a chef, loves cooking.",
+   "Tom, that father is a chef, loves cooking.",
+   "Tom, who father is a chef, loves cooking.",
+   "Tom, whose father is a chef, loves cooking."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that). الإجابة الصحيحة: Tom, whose father is a chef, loves cooking..",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013402",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "We can use \"that\" in non-defining relative clauses.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. في الجمل الإضافية بنستخدم who أو which مش that. في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that).",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013403",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "Non-defining clauses use commas.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that).",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013404",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"My dad, who is tall, works here\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that).",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013405",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Cairo, that is big, is old\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Cairo, which is big, is old. في الجمل الإضافية بنحط فاصلة قبل وبعد المعلومة الزيادة، وبنستخدم who/which بس (مش that).",
+  "topic": "Grammar: non-defining relative clauses (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013406",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If you heat ice, it _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "melts",
+   "would melt",
+   "melted",
+   "will melt"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: melts.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013407",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If you mix red and blue, you _____ purple.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "get",
+   "would got",
+   "will got",
+   "got"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: get.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013408",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If it rains, the streets _____ wet.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will got",
+   "get",
+   "got",
+   "would got"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: get.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013409",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Water _____ if you heat it to 100 degrees.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will boiled",
+   "boiling",
+   "boils",
+   "boiled"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: boils.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013410",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If I drink coffee at night, I _____ sleep.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "couldn't",
+   "can't",
+   "wouldn't can",
+   "won't can"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013411",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If you press this button, the door _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "opened",
+   "opening",
+   "will opened",
+   "opens"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: opens.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013412",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If plants don't get water, they _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "die",
+   "died",
+   "will died",
+   "dying"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: die.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013413",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If people eat too much, they _____ weight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "gained",
+   "gaining",
+   "will gained",
+   "gain"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: gain.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013414",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If you don't sleep enough, you _____ tired.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will felt",
+   "feeling",
+   "felt",
+   "feel"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: feel.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013415",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If the sun _____, it gets warm.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would shine",
+   "shone",
+   "shines",
+   "will shine"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: shines.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013416",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If you _____ metal, it expands.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will heat",
+   "heat",
+   "heated",
+   "would heat"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: heat.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013417",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "If he is angry, he _____ shouting.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will started",
+   "starts",
+   "starting",
+   "started"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: starts.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013418",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If you heated water, it boils.",
+   "If you will heat water, it boils.",
+   "If you heat water, it will boiled.",
+   "If you heat water, it boils."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: If you heat water, it boils..",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013419",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If I will eat nuts, I get a rash.",
+   "If I eat nuts, I will got a rash.",
+   "If I ate nuts, I get a rash.",
+   "If I eat nuts, I get a rash."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: If I eat nuts, I get a rash..",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013420",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "If it will be cold, I wear a coat.",
+   "If it is cold, I will wore a coat.",
+   "If it is cold, I wore a coat.",
+   "If it is cold, I wear a coat."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما. الإجابة الصحيحة: If it is cold, I wear a coat..",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013421",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If you freeze water, it turns to ice\" is a zero conditional.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013422",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "Zero conditional is used for general facts.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013423",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If you will heat ice, it melts\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح If you heat ice, it melts. If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013424",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"If I am tired, I go to bed early\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. If + مضارع بسيط، مضارع بسيط. للحقائق العامة والأشياء اللي بتحصل دايما.",
+  "topic": "Grammar: zero conditional (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013425",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "When I arrived, the film _____ already started.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "has",
+   "have",
+   "had"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013426",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ left before I called.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "have",
+   "has",
+   "had"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013427",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ eaten before we came.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "has",
+   "have",
+   "were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013428",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I realized I _____ forgotten my keys.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "was",
+   "has",
+   "have"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013429",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He told me that he _____ seen the film.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "had",
+   "has",
+   "was"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013430",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "After she _____ the book, she slept. (finish)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have finished",
+   "has finished",
+   "finished had",
+   "had finished"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had finished.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013431",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "By the time we got there, the shop _____ closed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "was been",
+   "had",
+   "has"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013432",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I didn't go because I _____ already seen it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "had",
+   "have",
+   "was"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013433",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We _____ never met before that day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "had",
+   "did",
+   "has"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013434",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The train _____ already left when we reached the station.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "was",
+   "have",
+   "has"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013435",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He was sad because he _____ failed the exam.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "had",
+   "was",
+   "has"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013436",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ lived there for ten years before she moved.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "have",
+   "has",
+   "was"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013437",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "By 8 o'clock, I _____ finished my homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "have",
+   "was",
+   "had"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013438",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ left when it started to rain.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was already",
+   "had already",
+   "have already",
+   "has already"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had already.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013439",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "After he _____ dinner, he watched TV. (eat)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had eaten",
+   "ate had",
+   "has eaten",
+   "have eaten"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had eaten.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013440",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I _____ been to Paris before 2020.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has never",
+   "have never",
+   "was never",
+   "had never"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: had never.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013441",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I had finish before he came.",
+   "I finished had before he came.",
+   "I have finished before he came.",
+   "I had finished before he came."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: I had finished before he came..",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013442",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She had already go.",
+   "She have already gone.",
+   "She has already gone when I came.",
+   "She had already gone."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: She had already gone..",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013443",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They had ate when we arrived.",
+   "They have eaten when we arrived.",
+   "They has eaten when we arrived.",
+   "They had eaten when we arrived."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: They had eaten when we arrived..",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013444",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "By the time I arrived, he have left.",
+   "By the time I arrived, he leaved.",
+   "By the time I arrived, he has left.",
+   "By the time I arrived, he had left."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي. الإجابة الصحيحة: By the time I arrived, he had left..",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013445",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I had saw it\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I had seen it. had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013446",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She had left before I arrived\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013447",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "Past perfect describes the earlier of two past events.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013448",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"They have left when I came\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح They had left when I came. had + التصريف الثالث للحاجة اللي حصلت قبل حاجة تانية في الماضي.",
+  "topic": "Grammar: past perfect (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013449",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish I _____ a car. (I don't have one)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "would have",
+   "have",
+   "will have"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013450",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She wishes she _____ taller. (she isn't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "would be",
+   "will be",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013451",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish I _____ speak French. (I can't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "could",
+   "would",
+   "can",
+   "will"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: could.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013452",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He wishes he _____ more money. (he doesn't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would have",
+   "has",
+   "will have",
+   "had"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013453",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish it _____ sunny today. (it isn't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "would be",
+   "will be",
+   "were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013454",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We wish we _____ in Cairo. (we don't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would live",
+   "will live",
+   "live",
+   "lived"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: lived.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013455",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish I _____ you the truth. (I didn't tell)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would tell",
+   "told",
+   "have told",
+   "had told"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had told.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013456",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She wishes she _____ harder. (she didn't study)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has studied",
+   "would study",
+   "had studied",
+   "studied"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had studied.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013457",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish I _____ more free time. (I'm busy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "will have",
+   "have",
+   "would have"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013458",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He wishes he _____ a bike. (he doesn't have)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "would have",
+   "will have",
+   "has"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013459",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They wish they _____ rich. (they aren't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "would be",
+   "will be",
+   "are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013460",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish you _____ stop making noise. (it annoys me)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "will",
+   "are",
+   "would"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: would.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013461",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish I _____ the exam. (I failed)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would pass",
+   "had passed",
+   "have passed",
+   "passed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: had passed.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013462",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She wishes she _____ here. (she is far)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "would be",
+   "were",
+   "will be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: were.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013463",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wish I _____ how to swim. (I don't)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "knew",
+   "will know",
+   "know",
+   "would know"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: knew.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013464",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I wish I will have more time.",
+   "I wish I would have more time.",
+   "I wish I have more time.",
+   "I wish I had more time."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: I wish I had more time..",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013465",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She wishes she will be here.",
+   "She wishes she would be here.",
+   "She wishes she is here.",
+   "She wishes she were here."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: She wishes she were here..",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013466",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I wish I have studied.",
+   "I wish I would study.",
+   "I wish I studied last night.",
+   "I wish I had studied."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي. الإجابة الصحيحة: I wish I had studied..",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013467",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I wish I am rich\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I wish I were rich. wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013468",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I wish I knew the answer\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013469",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I wish I had gone\" talks about regret in the past.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013470",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She wishes she has a car\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She wishes she had a car. wish + ماضي بسيط للتمني على حاجة مش حقيقية دلوقتي. wish + would للشكوى. wish + had + V3 للندم على الماضي.",
+  "topic": "Grammar: wish (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013471",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I need to _____ my homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "take",
+   "make",
+   "have",
+   "do"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013472",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ a cake for my birthday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "made",
+   "had",
+   "took",
+   "did"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: made.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013473",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Please don't _____ a noise.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "make",
+   "do",
+   "have",
+   "take"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013474",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ the dishes after dinner.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "made",
+   "did",
+   "had",
+   "took"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: did.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013475",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We must _____ a decision today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "take",
+   "make",
+   "have"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013476",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I always _____ my best.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "do",
+   "take",
+   "make"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013477",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ a mistake in the test.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "made",
+   "did",
+   "had",
+   "took"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: made.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013478",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Can you _____ me a favor?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "take",
+   "do",
+   "make",
+   "have"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013479",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He wants to _____ money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "take",
+   "have",
+   "make"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013480",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They _____ the shopping every Friday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "take",
+   "make",
+   "do"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013481",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Let's _____ a plan.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "make",
+   "take",
+   "do",
+   "have"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013482",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have to _____ the laundry.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "take",
+   "make",
+   "do",
+   "have"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013483",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Did you _____ your bed this morning?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "make",
+   "do",
+   "take",
+   "have"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013484",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She _____ a phone call to her mother.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "took",
+   "had",
+   "made"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: made.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013485",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ exercise every morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has",
+   "takes",
+   "makes",
+   "does"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: does.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013486",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The teacher _____ a speech.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "made",
+   "took",
+   "did",
+   "had"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: made.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013487",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll _____ some coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "take",
+   "make",
+   "do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013488",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We _____ business with many countries.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "have",
+   "take",
+   "make"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013489",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is _____ a degree in law.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doing",
+   "making",
+   "taking",
+   "having"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: doing.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013490",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He _____ an effort to improve.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "took",
+   "made",
+   "did"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: made.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013491",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "do a mistake",
+   "have a mistake",
+   "take a mistake",
+   "make a mistake"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make a mistake.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013492",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "make homework",
+   "have homework",
+   "take homework",
+   "do homework"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do homework.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013493",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "do a cake",
+   "have a cake",
+   "take a cake",
+   "make a cake"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make a cake.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013494",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "make the dishes",
+   "have the dishes",
+   "take the dishes",
+   "do the dishes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do the dishes.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013495",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "do a noise",
+   "have a noise",
+   "take a noise",
+   "make a noise"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make a noise.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013496",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "make someone a favor",
+   "have someone a favor",
+   "take someone a favor",
+   "do someone a favor"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do someone a favor.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013497",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "do progress",
+   "have progress",
+   "take progress",
+   "make progress"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: make progress.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013498",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct phrase.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "make your best",
+   "have your best",
+   "take your best",
+   "do your best"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision). الإجابة الصحيحة: do your best.",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013499",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Make homework\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح do homework. do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision).",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013500",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Make a decision\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision).",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013501",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Do a mistake\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح make a mistake. do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision).",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013502",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Do the shopping\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. do للأنشطة والواجبات (do homework, do the dishes)، وmake للتصنيع والإنتاج (make a cake, make a mistake, make a decision).",
+  "topic": "Grammar: make and do (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013503",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It was _____ a beautiful day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "very much",
+   "such",
+   "too",
+   "so"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013504",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The film was _____ boring.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "a such",
+   "such",
+   "too"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013505",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She is _____ a kind person.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "such",
+   "very much",
+   "so",
+   "too"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013506",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He ran _____ fast that nobody could catch him.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "such",
+   "so",
+   "a such"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013507",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It was _____ cold that we stayed home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "a such",
+   "so",
+   "such"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013508",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "They are _____ nice people.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "so",
+   "a such",
+   "such"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013509",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I was _____ tired that I fell asleep.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "such",
+   "a such",
+   "so"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013510",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It was _____ an interesting book.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "a such",
+   "such",
+   "so"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013511",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She speaks _____ quietly that I can't hear.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "such",
+   "too",
+   "a such",
+   "so"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013512",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is _____ a good teacher that everyone loves him.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a such",
+   "too",
+   "such",
+   "so"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013513",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The soup is _____ hot that I can't drink it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a such",
+   "such",
+   "so",
+   "too"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013514",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It was _____ a long trip.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "such",
+   "very much",
+   "so",
+   "too"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013515",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The children were _____ noisy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "such",
+   "a such",
+   "too"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013516",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It's _____ lovely weather today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "so",
+   "a such",
+   "such"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013517",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have _____ many friends.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a such",
+   "too",
+   "so",
+   "such"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: so.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013518",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We had _____ good time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so a",
+   "such a",
+   "too",
+   "so"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: such a.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013519",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It was such good a film.",
+   "It was so good film.",
+   "It was so a good film.",
+   "It was such a good film."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: It was such a good film..",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013520",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is so a happy.",
+   "She is such a happy.",
+   "She is such happy.",
+   "She is so happy."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: She is so happy..",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013521",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is such funny a man.",
+   "He is so funny man.",
+   "He is so a funny man.",
+   "He is such a funny man."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: He is such a funny man..",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013522",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The exam was so a hard that I failed.",
+   "The exam was such a hard so I failed.",
+   "The exam was such hard that I failed.",
+   "The exam was so hard that I failed."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "so + صفة أو ظرف. such + (a/an) + صفة + اسم. الإجابة الصحيحة: The exam was so hard that I failed..",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013523",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Such\" is followed by a noun phrase.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. so + صفة أو ظرف. such + (a/an) + صفة + اسم.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013524",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"It was so a nice day\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح It was such a nice day. so + صفة أو ظرف. such + (a/an) + صفة + اسم.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013525",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"So\" is followed by an adjective.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. so + صفة أو ظرف. such + (a/an) + صفة + اسم.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013526",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"She is such nice\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She is so nice أو She is such a nice girl. so + صفة أو ظرف. such + (a/an) + صفة + اسم.",
+  "topic": "Grammar: so and such (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013527",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ of my parents are teachers.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Both",
+   "Every",
+   "Neither",
+   "Either"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Both.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013528",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ of them speaks German. They don't know it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Both",
+   "Neither",
+   "All",
+   "Either"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Neither.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013529",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You can take _____ road. Both go to the beach.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "both",
+   "all",
+   "neither",
+   "either"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: either.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013530",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I like _____ tea and coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "neither",
+   "all",
+   "either",
+   "both"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: both.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013531",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is _____ rich nor happy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "none",
+   "both",
+   "either",
+   "neither"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: neither.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013532",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "You can have _____ the cake or the ice cream.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "either",
+   "neither",
+   "all",
+   "both"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: either.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013533",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ of the two books is interesting. I didn't like them.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Both",
+   "All",
+   "Either",
+   "Neither"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Neither.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013534",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I have two sisters. _____ of them live in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Either",
+   "Neither",
+   "Both",
+   "Every"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Both.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013535",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ my brother nor my sister can drive.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "None",
+   "Neither",
+   "Either",
+   "Both"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Neither.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013536",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Would you like tea or coffee? - _____ is fine.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Either",
+   "All",
+   "Neither",
+   "Both"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Either.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013537",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She can speak _____ English and French.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "both",
+   "all",
+   "neither",
+   "either"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: both.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013538",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "_____ answer is correct. They are both wrong.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Both",
+   "Neither",
+   "Every",
+   "Either"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Neither.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013539",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I don't like _____ of these shirts.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "either",
+   "neither",
+   "all",
+   "both"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: either.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013540",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Tom and Ali are cousins. _____ of them are tall.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Both",
+   "Every",
+   "Either",
+   "Neither"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Both.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013541",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Neither of them are both happy.",
+   "Both them is happy.",
+   "Both of them is happy.",
+   "Both of them are happy."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Both of them are happy..",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013542",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Neither of us wasn't late.",
+   "Neither us was late.",
+   "Neither of us were not late.",
+   "Neither of us was late."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: Neither of us was late..",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013543",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't like both of them either.",
+   "I don't like none of them.",
+   "I don't like neither of them.",
+   "I don't like either of them."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: I don't like either of them..",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013544",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is both smart nor kind.",
+   "She is both smart but kind.",
+   "She is both smart or kind.",
+   "She is both smart and kind."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين. الإجابة الصحيحة: She is both smart and kind..",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013545",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Neither\" has a negative meaning.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013546",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I don't like neither\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. neither فيها معنى النفي، والصح I like neither أو I don't like either. both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013547",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Both\" refers to two people or things.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013548",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Either\" means one of two.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. both معناها الاتنين مع بعض. neither معناها ولا واحد (بفعل مثبت). either معناها واحد من الاتنين.",
+  "topic": "Grammar: both, neither, either (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013549",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I will call you as soon as I _____ home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "getting",
+   "got",
+   "will get",
+   "get"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: get.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013550",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We will wait until he _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "comes",
+   "coming",
+   "came",
+   "will come"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: comes.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013551",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "When she _____ here, I'll tell her.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "arrived",
+   "arrives",
+   "will arrive",
+   "arriving"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: arrives.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013552",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll finish my homework before I _____ to bed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "went",
+   "go",
+   "going",
+   "will go"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: go.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013553",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "After he _____ school, he will go to university.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "finishing",
+   "finishes",
+   "will finish",
+   "finished"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: finishes.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013554",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Call me when you _____ ready.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "being",
+   "were",
+   "will be",
+   "are"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: are.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013555",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll take a shower after I _____ the match.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watching",
+   "watched",
+   "will watch",
+   "watch"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: watch.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013556",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "While I _____ for the bus, it started to rain.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wait",
+   "am waiting",
+   "will wait",
+   "was waiting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: was waiting.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013557",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He fell asleep while he _____ TV.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watch",
+   "was watching",
+   "is watching",
+   "will watch"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: was watching.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013558",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll stay here until it _____ raining.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "stopped",
+   "will stop",
+   "stopping",
+   "stops"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: stops.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013559",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "As soon as the lesson _____, we will go out.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ends",
+   "will end",
+   "ending",
+   "ended"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: ends.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013560",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She was cooking while he _____ the table.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was setting",
+   "will set",
+   "sets",
+   "setting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: was setting.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013561",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'll visit you when I _____ time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "will have",
+   "having",
+   "had"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: have.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013562",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He always listens to music while he _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studied",
+   "will study",
+   "studies",
+   "studying"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: studies.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013563",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "We'll leave as soon as everyone _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will arrive",
+   "arrives",
+   "arriving",
+   "arrived"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: arrives.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013564",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Wash your hands before you _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "eat",
+   "eating",
+   "will eat",
+   "ate"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: eat.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013565",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I'll call you when I arrived.",
+   "I'll call you when I arriving.",
+   "I'll call you when I will arrive.",
+   "I'll call you when I arrive."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: I'll call you when I arrive..",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013566",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Wait here until I came back.",
+   "Wait here until I coming back.",
+   "Wait here until I will come back.",
+   "Wait here until I come back."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: Wait here until I come back..",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013567",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "As soon as he finished, he'll call.",
+   "As soon as he finishing, he'll call.",
+   "As soon as he will finish, he'll call.",
+   "As soon as he finishes, he'll call."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: As soon as he finishes, he'll call..",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013568",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I was read when the phone rang.",
+   "I reading when the phone rang.",
+   "I was read when the phone ringing.",
+   "I was reading when the phone rang."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will. الإجابة الصحيحة: I was reading when the phone rang..",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013569",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"When I will arrive, I will call\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح When I arrive, I will call. بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013570",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"After I finish, I'll leave\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013571",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"While\" is used for actions happening at the same time.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013572",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Until he will come\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح until he comes. بعد when وas soon as وbefore وafter وuntil في المستقبل بنستخدم المضارع البسيط مش will.",
+  "topic": "Grammar: time clauses - when, while, as soon as, before, after, until (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013573",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Could you tell me where the bank _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "do",
+   "is",
+   "is it"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: is.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013574",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Do you know what time the film _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "starts",
+   "is start",
+   "does start",
+   "start does"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: starts.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013575",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I don't know where she _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does live",
+   "lives",
+   "live does",
+   "is living"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: lives.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013576",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Can you tell me how much this _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does cost",
+   "is cost",
+   "costs",
+   "cost does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: costs.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013577",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Do you know if he _____ here?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "works",
+   "does work",
+   "work does",
+   "is work"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: works.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013578",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I wonder what he _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wants",
+   "want does",
+   "is want",
+   "does want"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: wants.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013579",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Could you tell me when the train _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is leave",
+   "leaves",
+   "leave does",
+   "does leave"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: leaves.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013580",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I'd like to know why she _____ late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "is was",
+   "was",
+   "was is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: was.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013581",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Do you know where I _____ park?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "do can",
+   "can",
+   "can I"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: can.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013582",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Could you tell me if the shop _____ open?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "is",
+   "is it",
+   "do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: is.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013583",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Do you know how old he _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "does",
+   "is he",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: is.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013584",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I don't know whether it _____ true.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "is",
+   "is it",
+   "does"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: is.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013585",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Can you tell me who _____ the window?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "broke",
+   "break did",
+   "did break",
+   "does break"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: broke.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013586",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Could you tell me where I _____ buy stamps?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do can",
+   "can I",
+   "does",
+   "can"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: can.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013587",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct indirect question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Could you tell me where she lives?",
+   "Could you tell me where does she live?",
+   "Could you tell me where lives she?",
+   "Could you tell me where she does live?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: Could you tell me where she lives?.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013588",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct indirect question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Do you know what time it is?",
+   "Do you know what time is it?",
+   "Do you know what is time it?",
+   "Do you know what time does it is?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: Do you know what time it is?.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013589",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct indirect question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I wonder how he did it.",
+   "I wonder how did he do it.",
+   "I wonder how did he did it.",
+   "I wonder how he did do it."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: I wonder how he did it..",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013590",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Choose the correct indirect question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Can you tell me how much it costs?",
+   "Can you tell me how much does it cost?",
+   "Can you tell me how much costs it?",
+   "Can you tell me how much it does cost?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did. الإجابة الصحيحة: Can you tell me how much it costs?.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013591",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Do you know where is the station?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Do you know where the station is? في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013592",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Could you tell me what he wants?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013593",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"I wonder what did she say\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I wonder what she said. في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013594",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "\"Do you know if she is here?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. في الأسئلة غير المباشرة (Could you tell me...?) بنرجع لترتيب الجملة العادية فاعل + فعل، من غير do/does/did.",
+  "topic": "Grammar: indirect questions (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013595",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My brother is as tall _____ me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "like",
+   "than",
+   "that",
+   "as"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013596",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "This bag is not as expensive _____ that one.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "like",
+   "that",
+   "than",
+   "as"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013597",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "She runs as fast _____ I do.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "than",
+   "that",
+   "like",
+   "as"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013598",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Cairo is bigger _____ Mansoura.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "from",
+   "as",
+   "than",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: than.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013599",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He is _____ clever as his sister.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "as",
+   "than",
+   "so much",
+   "more"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-013600",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My house is the same size _____ yours.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "like",
+   "than",
+   "as",
+   "that"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "as + صفة + as للتشابه، not as + صفة + as للاختلاف. the same as للتطابق وdifferent from للاختلاف. الإجابة الصحيحة: as.",
+  "topic": "Grammar: as ... as and comparisons (B1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
