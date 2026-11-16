@@ -7,12 +7,12 @@
   "prompt": "Which English word means: ضهر / ورا / رجعة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ضهر / ورا / رجعة",
   "options": [
-   "bookcase",
-   "beer",
-   "description",
-   "back"
+   "back",
+   "labor",
+   "deal",
+   "speed"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"back\" وتعني: ضهر / ورا / رجعة.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -25,12 +25,12 @@
   "prompt": "My ______ hurts.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "software",
-   "strength",
-   "view",
-   "back"
+   "valley",
+   "back",
+   "temperature",
+   "scale"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"back\" بمعنى ضهر / ورا / رجعة. الترجمة: ضهري بيوجعني.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -43,10 +43,10 @@
   "prompt": "What does \"want\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"want\":",
   "options": [
-   "يعتمد رسميًا أو يشهد",
+   "يتاوب",
    "عايز / يريد",
-   "ينشغل بشكل مبالغ",
-   "يتجاوز الحدود"
+   "يوبّخ بلطف",
+   "يغمر أو ينغمس"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"want\" هو: عايز / يريد. مثال: عايز حاجة سقعة.",
@@ -61,10 +61,10 @@
   "prompt": "Which English word means: عايز / يريد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: عايز / يريد",
   "options": [
-   "radiate",
+   "unload",
    "want",
-   "inflate",
-   "found"
+   "signify",
+   "penalize"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"want\" وتعني: عايز / يريد.",
@@ -79,10 +79,10 @@
   "prompt": "I ______ a cold drink.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "nourish",
+   "droop",
    "want",
    "vibrate",
-   "skim"
+   "publicize"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"want\" بمعنى عايز / يريد. الترجمة: عايز حاجة سقعة.",
@@ -295,8 +295,8 @@
   "prompt": "What does \"said\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"said\":",
   "options": [
-   "يقول / يحكي",
-   "يجري",
+   "يوقف",
+   "يشكر",
    "قال",
    "يسيب / يخلي"
   ],
@@ -313,8 +313,8 @@
   "prompt": "Which English word means: قال?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: قال",
   "options": [
-   "buy",
-   "vote",
+   "turn",
+   "add",
    "speak",
    "said"
   ],
@@ -457,7 +457,7 @@
   "prompt": "What does \"very\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"very\":",
   "options": [
-   "خاص بالأوركسترا",
+   "موضة قديمة / مش على الموضة",
    "جدا / أوي",
    "مستعد / ويلينج",
    "شركاتي / كوربوريت"
@@ -475,10 +475,10 @@
   "prompt": "Which English word means: جدا / أوي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: جدا / أوي",
   "options": [
-   "ruinous",
+   "conceivable",
    "very",
-   "lower",
-   "transitive"
+   "skillful",
+   "narcissistic"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"very\" وتعني: جدا / أوي.",
@@ -493,9 +493,9 @@
   "prompt": "The soup is ______ hot.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "citywide",
-   "homeward",
-   "overall",
+   "unimaginable",
+   "antibacterial",
+   "dreamy",
    "very"
   ],
   "answerIndex": 3,
@@ -619,9 +619,9 @@
   "prompt": "What does \"should\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"should\":",
   "options": [
-   "يجرّب",
-   "يقول / يحكي",
-   "يشكر",
+   "يطلب",
+   "يوقف",
+   "يبقى",
    "المفروض / ينبغي"
   ],
   "answerIndex": 3,
@@ -638,7 +638,7 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: المفروض / ينبغي",
   "options": [
    "underline",
-   "remember",
+   "saying",
    "join",
    "should"
   ],
@@ -656,7 +656,7 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "let",
-   "miss",
+   "won",
    "should",
    "change"
   ],
@@ -727,10 +727,10 @@
   "prompt": "What does \"need\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"need\":",
   "options": [
-   "يضيف",
+   "اتولد",
    "محتاج",
-   "يسوق",
-   "يكلّم / يتصل"
+   "ينتخب / يصوّت",
+   "يجرّب"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"need\" هو: محتاج. مثال: أنا محتاج تاكسي.",
@@ -745,8 +745,8 @@
   "prompt": "Which English word means: محتاج?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: محتاج",
   "options": [
-   "try",
-   "check",
+   "order",
+   "bring",
    "need",
    "said"
   ],
@@ -765,7 +765,7 @@
   "options": [
    "need",
    "said",
-   "become",
+   "pay",
    "give"
   ],
   "answerIndex": 0,
@@ -889,9 +889,9 @@
   "prompt": "What does \"work\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"work\":",
   "options": [
-   "محادثة / كونفيرسيشن",
-   "تخفيضات / سيل",
-   "نشاط / أكتيفيتي",
+   "تلج / سنو",
+   "فرق",
+   "فيديو",
    "شغل"
   ],
   "answerIndex": 3,
@@ -907,12 +907,12 @@
   "prompt": "Which English word means: شغل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شغل",
   "options": [
-   "college",
-   "lunch",
-   "work",
-   "matter"
+   "feeling",
+   "weekend",
+   "store",
+   "work"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"work\" وتعني: شغل.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -925,10 +925,10 @@
   "prompt": "I go to ______ at eight.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "memory",
-   "man",
+   "party",
+   "living",
    "work",
-   "friend"
+   "birth"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"work\" بمعنى شغل. الترجمة: بروح الشغل الساعة تمانية.",
@@ -944,9 +944,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"year\":",
   "options": [
    "سنة",
-   "محل / شوب",
-   "نقطة",
-   "صورة"
+   "أرض / الأرضية",
+   "كاميرا",
+   "قهوة / كوفي"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"year\" هو: سنة. مثال: السنة دي عدّت بسرعة.",
@@ -961,9 +961,9 @@
   "prompt": "Which English word means: سنة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: سنة",
   "options": [
-   "culture",
-   "seat",
-   "lot",
+   "partner",
+   "milk",
+   "rule",
    "year"
   ],
   "answerIndex": 3,
@@ -979,10 +979,10 @@
   "prompt": "This ______ went fast.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "father",
+   "week",
    "year",
-   "mountain",
-   "teacher"
+   "football",
+   "card"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"year\" بمعنى سنة. الترجمة: السنة دي عدّت بسرعة.",
@@ -997,12 +997,12 @@
   "prompt": "What does \"being\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"being\":",
   "options": [
-   "شاشة / عرض / ديسبلاي",
-   "وظيفة / مركز / مكانة",
-   "براند / ماركة",
-   "كائن / كان (استمراري)"
+   "مصدر / سورس",
+   "كائن / كان (استمراري)",
+   "ميزان / سكيل",
+   "نصيحة / أدفايس"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"being\" هو: كائن / كان (استمراري). مثال: هو بيتصرف بغباء النهارده.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1015,12 +1015,12 @@
   "prompt": "Which English word means: كائن / كان (استمراري)?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كائن / كان (استمراري)",
   "options": [
-   "cream",
-   "company",
    "being",
-   "police"
+   "knowledge",
+   "sub",
+   "omelet"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"being\" وتعني: كائن / كان (استمراري).",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1033,12 +1033,12 @@
   "prompt": "He is ______ silly today.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "being",
-   "cash",
-   "accident",
-   "base"
+   "host",
+   "exercise",
+   "episode",
+   "being"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"being\" بمعنى كائن / كان (استمراري). الترجمة: هو بيتصرف بغباء النهارده.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -1052,9 +1052,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"day\":",
   "options": [
    "يوم",
-   "مطعم / ريستورانت",
-   "ثانية",
-   "ثقافة / كلتشر"
+   "شخصية / كاركتر",
+   "وقت / مرة",
+   "موبايل / تليفون"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"day\" هو: يوم. مثال: يومك سعيد.",
@@ -1069,9 +1069,9 @@
   "prompt": "Which English word means: يوم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يوم",
   "options": [
-   "living",
-   "size",
-   "brain",
+   "man",
+   "end",
+   "mail",
    "day"
   ],
   "answerIndex": 3,
@@ -1087,9 +1087,9 @@
   "prompt": "Have a nice ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "quarter",
-   "grade",
-   "brother",
+   "mother",
+   "breakfast",
+   "color",
    "day"
   ],
   "answerIndex": 3,
@@ -1160,7 +1160,7 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"going\":",
   "options": [
    "رايح / هـ (للمستقبل)",
-   "يشكر",
+   "يبقى",
    "ييجي",
    "يغيّر"
   ],
@@ -1178,7 +1178,7 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رايح / هـ (للمستقبل)",
   "options": [
    "let",
-   "become",
+   "pay",
    "discuss",
    "going"
   ],
@@ -1195,8 +1195,8 @@
   "prompt": "I am ______ to the market.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "wish",
-   "stop",
+   "learn",
+   "believe",
    "dance",
    "going"
   ],
@@ -1393,10 +1393,10 @@
   "prompt": "Which English word means: عمل / سوّى?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: عمل / سوّى",
   "options": [
-   "drive",
+   "vote",
    "grow",
    "made",
-   "won"
+   "happen"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"made\" وتعني: عمل / سوّى.",
@@ -1413,8 +1413,8 @@
   "options": [
    "made",
    "throw",
-   "tell",
-   "hear"
+   "stop",
+   "miss"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"made\" بمعنى عمل / سوّى. الترجمة: هي عملت تورتة.",
@@ -1699,12 +1699,12 @@
   "prompt": "What does \"life\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"life\":",
   "options": [
-   "مقاس / حجم",
-   "حياة",
-   "كمبيوتر",
-   "مسرح / سينما"
+   "حفرة / هول",
+   "فطار / بريكفاست",
+   "خطة / بلان",
+   "حياة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"life\" هو: حياة. مثال: الحياة قصيرة.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -1718,9 +1718,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: حياة",
   "options": [
    "life",
-   "water",
-   "work",
-   "dad"
+   "peace",
+   "minute",
+   "night"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"life\" وتعني: حياة.",
@@ -1735,10 +1735,10 @@
   "prompt": "______ is short.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "dress",
+   "morning",
    "life",
-   "boy",
-   "spring"
+   "war",
+   "woman"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"life\" بمعنى حياة. الترجمة: الحياة قصيرة.",
@@ -1753,10 +1753,10 @@
   "prompt": "What does \"world\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"world\":",
   "options": [
-   "تخفيضات / سيل",
+   "اهتمام / رعاية",
    "عالم / دنيا",
-   "ساعة",
-   "كوبري / بريدج"
+   "ابتسامة / سمايل",
+   "لاعب"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"world\" هو: عالم / دنيا. مثال: الدنيا بتتغير.",
@@ -1771,10 +1771,10 @@
   "prompt": "Which English word means: عالم / دنيا?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: عالم / دنيا",
   "options": [
-   "information",
-   "medicine",
+   "person",
+   "message",
    "world",
-   "collection"
+   "night"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"world\" وتعني: عالم / دنيا.",
@@ -1789,10 +1789,10 @@
   "prompt": "The ______ is changing.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "peace",
+   "hotel",
    "world",
-   "boy",
-   "writer"
+   "hand",
+   "band"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"world\" بمعنى عالم / دنيا. الترجمة: الدنيا بتتغير.",
@@ -1970,9 +1970,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"last\":",
   "options": [
    "آخر / اللي فات",
-   "ثابت من غير حركة",
+   "واعي / أوير",
    "ضد / أنتي",
-   "مش ودود"
+   "ديمقراطي / ديموكراتيك"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"last\" هو: آخر / اللي فات. مثال: شفته الأسبوع اللي فات.",
@@ -1988,9 +1988,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: آخر / اللي فات",
   "options": [
    "last",
-   "northern",
-   "stupid",
-   "motionless"
+   "financial",
+   "untidy",
+   "aware"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"last\" وتعني: آخر / اللي فات.",
@@ -2006,9 +2006,9 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "last",
-   "environmental",
-   "internal",
-   "responsible"
+   "upper",
+   "solid",
+   "pure"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"last\" بمعنى آخر / اللي فات. الترجمة: شفته الأسبوع اللي فات.",
@@ -2186,9 +2186,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"man\":",
   "options": [
    "راجل",
-   "مية",
-   "معلومات",
-   "الضهر / آفترنون"
+   "كاميرا",
+   "شخص / واحد",
+   "فرق"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"man\" هو: راجل. مثال: الراجل ده عمي.",
@@ -2203,9 +2203,9 @@
   "prompt": "Which English word means: راجل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: راجل",
   "options": [
-   "weather",
-   "husband",
-   "bowl",
+   "weekend",
+   "article",
+   "wind",
    "man"
   ],
   "answerIndex": 3,
@@ -2221,10 +2221,10 @@
   "prompt": "That ______ is my uncle.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "video",
+   "key",
    "man",
-   "car",
-   "test"
+   "gold",
+   "office"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"man\" بمعنى راجل. الترجمة: الراجل ده عمي.",
@@ -2239,12 +2239,12 @@
   "prompt": "What does \"home\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"home\":",
   "options": [
-   "شوية",
+   "شوت / حقنة / فرصة",
+   "فايز / وينر",
    "بيت",
-   "دم",
-   "ميزة / فيتشر"
+   "حادثة / أكسيدنت"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"home\" هو: بيت. مثال: أنا رايح البيت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2257,12 +2257,12 @@
   "prompt": "Which English word means: بيت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بيت",
   "options": [
-   "law",
+   "association",
+   "account",
    "home",
-   "attempt",
-   "strength"
+   "strike"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"home\" وتعني: بيت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2275,12 +2275,12 @@
   "prompt": "I'm going ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "china",
-   "step",
-   "beginning",
-   "home"
+   "opinion",
+   "home",
+   "effort",
+   "source"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"home\" بمعنى بيت. الترجمة: أنا رايح البيت.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2350,7 +2350,7 @@
    "يقعد",
    "ياخد / يجيب / يوصل",
    "يبص / يشوف",
-   "كسب (ماضي win)"
+   "يحصل"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"look\" هو: يبص / يشوف. مثال: بص على القمر!",
@@ -2365,9 +2365,9 @@
   "prompt": "Which English word means: يبص / يشوف?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يبص / يشوف",
   "options": [
-   "buy",
-   "look",
    "turn",
+   "look",
+   "check",
    "are"
   ],
   "answerIndex": 1,
@@ -2383,10 +2383,10 @@
   "prompt": "______ at the moon!",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "run",
+   "thank",
    "play",
    "look",
-   "stop"
+   "believe"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"look\" بمعنى يبص / يشوف. الترجمة: بص على القمر!",
@@ -2402,9 +2402,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"use\":",
   "options": [
    "يستخدم",
-   "يطرح / يطلق / ريليز",
-   "يظهر",
-   "ماسك / بيمسك"
+   "يدخل / إنتر",
+   "يبعت",
+   "يوفّر"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"use\" هو: يستخدم. مثال: بستخدم موبايلي كتير.",
@@ -2419,10 +2419,10 @@
   "prompt": "Which English word means: يستخدم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يستخدم",
   "options": [
-   "include",
+   "raise",
    "use",
-   "fell",
-   "felt"
+   "enter",
+   "send"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"use\" وتعني: يستخدم.",
@@ -2437,12 +2437,12 @@
   "prompt": "I ______ my phone a lot.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "express",
-   "showing",
    "use",
-   "control"
+   "enter",
+   "follow",
+   "direct"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"use\" بمعنى يستخدم. الترجمة: بستخدم موبايلي كتير.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2671,9 +2671,9 @@
   "prompt": "What does \"come\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"come\":",
   "options": [
-   "يجيب / يهات",
+   "يقابل",
    "يدي / يعطي",
-   "يلف / دوره",
+   "يتأكد / يشيك",
    "ييجي"
   ],
   "answerIndex": 3,
@@ -2689,7 +2689,7 @@
   "prompt": "Which English word means: ييجي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ييجي",
   "options": [
-   "bring",
+   "meet",
    "dance",
    "imagine",
    "come"
@@ -2708,7 +2708,7 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "drink",
-   "order",
+   "run",
    "come",
    "have"
   ],
@@ -2725,12 +2725,12 @@
   "prompt": "What does \"part\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"part\":",
   "options": [
-   "تكلفة",
    "جزء",
-   "رواية / نوفل",
-   "سعر / معدل / ريت"
+   "نكتة / جوك",
+   "تكنولوجيا / تيك",
+   "جدو"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"part\" هو: جزء. مثال: ده أحسن جزء.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2743,12 +2743,12 @@
   "prompt": "Which English word means: جزء?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: جزء",
   "options": [
-   "metal",
-   "nation",
+   "cash",
    "part",
-   "magic"
+   "ring",
+   "mistake"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"part\" وتعني: جزء.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2761,12 +2761,12 @@
   "prompt": "This is the best ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
+   "part",
    "system",
-   "method",
-   "blackboard",
-   "part"
+   "opportunity",
+   "metal"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"part\" بمعنى جزء. الترجمة: ده أحسن جزء.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2780,9 +2780,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"state\":",
   "options": [
    "ولاية / حالة",
-   "شعاع شمس",
-   "عالم آثار",
-   "تجاذب الأجسام بالكتلة"
+   "الفلسفة المدرسية",
+   "مؤتمر / كونفرنس",
+   "تداول / تريدينج"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"state\" هو: ولاية / حالة. مثال: تكساس ولاية كبيرة.",
@@ -2797,12 +2797,12 @@
   "prompt": "Which English word means: ولاية / حالة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ولاية / حالة",
   "options": [
-   "fingernail",
-   "pawnbroker",
    "state",
-   "absentee"
+   "cellist",
+   "seesaw",
+   "doorkeeper"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"state\" وتعني: ولاية / حالة.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -2815,12 +2815,12 @@
   "prompt": "Texas is a big ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "culmination",
-   "bustle",
-   "state",
-   "route"
+   "stimulant",
+   "tortoiseshell",
+   "hyphen",
+   "state"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"state\" بمعنى ولاية / حالة. الترجمة: تكساس ولاية كبيرة.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -2833,12 +2833,12 @@
   "prompt": "What does \"three\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"three\":",
   "options": [
+   "خمسة",
    "تلاتة",
-   "ستة",
-   "اتنين",
-   "عشرة"
+   "سبعة",
+   "أربعة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"three\" هو: تلاتة. مثال: عندي تلاتة إخوات.",
   "topic": "Vocabulary: number (A1)",
   "source": "generated-vocab"
@@ -2851,12 +2851,12 @@
   "prompt": "Which English word means: تلاتة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تلاتة",
   "options": [
-   "nine",
-   "twenty",
+   "four",
    "three",
-   "five"
+   "nine",
+   "six"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"three\" وتعني: تلاتة.",
   "topic": "Vocabulary: number (A1)",
   "source": "generated-vocab"
@@ -2869,12 +2869,12 @@
   "prompt": "I have ______ brothers.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "seven",
    "two",
-   "six",
-   "three"
+   "eight",
+   "three",
+   "five"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"three\" بمعنى تلاتة. الترجمة: عندي تلاتة إخوات.",
   "topic": "Vocabulary in context (A1)",
   "source": "generated-vocab"
@@ -3105,7 +3105,7 @@
   "options": [
    "رايح / هـ (للمستقبل)",
    "يلاقي",
-   "يقول / يحكي",
+   "يوقف",
    "يلمس / تاتش"
   ],
   "answerIndex": 1,
@@ -3140,7 +3140,7 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "write",
-   "eat",
+   "drive",
    "spend",
    "find"
   ],
@@ -3157,12 +3157,12 @@
   "prompt": "What does \"help\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"help\":",
   "options": [
-   "يحس",
-   "يقدّم / أبلاي",
-   "يساعد",
-   "يتبع"
+   "يضرب نار / يصور / شوت",
+   "يقبل",
+   "يكمّل / يخلّص",
+   "يساعد"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"help\" هو: يساعد. مثال: ممكن تساعدني؟",
   "topic": "Vocabulary: verb (A2)",
   "source": "generated-vocab"
@@ -3175,9 +3175,9 @@
   "prompt": "Which English word means: يساعد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يساعد",
   "options": [
-   "lose",
-   "improve",
-   "pass",
+   "pull",
+   "chirp",
+   "fix",
    "help"
   ],
   "answerIndex": 3,
@@ -3193,12 +3193,12 @@
   "prompt": "Can you ______ me?",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "act",
-   "pull",
-   "avoid",
-   "help"
+   "help",
+   "wanna",
+   "notice",
+   "consider"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"help\" بمعنى يساعد. الترجمة: ممكن تساعدني؟",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -3589,9 +3589,9 @@
   "prompt": "What does \"game\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"game\":",
   "options": [
-   "فكرة",
-   "اختبار / تست",
-   "غدا / لانش",
+   "جبل / ماونتن",
+   "مكتب",
+   "دور",
    "لعبة / ماتش"
   ],
   "answerIndex": 3,

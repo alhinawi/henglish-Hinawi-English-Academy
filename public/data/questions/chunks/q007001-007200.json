@@ -7,12 +7,12 @@
   "prompt": "What does \"cumbersome\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cumbersome\":",
   "options": [
-   "قصير وتخين",
-   "متوتر ومهزوز الأعصاب",
-   "ضخم وصعب التعامل",
-   "متعدد الجينات"
+   "مش قادر يخرج من البيت",
+   "متراخي من غير حماس",
+   "غير مباشر ومن الملابسات",
+   "ضخم وصعب التعامل"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"cumbersome\" هو: ضخم وصعب التعامل. مثال: الماكينة الضخمة الصعب تحريكها عدّت من الباب بالعافية.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -25,12 +25,12 @@
   "prompt": "Which English word means: ضخم وصعب التعامل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ضخم وصعب التعامل",
   "options": [
-   "habitable",
-   "cumbersome",
-   "logistic",
-   "lithographic"
+   "unwary",
+   "evenhanded",
+   "mindless",
+   "cumbersome"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"cumbersome\" وتعني: ضخم وصعب التعامل.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -43,12 +43,12 @@
   "prompt": "What does \"cyclical\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cyclical\":",
   "options": [
-   "مش مفهوم",
-   "مالح شوية",
-   "خاص بالبقر",
-   "بيتكرر في دورات"
+   "بيتكرر في دورات",
+   "ترابطي",
+   "متعلق بقياس الحجم",
+   "مصطنع ومبتذل بالعامية"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"cyclical\" هو: بيتكرر في دورات. مثال: الصناعة بتشهد تغييرات في الطلب بتتكرر في دورات.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -61,10 +61,10 @@
   "prompt": "Which English word means: بيتكرر في دورات?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بيتكرر في دورات",
   "options": [
-   "brazen",
+   "urbanized",
    "cyclical",
-   "gelatinous",
-   "verdant"
+   "prefectural",
+   "overenthusiastic"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"cyclical\" وتعني: بيتكرر في دورات.",
@@ -79,12 +79,12 @@
   "prompt": "What does \"deformation\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"deformation\":",
   "options": [
+   "عظمة الفك العلوي",
    "تغيّر شكل بسبب ضغط",
-   "عازف مصاحب",
-   "عشبة الحمامة (فرفين)",
-   "توصيل الكهربا"
+   "زاني / خاين لزوجه",
+   "الليباز (إنزيم هضم الدهون)"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"deformation\" هو: تغيّر شكل بسبب ضغط. مثال: الحرارة سببت تغيّر واضح في شكل البلاستيك.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -97,12 +97,12 @@
   "prompt": "Which English word means: تغيّر شكل بسبب ضغط?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تغيّر شكل بسبب ضغط",
   "options": [
-   "repercussion",
-   "deformation",
-   "abruption",
-   "centipede"
+   "bobcat",
+   "hoaxer",
+   "pyrotechnic",
+   "deformation"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"deformation\" وتعني: تغيّر شكل بسبب ضغط.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -115,12 +115,12 @@
   "prompt": "What does \"devotional\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"devotional\":",
   "options": [
+   "متعلق بالمشيمة",
+   "يُعدّ خيانة عظمى",
    "خاص بالتعبّد",
-   "واثق بيعبر عن حقه",
-   "قاسي في الحكم على الناس",
-   "فوضوي / مبهدل"
+   "متعلق بالمسيح المنتظر"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"devotional\" هو: خاص بالتعبّد. مثال: بتسمع موسيقى تعبدية كل صبح.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -133,12 +133,12 @@
   "prompt": "Which English word means: خاص بالتعبّد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: خاص بالتعبّد",
   "options": [
-   "obtrusive",
-   "whiney",
-   "devotional",
-   "autochthonous"
+   "serendipitous",
+   "preparative",
+   "tuberous",
+   "devotional"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"devotional\" وتعني: خاص بالتعبّد.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -151,12 +151,12 @@
   "prompt": "What does \"diversify\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"diversify\":",
   "options": [
-   "مفترس / جائع",
-   "يتجاوز حدود",
-   "يفصّل بند بند",
-   "ينوّع"
+   "يعبر الشارع بشكل مخالف",
+   "يكوّن نواة",
+   "ينوّع",
+   "ينعش من جديد"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"diversify\" هو: ينوّع. مثال: الشركة ناوية تنوّع منتجاتها.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -169,12 +169,12 @@
   "prompt": "Which English word means: ينوّع?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ينوّع",
   "options": [
-   "impound",
-   "diversify",
-   "inaugurate",
-   "extricate"
+   "debar",
+   "slake",
+   "metastasize",
+   "diversify"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"diversify\" وتعني: ينوّع.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -187,12 +187,12 @@
   "prompt": "What does \"duplication\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"duplication\":",
   "options": [
-   "شاب / فيلو",
-   "مسافة في أول السطر / نتوء",
-   "تكرار أو عمل نسخة",
-   "موظف مبيعات"
+   "شراء / بيرتشاس",
+   "قطاع / سيكتور",
+   "بيانات / داتا",
+   "تكرار أو عمل نسخة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"duplication\" هو: تكرار أو عمل نسخة. مثال: التنسيق الأحسن بيمنع تكرار المجهود من غير لازمة.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -205,12 +205,12 @@
   "prompt": "Which English word means: تكرار أو عمل نسخة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تكرار أو عمل نسخة",
   "options": [
-   "politeness",
-   "tightrope",
+   "understanding",
    "duplication",
-   "stepmother"
+   "penicillin",
+   "jeweler"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"duplication\" وتعني: تكرار أو عمل نسخة.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -223,12 +223,12 @@
   "prompt": "What does \"dynamo\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"dynamo\":",
   "options": [
-   "التروبوبوز (حدّ الغلاف الجوي)",
-   "ردم عالي لحماية طريق",
-   "كاهنة ڤستا",
-   "مولّد كهربا دينامو"
+   "مولّد كهربا دينامو",
+   "قرن / زائدة (تشريح)",
+   "كتاب الترانيم",
+   "هزار خفيف"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"dynamo\" هو: مولّد كهربا دينامو. مثال: دينامو العجلة بيشغل نورها اللي قدام.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -242,9 +242,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مولّد كهربا دينامو",
   "options": [
    "dynamo",
-   "palmyra",
-   "exponent",
-   "thill"
+   "wordsmith",
+   "crispness",
+   "thrush"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"dynamo\" وتعني: مولّد كهربا دينامو.",
@@ -259,10 +259,10 @@
   "prompt": "What does \"elixir\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"elixir\":",
   "options": [
-   "الانتباه / الاهتمام",
-   "تفسير غلط",
+   "عامل تزويد الفحم",
+   "جنب الجبل",
    "إكسير أو شراب سحري",
-   "ورق جرايد"
+   "لغة اتصال مبسطة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"elixir\" هو: إكسير أو شراب سحري. مثال: الأسطورة بتوصف إكسير الشباب الدائم.",
@@ -277,9 +277,9 @@
   "prompt": "Which English word means: إكسير أو شراب سحري?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: إكسير أو شراب سحري",
   "options": [
-   "foxtail",
-   "shoelace",
-   "dwarfism",
+   "ribose",
+   "allergist",
+   "pantsuit",
    "elixir"
   ],
   "answerIndex": 3,
@@ -296,9 +296,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"endgame\":",
   "options": [
    "المرحلة الأخيرة",
-   "ذراع توجيه دفة مركب",
-   "شخص تافه",
-   "دفتر شيكات"
+   "اجتماع رسمي كبير",
+   "جهاز استقبال ورد آلي",
+   "حاجة مؤكدة (بريطاني)"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"endgame\" هو: المرحلة الأخيرة. مثال: نهاية جيم الشطرنج كانت محتاجة حساب دقيق.",
@@ -313,12 +313,12 @@
   "prompt": "Which English word means: المرحلة الأخيرة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: المرحلة الأخيرة",
   "options": [
-   "chalkboard",
-   "monoplane",
-   "endgame",
-   "daguerreotype"
+   "reassertion",
+   "agronomist",
+   "meteoroid",
+   "endgame"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"endgame\" وتعني: المرحلة الأخيرة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -331,12 +331,12 @@
   "prompt": "What does \"epiphany\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"epiphany\":",
   "options": [
-   "عدّاء مسافات قصيرة",
    "لحظة إدراك مفاجئ",
-   "قابلية السحب (معادن)",
-   "التعرّض للشمس / الإشعاع الشمسي"
+   "خاين",
+   "صورة صغيرة داخل صورة",
+   "اللامنطق"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"epiphany\" هو: لحظة إدراك مفاجئ. مثال: جالها إدراك مفاجئ أثناء الكلام.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -349,10 +349,10 @@
   "prompt": "Which English word means: لحظة إدراك مفاجئ?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: لحظة إدراك مفاجئ",
   "options": [
-   "felicitation",
-   "libertarianism",
+   "banister",
+   "householder",
    "epiphany",
-   "supermom"
+   "repute"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"epiphany\" وتعني: لحظة إدراك مفاجئ.",
@@ -367,12 +367,12 @@
   "prompt": "What does \"eyeliner\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"eyeliner\":",
   "options": [
-   "صانع أو بياع قبعات",
-   "جبري (يؤمن بالحتمية)",
-   "سكروز سكر المائدة",
-   "كحل تحديد العين"
+   "درجة التفصيل / الحبيبية",
+   "كحل تحديد العين",
+   "محرض أو صاحب البداية",
+   "سلبية وعدم مبادرة"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"eyeliner\" هو: كحل تحديد العين. مثال: حطت كحل تحديد أسود قبل الحفلة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -385,12 +385,12 @@
   "prompt": "Which English word means: كحل تحديد العين?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كحل تحديد العين",
   "options": [
-   "submariner",
+   "implantation",
+   "tetrahydrocannabinol",
    "eyeliner",
-   "nougat",
-   "waterway"
+   "enol"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"eyeliner\" وتعني: كحل تحديد العين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -403,12 +403,12 @@
   "prompt": "What does \"fable\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fable\":",
   "options": [
-   "طرف موقّع على اتفاق",
-   "صاج مسطح للطبخ",
-   "مستأجر بعقد",
-   "حكاية رمزية بمغزى"
+   "لفّة رقص على رجل واحدة",
+   "حظيرة غنم",
+   "حكاية رمزية بمغزى",
+   "نجاة من خطر"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"fable\" هو: حكاية رمزية بمغزى. مثال: الحكاية الرمزية بتعلّم درس عن الأمانة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -421,12 +421,12 @@
   "prompt": "Which English word means: حكاية رمزية بمغزى?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: حكاية رمزية بمغزى",
   "options": [
+   "pentecostalism",
+   "evaluator",
    "fable",
-   "abbess",
-   "divination",
-   "manicurist"
+   "codpiece"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"fable\" وتعني: حكاية رمزية بمغزى.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -435,36 +435,36 @@
   "id": "q-voc-007025",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"fatality\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fatality\":",
   "options": [
    "حالة وفاة بحادث",
-   "إمبراطور اليابان (تينو)",
-   "مؤشر تخفيض التضخم",
-   "كتابة مبنية على الواقع"
+   "شق جراحي",
+   "حكاية شعبية",
+   "لباقة ومراعاة مشاعر الناس"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"fatality\" هو: حالة وفاة بحادث. مثال: التصادم تسبب في حالة وفاة وإصابات كتير.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-007026",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "Which English word means: حالة وفاة بحادث?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: حالة وفاة بحادث",
   "options": [
-   "countersign",
-   "crowbar",
+   "tranquility",
+   "quirk",
    "fatality",
-   "radon"
+   "verandah"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"fatality\" وتعني: حالة وفاة بحادث.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
@@ -475,12 +475,12 @@
   "prompt": "What does \"foresight\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"foresight\":",
   "options": [
-   "مجرى مائي",
-   "حق الأولوية",
-   "بُعد نظر",
-   "تسويد الوش لتقليد السود"
+   "دياتوم (طحلب مجهري)",
+   "داسيت (صخر بركاني)",
+   "عيّل صغير أو لعيب مبتدئ",
+   "بُعد نظر"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"foresight\" هو: بُعد نظر. مثال: بُعد نظرها ساعدنا نتجنب مشاكل خطيرة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -493,12 +493,12 @@
   "prompt": "Which English word means: بُعد نظر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بُعد نظر",
   "options": [
+   "patten",
+   "shellac",
    "foresight",
-   "eglantine",
-   "troubleshooter",
-   "stasis"
+   "smoothie"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"foresight\" وتعني: بُعد نظر.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -511,10 +511,10 @@
   "prompt": "What does \"fundamentalist\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fundamentalist\":",
   "options": [
-   "خاص بالقولون",
+   "شجيرة شيح أمريكي",
    "متمسك حرفيًا بأصول عقيدته",
-   "عود العربة اللي بيتحط فيه الحيوان",
-   "امتناع خصوصًا عن كحول"
+   "سمك البمبرة (سمكة مفلطحة)",
+   "مرجل كبير"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"fundamentalist\" هو: متمسك حرفيًا بأصول عقيدته. مثال: المؤرخ قابل شخص متمسك بالتفسير الحرفي لأصول عقيدته.",
@@ -529,12 +529,12 @@
   "prompt": "Which English word means: متمسك حرفيًا بأصول عقيدته?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: متمسك حرفيًا بأصول عقيدته",
   "options": [
-   "fagot",
-   "burlesque",
+   "doohickey",
    "fundamentalist",
-   "spitball"
+   "remover",
+   "winder"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"fundamentalist\" وتعني: متمسك حرفيًا بأصول عقيدته.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -547,12 +547,12 @@
   "prompt": "What does \"gabby\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"gabby\":",
   "options": [
-   "متعلق بقرنية العين",
-   "ممكن يتدهن",
-   "قابل للتقييم",
-   "رغاي (عامية)"
+   "رغاي (عامية)",
+   "وبائي / مزعج",
+   "مغطى بهباب",
+   "طري ومترهل"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"gabby\" هو: رغاي (عامية). مثال: الراكب الرغاي فضل يتكلم طول الرحلة.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -565,12 +565,12 @@
   "prompt": "Which English word means: رغاي (عامية)?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رغاي (عامية)",
   "options": [
-   "cancerous",
-   "buttery",
    "gabby",
-   "vasomotor"
+   "uncharged",
+   "supine",
+   "unchangeable"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"gabby\" وتعني: رغاي (عامية).",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -583,10 +583,10 @@
   "prompt": "What does \"hamstring\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"hamstring\":",
   "options": [
-   "تقلّص العضلة",
+   "تحديد ورسم حدود",
    "عضلة خلف الفخذ",
-   "شق صغير",
-   "جزء من تريليون"
+   "السنبل الطيب (عطر)",
+   "التسطّح / الاستواء"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"hamstring\" هو: عضلة خلف الفخذ. مثال: العداء أصاب العضلة الخلفية لفخده أثناء التمرين.",
@@ -601,10 +601,10 @@
   "prompt": "Which English word means: عضلة خلف الفخذ?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: عضلة خلف الفخذ",
   "options": [
-   "tuxedo",
-   "progestin",
+   "boardroom",
+   "polecat",
    "hamstring",
-   "footstep"
+   "corer"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"hamstring\" وتعني: عضلة خلف الفخذ.",
@@ -619,12 +619,12 @@
   "prompt": "What does \"horseshoe\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"horseshoe\":",
   "options": [
+   "اتساع (توسّع)",
+   "رجولة بصفات تقليدية",
    "حدوة حصان",
-   "وفرة / اكتمال",
-   "هاوي مشي طويل",
-   "نسخة تقليد رخيصة"
+   "كرمشة / صوت تكسير"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"horseshoe\" هو: حدوة حصان. مثال: الحداد ركّب حدوة حصان جديدة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -637,12 +637,12 @@
   "prompt": "Which English word means: حدوة حصان?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: حدوة حصان",
   "options": [
-   "oilseed",
-   "nit",
+   "nickelodeon",
    "horseshoe",
-   "stoicism"
+   "dentition",
+   "lampshade"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"horseshoe\" وتعني: حدوة حصان.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -651,36 +651,36 @@
   "id": "q-voc-007037",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"incision\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"incision\":",
   "options": [
    "شق جراحي",
-   "النينجوتسو (فن ياباني)",
-   "عدم القدرة",
-   "رفيق ومعين (شريك)"
+   "براعة وابتكار",
+   "صدمة وضيق",
+   "طمأنة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"incision\" هو: شق جراحي. مثال: الجراح عمل شق جراحي صغير.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-007038",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "Which English word means: شق جراحي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شق جراحي",
   "options": [
-   "praetorian",
+   "exuberance",
    "incision",
-   "businessperson",
-   "fearlessness"
+   "quip",
+   "jersey"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"incision\" وتعني: شق جراحي.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
@@ -691,12 +691,12 @@
   "prompt": "What does \"indistinguishable\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"indistinguishable\":",
   "options": [
-   "صغير شوية",
+   "دايخ من البحر",
+   "غير وطني",
    "مش ممكن تمييزه",
-   "غريب ومجنون بالعامية",
-   "عاجز عن التأثير"
+   "فيه تهنئة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"indistinguishable\" هو: مش ممكن تمييزه. مثال: النسخة ماكنش ممكن نميزها عن الأصل.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -709,9 +709,9 @@
   "prompt": "Which English word means: مش ممكن تمييزه?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مش ممكن تمييزه",
   "options": [
-   "inerrant",
-   "pelagic",
-   "histological",
+   "predaceous",
+   "squishy",
+   "faithless",
    "indistinguishable"
   ],
   "answerIndex": 3,
@@ -727,10 +727,10 @@
   "prompt": "What does \"infer\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"infer\":",
   "options": [
-   "يدغدغ / يزغزغ",
+   "يجسّد / يشخّص",
    "يستنتج",
-   "يتوقع قبل الحدوث",
-   "يهدّ بالكامل"
+   "يسجن",
+   "يمجد بزيادة"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"infer\" هو: يستنتج. مثال: نقدر نستنتج مشاعرها من الجواب.",
@@ -745,12 +745,12 @@
   "prompt": "Which English word means: يستنتج?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يستنتج",
   "options": [
-   "humanize",
    "infer",
-   "blurt",
-   "animate"
+   "obsess",
+   "beautify",
+   "known"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"infer\" وتعني: يستنتج.",
   "topic": "Vocabulary: verb (B2)",
   "source": "generated-vocab"
@@ -763,12 +763,12 @@
   "prompt": "What does \"inpatient\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"inpatient\":",
   "options": [
-   "مريض محجوز بالمستشفى",
-   "عاكس تيار كهربائي",
-   "اعتماد متبادل",
-   "بهلوان هوائي"
+   "عربية أطفال",
+   "غازٍ بيقتحم أرض غيره",
+   "ثقة وهدوء تحت الضغط",
+   "مريض محجوز بالمستشفى"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"inpatient\" هو: مريض محجوز بالمستشفى. مثال: فضل محجوز في المستشفى تلات أيام.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -781,9 +781,9 @@
   "prompt": "Which English word means: مريض محجوز بالمستشفى?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مريض محجوز بالمستشفى",
   "options": [
-   "puzzler",
-   "interchangeability",
-   "popularisation",
+   "fruition",
+   "bodywork",
+   "leaseholder",
    "inpatient"
   ],
   "answerIndex": 3,
@@ -795,36 +795,36 @@
   "id": "q-voc-007045",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"intensify\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"intensify\":",
   "options": [
-   "يزوّد أو يزيد الشدة",
-   "يدعم كأساس",
-   "يظبط التوقيت مع بعضه",
-   "يرقص بخبط وسط جمهور"
+   "يضطهد",
+   "يضيّع مكان حاجة",
+   "يكتشف من جديد",
+   "يزوّد أو يزيد الشدة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"intensify\" هو: يزوّد أو يزيد الشدة. مثال: العاصفة ابتدت تزيد شدتها بعد نص الليل.",
-  "topic": "Vocabulary: verb (C2)",
+  "topic": "Vocabulary: verb (C1)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-007046",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "Which English word means: يزوّد أو يزيد الشدة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يزوّد أو يزيد الشدة",
   "options": [
    "intensify",
-   "redirect",
-   "oscillate",
-   "frazzle"
+   "detain",
+   "detest",
+   "domesticate"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"intensify\" وتعني: يزوّد أو يزيد الشدة.",
-  "topic": "Vocabulary: verb (C2)",
+  "topic": "Vocabulary: verb (C1)",
   "source": "generated-vocab"
  },
  {
@@ -835,12 +835,12 @@
   "prompt": "What does \"invitational\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"invitational\":",
   "options": [
-   "عادي لا يُذكر",
-   "متجاوز حدوده",
-   "مندهش ومبهور",
-   "مقتصر على ناس مدعوة"
+   "مقتصر على ناس مدعوة",
+   "يستدعي الشفقة",
+   "متملّق / بيطبّل",
+   "نقي من غير خلط"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"invitational\" هو: مقتصر على ناس مدعوة. مثال: كسبت بطولة للمشاركين المدعوين بس الصيف اللي فات.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -853,12 +853,12 @@
   "prompt": "Which English word means: مقتصر على ناس مدعوة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مقتصر على ناس مدعوة",
   "options": [
-   "scrupulous",
-   "puissant",
-   "sprightly",
-   "invitational"
+   "viewable",
+   "invitational",
+   "bicameral",
+   "cantabile"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"invitational\" وتعني: مقتصر على ناس مدعوة.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -871,12 +871,12 @@
   "prompt": "What does \"kennel\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"kennel\":",
   "options": [
-   "تمثال رمزي لشخص",
-   "الجلد (كعقاب أو تكفير)",
+   "مهرة صغيرة",
    "بيت كلب",
-   "لحم حيوان ميت"
+   "ديناصور آكل لحوم",
+   "الدناءة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"kennel\" هو: بيت كلب. مثال: الكلب نام في بيته الخشب.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -889,12 +889,12 @@
   "prompt": "Which English word means: بيت كلب?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بيت كلب",
   "options": [
-   "outfall",
    "kennel",
-   "sesamoid",
-   "thermocouple"
+   "feudalism",
+   "regularization",
+   "criminality"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"kennel\" وتعني: بيت كلب.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -907,12 +907,12 @@
   "prompt": "What does \"kern\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"kern\":",
   "options": [
-   "يشبّع تمامًا",
+   "يؤكد من جديد",
+   "يوحّد المعايير",
    "يظبط مسافات بين حروف",
-   "يقلق ويزعج",
-   "يعامل بوحشية"
+   "يستنتج بتوسيع بيانات متاحة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"kern\" هو: يظبط مسافات بين حروف. مثال: المصممين بيظبطوا المسافات بين الحروف عشان شكلها يبقى أحسن.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -925,12 +925,12 @@
   "prompt": "Which English word means: يظبط مسافات بين حروف?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يظبط مسافات بين حروف",
   "options": [
-   "leach",
-   "taint",
-   "decommission",
-   "kern"
+   "stomp",
+   "smother",
+   "kern",
+   "obligate"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"kern\" وتعني: يظبط مسافات بين حروف.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -943,12 +943,12 @@
   "prompt": "What does \"lager\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"lager\":",
   "options": [
+   "شجرة مقصوصة الفروع العلوية",
    "بيرة بتخمير بارد",
-   "انبساط القلب",
-   "عاشق موسيقى الميتال",
-   "بوسة بين حبيبين"
+   "وصية بميراث",
+   "شخص بيبوس"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"lager\" هو: بيرة بتخمير بارد. مثال: طلب كوباية بيرة لاجر.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -961,10 +961,10 @@
   "prompt": "Which English word means: بيرة بتخمير بارد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بيرة بتخمير بارد",
   "options": [
-   "drawl",
-   "handmaid",
+   "presupposition",
+   "bursar",
    "lager",
-   "walkway"
+   "mefloquine"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"lager\" وتعني: بيرة بتخمير بارد.",
@@ -979,12 +979,12 @@
   "prompt": "What does \"letterman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"letterman\":",
   "options": [
-   "نبات الفيلودندرون",
+   "نبات شوكي مزهر",
+   "كاتب منشورات",
    "رياضي مدرسي واخد شارة",
-   "سبيكر (مكبّر صوت التليفون)",
-   "عملة فرنسية قديمة"
+   "تعنّت / رفض التنازل"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"letterman\" هو: رياضي مدرسي واخد شارة. مثال: الرياضي المدرسي الحاصل على شارة لبس جاكيت فريق المدرسة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -997,12 +997,12 @@
   "prompt": "Which English word means: رياضي مدرسي واخد شارة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رياضي مدرسي واخد شارة",
   "options": [
-   "rune",
    "letterman",
-   "redshift",
-   "caecum"
+   "sentience",
+   "pointillism",
+   "comforter"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"letterman\" وتعني: رياضي مدرسي واخد شارة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1015,12 +1015,12 @@
   "prompt": "What does \"manhood\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"manhood\":",
   "options": [
-   "عوامة دعم عائمة",
    "مرحلة الرجولة أو البلوغ",
-   "عامل استخلاص عصارة شجر",
-   "الاستخفاف / التقليل من الشأن"
+   "مدمن حشيش (عامية)",
+   "شرط محدد في اتفاق",
+   "خريج"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"manhood\" هو: مرحلة الرجولة أو البلوغ. مثال: الحكاية بتتابع رحلته لمرحلة الرجولة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1033,12 +1033,12 @@
   "prompt": "Which English word means: مرحلة الرجولة أو البلوغ?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مرحلة الرجولة أو البلوغ",
   "options": [
-   "icehouse",
    "manhood",
-   "dimensionality",
-   "downslope"
+   "skydiver",
+   "ghillie",
+   "truant"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"manhood\" وتعني: مرحلة الرجولة أو البلوغ.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1051,12 +1051,12 @@
   "prompt": "What does \"martyrdom\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"martyrdom\":",
   "options": [
-   "استشهاد لعقيدة أو قضية",
-   "النترتة (تحويل الأمونيا)",
-   "دفة التوجيه",
-   "هجرة بره البلد"
+   "المحو والتواري",
+   "سمك النهاش",
+   "اصفرار الأوراق",
+   "استشهاد لعقيدة أو قضية"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"martyrdom\" هو: استشهاد لعقيدة أو قضية. مثال: الكتاب بيناقش الاستشهاد في المجتمعات الدينية القديمة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1069,10 +1069,10 @@
   "prompt": "Which English word means: استشهاد لعقيدة أو قضية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: استشهاد لعقيدة أو قضية",
   "options": [
-   "crassness",
+   "diplomate",
    "martyrdom",
-   "holography",
-   "tetrad"
+   "sial",
+   "defroster"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"martyrdom\" وتعني: استشهاد لعقيدة أو قضية.",
@@ -1087,12 +1087,12 @@
   "prompt": "What does \"cholestasis\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cholestasis\":",
   "options": [
-   "خروج عن المعايير",
-   "التأمين المشترك",
-   "ركود العصارة الصفراوية",
-   "ترويض خيل استعراضي"
+   "إعجاب شديد مؤقت",
+   "تماثل في الأصل",
+   "جنب المدفأة",
+   "ركود العصارة الصفراوية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"cholestasis\" هو: ركود العصارة الصفراوية. مثال: التحاليل أشارت لركود في العصارة الصفراوية عند المريض.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1105,12 +1105,12 @@
   "prompt": "Which English word means: ركود العصارة الصفراوية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ركود العصارة الصفراوية",
   "options": [
+   "nisus",
    "cholestasis",
-   "recency",
-   "bondholder",
-   "cowherd"
+   "recompense",
+   "millinery"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"cholestasis\" وتعني: ركود العصارة الصفراوية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1123,12 +1123,12 @@
   "prompt": "What does \"napkin\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"napkin\":",
   "options": [
+   "منتج / برودكت",
    "فوطة سفرة",
-   "رأي / أوبينيون",
-   "بالطو مطر",
-   "شوت / حقنة / فرصة"
+   "إحساس / معنى",
+   "كيلوجرام"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"napkin\" هو: فوطة سفرة. مثال: حط فوطة سفرة على رجلك.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1141,12 +1141,12 @@
   "prompt": "Which English word means: فوطة سفرة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: فوطة سفرة",
   "options": [
+   "village",
+   "helping",
    "napkin",
-   "degree",
-   "speed",
-   "value"
+   "human"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"napkin\" وتعني: فوطة سفرة.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1159,12 +1159,12 @@
   "prompt": "What does \"neuron\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"neuron\":",
   "options": [
-   "مكسور الخاطر / مطأطئ الرأس",
-   "حصان سباق (قديمة)",
-   "خلية عصبية",
-   "صاحب وثيقة تأمين"
+   "انفراج في العلاقات",
+   "إحالة / إرسال (مستندات)",
+   "غلاف الزهرة",
+   "خلية عصبية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"neuron\" هو: خلية عصبية. مثال: الخلية العصبية بتنقل إشارات في الجهاز العصبي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1177,10 +1177,10 @@
   "prompt": "Which English word means: خلية عصبية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: خلية عصبية",
   "options": [
-   "randomness",
+   "marsupial",
    "neuron",
-   "falconry",
-   "adjudication"
+   "tribalism",
+   "patronymic"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"neuron\" وتعني: خلية عصبية.",
@@ -1195,12 +1195,12 @@
   "prompt": "What does \"nugget\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"nugget\":",
   "options": [
-   "ريح معاكسة",
-   "عدم اللياقة",
-   "إنهاك / ضعف",
-   "كتلة صغيرة دهب ونحوه"
+   "إعادة تركيب خصوصًا وراثيًا",
+   "طيار آلي",
+   "كتلة صغيرة دهب ونحوه",
+   "علامة إدراج (^)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"nugget\" هو: كتلة صغيرة دهب ونحوه. مثال: الباحث عن الدهب لقى كتلة دهب صغيرة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1213,12 +1213,12 @@
   "prompt": "Which English word means: كتلة صغيرة دهب ونحوه?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كتلة صغيرة دهب ونحوه",
   "options": [
-   "etcher",
+   "decryption",
+   "conversationalist",
    "nugget",
-   "bohemia",
-   "eventide"
+   "upstart"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"nugget\" وتعني: كتلة صغيرة دهب ونحوه.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1231,12 +1231,12 @@
   "prompt": "What does \"overtly\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"overtly\":",
   "options": [
-   "كل سنتين",
-   "بالحدس",
-   "على مستوى البلدية",
-   "بشكل صريح وواضح"
+   "ببراعة وتمكن",
+   "من ذلك الحين",
+   "بشكل صريح وواضح",
+   "بسلام"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"overtly\" هو: بشكل صريح وواضح. مثال: ماكانش عدائي ناحيتنا بشكل صريح.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -1250,9 +1250,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بشكل صريح وواضح",
   "options": [
    "overtly",
-   "icily",
-   "analytically",
-   "boringly"
+   "glowingly",
+   "inventively",
+   "endogenously"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"overtly\" وتعني: بشكل صريح وواضح.",
@@ -1267,10 +1267,10 @@
   "prompt": "What does \"painless\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"painless\":",
   "options": [
-   "مفصّل على احتياج الفرد",
+   "حاسس بالوحدة",
    "من غير ألم",
-   "حزين ومؤلم",
-   "مبلول وطري زيادة"
+   "خنثوي",
+   "أسمنتي الخصائص"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"painless\" هو: من غير ألم. مثال: الحقنة تقريبًا ماوجعتش خالص.",
@@ -1285,9 +1285,9 @@
   "prompt": "Which English word means: من غير ألم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: من غير ألم",
   "options": [
-   "multiform",
-   "gibbous",
-   "unmanageable",
+   "lunate",
+   "coterminous",
+   "meager",
    "painless"
   ],
   "answerIndex": 3,
@@ -1304,9 +1304,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"perpetually\":",
   "options": [
    "طول الوقت",
-   "بشكل ازدرائي",
-   "من ناحية الأسلوب",
-   "ناحية الطرف البعيد"
+   "بالحقن في العضل",
+   "بشكل مباشر وصريح",
+   "بحذر وتوجّس"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"perpetually\" هو: طول الوقت. مثال: الساعة القديمة طول الوقت متأخرة خمس دقايق.",
@@ -1321,12 +1321,12 @@
   "prompt": "Which English word means: طول الوقت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: طول الوقت",
   "options": [
-   "worriedly",
    "perpetually",
-   "awry",
-   "unevenly"
+   "hygienically",
+   "brazenly",
+   "successively"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"perpetually\" وتعني: طول الوقت.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -1339,10 +1339,10 @@
   "prompt": "What does \"prenatal\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"prenatal\":",
   "options": [
-   "خايف من الأماكن المقفولة",
-   "مالوش تفسير مفهوم",
+   "لسه ما اتجرّبش",
+   "خاص بتركيب الجسم",
    "قبل الولادة",
-   "مجهد / يتطلب جهد"
+   "خاص بعلم الانسياب"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"prenatal\" هو: قبل الولادة. مثال: العيادة بتوفر متابعة منتظمة للحمل قبل الولادة.",
@@ -1357,12 +1357,12 @@
   "prompt": "Which English word means: قبل الولادة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: قبل الولادة",
   "options": [
+   "luminescent",
+   "macroscopic",
    "prenatal",
-   "nonfinancial",
-   "unruffled",
-   "asinine"
+   "clonic"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"prenatal\" وتعني: قبل الولادة.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -1375,12 +1375,12 @@
   "prompt": "What does \"probate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"probate\":",
   "options": [
-   "كتاب أغاني",
-   "بجاحة وقلة أدب",
+   "وضع الصيغة النهائية",
    "إثبات وصية وإدارة تركة",
-   "تحويل لواقع"
+   "قفاز درع قديم",
+   "أيون الأمونيوم"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"probate\" هو: إثبات وصية وإدارة تركة. مثال: التركة دخلت إجراءات إثبات الوصية بعد وفاتها.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1393,9 +1393,9 @@
   "prompt": "Which English word means: إثبات وصية وإدارة تركة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: إثبات وصية وإدارة تركة",
   "options": [
-   "foxhound",
-   "bludgeon",
-   "greyhound",
+   "tuberosity",
+   "alcove",
+   "playsuit",
    "probate"
   ],
   "answerIndex": 3,
@@ -1411,12 +1411,12 @@
   "prompt": "What does \"procure\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"procure\":",
   "options": [
-   "يزنّ ويضايق بإلحاح",
-   "يكتم أو يخنق",
+   "يحلّي",
    "يدبّر ويحصل على",
-   "يدين علنًا"
+   "يطفي نار",
+   "يمنع ويحرم"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"procure\" هو: يدبّر ويحصل على. مثال: المستشفى لازم تدبّر مستلزمات طبية زيادة.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1429,12 +1429,12 @@
   "prompt": "Which English word means: يدبّر ويحصل على?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يدبّر ويحصل على",
   "options": [
-   "partake",
-   "sweeten",
    "procure",
-   "quadruple"
+   "nestle",
+   "implore",
+   "irradiate"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"procure\" وتعني: يدبّر ويحصل على.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1447,12 +1447,12 @@
   "prompt": "What does \"propel\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"propel\":",
   "options": [
-   "يستهلك (دين على أقساط)",
-   "يدفع لقدام",
-   "يتعهد بتغطية مخاطر مالية",
-   "يوضّح لحد ويفهّمه"
+   "يصرّف فعل",
+   "يؤكد",
+   "يرهب ويضغط",
+   "يدفع لقدام"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"propel\" هو: يدفع لقدام. مثال: الموتور هيدفع المركب لقدام.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1466,9 +1466,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يدفع لقدام",
   "options": [
    "propel",
-   "rewire",
-   "deviate",
-   "confer"
+   "scud",
+   "grope",
+   "uplift"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"propel\" وتعني: يدفع لقدام.",
@@ -1483,12 +1483,12 @@
   "prompt": "What does \"propensity\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"propensity\":",
   "options": [
-   "ميل طبيعي لحاجة",
-   "دودة مضيئة",
-   "بندقية هوائية",
-   "مصمم رقصات"
+   "شمبانزي بالعامية",
+   "بسرعة كبيرة",
+   "إعادة تمثيل حدث",
+   "ميل طبيعي لحاجة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"propensity\" هو: ميل طبيعي لحاجة. مثال: عنده ميل إنه يقاطع غيره.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1501,12 +1501,12 @@
   "prompt": "Which English word means: ميل طبيعي لحاجة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ميل طبيعي لحاجة",
   "options": [
-   "amphetamine",
-   "hideout",
-   "generalissimo",
-   "propensity"
+   "midsection",
+   "propensity",
+   "infestation",
+   "pilothouse"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"propensity\" وتعني: ميل طبيعي لحاجة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1520,9 +1520,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"rosary\":",
   "options": [
    "مسبحة صلاة كاثوليكية",
-   "صفار البيضة",
-   "إبريق ماء",
-   "قذارة وبؤس المكان"
+   "شُرفة السور (قلعة)",
+   "ملايين المليارات / رقم ضخم",
+   "حافز"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"rosary\" هو: مسبحة صلاة كاثوليكية. مثال: مسكت مسبحة صلاة كاثوليكية وهي بتصلي.",
@@ -1537,12 +1537,12 @@
   "prompt": "Which English word means: مسبحة صلاة كاثوليكية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مسبحة صلاة كاثوليكية",
   "options": [
+   "tapestry",
    "rosary",
-   "trochanter",
-   "definiteness",
-   "bunkum"
+   "palatinate",
+   "bloodstock"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"rosary\" وتعني: مسبحة صلاة كاثوليكية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1555,12 +1555,12 @@
   "prompt": "What does \"rundown\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"rundown\":",
   "options": [
-   "ملخص سريع",
-   "كتاب القدّاس",
-   "شماعة هدوم",
-   "عدم ثبات والتزام"
+   "صالة عرض منتجات",
+   "سلاح بيولوجي",
+   "علم التشفير",
+   "ملخص سريع"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"rundown\" هو: ملخص سريع. مثال: ادّيني ملخص سريع للأحداث.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1573,9 +1573,9 @@
   "prompt": "Which English word means: ملخص سريع?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ملخص سريع",
   "options": [
-   "milepost",
-   "tollbooth",
-   "traineeship",
+   "countersign",
+   "seismologist",
+   "doublet",
    "rundown"
   ],
   "answerIndex": 3,
@@ -1591,10 +1591,10 @@
   "prompt": "What does \"ruse\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"ruse\":",
   "options": [
-   "خاصية تقليل الاحتكاك",
-   "تعليق مؤقت / وقف التنفيذ",
+   "قنبلة صغيرة (قديمة)",
+   "شعاع شمس",
    "حيلة للخداع",
-   "سماور (غلاية شاي)"
+   "وفد"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"ruse\" هو: حيلة للخداع. مثال: الدعوة كانت حيلة عشان يلهوه.",
@@ -1609,12 +1609,12 @@
   "prompt": "Which English word means: حيلة للخداع?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: حيلة للخداع",
   "options": [
+   "iridescence",
    "ruse",
-   "flintlock",
-   "sardine",
-   "cockroach"
+   "investiture",
+   "remonstrance"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"ruse\" وتعني: حيلة للخداع.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1627,12 +1627,12 @@
   "prompt": "What does \"seniority\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"seniority\":",
   "options": [
-   "اللي بينزف بسهولة",
-   "تكرار / تضعيف",
-   "ديازيبام دواء مهدئ",
-   "أقدمية"
+   "عدم تماثل الجينات",
+   "مقهى شاي",
+   "أقدمية",
+   "عصاية قياس الزيت / غبي"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"seniority\" هو: أقدمية. مثال: الترقية ساعات بتعتمد على مدة الأقدمية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1645,12 +1645,12 @@
   "prompt": "Which English word means: أقدمية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: أقدمية",
   "options": [
-   "manhood",
-   "whammy",
-   "ruffian",
-   "seniority"
+   "bollard",
+   "seniority",
+   "prosthesis",
+   "terrarium"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"seniority\" وتعني: أقدمية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1663,12 +1663,12 @@
   "prompt": "What does \"severance\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"severance\":",
   "options": [
-   "مؤمن بوجود إله",
+   "قماش الأشرعة",
+   "قتل بالحرق",
    "قطع علاقة أو ارتباط",
-   "ثيبي (عملة بوتسوانا)",
-   "بلح البحر الصغير (محار)"
+   "آلات نفخ خشبية"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"severance\" هو: قطع علاقة أو ارتباط. مثال: الاتفاق وفر تعويض نهاية خدمة للموظفين اللي ماشيين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1681,12 +1681,12 @@
   "prompt": "Which English word means: قطع علاقة أو ارتباط?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: قطع علاقة أو ارتباط",
   "options": [
-   "ducky",
-   "dwarfism",
    "severance",
-   "scamp"
+   "withe",
+   "candelabra",
+   "rediscovery"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"severance\" وتعني: قطع علاقة أو ارتباط.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1699,12 +1699,12 @@
   "prompt": "What does \"sheath\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sheath\":",
   "options": [
-   "شجرة قرانيا",
-   "بكتيريا مفردة",
    "غمد أو غلاف واقي",
-   "رغوة"
+   "خطيبة",
+   "مشروب المغرب",
+   "المحو والتواري"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"sheath\" هو: غمد أو غلاف واقي. مثال: دخل السكينة في غمدها.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1717,12 +1717,12 @@
   "prompt": "Which English word means: غمد أو غلاف واقي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: غمد أو غلاف واقي",
   "options": [
-   "winnow",
-   "cachet",
    "sheath",
-   "sweetpea"
+   "zing",
+   "slurry",
+   "allocution"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"sheath\" وتعني: غمد أو غلاف واقي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1735,12 +1735,12 @@
   "prompt": "What does \"shorthand\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"shorthand\":",
   "options": [
-   "الفلوريت (معدن)",
-   "منتج أو أثر جانبي",
+   "ديوان المستشار / مكتب رسمي",
    "كتابة اختزال",
-   "قدرة مطلقة"
+   "كبيرة العيلة",
+   "يعزف بلحن بسيط على آلة نفخ"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"shorthand\" هو: كتابة اختزال. مثال: المراسل كتب ملاحظاته بطريقة الاختزال.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1753,12 +1753,12 @@
   "prompt": "Which English word means: كتابة اختزال?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كتابة اختزال",
   "options": [
-   "formalwear",
    "shorthand",
-   "encapsulation",
-   "massif"
+   "crackpot",
+   "cot",
+   "interlocutor"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"shorthand\" وتعني: كتابة اختزال.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1771,12 +1771,12 @@
   "prompt": "What does \"singularity\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"singularity\":",
   "options": [
-   "استخفاف / قلة جدية",
-   "شخص تحت رعاية خبير",
-   "نقطة تفرد أو تميّز",
-   "رشاقة وخفة"
+   "هوكي شوارع",
+   "مضطهِد",
+   "ممر مشاة علوي",
+   "نقطة تفرد أو تميّز"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"singularity\" هو: نقطة تفرد أو تميّز. مثال: عالم الفيزياء شرح نقطة تفرد جاذبي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1789,12 +1789,12 @@
   "prompt": "Which English word means: نقطة تفرد أو تميّز?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: نقطة تفرد أو تميّز",
   "options": [
+   "matzo",
    "singularity",
-   "hosanna",
-   "affront",
-   "lumberjack"
+   "sundress",
+   "bourguignon"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"singularity\" وتعني: نقطة تفرد أو تميّز.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1807,12 +1807,12 @@
   "prompt": "What does \"snowman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"snowman\":",
   "options": [
-   "رجل تلج",
-   "ليلة في أيام الشغل",
-   "توبيخ / تحذير",
-   "أعمال شغب"
+   "سمكة مانتا كبيرة",
+   "الحد الأدنى للمعيشة",
+   "مفوض سياسي شيوعي",
+   "رجل تلج"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"snowman\" هو: رجل تلج. مثال: الأطفال عملوا رجل تلج بره.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1825,10 +1825,10 @@
   "prompt": "Which English word means: رجل تلج?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رجل تلج",
   "options": [
-   "bestiary",
+   "sandblast",
    "snowman",
-   "eclecticism",
-   "reforestation"
+   "reassembly",
+   "braincase"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"snowman\" وتعني: رجل تلج.",
@@ -1844,9 +1844,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"socialize\":",
   "options": [
    "يختلط بالناس اجتماعيًا",
-   "يسيء معاملة",
-   "يشخبط ويكتب بسرعة",
-   "يخطف طيارة أو عربية"
+   "يتبلور / يوضح وتتحدد ملامحه",
+   "يهدّ بالكامل",
+   "يتعاطف"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"socialize\" هو: يختلط بالناس اجتماعيًا. مثال: غالبًا بنقعد اجتماعيًا مع زمايلنا بعد الشغل.",
@@ -1862,9 +1862,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يختلط بالناس اجتماعيًا",
   "options": [
    "socialize",
-   "contaminate",
-   "arouse",
-   "want"
+   "mystify",
+   "disapprove",
+   "trample"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"socialize\" وتعني: يختلط بالناس اجتماعيًا.",
@@ -1879,12 +1879,12 @@
   "prompt": "What does \"sportsman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sportsman\":",
   "options": [
-   "وسخ لزج",
+   "مادة مخثّرة",
+   "مستوطن في مستعمرة",
    "رياضي",
-   "تعادل أربعين في التنس",
-   "دوبا (مادة بتتحوّل لدوبامين)"
+   "مقتنى متوارث في العيلة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"sportsman\" هو: رياضي. مثال: الرياضي اتدرب جامد قبل البطولة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1897,9 +1897,9 @@
   "prompt": "Which English word means: رياضي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رياضي",
   "options": [
-   "upsurge",
-   "homebuilder",
-   "herbivore",
+   "waybill",
+   "secularist",
+   "squeegee",
    "sportsman"
   ],
   "answerIndex": 3,
@@ -1915,12 +1915,12 @@
   "prompt": "What does \"squarely\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"squarely\":",
   "options": [
-   "بجدية ووقار",
-   "بشكل مباشر وصريح",
-   "بنشاط وحيوية",
-   "من الناحية الدراسية"
+   "من الناحية العسكرية",
+   "بنظرة استفهام",
+   "بغموض",
+   "بشكل مباشر وصريح"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"squarely\" هو: بشكل مباشر وصريح. مثال: المسؤولية بتقع بشكل مباشر على المدير.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -1933,9 +1933,9 @@
   "prompt": "Which English word means: بشكل مباشر وصريح?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بشكل مباشر وصريح",
   "options": [
-   "characteristically",
-   "authentically",
-   "enviously",
+   "secondarily",
+   "determinedly",
+   "disingenuously",
    "squarely"
   ],
   "answerIndex": 3,
@@ -1951,9 +1951,9 @@
   "prompt": "What does \"stepmother\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"stepmother\":",
   "options": [
-   "واحد من سكان جزيرة",
-   "ملحوظة أسفل الصفحة",
-   "هندباء برية",
+   "طيبة وحب الخير",
+   "صاحبة البيت المؤجر",
+   "ثيم / موضوع / ثيم",
    "مرات الأب"
   ],
   "answerIndex": 3,
@@ -1969,12 +1969,12 @@
   "prompt": "Which English word means: مرات الأب?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مرات الأب",
   "options": [
-   "aristocracy",
-   "solidity",
-   "stepmother",
-   "typhoid"
+   "bustle",
+   "nostril",
+   "impressionist",
+   "stepmother"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"stepmother\" وتعني: مرات الأب.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -1987,12 +1987,12 @@
   "prompt": "What does \"strut\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"strut\":",
   "options": [
+   "يلتف على قيد",
    "يمشي باستعراض وغرور",
-   "يتطفل على خصوصيات",
-   "يضطهد",
-   "يحدد مسبقا"
+   "يرفع السرية",
+   "يشحن جوا"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"strut\" هو: يمشي باستعراض وغرور. مثال: الطاووس ابتدى يمشي باستعراض على النجيلة.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -2005,12 +2005,12 @@
   "prompt": "Which English word means: يمشي باستعراض وغرور?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يمشي باستعراض وغرور",
   "options": [
-   "strut",
-   "undergird",
-   "depopulate",
-   "deregulate"
+   "rehearse",
+   "writhe",
+   "emboss",
+   "strut"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"strut\" وتعني: يمشي باستعراض وغرور.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -2023,12 +2023,12 @@
   "prompt": "What does \"swagger\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"swagger\":",
   "options": [
-   "رمز ثلاثي الأرجل",
-   "مشية فيها استعراض وثقة",
-   "تظاهر وادعاء",
-   "قميص داخلي نسائي"
+   "ممر للمشي",
+   "علم دراسة الشيخوخة",
+   "مشمع أرضيات",
+   "مشية فيها استعراض وثقة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"swagger\" هو: مشية فيها استعراض وثقة. مثال: دخل الأوضة بمشية فيها استعراض وثقة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2041,12 +2041,12 @@
   "prompt": "Which English word means: مشية فيها استعراض وثقة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مشية فيها استعراض وثقة",
   "options": [
-   "sacredness",
-   "interrogator",
    "swagger",
-   "fief"
+   "diorama",
+   "consumptive",
+   "clawback"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"swagger\" وتعني: مشية فيها استعراض وثقة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2059,12 +2059,12 @@
   "prompt": "What does \"swirl\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"swirl\":",
   "options": [
-   "يتذلل / يزحف",
-   "يلف ويتدوّم",
-   "يفتح العلبة (فيديو)",
-   "يعزف أو يغني في الشارع"
+   "يفتح انسداد",
+   "يلخّص جوهر حاجة",
+   "يستسلم ويذعن",
+   "يلف ويتدوّم"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"swirl\" هو: يلف ويتدوّم. مثال: الورق بيلف في دواير حوالين الحوش في الخريف.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -2077,12 +2077,12 @@
   "prompt": "Which English word means: يلف ويتدوّم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يلف ويتدوّم",
   "options": [
-   "redirect",
-   "swirl",
-   "taint",
-   "stomp"
+   "bate",
+   "encase",
+   "alphabetize",
+   "swirl"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"swirl\" وتعني: يلف ويتدوّم.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -2095,12 +2095,12 @@
   "prompt": "What does \"telecommunication\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"telecommunication\":",
   "options": [
-   "اتصال عن بُعد",
-   "شرّابة خيوط للزينة",
-   "العناد والتمرد",
-   "شبح"
+   "علم المية ودورتها",
+   "صنارة صيد",
+   "نشوء الفرد",
+   "اتصال عن بُعد"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"telecommunication\" هو: اتصال عن بُعد. مثال: الأقمار الصناعية غيّرت الاتصالات عن بعد في العالم كله.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2113,12 +2113,12 @@
   "prompt": "Which English word means: اتصال عن بُعد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: اتصال عن بُعد",
   "options": [
-   "digitisation",
-   "rainwater",
-   "pug",
-   "telecommunication"
+   "telecommunication",
+   "gremlin",
+   "tannin",
+   "scattergun"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"telecommunication\" وتعني: اتصال عن بُعد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2131,9 +2131,9 @@
   "prompt": "What does \"theorist\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"theorist\":",
   "options": [
-   "تحلل",
-   "شخص نافذ في صناعة",
-   "خطيب مفوّه",
+   "طن متري",
+   "ملحوظة أسفل الصفحة",
+   "مال تقدمه العروسة للجواز",
    "باحث بيطوّر نظريات"
   ],
   "answerIndex": 3,
@@ -2149,12 +2149,12 @@
   "prompt": "Which English word means: باحث بيطوّر نظريات?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: باحث بيطوّر نظريات",
   "options": [
-   "outback",
-   "conceit",
-   "reverence",
-   "theorist"
+   "prawn",
+   "budget",
+   "theorist",
+   "gaiety"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"theorist\" وتعني: باحث بيطوّر نظريات.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -2167,12 +2167,12 @@
   "prompt": "What does \"theta\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"theta\":",
   "options": [
+   "فلورين (عملة قديمة)",
+   "سمك الغرنارد",
    "حرف ثيتا اليوناني",
-   "متسلّق / مسافر مشي",
-   "ملح أو أيون نيتريت",
-   "جزيء مكوّن من وحدتين"
+   "تيبّس أو تصلّب"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"theta\" هو: حرف ثيتا اليوناني. مثال: رمز ثيتا بيمثل زاوية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2185,12 +2185,12 @@
   "prompt": "Which English word means: حرف ثيتا اليوناني?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: حرف ثيتا اليوناني",
   "options": [
-   "theta",
-   "minibus",
-   "waxwork",
-   "eradication"
+   "passageway",
+   "pinecone",
+   "pelage",
+   "theta"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"theta\" وتعني: حرف ثيتا اليوناني.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2204,9 +2204,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"thong\":",
   "options": [
    "لباس داخلي شريط رفيع",
-   "صوص طماطم إيطالي",
-   "انخفاض",
-   "الماضي القريب بأسلوب حنين"
+   "فسحة مفتوحة وسط غابة",
+   "صنف أب (برمجة / تصنيف)",
+   "طقطقة ناشفة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"thong\" هو: لباس داخلي شريط رفيع. مثال: المحل بيبيع لباس داخلي بشريط رفيع بألوان كتير.",
@@ -2221,12 +2221,12 @@
   "prompt": "Which English word means: لباس داخلي شريط رفيع?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: لباس داخلي شريط رفيع",
   "options": [
-   "detonation",
+   "meshing",
+   "glob",
    "thong",
-   "censer",
-   "quattrocento"
+   "importer"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"thong\" وتعني: لباس داخلي شريط رفيع.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2239,12 +2239,12 @@
   "prompt": "What does \"tot\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"tot\":",
   "options": [
-   "تقسيم دوائر انتخابية لمصلحة حزب",
-   "التقطير / غرس",
-   "طفل صغير (عامية)",
-   "أقصر طريق مباشر"
+   "مصنع تقطير مشروبات كحولية",
+   "وجود في كل حتة",
+   "مداعبة قبل العلاقة الجنسية",
+   "طفل صغير (عامية)"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"tot\" هو: طفل صغير (عامية). مثال: الطفل الصغير نام في العربية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2257,12 +2257,12 @@
   "prompt": "Which English word means: طفل صغير (عامية)?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: طفل صغير (عامية)",
   "options": [
-   "trespassing",
+   "sportswoman",
+   "giver",
    "tot",
-   "degeneration",
-   "betrothal"
+   "inebriation"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"tot\" وتعني: طفل صغير (عامية).",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2276,9 +2276,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"tsar\":",
   "options": [
    "قيصر روسي",
-   "عازف كلارينيت",
-   "ناسخ / مفرّغ تسجيلات",
-   "أدوات النظافة الشخصية"
+   "فني خطوط كهربا",
+   "حيوان عديد الخلايا",
+   "إعادة امتصاص"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"tsar\" هو: قيصر روسي. مثال: القيصر حكم روسيا قبل الثورة.",
@@ -2293,9 +2293,9 @@
   "prompt": "Which English word means: قيصر روسي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: قيصر روسي",
   "options": [
-   "patrician",
-   "hatefulness",
-   "setter",
+   "truism",
+   "patchwork",
+   "dragoon",
    "tsar"
   ],
   "answerIndex": 3,
@@ -2307,36 +2307,36 @@
   "id": "q-voc-007129",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"tycoon\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"tycoon\":",
   "options": [
    "رجل أعمال فاحش الثراء",
-   "عدم ولاء",
-   "سك العملة / عدد القطع المسكوكة",
-   "اضطراب ميول جنسية"
+   "تفاهم وارتياح متبادل",
+   "صدمة وضيق",
+   "تصرف أو صفة غريبة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"tycoon\" هو: رجل أعمال فاحش الثراء. مثال: رجل أعمال الشحن فاحش الثراء اشترى شركة كمان.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-007130",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "Which English word means: رجل أعمال فاحش الثراء?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رجل أعمال فاحش الثراء",
   "options": [
-   "seafarer",
-   "nutter",
+   "darkroom",
    "tycoon",
-   "episcopate"
+   "pendulum",
+   "verandah"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"tycoon\" وتعني: رجل أعمال فاحش الثراء.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
@@ -2347,12 +2347,12 @@
   "prompt": "What does \"unconditionally\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"unconditionally\":",
   "options": [
-   "من غير شروط",
-   "بشكل مخالف للقانون",
-   "بإصرار شديد",
-   "بشر"
+   "بشكل مزمن أو مستمر",
+   "بشكل احتمالي",
+   "بشكل نظري / تجريدي",
+   "من غير شروط"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"unconditionally\" هو: من غير شروط. مثال: أهلها دعموها من غير شروط.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -2365,10 +2365,10 @@
   "prompt": "Which English word means: من غير شروط?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: من غير شروط",
   "options": [
-   "downwind",
-   "civilly",
+   "tenaciously",
+   "magnanimously",
    "unconditionally",
-   "intolerably"
+   "humbly"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"unconditionally\" وتعني: من غير شروط.",
@@ -2383,10 +2383,10 @@
   "prompt": "What does \"uncontrollable\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"uncontrollable\":",
   "options": [
-   "ديمقراطي / ديموكراتيك",
+   "بيعبّر عن الملكية",
    "مش ممكن السيطرة عليه",
-   "صغير أوي / تايني",
-   "سهل وهادي في التعامل"
+   "حرج / كريتيكال",
+   "مالي / فاينانشال"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"uncontrollable\" هو: مش ممكن السيطرة عليه. مثال: الحريق بقى مش ممكن نسيطر عليه خلال دقايق.",
@@ -2401,10 +2401,10 @@
   "prompt": "Which English word means: مش ممكن السيطرة عليه?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مش ممكن السيطرة عليه",
   "options": [
-   "central",
-   "environmental",
+   "main",
+   "serious",
    "uncontrollable",
-   "tasteless"
+   "thunderous"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"uncontrollable\" وتعني: مش ممكن السيطرة عليه.",
@@ -2419,10 +2419,10 @@
   "prompt": "What does \"undeniably\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"undeniably\":",
   "options": [
-   "كل سنتين",
+   "بنية القتل / بشراسة",
    "بشكل مايتنكرش",
-   "بفرحة",
-   "على سبيل الاستعارة"
+   "من غير ما يأذي",
+   "من غير فايدة"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"undeniably\" هو: بشكل مايتنكرش. مثال: المشروع كان نجاح كبير بشكل مايتنكرش.",
@@ -2437,12 +2437,12 @@
   "prompt": "Which English word means: بشكل مايتنكرش?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بشكل مايتنكرش",
   "options": [
+   "inaudibly",
    "undeniably",
-   "passim",
-   "hygienically",
-   "tiredly"
+   "insolently",
+   "variously"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"undeniably\" وتعني: بشكل مايتنكرش.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -2455,12 +2455,12 @@
   "prompt": "What does \"unorthodox\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"unorthodox\":",
   "options": [
-   "مبالغ فيه (مديح)",
+   "خاص بالغدد الليمفاوية",
+   "مقرف",
    "غير تقليدي",
-   "خاص بالقشرة الأرضية",
-   "طفيلي"
+   "متعالي كأنه لورد"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"unorthodox\" هو: غير تقليدي. مثال: المدرب بيستخدم طريقة تمرين غير تقليدية.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2473,10 +2473,10 @@
   "prompt": "Which English word means: غير تقليدي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: غير تقليدي",
   "options": [
-   "exploitive",
-   "droopy",
+   "mercurial",
+   "unary",
    "unorthodox",
-   "epithelial"
+   "groundless"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"unorthodox\" وتعني: غير تقليدي.",
@@ -2491,12 +2491,12 @@
   "prompt": "What does \"uproar\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"uproar\":",
   "options": [
-   "حكم مطلق",
-   "موضوعية وعدم تحيز",
-   "أبجدية مقطعية",
-   "ضجة وصياح"
+   "صقر الشاهين",
+   "ذبابة تسي تسي (ناقلة مرض النوم)",
+   "ضجة وصياح",
+   "قلق وعدم ارتياح"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"uproar\" هو: ضجة وصياح. مثال: القرار عمل ضجة بين المؤيدين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2509,12 +2509,12 @@
   "prompt": "Which English word means: ضجة وصياح?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ضجة وصياح",
   "options": [
-   "censer",
+   "apportionment",
+   "viscount",
    "uproar",
-   "overdrive",
-   "bezel"
+   "chopstick"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"uproar\" وتعني: ضجة وصياح.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2527,12 +2527,12 @@
   "prompt": "What does \"vertigo\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"vertigo\":",
   "options": [
-   "انهيار طيني",
-   "عربية صغيرة للمشاوير",
    "دوار وإحساس بالدوران",
-   "النقاء اللوني"
+   "جزيء وحدة بناء بوليمر",
+   "التقليل من شأن / التشويه",
+   "سلسلة أحماض أمينية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"vertigo\" هو: دوار وإحساس بالدوران. مثال: حست بدوار وإحساس إن الدنيا بتلف لما وقفت.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2545,12 +2545,12 @@
   "prompt": "Which English word means: دوار وإحساس بالدوران?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: دوار وإحساس بالدوران",
   "options": [
-   "keel",
-   "interconnectedness",
-   "vertigo",
-   "capsicum"
+   "forefinger",
+   "lint",
+   "tuckahoe",
+   "vertigo"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"vertigo\" وتعني: دوار وإحساس بالدوران.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2563,10 +2563,10 @@
   "prompt": "What does \"vigilance\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"vigilance\":",
   "options": [
-   "مساحة واسعة / لفّة قماش",
+   "وذمة لمفية (تورّم)",
    "يقظة وانتباه مستمر",
-   "موافقة رسمية",
-   "إعادة محاكمة"
+   "إعادة التجميع",
+   "خط القمة (للجبل)"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"vigilance\" هو: يقظة وانتباه مستمر. مثال: اليقظة المستمرة بتساعد تمنع حوادث الشغل.",
@@ -2581,10 +2581,10 @@
   "prompt": "Which English word means: يقظة وانتباه مستمر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يقظة وانتباه مستمر",
   "options": [
-   "ideality",
-   "recantation",
+   "whitefish",
+   "initiator",
    "vigilance",
-   "benediction"
+   "palaver"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"vigilance\" وتعني: يقظة وانتباه مستمر.",
@@ -2599,12 +2599,12 @@
   "prompt": "What does \"viscount\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"viscount\":",
   "options": [
+   "تافتا (قماش حريري لامع)",
+   "الأمعاء",
    "لقب نبالة تحت إيرل",
-   "طقوس العبادة الجماعية",
-   "جهاز قياس الجرعة الإشعاعية",
-   "أوضة تخزين"
+   "نزيف الأنف"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"viscount\" هو: لقب نبالة تحت إيرل. مثال: الفيكونت ورث لقب النبالة من أبوه.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2617,10 +2617,10 @@
   "prompt": "Which English word means: لقب نبالة تحت إيرل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: لقب نبالة تحت إيرل",
   "options": [
-   "loggia",
+   "oligarch",
    "viscount",
-   "mime",
-   "stucco"
+   "reformist",
+   "repatriation"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"viscount\" وتعني: لقب نبالة تحت إيرل.",
@@ -2635,12 +2635,12 @@
   "prompt": "What does \"walkway\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"walkway\":",
   "options": [
-   "دودة شريطية",
-   "سخافة / عبث",
    "ممر للمشي",
-   "الضيق"
+   "فلاح مالك أرض تاريخيًا",
+   "مُرعِد",
+   "انزياح نحو الأحمر"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"walkway\" هو: ممر للمشي. مثال: ممر مشي مسقوف بيوصل المبنيين ببعض.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2653,10 +2653,10 @@
   "prompt": "Which English word means: ممر للمشي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ممر للمشي",
   "options": [
-   "asymptote",
-   "astrodome",
+   "philodendron",
+   "speckle",
    "walkway",
-   "detractor"
+   "virtuosity"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"walkway\" وتعني: ممر للمشي.",
@@ -2671,9 +2671,9 @@
   "prompt": "What does \"whistler\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"whistler\":",
   "options": [
-   "متملق",
-   "طريق فرعي هادي",
-   "وصلة إرسال لقمر صناعي",
+   "عنصر البلوتونيوم المشع",
+   "انعدام المعنى",
+   "أمين الصندوق (في المدرسة أو الكلية)",
    "شخص بيصفّر"
   ],
   "answerIndex": 3,
@@ -2689,12 +2689,12 @@
   "prompt": "Which English word means: شخص بيصفّر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شخص بيصفّر",
   "options": [
+   "festschrift",
    "whistler",
-   "benzoin",
-   "evaporation",
-   "churchwarden"
+   "nonstarter",
+   "headlamp"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"whistler\" وتعني: شخص بيصفّر.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2707,12 +2707,12 @@
   "prompt": "What does \"windmill\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"windmill\":",
   "options": [
-   "مثير مشاكل",
-   "طاحونة هوا",
-   "مجسم منظر مصغر",
-   "الابتكارية"
+   "ورق قصدير",
+   "نبات الألوة",
+   "نبات الونكا / قوقعة بحرية صغيرة",
+   "طاحونة هوا"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"windmill\" هو: طاحونة هوا. مثال: طاحونة الهوا القديمة كانت بتطحن الحبوب زمان.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2725,12 +2725,12 @@
   "prompt": "Which English word means: طاحونة هوا?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: طاحونة هوا",
   "options": [
-   "shopaholic",
-   "reformatory",
-   "mimeograph",
-   "windmill"
+   "amputee",
+   "chieftain",
+   "windmill",
+   "spallation"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"windmill\" وتعني: طاحونة هوا.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2743,12 +2743,12 @@
   "prompt": "What does \"workflow\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"workflow\":",
   "options": [
-   "ابن ابن الأخ / الأخت",
-   "تسلسل خطوات الشغل",
-   "موجة نشاط مفاجئة",
-   "فن الطبخ"
+   "تميّز",
+   "حرفان بصوت واحد",
+   "مرسوم أو أمر رسمي",
+   "تسلسل خطوات الشغل"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"workflow\" هو: تسلسل خطوات الشغل. مثال: قايمة المراجعة الجديدة بتحسّن تسلسل شغلنا اليومي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2761,12 +2761,12 @@
   "prompt": "Which English word means: تسلسل خطوات الشغل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تسلسل خطوات الشغل",
   "options": [
-   "chronograph",
-   "predestination",
-   "deceit",
-   "workflow"
+   "ironmonger",
+   "leakage",
+   "workflow",
+   "gasconade"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"workflow\" وتعني: تسلسل خطوات الشغل.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2779,12 +2779,12 @@
   "prompt": "What does \"wrapper\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"wrapper\":",
   "options": [
-   "غلاف",
-   "نخيل مروحي قصير",
-   "جامع بيض / محرّض",
-   "سمك الشبوط (سمكة ماء عذب)"
+   "حاجة محبطة (عامية)",
+   "إضراب وترك مكان الشغل",
+   "دم الآلهة (أسطورة)",
+   "غلاف"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"wrapper\" هو: غلاف. مثال: ارمي غلاف الشوكولاتة في الباسكت.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2797,12 +2797,12 @@
   "prompt": "Which English word means: غلاف?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: غلاف",
   "options": [
-   "cloudburst",
-   "occlusive",
-   "pustule",
-   "wrapper"
+   "egalitarianism",
+   "wrapper",
+   "thermography",
+   "flavin"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"wrapper\" وتعني: غلاف.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2815,12 +2815,12 @@
   "prompt": "What does \"acetate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"acetate\":",
   "options": [
-   "مسند قدم",
-   "ارتباط أو وصلة",
-   "نبات الفيلودندرون",
-   "مركب أسيتات"
+   "تفجير",
+   "مركب أسيتات",
+   "مهووس بنفسه",
+   "أفندي (لقب احترام)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"acetate\" هو: مركب أسيتات. مثال: المعمل طلب أسيتات صوديوم للتجربة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2833,12 +2833,12 @@
   "prompt": "Which English word means: مركب أسيتات?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مركب أسيتات",
   "options": [
-   "eelgrass",
-   "ischium",
+   "inclosure",
    "acetate",
-   "regularization"
+   "kiosk",
+   "footman"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"acetate\" وتعني: مركب أسيتات.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2851,12 +2851,12 @@
   "prompt": "What does \"allure\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"allure\":",
   "options": [
-   "موس حلاقة",
-   "جاذبية وإغراء",
-   "مضمار سباق خيل",
-   "تأمل في النفس"
+   "الصرامة",
+   "صبغة مغرة ترابية",
+   "أوضة تخزين",
+   "جاذبية وإغراء"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"allure\" هو: جاذبية وإغراء. مثال: جاذبية حياة المدينة شدّتها.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2869,12 +2869,12 @@
   "prompt": "Which English word means: جاذبية وإغراء?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: جاذبية وإغراء",
   "options": [
+   "intima",
+   "shiv",
    "allure",
-   "homebrew",
-   "coonhound",
-   "impediment"
+   "quantification"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"allure\" وتعني: جاذبية وإغراء.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2887,12 +2887,12 @@
   "prompt": "What does \"anthrax\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"anthrax\":",
   "options": [
-   "كيانيت (معدن أزرق)",
-   "الماضي التام",
-   "ميزر (مكبّر موجات ميكروية)",
-   "مرض الجمرة الخبيثة"
+   "مرض الجمرة الخبيثة",
+   "الاثنا عشر (جزء من الأمعاء)",
+   "لجام خفيف (حصان)",
+   "نظام الترقّي حسب الكفاءة"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"anthrax\" هو: مرض الجمرة الخبيثة. مثال: الدكتور البيطري حلّل للحيوان عشان يكشف عن الجمرة الخبيثة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2905,12 +2905,12 @@
   "prompt": "Which English word means: مرض الجمرة الخبيثة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مرض الجمرة الخبيثة",
   "options": [
-   "paroxysm",
-   "largess",
-   "disgorgement",
-   "anthrax"
+   "anthrax",
+   "decryption",
+   "silencer",
+   "coadjutor"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"anthrax\" وتعني: مرض الجمرة الخبيثة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2923,10 +2923,10 @@
   "prompt": "What does \"antisemitism\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"antisemitism\":",
   "options": [
-   "انحطاط أخلاقي",
+   "كلام فارغ",
    "كراهية اليهود والتحيّز ضدهم",
-   "دكتور نسا وتوليد",
-   "مكتشف"
+   "اتزان البيئة الداخلية للجسم",
+   "الارتشاء"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"antisemitism\" هو: كراهية اليهود والتحيّز ضدهم. مثال: المدرسة أدانت كراهية اليهود وأشكال العنصرية التانية.",
@@ -2941,12 +2941,12 @@
   "prompt": "Which English word means: كراهية اليهود والتحيّز ضدهم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كراهية اليهود والتحيّز ضدهم",
   "options": [
-   "discoverer",
-   "tuber",
-   "antrum",
-   "antisemitism"
+   "antisemitism",
+   "counterculture",
+   "cantilever",
+   "roper"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"antisemitism\" وتعني: كراهية اليهود والتحيّز ضدهم.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2959,12 +2959,12 @@
   "prompt": "What does \"aqueous\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"aqueous\":",
   "options": [
-   "إثباتي / متعلق بالدليل",
-   "رقيق كأنه مش مادي",
    "مائي أو مذاب فالمية",
-   "فيزيائي كيميائي"
+   "عرقي (قديم)",
+   "خاص بحياة الرهبنة",
+   "متعلق بالكروموسومات"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"aqueous\" هو: مائي أو مذاب فالمية. مثال: الكيميائي حضّر محلول ملح في المية.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2977,12 +2977,12 @@
   "prompt": "Which English word means: مائي أو مذاب فالمية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مائي أو مذاب فالمية",
   "options": [
-   "pudendal",
-   "lymphocytic",
+   "breakneck",
    "aqueous",
-   "forgivable"
+   "perilous",
+   "pajama"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"aqueous\" وتعني: مائي أو مذاب فالمية.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2995,12 +2995,12 @@
   "prompt": "What does \"attainment\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"attainment\":",
   "options": [
-   "إيرادات / ريفينيو",
    "تحقيق هدف أو مستوى",
-   "حطام سفينة",
-   "مرحلة / فيز"
+   "محاكمة / ترايل",
+   "بنسلين مضاد حيوي",
+   "علامة بين صفحات كتاب"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"attainment\" هو: تحقيق هدف أو مستوى. مثال: التقرير بيقيس المستوى التعليمي اللي وصل له البالغين.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -3013,12 +3013,12 @@
   "prompt": "Which English word means: تحقيق هدف أو مستوى?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تحقيق هدف أو مستوى",
   "options": [
-   "theme",
-   "state",
-   "harrow",
-   "attainment"
+   "bathhouse",
+   "attainment",
+   "tonne",
+   "villager"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"attainment\" وتعني: تحقيق هدف أو مستوى.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -3031,12 +3031,12 @@
   "prompt": "What does \"auctioneer\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"auctioneer\":",
   "options": [
-   "نقرس",
-   "لوحة مفاتيح موسيقية",
-   "فلوكس (زهرة)",
-   "دلّال مزاد"
+   "العار والتوبيخ العلني",
+   "دلّال مزاد",
+   "بيض سمك مملح فاخر",
+   "عمود دعم"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"auctioneer\" هو: دلّال مزاد. مثال: دلال المزاد أعلن أعلى سعر اتعرض.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3049,12 +3049,12 @@
   "prompt": "Which English word means: دلّال مزاد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: دلّال مزاد",
   "options": [
-   "unmentionable",
-   "bitterroot",
-   "refresher",
-   "auctioneer"
+   "miniskirt",
+   "auctioneer",
+   "genealogist",
+   "urination"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"auctioneer\" وتعني: دلّال مزاد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3067,12 +3067,12 @@
   "prompt": "What does \"authorship\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"authorship\":",
   "options": [
-   "تليفزيون (عامية بريطانية)",
+   "عضو مجلس بلدة (أمريكي)",
+   "كتاب سحر",
    "تأليف ونسبته لصاحبه",
-   "روبل (عملة بيلاروسيا)",
-   "عدم اللياقة"
+   "حنفية حريق"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"authorship\" هو: تأليف ونسبته لصاحبه. مثال: الباحثين لسه مختلفين مين اللي ألّف القصيدة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3085,9 +3085,9 @@
   "prompt": "Which English word means: تأليف ونسبته لصاحبه?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تأليف ونسبته لصاحبه",
   "options": [
-   "groundnut",
-   "nonsmoker",
-   "nave",
+   "segmentation",
+   "verisimilitude",
+   "gasket",
    "authorship"
   ],
   "answerIndex": 3,
@@ -3103,12 +3103,12 @@
   "prompt": "What does \"axial\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"axial\":",
   "options": [
-   "موفق ومناسب",
-   "طري ومتدلي",
-   "مالوش أساس",
-   "محوري"
+   "على شكل أنبوبة",
+   "مستدير تقريبا",
+   "محوري",
+   "مش بيسرّب ميّه"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"axial\" هو: محوري. مثال: الرسم بيوضح ميل محور الكوكب.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3121,9 +3121,9 @@
   "prompt": "Which English word means: محوري?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: محوري",
   "options": [
-   "musty",
-   "maneuverable",
-   "translational",
+   "mangy",
+   "multilingual",
+   "unsolvable",
    "axial"
   ],
   "answerIndex": 3,
@@ -3140,9 +3140,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"battleship\":",
   "options": [
    "بارجة حربية",
-   "خليط من الأزهار الناشفة المعطّرة / مزيج متنوع",
-   "دكتور مسالك بولية",
-   "الترنّح المحوري (حركة محور الدوران)"
+   "جبل تحت البحر",
+   "راجل قانون",
+   "صاحب ترخيص"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"battleship\" هو: بارجة حربية. مثال: البارجة الحربية دخلت المينا وقت الفجر.",
@@ -3157,12 +3157,12 @@
   "prompt": "Which English word means: بارجة حربية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بارجة حربية",
   "options": [
-   "bozo",
-   "tableau",
-   "battleship",
-   "playhouse"
+   "virion",
+   "macula",
+   "fibroid",
+   "battleship"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"battleship\" وتعني: بارجة حربية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3175,9 +3175,9 @@
   "prompt": "What does \"bayonet\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bayonet\":",
   "options": [
-   "تجمّع مدن متّصلة",
-   "صانع ساعات",
-   "يخدش / يشخبط (الجزمة)",
+   "يبهدل / يلخبط (الشعر)",
+   "حيلة ماكرة",
+   "نبات بيدي محصول",
    "سن حربة للبندقية"
   ],
   "answerIndex": 3,
@@ -3193,10 +3193,10 @@
   "prompt": "Which English word means: سن حربة للبندقية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: سن حربة للبندقية",
   "options": [
-   "occlusive",
-   "apparition",
+   "transferability",
+   "roughneck",
    "bayonet",
-   "chancery"
+   "quarterfinal"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"bayonet\" وتعني: سن حربة للبندقية.",
@@ -3211,12 +3211,12 @@
   "prompt": "What does \"bombshell\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bombshell\":",
   "options": [
+   "قلم شمع تلوين",
    "خبر مفاجئ وصادم",
-   "مرحلة الطفولة المبكرة",
-   "إجراءات معقّدة وطويلة",
-   "سوء إدارة"
+   "انتقائية",
+   "ترتيب بديل لعناصر"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"bombshell\" هو: خبر مفاجئ وصادم. مثال: استقالتها كانت خبر مفاجئ وصادم للكل.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3229,10 +3229,10 @@
   "prompt": "Which English word means: خبر مفاجئ وصادم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: خبر مفاجئ وصادم",
   "options": [
-   "crusader",
+   "sledgehammer",
    "bombshell",
-   "stepdaughter",
-   "turndown"
+   "saman",
+   "taffeta"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"bombshell\" وتعني: خبر مفاجئ وصادم.",
@@ -3247,12 +3247,12 @@
   "prompt": "What does \"buyout\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"buyout\":",
   "options": [
-   "تطبيق النظرية عمليًا",
-   "عدم تكوّن عضو",
-   "خشب شجر ميت",
-   "شراء حصة مسيطرة بشركة"
+   "شراء حصة مسيطرة بشركة",
+   "كاتب منشورات",
+   "وجع قلب وحزن",
+   "حشيش (جنوب أفريقيا)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"buyout\" هو: شراء حصة مسيطرة بشركة. مثال: شراء الحصة المسيطرة ادّى الموظفين السيطرة على الشركة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3265,12 +3265,12 @@
   "prompt": "Which English word means: شراء حصة مسيطرة بشركة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شراء حصة مسيطرة بشركة",
   "options": [
-   "hoarseness",
-   "circumscription",
-   "buyout",
-   "jockstrap"
+   "investiture",
+   "hornet",
+   "transience",
+   "buyout"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"buyout\" وتعني: شراء حصة مسيطرة بشركة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3283,12 +3283,12 @@
   "prompt": "What does \"byte\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"byte\":",
   "options": [
-   "أرض مستنقعات منخفضة",
-   "وحدة بيانات تمن بِت",
-   "دكستروز (سكر الجلوكوز)",
-   "إنزال جوي لإمدادات"
+   "عبوة ستة / عضلات البطن",
+   "كاهنة ڤستا",
+   "رمز صغير أسفل السطر",
+   "وحدة بيانات تمن بِت"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"byte\" هو: وحدة بيانات تمن بِت. مثال: البايت الواحد غالبًا بيتكوّن من تمن بِت.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3301,12 +3301,12 @@
   "prompt": "Which English word means: وحدة بيانات تمن بِت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: وحدة بيانات تمن بِت",
   "options": [
-   "myoclonus",
-   "sedition",
+   "minicab",
    "byte",
-   "mitre"
+   "phantasm",
+   "sulfonylurea"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"byte\" وتعني: وحدة بيانات تمن بِت.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3319,12 +3319,12 @@
   "prompt": "What does \"cancerous\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cancerous\":",
   "options": [
+   "هلامي زي الجيلي",
    "سرطاني",
-   "متعلق ببصيلة أو حويصلة",
-   "ممكن يتفسّر",
-   "يُعدّ خيانة عظمى"
+   "بخط مائل",
+   "خاص بالأفعال المساعدة الجهية"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"cancerous\" هو: سرطاني. مثال: العينة بيّنت إن النمو كان سرطاني.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3338,9 +3338,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: سرطاني",
   "options": [
    "cancerous",
-   "starchy",
-   "nonviable",
-   "unlit"
+   "profuse",
+   "consequent",
+   "balletic"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"cancerous\" وتعني: سرطاني.",
@@ -3355,12 +3355,12 @@
   "prompt": "What does \"carat\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"carat\":",
   "options": [
+   "تقارب بعد خلاف",
+   "وقفة سهر وتضامن",
    "قيراط وزن أحجار كريمة",
-   "رأس سهم",
-   "شجر الكافور",
-   "تسريح من الشغل"
+   "كانستا (لعبة ورق)"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"carat\" هو: قيراط وزن أحجار كريمة. مثال: الألماسة وزنها أكتر من قيراط بشوية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3373,12 +3373,12 @@
   "prompt": "Which English word means: قيراط وزن أحجار كريمة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: قيراط وزن أحجار كريمة",
   "options": [
-   "mitogen",
-   "dearie",
-   "foresight",
-   "carat"
+   "carat",
+   "kvetch",
+   "extensor",
+   "snoot"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"carat\" وتعني: قيراط وزن أحجار كريمة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3391,12 +3391,12 @@
   "prompt": "What does \"carcinoma\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"carcinoma\":",
   "options": [
-   "قنابة (ورقة زهرية)",
-   "ورطة مشكلة معقدة",
-   "سرطان خلايا طلائية",
-   "قصر النظر"
+   "سكينة بدائية كسلاح بالعامية",
+   "صندوق / خزينة",
+   "ارتفاع البوتاسيوم في الدم",
+   "سرطان خلايا طلائية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"carcinoma\" هو: سرطان خلايا طلائية. مثال: العينة أكدت وجود سرطان من الخلايا الطلائية في الجلد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3409,12 +3409,12 @@
   "prompt": "Which English word means: سرطان خلايا طلائية?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: سرطان خلايا طلائية",
   "options": [
-   "armamentarium",
-   "marl",
-   "bedstead",
-   "carcinoma"
+   "wormwood",
+   "solenoid",
+   "carcinoma",
+   "incapability"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"carcinoma\" وتعني: سرطان خلايا طلائية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3428,9 +3428,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"caveat\":",
   "options": [
    "تحفظ أو تنبيه مهم",
-   "قسوة وتبلّد المشاعر",
-   "عاملة نظافة",
-   "فن وثقافة الأكل"
+   "تدليك نقاط القدم",
+   "التراخي والتهاون",
+   "سكين تقيل فلبيني"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"caveat\" هو: تحفظ أو تنبيه مهم. مثال: موافق بس عندي تحفظ مهم واحد.",
@@ -3445,12 +3445,12 @@
   "prompt": "Which English word means: تحفظ أو تنبيه مهم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تحفظ أو تنبيه مهم",
   "options": [
+   "aluminate",
+   "secession",
    "caveat",
-   "gazebo",
-   "comprehensiveness",
-   "gander"
+   "legionella"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"caveat\" وتعني: تحفظ أو تنبيه مهم.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3463,10 +3463,10 @@
   "prompt": "What does \"caviar\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"caviar\":",
   "options": [
-   "ميكروثانية",
+   "طبعة بشروح متعددة",
    "بيض سمك مملح فاخر",
-   "طائرة اعتراض",
-   "إثارة أو تنبيه"
+   "حزام وسط الهدوم",
+   "دهن الكلاوي (دهن حيواني صلب)"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"caviar\" هو: بيض سمك مملح فاخر. مثال: المطعم قدّم كافيار على بسكوت مالح صغير.",
@@ -3481,10 +3481,10 @@
   "prompt": "Which English word means: بيض سمك مملح فاخر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بيض سمك مملح فاخر",
   "options": [
-   "endpoint",
+   "recessional",
    "caviar",
-   "brawler",
-   "disservice"
+   "sycamore",
+   "distributary"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"caviar\" وتعني: بيض سمك مملح فاخر.",
@@ -3499,12 +3499,12 @@
   "prompt": "What does \"chairperson\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"chairperson\":",
   "options": [
-   "رئيس اجتماع أو مجلس",
-   "تساقط شعر مرضي",
-   "تحويل لمصدر دخل",
-   "صاحب من نفس المنطقة"
+   "فرط الحركة",
+   "تفل القصب",
+   "قاذف لهب",
+   "رئيس اجتماع أو مجلس"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"chairperson\" هو: رئيس اجتماع أو مجلس. مثال: رئيس الاجتماع بدأ في المعاد بالظبط.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3517,12 +3517,12 @@
   "prompt": "Which English word means: رئيس اجتماع أو مجلس?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رئيس اجتماع أو مجلس",
   "options": [
-   "asterisk",
-   "ombudsman",
-   "osteoporosis",
-   "chairperson"
+   "deregulation",
+   "chairperson",
+   "experimenter",
+   "straightness"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"chairperson\" وتعني: رئيس اجتماع أو مجلس.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3535,10 +3535,10 @@
   "prompt": "What does \"chore\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"chore\":",
   "options": [
-   "مرن / ليّن الجسم",
+   "خلية نجمية (مخ)",
    "شغلانة روتينية لازمة",
-   "شراسة",
-   "كومة حطب"
+   "متهوّر وعصبي",
+   "شجرة القرن الأحمر"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"chore\" هو: شغلانة روتينية لازمة. مثال: غسيل المواعين أكتر شغلانة بيت مش بحبها.",
@@ -3553,12 +3553,12 @@
   "prompt": "Which English word means: شغلانة روتينية لازمة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شغلانة روتينية لازمة",
   "options": [
-   "sackcloth",
-   "pheasant",
-   "colic",
-   "chore"
+   "indignation",
+   "cephalosporin",
+   "chore",
+   "moralist"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"chore\" وتعني: شغلانة روتينية لازمة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3571,12 +3571,12 @@
   "prompt": "What does \"circumvent\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"circumvent\":",
   "options": [
+   "يفصل / يفك",
+   "يدفع / يحفّز",
    "يلتف على قيد",
-   "يسخر من",
-   "يعزل حراريًا أو كهربائيًا",
-   "يقيّم من جديد"
+   "يدبّر أموره أو يصد"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"circumvent\" هو: يلتف على قيد. مثال: حاولوا يلفوا حوالين القواعد الجديدة.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -3589,12 +3589,12 @@
   "prompt": "Which English word means: يلتف على قيد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يلتف على قيد",
   "options": [
-   "shoo",
-   "circumvent",
-   "resubmit",
-   "overheat"
+   "reek",
+   "pussyfoot",
+   "dissuade",
+   "circumvent"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"circumvent\" وتعني: يلتف على قيد.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
