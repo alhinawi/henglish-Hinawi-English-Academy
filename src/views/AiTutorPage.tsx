@@ -21,6 +21,7 @@ import {
   AiConversationSession 
 } from '../services/aiConversationManager';
 import { playSound, speakEnglishVoice, stopSpeech, getVoiceSettings } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import { AiMarkdownRenderer } from '../components/AiMarkdownRenderer';
 import {
   Sparkles,
@@ -76,6 +77,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfile, progress, onOpenVoiceSettings }) => {
+  const { t } = useLanguage();
   // --- State ---
   const [activeMode, setActiveMode] = useState<AiTutorMode>('grammar-teacher');
   const [sessions, setSessions] = useState<AiConversationSession[]>([]);
@@ -118,7 +120,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       const newSession = createNewSession(
         userProfile.id,
         activeMode,
-        `${activeAssistant.nameAr} - جلسة البداية`,
+        `${activeAssistant.nameAr} - ${t('at.startSession')}`,
         [welcomeMsg]
       );
 
@@ -178,7 +180,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
   const toggleVoiceRecording = () => {
     if (!recognitionRef.current) {
-      alert('ميزة التعرف الصوتي تتطلب متصفحاً حديثاً يدعم Web Speech API مثل Chrome أو Edge.');
+      alert(t('at.noSpeechApi'));
       return;
     }
 
@@ -204,7 +206,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
     const welcomeMsg: AiChatMessage = {
       id: `welcome-${activeMode}-${Date.now()}`,
       sender: 'assistant',
-      content: `أهلاً بك في جلسة جديدة مع **${activeAssistant.nameAr}**! كيف يمكنني مساعدتك الآن؟`,
+      content: `${t('at.welcomePre')} **${activeAssistant.nameAr}**! ${t('at.welcomeAsk')}`,
       timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
     };
@@ -212,7 +214,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
     const newSession = createNewSession(
       userProfile.id,
       activeMode,
-      `جلسة جديدة (${new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' })})`,
+      `${t('at.newSession')} (${new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' })})`,
       [welcomeMsg]
     );
 
@@ -368,7 +370,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       const errMsg: AiChatMessage = {
         id: `ai-err-${Date.now()}`,
         sender: 'assistant',
-        content: 'عذراً، حدث خطأ مؤقت في الاتصال بالخدمة. يرجى المحاولة مرة أخرى.',
+        content: t('at.errorTemp'),
         timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
@@ -408,13 +410,13 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 shadow-sm">
               <Bot className="w-4 h-4" />
-              <span>HINAWI LEARNING ASSISTANT • المعلم التفاعلي</span>
+              <span>HINAWI LEARNING ASSISTANT • {t('at.badge')}</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-              أكاديمية المعلم التفاعلي
+              {t('at.heroTitle')}
             </h1>
             <p className="text-xs sm:text-sm text-[#dedbf4] max-w-2xl leading-relaxed">
-              7 معلمين متخصصين في القواعد، المحادثة، المفردات، تدقيق الكتابة، تصحيح النطق، واختبارات الآيلتس ومقابلات العمل.
+              {Object.keys(ASSISTANTS_REGISTRY).length} {t('at.heroBody')}
             </p>
           </div>
 
@@ -429,11 +431,11 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               <div className="text-xs font-black text-white">{userProfile.nameAr}</div>
               <div className="flex items-center gap-2 text-[11px] text-[#b9b6d5] mt-0.5">
                 <span className="px-2 py-0.5 rounded-md bg-[#41e7ff]/20 text-[#41e7ff] font-bold">
-                  مستوى: {userProfile.currentLevel}
+                  {t('at.level')}: {userProfile.currentLevel}
                 </span>
                 <span className="flex items-center gap-1 text-[#ffd166] font-bold">
                   <Flame className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-                  {userProfile.streakDays} يوم
+                  {userProfile.streakDays} {t('at.days')}
                 </span>
               </div>
             </div>
@@ -446,10 +448,10 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         <div className="flex items-center justify-between text-xs font-bold text-[#b9b6d5] px-1">
           <span className="flex items-center gap-1.5 text-white">
             <Sparkles className="w-4 h-4 text-[#ffd166]" />
-            اختر المعلم المتخصص لجلسة التعلم:
+            {t('at.chooseTutor')}
           </span>
           <span className="text-[#ffd166] text-[11px] hidden sm:inline">
-            7 أوضاع تخصصية جاهزة للخدمة
+            {Object.keys(ASSISTANTS_REGISTRY).length} {t('at.modes')}
           </span>
         </div>
 
@@ -527,29 +529,29 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                 onOpenVoiceSettings();
               }}
               className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:brightness-125 border border-[#ffd166]/40 text-[11px] font-bold text-[#ffd166] transition-all cursor-pointer flex items-center gap-1.5 shadow-sm"
-              title="اختيار الصوت (حريمي / رجالي) من مكتبة ElevenLabs"
+              title={t('at.voiceTitle')}
             >
               <Volume2 className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>تغيير الصوت({getVoiceSettings().selectedVoiceName || 'سارة'})</span>
+              <span>{t('at.changeVoice')}({getVoiceSettings().selectedVoiceName || t('at.defaultVoice')})</span>
             </button>
           )}
 
           <button
             onClick={() => setIsHistoryDrawerOpen(!isHistoryDrawerOpen)}
             className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/10 text-[11px] font-bold text-white transition-all cursor-pointer flex items-center gap-1.5"
-            title="سجل الجلسات السابقة"
+            title={t('at.historyTitle')}
           >
             <History className="w-3.5 h-3.5 text-[#41e7ff]" />
-            <span>الجلسات ({sessions.length})</span>
+            <span>{t('at.sessions')} ({sessions.length})</span>
           </button>
 
           <button
             onClick={handleStartNewSession}
             className="px-3 py-1.5 rounded-xl bg-[#ffd166]/20 hover:bg-[#ffd166]/30 border border-[#ffd166]/40 text-[11px] font-bold text-[#ffd166] transition-all cursor-pointer flex items-center gap-1.5 shadow-sm"
-            title="بدء جلسة جديدة فارغة"
+            title={t('at.newSessionTitle')}
           >
             <Plus className="w-3.5 h-3.5" />
-            <span>جلسة جديدة</span>
+            <span>{t('at.newSession')}</span>
           </button>
         </div>
       </section>
@@ -567,10 +569,10 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               <div className="flex items-center justify-between text-xs font-bold text-white pb-2 border-b border-white/10">
                 <span className="flex items-center gap-1.5">
                   <History className="w-4 h-4 text-[#41e7ff]" />
-                  سجل المحادثات مع: {activeAssistant.nameAr}
+                  {t('at.historyWith')}: {activeAssistant.nameAr}
                 </span>
                 <span className="text-[10px] text-[#b9b6d5]">
-                  يتم حفظ كل محادثة تلقائياً في حسابك
+                  {t('at.autoSave')}
                 </span>
               </div>
 
@@ -624,7 +626,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                           <div className="flex-1 truncate">
                             <div className="text-xs font-bold truncate">{s.title}</div>
                             <div className="text-[10px] text-[#b9b6d5] mt-0.5">
-                              {s.messages.length} رسالة • {new Date(s.updatedAt).toLocaleDateString('ar-EG-u-nu-latn')}
+                              {s.messages.length} {t('at.messages')} • {new Date(s.updatedAt).toLocaleDateString('ar-EG-u-nu-latn')}
                             </div>
                           </div>
 
@@ -636,14 +638,14 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                                 setEditSessionTitle(s.title);
                               }}
                               className="p-1 hover:text-[#ffd166] text-[#b9b6d5] transition-colors"
-                              title="تعديل العنوان"
+                              title={t('at.renameTitle')}
                             >
                               <Edit2 className="w-3 h-3" />
                             </button>
                             <button
                               onClick={e => handleDeleteSession(s.id, e)}
                               className="p-1 hover:text-red-400 text-[#b9b6d5] transition-colors"
-                              title="حذف المحادثة"
+                              title={t('at.deleteTitle')}
                             >
                               <Trash2 className="w-3 h-3" />
                             </button>
@@ -716,7 +718,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       <button
                         onClick={() => handleCopyMessage(msg.id, msg.content)}
                         className="p-1 rounded hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
-                        title="نسخ الرسالة"
+                        title={t('at.copyTitle')}
                       >
                         {copiedMsgId === msg.id ? (
                           <Check className="w-3.5 h-3.5 text-emerald-400" />
@@ -733,7 +735,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                             speakEnglishVoice(msg.content);
                           }}
                           className="p-1 rounded hover:bg-white/10 text-[#ffd166] cursor-pointer transition-colors"
-                          title="استمع للنطق الصوتي الكامل"
+                          title={t('at.listenFullTitle')}
                         >
                           <Volume2 className="w-3.5 h-3.5" />
                         </button>
@@ -754,7 +756,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                     <div className="p-3.5 rounded-xl bg-red-500/10 border border-red-500/30 space-y-2 mt-2">
                       <span className="text-xs font-black text-red-300 flex items-center gap-1.5">
                         <AlertTriangle className="w-4 h-4 text-red-400" />
-                        التصويبات النحوية والصياغية المكتشفة:
+                        {t('at.corrections')}
                       </span>
                       {msg.grammarCorrections.map((corr, cIdx) => (
                         <div key={cIdx} className="text-xs space-y-0.5 bg-black/30 p-2.5 rounded-lg border border-red-500/20">
@@ -779,7 +781,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               </div>
               <div className="p-4 rounded-2xl bg-[#151430] border border-white/15 flex items-center gap-2.5 shadow-lg">
                 <span className="text-xs text-[#ffd166] font-bold">
-                  {activeAssistant.nameAr} يقوم بإعداد الشرح المخصص...
+                  {activeAssistant.nameAr} {t('at.preparing')}
                 </span>
                 <div className="flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#ffd166] animate-bounce" />
@@ -795,7 +797,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         <div className="p-2 sm:p-3 bg-black/50 border-t border-white/10 flex items-center gap-2 overflow-x-auto custom-scrollbar">
           <span className="text-[10px] font-bold text-[#b9b6d5] shrink-0 flex items-center gap-1">
             <Sparkles className="w-3 h-3 text-[#ffd166]" />
-            اقتراحات ذكية:
+            {t('at.suggestions')}
           </span>
           {activeAssistant.suggestedQuestions.map((sug, idx) => (
             <button
@@ -820,8 +822,8 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                 ? 'bg-red-500 text-white border-red-400 animate-pulse ring-4 ring-red-500/30'
                 : 'bg-white/5 border-white/15 text-[#b9b6d5] hover:text-[#ffd166] hover:bg-white/10'
             }`}
-            title={isRecordingVoice ? 'إيقاف التسجيل الصوتي' : 'تحدث بالإنجليزية عبر المايكروفون'}
-            aria-label="تسجيل صوتي"
+            title={isRecordingVoice ? t('at.stopRecording') : t('at.startRecording')}
+            aria-label={t('at.recordAria')}
           >
             {isRecordingVoice ? (
               <MicOff className="w-5 h-5 text-white animate-bounce" />
@@ -844,8 +846,8 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             }}
             placeholder={
               isRecordingVoice
-                ? 'جاري الاستماع لصوتك بالإنجليزية...'
-                : `اسأل ${activeAssistant.nameAr} أو اكتب محادثتك هنا...`
+                ? t('at.listening')
+                : `${t('at.askPre')} ${activeAssistant.nameAr} ${t('at.askPost')}`
             }
             className="flex-1 px-4 py-3 rounded-2xl bg-[#151430] border border-white/15 text-white text-xs sm:text-sm focus:outline-none focus:border-[#ffd166] transition-colors"
           />
@@ -855,7 +857,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             <button
               onClick={handleRegenerateLast}
               className="p-3 rounded-2xl bg-white/5 border border-white/15 text-[#b9b6d5] hover:text-white hover:bg-white/10 transition-all cursor-pointer shrink-0 hidden sm:flex"
-              title="إعادة توليد الإجابة السابقة"
+              title={t('at.regenerate')}
             >
               <RefreshCw className="w-5 h-5" />
             </button>
@@ -866,7 +868,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             onClick={() => handleSendMessage()}
             disabled={!inputMessage.trim() || isTyping}
             className="p-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black hover:brightness-110 disabled:opacity-40 transition-all cursor-pointer shrink-0 shadow-lg"
-            aria-label="إرسال الرسالة"
+            aria-label={t('at.sendAria')}
           >
             <Send className="w-5 h-5 rotate-180" />
           </button>
