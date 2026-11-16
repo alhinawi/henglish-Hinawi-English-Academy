@@ -35,6 +35,7 @@ import {
   Clock,
   Award,
 } from 'lucide-react';
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface SentenceCardProps {
   sentence: SentenceItem;
@@ -49,6 +50,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   onAddToCollection,
   compact = false,
 }) => {
+  const { t } = useLanguage();
   const [showFusha, setShowFusha] = useState(false);
   const [showDetails, setShowDetails] = useState(!compact);
   const [copied, setCopied] = useState(false);
@@ -134,7 +136,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Favorite Button */}
           <button
             onClick={handleToggleFavorite}
-            title="حفظ في المفضلة"
+            title={t('sc.favorite')}
             className={`p-2 rounded-xl transition-all cursor-pointer ${
               isFavorite
                 ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30'
@@ -147,7 +149,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Mark Difficult */}
           <button
             onClick={handleToggleDifficult}
-            title="تمييز كجملة صعبة"
+            title={t('sc.markHard')}
             className={`p-2 rounded-xl transition-all cursor-pointer ${
               isDifficult
                 ? 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
@@ -161,7 +163,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {onAddToCollection && (
             <button
               onClick={() => onAddToCollection(sentence)}
-              title="إضافة لمجموعة خاصة"
+              title={t('sc.addToCollection')}
               className="p-2 rounded-xl text-white/40 hover:text-white hover:bg-white/5 transition-all cursor-pointer"
             >
               <Bookmark className="w-4 h-4" />
@@ -171,7 +173,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Copy Button */}
           <button
             onClick={handleCopy}
-            title="نسخ الجملة"
+            title={t('sc.copy')}
             className="p-2 rounded-xl text-white/40 hover:text-white hover:bg-white/5 transition-all cursor-pointer"
           >
             {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
@@ -191,7 +193,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
             <button
               onClick={() => handlePlayAudio(false)}
               disabled={isPlayingAudio}
-              title="استماع للنطق الطبيعي"
+              title={t('sc.listenNatural')}
               className="w-10 h-10 rounded-xl bg-purple-500 hover:bg-purple-600 text-white flex items-center justify-center transition-all shadow-lg shadow-purple-500/25 cursor-pointer disabled:opacity-50"
             >
               <Volume2 className="w-5 h-5 fill-current" />
@@ -200,7 +202,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
             <button
               onClick={() => handlePlayAudio(true)}
               disabled={isPlayingAudio}
-              title="استماع بطيء (0.75x)"
+              title={t('sc.listenSlow')}
               className="w-8 h-8 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white flex items-center justify-center transition-all border border-white/10 cursor-pointer disabled:opacity-50 text-xs font-bold"
             >
               <Volume1 className="w-4 h-4" />
@@ -220,13 +222,13 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           <div className="flex items-center justify-between text-xs text-white/50">
             <span className="font-bold flex items-center gap-1.5 text-purple-300">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>المعنى بالعامية المصرية الدارجة:</span>
+              <span>{t('sc.meaningEgyptian')}</span>
             </span>
             <button
               onClick={() => setShowFusha(!showFusha)}
               className="text-xs text-amber-300/80 hover:text-amber-200 underline cursor-pointer"
             >
-              {showFusha ? 'إخفاء الفصحى' : 'عرض الفصحى'}
+              {showFusha ? t('sc.hideFusha') : t('sc.showFusha')}
             </button>
           </div>
           <p className="text-base sm:text-lg font-bold text-white text-right leading-relaxed">
@@ -236,7 +238,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Standard Arabic (Fusha) Toggle */}
           {showFusha && (
             <div className="pt-2 border-t border-white/5 text-right">
-              <span className="text-[11px] text-amber-300 block mb-0.5 font-bold">العربية الفصحى:</span>
+              <span className="text-[11px] text-amber-300 block mb-0.5 font-bold">{t('sc.fusha')}</span>
               <p className="text-sm font-semibold text-white/80">{sentence.arabicFusha}</p>
             </div>
           )}
@@ -250,7 +252,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           <div className="flex items-start gap-2 bg-purple-500/10 p-3 rounded-xl border border-purple-500/20 text-right">
             <BookOpen className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
             <div className="space-y-0.5">
-              <span className="font-black text-purple-300 block">القاعدة اللغوية:</span>
+              <span className="font-black text-purple-300 block">{t('sc.grammarRule')}</span>
               <p className="text-white/80 font-medium">{sentence.grammar}</p>
             </div>
           </div>
@@ -258,7 +260,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Important Vocabulary Pills */}
           {sentence.vocabulary.length > 0 && (
             <div className="space-y-1.5 text-right">
-              <span className="text-[11px] font-bold text-white/50 block">أهم المفردات اللغوية:</span>
+              <span className="text-[11px] font-bold text-white/50 block">{t('sc.keyVocab')}</span>
               <div className="flex items-center gap-1.5 flex-wrap">
                 {sentence.vocabulary.map((vocab, idx) => (
                   <span
@@ -295,7 +297,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {/* Related Alternative Sentences */}
           {sentence.relatedSentences && sentence.relatedSentences.length > 0 && (
             <div className="space-y-1 text-right">
-              <span className="text-[11px] font-bold text-white/50 block">طرق بديلة للتعبير عن نفس المعنى:</span>
+              <span className="text-[11px] font-bold text-white/50 block">{t('sc.altWays')}</span>
               <ul className="space-y-1 text-left">
                 {sentence.relatedSentences.map((rel, idx) => (
                   <li key={idx} className="text-xs text-white/70 italic flex items-center gap-1.5">
@@ -319,12 +321,12 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {showDetails ? (
             <>
               <ChevronUp className="w-4 h-4" />
-              <span>إخفاء التفاصيل</span>
+              <span>{t('sc.hideDetails')}</span>
             </>
           ) : (
             <>
               <ChevronDown className="w-4 h-4" />
-              <span>إظهار الشرح والتفاصيل</span>
+              <span>{t('sc.showDetails')}</span>
             </>
           )}
         </button>
@@ -340,7 +342,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
               className="px-3 py-1.5 rounded-xl text-xs font-black bg-purple-500/20 hover:bg-purple-500/30 text-purple-200 border border-purple-500/30 transition-all cursor-pointer flex items-center gap-1.5"
             >
               <Bot className="w-3.5 h-3.5" />
-              <span>تدريب مع AI</span>
+              <span>{t('sc.practiceAi')}</span>
             </button>
           )}
         </div>
@@ -348,31 +350,31 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
 
       {/* Spaced Repetition (SM-2) Quick Feedback Buttons */}
       <div className="pt-2 border-t border-white/5 flex items-center justify-between text-xs gap-1 flex-wrap">
-        <span className="text-[11px] text-white/40 font-bold">مراجعة التكرار المتباعد (SM-2):</span>
+        <span className="text-[11px] text-white/40 font-bold">{t('sc.srsLabel')}</span>
         <div className="flex items-center gap-1.5">
           <button
             onClick={() => handleRateSRS(0)}
             className="px-2.5 py-1 rounded-lg bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            نسيتها (0)
+            {t('sc.forgot')} (0)
           </button>
           <button
             onClick={() => handleRateSRS(2)}
             className="px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            صعبة (2)
+            {t('sc.hard')} (2)
           </button>
           <button
             onClick={() => handleRateSRS(4)}
             className="px-2.5 py-1 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 border border-blue-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            جيدة (4)
+            {t('sc.good')} (4)
           </button>
           <button
             onClick={() => handleRateSRS(5)}
             className="px-2.5 py-1 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            سهلة جداً (5)
+            {t('sc.easy')} (5)
           </button>
         </div>
       </div>
