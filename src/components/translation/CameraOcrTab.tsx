@@ -18,12 +18,14 @@ import {
   ScanText,
   FileCheck2,
 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface CameraOcrTabProps {
   targetLang: LanguageCode;
 }
 
 export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
+  const { t } = useLanguage();
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [extractedText, setExtractedText] = useState('');
@@ -38,12 +40,12 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
     if (!file) return;
 
     if (!file.type.startsWith('image/')) {
-      setErrorMsg('يرجى اختيار ملف صورة صالح (PNG, JPEG, WEBP).');
+      setErrorMsg(t('ocr.errInvalidFile'));
       return;
     }
 
     if (file.size > 12 * 1024 * 1024) {
-      setErrorMsg('حجم الصورة كبير جداً (الحد الأقصى 12 ميجابايت).');
+      setErrorMsg(t('ocr.errTooLarge'));
       return;
     }
 
@@ -76,7 +78,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
       playSound('fanfare');
     } catch (err) {
       console.error('OCR processing error:', err);
-      setErrorMsg('تعذر استخراج النص من الصورة. يرجى التأكد من وضوح الإضاءة ودقة الحروف.');
+      setErrorMsg(t('ocr.errExtract'));
       playSound('wrong');
     } finally {
       setIsProcessing(false);
@@ -104,16 +106,16 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
         <div>
           <h3 className="text-lg font-bold text-white flex items-center gap-2">
             <Camera className="w-5 h-5 text-[#41e7ff]" />
-            <span>الترجمة البصرية والتعرف الضوئي (OCR Vision Translation)</span>
+            <span>{t('ocr.title')}</span>
           </h3>
           <p className="text-xs text-[#b9b6d5] mt-1">
-            التقط أو ارفع صورة لكتاب، لوحة، مستند، أو لافتة. يُستخرج النص بدقة مع ترتيب القراءة ويترجم فوراً.
+            {t('ocr.blurb')}
           </p>
         </div>
 
         <label className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#7c3aed] text-black font-bold text-xs shadow-lg shadow-[#41e7ff]/20 hover:brightness-110 active:scale-95 cursor-pointer transition-all shrink-0">
           <Camera className="w-4 h-4" />
-          <span>التقط أو ارفع صورة</span>
+          <span>{t('ocr.capture')}</span>
           <input
             type="file"
             accept="image/*"
@@ -148,7 +150,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   <div className="w-10 h-10 border-3 border-[#41e7ff] border-t-transparent rounded-full animate-spin mb-3" />
                   <span className="text-sm font-bold text-white flex items-center gap-2">
                     <ScanText className="w-4 h-4 text-[#ffb84d]" />
-                    <span>جارٍ المسح البصري واستخراج الحروف...</span>
+                    <span>{t('ocr.scanning')}</span>
                   </span>
                 </div>
               )}
@@ -156,9 +158,9 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
           ) : (
             <div className="text-center py-12 text-[#b9b6d5]/50">
               <ImageIcon className="w-12 h-12 mx-auto mb-2 opacity-30 text-[#41e7ff]" />
-              <p className="text-sm font-semibold text-white">لم يتم اختيار صورة بعد</p>
+              <p className="text-sm font-semibold text-white">{t('ocr.noImage')}</p>
               <p className="text-xs text-[#b9b6d5]/40 mt-1">
-                اختر صورة تحتوي على نصوص باللغة الإنجليزية أو العربية
+                {t('ocr.noImageHint')}
               </p>
             </div>
           )}
@@ -171,11 +173,11 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
             <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
               <span className="font-bold text-white flex items-center gap-1.5">
                 <FileCheck2 className="w-4 h-4 text-[#41e7ff]" />
-                <span>النص المستخرج من الصورة (Extracted Text)</span>
+                <span>{t('ocr.extractedTitle')}</span>
               </span>
               {confidence && (
                 <span className="text-[10px] text-[#10b981] bg-[#10b981]/10 px-2 py-0.5 rounded font-mono">
-                  دقة: {Math.round(confidence * 100)}%
+                  {t('ocr.confidence')} {Math.round(confidence * 100)}%
                 </span>
               )}
             </div>
@@ -184,7 +186,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
               dir={detectedLanguage === 'ar' ? 'rtl' : 'ltr'}
               className="p-3.5 rounded-xl bg-black/40 border border-white/5 min-h-[90px] text-sm text-slate-200 whitespace-pre-wrap select-text leading-relaxed"
             >
-              {extractedText || (isProcessing ? 'جارٍ المسح...' : 'سيظهر النص المستخرج هنا...')}
+              {extractedText || (isProcessing ? t('ocr.scanningShort') : t('ocr.extractedPlaceholder'))}
             </div>
 
             {extractedText && (
@@ -193,7 +195,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   type="button"
                   onClick={() => handleSpeak(extractedText, detectedLanguage)}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer"
-                  title="استمع للنص المستخرج"
+                  title={t('ocr.listenExtracted')}
                 >
                   <Volume2 className="w-3.5 h-3.5" />
                 </button>
@@ -201,7 +203,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   type="button"
                   onClick={() => handleCopy(extractedText)}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
-                  title="نسخ النص"
+                  title={t('ocr.copyText')}
                 >
                   <Copy className="w-3.5 h-3.5" />
                 </button>
@@ -214,7 +216,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
             <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
               <span className="font-bold text-white flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-[#ffb84d]" />
-                <span>الترجمة السياقية الفورية (Translated Text)</span>
+                <span>{t('ocr.translatedTitle')}</span>
               </span>
             </div>
 
@@ -222,7 +224,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
               dir={targetLang === 'ar' ? 'rtl' : 'ltr'}
               className="p-3.5 rounded-xl bg-black/40 border border-white/5 min-h-[90px] text-sm font-bold text-white whitespace-pre-wrap select-text leading-relaxed"
             >
-              {translatedText || (isProcessing ? 'جارٍ الترجمة...' : 'ستظهر الترجمة الكاملة هنا...')}
+              {translatedText || (isProcessing ? t('ocr.translating') : t('ocr.translatedPlaceholder'))}
             </div>
 
             {translatedText && (
@@ -231,7 +233,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   type="button"
                   onClick={() => handleSpeak(translatedText, targetLang)}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer"
-                  title="استمع للترجمة"
+                  title={t('ocr.listenTranslation')}
                 >
                   <Volume2 className="w-3.5 h-3.5" />
                 </button>
@@ -239,7 +241,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   type="button"
                   onClick={() => handleCopy(translatedText)}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
-                  title="نسخ الترجمة"
+                  title={t('ocr.copyTranslation')}
                 >
                   {copied ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
                 </button>
