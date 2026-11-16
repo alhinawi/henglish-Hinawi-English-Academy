@@ -5,6 +5,7 @@ import {
   signUpUser,
 } from '../services/authService';
 import { GoogleSignInBlock } from './GoogleSignInBlock';
+import { useLanguage } from '../i18n/LanguageContext';
 import { playSound, fireCelebration } from '../utils/audio';
 import {
   X,
@@ -30,12 +31,14 @@ interface AuthModalProps {
   initialTab?: 'login' | 'register' | 'migrate';
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({
-  isOpen,
-  onClose,
-  onSessionChange,
-  initialTab = 'login',
-}) => {
+export const AuthModal: React.FC<AuthModalProps> = (props) => {
+  const { t } = useLanguage();
+  const {
+    isOpen,
+    onClose,
+    onSessionChange,
+    initialTab = 'login',
+  } = props;
   const [activeTab, setActiveTab] = useState<'login' | 'register' | 'forgot'>(initialTab === 'register' ? 'register' : 'login');
 
   // Honor the requested tab every time the modal opens (it stays mounted between opens)
@@ -57,7 +60,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim() || !password.trim()) {
-      setFeedbackMsg({ type: 'error', text: 'يرجى إدخال البريد الإلكتروني وكلمة المرور' });
+      setFeedbackMsg({ type: 'error', text: t('am.errCreds') });
       return;
     }
 
@@ -69,10 +72,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         onSessionChange(res.session);
         onClose();
       } else {
-        setFeedbackMsg({ type: 'error', text: res.error || 'فشل تسجيل الدخول. يرجى التحقق من البيانات.' });
+        setFeedbackMsg({ type: 'error', text: res.error || t('am.errLogin') });
       }
     } catch {
-      setFeedbackMsg({ type: 'error', text: 'فشل تسجيل الدخول. يرجى التحقق من البيانات.' });
+      setFeedbackMsg({ type: 'error', text: t('am.errLogin') });
     } finally {
       setIsSubmitting(false);
     }
@@ -81,7 +84,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim() || !fullName.trim() || password.length < 8) {
-      setFeedbackMsg({ type: 'error', text: 'يرجى إدخال اسم صحيح وكلمة مرور من 8 خانات على الأقل.' });
+      setFeedbackMsg({ type: 'error', text: t('am.errSignup') });
       return;
     }
 
@@ -94,10 +97,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
         onSessionChange(res.session);
         onClose();
       } else {
-        setFeedbackMsg({ type: 'error', text: res.error || 'حدث خطأ أثناء إنشاء الحساب.' });
+        setFeedbackMsg({ type: 'error', text: res.error || t('am.errCreate') });
       }
     } catch {
-      setFeedbackMsg({ type: 'error', text: 'حدث خطأ أثناء إنشاء الحساب.' });
+      setFeedbackMsg({ type: 'error', text: t('am.errCreate') });
     } finally {
       setIsSubmitting(false);
     }
@@ -106,10 +109,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
   const handleForgotPassword = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim()) {
-      setFeedbackMsg({ type: 'error', text: 'أدخل بريدك الإلكتروني لإرسال رابط الاستعادة.' });
+      setFeedbackMsg({ type: 'error', text: t('am.errResetEmail') });
       return;
     }
-    setFeedbackMsg({ type: 'success', text: 'تم إرسال تعليمات إعادة ضبط كلمة المرور إلى بريدك بنجاح!' });
+    setFeedbackMsg({ type: 'success', text: t('am.okReset') });
   };
 
 
@@ -137,7 +140,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             <button
               onClick={onClose}
               className="absolute top-0 left-0 p-2 rounded-xl text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
-              aria-label="إغلاق"
+              aria-label={t('am.closeAria')}
             >
               <X className="w-5 h-5" />
             </button>
@@ -148,8 +151,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-black text-white">بوابة Henglish Academy</h3>
-                <p className="text-xs text-[#b9b6d5] mt-1">سجّل دخولك أو أنشئ حسابك المجاني</p>
+                <h3 className="text-lg font-black text-white">{t('am.gateTitle')}</h3>
+                <p className="text-xs text-[#b9b6d5] mt-1">{t('am.gateSub')}</p>
               </div>
             </div>
           </div>
@@ -165,7 +168,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 activeTab === 'login' ? 'bg-[#ffd166] text-[#0c0b20] font-black shadow-md' : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
-              دخول
+              {t('am.tabLogin')}
             </button>
             <button
               onClick={() => {
@@ -176,7 +179,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 activeTab === 'register' ? 'bg-[#ffd166] text-[#0c0b20] font-black shadow-md' : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
-              تسجيل
+              {t('am.tabSignup')}
             </button>
           </div>
 
@@ -200,7 +203,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           {activeTab === 'login' && (
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">البريد الإلكتروني:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('am.emailLabel')}</label>
                 <div className="relative">
                   <input
                     type="email"
@@ -218,13 +221,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
               <div className="space-y-1.5">
                 <div className="flex items-center justify-between text-xs">
-                  <label className="font-bold text-[#dedbf4]">كلمة المرور:</label>
+                  <label className="font-bold text-[#dedbf4]">{t('am.passwordLabel')}</label>
                   <button
                     type="button"
                     onClick={() => setActiveTab('forgot')}
                     className="text-[#41e7ff] hover:underline cursor-pointer"
                   >
-                    نسيت كلمة المرور؟
+                    {t('am.forgot')}
                   </button>
                 </div>
                 <div className="relative">
@@ -247,7 +250,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 disabled={isSubmitting}
                 className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
               >
-                {isSubmitting ? 'جاري التحقق...' : 'تسجيل الدخول الآن'}
+                {isSubmitting ? t('am.checking') : t('am.loginNow')}
               </button>
             </form>
           )}
@@ -256,14 +259,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           {activeTab === 'register' && (
             <form onSubmit={handleRegister} className="space-y-4">
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">الاسم الكامل:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('am.nameLabel')}</label>
                 <div className="relative">
                   <input
                     type="text"
                     dir="auto"
                     value={fullName}
                     onChange={e => setFullName(e.target.value)}
-                    placeholder="مثال: أحمد عبد الله"
+                    placeholder={t('am.namePlaceholder')}
                     required
                     className="w-full pl-4 pr-10 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white text-xs focus:outline-none focus:border-[#ffd166]"
                   />
@@ -272,7 +275,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">البريد الإلكتروني:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('am.emailLabel')}</label>
                 <div className="relative">
                   <input
                     type="email"
@@ -289,7 +292,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               </div>
 
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">كلمة المرور (8 خانات على الأقل):</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('am.passwordHintLabel')}</label>
                 <div className="relative">
                   <input
                     type="password"
@@ -311,7 +314,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 disabled={isSubmitting}
                 className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer transition-all"
               >
-                {isSubmitting ? 'جاري إنشاء الحساب...' : 'إنشاء حساب جديد مجاناً'}
+                {isSubmitting ? t('am.creating') : t('am.createFree')}
               </button>
             </form>
           )}
@@ -320,10 +323,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           {activeTab === 'forgot' && (
             <form onSubmit={handleForgotPassword} className="space-y-4">
               <p className="text-xs text-[#b9b6d5]">
-                أدخل بريدك الإلكتروني وسنرسل لك رابطاً مشفراً لتعيين كلمة مرور جديدة لحسابك.
+                {t('am.resetBody')}
               </p>
               <div className="space-y-1.5">
-                <label className="text-xs font-bold text-[#dedbf4]">البريد الإلكتروني:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('am.emailLabel')}</label>
                 <input
                   type="email"
                   dir="ltr"
@@ -339,7 +342,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 type="submit"
                 className="w-full py-2.5 rounded-xl bg-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 cursor-pointer"
               >
-                إرسال رابط الاستعادة
+                {t('am.sendReset')}
               </button>
             </form>
           )}
