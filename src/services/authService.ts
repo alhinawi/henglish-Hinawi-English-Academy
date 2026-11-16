@@ -435,7 +435,7 @@ export async function requestPasswordRecovery(email: string): Promise<{ success:
       return { success: false, error: normalizeAuthError(err) };
     }
   }
-  return { success: true };
+  return { success: false, error: 'auth.recoveryUnavailable' };
 }
 
 export async function updatePassword(newPassword: string): Promise<{ success: boolean; error?: string }> {
@@ -469,7 +469,7 @@ export async function updatePassword(newPassword: string): Promise<{ success: bo
       return { success: false, error: normalizeAuthError(err) };
     }
   }
-  return { success: true };
+  return { success: false, error: 'auth.passwordUpdateUnavailable' };
 }
 
 export async function signOutUser(): Promise<void> {

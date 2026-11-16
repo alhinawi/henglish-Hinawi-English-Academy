@@ -2574,5 +2574,7 @@
   "fp.back": "Zurück zur Anmeldung",
   "fp.email": "Registrierte E-Mail-Adresse",
   "fp.send": "Link anfordern",
-  "fp.remembered": "Passwort wieder eingefallen? Anmelden"
+  "fp.remembered": "Passwort wieder eingefallen? Anmelden",
+  "auth.recoveryUnavailable": "Die Passwortwiederherstellung ist derzeit nicht verfügbar. Es wurde kein Link gesendet.",
+  "auth.passwordUpdateUnavailable": "Passwortänderungen sind derzeit nicht verfügbar. Dein Passwort wurde nicht geändert."
 }
