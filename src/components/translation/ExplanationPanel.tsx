@@ -7,6 +7,7 @@ import { LessonCorrection } from '../LessonCorrection';
 import React, { useState } from 'react';
 import { TranslationExplanation, WordAnalysisDetail } from '../../types/translation';
 import { playSound } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   BookOpen,
   GraduationCap,
@@ -25,11 +26,13 @@ interface ExplanationPanelProps {
   onSaveWord?: (word: WordAnalysisDetail) => void;
 }
 
-export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
-  explanation,
-  onWordClick,
-  onSaveWord,
-}) => {
+export const ExplanationPanel: React.FC<ExplanationPanelProps> = (props) => {
+  const { t } = useLanguage();
+  const {
+    explanation,
+    onWordClick,
+    onSaveWord,
+  } = props;
   const [activeTab, setActiveTab] = useState<'all' | 'meaning' | 'grammar' | 'vocab' | 'idioms' | 'traps'>('all');
   const [isExpanded, setIsExpanded] = useState(true);
 
@@ -51,13 +54,13 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
           </div>
           <div className="flex flex-col">
             <h3 className="text-base font-bold text-white flex items-center gap-2">
-              <span>الشرح والتحليل اللغوي الأكاديمي</span>
+              <span>{t('ep.title')}</span>
               <span className="text-xs px-2 py-0.5 rounded-md bg-[#41e7ff]/20 text-[#41e7ff] font-semibold border border-[#41e7ff]/30">
-                مستوى {explanation.cefrLevel || 'B1'}
+                {t('ep.level')} {explanation.cefrLevel || 'B1'}
               </span>
             </h3>
             <span className="text-xs text-[#b9b6d5]">
-              فهم عميق لقواعد الجملة، أسرار الصياغة، والمفردات والتحذيرات اللغوية
+              {t('ep.subtitle')}
             </span>
           </div>
         </div>
@@ -65,7 +68,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
         <button
           type="button"
           className="p-1 rounded-lg text-[#b9b6d5] hover:text-white"
-          aria-label={isExpanded ? 'طي الشرح' : 'عرض الشرح'}
+          aria-label={isExpanded ? t('ep.collapse') : t('ep.expand')}
         >
           {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
         </button>
@@ -76,12 +79,12 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
           {/* Quick Filter Tabs */}
           <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-thin">
             {[
-              { id: 'all', label: 'الكل' },
-              { id: 'meaning', label: 'المعنى والسبب السياقي' },
-              { id: 'grammar', label: 'التراكيب القواعدية' },
-              { id: 'vocab', label: 'أهم الكلمات' },
-              { id: 'idioms', label: 'التعبيرات الاصطلاحية' },
-              { id: 'traps', label: 'فخاخ الترجمة الشائعة' },
+              { id: 'all', label: t('ep.tab.all') },
+              { id: 'meaning', label: t('ep.tab.meaning') },
+              { id: 'grammar', label: t('ep.tab.grammar') },
+              { id: 'vocab', label: t('ep.tab.vocab') },
+              { id: 'idioms', label: t('ep.tab.idioms') },
+              { id: 'traps', label: t('ep.tab.traps') },
             ].map(tab => (
               <button
                 key={tab.id}
@@ -107,14 +110,14 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
               <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
                 <h4 className="text-sm font-bold text-[#41e7ff] flex items-center gap-2">
                   <Globe2 className="w-4 h-4" />
-                  <span>المعنى الكلي والدلالة الثقافية (Meaning & Context):</span>
+                  <span>{t('ep.meaningTitle')}</span>
                 </h4>
                 <p className="text-sm text-slate-200 leading-relaxed">
                   {explanation.summaryMeaningAr}
                 </p>
                 {explanation.culturalContextAr && (
                   <div className="mt-3 p-3 rounded-lg bg-black/40 border border-white/5 text-xs text-[#b9b6d5] leading-relaxed">
-                    <span className="font-semibold text-[#ffb84d] ml-1">الأبعاد الثقافية والمجتمعية:</span>
+                    <span className="font-semibold text-[#ffb84d] ml-1">{t('ep.cultural')}</span>
                     {explanation.culturalContextAr}
                   </div>
                 )}
@@ -122,7 +125,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                   <div className="mt-2 text-xs text-[#b9b6d5]/90 flex items-start gap-1.5">
                     <HelpCircle className="w-3.5 h-3.5 text-[#10b981] shrink-0 mt-0.5" />
                     <span>
-                      <strong className="text-white ml-1">لماذا اختيرت هذه الترجمة؟</strong>
+                      <strong className="text-white ml-1">{t('ep.whyThis')}</strong>
                       {explanation.translationRationaleAr}
                     </span>
                   </div>
@@ -136,7 +139,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
             <div className="space-y-3">
               <h4 className="text-sm font-bold text-white flex items-center gap-2">
                 <GraduationCap className="w-4 h-4 text-[#a855f7]" />
-                <span>التحليل النحوي والتراكيب القواعدية (Grammar Breakdown):</span>
+                <span>{t('ep.grammarTitle')}</span>
               </h4>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -164,7 +167,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
 
                     {rule.targetContrastAr && (
                       <div className="text-[11px] text-[#ffb84d] bg-[#ffb84d]/10 p-2 rounded-lg border border-[#ffb84d]/20">
-                        <strong>الفرق بين الإنجليزية والعربية:</strong> {rule.targetContrastAr}
+                        <strong>{t('ep.contrast')}</strong> {rule.targetContrastAr}
                       </div>
                     )}
                   </div>
@@ -178,7 +181,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
             <div className="space-y-3">
               <h4 className="text-sm font-bold text-white flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[#ffb84d]" />
-                <span>المفردات الجوهرية في الجملة (Key Vocabulary):</span>
+                <span>{t('ep.vocabTitle')}</span>
               </h4>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5">
@@ -221,7 +224,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                           className="flex items-center gap-1 text-[#41e7ff] hover:text-white transition-colors cursor-pointer"
                         >
                           <BookmarkPlus className="w-3.5 h-3.5" />
-                          <span>حفظ للمفردات</span>
+                          <span>{t('ep.saveVocab')}</span>
                         </button>
                       )}
                     </div>
@@ -236,7 +239,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
             <div className="space-y-3">
               <h4 className="text-sm font-bold text-white flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[#ec4899]" />
-                <span>التعبيرات الاصطلاحية والمجازية (Idioms & Expressions):</span>
+                <span>{t('ep.idiomsTitle')}</span>
               </h4>
 
               <div className="space-y-2">
@@ -250,18 +253,18 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                         "{idiomItem.idiom}"
                       </span>
                       <span className="text-xs text-[#10b981] font-semibold">
-                        المعنى الحقيقي: {idiomItem.actualMeaningAr}
+                        {t('ep.actualMeaning')} {idiomItem.actualMeaningAr}
                       </span>
                     </div>
                     {idiomItem.literalMeaningAr && (
                       <p className="text-xs text-[#b9b6d5]">
-                        <span className="text-red-400 ml-1">الترجمة الحرفية الخاطئة:</span>
+                        <span className="text-red-400 ml-1">{t('ep.literalWrong')}</span>
                         {idiomItem.literalMeaningAr}
                       </p>
                     )}
                     {idiomItem.example && (
                       <p className="text-xs text-slate-300 italic pt-1 border-t border-white/5">
-                        مثال: {idiomItem.example}
+                        {t('ep.example')} {idiomItem.example}
                       </p>
                     )}
                   </div>
@@ -275,7 +278,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
             <div className="space-y-3">
               <h4 className="text-sm font-bold text-white flex items-center gap-2">
                 <AlertTriangle className="w-4 h-4 text-[#ff4f9a]" />
-                <span>فخاخ الترجمة الشائعة وكيفية تجنبها (Common Translation Traps):</span>
+                <span>{t('ep.trapsTitle')}</span>
               </h4>
 
               <div className="space-y-2">
@@ -286,7 +289,7 @@ export const ExplanationPanel: React.FC<ExplanationPanelProps> = ({
                   >
                     <LessonCorrection wrong={trap.wrongAr} correct={trap.correctAr} />
                     <p className="text-[#b9b6d5] pt-1">
-                      <strong className="text-white ml-1">لماذا هذا فخ؟</strong> {trap.whyTrapAr}
+                      <strong className="text-white ml-1">{t('ep.whyTrap')}</strong> {trap.whyTrapAr}
                     </p>
                   </div>
                 ))}
