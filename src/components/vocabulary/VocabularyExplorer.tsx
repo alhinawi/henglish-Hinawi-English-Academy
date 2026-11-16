@@ -44,7 +44,18 @@ const POS_OPTIONS = [
   { id: 'verb', label: 'أفعال' },
   { id: 'adjective', label: 'صفات' },
   { id: 'adverb', label: 'ظروف' },
+  { id: 'pronoun', label: 'ضمائر' },
+  { id: 'preposition', label: 'حروف جر' },
+  { id: 'conjunction', label: 'أدوات ربط' },
+  { id: 'determiner', label: 'أدوات تعريف' },
+  { id: 'number', label: 'أرقام' },
+  { id: 'interjection', label: 'تعجبات' },
+  { id: 'modal verb', label: 'أفعال ناقصة' },
+  { id: 'particle', label: 'أدوات' },
+  { id: 'phrasal verb', label: 'أفعال مركبة' },
 ];
+
+const LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
 const DOMAIN_OPTIONS = [
   { id: 'all', label: 'كل المجالات' },
@@ -87,6 +98,7 @@ export const VocabularyExplorer: React.FC = () => {
   const [selectedCefr, setSelectedCefr] = useState<CEFRLevel | 'all'>('all');
   const [selectedPos, setSelectedPos] = useState<string>('all');
   const [selectedDomain, setSelectedDomain] = useState<string>('all');
+  const [selectedLetter, setSelectedLetter] = useState<string>('all');
   const [selectedFrequency, setSelectedFrequency] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'popular' | 'alpha_asc' | 'alpha_desc' | 'cefr_asc' | 'cefr_desc'>('popular');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
@@ -136,7 +148,7 @@ export const VocabularyExplorer: React.FC = () => {
   // Reset page when any filter changes
   useEffect(() => {
     setPage(1);
-  }, [searchQuery, selectedCefr, selectedPos, selectedDomain, selectedFrequency, sortBy]);
+  }, [searchQuery, selectedCefr, selectedPos, selectedDomain, selectedLetter, selectedFrequency, sortBy]);
 
   const loadedCount = getLoadedVocabularyCount();
 
@@ -146,6 +158,7 @@ export const VocabularyExplorer: React.FC = () => {
       cefr: selectedCefr,
       pos: selectedPos,
       domain: selectedDomain,
+      letter: selectedLetter,
       frequencyTier: selectedFrequency,
       sortBy,
       page,
@@ -156,6 +169,7 @@ export const VocabularyExplorer: React.FC = () => {
     selectedCefr,
     selectedPos,
     selectedDomain,
+    selectedLetter,
     selectedFrequency,
     sortBy,
     page,
@@ -177,6 +191,7 @@ export const VocabularyExplorer: React.FC = () => {
     setSelectedCefr('all');
     setSelectedPos('all');
     setSelectedDomain('all');
+    setSelectedLetter('all');
     setSelectedFrequency('all');
     setSortBy('popular');
   };
@@ -202,6 +217,13 @@ export const VocabularyExplorer: React.FC = () => {
       clear: () => setSelectedDomain('all'),
     });
   }
+  if (selectedLetter !== 'all') {
+    activeChips.push({
+      key: 'letter',
+      label: `حرف: ${selectedLetter.toUpperCase()}`,
+      clear: () => setSelectedLetter('all'),
+    });
+  }
   if (selectedFrequency !== 'all') {
     activeChips.push({
       key: 'freq',
@@ -220,6 +242,7 @@ export const VocabularyExplorer: React.FC = () => {
   const sheetFilterCount =
     (selectedPos !== 'all' ? 1 : 0) +
     (selectedDomain !== 'all' ? 1 : 0) +
+    (selectedLetter !== 'all' ? 1 : 0) +
     (selectedFrequency !== 'all' ? 1 : 0) +
     (sortBy !== 'popular' ? 1 : 0);
 
@@ -457,7 +480,7 @@ export const VocabularyExplorer: React.FC = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsFilterSheetOpen(false)}
           />
-          <div className="relative w-full max-w-lg bg-[#121124] border-t border-white/15 rounded-t-3xl p-6 space-y-5 text-right shadow-2xl">
+          <div className="relative w-full max-w-lg bg-[#121124] border-t border-white/15 rounded-t-3xl p-6 space-y-5 text-right shadow-2xl max-h-[85vh] overflow-y-auto">
             <div className="flex items-center justify-between">
               <h3 className="text-base font-black text-white">فلاتر البحث</h3>
               <button
@@ -469,18 +492,60 @@ export const VocabularyExplorer: React.FC = () => {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">نوع الكلمة</label>
-              <select
-                value={selectedPos}
-                onChange={e => setSelectedPos(e.target.value)}
-                className={selectClass}
-              >
-                {POS_OPTIONS.map(p => (
-                  <option key={p.id} value={p.id} className="bg-[#121124] text-white">
-                    {p.label}
-                  </option>
+              <label className="text-xs font-bold text-white/60">الحرف الأول</label>
+              <div dir="ltr" className="flex flex-wrap gap-1.5 justify-end">
+                <button
+                  onClick={() => {
+                    playSound('click');
+                    setSelectedLetter('all');
+                  }}
+                  className={`px-2.5 py-1.5 rounded-lg text-xs font-black transition-all cursor-pointer border ${
+                    selectedLetter === 'all'
+                      ? 'bg-[#c4ff55]/20 text-[#c4ff55] border-[#c4ff55]/50'
+                      : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
+                  }`}
+                >
+                  الكل
+                </button>
+                {LETTERS.map(l => (
+                  <button
+                    key={l}
+                    onClick={() => {
+                      playSound('click');
+                      setSelectedLetter(l);
+                    }}
+                    className={`w-8 h-8 rounded-lg text-xs font-black uppercase transition-all cursor-pointer border ${
+                      selectedLetter === l
+                        ? 'bg-[#c4ff55]/20 text-[#c4ff55] border-[#c4ff55]/50'
+                        : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
+                    }`}
+                  >
+                    {l}
+                  </button>
                 ))}
-              </select>
+              </div>
+            </div>
+
+            <div className="space-y-1.5">
+              <label className="text-xs font-bold text-white/60">نوع الكلمة</label>
+              <div className="flex flex-wrap gap-1.5">
+                {POS_OPTIONS.map(p => (
+                  <button
+                    key={p.id}
+                    onClick={() => {
+                      playSound('click');
+                      setSelectedPos(p.id);
+                    }}
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer border ${
+                      selectedPos === p.id
+                        ? 'bg-[#c4ff55]/20 text-[#c4ff55] border-[#c4ff55]/50'
+                        : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
+                    }`}
+                  >
+                    {p.label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             <div className="space-y-1.5">
