@@ -3,6 +3,7 @@ import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import { 
   Clock, 
@@ -40,6 +41,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
 
   // Personal notes textarea state
   const [personalNote, setPersonalNote] = useState('');
+  const appText = useAppTextMap('futurePerfectCourse');
   const [noteSaved, setNoteSaved] = useState(false);
 
   // Mini quiz state
@@ -114,26 +116,26 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <div className="absolute inset-0 bg-linear-to-t from-[#0c0b20]/50 via-transparent to-transparent" />
             <div className="absolute top-4 right-4 flex items-center gap-2">
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/90 text-[#21132c] shadow-md">
-                {currentLesson.kicker}
+                {txText(appText, currentLesson.kicker)}
               </span>
               <span className="px-2.5 py-1 rounded-full text-xs font-bold bg-[#09091a]/80 text-[#c4ff55] border border-white/10 backdrop-blur-md">
-                {currentLesson.level}
+                {txText(appText, currentLesson.level)}
               </span>
             </div>
             <div className="absolute bottom-4 left-4 flex items-center gap-1.5 text-xs text-white/90 bg-[#09091a]/80 px-3 py-1 rounded-full backdrop-blur-md border border-white/10">
               <Clock className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>{currentLesson.readTime}</span>
+              <span>{txText(appText, currentLesson.readTime)}</span>
             </div>
           </div>
         )}
 
         <div className="p-6 sm:p-10 space-y-4 relative z-10 -mt-6">
           <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
-            <MixedLessonText text={currentLesson.title} />
+            <MixedLessonText text={txText(appText, currentLesson.title)} />
           </h1>
           <div className="flex items-center gap-3">
             <span className="en text-sm sm:text-base font-bold text-[#41e7ff]">
-              {currentLesson.subtitle}
+              {txText(appText, currentLesson.subtitle)}
             </span>
             <button
               onClick={() => speakEnglish(currentLesson.subtitle)}
@@ -145,7 +147,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           </div>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
-            <MixedLessonText text={currentLesson.description} />
+            <MixedLessonText text={txText(appText, currentLesson.description)} />
           </p>
 
           {/* Key Takeaway Callout */}
@@ -153,7 +155,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <Lightbulb className="w-5 h-5 text-[#ffd166] shrink-0 mt-0.5" />
             <div className="text-sm text-white leading-relaxed">
               <strong className="text-[#ffd166]">الخلاصة الجوهرية: </strong>
-              <MixedLessonText text={currentLesson.keyTakeaway} />
+              <MixedLessonText text={txText(appText, currentLesson.keyTakeaway)} />
             </div>
           </div>
         </div>
@@ -194,7 +196,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           </div>
 
           <p className="text-xs sm:text-sm text-[#b9b6d5] bg-white/5 p-3 rounded-xl border border-white/10">
-           {currentLesson.formula.notes}
+           {txText(appText, currentLesson.formula.notes)}
           </p>
         </section>
       )}
@@ -213,7 +215,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               <span className="w-6 h-6 rounded-lg bg-[#41e7ff]/20 text-[#41e7ff] font-bold text-xs flex items-center justify-center shrink-0 mt-0.5">
                 0{idx + 1}
               </span>
-              <p>{tip}</p>
+              <p>{txText(appText, tip)}</p>
             </div>
           ))}
         </div>
@@ -237,7 +239,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             >
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold text-[#ffd166]">
-                  {ex.context || `مثال 0${idx + 1}`}
+                  {ex.context ? txText(appText, ex.context) : `مثال 0${idx + 1}`}
                 </span>
                 <button
                   onClick={() => {
@@ -256,7 +258,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                 {ex.en}
               </p>
               <p className="text-xs sm:text-sm text-[#b9b6d5] border-t border-white/5 pt-2">
-                {ex.ar}
+                {txText(appText, ex.ar)}
               </p>
             </div>
           ))}
@@ -268,10 +270,10 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <div>
             <h3 className="text-lg font-black text-white flex items-center gap-2">
-              <span>{currentLesson.contrastSection.title}</span>
+              <span>{txText(appText, currentLesson.contrastSection.title)}</span>
             </h3>
             <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-              {currentLesson.contrastSection.description}
+              {txText(appText, currentLesson.contrastSection.description)}
             </p>
           </div>
 
@@ -296,7 +298,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                   {c.sentence}
                 </p>
                 <p className="text-xs sm:text-sm text-[#ffd166] font-semibold">
-                  المعنى: {c.meaning}
+                  المعنى: {txText(appText, c.meaning)}
                 </p>
                 <p className="text-xs text-[#b9b6d5]">
                   {c.explanation}
@@ -324,7 +326,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                 <LessonCorrection wrong={m.wrong} correct={m.correct} />
                 <p className="text-xs text-[#dedbf4]">
                   <strong className="text-[#ffd166]">السبب: </strong>
-                  {m.reason}
+                  {txText(appText, m.reason)}
                 </p>
               </div>
             ))}
@@ -403,7 +405,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <span>تحدي التطبيق الشخصي (Notebook)</span>
           </h3>
           <p className="text-xs sm:text-sm text-[#b9b6d5]">
-            {currentLesson.homeworkPrompt}
+            {txText(appText, currentLesson.homeworkPrompt)}
           </p>
           <textarea
             rows={3}
