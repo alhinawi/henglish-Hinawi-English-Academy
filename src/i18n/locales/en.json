@@ -2643,5 +2643,18 @@
   "yt.open": "Open video on YouTube",
   "yt.loading": "Loading video...",
   "yt.watch": "Watch on YouTube",
-  "yt.timestamps": "Video highlights:"
+  "yt.timestamps": "Video highlights:",
+  "sb.chip": "INTERACTIVE SENTENCE BUILDER",
+  "sb.title": "Sentence builder",
+  "sb.intro": "Arrange the words to build a correct future perfect sentence.",
+  "sb.reset": "Restart this challenge",
+  "sb.listen": "Listen to the sentence",
+  "sb.hideHint": "Hide hint",
+  "sb.hint": "Show hint",
+  "sb.empty": "Tap the words below to arrange them here.",
+  "sb.correct": "Correct! Well done.",
+  "sb.wrong": "The order is not quite right. Rearrange the words or check the hint.",
+  "sb.check": "Check answer",
+  "sb.next": "Next challenge",
+  "sb.count": "Challenge {current} of {total}"
 }
