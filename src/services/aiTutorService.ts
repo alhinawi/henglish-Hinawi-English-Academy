@@ -7,6 +7,7 @@
 import { CEFRLevel } from '../types';
 import { AiTutorMode, ASSISTANTS_REGISTRY } from './aiPrompts';
 import { StudentPlatformContext } from './aiPlatformContext';
+import { AiServiceUnavailableError, isSpaFallbackResponse } from './aiAvailability';
 
 export type { AiTutorMode };
 export { ASSISTANTS_REGISTRY };
@@ -73,6 +74,10 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
         body: JSON.stringify(requestBody),
       });
 
+      if (!response.ok && isSpaFallbackResponse(response)) {
+        throw new AiServiceUnavailableError();
+      }
+
       if (response.ok && response.body) {
         const reader = response.body.getReader();
         const decoder = new TextDecoder('utf-8');
@@ -115,6 +120,9 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
         }
       }
     } catch (err) {
+      if (err instanceof AiServiceUnavailableError) {
+        throw err;
+      }
       console.warn('Streaming fetch failed, falling back to standard POST:', err);
     }
   }
@@ -127,27 +135,25 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
       body: JSON.stringify(requestBody),
     });
 
-    if (response.ok) {
-      const data = await response.json();
-      return {
-        text: data.text,
-        corrections: data.corrections,
-        provider: data.provider || 'server-api',
-        model: data.model || 'ai-model',
-        isLocalFallback: data.isLocalFallback || false,
-      };
+    if (!response.ok) {
+      if (isSpaFallbackResponse(response)) {
+        throw new AiServiceUnavailableError();
+      }
+      throw new Error(`AI tutor request failed with status ${response.status}`);
     }
+    const data = await response.json();
+    return {
+      text: data.text,
+      corrections: data.corrections,
+      provider: data.provider || 'server-api',
+      model: data.model || 'ai-model',
+      isLocalFallback: data.isLocalFallback || false,
+    };
   } catch (err) {
+    if (err instanceof AiServiceUnavailableError) {
+      throw err;
+    }
     console.warn('Network call to /api/ai/chat failed:', err);
+    throw err instanceof Error ? err : new Error('AI tutor request failed');
   }
-
-  // Fallback client response if network or dev proxy disconnected
-  return {
-    text: `أهلاً بك! أنا معلمك الإنجليزي في Henglish Academy. 🦅
-لقد استلمت استفسارك: "${message}".
-يمكنك مراجعة كافة الدروس التفاعلية في منصة هناوي، أو التحقق من الاتصال بالخادم الداخلي للمنصة.`,
-    provider: 'client-offline-fallback',
-    model: 'offline-agent',
-    isLocalFallback: true,
-  };
 }
