@@ -46,7 +46,9 @@ def main(index_path):
     files = sorted(f for f in os.listdir(sent_dir) if f.endswith('.json'))
     seen_ids = set()
     total_sentences = 0
-    expected_lo = 1
+    # Coverage is partial by design: the first delivered block sets the
+    # baseline, later blocks must be contiguous from there.
+    expected_lo = None
     for name in files:
         m = FILE_RE.match(name)
         if not m:
@@ -55,10 +57,13 @@ def main(index_path):
         lo, hi = int(m.group(1)), int(m.group(2))
         if not name.startswith(f"{prefix}-sent-"):
             fail(errors, name, f"filename prefix must be {prefix}-sent-")
-        if lo != expected_lo:
+        if expected_lo is not None and lo != expected_lo:
             fail(errors, name, f"expected block starting at {expected_lo}, got {lo}")
         if hi - lo != 99:
-            fail(errors, name, "blocks must cover exactly 100 ids")
+            # A partial tail block is allowed only as the LAST file of a
+            # checkpoint delivery; it gets completed by the next batch.
+            if name != files[-1]:
+                fail(errors, name, "blocks must cover exactly 100 ids")
         expected_lo = hi + 1
         data = json.load(open(os.path.join(sent_dir, name), encoding='utf-8'))
         items = data.get('items') if isinstance(data, dict) else None
@@ -70,6 +75,12 @@ def main(index_path):
             iid = str(item.get('id', ''))
             if iid not in bank_ids:
                 fail(errors, where, f"id {iid!r} not in the {prefix} bank")
+            try:
+                numeric = int(iid.rsplit('-', 1)[1])
+                if not (lo <= numeric <= hi):
+                    fail(errors, where, f"id {iid!r} outside the block range {lo}-{hi}")
+            except (ValueError, IndexError):
+                fail(errors, where, f"unparseable id {iid!r}")
             if iid in seen_ids:
                 fail(errors, where, f"duplicate sentences for {iid!r}")
             seen_ids.add(iid)
