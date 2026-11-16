@@ -5,6 +5,7 @@ import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import { 
   Sparkles, 
   Play, 
@@ -25,6 +26,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
   onNavigate,
   completionPercentage,
 }) => {
+  const { t } = useLanguage();
   const appText = useAppTextMap('futurePerfectCourse');
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
@@ -35,17 +37,17 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
           onClick={() => { playSound('click'); onNavigate('dashboard'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          الرئيسية
+          {t('co.home')}
         </button>
         <span>/</span>
         <button 
           onClick={() => { playSound('click'); onNavigate('grammar'); }} 
           className="hover:text-white transition-colors cursor-pointer"
         >
-          أكاديمية الجرامر
+          {t('co.breadcrumb')}
         </button>
         <span>/</span>
-        <span className="text-[#ffd166] font-bold">أزمنة المستقبل: ماستر كلاس المستقبل التام</span>
+        <span className="text-[#ffd166] font-bold">{t('co.breadcrumbCourse')}</span>
       </nav>
 
       {/* Course Hero Banner */}
@@ -53,7 +55,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
         <div className="max-w-3xl space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/40">
             <Sparkles className="w-4 h-4" />
-            <span>GRAMMAR ACADEMY • كورس المستقبل التام الشامل المدمج</span>
+            <span>{t('co.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl 2xl:text-6xl font-black text-white leading-tight">
@@ -61,22 +63,22 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
           </h1>
 
           <p className="text-base sm:text-lg text-[#dedbf4] leading-relaxed">
-            من الأساسيات والخط الزمني، مروراً بتركيب الجملة المثبتة والمنفية والأسئلة، وحتى فخ قاعدة By the time والمقارنات الدقيقة مع باقي الأزمنة والمحادثات الواقعية.
+            {t('co.heroBlurb')}
           </p>
 
           {/* Quick Meta */}
           <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-[#b9b6d5] font-bold">
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
               <BookOpen className="w-4 h-4 text-[#41e7ff]" />
-              <span>8 دروس متكاملة</span>
+              <span>{t('co.lessonsCount')}</span>
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
               <Clock className="w-4 h-4 text-[#ffd166]" />
-              <span>ساعتان و45 دقيقة</span>
+              <span>{t('co.duration')}</span>
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
               <Award className="w-4 h-4 text-[#c4ff55]" />
-              <span>نسبة إنجازك: {completionPercentage}%</span>
+              <span>{t('co.progress')} {completionPercentage}%</span>
             </span>
           </div>
 
@@ -90,7 +92,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
               className="px-8 py-4 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black text-base hover:brightness-110 shadow-xl transition-all hover:-translate-y-1 cursor-pointer flex items-center gap-2.5"
             >
               <Play className="w-5 h-5 fill-current" />
-              <span>ابدأ دراسة الكورس (الدرس 01)</span>
+              <span>{t('co.startCta')}</span>
             </button>
 
             <button
@@ -100,7 +102,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
               }}
               className="px-6 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/15 text-white font-bold text-base transition-colors cursor-pointer"
             >
-              الانتقال لمركز التمارين
+              {t('co.practiceCta')}
             </button>
           </div>
         </div>
@@ -111,20 +113,20 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
         <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10">
           <h3 className="text-lg font-black text-[#ffd166] flex items-center gap-2 mb-4">
             <ShieldCheck className="w-5 h-5" />
-            <span>ماذا تحتاج قبل البدء؟ (Prerequisites)</span>
+            <span>{t('co.prereqTitle')}</span>
           </h3>
           <ul className="space-y-3 text-sm text-[#dedbf4]">
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#c4ff55] mt-1 shrink-0" />
-              <span>معرفة ضمائر الفاعل الأساسية (I, He, She, They...).</span>
+              <span>{t('co.prereq1')}</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#c4ff55] mt-1 shrink-0" />
-              <span>فكرة مبسطة عن الأفعال المساعدة (will, have).</span>
+              <span>{t('co.prereq2')}</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#c4ff55] mt-1 shrink-0" />
-              <span>الرغبة في فهم المنطق اللغوي بدلاً من الحفظ الأعمى.</span>
+              <span>{t('co.prereq3')}</span>
             </li>
           </ul>
         </div>
@@ -132,20 +134,20 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
         <div className="glass-panel p-6 sm:p-8 rounded-3xl border border-white/10">
           <h3 className="text-lg font-black text-[#41e7ff] flex items-center gap-2 mb-4">
             <Award className="w-5 h-5" />
-            <span>ماذا ستكتسب بعد إتمام الكورس؟ (Outcomes)</span>
+            <span>{t('co.outcomesTitle')}</span>
           </h3>
           <ul className="space-y-3 text-sm text-[#dedbf4]">
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#41e7ff] mt-1 shrink-0" />
-              <span>القدرة على صياغة مواعيد التسليم والوعود المستقبلية بثقة تامة.</span>
+              <span>{t('co.outcome1')}</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#41e7ff] mt-1 shrink-0" />
-              <span>تجنب خطأ will has وفخ المضارع البسيط بعد by the time.</span>
+              <span>{t('co.outcome2')}</span>
             </li>
             <li className="flex items-start gap-2.5">
               <CheckCircle2 className="w-4 h-4 text-[#41e7ff] mt-1 shrink-0" />
-              <span>إتقان استخدام الزمن في مقابلات العمل وإيميلات الشركات.</span>
+              <span>{t('co.outcome3')}</span>
             </li>
           </ul>
         </div>
@@ -158,7 +160,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
             COURSE SYLLABUS
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-white">
-            خطة الدروس الـ 8 بالتفصيل
+            {t('co.syllabusTitle')}
           </h2>
         </div>
 
@@ -194,7 +196,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
                 }}
                 className="px-5 py-2.5 rounded-xl bg-white/10 hover:bg-[#41e7ff]/20 text-[#41e7ff] hover:text-white border border-[#41e7ff]/30 text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 shrink-0"
               >
-                <span>دخول الدرس</span>
+                <span>{t('co.enterLesson')}</span>
                 <ArrowRight className="w-4 h-4 rotate-180" />
               </button>
             </div>
