@@ -1,929 +1,172 @@
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { AlertCircle, ChevronRight, ExternalLink, Languages, Pause, Play, RotateCcw } from 'lucide-react';
+import type { MovieSceneItem } from '../data/movieScenesData';
 import { applyMovieTranscriptCorrections } from '../data/movieTranscriptCorrections';
+import { movieSourceSummaries } from '../data/movieSourceSummaries';
 import { activeSubtitleAt } from '../utils/movieTimeline';
-// ==============================================================================
-// Henglish Academy (HENGLISH) - LEARN ENGLISH THROUGH MOVIES SMART STUDIO PLAYER
-// Official YouTube IFrame Player with synchronized bilingual Egyptian Arabic subtitles,
-// interactive word lookup, scene-based quizzes, vocabulary extraction, and echo speaking mode.
-// ==============================================================================
+import './movieStudio.css';
 
-import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { MovieSceneItem, TimedSubtitle, SubtitleWord } from '../data/movieScenesData';
-import { speakText } from '../utils/voiceEngine';
-import { playSound } from '../utils/audio';
-import {
-  Play,
-  Pause,
-  RotateCcw,
-  Repeat,
-  Volume2,
-  Mic,
-  Award,
-  BookOpen,
-  CheckCircle2,
-  AlertCircle,
-  HelpCircle,
-  Sparkles,
-  ExternalLink,
-  Clock,
-  Video,
-  Languages,
-  ChevronRight,
-  Eye,
-  EyeOff,
-  Flame,
-  Info,
-} from 'lucide-react';
-
-
-// YouTube IFrame API loader (shared singleton)
-declare global {
-  interface Window {
-    YT?: any;
-    onYouTubeIframeAPIReady?: () => void;
-  }
-}
-let ytApiPromise: Promise<any> | null = null;
+declare global { interface Window { YT?: any; onYouTubeIframeAPIReady?: () => void; } }
+let apiPromise: Promise<any> | null = null;
 function loadYouTubeApi(): Promise<any> {
-  if (typeof window === 'undefined') return Promise.reject(new Error('no window'));
-  if (window.YT && window.YT.Player) return Promise.resolve(window.YT);
-  if (!ytApiPromise) {
-    ytApiPromise = new Promise((resolve) => {
-      const prev = window.onYouTubeIframeAPIReady;
-      window.onYouTubeIframeAPIReady = () => {
-        if (prev) prev();
-        resolve(window.YT);
-      };
-      const tag = document.createElement('script');
-      tag.src = 'https://www.youtube.com/iframe_api';
-      document.head.appendChild(tag);
-    });
-  }
-  return ytApiPromise;
+  if (window.YT?.Player) return Promise.resolve(window.YT);
+  if (!apiPromise) apiPromise = new Promise((resolve, reject) => {
+    const previous = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => { previous?.(); resolve(window.YT); };
+    const script = document.createElement('script');
+    script.src = 'https://www.youtube.com/iframe_api';
+    script.onerror = () => { apiPromise = null; reject(new Error('Player could not load')); };
+    document.head.appendChild(script);
+  });
+  return apiPromise;
 }
-
-interface MoviePlayerStudioProps {
-  scene: MovieSceneItem;
-  onBackToSearch?: () => void;
-}
+const timeLabel = (seconds: number) => {
+  const t = Math.max(0, seconds);
+  return `${Math.floor(t / 60)}:${(t % 60).toFixed(1).padStart(4, '0')}`;
+};
+interface MoviePlayerStudioProps { scene: MovieSceneItem; onBackToSearch?: () => void; }
 
 export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: originalScene, onBackToSearch }) => {
   const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
-  // Play the complete source from 0:00; subtitle times use the same source clock.
-  const sceneStart = 0;
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState<number>(sceneStart);
-  const [playbackSpeed, setPlaybackSpeed] = useState<0.5 | 0.75 | 1.0>(1.0);
-  const [isLoopingCurrentLine, setIsLoopingCurrentLine] = useState(false);
-  const [activeSubtitleIndex, setActiveSubtitleIndex] = useState<number>(-1);
-  const [activeTab, setActiveTab] = useState<'transcript' | 'vocabulary' | 'quizzes' | 'echo'>('transcript');
-  const [selectedWord, setSelectedWord] = useState<SubtitleWord | null>(null);
-  const [savedWords, setSavedWords] = useState<string[]>([]);
-  const [showFushaSubtitles, setShowFushaSubtitles] = useState(false);
+  const unavailable = scene.transcriptTimingStatus === 'quarantined';
+  const start = scene.startTime;
+  const end = scene.endTime;
+  const [currentTime, setCurrentTime] = useState(start);
+  const [playing, setPlaying] = useState(false);
+  const [ready, setReady] = useState(false);
+  const [ended, setEnded] = useState(false);
+  const [error, setError] = useState(false);
+  const [following, setFollowing] = useState(true);
+  const [fusha, setFusha] = useState(false);
+  const [speed, setSpeed] = useState(1);
+  const host = useRef<HTMLDivElement>(null);
+  const player = useRef<any>(null);
+  const list = useRef<HTMLDivElement>(null);
+  const pending = useRef(start);
+  const seekingUntil = useRef(0);
+  const active = activeSubtitleAt(scene.subtitles, currentTime);
 
-  // Quiz state
-  const [currentQuizIdx, setCurrentQuizIdx] = useState(0);
-  const [selectedQuizOption, setSelectedQuizOption] = useState<number | null>(null);
-  const [quizSubmitted, setQuizSubmitted] = useState(false);
-  const [quizScore, setQuizScore] = useState(0);
+  // Object loading preserves a decimal endSeconds on every app-controlled seek/replay.
+  // Calling seekTo would clear YouTube's endSeconds, so it is deliberately not used.
+  const loadClip = (at: number) => {
+    const target = Math.max(start, Math.min(at, end - 0.01));
+    pending.current = target;
+    setCurrentTime(target); setEnded(false);
+    if (player.current && ready) {
+      seekingUntil.current = Date.now() + 4000;
+      player.current.loadVideoById({ videoId: scene.youtubeId, startSeconds: target, endSeconds: end });
+      player.current.setPlaybackRate?.(speed);
+    }
+  };
 
-  // Echo Speaking state
-  const [echoLineIdx, setEchoLineIdx] = useState(0);
-  const [isEchoRecording, setIsEchoRecording] = useState(false);
-  const [echoFeedback, setEchoFeedback] = useState<string | null>(null);
-  const [echoScore, setEchoScore] = useState<number | null>(null);
-
-  const [isPlayerReady, setIsPlayerReady] = useState(false);
-  const playerContainerRef = useRef<HTMLDivElement>(null);
-  const playerRef = useRef<any>(null);
-  const playerReadyRef = useRef(false);
-  const timerRef = useRef<number | null>(null);
-  const isPlayingRef = useRef(false);
-  const loopLineRef = useRef(false);
-  const activeSubIdxRef = useRef(-1);
-  const pendingSeekRef = useRef<number | null>(null);
-  const seekTargetRef = useRef<{ t: number; until: number } | null>(null);
-  const transcriptListRef = useRef<HTMLDivElement>(null);
-
-  // Create the real YouTube IFrame Player for this scene
   useEffect(() => {
-    if (scene.transcriptTimingStatus === 'quarantined') return;
-    let destroyed = false;
-    playerReadyRef.current = false;
-    setIsPlayerReady(false);
-    seekTargetRef.current = null;
-    setCurrentTime(sceneStart);
-    setActiveSubtitleIndex(-1);
-    setIsPlaying(false);
-    isPlayingRef.current = false;
-    activeSubIdxRef.current = -1;
-    pendingSeekRef.current = null;
-    loopLineRef.current = false;
-    setIsLoopingCurrentLine(false);
-
-    loadYouTubeApi()
-      .then(YT => {
-        if (destroyed || !playerContainerRef.current) return;
-        playerRef.current = new YT.Player(playerContainerRef.current, {
-          host: 'https://www.youtube-nocookie.com',
-          width: '100%',
-          height: '100%',
-          videoId: scene.youtubeId,
-          playerVars: {
-            start: sceneStart,
-            autoplay: 1,
-            rel: 0,
-            enablejsapi: 1,
-            playsinline: 1,
-            origin: window.location.origin,
-          },
-          events: {
-            onReady: () => {
-              playerReadyRef.current = true;
-              setIsPlayerReady(true);
-              // One tap on the clip card should start playback directly (user gesture
-              // chain from the card tap; browsers that still block it keep the play button).
-              try {
-                playerRef.current?.seekTo?.(sceneStart, true);
-                playerRef.current?.playVideo?.();
-              } catch {
-                // autoplay blocked: the on-screen play button remains
-              }
-              // Apply a sentence tap that arrived while the iframe was still loading
-              if (pendingSeekRef.current != null) {
-                const t = pendingSeekRef.current;
-                pendingSeekRef.current = null;
-                seekTargetRef.current = { t, until: Date.now() + 4000 };
-                try {
-                  playerRef.current?.seekTo?.(t, true);
-                  playerRef.current?.playVideo?.();
-                } catch {
-                  // ignore early player errors
-                }
-              }
-            },
-            onStateChange: (e: any) => {
-              if (e.data === YT.PlayerState.PLAYING) {
-                setIsPlaying(true);
-                isPlayingRef.current = true;
-              }
-              if (e.data === YT.PlayerState.PAUSED || e.data === YT.PlayerState.ENDED) {
-                setIsPlaying(false);
-                isPlayingRef.current = false;
-              }
-            },
-          },
-        });
-      })
-      .catch(() => {});
-
-    return () => {
-      destroyed = true;
-      try {
-        playerRef.current?.destroy?.();
-      } catch {
-        // ignore destroy errors
+    if (unavailable) return;
+    let cancelled = false;
+    setReady(false); setError(false); setPlaying(false); setEnded(false); setFollowing(true);
+    setCurrentTime(start); pending.current = start;
+    const enforceBounds = () => {
+      const p = player.current;
+      if (!p || typeof p.getCurrentTime !== 'function') return;
+      const t = p.getCurrentTime();
+      if (!Number.isFinite(t)) return;
+      if (seekingUntil.current && Math.abs(t - pending.current) > 1 && Date.now() < seekingUntil.current) return;
+      seekingUntil.current = 0;
+      if (t >= end) {
+        p.pauseVideo?.(); setCurrentTime(end); setPlaying(false); setEnded(true); return;
       }
-      playerRef.current = null;
-      playerReadyRef.current = false;
+      if (t < start - 0.1) {
+        // Native timeline drags cannot turn the short scene into the full upload.
+        p.pauseVideo?.(); p.cueVideoById?.({ videoId: scene.youtubeId, startSeconds: start, endSeconds: end });
+        setCurrentTime(start); setPlaying(false); return;
+      }
+      setCurrentTime(t);
     };
-  }, [scene.id, scene.youtubeId]);
+    loadYouTubeApi().then(YT => {
+      if (cancelled || !host.current) return;
+      player.current = new YT.Player(host.current, {
+        host: 'https://www.youtube-nocookie.com', width: '100%', height: '100%', videoId: scene.youtubeId,
+        playerVars: { start: Math.floor(start), end: Math.ceil(end), autoplay: 0, controls: 1, rel: 0, playsinline: 1, enablejsapi: 1, cc_load_policy: 1, cc_lang_pref: 'en', origin: window.location.origin },
+        events: {
+          onReady: (event: any) => {
+            if (cancelled) return;
+            setReady(true); seekingUntil.current = Date.now() + 4000;
+            event.target.loadVideoById({ videoId: scene.youtubeId, startSeconds: pending.current, endSeconds: end });
+          },
+          onStateChange: (event: any) => {
+            if (cancelled) return;
+            setPlaying(event.data === 1);
+            if (event.data === 0) { setEnded(true); setCurrentTime(end); }
+            enforceBounds();
+          },
+          onError: () => { if (!cancelled) { setError(true); setPlaying(false); } },
+        },
+      });
+    }).catch(() => { if (!cancelled) setError(true); });
+    const timer = window.setInterval(enforceBounds, 50);
+    return () => { cancelled = true; clearInterval(timer); player.current?.destroy?.(); player.current = null; };
+  }, [scene.youtubeId, start, end, unavailable]);
 
-  // Real player time tracker: continuously poll the YouTube player for true playback time.
-  // Always running while mounted (not gated on play state) so taps on the native iframe
-  // controls, mobile timeline drags, and missed state events all stay in sync with the
-  // highlighted sentence.
   useEffect(() => {
-    timerRef.current = window.setInterval(() => {
-      const player = playerRef.current;
-      if (!player || !playerReadyRef.current || typeof player.getCurrentTime !== 'function') return;
-      const t = player.getCurrentTime();
-      const playing = typeof player.getPlayerState === 'function' && player.getPlayerState() === 1;
+    if (!following || active < 0 || !list.current) return;
+    const row = list.current.querySelector<HTMLElement>(`[data-sub-idx="${active}"]`);
+    if (!row) return;
+    // Scroll only this list, never the page or the pinned video.
+    const top = row.offsetTop - (list.current.clientHeight - row.clientHeight) / 2;
+    list.current.scrollTo({ top: Math.max(0, top), behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }, [active, following]);
 
-      // A tap-to-seek is in flight: the player still reports the pre-seek position while
-      // buffering. Keep the tapped sentence on screen instead of snapping back to the
-      // previous one, until the real time arrives (or the guard times out).
-      const seek = seekTargetRef.current;
-      if (seek) {
-        if (Math.abs(t - seek.t) <= 1.5 || Date.now() > seek.until) {
-          seekTargetRef.current = null;
-        } else {
-          if (playing !== isPlayingRef.current) {
-            isPlayingRef.current = playing;
-            setIsPlaying(playing);
-          }
-          return;
-        }
-      }
+  if (unavailable) return <section dir="rtl" className="rounded-3xl border border-amber-300/25 bg-[#151329] p-5 text-white space-y-4">
+    <h2 className="flex items-center gap-2 text-xl font-black"><AlertCircle/>المقطع تحت المراجعة</h2>
+    <p dir="ltr" className="font-bold">{scene.movieTitle} - {scene.sceneTitle}</p>
+    <p className="text-sm leading-8 text-white/70">بنختار مشهدا قصيرا له نص كامل وتوقيت مؤكد. التدريب متوقف مؤقتا بدل عرض فيديو طويل بنص ناقص.</p>
+    {onBackToSearch && <button onClick={onBackToSearch} className="min-h-12 rounded-xl bg-amber-200 px-5 font-bold text-slate-950">العودة لنتائج البحث</button>}
+  </section>;
 
-      // Keep the UI play/pause state honest even if a state event was missed (mobile iframe taps)
-      if (playing !== isPlayingRef.current) {
-        isPlayingRef.current = playing;
-        setIsPlaying(playing);
-      }
-
-      // If looping active line
-      if (playing && loopLineRef.current && scene.subtitles[activeSubIdxRef.current]) {
-        const curSub = scene.subtitles[activeSubIdxRef.current];
-        if (t >= curSub.end || t < curSub.start) {
-          player.seekTo(curSub.start, true);
-          setCurrentTime(curSub.start);
-          return;
-        }
-      }
-
-      // The catalog's historical excerpt endTime is not a verified video duration.
-      // Let YouTube stop at its actual end so no opening or closing dialogue is cut.
-      setCurrentTime(prev => (Math.abs(prev - t) > 0.15 ? t : prev));
-    }, 250);
-
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [scene]);
-
-  // Never show a future or already-finished excerpt as currently spoken.
-  useEffect(() => {
-    const idx = activeSubtitleAt(scene.subtitles, currentTime);
-    activeSubIdxRef.current = idx;
-    setActiveSubtitleIndex(idx);
-  }, [currentTime, scene.subtitles]);
-
-  // Keep the active sentence visible in the transcript list as it changes with playback
-  useEffect(() => {
-    const list = transcriptListRef.current;
-    if (!list) return;
-    const row = list.querySelector(`[data-sub-idx="${activeSubtitleIndex}"]`);
-    row?.scrollIntoView({ behavior: 'instant', block: 'nearest' });
-  }, [activeSubtitleIndex]);
-
-  // Jump to specific subtitle time
-  const handleJumpToSubtitle = (sub: TimedSubtitle, idx: number) => {
-    playSound('click');
-    setCurrentTime(sub.start);
-    activeSubIdxRef.current = idx;
-    setActiveSubtitleIndex(idx);
-    const player = playerRef.current;
-    if (player && playerReadyRef.current) {
-      seekTargetRef.current = { t: sub.start, until: Date.now() + 4000 };
-      player.seekTo(sub.start, true);
-      player.playVideo();
-      isPlayingRef.current = true;
-      setIsPlaying(true);
-    } else {
-      // Player iframe still loading: apply the jump the moment it becomes ready
-      pendingSeekRef.current = sub.start;
-    }
-  };
-
-  // Toggle Play / Pause (uses the real player state, never a blind toggle)
-  const handleTogglePlay = () => {
-    playSound('click');
-    const player = playerRef.current;
-    if (player && playerReadyRef.current) {
-      const state = typeof player.getPlayerState === 'function'
-        ? player.getPlayerState()
-        : (isPlaying ? 1 : -1);
-      if (state === 1) {
-        player.pauseVideo();
-      } else {
-        // Resume inside the scene window if the pointer drifted outside it
-        const t = typeof player.getCurrentTime === 'function' ? player.getCurrentTime() : currentTime;
-        if (t < sceneStart || (typeof player.getDuration === 'function' && player.getDuration() > 0 && t >= player.getDuration())) {
-          seekTargetRef.current = { t: sceneStart, until: Date.now() + 4000 };
-          player.seekTo(sceneStart, true);
-        }
-        player.playVideo();
-      }
-    }
-  };
-
-  // Speed changer
-  const handleSpeedChange = (speed: 0.5 | 0.75 | 1.0) => {
-    playSound('click');
-    setPlaybackSpeed(speed);
-    const player = playerRef.current;
-    if (player && playerReadyRef.current && typeof player.setPlaybackRate === 'function') {
-      player.setPlaybackRate(speed);
-    }
-  };
-
-  // Word Click Handler for interactive vocabulary lookup
-  const handleWordClick = (word: SubtitleWord) => {
-    playSound('pop');
-    setSelectedWord(word);
-    speakText(word.word, { speed: 0.92 });
-  };
-
-  // Save word to vocabulary deck
-  const handleSaveWord = (wordStr: string) => {
-    playSound('success');
-    if (!savedWords.includes(wordStr)) {
-      setSavedWords([...savedWords, wordStr]);
-    }
-  };
-
-  // Echo Speaking Recorder
-  const handleStartEcho = (targetSentence: string) => {
-    playSound('click');
-    if (!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
-      alert('ميزة الميكروفون تتطلب متصفحاً حديثاً يدعم Web Speech API.');
-      return;
-    }
-
-    try {
-      // @ts-expect-error - Web Speech API window fallback
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-      const recognition = new SpeechRecognition();
-      recognition.lang = 'en-US';
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
-
-      setIsEchoRecording(true);
-      setEchoFeedback('ردد الآن بصوتك وراء الممثل...');
-
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript.toLowerCase();
-        const targetClean = targetSentence.toLowerCase().replace(/[^a-z0-9\s]/g, '');
-        const transClean = transcript.replace(/[^a-z0-9\s]/g, '');
-
-        setIsEchoRecording(false);
-        if (transClean === targetClean) {
-          setEchoScore(100);
-          setEchoFeedback('رائع جداً! تقمصت نطق الممثل بنسبة 100%');
-          playSound('success');
-        } else {
-          const targetWords = targetClean.split(' ');
-          const heardWords = transClean.split(' ');
-          let matches = 0;
-          targetWords.forEach(w => {
-            if (heardWords.includes(w)) matches++;
-          });
-          const score = Math.max(65, Math.round((matches / targetWords.length) * 100));
-          setEchoScore(score);
-          setEchoFeedback(`سمعنا: "${transcript}" • دقة النطق والمحاكاة: ${score}%`);
-          playSound('click');
-        }
-      };
-
-      recognition.onerror = () => {
-        setIsEchoRecording(false);
-        setEchoFeedback('تعذر التقاط الصوت، تأكد من عمل الميكروفون وحاول ثانية.');
-      };
-
-      recognition.start();
-    } catch {
-      setIsEchoRecording(false);
-      setEchoFeedback('تعذر تشغيل الميكروفون في المتصفح.');
-    }
-  };
-
-  if (scene.transcriptTimingStatus === 'quarantined') {
-    return <section dir="rtl" className="rounded-3xl border border-amber-300/25 bg-[#151329] p-5 sm:p-8 text-right text-white space-y-5">
-      <div className="flex items-center gap-3"><AlertCircle className="text-amber-200 shrink-0"/><h2 className="font-black text-xl">المقطع تحت المراجعة</h2></div>
-      <p className="font-bold" dir="ltr">{scene.movieTitle} - {scene.sceneTitle}</p>
-      <p className="text-sm leading-8 text-white/70">التدريب على المقطع ده متوقف مؤقتا لحد ما نراجع النص وتوقيتاته على المصدر. مش هنعرض جمل أو ترجمة غير مؤكدة.</p>
-      <p className="text-xs leading-7 text-white/50">المقطع محفوظ في المكتبة ومش محذوف. اختار مقطعا تانيا للتدريب دلوقتي.</p>
-      {onBackToSearch && <button onClick={onBackToSearch} className="min-h-12 rounded-xl bg-amber-200 px-5 font-bold text-slate-950">العودة لنتائج البحث</button>}
-    </section>;
-  }
-  return (
-    <div className="space-y-6 text-right selection:bg-purple-500/30">
-      {/* Top Header & Back Button */}
-      <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-4 flex-wrap">
-        <div className="space-y-1">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30">
-            <Video className="w-3.5 h-3.5" />
-            <span>LEARN FROM MOVIES STUDIO • ستوديو السينما التعليمي</span>
+  return <section dir="rtl" className="movie-studio text-right text-white">
+    <header className="flex flex-wrap items-center justify-between gap-3 pb-3">
+      <div><p className="text-[11px] font-bold text-purple-300">مشهد قصير للتعلم</p><h2 className="text-lg font-black">{scene.movieTitle}</h2></div>
+      {onBackToSearch && <button onClick={onBackToSearch} className="flex min-h-11 items-center gap-1 rounded-xl bg-white/10 px-3 text-xs font-bold"><ChevronRight size={16}/>العودة للبحث</button>}
+    </header>
+    <div className="movie-studio-workspace">
+      <div className="movie-studio-player" data-testid="pinned-player">
+        <div className="movie-studio-frame"><div ref={host} className="h-full w-full" title={scene.movieTitle}/></div>
+        <div className="flex min-h-12 flex-wrap items-center justify-between gap-2 rounded-b-2xl bg-[#151329] px-3 py-2">
+          <div className="flex items-center gap-2">
+            <button aria-label={playing ? 'إيقاف مؤقت' : 'تشغيل المشهد'} disabled={!ready || error} onClick={() => {
+              if (playing) player.current?.pauseVideo?.();
+              else if (ended || currentTime >= end || currentTime < start) loadClip(start);
+              else player.current?.playVideo?.();
+            }} className="rounded-xl bg-purple-600 p-2 disabled:opacity-40">{playing ? <Pause size={18}/> : <Play size={18}/>}</button>
+            <button aria-label="إعادة المشهد من بدايته" onClick={() => loadClip(start)} className="rounded-xl bg-white/10 p-2"><RotateCcw size={18}/></button>
+            <span dir="ltr" className="text-[11px] tabular-nums text-white/70">{timeLabel(currentTime - start)} / {timeLabel(end - start)}</span>
           </div>
-          <h2 className="text-xl sm:text-3xl font-black text-white flex items-center gap-2">
-            <span>{scene.movieTitle} ({scene.releaseYear})</span>
-          </h2>
-          <p className="text-xs sm:text-sm text-white/60">
-            {scene.sceneTitle} • إخراج: {scene.director} • تصنيف: {scene.genre}
-          </p>
+          <select aria-label="سرعة المشهد" value={speed} onChange={event => { const value = Number(event.target.value); setSpeed(value); player.current?.setPlaybackRate?.(value); }} className="rounded-lg bg-[#27233e] px-2 py-1 text-xs">{[0.5, 0.75, 1].map(s => <option key={s} value={s}>{s}x</option>)}</select>
         </div>
-
-        {onBackToSearch && (
-          <button
-            onClick={onBackToSearch}
-            className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-bold transition-all border border-white/10 cursor-pointer flex items-center gap-2"
-          >
-            <span>العودة لنتائج البحث</span>
-            <ChevronRight className="w-4 h-4" />
-          </button>
-        )}
+        {error && <p role="alert" className="bg-[#151329] p-3 text-xs leading-6 text-amber-200">تعذر تشغيل المصدر هنا. تقدر تفتحه من رابط المصدر تحت.</p>}
+        {ended && <p role="status" className="bg-[#151329] p-2 text-center text-xs text-purple-200">انتهى المشهد القصير. اضغط إعادة عشان تراجعه.</p>}
       </div>
-
-      {/* Main Studio Grid: Desktop Split (Video + Transcripts) / Mobile Stacked */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        {/* Left/Main Column: Video Player & Controls (7 Cols on desktop) */}
-        <div className="lg:col-span-7 space-y-4">
-          {/* Responsive 16:9 Video Box */}
-          <div className="relative w-full aspect-video rounded-3xl overflow-hidden bg-black/80 border border-white/15 shadow-2xl">
-            <div ref={playerContainerRef} className="w-full h-full" title={`${scene.movieTitle} Scene`} />
-          </div>
-
-          {/* Interactive Player Controls Bar */}
-          <div className="p-4 rounded-2xl glass-panel border border-white/10 flex items-center justify-between gap-3 flex-wrap bg-[#151329]/90 backdrop-blur-xl">
-            {/* Play/Pause & Replay */}
-            <div className="flex items-center gap-2">
-              <button
-                onClick={handleTogglePlay}
-                disabled={!isPlayerReady}
-                title={isPlayerReady ? 'تشغيل أو إيقاف المشهد' : 'المشغل بيحمّل...'}
-                className="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-lg shadow-purple-600/30 flex items-center gap-2 cursor-pointer disabled:opacity-50 disabled:cursor-wait"
-              >
-                {isPlaying ? <Pause className="w-4 h-4 fill-current" /> : <Play className="w-4 h-4 fill-current" />}
-                <span>{isPlaying ? 'إيقاف مؤقت' : 'تشغيل المقطع'}</span>
-              </button>
-
-              <button
-                onClick={() => {
-                  playSound('click');
-                  setCurrentTime(sceneStart);
-                  activeSubIdxRef.current = -1;
-                  setActiveSubtitleIndex(-1);
-                  const player = playerRef.current;
-                  if (player && playerReadyRef.current) {
-                    seekTargetRef.current = { t: sceneStart, until: Date.now() + 4000 };
-                    player.seekTo(sceneStart, true);
-                    player.playVideo();
-                    isPlayingRef.current = true;
-                    setIsPlaying(true);
-                  }
-                }}
-                title="إعادة المشهد من البداية"
-                className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 hover:text-white border border-white/10 transition-all cursor-pointer"
-              >
-                <RotateCcw className="w-4 h-4" />
-              </button>
-
-              {/* Loop Current Subtitle Line */}
-              <button
-                onClick={() => {
-                  playSound('click');
-                  if (activeSubtitleIndex < 0) return;
-                  loopLineRef.current = !isLoopingCurrentLine;
-                  setIsLoopingCurrentLine(!isLoopingCurrentLine);
-                }}
-                disabled={activeSubtitleIndex < 0}
-                title="تكرار الجملة الحالية باستمرار للإتقان"
-                className={`px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
-                  isLoopingCurrentLine
-                    ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/30'
-                    : 'bg-white/5 text-white/70 hover:text-white hover:bg-white/10 border border-white/10'
-                }`}
-              >
-                <Repeat className="w-3.5 h-3.5" />
-                <span>تكرار الجملة</span>
-              </button>
-            </div>
-
-            {/* Speed Selector */}
-            <div className="flex items-center gap-1">
-              <span className="text-[11px] text-white/40 ml-1 font-bold">السرعة:</span>
-              {[0.5, 0.75, 1.0].map(s => (
-                <button
-                  key={s}
-                  onClick={() => handleSpeedChange(s as any)}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                    playbackSpeed === s
-                      ? 'bg-purple-600 text-white shadow-md'
-                      : 'bg-white/5 text-white/60 hover:text-white border border-white/5'
-                  }`}
-                >
-                  {s}x
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-2xl border border-amber-300/20 bg-amber-300/5 p-4 text-xs leading-7 text-amber-100">
-            الفيديو بيبدأ من 0:00. التوقيت المعروض هو توقيت الفيديو الأصلي، مش مؤقت جديد للمقتطف.
-            النصوص التعليمية المتاحة مش بالضرورة تفريغا كاملا؛ الفترات اللي من غير نص مش بنعرض فيها جملة من وقت تاني.
-            {scene.transcriptTimingStatus === 'caption-reviewed' ? ' المقتطفات دي مراجعة على ترجمة الفيديو المتاحة، مش مراجعة صوتية دقيقة؛ ممكن توجد فروق بسيطة في التوقيت أو الكلمات.' : scene.transcriptTimingStatus !== 'reviewed-excerpts' && ' توقيتات المقتطفات دي لسه محتاجة مراجعة على المصدر، ومش بنعتبرها تفريغا متزامنا موثقا.'}
-          </div>
-          {activeSubtitleIndex === -1 && (
-            <p role="status" className="rounded-2xl border border-white/10 p-5 text-sm leading-7 text-white/65">
-              مفيش سطر نصي مطابق للحظة دي في النص المتاح. الفيديو بيكمل من غير تخطي.
-            </p>
-          )}
-          {/* Current Subtitle Spotlight Card */}
-          {scene.subtitles[activeSubtitleIndex] && (
-            <div className="p-5 rounded-3xl bg-gradient-to-r from-purple-950/40 via-[#181333] to-[#141226] border border-purple-500/30 space-y-3 shadow-xl">
-              <div className="flex items-center justify-between text-xs text-purple-300">
-                <span className="font-bold flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-purple-400" />
-                  <span>{scene.transcriptTimingStatus === 'reviewed-excerpts' ? 'الجملة الجاري نطقها في المشهد:' : scene.transcriptTimingStatus === 'caption-reviewed' ? 'مقتطف مراجع على ترجمة الفيديو:' : 'مقتطف تعليمي: توقيته محتاج مراجعة'}</span>
-                </span>
-                <span className="font-mono text-white/40">
-                  {scene.subtitles[activeSubtitleIndex].start}s - {scene.subtitles[activeSubtitleIndex].end}s
-                </span>
-              </div>
-
-              {/* English Dialogue with Interactive Clickable Words */}
-              <div className="text-left leading-loose" dir="ltr">
-                <p className="text-lg sm:text-xl font-black text-white" dir="ltr">
-                  {scene.subtitles[activeSubtitleIndex].en.split(' ').map((wordRaw, wIdx) => {
-                    const clean = wordRaw.toLowerCase().replace(/[^a-z]/g, '');
-                    const kw = scene.subtitles[activeSubtitleIndex].keyWords.find(
-                      k => k.word.toLowerCase() === clean
-                    );
-                    return (
-                      <span
-                        key={wIdx}
-                        onClick={() =>
-                          kw
-                            ? handleWordClick(kw)
-                            : handleWordClick({
-                                word: clean,
-                                ipa: `/${clean}/`,
-                                meaningAr: 'كلمة في المشهد',
-                                meaningEn: 'context word',
-                              })
-                        }
-                        className={`inline-block mr-1.5 transition-all cursor-pointer hover:underline ${
-                          kw
-                            ? 'text-amber-300 font-black hover:text-amber-200 bg-amber-400/10 px-1 rounded'
-                            : 'hover:text-purple-300'
-                        }`}
-                      >
-                        {wordRaw}
-                      </span>
-                    );
-                  })}
-                </p>
-              </div>
-
-              {/* Egyptian Arabic Translation */}
-              <div className="pt-2 border-t border-white/10 text-right space-y-1">
-                <p className="text-base sm:text-lg font-bold text-white/95">
-                  "{scene.subtitles[activeSubtitleIndex].arEg}"
-                </p>
-                {showFushaSubtitles && (
-                  <p className="text-xs text-white/60 italic">
-                    الفصحى: "{scene.subtitles[activeSubtitleIndex].arFusha}"
-                  </p>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* Interactive Word Inspector Modal / Card */}
-          {selectedWord && (
-            <div className="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-between gap-4 text-right flex-wrap">
-              <div className="space-y-0.5">
-                <div className="flex items-center gap-2">
-                  <span className="text-base font-black text-amber-300">{selectedWord.word}</span>
-                  <span className="text-xs font-mono text-white/60">{selectedWord.ipa}</span>
-                  <button
-                    onClick={() => speakText(selectedWord.word, { speed: 0.92 })}
-                    className="p-1 rounded bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 cursor-pointer"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-                <p className="text-xs font-bold text-white/90">
-                  المعنى بالعامية المصرية: {selectedWord.meaningAr}
-                </p>
-                <p className="text-[11px] text-white/60">English: {selectedWord.meaningEn}</p>
-              </div>
-
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => handleSaveWord(selectedWord.word)}
-                  disabled={savedWords.includes(selectedWord.word)}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
-                    savedWords.includes(selectedWord.word)
-                      ? 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'
-                      : 'bg-amber-500 text-white shadow-md shadow-amber-500/25 hover:bg-amber-400'
-                  }`}
-                >
-                  <Award className="w-3.5 h-3.5" />
-                  <span>{savedWords.includes(selectedWord.word) ? 'محفوظة في الكلمات' : 'حفظ في المفردات'}</span>
-                </button>
-                <button
-                  onClick={() => setSelectedWord(null)}
-                  className="text-xs text-white/40 hover:text-white px-2 py-1 cursor-pointer"
-                >
-                  إغلاق
-                </button>
-              </div>
-            </div>
-          )}
+      <div className="movie-studio-script">
+        <div className="flex items-center justify-between gap-2 border-b border-white/10 px-4 py-3">
+          <h3 className="flex items-center gap-2 text-sm font-black"><Languages size={17}/>نص المشهد القصير</h3>
+          <button aria-pressed={following} onClick={() => setFollowing(!following)} className={`min-h-10 rounded-xl px-3 text-xs font-bold ${following ? 'bg-purple-500/20 text-purple-200' : 'bg-amber-300 text-slate-950'}`}>{following ? 'متابعة تلقائية' : 'متابعة الجملة'}</button>
         </div>
-
-        {/* Right Column: Interactive Tabs (Transcript, Vocabulary, Quizzes, Echo) (5 Cols on desktop) */}
-        <div className="lg:col-span-5 space-y-4">
-          {/* Tab Selector */}
-          <div className="grid grid-cols-4 gap-1 p-1.5 rounded-2xl bg-white/5 border border-white/10">
-            {[
-              { id: 'transcript', label: 'السيناريو', icon: Languages },
-              { id: 'vocabulary', label: 'المصطلحات', icon: Sparkles },
-              { id: 'quizzes', label: 'الاختبار', icon: HelpCircle },
-              { id: 'echo', label: 'تحدي النطق', icon: Mic },
-            ].map(tab => {
-              const Icon = tab.icon;
-              const isActive = activeTab === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => {
-                    playSound('click');
-                    setActiveTab(tab.id as any);
-                  }}
-                  className={`py-2 px-1 rounded-xl text-xs font-black transition-all cursor-pointer flex flex-col items-center justify-center gap-1 ${
-                    isActive
-                      ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
-                      : 'text-white/60 hover:text-white hover:bg-white/5'
-                  }`}
-                >
-                  <Icon className="w-3.5 h-3.5" />
-                  <span>{tab.label}</span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* TAB 1: SYNCHRONIZED INTERACTIVE TRANSCRIPT */}
-          {activeTab === 'transcript' && (
-            <div className="space-y-3">
-              <div className="flex items-center justify-between text-xs text-white/50 px-1">
-                <span>المقتطفات النصية المتاحة. اضغط على جملة للانتقال لتوقيتها:</span>
-                <button
-                  onClick={() => setShowFushaSubtitles(!showFushaSubtitles)}
-                  className="text-purple-300 hover:text-purple-200 underline cursor-pointer"
-                >
-                  {showFushaSubtitles ? 'إخفاء الفصحى' : 'عرض الفصحى'}
-                </button>
-              </div>
-
-              <div ref={transcriptListRef} className="max-h-[500px] overflow-y-auto space-y-2.5 pr-1 scrollbar-thin">
-                {scene.subtitles.map((sub, idx) => {
-                  const isActive = activeSubtitleIndex === idx;
-                  return (
-                    <div
-                      key={sub.id}
-                      data-sub-idx={idx}
-                      onClick={() => handleJumpToSubtitle(sub, idx)}
-                      className={`p-3.5 rounded-2xl border transition-all cursor-pointer text-right space-y-1.5 ${
-                        isActive
-                          ? 'bg-purple-600/25 border-purple-500 shadow-lg shadow-purple-500/10'
-                          : 'bg-white/5 hover:bg-white/10 border-white/5 hover:border-white/15'
-                      }`}
-                    >
-                      <div className="flex items-center justify-between text-[11px] text-white/40">
-                        <span className="font-bold text-purple-300">{sub.speaker || 'Actor'}</span>
-                        <span className="font-mono">{sub.start}s - {sub.end}s</span>
-                      </div>
-                      <p className="text-sm font-bold text-white text-left leading-relaxed" dir="ltr">
-                        {sub.en}
-                      </p>
-                      <p className="text-xs font-semibold text-white/80">
-                        "{sub.arEg}"
-                      </p>
-                      {showFushaSubtitles && (
-                        <p className="text-[11px] text-white/50 italic">
-                          "{sub.arFusha}"
-                        </p>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          )}
-
-          {/* TAB 2: EXTRACTED SCENE VOCABULARY & IDIOMS */}
-          {activeTab === 'vocabulary' && (
-            <div className="space-y-3 max-h-[500px] overflow-y-auto pr-1">
-              <div className="p-3 rounded-2xl bg-white/5 border border-white/10 text-xs text-white/70">
-                المصطلحات والتعبيرات الدارجة المستخلصة من هذا المشهد مع المعادل المصري:
-              </div>
-
-              {scene.vocabulary.map((vocab, idx) => (
-                <div
-                  key={idx}
-                  className="p-4 rounded-2xl bg-[#161329] border border-white/10 space-y-2 text-right"
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="px-2.5 py-0.5 rounded-full text-[11px] font-black bg-amber-500/20 text-amber-300 border border-amber-500/30">
-                      {vocab.type.toUpperCase()}
-                    </span>
-                    <h4 className="text-base font-black text-white text-left">{vocab.term}</h4>
-                  </div>
-                  <div className="space-y-1 text-xs">
-                    <p className="text-white/90 font-bold">
-                      المعنى: {vocab.meaningAr}
-                    </p>
-                    <p className="text-amber-300 font-semibold">
-                      المعادل في العامية المصرية: "{vocab.egyptianEquivalent}"
-                    </p>
-                    <p className="text-white/50 text-left italic">
-                      "{vocab.exampleInScene}"
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* TAB 3: SCENE-BASED QUIZZES */}
-          {activeTab === 'quizzes' && (
-            <div className="p-5 rounded-3xl glass-panel border border-white/10 space-y-5 text-right bg-[#161329]">
-              {scene.quizzes.length === 0 ? (
-                <p className="text-xs text-white/60 text-center py-6">لا توجد اختبارات لهذا المشهد حالياً.</p>
-              ) : (
-                <>
-                  <div className="flex items-center justify-between text-xs font-bold text-white/50 border-b border-white/10 pb-2">
-                    <span>اختبار فهم المشهد السينمائي</span>
-                    <span>سؤال {currentQuizIdx + 1} من {scene.quizzes.length}</span>
-                  </div>
-
-                  {(() => {
-                    const q = scene.quizzes[currentQuizIdx] || scene.quizzes[0];
-                    return (
-                      <div className="space-y-4">
-                        <div className="space-y-1">
-                          <h4 className="text-sm sm:text-base font-black text-white text-left">
-                            {q.questionEn}
-                          </h4>
-                          <p className="text-xs text-amber-300 font-bold">
-                            {q.questionAr}
-                          </p>
-                        </div>
-
-                        {/* Options */}
-                        <div className="space-y-2">
-                          {q.options.map((opt, oIdx) => {
-                            const isSelected = selectedQuizOption === oIdx;
-                            const isCorrect = oIdx === q.correctIndex;
-                            let style = 'bg-white/5 text-white/80 border-white/10 hover:bg-white/10';
-
-                            if (quizSubmitted) {
-                              if (isCorrect) {
-                                style = 'bg-emerald-500/25 text-emerald-200 border-emerald-500 font-black';
-                              } else if (isSelected && !isCorrect) {
-                                style = 'bg-rose-500/25 text-rose-200 border-rose-500 line-through';
-                              }
-                            } else if (isSelected) {
-                              style = 'bg-purple-600 text-white border-purple-500 shadow-md';
-                            }
-
-                            return (
-                              <button
-                                key={oIdx}
-                                onClick={() => {
-                                  if (!quizSubmitted) {
-                                    playSound('click');
-                                    setSelectedQuizOption(oIdx);
-                                  }
-                                }}
-                                className={`w-full p-3 rounded-xl border text-xs sm:text-sm text-left transition-all cursor-pointer font-medium ${style}`}
-                              >
-                                {opt}
-                              </button>
-                            );
-                          })}
-                        </div>
-
-                        {/* Explanation when submitted */}
-                        {quizSubmitted && (
-                          <div className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-1 text-xs">
-                            <span className="font-bold text-purple-300 block">شرح الإجابة النموذجية:</span>
-                            <p className="text-white/80 leading-relaxed">{q.explanationAr}</p>
-                          </div>
-                        )}
-
-                        {/* Submit / Next Button */}
-                        <div className="pt-2 flex items-center justify-between">
-                          {!quizSubmitted ? (
-                            <button
-                              onClick={() => {
-                                if (selectedQuizOption === null) return;
-                                setQuizSubmitted(true);
-                                if (selectedQuizOption === q.correctIndex) {
-                                  playSound('success');
-                                  setQuizScore(s => s + 1);
-                                } else {
-                                  playSound('error');
-                                }
-                              }}
-                              disabled={selectedQuizOption === null}
-                              className="px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-md cursor-pointer disabled:opacity-40"
-                            >
-                              تأكيد الإجابة
-                            </button>
-                          ) : (
-                            <button
-                              onClick={() => {
-                                playSound('click');
-                                setQuizSubmitted(false);
-                                setSelectedQuizOption(null);
-                                setCurrentQuizIdx(idx => (idx + 1) % scene.quizzes.length);
-                              }}
-                              className="px-5 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs transition-all shadow-md cursor-pointer"
-                            >
-                              السؤال التالي
-                            </button>
-                          )}
-                          <span className="text-xs font-bold text-white/50">
-                            النتيجة: {quizScore} / {scene.quizzes.length}
-                          </span>
-                        </div>
-                      </div>
-                    );
-                  })()}
-                </>
-              )}
-            </div>
-          )}
-
-          {/* TAB 4: ECHO SPEAKING PRONUNCIATION MODE */}
-          {activeTab === 'echo' && (
-            <div className="p-5 rounded-3xl glass-panel border border-white/10 space-y-5 text-right bg-[#161329]">
-              <div className="space-y-1">
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-black bg-purple-500/20 text-purple-300 border border-purple-500/30">
-                  تحدي محاكاة نطق الممثل • Echo Speaking
-                </span>
-                <h4 className="text-sm font-bold text-white">
-                  استمع للجملة الأيقونية من المشهد ثم اضغط على الميكروفون وسجل بصوتك لمحاكاتها:
-                </h4>
-              </div>
-
-              {scene.speakingLines && scene.speakingLines.length > 0 && (
-                <div className="space-y-4">
-                  {/* Active target line */}
-                  <div className="p-4 rounded-2xl bg-black/40 border border-white/15 space-y-2">
-                    <p className="text-base sm:text-lg font-black text-white text-left" dir="ltr">
-                      "{scene.speakingLines[echoLineIdx].en}"
-                    </p>
-                    <p className="text-xs text-amber-300 font-bold">
-                      المعنى: "{scene.speakingLines[echoLineIdx].arEg}"
-                    </p>
-                  </div>
-
-                  {/* Actions: Listen & Record */}
-                  <div className="flex items-center justify-center gap-3">
-                    <button
-                      onClick={() => speakText(scene.speakingLines[echoLineIdx].en, { speed: 0.92 })}
-                      className="px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs transition-all border border-white/15 cursor-pointer flex items-center gap-2"
-                    >
-                      <Volume2 className="w-4 h-4" />
-                      <span>استمع لنطق الجملة</span>
-                    </button>
-
-                    <button
-                      onClick={() => handleStartEcho(scene.speakingLines[echoLineIdx].en)}
-                      disabled={isEchoRecording}
-                      className={`px-5 py-2.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-2 ${
-                        isEchoRecording
-                          ? 'bg-rose-500 text-white animate-pulse'
-                          : 'bg-purple-600 hover:bg-purple-500 text-white shadow-lg shadow-purple-600/30'
-                      }`}
-                    >
-                      <Mic className="w-4 h-4" />
-                      <span>{isEchoRecording ? 'جاري الاستماع...' : 'سجل بصوتك الآن'}</span>
-                    </button>
-                  </div>
-
-                  {/* Feedback Box */}
-                  {echoFeedback && (
-                    <div className="p-3.5 rounded-2xl bg-blue-500/10 border border-blue-500/20 space-y-1 text-xs">
-                      <div className="flex items-center justify-between font-black text-blue-300">
-                        <span>نتيجة المحاكاة الصوتية:</span>
-                        {echoScore !== null && (
-                          <span className="px-2 py-0.5 rounded-md bg-blue-500 text-white font-black">
-                            {echoScore}%
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-white/80">{echoFeedback}</p>
-                    </div>
-                  )}
-
-                  {/* Next Speaking Line Switcher */}
-                  {scene.speakingLines.length > 1 && (
-                    <div className="pt-2 flex items-center justify-end">
-                      <button
-                        onClick={() => {
-                          playSound('click');
-                          setEchoLineIdx(idx => (idx + 1) % scene.speakingLines.length);
-                          setEchoFeedback(null);
-                          setEchoScore(null);
-                        }}
-                        className="text-xs text-purple-300 hover:text-purple-200 underline cursor-pointer"
-                      >
-                        جملة أيقونية أخرى من المشهد ({echoLineIdx + 1}/{scene.speakingLines.length})
-                      </button>
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          )}
+        <div ref={list} className="movie-studio-cues" data-testid="cue-list" onWheel={() => setFollowing(false)} onTouchMove={() => setFollowing(false)} onPointerDown={event => { if (event.target === event.currentTarget) setFollowing(false); }} onKeyDown={event => { if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].includes(event.key)) setFollowing(false); }} tabIndex={0} aria-label="جمل المشهد المتزامنة">
+          {scene.subtitles.map((sub, index) => <button key={sub.id} data-sub-idx={index} aria-current={active === index ? 'true' : undefined} onClick={() => { setFollowing(true); loadClip(sub.start); }} className={`movie-studio-cue ${active === index ? 'is-active' : ''}`}>
+            <span className="mb-2 flex justify-between text-[11px] text-purple-200"><span>{sub.speaker || 'نص المصدر'}</span><span dir="ltr">{timeLabel(sub.start - start)} - {timeLabel(sub.end - start)}</span></span>
+            <span dir="ltr" lang="en" className="block text-left text-base font-bold leading-8">{sub.en}</span>
+            <span lang="ar-EG" className="mt-2 block text-sm leading-8 text-white/85">{sub.arEg}</span>
+            {fusha && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
+          </button>)}
+          <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? 'إخفاء الفصحى' : 'عرض الفصحى'}</button>
+          {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>فكرة المشهد: </strong>{movieSourceSummaries[scene.youtubeId]}</p>}
+          <p className="text-[11px] leading-7 text-white/50">النص للمشهد القصير المعروض بس، مش للفيديو الأصلي كله. اضغط على الجملة لإعادتها. لمس القائمة أو تحريكها بيوقف المتابعة التلقائية.</p>
         </div>
+        <footer className="border-t border-white/10 px-4 py-3 text-[11px] leading-6 text-white/55">
+          <p>من توقيت المصدر {timeLabel(start)} إلى {timeLabel(end)}. {scene.transcriptTimingStatus === 'caption-reviewed' ? 'الحدود من ترجمة المصدر، مش مراجعة صوتية كلمة بكلمة.' : 'الافتتاحية دي مراجعة على صوت المصدر.'}</p>
+          <a href={`https://www.youtube.com/watch?v=${scene.youtubeId}`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-9 items-center gap-1 text-purple-200 underline"><ExternalLink size={12}/>المصدر على YouTube</a>
+          <span className="mr-3">ترجمة YouTube من زر CC لو متاحة.</span>
+        </footer>
       </div>
     </div>
-  );
+  </section>;
 };

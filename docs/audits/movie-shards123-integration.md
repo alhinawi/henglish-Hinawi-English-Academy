@@ -1,15 +1,19 @@
-# Caption review integration: all 5 shards
+# Bounded learning scenes
 
-Input: 285 unique source records returned 2026-11-16, structurally valid. Shards1-3: 171 records (144 labeled reviewed, 27 partial). Shards4-5: 114 records (107 labeled reviewed, 7 partial). These are caption-track/ASR reviews, not waveform timing checks.
+2026-11-16: The owner chose very short scenes rather than a complete source video with gaps in the displayed script. The scene player now loads an explicit start/end window. Source uploads are not hosted or copied.
 
-Conservative publication gate: no remainingWork, at least one corrected supplied cue, every supplied cue score >= 0.8, positive source duration, and no caption-credit opening. This leaves **8 caption-reviewed source sets, 17 supplied cue corrections, 5 brief opening excerpts**. No complete-transcript claim. UI states caption-based review and possible timing/word differences.
+- Godfather: only 0-4.8 seconds, with the complete reviewed opening. The old later excerpts are not played or presented as this scene's script.
+- Eight other source sets have one short contiguous caption block each. Its ENTIRE supplied caption text is shown with Egyptian Arabic and optional formal Arabic, within 90 English characters per source. The full block's original caption bounds are used. These are caption-timed, not waveform-verified cuts. No complete-source-transcript claim.
+- 277 source IDs remain held. Weak matching, garbled ASR, incomplete fragments and disconnected excerpts do not become complete scenes. All 300 catalog entries / 286 source IDs are retained. Held sources expose no player or study text, including saved/history/direct inputs.
+- The strict gate requires completeSceneTranscript, positive source duration, scene bounds, full contiguous text coverage, per-cue source/bounds evidence, exact selected caption text, <=90 English characters across the scene and score >=0.8. A reviewStatus flag or fuzzy score alone never enables a source.
 
-**277 source IDs are unavailable for practice**, not deleted: all partials and sources containing weak matches/unresolved lines, including caption credits incorrectly offered as speech. Shards4-5 had no eligible source (all had remainingWork and correction records omitted matchScore). Godfather remains independently corrected. All 300 catalog records / 286 source IDs are preserved. Held sources expose no player, subtitles, quote, vocabulary, quiz, or echo tasks. Corrections cover old saved/history/direct inputs. No external source audio/video is bundled.
+The other returned caption samples remain private research, not a release of 160 greeting-only scenes. The shard 4-5 evidence has not been promoted. More clean contiguous segments need selection and sound checks, not bulk import.
 
-Held raw candidate reports remain private rather than publishing their dialogue. captionReviews.json stores their source identity, evidence, reasons and candidate counts with no held candidate text. Allowed reports retain reviewed cues and evidence caveats. A reviewStatus flag alone never enables publication.
+The player uses YouTube's loadVideoById object form with decimal startSeconds/endSeconds on every replay/cue tap. seekTo is not used because YouTube documents that it clears endSeconds. A 50ms source-clock boundary guard also pauses out-of-range native scrubbing. YouTube seeking is keyframe-based; these controls are not a frame-accurate media editor. Native CC requests English when available, but language availability and caption accuracy are not guaranteed. The source remains linked.
 
-One clear Arabic issue was corrected: Batman opening addresses Bruce in the masculine, not Rachel in the feminine. Source remains only caption-reviewed.
+Portrait: pinned video and compact controls; script has its own scroll area below. Landscape/desktop: video and script side by side. Active cues highlight and smoothly center inside their own list. Wheel/touch/scroll-key input pauses following; the Follow button resumes it. Reduced-motion preference is respected.
 
-Checks: validate-movie-reviews.mjs; TypeScript; Arabic lint; production build; browser source-count checks (8 allowed / 277 held), cue bounds, no held-data leaks, stale cache normalization; 390px reviewed/held-state screenshots, no horizontal overflow/page errors. Actual playback was not repeated for all 285 sources by integrator.
+Checks: structural gate, TypeScript, Arabic lint, production build, source preservation, bounds/load/replay/native-drag behavior, active cue highlight, manual follow pause/resume, held-data and stale-cache checks; local 390px portrait and 844x390 landscape screenshots. Local timing/layout checks use a deterministic YouTube API stand-in; they do not certify live playback or frame-accurate cuts. Parent owns deployment and live verification.
 
-Remaining: raw matched-caption evidence for weak/unmatched candidates, caption-credit filtering, sound checks. Release held sources only after evidence resolves their gaps.
+API source: https://developers.google.com/youtube/iframe_api_reference
+Player parameters: https://developers.google.com/youtube/player_parameters
