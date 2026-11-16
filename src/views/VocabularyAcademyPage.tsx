@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../data/vocabularyAcademyData';
 import { VERB_TOOLKIT } from '../data/verbsData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
   calculateSM2,
@@ -43,6 +44,7 @@ interface VocabularyAcademyPageProps {
 
 export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ onNavigate }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const appText = useAppTextMap('vocabularyAcademyData');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<'explorer' | 'my-vocab' | 'expressions' | 'thematic' | 'verbs' | 'flashcards'>('explorer');
   const [isAdminOpen, setIsAdminOpen] = useState(false);
@@ -318,7 +320,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                   </div>
 
                   <p className="text-sm font-bold text-[#c4ff55] pt-1">
-                    {w.meaningAr}
+                    {txText(appText, w.meaningAr)}
                   </p>
 
                   <div className="pt-2 text-xs space-y-1 bg-white/5 p-3 rounded-xl border border-white/5">
@@ -326,7 +328,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                       "{w.exampleEn}"
                     </p>
                     <p className="text-white/60 text-[11px]">
-                      {w.exampleAr}
+                      {txText(appText, w.exampleAr)}
                     </p>
                   </div>
                 </div>
