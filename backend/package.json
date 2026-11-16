@@ -7,7 +7,8 @@
     "dev": "wrangler dev --local --persist-to .wrangler/state",
     "db:migrate:local": "wrangler d1 migrations apply henglish --local --persist-to .wrangler/state",
     "typecheck": "tsc --noEmit",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "test:certificates": "tsx test-certificates.ts"
   },
   "dependencies": {
     "hono": "^4.13.18"
@@ -15,6 +16,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20261115.1",
     "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "wrangler": "^4.162.0"
   }
