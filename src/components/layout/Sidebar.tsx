@@ -70,6 +70,7 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   'لوحة التحكم الإدارية': 'header.adminPanel',
   'الرئيسية هنجلش': 'sidebar.brandHome',
 };
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { playSound } from '../../utils/audio';
 import {
   LayoutDashboard,
@@ -106,6 +107,7 @@ import {
   User,
   Settings,
   LogOut,
+  Repeat,
   LogIn,
   UserPlus,
 } from 'lucide-react';
@@ -193,6 +195,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const [activeGrammarSection, setActiveGrammarSection] = React.useState<string>('Future Tenses');
 
   const { t, dir } = useLanguage();
+  const reduceMotion = useReducedMotion();
+  const [profileSheetOpen, setProfileSheetOpen] = React.useState(false);
   const tl = (label: string) => {
     const key = NAV_LABEL_KEYS[label.trim()];
     return key ? t(key) : label;
@@ -786,8 +790,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
             the bottom of the drawer; tap opens the dedicated profile page. */}
         {isMobileDrawer && userProfile && authSessionType !== 'guest' && (
           <button
-            onClick={() => handleNav('profile')}
+            onClick={() => { playSound('click'); onCloseMobile(); setProfileSheetOpen(true); }}
             className="mx-3 mt-2 mb-1 flex items-center gap-3 p-2.5 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors cursor-pointer shrink-0"
+            aria-haspopup="dialog"
           >
             <img
               src={userProfile.avatar}
@@ -851,6 +856,115 @@ export const Sidebar: React.FC<SidebarProps> = ({
       >
         {renderSidebarContent(true)}
       </aside>
+
+      {/* Profile bottom sheet (Hinawi 7:57): slides up from the bottom,
+          ChatGPT-style; closes on backdrop, X or swipe-down. */}
+      <AnimatePresence>
+        {profileSheetOpen && userProfile && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: reduceMotion ? 0.05 : 0.18 }}
+              className="fixed inset-0 z-[95] bg-black/70 backdrop-blur-sm md:hidden"
+              onClick={() => setProfileSheetOpen(false)}
+              aria-hidden="true"
+            />
+            <motion.div
+              role="dialog"
+              aria-label={t('profile.title')}
+              initial={{ y: '100%' }}
+              animate={{ y: 0 }}
+              exit={{ y: '100%' }}
+              transition={{ type: 'tween', duration: reduceMotion ? 0.08 : 0.24, ease: 'easeOut' }}
+              drag={reduceMotion ? false : 'y'}
+              dragConstraints={{ top: 0, bottom: 0 }}
+              dragElastic={{ top: 0, bottom: 0.5 }}
+              onDragEnd={(_e, info) => {
+                if (info.offset.y > 80 || info.velocity.y > 400) setProfileSheetOpen(false);
+              }}
+              className="fixed bottom-0 inset-x-0 z-[96] md:hidden rounded-t-3xl bg-[#171632] border-t border-white/15 shadow-2xl px-4 pt-2.5"
+              style={{ paddingBottom: 'calc(env(safe-area-inset-bottom, 0px) + 1rem)' }}
+            >
+              <div className="w-10 h-1 rounded-full bg-white/25 mx-auto mb-3" />
+              <div className="flex items-center gap-3 pb-3 border-b border-white/10">
+                <img
+                  src={userProfile.avatar}
+                  alt={userProfile.name}
+                  className="w-11 h-11 rounded-xl object-cover border border-[#ffd166]/40 shrink-0"
+                />
+                <div className="min-w-0 flex-1" style={{ textAlign: 'start' }}>
+                  <div className="text-sm font-black text-white truncate">{userProfile.nameAr}</div>
+                  <div dir="ltr" className="text-[11px] text-[#b9b6d5] truncate">{userProfile.email}</div>
+                </div>
+                <span className="shrink-0 text-[10px] font-black px-2 py-0.5 rounded-md bg-[#ffd166]/20 text-[#ffd166]">
+                  {userProfile.role === 'teacher' ? t('header.rankTeacher') : t('header.cefrLevel').replace('{level}', userProfile.currentLevel)}
+                </span>
+                <button
+                  onClick={() => setProfileSheetOpen(false)}
+                  className="p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/10 cursor-pointer shrink-0"
+                  aria-label={t('sidebar.close')}
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
+              <div className="py-2 space-y-0.5 text-sm font-bold max-h-[55vh] overflow-y-auto overscroll-contain">
+                {onOpenSettings && (
+                  <button
+                    onClick={() => { playSound('click'); setProfileSheetOpen(false); onOpenSettings(); }}
+                    className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <Settings className="w-[18px] h-[18px] text-[#41e7ff]" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('settings.title')}</span>
+                  </button>
+                )}
+                <button
+                  onClick={() => { setProfileSheetOpen(false); handleNav('my-learning'); }}
+                  className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                >
+                  <BookOpen className="w-[18px] h-[18px] text-[#41e7ff]" />
+                  <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.mySpaceNotes')}</span>
+                </button>
+                <button
+                  onClick={() => { setProfileSheetOpen(false); handleNav('certificates'); }}
+                  className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                >
+                  <Award className="w-[18px] h-[18px] text-[#ffd166]" />
+                  <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.myCertificates')}</span>
+                </button>
+                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && (
+                  <button
+                    onClick={() => { setProfileSheetOpen(false); handleNav('admin'); }}
+                    className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <ShieldCheck className="w-[18px] h-[18px] text-[#ffd166]" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.adminPanel')}</span>
+                  </button>
+                )}
+                {onToggleRole && (
+                  <button
+                    onClick={() => { playSound('click'); setProfileSheetOpen(false); onToggleRole(); }}
+                    className="w-full flex items-center gap-3 p-3 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <Repeat className="w-[18px] h-[18px] text-[#c4ff55]" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.roleToggle')}{userProfile.role === 'student' ? t('header.teacher') : t('header.student')}</span>
+                  </button>
+                )}
+                {onSignOut && (
+                  <button
+                    onClick={() => { playSound('click'); setProfileSheetOpen(false); onSignOut(); }}
+                    className="w-full flex items-center gap-3 p-3 rounded-xl text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer border border-red-500/20 mt-1.5"
+                  >
+                    <LogOut className="w-[18px] h-[18px] text-red-400" />
+                    <span dir="auto" className="flex-1 truncate" style={{ textAlign: 'start' }}>{t('header.logout')}</span>
+                  </button>
+                )}
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
 };
