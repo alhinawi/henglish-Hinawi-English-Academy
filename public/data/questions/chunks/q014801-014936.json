@@ -1,0 +1,2556 @@
+[
+ {
+  "id": "q-read-016465",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "How do cognitive scientists view expert intuition?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Intuition is frequently dismissed as irrational, yet cognitive scientists have shown that expert intuition is better understood as compressed experience. A chess grandmaster who 'senses' the right move is not guessing; she is drawing on thousands of previously encountered positions, retrieved so swiftly that the process feels instantaneous and effortless.",
+  "options": [
+   "As compressed experience",
+   "As irrational guessing",
+   "As a gift",
+   "As superstition"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "خبرة مضغوطة.",
+  "topic": "Reading: Cognitive science (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016466",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does the chess example illustrate?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Intuition is frequently dismissed as irrational, yet cognitive scientists have shown that expert intuition is better understood as compressed experience. A chess grandmaster who 'senses' the right move is not guessing; she is drawing on thousands of previously encountered positions, retrieved so swiftly that the process feels instantaneous and effortless.",
+  "options": [
+   "Chess is easy",
+   "Guessing works",
+   "Intuition draws on stored experience",
+   "Speed matters more"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "مواقف سابقة.",
+  "topic": "Reading: Cognitive science (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016467",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The process feels instantaneous and _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Intuition is frequently dismissed as irrational, yet cognitive scientists have shown that expert intuition is better understood as compressed experience. A chess grandmaster who 'senses' the right move is not guessing; she is drawing on thousands of previously encountered positions, retrieved so swiftly that the process feels instantaneous and effortless.",
+  "options": [
+   "costly",
+   "random",
+   "painful",
+   "effortless"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بلا مجهود.",
+  "topic": "Reading: Cognitive science (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016468",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The writer says the grandmaster is merely guessing.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Intuition is frequently dismissed as irrational, yet cognitive scientists have shown that expert intuition is better understood as compressed experience. A chess grandmaster who 'senses' the right move is not guessing; she is drawing on thousands of previously encountered positions, retrieved so swiftly that the process feels instantaneous and effortless.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مش بتخمن.",
+  "topic": "Reading: Cognitive science (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016469",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the debate really about?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Proponents of free trade argue that removing tariffs lowers prices and spurs innovation by exposing domestic firms to competition. Critics respond that the gains are unevenly distributed: consumers benefit, but entire communities dependent on a single industry may be devastated when it relocates abroad. The debate, therefore, hinges less on whether trade creates wealth than on who bears its costs.",
+  "options": [
+   "Who bears the costs of trade",
+   "Tariff names",
+   "Which country trades most",
+   "Whether trade exists"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مين بيتحمل التكلفة.",
+  "topic": "Reading: Trade (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016470",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do proponents say tariffs removal does?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Proponents of free trade argue that removing tariffs lowers prices and spurs innovation by exposing domestic firms to competition. Critics respond that the gains are unevenly distributed: consumers benefit, but entire communities dependent on a single industry may be devastated when it relocates abroad. The debate, therefore, hinges less on whether trade creates wealth than on who bears its costs.",
+  "options": [
+   "Kills firms",
+   "Lowers prices and spurs innovation",
+   "Raises prices",
+   "Stops exports"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "يقلل الأسعار ويحفز الابتكار.",
+  "topic": "Reading: Trade (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016471",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Some communities may be _____ when an industry relocates.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Proponents of free trade argue that removing tariffs lowers prices and spurs innovation by exposing domestic firms to competition. Critics respond that the gains are unevenly distributed: consumers benefit, but entire communities dependent on a single industry may be devastated when it relocates abroad. The debate, therefore, hinges less on whether trade creates wealth than on who bears its costs.",
+  "options": [
+   "rewarded",
+   "promoted",
+   "amused",
+   "devastated"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تتدمر.",
+  "topic": "Reading: Trade (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016472",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"hinges on\" means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Proponents of free trade argue that removing tariffs lowers prices and spurs innovation by exposing domestic firms to competition. Critics respond that the gains are unevenly distributed: consumers benefit, but entire communities dependent on a single industry may be devastated when it relocates abroad. The debate, therefore, hinges less on whether trade creates wealth than on who bears its costs.",
+  "options": [
+   "depends on",
+   "hides",
+   "ends",
+   "ignores"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "hinges on يعني يعتمد على.",
+  "topic": "Reading: Trade (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016473",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do campaigners say brutalist buildings embody?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Brutalist buildings, with their raw concrete façades, have long provoked disdain. Yet a growing movement now campaigns for their preservation, arguing that they embody a postwar idealism, a belief that public architecture should be bold, functional and accessible to all. Detractors counter that no amount of historical justification can make a forbidding building welcoming.",
+  "options": [
+   "Tradition",
+   "Luxury",
+   "Postwar idealism",
+   "Cheapness"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المثالية بعد الحرب.",
+  "topic": "Reading: Architecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016474",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the detractors' view?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Brutalist buildings, with their raw concrete façades, have long provoked disdain. Yet a growing movement now campaigns for their preservation, arguing that they embody a postwar idealism, a belief that public architecture should be bold, functional and accessible to all. Detractors counter that no amount of historical justification can make a forbidding building welcoming.",
+  "options": [
+   "The buildings are too colourful",
+   "They are too small",
+   "They are too old",
+   "History cannot make a forbidding building welcoming"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "مهما كان التبرير التاريخي.",
+  "topic": "Reading: Architecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016475",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Brutalist façades are made of raw _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Brutalist buildings, with their raw concrete façades, have long provoked disdain. Yet a growing movement now campaigns for their preservation, arguing that they embody a postwar idealism, a belief that public architecture should be bold, functional and accessible to all. Detractors counter that no amount of historical justification can make a forbidding building welcoming.",
+  "options": [
+   "wood",
+   "concrete",
+   "glass",
+   "steel"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "خرسانة.",
+  "topic": "Reading: Architecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016476",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: Everyone wants these buildings preserved.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Brutalist buildings, with their raw concrete façades, have long provoked disdain. Yet a growing movement now campaigns for their preservation, arguing that they embody a postwar idealism, a belief that public architecture should be bold, functional and accessible to all. Detractors counter that no amount of historical justification can make a forbidding building welcoming.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "فيه معارضين.",
+  "topic": "Reading: Architecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016477",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do statistics suggest?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Social mobility, the capacity to move between economic classes, is often celebrated as the defining promise of open societies. Statistics, however, suggest that in many countries a child's prospects remain strongly tied to their parents' income. Policy-makers who tout mobility without addressing unequal access to education risk offering a promise that the system structurally cannot keep.",
+  "options": [
+   "Classes have vanished",
+   "Prospects remain tied to parents' income",
+   "Mobility is rising fast",
+   "Education is free"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدخل بيحدد.",
+  "topic": "Reading: Sociology (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016478",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the risk for policy-makers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Social mobility, the capacity to move between economic classes, is often celebrated as the defining promise of open societies. Statistics, however, suggest that in many countries a child's prospects remain strongly tied to their parents' income. Policy-makers who tout mobility without addressing unequal access to education risk offering a promise that the system structurally cannot keep.",
+  "options": [
+   "Spending too little",
+   "Raising taxes",
+   "Closing schools",
+   "Promising what the system cannot deliver"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "وعد النظام عاجز عن تنفيذه.",
+  "topic": "Reading: Sociology (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016479",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Mobility is the capacity to move between economic _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Social mobility, the capacity to move between economic classes, is often celebrated as the defining promise of open societies. Statistics, however, suggest that in many countries a child's prospects remain strongly tied to their parents' income. Policy-makers who tout mobility without addressing unequal access to education risk offering a promise that the system structurally cannot keep.",
+  "options": [
+   "classes",
+   "jobs",
+   "cities",
+   "countries"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "طبقات.",
+  "topic": "Reading: Sociology (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016480",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"tout\" most nearly means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Social mobility, the capacity to move between economic classes, is often celebrated as the defining promise of open societies. Statistics, however, suggest that in many countries a child's prospects remain strongly tied to their parents' income. Policy-makers who tout mobility without addressing unequal access to education risk offering a promise that the system structurally cannot keep.",
+  "options": [
+   "criticise",
+   "promote enthusiastically",
+   "hide",
+   "delay"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "tout أي يروّج.",
+  "topic": "Reading: Sociology (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016481",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What do descriptivists believe?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Prescriptivists lament that language is in decline, citing the erosion of formal usage as evidence. Descriptivists respond that such lamentation has accompanied every generation since antiquity, and that what is mistaken for decay is in fact the ordinary, unplanned evolution by which all living languages renew themselves. To call a change an error is, in their view, merely to register one's unfamiliarity with it.",
+  "options": [
+   "Formal usage must be enforced",
+   "Language is decaying",
+   "Languages stop changing",
+   "Language change is natural evolution"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تطور طبيعي.",
+  "topic": "Reading: Linguistics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016482",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What do prescriptivists cite as evidence?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Prescriptivists lament that language is in decline, citing the erosion of formal usage as evidence. Descriptivists respond that such lamentation has accompanied every generation since antiquity, and that what is mistaken for decay is in fact the ordinary, unplanned evolution by which all living languages renew themselves. To call a change an error is, in their view, merely to register one's unfamiliarity with it.",
+  "options": [
+   "The erosion of formal usage",
+   "New dictionaries",
+   "Foreign words",
+   "Slang only"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تآكل الاستخدام الرسمي.",
+  "topic": "Reading: Linguistics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016483",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Descriptivists say lamentation has accompanied every generation since _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Prescriptivists lament that language is in decline, citing the erosion of formal usage as evidence. Descriptivists respond that such lamentation has accompanied every generation since antiquity, and that what is mistaken for decay is in fact the ordinary, unplanned evolution by which all living languages renew themselves. To call a change an error is, in their view, merely to register one's unfamiliarity with it.",
+  "options": [
+   "1900",
+   "yesterday",
+   "the internet",
+   "antiquity"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "العصور القديمة.",
+  "topic": "Reading: Linguistics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016484",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: Descriptivists regard every change as an error.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Prescriptivists lament that language is in decline, citing the erosion of formal usage as evidence. Descriptivists respond that such lamentation has accompanied every generation since antiquity, and that what is mistaken for decay is in fact the ordinary, unplanned evolution by which all living languages renew themselves. To call a change an error is, in their view, merely to register one's unfamiliarity with it.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيرفضوا فكرة الخطأ.",
+  "topic": "Reading: Linguistics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016485",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why does appealing to experience fail?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The sceptic's challenge is deceptively simple: how can we be certain that our senses do not systematically deceive us? Any attempt to answer by appeal to experience begs the question, for it presupposes the very reliability under dispute. Most philosophers, rather than refuting the sceptic outright, settle for the more modest ambition of showing that sceptical doubt, however logically coherent, is practically unlivable.",
+  "options": [
+   "It assumes what is in dispute",
+   "Experience is rare",
+   "It is too slow",
+   "It is illegal"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: begs the question.",
+  "topic": "Reading: Epistemology (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016486",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What do most philosophers settle for?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The sceptic's challenge is deceptively simple: how can we be certain that our senses do not systematically deceive us? Any attempt to answer by appeal to experience begs the question, for it presupposes the very reliability under dispute. Most philosophers, rather than refuting the sceptic outright, settle for the more modest ambition of showing that sceptical doubt, however logically coherent, is practically unlivable.",
+  "options": [
+   "Accepting scepticism",
+   "Showing that scepticism is practically unlivable",
+   "Ignoring philosophy",
+   "Refuting the sceptic"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "هدف متواضع.",
+  "topic": "Reading: Epistemology (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016487",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The sceptic's challenge is deceptively _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The sceptic's challenge is deceptively simple: how can we be certain that our senses do not systematically deceive us? Any attempt to answer by appeal to experience begs the question, for it presupposes the very reliability under dispute. Most philosophers, rather than refuting the sceptic outright, settle for the more modest ambition of showing that sceptical doubt, however logically coherent, is practically unlivable.",
+  "options": [
+   "loud",
+   "short-lived",
+   "famous",
+   "simple"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بسيط ظاهريا.",
+  "topic": "Reading: Epistemology (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016488",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The writer says philosophers have completely refuted scepticism.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The sceptic's challenge is deceptively simple: how can we be certain that our senses do not systematically deceive us? Any attempt to answer by appeal to experience begs the question, for it presupposes the very reliability under dispute. Most philosophers, rather than refuting the sceptic outright, settle for the more modest ambition of showing that sceptical doubt, however logically coherent, is practically unlivable.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مش بيدحضوه تماما.",
+  "topic": "Reading: Epistemology (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016489",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the writer say about self-correction?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The notion that markets self-correct is not so much false as incomplete. Left to themselves, markets frequently overshoot, with enthusiasm inflating prices well beyond fundamentals before a sudden reversal. The correction, when it arrives, is rarely gentle, and those least able to absorb the losses are generally those least responsible for the excess.",
+  "options": [
+   "It never happens",
+   "It is incomplete as an explanation",
+   "It is always gentle",
+   "It is entirely false"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: incomplete.",
+  "topic": "Reading: Economics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016490",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Who typically suffers most from corrections?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The notion that markets self-correct is not so much false as incomplete. Left to themselves, markets frequently overshoot, with enthusiasm inflating prices well beyond fundamentals before a sudden reversal. The correction, when it arrives, is rarely gentle, and those least able to absorb the losses are generally those least responsible for the excess.",
+  "options": [
+   "Bankers",
+   "Speculators",
+   "Those least able to absorb losses",
+   "Regulators"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأقل قدرة.",
+  "topic": "Reading: Economics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016491",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Enthusiasm inflates prices beyond _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The notion that markets self-correct is not so much false as incomplete. Left to themselves, markets frequently overshoot, with enthusiasm inflating prices well beyond fundamentals before a sudden reversal. The correction, when it arrives, is rarely gentle, and those least able to absorb the losses are generally those least responsible for the excess.",
+  "options": [
+   "fundamentals",
+   "borders",
+   "budgets",
+   "bubbles"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأساسيات.",
+  "topic": "Reading: Economics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016492",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: Corrections are usually gentle.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The notion that markets self-correct is not so much false as incomplete. Left to themselves, markets frequently overshoot, with enthusiasm inflating prices well beyond fundamentals before a sudden reversal. The correction, when it arrives, is rarely gentle, and those least able to absorb the losses are generally those least responsible for the excess.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: rarely gentle.",
+  "topic": "Reading: Economics (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016493",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Who popularised the 'break with the past' narrative?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Renaissance is conventionally presented as a decisive break with the medieval past, a rebirth after centuries of intellectual torpor. Yet this narrative, popularised largely by Renaissance writers themselves, owes more to self-promotion than to historical fact. Medieval scholars had preserved, translated and extended classical learning, and the so-called rebirth drew heavily on their labours.",
+  "options": [
+   "Renaissance writers themselves",
+   "Kings",
+   "Medieval monks",
+   "Modern tourists"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكتاب أنفسهم.",
+  "topic": "Reading: Art history (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016494",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What did medieval scholars do?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Renaissance is conventionally presented as a decisive break with the medieval past, a rebirth after centuries of intellectual torpor. Yet this narrative, popularised largely by Renaissance writers themselves, owes more to self-promotion than to historical fact. Medieval scholars had preserved, translated and extended classical learning, and the so-called rebirth drew heavily on their labours.",
+  "options": [
+   "Preserved and extended classical learning",
+   "Destroyed manuscripts",
+   "Invented printing",
+   "Ignored Greece"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "حافظوا على التراث.",
+  "topic": "Reading: Art history (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016495",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The medieval period was described as a time of intellectual _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Renaissance is conventionally presented as a decisive break with the medieval past, a rebirth after centuries of intellectual torpor. Yet this narrative, popularised largely by Renaissance writers themselves, owes more to self-promotion than to historical fact. Medieval scholars had preserved, translated and extended classical learning, and the so-called rebirth drew heavily on their labours.",
+  "options": [
+   "freedom",
+   "wealth",
+   "triumph",
+   "torpor"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ركود.",
+  "topic": "Reading: Art history (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016496",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The writer fully accepts the conventional narrative.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The Renaissance is conventionally presented as a decisive break with the medieval past, a rebirth after centuries of intellectual torpor. Yet this narrative, popularised largely by Renaissance writers themselves, owes more to self-promotion than to historical fact. Medieval scholars had preserved, translated and extended classical learning, and the so-called rebirth drew heavily on their labours.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيشكك فيها.",
+  "topic": "Reading: Art history (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016497",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the writer say about 'left-brained' personalities?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Popular accounts of 'left-brained' and 'right-brained' personalities greatly exaggerate a modest finding. While certain functions, such as language production, are typically lateralised, the hemispheres communicate constantly, and neuroimaging reveals no evidence that individuals habitually rely on one side. The dichotomy persists chiefly because it is simple, flattering and endlessly marketable.",
+  "options": [
+   "The idea exaggerates a modest finding",
+   "It is ancient",
+   "It is dangerous",
+   "It is fully proven"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مبالغة.",
+  "topic": "Reading: Neuroscience (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016498",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why does the idea persist?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Popular accounts of 'left-brained' and 'right-brained' personalities greatly exaggerate a modest finding. While certain functions, such as language production, are typically lateralised, the hemispheres communicate constantly, and neuroimaging reveals no evidence that individuals habitually rely on one side. The dichotomy persists chiefly because it is simple, flattering and endlessly marketable.",
+  "options": [
+   "It is accurate",
+   "Schools teach it",
+   "Scientists support it",
+   "It is simple, flattering and marketable"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بسيطة وجذابة.",
+  "topic": "Reading: Neuroscience (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016499",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The hemispheres _____ constantly.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Popular accounts of 'left-brained' and 'right-brained' personalities greatly exaggerate a modest finding. While certain functions, such as language production, are typically lateralised, the hemispheres communicate constantly, and neuroimaging reveals no evidence that individuals habitually rely on one side. The dichotomy persists chiefly because it is simple, flattering and endlessly marketable.",
+  "options": [
+   "compete",
+   "separate",
+   "communicate",
+   "sleep"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بيتواصلوا.",
+  "topic": "Reading: Neuroscience (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016500",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: Neuroimaging shows people rely on one side habitually.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Popular accounts of 'left-brained' and 'right-brained' personalities greatly exaggerate a modest finding. While certain functions, such as language production, are typically lateralised, the hemispheres communicate constantly, and neuroimaging reveals no evidence that individuals habitually rely on one side. The dichotomy persists chiefly because it is simple, flattering and endlessly marketable.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مفيش دليل.",
+  "topic": "Reading: Neuroscience (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016501",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The cat is _____ years old.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "My cat is black. She is two years old. She likes to sleep on my bed.",
+  "options": [
+   "five",
+   "one",
+   "two",
+   "three"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "سنتين.",
+  "topic": "Listening: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016502",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where does she sleep?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "My cat is black. She is two years old. She likes to sleep on my bed.",
+  "options": [
+   "On the sofa",
+   "In the garden",
+   "In a box",
+   "On the bed"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "على السرير.",
+  "topic": "Listening: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016503",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Look at page _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Open your books. Look at page ten. Read the first sentence.",
+  "options": [
+   "twenty",
+   "ten",
+   "five",
+   "two"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "صفحة 10.",
+  "topic": "Listening: Class (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016504",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What should you read?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Open your books. Look at page ten. Read the first sentence.",
+  "options": [
+   "The first sentence",
+   "The title only",
+   "Nothing",
+   "The last page"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أول جملة.",
+  "topic": "Listening: Class (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016505",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There are _____ chairs.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "There is a table in the kitchen. There are four chairs. There is a bowl of fruit on the table.",
+  "options": [
+   "four",
+   "three",
+   "two",
+   "six"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "4 كراسي.",
+  "topic": "Listening: Kitchen (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016506",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: The bowl is on the floor.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "There is a table in the kitchen. There are four chairs. There is a bowl of fruit on the table.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "على الترابيزة.",
+  "topic": "Listening: Kitchen (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016507",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker likes the _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "We go to the zoo on Saturday. I like the lions. My sister likes the monkeys.",
+  "options": [
+   "lions",
+   "snakes",
+   "monkeys",
+   "birds"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الأسود.",
+  "topic": "Listening: Zoo (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016508",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Who likes the monkeys?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "We go to the zoo on Saturday. I like the lions. My sister likes the monkeys.",
+  "options": [
+   "His teacher",
+   "His father",
+   "His friend",
+   "His sister"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "أخته.",
+  "topic": "Listening: Zoo (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016509",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker wants five _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I want five rolls and one loaf of bread. That is eleven pounds. Here is twenty pounds.",
+  "options": [
+   "eggs",
+   "rolls",
+   "cakes",
+   "loaves"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "5 عيش صغير.",
+  "topic": "Listening: Bakery (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016510",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How much is the total?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I want five rolls and one loaf of bread. That is eleven pounds. Here is twenty pounds.",
+  "options": [
+   "Twenty pounds",
+   "Nine pounds",
+   "Eleven pounds",
+   "Five pounds"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: 11.",
+  "topic": "Listening: Bakery (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016511",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The speaker goes to bed at _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "In the evening I do my homework. Then I watch TV for one hour. I go to bed at ten.",
+  "options": [
+   "eleven",
+   "ten",
+   "nine",
+   "eight"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: 10.",
+  "topic": "Listening: Evening (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016512",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How long does he watch TV?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "In the evening I do my homework. Then I watch TV for one hour. I go to bed at ten.",
+  "options": [
+   "Ten minutes",
+   "All night",
+   "Two hours",
+   "One hour"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ساعة.",
+  "topic": "Listening: Evening (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016513",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Go down the road for about five hundred _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Excuse me, how do I get to the train station? Go down this road for about five hundred metres, then turn right at the bank. You can't miss it.",
+  "options": [
+   "miles",
+   "metres",
+   "minutes",
+   "steps"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "500 متر.",
+  "topic": "Listening: Directions (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016514",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where do you turn right?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Excuse me, how do I get to the train station? Go down this road for about five hundred metres, then turn right at the bank. You can't miss it.",
+  "options": [
+   "At the park",
+   "At the school",
+   "At the bank",
+   "At the hotel"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "عند البنك.",
+  "topic": "Listening: Directions (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016515",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The speaker is in room _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The hot water isn't working in my room. Could someone come and look at it? I'm in room two hundred and four.",
+  "options": [
+   "one hundred and four",
+   "two hundred and fourteen",
+   "two hundred and forty",
+   "two hundred and four"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: 204.",
+  "topic": "Listening: Complaint (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016516",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What is the problem?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The hot water isn't working in my room. Could someone come and look at it? I'm in room two hundred and four.",
+  "options": [
+   "No hot water",
+   "No electricity",
+   "A broken window",
+   "A noisy room"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المية السخنة.",
+  "topic": "Listening: Complaint (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016517",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The film starts at _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Two tickets for the seven o'clock film, please. That's one hundred and twenty pounds. Would you like popcorn? Yes, one large, please.",
+  "options": [
+   "nine",
+   "eight",
+   "six",
+   "seven"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: 7.",
+  "topic": "Listening: Cinema (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016518",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does the customer also buy?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Two tickets for the seven o'clock film, please. That's one hundred and twenty pounds. Would you like popcorn? Yes, one large, please.",
+  "options": [
+   "A poster",
+   "Nothing",
+   "A large popcorn",
+   "A small drink"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "فشار كبير.",
+  "topic": "Listening: Cinema (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016519",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The speaker wants to be picked up at _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hi Dad, I'm at Sara's house. We're doing our science project. Can you pick me up at eight? I'll wait outside.",
+  "options": [
+   "six",
+   "eight",
+   "nine",
+   "seven"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: 8.",
+  "topic": "Listening: Message (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016520",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What are they doing?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hi Dad, I'm at Sara's house. We're doing our science project. Can you pick me up at eight? I'll wait outside.",
+  "options": [
+   "A game",
+   "A science project",
+   "A film",
+   "Homework in maths"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مشروع علوم.",
+  "topic": "Listening: Message (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016521",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The speaker didn't go to sleep until _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Last night I stayed up late because I was reading a really exciting book. I didn't go to sleep until two, so I'm very tired today.",
+  "options": [
+   "two",
+   "ten",
+   "twelve",
+   "four"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 2.",
+  "topic": "Listening: Past (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016522",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why is the speaker tired?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Last night I stayed up late because I was reading a really exciting book. I didn't go to sleep until two, so I'm very tired today.",
+  "options": [
+   "He stayed up late reading",
+   "He was ill",
+   "He worked",
+   "He travelled"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "سهر.",
+  "topic": "Listening: Past (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016523",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The pool is open until _____ at night.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The swimming pool is open from six in the morning until ten at night. Children under twelve must be with an adult.",
+  "options": [
+   "ten",
+   "eleven",
+   "midnight",
+   "nine"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 10.",
+  "topic": "Listening: Sport (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016524",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Who must be with an adult?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The swimming pool is open from six in the morning until ten at night. Children under twelve must be with an adult.",
+  "options": [
+   "Children under twelve",
+   "Women",
+   "Everyone",
+   "Teenagers"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تحت 12.",
+  "topic": "Listening: Sport (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016525",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The small pizza costs _____ pounds.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The small pizza costs sixty pounds, and the large one costs ninety. If you buy two large pizzas, you get a free drink.",
+  "options": [
+   "sixteen",
+   "sixty",
+   "fifty",
+   "ninety"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: 60.",
+  "topic": "Listening: Prices (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016526",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What do you get with two large pizzas?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The small pizza costs sixty pounds, and the large one costs ninety. If you buy two large pizzas, you get a free drink.",
+  "options": [
+   "A free drink",
+   "A free pizza",
+   "A discount card",
+   "Nothing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مشروب مجاني.",
+  "topic": "Listening: Prices (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016527",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The speaker will prepare the _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "We're having a barbecue on Saturday afternoon. Could you bring some drinks? And maybe a salad? I'll do the meat.",
+  "options": [
+   "dessert",
+   "drinks",
+   "salad",
+   "meat"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "اللحمة.",
+  "topic": "Listening: Plans (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016528",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What day is the barbecue?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "We're having a barbecue on Saturday afternoon. Could you bring some drinks? And maybe a salad? I'll do the meat.",
+  "options": [
+   "Monday",
+   "Saturday",
+   "Friday",
+   "Sunday"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السبت.",
+  "topic": "Listening: Plans (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016529",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Renew before the _____ for a discount.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hello, it's Mr Salem from the gym. I'm calling to remind you that your membership expires at the end of the month. If you renew before the twentieth, you'll get a ten percent discount.",
+  "options": [
+   "fifth",
+   "twentieth",
+   "tenth",
+   "thirtieth"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: 20.",
+  "topic": "Listening: Phone message (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016530",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How big is the discount?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hello, it's Mr Salem from the gym. I'm calling to remind you that your membership expires at the end of the month. If you renew before the twentieth, you'll get a ten percent discount.",
+  "options": [
+   "Twenty percent",
+   "Five percent",
+   "Ten percent",
+   "Fifty percent"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: 10%.",
+  "topic": "Listening: Phone message (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016531",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Plants release _____ as a by-product.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Photosynthesis is the process by which plants turn sunlight, water and carbon dioxide into food. Oxygen is released as a by-product, which is why forests are often called the lungs of the planet.",
+  "options": [
+   "carbon",
+   "hydrogen",
+   "oxygen",
+   "nitrogen"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أكسجين.",
+  "topic": "Listening: Lecture (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016532",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why are forests called the lungs of the planet?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Photosynthesis is the process by which plants turn sunlight, water and carbon dioxide into food. Oxygen is released as a by-product, which is why forests are often called the lungs of the planet.",
+  "options": [
+   "They are big",
+   "They release oxygen",
+   "They are green",
+   "They absorb noise"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيطلقوا أكسجين.",
+  "topic": "Listening: Lecture (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016533",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The speaker is interested in _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've always been interested in design, so when I saw the advert for this position, I knew I had to apply. I'm also very good at working in a team.",
+  "options": [
+   "medicine",
+   "sales",
+   "law",
+   "design"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "التصميم.",
+  "topic": "Listening: Interview (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016534",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What other strength does he mention?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've always been interested in design, so when I saw the advert for this position, I knew I had to apply. I'm also very good at working in a team.",
+  "options": [
+   "Driving",
+   "Cooking",
+   "Teamwork",
+   "Languages"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "العمل الجماعي.",
+  "topic": "Listening: Interview (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016535",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The link is valid for _____ hours.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "To reset your password, click on 'forgot password', enter your email address and wait for a message. The link in the message is valid for twenty-four hours.",
+  "options": [
+   "twenty-four",
+   "twelve",
+   "four",
+   "forty-eight"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 24.",
+  "topic": "Listening: Instructions (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016536",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What do you enter?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "To reset your password, click on 'forgot password', enter your email address and wait for a message. The link in the message is valid for twenty-four hours.",
+  "options": [
+   "Your phone number",
+   "Your name only",
+   "Your email address",
+   "Your age"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الإيميل.",
+  "topic": "Listening: Instructions (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016537",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Cooking is a useful life _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Personally, I think children should learn to cook at school. It's a useful life skill, and it encourages them to eat more healthily.",
+  "options": [
+   "job",
+   "subject",
+   "skill",
+   "game"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "مهارة.",
+  "topic": "Listening: Opinion (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016538",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does the speaker think cooking encourages?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Personally, I think children should learn to cook at school. It's a useful life skill, and it encourages them to eat more healthily.",
+  "options": [
+   "Healthy eating",
+   "Laziness",
+   "Sleeping",
+   "Spending"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أكل صحي.",
+  "topic": "Listening: Opinion (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016539",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Tomorrow morning will start with _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Tomorrow morning will start with frost in many areas, so drive carefully. By midday the temperature will rise, and the afternoon will be sunny.",
+  "options": [
+   "wind",
+   "fog",
+   "rain",
+   "frost"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "صقيع.",
+  "topic": "Listening: Weather (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016540",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What will the afternoon be like?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Tomorrow morning will start with frost in many areas, so drive carefully. By midday the temperature will rise, and the afternoon will be sunny.",
+  "options": [
+   "Rainy",
+   "Snowy",
+   "Sunny",
+   "Frosty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "مشمس.",
+  "topic": "Listening: Weather (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016541",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The speaker collected _____ in the morning.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "When I was a child, we used to spend every summer at my grandparents' farm. I remember collecting eggs in the morning and swimming in the canal in the afternoon.",
+  "options": [
+   "wood",
+   "milk",
+   "fruit",
+   "eggs"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بيض.",
+  "topic": "Listening: Story (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016542",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Where did they spend summers?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "When I was a child, we used to spend every summer at my grandparents' farm. I remember collecting eggs in the morning and swimming in the canal in the afternoon.",
+  "options": [
+   "Abroad",
+   "At the grandparents' farm",
+   "At the beach",
+   "In the city"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مزرعة الجد والجدة.",
+  "topic": "Listening: Story (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016543",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Try taking a few deep _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "If you're nervous before an exam, try taking a few deep breaths and think about something relaxing. And make sure you get a good night's sleep the night before.",
+  "options": [
+   "breaths",
+   "books",
+   "steps",
+   "notes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أنفاس.",
+  "topic": "Listening: Advice (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016544",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What else should you do?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "If you're nervous before an exam, try taking a few deep breaths and think about something relaxing. And make sure you get a good night's sleep the night before.",
+  "options": [
+   "Study all night",
+   "Get a good night's sleep",
+   "Skip breakfast",
+   "Avoid friends"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "نوم كافي.",
+  "topic": "Listening: Advice (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016545",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "It should arrive within five working _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm afraid we don't have that jacket in your size, but I can order it for you. It should arrive within five working days.",
+  "options": [
+   "hours",
+   "months",
+   "days",
+   "weeks"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أيام.",
+  "topic": "Listening: Shopping (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016546",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What can the shop do?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm afraid we don't have that jacket in your size, but I can order it for you. It should arrive within five working days.",
+  "options": [
+   "Repair it",
+   "Order the jacket",
+   "Give a refund",
+   "Reserve a different jacket"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "يطلبها.",
+  "topic": "Listening: Shopping (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016547",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The council will install a pedestrian _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Following complaints from residents, the council has agreed to reduce the speed limit outside the school from forty to thirty kilometres an hour, and will install a pedestrian crossing by the end of the month.",
+  "options": [
+   "light",
+   "tunnel",
+   "bridge",
+   "crossing"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "عبور مشاة.",
+  "topic": "Listening: Radio (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016548",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the new speed limit?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Following complaints from residents, the council has agreed to reduce the speed limit outside the school from forty to thirty kilometres an hour, and will install a pedestrian crossing by the end of the month.",
+  "options": [
+   "Thirty kilometres an hour",
+   "Twenty",
+   "Forty",
+   "Fifty"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: 30.",
+  "topic": "Listening: Radio (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016549",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Founders fall in love with their _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "One reason startups fail is that founders fall in love with their idea rather than with the customer's problem. The most successful ones start by listening.",
+  "options": [
+   "office",
+   "idea",
+   "product",
+   "team"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "فكرتهم.",
+  "topic": "Listening: Talk (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016550",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do successful startups begin with?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "One reason startups fail is that founders fall in love with their idea rather than with the customer's problem. The most successful ones start by listening.",
+  "options": [
+   "Borrowing",
+   "Advertising",
+   "Hiring",
+   "Listening"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الاستماع.",
+  "topic": "Listening: Talk (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016551",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Many zoos now breed _____ species.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Some argue that zoos are cruel, but many now play a vital role in breeding endangered species and educating the public.",
+  "options": [
+   "wild",
+   "endangered",
+   "common",
+   "tame"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مهددة بالانقراض.",
+  "topic": "Listening: Debate (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016552",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is mentioned as a role of zoos?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Some argue that zoos are cruel, but many now play a vital role in breeding endangered species and educating the public.",
+  "options": [
+   "Educating the public",
+   "Selling animals",
+   "Hunting",
+   "Farming"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تثقيف الجمهور.",
+  "topic": "Listening: Debate (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016553",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Readjusting to life at home was _____ difficult.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Having worked abroad for several years, I found it surprisingly difficult to readjust to life at home. Everything seemed smaller and slower.",
+  "options": [
+   "hardly",
+   "surprisingly",
+   "never",
+   "slightly"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بشكل مفاجئ.",
+  "topic": "Listening: Interview (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016554",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How did things seem?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Having worked abroad for several years, I found it surprisingly difficult to readjust to life at home. Everything seemed smaller and slower.",
+  "options": [
+   "Smaller and slower",
+   "Faster",
+   "Bigger",
+   "Cheaper"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أصغر وأبطأ.",
+  "topic": "Listening: Interview (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016555",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The director attributes the rise to the new _____ exhibition.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The museum has reported a record number of visitors this summer, which the director attributes to the success of its new interactive exhibition.",
+  "options": [
+   "interactive",
+   "free",
+   "night",
+   "foreign"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تفاعلي.",
+  "topic": "Listening: News (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016556",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What happened this summer?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The museum has reported a record number of visitors this summer, which the director attributes to the success of its new interactive exhibition.",
+  "options": [
+   "The museum closed",
+   "A record number of visitors came",
+   "Prices rose",
+   "Staff left"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "عدد قياسي.",
+  "topic": "Listening: News (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016557",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Penicillin and the microwave were discovered by _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It is often said that necessity is the mother of invention, and history offers plenty of examples, from penicillin to the microwave, both discovered by accident.",
+  "options": [
+   "plan",
+   "law",
+   "accident",
+   "design"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بالصدفة.",
+  "topic": "Listening: Lecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016558",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The speaker says both were planned.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "It is often said that necessity is the mother of invention, and history offers plenty of examples, from penicillin to the microwave, both discovered by accident.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بالصدفة.",
+  "topic": "Listening: Lecture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016559",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Liquids over one hundred _____ are not allowed.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Passengers are reminded that liquids over one hundred millilitres cannot be taken through security. Please place all liquids in a clear plastic bag.",
+  "options": [
+   "ounces",
+   "grams",
+   "millilitres",
+   "litres"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ملليلتر.",
+  "topic": "Listening: Announcement (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016560",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What should you use for liquids?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Passengers are reminded that liquids over one hundred millilitres cannot be taken through security. Please place all liquids in a clear plastic bag.",
+  "options": [
+   "A metal box",
+   "A paper bag",
+   "A clear plastic bag",
+   "Your pocket"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "كيس بلاستيك شفاف.",
+  "topic": "Listening: Announcement (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016561",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The real benefit of travel is experiencing how people _____ live.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd argue that the real benefit of travel is not seeing famous places, but experiencing how differently other people live.",
+  "options": [
+   "happily",
+   "quickly",
+   "badly",
+   "differently"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بشكل مختلف.",
+  "topic": "Listening: Discussion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016562",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The speaker values famous places most.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I'd argue that the real benefit of travel is not seeing famous places, but experiencing how differently other people live.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لا.",
+  "topic": "Listening: Discussion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016563",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She taught herself to read at the age of _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Born into poverty, she taught herself to read at the age of nine, and by twenty she was working as a journalist in the capital.",
+  "options": [
+   "nineteen",
+   "nine",
+   "ten",
+   "five"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: 9.",
+  "topic": "Listening: Biography (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016564",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What was her job at twenty?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Born into poverty, she taught herself to read at the age of nine, and by twenty she was working as a journalist in the capital.",
+  "options": [
+   "Journalist",
+   "Lawyer",
+   "Teacher",
+   "Doctor"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "صحفية.",
+  "topic": "Listening: Biography (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016565",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Qualitative research remains _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "What the data cannot tell us is why, rather than how many; for that, qualitative research, such as in-depth interviews, remains indispensable.",
+  "options": [
+   "outdated",
+   "indispensable",
+   "expensive",
+   "optional"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لا غنى عنه.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016566",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What can't the data tell us?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "What the data cannot tell us is why, rather than how many; for that, qualitative research, such as in-depth interviews, remains indispensable.",
+  "options": [
+   "How many",
+   "Where",
+   "When",
+   "Why something happens"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السبب.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016567",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Economists regard the target as _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The government has pledged to halve youth unemployment within five years, a target which economists regard as ambitious, if not unrealistic.",
+  "options": [
+   "clear",
+   "easy",
+   "ambitious",
+   "modest"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "طموح.",
+  "topic": "Listening: Radio (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016568",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What has the government promised?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The government has pledged to halve youth unemployment within five years, a target which economists regard as ambitious, if not unrealistic.",
+  "options": [
+   "To raise wages",
+   "To halve youth unemployment",
+   "To end taxes",
+   "To build schools"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "تنصيف بطالة الشباب.",
+  "topic": "Listening: Radio (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016569",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The temptation is to _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The temptation, when faced with complexity, is to oversimplify. Yet the most useful models are those that capture the essentials without pretending to capture everything.",
+  "options": [
+   "oversimplify",
+   "ignore",
+   "delay",
+   "exaggerate"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "تبسيط مفرط.",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016570",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What are the most useful models?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The temptation, when faced with complexity, is to oversimplify. Yet the most useful models are those that capture the essentials without pretending to capture everything.",
+  "options": [
+   "The simplest",
+   "The newest",
+   "Those capturing everything",
+   "Those capturing the essentials"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الأساسيات.",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016571",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Most problems _____ to persistent effort.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I wouldn't describe myself as an optimist, exactly; I simply believe that most problems, however daunting, yield to persistent effort.",
+  "options": [
+   "return",
+   "yield",
+   "lead",
+   "object"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "تستسلم/تُحل.",
+  "topic": "Listening: Interview (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016572",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The speaker calls himself a strong optimist.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I wouldn't describe myself as an optimist, exactly; I simply believe that most problems, however daunting, yield to persistent effort.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مش optimist بالضبط.",
+  "topic": "Listening: Interview (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016573",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The Industrial Revolution _____ the working class.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The Industrial Revolution did not so much create the working class as reorganise it, drawing artisans and farm labourers alike into the factory system.",
+  "options": [
+   "destroyed",
+   "ignored",
+   "reorganised",
+   "created"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أعادت تنظيمها.",
+  "topic": "Listening: Lecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016574",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Who was drawn into factories?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The Industrial Revolution did not so much create the working class as reorganise it, drawing artisans and farm labourers alike into the factory system.",
+  "options": [
+   "Only merchants",
+   "Artisans and farm labourers",
+   "Soldiers",
+   "Only farmers"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الحرفيين والعمال الزراعيين.",
+  "topic": "Listening: Lecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016575",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The correlation may be _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It's a fallacy to assume that because two events occur together, one must have caused the other; the correlation may well be coincidental.",
+  "options": [
+   "causal",
+   "coincidental",
+   "permanent",
+   "illegal"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "صدفة.",
+  "topic": "Listening: Debate (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016576",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the speaker warning against?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It's a fallacy to assume that because two events occur together, one must have caused the other; the correlation may well be coincidental.",
+  "options": [
+   "Collecting data",
+   "Telling stories",
+   "Using statistics",
+   "Confusing correlation with causation"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الخلط بين الارتباط والسببية.",
+  "topic": "Listening: Debate (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016577",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The company has consistently _____ the accusation.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The tech giant faces a record fine for allegedly misusing customers' personal data, an accusation it has consistently denied.",
+  "options": [
+   "ignored",
+   "repeated",
+   "denied",
+   "admitted"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أنكرت.",
+  "topic": "Listening: News (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016578",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does it face?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The tech giant faces a record fine for allegedly misusing customers' personal data, an accusation it has consistently denied.",
+  "options": [
+   "A strike",
+   "A ban only",
+   "A merger",
+   "A record fine"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "غرامة قياسية.",
+  "topic": "Listening: News (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016579",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The underlying problem is our lack of _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "However tempting it may be to blame technology for our distraction, the underlying problem is arguably our own lack of discipline.",
+  "options": [
+   "time",
+   "money",
+   "discipline",
+   "skill"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "انضباط.",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016580",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The speaker blames technology entirely.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "However tempting it may be to blame technology for our distraction, the underlying problem is arguably our own lack of discipline.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لا.",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016581",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The new system monitors changes in _____ time.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "In contrast to the previous model, which relied on annual surveys, the new system monitors changes in real time, enabling a swifter response.",
+  "options": [
+   "half",
+   "spare",
+   "real",
+   "extra"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: real time.",
+  "topic": "Listening: Presentation (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016582",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does it enable?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "In contrast to the previous model, which relied on annual surveys, the new system monitors changes in real time, enabling a swifter response.",
+  "options": [
+   "A swifter response",
+   "Lower costs",
+   "Larger surveys",
+   "Fewer staff"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "استجابة أسرع.",
+  "topic": "Listening: Presentation (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016583",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "The evidence derives from a single, _____ study.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The author's argument loses much of its force when one considers that the principal evidence cited derives from a single, unrepresentative study.",
+  "options": [
+   "unrepresentative",
+   "recent",
+   "large",
+   "famous"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "غير ممثلة.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016584",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What weakens the argument?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The author's argument loses much of its force when one considers that the principal evidence cited derives from a single, unrepresentative study.",
+  "options": [
+   "Poor writing",
+   "Its length",
+   "Too many studies",
+   "Reliance on one unrepresentative study"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "دراسة واحدة.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016585",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "A _____ was shown to be responsible.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The prevailing orthodoxy, which held that the disease was caused by stress, collapsed when a pair of researchers demonstrated that a bacterium was responsible.",
+  "options": [
+   "toxin",
+   "diet",
+   "virus",
+   "bacterium"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بكتيريا.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016586",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What happened to the orthodoxy?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The prevailing orthodoxy, which held that the disease was caused by stress, collapsed when a pair of researchers demonstrated that a bacterium was responsible.",
+  "options": [
+   "It collapsed",
+   "It was published",
+   "It strengthened",
+   "It was ignored"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "انهار.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016587",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The author would rather err on the side of _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I make no apology for the book's length; the subject demands it, and I'd rather err on the side of thoroughness than superficiality.",
+  "options": [
+   "thoroughness",
+   "brevity",
+   "speed",
+   "fame"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الشمول.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016588",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The author apologises for the length.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I make no apology for the book's length; the subject demands it, and I'd rather err on the side of thoroughness than superficiality.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: make no apology.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016589",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The committee's conclusions were _____ on publication.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "One could hardly accuse the committee of haste: its deliberations lasted nearly six years, only for its conclusions to be shelved on publication.",
+  "options": [
+   "adopted",
+   "praised",
+   "shelved",
+   "published"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "اتشالت.",
+  "topic": "Listening: Seminar (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016590",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "How long did deliberations last?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "One could hardly accuse the committee of haste: its deliberations lasted nearly six years, only for its conclusions to be shelved on publication.",
+  "options": [
+   "Ten years",
+   "Nearly six years",
+   "Six months",
+   "Two years"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قرابة 6 سنين.",
+  "topic": "Listening: Seminar (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016591",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The remarks did little to _____ markets.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The minister's remarks, delivered with studied nonchalance, did little to reassure markets already unsettled by months of speculation.",
+  "options": [
+   "alarm",
+   "excite",
+   "educate",
+   "reassure"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تطمن.",
+  "topic": "Listening: Radio (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016592",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The remarks calmed the markets.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The minister's remarks, delivered with studied nonchalance, did little to reassure markets already unsettled by months of speculation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: did little to reassure.",
+  "topic": "Listening: Radio (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016593",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Nostalgia is _____ by its nature.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Nostalgia is, by its nature, selective: we remember the warmth of the gathering and conveniently forget the arguments that preceded it.",
+  "options": [
+   "accurate",
+   "selective",
+   "brief",
+   "complete"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "انتقائية.",
+  "topic": "Listening: Talk (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016594",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What do we forget?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Nostalgia is, by its nature, selective: we remember the warmth of the gathering and conveniently forget the arguments that preceded it.",
+  "options": [
+   "The warmth",
+   "The arguments",
+   "The food",
+   "The people"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الخلافات.",
+  "topic": "Listening: Talk (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016595",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "The speaker says it overlooks _____ conditions.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "To frame the matter purely as one of individual responsibility is to overlook the structural conditions which make certain choices all but impossible.",
+  "options": [
+   "legal",
+   "personal",
+   "structural",
+   "weather"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "هيكلية.",
+  "topic": "Listening: Debate (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016596",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the speaker's view?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "To frame the matter purely as one of individual responsibility is to overlook the structural conditions which make certain choices all but impossible.",
+  "options": [
+   "Only laws matter",
+   "Choices are free",
+   "People are never responsible",
+   "Individual responsibility is not the whole story"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المسؤولية الفردية مش الصورة كاملة.",
+  "topic": "Listening: Debate (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016597",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "A lasting shift can be absorbed into everyday _____.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "What distinguishes a mere fad from a lasting cultural shift is not its initial popularity, but its capacity to be absorbed into everyday habits.",
+  "options": [
+   "debates",
+   "jobs",
+   "habits",
+   "laws"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "عادات.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016598",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: Initial popularity is what distinguishes a lasting shift.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "What distinguishes a mere fad from a lasting cultural shift is not its initial popularity, but its capacity to be absorbed into everyday habits.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مش الشعبية الأولية.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016599",
+  "skill": "listening",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Compliance became a matter of _____ boxes.",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Ironically, it was the very rigidity of the regulations, intended to prevent abuse, that eventually enabled it, since compliance became a matter of ticking boxes.",
+  "options": [
+   "opening",
+   "ticking",
+   "drawing",
+   "buying"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "وضع علامات.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016600",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What enabled the abuse?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Ironically, it was the very rigidity of the regulations, intended to prevent abuse, that eventually enabled it, since compliance became a matter of ticking boxes.",
+  "options": [
+   "The rigidity of the regulations",
+   "Poor staff",
+   "Lack of rules",
+   "Low pay"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "جمود القواعد.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ }
+]
