@@ -6,6 +6,7 @@ import {
   UserProgressState,
   UserProfile,
   DailyGoal,
+  DailyActivity,
   AppNotification,
   PersonalNote,
   BookmarkItem,
@@ -52,15 +53,15 @@ export const DEFAULT_TEACHER_PROFILE: UserProfile = {
   bio: "المشرف الأكاديمي لمنصة هناوي ومؤلف مناهج القواعد والمحادثة.",
 };
 
-const DEFAULT_GOALS: DailyGoal[] = [
+// Daily goal definitions (targets + copy only). Progress is never pre-seeded:
+// `current`/`completed` are derived from the real per-day activity record.
+export const DAILY_GOAL_DEFS: Omit<DailyGoal, "current" | "completed">[] = [
   {
     id: "goal-1",
     title: "Complete 1 Grammar Lesson",
     titleAr: "إكمال درس قواعد تفاعلي",
     target: 1,
-    current: 1,
     unit: "درس",
-    completed: true,
     type: "lesson",
   },
   {
@@ -68,9 +69,7 @@ const DEFAULT_GOALS: DailyGoal[] = [
     title: "Review 10 Flashcards",
     titleAr: "مراجعة 10 بطاقات كلمات V3",
     target: 10,
-    current: 7,
     unit: "بطاقة",
-    completed: false,
     type: "flashcard",
   },
   {
@@ -78,55 +77,73 @@ const DEFAULT_GOALS: DailyGoal[] = [
     title: "Practice Speaking Dialogue",
     titleAr: "ممارسة محادثة واقعية صوتية",
     target: 1,
-    current: 0,
     unit: "سيناريو",
-    completed: false,
     type: "speaking",
   },
   {
     id: "goal-4",
-    title: "Score 80%+ on Daily Challenge",
-    titleAr: "حل التحدي اليومي بدرجة 80%+",
+    title: "Score 80%+ on a Quiz",
+    titleAr: "حل كويز بدرجة 80%+",
     target: 1,
-    current: 1,
     unit: "كويز",
-    completed: true,
     type: "quiz",
   },
 ];
 
-const DEFAULT_NOTIFICATIONS: AppNotification[] = [
-  {
-    id: "notif-1",
-    title: "🔥 استمرارية رائعة! 4 أيام متتالية",
-    message:
-      "أحسنت يا بطل! حافظ على وتيرة تعلمك اليومية لتصل إلى شارة المحارب الذهبي.",
-    timestamp: "منذ ساعتين",
-    read: false,
-    type: "achievement",
-    actionRoute: "dashboard",
-  },
-  {
-    id: "notif-2",
-    title: "📚 درس مقترح لمستواك B1",
-    message:
-      "تم إضافة موديول جديد في أكاديمية المحادثة: مقابلات العمل الاحترافية.",
-    timestamp: "منذ يوم",
-    read: false,
-    type: "assignment",
-    actionRoute: "speaking",
-  },
-  {
-    id: "notif-3",
-    title: "👑 المستقبل التام بانتظارك",
-    message:
-      "أكملت 80% من أسئلة المستقبل التام، اختبر نفسك في الاختبار الشامل الآن.",
-    timestamp: "منذ يومين",
-    read: true,
-    type: "reminder",
-    actionRoute: "courses/grammar/future-perfect",
-  },
-];
+const todayKey = () => {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+};
+
+const emptyActivity = (date: string): DailyActivity => ({
+  date,
+  lessons: 0,
+  flashcards: 0,
+  speaking: 0,
+  quizzes: 0,
+  quiz80: false,
+});
+
+// Today's activity record from a progress blob. Legacy blobs may carry the old
+// fake DailyGoal[] array under the same key — treat those as no activity.
+export function dailyActivityOf(progress: UserProgressState): DailyActivity {
+  const raw = progress.dailyGoals;
+  const today = todayKey();
+  if (raw && !Array.isArray(raw) && raw.date === today) return raw;
+  return emptyActivity(today);
+}
+
+// Applies a per-day activity bump inside a setProgress updater.
+function withActivity(
+  prev: UserProgressState,
+  patch: (a: DailyActivity) => Partial<DailyActivity>,
+): UserProgressState {
+  const cur = dailyActivityOf(prev);
+  return { ...prev, dailyGoals: { ...cur, ...patch(cur) } };
+}
+
+// The Daily Goals card: definitions + real counts from today's activity.
+export function deriveDailyGoals(progress: UserProgressState): DailyGoal[] {
+  const a = dailyActivityOf(progress);
+  return DAILY_GOAL_DEFS.map((def) => {
+    const current =
+      def.type === "lesson"
+        ? a.lessons
+        : def.type === "flashcard"
+          ? a.flashcards
+          : def.type === "speaking"
+            ? a.speaking
+            : def.id === "goal-4"
+              ? a.quiz80
+                ? 1
+                : 0
+              : a.quizzes;
+    return { ...def, current, completed: current >= def.target };
+  });
+}
+
+// Notifications are generated from real app events only — never pre-seeded.
+const DEFAULT_NOTIFICATIONS: AppNotification[] = [];
 
 // New students start from a genuinely empty record: certificates and progress
 // must reflect real work, so nothing is pre-seeded here.
@@ -139,7 +156,6 @@ const DEFAULT_PROGRESS: UserProgressState = {
   lastStudyDate: "",
   dailyChallengeCompleted: false,
   totalTimeMinutes: 0,
-  dailyGoals: DEFAULT_GOALS,
   notes: [],
   bookmarks: [],
   xp: 0,
@@ -352,7 +368,7 @@ export function useProgress(activeUserId?: string) {
       completedLessons: progress.completedLessons || [],
       completedRules: [],
       quizScores: quizMap,
-      dailyGoalCompleted: progress.dailyGoals ? progress.dailyGoals.every(g => g.completed) : false,
+      dailyGoalCompleted: deriveDailyGoals(progress).every((g) => g.completed),
     };
 
     saveUserProgressToDatabase(activeUserId, payload);
@@ -382,12 +398,15 @@ export function useProgress(activeUserId?: string) {
       if (prev.completedLessons.includes(lessonId)) return prev;
       const nextLessons = [...prev.completedLessons, lessonId];
       const nextXp = (prev.xp ?? 0) + 100;
-      return {
-        ...prev,
-        completedLessons: nextLessons,
-        ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
-        xp: nextXp,
-      };
+      return withActivity(
+        {
+          ...prev,
+          completedLessons: nextLessons,
+          ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
+          xp: nextXp,
+        },
+        (a) => ({ lessons: a.lessons + 1 }),
+      );
     });
     setUserProfile((prev) => ({
       ...prev,
@@ -397,19 +416,25 @@ export function useProgress(activeUserId?: string) {
 
   const recordQuizScore = (quizId: string, score: number, total: number) => {
     const earnedXp = Math.round((score / Math.max(1, total)) * 50);
-    setProgress((prev) => ({
-      ...prev,
-      ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
-      quizScores: {
-        ...prev.quizScores,
-        [quizId]: {
-          score,
-          total,
-          date: new Date().toISOString(),
+    const passed80 = total > 0 && score / total >= 0.8;
+    setProgress((prev) =>
+      withActivity(
+        {
+          ...prev,
+          ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
+          quizScores: {
+            ...prev.quizScores,
+            [quizId]: {
+              score,
+              total,
+              date: new Date().toISOString(),
+            },
+          },
+          xp: (prev.xp || 0) + earnedXp,
         },
-      },
-      xp: (prev.xp || 0) + earnedXp,
-    }));
+        (a) => ({ quizzes: a.quizzes + 1, quiz80: a.quiz80 || passed80 }),
+      ),
+    );
     setUserProfile((prev) => ({
       ...prev,
       xp: prev.xp + earnedXp,
@@ -418,6 +443,10 @@ export function useProgress(activeUserId?: string) {
 
   const setFlashcardStatus = (cardId: string, status: "known" | "review") => {
     setProgress((prev) => {
+      const alreadySame =
+        status === "known"
+          ? prev.knownFlashcards.includes(cardId)
+          : prev.reviewFlashcards.includes(cardId);
       const known = prev.knownFlashcards.filter((id) => id !== cardId);
       const review = prev.reviewFlashcards.filter((id) => id !== cardId);
 
@@ -427,13 +456,29 @@ export function useProgress(activeUserId?: string) {
         review.push(cardId);
       }
 
-      return {
+      const next = {
         ...prev,
         ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
         knownFlashcards: known,
         reviewFlashcards: review,
       };
+      // One flashcard review counts once per card per status change.
+      return alreadySame ? next : withActivity(next, (a) => ({ flashcards: a.flashcards + 1 }));
     });
+  };
+
+  // A completed speaking-academy activity (wired from App where the speaking
+  // pages report completion).
+  const recordSpeakingPractice = () => {
+    setProgress((prev) =>
+      withActivity(
+        {
+          ...prev,
+          ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
+        },
+        (a) => ({ speaking: a.speaking + 1 }),
+      ),
+    );
   };
 
   const completeDailyChallenge = () => {
@@ -449,22 +494,23 @@ export function useProgress(activeUserId?: string) {
     }));
   };
 
-  const toggleDailyGoal = (goalId: string) => {
+  // All-goals bonus: pay the promised 150 XP once per day when every daily
+  // goal is genuinely complete. awardRef guards StrictMode double effects;
+  // the persisted xpAwarded flag guards reloads.
+  const dailyBonusRef = useRef<string | null>(null);
+  useEffect(() => {
+    const a = dailyActivityOf(progress);
+    const allDone = a.lessons >= 1 && a.flashcards >= 10 && a.speaking >= 1 && a.quiz80;
+    if (!allDone || a.xpAwarded || dailyBonusRef.current === a.date) return;
+    dailyBonusRef.current = a.date;
     setProgress((prev) => {
-      const goals = (prev.dailyGoals || DEFAULT_GOALS).map((g) => {
-        if (g.id === goalId) {
-          const nextCompleted = !g.completed;
-          return {
-            ...g,
-            completed: nextCompleted,
-            current: nextCompleted ? g.target : Math.max(0, g.current - 1),
-          };
-        }
-        return g;
-      });
-      return { ...prev, dailyGoals: goals };
+      const cur = dailyActivityOf(prev);
+      if (cur.date !== a.date || cur.xpAwarded) return prev;
+      return { ...prev, dailyGoals: { ...cur, xpAwarded: true }, xp: (prev.xp ?? 0) + 150 };
     });
-  };
+    setUserProfile((prev) => ({ ...prev, xp: prev.xp + 150 }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [progress.dailyGoals]);
 
   const savePersonalNote = (
     lessonId: string,
@@ -566,7 +612,7 @@ export function useProgress(activeUserId?: string) {
     recordQuizScore,
     setFlashcardStatus,
     completeDailyChallenge,
-    toggleDailyGoal,
+    recordSpeakingPractice,
     savePersonalNote,
     deletePersonalNote,
     toggleBookmark,

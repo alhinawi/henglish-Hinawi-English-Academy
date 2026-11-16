@@ -185,7 +185,7 @@ export async function migrateLocalProgressToSupabase(
       completedLessons: mergedLessons,
       completedRules: currentDb?.completedRules || [],
       quizScores: normalizedScores,
-      dailyGoalCompleted: localProgress.dailyGoals?.every(g => g.completed) || false,
+      dailyGoalCompleted: Array.isArray(localProgress.dailyGoals) ? localProgress.dailyGoals.every(g => g.completed) : false,
     };
 
     const saved = await saveUserProgressToDatabase(userId, payload);
