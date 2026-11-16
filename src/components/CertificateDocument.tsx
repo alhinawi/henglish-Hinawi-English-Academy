@@ -39,6 +39,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
         color: "#ffffff",
       }}
     >
+      {cert.preview && <div style={{position:'absolute',inset:0,zIndex:10,display:'flex',alignItems:'center',justifyContent:'center',pointerEvents:'none',fontSize:110,fontWeight:900,color:'rgba(255,209,102,0.2)',transform:'rotate(-25deg)'}}>نموذج • SAMPLE</div>}
       {/* Outer gold frame */}
       <div
         style={{
@@ -145,7 +146,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             fontFamily: "'Courier New', monospace",
           }}
         >
-          CERTIFICATE OF ACADEMIC ACHIEVEMENT
+          {cert.preview ? 'SAMPLE - NO AWARD ISSUED' : 'INTERNAL CERTIFICATE OF COMPLETION'}
         </div>
 
         <div
@@ -159,7 +160,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
         />
 
         <div style={{ fontSize: 14, color: "#dedbf4", fontStyle: "italic" }}>
-          This is to proudly certify that
+          {cert.preview ? 'Preview only. No completion has been certified.' : 'This local learning record is issued to'}
         </div>
 
         <div style={{ marginTop: 10, padding: "0 36px" }}>
@@ -210,8 +211,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             maxWidth: 700,
           }}
         >
-          has successfully completed all requirements, practical assessments,
-          and masterclass examinations for
+          {cert.preview ? 'Complete the required lessons and pass the course assessment to earn' : 'has completed the required lessons and passed the internal assessment for'}
         </div>
 
         <div
@@ -280,7 +280,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
                 fontFamily: "'Courier New', monospace",
               }}
             >
-              {formatDateEn(cert.issueDate)}
+              {cert.preview ? 'NOT ISSUED' : formatDateEn(cert.issueDate)}
             </div>
           </div>
 
@@ -319,7 +319,7 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
                   color: "#ffd166",
                 }}
               >
-                OFFICIAL SEAL
+                {cert.preview ? 'SAMPLE' : 'COMPLETION'}
               </span>
             </div>
           </div>
@@ -376,8 +376,8 @@ export const CertificateDocument: React.FC<CertificateDocumentProps> = ({
             color: "#ffd166",
           }}
         >
-          <span>Certificate No: {cert.certificateId}</span>
-          <span>Verification ID: {cert.verificationCode}</span>
+          <span>{cert.localOnly ? "Local learning record" : `Certificate No: ${cert.certificateId}`}</span>
+          <span>{cert.localOnly ? "No public verification ID" : `Verification ID: ${cert.verificationCode}`}</span>
         </div>
         <div
           dir="rtl"
