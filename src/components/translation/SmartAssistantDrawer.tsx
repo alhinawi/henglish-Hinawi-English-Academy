@@ -17,6 +17,8 @@ import {
   Lightbulb,
   CornerDownLeft,
 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
+import { isAiServiceUnavailable } from '../../services/aiAvailability';
 
 interface SmartAssistantDrawerProps {
   isOpen: boolean;
@@ -47,6 +49,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
   targetLang,
   mode,
 }) => {
+  const { t } = useLanguage();
   const [messages, setMessages] = useState<AssistantChatMessage[]>(() => [
     {
       id: 'welcome',
@@ -98,11 +101,11 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
       };
 
       setMessages(prev => [...prev, assistantMsg]);
-    } catch {
+    } catch (err) {
       const errorMsg: AssistantChatMessage = {
         id: `err_${Date.now()}`,
         role: 'assistant',
-        content: 'عذراً، حدث خطأ مؤقت في الاتصال بمساعد الترجمة الذكي. تفضل بالمحاولة مجدداً.',
+        content: isAiServiceUnavailable(err) ? t('ai.unavailable') : 'عذراً، حدث خطأ مؤقت في الاتصال بمساعد الترجمة الذكي. تفضل بالمحاولة مجدداً.',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       setMessages(prev => [...prev, errorMsg]);

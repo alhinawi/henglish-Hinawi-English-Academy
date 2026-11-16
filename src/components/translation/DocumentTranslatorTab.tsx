@@ -17,6 +17,8 @@ import {
   ArrowRight,
   FileCheck,
 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
+import { isAiServiceUnavailable } from '../../services/aiAvailability';
 
 interface DocumentTranslatorTabProps {
   sourceLang: LanguageCode;
@@ -29,6 +31,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
   targetLang,
   mode,
 }) => {
+  const { t } = useLanguage();
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string>('');
@@ -99,7 +102,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
       playSound('fanfare');
     } catch (err) {
       console.error('Document translation error:', err);
-      setErrorMessage('تعذر إكمال ترجمة المستند. يرجى التأكد من اتصال الإنترنت وصلاحية الملف.');
+      setErrorMessage(isAiServiceUnavailable(err) ? t('ai.unavailable') : 'تعذر إكمال ترجمة المستند. يرجى التأكد من اتصال الإنترنت وصلاحية الملف.');
       playSound('wrong');
     } finally {
       setIsProcessing(false);

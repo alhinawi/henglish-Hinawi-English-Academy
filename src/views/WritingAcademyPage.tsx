@@ -2,6 +2,7 @@ import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
+import { isAiServiceUnavailable, throwForAiResponse } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
 import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
 import {
@@ -107,9 +108,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         }),
       });
 
-      if (!response.ok) {
-        throw new Error(`AI writing analysis failed with status: ${response.status}`);
-      }
+      await throwForAiResponse(response, `AI writing analysis failed with status: ${response.status}`);
 
       const data = await response.json();
       const feedbackText = data.text || data.response || t('wa.feedback.unavailable');
@@ -117,8 +116,12 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       playSound('correct');
       fireCelebration();
     } catch (err) {
-      console.warn('AI analysis fallback:', err);
-      setSubmissionFeedback(t('wa.feedback.error'));
+      if (isAiServiceUnavailable(err)) {
+        setSubmissionFeedback(t('ai.unavailable'));
+      } else {
+        console.warn('AI analysis fallback:', err);
+        setSubmissionFeedback(t('wa.feedback.error'));
+      }
 
     } finally {
       setIsAnalyzing(false);

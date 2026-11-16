@@ -4,6 +4,7 @@ import { QuestionBankPanel } from '../components/QuestionBankPanel';
 import { QuizEngine } from '../components/QuizEngine';
 import { QuizQuestion } from '../types';
 import { playSound, fireCelebration } from '../utils/audio';
+import { isAiServiceUnavailable, throwForAiResponse } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
 import { Sparkles, Filter, Brain, RefreshCw, Zap, BookOpen, Layers } from 'lucide-react';
 
@@ -65,9 +66,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
         }),
       });
 
-      if (!response.ok) {
-        throw new Error(`Failed to generate questions: ${response.status}`);
-      }
+      await throwForAiResponse(response, `Failed to generate questions: ${response.status}`);
 
       const data = await response.json();
       if (!data.questions || !Array.isArray(data.questions)) {
@@ -88,8 +87,12 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       playSound('correct');
       fireCelebration();
     } catch (err: any) {
-      console.error('Quiz generation error:', err);
-      setGenerationError(t('qz.genError'));
+      if (isAiServiceUnavailable(err)) {
+        setGenerationError(t('ai.unavailable'));
+      } else {
+        console.error('Quiz generation error:', err);
+        setGenerationError(t('qz.genError'));
+      }
       playSound('wrong');
     } finally {
       setIsGenerating(false);

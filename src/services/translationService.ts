@@ -15,6 +15,7 @@ import {
   TranslationMode,
 } from '../types/translation';
 import { CEFRLevel } from '../types';
+import { throwForAiResponse } from './aiAvailability';
 import { saveSrsCardsToStorage, loadSrsCardsFromStorage, VocabularyCard } from './spacedRepetitionService';
 
 const STORAGE_KEY_HISTORY = 'henglish_translation_history_v1';
@@ -66,10 +67,7 @@ export async function executeTranslation(req: TranslationRequest): Promise<Trans
     body: JSON.stringify(req),
   });
 
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({}));
-    throw new Error(errorData.error || errorData.message || `Translation failed with status ${response.status}`);
-  }
+  await throwForAiResponse(response, `Translation failed with status ${response.status}`);
 
   const result: TranslationResponse = await response.json();
 
@@ -108,9 +106,7 @@ export async function askTranslationAssistant(
     body: JSON.stringify({ question, context }),
   });
 
-  if (!response.ok) {
-    throw new Error('Failed to consult translation assistant');
-  }
+  await throwForAiResponse(response, 'Failed to consult translation assistant');
 
   return response.json();
 }
@@ -129,9 +125,7 @@ export async function performImageOcrTranslation(
     body: JSON.stringify({ imageBase64, mimeType, targetLang }),
   });
 
-  if (!response.ok) {
-    throw new Error('OCR text recognition failed');
-  }
+  await throwForAiResponse(response, 'OCR text recognition failed');
 
   return response.json();
 }
@@ -149,9 +143,7 @@ export async function transcribeAudioRecording(
     body: JSON.stringify({ audioBase64, mimeType }),
   });
 
-  if (!response.ok) {
-    throw new Error('Voice transcription failed');
-  }
+  await throwForAiResponse(response, 'Voice transcription failed');
 
   return response.json();
 }
