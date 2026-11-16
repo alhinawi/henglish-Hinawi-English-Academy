@@ -46,14 +46,14 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 
     // Validate size (max 10MB)
     if (selected.size > 10 * 1024 * 1024) {
-      setErrorMessage('حجم الملف كبير جداً (الحد الأقصى 10 ميجابايت).');
+      setErrorMessage(t('dt.errTooLarge'));
       return;
     }
 
     // Validate extension
     const ext = selected.name.split('.').pop()?.toLowerCase();
     if (!['txt', 'pdf', 'docx'].includes(ext || '')) {
-      setErrorMessage('صيغة الملف غير مدعومة. يرجى اختيار ملف TXT أو PDF أو DOCX.');
+      setErrorMessage(t('dt.errFormat'));
       return;
     }
 
@@ -69,7 +69,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
     setIsProcessing(true);
     setErrorMessage(null);
     setProgressPercent(10);
-    setStatusMessage('جارٍ فك ترميز المستند واستخراج الفقرات المنظمة...');
+    setStatusMessage(t('dt.decoding'));
 
     try {
       const { text, chunks } = await extractTextFromDocument(file);
@@ -80,7 +80,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 
       for (let i = 0; i < totalChunks; i++) {
         const chunk = chunks[i];
-        setStatusMessage(`جارٍ ترجمة القسم ${i + 1} من أصل ${totalChunks}...`);
+        setStatusMessage(t('dt.translatingChunk').replace('{n}', String(i + 1)).replace('{m}', String(totalChunks)));
         setProgressPercent(Math.round(15 + ((i + 1) / totalChunks) * 80));
 
         const res = await executeTranslation({
@@ -98,11 +98,11 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
       const fullTranslation = translatedChunks.join('\n\n');
       setTranslatedDocumentText(fullTranslation);
       setProgressPercent(100);
-      setStatusMessage('تمت ترجمة المستند بنجاح مع الحفاظ على التنسيق والفقرات!');
+      setStatusMessage(t('dt.done'));
       playSound('fanfare');
     } catch (err) {
       console.error('Document translation error:', err);
-      setErrorMessage(isAiServiceUnavailable(err) ? t('ai.unavailable') : 'تعذر إكمال ترجمة المستند. يرجى التأكد من اتصال الإنترنت وصلاحية الملف.');
+      setErrorMessage(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('dt.errTranslate'));
       playSound('wrong');
     } finally {
       setIsProcessing(false);
@@ -132,16 +132,16 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
         <div>
           <h3 className="text-lg font-bold text-white flex items-center gap-2">
             <FileText className="w-5 h-5 text-[#41e7ff]" />
-            <span>ترجمة المستندات الكاملة (Document Translation Studio)</span>
+            <span>{t('dt.title')}</span>
           </h3>
           <p className="text-xs text-[#b9b6d5] mt-1">
-            ارفع ملفات TXT، PDF، أو DOCX. يقوم النظام باستخراج المحتوى وترجمته بالكامل مع الحفاظ على ترتيب الفقرات.
+            {t('dt.blurb')}
           </p>
         </div>
 
         <div className="flex items-center gap-2 shrink-0">
           <span className="text-xs px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-slate-300">
-            الصيغ المدعومة: TXT, PDF, DOCX
+            {t('dt.formats')}
           </span>
         </div>
       </div>
@@ -154,10 +154,10 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 
         <label className="cursor-pointer">
           <span className="text-sm font-bold text-white hover:text-[#41e7ff] transition-colors underline block mb-1">
-            {file ? file.name : 'انقر لاختيار مستند من جهازك'}
+            {file ? file.name : t('dt.pickFile')}
           </span>
           <span className="text-xs text-[#b9b6d5]/70 block">
-            {file ? `${(file.size / 1024).toFixed(1)} كيلوبايت` : 'أو اسحب الملف وأفلته هنا مباشرة (الحد الأقصى 10MB)'}
+            {file ? `${(file.size / 1024).toFixed(1)} ${t('dt.kb')}` : t('dt.dropHint')}
           </span>
           <input
             type="file"
@@ -175,7 +175,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
             className="mt-5 px-6 py-2.5 rounded-xl bg-gradient-to-r from-[#41e7ff] to-[#7c3aed] text-black font-bold text-sm shadow-lg shadow-[#41e7ff]/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer flex items-center gap-2"
           >
             <Sparkles className="w-4 h-4" />
-            <span>بدء ترجمة المستند الآن</span>
+            <span>{t('dt.start')}</span>
           </button>
         )}
       </div>
@@ -211,7 +211,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <FileCheck className="w-5 h-5 text-[#10b981]" />
-              <h4 className="text-sm font-bold text-white">معاينة المستند المترجم:</h4>
+              <h4 className="text-sm font-bold text-white">{t('dt.preview')}</h4>
             </div>
 
             <button
@@ -220,7 +220,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#10b981] hover:bg-[#10b981]/90 text-black font-bold text-xs shadow-md shadow-[#10b981]/20 transition-all cursor-pointer"
             >
               <Download className="w-4 h-4" />
-              <span>تحميل المستند المترجم (.txt)</span>
+              <span>{t('dt.download')}</span>
             </button>
           </div>
 
