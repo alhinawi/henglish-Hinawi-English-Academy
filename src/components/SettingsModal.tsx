@@ -27,8 +27,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   }, [onClose]);
 
   const { lang, setLang, t } = useLanguage();
-  const [name, setName] = useState(userProfile.nameAr || userProfile.name);
-  const [avatar, setAvatar] = useState<string | null>(userProfile.avatar);
+  const initialName = userProfile.nameAr || userProfile.name;
+  const initialAvatar = userProfile.avatar ?? null;
+  const [name, setName] = useState(initialName);
+  const [avatar, setAvatar] = useState<string | null>(initialAvatar);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -66,16 +68,21 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
     setSaving(true);
     setError(null);
     const trimmed = name.trim();
+    const nameChanged = trimmed.length >= 2 && trimmed !== initialName;
+    const avatarChanged = avatar !== initialAvatar;
     const res = await apiUpdateMe(accessToken, {
-      ...(trimmed.length >= 2 ? { name: trimmed } : {}),
-      avatar: avatar || null,
+      ...(nameChanged ? { name: trimmed } : {}),
+      ...(avatarChanged ? { avatar: avatar || null } : {}),
     });
     setSaving(false);
     if (!res) {
       setError('حصلت مشكلة أثناء الحفظ. حاول تاني.');
       return;
     }
-    onSaved({ name: trimmed.length >= 2 ? trimmed : undefined, avatar: avatar || null });
+    onSaved({
+      name: trimmed.length >= 2 ? trimmed : undefined,
+      ...(avatarChanged ? { avatar: avatar || null } : {}),
+    });
     onClose();
   };
 
@@ -127,12 +134,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
             >
               <Camera className="w-4 h-4" />
               <span>غيّر صورتك</span>
-            </button>
-            <button
-              onClick={() => setAvatar(null)}
-              className="px-3 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-slate-300 text-xs font-bold cursor-pointer"
-            >
-              من غير صورة
             </button>
           </div>
           <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={onFile} />

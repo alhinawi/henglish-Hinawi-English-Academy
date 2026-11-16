@@ -44,6 +44,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-[#0c0b20] text-[#f7f5ff] font-['Cairo',sans-serif] antialiased selection:bg-[#ff4f9a]/30 selection:text-[#ffd166] min-h-screen overflow-x-clip">
+        {/* Static boot splash: visible in the prerendered HTML before the app
+            bundle loads (throttled networks), removed on AppLoader mount. */}
+        <div
+          id="boot-splash"
+          style={{
+            position: 'fixed', inset: 0, zIndex: 9999, background: '#0c0b20',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+          }}
+        >
+          <img
+            src="/logo-clean.png"
+            alt="Henglish"
+            width={80}
+            height={80}
+            style={{ borderRadius: 20, animation: 'bootSplashPulse 1.6s ease-in-out infinite' }}
+          />
+          <style>{`@keyframes bootSplashPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.72;transform:scale(.96)}}`}</style>
+        </div>
         {children}
       </body>
     </html>
