@@ -29,6 +29,9 @@ import {
   Film,
   BookText,
   Languages,
+  Quote,
+  MessagesSquare,
+  Zap,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -214,6 +217,24 @@ export const Sidebar: React.FC<SidebarProps> = ({
           route: 'vocabulary',
           icon: BookA,
           
+        },
+        {
+          label: 'التعابير الاصطلاحية',
+          labelEn: 'Idioms Bank',
+          route: 'idioms',
+          icon: Quote,
+        },
+        {
+          label: 'السلانج',
+          labelEn: 'Slang Bank',
+          route: 'slang',
+          icon: MessagesSquare,
+        },
+        {
+          label: 'سلانج الجيل Z',
+          labelEn: 'Gen Z Slang',
+          route: 'genz',
+          icon: Zap,
         },
         {
           label: 'أكاديمية المحادثة',
