@@ -83,9 +83,9 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   };
 
   return (
-    <div className="flex items-center justify-between gap-3 p-3 bg-[#0d0c24]/90 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg">
+    <div className="flex flex-col min-[360px]:flex-row items-center justify-between gap-3 p-3 bg-[#0d0c24]/90 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg">
       {/* Source Language Dropdown */}
-      <div className="relative min-w-0 flex-1" ref={sourceRef}>
+      <div className="relative w-full min-w-0 min-[360px]:flex-1" ref={sourceRef}>
         <button
           type="button"
           onClick={() => {
@@ -99,7 +99,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
             <LanguageMark code={sourceInfo.code} />
             <div className="flex flex-col text-right leading-tight min-w-0">
               <span className="text-xs text-[#b9b6d5]">{t('tl.sourceLang')}</span>
-              <span className="text-xs sm:text-sm font-semibold text-white truncate">
+              <span className="text-xs sm:text-sm font-semibold text-white break-words">
                 {t(sourceInfo.nameAr)}
                 {sourceLang === 'auto' && detectedInfo && (
                   <span className="mr-1.5 text-xs text-[#41e7ff] font-normal">
@@ -114,7 +114,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
         {/* Dropdown Menu */}
         {isSourceOpen && (
-          <div className="absolute top-full right-0 mt-2 w-72 bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+          <div className="absolute top-full right-0 mt-2 w-72 max-w-[calc(100vw-4rem)] bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
             <div className="relative mb-2">
               <Search className="w-4 h-4 absolute right-3 top-2.5 text-[#b9b6d5]" />
               <input
@@ -167,7 +167,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       </button>
 
       {/* Target Language Dropdown */}
-      <div className="relative min-w-0 flex-1" ref={targetRef}>
+      <div className="relative w-full min-w-0 min-[360px]:flex-1" ref={targetRef}>
         <button
           type="button"
           onClick={() => {
@@ -181,7 +181,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
             <LanguageMark code={targetInfo.code} />
             <div className="flex flex-col text-right leading-tight min-w-0">
               <span className="text-xs text-[#b9b6d5]">{t('tl.targetLang')}</span>
-              <span className="text-xs sm:text-sm font-semibold text-white truncate">{t(targetInfo.nameAr)}</span>
+              <span className="text-xs sm:text-sm font-semibold text-white break-words">{t(targetInfo.nameAr)}</span>
             </div>
           </div>
           <ChevronDown className="w-3 h-3 text-[#b9b6d5] shrink-0" />
@@ -189,7 +189,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
         {/* Dropdown Menu */}
         {isTargetOpen && (
-          <div className="absolute top-full left-0 mt-2 w-72 bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+          <div className="absolute top-full left-0 mt-2 w-72 max-w-[calc(100vw-4rem)] bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
             <div className="relative mb-2">
               <Search className="w-4 h-4 absolute right-3 top-2.5 text-[#b9b6d5]" />
               <input
