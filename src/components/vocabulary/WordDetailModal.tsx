@@ -19,6 +19,7 @@ import {
   Quote,
 } from 'lucide-react';
 import { LexicalEntry, isWordSaved, saveWord, removeSavedWord, getSavedWords } from '../../services/vocabularyService';
+import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
 import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 
@@ -47,6 +48,9 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
 }) => {
   const [saved, setSaved] = useState(false);
   const [userNote, setUserNote] = useState('');
+  const txMap = useContentMap('vocab');
+  const shownMeaning = entry ? txMeaning(txMap, entry.id, entry.meaningAr) : '';
+  const shownExample = entry ? txExample(txMap, entry.id, entry.exampleAr) : '';
 
   useEffect(() => {
     if (entry) {
@@ -149,7 +153,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                 </span>
               </div>
               <p className="text-xl sm:text-2xl font-black text-[#c4ff55] mt-2 font-['Cairo',sans-serif]">
-                {entry.meaningAr}
+                {shownMeaning}
               </p>
             </div>
 
@@ -247,7 +251,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
               "{entry.exampleEn}"
             </p>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
-              {entry.exampleAr}
+              {shownExample}
             </p>
           </div>
         </div>
