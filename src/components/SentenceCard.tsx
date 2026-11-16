@@ -191,7 +191,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
       <div className="space-y-3">
         {/* English Sentence */}
         <div className="flex items-start justify-between gap-3 text-left">
-          <p className="text-lg sm:text-xl font-black text-white tracking-wide leading-relaxed selection:bg-purple-500/30">
+          <p dir="ltr" lang="en" className="min-w-0 break-words text-lg sm:text-xl font-black text-white tracking-wide leading-relaxed selection:bg-purple-500/30">
             {sentence.english}
           </p>
           <div className="flex items-center gap-1 shrink-0 mt-1">
@@ -217,7 +217,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
         </div>
 
         {/* IPA Pronunciation Guide */}
-        <div className="text-left">
+        <div dir="ltr" className="text-left">
           <span className="text-xs font-mono text-purple-300/80 bg-purple-500/10 px-2.5 py-0.5 rounded-md inline-block border border-purple-500/20">
             {sentence.ipa}
           </span>
@@ -259,7 +259,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
             <BookOpen className="w-4 h-4 text-purple-400 shrink-0 mt-0.5" />
             <div className="space-y-0.5">
               <span className="font-black text-purple-300 block">{t('sc.grammarRule')}</span>
-              <p className="text-white/80 font-medium">{sentence.grammar}</p>
+              <p dir="ltr" lang="en" className="text-left text-white/80 font-medium">{sentence.grammar}</p>
             </div>
           </div>
 
@@ -271,6 +271,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
                 {sentence.vocabulary.map((vocab, idx) => (
                   <span
                     key={idx}
+                    dir="ltr" lang="en"
                     className="px-2.5 py-1 rounded-lg bg-white/5 text-white/90 font-mono text-xs border border-white/10 hover:border-purple-400/50 transition-colors"
                   >
                     {vocab}
@@ -282,7 +283,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
 
           {/* Example Conversation Dialogue */}
           {sentence.conversation && (
-            <div className="p-3 rounded-xl bg-white/5 border border-white/5 space-y-2 text-left">
+            <div dir="ltr" lang="en" className="p-3 rounded-xl bg-white/5 border border-white/5 space-y-2 text-left">
               <div className="flex items-center justify-between text-[11px] text-white/40 border-b border-white/5 pb-1">
                 <span className="font-bold">CONVERSATION IN CONTEXT</span>
                 <span>{sentence.conversation.context}</span>
@@ -304,7 +305,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           {sentence.relatedSentences && sentence.relatedSentences.length > 0 && (
             <div className="space-y-1 text-right">
               <span className="text-[11px] font-bold text-white/50 block">{t('sc.altWays')}</span>
-              <ul className="space-y-1 text-left">
+              <ul dir="ltr" lang="en" className="space-y-1 text-left">
                 {sentence.relatedSentences.map((rel, idx) => (
                   <li key={idx} className="text-xs text-white/70 italic flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0" />
