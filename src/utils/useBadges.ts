@@ -26,7 +26,12 @@ export function useBadges(identity?: string | null) {
    setVerifiedToken(token);setAwards(data.badges);setStatus('ready');
   } catch {if(request===generation.current)setStatus('error');}
  },[]);
- useEffect(()=>{void refresh();return ()=>{generation.current++;};},[refresh,identity]);
+ useEffect(()=>{
+  void refresh();
+  const recheck=()=>{void refresh();};
+  window.addEventListener('hashchange',recheck);window.addEventListener('focus',recheck);
+  return ()=>{generation.current++;window.removeEventListener('hashchange',recheck);window.removeEventListener('focus',recheck);};
+ },[refresh,identity]);
  const visibleAwards=verifiedToken===getHenglishApiToken()?awards:[];
  const badges:AchievementBadge[]=catalog.map(b=>{
   const a=visibleAwards.find(a=>a.id===b.id);
