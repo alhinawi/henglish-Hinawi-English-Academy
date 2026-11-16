@@ -2686,5 +2686,10 @@
   "md.copyText": "Copy text",
   "md.copied": "Copied",
   "md.copy": "Copy",
-  "md.expression": "English expression / formula"
+  "md.expression": "English expression / formula",
+  "mm.title": "Movie Memory",
+  "mm.intro": "12 face-down cards: 6 sentences from the platform and 6 translations. Remember where each matching pair is.",
+  "mm.loading": "Preparing cards...",
+  "mm.result": "Completed in {count} moves. Fewer moves mean a higher score.",
+  "mm.moves": "Moves: {count}"
 }

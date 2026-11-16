@@ -2686,5 +2686,10 @@
   "md.copyText": "Text kopieren",
   "md.copied": "Kopiert",
   "md.copy": "Kopieren",
-  "md.expression": "Englischer Ausdruck / Formel"
+  "md.expression": "Englischer Ausdruck / Formel",
+  "mm.title": "Film-Memory",
+  "mm.intro": "12 verdeckte Karten: 6 Sätze aus den Lerninhalten und 6 Übersetzungen. Merke dir, wo die passenden Paare liegen.",
+  "mm.loading": "Karten werden vorbereitet...",
+  "mm.result": "In {count} Zügen abgeschlossen. Weniger Züge bedeuten mehr Punkte.",
+  "mm.moves": "Züge: {count}"
 }
