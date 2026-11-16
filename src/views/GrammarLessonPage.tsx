@@ -1,6 +1,6 @@
-import { LessonTrap } from '../components/LessonCorrection';
+import { LessonTrap, MixedLessonText } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
-import { LessonPhoto, LessonPhotoGallery } from '../components/LessonPhotography';
+import { LessonPhoto } from '../components/LessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
@@ -151,14 +151,14 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-[1.6]">
-            {rule.titleAr}
+            <MixedLessonText text={rule.titleAr} />
           </h1>
           <div className="text-sm sm:text-base font-mono text-[#41e7ff] font-semibold">
             {rule.titleEn}
           </div>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
-            {rule.summaryAr}
+            <MixedLessonText text={rule.summaryAr} />
           </p>
 
           {/* Quick Voice Audio Pronunciation of Rule Title */}
@@ -225,7 +225,6 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         </section>
       </div>
 
-      <LessonPhotoGallery lessonId={rule.id} />
 
       {/* 4. THE GOLDEN SENTENCE FORMULAS (INTERACTIVE TABS) */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
