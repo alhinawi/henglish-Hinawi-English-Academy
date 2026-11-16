@@ -30,6 +30,45 @@ const NAV_LABEL_KEYS: Record<string, string> = {
   'الشهادات والتوثيق': 'nav.certificates',
   'معمل التمارين والألعاب': 'nav.practice',
   'تعلمي والملاحظات': 'nav.myLearning',
+  'الرئيسية واللوحة': 'sidebar.group.home',
+  'الأكاديميات الأساسية (A1 - C2)': 'sidebar.group.academies',
+  'المعمل والشهادات': 'sidebar.group.lab',
+  '5,000 جملة': 'sidebar.group.sentences',
+  'أزمنة المستقبل': 'grammar.section.future',
+  'أزمنة المضارع': 'grammar.section.present',
+  'أزمنة الماضي': 'grammar.section.past',
+  'مواضيع وقواعد أخرى': 'grammar.section.other',
+  'المستقبل التام': 'grammar.item.futurePerfect',
+  'المستقبل البسيط (Will)': 'grammar.item.futureSimpleWill',
+  'صيغة Be Going To': 'grammar.item.beGoingTo',
+  'المستقبل المستمر': 'grammar.item.futureContinuous',
+  'المستقبل التام المستمر': 'grammar.item.futurePerfectContinuous',
+  'المضارع البسيط': 'grammar.item.presentSimple',
+  'المضارع المستمر': 'grammar.item.presentContinuous',
+  'المضارع التام': 'grammar.item.presentPerfect',
+  'المضارع التام المستمر': 'grammar.item.presentPerfectContinuous',
+  'الماضي البسيط': 'grammar.item.pastSimple',
+  'الماضي المستمر': 'grammar.item.pastContinuous',
+  'الماضي التام': 'grammar.item.pastPerfect',
+  'الماضي التام المستمر': 'grammar.item.pastPerfectContinuous',
+  'حالة الشرط الصفرية': 'grammar.item.conditional0',
+  'حالة الشرط الأولى': 'grammar.item.conditional1',
+  'حالة الشرط الثانية': 'grammar.item.conditional2',
+  'حالة الشرط الثالثة': 'grammar.item.conditional3',
+  'الأفعال الناقصة': 'grammar.item.modals',
+  'المبني للمجهول': 'grammar.item.passive',
+  'الكلام المنقول': 'grammar.item.reportedSpeech',
+  'ضمائر وجمل الوصل': 'grammar.item.relativeClauses',
+  'جديد': 'sidebar.new',
+  '21+ قاعدة': 'sidebar.rulesBadge',
+  'رسمي': 'sidebar.official',
+  'مساحتي الخاصة': 'nav.mySpace',
+  'لوحة المتصدرين': 'header.leaderboard',
+  'الإدارة الأكاديمية': 'sidebar.adminSection',
+  'لوحة المعلم الأكاديمي': 'sidebar.teacherPanel',
+  'معلم': 'header.teacher',
+  'لوحة التحكم الإدارية': 'header.adminPanel',
+  'الرئيسية هنجلش': 'sidebar.brandHome',
 };
 import { playSound } from '../../utils/audio';
 import {
@@ -458,7 +497,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <button
               onClick={onCloseMobile}
               className="p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/10 cursor-pointer"
-              aria-label="إغلاق القائمة"
+              aria-label={t('sidebar.close')}
             >
               <X className="w-5 h-5" />
             </button>
@@ -471,7 +510,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   : 'hidden md:flex'
               }`}
               title={isCollapsed ? 'توسيع القائمة' : 'تصغير القائمة'}
-              aria-label="تبديل عرض القائمة"
+              aria-label={t('sidebar.toggle')}
             >
               {isCollapsed ? <ChevronLeft className="w-3.5 h-3.5" /> : <ChevronRight className="w-4 h-4" />}
             </button>
@@ -486,13 +525,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 {cefrLevel}
               </div>
               <div>
-                <div dir="auto" className="text-xs font-bold text-white" style={{ textAlign: 'start' }}>المستوى الحالي</div>
+                <div dir="auto" className="text-xs font-bold text-white" style={{ textAlign: 'start' }}>{t('sidebar.currentLevel')}</div>
                 <div className="text-[11px] text-[#41e7ff] font-semibold">{xp.toLocaleString()} XP</div>
               </div>
             </div>
             <div className="flex items-center gap-1 text-[11px] font-black text-[#ff8bb9] bg-[#ff4f9a]/15 px-2 py-0.5 rounded-full border border-[#ff4f9a]/30">
               <Flame className="w-3 h-3 text-[#ff4f9a]" />
-              <span dir="auto">نشط</span>
+              <span dir="auto">{t('sidebar.active')}</span>
             </div>
           </div>
         )}
@@ -511,7 +550,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div key={gIdx} className="space-y-1">
               {!isCollapsed && (
                 <h3 dir="auto" className="px-3 text-[10px] font-black uppercase tracking-wider text-[#b9b6d5]/70 mb-1" style={{ textAlign: 'start' }}>
-                  {group.groupTitle}
+                  {tl(group.groupTitle)}
                 </h3>
               )}
               {group.items.map(item => {
@@ -564,7 +603,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                     : 'bg-white/10 text-[#ffd166] border border-white/10'
                                 }`}
                               >
-                                <span dir="auto">{item.badge}</span>
+                                <span dir="auto">{tl(item.badge)}</span>
                               </span>
                             )}
                           </div>
@@ -605,7 +644,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                     : 'text-[#b9b6d5] hover:text-white hover:bg-white/5'
                                 }`}
                               >
-                                <span dir="auto">{sec.title}</span>
+                                <span dir="auto">{tl(sec.title)}</span>
                               </button>
                             );
                           })}
@@ -672,7 +711,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         className={`hidden md:block shrink-0 order-2 transition-[width] duration-300 z-40 sticky top-0 h-screen ${
           collapsed ? 'w-20' : 'w-72'
         }`}
-        aria-label="القائمة الجانبية للكمبيوتر"
+        aria-label={t('sidebar.desktopAria')}
       >
         {renderSidebarContent(false)}
       </aside>
@@ -694,7 +733,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         } ${
           mobileOpen ? 'translate-x-0' : dir === 'rtl' ? 'translate-x-full' : '-translate-x-full'
         }`}
-        aria-label="القائمة الجانبية للشاشات الصغيرة"
+        aria-label={t('sidebar.mobileAria')}
       >
         {renderSidebarContent(true)}
       </aside>
