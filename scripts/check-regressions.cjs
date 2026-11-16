@@ -22,6 +22,7 @@ const checks = [
   'check-sentence-stats.cjs',
   'check-copy-success.cjs',
   'check-sentence-rating-bidi.cjs',
+  'check-sentence-direction.cjs',
   'check_progress_fallbacks.cjs',
   'check_recovery_fallbacks.cjs',
 ];
