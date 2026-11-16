@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
 import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../data/vocabularyAcademyData';
 import { VERB_TOOLKIT } from '../data/verbsData';
@@ -43,6 +44,7 @@ interface VocabularyAcademyPageProps {
 }
 
 export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ onNavigate }) => {
+  const { t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
   const appText = useAppTextMap('vocabularyAcademyData');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -74,19 +76,19 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
   const [reviewMode, setReviewMode] = useState<'due' | 'all'>('due');
 
   const categories = [
-    { id: 'all', label: 'جميع الكلمات' },
-    { id: 'business', label: 'الأعمال والشركات' },
-    { id: 'tech', label: 'التكنولوجيا والبرمجة' },
-    { id: 'workplace', label: 'بيئة العمل' },
-    { id: 'travel', label: 'السفر والمطارات' },
-    { id: 'hotel', label: 'الفنادق والضيافة' },
-    { id: 'food', label: 'المطاعم والأطعمة' },
-    { id: 'medical', label: 'المجال الطبي' },
-    { id: 'phrasal_verbs', label: 'الأفعال المركبة (Phrasal)' },
-    { id: 'idioms', label: 'التعبيرات الاصطلاحية (Idioms)' },
-    { id: 'academic', label: 'الكلمات الأكاديمية' },
-    { id: 'everyday', label: 'الحياة اليومية' },
-    { id: 'collocations', label: 'التعبيرات المترافقة (Collocations)' },
+    { id: 'all', label: t('va.catAll') },
+    { id: 'business', label: t('va.catBusiness') },
+    { id: 'tech', label: t('va.catTech') },
+    { id: 'workplace', label: t('va.catWorkplace') },
+    { id: 'travel', label: t('va.catTravel') },
+    { id: 'hotel', label: t('va.catHotel') },
+    { id: 'food', label: t('va.catFood') },
+    { id: 'medical', label: t('va.catMedical') },
+    { id: 'phrasal_verbs', label: t('va.catPhrasal') },
+    { id: 'idioms', label: t('va.catIdioms') },
+    { id: 'academic', label: t('va.catAcademic') },
+    { id: 'everyday', label: t('va.catEveryday') },
+    { id: 'collocations', label: t('va.catCollocations') },
   ];
 
   const filteredWords = VOCABULARY_ACADEMY_WORDS.filter(w => {
@@ -146,7 +148,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#c4ff55]/20 text-[#c4ff55] border border-[#c4ff55]/40 shadow-sm">
               <BookA className="w-4 h-4" />
-              <span>HINAWI VOCABULARY ACADEMY • بنك الكلمات والمصطلحات التفاعلي</span>
+              <span>{t('va.badge')}</span>
             </div>
 
             <button
@@ -157,16 +159,16 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-white/10 hover:bg-white/15 text-white/90 border border-white/10 transition-all cursor-pointer"
             >
               <Settings className="w-3.5 h-3.5 text-[#ffd166]" />
-              <span>إدارة وبناء المفردات</span>
+              <span>{t('va.adminBtn')}</span>
             </button>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            أكاديمية المفردات وقاعدة الكلمات الشاملة
+            {t('va.heroTitle')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            منظومة معجمية شاملة تضم <strong>أكثر من 21,000 كلمة محققة</strong> مرتبة حسب التكرار مع النطق الأمريكي (US) والبريطاني (UK) والرموز الصوتية IPA، مصنفة حسب مستويات CEFR (A1-C2) ومجالات الحياة المختلفة.
+            {t('va.heroBodyA')} <strong>{t('va.heroBodyStrong')}</strong> {t('va.heroBodyB')}
           </p>
 
           {/* Mode Switcher Tabs */}
@@ -183,7 +185,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
               }`}
             >
               <Compass className="w-4 h-4" />
-              <span>مستكشف الكلمات الذكي (21,000+ كلمة محققة)</span>
+              <span>{t('va.tabExplorer')}</span>
             </button>
 
             <button
@@ -198,7 +200,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
               }`}
             >
               <Bookmark className="w-4 h-4" />
-              <span>بنك كلماتي والتكرار المتباعد (SRS)</span>
+              <span>{t('va.tabSrs')}</span>
             </button>
 
             <button
@@ -213,7 +215,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
               }`}
             >
               <MessageSquare className="w-4 h-4" />
-              <span>التعابير والمصطلحات (10,000+)</span>
+              <span>{t('va.tabPhrases')}</span>
             </button>
 
             <button
@@ -227,7 +229,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                   : 'bg-white/5 hover:bg-white/10 text-white/80 border border-white/10'
               }`}
             >
-              حقيبة تصريف الأفعال V1-V3
+              {t('va.tabVerbs')}
             </button>
 
             <button
@@ -241,7 +243,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                   : 'bg-white/5 hover:bg-white/10 text-white/70 border border-white/10'
               }`}
             >
-              المفردات الموضوعية
+              {t('va.topicsTitle')}
             </button>
           </div>
         </div>
@@ -269,7 +271,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 dir="auto"
                 value={searchTerm}
                 onChange={e => setSearchTerm(e.target.value)}
-                placeholder="ابحث عن أي كلمة بالإنجليزي أو العربي أو مثال..."
+                placeholder={t('va.searchPh')}
                 className="w-full pl-4 pr-12 py-3 rounded-xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#c4ff55]"
               />
             </div>
@@ -308,7 +310,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                     <button
                       onClick={() => speakEnglish(w.word)}
                       className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer"
-                      title="استمع للنطق الإنجليزي"
+                      title={t('va.listenTitle')}
                     >
                       <Volume2 className="w-4 h-4" />
                     </button>
@@ -335,7 +337,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
                 {w.collocation && (
                   <div className="pt-2 border-t border-white/5 flex items-center justify-between text-[11px] text-[#dedbf4]/80">
-                    <span className="font-bold text-[#ffd166]">متلازمة لفظية:</span>
+                    <span className="font-bold text-[#ffd166]">{t('va.collocation')}</span>
                     <span className="en font-mono">{w.collocation}</span>
                   </div>
                 )}
@@ -349,8 +351,8 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
       {activeTab === 'verbs' && (
         <section className="space-y-6">
           <div className="p-5 rounded-2xl bg-[#171632] border border-white/10 text-xs text-[#dedbf4]">
-           <strong className="text-[#ffd166]">ملاحظة أكاديمية: </strong>
-            التصريف الثالث (Past Participle - V3) هو الركيزة الأساسية لكافة أزمنة التام في اللغة الإنجليزية: المستقبل التام (will have + V3)، المضارع التام (have/has + V3)، والماضي التام (had + V3).
+           <strong className="text-[#ffd166]">{t('va.academicNote')} </strong>
+            {t('va.v3Note')}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -364,7 +366,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                   <button
                     onClick={() => speakEnglish(`${verb.v1}, ${verb.v2}, ${verb.v3}`)}
                     className="p-1 rounded bg-white/5 text-[#41e7ff] hover:text-white"
-                    title="استمع لتصريفات الفعل الثلاثة"
+                    title={t('va.listenFormsTitle')}
                   >
                     <Volume2 className="w-3.5 h-3.5" />
                   </button>
