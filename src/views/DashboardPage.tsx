@@ -7,7 +7,8 @@ import {
   UserProgressState,
   AchievementBadge,
 } from "../types";
-import { playSound, fireCelebration } from "../utils/audio";
+import { playSound } from "../utils/audio";
+import { deriveDailyGoals } from "../utils/useProgress";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
   CEFR_LEVELS,
@@ -49,7 +50,6 @@ interface DashboardPageProps {
   userProfile: UserProfile;
   progress: UserProgressState;
   badges: AchievementBadge[];
-  onToggleGoal: (goalId: string) => void;
 }
 
 export const DashboardPage: React.FC<DashboardPageProps> = ({
@@ -57,8 +57,9 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   userProfile,
   progress,
   badges,
-  onToggleGoal,
 }) => {
+  const dailyGoals = deriveDailyGoals(progress);
+  const dailyGoalsDone = dailyGoals.filter((g) => g.completed).length;
   const { t } = useLanguage();
   const currentLevel = userProfile.currentLevel;
   const nextLevel = nextLevelOf(currentLevel);
@@ -320,21 +321,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </p>
             </div>
             <span className="text-xs font-black px-2.5 py-1 rounded-full bg-[#c4ff55]/20 text-[#c4ff55] border border-[#c4ff55]/30">
-              {(progress.dailyGoals || []).filter((g) => g.completed).length} /{" "}
-              {(progress.dailyGoals || []).length} منجز
+              <span dir="ltr" className="tabular-nums">{dailyGoalsDone}/{dailyGoals.length}</span>{" "}منجز
             </span>
           </div>
 
           <div className="space-y-3">
-            {(progress.dailyGoals || []).map((goal) => (
+            {dailyGoals.map((goal) => (
               <div
                 key={goal.id}
-                onClick={() => {
-                  playSound("click");
-                  onToggleGoal(goal.id);
-                  if (!goal.completed) fireCelebration();
-                }}
-                className={`p-3.5 rounded-2xl border transition-all cursor-pointer flex items-center justify-between ${
+                className={`p-3.5 rounded-2xl border transition-all flex items-center justify-between ${
                   goal.completed
                     ? "bg-[#c4ff55]/10 border-[#c4ff55]/40 text-[#c4ff55]"
                     : "bg-white/5 border-white/10 hover:border-white/25 text-[#dedbf4]"
@@ -363,7 +358,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 </div>
 
                 <span className="text-xs font-mono font-bold">
-                  {goal.current}/{goal.target} {goal.unit}
+                  <span dir="ltr" className="tabular-nums">{goal.current}/{goal.target}</span>{" "}{goal.unit}
                 </span>
               </div>
             ))}

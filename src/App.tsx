@@ -99,7 +99,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     recordQuizScore,
     setFlashcardStatus,
     completeDailyChallenge,
-    toggleDailyGoal,
+    recordSpeakingPractice,
     savePersonalNote,
     deletePersonalNote,
     toggleBookmark,
@@ -416,7 +416,6 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                     userProfile={activeProfile}
                     progress={progress}
                     badges={badges}
-                    onToggleGoal={toggleDailyGoal}
                   />
                 )}
 
@@ -488,7 +487,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 8. Speaking Academy */}
                 {currentRoute === 'speaking' && (
-                  <SpeakingAcademyPage onNavigate={handleNavigate} onCompleteActivity={recordQuizScore} completedActivityIds={Object.keys(progress.quizScores)} />
+                  <SpeakingAcademyPage onNavigate={handleNavigate} onCompleteActivity={(id, s, t) => { recordQuizScore(id, s, t); recordSpeakingPractice(); }} completedActivityIds={Object.keys(progress.quizScores)} />
                 )}
 
                 {/* 9. Listening Academy */}
