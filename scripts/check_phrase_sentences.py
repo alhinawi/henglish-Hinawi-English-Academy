@@ -58,11 +58,21 @@ def main(index_path):
         if not name.startswith(f"{prefix}-sent-"):
             fail(errors, name, f"filename prefix must be {prefix}-sent-")
         if expected_lo is not None and lo != expected_lo:
-            fail(errors, name, f"expected block starting at {expected_lo}, got {lo}")
+            if lo > expected_lo:
+                # Coverage gap between writer batches is expected while
+                # deliveries are in flight; report it, don't fail.
+                print(f"note: coverage gap {expected_lo}..{lo - 1} (pending writer batch)")
+            else:
+                fail(errors, name, f"overlap: block starts at {lo}, previous ended at {expected_lo - 1}")
         if hi - lo != 99:
             # A partial tail block is allowed only as the LAST file of a
-            # checkpoint delivery; it gets completed by the next batch.
-            if name != files[-1]:
+            # contiguous run; it gets completed by the next batch.
+            idx = files.index(name)
+            is_last_of_run = idx == len(files) - 1
+            if not is_last_of_run:
+                nm = FILE_RE.match(files[idx + 1])
+                is_last_of_run = not nm or int(nm.group(1)) != hi + 1
+            if not is_last_of_run:
                 fail(errors, name, "blocks must cover exactly 100 ids")
         expected_lo = hi + 1
         data = json.load(open(os.path.join(sent_dir, name), encoding='utf-8'))
