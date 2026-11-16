@@ -25,6 +25,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { playSound } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 export interface ProviderHealth {
   provider: 'groq' | 'gemini' | 'cloudflare' | 'openai' | 'local';
@@ -65,6 +66,7 @@ export interface UsageAnalyticsItem {
 }
 
 export const AdminAiManagementSection: React.FC = () => {
+  const { t } = useLanguage();
   const [providers, setProviders] = useState<ProviderHealth[]>([]);
   const [config, setConfig] = useState<RouterConfig | null>(null);
   const [analytics, setAnalytics] = useState<UsageAnalyticsItem[]>([]);
@@ -153,11 +155,11 @@ export const AdminAiManagementSection: React.FC = () => {
     try {
       const res = await fetch('/api/ai/admin/clear-cache', { method: 'POST' });
       if (res.ok) {
-        setCacheMessage('تم تفريغ الذاكرة المؤقتة للـ AI بنجاح!');
+        setCacheMessage(t('ai.cacheCleared'));
         setTimeout(() => setCacheMessage(null), 3000);
       }
     } catch {
-      setCacheMessage('فشل تفريغ الذاكرة المؤقتة');
+      setCacheMessage(t('ai.cacheFailed'));
     }
   };
 
@@ -167,37 +169,37 @@ export const AdminAiManagementSection: React.FC = () => {
       case 'groq':
         return {
           title: 'Groq (LPUs)',
-          role: 'المزود الأساسي (Primary)',
-          desc: 'معالجة فائقة السرعة بنماذج Llama 3.3 70B و 3.1 8B.',
+          role: 'ai.prov.groq.label',
+          desc: 'ai.prov.groq.desc',
           color: 'from-orange-500/20 to-amber-500/20 border-orange-500/30 text-orange-400',
         };
       case 'gemini':
         return {
           title: 'Google Gemini',
-          role: 'البديل الأول (First Fallback)',
-          desc: 'قدرات استدلال وتحليل استثنائية بنماذج Gemini 2.5 / 1.5 Flash.',
+          role: 'ai.prov.gemini.label',
+          desc: 'ai.prov.gemini.desc',
           color: 'from-blue-500/20 to-cyan-500/20 border-blue-500/30 text-cyan-400',
         };
       case 'cloudflare':
         return {
           title: 'Cloudflare Workers AI',
-          role: 'البديل الثاني (Second Fallback)',
-          desc: 'استدلال سحابي موزع على شبكة Cloudflare العالمية بدون خوادم.',
+          role: 'ai.prov.cloudflare.label',
+          desc: 'ai.prov.cloudflare.desc',
           color: 'from-amber-500/20 to-rose-500/20 border-amber-500/30 text-amber-300',
         };
       case 'openai':
         return {
           title: 'OpenAI (GPT-4o)',
-          role: 'مزود إضافي اختياري (Optional)',
-          desc: 'نماذج GPT-4o و GPT-4o-mini الموثوقة عالمياً.',
+          role: 'ai.prov.openai.label',
+          desc: 'ai.prov.openai.desc',
           color: 'from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-300',
         };
       case 'local':
       default:
         return {
           title: 'Henglish Educational Brain',
-          role: 'الاحتياطي التعليمي المضمون (Guaranteed)',
-          desc: 'عقل تعليمي مصري متكامل من مناهج وبنوك الأكاديمية لا ينقطع أبداً.',
+          role: 'ai.prov.local.label',
+          desc: 'ai.prov.local.desc',
           color: 'from-purple-500/20 to-indigo-500/20 border-purple-500/30 text-purple-300',
         };
     }
@@ -224,13 +226,13 @@ export const AdminAiManagementSection: React.FC = () => {
         <div className="space-y-1.5">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#41e7ff]/15 text-[#41e7ff] border border-[#41e7ff]/30">
             <Cpu className="w-3.5 h-3.5" />
-            <span>CENTRAL MULTI-PROVIDER ROUTER • معمارية التوجيه الموحدة</span>
+            <span>{t('ai.headerBadge')}</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-black text-white font-['Cairo',sans-serif]">
-            إدارة المزودين والمراقبة السحابية
+            {t('ai.title')}
           </h2>
           <p className="text-xs text-[#b9b6d5] max-w-xl">
-            توجيه سحابي متعدد المزودين: Groq (الأساسي)، Gemini (البديل الأول)، Cloudflare (البديل الثاني)، OpenAI، Henglish Local Brain.
+            {t('ai.subtitle')}
           </p>
         </div>
 
@@ -241,7 +243,7 @@ export const AdminAiManagementSection: React.FC = () => {
             className="py-2.5 px-4 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 text-xs font-bold flex items-center gap-2 cursor-pointer transition-colors"
           >
             <RefreshCw className={`w-3.5 h-3.5 ${isLoading ? 'animate-spin' : ''}`} />
-            <span>تحديث الحالة</span>
+            <span>{t('ai.refresh')}</span>
           </button>
 
           <button
@@ -249,7 +251,7 @@ export const AdminAiManagementSection: React.FC = () => {
             className="py-2.5 px-4 rounded-xl bg-white/5 hover:bg-rose-500/20 text-[#ffd166] hover:text-rose-300 border border-white/10 text-xs font-bold flex items-center gap-2 cursor-pointer transition-colors"
           >
             <Database className="w-3.5 h-3.5" />
-            <span>مسح الذاكرة المؤقتة (Cache)</span>
+            <span>{t('ai.clearCache')}</span>
           </button>
         </div>
       </div>
@@ -264,42 +266,42 @@ export const AdminAiManagementSection: React.FC = () => {
       <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 flex items-center gap-3 text-emerald-300 text-xs">
         <ShieldCheck className="w-5 h-5 shrink-0" />
         <p className="leading-relaxed">
-          <strong>معيار الأمان العالي:</strong> جميع استدعاءات نماذج الـ AI ومفاتيح الـ API مؤمنة بنسبة 100% داخل الطبقة الخادمة (Server-Side). لا يتم كشف أو إرسال أي مفتاح سري للمتصفح.
+          <strong>{t('ai.securityTitle')}</strong> {t('ai.securityBody')}
         </p>
       </div>
 
       {/* Analytics KPI Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
         <div className="p-4 rounded-2xl bg-[#171632] border border-white/10 space-y-1">
-          <span className="text-[11px] text-[#b9b6d5] font-bold block">إجمالي الاستدعاءات</span>
+          <span className="text-[11px] text-[#b9b6d5] font-bold block">{t('ai.stat.total')}</span>
           <span className="text-2xl font-black text-white font-['Outfit',sans-serif]">
             {totalCalls}
           </span>
-          <span className="text-[10px] text-white/40 block">طلب معالج بالسيرفر</span>
+          <span className="text-[10px] text-white/40 block">{t('ai.stat.totalSub')}</span>
         </div>
 
         <div className="p-4 rounded-2xl bg-[#171632] border border-white/10 space-y-1">
-          <span className="text-[11px] text-[#b9b6d5] font-bold block">معدل النجاح الإجمالي</span>
+          <span className="text-[11px] text-[#b9b6d5] font-bold block">{t('ai.stat.success')}</span>
           <span className="text-2xl font-black text-[#c4ff55] font-['Outfit',sans-serif]">
             {successRate}%
           </span>
-          <span className="text-[10px] text-white/40 block">مع معالجة البدائل التلقائية</span>
+          <span className="text-[10px] text-white/40 block">{t('ai.stat.successSub')}</span>
         </div>
 
         <div className="p-4 rounded-2xl bg-[#171632] border border-white/10 space-y-1">
-          <span className="text-[11px] text-[#b9b6d5] font-bold block">متوسط سرعة الاستجابة</span>
+          <span className="text-[11px] text-[#b9b6d5] font-bold block">{t('ai.stat.latency')}</span>
           <span className="text-2xl font-black text-[#41e7ff] font-['Outfit',sans-serif]">
             {avgLatency} ms
           </span>
-          <span className="text-[10px] text-white/40 block">شاملاً كافة المزودين</span>
+          <span className="text-[10px] text-white/40 block">{t('ai.stat.latencySub')}</span>
         </div>
 
         <div className="p-4 rounded-2xl bg-[#171632] border border-white/10 space-y-1">
-          <span className="text-[11px] text-[#b9b6d5] font-bold block">التكلفة التقديرية</span>
+          <span className="text-[11px] text-[#b9b6d5] font-bold block">{t('ai.stat.cost')}</span>
           <span className="text-2xl font-black text-[#ffd166] font-['Outfit',sans-serif]">
             ${totalCost.toFixed(5)}
           </span>
-          <span className="text-[10px] text-white/40 block">مبنية على استهلاك التوكنات</span>
+          <span className="text-[10px] text-white/40 block">{t('ai.stat.costSub')}</span>
         </div>
       </div>
 
@@ -307,7 +309,7 @@ export const AdminAiManagementSection: React.FC = () => {
       <div className="space-y-4">
         <h3 className="text-base font-black text-white flex items-center gap-2">
           <Activity className="w-4 h-4 text-[#41e7ff]" />
-          <span>حالة المزودين ونماذج التشغيل (Provider Health & Capabilities)</span>
+          <span>{t('ai.healthTitle')}</span>
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -323,24 +325,24 @@ export const AdminAiManagementSection: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-black px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-white">
-                      {info.role}
+                      {t(info.role)}
                     </span>
                     <div className="flex items-center gap-1.5">
                       {isOperational ? (
                         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                          <CheckCircle2 className="w-3.5 h-3.5" /> متاح وجاهز
+                          <CheckCircle2 className="w-3.5 h-3.5" /> {t('ai.status.ready')}
                         </span>
                       ) : p.inCooldown ? (
                         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-500/20">
-                          <Clock className="w-3.5 h-3.5" /> تهدئة ({p.cooldownRemainingSeconds}s)
+                          <Clock className="w-3.5 h-3.5" /> {t('ai.status.cooldown').replace('{s}', String(p.cooldownRemainingSeconds))}
                         </span>
                       ) : !p.isConfigured ? (
                         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">
-                          بانتظار المفتاح
+                          {t('ai.status.awaitingKey')}
                         </span>
                       ) : (
                         <span className="inline-flex items-center gap-1 text-[11px] font-bold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
-                          <XCircle className="w-3.5 h-3.5" /> معطل
+                          <XCircle className="w-3.5 h-3.5" /> {t('ai.status.down')}
                         </span>
                       )}
                     </div>
@@ -348,24 +350,24 @@ export const AdminAiManagementSection: React.FC = () => {
 
                   <div>
                     <h4 className="text-base font-black text-white">{info.title}</h4>
-                    <p className="text-xs text-[#b9b6d5] leading-relaxed mt-1">{info.desc}</p>
+                    <p className="text-xs text-[#b9b6d5] leading-relaxed mt-1">{t(info.desc)}</p>
                   </div>
                 </div>
 
                 <div className="space-y-3 pt-3 border-t border-white/10 text-xs">
                   <div className="grid grid-cols-3 gap-2 text-center">
                     <div className="p-2 rounded-xl bg-white/5">
-                      <span className="text-[10px] text-white/50 block">الطلبات</span>
+                      <span className="text-[10px] text-white/50 block">{t('ai.requests')}</span>
                       <strong className="text-white font-['Outfit',sans-serif]">{p.totalRequests}</strong>
                     </div>
                     <div className="p-2 rounded-xl bg-white/5">
-                      <span className="text-[10px] text-white/50 block">النجاح</span>
+                      <span className="text-[10px] text-white/50 block">{t('ai.success')}</span>
                       <strong className="text-emerald-400 font-['Outfit',sans-serif]">
                         {p.successfulRequests}
                       </strong>
                     </div>
                     <div className="p-2 rounded-xl bg-white/5">
-                      <span className="text-[10px] text-white/50 block">السرعة</span>
+                      <span className="text-[10px] text-white/50 block">{t('ai.speed')}</span>
                       <strong className="text-[#41e7ff] font-['Outfit',sans-serif]">
                         {p.averageLatencyMs}ms
                       </strong>
@@ -387,7 +389,7 @@ export const AdminAiManagementSection: React.FC = () => {
                           : 'bg-[#41e7ff]/20 text-[#41e7ff] border-[#41e7ff]/30 hover:bg-[#41e7ff]/30'
                       }`}
                     >
-                      {p.isEnabled ? 'تعطيل مؤقت' : 'تفعيل المزود'}
+                      {p.isEnabled ? t('ai.disable') : t('ai.enable')}
                     </button>
                   )}
                 </div>
@@ -404,13 +406,13 @@ export const AdminAiManagementSection: React.FC = () => {
             <div>
               <h3 className="text-base font-black text-white flex items-center gap-2">
                 <Layers className="w-4 h-4 text-[#ffd166]" />
-                <span>أولوية التوجيه التلقائي (Automatic Fallback Priority Queue)</span>
+                <span>{t('ai.priorityTitle')}</span>
               </h3>
               <p className="text-xs text-[#b9b6d5] mt-0.5">
-                في حال تعطل المزود أو تجاوزه للحد الأقصى (Rate Limit)، ينتقل المحرك تلقائياً للمزود التالي في القائمة دون انقطاع الخدمة عن الطالب.
+                {t('ai.priorityDesc')}
               </p>
             </div>
-            {isSaving && <span className="text-xs text-[#41e7ff] animate-pulse">جاري الحفظ...</span>}
+            {isSaving && <span className="text-xs text-[#41e7ff] animate-pulse">{t('ai.saving')}</span>}
           </div>
 
           <div className="space-y-2 pt-2">
@@ -427,7 +429,7 @@ export const AdminAiManagementSection: React.FC = () => {
                     </span>
                     <div>
                       <strong className="text-white text-sm">{info.title}</strong>
-                      <span className="text-[11px] text-[#b9b6d5] mr-2">({info.role})</span>
+                      <span className="text-[11px] text-[#b9b6d5] mr-2">({t(info.role)})</span>
                     </div>
                   </div>
 
@@ -436,7 +438,7 @@ export const AdminAiManagementSection: React.FC = () => {
                       onClick={() => handleMovePriority(index, 'up')}
                       disabled={index === 0}
                       className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
-                      title="رفع الأولوية"
+                      title={t('ai.raisePriority')}
                     >
                       <ArrowUp className="w-3.5 h-3.5" />
                     </button>
@@ -444,7 +446,7 @@ export const AdminAiManagementSection: React.FC = () => {
                       onClick={() => handleMovePriority(index, 'down')}
                       disabled={index === config.providerPriority.length - 1}
                       className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-white disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer"
-                      title="خفض الأولوية"
+                      title={t('ai.lowerPriority')}
                     >
                       <ArrowDown className="w-3.5 h-3.5" />
                     </button>
@@ -460,25 +462,25 @@ export const AdminAiManagementSection: React.FC = () => {
       <div className="p-6 rounded-3xl bg-[#171632] border border-white/10 space-y-4">
         <h3 className="text-base font-black text-white flex items-center gap-2">
           <Clock className="w-4 h-4 text-[#c4ff55]" />
-          <span>سجل العمليات والاستدعاءات الحديثة (Recent Invocations Audit Log)</span>
+          <span>{t('ai.logTitle')}</span>
         </h3>
 
         {analytics.length === 0 ? (
           <div className="py-8 text-center text-xs text-white/40">
-            لا توجد استدعاءات مسجلة بعد في هذه الجلسة.
+            {t('ai.logEmpty')}
           </div>
         ) : (
           <div className="overflow-x-auto custom-scrollbar">
             <table className="w-full text-xs text-right">
               <thead>
                 <tr className="border-b border-white/10 text-[#b9b6d5]">
-                  <th className="py-2.5 px-3">الوقت</th>
-                  <th className="py-2.5 px-3">نوع المهمة (Task)</th>
-                  <th className="py-2.5 px-3">المزود النهائي</th>
-                  <th className="py-2.5 px-3">النموذج</th>
-                  <th className="py-2.5 px-3">الزمن</th>
-                  <th className="py-2.5 px-3">سلسلة البدائل</th>
-                  <th className="py-2.5 px-3">الحالة</th>
+                  <th className="py-2.5 px-3">{t('ai.col.time')}</th>
+                  <th className="py-2.5 px-3">{t('ai.col.task')}</th>
+                  <th className="py-2.5 px-3">{t('ai.col.provider')}</th>
+                  <th className="py-2.5 px-3">{t('ai.col.model')}</th>
+                  <th className="py-2.5 px-3">{t('ai.col.duration')}</th>
+                  <th className="py-2.5 px-3">{t('ai.col.fallbacks')}</th>
+                  <th className="py-2.5 px-3">{t('ai.col.status')}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5 text-white">
@@ -498,9 +500,9 @@ export const AdminAiManagementSection: React.FC = () => {
                     </td>
                     <td className="py-2.5 px-3">
                       {item.status === 'success' ? (
-                        <span className="text-emerald-400 font-bold">ناجح</span>
+                        <span className="text-emerald-400 font-bold">{t('ai.result.success')}</span>
                       ) : (
-                        <span className="text-amber-400 font-bold">بديل تعويضي</span>
+                        <span className="text-amber-400 font-bold">{t('ai.result.fallback')}</span>
                       )}
                     </td>
                   </tr>
