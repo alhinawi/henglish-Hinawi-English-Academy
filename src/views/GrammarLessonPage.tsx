@@ -1,3 +1,4 @@
+import { LessonTrap } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
 import { LessonPhoto, LessonPhotoGallery } from '../components/LessonPhotography';
 import React, { useState } from 'react';
@@ -333,43 +334,44 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
 
       {/* 6. REAL-LIFE LIVING EXAMPLES WITH AUDIO PLAYBACK */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
-        <div className="flex items-center justify-between pb-3 border-b border-white/10">
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-white/10">
           <div>
             <span className="text-xs font-bold text-[#41e7ff]">أمثلة عملية واقعية وسياقية</span>
             <h3 className="text-2xl font-black text-white">أمثلة من بيئة العمل والحياة اليومية</h3>
           </div>
-          <span className="text-xs text-[#b9b6d5] font-mono">{rule.examples.length} أمثلة حية</span>
+          <span className="shrink-0 whitespace-nowrap text-xs text-[#b9b6d5] font-mono">{rule.examples.length} أمثلة حية</span>
         </div>
 
         <div className="space-y-4">
           {rule.examples.map((ex, idx) => (
             <div
               key={idx}
-              className="p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all space-y-3"
+              className="p-5 sm:p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all space-y-5"
             >
-              <div className="flex items-center justify-between">
-                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-[#41e7ff]/15 text-[#41e7ff] border border-[#41e7ff]/30">
-                  سياق المثال: {ex.context}
-                </span>
+              <div dir="rtl" className="w-full px-3 py-2.5 rounded-xl text-[11px] sm:text-xs leading-6 font-bold bg-[#41e7ff]/10 text-[#41e7ff] border border-[#41e7ff]/20 text-right">
+                سياق المثال: {ex.context}
+              </div>
 
+              <div dir="ltr" lang="en" className="w-full text-left font-sans text-base sm:text-lg leading-8 text-white font-semibold tracking-wide break-words">
+                {ex.en}
+              </div>
+              <div dir="rtl" className="text-right text-xs sm:text-sm text-[#b9b6d5] font-medium leading-7">
+                {ex.ar}
+              </div>
+
+              <div className="flex justify-start pt-4 border-t border-white/10">
                 <button
                   onClick={() => {
                     playSound('click');
                     speakEnglish(ex.en);
                   }}
-                  className="p-2 rounded-xl bg-white/10 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2.5 min-h-11 px-4 py-2.5 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/20 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffd166]"
                   title="استمع إلى الجملة بنطق المتحدث الأصلي"
                   aria-label="استمع للجملة"
                 >
-                  <Volume2 className="w-4 h-4" />
+                  <Volume2 className="w-4 h-4 shrink-0" />
+                  <span className="text-xs font-bold">استمع للجملة</span>
                 </button>
-              </div>
-
-              <div dir="ltr" lang="en" className="text-left font-sans text-base sm:text-lg text-white font-semibold tracking-wide">
-                {ex.en}
-              </div>
-              <div className="text-xs sm:text-sm text-[#b9b6d5] font-medium leading-relaxed">
-                {ex.ar}
               </div>
             </div>
           ))}
@@ -390,9 +392,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               <div className="w-6 h-6 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">
                 !
               </div>
-              <p className="text-xs sm:text-sm text-red-100 leading-relaxed">
-                {trap}
-              </p>
+              <LessonTrap text={trap} />
             </div>
           ))}
         </div>
