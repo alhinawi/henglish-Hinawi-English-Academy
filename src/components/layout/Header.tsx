@@ -193,9 +193,9 @@ export const Header: React.FC<HeaderProps> = ({
           <img
             src="/logo-clean.png"
             alt="Henglish Academy"
-            width={32}
-            height={32}
-            className="w-9 h-9 object-contain"
+            width={36}
+            height={36}
+            className="w-9 h-9 object-contain filter drop-shadow-[0_0_10px_rgba(255,209,102,0.45)]"
           />
         </button>
 

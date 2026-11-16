@@ -1,6 +1,5 @@
 import React from 'react';
 import { PageRoute, CEFRLevel, UserRole } from '../../types';
-import { Logo } from '../Logo';
 import { useLanguage } from '../../i18n/LanguageContext';
 
 // Maps the hardcoded Arabic nav labels to i18n keys (labels stay as fallback).
@@ -168,6 +167,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     if (prevMobileOpen.current && !mobileOpen) setOpenGrammarSubMenu(false);
     prevMobileOpen.current = mobileOpen;
   }, [mobileOpen]);
+  // Collapsing the desktop rail also closes any expanded sub-menu.
+  React.useEffect(() => {
+    if (collapsed) setOpenGrammarSubMenu(false);
+  }, [collapsed]);
   const [activeGrammarSection, setActiveGrammarSection] = React.useState<string>('Future Tenses');
 
   const { t, dir } = useLanguage();
@@ -487,43 +490,44 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
     return (
       <div className="flex flex-col h-full bg-[#0c0b20] border-l border-white/10 select-none text-right">
-        {/* Brand Header */}
-        <div
-          className={`h-20 flex items-center ${
-            isCollapsed ? 'justify-center px-2 relative' : 'justify-between px-4'
-          } border-b border-white/10`}
-        >
-          <button
-            onClick={() => handleNav('dashboard')}
-            className={`flex items-center ${isCollapsed ? 'justify-center' : 'gap-3'} cursor-pointer focus:outline-none`}
-            title="الرئيسية هنجلش"
-          >
-            <Logo size="sm" showText={!isCollapsed} />
-          </button>
+        {/* Top controls row - the logo lives in the site header only
+            (Hinawi 7:01: one logo, no duplicate in the sidebar). */}
+        {(!isCollapsed || isMobileDrawer) && (
+          <div className="h-14 flex items-center justify-end px-4 border-b border-white/10">
+            {isMobileDrawer ? (
+              <button
+                onClick={onCloseMobile}
+                className="p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/10 cursor-pointer"
+                aria-label={t('sidebar.close')}
+              >
+                <X className="w-5 h-5" />
+              </button>
+            ) : (
+              <button
+                onClick={onToggleCollapse}
+                className="p-1.5 rounded-lg text-[#b9b6d5] hover:text-[#41e7ff] hover:bg-white/5 cursor-pointer transition-all hidden md:flex"
+                title={t('sidebar.collapse')}
+                aria-label={t('sidebar.collapse')}
+              >
+                <ChevronRight className="w-4 h-4" />
+              </button>
+            )}
+          </div>
+        )}
 
-          {isMobileDrawer ? (
-            <button
-              onClick={onCloseMobile}
-              className="p-2 rounded-xl text-[#dedbf4] hover:text-white hover:bg-white/10 cursor-pointer"
-              aria-label={t('sidebar.close')}
-            >
-              <X className="w-5 h-5" />
-            </button>
-          ) : (
-            <button
-              onClick={onToggleCollapse}
-              className={`p-1.5 rounded-lg text-[#b9b6d5] hover:text-[#41e7ff] hover:bg-white/5 cursor-pointer transition-all ${
-                isCollapsed
-                  ? 'absolute -left-3 top-7 w-6 h-6 rounded-full bg-[#171632] border border-white/20 flex items-center justify-center text-[#41e7ff] hover:text-white hover:scale-110 shadow-lg z-50'
-                  : 'hidden md:flex'
-              }`}
-              title={isCollapsed ? 'توسيع القائمة' : 'تصغير القائمة'}
-              aria-label={t('sidebar.toggle')}
-            >
-              {isCollapsed ? <ChevronLeft className="w-3.5 h-3.5" /> : <ChevronRight className="w-4 h-4" />}
-            </button>
-          )}
-        </div>
+        {/* Expand control (collapsed rail): in-flow so it can never clip at
+            the screen edge, fully tappable in RTL and LTR. The desktop rail
+            sits on the right, so expansion grows leftward. */}
+        {!isMobileDrawer && isCollapsed && (
+          <button
+            onClick={onToggleCollapse}
+            className="mx-2.5 mt-2.5 p-1.5 rounded-lg bg-[#171632] border border-white/15 text-[#41e7ff] hover:text-white hover:bg-white/10 cursor-pointer transition-colors flex items-center justify-center"
+            title={t('sidebar.expand')}
+            aria-label={t('sidebar.expand')}
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+        )}
 
         {/* User Level Strip (when expanded) */}
         {!isCollapsed && (

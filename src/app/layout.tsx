@@ -54,11 +54,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         >
           <img
-            src="/logo-clean.png"
+            src="/logo-splash.png"
             alt="Henglish"
-            width={80}
-            height={80}
-            style={{ borderRadius: 20, animation: 'bootSplashPulse 1.6s ease-in-out infinite' }}
+            width={128}
+            height={128}
+            style={{
+              objectFit: 'contain',
+              filter: 'drop-shadow(0 0 18px rgba(255,209,102,0.45))',
+              animation: 'bootSplashPulse 1.6s ease-in-out infinite',
+            }}
           />
           <style>{`@keyframes bootSplashPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.72;transform:scale(.96)}}`}</style>
         </div>
