@@ -92,5 +92,8 @@ export const COURSES_PAGE_COPY = {
   filterLabel: 'تصفية حسب المستوى:',
   allLevels: 'جميع المستويات',
   lessonsSuffix: 'دروس',
+  catalogChip: 'دليل الكورسات',
+  /** Full count phrases so MT gets number+noun agreement right per language. */
+  lessonsCountPhrases: ['8 دروس'],
   defaultCta: 'استعرض المحتوى',
 };

@@ -44,7 +44,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
       <div className="space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/15 text-[#ffd166] border border-[#ffd166]/30">
           <Sparkles className="w-3.5 h-3.5" />
-          <span>HENGLISH ACADEMY • COURSE CATALOG</span>
+          <span>HENGLISH ACADEMY • {appText ? txText(appText, COURSES_PAGE_COPY.catalogChip) : 'COURSE CATALOG'}</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white">
           {txText(appText, COURSES_PAGE_COPY.heroTitle)}
@@ -174,7 +174,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <div className="flex items-center justify-between text-xs text-[#dedbf4]">
                   <span className="flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>{course.countLabel ? txText(appText, course.countLabel) : `${course.lessonsCount} ${txText(appText, COURSES_PAGE_COPY.lessonsSuffix)}`}</span>
+                    <span>{course.countLabel ? txText(appText, course.countLabel) : (appText ? txText(appText, `${course.lessonsCount} دروس`) : `${course.lessonsCount} دروس`)}</span>
                   </span>
                   {course.duration && (
                     <span className="flex items-center gap-1">
