@@ -548,6 +548,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
       {/* Global Search Modal (Ctrl+K) */}
       <GlobalSearchModal
+        userLevel={activeProfile.currentLevel}
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
         onNavigate={handleNavigate}

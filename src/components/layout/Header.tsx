@@ -233,10 +233,10 @@ export const Header: React.FC<HeaderProps> = ({
                   </div>
 
                   <button
-                    onClick={() => handleNav('courses/grammar/future-perfect')}
+                    onClick={() => handleNav('grammar-lesson', 'past-simple')}
                     className="w-full p-2 rounded-xl hover:bg-white/5 text-[#41e7ff] hover:text-white text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>المستقبل التام الشامل (كورس رائد)</span>
+                    <span>الماضي البسيط: حكايات وأحداث انتهت</span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#41e7ff]/20 text-[#41e7ff]">B2</span>
                   </button>
 
@@ -330,7 +330,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleNav('vocabulary')}
                     className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
                   >
-                    <span>أكاديمية الكلمات وتصريف V1-V3 </span>
+                    <span>أكاديمية الكلمات والتعبيرات </span>
                     <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">معجم</span>
                   </button>
                   <button
@@ -395,7 +395,7 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             <Bot className="w-3.5 h-3.5" />
-            <span>المعلم الذكي AI </span>
+            <span>مساعد التعلم </span>
           </button>
 
           {/* 6. Placement & Exams */}
