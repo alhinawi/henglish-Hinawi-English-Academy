@@ -2398,5 +2398,1143 @@
   "explanationAr": "الجملة غلط. الصح We have seen it. have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة.",
   "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
   "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-usag-014401",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which word is correct (word formation)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "innecessary",
+   "dissnecessary",
+   "unnecessary",
+   "nonnecessary"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: un-.",
+  "topic": "Usage: word formation (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014402",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I _____ my homework last night.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "made",
+   "have made",
+   "was made",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: do homework.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014403",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He gave me a lot of _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "information",
+   "informations",
+   "an information",
+   "informs"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "information غير معدود.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014404",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She has a lot of _____ in her bag.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "luggages",
+   "luggage",
+   "a luggage",
+   "bags luggages"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "luggage غير معدود.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014405",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The news _____ good today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "are",
+   "were",
+   "is",
+   "be"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "news مفرد.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014406",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'm going to _____ a party tomorrow.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "make",
+   "do",
+   "hold at",
+   "have"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: have a party.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014407",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Could you _____ me the way to the station?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "tell",
+   "say",
+   "speak",
+   "talk"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: tell someone.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014408",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He _____ me that he was late.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "said",
+   "told",
+   "spoke",
+   "talked"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "told + مفعول.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014409",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Let's _____ a decision.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "do",
+   "take on",
+   "make",
+   "give"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: make a decision.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014410",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She _____ her hair every morning.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "brush",
+   "brushing",
+   "brushed to",
+   "brushes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: she + s.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014411",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "My friend _____ English very well.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "speaks",
+   "says",
+   "talks",
+   "tells"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: speak a language.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014412",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "How _____ time do you need?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "many",
+   "much",
+   "more",
+   "a lot"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "time غير معدود.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014413",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Can I _____ a question?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "say",
+   "tell",
+   "ask",
+   "speak"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: ask a question.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014414",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The _____ were cheap, so I bought three.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "jean",
+   "a jeans",
+   "jeans is",
+   "jeans"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "jeans جمع.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014415",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I was _____ when I heard the news.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "shocked",
+   "shocking",
+   "shock",
+   "shocks"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "للمشاعر نستخدم p.p.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014416",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I agree with you.",
+   "I am agree with you.",
+   "I am agreeing with you.",
+   "I do agree to with you."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "agree فعل مش be + agree.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014417",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She told me a secret.",
+   "She told to me a secret by.",
+   "She said me a secret.",
+   "She said to me a secret by."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: told me.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014418",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I am 25 years old.",
+   "I have 25 years.",
+   "I am have 25 years old.",
+   "I have 25 years old."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: age with be.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014419",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I live in Mansoura.",
+   "I am living at Mansoura always.",
+   "I lives in Mansoura.",
+   "I live at to Mansoura."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: live in + city.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014420",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He has a lot of information.",
+   "He has many informations.",
+   "He has informations.",
+   "He has many information."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "information غير معدود.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014421",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "My salary are low.",
+   "My salaries is low.",
+   "My salary is low.",
+   "My salary were low."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "مفرد.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014422",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'm sure that he is right.",
+   "I'm sure of he is right.",
+   "I am sure for him right.",
+   "I'm sure he is right."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: sure + clause.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014423",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Can you explain it to me?",
+   "Can you explain me it?",
+   "Can you explain me?",
+   "Can you explain to me it?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: explain it to me.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014424",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "She is married with a pilot.",
+   "She is married to a pilot.",
+   "She is married a pilot.",
+   "She is married from a pilot."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: married to.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014425",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is correct (false friends and typical errors for Arabic speakers)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "He suggested us to leave.",
+   "He suggested to us leave.",
+   "He suggested that we leave.",
+   "He suggested that to leave."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: suggest that.",
+  "topic": "Usage: false friends and typical errors for Arabic speakers (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014426",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Advices\" is not a correct plural in English.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "advice غير معدود.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014427",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"I am agree\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: I agree.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014428",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"The news is bad\" uses a singular verb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "news مفرد.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014429",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"He said me that he was late\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: He told me.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014430",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Furniture\" has no plural form.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "غير معدود.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014431",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"I have 20 years\" is correct for age.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: I am 20.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014432",
+  "skill": "usage",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"People are waiting\" uses a plural verb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "people جمع.",
+  "topic": "Usage: typical errors (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014433",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It's raining _____ and dogs.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "mice",
+   "birds",
+   "horses",
+   "cats"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "raining cats and dogs = مطر شديد.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014434",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He let the cat out of the _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "bag",
+   "box",
+   "house",
+   "basket"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: let the cat out of the bag.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014435",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Break a _____ at your exam!",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "arm",
+   "leg",
+   "hand",
+   "neck"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "break a leg = بالتوفيق.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014436",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It's a piece of _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "pie",
+   "bread",
+   "cake",
+   "food"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a piece of cake = سهل جدًا.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014437",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She's feeling under the _____ today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sky",
+   "rain",
+   "clouds",
+   "weather"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "under the weather = تعبانة.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014438",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He spilled the _____ about the surprise.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "beans",
+   "rice",
+   "milk",
+   "tea"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "spill the beans = كشف السر.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014439",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "That costs an arm and a _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "hand",
+   "leg",
+   "foot",
+   "finger"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غالي جدًا.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014440",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Let's call it a _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "night",
+   "week",
+   "day",
+   "job"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "call it a day = نكتفي.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014441",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Once in a blue _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "sky",
+   "day",
+   "sea",
+   "moon"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "نادرًا جدًا.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014442",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The ball is in your _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "court",
+   "hand",
+   "pocket",
+   "field"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القرار عليك.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014443",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "He hit the _____ on the head.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wall",
+   "nail",
+   "ball",
+   "door"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "أصاب الحقيقة.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014444",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'm all _____ for it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "eyes",
+   "hands",
+   "ears",
+   "nose"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "all ears = مركز معاك.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014445",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They are in the same _____.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "car",
+   "bus",
+   "house",
+   "boat"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: in the same boat.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014446",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We'll cross that bridge when we _____ to it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "come",
+   "go",
+   "walk",
+   "get over"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: cross that bridge when we come to it.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014447",
+  "skill": "usage",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Don't count your _____ before they hatch.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "eggs",
+   "chickens",
+   "birds",
+   "money"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لا تعتمد على شيء قبل حدوثه.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014448",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"bite the bullet\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "eat quickly",
+   "shoot a gun",
+   "face something difficult bravely",
+   "stay silent"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: bite the bullet.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014449",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"hit the road\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "crash a car",
+   "fix the street",
+   "walk slowly",
+   "start a journey"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: hit the road.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014450",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"under the weather\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "slightly ill",
+   "very rich",
+   "very cold",
+   "outside"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: under the weather.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014451",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"a blessing in disguise\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "a hidden gift box",
+   "something good that seemed bad",
+   "a religious talk",
+   "a costume"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مصيبة اتحولت لنعمة.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014452",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"once in a blue moon\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "every night",
+   "at midnight",
+   "very rarely",
+   "often"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "نادرًا.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014453",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"kill two birds with one stone\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "hurt animals",
+   "throw stones",
+   "be lucky",
+   "solve two problems at once"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حل مشكلتين بحل واحد.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014454",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"the last straw\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "the final problem that makes you lose patience",
+   "the end of summer",
+   "a drink",
+   "a game"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القشة اللي قصمت ضهر البعير.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014455",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"pull someone's leg\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "help someone",
+   "joke with someone",
+   "hurt someone",
+   "walk with someone"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "يهزر.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014456",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"spill the beans\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "cook dinner",
+   "break a bowl",
+   "reveal a secret",
+   "make a mess of food"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "يكشف سر.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-usag-014457",
+  "skill": "usage",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"cost an arm and a leg\" mean?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "hurt badly",
+   "be cheap",
+   "break something",
+   "be very expensive"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "غالي جدًا.",
+  "topic": "Usage: idioms (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014458",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Were it not for your help, I _____ failed.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would have",
+   "will have",
+   "would",
+   "had"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "were it not for = لولا.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014459",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Had it not been for the rain, we _____ gone.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "would have",
+   "would",
+   "had"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لولا المطر.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014460",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Be that as it _____, we must continue.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "can",
+   "may",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: be that as it may.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014461",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Come what _____, I will support you.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "will",
+   "must",
+   "can",
+   "may"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: come what may.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014462",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "No matter _____ hard he tried, he couldn't open it.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "how",
+   "what",
+   "which",
+   "that"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: no matter how.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014463",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Try _____ he might, he couldn't win.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "so",
+   "as",
+   "how",
+   "though that"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القاعدة: try as he might.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-014464",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "C2",
+  "prompt": "Rich _____ he is, he isn't happy.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "as if",
+   "that",
+   "though",
+   "but"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "القاعدة: rich though he is.",
+  "topic": "Grammar: advanced structures (C2)",
+  "source": "worker-c-grammar-b2-c2-usage"
  }
 ]
