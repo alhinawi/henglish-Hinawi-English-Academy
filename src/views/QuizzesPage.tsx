@@ -3,6 +3,7 @@ import { COMPREHENSIVE_QUIZ_BANK } from '../data/quizzesData';
 import { QuestionBankPanel } from '../components/QuestionBankPanel';
 import { QuizEngine } from '../components/QuizEngine';
 import { QuizQuestion } from '../types';
+import { parseGeneratedQuiz } from '../services/generatedQuiz';
 import { playSound, fireCelebration } from '../utils/audio';
 import { isAiServiceUnavailable, throwForAiResponse } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -39,6 +40,8 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
   const [aiCount, setAiCount] = useState(5);
   const [isGenerating, setIsGenerating] = useState(false);
   const [aiGeneratedQuestions, setAiGeneratedQuestions] = useState<QuizQuestion[] | null>(null);
+  const [quizVersion, setQuizVersion] = useState(0);
+  const [quizDetails, setQuizDetails] = useState({ topic: aiTopic, level: aiLevel, difficulty: aiDifficulty });
   const [generationError, setGenerationError] = useState<string | null>(null);
 
   const filteredQuestions = filterDifficulty === 'all'
@@ -46,13 +49,14 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
     : COMPREHENSIVE_QUIZ_BANK.filter(q => q.difficulty === filterDifficulty);
 
   const handleComplete = (score: number, total: number) => {
-    onRecordScore?.(`quiz_${activeTab === 'ai' ? 'ai_' + aiTopic : filterDifficulty}`, score, total);
+    onRecordScore?.(`quiz_${activeTab === 'ai' ? 'ai_' + quizDetails.topic : filterDifficulty}`, score, total);
   };
 
   const handleGenerateAiQuiz = async () => {
     playSound('click');
     setIsGenerating(true);
     setGenerationError(null);
+    setAiGeneratedQuestions(null);
 
     try {
       const response = await fetch('/api/ai/generateQuestions', {
@@ -69,21 +73,11 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       await throwForAiResponse(response, `Failed to generate questions: ${response.status}`);
 
       const data = await response.json();
-      if (!data.questions || !Array.isArray(data.questions)) {
-        throw new Error('Invalid format returned by AI generator');
-      }
-
-      const mapped: QuizQuestion[] = data.questions.map((q: any, idx: number) => ({
-        id: q.id || `ai-gen-${Date.now()}-${idx}`,
-        question: q.prompt,
-        options: q.options,
-        answer: q.correctAnswerIndex ?? 0,
-        explanation: q.explanationAr + (q.distractorNotesAr && q.distractorNotesAr.length > 0 ? '\n\n' + t('qz.distractorAnalysis') + '\n• ' + q.distractorNotesAr.join('\n• ') : ''),
-        topic: q.topic || aiTopic,
-        difficulty: q.difficulty === 'easy' ? 'beginner' : q.difficulty === 'hard' ? 'advanced' : 'intermediate',
-      }));
+      const mapped = parseGeneratedQuiz(data, aiTopic, t('qz.distractorAnalysis'));
 
       setAiGeneratedQuestions(mapped);
+      setQuizDetails({ topic: aiTopic, level: aiLevel, difficulty: aiDifficulty });
+      setQuizVersion(version => version + 1);
       playSound('correct');
       fireCelebration();
     } catch (err: any) {
@@ -261,15 +255,15 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                   {t('qz.readyTitle')} ({aiGeneratedQuestions.length} {t('qz.countUnit')})
                 </h3>
                 <span className="text-xs text-[#c4ff55] font-mono">
-                  {aiLevel} • {aiDifficulty.toUpperCase()}
+                  {quizDetails.level} • {quizDetails.difficulty.toUpperCase()}
                 </span>
               </div>
 
               <QuizEngine
-                key={`ai-quiz-${aiGeneratedQuestions.length}-${Date.now()}`}
+                key={`ai-quiz-${quizVersion}`}
                 questions={aiGeneratedQuestions}
                 quizTitle={`${t('qz.customQuizTitle')}: ${
-                  t(GRAMMAR_TOPICS.find(topic => topic.id === aiTopic)?.labelKey || '') || aiTopic
+                  t(GRAMMAR_TOPICS.find(topic => topic.id === quizDetails.topic)?.labelKey || '') || quizDetails.topic
                 }`}
                 onComplete={handleComplete}
               />
