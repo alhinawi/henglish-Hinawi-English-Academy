@@ -3,6 +3,7 @@
 // Catalog auditing, broken link replacement, metadata editing, and verification logs
 // ==============================================================================
 
+import { videoImportError } from '../../services/videoImportError';
 import React, { useState, useEffect } from 'react';
 import {
   X,
@@ -106,7 +107,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     if (replaceIdInput.trim() !== editingVideo.youtubeId) {
       const res = await adminReplaceVideoId(editingVideo.id, replaceIdInput.trim());
       if (!res.ok) {
-        setStatusMsg(`${t('avmm.idError')} ${res.error}`);
+        setStatusMsg(`${t('avmm.idError')} ${videoImportError(res.error, t)}`);
         playSound('wrong');
         return;
       }
