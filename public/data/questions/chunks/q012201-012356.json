@@ -1,0 +1,2918 @@
+[
+ {
+  "id": "q-read-015845",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Some teachers are worried because students may be _____ by games.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many schools now allow students to use tablets in class. Supporters say tablets make learning more interesting because students can watch videos and look up information quickly. However, some teachers worry that students may get distracted by games or social media. A recent study in one school found that results improved only when teachers set clear rules about how tablets could be used.",
+  "options": [
+   "educated",
+   "relaxed",
+   "distracted",
+   "attracted"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "distracted معناها اتشتت انتباهه، وهي نفس الكلمة في النص.",
+  "topic": "Reading: Technology (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015846",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How much sleep do experts recommend for teenagers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Sleep is as important for teenagers as food and exercise. Experts recommend between eight and ten hours a night, but many teenagers sleep far less because they stay up late using their phones. Lack of sleep can make it harder to concentrate and can even affect mood. A simple solution is to switch off screens an hour before bed and go to sleep at the same time every night.",
+  "options": [
+   "Five to six hours",
+   "Six to seven hours",
+   "Eleven to twelve hours",
+   "Eight to ten hours"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النص: \"between eight and ten hours a night\".",
+  "topic": "Reading: Health (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015847",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why do many teenagers sleep too little?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Sleep is as important for teenagers as food and exercise. Experts recommend between eight and ten hours a night, but many teenagers sleep far less because they stay up late using their phones. Lack of sleep can make it harder to concentrate and can even affect mood. A simple solution is to switch off screens an hour before bed and go to sleep at the same time every night.",
+  "options": [
+   "They use their phones late at night",
+   "They drink too much water",
+   "They do too much exercise",
+   "They have too much homework only"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السبب: \"stay up late using their phones\".",
+  "topic": "Reading: Health (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015848",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What can lack of sleep affect?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Sleep is as important for teenagers as food and exercise. Experts recommend between eight and ten hours a night, but many teenagers sleep far less because they stay up late using their phones. Lack of sleep can make it harder to concentrate and can even affect mood. A simple solution is to switch off screens an hour before bed and go to sleep at the same time every night.",
+  "options": [
+   "Appetite only",
+   "Concentration and mood",
+   "Height",
+   "Eyesight only"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص: \"harder to concentrate\" و\"affect mood\".",
+  "topic": "Reading: Health (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015849",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The writer suggests turning off screens before bed.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Sleep is as important for teenagers as food and exercise. Experts recommend between eight and ten hours a night, but many teenagers sleep far less because they stay up late using their phones. Lack of sleep can make it harder to concentrate and can even affect mood. A simple solution is to switch off screens an hour before bed and go to sleep at the same time every night.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الحل المقترح: switch off screens an hour before bed.",
+  "topic": "Reading: Health (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015850",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Sleep is less important than exercise.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Sleep is as important for teenagers as food and exercise. Experts recommend between eight and ten hours a night, but many teenagers sleep far less because they stay up late using their phones. Lack of sleep can make it harder to concentrate and can even affect mood. A simple solution is to switch off screens an hour before bed and go to sleep at the same time every night.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول إن النوم مهم \"as important as\" الأكل والرياضة يعني نفس الأهمية.",
+  "topic": "Reading: Health (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015851",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why are plastic bags a problem?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Plastic bags take hundreds of years to break down, and many end up in the sea, where they harm animals. In 2019 one small town decided to ban plastic bags in its shops. At first customers complained, but after a year most people carried their own cloth bags. The town now has cleaner streets, and several nearby towns are planning to follow its example.",
+  "options": [
+   "They are hard to make",
+   "They are expensive",
+   "They are too heavy",
+   "They stay in nature for a very long time"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النص: \"take hundreds of years to break down\".",
+  "topic": "Reading: Environment (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015852",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What did the town do in 2019?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Plastic bags take hundreds of years to break down, and many end up in the sea, where they harm animals. In 2019 one small town decided to ban plastic bags in its shops. At first customers complained, but after a year most people carried their own cloth bags. The town now has cleaner streets, and several nearby towns are planning to follow its example.",
+  "options": [
+   "It banned plastic bags in shops",
+   "It taxed cloth bags",
+   "It closed its beach",
+   "It built a recycling factory"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"decided to ban plastic bags in its shops\".",
+  "topic": "Reading: Environment (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015853",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How did customers react at first?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Plastic bags take hundreds of years to break down, and many end up in the sea, where they harm animals. In 2019 one small town decided to ban plastic bags in its shops. At first customers complained, but after a year most people carried their own cloth bags. The town now has cleaner streets, and several nearby towns are planning to follow its example.",
+  "options": [
+   "They complained",
+   "They ignored the ban",
+   "They left the town",
+   "They were happy"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"At first customers complained\".",
+  "topic": "Reading: Environment (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015854",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What are nearby towns planning?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Plastic bags take hundreds of years to break down, and many end up in the sea, where they harm animals. In 2019 one small town decided to ban plastic bags in its shops. At first customers complained, but after a year most people carried their own cloth bags. The town now has cleaner streets, and several nearby towns are planning to follow its example.",
+  "options": [
+   "To sell plastic bags",
+   "To follow the town's example",
+   "To close their shops",
+   "To move to the town"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"planning to follow its example\".",
+  "topic": "Reading: Environment (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015855",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Most people still use plastic bags in the town.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Plastic bags take hundreds of years to break down, and many end up in the sea, where they harm animals. In 2019 one small town decided to ban plastic bags in its shops. At first customers complained, but after a year most people carried their own cloth bags. The town now has cleaner streets, and several nearby towns are planning to follow its example.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد سنة معظم الناس بقوا بيحملوا شنط قماش.",
+  "topic": "Reading: Environment (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015856",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What did Ahmed do to improve his English?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ahmed wanted to improve his English, so he decided to watch one short video in English every day. At first he understood very little and always used subtitles in Arabic. After two months he switched to English subtitles, and after six months he could follow most videos without any subtitles at all. His teacher says his speaking has improved too, although he still makes mistakes with tenses.",
+  "options": [
+   "He watched English videos every day",
+   "He read one book a week",
+   "He took private lessons only",
+   "He travelled abroad"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"watch one short video in English every day\".",
+  "topic": "Reading: Education (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015857",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What kind of subtitles did he use first?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ahmed wanted to improve his English, so he decided to watch one short video in English every day. At first he understood very little and always used subtitles in Arabic. After two months he switched to English subtitles, and after six months he could follow most videos without any subtitles at all. His teacher says his speaking has improved too, although he still makes mistakes with tenses.",
+  "options": [
+   "English",
+   "French",
+   "Arabic",
+   "None"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في الأول استخدم ترجمة عربي.",
+  "topic": "Reading: Education (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015858",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What happened after six months?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ahmed wanted to improve his English, so he decided to watch one short video in English every day. At first he understood very little and always used subtitles in Arabic. After two months he switched to English subtitles, and after six months he could follow most videos without any subtitles at all. His teacher says his speaking has improved too, although he still makes mistakes with tenses.",
+  "options": [
+   "He could follow most videos without subtitles",
+   "He still needed Arabic subtitles",
+   "He moved to a new school",
+   "He stopped watching videos"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"could follow most videos without any subtitles at all\".",
+  "topic": "Reading: Education (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015859",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Ahmed no longer makes any mistakes.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Ahmed wanted to improve his English, so he decided to watch one short video in English every day. At first he understood very little and always used subtitles in Arabic. After two months he switched to English subtitles, and after six months he could follow most videos without any subtitles at all. His teacher says his speaking has improved too, although he still makes mistakes with tenses.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المدرس بيقول إنه \"still makes mistakes with tenses\".",
+  "topic": "Reading: Education (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015860",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "After two months, Ahmed _____ to English subtitles.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ahmed wanted to improve his English, so he decided to watch one short video in English every day. At first he understood very little and always used subtitles in Arabic. After two months he switched to English subtitles, and after six months he could follow most videos without any subtitles at all. His teacher says his speaking has improved too, although he still makes mistakes with tenses.",
+  "options": [
+   "returned",
+   "stopped",
+   "looked",
+   "switched"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "switch to بمعنى تحول إلى، والنص بيقول \"he switched to English subtitles\".",
+  "topic": "Reading: Education (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015861",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the writer's overall attitude to urban farming?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Urban farming, growing vegetables on rooftops and in unused city spaces, has grown rapidly in recent years. Advocates argue that it reduces food transport, lowers prices and gives residents access to fresh produce. Critics, however, point out that the yields are small compared with traditional farms and that setting up a rooftop garden can be costly. Even so, many city councils see it as a useful way to bring communities together and raise awareness about where food comes from.",
+  "options": [
+   "Balanced: it describes benefits and drawbacks",
+   "Completely against it",
+   "Uninterested",
+   "Strongly in favour"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص بيعرض مزايا (advocates) وعيوب (critics) فالأسلوب متوازن.",
+  "topic": "Reading: Society (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015862",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which is mentioned as a criticism?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Urban farming, growing vegetables on rooftops and in unused city spaces, has grown rapidly in recent years. Advocates argue that it reduces food transport, lowers prices and gives residents access to fresh produce. Critics, however, point out that the yields are small compared with traditional farms and that setting up a rooftop garden can be costly. Even so, many city councils see it as a useful way to bring communities together and raise awareness about where food comes from.",
+  "options": [
+   "Small yields",
+   "Too much water",
+   "Pollution",
+   "Lack of interest"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"the yields are small compared with traditional farms\".",
+  "topic": "Reading: Society (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015863",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"yields\" mean here?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Urban farming, growing vegetables on rooftops and in unused city spaces, has grown rapidly in recent years. Advocates argue that it reduces food transport, lowers prices and gives residents access to fresh produce. Critics, however, point out that the yields are small compared with traditional farms and that setting up a rooftop garden can be costly. Even so, many city councils see it as a useful way to bring communities together and raise awareness about where food comes from.",
+  "options": [
+   "The size of buildings",
+   "The amount of food produced",
+   "The cost of land",
+   "The number of workers"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "yield هنا معناها المحصول أو الكمية المنتجة.",
+  "topic": "Reading: Society (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015864",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why do city councils support urban farming?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Urban farming, growing vegetables on rooftops and in unused city spaces, has grown rapidly in recent years. Advocates argue that it reduces food transport, lowers prices and gives residents access to fresh produce. Critics, however, point out that the yields are small compared with traditional farms and that setting up a rooftop garden can be costly. Even so, many city councils see it as a useful way to bring communities together and raise awareness about where food comes from.",
+  "options": [
+   "It creates large profits",
+   "It is cheaper than any farm",
+   "It replaces all farms",
+   "It builds community and awareness"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"bring communities together and raise awareness\".",
+  "topic": "Reading: Society (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015865",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The passage says urban farming is always cheap to start.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Urban farming, growing vegetables on rooftops and in unused city spaces, has grown rapidly in recent years. Advocates argue that it reduces food transport, lowers prices and gives residents access to fresh produce. Critics, however, point out that the yields are small compared with traditional farms and that setting up a rooftop garden can be costly. Even so, many city councils see it as a useful way to bring communities together and raise awareness about where food comes from.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول إن التأسيس ممكن يبقى \"costly\" يعني غالي.",
+  "topic": "Reading: Society (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015866",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why did Dina add fast internet and long tables?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When the café on Nile Street opened five years ago, it served only coffee and a few pastries. The owner, Dina, noticed that customers often asked for places to work quietly, so she added fast internet and long tables. Within a year the café was full every weekday morning. Last spring she opened a second branch, though she admits that keeping the quality consistent across both places is her biggest challenge.",
+  "options": [
+   "She wanted to sell computers",
+   "Customers wanted somewhere to work",
+   "Rent became cheaper",
+   "Her staff asked for them"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لاحظت إن الزباين بيسألوا على مكان يشتغلوا فيه بهدوء.",
+  "topic": "Reading: Business (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015867",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What happened within a year?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When the café on Nile Street opened five years ago, it served only coffee and a few pastries. The owner, Dina, noticed that customers often asked for places to work quietly, so she added fast internet and long tables. Within a year the café was full every weekday morning. Last spring she opened a second branch, though she admits that keeping the quality consistent across both places is her biggest challenge.",
+  "options": [
+   "The café became busy on weekday mornings",
+   "Prices fell",
+   "The café closed",
+   "She sold the café"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"full every weekday morning\".",
+  "topic": "Reading: Business (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015868",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does Dina find most difficult?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When the café on Nile Street opened five years ago, it served only coffee and a few pastries. The owner, Dina, noticed that customers often asked for places to work quietly, so she added fast internet and long tables. Within a year the café was full every weekday morning. Last spring she opened a second branch, though she admits that keeping the quality consistent across both places is her biggest challenge.",
+  "options": [
+   "Buying coffee",
+   "Keeping quality the same in both branches",
+   "Finding customers",
+   "Paying rent"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"keeping the quality consistent... is her biggest challenge\".",
+  "topic": "Reading: Business (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015869",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "The word \"consistent\" is closest in meaning to",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When the café on Nile Street opened five years ago, it served only coffee and a few pastries. The owner, Dina, noticed that customers often asked for places to work quietly, so she added fast internet and long tables. Within a year the café was full every weekday morning. Last spring she opened a second branch, though she admits that keeping the quality consistent across both places is her biggest challenge.",
+  "options": [
+   "steady and not changing",
+   "cheap",
+   "modern",
+   "different"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "consistent يعني ثابت المستوى.",
+  "topic": "Reading: Business (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015870",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The café has always offered food and internet.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "When the café on Nile Street opened five years ago, it served only coffee and a few pastries. The owner, Dina, noticed that customers often asked for places to work quietly, so she added fast internet and long tables. Within a year the café was full every weekday morning. Last spring she opened a second branch, though she admits that keeping the quality consistent across both places is her biggest challenge.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الأول كان بيقدم قهوة وشوية معجنات بس، والإنترنت اتضاف بعدين.",
+  "topic": "Reading: Business (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015871",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What did scientists once believe?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "For decades, scientists believed that the brain stops developing after childhood. Research over the last twenty years has shown that this is not true: the brain keeps forming new connections throughout life, a quality called plasticity. Learning a language or a musical instrument, for example, can strengthen these connections even in older adults. This finding has encouraged many people to take up new skills later in life.",
+  "options": [
+   "Music harms the brain",
+   "Adults learn faster than children",
+   "The brain never changes at all",
+   "The brain stops developing after childhood"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"believed that the brain stops developing after childhood\".",
+  "topic": "Reading: Science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015872",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is plasticity?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "For decades, scientists believed that the brain stops developing after childhood. Research over the last twenty years has shown that this is not true: the brain keeps forming new connections throughout life, a quality called plasticity. Learning a language or a musical instrument, for example, can strengthen these connections even in older adults. This finding has encouraged many people to take up new skills later in life.",
+  "options": [
+   "The brain's ability to form new connections",
+   "A kind of exercise",
+   "A type of memory loss",
+   "A school subject"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص بيعرفها: the brain keeps forming new connections.",
+  "topic": "Reading: Science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015873",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which activity is given as an example of strengthening connections?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "For decades, scientists believed that the brain stops developing after childhood. Research over the last twenty years has shown that this is not true: the brain keeps forming new connections throughout life, a quality called plasticity. Learning a language or a musical instrument, for example, can strengthen these connections even in older adults. This finding has encouraged many people to take up new skills later in life.",
+  "options": [
+   "Watching television",
+   "Learning a musical instrument",
+   "Eating fish",
+   "Sleeping longer"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المثال: learning a language or a musical instrument.",
+  "topic": "Reading: Science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015874",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: Recent research supports the old belief.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "For decades, scientists believed that the brain stops developing after childhood. Research over the last twenty years has shown that this is not true: the brain keeps forming new connections throughout life, a quality called plasticity. Learning a language or a musical instrument, for example, can strengthen these connections even in older adults. This finding has encouraged many people to take up new skills later in life.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأبحاث الأخيرة أثبتت إن الاعتقاد القديم \"not true\".",
+  "topic": "Reading: Science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015875",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What effect has the finding had?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "For decades, scientists believed that the brain stops developing after childhood. Research over the last twenty years has shown that this is not true: the brain keeps forming new connections throughout life, a quality called plasticity. Learning a language or a musical instrument, for example, can strengthen these connections even in older adults. This finding has encouraged many people to take up new skills later in life.",
+  "options": [
+   "Schools have closed",
+   "Scientists stopped research",
+   "Older people avoid learning",
+   "More people try new skills later in life"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"encouraged many people to take up new skills later in life\".",
+  "topic": "Reading: Science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015876",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the main point of the passage?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Festivals often change as they spread. The Egyptian celebration of Sham El-Nessim, for example, dates back thousands of years, yet today families mark it with coloured eggs, salted fish and picnics in public parks. Although the foods differ from those of ancient times, the spirit of the day, welcoming spring together outdoors, remains unchanged. Historians say this shows how traditions can adapt without losing their meaning.",
+  "options": [
+   "Traditions can change and still keep their meaning",
+   "Old festivals should not change",
+   "Sham El-Nessim is a modern holiday",
+   "Foods are more important than customs"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الخلاصة في آخر النص: traditions adapt without losing their meaning.",
+  "topic": "Reading: Culture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015877",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do families do on Sham El-Nessim today?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Festivals often change as they spread. The Egyptian celebration of Sham El-Nessim, for example, dates back thousands of years, yet today families mark it with coloured eggs, salted fish and picnics in public parks. Although the foods differ from those of ancient times, the spirit of the day, welcoming spring together outdoors, remains unchanged. Historians say this shows how traditions can adapt without losing their meaning.",
+  "options": [
+   "They fast all day",
+   "They stay at home",
+   "They have picnics and eat colored eggs and salted fish",
+   "They travel abroad"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص ذكر البيض الملون والفسيخ والنزهات.",
+  "topic": "Reading: Culture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015878",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What has stayed the same according to the text?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Festivals often change as they spread. The Egyptian celebration of Sham El-Nessim, for example, dates back thousands of years, yet today families mark it with coloured eggs, salted fish and picnics in public parks. Although the foods differ from those of ancient times, the spirit of the day, welcoming spring together outdoors, remains unchanged. Historians say this shows how traditions can adapt without losing their meaning.",
+  "options": [
+   "The spirit of welcoming spring outdoors",
+   "The foods",
+   "The date in ancient times",
+   "The location"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"the spirit of the day... remains unchanged\".",
+  "topic": "Reading: Culture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015879",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The foods eaten today are exactly the same as in ancient times.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Festivals often change as they spread. The Egyptian celebration of Sham El-Nessim, for example, dates back thousands of years, yet today families mark it with coloured eggs, salted fish and picnics in public parks. Although the foods differ from those of ancient times, the spirit of the day, welcoming spring together outdoors, remains unchanged. Historians say this shows how traditions can adapt without losing their meaning.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول \"the foods differ\".",
+  "topic": "Reading: Culture (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015880",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What has remote work forced cities to do?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The rise of remote work has prompted a fundamental reassessment of urban economies. Cities that once relied on a daily influx of commuters to sustain restaurants, shops and public transport now face an uncertain future. Some urban planners argue that this shift is an opportunity to repurpose empty offices as housing, thereby easing chronic shortages. Sceptics counter that converting commercial buildings is prohibitively expensive and that the results rarely suit residents' needs.",
+  "options": [
+   "Ban commuting",
+   "Reduce taxes",
+   "Build more offices",
+   "Reconsider how their economies function"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"prompted a fundamental reassessment of urban economies\".",
+  "topic": "Reading: Economics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015881",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do some planners propose?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The rise of remote work has prompted a fundamental reassessment of urban economies. Cities that once relied on a daily influx of commuters to sustain restaurants, shops and public transport now face an uncertain future. Some urban planners argue that this shift is an opportunity to repurpose empty offices as housing, thereby easing chronic shortages. Sceptics counter that converting commercial buildings is prohibitively expensive and that the results rarely suit residents' needs.",
+  "options": [
+   "Raising rents",
+   "Turning empty offices into housing",
+   "Moving shops online",
+   "Closing public transport"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"repurpose empty offices as housing\".",
+  "topic": "Reading: Economics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015882",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the sceptics' main objection?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The rise of remote work has prompted a fundamental reassessment of urban economies. Cities that once relied on a daily influx of commuters to sustain restaurants, shops and public transport now face an uncertain future. Some urban planners argue that this shift is an opportunity to repurpose empty offices as housing, thereby easing chronic shortages. Sceptics counter that converting commercial buildings is prohibitively expensive and that the results rarely suit residents' needs.",
+  "options": [
+   "Remote work will end soon",
+   "Conversion costs too much and may not suit residents",
+   "Housing is not needed",
+   "Offices are too small"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "\"prohibitively expensive\" و\"rarely suit residents' needs\".",
+  "topic": "Reading: Economics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015883",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "In context, \"influx\" means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The rise of remote work has prompted a fundamental reassessment of urban economies. Cities that once relied on a daily influx of commuters to sustain restaurants, shops and public transport now face an uncertain future. Some urban planners argue that this shift is an opportunity to repurpose empty offices as housing, thereby easing chronic shortages. Sceptics counter that converting commercial buildings is prohibitively expensive and that the results rarely suit residents' needs.",
+  "options": [
+   "a large arrival of people",
+   "a gradual decline",
+   "a tax",
+   "a sudden ban"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "influx معناها تدفق أو دخول أعداد كبيرة.",
+  "topic": "Reading: Economics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015884",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The passage presents the planners' proposal as universally accepted.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The rise of remote work has prompted a fundamental reassessment of urban economies. Cities that once relied on a daily influx of commuters to sustain restaurants, shops and public transport now face an uncertain future. Some urban planners argue that this shift is an opportunity to repurpose empty offices as housing, thereby easing chronic shortages. Sceptics counter that converting commercial buildings is prohibitively expensive and that the results rarely suit residents' needs.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "فيه شكاكين (sceptics) معترضين، فالاقتراح مش متفق عليه.",
+  "topic": "Reading: Economics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015885",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the writer's conclusion?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Linguists have long debated whether the language we speak shapes the way we think. The strong version of this claim, that speakers of different languages inhabit entirely different mental worlds, has been largely discredited. Yet experiments suggest subtler effects: speakers of languages that use compass directions instead of left and right, for instance, tend to have an unusually reliable sense of orientation. The evidence, in short, points to influence rather than determination.",
+  "options": [
+   "Language has no effect on thought",
+   "Thought shapes grammar only",
+   "Language fully determines thought",
+   "Language influences thought without fully controlling it"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "آخر جملة: \"influence rather than determination\".",
+  "topic": "Reading: Language (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015886",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What has happened to the strong version of the claim?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Linguists have long debated whether the language we speak shapes the way we think. The strong version of this claim, that speakers of different languages inhabit entirely different mental worlds, has been largely discredited. Yet experiments suggest subtler effects: speakers of languages that use compass directions instead of left and right, for instance, tend to have an unusually reliable sense of orientation. The evidence, in short, points to influence rather than determination.",
+  "options": [
+   "It has been proven",
+   "It has largely been rejected",
+   "It is newly proposed",
+   "It is now universal"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "\"largely discredited\" يعني اتشكك فيها وترفضت.",
+  "topic": "Reading: Language (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015887",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Which example supports a subtler effect?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Linguists have long debated whether the language we speak shapes the way we think. The strong version of this claim, that speakers of different languages inhabit entirely different mental worlds, has been largely discredited. Yet experiments suggest subtler effects: speakers of languages that use compass directions instead of left and right, for instance, tend to have an unusually reliable sense of orientation. The evidence, in short, points to influence rather than determination.",
+  "options": [
+   "Arabic speakers read faster",
+   "Speakers using compass directions have a good sense of orientation",
+   "Children learn grammar early",
+   "Left-handed speakers learn faster"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المثال المذكور عن الاتجاهات الجغرافية بدل يمين وشمال.",
+  "topic": "Reading: Language (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015888",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"discredited\" is closest in meaning to",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Linguists have long debated whether the language we speak shapes the way we think. The strong version of this claim, that speakers of different languages inhabit entirely different mental worlds, has been largely discredited. Yet experiments suggest subtler effects: speakers of languages that use compass directions instead of left and right, for instance, tend to have an unusually reliable sense of orientation. The evidence, in short, points to influence rather than determination.",
+  "options": [
+   "newly discovered",
+   "carefully measured",
+   "shown to be unreliable",
+   "widely repeated"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "discredited يعني فقد مصداقيته.",
+  "topic": "Reading: Language (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015889",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What question does the passage raise?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Advances in artificial intelligence raise questions that extend beyond technical performance. When an algorithm denies a loan or flags a job application, who is accountable for the outcome? Developers often insist that their systems merely reflect patterns in the data, but this defence is unconvincing when the data themselves encode historical prejudice. Meaningful oversight, many ethicists argue, requires transparency about how such systems reach their decisions.",
+  "options": [
+   "How much AI costs",
+   "How fast algorithms run",
+   "Who is responsible when an algorithm makes a harmful decision",
+   "Which language AI should use"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال الأساسي: who is accountable for the outcome.",
+  "topic": "Reading: Ethics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015890",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Why is the developers' defence \"unconvincing\"?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Advances in artificial intelligence raise questions that extend beyond technical performance. When an algorithm denies a loan or flags a job application, who is accountable for the outcome? Developers often insist that their systems merely reflect patterns in the data, but this defence is unconvincing when the data themselves encode historical prejudice. Meaningful oversight, many ethicists argue, requires transparency about how such systems reach their decisions.",
+  "options": [
+   "The systems are too fast",
+   "The data are always private",
+   "The developers are untrained",
+   "The data may contain past prejudice"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "لأن البيانات نفسها \"encode historical prejudice\".",
+  "topic": "Reading: Ethics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015891",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do ethicists say oversight needs?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Advances in artificial intelligence raise questions that extend beyond technical performance. When an algorithm denies a loan or flags a job application, who is accountable for the outcome? Developers often insist that their systems merely reflect patterns in the data, but this defence is unconvincing when the data themselves encode historical prejudice. Meaningful oversight, many ethicists argue, requires transparency about how such systems reach their decisions.",
+  "options": [
+   "More advertising",
+   "Transparency about how decisions are made",
+   "Less data",
+   "Faster computers"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"requires transparency about how such systems reach their decisions\".",
+  "topic": "Reading: Ethics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015892",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The passage argues that technical performance is the only important issue.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Advances in artificial intelligence raise questions that extend beyond technical performance. When an algorithm denies a loan or flags a job application, who is accountable for the outcome? Developers often insist that their systems merely reflect patterns in the data, but this defence is unconvincing when the data themselves encode historical prejudice. Meaningful oversight, many ethicists argue, requires transparency about how such systems reach their decisions.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "أول جملة بتقول إن الأسئلة \"extend beyond technical performance\".",
+  "topic": "Reading: Ethics (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015893",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "How did early critics view the novel?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Although the novel was dismissed by contemporary critics as sentimental, it has since earned a reputation as a penetrating study of class anxiety. Its author never explicitly condemns the social order that confines her characters; instead, she allows small gestures, an unanswered letter, a glance across a crowded room, to reveal how rigid that order is. This restraint, once judged a weakness, is now widely regarded as the book's chief strength.",
+  "options": [
+   "As too short",
+   "As brilliant",
+   "As too political",
+   "As overly sentimental"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"dismissed... as sentimental\".",
+  "topic": "Reading: Literature (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015894",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "How does the author show the rigid social order?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Although the novel was dismissed by contemporary critics as sentimental, it has since earned a reputation as a penetrating study of class anxiety. Its author never explicitly condemns the social order that confines her characters; instead, she allows small gestures, an unanswered letter, a glance across a crowded room, to reveal how rigid that order is. This restraint, once judged a weakness, is now widely regarded as the book's chief strength.",
+  "options": [
+   "Through small gestures rather than direct criticism",
+   "Through historical facts",
+   "Through the narrator's complaints",
+   "Through long speeches"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"never explicitly condemns... instead small gestures\".",
+  "topic": "Reading: Literature (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015895",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is now seen as the novel's main strength?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Although the novel was dismissed by contemporary critics as sentimental, it has since earned a reputation as a penetrating study of class anxiety. Its author never explicitly condemns the social order that confines her characters; instead, she allows small gestures, an unanswered letter, a glance across a crowded room, to reveal how rigid that order is. This restraint, once judged a weakness, is now widely regarded as the book's chief strength.",
+  "options": [
+   "Its humour",
+   "Its restraint",
+   "Its length",
+   "Its plot twists"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"This restraint... chief strength\".",
+  "topic": "Reading: Literature (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015896",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"penetrating\" is closest in meaning to",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Although the novel was dismissed by contemporary critics as sentimental, it has since earned a reputation as a penetrating study of class anxiety. Its author never explicitly condemns the social order that confines her characters; instead, she allows small gestures, an unanswered letter, a glance across a crowded room, to reveal how rigid that order is. This restraint, once judged a weakness, is now widely regarded as the book's chief strength.",
+  "options": [
+   "noisy",
+   "insightful",
+   "shallow",
+   "sharp-tasting"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "penetrating هنا يعني عميق وثاقب الفهم.",
+  "topic": "Reading: Literature (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015897",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the writer's central claim?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The notion that progress is linear, each generation inheriting and improving upon the achievements of the last, is a comforting but historically naive one. Knowledge has repeatedly been lost, as when the collapse of institutions severed the transmission of learning, and rediscovered only centuries later. What we call progress is therefore better understood as a precarious accumulation, dependent on the continuity of the very structures that sustain it, rather than an inevitable ascent.",
+  "options": [
+   "Progress is fragile and depends on stable institutions",
+   "Progress is inevitable",
+   "History repeats exactly",
+   "Knowledge is never lost"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الفكرة: precarious accumulation معتمد على استمرار المؤسسات.",
+  "topic": "Reading: Philosophy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015898",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why does the writer call the linear view \"naive\"?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The notion that progress is linear, each generation inheriting and improving upon the achievements of the last, is a comforting but historically naive one. Knowledge has repeatedly been lost, as when the collapse of institutions severed the transmission of learning, and rediscovered only centuries later. What we call progress is therefore better understood as a precarious accumulation, dependent on the continuity of the very structures that sustain it, rather than an inevitable ascent.",
+  "options": [
+   "Because it is too pessimistic",
+   "Because it ignores science",
+   "Because knowledge has been lost and recovered before",
+   "Because it is too modern"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المعرفة ضاعت ورجعت اتكتشفت بعد قرون.",
+  "topic": "Reading: Philosophy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015899",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "\"precarious\" most nearly means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The notion that progress is linear, each generation inheriting and improving upon the achievements of the last, is a comforting but historically naive one. Knowledge has repeatedly been lost, as when the collapse of institutions severed the transmission of learning, and rediscovered only centuries later. What we call progress is therefore better understood as a precarious accumulation, dependent on the continuity of the very structures that sustain it, rather than an inevitable ascent.",
+  "options": [
+   "obvious",
+   "rapid",
+   "unstable and uncertain",
+   "steady"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "precarious يعني هش وغير مضمون.",
+  "topic": "Reading: Philosophy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015900",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The writer describes progress as an inevitable ascent.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The notion that progress is linear, each generation inheriting and improving upon the achievements of the last, is a comforting but historically naive one. Knowledge has repeatedly been lost, as when the collapse of institutions severed the transmission of learning, and rediscovered only centuries later. What we call progress is therefore better understood as a precarious accumulation, dependent on the continuity of the very structures that sustain it, rather than an inevitable ascent.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكاتب بيرفض كده: \"rather than an inevitable ascent\".",
+  "topic": "Reading: Philosophy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015901",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the writer warn against?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It would be a mistake to assume that more data inevitably yields better decisions. Beyond a certain point, additional information may merely amplify noise, tempting analysts to detect patterns where none exist. The seasoned researcher therefore treats a surprising correlation with suspicion rather than excitement, aware that the more hypotheses one tests, the likelier it is that some will appear significant purely by chance.",
+  "options": [
+   "Assuming more data always improves decisions",
+   "Testing a single hypothesis",
+   "Collecting any data",
+   "Trusting experienced researchers"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أول جملة: mistake إن more data = better decisions.",
+  "topic": "Reading: Science policy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015902",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "How does a seasoned researcher react to a surprising correlation?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It would be a mistake to assume that more data inevitably yields better decisions. Beyond a certain point, additional information may merely amplify noise, tempting analysts to detect patterns where none exist. The seasoned researcher therefore treats a surprising correlation with suspicion rather than excitement, aware that the more hypotheses one tests, the likelier it is that some will appear significant purely by chance.",
+  "options": [
+   "With excitement",
+   "By publishing immediately",
+   "With suspicion",
+   "With indifference"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"treats... with suspicion rather than excitement\".",
+  "topic": "Reading: Science policy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015903",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why is testing many hypotheses risky?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It would be a mistake to assume that more data inevitably yields better decisions. Beyond a certain point, additional information may merely amplify noise, tempting analysts to detect patterns where none exist. The seasoned researcher therefore treats a surprising correlation with suspicion rather than excitement, aware that the more hypotheses one tests, the likelier it is that some will appear significant purely by chance.",
+  "options": [
+   "It is too slow",
+   "It removes noise",
+   "It needs more money",
+   "Some results will look significant by chance"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "كل ما اختبرت فرضيات أكتر، احتمال ظهور نتيجة مهمة بالصدفة بيزيد.",
+  "topic": "Reading: Science policy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-015904",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "\"seasoned\" in this context means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It would be a mistake to assume that more data inevitably yields better decisions. Beyond a certain point, additional information may merely amplify noise, tempting analysts to detect patterns where none exist. The seasoned researcher therefore treats a surprising correlation with suspicion rather than excitement, aware that the more hypotheses one tests, the likelier it is that some will appear significant purely by chance.",
+  "options": [
+   "experienced",
+   "tired",
+   "flavoured",
+   "young"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "seasoned هنا يعني صاحب خبرة.",
+  "topic": "Reading: Science policy (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015905",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where is Nada from?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hello, my name is Nada. I am from Tanta. I am a student.",
+  "options": [
+   "Cairo",
+   "Luxor",
+   "Tanta",
+   "Aswan"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "نادية بتقول \"I am from Tanta\".",
+  "topic": "Listening: Greetings (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015906",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: Nada is a teacher.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "Hello, my name is Nada. I am from Tanta. I am a student.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قالت \"I am a student\" يعني طالبة.",
+  "topic": "Listening: Greetings (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015907",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How many brothers does the speaker have?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I have three brothers and two sisters. My brothers are tall. My sisters are short.",
+  "options": [
+   "Five",
+   "Two",
+   "Four",
+   "Three"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "\"three brothers\" يعني تلات إخوات ولاد.",
+  "topic": "Listening: Numbers (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015908",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How many sisters does the speaker have?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I have three brothers and two sisters. My brothers are tall. My sisters are short.",
+  "options": [
+   "Three",
+   "Four",
+   "Two",
+   "One"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "\"two sisters\" يعني اتنين.",
+  "topic": "Listening: Numbers (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015909",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "When does the film start?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The film starts at six o'clock. Please come at half past five.",
+  "options": [
+   "At five",
+   "At half past five",
+   "At seven",
+   "At six"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الفيلم بيبدأ الساعة ستة.",
+  "topic": "Listening: Time (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015910",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "When should you come?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The film starts at six o'clock. Please come at half past five.",
+  "options": [
+   "At half past five",
+   "At six",
+   "At five",
+   "At seven"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "half past five يعني خمسة ونص.",
+  "topic": "Listening: Time (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015911",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does the speaker like?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I like tea with milk, but I do not like coffee. My brother likes coffee.",
+  "options": [
+   "Water",
+   "Juice",
+   "Coffee",
+   "Tea with milk"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بيحب شاي بلبن.",
+  "topic": "Listening: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015912",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: The speaker's brother likes coffee.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I like tea with milk, but I do not like coffee. My brother likes coffee.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "قال \"My brother likes coffee\".",
+  "topic": "Listening: Food (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015913",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How old is the grandfather?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "This is my grandfather. He is seventy. He lives with us. He likes reading the newspaper.",
+  "options": [
+   "Sixty",
+   "Eighty",
+   "Seventy",
+   "Fifty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"He is seventy\".",
+  "topic": "Listening: Family (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015914",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does he like doing?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "This is my grandfather. He is seventy. He lives with us. He likes reading the newspaper.",
+  "options": [
+   "Swimming",
+   "Reading the newspaper",
+   "Watching TV",
+   "Cooking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"likes reading the newspaper\".",
+  "topic": "Listening: Family (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015915",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where is the bank?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The bank is next to the pharmacy. The bus stop is in front of the bank.",
+  "options": [
+   "Next to the pharmacy",
+   "Behind the pharmacy",
+   "In front of the bus stop",
+   "Near the school"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "البنك جنب الصيدلية.",
+  "topic": "Listening: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015916",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What is in front of the bank?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The bank is next to the pharmacy. The bus stop is in front of the bank.",
+  "options": [
+   "The school",
+   "The bus stop",
+   "The pharmacy",
+   "The park"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "موقف الأتوبيس قدام البنك.",
+  "topic": "Listening: Places (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015917",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What is the weather like?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It is sunny today. It is not cold. Let's go to the beach.",
+  "options": [
+   "Rainy",
+   "Sunny",
+   "Windy",
+   "Cold"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجو مشمس (sunny).",
+  "topic": "Listening: Weather (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015918",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where do they want to go?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It is sunny today. It is not cold. Let's go to the beach.",
+  "options": [
+   "To the beach",
+   "To school",
+   "To the shop",
+   "To the cinema"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "\"Let's go to the beach\" يعني نروح الشاطئ.",
+  "topic": "Listening: Weather (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015919",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What colour is the new bag?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "My new bag is blue and my old bag is red. I use the blue bag every day.",
+  "options": [
+   "Red",
+   "Green",
+   "Black",
+   "Blue"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الشنطة الجديدة زرقا.",
+  "topic": "Listening: Colours (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015920",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: The speaker uses the red bag every day.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "My new bag is blue and my old bag is red. I use the blue bag every day.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيستخدم الزرقا كل يوم.",
+  "topic": "Listening: Colours (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015921",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where should you turn left?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Go straight along this street. Turn left at the traffic lights. The post office is on your right, opposite the supermarket.",
+  "options": [
+   "At the supermarket",
+   "At the school",
+   "At the bank",
+   "At the traffic lights"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "قال \"Turn left at the traffic lights\".",
+  "topic": "Listening: Directions (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015922",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where is the post office?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Go straight along this street. Turn left at the traffic lights. The post office is on your right, opposite the supermarket.",
+  "options": [
+   "Near the bank",
+   "Behind the supermarket",
+   "On the right, opposite the supermarket",
+   "On the left, next to the lights"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "البوسطة على اليمين قصاد السوبرماركت.",
+  "topic": "Listening: Directions (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015923",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why is the speaker busy on Friday?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm busy on Friday because I'm visiting my aunt. But I'm free on Saturday afternoon. Shall we play tennis then?",
+  "options": [
+   "He is playing tennis",
+   "He is working",
+   "He is visiting his aunt",
+   "He has an exam"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "زيارة عمته: \"visiting my aunt\".",
+  "topic": "Listening: Plans (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015924",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When does the speaker suggest playing tennis?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm busy on Friday because I'm visiting my aunt. But I'm free on Saturday afternoon. Shall we play tennis then?",
+  "options": [
+   "On Friday evening",
+   "On Saturday afternoon",
+   "On Saturday morning",
+   "On Sunday"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"free on Saturday afternoon\".",
+  "topic": "Listening: Plans (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015925",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which platform does the train leave from?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Attention, please. The train to Alexandria will leave from platform four, not platform two. It will leave ten minutes late, at a quarter past nine.",
+  "options": [
+   "Platform two",
+   "Platform nine",
+   "Platform one",
+   "Platform four"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الإعلان بيصحح: platform four مش two.",
+  "topic": "Listening: Announcement (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015926",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What time will the train leave?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Attention, please. The train to Alexandria will leave from platform four, not platform two. It will leave ten minutes late, at a quarter past nine.",
+  "options": [
+   "9:05",
+   "9:50",
+   "9:25",
+   "9:15"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a quarter past nine يعني 9:15.",
+  "topic": "Listening: Announcement (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015927",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How much do the jeans cost after the discount?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "These jeans cost four hundred pounds, but today there is a twenty percent discount, so you only pay three hundred and twenty.",
+  "options": [
+   "320 pounds",
+   "80 pounds",
+   "380 pounds",
+   "400 pounds"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "20% من 400 = 80، يعني 400-80=320.",
+  "topic": "Listening: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015928",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The discount is ten percent.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "These jeans cost four hundred pounds, but today there is a twenty percent discount, so you only pay three hundred and twenty.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الخصم عشرين في المية.",
+  "topic": "Listening: Shopping (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015929",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How long should the patient stay at home?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "You have a bad cold. Stay at home for two days, drink plenty of water and take these tablets after meals.",
+  "options": [
+   "Two days",
+   "One day",
+   "A week",
+   "Three days"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"Stay at home for two days\".",
+  "topic": "Listening: Health (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015930",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When should the patient take the tablets?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "You have a bad cold. Stay at home for two days, drink plenty of water and take these tablets after meals.",
+  "options": [
+   "After meals",
+   "In the morning only",
+   "Before meals",
+   "At night only"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "\"after meals\" يعني بعد الأكل.",
+  "topic": "Listening: Health (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015931",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What instrument does the speaker play now?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I used to play the guitar, but now I prefer the piano. I practise for an hour every evening.",
+  "options": [
+   "The drums",
+   "The piano",
+   "The guitar",
+   "The violin"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "دلوقتي بيفضل البيانو.",
+  "topic": "Listening: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015932",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How long does the speaker practise?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I used to play the guitar, but now I prefer the piano. I practise for an hour every evening.",
+  "options": [
+   "All day",
+   "Two hours",
+   "Half an hour",
+   "An hour every evening"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"for an hour every evening\".",
+  "topic": "Listening: Hobbies (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015933",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why was the flight delayed?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Our flight was delayed because of fog, so we waited at the airport for three hours. We finally arrived at the hotel at midnight.",
+  "options": [
+   "Because of a strike",
+   "Because of fog",
+   "Because of rain",
+   "Because of a technical problem"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السبب: fog يعني ضباب.",
+  "topic": "Listening: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015934",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When did they reach the hotel?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Our flight was delayed because of fog, so we waited at the airport for three hours. We finally arrived at the hotel at midnight.",
+  "options": [
+   "At three in the morning",
+   "At noon",
+   "At midnight",
+   "At six in the evening"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "وصلوا الفندق منتصف الليل.",
+  "topic": "Listening: Travel (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015935",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When is the history exam?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The history exam is on Wednesday, not Tuesday. Remember to bring a pen, because you cannot borrow one.",
+  "options": [
+   "On Wednesday",
+   "On Thursday",
+   "On Tuesday",
+   "On Monday"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الامتحان الأربع مش التلات.",
+  "topic": "Listening: School (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015936",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Students can borrow pens in the exam.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The history exam is on Wednesday, not Tuesday. Remember to bring a pen, because you cannot borrow one.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قال \"you cannot borrow one\".",
+  "topic": "Listening: School (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015937",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why can't Laila come at ten?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hi, it's Laila. I'm calling about tomorrow's meeting. Unfortunately I can't make it at ten, because my car is being repaired. Could we move it to two in the afternoon? Call me back if that's a problem.",
+  "options": [
+   "She is travelling",
+   "Her car is being repaired",
+   "She is ill",
+   "She has another meeting"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"my car is being repaired\".",
+  "topic": "Listening: Phone message (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015938",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does Laila suggest?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Hi, it's Laila. I'm calling about tomorrow's meeting. Unfortunately I can't make it at ten, because my car is being repaired. Could we move it to two in the afternoon? Call me back if that's a problem.",
+  "options": [
+   "Meeting online",
+   "Moving the meeting to 2 pm",
+   "Cancelling the meeting",
+   "Meeting at noon"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "اقترحت الساعة اتنين بعد الضهر.",
+  "topic": "Listening: Phone message (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015939",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How long has the speaker worked as a nurse?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've worked as a nurse for six years, mainly in children's hospitals. I'd like to change jobs because I want more flexible hours. I speak English and a little German.",
+  "options": [
+   "Ten years",
+   "Six years",
+   "Sixteen years",
+   "Two years"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"for six years\".",
+  "topic": "Listening: Interview (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015940",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why does the speaker want a new job?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I've worked as a nurse for six years, mainly in children's hospitals. I'd like to change jobs because I want more flexible hours. I speak English and a little German.",
+  "options": [
+   "To have more flexible hours",
+   "To earn more money",
+   "To study",
+   "To move abroad"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السبب: more flexible hours.",
+  "topic": "Listening: Interview (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015941",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Where will it rain heavily on Sunday?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "This weekend will be mostly dry in the north, but heavy rain is expected in the south on Sunday. Temperatures will fall by about five degrees compared with last weekend.",
+  "options": [
+   "Everywhere",
+   "In the east",
+   "In the north",
+   "In the south"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المطر الغزير متوقع في الجنوب.",
+  "topic": "Listening: Radio (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015942",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Temperatures will rise.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "This weekend will be mostly dry in the north, but heavy rain is expected in the south on Sunday. Temperatures will fall by about five degrees compared with last weekend.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قال هتنزل خمس درجات.",
+  "topic": "Listening: Radio (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015943",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How many methods will the speaker discuss?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Today I'm going to talk about three ways to remember vocabulary: using flashcards, writing example sentences and reviewing words after a week. The most effective, according to research, is reviewing after a week.",
+  "options": [
+   "Three",
+   "Five",
+   "Four",
+   "Two"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ذكر تلات طرق.",
+  "topic": "Listening: Lecture (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015944",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which method is the most effective?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Today I'm going to talk about three ways to remember vocabulary: using flashcards, writing example sentences and reviewing words after a week. The most effective, according to research, is reviewing after a week.",
+  "options": [
+   "Using flashcards",
+   "Reviewing words after a week",
+   "Listening to songs",
+   "Writing example sentences"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "البحث بيقول إن المراجعة بعد أسبوع هي الأكثر فعالية.",
+  "topic": "Listening: Lecture (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015945",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is the problem?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I bought this phone last week and the screen has already cracked. I haven't dropped it. I'd like a refund, please, or a replacement if you don't have the money.",
+  "options": [
+   "The phone is too big",
+   "The phone is the wrong colour",
+   "The phone won't charge",
+   "The phone screen has cracked"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الشاشة اتكسرت.",
+  "topic": "Listening: Complaint (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015946",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does the customer want?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I bought this phone last week and the screen has already cracked. I haven't dropped it. I'd like a refund, please, or a replacement if you don't have the money.",
+  "options": [
+   "A repair",
+   "A free case",
+   "A refund or a replacement",
+   "A discount"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "عايز استرداد فلوس أو بديل.",
+  "topic": "Listening: Complaint (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015947",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "When does the museum close on Fridays?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The museum opens at nine and closes at five, except on Fridays, when it closes at one. Photography is allowed, but you must not use a flash.",
+  "options": [
+   "At noon",
+   "At five",
+   "At nine",
+   "At one"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "يوم الجمعة بيقفل الساعة واحدة.",
+  "topic": "Listening: Tour guide (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015948",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is not allowed?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The museum opens at nine and closes at five, except on Fridays, when it closes at one. Photography is allowed, but you must not use a flash.",
+  "options": [
+   "Talking",
+   "Bringing bags",
+   "Taking photos",
+   "Using a flash"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "التصوير مسموح، الفلاش ممنوع.",
+  "topic": "Listening: Tour guide (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015949",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why does the speaker prefer the train?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd rather take the train than the bus. It's a bit more expensive, but it's much faster and I can read on the way.",
+  "options": [
+   "It is closer",
+   "It is faster and he can read",
+   "It is cleaner",
+   "It is cheaper"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "أسرع وبيقدر يقرأ.",
+  "topic": "Listening: Conversation (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015950",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The train is cheaper than the bus.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I'd rather take the train than the bus. It's a bit more expensive, but it's much faster and I can read on the way.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "القطر \"a bit more expensive\".",
+  "topic": "Listening: Conversation (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015951",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does the speaker advise beginners to do?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "If you want to get fit, don't start with long runs. Begin by walking for twenty minutes every day, and increase the time slowly.",
+  "options": [
+   "Run for an hour",
+   "Join a gym",
+   "Swim every day",
+   "Walk for twenty minutes daily"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "نصيحته: امشي 20 دقيقة يوميا.",
+  "topic": "Listening: Advice (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015952",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How should the time change?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "If you want to get fit, don't start with long runs. Begin by walking for twenty minutes every day, and increase the time slowly.",
+  "options": [
+   "Increase quickly",
+   "Stay the same",
+   "Increase slowly",
+   "Decrease"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: increase the time slowly.",
+  "topic": "Listening: Advice (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015953",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "When will the bridge close?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Local authorities have announced that the old bridge will close for repairs from the first of March. Drivers are advised to use the northern route, which is expected to add about fifteen minutes to the average journey. The work should be finished by the end of June.",
+  "options": [
+   "From 1 June",
+   "From 1 March",
+   "From 30 June",
+   "From 15 March"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"from the first of March\".",
+  "topic": "Listening: News report (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015954",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the effect of using the northern route?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Local authorities have announced that the old bridge will close for repairs from the first of March. Drivers are advised to use the northern route, which is expected to add about fifteen minutes to the average journey. The work should be finished by the end of June.",
+  "options": [
+   "Journeys will take about fifteen minutes longer",
+   "Journeys will be free",
+   "Journeys will be faster",
+   "Journeys will not change"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"add about fifteen minutes\".",
+  "topic": "Listening: News report (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015955",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does the speaker miss?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I used to think working from home would be a dream, but I miss the casual conversations in the office. Without them, I feel somewhat isolated, and my team has become less creative as well.",
+  "options": [
+   "Casual conversations at the office",
+   "His commute",
+   "His desk",
+   "His manager"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بيفتقد الحوارات العفوية.",
+  "topic": "Listening: Discussion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015956",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What has happened to the team?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I used to think working from home would be a dream, but I miss the casual conversations in the office. Without them, I feel somewhat isolated, and my team has become less creative as well.",
+  "options": [
+   "It has become faster",
+   "It has grown",
+   "It has moved offices",
+   "It has become less creative"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"less creative as well\".",
+  "topic": "Listening: Discussion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015957",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why did the app become successful?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The company was founded in 2005 by two university friends who had no experience of business. Their first product, a simple language app, sold poorly. It was only when they added games that downloads soared, and today it has over ten million users.",
+  "options": [
+   "It was sold to a large company",
+   "It became free",
+   "It was advertised on TV",
+   "Games were added"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"only when they added games that downloads soared\".",
+  "topic": "Listening: Talk (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015958",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The first product sold very well.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The company was founded in 2005 by two university friends who had no experience of business. Their first product, a simple language app, sold poorly. It was only when they added games that downloads soared, and today it has over ten million users.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المنتج الأول \"sold poorly\".",
+  "topic": "Listening: Talk (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015959",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the speaker's view?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "While I understand why people criticise social media, I think it has some real advantages. It lets families stay in touch across continents and gives small businesses a cheap way to find customers.",
+  "options": [
+   "Social media is useless",
+   "Social media has some real benefits",
+   "Social media is harmful",
+   "Social media should be banned"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيقول إن ليها مزايا حقيقية.",
+  "topic": "Listening: Opinion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015960",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What benefit does he mention for small businesses?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "While I understand why people criticise social media, I think it has some real advantages. It lets families stay in touch across continents and gives small businesses a cheap way to find customers.",
+  "options": [
+   "Tax reductions",
+   "Expert advice",
+   "Cheap access to customers",
+   "Free products"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"cheap way to find customers\".",
+  "topic": "Listening: Opinion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015961",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What should applicants check?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Before you submit the form, double-check that your passport number is correct. Mistakes cannot be corrected online, and you would have to start the application again, which takes about two weeks.",
+  "options": [
+   "Their photo",
+   "Their signature",
+   "Their address",
+   "Their passport number"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "لازم يراجعوا رقم الجواز.",
+  "topic": "Listening: Instructions (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015962",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What happens if there is a mistake?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Before you submit the form, double-check that your passport number is correct. Mistakes cannot be corrected online, and you would have to start the application again, which takes about two weeks.",
+  "options": [
+   "It is corrected online",
+   "The application must be restarted",
+   "Nothing happens",
+   "A fee is refunded"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لازم يبدأ الطلب من الأول.",
+  "topic": "Listening: Instructions (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015963",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "When did she leave school?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "She left school at fifteen and worked in a factory, studying at night. By thirty she had earned a degree in engineering, and at forty she became the first woman to lead the company.",
+  "options": [
+   "At thirty",
+   "At fifteen",
+   "At forty",
+   "At eighteen"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"left school at fifteen\".",
+  "topic": "Listening: Biography (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015964",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What was her achievement at forty?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "She left school at fifteen and worked in a factory, studying at night. By thirty she had earned a degree in engineering, and at forty she became the first woman to lead the company.",
+  "options": [
+   "She earned a degree",
+   "She became the first woman to lead the company",
+   "She founded the factory",
+   "She retired"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الأربعين بقت أول سيدة تقود الشركة.",
+  "topic": "Listening: Biography (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015965",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What did the reviewer dislike?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The film is visually stunning, and the acting is excellent. Unfortunately the plot is so predictable that I knew the ending after twenty minutes, which rather spoiled it for me.",
+  "options": [
+   "The music",
+   "The acting",
+   "The visuals",
+   "The predictable plot"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المشكلة في القصة المتوقعة.",
+  "topic": "Listening: Review (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015966",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The reviewer criticises the acting.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The film is visually stunning, and the acting is excellent. Unfortunately the plot is so predictable that I knew the ending after twenty minutes, which rather spoiled it for me.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيمدح التمثيل: excellent.",
+  "topic": "Listening: Review (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015967",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why has the concert been moved?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Due to unexpected demand, tonight's concert has been moved to the larger hall. Tickets remain valid, and anyone who would prefer a refund can collect it from the box office until six.",
+  "options": [
+   "There is unexpected demand",
+   "The hall is closed",
+   "The singer is ill",
+   "It is raining"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"Due to unexpected demand\".",
+  "topic": "Listening: Announcement (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015968",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Until when can refunds be collected?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Due to unexpected demand, tonight's concert has been moved to the larger hall. Tickets remain valid, and anyone who would prefer a refund can collect it from the box office until six.",
+  "options": [
+   "Until noon",
+   "Until nine",
+   "Until six",
+   "Until tomorrow"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "حتى الساعة ستة.",
+  "topic": "Listening: Announcement (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015969",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does the speaker say about multitasking?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Contrary to popular belief, multitasking does not make people more productive. Studies reveal that switching between tasks incurs a cognitive cost, so people often take longer, and make more errors, than if they had completed the tasks one after the other.",
+  "options": [
+   "It is natural for everyone",
+   "It improves productivity",
+   "It is only for experts",
+   "It reduces productivity"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "عكس الاعتقاد الشائع، بيقلل الإنتاجية.",
+  "topic": "Listening: Lecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015970",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the consequence of switching tasks?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Contrary to popular belief, multitasking does not make people more productive. Studies reveal that switching between tasks incurs a cognitive cost, so people often take longer, and make more errors, than if they had completed the tasks one after the other.",
+  "options": [
+   "More errors and more time",
+   "Less stress",
+   "Faster work",
+   "Better memory"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"take longer, and make more errors\".",
+  "topic": "Listening: Lecture (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015971",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What surprised the speaker?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "What struck me most about the project was how little funding it needed. We assumed we'd require specialist equipment, but in the end the local volunteers' knowledge proved far more valuable.",
+  "options": [
+   "The project was cancelled",
+   "The equipment was expensive",
+   "The volunteers left",
+   "The project needed little funding"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"how little funding it needed\".",
+  "topic": "Listening: Interview (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015972",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What proved more valuable than equipment?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "What struck me most about the project was how little funding it needed. We assumed we'd require specialist equipment, but in the end the local volunteers' knowledge proved far more valuable.",
+  "options": [
+   "Local volunteers' knowledge",
+   "Government money",
+   "New software",
+   "Foreign experts"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معرفة المتطوعين المحليين.",
+  "topic": "Listening: Interview (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015973",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the speaker's main objection to fees?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'm not suggesting that tuition fees should be abolished outright. My point is that they deter talented students from poorer families, which is precisely the opposite of what a fair system should achieve.",
+  "options": [
+   "They fund universities badly",
+   "They are collected late",
+   "They discourage able poor students",
+   "They are too low"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بتثبط الطلبة الموهوبين الفقراء.",
+  "topic": "Listening: Debate (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015974",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The speaker wants fees abolished completely.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "I'm not suggesting that tuition fees should be abolished outright. My point is that they deter talented students from poorer families, which is precisely the opposite of what a fair system should achieve.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قال \"not suggesting... abolished outright\".",
+  "topic": "Listening: Debate (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015975",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do critics say?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The minister insisted the new tax would not affect low earners, yet critics point out that the exemption threshold has remained unchanged for a decade, so more people are being drawn into the net each year.",
+  "options": [
+   "The tax has been cancelled",
+   "The minister has resigned",
+   "More people are being taxed because the threshold is unchanged",
+   "The tax is too low"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الحد الأدنى للإعفاء ثابت من عشر سنين.",
+  "topic": "Listening: Radio (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015976",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does the minister claim?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The minister insisted the new tax would not affect low earners, yet critics point out that the exemption threshold has remained unchanged for a decade, so more people are being drawn into the net each year.",
+  "options": [
+   "The threshold will rise",
+   "Low earners will not be affected",
+   "Everyone will pay more",
+   "The tax is temporary"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الوزير بيقول مش هتأثر على أصحاب الدخل المنخفض.",
+  "topic": "Listening: Radio (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015977",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "Why was the study inconclusive?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The study was inconclusive, partly because the sample was small and partly because participants knew they were being observed, which may have altered their behaviour.",
+  "options": [
+   "Too much funding",
+   "No participants",
+   "Small sample and observed participants",
+   "Wrong location"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "سببين: عينة صغيرة والمشاركين عارفين إنهم مراقبين.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015978",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does \"inconclusive\" mean?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The study was inconclusive, partly because the sample was small and partly because participants knew they were being observed, which may have altered their behaviour.",
+  "options": [
+   "It did not give a clear result",
+   "It was illegal",
+   "It was very long",
+   "It was successful"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "inconclusive يعني مش حاسمة.",
+  "topic": "Listening: Seminar (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015979",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "How does she describe her languages?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Having grown up bilingual, she insists that her languages never compete in her mind; rather, she switches between them effortlessly, depending on whom she is speaking to.",
+  "options": [
+   "They do not compete",
+   "One is weaker",
+   "They confuse her",
+   "She mixes them accidentally"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"never compete in her mind\".",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015980",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What decides which language she uses?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Having grown up bilingual, she insists that her languages never compete in her mind; rather, she switches between them effortlessly, depending on whom she is speaking to.",
+  "options": [
+   "The place",
+   "The topic",
+   "The time of day",
+   "The person she is speaking to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الدليل في النص: \"depending on whom she is speaking to\".",
+  "topic": "Listening: Talk (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015981",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What are the passengers waiting for?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Although the airline apologised for the disruption, passengers whose flights were cancelled are still waiting for compensation more than three months later.",
+  "options": [
+   "An apology",
+   "New tickets",
+   "A phone call",
+   "Compensation"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "لسه مستنيين التعويض.",
+  "topic": "Listening: News (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015982",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The airline refused to apologise.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "Although the airline apologised for the disruption, passengers whose flights were cancelled are still waiting for compensation more than three months later.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الشركة اعتذرت.",
+  "topic": "Listening: News (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015983",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What will the speaker discuss second?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'll begin with the main findings, then move on to the limitations of the research, and finally outline what we plan to investigate next.",
+  "options": [
+   "The funding",
+   "The main findings",
+   "Future plans",
+   "The limitations of the research"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الترتيب: findings، limitations، ثم next.",
+  "topic": "Listening: Presentation (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015984",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What comes last?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'll begin with the main findings, then move on to the limitations of the research, and finally outline what we plan to investigate next.",
+  "options": [
+   "Findings",
+   "Future research plans",
+   "Limitations",
+   "Questions"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في الآخر هيتكلم عن اللي هيبحثوه بعد كده.",
+  "topic": "Listening: Presentation (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015985",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the speaker's view of the commentator's claim?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The commentator's assertion that the policy is wholly without merit seems, on closer inspection, rather sweeping; the evidence suggests it has delivered modest but demonstrable gains in some regions while failing conspicuously in others.",
+  "options": [
+   "It is correct",
+   "It is too sweeping",
+   "It is dishonest",
+   "It is outdated"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "وصفها بإنها sweeping يعني معممة.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015986",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the evidence suggest about the policy?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The commentator's assertion that the policy is wholly without merit seems, on closer inspection, rather sweeping; the evidence suggests it has delivered modest but demonstrable gains in some regions while failing conspicuously in others.",
+  "options": [
+   "Complete failure",
+   "Mixed results",
+   "No effect",
+   "Complete success"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "نجاح متواضع في مناطق وفشل في تانية.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015987",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "How does the speaker feel?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd be lying if I said I wasn't daunted by the prospect. Nevertheless, having come this far, to withdraw now would feel like squandering everything the team has worked towards.",
+  "options": [
+   "Bored",
+   "Confident and relaxed",
+   "Daunted but determined to continue",
+   "Angry"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "daunted يعني متخوف لكن مش عايز ينسحب.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015988",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why does the speaker not withdraw?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I'd be lying if I said I wasn't daunted by the prospect. Nevertheless, having come this far, to withdraw now would feel like squandering everything the team has worked towards.",
+  "options": [
+   "He has no choice legally",
+   "He wants money",
+   "It would waste the team's effort",
+   "He is bored"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الانسحاب هيضيع شغل الفريق.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015989",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the speaker's criticism?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The author's prose is unquestionably elegant, but elegance can be a form of evasion: the more polished the sentence, the less readily we ask whether the argument beneath it holds.",
+  "options": [
+   "The book is too long",
+   "Elegant style can hide weak arguments",
+   "The prose is ugly",
+   "The author is dishonest about facts"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأسلوب الأنيق ممكن يخبي ضعف الحجة.",
+  "topic": "Listening: Seminar (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015990",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The speaker thinks the prose is poorly written.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The author's prose is unquestionably elegant, but elegance can be a form of evasion: the more polished the sentence, the less readily we ask whether the argument beneath it holds.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيقول عنها \"unquestionably elegant\".",
+  "topic": "Listening: Seminar (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015991",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What effect has the ruling had?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Far from resolving the dispute, the ruling has merely shifted it onto new terrain, as both parties now claim vindication and are preparing to contest the interpretation in the higher court.",
+  "options": [
+   "It cancelled the case",
+   "It cost the parties money",
+   "It has moved the dispute elsewhere",
+   "It ended the dispute"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "shifted it onto new terrain يعني نقل النزاع.",
+  "topic": "Listening: Radio (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015992",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What will the parties do?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "Far from resolving the dispute, the ruling has merely shifted it onto new terrain, as both parties now claim vindication and are preparing to contest the interpretation in the higher court.",
+  "options": [
+   "Contest the interpretation in a higher court",
+   "Accept the ruling",
+   "Sign an agreement",
+   "Leave the country"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "هيطعنوا في محكمة أعلى.",
+  "topic": "Listening: Radio (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015993",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What does the speaker stress?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It is tempting to attribute her success to talent alone, yet those who worked with her recall a relentless discipline: she rewrote each chapter a dozen times before showing it to anyone.",
+  "options": [
+   "Her wealth",
+   "Her connections",
+   "Her luck",
+   "Her discipline"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ركز على الانضباط.",
+  "topic": "Listening: Talk (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015994",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "How many times did she rewrite each chapter?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "It is tempting to attribute her success to talent alone, yet those who worked with her recall a relentless discipline: she rewrote each chapter a dozen times before showing it to anyone.",
+  "options": [
+   "About twelve",
+   "Twenty",
+   "Two",
+   "Never"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "a dozen = اتناشر.",
+  "topic": "Listening: Talk (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015995",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the speaker's criticism of the proposal?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The proposal is, at best, a stopgap; it addresses the symptom, namely the shortage of teachers, without tackling the underlying cause, which is that the profession has become financially unattractive.",
+  "options": [
+   "It treats the symptom, not the cause",
+   "It is too complicated",
+   "It is too expensive",
+   "It is illegal"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "stopgap يعني حل مؤقت.",
+  "topic": "Listening: Debate (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015996",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What is the underlying cause?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The proposal is, at best, a stopgap; it addresses the symptom, namely the shortage of teachers, without tackling the underlying cause, which is that the profession has become financially unattractive.",
+  "options": [
+   "Too many schools",
+   "Too few students",
+   "Teaching is financially unattractive",
+   "Poor buildings"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المهنة مش مجزية ماديا.",
+  "topic": "Listening: Debate (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015997",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "What has happened to the theory?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "The theory, once dismissed as fanciful, has gained credence in recent years as new data have emerged that are difficult to reconcile with any rival explanation.",
+  "options": [
+   "It was banned",
+   "It has become more credible",
+   "It was forgotten",
+   "It was disproved"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "gained credence يعني زادت مصداقيتها.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015998",
+  "skill": "listening",
+  "type": "true-false",
+  "level": "C2",
+  "prompt": "True or False: The new data contradict the theory.",
+  "promptAr": "استمع إلى التسجيل ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "audioText": "The theory, once dismissed as fanciful, has gained credence in recent years as new data have emerged that are difficult to reconcile with any rival explanation.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "البيانات الجديدة صعب تتوافق مع تفسيرات منافسة، يعني بتدعم النظرية.",
+  "topic": "Listening: Lecture (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-015999",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "Why did the venture end?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I wouldn't say the venture failed so much as it ran out of road: the idea was sound, but we launched a decade before the technology could support it.",
+  "options": [
+   "The team quarrelled",
+   "The idea was bad",
+   "Customers disliked it",
+   "The technology was not ready"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "سبقوا التكنولوجيا بعشر سنين.",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-list-016000",
+  "skill": "listening",
+  "type": "multiple-choice",
+  "level": "C2",
+  "prompt": "How does the speaker view the idea?",
+  "promptAr": "استمع إلى التسجيل ثم أجب عن السؤال.",
+  "audioText": "I wouldn't say the venture failed so much as it ran out of road: the idea was sound, but we launched a decade before the technology could support it.",
+  "options": [
+   "As flawed",
+   "As copied",
+   "As illegal",
+   "As sound"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الفكرة سليمة (sound).",
+  "topic": "Listening: Interview (C2)",
+  "source": "worker-d-reading-listening"
+ }
+]
