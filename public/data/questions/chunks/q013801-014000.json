@@ -2446,5 +2446,1195 @@
   "explanationAr": "القاعدة: in addition.",
   "topic": "Usage: register: formal vs informal (C1)",
   "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-read-016001",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Besides making books cheaper, what did the printing press do?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The printing press, introduced in Europe in the fifteenth century, did more than make books cheaper. By standardising spelling and grammar, it gradually fixed the form of national languages. It also allowed scientists in different countries to compare results, which accelerated research. Not everyone welcomed the change: some rulers feared that cheap pamphlets would spread dangerous ideas.",
+  "options": [
+   "It reduced the number of readers",
+   "It replaced handwriting in schools",
+   "It helped standardise languages",
+   "It made rulers more powerful"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص بيقول إنها ثبتت الإملاء والقواعد فاستقرت اللغات القومية.",
+  "topic": "Reading: History (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016002",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How did it help scientists?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The printing press, introduced in Europe in the fifteenth century, did more than make books cheaper. By standardising spelling and grammar, it gradually fixed the form of national languages. It also allowed scientists in different countries to compare results, which accelerated research. Not everyone welcomed the change: some rulers feared that cheap pamphlets would spread dangerous ideas.",
+  "options": [
+   "They could compare results across countries",
+   "They wrote shorter reports",
+   "They stopped travelling",
+   "They got free paper"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص: \"allowed scientists in different countries to compare results\".",
+  "topic": "Reading: History (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016003",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why did some rulers dislike it?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The printing press, introduced in Europe in the fifteenth century, did more than make books cheaper. By standardising spelling and grammar, it gradually fixed the form of national languages. It also allowed scientists in different countries to compare results, which accelerated research. Not everyone welcomed the change: some rulers feared that cheap pamphlets would spread dangerous ideas.",
+  "options": [
+   "It was too expensive",
+   "They feared dangerous ideas would spread",
+   "It was too noisy",
+   "It needed foreign workers"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الحكام خافوا من انتشار أفكار خطيرة في كتيبات رخيصة.",
+  "topic": "Reading: History (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016004",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The printing press _____ research by letting scientists compare results.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The printing press, introduced in Europe in the fifteenth century, did more than make books cheaper. By standardising spelling and grammar, it gradually fixed the form of national languages. It also allowed scientists in different countries to compare results, which accelerated research. Not everyone welcomed the change: some rulers feared that cheap pamphlets would spread dangerous ideas.",
+  "options": [
+   "ignored",
+   "delayed",
+   "accelerated",
+   "prevented"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "accelerated يعني سرّع، ودي الكلمة اللي في النص.",
+  "topic": "Reading: History (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016005",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the passage mainly about?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many young footballers dream of becoming professionals, yet fewer than one in a hundred succeed. Academies select players as young as eight, which places enormous pressure on children. Coaches increasingly stress that those who leave the academy need a fallback plan, and several clubs now insist that players continue their education alongside training.",
+  "options": [
+   "The pressure and risks facing young footballers",
+   "The cost of football boots",
+   "The history of football",
+   "How to become a coach"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الفكرة الرئيسية: ضغط ومخاطر على اللاعبين الصغار ومحدودية النجاح.",
+  "topic": "Reading: Sport (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016006",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How many young players succeed as professionals?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many young footballers dream of becoming professionals, yet fewer than one in a hundred succeed. Academies select players as young as eight, which places enormous pressure on children. Coaches increasingly stress that those who leave the academy need a fallback plan, and several clubs now insist that players continue their education alongside training.",
+  "options": [
+   "Most of them",
+   "About half",
+   "One in ten",
+   "Fewer than one in a hundred"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النص: \"fewer than one in a hundred\".",
+  "topic": "Reading: Sport (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016007",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: Some clubs require players to keep studying.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Many young footballers dream of becoming professionals, yet fewer than one in a hundred succeed. Academies select players as young as eight, which places enormous pressure on children. Coaches increasingly stress that those who leave the academy need a fallback plan, and several clubs now insist that players continue their education alongside training.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص: بعض الأندية بتصر إن اللاعبين يكملوا تعليمهم.",
+  "topic": "Reading: Sport (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016008",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do coaches advise players to have?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many young footballers dream of becoming professionals, yet fewer than one in a hundred succeed. Academies select players as young as eight, which places enormous pressure on children. Coaches increasingly stress that those who leave the academy need a fallback plan, and several clubs now insist that players continue their education alongside training.",
+  "options": [
+   "An agent",
+   "A sponsor",
+   "A fallback plan",
+   "A new coach"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "fallback plan يعني خطة بديلة لو معملوش احتراف.",
+  "topic": "Reading: Sport (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016009",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What has happened to rents in the village?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Tourism brings money to small towns, but it can also change them beyond recognition. In one coastal village, rents have tripled because owners prefer to let their houses to visitors, forcing many local families to move inland. The mayor admits that the village depends on tourists, yet fears that it is slowly losing the character that attracted them in the first place.",
+  "options": [
+   "They have halved",
+   "They have tripled",
+   "They disappeared",
+   "They stayed the same"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "\"rents have tripled\" يعني زادت ثلاث أضعاف.",
+  "topic": "Reading: Travel (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016010",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why are local families moving inland?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Tourism brings money to small towns, but it can also change them beyond recognition. In one coastal village, rents have tripled because owners prefer to let their houses to visitors, forcing many local families to move inland. The mayor admits that the village depends on tourists, yet fears that it is slowly losing the character that attracted them in the first place.",
+  "options": [
+   "Owners rent houses to tourists",
+   "The sea is dangerous",
+   "The mayor ordered it",
+   "Jobs are available inland"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الملاك بيأجروا للسياح فالإيجار غلي.",
+  "topic": "Reading: Travel (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016011",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the mayor's concern?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Tourism brings money to small towns, but it can also change them beyond recognition. In one coastal village, rents have tripled because owners prefer to let their houses to visitors, forcing many local families to move inland. The mayor admits that the village depends on tourists, yet fears that it is slowly losing the character that attracted them in the first place.",
+  "options": [
+   "Taxes are too high",
+   "The beach is closing",
+   "The village may lose its character",
+   "Tourists are leaving"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "خايف يفقد القرية طابعها اللي جذب السياح.",
+  "topic": "Reading: Travel (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016012",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The mayor thinks the village does not need tourists.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Tourism brings money to small towns, but it can also change them beyond recognition. In one coastal village, rents have tripled because owners prefer to let their houses to visitors, forcing many local families to move inland. The mayor admits that the village depends on tourists, yet fears that it is slowly losing the character that attracted them in the first place.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "العمدة بيعترف إن القرية معتمدة على السياح.",
+  "topic": "Reading: Travel (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016013",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the spotlight effect?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "People tend to overestimate how much others notice their mistakes, a bias psychologists call the spotlight effect. In one experiment, students wearing an embarrassing T-shirt predicted that about half of their classmates would notice it; in fact, fewer than a quarter did. The findings suggest that we are far more preoccupied with ourselves than others are with us.",
+  "options": [
+   "Ignoring other people",
+   "Overestimating how much others notice us",
+   "Being good at acting",
+   "Fear of bright light"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيعرفها: بنبالغ في تقدير ملاحظة الناس لأخطائنا.",
+  "topic": "Reading: Psychology (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016014",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How many classmates did students predict would notice the T-shirt?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "People tend to overestimate how much others notice their mistakes, a bias psychologists call the spotlight effect. In one experiment, students wearing an embarrassing T-shirt predicted that about half of their classmates would notice it; in fact, fewer than a quarter did. The findings suggest that we are far more preoccupied with ourselves than others are with us.",
+  "options": [
+   "About a quarter",
+   "About half",
+   "Almost none",
+   "All of them"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "توقعوا النص تقريبا.",
+  "topic": "Reading: Psychology (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016015",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What happened in reality?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "People tend to overestimate how much others notice their mistakes, a bias psychologists call the spotlight effect. In one experiment, students wearing an embarrassing T-shirt predicted that about half of their classmates would notice it; in fact, fewer than a quarter did. The findings suggest that we are far more preoccupied with ourselves than others are with us.",
+  "options": [
+   "Fewer than a quarter noticed",
+   "Half noticed",
+   "Nobody noticed",
+   "Everyone noticed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الحقيقة: أقل من الربع لاحظ.",
+  "topic": "Reading: Psychology (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016016",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The students were _____ than others were with them.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "People tend to overestimate how much others notice their mistakes, a bias psychologists call the spotlight effect. In one experiment, students wearing an embarrassing T-shirt predicted that about half of their classmates would notice it; in fact, fewer than a quarter did. The findings suggest that we are far more preoccupied with ourselves than others are with us.",
+  "options": [
+   "more interested in others",
+   "less worried about themselves",
+   "less aware of themselves",
+   "more preoccupied with themselves"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النتيجة: بننشغل بنفسنا أكتر من انشغال الناس بينا.",
+  "topic": "Reading: Psychology (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016017",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why can buying on credit be misleading?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Buying a car on credit may seem affordable because the monthly payments are low, but the total cost is often much higher. A car priced at 400,000 pounds can cost over 550,000 after interest. Financial advisers therefore recommend saving for a larger deposit, which reduces the amount borrowed and, consequently, the interest paid.",
+  "options": [
+   "Deposits are not allowed",
+   "Cars lose value quickly",
+   "Low monthly payments hide a high total cost",
+   "Banks refuse most customers"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأقساط الصغيرة بتخبي التكلفة الكلية العالية.",
+  "topic": "Reading: Money (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016018",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How much can a 400,000 pound car cost with interest?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Buying a car on credit may seem affordable because the monthly payments are low, but the total cost is often much higher. A car priced at 400,000 pounds can cost over 550,000 after interest. Financial advisers therefore recommend saving for a larger deposit, which reduces the amount borrowed and, consequently, the interest paid.",
+  "options": [
+   "Under 400,000 pounds",
+   "About 450,000 pounds",
+   "Over 550,000 pounds",
+   "Exactly 400,000 pounds"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النص: over 550,000.",
+  "topic": "Reading: Money (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016019",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do advisers recommend?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Buying a car on credit may seem affordable because the monthly payments are low, but the total cost is often much higher. A car priced at 400,000 pounds can cost over 550,000 after interest. Financial advisers therefore recommend saving for a larger deposit, which reduces the amount borrowed and, consequently, the interest paid.",
+  "options": [
+   "Buying two cars",
+   "Borrowing more",
+   "Avoiding all savings",
+   "Saving for a bigger deposit"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الوديعة الأكبر بتقلل المبلغ المقترض والفايدة.",
+  "topic": "Reading: Money (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016020",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: A larger deposit increases the interest paid.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Buying a car on credit may seem affordable because the monthly payments are low, but the total cost is often much higher. A car priced at 400,000 pounds can cost over 550,000 after interest. Financial advisers therefore recommend saving for a larger deposit, which reduces the amount borrowed and, consequently, the interest paid.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الوديعة الأكبر بتقلل الفايدة مش بتزودها.",
+  "topic": "Reading: Money (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016021",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is koshari made from?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Koshari is one of Egypt's most popular dishes. It is made from rice, pasta and lentils, and it is served with a spicy tomato sauce and crispy fried onions. It is cheap and filling, so students and workers often eat it for lunch. Many people say the best koshari comes from small street restaurants.",
+  "options": [
+   "Rice, pasta and lentils",
+   "Beans and bread",
+   "Fish and rice",
+   "Meat and potatoes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص ذكر الأرز والمكرونة والعدس.",
+  "topic": "Reading: Food (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016022",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why do students and workers eat it?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Koshari is one of Egypt's most popular dishes. It is made from rice, pasta and lentils, and it is served with a spicy tomato sauce and crispy fried onions. It is cheap and filling, so students and workers often eat it for lunch. Many people say the best koshari comes from small street restaurants.",
+  "options": [
+   "It is cheap and filling",
+   "It is very sweet",
+   "It is only sold at night",
+   "It is healthy"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"cheap and filling\".",
+  "topic": "Reading: Food (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016023",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The text says koshari is expensive.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Koshari is one of Egypt's most popular dishes. It is made from rice, pasta and lentils, and it is served with a spicy tomato sauce and crispy fried onions. It is cheap and filling, so students and workers often eat it for lunch. Many people say the best koshari comes from small street restaurants.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول إنه cheap.",
+  "topic": "Reading: Food (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016024",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Where do many people say the best koshari comes from?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Koshari is one of Egypt's most popular dishes. It is made from rice, pasta and lentils, and it is served with a spicy tomato sauce and crispy fried onions. It is cheap and filling, so students and workers often eat it for lunch. Many people say the best koshari comes from small street restaurants.",
+  "options": [
+   "Hotels",
+   "Supermarkets",
+   "Small street restaurants",
+   "Homes only"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "من مطاعم الشارع الصغيرة.",
+  "topic": "Reading: Food (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016025",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How many languages does Salma speak?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Salma works as a tour guide at the Egyptian Museum. She speaks four languages and enjoys meeting people from different countries. The job is tiring because she stands for hours, and in summer the museum is crowded. However, she says nothing is more satisfying than seeing visitors fall in love with her country's history.",
+  "options": [
+   "Three",
+   "Two",
+   "Four",
+   "Five"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"speaks four languages\".",
+  "topic": "Reading: Jobs (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016026",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why is her job tiring?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Salma works as a tour guide at the Egyptian Museum. She speaks four languages and enjoys meeting people from different countries. The job is tiring because she stands for hours, and in summer the museum is crowded. However, she says nothing is more satisfying than seeing visitors fall in love with her country's history.",
+  "options": [
+   "She drives a lot",
+   "She stands for hours",
+   "She writes reports",
+   "She works at night"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بتقف ساعات.",
+  "topic": "Reading: Jobs (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016027",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does she find most satisfying?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Salma works as a tour guide at the Egyptian Museum. She speaks four languages and enjoys meeting people from different countries. The job is tiring because she stands for hours, and in summer the museum is crowded. However, she says nothing is more satisfying than seeing visitors fall in love with her country's history.",
+  "options": [
+   "Travelling abroad",
+   "Having holidays",
+   "Seeing visitors love Egyptian history",
+   "Earning money"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "آخر جملة في النص.",
+  "topic": "Reading: Jobs (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016028",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Salma works in a school.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Salma works as a tour guide at the Egyptian Museum. She speaks four languages and enjoys meeting people from different countries. The job is tiring because she stands for hours, and in summer the museum is crowded. However, she says nothing is more satisfying than seeing visitors fall in love with her country's history.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بتشتغل مرشدة سياحية في المتحف المصري.",
+  "topic": "Reading: Jobs (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016029",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why is the metro the fastest way around Cairo?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Cairo Metro is the fastest way to move around the city. A ticket costs only a few pounds, and trains come every few minutes during the day. The first carriage is reserved for women. The main problem is that the trains become very crowded during rush hour, so many passengers prefer to travel earlier or later.",
+  "options": [
+   "Trains come every few minutes",
+   "It runs at night only",
+   "It has only one line",
+   "It is free"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القطر بييجي كل كام دقيقة والمواصلات بتتجنب الزحمة.",
+  "topic": "Reading: Transport (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016030",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Who is the first carriage reserved for?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Cairo Metro is the fastest way to move around the city. A ticket costs only a few pounds, and trains come every few minutes during the day. The first carriage is reserved for women. The main problem is that the trains become very crowded during rush hour, so many passengers prefer to travel earlier or later.",
+  "options": [
+   "Tourists",
+   "Students",
+   "Children",
+   "Women"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "أول عربية للسيدات.",
+  "topic": "Reading: Transport (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016031",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is the main problem?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Cairo Metro is the fastest way to move around the city. A ticket costs only a few pounds, and trains come every few minutes during the day. The first carriage is reserved for women. The main problem is that the trains become very crowded during rush hour, so many passengers prefer to travel earlier or later.",
+  "options": [
+   "Slow trains",
+   "Crowding during rush hour",
+   "High prices",
+   "Dirty stations"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المشكلة الزحمة وقت الذروة.",
+  "topic": "Reading: Transport (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016032",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Many passengers avoid rush hour.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The Cairo Metro is the fastest way to move around the city. A ticket costs only a few pounds, and trains come every few minutes during the day. The first carriage is reserved for women. The main problem is that the trains become very crowded during rush hour, so many passengers prefer to travel earlier or later.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "كتير بيفضلوا يسافروا بدري أو متأخر.",
+  "topic": "Reading: Transport (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016033",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is stored in a camel's hump?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Camels can survive in the desert for several days without water because their bodies store fat in their humps, not water as many people think. When the fat is used for energy, the camel can continue walking in extreme heat. When a camel finally finds water, it can drink more than a hundred litres in a few minutes.",
+  "options": [
+   "Sand",
+   "Water",
+   "Food",
+   "Fat"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النص بيصحح الفكرة: بتخزن دهون مش مياه.",
+  "topic": "Reading: Animals (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016034",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Camels store water in their humps.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Camels can survive in the desert for several days without water because their bodies store fat in their humps, not water as many people think. When the fat is used for energy, the camel can continue walking in extreme heat. When a camel finally finds water, it can drink more than a hundred litres in a few minutes.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكامل بيخزن دهون في السنام.",
+  "topic": "Reading: Animals (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016035",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How much can a camel drink in a few minutes?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Camels can survive in the desert for several days without water because their bodies store fat in their humps, not water as many people think. When the fat is used for energy, the camel can continue walking in extreme heat. When a camel finally finds water, it can drink more than a hundred litres in a few minutes.",
+  "options": [
+   "Twenty litres",
+   "Five litres",
+   "Ten litres",
+   "More than a hundred litres"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "أكتر من مية لتر.",
+  "topic": "Reading: Animals (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016036",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why can camels keep walking in the heat?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Camels can survive in the desert for several days without water because their bodies store fat in their humps, not water as many people think. When the fat is used for energy, the camel can continue walking in extreme heat. When a camel finally finds water, it can drink more than a hundred litres in a few minutes.",
+  "options": [
+   "They avoid the sun",
+   "They use the fat for energy",
+   "They sleep a lot",
+   "They drink every hour"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيستخدموا الدهون كطاقة.",
+  "topic": "Reading: Animals (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016037",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How long have Yara and Mariam been friends?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Yara and Mariam have been best friends since primary school. They live in the same street, and they walk to school together every morning. On weekends they usually study at Yara's house, and after that they watch a film. Next month they are going on a school trip to Luxor together.",
+  "options": [
+   "Since primary school",
+   "Since last month",
+   "Since university",
+   "Since last year"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"since primary school\".",
+  "topic": "Reading: Friends (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016038",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where do they study on weekends?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Yara and Mariam have been best friends since primary school. They live in the same street, and they walk to school together every morning. On weekends they usually study at Yara's house, and after that they watch a film. Next month they are going on a school trip to Luxor together.",
+  "options": [
+   "At school",
+   "At Mariam's house",
+   "At the library",
+   "At Yara's house"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "عند يارا.",
+  "topic": "Reading: Friends (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016039",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Where are they going next month?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Yara and Mariam have been best friends since primary school. They live in the same street, and they walk to school together every morning. On weekends they usually study at Yara's house, and after that they watch a film. Next month they are going on a school trip to Luxor together.",
+  "options": [
+   "Cairo",
+   "Luxor",
+   "Aswan",
+   "Alexandria"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "رحلة مدرسية إلى الأقصر.",
+  "topic": "Reading: Friends (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016040",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: They live in different cities.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Yara and Mariam have been best friends since primary school. They live in the same street, and they walk to school together every morning. On weekends they usually study at Yara's house, and after that they watch a film. Next month they are going on a school trip to Luxor together.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ساكنين في نفس الشارع.",
+  "topic": "Reading: Friends (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016041",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What time does Tarek finish work?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Tarek works in a bank from nine to four. After work he usually goes to the gym for an hour. He gets home at about six, cooks dinner and watches the news. He goes to bed early because he has to wake up at six the next morning.",
+  "options": [
+   "At nine",
+   "At six",
+   "At five",
+   "At four"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بيشتغل من تسعة لأربعة.",
+  "topic": "Reading: Daily life (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016042",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does Tarek do after work?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Tarek works in a bank from nine to four. After work he usually goes to the gym for an hour. He gets home at about six, cooks dinner and watches the news. He goes to bed early because he has to wake up at six the next morning.",
+  "options": [
+   "He studies English",
+   "He visits friends",
+   "He plays football",
+   "He goes to the gym"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بيروح الجيم ساعة.",
+  "topic": "Reading: Daily life (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016043",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Why does he go to bed early?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Tarek works in a bank from nine to four. After work he usually goes to the gym for an hour. He gets home at about six, cooks dinner and watches the news. He goes to bed early because he has to wake up at six the next morning.",
+  "options": [
+   "He works at night",
+   "He wakes up at six",
+   "He has no TV",
+   "He is ill"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "لأنه بيصحى الساعة ستة.",
+  "topic": "Reading: Daily life (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016044",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Tarek cooks dinner at home.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Tarek works in a bank from nine to four. After work he usually goes to the gym for an hour. He gets home at about six, cooks dinner and watches the news. He goes to bed early because he has to wake up at six the next morning.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بيطبخ العشا.",
+  "topic": "Reading: Daily life (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016045",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How many computers are in the library?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Our school has a new library. It has more than five thousand books and ten computers. Students can borrow two books for two weeks. If they keep them longer, they must pay a small fine. The library is open from eight to three, but it is closed on Fridays.",
+  "options": [
+   "Two",
+   "Five",
+   "Ten",
+   "Fifty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "عشرة كمبيوترات.",
+  "topic": "Reading: School (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016046",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How many books can students borrow?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Our school has a new library. It has more than five thousand books and ten computers. Students can borrow two books for two weeks. If they keep them longer, they must pay a small fine. The library is open from eight to three, but it is closed on Fridays.",
+  "options": [
+   "Five",
+   "Two",
+   "Ten",
+   "One"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "كتابين.",
+  "topic": "Reading: School (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016047",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What happens if students keep books too long?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Our school has a new library. It has more than five thousand books and ten computers. Students can borrow two books for two weeks. If they keep them longer, they must pay a small fine. The library is open from eight to three, but it is closed on Fridays.",
+  "options": [
+   "Nothing",
+   "They go to the head teacher",
+   "They pay a fine",
+   "They lose their card"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "غرامة صغيرة.",
+  "topic": "Reading: School (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016048",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The library is open on Fridays.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Our school has a new library. It has more than five thousand books and ten computers. Students can borrow two books for two weeks. If they keep them longer, they must pay a small fine. The library is open from eight to three, but it is closed on Fridays.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مقفولة يوم الجمعة.",
+  "topic": "Reading: School (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016049",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What is the dog's name?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "I have a dog. His name is Max. He is big and brown. He likes to run in the park. He does not like cats. He sleeps in the garden at night.",
+  "options": [
+   "Lola",
+   "Rex",
+   "Max",
+   "Tom"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "اسم الكلب Max.",
+  "topic": "Reading: Animals (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016050",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does Max like?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "I have a dog. His name is Max. He is big and brown. He likes to run in the park. He does not like cats. He sleeps in the garden at night.",
+  "options": [
+   "Eating fish",
+   "Swimming",
+   "Sleeping all day",
+   "Running in the park"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بيحب يجري في الحديقة.",
+  "topic": "Reading: Animals (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016051",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: Max likes cats.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "I have a dog. His name is Max. He is big and brown. He likes to run in the park. He does not like cats. He sleeps in the garden at night.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"He does not like cats\".",
+  "topic": "Reading: Animals (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016052",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where does Max sleep?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "I have a dog. His name is Max. He is big and brown. He likes to run in the park. He does not like cats. He sleeps in the garden at night.",
+  "options": [
+   "In the car",
+   "In the kitchen",
+   "In the garden",
+   "On the bed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بينام في الجنينة.",
+  "topic": "Reading: Animals (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016053",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How many kilos of bananas does Hana buy?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Hana is at the market. She wants some fruit. She buys two kilos of bananas and one kilo of oranges. The bananas cost ten pounds and the oranges cost eight pounds. She gives the man twenty pounds.",
+  "options": [
+   "Ten",
+   "Two",
+   "Three",
+   "One"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "اتنين كيلو موز.",
+  "topic": "Reading: Shopping (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016054",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How much do the oranges cost?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Hana is at the market. She wants some fruit. She buys two kilos of bananas and one kilo of oranges. The bananas cost ten pounds and the oranges cost eight pounds. She gives the man twenty pounds.",
+  "options": [
+   "Two pounds",
+   "Eight pounds",
+   "Twenty pounds",
+   "Ten pounds"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "البرتقال بتمانية جنيه.",
+  "topic": "Reading: Shopping (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016055",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: Hana buys apples.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Hana is at the market. She wants some fruit. She buys two kilos of bananas and one kilo of oranges. The bananas cost ten pounds and the oranges cost eight pounds. She gives the man twenty pounds.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "اشترت موز وبرتقال.",
+  "topic": "Reading: Shopping (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016056",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "How much does Hana give the man?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Hana is at the market. She wants some fruit. She buys two kilos of bananas and one kilo of oranges. The bananas cost ten pounds and the oranges cost eight pounds. She gives the man twenty pounds.",
+  "options": [
+   "Twenty pounds",
+   "Eighteen pounds",
+   "Eight pounds",
+   "Ten pounds"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "أعطته عشرين جنيه.",
+  "topic": "Reading: Shopping (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016057",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What does the writer say about online news?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The proliferation of online news has not, as optimists predicted, produced a better-informed public. On the contrary, the sheer volume of material encourages people to skim headlines rather than read articles, and recommendation algorithms steer readers towards content that confirms what they already believe. Media literacy, the ability to evaluate sources critically, has accordingly become as essential a skill as reading itself.",
+  "options": [
+   "More news has not made people better informed",
+   "It is more accurate than print",
+   "It is too expensive",
+   "It has made people wiser"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الدليل في النص: \"has not... produced a better-informed public\".",
+  "topic": "Reading: Media (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016058",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "How do algorithms affect readers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The proliferation of online news has not, as optimists predicted, produced a better-informed public. On the contrary, the sheer volume of material encourages people to skim headlines rather than read articles, and recommendation algorithms steer readers towards content that confirms what they already believe. Media literacy, the ability to evaluate sources critically, has accordingly become as essential a skill as reading itself.",
+  "options": [
+   "They reduce headlines",
+   "They delete false news",
+   "They show content that matches existing beliefs",
+   "They choose random articles"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"steer readers towards content that confirms what they already believe\".",
+  "topic": "Reading: Media (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016059",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "\"proliferation\" most nearly means",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The proliferation of online news has not, as optimists predicted, produced a better-informed public. On the contrary, the sheer volume of material encourages people to skim headlines rather than read articles, and recommendation algorithms steer readers towards content that confirms what they already believe. Media literacy, the ability to evaluate sources critically, has accordingly become as essential a skill as reading itself.",
+  "options": [
+   "decline",
+   "rapid increase",
+   "delay",
+   "control"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "proliferation يعني انتشار وزيادة سريعة.",
+  "topic": "Reading: Media (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016060",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "C1",
+  "prompt": "True or False: The writer believes media literacy is unimportant.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The proliferation of online news has not, as optimists predicted, produced a better-informed public. On the contrary, the sheer volume of material encourages people to skim headlines rather than read articles, and recommendation algorithms steer readers towards content that confirms what they already believe. Media literacy, the ability to evaluate sources critically, has accordingly become as essential a skill as reading itself.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيقول إنها مهارة أساسية زي القراءة.",
+  "topic": "Reading: Media (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016061",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What is the effect of prioritising cars, according to the text?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Cities that prioritise cars tend to sprawl, forcing residents to travel ever greater distances and thereby generating still more traffic. Planners advocating compact development counter that mixing homes, shops and workplaces within walkable neighbourhoods reduces the need to drive at all. Opponents, however, regard this as social engineering and maintain that families, by and large, prefer the space and privacy of suburban living.",
+  "options": [
+   "Cities sprawl and traffic increases",
+   "Traffic decreases",
+   "Cities become compact",
+   "Housing becomes cheaper"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النص: sprawl وبالتالي مسافات ومرور أكتر.",
+  "topic": "Reading: Urban planning (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016062",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "What do advocates of compact development propose?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Cities that prioritise cars tend to sprawl, forcing residents to travel ever greater distances and thereby generating still more traffic. Planners advocating compact development counter that mixing homes, shops and workplaces within walkable neighbourhoods reduces the need to drive at all. Opponents, however, regard this as social engineering and maintain that families, by and large, prefer the space and privacy of suburban living.",
+  "options": [
+   "Mixing homes, shops and workplaces",
+   "Banning suburbs",
+   "Moving factories out",
+   "Building more roads"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "دمج السكن والمحلات والعمل.",
+  "topic": "Reading: Urban planning (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016063",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "C1",
+  "prompt": "How do opponents see the proposal?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Cities that prioritise cars tend to sprawl, forcing residents to travel ever greater distances and thereby generating still more traffic. Planners advocating compact development counter that mixing homes, shops and workplaces within walkable neighbourhoods reduces the need to drive at all. Opponents, however, regard this as social engineering and maintain that families, by and large, prefer the space and privacy of suburban living.",
+  "options": [
+   "As natural",
+   "As cheap",
+   "As social engineering",
+   "As temporary"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الدليل في النص: \"regard this as social engineering\".",
+  "topic": "Reading: Urban planning (C1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016064",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "C1",
+  "prompt": "Families, by and large, prefer the _____ of suburban living.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Cities that prioritise cars tend to sprawl, forcing residents to travel ever greater distances and thereby generating still more traffic. Planners advocating compact development counter that mixing homes, shops and workplaces within walkable neighbourhoods reduces the need to drive at all. Opponents, however, regard this as social engineering and maintain that families, by and large, prefer the space and privacy of suburban living.",
+  "options": [
+   "noise and crowds",
+   "space and privacy",
+   "traffic and cost",
+   "speed and trains"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "by and large يعني في الغالب، والنص: space and privacy.",
+  "topic": "Reading: Urban planning (C1)",
+  "source": "worker-d-reading-listening"
  }
 ]
