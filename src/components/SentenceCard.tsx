@@ -56,9 +56,6 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id));
   const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id));
   const [srsRecord, setSrsRecord] = useState(() => getSentenceSrsRecord(sentence.id));
-  const [isRecording, setIsRecording] = useState(false);
-  const [speakingScore, setSpeakingScore] = useState<number | null>(null);
-  const [speakingFeedback, setSpeakingFeedback] = useState<string | null>(null);
 
   // Play normal audio
   const handlePlayAudio = (slow: boolean = false) => {
@@ -103,61 +100,6 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
     setSrsRecord(rec);
   };
 
-  // Simulated / Web Speech Pronunciation Assessment
-  const handleSimulatePronounce = () => {
-    playSound('click');
-    if (!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
-      alert('ميزة الميكروفون والتعرف على الصوت تتطلب متصفحاً حديثاً يدعم Web Speech API.');
-      return;
-    }
-
-    try {
-      // @ts-expect-error - Web Speech API window fallback
-      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-      const recognition = new SpeechRecognition();
-      recognition.lang = 'en-US';
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 1;
-
-      setIsRecording(true);
-      setSpeakingFeedback('تحدث الآن بوضوح بالإنجليزية...');
-
-      recognition.onresult = (event: any) => {
-        const transcript = event.results[0][0].transcript.toLowerCase();
-        const targetClean = sentence.english.toLowerCase().replace(/[^a-z0-9\s]/g, '');
-        const transClean = transcript.replace(/[^a-z0-9\s]/g, '');
-
-        setIsRecording(false);
-        if (transClean === targetClean) {
-          setSpeakingScore(100);
-          setSpeakingFeedback('ممتاز! نطقك متطابق تماماً بنسبة 100%');
-          playSound('success');
-        } else {
-          // Calculate rough word match
-          const targetWords = targetClean.split(' ');
-          const heardWords = transClean.split(' ');
-          let matches = 0;
-          targetWords.forEach(w => {
-            if (heardWords.includes(w)) matches++;
-          });
-          const score = Math.round((matches / targetWords.length) * 100);
-          setSpeakingScore(Math.max(60, score));
-          setSpeakingFeedback(`سمعنا: "${transcript}" • دقة النطق: ${Math.max(60, score)}%`);
-          playSound('click');
-        }
-      };
-
-      recognition.onerror = () => {
-        setIsRecording(false);
-        setSpeakingFeedback('تعذر التقاط الصوت، يرجى التأكد من صلاحية الميكروفون والمحاولة مرة أخرى.');
-      };
-
-      recognition.start();
-    } catch {
-      setIsRecording(false);
-      setSpeakingFeedback('تعذر بدء تشغيل الميكروفون في المتصفح.');
-    }
-  };
 
   // Level Badge Colors
   const getLevelBadgeColor = (level: string) => {
@@ -301,21 +243,6 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
         </div>
       </div>
 
-      {/* Speaking Pronunciation Record Feedback */}
-      {speakingFeedback && (
-        <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-xs space-y-1 text-right">
-          <div className="flex items-center justify-between font-black text-blue-300">
-            <span>تقييم النطق المباشر</span>
-            {speakingScore !== null && (
-              <span className="px-2 py-0.5 rounded-md bg-blue-500 text-white font-black">
-                {speakingScore}%
-              </span>
-            )}
-          </div>
-          <p className="text-white/80">{speakingFeedback}</p>
-        </div>
-      )}
-
       {/* Expandable Details (Grammar, Vocabulary, Conversation Context) */}
       {showDetails && (
         <div className="space-y-3 pt-3 border-t border-white/10 text-xs">
@@ -404,19 +331,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
 
         {/* Practice Tools */}
         <div className="flex items-center gap-2">
-          {/* Record Microphone Button */}
-          <button
-            onClick={handleSimulatePronounce}
-            disabled={isRecording}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 ${
-              isRecording
-                ? 'bg-rose-500 text-white animate-pulse'
-                : 'bg-white/5 hover:bg-white/10 text-white/80 hover:text-white border border-white/10'
-            }`}
-          >
-            <Mic className="w-3.5 h-3.5" />
-            <span>{isRecording ? 'استماع...' : 'تمرين نطق'}</span>
-          </button>
+
 
           {/* Practice with AI */}
           {onPracticeWithAi && (
