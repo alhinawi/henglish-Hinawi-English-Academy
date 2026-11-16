@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
 import { playSound, speakMultilingualText } from '../../utils/audio';
 import { Volume2, Copy, Check, Sparkles, AlertCircle, RefreshCw } from 'lucide-react';
@@ -27,6 +28,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
   onWordClick,
   onExplainClick,
 }) => {
+  const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
 
   const isRtl = targetLang === 'ar' || targetLang === 'fa';
@@ -57,10 +59,10 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
       {/* Output Header Bar */}
       <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
         <span className="font-medium text-white flex items-center gap-1.5">
-          <span>الترجمة الذكية (AI Translation)</span>
+          <span>{t('to.title')}</span>
           {translatedText && !isLoading && (
             <span className="text-[10px] text-[#10b981] bg-[#10b981]/10 px-2 py-0.5 rounded-md font-semibold">
-              مكتملة
+              {t('to.done')}
             </span>
           )}
         </span>
@@ -71,7 +73,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
             type="button"
             onClick={handleCopy}
             disabled={!translatedText.trim() || isLoading}
-            title="نسخ الترجمة"
+            title={t('to.copy')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
           >
             {copied ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
@@ -82,7 +84,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
             type="button"
             onClick={handleSpeak}
             disabled={!translatedText.trim() || isLoading}
-            title="استمع لنطق الترجمة"
+            title={t('to.speak')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
           >
             <Volume2 className="w-3.5 h-3.5" />
@@ -101,7 +103,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
             <div className="text-center pt-4">
               <span className="text-xs text-[#41e7ff] font-medium flex items-center justify-center gap-2">
                 <Sparkles className="w-4 h-4 animate-spin" />
-                يقوم المحرك الذكي بتحليل السياق وصياغة الترجمة المثالية...
+                {t('to.loading')}
               </span>
             </div>
           </div>
@@ -112,7 +114,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
           <div className="my-auto p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-right">
             <div className="flex items-center gap-2 text-red-400 font-semibold mb-1 text-sm">
               <AlertCircle className="w-4 h-4" />
-              <span>تعذر إتمام الترجمة</span>
+              <span>{t('to.failed')}</span>
             </div>
             <p className="text-xs text-red-300/80 mb-3">{error}</p>
             {onRetry && (
@@ -122,7 +124,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-red-500/20 hover:bg-red-500/30 text-red-300 text-xs font-medium cursor-pointer transition-colors"
               >
                 <RefreshCw className="w-3 h-3" />
-                <span>إعادة المحاولة</span>
+                <span>{t('to.retry')}</span>
               </button>
             )}
           </div>
@@ -132,9 +134,9 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
         {!isLoading && !error && !translatedText && (
           <div className="my-auto text-center py-8 text-[#b9b6d5]/50">
             <Sparkles className="w-8 h-8 mx-auto mb-2 opacity-30 text-[#41e7ff]" />
-            <p className="text-sm">ستظهر الترجمة السياقية والتحليل اللغوي هنا فور الضغط على ترجمة.</p>
+            <p className="text-sm">{t('to.empty')}</p>
             <p className="text-xs text-[#b9b6d5]/30 mt-1">
-              يمكنك النقر على أي كلمة لاحقاً لتحليل معناها وفونيتكس نطقها وحفظها!
+              {t('to.emptyHint')}
             </p>
           </div>
         )}
@@ -161,7 +163,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
                       onWordClick(cleanWord);
                     }
                   }}
-                  title="انقر لتحليل الكلمة، نطقها الفونيتكس، وحفظها للمفردات"
+                  title={t('to.wordTitle')}
                   className="inline-block cursor-pointer hover:text-[#41e7ff] hover:bg-[#41e7ff]/10 rounded px-1 -mx-0.5 transition-colors active:scale-95"
                 >
                   {chunk}
@@ -174,7 +176,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
         {/* Educational Hint Badge */}
         {translatedText && !isLoading && onExplainClick && (
           <div className="mt-4 pt-3 border-t border-white/5 flex items-center justify-between text-xs">
-            <span className="text-[#b9b6d5]/60">اضغط على أي كلمة لتحليلها أو احفظها</span>
+            <span className="text-[#b9b6d5]/60">{t('to.hint')}</span>
             <button
               type="button"
               onClick={() => {
@@ -184,7 +186,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
               className="text-[#41e7ff] hover:underline font-semibold flex items-center gap-1 cursor-pointer"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#ffb84d]" />
-              <span>شرح الترجمة والقواعد بالتفصيل</span>
+              <span>{t('to.explain')}</span>
             </button>
           </div>
         )}
@@ -192,8 +194,8 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
 
       {/* Output Footer Bar */}
       <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-t border-white/10 text-xs text-[#b9b6d5]/70">
-        <span>{translatedText ? `${translatedText.length} حرف` : '0 حرف'}</span>
-        <span className="text-[11px] text-[#41e7ff]/80">ذكاء اصطناعي لغوي متقدم</span>
+        <span>{translatedText.length} {t('to.characters')}</span>
+        <span className="text-[11px] text-[#41e7ff]/80">{t('to.footer')}</span>
       </div>
     </div>
   );
