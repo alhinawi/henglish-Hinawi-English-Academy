@@ -82,7 +82,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
 
       // Save to local test history
       const newAttempt = {
-        date: new Date().toLocaleDateString('ar-EG'),
+        date: new Date().toLocaleDateString('ar-EG-u-nu-latn'),
         level: evalResult.estimatedLevel,
         score: evalResult.score,
         total: evalResult.total,

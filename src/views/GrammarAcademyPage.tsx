@@ -79,7 +79,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           <div className="flex flex-wrap items-center gap-3 pt-2">
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#c4ff55]" />
-              ٢١+ قاعدة تخصصية وماستر كلاس متكامل
+              21+ قاعدة تخصصية وماستر كلاس متكامل
             </span>
             <span className="px-3 py-1.5 rounded-xl bg-white/10 text-white text-xs font-bold border border-white/15 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#41e7ff]" />

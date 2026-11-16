@@ -66,11 +66,11 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
           <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-[#b9b6d5] font-bold">
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
               <BookOpen className="w-4 h-4 text-[#41e7ff]" />
-              <span>٨ دروس متكاملة</span>
+              <span>8 دروس متكاملة</span>
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
               <Clock className="w-4 h-4 text-[#ffd166]" />
-              <span>ساعتان و٤٥ دقيقة</span>
+              <span>ساعتان و45 دقيقة</span>
             </span>
             <span className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/10">
               <Award className="w-4 h-4 text-[#c4ff55]" />
@@ -156,7 +156,7 @@ export const CourseOverviewPage: React.FC<CourseOverviewPageProps> = ({
             COURSE SYLLABUS
           </span>
           <h2 className="text-2xl sm:text-3xl font-black text-white">
-            خطة الدروس الـ ٨ بالتفصيل
+            خطة الدروس الـ 8 بالتفصيل
           </h2>
         </div>
 
