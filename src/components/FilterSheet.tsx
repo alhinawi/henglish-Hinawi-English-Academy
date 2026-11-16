@@ -5,7 +5,7 @@
 // removable chips on a single scrollable line next to the result count.
 // ==============================================================================
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, SlidersHorizontal } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -31,6 +31,14 @@ interface FilterSheetProps {
 
 export const FilterSheet: React.FC<FilterSheetProps> = ({ open, onClose, sections, onClearAll }) => {
   const { t } = useLanguage();
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [open, onClose]);
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true">
