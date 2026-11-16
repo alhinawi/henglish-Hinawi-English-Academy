@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PageRoute, CEFRLevel } from "../types";
-import { COURSES_CATALOG, CourseItem } from "../data/coursesData";
+import { COURSES_CATALOG, COURSE_LEVELS, CourseItem } from "../data/coursesData";
 import {
   GRAMMAR_VIDEO_RESOURCES,
   LessonVideoResource,
@@ -35,6 +35,9 @@ import {
 } from "lucide-react";
 import { AdminAiManagementSection } from "../components/admin/AdminAiManagementSection";
 import { AdminTtsManagementSection } from "../components/admin/AdminTtsManagementSection";
+import { useLanguage } from "../i18n/LanguageContext";
+import { getSavedAuthSession } from "../services/authService";
+import { apiAdminOverview, AdminOverview } from "../services/henglishApi";
 
 interface AdminDashboardPageProps {
   onNavigate: (route: PageRoute) => void;
@@ -57,41 +60,9 @@ interface SpeakingEvalRecord {
   phoneticTipAr?: string;
 }
 
-const DEFAULT_EVALUATIONS: SpeakingEvalRecord[] = [
-  {
-    id: "eval-def-1",
-    studentName: "أحمد حسني (B2)",
-    timestamp: new Date(Date.now() - 3600000 * 2).toISOString(),
-    targetSentence: "By next Friday, the team will have finished the entire platform upgrade.",
-    overallScore: 92,
-    scores: { pronunciation: 90, fluency: 94, accuracy: 91, completeness: 100 },
-    mispronouncedCount: 0,
-    wpm: 128,
-    phoneticTipAr: "نطق سليم جداً لمخارج الحروف وصوت /v/ و /θ/.",
-  },
-  {
-    id: "eval-def-2",
-    studentName: "مريم العزازي (B1)",
-    timestamp: new Date(Date.now() - 3600000 * 5).toISOString(),
-    targetSentence: "Omar, will you have finished revising the grammar units by Thursday night?",
-    overallScore: 84,
-    scores: { pronunciation: 81, fluency: 86, accuracy: 88, completeness: 95 },
-    mispronouncedCount: 1,
-    wpm: 112,
-    phoneticTipAr: "انتبه إلى عدم نطق /v/ كـ /f/ في كلمة revising.",
-  },
-  {
-    id: "eval-def-3",
-    studentName: "يوسف النجار (A2)",
-    timestamp: new Date(Date.now() - 3600000 * 18).toISOString(),
-    targetSentence: "She had already left before I called her.",
-    overallScore: 75,
-    scores: { pronunciation: 72, fluency: 76, accuracy: 80, completeness: 90 },
-    mispronouncedCount: 2,
-    wpm: 98,
-    phoneticTipAr: "ركز على التفريق بين صوت /p/ و /b/ والوقفات المناسبة بين الجمل.",
-  },
-];
+// Course level values are domain data (CourseItem.level), labels are i18n keys.
+const COURSE_LEVEL_KEYS = ['admin.level.beginner', 'admin.level.intermediate', 'admin.level.advanced', 'admin.level.all'];
+const COURSE_LEVEL_OPTIONS = COURSE_LEVELS.map((value, i) => [value, COURSE_LEVEL_KEYS[i]] as [CourseItem['level'], string]);
 
 export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   onNavigate,
@@ -119,24 +90,39 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const [vidError, setVidError] = useState("");
 
   // Speaking Evaluations State
+  const { t } = useLanguage();
+  // Real speaking evaluations only (local log); no seeded demo records.
   const [speakingEvals, setSpeakingEvals] = useState<SpeakingEvalRecord[]>(() => {
     try {
       const saved = localStorage.getItem("henglish_speaking_evaluations_v2");
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        if (Array.isArray(parsed)) return parsed;
       }
     } catch {}
-    return DEFAULT_EVALUATIONS;
+    return [];
   });
+
+  // Real admin overview from the server (no mock roster).
+  const [overview, setOverview] = useState<AdminOverview | null>(null);
+  const [overviewState, setOverviewState] = useState<"loading" | "ready" | "unavailable">("loading");
+  useEffect(() => {
+    const token = getSavedAuthSession().accessToken;
+    if (!token) { setOverviewState("unavailable"); return; }
+    let live = true;
+    apiAdminOverview(token).then(({ body }) => {
+      if (!live) return;
+      if (body) { setOverview(body); setOverviewState("ready"); }
+      else setOverviewState("unavailable");
+    });
+    return () => { live = false; };
+  }, []);
 
   // New Course Modal / Form State
   const [newTitle, setNewTitle] = useState("");
   const [newTitleEn, setNewTitleEn] = useState("");
   const [newDesc, setNewDesc] = useState("");
-  const [newLevel, setNewLevel] = useState<
-    "مبتدئ" | "متوسط" | "متقدم" | "شامل"
-  >("متوسط");
+  const [newLevel, setNewLevel] = useState<CourseItem["level"]>(COURSE_LEVELS[1]);
   const [formSaved, setFormSaved] = useState(false);
 
   // New Lesson Form State
@@ -149,46 +135,6 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
   const [isPublished, setIsPublished] = useState(true);
   const [lessonSaved, setLessonSaved] = useState(false);
 
-  // Mock Students Roster
-  const [students, setStudents] = useState([
-    {
-      id: "std-1",
-      name: "محمد الهناوي",
-      email: "ahmed@example.com",
-      level: "B1",
-      progress: 85,
-      quizzesPassed: 12,
-      status: "نشط",
-    },
-    {
-      id: "std-2",
-      name: "سارة محمد",
-      email: "sara@example.com",
-      level: "B2",
-      progress: 92,
-      quizzesPassed: 15,
-      status: "نشط",
-    },
-    {
-      id: "std-3",
-      name: "محمود عبد الرحمن",
-      email: "mahmoud@example.com",
-      level: "A2",
-      progress: 45,
-      quizzesPassed: 6,
-      status: "يحتاج متابعة",
-    },
-    {
-      id: "std-4",
-      name: "نور الدين علي",
-      email: "nour@example.com",
-      level: "C1",
-      progress: 100,
-      quizzesPassed: 20,
-      status: "أتم المنهج",
-    },
-  ]);
-
   const handleAddCourse = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newTitle.trim()) return;
@@ -200,13 +146,13 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       id: `course-${Date.now()}`,
       title: newTitle,
       titleEn: newTitleEn || "New Course",
-      description: newDesc || "وصف الكورس التعليمي الشامل.",
+      description: newDesc || t("admin.defaultCourseDesc"),
       level: newLevel,
       lessonsCount: 6,
-      duration: "ساعتان",
+      duration: t("admin.defaultCourseDuration"),
       rating: 5.0,
       studentsCount: 1,
-      tag: "كورس جديد",
+      tag: t("admin.newCourseTag"),
       icon: "",
     };
 
@@ -244,7 +190,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
     setVidError("");
     const extractedId = extractYouTubeId(vidUrl);
     if (!extractedId || !isValidYouTubeId(extractedId)) {
-      setVidError("رابط يوتيوب غير صالح أو معرف الفيديو غير سليم.");
+      setVidError(t("admin.invalidYouTube"));
       playSound("wrong");
       return;
     }
@@ -253,11 +199,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       id: `vid-${Date.now()}`,
       youtubeId: extractedId,
       title: vidTitle || "Grammar Video Lesson",
-      titleAr: vidTitleAr || "فيديو شرح تعليمي",
+      titleAr: vidTitleAr || t("admin.defaultVideoTitleAr"),
       channelName: vidChannel || "BBC Learning English",
       duration: vidDuration || "10:00",
       thumbnailUrl: `https://img.youtube.com/vi/${extractedId}/hqdefault.jpg`,
-      descriptionAr: "فيديو تعليمي تم التحقق من سلامة تضمينه وصلاحيته للطلاب.",
+      descriptionAr: t("admin.defaultVideoDescAr"),
       topicKey: vidTopic,
     };
 
@@ -297,13 +243,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            لوحة المعلم وإدارة المناهج والطلاب‍
+            {t('admin.heroTitle')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            من هنا يستطيع المدرسون والمشرفون الأكاديميون إضافة كورسات ودروس
-            جديدة، صياغة القواعد والكويزات، تعيين الواجبات المنزلية، ومتابعة
-            درجات ونسب إنجاز الطلاب.
+            {t('admin.heroSub')}
           </p>
 
           {/* Navigation Tabs */}
@@ -319,7 +263,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              إدارة الكورسات ({courses.length})
+              {t('admin.tab.courses')} ({courses.length})
             </button>
 
             <button
@@ -333,7 +277,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              إضافة درس تفاعلي جديد
+              {t('admin.tab.lessons')}
             </button>
 
             <button
@@ -347,7 +291,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              سجل الطلاب والتحليلات ({students.length})
+              {t('admin.tab.students')} ({overview ? overview.counts.users.toLocaleString('en-US') : '—'})
             </button>
 
             <button
@@ -362,7 +306,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Video className="w-4 h-4" />
-              <span>إدارة الفيديوهات والمحتوى المرئي ({videoList.length})</span>
+              <span>{t('admin.tab.videos')} ({videoList.length})</span>
             </button>
 
             <button
@@ -377,7 +321,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Mic className="w-4 h-4" />
-              <span>تقييمات النطق الصوتي ({speakingEvals.length})</span>
+              <span>{t('admin.tab.speaking')} ({speakingEvals.length})</span>
             </button>
 
             <button
@@ -392,7 +336,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Cpu className="w-4 h-4" />
-              <span>إدارة المزودين (Router)</span>
+              <span>{t('admin.tab.ai')}</span>
             </button>
 
             <button
@@ -407,7 +351,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               }`}
             >
               <Volume2 className="w-4 h-4" />
-              <span>محركات الصوت السحابية (Cloud TTS)</span>
+              <span>{t('admin.tab.tts')}</span>
             </button>
           </div>
         </div>
@@ -416,33 +360,33 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
       {/* STATS STRIP */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-          <div className="text-xs text-[#b9b6d5]">إجمالي الطلاب النشطين</div>
+          <div className="text-xs text-[#b9b6d5]">{t('admin.stats.users')}</div>
           <div className="text-2xl font-black text-[#41e7ff]">
-            14,250 طالباً
+            {overview ? overview.counts.users.toLocaleString('en-US') : '—'}
           </div>
-          <div className="text-[11px] text-[#c4ff55]">+180 هذا الأسبوع</div>
+          <div className="text-[11px] text-[#c4ff55]">{overview ? t('admin.stats.newThisWeek').replace('{n}', overview.counts.newUsers.toLocaleString('en-US')) : t('admin.overview.loading')}</div>
         </div>
 
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-          <div className="text-xs text-[#b9b6d5]">الكورسات المفعلة</div>
+          <div className="text-xs text-[#b9b6d5]">{t('admin.stats.courses')}</div>
           <div className="text-2xl font-black text-[#ffd166]">
-            {courses.length} كورسات
+            {courses.length.toLocaleString('en-US')}
           </div>
           <div className="text-[11px] text-[#b9b6d5]">
-            تشمل كورس المستقبل التام
+            {t('admin.stats.coursesSub')}
           </div>
         </div>
 
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-          <div className="text-xs text-[#b9b6d5]">معدل إتمام الدروس</div>
-          <div className="text-2xl font-black text-[#c4ff55]">88.4%</div>
-          <div className="text-[11px] text-[#b9b6d5]">معدل ممتاز قياسياً</div>
+          <div className="text-xs text-[#b9b6d5]">{t('admin.stats.sessions')}</div>
+          <div className="text-2xl font-black text-[#c4ff55]">{overview ? overview.counts.sessions.toLocaleString('en-US') : '—'}</div>
+          <div className="text-[11px] text-[#b9b6d5]">{t('admin.stats.sessionsSub')}</div>
         </div>
 
         <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-          <div className="text-xs text-[#b9b6d5]">الكويزات المكتملة</div>
-          <div className="text-2xl font-black text-[#ff8bb9]">34,910 كويز</div>
-          <div className="text-[11px] text-[#b9b6d5]">متوسط الدقة 91%</div>
+          <div className="text-xs text-[#b9b6d5]">{t('admin.stats.progress')}</div>
+          <div className="text-2xl font-black text-[#ff8bb9]">{overview ? overview.counts.progress.toLocaleString('en-US') : '—'}</div>
+          <div className="text-[11px] text-[#b9b6d5]">{t('admin.stats.progressSub')}</div>
         </div>
       </div>
 
@@ -467,7 +411,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     required
                     value={newTitle}
                     onChange={(e) => setNewTitle(e.target.value)}
-                    placeholder="مثال: أسرار إتقان أزمنة الماضي"
+                    placeholder={t('admin.phCourseTitle')}
                     className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#ffd166]"
                   />
                 </div>
@@ -498,10 +442,9 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     onChange={(e) => setNewLevel(e.target.value as any)}
                     className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#ffd166]"
                   >
-                    <option value="مبتدئ">مبتدئ (A1-A2)</option>
-                    <option value="متوسط">متوسط (B1-B2)</option>
-                    <option value="متقدم">متقدم (C1-C2)</option>
-                    <option value="شامل">شامل كافة المستويات</option>
+                    {COURSE_LEVEL_OPTIONS.map(([value, key]) => (
+                      <option key={value} value={value}>{t(key)}</option>
+                    ))}
                   </select>
                 </div>
 
@@ -513,7 +456,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     type="text"
                     value={newDesc}
                     onChange={(e) => setNewDesc(e.target.value)}
-                    placeholder="ما الذي سيتعلمه الطالب في هذا الكورس؟"
+                    placeholder={t('admin.phCourseOutcomes')}
                     className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#ffd166]"
                   />
                 </div>
@@ -524,7 +467,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
               >
                 <Plus className="w-4 h-4" />
-                <span>حفظ ونشر الكورس في المنصة</span>
+                <span>{t('admin.saveCourse')}</span>
               </button>
 
               {formSaved && (
@@ -578,14 +521,14 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                         )
                       }
                       className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-white cursor-pointer"
-                      title="معاينة الكورس"
+                      title={t('admin.previewCourse')}
                     >
                       <Eye className="w-4 h-4" />
                     </button>
                     <button
                       onClick={() => handleDeleteCourse(c.id)}
                       className="p-2 rounded-xl bg-[#ff4f9a]/10 hover:bg-[#ff4f9a]/20 text-[#ff4f9a] cursor-pointer"
-                      title="حذف الكورس"
+                      title={t('admin.deleteCourse')}
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>
@@ -622,7 +565,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   required
                   value={lessonTitle}
                   onChange={(e) => setLessonTitle(e.target.value)}
-                  placeholder="مثال: صيغ المقارنة والتفضيل"
+                  placeholder={t('admin.phLessonTitle')}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#41e7ff]"
                 />
               </div>
@@ -651,11 +594,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   onChange={(e) => setLessonLevel(e.target.value as any)}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#41e7ff]"
                 >
-                  <option value="A1">A1 - مبتدئ</option>
-                  <option value="A2">A2 - أساسي</option>
-                  <option value="B1">B1 - متوسط</option>
-                  <option value="B2">B2 - فوق المتوسط</option>
-                  <option value="C1">C1 - متقدم</option>
+                  <option value="A1">{t('admin.cefr.a1')}</option>
+                  <option value="A2">{t('admin.cefr.a2')}</option>
+                  <option value="B1">{t('admin.cefr.b1')}</option>
+                  <option value="B2">{t('admin.cefr.b2')}</option>
+                  <option value="C1">{t('admin.cefr.c1')}</option>
                 </select>
               </div>
             </div>
@@ -668,7 +611,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 rows={3}
                 value={lessonDesc}
                 onChange={(e) => setLessonDesc(e.target.value)}
-                placeholder="اشرح الفكرة الأساسية للدرس بأسلوب مبسط..."
+                placeholder={t('admin.phLessonExpl')}
                 className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#41e7ff]"
               />
             </div>
@@ -681,7 +624,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 rows={4}
                 value={lessonExplanation}
                 onChange={(e) => setLessonExplanation(e.target.value)}
-                placeholder="اكتب توضيحاتك والأفخاخ النحوية التي يجب على الطالب الانتباه إليها..."
+                placeholder={t('admin.phLessonNotes')}
                 className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#41e7ff]"
               />
             </div>
@@ -694,7 +637,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   onChange={(e) => setIsPublished(e.target.checked)}
                   className="w-4 h-4 rounded accent-[#41e7ff]"
                 />
-                <span>نشر الدرس فوراً في الأكاديمية (Published)</span>
+                <span>{t('admin.publishNow')}</span>
               </label>
 
               <button
@@ -702,14 +645,13 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 className="px-8 py-3 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
               >
                 <Save className="w-4 h-4" />
-                <span>حفظ الدرس في قاعدة البيانات</span>
+                <span>{t('admin.saveLesson')}</span>
               </button>
             </div>
 
             {lessonSaved && (
               <div className="p-4 rounded-2xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] text-xs font-bold">
-               تم حفظ الدرس وإضافته إلى المنهج بنجاح! يمكن للطلاب دراسته
-                الآن.
+                {t('admin.lessonSaved')}
               </div>
             )}
           </form>
@@ -723,10 +665,10 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
             <div>
               <h2 className="text-xl font-black text-white flex items-center gap-2">
                 <Users className="w-5 h-5 text-[#c4ff55]" />
-                سجل تقدم الطلاب والتقييمات
+                {t('admin.students.title')}
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                متابعة دورية لإنجاز الدروس ودرجات الكويزات
+                {t('admin.students.desc')}
               </p>
             </div>
           </div>
@@ -735,45 +677,32 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
             <table className="w-full text-right text-xs sm:text-sm">
               <thead>
                 <tr className="border-b border-white/10 text-[#b9b6d5]">
-                  <th className="py-3 px-4">اسم الطالب</th>
-                  <th className="py-3 px-4">البريد الإلكتروني</th>
-                  <th className="py-3 px-4">المستوى الحالي</th>
-                  <th className="py-3 px-4">نسبة الإنجاز</th>
-                  <th className="py-3 px-4">كويزات ناجحة</th>
-                  <th className="py-3 px-4">الحالة</th>
+                  <th className="py-3 px-4">{t('admin.th.name')}</th>
+                  <th className="py-3 px-4">{t('admin.th.email')}</th>
+                  <th className="py-3 px-4">{t('admin.th.joined')}</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5 text-white">
-                {students.map((std) => (
+                {overviewState === 'loading' && (
+                  <tr><td colSpan={3} className="py-6 px-4 text-center text-[#b9b6d5]">{t('admin.overview.loading')}</td></tr>
+                )}
+                {overviewState === 'unavailable' && (
+                  <tr><td colSpan={3} className="py-6 px-4 text-center text-[#b9b6d5]">{t('admin.overview.unavailable')}</td></tr>
+                )}
+                {overviewState === 'ready' && overview && overview.recentUsers.length === 0 && (
+                  <tr><td colSpan={3} className="py-6 px-4 text-center text-[#b9b6d5]">{t('admin.students.empty')}</td></tr>
+                )}
+                {overviewState === 'ready' && overview?.recentUsers.map((u) => (
                   <tr
-                    key={std.id}
+                    key={u.email + u.createdAt}
                     className="hover:bg-white/5 transition-colors"
                   >
-                    <td className="py-3.5 px-4 font-bold">{std.name}</td>
-                    <td className="py-3.5 px-4 text-[#b9b6d5] font-mono text-xs">
-                      {std.email}
+                    <td className="py-3.5 px-4 font-bold">{u.name}</td>
+                    <td dir="ltr" className="py-3.5 px-4 text-[#b9b6d5] font-mono text-xs text-right">
+                      {u.email}
                     </td>
-                    <td className="py-3.5 px-4 font-black text-[#ffd166]">
-                      {std.level}
-                    </td>
-                    <td className="py-3.5 px-4 font-mono">
-                      <div className="flex items-center gap-2">
-                        <div className="w-20 bg-black/40 h-2 rounded-full overflow-hidden">
-                          <div
-                            className="bg-[#41e7ff] h-full"
-                            style={{ width: `${std.progress}%` }}
-                          />
-                        </div>
-                        <span className="text-xs">{std.progress}%</span>
-                      </div>
-                    </td>
-                    <td className="py-3.5 px-4 font-mono">
-                      {std.quizzesPassed}
-                    </td>
-                    <td className="py-3.5 px-4">
-                      <span className="px-2 py-0.5 rounded text-[11px] font-black bg-white/5 border border-white/10 text-[#c4ff55]">
-                        {std.status}
-                      </span>
+                    <td className="py-3.5 px-4 font-mono text-xs text-[#b9b6d5]">
+                      {new Date(u.createdAt).toLocaleDateString('en-GB')}
                     </td>
                   </tr>
                 ))}
@@ -790,10 +719,10 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
           <div className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-5">
             <h2 className="text-lg font-black text-white flex items-center gap-2">
               <Plus className="w-5 h-5 text-[#ff8bb9]" />
-              إضافة وتدقيق فيديو تعليمي جديد لمنهج الأكاديمية
+              {t('admin.videoFormTitle')}
             </h2>
             <p className="text-xs text-[#b9b6d5]">
-              نظام التحقق الآلي من روابط يوتيوب وضمان التضمين الرسمي من مصادر موثوقة (BBC, Oxford).
+              {t('admin.videoFormDesc')}
             </p>
 
             <form onSubmit={handleAddVideo} className="space-y-4">
@@ -807,17 +736,17 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     onChange={(e) => setVidTopic(e.target.value)}
                     className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#ff8bb9]"
                   >
-                    <option value="future-perfect">المستقبل التام (Future Perfect)</option>
-                    <option value="present-simple">المضارع البسيط (Present Simple)</option>
-                    <option value="present-continuous">المضارع المستمر (Present Continuous)</option>
-                    <option value="present-perfect">المضارع التام (Present Perfect)</option>
-                    <option value="past-simple">الماضي البسيط (Past Simple)</option>
-                    <option value="past-continuous">الماضي المستمر (Past Continuous)</option>
-                    <option value="past-perfect">الماضي التام (Past Perfect)</option>
-                    <option value="conditionals">الحالات الشرطية (Conditionals)</option>
-                    <option value="passive-voice">المبني للمجهول (Passive Voice)</option>
-                    <option value="reported-speech">الكلام المنقول (Reported Speech)</option>
-                    <option value="modals">الأفعال الناقصة (Modal Verbs)</option>
+                    <option value="future-perfect">{t('admin.topic.futurePerfect')}</option>
+                    <option value="present-simple">{t('admin.topic.presentSimple')}</option>
+                    <option value="present-continuous">{t('admin.topic.presentContinuous')}</option>
+                    <option value="present-perfect">{t('admin.topic.presentPerfect')}</option>
+                    <option value="past-simple">{t('admin.topic.pastSimple')}</option>
+                    <option value="past-continuous">{t('admin.topic.pastContinuous')}</option>
+                    <option value="past-perfect">{t('admin.topic.pastPerfect')}</option>
+                    <option value="conditionals">{t('admin.topic.conditionals')}</option>
+                    <option value="passive-voice">{t('admin.topic.passiveVoice')}</option>
+                    <option value="reported-speech">{t('admin.topic.reportedSpeech')}</option>
+                    <option value="modals">{t('admin.topic.modalVerbs')}</option>
                   </select>
                 </div>
 
@@ -831,7 +760,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     required
                     value={vidUrl}
                     onChange={(e) => setVidUrl(e.target.value)}
-                    placeholder="https://www.youtube.com/watch?v=OsW5sV3GMDM أو OsW5sV3GMDM"
+                    placeholder={t('admin.phYouTubeUrl')}
                     className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#ff8bb9] font-mono"
                   />
                   {vidUrl && (
@@ -875,7 +804,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                     required
                     value={vidTitleAr}
                     onChange={(e) => setVidTitleAr(e.target.value)}
-                    placeholder="مثال: حلقة مسابقة القواعد الشهيرة مع BBC"
+                    placeholder={t('admin.phVideoTitle')}
                     className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#ff8bb9]"
                   />
                 </div>
@@ -926,7 +855,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ff8bb9] to-[#ffd166] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center gap-2"
               >
                 <Plus className="w-4 h-4" />
-                <span>إضافة الفيديو للمنهج</span>
+                <span>{t('admin.addVideo')}</span>
               </button>
             </form>
           </div>
@@ -938,7 +867,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                 <div>
                   <h3 className="text-base font-black text-white flex items-center gap-2">
                     <Play className="w-4 h-4 text-[#ff8bb9]" />
-                    معاينة المشغل التفاعلي: {previewVideo.titleAr}
+                    {t('admin.previewPlayer')} التفاعلي: {previewVideo.titleAr}
                   </h3>
                   <p className="text-xs text-[#b9b6d5] font-mono">
                     YouTube ID: {previewVideo.youtubeId} • {previewVideo.channelName}
@@ -1012,7 +941,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                       className="px-3 py-1.5 rounded-xl bg-[#ff8bb9]/20 hover:bg-[#ff8bb9]/30 text-[#ff8bb9] text-xs font-bold cursor-pointer flex items-center gap-1.5"
                     >
                       <Play className="w-3.5 h-3.5" />
-                      <span>معاينة المشغل</span>
+                      <span>{t('admin.previewPlayer')}</span>
                     </button>
 
                     <div className="flex items-center gap-2">
@@ -1021,14 +950,14 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff]"
-                        title="فتح على موقع يوتيوب"
+                        title={t('admin.openOnYouTube')}
                       >
                         <ExternalLink className="w-4 h-4" />
                       </a>
                       <button
                         onClick={() => handleDeleteVideo(vid.id)}
                         className="p-1.5 rounded-lg bg-[#ff4f9a]/10 hover:bg-[#ff4f9a]/25 text-[#ff4f9a] cursor-pointer"
-                        title="حذف من المنظومة"
+                        title={t('admin.removeFromSystem')}
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
@@ -1059,13 +988,13 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
               onClick={handleClearSpeakingEvals}
               className="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-white border border-white/10 text-xs font-bold cursor-pointer"
             >
-              مسح السجل المؤقت
+              {t('admin.speaking.clearLog')}
             </button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <span className="text-xs text-[#b9b6d5]">متوسط دقة النطق الصوتي</span>
+              <span className="text-xs text-[#b9b6d5]">{t('admin.speaking.avgPron')}</span>
               <div className="text-2xl font-black text-[#c4ff55]">
                 {speakingEvals.length > 0
                   ? Math.round(
@@ -1075,11 +1004,11 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                   : 0}
                 %
               </div>
-              <span className="text-[11px] text-[#dedbf4]">معدل متقدم للطلاب</span>
+              <span className="text-[11px] text-[#dedbf4]">{t('admin.speaking.fromRecorded')}</span>
             </div>
 
             <div className="p-4 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <span className="text-xs text-[#b9b6d5]">متوسط سرعة الإلقاء (WPM)</span>
+              <span className="text-xs text-[#b9b6d5]">{t('admin.speaking.avgWpm')}</span>
               <div className="text-2xl font-black text-[#41e7ff]">
                 {speakingEvals.length > 0
                   ? Math.round(
@@ -1087,20 +1016,25 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                         speakingEvals.length
                     )
                   : 0}{" "}
-                كلمة/دقيقة
+                {t('admin.speaking.wpmUnit')}
               </div>
-              <span className="text-[11px] text-[#dedbf4]">ضمن النطاق الطبيعي (110 - 150)</span>
+              <span className="text-[11px] text-[#dedbf4]">{t('admin.speaking.wpmRange')}</span>
             </div>
 
             <div className="p-4 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <span className="text-xs text-[#b9b6d5]">إجمالي جلسات التدريب</span>
+              <span className="text-xs text-[#b9b6d5]">{t('admin.speaking.total')}</span>
               <div className="text-2xl font-black text-[#ffd166]">
-                {speakingEvals.length} جلسة
+                {t('admin.speaking.sessions').replace('{n}', String(speakingEvals.length))}
               </div>
-              <span className="text-[11px] text-[#dedbf4]">تسجيل ميكروفون حقيقي</span>
+              <span className="text-[11px] text-[#dedbf4]">{t('admin.speaking.realMic')}</span>
             </div>
           </div>
 
+          {speakingEvals.length === 0 && (
+            <div className="p-8 rounded-2xl border border-dashed border-white/15 text-center text-sm text-[#b9b6d5]">
+              {t('admin.speaking.empty')}
+            </div>
+          )}
           <div className="space-y-4">
             {speakingEvals.map((ev) => (
               <div
@@ -1120,7 +1054,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
                       <button
                         onClick={() => speakEnglish(ev.targetSentence)}
                         className="text-[#41e7ff] hover:text-white"
-                        title="استمع للجملة المستهدفة"
+                        title={t('admin.listenTarget')}
                       >
                         <Volume2 className="w-3.5 h-3.5" />
                       </button>
@@ -1129,7 +1063,7 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                   <div className="flex items-center gap-3">
                     <div className="text-center">
-                      <span className="text-[10px] text-[#b9b6d5] block">النتيجة العامة</span>
+                      <span className="text-[10px] text-[#b9b6d5] block">{t('admin.speaking.overall')}</span>
                       <span
                         className={`text-xl font-black ${
                           ev.overallScore >= 85
@@ -1147,26 +1081,26 @@ export const AdminDashboardPage: React.FC<AdminDashboardPageProps> = ({
 
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-white/5 text-center text-xs">
                   <div className="p-2 rounded-xl bg-white/5">
-                    <span className="text-[10px] text-[#b9b6d5] block">النطق</span>
+                    <span className="text-[10px] text-[#b9b6d5] block">{t('admin.speaking.pron')}</span>
                     <span className="font-bold text-white">{ev.scores.pronunciation}%</span>
                   </div>
                   <div className="p-2 rounded-xl bg-white/5">
-                    <span className="text-[10px] text-[#b9b6d5] block">الطلاقة</span>
+                    <span className="text-[10px] text-[#b9b6d5] block">{t('admin.speaking.fluency')}</span>
                     <span className="font-bold text-[#41e7ff]">{ev.scores.fluency}%</span>
                   </div>
                   <div className="p-2 rounded-xl bg-white/5">
-                    <span className="text-[10px] text-[#b9b6d5] block">الدقة</span>
+                    <span className="text-[10px] text-[#b9b6d5] block">{t('admin.speaking.accuracy')}</span>
                     <span className="font-bold text-[#ffd166]">{ev.scores.accuracy}%</span>
                   </div>
                   <div className="p-2 rounded-xl bg-white/5">
-                    <span className="text-[10px] text-[#b9b6d5] block">الاكتمال</span>
+                    <span className="text-[10px] text-[#b9b6d5] block">{t('admin.speaking.completeness')}</span>
                     <span className="font-bold text-[#c4ff55]">{ev.scores.completeness}%</span>
                   </div>
                 </div>
 
                 {ev.phoneticTipAr && (
                   <div className="p-3 rounded-xl bg-[#9b7bff]/15 border border-[#9b7bff]/30 text-xs text-[#dedbf4]">
-                   <strong className="text-[#9b7bff]">ملاحظة صوتية للمتعلم: </strong>
+                   <strong className="text-[#9b7bff]">{t('admin.speaking.tip')} </strong>
                     {ev.phoneticTipAr}
                   </div>
                 )}
