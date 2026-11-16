@@ -19,6 +19,7 @@ import {
   X,
 } from 'lucide-react';
 import { ExpressionEntry, loadExpressions } from '../../services/vocabularyService';
+import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
 import { speakEnglishVoice } from '../../utils/audio';
 import { playSound } from '../../utils/audio';
 
@@ -33,6 +34,7 @@ const CATEGORIES = [
 ];
 
 export const ExpressionsTab: React.FC = () => {
+  const txMap = useContentMap('expressions');
   const [expressions, setExpressions] = useState<ExpressionEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -212,7 +214,7 @@ export const ExpressionsTab: React.FC = () => {
                     {item.expression}
                   </h3>
                   <p className="text-sm font-black text-[#c4ff55]">
-                    {item.meaningAr}
+                    {txMeaning(txMap, item.id, item.meaningAr)}
                   </p>
                 </div>
 
@@ -228,7 +230,7 @@ export const ExpressionsTab: React.FC = () => {
                       "{item.exampleEn}"
                     </p>
                     <p className="text-white/60 text-[11px]">
-                      {item.exampleAr}
+                      {txExample(txMap, item.id, item.exampleAr)}
                     </p>
                   </div>
                 )}
