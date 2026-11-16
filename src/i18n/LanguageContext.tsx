@@ -16,14 +16,14 @@ const STATIC: Record<string, Messages> = {
   en: enMessages as Messages,
 };
 
-const loaders = import.meta.glob<Messages>('./locales/*.json', { eager: false, import: 'default' });
 
 async function loadMessages(code: string): Promise<Messages | null> {
   if (STATIC[code]) return STATIC[code];
-  const loader = loaders[`./locales/${code}.json`];
-  if (!loader) return null;
+  if (!/^[a-z]{2,3}(-[A-Za-z]{2,4})?$/.test(code)) return null;
   try {
-    return (await loader()) as Messages;
+    // webpack builds a context module for ./locales/*.json, so every locale file becomes its own lazy chunk.
+    const mod = await import(`./locales/${code}.json`);
+    return (mod.default ?? mod) as Messages;
   } catch {
     return null;
   }
