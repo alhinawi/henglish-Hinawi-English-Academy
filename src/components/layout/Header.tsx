@@ -1,4 +1,5 @@
 import { useLanguage } from '../../i18n/LanguageContext';
+import { AvatarImg } from '../AvatarImg';
 import React, { useState, useRef, useEffect } from 'react';
 import { PageRoute, UserProfile, AppNotification } from '../../types';
 import { playSound } from '../../utils/audio';
@@ -508,9 +509,10 @@ export const Header: React.FC<HeaderProps> = ({
               </span>
             ) : (
               <>
-                <img
+                <AvatarImg
                   src={userProfile.avatar}
                   alt={userProfile.name}
+                  name={userProfile.name}
                   className="w-7 h-7 rounded-lg object-cover border border-[#ffd166]/40"
                 />
                 <div className="hidden lg:flex flex-col text-right">
@@ -567,9 +569,10 @@ export const Header: React.FC<HeaderProps> = ({
                 </div>
               ) : (
                 <div className="flex items-center gap-3 pb-3 border-b border-white/10">
-                  <img
+                  <AvatarImg
                     src={userProfile.avatar}
                     alt={userProfile.name}
+                    name={userProfile.name}
                     className="w-11 h-11 rounded-xl object-cover border-2 border-[#ffd166]"
                   />
                   <div className="min-w-0">
@@ -729,9 +732,10 @@ export const Header: React.FC<HeaderProps> = ({
             >
               <div className="flex items-start justify-between">
                 <div className="flex items-center gap-3.5">
-                  <img
+                  <AvatarImg
                     src={userProfile.avatar}
                     alt={userProfile.name}
+                    name={userProfile.name}
                     className="w-14 h-14 rounded-2xl object-cover border-2 border-[#ffd166] shadow-lg"
                   />
                   <div className="min-w-0">

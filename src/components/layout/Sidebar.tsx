@@ -2,6 +2,7 @@ import React from 'react';
 import { PageRoute, CEFRLevel, UserRole, UserProfile } from '../../types';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { Logo } from '../Logo';
+import { AvatarImg } from '../AvatarImg';
 
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ALL_GRAMMAR_RULES } from '../../data/allGrammarRules';
@@ -820,9 +821,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
             aria-haspopup="dialog"
             aria-expanded={profileMenuOpen}
           >
-            <img
+            <AvatarImg
               src={userProfile.avatar}
               alt={userProfile.name}
+              name={userProfile.name}
               className="w-9 h-9 rounded-xl object-cover border border-[#ffd166]/40 shrink-0"
             />
             <div className="min-w-0 flex-1" style={{ textAlign: 'start' }}>
