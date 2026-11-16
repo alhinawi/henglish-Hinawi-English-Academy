@@ -53,6 +53,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   const [saved, setSaved] = useState(false);
   const [saveError, setSaveError] = useState(false);
   const [userNote, setUserNote] = useState('');
+  const [persistedNote, setPersistedNote] = useState('');
+  const [noteSaved, setNoteSaved] = useState(false);
   const txMap = useContentMap('vocab');
   const shownMeaning = entry ? txMeaning(txMap, entry.id, entry.meaningAr) : '';
   const shownExample = entry ? txExample(txMap, entry.id, entry.exampleAr) : '';
@@ -65,6 +67,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
       const savedItems = getSavedWords();
       const current = savedItems.find(w => w.word.toLowerCase() === entry.headword.toLowerCase());
       setUserNote(current?.notes || '');
+      setPersistedNote(current?.notes || '');
+      setNoteSaved(false);
     }
   }, [entry, isOpen]);
 
@@ -90,16 +94,28 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
     return () => { document.removeEventListener('keydown', trap); if (opener?.isConnected) opener.focus(); };
   }, [isOpen, entry?.id]);
 
+  const requestClose = () => {
+    if (userNote !== persistedNote && !window.confirm(t('wdm.discardNote'))) return;
+    onClose();
+  };
+
+  useEffect(() => {
+    if (!isOpen || userNote === persistedNote) return;
+    const warn = (event: BeforeUnloadEvent) => { event.preventDefault(); event.returnValue = ''; };
+    window.addEventListener('beforeunload', warn);
+    return () => window.removeEventListener('beforeunload', warn);
+  }, [isOpen, userNote, persistedNote]);
+
   // Handle Escape key to close
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && isOpen) {
-        onClose();
+        requestClose();
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isOpen, onClose]);
+  }, [isOpen, onClose, userNote, persistedNote, t]);
 
   if (!isOpen || !entry) return null;
 
@@ -112,6 +128,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         setSaved(false);
       } else {
         saveWord(entry, userNote);
+        setPersistedNote(userNote);
+        setNoteSaved(true);
         setSaved(true);
         playSound('success');
       }
@@ -123,6 +141,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
     setSaveError(false);
     try {
       saveWord(entry, userNote);
+      setPersistedNote(userNote);
+      setNoteSaved(true);
       setSaved(true);
       playSound('success');
       if (onWordSavedChange) onWordSavedChange();
@@ -145,7 +165,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         {/* Top bar */}
         <div className="flex items-center justify-between pb-4 border-b border-white/10">
           <button
-            onClick={onClose}
+            onClick={requestClose}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all cursor-pointer"
             title={t('wdm.close')}
           >
@@ -321,21 +341,23 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
             <Brain className="w-3.5 h-3.5" />
             <span>{t('wdm.notes')}</span>
           </h4>
-          <div className="flex gap-2">
+          <form onSubmit={e => { e.preventDefault(); handleSaveNote(); }} className="flex gap-2">
             <input
               type="text"
               value={userNote}
-              onChange={e => setUserNote(e.target.value)}
+              onChange={e => { setUserNote(e.target.value); setNoteSaved(false); setSaveError(false); }}
               placeholder={t('wdm.placeholder')}
               className="min-w-0 flex-1 px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-xs focus:outline-none focus:border-[#ffd166]"
             />
             <button
-              onClick={handleSaveNote}
+              type="submit"
               className="px-4 py-2 rounded-xl bg-[#ffd166] text-[#09091a] text-xs font-black hover:bg-[#ffe18d] transition-all cursor-pointer"
             >
               {t('wdm.saveNote')}
             </button>
-          </div>
+          </form>
+          {userNote !== persistedNote && <p role="status" className="text-xs text-amber-200">{t('wdm.noteUnsaved')}</p>}
+          {noteSaved && userNote === persistedNote && <p role="status" className="text-xs text-emerald-300">{t('wdm.noteSaved')}</p>}
         </div>
       </div>
     </div>

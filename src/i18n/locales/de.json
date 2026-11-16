@@ -2827,5 +2827,8 @@
   "vocab.saveError": "Die Änderung konnte auf diesem Gerät nicht gespeichert werden. Erlaube das Speichern und versuche es erneut. Deine bisherigen Daten wurden nicht geändert.",
   "ex.loadError": "Die Ausdrücke konnten nicht geladen werden. Dies ist ein Ladefehler, kein leeres Suchergebnis. Versuche es erneut.",
   "ex.retry": "Erneut versuchen",
-  "vx.loadError": "Die Wortbibliothek wurde nicht vollständig geladen. Die Ergebnisse enthalten nur bereits geladene Wörter. Versuche es erneut, um den Rest zu laden."
+  "vx.loadError": "Die Wortbibliothek wurde nicht vollständig geladen. Die Ergebnisse enthalten nur bereits geladene Wörter. Versuche es erneut, um den Rest zu laden.",
+  "wdm.discardNote": "Deine Notiz enthält ungespeicherte Änderungen. Ohne Speichern schließen?",
+  "wdm.noteUnsaved": "Deine Notiz enthält ungespeicherte Änderungen.",
+  "wdm.noteSaved": "Notiz auf diesem Gerät gespeichert."
 }
