@@ -15,6 +15,8 @@ export type PageRoute =
   | 'idioms'
   | 'slang'
   | 'genz'
+  | 'ielts'
+  | 'toefl'
   | 'speaking'
   | 'listening'
   | 'reading'

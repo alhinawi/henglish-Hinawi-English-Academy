@@ -1,12 +1,39 @@
 {
   "exam": "toefl",
   "idPrefix": "toefl-v",
-  "totalEntries": 0,
+  "totalEntries": 500,
   "chunkSize": 500,
-  "chunks": [],
+  "chunks": [
+    "tf000001-000500.json"
+  ],
   "counts": {
-    "byLevel": {},
-    "byPos": {},
-    "byTopic": {}
+    "byLevel": {
+      "B1": 500
+    },
+    "byPos": {
+      "noun": 191,
+      "verb": 190,
+      "adjective": 107,
+      "preposition": 2,
+      "adverb": 9,
+      "conjunction": 1
+    },
+    "byTopic": {
+      "science": 85,
+      "campus life": 102,
+      "environment": 48,
+      "health": 33,
+      "literature": 8,
+      "geology": 27,
+      "astronomy": 7,
+      "biology": 41,
+      "economics": 37,
+      "sociology": 32,
+      "psychology": 18,
+      "history": 15,
+      "technology": 30,
+      "archaeology": 7,
+      "art": 10
+    }
   }
 }

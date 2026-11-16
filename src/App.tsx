@@ -28,6 +28,7 @@ const GrammarAcademyPage = lazy(() => import('./views/GrammarAcademyPage').then(
 const GrammarLessonPage = lazy(() => import('./views/GrammarLessonPage').then(m => ({ default: m.GrammarLessonPage })));
 const VocabularyAcademyPage = lazy(() => import('./views/VocabularyAcademyPage').then(m => ({ default: m.VocabularyAcademyPage })));
 const PhraseBankPage = lazy(() => import('./views/PhraseBankPage').then(m => ({ default: m.PhraseBankPage })));
+const ExamVocabPage = lazy(() => import('./views/ExamVocabPage').then(m => ({ default: m.ExamVocabPage })));
 const SpeakingAcademyPage = lazy(() => import('./views/SpeakingAcademyPage').then(m => ({ default: m.SpeakingAcademyPage })));
 const ListeningAcademyPage = lazy(() => import('./views/ListeningAcademyPage').then(m => ({ default: m.ListeningAcademyPage })));
 const ReadingAcademyPage = lazy(() => import('./views/ReadingAcademyPage').then(m => ({ default: m.ReadingAcademyPage })));
@@ -186,12 +187,16 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('courses/grammar/future-perfect');
       } else if (hash === 'vocabulary') {
         setCurrentRoute('vocabulary');
-      } else if (hash === 'idioms') {
+      } else if (hash === 'idioms' || hash.startsWith('idioms/')) {
         setCurrentRoute('idioms');
-      } else if (hash === 'slang') {
+      } else if (hash === 'slang' || hash.startsWith('slang/')) {
         setCurrentRoute('slang');
-      } else if (hash === 'genz' || hash === 'gen-z') {
+      } else if (hash === 'genz' || hash === 'gen-z' || hash.startsWith('genz/')) {
         setCurrentRoute('genz');
+      } else if (hash === 'ielts') {
+        setCurrentRoute('ielts');
+      } else if (hash === 'toefl') {
+        setCurrentRoute('toefl');
       } else if (hash === 'speaking') {
         setCurrentRoute('speaking');
       } else if (hash === 'listening') {
@@ -440,6 +445,12 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 )}
                 {currentRoute === 'genz' && (
                   <PhraseBankPage bank="genz" />
+                )}
+                {currentRoute === 'ielts' && (
+                  <ExamVocabPage exam="ielts" />
+                )}
+                {currentRoute === 'toefl' && (
+                  <ExamVocabPage exam="toefl" />
                 )}
 
                 {/* 8. Speaking Academy */}

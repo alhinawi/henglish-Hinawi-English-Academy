@@ -1,7 +1,7 @@
 import { ThemePicker } from './ThemePicker';
 import { useLanguage } from '../i18n/LanguageContext';
 import { LANGUAGES } from '../i18n/languages';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { X, Camera, Save } from 'lucide-react';
 import { UserProfile } from '../types';
 import { ANONYMOUS_AVATAR } from '../services/authService';
@@ -18,6 +18,14 @@ interface SettingsModalProps {
 // Compact account settings: profile picture (upload or clear back to the
 // neutral placeholder) and display name. Saves through the accounts API.
 export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, accessToken, onClose, onSaved }) => {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
   const { lang, setLang, t } = useLanguage();
   const [name, setName] = useState(userProfile.nameAr || userProfile.name);
   const [avatar, setAvatar] = useState<string | null>(userProfile.avatar);
