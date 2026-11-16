@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageRoute, CEFRLevel, UserRole } from '../../types';
 import { useLanguage } from '../../i18n/LanguageContext';
+import { Logo } from '../Logo';
 
 // Maps the hardcoded Arabic nav labels to i18n keys (labels stay as fallback).
 const NAV_LABEL_KEYS: Record<string, string> = {
@@ -493,7 +494,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         {/* Top controls row - the logo lives in the site header only
             (Hinawi 7:01: one logo, no duplicate in the sidebar). */}
         {(!isCollapsed || isMobileDrawer) && (
-          <div className="h-14 flex items-center justify-end px-4 border-b border-white/10">
+          <div className={`h-14 flex items-center ${isMobileDrawer ? 'justify-end' : 'justify-between'} px-4 border-b border-white/10`}>
             {isMobileDrawer ? (
               <button
                 onClick={onCloseMobile}
@@ -503,6 +504,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <X className="w-5 h-5" />
               </button>
             ) : (
+              <>
+              <button
+                onClick={() => handleNav('dashboard')}
+                className="cursor-pointer shrink-0"
+                aria-label={t('sidebar.brandHome')}
+                title={t('sidebar.brandHome')}
+              >
+                <Logo size="sm" />
+              </button>
               <button
                 onClick={onToggleCollapse}
                 className="p-1.5 rounded-lg text-[#b9b6d5] hover:text-[#41e7ff] hover:bg-white/5 cursor-pointer transition-all hidden md:flex"
@@ -511,6 +521,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               >
                 <ChevronRight className="w-4 h-4" />
               </button>
+              </>
             )}
           </div>
         )}
@@ -519,6 +530,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
             the screen edge, fully tappable in RTL and LTR. The desktop rail
             sits on the right, so expansion grows leftward. */}
         {!isMobileDrawer && isCollapsed && (
+          <>
+          <button
+            onClick={() => handleNav('dashboard')}
+            className="mx-auto mt-3 block cursor-pointer"
+            aria-label={t('sidebar.brandHome')}
+            title={t('sidebar.brandHome')}
+          >
+            <img
+              src="/logo-clean.png"
+              alt="Henglish"
+              width={36}
+              height={36}
+              className="w-9 h-9 object-contain filter drop-shadow-[0_0_10px_rgba(255,209,102,0.45)]"
+            />
+          </button>
           <button
             onClick={onToggleCollapse}
             className="mx-2.5 mt-2.5 p-1.5 rounded-lg bg-[#171632] border border-white/15 text-[#41e7ff] hover:text-white hover:bg-white/10 cursor-pointer transition-colors flex items-center justify-center"
@@ -527,6 +553,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
+          </>
         )}
 
         {/* User Level Strip (when expanded) */}
