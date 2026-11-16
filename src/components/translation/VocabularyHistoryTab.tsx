@@ -3,6 +3,7 @@
 // Searchable history logs, custom decks, SM-2 SRS integration, and reuse
 // ==============================================================================
 
+import { vocabularyCollectionLabel } from '../../services/vocabularyCollectionLabel';
 import React, { useState } from 'react';
 import {
   TranslationHistoryItem,
@@ -376,7 +377,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                   }`}
                 >
                   <span className="w-2 h-2 rounded-full" style={{ backgroundColor: col.color }} />
-                  <span>{col.nameAr}</span>
+                  <span>{vocabularyCollectionLabel(col, t)}</span>
                 </button>
               ))}
             </div>

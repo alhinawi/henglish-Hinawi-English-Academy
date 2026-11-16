@@ -2801,5 +2801,8 @@
   "vie.missing": "Das Video ist gelöscht oder privat und kann nicht importiert werden.",
   "vie.restricted": "Die externe Einbettung ist für dieses Video deaktiviert.",
   "vie.replacement": "Die Einbettung des Ersatzvideos konnte nicht bestätigt werden: {detail}",
-  "vie.unverified": "Die Einbettungserlaubnis konnte nicht bestätigt werden. Der Import bleibt bis zur erfolgreichen Prüfung gesperrt."
+  "vie.unverified": "Die Einbettungserlaubnis konnte nicht bestätigt werden. Der Import bleibt bis zur erfolgreichen Prüfung gesperrt.",
+  "vcl.business": "Englisch im Beruf",
+  "vcl.idioms": "Redewendungen & Phrasal Verbs",
+  "vcl.daily": "Englisch im Alltag"
 }
