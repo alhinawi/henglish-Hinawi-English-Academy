@@ -201,7 +201,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
                   "{currentQ.passage}"
                 </p>
               ) : (
-                <p className="text-right text-xs text-[#b9b6d5]">اضغط على زر تشغيل الصوت واستمع جيداً ثم أجب. يمكنك الإعادة.</p>
+                <p className="text-right text-xs text-[#b9b6d5]">{t('exams.listenHint')}</p>
               )}
             </div>
           )}
