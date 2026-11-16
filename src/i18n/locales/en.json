@@ -2477,5 +2477,20 @@
   "ra.explanation": "Explanation:",
   "ra.questionCount": "Questions: {count}",
   "ra.wordCount": "Words: {count}",
-  "ra.category": "Original teaching text"
+  "ra.category": "Original teaching text",
+  "vs.close": "Close",
+  "vs.title": "Voice settings",
+  "vs.intro": "Choose a voice preset and playback speed. Available playback depends on the speech service or your browser.",
+  "vs.female": "Female voices",
+  "vs.male": "Male voices",
+  "vs.us": "American accent",
+  "vs.uk": "British accent",
+  "vs.selected": "Selected",
+  "vs.stop": "Stop audio",
+  "vs.preview": "Preview this voice preset",
+  "vs.speed": "Speaking speed:",
+  "vs.muted": "Muted",
+  "vs.enabled": "Sound on",
+  "vs.done": "Done",
+  "vs.all": "All voices"
 }
