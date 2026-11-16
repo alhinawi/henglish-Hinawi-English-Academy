@@ -1,0 +1,2760 @@
+[
+ {
+  "id": "q-grm1-012001",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Are there any shops here? No, _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "there don't",
+   "there isn't",
+   "there aren't",
+   "they aren't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: there aren't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012002",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There _____ a boy and a girl at the door.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "be",
+   "are",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: are.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012003",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "There am two cats in the garden.",
+   "It are two cats in the garden.",
+   "There is two cats in the garden.",
+   "There are two cats in the garden."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: There are two cats in the garden..",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012004",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It is a hospital near here.",
+   "There have a hospital near here.",
+   "There are a hospital near here.",
+   "There is a hospital near here."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: There is a hospital near here..",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012005",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Is there a library in your school?",
+   "There is a library in your school?",
+   "Are there a library in your school?",
+   "Does there a library in your school?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: Is there a library in your school?.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012006",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Are there any students in the class?",
+   "There are any students in the class?",
+   "Is there any students in the class?",
+   "Do there any students in the class?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: Are there any students in the class?.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012007",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "There not is a bus today.",
+   "There doesn't a bus today.",
+   "There isn't a bus today.",
+   "There aren't a bus today."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't. الإجابة الصحيحة: There isn't a bus today..",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012008",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"There is two books on the table\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح There are two books لأن two books جمع. there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012009",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"There are some juice in the glass\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح There is some juice لأن juice غير معدود. there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012010",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Is there a mosque near here?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، سؤال صحيح بـ is there. there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012011",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"There aren't any chairs\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. there is للمفرد وغير المعدود، وthere are للجمع. النفي there isn't / there aren't.",
+  "topic": "Grammar: there is / there are (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012012",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ English every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studys",
+   "studies",
+   "study",
+   "studying"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: studies.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012013",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ tea in the morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drinking",
+   "drink",
+   "drinks",
+   "drank"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: drink.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012014",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ to school by bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "going",
+   "goes",
+   "go",
+   "gos"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: goes.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012015",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ football on Fridays.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "played",
+   "playing",
+   "play",
+   "plays"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: play.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012016",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My mother _____ dinner at six.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cooking",
+   "cooks",
+   "cook",
+   "cooked"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: cooks.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012017",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ in Mansoura.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "living",
+   "live",
+   "lived",
+   "lives"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: live.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012018",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The sun _____ in the east.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rose",
+   "rise",
+   "rising",
+   "rises"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: rises.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012019",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My brother _____ TV after school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watch",
+   "watching",
+   "watches",
+   "watchs"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: watches.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012020",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You _____ very fast.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "runs",
+   "ran",
+   "running",
+   "run"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: run.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012021",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Karim _____ his teeth twice a day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "brush",
+   "brushes",
+   "brushs",
+   "brushing"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: brushes.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012022",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shop _____ at nine o'clock.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "opens",
+   "opened",
+   "opening",
+   "open"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: opens.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012023",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Birds _____ in the sky.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "flying",
+   "flies",
+   "flew",
+   "fly"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: fly.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012024",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The baby _____ a lot.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "crys",
+   "cry",
+   "crying",
+   "cries"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: cries.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012025",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My sister _____ a new phone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "has",
+   "haves",
+   "having"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: has.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012026",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ her homework after dinner.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doing",
+   "doos",
+   "does",
+   "do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: does.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012027",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The bus _____ at eight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "arrives",
+   "arrived",
+   "arriving",
+   "arrive"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: arrives.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012028",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My father _____ the newspaper every morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "reading",
+   "reads",
+   "readding",
+   "read"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: reads.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012029",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Dogs _____ bones.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "liking",
+   "liked",
+   "like",
+   "likes"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: like.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012030",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ guitar in a band.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "plays",
+   "play",
+   "played",
+   "playing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: plays.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012031",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The students _____ in the library.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studies",
+   "studyes",
+   "study",
+   "studying"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: study.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012032",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Mona _____ a bike to work.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rides",
+   "ride",
+   "rode",
+   "riding"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: rides.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012033",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ a lot in winter.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "raining",
+   "rain",
+   "rains",
+   "rained"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: rains.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012034",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ahmed always _____ his friends.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "helps",
+   "helped",
+   "helping",
+   "help"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: helps.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012035",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ up at seven every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "get",
+   "gets",
+   "got",
+   "getting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: get.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012036",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The teacher _____ the lesson on the board.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "write",
+   "writes",
+   "wrote",
+   "writing"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: writes.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012037",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He working in a bank.",
+   "He are work in a bank.",
+   "He work in a bank.",
+   "He works in a bank."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: He works in a bank..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012038",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She watch cartoons.",
+   "She watching cartoons.",
+   "She watchs cartoons.",
+   "She watches cartoons."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: She watches cartoons..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012039",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We playing tennis on Sundays.",
+   "We are play tennis on Sundays.",
+   "We plays tennis on Sundays.",
+   "We play tennis on Sundays."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: We play tennis on Sundays..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012040",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The cat sleeping all day.",
+   "The cat sleepes all day.",
+   "The cat sleep all day.",
+   "The cat sleeps all day."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: The cat sleeps all day..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012041",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My uncle fixs cars.",
+   "My uncle fixing cars.",
+   "My uncle fix cars.",
+   "My uncle fixes cars."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: My uncle fixes cars..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012042",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The girls singing well.",
+   "The girls are sing well.",
+   "The girls sings well.",
+   "The girls sing well."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: The girls sing well..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012043",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He teach math.",
+   "He teaching math.",
+   "He teachs math.",
+   "He teaches math."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: He teaches math..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012044",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She study at night.",
+   "She studing at night.",
+   "She studys at night.",
+   "She studies at night."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو. الإجابة الصحيحة: She studies at night..",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012045",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He go to work by car\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He goes to work by car لأن he بيحتاج goes. في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012046",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"They live in Cairo\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، they مع الفعل بدون s. في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012047",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She watchs TV\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She watches TV لأن الفعل بينتهي بـ ch فبنضيف es. في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012048",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"The baby cries\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن cry بتتحول لـ cries. في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012049",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I likes pizza\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I like pizza لأن I مش بياخد s. في المضارع البسيط مع he/she/it بنضيف s أو es للفعل، ومع I/you/we/they بنسيب الفعل زي ما هو.",
+  "topic": "Grammar: present simple affirmative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012050",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ like coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "am not",
+   "doesn't",
+   "isn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012051",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ like coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "isn't",
+   "doesn't",
+   "don't",
+   "not"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: doesn't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012052",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ speak French.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "aren't",
+   "not",
+   "doesn't",
+   "don't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012053",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He doesn't _____ meat.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "eat",
+   "eating",
+   "eats",
+   "ate"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: eat.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012054",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We don't _____ in Alexandria.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "live",
+   "lived",
+   "lives",
+   "living"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: live.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012055",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My dad _____ work on Fridays.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "isn't",
+   "doesn't",
+   "not"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: doesn't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012056",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You _____ need a ticket.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "aren't",
+   "not",
+   "don't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012057",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shop doesn't _____ on Sundays.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "open",
+   "opened",
+   "opens",
+   "opening"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: open.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012058",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ali _____ play the piano.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "don't",
+   "isn't",
+   "not"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: doesn't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012059",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The kids don't _____ vegetables.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "liked",
+   "like",
+   "likes",
+   "liking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: like.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012060",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ snow in Egypt.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "not",
+   "doesn't",
+   "isn't",
+   "don't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: doesn't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012061",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My parents _____ watch TV at night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "don't",
+   "not",
+   "aren't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012062",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She doesn't _____ English at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "speak",
+   "spoke",
+   "speaking",
+   "speaks"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: speak.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012063",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ know his number.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "am not",
+   "not",
+   "don't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012064",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The train _____ stop here.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "don't",
+   "not",
+   "isn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: doesn't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012065",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ have a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "doesn't",
+   "haven't a",
+   "aren't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012066",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He doesn't _____ up early.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "getting",
+   "gets",
+   "get",
+   "got"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: get.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012067",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Cats _____ like water.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "aren't",
+   "don't",
+   "not"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: don't.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012068",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She not like fish.",
+   "She don't like fish.",
+   "She doesn't like fish.",
+   "She doesn't likes fish."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: She doesn't like fish..",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012069",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They not work here.",
+   "They don't works here.",
+   "They don't work here.",
+   "They doesn't work here."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: They don't work here..",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012070",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He isn't drive.",
+   "He don't drive.",
+   "He doesn't drive.",
+   "He doesn't drives."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: He doesn't drive..",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012071",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I not understand.",
+   "I don't understands.",
+   "I don't understand.",
+   "I doesn't understand."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: I don't understand..",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012072",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The bank not opens today.",
+   "The bank doesn't opens today.",
+   "The bank doesn't open today.",
+   "The bank don't open today."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: The bank doesn't open today..",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012073",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We not play on Mondays.",
+   "We don't plays on Mondays.",
+   "We don't play on Mondays.",
+   "We doesn't play on Mondays."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: We don't play on Mondays..",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012074",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She doesn't likes tea\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She doesn't like tea لأن بعد doesn't الفعل بيرجع للأصل. النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012075",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I don't have a pen\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012076",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He don't speak Arabic\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He doesn't speak Arabic. النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012077",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"They don't live here\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. النفي في المضارع البسيط بنستخدم don't مع I/you/we/they وdoesn't مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple negative (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012078",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ you like pizza?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Does",
+   "Do",
+   "Are",
+   "Is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Do.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012079",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ she live in Cairo?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Is",
+   "Do",
+   "Does",
+   "Are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012080",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ they play football?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Is",
+   "Does",
+   "Do"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Do.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012081",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ your brother work here?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Does",
+   "Do",
+   "Is",
+   "Are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012082",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Does he _____ English?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "spoke",
+   "speak",
+   "speaks",
+   "speaking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: speak.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012083",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Do you _____ coffee?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wants",
+   "wanted",
+   "want",
+   "wanting"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: want.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012084",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ the shop open on Friday?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Does",
+   "Do",
+   "Is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012085",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ we need a visa?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Do",
+   "Are",
+   "Is",
+   "Does"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Do.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012086",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Where _____ you live?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "does",
+   "is",
+   "do"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: do.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012087",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What time _____ the film start?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "do",
+   "is",
+   "does"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012088",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What _____ she study?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "are",
+   "is",
+   "do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012089",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Why _____ they leave early?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "do",
+   "are",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: do.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012090",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "How often _____ he visit you?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "do",
+   "does",
+   "is"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012091",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Does she _____ a car?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "having",
+   "had",
+   "has",
+   "have"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: have.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012092",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Do your friends _____ here?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studying",
+   "studied",
+   "study",
+   "studies"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: study.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012093",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Where does your mother _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "works",
+   "worked",
+   "working",
+   "work"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: work.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012094",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ it rain in July in Egypt?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Is",
+   "Do",
+   "Does"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012095",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "When _____ the class begin?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "is",
+   "does",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: does.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012096",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Do you like tea?",
+   "Do you likes tea?",
+   "Does you like tea?",
+   "You do like tea?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Do you like tea?.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012097",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Does he play chess?",
+   "He does play chess?",
+   "Do he play chess?",
+   "Does he plays chess?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Does he play chess?.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012098",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "What do you eat for lunch?",
+   "What do you eats for lunch?",
+   "What you eat for lunch?",
+   "What does you eat for lunch?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: What do you eat for lunch?.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012099",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Where does she work?",
+   "Where does she works?",
+   "Where she works?",
+   "Where do she work?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Where does she work?.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012100",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Do they speak English?",
+   "Do they speaks English?",
+   "Does they speak English?",
+   "Are they speak English?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Do they speak English?.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012101",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Does he swim?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, he swims.",
+   "Yes, he does.",
+   "Yes, he do.",
+   "Yes, he is."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Yes, he does..",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012102",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Do you walk to work?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "No, I doesn't.",
+   "No, I'm not.",
+   "No, I don't walk to.",
+   "No, I don't."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: No, I don't..",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012103",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Does it rain a lot?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, it does.",
+   "Yes, it rains does.",
+   "Yes, it is.",
+   "Yes, it do."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل. الإجابة الصحيحة: Yes, it does..",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012104",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Does she likes cake?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Does she like cake? لأن بعد does الفعل بدون s. السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012105",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Do they work here?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012106",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Do he live here?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Does he live here? السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012107",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Where do you study?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. السؤال بنستخدم Do مع I/you/we/they وDoes مع he/she/it، والفعل بعدهم بيرجع للأصل.",
+  "topic": "Grammar: present simple questions (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012108",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ drinks coffee in the morning. (100%)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hardly",
+   "always",
+   "never",
+   "rarely"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: always.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012109",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ eat fish. I don't like it. (0%)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "usually",
+   "always",
+   "often",
+   "never"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: never.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012110",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He is _____ late. He comes on time every day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "often",
+   "usually",
+   "never",
+   "always"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: never.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012111",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ go to the cinema on Fridays. (about 80%)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hardly",
+   "rarely",
+   "usually",
+   "never"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: usually.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012112",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ visit us. Only once a year. (very low)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "often",
+   "usually",
+   "rarely",
+   "always"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: rarely.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012113",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My dad _____ reads in the evening. (about 50%)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "usually",
+   "always",
+   "never",
+   "sometimes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: sometimes.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012114",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I am _____ tired after work. (every day)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rarely",
+   "never",
+   "always",
+   "hardly ever"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: always.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012115",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ walks to school. (0%)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "often",
+   "never",
+   "always",
+   "usually"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: never.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012116",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ali _____ plays tennis. (almost never)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "usually",
+   "often",
+   "hardly ever",
+   "always"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: hardly ever.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012117",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It _____ snows in Cairo. (0%)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "often",
+   "never",
+   "always",
+   "usually"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: never.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012118",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The bus is _____ late. (many times, but not every day)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "never",
+   "often",
+   "hardly",
+   "always"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: often.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012119",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My teacher _____ gives us homework. (every class)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rarely",
+   "hardly ever",
+   "always",
+   "never"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: always.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012120",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ have breakfast at seven. (most days)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rarely",
+   "hardly ever",
+   "never",
+   "usually"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: usually.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012121",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct word order.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Always he arrives early.",
+   "He always arrives early.",
+   "He arrives early always.",
+   "He arrives always early."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: He always arrives early..",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012122",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct word order.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is late never.",
+   "She is never late.",
+   "Never she is late.",
+   "She never is late."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: She is never late..",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012123",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct word order.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Often I rice eat.",
+   "I often eat rice.",
+   "I eat rice often a.",
+   "I eat often rice."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: I often eat rice..",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012124",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct word order.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They chess sometimes play.",
+   "They sometimes play chess.",
+   "They play chess sometimes a.",
+   "They play sometimes chess."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: They sometimes play chess..",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012125",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct word order.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We are busy usually the.",
+   "We are usually busy.",
+   "Usually we busy are.",
+   "We usually are busy."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: We are usually busy..",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012126",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct word order.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My mother rarely fish cooks.",
+   "My mother rarely cooks fish.",
+   "Rarely my mother cooks fish.",
+   "My mother cooks rarely fish."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are. الإجابة الصحيحة: My mother rarely cooks fish..",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012127",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I never am late\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I am never late لأن الظرف بيجي بعد am. ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012128",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She always drinks tea\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن always قبل الفعل. ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012129",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Never\" means 0% of the time.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012130",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Always\" means sometimes.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. always معناها دايما، وsometimes معناها أحيانا. ظروف التكرار (always, usually, often, sometimes, never) بتيجي قبل الفعل العادي وبعد am/is/are.",
+  "topic": "Grammar: adverbs of frequency (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012131",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ swim very well.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cans",
+   "am",
+   "can",
+   "do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012132",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She _____ speak three languages.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cans",
+   "can",
+   "does",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012133",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He can _____ the piano.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "play",
+   "to play",
+   "plays",
+   "playing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: play.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012134",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Babies _____ walk at birth.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can",
+   "can't",
+   "cans",
+   "don't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012135",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ you help me, please?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Are",
+   "Do",
+   "Is",
+   "Can"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: Can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012136",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Can she _____ a car?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drive",
+   "to drive",
+   "driving",
+   "drives"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: drive.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012137",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Fish _____ fly.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "aren't",
+   "can",
+   "can't",
+   "don't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012138",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We can _____ you tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sees",
+   "seeing",
+   "to see",
+   "see"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: see.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012139",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My little brother _____ read yet.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't",
+   "can",
+   "isn't",
+   "can't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012140",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ your sister cook?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Can",
+   "Does",
+   "Is",
+   "Are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: Can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012141",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Birds can _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to fly",
+   "flies",
+   "fly",
+   "flying"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: fly.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012142",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I am sorry, I _____ come tonight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can",
+   "can't",
+   "am not",
+   "don't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can't.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012143",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ run fast.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "cans",
+   "can",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012144",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ I use your phone?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Can",
+   "Am",
+   "Do",
+   "Does"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: Can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012145",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He can't _____ English well.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "speak",
+   "to speak",
+   "speaking",
+   "speaks"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: speak.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012146",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Can you _____ me the time?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to tell",
+   "telling",
+   "tells",
+   "tell"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: tell.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012147",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She can dances.",
+   "She can to dance.",
+   "She cans dance.",
+   "She can dance."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: She can dance..",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012148",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I can't to hear you.",
+   "I not can hear you.",
+   "I don't can hear you.",
+   "I can't hear you."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: I can't hear you..",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012149",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Can you swim?",
+   "Are you can swim?",
+   "Do you can swim?",
+   "You can swim?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: Can you swim?.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012150",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Can he come tomorrow?",
+   "Can he to come tomorrow?",
+   "Does he can come tomorrow?",
+   "Can he comes tomorrow?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: Can he come tomorrow?.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012151",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Can you drive?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, I cans.",
+   "Yes, I can.",
+   "Yes, I do.",
+   "Yes, I am."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: Yes, I can..",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012152",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Can she cook?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "No, she can't.",
+   "No, she isn't.",
+   "No, she doesn't.",
+   "No, she cans't."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can. الإجابة الصحيحة: No, she can't..",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012153",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He cans swim\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He can swim لأن can مبتاخدش s. can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012154",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I can play football\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012155",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She can to sing\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She can sing بدون to. can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012156",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"Can they help?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. can للقدرة والإمكانية وبعدها الفعل الأساسي بدون to وبدون s. النفي can't. السؤال بنقدم can.",
+  "topic": "Grammar: can and can't (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
