@@ -86,7 +86,7 @@ export async function searchYouTubeVideos(
     // suggestions instead of a blank result so the learner always gets videos.
     let finalItems = fallbackItems;
     let totalResults = catalogResult.totalMatches;
-    let message = 'يتم عرض النتائج من مكتبة Henglish Academy المعتمدة والمتحقق منها (وضع البحث المعجمي المعتمد)';
+    let message = 'ys.notice0';
     if (cleanQ && catalogResult.totalMatches === 0) {
       const suggestions = queryVideoCatalog({ pageSize: 12 });
       finalItems = suggestions.videos.map(v => ({
@@ -99,7 +99,7 @@ export async function searchYouTubeVideos(
         isEmbeddable: v.isEmbeddable,
       }));
       totalResults = suggestions.totalMatches;
-      message = 'لا توجد نتائج مطابقة لبحثك في المكتبة المعتمدة، فإليك مقاطع مقترحة متحقق منها:';
+      message = 'ys.notice1';
     }
 
     const response: SearchDiscoveryResponse = {
@@ -147,7 +147,7 @@ export async function searchYouTubeVideos(
           })),
           totalResults: catalogResult.totalMatches,
           apiQuotaExceeded: true,
-          message: 'تم تجاوز حصة YouTube API اليومية مؤقتاً؛ تم تفعيل البحث في الكتالوج المعتمد.',
+          message: 'ys.notice2',
         };
       }
       throw new Error(`YouTube API HTTP ${res.status}`);
@@ -179,7 +179,7 @@ export async function searchYouTubeVideos(
       nextPageToken: json.nextPageToken,
       prevPageToken: json.prevPageToken,
       totalResults: json.pageInfo?.totalResults || verifiedItems.length,
-      message: 'نتائج مباشرة وموثوقة من YouTube Data API v3',
+      message: 'ys.notice3',
     };
 
     searchCache.set(cacheKey, { timestamp: Date.now(), data: response });
@@ -199,7 +199,7 @@ export async function searchYouTubeVideos(
         isEmbeddable: v.isEmbeddable,
       })),
       totalResults: catalogResult.totalMatches,
-      message: 'تعذر الاتصال بـ YouTube API؛ تم التبديل إلى الكتالوج المعتمد.',
+      message: 'ys.notice4',
     };
   }
 }

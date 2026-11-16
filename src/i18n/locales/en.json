@@ -711,8 +711,8 @@
   "ms.watchPronunciation": "Watch the sentence pronounced in the scene",
   "ms.ytPlaceholder": "Search for a scene, actor, topic, or podcast (e.g. Steve Jobs speech, Friends pivot, London interview...)",
   "ms.ytSearch": "Search YouTube",
-  "ms.ytSub": "A safe search engine that automatically verifies embeddability and playback and blocks broken links.",
-  "ms.ytTitle": "Search the world of YouTube videos and import any scene or interview instantly",
+  "ms.ytSub": "Results show their source. Metadata checks do not guarantee playback or embedding availability.",
+  "ms.ytTitle": "Find clips on YouTube or in the Henglish catalog",
   "nav.about": "About",
   "nav.academies": "Academies",
   "nav.assistant": "Learning Assistant",
@@ -2784,5 +2784,10 @@
   "ae.retry": "An unexpected error occurred. Try again.",
   "ae.offline": "Could not reach the server. Check your connection and try again.",
   "auth.otpUnavailable": "Email verification is unavailable. Your account verification status has not changed.",
-  "auth.otpResendUnavailable": "Resending verification codes is unavailable. No code was sent."
+  "auth.otpResendUnavailable": "Resending verification codes is unavailable. No code was sent.",
+  "ys.notice0": "Results from the Henglish Academy video catalog.",
+  "ys.notice1": "No catalog matches for your search. Showing suggested clips instead.",
+  "ys.notice2": "The YouTube API quota is temporarily exceeded. Showing catalog results.",
+  "ys.notice3": "Live results from YouTube Data API v3.",
+  "ys.notice4": "Could not connect to the YouTube API. Showing catalog results."
 }
