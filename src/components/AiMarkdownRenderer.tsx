@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
 import { Volume2, ExternalLink, Copy, Check } from 'lucide-react';
 import { speakEnglishVoice, playSound } from '../utils/audio';
@@ -14,10 +15,15 @@ interface AiMarkdownRendererProps {
 }
 
 export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content, onNavigate }) => {
+  const { t } = useLanguage();
   const [copiedIndex, setCopiedIndex] = React.useState<number | null>(null);
 
-  const handleCopy = (text: string, index: number) => {
-    navigator.clipboard.writeText(text);
+  const handleCopy = async (text: string, index: number) => {
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      return;
+    }
     playSound('click');
     setCopiedIndex(index);
     setTimeout(() => setCopiedIndex(null), 2000);
@@ -175,32 +181,32 @@ export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content,
         const codeIndex = lineIdx;
         renderedElements.push(
           <div key={`codeblock-${lineIdx}`} className="my-3 rounded-2xl overflow-hidden border border-white/20 bg-[#09081a] shadow-xl">
-            <div className="flex items-center justify-between px-4 py-2 bg-white/5 border-b border-white/10 text-[11px] text-[#b9b6d5]">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 justify-between px-4 py-2 bg-white/5 border-b border-white/10 text-[11px] text-[#b9b6d5]">
               <span className="font-mono font-bold text-[#41e7ff] uppercase">
-                {codeBlockLang || 'English Expression / Formula'}
+                {codeBlockLang || t('md.expression')}
               </span>
-              <div className="flex items-center gap-2">
+              <div className="flex shrink-0 items-center gap-2">
                 <button
                   onClick={() => speakEnglishVoice(codeText)}
                   className="p-1 hover:text-[#ffd166] text-[#b9b6d5] transition-colors cursor-pointer"
-                  title="استمع للنطق"
+                  title={t('md.listen')}
                 >
                   <Volume2 className="w-3.5 h-3.5" />
                 </button>
                 <button
                   onClick={() => handleCopy(codeText, codeIndex)}
                   className="flex items-center gap-1 px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-[#b9b6d5] hover:text-white transition-all cursor-pointer"
-                  title="نسخ النص"
+                  title={t('md.copyText')}
                 >
                   {copiedIndex === codeIndex ? (
                     <>
                       <Check className="w-3 h-3 text-emerald-400" />
-                      <span className="text-[10px] text-emerald-400">تم النسخ</span>
+                      <span className="text-[10px] text-emerald-400">{t('md.copied')}</span>
                     </>
                   ) : (
                     <>
                       <Copy className="w-3 h-3" />
-                      <span className="text-[10px]">نسخ</span>
+                      <span className="text-[10px]">{t('md.copy')}</span>
                     </>
                   )}
                 </button>
