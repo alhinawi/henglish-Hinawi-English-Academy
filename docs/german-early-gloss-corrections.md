@@ -16,3 +16,19 @@ These eight meaning-only corrections use the English headword, part of speech an
 ## Original-source fallback in other languages
 
 The other 27 overlays repeated the same ambiguity errors for five entries: `him` was a literal e plus object label, `then` began with two, `these` became countries, `even` became until, and `work` became fill. Their meanings now show the existing original Arabic (`ه (مفعول)`, `بعدين / ساعتها`, `دول`, `حتى`, `شغل`) instead of retaining these misleading target-language glosses. Existing example translations remain unchanged. German keeps the dictionary-grounded fixes above. This is a temporary original-language fallback, not a claim of completed target-language translation. `need` is not blanket replaced because some overlays may have a valid verb sense.
+
+## Context and part-of-speech corrections
+
+These nine meaning-only corrections distinguish the word sense used by the existing example. `going` now gives the participle meaning, not the untranslated Arabic romanization. Other grammatical constructions, such as the future use of `be going to`, need their own contextual explanation.
+
+| ID | Headword | Corrected meaning | Source |
+| --- | --- | --- | --- |
+| voc-w00009 | that | dass / der / die / das | https://www.dict.cc/english-german/that.html |
+| voc-w00010 | you | du / ihr / Sie | https://www.dict.cc/english-german/you.html |
+| voc-w00011 | on | auf / an / bei | https://www.dict.cc/english-german/on.html |
+| voc-w00065 | first | erste / erster / erstes | https://www.dict.cc/english-german/first.html |
+| voc-w00070 | make | machen / herstellen / zubereiten | https://www.dict.cc/english-german/make.html |
+| voc-w00076 | back | Rücken / Rückseite; zurück (Adverb) | https://www.dict.cc/english-german/back.html |
+| voc-w00092 | right | richtig / rechts / Recht | https://www.dict.cc/english-german/right.html |
+| voc-w00098 | going | gehend (Form von go) | https://www.dict.cc/english-german/going.html |
+| voc-w00100 | off | von / ab / weg / aus | https://www.dict.cc/english-german/off.html |
