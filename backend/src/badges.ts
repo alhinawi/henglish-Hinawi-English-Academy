@@ -11,11 +11,15 @@ export type BadgeEvidence = {
 export function evaluateBadges(e: BadgeEvidence, now = Date.now()) {
  const valid = e.attempts.filter(a => a.total > 0 && a.score / a.total >= .7)
  const days = new Set(valid.map(a => new Date(a.started_at * 1000).toISOString().slice(0,10)))
- // A current streak may end today or yesterday, never at an arbitrary old date.
- let day = new Date(now).toISOString().slice(0,10), streak = 0
- const previous = (d: string) => new Date(Date.parse(d+'T12:00:00Z')-86400000).toISOString().slice(0,10)
- if (!days.has(day)) day = previous(day)
- while (days.has(day)) { streak++; day = previous(day) }
+ // Achievement milestones use the best verified historical streak, not a local
+ // counter and not a current streak that would erase an earned milestone.
+ let streak = 0, run = 0, previousDay = 0
+ for (const date of [...days].sort()) {
+  const day=Date.parse(date+'T00:00:00Z')
+  if(day>now)continue
+  run=day-previousDay===86400000?run+1:1
+  streak=Math.max(streak,run);previousDay=day
+ }
  const metrics: Record<string,number> = {
   account: Number(e.account), avatar: Number(e.avatar), streak,
   lessons: new Set(e.checkpoints.map(p => p.lesson_id)).size,

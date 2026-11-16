@@ -40,7 +40,7 @@ export function BadgeCollection({badges,compact=false,onNavigate}:{badges:Achiev
   {compact?<div className="grid grid-cols-2 sm:grid-cols-3 gap-3">{[...badges].sort((a,b)=>Number(b.unlocked)-Number(a.unlocked)).slice(0,6).map(b=><BadgeCard key={b.id} badge={b}/>)}</div>:categories.filter(c=>filter==='all'||filter===c).map(c=><section key={c} className="space-y-3"><h3 className="text-base text-[#e8cb90] font-bold pt-2">{t('badges.category.'+c)}</h3><div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">{badges.filter(b=>b.category===c).map(b=><BadgeCard key={b.id} badge={b}/>)}</div></section>)}
  </section>;
 }
-export function BadgesPage({onNavigate}:{onNavigate:(route:PageRoute)=>void}) {
- const {badges,status,refresh}=useBadges();const {t}=useLanguage();
+export function BadgesPage({onNavigate,learnerId}:{onNavigate:(route:PageRoute)=>void;learnerId?:string|null}) {
+ const {badges,status,refresh}=useBadges(learnerId);const {t}=useLanguage();
  return <main className="max-w-6xl mx-auto space-y-5 pb-12"><div className="flex justify-between gap-3"><button onClick={()=>onNavigate('dashboard')} className="text-[#d9c18b] flex items-center gap-2 min-h-11"><ArrowLeft size={18}/>{t('badges.back')}</button><button onClick={()=>void refresh()} className="text-xs text-[#c3bddb] flex gap-2 items-center min-h-11"><RefreshCw size={15}/>{t('badges.refresh')}</button></div><p role="status" className="text-sm text-[#bdb7d4]">{status==='ready'?`${badges.filter(b=>b.unlocked).length} / ${badges.length} ${t('badges.earned')}`:t('badges.'+status)}</p><BadgeCollection badges={badges}/></main>;
 }

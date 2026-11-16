@@ -12,9 +12,10 @@ assert.equal(get(empty,'level-c1').available,false);
 assert.equal(get({...empty,certificates:[{definition_id:'cert-grammar-diploma',level:'C1'}]},'level-c1').unlocked,false);
 const attempt=(day:number)=>({started_at:Date.parse(`2026-11-${day}T04:00:00Z`)/1000,score:3,total:3});
 assert.equal(get({...empty,attempts:[attempt(14),attempt(15),attempt(16)]},'streak-3').unlocked,true);
-assert.equal(get({...empty,attempts:[attempt(10),attempt(11),attempt(12)]},'streak-3').unlocked,false);
+assert.equal(get({...empty,attempts:[attempt(10),attempt(11),attempt(12)]},'streak-3').unlocked,true);
 assert.equal(get({...empty,attempts:[attempt(16)]},'early-bird').unlocked,true);
 assert.equal(get({...empty,attempts:[{...attempt(16),score:0}]},'early-bird').unlocked,false);
+assert.equal(get({...empty,attempts:[attempt(10),attempt(12),attempt(16)]},'streak-3').unlocked,false);
 const mf=await getPlatformProxy<{DB:D1Database}>({persist:false});
 try {
  const db=mf.env.DB;
