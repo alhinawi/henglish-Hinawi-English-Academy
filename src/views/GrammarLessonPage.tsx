@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
 import { txText, useAppTextMap } from '../services/contentI18nService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { GRAMMAR_VIDEO_RESOURCES } from '../data/videoResourcesData';
 import { YouTubeVideoPlayer } from '../components/YouTubeVideoPlayer';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
@@ -45,6 +46,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
   onMarkComplete,
   isCompleted = false,
 }) => {
+  const { t } = useLanguage();
   const rule: GrammarRuleItem = ALL_GRAMMAR_RULES.find(r => r.id === ruleId) || ALL_GRAMMAR_RULES[0];
   const ruleIndex = ALL_GRAMMAR_RULES.findIndex(r => r.id === rule.id);
   const prevRule = ruleIndex > 0 ? ALL_GRAMMAR_RULES[ruleIndex - 1] : null;
@@ -96,19 +98,19 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       
       {/* 1. TOP BREADCRUMBS & ACTION BAR */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
-        <nav aria-label="مسار التنقل" className="flex items-center gap-2 text-xs text-[#b9b6d5] font-semibold flex-wrap">
+        <nav aria-label={t('gl.breadcrumbAria')} className="flex items-center gap-2 text-xs text-[#b9b6d5] font-semibold flex-wrap">
           <button
             onClick={() => { playSound('click'); onNavigate('dashboard'); }}
             className="hover:text-white transition-colors cursor-pointer"
           >
-            الرئيسية
+            {t('gl.home')}
           </button>
           <span>/</span>
           <button
             onClick={() => { playSound('click'); onNavigate('grammar'); }}
             className="hover:text-white transition-colors cursor-pointer"
           >
-            أكاديمية الجرامر
+            {t('gl.academy')}
           </button>
           <span>/</span>
           <span className="text-[#ffd166] font-bold">{rule.titleEn}</span>
@@ -118,16 +120,16 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           <button
             onClick={handlePrint}
             className="px-3.5 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-[#dedbf4] flex items-center gap-1.5 transition-colors cursor-pointer"
-            title="طباعة أو حفظ ملخص الدرس كملف PDF"
+            title={t('gl.printTitle')}
           >
             <Printer className="w-3.5 h-3.5 text-[#ffd166]" />
-            <span>طباعة الملخص</span>
+            <span>{t('gl.print')}</span>
           </button>
 
           {isCompleted && (
             <span className="px-3 py-1 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-bold flex items-center gap-1">
               <Check className="w-3.5 h-3.5" />
-              تم إنجاز الدرس
+              {t('gl.completed')}
             </span>
           )}
         </div>
@@ -148,7 +150,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               {txText(appText, rule.level)}
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#ff4f9a]/20 text-[#ff8bb9] border border-[#ff4f9a]/30">
-              درس {rule.order} من {ALL_GRAMMAR_RULES.length}
+              {t('gl.lessonWord')} {rule.order} {t('wl.resultOf')} {ALL_GRAMMAR_RULES.length}
             </span>
           </div>
 
@@ -173,7 +175,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               className="px-4 py-2 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:from-[#ffd166]/30 hover:to-[#41e7ff]/30 border border-[#ffd166]/40 text-xs font-bold text-white flex items-center gap-2 cursor-pointer transition-all"
             >
               <Volume2 className="w-4 h-4 text-[#ffd166]" />
-              <span>استمع إلى النطق الصوتي لاسم القاعدة</span>
+              <span>{t('gl.listenRule')}</span>
             </button>
           </div>
         </div>
@@ -185,9 +187,9 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-[#ffd166]">
             <Sparkles className="w-4 h-4" />
-            <span>الأهداف التعليمية ومخرجات الدرس</span>
+            <span>{t('gl.objectivesBadge')}</span>
           </div>
-          <h3 className="text-lg font-black text-white">ماذا ستتقن بنهاية هذا الدرس؟</h3>
+          <h3 className="text-lg font-black text-white">{t('gl.objectivesTitle')}</h3>
           <ul className="space-y-3 text-xs sm:text-sm text-[#dedbf4]">
             {rule.keyUsagePoints.map((point, idx) => (
               <li key={idx} className="flex items-start gap-2.5">
@@ -202,15 +204,15 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-[#41e7ff]">
             <Clock className="w-4 h-4" />
-            <span>تخيل الخط الزمني (Timeline Visualizer)</span>
+            <span>{t('gl.timelineBadge')}</span>
           </div>
-          <h3 className="text-lg font-black text-white">أين يقع هذا الفعل على شريط الزمن؟</h3>
+          <h3 className="text-lg font-black text-white">{t('gl.timelineTitle')}</h3>
           <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
             {txText(appText, rule.timelineDescription)}
           </p>
           <div className="p-4 rounded-2xl bg-black/40 border border-white/10 flex items-center justify-between text-xs font-mono text-[#b9b6d5]">
             <div className="text-center">
-              <span className="block text-[10px] text-white/50">الماضي</span>
+              <span className="block text-[10px] text-white/50">{t('gl.past')}</span>
               <span className="text-[#ffd166]">PAST</span>
             </div>
             <div className="flex-1 px-4 flex items-center justify-center">
@@ -220,7 +222,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               </div>
             </div>
             <div className="text-center">
-              <span className="block text-[10px] text-white/50">المستقبل</span>
+              <span className="block text-[10px] text-white/50">{t('gl.future')}</span>
               <span className="text-[#ff4f9a]">FUTURE</span>
             </div>
           </div>
@@ -232,8 +234,8 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
           <div>
-            <span className="text-xs font-bold text-[#ffd166]">التراكيب النحوية وقوالب الجمل</span>
-            <h3 className="text-2xl font-black text-white">كيف تُصاغ الجملة بجميع حالاتها؟</h3>
+            <span className="text-xs font-bold text-[#ffd166]">{t('gl.formsBadge')}</span>
+            <h3 className="text-2xl font-black text-white">{t('gl.formsTitle')}</h3>
           </div>
 
           {/* Structure Tabs */}
@@ -246,7 +248,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                   : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
-              الإثبات (Affirmative)
+              {t('gl.affirmative')}
             </button>
             <button
               onClick={() => setActiveStructureTab('negative')}
@@ -256,7 +258,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                   : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
-              النفي (Negative)
+              {t('gl.negative')}
             </button>
             <button
               onClick={() => setActiveStructureTab('question')}
@@ -266,7 +268,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                   : 'text-[#b9b6d5] hover:text-white'
               }`}
             >
-              السؤال (Questions)
+              {t('gl.questions')}
             </button>
           </div>
         </div>
@@ -275,49 +277,49 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         <div className="p-6 rounded-2xl bg-black/30 border border-white/10 space-y-4">
           {activeStructureTab === 'affirmative' && (
             <div className="space-y-3">
-              <div className="text-xs font-bold text-[#ffd166]">قالب الجملة المثبتة (Golden Formula):</div>
+              <div className="text-xs font-bold text-[#ffd166]">{t('gl.affirmFormula')}</div>
               <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#ffd166]/30 text-base sm:text-xl font-mono text-[#ffd166] font-bold text-center tracking-wide">
                 {txText(appText, rule.goldenFormula)}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
-                تطبق هذه الصيغة مع مراعاة الضمائر المفردة والجمع والتصريف المناسب للفعل.
+                {t('gl.affirmNote')}
               </p>
             </div>
           )}
 
           {activeStructureTab === 'negative' && (
             <div className="space-y-3">
-              <div className="text-xs font-bold text-[#ff4f9a]">قالب جملة النفي (Negative Structure):</div>
+              <div className="text-xs font-bold text-[#ff4f9a]">{t('gl.negFormula')}</div>
               <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#ff4f9a]/30 text-base sm:text-xl font-mono text-[#ff8bb9] font-bold text-center tracking-wide">
                 {rule.negativeFormula}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
-                لاحظ إرجاع الفعل إلى مصدره أو إدخال أداة النفي not مع الفعل المساعد المناسب.
+                {t('gl.negNote')}
               </p>
             </div>
           )}
 
           {activeStructureTab === 'question' && (
             <div className="space-y-3">
-              <div className="text-xs font-bold text-[#41e7ff]">قالب السؤال بهل وأدوات الاستفهام (Questions & Short Answers):</div>
+              <div className="text-xs font-bold text-[#41e7ff]">{t('gl.qFormula')}</div>
               <div dir="ltr" lang="en" className="p-4 rounded-xl bg-white/5 border border-[#41e7ff]/30 text-base sm:text-xl font-mono text-[#41e7ff] font-bold text-center tracking-wide">
                 {rule.questionFormula}
               </div>
               <p className="text-xs text-[#dedbf4] leading-relaxed">
-                للإجابة المختصرة: Yes, [Subject] + [Auxiliary] / No, [Subject] + [Auxiliary] + not.
+                {t('gl.qNote')}
               </p>
             </div>
           )}
         </div>
       </section>
 
-      {/* 5. EGYPTIAN ARABIC EXPLANATION (شرح مبسط بالمصري وبدون فذلكة) */}
+      {/* 5. EGYPTIAN ARABIC EXPLANATION */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-[#ffd166]/30 bg-linear-to-br from-[#ffd166]/5 to-transparent space-y-6">
         <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-[#ffd166]">
           <GraduationCap className="w-5 h-5 text-[#ffd166]" />
-          <span>كلام من الآخر بالمصري • أسرار مستر هناوي</span>
+          <span>{t('gl.egyBadge')}</span>
         </div>
-        <h3 className="text-2xl font-black text-white">إزاي تفهم القاعدة كأنها لغتك الأم؟</h3>
+        <h3 className="text-2xl font-black text-white">{t('gl.egyTitle')}</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {rule.egyptianTips.map((tip, idx) => (
@@ -337,10 +339,10 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
         <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-white/10">
           <div>
-            <span className="text-xs font-bold text-[#41e7ff]">أمثلة عملية واقعية وسياقية</span>
-            <h3 className="text-2xl font-black text-white">أمثلة من بيئة العمل والحياة اليومية</h3>
+            <span className="text-xs font-bold text-[#41e7ff]">{t('gl.exBadge')}</span>
+            <h3 className="text-2xl font-black text-white">{t('gl.exTitle')}</h3>
           </div>
-          <span className="shrink-0 whitespace-nowrap text-xs text-[#b9b6d5] font-mono">{rule.examples.length} أمثلة حية</span>
+          <span className="shrink-0 whitespace-nowrap text-xs text-[#b9b6d5] font-mono">{rule.examples.length} {t('gl.exCount')}</span>
         </div>
 
         <div className="space-y-4">
@@ -350,7 +352,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               className="p-5 sm:p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all space-y-5"
             >
               <div dir="rtl" className="w-full px-3 py-2.5 rounded-xl text-[11px] sm:text-xs leading-6 font-bold bg-[#41e7ff]/10 text-[#41e7ff] border border-[#41e7ff]/20 text-right">
-                سياق المثال: {ex.context}
+                {t('gl.exContext')} {ex.context}
               </div>
 
               <div dir="ltr" lang="en" className="w-full text-left font-sans text-base sm:text-lg leading-8 text-white font-semibold tracking-wide break-words">
@@ -367,11 +369,11 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
                     speakEnglish(ex.en);
                   }}
                   className="inline-flex items-center gap-2.5 min-h-11 px-4 py-2.5 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/20 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffd166]"
-                  title="استمع إلى الجملة بنطق المتحدث الأصلي"
-                  aria-label="استمع للجملة"
+                  title={t('gl.listenSentenceTitle')}
+                  aria-label={t('gl.listenSentenceAria')}
                 >
                   <Volume2 className="w-4 h-4 shrink-0" />
-                  <span className="text-xs font-bold">استمع للجملة</span>
+                  <span className="text-xs font-bold">{t('gl.listenSentence')}</span>
                 </button>
               </div>
             </div>
@@ -379,13 +381,13 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         </div>
       </section>
 
-      {/* 7. COMMON TRAPS MADE BY ARABIC SPEAKERS (فخاخ شائعة وحلولها) */}
+      {/* 7. COMMON TRAPS MADE BY ARABIC SPEAKERS */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-red-500/30 bg-linear-to-br from-red-500/5 to-transparent space-y-6">
         <div className="flex items-center gap-2 pb-3 border-b border-white/10 text-xs font-black text-red-400">
           <AlertTriangle className="w-5 h-5 text-red-400" />
-          <span>أشهر الأخطاء الشائعة للمتحدثين بالعربية</span>
+          <span>{t('gl.trapsBadge')}</span>
         </div>
-        <h3 className="text-2xl font-black text-white">إزاي تتجنب الأخطاء اللي بيقع فيها 90٪ من الطلاب؟</h3>
+        <h3 className="text-2xl font-black text-white">{t('gl.trapsTitle')}</h3>
 
         <div className="space-y-3">
           {rule.commonTraps.map((trap, idx) => (
@@ -407,14 +409,14 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
         />
       )}
 
-      {/* 9. MINI ASSESSMENT QUIZ (اختبر فهمك الفوري للدرس) */}
+      {/* 9. MINI ASSESSMENT QUIZ */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div>
-            <span className="text-xs font-bold text-[#c4ff55]">التقييم السريع وفحص الاستيعاب</span>
-            <h3 className="text-2xl font-black text-white">اختبر نفسك فوراً في هذه القاعدة</h3>
+            <span className="text-xs font-bold text-[#c4ff55]">{t('gl.quizBadge')}</span>
+            <h3 className="text-2xl font-black text-white">{t('gl.quizTitle')}</h3>
           </div>
-          <span className="text-xs font-mono text-[#ffd166]">{rule.miniQuiz.length} أسئلة قياسية</span>
+          <span className="text-xs font-mono text-[#ffd166]">{rule.miniQuiz.length} {t('gl.quizCount')}</span>
         </div>
 
         <div className="space-y-6">
@@ -426,10 +428,10 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
             return (
               <div key={qIdx} className="p-5 sm:p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="text-xs font-black text-[#ffd166]">السؤال {qIdx + 1}</span>
+                  <span className="text-xs font-black text-[#ffd166]">{t('gl.questionN')} {qIdx + 1}</span>
                   {hasAnswered && (
                     <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}`}>
-                      {isCorrect ? 'إجابة صحيحة ممتاز!' : 'إجابة غير صحيحة'}
+                      {isCorrect ? t('gl.correct') : t('gl.wrong')}
                     </span>
                   )}
                 </div>
@@ -471,7 +473,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
 
                 {hasAnswered && (
                   <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-[#dedbf4] leading-relaxed">
-                    <span className="font-bold text-[#ffd166]">شرح الإجابة: </span>
+                    <span className="font-bold text-[#ffd166]">{t('gl.answerExpl')} </span>
                     {q.explanation}
                   </div>
                 )}
@@ -494,7 +496,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           >
             <ChevronRight className="w-4 h-4 text-[#ffd166]" />
             <div className="text-right">
-              <span className="block text-[10px] text-[#b9b6d5]">الدرس السابق</span>
+              <span className="block text-[10px] text-[#b9b6d5]">{t('gl.prevLesson')}</span>
               <span>{txText(appText, prevRule.titleAr).split(':')[0]}</span>
             </div>
           </button>
@@ -505,7 +507,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#121128] font-black text-sm flex items-center justify-center gap-2 hover:brightness-110 shadow-xl cursor-pointer transition-transform hover:-translate-y-0.5"
         >
           <Award className="w-5 h-5" />
-          <span>تأكيد إكمال الدرس وتسجيل النقاط</span>
+          <span>{t('gl.confirmComplete')}</span>
         </button>
 
         {nextRule ? (
@@ -518,7 +520,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
             className="w-full sm:w-auto px-5 py-3 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-white flex items-center justify-center gap-2 cursor-pointer transition-colors"
           >
             <div className="text-left">
-              <span className="block text-[10px] text-[#b9b6d5]">الدرس التالي</span>
+              <span className="block text-[10px] text-[#b9b6d5]">{t('gl.nextLesson')}</span>
               <span>{txText(appText, nextRule.titleAr).split(':')[0]}</span>
             </div>
             <ChevronLeft className="w-4 h-4 text-[#41e7ff]" />
