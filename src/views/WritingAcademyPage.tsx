@@ -1,3 +1,4 @@
+import { copyText } from '../services/copyText';
 import { writingFeedback } from '../services/writingFeedback';
 import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
@@ -32,6 +33,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
   const [submissionFeedback, setSubmissionFeedback] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
 
   const templates = {
     formal_email: {
@@ -78,10 +80,12 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
   const currentTemplate = templates[activeTemplate];
 
-  const handleCopyTemplate = () => {
+  const handleCopyTemplate = async () => {
     playSound('click');
     const fullText = `${currentTemplate.subject}\n\n${currentTemplate.salutation}\n\n${currentTemplate.body}\n\n${currentTemplate.signoff}`;
-    navigator.clipboard.writeText(fullText);
+    setCopied(false);
+    setCopyFailed(false);
+    if (!(await copyText(fullText))) { setCopyFailed(true); return; }
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -179,6 +183,8 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           </p>
         </div>
       </section>
+
+      {copyFailed && <p role="status" className="fixed bottom-4 inset-x-4 z-50 mx-auto max-w-lg rounded-xl border border-amber-300/30 bg-[#171320] p-4 text-sm text-amber-100 shadow-xl">{t('copy.failed')}</p>}
 
       {/* 1. TEMPLATE SELECTOR */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar">

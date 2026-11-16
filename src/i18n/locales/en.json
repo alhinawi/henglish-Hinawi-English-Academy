@@ -2818,5 +2818,6 @@
   "atm.exam-trainer.name": "Exam Trainer",
   "atm.exam-trainer.description": "Practice proficiency-test questions, time management and interactive exam tasks with corrections.",
   "atm.interview-coach.name": "Interview Trainer",
-  "atm.interview-coach.description": "Practice English job interviews, STAR answers and behavioral questions."
+  "atm.interview-coach.description": "Practice English job interviews, STAR answers and behavioral questions.",
+  "copy.failed": "Could not copy. Select the text and copy it manually."
 }
