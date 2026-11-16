@@ -2631,5 +2631,17 @@
   "lc.placeholder": "اكتب بالإنجليزي...",
   "lc.excellent": "ممتاز!",
   "lc.accuracy": "سمعت {percent}% بس من الكلمات",
-  "lc.check": "تأكد"
+  "lc.check": "تأكد",
+  "yt.library": "VIDEO RESOURCES • المكتبة المرئية للدرس",
+  "yt.title": "شروحات فيديو",
+  "yt.intro": "مصادر فيديو لشرح:",
+  "yt.video": "فيديو",
+  "yt.watchHere": "اضغط للمشاهدة الآن داخل المنصة",
+  "yt.error": "تعذر تضمين الفيديو داخل الصفحة حالياً",
+  "yt.errorHint": "جرّب فتح الفيديو مباشرة على YouTube.",
+  "yt.retry": "إعادة المحاولة",
+  "yt.open": "فتح الفيديو على YouTube",
+  "yt.loading": "جاري تحميل الفيديو...",
+  "yt.watch": "مشاهدة على YouTube",
+  "yt.timestamps": "أهم محطات الفيديو التعليمية:"
 }

@@ -2631,5 +2631,17 @@
   "lc.placeholder": "Type what you heard...",
   "lc.excellent": "Excellent!",
   "lc.accuracy": "You got {percent}% of the words right.",
-  "lc.check": "Check"
+  "lc.check": "Check",
+  "yt.library": "VIDEO RESOURCES • Lesson video library",
+  "yt.title": "Video explanations",
+  "yt.intro": "Video resources for:",
+  "yt.video": "Video",
+  "yt.watchHere": "Press to watch here",
+  "yt.error": "The video could not be embedded here.",
+  "yt.errorHint": "Try opening the video directly on YouTube.",
+  "yt.retry": "Try again",
+  "yt.open": "Open video on YouTube",
+  "yt.loading": "Loading video...",
+  "yt.watch": "Watch on YouTube",
+  "yt.timestamps": "Video highlights:"
 }
