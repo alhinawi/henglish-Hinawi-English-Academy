@@ -154,17 +154,24 @@ export function drawQuestions(all: BankQuestion[], opts: DrawOptions): BankQuest
   const key = poolKey(opts);
   const store = readServed();
   const served = new Set(store[key] ?? []);
-  let fresh = pool.filter(q => !served.has(q.id));
+  const fresh = pool.filter(q => !served.has(q.id));
+  const requested = Math.min(count, pool.length);
+  let drawn: BankQuestion[];
 
-  if (fresh.length < count) {
-    // Pool exhausted (or nearly): start a new cycle for this pool.
-    fresh = pool;
-    store[key] = [];
-    served.clear();
+  if (fresh.length < requested) {
+    // Finish the old cycle before repeating anything. Do not repeat a tail
+    // question within this draw when filling from the next cycle.
+    const tail = shuffle(fresh);
+    const tailIds = new Set(tail.map(q => q.id));
+    const nextCycle = shuffle(pool.filter(q => !tailIds.has(q.id)))
+      .slice(0, requested - tail.length);
+    drawn = [...tail, ...nextCycle];
+    store[key] = nextCycle.map(q => q.id);
+  } else {
+    drawn = shuffle(fresh).slice(0, requested);
+    store[key] = [...(store[key] ?? []), ...drawn.map(q => q.id)];
   }
 
-  const drawn = shuffle(fresh).slice(0, Math.min(count, fresh.length));
-  store[key] = [...(store[key] ?? []), ...drawn.map(q => q.id)];
   writeServed(store);
   return drawn;
 }
