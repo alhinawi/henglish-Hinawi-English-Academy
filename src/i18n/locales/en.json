@@ -1854,5 +1854,16 @@
   "ep.trapsTitle": "Common Translation Traps & How to Avoid Them:",
   "ep.whyTrap": "Why is this a trap?",
   "gs.google": "Continue with Google",
-  "gs.divider": "or with email"
+  "gs.divider": "or with email",
+  "sm.errSession": "The session is not ready. Please sign in again.",
+  "sm.errSave": "Something went wrong while saving. Try again.",
+  "sm.errAvatar": "Could not prepare the avatar. Try a different image.",
+  "sm.dialogAria": "Account settings",
+  "sm.avatarAlt": "Profile photo",
+  "sm.changePhoto": "Change your photo",
+  "sm.pickAvatar": "Or pick a ready avatar",
+  "sm.avatarN": "Avatar",
+  "sm.nameLabel": "Display name",
+  "sm.saving": "Saving...",
+  "sm.save": "Save changes"
 }

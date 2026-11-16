@@ -1854,5 +1854,16 @@
   "ep.trapsTitle": "فخاخ الترجمة الشائعة وكيفية تجنبها (Common Translation Traps):",
   "ep.whyTrap": "لماذا هذا فخ؟",
   "gs.google": "المتابعة بحساب Google",
-  "gs.divider": "أو بالإيميل"
+  "gs.divider": "أو بالإيميل",
+  "sm.errSession": "الجلسة مش جاهزة. سجّل دخولك من جديد.",
+  "sm.errSave": "حصلت مشكلة أثناء الحفظ. حاول تاني.",
+  "sm.errAvatar": "مش قادرين نجهز الأفاتار. جرّب صورة تانية.",
+  "sm.dialogAria": "إعدادات الحساب",
+  "sm.avatarAlt": "الصورة الشخصية",
+  "sm.changePhoto": "غيّر صورتك",
+  "sm.pickAvatar": "أو اختار أفاتار جاهز",
+  "sm.avatarN": "أفاتار",
+  "sm.nameLabel": "الاسم الظاهر",
+  "sm.saving": "بيحفظ...",
+  "sm.save": "احفظ التغييرات"
 }

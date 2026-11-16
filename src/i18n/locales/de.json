@@ -1854,5 +1854,16 @@
   "ep.trapsTitle": "Häufige Übersetzungsfallen & wie man sie vermeidet:",
   "ep.whyTrap": "Warum ist das eine Falle?",
   "gs.google": "Mit Google fortfahren",
-  "gs.divider": "oder per E-Mail"
+  "gs.divider": "oder per E-Mail",
+  "sm.errSession": "Die Sitzung ist nicht bereit. Bitte melde dich erneut an.",
+  "sm.errSave": "Beim Speichern ist ein Fehler aufgetreten. Versuche es erneut.",
+  "sm.errAvatar": "Avatar konnte nicht vorbereitet werden. Versuche ein anderes Bild.",
+  "sm.dialogAria": "Kontoeinstellungen",
+  "sm.avatarAlt": "Profilfoto",
+  "sm.changePhoto": "Foto ändern",
+  "sm.pickAvatar": "Oder wähle einen fertigen Avatar",
+  "sm.avatarN": "Avatar",
+  "sm.nameLabel": "Anzeigename",
+  "sm.saving": "Speichert...",
+  "sm.save": "Änderungen speichern"
 }
