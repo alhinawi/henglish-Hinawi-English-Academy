@@ -1,0 +1,3602 @@
+[
+ {
+  "id": "q-voc-001001",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which English word means: مجتمع / جماعة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: مجتمع / جماعة",
+  "options": [
+   "community",
+   "data",
+   "cyberspace",
+   "circuitry"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"community\" وتعني: مجتمع / جماعة.",
+  "topic": "Vocabulary: noun (B2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001002",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Our ______ is small.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "sound",
+   "invariable",
+   "community",
+   "unease"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"community\" بمعنى مجتمع / جماعة. الترجمة: مجتمعنا صغير.",
+  "topic": "Vocabulary in context (B2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001003",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does \"data\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"data\":",
+  "options": [
+   "ورقة شرح موزعة",
+   "ثقافة فرعية داخل مجتمع",
+   "عالم بيئة",
+   "بيانات / داتا"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"data\" هو: بيانات / داتا. مثال: البيانات على السيرفر.",
+  "topic": "Vocabulary: noun (B2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001004",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which English word means: بيانات / داتا?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: بيانات / داتا",
+  "options": [
+   "astonishment",
+   "craftsman",
+   "data",
+   "unease"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"data\" وتعني: بيانات / داتا.",
+  "topic": "Vocabulary: noun (B2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001005",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The ______ is on the server.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "data",
+   "bookmark",
+   "tropic",
+   "displeasure"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"data\" بمعنى بيانات / داتا. الترجمة: البيانات على السيرفر.",
+  "topic": "Vocabulary in context (B2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001006",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"late\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"late\":",
+  "options": [
+   "خايف / أفريد",
+   "متأخر",
+   "الخاص بيه / بتاعه هو",
+   "تقيل"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"late\" هو: متأخر. مثال: متأسف إني اتأخرت.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001007",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: متأخر?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: متأخر",
+  "options": [
+   "late",
+   "slow",
+   "little",
+   "bad"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"late\" وتعني: متأخر.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001008",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Sorry I'm ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "heavy",
+   "afraid",
+   "late",
+   "pretty"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"late\" بمعنى متأخر. الترجمة: متأسف إني اتأخرت.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001009",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"leave\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"leave\":",
+  "options": [
+   "ينقش / يكتب إهداء",
+   "تدوس / كليك",
+   "يسيب / يمشي",
+   "يحب / زي"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"leave\" هو: يسيب / يمشي. مثال: بمشي من الشغل الساعة خمسة.",
+  "topic": "Vocabulary: verb (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001010",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: يسيب / يمشي?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يسيب / يمشي",
+  "options": [
+   "proclaim",
+   "categorize",
+   "immigrate",
+   "leave"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"leave\" وتعني: يسيب / يمشي.",
+  "topic": "Vocabulary: verb (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001011",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I ______ work at five.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "reduce",
+   "hit",
+   "leave",
+   "protect"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"leave\" بمعنى يسيب / يمشي. الترجمة: بمشي من الشغل الساعة خمسة.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001012",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"north\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"north\":",
+  "options": [
+   "رصيد / كريديت",
+   "محامي / أتورني",
+   "شمال",
+   "قانون"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"north\" هو: شمال. مثال: إسكندرية في الشمال.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001013",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: شمال?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: شمال",
+  "options": [
+   "home",
+   "schoolchild",
+   "north",
+   "center"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"north\" وتعني: شمال.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001014",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Alexandria is in the ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "north",
+   "drug",
+   "strength",
+   "knowledge"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"north\" بمعنى شمال. الترجمة: إسكندرية في الشمال.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001015",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"special\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"special\":",
+  "options": [
+   "صحي / هيلثي",
+   "أحسن",
+   "قديم / كبير في السن",
+   "خاص / مميز"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"special\" هو: خاص / مميز. مثال: النهارده يوم مميز.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001016",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: خاص / مميز?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: خاص / مميز",
+  "options": [
+   "hot",
+   "special",
+   "excellent",
+   "strong"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"special\" وتعني: خاص / مميز.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001017",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Today is a ______ day.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "foreign",
+   "special",
+   "little",
+   "bad"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"special\" بمعنى خاص / مميز. الترجمة: النهارده يوم مميز.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001018",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"watch\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"watch\":",
+  "options": [
+   "يتفرج",
+   "ياكل",
+   "يركب / رايد",
+   "يسمع"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"watch\" هو: يتفرج. مثال: بتفرج على الماتش.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001019",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: يتفرج?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يتفرج",
+  "options": [
+   "listen",
+   "making",
+   "watch",
+   "bring"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"watch\" وتعني: يتفرج.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001020",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I'm ______ the match.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "watch",
+   "fight",
+   "meet",
+   "think"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"watch\" بمعنى يتفرج. الترجمة: بتفرج على الماتش.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001021",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"either\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"either\":",
+  "options": [
+   "كويس / يعني / بير",
+   "ليه",
+   "ولا / برضه",
+   "تقريبًا"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"either\" هو: ولا / برضه. مثال: أنا برضه مش عاجبني.",
+  "topic": "Vocabulary: adverb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001022",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: ولا / برضه?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: ولا / برضه",
+  "options": [
+   "why",
+   "really",
+   "quickly",
+   "either"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"either\" وتعني: ولا / برضه.",
+  "topic": "Vocabulary: adverb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001023",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I don't like it ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "everywhere",
+   "again",
+   "out",
+   "either"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"either\" بمعنى ولا / برضه. الترجمة: أنا برضه مش عاجبني.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001024",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"future\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"future\":",
+  "options": [
+   "عالم فلك",
+   "حرف جر",
+   "تمويل / فاندينج",
+   "مستقبل"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"future\" هو: مستقبل. مثال: المستقبل شكله كويس.",
+  "topic": "Vocabulary: noun (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001025",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: مستقبل?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: مستقبل",
+  "options": [
+   "sportsmanship",
+   "joint",
+   "future",
+   "climber"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"future\" وتعني: مستقبل.",
+  "topic": "Vocabulary: noun (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001026",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The ______ looks good.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "process",
+   "capacity",
+   "future",
+   "opening"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"future\" بمعنى مستقبل. الترجمة: المستقبل شكله كويس.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001027",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"light\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"light\":",
+  "options": [
+   "نور / ضو",
+   "درجة / جريد",
+   "كورة",
+   "خطاب / حرف / ليتر"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"light\" هو: نور / ضو. مثال: ولّع النور.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001028",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: نور / ضو?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: نور / ضو",
+  "options": [
+   "idea",
+   "light",
+   "self",
+   "music"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"light\" وتعني: نور / ضو.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001029",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Turn on the ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "surprise",
+   "moon",
+   "light",
+   "milk"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"light\" بمعنى نور / ضو. الترجمة: ولّع النور.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001030",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"low\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"low\":",
+  "options": [
+   "واطي / منخفض",
+   "بدري",
+   "أونلاين",
+   "متجوز"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"low\" هو: واطي / منخفض. مثال: الأسعار واطية هناك.",
+  "topic": "Vocabulary: adjective (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001031",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: واطي / منخفض?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: واطي / منخفض",
+  "options": [
+   "alone",
+   "likely",
+   "low",
+   "less"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"low\" وتعني: واطي / منخفض.",
+  "topic": "Vocabulary: adjective (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001032",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The prices are ______ there.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "mid",
+   "low",
+   "powerful",
+   "wide"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"low\" بمعنى واطي / منخفض. الترجمة: الأسعار واطية هناك.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001033",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"million\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"million\":",
+  "options": [
+   "ألف / ثاوزند",
+   "تالت",
+   "مية / هاندرد",
+   "مليون"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"million\" هو: مليون. مثال: مصر فيها أكتر من 100 مليون نسمة.",
+  "topic": "Vocabulary: number (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001034",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: مليون?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: مليون",
+  "options": [
+   "third",
+   "thousand",
+   "million",
+   "hundred"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"million\" وتعني: مليون.",
+  "topic": "Vocabulary: number (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001035",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Egypt has over 100 ______ people.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "million",
+   "fourth",
+   "thousand",
+   "hundred"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"million\" بمعنى مليون. الترجمة: مصر فيها أكتر من 100 مليون نسمة.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001036",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"morning\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"morning\":",
+  "options": [
+   "عربية",
+   "شمس",
+   "حيطة",
+   "صبح / الصبح"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"morning\" هو: صبح / الصبح. مثال: بشرب قهوة كل صبح.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001037",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: صبح / الصبح?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: صبح / الصبح",
+  "options": [
+   "photo",
+   "gift",
+   "morning",
+   "grade"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"morning\" وتعني: صبح / الصبح.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001038",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I drink coffee every ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "morning",
+   "board",
+   "message",
+   "line"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"morning\" بمعنى صبح / الصبح. الترجمة: بشرب قهوة كل صبح.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001039",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"police\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"police\":",
+  "options": [
+   "ذكاء / إنتليجانس",
+   "مخرج / مدير",
+   "حفيد أو حفيدة",
+   "شرطة / بوليس"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"police\" هو: شرطة / بوليس. مثال: كلّم البوليس!",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001040",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: شرطة / بوليس?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: شرطة / بوليس",
+  "options": [
+   "step",
+   "police",
+   "senate",
+   "cash"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"police\" وتعني: شرطة / بوليس.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001041",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Call the ______!",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "valley",
+   "traffic",
+   "opportunity",
+   "police"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"police\" بمعنى شرطة / بوليس. الترجمة: كلّم البوليس!",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001042",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"short\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"short\":",
+  "options": [
+   "أبيض",
+   "أول / الأول",
+   "قصير / قصيرة",
+   "مفتوح"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"short\" هو: قصير / قصيرة. مثال: الاجتماع كان قصير.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001043",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: قصير / قصيرة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: قصير / قصيرة",
+  "options": [
+   "small",
+   "short",
+   "clean",
+   "following"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"short\" وتعني: قصير / قصيرة.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001044",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The meeting was ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "short",
+   "foreign",
+   "healthy",
+   "social"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"short\" بمعنى قصير / قصيرة. الترجمة: الاجتماع كان قصير.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001045",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"stay\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"stay\":",
+  "options": [
+   "يفضل / يقعد",
+   "يفرش أو يجهّز",
+   "تدوس / كليك",
+   "يثبت / برووف"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"stay\" هو: يفضل / يقعد. مثال: اقعد هنا معايا.",
+  "topic": "Vocabulary: verb (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001046",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: يفضل / يقعد?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يفضل / يقعد",
+  "options": [
+   "retell",
+   "prove",
+   "stay",
+   "live"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"stay\" وتعني: يفضل / يقعد.",
+  "topic": "Vocabulary: verb (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001047",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "______ here with me.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "reunify",
+   "stay",
+   "like",
+   "fascinate"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"stay\" بمعنى يفضل / يقعد. الترجمة: اقعد هنا معايا.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001048",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"age\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"age\":",
+  "options": [
+   "سن / عمر",
+   "عيلة",
+   "جروب / مجموعة",
+   "خطة / بلان"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"age\" هو: سن / عمر. مثال: سنك كام؟",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001049",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: سن / عمر?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: سن / عمر",
+  "options": [
+   "age",
+   "date",
+   "minute",
+   "life"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"age\" وتعني: سن / عمر.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001050",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What's your ______?",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "stone",
+   "age",
+   "movie",
+   "moment"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"age\" بمعنى سن / عمر. الترجمة: سنك كام؟",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001051",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"buy\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"buy\":",
+  "options": [
+   "يشتري",
+   "يكتب",
+   "قول / بيقول",
+   "يغطّي"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"buy\" هو: يشتري. مثال: عايز أشتري عيش.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001052",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: يشتري?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يشتري",
+  "options": [
+   "cover",
+   "drive",
+   "buy",
+   "meet"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"buy\" وتعني: يشتري.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001053",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I want to ______ bread.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "drink",
+   "buy",
+   "play",
+   "be"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"buy\" بمعنى يشتري. الترجمة: عايز أشتري عيش.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001054",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"deal\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"deal\":",
+  "options": [
+   "مجتمع",
+   "جمهوري / ريبابليكان",
+   "حقيقة",
+   "صفقة / اتفاق"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"deal\" هو: صفقة / اتفاق. مثال: دي صفقة كويسة.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001055",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: صفقة / اتفاق?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: صفقة / اتفاق",
+  "options": [
+   "award",
+   "system",
+   "labor",
+   "deal"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"deal\" وتعني: صفقة / اتفاق.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001056",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It's a good ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "deal",
+   "government",
+   "human",
+   "air"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"deal\" بمعنى صفقة / اتفاق. الترجمة: دي صفقة كويسة.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001057",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"rather\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"rather\":",
+  "options": [
+   "أخيرًا",
+   "بدل / مكان",
+   "بالأحرى / إلى حد ما",
+   "تقريبًا / كاد"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"rather\" هو: بالأحرى / إلى حد ما. مثال: أفضّل أقعد في البيت.",
+  "topic": "Vocabulary: adverb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001058",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: بالأحرى / إلى حد ما?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: بالأحرى / إلى حد ما",
+  "options": [
+   "besides",
+   "nearly",
+   "therefore",
+   "rather"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"rather\" وتعني: بالأحرى / إلى حد ما.",
+  "topic": "Vocabulary: adverb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001059",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I'd ______ stay home.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "ever",
+   "rather",
+   "seriously",
+   "forever"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"rather\" بمعنى بالأحرى / إلى حد ما. الترجمة: أفضّل أقعد في البيت.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001060",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"reason\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"reason\":",
+  "options": [
+   "حاجة",
+   "سبب",
+   "شباك / ويندو",
+   "ذات / نفس"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"reason\" هو: سبب. مثال: لكل حاجة سبب.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001061",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: سبب?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: سبب",
+  "options": [
+   "apple",
+   "boat",
+   "reason",
+   "city"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"reason\" وتعني: سبب.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001062",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There's a ______ for everything.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "technology",
+   "list",
+   "lady",
+   "reason"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"reason\" بمعنى سبب. الترجمة: لكل حاجة سبب.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001063",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"report\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"report\":",
+  "options": [
+   "تقرير",
+   "شمبانزي",
+   "زحمة / ترافيك",
+   "مملكة / كينجدوم"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"report\" هو: تقرير. مثال: التقرير جاهز.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001064",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: تقرير?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: تقرير",
+  "options": [
+   "meaning",
+   "silver",
+   "report",
+   "oil"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"report\" وتعني: تقرير.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001065",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The ______ is ready.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "laziness",
+   "credit",
+   "material",
+   "report"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"report\" بمعنى تقرير. الترجمة: التقرير جاهز.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001066",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"soon\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"soon\":",
+  "options": [
+   "لسه",
+   "يمكن",
+   "قريب / عن قريب",
+   "مرة واحدة"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"soon\" هو: قريب / عن قريب. مثال: أشوفك قريب.",
+  "topic": "Vocabulary: adverb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001067",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: قريب / عن قريب?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: قريب / عن قريب",
+  "options": [
+   "soon",
+   "already",
+   "ago",
+   "once"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"soon\" وتعني: قريب / عن قريب.",
+  "topic": "Vocabulary: adverb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001068",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "See you ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "now",
+   "already",
+   "soon",
+   "away"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"soon\" بمعنى قريب / عن قريب. الترجمة: أشوفك قريب.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001069",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"third\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"third\":",
+  "options": [
+   "ألف / ثاوزند",
+   "مليون",
+   "تالت",
+   "مية / هاندرد"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"third\" هو: تالت. مثال: دي تالت مرة أجي هنا.",
+  "topic": "Vocabulary: number (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001070",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: تالت?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: تالت",
+  "options": [
+   "third",
+   "million",
+   "thousand",
+   "hundred"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"third\" وتعني: تالت.",
+  "topic": "Vocabulary: number (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001071",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is my ______ time here.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "million",
+   "fourth",
+   "thousand",
+   "third"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"third\" بمعنى تالت. الترجمة: دي تالت مرة أجي هنا.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001072",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"turn\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"turn\":",
+  "options": [
+   "يلمس / تاتش",
+   "يكون (مع الجمع وانت)",
+   "ييجي",
+   "يلف / دوره"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"turn\" هو: يلف / دوره. مثال: خد يمين عند الناصية.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001073",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: يلف / دوره?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يلف / دوره",
+  "options": [
+   "be",
+   "turn",
+   "write",
+   "start"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"turn\" وتعني: يلف / دوره.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001074",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "______ right at the corner.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "won",
+   "build",
+   "teach",
+   "turn"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"turn\" بمعنى يلف / دوره. الترجمة: خد يمين عند الناصية.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001075",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"whether\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"whether\":",
+  "options": [
+   "لحد ما / تيل",
+   "بلاس / بالإضافة",
+   "لو / سواء",
+   "ولا / نور"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"whether\" هو: لو / سواء. مثال: مش عارف لو هيجي ولا لأ.",
+  "topic": "Vocabulary: conjunction (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001076",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: لو / سواء?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: لو / سواء",
+  "options": [
+   "plus",
+   "till",
+   "whether",
+   "nor"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"whether\" وتعني: لو / سواء.",
+  "topic": "Vocabulary: conjunction (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001077",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "I don't know ______ he'll come.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "plus",
+   "nor",
+   "till",
+   "whether"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"whether\" بمعنى لو / سواء. الترجمة: مش عارف لو هيجي ولا لأ.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001078",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"check\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"check\":",
+  "options": [
+   "يبدأ",
+   "يوافق",
+   "يلمس / تاتش",
+   "يتأكد / يشيك"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"check\" هو: يتأكد / يشيك. مثال: اتأكد إن الباب مقفول.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001079",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: يتأكد / يشيك?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يتأكد / يشيك",
+  "options": [
+   "tell",
+   "sell",
+   "stand",
+   "check"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"check\" وتعني: يتأكد / يشيك.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001080",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "______ the door is locked.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "check",
+   "happen",
+   "have",
+   "begin"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"check\" بمعنى يتأكد / يشيك. الترجمة: اتأكد إن الباب مقفول.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001081",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"development\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"development\":",
+  "options": [
+   "حماية / بروتكشن",
+   "تطوير / تطور",
+   "واجب / ديوتي",
+   "تعبير اصطلاحي"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"development\" هو: تطوير / تطور. مثال: المنطقة تحت التطوير.",
+  "topic": "Vocabulary: noun (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001082",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: تطوير / تطور?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: تطوير / تطور",
+  "options": [
+   "identity",
+   "income",
+   "development",
+   "skyscraper"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"development\" وتعني: تطوير / تطور.",
+  "topic": "Vocabulary: noun (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001083",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The area is under ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "protection",
+   "nectar",
+   "access",
+   "development"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"development\" بمعنى تطوير / تطور. الترجمة: المنطقة تحت التطوير.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001084",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"form\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"form\":",
+  "options": [
+   "فلوس",
+   "فرقة / باند",
+   "استمارة / فورم",
+   "سبب"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"form\" هو: استمارة / فورم. مثال: املأ الاستمارة دي.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001085",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: استمارة / فورم?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: استمارة / فورم",
+  "options": [
+   "mail",
+   "self",
+   "list",
+   "form"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"form\" وتعني: استمارة / فورم.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001086",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Fill in this ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "idea",
+   "actor",
+   "speech",
+   "form"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"form\" بمعنى استمارة / فورم. الترجمة: املأ الاستمارة دي.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001087",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"further\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"further\":",
+  "options": [
+   "غالبًا",
+   "أبعد / أكتر",
+   "غالبًا / موستلي",
+   "لقدام"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"further\" هو: أبعد / أكتر. مثال: مقدرش أمشي أبعد من كده.",
+  "topic": "Vocabulary: adverb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001088",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: أبعد / أكتر?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: أبعد / أكتر",
+  "options": [
+   "seriously",
+   "anymore",
+   "clearly",
+   "further"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"further\" وتعني: أبعد / أكتر.",
+  "topic": "Vocabulary: adverb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001089",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I can't walk any ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "apparently",
+   "rather",
+   "instead",
+   "further"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"further\" بمعنى أبعد / أكتر. الترجمة: مقدرش أمشي أبعد من كده.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001090",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"heart\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"heart\":",
+  "options": [
+   "جوز / زوج",
+   "قلب",
+   "إيد",
+   "نص / وسط"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"heart\" هو: قلب. مثال: قلبه طيب.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001091",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: قلب?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: قلب",
+  "options": [
+   "spring",
+   "heart",
+   "music",
+   "pool"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"heart\" وتعني: قلب.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001092",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He has a good ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "ice",
+   "heart",
+   "minute",
+   "story"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"heart\" بمعنى قلب. الترجمة: قلبه طيب.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001093",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"among\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"among\":",
+  "options": [
+   "أثناء / خلال",
+   "من بين / وسط",
+   "بعد",
+   "ورا / بعد"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"among\" هو: من بين / وسط. مثال: هو محبوب وسط الطلبة.",
+  "topic": "Vocabulary: preposition (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001094",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: من بين / وسط?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: من بين / وسط",
+  "options": [
+   "within",
+   "among",
+   "on",
+   "upon"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"among\" وتعني: من بين / وسط.",
+  "topic": "Vocabulary: preposition (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001095",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He's popular ______ students.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "towards",
+   "among",
+   "as",
+   "except"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"among\" بمعنى من بين / وسط. الترجمة: هو محبوب وسط الطلبة.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001096",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"myself\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"myself\":",
+  "options": [
+   "مين (لمن)",
+   "نفسي",
+   "محدش",
+   "نفسه"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"myself\" هو: نفسي. مثال: أنا عملته بنفسي.",
+  "topic": "Vocabulary: pronoun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001097",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: نفسي?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: نفسي",
+  "options": [
+   "ya",
+   "myself",
+   "somebody",
+   "itself"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"myself\" وتعني: نفسي.",
+  "topic": "Vocabulary: pronoun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001098",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I made it ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "whom",
+   "myself",
+   "themselves",
+   "nobody"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"myself\" بمعنى نفسي. الترجمة: أنا عملته بنفسي.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001099",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"yourself\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"yourself\":",
+  "options": [
+   "بتاعه / خاصته",
+   "نفسك",
+   "انت / حضرتك",
+   "هم (مفعول) / هوم"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"yourself\" هو: نفسك. مثال: خد بالك من نفسك.",
+  "topic": "Vocabulary: pronoun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001100",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: نفسك?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: نفسك",
+  "options": [
+   "everyone",
+   "she",
+   "something",
+   "yourself"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"yourself\" وتعني: نفسك.",
+  "topic": "Vocabulary: pronoun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001101",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Take care of ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "her",
+   "them",
+   "yourself",
+   "our"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"yourself\" بمعنى نفسك. الترجمة: خد بالك من نفسك.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001102",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"act\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"act\":",
+  "options": [
+   "يتصرف / يمثل",
+   "يدخل / إنتر",
+   "واقف",
+   "ينتج / بروديوس"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"act\" هو: يتصرف / يمثل. مثال: متتصرفش زي العيال.",
+  "topic": "Vocabulary: verb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001103",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: يتصرف / يمثل?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يتصرف / يمثل",
+  "options": [
+   "act",
+   "release",
+   "drop",
+   "complete"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"act\" وتعني: يتصرف / يمثل.",
+  "topic": "Vocabulary: verb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001104",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Don't ______ like a child.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "notice",
+   "appreciate",
+   "born",
+   "act"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"act\" بمعنى يتصرف / يمثل. الترجمة: متتصرفش زي العيال.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001105",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"child\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"child\":",
+  "options": [
+   "طفل / ولد",
+   "شوطة / كيك",
+   "سبب",
+   "قصة / حكاية"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"child\" هو: طفل / ولد. مثال: الطفل نايم.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001106",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: طفل / ولد?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: طفل / ولد",
+  "options": [
+   "child",
+   "medicine",
+   "war",
+   "computer"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"child\" وتعني: طفل / ولد.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001107",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The ______ is sleeping.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "child",
+   "word",
+   "mom",
+   "section"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"child\" بمعنى طفل / ولد. الترجمة: الطفل نايم.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001108",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"fire\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"fire\":",
+  "options": [
+   "شخص / واحد",
+   "نار / حريقة",
+   "فيلم",
+   "لحمة / ميت"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"fire\" هو: نار / حريقة. مثال: في حريقة في العمارة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001109",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: نار / حريقة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: نار / حريقة",
+  "options": [
+   "date",
+   "light",
+   "march",
+   "fire"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"fire\" وتعني: نار / حريقة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001110",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "There's a ______ in the building.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "gold",
+   "fire",
+   "field",
+   "map"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"fire\" بمعنى نار / حريقة. الترجمة: في حريقة في العمارة.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001111",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"fun\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"fun\":",
+  "options": [
+   "نسخة / كوبي",
+   "متعة / هزار",
+   "ذات / نفس",
+   "كتير (a lot)"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"fun\" هو: متعة / هزار. مثال: كان ممتع جدًا.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001112",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: متعة / هزار?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: متعة / هزار",
+  "options": [
+   "shirt",
+   "meat",
+   "color",
+   "fun"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"fun\" وتعني: متعة / هزار.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001113",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "It was a lot of ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "mountain",
+   "sale",
+   "fun",
+   "game"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"fun\" بمعنى متعة / هزار. الترجمة: كان ممتع جدًا.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001114",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"living\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"living\":",
+  "options": [
+   "إجابة",
+   "معيشة",
+   "قايمة / لستة",
+   "استطلاع / سيرفي"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"living\" هو: معيشة. مثال: المعيشة هنا رخيصة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001115",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: معيشة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: معيشة",
+  "options": [
+   "living",
+   "room",
+   "camera",
+   "house"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"living\" وتعني: معيشة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001116",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "______ here is cheap.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "mountain",
+   "key",
+   "living",
+   "building"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"living\" بمعنى معيشة. الترجمة: المعيشة هنا رخيصة.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001117",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"phone\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"phone\":",
+  "options": [
+   "تاريخ",
+   "مدينة",
+   "موبايل / تليفون",
+   "نسخة / كوبي"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"phone\" هو: موبايل / تليفون. مثال: موبايلي بيشحن.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001118",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: موبايل / تليفون?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: موبايل / تليفون",
+  "options": [
+   "phone",
+   "self",
+   "bridge",
+   "street"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"phone\" وتعني: موبايل / تليفون.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001119",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My ______ is charging.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "character",
+   "year",
+   "collection",
+   "phone"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"phone\" بمعنى موبايل / تليفون. الترجمة: موبايلي بيشحن.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001120",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"although\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"although\":",
+  "options": [
+   "بينما / وإنت",
+   "فين / حيث",
+   "عشان / لأن",
+   "بالرغم من / مع إن"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"although\" هو: بالرغم من / مع إن. مثال: مع إن الدنيا مطرت، خرجنا.",
+  "topic": "Vocabulary: conjunction (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001121",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: بالرغم من / مع إن?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: بالرغم من / مع إن",
+  "options": [
+   "how",
+   "while",
+   "although",
+   "but"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"although\" وتعني: بالرغم من / مع إن.",
+  "topic": "Vocabulary: conjunction (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001122",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "______ it rained, we went out.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "although",
+   "because",
+   "while",
+   "and"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"although\" بمعنى بالرغم من / مع إن. الترجمة: مع إن الدنيا مطرت، خرجنا.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001123",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"behind\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"behind\":",
+  "options": [
+   "جوه / لداخل",
+   "عن / حوالي",
+   "على طول / مع",
+   "ورا"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"behind\" هو: ورا. مثال: العربية ورا البيت.",
+  "topic": "Vocabulary: preposition (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001124",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: ورا?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: ورا",
+  "options": [
+   "behind",
+   "off",
+   "along",
+   "re"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"behind\" وتعني: ورا.",
+  "topic": "Vocabulary: preposition (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001125",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The car is ______ the house.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "behind",
+   "below",
+   "of",
+   "re"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"behind\" بمعنى ورا. الترجمة: العربية ورا البيت.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001126",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"building\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"building\":",
+  "options": [
+   "متعة / هزار",
+   "تلج / سنو",
+   "الليلة / النهارده بالليل",
+   "عمارة / مبنى"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"building\" هو: عمارة / مبنى. مثال: العمارة دي قديمة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001127",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: عمارة / مبنى?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: عمارة / مبنى",
+  "options": [
+   "book",
+   "mountain",
+   "fire",
+   "building"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"building\" وتعني: عمارة / مبنى.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001128",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "This ______ is old.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "morning",
+   "type",
+   "party",
+   "building"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"building\" بمعنى عمارة / مبنى. الترجمة: العمارة دي قديمة.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001129",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"easy\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"easy\":",
+  "options": [
+   "جميل / لافلي",
+   "هادي / كوايت",
+   "مليان شبورة",
+   "سهل"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"easy\" هو: سهل. مثال: الامتحان كان سهل.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001130",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: سهل?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: سهل",
+  "options": [
+   "high",
+   "only",
+   "easy",
+   "good"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"easy\" وتعني: سهل.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001131",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The test was ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "cold",
+   "full",
+   "open",
+   "easy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"easy\" بمعنى سهل. الترجمة: الامتحان كان سهل.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001132",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"market\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"market\":",
+  "options": [
+   "ميزان / سكيل",
+   "سحر / ماجيك",
+   "سوق",
+   "خبرة"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"market\" هو: سوق. مثال: رايح السوق.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001133",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: سوق?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: سوق",
+  "options": [
+   "credit",
+   "market",
+   "running",
+   "twitter"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"market\" وتعني: سوق.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001134",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I'm going to the ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "market",
+   "back",
+   "cent",
+   "hero"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"market\" بمعنى سوق. الترجمة: رايح السوق.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001135",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"near\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"near\":",
+  "options": [
+   "في / لكل",
+   "لحد",
+   "قريب من / جنب",
+   "على / أونتو"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"near\" هو: قريب من / جنب. مثال: الصيدلية قريبة من هنا.",
+  "topic": "Vocabulary: preposition (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001136",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: قريب من / جنب?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: قريب من / جنب",
+  "options": [
+   "until",
+   "per",
+   "via",
+   "near"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"near\" وتعني: قريب من / جنب.",
+  "topic": "Vocabulary: preposition (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001137",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The pharmacy is ______ here.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "per",
+   "via",
+   "onto",
+   "near"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"near\" بمعنى قريب من / جنب. الترجمة: الصيدلية قريبة من هنا.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001138",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"non\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"non\":",
+  "options": [
+   "يمكن",
+   "غير / مش",
+   "لسه / برضه",
+   "خلاص / بالفعل"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"non\" هو: غير / مش. مثال: دي منطقة ممنوع فيها التدخين.",
+  "topic": "Vocabulary: adverb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001139",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: غير / مش?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: غير / مش",
+  "options": [
+   "yet",
+   "then",
+   "non",
+   "already"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"non\" وتعني: غير / مش.",
+  "topic": "Vocabulary: adverb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001140",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "This is a ______-smoking area.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "non",
+   "quickly",
+   "also",
+   "usually"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"non\" بمعنى غير / مش. الترجمة: دي منطقة ممنوع فيها التدخين.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001141",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"plan\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"plan\":",
+  "options": [
+   "متعة / هزار",
+   "نهاية",
+   "اهتمام / رعاية",
+   "خطة / بلان"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"plan\" هو: خطة / بلان. مثال: إيه الخطة بالليل؟",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001142",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: خطة / بلان?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: خطة / بلان",
+  "options": [
+   "birthday",
+   "file",
+   "body",
+   "plan"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"plan\" وتعني: خطة / بلان.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001143",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What's the ______ for tonight?",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "plan",
+   "post",
+   "march",
+   "group"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"plan\" بمعنى خطة / بلان. الترجمة: إيه الخطة بالليل؟",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001144",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"political\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"political\":",
+  "options": [
+   "مجنون / زعلان / ماد",
+   "رخيص / تشيب",
+   "سياسي",
+   "أنثى / فيميل"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"political\" هو: سياسي. مثال: مبتابعش الأخبار السياسية.",
+  "topic": "Vocabulary: adjective (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001145",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: سياسي?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: سياسي",
+  "options": [
+   "political",
+   "specific",
+   "alive",
+   "superlative"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"political\" وتعني: سياسي.",
+  "topic": "Vocabulary: adjective (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001146",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I don't follow ______ news.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "double",
+   "normal",
+   "political",
+   "impossible"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"political\" بمعنى سياسي. الترجمة: مبتابعش الأخبار السياسية.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001147",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"quite\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"quite\":",
+  "options": [
+   "قبل كده / ولا مرة",
+   "بجد / حقًا",
+   "لذلك / عشان كده",
+   "جدًا / إلى حد كبير"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"quite\" هو: جدًا / إلى حد كبير. مثال: الفيلم كان حلو جدًا.",
+  "topic": "Vocabulary: adverb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001148",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: جدًا / إلى حد كبير?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: جدًا / إلى حد كبير",
+  "options": [
+   "fully",
+   "apparently",
+   "quite",
+   "truly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"quite\" وتعني: جدًا / إلى حد كبير.",
+  "topic": "Vocabulary: adverb (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001149",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The film was ______ good.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "possibly",
+   "quite",
+   "apart",
+   "seriously"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"quite\" بمعنى جدًا / إلى حد كبير. الترجمة: الفيلم كان حلو جدًا.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001150",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"six\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"six\":",
+  "options": [
+   "اتنين",
+   "تلاتة",
+   "ستة",
+   "تسعة"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"six\" هو: ستة. مثال: عندي ست بيضات.",
+  "topic": "Vocabulary: number (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001151",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: ستة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: ستة",
+  "options": [
+   "three",
+   "seven",
+   "five",
+   "six"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"six\" وتعني: ستة.",
+  "topic": "Vocabulary: number (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001152",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I have ______ eggs.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "six",
+   "four",
+   "eight",
+   "two"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"six\" بمعنى ستة. الترجمة: عندي ست بيضات.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001153",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"available\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"available\":",
+  "options": [
+   "عام",
+   "اقتصادي",
+   "متاح / موجود",
+   "إقليمي / ريجيونال"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"available\" هو: متاح / موجود. مثال: الترابيزة دي فاضية؟",
+  "topic": "Vocabulary: adjective (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001154",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: متاح / موجود?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: متاح / موجود",
+  "options": [
+   "unafraid",
+   "available",
+   "various",
+   "aware"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"available\" وتعني: متاح / موجود.",
+  "topic": "Vocabulary: adjective (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001155",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Is this table ______?",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "pure",
+   "available",
+   "financial",
+   "anti"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"available\" بمعنى متاح / موجود. الترجمة: الترابيزة دي فاضية؟",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001156",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"education\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"education\":",
+  "options": [
+   "غاز / بنزين / جاز",
+   "فرح / ويدينج",
+   "وكالة / أجنسي",
+   "تعليم"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"education\" هو: تعليم. مثال: التعليم مهم.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001157",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: تعليم?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: تعليم",
+  "options": [
+   "scale",
+   "flight",
+   "education",
+   "success"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"education\" وتعني: تعليم.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001158",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "______ is important.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "government",
+   "fault",
+   "education",
+   "truth"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"education\" بمعنى تعليم. الترجمة: التعليم مهم.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001159",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"final\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"final\":",
+  "options": [
+   "محدد / سبيسيفيك",
+   "أكبر في السن",
+   "ضعيف / ويك",
+   "نهائي / أخير"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"final\" هو: نهائي / أخير. مثال: دي إجابتي النهائية.",
+  "topic": "Vocabulary: adjective (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001160",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: نهائي / أخير?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: نهائي / أخير",
+  "options": [
+   "crazy",
+   "basic",
+   "final",
+   "significant"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"final\" وتعني: نهائي / أخير.",
+  "topic": "Vocabulary: adjective (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001161",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is my ______ answer.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "significant",
+   "simple",
+   "older",
+   "final"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"final\" بمعنى نهائي / أخير. الترجمة: دي إجابتي النهائية.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001162",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"former\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"former\":",
+  "options": [
+   "تاريخي / هيستوريكال",
+   "سابق",
+   "أعمق حاجة جوّه",
+   "سكران / درانك"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"former\" هو: سابق. مثال: ده مديري السابق.",
+  "topic": "Vocabulary: adjective (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001163",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: سابق?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: سابق",
+  "options": [
+   "economic",
+   "huge",
+   "former",
+   "incredible"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"former\" وتعني: سابق.",
+  "topic": "Vocabulary: adjective (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001164",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "He's my ______ boss.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "limited",
+   "various",
+   "historical",
+   "former"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"former\" بمعنى سابق. الترجمة: ده مديري السابق.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001165",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"front\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"front\":",
+  "options": [
+   "قدام / الواجهة",
+   "مطبخ / كيتشن",
+   "بريد / ميل",
+   "علم / ساينس"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"front\" هو: قدام / الواجهة. مثال: اقابلني قدام المحل.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001166",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: قدام / الواجهة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: قدام / الواجهة",
+  "options": [
+   "garden",
+   "moon",
+   "front",
+   "survey"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"front\" وتعني: قدام / الواجهة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001167",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Meet me in ______ of the shop.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "brother",
+   "review",
+   "front",
+   "evening"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"front\" بمعنى قدام / الواجهة. الترجمة: اقابلني قدام المحل.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001168",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"list\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"list\":",
+  "options": [
+   "مطعم / ريستورانت",
+   "أغنية",
+   "قايمة / لستة",
+   "كابتن / مدرب / كوتش"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "معنى \"list\" هو: قايمة / لستة. مثال: اعمل قايمة باللي محتاجينه.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001169",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: قايمة / لستة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: قايمة / لستة",
+  "options": [
+   "body",
+   "interview",
+   "list",
+   "hospital"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"list\" وتعني: قايمة / لستة.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001170",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Make a ______ of what we need.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "list",
+   "hour",
+   "mail",
+   "pool"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"list\" بمعنى قايمة / لستة. الترجمة: اعمل قايمة باللي محتاجينه.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001171",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"ready\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"ready\":",
+  "options": [
+   "مهتم",
+   "جاهز",
+   "مفتوح",
+   "قصير / قصيرة"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"ready\" هو: جاهز. مثال: العشا جاهز.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001172",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: جاهز?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: جاهز",
+  "options": [
+   "little",
+   "cute",
+   "smart",
+   "ready"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"ready\" وتعني: جاهز.",
+  "topic": "Vocabulary: adjective (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001173",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Dinner is ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "brown",
+   "ready",
+   "excellent",
+   "warm"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"ready\" بمعنى جاهز. الترجمة: العشا جاهز.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001174",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"sometimes\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"sometimes\":",
+  "options": [
+   "في الآخر / إيفينتشوالي",
+   "حتى",
+   "شوية / سلايتلي",
+   "ساعات"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"sometimes\" هو: ساعات. مثال: ساعات بشتغل من البيت.",
+  "topic": "Vocabulary: adverb (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001175",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: ساعات?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: ساعات",
+  "options": [
+   "sometimes",
+   "even",
+   "highly",
+   "excitedly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"sometimes\" وتعني: ساعات.",
+  "topic": "Vocabulary: adverb (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001176",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "______ I work from home.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "sometimes",
+   "entirely",
+   "carelessly",
+   "particularly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"sometimes\" بمعنى ساعات. الترجمة: ساعات بشتغل من البيت.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001177",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"street\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"street\":",
+  "options": [
+   "شارع",
+   "ماتش",
+   "درجة / جريد",
+   "دوا / ميديسين"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"street\" هو: شارع. مثال: شارعنا هادي.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001178",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: شارع?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: شارع",
+  "options": [
+   "spot",
+   "name",
+   "dinner",
+   "street"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"street\" وتعني: شارع.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001179",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Our ______ is quiet.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "woman",
+   "apple",
+   "street",
+   "card"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"street\" بمعنى شارع. الترجمة: شارعنا هادي.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001180",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"bring\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"bring\":",
+  "options": [
+   "عنده / يملك",
+   "يسمع / يركّز",
+   "يمشي",
+   "يجيب / يهات"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"bring\" هو: يجيب / يهات. مثال: هات مية معاك.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001181",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: يجيب / يهات?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يجيب / يهات",
+  "options": [
+   "bring",
+   "join",
+   "ride",
+   "hold"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"bring\" وتعني: يجيب / يهات.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001182",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "______ water with you.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "sell",
+   "bring",
+   "call",
+   "come"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"bring\" بمعنى يجيب / يهات. الترجمة: هات مية معاك.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001183",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"college\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"college\":",
+  "options": [
+   "هدية / جيفت",
+   "كلية",
+   "رياضة / سبورت",
+   "مفاجأة / سيربرايز"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"college\" هو: كلية. مثال: هي في آخر سنة كلية.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001184",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: كلية?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: كلية",
+  "options": [
+   "driver",
+   "kitchen",
+   "college",
+   "hour"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"college\" وتعني: كلية.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001185",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She's in her last year of ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "code",
+   "writer",
+   "time",
+   "college"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"college\" بمعنى كلية. الترجمة: هي في آخر سنة كلية.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001186",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What does \"current\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"current\":",
+  "options": [
+   "صناعي / إنداستريال",
+   "اقتصادي",
+   "حاسس بتحسن معنوي",
+   "حالي / دلوقتي"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"current\" هو: حالي / دلوقتي. مثال: شغلي الحالي كويس.",
+  "topic": "Vocabulary: adjective (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001187",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which English word means: حالي / دلوقتي?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: حالي / دلوقتي",
+  "options": [
+   "uninterested",
+   "serious",
+   "proud",
+   "current"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"current\" وتعني: حالي / دلوقتي.",
+  "topic": "Vocabulary: adjective (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001188",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "My ______ job is good.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "civil",
+   "regional",
+   "current",
+   "talkative"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"current\" بمعنى حالي / دلوقتي. الترجمة: شغلي الحالي كويس.",
+  "topic": "Vocabulary in context (B1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001189",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"example\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"example\":",
+  "options": [
+   "شتاء / وينتر",
+   "دور",
+   "مدينة",
+   "مثال"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"example\" هو: مثال. مثال: هات مثال.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001190",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: مثال?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: مثال",
+  "options": [
+   "girl",
+   "lunch",
+   "example",
+   "matter"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"example\" وتعني: مثال.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001191",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Give me an ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "board",
+   "daughter",
+   "theater",
+   "example"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الكلمة الصحيحة هي \"example\" بمعنى مثال. الترجمة: هات مثال.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001192",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does \"experience\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"experience\":",
+  "options": [
+   "موت",
+   "خبرة",
+   "تمرين / إكسر سايز",
+   "قرن"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "معنى \"experience\" هو: خبرة. مثال: عنده خبرة عشر سنين.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001193",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Which English word means: خبرة?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: خبرة",
+  "options": [
+   "stair",
+   "production",
+   "experience",
+   "truth"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"experience\" وتعني: خبرة.",
+  "topic": "Vocabulary: noun (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001194",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He has ten years of ______.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "fault",
+   "association",
+   "experience",
+   "chimpanzee"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"experience\" بمعنى خبرة. الترجمة: عنده خبرة عشر سنين.",
+  "topic": "Vocabulary in context (A2)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001195",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"meet\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"meet\":",
+  "options": [
+   "ياكل",
+   "يبني",
+   "الحصول على",
+   "يقابل"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "معنى \"meet\" هو: يقابل. مثال: هنتقابل الساعة سبعة.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001196",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: يقابل?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: يقابل",
+  "options": [
+   "stand",
+   "meet",
+   "sit",
+   "eat"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الكلمة الصحيحة هي \"meet\" وتعني: يقابل.",
+  "topic": "Vocabulary: verb (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001197",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Let's ______ at seven.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "meet",
+   "add",
+   "remember",
+   "would"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الكلمة الصحيحة هي \"meet\" بمعنى يقابل. الترجمة: هنتقابل الساعة سبعة.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001198",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What does \"program\" mean?",
+  "promptAr": "اختر المعنى الصحيح لكلمة \"program\":",
+  "options": [
+   "برنامج",
+   "لبن / ميلك",
+   "بنت / ابنة",
+   "فصل / حصة"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "معنى \"program\" هو: برنامج. مثال: البرنامج ده مفيد.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001199",
+  "skill": "vocabulary",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Which English word means: برنامج?",
+  "promptAr": "اختر الكلمة الإنجليزية التي معناها: برنامج",
+  "options": [
+   "collection",
+   "time",
+   "program",
+   "fire"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"program\" وتعني: برنامج.",
+  "topic": "Vocabulary: noun (A1)",
+  "source": "generated-vocab"
+ },
+ {
+  "id": "q-voc-001200",
+  "skill": "vocabulary",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "This ______ is useful.",
+  "promptAr": "أكمل الجملة بالكلمة المناسبة:",
+  "options": [
+   "war",
+   "animal",
+   "program",
+   "story"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الكلمة الصحيحة هي \"program\" بمعنى برنامج. الترجمة: البرنامج ده مفيد.",
+  "topic": "Vocabulary in context (A1)",
+  "source": "generated-vocab"
+ }
+]
