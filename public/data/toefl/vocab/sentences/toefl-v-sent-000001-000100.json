@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "toefl-v-000001",
+   "sentences": [
+    {
+     "en": "The analysis of the water samples showed high levels of salt.",
+     "ar": "تحليل عينات المية أثبت إن فيها نسبة ملح عالية."
+    },
+    {
+     "en": "My analysis of the match is that we lost because of bad defending.",
+     "ar": "تحليلي للماتش إننا خسرنا بسبب الدفاع الوحش."
+    },
+    {
+     "en": "The lab sent the blood analysis to my doctor this morning.",
+     "ar": "المعمل بعت تحليل الدم لدكتورتي الصبح."
+    },
+    {
+     "en": "His analysis of the problem was simple and clear.",
+     "ar": "تحليله للمشكلة كان بسيط وواضح."
+    },
+    {
+     "en": "The teacher asked for a short analysis of the poem.",
+     "ar": "المدرسة طلبت منا تحليل قصير للقصيدة."
+    },
+    {
+     "en": "A careful analysis of the market helped the shop grow.",
+     "ar": "تحليل دقيق للسوق ساعد المحل إنه يكبر."
+    },
+    {
+     "en": "The news showed an analysis of rising food prices.",
+     "ar": "الأخبار عرضت تحليل لأسعار الأكل اللي بتزيد."
+    },
+    {
+     "en": "I need a deeper analysis before I make a decision.",
+     "ar": "محتاج تحليل أعمق قبل ما أخد قرار."
+    },
+    {
+     "en": "Her analysis of the survey surprised the whole team.",
+     "ar": "تحليلها للاستبيان فاجأ الفريق كله."
+    },
+    {
+     "en": "The final analysis proved the bridge was not safe.",
+     "ar": "التحليل النهائي أثبت إن الكوبري مش آمن."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000002",
+   "sentences": [
+    {
+     "en": "His approach to learning English is ten minutes every day.",
+     "ar": "طريقته في تعلم الإنجليزي هي عشر دقايق كل يوم."
+    },
+    {
+     "en": "We need a new approach to solve the traffic problem.",
+     "ar": "محتاجين طريقة جديدة عشان نحل مشكلة الزحمة."
+    },
+    {
+     "en": "Her approach to cooking is to keep everything simple.",
+     "ar": "طريقتها في الطبخ إنها تخلي كل حاجة بسيطة."
+    },
+    {
+     "en": "The manager's approach made the workers feel respected.",
+     "ar": "أسلوب المدير خلّى العمال يحسوا إنهم محترمين."
+    },
+    {
+     "en": "I like your approach; let us try it this week.",
+     "ar": "عجبتني طريقتك، يلا نجربها الأسبوع ده."
+    },
+    {
+     "en": "The doctor took a careful approach with the old patient.",
+     "ar": "الدكتور اتعامل بحذر مع المريض الكبير في السن."
+    },
+    {
+     "en": "A different approach to studying helped Omar pass.",
+     "ar": "طريقة مختلفة في المذاكرة ساعدت عمر إنه ينجح."
+    },
+    {
+     "en": "Their approach to saving money is to cook at home.",
+     "ar": "طريقتهم في توفير الفلوس إنهم يطبخوا في البيت."
+    },
+    {
+     "en": "This approach to teaching kids actually works.",
+     "ar": "الطريقة دي في تعليم الأطفال بتنفع فعلاً."
+    },
+    {
+     "en": "The city tried a new approach to cleaning the streets.",
+     "ar": "المدينة جربت طريقة جديدة في تنضيف الشوارع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000003",
+   "sentences": [
+    {
+     "en": "This area of the city is famous for its old markets.",
+     "ar": "المنطقة دي من المدينة مشهورة بأسواقها القديمة."
+    },
+    {
+     "en": "Renewable energy is a growing area of research.",
+     "ar": "الطاقة المتجددة مجال بحث بيكبر."
+    },
+    {
+     "en": "The kids play football in the area behind the school.",
+     "ar": "العيال بتلعب كورة في المنطقة اللي ورا المدرسة."
+    },
+    {
+     "en": "He works in the area of computer science.",
+     "ar": "هو شغال في مجال علوم الكمبيوتر."
+    },
+    {
+     "en": "The whole area lost electricity for two hours.",
+     "ar": "المنطقة كلها الكهربا قطعت فيها ساعتين."
+    },
+    {
+     "en": "Math is not my best area, but I keep trying.",
+     "ar": "الرياضيات مش أقوى مجال عندي، بس بحاول."
+    },
+    {
+     "en": "They built a new hospital in the area last year.",
+     "ar": "بنوا مستشفى جديدة في المنطقة السنة اللي فاتت."
+    },
+    {
+     "en": "Her area of study is modern Egyptian history.",
+     "ar": "مجال دراستها هو تاريخ مصر الحديث."
+    },
+    {
+     "en": "The picnic area next to the lake was full of families.",
+     "ar": "منطقة النزهة جنب البحيرة كانت مليانة عائلات."
+    },
+    {
+     "en": "Farmers in this area grow rice and cotton.",
+     "ar": "الفلاحين في المنطقة دي بيزرعوا أرز وقطن."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000004",
+   "sentences": [
+    {
+     "en": "The teacher's assessment showed that Sara improved a lot.",
+     "ar": "تقييم المدرسة أظهر إن سارة اتحسنت جداً."
+    },
+    {
+     "en": "A quick assessment of the car found a problem in the brakes.",
+     "ar": "فحص سريع للعربية لقى مشكلة في الفرامل."
+    },
+    {
+     "en": "The bank made an assessment of the house before the loan.",
+     "ar": "البنك عمل تقييم للبيت قبل ما يدينا القرض."
+    },
+    {
+     "en": "His assessment of the team was honest and fair.",
+     "ar": "تقييمه للفريق كان صادق وعادل."
+    },
+    {
+     "en": "The final assessment counts for half of the grade.",
+     "ar": "التقييم النهائي بيحسب نصف الدرجة."
+    },
+    {
+     "en": "A risk assessment is needed before we open the new lab.",
+     "ar": "محتاجين تقييم مخاطر قبل ما نفتح المعمل الجديد."
+    },
+    {
+     "en": "The doctor's assessment was that the boy only needed rest.",
+     "ar": "تقييم الدكتور كان إن الولد محتاج بس يرتاح."
+    },
+    {
+     "en": "Students get an online assessment every month.",
+     "ar": "الطلاب بياخدوا تقييم أونلاين كل شهر."
+    },
+    {
+     "en": "Her assessment of the market helped us pick the right price.",
+     "ar": "تقييمها للسوق ساعدنا نختار السعر الصح."
+    },
+    {
+     "en": "The company does a yearly assessment of every worker.",
+     "ar": "الشركة بتعمل تقييم سنوي لكل موظف."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000005",
+   "sentences": [
+    {
+     "en": "I assume the train is late because of the rain.",
+     "ar": "أفترض إن القطر متأخر بسبب المطر."
+    },
+    {
+     "en": "Do not assume that everyone knows the plan.",
+     "ar": "متفترضش إن الكل عارف الخطة."
+    },
+    {
+     "en": "We assume the shop opens at nine every morning.",
+     "ar": "إحنا بنفترض إن المحل بيفتح الساعة تسعة كل صبح."
+    },
+    {
+     "en": "People often assume that doctors never get sick.",
+     "ar": "الناس غالباً بتفترض إن الدكاترة ما بيتعبوش أبداً."
+    },
+    {
+     "en": "He assumed the meeting was on Tuesday, but it was Monday.",
+     "ar": "هو افترض إن الاجتماع يوم التلات، بس كان يوم الاتنين."
+    },
+    {
+     "en": "Let us not assume the worst before we hear the news.",
+     "ar": "يلا منفترضش أسوأ حاجة قبل ما نسمع الخبر."
+    },
+    {
+     "en": "She assumed her brother had paid the bill.",
+     "ar": "هي افترضت إن أخوها دفع الفاتورة."
+    },
+    {
+     "en": "Scientists assume the planet is getting warmer.",
+     "ar": "العلماء بيفترضوا إن الكوكب بيسخن."
+    },
+    {
+     "en": "I assumed the price included delivery, but it did not.",
+     "ar": "أنا افترضت إن السعر شامل التوصيل، بس طلع لأ."
+    },
+    {
+     "en": "You cannot assume every story you read online is true.",
+     "ar": "مينفعش تفترض إن كل حكاية بتقراها على النت حقيقية."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000006",
+   "sentences": [
+    {
+     "en": "The local authority fixed the broken street lights.",
+     "ar": "الجهة المختصة في الحي صلحت لمبات الشارع المعطلة."
+    },
+    {
+     "en": "Only the manager has the authority to sign this paper.",
+     "ar": "بس المدير هو اللي عنده الصلاحية يمضي الورقة دي."
+    },
+    {
+     "en": "The health authority warned people about the heat wave.",
+     "ar": "جهة الصحة حذرت الناس من موجة الحر."
+    },
+    {
+     "en": "He spoke with such authority that everyone listened.",
+     "ar": "اتكلم بثقة وقوة بحيث إن الكل سمعه."
+    },
+    {
+     "en": "The school authority banned phones during exams.",
+     "ar": "إدارة المدرسة منعت الموبايلات وقت الامتحانات."
+    },
+    {
+     "en": "She is an authority on ancient Egyptian art.",
+     "ar": "هي مرجع في الفن المصري القديم."
+    },
+    {
+     "en": "The port authority checks every ship that arrives.",
+     "ar": "سلطة الميناء بتفتش كل مركب بتوصل."
+    },
+    {
+     "en": "Who gave you the authority to change the schedule?",
+     "ar": "مين إداك الصلاحية تغير الجدول؟"
+    },
+    {
+     "en": "The city authority opened a new park for families.",
+     "ar": "محافظة المدينة فتحت حديقة جديدة للعائلات."
+    },
+    {
+     "en": "Without authority, the guard could not stop anyone.",
+     "ar": "من غير صلاحية، الأمن ما كانش يقدر يمنع حد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000007",
+   "sentences": [
+    {
+     "en": "The book is available online for free.",
+     "ar": "الكتاب متاح على النت ببلاش."
+    },
+    {
+     "en": "Is this shirt available in a bigger size?",
+     "ar": "القميص ده متاح بمقاس أكبر؟"
+    },
+    {
+     "en": "The doctor is not available before Thursday.",
+     "ar": "الدكتور مش متاح قبل يوم الخميس."
+    },
+    {
+     "en": "Fresh bread is available at the bakery all day.",
+     "ar": "العيش الطازة متاح في المخبز طول اليوم."
+    },
+    {
+     "en": "Free parking is available behind the building.",
+     "ar": "في باركينج ببلاش متاح ورا العمارة."
+    },
+    {
+     "en": "The new phones will be available in stores next week.",
+     "ar": "الموبايلات الجديدة هتبقى متاحة في المحلات الأسبوع الجاي."
+    },
+    {
+     "en": "Only two tickets are still available for the concert.",
+     "ar": "فاضل تذكرتين بس متاحين للحفلة."
+    },
+    {
+     "en": "The course is available to anyone with an email.",
+     "ar": "الكورس متاح لأي حد عنده إيميل."
+    },
+    {
+     "en": "Clean water is not available in some villages.",
+     "ar": "المية النضيفة مش متاحة في شوية قرى."
+    },
+    {
+     "en": "She made herself available whenever we needed help.",
+     "ar": "كانت دايماً فاضية لينا وقت ما نحتاج مساعدة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000008",
+   "sentences": [
+    {
+     "en": "Walking every morning has a real benefit for your heart.",
+     "ar": "المشي كل صبح ليه فايدة حقيقية لقلبك."
+    },
+    {
+     "en": "One benefit of living near work is saving time.",
+     "ar": "من فوايد السكن جنب الشغل إنك بتوفر وقت."
+    },
+    {
+     "en": "The main benefit of this app is that it is free.",
+     "ar": "أكبر فايدة في التطبيق ده إنه ببلاش."
+    },
+    {
+     "en": "Reading before sleep has a calming benefit.",
+     "ar": "القراية قبل النوم ليها فايدة بتهدي الأعصاب."
+    },
+    {
+     "en": "Everyone gets the benefit of clean air in the village.",
+     "ar": "كل الناس بتستفيد من الهوا النضيف في القرية."
+    },
+    {
+     "en": "The new road will be a great benefit to farmers.",
+     "ar": "الطريق الجديد هيبقى فايدة كبيرة للفلاحين."
+    },
+    {
+     "en": "What is the benefit of waking up so early?",
+     "ar": "إيه فايدة الصحيان بدري أوي كده؟"
+    },
+    {
+     "en": "Learning a second language is a benefit for any job.",
+     "ar": "تعلم لغة تانية فايدة لأي شغلانة."
+    },
+    {
+     "en": "The benefit of teamwork showed in the final result.",
+     "ar": "فايدة الشغل الجماعي ظهرت في النتيجة النهائية."
+    },
+    {
+     "en": "This medicine has a benefit, but it tastes terrible.",
+     "ar": "الدوا ده ليه فايدة، بس طعمه وحش جداً."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000009",
+   "sentences": [
+    {
+     "en": "The concept of time is different in every culture.",
+     "ar": "مفهوم الوقت بيختلف من ثقافة للتانية."
+    },
+    {
+     "en": "My little brother cannot understand the concept of sharing.",
+     "ar": "أخويا الصغير لسه مش فاهم مفهوم المشاركة."
+    },
+    {
+     "en": "The concept behind the game is very simple.",
+     "ar": "الفكرة اللي ورا اللعبة بسيطة جداً."
+    },
+    {
+     "en": "She explained the concept of gravity with an apple.",
+     "ar": "شرحت مفهوم الجاذبية بحتة تفاحة."
+    },
+    {
+     "en": "The basic concept of the lesson took five minutes.",
+     "ar": "المفهوم الأساسي للدرس خد خمس دقايق."
+    },
+    {
+     "en": "Saving money is a hard concept for young kids.",
+     "ar": "توفير الفلوس مفهوم صعب على الأطفال الصغيرين."
+    },
+    {
+     "en": "The concept of online shopping was strange twenty years ago.",
+     "ar": "فكرة التسوق أونلاين كانت غريبة من عشرين سنة."
+    },
+    {
+     "en": "He wrote a whole book about the concept of happiness.",
+     "ar": "هو كتب كتاب كامل عن مفهوم السعادة."
+    },
+    {
+     "en": "Once you get the concept, the exercises feel easy.",
+     "ar": "أول ما تفهم الفكرة، التمارين هتحس إنها سهلة."
+    },
+    {
+     "en": "The teacher used pizza to explain the concept of fractions.",
+     "ar": "المدرس استخدم البيتزا عشان يشرح مفهوم الكسور."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000010",
+   "sentences": [
+    {
+     "en": "The results were consistent across all three experiments.",
+     "ar": "النتايج كانت متسقة في التجارب التلاتة كلها."
+    },
+    {
+     "en": "He is consistent; he trains every single morning.",
+     "ar": "هو ثابت على نظامه، بيتمرن كل صبح من غير ما يفوت يوم."
+    },
+    {
+     "en": "Her story was not consistent with the video.",
+     "ar": "حكايتها ما كانتش متوافقة مع الفيديو."
+    },
+    {
+     "en": "Consistent practice made his handwriting much better.",
+     "ar": "التمرين المستمر خلّى خطه أحسن بكتير."
+    },
+    {
+     "en": "The team needs consistent players, not just talented ones.",
+     "ar": "الفريق محتاج لاعيبة ثابتة على مستواها، مش بس موهوبين."
+    },
+    {
+     "en": "The weather has been consistent all week, hot and dry.",
+     "ar": "الجو كان ثابت طول الأسبوع، حر وناشف."
+    },
+    {
+     "en": "A consistent sleep time helps you wake up fresh.",
+     "ar": "النوم في ميعاد ثابت بيساعدك تصحى نشيط."
+    },
+    {
+     "en": "His answers were consistent every time we asked.",
+     "ar": "إجاباته كانت نفسها كل ما نسأله."
+    },
+    {
+     "en": "The quality of their bread is consistent every day.",
+     "ar": "جودة العيش عندهم ثابتة كل يوم."
+    },
+    {
+     "en": "Be consistent with your study plan and you will pass.",
+     "ar": "التزم بخطة مذاكرتك وهتنجح."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000011",
+   "sentences": [
+    {
+     "en": "You cannot understand the joke without the context.",
+     "ar": "مش هتفهم النكتة من غير ما تعرف السياق."
+    },
+    {
+     "en": "In this context, the word means something completely different.",
+     "ar": "في السياق ده، الكلمة معناها مختلف تماماً."
+    },
+    {
+     "en": "The teacher explained the historical context of the novel.",
+     "ar": "المدرس شرح السياق التاريخي للرواية."
+    },
+    {
+     "en": "His angry words make sense if you know the context.",
+     "ar": "كلامه العصبي بيبقى مفهوم لو عرفت السياق."
+    },
+    {
+     "en": "Every word changes its meaning with the context.",
+     "ar": "كل كلمة معناها بيتغير حسب السياق."
+    },
+    {
+     "en": "The photo looks strange outside its original context.",
+     "ar": "الصورة شكلها غريب لما تتشال من سياقها الأصلي."
+    },
+    {
+     "en": "We studied the poem in the context of the poet's life.",
+     "ar": "درسنا القصيدة في سياق حياة الشاعر."
+    },
+    {
+     "en": "The context of the meeting was the new school rules.",
+     "ar": "سياق الاجتماع كان قواعد المدرسة الجديدة."
+    },
+    {
+     "en": "She always reads messages in the wrong context.",
+     "ar": "هي دايماً بتفهم الرسايل في سياق غلط."
+    },
+    {
+     "en": "The report gives context for the sudden rise in prices.",
+     "ar": "التقرير بيدي خلفية عن الارتفاع المفاجئ في الأسعار."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000012",
+   "sentences": [
+    {
+     "en": "The new factory will create five hundred jobs.",
+     "ar": "المصنع الجديد هيوفر خمسمية فرصة شغل."
+    },
+    {
+     "en": "She loves to create stories for her children.",
+     "ar": "هي بتحب تخترع حكايات لعيالها."
+    },
+    {
+     "en": "Too many rules can create more problems.",
+     "ar": "القواعد الكتير ممكن تخلق مشاكل أكتر."
+    },
+    {
+     "en": "The chef likes to create new dishes every month.",
+     "ar": "الشيف بيحب يبتكر أطباق جديدة كل شهر."
+    },
+    {
+     "en": "A small garden can create a calm feeling at home.",
+     "ar": "جنينة صغيرة ممكن تعمل إحساس بالهدوء في البيت."
+    },
+    {
+     "en": "The storm created huge waves near the beach.",
+     "ar": "العاصفة عملت موج عالي جداً جنب الشط."
+    },
+    {
+     "en": "They want to create a football team for the neighborhood kids.",
+     "ar": "عايزين يعملوا فريق كورة لعيال المنطقة."
+    },
+    {
+     "en": "One wrong word can create a big misunderstanding.",
+     "ar": "كلمة غلط واحدة ممكن تسبب سوء فهم كبير."
+    },
+    {
+     "en": "The artist used old bottles to create a beautiful lamp.",
+     "ar": "الفنان استخدم ازايز قديمة عشان يعمل لمبة حلوة."
+    },
+    {
+     "en": "Good teachers create a love of learning in their students.",
+     "ar": "المدرسين الكويسين بيغرسوا حب التعلم في طلابهم."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000013",
+   "sentences": [
+    {
+     "en": "The hospital keeps patient data on a secure computer.",
+     "ar": "المستشفى بتحتفظ ببيانات المرضى على كمبيوتر مؤمن."
+    },
+    {
+     "en": "We collected data from two hundred students.",
+     "ar": "جمعنا بيانات من متين طالب."
+    },
+    {
+     "en": "The data shows that more people buy online now.",
+     "ar": "البيانات بتوري إن ناس أكتر بتشتري أونلاين دلوقتي."
+    },
+    {
+     "en": "My phone ran out of data before the trip ended.",
+     "ar": "باقة النت خلصت من موبايلي قبل ما الرحلة تخلص."
+    },
+    {
+     "en": "Scientists studied the data for six months.",
+     "ar": "العلماء درسوا البيانات لمدة ست شهور."
+    },
+    {
+     "en": "The weather data helped farmers plan their work.",
+     "ar": "بيانات الجو ساعدت الفلاحين ينظموا شغلهم."
+    },
+    {
+     "en": "Without accurate data, the report means nothing.",
+     "ar": "من غير بيانات دقيقة، التقرير ملوش لازمة."
+    },
+    {
+     "en": "The app saves your data even when you close it.",
+     "ar": "التطبيق بيحفظ بياناتك حتى لما تقفله."
+    },
+    {
+     "en": "Old data can give a wrong picture of the market.",
+     "ar": "البيانات القديمة ممكن تديك صورة غلط عن السوق."
+    },
+    {
+     "en": "The team checked the data twice before publishing.",
+     "ar": "الفريق راجع البيانات مرتين قبل النشر."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000014",
+   "sentences": [
+    {
+     "en": "Can you define the word friendship in one sentence?",
+     "ar": "تقدر تعرّف كلمة صداقة في جملة واحدة؟"
+    },
+    {
+     "en": "The dictionary defines success in different ways.",
+     "ar": "القاموس بيعرّف النجاح بطرق مختلفة."
+    },
+    {
+     "en": "The rules define what students can bring to class.",
+     "ar": "القواعد بتحدد إيه اللي الطالب يقدر يجيبه للفصل."
+    },
+    {
+     "en": "How do we define a healthy meal?",
+     "ar": "بنعرّف الأكلة الصحية إزاي؟"
+    },
+    {
+     "en": "The law defines who can vote in the election.",
+     "ar": "القانون بيحدد مين يقدر ينتخب."
+    },
+    {
+     "en": "We need to define the problem before we fix it.",
+     "ar": "محتاجين نحدد المشكلة قبل ما نحلها."
+    },
+    {
+     "en": "The teacher asked us to define five new terms.",
+     "ar": "المدرسة طلبت منا نعرّف خمس مصطلحات جديدة."
+    },
+    {
+     "en": "People define happiness in very different ways.",
+     "ar": "الناس بتعرّف السعادة بطرق مختلفة جداً."
+    },
+    {
+     "en": "The contract clearly defines the duties of each side.",
+     "ar": "العقد بيحدد بوضوح واجبات كل طرف."
+    },
+    {
+     "en": "One goal does not define your whole life.",
+     "ar": "هدف واحد مش بيحدد حياتك كلها."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000015",
+   "sentences": [
+    {
+     "en": "Many English words are derived from Latin.",
+     "ar": "كلمات إنجليزية كتير مشتقة من اللاتيني."
+    },
+    {
+     "en": "This medicine is derived from a desert plant.",
+     "ar": "الدوا ده مستخلص من نبات صحراوي."
+    },
+    {
+     "en": "The word sugar is derived from an old Arabic word.",
+     "ar": "كلمة سكر مشتقة من كلمة عربية قديمة."
+    },
+    {
+     "en": "The fuel is derived from used cooking oil.",
+     "ar": "الوقود ده مستخرج من زيت طبخ مستعمل."
+    },
+    {
+     "en": "His theory is derived from years of field work.",
+     "ar": "نظريته مبنية على سنين من الشغل الميداني."
+    },
+    {
+     "en": "Some colors are derived from insects and plants.",
+     "ar": "بعض الألوان بتتستخرج من حشرات ونباتات."
+    },
+    {
+     "en": "The story is derived from a real event in the village.",
+     "ar": "الحكاية مأخوذة من حدث حقيقي في القرية."
+    },
+    {
+     "en": "Vitamins in this pill are derived from fruits.",
+     "ar": "الفيتامينات في الحباية دي مستخلصة من الفواكه."
+    },
+    {
+     "en": "The name of the city is derived from a Greek word.",
+     "ar": "اسم المدينة مشتق من كلمة يونانية."
+    },
+    {
+     "en": "Much of our electricity is derived from natural gas.",
+     "ar": "جزء كبير من الكهربا عندنا مصدرها الغاز الطبيعي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000016",
+   "sentences": [
+    {
+     "en": "The distribution of food reached every family in the camp.",
+     "ar": "توزيع الأكل وصل لكل عيلة في المعسكر."
+    },
+    {
+     "en": "The map shows the distribution of schools in the city.",
+     "ar": "الخريطة بتوري توزيع المدارس في المدينة."
+    },
+    {
+     "en": "The fair distribution of water is a big problem here.",
+     "ar": "التوزيع العادل للمية مشكلة كبيرة هنا."
+    },
+    {
+     "en": "The company improved the distribution of its products.",
+     "ar": "الشركة حسّنت توزيع منتجاتها."
+    },
+    {
+     "en": "The distribution of grades showed most students passed.",
+     "ar": "توزيع الدرجات بيّن إن أغلب الطلبة نجحوا."
+    },
+    {
+     "en": "They studied the distribution of birds across the island.",
+     "ar": "درسوا توزيع العصافير على جزيرة."
+    },
+    {
+     "en": "Free distribution of books helped poor students.",
+     "ar": "توزيع الكتب ببلاش ساعد الطلبة الفقرا."
+    },
+    {
+     "en": "The unequal distribution of wealth is a global issue.",
+     "ar": "التوزيع غير العادل للثروة قضية عالمية."
+    },
+    {
+     "en": "Rainfall distribution changes from year to year.",
+     "ar": "توزيع المطر بيتغير من سنة لسنة."
+    },
+    {
+     "en": "The truck handles the distribution of bread to local shops.",
+     "ar": "العربية مسئولة عن توزيع العيش على محلات المنطقة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000017",
+   "sentences": [
+    {
+     "en": "The country faces a serious economic crisis this year.",
+     "ar": "البلد بتوجه أزمة اقتصادية خطيرة السنة دي."
+    },
+    {
+     "en": "Economic growth created new jobs in the city.",
+     "ar": "النمو الاقتصادي خلق شغل جديد في المدينة."
+    },
+    {
+     "en": "They moved to the capital for economic reasons.",
+     "ar": "سافروا العاصمة لأسباب اقتصادية."
+    },
+    {
+     "en": "The economic situation makes people save more.",
+     "ar": "الوضع الاقتصادي بيخلي الناس توفر أكتر."
+    },
+    {
+     "en": "Tourism is an important economic activity in Egypt.",
+     "ar": "السياحة نشاط اقتصادي مهم في مصر."
+    },
+    {
+     "en": "The economic report worried many small shop owners.",
+     "ar": "التقرير الاقتصادي قلق أصحاب المحلات الصغيرة."
+    },
+    {
+     "en": "Education has a clear economic value for families.",
+     "ar": "التعليم ليه قيمة اقتصادية واضحة للعائلات."
+    },
+    {
+     "en": "The two countries signed an economic agreement.",
+     "ar": "البلدين وقعوا اتفاقية اقتصادية."
+    },
+    {
+     "en": "High prices caused real economic pressure on students.",
+     "ar": "الأسعار العالية عملت ضغط اقتصادي حقيقي على الطلبة."
+    },
+    {
+     "en": "The village depends on one main economic activity: fishing.",
+     "ar": "القرية معتمدة على نشاط اقتصادي واحد: صيد السمك."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000018",
+   "sentences": [
+    {
+     "en": "We must protect the environment for our children.",
+     "ar": "لازم نحمي البيئة عشان ولادنا."
+    },
+    {
+     "en": "Plastic bags harm the environment for hundreds of years.",
+     "ar": "الأكياس البلاستيك بتضر البيئة لمئات السنين."
+    },
+    {
+     "en": "The school created a clean and safe learning environment.",
+     "ar": "المدرسة وفرت بيئة تعلم نضيفة وآمنة."
+    },
+    {
+     "en": "Working from home changed my whole work environment.",
+     "ar": "الشغل من البيت غير بيئة شغلي كلها."
+    },
+    {
+     "en": "The river environment is full of birds and fish.",
+     "ar": "بيئة النهر مليانة عصافير وسمك."
+    },
+    {
+     "en": "A noisy environment makes studying very hard.",
+     "ar": "البيئة المزعجة بتخلي المذاكرة صعبة جداً."
+    },
+    {
+     "en": "The new law protects the marine environment.",
+     "ar": "القانون الجديد بيحمي البيئة البحرية."
+    },
+    {
+     "en": "Kids grow faster in a loving environment.",
+     "ar": "الأطفال بيكبروا أحسن في بيئة مليانة حب."
+    },
+    {
+     "en": "Factories near the town pollute the environment.",
+     "ar": "المصانع اللي جنب المدينة بتلوث البيئة."
+    },
+    {
+     "en": "The desert environment is harsh but beautiful.",
+     "ar": "البيئة الصحراوية قاسية بس جميلة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000019",
+   "sentences": [
+    {
+     "en": "Experts estimate the bridge will cost two million pounds.",
+     "ar": "الخبراء بيقدروا إن الكوبري هيكلف مليونين جنيه."
+    },
+    {
+     "en": "Can you estimate how much rice we need for fifty people?",
+     "ar": "تقدر تحسبها هنحتاج كام كيلو أرز لخمسين شخص؟"
+    },
+    {
+     "en": "I estimate the trip will take about three hours.",
+     "ar": "أنا مقدر إن الرحلة هتاخد حوالي تلات ساعات."
+    },
+    {
+     "en": "They estimate the house is one hundred years old.",
+     "ar": "بيقولوا إن البيت عمره حوالي مية سنة."
+    },
+    {
+     "en": "The builder estimated the repair at five thousand pounds.",
+     "ar": "الصنايعي قدّر تكلفة التصليح بخمس تلاف جنيه."
+    },
+    {
+     "en": "We estimate that half the students walk to school.",
+     "ar": "بنقدر إن نص الطلبة بيمشوا للمدرسة."
+    },
+    {
+     "en": "It is hard to estimate the number of fish in the sea.",
+     "ar": "صعب نقدر عدد السمك في البحر."
+    },
+    {
+     "en": "The report estimates sales will rise next year.",
+     "ar": "التقرير بيتوقع إن المبيعات هتزيد السنة الجاية."
+    },
+    {
+     "en": "She estimated the crowd at two thousand people.",
+     "ar": "هي قدّرت عدد الناس بحوالي ألفين."
+    },
+    {
+     "en": "How do you estimate the weight of an elephant?",
+     "ar": "بتقدر وزن الفيل إزاي؟"
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000020",
+   "sentences": [
+    {
+     "en": "The police found strong evidence near the broken window.",
+     "ar": "البوليس لقى دليل قوي جنب الشباك المكسور."
+    },
+    {
+     "en": "There is no evidence that the story is true.",
+     "ar": "مفيش أي دليل إن الحكاية حقيقية."
+    },
+    {
+     "en": "The evidence showed the fire started in the kitchen.",
+     "ar": "الأدلة أظهرت إن الحريق بدأ في المطبخ."
+    },
+    {
+     "en": "Scientists look for evidence of water on Mars.",
+     "ar": "العلماء بيدوروا على دليل على وجود مية على المريخ."
+    },
+    {
+     "en": "His report gave clear evidence of cheating.",
+     "ar": "تقريره قدّم دليل واضح على الغش."
+    },
+    {
+     "en": "Footprints in the sand were the only evidence.",
+     "ar": "آثار الرجلين على الرملة كانت الدليل الوحيد."
+    },
+    {
+     "en": "New evidence changed the whole case.",
+     "ar": "الدليل الجديد غيّر القضية كلها."
+    },
+    {
+     "en": "Do you have any evidence for this claim?",
+     "ar": "عندك أي دليل على الكلام ده؟"
+    },
+    {
+     "en": "The evidence points to a simple mistake, not a crime.",
+     "ar": "الأدلة بترجح إن ده غلطة بسيطة مش جريمة."
+    },
+    {
+     "en": "Old letters gave evidence of life in the village two hundred years ago.",
+     "ar": "الجوابات القديمة أدت دليل على الحياة في القرية من متين سنة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000021",
+   "sentences": [
+    {
+     "en": "Price is the main factor when people choose a phone.",
+     "ar": "السعر هو العامل الأساسي لما الناس تختار موبايل."
+    },
+    {
+     "en": "Lack of sleep is a big factor in car accidents.",
+     "ar": "قلة النوم عامل كبير في حوادث العربيات."
+    },
+    {
+     "en": "One important factor in his success was his mother's support.",
+     "ar": "عامل مهم في نجاحه كان دعم أمه."
+    },
+    {
+     "en": "Weather is a key factor in growing good cotton.",
+     "ar": "الجو عامل أساسي في زراعة قطن كويس."
+    },
+    {
+     "en": "Age is not the only factor in learning a language.",
+     "ar": "السن مش العامل الوحيد في تعلم اللغة."
+    },
+    {
+     "en": "Many factors pushed the family to move to Cairo.",
+     "ar": "عوامل كتير خلّت العيلة تنتقل للقاهرة."
+    },
+    {
+     "en": "Time was the hardest factor in finishing the project.",
+     "ar": "الوقت كان أصعب عامل في خلاص المشروع."
+    },
+    {
+     "en": "Luck plays a small factor in every exam.",
+     "ar": "الحظ بيلعب عامل بسيط في أي امتحان."
+    },
+    {
+     "en": "Cost is always a factor when we plan a trip.",
+     "ar": "التكلفة دايماً عامل لما بنخطط لرحلة."
+    },
+    {
+     "en": "Which factor matters most to you: price or quality?",
+     "ar": "أنهي عامل يهمك أكتر: السعر ولا الجودة؟"
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000022",
+   "sentences": [
+    {
+     "en": "The main function of the heart is to move blood.",
+     "ar": "وظيفة القلب الأساسية إنه يحرك الدم."
+    },
+    {
+     "en": "This button has a simple function: it turns off the screen.",
+     "ar": "الزرار ده وظيفته بسيطة: بيقفل الشاشة."
+    },
+    {
+     "en": "The function of a school is not only teaching facts.",
+     "ar": "وظيفة المدرسة مش بس تعليم معلومات."
+    },
+    {
+     "en": "My old phone lost its main function after it fell in water.",
+     "ar": "موبايلي القديم بطل يشتغل بعد ما وقع في المية."
+    },
+    {
+     "en": "Each part of the machine has a clear function.",
+     "ar": "كل جزء في المكنة ليه وظيفة واضحة."
+    },
+    {
+     "en": "The function of sleep is to rest the body and the mind.",
+     "ar": "وظيفة النوم إنه يريح الجسم والعقل."
+    },
+    {
+     "en": "The app has a new function that reads text out loud.",
+     "ar": "التطبيق فيه خاصية جديدة بتقرا النص بصوت عالي."
+    },
+    {
+     "en": "What is the function of this strange tool in the kitchen?",
+     "ar": "إيه وظيفة العدة الغريبة دي في المطبخ؟"
+    },
+    {
+     "en": "The brain controls every function of the body.",
+     "ar": "المخ بيتحكم في كل وظيفة في الجسم."
+    },
+    {
+     "en": "A good chair serves one function: comfort.",
+     "ar": "الكرسي الكويس ليه وظيفة واحدة: الراحة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000023",
+   "sentences": [
+    {
+     "en": "The doctor tried to identify the cause of the pain.",
+     "ar": "الدكتور حاول يحدد سبب الوجع."
+    },
+    {
+     "en": "Can you identify the bird in this photo?",
+     "ar": "تقدر تعرف اسم العصفورة اللي في الصورة دي؟"
+    },
+    {
+     "en": "The police used the video to identify the thief.",
+     "ar": "البوليس استخدم الفيديو عشان يتعرف على الحرامي."
+    },
+    {
+     "en": "We must identify the problem before we spend money.",
+     "ar": "لازم نحدد المشكلة قبل ما نصرف فلوس."
+    },
+    {
+     "en": "Students learn to identify different types of rocks.",
+     "ar": "الطلبة بيتعلموا يتعرفوا على أنواع الصخور المختلفة."
+    },
+    {
+     "en": "She could identify the song from the first few seconds.",
+     "ar": "هي عرفت الأغنية من أول كام ثانية."
+    },
+    {
+     "en": "The test helps identify children who need extra help.",
+     "ar": "الاختبار بيساعد في تحديد الأطفال اللي محتاجين مساعدة زيادة."
+    },
+    {
+     "en": "Farmers can identify sick plants by their leaves.",
+     "ar": "الفلاحين بيعرفوا يميزوا النباتات المريضة من ورقها."
+    },
+    {
+     "en": "It was hard to identify his voice on the phone.",
+     "ar": "كان صعب أتعرف على صوته في التليفون."
+    },
+    {
+     "en": "The survey helped identify what customers really want.",
+     "ar": "الاستبيان ساعد في تحديد اللي الزباين عايزينه فعلاً."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000024",
+   "sentences": [
+    {
+     "en": "His monthly income is not enough for a family of five.",
+     "ar": "دخله الشهري مش كفاية لعيلة من خمس أفراد."
+    },
+    {
+     "en": "The average income in the city is higher than in the village.",
+     "ar": "متوسط الدخل في المدينة أعلى من القرية."
+    },
+    {
+     "en": "She has two jobs to raise her income.",
+     "ar": "هي شغالة في شغلتين عشان تزود دخلها."
+    },
+    {
+     "en": "Tourism is the main income for many families here.",
+     "ar": "السياحة هي الدخل الأساسي لعائلات كتير هنا."
+    },
+    {
+     "en": "A good education usually leads to a higher income.",
+     "ar": "التعليم الكويس غالباً بيودي لدخل أعلى."
+    },
+    {
+     "en": "They spent their whole income on rent and food.",
+     "ar": "صرفوا دخلهم كله على الإيجار والأكل."
+    },
+    {
+     "en": "His income from the farm changes with the weather.",
+     "ar": "دخله من الأرض بيتغير مع الجو."
+    },
+    {
+     "en": "Low income families get free school meals.",
+     "ar": "العائلات قليلة الدخل بتاخد وجبات مدرسية ببلاش."
+    },
+    {
+     "en": "The shop doubled its income after it moved to the main street.",
+     "ar": "المحل ضاعف دخله بعد ما نقل للشارع الرئيسي."
+    },
+    {
+     "en": "Saving part of your income every month is a smart habit.",
+     "ar": "توفير جزء من دخلك كل شهر عادة ذكية."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000025",
+   "sentences": [
+    {
+     "en": "The dark clouds indicate that rain is coming.",
+     "ar": "الغيم الغامق بيدل إن المطر جاي."
+    },
+    {
+     "en": "The results indicate that the new method works.",
+     "ar": "النتايج بتشير إن الطريقة الجديدة بتنجح."
+    },
+    {
+     "en": "His smile indicated that he agreed with the plan.",
+     "ar": "ابتسامته دلت إن موافق على الخطة."
+    },
+    {
+     "en": "The red light indicates a problem with the engine.",
+     "ar": "النور الأحمر بيعلم إن في مشكلة في الموتور."
+    },
+    {
+     "en": "The sign indicates the way to the museum.",
+     "ar": "اللافتة بتدل على طريق المتحف."
+    },
+    {
+     "en": "Recent studies indicate that people sleep less than before.",
+     "ar": "دراسات حديثة بتبين إن الناس بيناموا أقل من زمان."
+    },
+    {
+     "en": "The silence in the room indicated that everyone was shocked.",
+     "ar": "السكوت في الأوضة دل على إن الكل كان مصدوم."
+    },
+    {
+     "en": "High numbers indicate a real improvement in health.",
+     "ar": "الأرقام العالية بتبين تحسن حقيقي في الصحة."
+    },
+    {
+     "en": "The map indicates where the old temple stood.",
+     "ar": "الخريطة بتبين مكان المعبد القديم."
+    },
+    {
+     "en": "Her quick answer indicated that she knew the topic well.",
+     "ar": "ردها السريع دل إنها عارفة الموضوع كويس."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000026",
+   "sentences": [
+    {
+     "en": "Every individual in the group gave a different answer.",
+     "ar": "كل فرد في المجموعة رد رد مختلف."
+    },
+    {
+     "en": "The teacher gives individual attention to weak students.",
+     "ar": "المدرس بيدي اهتمام فردي للطلبة الضعاف."
+    },
+    {
+     "en": "Each individual piece of the puzzle matters.",
+     "ar": "كل قطعة لوحدها في البازل ليها أهميتها."
+    },
+    {
+     "en": "Individual differences make every class unique.",
+     "ar": "الفروق الفردية بتخلي كل فصل مختلف عن التاني."
+    },
+    {
+     "en": "The program helps each individual learn at his own speed.",
+     "ar": "البرنامج بيساعد كل فرد يتعلم بالسرعة اللي تناسبه."
+    },
+    {
+     "en": "One individual cannot solve this problem alone.",
+     "ar": "فرد واحد مش هيقدر يحل المشكلة دي لوحده."
+    },
+    {
+     "en": "The coach spoke to every individual player after the match.",
+     "ar": "الكابتن كلم كل لاعب لوحده بعد الماتش."
+    },
+    {
+     "en": "Individual choice is important when picking a university.",
+     "ar": "الاختيار الشخصي مهم لما تختار الجامعة."
+    },
+    {
+     "en": "They bought individual tickets instead of a family pass.",
+     "ar": "اشتروا تذاكر فردية بدل التذكرة العائلية."
+    },
+    {
+     "en": "Every individual has a role in keeping the street clean.",
+     "ar": "كل فرد ليه دور في الحفاظ على نظافة الشارع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000027",
+   "sentences": [
+    {
+     "en": "The job involves a lot of travel around the country.",
+     "ar": "الشغلانة دي بتتضمن سفر كتير جوه البلد."
+    },
+    {
+     "en": "Cooking dinner usually involves two hours of work.",
+     "ar": "طبخ الأكل بياخد مني حوالي ساعتين شغل."
+    },
+    {
+     "en": "The game involves running, jumping, and laughing.",
+     "ar": "اللعبة فيها جري ونط وضحك."
+    },
+    {
+     "en": "The project will involve students from three schools.",
+     "ar": "المشروع هيشترك فيه طلبة من تلات مدارس."
+    },
+    {
+     "en": "His plan involves saving a little money every week.",
+     "ar": "خطته بتعتمد على توفير شوية فلوس كل أسبوع."
+    },
+    {
+     "en": "Learning to swim involves time and patience.",
+     "ar": "تعلم العوم محتاج وقت وصبر."
+    },
+    {
+     "en": "The repair involves changing two small parts.",
+     "ar": "التصليحة هتتضمن تغيير قطعتين صغيرين."
+    },
+    {
+     "en": "Does the course involve any online tests?",
+     "ar": "الكورس فيه امتحانات أونلاين؟"
+    },
+    {
+     "en": "The festival involves music, food, and old stories.",
+     "ar": "الاحتفال فيه مزيكا وأكل وحكايات قديمة."
+    },
+    {
+     "en": "Raising kids involves more love than rules.",
+     "ar": "تربية العيال محتاجة حب أكتر من القواعد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000028",
+   "sentences": [
+    {
+     "en": "The traffic issue in Cairo gets worse every year.",
+     "ar": "مشكلة الزحمة في القاهرة بتزيد كل سنة."
+    },
+    {
+     "en": "They raised the issue of dirty water at the meeting.",
+     "ar": "فتحوا موضوع المية الملوثة في الاجتماع."
+    },
+    {
+     "en": "Money was never an issue between the two brothers.",
+     "ar": "الفلوس ما كانتش أبداً مشكلة بين الأخوين."
+    },
+    {
+     "en": "The new issue of the magazine comes out on Sunday.",
+     "ar": "العدد الجديد من المجلة بينزل يوم الحد."
+    },
+    {
+     "en": "We discussed the issue of plastic in the sea.",
+     "ar": "اتكلمنا في قضية البلاستيك في البحر."
+    },
+    {
+     "en": "The school solved the heating issue before winter.",
+     "ar": "المدرسة حلت مشكلة التدفية قبل الشتا."
+    },
+    {
+     "en": "Health is a serious issue for people over sixty.",
+     "ar": "الصحة قضية مهمة للناس اللي فوق الستين."
+    },
+    {
+     "en": "The report covers every issue facing small farmers.",
+     "ar": "التقرير بيغطي كل مشكلة بتواجه الفلاحين الصغيرين."
+    },
+    {
+     "en": "Parking is a daily issue in this neighborhood.",
+     "ar": "ركن العربيات مشكلة يومية في المنطقة دي."
+    },
+    {
+     "en": "She wrote an article about the issue of online privacy.",
+     "ar": "كتبت مقال عن قضية الخصوصية على النت."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000029",
+   "sentences": [
+    {
+     "en": "The farm needs extra labour during the harvest.",
+     "ar": "الأرض محتاجة عمالة زيادة وقت الحصاد."
+    },
+    {
+     "en": "The labour market changed a lot after the new factory opened.",
+     "ar": "سوق الشغل اتغير كتير بعد ما المصنع الجديد اتفتح."
+    },
+    {
+     "en": "Hard labour in the sun made him very strong.",
+     "ar": "الشغل الشاق في الشمس خلّاه جسمه قوي جداً."
+    },
+    {
+     "en": "Many people leave the village to find labour in the city.",
+     "ar": "ناس كتير بتسيب القرية عشان تلاقي شغل في المدينة."
+    },
+    {
+     "en": "The cost of labour is higher in the capital.",
+     "ar": "تكلفة العمالة أعلى في العاصمة."
+    },
+    {
+     "en": "The old bridge was built by manual labour without machines.",
+     "ar": "الكوبري القديم اتبنى بشغل اليدين من غير مكن."
+    },
+    {
+     "en": "Cheap labour attracts big companies to the country.",
+     "ar": "العمالة الرخيصة بتجذب الشركات الكبيرة للبلد."
+    },
+    {
+     "en": "She went into labour at midnight and the baby came at dawn.",
+     "ar": "جالها الطلق نص الليل والبيبي جي الفجر."
+    },
+    {
+     "en": "The law protects labour rights for factory workers.",
+     "ar": "القانون بيحمي حقوق العمال في المصانع."
+    },
+    {
+     "en": "Building the house took six months of hard labour.",
+     "ar": "بناء البيت خد ست شهور شغل شاق."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000030",
+   "sentences": [
+    {
+     "en": "It is not legal to drive without a licence.",
+     "ar": "مش قانوني تسوق من غير رخصة."
+    },
+    {
+     "en": "The family asked a lawyer for legal advice.",
+     "ar": "العيلة طلبت نصيحة قانونية من محامي."
+    },
+    {
+     "en": "The company faced legal problems after the accident.",
+     "ar": "الشركة واجهت مشاكل قانونية بعد الحادثة."
+    },
+    {
+     "en": "Every citizen has legal rights.",
+     "ar": "كل مواطن ليه حقوق قانونية."
+    },
+    {
+     "en": "The legal system protects both workers and owners.",
+     "ar": "النظام القانوني بيحمي العمال وأصحاب الشغل."
+    },
+    {
+     "en": "They signed a legal agreement before starting the business.",
+     "ar": "وقعوا عقد قانوني قبل ما يبدأوا الشغل."
+    },
+    {
+     "en": "Is it legal to film people without asking them?",
+     "ar": "ده قانوني إنك تصور الناس من غير ما تستأذنهم؟"
+    },
+    {
+     "en": "The new shop had to wait for its legal papers.",
+     "ar": "المحل الجديد استنى ورقه القانوني يخلص."
+    },
+    {
+     "en": "She studied legal studies at Cairo University.",
+     "ar": "درست الحقوق في جامعة القاهرة."
+    },
+    {
+     "en": "The owner took legal action against the noisy factory.",
+     "ar": "صاحب البيت خد إجراء قانوني ضد المصنع المزعج."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000031",
+   "sentences": [
+    {
+     "en": "Smoking is a major cause of lung disease.",
+     "ar": "التدخين سبب رئيسي في أمراض الرئة."
+    },
+    {
+     "en": "The city made a major change to its bus system.",
+     "ar": "المدينة عملت تغيير كبير في نظام الأتوبيسات."
+    },
+    {
+     "en": "There was a major accident on the ring road this morning.",
+     "ar": "حصلت حادثة كبيرة على الطريق الدائري الصبح."
+    },
+    {
+     "en": "She played a major role in the school's success.",
+     "ar": "كان ليها دور رئيسي في نجاح المدرسة."
+    },
+    {
+     "en": "The major problem is that we have no water.",
+     "ar": "المشكلة الأساسية إن مفيش مية عندنا."
+    },
+    {
+     "en": "He studied for his major exam all night.",
+     "ar": "ذاكر طول الليل لامتحانه المهم."
+    },
+    {
+     "en": "The storm caused major damage to the farms.",
+     "ar": "العاصفة عملت خساير كبيرة في الأراضي الزراعية."
+    },
+    {
+     "en": "Football is a major sport in Egypt.",
+     "ar": "الكورة رياضة رئيسية في مصر."
+    },
+    {
+     "en": "The new mall is a major project for the town.",
+     "ar": "المول الجديد مشروع ضخم للمدينة."
+    },
+    {
+     "en": "A major part of the budget goes to schools and hospitals.",
+     "ar": "جزء كبير من الميزانية بيروح للمدارس والمستشفيات."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000032",
+   "sentences": [
+    {
+     "en": "Her teaching method uses games and songs.",
+     "ar": "طريقتها في التدريس بتستخدم ألعاب وأغاني."
+    },
+    {
+     "en": "This old method of cooking rice still works best.",
+     "ar": "الطريقة القديمة دي في طبخ الأرز لسه أحسن حاجة."
+    },
+    {
+     "en": "Scientists follow a clear method in every experiment.",
+     "ar": "العلماء بيتبعوا أسلوب واضح في كل تجربة."
+    },
+    {
+     "en": "The best method to learn words is to use them daily.",
+     "ar": "أحسن طريقة لحفظ الكلمات إنك تستخدمها كل يوم."
+    },
+    {
+     "en": "He tried a new method to fix the leaking tap.",
+     "ar": "جرب طريقة جديدة عشان يصلح الحنفية اللي بتنقط."
+    },
+    {
+     "en": "Each farmer has his own method of watering the land.",
+     "ar": "كل فلاح ليه طريقته في ري الأرض."
+    },
+    {
+     "en": "The payment method at this shop is cash only.",
+     "ar": "طريقة الدفع في المحل ده كاش بس."
+    },
+    {
+     "en": "Her method of saving money is simple and smart.",
+     "ar": "أسلوبها في توفير الفلوس بسيط وذكي."
+    },
+    {
+     "en": "The method used in the study was later criticized.",
+     "ar": "المنهجية المستخدمة في الدراسة اتنتقدت بعدين."
+    },
+    {
+     "en": "We need a faster method to count the votes.",
+     "ar": "محتاجين طريقة أسرع عشان نعد الأصوات."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000033",
+   "sentences": [
+    {
+     "en": "Most accidents occur at night on this road.",
+     "ar": "أغلب الحوادث بتحصل بالليل على الطريق ده."
+    },
+    {
+     "en": "Earthquakes occur often in that part of the world.",
+     "ar": "الزلازل بتحصل كتير في الجزء ده من العالم."
+    },
+    {
+     "en": "The idea occurred to me while I was washing dishes.",
+     "ar": "الفكرة جاتلي وأنا باغسل المواعين."
+    },
+    {
+     "en": "A strange noise occurred just before the lights went out.",
+     "ar": "صوت غريب حصل قبل ما النور يقطع بشوية."
+    },
+    {
+     "en": "These plants occur naturally near the Nile.",
+     "ar": "النباتات دي بتنمو طبيعي جنب النيل."
+    },
+    {
+     "en": "Mistakes occur when people work too fast.",
+     "ar": "الغلطات بتحصل لما الناس تشتغل بسرعة زيادة."
+    },
+    {
+     "en": "The problem occurred after the last update.",
+     "ar": "المشكلة ظهرت بعد آخر تحديث."
+    },
+    {
+     "en": "Storms like this occur once every ten years.",
+     "ar": "العواصف زي دي بتحصل مرة كل عشر سنين."
+    },
+    {
+     "en": "A power cut occurred during the football match.",
+     "ar": "الكهربا قطعت في نص ماتش الكورة."
+    },
+    {
+     "en": "It never occurred to him to ask for help.",
+     "ar": "مجهاش على باله أبداً إنه يطلب مساعدة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000034",
+   "sentences": [
+    {
+     "en": "About eighty percent of the students passed the exam.",
+     "ar": "حوالي تمانين في المية من الطلبة نجحوا في الامتحان."
+    },
+    {
+     "en": "The price of vegetables rose by ten percent this month.",
+     "ar": "سعر الخضار زاد عشرة في المية الشهر ده."
+    },
+    {
+     "en": "Only fifty percent of the tickets were sold.",
+     "ar": "خمسين في المية بس من التذاكر اتباعت."
+    },
+    {
+     "en": "What percent of your salary goes to rent?",
+     "ar": "كام في المية من مرتبك بيروح للإيجار؟"
+    },
+    {
+     "en": "Ninety percent of the work is already finished.",
+     "ar": "تسعين في المية من الشغل خلص خلاص."
+    },
+    {
+     "en": "The shop gives a twenty percent discount to students.",
+     "ar": "المحل بيعمل خصم عشرين في المية للطلبة."
+    },
+    {
+     "en": "Thirty percent of the land is used for wheat.",
+     "ar": "تلاتين في المية من الأرض بتتزرع قمح."
+    },
+    {
+     "en": "Phone sales grew by five percent last year.",
+     "ar": "مبيعات الموبايلات زادت خمسة في المية السنة اللي فاتت."
+    },
+    {
+     "en": "A hundred percent effort is what the coach asked for.",
+     "ar": "الكابتن طلب مجهود مية في المية."
+    },
+    {
+     "en": "Forty percent of the water is lost through old pipes.",
+     "ar": "أربعين في المية من المية بتضيع بسبب المواسير القديمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000035",
+   "sentences": [
+    {
+     "en": "The hottest period of the day is around noon.",
+     "ar": "أسخن فترة في اليوم بتبقى حوالين الضهر."
+    },
+    {
+     "en": "He worked in Dubai for a period of five years.",
+     "ar": "اشتغل في دبي لمدة خمس سنين."
+    },
+    {
+     "en": "The exam period is the most stressful time of the year.",
+     "ar": "فترة الامتحانات أصعب وقت في السنة."
+    },
+    {
+     "en": "The museum covers a period of three thousand years.",
+     "ar": "المتحف بيغطي فترة تلات تلاف سنة."
+    },
+    {
+     "en": "After a short period of rain, the sun came out.",
+     "ar": "بعد فترة قصيرة من المطر، الشمس طلعت."
+    },
+    {
+     "en": "The training period lasts six weeks.",
+     "ar": "فترة التدريب بتستمر ست أسابيع."
+    },
+    {
+     "en": "She went through a difficult period after her father died.",
+     "ar": "عدت بفترة صعبة بعد ما أبوها مات."
+    },
+    {
+     "en": "The quiet period in the shop is between two and four.",
+     "ar": "الفترة الهادية في المحل بين الساعة اتنين وأربعة."
+    },
+    {
+     "en": "During that period, most people traveled by train.",
+     "ar": "في الفترة دي، أغلب الناس كانت بتسافر بالقطر."
+    },
+    {
+     "en": "There was a long period of silence before he answered.",
+     "ar": "كان في فترة سكوت طويلة قبل ما يرد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000036",
+   "sentences": [
+    {
+     "en": "The new government policy helps small farmers.",
+     "ar": "سياسة الحكومة الجديدة بتساعد الفلاحين الصغيرين."
+    },
+    {
+     "en": "The school has a strict policy against phones in class.",
+     "ar": "المدرسة عندها سياسة صارمة ضد الموبايلات في الفصل."
+    },
+    {
+     "en": "Their return policy lets you bring back anything in a week.",
+     "ar": "سياسة الاسترجاع عندهم بتخليك ترجع أي حاجة في أسبوع."
+    },
+    {
+     "en": "The company changed its policy on working from home.",
+     "ar": "الشركة غيرت سياستها في الشغل من البيت."
+    },
+    {
+     "en": "This policy made prices go up for everyone.",
+     "ar": "السياسة دي خلّت الأسعار تعلا على الكل."
+    },
+    {
+     "en": "The hotel has a no smoking policy in all rooms.",
+     "ar": "الفندق عنده سياسة ممنوع التدخين في كل الأوض."
+    },
+    {
+     "en": "A clear policy on water use could save the farms.",
+     "ar": "سياسة واضحة لاستخدام المية ممكن تنقذ الأراضي."
+    },
+    {
+     "en": "The policy of free education changed the whole country.",
+     "ar": "سياسة التعليم المجاني غيرت البلد كلها."
+    },
+    {
+     "en": "Workers asked for a fairer holiday policy.",
+     "ar": "العمال طلبوا سياسة أجازات أعدل."
+    },
+    {
+     "en": "The new policy reduced waiting times at hospitals.",
+     "ar": "السياسة الجديدة قللت وقت الانتظار في المستشفيات."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000037",
+   "sentences": [
+    {
+     "en": "Honesty is a principle he never gives up.",
+     "ar": "الأمانة مبدأ ما بيتنازلش عنه أبداً."
+    },
+    {
+     "en": "The basic principle of the game is easy to learn.",
+     "ar": "الفكرة الأساسية للعبة سهلة تتعلمها."
+    },
+    {
+     "en": "She refuses to lie; it is against her principles.",
+     "ar": "هي بترفض تكدب، ده ضد مبادئها."
+    },
+    {
+     "en": "The machine works on a very simple principle.",
+     "ar": "المكنة دي شغالة على مبدأ بسيط جداً."
+    },
+    {
+     "en": "In principle, I agree with the plan.",
+     "ar": "من حيث المبدأ، أنا موافق على الخطة."
+    },
+    {
+     "en": "The principle of equal pay is important to everyone.",
+     "ar": "مبدأ المساواة في المرتب مهم للكل."
+    },
+    {
+     "en": "He taught us the principles of good writing.",
+     "ar": "علمنا مبادئ الكتابة الكويسة."
+    },
+    {
+     "en": "The design follows the principle that less is more.",
+     "ar": "التصميم ماشي على مبدأ إن الأقل هو الأكتر."
+    },
+    {
+     "en": "They built the school on the principle that every child can learn.",
+     "ar": "بنوا المدرسة على مبدأ إن كل طفل يقدر يتعلم."
+    },
+    {
+     "en": "A man of principle keeps his word.",
+     "ar": "الراجل صاحب المبدأ بيحافظ على كلمته."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000038",
+   "sentences": [
+    {
+     "en": "The visa procedure takes about two weeks.",
+     "ar": "إجراءات الفيزا بتاخد حوالي أسبوعين."
+    },
+    {
+     "en": "Follow the safety procedure before you start the machine.",
+     "ar": "اتبع إجراءات الأمان قبل ما تشغل المكنة."
+    },
+    {
+     "en": "The hospital has a clear procedure for emergencies.",
+     "ar": "المستشفى عندها إجراء واضح للطوارئ."
+    },
+    {
+     "en": "What is the procedure for opening a bank account?",
+     "ar": "إيه إجراءات فتح حساب في البنك؟"
+    },
+    {
+     "en": "The whole procedure took only ten minutes.",
+     "ar": "الإجراء كله خد عشر دقايق بس."
+    },
+    {
+     "en": "Every worker learned the fire escape procedure.",
+     "ar": "كل عامل اتعلم إجراء الهروب من الحريق."
+    },
+    {
+     "en": "The doctor explained the procedure to the patient slowly.",
+     "ar": "الدكتور شرح العملية للمريض بروحة."
+    },
+    {
+     "en": "There is a new procedure for renewing your licence online.",
+     "ar": "في إجراء جديد لتجديد الرخصة أونلاين."
+    },
+    {
+     "en": "They changed the procedure to make it faster.",
+     "ar": "غيروا الإجراء عشان يخليه أسرع."
+    },
+    {
+     "en": "Skipping any step in the procedure can be dangerous.",
+     "ar": "تخطي أي خطوة في الإجراء ممكن يبقى خطر."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000039",
+   "sentences": [
+    {
+     "en": "Learning a language is a long process.",
+     "ar": "تعلم اللغة عملية طويلة."
+    },
+    {
+     "en": "The process of making cheese takes several days.",
+     "ar": "عملية صناعة الجبنة بتاخد كام يوم."
+    },
+    {
+     "en": "He explained the whole process step by step.",
+     "ar": "شرح العملية كلها خطوة بخطوة."
+    },
+    {
+     "en": "The application process for the job was very slow.",
+     "ar": "عملية التقديم للشغلانة كانت بطيئة جداً."
+    },
+    {
+     "en": "Growing rice is a process that needs a lot of water.",
+     "ar": "زراعة الأرز عملية محتاجة مية كتير."
+    },
+    {
+     "en": "The healing process after the surgery took a month.",
+     "ar": "عملية الشفا بعد العملية خدت شهر."
+    },
+    {
+     "en": "Trust the process and do not rush the results.",
+     "ar": "امشي على الخطة ومتستعجلش النتايج."
+    },
+    {
+     "en": "The factory uses a clean process with no smoke.",
+     "ar": "المصنع بيستخدم عملية نضيفة من غير دخان."
+    },
+    {
+     "en": "Writing a book is a process of many small steps.",
+     "ar": "كتابة كتاب عملية فيها خطوات صغيرة كتير."
+    },
+    {
+     "en": "The process of choosing a university worried the whole family.",
+     "ar": "عملية اختيار الجامعة قلقت العيلة كلها."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000040",
+   "sentences": [
+    {
+     "en": "A passport is required for the trip to Turkey.",
+     "ar": "الباسبور مطلوب لرحلة تركيا."
+    },
+    {
+     "en": "The required books are listed on the first page.",
+     "ar": "الكتب المطلوبة مكتوبة في أول صفحة."
+    },
+    {
+     "en": "English is a required course in the first year.",
+     "ar": "الإنجليزي مادة مطلوبة في أول سنة."
+    },
+    {
+     "en": "Workers are required to wear helmets on the site.",
+     "ar": "العمال مطلوب منهم يلبسوا الخوذة في الموقع."
+    },
+    {
+     "en": "He did not have the required papers for the job.",
+     "ar": "ما كانش معاه الأوراق المطلوبة للشغلانة."
+    },
+    {
+     "en": "The required amount of sugar is two cups.",
+     "ar": "الكمية المطلوبة من السكر كوبايتين."
+    },
+    {
+     "en": "No experience is required for this training.",
+     "ar": "مش مطلوب أي خبرة للتدريب ده."
+    },
+    {
+     "en": "The doctor required him to rest for a week.",
+     "ar": "الدكتور طلب منه يرتاح لمدة أسبوع."
+    },
+    {
+     "en": "A small fee is required to enter the museum.",
+     "ar": "في رسوم بسيطة مطلوبة لدخول المتحف."
+    },
+    {
+     "en": "Students must complete the required hours before graduation.",
+     "ar": "الطلبة لازم يخلصوا الساعات المطلوبة قبل التخرج."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000041",
+   "sentences": [
+    {
+     "en": "Her research on desert plants won a prize.",
+     "ar": "بحثها عن النباتات الصحراوية كسب جايزة."
+    },
+    {
+     "en": "The research shows that coffee can help memory.",
+     "ar": "البحث بيبين إن القهوة ممكن تساعد الذاكرة."
+    },
+    {
+     "en": "He spent two years doing research on the Nile fish.",
+     "ar": "قضى سنتين بيعمل بحث على سمك النيل."
+    },
+    {
+     "en": "Good research takes time and honest work.",
+     "ar": "البحث الكويس بياخد وقت وشغل أمين."
+    },
+    {
+     "en": "The university supports research in clean energy.",
+     "ar": "الجامعة بتدعم البحث في الطاقة النضيفة."
+    },
+    {
+     "en": "Before buying a car, do some research first.",
+     "ar": "قبل ما تشتري عربية، اعمل شوية بحث الأول."
+    },
+    {
+     "en": "Their research changed how doctors treat the disease.",
+     "ar": "بحثهم غيّر طريقة علاج الدكاترة للمرض."
+    },
+    {
+     "en": "The research team visited ten villages last summer.",
+     "ar": "فريق البحث زار عشر قرى الصيف اللي فات."
+    },
+    {
+     "en": "New research suggests that walking helps the brain.",
+     "ar": "أبحاث جديدة بتقول إن المشي بيساعد المخ."
+    },
+    {
+     "en": "She published her research in a famous magazine.",
+     "ar": "نشرت بحثها في مجلة مشهورة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000042",
+   "sentences": [
+    {
+     "en": "His response to the news was a big smile.",
+     "ar": "رد فعله على الخبر كان ابتسامة كبيرة."
+    },
+    {
+     "en": "I am still waiting for a response from the company.",
+     "ar": "لسه مستني رد من الشركة."
+    },
+    {
+     "en": "The quick response of the firemen saved the house.",
+     "ar": "الاستجابة السريعة من رجال الإطفا أنقذت البيت."
+    },
+    {
+     "en": "Her response to the question surprised everyone.",
+     "ar": "ردها على السؤال فاجأ الكل."
+    },
+    {
+     "en": "The government's response to the flood was very fast.",
+     "ar": "استجابة الحكومة للفيضان كانت سريعة جداً."
+    },
+    {
+     "en": "He gave no response when we asked about the money.",
+     "ar": "ما ردش لما سألناه عن الفلوس."
+    },
+    {
+     "en": "The patient's response to the medicine was good.",
+     "ar": "استجابة المريض للدوا كانت كويسة."
+    },
+    {
+     "en": "Their angry response showed how serious the problem was.",
+     "ar": "رد فعلهم العصبي بيّن قد إيه المشكلة كبيرة."
+    },
+    {
+     "en": "The teacher waited for a response from the quiet boy.",
+     "ar": "المدرس استنى رد من الولد الهادي."
+    },
+    {
+     "en": "In response to the rain, the match was moved to Monday.",
+     "ar": "بسبب المطر، الماتش اتأجل ليوم الاتنين."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000043",
+   "sentences": [
+    {
+     "en": "She played the main role in the school play.",
+     "ar": "لعبت الدور الرئيسي في مسرحية المدرسة."
+    },
+    {
+     "en": "Every player has a role in the team.",
+     "ar": "كل لاعب ليه دور في الفريق."
+    },
+    {
+     "en": "Parents have a big role in teaching their kids manners.",
+     "ar": "الأب والأم ليهم دور كبير في تعليم عيالهم الأدب."
+    },
+    {
+     "en": "His role at the bank is to help new customers.",
+     "ar": "دوره في البنك إنه يساعد الزباين الجداد."
+    },
+    {
+     "en": "Water plays a key role in farming.",
+     "ar": "المية بتلعب دور أساسي في الزراعة."
+    },
+    {
+     "en": "What is your role in this project?",
+     "ar": "إيه دورك في المشروع ده؟"
+    },
+    {
+     "en": "The role of the goalkeeper is to stop the ball.",
+     "ar": "دور حارس المرمى إنه يصد الكورة."
+    },
+    {
+     "en": "Technology plays a growing role in education.",
+     "ar": "التكنولوجيا بتلعب دور بيكبر في التعليم."
+    },
+    {
+     "en": "He took the role of team leader after Omar left.",
+     "ar": "خد دور قائد الفريق بعد ما عمر ساب."
+    },
+    {
+     "en": "Sleep has an important role in good health.",
+     "ar": "النوم ليه دور مهم في الصحة الكويسة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000044",
+   "sentences": [
+    {
+     "en": "Read the last section of the report carefully.",
+     "ar": "اقرا الجزء الأخير من التقرير بتركيز."
+    },
+    {
+     "en": "The fruit section of the market smells wonderful.",
+     "ar": "قسم الفاكهة في السوق ريحته تحفة."
+    },
+    {
+     "en": "This section of the road is closed for repairs.",
+     "ar": "الجزء ده من الطريق مقفول للتصليح."
+    },
+    {
+     "en": "She works in the sports section of the newspaper.",
+     "ar": "هي شغالة في قسم الرياضة في الجرنال."
+    },
+    {
+     "en": "The first section of the exam was the easiest.",
+     "ar": "أول جزء في الامتحان كان الأسهل."
+    },
+    {
+     "en": "He copied a section of the article into his notebook.",
+     "ar": "نسخ جزء من المقال في كراسته."
+    },
+    {
+     "en": "The children's section of the library is on the second floor.",
+     "ar": "قسم الأطفال في المكتبة في الدور التاني."
+    },
+    {
+     "en": "A small section of the wall fell during the storm.",
+     "ar": "جزء صغير من الحيطة وقع وقت العاصفة."
+    },
+    {
+     "en": "The menu has a special section for sweet dishes.",
+     "ar": "المنيو فيه قسم خاص للحلويات."
+    },
+    {
+     "en": "Each section of the course takes about a week.",
+     "ar": "كل جزء من الكورس بياخد حوالي أسبوع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000045",
+   "sentences": [
+    {
+     "en": "There was a significant increase in prices this year.",
+     "ar": "حصلت زيادة كبيرة في الأسعار السنة دي."
+    },
+    {
+     "en": "The new bridge made a significant difference to the village.",
+     "ar": "الكوبري الجديد عمل فرق كبير للقرية."
+    },
+    {
+     "en": "A significant number of students failed the first test.",
+     "ar": "عدد كبير من الطلبة سقطوا في أول امتحان."
+    },
+    {
+     "en": "She made a significant discovery about the old temple.",
+     "ar": "اكتشفت حاجة مهمة عن المعبد القديم."
+    },
+    {
+     "en": "The change was small but significant.",
+     "ar": "التغيير كان صغير بس مهم."
+    },
+    {
+     "en": "A significant part of the money goes to rent.",
+     "ar": "جزء كبير من الفلوس بيروح للإيجار."
+    },
+    {
+     "en": "There is no significant difference between the two products.",
+     "ar": "مفيش فرق يستاهل الذكر بين المنتجين."
+    },
+    {
+     "en": "The storm caused significant damage to the port.",
+     "ar": "العاصفة عملت ضرر كبير في المينا."
+    },
+    {
+     "en": "His health showed significant improvement after the surgery.",
+     "ar": "صحته أظهرت تحسن ملحوظ بعد العملية."
+    },
+    {
+     "en": "The most significant event of the year was the big flood.",
+     "ar": "أهم حدث في السنة كان الفيضان الكبير."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000046",
+   "sentences": [
+    {
+     "en": "Your bag is very similar to mine.",
+     "ar": "شنطتك شبه شنطتي جداً."
+    },
+    {
+     "en": "The two brothers have similar voices.",
+     "ar": "الأخوين صوتهم شبه بعض."
+    },
+    {
+     "en": "We had a similar problem at work last year.",
+     "ar": "كان عندنا مشكلة مشابهة في الشغل السنة اللي فاتت."
+    },
+    {
+     "en": "The weather here is similar to the weather in Alexandria.",
+     "ar": "الجو هنا شبه جو إسكندرية."
+    },
+    {
+     "en": "Their answers were so similar that the teacher was suspicious.",
+     "ar": "إجاباتهم كانت متشابهة أوي بحيث إن المدرس شك."
+    },
+    {
+     "en": "She bought a dress similar to the one in the picture.",
+     "ar": "اشترت فستان شبه اللي في الصورة."
+    },
+    {
+     "en": "The two studies reached similar results.",
+     "ar": "الدراستين وصلوا لنتايج متشابهة."
+    },
+    {
+     "en": "My phone is similar to yours but a little older.",
+     "ar": "موبايلي شبه موبايلك بس أقدم شوية."
+    },
+    {
+     "en": "The twins have similar habits, like waking up early.",
+     "ar": "التوأم عندهم عادات متشابهة، زي الصحيان بدري."
+    },
+    {
+     "en": "A similar rule exists in many schools.",
+     "ar": "في قاعدة مشابهة موجودة في مدارس كتير."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000047",
+   "sentences": [
+    {
+     "en": "The Nile is the main source of water for Egypt.",
+     "ar": "النيل هو المصدر الرئيسي للمية في مصر."
+    },
+    {
+     "en": "The sun is a free source of energy.",
+     "ar": "الشمس مصدر طاقة ببلاش."
+    },
+    {
+     "en": "The news came from a source inside the hospital.",
+     "ar": "الخبر جه من مصدر جوه المستشفى."
+    },
+    {
+     "en": "Books are a great source of knowledge.",
+     "ar": "الكتب مصدر عظيم للمعرفة."
+    },
+    {
+     "en": "His only source of income is the small shop.",
+     "ar": "مصدر دخله الوحيد هو المحل الصغير."
+    },
+    {
+     "en": "The river is the source of life for the village.",
+     "ar": "الترعة مصدر الحياة للقرية."
+    },
+    {
+     "en": "She is a source of joy for the whole family.",
+     "ar": "هي مصدر فرح للعيلة كلها."
+    },
+    {
+     "en": "The reporter protected the name of his source.",
+     "ar": "الصحفي خبّى اسم مصدره."
+    },
+    {
+     "en": "Eggs are a cheap source of protein.",
+     "ar": "البيض مصدر رخيص للبروتين."
+    },
+    {
+     "en": "We traced the source of the smell to the old fridge.",
+     "ar": "لقينا مصدر الريحة، طلعت التلاجة القديمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000048",
+   "sentences": [
+    {
+     "en": "Can you give me a specific example?",
+     "ar": "تقدر تديني مثال محدد؟"
+    },
+    {
+     "en": "The course is designed for a specific age group.",
+     "ar": "الكورس معمول لفئة عمرية معينة."
+    },
+    {
+     "en": "I need specific dates, not just sometime in May.",
+     "ar": "محتاج تواريخ محددة، مش بس يعني في مايو كده."
+    },
+    {
+     "en": "The medicine treats a specific type of pain.",
+     "ar": "الدوا ده بيعالج نوع معين من الوجع."
+    },
+    {
+     "en": "There is no specific reason for his anger.",
+     "ar": "مفيش سبب محدد لعصبيته."
+    },
+    {
+     "en": "She asked a very specific question about the law.",
+     "ar": "سألت سؤال محدد جداً عن القانون."
+    },
+    {
+     "en": "The recipe needs a specific kind of rice.",
+     "ar": "الوصفة محتاجة نوع معين من الأرز."
+    },
+    {
+     "en": "Every tool in the box has a specific job.",
+     "ar": "كل عدة في الصندوق ليها شغلانة معينة."
+    },
+    {
+     "en": "The rules are not specific enough about phones.",
+     "ar": "القواعد مش محددة كفاية بخصوص الموبايلات."
+    },
+    {
+     "en": "He trains for a specific race every spring.",
+     "ar": "بيتمرن لسباق معين كل ربيع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000049",
+   "sentences": [
+    {
+     "en": "The structure of the old building is still strong.",
+     "ar": "تركيب العمارة القديمة لسه قوي."
+    },
+    {
+     "en": "The essay has a clear structure: beginning, middle, end.",
+     "ar": "المقال ليه هيكل واضح: مقدمة ووسط ونهاية."
+    },
+    {
+     "en": "Scientists study the structure of the human brain.",
+     "ar": "العلماء بيدرسوا تركيب المخ البشري."
+    },
+    {
+     "en": "The course has a simple weekly structure.",
+     "ar": "الكورس ليه نظام أسبوعي بسيط."
+    },
+    {
+     "en": "The social structure of the village changed after the factory opened.",
+     "ar": "التركيب الاجتماعي للقرية اتغير بعد ما المصنع اتفتح."
+    },
+    {
+     "en": "The bridge is a beautiful steel structure.",
+     "ar": "الكوبري هيكل حديدي جميل."
+    },
+    {
+     "en": "A good sentence has a clear structure.",
+     "ar": "الجملة الكويسة ليها تركيب واضح."
+    },
+    {
+     "en": "The structure of the report confused many readers.",
+     "ar": "ترتيب التقرير لخبط قرا كتير."
+    },
+    {
+     "en": "They examined the structure of the rock under the microscope.",
+     "ar": "فحصوا تركيب الصخر تحت الميكروسكوب."
+    },
+    {
+     "en": "The family structure in the countryside is usually large.",
+     "ar": "تركيب العيلة في الريف غالباً كبير."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000050",
+   "sentences": [
+    {
+     "en": "His theory about the missing money turned out to be true.",
+     "ar": "نظريته عن الفلوس المفقودة طلعت حقيقية."
+    },
+    {
+     "en": "The theory of gravity changed science forever.",
+     "ar": "نظرية الجاذبية غيرت العلم للأبد."
+    },
+    {
+     "en": "She has a theory that cats remember every person who feeds them.",
+     "ar": "عندها نظرية إن القطط بتفتكر كل حد بيطعميها."
+    },
+    {
+     "en": "The students tested the theory with a simple experiment.",
+     "ar": "الطلبة اختبروا النظرية بتجربة بسيطة."
+    },
+    {
+     "en": "In theory, the plan is perfect; in practice, it failed.",
+     "ar": "في النظرية الخطة مثالية، بس في التطبيق فشلت."
+    },
+    {
+     "en": "His theory explains why the birds fly south.",
+     "ar": "نظريته بتفسر ليه العصافير بتهاجر جنوب."
+    },
+    {
+     "en": "The old theory was replaced by new evidence.",
+     "ar": "النظرية القديمة اتبدلت بأدلة جديدة."
+    },
+    {
+     "en": "They discussed the theory of how the pyramids were built.",
+     "ar": "تكلموا في نظرية إزاي الأهرامات اتبنت."
+    },
+    {
+     "en": "Every theory needs proof before people believe it.",
+     "ar": "أي نظرية محتاجة دليل قبل ما الناس تصدقها."
+    },
+    {
+     "en": "The theory sounds strange, but the numbers support it.",
+     "ar": "النظرية شكلها غريب، بس الأرقام بتدعمها."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000051",
+   "sentences": [
+    {
+     "en": "Price is a variable that changes every day in the market.",
+     "ar": "السعر متغير بيتبدل كل يوم في السوق."
+    },
+    {
+     "en": "The experiment had one variable: the amount of light.",
+     "ar": "التجربة كان فيها متغير واحد: كمية الضوء."
+    },
+    {
+     "en": "Temperature is the most important variable in this test.",
+     "ar": "درجة الحرارة أهم متغير في الاختبار ده."
+    },
+    {
+     "en": "Too many variables made the results hard to read.",
+     "ar": "المتغيرات الكتير خلّت النتايج صعبة تتفهم."
+    },
+    {
+     "en": "The scientist kept every variable the same except time.",
+     "ar": "العالم ثبّت كل المتغيرات ما عدا الوقت."
+    },
+    {
+     "en": "Rainfall is a variable that farmers cannot control.",
+     "ar": "المطر متغير الفلاحين مش بيقدروا يتحكموا فيه."
+    },
+    {
+     "en": "In math, a variable is usually written as a letter.",
+     "ar": "في الرياضيات، المتغير بيتكتب غالباً كحرف."
+    },
+    {
+     "en": "Traffic is a variable we forgot in our travel plan.",
+     "ar": "الزحمة متغير نسيناه في خطة السفر."
+    },
+    {
+     "en": "The study removed one variable at a time.",
+     "ar": "الدراسة شالت متغير واحد في كل مرة."
+    },
+    {
+     "en": "Age is a variable that affects how fast we learn.",
+     "ar": "السن متغير بيأثر على سرعة التعلم."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000052",
+   "sentences": [
+    {
+     "en": "She worked hard to achieve her dream of becoming a doctor.",
+     "ar": "اشتغلت بجد عشان تحقق حلمها وتبقى دكتورة."
+    },
+    {
+     "en": "The team achieved a great result in the final match.",
+     "ar": "الفريق حقق نتيجة عظيمة في الماتش النهائي."
+    },
+    {
+     "en": "With daily practice, you can achieve a lot in a year.",
+     "ar": "بالتمرين اليومي تقدر تحقق كتير في سنة."
+    },
+    {
+     "en": "He achieved his goal of reading fifty books.",
+     "ar": "حقق هدفه وقرا خمسين كتاب."
+    },
+    {
+     "en": "The country hopes to achieve zero hunger by next year.",
+     "ar": "البلد بتتمنى توصل لصفر جوع السنة الجاية."
+    },
+    {
+     "en": "They achieved peace after long talks.",
+     "ar": "حققوا السلام بعد مفاوضات طويلة."
+    },
+    {
+     "en": "Small steps every day achieve big things.",
+     "ar": "الخطوات الصغيرة كل يوم بتحقق حاجات كبيرة."
+    },
+    {
+     "en": "She achieved the highest score in her class.",
+     "ar": "جابت أعلى درجة في فصلها."
+    },
+    {
+     "en": "What do you want to achieve this year?",
+     "ar": "عايز تحقق إيه السنة دي؟"
+    },
+    {
+     "en": "The school achieved excellent exam results this term.",
+     "ar": "المدرسة حققت نتايج امتحانات ممتازة الترم ده."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000053",
+   "sentences": [
+    {
+     "en": "He acquired a taste for strong coffee while working night shifts.",
+     "ar": "اتعود على القهوة السادة وهو شغال في الشفت الليلي."
+    },
+    {
+     "en": "Children acquire language faster than adults.",
+     "ar": "الأطفال بيكتسبوا اللغة أسرع من الكبار."
+    },
+    {
+     "en": "The company acquired a smaller firm last month.",
+     "ar": "الشركة اشترت شركة أصغر الشهر اللي فات."
+    },
+    {
+     "en": "She acquired new computer skills in the course.",
+     "ar": "اكتسبت مهارات كمبيوتر جديدة في الكورس."
+    },
+    {
+     "en": "It takes years to acquire real experience.",
+     "ar": "بياخد سنين عشان تكتسب خبرة حقيقية."
+    },
+    {
+     "en": "He acquired the old house from his uncle.",
+     "ar": "ورث البيت القديم من عمه."
+    },
+    {
+     "en": "The museum acquired a rare statue for its collection.",
+     "ar": "المتحف حصل على تمثال نادر لمجموعته."
+    },
+    {
+     "en": "You acquire confidence by trying and failing.",
+     "ar": "بتكتسب الثقة لما تجرب وتفشل."
+    },
+    {
+     "en": "The team acquired two new players this season.",
+     "ar": "الفريق ضم لاعبين جداد الموسم ده."
+    },
+    {
+     "en": "She quickly acquired the local accent after moving south.",
+     "ar": "اكتسبت اللهجة المحلية بسرعة بعد ما نقلت جنوب."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000054",
+   "sentences": [
+    {
+     "en": "It took him a month to adapt to the new school.",
+     "ar": "خد منه شهر عشان يتأقلم على المدرسة الجديدة."
+    },
+    {
+     "en": "Animals adapt to cold weather by growing thick fur.",
+     "ar": "الحيوانات بتتأقلم على البرد بإنها بتطلع فرر تقيل."
+    },
+    {
+     "en": "She adapted quickly to life in the big city.",
+     "ar": "تأقلمت بسرعة على الحياة في المدينة الكبيرة."
+    },
+    {
+     "en": "The shop had to adapt after the mall opened nearby.",
+     "ar": "المحل اضطر يتأقلم بعد ما المول اتفتح جنبه."
+    },
+    {
+     "en": "People adapt their clothes to the season.",
+     "ar": "الناس بتغير هدومها حسب الفصل."
+    },
+    {
+     "en": "He adapted the old recipe to make it healthier.",
+     "ar": "عدّل الوصفة القديمة عشان تبقى صحية أكتر."
+    },
+    {
+     "en": "It is hard to adapt to a new language at first.",
+     "ar": "صعب تتأقلم على لغة جديدة في الأول."
+    },
+    {
+     "en": "The plants adapted to the dry desert air.",
+     "ar": "النباتات تأقلمت مع الهوا الجاف في الصحرا."
+    },
+    {
+     "en": "They adapted their house for their new baby.",
+     "ar": "جهزوا بيتهم عشان يتأقلم مع البيبي الجديد."
+    },
+    {
+     "en": "Workers must adapt to new machines every few years.",
+     "ar": "العمال لازم يتأقلموا على مكن جديد كل كام سنة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000055",
+   "sentences": [
+    {
+     "en": "The hot weather affects how much water we drink.",
+     "ar": "الجو الحار بيأثر على كمية المية اللي بنشربها."
+    },
+    {
+     "en": "Lack of sleep affects your memory badly.",
+     "ar": "قلة النوم بتأثر وحش على ذاكرتك."
+    },
+    {
+     "en": "The new law will affect every shop in the street.",
+     "ar": "القانون الجديد هيقصر على كل محل في الشارع."
+    },
+    {
+     "en": "Noise from the road affects the whole building.",
+     "ar": "زعيق الطريق بيأثر على العمارة كلها."
+    },
+    {
+     "en": "How does food affect your mood?",
+     "ar": "الأكل بيأثر على مزاجك إزاي؟"
+    },
+    {
+     "en": "The flood affected hundreds of families.",
+     "ar": "الفيضان أثر على مئات العائلات."
+    },
+    {
+     "en": "Her words affected him deeply.",
+     "ar": "كلامها أثر فيه بعمق."
+    },
+    {
+     "en": "The price of oil affects the cost of everything.",
+     "ar": "سعر البترول بيأثر على سعر كل حاجة."
+    },
+    {
+     "en": "Smoking affects not just the smoker but everyone around.",
+     "ar": "التدخين مش بيأثر على المدخن بس، ده بيأثر على كل اللي حواليه."
+    },
+    {
+     "en": "The long winter affected the farmers badly this year.",
+     "ar": "الشتا الطويل أثر وحش على الفلاحين السنة دي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000056",
+   "sentences": [
+    {
+     "en": "This dress is not appropriate for a job interview.",
+     "ar": "الفستان ده مش مناسب لمقابلة شغل."
+    },
+    {
+     "en": "The teacher found the joke appropriate for the young class.",
+     "ar": "المدرس لقى النكتة مناسبة للفصل الصغير."
+    },
+    {
+     "en": "Please choose appropriate words when you speak to your grandmother.",
+     "ar": "اختار كلام مناسب لما تكلم تيتة."
+    },
+    {
+     "en": "The gift was small but appropriate for the occasion.",
+     "ar": "الهدية كانت صغيرة بس مناسبة للمناسبة."
+    },
+    {
+     "en": "Is this song appropriate for a children's party?",
+     "ar": "الأغنية دي مناسبة لحفلة أطفال؟"
+    },
+    {
+     "en": "He wore appropriate clothes for the cold mountain trip.",
+     "ar": "لبس هدوم مناسبة لرحلة الجبل السقعة."
+    },
+    {
+     "en": "The manager took appropriate action after the complaint.",
+     "ar": "المدير خد الإجراء المناسب بعد الشكوى."
+    },
+    {
+     "en": "A library is not an appropriate place for loud music.",
+     "ar": "المكتبة مش مكان مناسب للمزيكا العالية."
+    },
+    {
+     "en": "They gave the boy an appropriate punishment for breaking the window.",
+     "ar": "دولوا عقاب مناسب على كسره الشباك."
+    },
+    {
+     "en": "Her response was calm and appropriate.",
+     "ar": "ردها كان هادي ومناسب."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000057",
+   "sentences": [
+    {
+     "en": "The best aspect of the job is the friendly people.",
+     "ar": "أحسن جانب في الشغلانة هو الناس اللطيفة."
+    },
+    {
+     "en": "We discussed every aspect of the plan.",
+     "ar": "اتكلمنا في كل جانب من الخطة."
+    },
+    {
+     "en": "The health aspect of fast food worries many parents.",
+     "ar": "الجانب الصحي للأكل السريع بيقلق أهالي كتير."
+    },
+    {
+     "en": "One important aspect of the course is daily practice.",
+     "ar": "جانب مهم في الكورس هو التمرين اليومي."
+    },
+    {
+     "en": "The design looks good, but we forgot the cost aspect.",
+     "ar": "التصميم شكله حلو، بس نسينا جانب التكلفة."
+    },
+    {
+     "en": "Every aspect of village life changes in summer.",
+     "ar": "كل جانب من حياة القرية بيتغير في الصيف."
+    },
+    {
+     "en": "The social aspect of school is as important as the lessons.",
+     "ar": "الجانب الاجتماعي في المدرسة مهم زي الدروس بالظبط."
+    },
+    {
+     "en": "He explained the technical aspect of the machine.",
+     "ar": "شرح الجانب التقني للمكنة."
+    },
+    {
+     "en": "The most difficult aspect of the job is the long hours.",
+     "ar": "أصعب جانب في الشغلانة هو الساعات الطويلة."
+    },
+    {
+     "en": "They studied the cultural aspects of the old city.",
+     "ar": "درسوا الجوانب الثقافية للمدينة القديمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000058",
+   "sentences": [
+    {
+     "en": "Can you assist me with these heavy bags?",
+     "ar": "تقدر تساعدني في الشنط التقيلة دي؟"
+    },
+    {
+     "en": "The nurse assisted the doctor during the surgery.",
+     "ar": "الممرضة ساعدت الدكتور أثناء العملية."
+    },
+    {
+     "en": "A guide assisted the tourists in the museum.",
+     "ar": "مرشد ساعد السياح في المتحف."
+    },
+    {
+     "en": "The app assists students with their homework.",
+     "ar": "التطبيق بيساعد الطلبة في واجبهم."
+    },
+    {
+     "en": "He assisted his grandfather up the stairs.",
+     "ar": "ساعد جده يطلع السلم."
+    },
+    {
+     "en": "Two workers assisted in loading the truck.",
+     "ar": "عاملين ساعدوا في تحميل العربية."
+    },
+    {
+     "en": "The teacher's assistant helped with the young children.",
+     "ar": "معاون المدرس ساعد مع الأطفال الصغيرين."
+    },
+    {
+     "en": "Technology assists farmers in watching their crops.",
+     "ar": "التكنولوجيا بتساعد الفلاحين في متابعة محصولهم."
+    },
+    {
+     "en": "She assisted the old lady across the busy street.",
+     "ar": "ساعدت الست الكبيرة تعبر الشارع المزدحم."
+    },
+    {
+     "en": "Volunteers assisted in distributing food after the flood.",
+     "ar": "المتطوعين ساعدوا في توزيع الأكل بعد الفيضان."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000059",
+   "sentences": [
+    {
+     "en": "Books in the library are organized by category.",
+     "ar": "الكتب في المكتبة مترتبة حسب التصنيف."
+    },
+    {
+     "en": "This word falls into the category of verbs.",
+     "ar": "الكلمة دي تنتمي لفئة الأفعال."
+    },
+    {
+     "en": "The shop sells every category of phone, from cheap to expensive.",
+     "ar": "المحل بيبيع كل فئات الموبايلات، من الرخيص للغالي."
+    },
+    {
+     "en": "Rice belongs in the category of grains.",
+     "ar": "الأرز بينتمي لفئة الحبوب."
+    },
+    {
+     "en": "The competition has a category for children under ten.",
+     "ar": "المسابقة فيها فئة للأطفال تحت سن العاشرة."
+    },
+    {
+     "en": "Which category does this animal belong to?",
+     "ar": "الحيوان ده ينتمي لأنهي فئة؟"
+    },
+    {
+     "en": "They put all red cars in one category.",
+     "ar": "حطوا كل العربيات الحمرا في تصنيف واحد."
+    },
+    {
+     "en": "The prize has a special category for young writers.",
+     "ar": "الجايزة فيها فئة خاصة للكتاب الصغيرين."
+    },
+    {
+     "en": "Hotels are divided into categories by stars.",
+     "ar": "الفنادق متقسمة لفئات حسب النجوم."
+    },
+    {
+     "en": "His question does not fit into any known category.",
+     "ar": "سؤاله مش بينتمي لأي تصنيف معروف."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000060",
+   "sentences": [
+    {
+     "en": "I read the first chapter of the book last night.",
+     "ar": "قريت أول فصل من الكتاب مبارح بالليل."
+    },
+    {
+     "en": "The final chapter explains everything.",
+     "ar": "الفصل الأخير بيفسر كل حاجة."
+    },
+    {
+     "en": "Each chapter ends with a short quiz.",
+     "ar": "كل فصل بينتهي باختبار قصير."
+    },
+    {
+     "en": "She wrote a whole chapter about her childhood in the village.",
+     "ar": "كتبت فصل كامل عن طفولتها في القرية."
+    },
+    {
+     "en": "The second chapter is harder than the first.",
+     "ar": "الفصل التاني أصعب من الأول."
+    },
+    {
+     "en": "He could not stop reading until the chapter ended.",
+     "ar": "ما قدرش يبطل قراية لحد ما الفصل خلص."
+    },
+    {
+     "en": "The teacher skipped chapter four and went to five.",
+     "ar": "المدرس عدّى الفصل الرابع وراح للخامس."
+    },
+    {
+     "en": "This chapter covers the history of the pyramids.",
+     "ar": "الفصل ده بيتكلم عن تاريخ الأهرامات."
+    },
+    {
+     "en": "We discussed the chapter in class today.",
+     "ar": "اتكلمنا عن الفصل في الحصة النهارده."
+    },
+    {
+     "en": "The book has twenty short chapters.",
+     "ar": "الكتاب فيه عشرين فصل قصير."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000061",
+   "sentences": [
+    {
+     "en": "The whole community came to clean the beach.",
+     "ar": "المجتمع كله اجتمع عشان ينضف الشط."
+    },
+    {
+     "en": "Our community center offers free English classes.",
+     "ar": "مركز مجتمعنا بيقدم حصص إنجليزي ببلاش."
+    },
+    {
+     "en": "The local community built a small library.",
+     "ar": "الأهالي بنوا مكتبة صغيرة."
+    },
+    {
+     "en": "She is known in the community for her free cooking lessons.",
+     "ar": "هي معروفة في الحي بحصص الطبخ المجانية."
+    },
+    {
+     "en": "The farming community depends on the river.",
+     "ar": "مجتمع الفلاحين بيعتمد على الترعة."
+    },
+    {
+     "en": "The online community helps new programmers learn.",
+     "ar": "المجتمع الأونلاين بيساعد المبرمجين الجداد يتعلموا."
+    },
+    {
+     "en": "After the fire, the community raised money for the family.",
+     "ar": "بعد الحريق، الناس في المنطقة جمعوا فلوس للعيلة."
+    },
+    {
+     "en": "The community decided to plant trees along the road.",
+     "ar": "أهل المنطقة قرروا يزرعوا شجر على طول الطريق."
+    },
+    {
+     "en": "A strong community takes care of its old people.",
+     "ar": "المجتمع القوي بيعتني بكباره."
+    },
+    {
+     "en": "The school is at the heart of the community.",
+     "ar": "المدرسة في قلب المجتمع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000062",
+   "sentences": [
+    {
+     "en": "The human brain is a very complex system.",
+     "ar": "المخ البشري نظام معقد جداً."
+    },
+    {
+     "en": "The instructions were too complex for the children.",
+     "ar": "التعليمات كانت معقدة أوي على الأطفال."
+    },
+    {
+     "en": "Climate change is a complex problem with no easy answer.",
+     "ar": "تغير المناخ مشكلة معقدة ملهاش حل سهل."
+    },
+    {
+     "en": "He explained the complex idea with a simple drawing.",
+     "ar": "شرح الفكرة المعقدة برسمة بسيطة."
+    },
+    {
+     "en": "The machine has a complex network of wires.",
+     "ar": "المكنة فيها شبكة أسلاك معقدة."
+    },
+    {
+     "en": "The situation became more complex after he arrived.",
+     "ar": "الموقف بقى أعقد بعد ما وصل."
+    },
+    {
+     "en": "She wrote a complex computer program in one week.",
+     "ar": "كتبت برنامج كمبيوتر معقد في أسبوع واحد."
+    },
+    {
+     "en": "The recipe looks complex but it is actually easy.",
+     "ar": "الوصفة شكلها معقد بس هي سهلة فعلاً."
+    },
+    {
+     "en": "The city has a complex system of trains and buses.",
+     "ar": "المدينة عندها نظام معقد من القطارات والأتوبيسات."
+    },
+    {
+     "en": "His answer was too complex; nobody understood it.",
+     "ar": "رده كان معقد زيادة عن اللزوم، محدش فهمه."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000063",
+   "sentences": [
+    {
+     "en": "The conclusion of the story made everyone cry.",
+     "ar": "نهاية الحكاية خلّت الكل يعيط."
+    },
+    {
+     "en": "What conclusion did the doctors reach?",
+     "ar": "الدكاترة وصلوا لإيه في الآخر؟"
+    },
+    {
+     "en": "In conclusion, walking is the cheapest sport.",
+     "ar": "في الختام، المشي أرخص رياضة."
+    },
+    {
+     "en": "We came to the conclusion that the house was too expensive.",
+     "ar": "وصلنا لاستنتاج إن البيت غالي أوي."
+    },
+    {
+     "en": "The report ends with a clear conclusion.",
+     "ar": "التقرير بينتهي باستنتاج واضح."
+    },
+    {
+     "en": "Do not jump to conclusions before you hear both sides.",
+     "ar": "متستعجلش في الحكم قبل ما تسمع الطرفين."
+    },
+    {
+     "en": "The experiment led to a surprising conclusion.",
+     "ar": "التجربة وصلت لاستنتاج مفاجئ."
+    },
+    {
+     "en": "Her conclusion was based on years of study.",
+     "ar": "استنتاجها كان مبني على سنين من الدراسة."
+    },
+    {
+     "en": "The final chapter gives a strong conclusion to the book.",
+     "ar": "الفصل الأخير بيدي خاتمة قوية للكتاب."
+    },
+    {
+     "en": "After two hours of talk, they reached the same conclusion.",
+     "ar": "بعد ساعتين كلام، وصلوا لنفس الاستنتاج."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000064",
+   "sentences": [
+    {
+     "en": "The university conducted a survey of one thousand students.",
+     "ar": "الجامعة عملت استبيان لألف طالب."
+    },
+    {
+     "en": "Scientists conducted the experiment three times.",
+     "ar": "العلماء عملوا التجربة تلات مرات."
+    },
+    {
+     "en": "They conducted interviews with the shop owners.",
+     "ar": "عملوا مقابلات مع أصحاب المحلات."
+    },
+    {
+     "en": "The police conducted a search of the building.",
+     "ar": "البوليس نفذ تفتيش للعمارة."
+    },
+    {
+     "en": "She conducted herself with great respect at the meeting.",
+     "ar": "تصرفت بكل احترام في الاجتماع."
+    },
+    {
+     "en": "The orchestra was conducted by a young Egyptian.",
+     "ar": "الأوركسترا قادها شاب مصري."
+    },
+    {
+     "en": "The team will conduct tests on the water every month.",
+     "ar": "الفريق هيعمل تحاليل للمية كل شهر."
+    },
+    {
+     "en": "He conducted a study on how children learn to read.",
+     "ar": "أجرى دراسة عن إزاي الأطفال بيتعلموا القراية."
+    },
+    {
+     "en": "The school conducted a fire drill last week.",
+     "ar": "المدرسة عملت تدريب على الحريق الأسبوع اللي فات."
+    },
+    {
+     "en": "The interview was conducted in both Arabic and English.",
+     "ar": "المقابلة اتعملت بالعربي والإنجليزي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000065",
+   "sentences": [
+    {
+     "en": "The flood had serious consequences for the farmers.",
+     "ar": "الفيضان كان ليه عواقب خطيرة على الفلاحين."
+    },
+    {
+     "en": "You must think about the consequences before you act.",
+     "ar": "لازم تفكر في العواقب قبل ما تتصرف."
+    },
+    {
+     "en": "Skipping school has consequences for your grades.",
+     "ar": "الهروب من المدرسة ليه عواقب على درجاتك."
+    },
+    {
+     "en": "The consequences of the storm were felt for months.",
+     "ar": "عواقب العاصفة حست بيها الناس لشهور."
+    },
+    {
+     "en": "One lie can have unexpected consequences.",
+     "ar": "كدبة واحدة ممكن يكون ليها عواقب مش متوقعة."
+    },
+    {
+     "en": "He quit his job without thinking of the consequences.",
+     "ar": "ساب شغله من غير ما يفكر في العواقب."
+    },
+    {
+     "en": "The consequences of smoking appear after many years.",
+     "ar": "عواقب التدخين بتظهر بعد سنين كتير."
+    },
+    {
+     "en": "Cutting the forest had terrible consequences for the animals.",
+     "ar": "قطع الغابة كان ليه عواقب وحشة على الحيوانات."
+    },
+    {
+     "en": "She accepted the consequences of her mistake.",
+     "ar": "قبلت عواقب غلطتها."
+    },
+    {
+     "en": "The long-term consequences of the new law are still unclear.",
+     "ar": "العواقب طويلة المدى للقانون الجديد لسه مش واضحة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000066",
+   "sentences": [
+    {
+     "en": "The construction of the new bridge will take two years.",
+     "ar": "بناء الكوبري الجديد هياخد سنتين."
+    },
+    {
+     "en": "The street is closed because of construction work.",
+     "ar": "الشارع مقفول بسبب شغل البناء."
+    },
+    {
+     "en": "He works in construction during the summer.",
+     "ar": "بيشتغل في المقاولات في الصيف."
+    },
+    {
+     "en": "The construction company hired fifty new workers.",
+     "ar": "شركة المقاولات عينت خمسين عامل جديد."
+    },
+    {
+     "en": "The noise from the construction site wakes us every morning.",
+     "ar": "صوت موقع البناء بيصحينا كل صبح."
+    },
+    {
+     "en": "The old mosque is a beautiful piece of construction.",
+     "ar": "الجامع القديم تحفة معمارية جميلة."
+    },
+    {
+     "en": "Construction of the mall started last month.",
+     "ar": "بناء المول بدأ الشهر اللي فات."
+    },
+    {
+     "en": "They used local stone in the construction of the house.",
+     "ar": "استخدموا حجر محلي في بناء البيت."
+    },
+    {
+     "en": "The new school is still under construction.",
+     "ar": "المدرسة الجديدة لسه تحت الإنشاء."
+    },
+    {
+     "en": "Good construction keeps a building safe for years.",
+     "ar": "البناء الكويس بيخلي العمارة آمنة لسنين."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000067",
+   "sentences": [
+    {
+     "en": "This car consumes too much fuel.",
+     "ar": "العربية دي بتستهلك بنزين كتير."
+    },
+    {
+     "en": "People consume more electricity in summer.",
+     "ar": "الناس بتستهلك كهربا أكتر في الصيف."
+    },
+    {
+     "en": "An average person consumes two kilos of rice a week.",
+     "ar": "الشخص العادي بياكل حوالي كيلوين أرز في الأسبوع."
+    },
+    {
+     "en": "The big machines consume a lot of water.",
+     "ar": "المكن الكبير بيستهلك مية كتير."
+    },
+    {
+     "en": "He consumed the whole sandwich in two minutes.",
+     "ar": "كل الساندوتش كله في دقيقتين."
+    },
+    {
+     "en": "We should consume less sugar for our health.",
+     "ar": "المفروض نقلل السكر اللي بنستهلكه عشان صحتنا."
+    },
+    {
+     "en": "The fire consumed the old wooden house.",
+     "ar": "النار كلت البيت الخشب القديم كله."
+    },
+    {
+     "en": "Modern families consume more online video than ever.",
+     "ar": "العائلات الحديثة بتتفرج على فيديوهات أونلاين أكتر من أي وقت."
+    },
+    {
+     "en": "This washing machine consumes half the electricity of the old one.",
+     "ar": "الغسالة دي بتستهلك نص الكهربا اللي بتستهلكها القديمة."
+    },
+    {
+     "en": "How much meat do people consume in a year?",
+     "ar": "الناس بتستهلك قد إيه لحمة في السنة؟"
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000068",
+   "sentences": [
+    {
+     "en": "Egyptian culture is famous for its food and music.",
+     "ar": "الثقافة المصرية مشهورة بأكلها ومزيكتها."
+    },
+    {
+     "en": "Every country has its own culture and traditions.",
+     "ar": "كل بلد ليها ثقافتها وتقاليدها."
+    },
+    {
+     "en": "He loves to learn about the culture of ancient Greece.",
+     "ar": "بيحب يتعلم عن حضارة اليونان القديمة."
+    },
+    {
+     "en": "The festival celebrates the culture of Upper Egypt.",
+     "ar": "المهرجان بيحتفل بثقافة الصعيد."
+    },
+    {
+     "en": "Food is an important part of our culture.",
+     "ar": "الأكل جزء مهم من ثقافتنا."
+    },
+    {
+     "en": "In our culture, guests are always welcomed with tea.",
+     "ar": "في ثقافتنا، الضيف دايماً بيتستقبل بالشاي."
+    },
+    {
+     "en": "Popular culture changes very fast now.",
+     "ar": "الثقافة الشعبية بتتغير بسرعة جداً دلوقتي."
+    },
+    {
+     "en": "The museum teaches children about the culture of the pharaohs.",
+     "ar": "المتحف بيعلم الأطفال عن حضارة الفراعنة."
+    },
+    {
+     "en": "She wrote a paper on coffee culture in Cairo.",
+     "ar": "كتبت بحث عن ثقافة القهوة في القاهرة."
+    },
+    {
+     "en": "Travel helps you understand a new culture.",
+     "ar": "السفر بيساعدك تفهم ثقافة جديدة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000069",
+   "sentences": [
+    {
+     "en": "The design of the new bridge won a prize.",
+     "ar": "تصميم الكوبري الجديد كسب جايزة."
+    },
+    {
+     "en": "She chose a simple design for her wedding dress.",
+     "ar": "اختارت تصميم بسيط لفستان فرحها."
+    },
+    {
+     "en": "The design of the app is easy for old people to use.",
+     "ar": "تصميم التطبيق سهل للناس الكبيرة في السن."
+    },
+    {
+     "en": "Good design makes a small room look bigger.",
+     "ar": "التصميم الكويس بيخلي الأوضة الصغيرة تبان أكبر."
+    },
+    {
+     "en": "The car has a modern design with smooth lines.",
+     "ar": "العربية ليها تصميم عصري بخطوط ناعمة."
+    },
+    {
+     "en": "He studied the design of the pyramids at university.",
+     "ar": "درس تصميم الأهرامات في الجامعة."
+    },
+    {
+     "en": "The garden design includes a small pond.",
+     "ar": "تصميم الجنينة فيه بحيرة صغيرة."
+    },
+    {
+     "en": "They changed the design of the bottle to use less plastic.",
+     "ar": "غيروا تصميم الازازة عشان يستخدموا بلاستيك أقل."
+    },
+    {
+     "en": "The building's design keeps it cool in summer.",
+     "ar": "تصميم العمارة بيخليها سقعة في الصيف."
+    },
+    {
+     "en": "Her notebook has a beautiful floral design on the cover.",
+     "ar": "كراستها عليها تصميم ورد جميل على الغلاف."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000070",
+   "sentences": [
+    {
+     "en": "The twins are distinct in personality even though they look the same.",
+     "ar": "التوأم مختلفين في الشخصية مع إن شكلهم واحد."
+    },
+    {
+     "en": "The report divides the birds into three distinct groups.",
+     "ar": "التقرير بيقسم العصافير لتلات مجموعات مميزة."
+    },
+    {
+     "en": "Each district has its own distinct accent.",
+     "ar": "كل منطقة ليها لهجتها المميزة."
+    },
+    {
+     "en": "There is a distinct smell of rain in the air.",
+     "ar": "في ريحة مطر مميزة في الجو."
+    },
+    {
+     "en": "The two problems are quite distinct from each other.",
+     "ar": "المشكلتين مختلفين تماماً عن بعض."
+    },
+    {
+     "en": "She has a distinct style of writing that is easy to recognize.",
+     "ar": "عندها أسلوب كتابة مميز سهل تتعرف عليه."
+    },
+    {
+     "en": "The village has a distinct culture of its own.",
+     "ar": "القرية ليها ثقافة مميزة خاصة بيها."
+    },
+    {
+     "en": "His voice has a distinct deep tone.",
+     "ar": "صوته ليه نبرة عميقة مميزة."
+    },
+    {
+     "en": "The cheese made in this region has a distinct taste.",
+     "ar": "الجبنة اللي بتتعمل في المنطقة دي طعمها مميز."
+    },
+    {
+     "en": "The two languages are distinct but share some words.",
+     "ar": "اللغتين مختلفتين بس بيشتركوا في كلمات."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000071",
+   "sentences": [
+    {
+     "en": "Water is the most important element in farming.",
+     "ar": "المية أهم عنصر في الزراعة."
+    },
+    {
+     "en": "Trust is a key element in any friendship.",
+     "ar": "الثقة عنصر أساسي في أي صداقة."
+    },
+    {
+     "en": "The surprise element made the party much better.",
+     "ar": "عنصر المفاجأة خلّى الحفلة أحلى بكتير."
+    },
+    {
+     "en": "Oxygen is an element that all living things need.",
+     "ar": "الأكسجين عنصر محتاجه كل الكائنات الحية."
+    },
+    {
+     "en": "There was an element of luck in his success.",
+     "ar": "كان فيه عنصر حظ في نجاحه."
+    },
+    {
+     "en": "The story has every element of a great adventure.",
+     "ar": "الحكاية فيها كل عناصر المغامرة العظيمة."
+    },
+    {
+     "en": "Teamwork is a vital element in the game.",
+     "ar": "الشغل الجماعي عنصر حيوي في اللعبة."
+    },
+    {
+     "en": "The design has one strange element: a door that opens to a wall.",
+     "ar": "التصميم فيه عنصر غريب: باب بيفتح على حيطة."
+    },
+    {
+     "en": "Exercise is an essential element of a healthy life.",
+     "ar": "الرياضة عنصر أساسي في الحياة الصحية."
+    },
+    {
+     "en": "The soup needs one more element: a little salt.",
+     "ar": "الشوربة ناقصها عنصر واحد: شوية ملح."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000072",
+   "sentences": [
+    {
+     "en": "The student solved the equation in one minute.",
+     "ar": "الطالب حل المعادلة في دقيقة واحدة."
+    },
+    {
+     "en": "This equation has two possible answers.",
+     "ar": "المعادلة دي ليها حلين ممكنين."
+    },
+    {
+     "en": "The teacher wrote the equation on the board.",
+     "ar": "المدرس كتب المعادلة على السبورة."
+    },
+    {
+     "en": "You must balance both sides of the equation.",
+     "ar": "لازم توازن طرفي المعادلة."
+    },
+    {
+     "en": "The chemical equation shows how water is formed.",
+     "ar": "المعادلة الكيميائية بتوضح المية بتتكون إزاي."
+    },
+    {
+     "en": "Nobody in the class could solve the hard equation.",
+     "ar": "محدش في الفصل قدر يحل المعادلة الصعبة."
+    },
+    {
+     "en": "Money is only one part of the happiness equation.",
+     "ar": "الفلوس جزء واحد بس من معادلة السعادة."
+    },
+    {
+     "en": "He found a mistake in the equation after the exam.",
+     "ar": "لقى غلطة في المعادلة بعد الامتحان."
+    },
+    {
+     "en": "The equation in the physics book was too hard for me.",
+     "ar": "المعادلة اللي في كتاب الفيزيا كانت صعبة عليا."
+    },
+    {
+     "en": "She explained the equation with apples and oranges.",
+     "ar": "شرحت المعادلة بالتفاح والبرتقال."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000073",
+   "sentences": [
+    {
+     "en": "They established a small school in the village.",
+     "ar": "أسسوا مدرسة صغيرة في القرية."
+    },
+    {
+     "en": "The company was established fifty years ago.",
+     "ar": "الشركة اتأسست من خمسين سنة."
+    },
+    {
+     "en": "The study established a link between sleep and memory.",
+     "ar": "الدراسة أثبتت علاقة بين النوم والذاكرة."
+    },
+    {
+     "en": "He established himself as the best baker in town.",
+     "ar": "ثبت نفسه كأحسن فرّان في المدينة."
+    },
+    {
+     "en": "The two countries established a trade agreement.",
+     "ar": "البلدين أسسوا اتفاق تجاري."
+    },
+    {
+     "en": "The club established new rules for all members.",
+     "ar": "النادي حط قواعد جديدة لكل الأعضاء."
+    },
+    {
+     "en": "She established a daily habit of walking before work.",
+     "ar": "عملت لنفسها عادة يومية إنها تمشي قبل الشغل."
+    },
+    {
+     "en": "The police tried to establish the time of the accident.",
+     "ar": "البوليس حاول يثبت ميعاد الحادثة."
+    },
+    {
+     "en": "The family established a small business selling bread.",
+     "ar": "العيلة أسست مشروع صغير لبيع العيش."
+    },
+    {
+     "en": "Good teachers establish trust with their students.",
+     "ar": "المدرسين الكويسين بيبنوا ثقة مع طلابهم."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000074",
+   "sentences": [
+    {
+     "en": "The teacher evaluated the students' projects carefully.",
+     "ar": "المدرس قيّم مشاريع الطلبة بعناية."
+    },
+    {
+     "en": "We need to evaluate the risks before we invest.",
+     "ar": "محتاجين نقيّم المخاطر قبل ما نستثمر."
+    },
+    {
+     "en": "The doctor evaluated the patient's condition.",
+     "ar": "الدكتور قيّم حالة المريض."
+    },
+    {
+     "en": "They evaluated three different plans and chose the cheapest.",
+     "ar": "قيّموا تلات خطط مختلفة واختاروا الأرخص."
+    },
+    {
+     "en": "The company evaluates every worker once a year.",
+     "ar": "الشركة بتقيّم كل موظف مرة في السنة."
+    },
+    {
+     "en": "It is hard to evaluate the damage so soon.",
+     "ar": "صعب نقيّم الخساير بدري كده."
+    },
+    {
+     "en": "The judge evaluated the evidence for two days.",
+     "ar": "القاضي راجع الأدلة لمدة يومين."
+    },
+    {
+     "en": "We should evaluate how much water we waste.",
+     "ar": "المفروض نقيّم قد إيه بنهدر مية."
+    },
+    {
+     "en": "The team evaluated the new machine in the field.",
+     "ar": "الفريق قيّم المكنة الجديدة في الحقل."
+    },
+    {
+     "en": "Parents were asked to evaluate the new school program.",
+     "ar": "الأهالي اتطلبوا منهم يقيّموا برنامج المدرسة الجديد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000075",
+   "sentences": [
+    {
+     "en": "The main feature of the phone is its long battery life.",
+     "ar": "أهم ميزة في الموبايل هي البطارية الطويلة."
+    },
+    {
+     "en": "The house has a nice feature: a roof garden.",
+     "ar": "البيت فيه ميزة حلوة: جنينة على السطح."
+    },
+    {
+     "en": "Safety is the most important feature of the new car.",
+     "ar": "الأمان أهم ميزة في العربية الجديدة."
+    },
+    {
+     "en": "The app added a new feature that saves words you look up.",
+     "ar": "التطبيق ضاف خاصية جديدة بتحفظ الكلمات اللي بتدور عليها."
+    },
+    {
+     "en": "A big feature of the hotel is its view of the sea.",
+     "ar": "من أكبر مميزات الفندق منظره على البحر."
+    },
+    {
+     "en": "The movie's best feature is its music.",
+     "ar": "أحلى حاجة في الفيلم هي المزيكا."
+    },
+    {
+     "en": "The river is a natural feature of the landscape.",
+     "ar": "النهر سمة طبيعية في المنظر."
+    },
+    {
+     "en": "This feature lets you send voice messages.",
+     "ar": "الميزة دي بتخليك تبعت رسايل صوتية."
+    },
+    {
+     "en": "One common feature of all healthy people is good sleep.",
+     "ar": "سمة مشتركة في كل الناس الصحية هي النوم الكويس."
+    },
+    {
+     "en": "The new feature made the program much easier to use.",
+     "ar": "الخاصية الجديدة خلّت البرنامج أسهل بكتير في الاستخدام."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000076",
+   "sentences": [
+    {
+     "en": "The final exam is next Thursday.",
+     "ar": "الامتحان النهائي الخميس الجاي."
+    },
+    {
+     "en": "This is my final offer: take it or leave it.",
+     "ar": "ده عرضي الأخير: يا تاخده يا تسيبه."
+    },
+    {
+     "en": "The final decision belongs to the manager.",
+     "ar": "القرار النهائي بيرجع للمدير."
+    },
+    {
+     "en": "She checked her final answer twice.",
+     "ar": "راجعت إجابتها النهائية مرتين."
+    },
+    {
+     "en": "The final scene of the movie was very sad.",
+     "ar": "المشهد الأخير في الفيلم كان حزين جداً."
+    },
+    {
+     "en": "We reached the final page of the book.",
+     "ar": "وصلنا لآخر صفحة في الكتاب."
+    },
+    {
+     "en": "The final version of the report is ready.",
+     "ar": "النسخة النهائية من التقرير جاهزة."
+    },
+    {
+     "en": "His final words before leaving were thank you.",
+     "ar": "آخر كلماته قبل ما يمشي كانت شكراً."
+    },
+    {
+     "en": "The team scored in the final minute of the match.",
+     "ar": "الفريق جاب جون في الدقيقة الأخيرة من الماتش."
+    },
+    {
+     "en": "After the final wash, the shirt looked new.",
+     "ar": "بعد الغسلة الأخيرة، القميص بقى شكله جديد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000077",
+   "sentences": [
+    {
+     "en": "Focus on your studies and forget the games.",
+     "ar": "ركز في مذاكرتك وانسى الألعاب."
+    },
+    {
+     "en": "The camera focuses on the face automatically.",
+     "ar": "الكاميرا بتركز على الوش لوحدها."
+    },
+    {
+     "en": "I cannot focus with all this noise.",
+     "ar": "مش قادر أركز مع الزعيق ده كله."
+    },
+    {
+     "en": "The course focuses on speaking, not grammar.",
+     "ar": "الكورس بيركز على الكلام مش القواعد."
+    },
+    {
+     "en": "She focused all her energy on the final exam.",
+     "ar": "ركزت كل طاقتها على الامتحان النهائي."
+    },
+    {
+     "en": "The report focuses on the cost of clean water.",
+     "ar": "التقرير بيركز على تكلفة المية النضيفة."
+    },
+    {
+     "en": "He needs to focus on one goal at a time.",
+     "ar": "محتاج يركز على هدف واحد في الوقت."
+    },
+    {
+     "en": "The teacher told the class to focus on the map.",
+     "ar": "المدرسة قالت للفصل يركزوا على الخريطة."
+    },
+    {
+     "en": "When I am tired, it is hard to focus on reading.",
+     "ar": "لما ببقى تعبان، صعب أركز في القراية."
+    },
+    {
+     "en": "The meeting focused on the new school rules.",
+     "ar": "الاجتماع ركز على قواعد المدرسة الجديدة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000078",
+   "sentences": [
+    {
+     "en": "The formula for water is simple: two hydrogen and one oxygen.",
+     "ar": "صيغة المية بسيطة: اتنين هيدروجين وواحد أكسجين."
+    },
+    {
+     "en": "He memorized the math formula the night before the exam.",
+     "ar": "حفظ قانون الرياضيات الليلة قبل الامتحان."
+    },
+    {
+     "en": "There is no magic formula for learning English fast.",
+     "ar": "مفيش وصفة سحرية لتعلم الإنجليزي بسرعة."
+    },
+    {
+     "en": "The baby's formula is kept in the fridge.",
+     "ar": "لبن البيبي الصناعي بيتحفظ في التلاجة."
+    },
+    {
+     "en": "The company found a winning formula: good food and low prices.",
+     "ar": "الشركة لقت معادلة النجاح: أكل كويس وأسعار قليلة."
+    },
+    {
+     "en": "The chemical formula was written on the board.",
+     "ar": "الصيغة الكيميائية كانت مكتوبة على السبورة."
+    },
+    {
+     "en": "She knows the formula for perfect tea.",
+     "ar": "هي عارفة سر الشاي المظبوط."
+    },
+    {
+     "en": "The formula in the physics book scared many students.",
+     "ar": "القانون اللي في كتاب الفيزيا خوف طلبة كتير."
+    },
+    {
+     "en": "They used the same formula for every successful shop.",
+     "ar": "استخدموا نفس المعادلة لكل محل ناجح."
+    },
+    {
+     "en": "His formula for success is simple: work hard and sleep well.",
+     "ar": "معادلته للنجاح بسيطة: اشتغل بجد ونام كويس."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000079",
+   "sentences": [
+    {
+     "en": "The report used a clear framework to organize the data.",
+     "ar": "التقرير استخدم إطار عمل واضح لتنظيم البيانات."
+    },
+    {
+     "en": "They built the framework of the house in one month.",
+     "ar": "بنوا هيكل البيت في شهر واحد."
+    },
+    {
+     "en": "The law provides a framework for protecting workers.",
+     "ar": "القانون بيوفر إطار لحماية العمال."
+    },
+    {
+     "en": "The course gives students a framework for writing essays.",
+     "ar": "الكورس بيدي الطلبة إطار لكتابة المقالات."
+    },
+    {
+     "en": "The study's framework was based on older research.",
+     "ar": "إطار الدراسة كان مبني على أبحاث أقدم."
+    },
+    {
+     "en": "A good framework helps teams work faster.",
+     "ar": "إطار العمل الكويس بيساعد الفرق تشتغل أسرع."
+    },
+    {
+     "en": "The new framework connects the two schools.",
+     "ar": "النظام الجديد بيربط المدرستين."
+    },
+    {
+     "en": "They discussed the theoretical framework of the project.",
+     "ar": "اتكلموا في الإطار النظري للمشروع."
+    },
+    {
+     "en": "The metal framework of the bridge is very strong.",
+     "ar": "الهيكل المعدني للكوبري قوي جداً."
+    },
+    {
+     "en": "We need a simple framework for making decisions.",
+     "ar": "محتاجين إطار بسيط لاتخاذ القرارات."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000080",
+   "sentences": [
+    {
+     "en": "The new road had a big impact on the village.",
+     "ar": "الطريق الجديد كان ليه تأثير كبير على القرية."
+    },
+    {
+     "en": "Social media has a strong impact on young people.",
+     "ar": "السوشيال ميديا ليها تأثير قوي على الشباب."
+    },
+    {
+     "en": "The teacher's words had a lasting impact on me.",
+     "ar": "كلام المدرس أثر فيا لمدة طويلة."
+    },
+    {
+     "en": "The impact of the storm destroyed many houses.",
+     "ar": "تأثير العاصفة دمر بيوت كتير."
+    },
+    {
+     "en": "We studied the environmental impact of the factory.",
+     "ar": "درسنا التأثير البيئي للمصنع."
+    },
+    {
+     "en": "One small change can have a big impact.",
+     "ar": "تغيير صغير واحد ممكن يعمل تأثير كبير."
+    },
+    {
+     "en": "The impact of the new law will be seen next year.",
+     "ar": "تأثير القانون الجديد هيظهر السنة الجاية."
+    },
+    {
+     "en": "Her speech made a real impact on the students.",
+     "ar": "كلامها أثر فعلاً في الطلبة."
+    },
+    {
+     "en": "The impact of the ball broke the window.",
+     "ar": "ضربة الكورة كسرت الشباك."
+    },
+    {
+     "en": "They measured the impact of the medicine on patients.",
+     "ar": "قاسوا تأثير الدوا على المرضى."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000081",
+   "sentences": [
+    {
+     "en": "He had a small injury in his left hand.",
+     "ar": "عنده إصابة صغيرة في إيده الشمال."
+    },
+    {
+     "en": "The player left the match because of a knee injury.",
+     "ar": "اللاعب ساب الماتش بسبب إصابة في ركبته."
+    },
+    {
+     "en": "The car accident caused a serious head injury.",
+     "ar": "حادثة العربية سببت إصابة خطيرة في الراس."
+    },
+    {
+     "en": "She recovered from her injury in two weeks.",
+     "ar": "شفيت من إصابتها في أسبوعين."
+    },
+    {
+     "en": "The injury kept him away from football for a month.",
+     "ar": "الإصابة بعدته عن الكورة لمدة شهر."
+    },
+    {
+     "en": "Wearing a helmet can prevent a head injury.",
+     "ar": "لبس الخوذة ممكن يمنع إصابة الراس."
+    },
+    {
+     "en": "The doctor said the injury was not deep.",
+     "ar": "الدكتور قال إن الإصابة مش عميقة."
+    },
+    {
+     "en": "A back injury forced him to stop working.",
+     "ar": "إصابة في ضهره خلّته يبطل شغل."
+    },
+    {
+     "en": "The injury to his eye needed quick care.",
+     "ar": "الإصابة في عينيه احتاجت عناية سريعة."
+    },
+    {
+     "en": "No injury was reported after the fire.",
+     "ar": "مفيش أي إصابة اتبلغ عنها بعد الحريق."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000082",
+   "sentences": [
+    {
+     "en": "She works at a research institute in Cairo.",
+     "ar": "بتشتغل في معهد أبحاث في القاهرة."
+    },
+    {
+     "en": "The institute offers free courses in farming.",
+     "ar": "المعهد بيقدم كورسات ببلاش في الزراعة."
+    },
+    {
+     "en": "The new institute will study the Nile water.",
+     "ar": "المعهد الجديد هيدرس مية النيل."
+    },
+    {
+     "en": "He joined the language institute to learn German.",
+     "ar": "انضم لمعهد اللغات عشان يتعلم ألماني."
+    },
+    {
+     "en": "The institute published a report on public health.",
+     "ar": "المعهد نشر تقرير عن الصحة العامة."
+    },
+    {
+     "en": "The technical institute trains young people for jobs.",
+     "ar": "المعهد الفني بيدرب الشباب على الشغل."
+    },
+    {
+     "en": "An international institute studied the coral reefs.",
+     "ar": "معهد دولي درس الشعاب المرجانية."
+    },
+    {
+     "en": "The art institute is next to the public library.",
+     "ar": "معهد الفنون جنب المكتبة العامة."
+    },
+    {
+     "en": "They founded an institute for desert research.",
+     "ar": "أسسوا معهد لأبحاث الصحرا."
+    },
+    {
+     "en": "The institute welcomes students from all over the country.",
+     "ar": "المعهد بيرحب بطلبة من كل أنحاء البلد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000083",
+   "sentences": [
+    {
+     "en": "Buying a small shop was the best investment of his life.",
+     "ar": "شراء محل صغير كان أحسن استثمار في حياته."
+    },
+    {
+     "en": "The new factory is a big investment for the town.",
+     "ar": "المصنع الجديد استثمار كبير للمدينة."
+    },
+    {
+     "en": "Education is the safest investment for your children.",
+     "ar": "التعليم أأمن استثمار لولادك."
+    },
+    {
+     "en": "Foreign investment created new jobs in the port.",
+     "ar": "الاستثمار الأجنبي خلق شغل جديد في المينا."
+    },
+    {
+     "en": "She made a small investment in her brother's bakery.",
+     "ar": "عملت استثمار صغير في مخبز أخوها."
+    },
+    {
+     "en": "The government wants more investment in clean energy.",
+     "ar": "الحكومة عايزة استثمار أكتر في الطاقة النضيفة."
+    },
+    {
+     "en": "His investment in the farm doubled in five years.",
+     "ar": "استثماره في الأرض اتضاعف في خمس سنين."
+    },
+    {
+     "en": "Time is also an investment; spend it well.",
+     "ar": "الوقت برضه استثمار، صرفه صح."
+    },
+    {
+     "en": "The hotel needed a large investment to reopen.",
+     "ar": "الفندق احتاج استثمار كبير عشان يتفتح تاني."
+    },
+    {
+     "en": "Every investment has a risk, big or small.",
+     "ar": "أي استثمار ليه مخاطرة، كبيرة أو صغيرة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000084",
+   "sentences": [
+    {
+     "en": "Milk was the first item on the shopping list.",
+     "ar": "اللبن كان أول حاجة في قائمة المشتريات."
+    },
+    {
+     "en": "Each item in the shop has a price tag.",
+     "ar": "كل حاجة في المحل عليها ورقة السعر."
+    },
+    {
+     "en": "The most expensive item in the store is the gold watch.",
+     "ar": "أغلى قطعة في المحل هي الساعة الدهب."
+    },
+    {
+     "en": "He checked every item before he paid.",
+     "ar": "راجع كل حاجة قبل ما يدفع."
+    },
+    {
+     "en": "The last item on the menu is my favorite.",
+     "ar": "آخر حاجة في المنيو هي المفضلة عندي."
+    },
+    {
+     "en": "Please return any item you do not use.",
+     "ar": "رجّع أي حاجة مش هتستخدمها."
+    },
+    {
+     "en": "The news item about the flood shocked everyone.",
+     "ar": "خبر الفيضان صدم الكل."
+    },
+    {
+     "en": "One item was missing from the box.",
+     "ar": "حاجة واحدة كانت ناقصة من الصندوق."
+    },
+    {
+     "en": "The museum added a new item to its collection.",
+     "ar": "المتحف ضاف قطعة جديدة لمجموعته."
+    },
+    {
+     "en": "She sold an old item of furniture online.",
+     "ar": "باعت قطعة أثاث قديمة على النت."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000085",
+   "sentences": [
+    {
+     "en": "The study was published in a famous science journal.",
+     "ar": "الدراسة اتنشرت في دورية علمية مشهورة."
+    },
+    {
+     "en": "He reads the medical journal every month.",
+     "ar": "بيقرا الدورية الطبية كل شهر."
+    },
+    {
+     "en": "She writes in her journal every night before sleep.",
+     "ar": "بتكتب في مذكرتها كل ليلة قبل النوم."
+    },
+    {
+     "en": "The journal published a paper on desert farming.",
+     "ar": "الدورية نشرت بحث عن الزراعة الصحراوية."
+    },
+    {
+     "en": "His journal from the trip became a book.",
+     "ar": "يومياته من الرحلة بقت كتاب."
+    },
+    {
+     "en": "The new journal focuses on water studies.",
+     "ar": "الدورية الجديدة بتركز على دراسات المية."
+    },
+    {
+     "en": "Scientists send their work to journals for review.",
+     "ar": "العلماء بيبعتوا شغلهم للدوريات عشان يتراجع."
+    },
+    {
+     "en": "The article appeared in the January journal.",
+     "ar": "المقال ظهر في دورية يناير."
+    },
+    {
+     "en": "She keeps a journal of new English words.",
+     "ar": "بتسجل الكلمات الإنجليزية الجديدة في كراسة."
+    },
+    {
+     "en": "The journal costs less online than on paper.",
+     "ar": "الدورية أرخص أونلاين من النسخة الورقية."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000086",
+   "sentences": [
+    {
+     "en": "He maintains his old car very well.",
+     "ar": "بيحافظ على عربيته القديمة كويس جداً."
+    },
+    {
+     "en": "The school tries to maintain high standards.",
+     "ar": "المدرسة بتحاول تحافظ على مستوى عالي."
+    },
+    {
+     "en": "She maintains a healthy weight by walking daily.",
+     "ar": "بتحافظ على وزن صحي بالمشي كل يوم."
+    },
+    {
+     "en": "It is hard to maintain a garden in the hot summer.",
+     "ar": "صعب تحافظ على جنينة في الصيف الحار."
+    },
+    {
+     "en": "They maintain the road twice a year.",
+     "ar": "بيسيّنوا الطريق مرتين في السنة."
+    },
+    {
+     "en": "He maintained a smile even when he was tired.",
+     "ar": "فضل مبتسم حتى لما كان تعبان."
+    },
+    {
+     "en": "The family maintains close ties with their relatives.",
+     "ar": "العيلة بتحافظ على علاقة قوية بأقاربهم."
+    },
+    {
+     "en": "To maintain good health, sleep early.",
+     "ar": "عشان تحافظ على صحتك، نام بدري."
+    },
+    {
+     "en": "The machine must be maintained every month.",
+     "ar": "المكنة لازم تتصان كل شهر."
+    },
+    {
+     "en": "She maintained her calm during the whole meeting.",
+     "ar": "حافظت على هدوئها طول الاجتماع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000087",
+   "sentences": [
+    {
+     "en": "It is normal to feel nervous before an exam.",
+     "ar": "طبيعي تحس بقلق قبل الامتحان."
+    },
+    {
+     "en": "The weather returned to normal after the storm.",
+     "ar": "الجو رجع لطبيعته بعد العاصفة."
+    },
+    {
+     "en": "A normal working day here starts at eight.",
+     "ar": "يوم الشغل العادي هنا بيبدأ الساعة تمانية."
+    },
+    {
+     "en": "The doctor said her blood pressure was normal.",
+     "ar": "الدكتور قال إن ضغط دمها طبيعي."
+    },
+    {
+     "en": "In normal conditions, the trip takes one hour.",
+     "ar": "في الظروف العادية، الرحلة بتاخد ساعة."
+    },
+    {
+     "en": "It is normal for kids to ask many questions.",
+     "ar": "طبيعي الأطفال يسألوا أسئلة كتير."
+    },
+    {
+     "en": "His temperature is back to normal now.",
+     "ar": "حرارته رجعت للطبيعي دلوقتي."
+    },
+    {
+     "en": "The normal price of the ticket is fifty pounds.",
+     "ar": "السعر العادي للتذكرة خمسين جنيه."
+    },
+    {
+     "en": "Life slowly returned to normal after the flood.",
+     "ar": "الحياة رجعت لطبيعتها بالراحة بعد الفيضان."
+    },
+    {
+     "en": "A little stress before a match is completely normal.",
+     "ar": "شوية قلق قبل الماتش حاجة طبيعية تماماً."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000088",
+   "sentences": [
+    {
+     "en": "You need permission to obtain the building papers.",
+     "ar": "محتاج تصريح عشان تطلع أوراق العمارة."
+    },
+    {
+     "en": "She obtained her driving licence last week.",
+     "ar": "طلعت رخصتها الأسبوع اللي فات."
+    },
+    {
+     "en": "The information was hard to obtain.",
+     "ar": "المعلومة كانت صعبة تتوصل ليها."
+    },
+    {
+     "en": "He obtained the medicine from a pharmacy in town.",
+     "ar": "جاب الدوا من صيدلية في المدينة."
+    },
+    {
+     "en": "The company obtained permission to build on the land.",
+     "ar": "الشركة حصلت على تصريح بناء على الأرض."
+    },
+    {
+     "en": "Fresh fish is easy to obtain in the coastal cities.",
+     "ar": "السمك الطازة سهل تلاقيه في المدن الساحلية."
+    },
+    {
+     "en": "They obtained the money through a bank loan.",
+     "ar": "حصلوا على الفلوس بقرض من البنك."
+    },
+    {
+     "en": "You can obtain a copy of the report online.",
+     "ar": "تقدر تجيب نسخة من التقرير على النت."
+    },
+    {
+     "en": "The scientist obtained samples from the river.",
+     "ar": "العالم خد عينات من الترعة."
+    },
+    {
+     "en": "It took months to obtain all the needed signatures.",
+     "ar": "خد شهور عشان يجمعوا كل التوقيعات المطلوبة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000089",
+   "sentences": [
+    {
+     "en": "All students must participate in the school play.",
+     "ar": "كل الطلبة لازم يشاركوا في مسرحية المدرسة."
+    },
+    {
+     "en": "She participated in the running race last Friday.",
+     "ar": "شاركت في سباق الجري الجمعة اللي فاتت."
+    },
+    {
+     "en": "Everyone participated in cleaning the street.",
+     "ar": "الكل شارك في تنضيف الشارع."
+    },
+    {
+     "en": "He refused to participate in the argument.",
+     "ar": "رفض يشارك في الخناقة."
+    },
+    {
+     "en": "Over two hundred people participated in the study.",
+     "ar": "أكتر من متين شخص شاركوا في الدراسة."
+    },
+    {
+     "en": "The whole village participated in the harvest.",
+     "ar": "القرية كلها شاركت في الحصاد."
+    },
+    {
+     "en": "You can participate in the course from home.",
+     "ar": "تقدر تشارك في الكورس من البيت."
+    },
+    {
+     "en": "Kids love to participate in the cooking.",
+     "ar": "الأطفال بيحبوا يشاركوا في الطبخ."
+    },
+    {
+     "en": "She was too sick to participate in the trip.",
+     "ar": "كانت تعبانة أوي عشان تشارك في الرحلة."
+    },
+    {
+     "en": "Every worker participated in the safety training.",
+     "ar": "كل عامل شارك في تدريب الأمان."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000090",
+   "sentences": [
+    {
+     "en": "People perceive the city as noisy but friendly.",
+     "ar": "الناس شايفة المدينة صاخبة بس ودودة."
+    },
+    {
+     "en": "He perceived a small change in her voice.",
+     "ar": "حس بتغيير بسيط في صوتها."
+    },
+    {
+     "en": "Some students perceive math as a hard subject.",
+     "ar": "بعض الطلبة شايفين الرياضيات مادة صعبة."
+    },
+    {
+     "en": "The risk was bigger than people perceived.",
+     "ar": "الخطر كان أكبر مما الناس كانت متخيلة."
+    },
+    {
+     "en": "She perceived danger in the dark street.",
+     "ar": "حست بخطر في الشارع المضلمة."
+    },
+    {
+     "en": "Children perceive the world differently from adults.",
+     "ar": "الأطفال بيدركوا العالم بشكل مختلف عن الكبار."
+    },
+    {
+     "en": "He quickly perceived that he was not welcome.",
+     "ar": "فهم بسرعة إنه مش مرحب بيه."
+    },
+    {
+     "en": "The public perceives the new law as unfair.",
+     "ar": "الناس شايفة القانون الجديد مش عادل."
+    },
+    {
+     "en": "We perceive colors differently in the evening light.",
+     "ar": "بنشوف الألوان بشكل مختلف في ضوء المغربية."
+    },
+    {
+     "en": "She perceived a chance to help and took it.",
+     "ar": "شافت فرصة تساعد وخدتها."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000091",
+   "sentences": [
+    {
+     "en": "Exercise has a positive effect on the heart.",
+     "ar": "الرياضة ليها تأثير إيجابي على القلب."
+    },
+    {
+     "en": "The doctor gave us positive news about my mother.",
+     "ar": "الدكتور قالنا أخبار إيجابية عن أمي."
+    },
+    {
+     "en": "She has a positive attitude even on bad days.",
+     "ar": "عندها نظرة إيجابية حتى في الأيام الوحشة."
+    },
+    {
+     "en": "The test result was positive for the infection.",
+     "ar": "نتيجة التحليل كانت إيجابية للعدوى."
+    },
+    {
+     "en": "Positive thinking helped him through the hard year.",
+     "ar": "التفكير الإيجابي ساعده يعدي السنة الصعبة."
+    },
+    {
+     "en": "The new park had a positive impact on the area.",
+     "ar": "الحديقة الجديدة كان ليها تأثير إيجابي على المنطقة."
+    },
+    {
+     "en": "He gave a positive answer to our request.",
+     "ar": "رد علينا برد إيجابي على طلبنا."
+    },
+    {
+     "en": "The students showed positive changes after the course.",
+     "ar": "الطلبة أظهروا تغييرات إيجابية بعد الكورس."
+    },
+    {
+     "en": "A positive review brought more customers to the café.",
+     "ar": "التقييم الإيجابي جاب زباين أكتر للكافيه."
+    },
+    {
+     "en": "Stay positive; the result will come soon.",
+     "ar": "فضل متفائل، النتيجة جاية قريب."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000092",
+   "sentences": [
+    {
+     "en": "The new shop has the potential to grow fast.",
+     "ar": "المحل الجديد عنده إمكانية إنه يكبر بسرعة."
+    },
+    {
+     "en": "Solar energy has huge potential in Egypt.",
+     "ar": "الطاقة الشمسية عندها إمكانيات ضخمة في مصر."
+    },
+    {
+     "en": "He is a player with great potential.",
+     "ar": "هو لاعب عنده إمكانيات كبيرة."
+    },
+    {
+     "en": "The potential benefits of the drug are still being studied.",
+     "ar": "الفوايد المحتملة للدوا لسه بتتدرس."
+    },
+    {
+     "en": "Every child has the potential to learn a second language.",
+     "ar": "كل طفل عنده القدرة إنه يتعلم لغة تانية."
+    },
+    {
+     "en": "The land has potential for a new farm.",
+     "ar": "الأرض عندها إمكانية تبقى مزرعة جديدة."
+    },
+    {
+     "en": "The team sees potential in the young goalkeeper.",
+     "ar": "الفريق شايف موهبة في الحارس الصغير."
+    },
+    {
+     "en": "The storm has the potential to close the roads.",
+     "ar": "العاصفة ممكن تقفل الطرق."
+    },
+    {
+     "en": "They discussed the potential risks of the project.",
+     "ar": "اتكلموا في المخاطر المحتملة للمشروع."
+    },
+    {
+     "en": "Her talent showed its potential in the first match.",
+     "ar": "موهبتها أظهرت إمكانياتها من أول ماتش."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000093",
+   "sentences": [
+    {
+     "en": "The previous owner of the house was a doctor.",
+     "ar": "صاحب البيت السابق كان دكتور."
+    },
+    {
+     "en": "His previous job was in a bank.",
+     "ar": "شغلانته السابقة كانت في بنك."
+    },
+    {
+     "en": "The previous research focused on adults, not children.",
+     "ar": "البحث السابق ركز على الكبار مش الأطفال."
+    },
+    {
+     "en": "In the previous lesson, we learned about verbs.",
+     "ar": "في الدرس اللي فات، اتعلمنا عن الأفعال."
+    },
+    {
+     "en": "The previous year was much colder.",
+     "ar": "السنة اللي فاتت كانت أسقع بكتير."
+    },
+    {
+     "en": "She had no previous experience with computers.",
+     "ar": "ما كانش عندها أي خبرة سابقة بالكمبيوتر."
+    },
+    {
+     "en": "The previous manager left the company in June.",
+     "ar": "المدير السابق ساب الشركة في يونيو."
+    },
+    {
+     "en": "Read the previous page again before you start.",
+     "ar": "اقرا الصفحة اللي فاتت تاني قبل ما تبدأ."
+    },
+    {
+     "en": "The previous version of the app was much slower.",
+     "ar": "النسخة السابقة من التطبيق كانت أبطأ بكتير."
+    },
+    {
+     "en": "He forgot his previous password and made a new one.",
+     "ar": "نسي الباسورد القديم وعمل واحد جديد."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000094",
+   "sentences": [
+    {
+     "en": "The primary reason for the trip was to visit family.",
+     "ar": "السبب الأساسي للرحلة كان زيارة العيلة."
+    },
+    {
+     "en": "Primary school starts at the age of six.",
+     "ar": "المدرسة الابتدائية بتبدأ في سن ست سنين."
+    },
+    {
+     "en": "The primary source of water is the river.",
+     "ar": "المصدر الأساسي للمية هو الترعة."
+    },
+    {
+     "en": "His primary job is to teach math.",
+     "ar": "شغلانته الأساسية هي تدريس الرياضيات."
+    },
+    {
+     "en": "The primary colors are red, blue, and yellow.",
+     "ar": "الألوان الأساسية هي الأحمر والأزرق والأصفر."
+    },
+    {
+     "en": "The primary goal of the project is clean water for all.",
+     "ar": "الهدف الأساسي للمشروع هو مية نضيفة للكل."
+    },
+    {
+     "en": "She is the primary doctor for the whole family.",
+     "ar": "هي الدكتورة الأساسية للعيلة كلها."
+    },
+    {
+     "en": "The primary road to the village is closed today.",
+     "ar": "الطريق الرئيسي للقرية مقفول النهارده."
+    },
+    {
+     "en": "Safety is the primary concern of every parent.",
+     "ar": "الأمان هو القلق الأساسي لأي أب وأم."
+    },
+    {
+     "en": "The primary problem is the lack of money.",
+     "ar": "المشكلة الأساسية هي نقص الفلوس."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000095",
+   "sentences": [
+    {
+     "en": "They purchased a new fridge online.",
+     "ar": "اشتروا تلاجة جديدة من النت."
+    },
+    {
+     "en": "She purchased two tickets for the concert.",
+     "ar": "اشترت تذكرتين للحفلة."
+    },
+    {
+     "en": "He purchased the land with a bank loan.",
+     "ar": "اشترى الأرض بقرض من البنك."
+    },
+    {
+     "en": "We purchased fresh bread from the bakery.",
+     "ar": "اشترينا عيش طازة من المخبز."
+    },
+    {
+     "en": "The school purchased new computers for the lab.",
+     "ar": "المدرسة اشترت كمبيوترات جديدة للمعمل."
+    },
+    {
+     "en": "You can purchase the book from any bookshop.",
+     "ar": "تقدر تشتري الكتاب من أي مكتبة."
+    },
+    {
+     "en": "They purchased the tickets before they sold out.",
+     "ar": "اشتروا التذاكر قبل ما تخلص."
+    },
+    {
+     "en": "She purchased a gift for her mother's birthday.",
+     "ar": "اشترت هدية لعيد ميلاد أمها."
+    },
+    {
+     "en": "The company purchased a new machine for the factory.",
+     "ar": "الشركة اشترت مكنة جديدة للمصنع."
+    },
+    {
+     "en": "He saved for a year to purchase the motorcycle.",
+     "ar": "وفر لمدة سنة عشان يشتري الموتوسيكل."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000096",
+   "sentences": [
+    {
+     "en": "The shop offers a wide range of shoes.",
+     "ar": "المحل بيقدم تشكيلة واسعة من الجزم."
+    },
+    {
+     "en": "Prices range from ten to one hundred pounds.",
+     "ar": "الأسعار بتتراوح من عشرة لمية جنيه."
+    },
+    {
+     "en": "The mountain range is visible from the city.",
+     "ar": "سلسلة الجبال باينة من المدينة."
+    },
+    {
+     "en": "The course covers a range of topics from history to science.",
+     "ar": "الكورس بيغطي نطاق واسع من المواضيع من التاريخ للعلوم."
+    },
+    {
+     "en": "The students come from a range of backgrounds.",
+     "ar": "الطلبة جايين من خلفيات مختلفة."
+    },
+    {
+     "en": "The hotel has rooms in every price range.",
+     "ar": "الفندق عنده أوض في كل فئات الأسعار."
+    },
+    {
+     "en": "The thermometer showed a range of temperatures that day.",
+     "ar": "الترمومتر أظهر مدى من درجات الحرارة في اليوم ده."
+    },
+    {
+     "en": "There is a wide range of food at the market.",
+     "ar": "في تشكيلة واسعة من الأكل في السوق."
+    },
+    {
+     "en": "The new phone is at the top of our price range.",
+     "ar": "الموبايل الجديد في أعلى حدود ميزانيتنا."
+    },
+    {
+     "en": "A range of colors is available for the walls.",
+     "ar": "في نطاق من الألوان متاح للحيطان."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000097",
+   "sentences": [
+    {
+     "en": "The coastal region is famous for its fish.",
+     "ar": "المنطقة الساحلية مشهورة بسمكها."
+    },
+    {
+     "en": "This region grows the best cotton in the country.",
+     "ar": "المنطقة دي بتزرع أحسن قطن في البلد."
+    },
+    {
+     "en": "The desert region gets very little rain.",
+     "ar": "المنطقة الصحراوية بتشوف مطر قليل جداً."
+    },
+    {
+     "en": "He traveled through the region last summer.",
+     "ar": "سافر في المنطقة الصيف اللي فات."
+    },
+    {
+     "en": "The region is known for its sweet oranges.",
+     "ar": "المنطقة معروفة ببرتقالها الحلو."
+    },
+    {
+     "en": "A new hospital will serve the whole region.",
+     "ar": "مستشفى جديدة هتخدم المنطقة كلها."
+    },
+    {
+     "en": "The northern region is much colder than the south.",
+     "ar": "المنطقة الشمالية أسقع بكتير من الجنوب."
+    },
+    {
+     "en": "The wine comes from a small region in France.",
+     "ar": "النبيذ ده جاي من منطقة صغيرة في فرنسا."
+    },
+    {
+     "en": "Many birds visit the region in winter.",
+     "ar": "عصافير كتير بتزور المنطقة في الشتا."
+    },
+    {
+     "en": "The economy of the region depends on farming.",
+     "ar": "اقتصاد المنطقة بيعتمد على الزراعة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000098",
+   "sentences": [
+    {
+     "en": "The new regulation requires helmets for all riders.",
+     "ar": "اللائحة الجديدة بتطلب خوذ لكل الراكبين."
+    },
+    {
+     "en": "There are strict regulations about food safety.",
+     "ar": "في لوائح صارمة عن سلامة الأكل."
+    },
+    {
+     "en": "The regulation changed how shops display their prices.",
+     "ar": "اللائحة غيرت طريقة عرض المحلات للأسعار."
+    },
+    {
+     "en": "He broke a safety regulation at the factory.",
+     "ar": "كسر قاعدة أمان في المصنع."
+    },
+    {
+     "en": "The city introduced a new parking regulation.",
+     "ar": "المدينة حطت لائحة جديدة لركن العربيات."
+    },
+    {
+     "en": "The regulation protects workers from long hours.",
+     "ar": "اللائحة بتحمي العمال من ساعات الشغل الطويلة."
+    },
+    {
+     "en": "Every school must follow the health regulation.",
+     "ar": "كل مدرسة لازم تتبع لائحة الصحة."
+    },
+    {
+     "en": "The regulation on water use helped save the river.",
+     "ar": "لائحة استخدام المية ساعدت في إنقاذ الترعة."
+    },
+    {
+     "en": "They complained about the new noise regulation.",
+     "ar": "اشتكوا من لائحة الزعيق الجديدة."
+    },
+    {
+     "en": "The regulation makes it easier to open a small shop.",
+     "ar": "اللائحة بتسهل فتح محل صغير."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000099",
+   "sentences": [
+    {
+     "en": "Her experience is relevant to the new job.",
+     "ar": "خبرتها ليها علاقة بالشغلانة الجديدة."
+    },
+    {
+     "en": "Please bring all relevant papers to the meeting.",
+     "ar": "هات كل الأوراق المرتبطة بالموضوع للاجتماع."
+    },
+    {
+     "en": "The question is not relevant to our discussion.",
+     "ar": "السؤال ملوش علاقة بكلامنا."
+    },
+    {
+     "en": "He has relevant skills for the team.",
+     "ar": "عنده مهارات مرتبطة بشغل الفريق."
+    },
+    {
+     "en": "The article is relevant to anyone learning English.",
+     "ar": "المقال مفيد لأي حد بيتعلم إنجليزي."
+    },
+    {
+     "en": "Only relevant information will be included in the report.",
+     "ar": "بس المعلومات المرتبطة هتتحط في التقرير."
+    },
+    {
+     "en": "The old map is no longer relevant.",
+     "ar": "الخريطة القديمة مبقتش ليها فايدة."
+    },
+    {
+     "en": "Her degree is relevant to the research.",
+     "ar": "شهادتها مرتبطة بالبحث."
+    },
+    {
+     "en": "The teacher kept the lesson relevant to the students' lives.",
+     "ar": "المدرس خلّى الدرس مرتبط بحياة الطلبة."
+    },
+    {
+     "en": "Is this detail relevant to the case?",
+     "ar": "التفصيلة دي ليها علاقة بالقضية؟"
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000100",
+   "sentences": [
+    {
+     "en": "The residents of the street complained about the noise.",
+     "ar": "سكان الشارع اشتكوا من الزعيق."
+    },
+    {
+     "en": "A new resident moved into the building last week.",
+     "ar": "ساكن جديد نقل للعمارة الأسبوع اللي فات."
+    },
+    {
+     "en": "The park is open to all city residents.",
+     "ar": "الحديقة مفتوحة لكل سكان المدينة."
+    },
+    {
+     "en": "Local residents cleaned the beach together.",
+     "ar": "سكان المنطقة نضفوا الشط مع بعض."
+    },
+    {
+     "en": "The residents asked for a new bus stop.",
+     "ar": "السكان طلبوا موقف أتوبيس جديد."
+    },
+    {
+     "en": "She has been a resident of the town for forty years.",
+     "ar": "هي ساكنة في المدينة من أربعين سنة."
+    },
+    {
+     "en": "The building has twenty residents in ten flats.",
+     "ar": "العمارة فيها عشرين ساكن في عشر شقق."
+    },
+    {
+     "en": "Residents near the factory worry about the smoke.",
+     "ar": "السكان اللي جنب المصنع قلقانين من الدخان."
+    },
+    {
+     "en": "The residents organized a small market every Friday.",
+     "ar": "السكان نظموا سوق صغير كل جمعة."
+    },
+    {
+     "en": "Every resident received a letter about the new rules.",
+     "ar": "كل ساكن استلم خطاب عن القواعد الجديدة."
+    }
+   ]
+  }
+ ]
+}
