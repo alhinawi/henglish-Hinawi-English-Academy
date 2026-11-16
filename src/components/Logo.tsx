@@ -63,6 +63,7 @@ export const Logo: React.FC<LogoProps> = ({
             Henglish Academy
           </span>
           <span
+            dir="ltr"
             className={`text-[#b9b6d5] font-semibold tracking-wide ${currentSize.tag} whitespace-nowrap mt-0.5`}
           >
             Learn it. Use it. Own it.

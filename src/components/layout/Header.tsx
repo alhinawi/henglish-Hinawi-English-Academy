@@ -81,17 +81,15 @@ export const Header: React.FC<HeaderProps> = ({
   authSessionType = 'authenticated',
 }) => {
   const [accountOpen, setAccountOpen] = useState(false);
-  const [grammarMenuOpen, setGrammarMenuOpen] = useState(false);
-  const [skillsMenuOpen, setSkillsMenuOpen] = useState(false);
-  const [moreMenuOpen, setMoreMenuOpen] = useState(false);
+  const [academiesMenuOpen, setAcademiesMenuOpen] = useState(false);
+  const [banksMenuOpen, setBanksMenuOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
   const [profileOpen, setProfileOpen] = useState(false);
   const { t, dir } = useLanguage();
   const isAr = dir === 'rtl';
 
-  const grammarRef = useRef<HTMLDivElement>(null);
-  const skillsRef = useRef<HTMLDivElement>(null);
-  const moreRef = useRef<HTMLDivElement>(null);
+  const academiesRef = useRef<HTMLDivElement>(null);
+  const banksRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
   const profileRef = useRef<HTMLDivElement>(null);
 
@@ -99,14 +97,11 @@ export const Header: React.FC<HeaderProps> = ({
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as Node;
-      if (grammarRef.current && !grammarRef.current.contains(target)) {
-        setGrammarMenuOpen(false);
+      if (academiesRef.current && !academiesRef.current.contains(target)) {
+        setAcademiesMenuOpen(false);
       }
-      if (skillsRef.current && !skillsRef.current.contains(target)) {
-        setSkillsMenuOpen(false);
-      }
-      if (moreRef.current && !moreRef.current.contains(target)) {
-        setMoreMenuOpen(false);
+      if (banksRef.current && !banksRef.current.contains(target)) {
+        setBanksMenuOpen(false);
       }
       if (notifRef.current && !notifRef.current.contains(target)) {
         setNotifOpen(false);
@@ -121,9 +116,8 @@ export const Header: React.FC<HeaderProps> = ({
         if (mobileOpen && onCloseMobile) {
           onCloseMobile();
         }
-        setGrammarMenuOpen(false);
-        setSkillsMenuOpen(false);
-        setMoreMenuOpen(false);
+        setAcademiesMenuOpen(false);
+        setBanksMenuOpen(false);
         setNotifOpen(false);
         setProfileOpen(false);
       }
@@ -142,9 +136,8 @@ export const Header: React.FC<HeaderProps> = ({
     if (onCloseMobile) {
       onCloseMobile();
     }
-    setGrammarMenuOpen(false);
-    setSkillsMenuOpen(false);
-    setMoreMenuOpen(false);
+    setAcademiesMenuOpen(false);
+    setBanksMenuOpen(false);
     setNotifOpen(false);
     setProfileOpen(false);
     onNavigate(route, lessonId);
@@ -186,7 +179,7 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Brand: site name + logo, links home (hidden on xl where the full nav shows) */}
         <button
           onClick={() => handleNav('dashboard')}
-          className="xl:hidden flex items-center gap-2 cursor-pointer p-1 -m-1 shrink-0"
+          className="lg:hidden flex items-center gap-2 cursor-pointer p-1 -m-1 shrink-0"
           aria-label={t('header.brandHome')}
           title={t('header.brandHome')}
         >
@@ -199,253 +192,184 @@ export const Header: React.FC<HeaderProps> = ({
           />
         </button>
 
-        {/* Desktop Primary Navigation with Non-Clipped Dropdowns */}
-        <nav aria-label={t('header.navBar')} className="hidden xl:flex items-center gap-1.5 text-xs font-bold text-[#dedbf4]">
-          
-          {/* 1. Home Link */}
+        {/* Desktop top nav bar (>=1024px): main sections with hover dropdowns */}
+        <nav aria-label={t('header.navBar')} className="hidden lg:flex items-center gap-0 xl:gap-0.5 text-[10px] xl:text-xs font-bold text-[#dedbf4]">
+
+          {/* 1. Dashboard */}
           <button
             onClick={() => handleNav('dashboard')}
-            className={`px-3 py-2 rounded-xl transition-colors cursor-pointer ${
+            className={`px-1 xl:px-1.5 py-2 rounded-xl transition-colors cursor-pointer whitespace-nowrap ${
               currentRoute === 'dashboard' || currentRoute === 'home'
                 ? 'bg-white/10 text-[#ffd166] font-black'
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            <span dir="auto">{t('header.home')}</span>
+            <span dir="auto">{t('nav.dashboard')}</span>
           </button>
 
-          {/* 2. Grammar Academy Dropdown */}
-          <div className="relative" ref={grammarRef}>
+          {/* 2. Courses */}
+          <button
+            onClick={() => handleNav('courses')}
+            className={`px-1 xl:px-1.5 py-2 rounded-xl transition-colors cursor-pointer whitespace-nowrap ${
+              currentRoute === 'courses' || currentRoute.startsWith('courses/')
+                ? 'bg-white/10 text-[#ffd166] font-black'
+                : 'hover:text-white hover:bg-white/5'
+            }`}
+          >
+            <span dir="auto">{t('nav.courses')}</span>
+          </button>
+
+          {/* 3. Academies dropdown (hover + click) */}
+          <div
+            className="relative"
+            ref={academiesRef}
+            onMouseEnter={() => { setAcademiesMenuOpen(true); setBanksMenuOpen(false); setNotifOpen(false); setProfileOpen(false); }}
+            onMouseLeave={() => setAcademiesMenuOpen(false)}
+          >
             <button
               onClick={() => {
-                setGrammarMenuOpen(prev => !prev);
-                setSkillsMenuOpen(false);
-                setMoreMenuOpen(false);
+                setAcademiesMenuOpen(prev => !prev);
+                setBanksMenuOpen(false);
                 setNotifOpen(false);
                 setProfileOpen(false);
               }}
-              className={`px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 ${
-                currentRoute === 'grammar' || currentRoute.startsWith('courses/grammar')
+              className={`px-1 xl:px-1.5 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1 whitespace-nowrap ${
+                ['grammar','vocabulary','listening','speaking','reading','writing','pronunciation'].includes(currentRoute)
                   ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
                   : 'hover:text-white hover:bg-white/5'
               }`}
               aria-haspopup="true"
-              aria-expanded={grammarMenuOpen}
+              aria-expanded={academiesMenuOpen}
             >
-              <span dir="auto">{t('header.grammarAcademy')}</span>
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${grammarMenuOpen ? 'rotate-180' : ''}`} />
+              <span dir="auto">{t('nav.academies')}</span>
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${academiesMenuOpen ? 'rotate-180' : ''}`} />
             </button>
-
-            {/* Dropdown Menu (Positioned safely within viewport) */}
             <AnimatePresence>
-              {grammarMenuOpen && (
+              {academiesMenuOpen && (
                 <motion.div
                   initial={{ opacity: 0, y: 8, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 8, scale: 0.98 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute right-0 top-full mt-2 w-80 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-3 z-50 text-right space-y-1.5"
+                  className="absolute left-0 top-full mt-2 w-56 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-2 z-50 text-left space-y-0.5"
                 >
-                  <button
-                    onClick={() => handleNav('grammar')}
-                    className="w-full p-2.5 rounded-xl bg-linear-to-r from-[#ffd166]/15 to-[#41e7ff]/15 hover:brightness-110 text-white font-black text-xs flex items-center justify-between cursor-pointer border border-[#ffd166]/30"
-                  >
-                    <span dir="auto">{t('header.grammarIndex')}</span>
-                    <span className="text-[10px] text-[#ffd166]">A1 - C1</span>
-                  </button>
-
-                  <div className="pt-1 pb-1 border-t border-white/10 text-[10px] text-[#b9b6d5] font-bold px-2">
-                    <span dir="auto">{t('header.topLessons')}</span>
-                  </div>
-
-                  <button
-                    onClick={() => handleNav('grammar-lesson', 'past-simple')}
-                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#41e7ff] hover:text-white text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.quickLesson.pastSimple')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-[#41e7ff]/20 text-[#41e7ff]">B2</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      window.location.hash = 'grammar/future-simple';
-                      handleNav('grammar');
-                    }}
-                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.quickLesson.futureSimple')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A2</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      window.location.hash = 'grammar/present-simple';
-                      handleNav('grammar');
-                    }}
-                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.quickLesson.presentSimple')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A1</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      window.location.hash = 'grammar/present-perfect';
-                      handleNav('grammar');
-                    }}
-                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.quickLesson.presentPerfect')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">A2</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      window.location.hash = 'grammar/conditionals-all';
-                      handleNav('grammar');
-                    }}
-                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.quickLesson.conditionals')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">B1</span>
-                  </button>
-
-                  <button
-                    onClick={() => {
-                      window.location.hash = 'grammar/passive-voice';
-                      handleNav('grammar');
-                    }}
-                    className="w-full p-2 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#ffd166] text-xs font-semibold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.quickLesson.passive')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">B2</span>
-                  </button>
+                  {([
+                    ['grammar', 'nav.grammar'],
+                    ['vocabulary', 'nav.vocabulary'],
+                    ['listening', 'nav.listening'],
+                    ['speaking', 'nav.speaking'],
+                    ['reading', 'nav.reading'],
+                    ['writing', 'nav.writing'],
+                    ['pronunciation', 'nav.pronunciation'],
+                  ] as [PageRoute, string][]).map(([route, key]) => (
+                    <button
+                      key={route}
+                      onClick={() => handleNav(route)}
+                      className={`w-full p-2 rounded-xl hover:bg-white/5 text-xs font-bold flex items-center justify-between cursor-pointer ${
+                        currentRoute === route ? 'text-[#ffd166] bg-white/5' : 'text-[#dedbf4] hover:text-[#ffd166]'
+                      }`}
+                    >
+                      <span dir="auto">{t(key)}</span>
+                      <ChevronLeft className="w-3 h-3 opacity-40" />
+                    </button>
+                  ))}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
-          {/* 3. Skills Academies Dropdown */}
-          <div className="relative" ref={skillsRef}>
+          {/* 4. Phrase banks dropdown (hover + click) */}
+          <div
+            className="relative"
+            ref={banksRef}
+            onMouseEnter={() => { setBanksMenuOpen(true); setAcademiesMenuOpen(false); setNotifOpen(false); setProfileOpen(false); }}
+            onMouseLeave={() => setBanksMenuOpen(false)}
+          >
             <button
               onClick={() => {
-                setSkillsMenuOpen(prev => !prev);
-                setGrammarMenuOpen(false);
-                setMoreMenuOpen(false);
+                setBanksMenuOpen(prev => !prev);
+                setAcademiesMenuOpen(false);
                 setNotifOpen(false);
                 setProfileOpen(false);
               }}
-              className="px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 hover:text-white hover:bg-white/5"
+              className={`px-1 xl:px-1.5 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1 whitespace-nowrap ${
+                ['slang','idioms','genz','ielts','toefl','sentences'].includes(currentRoute)
+                  ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
+                  : 'hover:text-white hover:bg-white/5'
+              }`}
               aria-haspopup="true"
-              aria-expanded={skillsMenuOpen}
+              aria-expanded={banksMenuOpen}
             >
-              <span dir="auto">{t('header.skillsAcademies')}</span>
-              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${skillsMenuOpen ? 'rotate-180' : ''}`} />
+              <span dir="auto">{t('nav.phraseBanks')}</span>
+              <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${banksMenuOpen ? 'rotate-180' : ''}`} />
             </button>
-
             <AnimatePresence>
-              {skillsMenuOpen && (
+              {banksMenuOpen && (
                 <motion.div
                   initial={{ opacity: 0, y: 8, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 8, scale: 0.98 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute right-0 top-full mt-2 w-72 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-3 z-50 text-right space-y-1.5"
+                  className="absolute left-0 top-full mt-2 w-56 rounded-2xl bg-[#171632] border border-white/20 shadow-2xl p-2 z-50 text-left space-y-0.5"
                 >
-                  <button
-                    onClick={() => handleNav('vocabulary')}
-                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.vocabAcademy')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">{t('header.dict')}</span>
-                  </button>
-                  <button
-                    onClick={() => handleNav('speaking')}
-                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.speakingAcademy')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">{t('header.dialogue')}</span>
-                  </button>
-                  <button
-                    onClick={() => handleNav('listening')}
-                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.listeningAcademy')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">{t('header.accents')}</span>
-                  </button>
-                  <button
-                    onClick={() => handleNav('reading')}
-                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.readingAcademy')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">{t('header.texts')}</span>
-                  </button>
-                  <button
-                    onClick={() => handleNav('writing')}
-                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.writingAcademy')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">{t('header.email')}</span>
-                  </button>
-                  <button
-                    onClick={() => handleNav('pronunciation')}
-                    className="w-full p-2.5 rounded-xl hover:bg-white/5 text-[#dedbf4] hover:text-[#41e7ff] text-xs font-bold flex items-center justify-between cursor-pointer"
-                  >
-                    <span dir="auto">{t('header.pronunciationAcademy')}</span>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-white/10 text-[#ffd166]">IPA</span>
-                  </button>
+                  {([
+                    ['slang', 'nav.slang'],
+                    ['idioms', 'nav.idioms'],
+                    ['genz', 'nav.genz'],
+                    ['ielts', 'nav.ielts'],
+                    ['toefl', 'nav.toefl'],
+                    ['sentences', 'nav.sentences'],
+                  ] as [PageRoute, string][]).map(([route, key]) => (
+                    <button
+                      key={route}
+                      onClick={() => handleNav(route)}
+                      className={`w-full p-2 rounded-xl hover:bg-white/5 text-xs font-bold flex items-center justify-between cursor-pointer ${
+                        currentRoute === route ? 'text-[#ffd166] bg-white/5' : 'text-[#dedbf4] hover:text-[#ffd166]'
+                      }`}
+                    >
+                      <span dir="auto">{t(key)}</span>
+                      <ChevronLeft className="w-3 h-3 opacity-40" />
+                    </button>
+                  ))}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
-          {/* 4. Real-Life English Simulator */}
+          {/* 5. Practice */}
           <button
-            onClick={() => handleNav('real-life')}
-            className={`px-3 py-2 rounded-xl transition-all cursor-pointer ${
-              currentRoute === 'real-life'
+            onClick={() => handleNav('practice')}
+            className={`px-1 xl:px-1.5 py-2 rounded-xl transition-colors cursor-pointer whitespace-nowrap ${
+              currentRoute === 'practice' || currentRoute === 'games'
                 ? 'bg-white/10 text-[#ffd166] font-black'
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            <span dir="auto">{t('header.realLife')}</span>
+            <span dir="auto">{t('nav.practice')}</span>
           </button>
 
-          {/* 5. AI English Tutor */}
+          {/* 6. Resources */}
           <button
-            onClick={() => handleNav('ai-tutor')}
-            className={`px-3 py-2 rounded-xl transition-all cursor-pointer flex items-center gap-1.5 ${
-              currentRoute === 'ai-tutor'
-                ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 font-black'
-                : 'text-[#41e7ff] hover:bg-white/5'
-            }`}
-          >
-            <Bot className="w-3.5 h-3.5" />
-            <span dir="auto">{t('header.assistant')}</span>
-          </button>
-
-          {/* 6. Placement & Exams */}
-          <button
-            onClick={() => handleNav('exams')}
-            className={`px-3 py-2 rounded-xl transition-all cursor-pointer ${
-              currentRoute === 'exams'
+            onClick={() => handleNav('resources')}
+            className={`px-1 xl:px-1.5 py-2 rounded-xl transition-colors cursor-pointer whitespace-nowrap ${
+              currentRoute === 'resources' || currentRoute === 'sources'
                 ? 'bg-white/10 text-[#ffd166] font-black'
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            <span dir="auto">{t('header.placement')}</span>
+            <span dir="auto">{t('nav.resources')}</span>
           </button>
 
-          {/* 7. Certificates & Verification */}
+          {/* 7. Leaderboard */}
           <button
-            onClick={() => handleNav('certificates')}
-            className={`px-3 py-2 rounded-xl transition-all cursor-pointer ${
-              currentRoute === 'certificates'
+            onClick={() => handleNav('leaderboard')}
+            className={`px-1 xl:px-1.5 py-2 rounded-xl transition-colors cursor-pointer whitespace-nowrap ${
+              currentRoute === 'leaderboard'
                 ? 'bg-white/10 text-[#ffd166] font-black'
                 : 'hover:text-white hover:bg-white/5'
             }`}
           >
-            <span dir="auto">{t('header.certificates')}</span>
+            <span dir="auto">{t('header.leaderboard')}</span>
           </button>
         </nav>
       </div>
@@ -463,8 +387,8 @@ export const Header: React.FC<HeaderProps> = ({
           title={t('header.searchTitle')}
         >
           <Search className="w-4 h-4 text-[#41e7ff]" />
-          <span className="hidden md:inline">{t('header.searchDots')}</span>
-          <kbd className="hidden lg:inline px-1 py-0.5 rounded text-[9px] bg-black/40 border border-white/10 text-[#b9b6d5]">
+          <span className="hidden 2xl:inline">{t('header.searchDots')}</span>
+          <kbd className="hidden 2xl:inline px-1 py-0.5 rounded text-[9px] bg-black/40 border border-white/10 text-[#b9b6d5]">
             Ctrl K
           </kbd>
         </button>
@@ -475,7 +399,7 @@ export const Header: React.FC<HeaderProps> = ({
             playSound('click');
             onOpenVoiceSettings();
           }}
-          className="hidden md:block p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-[#ffd166] transition-colors cursor-pointer"
+          className="hidden xl:block p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-[#ffd166] transition-colors cursor-pointer"
           title={t('header.voiceTitle')}
           aria-label={t('header.voiceShort')}
         >
@@ -484,7 +408,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Streak Indicator */}
         <div 
-          className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-linear-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
+          className="hidden xl:flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-linear-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
           title={t('header.streakTitle').replace('{days}', userProfile.streakDays.toLocaleString('en-US'))}
           aria-label={t('header.streakTitle').replace('{days}', userProfile.streakDays.toLocaleString('en-US'))}
           data-testid="header-streak"
@@ -500,8 +424,8 @@ export const Header: React.FC<HeaderProps> = ({
               playSound('click');
               setNotifOpen(prev => !prev);
               setProfileOpen(false);
-              setGrammarMenuOpen(false);
-              setSkillsMenuOpen(false);
+              setAcademiesMenuOpen(false);
+              setBanksMenuOpen(false);
             }}
             className="p-2 sm:p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-[#dedbf4] hover:text-white transition-colors relative cursor-pointer"
             aria-label={t('header.notificationsShort')}
@@ -568,8 +492,8 @@ export const Header: React.FC<HeaderProps> = ({
               playSound('click');
               setProfileOpen(prev => !prev);
               setNotifOpen(false);
-              setGrammarMenuOpen(false);
-              setSkillsMenuOpen(false);
+              setAcademiesMenuOpen(false);
+              setBanksMenuOpen(false);
             }}
             className="flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors cursor-pointer"
             aria-label={t('header.accountMenu')}
