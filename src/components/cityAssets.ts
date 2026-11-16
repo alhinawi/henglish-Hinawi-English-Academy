@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { clone as cloneSkeleton } from 'three/addons/utils/SkeletonUtils.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const BASE = '/models/city/';
@@ -6,9 +7,11 @@ const BASE = '/models/city/';
 export function createCityAssets() {
   const gltf = new GLTFLoader();
   const models = new Map<string, Promise<THREE.Object3D>>();
+  const clips = new Map<string, THREE.AnimationClip[]>();
+  const actors = new Map<THREE.Object3D, { mixer: THREE.AnimationMixer; idle?: THREE.AnimationAction; walk?: THREE.AnimationAction; moving: boolean }>();
   let disposed = false;
   const load = (name: string) => {
-    if (!models.has(name)) models.set(name, gltf.loadAsync(BASE + name + '.glb').then(result => result.scene));
+    if (!models.has(name)) models.set(name, gltf.loadAsync(BASE + name + '.glb').then(result => { clips.set(name, result.animations); return result.scene; }));
     return models.get(name)!;
   };
   function fit(object: THREE.Object3D, size: number, byHeight = false) {
@@ -79,16 +82,35 @@ export function createCityAssets() {
     },
     async person(parent: THREE.Object3D, female: boolean, player: boolean, fallback: THREE.Object3D[]) {
       try {
-        const source = await load(female ? 'person-woman' : 'person-man');
+        const name = female ? 'person-woman-rigged' : 'person-man-rigged';
+        const source = await load(name);
         if (disposed) return;
-        const object = source.clone(true);
+        const object = cloneSkeleton(source);
         fit(object, 1.8, true);
-        if (player) object.rotation.y = Math.PI;
+        // Preserve the source model's facing convention for avatar steering.
+        object.rotation.y = player ? Math.PI : 0;
+        const mixer = new THREE.AnimationMixer(object);
+        const animations = clips.get(name) ?? [];
+        const idleClip = animations.find(clip => clip.name.includes('Idle'));
+        const walkClip = animations.find(clip => clip.name.includes('Walk'));
+        const idle = idleClip ? mixer.clipAction(idleClip) : undefined;
+        const walk = walkClip ? mixer.clipAction(walkClip) : undefined;
+        idle?.play(); actors.set(parent, { mixer, idle, walk, moving: false });
         parent.add(object);
         fallback.forEach(mesh => { mesh.visible = false; });
       } catch { /* Retain the original fallback when offline. */ }
     },
+    animatePerson(parent: THREE.Object3D, moving: boolean, delta: number) {
+      const actor = actors.get(parent); if (!actor) return;
+      if (actor.moving !== moving) {
+        const previous = actor.moving ? actor.walk : actor.idle;
+        const next = moving ? actor.walk : actor.idle;
+        next?.reset().fadeIn(0.2).play(); previous?.fadeOut(0.2); actor.moving = moving;
+      }
+      actor.mixer.update(delta);
+    },
     dispose() {
+      actors.forEach(actor => actor.mixer.stopAllAction()); actors.clear();
       disposed = true;
 
       models.forEach(promise => { void promise.then(object => object.traverse(child => {
