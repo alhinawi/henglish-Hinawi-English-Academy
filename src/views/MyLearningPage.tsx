@@ -24,6 +24,7 @@ import {
   FileCheck2,
   Printer,
 } from "lucide-react";
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface MyLearningPageProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
@@ -42,6 +43,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
   onDeleteNote,
   completionPercentage,
 }) => {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<
     "overview" | "bookmarks" | "notes" | "quizzes" | "certificate"
   >("overview");
@@ -60,17 +62,15 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
         <div className="max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm">
             <BookmarkCheck className="w-4 h-4" />
-            <span>MY LEARNING HUB • ملف الطالب وسجل الإنجازات</span>
+            <span>{t('ml.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
-            مساحتي الخاصة وسجل التعلم
+            {t('ml.title')}
           </h1>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-            مرحباً بك في مساحتك التعليمية الشخصية. هنا تجد دروسك المحفوظة،
-            ملاحظاتك المدونة أثناء الشرح، نتائج اختباراتك التراكمية، وشهادات
-            إتمام الكورسات.
+            {t('ml.blurb')}
           </p>
 
           {/* Navigation Tabs */}
@@ -86,7 +86,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              نظرة عامة والتقدم
+              {t('ml.tabOverview')}
             </button>
 
             <button
@@ -100,7 +100,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              الدروس المحفوظة ({bookmarks.length})
+              {t('ml.tabBookmarks')} ({bookmarks.length})
             </button>
 
             <button
@@ -114,7 +114,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              ملاحظاتي الشخصية ({notes.length})
+              {t('ml.tabNotes')} ({notes.length})
             </button>
 
             <button
@@ -128,7 +128,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-              سجل الاختبارات ({quizScores.length})
+              {t('ml.tabQuizzes')} ({quizScores.length})
             </button>
 
             <button
@@ -142,7 +142,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
               }`}
             >
-             الشهادات المعتمدة
+              {t('ml.tabCerts')}
             </button>
           </div>
         </div>
@@ -153,42 +153,42 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
         <section className="space-y-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <div className="text-xs text-[#b9b6d5]">المستوى الأكاديمي</div>
+              <div className="text-xs text-[#b9b6d5]">{t('ml.level')}</div>
               <div className="text-2xl font-black text-[#ffd166]">
                 {userProfile.currentLevel} ({CEFR_LABELS_AR[userProfile.currentLevel]})
               </div>
               <div className="text-[11px] text-[#41e7ff]">
-                الهدف القادم: {userProfile.targetLevel}
+                {t('ml.nextGoal')} {userProfile.targetLevel}
               </div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <div className="text-xs text-[#b9b6d5]">نقاط الخبرة (XP)</div>
+              <div className="text-xs text-[#b9b6d5]">{t('ml.xp')}</div>
               <div className="text-2xl font-black text-[#c4ff55]">
                 {userProfile.xp.toLocaleString()} XP
               </div>
               <div className="text-[11px] text-[#b9b6d5]">
-                المرتبة: بطل الأكاديمية
+                {t('ml.rank')}
               </div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
               <div className="text-xs text-[#b9b6d5]">
-                أيام التعلم المتتالية
+                {t('ml.streakDays')}
               </div>
               <div className="text-2xl font-black text-[#ff8bb9]">
-                {userProfile.streakDays} أيام
+                {userProfile.streakDays} {t('ml.daysUnit')}
               </div>
-              <div className="text-[11px] text-[#b9b6d5]">آخر جلسة: اليوم</div>
+              <div className="text-[11px] text-[#b9b6d5]">{t('ml.lastSession')}</div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
-              <div className="text-xs text-[#b9b6d5]">إنجاز المستقبل التام</div>
+              <div className="text-xs text-[#b9b6d5]">{t('ml.fpAchievement')}</div>
               <div className="text-2xl font-black text-[#41e7ff]">
                 {completionPercentage}%
               </div>
               <div className="text-[11px] text-[#c4ff55]">
-                {progress.completedLessons.length} من 8 دروس مكتملة
+                {progress.completedLessons.length} {t('ml.lessonsComplete')}
               </div>
             </div>
           </div>
@@ -201,19 +201,19 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       {activeTab === "bookmarks" && (
         <section className="space-y-4">
           <h2 className="text-xl font-black text-white">
-            الدروس والصفحات المحفوظة في المفضلة
+            {t('ml.bookmarksTitle')}
           </h2>
           {bookmarks.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
               <BookmarkCheck className="w-10 h-10 mx-auto text-[#ffd166]" />
               <p className="text-sm text-[#b9b6d5]">
-                لم تقم بحفظ أي دروس في المفضلة بعد.
+                {t('ml.noBookmarks')}
               </p>
               <button
                 onClick={() => onNavigate("grammar")}
                 className="px-6 py-2.5 rounded-xl bg-[#ffd166] text-[#0c0b20] font-black text-xs cursor-pointer"
               >
-                تصفح أكاديمية الجرامر
+                {t('ml.browseGrammar')}
               </button>
             </div>
           ) : (
@@ -236,7 +236,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                     </h3>
                     <p className="text-xs text-[#b9b6d5]">{bm.subtitle}</p>
                     <span className="text-[10px] text-[#b9b6d5]/70">
-                      تاريخ الحفظ: {bm.savedAt}
+                      {t('ml.savedAt')} {bm.savedAt}
                     </span>
                   </div>
 
@@ -252,13 +252,13 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       {activeTab === "notes" && (
         <section className="space-y-4">
           <h2 className="text-xl font-black text-white">
-            ملاحظاتي الشخصية المدونة أثناء الدروس
+            {t('ml.notesTitle')}
           </h2>
           {notes.length === 0 ? (
             <div className="p-12 rounded-3xl glass-panel border border-white/10 text-center space-y-3">
               <NotebookPen className="w-10 h-10 mx-auto text-[#41e7ff]" />
               <p className="text-sm text-[#b9b6d5]">
-                لم تقم بتدوين أي ملاحظات شخصية بعد.
+                {t('ml.noNotes')}
               </p>
             </div>
           ) : (
@@ -270,14 +270,14 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                 >
                   <div className="space-y-2">
                     <div className="flex items-center justify-between text-xs font-bold text-[#ffd166]">
-                      <span>درس: {note.lessonTitle}</span>
+                      <span>{t('ml.lessonPrefix')} {note.lessonTitle}</span>
                       <button
                         onClick={() => {
                           playSound("click");
                           onDeleteNote(note.id);
                         }}
                         className="p-1 rounded text-[#ff4f9a] hover:bg-[#ff4f9a]/10 cursor-pointer"
-                        title="حذف الملاحظة"
+                        title={t('ml.deleteNote')}
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
@@ -289,12 +289,12 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                   </div>
 
                   <div className="flex items-center justify-between text-[11px] text-[#b9b6d5] pt-2 border-t border-white/5">
-                    <span>تاريخ التعديل: {note.updatedAt}</span>
+                    <span>{t('ml.editedAt')} {note.updatedAt}</span>
                     <button
                       onClick={() => onNavigate("lesson", note.lessonId)}
                       className="text-[#41e7ff] hover:underline cursor-pointer"
                     >
-                      فتح الدرس
+                      {t('ml.openLesson')}
                     </button>
                   </div>
                 </div>
@@ -308,23 +308,23 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
       {activeTab === "quizzes" && (
         <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
           <h2 className="text-xl font-black text-white">
-            سجل نتائج الاختبارات والتقييمات
+            {t('ml.quizTitle')}
           </h2>
 
           {quizScores.length === 0 ? (
             <p className="text-sm text-[#b9b6d5] text-center py-8">
-              لم تسجل درجات اختبارات حتى الآن.
+              {t('ml.noQuizzes')}
             </p>
           ) : (
             <div className="overflow-x-auto custom-scrollbar">
               <table className="w-full text-right text-xs sm:text-sm">
                 <thead>
                   <tr className="border-b border-white/10 text-[#b9b6d5]">
-                    <th className="py-3 px-4">اسم الاختبار</th>
-                    <th className="py-3 px-4">الدرجة المحققة</th>
-                    <th className="py-3 px-4">النسبة المئوية</th>
-                    <th className="py-3 px-4">التاريخ</th>
-                    <th className="py-3 px-4">التقييم</th>
+                    <th className="py-3 px-4">{t('ml.thQuiz')}</th>
+                    <th className="py-3 px-4">{t('ml.thScore')}</th>
+                    <th className="py-3 px-4">{t('ml.thPercent')}</th>
+                    <th className="py-3 px-4">{t('ml.thDate')}</th>
+                    <th className="py-3 px-4">{t('ml.thGrade')}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5 text-white">
@@ -355,7 +355,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                                 : "bg-[#ffd166]/20 text-[#ffd166]"
                             }`}
                           >
-                            {percent >= 80 ? "ممتاز" : "جيد جداً"}
+                            {percent >= 80 ? t('ml.excellent') : t('ml.veryGood')}
                           </span>
                         </td>
                       </tr>
@@ -381,7 +381,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
               OFFICIAL CERTIFICATE OF MASTERY
             </div>
             <h2 className="text-2xl sm:text-4xl font-black text-white font-serif">
-              شهادة إتمام معتمدة • Henglish Academy
+              {t('ml.certTitle')}
             </h2>
             <p className="text-xs text-[#b9b6d5]">
               Henglish Academy Academic Credential
@@ -390,24 +390,24 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
 
           <div className="p-8 rounded-3xl bg-black/40 border border-[#ffd166]/40 space-y-4 max-w-xl mx-auto">
             <p className="text-xs text-[#dedbf4]">
-              تُشهد Henglish Academy بأن الطالب المتميز:
+              {t('ml.certIntro')}
             </p>
             <div className="text-2xl sm:text-3xl font-black text-[#ffd166] font-['Cairo',sans-serif]">
-              {userProfile.id === 'guest-learner' ? 'شهادة إتمام الكورس' : `${userProfile.nameAr} (${userProfile.name})`}
+              {userProfile.id === 'guest-learner' ? t('ml.certGuest') : `${userProfile.nameAr} (${userProfile.name})`}
             </div>
             <p className="text-xs text-[#dedbf4] leading-relaxed">
-              قد أتم بنجاح متطلبات دراسة واجتياز كورس:
+              {t('ml.certBody1')}
               <br />
               <strong className="text-white text-base">
-                المستقبل التام الشامل (Future Perfect Masterclass)
+                {t('ml.certCourse')}
               </strong>
               <br />
-              بتقدير امتياز وتفوق في كافة الاختبارات التحريرية والشفهية.
+              {t('ml.certBody2')}
             </p>
 
             <div className="pt-4 flex items-center justify-between text-xs text-[#b9b6d5] border-t border-white/10">
-              <span>المشرف الأكاديمي: أ. د. هناوي</span>
-              <span>رقم التحقق: HNW-{userProfile.id}-2026</span>
+              <span>{t('ml.certSupervisor')}</span>
+              <span>{t('ml.certVerify')} HNW-{userProfile.id}-2026</span>
             </div>
           </div>
 
@@ -416,7 +416,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
             className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer inline-flex items-center gap-2"
           >
             <Printer className="w-4 h-4" />
-            <span>طباعة أو حفظ الشهادة بصيغة PDF</span>
+            <span>{t('ml.certPrint')}</span>
           </button>
         </section>
       )}
