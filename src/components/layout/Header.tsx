@@ -458,10 +458,12 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Streak Indicator */}
         <div 
           className="flex items-center gap-1.5 px-2.5 sm:px-3 py-1.5 rounded-xl bg-linear-to-r from-[#ff4f9a]/15 to-[#ffd166]/15 border border-[#ff4f9a]/30 text-xs font-black text-[#ffd166]"
-          title={`استمرارية التعلم: ${userProfile.streakDays} أيام متتالية`}
+          title={`استمرارية التعلم: ${userProfile.streakDays.toLocaleString('en-US')} أيام متتالية`}
+          aria-label={`استمرارية التعلم: ${userProfile.streakDays.toLocaleString('en-US')} أيام متتالية`}
+          data-testid="header-streak"
         >
-          <Flame className="w-4 h-4 text-[#ff4f9a] animate-pulse" />
-          <span className="hidden sm:inline">{userProfile.streakDays} أيام</span>
+          <Flame className="w-4 h-4 text-[#ff4f9a]" />
+          <span dir="ltr" className="tabular-nums">{userProfile.streakDays.toLocaleString('en-US')}</span><span className="hidden sm:inline">أيام</span>
         </div>
 
         {/* Notifications Popover */}

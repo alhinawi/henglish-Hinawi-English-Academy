@@ -1,3 +1,4 @@
+import { addStudyDay } from "./studyStreak";
 import { useState, useEffect, useRef } from "react";
 import { getHenglishApiToken, apiGetProgress, apiPutProgress } from "../services/henglishApi";
 import {
@@ -137,7 +138,7 @@ const DEFAULT_PROGRESS: UserProgressState = {
   knownFlashcards: [],
   reviewFlashcards: [],
   studyStreakDays: 0,
-  lastStudyDate: new Date().toISOString().split("T")[0],
+  lastStudyDate: "",
   dailyChallengeCompleted: false,
   totalTimeMinutes: 0,
   dailyGoals: DEFAULT_GOALS,
@@ -265,7 +266,7 @@ export function useProgress(activeUserId?: string) {
           ...prev,
           xp: Math.max(prev.xp || 0, dbData.totalXp || 0),
           level: (dbData.currentLevel as CEFRLevel) || prev.level,
-          studyStreakDays: Math.max(prev.studyStreakDays || 1, dbData.streakDays || 1),
+          studyStreakDays: Math.max(prev.studyStreakDays || 0, dbData.streakDays || 0),
           completedLessons: Array.from(new Set([...prev.completedLessons, ...dbData.completedLessons])),
           quizScores: { ...prev.quizScores, ...(dbData.quizScores as any) },
         }));
@@ -300,7 +301,7 @@ export function useProgress(activeUserId?: string) {
       totalXp: progress.xp || 0,
       currentLevel: progress.level || 'A1',
       targetLevel: 'B2',
-      streakDays: progress.studyStreakDays || 1,
+      streakDays: progress.studyStreakDays || 0,
       completedLessons: progress.completedLessons || [],
       completedRules: [],
       quizScores: quizMap,
@@ -337,6 +338,7 @@ export function useProgress(activeUserId?: string) {
       return {
         ...prev,
         completedLessons: nextLessons,
+        ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
         xp: nextXp,
       };
     });
@@ -350,6 +352,7 @@ export function useProgress(activeUserId?: string) {
     const earnedXp = Math.round((score / Math.max(1, total)) * 50);
     setProgress((prev) => ({
       ...prev,
+      ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
       quizScores: {
         ...prev.quizScores,
         [quizId]: {
@@ -379,6 +382,7 @@ export function useProgress(activeUserId?: string) {
 
       return {
         ...prev,
+        ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
         knownFlashcards: known,
         reviewFlashcards: review,
       };
@@ -388,6 +392,7 @@ export function useProgress(activeUserId?: string) {
   const completeDailyChallenge = () => {
     setProgress((prev) => ({
       ...prev,
+      ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
       dailyChallengeCompleted: true,
       xp: (prev.xp || 1450) + 50,
     }));
