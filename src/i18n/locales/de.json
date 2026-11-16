@@ -2622,5 +2622,14 @@
   "as.points": "{count} Punkte",
   "gp.title": "Spielearena",
   "gp.hero": "Lernen. Spielen. Behalten.",
-  "gp.intro": "Englischspiele mit Wörtern, Sätzen und Verben aus der Akademie. Wähle eine Herausforderung und schlage deinen Bestwert."
+  "gp.intro": "Englischspiele mit Wörtern, Sätzen und Verben aus der Akademie. Wähle eine Herausforderung und schlage deinen Bestwert.",
+  "lc.title": "Hör-Challenge",
+  "lc.tagline": "Höre den Satz und schreibe ihn auf. Mindestens 80% richtige Wörter bringen einen Punkt. 8 Runden.",
+  "lc.loading": "Sätze werden vorbereitet...",
+  "lc.listenAgain": "Noch einmal hören",
+  "lc.hint": "Drücke auf den Lautsprecher und schreibe auf Englisch, was du gehört hast.",
+  "lc.placeholder": "Deine Antwort auf Englisch...",
+  "lc.excellent": "Sehr gut!",
+  "lc.accuracy": "Du hast {percent}% der Wörter richtig erkannt.",
+  "lc.check": "Prüfen"
 }

@@ -2622,5 +2622,14 @@
   "as.points": "{count} points",
   "gp.title": "Games arena",
   "gp.hero": "Learn it. Play it. Remember it.",
-  "gp.intro": "English games with words, sentences and verbs from the academy. Choose a challenge and beat your best score."
+  "gp.intro": "English games with words, sentences and verbs from the academy. Choose a challenge and beat your best score.",
+  "lc.title": "Listening challenge",
+  "lc.tagline": "Listen to the sentence and type what you heard. Get at least 80% of the words right to earn a point. 8 rounds.",
+  "lc.loading": "Preparing sentences...",
+  "lc.listenAgain": "Listen again",
+  "lc.hint": "Press the speaker and type what you heard in English.",
+  "lc.placeholder": "Type what you heard...",
+  "lc.excellent": "Excellent!",
+  "lc.accuracy": "You got {percent}% of the words right.",
+  "lc.check": "Check"
 }
