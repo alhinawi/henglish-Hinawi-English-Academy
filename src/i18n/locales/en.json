@@ -2444,5 +2444,18 @@
   "pg.speakingTitle": "Practice a spoken dialogue",
   "pg.speakingUnit": "scenario",
   "pg.quizTitle": "Score 80%+ on a quiz",
-  "pg.quizUnit": "quiz"
+  "pg.quizUnit": "quiz",
+  "ve.incomplete": "Enter all six digits of the verification code.",
+  "ve.verified": "Email verified! Opening the academy...",
+  "ve.invalid": "The verification code is incorrect or has expired.",
+  "ve.resent": "A new verification code was sent to your email.",
+  "ve.resendFailed": "Could not resend the code. Try again later.",
+  "ve.title": "Verify your email",
+  "ve.sentTo": "We sent a six-digit verification code to:",
+  "ve.email": "your email",
+  "ve.confirm": "Verify account and keep learning",
+  "ve.noCode": "Did not get the code?",
+  "ve.resend": "Resend now",
+  "ve.back": "Back to sign in",
+  "ve.resendIn": "Resend in {seconds} seconds"
 }
