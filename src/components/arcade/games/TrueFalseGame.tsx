@@ -1,15 +1,16 @@
-// صح ولا غلط - is this Arabic translation really this English sentence's?
+// True or False - is this Arabic translation really this English sentence's?
 import React, { useState } from 'react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Check, X } from 'lucide-react';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
+import { useLanguage } from '../../../i18n/LanguageContext';
 
 const META: ArcadeGameMeta = {
   id: 'true-false',
-  title: 'صح ولا غلط',
-  tagline: 'جملة إنجليزية وترجمة قدامك.. الترجمة بتاعتها فعلا ولا لأ؟ 10 جولات سريعة.',
+  title: '', // filled from tf.title inside the component
+  tagline: '', // filled from tf.tagline inside the component
 };
 
 const ROUNDS = 10;
@@ -21,6 +22,8 @@ interface TFRound {
 }
 
 export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const meta = { ...META, title: t('tf.title'), tagline: t('tf.tagline') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [rounds, setRounds] = useState<TFRound[]>([]);
@@ -68,12 +71,12 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   };
 
   if (phase === 'intro')
-    return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
-  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">بنجهز الجمل...</div>;
+    return <ArcadeIntro meta={meta} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
+  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">{t('tf.loading')}</div>;
   if (phase === 'end' && end)
     return (
       <ArcadeEnd
-        meta={META}
+        meta={meta}
         score={score}
         xpEarned={end.xpEarned}
         newBest={end.newBest}
@@ -86,7 +89,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const r = rounds[round];
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={META.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
+      <ArcadeHud title={meta.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
       <div
         className={`p-6 sm:p-8 rounded-3xl border text-center space-y-5 transition-colors ${
           feedback === 'ok'
@@ -107,14 +110,14 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             disabled={!!feedback}
             className="py-3.5 rounded-2xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] font-black hover:bg-[#c4ff55]/25 transition-all cursor-pointer disabled:opacity-40"
           >
-            <span className="inline-flex items-center gap-1.5">صح <Check className="w-4 h-4" /></span>
+            <span className="inline-flex items-center gap-1.5">{t('tf.trueBtn')} <Check className="w-4 h-4" /></span>
           </button>
           <button
             onClick={() => answer(false)}
             disabled={!!feedback}
             className="py-3.5 rounded-2xl bg-rose-500/15 border border-rose-500/40 text-rose-300 font-black hover:bg-rose-500/25 transition-all cursor-pointer disabled:opacity-40"
           >
-            <span className="inline-flex items-center gap-1.5">غلط <X className="w-4 h-4" /></span>
+            <span className="inline-flex items-center gap-1.5">{t('tf.falseBtn')} <X className="w-4 h-4" /></span>
           </button>
         </div>
       </div>
