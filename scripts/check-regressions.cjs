@@ -16,6 +16,7 @@ const checks = [
   'check-metadata-consumers.cjs',
   'check-writing-feedback.cjs',
   'check-pronunciation-guess.cjs',
+  'check-phrase-retry.cjs',
   'check_progress_fallbacks.cjs',
   'check_recovery_fallbacks.cjs',
 ];
