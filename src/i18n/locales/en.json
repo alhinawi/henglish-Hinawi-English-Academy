@@ -2801,5 +2801,8 @@
   "vie.missing": "The video is deleted or private and cannot be imported.",
   "vie.restricted": "External embedding is disabled for this video.",
   "vie.replacement": "Could not confirm embedding for the replacement video: {detail}",
-  "vie.unverified": "Embedding permission could not be confirmed. Import is blocked until verification succeeds."
+  "vie.unverified": "Embedding permission could not be confirmed. Import is blocked until verification succeeds.",
+  "vcl.business": "Business & Career",
+  "vcl.idioms": "Idioms & Phrasal Verbs",
+  "vcl.daily": "Daily Spoken English"
 }
