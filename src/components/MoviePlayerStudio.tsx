@@ -4,6 +4,7 @@ import type { MovieSceneItem } from '../data/movieScenesData';
 import { applyMovieTranscriptCorrections } from '../data/movieTranscriptCorrections';
 import { movieSourceSummaries } from '../data/movieSourceSummaries';
 import { txText, useAppTextMap } from '../services/contentI18nService';
+import { useLanguage } from '../i18n/LanguageContext';
 import { activeSubtitleAt } from '../utils/movieTimeline';
 import './movieStudio.css';
 
@@ -28,6 +29,7 @@ const timeLabel = (seconds: number) => {
 interface MoviePlayerStudioProps { scene: MovieSceneItem; onBackToSearch?: () => void; }
 
 export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: originalScene, onBackToSearch }) => {
+  const { t } = useLanguage();
   const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
   const unavailable = scene.transcriptTimingStatus === 'quarantined';
   const start = scene.startTime;
@@ -196,38 +198,38 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
   }, [active, scene.youtubeId]);
 
   if (unavailable) return <section dir="rtl" className="rounded-3xl border border-amber-300/25 bg-[#151329] p-5 text-white space-y-4">
-    <h2 className="flex items-center gap-2 text-xl font-black"><AlertCircle/>المقطع تحت المراجعة</h2>
+    <h2 className="flex items-center gap-2 text-xl font-black"><AlertCircle/>{t('ms.unavailableTitle')}</h2>
     <p dir="ltr" className="font-bold">{scene.movieTitle} - {scene.sceneTitle}</p>
-    <p className="text-sm leading-8 text-white/70">بنختار مشهدا قصيرا له نص كامل وتوقيت مؤكد. التدريب متوقف مؤقتا بدل عرض فيديو طويل بنص ناقص.</p>
-    {onBackToSearch && <button onClick={onBackToSearch} className="min-h-12 rounded-xl bg-amber-200 px-5 font-bold text-slate-950">العودة لنتائج البحث</button>}
+    <p className="text-sm leading-8 text-white/70">{t('ms.unavailableBody')}</p>
+    {onBackToSearch && <button onClick={onBackToSearch} className="min-h-12 rounded-xl bg-amber-200 px-5 font-bold text-slate-950">{t('ms.backToResults')}</button>}
   </section>;
 
   return <section dir="rtl" className="movie-studio text-right text-white">
     <header className="flex flex-wrap items-center justify-between gap-3 pb-3">
-      <div><p className="text-[11px] font-bold text-purple-300">مشهد قصير للتعلم</p><h2 className="text-lg font-black">{scene.movieTitle}</h2></div>
-      {onBackToSearch && <button onClick={onBackToSearch} className="flex min-h-11 items-center gap-1 rounded-xl bg-white/10 px-3 text-xs font-bold"><ChevronRight size={16}/>العودة للبحث</button>}
+      <div><p className="text-[11px] font-bold text-purple-300">{t('ms.sceneBadge')}</p><h2 className="text-lg font-black">{scene.movieTitle}</h2></div>
+      {onBackToSearch && <button onClick={onBackToSearch} className="flex min-h-11 items-center gap-1 rounded-xl bg-white/10 px-3 text-xs font-bold"><ChevronRight size={16}/>{t('ms.backToSearch')}</button>}
     </header>
     <div className="movie-studio-workspace">
       <div className="movie-studio-player" data-testid="pinned-player">
         <div className="movie-studio-frame"><div ref={host} className="h-full w-full" title={scene.movieTitle}/></div>
         <div className="flex min-h-12 flex-wrap items-center justify-between gap-1 rounded-b-2xl bg-[#151329] px-2 py-2">
           <div className="flex items-center gap-2">
-            <button aria-label={playing ? 'إيقاف مؤقت' : 'تشغيل المشهد'} disabled={!ready || error} onClick={() => {
+            <button aria-label={playing ? t('ms.pause') : t('ms.play')} disabled={!ready || error} onClick={() => {
               if (playing) player.current?.pauseVideo?.();
               else if (ended || currentTime >= end || currentTime < start) loadClip(start);
               else player.current?.playVideo?.();
             }} className="rounded-xl bg-purple-600 p-2 disabled:opacity-40">{playing ? <Pause size={18}/> : <Play size={18}/>}</button>
-            <button aria-label="إعادة المشهد من بدايته" onClick={() => loadClip(loopBounds.current?.start ?? start)} className="rounded-xl bg-white/10 p-2"><RotateCcw size={18}/></button>
+            <button aria-label={t('ms.restartAria')} onClick={() => loadClip(loopBounds.current?.start ?? start)} className="rounded-xl bg-white/10 p-2"><RotateCcw size={18}/></button>
             <span dir="ltr" className="text-[11px] tabular-nums text-white/70">{timeLabel(currentTime - start)} / {timeLabel(end - start)}</span>
           </div>
           <div className="relative flex items-center gap-1.5">
-            <button aria-label="تكرار الجملة تلقائيا" aria-pressed={repeat} disabled={!ready || error} onClick={() => {
+            <button aria-label={t('ms.repeatAria')} aria-pressed={repeat} disabled={!ready || error} onClick={() => {
               const enabled = !repeat; setRepeat(enabled);
               loopBounds.current = enabled ? { ...lastCue.current } : null;
               if (enabled && ended) loadClip(loopBounds.current!.start);
               if (!enabled && playing) loadClip(currentTime);
-            }} className={`flex min-h-10 items-center gap-1 rounded-xl px-1.5 text-[11px] font-bold ${repeat ? 'bg-purple-600 text-white' : 'bg-white/10 text-white/75'}`}><Repeat size={15}/>تكرار</button>
-            <button aria-label="سرعة المشهد" aria-expanded={speedMenu} disabled={!ready || error} onPointerDown={event => {
+            }} className={`flex min-h-10 items-center gap-1 rounded-xl px-1.5 text-[11px] font-bold ${repeat ? 'bg-purple-600 text-white' : 'bg-white/10 text-white/75'}`}><Repeat size={15}/>{t('ms.repeat')}</button>
+            <button aria-label={t('ms.speedAria')} aria-expanded={speedMenu} disabled={!ready || error} onPointerDown={event => {
               if (event.button !== 0) return;
               event.currentTarget.setPointerCapture(event.pointerId); beginHold();
             }} onPointerUp={finishHold} onPointerCancel={finishHold} onLostPointerCapture={finishHold} onBlur={finishHold}
@@ -236,38 +238,38 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
               onContextMenu={event => event.preventDefault()}
               onClick={() => { if (suppressClick.current) { suppressClick.current = false; return; } setSpeedMenu(!speedMenu); }}
               className={`flex min-h-10 select-none items-center gap-1 rounded-xl px-1.5 text-[11px] font-bold ${temporaryRate !== null ? 'bg-amber-200 text-slate-950' : 'bg-white/10 text-white'}`}><Gauge size={15}/><span dir="ltr">{temporaryRate ?? speed}x</span></button>
-            <button aria-label="إعدادات المشهد" aria-expanded={settingsOpen} onClick={() => { setSpeedMenu(false); setSettingsOpen(!settingsOpen); }} className="min-h-10 rounded-xl px-1.5 text-white/65"><Settings size={16}/></button>
+            <button aria-label={t('ms.settingsAria')} aria-expanded={settingsOpen} onClick={() => { setSpeedMenu(false); setSettingsOpen(!settingsOpen); }} className="min-h-10 rounded-xl px-1.5 text-white/65"><Settings size={16}/></button>
           </div>
         </div>
-        {speedMenu && <div role="group" aria-label="اختيار سرعة التشغيل" className="flex justify-center gap-2 border-t border-white/10 bg-[#211a34] p-2">{[0.5, 0.75, 1, 1.25].filter(rate => availableRates.includes(rate)).map(rate => <button key={rate} onClick={() => chooseSpeed(rate)} className={`min-h-11 rounded-lg px-2 text-xs ${speed === rate ? 'bg-purple-600' : 'bg-white/10'}`} dir="ltr">{rate}x</button>)}</div>}
+        {speedMenu && <div role="group" aria-label={t('ms.speedGroupAria')} className="flex justify-center gap-2 border-t border-white/10 bg-[#211a34] p-2">{[0.5, 0.75, 1, 1.25].filter(rate => availableRates.includes(rate)).map(rate => <button key={rate} onClick={() => chooseSpeed(rate)} className={`min-h-11 rounded-lg px-2 text-xs ${speed === rate ? 'bg-purple-600' : 'bg-white/10'}`} dir="ltr">{rate}x</button>)}</div>}
         {settingsOpen && <label className="flex min-h-12 items-center justify-between gap-3 border-t border-white/10 bg-[#151329] px-3 py-2 text-xs leading-6">
-          <span>ضغط مطول على زر السرعة للتبطئة المؤقتة<br/><small className="text-white/50">السرعة بترجع لما تسيب الزر.</small></span>
+          <span>{t('ms.holdHint')}<br/><small className="text-white/50">{t('ms.holdHintSub')}</small></span>
           <input type="checkbox" checked={holdEnabled} onChange={event => { finishHold(); const enabled = event.target.checked; setHoldEnabled(enabled); try { localStorage.setItem('henglish_movie_hold_to_slow', enabled ? 'on' : 'off'); } catch { /* device storage unavailable */ } }} className="h-5 w-5 accent-purple-500"/>
         </label>}
-        {temporaryRate !== null && <p role="status" className="bg-[#151329] p-2 text-center text-[11px] text-amber-200">تبطيء مؤقت أثناء الضغط: <span dir="ltr">{temporaryRate}x</span></p>}
-        {error && <p role="alert" className="bg-[#151329] p-3 text-xs leading-6 text-amber-200">تعذر تشغيل المصدر هنا. تقدر تفتحه من رابط المصدر تحت.</p>}
-        {ended && <p role="status" className="bg-[#151329] p-2 text-center text-xs text-purple-200">انتهى المشهد القصير. اضغط إعادة عشان تراجعه.</p>}
+        {temporaryRate !== null && <p role="status" className="bg-[#151329] p-2 text-center text-[11px] text-amber-200">{t('ms.tempSlow')} <span dir="ltr">{temporaryRate}x</span></p>}
+        {error && <p role="alert" className="bg-[#151329] p-3 text-xs leading-6 text-amber-200">{t('ms.playError')}</p>}
+        {ended && <p role="status" className="bg-[#151329] p-2 text-center text-xs text-purple-200">{t('ms.ended')}</p>}
       </div>
       <div className="movie-studio-script">
         <div className="flex items-center justify-between gap-2 border-b border-white/10 px-4 py-3">
-          <h3 className="flex items-center gap-2 text-sm font-black"><Languages size={17}/>نص المشهد القصير</h3>
-          <span className="text-[11px] text-white/45">متزامن مع الفيديو</span>
+          <h3 className="flex items-center gap-2 text-sm font-black"><Languages size={17}/>{t('ms.scriptTitle')}</h3>
+          <span className="text-[11px] text-white/45">{t('ms.syncedNote')}</span>
         </div>
-        <div ref={list} className="movie-studio-cues" data-testid="cue-list" tabIndex={0} aria-label="جمل المشهد المتزامنة">
+        <div ref={list} className="movie-studio-cues" data-testid="cue-list" tabIndex={0} aria-label={t('ms.cuesAria')}>
           {scene.subtitles.map((sub, index) => <button key={sub.id} data-sub-idx={index} aria-current={active === index ? 'true' : undefined} onClick={() => { if (loopBounds.current) loopBounds.current = { start: sub.start, end: sub.end }; loadClip(sub.start); }} className={`movie-studio-cue ${active === index ? 'is-active' : ''}`}>
-            <span className="mb-2 flex justify-between text-[11px] text-purple-200"><span>{sub.speaker || 'نص المصدر'}</span><span dir="ltr">{timeLabel(sub.start - start)} - {timeLabel(sub.end - start)}</span></span>
+            <span className="mb-2 flex justify-between text-[11px] text-purple-200"><span>{sub.speaker || t('ms.sourceText')}</span><span dir="ltr">{timeLabel(sub.start - start)} - {timeLabel(sub.end - start)}</span></span>
             <span dir="ltr" lang="en" className="block text-left text-base font-bold leading-8">{sub.en}</span>
             <span className="mt-2 block text-sm leading-8 text-white/85">{txText(appText, sub.arEg)}</span>
             {fusha && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
           </button>)}
-          <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? 'إخفاء الفصحى' : 'عرض الفصحى'}</button>
-          {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>فكرة المشهد: </strong>{txText(summaryText, movieSourceSummaries[scene.youtubeId])}</p>}
-          <p className="text-[11px] leading-7 text-white/50">النص للمشهد القصير المعروض بس، مش للفيديو الأصلي كله. اضغط على الجملة لإعادتها. الجملة الحالية بتظهر تلقائيا مع تقدم المشهد.</p>
+          <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>
+          {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>{t('ms.sceneIdea')} </strong>{txText(summaryText, movieSourceSummaries[scene.youtubeId])}</p>}
+          <p className="text-[11px] leading-7 text-white/50">{t('ms.scriptNote')}</p>
         </div>
         <footer className="border-t border-white/10 px-4 py-3 text-[11px] leading-6 text-white/55">
-          <p>من توقيت المصدر {timeLabel(start)} إلى {timeLabel(end)}. {scene.transcriptTimingStatus === 'caption-reviewed' ? 'الحدود من ترجمة المصدر، مش مراجعة صوتية كلمة بكلمة.' : 'الافتتاحية دي مراجعة على صوت المصدر.'}</p>
-          <a href={`https://www.youtube.com/watch?v=${scene.youtubeId}`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-9 items-center gap-1 text-purple-200 underline"><ExternalLink size={12}/>المصدر على YouTube</a>
-          <span className="mr-3">ترجمة YouTube من زر CC لو متاحة.</span>
+          <p>{t('ms.timingFrom')} {timeLabel(start)} {t('ms.timingTo')} {timeLabel(end)}. {scene.transcriptTimingStatus === 'caption-reviewed' ? t('ms.timingCaption') : t('ms.timingAudio')}</p>
+          <a href={`https://www.youtube.com/watch?v=${scene.youtubeId}`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-9 items-center gap-1 text-purple-200 underline"><ExternalLink size={12}/>{t('ms.sourceYoutube')}</a>
+          <span className="mr-3">{t('ms.youtubeCc')}</span>
         </footer>
       </div>
     </div>
