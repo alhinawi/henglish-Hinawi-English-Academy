@@ -220,7 +220,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                               {txText(appText, rule.category)}
                             </span>
                             <span className="px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-white/5 text-[#c4ff55]">
-                              {rule.level}
+                              {txText(appText, rule.level)}
                             </span>
                           </div>
 
