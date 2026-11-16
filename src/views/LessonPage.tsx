@@ -21,6 +21,8 @@ interface LessonPageProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
   onMarkComplete: (lessonId: string) => void;
   isCompleted: boolean;
+  /** Rendered inside the single-page course view: anchor id, no breadcrumb. */
+  embedded?: boolean;
 }
 
 export const LessonPage: React.FC<LessonPageProps> = ({
@@ -28,6 +30,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
   onNavigate,
   onMarkComplete,
   isCompleted,
+  embedded = false,
 }) => {
   const currentLesson = FUTURE_PERFECT_LESSONS.find(l => l.id === lessonId) || FUTURE_PERFECT_LESSONS[0];
   const currentIndex = FUTURE_PERFECT_LESSONS.findIndex(l => l.id === currentLesson.id);
@@ -58,10 +61,20 @@ export const LessonPage: React.FC<LessonPageProps> = ({
     onMarkComplete(currentLesson.id);
   };
 
+  const scrollToLesson = (id: string) => {
+    document.getElementById(`fp-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      
+    <div
+      id={embedded ? `fp-${currentLesson.id}` : undefined}
+      className={embedded
+        ? 'max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-10 scroll-mt-24'
+        : 'max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10'}
+    >
+
       {/* Breadcrumb Navigation */}
+      {!embedded && (
       <nav className="flex items-center gap-2 text-xs text-[#b9b6d5] font-semibold flex-wrap">
         <button 
           onClick={() => { playSound('click'); onNavigate('home'); }} 
@@ -86,6 +99,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
         <span>/</span>
         <span className="text-[#ffd166] font-bold">الدرس 0{currentLesson.number}</span>
       </nav>
+      )}
 
       {/* Lesson Header Banner with Online Photo Hero */}
       <header className="glass-panel rounded-3xl border border-white/10 overflow-hidden relative">
@@ -442,8 +456,11 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <button
               onClick={() => {
                 playSound('click');
-                onNavigate('lesson', prevLesson.id);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (embedded) scrollToLesson(prevLesson.id);
+                else {
+                  onNavigate('lesson', prevLesson.id);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
               }}
               className="px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs sm:text-sm font-bold text-[#dedbf4] transition-colors cursor-pointer flex items-center gap-1.5"
             >
@@ -456,8 +473,11 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <button
               onClick={() => {
                 playSound('click');
-                onNavigate('lesson', nextLesson.id);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (embedded) scrollToLesson(nextLesson.id);
+                else {
+                  onNavigate('lesson', nextLesson.id);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
               }}
               className="px-5 py-2.5 rounded-xl bg-linear-to-r from-[#41e7ff] to-[#9b7bff] text-white font-black text-xs sm:text-sm hover:brightness-110 shadow-md transition-all cursor-pointer flex items-center gap-1.5"
             >
