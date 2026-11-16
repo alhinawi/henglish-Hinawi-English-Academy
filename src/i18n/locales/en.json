@@ -2827,5 +2827,8 @@
   "vocab.saveError": "Could not save this change on this device. Allow storage and try again. Your existing data was not changed.",
   "ex.loadError": "Could not load expressions. This is a loading error, not an empty search result. Try again.",
   "ex.retry": "Try again",
-  "vx.loadError": "The word library did not finish loading. Current results only cover loaded words. Try again to load the rest."
+  "vx.loadError": "The word library did not finish loading. Current results only cover loaded words. Try again to load the rest.",
+  "wdm.discardNote": "Your note has unsaved changes. Close without saving?",
+  "wdm.noteUnsaved": "Your note has unsaved changes.",
+  "wdm.noteSaved": "Note saved on this device."
 }
