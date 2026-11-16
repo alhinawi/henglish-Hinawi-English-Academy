@@ -2526,5 +2526,17 @@
   "vs.muted": "صوت مكتوم",
   "vs.enabled": "الصوت مفعل",
   "vs.done": "حفظ واعتماد",
-  "vs.all": "جميع الأصوات"
+  "vs.all": "جميع الأصوات",
+  "wdm.close": "إغلاق (Esc)",
+  "wdm.saved": "محفوظة في بنك كلماتي",
+  "wdm.save": "حفظ في المفردات",
+  "wdm.pronunciation": "النطق المزدوج (Dual Pronunciation):",
+  "wdm.other": "معانٍ وسياقات أخرى بالعربية:",
+  "wdm.definition": "English Definition",
+  "wdm.forms": "التصريفات والأشكال النحوية (Grammatical Forms):",
+  "wdm.example": "مثال عملي في سياق واقعي (Real Context Example):",
+  "wdm.collocations": "متلازمات لفظية طبيعية (Collocations):",
+  "wdm.notes": "ملاحظاتك الشخصية للتكرار المتباعد (Spaced Repetition Note):",
+  "wdm.placeholder": "اكتب ملاحظة خاصة لتثبيت الكلمة في ذاكرتك...",
+  "wdm.saveNote": "حفظ الملاحظة"
 }
