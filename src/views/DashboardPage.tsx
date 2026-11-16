@@ -575,7 +575,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               playSound("click");
               onNavigate("courses");
             }}
-            className="text-xs font-bold text-[#41e7ff] hover:underline flex items-center gap-1 cursor-pointer self-start sm:self-auto"
+            className="text-xs font-bold text-[#41e7ff] hover:underline flex items-center gap-1 cursor-pointer self-start sm:self-auto py-2 -my-2"
           >
             <span>{t('dash.viewAllCourses')}</span>
             <ChevronLeft className="w-4 h-4" />
