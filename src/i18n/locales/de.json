@@ -2183,5 +2183,7 @@
   "vh.srsActive": "SRS-Wiederholung: aktiv",
   "vh.listen": "Anhören",
   "vh.noDeckWords": "Du hast in diesem Deck noch keine Wörter oder Ausdrücke gespeichert.",
-  "vh.noDeckWordsHint": "Tippe in den Übersetzungsergebnissen auf ein Wort für die Analyse und speichere es sofort!"
+  "vh.noDeckWordsHint": "Tippe in den Übersetzungsergebnissen auf ein Wort für die Analyse und speichere es sofort!",
+  "ai.unavailable": "Der KI-Dienst ist auf der Plattform derzeit nicht verfügbar. Wir arbeiten an der Aktivierung.",
+  "ai.translateFailed": "Die KI-Übersetzung konnte nicht abgeschlossen werden. Bitte versuche es erneut."
 }

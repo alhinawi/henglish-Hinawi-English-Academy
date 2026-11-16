@@ -21,6 +21,7 @@ import {
   RotateCcw,
 } from 'lucide-react';
 import { useLanguage } from '../../i18n/LanguageContext';
+import { isAiServiceUnavailable } from '../../services/aiAvailability';
 
 interface VoiceTranslatorTabProps {
   sourceLang: LanguageCode;
@@ -105,7 +106,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         }
       } catch (err) {
         console.error('Audio transcription error:', err);
-        setErrorMsg(t('vt.errTranscribe'));
+        setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('vt.errTranscribe'));
         playSound('wrong');
       } finally {
         setIsTranscribing(false);
