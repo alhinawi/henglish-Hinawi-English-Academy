@@ -2806,5 +2806,789 @@
   "explanationAr": "mis- = غلط.",
   "topic": "Usage: word formation (B2)",
   "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm1-012157",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I am _____ a book now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to read",
+   "reading",
+   "reads",
+   "read"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: reading.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012158",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She is _____ dinner at the moment.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cooked",
+   "cook",
+   "cooking",
+   "cooks"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: cooking.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012159",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They are _____ football in the park.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "played",
+   "plays",
+   "playing",
+   "play"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: playing.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012160",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He _____ writing a letter.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "does",
+   "am"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: is.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012161",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We _____ watching a film.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "do",
+   "am",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: are.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012162",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Look! It _____ raining.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "does",
+   "are",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: is.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012163",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The children _____ sleeping now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "am",
+   "is",
+   "are"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: are.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012164",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ studying English right now.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "am",
+   "do",
+   "are"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: am.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012165",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My mother is _____ in the kitchen.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "worked",
+   "works",
+   "work",
+   "working"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: working.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012166",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "You are _____ too fast.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "running",
+   "run",
+   "runs",
+   "ran"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: running.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012167",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He is _____ a shower.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "takes",
+   "take",
+   "taking",
+   "took"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: taking.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012168",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She is _____ a new dress.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wearing",
+   "wear",
+   "wears",
+   "wore"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: wearing.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012169",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Why are you _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "laughs",
+   "laughing",
+   "laugh",
+   "laughed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: laughing.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012170",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "What is he _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "doing",
+   "does",
+   "do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: doing.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012171",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They aren't _____ to me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "listens",
+   "listened",
+   "listening",
+   "listen"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: listening.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012172",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He is _____ the car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drive",
+   "drove",
+   "driving",
+   "drives"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: driving.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012173",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The sun is _____ brightly.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "shines",
+   "shining",
+   "shine",
+   "shone"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: shining.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012174",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We are _____ for the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wait",
+   "waiting",
+   "waits",
+   "waited"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: waiting.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012175",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I am _____ a cup of tea.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "making",
+   "made",
+   "make",
+   "makes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: making.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012176",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She is _____ at the moment.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "swims",
+   "swimming",
+   "swim",
+   "swam"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: swimming.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012177",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is run now.",
+   "He runs now.",
+   "He running now.",
+   "He is running now."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: He is running now..",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012178",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't sleeping.",
+   "I am not sleep.",
+   "I not am sleeping.",
+   "I am not sleeping."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: I am not sleeping..",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012179",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Are you listening?",
+   "Are you listen?",
+   "Do you listening?",
+   "You listening?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: Are you listening?.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012180",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "What are they eating?",
+   "What are they eat?",
+   "What they are eating?",
+   "What do they eating?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: What are they eating?.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012181",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is sit on the sofa.",
+   "She sitting is on the sofa.",
+   "She is sitings on the sofa.",
+   "She is sitting on the sofa."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: She is sitting on the sofa..",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012182",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We having lunch are.",
+   "We are has lunch.",
+   "We are haveing lunch.",
+   "We are having lunch."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: We are having lunch..",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012183",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The man is swimmming.",
+   "The man swimming is.",
+   "The man is swiming.",
+   "The man is swimming."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: The man is swimming..",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012184",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My dog is runs in the garden.",
+   "My dog are running in the garden.",
+   "My dog is runing in the garden.",
+   "My dog is running in the garden."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي. الإجابة الصحيحة: My dog is running in the garden..",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012185",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She is writeing a letter\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح writing لأن بنشيل e قبل ما نضيف ing. المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012186",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"They are playing outside\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012187",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He is runing\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح running لأن بنكرر الحرف n. المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012188",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I am reading now\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. المضارع المستمر: am/is/are + الفعل + ing للحاجة اللي بتحصل دلوقتي.",
+  "topic": "Grammar: present continuous (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012189",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The book is _____ the table. (on top)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "in",
+   "under",
+   "at"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012190",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The cat is _____ the box. (inside)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "on",
+   "under",
+   "between"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012191",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The ball is _____ the chair. (below)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "under",
+   "on",
+   "between"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: under.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012192",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My house is _____ the school and the mosque.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "in",
+   "between",
+   "under",
+   "on"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: between.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012193",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He sits _____ me in class. (beside)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "between",
+   "under",
+   "in",
+   "next to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: next to.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012194",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The garden is _____ the house. (at the back)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "between",
+   "on",
+   "behind",
+   "in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: behind.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012195",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The car is _____ the house. (at the front)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "under",
+   "in",
+   "behind",
+   "in front of"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: in front of.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012196",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The picture is _____ the wall.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "in",
+   "between",
+   "under"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: on.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012197",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My keys are _____ my bag.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "between",
+   "on top",
+   "in",
+   "under of"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012198",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She lives _____ a small flat.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "at",
+   "between",
+   "in",
+   "on"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: in.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012199",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The bank is _____ the post office. (beside)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "under",
+   "between",
+   "next to",
+   "in"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: next to.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012200",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The lamp is _____ the bed and the desk.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "on",
+   "between",
+   "under",
+   "in"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "in جوه، on فوق وملاصق، under تحت، next to جنب، behind ورا، in front of قدام، between بين اتنين. الإجابة الصحيحة: between.",
+  "topic": "Grammar: prepositions of place (A1)",
+  "source": "worker-b-grammar-a1-b1"
  }
 ]
