@@ -27,9 +27,10 @@ import {
 import { WordCard } from './WordCard';
 import { WordDetailModal } from './WordDetailModal';
 import { playSound } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 const CEFR_OPTIONS: Array<{ id: CEFRLevel | 'all'; label: string }> = [
-  { id: 'all', label: 'الكل' },
+  { id: 'all', label: 'vx.all' },
   { id: 'A1', label: 'A1' },
   { id: 'A2', label: 'A2' },
   { id: 'B1', label: 'B1' },
@@ -39,60 +40,62 @@ const CEFR_OPTIONS: Array<{ id: CEFRLevel | 'all'; label: string }> = [
 ];
 
 const POS_OPTIONS = [
-  { id: 'all', label: 'كل الأنواع' },
-  { id: 'noun', label: 'أسماء' },
-  { id: 'verb', label: 'أفعال' },
-  { id: 'adjective', label: 'صفات' },
-  { id: 'adverb', label: 'ظروف' },
-  { id: 'pronoun', label: 'ضمائر' },
-  { id: 'preposition', label: 'حروف جر' },
-  { id: 'conjunction', label: 'أدوات ربط' },
-  { id: 'determiner', label: 'أدوات تعريف' },
-  { id: 'number', label: 'أرقام' },
-  { id: 'interjection', label: 'تعجبات' },
-  { id: 'modal verb', label: 'أفعال ناقصة' },
-  { id: 'particle', label: 'أدوات' },
-  { id: 'phrasal verb', label: 'أفعال مركبة' },
+  { id: 'all', label: 'vx.pos.all' },
+  { id: 'noun', label: 'vx.pos.noun' },
+  { id: 'verb', label: 'vx.pos.verb' },
+  { id: 'adjective', label: 'vx.pos.adjective' },
+  { id: 'adverb', label: 'vx.pos.adverb' },
+  { id: 'pronoun', label: 'vx.pos.pronoun' },
+  { id: 'preposition', label: 'vx.pos.preposition' },
+  { id: 'conjunction', label: 'vx.pos.conjunction' },
+  { id: 'determiner', label: 'vx.pos.determiner' },
+  { id: 'number', label: 'vx.pos.number' },
+  { id: 'interjection', label: 'vx.pos.interjection' },
+  { id: 'modal verb', label: 'vx.pos.modalVerb' },
+  { id: 'particle', label: 'vx.pos.particle' },
+  { id: 'phrasal verb', label: 'vx.pos.phrasalVerb' },
 ];
 
 const LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('');
 
 const DOMAIN_OPTIONS = [
-  { id: 'all', label: 'كل المجالات' },
-  { id: 'everyday', label: 'يومية' },
-  { id: 'business', label: 'بيزنس' },
-  { id: 'tech', label: 'تكنولوجيا' },
-  { id: 'academic', label: 'أكاديمي' },
-  { id: 'travel', label: 'سفر' },
-  { id: 'workplace', label: 'شغل' },
-  { id: 'medical', label: 'طبي' },
-  { id: 'food', label: 'أكل' },
-  { id: 'hotel', label: 'فنادق' },
-  { id: 'phrasal_verbs', label: 'أفعال مركبة' },
-  { id: 'idioms', label: 'تعبيرات' },
-  { id: 'collocations', label: 'متلازمات' },
+  { id: 'all', label: 'vx.domain.all' },
+  { id: 'everyday', label: 'vx.domain.everyday' },
+  { id: 'business', label: 'vx.domain.business' },
+  { id: 'tech', label: 'vx.domain.tech' },
+  { id: 'academic', label: 'vx.domain.academic' },
+  { id: 'travel', label: 'vx.domain.travel' },
+  { id: 'workplace', label: 'vx.domain.workplace' },
+  { id: 'medical', label: 'vx.domain.medical' },
+  { id: 'food', label: 'vx.domain.food' },
+  { id: 'hotel', label: 'vx.domain.hotel' },
+  { id: 'phrasal_verbs', label: 'vx.domain.phrasalVerbs' },
+  { id: 'idioms', label: 'vx.domain.idioms' },
+  { id: 'collocations', label: 'vx.domain.collocations' },
 ];
 
 const FREQUENCY_OPTIONS = [
-  { id: 'all', label: 'كل الدرجات' },
-  { id: 'top500', label: 'أول 500' },
-  { id: 'top1000', label: 'أول 1,000' },
-  { id: 'top2000', label: 'أول 2,000' },
-  { id: 'top3000', label: 'أول 3,000' },
-  { id: 'top5000', label: 'أول 5,000' },
-  { id: 'advanced', label: 'متقدمة' },
-  { id: 'rare', label: 'نادرة' },
+  { id: 'all', label: 'vx.freq.all' },
+  { id: 'top500', label: 'vx.freq.top500' },
+  { id: 'top1000', label: 'vx.freq.top1000' },
+  { id: 'top2000', label: 'vx.freq.top2000' },
+  { id: 'top3000', label: 'vx.freq.top3000' },
+  { id: 'top5000', label: 'vx.freq.top5000' },
+  { id: 'advanced', label: 'vx.freq.advanced' },
+  { id: 'rare', label: 'vx.freq.rare' },
 ];
 
 const SORT_OPTIONS = [
-  { id: 'popular', label: 'الأكثر شيوعًا' },
-  { id: 'alpha_asc', label: 'أبجدي A-Z' },
-  { id: 'alpha_desc', label: 'أبجدي Z-A' },
-  { id: 'cefr_asc', label: 'A1 إلى C2' },
-  { id: 'cefr_desc', label: 'C2 إلى A1' },
+  { id: 'popular', label: 'vx.sort.popular' },
+  { id: 'alpha_asc', label: 'vx.sort.alphaAsc' },
+  { id: 'alpha_desc', label: 'vx.sort.alphaDesc' },
+  { id: 'cefr_asc', label: 'vx.sort.cefrAsc' },
+  { id: 'cefr_desc', label: 'vx.sort.cefrDesc' },
 ];
 
 export const VocabularyExplorer: React.FC = () => {
+  const { t } = useLanguage();
+  const optT = (opts: Array<{ id: string; label: string }>, id: string) => { const o = opts.find(x => x.id === id); return o ? t(o.label) : id; };
   // Filters & State
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCefr, setSelectedCefr] = useState<CEFRLevel | 'all'>('all');
@@ -198,7 +201,7 @@ export const VocabularyExplorer: React.FC = () => {
 
   const activeChips: Array<{ key: string; label: string; clear: () => void }> = [];
   if (searchQuery !== '') {
-    activeChips.push({ key: 'q', label: `بحث: ${searchQuery}`, clear: () => setSearchQuery('') });
+    activeChips.push({ key: 'q', label: t('vx.chipSearch').replace('{q}', searchQuery), clear: () => setSearchQuery('') });
   }
   if (selectedCefr !== 'all') {
     activeChips.push({ key: 'cefr', label: selectedCefr, clear: () => setSelectedCefr('all') });
@@ -206,35 +209,35 @@ export const VocabularyExplorer: React.FC = () => {
   if (selectedPos !== 'all') {
     activeChips.push({
       key: 'pos',
-      label: POS_OPTIONS.find(p => p.id === selectedPos)?.label || selectedPos,
+      label: optT(POS_OPTIONS, selectedPos),
       clear: () => setSelectedPos('all'),
     });
   }
   if (selectedDomain !== 'all') {
     activeChips.push({
       key: 'domain',
-      label: DOMAIN_OPTIONS.find(d => d.id === selectedDomain)?.label || selectedDomain,
+      label: optT(DOMAIN_OPTIONS, selectedDomain),
       clear: () => setSelectedDomain('all'),
     });
   }
   if (selectedLetter !== 'all') {
     activeChips.push({
       key: 'letter',
-      label: `حرف: ${selectedLetter.toUpperCase()}`,
+      label: t('vx.chipLetter').replace('{L}', selectedLetter.toUpperCase()),
       clear: () => setSelectedLetter('all'),
     });
   }
   if (selectedFrequency !== 'all') {
     activeChips.push({
       key: 'freq',
-      label: FREQUENCY_OPTIONS.find(f => f.id === selectedFrequency)?.label || selectedFrequency,
+      label: optT(FREQUENCY_OPTIONS, selectedFrequency),
       clear: () => setSelectedFrequency('all'),
     });
   }
   if (sortBy !== 'popular') {
     activeChips.push({
       key: 'sort',
-      label: SORT_OPTIONS.find(s => s.id === sortBy)?.label || sortBy,
+      label: optT(SORT_OPTIONS, sortBy),
       clear: () => setSortBy('popular'),
     });
   }
@@ -261,7 +264,7 @@ export const VocabularyExplorer: React.FC = () => {
           dir="auto"
           value={searchQuery}
           onChange={e => setSearchQuery(e.target.value)}
-          placeholder="ابحث بالإنجليزية أو العربية..."
+          placeholder={t('vx.searchPlaceholder')}
           className="w-full pl-12 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm sm:text-base font-sans focus:outline-none focus:border-[#41e7ff] shadow-inner transition-colors"
         />
         {searchQuery && (
@@ -290,7 +293,7 @@ export const VocabularyExplorer: React.FC = () => {
                   : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
               }`}
             >
-              {c.label}
+              {t(c.label)}
             </button>
           ))}
         </div>
@@ -302,7 +305,7 @@ export const VocabularyExplorer: React.FC = () => {
           className="relative inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-all cursor-pointer shrink-0"
         >
           <SlidersHorizontal className="w-4 h-4" />
-          <span>فلاتر</span>
+          <span>{t('vx.filters')}</span>
           {sheetFilterCount > 0 && (
             <span className="absolute -top-1.5 -left-1.5 w-4.5 h-4.5 min-w-[18px] min-h-[18px] px-0.5 rounded-full bg-[#c4ff55] text-[#09091a] text-[10px] font-black flex items-center justify-center">
               {sheetFilterCount}
@@ -316,9 +319,9 @@ export const VocabularyExplorer: React.FC = () => {
         <div className="flex flex-wrap items-center gap-2">
           <div className="text-xs text-white/70 font-bold">
             <strong className="text-[#c4ff55]">{searchResults.totalMatches.toLocaleString()}</strong>
-            <span> كلمة</span>
+            <span>{' '}{t('vx.words')}</span>
             <span className="text-white/40 text-[11px] mr-1.5">
-              (من {loadedCount.toLocaleString()} محققة)
+              ({t('vx.ofVerified').replace('{n}', loadedCount.toLocaleString())})
             </span>
             {isFullLoading && (
               <Loader2 className="w-3 h-3 inline-block animate-spin text-[#41e7ff] mr-1" />
@@ -343,7 +346,7 @@ export const VocabularyExplorer: React.FC = () => {
               className="inline-flex items-center gap-1 px-2 py-0.5 rounded-lg text-[11px] font-black text-red-400 hover:bg-red-500/10 transition-all cursor-pointer"
             >
               <RotateCcw className="w-3 h-3" />
-              <span>مسح الكل</span>
+              <span>{t('vx.clearAll')}</span>
             </button>
           )}
         </div>
@@ -353,7 +356,7 @@ export const VocabularyExplorer: React.FC = () => {
             className={`p-1.5 rounded-md transition-all cursor-pointer ${
               viewMode === 'grid' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
             }`}
-            title="عرض شبكي"
+            title={t('vx.gridView')}
           >
             <LayoutGrid className="w-4 h-4" />
           </button>
@@ -362,7 +365,7 @@ export const VocabularyExplorer: React.FC = () => {
             className={`p-1.5 rounded-md transition-all cursor-pointer ${
               viewMode === 'list' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
             }`}
-            title="عرض قائمة"
+            title={t('vx.listView')}
           >
             <List className="w-4 h-4" />
           </button>
@@ -373,22 +376,22 @@ export const VocabularyExplorer: React.FC = () => {
       {isLoading ? (
         <div className="p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <Loader2 className="w-10 h-10 text-[#41e7ff] animate-spin mx-auto" />
-          <p className="text-white/80 font-bold text-sm">جارٍ تحميل الكلمات المحققة...</p>
+          <p className="text-white/80 font-bold text-sm">{t('vx.loading')}</p>
         </div>
       ) : searchResults.entries.length === 0 ? (
         <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto text-white/40">
             <Search className="w-8 h-8" />
           </div>
-          <h3 className="text-xl font-black text-white">مفيش كلمات مطابقة</h3>
+          <h3 className="text-xl font-black text-white">{t('vx.noMatches')}</h3>
           <p className="text-sm text-white/60 max-w-md mx-auto">
-            جرّب تغيير البحث أو توسيع الفلاتر.
+            {t('vx.noMatchesHint')}
           </p>
           <button
             onClick={handleClearFilters}
             className="px-4 py-2 rounded-xl bg-[#41e7ff] text-[#09091a] text-xs font-black hover:bg-[#70efff] transition-all cursor-pointer"
           >
-            مسح الفلاتر
+            {t('vx.clearFilters')}
           </button>
         </div>
       ) : (
@@ -429,7 +432,7 @@ export const VocabularyExplorer: React.FC = () => {
                   className="px-3 py-1.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-bold text-white disabled:opacity-30 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-1"
                 >
                   <ChevronRight className="w-4 h-4" />
-                  <span>السابق</span>
+                  <span>{t('vx.prev')}</span>
                 </button>
 
                 <div className="flex items-center gap-1">
@@ -464,7 +467,7 @@ export const VocabularyExplorer: React.FC = () => {
                   disabled={searchResults.page >= searchResults.totalPages}
                   className="px-3 py-1.5 rounded-xl border border-white/10 bg-white/5 hover:bg-white/10 text-xs font-bold text-white disabled:opacity-30 disabled:pointer-events-none transition-all cursor-pointer flex items-center gap-1"
                 >
-                  <span>التالي</span>
+                  <span>{t('vx.next')}</span>
                   <ChevronLeft className="w-4 h-4" />
                 </button>
               </div>
@@ -482,7 +485,7 @@ export const VocabularyExplorer: React.FC = () => {
           />
           <div className="relative w-full max-w-lg bg-[#121124] border-t border-white/15 rounded-t-3xl p-6 space-y-5 text-right shadow-2xl max-h-[85vh] overflow-y-auto">
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-black text-white">فلاتر البحث</h3>
+              <h3 className="text-base font-black text-white">{t('vx.searchFilters')}</h3>
               <button
                 onClick={() => setIsFilterSheetOpen(false)}
                 className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 cursor-pointer"
@@ -492,7 +495,7 @@ export const VocabularyExplorer: React.FC = () => {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">الحرف الأول</label>
+              <label className="text-xs font-bold text-white/60">{t('vx.firstLetter')}</label>
               <div dir="ltr" className="flex flex-wrap gap-1.5 justify-end">
                 <button
                   onClick={() => {
@@ -527,7 +530,7 @@ export const VocabularyExplorer: React.FC = () => {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">نوع الكلمة</label>
+              <label className="text-xs font-bold text-white/60">{t('vx.posLabel')}</label>
               <div className="flex flex-wrap gap-1.5">
                 {POS_OPTIONS.map(p => (
                   <button
@@ -542,14 +545,14 @@ export const VocabularyExplorer: React.FC = () => {
                         : 'bg-white/5 text-white/70 hover:bg-white/10 border-white/5'
                     }`}
                   >
-                    {p.label}
+                    {t(p.label)}
                   </button>
                 ))}
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">المجال</label>
+              <label className="text-xs font-bold text-white/60">{t('vx.domainLabel')}</label>
               <select
                 value={selectedDomain}
                 onChange={e => setSelectedDomain(e.target.value)}
@@ -557,14 +560,14 @@ export const VocabularyExplorer: React.FC = () => {
               >
                 {DOMAIN_OPTIONS.map(d => (
                   <option key={d.id} value={d.id} className="bg-[#121124] text-white">
-                    {d.label}
+                    {t(d.label)}
                   </option>
                 ))}
               </select>
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">درجة الشيوع</label>
+              <label className="text-xs font-bold text-white/60">{t('vx.freqLabel')}</label>
               <select
                 value={selectedFrequency}
                 onChange={e => setSelectedFrequency(e.target.value)}
@@ -572,14 +575,14 @@ export const VocabularyExplorer: React.FC = () => {
               >
                 {FREQUENCY_OPTIONS.map(f => (
                   <option key={f.id} value={f.id} className="bg-[#121124] text-white">
-                    {f.label}
+                    {t(f.label)}
                   </option>
                 ))}
               </select>
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">الترتيب</label>
+              <label className="text-xs font-bold text-white/60">{t('vx.sortLabel')}</label>
               <select
                 value={sortBy}
                 onChange={e => setSortBy(e.target.value as any)}
@@ -587,7 +590,7 @@ export const VocabularyExplorer: React.FC = () => {
               >
                 {SORT_OPTIONS.map(s => (
                   <option key={s.id} value={s.id} className="bg-[#121124] text-white">
-                    {s.label}
+                    {t(s.label)}
                   </option>
                 ))}
               </select>
