@@ -1199,12 +1199,12 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
       <AnimatePresence>
         {selectedLocation && (
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={false}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md overflow-y-auto"
           >
-            <div className="w-full max-w-2xl max-h-[90dvh] overflow-y-auto rounded-3xl bg-linear-to-b from-[#1b1939] to-[#0c0b20] border border-white/20 p-6 sm:p-8 space-y-6 shadow-2xl relative text-right">
+            <div className="w-full max-w-2xl max-h-[90dvh] overflow-y-auto rounded-3xl bg-[#0c0b20] bg-linear-to-b from-[#1b1939] to-[#0c0b20] border border-white/20 p-6 sm:p-8 space-y-6 shadow-2xl relative text-right">
               
               {/* Close Button */}
               <button
@@ -1221,7 +1221,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
                 </div>
                 <div>
                   <div className="text-xs font-bold text-[#ffd166]">{selectedLocation.category}</div>
-                  <h3 className="text-2xl font-black text-white">{selectedLocation.nameAr}</h3>
+                  <h3 className="text-2xl font-black text-white">{t(selectedLocation.nameAr)}</h3>
                   <div className="text-xs font-mono text-[#b9b6d5]">{selectedLocation.nameEn}</div>
                 </div>
               </div>
