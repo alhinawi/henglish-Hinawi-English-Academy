@@ -8,14 +8,20 @@ for (const report of reports) {
   assert(!ids.has(report.youtubeId), `Duplicate source ${report.youtubeId}`); ids.add(report.youtubeId);
   assert.equal(report.sourceUrl, `https://www.youtube.com/watch?v=${report.youtubeId}`);
   assert.equal(report.completeTranscript, false);
-  const approved = report.reviewStatus === 'reviewed_excerpts' && report.remainingWork.length === 0 &&
-    !report.newOpeningExcerpts.some(c => /transcriber:|reviewer:|captioned by|subtitles by/i.test(c.en)) &&
-    report.existingCueCorrections.length > 0 && report.existingCueCorrections.every(c => (c.matchScore ?? 0) >= 0.8) &&
-    report.durationSeconds > 0;
+  const normalise = text => text.toLowerCase().replace(/’/g, "'").replace(/[^a-z0-9 ]/g, '').split(/\s+/).filter(Boolean).join(' ');
+  const publishedCues = [...report.newOpeningExcerpts, ...report.existingCueCorrections];
+  const approved = report.completeSceneTranscript === true && report.sceneStart >= 0 && report.sceneEnd > report.sceneStart && report.sceneEnd <= report.durationSeconds && report.captionEvidenceChecked === true && report.reviewStatus === 'reviewed_excerpts' && report.remainingWork.length === 0 &&
+    !report.newOpeningExcerpts.some(c => /transcriber:|reviewer:|captioned by|subtitles by/i.test(c.en)) && publishedCues.length > 0 &&
+    report.existingCueCorrections.every(c => (c.matchScore ?? 0) >= 0.8) && report.durationSeconds > 0 &&
+    publishedCues.every(c => c.captionEvidence && c.captionEvidence.sourceUrl === report.sourceUrl && c.start === c.captionEvidence.start && c.end === c.captionEvidence.end && c.captionEvidence.rawCaptionText === c.en && normalise(c.en).length > 0);
   if (!approved) { held++; continue; }
   published++; cues += report.existingCueCorrections.length; openings += report.newOpeningExcerpts.length;
   assert(report.evidence.method);
-  assert(report.newOpeningExcerpts.reduce((sum, c) => sum + c.en.length, 0) <= 90);
+  const ordered = [...publishedCues].sort((a,b) => a.start-b.start);
+  assert.equal(ordered[0].start, report.sceneStart);
+  assert.equal(ordered.at(-1).end, report.sceneEnd);
+  assert(ordered.every((c,i) => i === 0 || c.start === ordered[i-1].end));
+  assert(publishedCues.reduce((sum, c) => sum + c.en.length, 0) <= 90);
   for (const cue of [...report.newOpeningExcerpts, ...report.existingCueCorrections]) {
     assert(cue.reviewed && cue.en.trim() && cue.arEg.trim() && cue.arFusha.trim());
     assert(Number.isFinite(cue.start) && cue.start >= 0 && cue.start < cue.end && cue.end <= report.durationSeconds);
