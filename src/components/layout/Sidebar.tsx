@@ -143,8 +143,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   label: 'المستقبل التام ',
                   labelEn: 'Future Perfect',
                   route: 'courses/grammar/future-perfect',
-                  badge: 'ماستر كلاس ',
-                  isFlagship: true,
+                  
+                  
                 },
                 {
                   label: 'المستقبل البسيط (Will)',
@@ -213,7 +213,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Vocabulary Academy',
           route: 'vocabulary',
           icon: BookA,
-          badge: 'V1-V3',
+          
         },
         {
           label: 'أكاديمية المحادثة',
@@ -264,21 +264,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
           labelEn: 'Movie Studio',
           route: 'movies' as PageRoute,
           icon: Film,
-          badge: 'ستوديو AI',
+          
         },
         {
-          label: 'ترجمة (استوديو AI) ',
+          label: 'استوديو الترجمة',
           labelEn: 'Translation',
           route: 'translation' as PageRoute,
           icon: Languages,
-          badge: 'AI رائد',
+          
         },
         {
-          label: 'المعلم الذكي AI ',
-          labelEn: 'AI English Tutor',
+          label: 'مساعد التعلم',
+          labelEn: 'Learning Assistant',
           route: 'ai-tutor' as PageRoute,
           icon: Bot,
-          badge: 'وكيل AI',
+          
         },
         {
           label: 'العالم الافتراضي 3D ',
