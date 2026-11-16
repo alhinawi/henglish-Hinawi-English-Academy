@@ -2605,5 +2605,19 @@
   "ab.gradAlt": "Illustrative graduation image",
   "wc.remove": "Remove saved word",
   "wc.save": "Save word",
-  "wc.details": "Full details"
+  "wc.details": "Full details",
+  "as.best": "Best score",
+  "as.start": "Start playing",
+  "as.back": "Back to games",
+  "as.quit": "Quit",
+  "as.record": "New best score!",
+  "as.finished": "Round complete!",
+  "as.yourScore": "Your score",
+  "as.roundXp": "Round XP",
+  "as.replay": "Play again",
+  "as.games": "Games hub",
+  "as.playCount": "Times played: {count}",
+  "as.round": "Round {round} of {total}",
+  "as.seconds": "{count} s",
+  "as.points": "{count} points"
 }

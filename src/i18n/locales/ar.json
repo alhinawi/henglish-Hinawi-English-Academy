@@ -2605,5 +2605,19 @@
   "ab.gradAlt": "صورة توضيحية للتخرج",
   "wc.remove": "إزالة من المحفوظات",
   "wc.save": "حفظ الكلمة",
-  "wc.details": "التفاصيل الكاملة"
+  "wc.details": "التفاصيل الكاملة",
+  "as.best": "أفضل نتيجة",
+  "as.start": "ابدأ اللعب",
+  "as.back": "رجوع لمركز الألعاب",
+  "as.quit": "خروج",
+  "as.record": "رقم قياسي جديد!",
+  "as.finished": "خلصت الجولة!",
+  "as.yourScore": "نتيجتك",
+  "as.roundXp": "XP الجولة",
+  "as.replay": "العب تاني",
+  "as.games": "مركز الألعاب",
+  "as.playCount": "عدد مرات اللعب: {count}",
+  "as.round": "جولة {round} من {total}",
+  "as.seconds": "{count} ث",
+  "as.points": "{count} نقطة"
 }
