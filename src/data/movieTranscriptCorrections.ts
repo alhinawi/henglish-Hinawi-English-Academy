@@ -1,4 +1,4 @@
-import reviewReports from './movieReviews/shards123.json';
+import reviewReports from './movieReviews/captionReviews.json';
 import { canPublishCaptionReview, captionReviewCues, type CaptionReviewRecord } from './movieReviews/reviewAdapter';
 import type { MovieSceneItem, TimedSubtitle } from './movieScenesData';
 

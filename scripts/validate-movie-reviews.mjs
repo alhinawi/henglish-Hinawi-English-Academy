@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
-const reports = JSON.parse(fs.readFileSync(new URL('../src/data/movieReviews/shards123.json', import.meta.url)));
+const reports = JSON.parse(fs.readFileSync(new URL('../src/data/movieReviews/captionReviews.json', import.meta.url)));
 const ids = new Set();
 let published = 0, held = 0, cues = 0, openings = 0;
 for (const report of reports) {
@@ -21,6 +21,6 @@ for (const report of reports) {
     assert(Number.isFinite(cue.start) && cue.start >= 0 && cue.start < cue.end && cue.end <= report.durationSeconds);
   }
 }
-assert.equal(reports.length, 171); assert.equal(published, 8); assert.equal(held, 163);
+assert.equal(reports.length, 285); assert.equal(published, 8); assert.equal(held, 277);
 console.log({ records: reports.length, publishedCaptionReviewedSources: published, heldSources: held, correctedExistingCues: cues, briefOpeningExcerpts: openings });
 console.log('PASS: structure/publication gate. Caption review is not waveform verification or a complete transcript.');
