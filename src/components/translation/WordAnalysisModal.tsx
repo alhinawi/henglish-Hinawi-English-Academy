@@ -3,6 +3,7 @@
 // Detailed phonetic, morphological, and lexical analysis for any clicked word
 // ==============================================================================
 
+import { vocabularyCollectionLabel } from '../../services/vocabularyCollectionLabel';
 import React, { useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { WordAnalysisDetail, VocabularyCollection } from '../../types/translation';
@@ -202,7 +203,7 @@ export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = ({
                   <option value="">{t('wam.noCollection')}</option>
                   {collections.map(col => (
                     <option key={col.id} value={col.id}>
-                      {col.nameAr} ({col.name})
+                      {vocabularyCollectionLabel(col, t, true)}
                     </option>
                   ))}
                 </select>
