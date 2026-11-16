@@ -1,0 +1,1 @@
+{"محادثة جديدة":"گفتگوی جدید","محادثة جديدة (${new Date().toLocaleDateString('ar-EG-u-nu-latn', { month: 'short', day: 'numeric' })})":"مکالمه جدید (${new Date().toLocaleDateString('ar-EG-u-nu-latn', { month: 'short', day: 'numeric' })})"}
