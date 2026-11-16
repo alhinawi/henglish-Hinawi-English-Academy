@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { ALL_GRAMMAR_RULES, GrammarRuleItem } from '../data/allGrammarRules';
-import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { ONLINE_IMAGES } from '../data/imageAssets';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound } from '../utils/audio';
 import { 
-  Sparkles, 
   Search, 
   BookOpen, 
-  Volume2, 
-  CheckCircle2, 
-  AlertTriangle,
-  Lightbulb, 
-  ChevronDown, 
   Filter, 
   ArrowRight,
   GraduationCap
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
 
 interface GrammarAcademyPageProps {
   onNavigate: (route: PageRoute, lessonId?: string) => void;
@@ -27,8 +19,6 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
   const [selectedLevel, setSelectedLevel] = useState<string>('All');
-  const [expandedRuleId, setExpandedRuleId] = useState<string | null>('present-simple');
-  const [quizAnswers, setQuizAnswers] = useState<Record<string, number>>({});
 
   const categories = [
     'All',
@@ -57,24 +47,6 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
     return matchesCategory && matchesLevel && matchesSearch;
   });
 
-  const handleAnswerMiniQuiz = (ruleId: string, qIdx: number, selectedOpt: number, correctOpt: number) => {
-    const key = `${ruleId}-${qIdx}`;
-    if (quizAnswers[key] !== undefined) return;
-
-    setQuizAnswers(prev => ({ ...prev, [key]: selectedOpt }));
-    if (selectedOpt === correctOpt) {
-      playSound('correct');
-      fireCelebration();
-    } else {
-      playSound('wrong');
-    }
-  };
-
-  const toggleExpand = (id: string) => {
-    playSound('click');
-    setExpandedRuleId(prev => prev === id ? null : id);
-  };
-
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       
@@ -93,7 +65,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
         <div className="relative z-10 max-w-3xl space-y-5">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm">
             <GraduationCap className="w-4 h-4" />
-            <span>HINAWI GRAMMAR ACADEMY • المنهج الأكاديمي الشامل</span>
+            <span>HENGLISH GRAMMAR ACADEMY • المنهج الأكاديمي الشامل</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
@@ -202,21 +174,19 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           </div>
         ) : (
           filteredRules.map((rule: GrammarRuleItem) => {
-            const isExpanded = expandedRuleId === rule.id;
-
             return (
               <div 
                 key={rule.id}
                 id={rule.id}
-                className={`glass-panel rounded-3xl border transition-all overflow-hidden ${
-                  isExpanded 
-                    ? 'border-[#41e7ff]/40 shadow-[0_0_30px_rgba(65,231,255,0.1)] ring-1 ring-[#41e7ff]/20' 
-                    : 'border-white/10 hover:border-white/20'
-                }`}
+                className="glass-panel rounded-3xl border border-white/10 hover:border-[#41e7ff]/40 hover:shadow-[0_0_30px_rgba(65,231,255,0.08)] transition-all overflow-hidden"
               >
-                {/* Rule Card Header Banner with Real Online Photo */}
+                {/* Rule Card - tapping anywhere opens the full lesson on its own page */}
                 <div 
-                  onClick={() => toggleExpand(rule.id)}
+                  onClick={() => {
+                    playSound('click');
+                    sessionStorage.setItem('henglish:grammarScrollY', String(window.scrollY));
+                    onNavigate('grammar-lesson', rule.id);
+                  }}
                   className="cursor-pointer relative overflow-hidden"
                 >
                   <div className="flex flex-col md:flex-row items-stretch">
@@ -247,8 +217,8 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                           </div>
 
                           <span className="text-xs text-[#b9b6d5] font-semibold flex items-center gap-1">
-                            {isExpanded ? 'اضغط للطي' : 'اضغط للتفاصيل والتمرين'}
-                            <ChevronDown className={`w-4 h-4 transition-transform ${isExpanded ? 'rotate-180 text-[#41e7ff]' : ''}`} />
+                            <span>اضغط لدخول الدرس</span>
+                            <ArrowRight className="w-4 h-4 rotate-180 text-[#41e7ff]" />
                           </span>
                         </div>
 
@@ -278,6 +248,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                             onClick={(e) => {
                               e.stopPropagation();
                               playSound('click');
+                              sessionStorage.setItem('henglish:grammarScrollY', String(window.scrollY));
                               window.location.hash = `grammar/${rule.id}`;
                               onNavigate('grammar-lesson', rule.id);
                             }}
@@ -305,253 +276,6 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                   </div>
                 </div>
 
-                {/* EXPANDABLE DEEP DIVE SECTION */}
-                <AnimatePresence>
-                  {isExpanded && (
-                    <motion.div
-                      initial={{ opacity: 0, height: 0 }}
-                      animate={{ opacity: 1, height: 'auto' }}
-                      exit={{ opacity: 0, height: 0 }}
-                      className="border-t border-white/10 p-6 sm:p-8 bg-[#09091a]/60 space-y-8"
-                    >
-                      {/* Flagship Future Perfect Masterclass Integrated Hub */}
-                      {rule.id === 'future-perfect' && (
-                        <div className="p-6 rounded-3xl bg-linear-to-r from-[#ffd166]/15 via-[#ff9c66]/10 to-[#41e7ff]/15 border-2 border-[#ffd166]/40 space-y-4 shadow-xl">
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                            <div>
-                              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 mb-2">
-                                <Sparkles className="w-3.5 h-3.5" />
-                                <span>ماستر كلاس المستقبل التام الشامل (Future Perfect Masterclass)</span>
-                              </div>
-                              <h4 className="text-lg font-black text-white">
-                                مسار الماستر كلاس المتكامل المدمج (٨ موديولات تفاعلية)
-                              </h4>
-                              <p className="text-xs text-[#dedbf4]">
-                                تم دمج كورس المستقبل التام رسمياً داخل أكاديمية الجرامر (أزمنة المستقبل). يمكنك دراسة القاعدة الملخصة هنا أو فتح أي موديول من موديولات الماستر كلاس:
-                              </p>
-                            </div>
-
-                            <button
-                              onClick={() => {
-                                playSound('click');
-                                onNavigate('courses/grammar/future-perfect');
-                              }}
-                              className="px-5 py-2.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] text-xs font-black hover:brightness-110 shadow-lg cursor-pointer transition-transform shrink-0 flex items-center gap-1.5"
-                            >
-                              <span>فتح نظرة عامة على الكورس </span>
-                              <ArrowRight className="w-4 h-4 rotate-180" />
-                            </button>
-                          </div>
-
-                          {/* 8 Flagship Interactive Lessons Grid */}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 pt-2">
-                            {FUTURE_PERFECT_LESSONS.map((l) => (
-                              <button
-                                key={l.id}
-                                onClick={() => {
-                                  playSound('click');
-                                  onNavigate('lesson', l.id);
-                                }}
-                                className="p-3 rounded-2xl bg-black/40 hover:bg-black/60 border border-white/10 hover:border-[#ffd166]/50 text-right cursor-pointer transition-all group"
-                              >
-                                <div className="flex items-center justify-between mb-1">
-                                  <span className="text-[10px] font-black text-[#ffd166] bg-[#ffd166]/10 px-2 py-0.5 rounded-md">
-                                    الدرس 0{l.number}
-                                  </span>
-                                  <span className="text-[10px] text-[#dedbf4]/60 font-semibold">{l.readTime}</span>
-                                </div>
-                                <div className="text-xs font-black text-white group-hover:text-[#41e7ff] transition-colors truncate">
-                                  {l.title}
-                                </div>
-                                <div className="text-[11px] text-[#dedbf4]/70 truncate mt-0.5">
-                                  {l.subtitle}
-                                </div>
-                              </button>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Formulas Breakdown */}
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                        <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
-                          <span className="text-xs font-bold text-[#c4ff55] block mb-1">الإثبات (Affirmative):</span>
-                          <code className="en text-xs sm:text-sm font-black text-white">{rule.goldenFormula}</code>
-                        </div>
-                        <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
-                          <span className="text-xs font-bold text-[#ff4f9a] block mb-1">النفي (Negative):</span>
-                          <code className="en text-xs sm:text-sm font-black text-white">{rule.negativeFormula}</code>
-                        </div>
-                        <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
-                          <span className="text-xs font-bold text-[#41e7ff] block mb-1">السؤال (Interrogative):</span>
-                          <code className="en text-xs sm:text-sm font-black text-white">{rule.questionFormula}</code>
-                        </div>
-                      </div>
-
-                      {/* Timeline & Usage */}
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        {/* Usage Points */}
-                        <div className="space-y-3">
-                          <h4 className="text-sm font-black text-white flex items-center gap-2">
-                            <BookOpen className="w-4 h-4 text-[#ffd166]" />
-                            <span>متى نستخدم هذه القاعدة بالتحديد؟</span>
-                          </h4>
-                          <ul className="space-y-2 text-xs sm:text-sm text-[#dedbf4]">
-                            {rule.keyUsagePoints.map((pt, pIdx) => (
-                              <li key={pIdx} className="flex items-start gap-2">
-                                <span className="w-1.5 h-1.5 rounded-full bg-[#41e7ff] mt-2 shrink-0" />
-                                <span>{pt}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Egyptian Tips & Secret */}
-                        <div className="p-5 rounded-2xl bg-linear-to-br from-[#ffd166]/10 to-[#ff4f9a]/10 border border-[#ffd166]/30 space-y-3">
-                          <h4 className="text-sm font-black text-[#ffd166] flex items-center gap-2">
-                            <Sparkles className="w-4 h-4 text-[#ffd166]" />
-                            <span>سر فهم القاعدة بالمصري:</span>
-                          </h4>
-                          <ul className="space-y-2 text-xs sm:text-sm text-white leading-relaxed">
-                            {rule.egyptianTips.map((tip, tIdx) => (
-                              <li key={tIdx} className="flex items-start gap-2">
-                                <Lightbulb className="w-4 h-4 mt-0.5 shrink-0 text-[#ffd166]" />
-                                <span>{tip}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-
-                      {/* Common Traps Callout */}
-                      {rule.commonTraps.length > 0 && (
-                        <div className="p-4 rounded-2xl bg-[#ff4f9a]/10 border border-[#ff4f9a]/30 space-y-2">
-                          <div className="flex items-center gap-2 text-xs font-black text-[#ff4f9a]">
-                            <AlertTriangle className="w-4 h-4" />
-                            <span>فخاخ شائعة يقع فيها الكثيرون (احذر منها!):</span>
-                          </div>
-                          <ul className="space-y-1.5 text-xs text-[#dedbf4]">
-                            {rule.commonTraps.map((trap, trapIdx) => (
-                              <li key={trapIdx} className="flex items-start gap-2">
-                                <AlertTriangle className="w-3.5 h-3.5 mt-0.5 shrink-0 text-[#ff4f9a]" />
-                                <span>{trap}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-
-                      {/* Audio Examples */}
-                      <div className="space-y-3">
-                        <h4 className="text-sm font-black text-white flex items-center gap-2">
-                          <Volume2 className="w-4 h-4 text-[#41e7ff]" />
-                          <span>أمثلة واقعية ونطق صوتي مباشر:</span>
-                        </h4>
-
-                        <div className="space-y-2.5">
-                          {rule.examples.map((ex, exIdx) => (
-                            <div 
-                              key={exIdx} 
-                              className="p-4 rounded-2xl bg-[#171632] border border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3"
-                            >
-                              <div>
-                                <div className="flex items-center gap-2">
-                                  <span className="text-[10px] font-bold px-2 py-0.5 rounded bg-white/5 text-[#b9b6d5]">
-                                    {ex.context}
-                                  </span>
-                                </div>
-                                <p className="en text-base sm:text-lg font-bold text-white mt-1">
-                                  {ex.en}
-                                </p>
-                                <p className="text-xs sm:text-sm text-[#b9b6d5] mt-1">
-                                  {ex.ar}
-                                </p>
-                              </div>
-
-                              <button
-                                onClick={() => {
-                                  playSound('click');
-                                  speakEnglish(ex.en);
-                                }}
-                                className="p-2.5 rounded-xl bg-white/5 hover:bg-white/15 text-[#41e7ff] hover:text-white transition-colors cursor-pointer shrink-0 self-start sm:self-center flex items-center gap-1.5 text-xs font-bold"
-                                title="استمع للنطق الصوتي"
-                              >
-                                <Volume2 className="w-4 h-4" />
-                                <span>نطق</span>
-                              </button>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-
-                      {/* Mini Quiz */}
-                      {rule.miniQuiz.length > 0 && (
-                        <div className="p-5 sm:p-6 rounded-2xl bg-[#09091a] border border-[#ffd166]/30 space-y-4">
-                          <div className="flex items-center gap-2 text-xs font-black text-[#ffd166]">
-                            <Sparkles className="w-4 h-4" />
-                            <span>كويز استيعاب سريع على هذه القاعدة:</span>
-                          </div>
-
-                          {rule.miniQuiz.map((q, qIdx) => {
-                            const qKey = `${rule.id}-${qIdx}`;
-                            const answered = quizAnswers[qKey] !== undefined;
-                            const chosen = quizAnswers[qKey];
-                            const isCorrect = chosen === q.correct;
-
-                            return (
-                              <div key={qIdx} className="space-y-3">
-                                <p className="en text-sm sm:text-base font-bold text-white">
-                                  {q.question}
-                                </p>
-
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                  {q.options.map((opt, optIdx) => {
-                                    let btnStyle = 'bg-[#171632] hover:bg-[#201d43] border-white/10 text-white';
-                                    if (answered) {
-                                      if (optIdx === q.correct) {
-                                        btnStyle = 'bg-[#c4ff55]/20 border-[#c4ff55] text-[#c4ff55] font-black';
-                                      } else if (chosen === optIdx) {
-                                        btnStyle = 'bg-[#ff4f9a]/20 border-[#ff4f9a] text-[#ff4f9a]';
-                                      } else {
-                                        btnStyle = 'opacity-40 bg-[#171632] border-white/5';
-                                      }
-                                    }
-
-                                    return (
-                                      <button
-                                        key={optIdx}
-                                        onClick={() => handleAnswerMiniQuiz(rule.id, qIdx, optIdx, q.correct)}
-                                        disabled={answered}
-                                        className={`en p-3 rounded-xl border text-xs sm:text-sm font-bold text-left transition-all cursor-pointer flex items-center justify-between ${btnStyle}`}
-                                      >
-                                        <span>{opt}</span>
-                                        {answered && optIdx === q.correct && (
-                                          <CheckCircle2 className="w-4 h-4 text-[#c4ff55]" />
-                                        )}
-                                      </button>
-                                    );
-                                  })}
-                                </div>
-
-                                {answered && (
-                                  <div className={`p-3 rounded-xl text-xs ${
-                                    isCorrect 
-                                      ? 'bg-[#c4ff55]/10 border border-[#c4ff55]/30 text-[#c4ff55]' 
-                                      : 'bg-[#ff4f9a]/10 border border-[#ff4f9a]/30 text-[#ff8bb9]'
-                                  }`}>
-                                    <strong className="text-[#ffd166]">{isCorrect ? 'إجابة رائعة: ' : 'انتبه: '}</strong>
-                                    {q.explanation}
-                                  </div>
-                                )}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-
-                    </motion.div>
-                  )}
-                </AnimatePresence>
               </div>
             );
           })
