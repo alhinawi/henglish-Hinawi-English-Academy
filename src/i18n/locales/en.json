@@ -2709,5 +2709,12 @@
   "pr.us": "Listen to American pronunciation (US)",
   "pr.uk": "Listen to British pronunciation (UK)",
   "lc.wrong": "Incorrect",
-  "lc.correct": "Correct"
+  "lc.correct": "Correct",
+  "cv.title": "Verify a completion certificate",
+  "cv.loading": "Checking the issuance record...",
+  "cv.registered": "Certificate issued and registered on the server",
+  "cv.summary": "Level {level} • Score {score}% • {date}",
+  "cv.disclaimer": "This records completion of Henglish courses and assessments. It is not external accreditation or an identity-proctored exam.",
+  "cv.unverified": "The code is invalid, the certificate was not found, or the verification service is unavailable. The certificate cannot be confirmed.",
+  "cv.back": "Back to the academy"
 }
