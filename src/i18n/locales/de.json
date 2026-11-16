@@ -2356,5 +2356,20 @@
   "mvt.exploreCta": "Wortbank jetzt erkunden",
   "mvt.deleteTitle": "Aus Gespeicherten entfernen",
   "mvt.repetition": "Wiederholungen:",
-  "mvt.note": "Notiz:"
+  "mvt.note": "Notiz:",
+  "qe.defaultTitle": "Umfassendes interaktives Quiz",
+  "qe.diffBeginner": "Anfänger",
+  "qe.diffIntermediate": "Mittelstufe",
+  "qe.diffAdvanced": "Fortgeschritten",
+  "qe.score": "Punktestand:",
+  "qe.reset": "Quiz zurücksetzen",
+  "qe.question": "Frage",
+  "qe.of": "von",
+  "qe.listenQuestion": "Frage anhören (Audio)",
+  "qe.goToQuestion": "Zu Frage",
+  "qe.correct": "Richtig, sehr gut!",
+  "qe.wrong": "Das ist nicht die richtige Antwort.",
+  "qe.explanationLabel": "Erklärung auf Ägyptisch-Arabisch:",
+  "qe.prevQuestion": "Vorherige Frage",
+  "qe.nextQuestion": "Nächste Frage"
 }

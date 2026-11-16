@@ -3,6 +3,7 @@ import { QuizQuestion } from '../types';
 import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
 import { CheckCircle2, XCircle, RotateCcw, Volume2, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface QuizEngineProps {
   questions: QuizQuestion[];
@@ -12,9 +13,11 @@ interface QuizEngineProps {
 
 export const QuizEngine: React.FC<QuizEngineProps> = ({
   questions,
-  quizTitle = 'اختبار تفاعلي شامل',
+  quizTitle,
   onComplete,
 }) => {
+  const { t } = useLanguage();
+  const resolvedQuizTitle = quizTitle ?? t('qe.defaultTitle');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [showExplanation, setShowExplanation] = useState<Record<number, boolean>>({});
@@ -83,17 +86,17 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
                 ? 'bg-[#ffd166]/15 text-[#ffd166]'
                 : 'bg-[#ff4f9a]/15 text-[#ff4f9a]'
             }`}>
-              {currentQ.difficulty === 'beginner' ? 'مبتدئ' : currentQ.difficulty === 'intermediate' ? 'متوسط' : 'متقدم'}
+              {currentQ.difficulty === 'beginner' ? t('qe.diffBeginner') : currentQ.difficulty === 'intermediate' ? t('qe.diffIntermediate') : t('qe.diffAdvanced')}
             </span>
           </div>
-          <h3 className="text-xl font-black text-white">{quizTitle}</h3>
+          <h3 className="text-xl font-black text-white">{resolvedQuizTitle}</h3>
         </div>
 
         {/* Score & Controls */}
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#09091a] border border-white/10">
             <Award className="w-4 h-4 text-[#ffd166]" />
-            <span className="text-xs text-[#b9b6d5] font-bold">النتيجة:</span>
+            <span className="text-xs text-[#b9b6d5] font-bold">{t('qe.score')}</span>
             <span className="text-sm font-black text-[#ffd166]">{score}</span>
             <span className="text-xs text-[#b9b6d5]">/ {questions.length}</span>
           </div>
@@ -101,7 +104,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           <button
             onClick={handleReset}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-[#dedbf4] hover:text-white transition-colors cursor-pointer"
-            title="إعادة تعيين الاختبار"
+            title={t('qe.reset')}
           >
             <RotateCcw className="w-4 h-4" />
           </button>
@@ -110,13 +113,13 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
 
       {/* Question Counter Indicator */}
       <div className="flex items-center justify-between text-xs text-[#b9b6d5] mb-4">
-        <span>السؤال {currentIndex + 1} من {questions.length}</span>
+        <span>{t('qe.question')} {currentIndex + 1} {t('qe.of')} {questions.length}</span>
         <button
           onClick={() => speakEnglish(currentQ.question)}
           className="inline-flex items-center gap-1.5 text-[#41e7ff] hover:underline cursor-pointer font-bold"
         >
           <Volume2 className="w-4 h-4" />
-          <span>استمع للسؤال (Audio)</span>
+          <span>{t('qe.listenQuestion')}</span>
         </button>
       </div>
 
@@ -145,7 +148,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
                     : 'bg-[#ff4f9a]'
                   : 'bg-white/15 hover:bg-white/30'
               }`}
-              title={`الانتقال للسؤال ${idx + 1}`}
+              title={`${t('qe.goToQuestion')} ${idx + 1}`}
             />
           );
         })}
@@ -220,13 +223,13 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           >
             <div className="flex items-center gap-2 mb-1.5 font-bold">
               {isCorrect ? (
-                <span className="text-[#c4ff55]">إجابة صحيحة وممتازة!</span>
+                <span className="text-[#c4ff55]">{t('qe.correct')}</span>
               ) : (
-                <span className="text-[#ff4f9a]">مش دي الإجابة الصحيحة.</span>
+                <span className="text-[#ff4f9a]">{t('qe.wrong')}</span>
               )}
             </div>
             <p className="text-sm">
-              <strong className="text-white">التفسير بالمصري: </strong>
+              <strong className="text-white">{t('qe.explanationLabel')} </strong>
               {currentQ.explanation}
             </p>
           </motion.div>
@@ -244,7 +247,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 disabled:opacity-30 disabled:cursor-not-allowed text-xs sm:text-sm font-bold text-[#dedbf4] transition-colors cursor-pointer"
         >
           <ChevronRight className="w-4 h-4" />
-          <span>السؤال السابق</span>
+          <span>{t('qe.prevQuestion')}</span>
         </button>
 
         <button
@@ -255,7 +258,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           disabled={currentIndex === questions.length - 1}
           className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] disabled:opacity-30 disabled:cursor-not-allowed text-xs sm:text-sm font-black text-[#21132c] hover:brightness-110 shadow-md transition-all cursor-pointer"
         >
-          <span>السؤال التالي</span>
+          <span>{t('qe.nextQuestion')}</span>
           <ChevronLeft className="w-4 h-4" />
         </button>
       </div>
