@@ -4,6 +4,7 @@ import { QuestionBankPanel } from '../components/QuestionBankPanel';
 import { QuizEngine } from '../components/QuizEngine';
 import { QuizQuestion } from '../types';
 import { playSound, fireCelebration } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 import { Sparkles, Filter, Brain, RefreshCw, Zap, BookOpen, Layers } from 'lucide-react';
 
 interface QuizzesPageProps {
@@ -11,21 +12,22 @@ interface QuizzesPageProps {
 }
 
 const GRAMMAR_TOPICS = [
-  { id: 'future-perfect', label: 'المستقبل التام (Future Perfect)' },
-  { id: 'present-simple', label: 'المضارع البسيط (Present Simple)' },
-  { id: 'present-continuous', label: 'المضارع المستمر (Present Continuous)' },
-  { id: 'present-perfect', label: 'المضارع التام (Present Perfect)' },
-  { id: 'past-simple', label: 'الماضي البسيط (Past Simple)' },
-  { id: 'past-continuous', label: 'الماضي المستمر (Past Continuous)' },
-  { id: 'past-perfect', label: 'الماضي التام (Past Perfect)' },
-  { id: 'conditionals', label: 'الحالات الشرطية (Conditionals)' },
-  { id: 'passive-voice', label: 'المبني للمجهول (Passive Voice)' },
-  { id: 'reported-speech', label: 'الكلام المنقول (Reported Speech)' },
-  { id: 'modals', label: 'الأفعال الناقصة (Modal Verbs)' },
-  { id: 'phrasal-verbs', label: 'الأفعال المركبة (Phrasal Verbs)' },
+  { id: 'future-perfect', labelKey: 'qz.topicFuturePerfect' },
+  { id: 'present-simple', labelKey: 'qz.topicPresentSimple' },
+  { id: 'present-continuous', labelKey: 'qz.topicPresentContinuous' },
+  { id: 'present-perfect', labelKey: 'qz.topicPresentPerfect' },
+  { id: 'past-simple', labelKey: 'qz.topicPastSimple' },
+  { id: 'past-continuous', labelKey: 'qz.topicPastContinuous' },
+  { id: 'past-perfect', labelKey: 'qz.topicPastPerfect' },
+  { id: 'conditionals', labelKey: 'qz.topicConditionals' },
+  { id: 'passive-voice', labelKey: 'qz.topicPassiveVoice' },
+  { id: 'reported-speech', labelKey: 'qz.topicReportedSpeech' },
+  { id: 'modals', labelKey: 'qz.topicModals' },
+  { id: 'phrasal-verbs', labelKey: 'qz.topicPhrasalVerbs' },
 ];
 
 export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<'static' | 'ai'>('static');
   const [filterDifficulty, setFilterDifficulty] = useState<string>('all');
 
@@ -77,7 +79,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
         question: q.prompt,
         options: q.options,
         answer: q.correctAnswerIndex ?? 0,
-        explanation: q.explanationAr + (q.distractorNotesAr && q.distractorNotesAr.length > 0 ? '\n\nتحليل الخيارات الخاطئة:\n• ' + q.distractorNotesAr.join('\n• ') : ''),
+        explanation: q.explanationAr + (q.distractorNotesAr && q.distractorNotesAr.length > 0 ? '\n\n' + t('qz.distractorAnalysis') + '\n• ' + q.distractorNotesAr.join('\n• ') : ''),
         topic: q.topic || aiTopic,
         difficulty: q.difficulty === 'easy' ? 'beginner' : q.difficulty === 'hard' ? 'advanced' : 'intermediate',
       }));
@@ -87,7 +89,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       fireCelebration();
     } catch (err: any) {
       console.error('Quiz generation error:', err);
-      setGenerationError('تعذر تجهيز الكويز حالياً. تم استدعاء بنك الأسئلة الاحتياطي.');
+      setGenerationError(t('qz.genError'));
       playSound('wrong');
     } finally {
       setIsGenerating(false);
@@ -104,10 +106,10 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
           <span>HENGLISH DYNAMIC ASSESSMENT REPOSITORY</span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-black text-white font-['Cairo',sans-serif]">
-          بنك الاختبارات والكويزات التفاعلية
+          {t('qz.heroTitle')}
         </h1>
         <p className="text-base text-[#b9b6d5] leading-relaxed">
-          اختبر مهاراتك مع بنك الأسئلة الشامل، أو أنشئ كويزات غير محدودة وفورية مخصصة لمستواك في أي قاعدة إنجليزية.
+          {t('qz.heroBody')}
         </p>
 
         {/* Mode Switcher Tabs */}
@@ -124,7 +126,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             }`}
           >
             <Brain className="w-4 h-4" />
-            <span>كويزات مخصصة فورية</span>
+            <span>{t('qz.tabCustom')}</span>
           </button>
 
           <button
@@ -139,7 +141,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             }`}
           >
             <BookOpen className="w-4 h-4" />
-            <span>بنك الأسئلة الشامل</span>
+            <span>{t('qz.tabBank')}</span>
           </button>
         </div>
       </div>
@@ -151,61 +153,61 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             <div className="space-y-1">
               <h2 className="text-lg font-black text-white flex items-center gap-2">
                 <Zap className="w-5 h-5 text-[#c4ff55]" />
-                تخصيص الكويز الفوري
+                {t('qz.customizeTitle')}
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                اختر القاعدة والمستوى وستحصل على أسئلة فريدة مع تحليل البدائل الخاطئة وتفسيرات بالمصري.
+                {t('qz.customizeBody')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="space-y-1 sm:col-span-1">
-                <label className="text-xs font-bold text-[#dedbf4]">القاعدة النحوية المستهدفة:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('qz.topicLabel')}</label>
                 <select
                   value={aiTopic}
                   onChange={e => setAiTopic(e.target.value)}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 >
-                  {GRAMMAR_TOPICS.map(t => (
-                    <option key={t.id} value={t.id}>
-                      {t.label}
+                  {GRAMMAR_TOPICS.map(topic => (
+                    <option key={topic.id} value={topic.id}>
+                      {t(topic.labelKey)}
                     </option>
                   ))}
                 </select>
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-[#dedbf4]">المستوى المعياري CEFR:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('qz.levelLabel')}</label>
                 <select
                   value={aiLevel}
                   onChange={e => setAiLevel(e.target.value)}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 >
-                  <option value="A1">A1 - مبتدئ</option>
-                  <option value="A2">A2 - أساسي</option>
-                  <option value="B1">B1 - متوسط</option>
-                  <option value="B2">B2 - فوق المتوسط</option>
-                  <option value="C1">C1 - متقدم</option>
+                  <option value="A1">A1 - {t('qz.levelA1')}</option>
+                  <option value="A2">A2 - {t('qz.levelA2')}</option>
+                  <option value="B1">B1 - {t('qz.levelB1')}</option>
+                  <option value="B2">B2 - {t('qz.levelB2')}</option>
+                  <option value="C1">C1 - {t('qz.levelC1')}</option>
                 </select>
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-[#dedbf4]">درجة الصعوبة:</label>
+                <label className="text-xs font-bold text-[#dedbf4]">{t('qz.difficultyLabel')}</label>
                 <select
                   value={aiDifficulty}
                   onChange={e => setAiDifficulty(e.target.value as any)}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 >
-                  <option value="easy">سهل (Easy)</option>
-                  <option value="medium">متوسط (Medium)</option>
-                  <option value="hard">تحدي متقدم (Hard)</option>
+                  <option value="easy">{t('qz.diffEasy')}</option>
+                  <option value="medium">{t('qz.diffMedium')}</option>
+                  <option value="hard">{t('qz.diffHard')}</option>
                 </select>
               </div>
             </div>
 
             <div className="flex items-center justify-between flex-wrap gap-4 pt-2">
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-[#dedbf4]">عدد الأسئلة:</span>
+                <span className="text-xs font-bold text-[#dedbf4]">{t('qz.countLabel')}</span>
                 {[3, 5, 8].map(cnt => (
                   <button
                     key={cnt}
@@ -216,7 +218,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                         : 'bg-white/5 text-white hover:bg-white/10'
                     }`}
                   >
-                    {cnt} أسئلة
+                    {cnt} {t('qz.countUnit')}
                   </button>
                 ))}
               </div>
@@ -229,12 +231,12 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 {isGenerating ? (
                   <>
                     <RefreshCw className="w-4 h-4 animate-spin" />
-                    <span>جاري تجهيز الأسئلة...</span>
+                    <span>{t('qz.generating')}</span>
                   </>
                 ) : (
                   <>
                     <Sparkles className="w-4 h-4" />
-                    <span>إنشاء كويز جديد فوراً</span>
+                    <span>{t('qz.generateBtn')}</span>
                   </>
                 )}
               </button>
@@ -253,7 +255,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
               <div className="flex items-center justify-between">
                 <h3 className="text-base font-black text-white flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-[#c4ff55]" />
-                  الكويز الجاهز ({aiGeneratedQuestions.length} أسئلة)
+                  {t('qz.readyTitle')} ({aiGeneratedQuestions.length} {t('qz.countUnit')})
                 </h3>
                 <span className="text-xs text-[#c4ff55] font-mono">
                   {aiLevel} • {aiDifficulty.toUpperCase()}
@@ -263,8 +265,8 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
               <QuizEngine
                 key={`ai-quiz-${aiGeneratedQuestions.length}-${Date.now()}`}
                 questions={aiGeneratedQuestions}
-                quizTitle={`كويز تفاعلي مخصص: ${
-                  GRAMMAR_TOPICS.find(t => t.id === aiTopic)?.label || aiTopic
+                quizTitle={`${t('qz.customQuizTitle')}: ${
+                  t(GRAMMAR_TOPICS.find(topic => topic.id === aiTopic)?.labelKey || '') || aiTopic
                 }`}
                 onComplete={handleComplete}
               />
