@@ -36,7 +36,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
   };
 
   const handleGuess = (choice: 'A' | 'B') => {
-    if (!testedSound) return;
+    if (!testedSound || quizScore !== null) return;
     if (choice === testedSound) {
       playSound('correct');
       setQuizScore(1);
@@ -177,13 +177,15 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <div className="pt-2 flex items-center justify-center gap-4">
               <button
                 onClick={() => handleGuess('A')}
-                className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer"
+                disabled={quizScore !== null}
+                className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer disabled:opacity-60 disabled:cursor-default"
               >
                 {t('pa.wasLabel')} {pair.wordA} (A)
               </button>
               <button
                 onClick={() => handleGuess('B')}
-                className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer"
+                disabled={quizScore !== null}
+                className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer disabled:opacity-60 disabled:cursor-default"
               >
                 {t('pa.wasLabel')} {pair.wordB} (B)
               </button>
