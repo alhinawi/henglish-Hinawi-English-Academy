@@ -1,5 +1,6 @@
 // تحدي الاستماع - hear a real sentence and type what you heard.
 import React, { useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, shuffle, wordAccuracy, SentencePair } from '../arcadeContent';
@@ -8,13 +9,15 @@ import { playSound, speakEnglish } from '../../../utils/audio';
 
 const META: ArcadeGameMeta = {
   id: 'listening-challenge',
-  title: 'تحدي الاستماع',
-  tagline: 'اسمع الجملة واكتب اللي سمعته. 80% من الكلمات صح = نقطة. 8 جولات.',
+  title: '',
+  tagline: '',
 };
 
 const ROUNDS = 8;
 
 export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const meta = { ...META, title: t('lc.title'), tagline: t('lc.tagline') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [rounds, setRounds] = useState<SentencePair[]>([]);
@@ -64,12 +67,12 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
   };
 
   if (phase === 'intro')
-    return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
-  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">بنجهز الجمل...</div>;
+    return <ArcadeIntro meta={meta} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
+  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">{t('lc.loading')}</div>;
   if (phase === 'end' && end)
     return (
       <ArcadeEnd
-        meta={META}
+        meta={meta}
         score={score}
         xpEarned={end.xpEarned}
         newBest={end.newBest}
@@ -82,7 +85,7 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
   const r = rounds[round];
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={META.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
+      <ArcadeHud title={meta.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
       <div className="p-6 rounded-3xl bg-[#121124] border border-white/10 space-y-5 text-center">
         <button
           onClick={() => {
@@ -90,11 +93,11 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
             speak(r.en);
           }}
           className="w-20 h-20 rounded-full bg-[#9b7bff]/20 border border-[#9b7bff]/50 text-[#9b7bff] inline-flex items-center justify-center hover:bg-[#9b7bff]/30 transition-all cursor-pointer"
-          title="اسمع تاني"
+          title={t('lc.listenAgain')}
         >
           <Volume2 className="w-9 h-9" />
         </button>
-        <p className="text-xs text-[#8f8cb0]">دوس السماعة واكتب اللي سمعته بالإنجليزي</p>
+        <p className="text-xs text-[#8f8cb0]">{t('lc.hint')}</p>
         <input
           dir="ltr"
           type="text"
@@ -102,13 +105,15 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
           onChange={(e) => setTyped(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && submit()}
           disabled={!!result}
-          placeholder="Type what you heard..."
+          placeholder={t('lc.placeholder')}
+          aria-label={t('lc.hint')}
           className="w-full py-3 px-4 rounded-2xl bg-white/5 border border-white/15 text-white text-center font-bold outline-none focus:border-[#41e7ff]/60 disabled:opacity-50"
         />
         {result && (
           <div className={`text-sm font-black ${result.acc >= 0.8 ? 'text-[#c4ff55]' : 'text-rose-300'}`}>
             <div dir="ltr" className="mb-1 text-white font-bold">{r.en}</div>
-            {result.acc >= 0.8 ? 'ممتاز!' : `سمعت ${Math.round(result.acc * 100)}% بس من الكلمات`} - {r.ar}
+            <div>{result.acc >= 0.8 ? t('lc.excellent') : t('lc.accuracy').replace('{percent}', String(Math.round(result.acc * 100)))}</div>
+            <div dir="rtl" className="mt-1">{r.ar}</div>
           </div>
         )}
         <button
@@ -116,7 +121,7 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
           disabled={!!result || !typed.trim()}
           className="w-full py-3 rounded-2xl bg-[#c4ff55] text-[#0c0b20] font-black disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer hover:brightness-110 transition-all"
         >
-          تأكد
+          {t('lc.check')}
         </button>
       </div>
     </div>
