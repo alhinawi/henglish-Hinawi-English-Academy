@@ -2631,5 +2631,17 @@
   "lc.placeholder": "Deine Antwort auf Englisch...",
   "lc.excellent": "Sehr gut!",
   "lc.accuracy": "Du hast {percent}% der Wörter richtig erkannt.",
-  "lc.check": "Prüfen"
+  "lc.check": "Prüfen",
+  "yt.library": "VIDEORESSOURCEN • Videothek zur Lektion",
+  "yt.title": "Video-Erklärungen",
+  "yt.intro": "Videoressourcen zu:",
+  "yt.video": "Video",
+  "yt.watchHere": "Hier ansehen",
+  "yt.error": "Das Video konnte hier nicht eingebettet werden.",
+  "yt.errorHint": "Öffne das Video direkt auf YouTube.",
+  "yt.retry": "Erneut versuchen",
+  "yt.open": "Video auf YouTube öffnen",
+  "yt.loading": "Video wird geladen...",
+  "yt.watch": "Auf YouTube ansehen",
+  "yt.timestamps": "Wichtige Stellen im Video:"
 }
