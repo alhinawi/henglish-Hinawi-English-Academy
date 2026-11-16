@@ -262,7 +262,7 @@ export function mapApiUserToProfile(u: ApiUser, role: UserRole = 'student'): Use
     nameAr: u.name,
     email: u.email,
     avatar: u.avatar || ANONYMOUS_AVATAR,
-    role,
+    role: u.is_admin ? 'admin' : role === 'admin' ? 'student' : role,
     currentLevel: 'A1',
     targetLevel: 'B2',
     xp: 0,

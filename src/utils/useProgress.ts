@@ -334,7 +334,7 @@ export function useProgress(activeUserId?: string) {
     setProgress((prev) => {
       if (prev.completedLessons.includes(lessonId)) return prev;
       const nextLessons = [...prev.completedLessons, lessonId];
-      const nextXp = (prev.xp || 1450) + 100;
+      const nextXp = (prev.xp ?? 0) + 100;
       return {
         ...prev,
         completedLessons: nextLessons,
@@ -394,7 +394,7 @@ export function useProgress(activeUserId?: string) {
       ...prev,
       ...addStudyDay({studyStreakDays: prev.studyStreakDays, lastStudyDate: prev.lastStudyDate}),
       dailyChallengeCompleted: true,
-      xp: (prev.xp || 1450) + 50,
+      xp: (prev.xp ?? 0) + 50,
     }));
     setUserProfile((prev) => ({
       ...prev,
