@@ -17,13 +17,13 @@ export function isAiServiceUnavailable(err: unknown): boolean {
 }
 
 /**
- * Throws for a non-OK /api/ai/* response. When the response is the static
+ * Validates /api/ai/* response availability. When the response is the static
  * host's SPA fallback (404/405/501 or a non-JSON body), throws
  * AiServiceUnavailableError; otherwise rethrows the server's real error.
  */
 export async function throwForAiResponse(response: Response, fallbackMessage: string): Promise<void> {
-  if (response.ok) return;
   const contentType = response.headers.get('content-type') || '';
+  if (response.ok && contentType.includes('application/json')) return;
   if (
     response.status === 404 ||
     response.status === 405 ||
