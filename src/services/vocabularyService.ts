@@ -218,7 +218,8 @@ function mapChunkEntry(e: VocabChunkEntry, ranks: Record<string, [number, number
     definitionEn: '',
     exampleEn: e.exampleEn,
     exampleAr: e.exampleAr,
-    collocations: e.highlight ? [e.highlight] : undefined,
+    // highlight marks the example/cloze target, not a collocation.
+    collocations: undefined,
     rank: e.rank,
     zipf: ranks[e.word]?.[1],
   };
