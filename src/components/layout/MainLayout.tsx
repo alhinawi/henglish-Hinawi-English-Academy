@@ -3,6 +3,7 @@ import { PageRoute, UserProfile, AppNotification } from '../../types';
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 import { Footer } from '../Footer';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface MainLayoutProps {
   currentRoute: PageRoute;
@@ -69,8 +70,11 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
     };
   }, [mobileOpen]);
 
+  // Physical layout stays identical in every language: sidebar pinned to the
+  // right edge, content column to its left (flex order locked via dir="ltr").
+  const { dir } = useLanguage();
   return (
-    <div className="min-h-screen flex bg-[#0c0b20] text-[#f7f5ff] selection:bg-[#ff4f9a]/30 selection:text-[#ffd166]">
+    <div dir="ltr" className="min-h-screen flex bg-[#0c0b20] text-[#f7f5ff] selection:bg-[#ff4f9a]/30 selection:text-[#ffd166]">
       {/* Collapsible Sidebar */}
       <Sidebar
         currentRoute={currentRoute}
@@ -85,7 +89,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
       />
 
       {/* Main Content Area - no overflow-x-hidden on parent of Header to prevent dropdown clipping */}
-      <div className="flex-1 flex flex-col min-w-0 min-h-screen relative">
+      <div dir={dir} className="flex-1 flex flex-col min-w-0 min-h-screen relative order-1">
         {/* Top Header */}
         <Header
           currentRoute={currentRoute}

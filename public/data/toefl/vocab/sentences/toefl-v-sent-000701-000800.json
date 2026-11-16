@@ -1,0 +1,2254 @@
+{
+ "items": [
+  {
+   "id": "toefl-v-000701",
+   "sentences": [
+    {
+     "en": "The dog has an internal parasite.",
+     "ar": "الكلب عنده طفيلي داخلي."
+    },
+    {
+     "en": "The cat has an internal parasite.",
+     "ar": "القطة عندها طفيلي داخلي."
+    },
+    {
+     "en": "The cow has an internal parasite.",
+     "ar": "البقرة عندها طفيلي داخلي."
+    },
+    {
+     "en": "The sheep has an internal parasite.",
+     "ar": "الخروف عنده طفيلي داخلي."
+    },
+    {
+     "en": "The goat has an internal parasite.",
+     "ar": "العنزة عندها طفيلي داخلي."
+    },
+    {
+     "en": "The horse has an internal parasite.",
+     "ar": "الحصان عنده طفيلي داخلي."
+    },
+    {
+     "en": "The fish has an internal parasite.",
+     "ar": "السمك عنده طفيلي داخلي."
+    },
+    {
+     "en": "The bird has an internal parasite.",
+     "ar": "الطائر عنده طفيلي داخلي."
+    },
+    {
+     "en": "The snake has an internal parasite.",
+     "ar": "الثعبان عنده طفيلي داخلي."
+    },
+    {
+     "en": "The lizard has an internal parasite.",
+     "ar": "السحلية عندها طفيلي داخلي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000702",
+   "sentences": [
+    {
+     "en": "The water permeated through the soil.",
+     "ar": "المية اتخلّلت خلال الطرب."
+    },
+    {
+     "en": "The smell permeated through the house.",
+     "ar": "الريحة اتخلّلت خلال البيت."
+    },
+    {
+     "en": "The light permeated through the curtain.",
+     "ar": "النور اتخلّل خلال الستارة."
+    },
+    {
+     "en": "The sound permeated through the wall.",
+     "ar": "الصوت اتخلّل خلال الحيطة."
+    },
+    {
+     "en": "The heat permeated through the metal.",
+     "ar": "الحرارة اتخلّلت خلال المعدن."
+    },
+    {
+     "en": "The cold permeated through the coat.",
+     "ar": "البرد اتخلّل خلال البالطو."
+    },
+    {
+     "en": "The rain permeated through the roof.",
+     "ar": "المطر اتخلّل خلال السقف."
+    },
+    {
+     "en": "The gas permeated through the pipe.",
+     "ar": "الغاز اتخلّل خلال المواسير."
+    },
+    {
+     "en": "The oil permeated through the paper.",
+     "ar": "الزيت اتخلّل خلال الورق."
+    },
+    {
+     "en": "The dye permeated through the fabric.",
+     "ar": "الصبغة اتخلّلت خلال القماش."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000703",
+   "sentences": [
+    {
+     "en": "The story perpetuates a myth.",
+     "ar": "الحكاية بتديّم أسطورة."
+    },
+    {
+     "en": "The movie perpetuates a stereotype.",
+     "ar": "الفيلم بيديّم صورة نمطية."
+    },
+    {
+     "en": "The book perpetuates a lie.",
+     "ar": "الكتاب بيديّم كذبة."
+    },
+    {
+     "en": "The song perpetuates a tradition.",
+     "ar": "الأغنية بتديّم عادة."
+    },
+    {
+     "en": "The custom perpetuates a belief.",
+     "ar": "العادة بتديّم اعتقاد."
+    },
+    {
+     "en": "The media perpetuates a bias.",
+     "ar": "الإعلام بيديّم تحيز."
+    },
+    {
+     "en": "The school perpetuates a system.",
+     "ar": "المدرسة بتديّم نظام."
+    },
+    {
+     "en": "The law perpetuates an injustice.",
+     "ar": "القانون بيديّم ظلم."
+    },
+    {
+     "en": "The habit perpetuates a cycle.",
+     "ar": "العادة بتديّم دورة."
+    },
+    {
+     "en": "The rumor perpetuates a fear.",
+     "ar": "الإشاعة بتديّم خوف."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000704",
+   "sentences": [
+    {
+     "en": "The information is pertinent to the case.",
+     "ar": "المعلومات ذات صلة مباشرة بالقضية."
+    },
+    {
+     "en": "The question is pertinent to the topic.",
+     "ar": "السؤال ذو صلة مباشرة بالموضوع."
+    },
+    {
+     "en": "The fact is pertinent to the argument.",
+     "ar": "الحقيقة ذات صلة مباشرة بالحجة."
+    },
+    {
+     "en": "The detail is pertinent to the story.",
+     "ar": "التفصيلة ذات صلة مباشرة بالحكاية."
+    },
+    {
+     "en": "The example is pertinent to the lesson.",
+     "ar": "المثال ذو صلة مباشرة بالدرس."
+    },
+    {
+     "en": "The evidence is pertinent to the trial.",
+     "ar": "الدليل ذو صلة مباشرة بالمحاكمة."
+    },
+    {
+     "en": "The comment is pertinent to the discussion.",
+     "ar": "التعليق ذو صلة مباشرة بالنقاش."
+    },
+    {
+     "en": "The data is pertinent to the study.",
+     "ar": "البيانات ذات صلة مباشرة بالدراسة."
+    },
+    {
+     "en": "The report is pertinent to the decision.",
+     "ar": "التقرير ذو صلة مباشرة بالقرار."
+    },
+    {
+     "en": "The advice is pertinent to the situation.",
+     "ar": "النصيحة ذات صلة مباشرة بالموقف."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000705",
+   "sentences": [
+    {
+     "en": "Photosynthesis is the process of making food.",
+     "ar": "البناء الضوئي هو عملية صنع الأكل."
+    },
+    {
+     "en": "Photosynthesis uses sunlight.",
+     "ar": "البناء الضوئي بيستخدم ضوء الشمس."
+    },
+    {
+     "en": "Photosynthesis produces oxygen.",
+     "ar": "البناء الضوئي بينتج أكسجين."
+    },
+    {
+     "en": "Photosynthesis happens in the leaves.",
+     "ar": "البناء الضوئي بيحصل في الورق."
+    },
+    {
+     "en": "Photosynthesis is essential for life.",
+     "ar": "البناء الضوئي أساسي للحياة."
+    },
+    {
+     "en": "Photosynthesis converts light into energy.",
+     "ar": "البناء الضوئي بيحوّل النور لطاقة."
+    },
+    {
+     "en": "Photosynthesis is a chemical process.",
+     "ar": "البناء الضوئي عملية كيميائية."
+    },
+    {
+     "en": "Photosynthesis is a natural process.",
+     "ar": "البناء الضوئي عملية طبيعية."
+    },
+    {
+     "en": "Photosynthesis is a slow process.",
+     "ar": "البناء الضوئي عملية بطيئة."
+    },
+    {
+     "en": "Photosynthesis is a fast process.",
+     "ar": "البناء الضوئي عملية سريعة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000706",
+   "sentences": [
+    {
+     "en": "The growth reached a plateau.",
+     "ar": "النمو وصل لهضبة."
+    },
+    {
+     "en": "The sales reached a plateau.",
+     "ar": "المبيعات وصلت لهضبة."
+    },
+    {
+     "en": "The learning reached a plateau.",
+     "ar": "التعلم وصل لهضبة."
+    },
+    {
+     "en": "The weight reached a plateau.",
+     "ar": "الوزن وصل لهضبة."
+    },
+    {
+     "en": "The price reached a plateau.",
+     "ar": "السعر وصل لهضبة."
+    },
+    {
+     "en": "The temperature reached a plateau.",
+     "ar": "الحرارة وصلت لهضبة."
+    },
+    {
+     "en": "The speed reached a plateau.",
+     "ar": "السرعة وصلت لهضبة."
+    },
+    {
+     "en": "The production reached a plateau.",
+     "ar": "الإنتاج وصل لهضبة."
+    },
+    {
+     "en": "The population reached a plateau.",
+     "ar": "السكان وصلوا لهضبة."
+    },
+    {
+     "en": "The income reached a plateau.",
+     "ar": "الدخل وصل لهضبة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000707",
+   "sentences": [
+    {
+     "en": "The rock is porous.",
+     "ar": "الصخرة مسامية."
+    },
+    {
+     "en": "The sponge is porous.",
+     "ar": "الإسفنجة مسامية."
+    },
+    {
+     "en": "The soil is porous.",
+     "ar": "الطرب مسامية."
+    },
+    {
+     "en": "The paper is porous.",
+     "ar": "الورق مسامي."
+    },
+    {
+     "en": "The wood is porous.",
+     "ar": "الخشب مسامي."
+    },
+    {
+     "en": "The clay is porous.",
+     "ar": "الطين مسامي."
+    },
+    {
+     "en": "The brick is porous.",
+     "ar": "الطوب مسامي."
+    },
+    {
+     "en": "The concrete is porous.",
+     "ar": "الخرسانة مسامية."
+    },
+    {
+     "en": "The leather is porous.",
+     "ar": "الجلد مسامي."
+    },
+    {
+     "en": "The bone is porous.",
+     "ar": "العضم مسامي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000708",
+   "sentences": [
+    {
+     "en": "The medicine has a potent effect.",
+     "ar": "الدوا له مفعول قوي."
+    },
+    {
+     "en": "The drug has a potent effect.",
+     "ar": "العقار مفعوله قوي جداً."
+    },
+    {
+     "en": "The chemical has a potent effect.",
+     "ar": "المادة الكيميائية ليها مفعول قوي."
+    },
+    {
+     "en": "The poison has a potent effect.",
+     "ar": "السم له مفعول قوي."
+    },
+    {
+     "en": "The drink has a potent effect.",
+     "ar": "المشروب له مفعول قوي."
+    },
+    {
+     "en": "The spice has a potent effect.",
+     "ar": "التوابل ليها مفعول قوي."
+    },
+    {
+     "en": "The herb has a potent effect.",
+     "ar": "العشبة ليها مفعول قوي."
+    },
+    {
+     "en": "The oil has a potent effect.",
+     "ar": "الزيت له مفعول قوي."
+    },
+    {
+     "en": "The perfume has a potent effect.",
+     "ar": "البرفان له مفعول قوي."
+    },
+    {
+     "en": "The coffee has a potent effect.",
+     "ar": "القهوة ليها مفعول قوي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000709",
+   "sentences": [
+    {
+     "en": "He has a pragmatic approach.",
+     "ar": "عنده منهج عملي واقعي."
+    },
+    {
+     "en": "She has a pragmatic approach.",
+     "ar": "عندها منهج عملي واقعي."
+    },
+    {
+     "en": "The manager has a pragmatic approach.",
+     "ar": "المدير عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The engineer has a pragmatic approach.",
+     "ar": "المهندس عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The doctor has a pragmatic approach.",
+     "ar": "الدكتور عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The teacher has a pragmatic approach.",
+     "ar": "المدرس عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The farmer has a pragmatic approach.",
+     "ar": "الفلاح عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The merchant has a pragmatic approach.",
+     "ar": "التاجر عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The politician has a pragmatic approach.",
+     "ar": "السياسي عنده منهج عملي واقعي."
+    },
+    {
+     "en": "The leader has a pragmatic approach.",
+     "ar": "القائد عنده منهج عملي واقعي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000710",
+   "sentences": [
+    {
+     "en": "The lion is a top predator.",
+     "ar": "الأسد مفترس قمة."
+    },
+    {
+     "en": "The tiger is a top predator.",
+     "ar": "النمر مفترس قمة."
+    },
+    {
+     "en": "The wolf is a top predator.",
+     "ar": "الذئب مفترس قمة."
+    },
+    {
+     "en": "The eagle is a top predator.",
+     "ar": "النسر مفترس قمة."
+    },
+    {
+     "en": "The shark is a top predator.",
+     "ar": "القرش مفترس قمة."
+    },
+    {
+     "en": "The crocodile is a top predator.",
+     "ar": "التمساح مفترس قمة."
+    },
+    {
+     "en": "The snake is a top predator.",
+     "ar": "الثعبان مفترس قمة."
+    },
+    {
+     "en": "The owl is a top predator.",
+     "ar": "البومة مفترس قمة."
+    },
+    {
+     "en": "The hawk is a top predator.",
+     "ar": "الصقر مفترس قمة."
+    },
+    {
+     "en": "The leopard is a top predator.",
+     "ar": "الفهد مفترس قمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000711",
+   "sentences": [
+    {
+     "en": "The university is prestigious.",
+     "ar": "الجامعة مرموقة."
+    },
+    {
+     "en": "The school is prestigious.",
+     "ar": "المدرسة مرموقة."
+    },
+    {
+     "en": "The company is prestigious.",
+     "ar": "الشركة مرموقة."
+    },
+    {
+     "en": "The award is prestigious.",
+     "ar": "الجايزة مرموقة."
+    },
+    {
+     "en": "The title is prestigious.",
+     "ar": "اللقب مرموق."
+    },
+    {
+     "en": "The job is prestigious.",
+     "ar": "الوظيفة مرموقة."
+    },
+    {
+     "en": "The degree is prestigious.",
+     "ar": "الشهادة مرموقة."
+    },
+    {
+     "en": "The club is prestigious.",
+     "ar": "النادي مرموق."
+    },
+    {
+     "en": "The hospital is prestigious.",
+     "ar": "المستشفى مرموقة."
+    },
+    {
+     "en": "The law firm is prestigious.",
+     "ar": "مكتب المحاماة مرموق."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000712",
+   "sentences": [
+    {
+     "en": "The lion preyed on the zebra.",
+     "ar": "الأسد افترس الحمار الوحشي."
+    },
+    {
+     "en": "The eagle preyed on the mouse.",
+     "ar": "النسر افترس الفار."
+    },
+    {
+     "en": "The shark preyed on the fish.",
+     "ar": "القرش افترس السمك."
+    },
+    {
+     "en": "The wolf preyed on the sheep.",
+     "ar": "الذئب افترس الخروف."
+    },
+    {
+     "en": "The snake preyed on the frog.",
+     "ar": "الثعبان افترس الضفدعة."
+    },
+    {
+     "en": "The cat preyed on the bird.",
+     "ar": "القطة افترست العصفور."
+    },
+    {
+     "en": "The owl preyed on the rabbit.",
+     "ar": "البومة افترست الأرنب."
+    },
+    {
+     "en": "The hawk preyed on the squirrel.",
+     "ar": "الصقر افترس السنجاب."
+    },
+    {
+     "en": "The crocodile preyed on the deer.",
+     "ar": "التمساح افترس الغزال."
+    },
+    {
+     "en": "The fox preyed on the chicken.",
+     "ar": "الثعلب افترس الفرخة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000713",
+   "sentences": [
+    {
+     "en": "The beach is in pristine condition.",
+     "ar": "الشط في حالة بكر."
+    },
+    {
+     "en": "The forest is in pristine condition.",
+     "ar": "الغابة في حالة بكر."
+    },
+    {
+     "en": "The lake is in pristine condition.",
+     "ar": "البحيرة في حالة بكر."
+    },
+    {
+     "en": "The mountain is in pristine condition.",
+     "ar": "الجبل في حالة بكر."
+    },
+    {
+     "en": "The island is in pristine condition.",
+     "ar": "الجزيرة في حالة بكر."
+    },
+    {
+     "en": "The desert is in pristine condition.",
+     "ar": "الصحرا في حالة بكر."
+    },
+    {
+     "en": "The river is in pristine condition.",
+     "ar": "النهر في حالة بكر."
+    },
+    {
+     "en": "The valley is in pristine condition.",
+     "ar": "الوادي في حالة بكر."
+    },
+    {
+     "en": "The cave is in pristine condition.",
+     "ar": "الكهف في حالة بكر."
+    },
+    {
+     "en": "The reef is in pristine condition.",
+     "ar": "الشعاب المرجانية في حالة بكر."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000714",
+   "sentences": [
+    {
+     "en": "The effect is profound.",
+     "ar": "التأثير عميق."
+    },
+    {
+     "en": "The impact is profound.",
+     "ar": "الأثر عميق."
+    },
+    {
+     "en": "The change is profound.",
+     "ar": "التغيير عميق."
+    },
+    {
+     "en": "The difference is profound.",
+     "ar": "الفرق عميق."
+    },
+    {
+     "en": "The influence is profound.",
+     "ar": "النفوذ عميق جداً."
+    },
+    {
+     "en": "The loss is profound.",
+     "ar": "الخسارة عميقة."
+    },
+    {
+     "en": "The grief is profound.",
+     "ar": "الحزن عميق."
+    },
+    {
+     "en": "The joy is profound.",
+     "ar": "الفرحة عميقة."
+    },
+    {
+     "en": "The love is profound.",
+     "ar": "الحب عميق."
+    },
+    {
+     "en": "The respect is profound.",
+     "ar": "الاحترام عميق."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000715",
+   "sentences": [
+    {
+     "en": "The bacteria proliferated rapidly.",
+     "ar": "البكتيريا اتكاثرت بسرعة."
+    },
+    {
+     "en": "The cells proliferated rapidly.",
+     "ar": "الخلايا اتكاثرت بسرعة."
+    },
+    {
+     "en": "The weeds proliferated rapidly.",
+     "ar": "الحشايش اتكاثرت بسرعة."
+    },
+    {
+     "en": "The insects proliferated rapidly.",
+     "ar": "الحشرات اتكاثرت بسرعة."
+    },
+    {
+     "en": "The rats proliferated rapidly.",
+     "ar": "الفيران اتكاثرت بسرعة."
+    },
+    {
+     "en": "The rumors proliferated rapidly.",
+     "ar": "الإشاعات اتكاثرت بسرعة."
+    },
+    {
+     "en": "The shops proliferated rapidly.",
+     "ar": "المحلات اتكاثرت بسرعة."
+    },
+    {
+     "en": "The buildings proliferated rapidly.",
+     "ar": "العماير اتكاثرت بسرعة."
+    },
+    {
+     "en": "The cars proliferated rapidly.",
+     "ar": "العربيات اتكاثرت بسرعة."
+    },
+    {
+     "en": "The phones proliferated rapidly.",
+     "ar": "الموبايلات اتكاثرت بسرعة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000716",
+   "sentences": [
+    {
+     "en": "The drought lasted a prolonged period.",
+     "ar": "الجفاف فضل فترة طويلة."
+    },
+    {
+     "en": "The rain lasted a prolonged period.",
+     "ar": "المطر فضل فترة طويلة."
+    },
+    {
+     "en": "The war lasted a prolonged period.",
+     "ar": "الحرب فضلت فترة طويلة."
+    },
+    {
+     "en": "The illness lasted a prolonged period.",
+     "ar": "المرض فضل فترة طويلة."
+    },
+    {
+     "en": "The meeting lasted a prolonged period.",
+     "ar": "الاجتماع فضل فترة طويلة."
+    },
+    {
+     "en": "The silence lasted a prolonged period.",
+     "ar": "الصمت فضل فترة طويلة."
+    },
+    {
+     "en": "The heat lasted a prolonged period.",
+     "ar": "الحر فضل فترة طويلة."
+    },
+    {
+     "en": "The cold lasted a prolonged period.",
+     "ar": "البرد فضل فترة طويلة."
+    },
+    {
+     "en": "The storm lasted a prolonged period.",
+     "ar": "العاصفة فضلت فترة طويلة."
+    },
+    {
+     "en": "The delay lasted a prolonged period.",
+     "ar": "التأخير فضل فترة طويلة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000717",
+   "sentences": [
+    {
+     "en": "He is a leading proponent of the theory.",
+     "ar": "هو مؤيد رئيسي للنظرية."
+    },
+    {
+     "en": "She is a leading proponent of the reform.",
+     "ar": "هي مؤيدة رئيسية للإصلاح."
+    },
+    {
+     "en": "The scientist is a proponent of the method.",
+     "ar": "العالم مؤيد للطريقة."
+    },
+    {
+     "en": "The doctor is a proponent of the treatment.",
+     "ar": "الدكتور مؤيد للعلاج."
+    },
+    {
+     "en": "The teacher is a proponent of the technique.",
+     "ar": "المدرس مؤيد للتقنية."
+    },
+    {
+     "en": "The engineer is a proponent of the design.",
+     "ar": "المهندس مؤيد للتصميم."
+    },
+    {
+     "en": "The lawyer is a proponent of the law.",
+     "ar": "المحامي مؤيد للقانون."
+    },
+    {
+     "en": "The politician is a proponent of the policy.",
+     "ar": "السياسي مؤيد للسياسة."
+    },
+    {
+     "en": "The activist is a proponent of the change.",
+     "ar": "الناشط مؤيد للتغيير."
+    },
+    {
+     "en": "The expert is a proponent of the solution.",
+     "ar": "الخبير مؤيد للحل."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000718",
+   "sentences": [
+    {
+     "en": "The business prospered economically.",
+     "ar": "البيزنس ازدهر اقتصادياً."
+    },
+    {
+     "en": "The company prospered economically.",
+     "ar": "الشركة ازدهرت اقتصادياً."
+    },
+    {
+     "en": "The town prospered economically.",
+     "ar": "المدينة ازدهرت اقتصادياً."
+    },
+    {
+     "en": "The country prospered economically.",
+     "ar": "البلد ازدهرت اقتصادياً."
+    },
+    {
+     "en": "The family prospered economically.",
+     "ar": "العيلة ازدهرت اقتصادياً."
+    },
+    {
+     "en": "The farm prospered economically.",
+     "ar": "المزرعة ازدهرت اقتصادياً."
+    },
+    {
+     "en": "The shop prospered economically.",
+     "ar": "المحل ازدهر اقتصادياً."
+    },
+    {
+     "en": "The factory prospered economically.",
+     "ar": "المصنع ازدهر اقتصادياً."
+    },
+    {
+     "en": "The market prospered economically.",
+     "ar": "السوق ازدهر اقتصادياً."
+    },
+    {
+     "en": "The region prospered economically.",
+     "ar": "المنطقة ازدهرت اقتصادياً."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000719",
+   "sentences": [
+    {
+     "en": "It is hard to quantify the impact.",
+     "ar": "صعب تحدد التأثير كمياً."
+    },
+    {
+     "en": "It is hard to quantify the cost.",
+     "ar": "صعب تحدد التكلفة كمياً."
+    },
+    {
+     "en": "It is hard to quantify the benefit.",
+     "ar": "صعب تحدد الفايدة كمياً."
+    },
+    {
+     "en": "It is hard to quantify the risk.",
+     "ar": "صعب تحدد الخطر كمياً."
+    },
+    {
+     "en": "It is hard to quantify the loss.",
+     "ar": "صعب تحدد الخسارة كمياً."
+    },
+    {
+     "en": "It is hard to quantify the gain.",
+     "ar": "صعب تحدد المكسب كمياً."
+    },
+    {
+     "en": "It is hard to quantify the change.",
+     "ar": "صعب تحدد التغيير كمياً."
+    },
+    {
+     "en": "It is hard to quantify the damage.",
+     "ar": "صعب تحدد الضرر كمياً."
+    },
+    {
+     "en": "It is hard to quantify the value.",
+     "ar": "صعب تحدد القيمة كمياً."
+    },
+    {
+     "en": "It is hard to quantify the success.",
+     "ar": "صعب تحدد النجاح كمياً."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000720",
+   "sentences": [
+    {
+     "en": "The sun radiates energy.",
+     "ar": "الشمس بتشع طاقة."
+    },
+    {
+     "en": "The fire radiates heat.",
+     "ar": "النار بتشع حرارة."
+    },
+    {
+     "en": "The lamp radiates light.",
+     "ar": "اللمبة بتشع نور."
+    },
+    {
+     "en": "The star radiates light.",
+     "ar": "النجمة بتشع نور."
+    },
+    {
+     "en": "The heater radiates warmth.",
+     "ar": "الدفاية بتشع دفا."
+    },
+    {
+     "en": "The body radiates heat.",
+     "ar": "الجسم بيشع حرارة."
+    },
+    {
+     "en": "The metal radiates heat.",
+     "ar": "المعدن بيشع حرارة."
+    },
+    {
+     "en": "The stove radiates heat.",
+     "ar": "البوتاجاز بيشع حرارة."
+    },
+    {
+     "en": "The oven radiates heat.",
+     "ar": "الفرن بيشع حرارة."
+    },
+    {
+     "en": "The candle radiates light.",
+     "ar": "الشمعة بتشع نور."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000721",
+   "sentences": [
+    {
+     "en": "What is the rationale behind the decision?",
+     "ar": "إيه المنطق ورا القرار؟"
+    },
+    {
+     "en": "What is the rationale behind the change?",
+     "ar": "إيه المنطق ورا التغيير؟"
+    },
+    {
+     "en": "What is the rationale behind the rule?",
+     "ar": "إيه المنطق ورا القاعدة؟"
+    },
+    {
+     "en": "What is the rationale behind the policy?",
+     "ar": "إيه المنطق ورا السياسة؟"
+    },
+    {
+     "en": "What is the rationale behind the price?",
+     "ar": "إيه المنطق ورا السعر؟"
+    },
+    {
+     "en": "What is the rationale behind the design?",
+     "ar": "إيه المنطق ورا التصميم؟"
+    },
+    {
+     "en": "What is the rationale behind the method?",
+     "ar": "إيه المنطق ورا الطريقة؟"
+    },
+    {
+     "en": "What is the rationale behind the plan?",
+     "ar": "إيه المنطق ورا الخطة؟"
+    },
+    {
+     "en": "What is the rationale behind the choice?",
+     "ar": "إيه المنطق ورا الاختيار؟"
+    },
+    {
+     "en": "What is the rationale behind the action?",
+     "ar": "إيه المنطق ورا التصرف؟"
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000722",
+   "sentences": [
+    {
+     "en": "The problem recurs frequently.",
+     "ar": "المشكلة بتتكرر كتير."
+    },
+    {
+     "en": "The error recurs frequently.",
+     "ar": "الغلطة بتتكرر كتير."
+    },
+    {
+     "en": "The pain recurs frequently.",
+     "ar": "الألم بيتكرر كتير."
+    },
+    {
+     "en": "The dream recurs frequently.",
+     "ar": "الحلم بيتكرر كتير."
+    },
+    {
+     "en": "The thought recurs frequently.",
+     "ar": "الفكرة بتتكرر كتير."
+    },
+    {
+     "en": "The theme recurs frequently.",
+     "ar": "الموضوع بيتكرر كتير."
+    },
+    {
+     "en": "The pattern recurs frequently.",
+     "ar": "النمط بيتكرر كتير."
+    },
+    {
+     "en": "The symptom recurs frequently.",
+     "ar": "العرض بيتكرر كتير."
+    },
+    {
+     "en": "The issue recurs frequently.",
+     "ar": "المسألة بتتكرر كتير."
+    },
+    {
+     "en": "The event recurs frequently.",
+     "ar": "الحدث بيتكرر كتير."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000723",
+   "sentences": [
+    {
+     "en": "Please refrain from smoking.",
+     "ar": "لو سمحت امتنع عن التدخين."
+    },
+    {
+     "en": "Please refrain from talking.",
+     "ar": "لو سمحت امتنع عن الكلام."
+    },
+    {
+     "en": "Please refrain from eating.",
+     "ar": "لو سمحت امتنع عن الأكل."
+    },
+    {
+     "en": "Please refrain from drinking.",
+     "ar": "لو سمحت امتنع عن الشرب."
+    },
+    {
+     "en": "Please refrain from touching.",
+     "ar": "لو سمحت امتنع عن اللمس."
+    },
+    {
+     "en": "Please refrain from entering.",
+     "ar": "لو سمحت امتنع عن الدخول."
+    },
+    {
+     "en": "Please refrain from leaving.",
+     "ar": "لو سمحت امتنع عن الخروج."
+    },
+    {
+     "en": "Please refrain from shouting.",
+     "ar": "لو سمحت امتنع عن الصراخ."
+    },
+    {
+     "en": "Please refrain from running.",
+     "ar": "لو سمحت امتنع عن الجري."
+    },
+    {
+     "en": "Please refrain from laughing.",
+     "ar": "لو سمحت امتنع عن الضحك."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000724",
+   "sentences": [
+    {
+     "en": "The tissue regenerates quickly.",
+     "ar": "النسيج بيتجدد بسرعة."
+    },
+    {
+     "en": "The skin regenerates quickly.",
+     "ar": "الجلد بيتجدد بسرعة."
+    },
+    {
+     "en": "The bone regenerates slowly.",
+     "ar": "العضم بيتجدد ببطء."
+    },
+    {
+     "en": "The hair regenerates slowly.",
+     "ar": "الشعر بيتجدد ببطء."
+    },
+    {
+     "en": "The nail regenerates slowly.",
+     "ar": "الضفر بيتجدد ببطء."
+    },
+    {
+     "en": "The liver regenerates quickly.",
+     "ar": "الكبد بيتجدد بسرعة."
+    },
+    {
+     "en": "The blood regenerates quickly.",
+     "ar": "الدم بيتجدد بسرعة."
+    },
+    {
+     "en": "The cell regenerates quickly.",
+     "ar": "الخلية بتتجدد بسرعة."
+    },
+    {
+     "en": "The organ regenerates slowly.",
+     "ar": "العضو بيتجدد ببطء."
+    },
+    {
+     "en": "The muscle regenerates slowly.",
+     "ar": "العضلة بتتجدد ببطء."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000725",
+   "sentences": [
+    {
+     "en": "The action had serious repercussions.",
+     "ar": "التصرف كان ليه تداعيات خطيرة."
+    },
+    {
+     "en": "The decision had serious repercussions.",
+     "ar": "القرار كان ليه تداعيات خطيرة."
+    },
+    {
+     "en": "The mistake had serious repercussions.",
+     "ar": "الغلطة كانت ليها تداعيات خطيرة."
+    },
+    {
+     "en": "The event had serious repercussions.",
+     "ar": "الحدث كان ليه تداعيات خطيرة."
+    },
+    {
+     "en": "The change had serious repercussions.",
+     "ar": "التغيير كان ليه تداعيات خطيرة."
+    },
+    {
+     "en": "The policy had serious repercussions.",
+     "ar": "السياسة كانت ليها تداعيات خطيرة."
+    },
+    {
+     "en": "The law had serious repercussions.",
+     "ar": "القانون كان ليه تداعيات خطيرة."
+    },
+    {
+     "en": "The war had serious repercussions.",
+     "ar": "الحرب كانت ليها تداعيات خطيرة."
+    },
+    {
+     "en": "The storm had serious repercussions.",
+     "ar": "العاصفة كانت ليها تداعيات خطيرة."
+    },
+    {
+     "en": "The accident had serious repercussions.",
+     "ar": "الحادثة كانت ليها تداعيات خطيرة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000726",
+   "sentences": [
+    {
+     "en": "We need to replenish the supplies.",
+     "ar": "لازم نعيد ملء الإمدادات."
+    },
+    {
+     "en": "We need to replenish the stock.",
+     "ar": "لازم نعيد ملء المخزون."
+    },
+    {
+     "en": "We need to replenish the water.",
+     "ar": "لازم نعيد ملء المية."
+    },
+    {
+     "en": "We need to replenish the food.",
+     "ar": "لازم نعيد ملء الأكل."
+    },
+    {
+     "en": "We need to replenish the fuel.",
+     "ar": "لازم نعيد ملء الوقود."
+    },
+    {
+     "en": "We need to replenish the energy.",
+     "ar": "لازم نعيد ملء الطاقة."
+    },
+    {
+     "en": "We need to replenish the nutrients.",
+     "ar": "لازم نعيد ملء العناصر الغذائية."
+    },
+    {
+     "en": "We need to replenish the oxygen.",
+     "ar": "لازم نعيد ملء الأكسجين."
+    },
+    {
+     "en": "We need to replenish the blood.",
+     "ar": "لازم نعيد ملء الدم."
+    },
+    {
+     "en": "We need to replenish the money.",
+     "ar": "لازم نعيد ملء الفلوس."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000727",
+   "sentences": [
+    {
+     "en": "The animals reproduce in the spring.",
+     "ar": "الحيوانات بتتكاثر في الربيع."
+    },
+    {
+     "en": "The plants reproduce by seeds.",
+     "ar": "النباتات بتتكاثر بالبذور."
+    },
+    {
+     "en": "The bacteria reproduce by dividing.",
+     "ar": "البكتيريا بتتكاثر بالانقسام."
+    },
+    {
+     "en": "The fish reproduce by laying eggs.",
+     "ar": "السمك بيتكاثر ببيض."
+    },
+    {
+     "en": "The birds reproduce by laying eggs.",
+     "ar": "الطيور بتتكاثر ببيض."
+    },
+    {
+     "en": "The insects reproduce quickly.",
+     "ar": "الحشرات بتتكاثر بسرعة."
+    },
+    {
+     "en": "The rabbits reproduce quickly.",
+     "ar": "الأرانب بتتكاثر بسرعة."
+    },
+    {
+     "en": "The mice reproduce quickly.",
+     "ar": "الفيران بتتكاثر بسرعة."
+    },
+    {
+     "en": "The cells reproduce by dividing.",
+     "ar": "الخلايا بتتكاثر بالانقسام."
+    },
+    {
+     "en": "The viruses reproduce inside cells.",
+     "ar": "الفيروسات بتتكاثر جوه الخلايا."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000728",
+   "sentences": [
+    {
+     "en": "The analysis is rigorous.",
+     "ar": "التحليل دقيق وصارم."
+    },
+    {
+     "en": "The test is rigorous.",
+     "ar": "الاختبار دقيق وصارم."
+    },
+    {
+     "en": "The study is rigorous.",
+     "ar": "الدراسة دقيقة وصارمة."
+    },
+    {
+     "en": "The method is rigorous.",
+     "ar": "الطريقة دقيقة وصارمة."
+    },
+    {
+     "en": "The review is rigorous.",
+     "ar": "المراجعة دقيقة وصارمة."
+    },
+    {
+     "en": "The check is rigorous.",
+     "ar": "الفحص دقيق وصارم."
+    },
+    {
+     "en": "The training is rigorous.",
+     "ar": "التدريب دقيق وصارم."
+    },
+    {
+     "en": "The exam is rigorous.",
+     "ar": "الامتحان دقيق وصارم."
+    },
+    {
+     "en": "The standard is rigorous.",
+     "ar": "المعيار دقيق وصارم."
+    },
+    {
+     "en": "The process is rigorous.",
+     "ar": "العملية دقيقة وصارمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000729",
+   "sentences": [
+    {
+     "en": "He has rudimentary knowledge of English.",
+     "ar": "عنده معرفة بدائية بالإنجليزي."
+    },
+    {
+     "en": "She has rudimentary knowledge of math.",
+     "ar": "عندها معرفة بدائية بالرياضيات."
+    },
+    {
+     "en": "The tool is rudimentary.",
+     "ar": "الأداة بدائية."
+    },
+    {
+     "en": "The machine is rudimentary.",
+     "ar": "المكنة بدائية."
+    },
+    {
+     "en": "The system is rudimentary.",
+     "ar": "النظام بدائي."
+    },
+    {
+     "en": "The shelter is rudimentary.",
+     "ar": "الملجأ بدائي."
+    },
+    {
+     "en": "The house is rudimentary.",
+     "ar": "البيت بدائي."
+    },
+    {
+     "en": "The car is rudimentary.",
+     "ar": "العربية بدائية."
+    },
+    {
+     "en": "The phone is rudimentary.",
+     "ar": "التليفون بدائي."
+    },
+    {
+     "en": "The computer is rudimentary.",
+     "ar": "الكمبيوتر بدائي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000730",
+   "sentences": [
+    {
+     "en": "The park is a wildlife sanctuary.",
+     "ar": "الحديقة ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The forest is a wildlife sanctuary.",
+     "ar": "الغابة ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The island is a wildlife sanctuary.",
+     "ar": "الجزيرة ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The mountain is a wildlife sanctuary.",
+     "ar": "الجبل ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The lake is a wildlife sanctuary.",
+     "ar": "البحيرة ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The river is a wildlife sanctuary.",
+     "ar": "النهر ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The valley is a wildlife sanctuary.",
+     "ar": "الوادي ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The desert is a wildlife sanctuary.",
+     "ar": "الصحرا ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The beach is a wildlife sanctuary.",
+     "ar": "الشط ملاذ آمن للحياة البرية."
+    },
+    {
+     "en": "The cave is a wildlife sanctuary.",
+     "ar": "الكهف ملاذ آمن للحياة البرية."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000731",
+   "sentences": [
+    {
+     "en": "The lawyer scrutinised the evidence.",
+     "ar": "المحامي دقّق في الدليل."
+    },
+    {
+     "en": "The detective scrutinised the clue.",
+     "ar": "المحقق دقّق في القرائن."
+    },
+    {
+     "en": "The judge scrutinised the document.",
+     "ar": "القاضي دقّق في الورقة."
+    },
+    {
+     "en": "The accountant scrutinised the numbers.",
+     "ar": "المحاسب دقّق في الأرقام."
+    },
+    {
+     "en": "The inspector scrutinised the report.",
+     "ar": "المفتش دقّق في التقرير."
+    },
+    {
+     "en": "The editor scrutinised the article.",
+     "ar": "المحرر دقّق في المقال."
+    },
+    {
+     "en": "The teacher scrutinised the homework.",
+     "ar": "المدرس دقّق في الواجب."
+    },
+    {
+     "en": "The doctor scrutinised the x-ray.",
+     "ar": "الدكتور دقّق في الأشعة."
+    },
+    {
+     "en": "The scientist scrutinised the data.",
+     "ar": "العالم دقّق في البيانات."
+    },
+    {
+     "en": "The auditor scrutinised the books.",
+     "ar": "المراجع دقّق في الحسابات."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000732",
+   "sentences": [
+    {
+     "en": "He has a sedentary lifestyle.",
+     "ar": "عنده أسلوب حياة قاعد بدون حركة."
+    },
+    {
+     "en": "She has a sedentary lifestyle.",
+     "ar": "عندها أسلوب حياة قاعد بدون حركة."
+    },
+    {
+     "en": "The job is sedentary.",
+     "ar": "الشغل قاعد بدون حركة."
+    },
+    {
+     "en": "The work is sedentary.",
+     "ar": "الوظيفة قاعدة بدون حركة."
+    },
+    {
+     "en": "The habit is sedentary.",
+     "ar": "العادة قاعدة بدون حركة."
+    },
+    {
+     "en": "The routine is sedentary.",
+     "ar": "الروتين قاعد بدون حركة."
+    },
+    {
+     "en": "The day is sedentary.",
+     "ar": "اليوم قاعد بدون حركة."
+    },
+    {
+     "en": "The week is sedentary.",
+     "ar": "الأسبوع قاعد بدون حركة."
+    },
+    {
+     "en": "The month is sedentary.",
+     "ar": "الشهر قاعد بدون حركة."
+    },
+    {
+     "en": "The year is sedentary.",
+     "ar": "السنة قاعدة بدون حركة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000733",
+   "sentences": [
+    {
+     "en": "The sediment settled at the bottom.",
+     "ar": "الرواسب استقرت في القاع."
+    },
+    {
+     "en": "The sediment formed a layer.",
+     "ar": "الرواسك كوّنت طبقة."
+    },
+    {
+     "en": "The sediment is very thick.",
+     "ar": "الرواسب سميكة جداً."
+    },
+    {
+     "en": "The sediment is very fine.",
+     "ar": "الرواسب ناعمة جداً."
+    },
+    {
+     "en": "The sediment is very coarse.",
+     "ar": "الرواسب خشنة جداً."
+    },
+    {
+     "en": "The sediment is very old.",
+     "ar": "الرواسب قديمة جداً."
+    },
+    {
+     "en": "The sediment is very deep.",
+     "ar": "الرواسب عميقة جداً."
+    },
+    {
+     "en": "The sediment is very rich.",
+     "ar": "الرواسب غنية جداً."
+    },
+    {
+     "en": "The sediment is very dark.",
+     "ar": "الرواسب غامقة جداً."
+    },
+    {
+     "en": "The sediment is very light.",
+     "ar": "الرواسب فاتحة جداً."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000734",
+   "sentences": [
+    {
+     "en": "The landscape is serene.",
+     "ar": "المنظر هادي وساكن."
+    },
+    {
+     "en": "The lake is serene.",
+     "ar": "البحيرة هادية وساكنة."
+    },
+    {
+     "en": "The garden is serene.",
+     "ar": "الجنينة هادية وساكنة."
+    },
+    {
+     "en": "The beach is serene.",
+     "ar": "الشط هادي وساكن."
+    },
+    {
+     "en": "The mountain is serene.",
+     "ar": "الجبل هادي وساكن."
+    },
+    {
+     "en": "The forest is serene.",
+     "ar": "الغابة هادية وساكنة."
+    },
+    {
+     "en": "The valley is serene.",
+     "ar": "الوادي هادي وساكن."
+    },
+    {
+     "en": "The room is serene.",
+     "ar": "الأوضة هادية وساكنة."
+    },
+    {
+     "en": "The place is serene.",
+     "ar": "المكان هادي وساكن."
+    },
+    {
+     "en": "The view is serene.",
+     "ar": "الإطلالة هادية وساكنة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000735",
+   "sentences": [
+    {
+     "en": "The game simulates reality.",
+     "ar": "اللعبة بتحاكي الواقع."
+    },
+    {
+     "en": "The program simulates reality.",
+     "ar": "البرنامج بيحاكي الواقع."
+    },
+    {
+     "en": "The model simulates reality.",
+     "ar": "النموذج بيحاكي الواقع."
+    },
+    {
+     "en": "The test simulates reality.",
+     "ar": "الاختبار بيحاكي الواقع."
+    },
+    {
+     "en": "The exercise simulates reality.",
+     "ar": "التمرين بيحاكي الواقع."
+    },
+    {
+     "en": "The drill simulates reality.",
+     "ar": "التدريب بيحاكي الواقع."
+    },
+    {
+     "en": "The movie simulates reality.",
+     "ar": "الفيلم بيحاكي الواقع."
+    },
+    {
+     "en": "The book simulates reality.",
+     "ar": "الكتاب بيحاكي الواقع."
+    },
+    {
+     "en": "The dream simulates reality.",
+     "ar": "الحلم بيحاكي الواقع."
+    },
+    {
+     "en": "The painting simulates reality.",
+     "ar": "اللوحة بتحاكي الواقع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000736",
+   "sentences": [
+    {
+     "en": "We use solar energy.",
+     "ar": "بنستخدم طاقة شمسية."
+    },
+    {
+     "en": "The house uses solar power.",
+     "ar": "البيت بيستخدم طاقة شمسية."
+    },
+    {
+     "en": "The panel collects solar energy.",
+     "ar": "اللوح بيجمع طاقة شمسية."
+    },
+    {
+     "en": "The heater uses solar power.",
+     "ar": "السخان بيستخدم طاقة شمسية."
+    },
+    {
+     "en": "The calculator uses solar power.",
+     "ar": "الآلة الحاسبة بتستخدم طاقة شمسية."
+    },
+    {
+     "en": "The light uses solar power.",
+     "ar": "النور بيستخدم طاقة شمسية."
+    },
+    {
+     "en": "The car uses solar power.",
+     "ar": "العربية بتستخدم طاقة شمسية."
+    },
+    {
+     "en": "The boat uses solar power.",
+     "ar": "المركب بتستخدم طاقة شمسية."
+    },
+    {
+     "en": "The plane uses solar power.",
+     "ar": "الطيارة بتستخدم طاقة شمسية."
+    },
+    {
+     "en": "The satellite uses solar power.",
+     "ar": "القمر الصناعي بيستخدم طاقة شمسية."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000737",
+   "sentences": [
+    {
+     "en": "The salt is soluble in water.",
+     "ar": "الملح قابل للذوبان في المية."
+    },
+    {
+     "en": "The sugar is soluble in water.",
+     "ar": "السكر قابل للذوبان في المية."
+    },
+    {
+     "en": "The powder is soluble in water.",
+     "ar": "البودرة قابلة للذوبان في المية."
+    },
+    {
+     "en": "The tablet is soluble in water.",
+     "ar": "الحباية قابلة للذوبان في المية."
+    },
+    {
+     "en": "The medicine is soluble in water.",
+     "ar": "الدوا قابل للذوبان في المية."
+    },
+    {
+     "en": "The vitamin is soluble in water.",
+     "ar": "الفيتامين قابل للذوبان في المية."
+    },
+    {
+     "en": "The mineral is soluble in water.",
+     "ar": "المعدن قابل للذوبان في المية."
+    },
+    {
+     "en": "The chemical is soluble in water.",
+     "ar": "المادة الكيميائية قابلة للذوبان في المية."
+    },
+    {
+     "en": "The dye is soluble in water.",
+     "ar": "الصبغة قابلة للذوبان في المية."
+    },
+    {
+     "en": "The soap is soluble in water.",
+     "ar": "الصابون قابل للذوبان في المية."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000738",
+   "sentences": [
+    {
+     "en": "The fish spawn in the spring.",
+     "ar": "السمك بيفقس في الربيع."
+    },
+    {
+     "en": "The salmon spawn in the river.",
+     "ar": "السلمون بيفقس في النهر."
+    },
+    {
+     "en": "The frogs spawn in the pond.",
+     "ar": "الضفادع بتفقس في البركة."
+    },
+    {
+     "en": "The turtles spawn on the beach.",
+     "ar": "السلاحف بتفقس على الشط."
+    },
+    {
+     "en": "The insects spawn in the summer.",
+     "ar": "الحشرات بتفقس في الصيف."
+    },
+    {
+     "en": "The idea spawned a movement.",
+     "ar": "الفكرة ولّدت حركة."
+    },
+    {
+     "en": "The book spawned a movie.",
+     "ar": "الكتاب ولّد فيلم."
+    },
+    {
+     "en": "The song spawned a dance.",
+     "ar": "الأغنية ولّدت رقصة."
+    },
+    {
+     "en": "The game spawned a sequel.",
+     "ar": "اللعبة ولّدت جزء تاني."
+    },
+    {
+     "en": "The invention spawned an industry.",
+     "ar": "الاختراع ولّد صناعة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000739",
+   "sentences": [
+    {
+     "en": "The light has a broad spectrum.",
+     "ar": "النور ليه طيف واسع."
+    },
+    {
+     "en": "The color has a broad spectrum.",
+     "ar": "اللون له طيف واسع."
+    },
+    {
+     "en": "The sound has a broad spectrum.",
+     "ar": "الصوت له طيف واسع."
+    },
+    {
+     "en": "The opinion has a broad spectrum.",
+     "ar": "الرأي له طيف واسع."
+    },
+    {
+     "en": "The emotion has a broad spectrum.",
+     "ar": "المشاعر ليها طيف واسع."
+    },
+    {
+     "en": "The skill has a broad spectrum.",
+     "ar": "المهارة ليها طيف واسع."
+    },
+    {
+     "en": "The knowledge has a broad spectrum.",
+     "ar": "المعرفة ليها طيف واسع."
+    },
+    {
+     "en": "The experience has a broad spectrum.",
+     "ar": "الخبرة ليها طيف واسع."
+    },
+    {
+     "en": "The talent has a broad spectrum.",
+     "ar": "الموهبة ليها طيف واسع."
+    },
+    {
+     "en": "The interest has a broad spectrum.",
+     "ar": "الاهتمام له طيف واسع."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000740",
+   "sentences": [
+    {
+     "en": "The outbreaks are sporadic.",
+     "ar": "التفشيات متقطعة غير منتظمة."
+    },
+    {
+     "en": "The rain is sporadic.",
+     "ar": "المطر متقطع غير منتظم."
+    },
+    {
+     "en": "The fighting is sporadic.",
+     "ar": "القتال متقطع غير منتظم."
+    },
+    {
+     "en": "The violence is sporadic.",
+     "ar": "العنف متقطع غير منتظم."
+    },
+    {
+     "en": "The applause is sporadic.",
+     "ar": "التصفيق متقطع غير منتظم."
+    },
+    {
+     "en": "The gunfire is sporadic.",
+     "ar": "إطلاق النار متقطع غير منتظم."
+    },
+    {
+     "en": "The protests are sporadic.",
+     "ar": "المظاهرات متقطعة غير منتظمة."
+    },
+    {
+     "en": "The strikes are sporadic.",
+     "ar": "الإضرابات متقطعة غير منتظمة."
+    },
+    {
+     "en": "The attacks are sporadic.",
+     "ar": "الهجمات متقطعة غير منتظمة."
+    },
+    {
+     "en": "The reports are sporadic.",
+     "ar": "التقارير متقطعة غير منتظمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000741",
+   "sentences": [
+    {
+     "en": "The water in the pond is stagnant.",
+     "ar": "مية البركة راكدة."
+    },
+    {
+     "en": "The air in the room is stagnant.",
+     "ar": "هوا الأوضة راكد."
+    },
+    {
+     "en": "The economy is stagnant.",
+     "ar": "الاقتصاد راكد."
+    },
+    {
+     "en": "The market is stagnant.",
+     "ar": "السوق راكد."
+    },
+    {
+     "en": "The business is stagnant.",
+     "ar": "البيزنس راكد."
+    },
+    {
+     "en": "The growth is stagnant.",
+     "ar": "النمو راكد."
+    },
+    {
+     "en": "The progress is stagnant.",
+     "ar": "التقدم راكد."
+    },
+    {
+     "en": "The sales are stagnant.",
+     "ar": "المبيعات راكدة."
+    },
+    {
+     "en": "The prices are stagnant.",
+     "ar": "الأسعار راكدة."
+    },
+    {
+     "en": "The wages are stagnant.",
+     "ar": "الأجور راكدة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000742",
+   "sentences": [
+    {
+     "en": "The light is an external stimulus.",
+     "ar": "النور مثير خارجي."
+    },
+    {
+     "en": "The sound is an external stimulus.",
+     "ar": "الصوت مثير خارجي."
+    },
+    {
+     "en": "The smell is an external stimulus.",
+     "ar": "الريحة مثير خارجي."
+    },
+    {
+     "en": "The touch is an external stimulus.",
+     "ar": "اللمس مثير خارجي."
+    },
+    {
+     "en": "The taste is an external stimulus.",
+     "ar": "الطعم مثير خارجي."
+    },
+    {
+     "en": "The heat is an external stimulus.",
+     "ar": "الحرارة مثير خارجي."
+    },
+    {
+     "en": "The cold is an external stimulus.",
+     "ar": "البرد مثير خارجي."
+    },
+    {
+     "en": "The pain is an external stimulus.",
+     "ar": "الألم مثير خارجي."
+    },
+    {
+     "en": "The noise is an external stimulus.",
+     "ar": "الزعيق مثير خارجي."
+    },
+    {
+     "en": "The color is an external stimulus.",
+     "ar": "اللون مثير خارجي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000743",
+   "sentences": [
+    {
+     "en": "The subsequent years were better.",
+     "ar": "السنين اللاحقة كانت أحسن."
+    },
+    {
+     "en": "The subsequent months were harder.",
+     "ar": "الشهور اللاحقة كانت أصعب."
+    },
+    {
+     "en": "The subsequent days were quieter.",
+     "ar": "الأيام اللاحقة كانت أهدى."
+    },
+    {
+     "en": "The subsequent events were surprising.",
+     "ar": "الأحداث اللاحقة كانت مفاجئة."
+    },
+    {
+     "en": "The subsequent changes were minor.",
+     "ar": "التغييرات اللاحقة كانت صغيرة."
+    },
+    {
+     "en": "The subsequent results were positive.",
+     "ar": "النتايج اللاحقة كانت إيجابية."
+    },
+    {
+     "en": "The subsequent tests were negative.",
+     "ar": "الاختبارات اللاحقة كانت سلبية."
+    },
+    {
+     "en": "The subsequent reports were accurate.",
+     "ar": "التقارير اللاحقة كانت دقيقة."
+    },
+    {
+     "en": "The subsequent meetings were productive.",
+     "ar": "الاجتماعات اللاحقة كانت مثمرة."
+    },
+    {
+     "en": "The subsequent decisions were wise.",
+     "ar": "القرارات اللاحقة كانت حكيمة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000744",
+   "sentences": [
+    {
+     "en": "There is a subtle difference.",
+     "ar": "في فرق خفي دقيق."
+    },
+    {
+     "en": "There is a subtle change.",
+     "ar": "في تغيير خفي دقيق."
+    },
+    {
+     "en": "There is a subtle hint.",
+     "ar": "في تلميح خفي دقيق."
+    },
+    {
+     "en": "There is a subtle smell.",
+     "ar": "في ريحة خفية دقيقة."
+    },
+    {
+     "en": "There is a subtle taste.",
+     "ar": "في طعم خفي دقيق."
+    },
+    {
+     "en": "There is a subtle sound.",
+     "ar": "في صوت خفي دقيق."
+    },
+    {
+     "en": "There is a subtle color.",
+     "ar": "في لون خفي دقيق."
+    },
+    {
+     "en": "There is a subtle shift.",
+     "ar": "في تحوّل خفي دقيق."
+    },
+    {
+     "en": "There is a subtle sign.",
+     "ar": "في علامة خفية دقيقة."
+    },
+    {
+     "en": "There is a subtle message.",
+     "ar": "في رسالة خفية دقيقة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000745",
+   "sentences": [
+    {
+     "en": "The government suppressed the evidence.",
+     "ar": "الحكومة كبتت الدليل."
+    },
+    {
+     "en": "The police suppressed the report.",
+     "ar": "الشرطة كبتت التقرير."
+    },
+    {
+     "en": "The company suppressed the information.",
+     "ar": "الشركة كبتت المعلومات."
+    },
+    {
+     "en": "The manager suppressed the complaint.",
+     "ar": "المدير كبت الشكوى."
+    },
+    {
+     "en": "The teacher suppressed the question.",
+     "ar": "المدرس كبت السؤال."
+    },
+    {
+     "en": "The parent suppressed the anger.",
+     "ar": "الوالد كبت الغضب."
+    },
+    {
+     "en": "The child suppressed the cry.",
+     "ar": "الطفل كبت البكا."
+    },
+    {
+     "en": "The patient suppressed the pain.",
+     "ar": "المريض كبت الألم."
+    },
+    {
+     "en": "The soldier suppressed the fear.",
+     "ar": "الجندي كبت الخوف."
+    },
+    {
+     "en": "The writer suppressed the truth.",
+     "ar": "الكاتب كبت الحقيقة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000746",
+   "sentences": [
+    {
+     "en": "Children are susceptible to the disease.",
+     "ar": "الأطفال عرضة للمرض."
+    },
+    {
+     "en": "Old people are susceptible to the virus.",
+     "ar": "الكبار في السن عرضة للفيروس."
+    },
+    {
+     "en": "The plant is susceptible to the frost.",
+     "ar": "النبات عرضة للصقيع."
+    },
+    {
+     "en": "The metal is susceptible to the rust.",
+     "ar": "المعدن عرضة للصدأ."
+    },
+    {
+     "en": "The wood is susceptible to the fire.",
+     "ar": "الخشب عرضة للحريق."
+    },
+    {
+     "en": "The fabric is susceptible to the tear.",
+     "ar": "القماش عرضة للتمزق."
+    },
+    {
+     "en": "The skin is susceptible to the sun.",
+     "ar": "الجلد عرضة للشمس."
+    },
+    {
+     "en": "The eye is susceptible to the light.",
+     "ar": "العين عرضة للنور."
+    },
+    {
+     "en": "The ear is susceptible to the noise.",
+     "ar": "الودن عرضة للزعيق."
+    },
+    {
+     "en": "The mind is susceptible to the stress.",
+     "ar": "العقل عرضة للضغط."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000747",
+   "sentences": [
+    {
+     "en": "Symbiosis helps both species.",
+     "ar": "التكافل الحيوي بيساعد النوعين."
+    },
+    {
+     "en": "Symbiosis is common in nature.",
+     "ar": "التكافل الحيوي شايع في الطبيعة."
+    },
+    {
+     "en": "The clownfish lives in symbiosis with the anemone.",
+     "ar": "سمكة النيمو عايشة في تكافل حيوي مع شقيقة النعمان."
+    },
+    {
+     "en": "The bees and the flowers show symbiosis.",
+     "ar": "النحل والورود بيبيّنوا تكافل حيوي."
+    },
+    {
+     "en": "Symbiosis benefits the partners.",
+     "ar": "التكافل الحيوي بينفع الشركاء."
+    },
+    {
+     "en": "The lesson explains symbiosis.",
+     "ar": "الدرس بيشرح التكافل الحيوي."
+    },
+    {
+     "en": "Symbiosis is a kind of cooperation.",
+     "ar": "التكافل الحيوي نوع من التعاون."
+    },
+    {
+     "en": "The film shows symbiosis in the ocean.",
+     "ar": "الفيلم بيوري التكافل الحيوي في المحيط."
+    },
+    {
+     "en": "Symbiosis keeps the ecosystem balanced.",
+     "ar": "التكافل الحيوي بيخلي النظام البيئي متوازن."
+    },
+    {
+     "en": "The students studied symbiosis.",
+     "ar": "الطلبة درسوا التكافل الحيوي."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000748",
+   "sentences": [
+    {
+     "en": "'Happy' is a synonym for 'glad'.",
+     "ar": "'سعيد' مرادف لـ 'مبسوط'."
+    },
+    {
+     "en": "'Big' is a synonym for 'large'.",
+     "ar": "'كبير' مرادف لـ 'ضخم'."
+    },
+    {
+     "en": "'Fast' is a synonym for 'quick'.",
+     "ar": "'سريع' مرادف لـ 'عاجل'."
+    },
+    {
+     "en": "'Smart' is a synonym for 'clever'.",
+     "ar": "'شاطر' مرادف لـ 'ذكي'."
+    },
+    {
+     "en": "'Pretty' is a synonym for 'beautiful'.",
+     "ar": "'حلوة' مرادف لـ 'جميلة'."
+    },
+    {
+     "en": "'Angry' is a synonym for 'mad'.",
+     "ar": "'زعلان' مرادف لـ 'مجنون'."
+    },
+    {
+     "en": "'Tired' is a synonym for 'exhausted'.",
+     "ar": "'تعبان' مرادف لـ 'منهك'."
+    },
+    {
+     "en": "'Rich' is a synonym for 'wealthy'.",
+     "ar": "'غني' مرادف لـ 'ثري'."
+    },
+    {
+     "en": "'Poor' is a synonym for 'needy'.",
+     "ar": "'فقير' مرادف لـ 'محتاج'."
+    },
+    {
+     "en": "'Brave' is a synonym for 'courageous'.",
+     "ar": "'شجاع' مرادف لـ 'جريء'."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000749",
+   "sentences": [
+    {
+     "en": "The report synthesises the findings.",
+     "ar": "التقرير بيركّب النتايج."
+    },
+    {
+     "en": "The article synthesises the research.",
+     "ar": "المقال بيركّب البحث."
+    },
+    {
+     "en": "The book synthesises the ideas.",
+     "ar": "الكتاب بيركّب الأفكار."
+    },
+    {
+     "en": "The study synthesises the data.",
+     "ar": "الدراسة بتركّب البيانات."
+    },
+    {
+     "en": "The review synthesises the literature.",
+     "ar": "المراجعة بتركّب الأدبيات."
+    },
+    {
+     "en": "The summary synthesises the points.",
+     "ar": "الملخص بيركّب النقاط."
+    },
+    {
+     "en": "The essay synthesises the arguments.",
+     "ar": "المقالة بتركّب الحجج."
+    },
+    {
+     "en": "The thesis synthesises the theories.",
+     "ar": "الرسالة بتركّب النظريات."
+    },
+    {
+     "en": "The presentation synthesises the results.",
+     "ar": "العرض بيركّب النتايج."
+    },
+    {
+     "en": "The paper synthesises the evidence.",
+     "ar": "الورقة بتركّب الأدلة."
+    }
+   ]
+  },
+  {
+   "id": "toefl-v-000750",
+   "sentences": [
+    {
+     "en": "The terrain is very rocky.",
+     "ar": "التضاريس صخرية جداً."
+    },
+    {
+     "en": "The terrain is very rough.",
+     "ar": "التضاريس وعرة جداً."
+    },
+    {
+     "en": "The terrain is very steep.",
+     "ar": "التضاريس حادة جداً."
+    },
+    {
+     "en": "The terrain is very flat.",
+     "ar": "التضاريس مسطحة جداً."
+    },
+    {
+     "en": "The terrain is very sandy.",
+     "ar": "التضاريس رملية جداً."
+    },
+    {
+     "en": "The terrain is very muddy.",
+     "ar": "التضاريس طينية جداً."
+    },
+    {
+     "en": "The terrain is very hilly.",
+     "ar": "التضاريس جبلية جداً."
+    },
+    {
+     "en": "The terrain is very mountainous.",
+     "ar": "التضاريس مليانة جبال."
+    },
+    {
+     "en": "The terrain is very difficult.",
+     "ar": "التضاريس صعبة جداً."
+    },
+    {
+     "en": "The terrain is very dangerous.",
+     "ar": "التضاريس خطيرة جداً."
+    }
+   ]
+  }
+ ]
+}
