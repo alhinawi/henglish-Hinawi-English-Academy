@@ -2716,5 +2716,11 @@
   "cv.summary": "Niveau {level} • Ergebnis {score}% • {date}",
   "cv.disclaimer": "Dies bestätigt den Abschluss von Henglish-Kursen und Bewertungen. Es ist keine externe Akkreditierung und keine beaufsichtigte Prüfung mit Identitätskontrolle.",
   "cv.unverified": "Der Code ist ungültig, das Zertifikat wurde nicht gefunden oder der Prüfdienst ist nicht verfügbar. Das Zertifikat kann nicht bestätigt werden.",
-  "cv.back": "Zurück zur Akademie"
+  "cv.back": "Zurück zur Akademie",
+  "pb.idiomsBlurb": "Häufige englische Redewendungen mit ägyptisch-arabischen Bedeutungen, einem englischen Beispiel und seiner Übersetzung. Die arabischen und englischen Originalinhalte wurden manuell geprüft.",
+  "pb.slangBlurb": "Amerikanischer und britischer Alltags-Slang mit ägyptisch-arabischen Bedeutungen und Hinweisen zur passenden Verwendung.",
+  "pb.genzBlurb": "Ausdrücke der Generation Z und Internetkultur aus sozialen Medien und Liedern, auf Ägyptisch-Arabisch übersetzt und erklärt.",
+  "ex.ieltsBlurb": "Wichtiger IELTS-Wortschatz nach Häufigkeit geordnet, mit ägyptisch-arabischen Bedeutungen, Beispielen, Niveaus, Band-Werten und häufigen Wortverbindungen.",
+  "ex.toeflBlurb": "TOEFL-Grundwortschatz nach Häufigkeit geordnet, mit ägyptisch-arabischen Bedeutungen, Beispielen, Niveaus und Themen.",
+  "vx.showResults": "Ergebnisse anzeigen"
 }
