@@ -1,0 +1,11 @@
+{
+  "bank": "genz",
+  "idPrefix": "gnz",
+  "totalEntries": 0,
+  "chunkSize": 500,
+  "chunks": [],
+  "counts": {
+    "byRegister": {},
+    "byOrigin": {}
+  }
+}
