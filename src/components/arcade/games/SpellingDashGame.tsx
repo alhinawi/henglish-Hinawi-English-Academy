@@ -1,20 +1,17 @@
 // سباق الإملاء - see the Arabic meaning, spell the English word.
 import React, { useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, normalizeTyped, WordPair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound, speakEnglish } from '../../../utils/audio';
 
-const META: ArcadeGameMeta = {
-  id: 'spelling-dash',
-  title: 'سباق الإملاء',
-  tagline: 'المعنى بالعربي قدامك.. اكتب الكلمة الإنجليزية بحروفها الصح. ممكن تسمعها كمان. 10 كلمات.',
-};
-
 const ROUNDS = 10;
 
 export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const META: ArcadeGameMeta = { id: 'spelling-dash', title: t('ah.gameSpellingDash'), tagline: t('arc.spellIntro') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [rounds, setRounds] = useState<WordPair[]>([]);
@@ -86,7 +83,7 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
           }}
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#9b7bff]/15 border border-[#9b7bff]/40 text-[#9b7bff] text-xs font-black cursor-pointer hover:bg-[#9b7bff]/25"
         >
-          <Volume2 className="w-3.5 h-3.5" /> اسمع الكلمة
+          <Volume2 className="w-3.5 h-3.5" /> {t('arc.listen')}
         </button>
         <input
           dir="ltr"
@@ -95,7 +92,8 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
           onChange={(e) => setTyped(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && submit()}
           disabled={!!feedback}
-          placeholder="Spell it in English..."
+          placeholder={t('arc.spellPlaceholder')}
+          aria-label={t('arc.spellLabel')}
           autoCapitalize="off"
           autoCorrect="off"
           className={`w-full py-3 px-4 rounded-2xl bg-white/5 border text-white text-center text-lg font-black tracking-wider outline-none transition-colors disabled:opacity-60 ${
@@ -104,7 +102,7 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
         />
         {feedback === 'no' && (
           <div dir="ltr" className="text-sm font-black text-[#c4ff55]">
-            الصح: {r.en}
+            {t('arc.correct')} {r.en}
           </div>
         )}
         <button
@@ -112,7 +110,7 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
           disabled={!!feedback || !typed.trim()}
           className="w-full py-3 rounded-2xl bg-[#c4ff55] text-[#0c0b20] font-black disabled:opacity-30 disabled:cursor-not-allowed cursor-pointer hover:brightness-110 transition-all"
         >
-          تأكد
+          {t('arc.check')}
         </button>
       </div>
     </div>

@@ -1,19 +1,16 @@
 // املأ الفراغ - pick the missing word in real example sentences.
 import React, { useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { gapFillItems, shuffle, GapItem } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
-const META: ArcadeGameMeta = {
-  id: 'gap-fill',
-  title: 'املأ الفراغ',
-  tagline: 'جمل حقيقية من محتوى المنصة ناقصها كلمة.. اختر الكلمة الصح من 4 اختيارات. 10 جولات.',
-};
-
 const ROUNDS = 10;
 
 export const GapFillGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t } = useLanguage();
+  const META: ArcadeGameMeta = { id: 'gap-fill', title: t('ah.gameGapFill'), tagline: t('arc.gapIntro') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [rounds, setRounds] = useState<GapItem[]>([]);
@@ -81,7 +78,7 @@ export const GapFillGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
               {part}
               {i < arr.length - 1 && (
                 <span className={`inline-block min-w-16 border-b-2 font-black px-1 ${picked ? (picked === r.answer ? 'text-[#c4ff55] border-[#c4ff55]' : 'text-rose-400 border-rose-400') : 'text-[#41e7ff] border-[#41e7ff]'}`}>
-                  {picked ?? '؟'}
+                  {picked ?? '?'}
                 </span>
               )}
             </span>

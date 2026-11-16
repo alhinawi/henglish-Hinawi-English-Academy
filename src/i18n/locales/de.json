@@ -2691,5 +2691,17 @@
   "mm.intro": "12 verdeckte Karten: 6 Sätze aus den Lerninhalten und 6 Übersetzungen. Merke dir, wo die passenden Paare liegen.",
   "mm.loading": "Karten werden vorbereitet...",
   "mm.result": "In {count} Zügen abgeschlossen. Weniger Züge bedeuten mehr Punkte.",
-  "mm.moves": "Züge: {count}"
+  "mm.moves": "Züge: {count}",
+  "arc.sprintIntro": "Ein englisches Wort und 4 arabische Antworten. Übersetze so viele wie möglich in 60 Sekunden. Jede richtige Antwort gibt einen Punkt, jede dritte in Folge einen Bonus.",
+  "arc.raceIntro": "Eine arabische Bedeutung und 4 englische Wörter. Wähle das richtige Wort, bevor die Zeit abläuft. Jede richtige Antwort gibt dir mehr Zeit.",
+  "arc.matchIntro": "Verbinde 8 englische Wörter mit ihren gemischten arabischen Bedeutungen. Versuche, möglichst wenige Fehler zu machen.",
+  "arc.spellIntro": "Lies die arabische Bedeutung und schreibe das englische Wort. Du kannst es dir auch anhören. 10 Wörter.",
+  "arc.gapIntro": "Ergänze Sätze aus den Lerninhalten mit dem fehlenden Wort aus 4 Antworten. 10 Runden.",
+  "arc.combo": "{count} in Folge! Die nächste gibt einen Bonus",
+  "arc.mistakes": "Fehler: {count}. Fehler verringern deine Punktzahl.",
+  "arc.listen": "Wort anhören",
+  "arc.correct": "Richtige Antwort:",
+  "arc.check": "Prüfen",
+  "arc.spellPlaceholder": "Auf Englisch schreiben...",
+  "arc.spellLabel": "Schreibe das englische Wort"
 }
