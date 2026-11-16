@@ -21,6 +21,7 @@ import {
   AiConversationSession 
 } from '../services/aiConversationManager';
 import { playSound, speakEnglishVoice, stopSpeech, getVoiceSettings } from '../utils/audio';
+import { isAiServiceUnavailable } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
 import { AiMarkdownRenderer } from '../components/AiMarkdownRenderer';
 import {
@@ -365,12 +366,15 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
       playSound('fanfare');
     } catch (err) {
-      console.error('AI chat invocation failed:', err);
+      const unavailable = isAiServiceUnavailable(err);
+      if (!unavailable) {
+        console.error('AI chat invocation failed:', err);
+      }
       // Graceful error state
       const errMsg: AiChatMessage = {
         id: `ai-err-${Date.now()}`,
         sender: 'assistant',
-        content: t('at.errorTemp'),
+        content: unavailable ? t('ai.unavailable') : t('at.errorTemp'),
         timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
