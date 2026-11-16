@@ -1,0 +1,12 @@
+{
+  "exam": "toefl",
+  "idPrefix": "toefl-v",
+  "totalEntries": 0,
+  "chunkSize": 500,
+  "chunks": [],
+  "counts": {
+    "byLevel": {},
+    "byPos": {},
+    "byTopic": {}
+  }
+}
