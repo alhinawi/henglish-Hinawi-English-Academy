@@ -1,6 +1,7 @@
 // صح ولا غلط - is this Arabic translation really this English sentence's?
 import React, { useState } from 'react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
+import { Check, X } from 'lucide-react';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
@@ -8,7 +9,6 @@ import { playSound } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'true-false',
   title: 'صح ولا غلط',
-  icon: '✅',
   tagline: 'جملة إنجليزية وترجمة قدامك.. الترجمة بتاعتها فعلا ولا لأ؟ 10 جولات سريعة.',
 };
 
@@ -107,14 +107,14 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             disabled={!!feedback}
             className="py-3.5 rounded-2xl bg-[#c4ff55]/15 border border-[#c4ff55]/40 text-[#c4ff55] font-black hover:bg-[#c4ff55]/25 transition-all cursor-pointer disabled:opacity-40"
           >
-            صح ✔
+            <span className="inline-flex items-center gap-1.5">صح <Check className="w-4 h-4" /></span>
           </button>
           <button
             onClick={() => answer(false)}
             disabled={!!feedback}
             className="py-3.5 rounded-2xl bg-rose-500/15 border border-rose-500/40 text-rose-300 font-black hover:bg-rose-500/25 transition-all cursor-pointer disabled:opacity-40"
           >
-            غلط ✖
+            <span className="inline-flex items-center gap-1.5">غلط <X className="w-4 h-4" /></span>
           </button>
         </div>
       </div>

@@ -9,7 +9,6 @@ import { playSound, speakEnglish } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'spelling-dash',
   title: 'سباق الإملاء',
-  icon: '⌨️',
   tagline: 'المعنى بالعربي قدامك.. اكتب الكلمة الإنجليزية بحروفها الصح. ممكن تسمعها كمان. 10 كلمات.',
 };
 

@@ -8,9 +8,9 @@ import { recordGameResult, useArcadeProgress } from '../../../services/arcadePro
 import { playSound } from '../../../utils/audio';
 import { useLanguage } from '../../../i18n/LanguageContext';
 export const PUZZLE_GAMES = [
-  { id: 'word-search', title: 'pz.game.word-search.title', icon: '🔍', tagline: 'pz.game.word-search.tagline' },
-  { id: 'word-memory', title: 'pz.game.word-memory.title', icon: '🧠', tagline: 'pz.game.word-memory.tagline' },
-  { id: 'category-sort', title: 'pz.game.category-sort.title', icon: '📦', tagline: 'pz.game.category-sort.tagline' },
+  { id: 'word-search', title: 'pz.game.word-search.title', tagline: 'pz.game.word-search.tagline' },
+  { id: 'word-memory', title: 'pz.game.word-memory.title', tagline: 'pz.game.word-memory.tagline' },
+  { id: 'category-sort', title: 'pz.game.category-sort.title', tagline: 'pz.game.category-sort.tagline' },
 ] as const;
 export type PuzzleId = typeof PUZZLE_GAMES[number]['id'];
 const CATEGORIES: Record<string,string> = { everyday:'pz.cat.everyday', business:'pz.cat.business', tech:'pz.cat.tech', academic:'pz.cat.academic', travel:'pz.cat.travel', workplace:'pz.cat.workplace', medical:'pz.cat.medical', food:'pz.cat.food', hotel:'pz.cat.hotel', phrasal_verbs:'pz.cat.phrasal_verbs', idioms:'pz.cat.idioms', collocations:'pz.cat.collocations' };

@@ -8,7 +8,6 @@ import { playSound } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'word-race',
   title: 'سباق الترجمة',
-  icon: '🏁',
   tagline: 'المعنى بالعربي و4 كلمات إنجليزية.. اختار الصح قبل ما العد ينزل. كل إجابة صح بترجعلك وقت!',
 };
 

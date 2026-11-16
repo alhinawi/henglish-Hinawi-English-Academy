@@ -10,7 +10,6 @@ import { playSound } from '../../utils/audio';
 export interface ArcadeGameMeta {
   id: string;
   title: string;
-  icon: string;
   tagline: string;
 }
 
