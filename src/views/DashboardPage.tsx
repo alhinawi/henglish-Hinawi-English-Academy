@@ -12,12 +12,9 @@ import { deriveDailyGoals } from "../utils/useProgress";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
   CEFR_LEVELS,
-  CEFR_LABELS_AR,
   levelProgressPercent,
   xpToNextLevel,
   nextLevelOf,
-  formatStreakAr,
-  formatDaysAr,
 } from "../utils/levels";
 import {
   Sparkles,
@@ -69,98 +66,98 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   const academies = [
     {
       id: "grammar",
-      title: "أكاديمية الجرامر",
+      title: t("dash.acad.grammar.title"),
       titleEn: "Grammar Academy",
-      desc: "شرح وتدريبات على أزمنة المضارع والماضي والمستقبل، وحالات الشرط والتراكيب المتقدمة.",
+      desc: t("dash.acad.grammar.desc"),
       icon: GraduationCap,
       route: "grammar" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#ffd166]/10",
-      badge: "A1 - C1 • شامل",
-      lessonsCount: "قواعد وأمثلة وتدريبات",
+      badge: t("dash.acad.grammar.badge"),
+      lessonsCount: t("dash.acad.grammar.lessons"),
       accentColor: "#41e7ff",
     },
     {
       id: "vocabulary",
-      title: "أكاديمية الكلمات والأفعال",
+      title: t("dash.acad.vocabulary.title"),
       titleEn: "Vocabulary Academy",
-      desc: "كلمات وتعبيرات بالمستوى والموضوع، مع المعاني والأمثلة وتدريبات الاستخدام.",
+      desc: t("dash.acad.vocabulary.desc"),
       icon: BookA,
       route: "vocabulary" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#41e7ff]/10",
       badge: "Spaced Repetition",
-      lessonsCount: "أكثر من 1500 كلمة",
+      lessonsCount: t("dash.acad.vocabulary.lessons"),
       accentColor: "#c4ff55",
     },
     {
       id: "speaking",
-      title: "أكاديمية المحادثة والطلاقة",
+      title: t("dash.acad.speaking.title"),
       titleEn: "Speaking Academy",
-      desc: "سيناريوهات يومية، مقابلات عمل، تقنية التظليل (Shadowing)، وتسجيل الصوت.",
+      desc: t("dash.acad.speaking.desc"),
       icon: Mic,
       route: "speaking" as PageRoute,
       color: "from-[#ff4f9a]/20 to-[#9b7bff]/20",
       badge: "Interactive Dialogues",
-      lessonsCount: "10 سيناريوهات حوارية",
+      lessonsCount: t("dash.acad.speaking.lessons"),
       accentColor: "#ff4f9a",
     },
     {
       id: "listening",
-      title: "أكاديمية الاستماع",
+      title: t("dash.acad.listening.title"),
       titleEn: "Listening Academy",
-      desc: "تطوير الأذن الإنجليزية: لكنات بريطانية وأمريكية، بودكاست واختبارات إملاء.",
+      desc: t("dash.acad.listening.desc"),
       icon: Headphones,
       route: "listening" as PageRoute,
       color: "from-[#9b7bff]/20 to-[#41e7ff]/10",
       badge: "Audio Lab",
-      lessonsCount: "6 مقاطع استماع واقعية",
+      lessonsCount: t("dash.acad.listening.lessons"),
       accentColor: "#9b7bff",
     },
     {
       id: "reading",
-      title: "أكاديمية القراءة والفهم",
+      title: t("dash.acad.reading.title"),
       titleEn: "Reading Academy",
-      desc: "نصوص متدرجة، قصص قصيرة، تقنيات القراءة السريعة والمسح البصري (Scanning).",
+      desc: t("dash.acad.reading.desc"),
       icon: BookOpen,
       route: "reading" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#c4ff55]/10",
       badge: "Reading Hub",
-      lessonsCount: "4 نصوص قراءة متدرجة",
+      lessonsCount: t("dash.acad.reading.lessons"),
       accentColor: "#41e7ff",
     },
     {
       id: "writing",
-      title: "أكاديمية الكتابة",
+      title: t("dash.acad.writing.title"),
       titleEn: "Writing Academy",
-      desc: "صياغة الإيميلات المهنية، المقالات الأكاديمية، وتصحيح الأخطاء الشائعة.",
+      desc: t("dash.acad.writing.desc"),
       icon: PenTool,
       route: "writing" as PageRoute,
       color: "from-[#ffd166]/20 to-[#41e7ff]/10",
       badge: "Formal & Casual",
-      lessonsCount: "نماذج وتدريبات كتابة",
+      lessonsCount: t("dash.acad.writing.lessons"),
       accentColor: "#ffd166",
     },
     {
       id: "pronunciation",
-      title: "أكاديمية النطق والفونيتكس",
+      title: t("dash.acad.pronunciation.title"),
       titleEn: "Pronunciation Academy",
-      desc: "أبجدية الأصوات IPA، الأزواج الصغرى (Minimal Pairs)، ونبرات الكلمات.",
+      desc: t("dash.acad.pronunciation.desc"),
       icon: Volume2,
       route: "pronunciation" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#ff4f9a]/15",
       badge: "IPA & Accents",
-      lessonsCount: "18 زوجاً صوتياً (Minimal Pairs)",
+      lessonsCount: t("dash.acad.pronunciation.lessons"),
       accentColor: "#c4ff55",
     },
     {
       id: "real-life",
-      title: "إنجليزي المواقف الحقيقية",
+      title: t("dash.acad.realLife.title"),
       titleEn: "Real-Life English",
-      desc: "في المطار، الفندق، ومقابلات العمل - حوارات ومواقف جاهزة.",
+      desc: t("dash.acad.realLife.desc"),
       icon: Compass,
       route: "real-life" as PageRoute,
       color: "from-[#ff4f9a]/20 to-[#ffd166]/20",
       badge: "Practical Survival",
-      lessonsCount: "3 موديولات واقعية",
+      lessonsCount: t("dash.acad.realLife.lessons"),
       accentColor: "#ff4f9a",
     },
     {
@@ -199,15 +196,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           <div className="lg:col-span-8 space-y-4">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Henglish Academy • منصتك التعليمية المتكاملة</span>
+              <span>{t('dash.heroBadge')}</span>
             </div>
 
             <h1 className="text-2xl sm:text-4xl 2xl:text-5xl font-black text-white leading-tight font-['Cairo',sans-serif]">
               {userProfile.id === 'guest-learner' ? (
-                'أهلاً بك في Henglish Academy!'
+                t('dash.welcomeGuest')
               ) : (
                 <>
-                  أهلاً بك مجدداً،{' '}
+                  {t('dash.welcomeBack')}{' '}
                   <bdi dir="auto" className="whitespace-nowrap">
                     {userProfile.nameAr}!
                   </bdi>
@@ -216,14 +213,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </h1>
 
             <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed max-w-2xl">
-              أنت تسير بخطى ثابتة نحو إتقان اللغة الإنجليزية. حافظت على
-              استمرارية التعلم لمدة{" "}
+              {t('dash.heroTextA')}{" "}
               <strong className="text-[#ffd166]">
-                {formatStreakAr(userProfile.streakDays)}
+                {t('dash.streakValue').replace('{n}', String(userProfile.streakDays))}
               </strong>
-              ، وجمعت{" "}
+              {t('dash.heroTextB')}{" "}
               <strong className="text-[#41e7ff]">
-                {userProfile.xp.toLocaleString()} نقطة خبرة XP
+                {t('dash.heroXp').replace('{n}', userProfile.xp.toLocaleString())}
               </strong>
               !
             </p>
@@ -233,17 +229,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <div className="flex items-center justify-between text-xs font-bold">
                 <span className="text-[#ffd166] flex items-center gap-1.5">
                   <Target className="w-3.5 h-3.5" />
-                  مستواك الحالي: {currentLevel} ({CEFR_LABELS_AR[currentLevel]})
+                  {t('dash.currentLevel').replace('{level}', currentLevel).replace('{label}', t('sl.level.' + currentLevel.toLowerCase()))}
                 </span>
                 <span className="text-[#b9b6d5]">
                   {nextLevel ? (
                     <>
-                      المستوى التالي:{" "}
-                      <strong className="text-white">{nextLevel}</strong> (
-                      {progressPercent}%) - يتبقى {xpRemaining.toLocaleString()} XP
+                      {t('dash.nextLevel').replace('{level}', nextLevel).replace('{pct}', String(progressPercent)).replace('{xp}', xpRemaining.toLocaleString())}
                     </>
                   ) : (
-                    <>وصلت لأعلى مستوى - إتقان (C2)</>
+                    <>{t('dash.maxLevel')}</>
                   )}
                 </span>
               </div>
@@ -279,15 +273,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           <div className="lg:col-span-4 p-5 rounded-2xl bg-white/5 border border-white/10 space-y-4">
             <div className="text-xs font-black uppercase text-[#41e7ff] flex items-center gap-2">
               <Flame className="w-4 h-4 text-[#ff4f9a]" />
-              <span>متابعة التعلم فوراً</span>
+              <span>{t('dash.continueCta')}</span>
             </div>
 
             <div className="space-y-1">
               <div className="text-base font-black text-white">
-                اختار المهارة اللي محتاجها النهارده
+                {t('dash.pickSkill')}
               </div>
               <div className="text-xs text-[#b9b6d5]">
-                كلمات، استماع، محادثة، قراءة، كتابة، نطق وقواعد. ابدأ من مستواك.
+                {t('dash.pickSkillSub')}
               </div>
             </div>
 
@@ -300,7 +294,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2 transition-transform hover:scale-[1.02]"
             >
               <Play className="w-4 h-4 fill-current" />
-              <span>استكشف مسارات التعلم</span>
+              <span>{t('dash.explorePaths')}</span>
             </button>
           </div>
         </div>
@@ -314,14 +308,14 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             <div>
               <h2 className="text-lg font-black text-white flex items-center gap-2">
                 <Target className="w-5 h-5 text-[#ffd166]" />
-                أهداف اليوم التعليمية
+                {t('dash.goalsTitle')}
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                أكمل أهدافك اليومية لتحصل على 150 نقطة XP إضافية
+                {t('dash.goalsSub')}
               </p>
             </div>
             <span className="text-xs font-black px-2.5 py-1 rounded-full bg-[#c4ff55]/20 text-[#c4ff55] border border-[#c4ff55]/30">
-              <span dir="ltr" className="tabular-nums">{dailyGoalsDone}/{dailyGoals.length}</span>{" "}منجز
+              <span dir="ltr" className="tabular-nums">{dailyGoalsDone}/{dailyGoals.length}</span>{" "}{t('dash.done')}
             </span>
           </div>
 
@@ -371,25 +365,24 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             <div>
               <h2 className="text-lg font-black text-white flex items-center gap-2">
                 <BarChart3 className="w-5 h-5 text-[#41e7ff]" />
-                إحصائيات الأسبوع التعليمي
+                {t('dash.weekTitle')}
               </h2>
               <p className="text-xs text-[#b9b6d5]">
-                إنجازاتك الفعلية من دروس وكويزات مسجلة
+                {t('dash.weekSub')}
               </p>
             </div>
             <div className="text-xs font-black text-[#ffd166] flex items-center gap-1">
               <Clock className="w-4 h-4" />
-              <span>{(userProfile.xp || 0).toLocaleString()} XP إجمالي</span>
+              <span>{t('dash.totalXp').replace('{n}', (userProfile.xp || 0).toLocaleString())}</span>
             </div>
           </div>
 
           {/* Real recent quiz results */}
           <div className="space-y-2.5">
-            <div className="text-xs font-bold text-[#b9b6d5]">أحدث نتائج الكويزات</div>
+            <div className="text-xs font-bold text-[#b9b6d5]">{t('dash.recentQuizzes')}</div>
             {recentQuizzes.length === 0 ? (
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 text-center text-xs text-[#b9b6d5] leading-relaxed">
-                لم تحل أي كويز بعد. ابدأ أول كويز لك من أكاديمية الجرامر
-                وسيظهر سجل نتائجك الحقيقي هنا.
+                {t('dash.noQuiz')}
               </div>
             ) : (
               recentQuizzes.map(([quizId, q]) => (
@@ -409,7 +402,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                     </span>
                     <div>
                       <div className="text-xs font-bold text-white">
-                        {q.score}/{q.total} إجابات صحيحة
+                        {t('dash.correctAnswers').replace('{score}', String(q.score)).replace('{total}', String(q.total))}
                       </div>
                       <div className="text-[10px] text-[#b9b6d5]/70">
                         {new Date(q.date).toLocaleDateString("ar-EG-u-nu-latn", {
@@ -434,21 +427,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
           <div className="grid grid-cols-3 gap-2 pt-2 text-center border-t border-white/10">
             <div className="p-2 rounded-xl bg-white/5">
-              <div className="text-[10px] text-[#b9b6d5]">الدروس المكتملة</div>
+              <div className="text-[10px] text-[#b9b6d5]">{t('dash.completedLessons')}</div>
               <div className="text-base font-black text-[#41e7ff]">
-                {progress.completedLessons.length} دروس
+                {t('dash.lessonsCount').replace('{n}', String(progress.completedLessons.length))}
               </div>
             </div>
             <div className="p-2 rounded-xl bg-white/5">
-              <div className="text-[10px] text-[#b9b6d5]">دقة الكويزات</div>
+              <div className="text-[10px] text-[#b9b6d5]">{t('dash.quizAccuracy')}</div>
               <div className="text-base font-black text-[#c4ff55]">
                 {quizAccuracy === null ? "—" : `${quizAccuracy}%`}
               </div>
             </div>
             <div className="p-2 rounded-xl bg-white/5">
-              <div className="text-[10px] text-[#b9b6d5]">أيام متتالية</div>
+              <div className="text-[10px] text-[#b9b6d5]">{t('dash.streakDays')}</div>
               <div className="text-base font-black text-[#ffd166]">
-                {formatDaysAr(userProfile.streakDays)}
+                {t('dash.daysValue').replace('{n}', String(userProfile.streakDays))}
               </div>
             </div>
           </div>
@@ -474,13 +467,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </div>
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/40 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>أضخم بنك تعليمي • 5,000 جملة</span>
+                <span>{t('dash.libBadge')}</span>
               </span>
             </div>
 
             <div>
               <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#ffd166] transition-colors">
-                مكتبة 5,000 جملة إنجليزية متدرجة
+                {t('dash.libTitle')}
               </h3>
               <p className="text-xs font-mono text-[#ffd166]/80 en mt-0.5">
                 5,000 Essential English Sentences Library
@@ -488,30 +481,23 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
 
             <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
-              منهج متكامل مصنف عبر 6 مستويات (A1C2) و 12 قسماً واقعياً. مزوّد بترجمة مصرية أصيلة، نطق صوتي متقدم، ميكروفون لتقييم النطق، و 15 نمط تعلّم مع تكرار متباعد SM-2.
+              {t('dash.libDesc')}
             </p>
 
             {/* CEFR mini pills */}
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {[
-                { lvl: 'A1', count: '851' },
-                { lvl: 'A2', count: '1,050' },
-                { lvl: 'B1', count: '1,150' },
-                { lvl: 'B2', count: '1,050' },
-                { lvl: 'C1', count: '650' },
-                { lvl: 'C2', count: '249' },
-              ].map(item => (
-                <span key={item.lvl} className="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[10px] font-mono text-[#b9b6d5]">
-                  <strong className="text-white">{item.lvl}:</strong> {item.count}
+              {CEFR_LEVELS.map(lvl => (
+                <span key={lvl} className="px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-[10px] font-mono text-[#b9b6d5]">
+                  <strong className="text-white">{lvl}</strong>
                 </span>
               ))}
             </div>
           </div>
 
           <div className="pt-4 border-t border-white/10 flex items-center justify-between relative z-10">
-            <span className="text-xs text-[#b9b6d5] font-bold">15 نمط تعلّم وبحث دلالي ذكي</span>
+            <span className="text-xs text-[#b9b6d5] font-bold">{t('dash.libFoot')}</span>
             <span className="text-xs font-black text-[#ffd166] flex items-center gap-1 group-hover:-translate-x-1.5 transition-transform">
-              <span>استكشف المكتبة الآن</span>
+              <span>{t('dash.libCta')}</span>
               <ArrowRight className="w-4 h-4 rotate-180" />
             </span>
           </div>
@@ -534,13 +520,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               </div>
               <span className="px-3 py-1 rounded-full text-xs font-black bg-[#ff4f9a]/20 text-[#ff4f9a] border border-[#ff4f9a]/40 flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>استوديو تفاعلي مميز</span>
+                <span>{t('dash.movieBadge')}</span>
               </span>
             </div>
 
             <div>
               <h3 className="text-xl sm:text-2xl font-black text-white group-hover:text-[#ff4f9a] transition-colors">
-                اتعلم الإنجليزي من الأفلام
+                {t('dash.movieTitle')}
               </h3>
               <p className="text-xs font-mono text-[#ff4f9a]/80 en mt-0.5">
                 Learn English Through Movies Studio
@@ -548,21 +534,14 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             </div>
 
             <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed">
-              تعلّم الإنجليزية الحية من أشهر مشاهد السينما العالمية. ابحث بأي جملة سينمائية، وشاهد بمشغل ذكي وترجمة مصرية متزامنة، وفحص فوري لأي كلمة، وكويزات فهم ونمط الترديد الصوتي (Echo Speaking).
+              {t('dash.movieDesc')}
             </p>
 
             {/* Feature mini pills */}
             <div className="flex flex-wrap gap-1.5 pt-1">
-              {[
-                'بحث بالجملة والمشهد',
-                'ترجمة مصرية متزامنة',
-                'فحص فوري للكلمات',
-                'كويزات المشاهد',
-                'تكرار الجملة الحالية',
-                'Echo Speaking',
-              ].map(f => (
+              {['dash.movieFeat.search', 'dash.movieFeat.translation', 'dash.movieFeat.inspect', 'dash.movieFeat.quizzes', 'dash.movieFeat.repeat', 'dash.movieFeat.echo'].map(f => (
                 <span key={f} className="px-2 py-0.5 rounded-md bg-[#ff4f9a]/10 border border-[#ff4f9a]/20 text-[10px] text-[#ffd166]">
-                  {f}
+                  {t(f)}
                 </span>
               ))}
             </div>
@@ -571,7 +550,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           <div className="pt-4 border-t border-white/10 flex items-center justify-between relative z-10">
             <span className="text-xs text-[#b9b6d5] font-bold">The Godfather • Forrest Gump • The Dark Knight...</span>
             <span className="text-xs font-black text-[#ff4f9a] flex items-center gap-1 group-hover:-translate-x-1.5 transition-transform">
-              <span>دخول الاستوديو السينمائي</span>
+              <span>{t('dash.movieCta')}</span>
               <ArrowRight className="w-4 h-4 rotate-180" />
             </span>
           </div>
@@ -584,11 +563,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2.5">
               <GraduationCap className="w-6 h-6 text-[#ffd166]" />
-              أقسام Henglish Academy المتخصصة (Curriculum Hubs)
+              {t('dash.hubsTitle')}
             </h2>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
-              منهج تعليمي شامل يغطي كافة المهارات من المبتدئ (A1) وحتى الاحتراف
-              (C2)
+              {t('dash.hubsSub')}
             </p>
           </div>
 
@@ -599,7 +577,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             }}
             className="text-xs font-bold text-[#41e7ff] hover:underline flex items-center gap-1 cursor-pointer self-start sm:self-auto"
           >
-            <span>عرض كل الكورسات والمسارات</span>
+            <span>{t('dash.viewAllCourses')}</span>
             <ChevronLeft className="w-4 h-4" />
           </button>
         </div>
@@ -655,7 +633,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                 <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs font-bold">
                   <span className="text-[#b9b6d5]">{acad.lessonsCount}</span>
                   <span className="text-[#41e7ff] flex items-center gap-1 group-hover:-translate-x-1 transition-transform">
-                    <span>دخول الأكاديمية</span>
+                    <span>{t('dash.enterAcademy')}</span>
                     <ArrowRight className="w-3.5 h-3.5 rotate-180" />
                   </span>
                 </div>
@@ -677,17 +655,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
           <div className="space-y-4">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>اختبار تحديد المستوى المعتمد</span>
+              <span>{t('dash.placementBadge')}</span>
             </div>
 
             <h3 className="text-xl font-black text-white leading-snug">
-              هل تعرف مستواك الحقيقي وفق المعيار الأوروبي (CEFR)؟
+              {t('dash.placementTitle')}
             </h3>
 
             <p className="text-xs text-[#dedbf4] leading-relaxed">
-              اختبر مهاراتك في الجرامر والكلمات وفهم المقروء من خلال اختبار
-              تقييم تشخيصي مكون من 10 أسئلة متدرجة عبر المستويات مع تقرير مفصل بنقاط القوة
-              والموضوعات المقترحة.
+              {t('dash.placementDesc')}
             </p>
           </div>
 
@@ -699,7 +675,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               }}
               className="w-full py-3 rounded-xl bg-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2"
             >
-              <span>بدء اختبار تحديد المستوى (CEFR Placement)</span>
+              <span>{t('dash.placementCta')}</span>
               <ArrowRight className="w-4 h-4 rotate-180" />
             </button>
 
@@ -710,7 +686,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               }}
               className="w-full py-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-bold text-xs border border-white/10 cursor-pointer flex items-center justify-center gap-2"
             >
-              <span>دخول معمل الألعاب والتمارين التفاعلية</span>
+              <span>{t('dash.practiceCta')}</span>
             </button>
           </div>
         </div>
