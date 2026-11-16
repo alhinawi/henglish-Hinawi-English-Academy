@@ -10,12 +10,14 @@ import { generateErrorHunterRound, GameQuestion } from '../../services/gameGener
 import { submitGameSession } from '../../services/gameverseService';
 import { playSound, fireCelebration, speakEnglish } from '../../utils/audio';
 import { CheckCircle2, XCircle, ChevronRight, Target, Volume2 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface ErrorHunterGameProps {
   onExit: () => void;
 }
 
 export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
+  const { t } = useLanguage();
   const [questions, setQuestions] = useState<GameQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -69,8 +71,8 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
     const auditItem: AnswerAuditItem = {
       question: currentQ.prompt,
       isCorrect: isSuccess,
-      userAnswer: hasError ? 'تحتوي على خطأ' : 'سليمة تماماً',
-      correctAnswer: actualHasError ? 'تحتوي على خطأ قواعدي' : 'سليمة تماماً',
+      userAnswer: hasError ? t('eh.hasError') : t('eh.clean'),
+      correctAnswer: actualHasError ? t('eh.hasGrammarError') : t('eh.clean'),
       explanationAr: currentQ.explanationAr,
     };
     setAnswersAudit(prev => [...prev, auditItem]);
@@ -131,7 +133,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
     return (
       <div className="glass-panel rounded-3xl p-12 text-center border border-white/10 space-y-4 max-w-lg mx-auto">
         <div className="w-12 h-12 border-3 border-[#ff4f9a] border-t-transparent rounded-full animate-spin mx-auto" />
-        <p className="text-sm text-white font-bold">جاري فحص وتجهيز الحالات القواعدية...</p>
+        <p className="text-sm text-white font-bold">{t('eh.loading')}</p>
       </div>
     );
   }
@@ -141,8 +143,8 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
   return (
     <div className="max-w-3xl mx-auto space-y-6">
       <GameHud
-        title="صائد الأخطاء القواعدية"
-        category="القواعد (Grammar)"
+        title={t('eh.title')}
+        category={t('eh.category')}
         currentRound={currentIndex + 1}
         totalRounds={questions.length}
         score={score}
@@ -155,10 +157,10 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
           
           <div className="space-y-2">
             <span className="text-xs font-black text-[#ffd166] uppercase tracking-wider block">
-              افحص الجملة بعين خبير القواعد:
+              {t('eh.examine')}
             </span>
             <h3 className="text-lg sm:text-xl font-bold text-[#b9b6d5]">
-              هل تحتوي هذه الجملة على خطأ لغوي أو قواعدي؟
+              {t('eh.question')}
             </h3>
           </div>
 
@@ -175,7 +177,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs text-[#41e7ff] cursor-pointer transition-colors"
             >
               <Volume2 className="w-3.5 h-3.5" />
-              <span>استمع للنطق</span>
+              <span>{t('eh.listen')}</span>
             </button>
           </div>
 
@@ -187,7 +189,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 className="py-4 px-6 rounded-2xl bg-rose-500/20 hover:bg-rose-500/30 border border-rose-500/40 text-rose-300 font-black text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer transition-all hover:scale-[1.02] shadow-lg"
               >
                 <XCircle className="w-5 h-5 text-rose-400" />
-                <span>نعم، بها خطأ</span>
+                <span>{t('eh.yesError')}</span>
               </button>
 
               <button
@@ -195,7 +197,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 className="py-4 px-6 rounded-2xl bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/40 text-emerald-300 font-black text-sm sm:text-base flex items-center justify-center gap-2 cursor-pointer transition-all hover:scale-[1.02] shadow-lg"
               >
                 <CheckCircle2 className="w-5 h-5 text-emerald-400" />
-                <span>سليمة تماماً</span>
+                <span>{t('eh.clean')}</span>
               </button>
             </div>
           ) : (
@@ -208,15 +210,15 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 }`}
               >
                 <div className="flex items-center justify-between font-bold text-sm">
-                  <span>{isCorrectGuess ? 'تشخيص ممتاز ودقيق!' : 'تشخيص غير صحيح'}</span>
+                  <span>{isCorrectGuess ? t('eh.greatDiagnosis') : t('eh.wrongDiagnosis')}</span>
                   <span className="text-xs text-white/50 font-normal">
-                    {currentQ.hasError ? 'الجملة بها خطأ' : 'الجملة كانت صحيحة'}
+                    {currentQ.hasError ? t('eh.sentenceHasError') : t('eh.sentenceWasCorrect')}
                   </span>
                 </div>
 
                 {currentQ.correction && (
                   <div className="pt-1">
-                    <strong className="text-white block mb-0.5">التصحيح المقترح:</strong>
+                    <strong className="text-white block mb-0.5">{t('eh.correction')}</strong>
                     <p dir="ltr" className="font-['Outfit',sans-serif] font-bold text-white text-sm">
                       {currentQ.correction}
                     </p>
@@ -232,7 +234,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
                 onClick={handleNextQuestion}
                 className="w-full py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#121124] font-black text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110"
               >
-                <span>الحالة التالية</span>
+                <span>{t('eh.nextCase')}</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -244,7 +246,7 @@ export const ErrorHunterGame: React.FC<ErrorHunterGameProps> = ({ onExit }) => {
       {/* Results Modal */}
       {gameResult && (
         <GameResultsModal
-          title="صائد الأخطاء القواعدية"
+          title={t('eh.title')}
           score={score}
           maxScore={questions.length * 20}
           accuracy={gameResult.accuracy}
