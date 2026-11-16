@@ -357,30 +357,30 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
       {/* Spaced Repetition (SM-2) Quick Feedback Buttons */}
       <div className="pt-2 border-t border-white/5 flex items-center justify-between text-xs gap-1 flex-wrap">
         <span className="text-[11px] text-white/40 font-bold">{t('sc.srsLabel')}</span>
-        <div className="flex items-center gap-1.5">
+        <div className="flex max-w-full flex-wrap items-center gap-1.5">
           <button
             onClick={() => handleRateSRS(0)}
             className="px-2.5 py-1 rounded-lg bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            {t('sc.forgot')} (0)
+            {t('sc.forgot')} <bdi dir="ltr" className="whitespace-nowrap">(0)</bdi>
           </button>
           <button
             onClick={() => handleRateSRS(2)}
             className="px-2.5 py-1 rounded-lg bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            {t('sc.hard')} (2)
+            {t('sc.hard')} <bdi dir="ltr" className="whitespace-nowrap">(2)</bdi>
           </button>
           <button
             onClick={() => handleRateSRS(4)}
             className="px-2.5 py-1 rounded-lg bg-blue-500/20 hover:bg-blue-500/30 text-blue-300 border border-blue-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            {t('sc.good')} (4)
+            {t('sc.good')} <bdi dir="ltr" className="whitespace-nowrap">(4)</bdi>
           </button>
           <button
             onClick={() => handleRateSRS(5)}
             className="px-2.5 py-1 rounded-lg bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 text-[11px] font-bold cursor-pointer transition-colors"
           >
-            {t('sc.easy')} (5)
+            {t('sc.easy')} <bdi dir="ltr" className="whitespace-nowrap">(5)</bdi>
           </button>
         </div>
       </div>
