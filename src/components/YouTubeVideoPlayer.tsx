@@ -80,7 +80,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
 
       {/* Main Video Box */}
       <div className="space-y-4">
-        <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-black/60 border border-white/15 shadow-2xl">
+        <div className={`relative w-full ${isPlaying && (hasError || !isIdValid) ? '' : 'aspect-video'} rounded-2xl overflow-hidden bg-black/60 border border-white/15 shadow-2xl`}>
           {!isPlaying ? (
             /* Poster & Preview with Instant Fast Play */
             <div className="relative w-full h-full group cursor-pointer" onClick={handleStartPlay}>
@@ -105,15 +105,15 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
             </div>
           ) : hasError || !isIdValid ? (
             /* Graceful Fallback Card */
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
-              <AlertCircle className="w-12 h-12 text-red-400" />
+            <div className="flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
+              <AlertCircle className="w-12 h-12 shrink-0 text-red-400" />
               <div className="space-y-1">
                 <p className="text-sm font-bold text-white">{t('yt.error')}</p>
                 <p className="text-xs text-[#b9b6d5]">
                   {t('yt.errorHint')}
                 </p>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-wrap justify-center items-center gap-3">
                 <button
                   onClick={() => {
                     setHasError(false);
