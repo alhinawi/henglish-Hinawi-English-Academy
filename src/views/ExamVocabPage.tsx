@@ -4,17 +4,18 @@
 // ==============================================================================
 
 import React from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { ExamVocabPanel } from '../components/ExamVocabPanel';
 import { ExamId } from '../services/examVocabService';
 
-const EXAM_COPY: Record<ExamId, { titleAr: string; blurbAr: string }> = {
+const EXAM_COPY: Record<ExamId, { titleAr: string; blurbKey: string }> = {
   ielts: {
     titleAr: 'IELTS',
-    blurbAr: 'أهم كلمات الـ IELTS مرتبة من الأكثر استخداماً، بمعناها بالمصري ومثال حقيقي عليها، مع المستوى والـ Band والـ Collocation الشائعة.',
+    blurbKey: 'ex.ieltsBlurb',
   },
   toefl: {
     titleAr: 'TOEFL',
-    blurbAr: 'كلمات الـ TOEFL الأساسية مرتبة من الأكثر استخداماً، بمعناها بالمصري وأمثلة واقعية عليها، مع المستوى والموضوع.',
+    blurbKey: 'ex.toeflBlurb',
   },
 };
 
@@ -23,10 +24,11 @@ interface ExamVocabPageProps {
 }
 
 export const ExamVocabPage: React.FC<ExamVocabPageProps> = ({ exam }) => {
+  const { t } = useLanguage();
   const copy = EXAM_COPY[exam];
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-right">
-      <ExamVocabPanel exam={exam} titleAr={copy.titleAr} blurbAr={copy.blurbAr} />
+      <ExamVocabPanel exam={exam} titleAr={copy.titleAr} blurbAr={t(copy.blurbKey)} />
     </div>
   );
 };
