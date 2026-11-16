@@ -34,6 +34,7 @@ import {
   ExternalLink,
   BookOpen,
 } from 'lucide-react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface VocabularyHistoryTabProps {
   onReuseTranslation: (sourceText: string, mode: string) => void;
@@ -42,6 +43,7 @@ interface VocabularyHistoryTabProps {
 export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
   onReuseTranslation,
 }) => {
+  const { t } = useLanguage();
   const [subTab, setSubTab] = useState<'history' | 'vocabulary'>('history');
 
   // History State
@@ -96,7 +98,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
   };
 
   const handleClearAllHistory = () => {
-    if (confirm('هل أنت متأكد من مسح كامل سجل الترجمة؟')) {
+    if (confirm(t('vh.confirmClear'))) {
       playSound('click');
       clearTranslationHistory();
       setHistoryItems([]);
@@ -142,7 +144,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
             }`}
           >
             <History className="w-4 h-4" />
-            <span>سجل الترجمات السابقة ({historyItems.length})</span>
+            <span>{t('vh.tabHistory')} ({historyItems.length})</span>
           </button>
 
           <button
@@ -158,7 +160,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
             }`}
           >
             <Bookmark className="w-4 h-4" />
-            <span>مفرداتي المحفوظة والمجموعات ({vocabCards.length})</span>
+            <span>{t('vh.tabVocab')} ({vocabCards.length})</span>
           </button>
         </div>
 
@@ -169,7 +171,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
             className="text-xs text-red-400 hover:text-red-300 px-3 py-1.5 rounded-lg hover:bg-red-500/10 transition-colors flex items-center gap-1 cursor-pointer"
           >
             <Trash2 className="w-3.5 h-3.5" />
-            <span>مسح السجل</span>
+            <span>{t('vh.clearHistory')}</span>
           </button>
         )}
       </div>
@@ -187,7 +189,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                 type="text"
                 value={historySearch}
                 onChange={e => setHistorySearch(e.target.value)}
-                placeholder="ابحث في سجل الترجمات..."
+                placeholder={t('vh.searchPlaceholder')}
                 className="w-full bg-[#0e0c26] border border-white/10 rounded-xl pr-10 pl-4 py-2.5 text-xs text-white placeholder-[#b9b6d5]/40 focus:outline-none focus:border-[#41e7ff]"
               />
             </div>
@@ -205,7 +207,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
               }`}
             >
               <Star className="w-4 h-4 fill-current" />
-              <span>المفضلة فقط</span>
+              <span>{t('vh.favoritesOnly')}</span>
             </button>
           </div>
 
@@ -236,7 +238,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                             ? 'text-[#ffb84d] hover:text-[#ffb84d]/80'
                             : 'text-slate-500 hover:text-white'
                         }`}
-                        title="إضافة للمفضلة"
+                        title={t('vh.addFavorite')}
                       >
                         <Star className={`w-4 h-4 ${item.isFavorite ? 'fill-current' : ''}`} />
                       </button>
@@ -244,7 +246,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                         type="button"
                         onClick={() => handleDeleteHistory(item.id)}
                         className="p-1 rounded-lg text-slate-500 hover:text-red-400 transition-colors cursor-pointer"
-                        title="حذف من السجل"
+                        title={t('vh.deleteHistory')}
                       >
                         <Trash2 className="w-4 h-4" />
                       </button>
@@ -272,14 +274,14 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                       className="flex items-center gap-1.5 text-xs text-[#41e7ff] hover:underline font-semibold cursor-pointer"
                     >
                       <RotateCcw className="w-3.5 h-3.5" />
-                      <span>إعادة استخدام في المحرر</span>
+                      <span>{t('vh.reuseInEditor')}</span>
                     </button>
 
                     <button
                       type="button"
                       onClick={() => handleSpeak(item.translatedText, item.targetLang)}
                       className="p-1.5 rounded-lg text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
-                      title="استمع"
+                      title={t('vh.listen')}
                     >
                       <Volume2 className="w-3.5 h-3.5" />
                     </button>
@@ -290,7 +292,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
           ) : (
             <div className="p-12 text-center text-[#b9b6d5]/50 bg-[#0e0c26] rounded-2xl border border-white/10">
               <History className="w-10 h-10 mx-auto mb-2 opacity-30 text-[#41e7ff]" />
-              <p className="text-sm">لا توجد ترجمات سابقة في السجل حتى الآن.</p>
+              <p className="text-sm">{t('vh.noHistory')}</p>
             </div>
           )}
         </div>
@@ -306,7 +308,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
             <div className="flex items-center justify-between">
               <h4 className="text-sm font-bold text-white flex items-center gap-2">
                 <FolderPlus className="w-4 h-4 text-[#41e7ff]" />
-                <span>المجموعات والقوائم المخصصة (Vocabulary Decks)</span>
+                <span>{t('vh.decksTitle')}</span>
               </h4>
 
               <button
@@ -318,7 +320,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                 className="text-xs text-[#41e7ff] hover:text-white flex items-center gap-1 font-semibold cursor-pointer"
               >
                 <Plus className="w-3.5 h-3.5" />
-                <span>مجموعة جديدة</span>
+                <span>{t('vh.newDeck')}</span>
               </button>
             </div>
 
@@ -329,7 +331,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                   type="text"
                   value={newCollectionName}
                   onChange={e => setNewCollectionName(e.target.value)}
-                  placeholder="اسم المجموعة (مثال: مصطلحات التسويق)..."
+                  placeholder={t('vh.deckNamePlaceholder')}
                   className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white placeholder-[#b9b6d5]/40 focus:outline-none focus:border-[#41e7ff]"
                   autoFocus
                 />
@@ -337,7 +339,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                   type="submit"
                   className="px-4 py-1.5 rounded-xl bg-[#41e7ff] text-black font-bold text-xs hover:brightness-110 active:scale-95 transition-all cursor-pointer"
                 >
-                  إنشاء
+                  {t('vh.create')}
                 </button>
               </form>
             )}
@@ -356,7 +358,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                     : 'bg-white/5 hover:bg-white/10 text-slate-300'
                 }`}
               >
-                جميع الكلمات ({vocabCards.length})
+                {t('vh.allWords')} ({vocabCards.length})
               </button>
 
               {collections.map(col => (
@@ -397,7 +399,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                         type="button"
                         onClick={() => handleDeleteVocab(card.id)}
                         className="text-slate-500 hover:text-red-400 p-1 cursor-pointer"
-                        title="حذف من المفردات"
+                        title={t('vh.deleteVocab')}
                       >
                         <Trash2 className="w-3.5 h-3.5" />
                       </button>
@@ -418,7 +420,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
                     {card.personalNotes && (
                       <p className="text-[11px] text-slate-300 bg-black/40 p-2 rounded-lg mt-2 border border-white/5">
-                        <span className="text-[#ffb84d] font-semibold ml-1">ملاحظة:</span>
+                        <span className="text-[#ffb84d] font-semibold ml-1">{t('vh.noteLabel')}</span>
                         {card.personalNotes}
                       </p>
                     )}
@@ -426,13 +428,13 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
                   <div className="flex items-center justify-between pt-2 border-t border-white/5 text-xs">
                     <span className="text-[10px] text-[#10b981] font-medium">
-                      مراجعة SRS: نشطة
+                      {t('vh.srsActive')}
                     </span>
                     <button
                       type="button"
                       onClick={() => handleSpeak(card.wordOrPhrase, 'en')}
                       className="p-1 rounded-md text-[#b9b6d5] hover:text-[#41e7ff] cursor-pointer"
-                      title="استمع"
+                      title={t('vh.listen')}
                     >
                       <Volume2 className="w-3.5 h-3.5" />
                     </button>
@@ -443,9 +445,9 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
           ) : (
             <div className="p-12 text-center text-[#b9b6d5]/50 bg-[#0e0c26] rounded-2xl border border-white/10">
               <Bookmark className="w-10 h-10 mx-auto mb-2 opacity-30 text-[#41e7ff]" />
-              <p className="text-sm">لم تقم بحفظ أي كلمات أو تعبيرات في هذه المجموعة بعد.</p>
+              <p className="text-sm">{t('vh.noDeckWords')}</p>
               <p className="text-xs text-[#b9b6d5]/30 mt-1">
-                انقر على أي كلمة في نتائج الترجمة للتحليل اللغوي وحفظها فوراً!
+                {t('vh.noDeckWordsHint')}
               </p>
             </div>
           )}
