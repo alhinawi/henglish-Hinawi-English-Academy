@@ -107,7 +107,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
             <span>الترجمة البصرية والتعرف الضوئي (OCR Vision Translation)</span>
           </h3>
           <p className="text-xs text-[#b9b6d5] mt-1">
-            التقط أو ارفع صورة لكتاب، لوحة، مستند، أو لافتة. يستخرج الذكاء الاصطناعي النص بدقة مع ترتيب القراءة ويترجمه فوراً.
+            التقط أو ارفع صورة لكتاب، لوحة، مستند، أو لافتة. يُستخرج النص بدقة مع ترتيب القراءة ويترجم فوراً.
           </p>
         </div>
 

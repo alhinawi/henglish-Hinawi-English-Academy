@@ -140,7 +140,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
               ألعاب تفاعلية حقيقية مبنية على أقوى قواعد البيانات اللغوية
             </h2>
             <p className="text-xs sm:text-sm text-[#b9b6d5] leading-relaxed">
-              تحديات لغوية ونحوية حقيقية غير مكررة مولدة ديناميكياً من 5,000 كلمة و 10,000 تعبير و 5,000 جملة وقواعد اللغة الشاملة. العب بمفردك، أو بارز روبوتات الذكاء الاصطناعي، أو تحدَّ زملاءك في غرف جماعية بالوقت الحقيقي!
+              تحديات لغوية ونحوية حقيقية غير مكررة مولدة ديناميكياً من 5,000 كلمة و 10,000 تعبير و 5,000 جملة وقواعد اللغة الشاملة. العب بمفردك، أو بارز الروبوتات، أو تحدَّ زملاءك في غرف جماعية بالوقت الحقيقي!
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export const GameVerseDashboard: React.FC<GameVerseDashboardProps> = ({
               className="py-3 px-6 rounded-2xl bg-linear-to-r from-[#ff4f9a] to-[#9b7bff] text-white font-black text-xs sm:text-sm flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:brightness-110 transition-transform hover:scale-105"
             >
               <Swords className="w-4 h-4 text-[#ffd166]" />
-              <span>مبارزة الذكاء الاصطناعي</span>
+              <span>مبارزة الروبوتات</span>
             </button>
 
             <button
