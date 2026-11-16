@@ -20,13 +20,10 @@ import {
   CheckCircle2,
   ArrowRight,
   MessageSquare,
-  Send,
   Award,
   RotateCcw,
   MapPin,
   AlertTriangle,
-  RefreshCw,
-  Brain,
   Hotel,
   Pill,
 } from 'lucide-react';
@@ -53,9 +50,6 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   // Simulation state
   const [currentTurnIdx, setCurrentTurnIdx] = useState(0);
   const [selectedOption, setSelectedOption] = useState<DialogueOption | null>(null);
-  const [freeTextResponse, setFreeTextResponse] = useState('');
-  const [freeTextFeedback, setFreeTextFeedback] = useState<string | null>(null);
-  const [isEvaluatingAi, setIsEvaluatingAi] = useState(false);
   const [totalScore, setTotalScore] = useState(0);
   const [scenarioCompleted, setScenarioCompleted] = useState(false);
 
@@ -70,9 +64,6 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   const resetSimulationState = () => {
     setCurrentTurnIdx(0);
     setSelectedOption(null);
-    setFreeTextResponse('');
-    setFreeTextFeedback(null);
-    setIsEvaluatingAi(false);
     setTotalScore(0);
     setScenarioCompleted(false);
   };
@@ -99,57 +90,10 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   };
 
   const handleChooseOption = (opt: DialogueOption) => {
+    if (selectedOption) return;
     playSound(opt.isOptimal ? 'correct' : 'wrong');
     setSelectedOption(opt);
     setTotalScore(prev => prev + opt.score);
-  };
-
-  const handleEvaluateFreeText = async () => {
-    if (!freeTextResponse.trim() || !scenario) return;
-    const currentTurn: SimulationTurn = scenario.turns[currentTurnIdx] || scenario.turns[0];
-
-    setIsEvaluatingAi(true);
-    setFreeTextFeedback(null);
-    playSound('click');
-
-    try {
-      const response = await fetch('/api/ai/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: `In an English simulation titled "${scenario.titleAr} (${scenario.title})" at ${scenario.locationName}, the NPC ${currentTurn.speaker} (${currentTurn.speakerRole}) asked:\n"${currentTurn.textEn}"\n\nThe student answered:\n"${freeTextResponse}"\n\nPlease evaluate this response: 1) Grammatical correctness & politeness, 2) A natural native alternative, and 3) Score out of 10. Keep the evaluation concise in Arabic.`,
-          mode: 'conversation-partner',
-          userLevel: scenario.level,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error(`Dialogue evaluation failed: ${response.status}`);
-      }
-
-      const data = await response.json();
-      const feedback = data.text || data.response || 'إجابة ممتازة ومفهومة ضمن سياق المحادثة!';
-      setFreeTextFeedback(feedback);
-      setTotalScore(prev => prev + 10);
-      playSound('correct');
-      fireCelebration();
-    } catch (err) {
-      console.warn('Simulation evaluation fallback:', err);
-      const lower = freeTextResponse.toLowerCase();
-      const keywords = currentTurn.expectedKeywordsForFreeText || [];
-      const matched = keywords.filter(kw => lower.includes(kw));
-
-      if (matched.length > 0 || freeTextResponse.length > 15) {
-        playSound('correct');
-        setFreeTextFeedback('إجابة ممتازة ومفهومة جداً! استخدمت صياغة لغوية مناسبة للسياق.');
-        setTotalScore(prev => prev + 10);
-      } else {
-        playSound('wrong');
-        setFreeTextFeedback('حاول إضافة مزيد من التفاصيل والكلمات الأساسية، أو اختر أحد الخيارات النموذجية أعلاه.');
-      }
-    } finally {
-      setIsEvaluatingAi(false);
-    }
   };
 
   const handleNextTurn = () => {
@@ -158,8 +102,6 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
     if (currentTurnIdx < scenario.turns.length - 1) {
       setCurrentTurnIdx(prev => prev + 1);
       setSelectedOption(null);
-      setFreeTextResponse('');
-      setFreeTextFeedback(null);
       scrollToTop();
     } else {
       // Complete scenario
@@ -412,6 +354,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                     <div key={optIdx} className="space-y-1.5">
                       <button
                         onClick={() => handleChooseOption(opt)}
+                        disabled={selectedOption !== null}
                         dir="ltr"
                         lang="en"
                         className={`w-full p-4 rounded-xl border text-left font-sans text-sm sm:text-base font-semibold transition-colors cursor-pointer flex items-center justify-between ${
@@ -445,54 +388,6 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               </div>
             </div>
 
-            {/* Optional Free-Text Answer Input */}
-            <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-3">
-              <label className="text-xs font-bold text-[#dedbf4] flex flex-wrap items-start justify-between gap-2">
-                <span>أو اكتب ردك الخاص بالإنجليزية بحرية (Free-Text Practice):</span>
-                <span className="text-[10px] text-[#41e7ff]">تقييم فوري</span>
-              </label>
-
-              <div className="flex min-w-0 flex-col gap-3 sm:flex-row sm:items-stretch">
-                <input
-                  type="text"
-                  dir="ltr"
-                  lang="en"
-                  value={freeTextResponse}
-                  onChange={e => setFreeTextResponse(e.target.value)}
-                  onKeyDown={e => e.key === 'Enter' && handleEvaluateFreeText()}
-                  placeholder="Type your reply in English here..."
-                  className="english-input w-full min-w-0 sm:flex-1 px-4 py-2.5 rounded-xl bg-black/40 border border-white/15 text-white font-sans text-sm focus:outline-none focus:border-[#41e7ff]"
-                />
-                <button
-                  onClick={handleEvaluateFreeText}
-                  disabled={!freeTextResponse.trim() || isEvaluatingAi}
-                  className="w-full min-h-12 sm:w-auto shrink-0 justify-center px-5 py-2.5 rounded-xl bg-white/10 hover:bg-[#41e7ff] hover:text-[#0c0b20] text-white text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 disabled:opacity-50"
-                >
-                  {isEvaluatingAi ? (
-                    <>
-                      <RefreshCw className="w-3.5 h-3.5 animate-spin" />
-                      <span>جاري الفحص...</span>
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-3.5 h-3.5" />
-                      <span>تحقق</span>
-                    </>
-                  )}
-                </button>
-              </div>
-
-              {freeTextFeedback && (
-                <div className="p-4 rounded-xl bg-[#14122d] border border-[#41e7ff]/30 text-xs text-[#dedbf4] leading-relaxed whitespace-pre-line space-y-1">
-                  <div className="flex items-center gap-1.5 font-bold text-[#41e7ff] text-xs">
-                    <Brain className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>تقييم وتوجيه المحادثة الفوري:</span>
-                  </div>
-                  <div>{freeTextFeedback}</div>
-                </div>
-              )}
-            </div>
-
             {/* Advance to next turn */}
             <div className="pt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-white/10">
               <button
@@ -505,7 +400,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
               <button
                 onClick={handleNextTurn}
-                disabled={!selectedOption && !freeTextFeedback}
+                disabled={!selectedOption}
                 className="px-8 py-3 rounded-2xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer disabled:opacity-40 transition-all flex items-center gap-2"
               >
                 <span>{currentTurnIdx < scenario.turns.length - 1 ? 'متابعة الحوار' : 'إنهاء السيناريو وحصد النقاط'}</span>
