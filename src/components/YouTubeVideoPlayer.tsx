@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../i18n/LanguageContext';
 import { LessonVideoResource, isValidYouTubeId } from '../data/videoResourcesData';
 import { Play, ExternalLink, Video, AlertCircle, Clock, Sparkles, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { playSound } from '../utils/audio';
@@ -9,6 +10,7 @@ interface YouTubeVideoPlayerProps {
 }
 
 export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resources, lessonTitle }) => {
+  const { t } = useLanguage();
   const [activeVideoIdx, setActiveVideoIdx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -39,19 +41,19 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
   };
 
   return (
-    <section className="rounded-3xl glass-panel p-6 sm:p-8 border border-white/10 space-y-6 text-right">
+    <section className="rounded-3xl glass-panel p-6 sm:p-8 border border-white/10 space-y-6 text-start">
       {/* Section Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
         <div className="space-y-1">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-red-500/20 text-red-300 border border-red-500/30">
             <Video className="w-3.5 h-3.5 text-red-400" />
-            <span>VIDEO RESOURCES • المكتبة المرئية للدرس</span>
+            <span>{t('yt.library')}</span>
           </div>
           <h3 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
-            <span>شروحات فيديو عالمية معتمدة</span>
+            <span>{t('yt.title')}</span>
           </h3>
           <p className="text-xs text-[#b9b6d5]">
-            فيديوهات تعليمية منتقاة بعناية من كبرى القنوات العالمية لشرح: {lessonTitle}
+            {t('yt.intro')} {lessonTitle}
           </p>
         </div>
 
@@ -69,7 +71,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                 }`}
               >
                 <Video className="w-3 h-3" />
-                <span>فيديو {idx + 1} ({res.channelName})</span>
+                <span>{t('yt.video')} {idx + 1} ({res.channelName})</span>
               </button>
             ))}
           </div>
@@ -94,7 +96,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                   <Play className="w-8 h-8 sm:w-10 sm:h-10 fill-current translate-x-0.5" />
                 </div>
                 <span className="text-sm sm:text-base font-black text-white drop-shadow-md">
-                  اضغط للمشاهدة الآن داخل المنصة
+                  {t('yt.watchHere')}
                 </span>
                 <span className="text-xs text-[#ffd166] mt-1 font-bold">
                   {currentVideo.channelName} • {currentVideo.duration}
@@ -106,9 +108,9 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
             <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
               <AlertCircle className="w-12 h-12 text-red-400" />
               <div className="space-y-1">
-                <p className="text-sm font-bold text-white">تعذر تضمين الفيديو داخل الصفحة حالياً</p>
+                <p className="text-sm font-bold text-white">{t('yt.error')}</p>
                 <p className="text-xs text-[#b9b6d5]">
-                  بعض الفيديوهات تتطلب فتحها مباشرة على يوتيوب بسبب سياسات حقوق النشر أو المتصفح.
+                  {t('yt.errorHint')}
                 </p>
               </div>
               <div className="flex items-center gap-3">
@@ -120,7 +122,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-bold transition-colors cursor-pointer"
                 >
                   <RefreshCw className="w-3.5 h-3.5" />
-                  <span>إعادة المحاولة</span>
+                  <span>{t('yt.retry')}</span>
                 </button>
                 <a
                   href={`https://www.youtube.com/watch?v=${currentVideo.youtubeId}`}
@@ -129,7 +131,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                   className="inline-flex items-center gap-2 px-5 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-colors cursor-pointer"
                 >
                   <ExternalLink className="w-4 h-4" />
-                  <span>فتح الفيديو على YouTube</span>
+                  <span>{t('yt.open')}</span>
                 </a>
               </div>
             </div>
@@ -139,7 +141,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
               {isLoading && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#0c0b20] z-10 space-y-3">
                   <div className="w-10 h-10 border-4 border-red-500/30 border-t-red-500 rounded-full animate-spin" />
-                  <span className="text-xs font-bold text-[#dedbf4]">جاري تشغيل الفيديو المعتمد...</span>
+                  <span className="text-xs font-bold text-[#dedbf4]">{t('yt.loading')}</span>
                 </div>
               )}
               <iframe
@@ -184,7 +186,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
             className="self-start sm:self-center px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white hover:text-red-400 border border-white/10 text-xs font-bold transition-colors flex items-center gap-2 cursor-pointer shrink-0"
           >
             <ExternalLink className="w-4 h-4" />
-            <span>مشاهدة على YouTube</span>
+            <span>{t('yt.watch')}</span>
           </a>
         </div>
 
@@ -193,7 +195,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
           <div className="p-3 sm:p-4 rounded-xl bg-white/5 border border-white/10 space-y-2">
             <span className="text-xs font-bold text-[#ffd166] flex items-center gap-1.5">
               <Sparkles className="w-3.5 h-3.5" />
-              أهم محطات الفيديو التعليمية:
+              {t('yt.timestamps')}
             </span>
             <div className="flex flex-wrap gap-2">
               {currentVideo.keyTimestamps.map((ts, idx) => (
