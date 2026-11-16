@@ -7,10 +7,10 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <AuthProvider>
-      <LanguageProvider>
+    <LanguageProvider>
+      <AuthProvider>
         <App />
-      </LanguageProvider>
-    </AuthProvider>
+      </AuthProvider>
+    </LanguageProvider>
   </React.StrictMode>
 );
