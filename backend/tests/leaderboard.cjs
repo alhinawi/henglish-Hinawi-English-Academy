@@ -23,3 +23,9 @@ rows=display(b);assert.equal(rows.length,10);assert.equal(rows[1].name,'Maryam A
 rows=display({top:Array.from({length:10},(_,i)=>({rank:i+1,name:'Learner '+i,points:0,avatar:null,pinned:i===0})),me:null,realCount:20});assert.equal(rows.filter(r=>r.starter).length,0);
 assert.equal(display(b,false).length,2);
 console.log('PASS: owner pin, exact owner identity, fresh Google-session gate, no fake XP, privacy, starter replacement, zero newcomers, and demo off switch.');
+
+const {presetSvg} = load('src/utils/avatarPresets.ts');
+const preview0=presetSvg(0),preview1=presetSvg(1);
+assert.ok(preview0.includes('id="avatar-gradient-0"')&&preview0.includes('url(#avatar-gradient-0)'));
+assert.ok(preview1.includes('id="avatar-gradient-1"')&&preview1.includes('url(#avatar-gradient-1)'));
+console.log('PASS: distinct inline preset gradient IDs and palettes.');
