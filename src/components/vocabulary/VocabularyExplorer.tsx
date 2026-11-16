@@ -1,6 +1,6 @@
 // ==============================================================================
 // Henglish Academy (HENGLISH) - INTELLIGENT VOCABULARY EXPLORER
-// Verified words only: legacy hand-reviewed set + frequency chunks
+// Vocabulary entries from the legacy set and frequency chunks
 // Search-first layout with bottom-sheet filters
 // ==============================================================================
 
@@ -122,8 +122,8 @@ export const VocabularyExplorer: React.FC = () => {
   // Saved words mutation trigger
   const [savedUpdateCount, setSavedUpdateCount] = useState(0);
 
-  // Initial load: verified legacy set for instant hydration,
-  // then every verified chunk in the background
+  // Initial load: legacy set for instant hydration,
+  // then frequency chunks in the background
   useEffect(() => {
     let mounted = true;
     (async () => {
