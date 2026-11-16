@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import { CEFRLevel } from '../types';
+import { applyMovieTranscriptCorrections } from '../data/movieTranscriptCorrections';
 import { TimedSubtitle, SceneVocabulary, SceneQuiz, MovieSceneItem } from '../data/movieScenesData';
 import { verifyYouTubeVideo, VideoVerificationStatus, extractYouTubeId } from './videoVerificationService';
 import { supabase } from './authService';
@@ -11087,7 +11088,7 @@ const VERIFIED_SEEDS: EducationalVideoItem[] = [
 
 // Helper to get all videos
 export function getStoredVideos(): EducationalVideoItem[] {
-  if (typeof window === 'undefined') return VERIFIED_SEEDS;
+  if (typeof window === 'undefined') return VERIFIED_SEEDS.map(applyMovieTranscriptCorrections);
   try {
     const raw = localStorage.getItem(STORAGE_CATALOG_KEY);
     if (raw) {
@@ -11096,12 +11097,12 @@ export function getStoredVideos(): EducationalVideoItem[] {
       const mergedMap = new Map<string, EducationalVideoItem>();
       VERIFIED_SEEDS.forEach(v => mergedMap.set(v.youtubeId, v));
       parsed.forEach(v => mergedMap.set(v.youtubeId, v));
-      return Array.from(mergedMap.values());
+      return Array.from(mergedMap.values()).map(applyMovieTranscriptCorrections);
     }
   } catch {
     // fallback
   }
-  return VERIFIED_SEEDS;
+  return VERIFIED_SEEDS.map(applyMovieTranscriptCorrections);
 }
 
 export function saveStoredVideos(videos: EducationalVideoItem[]): void {
@@ -11365,7 +11366,7 @@ export function getRecentlyWatched(): EducationalVideoItem[] {
   if (typeof window === 'undefined') return [];
   try {
     const raw = localStorage.getItem(STORAGE_RECENTLY_WATCHED_KEY);
-    return raw ? JSON.parse(raw) : [];
+    return raw ? (JSON.parse(raw) as EducationalVideoItem[]).map(applyMovieTranscriptCorrections) : [];
   } catch {
     return [];
   }
@@ -11385,7 +11386,7 @@ export function getSavedVideos(): EducationalVideoItem[] {
   if (typeof window === 'undefined') return [];
   try {
     const raw = localStorage.getItem(STORAGE_SAVED_VIDEOS_KEY);
-    return raw ? JSON.parse(raw) : [];
+    return raw ? (JSON.parse(raw) as EducationalVideoItem[]).map(applyMovieTranscriptCorrections) : [];
   } catch {
     return [];
   }
