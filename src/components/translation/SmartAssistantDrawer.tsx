@@ -30,14 +30,14 @@ interface SmartAssistantDrawerProps {
   mode: string;
 }
 
-const QUICK_PROMPTS = [
-  'لماذا تم اختيار هذه الترجمة بالتحديد؟',
-  'اجعل الجملة تبدو أكثر طبيعية بين المتحدثين الأصليين.',
-  'صغ هذه الجملة لتناسب رسالة بريد إلكتروني رسمية (Corporate Email).',
-  'أعطني 5 تعبيرات وبدائل لغوية أخرى لنفس المعنى.',
-  'اشرح التعبير الاصطلاحي والقواعد في هذه الجملة.',
-  'هل الجملة صحيحة قواعدياً بنسبة 100%؟',
-  'بسّط هذه الجملة لمستوى مبتدئ A2.',
+const QUICK_PROMPT_KEYS = [
+  'sad.q1',
+  'sad.q2',
+  'sad.q3',
+  'sad.q4',
+  'sad.q5',
+  'sad.q6',
+  'sad.q7',
 ];
 
 export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
@@ -54,7 +54,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
     {
       id: 'welcome',
       role: 'assistant',
-      content: `أهلاً بك! أنا مساعد الترجمة اللغوي الذكي في Henglish Academy. أنا متصل مباشرة بالترجمة الحالية ومستعد للإجابة عن أي استفسار حول الصياغة، النبرة، القواعد، أو تحويل الجملة لإيميل احترافي!`,
+      content: t('sad.welcome'),
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
@@ -105,7 +105,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
       const errorMsg: AssistantChatMessage = {
         id: `err_${Date.now()}`,
         role: 'assistant',
-        content: isAiServiceUnavailable(err) ? t('ai.unavailable') : 'عذراً، حدث خطأ مؤقت في الاتصال بمساعد الترجمة الذكي. تفضل بالمحاولة مجدداً.',
+        content: isAiServiceUnavailable(err) ? t('ai.unavailable') : t('sad.tempError'),
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
       setMessages(prev => [...prev, errorMsg]);
@@ -129,10 +129,10 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
         <div className="flex items-center gap-2">
           <div className="flex flex-col text-right">
             <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
-              <span>المساعد اللغوي للترجمة</span>
+              <span>{t('sad.title')}</span>
               <Sparkles className="w-3.5 h-3.5 text-[#ffb84d]" />
             </h3>
-            <span className="text-[11px] text-[#41e7ff]">خبير سياقي متفاعل</span>
+            <span className="text-[11px] text-[#41e7ff]">{t('sad.subtitle')}</span>
           </div>
           <div className="p-2 rounded-xl bg-[#41e7ff]/20 text-[#41e7ff] border border-[#41e7ff]/30">
             <Bot className="w-5 h-5" />
@@ -143,7 +143,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
       {/* Context Pill Banner */}
       {originalText && (
         <div className="px-4 py-2.5 bg-black/40 border-b border-white/5 text-xs text-[#b9b6d5]">
-          <span className="text-white/60 block mb-0.5 text-[10px]">السياق النشط حالياً:</span>
+          <span className="text-white/60 block mb-0.5 text-[10px]">{t('sad.activeContext')}</span>
           <p className="text-white font-medium truncate max-w-full">
             "{originalText}"
           </p>
@@ -179,7 +179,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
         {isLoading && (
           <div className="flex items-center gap-2 text-xs text-[#41e7ff] p-3 rounded-2xl bg-white/5 border border-white/10 w-fit">
             <Sparkles className="w-4 h-4 animate-spin text-[#ffb84d]" />
-            <span>المساعد يفكر في إجابة دقيقة لسؤالك...</span>
+            <span>{t('sad.thinking')}</span>
           </div>
         )}
         <div ref={messagesEndRef} />
@@ -189,18 +189,18 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
       <div className="p-3 bg-black/30 border-t border-white/5">
         <span className="text-[10px] text-[#b9b6d5]/70 block mb-1.5 flex items-center gap-1">
           <Lightbulb className="w-3 h-3 text-[#ffb84d]" />
-          <span>أسئلة ومطالبات سريعة مقترحة:</span>
+          <span>{t('sad.quickPrompts')}</span>
         </span>
         <div className="flex gap-1.5 overflow-x-auto pb-1 scrollbar-thin">
-          {QUICK_PROMPTS.map((prompt, idx) => (
+          {QUICK_PROMPT_KEYS.map((promptKey, idx) => (
             <button
               key={idx}
               type="button"
-              onClick={() => handleSend(prompt)}
+              onClick={() => handleSend(t(promptKey))}
               disabled={isLoading}
               className="text-[11px] px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#41e7ff]/20 hover:text-[#41e7ff] border border-white/10 text-slate-300 whitespace-nowrap transition-colors cursor-pointer disabled:opacity-40"
             >
-              {prompt}
+              {t(promptKey)}
             </button>
           ))}
         </div>
@@ -219,7 +219,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
             type="text"
             value={inputValue}
             onChange={e => setInputValue(e.target.value)}
-            placeholder="اسأل المساعد عن أي تفصيلة في الترجمة..."
+            placeholder={t('sad.inputPlaceholder')}
             className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-[#b9b6d5]/40 focus:outline-none focus:border-[#41e7ff]"
           />
           <button
