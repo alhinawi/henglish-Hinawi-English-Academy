@@ -29,6 +29,7 @@ import {
 } from '../data/sourcesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound } from '../utils/audio';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const CATEGORY_ICONS: Record<SourceCategoryId, React.ReactNode> = {
   youtube: <Play className="w-5 h-5" />,
@@ -43,10 +44,10 @@ const CATEGORY_ICONS: Record<SourceCategoryId, React.ReactNode> = {
   arabic: <Flag className="w-5 h-5" />,
 };
 
-const COST_LABELS: Record<SourceCost, string> = {
-  free: 'مجاني',
-  freemium: 'مجاني وفيه مدفوع',
-  paid: 'مدفوع',
+const COST_LABEL_KEYS: Record<SourceCost, string> = {
+  free: 'so.costFree',
+  freemium: 'so.costFreemium',
+  paid: 'so.costPaid',
 };
 
 const COST_STYLES: Record<SourceCost, string> = {
@@ -58,6 +59,7 @@ const COST_STYLES: Record<SourceCost, string> = {
 const BOOKMARKS_KEY = 'henglish-source-bookmarks';
 
 export const SourcesPage: React.FC = () => {
+  const { t } = useLanguage();
   const [query, setQuery] = useState('');
   const appText = useAppTextMap('sourcesData');
   const [costFilter, setCostFilter] = useState<'all' | SourceCost>('all');
@@ -130,7 +132,7 @@ export const SourcesPage: React.FC = () => {
           </div>
           <button
             onClick={() => toggleBookmark(source.id)}
-            aria-label={isBookmarked ? 'إزالة من المحفوظات' : 'حفظ المصدر'}
+            aria-label={isBookmarked ? t('so.unbookmark') : t('so.bookmark')}
             className={`shrink-0 p-1.5 rounded-lg transition-colors cursor-pointer ${
               isBookmarked ? 'text-[#ffd166]' : 'text-[#b9b6d5] hover:text-white'
             }`}
@@ -144,7 +146,7 @@ export const SourcesPage: React.FC = () => {
         <div className="mt-auto flex items-center justify-between gap-2 flex-wrap">
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className={`px-2 py-0.5 rounded-full text-[11px] font-black border ${COST_STYLES[source.cost]}`}>
-              {COST_LABELS[source.cost]}
+              {t(COST_LABEL_KEYS[source.cost])}
             </span>
             {(source.levels.includes('ALL') ? ['A1-C2'] : source.levels).map(lv => (
               <span
@@ -163,7 +165,7 @@ export const SourcesPage: React.FC = () => {
             onClick={() => playSound('click')}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#41e7ff]/10 text-[#41e7ff] border border-[#41e7ff]/30 text-xs font-black hover:bg-[#41e7ff]/20 transition-colors"
           >
-            <span>افتح</span>
+            <span>{t('so.open')}</span>
             <ExternalLink className="w-3.5 h-3.5" />
           </a>
         </div>
@@ -179,21 +181,20 @@ export const SourcesPage: React.FC = () => {
           <Sparkles className="w-3.5 h-3.5" />
           <span dir="ltr">TOP RESOURCES</span>
         </div>
-        <h1 className="text-3xl sm:text-5xl font-black text-white">أهم المصادر</h1>
+        <h1 className="text-3xl sm:text-5xl font-black text-white">{t('so.title')}</h1>
         <p className="text-base text-[#b9b6d5] max-w-3xl leading-relaxed">
-          دستة المصادر المختارة بعناية: أهم القنوات، أهم الكتب لكل مستوى، أهم التطبيقات والمواقع للتعلم،
-          وأهم أماكن الممارسة مع النيتيف. كل لينك رسمي ومتحقق منه، من غير إعلانات ولا روابط مدفوعة.
+          {t('so.blurb')}
         </p>
         <div className="flex items-center gap-2 flex-wrap">
           <span className="px-3 py-1 rounded-full text-xs font-black bg-white/5 text-white border border-white/10" dir="ltr">
-            {LEARNING_SOURCES.length}+ مصدر
+            {LEARNING_SOURCES.length}+ {t('so.sources')}
           </span>
           <span className="px-3 py-1 rounded-full text-xs font-black bg-white/5 text-white border border-white/10">
-            {SOURCE_CATEGORIES.length} أقسام
+            {SOURCE_CATEGORIES.length} {t('so.categories')}
           </span>
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-black bg-emerald-400/10 text-emerald-300 border border-emerald-400/30">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>لينكات رسمية متحقق منها</span>
+            <span>{t('so.verified')}</span>
           </span>
         </div>
       </div>
@@ -207,7 +208,7 @@ export const SourcesPage: React.FC = () => {
               type="text"
               value={query}
               onChange={e => setQuery(e.target.value)}
-              placeholder="ابحث عن مصدر..."
+              placeholder={t('so.searchPlaceholder')}
               className="w-full bg-white/5 border border-white/10 rounded-xl py-2 pr-9 pl-3 text-white text-sm placeholder:text-[#b9b6d5]/60 focus:outline-none focus:border-[#41e7ff]/50"
             />
           </div>
@@ -217,8 +218,8 @@ export const SourcesPage: React.FC = () => {
               setFiltersOpen(o => !o);
             }}
             aria-expanded={filtersOpen}
-            aria-label="الفلاتر"
-            title="الفلاتر"
+            aria-label={t('so.filters')}
+            title={t('so.filters')}
             className={`shrink-0 inline-flex items-center justify-center p-2.5 rounded-xl border transition-colors cursor-pointer ${
               filtersOpen || costFilter !== 'all' || levelFilter !== 'all'
                 ? 'bg-[#41e7ff]/20 text-[#41e7ff] border-[#41e7ff]/50'
@@ -266,7 +267,7 @@ export const SourcesPage: React.FC = () => {
                       : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
                   }`}
                 >
-                  {c === 'all' ? 'الكل' : COST_LABELS[c]}
+                  {c === 'all' ? t('so.all') : t(COST_LABEL_KEYS[c])}
                 </button>
               ))}
               <span className="w-px h-5 bg-white/10 hidden sm:block" />
@@ -284,12 +285,12 @@ export const SourcesPage: React.FC = () => {
                       : 'bg-white/5 text-[#b9b6d5] border-white/10 hover:text-white'
                   }`}
                 >
-                  {lv === 'all' ? 'كل المستويات' : lv}
+                  {lv === 'all' ? t('so.allLevels') : lv}
                 </button>
               ))}
             </div>
             <div className="flex items-center gap-1.5 flex-wrap text-[11px] text-[#b9b6d5]">
-              <span>الأقسام:</span>
+              <span>{t('so.categoriesLabel')}</span>
               {SOURCE_CATEGORIES.map(cat => (
                 <a
                   key={cat.id}
@@ -308,8 +309,8 @@ export const SourcesPage: React.FC = () => {
 
       {totalShown === 0 && (
         <div className="glass-panel rounded-3xl border border-white/10 p-10 text-center space-y-2">
-          <p className="text-white font-black text-lg">مفيش نتائج مطابقة</p>
-          <p className="text-[#b9b6d5] text-sm">جرب كلمة بحث تانية أو غير الفلاتر.</p>
+          <p className="text-white font-black text-lg">{t('so.noResults')}</p>
+          <p className="text-[#b9b6d5] text-sm">{t('so.noResultsHint')}</p>
         </div>
       )}
 
@@ -355,9 +356,9 @@ export const SourcesPage: React.FC = () => {
               PRO TIPS
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-black text-white">نصايح للمتعلم المصري</h2>
+          <h2 className="text-2xl sm:text-3xl font-black text-white">{t('so.tipsTitle')}</h2>
           <p className="text-sm text-[#b9b6d5] max-w-2xl">
-            خلاصة تجارب آلاف المتعلمين: القواعد الصغيرة اللي بتفرق بين واحد بيتعلم سنين وواحد بيتقدم بجد.
+            {t('so.tipsBlurb')}
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -376,10 +377,8 @@ export const SourcesPage: React.FC = () => {
       {/* Honesty note */}
       <div className="glass-panel rounded-3xl border border-white/10 p-5 sm:p-6">
         <p className="text-[13px] leading-relaxed text-[#b9b6d5]">
-          <span className="text-white font-black">ملحوظة بصراحة: </span>
-          القايمة دي اختيار شخصي من فريق Henglish Academy، مش تصنيف رسمي لأي جهة، ومفيش فيها روابط
-          إعلانية أو عمولات. علامة مجاني ومدفوع بتعكس وضع المصدر وقت الإضافة، وممكن الأسعار تتغير عند
-          أصحابها. لقيت لينك مش شغال؟ قولنا ونصلحه.
+          <span className="text-white font-black">{t('so.disclaimerLabel')} </span>
+          {t('so.disclaimer')}
         </p>
       </div>
     </div>
