@@ -1,5 +1,5 @@
 // ==============================================================================
-// Henglish Academy - مركز الألعاب (Arcade Hub)
+// Henglish Academy - Arcade Hub
 // Fast arcade games built from real platform content + browser-side XP, daily
 // streak and best scores (Phase 1: localStorage until D1 tables are approved).
 // ==============================================================================
@@ -34,15 +34,15 @@ interface ArcadeEntry {
 const GAMES: ArcadeEntry[] = [
   ...PUZZLE_GAMES.map(g => ({ ...g, blurb: g.tagline, render: (x: () => void) => <PuzzleGame id={g.id} onExit={x}/> })),
   ...LAB_GAMES.map(g => ({ ...g, blurb: g.tagline, hot: g.id === 'daily-quest' || g.id === 'boss-run', render: (x: () => void) => <WordLabGame id={g.id} onExit={x}/> })),
-  { id: 'word-sprint', title: 'سباق الكلمات', icon: '⚡', blurb: 'ترجم أكبر عدد كلمات في 60 ثانية', hot: true, render: (x) => <WordSprintGame onExit={x} /> },
-  { id: 'sentence-scramble', title: 'رتّب الجملة', icon: '🧩', blurb: 'ركّب كلمات الجملة بالترتيب الصح' , render: (x) => <SentenceScrambleGame onExit={x} /> },
-  { id: 'word-match', title: 'اقتران الكلمات', icon: '🔗', blurb: 'وصّل كل كلمة إنجليزية بمعناها', render: (x) => <WordMatchGame onExit={x} /> },
-  { id: 'true-false', title: 'صح ولا غلط', icon: '✅', blurb: 'الترجمة دي بتاعت الجملة فعلا؟', render: (x) => <TrueFalseGame onExit={x} /> },
-  { id: 'gap-fill', title: 'املأ الفراغ', icon: '🎬', blurb: 'اختر الكلمة الناقصة في الجملة', render: (x) => <GapFillGame onExit={x} /> },
-  { id: 'listening-challenge', title: 'تحدي الاستماع', icon: '🎧', blurb: 'اسمع الجملة واكتبها صح', render: (x) => <ListeningChallengeGame onExit={x} /> },
-  { id: 'spelling-dash', title: 'سباق الإملاء', icon: '⌨️', blurb: 'تهجّى الكلمة من معناها', render: (x) => <SpellingDashGame onExit={x} /> },
-  { id: 'movie-memory', title: 'ذاكرة الأفلام', icon: '🃏', blurb: 'افتكر مكان كل جملة وترجمتها', render: (x) => <MovieMemoryGame onExit={x} /> },
-  { id: 'word-race', title: 'سباق الترجمة', icon: '🏁', blurb: 'اختار صح قبل ما الوقت يخلص', render: (x) => <WordRaceGame onExit={x} /> },
+  { id: 'word-sprint', title: 'ah.gameWordSprint', icon: '⚡', blurb: 'ah.gameWordSprintBlurb', hot: true, render: (x) => <WordSprintGame onExit={x} /> },
+  { id: 'sentence-scramble', title: 'ah.gameSentenceScramble', icon: '🧩', blurb: 'ah.gameSentenceScrambleBlurb' , render: (x) => <SentenceScrambleGame onExit={x} /> },
+  { id: 'word-match', title: 'ah.gameWordMatch', icon: '🔗', blurb: 'ah.gameWordMatchBlurb', render: (x) => <WordMatchGame onExit={x} /> },
+  { id: 'true-false', title: 'ah.gameTrueFalse', icon: '✅', blurb: 'ah.gameTrueFalseBlurb', render: (x) => <TrueFalseGame onExit={x} /> },
+  { id: 'gap-fill', title: 'ah.gameGapFill', icon: '🎬', blurb: 'ah.gameGapFillBlurb', render: (x) => <GapFillGame onExit={x} /> },
+  { id: 'listening-challenge', title: 'ah.gameListeningChallenge', icon: '🎧', blurb: 'ah.gameListeningChallengeBlurb', render: (x) => <ListeningChallengeGame onExit={x} /> },
+  { id: 'spelling-dash', title: 'ah.gameSpellingDash', icon: '⌨️', blurb: 'ah.gameSpellingDashBlurb', render: (x) => <SpellingDashGame onExit={x} /> },
+  { id: 'movie-memory', title: 'ah.gameMovieMemory', icon: '🃏', blurb: 'ah.gameMovieMemoryBlurb', render: (x) => <MovieMemoryGame onExit={x} /> },
+  { id: 'word-race', title: 'ah.gameWordRace', icon: '🏁', blurb: 'ah.gameWordRaceBlurb', render: (x) => <WordRaceGame onExit={x} /> },
 ];
 
 export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void }> = ({ onPlayingChange }) => {
@@ -67,32 +67,32 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
             <Zap className="w-5 h-5" />
             {progress.xp.toLocaleString('en-US')}
           </div>
-          <div className="text-[10px] font-bold text-[#8f8cb0] mt-1">نقاط XP</div>
+          <div className="text-[10px] font-bold text-[#8f8cb0] mt-1">{t('ah.xpPoints')}</div>
         </div>
         <div className="p-3.5 rounded-2xl bg-[#121124] border border-[#ffd166]/25 text-center">
           <div className="flex items-center justify-center gap-1.5 text-xl font-black text-[#ffd166]">
             <Flame className="w-5 h-5" />
             {progress.streakDays}
           </div>
-          <div className="text-[10px] font-bold text-[#8f8cb0] mt-1">أيام متتالية</div>
+          <div className="text-[10px] font-bold text-[#8f8cb0] mt-1">{t('ah.streakDays')}</div>
         </div>
         <div className="p-3.5 rounded-2xl bg-[#121124] border border-[#c4ff55]/25 text-center">
           <div className="flex items-center justify-center gap-1.5 text-xl font-black text-[#c4ff55]">
             <Trophy className="w-5 h-5" />
             {progress.totalPlays}
           </div>
-          <div className="text-[10px] font-bold text-[#8f8cb0] mt-1">جولة لعبتها</div>
+          <div className="text-[10px] font-bold text-[#8f8cb0] mt-1">{t('ah.plays')}</div>
         </div>
       </div>
 
       <div className="flex items-start gap-2 p-3 rounded-2xl bg-[#9b7bff]/10 border border-[#9b7bff]/25 text-[11px] text-[#cfc9f5] leading-relaxed">
         <Info className="w-4 h-4 shrink-0 mt-0.5 text-[#9b7bff]" />
         <span>
-          نقاطك وسلسلتك ونتائجك محفوظة على هذا المتصفح فقط. الترتيب الأسبوعي هنا لسجلاتك الشخصية، مش منافسين وهميين ولا ترتيب عالمي.
+          {t('ah.localNote')}
         </span>
       </div>
 
-      <div className="space-y-3"><div className="flex items-center justify-between"><h2 className="text-xl font-black text-white">اختار لعبتك</h2><span className="rounded-full bg-[#c4ff55]/10 px-3 py-1 text-xs text-[#c4ff55]">{GAMES.length} لعبة</span></div><input aria-label="ابحث عن لعبة" placeholder="دور على لعبة..." value={search} onChange={e => setSearch(e.target.value)} className="w-full rounded-2xl border border-white/15 bg-[#121124] p-3 text-white"/></div>
+      <div className="space-y-3"><div className="flex items-center justify-between"><h2 className="text-xl font-black text-white">{t('ah.pickGame')}</h2><span className="rounded-full bg-[#c4ff55]/10 px-3 py-1 text-xs text-[#c4ff55]">{GAMES.length} {t('ah.gameUnit')}</span></div><input aria-label={t('ah.searchAria')} placeholder={t('ah.searchPh')} value={search} onChange={e => setSearch(e.target.value)} className="w-full rounded-2xl border border-white/15 bg-[#121124] p-3 text-white"/></div>
       {/* Game cards */}
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         {GAMES.filter(g => (t(g.title) + t(g.blurb)).includes(search)).map((g) => {
@@ -107,7 +107,7 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
               <ArcadeIcon id={g.id}/>
               <h3 className="text-base font-black text-white">{t(g.title)}</h3>
               <p className="text-[11px] text-[#8f8cb0] leading-relaxed min-h-8">{t(g.blurb)}</p>
-              <div className="text-[10px] font-black text-[#ffd166]">أفضل نتيجة: {best}</div>
+              <div className="text-[10px] font-black text-[#ffd166]">{t('ah.bestResult')} {best}</div>
               <button
                 onClick={() => {
                   playSound('click');
@@ -117,16 +117,16 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
                   g.hot ? 'bg-[#ff4f9a] text-white hover:brightness-110' : 'bg-[#c4ff55] text-[#0c0b20] hover:brightness-110'
                 }`}
               >
-                العب دلوقتي
+                {t('ah.playNow')}
               </button>
             </div>
           );
         })}
       </div>
 
-      <section className="rounded-3xl border border-[#ffd166]/20 bg-[#121124] p-4 space-y-3"><h2 className="font-black text-white">🏆 أفضل جولاتك هذا الأسبوع</h2><p className="text-xs text-[#8f8cb0]">آخر 7 أيام • ترتيب شخصي على هذا الجهاز</p>{progress.history.filter(r => Date.now() - r.at < 7 * 86400000).sort((a,b) => b.xp - a.xp).slice(0,5).map((r,i) => <div key={r.at + '-' + i} className="flex justify-between border-t border-white/5 pt-2 text-xs text-[#b9b6d5]"><span>{i+1}. {t(GAMES.find(g => g.id === r.id)?.title || r.id)}</span><span dir="ltr">{r.xp} XP · {new Date(r.at).toLocaleDateString('en-GB')}</span></div>)}{!progress.history.length && <p className="text-sm text-[#b9b6d5]">خلّص أول جولة عشان يظهر رقمك هنا.</p>}</section>
+      <section className="rounded-3xl border border-[#ffd166]/20 bg-[#121124] p-4 space-y-3"><h2 className="font-black text-white">🏆 {t('ah.weeklyTitle')}</h2><p className="text-xs text-[#8f8cb0]">{t('ah.weeklyNote')}</p>{progress.history.filter(r => Date.now() - r.at < 7 * 86400000).sort((a,b) => b.xp - a.xp).slice(0,5).map((r,i) => <div key={r.at + '-' + i} className="flex justify-between border-t border-white/5 pt-2 text-xs text-[#b9b6d5]"><span>{i+1}. {t(GAMES.find(g => g.id === r.id)?.title || r.id)}</span><span dir="ltr">{r.xp} XP · {new Date(r.at).toLocaleDateString('en-GB')}</span></div>)}{!progress.history.length && <p className="text-sm text-[#b9b6d5]">{t('ah.emptyHistory')}</p>}</section>
       <p className="text-center text-[10px] text-[#5a5878] flex items-center justify-center gap-1">
-        <Gamepad2 className="w-3 h-3" /> كل جولة بتكسبك XP - العب كل يوم عشان تحافظ على السلسلة
+        <Gamepad2 className="w-3 h-3" /> {t('ah.footerNote')}
       </p>
     </div>
   );
