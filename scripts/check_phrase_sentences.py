@@ -19,7 +19,7 @@ import re
 import sys
 
 AR = re.compile(r'[\u0600-\u06FF]')
-FILE_RE = re.compile(r'^[a-z]{2,4}-sent-(\d{6})-(\d{6})\.json$')
+FILE_RE = re.compile(r'^[a-z0-9-]+-sent-(\d{6})-(\d{6})\.json$')
 
 
 def fail(errors, where, msg):
