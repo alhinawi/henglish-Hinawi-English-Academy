@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useRef, useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
 import { playSound, speakMultilingualText } from '../../utils/audio';
 import {
@@ -46,6 +47,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
   onStartVoiceInput,
   isListening = false,
 }) => {
+  const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -104,10 +106,10 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
       {/* Editor Header Bar */}
       <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
         <span className="font-medium text-white flex items-center gap-1.5">
-          <span>النص الأصلي (Source Text)</span>
+          <span>{t('se.title')}</span>
           {sourceLang === 'auto' && (
             <span className="text-[10px] text-[#41e7ff] bg-[#41e7ff]/10 px-2 py-0.5 rounded-md">
-              كشف تلقائي
+              {t('se.auto')}
             </span>
           )}
         </span>
@@ -117,7 +119,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
           <button
             type="button"
             onClick={handlePaste}
-            title="لصق من الحافظة"
+            title={t('se.paste')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
           >
             <ClipboardPaste className="w-3.5 h-3.5" />
@@ -128,7 +130,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
             type="button"
             onClick={handleCopy}
             disabled={!text.trim()}
-            title="نسخ النص الأصلي"
+            title={t('se.copy')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
           >
             {copied ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
@@ -139,7 +141,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
             type="button"
             onClick={handleSpeak}
             disabled={!text.trim()}
-            title="استمع للنطق الأصلي"
+            title={t('se.speak')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
           >
             <Volume2 className="w-3.5 h-3.5" />
@@ -150,7 +152,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
             <button
               type="button"
               onClick={handleClear}
-              title="مسح النص"
+              title={t('se.clear')}
               className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-red-400 transition-colors cursor-pointer"
             >
               <Trash2 className="w-3.5 h-3.5" />
@@ -167,7 +169,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
           onChange={e => onChangeText(e.target.value)}
           onKeyDown={handleKeyDown}
           dir={textDirection}
-          placeholder={isRtl ? 'اكتب أو الصق النص هنا للترجمة الفورية...' : 'Type or paste text here to translate...'}
+          placeholder={t('se.placeholder')}
           className={`w-full flex-1 min-h-[160px] bg-transparent resize-none text-white text-base md:text-lg leading-relaxed focus:outline-none placeholder-[#b9b6d5]/40 ${textAlign}`}
         />
 
@@ -175,7 +177,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
         {!text && (
           <div className="pt-2 border-t border-white/5">
             <span className="text-[11px] text-[#b9b6d5]/70 block mb-2 text-right">
-              جرب نماذج تعليمية مميزة بنقرة واحدة:
+              {t('se.samples')}
             </span>
             <div className="flex flex-wrap gap-1.5">
               {SAMPLE_SENTENCES.map((sample, idx) => (
@@ -208,7 +210,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
                 playSound('click');
                 onStartVoiceInput();
               }}
-              title="إدخال صوتي عبر الميكروفون"
+              title={t('se.microphone')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs transition-colors cursor-pointer ${
                 isListening
                   ? 'bg-red-500/20 border border-red-500/50 text-red-400 animate-pulse font-semibold'
@@ -216,13 +218,13 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
               }`}
             >
               {isListening ? <MicOff className="w-3.5 h-3.5" /> : <Mic className="w-3.5 h-3.5 text-[#41e7ff]" />}
-              <span>{isListening ? 'جارٍ الاستماع...' : 'تحدث الآن'}</span>
+              <span>{isListening ? t('se.listening') : t('se.speakNow')}</span>
             </button>
           )}
 
           {/* Character counter */}
           <span className="text-xs text-[#b9b6d5]/70">
-            {text.length} حرف
+            {text.length} {t('se.characters')}
           </span>
         </div>
 
@@ -239,11 +241,11 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
           {isLoading ? (
             <>
               <div className="w-4 h-4 border-2 border-black border-t-transparent rounded-full animate-spin" />
-              <span>جارٍ الترجمة الذكية...</span>
+              <span>{t('se.loading')}</span>
             </>
           ) : (
             <>
-              <span>ترجم الآن</span>
+              <span>{t('se.translate')}</span>
               <CornerDownLeft className="w-3.5 h-3.5 opacity-80" />
             </>
           )}

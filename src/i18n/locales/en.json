@@ -2396,5 +2396,19 @@
   "to.hint": "Click a word to view available analysis",
   "to.explain": "Translation and grammar explanation",
   "to.characters": "characters",
-  "to.footer": "AI translation service"
+  "to.footer": "AI translation service",
+  "se.title": "Source Text",
+  "se.auto": "Auto detect",
+  "se.paste": "Paste from clipboard",
+  "se.copy": "Copy source text",
+  "se.speak": "Listen to source text",
+  "se.clear": "Clear text",
+  "se.samples": "Try an educational sample:",
+  "se.microphone": "Microphone voice input",
+  "se.listening": "Listening...",
+  "se.speakNow": "Speak now",
+  "se.characters": "characters",
+  "se.loading": "Translating...",
+  "se.translate": "Translate now",
+  "se.placeholder": "Type or paste text here to translate..."
 }
