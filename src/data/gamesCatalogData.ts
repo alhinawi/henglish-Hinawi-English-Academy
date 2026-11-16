@@ -504,7 +504,7 @@ export const COMPLETE_GAMES_CATALOG: GameDefinition[] = [
   {
     id: 'ai-duel',
     titleEn: 'AI Opponent Duel',
-    titleAr: 'مبارزة الذكاء الاصطناعي',
+    titleAr: 'مبارزة الروبوتات',
     category: 'competitive',
     cefrLevel: 'A1 - C2',
     descriptionAr: 'ادخل في مواجهة مباشرة وسريعة ضد روبوتات ذكية بمستويات صعوبة متنوعة.',
