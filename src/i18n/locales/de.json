@@ -2477,5 +2477,20 @@
   "ra.explanation": "Erklärung:",
   "ra.questionCount": "Fragen: {count}",
   "ra.wordCount": "Wörter: {count}",
-  "ra.category": "Originaler Übungstext"
+  "ra.category": "Originaler Übungstext",
+  "vs.close": "Schließen",
+  "vs.title": "Stimmeinstellungen",
+  "vs.intro": "Wähle eine Stimmvorgabe und Sprechgeschwindigkeit. Die Wiedergabe hängt vom Sprachdienst oder deinem Browser ab.",
+  "vs.female": "Weibliche Stimmen",
+  "vs.male": "Männliche Stimmen",
+  "vs.us": "Amerikanischer Akzent",
+  "vs.uk": "Britischer Akzent",
+  "vs.selected": "Ausgewählt",
+  "vs.stop": "Audio stoppen",
+  "vs.preview": "Stimmvorgabe anhören",
+  "vs.speed": "Sprechgeschwindigkeit:",
+  "vs.muted": "Stumm",
+  "vs.enabled": "Ton an",
+  "vs.done": "Fertig",
+  "vs.all": "Alle Stimmen"
 }

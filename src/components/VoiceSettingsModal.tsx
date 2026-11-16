@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useState, useEffect } from "react";
+import { useLanguage } from "../i18n/LanguageContext";
 import {
   getVoiceSettings,
   setVoiceGender,
@@ -46,6 +47,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
   isOpen,
   onClose,
 }) => {
+  const { t } = useLanguage();
   const appText = useAppTextMap('voicesCatalog');
   const [settings, setSettings] = useState(getVoiceSettings());
   const [filter, setFilter] = useState<FilterCategory>("all");
@@ -133,7 +135,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
             <button
               onClick={onClose}
               className="p-2 rounded-xl text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
-              aria-label="إغلاق"
+              aria-label={t('vs.close')}
             >
               <X className="w-5 h-5" />
             </button>
@@ -144,10 +146,10 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
               </div>
               <div>
                 <h3 className="text-lg sm:text-xl font-black text-white">
-                  استوديو الأصوات الطبيعية (ElevenLabs AI Studio)
+                  {t('vs.title')}
                 </h3>
                 <p className="text-xs text-[#dedbf4]">
-                  اختر من بين تشكيلة أصوات حريمي ورجالي طبيعية باللكنتين الأمريكية والبريطانية
+                  {t('vs.intro')}
                 </p>
               </div>
             </div>
@@ -156,11 +158,11 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
           {/* Filter Chips Bar */}
           <div className="flex items-center gap-2 overflow-x-auto pb-1 shrink-0 custom-scrollbar">
             {[
-              { id: "all" as FilterCategory, label: `جميع الأصوات (${VOICES_CATALOG.length})` },
-              { id: "female" as FilterCategory, label: "أصوات حريمي (Female)" },
-              { id: "male" as FilterCategory, label: "أصوات رجالي (Male)" },
-              { id: "US" as FilterCategory, label: "لكنة أمريكية (American)" },
-              { id: "UK" as FilterCategory, label: "لكنة بريطانية (British)" },
+              { id: "all" as FilterCategory, label: `${t('vs.all')} (${VOICES_CATALOG.length})` },
+              { id: "female" as FilterCategory, label: t('vs.female') },
+              { id: "male" as FilterCategory, label: t('vs.male') },
+              { id: "US" as FilterCategory, label: t('vs.us') },
+              { id: "UK" as FilterCategory, label: t('vs.uk') },
             ].map((f) => (
               <button
                 key={f.id}
@@ -202,7 +204,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                             : "bg-white/10 text-white border-white/10"
                         }`}
                       >
-                        {voice.gender === "female" ? "" : ""}
+                        <User className="w-5 h-5" />
                       </div>
 
                       {/* Info */}
@@ -214,7 +216,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                           <span className="text-[10px] font-black tracking-wider text-[#41e7ff] bg-[#41e7ff]/10 px-1.5 py-0.5 rounded-md border border-[#41e7ff]/20">{voice.accent}</span>
                           {isSelected && (
                             <span className="px-1.5 py-0.5 rounded bg-[#ffd166]/20 text-[#ffd166] text-[10px] font-bold border border-[#ffd166]/40">
-                              مُفعّل الآن
+                              {t('vs.selected')}
                             </span>
                           )}
                         </div>
@@ -243,7 +245,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                           ? "bg-[#ffd166] text-[#0c0b20] hover:scale-110 shadow-md font-bold"
                           : "bg-white/10 hover:bg-white/20 text-white"
                       }`}
-                      title={isPlaying ? "إيقاف الصوت" : "استمع لعينة من هذا الصوت"}
+                      title={isPlaying ? t('vs.stop') : t('vs.preview')}
                     >
                       {isPlaying ? (
                         <Square className="w-4 h-4 fill-current" />
@@ -265,7 +267,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
               <div className="flex items-center gap-2 w-full sm:w-auto">
                 <span className="text-[#b9b6d5] font-bold shrink-0 flex items-center gap-1">
                   <Gauge className="w-3.5 h-3.5 text-[#ffd166]" />
-                  سرعة النطق:
+                  {t('vs.speed')}
                 </span>
                 <div className="grid grid-cols-4 gap-1.5 flex-1 sm:flex-initial">
                   {[
@@ -302,12 +304,12 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                   {settings.isMuted ? (
                     <>
                       <VolumeX className="w-3.5 h-3.5" />
-                      <span>صوت مكتوم</span>
+                      <span>{t('vs.muted')}</span>
                     </>
                   ) : (
                     <>
                       <Volume2 className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>الصوت مفعل</span>
+                      <span>{t('vs.enabled')}</span>
                     </>
                   )}
                 </button>
@@ -316,7 +318,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                   onClick={onClose}
                   className="px-5 py-1.5 rounded-xl bg-gradient-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs hover:brightness-110 shadow-lg cursor-pointer"
                 >
-                  حفظ واعتماد
+                  {t('vs.done')}
                 </button>
               </div>
 
