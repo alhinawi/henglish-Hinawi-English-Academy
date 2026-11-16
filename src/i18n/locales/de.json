@@ -2681,5 +2681,10 @@
   "ss.loading": "Sätze werden vorbereitet...",
   "ss.empty": "Tippe die Wörter unten in der richtigen Reihenfolge an",
   "ss.correct": "Richtige Antwort:",
-  "ss.check": "Prüfen"
+  "ss.check": "Prüfen",
+  "md.listen": "Aussprache anhören",
+  "md.copyText": "Text kopieren",
+  "md.copied": "Kopiert",
+  "md.copy": "Kopieren",
+  "md.expression": "Englischer Ausdruck / Formel"
 }
