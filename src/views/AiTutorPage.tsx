@@ -111,7 +111,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         id: `welcome-${activeMode}-${Date.now()}`,
         sender: 'assistant',
         content: activeAssistant.welcomeGreetingAr,
-        timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
       };
 
@@ -205,14 +205,14 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       id: `welcome-${activeMode}-${Date.now()}`,
       sender: 'assistant',
       content: `أهلاً بك في جلسة جديدة مع **${activeAssistant.nameAr}**! كيف يمكنني مساعدتك الآن؟`,
-      timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
+      timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
     };
 
     const newSession = createNewSession(
       userProfile.id,
       activeMode,
-      `جلسة جديدة (${new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' })})`,
+      `جلسة جديدة (${new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' })})`,
       [welcomeMsg]
     );
 
@@ -271,7 +271,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       id: `user-${Date.now()}`,
       sender: 'user',
       content: text.trim(),
-      timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
+      timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
     };
 
@@ -294,7 +294,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       id: assistantMsgId,
       sender: 'assistant',
       content: '',
-      timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
+      timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
       isStreaming: true,
     };
@@ -344,7 +344,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         id: assistantMsgId,
         sender: 'assistant',
         content: response.text || accumulatedStreamingText,
-        timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
         grammarCorrections: response.corrections,
@@ -369,7 +369,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         id: `ai-err-${Date.now()}`,
         sender: 'assistant',
         content: 'عذراً، حدث خطأ مؤقت في الاتصال بالخدمة. يرجى المحاولة مرة أخرى.',
-        timestamp: new Date().toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
       };
@@ -624,7 +624,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                           <div className="flex-1 truncate">
                             <div className="text-xs font-bold truncate">{s.title}</div>
                             <div className="text-[10px] text-[#b9b6d5] mt-0.5">
-                              {s.messages.length} رسالة • {new Date(s.updatedAt).toLocaleDateString('ar-EG')}
+                              {s.messages.length} رسالة • {new Date(s.updatedAt).toLocaleDateString('ar-EG-u-nu-latn')}
                             </div>
                           </div>
 

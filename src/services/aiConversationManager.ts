@@ -75,7 +75,7 @@ export function createNewSession(
     id: sessionId,
     userId: userId || 'guest-learner',
     mode,
-    title: title || `محادثة جديدة (${new Date().toLocaleDateString('ar-EG', { month: 'short', day: 'numeric' })})`,
+    title: title || `محادثة جديدة (${new Date().toLocaleDateString('ar-EG-u-nu-latn', { month: 'short', day: 'numeric' })})`,
     createdAt: now,
     updatedAt: now,
     messages: initialMessages || [],

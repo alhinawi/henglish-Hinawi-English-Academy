@@ -24,7 +24,7 @@ type GateState = 'loading' | 'anon' | 'denied' | 'admin' | 'error';
 
 const day = (iso: string) => {
   const d = new Date(iso);
-  return isNaN(d.getTime()) ? '' : d.toLocaleDateString('ar-EG', { day: 'numeric', month: 'short' });
+  return isNaN(d.getTime()) ? '' : d.toLocaleDateString('ar-EG-u-nu-latn', { day: 'numeric', month: 'short' });
 };
 
 /**
