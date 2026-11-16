@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "slg-000801",
+   "sentences": [
+    {
+     "en": "He has a nice whip.",
+     "ar": "عنده عربية حلوة."
+    },
+    {
+     "en": "She drove her whip.",
+     "ar": "ساقت عربيتها."
+    },
+    {
+     "en": "He bought a new whip.",
+     "ar": "اشترى عربية جديدة."
+    },
+    {
+     "en": "She washed her whip.",
+     "ar": "غسلت عربيتها."
+    },
+    {
+     "en": "He has a fast whip.",
+     "ar": "عنده عربية سريعة."
+    },
+    {
+     "en": "She parked her whip.",
+     "ar": "ركنت عربيتها."
+    },
+    {
+     "en": "He has a clean whip.",
+     "ar": "عنده عربية نضيفة."
+    },
+    {
+     "en": "She drove her whip to work.",
+     "ar": "ساقت عربيتها للشغل."
+    },
+    {
+     "en": "He has a whip and shows off.",
+     "ar": "عنده عربية وبيستعرض."
+    },
+    {
+     "en": "She has a whip and loves it.",
+     "ar": "عندها عربية وبتحبها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000802",
+   "sentences": [
+    {
+     "en": "He has a nice ride.",
+     "ar": "عنده عربية حلوة."
+    },
+    {
+     "en": "She drove her ride.",
+     "ar": "ساقت عربيتها."
+    },
+    {
+     "en": "He bought a new ride.",
+     "ar": "اشترى عربية جديدة."
+    },
+    {
+     "en": "She washed her ride.",
+     "ar": "غسلت عربيتها."
+    },
+    {
+     "en": "He has a fast ride.",
+     "ar": "عنده عربية سريعة."
+    },
+    {
+     "en": "She parked her ride.",
+     "ar": "ركنت عربيتها."
+    },
+    {
+     "en": "He has a clean ride.",
+     "ar": "عنده عربية نضيفة."
+    },
+    {
+     "en": "She drove her ride to work.",
+     "ar": "ساقت عربيتها للشغل."
+    },
+    {
+     "en": "He has a ride and shows off.",
+     "ar": "عنده عربية وبيستعرض."
+    },
+    {
+     "en": "She has a ride and loves it.",
+     "ar": "عندها عربية وبتحبها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000803",
+   "sentences": [
+    {
+     "en": "He has nice wheels.",
+     "ar": "عنده عربية حلوة."
+    },
+    {
+     "en": "She got new wheels.",
+     "ar": "جابت عربية جديدة."
+    },
+    {
+     "en": "He has fast wheels.",
+     "ar": "عنده عربية سريعة."
+    },
+    {
+     "en": "She drove her wheels.",
+     "ar": "ساقت عربيتها."
+    },
+    {
+     "en": "He has clean wheels.",
+     "ar": "عنده عربية نضيفة."
+    },
+    {
+     "en": "She parked her wheels.",
+     "ar": "ركنت عربيتها."
+    },
+    {
+     "en": "He has wheels and shows off.",
+     "ar": "عنده عربية وبيستعرض."
+    },
+    {
+     "en": "She has wheels and loves them.",
+     "ar": "عندها عربية وبتحبها."
+    },
+    {
+     "en": "He bought wheels for the summer.",
+     "ar": "اشترى عربية للصيف."
+    },
+    {
+     "en": "She has wheels and drives everywhere.",
+     "ar": "عندها عربية وبتسوق في كل حتة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000804",
+   "sentences": [
+    {
+     "en": "He drives a beater.",
+     "ar": "سايق عربية قديمة ومضروبة."
+    },
+    {
+     "en": "She has a beater.",
+     "ar": "عندها عربية قديمة ومضروبة."
+    },
+    {
+     "en": "He drives a beater to work.",
+     "ar": "سايق عربية قديمة للشغل."
+    },
+    {
+     "en": "She has a beater and loves it.",
+     "ar": "عندها عربية قديمة وبتحبها."
+    },
+    {
+     "en": "He drives a beater and saves money.",
+     "ar": "سايق عربية قديمة وبيوفر فلوس."
+    },
+    {
+     "en": "She has a beater and fixes it.",
+     "ar": "عندها عربية قديمة وبتصلحها."
+    },
+    {
+     "en": "He drives a beater and jokes about it.",
+     "ar": "سايق عربية قديمة وبيضحك عليها."
+    },
+    {
+     "en": "She has a beater and drives carefully.",
+     "ar": "عندها عربية قديمة وبتسوق بهدوء."
+    },
+    {
+     "en": "He drives a beater and parks anywhere.",
+     "ar": "سايق عربية قديمة وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a beater and is proud.",
+     "ar": "عندها عربية قديمة وفخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000805",
+   "sentences": [
+    {
+     "en": "He drives a clunker.",
+     "ar": "سايق عربية قديمة صدئة."
+    },
+    {
+     "en": "She has a clunker.",
+     "ar": "عندها عربية قديمة صدئة."
+    },
+    {
+     "en": "He drives a clunker to work.",
+     "ar": "سايق عربية قديمة صدئة للشغل."
+    },
+    {
+     "en": "She has a clunker and fixes it.",
+     "ar": "عندها عربية قديمة صدئة وبتصلحها."
+    },
+    {
+     "en": "He drives a clunker and saves money.",
+     "ar": "سايق عربية قديمة صدئة وبيوفر فلوس."
+    },
+    {
+     "en": "She has a clunker and jokes about it.",
+     "ar": "عندها عربية قديمة صدئة وبتضحك عليها."
+    },
+    {
+     "en": "He drives a clunker and parks anywhere.",
+     "ar": "سايق عربية قديمة صدئة وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a clunker and is proud.",
+     "ar": "عندها عربية قديمة صدئة وفخورة."
+    },
+    {
+     "en": "He drives a clunker and doesn't care.",
+     "ar": "سايق عربية قديمة صدئة ومش مهتم."
+    },
+    {
+     "en": "She has a clunker and drives slowly.",
+     "ar": "عندها عربية قديمة صدئة وبتسوق ببطء."
+    }
+   ]
+  },
+  {
+   "id": "slg-000806",
+   "sentences": [
+    {
+     "en": "He drives a jalopy.",
+     "ar": "سايق عربية قديمة جدًا ومتهالكة."
+    },
+    {
+     "en": "She has a jalopy.",
+     "ar": "عندها عربية قديمة جدًا ومتهالكة."
+    },
+    {
+     "en": "He drives a jalopy to work.",
+     "ar": "سايق عربية قديمة جدًا للشغل."
+    },
+    {
+     "en": "She has a jalopy and fixes it.",
+     "ar": "عندها عربية قديمة جدًا وبتصلحها."
+    },
+    {
+     "en": "He drives a jalopy and saves money.",
+     "ar": "سايق عربية قديمة جدًا وبيوفر فلوس."
+    },
+    {
+     "en": "She has a jalopy and jokes about it.",
+     "ar": "عندها عربية قديمة جدًا وبتضحك عليها."
+    },
+    {
+     "en": "He drives a jalopy and parks anywhere.",
+     "ar": "سايق عربية قديمة جدًا وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a jalopy and is proud.",
+     "ar": "عندها عربية قديمة جدًا وفخورة."
+    },
+    {
+     "en": "He drives a jalopy and doesn't care.",
+     "ar": "سايق عربية قديمة جدًا ومش مهتم."
+    },
+    {
+     "en": "She has a jalopy and drives slowly.",
+     "ar": "عندها عربية قديمة جدًا وبتسوق ببطء."
+    }
+   ]
+  },
+  {
+   "id": "slg-000807",
+   "sentences": [
+    {
+     "en": "He drives a heap.",
+     "ar": "سايق عربية قديمة كومة خردة."
+    },
+    {
+     "en": "She has a heap.",
+     "ar": "عندها عربية قديمة كومة خردة."
+    },
+    {
+     "en": "He drives a heap to work.",
+     "ar": "سايق عربية قديمة كومة خردة للشغل."
+    },
+    {
+     "en": "She has a heap and fixes it.",
+     "ar": "عندها عربية قديمة كومة خردة وبتصلحها."
+    },
+    {
+     "en": "He drives a heap and saves money.",
+     "ar": "سايق عربية قديمة كومة خردة وبيوفر فلوس."
+    },
+    {
+     "en": "She has a heap and jokes about it.",
+     "ar": "عندها عربية قديمة كومة خردة وبتضحك عليها."
+    },
+    {
+     "en": "He drives a heap and parks anywhere.",
+     "ar": "سايق عربية قديمة كومة خردة وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a heap and is proud.",
+     "ar": "عندها عربية قديمة كومة خردة وفخورة."
+    },
+    {
+     "en": "He drives a heap and doesn't care.",
+     "ar": "سايق عربية قديمة كومة خردة ومش مهتم."
+    },
+    {
+     "en": "She has a heap and drives slowly.",
+     "ar": "عندها عربية قديمة كومة خردة وبتسوق ببطء."
+    }
+   ]
+  },
+  {
+   "id": "slg-000808",
+   "sentences": [
+    {
+     "en": "He bought a lemon.",
+     "ar": "اشترى عربية فيها عيوب."
+    },
+    {
+     "en": "She bought a lemon.",
+     "ar": "اشترت عربية فيها عيوب."
+    },
+    {
+     "en": "He got a lemon and returned it.",
+     "ar": "جاب عربية فيها عيوب ورجعها."
+    },
+    {
+     "en": "She got a lemon and sued.",
+     "ar": "جابت عربية فيها عيوب وقاضت."
+    },
+    {
+     "en": "He bought a lemon and was upset.",
+     "ar": "اشترى عربية فيها عيوب وكان زعلان."
+    },
+    {
+     "en": "She bought a lemon and complained.",
+     "ar": "اشترت عربية فيها عيوب واشتكت."
+    },
+    {
+     "en": "He got a lemon and fixed it.",
+     "ar": "جاب عربية فيها عيوب وصلحها."
+    },
+    {
+     "en": "She got a lemon and sold it.",
+     "ar": "جابت عربية فيها عيوب وباعتها."
+    },
+    {
+     "en": "He bought a lemon and learned.",
+     "ar": "اشترى عربية فيها عيوب واتعلم."
+    },
+    {
+     "en": "She bought a lemon and warned others.",
+     "ar": "اشترت عربية فيها عيوب وحذرت الناس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000809",
+   "sentences": [
+    {
+     "en": "He drives a hot rod.",
+     "ar": "سايق عربية قديمة متعدلة."
+    },
+    {
+     "en": "She has a hot rod.",
+     "ar": "عندها عربية قديمة متعدلة."
+    },
+    {
+     "en": "He built a hot rod.",
+     "ar": "بنى عربية قديمة متعدلة."
+    },
+    {
+     "en": "She drives a hot rod to shows.",
+     "ar": "بتسوق عربية قديمة متعدلة للمعارض."
+    },
+    {
+     "en": "He has a hot rod and races.",
+     "ar": "عنده عربية قديمة متعددة وبي سباق."
+    },
+    {
+     "en": "She has a hot rod and wins.",
+     "ar": "عندها عربية قديمة متعدلة وبتكسب."
+    },
+    {
+     "en": "He has a hot rod and shows off.",
+     "ar": "عنده عربية قديمة متعدلة وبيستعرض."
+    },
+    {
+     "en": "She has a hot rod and is proud.",
+     "ar": "عندها عربية قديمة متعدلة وفخورة."
+    },
+    {
+     "en": "He has a hot rod and loves it.",
+     "ar": "عنده عربية قديمة متعددة وبيحبها."
+    },
+    {
+     "en": "She has a hot rod and drives fast.",
+     "ar": "عندها عربية قديمة متعدلة وبتسوق بسرعة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000810",
+   "sentences": [
+    {
+     "en": "His car is pimped out.",
+     "ar": "عربيته متعدلة ومزخرفة."
+    },
+    {
+     "en": "Her car is pimped out.",
+     "ar": "عربيتها متعدلة ومزخرفة."
+    },
+    {
+     "en": "He has a pimped out ride.",
+     "ar": "عنده عربية متعدلة ومزخرفة."
+    },
+    {
+     "en": "She has a pimped out car.",
+     "ar": "عندها عربية متعدلة ومزخرفة."
+    },
+    {
+     "en": "He got his car pimped out.",
+     "ar": "عدّل عربيته وزخرفها."
+    },
+    {
+     "en": "She got her car pimped out.",
+     "ar": "عدلت عربيتها وزخرفتها."
+    },
+    {
+     "en": "He has a pimped out truck.",
+     "ar": "عنده عربية نقل متعدلة ومزخرفة."
+    },
+    {
+     "en": "She has a pimped out van.",
+     "ar": "عندها عربية فان متعدلة ومزخرفة."
+    },
+    {
+     "en": "He has a pimped out motorcycle.",
+     "ar": "عنده موتوسيكل متعدل ومزخرف."
+    },
+    {
+     "en": "She has a pimped out bicycle.",
+     "ar": "عندها عجلة متعدلة ومزخرفة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000811",
+   "sentences": [
+    {
+     "en": "He drives a gas guzzler.",
+     "ar": "سايق عربية بتاكل بنزين كتير."
+    },
+    {
+     "en": "She has a gas guzzler.",
+     "ar": "عندها عربية بتاكل بنزين كتير."
+    },
+    {
+     "en": "He drives a gas guzzler to work.",
+     "ar": "سايق عربية بتاكل بنزين كتير للشغل."
+    },
+    {
+     "en": "She has a gas guzzler and pays a lot.",
+     "ar": "عندها عربية بتاكل بنزين كتير وبتدفع كتير."
+    },
+    {
+     "en": "He drives a gas guzzler and complains.",
+     "ar": "سايق عربية بتاكل بنزين كتير وبيشتكي."
+    },
+    {
+     "en": "She has a gas guzzler and wants a hybrid.",
+     "ar": "عندها عربية بتاكل بنزين كتير وعايزة هايبرد."
+    },
+    {
+     "en": "He drives a gas guzzler and fills up often.",
+     "ar": "سايق عربية بتاكل بنزين كتير وبيملى كتير."
+    },
+    {
+     "en": "She has a gas guzzler and regrets it.",
+     "ar": "عندها عربية بتاكل بنزين كتير وندمانة."
+    },
+    {
+     "en": "He drives a gas guzzler and loves power.",
+     "ar": "سايق عربية بتاكل بنزين كتير وبيحب القوة."
+    },
+    {
+     "en": "She has a gas guzzler and trades it.",
+     "ar": "عندها عربية بتاكل بنزين كتير وبتبدلها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000812",
+   "sentences": [
+    {
+     "en": "He drives a banger.",
+     "ar": "سايق عربية قديمة متهالكة."
+    },
+    {
+     "en": "She has a banger.",
+     "ar": "عندها عربية قديمة متهالكة."
+    },
+    {
+     "en": "He drives a banger to work.",
+     "ar": "سايق عربية قديمة متهالكة للشغل."
+    },
+    {
+     "en": "She has a banger and fixes it.",
+     "ar": "عندها عربية قديمة متهالكة وبتصلحها."
+    },
+    {
+     "en": "He drives a banger and saves money.",
+     "ar": "سايق عربية قديمة متهالكة وبيوفر فلوس."
+    },
+    {
+     "en": "She has a banger and jokes about it.",
+     "ar": "عندها عربية قديمة متهالكة وبتضحك عليها."
+    },
+    {
+     "en": "He drives a banger and parks anywhere.",
+     "ar": "سايق عربية قديمة متهالكة وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a banger and is proud.",
+     "ar": "عندها عربية قديمة متهالكة وفخورة."
+    },
+    {
+     "en": "He drives a banger and doesn't care.",
+     "ar": "سايق عربية قديمة متهالكة ومش مهتم."
+    },
+    {
+     "en": "She has a banger and drives slowly.",
+     "ar": "عندها عربية قديمة متهالكة وبتسوق ببطء."
+    }
+   ]
+  },
+  {
+   "id": "slg-000813",
+   "sentences": [
+    {
+     "en": "He has a motor.",
+     "ar": "عنده عربية."
+    },
+    {
+     "en": "She drove her motor.",
+     "ar": "ساقت عربيتها."
+    },
+    {
+     "en": "He bought a new motor.",
+     "ar": "اشترى عربية جديدة."
+    },
+    {
+     "en": "She washed her motor.",
+     "ar": "غسلت عربيتها."
+    },
+    {
+     "en": "He has a fast motor.",
+     "ar": "عنده عربية سريعة."
+    },
+    {
+     "en": "She parked her motor.",
+     "ar": "ركنت عربيتها."
+    },
+    {
+     "en": "He has a clean motor.",
+     "ar": "عنده عربية نضيفة."
+    },
+    {
+     "en": "She drove her motor to work.",
+     "ar": "ساقت عربيتها للشغل."
+    },
+    {
+     "en": "He has a motor and shows off.",
+     "ar": "عنده عربية وبيستعرض."
+    },
+    {
+     "en": "She has a motor and loves it.",
+     "ar": "عندها عربية وبتحبها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000814",
+   "sentences": [
+    {
+     "en": "He has a nice set of wheels.",
+     "ar": "عنده عربية حلوة."
+    },
+    {
+     "en": "She got a new set of wheels.",
+     "ar": "جابت عربية جديدة."
+    },
+    {
+     "en": "He has a fast set of wheels.",
+     "ar": "عنده عربية سريعة."
+    },
+    {
+     "en": "She drove her set of wheels.",
+     "ar": "ساقت عربيتها."
+    },
+    {
+     "en": "He has a clean set of wheels.",
+     "ar": "عنده عربية نضيفة."
+    },
+    {
+     "en": "She parked her set of wheels.",
+     "ar": "ركنت عربيتها."
+    },
+    {
+     "en": "He has a set of wheels and shows off.",
+     "ar": "عنده عربية وبيستعرض."
+    },
+    {
+     "en": "She has a set of wheels and loves it.",
+     "ar": "عندها عربية وبتحبها."
+    },
+    {
+     "en": "He bought a set of wheels for the summer.",
+     "ar": "اشترى عربية للصيف."
+    },
+    {
+     "en": "She has a set of wheels and drives everywhere.",
+     "ar": "عندها عربية وبتسوق في كل حتة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000815",
+   "sentences": [
+    {
+     "en": "He drives a bucket.",
+     "ar": "سايق عربية قديمة مضروبة."
+    },
+    {
+     "en": "She has a bucket.",
+     "ar": "عندها عربية قديمة مضروبة."
+    },
+    {
+     "en": "He drives a bucket to work.",
+     "ar": "سايق عربية قديمة مضروبة للشغل."
+    },
+    {
+     "en": "She has a bucket and fixes it.",
+     "ar": "عندها عربية قديمة مضروبة وبتصلحها."
+    },
+    {
+     "en": "He drives a bucket and saves money.",
+     "ar": "سايق عربية قديمة مضروبة وبيوفر فلوس."
+    },
+    {
+     "en": "She has a bucket and jokes about it.",
+     "ar": "عندها عربية قديمة مضروبة وبتضحك عليها."
+    },
+    {
+     "en": "He drives a bucket and parks anywhere.",
+     "ar": "سايق عربية قديمة مضروبة وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a bucket and is proud.",
+     "ar": "عندها عربية قديمة مضروبة وفخورة."
+    },
+    {
+     "en": "He drives a bucket and doesn't care.",
+     "ar": "سايق عربية قديمة مضروبة ومش مهتم."
+    },
+    {
+     "en": "She has a bucket and drives slowly.",
+     "ar": "عندها عربية قديمة مضروبة وبتسوق ببطء."
+    }
+   ]
+  },
+  {
+   "id": "slg-000816",
+   "sentences": [
+    {
+     "en": "He drives a hoopty.",
+     "ar": "سايق عربية قديمة ومبوظة."
+    },
+    {
+     "en": "She has a hoopty.",
+     "ar": "عندها عربية قديمة ومبوظة."
+    },
+    {
+     "en": "He drives a hoopty to work.",
+     "ar": "سايق عربية قديمة ومبوظة للشغل."
+    },
+    {
+     "en": "She has a hoopty and fixes it.",
+     "ar": "عندها عربية قديمة ومبوظة وبتصلحها."
+    },
+    {
+     "en": "He drives a hoopty and saves money.",
+     "ar": "سايق عربية قديمة ومبوظة وبيوفر فلوس."
+    },
+    {
+     "en": "She has a hoopty and jokes about it.",
+     "ar": "عندها عربية قديمة ومبوظة وبتضحك عليها."
+    },
+    {
+     "en": "He drives a hoopty and parks anywhere.",
+     "ar": "سايق عربية قديمة ومبوظة وبيركن في أي حتة."
+    },
+    {
+     "en": "She has a hoopty and is proud.",
+     "ar": "عندها عربية قديمة ومبوظة وفخورة."
+    },
+    {
+     "en": "He drives a hoopty and doesn't care.",
+     "ar": "سايق عربية قديمة ومبوظة ومش مهتم."
+    },
+    {
+     "en": "She has a hoopty and drives slowly.",
+     "ar": "عندها عربية قديمة ومبوظة وبتسوق ببطء."
+    }
+   ]
+  },
+  {
+   "id": "slg-000817",
+   "sentences": [
+    {
+     "en": "He had a fender bender.",
+     "ar": "عمل حادثة صغيرة."
+    },
+    {
+     "en": "She had a fender bender.",
+     "ar": "عملت حادثة صغيرة."
+    },
+    {
+     "en": "He got into a fender bender.",
+     "ar": "دخل في حادثة صغيرة."
+    },
+    {
+     "en": "She got into a fender bender.",
+     "ar": "دخلت في حادثة صغيرة."
+    },
+    {
+     "en": "He had a fender bender and was fine.",
+     "ar": "عمل حادثة صغيرة وكان كويس."
+    },
+    {
+     "en": "She had a fender bender and called the police.",
+     "ar": "عملت حادثة صغيرة وكلمت الشرطة."
+    },
+    {
+     "en": "He had a fender bender and exchanged info.",
+     "ar": "عمل حادثة صغيرة وتبادل المعلومات."
+    },
+    {
+     "en": "She had a fender bender and was upset.",
+     "ar": "عملت حادثة صغيرة وكانت زعلانة."
+    },
+    {
+     "en": "He had a fender bender and fixed it.",
+     "ar": "عمل حادثة صغيرة وصلحها."
+    },
+    {
+     "en": "She had a fender bender and learned.",
+     "ar": "عملت حادثة صغيرة واتعلمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000818",
+   "sentences": [
+    {
+     "en": "He had a smash-up.",
+     "ar": "عمل حادثة تصادم كبيرة."
+    },
+    {
+     "en": "She had a smash-up.",
+     "ar": "عملت حادثة تصادم كبيرة."
+    },
+    {
+     "en": "He got into a smash-up.",
+     "ar": "دخل في حادثة تصادم كبيرة."
+    },
+    {
+     "en": "She got into a smash-up.",
+     "ar": "دخلت في حادثة تصادم كبيرة."
+    },
+    {
+     "en": "He had a smash-up and was hurt.",
+     "ar": "عمل حادثة تصادم كبيرة واتعور."
+    },
+    {
+     "en": "She had a smash-up and called an ambulance.",
+     "ar": "عملت حادثة تصادم كبيرة وكلمت الإسعاف."
+    },
+    {
+     "en": "He had a smash-up and totaled his car.",
+     "ar": "عمل حادثة تصادم كبيرة ودمر عربيته."
+    },
+    {
+     "en": "She had a smash-up and was scared.",
+     "ar": "عملت حادثة تصادم كبيرة وكانت خايفة."
+    },
+    {
+     "en": "He had a smash-up and learned.",
+     "ar": "عمل حادثة تصادم كبيرة واتعلم."
+    },
+    {
+     "en": "She had a smash-up and survived.",
+     "ar": "عملت حادثة تصادم كبيرة ونجت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000819",
+   "sentences": [
+    {
+     "en": "He totaled his car.",
+     "ar": "دمر عربيته خالص."
+    },
+    {
+     "en": "She totaled her car.",
+     "ar": "دمرت عربيتها خالص."
+    },
+    {
+     "en": "He totaled his car in an accident.",
+     "ar": "دمر عربيته خالص في حادثة."
+    },
+    {
+     "en": "She totaled her car and bought a new one.",
+     "ar": "دمرت عربيتها خالص واشترت واحدة جديدة."
+    },
+    {
+     "en": "He totaled his car and was fine.",
+     "ar": "دمر عربيته خالص وكان كويس."
+    },
+    {
+     "en": "She totaled her car and was upset.",
+     "ar": "دمرت عربيتها خالص وكانت زعلانة."
+    },
+    {
+     "en": "He totaled his car and got insurance.",
+     "ar": "دمر عربيته خالص وجاب تأمين."
+    },
+    {
+     "en": "She totaled her car and learned.",
+     "ar": "دمرت عربيتها خالص واتعلمت."
+    },
+    {
+     "en": "He totaled his car and walked away.",
+     "ar": "دمر عربيته خالص ومشي."
+    },
+    {
+     "en": "She totaled her car and was lucky.",
+     "ar": "دمرت عربيتها خالص وكانت محظوظة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000820",
+   "sentences": [
+    {
+     "en": "His car is a write-off.",
+     "ar": "عربيته اتدمرت لدرجة إن التصليح مش بيسوى."
+    },
+    {
+     "en": "Her car is a write-off.",
+     "ar": "عربيتها اتدمرت لدرجة إن التصليح مش بيسوى."
+    },
+    {
+     "en": "He has a write-off.",
+     "ar": "عنده عربية اتدمرت خالص."
+    },
+    {
+     "en": "She has a write-off.",
+     "ar": "عندها عربية اتدمرت خالص."
+    },
+    {
+     "en": "He got a write-off and bought a new car.",
+     "ar": "عربيته اتدمرت خالص واشترى واحدة جديدة."
+    },
+    {
+     "en": "She got a write-off and got insurance money.",
+     "ar": "عربيتها اتدمرت خالص وجابت فلوس التأمين."
+    },
+    {
+     "en": "He has a write-off and is upset.",
+     "ar": "عنده عربية اتدمرت خالص وزعلان."
+    },
+    {
+     "en": "She has a write-off and learned.",
+     "ar": "عندها عربية اتدمرت خالص واتعلمت."
+    },
+    {
+     "en": "He has a write-off and walks now.",
+     "ar": "عنده عربية اتدمرت خالص وبيمشي دلوقتي."
+    },
+    {
+     "en": "She has a write-off and takes the bus.",
+     "ar": "عندها عربية اتدمرت خالص وبتركب الأوتوبيس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000821",
+   "sentences": [
+    {
+     "en": "He went for a joyride.",
+     "ar": "راح مشوار بالعربية للمتعة."
+    },
+    {
+     "en": "She went for a joyride.",
+     "ar": "راحت مشوار بالعربية للمتعة."
+    },
+    {
+     "en": "He took a joyride.",
+     "ar": "عمل مشوار بالعربية للمتعة."
+    },
+    {
+     "en": "She took a joyride.",
+     "ar": "عملت مشوار بالعربية للمتعة."
+    },
+    {
+     "en": "He went on a joyride with friends.",
+     "ar": "راح مشوار بالعربية مع أصحابه."
+    },
+    {
+     "en": "She went on a joyride at night.",
+     "ar": "راحت مشوار بالعربية بالليل."
+    },
+    {
+     "en": "He took a joyride in his dad's car.",
+     "ar": "عمل مشوار بالعربية في عربية أبوه."
+    },
+    {
+     "en": "She took a joyride and got caught.",
+     "ar": "عملت مشوار بالعربية واتمسكت."
+    },
+    {
+     "en": "He went on a joyride and had fun.",
+     "ar": "راح مشوار بالعربية واستمتع."
+    },
+    {
+     "en": "She went on a joyride and came back late.",
+     "ar": "راحت مشوار بالعربية ورجعت متأخر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000822",
+   "sentences": [
+    {
+     "en": "He went for a spin.",
+     "ar": "راح مشوار قصير بالعربية."
+    },
+    {
+     "en": "She went for a spin.",
+     "ar": "راحت مشوار قصير بالعربية."
+    },
+    {
+     "en": "He took a spin.",
+     "ar": "عمل مشوار قصير بالعربية."
+    },
+    {
+     "en": "She took a spin.",
+     "ar": "عملت مشوار قصير بالعربية."
+    },
+    {
+     "en": "He went for a spin in his new car.",
+     "ar": "راح مشوار قصير في عربيته الجديدة."
+    },
+    {
+     "en": "She went for a spin around the block.",
+     "ar": "راحت مشوار قصير حوالين البلوك."
+    },
+    {
+     "en": "He took a spin and enjoyed it.",
+     "ar": "عمل مشوار قصير واستمتع."
+    },
+    {
+     "en": "She took a spin and came back.",
+     "ar": "عملت مشوار قصير ورجعت."
+    },
+    {
+     "en": "He went for a spin and cleared his head.",
+     "ar": "راح مشوار قصير وفصفص دماغه."
+    },
+    {
+     "en": "She went for a spin and felt better.",
+     "ar": "راحت مشوار قصير وحست بتحسن."
+    }
+   ]
+  },
+  {
+   "id": "slg-000823",
+   "sentences": [
+    {
+     "en": "He gave her a lift.",
+     "ar": "وصلها بالعربية."
+    },
+    {
+     "en": "She gave him a lift.",
+     "ar": "وصلته بالعربية."
+    },
+    {
+     "en": "He asked for a lift.",
+     "ar": "طلب توصيلة بالعربية."
+    },
+    {
+     "en": "She asked for a lift.",
+     "ar": "طلبت توصيلة بالعربية."
+    },
+    {
+     "en": "He gave her a lift to work.",
+     "ar": "وصلها بالعربية للشغل."
+    },
+    {
+     "en": "She gave him a lift to the station.",
+     "ar": "وصلته بالعربية للمحطة."
+    },
+    {
+     "en": "He got a lift from a friend.",
+     "ar": "لقى توصيلة بالعربية من صاحبه."
+    },
+    {
+     "en": "She got a lift from her mom.",
+     "ar": "لقت توصيلة بالعربية من أمها."
+    },
+    {
+     "en": "He offered a lift.",
+     "ar": "عرض توصيلة بالعربية."
+    },
+    {
+     "en": "She accepted a lift.",
+     "ar": "قبلت توصيلة بالعربية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000824",
+   "sentences": [
+    {
+     "en": "He hitched a ride.",
+     "ar": "لقى حد يوصله."
+    },
+    {
+     "en": "She hitched a ride.",
+     "ar": "لقت حد يوصلها."
+    },
+    {
+     "en": "He hitched a ride with a stranger.",
+     "ar": "لقى حد غريب يوصله."
+    },
+    {
+     "en": "She hitched a ride with a friend.",
+     "ar": "لقت صاحبها يوصلها."
+    },
+    {
+     "en": "He hitched a ride to the city.",
+     "ar": "لقى حد يوصله للمدينة."
+    },
+    {
+     "en": "She hitched a ride to the airport.",
+     "ar": "لقت حد يوصلها للمطار."
+    },
+    {
+     "en": "He hitched a ride and was grateful.",
+     "ar": "لقى حد يوصله وكان ممنون."
+    },
+    {
+     "en": "She hitched a ride and paid for gas.",
+     "ar": "لقت حد يوصلها ودفعت بنزين."
+    },
+    {
+     "en": "He hitched a ride and talked.",
+     "ar": "لقى حد يوصله واتكلم."
+    },
+    {
+     "en": "She hitched a ride and arrived on time.",
+     "ar": "لقت حد يوصلها ووصلت في المعاد."
+    }
+   ]
+  },
+  {
+   "id": "slg-000825",
+   "sentences": [
+    {
+     "en": "He called shotgun.",
+     "ar": "حجز الكنبة اللي جنب السواق."
+    },
+    {
+     "en": "She called shotgun.",
+     "ar": "حجزت الكنبة اللي جنب السواق."
+    },
+    {
+     "en": "He got shotgun.",
+     "ar": "لقى الكنبة اللي جنب السواق."
+    },
+    {
+     "en": "She got shotgun.",
+     "ar": "لقت الكنبة اللي جنب السواق."
+    },
+    {
+     "en": "He has shotgun.",
+     "ar": "عنده الكنبة اللي جنب السواق."
+    },
+    {
+     "en": "She has shotgun.",
+     "ar": "عندها الكنبة اللي جنب السواق."
+    },
+    {
+     "en": "He called shotgun and won.",
+     "ar": "حجز الكنبة اللي جنب السواق وكسب."
+    },
+    {
+     "en": "She called shotgun and laughed.",
+     "ar": "حجزت الكنبة اللي جنب السواق وضحكت."
+    },
+    {
+     "en": "He got shotgun and was happy.",
+     "ar": "لقى الكنبة اللي جنب السواق وكان مبسوط."
+    },
+    {
+     "en": "She got shotgun and buckled up.",
+     "ar": "لقت الكنبة اللي جنب السواق وربطت الحزام."
+    }
+   ]
+  },
+  {
+   "id": "slg-000826",
+   "sentences": [
+    {
+     "en": "He's a backseat driver.",
+     "ar": "هو راكب بيفضل يوجّه السواق."
+    },
+    {
+     "en": "She's a backseat driver.",
+     "ar": "هي راكبة بتفضل توجّه السواق."
+    },
+    {
+     "en": "He became a backseat driver.",
+     "ar": "بقى راكب بيفضل يوجّه السواق."
+    },
+    {
+     "en": "She became a backseat driver.",
+     "ar": "بقت راكبة بتفضل توجّه السواق."
+    },
+    {
+     "en": "He's a backseat driver and annoying.",
+     "ar": "هو راكب بيفضل يوجّه السواق ومزعج."
+    },
+    {
+     "en": "She's a backseat driver and critical.",
+     "ar": "هي راكبة بتفضل توجّه السواق وناقدة."
+    },
+    {
+     "en": "He's a backseat driver and nervous.",
+     "ar": "هو راكب بيفضل يوجّه السواق وقلقان."
+    },
+    {
+     "en": "She's a backseat driver and helpful.",
+     "ar": "هي راكبة بتفضل توجّه السواق ومساعدة."
+    },
+    {
+     "en": "He's a backseat driver and jokes about it.",
+     "ar": "هو راكب بيفضل يوجّه السواق وبيضحك على ده."
+    },
+    {
+     "en": "She's a backseat driver and means well.",
+     "ar": "هي راكبة بتفضل توجّه السواق ونيتها كويسة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000827",
+   "sentences": [
+    {
+     "en": "He has a lead foot.",
+     "ar": "هو سواق بيدوس بنزين بقوة."
+    },
+    {
+     "en": "She has a lead foot.",
+     "ar": "هي سواقة بتدوس بنزين بقوة."
+    },
+    {
+     "en": "He has a lead foot and drives fast.",
+     "ar": "هو بيدوس بنزين بقوة وبي سوق بسرعة."
+    },
+    {
+     "en": "She has a lead foot and gets tickets.",
+     "ar": "هي بتدوس بنزين بقوة وبتحصل على مخالفات."
+    },
+    {
+     "en": "He has a lead foot and loves speed.",
+     "ar": "هو بيدوس بنزين بقوة وبيحب السرعة."
+    },
+    {
+     "en": "She has a lead foot and races.",
+     "ar": "هي بتدوس بنزين بقوة وبت سباق."
+    },
+    {
+     "en": "He has a lead foot and is careful.",
+     "ar": "هو بيدوس بنزين بقوة وحذر."
+    },
+    {
+     "en": "She has a lead foot and is confident.",
+     "ar": "هي بتدوس بنزين بقوة وواثقة."
+    },
+    {
+     "en": "He has a lead foot and jokes about it.",
+     "ar": "هو بيدوس بنزين بقوة وبيضحك على ده."
+    },
+    {
+     "en": "She has a lead foot and slows down.",
+     "ar": "هي بتدوس بنزين بقوة وبتهدي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000828",
+   "sentences": [
+    {
+     "en": "He put the pedal to the metal.",
+     "ar": "داس بنزين للآخر."
+    },
+    {
+     "en": "She put the pedal to the metal.",
+     "ar": "دست بنزين للآخر."
+    },
+    {
+     "en": "He has the pedal to the metal.",
+     "ar": "هو دايس بنزين للآخر."
+    },
+    {
+     "en": "She has the pedal to the metal.",
+     "ar": "هي دايسة بنزين للآخر."
+    },
+    {
+     "en": "He put the pedal to the metal and won.",
+     "ar": "داس بنزين للآخر وكسب."
+    },
+    {
+     "en": "She put the pedal to the metal and escaped.",
+     "ar": "دست بنزين للآخر وهربت."
+    },
+    {
+     "en": "He has the pedal to the metal and is fast.",
+     "ar": "هو دايس بنزين للآخر وسريع."
+    },
+    {
+     "en": "She has the pedal to the metal and is confident.",
+     "ar": "هي دايسة بنزين للآخر وواثقة."
+    },
+    {
+     "en": "He put the pedal to the metal and arrived early.",
+     "ar": "داس بنزين للآخر ووصل بدري."
+    },
+    {
+     "en": "She put the pedal to the metal and felt free.",
+     "ar": "دست بنزين للآخر وحست بالحرية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000829",
+   "sentences": [
+    {
+     "en": "He burned rubber.",
+     "ar": "تحرك بسرعة جدًا والكاوتش عمل صوت."
+    },
+    {
+     "en": "She burned rubber.",
+     "ar": "تحركت بسرعة جدًا والكاوتش عمل صوت."
+    },
+    {
+     "en": "He burned rubber and left.",
+     "ar": "تحرك بسرعة جدًا ومشي."
+    },
+    {
+     "en": "She burned rubber and escaped.",
+     "ar": "تحركت بسرعة جدًا وهربت."
+    },
+    {
+     "en": "He burned rubber and won the race.",
+     "ar": "تحرك بسرعة جدًا وكسب السباق."
+    },
+    {
+     "en": "She burned rubber and showed off.",
+     "ar": "تحركت بسرعة جدًا واستعرضت."
+    },
+    {
+     "en": "He burned rubber and was fast.",
+     "ar": "تحرك بسرعة جدًا وكان سريع."
+    },
+    {
+     "en": "She burned rubber and was confident.",
+     "ar": "تحركت بسرعة جدًا وكانت واثقة."
+    },
+    {
+     "en": "He burned rubber and arrived early.",
+     "ar": "تحرك بسرعة جدًا ووصل بدري."
+    },
+    {
+     "en": "She burned rubber and felt free.",
+     "ar": "تحركت بسرعة جدًا وحست بالحرية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000830",
+   "sentences": [
+    {
+     "en": "He peeled out.",
+     "ar": "تحرك فجأة بسرعة والكاوتش صرخ."
+    },
+    {
+     "en": "She peeled out.",
+     "ar": "تحركت فجأة بسرعة والكاوتش صرخ."
+    },
+    {
+     "en": "He peeled out and left.",
+     "ar": "تحرك فجأة بسرعة ومشي."
+    },
+    {
+     "en": "She peeled out and escaped.",
+     "ar": "تحركت فجأة بسرعة وهربت."
+    },
+    {
+     "en": "He peeled out and won the race.",
+     "ar": "تحرك فجأة بسرعة وكسب السباق."
+    },
+    {
+     "en": "She peeled out and showed off.",
+     "ar": "تحركت فجأة بسرعة واستعرضت."
+    },
+    {
+     "en": "He peeled out and was fast.",
+     "ar": "تحرك فجأة بسرعة وكان سريع."
+    },
+    {
+     "en": "She peeled out and was confident.",
+     "ar": "تحركت فجأة بسرعة وكانت واثقة."
+    },
+    {
+     "en": "He peeled out and arrived early.",
+     "ar": "تحرك فجأة بسرعة ووصل بدري."
+    },
+    {
+     "en": "She peeled out and felt free.",
+     "ar": "تحركت فجأة بسرعة وحست بالحرية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000831",
+   "sentences": [
+    {
+     "en": "He floored it.",
+     "ar": "داس بنزين للآخر."
+    },
+    {
+     "en": "She floored it.",
+     "ar": "دست بنزين للآخر."
+    },
+    {
+     "en": "He floored it and left.",
+     "ar": "داس بنزين للآخر ومشي."
+    },
+    {
+     "en": "She floored it and escaped.",
+     "ar": "دست بنزين للآخر وهربت."
+    },
+    {
+     "en": "He floored it and won.",
+     "ar": "داس بنزين للآخر وكسب."
+    },
+    {
+     "en": "She floored it and showed off.",
+     "ar": "دست بنزين للآخر واستعرضت."
+    },
+    {
+     "en": "He floored it and was fast.",
+     "ar": "داس بنزين للآخر وكان سريع."
+    },
+    {
+     "en": "She floored it and was confident.",
+     "ar": "دست بنزين للآخر وكانت واثقة."
+    },
+    {
+     "en": "He floored it and arrived early.",
+     "ar": "داس بنزين للآخر ووصل بدري."
+    },
+    {
+     "en": "She floored it and felt free.",
+     "ar": "دست بنزين للآخر وحست بالحرية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000832",
+   "sentences": [
+    {
+     "en": "He gunned it.",
+     "ar": "داس بنزين بقوة فجأة."
+    },
+    {
+     "en": "She gunned it.",
+     "ar": "دست بنزين بقوة فجأة."
+    },
+    {
+     "en": "He gunned it and left.",
+     "ar": "داس بنزين بقوة فجأة ومشي."
+    },
+    {
+     "en": "She gunned it and escaped.",
+     "ar": "دست بنزين بقوة فجأة وهربت."
+    },
+    {
+     "en": "He gunned it and won.",
+     "ar": "داس بنزين بقوة فجأة وكسب."
+    },
+    {
+     "en": "She gunned it and showed off.",
+     "ar": "دست بنزين بقوة فجأة واستعرضت."
+    },
+    {
+     "en": "He gunned it and was fast.",
+     "ar": "داس بنزين بقوة فجأة وكان سريع."
+    },
+    {
+     "en": "She gunned it and was confident.",
+     "ar": "دست بنزين بقوة فجأة وكانت واثقة."
+    },
+    {
+     "en": "He gunned it and arrived early.",
+     "ar": "داس بنزين بقوة فجأة ووصل بدري."
+    },
+    {
+     "en": "She gunned it and felt free.",
+     "ar": "دست بنزين بقوة فجأة وحست بالحرية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000833",
+   "sentences": [
+    {
+     "en": "He revved the engine.",
+     "ar": "زوّد صوت الموتور وهو واقف."
+    },
+    {
+     "en": "She revved the engine.",
+     "ar": "زوّدت صوت الموتور وهي واقفة."
+    },
+    {
+     "en": "He revved the car.",
+     "ar": "زوّد صوت العربية."
+    },
+    {
+     "en": "She revved the car.",
+     "ar": "زوّدت صوت العربية."
+    },
+    {
+     "en": "He revved the motorcycle.",
+     "ar": "زوّد صوت الموتوسيكل."
+    },
+    {
+     "en": "She revved the motorcycle.",
+     "ar": "زوّدت صوت الموتوسيكل."
+    },
+    {
+     "en": "He revved and showed off.",
+     "ar": "زوّد الصوت واستعرض."
+    },
+    {
+     "en": "She revved and smiled.",
+     "ar": "زوّدت الصوت وابتسمت."
+    },
+    {
+     "en": "He revved and left.",
+     "ar": "زوّد الصوت ومشي."
+    },
+    {
+     "en": "She revved and felt powerful.",
+     "ar": "زوّدت الصوت وحست بالقوة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000834",
+   "sentences": [
+    {
+     "en": "He hot-wired the car.",
+     "ar": "شغّل العربية من غير مفتاح."
+    },
+    {
+     "en": "She hot-wired the car.",
+     "ar": "شغلت العربية من غير مفتاح."
+    },
+    {
+     "en": "He hot-wired the truck.",
+     "ar": "شغّل عربية النقل من غير مفتاح."
+    },
+    {
+     "en": "She hot-wired the motorcycle.",
+     "ar": "شغلت الموتوسيكل من غير مفتاح."
+    },
+    {
+     "en": "He hot-wired the van.",
+     "ar": "شغّل الفان من غير مفتاح."
+    },
+    {
+     "en": "She hot-wired the bus.",
+     "ar": "شغلت الأوتوبيس من غير مفتاح."
+    },
+    {
+     "en": "He hot-wired the car and drove away.",
+     "ar": "شغّل العربية من غير مفتاح ومشي."
+    },
+    {
+     "en": "She hot-wired the car and escaped.",
+     "ar": "شغلت العربية من غير مفتاح وهربت."
+    },
+    {
+     "en": "He hot-wired the car and was caught.",
+     "ar": "شغّل العربية من غير مفتاح واتمسك."
+    },
+    {
+     "en": "She hot-wired the car and learned.",
+     "ar": "شغلت العربية من غير مفتاح واتعلمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000835",
+   "sentences": [
+    {
+     "en": "He carjacked the car.",
+     "ar": "سرق العربية من صاحبها بالعافية."
+    },
+    {
+     "en": "She carjacked the car.",
+     "ar": "سرقت العربية من صاحبها بالعافية."
+    },
+    {
+     "en": "He was carjacked.",
+     "ar": "اتسرقت عربيته بالعافية."
+    },
+    {
+     "en": "She was carjacked.",
+     "ar": "اتسرقت عربيتها بالعافية."
+    },
+    {
+     "en": "He carjacked a truck.",
+     "ar": "سرق عربية نقل بالعافية."
+    },
+    {
+     "en": "She carjacked a van.",
+     "ar": "سرقت فان بالعافية."
+    },
+    {
+     "en": "He was carjacked and called the police.",
+     "ar": "اتسرقت عربيته بالعافية وكلم الشرطة."
+    },
+    {
+     "en": "She was carjacked and was scared.",
+     "ar": "اتسرقت عربيتها بالعافية وكانت خايفة."
+    },
+    {
+     "en": "He carjacked the car and was arrested.",
+     "ar": "سرق العربية بالعافية واتقبض عليه."
+    },
+    {
+     "en": "She was carjacked and survived.",
+     "ar": "اتسرقت عربيتها بالعافية ونجت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000836",
+   "sentences": [
+    {
+     "en": "He boosted the car.",
+     "ar": "سرق العربية."
+    },
+    {
+     "en": "She boosted the car.",
+     "ar": "سرقت العربية."
+    },
+    {
+     "en": "He boosted the wallet.",
+     "ar": "سرق المحفظة."
+    },
+    {
+     "en": "She boosted the phone.",
+     "ar": "سرقت الموبايل."
+    },
+    {
+     "en": "He boosted the bike.",
+     "ar": "سرق العجلة."
+    },
+    {
+     "en": "She boosted the watch.",
+     "ar": "سرقت الساعة."
+    },
+    {
+     "en": "He boosted the car and was caught.",
+     "ar": "سرق العربية واتمسك."
+    },
+    {
+     "en": "She boosted the car and escaped.",
+     "ar": "سرقت العربية وهربت."
+    },
+    {
+     "en": "He boosted the car and sold it.",
+     "ar": "سرق العربية وباعها."
+    },
+    {
+     "en": "She boosted the car and learned.",
+     "ar": "سرقت العربية واتعلمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000837",
+   "sentences": [
+    {
+     "en": "He used the five-finger discount.",
+     "ar": "سرق من المحل."
+    },
+    {
+     "en": "She used the five-finger discount.",
+     "ar": "سرقت من المحل."
+    },
+    {
+     "en": "He got the five-finger discount.",
+     "ar": "سرق من المحل."
+    },
+    {
+     "en": "She got the five-finger discount.",
+     "ar": "سرقت من المحل."
+    },
+    {
+     "en": "He used the five-finger discount on candy.",
+     "ar": "سرق حلويات من المحل."
+    },
+    {
+     "en": "She used the five-finger discount on clothes.",
+     "ar": "سرقت هدوم من المحل."
+    },
+    {
+     "en": "He got the five-finger discount and was caught.",
+     "ar": "سرق من المحل واتمسك."
+    },
+    {
+     "en": "She got the five-finger discount and escaped.",
+     "ar": "سرقت من المحل وهربت."
+    },
+    {
+     "en": "He used the five-finger discount and felt guilty.",
+     "ar": "سرق من المحل وحس بالندم."
+    },
+    {
+     "en": "She used the five-finger discount and learned.",
+     "ar": "سرقت من المحل واتعلمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-000838",
+   "sentences": [
+    {
+     "en": "He swiped the pen.",
+     "ar": "اخد القلم بسرعة."
+    },
+    {
+     "en": "She swiped the phone.",
+     "ar": "اخدت الموبايل بسرعة."
+    },
+    {
+     "en": "He swiped the candy.",
+     "ar": "اخد الحلويات بسرعة."
+    },
+    {
+     "en": "She swiped the keys.",
+     "ar": "اخدت المفاتيح بسرعة."
+    },
+    {
+     "en": "He swiped the wallet.",
+     "ar": "اخد المحفظة بسرعة."
+    },
+    {
+     "en": "She swiped the watch.",
+     "ar": "اخدت الساعة بسرعة."
+    },
+    {
+     "en": "He swiped the bag.",
+     "ar": "اخد الشنطة بسرعة."
+    },
+    {
+     "en": "She swiped the ticket.",
+     "ar": "اخدت التذكرة بسرعة."
+    },
+    {
+     "en": "He swiped the card.",
+     "ar": "اخد الكارت بسرعة."
+    },
+    {
+     "en": "She swiped the book.",
+     "ar": "اخدت الكتاب بسرعة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000839",
+   "sentences": [
+    {
+     "en": "He snagged the last ticket.",
+     "ar": "لقط آخر تذكرة."
+    },
+    {
+     "en": "She snagged the last seat.",
+     "ar": "لقطت آخر كرسي."
+    },
+    {
+     "en": "He snagged the deal.",
+     "ar": "لقط الصفقة."
+    },
+    {
+     "en": "She snagged the job.",
+     "ar": "لقطت الشغل."
+    },
+    {
+     "en": "He snagged the prize.",
+     "ar": "لقط الجايزة."
+    },
+    {
+     "en": "She snagged the promotion.",
+     "ar": "لقطت الترقية."
+    },
+    {
+     "en": "He snagged the girl.",
+     "ar": "لقط البنت."
+    },
+    {
+     "en": "She snagged the guy.",
+     "ar": "لقطت الولد."
+    },
+    {
+     "en": "He snagged the last piece.",
+     "ar": "لقط آخر قطعة."
+    },
+    {
+     "en": "She snagged the last spot.",
+     "ar": "لقطت آخر مكان."
+    }
+   ]
+  },
+  {
+   "id": "slg-000840",
+   "sentences": [
+    {
+     "en": "He scored a goal.",
+     "ar": "جاب جول."
+    },
+    {
+     "en": "She scored a goal.",
+     "ar": "جابت جول."
+    },
+    {
+     "en": "He scored tickets.",
+     "ar": "جاب تذاكر."
+    },
+    {
+     "en": "She scored tickets.",
+     "ar": "جابت تذاكر."
+    },
+    {
+     "en": "He scored a deal.",
+     "ar": "جاب صفقة."
+    },
+    {
+     "en": "She scored a deal.",
+     "ar": "جابت صفقة."
+    },
+    {
+     "en": "He scored a date.",
+     "ar": "جاب موعد."
+    },
+    {
+     "en": "She scored a date.",
+     "ar": "جابت موعد."
+    },
+    {
+     "en": "He scored a job.",
+     "ar": "جاب شغل."
+    },
+    {
+     "en": "She scored a job.",
+     "ar": "جابت شغل."
+    }
+   ]
+  },
+  {
+   "id": "slg-000841",
+   "sentences": [
+    {
+     "en": "He hooked up with her.",
+     "ar": "ارتبط بيها."
+    },
+    {
+     "en": "She hooked up with him.",
+     "ar": "ارتبطت بيه."
+    },
+    {
+     "en": "He hooked up the TV.",
+     "ar": "وصل التلفزيون."
+    },
+    {
+     "en": "She hooked up the computer.",
+     "ar": "وصلت الكمبيوتر."
+    },
+    {
+     "en": "He hooked up the speakers.",
+     "ar": "وصل السماعات."
+    },
+    {
+     "en": "She hooked up the internet.",
+     "ar": "وصلت النت."
+    },
+    {
+     "en": "He hooked up the phone.",
+     "ar": "وصل التليفون."
+    },
+    {
+     "en": "She hooked up the printer.",
+     "ar": "وصلت الطابعة."
+    },
+    {
+     "en": "He hooked up the lights.",
+     "ar": "وصل النور."
+    },
+    {
+     "en": "She hooked up the camera.",
+     "ar": "وصلت الكاميرا."
+    }
+   ]
+  },
+  {
+   "id": "slg-000842",
+   "sentences": [
+    {
+     "en": "He stocked up on food.",
+     "ar": "اشترى كمية أكل وخزنها."
+    },
+    {
+     "en": "She stocked up on water.",
+     "ar": "اشترت كمية مية وخزنتها."
+    },
+    {
+     "en": "He stocked up on supplies.",
+     "ar": "اشترى كمية مستلزمات وخزنها."
+    },
+    {
+     "en": "She stocked up on medicine.",
+     "ar": "اشترت كمية أدوية وخزنتها."
+    },
+    {
+     "en": "He stocked up for winter.",
+     "ar": "اشترى كمية للشتا وخزنها."
+    },
+    {
+     "en": "She stocked up for the trip.",
+     "ar": "اشترت كمية للسفر وخزنتها."
+    },
+    {
+     "en": "He stocked up on toilet paper.",
+     "ar": "اشترى كمية مناديل وخزنها."
+    },
+    {
+     "en": "She stocked up on snacks.",
+     "ar": "اشترت كمية سناكس وخزنتها."
+    },
+    {
+     "en": "He stocked up on drinks.",
+     "ar": "اشترى كمية مشروبات وخزنها."
+    },
+    {
+     "en": "She stocked up and was ready.",
+     "ar": "اشترت كمية وخزنتها وكانت جاهزة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000843",
+   "sentences": [
+    {
+     "en": "He shelled out for the car.",
+     "ar": "دفع فلوس كتير في العربية."
+    },
+    {
+     "en": "She shelled out for the dress.",
+     "ar": "دفعت فلوس كتير في الفستان."
+    },
+    {
+     "en": "He shelled out for the house.",
+     "ar": "دفع فلوس كتير في البيت."
+    },
+    {
+     "en": "She shelled out for the trip.",
+     "ar": "دفعت فلوس كتير في السفر."
+    },
+    {
+     "en": "He shelled out for the phone.",
+     "ar": "دفع فلوس كتير في الموبايل."
+    },
+    {
+     "en": "She shelled out for the bag.",
+     "ar": "دفعت فلوس كتير في الشنطة."
+    },
+    {
+     "en": "He shelled out for the watch.",
+     "ar": "دفع فلوس كتير في الساعة."
+    },
+    {
+     "en": "She shelled out for the shoes.",
+     "ar": "دفعت فلوس كتير في الجزمة."
+    },
+    {
+     "en": "He shelled out and regretted it.",
+     "ar": "دفع فلوس كتير وندم."
+    },
+    {
+     "en": "She shelled out and was happy.",
+     "ar": "دفعت فلوس كتير وكانت مبسوطة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000844",
+   "sentences": [
+    {
+     "en": "He sprang for the dinner.",
+     "ar": "دفع فلوس كتير في العشا."
+    },
+    {
+     "en": "She sprang for the tickets.",
+     "ar": "دفعت فلوس كتير في التذاكر."
+    },
+    {
+     "en": "He sprang for the gift.",
+     "ar": "دفع فلوس كتير في الهدية."
+    },
+    {
+     "en": "She sprang for the hotel.",
+     "ar": "دفعت فلوس كتير في الفندق."
+    },
+    {
+     "en": "He sprang for the ring.",
+     "ar": "دفع فلوس كتير في الخاتم."
+    },
+    {
+     "en": "She sprang for the car.",
+     "ar": "دفعت فلوس كتير في العربية."
+    },
+    {
+     "en": "He sprang for the vacation.",
+     "ar": "دفع فلوس كتير في الأجازة."
+    },
+    {
+     "en": "She sprang for the concert.",
+     "ar": "دفعت فلوس كتير في الحفلة."
+    },
+    {
+     "en": "He sprang for the party.",
+     "ar": "دفع فلوس كتير في الحفلة."
+    },
+    {
+     "en": "She sprang for the meal.",
+     "ar": "دفعت فلوس كتير في الأكل."
+    }
+   ]
+  },
+  {
+   "id": "slg-000845",
+   "sentences": [
+    {
+     "en": "It's my treat.",
+     "ar": "على حسابي."
+    },
+    {
+     "en": "He said it's his treat.",
+     "ar": "قال على حسابه."
+    },
+    {
+     "en": "She said it's her treat.",
+     "ar": "قالت على حسابها."
+    },
+    {
+     "en": "He offered a treat.",
+     "ar": "عرض يدفع."
+    },
+    {
+     "en": "She offered a treat.",
+     "ar": "عرضت تدفع."
+    },
+    {
+     "en": "He paid as a treat.",
+     "ar": "دفع على حسابه."
+    },
+    {
+     "en": "She paid as a treat.",
+     "ar": "دفعت على حسابها."
+    },
+    {
+     "en": "He gave a treat.",
+     "ar": "دفع على حسابه."
+    },
+    {
+     "en": "She gave a treat.",
+     "ar": "دفعت على حسابها."
+    },
+    {
+     "en": "It's my treat, enjoy.",
+     "ar": "على حسابي، استمتع."
+    }
+   ]
+  },
+  {
+   "id": "slg-000846",
+   "sentences": [
+    {
+     "en": "Dinner is on me.",
+     "ar": "العشا على حسابي."
+    },
+    {
+     "en": "He said, \"Dinner is on me.\"",
+     "ar": "قال العشا على حسابي."
+    },
+    {
+     "en": "She said, \"Dinner is on me.\"",
+     "ar": "قالت العشا على حسابي."
+    },
+    {
+     "en": "Drinks are on me.",
+     "ar": "المشروبات على حسابي."
+    },
+    {
+     "en": "He said, \"Drinks are on me.\"",
+     "ar": "قال المشروبات على حسابي."
+    },
+    {
+     "en": "She said, \"Drinks are on me.\"",
+     "ar": "قالت المشروبات على حسابي."
+    },
+    {
+     "en": "It's on me, don't worry.",
+     "ar": "على حسابي، ما تقلقش."
+    },
+    {
+     "en": "He said, \"It's on me.\"",
+     "ar": "قال على حسابي."
+    },
+    {
+     "en": "She said, \"It's on me.\"",
+     "ar": "قالت على حسابي."
+    },
+    {
+     "en": "Lunch is on me today.",
+     "ar": "الغدا على حسابي النهاردة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000847",
+   "sentences": [
+    {
+     "en": "The dessert is on the house.",
+     "ar": "الحلويات ببلاش من المكان."
+    },
+    {
+     "en": "The drinks are on the house.",
+     "ar": "المشروبات ببلاش من المكان."
+    },
+    {
+     "en": "He got a meal on the house.",
+     "ar": "جاب أكل ببلاش من المكان."
+    },
+    {
+     "en": "She got a drink on the house.",
+     "ar": "جابت مشروب ببلاش من المكان."
+    },
+    {
+     "en": "The appetizer is on the house.",
+     "ar": "المقبلات ببلاش من المكان."
+    },
+    {
+     "en": "The coffee is on the house.",
+     "ar": "القهوة ببلاش من المكان."
+    },
+    {
+     "en": "The cake is on the house.",
+     "ar": "الكيك ببلاش من المكان."
+    },
+    {
+     "en": "The snack is on the house.",
+     "ar": "السناك ببلاش من المكان."
+    },
+    {
+     "en": "The tea is on the house.",
+     "ar": "الشاي ببلاش من المكان."
+    },
+    {
+     "en": "The bread is on the house.",
+     "ar": "العيش ببلاش من المكان."
+    }
+   ]
+  },
+  {
+   "id": "slg-000848",
+   "sentences": [
+    {
+     "en": "They went Dutch.",
+     "ar": "كل واحد دفع حساب نفسه."
+    },
+    {
+     "en": "He suggested going Dutch.",
+     "ar": "اقترح كل واحد يدفع حساب نفسه."
+    },
+    {
+     "en": "She suggested going Dutch.",
+     "ar": "اقترحت كل واحد يدفع حساب نفسه."
+    },
+    {
+     "en": "They went Dutch on the dinner.",
+     "ar": "كل واحد دفع حساب نفسه في العشا."
+    },
+    {
+     "en": "They went Dutch on the trip.",
+     "ar": "كل واحد دفع حساب نفسه في السفر."
+    },
+    {
+     "en": "He prefers going Dutch.",
+     "ar": "يفضل كل واحد يدفع حساب نفسه."
+    },
+    {
+     "en": "She prefers going Dutch.",
+     "ar": "تفضل كل واحد يدفع حساب نفسه."
+    },
+    {
+     "en": "They went Dutch and were happy.",
+     "ar": "كل واحد دفع حساب نفسه وكانوا مبسوطين."
+    },
+    {
+     "en": "He went Dutch and saved money.",
+     "ar": "كل واحد دفع حساب نفسه ووفر فلوس."
+    },
+    {
+     "en": "She went Dutch and felt independent.",
+     "ar": "كل واحد دفع حساب نفسه وحست بالاستقلالية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000849",
+   "sentences": [
+    {
+     "en": "He settled up.",
+     "ar": "سدد الحساب."
+    },
+    {
+     "en": "She settled up.",
+     "ar": "سددت الحساب."
+    },
+    {
+     "en": "He settled up with the waiter.",
+     "ar": "سدد الحساب مع الجرسون."
+    },
+    {
+     "en": "She settled up with the cashier.",
+     "ar": "سددت الحساب مع الكاشير."
+    },
+    {
+     "en": "He settled up and left.",
+     "ar": "سدد الحساب ومشي."
+    },
+    {
+     "en": "She settled up and left.",
+     "ar": "سددت الحساب ومشت."
+    },
+    {
+     "en": "He settled up his debt.",
+     "ar": "سدد دينه."
+    },
+    {
+     "en": "She settled up her debt.",
+     "ar": "سددت دينها."
+    },
+    {
+     "en": "He settled up and was relieved.",
+     "ar": "سدد الحساب وارتاح."
+    },
+    {
+     "en": "She settled up and was happy.",
+     "ar": "سددت الحساب وكانت مبسوطة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000850",
+   "sentences": [
+    {
+     "en": "Can you spot me?",
+     "ar": "ممكن تسلفني؟"
+    },
+    {
+     "en": "He said, \"Spot me, please.\"",
+     "ar": "قال سلّفني لو سمحت."
+    },
+    {
+     "en": "She said, \"Spot me, please.\"",
+     "ar": "قالت سلّفيني لو سمحت."
+    },
+    {
+     "en": "He said, \"Spot me twenty dollars.\"",
+     "ar": "قال سلّفني عشرين دولار."
+    },
+    {
+     "en": "She said, \"Spot me fifty pounds.\"",
+     "ar": "قالت سلّفيني خمسين جنيه."
+    },
+    {
+     "en": "He asked, \"Will you spot me for lunch?\"",
+     "ar": "سأل هتسلفني فلوس الغدا؟"
+    },
+    {
+     "en": "She asked, \"Will you spot me for the ticket?\"",
+     "ar": "سألت هتسلفيني فلوس التذكرة؟"
+    },
+    {
+     "en": "He said, \"Spot me and I will pay you back.\"",
+     "ar": "قال سلّفني وهردلك."
+    },
+    {
+     "en": "She said, \"Spot me this once.\"",
+     "ar": "قالت سلّفيني المرة دي بس."
+    },
+    {
+     "en": "He said, \"You can spot me.\"",
+     "ar": "قال ممكن تسلفني."
+    }
+   ]
+  },
+  {
+   "id": "slg-000851",
+   "sentences": [
+    {
+     "en": "The eats are good.",
+     "ar": "الأكل كويس."
+    },
+    {
+     "en": "He brought the eats.",
+     "ar": "جاب الأكل."
+    },
+    {
+     "en": "She prepared the eats.",
+     "ar": "جهزت الأكل."
+    },
+    {
+     "en": "He loves the eats here.",
+     "ar": "بيحب الأكل هنا."
+    },
+    {
+     "en": "She cooked the eats.",
+     "ar": "طبخت الأكل."
+    },
+    {
+     "en": "He ordered the eats.",
+     "ar": "طلب الأكل."
+    },
+    {
+     "en": "She served the eats.",
+     "ar": "قدمت الأكل."
+    },
+    {
+     "en": "He enjoyed the eats.",
+     "ar": "استمتع بالأكل."
+    },
+    {
+     "en": "She shared the eats.",
+     "ar": "شاركت الأكل."
+    },
+    {
+     "en": "The eats are on the table.",
+     "ar": "الأكل على الطاولة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000852",
+   "sentences": [
+    {
+     "en": "The chow is ready.",
+     "ar": "الأكل جاهز."
+    },
+    {
+     "en": "He brought the chow.",
+     "ar": "جاب الأكل."
+    },
+    {
+     "en": "She prepared the chow.",
+     "ar": "جهزت الأكل."
+    },
+    {
+     "en": "He loves the chow here.",
+     "ar": "بيحب الأكل هنا."
+    },
+    {
+     "en": "She cooked the chow.",
+     "ar": "طبخت الأكل."
+    },
+    {
+     "en": "He ordered the chow.",
+     "ar": "طلب الأكل."
+    },
+    {
+     "en": "She served the chow.",
+     "ar": "قدمت الأكل."
+    },
+    {
+     "en": "He enjoyed the chow.",
+     "ar": "استمتع بالأكل."
+    },
+    {
+     "en": "She shared the chow.",
+     "ar": "شاركت الأكل."
+    },
+    {
+     "en": "The chow is on the table.",
+     "ar": "الأكل على الطاولة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000853",
+   "sentences": [
+    {
+     "en": "The scran is ready.",
+     "ar": "الأكل جاهز."
+    },
+    {
+     "en": "He brought the scran.",
+     "ar": "جاب الأكل."
+    },
+    {
+     "en": "She prepared the scran.",
+     "ar": "جهزت الأكل."
+    },
+    {
+     "en": "He loves the scran here.",
+     "ar": "بيحب الأكل هنا."
+    },
+    {
+     "en": "She cooked the scran.",
+     "ar": "طبخت الأكل."
+    },
+    {
+     "en": "He ordered the scran.",
+     "ar": "طلب الأكل."
+    },
+    {
+     "en": "She served the scran.",
+     "ar": "قدمت الأكل."
+    },
+    {
+     "en": "He enjoyed the scran.",
+     "ar": "استمتع بالأكل."
+    },
+    {
+     "en": "She shared the scran.",
+     "ar": "شاركت الأكل."
+    },
+    {
+     "en": "The scran is on the table.",
+     "ar": "الأكل على الطاولة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000854",
+   "sentences": [
+    {
+     "en": "He brought tuck to school.",
+     "ar": "جاب أكل خفيف للمدرسة."
+    },
+    {
+     "en": "She bought tuck from the shop.",
+     "ar": "اشترت أكل خفيف من المحل."
+    },
+    {
+     "en": "He shared his tuck.",
+     "ar": "شارك أكل خفيف بتاعه."
+    },
+    {
+     "en": "She ate her tuck.",
+     "ar": "اكلت أكل خفيف بتاعها."
+    },
+    {
+     "en": "He loves tuck.",
+     "ar": "بيحب الأكل الخفيف."
+    },
+    {
+     "en": "She packed tuck for the trip.",
+     "ar": "جهزت أكل خفيف للسفر."
+    },
+    {
+     "en": "He sold tuck at school.",
+     "ar": "باع أكل خفيف في المدرسة."
+    },
+    {
+     "en": "She bought tuck for the kids.",
+     "ar": "اشترت أكل خفيف للعيال."
+    },
+    {
+     "en": "He has tuck in his bag.",
+     "ar": "عنده أكل خفيف في شنته."
+    },
+    {
+     "en": "She has tuck in her locker.",
+     "ar": "عندها أكل خفيف في الدولاب."
+    }
+   ]
+  },
+  {
+   "id": "slg-000855",
+   "sentences": [
+    {
+     "en": "He has the munchies.",
+     "ar": "عنده رغبة قوية في أكل سناكس."
+    },
+    {
+     "en": "She has the munchies.",
+     "ar": "عندها رغبة قوية في أكل سناكس."
+    },
+    {
+     "en": "He got the munchies.",
+     "ar": "بقى عنده رغبة قوية في أكل سناكس."
+    },
+    {
+     "en": "She got the munchies.",
+     "ar": "بقى عندها رغبة قوية في أكل سناكس."
+    },
+    {
+     "en": "He has the munchies at night.",
+     "ar": "عنده رغبة قوية في أكل سناكس بالليل."
+    },
+    {
+     "en": "She has the munchies and eats chips.",
+     "ar": "عندها رغبة قوية في أكل سناكس وبتاكل شيبسي."
+    },
+    {
+     "en": "He has the munchies and eats chocolate.",
+     "ar": "عنده رغبة قوية في أكل سناكس وبياكل شوكولاتة."
+    },
+    {
+     "en": "She has the munchies and can't stop.",
+     "ar": "عندها رغبة قوية في أكل سناكس ومش قادرة توقف."
+    },
+    {
+     "en": "He has the munchies and shares.",
+     "ar": "عنده رغبة قوية في أكل سناكس وبيشارك."
+    },
+    {
+     "en": "She has the munchies and is happy.",
+     "ar": "عندها رغبة قوية في أكل سناكس ومبسوطة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000856",
+   "sentences": [
+    {
+     "en": "I'm starving.",
+     "ar": "أنا جعان جدًا."
+    },
+    {
+     "en": "He's starving.",
+     "ar": "هو جعان جدًا."
+    },
+    {
+     "en": "She's starving.",
+     "ar": "هي جعانة جدًا."
+    },
+    {
+     "en": "They're starving.",
+     "ar": "هما جعانين جدًا."
+    },
+    {
+     "en": "He was starving after work.",
+     "ar": "كان جعان جدًا بعد الشغل."
+    },
+    {
+     "en": "She was starving after the gym.",
+     "ar": "كانت جعانة جدًا بعد الجيم."
+    },
+    {
+     "en": "He's starving and needs food.",
+     "ar": "هو جعان جدًا ومحتاج أكل."
+    },
+    {
+     "en": "She's starving and orders food.",
+     "ar": "هي جعانة جدًا وبتطلب أكل."
+    },
+    {
+     "en": "He's starving and can't wait.",
+     "ar": "هو جعان جدًا ومش قادر يستنى."
+    },
+    {
+     "en": "She's starving and cooks.",
+     "ar": "هي جعانة جدًا وبتطبخ."
+    }
+   ]
+  },
+  {
+   "id": "slg-000857",
+   "sentences": [
+    {
+     "en": "I'm peckish.",
+     "ar": "أنا جعان شوية."
+    },
+    {
+     "en": "He's peckish.",
+     "ar": "هو جعان شوية."
+    },
+    {
+     "en": "She's peckish.",
+     "ar": "هي جعانة شوية."
+    },
+    {
+     "en": "They're peckish.",
+     "ar": "هما جعانين شوية."
+    },
+    {
+     "en": "He was peckish after work.",
+     "ar": "كان جعان شوية بعد الشغل."
+    },
+    {
+     "en": "She was peckish after the gym.",
+     "ar": "كانت جعانة شوية بعد الجيم."
+    },
+    {
+     "en": "He's peckish and wants a snack.",
+     "ar": "هو جعان شوية وعايز سناك."
+    },
+    {
+     "en": "She's peckish and eats fruit.",
+     "ar": "هي جعانة شوية وبتاكل فاكهة."
+    },
+    {
+     "en": "He's peckish and can't wait.",
+     "ar": "هو جعان شوية ومش قادر يستنى."
+    },
+    {
+     "en": "She's peckish and cooks.",
+     "ar": "هي جعانة شوية وبتطبخ."
+    }
+   ]
+  },
+  {
+   "id": "slg-000858",
+   "sentences": [
+    {
+     "en": "He's hangry.",
+     "ar": "هو متعصب بسبب الجوع."
+    },
+    {
+     "en": "She's hangry.",
+     "ar": "هي متعصبة بسبب الجوع."
+    },
+    {
+     "en": "He gets hangry.",
+     "ar": "هو بيتعصب لما يجوع."
+    },
+    {
+     "en": "She gets hangry.",
+     "ar": "هي بتتعصب لما تجوع."
+    },
+    {
+     "en": "He's hangry and needs food.",
+     "ar": "هو متعصب بسبب الجوع ومحتاج أكل."
+    },
+    {
+     "en": "She's hangry and snaps.",
+     "ar": "هي متعصبة بسبب الجوع وبترد بعصبية."
+    },
+    {
+     "en": "He's hangry and can't focus.",
+     "ar": "هو متعصب بسبب الجوع ومش قادر يركز."
+    },
+    {
+     "en": "She's hangry and complains.",
+     "ar": "هي متعصبة بسبب الجوع وبتشتكي."
+    },
+    {
+     "en": "He's hangry and eats.",
+     "ar": "هو متعصب بسبب الجوع وبياكل."
+    },
+    {
+     "en": "She's hangry and calms down.",
+     "ar": "هي متعصبة بسبب الجوع وبتهدى."
+    }
+   ]
+  },
+  {
+   "id": "slg-000859",
+   "sentences": [
+    {
+     "en": "I'm stuffed.",
+     "ar": "أنا شبعان خالص."
+    },
+    {
+     "en": "He's stuffed.",
+     "ar": "هو شبعان خالص."
+    },
+    {
+     "en": "She's stuffed.",
+     "ar": "هي شبعانة خالص."
+    },
+    {
+     "en": "They're stuffed.",
+     "ar": "هما شبعانين خالص."
+    },
+    {
+     "en": "He was stuffed after dinner.",
+     "ar": "كان شبعان خالص بعد العشا."
+    },
+    {
+     "en": "She was stuffed after the feast.",
+     "ar": "كانت شبعانة خالص بعد الوليمة."
+    },
+    {
+     "en": "He's stuffed and can't eat more.",
+     "ar": "هو شبعان خالص ومش قادر ياكل كمان."
+    },
+    {
+     "en": "She's stuffed and needs a nap.",
+     "ar": "هي شبعانة خالص ومحتاجة قيلولة."
+    },
+    {
+     "en": "He's stuffed and happy.",
+     "ar": "هو شبعان خالص ومبسوط."
+    },
+    {
+     "en": "She's stuffed and relaxes.",
+     "ar": "هي شبعانة خالص وبترتاح."
+    }
+   ]
+  },
+  {
+   "id": "slg-000860",
+   "sentences": [
+    {
+     "en": "He's in a food coma.",
+     "ar": "هو في حالة نوم بعد أكل تقيل."
+    },
+    {
+     "en": "She's in a food coma.",
+     "ar": "هي في حالة نوم بعد أكل تقيل."
+    },
+    {
+     "en": "He got a food coma.",
+     "ar": "بقى في حالة نوم بعد أكل تقيل."
+    },
+    {
+     "en": "She got a food coma.",
+     "ar": "بقت في حالة نوم بعد أكل تقيل."
+    },
+    {
+     "en": "He's in a food coma after lunch.",
+     "ar": "هو في حالة نوم بعد الغدا."
+    },
+    {
+     "en": "She's in a food coma after dinner.",
+     "ar": "هي في حالة نوم بعد العشا."
+    },
+    {
+     "en": "He's in a food coma and can't move.",
+     "ar": "هو في حالة نوم ومش قادر يتحرك."
+    },
+    {
+     "en": "She's in a food coma and sleeps.",
+     "ar": "هي في حالة نوم وبتنام."
+    },
+    {
+     "en": "He's in a food coma and snores.",
+     "ar": "هو في حالة نوم وبيشخر."
+    },
+    {
+     "en": "She's in a food coma and is happy.",
+     "ar": "هي في حالة نوم ومبسوطة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000861",
+   "sentences": [
+    {
+     "en": "The cake is yummy.",
+     "ar": "الكيك جميل الطعم."
+    },
+    {
+     "en": "The food is yummy.",
+     "ar": "الأكل جميل الطعم."
+    },
+    {
+     "en": "She made a yummy dinner.",
+     "ar": "عملت عشا جميل الطعم."
+    },
+    {
+     "en": "He cooked a yummy meal.",
+     "ar": "طبخ أكل جميل الطعم."
+    },
+    {
+     "en": "The dessert is yummy.",
+     "ar": "الحلويات جميلة الطعم."
+    },
+    {
+     "en": "The soup is yummy.",
+     "ar": "الشوربة جميلة الطعم."
+    },
+    {
+     "en": "The pizza is yummy.",
+     "ar": "البيتزا جميلة الطعم."
+    },
+    {
+     "en": "The fruit is yummy.",
+     "ar": "الفاكهة جميلة الطعم."
+    },
+    {
+     "en": "She said the food is yummy.",
+     "ar": "قالت الأكل جميل الطعم."
+    },
+    {
+     "en": "He said the cake is yummy.",
+     "ar": "قال الكيك جميل الطعم."
+    }
+   ]
+  },
+  {
+   "id": "slg-000862",
+   "sentences": [
+    {
+     "en": "The food is delish.",
+     "ar": "الأكل جميل الطعم."
+    },
+    {
+     "en": "She made a delish dinner.",
+     "ar": "عملت عشا جميل الطعم."
+    },
+    {
+     "en": "He cooked a delish meal.",
+     "ar": "طبخ أكل جميل الطعم."
+    },
+    {
+     "en": "The cake is delish.",
+     "ar": "الكيك جميل الطعم."
+    },
+    {
+     "en": "The dessert is delish.",
+     "ar": "الحلويات جميلة الطعم."
+    },
+    {
+     "en": "The soup is delish.",
+     "ar": "الشوربة جميلة الطعم."
+    },
+    {
+     "en": "The pizza is delish.",
+     "ar": "البيتزا جميلة الطعم."
+    },
+    {
+     "en": "The fruit is delish.",
+     "ar": "الفاكهة جميلة الطعم."
+    },
+    {
+     "en": "She said the food is delish.",
+     "ar": "قالت الأكل جميل الطعم."
+    },
+    {
+     "en": "He said the cake is delish.",
+     "ar": "قال الكيك جميل الطعم."
+    }
+   ]
+  },
+  {
+   "id": "slg-000863",
+   "sentences": [
+    {
+     "en": "The food is scrumptious.",
+     "ar": "الأكل لذيذ جدًا."
+    },
+    {
+     "en": "She made a scrumptious dinner.",
+     "ar": "عملت عشا لذيذ جدًا."
+    },
+    {
+     "en": "He cooked a scrumptious meal.",
+     "ar": "طبخ أكل لذيذ جدًا."
+    },
+    {
+     "en": "The cake is scrumptious.",
+     "ar": "الكيك لذيذ جدًا."
+    },
+    {
+     "en": "The dessert is scrumptious.",
+     "ar": "الحلويات لذيذة جدًا."
+    },
+    {
+     "en": "The soup is scrumptious.",
+     "ar": "الشوربة لذيذة جدًا."
+    },
+    {
+     "en": "The pizza is scrumptious.",
+     "ar": "البيتزا لذيذة جدًا."
+    },
+    {
+     "en": "The fruit is scrumptious.",
+     "ar": "الفاكهة لذيذة جدًا."
+    },
+    {
+     "en": "She said the food is scrumptious.",
+     "ar": "قالت الأكل لذيذ جدًا."
+    },
+    {
+     "en": "He said the cake is scrumptious.",
+     "ar": "قال الكيك لذيذ جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-000864",
+   "sentences": [
+    {
+     "en": "The cake is to die for.",
+     "ar": "الكيك جامد جدًا."
+    },
+    {
+     "en": "The food is to die for.",
+     "ar": "الأكل جامد جدًا."
+    },
+    {
+     "en": "She made a dessert to die for.",
+     "ar": "عملت حلويات جامدة جدًا."
+    },
+    {
+     "en": "He cooked a meal to die for.",
+     "ar": "طبخ أكل جامد جدًا."
+    },
+    {
+     "en": "The view is to die for.",
+     "ar": "المنظر جامد جدًا."
+    },
+    {
+     "en": "The dress is to die for.",
+     "ar": "الفستان جامد جدًا."
+    },
+    {
+     "en": "The shoes are to die for.",
+     "ar": "الجزمة جامدة جدًا."
+    },
+    {
+     "en": "The bag is to die for.",
+     "ar": "الشنطة جامدة جدًا."
+    },
+    {
+     "en": "She said the food is to die for.",
+     "ar": "قالت الأكل جامد جدًا."
+    },
+    {
+     "en": "He said the cake is to die for.",
+     "ar": "قال الكيك جامد جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-000865",
+   "sentences": [
+    {
+     "en": "Yum, this is good.",
+     "ar": "جميل، ده حلو."
+    },
+    {
+     "en": "She said yum.",
+     "ar": "قالت جميل."
+    },
+    {
+     "en": "He said yum.",
+     "ar": "قال جميل."
+    },
+    {
+     "en": "Yum, I love it.",
+     "ar": "جميل، بحبه."
+    },
+    {
+     "en": "Yum, delicious.",
+     "ar": "جميل، لذيذ."
+    },
+    {
+     "en": "Yum, amazing.",
+     "ar": "جميل، جامد."
+    },
+    {
+     "en": "Yum, perfect.",
+     "ar": "جميل، ممتاز."
+    },
+    {
+     "en": "Yum, tasty.",
+     "ar": "جميل، طعمه حلو."
+    },
+    {
+     "en": "Yum, wonderful.",
+     "ar": "جميل، رائع."
+    },
+    {
+     "en": "Yum, fantastic.",
+     "ar": "جميل، فظيع."
+    }
+   ]
+  },
+  {
+   "id": "slg-000866",
+   "sentences": [
+    {
+     "en": "Nom, this is good.",
+     "ar": "جميل، ده حلو."
+    },
+    {
+     "en": "She said nom.",
+     "ar": "قالت جميل."
+    },
+    {
+     "en": "He said nom.",
+     "ar": "قال جميل."
+    },
+    {
+     "en": "Nom, I love it.",
+     "ar": "جميل، بحبه."
+    },
+    {
+     "en": "Nom, delicious.",
+     "ar": "جميل، لذيذ."
+    },
+    {
+     "en": "Nom, amazing.",
+     "ar": "جميل، جامد."
+    },
+    {
+     "en": "Nom, perfect.",
+     "ar": "جميل، ممتاز."
+    },
+    {
+     "en": "Nom, tasty.",
+     "ar": "جميل، طعمه حلو."
+    },
+    {
+     "en": "Nom, wonderful.",
+     "ar": "جميل، رائع."
+    },
+    {
+     "en": "Nom, fantastic.",
+     "ar": "جميل، فظيع."
+    }
+   ]
+  },
+  {
+   "id": "slg-000867",
+   "sentences": [
+    {
+     "en": "The food is yucky.",
+     "ar": "الأكل طعمه وحش."
+    },
+    {
+     "en": "The soup is yucky.",
+     "ar": "الشوربة طعمها وحش."
+    },
+    {
+     "en": "The cake is yucky.",
+     "ar": "الكيك طعمه وحش."
+    },
+    {
+     "en": "The drink is yucky.",
+     "ar": "المشروب طعمه وحش."
+    },
+    {
+     "en": "The medicine is yucky.",
+     "ar": "الدوا طعمه وحش."
+    },
+    {
+     "en": "The vegetable is yucky.",
+     "ar": "الخضار طعمه وحش."
+    },
+    {
+     "en": "The fruit is yucky.",
+     "ar": "الفاكهة طعمها وحش."
+    },
+    {
+     "en": "She said the food is yucky.",
+     "ar": "قالت الأكل طعمه وحش."
+    },
+    {
+     "en": "He said the soup is yucky.",
+     "ar": "قال الشوربة طعمها وحش."
+    },
+    {
+     "en": "She said the cake is yucky.",
+     "ar": "قالت الكيك طعمه وحش."
+    }
+   ]
+  },
+  {
+   "id": "slg-000868",
+   "sentences": [
+    {
+     "en": "The food is icky.",
+     "ar": "الأكل مقزز."
+    },
+    {
+     "en": "The soup is icky.",
+     "ar": "الشوربة مقززة."
+    },
+    {
+     "en": "The cake is icky.",
+     "ar": "الكيك مقزز."
+    },
+    {
+     "en": "The drink is icky.",
+     "ar": "المشروب مقزز."
+    },
+    {
+     "en": "The medicine is icky.",
+     "ar": "الدوا مقزز."
+    },
+    {
+     "en": "The vegetable is icky.",
+     "ar": "الخضار مقزز."
+    },
+    {
+     "en": "The fruit is icky.",
+     "ar": "الفاكهة مقززة."
+    },
+    {
+     "en": "She said the food is icky.",
+     "ar": "قالت الأكل مقزز."
+    },
+    {
+     "en": "He said the soup is icky.",
+     "ar": "قال الشوربة مقززة."
+    },
+    {
+     "en": "She said the cake is icky.",
+     "ar": "قالت الكيك مقزز."
+    }
+   ]
+  },
+  {
+   "id": "slg-000869",
+   "sentences": [
+    {
+     "en": "The food is ropey.",
+     "ar": "الأكل جودته وحشة."
+    },
+    {
+     "en": "The soup is ropey.",
+     "ar": "الشوربة جودتها وحشة."
+    },
+    {
+     "en": "The cake is ropey.",
+     "ar": "الكيك جودته وحشة."
+    },
+    {
+     "en": "The drink is ropey.",
+     "ar": "المشروب جودته وحشة."
+    },
+    {
+     "en": "The medicine is ropey.",
+     "ar": "الدوا جودته وحشة."
+    },
+    {
+     "en": "The vegetable is ropey.",
+     "ar": "الخضار جودته وحشة."
+    },
+    {
+     "en": "The fruit is ropey.",
+     "ar": "الفاكهة جودتها وحشة."
+    },
+    {
+     "en": "She said the food is ropey.",
+     "ar": "قالت الأكل جودته وحشة."
+    },
+    {
+     "en": "He said the soup is ropey.",
+     "ar": "قال الشوربة جودتها وحشة."
+    },
+    {
+     "en": "She said the cake is ropey.",
+     "ar": "قالت الكيك جودته وحشة."
+    }
+   ]
+  },
+  {
+   "id": "slg-000870",
+   "sentences": [
+    {
+     "en": "He ate at a greasy spoon.",
+     "ar": "اكل في مطعم شعبي."
+    },
+    {
+     "en": "She works at a greasy spoon.",
+     "ar": "بتشتغل في مطعم شعبي."
+    },
+    {
+     "en": "He loves the greasy spoon.",
+     "ar": "بيحب المطعم الشعبي."
+    },
+    {
+     "en": "She avoids the greasy spoon.",
+     "ar": "بتتجنب المطعم الشعبي."
+    },
+    {
+     "en": "He found a greasy spoon.",
+     "ar": "لقى مطعم شعبي."
+    },
+    {
+     "en": "She knows a greasy spoon.",
+     "ar": "عارفة مطعم شعبي."
+    },
+    {
+     "en": "He visited a greasy spoon.",
+     "ar": "زار مطعم شعبي."
+    },
+    {
+     "en": "She recommended a greasy spoon.",
+     "ar": "رشحت مطعم شعبي."
+    },
+    {
+     "en": "He owns a greasy spoon.",
+     "ar": "عنده مطعم شعبي."
+    },
+    {
+     "en": "She manages a greasy spoon.",
+     "ar": "بتدير مطعم شعبي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000871",
+   "sentences": [
+    {
+     "en": "He drank at a dive.",
+     "ar": "شرب في بار شعبي."
+    },
+    {
+     "en": "She sang at a dive.",
+     "ar": "غنت في بار شعبي."
+    },
+    {
+     "en": "He loves the dive.",
+     "ar": "بيحب البار الشعبي."
+    },
+    {
+     "en": "She avoids the dive.",
+     "ar": "بتتجنب البار الشعبي."
+    },
+    {
+     "en": "He found a dive.",
+     "ar": "لقى بار شعبي."
+    },
+    {
+     "en": "She knows a dive.",
+     "ar": "عارفة بار شعبي."
+    },
+    {
+     "en": "He visited a dive.",
+     "ar": "زار بار شعبي."
+    },
+    {
+     "en": "She recommended a dive.",
+     "ar": "رشحت بار شعبي."
+    },
+    {
+     "en": "He owns a dive.",
+     "ar": "عنده بار شعبي."
+    },
+    {
+     "en": "She manages a dive.",
+     "ar": "بتدير بار شعبي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000872",
+   "sentences": [
+    {
+     "en": "He found a hole in the wall.",
+     "ar": "لقى مطعم صغير مخفي."
+    },
+    {
+     "en": "She loves the hole in the wall.",
+     "ar": "بتحب المطعم الصغير المخفي."
+    },
+    {
+     "en": "He ate at a hole in the wall.",
+     "ar": "اكل في مطعم صغير مخفي."
+    },
+    {
+     "en": "She knows a hole in the wall.",
+     "ar": "عارفة مطعم صغير مخفي."
+    },
+    {
+     "en": "He visited a hole in the wall.",
+     "ar": "زار مطعم صغير مخفي."
+    },
+    {
+     "en": "She recommended a hole in the wall.",
+     "ar": "رشحت مطعم صغير مخفي."
+    },
+    {
+     "en": "He owns a hole in the wall.",
+     "ar": "عنده مطعم صغير مخفي."
+    },
+    {
+     "en": "She manages a hole in the wall.",
+     "ar": "بتدير مطعم صغير مخفي."
+    },
+    {
+     "en": "He found a hole in the wall and told friends.",
+     "ar": "لقى مطعم صغير مخفي وقال لأصحابه."
+    },
+    {
+     "en": "She found a hole in the wall and kept it secret.",
+     "ar": "لقت مطعم صغير مخفي وحتفظت بيه سر."
+    }
+   ]
+  },
+  {
+   "id": "slg-000873",
+   "sentences": [
+    {
+     "en": "He ate at a caff.",
+     "ar": "اكل في مقهى شعبي."
+    },
+    {
+     "en": "She works at a caff.",
+     "ar": "بتشتغل في مقهى شعبي."
+    },
+    {
+     "en": "He loves the caff.",
+     "ar": "بيحب المقهى الشعبي."
+    },
+    {
+     "en": "She avoids the caff.",
+     "ar": "بتتجنب المقهى الشعبي."
+    },
+    {
+     "en": "He found a caff.",
+     "ar": "لقى مقهى شعبي."
+    },
+    {
+     "en": "She knows a caff.",
+     "ar": "عارفة مقهى شعبي."
+    },
+    {
+     "en": "He visited a caff.",
+     "ar": "زار مقهى شعبي."
+    },
+    {
+     "en": "She recommended a caff.",
+     "ar": "رشحت مقهى شعبي."
+    },
+    {
+     "en": "He owns a caff.",
+     "ar": "عنده مقهى شعبي."
+    },
+    {
+     "en": "She manages a caff.",
+     "ar": "بتدير مقهى شعبي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000874",
+   "sentences": [
+    {
+     "en": "He bought fish from the chippy.",
+     "ar": "اشترى سمك من محل السمك والبطاطس."
+    },
+    {
+     "en": "She works at the chippy.",
+     "ar": "بتشتغل في محل السمك والبطاطس."
+    },
+    {
+     "en": "He loves the chippy.",
+     "ar": "بيحب محل السمك والبطاطس."
+    },
+    {
+     "en": "She avoids the chippy.",
+     "ar": "بتتجنب محل السمك والبطاطس."
+    },
+    {
+     "en": "He found a chippy.",
+     "ar": "لقى محل سمك وبطاطس."
+    },
+    {
+     "en": "She knows a chippy.",
+     "ar": "عارفة محل سمك وبطاطس."
+    },
+    {
+     "en": "He visited a chippy.",
+     "ar": "زار محل سمك وبطاطس."
+    },
+    {
+     "en": "She recommended a chippy.",
+     "ar": "رشحت محل سمك وبطاطس."
+    },
+    {
+     "en": "He owns a chippy.",
+     "ar": "عنده محل سمك وبطاطس."
+    },
+    {
+     "en": "She manages a chippy.",
+     "ar": "بتدير محل سمك وبطاطس."
+    }
+   ]
+  },
+  {
+   "id": "slg-000875",
+   "sentences": [
+    {
+     "en": "He drank at the boozer.",
+     "ar": "شرب في البار الشعبي."
+    },
+    {
+     "en": "She works at the boozer.",
+     "ar": "بتشتغل في البار الشعبي."
+    },
+    {
+     "en": "He loves the boozer.",
+     "ar": "بيحب البار الشعبي."
+    },
+    {
+     "en": "She avoids the boozer.",
+     "ar": "بتتجنب البار الشعبي."
+    },
+    {
+     "en": "He found a boozer.",
+     "ar": "لقى بار شعبي."
+    },
+    {
+     "en": "She knows a boozer.",
+     "ar": "عارفة بار شعبي."
+    },
+    {
+     "en": "He visited a boozer.",
+     "ar": "زار بار شعبي."
+    },
+    {
+     "en": "She recommended a boozer.",
+     "ar": "رشحت بار شعبي."
+    },
+    {
+     "en": "He owns a boozer.",
+     "ar": "عنده بار شعبي."
+    },
+    {
+     "en": "She manages a boozer.",
+     "ar": "بتدير بار شعبي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000876",
+   "sentences": [
+    {
+     "en": "He went to the watering hole.",
+     "ar": "راح البار."
+    },
+    {
+     "en": "She went to the watering hole.",
+     "ar": "راحت البار."
+    },
+    {
+     "en": "He met friends at the watering hole.",
+     "ar": "قابل أصحابه في البار."
+    },
+    {
+     "en": "She met friends at the watering hole.",
+     "ar": "قابلت أصحابها في البار."
+    },
+    {
+     "en": "He drank at the watering hole.",
+     "ar": "شرب في البار."
+    },
+    {
+     "en": "She drank at the watering hole.",
+     "ar": "شربت في البار."
+    },
+    {
+     "en": "He talked at the watering hole.",
+     "ar": "اتكلم في البار."
+    },
+    {
+     "en": "She talked at the watering hole.",
+     "ar": "اتكلمت في البار."
+    },
+    {
+     "en": "He laughed at the watering hole.",
+     "ar": "ضحك في البار."
+    },
+    {
+     "en": "She laughed at the watering hole.",
+     "ar": "ضحكت في البار."
+    }
+   ]
+  },
+  {
+   "id": "slg-000877",
+   "sentences": [
+    {
+     "en": "He went to the hangout.",
+     "ar": "راح المكان اللي بيتجمعوا فيه."
+    },
+    {
+     "en": "She went to the hangout.",
+     "ar": "راحت المكان اللي بيتجمعوا فيه."
+    },
+    {
+     "en": "He met friends at the hangout.",
+     "ar": "قابل أصحابه في المكان."
+    },
+    {
+     "en": "She met friends at the hangout.",
+     "ar": "قابلت أصحابها في المكان."
+    },
+    {
+     "en": "He relaxed at the hangout.",
+     "ar": "ارتاح في المكان."
+    },
+    {
+     "en": "She relaxed at the hangout.",
+     "ar": "ارتاحت في المكان."
+    },
+    {
+     "en": "He talked at the hangout.",
+     "ar": "اتكلم في المكان."
+    },
+    {
+     "en": "She talked at the hangout.",
+     "ar": "اتكلمت في المكان."
+    },
+    {
+     "en": "He laughed at the hangout.",
+     "ar": "ضحك في المكان."
+    },
+    {
+     "en": "She laughed at the hangout.",
+     "ar": "ضحكت في المكان."
+    }
+   ]
+  },
+  {
+   "id": "slg-000878",
+   "sentences": [
+    {
+     "en": "This is his stomping ground.",
+     "ar": "ده المكان اللي اتربى فيه."
+    },
+    {
+     "en": "This is her stomping ground.",
+     "ar": "ده المكان اللي اتربت فيه."
+    },
+    {
+     "en": "He went back to his stomping ground.",
+     "ar": "رجع للمكان اللي اتربى فيه."
+    },
+    {
+     "en": "She went back to her stomping ground.",
+     "ar": "رجعت للمكان اللي اتربت فيه."
+    },
+    {
+     "en": "He knows his stomping ground.",
+     "ar": "عارف المكان اللي اتربى فيه."
+    },
+    {
+     "en": "She knows her stomping ground.",
+     "ar": "عارفة المكان اللي اتربت فيه."
+    },
+    {
+     "en": "He loves his stomping ground.",
+     "ar": "بيحب المكان اللي اتربى فيه."
+    },
+    {
+     "en": "She loves her stomping ground.",
+     "ar": "بتحب المكان اللي اتربت فيه."
+    },
+    {
+     "en": "He avoided his stomping ground.",
+     "ar": "اتجنب المكان اللي اتربى فيه."
+    },
+    {
+     "en": "She avoided her stomping ground.",
+     "ar": "اتجنبت المكان اللي اتربت فيه."
+    }
+   ]
+  },
+  {
+   "id": "slg-000879",
+   "sentences": [
+    {
+     "en": "He went to his crib.",
+     "ar": "راح بيته."
+    },
+    {
+     "en": "She went to her crib.",
+     "ar": "راحت بيتها."
+    },
+    {
+     "en": "He has a nice crib.",
+     "ar": "عنده بيت حلو."
+    },
+    {
+     "en": "She has a nice crib.",
+     "ar": "عندها بيت حلو."
+    },
+    {
+     "en": "He cleaned his crib.",
+     "ar": "نضف بيته."
+    },
+    {
+     "en": "She cleaned her crib.",
+     "ar": "نضفت بيتها."
+    },
+    {
+     "en": "He decorated his crib.",
+     "ar": "زين بيته."
+    },
+    {
+     "en": "She decorated her crib.",
+     "ar": "زينت بيتها."
+    },
+    {
+     "en": "He invited friends to his crib.",
+     "ar": "دعا أصحابه لبيته."
+    },
+    {
+     "en": "She invited friends to her crib.",
+     "ar": "دعت أصحابها لبيتها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000880",
+   "sentences": [
+    {
+     "en": "He went to his pad.",
+     "ar": "راح شقته."
+    },
+    {
+     "en": "She went to her pad.",
+     "ar": "راحت شقتها."
+    },
+    {
+     "en": "He has a nice pad.",
+     "ar": "عنده شقة حلوة."
+    },
+    {
+     "en": "She has a nice pad.",
+     "ar": "عندها شقة حلوة."
+    },
+    {
+     "en": "He cleaned his pad.",
+     "ar": "نضف شقته."
+    },
+    {
+     "en": "She cleaned her pad.",
+     "ar": "نضفت شقتها."
+    },
+    {
+     "en": "He decorated his pad.",
+     "ar": "زين شقته."
+    },
+    {
+     "en": "She decorated her pad.",
+     "ar": "زينت شقتها."
+    },
+    {
+     "en": "He invited friends to his pad.",
+     "ar": "دعا أصحابه لشقته."
+    },
+    {
+     "en": "She invited friends to her pad.",
+     "ar": "دعت أصحابها لشقتها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000881",
+   "sentences": [
+    {
+     "en": "He went to his digs.",
+     "ar": "راح سكنه."
+    },
+    {
+     "en": "She went to her digs.",
+     "ar": "راحت سكنها."
+    },
+    {
+     "en": "He has nice digs.",
+     "ar": "عنده سكن حلو."
+    },
+    {
+     "en": "She has nice digs.",
+     "ar": "عندها سكن حلو."
+    },
+    {
+     "en": "He cleaned his digs.",
+     "ar": "نضف سكنه."
+    },
+    {
+     "en": "She cleaned her digs.",
+     "ar": "نضفت سكنها."
+    },
+    {
+     "en": "He decorated his digs.",
+     "ar": "زين سكنه."
+    },
+    {
+     "en": "She decorated her digs.",
+     "ar": "زينت سكنها."
+    },
+    {
+     "en": "He invited friends to his digs.",
+     "ar": "دعا أصحابه لسكنه."
+    },
+    {
+     "en": "She invited friends to her digs.",
+     "ar": "دعت أصحابها لسكنها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000882",
+   "sentences": [
+    {
+     "en": "He went to his gaff.",
+     "ar": "راح بيته."
+    },
+    {
+     "en": "She went to her gaff.",
+     "ar": "راحت بيتها."
+    },
+    {
+     "en": "He has a nice gaff.",
+     "ar": "عنده بيت حلو."
+    },
+    {
+     "en": "She has a nice gaff.",
+     "ar": "عندها بيت حلو."
+    },
+    {
+     "en": "He cleaned his gaff.",
+     "ar": "نضف بيته."
+    },
+    {
+     "en": "She cleaned her gaff.",
+     "ar": "نضفت بيتها."
+    },
+    {
+     "en": "He decorated his gaff.",
+     "ar": "زين بيته."
+    },
+    {
+     "en": "She decorated her gaff.",
+     "ar": "زينت بيتها."
+    },
+    {
+     "en": "He invited friends to his gaff.",
+     "ar": "دعا أصحابه لبيته."
+    },
+    {
+     "en": "She invited friends to her gaff.",
+     "ar": "دعت أصحابها لبيتها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000883",
+   "sentences": [
+    {
+     "en": "He went to his casa.",
+     "ar": "راح بيته."
+    },
+    {
+     "en": "She went to her casa.",
+     "ar": "راحت بيتها."
+    },
+    {
+     "en": "He has a nice casa.",
+     "ar": "عنده بيت حلو."
+    },
+    {
+     "en": "She has a nice casa.",
+     "ar": "عندها بيت حلو."
+    },
+    {
+     "en": "He cleaned his casa.",
+     "ar": "نضف بيته."
+    },
+    {
+     "en": "She cleaned her casa.",
+     "ar": "نضفت بيتها."
+    },
+    {
+     "en": "He decorated his casa.",
+     "ar": "زين بيته."
+    },
+    {
+     "en": "She decorated her casa.",
+     "ar": "زينت بيتها."
+    },
+    {
+     "en": "He invited friends to his casa.",
+     "ar": "دعا أصحابه لبيته."
+    },
+    {
+     "en": "She invited friends to her casa.",
+     "ar": "دعت أصحابها لبيتها."
+    }
+   ]
+  },
+  {
+   "id": "slg-000884",
+   "sentences": [
+    {
+     "en": "Welcome to my humble abode.",
+     "ar": "أهلا بيك في بيتي المتواضع."
+    },
+    {
+     "en": "He said welcome to his humble abode.",
+     "ar": "قال أهلا بيك في بيته المتواضع."
+    },
+    {
+     "en": "She said welcome to her humble abode.",
+     "ar": "قالت أهلا بيكي في بيتها المتواضع."
+    },
+    {
+     "en": "He showed his humble abode.",
+     "ar": "عرض بيته المتواضع."
+    },
+    {
+     "en": "She showed her humble abode.",
+     "ar": "عرضت بيتها المتواضع."
+    },
+    {
+     "en": "He loves his humble abode.",
+     "ar": "بيحب بيته المتواضع."
+    },
+    {
+     "en": "She loves her humble abode.",
+     "ar": "بتحب بيتها المتواضع."
+    },
+    {
+     "en": "He cleaned his humble abode.",
+     "ar": "نضف بيته المتواضع."
+    },
+    {
+     "en": "She cleaned her humble abode.",
+     "ar": "نضفت بيتها المتواضع."
+    },
+    {
+     "en": "He decorated his humble abode.",
+     "ar": "زين بيته المتواضع."
+    }
+   ]
+  },
+  {
+   "id": "slg-000885",
+   "sentences": [
+    {
+     "en": "He has a bachelor pad.",
+     "ar": "عنده شقة أعزب."
+    },
+    {
+     "en": "He went to his bachelor pad.",
+     "ar": "راح شقته الأعزب."
+    },
+    {
+     "en": "He cleaned his bachelor pad.",
+     "ar": "نضف شقته الأعزب."
+    },
+    {
+     "en": "He decorated his bachelor pad.",
+     "ar": "زين شقته الأعزب."
+    },
+    {
+     "en": "He invited friends to his bachelor pad.",
+     "ar": "دعا أصحابه لشقته الأعزب."
+    },
+    {
+     "en": "He has a messy bachelor pad.",
+     "ar": "عنده شقة أعزب مكركبة."
+    },
+    {
+     "en": "He has a clean bachelor pad.",
+     "ar": "عنده شقة أعزب نضيفة."
+    },
+    {
+     "en": "He has a small bachelor pad.",
+     "ar": "عنده شقة أعزب صغيرة."
+    },
+    {
+     "en": "He has a big bachelor pad.",
+     "ar": "عنده شقة أعزب كبيرة."
+    },
+    {
+     "en": "He loves his bachelor pad.",
+     "ar": "بيحب شقته الأعزب."
+    }
+   ]
+  },
+  {
+   "id": "slg-000886",
+   "sentences": [
+    {
+     "en": "His place is a dump.",
+     "ar": "مكانه وسخ ومكركب."
+    },
+    {
+     "en": "Her place is a dump.",
+     "ar": "مكانها وسخ ومكركب."
+    },
+    {
+     "en": "He lives in a dump.",
+     "ar": "عايش في مكان وسخ."
+    },
+    {
+     "en": "She lives in a dump.",
+     "ar": "عايشة في مكان وسخ."
+    },
+    {
+     "en": "He has a dump.",
+     "ar": "عنده مكان وسخ."
+    },
+    {
+     "en": "She has a dump.",
+     "ar": "عندها مكان وسخ."
+    },
+    {
+     "en": "He cleaned the dump.",
+     "ar": "نضف المكان الوسخ."
+    },
+    {
+     "en": "She cleaned the dump.",
+     "ar": "نضفت المكان الوسخ."
+    },
+    {
+     "en": "He left the dump.",
+     "ar": "ساب المكان الوسخ."
+    },
+    {
+     "en": "She left the dump.",
+     "ar": "سابت المكان الوسخ."
+    }
+   ]
+  },
+  {
+   "id": "slg-000887",
+   "sentences": [
+    {
+     "en": "He lives in a hovel.",
+     "ar": "عايش في سكن متهالك."
+    },
+    {
+     "en": "She lives in a hovel.",
+     "ar": "عايشة في سكن متهالك."
+    },
+    {
+     "en": "He has a hovel.",
+     "ar": "عنده سكن متهالك."
+    },
+    {
+     "en": "She has a hovel.",
+     "ar": "عندها سكن متهالك."
+    },
+    {
+     "en": "He cleaned the hovel.",
+     "ar": "نضف السكن المتهالك."
+    },
+    {
+     "en": "She cleaned the hovel.",
+     "ar": "نضفت السكن المتهالك."
+    },
+    {
+     "en": "He left the hovel.",
+     "ar": "ساب السكن المتهالك."
+    },
+    {
+     "en": "She left the hovel.",
+     "ar": "سابت السكن المتهالك."
+    },
+    {
+     "en": "He improved the hovel.",
+     "ar": "حسّن السكن المتهالك."
+    },
+    {
+     "en": "She improved the hovel.",
+     "ar": "حسنت السكن المتهالك."
+    }
+   ]
+  },
+  {
+   "id": "slg-000888",
+   "sentences": [
+    {
+     "en": "He lives in a shack.",
+     "ar": "عايش في كوخ."
+    },
+    {
+     "en": "She lives in a shack.",
+     "ar": "عايشة في كوخ."
+    },
+    {
+     "en": "He has a shack.",
+     "ar": "عنده كوخ."
+    },
+    {
+     "en": "She has a shack.",
+     "ar": "عندها كوخ."
+    },
+    {
+     "en": "He built a shack.",
+     "ar": "بنى كوخ."
+    },
+    {
+     "en": "She built a shack.",
+     "ar": "بنت كوخ."
+    },
+    {
+     "en": "He cleaned the shack.",
+     "ar": "نضف الكوخ."
+    },
+    {
+     "en": "She cleaned the shack.",
+     "ar": "نضفت الكوخ."
+    },
+    {
+     "en": "He left the shack.",
+     "ar": "ساب الكوخ."
+    },
+    {
+     "en": "She left the shack.",
+     "ar": "سابت الكوخ."
+    }
+   ]
+  },
+  {
+   "id": "slg-000889",
+   "sentences": [
+    {
+     "en": "He stayed at a flophouse.",
+     "ar": "بات في سكن رخيص."
+    },
+    {
+     "en": "She stayed at a flophouse.",
+     "ar": "باتت في سكن رخيص."
+    },
+    {
+     "en": "He lives in a flophouse.",
+     "ar": "عايش في سكن رخيص."
+    },
+    {
+     "en": "She lives in a flophouse.",
+     "ar": "عايشة في سكن رخيص."
+    },
+    {
+     "en": "He found a flophouse.",
+     "ar": "لقى سكن رخيص."
+    },
+    {
+     "en": "She found a flophouse.",
+     "ar": "لقت سكن رخيص."
+    },
+    {
+     "en": "He left the flophouse.",
+     "ar": "ساب السكن الرخيص."
+    },
+    {
+     "en": "She left the flophouse.",
+     "ar": "سابت السكن الرخيص."
+    },
+    {
+     "en": "He owns a flophouse.",
+     "ar": "عنده سكن رخيص."
+    },
+    {
+     "en": "She manages a flophouse.",
+     "ar": "بتدير سكن رخيص."
+    }
+   ]
+  },
+  {
+   "id": "slg-000890",
+   "sentences": [
+    {
+     "en": "He lives in a squat.",
+     "ar": "عايش في مبنى فاضي من غير إذن."
+    },
+    {
+     "en": "She lives in a squat.",
+     "ar": "عايشة في مبنى فاضي من غير إذن."
+    },
+    {
+     "en": "He has a squat.",
+     "ar": "عنده مبنى فاضي."
+    },
+    {
+     "en": "She has a squat.",
+     "ar": "عندها مبنى فاضي."
+    },
+    {
+     "en": "He found a squat.",
+     "ar": "لقى مبنى فاضي."
+    },
+    {
+     "en": "She found a squat.",
+     "ar": "لقت مبنى فاضي."
+    },
+    {
+     "en": "He left the squat.",
+     "ar": "ساب المبنى الفاضي."
+    },
+    {
+     "en": "She left the squat.",
+     "ar": "سابت المبنى الفاضي."
+    },
+    {
+     "en": "He cleaned the squat.",
+     "ar": "نضف المبنى الفاضي."
+    },
+    {
+     "en": "She cleaned the squat.",
+     "ar": "نضفت المبنى الفاضي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000891",
+   "sentences": [
+    {
+     "en": "He bought a fixer-upper.",
+     "ar": "اشترى بيت محتاج تصليح."
+    },
+    {
+     "en": "She bought a fixer-upper.",
+     "ar": "اشترت بيت محتاج تصليح."
+    },
+    {
+     "en": "He has a fixer-upper.",
+     "ar": "عنده بيت محتاج تصليح."
+    },
+    {
+     "en": "She has a fixer-upper.",
+     "ar": "عندها بيت محتاج تصليح."
+    },
+    {
+     "en": "He fixed the fixer-upper.",
+     "ar": "صلح البيت المحتاج تصليح."
+    },
+    {
+     "en": "She fixed the fixer-upper.",
+     "ar": "صلحت البيت المحتاج تصليح."
+    },
+    {
+     "en": "He sold the fixer-upper.",
+     "ar": "باع البيت المحتاج تصليح."
+    },
+    {
+     "en": "She sold the fixer-upper.",
+     "ar": "باعت البيت المحتاج تصليح."
+    },
+    {
+     "en": "He loves his fixer-upper.",
+     "ar": "بيحب بيته المحتاج تصليح."
+    },
+    {
+     "en": "She loves her fixer-upper.",
+     "ar": "بتحب بيتها المحتاج تصليح."
+    }
+   ]
+  },
+  {
+   "id": "slg-000892",
+   "sentences": [
+    {
+     "en": "He bought a doer-upper.",
+     "ar": "اشترى بيت محتاج تجديد."
+    },
+    {
+     "en": "She bought a doer-upper.",
+     "ar": "اشترت بيت محتاج تجديد."
+    },
+    {
+     "en": "He has a doer-upper.",
+     "ar": "عنده بيت محتاج تجديد."
+    },
+    {
+     "en": "She has a doer-upper.",
+     "ar": "عندها بيت محتاج تجديد."
+    },
+    {
+     "en": "He fixed the doer-upper.",
+     "ar": "جدد البيت المحتاج تجديد."
+    },
+    {
+     "en": "She fixed the doer-upper.",
+     "ar": "جددت البيت المحتاج تجديد."
+    },
+    {
+     "en": "He sold the doer-upper.",
+     "ar": "باع البيت المحتاج تجديد."
+    },
+    {
+     "en": "She sold the doer-upper.",
+     "ar": "باعت البيت المحتاج تجديد."
+    },
+    {
+     "en": "He loves his doer-upper.",
+     "ar": "بيحب بيته المحتاج تجديد."
+    },
+    {
+     "en": "She loves her doer-upper.",
+     "ar": "بتحب بيتها المحتاج تجديد."
+    }
+   ]
+  },
+  {
+   "id": "slg-000893",
+   "sentences": [
+    {
+     "en": "The house is homely.",
+     "ar": "البيت بيتوتي ومريح."
+    },
+    {
+     "en": "The room is homely.",
+     "ar": "الأوضة بيتوتية ومريحة."
+    },
+    {
+     "en": "He has a homely house.",
+     "ar": "عنده بيت بيتوتي."
+    },
+    {
+     "en": "She has a homely room.",
+     "ar": "عندها أوضة بيتوتية."
+    },
+    {
+     "en": "He made the house homely.",
+     "ar": "خلى البيت بيتوتي."
+    },
+    {
+     "en": "She made the room homely.",
+     "ar": "خلت الأوضة بيتوتية."
+    },
+    {
+     "en": "He loves the homely feel.",
+     "ar": "بيحب الإحساس البيتوتي."
+    },
+    {
+     "en": "She loves the homely vibe.",
+     "ar": "بتحب الإحساس البيتوتي."
+    },
+    {
+     "en": "He decorated the house homely.",
+     "ar": "زين البيت بشكل بيتوتي."
+    },
+    {
+     "en": "She decorated the room homely.",
+     "ar": "زينت الأوضة بشكل بيتوتي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000894",
+   "sentences": [
+    {
+     "en": "The room is snug.",
+     "ar": "الأوضة صغيرة ودافئة ومريحة."
+    },
+    {
+     "en": "The house is snug.",
+     "ar": "البيت صغير ودافئ ومريح."
+    },
+    {
+     "en": "He has a snug room.",
+     "ar": "عنده أوضة صغيرة ودافئة."
+    },
+    {
+     "en": "She has a snug house.",
+     "ar": "عندها بيت صغير ودافئ."
+    },
+    {
+     "en": "He made the room snug.",
+     "ar": "خلى الأوضة صغيرة ودافئة."
+    },
+    {
+     "en": "She made the house snug.",
+     "ar": "خلت البيت صغير ودافئ."
+    },
+    {
+     "en": "He loves the snug feel.",
+     "ar": "بيحب الإحساس الدافئ."
+    },
+    {
+     "en": "She loves the snug vibe.",
+     "ar": "بتحب الإحساس الدافئ."
+    },
+    {
+     "en": "He decorated the room snug.",
+     "ar": "زين الأوضة بشكل دافئ."
+    },
+    {
+     "en": "She decorated the house snug.",
+     "ar": "زينت البيت بشكل دافئ."
+    }
+   ]
+  },
+  {
+   "id": "slg-000895",
+   "sentences": [
+    {
+     "en": "The traffic is bumper to bumper.",
+     "ar": "الزحمة عربيات واقفة لزق في بعض."
+    },
+    {
+     "en": "He drove bumper to bumper.",
+     "ar": "ساق في زحمة عربيات لزق في بعض."
+    },
+    {
+     "en": "She drove bumper to bumper.",
+     "ar": "ساقت في زحمة عربيات لزق في بعض."
+    },
+    {
+     "en": "He was stuck bumper to bumper.",
+     "ar": "اتعلق في زحمة عربيات لزق في بعض."
+    },
+    {
+     "en": "She was stuck bumper to bumper.",
+     "ar": "اتعلقت في زحمة عربيات لزق في بعض."
+    },
+    {
+     "en": "He hated the bumper to bumper.",
+     "ar": "كره الزحمة لزق في بعض."
+    },
+    {
+     "en": "She hated the bumper to bumper.",
+     "ar": "كريهت الزحمة لزق في بعض."
+    },
+    {
+     "en": "He avoided the bumper to bumper.",
+     "ar": "اتجنب الزحمة لزق في بعض."
+    },
+    {
+     "en": "She avoided the bumper to bumper.",
+     "ar": "اتجنبت الزحمة لزق في بعض."
+    },
+    {
+     "en": "He complained about the bumper to bumper.",
+     "ar": "اشتكى من الزحمة لزق في بعض."
+    }
+   ]
+  },
+  {
+   "id": "slg-000896",
+   "sentences": [
+    {
+     "en": "He took a back road.",
+     "ar": "اخد طريق فرعي هادي."
+    },
+    {
+     "en": "She took a back road.",
+     "ar": "اخدت طريق فرعي هادي."
+    },
+    {
+     "en": "He drove on a back road.",
+     "ar": "ساق على طريق فرعي هادي."
+    },
+    {
+     "en": "She drove on a back road.",
+     "ar": "ساقت على طريق فرعي هادي."
+    },
+    {
+     "en": "He loves back roads.",
+     "ar": "بيحب الطرق الفرعية الهادية."
+    },
+    {
+     "en": "She loves back roads.",
+     "ar": "بتحب الطرق الفرعية الهادية."
+    },
+    {
+     "en": "He found a back road.",
+     "ar": "لقى طريق فرعي هادي."
+    },
+    {
+     "en": "She found a back road.",
+     "ar": "لقت طريق فرعي هادي."
+    },
+    {
+     "en": "He avoided the back road.",
+     "ar": "اتجنب الطريق الفرعي الهادي."
+    },
+    {
+     "en": "She avoided the back road.",
+     "ar": "اتجنبت الطريق الفرعي الهادي."
+    }
+   ]
+  },
+  {
+   "id": "slg-000897",
+   "sentences": [
+    {
+     "en": "He lives in the middle of nowhere.",
+     "ar": "عايش في مكان نائي جدًا."
+    },
+    {
+     "en": "She lives in the middle of nowhere.",
+     "ar": "عايشة في مكان نائي جدًا."
+    },
+    {
+     "en": "He went to the middle of nowhere.",
+     "ar": "راح مكان نائي جدًا."
+    },
+    {
+     "en": "She went to the middle of nowhere.",
+     "ar": "راحت مكان نائي جدًا."
+    },
+    {
+     "en": "He found the middle of nowhere.",
+     "ar": "لقى مكان نائي جدًا."
+    },
+    {
+     "en": "She found the middle of nowhere.",
+     "ar": "لقت مكان نائي جدًا."
+    },
+    {
+     "en": "He loves the middle of nowhere.",
+     "ar": "بيحب المكان النائي جدًا."
+    },
+    {
+     "en": "She loves the middle of nowhere.",
+     "ar": "بتحب المكان النائي جدًا."
+    },
+    {
+     "en": "He hates the middle of nowhere.",
+     "ar": "بيكره المكان النائي جدًا."
+    },
+    {
+     "en": "She hates the middle of nowhere.",
+     "ar": "بتكره المكان النائي جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-000898",
+   "sentences": [
+    {
+     "en": "He lives in the sticks.",
+     "ar": "عايش في المناطق الريفية."
+    },
+    {
+     "en": "She lives in the sticks.",
+     "ar": "عايشة في المناطق الريفية."
+    },
+    {
+     "en": "He went to the sticks.",
+     "ar": "راح المناطق الريفية."
+    },
+    {
+     "en": "She went to the sticks.",
+     "ar": "راحت المناطق الريفية."
+    },
+    {
+     "en": "He found the sticks.",
+     "ar": "لقى المناطق الريفية."
+    },
+    {
+     "en": "She found the sticks.",
+     "ar": "لقت المناطق الريفية."
+    },
+    {
+     "en": "He loves the sticks.",
+     "ar": "بيحب المناطق الريفية."
+    },
+    {
+     "en": "She loves the sticks.",
+     "ar": "بتحب المناطق الريفية."
+    },
+    {
+     "en": "He hates the sticks.",
+     "ar": "بيكره المناطق الريفية."
+    },
+    {
+     "en": "She hates the sticks.",
+     "ar": "بتكره المناطق الريفية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000899",
+   "sentences": [
+    {
+     "en": "He lives in the boonies.",
+     "ar": "عايش في المناطق النائية."
+    },
+    {
+     "en": "She lives in the boonies.",
+     "ar": "عايشة في المناطق النائية."
+    },
+    {
+     "en": "He went to the boonies.",
+     "ar": "راح المناطق النائية."
+    },
+    {
+     "en": "She went to the boonies.",
+     "ar": "راحت المناطق النائية."
+    },
+    {
+     "en": "He found the boonies.",
+     "ar": "لقى المناطق النائية."
+    },
+    {
+     "en": "She found the boonies.",
+     "ar": "لقت المناطق النائية."
+    },
+    {
+     "en": "He loves the boonies.",
+     "ar": "بيحب المناطق النائية."
+    },
+    {
+     "en": "She loves the boonies.",
+     "ar": "بتحب المناطق النائية."
+    },
+    {
+     "en": "He hates the boonies.",
+     "ar": "بيكره المناطق النائية."
+    },
+    {
+     "en": "She hates the boonies.",
+     "ar": "بتكره المناطق النائية."
+    }
+   ]
+  },
+  {
+   "id": "slg-000900",
+   "sentences": [
+    {
+     "en": "He lives in a podunk.",
+     "ar": "عايش في بلدة صغيرة ومملة."
+    },
+    {
+     "en": "She lives in a podunk.",
+     "ar": "عايشة في بلدة صغيرة ومملة."
+    },
+    {
+     "en": "He went to a podunk.",
+     "ar": "راح بلدة صغيرة ومملة."
+    },
+    {
+     "en": "She went to a podunk.",
+     "ar": "راحت بلدة صغيرة ومملة."
+    },
+    {
+     "en": "He found a podunk.",
+     "ar": "لقى بلدة صغيرة ومملة."
+    },
+    {
+     "en": "She found a podunk.",
+     "ar": "لقت بلدة صغيرة ومملة."
+    },
+    {
+     "en": "He loves the podunk.",
+     "ar": "بيحب البلدة الصغيرة والمملة."
+    },
+    {
+     "en": "She loves the podunk.",
+     "ar": "بتحب البلدة الصغيرة والمملة."
+    },
+    {
+     "en": "He hates the podunk.",
+     "ar": "بيكره البلدة الصغيرة والمملة."
+    },
+    {
+     "en": "She hates the podunk.",
+     "ar": "بتكره البلدة الصغيرة والمملة."
+    }
+   ]
+  }
+ ]
+}
