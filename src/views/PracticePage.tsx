@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { SentenceBuilder } from '../components/SentenceBuilder';
 import { MISTAKE_HUNTER_CASES } from '../data/gamesData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
 import { Sparkles, AlertTriangle, Eye, EyeOff, Volume2 } from 'lucide-react';
 
 export const PracticePage: React.FC = () => {
   // Homework answers reveal state
   const [showHomeworkAnswers, setShowHomeworkAnswers] = useState(false);
+  const appText = useAppTextMap('gamesData');
 
   // Mistake Hunter mini game state
   const [hunterAnswers, setHunterAnswers] = useState<Record<string, boolean>>({});
@@ -126,7 +128,7 @@ export const PracticePage: React.FC = () => {
                     ) : (
                       <p className="text-[#c4ff55]">{item.correction}</p>
                     )}
-                    <p className="text-[#b9b6d5]">{item.explanationAr}</p>
+                    <p className="text-[#b9b6d5]">{txText(appText, item.explanationAr)}</p>
                   </div>
                 )}
               </div>

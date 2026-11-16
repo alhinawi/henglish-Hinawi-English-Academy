@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { VOCABULARY_ACADEMY_WORDS as WORDS } from '../../../data/vocabularyAcademyData';
 import { VERB_TOOLKIT } from '../../../data/verbsData';
 import { MISTAKE_HUNTER_CASES } from '../../../data/gamesData';
+import { useAppTextMap } from '../../../services/contentI18nService';
 import { ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { shuffle, normalizeTyped, uniqueAcademyWords } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
@@ -49,6 +50,10 @@ export function buildWordLabRounds(id: LabId, level: string): Round[] {
   });
 }
 export function WordLabGame({ id, onExit }: { id: LabId; onExit: () => void }) {
+  const vocabText = useAppTextMap('vocabularyAcademyData');
+  const verbsText = useAppTextMap('verbsData');
+  const gamesText = useAppTextMap('gamesData');
+  const tx = (s: string) => vocabText?.[s] ?? verbsText?.[s] ?? gamesText?.[s] ?? s;
   const meta: ArcadeGameMeta = LAB_GAMES.find(g => g.id === id)!;
   const progress = useArcadeProgress();
   const [level, setLevel] = useState('all');
@@ -83,7 +88,7 @@ export function WordLabGame({ id, onExit }: { id: LabId; onExit: () => void }) {
     <ArcadeHud title={meta.title} round={index + 1} totalRounds={rounds.length} score={score} onQuit={onExit}/>
     <div className="flex justify-between text-xs text-[#9b7bff]"><span>{r.level}</span>{id === 'boss-run' && <span>بوابة {Math.floor(index / 5) + 1} • {'♥'.repeat(Math.max(0, hearts))}</span>}</div>
     <div className="rounded-3xl border border-white/10 bg-[#121124] p-5 space-y-5 text-center">
-      <p className="text-sm leading-7 text-[#b9b6d5]">{r.clue}</p><h3 dir="auto" className="text-xl font-bold leading-9 text-white break-words">{shown}</h3>
+      <p className="text-sm leading-7 text-[#b9b6d5]">{tx(r.clue)}</p><h3 dir="auto" className="text-xl font-bold leading-9 text-white break-words">{shown}</h3>
       {r.kind === 'rescue' && <><p className="text-xs text-[#ffd166]">محاولات متبقية: {6 - guessed.filter(c => !r.answer.includes(c)).length}</p><div dir="ltr" className="grid grid-cols-6 gap-1.5">{'abcdefghijklmnopqrstuvwxyz'.split('').map(c => <button key={c} disabled={guessed.includes(c) || feedback !== null} className={button + ' !p-2'} onClick={() => guess(c)}>{c.toUpperCase()}</button>)}</div></>}
       {r.kind === 'letters' && <><div dir="ltr" className="min-h-12 rounded-xl border border-[#41e7ff]/30 p-3 text-xl text-[#41e7ff]">{selected.map(i => tiles[i]).join('')}</div><div dir="ltr" className="flex flex-wrap justify-center gap-2">{tiles.map((c,i) => <button key={i} disabled={selected.includes(i) || feedback !== null} className={button} onClick={() => setSelected(s => [...s,i])}>{c}</button>)}</div><button disabled={feedback !== null} onClick={() => setSelected(s => s.slice(0,-1))} className={button}>تراجع عن حرف</button></>}
       {(r.kind === 'type' || r.kind === 'verb') && <div className="space-y-2"><input aria-label={r.kind === 'verb' ? 'V2' : 'اكتب الكلمة'} placeholder={r.kind === 'verb' ? 'Past simple (V2)' : 'اكتب الكلمة كاملة'} dir="ltr" spellCheck={false} autoComplete="off" autoCapitalize="none" value={typed} disabled={feedback !== null} onChange={e => setTyped(e.target.value)} className="w-full rounded-xl border border-white/20 bg-white/5 p-3 text-white"/>{r.kind === 'verb' && <input aria-label="V3" placeholder="Past participle (V3)" dir="ltr" spellCheck={false} autoComplete="off" value={third} disabled={feedback !== null} onChange={e => setThird(e.target.value)} className="w-full rounded-xl border border-white/20 bg-white/5 p-3 text-white"/>}</div>}

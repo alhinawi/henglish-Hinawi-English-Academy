@@ -4,6 +4,7 @@ import React from 'react';
 import { UserProgressState, AchievementBadge, PageRoute } from '../types';
 import { playSound } from '../utils/audio';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { 
   CheckCircle2, 
   Flame, 
@@ -27,6 +28,7 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
   onResetProgress,
   onNavigate,
 }) => {
+  const appText = useAppTextMap('futurePerfectCourse');
   const handleReset = () => {
     if (window.confirm('هل أنت متأكد من رغبتك في إعادة تعيين كافة تقدمك في الكورس؟')) {
       playSound('wrong');
@@ -158,10 +160,10 @@ export const ProgressPage: React.FC<ProgressPageProps> = ({
                   </div>
                   <div>
                     <h5 className="text-sm font-bold text-white">
-                      {lesson.title}
+                      {txText(appText, lesson.title)}
                     </h5>
                     <span className="en text-xs text-[#b9b6d5]">
-                      {lesson.subtitle}
+                      {txText(appText, lesson.subtitle)}
                     </span>
                   </div>
                 </div>
