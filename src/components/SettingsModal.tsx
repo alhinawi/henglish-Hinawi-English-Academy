@@ -1,3 +1,4 @@
+import { ThemePicker } from './ThemePicker';
 import React, { useRef, useState } from 'react';
 import { X, Camera, Save } from 'lucide-react';
 import { UserProfile } from '../types';
@@ -68,7 +69,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" dir="rtl" onClick={onClose}>
       <div
-        className="w-full max-w-sm bg-[#171632] border border-white/15 rounded-2xl p-6 shadow-2xl space-y-5"
+        className="w-full max-w-sm max-h-[90dvh] overflow-y-auto bg-[#171632] border border-white/15 rounded-2xl p-6 shadow-2xl space-y-5"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
@@ -77,6 +78,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
             <X className="w-5 h-5" />
           </button>
         </div>
+
+        <ThemePicker inline />
 
         <div className="flex flex-col items-center gap-3">
           <img

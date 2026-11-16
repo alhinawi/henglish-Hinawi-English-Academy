@@ -1,3 +1,4 @@
+import { ThemePicker } from '../ThemePicker';
 import React, { useState, useRef, useEffect } from 'react';
 import { PageRoute, UserProfile, AppNotification } from '../../types';
 import { playSound } from '../../utils/audio';
@@ -426,6 +427,7 @@ export const Header: React.FC<HeaderProps> = ({
       {/* RIGHT: Search, Voice Settings, Streak, Notifications, Account */}
       <div className="flex items-center gap-2 sm:gap-3 shrink-0">
         
+        <ThemePicker />
         {/* Search Trigger */}
         <button
           onClick={() => {
