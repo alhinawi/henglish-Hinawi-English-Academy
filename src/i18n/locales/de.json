@@ -2236,5 +2236,20 @@
   "reg.and": "und der",
   "reg.privacy": "Datenschutzerklärung",
   "reg.agreeSuffix": "sowie dem Erhalt von Lernfortschritts-Benachrichtigungen zu.",
-  "reg.submit": "Konto erstellen und starten"
+  "reg.submit": "Konto erstellen und starten",
+  "sad.q1": "Warum wurde genau diese Übersetzung gewählt?",
+  "sad.q2": "Lass den Satz für Muttersprachler natürlicher klingen.",
+  "sad.q3": "Formuliere den Satz für eine formelle geschäftliche E-Mail um.",
+  "sad.q4": "Nenne mir 5 andere Ausdrücke und Alternativen mit derselben Bedeutung.",
+  "sad.q5": "Erkläre die Redewendung und Grammatik in diesem Satz.",
+  "sad.q6": "Ist der Satz grammatikalisch zu 100% korrekt?",
+  "sad.q7": "Vereinfache den Satz für A2-Anfänger.",
+  "sad.welcome": "Willkommen! Ich bin der smarte Übersetzungsassistent der Henglish Academy. Ich bin direkt mit der aktuellen Übersetzung verbunden und beantworte Fragen zu Formulierung, Ton, Grammatik oder zur Umwandlung in eine professionelle E-Mail!",
+  "sad.tempError": "Entschuldigung, ein vorübergehender Fehler bei der Verbindung zum Übersetzungsassistenten. Bitte versuche es erneut.",
+  "sad.title": "Sprachassistent für Übersetzungen",
+  "sad.subtitle": "Interaktiver Kontextexperte",
+  "sad.activeContext": "Aktuell aktiver Kontext:",
+  "sad.thinking": "Der Assistent denkt über eine präzise Antwort nach...",
+  "sad.quickPrompts": "Vorgeschlagene Schnellfragen:",
+  "sad.inputPlaceholder": "Frage den Assistenten zu einem Detail der Übersetzung..."
 }
