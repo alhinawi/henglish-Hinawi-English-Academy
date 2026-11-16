@@ -32,7 +32,7 @@ interface AuthModalProps {
 }
 
 export const AuthModal: React.FC<AuthModalProps> = (props) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const {
     isOpen,
     onClose,
@@ -133,7 +133,8 @@ export const AuthModal: React.FC<AuthModalProps> = (props) => {
           initial={{ scale: 0.95, opacity: 0, y: 15 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.95, opacity: 0, y: 15 }}
-          className="relative w-full max-w-md rounded-3xl bg-[#171632] border border-white/20 p-6 sm:p-8 shadow-2xl text-right z-10 space-y-6"
+          dir={dir}
+          className="relative w-full max-w-md rounded-3xl bg-[#171632] border border-white/20 p-6 sm:p-8 shadow-2xl text-start z-10 space-y-6"
         >
           {/* Header */}
           <div className="relative pb-5 border-b border-white/10">
