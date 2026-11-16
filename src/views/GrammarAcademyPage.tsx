@@ -195,6 +195,10 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
                       <img 
                         src={rule.imageUrl} 
                         alt={rule.imageAlt}
+                        loading="lazy"
+                        decoding="async"
+                        width={800}
+                        height={450}
                         className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
                       />
                       <div className="absolute inset-0 bg-linear-to-t md:bg-linear-to-l from-[#171632] via-transparent to-transparent" />
