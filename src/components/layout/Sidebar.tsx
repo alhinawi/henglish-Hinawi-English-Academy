@@ -317,6 +317,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     {
       groupTitle: 'مساحتي الخاصة',
       items: [
+        { label: 'لوحة المتصدرين', labelEn: 'Leaderboard', route: 'leaderboard', icon: Award },
         {
           label: 'تعلمي والملاحظات',
           labelEn: 'My Learning & Notes',

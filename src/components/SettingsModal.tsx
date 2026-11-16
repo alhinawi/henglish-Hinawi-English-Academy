@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { X, Camera, Save } from 'lucide-react';
 import { UserProfile } from '../types';
+import { ANONYMOUS_AVATAR } from '../services/authService';
+import { PRESET_COUNT, presetSvg, svgToDataUrl } from '../utils/avatarPresets';
 import { apiUpdateMe } from '../services/henglishApi';
 
 interface SettingsModalProps {
@@ -68,6 +70,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" dir="rtl" onClick={onClose}>
       <div
+        role="dialog" aria-modal="true" aria-label="إعدادات الحساب"
         className="w-full max-w-sm bg-[#171632] border border-white/15 rounded-2xl p-6 shadow-2xl space-y-5"
         onClick={(e) => e.stopPropagation()}
       >
@@ -80,7 +83,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
 
         <div className="flex flex-col items-center gap-3">
           <img
-            src={avatar || userProfile.avatar}
+            src={avatar || ANONYMOUS_AVATAR}
             alt="الصورة الشخصية"
             className="w-24 h-24 rounded-2xl object-cover border-2 border-[#ffd166]/60 bg-slate-800"
           />
@@ -101,6 +104,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
           </div>
           <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={onFile} />
         </div>
+
+        <fieldset className="space-y-3"><legend className="text-xs text-slate-300 mb-2">أو اختار أفاتار جاهز</legend><div className="grid grid-cols-6 gap-2">{Array.from({length: PRESET_COUNT}, (_, i) => <button key={i} type="button" aria-label={`أفاتار ${i + 1}`} onClick={async () => { try { setAvatar(await svgToDataUrl(presetSvg(i))); } catch { setError('مش قادرين نجهز الأفاتار. جرّب صورة تانية.'); } }} className="aspect-square rounded-xl overflow-hidden [&>svg]:w-full [&>svg]:h-full border border-white/15 hover:border-[#ffd166] focus-visible:outline-2 focus-visible:outline-[#ffd166]" dangerouslySetInnerHTML={{__html: presetSvg(i)}} />)}</div></fieldset>
 
         <div>
           <label className="block text-xs font-medium text-slate-300 mb-1.5">الاسم الظاهر</label>

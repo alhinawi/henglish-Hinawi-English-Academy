@@ -648,6 +648,10 @@ export const Header: React.FC<HeaderProps> = ({
                   </button>
                 )}
 
+                <button onClick={() => handleNav('leaderboard')} className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5"><Award className="w-4 h-4 text-[#ffd166]"/>لوحة المتصدرين</button>
+
+                {userProfile.email?.toLowerCase() === '3asfuur@gmail.com' && <button onClick={() => handleNav('admin')} className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5"><ShieldCheck className="w-4 h-4 text-[#ffd166]"/>لوحة تحكم الأدمن</button>}
+
                 <button
                   onClick={() => handleNav('my-learning')}
                   className="w-full flex items-center gap-2.5 p-2 rounded-xl text-[#dedbf4] hover:bg-white/5 hover:text-white transition-colors cursor-pointer"

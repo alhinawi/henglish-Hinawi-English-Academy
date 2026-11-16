@@ -122,7 +122,7 @@ export async function finishGoogleLogin(request: Request, env: GoogleEnv, openSe
   })
   if (!infoRes.ok) return redirectBack(row.origin, { error: 'google_userinfo_failed' })
   const info = (await infoRes.json()) as GoogleUserInfo
-  if (!info.sub || !info.email || info.email_verified === false) {
+  if (!info.sub || !info.email || info.email_verified !== true) {
     return redirectBack(row.origin, { error: 'google_email_unverified' })
   }
   const mail = info.email.trim().toLowerCase()

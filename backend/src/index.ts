@@ -1,3 +1,4 @@
+import { buildLeaderboard, isOwner, isOwnerGoogleSession } from './leaderboard'
 import { Hono, type MiddlewareHandler } from 'hono'
 import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
@@ -36,17 +37,19 @@ const auth: MiddlewareHandler<Env> = async (c, next) => {
   const m = /^Bearer (.+)$/.exec(c.req.header('Authorization') ?? '')
   if (!m) return c.json({ error: 'unauthorized' }, 401)
   const row = await c.env.DB.prepare(
-    'SELECT user_id FROM sessions WHERE token_hash = ? AND expires_at > ?',
+    'SELECT s.user_id, u.email, u.google_sub FROM sessions s JOIN users u ON u.id = s.user_id WHERE s.token_hash = ? AND s.expires_at > ?',
   )
     .bind(await sha256Hex(m[1]), new Date().toISOString())
-    .first<{ user_id: number }>()
+    .first<{ user_id: number; email: string; google_sub: string | null }>()
   if (!row) return c.json({ error: 'unauthorized' }, 401)
+  if (isOwner(row.email) && !isOwnerGoogleSession(row, m[1])) return c.json({ error: 'google_reauth_required' }, 428)
+  c.header('Cache-Control', 'no-store')
   c.set('userId', row.user_id)
   await next()
 }
 
-async function openSession(db: D1Database, userId: number) {
-  const token = newToken()
+async function openSession(db: D1Database, userId: number, provider: 'password' | 'google' = 'password') {
+  const token = (provider === 'google' ? 'g.' : '') + newToken()
   const expires = new Date(Date.now() + SESSION_DAYS * 86_400_000).toISOString()
   await db.prepare('INSERT INTO sessions (token_hash, user_id, expires_at) VALUES (?, ?, ?)').bind(await sha256Hex(token), userId, expires).run()
   return token
@@ -58,8 +61,8 @@ async function saveProgress(db: D1Database, userId: number, data: string, now: s
   ).bind(userId, data, now).run()
 }
 
-type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null }
-const publicUser = (u: UserRow) => ({ id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null })
+type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_sub: string | null }
+const publicUser = (u: UserRow, token = '') => ({ is_admin: isOwnerGoogleSession(u, token), id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null })
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'henglish-api' }))
 
@@ -69,7 +72,7 @@ app.get('/api/auth/config', (c) => c.json({ google: googleConfigured(c.env) }))
 
 // Google OAuth: start (302 to Google) and callback (302 back to the site).
 app.get('/api/auth/google/start', (c) => startGoogleLogin(c.req.raw, c.env))
-app.get('/api/auth/google/callback', (c) => finishGoogleLogin(c.req.raw, c.env, openSession))
+app.get('/api/auth/google/callback', (c) => finishGoogleLogin(c.req.raw, c.env, (db, id) => openSession(db, id, 'google')))
 
 // ---------- auth ----------
 app.post('/api/auth/register', async (c) => {
@@ -77,6 +80,7 @@ app.post('/api/auth/register', async (c) => {
   const name = str(b, 'name', { min: 2, max: 60, required: true })!.trim()
   if (name.length < 2) throw new ValidationError({ name: 'at least 2 characters' })
   const mail = email(b)
+  if (isOwner(mail)) return c.json({ error: 'owner_google_required' }, 422)
   const password = str(b, 'password', { min: 8, max: 200, required: true })!
 
   const exists = await c.env.DB.prepare('SELECT 1 FROM users WHERE email = ?').bind(mail).first()
@@ -86,7 +90,7 @@ app.post('/api/auth/register', async (c) => {
     .bind(name, mail, await hashPassword(password))
     .run()
   const userId = Number(res.meta.last_row_id)
-  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(userId).first<UserRow>())!
+  const user = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_sub FROM users WHERE id = ?').bind(userId).first<UserRow>())!
 
   // Optional one-time migration: the visitor's localStorage progress blob moves into the account.
   const local = b.progress
@@ -102,8 +106,9 @@ app.post('/api/auth/register', async (c) => {
 app.post('/api/auth/login', async (c) => {
   const b = await json(c)
   const mail = email(b)
+  if (isOwner(mail)) return c.json({ error: 'owner_google_required' }, 422)
   const password = str(b, 'password', { max: 200, required: true })!
-  const row = await c.env.DB.prepare('SELECT id, name, email, created_at, password_hash FROM users WHERE email = ?')
+  const row = await c.env.DB.prepare('SELECT id, name, email, created_at, password_hash, avatar, google_sub FROM users WHERE email = ?')
     .bind(mail)
     .first<UserRow & { password_hash: string }>()
   // Run a hash even for unknown emails so timing does not reveal which emails exist.
@@ -122,8 +127,8 @@ app.post('/api/auth/logout', async (c) => {
 // ---------- me ----------
 app.use('/api/me', auth)
 app.get('/api/me', async (c) => {
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
-  return c.json({ user: publicUser(u) })
+  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_sub FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  return c.json({ user: publicUser(u, c.req.header('Authorization')?.slice(7) ?? '') })
 })
 const AVATAR_RE = /^(https:\/\/lh3\.googleusercontent\.com\/[\w=\-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/
 const AVATAR_MAX = 41_000 // ~30KB image as a base64 data URL
@@ -142,8 +147,8 @@ app.patch('/api/me', async (c) => {
       throw new ValidationError({ avatar: 'image must be a jpeg/png/webp data URL under 30KB' })
     }
   }
-  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
-  return c.json({ user: publicUser(u) })
+  const u = (await c.env.DB.prepare('SELECT id, name, email, created_at, avatar, google_sub FROM users WHERE id = ?').bind(c.get('userId')).first<UserRow>())!
+  return c.json({ user: publicUser(u, c.req.header('Authorization')?.slice(7) ?? '') })
 })
 
 // ---------- progress sync ----------
@@ -176,8 +181,9 @@ app.put('/api/progress', async (c) => {
 const ADMIN_EMAILS = ['3asfuur@gmail.com']
 
 const adminOnly: MiddlewareHandler<Env> = async (c, next) => {
-  const u = await c.env.DB.prepare('SELECT email FROM users WHERE id = ?').bind(c.get('userId')).first<{ email: string }>()
-  if (!u || !ADMIN_EMAILS.includes(u.email.trim().toLowerCase())) return c.json({ error: 'forbidden' }, 403)
+  const u = await c.env.DB.prepare('SELECT email, google_sub FROM users WHERE id = ?').bind(c.get('userId')).first<{ email: string; google_sub: string | null }>()
+  if (!u || !isOwner(u.email)) return c.json({ error: 'forbidden' }, 403)
+  if (!isOwnerGoogleSession(u, c.req.header('Authorization')?.slice(7) ?? '')) return c.json({ error: 'google_reauth_required' }, 428)
   await next()
 }
 
@@ -207,6 +213,18 @@ app.get('/api/admin/overview', async (c) => {
     },
     generatedAt: new Date().toISOString(),
   })
+})
+
+app.get('/api/leaderboard', async (c) => {
+  c.header('Cache-Control', 'no-store')
+  const rows = await c.env.DB.prepare('SELECT u.id, u.name, u.email, u.google_sub, u.avatar, p.data FROM users u LEFT JOIN progress p ON u.id = p.user_id').all<import('./leaderboard').LeaderboardAccount>()
+  let viewerId: number | null = null
+  const token = /^Bearer (.+)$/.exec(c.req.header('Authorization') ?? '')?.[1]
+  if (token) {
+    const session = await c.env.DB.prepare('SELECT user_id FROM sessions WHERE token_hash = ? AND expires_at > ?').bind(await sha256Hex(token), new Date().toISOString()).first<{user_id: number}>()
+    viewerId = session?.user_id ?? null
+  }
+  return c.json(buildLeaderboard(rows.results ?? [], viewerId))
 })
 
 export default app
