@@ -2,6 +2,7 @@ import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { LITERACY_READING } from '../data/literacyAcademyData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 const READING_PASSAGES = LITERACY_READING.filter(p => p.level === 'B1').slice(0, 4).map(p => ({ ...p, wordCount: p.content.split(/\s+/).length, estimatedTime: 'تدريب حر', category: 'Original teaching scenario', contentAr: 'نص تعليمي أصلي. راجع مفردات السياق والأنشطة في المسار أعلاه.', comprehensionQuestions: [{ id: p.id + '-legacy', question: p.question, options: p.options, answer: p.answer, explanation: 'راجع النص؛ الإجابة الصحيحة: ' + p.options[p.answer] }] }));
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
@@ -22,6 +23,7 @@ interface ReadingAcademyPageProps {
 
 export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNavigate, onCompleteActivity }) => {
   const [selectedPassageIdx, setSelectedPassageIdx] = useState(0);
+  const appText = useAppTextMap('literacyAcademyData');
   const [showArabic, setShowArabic] = useState(false);
   const [timerSeconds, setTimerSeconds] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
@@ -88,7 +90,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
                 : 'bg-white/5 text-[#dedbf4] hover:bg-white/10 border border-white/10'
             }`}
           >
-            <span>{p.titleAr}</span>
+            <span>{txText(appText, p.titleAr)}</span>
             <span className="text-[10px] px-1.5 py-0.5 rounded bg-black/30 font-mono">
               {p.level} • {p.estimatedTime}
             </span>
@@ -101,13 +103,13 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10">
           <div>
             <div className="inline-flex items-center gap-2 text-xs font-bold text-[#ffd166] mb-1">
-              <span>{passage.category}</span>
+              <span>{txText(appText, passage.category)}</span>
               <span>•</span>
               <span className="en">{passage.wordCount} words</span>
               <span>•</span>
               <span>مستوى CEFR: {passage.level}</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-black text-white">{passage.title}</h2>
+            <h2 className="text-2xl sm:text-3xl font-black text-white">{txText(appText, passage.title)}</h2>
           </div>
 
           <div className="flex items-center gap-3 self-start sm:self-auto">
@@ -141,7 +143,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
           {showArabic && (
             <div className="text-right text-sm text-[#dedbf4] leading-relaxed bg-[#171632] p-5 rounded-2xl border border-white/10 space-y-2">
               <span className="text-xs font-bold text-[#ffd166]">الترجمة العربية السياقية:</span>
-              <p>{passage.contentAr}</p>
+              <p>{txText(appText, passage.contentAr)}</p>
             </div>
           )}
         </div>
