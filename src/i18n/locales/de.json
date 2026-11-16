@@ -2804,5 +2804,19 @@
   "vie.unverified": "Die Einbettungserlaubnis konnte nicht bestätigt werden. Der Import bleibt bis zur erfolgreichen Prüfung gesperrt.",
   "vcl.business": "Englisch im Beruf",
   "vcl.idioms": "Redewendungen & Phrasal Verbs",
-  "vcl.daily": "Englisch im Alltag"
+  "vcl.daily": "Englisch im Alltag",
+  "atm.grammar-teacher.name": "Grammatiklehrer",
+  "atm.grammar-teacher.description": "Erklärt englische Grammatik und Zeitformen in einfachem ägyptischem Arabisch, mit Links zu den Lektionen.",
+  "atm.conversation-partner.name": "Gesprächspartner",
+  "atm.conversation-partner.description": "Übe Gespräche am Flughafen, im Hotel, im Restaurant und bei der Arbeit mit freundlichen Korrekturen.",
+  "atm.vocabulary-coach.name": "Wortschatztrainer",
+  "atm.vocabulary-coach.description": "Erweitere deinen Wortschatz mit Kollokationen, Phrasal Verbs und Aussprachehilfen.",
+  "atm.writing-assistant.name": "Schreibassistent",
+  "atm.writing-assistant.description": "Prüfe Aufsätze und berufliche E-Mails, korrigiere Grammatik und verbessere Formulierungen.",
+  "atm.pronunciation-coach.name": "Aussprachetrainer",
+  "atm.pronunciation-coach.description": "Übe Sprachlaute, IPA und Wortbetonung sowie amerikanische und britische Aussprache.",
+  "atm.exam-trainer.name": "Prüfungstrainer",
+  "atm.exam-trainer.description": "Übe Prüfungsfragen, Zeitmanagement und interaktive Aufgaben mit Korrekturen.",
+  "atm.interview-coach.name": "Bewerbungstrainer",
+  "atm.interview-coach.description": "Übe Bewerbungsgespräche auf Englisch, STAR-Antworten und Verhaltensfragen."
 }
