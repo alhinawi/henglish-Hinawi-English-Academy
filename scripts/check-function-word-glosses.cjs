@@ -19,3 +19,6 @@ for(const file of fs.readdirSync('public/data/vocab/i18n').filter(f=>f.endsWith(
  const map=JSON.parse(fs.readFileSync('public/data/vocab/i18n/'+file));
  for(const id of sourceFallbacks){assert.equal(map[id].m,byId[id].meaningAr);assert.ok(map[id].e);}
 }
+
+const contextualMeanings={"voc-w00009": "dass / der / die / das", "voc-w00010": "du / ihr / Sie", "voc-w00011": "auf / an / bei", "voc-w00065": "erste / erster / erstes", "voc-w00070": "machen / herstellen / zubereiten", "voc-w00076": "Rücken / Rückseite; zurück (Adverb)", "voc-w00092": "richtig / rechts / Recht", "voc-w00098": "gehend (Form von go)", "voc-w00100": "von / ab / weg / aus"};
+for(const [id,m] of Object.entries(contextualMeanings))assert.equal(de[id].m,m);
