@@ -2605,5 +2605,19 @@
   "ab.gradAlt": "Symbolbild eines Abschlusses",
   "wc.remove": "Gespeichertes Wort entfernen",
   "wc.save": "Wort speichern",
-  "wc.details": "Alle Details"
+  "wc.details": "Alle Details",
+  "as.best": "Beste Punktzahl",
+  "as.start": "Spiel starten",
+  "as.back": "Zurück zu den Spielen",
+  "as.quit": "Verlassen",
+  "as.record": "Neuer Bestwert!",
+  "as.finished": "Runde beendet!",
+  "as.yourScore": "Deine Punktzahl",
+  "as.roundXp": "Runden-XP",
+  "as.replay": "Noch einmal spielen",
+  "as.games": "Spielezentrum",
+  "as.playCount": "Gespielt: {count}",
+  "as.round": "Runde {round} von {total}",
+  "as.seconds": "{count} s",
+  "as.points": "{count} Punkte"
 }
