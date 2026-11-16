@@ -46,6 +46,8 @@ export function saveVoiceSettings(settings: VoiceSettings): void {
 }
 
 let currentSettings: VoiceSettings = getSavedVoiceSettings();
+let speechGeneration = 0;
+let synthesisController: AbortController | null = null;
 let lastSpokenText: string = '';
 let currentUtterance: SpeechSynthesisUtterance | null = null;
 let currentHtmlAudio: HTMLAudioElement | null = null;
@@ -204,6 +206,9 @@ export function getVoiceSettings(): VoiceSettings {
 }
 
 export function stopSpeech(): void {
+  speechGeneration++;
+  synthesisController?.abort();
+  synthesisController = null;
   if (currentHtmlAudio) {
     currentHtmlAudio.pause();
     currentHtmlAudio.currentTime = 0;
@@ -258,7 +263,8 @@ export interface SpeakOptions {
 /**
  * Play sentence with browser SpeechSynthesis
  */
-function speakViaBrowserSpeech(text: string, options?: SpeakOptions): void {
+function speakViaBrowserSpeech(text: string, options?: SpeakOptions, generation = speechGeneration): void {
+  if (generation !== speechGeneration) return;
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
     if (options?.onError) options.onError();
     return;
@@ -290,11 +296,13 @@ function speakViaBrowserSpeech(text: string, options?: SpeakOptions): void {
     }
 
     utterance.onstart = () => {
+      if (generation !== speechGeneration) return;
       currentUtterance = utterance;
       notifyState(true, text);
     };
 
     utterance.onend = () => {
+      if (generation !== speechGeneration) return;
       currentUtterance = null;
       notifyState(false, '');
       if (options?.onEnd) options.onEnd();
@@ -302,6 +310,7 @@ function speakViaBrowserSpeech(text: string, options?: SpeakOptions): void {
     };
 
     utterance.onerror = () => {
+      if (generation !== speechGeneration) return;
       currentUtterance = null;
       notifyState(false, '');
       if (options?.onError) options.onError();
@@ -319,88 +328,61 @@ function speakViaBrowserSpeech(text: string, options?: SpeakOptions): void {
  * Main Single Speech Function (Server TTS -> Cached Audio -> Browser SpeechSynthesis Fallback)
  */
 export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
-  if (typeof window === 'undefined') return;
-  if (currentSettings.isMuted) return;
-
+  if (typeof window === 'undefined' || currentSettings.isMuted) return;
   const trimmed = text.trim();
   if (!trimmed) return;
   lastSpokenText = trimmed;
-
   stopSpeech();
-
+  const generation = speechGeneration;
+  const isCurrent = () => generation === speechGeneration;
   const gender = options?.gender || currentSettings.gender;
   const accent = options?.accent || currentSettings.accent;
   const speed = options?.speed || currentSettings.speed;
   const voiceId = options?.voiceId || currentSettings.selectedVoiceId;
-
   const cacheKey = `${trimmed}_${voiceId || `${accent}_${gender}`}_${speed}`;
-  const cachedBlobUrl = clientAudioBlobCache.get(cacheKey);
-
-  if (cachedBlobUrl) {
-    const audio = new Audio(cachedBlobUrl);
+  let fallbackStarted = false;
+  const fallback = () => {
+    if (!isCurrent() || fallbackStarted) return;
+    fallbackStarted = true;
+    if (currentHtmlAudio) { currentHtmlAudio.pause(); currentHtmlAudio = null; }
+    speakViaBrowserSpeech(trimmed, options, generation);
+  };
+  const playAudio = (src: string) => {
+    if (!isCurrent()) return;
+    const audio = new Audio(src);
     currentHtmlAudio = audio;
     audio.playbackRate = speed;
-
-    audio.onplay = () => notifyState(true, trimmed);
+    audio.onplay = () => { if (isCurrent() && currentHtmlAudio === audio) notifyState(true, trimmed); };
     audio.onended = () => {
+      if (!isCurrent() || currentHtmlAudio !== audio) return;
       currentHtmlAudio = null;
       notifyState(false, '');
-      if (options?.onEnd) options.onEnd();
-      if (options?.onEnded) options.onEnded();
+      options?.onEnd?.();
+      options?.onEnded?.();
     };
-    audio.onerror = () => {
-      currentHtmlAudio = null;
-      speakViaBrowserSpeech(trimmed, options);
-    };
-
-    audio.play().catch(() => speakViaBrowserSpeech(trimmed, options));
-    return;
-  }
-
-  // Try Server Synthesis API
+    audio.onerror = fallback;
+    audio.play().catch(fallback);
+  };
+  const cached = clientAudioBlobCache.get(cacheKey);
+  if (cached) { playAudio(cached); return; }
+  const controller = new AbortController();
+  synthesisController = controller;
   fetch('/api/tts/synthesize', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      text: trimmed,
-      accent,
-      gender,
-      speed,
-      voiceId,
-    }),
+    signal: controller.signal,
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text: trimmed, accent, gender, speed, voiceId }),
   })
-    .then(res => res.json())
+    .then(res => { if (!isCurrent()) return null; return res.json(); })
     .then(data => {
-      if (data.audioBase64) {
-        const audioSrc = `data:${data.mimeType || 'audio/mpeg'};base64,${data.audioBase64}`;
-        clientAudioBlobCache.set(cacheKey, audioSrc);
-
-        const audio = new Audio(audioSrc);
-        currentHtmlAudio = audio;
-        audio.playbackRate = speed;
-
-        audio.onplay = () => notifyState(true, trimmed);
-        audio.onended = () => {
-          currentHtmlAudio = null;
-          notifyState(false, '');
-          if (options?.onEnd) options.onEnd();
-          if (options?.onEnded) options.onEnded();
-        };
-        audio.onerror = () => {
-          currentHtmlAudio = null;
-          speakViaBrowserSpeech(trimmed, options);
-        };
-
-        audio.play().catch(() => speakViaBrowserSpeech(trimmed, options));
-      } else {
-        // Use high-fidelity browser speech
-        speakViaBrowserSpeech(trimmed, options);
-      }
+      if (!isCurrent()) return;
+      synthesisController = null;
+      if (data?.audioBase64) {
+        const src = `data:${data.mimeType || 'audio/mpeg'};base64,${data.audioBase64}`;
+        clientAudioBlobCache.set(cacheKey, src);
+        playAudio(src);
+      } else fallback();
     })
-    .catch(() => {
-      // Offline or network error: use browser speech
-      speakViaBrowserSpeech(trimmed, options);
-    });
+    .catch(() => { if (isCurrent()) { synthesisController = null; fallback(); } });
 }
 
 /**
@@ -526,6 +508,7 @@ export function speakMultilingualText(text: string, langCode: string = 'en', onE
     return;
   }
 
+  const generation = speechGeneration;
   // Otherwise, use browser SpeechSynthesis with the matching language voice
   try {
     const utterance = new SpeechSynthesisUtterance(trimmed);
@@ -538,12 +521,14 @@ export function speakMultilingualText(text: string, langCode: string = 'en', onE
     utterance.lang = langCode;
     utterance.rate = 0.95;
 
-    utterance.onstart = () => notifyState(true, trimmed);
+    utterance.onstart = () => { if (generation === speechGeneration) notifyState(true, trimmed); };
     utterance.onend = () => {
+      if (generation !== speechGeneration) return;
       notifyState(false, '');
       if (onEnd) onEnd();
     };
     utterance.onerror = () => {
+      if (generation !== speechGeneration) return;
       notifyState(false, '');
     };
 

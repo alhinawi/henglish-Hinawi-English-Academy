@@ -4,7 +4,7 @@
 // Guaranteed non-overlapping playback, remote audio caching, Web Speech fallback
 // ==============================================================================
 
-import { speakEnglishVoice } from '../utils/audio';
+import { speakEnglishVoice, stopSpeech } from '../utils/audio';
 
 export type PronunciationAccent = 'US' | 'UK';
 
@@ -73,6 +73,7 @@ class AudioPlaybackManager {
       this.currentAudio = null;
     }
 
+    stopSpeech();
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
       try {
         window.speechSynthesis.cancel();
