@@ -1,4 +1,6 @@
 import { ThemePicker } from './ThemePicker';
+import { useLanguage } from '../i18n/LanguageContext';
+import { LANGUAGES } from '../i18n/languages';
 import React, { useRef, useState } from 'react';
 import { X, Camera, Save } from 'lucide-react';
 import { UserProfile } from '../types';
@@ -16,6 +18,7 @@ interface SettingsModalProps {
 // Compact account settings: profile picture (upload or clear back to the
 // neutral placeholder) and display name. Saves through the accounts API.
 export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, accessToken, onClose, onSaved }) => {
+  const { lang, setLang, t } = useLanguage();
   const [name, setName] = useState(userProfile.nameAr || userProfile.name);
   const [avatar, setAvatar] = useState<string | null>(userProfile.avatar);
   const [saving, setSaving] = useState(false);
@@ -76,13 +79,32 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-black text-white">الإعدادات</h2>
+          <h2 className="text-lg font-black text-white">{t('settings.title')}</h2>
           <button onClick={onClose} aria-label="إغلاق" className="text-slate-400 hover:text-white cursor-pointer">
             <X className="w-5 h-5" />
           </button>
         </div>
 
         <ThemePicker inline />
+
+        {/* Interface language */}
+        <div className="space-y-2">
+          <label htmlFor="ui-language" className="text-sm font-bold text-white">
+            {t('settings.language')}
+          </label>
+          <select
+            id="ui-language"
+            value={lang}
+            onChange={(e) => setLang(e.target.value)}
+            className="w-full bg-white/5 border border-white/15 rounded-xl px-3 py-2.5 text-sm font-bold text-white focus:outline-none focus:border-[#ffd166]/50 cursor-pointer"
+          >
+            {LANGUAGES.map((l) => (
+              <option key={l.code} value={l.code} className="bg-[#171632] text-white">
+                {l.nativeName} · {l.englishName}
+              </option>
+            ))}
+          </select>
+        </div>
 
         <div className="flex flex-col items-center gap-3">
           <img

@@ -1,6 +1,34 @@
 import React from 'react';
 import { PageRoute, CEFRLevel, UserRole } from '../../types';
 import { Logo } from '../Logo';
+import { useLanguage } from '../../i18n/LanguageContext';
+
+// Maps the hardcoded Arabic nav labels to i18n keys (labels stay as fallback).
+const NAV_LABEL_KEYS: Record<string, string> = {
+  'لوحة التحكم': 'nav.dashboard',
+  'الكورسات الشاملة': 'nav.courses',
+  'ساحة الألعاب': 'nav.games',
+  'أكاديمية الجرامر': 'nav.grammar',
+  'أكاديمية الكلمات': 'nav.vocabulary',
+  'Idioms': 'nav.idioms',
+  'Slang': 'nav.slang',
+  'Gen Z': 'nav.genz',
+  'أكاديمية المحادثة': 'nav.speaking',
+  'أكاديمية الاستماع': 'nav.listening',
+  'أكاديمية القراءة': 'nav.reading',
+  'أكاديمية الكتابة': 'nav.writing',
+  'أكاديمية النطق والفونيتكس': 'nav.pronunciation',
+  'إنجليزي المواقف الحقيقية': 'nav.realLife',
+  'مساعد التعلم': 'nav.assistant',
+  'العالم الافتراضي 3D': 'nav.world3d',
+  'مكتبة 5,000 جملة': 'nav.sentences',
+  'اتعلم من الأفلام': 'nav.movies',
+  'استوديو الترجمة': 'nav.translation',
+  'تحديد المستوى والاختبارات': 'nav.exams',
+  'الشهادات والتوثيق': 'nav.certificates',
+  'معمل التمارين والألعاب': 'nav.practice',
+  'تعلمي والملاحظات': 'nav.myLearning',
+};
 import { playSound } from '../../utils/audio';
 import {
   LayoutDashboard,
@@ -78,6 +106,7 @@ interface NavGroup {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
+
   currentRoute,
   onNavigate,
   collapsed,
@@ -90,6 +119,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   const [openGrammarSubMenu, setOpenGrammarSubMenu] = React.useState(true);
   const [activeGrammarSection, setActiveGrammarSection] = React.useState<string>('Future Tenses');
+
+  const { t } = useLanguage();
+  const tl = (label: string) => {
+    const key = NAV_LABEL_KEYS[label.trim()];
+    return key ? t(key) : label;
+  };
 
   const handleNav = (route: PageRoute, targetId?: string) => {
     playSound('click');
@@ -219,19 +254,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
           
         },
         {
-          label: 'التعابير الاصطلاحية',
+          label: 'Idioms',
           labelEn: 'Idioms Bank',
           route: 'idioms',
           icon: Quote,
         },
         {
-          label: 'السلانج',
+          label: 'Slang',
           labelEn: 'Slang Bank',
           route: 'slang',
           icon: MessagesSquare,
         },
         {
-          label: 'سلانج الجيل Z',
+          label: 'Gen Z',
           labelEn: 'Gen Z Slang',
           route: 'genz',
           icon: Zap,
@@ -490,7 +525,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
                         {!isCollapsed && (
                           <div className="flex-1 flex items-center justify-between min-w-0">
-                            <span className="truncate">{item.label}</span>
+                            <span className="truncate">{tl(item.label)}</span>
                             {item.badge && (
                               <span
                                 className={`text-[9px] font-black px-1.5 py-0.5 rounded-md ${
@@ -566,7 +601,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                       : 'text-[#dedbf4]/80 hover:text-white hover:bg-white/5'
                                   }`}
                                 >
-                                  <span className="truncate">{subItem.label}</span>
+                                  <span className="truncate">{tl(subItem.label)}</span>
                                   {subItem.badge && (
                                     <span className="text-[9px] font-black px-1.5 py-0.2 rounded bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 shrink-0 mr-1">
                                       {subItem.badge}

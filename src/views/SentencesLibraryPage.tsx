@@ -521,7 +521,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               <Calendar className="w-5 h-5" />
               <span>جملة اليوم المختارة بعناية لجميع طلاب المنصة:</span>
             </span>
-            <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG')}</span>
+            <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG-u-nu-latn')}</span>
           </div>
           <SentenceCard
             sentence={dailySentence}

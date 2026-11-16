@@ -383,7 +383,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
           <AlertTriangle className="w-5 h-5 text-red-400" />
           <span>أشهر الأخطاء الشائعة للمتحدثين بالعربية</span>
         </div>
-        <h3 className="text-2xl font-black text-white">إزاي تتجنب الأخطاء اللي بيقع فيها ٩٠٪ من الطلاب؟</h3>
+        <h3 className="text-2xl font-black text-white">إزاي تتجنب الأخطاء اللي بيقع فيها 90٪ من الطلاب؟</h3>
 
         <div className="space-y-3">
           {rule.commonTraps.map((trap, idx) => (
