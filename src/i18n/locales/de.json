@@ -2006,5 +2006,21 @@
   "ex.of": "von",
   "ex.expressions": "Ausdrücke",
   "ex.prev": "Zurück",
-  "ex.next": "Weiter"
+  "ex.next": "Weiter",
+  "eh.hasError": "Enthält einen Fehler",
+  "eh.clean": "Völlig korrekt",
+  "eh.hasGrammarError": "Enthält einen Grammatikfehler",
+  "eh.loading": "Grammatikfälle werden geprüft und vorbereitet...",
+  "eh.title": "Grammatik-Fehlerjäger",
+  "eh.category": "Grammatik (Grammar)",
+  "eh.examine": "Prüfe den Satz mit dem Blick eines Grammatikexperten:",
+  "eh.question": "Enthält dieser Satz einen Sprach- oder Grammatikfehler?",
+  "eh.listen": "Aussprache anhören",
+  "eh.yesError": "Ja, er hat einen Fehler",
+  "eh.greatDiagnosis": "Ausgezeichnete, präzise Diagnose!",
+  "eh.wrongDiagnosis": "Falsche Diagnose",
+  "eh.sentenceHasError": "Der Satz hat einen Fehler",
+  "eh.sentenceWasCorrect": "Der Satz war korrekt",
+  "eh.correction": "Korrekturvorschlag:",
+  "eh.nextCase": "Nächster Fall"
 }
