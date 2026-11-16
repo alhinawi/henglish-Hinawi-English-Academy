@@ -24,6 +24,7 @@ import { playSound, speakEnglishVoice, stopSpeech, getVoiceSettings } from '../u
 import { isAiServiceUnavailable } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
 import { AiMarkdownRenderer } from '../components/AiMarkdownRenderer';
+import { ANONYMOUS_AVATAR } from '../services/authService';
 import {
   Sparkles,
   Send,
@@ -427,8 +428,13 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           {/* Student Meta Card */}
           <div className="flex items-center gap-3 bg-white/5 border border-white/10 p-3 sm:p-4 rounded-2xl shrink-0">
             <img
-              src={userProfile.avatar}
+              src={userProfile.avatar || ANONYMOUS_AVATAR}
               alt={userProfile.name}
+              onError={(e) => {
+                if (e.currentTarget.src !== ANONYMOUS_AVATAR) {
+                  e.currentTarget.src = ANONYMOUS_AVATAR;
+                }
+              }}
               className="w-11 h-11 rounded-xl object-cover border-2 border-[#ffd166]/50 shadow-md"
             />
             <div className="text-right">
@@ -684,8 +690,13 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                 {/* Avatar */}
                 {isUser ? (
                   <img
-                    src={userProfile.avatar}
+                    src={userProfile.avatar || ANONYMOUS_AVATAR}
                     alt={userProfile.name}
+                    onError={(e) => {
+                      if (e.currentTarget.src !== ANONYMOUS_AVATAR) {
+                        e.currentTarget.src = ANONYMOUS_AVATAR;
+                      }
+                    }}
                     className="w-9 h-9 rounded-xl object-cover border border-[#41e7ff]/40 shrink-0 mt-1 shadow-md"
                   />
                 ) : (
