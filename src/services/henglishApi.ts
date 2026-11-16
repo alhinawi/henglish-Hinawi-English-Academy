@@ -8,6 +8,7 @@ const API_BASE = 'https://henglish-api.hnz.workers.dev';
 const TOKEN_KEY = 'henglish_api_token';
 
 export interface ApiUser {
+  is_admin?: boolean;
   id: number;
   name: string;
   email: string;
@@ -140,6 +141,7 @@ export async function apiUpdateMe(
 
 
 function mapApiError(status: number, body: any): string {
+  if (body?.error === 'owner_google_required' || body?.error === 'google_reauth_required') return 'حساب الإدارة بيدخل بحساب Google بس. استخدم زر الدخول بجوجل.';
   const fields = body && body.fields ? body.fields : {};
   if (fields.email === 'already registered') return 'الإيميل ده مسجل قبل كده. جرّب تسجيل الدخول.';
   if (fields.password) return 'كلمة السر لازم تكون 8 حروف على الأقل.';
@@ -232,4 +234,16 @@ export async function apiPutProgress(token: string, progress: unknown): Promise<
   } catch {
     return false;
   }
+}
+
+
+export interface LeaderboardRow { rank: number; name: string; points: number; avatar: string | null; pinned: boolean }
+export interface LeaderboardResult { top: LeaderboardRow[]; me: { rank: number; points: number } | null; realCount: number }
+export async function apiLeaderboard(): Promise<LeaderboardResult | null> {
+  try {
+    const token = getHenglishApiToken();
+    const res = await fetch(`${API_BASE}/api/leaderboard`, { headers: token ? { Authorization: `Bearer ${token}` } : {} });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch { return null; }
 }

@@ -21,6 +21,7 @@ import { ForgotPasswordPage } from './views/auth/ForgotPasswordPage';
 import { ResetPasswordPage } from './views/auth/ResetPasswordPage';
 
 // Academies & Platform Pages
+const LeaderboardPage = lazy(() => import('./views/LeaderboardPage').then(m => ({ default: m.LeaderboardPage })));
 const DashboardPage = lazy(() => import('./views/DashboardPage').then(m => ({ default: m.DashboardPage })));
 const TeacherDashboardPage = lazy(() => import('./views/TeacherDashboardPage').then(m => ({ default: m.TeacherDashboardPage })));
 const GrammarAcademyPage = lazy(() => import('./views/GrammarAcademyPage').then(m => ({ default: m.GrammarAcademyPage })));
@@ -208,6 +209,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('practice');
       } else if (hash === 'my-learning' || hash === 'progress') {
         setCurrentRoute('my-learning');
+      } else if (hash === 'leaderboard') {
+        setCurrentRoute('leaderboard');
       } else if (hash === 'admin') {
         setCurrentRoute('admin');
       } else if (hash === 'quizzes') {
@@ -475,6 +478,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 )}
 
                 {/* 17. Admin & Teacher Studio */}
+                {currentRoute === 'leaderboard' && <LeaderboardPage onNavigate={handleNavigate} authenticated={isAuthenticated} />}
+
                 {currentRoute === 'admin' && (
                   <AdminServerGate>
                     <AdminDashboardPage onNavigate={handleNavigate} />
