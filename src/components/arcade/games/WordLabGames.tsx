@@ -1,3 +1,4 @@
+import { Heart } from 'lucide-react';
 import { ArcadeIcon } from '../ArcadeIcon';
 import React, { useState } from 'react';
 import { VOCABULARY_ACADEMY_WORDS as WORDS } from '../../../data/vocabularyAcademyData';
@@ -11,15 +12,15 @@ import { recordGameResult, useArcadeProgress } from '../../../services/arcadePro
 import { playSound, speakEnglish } from '../../../utils/audio';
 
 export const LAB_GAMES = [
-  { id: 'letter-rescue', title: 'wl.game.letter-rescue.title', icon: '🛟', tagline: 'wl.game.letter-rescue.tagline' },
-  { id: 'letter-shuffle', title: 'wl.game.letter-shuffle.title', icon: '🔤', tagline: 'wl.game.letter-shuffle.tagline' },
-  { id: 'missing-letters', title: 'wl.game.missing-letters.title', icon: '🔎', tagline: 'wl.game.missing-letters.tagline' },
-  { id: 'verb-workshop', title: 'wl.game.verb-workshop.title', icon: '🔧', tagline: 'wl.game.verb-workshop.tagline' },
-  { id: 'mistake-lab', title: 'wl.game.mistake-lab.title', icon: '🕵️', tagline: 'wl.game.mistake-lab.tagline' },
-  { id: 'word-class', title: 'wl.game.word-class.title', icon: '🏷️', tagline: 'wl.game.word-class.tagline' },
-  { id: 'context-clues', title: 'wl.game.context-clues.title', icon: '📖', tagline: 'wl.game.context-clues.tagline' },
-  { id: 'daily-quest', title: 'wl.game.daily-quest.title', icon: '☀️', tagline: 'wl.game.daily-quest.tagline' },
-  { id: 'boss-run', title: 'wl.game.boss-run.title', icon: '🐉', tagline: 'wl.game.boss-run.tagline' },
+  { id: 'letter-rescue', title: 'wl.game.letter-rescue.title', tagline: 'wl.game.letter-rescue.tagline' },
+  { id: 'letter-shuffle', title: 'wl.game.letter-shuffle.title', tagline: 'wl.game.letter-shuffle.tagline' },
+  { id: 'missing-letters', title: 'wl.game.missing-letters.title', tagline: 'wl.game.missing-letters.tagline' },
+  { id: 'verb-workshop', title: 'wl.game.verb-workshop.title', tagline: 'wl.game.verb-workshop.tagline' },
+  { id: 'mistake-lab', title: 'wl.game.mistake-lab.title', tagline: 'wl.game.mistake-lab.tagline' },
+  { id: 'word-class', title: 'wl.game.word-class.title', tagline: 'wl.game.word-class.tagline' },
+  { id: 'context-clues', title: 'wl.game.context-clues.title', tagline: 'wl.game.context-clues.tagline' },
+  { id: 'daily-quest', title: 'wl.game.daily-quest.title', tagline: 'wl.game.daily-quest.tagline' },
+  { id: 'boss-run', title: 'wl.game.boss-run.title', tagline: 'wl.game.boss-run.tagline' },
 ] as const;
 export type LabId = typeof LAB_GAMES[number]['id'];
 interface Round { prompt: string; clue: string; answer: string; options?: string[]; detail: string; extra?: string; kind: 'letters' | 'rescue' | 'type' | 'verb' | 'choice'; level: string; }
@@ -89,7 +90,7 @@ export function WordLabGame({ id, onExit }: { id: LabId; onExit: () => void }) {
   const shown = r.kind === 'rescue' ? r.answer.split('').map(c => guessed.includes(c) || feedback !== null ? c : '_').join(' ') : r.prompt;
   return <section className="max-w-lg mx-auto space-y-4">
     <ArcadeHud title={meta.title} round={index + 1} totalRounds={rounds.length} score={score} onQuit={onExit}/>
-    <div className="flex justify-between text-xs text-[#9b7bff]"><span>{r.level}</span>{id === 'boss-run' && <span>{t('wl.gate')} {Math.floor(index / 5) + 1} • {'♥'.repeat(Math.max(0, hearts))}</span>}</div>
+    <div className="flex justify-between text-xs text-[#9b7bff]"><span>{r.level}</span>{id === 'boss-run' && <span className="inline-flex items-center gap-1">{t('wl.gate')} {Math.floor(index / 5) + 1} • {Array.from({ length: Math.max(0, hearts) }).map((_, hi) => <Heart key={hi} className="w-3.5 h-3.5 fill-current text-rose-400" />)}</span>}</div>
     <div className="rounded-3xl border border-white/10 bg-[#121124] p-5 space-y-5 text-center">
       <p className="text-sm leading-7 text-[#b9b6d5]">{tx(r.clue)}</p><h3 dir="auto" className="text-xl font-bold leading-9 text-white break-words">{shown}</h3>
       {r.kind === 'rescue' && <><p className="text-xs text-[#ffd166]">{t('wl.triesLeft')}: {6 - guessed.filter(c => !r.answer.includes(c)).length}</p><div dir="ltr" className="grid grid-cols-6 gap-1.5">{'abcdefghijklmnopqrstuvwxyz'.split('').map(c => <button key={c} disabled={guessed.includes(c) || feedback !== null} className={button + ' !p-2'} onClick={() => guess(c)}>{c.toUpperCase()}</button>)}</div></>}

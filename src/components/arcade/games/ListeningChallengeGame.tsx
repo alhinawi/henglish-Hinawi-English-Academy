@@ -9,7 +9,6 @@ import { playSound, speakEnglish } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'listening-challenge',
   title: 'تحدي الاستماع',
-  icon: '🎧',
   tagline: 'اسمع الجملة واكتب اللي سمعته. 80% من الكلمات صح = نقطة. 8 جولات.',
 };
 

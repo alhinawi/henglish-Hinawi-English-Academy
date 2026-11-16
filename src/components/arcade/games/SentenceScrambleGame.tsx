@@ -8,7 +8,6 @@ import { playSound } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'sentence-scramble',
   title: 'رتّب الجملة',
-  icon: '🧩',
   tagline: 'كلمات جملة حقيقية من محتوى المنصة متلخبطة.. دوس على الكلمات بالترتيب الصح. 8 جولات.',
 };
 
