@@ -34,42 +34,42 @@ const PAGE = 50;
 const INITIAL = 40;
 
 const POS_LABELS: Record<string, string> = {
-  noun: 'اسم',
-  verb: 'فعل',
-  'modal verb': 'فعل ناقص',
-  adjective: 'صفة',
-  adverb: 'حال',
-  pronoun: 'ضمير',
-  preposition: 'حرف جر',
-  determiner: 'أداة تعريف',
-  conjunction: 'حرف عطف',
-  number: 'عدد',
-  interjection: 'تعجب',
-  particle: 'أداة',
-  'phrasal verb': 'فعل مركب',
+  noun: 'ev.pos.noun',
+  verb: 'ev.pos.verb',
+  'modal verb': 'ev.pos.modalVerb',
+  adjective: 'ev.pos.adjective',
+  adverb: 'ev.pos.adverb',
+  pronoun: 'ev.pos.pronoun',
+  preposition: 'ev.pos.preposition',
+  determiner: 'ev.pos.determiner',
+  conjunction: 'ev.pos.conjunction',
+  number: 'ev.pos.number',
+  interjection: 'ev.pos.interjection',
+  particle: 'ev.pos.particle',
+  'phrasal verb': 'ev.pos.phrasalVerb',
 };
 
 const TOPIC_LABELS: Record<string, string> = {
-  education: 'تعليم',
-  health: 'صحة',
-  environment: 'بيئة',
-  technology: 'تكنولوجيا',
-  work: 'عمل',
-  travel: 'سفر',
-  society: 'مجتمع',
-  economy: 'اقتصاد',
-  science: 'علوم',
-  culture: 'ثقافة',
-  media: 'إعلام',
-  crime: 'جريمة وقانون',
-  food: 'طعام',
-  sport: 'رياضة',
-  family: 'عيلة',
-  housing: 'سكن',
-  transport: 'مواصلات',
-  nature: 'طبيعة',
-  art: 'فن',
-  general: 'عام',
+  education: 'ev.topic.education',
+  health: 'ev.topic.health',
+  environment: 'ev.topic.environment',
+  technology: 'ev.topic.technology',
+  work: 'ev.topic.work',
+  travel: 'ev.topic.travel',
+  society: 'ev.topic.society',
+  economy: 'ev.topic.economy',
+  science: 'ev.topic.science',
+  culture: 'ev.topic.culture',
+  media: 'ev.topic.media',
+  crime: 'ev.topic.crime',
+  food: 'ev.topic.food',
+  sport: 'ev.topic.sport',
+  family: 'ev.topic.family',
+  housing: 'ev.topic.housing',
+  transport: 'ev.topic.transport',
+  nature: 'ev.topic.nature',
+  art: 'ev.topic.art',
+  general: 'ev.topic.general',
 };
 
 interface ExamVocabPanelProps {
@@ -186,8 +186,8 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
     return () => observer.disconnect();
   }, [visible.length]);
 
-  const topicLabel = (topicKey: string) => TOPIC_LABELS[topicKey] ?? topicKey;
-  const posLabel = (posKey: string) => POS_LABELS[posKey] ?? posKey;
+  const topicLabel = (topicKey: string) => t(TOPIC_LABELS[topicKey] ?? topicKey);
+  const posLabel = (posKey: string) => t(POS_LABELS[posKey] ?? posKey);
 
   const activeChips = [
     ...(level !== 'all' ? [{ key: 'level', label: level, onRemove: () => setLevel('all') }] : []),
