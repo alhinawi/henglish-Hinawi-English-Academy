@@ -106,6 +106,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
 
   // Create the real YouTube IFrame Player for this scene
   useEffect(() => {
+    if (scene.transcriptTimingStatus === 'quarantined') return;
     let destroyed = false;
     playerReadyRef.current = false;
     setIsPlayerReady(false);
@@ -376,6 +377,15 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
     }
   };
 
+  if (scene.transcriptTimingStatus === 'quarantined') {
+    return <section dir="rtl" className="rounded-3xl border border-amber-300/25 bg-[#151329] p-5 sm:p-8 text-right text-white space-y-5">
+      <div className="flex items-center gap-3"><AlertCircle className="text-amber-200 shrink-0"/><h2 className="font-black text-xl">المقطع تحت المراجعة</h2></div>
+      <p className="font-bold" dir="ltr">{scene.movieTitle} - {scene.sceneTitle}</p>
+      <p className="text-sm leading-8 text-white/70">التدريب على المقطع ده متوقف مؤقتا لحد ما نراجع النص وتوقيتاته على المصدر. مش هنعرض جمل أو ترجمة غير مؤكدة.</p>
+      <p className="text-xs leading-7 text-white/50">المقطع محفوظ في المكتبة ومش محذوف. اختار مقطعا تانيا للتدريب دلوقتي.</p>
+      {onBackToSearch && <button onClick={onBackToSearch} className="min-h-12 rounded-xl bg-amber-200 px-5 font-bold text-slate-950">العودة لنتائج البحث</button>}
+    </section>;
+  }
   return (
     <div className="space-y-6 text-right selection:bg-purple-500/30">
       {/* Top Header & Back Button */}
@@ -491,7 +501,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           <div className="rounded-2xl border border-amber-300/20 bg-amber-300/5 p-4 text-xs leading-7 text-amber-100">
             الفيديو بيبدأ من 0:00. التوقيت المعروض هو توقيت الفيديو الأصلي، مش مؤقت جديد للمقتطف.
             النصوص التعليمية المتاحة مش بالضرورة تفريغا كاملا؛ الفترات اللي من غير نص مش بنعرض فيها جملة من وقت تاني.
-            {scene.transcriptTimingStatus !== 'reviewed-excerpts' && ' توقيتات المقتطفات دي لسه محتاجة مراجعة على المصدر، ومش بنعتبرها تفريغا متزامنا موثقا.'}
+            {scene.transcriptTimingStatus === 'caption-reviewed' ? ' المقتطفات دي مراجعة على ترجمة الفيديو المتاحة، مش مراجعة صوتية دقيقة؛ ممكن توجد فروق بسيطة في التوقيت أو الكلمات.' : scene.transcriptTimingStatus !== 'reviewed-excerpts' && ' توقيتات المقتطفات دي لسه محتاجة مراجعة على المصدر، ومش بنعتبرها تفريغا متزامنا موثقا.'}
           </div>
           {activeSubtitleIndex === -1 && (
             <p role="status" className="rounded-2xl border border-white/10 p-5 text-sm leading-7 text-white/65">
@@ -504,7 +514,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
               <div className="flex items-center justify-between text-xs text-purple-300">
                 <span className="font-bold flex items-center gap-1.5">
                   <Sparkles className="w-4 h-4 text-purple-400" />
-                  <span>{scene.transcriptTimingStatus === 'reviewed-excerpts' ? 'الجملة الجاري نطقها في المشهد:' : 'مقتطف تعليمي: توقيته محتاج مراجعة'}</span>
+                  <span>{scene.transcriptTimingStatus === 'reviewed-excerpts' ? 'الجملة الجاري نطقها في المشهد:' : scene.transcriptTimingStatus === 'caption-reviewed' ? 'مقتطف مراجع على ترجمة الفيديو:' : 'مقتطف تعليمي: توقيته محتاج مراجعة'}</span>
                 </span>
                 <span className="font-mono text-white/40">
                   {scene.subtitles[activeSubtitleIndex].start}s - {scene.subtitles[activeSubtitleIndex].end}s

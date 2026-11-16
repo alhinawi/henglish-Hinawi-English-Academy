@@ -562,6 +562,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                             <span className="absolute bottom-2 left-2 px-2 py-0.5 rounded-md bg-black/80 text-white font-mono text-[11px]">
                               {scene.clipDuration}
                             </span>
+                            {scene.transcriptTimingStatus === 'quarantined' && <span className="absolute bottom-2 right-2 rounded-lg bg-amber-200 px-3 py-1 text-xs font-bold text-slate-950">تحت المراجعة</span>}
                           </div>
 
                           {/* Scene Meta Info */}
@@ -599,7 +600,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                               className="w-full py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-black text-xs transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer mt-1"
                             >
                               <Play className="w-3.5 h-3.5 fill-current" />
-                              <span>ابدأ المشاهدة والتعلم التفاعلي</span>
+                              <span>{scene.transcriptTimingStatus === 'quarantined' ? 'المقطع تحت المراجعة' : 'ابدأ المشاهدة والتعلم التفاعلي'}</span>
                             </button>
                           </div>
                         </div>
