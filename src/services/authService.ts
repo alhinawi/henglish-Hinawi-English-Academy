@@ -33,8 +33,9 @@ export const GUEST_PROFILE: UserProfile = {
   role: 'student',
   currentLevel: 'A1',
   targetLevel: 'B2',
-  xp: 150,
-  streakDays: 1,
+  // Guests start at real zero — no pre-seeded XP or streak (no-fake-data rule).
+  xp: 0,
+  streakDays: 0,
   joinedDate: '2026-10-30',
   bio: 'وضع الزائر: يمكنك تجربة الدروس والمحاكاة، وحفظ تقدمك مؤقتاً في متصفحك.',
 };
