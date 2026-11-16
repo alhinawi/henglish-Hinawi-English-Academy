@@ -2826,5 +2826,6 @@
   "copy.failed": "Could not copy. Select the text and copy it manually.",
   "vocab.saveError": "Could not save this change on this device. Allow storage and try again. Your existing data was not changed.",
   "ex.loadError": "Could not load expressions. This is a loading error, not an empty search result. Try again.",
-  "ex.retry": "Try again"
+  "ex.retry": "Try again",
+  "vx.loadError": "The word library did not finish loading. Current results only cover loaded words. Try again to load the rest."
 }

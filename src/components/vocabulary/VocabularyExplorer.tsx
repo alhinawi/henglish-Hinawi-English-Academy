@@ -114,6 +114,8 @@ export const VocabularyExplorer: React.FC = () => {
   // Data Loading State
   const [isLoading, setIsLoading] = useState(true);
   const [isFullLoading, setIsFullLoading] = useState(false);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
 
   // Selected Word for Modal Inspector
   const [selectedModalWord, setSelectedModalWord] = useState<LexicalEntry | null>(null);
@@ -127,7 +129,8 @@ export const VocabularyExplorer: React.FC = () => {
   useEffect(() => {
     let mounted = true;
     (async () => {
-      setIsLoading(true);
+      setIsLoading(getLoadedVocabularyCount() === 0);
+      setLoadError(false);
       try {
         await loadVocabularyCore();
         if (!mounted) return;
@@ -136,6 +139,7 @@ export const VocabularyExplorer: React.FC = () => {
         await loadFullVocabulary();
       } catch (err) {
         console.error('Failed to initialize vocabulary explorer:', err);
+        if (mounted) setLoadError(true);
       } finally {
         if (mounted) {
           setIsLoading(false);
@@ -146,7 +150,7 @@ export const VocabularyExplorer: React.FC = () => {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [loadAttempt]);
 
   // Reset page when any filter changes
   useEffect(() => {
@@ -372,13 +376,21 @@ export const VocabularyExplorer: React.FC = () => {
         </div>
       </div>
 
+      {loadError && (
+        <div role="alert" className="glass-panel p-5 rounded-2xl border border-red-400/20 space-y-3 text-center">
+          <p className="text-sm text-red-200">{t('vx.loadError')}</p>
+          <button onClick={() => setLoadAttempt(n => n + 1)} className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 text-white text-sm font-bold cursor-pointer">
+            <RotateCcw className="w-4 h-4" />{t('ex.retry')}
+          </button>
+        </div>
+      )}
       {/* Words Grid / List Content */}
       {isLoading ? (
         <div className="p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <Loader2 className="w-10 h-10 text-[#41e7ff] animate-spin mx-auto" />
           <p className="text-white/80 font-bold text-sm">{t('vx.loading')}</p>
         </div>
-      ) : searchResults.entries.length === 0 ? (
+      ) : loadError && searchResults.entries.length === 0 ? null : searchResults.entries.length === 0 ? (
         <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
           <div className="w-16 h-16 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mx-auto text-white/40">
             <Search className="w-8 h-8" />
