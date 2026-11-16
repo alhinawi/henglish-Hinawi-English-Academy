@@ -55,9 +55,9 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   progress,
   badges,
 }) => {
-  const dailyGoals = deriveDailyGoals(progress);
+  const { t, lang } = useLanguage();
+  const dailyGoals = deriveDailyGoals(progress, t);
   const dailyGoalsDone = dailyGoals.filter((g) => g.completed).length;
-  const { t } = useLanguage();
   const currentLevel = userProfile.currentLevel;
   const nextLevel = nextLevelOf(currentLevel);
   const progressPercent = levelProgressPercent(userProfile.xp || 0, currentLevel);
@@ -323,15 +323,15 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
             {dailyGoals.map((goal) => (
               <div
                 key={goal.id}
-                className={`p-3.5 rounded-2xl border transition-all flex items-center justify-between ${
+                className={`p-3.5 rounded-2xl border transition-all flex items-center justify-between gap-3 ${
                   goal.completed
                     ? "bg-[#c4ff55]/10 border-[#c4ff55]/40 text-[#c4ff55]"
                     : "bg-white/5 border-white/10 hover:border-white/25 text-[#dedbf4]"
                 }`}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex min-w-0 flex-1 items-center gap-3">
                   <div
-                    className={`w-6 h-6 rounded-lg flex items-center justify-center border ${
+                    className={`w-6 h-6 shrink-0 rounded-lg flex items-center justify-center border ${
                       goal.completed
                         ? "bg-[#c4ff55] border-[#c4ff55] text-[#0c0b20]"
                         : "border-white/30 text-transparent"
@@ -339,20 +339,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                   >
                     <CheckCircle2 className="w-4 h-4 stroke-3" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div
                       className={`text-xs sm:text-sm font-bold ${goal.completed ? "line-through opacity-80" : "text-white"}`}
                     >
                       {goal.titleAr}
                     </div>
-                    <div className="text-[10px] text-[#b9b6d5]/70 font-mono en">
+                    {lang !== 'en' && <div className="text-[10px] text-[#b9b6d5]/70 font-mono en">
                       {goal.title}
-                    </div>
+                    </div>}
                   </div>
                 </div>
 
-                <span className="text-xs font-mono font-bold">
-                  <span dir="ltr" className="tabular-nums">{goal.current}/{goal.target}</span>{" "}{goal.unit}
+                <span className="inline-flex shrink-0 flex-col items-center whitespace-nowrap text-[10px] sm:text-xs font-mono font-bold">
+                  <span dir="ltr" className="tabular-nums">{goal.current}/{goal.target}</span>
+                  <span>{goal.unit}</span>
                 </span>
               </div>
             ))}

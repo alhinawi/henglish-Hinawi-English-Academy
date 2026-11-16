@@ -23,34 +23,28 @@ const STORAGE_KEY = "hinawi_english_progress_v2";
 const USER_PROFILE_KEY = "hinawi_english_user_v2";
 const NOTIFICATIONS_KEY = "hinawi_english_notifications_v2";
 
+// Neutral local fallbacks, never a fabricated learner/instructor identity.
+// Existing saved profiles and authenticated accounts are loaded unchanged.
 export const DEFAULT_STUDENT_PROFILE: UserProfile = {
   id: "student-1",
-  name: "Ahmed Elhinawi",
-  nameAr: "محمد الهناوي",
-  email: "ahmed@hinawi-english.com",
-  avatar: "/images/avatars/default-user.png",
+  name: "Learner",
+  nameAr: "",
+  email: "",
+  avatar: "",
   role: "student",
-  currentLevel: "B1",
-  targetLevel: "C1",
-  xp: 1450,
-  streakDays: 4,
-  joinedDate: "2026-01-15",
-  bio: "متعلم شغوف يسعى لإتقان قواعد اللغة الإنجليزية والمحادثة المهنية.",
+  currentLevel: "A1",
+  targetLevel: "A1",
+  xp: 0,
+  streakDays: 0,
+  joinedDate: "",
+  bio: "",
 };
 
 export const DEFAULT_TEACHER_PROFILE: UserProfile = {
+  ...DEFAULT_STUDENT_PROFILE,
   id: "teacher-1",
-  name: "Prof. Hinawi",
-  nameAr: "أ. د. هناوي",
-  email: "instructor@hinawi-english.com",
-  avatar: "/images/avatars/default-user.png",
+  name: "Teacher",
   role: "teacher",
-  currentLevel: "C2",
-  targetLevel: "C2",
-  xp: 12800,
-  streakDays: 45,
-  joinedDate: "2025-09-01",
-  bio: "المشرف الأكاديمي لمنصة هناوي ومؤلف مناهج القواعد والمحادثة.",
 };
 
 // Daily goal definitions (targets + copy only). Progress is never pre-seeded:
@@ -59,33 +53,33 @@ export const DAILY_GOAL_DEFS: Omit<DailyGoal, "current" | "completed">[] = [
   {
     id: "goal-1",
     title: "Complete 1 Grammar Lesson",
-    titleAr: "إكمال درس قواعد تفاعلي",
+    titleAr: "pg.lessonTitle",
     target: 1,
-    unit: "درس",
+    unit: "pg.lessonUnit",
     type: "lesson",
   },
   {
     id: "goal-2",
     title: "Review 10 Flashcards",
-    titleAr: "مراجعة 10 بطاقات كلمات V3",
+    titleAr: "pg.flashcardTitle",
     target: 10,
-    unit: "بطاقة",
+    unit: "pg.flashcardUnit",
     type: "flashcard",
   },
   {
     id: "goal-3",
     title: "Practice Speaking Dialogue",
-    titleAr: "ممارسة محادثة واقعية صوتية",
+    titleAr: "pg.speakingTitle",
     target: 1,
-    unit: "سيناريو",
+    unit: "pg.speakingUnit",
     type: "speaking",
   },
   {
     id: "goal-4",
     title: "Score 80%+ on a Quiz",
-    titleAr: "حل كويز بدرجة 80%+",
+    titleAr: "pg.quizTitle",
     target: 1,
-    unit: "كويز",
+    unit: "pg.quizUnit",
     type: "quiz",
   },
 ];
@@ -123,7 +117,7 @@ function withActivity(
 }
 
 // The Daily Goals card: definitions + real counts from today's activity.
-export function deriveDailyGoals(progress: UserProgressState): DailyGoal[] {
+export function deriveDailyGoals(progress: UserProgressState, translate?: (key: string) => string): DailyGoal[] {
   const a = dailyActivityOf(progress);
   return DAILY_GOAL_DEFS.map((def) => {
     const current =
@@ -138,7 +132,7 @@ export function deriveDailyGoals(progress: UserProgressState): DailyGoal[] {
                 ? 1
                 : 0
               : a.quizzes;
-    return { ...def, current, completed: current >= def.target };
+    return { ...def, titleAr: translate ? translate(def.titleAr) : def.titleAr, unit: translate ? translate(def.unit) : def.unit, current, completed: current >= def.target };
   });
 }
 

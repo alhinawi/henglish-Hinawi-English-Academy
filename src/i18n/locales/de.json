@@ -2436,5 +2436,13 @@
   "wam.placeholder": "Beispiel: In einer beruflichen E-Mail verwendet...",
   "wam.saved": "Im Wortschatz und Wiederholplan gespeichert!",
   "wam.save": "In meinem Wortschatz speichern",
-  "wam.unspecified": "Nicht angegeben"
+  "wam.unspecified": "Nicht angegeben",
+  "pg.lessonTitle": "Eine interaktive Grammatiklektion abschließen",
+  "pg.lessonUnit": "Lektion",
+  "pg.flashcardTitle": "10 V3-Wortkarten wiederholen",
+  "pg.flashcardUnit": "Karte",
+  "pg.speakingTitle": "Einen gesprochenen Dialog üben",
+  "pg.speakingUnit": "Szenario",
+  "pg.quizTitle": "Mindestens 80 % in einem Quiz erreichen",
+  "pg.quizUnit": "Quiz"
 }
