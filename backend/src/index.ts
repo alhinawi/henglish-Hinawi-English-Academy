@@ -11,6 +11,100 @@ type Env = { Bindings: Cloudflare.Env; Variables: { userId: number } }
 const SESSION_DAYS = 30
 const MAX_PROGRESS_BYTES = 512_000
 
+// ---------- progress sanitization ----------
+// The progress blob is client-writable and the leaderboard reads from it, so
+// every field a client could inflate is clamped server-side. Out-of-range
+// values are capped, not rejected, so a buggy client never loses its sync.
+const CEFR_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+
+const capStr = (v: unknown, max = 160): string | null =>
+  typeof v === 'string' ? v.slice(0, max) : null
+
+const capNum = (v: unknown, max: number): number =>
+  typeof v === 'number' && Number.isFinite(v) ? Math.min(Math.max(Math.round(v), 0), max) : 0
+
+const capStrList = (v: unknown, maxItems: number): string[] => {
+  if (!Array.isArray(v)) return []
+  const out: string[] = []
+  for (const item of v) {
+    const s = capStr(item)
+    if (s !== null && !out.includes(s)) out.push(s)
+    if (out.length >= maxItems) break
+  }
+  return out
+}
+
+function sanitizeProgress(blob: unknown): Record<string, unknown> {
+  const src = (typeof blob === 'object' && blob !== null && !Array.isArray(blob) ? blob : {}) as Record<string, unknown>
+  const out: Record<string, unknown> = {}
+
+  out.completedLessons = capStrList(src.completedLessons, 1000)
+  out.knownFlashcards = capStrList(src.knownFlashcards, 20000)
+  out.reviewFlashcards = capStrList(src.reviewFlashcards, 20000)
+  const bookmarks: Record<string, unknown>[] = []
+  if (Array.isArray(src.bookmarks)) {
+    for (const bm of src.bookmarks.slice(0, 1000)) {
+      if (typeof bm === 'object' && bm !== null) {
+        const b = bm as Record<string, unknown>
+        bookmarks.push({
+          id: capStr(b.id) ?? String(bookmarks.length),
+          title: capStr(b.title, 200) ?? '',
+          subtitle: capStr(b.subtitle, 300) ?? '',
+          route: capStr(b.route, 160) ?? 'dashboard',
+          lessonId: capStr(b.lessonId) ?? undefined,
+          category: capStr(b.category, 80) ?? '',
+          savedAt: capStr(b.savedAt, 40) ?? '',
+        })
+      }
+    }
+  }
+  out.bookmarks = bookmarks
+
+  const notes: Record<string, unknown>[] = []
+  if (Array.isArray(src.notes)) {
+    for (const n of src.notes.slice(0, 1000)) {
+      if (typeof n === 'object' && n !== null) {
+        const note = n as Record<string, unknown>
+        notes.push({
+          id: capStr(note.id) ?? String(notes.length),
+          lessonId: capStr(note.lessonId) ?? '',
+          lessonTitle: capStr(note.lessonTitle, 200) ?? '',
+          content: capStr(note.content, 4000) ?? '',
+          updatedAt: capStr(note.updatedAt, 40) ?? '',
+        })
+      }
+    }
+  }
+  out.notes = notes
+
+  const quizScores: Record<string, unknown> = {}
+  if (typeof src.quizScores === 'object' && src.quizScores !== null && !Array.isArray(src.quizScores)) {
+    for (const [k, v] of Object.entries(src.quizScores as Record<string, unknown>).slice(0, 500)) {
+      const key = k.slice(0, 160)
+      if (typeof v === 'number' && Number.isFinite(v)) {
+        quizScores[key] = Math.min(Math.max(v, 0), 100)
+      } else if (typeof v === 'object' && v !== null) {
+        const q = v as Record<string, unknown>
+        const total = capNum(q.total, 100)
+        quizScores[key] = { score: Math.min(capNum(q.score, 100), total || 100), total, date: capStr(q.date, 40) ?? '' }
+      }
+    }
+  }
+  out.quizScores = quizScores
+
+  out.xp = capNum(src.xp, 1_000_000)
+  out.studyStreakDays = capNum(src.studyStreakDays, 3650)
+  out.totalTimeMinutes = capNum(src.totalTimeMinutes, 1_000_000)
+  out.dailyChallengeCompleted = src.dailyChallengeCompleted === true
+  out.lastStudyDate = capStr(src.lastStudyDate, 40) ?? ''
+  out.level = typeof src.level === 'string' && CEFR_LEVELS.includes(src.level) ? src.level : 'A1'
+  if (typeof src.dailyGoals === 'object' && src.dailyGoals !== null && !Array.isArray(src.dailyGoals)) {
+    out.dailyGoals = src.dailyGoals
+  }
+  return out
+}
+
+
 const app = new Hono<Env>()
 
 app.use('/api/*', async (c, next) => {
@@ -96,7 +190,7 @@ app.post('/api/auth/register', async (c) => {
   // Optional one-time migration: the visitor's localStorage progress blob moves into the account.
   const local = b.progress
   if (local !== undefined) {
-    const data = JSON.stringify(local)
+    const data = JSON.stringify(sanitizeProgress(local))
     if (data.length > MAX_PROGRESS_BYTES) throw new ValidationError({ progress: 'too large' })
     await saveProgress(c.env.DB, userId, data, new Date().toISOString())
   }
@@ -171,7 +265,7 @@ app.put('/api/progress', async (c) => {
   }
   if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) throw new ValidationError({ progress: 'object expected' })
   const body = parsed as Record<string, unknown>
-  const data = JSON.stringify(body.progress ?? body)
+  const data = JSON.stringify(sanitizeProgress(body.progress ?? body))
   const now = new Date().toISOString()
   await saveProgress(c.env.DB, c.get('userId'), data, now)
   return c.json({ progress: JSON.parse(data), updated_at: now })
