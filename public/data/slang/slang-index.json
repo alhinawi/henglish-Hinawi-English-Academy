@@ -1,21 +1,22 @@
 {
   "bank": "slang",
   "idPrefix": "slg",
-  "totalEntries": 500,
+  "totalEntries": 1000,
   "chunkSize": 500,
   "chunks": [
-    "slg000001-000500.json"
+    "slg000001-000500.json",
+    "slg000501-001000.json"
   ],
   "counts": {
     "byRegister": {
-      "informal": 493,
-      "vulgar": 7
+      "informal": 981,
+      "vulgar": 19
     },
     "byOrigin": {
-      "US": 238,
-      "UK": 61,
-      "both": 194,
-      "global": 7
+      "US": 478,
+      "UK": 172,
+      "both": 336,
+      "global": 14
     }
   }
 }
