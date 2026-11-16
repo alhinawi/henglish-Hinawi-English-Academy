@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { COMPREHENSIVE_QUIZ_BANK } from '../data/quizzesData';
+import { QuestionBankPanel } from '../components/QuestionBankPanel';
 import { QuizEngine } from '../components/QuizEngine';
 import { QuizQuestion } from '../types';
 import { playSound, fireCelebration } from '../utils/audio';
@@ -25,7 +26,7 @@ const GRAMMAR_TOPICS = [
 ];
 
 export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
-  const [activeTab, setActiveTab] = useState<'static' | 'ai'>('ai');
+  const [activeTab, setActiveTab] = useState<'static' | 'ai'>('static');
   const [filterDifficulty, setFilterDifficulty] = useState<string>('all');
 
   // AI Generator State
@@ -138,7 +139,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             }`}
           >
             <BookOpen className="w-4 h-4" />
-            <span>بنك الأسئلة المعتمد ({COMPREHENSIVE_QUIZ_BANK.length})</span>
+            <span>بنك الأسئلة الشامل</span>
           </button>
         </div>
       </div>
@@ -272,53 +273,10 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
         </section>
       )}
 
-      {/* STATIC QUIZ BANK PANEL */}
+      {/* VERIFIED QUESTION BANK PANEL */}
       {activeTab === 'static' && (
-        <section className="space-y-6">
-          {/* Difficulty Filters */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 border-b border-white/10 no-scrollbar">
-            <span className="text-xs text-[#b9b6d5] flex items-center gap-1 ml-2 font-bold shrink-0">
-              <Filter className="w-3.5 h-3.5" />
-              مستوى الصعوبة:
-            </span>
-            {[
-              { id: 'all', label: `جميع الأسئلة (${COMPREHENSIVE_QUIZ_BANK.length})` },
-              { id: 'beginner', label: 'مبتدئ (Beginner)' },
-              { id: 'intermediate', label: 'متوسط (Intermediate)' },
-              { id: 'advanced', label: 'متقدم (Advanced)' },
-            ].map(item => (
-              <button
-                key={item.id}
-                onClick={() => {
-                  playSound('click');
-                  setFilterDifficulty(item.id);
-                }}
-                className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
-                  filterDifficulty === item.id
-                    ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
-                    : 'bg-white/5 text-[#dedbf4] hover:bg-white/10'
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-
-          {/* Main Quiz Engine */}
-          <QuizEngine
-            key={filterDifficulty}
-            questions={filteredQuestions}
-            quizTitle={`اختبار المستقبل التام — ${
-              filterDifficulty === 'all'
-                ? 'بنك الأسئلة الكامل'
-                : filterDifficulty === 'beginner'
-                ? 'مستوى المبتدئين'
-                : filterDifficulty === 'intermediate'
-                ? 'المستوى المتوسط'
-                : 'المستوى المتقدم'
-            }`}
-            onComplete={handleComplete}
-          />
+        <section>
+          <QuestionBankPanel />
         </section>
       )}
 
