@@ -1,15 +1,10 @@
 // ذاكرة الأفلام - flip cards and match each movie line with its Egyptian meaning.
 import React, { useState } from 'react';
+import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, sample, shuffle, SentencePair } from '../arcadeContent';
 import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
-
-const META: ArcadeGameMeta = {
-  id: 'movie-memory',
-  title: 'ذاكرة الأفلام',
-  tagline: '12 كارت وشهم لتحت: 6 جمل من محتوى المنصة و6 ترجمات.. افتكر مكان كل جملة وترجمتها.',
-};
 
 const PAIRS = 6;
 
@@ -21,6 +16,8 @@ interface Card {
 }
 
 export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
+  const { t, lang } = useLanguage();
+  const META: ArcadeGameMeta = { id: 'movie-memory', title: t('mm.title'), tagline: t('mm.intro') };
   const progress = useArcadeProgress();
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [cards, setCards] = useState<Card[]>([]);
@@ -80,7 +77,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
 
   if (phase === 'intro')
     return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
-  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">بنجهز الكروت...</div>;
+  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">{t('mm.loading')}</div>;
   if (phase === 'end' && end)
     return (
       <ArcadeEnd
@@ -91,7 +88,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
         best={progress.best[META.id] ?? score}
         onReplay={start}
         onBack={onExit}
-        extra={<p className="text-xs text-[#8f8cb0]">خلصتها في {moves} حركة - أقل حركات = أعلى نتيجة</p>}
+        extra={<p className="text-xs text-[#8f8cb0]">{t('mm.result').replace('{count}', String(moves))}</p>}
       />
     );
 
@@ -114,12 +111,12 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
               }`}
               dir={c.kind === 'en' ? 'ltr' : 'rtl'}
             >
-              {isOpen || matched.has(c.pairId) ? c.text : '؟'}
+              {isOpen || matched.has(c.pairId) ? c.text : (lang === 'ar' ? '؟' : '?')}
             </button>
           );
         })}
       </div>
-      <p className="text-center text-[10px] text-[#8f8cb0] mt-3">حركات: {moves}</p>
+      <p className="text-center text-[10px] text-[#8f8cb0] mt-3">{t('mm.moves').replace('{count}', String(moves))}</p>
     </div>
   );
 };
