@@ -2,24 +2,24 @@ import type { Metadata, Viewport } from 'next';
 import './globals.built.css';
 
 export const metadata: Metadata = {
-  title: 'Henglish Academy | منصة هناوي لتعلم وإتقان اللغة الإنجليزية',
+  title: 'Henglish Academy | منصة شاملة لتعلم الإنجليزية',
   description:
-    'منصة هناوي الأكاديمية الشاملة لتعلم وإتقان اللغة الإنجليزية: أكاديمية الجرامر، كورس المستقبل التام، محاكي المواقف الحقيقية 3D، المعلم الذكي AI، وتحديد مستوى CEFR.',
+    'هناوي إنجلش منصة شاملة لتعلم الإنجليزية: كلمات وقواعد، استماع ومحادثة، قراءة وكتابة ونطق، أفلام وألعاب ومواقف وعالم ثلاثي الأبعاد واختبارات.',
   keywords:
-    'تعلم الانجليزية, جرامر, قواعد اللغة الانجليزية, Future Perfect, CEFR, توفل, ايلتس, محادثة انجليزي, هناوي',
+    'تعلم الانجليزية, كلمات, جرامر, استماع, محادثة, قراءة, كتابة, نطق, افلام, العاب, CEFR, هناوي',
   authors: [{ name: 'Henglish Academy' }],
   icons: { icon: '/logo-clean.png' },
   openGraph: {
     type: 'website',
     url: 'https://henglish.academy',
-    title: 'Henglish Academy | منصة هناوي لتعلم وإتقان اللغة الإنجليزية',
+    title: 'Henglish Academy | منصة شاملة لتعلم الإنجليزية',
     description:
-      'المنصة الأكاديمية الشاملة لتعلم قواعد اللغة الإنجليزية، المستقبل التام، محاكي المواقف الحقيقية 3D، والمعلم الذكي AI.',
+      'هناوي إنجلش منصة شاملة لتعلم الإنجليزية: كلمات وقواعد، استماع ومحادثة، قراءة وكتابة ونطق، أفلام وألعاب ومواقف وعالم ثلاثي الأبعاد واختبارات.',
     images: ['/hinawi-logo-clean.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Henglish Academy | منصة هناوي لتعلم وإتقان اللغة الإنجليزية',
+    title: 'Henglish Academy | منصة شاملة لتعلم الإنجليزية',
     description:
       'المنصة الأكاديمية التفاعلية لتعلم الإنجليزية بذكاء وعمق وفق الإطار الأوروبي CEFR.',
     images: ['/hinawi-logo-clean.png'],
