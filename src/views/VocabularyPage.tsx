@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { VERB_TOOLKIT } from '../data/verbsData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish } from '../utils/audio';
 import { Search, Volume2, Sparkles } from 'lucide-react';
 
 export const VocabularyPage: React.FC = () => {
+  const appText = useAppTextMap('verbsData');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [irregularOnly, setIrregularOnly] = useState(false);
@@ -131,7 +133,7 @@ export const VocabularyPage: React.FC = () => {
                     {verb.v3}
                   </td>
                   <td className="p-4 sm:p-5 text-[#dedbf4] font-bold">
-                    {verb.meaningAr}
+                    {txText(appText, verb.meaningAr)}
                   </td>
                   <td className="p-4 sm:p-5 en text-xs text-[#b9b6d5] max-w-xs">
                     {verb.example}
