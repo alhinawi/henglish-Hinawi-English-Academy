@@ -24,6 +24,7 @@ const checks = [
   'check-sentence-rating-bidi.cjs',
   'check-sentence-direction.cjs',
   'check-sentence-refresh.cjs',
+  'check-sentence-practice.cjs',
   'check_progress_fallbacks.cjs',
   'check_recovery_fallbacks.cjs',
 ];

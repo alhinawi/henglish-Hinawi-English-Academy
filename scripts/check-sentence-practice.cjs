@@ -1,0 +1,10 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const js=ts.transpileModule(fs.readFileSync('src/utils/sentencePractice.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText;
+const c={exports:{}};vm.runInNewContext(js,c);const {sentencePracticeWords:words,isSentencePracticeCorrect:correct}=c.exports;
+assert.equal(JSON.stringify(words('  Hello,   world!\n How are you?  ')),JSON.stringify(['Hello','world','How','are','you']));
+assert.ok(correct(['hello','world'], ' Hello,  world! '));assert.ok(!correct(['world','hello'], 'Hello world.'));assert.ok(!correct(['hello'],'Hello world.'));
+assert.ok(correct(["I'm",'here'],"I'm here."));assert.equal(words('  ').length,0);
+const page=fs.readFileSync('src/views/SentencesLibraryPage.tsx','utf8');
+assert.ok(/handleSelectWord = \(idx: number\) => \{[\s\S]*?setPracticeStatus\('idle'\)/.test(page));
+assert.ok(page.includes('<div dir="ltr" className="min-h-16'));assert.ok(page.includes('<div dir="ltr" lang="en" className="flex'));
+console.log('Sentence practice: consistent whitespace/punctuation tokens, order-sensitive answers, edit clears verdict, LTR English rows: PASS');
