@@ -34,10 +34,12 @@ function BadgeCard({badge:b}:{badge:AchievementBadge}) {
 export function BadgeCollection({badges,compact=false,onNavigate}:{badges:AchievementBadge[];compact?:boolean;onNavigate?:(route:PageRoute)=>void}) {
  const {t}=useLanguage();const [filter,setFilter]=useState('all');
  const categories=[...new Set(badges.map(b=>b.category??'account'))];
+ const featured=['first-login','streak-7','xp-1000','level-b1','lessons-10','cert-1'];
+ const preview=[...badges].sort((a,b)=>Number(b.unlocked)-Number(a.unlocked)||(featured.includes(a.id)?featured.indexOf(a.id):999)-(featured.includes(b.id)?featured.indexOf(b.id):999)).slice(0,6);
  return <section className="rounded-3xl bg-linear-to-br from-[#22203d] to-[#141329] border border-[#b9934c]/20 p-4 sm:p-7 space-y-5">
   <header className="flex flex-col sm:flex-row items-start justify-between gap-3"><div><Award className="text-[#e8bd65] mb-2" size={24}/><h2 className="text-xl font-black text-white">{t('badges.title')}</h2><p className="text-xs text-[#aaa7c2] mt-2 leading-relaxed">{t('badges.verified')}</p></div>{compact&&onNavigate&&<button onClick={()=>onNavigate('badges')} className="shrink-0 text-xs text-[#e8bd65] min-h-11">{t('badges.viewAll')} ({badges.length})</button>}</header>
   {!compact&&<div className="flex gap-2 overflow-x-auto pb-2 max-w-full">{['all',...categories].map(c=><button key={c} onClick={()=>setFilter(c)} aria-pressed={filter===c} className={`shrink-0 rounded-xl px-3 min-h-11 text-xs ${filter===c?'bg-[#d6ae5c] text-[#17152b]':'bg-white/5 text-[#c5c1da]'}`}>{t(c==='all'?'badges.all':'badges.category.'+c)}</button>)}</div>}
-  {compact?<div className="grid grid-cols-2 sm:grid-cols-3 gap-3">{[...badges].sort((a,b)=>Number(b.unlocked)-Number(a.unlocked)).slice(0,6).map(b=><BadgeCard key={b.id} badge={b}/>)}</div>:categories.filter(c=>filter==='all'||filter===c).map(c=><section key={c} className="space-y-3"><h3 className="text-base text-[#e8cb90] font-bold pt-2">{t('badges.category.'+c)}</h3><div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">{badges.filter(b=>b.category===c).map(b=><BadgeCard key={b.id} badge={b}/>)}</div></section>)}
+  {compact?<div className="grid grid-cols-2 sm:grid-cols-3 gap-3">{preview.map(b=><BadgeCard key={b.id} badge={b}/>)}</div>:categories.filter(c=>filter==='all'||filter===c).map(c=><section key={c} className="space-y-3"><h3 className="text-base text-[#e8cb90] font-bold pt-2">{t('badges.category.'+c)}</h3><div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">{badges.filter(b=>b.category===c).map(b=><BadgeCard key={b.id} badge={b}/>)}</div></section>)}
  </section>;
 }
 export function BadgesPage({onNavigate,learnerId}:{onNavigate:(route:PageRoute)=>void;learnerId?:string|null}) {
