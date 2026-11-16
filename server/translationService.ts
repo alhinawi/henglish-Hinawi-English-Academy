@@ -14,7 +14,6 @@ import {
   TranslationExplanation,
   WordAnalysisDetail,
   GrammarStructureAnalysis,
-  PracticeEvaluationResult,
   LanguageCode,
   TranslationMode,
   OcrResult,
@@ -661,131 +660,6 @@ Focus strictly on the translation at hand. Provide rich examples and cultural/gr
 /**
  * Educational Practice Mode AI Evaluation Dispatcher
  */
-export async function dispatchPracticeEvaluation(req: {
-  direction: 'ar-to-en' | 'en-to-ar';
-  difficulty: CEFRLevel;
-  sourceSentence: string;
-  userTranslation: string;
-  expectedTranslations: string[];
-}): Promise<PracticeEvaluationResult> {
-  const config = getAiConfig();
-  const user = req.userTranslation.trim();
-
-  const systemPrompt = `You are the Chief Examiner at Henglish Translation Academy.
-Evaluate the student's translation strictly but encouragingly.
-Direction: ${req.direction}
-Difficulty Level: ${req.difficulty}
-Source Sentence: "${req.sourceSentence}"
-Student's Translation: "${user}"
-Valid Reference Translations: ${JSON.stringify(req.expectedTranslations)}
-
-Grade on 5 criteria (0-100):
-1. meaningScore: Accuracy of conveyed meaning.
-2. grammarScore: Sentence structure, tenses, subject-verb agreement.
-3. vocabularyScore: Word choice and lexical precision.
-4. naturalnessScore: Native-like phrasing and flow.
-5. completenessScore: Missing or extra unwarranted information.
-
-DO NOT penalize the student for using valid synonyms or alternative correct phrasings!
-Accept any logically sound, grammatically correct translation.
-
-Return ONLY a JSON object:
-{
-  "overallScore": number (0-100),
-  "meaningScore": number (0-100),
-  "grammarScore": number (0-100),
-  "vocabularyScore": number (0-100),
-  "naturalnessScore": number (0-100),
-  "completenessScore": number (0-100),
-  "suggestedAnswer": "string - pristine natural translation",
-  "alternativeValidAnswers": ["string", "string"],
-  "feedbackAr": "detailed pedagogical feedback in Arabic",
-  "strengths": ["string in Arabic"],
-  "mistakesAndCorrections": [
-    {
-      "userPart": "string phrase where mistake occurred",
-      "correction": "string correct version",
-      "reasonAr": "explanation in Arabic"
-    }
-  ],
-  "earnedXp": number (10 to 60 based on score)
-}`;
-
-  if (config.provider === 'gemini' && config.geminiKey && config.geminiKey !== 'your_ai_api_key_here') {
-    try {
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${config.geminiKey}`;
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          systemInstruction: { parts: [{ text: systemPrompt }] },
-          contents: [{ role: 'user', parts: [{ text: `Evaluate this translation: "${user}"` }] }],
-          generationConfig: {
-            temperature: 0.2,
-            responseMimeType: 'application/json',
-          },
-        }),
-      });
-
-      if (response.ok) {
-        const data = await response.json();
-        const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-        if (text) {
-          const parsed = JSON.parse(text);
-          return {
-            overallScore: parsed.overallScore || 85,
-            meaningScore: parsed.meaningScore || 85,
-            grammarScore: parsed.grammarScore || 85,
-            vocabularyScore: parsed.vocabularyScore || 85,
-            naturalnessScore: parsed.naturalnessScore || 80,
-            completenessScore: parsed.completenessScore || 90,
-            userAnswer: user,
-            suggestedAnswer: parsed.suggestedAnswer || req.expectedTranslations[0] || '',
-            alternativeValidAnswers: parsed.alternativeValidAnswers || req.expectedTranslations,
-            feedbackAr: parsed.feedbackAr || 'محاولة جيدة جداً! لقد نجحت في نقل جوهر المعنى.',
-            strengths: parsed.strengths || ['نقل المعنى الأساسي بوضوح', 'استخدام مفردات مناسبة'],
-            mistakesAndCorrections: parsed.mistakesAndCorrections || [],
-            earnedXp: parsed.earnedXp || 35,
-          };
-        }
-      }
-    } catch (err) {
-      console.warn('Practice evaluation via Gemini failed:', err);
-    }
-  }
-
-  // Local Educational Practice Evaluator
-  const matched = req.expectedTranslations.some(exp =>
-    exp.toLowerCase().trim() === user.toLowerCase().trim()
-  );
-
-  const score = matched ? 98 : user.length > 5 ? 82 : 45;
-  return {
-    overallScore: score,
-    meaningScore: score,
-    grammarScore: score,
-    vocabularyScore: score,
-    naturalnessScore: score - 5,
-    completenessScore: score,
-    userAnswer: user,
-    suggestedAnswer: req.expectedTranslations[0] || '',
-    alternativeValidAnswers: req.expectedTranslations,
-    feedbackAr: matched
-      ? 'إجابة ممتازة ومطابقة للمعايير الاحترافية! صياغتك انسيابية ودقيقة.'
-      : 'محاولة رائعة! المعنى مفهوم وواضح، ويمكن تحسين النبرة لتصبح أكثر طلاقة.',
-    strengths: ['التعبير عن الفكرة بدقة', 'ترتيب الكلمات المنطقي'],
-    mistakesAndCorrections: matched
-      ? []
-      : [
-          {
-            userPart: user,
-            correction: req.expectedTranslations[0],
-            reasonAr: 'الصياغة المقترحة تتبع النمط الأكثر شيوعاً بين متحدثي اللغة الأصليين.',
-          },
-        ],
-    earnedXp: Math.round(score * 0.4),
-  };
-}
 
 /**
  * Image OCR & Multilingual Translation Dispatcher
