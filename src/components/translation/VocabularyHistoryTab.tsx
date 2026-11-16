@@ -145,7 +145,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
             }`}
           >
             <History className="w-4 h-4" />
-            <span>{t('vh.tabHistory')} ({historyItems.length})</span>
+            <span>{t('vh.tabHistory')} <bdi dir="ltr" className="whitespace-nowrap">({historyItems.length})</bdi></span>
           </button>
 
           <button
@@ -161,7 +161,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
             }`}
           >
             <Bookmark className="w-4 h-4" />
-            <span>{t('vh.tabVocab')} ({vocabCards.length})</span>
+            <span>{t('vh.tabVocab')} <bdi dir="ltr" className="whitespace-nowrap">({vocabCards.length})</bdi></span>
           </button>
         </div>
 
@@ -359,7 +359,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                     : 'bg-white/5 hover:bg-white/10 text-slate-300'
                 }`}
               >
-                {t('vh.allWords')} ({vocabCards.length})
+                {t('vh.allWords')} <bdi dir="ltr" className="whitespace-nowrap">({vocabCards.length})</bdi>
               </button>
 
               {collections.map(col => (
