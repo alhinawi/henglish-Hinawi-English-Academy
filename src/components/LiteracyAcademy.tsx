@@ -34,7 +34,7 @@ export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
     setSaved(p => ({ ...p, done: [...p.done, id] }));
     onCompleteActivity?.(id, 3, 3);
   };
-  return <div dir={dir} className="space-y-6 pb-8 min-w-0">
+  return <div dir={dir} className="space-y-6 pb-8 min-w-0 text-start">
     <section className="relative isolate overflow-hidden rounded-[28px] border border-white/10 bg-[#11182a]">
       <img src={lessons[0].image} alt={reading ? t('lit.readingAlt') : t('lit.writingAlt')} className="absolute inset-0 h-full w-full object-cover opacity-25" />
       <div className="absolute inset-0 bg-linear-to-l from-[#101626] via-[#101626]/90 to-[#101626]/40" />
