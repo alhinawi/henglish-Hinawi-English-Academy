@@ -130,6 +130,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
         <div className="flex flex-col items-center gap-3">
           <img
             src={avatar || ANONYMOUS_AVATAR}
+            onError={e => { e.currentTarget.onerror = null; e.currentTarget.src = ANONYMOUS_AVATAR; }}
             alt="الصورة الشخصية"
             className="w-24 h-24 rounded-2xl object-cover border-2 border-[#ffd166]/60 bg-slate-800"
           />
