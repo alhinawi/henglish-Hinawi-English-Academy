@@ -4,6 +4,7 @@
 // ==============================================================================
 
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 import {
   X,
   Database,
@@ -29,6 +30,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   onClose,
   onWordAdded,
 }) => {
+  const { t } = useLanguage();
   const [manifest, setManifest] = useState<VocabularyManifest | null>(null);
   const [activeTab, setActiveTab] = useState<'stats' | 'add' | 'bulk'>('stats');
 
@@ -47,6 +49,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   // Bulk Import
   const [bulkData, setBulkData] = useState('');
   const [bulkStatus, setBulkStatus] = useState<string | null>(null);
+  const [bulkOk, setBulkOk] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -74,12 +77,12 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
       meaningAr: meaningAr.trim(),
       definitionEn: definitionEn.trim() || `Refers to ${headword}.`,
       exampleEn: exampleEn.trim() || `Understanding ${headword} is important.`,
-      exampleAr: exampleAr.trim() || `فهم (${meaningAr}) أمر مهم.`,
+      exampleAr: exampleAr.trim() || t('avm.exampleFallback').replace('{m}', meaningAr),
     };
 
     saveWord(newEntry);
     playSound('success');
-    setSuccessMsg(`تمت إضافة الكلمة "${headword}" بنجاح إلى قاعدة البيانات!`);
+    setSuccessMsg(t('avm.addSuccess').replace('{w}', headword));
 
     // Reset form
     setHeadword('');
@@ -98,7 +101,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
     try {
       const parsed = JSON.parse(bulkData);
       if (!Array.isArray(parsed)) {
-        throw new Error('يجب أن تكون البيانات مصفوفة JSON صالحة [ {...}, {...} ]');
+        throw new Error(t('avm.bulkInvalid'));
       }
       let count = 0;
       parsed.forEach((item: any) => {
@@ -125,12 +128,14 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
         }
       });
       playSound('success');
-      setBulkStatus(`تم استيراد ${count} كلمة بنجاح إلى قاعدة البيانات المحلية!`);
+      setBulkOk(true);
+      setBulkStatus(t('avm.bulkSuccess').replace('{n}', String(count)));
       setBulkData('');
       if (onWordAdded) onWordAdded();
     } catch (err: any) {
       playSound('wrong');
-      setBulkStatus(`خطأ في صيغة البيانات: ${err.message}`);
+      setBulkOk(false);
+      setBulkStatus(`${t('avm.bulkError')} ${err.message}`);
     }
   };
 
@@ -154,7 +159,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               <Database className="w-5 h-5" />
             </span>
             <h3 className="text-lg font-black text-white">
-              لوحة إدارة وتوسيع بنك المفردات (Vocabulary Admin)
+              {t('avm.title')}
             </h3>
           </div>
         </div>
@@ -169,7 +174,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
                 : 'bg-white/5 text-white/70 hover:bg-white/10'
             }`}
           >
-            إحصائيات وقوة القاعدة المعتمدة
+            {t('avm.tabStats')}
           </button>
           <button
             onClick={() => setActiveTab('add')}
@@ -179,7 +184,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
                 : 'bg-white/5 text-white/70 hover:bg-white/10'
             }`}
           >
-            إضافة كلمة جديدة
+            {t('avm.tabAdd')}
           </button>
           <button
             onClick={() => setActiveTab('bulk')}
@@ -189,7 +194,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
                 : 'bg-white/5 text-white/70 hover:bg-white/10'
             }`}
           >
-            استيراد دفعة (JSON / CSV Bulk)
+            {t('avm.tabBulk')}
           </button>
         </div>
 
@@ -198,31 +203,31 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
           <div className="space-y-6">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">إجمالي الكلمات الموثقة</span>
+                <span className="text-[11px] text-white/60 font-bold">{t('avm.statWords')}</span>
                 <div className="text-2xl font-black text-[#c4ff55]">5,000</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">التعابير والمصطلحات</span>
+                <span className="text-[11px] text-white/60 font-bold">{t('avm.statPhrases')}</span>
                 <div className="text-2xl font-black text-[#ffd166]">10,000</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">تسجيلات صوتية أمريكية</span>
+                <span className="text-[11px] text-white/60 font-bold">{t('avm.statAudioUs')}</span>
                 <div className="text-2xl font-black text-[#22D3EE]">37,636+</div>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10 space-y-1">
-                <span className="text-[11px] text-white/60 font-bold">تسجيلات صوتية بريطانية</span>
+                <span className="text-[11px] text-white/60 font-bold">{t('avm.statAudioUk')}</span>
                 <div className="text-2xl font-black text-[#A78BFA]">37,223+</div>
               </div>
             </div>
 
             {manifest && (
               <div className="space-y-3">
-                <h4 className="text-xs font-black text-white/80">توزيع المستويات الأوروبية المعتمدة (CEFR):</h4>
+                <h4 className="text-xs font-black text-white/80">{t('avm.cefrDist')}</h4>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs">
                   {Object.entries(manifest.distributionCefr).map(([lvl, count]) => (
                     <div key={lvl} className="p-2.5 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between">
                       <span className="font-bold text-white">{lvl}</span>
-                      <span className="font-mono text-[#c4ff55]">{count.toLocaleString()} كلمة</span>
+                      <span className="font-mono text-[#c4ff55]">{count.toLocaleString()} {t('avm.wordUnit')}</span>
                     </div>
                   ))}
                 </div>
@@ -230,10 +235,10 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             )}
 
             <div className="p-4 rounded-2xl bg-[#41e7ff]/10 border border-[#41e7ff]/20 text-xs text-[#dedbf4] space-y-1">
-              <p className="font-bold text-white">معايير الدقة والتوثيق الأكاديمي:</p>
-              <p>• جميع الكلمات مستخرجة من معجم Arabeyes المعتمد وقواميس Webster الرسمية.</p>
-              <p>• الرموز الصوتية IPA مطابقة للمعايير الدولية للكنتين الأمريكية (US) والبريطانية (UK).</p>
-              <p>• دعم التوسع المستمر حتى 200,000 كلمة دون أي تعديل في بنية الجداول وقواعد البيانات.</p>
+              <p className="font-bold text-white">{t('avm.standardsTitle')}</p>
+              <p>{t('avm.standard1')}</p>
+              <p>{t('avm.standard2')}</p>
+              <p>{t('avm.standard3')}</p>
             </div>
           </div>
         )}
@@ -250,7 +255,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">الكلمة بالإنجليزية (Headword) *</label>
+                <label className="text-xs font-bold text-white">{t('avm.headwordLabel')} *</label>
                 <input
                   type="text"
                   required
@@ -262,19 +267,19 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">المعنى العربي الأساسي *</label>
+                <label className="text-xs font-bold text-white">{t('avm.meaningLabel')} *</label>
                 <input
                   type="text"
                   required
                   value={meaningAr}
                   onChange={e => setMeaningAr(e.target.value)}
-                  placeholder="e.g. إنجاز واختراق نوعي كبير"
+                  placeholder={t('avm.examplePlaceholder')}
                   className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 />
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">المستوى الأوروبي (CEFR)</label>
+                <label className="text-xs font-bold text-white">{t('avm.cefrLabel')}</label>
                 <select
                   value={cefr}
                   onChange={e => setCefr(e.target.value as any)}
@@ -290,21 +295,21 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">قسم الكلام (POS)</label>
+                <label className="text-xs font-bold text-white">{t('avm.posLabel')}</label>
                 <select
                   value={pos}
                   onChange={e => setPos(e.target.value)}
                   className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs"
                 >
-                  <option value="noun">Noun (اسم)</option>
-                  <option value="verb">Verb (فعل)</option>
-                  <option value="adjective">Adjective (صفة)</option>
-                  <option value="adverb">Adverb (ظرف)</option>
+                  <option value="noun">{t('avm.posNoun')}</option>
+                  <option value="verb">{t('avm.posVerb')}</option>
+                  <option value="adjective">{t('avm.posAdjective')}</option>
+                  <option value="adverb">{t('avm.posAdverb')}</option>
                 </select>
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">الرمز الصوتي الأمريكي (IPA US)</label>
+                <label className="text-xs font-bold text-white">{t('avm.ipaUsLabel')}</label>
                 <input
                   type="text"
                   value={ipaUs}
@@ -315,7 +320,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">الرمز الصوتي البريطاني (IPA UK)</label>
+                <label className="text-xs font-bold text-white">{t('avm.ipaUkLabel')}</label>
                 <input
                   type="text"
                   value={ipaUk}
@@ -327,7 +332,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-white">التعريف بالإنجليزية (English Definition)</label>
+              <label className="text-xs font-bold text-white">{t('avm.defLabel')}</label>
               <textarea
                 rows={2}
                 value={definitionEn}
@@ -339,7 +344,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">جملة مثال بالإنجليزية</label>
+                <label className="text-xs font-bold text-white">{t('avm.exampleEnLabel')}</label>
                 <input
                   type="text"
                   value={exampleEn}
@@ -349,12 +354,12 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">ترجمة المثال بالعربية</label>
+                <label className="text-xs font-bold text-white">{t('avm.exampleArLabel')}</label>
                 <input
                   type="text"
                   value={exampleAr}
                   onChange={e => setExampleAr(e.target.value)}
-                  placeholder="حقق العلماء اختراقاً طبياً هاماً."
+                  placeholder={t('avm.exampleArPlaceholder')}
                   className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs"
                 />
               </div>
@@ -364,7 +369,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               type="submit"
               className="w-full py-3 rounded-xl bg-[#c4ff55] text-[#09091a] font-black text-sm hover:bg-[#d4ff75] transition-all cursor-pointer"
             >
-              حفظ وتثبيت الكلمة في القاعدة
+              {t('avm.saveBtn')}
             </button>
           </form>
         )}
@@ -373,7 +378,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
         {activeTab === 'bulk' && (
           <div className="space-y-4">
             <p className="text-xs text-white/70">
-              ألصق مصفوفة JSON تحتوي على كائنات الكلمات بصيغة <code>[&#123; "headword": "...", "meaningAr": "...", "cefr": "B1" &#125;]</code>.
+              {t('avm.bulkIntro')} <code>[&#123; "headword": "...", "meaningAr": "...", "cefr": "B1" &#125;]</code>.
             </p>
 
             <textarea
@@ -398,12 +403,12 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             {bulkStatus && (
               <div
                 className={`p-3 rounded-xl text-xs font-bold flex items-center gap-2 border ${
-                  bulkStatus.startsWith('تم')
+                  bulkOk
                     ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
                     : 'bg-red-500/20 text-red-400 border-red-500/40'
                 }`}
               >
-                {bulkStatus.startsWith('تم') ? (
+                {bulkOk ? (
                   <CheckCircle2 className="w-4 h-4 shrink-0" />
                 ) : (
                   <AlertCircle className="w-4 h-4 shrink-0" />
@@ -418,7 +423,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               disabled={!bulkData.trim()}
               className="w-full py-3 rounded-xl bg-[#ffd166] text-[#09091a] font-black text-sm hover:bg-[#ffe18d] transition-all cursor-pointer disabled:opacity-40"
             >
-              بدء الاستيراد والتحقق الفوري
+              {t('avm.bulkBtn')}
             </button>
           </div>
         )}
