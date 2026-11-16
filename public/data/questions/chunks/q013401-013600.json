@@ -1,0 +1,3546 @@
+[
+ {
+  "id": "q-grm1-012601",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ going to travel in July.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "are",
+   "is",
+   "am"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: are.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012602",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Look at the clouds! It _____ going to rain.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "does",
+   "am"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: is.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012603",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ going to learn German next year.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "do",
+   "is",
+   "am"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: am.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012604",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ you going to come?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Do",
+   "Is",
+   "Are",
+   "Am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: Are.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012605",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "What are you going to _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "doing",
+   "do",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: do.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012606",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She isn't going to _____ the job.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "takes",
+   "take",
+   "took",
+   "taking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: take.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012607",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The baby is going to _____! She looks sleepy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "slept",
+   "sleep",
+   "sleeping",
+   "sleeps"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: sleep.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012608",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They aren't going to _____ the match.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watches",
+   "watch",
+   "watched",
+   "watching"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: watch.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012609",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Is he going to _____ us?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "joins",
+   "joined",
+   "joining",
+   "join"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: join.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012610",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Where _____ they going to stay?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "does",
+   "are",
+   "do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: are.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012611",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My parents _____ going to buy a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "am",
+   "are",
+   "do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: are.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012612",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is going _____ his friends tonight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to meet",
+   "meet",
+   "meeting",
+   "meets"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: to meet.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012613",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I going to study.",
+   "I'm go to study.",
+   "I'm going study.",
+   "I'm going to study."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: I'm going to study..",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012614",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She going to cook.",
+   "She is go to cook.",
+   "She is going cook.",
+   "She is going to cook."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: She is going to cook..",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012615",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Are you going to travel?",
+   "Are you go to travel?",
+   "Do you going to travel?",
+   "You are going to travel?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: Are you going to travel?.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012616",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He not going to come.",
+   "He isn't go to come.",
+   "He isn't going to come.",
+   "He doesn't going to come."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: He isn't going to come..",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012617",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"They are going to play\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012618",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I am going to buys a car\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I am going to buy a car. am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012619",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He going to travel\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He is going to travel. am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012620",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Are they going to win?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012621",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My brother is _____ than me. (tall)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "tallest",
+   "taller",
+   "more tall",
+   "tall"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: taller.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012622",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This book is _____ than that one. (interesting)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "interestinger",
+   "most interesting",
+   "more interesting",
+   "interesting"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: more interesting.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012623",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Cairo is _____ than Mansoura. (big)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "bigger",
+   "biger",
+   "biggest",
+   "more big"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: bigger.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012624",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Today is _____ than yesterday. (hot)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hoter",
+   "hotter",
+   "more hot",
+   "hottest"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: hotter.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012625",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This exam is _____ than the last one. (easy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "easier",
+   "easyer",
+   "more easy",
+   "easiest"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: easier.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012626",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My new phone is _____ than my old one. (good)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more good",
+   "best",
+   "gooder",
+   "better"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: better.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012627",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The weather today is _____ than yesterday. (bad)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more bad",
+   "badder",
+   "worst",
+   "worse"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: worse.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012628",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "A car is _____ than a bike. (fast)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "fast",
+   "faster",
+   "more fast",
+   "fastest"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: faster.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012629",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "English is _____ than Chinese for me. (easy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "easyer",
+   "easier",
+   "easiest",
+   "more easy"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: easier.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012630",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My room is _____ than yours. (small)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "smallest",
+   "smaller",
+   "small",
+   "more small"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: smaller.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012631",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This bag is _____ than that bag. (expensive)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "expensive",
+   "expensiver",
+   "most expensive",
+   "more expensive"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: more expensive.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012632",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Ali is _____ than his brother. (old)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more old",
+   "old",
+   "older",
+   "oldest"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: older.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012633",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is _____ than me at math. (clever)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cleverest",
+   "cleverer",
+   "more cleverer",
+   "clever"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: cleverer.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012634",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This street is _____ than that one. (narrow)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "narrow",
+   "more narrow",
+   "narrowest",
+   "narrower"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: narrower.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012635",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Summer is _____ than winter in Egypt. (long)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "long",
+   "more long",
+   "longer",
+   "longest"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: longer.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012636",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My bag is _____ than your bag. (heavy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more heavy",
+   "heaviest",
+   "heavier",
+   "heavyer"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: heavier.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012637",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This film is _____ than that one. (boring)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "most boring",
+   "boring",
+   "more boring",
+   "boringer"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: more boring.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012638",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Planes are _____ than trains. (fast)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more fast",
+   "fastest",
+   "fastly",
+   "faster"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: faster.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012639",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I feel _____ today than yesterday. (happy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more happy",
+   "happier",
+   "happyer",
+   "happiest"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: happier.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012640",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He drives _____ than his father. (carefully)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "carefully",
+   "more carefully",
+   "carefuller",
+   "most carefully"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: more carefully.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012641",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Tea is _____ than coffee for me. (cheap)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more cheap",
+   "cheaper",
+   "cheapest",
+   "cheap"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: cheaper.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012642",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My city is _____ than yours. (noisy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "noisier",
+   "more noisy",
+   "noisyer",
+   "noisiest"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: noisier.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012643",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is tallest than me.",
+   "She is taller that me.",
+   "She is more tall than me.",
+   "She is taller than me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: She is taller than me..",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012644",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This test is easyer than the last one.",
+   "This test is easiest than the last one.",
+   "This test is more easy than the last one.",
+   "This test is easier than the last one."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: This test is easier than the last one..",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012645",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Gold is most expensive than silver.",
+   "Gold is more expensiver than silver.",
+   "Gold is expensiver than silver.",
+   "Gold is more expensive than silver."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: Gold is more expensive than silver..",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012646",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "My food is more good than yours.",
+   "My food is best than yours.",
+   "My food is gooder than yours.",
+   "My food is better than yours."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: My food is better than yours..",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012647",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Mount Everest is highest than Mount Sinai.",
+   "Mount Everest is high than Mount Sinai.",
+   "Mount Everest is more high than Mount Sinai.",
+   "Mount Everest is higher than Mount Sinai."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: Mount Everest is higher than Mount Sinai..",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012648",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is most careful than me.",
+   "He is carefulest than me.",
+   "He is carefuller than me.",
+   "He is more careful than me."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse. الإجابة الصحيحة: He is more careful than me..",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012649",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"More taller\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح taller لأن tall قصيرة وبنضيف er بس. الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012650",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Better\" is the comparative of \"good\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012651",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Beautifuler\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح more beautiful لأن الصفة طويلة. الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012652",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Worse\" is the comparative of \"bad\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الصفة القصيرة بنضيف er + than. الصفة الطويلة بنستخدم more + صفة + than. وبعض الصفات شاذة مثل good-better وbad-worse.",
+  "topic": "Grammar: comparative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012653",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is _____ boy in the class. (tall)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "taller",
+   "tallest",
+   "the tallest",
+   "more tall"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the tallest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012654",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is _____ film I have ever seen. (good)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the best",
+   "the most good",
+   "better",
+   "the goodest"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the best.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012655",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "That was _____ day of my life. (bad)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the worst",
+   "the baddest",
+   "worse",
+   "the most bad"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the worst.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012656",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is _____ student in our school. (clever)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cleverer",
+   "the cleverest",
+   "the more clever",
+   "clever"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the cleverest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012657",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Cairo is _____ city in Egypt. (big)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the most big",
+   "the biggest",
+   "biggest than",
+   "the bigger"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the biggest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012658",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It is _____ hotel in town. (expensive)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the most expensive",
+   "the expensivest",
+   "the more expensive",
+   "most expensive of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the most expensive.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012659",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "August is _____ month of the year here. (hot)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the most hot",
+   "hotter",
+   "the hotest",
+   "the hottest"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the hottest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012660",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is _____ exercise in the book. (easy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "easier",
+   "the easyest",
+   "the most easy",
+   "the easiest"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the easiest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012661",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is _____ person I know. (kind)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the kindest",
+   "the kinder",
+   "the most kind",
+   "kindest than"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the kindest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012662",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is _____ mobile in the shop. (cheap)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the most cheap",
+   "the cheapest",
+   "cheapest than",
+   "the cheaper"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the cheapest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012663",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The Nile is _____ river in Egypt. (long)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the longest",
+   "longest",
+   "the most long",
+   "the longer"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the longest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012664",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is _____ dancer in the show. (beautiful)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the beautifulest",
+   "beautifullest",
+   "the most beautiful",
+   "the more beautiful"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the most beautiful.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012665",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Ali is _____ of all my friends. (young)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the youngest",
+   "youngest than",
+   "the younger",
+   "the most young"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the youngest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012666",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It was _____ story I have read. (interesting)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the more interesting",
+   "interestingest",
+   "the interestingest",
+   "the most interesting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the most interesting.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012667",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is _____ road to the city. (short)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "shortest than",
+   "the shorter",
+   "the most short",
+   "the shortest"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the shortest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012668",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Who is _____ in your family? (old)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the most old",
+   "the older",
+   "oldest than",
+   "the oldest"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the oldest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012669",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "That was _____ meal of the week. (delicious)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "the more delicious",
+   "the deliciousest",
+   "the most delicious",
+   "delicious"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the most delicious.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012670",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Today is _____ day of the year. (cold)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "coldest than",
+   "the colder",
+   "the most cold",
+   "the coldest"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: the coldest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012671",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She is the taller girl in the class.",
+   "She is tallest girl in the class.",
+   "She is the most tall girl in the class.",
+   "She is the tallest girl in the class."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: She is the tallest girl in the class..",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012672",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "This is the most good pizza in town.",
+   "This is the better pizza in town.",
+   "This is the goodest pizza in town.",
+   "This is the best pizza in town."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: This is the best pizza in town..",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012673",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is the more intelligent student.",
+   "He is most intelligent student the.",
+   "He is the intelligentest student.",
+   "He is the most intelligent student."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: He is the most intelligent student..",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012674",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It's the most bad day ever.",
+   "It's the worse day ever.",
+   "It's the baddest day ever.",
+   "It's the worst day ever."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: It's the worst day ever..",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012675",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The Pyramids are the more famous place in Egypt.",
+   "The Pyramids are famousest place in Egypt.",
+   "The Pyramids are the famousest place in Egypt.",
+   "The Pyramids are the most famous place in Egypt."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest. الإجابة الصحيحة: The Pyramids are the most famous place in Egypt..",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012676",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"The most good\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح the best. الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012677",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"The tallest\" is correct for the highest of many people.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012678",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"The most beautiful\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن beautiful طويلة. الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012679",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"The baddest\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح the worst. الصفة القصيرة the + est. الصفة الطويلة the most + صفة. وشاذ: good-best, bad-worst, far-farthest.",
+  "topic": "Grammar: superlative adjectives (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012680",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "How _____ eggs do you need?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "any",
+   "many",
+   "much",
+   "a lot"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: many.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012681",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "How _____ water do you drink?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "few",
+   "a lot",
+   "many",
+   "much"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012682",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We don't have _____ time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "few",
+   "a few",
+   "much",
+   "many"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012683",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There aren't _____ chairs in the room.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "a little",
+   "much",
+   "little"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: many.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012684",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She has _____ friends. (a big number)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "little",
+   "a little",
+   "a lot of"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: a lot of.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012685",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I haven't got _____ money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "many",
+   "few",
+   "a few"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012686",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "How _____ students are in your class?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "a lot",
+   "little",
+   "much"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: many.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012687",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There is _____ traffic in Cairo.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "a lot of",
+   "a few",
+   "few"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: a lot of.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012688",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Do you eat _____ meat?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "few",
+   "a few",
+   "many"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012689",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He doesn't eat _____ vegetables.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a little",
+   "much",
+   "many",
+   "little"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: many.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012690",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We have _____ homework today. (a large amount)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "few",
+   "a lot of",
+   "a few"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: a lot of.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012691",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "How _____ is this T-shirt?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "a lot",
+   "few",
+   "much"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012692",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There are _____ people at the party.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "a little",
+   "little",
+   "a lot of"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: a lot of.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012693",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I don't drink _____ coffee.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "many",
+   "much",
+   "few"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012694",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "How _____ brothers do you have?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "little",
+   "a lot",
+   "many"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: many.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012695",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She doesn't have _____ free time.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "few",
+   "many",
+   "much"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: much.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012696",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They have _____ money. They are rich.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "many",
+   "few",
+   "a lot of"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: a lot of.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012697",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Are there _____ shops near your house?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "little",
+   "much",
+   "a little"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: many.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012698",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't have much times.",
+   "I don't have a lot time.",
+   "I don't have many time.",
+   "I don't have much time."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: I don't have much time..",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012699",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "How many pens do you have?",
+   "How much pen do you have?",
+   "How much pens do you have?",
+   "How many pen do you have?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: How many pens do you have?.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012700",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "How much sugar do you want?",
+   "How many sugars do you want?",
+   "How many sugar do you want?",
+   "How much sugars do you want?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: How much sugar do you want?.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012701",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "There are much cars in the street.",
+   "There is much cars in the street.",
+   "There is a lot of cars in the street.",
+   "There are a lot of cars in the street."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: There are a lot of cars in the street..",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012702",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She has many friend.",
+   "She has much friend.",
+   "She has much friends.",
+   "She has many friends."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: She has many friends..",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012703",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We drink many water.",
+   "We drink a lots of water.",
+   "We drink a lot water.",
+   "We drink a lot of water."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات. الإجابة الصحيحة: We drink a lot of water..",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012704",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Much\" is used with uncountable nouns.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012705",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"How many water?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح How much water? لأن water غير معدود. many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012706",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Many\" is used with countable nouns.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012707",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I have much friends\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I have many friends أو a lot of friends. many مع المعدود، much مع غير المعدود في النفي والأسئلة، وa lot of مع الاتنين في الإثبات.",
+  "topic": "Grammar: much, many, a lot of (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012708",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have _____ friends in this city. (some, not many)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "much",
+   "many",
+   "a little"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012709",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There is _____ milk in the fridge. (a small amount)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "few",
+   "a few",
+   "a little",
+   "many"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012710",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She has _____ time to talk. (almost none)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "few",
+   "little",
+   "a few",
+   "many"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012711",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He bought _____ apples. (a small number)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "a little",
+   "much",
+   "little"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012712",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We need _____ sugar for the cake.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a little",
+   "many",
+   "a few",
+   "few"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012713",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There are _____ people here. It is almost empty.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a little",
+   "much",
+   "little",
+   "few"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012714",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Can I have _____ water, please?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "few",
+   "many",
+   "a little",
+   "a few"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012715",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There are _____ pens in my bag.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "little",
+   "much",
+   "a little"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012716",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He has _____ money. He can't buy a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "few",
+   "little",
+   "a few"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012717",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I know _____ people in Cairo. I am almost alone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "a little",
+   "few",
+   "little"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012718",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Add _____ salt to the soup.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "a little",
+   "a few",
+   "few"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012719",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There are _____ students in the room. Let's start.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a little",
+   "little",
+   "much",
+   "a few"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012720",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We have _____ bread. We need to buy more.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "many",
+   "a few",
+   "little",
+   "few"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012721",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She has _____ close friends. They are very important to her.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "a little",
+   "little",
+   "much"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a few.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012722",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Would you like _____ more tea?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "many",
+   "a little",
+   "few"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: a little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012723",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There's _____ hope. I think we will lose.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a few",
+   "few",
+   "many",
+   "little"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: little.",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012724",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I need a few egg.",
+   "I need a little egg.",
+   "I need a little eggs.",
+   "I need a few eggs."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: I need a few eggs..",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012725",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She drinks a littles coffee.",
+   "She drinks few a coffee.",
+   "She drinks a few coffee.",
+   "She drinks a little coffee."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: She drinks a little coffee..",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012726",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "There is few tourists in winter.",
+   "There are a little tourists in winter.",
+   "There are little tourists in winter.",
+   "There are few tourists in winter."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: There are few tourists in winter..",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012727",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He has a few time.",
+   "He has littles time.",
+   "He has few time.",
+   "He has little time."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\". الإجابة الصحيحة: He has little time..",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012728",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"A few\" is used with countable nouns.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\".",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012729",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"A little\" is used with uncountable nouns.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\".",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012730",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"A little books\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح a few books لأن books معدودة. a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\".",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012731",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"A few sugar\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح a little sugar لأن sugar غير معدود. a few مع المعدود، a little مع غير المعدود، ومعناهم \"شوية\". few وlittle بدون a معناهم \"قليل جدا تقريبا مفيش\".",
+  "topic": "Grammar: a few, a little, few, little (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012732",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ wear a seat belt in the car. (rule)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "would",
+   "may",
+   "must",
+   "can"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: must.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012733",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ use your phone in the exam. (forbidden)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "can",
+   "should",
+   "mustn't",
+   "don't have to"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: mustn't.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012734",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ get up early on school days. (I am obliged)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "having to",
+   "must to",
+   "has to",
+   "have to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012735",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ work on Fridays. (it is not necessary)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "mustn't",
+   "can't to",
+   "don't have to",
+   "doesn't have to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: doesn't have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012736",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ touch that wire! It is dangerous.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "mustn't",
+   "don't have to",
+   "doesn't have to",
+   "can"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: mustn't.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012737",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ wear a uniform at school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has to",
+   "having to",
+   "have to",
+   "must to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: has to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012738",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ be late for the meeting.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't have to",
+   "doesn't have to",
+   "mustn't",
+   "can"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: mustn't.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012739",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Students _____ do the homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "should to",
+   "can to",
+   "must",
+   "doesn't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: must.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012740",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ pay. It's free.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "must",
+   "can't to",
+   "don't have to",
+   "mustn't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: don't have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012741",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Do you _____ wear a tie at work?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has to",
+   "have to",
+   "having to",
+   "must to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012742",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ stay at home. She is ill.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "must to",
+   "has to",
+   "having to",
+   "have to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: has to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012743",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ park here. It's forbidden.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "haven't",
+   "mustn't",
+   "doesn't have to",
+   "don't have to"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: mustn't.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012744",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Drivers _____ stop at red lights.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "should to",
+   "can to",
+   "must",
+   "doesn't"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: must.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012745",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ cook. His wife cooks for him.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "doesn't have to",
+   "mustn't",
+   "can't to",
+   "must"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: doesn't have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012746",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ bring their own food. We provide it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "mustn't",
+   "don't have to",
+   "can't",
+   "must"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: don't have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012747",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ leave now. The train is leaving.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "has to",
+   "must to",
+   "having to",
+   "have to"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: have to.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012748",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "You musts be quiet.",
+   "You must being quiet.",
+   "You must to be quiet.",
+   "You must be quiet."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: You must be quiet..",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012749",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She has study.",
+   "She must to study.",
+   "She have to study.",
+   "She has to study."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: She has to study..",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012750",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I don't must go.",
+   "I mustn't to go.",
+   "I haven't to go.",
+   "I don't have to go."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: I don't have to go..",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012751",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Do you have to leave now?",
+   "Do you must leave now?",
+   "Have you to leave now?",
+   "Must you to leave now?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: Do you have to leave now?.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012752",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "You mustn't to smoke here.",
+   "You don't must smoke here.",
+   "You mustn't smoking here.",
+   "You mustn't smoke here."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم. الإجابة الصحيحة: You mustn't smoke here..",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012753",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Mustn't\" means it is not necessary.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. mustn't معناها ممنوع، لكن don't have to معناها مش لازم. must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012754",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Don't have to\" means you are free to choose.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012755",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He have to work\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He has to work. must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012756",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"You must be on time\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. must للإلزام، mustn't للمنع، have to للإلزام من قانون أو ظرف، وdon't have to معناها مش لازم.",
+  "topic": "Grammar: must, mustn't, have to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012757",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ see a doctor. You look ill.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "must to",
+   "do",
+   "should",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012758",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ eat too much sugar. It's bad for you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "should",
+   "aren't",
+   "shouldn't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012759",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ study more for the exam.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "does",
+   "should",
+   "shoulds"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012760",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They should _____ earlier.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "leaving",
+   "to leave",
+   "leave",
+   "leaves"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: leave.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012761",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I think you _____ talk to your teacher.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "should",
+   "shoulds",
+   "would to",
+   "are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012762",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ drink more water.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "are",
+   "should",
+   "shoulds"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012763",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She shouldn't _____ so late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "to sleep",
+   "sleeps",
+   "sleep",
+   "sleeping"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: sleep.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012764",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ I call him now?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Am",
+   "Should",
+   "Does",
+   "Do"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: Should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012765",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ watch TV all day. It's not healthy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "aren't",
+   "shouldn't",
+   "don't",
+   "should"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012766",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "What _____ I do?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "should",
+   "shoulds",
+   "am"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012767",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You look tired. You _____ go to bed early.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "should",
+   "are",
+   "shoulds"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012768",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "People _____ throw rubbish in the street.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "should",
+   "shouldn't",
+   "don't",
+   "aren't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012769",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ be more careful.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "should",
+   "shoulds",
+   "is",
+   "does"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012770",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You should _____ your teeth after meals.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "brush",
+   "to brush",
+   "brushes",
+   "brushing"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: brush.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012771",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You _____ drive fast in the city.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "aren't",
+   "should",
+   "don't",
+   "shouldn't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012772",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Students _____ listen to their teachers.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "should",
+   "shoulds",
+   "does",
+   "are"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: should.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012773",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "You should rests.",
+   "You shoulds rest.",
+   "You should to rest.",
+   "You should rest."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: You should rest..",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012774",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He shouldn't to go alone.",
+   "He doesn't should go alone.",
+   "He shouldn't goes alone.",
+   "He shouldn't go alone."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: He shouldn't go alone..",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012775",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Should we wait?",
+   "We should wait?",
+   "Do we should wait?",
+   "Should we to wait?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: Should we wait?.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012776",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I think we should to leave.",
+   "I think we shoulds leave.",
+   "I think we should leaving.",
+   "I think we should leave."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: I think we should leave..",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012777",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the best advice for: \"I have a headache.\"",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "You should to take a rest.",
+   "You should take a rest.",
+   "You shouldn't take a rest.",
+   "You should running."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't. الإجابة الصحيحة: You should take a rest..",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012778",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She shoulds study\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She should study لأن should مبتاخدش s. should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012779",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"You should to go\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح You should go بدون to. should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012780",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"You should eat vegetables\" is a piece of advice.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، should للنصيحة. should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012781",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He shouldn't be late\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. should للنصيحة وبعدها الفعل الأصلي بدون to. النفي shouldn't.",
+  "topic": "Grammar: should and shouldn't (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012782",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She speaks English _____. (slow)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "slow",
+   "slowing",
+   "slowlyly",
+   "slowly"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: slowly.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012783",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He drives very _____. (careful)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "carefully",
+   "carefulling",
+   "careful",
+   "carefuly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: carefully.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012784",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They worked _____ and finished early. (hard)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hard",
+   "harder",
+   "hardy",
+   "hardly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: hard.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012785",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She sings _____. (good)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "well",
+   "best",
+   "good",
+   "goodly"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: well.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012786",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The baby sleeps _____. (quiet)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "quieting",
+   "quiet",
+   "quietty",
+   "quietly"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: quietly.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012787",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He ran _____ to catch the bus. (fast)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "fastly",
+   "fasting",
+   "faster than",
+   "fast"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: fast.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012788",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Please speak _____. (clear)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "clearry",
+   "clear",
+   "clearing",
+   "clearly"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: clearly.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012789",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The students listened _____. (careful)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "carefully",
+   "carefuly",
+   "careful",
+   "care"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: carefully.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012790",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She dances _____. (beautiful)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "beautiful",
+   "beautifuller",
+   "beautifuly",
+   "beautifully"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: beautifully.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012791",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He answered the question _____. (easy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "easier",
+   "easyly",
+   "easily",
+   "easy"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: easily.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012792",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My sister plays the piano _____. (bad)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "badely",
+   "bad",
+   "badly",
+   "worse"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: badly.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012793",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They walked _____ in the dark. (nervous)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "nervously",
+   "nervousy",
+   "nervousing",
+   "nervous"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: nervously.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012794",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is a good driver. He drives _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "best",
+   "goodly",
+   "well",
+   "good"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: well.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012795",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The teacher spoke _____. (angry)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "angryly",
+   "angry",
+   "angrier",
+   "angrily"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: angrily.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012796",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It rained _____ all night. (heavy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "heavier",
+   "heavy",
+   "heavily",
+   "heavyly"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: heavily.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012797",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She opened the door _____. (quick)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "quickly",
+   "quicker",
+   "quickky",
+   "quick"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: quickly.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012798",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He learns _____. (fast)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "more fast",
+   "fastly",
+   "fast",
+   "fasting"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: fast.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012799",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The children played _____. (happy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "happier",
+   "happy",
+   "happyly",
+   "happily"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: happily.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012800",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You must work _____ for the exam. (hard)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hardly",
+   "hardy",
+   "harder",
+   "hard"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: hard.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]

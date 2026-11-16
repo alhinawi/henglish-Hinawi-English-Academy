@@ -1,0 +1,3544 @@
+[
+ {
+  "id": "q-grm1-012401",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ you at home last night?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Was",
+   "Is",
+   "Are",
+   "Were"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: Were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012402",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "_____ she at school yesterday?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Were",
+   "Is",
+   "Was",
+   "Are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: Was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012403",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I _____ not at home on Monday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "am",
+   "was",
+   "were"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012404",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They _____ not ready.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "isn't",
+   "weren't",
+   "aren't",
+   "wasn't"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: weren't.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012405",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The shops _____ closed yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "was",
+   "were",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012406",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Where _____ you last Friday?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "were",
+   "are",
+   "is"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: were.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012407",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The exam _____ very difficult.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "is",
+   "was",
+   "were"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: was.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012408",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I am late yesterday.",
+   "I be late yesterday.",
+   "I were late yesterday.",
+   "I was late yesterday."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: I was late yesterday..",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012409",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We are in Alexandria yesterday.",
+   "We be in Alexandria.",
+   "We was in Alexandria.",
+   "We were in Alexandria."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: We were in Alexandria..",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012410",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Was he at work?",
+   "Is he at work yesterday?",
+   "Were he at work?",
+   "Did he at work?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: Was he at work?.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012411",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Were they happy?",
+   "Are they happy yesterday?",
+   "Was they happy?",
+   "Did they happy?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: Were they happy?.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012412",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She not was at school.",
+   "She didn't at school.",
+   "She wasn't at school.",
+   "She weren't at school."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: She wasn't at school..",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012413",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct short answer to: Were you at home?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, I did.",
+   "Yes, I was.",
+   "Yes, I am.",
+   "Yes, I were."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع. الإجابة الصحيحة: Yes, I was..",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012414",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"They was happy\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح They were happy. الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012415",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He was a doctor\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012416",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"You was late\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح You were late. الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012417",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"We were tired\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الماضي من to be: was مع I/he/she/it، وwere مع you/we/they والجمع.",
+  "topic": "Grammar: was and were (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012418",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I like _____ football. (play)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "plays",
+   "play",
+   "played",
+   "playing"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: playing.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012419",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She loves _____ books. (read)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "readed",
+   "reads",
+   "reading",
+   "read"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: reading.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012420",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He hates _____ early. (get up)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "get up",
+   "getting up",
+   "gets up",
+   "got up"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: getting up.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012421",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We enjoy _____ in the sea. (swim)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "swim",
+   "swimming",
+   "swims",
+   "swiming"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: swimming.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012422",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They like _____ TV in the evening. (watch)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watches",
+   "watch",
+   "watched",
+   "watching"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: watching.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012423",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My mother loves _____. (cook)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cooks",
+   "cooked",
+   "cooking",
+   "cook"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: cooking.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012424",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I don't like _____ in the rain. (walk)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "walked",
+   "walks",
+   "walking",
+   "walk"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: walking.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012425",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Do you like _____ pictures? (draw)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "draws",
+   "drawing",
+   "draw",
+   "drawed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: drawing.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012426",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "She hates _____ the dishes. (wash)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wash",
+   "washing",
+   "washed",
+   "washes"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: washing.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012427",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "He loves _____ to music. (listen)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "listening",
+   "listens",
+   "listen",
+   "listened"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: listening.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012428",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "We like _____ new places. (visit)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "visited",
+   "visit",
+   "visits",
+   "visiting"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: visiting.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012429",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "Ahmed doesn't like _____ vegetables. (eat)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "eat",
+   "eating",
+   "ate",
+   "eats"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: eating.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012430",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "I enjoy _____ with my friends. (talk)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "talking",
+   "talks",
+   "talked",
+   "talk"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: talking.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012431",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "They hate _____ in traffic. (sit)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sit",
+   "sitting",
+   "sat",
+   "sits"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: sitting.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012432",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "My brother likes _____ his bike. (ride)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ride",
+   "riding",
+   "rode",
+   "rides"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: riding.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012433",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I like swims.",
+   "I like swimed.",
+   "I like swim.",
+   "I like swimming."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: I like swimming..",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012434",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She loves dances.",
+   "She loves danceing.",
+   "She loves dance.",
+   "She loves dancing."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: She loves dancing..",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012435",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He hates cleans.",
+   "He hates cleaned.",
+   "He hates clean.",
+   "He hates cleaning."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: He hates cleaning..",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012436",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We enjoy cooks together.",
+   "We enjoy cooked together.",
+   "We enjoy cook together.",
+   "We enjoy cooking together."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها. الإجابة الصحيحة: We enjoy cooking together..",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012437",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"I like play football\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I like playing football. بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012438",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"She loves singing\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012439",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"He hates to run\" can also be correct English.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، بعد hate ممكن نستخدم to + فعل كمان لكن الشكل ing شائع جدا. بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012440",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "\"We enjoy to swim\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. بعد enjoy لازم الفعل + ing: We enjoy swimming. بعد like وlove وhate بنقدر نستخدم الفعل + ing للكلام عن الهوايات والأشياء اللي بنحبها أو بنكرهها.",
+  "topic": "Grammar: like/love/hate + ing (A1)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012441",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ football yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "play",
+   "playing",
+   "played",
+   "plays"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: played.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012442",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ the door a minute ago.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "opening",
+   "opens",
+   "open",
+   "opened"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: opened.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012443",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ in Alexandria last year.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "live",
+   "living",
+   "lives",
+   "lived"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: lived.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012444",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ for the bus for ten minutes.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "waiting",
+   "wait",
+   "waited",
+   "waits"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: waited.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012445",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ English last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "study",
+   "studied",
+   "studyed",
+   "studies"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: studied.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012446",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My mother _____ dinner yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cooked",
+   "cooking",
+   "cook",
+   "cooks"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: cooked.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012447",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The baby _____ all night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "cry",
+   "cried",
+   "cries",
+   "cryed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: cried.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012448",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ my teeth this morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "brushed",
+   "brushs",
+   "brushing",
+   "brush"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: brushed.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012449",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ a lot of photos on the trip.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "took",
+   "takes",
+   "take",
+   "taked"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: took.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012450",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The film _____ at eight o'clock last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "start",
+   "starting",
+   "started",
+   "starts"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: started.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012451",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ his homework before dinner.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "finishes",
+   "finished",
+   "finishing",
+   "finish"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: finished.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012452",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ a taxi to the airport.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "called",
+   "call",
+   "calls",
+   "calling"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: called.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012453",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The students _____ the answers.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "checks",
+   "checked",
+   "check",
+   "checking"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: checked.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012454",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ him about the problem.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "asks",
+   "asking",
+   "asked",
+   "ask"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: asked.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012455",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ the room yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "clean",
+   "cleaned",
+   "cleaning",
+   "cleans"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: cleaned.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012456",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ the bus to school last week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "missed",
+   "missing",
+   "miss",
+   "misses"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: missed.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012457",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The shop _____ at ten last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "closing",
+   "closes",
+   "close",
+   "closed"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: closed.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012458",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ to his friend on the phone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "talks",
+   "talking",
+   "talk",
+   "talked"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: talked.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012459",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My father _____ his car last Sunday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "washes",
+   "washing",
+   "wash",
+   "washed"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: washed.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012460",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ the concert very much.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "enjoyed",
+   "enjoying",
+   "enjoy",
+   "enjoys"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: enjoyed.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012461",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The boy _____ across the street quickly.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hurries",
+   "hurryed",
+   "hurry",
+   "hurried"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: hurried.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012462",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ her keys in the taxi.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drop",
+   "dropped",
+   "drops",
+   "droped"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: dropped.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012463",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"stop\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "stopt",
+   "stoped",
+   "stoping",
+   "stopped"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: stopped.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012464",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"plan\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "plans",
+   "planed",
+   "planning",
+   "planned"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: planned.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012465",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"carry\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "carryed",
+   "carried",
+   "caryed",
+   "carrys"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: carried.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012466",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"love\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "loveed",
+   "loved",
+   "loving",
+   "lovd"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: loved.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012467",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"visit\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "visiting",
+   "visit",
+   "visitted",
+   "visited"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: visited.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012468",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"study\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "studys",
+   "studing",
+   "studyed",
+   "studied"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: studied.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012469",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"play\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "played",
+   "plays",
+   "plad",
+   "plaied"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: played.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012470",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"decide\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "deciding",
+   "decided",
+   "decideed",
+   "decid"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied. الإجابة الصحيحة: decided.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012471",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He studyed hard\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح studied لأن y بتتحول لـ ied بعد حرف ساكن. الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012472",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She visited her aunt\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012473",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"They plaied outside\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح played لأن قبل y حرف علة فبنضيف ed بس. الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012474",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"We stopped at the red light\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح لأن بنكرر p بعد حرف علة قصير. الماضي البسيط للأفعال العادية: بنضيف ed. لو الفعل بينتهي بـ e بنضيف d. ولو بينتهي بحرف ساكن + y بنحول y لـ ied.",
+  "topic": "Grammar: past simple regular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012475",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ to the cinema yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "go",
+   "goed",
+   "went",
+   "gone"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: went.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012476",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ a new dress last week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "buys",
+   "buyed",
+   "buy",
+   "bought"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012477",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ the match on TV.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "saw",
+   "see",
+   "seen",
+   "seed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: saw.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012478",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ a letter to his friend.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "written",
+   "write",
+   "wrote",
+   "writed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: wrote.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012479",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ pizza for lunch.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "eaten",
+   "eat",
+   "eated",
+   "ate"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: ate.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012480",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ my keys at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "leave",
+   "leaved",
+   "left",
+   "leaves"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: left.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012481",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ me a gift on my birthday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "gave",
+   "given",
+   "give",
+   "gived"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: gave.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012482",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The children _____ a lot of water.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drinked",
+   "drunk",
+   "drank",
+   "drink"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: drank.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012483",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My dad _____ me to school yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drive",
+   "drove",
+   "driven",
+   "drived"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: drove.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012484",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ the answer right away.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "knew",
+   "knowed",
+   "known",
+   "know"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: knew.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012485",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ a taxi to the hotel.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "taken",
+   "take",
+   "taked",
+   "took"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: took.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012486",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ a strange noise last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "hear",
+   "heared",
+   "hears",
+   "heard"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: heard.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012487",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ up at six o'clock.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wake",
+   "woke",
+   "woken",
+   "waked"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: woke.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012488",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ to the airport by bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "came",
+   "come",
+   "comed",
+   "came to"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: came.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012489",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ his bag on the chair.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "putted",
+   "puts",
+   "put",
+   "putting"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: put.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012490",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The teacher _____ us a story.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "told",
+   "tell",
+   "tells",
+   "telled"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: told.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012491",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ my friend at the park.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "meet",
+   "met",
+   "meets",
+   "meeted"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: met.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012492",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ the whole book in one day.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "reads",
+   "reading",
+   "read",
+   "readed"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: read.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012493",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ the glass and it broke.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "drop",
+   "dropping",
+   "dropped",
+   "drops"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: dropped.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012494",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ lunch at the school canteen.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "have",
+   "had",
+   "has",
+   "haved"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: had.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012495",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My sister _____ a beautiful song.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "sing",
+   "sang",
+   "sung",
+   "singed"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: sang.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012496",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The sun _____ at five this morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "rised",
+   "rose",
+   "rise",
+   "risen"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: rose.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012497",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ my phone on the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "lost",
+   "lose",
+   "losed",
+   "loses"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: lost.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012498",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ in the pool for an hour.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "swam",
+   "swimmed",
+   "swum",
+   "swim"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: swam.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012499",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ very fast to catch the bus.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ran",
+   "run",
+   "runned",
+   "runs"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: ran.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012500",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"go\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "gone",
+   "goed",
+   "went",
+   "going"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: went.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012501",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"buy\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "bought",
+   "buying",
+   "boughted",
+   "buyed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012502",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"see\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "saw",
+   "seen",
+   "seeing",
+   "seed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: saw.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012503",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"eat\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "eated",
+   "ate",
+   "eating",
+   "eaten"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: ate.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012504",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"make\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "maked",
+   "made",
+   "makes",
+   "make"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: made.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012505",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"think\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "thought",
+   "thoughted",
+   "thinks",
+   "thinked"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: thought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012506",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"sit\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "sit",
+   "sitted",
+   "sat",
+   "sits"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: sat.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012507",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"begin\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "begined",
+   "began",
+   "begun",
+   "begins"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: began.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012508",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"bring\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "broughted",
+   "bringed",
+   "brought",
+   "brings"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: brought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012509",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct past simple of \"teach\".",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "taught",
+   "taughted",
+   "teaches",
+   "teached"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought. الإجابة الصحيحة: taught.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012510",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I goed to school\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I went to school لأن go فعل شاذ. في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012511",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She bought a car\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012512",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"They eated rice\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح They ate rice. في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012513",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He saw a bird\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012514",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"We maked a cake\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح We made a cake. في أفعال شاذة ماضيها بيتغير مش بنضيف ed، زي go-went وsee-saw وbuy-bought.",
+  "topic": "Grammar: past simple irregular verbs (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012515",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ go to school yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "didn't",
+   "doesn't",
+   "wasn't",
+   "don't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012516",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She didn't _____ the film.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "like",
+   "liked",
+   "liking",
+   "likes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: like.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012517",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ call me last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "didn't",
+   "weren't",
+   "don't",
+   "doesn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012518",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He didn't _____ his homework.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "does",
+   "did",
+   "done"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: do.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012519",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We didn't _____ the news.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watches",
+   "watch",
+   "watched",
+   "watching"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: watch.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012520",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My brother _____ come to the party.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "doesn't",
+   "isn't",
+   "didn't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012521",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The shop didn't _____ on Friday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "opened",
+   "opening",
+   "open",
+   "opens"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: open.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012522",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I didn't _____ anything yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "buying",
+   "bought",
+   "buys",
+   "buy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: buy.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012523",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ see me at the station.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wasn't",
+   "doesn't",
+   "don't",
+   "didn't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012524",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You didn't _____ me the truth.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "told",
+   "tell",
+   "tells",
+   "telling"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: tell.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012525",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They didn't _____ the way to the hotel.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "finding",
+   "found",
+   "find",
+   "finds"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: find.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012526",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ say a word.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "don't",
+   "didn't",
+   "doesn't",
+   "not"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012527",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ eat breakfast this morning.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "weren't",
+   "don't",
+   "doesn't",
+   "didn't"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012528",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It didn't _____ yesterday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "raining",
+   "rained",
+   "rain",
+   "rains"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: rain.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012529",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I didn't _____ the phone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "answered",
+   "answering",
+   "answers",
+   "answer"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: answer.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012530",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She didn't _____ English at school.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "studying",
+   "study",
+   "studied",
+   "studies"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: study.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012531",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The students _____ finish the test.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "didn't",
+   "doesn't",
+   "aren't",
+   "don't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: didn't.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012532",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Ali didn't _____ to the gym.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "goes",
+   "going",
+   "go",
+   "went"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: go.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012533",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She not go out.",
+   "She doesn't went out.",
+   "She didn't go out.",
+   "She didn't went out."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: She didn't go out..",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012534",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I not see him.",
+   "I don't saw him.",
+   "I didn't see him.",
+   "I didn't saw him."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: I didn't see him..",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012535",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They not win.",
+   "They don't won.",
+   "They didn't win.",
+   "They didn't won."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: They didn't win..",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012536",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He not eat lunch.",
+   "He doesn't ate lunch.",
+   "He didn't eat lunch.",
+   "He didn't ate lunch."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: He didn't eat lunch..",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012537",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We not know.",
+   "We don't knew.",
+   "We didn't know.",
+   "We didn't knew."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: We didn't know..",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012538",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The bus not stop.",
+   "The bus doesn't stopped.",
+   "The bus didn't stop.",
+   "The bus didn't stopped."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر. الإجابة الصحيحة: The bus didn't stop..",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012539",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She didn't went\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She didn't go لأن بعد didn't الفعل بيرجع للأصل. النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012540",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I didn't like it\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012541",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"They didn't played\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح They didn't play. النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012542",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He didn't call\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. النفي في الماضي البسيط بنستخدم didn't + الفعل الأصلي (بدون ed) مع كل الضمائر.",
+  "topic": "Grammar: past simple negative (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012543",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ you go to school yesterday?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Did",
+   "Does",
+   "Do",
+   "Were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012544",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Did she _____ the news?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "watching",
+   "watch",
+   "watched",
+   "watches"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: watch.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012545",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ they visit you last week?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Does",
+   "Do",
+   "Did",
+   "Were"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012546",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Where _____ you go on holiday?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "were",
+   "do",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012547",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "What _____ he buy at the market?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "was",
+   "did",
+   "does"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012548",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Did he _____ the answer?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "knowing",
+   "knew",
+   "knows",
+   "know"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: know.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012549",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "When _____ they arrive?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "were",
+   "does",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012550",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Why _____ she leave early?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "do",
+   "does",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012551",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Who _____ you meet at the party?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "do",
+   "does",
+   "were",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012552",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ it rain last night?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Was",
+   "Did",
+   "Do",
+   "Does"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012553",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "How _____ you get to work?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "were",
+   "does",
+   "do",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012554",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Did your father _____ you a gift?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "give",
+   "gives",
+   "gave",
+   "giving"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: give.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012555",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ we have homework yesterday?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Did",
+   "Were",
+   "Does",
+   "Do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012556",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "What time _____ the film start?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "was",
+   "do",
+   "does",
+   "did"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: did.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012557",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Did they _____ the key?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "found",
+   "finds",
+   "find",
+   "finding"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: find.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012558",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Did you _____ breakfast this morning?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "had",
+   "having",
+   "have",
+   "has"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: have.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012559",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Did you see the match?",
+   "You did see the match?",
+   "Did you saw the match?",
+   "Do you saw the match?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Did you see the match?.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012560",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Did she call you?",
+   "She did call you?",
+   "Did she called you?",
+   "Does she called you?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Did she call you?.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012561",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "What did they eat?",
+   "What do they ate?",
+   "What did they ate?",
+   "What they ate?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: What did they eat?.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012562",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Where did he go?",
+   "Where does he went?",
+   "Where did he went?",
+   "Where he went?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Where did he go?.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012563",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct short answer to: Did you like the film?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, I liked.",
+   "Yes, I do.",
+   "Yes, I was.",
+   "Yes, I did."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: Yes, I did..",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012564",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct short answer to: Did he come?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "No, he wasn't.",
+   "No, he not did.",
+   "No, he didn't.",
+   "No, he doesn't."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't. الإجابة الصحيحة: No, he didn't..",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012565",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Did he went?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح Did he go? لأن بعد did الفعل بيرجع للأصل. السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012566",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Did you eat?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012567",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Where did she live?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012568",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"What did you bought?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح What did you buy? السؤال في الماضي البسيط بنستخدم Did + فاعل + الفعل الأصلي. الإجابة القصيرة Yes, I did / No, I didn't.",
+  "topic": "Grammar: past simple questions (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012569",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I think it _____ rain tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "will",
+   "do",
+   "am"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012570",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ be here at six.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "does",
+   "did",
+   "will"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012571",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ help you with the bags. (decision now)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "am",
+   "do",
+   "did"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012572",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ come to the party next week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "did",
+   "will",
+   "do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012573",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It is cold. I _____ close the window.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "did",
+   "do",
+   "am"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012574",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ pass the exam. He studies hard.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "does",
+   "did",
+   "is"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012575",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We _____ be late. The traffic is terrible.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "do",
+   "will",
+   "are"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012576",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She _____ not tell anyone. (promise)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "will",
+   "is",
+   "did"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012577",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ call you tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "am",
+   "do",
+   "did",
+   "will"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012578",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It _____ be a hot day tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "is",
+   "will",
+   "did",
+   "does"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012579",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "_____ you help me tomorrow?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "Did",
+   "Are",
+   "Will",
+   "Do"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: Will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012580",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I _____ forget your birthday. (promise)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "won't",
+   "didn't",
+   "don't",
+   "am not"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: won't.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012581",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He will _____ us next week.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "visit",
+   "visited",
+   "visits",
+   "visiting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: visit.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012582",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They _____ be happy to see you.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "will",
+   "did",
+   "are",
+   "do"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012583",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The meeting will _____ at nine.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "start",
+   "started",
+   "starts",
+   "starting"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: start.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012584",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I'm sure she _____ like the gift.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "does",
+   "is",
+   "will"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012585",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There _____ be a test on Monday.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "does",
+   "will",
+   "is",
+   "did"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012586",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The phone is ringing. I _____ answer it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "did",
+   "do",
+   "will",
+   "am"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: will.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012587",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I will to see you tomorrow.",
+   "I wills see you tomorrow.",
+   "I will sees you tomorrow.",
+   "I will see you tomorrow."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: I will see you tomorrow..",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012588",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She will comes.",
+   "She will to come.",
+   "She wills come.",
+   "She will come."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: She will come..",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012589",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct negative sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They not will arrive on time.",
+   "They won't arrives on time.",
+   "They won't arrive on time.",
+   "They don't will arrive on time."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: They won't arrive on time..",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012590",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Will it rain tomorrow?",
+   "It will rain tomorrow?",
+   "Does it will rain tomorrow?",
+   "Will it rains tomorrow?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: Will it rain tomorrow?.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012591",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "What will you do?",
+   "What will you to do?",
+   "What you will do?",
+   "What do you will do?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: What will you do?.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012592",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct short answer to: Will he come?",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Yes, he does.",
+   "Yes, he will.",
+   "Yes, he is.",
+   "Yes, he wills."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't. الإجابة الصحيحة: Yes, he will..",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012593",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He will goes to Cairo\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح He will go to Cairo لأن بعد will الفعل بدون s. will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012594",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I won't be late\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012595",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She wills help\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She will help. will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012596",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Will you come?\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. will + الفعل الأصلي للمستقبل والقرارات اللحظية والتوقعات والوعود. النفي won't.",
+  "topic": "Grammar: future with will (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012597",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I am _____ to visit my aunt tomorrow.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "going",
+   "go",
+   "went",
+   "goes"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: going.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012598",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is going to _____ a doctor.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "being",
+   "is",
+   "be",
+   "been"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: be.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012599",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They are going to _____ a new house.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "buys",
+   "bought",
+   "buying",
+   "buy"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: buy.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012600",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He _____ going to study tonight.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "are",
+   "am",
+   "does",
+   "is"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "am/is/are going to + فعل للخطط المحددة وللتوقعات اللي ليها دليل دلوقتي. الإجابة الصحيحة: is.",
+  "topic": "Grammar: be going to (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
