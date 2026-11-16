@@ -1,4 +1,5 @@
 import { buildLeaderboard, isOwner, isOwnerGoogleSession } from './leaderboard'
+import { mountCertificates } from './certificates'
 import { Hono, type MiddlewareHandler } from 'hono'
 import { cors } from 'hono/cors'
 import { hashPassword, newToken, sha256Hex, verifyPassword } from './crypto'
@@ -226,5 +227,6 @@ app.get('/api/leaderboard', async (c) => {
   }
   return c.json(buildLeaderboard(rows.results ?? [], viewerId))
 })
+mountCertificates(app, auth)
 
 export default app
