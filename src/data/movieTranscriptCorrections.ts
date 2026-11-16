@@ -28,14 +28,15 @@ export function applyMovieTranscriptCorrections<T extends MovieSceneItem>(scene:
   if (report) {
     if (!canPublishCaptionReview(report)) {
       return { ...scene, transcriptTimingStatus: 'quarantined', verificationStatus: 'needs_review', isEmbeddable: false,
-        subtitles: [], vocabulary: [], quizzes: [], speakingLines: [] };
+        subtitles: [], dialogueQuote: '', vocabulary: [], quizzes: [], speakingLines: [] };
     }
     const duration = report.durationSeconds!;
+    const subtitles = captionReviewCues(scene, report, true);
     return { ...scene, startTime: 0, endTime: duration,
       clipDuration: `${Math.floor(duration / 60)}:${String(Math.floor(duration % 60)).padStart(2, '0')}`,
-      transcriptTimingStatus: 'caption-reviewed', subtitles: captionReviewCues(scene, report, true),
+      transcriptTimingStatus: 'caption-reviewed', subtitles, dialogueQuote: subtitles[0]?.en || '',
       // Old quizzes and echo lines can refer to rejected or paraphrased seed text.
-      quizzes: [], speakingLines: [] };
+      vocabulary: [], quizzes: [], speakingLines: [] };
   }
   if (scene.youtubeId !== 'D6me2-OurCw') return scene;
   return { ...scene, startTime: 0, endTime: 88.321, clipDuration: '1:28', transcriptTimingStatus: 'reviewed-excerpts',
