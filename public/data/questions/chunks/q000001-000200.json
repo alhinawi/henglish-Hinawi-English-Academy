@@ -512,9 +512,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"be\":",
   "options": [
    "يكون",
-   "يحصل",
-   "ياكل",
-   "يجيب / يهات"
+   "يمسك",
+   "يسوق",
+   "يقابل"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"be\" هو: يكون. مثال: عايز أبقى دكتور.",
@@ -529,7 +529,7 @@
   "prompt": "Which English word means: يكون?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يكون",
   "options": [
-   "move",
+   "ask",
    "imagine",
    "be",
    "get"
@@ -586,7 +586,7 @@
    "يكتب",
    "يكون (مع الجمع وانت)",
    "يعرف",
-   "يطلب"
+   "يجري"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"are\" هو: يكون (مع الجمع وانت). مثال: انت متأخر.",
@@ -603,7 +603,7 @@
   "options": [
    "cover",
    "are",
-   "won",
+   "happen",
    "discuss"
   ],
   "answerIndex": 1,
@@ -620,9 +620,9 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "are",
-   "making",
+   "read",
    "come",
-   "fight"
+   "hear"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"are\" بمعنى يكون (مع الجمع وانت). الترجمة: انت متأخر.",
@@ -637,7 +637,7 @@
   "prompt": "What does \"have\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"have\":",
   "options": [
-   "يحصل",
+   "يمسك",
    "عنده / يملك",
    "يلعب",
    "يلمس / تاتش"
@@ -657,8 +657,8 @@
   "options": [
    "said",
    "have",
-   "wish",
-   "stop"
+   "learn",
+   "believe"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"have\" وتعني: عنده / يملك.",
@@ -673,7 +673,7 @@
   "prompt": "I ______ two brothers.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "vote",
+   "add",
    "put",
    "imagine",
    "have"
@@ -1231,12 +1231,12 @@
   "prompt": "What does \"one\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"one\":",
   "options": [
-   "تمانية",
-   "واحد",
+   "تسعة",
    "خمسة",
-   "ستة"
+   "واحد",
+   "اتنين"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"one\" هو: واحد. مثال: تذكرة واحدة من فضلك.",
   "topic": "Vocabulary: number (A1)",
   "source": "generated-vocab"
@@ -1249,10 +1249,10 @@
   "prompt": "Which English word means: واحد?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: واحد",
   "options": [
-   "eight",
-   "seven",
+   "nine",
+   "three",
    "one",
-   "five"
+   "ten"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"one\" وتعني: واحد.",
@@ -1267,9 +1267,9 @@
   "prompt": "______ ticket, please.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "six",
+   "four",
    "two",
-   "nine",
+   "ten",
    "one"
   ],
   "answerIndex": 3,
@@ -1321,7 +1321,7 @@
   "prompt": "What does \"can\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"can\":",
   "options": [
-   "يدفع",
+   "أخد",
    "يمشي",
    "يقدر / يعرف",
    "يلاقي"
@@ -1789,7 +1789,7 @@
   "prompt": "What does \"do\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"do\":",
   "options": [
-   "يسمع",
+   "يفتقد / يفوّت",
    "يركب / رايد",
    "كان هـ / هـ (للاحتمال واللباقة)",
    "يعمل"
@@ -2077,12 +2077,12 @@
   "prompt": "What does \"time\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"time\":",
   "options": [
-   "الليلة / النهارده بالليل",
-   "مدرسة",
-   "وقت / مرة",
-   "أغنية"
+   "دهب",
+   "مية",
+   "أغنية",
+   "وقت / مرة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"time\" هو: وقت / مرة. مثال: مفيش عندي وقت النهارده.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -2095,12 +2095,12 @@
   "prompt": "Which English word means: وقت / مرة?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: وقت / مرة",
   "options": [
-   "player",
-   "body",
-   "address",
-   "time"
+   "kitchen",
+   "time",
+   "sea",
+   "week"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"time\" وتعني: وقت / مرة.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -2113,12 +2113,12 @@
   "prompt": "I have no ______ today.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "goal",
    "time",
-   "reason",
-   "team"
+   "library",
+   "peace",
+   "party"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"time\" بمعنى وقت / مرة. الترجمة: مفيش عندي وقت النهارده.",
   "topic": "Vocabulary in context (A1)",
   "source": "generated-vocab"
@@ -2133,7 +2133,7 @@
   "options": [
    "يناقش / ديسكس",
    "يقعد",
-   "يجري",
+   "يشكر",
    "ياخد / يجيب / يوصل"
   ],
   "answerIndex": 3,
@@ -2150,9 +2150,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ياخد / يجيب / يوصل",
   "options": [
    "get",
-   "vote",
-   "meet",
-   "won"
+   "add",
+   "fight",
+   "happen"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"get\" وتعني: ياخد / يجيب / يوصل.",
@@ -2167,10 +2167,10 @@
   "prompt": "______ some bread on your way.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "turn",
-   "vote",
+   "check",
+   "add",
    "get",
-   "thank"
+   "become"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"get\" بمعنى ياخد / يجيب / يوصل. الترجمة: جيب عيش وانت جاي.",
@@ -2185,10 +2185,10 @@
   "prompt": "What does \"would\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"would\":",
   "options": [
-   "يطلب",
+   "يجري",
    "كان هـ / هـ (للاحتمال واللباقة)",
    "يرمي / ثرو",
-   "يوفّر / ينقذ"
+   "يقف"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"would\" هو: كان هـ / هـ (للاحتمال واللباقة). مثال: عايز شوية مية من فضلك.",
@@ -2206,7 +2206,7 @@
    "would",
    "are",
    "can",
-   "become"
+   "pay"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"would\" وتعني: كان هـ / هـ (للاحتمال واللباقة).",
@@ -2222,7 +2222,7 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "made",
-   "stop",
+   "believe",
    "spend",
    "would"
   ],
@@ -2348,9 +2348,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"people\":",
   "options": [
    "ناس",
-   "جد أو جدة",
-   "بيت",
-   "مدرسة"
+   "فرقة / باند",
+   "معلومات",
+   "اسم"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"people\" هو: ناس. مثال: ناس كتير بتحب الكورة.",
@@ -2366,9 +2366,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ناس",
   "options": [
    "people",
-   "hotel",
-   "key",
-   "march"
+   "moon",
+   "men",
+   "plan"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"people\" وتعني: ناس.",
@@ -2383,12 +2383,12 @@
   "prompt": "Many ______ like football.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "brother",
-   "paper",
-   "people",
-   "bed"
+   "eye",
+   "camera",
+   "body",
+   "people"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"people\" بمعنى ناس. الترجمة: ناس كتير بتحب الكورة.",
   "topic": "Vocabulary in context (A1)",
   "source": "generated-vocab"
@@ -3159,7 +3159,7 @@
   "options": [
    "يعرف",
    "يموّت / يقتل",
-   "يجرّب",
+   "يطلب",
    "يلبس"
   ],
   "answerIndex": 0,
@@ -3175,10 +3175,10 @@
   "prompt": "Which English word means: يعرف?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يعرف",
   "options": [
-   "hear",
+   "miss",
    "know",
    "choose",
-   "bring"
+   "meet"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"know\" وتعني: يعرف.",
@@ -3196,7 +3196,7 @@
    "be",
    "wear",
    "know",
-   "thank"
+   "become"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"know\" بمعنى يعرف. الترجمة: أنا عارف الإجابة.",
@@ -3211,7 +3211,7 @@
   "prompt": "What does \"two\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"two\":",
   "options": [
-   "واحد",
+   "تسعة",
    "سبعة",
    "اتنين",
    "خمسة"
@@ -3230,9 +3230,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: اتنين",
   "options": [
    "eight",
-   "ten",
+   "three",
    "two",
-   "six"
+   "twenty"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"two\" وتعني: اتنين.",
@@ -3250,7 +3250,7 @@
    "eight",
    "seven",
    "two",
-   "six"
+   "twenty"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"two\" بمعنى اتنين. الترجمة: قهوتين من فضلك.",
@@ -3266,9 +3266,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"make\":",
   "options": [
    "يعمل / يخلي",
-   "يوسّع",
-   "يسجن",
-   "يدهش"
+   "يفصل أو يفك",
+   "يخنق بالضغط على الرقبة",
+   "يطغى على"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"make\" هو: يعمل / يخلي. مثال: هي بتعمل شاي تحفة.",
@@ -3283,9 +3283,9 @@
   "prompt": "Which English word means: يعمل / يخلي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يعمل / يخلي",
   "options": [
-   "yawn",
-   "subtract",
-   "overhear",
+   "vibrate",
+   "familiarize",
+   "want",
    "make"
   ],
   "answerIndex": 3,
@@ -3301,10 +3301,10 @@
   "prompt": "She ______ great tea.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "modernize",
-   "overemphasize",
+   "flutter",
+   "mistreat",
    "make",
-   "quantify"
+   "revolutionize"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"make\" بمعنى يعمل / يخلي. الترجمة: هي بتعمل شاي تحفة.",
@@ -3374,7 +3374,7 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"think\":",
   "options": [
    "يقدر / يعرف",
-   "يجري",
+   "يشكر",
    "ينسى",
    "يفكر / يظن"
   ],
@@ -3410,7 +3410,7 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "think",
-   "order",
+   "run",
    "correct",
    "imagine"
   ],
@@ -3535,9 +3535,9 @@
   "prompt": "What does \"could\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"could\":",
   "options": [
-   "يشتري",
+   "يلف / دوره",
    "يلعب",
-   "يضيف",
+   "اتولد",
    "كان يقدر / ممكن بأدب"
   ],
   "answerIndex": 3,
@@ -3554,7 +3554,7 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كان يقدر / ممكن بأدب",
   "options": [
    "start",
-   "happen",
+   "hold",
    "keep",
    "could"
   ],
@@ -3573,7 +3573,7 @@
   "options": [
    "imagine",
    "cover",
-   "taking",
+   "remember",
    "could"
   ],
   "answerIndex": 3,
@@ -3589,12 +3589,12 @@
   "prompt": "What does \"back\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"back\":",
   "options": [
-   "دليل",
-   "سحر / ماجيك",
-   "ضهر / ورا / رجعة",
-   "اهتمام / فايدة"
+   "حارس / جارد",
+   "معنى",
+   "ساندوتش سب / اشتراك / ساب",
+   "ضهر / ورا / رجعة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"back\" هو: ضهر / ورا / رجعة. مثال: ضهري بيوجعني.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"

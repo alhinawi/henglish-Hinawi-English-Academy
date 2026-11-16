@@ -7,10 +7,10 @@
   "prompt": "What does \"payment\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"payment\":",
   "options": [
-   "فريق العمل / كاست",
-   "تعلّم / ليرنينج",
+   "جريمة إلكترونية",
+   "مجموعة الدواير الإلكترونية",
    "دفع / بيمنت",
-   "كيس مخدة"
+   "حرفة يدوية"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"payment\" هو: دفع / بيمنت. مثال: الدفع تم بنجاح.",
@@ -25,9 +25,9 @@
   "prompt": "Which English word means: دفع / بيمنت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: دفع / بيمنت",
   "options": [
-   "workaholic",
-   "cornet",
-   "schoolgirl",
+   "evil",
+   "shopkeeper",
+   "handrail",
    "payment"
   ],
   "answerIndex": 3,
@@ -43,12 +43,12 @@
   "prompt": "The ______ went through.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "toil",
-   "typhoid",
+   "tenderness",
    "payment",
-   "silverware"
+   "user",
+   "softness"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"payment\" بمعنى دفع / بيمنت. الترجمة: الدفع تم بنجاح.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -61,10 +61,10 @@
   "prompt": "What does \"perform\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"perform\":",
   "options": [
-   "يشمل",
-   "يقدّم / أبلاي",
+   "خلصان / اتعمل",
+   "يفهم",
    "يؤدي / بيرفورم",
-   "يسمح"
+   "يتوقع"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"perform\" هو: يؤدي / بيرفورم. مثال: الفرقة هتغني النهارده بالليل.",
@@ -79,12 +79,12 @@
   "prompt": "Which English word means: يؤدي / بيرفورم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يؤدي / بيرفورم",
   "options": [
-   "perform",
-   "telling",
-   "produce",
-   "pollute"
+   "showing",
+   "create",
+   "seem",
+   "perform"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"perform\" وتعني: يؤدي / بيرفورم.",
   "topic": "Vocabulary: verb (A2)",
   "source": "generated-vocab"
@@ -97,12 +97,12 @@
   "prompt": "The band will ______ tonight.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
+   "appear",
    "perform",
-   "continue",
-   "standing",
-   "mean"
+   "control",
+   "act"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"perform\" بمعنى يؤدي / بيرفورم. الترجمة: الفرقة هتغني النهارده بالليل.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -169,12 +169,12 @@
   "prompt": "What does \"sector\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sector\":",
   "options": [
+   "حرفة يدوية",
+   "بروفايل",
    "قطاع / سيكتور",
-   "تبسيط",
-   "عقار / إستيت",
-   "قفزة / جامب"
+   "تحويل / ترانسفير"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"sector\" هو: قطاع / سيكتور. مثال: بيشتغل في قطاع السياحة.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -187,10 +187,10 @@
   "prompt": "Which English word means: قطاع / سيكتور?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: قطاع / سيكتور",
   "options": [
-   "bruise",
+   "stopwatch",
    "sector",
-   "aircraft",
-   "fighting"
+   "pallet",
+   "microcomputer"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"sector\" وتعني: قطاع / سيكتور.",
@@ -205,12 +205,12 @@
   "prompt": "He works in the tourism ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "subcontinent",
-   "skylark",
    "sector",
-   "unease"
+   "bruise",
+   "workaholic",
+   "murmur"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"sector\" بمعنى قطاع / سيكتور. الترجمة: بيشتغل في قطاع السياحة.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -223,10 +223,10 @@
   "prompt": "What does \"snow\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"snow\":",
   "options": [
-   "مدرسة",
+   "راس",
    "تلج / سنو",
-   "تاريخ / ميعاد",
-   "سكر / شوجار"
+   "مرات / زوجة",
+   "عقل / دماغ"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"snow\" هو: تلج / سنو. مثال: نزل تلج في سانت كاترين.",
@@ -241,10 +241,10 @@
   "prompt": "Which English word means: تلج / سنو?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تلج / سنو",
   "options": [
-   "key",
-   "character",
+   "day",
+   "body",
    "snow",
-   "drama"
+   "meeting"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"snow\" وتعني: تلج / سنو.",
@@ -259,10 +259,10 @@
   "prompt": "It ______ in Saint Catherine.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "football",
+   "husband",
    "snow",
-   "child",
-   "river"
+   "book",
+   "practice"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"snow\" بمعنى تلج / سنو. الترجمة: نزل تلج في سانت كاترين.",
@@ -277,9 +277,9 @@
   "prompt": "What does \"strike\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"strike\":",
   "options": [
-   "مدير / بوس",
-   "مملكة / كينجدوم",
-   "سبورة طباشير",
+   "بريك / استراحة",
+   "جزء",
+   "تأثير / إمباكت",
    "إضراب / سترايك"
   ],
   "answerIndex": 3,
@@ -295,10 +295,10 @@
   "prompt": "Which English word means: إضراب / سترايك?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: إضراب / سترايك",
   "options": [
-   "thunderstorm",
-   "rate",
+   "apartment",
+   "show",
    "strike",
-   "assistant"
+   "solution"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"strike\" وتعني: إضراب / سترايك.",
@@ -313,12 +313,12 @@
   "prompt": "The workers went on ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "condition",
-   "village",
-   "unit",
-   "strike"
+   "space",
+   "strike",
+   "talent",
+   "education"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"strike\" بمعنى إضراب / سترايك. الترجمة: العمال عملوا إضراب.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -331,10 +331,10 @@
   "prompt": "What does \"studio\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"studio\":",
   "options": [
-   "اتصال / كونكشن",
-   "تمويل / فاند",
+   "أمر / كوماند",
+   "سجن / جيل",
    "استوديو / ستوديو",
-   "نتيجة / فايندينج"
+   "هندسة / إنجينيرينج"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"studio\" هو: استوديو / ستوديو. مثال: سجلوا في استوديو.",
@@ -350,9 +350,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: استوديو / ستوديو",
   "options": [
    "studio",
-   "turning",
-   "income",
-   "calmness"
+   "aerobics",
+   "antonym",
+   "total"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"studio\" وتعني: استوديو / ستوديو.",
@@ -367,10 +367,10 @@
   "prompt": "They recorded in a ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "security",
+   "function",
    "studio",
-   "flunk",
-   "funding"
+   "security",
+   "setting"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"studio\" بمعنى استوديو / ستوديو. الترجمة: سجلوا في استوديو.",
@@ -385,12 +385,12 @@
   "prompt": "What does \"sub\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sub\":",
   "options": [
-   "عنوان / تايتل",
-   "موضة / فاشون",
-   "مؤلف / أوثور",
-   "ساندوتش سب / اشتراك / ساب"
+   "ساندوتش سب / اشتراك / ساب",
+   "إضراب / سترايك",
+   "صوت / فويس",
+   "علبة / شنطة / باك"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"sub\" هو: ساندوتش سب / اشتراك / ساب. مثال: طلبت ساب فراخ.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -404,9 +404,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ساندوتش سب / اشتراك / ساب",
   "options": [
    "sub",
-   "road",
-   "position",
-   "home"
+   "thunderstorm",
+   "death",
+   "congress"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"sub\" وتعني: ساندوتش سب / اشتراك / ساب.",
@@ -421,12 +421,12 @@
   "prompt": "I ordered a chicken ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
+   "report",
+   "trump",
    "sub",
-   "title",
-   "split",
-   "east"
+   "description"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"sub\" بمعنى ساندوتش سب / اشتراك / ساب. الترجمة: طلبت ساب فراخ.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -493,9 +493,9 @@
   "prompt": "What does \"youtube\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"youtube\":",
   "options": [
-   "انقسام / سبليت",
-   "حاجات / ستاف",
-   "تأثير / إيفكت",
+   "وصف / ديسكريبشن",
+   "صرافة / إكس تشينج",
+   "قرن",
    "يوتيوب (موقع فيديو)"
   ],
   "answerIndex": 3,
@@ -511,12 +511,12 @@
   "prompt": "Which English word means: يوتيوب (موقع فيديو)?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يوتيوب (موقع فيديو)",
   "options": [
+   "step",
+   "omelet",
    "youtube",
-   "credit",
-   "direction",
-   "advice"
+   "tour"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"youtube\" وتعني: يوتيوب (موقع فيديو).",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -529,10 +529,10 @@
   "prompt": "I watched it on ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "speed",
-   "running",
+   "mistake",
+   "wine",
    "youtube",
-   "power"
+   "education"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"youtube\" بمعنى يوتيوب (موقع فيديو). الترجمة: شفته على يوتيوب.",
@@ -548,9 +548,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"actor\":",
   "options": [
    "ممثل / أكتور",
-   "كوبري / بريدج",
-   "قميص / شيرت",
-   "إحساس / شعور"
+   "جنب / ناحية",
+   "فيلم",
+   "عربية"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"actor\" هو: ممثل / أكتور. مثال: هو ممثل مشهور.",
@@ -566,9 +566,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ممثل / أكتور",
   "options": [
    "actor",
-   "culture",
-   "phone",
-   "garden"
+   "office",
+   "site",
+   "date"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"actor\" وتعني: ممثل / أكتور.",
@@ -583,12 +583,12 @@
   "prompt": "He's a famous ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "animal",
-   "bag",
+   "actor",
    "fly",
-   "actor"
+   "player",
+   "hotel"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"actor\" بمعنى ممثل / أكتور. الترجمة: هو ممثل مشهور.",
   "topic": "Vocabulary in context (A1)",
   "source": "generated-vocab"
@@ -601,12 +601,12 @@
   "prompt": "What does \"advance\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"advance\":",
   "options": [
-   "ميكروب",
+   "كهربائي",
+   "طريق / مسار / روت",
    "مقدم / أدفانس",
-   "ملحوظة أسفل الصفحة",
-   "برلمان / بارليمنت"
+   "مسعف مدرّب"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"advance\" هو: مقدم / أدفانس. مثال: ادفع النص مقدم.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -620,9 +620,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مقدم / أدفانس",
   "options": [
    "advance",
-   "criminal",
-   "hyperbole",
-   "gleam"
+   "breakable",
+   "micrometer",
+   "mode"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"advance\" وتعني: مقدم / أدفانس.",
@@ -637,10 +637,10 @@
   "prompt": "Pay half in ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "fingernail",
-   "astonishment",
+   "leaflet",
+   "tiredness",
    "advance",
-   "spokeswoman"
+   "cardigan"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"advance\" بمعنى مقدم / أدفانس. الترجمة: ادفع النص مقدم.",
@@ -655,12 +655,12 @@
   "prompt": "What does \"apartment\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"apartment\":",
   "options": [
-   "مشاكل / ترابل",
+   "بحث / أبحاث",
+   "كاش / فلوس نقدية",
    "شقة / أبارتمنت",
-   "مشهد / سين",
-   "مجتمع"
+   "موجة / ويف"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"apartment\" هو: شقة / أبارتمنت. مثال: مأجرين شقة جنبنا.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -673,12 +673,12 @@
   "prompt": "Which English word means: شقة / أبارتمنت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شقة / أبارتمنت",
   "options": [
-   "association",
-   "testing",
    "apartment",
-   "trade"
+   "coast",
+   "pro",
+   "experience"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"apartment\" وتعني: شقة / أبارتمنت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -691,12 +691,12 @@
   "prompt": "They rent an ______ nearby.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "system",
-   "businesswoman",
-   "apartment",
-   "blackboard"
+   "nation",
+   "brand",
+   "queen",
+   "apartment"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"apartment\" بمعنى شقة / أبارتمنت. الترجمة: مأجرين شقة جنبنا.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -709,12 +709,12 @@
   "prompt": "What does \"chain\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"chain\":",
   "options": [
-   "ساندوتش سب / اشتراك / ساب",
-   "سلسلة / تشين",
-   "قوة / كهربا",
-   "وزن"
+   "مدير / بوس",
+   "انتباه / اتنشن",
+   "تحدي / تشالينج",
+   "سلسلة / تشين"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"chain\" هو: سلسلة / تشين. مثال: السلسلة مقطوعة.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -727,9 +727,9 @@
   "prompt": "Which English word means: سلسلة / تشين?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: سلسلة / تشين",
   "options": [
-   "lake",
-   "winner",
-   "source",
+   "roll",
+   "novel",
+   "kingdom",
    "chain"
   ],
   "answerIndex": 3,
@@ -745,12 +745,12 @@
   "prompt": "The ______ is broken.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
+   "part",
+   "committee",
    "chain",
-   "trade",
-   "doubt",
-   "law"
+   "market"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"chain\" بمعنى سلسلة / تشين. الترجمة: السلسلة مقطوعة.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -763,12 +763,12 @@
   "prompt": "What does \"chapter\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"chapter\":",
   "options": [
-   "مساحة / سبيس",
-   "شمبانزي",
-   "رب / سيد",
-   "فصل / تشابتر"
+   "فصل / تشابتر",
+   "نبات / بلانت",
+   "أب / تطبيق",
+   "موت"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"chapter\" هو: فصل / تشابتر. مثال: اقرا الفصل التالت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -781,12 +781,12 @@
   "prompt": "Which English word means: فصل / تشابتر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: فصل / تشابتر",
   "options": [
-   "assistant",
-   "association",
-   "chapter",
-   "freedom"
+   "space",
+   "kilogram",
+   "air",
+   "chapter"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"chapter\" وتعني: فصل / تشابتر.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -799,10 +799,10 @@
   "prompt": "Read ______ three.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "road",
-   "attorney",
+   "report",
+   "crowd",
    "chapter",
-   "effect"
+   "cream"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"chapter\" بمعنى فصل / تشابتر. الترجمة: اقرا الفصل التالت.",
@@ -818,9 +818,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"confidence\":",
   "options": [
    "ثقة / كونفيدانس",
-   "زيادة",
-   "تقدم / بروجريس",
-   "دخول / إنتري"
+   "مواعدة / ديتينج",
+   "ساكن",
+   "نص"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"confidence\" هو: ثقة / كونفيدانس. مثال: بيتكلم بثقة.",
@@ -836,9 +836,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ثقة / كونفيدانس",
   "options": [
    "confidence",
-   "county",
-   "responsibility",
-   "climate"
+   "enemy",
+   "stress",
+   "edition"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"confidence\" وتعني: ثقة / كونفيدانس.",
@@ -853,9 +853,9 @@
   "prompt": "He speaks with ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "superstition",
-   "quality",
-   "balance",
+   "rest",
+   "foot",
+   "total",
    "confidence"
   ],
   "answerIndex": 3,
@@ -871,10 +871,10 @@
   "prompt": "What does \"cook\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cook\":",
   "options": [
-   "سرير",
+   "طيارة / بلين",
    "طباخ / كوك",
-   "اسم",
-   "قميص / شيرت"
+   "مدرسة",
+   "فيديو"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"cook\" هو: طباخ / كوك. مثال: الطباخ عمل كشري.",
@@ -889,10 +889,10 @@
   "prompt": "Which English word means: طباخ / كوك?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: طباخ / كوك",
   "options": [
-   "fish",
+   "mail",
    "cook",
-   "wall",
-   "woman"
+   "weather",
+   "machine"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"cook\" وتعني: طباخ / كوك.",
@@ -907,10 +907,10 @@
   "prompt": "The ______ made koshari.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "kitchen",
+   "sister",
    "cook",
-   "test",
-   "farm"
+   "mother",
+   "brain"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"cook\" بمعنى طباخ / كوك. الترجمة: الطباخ عمل كشري.",
@@ -980,9 +980,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"equal\":",
   "options": [
    "متساوي / إيكوال",
-   "فريد / يونيك",
-   "ديجيتال / رقمي",
-   "شمالي"
+   "مالوش طعم أو تافه",
+   "واضح / أوبفياس",
+   "نقي / بيور"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"equal\" هو: متساوي / إيكوال. مثال: كل الناس متساويين.",
@@ -997,10 +997,10 @@
   "prompt": "Which English word means: متساوي / إيكوال?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: متساوي / إيكوال",
   "options": [
-   "mixed",
-   "general",
+   "serious",
+   "stupid",
    "equal",
-   "capable"
+   "talkative"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"equal\" وتعني: متساوي / إيكوال.",
@@ -1015,9 +1015,9 @@
   "prompt": "All people are ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "internal",
    "obvious",
-   "amazing",
+   "financial",
+   "previous",
    "equal"
   ],
   "answerIndex": 3,
@@ -1033,9 +1033,9 @@
   "prompt": "What does \"fake\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fake\":",
   "options": [
-   "مالوش طعم أو تافه",
-   "مختلط / ميكست",
-   "سنوي / أنيوال",
+   "معقّد / كومبليكس",
+   "فريد / يونيك",
+   "صغير أوي / تايني",
    "مزيف / فيك"
   ],
   "answerIndex": 3,
@@ -1051,12 +1051,12 @@
   "prompt": "Which English word means: مزيف / فيك?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مزيف / فيك",
   "options": [
-   "untidy",
-   "eastern",
-   "stupid",
-   "fake"
+   "former",
+   "fake",
+   "civil",
+   "limited"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"fake\" وتعني: مزيف / فيك.",
   "topic": "Vocabulary: adjective (B1)",
   "source": "generated-vocab"
@@ -1069,10 +1069,10 @@
   "prompt": "The bag is ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "round",
-   "active",
+   "diligent",
+   "digital",
    "fake",
-   "incredible"
+   "unwell"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"fake\" بمعنى مزيف / فيك. الترجمة: الشنطة مزيفة.",
@@ -1087,10 +1087,10 @@
   "prompt": "What does \"finance\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"finance\":",
   "options": [
-   "فول صويا",
+   "عنبر نوم أو سكن",
    "تمويل / فاينانس",
-   "حملة / كامبين",
-   "شغل مباني حجر"
+   "طبقة النبلا",
+   "توقف مؤقت أثناء السفر"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"finance\" هو: تمويل / فاينانس. مثال: بيشتغل في التمويل.",
@@ -1105,12 +1105,12 @@
   "prompt": "Which English word means: تمويل / فاينانس?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تمويل / فاينانس",
   "options": [
-   "optimist",
-   "fighting",
-   "hell",
-   "finance"
+   "landlady",
+   "state",
+   "finance",
+   "bathhouse"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"finance\" وتعني: تمويل / فاينانس.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -1123,12 +1123,12 @@
   "prompt": "He works in ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "millimeter",
    "finance",
-   "eyelash",
-   "apostrophe"
+   "criminal",
+   "nomad",
+   "nobleman"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"finance\" بمعنى تمويل / فاينانس. الترجمة: بيشتغل في التمويل.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -1141,10 +1141,10 @@
   "prompt": "What does \"identity\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"identity\":",
   "options": [
-   "تأمين / إنشورانس",
-   "عالم فلك",
+   "حماية / بروتكشن",
+   "مفهوم / كونسبت",
    "هوية / أيدنتيتي",
-   "منصة / بلاتفورم"
+   "ساكن"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"identity\" هو: هوية / أيدنتيتي. مثال: ورّيني البطاقة بتاعتك.",
@@ -1159,12 +1159,12 @@
   "prompt": "Which English word means: هوية / أيدنتيتي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: هوية / أيدنتيتي",
   "options": [
-   "pain",
-   "handball",
-   "identity",
-   "intermission"
+   "comment",
+   "theory",
+   "distribution",
+   "identity"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"identity\" وتعني: هوية / أيدنتيتي.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -1177,10 +1177,10 @@
   "prompt": "Show your ______ card.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "connection",
-   "steel",
+   "individual",
+   "cancer",
    "identity",
-   "foot"
+   "blog"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"identity\" بمعنى هوية / أيدنتيتي. الترجمة: ورّيني البطاقة بتاعتك.",
@@ -1195,12 +1195,12 @@
   "prompt": "What does \"journey\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"journey\":",
   "options": [
-   "رحلة / جيرني",
-   "اتجاه / دايركشن",
+   "محامي / لوير",
    "سلاح / جن",
-   "شمال"
+   "رحلة / جيرني",
+   "شكل / شيب"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"journey\" هو: رحلة / جيرني. مثال: الرحلة خدت خمس ساعات.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1213,10 +1213,10 @@
   "prompt": "Which English word means: رحلة / جيرني?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: رحلة / جيرني",
   "options": [
-   "mistake",
+   "scale",
    "journey",
-   "method",
-   "oil"
+   "film",
+   "response"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"journey\" وتعني: رحلة / جيرني.",
@@ -1231,12 +1231,12 @@
   "prompt": "The ______ took five hours.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "promise",
-   "journey",
-   "beauty",
-   "attorney"
+   "weight",
+   "omelet",
+   "force",
+   "journey"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"journey\" بمعنى رحلة / جيرني. الترجمة: الرحلة خدت خمس ساعات.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -1250,9 +1250,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"kitchen\":",
   "options": [
    "مطبخ / كيتشن",
-   "قراية",
-   "عيد ميلاد / بيرثداي",
-   "يوم"
+   "مفتاح",
+   "موقع / سايت",
+   "ذاكرة / ميموري"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"kitchen\" هو: مطبخ / كيتشن. مثال: المطبخ نضيف.",
@@ -1267,10 +1267,10 @@
   "prompt": "Which English word means: مطبخ / كيتشن?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مطبخ / كيتشن",
   "options": [
-   "culture",
-   "river",
+   "picture",
+   "year",
    "kitchen",
-   "march"
+   "photo"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"kitchen\" وتعني: مطبخ / كيتشن.",
@@ -1285,10 +1285,10 @@
   "prompt": "The ______ is clean.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "dog",
+   "spring",
    "kitchen",
-   "living",
-   "pop"
+   "fly",
+   "article"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"kitchen\" بمعنى مطبخ / كيتشن. الترجمة: المطبخ نضيف.",
@@ -1357,12 +1357,12 @@
   "prompt": "What does \"measure\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"measure\":",
   "options": [
-   "شحن / رسوم / تشارج",
-   "الوطن الأم",
+   "سمع / هيرينج",
    "إجراء / مقياس / ميجر",
-   "صناعة"
+   "جهاز / ديفايس",
+   "صراع / معاناة / ستراجل"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"measure\" هو: إجراء / مقياس / ميجر. مثال: إجراءات الأمان مهمة.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -1375,10 +1375,10 @@
   "prompt": "Which English word means: إجراء / مقياس / ميجر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: إجراء / مقياس / ميجر",
   "options": [
-   "struggle",
-   "opening",
+   "safety",
+   "stress",
    "measure",
-   "conservative"
+   "violence"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"measure\" وتعني: إجراء / مقياس / ميجر.",
@@ -1393,12 +1393,12 @@
   "prompt": "Safety ______ are important.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "union",
-   "measure",
-   "future",
-   "snowboard"
+   "risk",
+   "pullover",
+   "adverbial",
+   "measure"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"measure\" بمعنى إجراء / مقياس / ميجر. الترجمة: إجراءات الأمان مهمة.",
   "topic": "Vocabulary in context (B1)",
   "source": "generated-vocab"
@@ -1412,9 +1412,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"numerous\":",
   "options": [
    "كتير / نيوميرس",
-   "نفسه مقطوع",
-   "ثقافي / كلتشرال",
-   "جنوبي"
+   "مش ممكن السيطرة عليه",
+   "شرقي / إيسترن",
+   "متديّن / ريليجياس"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"numerous\" هو: كتير / نيوميرس. مثال: كلمت مرات كتير.",
@@ -1430,9 +1430,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: كتير / نيوميرس",
   "options": [
    "numerous",
-   "round",
-   "uninterested",
-   "honest"
+   "effective",
+   "unafraid",
+   "round"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"numerous\" وتعني: كتير / نيوميرس.",
@@ -1447,12 +1447,12 @@
   "prompt": "I called ______ times.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "annual",
    "numerous",
-   "eastern",
-   "rare"
+   "former",
+   "religious",
+   "southern"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"numerous\" بمعنى كتير / نيوميرس. الترجمة: كلمت مرات كتير.",
   "topic": "Vocabulary in context (B1)",
   "source": "generated-vocab"
@@ -1574,9 +1574,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"split\":",
   "options": [
    "انقسام / سبليت",
-   "معدن / ميتال",
-   "ترامب",
-   "إضراب / سترايك"
+   "شاشة / سكرين",
+   "انتباه / اتنشن",
+   "رد / استجابة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"split\" هو: انقسام / سبليت. مثال: الانقسام كان موجع.",
@@ -1591,12 +1591,12 @@
   "prompt": "Which English word means: انقسام / سبليت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: انقسام / سبليت",
   "options": [
-   "spending",
-   "accident",
    "split",
-   "university"
+   "app",
+   "being",
+   "success"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"split\" وتعني: انقسام / سبليت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1609,9 +1609,9 @@
   "prompt": "The ______ was painful.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "napkin",
-   "attorney",
-   "helping",
+   "roll",
+   "doubt",
+   "experience",
    "split"
   ],
   "answerIndex": 3,
@@ -1627,12 +1627,12 @@
   "prompt": "What does \"task\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"task\":",
   "options": [
+   "عدد السكان",
+   "قلق / كونسيرن",
    "مهمة / تاسك",
-   "تأثير / إنفلوانس",
-   "تجارة / تريد",
-   "الأرض / الدنيا"
+   "معدن / ميتال"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"task\" هو: مهمة / تاسك. مثال: خلّص المهمة دي النهارده.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1645,12 +1645,12 @@
   "prompt": "Which English word means: مهمة / تاسك?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مهمة / تاسك",
   "options": [
-   "task",
-   "coast",
-   "pro",
-   "host"
+   "centimeter",
+   "opinion",
+   "degree",
+   "task"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"task\" وتعني: مهمة / تاسك.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1663,9 +1663,9 @@
   "prompt": "Finish this ______ today.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "bookshop",
-   "company",
-   "episode",
+   "shot",
+   "step",
+   "tour",
    "task"
   ],
   "answerIndex": 3,
@@ -1681,10 +1681,10 @@
   "prompt": "What does \"twenty\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"twenty\":",
   "options": [
-   "ستة",
+   "عشرة",
    "عشرين / توينتي",
-   "تمانية",
-   "اتنين"
+   "واحد",
+   "تسعة"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"twenty\" هو: عشرين / توينتي. مثال: عندها عشرين سنة.",
@@ -1699,10 +1699,10 @@
   "prompt": "Which English word means: عشرين / توينتي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: عشرين / توينتي",
   "options": [
-   "three",
+   "seven",
    "twenty",
-   "nine",
-   "two"
+   "eight",
+   "ten"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"twenty\" وتعني: عشرين / توينتي.",
@@ -1717,10 +1717,10 @@
   "prompt": "She is ______ years old.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "three",
-   "two",
+   "seven",
+   "ten",
    "twenty",
-   "ten"
+   "five"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"twenty\" بمعنى عشرين / توينتي. الترجمة: عندها عشرين سنة.",
@@ -1735,12 +1735,12 @@
   "prompt": "What does \"aircraft\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"aircraft\":",
   "options": [
-   "عضو هيئة محلفين",
-   "احترام شديد وتوقير",
-   "طالب مسؤول عن النظام",
-   "طيارة / إيركرافت"
+   "عصاب واضطراب نفسي قديمًا",
+   "طيارة / إيركرافت",
+   "حرفي ماهر",
+   "إيرادات / ريفينيو"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"aircraft\" هو: طيارة / إيركرافت. مثال: الطيارة نزلت بسلام.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -1753,12 +1753,12 @@
   "prompt": "Which English word means: طيارة / إيركرافت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: طيارة / إيركرافت",
   "options": [
-   "vigor",
+   "workman",
+   "disillusion",
    "aircraft",
-   "scythe",
-   "beagle"
+   "countryman"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"aircraft\" وتعني: طيارة / إيركرافت.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -1771,12 +1771,12 @@
   "prompt": "The ______ landed safely.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "scythe",
-   "semicolon",
-   "pessimist",
-   "aircraft"
+   "proponent",
+   "aircraft",
+   "cardigan",
+   "tremor"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"aircraft\" بمعنى طيارة / إيركرافت. الترجمة: الطيارة نزلت بسلام.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -1843,12 +1843,12 @@
   "prompt": "What does \"argument\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"argument\":",
   "options": [
+   "نصيحة / أدفايس",
+   "نوع",
    "خناقة / حجة / أرجيومنت",
-   "علبة / شنطة / باك",
-   "وظيفة / مركز / مكانة",
-   "سيدة أعمال"
+   "تجارة / تريد"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"argument\" هو: خناقة / حجة / أرجيومنت. مثال: اتخانقوا مع بعض.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1861,12 +1861,12 @@
   "prompt": "Which English word means: خناقة / حجة / أرجيومنت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: خناقة / حجة / أرجيومنت",
   "options": [
-   "testing",
-   "home",
-   "suit",
-   "argument"
+   "argument",
+   "website",
+   "square",
+   "south"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"argument\" وتعني: خناقة / حجة / أرجيومنت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -1879,12 +1879,12 @@
   "prompt": "They had an ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "track",
    "thunderstorm",
-   "member",
-   "argument"
+   "century",
+   "argument",
+   "university"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"argument\" بمعنى خناقة / حجة / أرجيومنت. الترجمة: اتخانقوا مع بعض.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -1897,12 +1897,12 @@
   "prompt": "What does \"conflict\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"conflict\":",
   "options": [
-   "حديد صلب / ستيل",
-   "وقود / فيول",
-   "مدة / ترم",
-   "صراع / كونفليكت"
+   "رجل / قدم",
+   "أمان / سيفتي",
+   "صراع / كونفليكت",
+   "نص"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"conflict\" هو: صراع / كونفليكت. مثال: الصراع خلص السنة اللي فاتت.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -1915,10 +1915,10 @@
   "prompt": "Which English word means: صراع / كونفليكت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: صراع / كونفليكت",
   "options": [
-   "interviewee",
+   "superstition",
    "conflict",
-   "sundial",
-   "chief"
+   "identity",
+   "pronoun"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"conflict\" وتعني: صراع / كونفليكت.",
@@ -1933,10 +1933,10 @@
   "prompt": "The ______ ended last year.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "blame",
-   "investigation",
+   "dude",
+   "adverb",
    "conflict",
-   "policy"
+   "blog"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"conflict\" بمعنى صراع / كونفليكت. الترجمة: الصراع خلص السنة اللي فاتت.",
@@ -1951,12 +1951,12 @@
   "prompt": "What does \"corporate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"corporate\":",
   "options": [
-   "على مستوى المدينة",
-   "شركاتي / كوربوريت",
-   "مش حكيم",
-   "نرجسي ومتمركز حوالين نفسه"
+   "فيه نسمة هوا",
+   "صعب يتخيّل",
+   "مش نمطي أو معتاد",
+   "شركاتي / كوربوريت"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"corporate\" هو: شركاتي / كوربوريت. مثال: ساب شغل الشركات.",
   "topic": "Vocabulary: adjective (B2)",
   "source": "generated-vocab"
@@ -1969,12 +1969,12 @@
   "prompt": "Which English word means: شركاتي / كوربوريت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شركاتي / كوربوريت",
   "options": [
-   "unconcerned",
-   "grand",
-   "corporate",
-   "primary"
+   "narcissistic",
+   "willing",
+   "heartwarming",
+   "corporate"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"corporate\" وتعني: شركاتي / كوربوريت.",
   "topic": "Vocabulary: adjective (B2)",
   "source": "generated-vocab"
@@ -1987,12 +1987,12 @@
   "prompt": "He left ______ life.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "corporate",
-   "unworldly",
-   "mutable",
-   "uncharacteristic"
+   "atypical",
+   "centigrade",
+   "uncharacteristic",
+   "corporate"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"corporate\" بمعنى شركاتي / كوربوريت. الترجمة: ساب شغل الشركات.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -2005,12 +2005,12 @@
   "prompt": "What does \"debate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"debate\":",
   "options": [
-   "طيران / فلايت",
-   "جزء",
-   "نقاش / ديبيت",
-   "منطقة"
+   "سرعة / سبيد",
+   "جوجل",
+   "شبكة / نت",
+   "نقاش / ديبيت"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"debate\" هو: نقاش / ديبيت. مثال: النقاش كان سخن.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2023,12 +2023,12 @@
   "prompt": "Which English word means: نقاش / ديبيت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: نقاش / ديبيت",
   "options": [
-   "plant",
-   "app",
-   "attempt",
-   "debate"
+   "laziness",
+   "debate",
+   "murder",
+   "tech"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"debate\" وتعني: نقاش / ديبيت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2041,12 +2041,12 @@
   "prompt": "The ______ was heated.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "being",
+   "screen",
+   "style",
    "debate",
-   "account",
-   "lawyer"
+   "area"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"debate\" بمعنى نقاش / ديبيت. الترجمة: النقاش كان سخن.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2059,12 +2059,12 @@
   "prompt": "What does \"distribution\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"distribution\":",
   "options": [
-   "توزيع / دستريبيوشن",
-   "أغلبية",
-   "كوسة",
-   "قناة / تشانل"
+   "سعة / كاباسيتي",
+   "منعطف / تيرنينج",
+   "ماضي / اللي فات",
+   "توزيع / دستريبيوشن"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"distribution\" هو: توزيع / دستريبيوشن. مثال: توزيع الأكل يبدأ الضهر.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -2077,12 +2077,12 @@
   "prompt": "Which English word means: توزيع / دستريبيوشن?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: توزيع / دستريبيوشن",
   "options": [
-   "proof",
-   "session",
-   "commercial",
-   "distribution"
+   "debt",
+   "distribution",
+   "daze",
+   "friendliness"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"distribution\" وتعني: توزيع / دستريبيوشن.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -2095,9 +2095,9 @@
   "prompt": "Food ______ starts at noon.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "journal",
-   "session",
-   "launch",
+   "selection",
+   "saucer",
+   "photocopy",
    "distribution"
   ],
   "answerIndex": 3,
@@ -2113,12 +2113,12 @@
   "prompt": "What does \"escape\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"escape\":",
   "options": [
-   "دليل",
-   "طلب / ريكويست",
-   "بيت",
-   "هروب / إسكيب"
+   "جولة / تور",
+   "هروب / إسكيب",
+   "دوا / مخدرات / دراج",
+   "وكيل / أيجنت"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"escape\" هو: هروب / إسكيب. مثال: الهروب كان متخطط كويس.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2131,12 +2131,12 @@
   "prompt": "Which English word means: هروب / إسكيب?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: هروب / إسكيب",
   "options": [
-   "being",
-   "path",
-   "research",
-   "escape"
+   "road",
+   "effect",
+   "escape",
+   "bit"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"escape\" وتعني: هروب / إسكيب.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2149,10 +2149,10 @@
   "prompt": "The ______ was planned well.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "youtube",
+   "situation",
    "escape",
-   "village",
-   "split"
+   "attempt",
+   "roll"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"escape\" بمعنى هروب / إسكيب. الترجمة: الهروب كان متخطط كويس.",
@@ -2167,12 +2167,12 @@
   "prompt": "What does \"fault\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fault\":",
   "options": [
-   "نبات / بلانت",
-   "كسل",
    "غلط / فولت",
-   "بحث / أبحاث"
+   "موقع / ويب سايت",
+   "شغل وواجبات المدرسة",
+   "حقيقة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"fault\" هو: غلط / فولت. مثال: ده مش غلطي.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2185,12 +2185,12 @@
   "prompt": "Which English word means: غلط / فولت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: غلط / فولت",
   "options": [
-   "solution",
-   "boss",
-   "assistant",
-   "fault"
+   "title",
+   "wave",
+   "fault",
+   "kind"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"fault\" وتعني: غلط / فولت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2203,12 +2203,12 @@
   "prompt": "It's not my ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "opportunity",
-   "figure",
-   "fault",
-   "plant"
+   "communication",
+   "structure",
+   "opposite",
+   "fault"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"fault\" بمعنى غلط / فولت. الترجمة: ده مش غلطي.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2221,9 +2221,9 @@
   "prompt": "What does \"fill\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fill\":",
   "options": [
-   "يقفل",
-   "عمل",
-   "يكبر / يزرع",
+   "اتولد",
+   "يتخانق / يحارب",
+   "قال",
    "يملأ / فيل"
   ],
   "answerIndex": 3,
@@ -2239,10 +2239,10 @@
   "prompt": "Which English word means: يملأ / فيل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: يملأ / فيل",
   "options": [
-   "thank",
+   "believe",
    "fill",
-   "dance",
-   "correct"
+   "throw",
+   "read"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"fill\" وتعني: يملأ / فيل.",
@@ -2257,10 +2257,10 @@
   "prompt": "______ the bottle with water.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "do",
-   "hear",
+   "correct",
+   "call",
    "fill",
-   "join"
+   "put"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"fill\" بمعنى يملأ / فيل. الترجمة: املأ الأزازة مياه.",
@@ -2275,10 +2275,10 @@
   "prompt": "What does \"friendly\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"friendly\":",
   "options": [
-   "مش قلقان",
-   "موفّر ومش بيهدر",
+   "مش مراعي لمشاعر غيره",
+   "عابر وقليل الاهتمام",
    "ودود / فريندلي",
-   "محتمل / بوتنشال"
+   "جنسي / سيكشوال"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"friendly\" هو: ودود / فريندلي. مثال: الجيران ودودين.",
@@ -2293,9 +2293,9 @@
   "prompt": "Which English word means: ودود / فريندلي?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ودود / فريندلي",
   "options": [
-   "narcissistic",
-   "appreciative",
-   "unworldly",
+   "deep",
+   "heartwarming",
+   "centigrade",
    "friendly"
   ],
   "answerIndex": 3,
@@ -2311,12 +2311,12 @@
   "prompt": "The neighbors are ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "unwise",
-   "disorderly",
-   "uncharacteristic",
-   "friendly"
+   "friendly",
+   "ageless",
+   "undressed",
+   "prior"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"friendly\" بمعنى ودود / فريندلي. الترجمة: الجيران ودودين.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -2325,54 +2325,54 @@
   "id": "q-voc-004530",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "B1",
+  "level": "B2",
   "prompt": "What does \"mixed\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"mixed\":",
   "options": [
-   "مدني / سيفيل",
    "مختلط / ميكست",
-   "عام",
-   "مش مهتم"
+   "مش مساعد",
+   "ممل ومتعب للأعصاب",
+   "مش مناسب"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"mixed\" هو: مختلط / ميكست. مثال: مشاعري مختلطة.",
-  "topic": "Vocabulary: adjective (B1)",
+  "topic": "Vocabulary: adjective (B2)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-004531",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "B1",
+  "level": "B2",
   "prompt": "Which English word means: مختلط / ميكست?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مختلط / ميكست",
   "options": [
-   "uninterested",
    "mixed",
-   "complex",
-   "minor"
+   "hospitable",
+   "sociable",
+   "unkind"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"mixed\" وتعني: مختلط / ميكست.",
-  "topic": "Vocabulary: adjective (B1)",
+  "topic": "Vocabulary: adjective (B2)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-004532",
   "skill": "vocabulary",
   "type": "fill-blank",
-  "level": "B1",
+  "level": "B2",
   "prompt": "I have ______ feelings.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "mixed",
-   "rare",
-   "economic",
-   "huge"
+   "gymnastic",
+   "antiaircraft",
+   "unbeatable",
+   "mixed"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"mixed\" بمعنى مختلط / ميكست. الترجمة: مشاعري مختلطة.",
-  "topic": "Vocabulary in context (B1)",
+  "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
  },
  {
@@ -2383,12 +2383,12 @@
   "prompt": "What does \"phase\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"phase\":",
   "options": [
-   "ليبرالي / ليبرال",
-   "محدِّد (أداة تعريف في القواعد)",
-   "مرحلة / فيز",
-   "قفص عصافير"
+   "ألواح جدران",
+   "عارضة سقف مائلة",
+   "مجتمع / جماعة",
+   "مرحلة / فيز"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"phase\" هو: مرحلة / فيز. مثال: إحنا في المرحلة الأخيرة.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -2401,12 +2401,12 @@
   "prompt": "Which English word means: مرحلة / فيز?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: مرحلة / فيز",
   "options": [
-   "keystroke",
-   "shooting",
-   "unease",
-   "phase"
+   "stepfather",
+   "laborer",
+   "phase",
+   "smokestack"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"phase\" وتعني: مرحلة / فيز.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -2419,12 +2419,12 @@
   "prompt": "We're in the final ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
+   "pessimist",
    "phase",
-   "community",
-   "subculture",
-   "state"
+   "microscopy",
+   "artistry"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"phase\" بمعنى مرحلة / فيز. الترجمة: إحنا في المرحلة الأخيرة.",
   "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
@@ -2491,10 +2491,10 @@
   "prompt": "What does \"pure\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"pure\":",
   "options": [
-   "واعي / أوير",
+   "أساسي / رئيسي",
    "نقي / بيور",
-   "معقّد / كومبليكس",
-   "نفسه مقطوع"
+   "مكركب ومش مترتب",
+   "غبي / ستبيود"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"pure\" هو: نقي / بيور. مثال: ده عسل نقي.",
@@ -2509,8 +2509,8 @@
   "prompt": "Which English word means: نقي / بيور?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: نقي / بيور",
   "options": [
-   "unafraid",
-   "capable",
+   "various",
+   "faraway",
    "pure",
    "historical"
   ],
@@ -2528,9 +2528,9 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "pure",
-   "southern",
-   "global",
-   "nuclear"
+   "huge",
+   "general",
+   "easygoing"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"pure\" بمعنى نقي / بيور. الترجمة: ده عسل نقي.",
@@ -2545,10 +2545,10 @@
   "prompt": "What does \"revenue\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"revenue\":",
   "options": [
-   "مرات الأب",
+   "عاصفة مطرية",
    "إيرادات / ريفينيو",
-   "مدار جغرافي",
-   "حِضن / ملء الذراعين"
+   "مبالغة بلاغية",
+   "تغطية / كوفريج"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"revenue\" هو: إيرادات / ريفينيو. مثال: الإيرادات زادت السنة دي.",
@@ -2563,12 +2563,12 @@
   "prompt": "Which English word means: إيرادات / ريفينيو?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: إيرادات / ريفينيو",
   "options": [
-   "absentee",
-   "skateboarder",
-   "penicillin",
-   "revenue"
+   "scholasticism",
+   "essayist",
+   "revenue",
+   "clam"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"revenue\" وتعني: إيرادات / ريفينيو.",
   "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
@@ -2582,9 +2582,9 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "revenue",
-   "referent",
-   "route",
-   "misconception"
+   "loan",
+   "pillowcase",
+   "guideline"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"revenue\" بمعنى إيرادات / ريفينيو. الترجمة: الإيرادات زادت السنة دي.",
@@ -2654,9 +2654,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"smile\":",
   "options": [
    "ابتسامة / سمايل",
-   "طفل / ولد",
-   "خريطة / ماب",
-   "باب"
+   "تلج",
+   "شغل / بيزنس",
+   "أكل"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"smile\" هو: ابتسامة / سمايل. مثال: ابتسامتها جميلة.",
@@ -2671,10 +2671,10 @@
   "prompt": "Which English word means: ابتسامة / سمايل?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ابتسامة / سمايل",
   "options": [
-   "survey",
+   "work",
    "smile",
-   "leader",
-   "bridge"
+   "class",
+   "article"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"smile\" وتعني: ابتسامة / سمايل.",
@@ -2689,10 +2689,10 @@
   "prompt": "Her ______ is beautiful.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "survey",
+   "work",
    "smile",
-   "baby",
-   "internet"
+   "mail",
+   "feed"
   ],
   "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"smile\" بمعنى ابتسامة / سمايل. الترجمة: ابتسامتها جميلة.",
@@ -2761,12 +2761,12 @@
   "prompt": "What does \"talent\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"talent\":",
   "options": [
-   "مملكة / كينجدوم",
-   "بيرة / بير",
    "موهبة / تالنت",
-   "ميزة / فيتشر"
+   "مهمة / تاسك",
+   "جامعة",
+   "حرارة / هيت"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"talent\" هو: موهبة / تالنت. مثال: عندها موهبة حقيقية.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2779,12 +2779,12 @@
   "prompt": "Which English word means: موهبة / تالنت?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: موهبة / تالنت",
   "options": [
-   "product",
-   "testing",
-   "housing",
-   "talent"
+   "success",
+   "opinion",
+   "talent",
+   "being"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"talent\" وتعني: موهبة / تالنت.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -2797,12 +2797,12 @@
   "prompt": "She has real ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "discussion",
+   "ability",
+   "effect",
    "talent",
-   "credit",
-   "episode"
+   "schoolchild"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"talent\" بمعنى موهبة / تالنت. الترجمة: عندها موهبة حقيقية.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2815,10 +2815,10 @@
   "prompt": "What does \"temperature\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"temperature\":",
   "options": [
-   "قوة / كهربا",
+   "إنتاج",
    "درجة حرارة / تمبريتشر",
-   "جمال / بيوتي",
-   "رد / استجابة"
+   "فصل / تشابتر",
+   "العكس / أوبوزيت"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"temperature\" هو: درجة حرارة / تمبريتشر. مثال: درجة الحرارة 40 النهارده.",
@@ -2833,9 +2833,9 @@
   "prompt": "Which English word means: درجة حرارة / تمبريتشر?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: درجة حرارة / تمبريتشر",
   "options": [
-   "discussion",
-   "centimeter",
-   "escalator",
+   "museum",
+   "episode",
+   "east",
    "temperature"
   ],
   "answerIndex": 3,
@@ -2851,12 +2851,12 @@
   "prompt": "The ______ is 40 today.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "happening",
-   "manager",
-   "village",
-   "temperature"
+   "committee",
+   "context",
+   "temperature",
+   "strike"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"temperature\" بمعنى درجة حرارة / تمبريتشر. الترجمة: درجة الحرارة 40 النهارده.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -2869,9 +2869,9 @@
   "prompt": "What does \"thousand\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"thousand\":",
   "options": [
-   "مليون",
    "مية / هاندرد",
-   "رابع",
+   "تالت",
+   "صفر / زيرو",
    "ألف / ثاوزند"
   ],
   "answerIndex": 3,
@@ -2887,9 +2887,9 @@
   "prompt": "Which English word means: ألف / ثاوزند?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: ألف / ثاوزند",
   "options": [
-   "third",
-   "fourth",
    "million",
+   "zero",
+   "hundred",
    "thousand"
   ],
   "answerIndex": 3,
@@ -2905,10 +2905,10 @@
   "prompt": "A ______ people came.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "fourth",
-   "hundred",
+   "zero",
+   "third",
    "thousand",
-   "million"
+   "hundred"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"thousand\" بمعنى ألف / ثاوزند. الترجمة: ألف شخص جو.",
@@ -2923,12 +2923,12 @@
   "prompt": "What does \"truck\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"truck\":",
   "options": [
+   "كود",
+   "فراخ / تشيكن",
    "نقل / تراك",
-   "نوت / ملاحظة",
-   "غدا / لانش",
-   "رجل / ليج"
+   "شريك / بارتنر"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"truck\" هو: نقل / تراك. مثال: العربية النقل قفلت الطريق.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -2941,9 +2941,9 @@
   "prompt": "Which English word means: نقل / تراك?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: نقل / تراك",
   "options": [
-   "photo",
-   "language",
-   "mind",
+   "computer",
+   "match",
+   "program",
    "truck"
   ],
   "answerIndex": 3,
@@ -2959,12 +2959,12 @@
   "prompt": "The ______ blocked the road.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "orange",
-   "partner",
-   "weather",
-   "truck"
+   "game",
+   "truck",
+   "money",
+   "letter"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"truck\" بمعنى نقل / تراك. الترجمة: العربية النقل قفلت الطريق.",
   "topic": "Vocabulary in context (A1)",
   "source": "generated-vocab"
@@ -3085,12 +3085,12 @@
   "prompt": "What does \"blame\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"blame\":",
   "options": [
-   "احترام / ريسبكت",
-   "مية البحر",
    "لوم / بليم",
-   "اللي وصل متأخر"
+   "واجب / ديوتي",
+   "عملية / أوبريشن",
+   "إصابة / إنجري"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"blame\" هو: لوم / بليم. مثال: متحطش اللوم عليا.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -3103,12 +3103,12 @@
   "prompt": "Which English word means: لوم / بليم?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: لوم / بليم",
   "options": [
-   "variety",
-   "insurance",
    "blame",
-   "carelessness"
+   "debt",
+   "term",
+   "theory"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"blame\" وتعني: لوم / بليم.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -3122,11 +3122,11 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "schoolmate",
-   "turning",
-   "coverage",
-   "blame"
+   "blame",
+   "skin",
+   "journal"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "الكلمة الصحيحة هي \"blame\" بمعنى لوم / بليم. الترجمة: متحطش اللوم عليا.",
   "topic": "Vocabulary in context (B1)",
   "source": "generated-vocab"
@@ -3139,12 +3139,12 @@
   "prompt": "What does \"bowl\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bowl\":",
   "options": [
+   "سبب",
+   "عالم / دنيا",
    "بولة / بول",
-   "بوست / منشور",
-   "مجموعة / كولكشن",
-   "إجابة"
+   "سرير"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"bowl\" هو: بولة / بول. مثال: كل بولة شوربة.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -3157,12 +3157,12 @@
   "prompt": "Which English word means: بولة / بول?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: بولة / بول",
   "options": [
-   "today",
    "bowl",
-   "period",
-   "luck"
+   "shirt",
+   "holiday",
+   "person"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"bowl\" وتعني: بولة / بول.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -3176,9 +3176,9 @@
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
    "bowl",
-   "apple",
-   "example",
-   "technology"
+   "rule",
+   "computer",
+   "period"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"bowl\" بمعنى بولة / بول. الترجمة: كل بولة شوربة.",
@@ -3194,9 +3194,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"chicken\":",
   "options": [
    "فراخ / تشيكن",
-   "لعبة / ماتش",
-   "شخصية / كاركتر",
-   "نهر"
+   "وقت / مرة",
+   "فصل / حصة",
+   "رقم"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"chicken\" هو: فراخ / تشيكن. مثال: شويت فراخ.",
@@ -3211,12 +3211,12 @@
   "prompt": "Which English word means: فراخ / تشيكن?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: فراخ / تشيكن",
   "options": [
-   "gift",
-   "care",
-   "minute",
-   "chicken"
+   "chicken",
+   "coffee",
+   "sale",
+   "color"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"chicken\" وتعني: فراخ / تشيكن.",
   "topic": "Vocabulary: noun (A1)",
   "source": "generated-vocab"
@@ -3229,10 +3229,10 @@
   "prompt": "I grilled some ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "living",
-   "list",
+   "result",
+   "piece",
    "chicken",
-   "church"
+   "wind"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"chicken\" بمعنى فراخ / تشيكن. الترجمة: شويت فراخ.",
@@ -3247,10 +3247,10 @@
   "prompt": "What does \"context\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"context\":",
   "options": [
-   "محاولة / أتمبت",
+   "فصل / تشابتر",
    "خلفية / باكجراوند",
    "سياق / كونتكست",
-   "إنفاق / سبيندينج"
+   "معلقة أكل كبيرة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"context\" هو: سياق / كونتكست. مثال: اقراه في سياقه.",
@@ -3265,9 +3265,9 @@
   "prompt": "Which English word means: سياق / كونتكست?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: سياق / كونتكست",
   "options": [
-   "direction",
-   "product",
-   "unit",
+   "contact",
+   "shot",
+   "magic",
    "context"
   ],
   "answerIndex": 3,
@@ -3283,12 +3283,12 @@
   "prompt": "Read it in ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "context",
-   "google",
-   "twitter",
-   "cost"
+   "ability",
+   "experience",
+   "market",
+   "context"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"context\" بمعنى سياق / كونتكست. الترجمة: اقراه في سياقه.",
   "topic": "Vocabulary in context (A2)",
   "source": "generated-vocab"
@@ -3297,54 +3297,54 @@
   "id": "q-voc-004584",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "B1",
+  "level": "B2",
   "prompt": "What does \"coverage\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"coverage\":",
   "options": [
-   "جليس أطفال",
-   "خدمة",
-   "تغطية / كوفريج",
-   "معركة / باتل"
+   "جريدة شعبية مثيرة",
+   "سبب",
+   "إحساس مسبق بحاجة وحشة",
+   "تغطية / كوفريج"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"coverage\" هو: تغطية / كوفريج. مثال: التغطية الإخبارية كانت ضخمة.",
-  "topic": "Vocabulary: noun (B1)",
+  "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-004585",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "B1",
+  "level": "B2",
   "prompt": "Which English word means: تغطية / كوفريج?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تغطية / كوفريج",
   "options": [
-   "length",
-   "coverage",
-   "model",
-   "majority"
+   "transistor",
+   "invariable",
+   "respiration",
+   "coverage"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"coverage\" وتعني: تغطية / كوفريج.",
-  "topic": "Vocabulary: noun (B1)",
+  "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-004586",
   "skill": "vocabulary",
   "type": "fill-blank",
-  "level": "B1",
+  "level": "B2",
   "prompt": "The news ______ was huge.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "operation",
-   "handball",
+   "hyperbole",
+   "armful",
    "coverage",
-   "season"
+   "bathhouse"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"coverage\" بمعنى تغطية / كوفريج. الترجمة: التغطية الإخبارية كانت ضخمة.",
-  "topic": "Vocabulary in context (B1)",
+  "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
  },
  {
@@ -3409,12 +3409,12 @@
   "prompt": "What does \"display\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"display\":",
   "options": [
-   "مدى / نطاق / رينج",
-   "تعليم",
-   "اختيار / تشويس",
-   "شاشة / عرض / ديسبلاي"
+   "شاشة / عرض / ديسبلاي",
+   "طيران / فلايت",
+   "إضافة",
+   "سنتر / وسط"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"display\" هو: شاشة / عرض / ديسبلاي. مثال: الشاشة بايظة.",
   "topic": "Vocabulary: noun (A2)",
   "source": "generated-vocab"
@@ -3428,9 +3428,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: شاشة / عرض / ديسبلاي",
   "options": [
    "display",
-   "napkin",
-   "software",
-   "training"
+   "system",
+   "choice",
+   "kilogram"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"display\" وتعني: شاشة / عرض / ديسبلاي.",
@@ -3445,10 +3445,10 @@
   "prompt": "The ______ is broken.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
-   "suit",
-   "testing",
+   "twitter",
+   "listening",
    "display",
-   "napkin"
+   "system"
   ],
   "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"display\" بمعنى شاشة / عرض / ديسبلاي. الترجمة: الشاشة بايظة.",
@@ -3513,54 +3513,54 @@
   "id": "q-voc-004596",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "B1",
+  "level": "B2",
   "prompt": "What does \"funding\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"funding\":",
   "options": [
-   "سويت شيرت",
-   "مستوطن في منطقة جديدة",
-   "ضريبة",
+   "فكرة غلط",
+   "كيس مخدة",
+   "بوّاب",
    "تمويل / فاندينج"
   ],
   "answerIndex": 3,
   "explanationAr": "معنى \"funding\" هو: تمويل / فاندينج. مثال: المشروع فقد تمويله.",
-  "topic": "Vocabulary: noun (B1)",
+  "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-004597",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "B1",
+  "level": "B2",
   "prompt": "Which English word means: تمويل / فاندينج?",
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: تمويل / فاندينج",
   "options": [
-   "loss",
-   "alternative",
-   "funding",
-   "seaweed"
+   "cannonball",
+   "mogul",
+   "pallet",
+   "funding"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "الكلمة الصحيحة هي \"funding\" وتعني: تمويل / فاندينج.",
-  "topic": "Vocabulary: noun (B1)",
+  "topic": "Vocabulary: noun (B2)",
   "source": "generated-vocab"
  },
  {
   "id": "q-voc-004598",
   "skill": "vocabulary",
   "type": "fill-blank",
-  "level": "B1",
+  "level": "B2",
   "prompt": "The project lost its ______.",
   "promptAr": "أكمل الجملة بالكلمة المناسبة:",
   "options": [
+   "collocation",
+   "skateboard",
    "funding",
-   "firm",
-   "finding",
-   "taste"
+   "aircraft"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "الكلمة الصحيحة هي \"funding\" بمعنى تمويل / فاندينج. الترجمة: المشروع فقد تمويله.",
-  "topic": "Vocabulary in context (B1)",
+  "topic": "Vocabulary in context (B2)",
   "source": "generated-vocab"
  },
  {
@@ -3571,10 +3571,10 @@
   "prompt": "What does \"incredible\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"incredible\":",
   "options": [
-   "إقليمي / ريجيونال",
+   "بسيط / ماينور",
    "لا يصدق / إنكريديبل",
-   "مزيف / فيك",
-   "رغّاي وبيحب الكلام"
+   "عالمي / جلوبال",
+   "شمالي"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"incredible\" هو: لا يصدق / إنكريديبل. مثال: المنظر لا يصدق.",
@@ -3590,9 +3590,9 @@
   "promptAr": "اختر الكلمة الإنجليزية التي معناها: لا يصدق / إنكريديبل",
   "options": [
    "incredible",
-   "awesome",
-   "various",
-   "historical"
+   "aware",
+   "weird",
+   "faraway"
   ],
   "answerIndex": 0,
   "explanationAr": "الكلمة الصحيحة هي \"incredible\" وتعني: لا يصدق / إنكريديبل.",

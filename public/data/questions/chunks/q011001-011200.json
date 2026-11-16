@@ -7,12 +7,12 @@
   "prompt": "What does \"succinct\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"succinct\":",
   "options": [
-   "مش مسكون / من غير سكان",
-   "ديازو (كيمياء)",
    "مختصر وواضح",
-   "كريم ومتسامح وقت القدرة"
+   "فوق صوتي",
+   "خاص بالدير",
+   "ينفع يترجّع"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"succinct\" هو: مختصر وواضح. مثال: ادّينا ملخص مختصر وواضح للتقرير.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -21,18 +21,18 @@
   "id": "q-voc-011002",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"superficially\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"superficially\":",
   "options": [
+   "محليًا جوه البلد",
+   "بسخرية وشك في النوايا",
    "بشكل سطحي",
-   "من حيث العدد",
-   "بحماس وحيوية",
-   "بفخامة"
+   "بانتصار"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"superficially\" هو: بشكل سطحي. مثال: المبنيين باينين شبه بعض ظاهريًا من برّه.",
-  "topic": "Vocabulary: adverb (C2)",
+  "topic": "Vocabulary: adverb (C1)",
   "source": "generated-vocab"
  },
  {
@@ -43,12 +43,12 @@
   "prompt": "What does \"sweetener\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sweetener\":",
   "options": [
-   "حامل كتب (جنب الرف)",
-   "حالة إهمال وتلف",
-   "مُحلّي",
-   "حجة تخبي السبب الحقيقي"
+   "جوزة الطيب",
+   "وقاية طبية",
+   "دفة التوجيه",
+   "مُحلّي"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"sweetener\" هو: مُحلّي. مثال: هي بتستخدم مُحلّي بدل السكر في الشاي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -61,12 +61,12 @@
   "prompt": "What does \"taxonomic\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"taxonomic\":",
   "options": [
-   "مش ندمان",
-   "من غير حمالات",
+   "جدلي وهجومي",
    "متعلق بتصنيف الكائنات",
-   "هلامي زي الجيلي"
+   "جوفي (مياه)",
+   "رنّان ومزعج"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"taxonomic\" هو: متعلق بتصنيف الكائنات. مثال: الباحثين عدّلوا التصنيف العلمي للنبتة.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -75,18 +75,18 @@
   "id": "q-voc-011005",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"telltale\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"telltale\":",
   "options": [
-   "منفصل الأوراق (زي الكشكول)",
-   "وشه جامد من غير تعابير",
-   "كاشف للحقيقة",
-   "مش مفهوم خالص"
+   "خيالي ومش واقعي",
+   "لبق ومراعي لمشاعر غيره",
+   "وديع وسهل توجيهه",
+   "كاشف للحقيقة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"telltale\" هو: كاشف للحقيقة. مثال: آثار الرجلين المليانة طين كانت علامة كاشفة لوجود زوار.",
-  "topic": "Vocabulary: adjective (C2)",
+  "topic": "Vocabulary: adjective (C1)",
   "source": "generated-vocab"
  },
  {
@@ -98,9 +98,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"thoughtless\":",
   "options": [
    "مش مراعي لمشاعر غيره",
-   "هادف وعنده عزيمة",
-   "حسب ترتيب الحروف",
-   "على مستوى المدينة"
+   "مضاد للبكتيريا",
+   "في وقت مزعج",
+   "ودود / فريندلي"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"thoughtless\" هو: مش مراعي لمشاعر غيره. مثال: تعليقه اللي ما راعاش مشاعرها جرحها جدًا.",
@@ -115,9 +115,9 @@
   "prompt": "What does \"thrower\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"thrower\":",
   "options": [
-   "سمك الحربة (سيف)",
-   "محظية تاريخيًا",
-   "قضاء كامل على حاجة",
+   "علوم الغيبيات والسحر",
+   "قنطور نص إنسان وحصان",
+   "رمح رياضي",
    "رامي"
   ],
   "answerIndex": 3,
@@ -133,12 +133,12 @@
   "prompt": "What does \"thud\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"thud\":",
   "options": [
-   "المجاملة والاحترام بين الدول",
-   "تلميح / إشارة",
-   "قابلية الهضم",
-   "خبطة مكتومة"
+   "مسار الشمس الظاهري",
+   "خبطة مكتومة",
+   "فجل ياباني أبيض",
+   "مقلاع أو منجنيق"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"thud\" هو: خبطة مكتومة. مثال: الكتاب التقيل نزل بخبطة مكتومة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -151,12 +151,12 @@
   "prompt": "What does \"titular\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"titular\":",
   "options": [
-   "بقدرات شبه إلهية",
+   "طموحه أكبر من قدرته",
+   "متعلق بالتحلل الحراري",
    "بالاسم بس",
-   "متعلق بفن الوعظ",
-   "شايخ / متقدّم في العمر"
+   "متعدد الألوان ومتغيّر"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"titular\" هو: بالاسم بس. مثال: هو فضل القائد بالاسم بس من غير سلطة حقيقية.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -169,12 +169,12 @@
   "prompt": "What does \"torrential\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"torrential\":",
   "options": [
-   "خاص بالاثني عشر",
+   "أوستنيتي (نوع صلب)",
+   "محايد / غير متحيز",
    "غزير جدًا",
-   "بلا حدود",
-   "متعلق بالجماع (حيوانات)"
+   "فيه خيانة للدولة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"torrential\" هو: غزير جدًا. مثال: المطر الغزير جدًا غرّق الشوارع في خلال ساعة.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -187,12 +187,12 @@
   "prompt": "What does \"trad\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"trad\":",
   "options": [
-   "اختصار (نص)",
-   "نبتونيوم (عنصر)",
-   "تحسن",
-   "جاز تقليدي"
+   "شريحة بيكون",
+   "محاكاة سلوك أو نظام",
+   "جاز تقليدي",
+   "رنين الصوت"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"trad\" هو: جاز تقليدي. مثال: الفرقة بتعزف جاز تقليدي في الحانة المحلية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -205,12 +205,12 @@
   "prompt": "What does \"valence\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"valence\":",
   "options": [
-   "تتينة أطفال",
-   "التشرّد",
-   "تكافؤ كيميائي",
-   "المؤمنين غير رجال الدين"
+   "كربيد مركب كربوني",
+   "دهر طويل جدًا",
+   "نقل مشاعر للمعالج نفسيًا",
+   "تكافؤ كيميائي"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"valence\" هو: تكافؤ كيميائي. مثال: الدرس بيشرح التكافؤ بأمثلة كيميائية بسيطة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -223,10 +223,10 @@
   "prompt": "What does \"villager\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"villager\":",
   "options": [
-   "رد فعل / رياكشن",
+   "جواهرجي",
    "واحد من أهل القرية",
-   "عصاية / ستيك",
-   "جمعية / تجميع / أسيمبلي"
+   "فول صويا",
+   "عصاية / ستيك"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"villager\" هو: واحد من أهل القرية. مثال: واحد من أهل القرية ورّانا السكة للبئر.",
@@ -241,12 +241,12 @@
   "prompt": "What does \"virtuoso\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"virtuoso\":",
   "options": [
-   "شيطنة (تصوير كشرير)",
+   "متملّق / منافق",
+   "نسخة من جين",
    "عازف بارع جدًا",
-   "وصية أو عمل صالح",
-   "الطور الاستوائي"
+   "مانح (الشخص اللي بيمنح حق أو ملكية)"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"virtuoso\" هو: عازف بارع جدًا. مثال: العازف الشاب البارع عزف كونشيرتو كمان صعب.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -259,12 +259,12 @@
   "prompt": "What does \"wail\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"wail\":",
   "options": [
+   "يتحمّس ويتكلم بحماس",
+   "يعرقل بالتهرّب من الرد",
    "ينوح بصوت عالي",
-   "يعيد إغلاق",
-   "يخنق بتغطية النفس",
-   "ينقض فجأة"
+   "يورّط في نزاع"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"wail\" هو: ينوح بصوت عالي. مثال: سمعنا طفل بيعيط بصوت عالي من بعيد.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -277,12 +277,12 @@
   "prompt": "What does \"welder\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"welder\":",
   "options": [
-   "نقع وتليين",
-   "لحّام معادن",
-   "عظمة ترقوة طيور متفرعة",
-   "ندفة (رواسب)"
+   "كرة بتتدحرج على الأرض",
+   "منشّط / حاجة بتديك طاقة",
+   "عربية كابريوليه (مكشوفة)",
+   "لحّام معادن"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"welder\" هو: لحّام معادن. مثال: لحّام المعادن لبس ماسك عشان يحمي عينيه.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -295,10 +295,10 @@
   "prompt": "What does \"whiz\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"whiz\":",
   "options": [
-   "ضريبة / رسم جمركي",
-   "قدرات رياضية بدنية",
+   "صاحب مقرّب بالمحسوبية",
+   "جهاز تقوية الإشارة",
    "شاطر جدًا في حاجة",
-   "عدم الالتزام (بالقواعد)"
+   "حيوان ألبكة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"whiz\" هو: شاطر جدًا في حاجة. مثال: أختي شاطرة جدًا في تصليح الكمبيوترات.",
@@ -313,12 +313,12 @@
   "prompt": "What does \"wingman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"wingman\":",
   "options": [
-   "واقي شمس",
-   "قلاية",
-   "طيار جناح مساعد",
-   "كوخ فقير / عشة"
+   "لحم السلطعون",
+   "فوهة بركان انهيارية كبيرة",
+   "حبل بأنشوطة للصيد",
+   "طيار جناح مساعد"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"wingman\" هو: طيار جناح مساعد. مثال: الطيار المساعد فضل قريب منه أثناء طلعة التدريب.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -331,12 +331,12 @@
   "prompt": "What does \"abnormality\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"abnormality\":",
   "options": [
-   "شخص فاز بتكريم كبير",
-   "إيفيدرين (دوا بيوسّع الشعب الهوائية)",
-   "حاجة غير طبيعية",
-   "هرمون ودواء كورتيزون"
+   "الرفع لأس",
+   "زوائد شجرية (خلية عصبية)",
+   "خلل صغير غامض",
+   "حاجة غير طبيعية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"abnormality\" هو: حاجة غير طبيعية. مثال: الأشعة ما بيّنتش أي حاجة غير طبيعية في المخ.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -349,12 +349,12 @@
   "prompt": "What does \"acme\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"acme\":",
   "options": [
-   "خلية دم بيضاء حبيبية",
-   "دوشة وهرج",
+   "حمض أميني ميثيونين",
    "قمة التفوق",
-   "شجر الأثل"
+   "لا مبالاة وهدوء",
+   "غضروف هلالي"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"acme\" هو: قمة التفوق. مثال: النقاد قالوا إن الفيلم ده قمة مشواره الفني.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -367,12 +367,12 @@
   "prompt": "What does \"addendum\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"addendum\":",
   "options": [
-   "خاطف شخص",
-   "مادة قلوية",
-   "فرد في الميليشيا",
-   "ملحق إضافي"
+   "شخص متحرر أخلاقيًا",
+   "شخص بيعاني من أرق",
+   "ملحق إضافي",
+   "شخص بيحقق نجاحات"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"addendum\" هو: ملحق إضافي. مثال: هم أرفقوا ملحق إضافي بالعقد الأصلي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -386,9 +386,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"adsorption\":",
   "options": [
    "امتزاز على السطح",
-   "مصادِق / أداة التحقق",
-   "أنف / متكبّر",
-   "البدائية (مذهب فني)"
+   "انغماس مفرط في الملذات",
+   "متوازي أضلاع",
+   "غازباتشو (شوربة طماطم باردة)"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"adsorption\" هو: امتزاز على السطح. مثال: الامتزاز بيحبس جزيئات الغاز على سطح صلب.",
@@ -403,12 +403,12 @@
   "prompt": "What does \"affront\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"affront\":",
   "options": [
-   "قصيدة رثاء",
    "إهانة مباشرة",
-   "صخر البورفير (أحمر مائل للبنفسجي)",
-   "فن الخط الجميل"
+   "عرض مضاد",
+   "أصولية والتزام حرفي بالعقيدة",
+   "الثريونين (حمض أميني)"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"affront\" هو: إهانة مباشرة. مثال: هي اعتبرت رفضه إهانة شخصية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -421,12 +421,12 @@
   "prompt": "What does \"amenable\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"amenable\":",
   "options": [
-   "جذّاب وساحر",
-   "ربوي (بفائدة فاحشة)",
+   "أقصى نقطة جنوبية",
    "متقبل ومتعاون",
-   "كل أسبوعين"
+   "شبه استوائي",
+   "محفوف بالمخاطر بالعامية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"amenable\" هو: متقبل ومتعاون. مثال: صاحب البيت بان إنه متقبل فكرة تقليل الإيجار.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -439,12 +439,12 @@
   "prompt": "What does \"annotation\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"annotation\":",
   "options": [
-   "مشرحة حفظ الجثث",
+   "حاجة بنفس الاسم",
+   "ترقية / تفضيل",
    "ملاحظة توضيحية",
-   "برنامج مدمج في جهاز",
-   "خشب الساج"
+   "بريد جوي"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"annotation\" هو: ملاحظة توضيحية. مثال: ملاحظة على الهامش شرحت الإشارة الموجودة في النص.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -457,9 +457,9 @@
   "prompt": "What does \"antibacterial\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"antibacterial\":",
   "options": [
-   "خاص بالأوركسترا",
-   "ساذج / غير دنيوي",
-   "عجيب ومبهر",
+   "فعلي / حقيقي",
+   "خاص بحاسة اللمس",
+   "مش متحمس",
    "مضاد للبكتيريا"
   ],
   "answerIndex": 3,
@@ -475,9 +475,9 @@
   "prompt": "What does \"argumentative\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"argumentative\":",
   "options": [
-   "خاص بتحليل المصل",
-   "ملم / عنده خبرة بـ",
-   "متعمد أو عنيد",
+   "متعلق بسقف الفم",
+   "خماسي النغمات",
+   "حلزوني",
    "بيجادل كتير"
   ],
   "answerIndex": 3,
@@ -493,10 +493,10 @@
   "prompt": "What does \"asymptomatic\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"asymptomatic\":",
   "options": [
-   "ممكن يتحسب",
-   "مالوش حدود",
+   "مش قادر يعبّر بوضوح",
+   "ضعيف / مالوش أساس قوي",
    "من غير أعراض",
-   "تافه / قليل الأهمية"
+   "عدواني / ميّال للحرب"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"asymptomatic\" هو: من غير أعراض. مثال: الشخص اللي من غير أعراض ممكن برضه يحمل الفيروس.",
@@ -511,12 +511,12 @@
   "prompt": "What does \"baccalaureate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"baccalaureate\":",
   "options": [
-   "نيابة كنسية",
-   "عامل زراعي مهاجر (مكسيكي)",
-   "غرابة",
-   "شهادة ثانوية أو جامعية"
+   "شهادة ثانوية أو جامعية",
+   "تنجيد الأثاث وأقمشته",
+   "جرّاح مخ وأعصاب",
+   "كبريتات"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"baccalaureate\" هو: شهادة ثانوية أو جامعية. مثال: هي ذاكرت جامد لامتحانات البكالوريا.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -529,12 +529,12 @@
   "prompt": "What does \"bearable\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bearable\":",
   "options": [
-   "وعّاظي / بيدّي نصايح كتير",
-   "ملوش مثيل",
-   "مش بينضغط",
-   "ممكن احتماله"
+   "متعلق بالمسيح المنتظر",
+   "ساكن / هادئ",
+   "ممكن احتماله",
+   "على هيئة جسيمات دقيقة"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"bearable\" هو: ممكن احتماله. مثال: المروحة خلّت حر الصيف أسهل في الاحتمال.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -547,12 +547,12 @@
   "prompt": "What does \"beehive\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"beehive\":",
   "options": [
-   "كركبة من حاجات مختلفة",
-   "تباين الضوء والظل في الفن",
-   "دور المدرس الخصوصي",
-   "خلية نحل"
+   "خلية نحل",
+   "هجوم مضاد",
+   "خبز الفطير اليهودي (ماتزا)",
+   "طرف متدخل في دعوى"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"beehive\" هو: خلية نحل. مثال: النحّال فتح خلية النحل الخشب بحرص.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -565,12 +565,12 @@
   "prompt": "What does \"beltway\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"beltway\":",
   "options": [
+   "شجيرة القطف الملحي",
    "طريق دائري",
-   "نصّاب",
-   "رئيس ديني كبير",
-   "كتلة حشائش"
+   "التهاب الزايدة الدودية",
+   "عرافة / فأل"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"beltway\" هو: طريق دائري. مثال: الزحمة الشديدة بطّأت العربيات على الطريق الدائري.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -583,12 +583,12 @@
   "prompt": "What does \"bodybuilder\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bodybuilder\":",
   "options": [
-   "زهرة قطرة الثلج",
-   "قابلية السحب (معادن)",
-   "كوازار (جسم فلكي شديد اللمعان)",
-   "لاعب كمال أجسام"
+   "ذبابة منزلية",
+   "لاعب كمال أجسام",
+   "طرح",
+   "قاطع أشجار"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"bodybuilder\" هو: لاعب كمال أجسام. مثال: لاعب كمال الأجسام بيتمرن في الجيم بتاعنا كل يوم بالليل.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -601,12 +601,12 @@
   "prompt": "What does \"botanist\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"botanist\":",
   "options": [
-   "عدم تجانس",
-   "نجار وصلات وأبواب",
-   "عالم نبات",
-   "مقيم بيدفع أكل وسكن"
+   "مقابل / مرتبط ببعض",
+   "متسلّق / مسافر مشي",
+   "لقمة العظم (مفصل)",
+   "عالم نبات"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"botanist\" هو: عالم نبات. مثال: عالم النبات اتعرف على نبتة نادرة جنب النهر.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -619,10 +619,10 @@
   "prompt": "What does \"calmness\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"calmness\":",
   "options": [
-   "أساس / بيسيس",
+   "طبق فنجان",
    "هدوء",
-   "هدر / ويست",
-   "توليفة / كومبينيشن"
+   "حكّاء",
+   "سعة / كاباسيتي"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"calmness\" هو: هدوء. مثال: هدوءها طمّن الكل أثناء الطوارئ.",
@@ -637,12 +637,12 @@
   "prompt": "What does \"canny\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"canny\":",
   "options": [
-   "استعماري النزعة",
-   "مش بيتكسر بسهولة",
    "ذكي وحريص",
-   "ظالم بشكل ما يتقبلش"
+   "مشين / مسيء للسمعة",
+   "بيصفّر في صدره",
+   "دقيق ومتطلب"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"canny\" هو: ذكي وحريص. مثال: المشتري الذكي دايمًا بيقارن الأسعار قبل ما يشتري.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -655,12 +655,12 @@
   "prompt": "What does \"caveman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"caveman\":",
   "options": [
+   "غدا خفيف بجنوب آسيا",
+   "داعِم أو مموّل",
    "إنسان الكهوف",
-   "رئاسة البلدية",
-   "تعددية",
-   "الخصية"
+   "شخص بيشرب خمر كتير"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"caveman\" هو: إنسان الكهوف. مثال: الكارتون ورّى إنسان كهوف شايل عصاية غليظة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -673,10 +673,10 @@
   "prompt": "What does \"centimeter\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"centimeter\":",
   "options": [
-   "مجهود / إيفورت",
+   "فضة / سيلفر",
    "سنتيمتر",
-   "طلب / ريكويست",
-   "مساعد / أسيستانت"
+   "براند / ماركة",
+   "حلقة / إبيسود"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"centimeter\" هو: سنتيمتر. مثال: قص الشريط أقصر من ده بسنتيمتر واحد.",
@@ -691,12 +691,12 @@
   "prompt": "What does \"chairwoman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"chairwoman\":",
   "options": [
+   "يوكليلي جيتار صغير",
+   "نشارة خشب",
    "رئيسة مجلس أو لجنة",
-   "تعبير ملطّف",
-   "كلام فاضي",
-   "مسجد"
+   "البخل"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"chairwoman\" هو: رئيسة مجلس أو لجنة. مثال: رئيسة اللجنة بدأت الاجتماع الساعة تسعة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -709,12 +709,12 @@
   "prompt": "What does \"epiphyseal\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"epiphyseal\":",
   "options": [
-   "متعلق بنهاية العظمة",
-   "مهموس صوتيًا",
-   "ناقد ومنتقِد بشدة",
-   "نحاسي اللون"
+   "مسيء للمقدسات",
+   "فظيع فوق الوصف",
+   "مستحيل تبريره",
+   "متعلق بنهاية العظمة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"epiphyseal\" هو: متعلق بنهاية العظمة. مثال: الإصابة أثّرت على صفيحة النمو عند نهاية عظمة الطفل.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -727,12 +727,12 @@
   "prompt": "What does \"clipboard\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"clipboard\":",
   "options": [
-   "إثارة خفيفة / دغدغة",
-   "ركيزة أساسية",
-   "ملخص سريع",
-   "لوح بمشبك ورق"
+   "لوح بمشبك ورق",
+   "أنديزيت (صخر بركاني)",
+   "توفيق وتصالح",
+   "التابير (حيوان بخرطوم قصير)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"clipboard\" هو: لوح بمشبك ورق. مثال: الممرضة شالت لوح بمشبك عليه سجلات المرضى.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -746,9 +746,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"confessor\":",
   "options": [
    "قس بيتلقى الاعتراف",
-   "ماكينة كبس وتنعيم قماش",
-   "إقليم حيوي",
-   "مركب للسكن"
+   "جارية في قصر عثماني",
+   "استعداد وموهبة طبيعية",
+   "كلب هجين بالعامية"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"confessor\" هو: قس بيتلقى الاعتراف. مثال: القس كان بيسمع اعترافها لسنين.",
@@ -759,18 +759,18 @@
   "id": "q-voc-011043",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"connoisseur\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"connoisseur\":",
   "options": [
-   "مساعد لاعب جولف",
+   "تصرف أو صفة غريبة",
+   "عفريت صغير مشاغب",
    "خبير ومتذوق",
-   "صحفي في جريدة",
-   "طول النظر"
+   "سحب على المكشوف"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"connoisseur\" هو: خبير ومتذوق. مثال: خبير القهوة يقدر يميّز فروق الطعم البسيطة.",
-  "topic": "Vocabulary: noun (C2)",
+  "topic": "Vocabulary: noun (C1)",
   "source": "generated-vocab"
  },
  {
@@ -781,12 +781,12 @@
   "prompt": "What does \"contemplative\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"contemplative\":",
   "options": [
-   "خاص بطرق التدريس",
-   "قابل للطعن",
-   "فيه حب ورغبة",
-   "متأمل وهادي"
+   "خاص بالطب التقليدي الحديث",
+   "متعلق بالمنفى",
+   "متأمل وهادي",
+   "غير أنيق"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"contemplative\" هو: متأمل وهادي. مثال: هو قعد جنب الشباك في حالة تأمل وهدوء.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -799,12 +799,12 @@
   "prompt": "What does \"convocation\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"convocation\":",
   "options": [
-   "الكآبة والقتامة",
-   "الجرسيات (زهرة)",
-   "مبارزة بالرماح",
-   "اجتماع رسمي كبير"
+   "اجتماع رسمي كبير",
+   "أول الدفعة وخطيب التخرج",
+   "حاجة رخيصة وقليلة الجودة",
+   "التشنج العضلي"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"convocation\" هو: اجتماع رسمي كبير. مثال: الجامعة عملت احتفال رسمي كبير لتكريم الخريجين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -817,12 +817,12 @@
   "prompt": "What does \"crosse\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"crosse\":",
   "options": [
+   "شجر الهيكوري الأمريكي",
+   "مليّن أو منعّم",
    "عصاية لاكروس بشبكة",
-   "عجوز بتعبير مهين",
-   "مغازلة عابرة",
-   "صفيحة رقيقة"
+   "تنظير بالأشعة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"crosse\" هو: عصاية لاكروس بشبكة. مثال: اللاعب مسك الكورة بشبكة عصاية اللاكروس.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -835,12 +835,12 @@
   "prompt": "What does \"culpable\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"culpable\":",
   "options": [
-   "مسؤول عن الغلط",
-   "مكسور الخاطر وخجلان",
-   "ضعيف / مالوش أساس قوي",
-   "حكم الأثرياء"
+   "مرضي ومهووس بالمخيف",
+   "من غير حماية",
+   "في الجهة المقابلة من الجسم",
+   "مسؤول عن الغلط"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"culpable\" هو: مسؤول عن الغلط. مثال: التحقيق لقى المدير مسؤول عن الإهمال.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -853,12 +853,12 @@
   "prompt": "What does \"dag\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"dag\":",
   "options": [
-   "قرابة الدم",
-   "حبة برَد",
-   "لسان العصفور (مكرونة)",
-   "صوف متكتل بروث"
+   "طمي ناعم",
+   "صوف متكتل بروث",
+   "جرس بقرة",
+   "محطة شغل"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"dag\" هو: صوف متكتل بروث. مثال: الفلاح شال كتلة صوف لازق فيها روث من فروة الخروف.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -871,12 +871,12 @@
   "prompt": "What does \"enumerator\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"enumerator\":",
   "options": [
-   "مسكن ألم",
    "موظف جمع بيانات التعداد",
-   "رأس حربي",
-   "أسيكلوفير (دواء فيروسات)"
+   "الانبساطية",
+   "واقي أسفل الرجل",
+   "نضارة لعين واحدة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"enumerator\" هو: موظف جمع بيانات التعداد. مثال: موظف التعداد زار كل بيت في الشارع.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -889,12 +889,12 @@
   "prompt": "What does \"daze\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"daze\":",
   "options": [
+   "تدفق / فلو",
+   "منديل قماش",
    "حالة ذهول",
-   "إصدار / إديشن",
-   "وظيفة / فانكشن",
-   "يافطة إرشاد"
+   "مقاطعة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"daze\" هو: حالة ذهول. مثال: هي رجعت البيت تايهة في حالة ذهول بعد الخبر.",
   "topic": "Vocabulary: noun (B1)",
   "source": "generated-vocab"
@@ -907,10 +907,10 @@
   "prompt": "What does \"deliciously\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"deliciously\":",
   "options": [
-   "بشكل شعاعي من المركز",
+   "بهذه الطريقة (عامية)",
    "بطعم لذيذ",
-   "للأبد بأسلوب أدبي",
-   "بلطف وإحسان"
+   "بنبل وشهامة",
+   "بحزن"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"deliciously\" هو: بطعم لذيذ. مثال: الشوربة كانت كريمي ولذيذة وطعمها غني.",
@@ -925,12 +925,12 @@
   "prompt": "What does \"divination\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"divination\":",
   "options": [
+   "ندم وتوبة",
    "محاولة معرفة الغيب",
-   "خليفة",
-   "تغير نبرة أو تصريف",
-   "قماش بكرام (قاسي)"
+   "علم سلوك الحيوان",
+   "فقيه قانوني"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"divination\" هو: محاولة معرفة الغيب. مثال: المعرض تناول طرق قديمة لمحاولة معرفة الغيب.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -943,12 +943,12 @@
   "prompt": "What does \"gratifyingly\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"gratifyingly\":",
   "options": [
-   "بغباء",
+   "بشكل مفرح ومُرضي",
    "بتقلّب ومزاجية",
-   "بالتبادل بنفس المعنى",
-   "بشكل مفرح ومُرضي"
+   "بشعور بالذنب",
+   "بقلق"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"gratifyingly\" هو: بشكل مفرح ومُرضي. مثال: الطلبة استجابوا كويس للدروس الجديدة بشكل مفرح.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -962,9 +962,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"dracaena\":",
   "options": [
    "نبات الدراسينا",
-   "حرق شمس",
-   "فستان صيفي خفيف",
-   "وسيط"
+   "محل الخردوات والإكسسوارات",
+   "واحد بيدّي معلومات أو توقعات (سباقات)",
+   "انفصال عن دولة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"dracaena\" هو: نبات الدراسينا. مثال: خلّي نبات الدراسينا بعيد عن الشمس المباشرة القوية.",
@@ -979,12 +979,12 @@
   "prompt": "What does \"drunkenness\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"drunkenness\":",
   "options": [
-   "حالة سكر من الشرب",
-   "التحسين والتخفيف",
-   "سياسة حافة الهاوية",
-   "سكسينيل كولين (مرخٍ عضلات)"
+   "مادة طاردة للحشرات",
+   "شخص اجتماعي ومنفتح",
+   "الإفراط في الدلع / الأكل",
+   "حالة سكر من الشرب"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"drunkenness\" هو: حالة سكر من الشرب. مثال: السُكر في الأماكن العامة ممكن يسبب غرامات في بعض الأماكن.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -997,12 +997,12 @@
   "prompt": "What does \"emigrate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"emigrate\":",
   "options": [
-   "يخدع ويضحك عليه",
-   "يحث بإلحاح",
-   "يهاجر لبلد تانية",
-   "يطلع صرخة حادة"
+   "يستطلع / يستكشف",
+   "يجعله مهيّأ / عرضة",
+   "لابس أخف من اللازم",
+   "يهاجر لبلد تانية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"emigrate\" هو: يهاجر لبلد تانية. مثال: هم ناويين يهاجروا بعد ما بنتهم تتخرج.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1015,12 +1015,12 @@
   "prompt": "What does \"emulsion\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"emulsion\":",
   "options": [
+   "مدخل مسقوف بأعمدة",
    "مستحلب",
-   "البرود",
-   "جبيرة تثبيت",
-   "مسؤول تصفية شركة"
+   "شباك في السقف",
+   "ابن تعميد (روحي)"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"emulsion\" هو: مستحلب. مثال: المايونيز مستحلب من الزيت والمية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1034,9 +1034,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"epistemology\":",
   "options": [
    "فلسفة المعرفة",
-   "المجموع الاختباري",
-   "شخص أخرق وقليل الكفاءة",
-   "الأهل والأقارب"
+   "غرفة انتظار أمامية",
+   "انشقاق",
+   "تمتمة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"epistemology\" هو: فلسفة المعرفة. مثال: كورس الفلسفة بتاعها فيه جزء عن فلسفة المعرفة.",
@@ -1052,9 +1052,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"exorcism\":",
   "options": [
    "طقس طرد الأرواح",
-   "سجن للمحكوم عليهم",
-   "صخرة عالية وعرة",
-   "رامي دقيق التصويب"
+   "المُوافِق / مُصدِّق",
+   "عنصر اليود",
+   "غريب من برّه المنطقة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"exorcism\" هو: طقس طرد الأرواح. مثال: الرواية بتوصف طقس طرد أرواح في قرية بعيدة.",
@@ -1069,12 +1069,12 @@
   "prompt": "What does \"fabricate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fabricate\":",
   "options": [
-   "يهتف ضد ويسخر",
-   "يستفز ويغيظ",
-   "يحرّض",
-   "يلفق"
+   "يلفق",
+   "يخزق / يغرز",
+   "يمزّق الجلد / يجرح",
+   "يتجاوز حدود"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"fabricate\" هو: يلفق. مثال: هو حاول يلفق أدلة ضد منافسه.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1087,10 +1087,10 @@
   "prompt": "What does \"fatherhood\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fatherhood\":",
   "options": [
-   "النقابية (مذهب)",
-   "درع الصدر",
+   "إطالة / تمديد",
+   "صبغة الأليزارين الحمرا",
    "الأبوة",
-   "بكتيريا مكورة سبحية"
+   "ترانسفيراز (إنزيم ناقل)"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"fatherhood\" هو: الأبوة. مثال: الأبوة غيّرت طريقة تفكيره في أولوياته.",
@@ -1105,12 +1105,12 @@
   "prompt": "What does \"femoral\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"femoral\":",
   "options": [
-   "من غير قيود",
-   "ودود ومرح / بيحب اللمّة",
-   "متعلق بالفخذ",
-   "خاص بعلاج جذور الأسنان"
+   "فظيع وشديد السوء",
+   "فظ وقليل الذوق",
+   "متمسك بقناعاته القديمة",
+   "متعلق بالفخذ"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"femoral\" هو: متعلق بالفخذ. مثال: الجرّاح صلّح الشريان الفخذي المتضرر.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -1124,9 +1124,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"filibuster\":",
   "options": [
    "مماطلة برلمانية لتعطيل التصويت",
-   "ثنائية اللون",
-   "شريحة تهوية مايلة",
-   "شخص فاسد الأخلاق"
+   "إدلويس (زهرة جبلية بيضا)",
+   "غيظ وانزعاج",
+   "خشب الشجيرة (غلايين)"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"filibuster\" هو: مماطلة برلمانية لتعطيل التصويت. مثال: عضو مجلس الشيوخ استخدم المماطلة البرلمانية عشان يأخر التصويت.",
@@ -1141,12 +1141,12 @@
   "prompt": "What does \"finalize\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"finalize\":",
   "options": [
-   "يحط اللمسات الأخيرة",
-   "يعولم / ينتشر عالميا",
-   "يقلل من قيمة",
-   "ينطق / يعبّر بالصوت"
+   "يلين ويتراجع عن الشدة",
+   "يبثق / يدفع للخارج",
+   "يجسد بمثال",
+   "يحط اللمسات الأخيرة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"finalize\" هو: يحط اللمسات الأخيرة. مثال: محتاجين نخلّص آخر تفاصيل العقد قبل الجمعة.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1159,12 +1159,12 @@
   "prompt": "What does \"fluctuation\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fluctuation\":",
   "options": [
+   "برياني رز متبّل",
+   "مجرم / مخالف",
    "تذبذب",
-   "الفحش",
-   "لعبة الواحد وعشرين",
-   "النترتة (تحويل الأمونيا)"
+   "حشيشة الجاودار (نجيل)"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"fluctuation\" هو: تذبذب. مثال: تذبذب مفاجئ في الجهد الكهربائي بوّظ الأجهزة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1177,12 +1177,12 @@
   "prompt": "What does \"fraudulently\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"fraudulently\":",
   "options": [
-   "بوقاحة ومن غير خجل",
-   "بشكل لا رجعة فيه",
+   "بشر",
    "بطريقة احتيالية",
-   "بإضاءة خافتة"
+   "بشكل منظم وخطوة بخطوة",
+   "بشكل رائع وعجيب"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"fraudulently\" هو: بطريقة احتيالية. مثال: هو خد إعانات بالنصب باستخدام هوية مزوّرة.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -1195,12 +1195,12 @@
   "prompt": "What does \"gander\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"gander\":",
   "options": [
-   "لون أحمر قرمزي",
-   "سهولة المناورة والحركة",
+   "عدم استعمال",
    "ذكر الوز",
-   "إحساس بسيط"
+   "سخرية لاذعة",
+   "رامي دقيق التصويب"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"gander\" هو: ذكر الوز. مثال: ذكر الوز فحّ لما قربنا من البركة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1213,12 +1213,12 @@
   "prompt": "What does \"gauze\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"gauze\":",
   "options": [
+   "صفحة قابلة للطيّ",
    "شاش طبي",
-   "شخص بيتسوّل",
-   "صوص وطريقة شوي ياباني",
-   "زوج الأم أو زوجة الأب"
+   "حدوة مسنودة على الوتد",
+   "إنهاء المناقشة بالتصويت (في البرلمان)"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"gauze\" هو: شاش طبي. مثال: الممرضة غطت الجرح بشاش معقم.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1231,10 +1231,10 @@
   "prompt": "What does \"geometrical\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"geometrical\":",
   "options": [
-   "محترم وجدير بالتقدير",
-   "غير تنافسي",
+   "سريع وسطحي",
+   "مسرّع لتفاعل كيميائي",
    "هندسي",
-   "خاص بالبروستاتا"
+   "وهمي / خيالي"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"geometrical\" هو: هندسي. مثال: السجادة عليها نقش هندسي ملوّن.",
@@ -1249,12 +1249,12 @@
   "prompt": "What does \"ghoul\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"ghoul\":",
   "options": [
-   "من بروفانس / لغة بروفانس",
-   "واحد نكدي عجوز",
-   "ردم عالي لحماية طريق",
-   "غول بياكل الموتى"
+   "غول بياكل الموتى",
+   "أثر جانبي خارجي (اقتصاد)",
+   "مهراس بطاطس",
+   "معجب بيلاحق فرقة موسيقية"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"ghoul\" هو: غول بياكل الموتى. مثال: غول مرعب ظهر في قصة الأشباح.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1267,12 +1267,12 @@
   "prompt": "What does \"grandstand\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"grandstand\":",
   "options": [
-   "شخص بيقبل عرض",
-   "بطيء",
    "مدرج المتفرجين",
-   "وقاحة"
+   "مجموعة سياسية سرية",
+   "تعويض وإصلاح ضرر",
+   "ورقة عشرة جنيه إسترليني"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"grandstand\" هو: مدرج المتفرجين. مثال: المشجعين هتفوا من المدرج المتغطي جنب المضمار.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1285,12 +1285,12 @@
   "prompt": "What does \"grumbling\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"grumbling\":",
   "options": [
+   "بيت عصافير صغير",
    "تذمر",
-   "تمر هندي",
-   "مشتغل بالسحر والغيبيات",
-   "لاكتات"
+   "أمبير (وحدة التيار الكهربي)",
+   "شخص بيتريق على غيره"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"grumbling\" هو: تذمر. مثال: كان فيه تذمر مستمر من الجدول الجديد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1303,12 +1303,12 @@
   "prompt": "What does \"hallucination\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"hallucination\":",
   "options": [
-   "شخص بيصرف فلوس",
-   "إيقاع الكلام أو الموسيقى",
    "هلوسة",
-   "كلورامين (مطهر)"
+   "كيّ الجرح",
+   "وزرة الحيط",
+   "دهن اللبن"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"hallucination\" هو: هلوسة. مثال: قلة النوم ممكن أحيانًا تسبب هلوسة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1321,12 +1321,12 @@
   "prompt": "What does \"hydrophobic\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"hydrophobic\":",
   "options": [
-   "نباتي / خاص بالنبات",
-   "متنقل للشغل",
-   "عيونه مجهدة وزغللة",
-   "طارد للمية"
+   "إسفنجي في تركيب العضم",
+   "طارد للمية",
+   "كسول",
+   "رقيق وصغير وظريف"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"hydrophobic\" هو: طارد للمية. مثال: الجاكت عليه طبقة طاردة للمية عشان المطر.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -1339,12 +1339,12 @@
   "prompt": "What does \"immaterial\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"immaterial\":",
   "options": [
-   "بيلمع وبيلالي",
-   "مالوش تأثير في الموضوع",
-   "من غير ذنب",
-   "مهين وبيقلل من حد"
+   "ممكن إثباته",
+   "كاثودي",
+   "غامض وقليل اللي يعرفه",
+   "مالوش تأثير في الموضوع"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"immaterial\" هو: مالوش تأثير في الموضوع. مثال: رأيك الشخصي مالوش تأثير في المسألة القانونية دي.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -1357,12 +1357,12 @@
   "prompt": "What does \"inefficiency\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"inefficiency\":",
   "options": [
+   "مادة لزجة (صمغ نباتي)",
    "قلة كفاءة",
-   "زياكسانثين (صبغة العين)",
-   "الناتئ الأخرمي بالكتف",
-   "ضربة حظ وحشة"
+   "الهيماتوكريت (نسبة كرات الدم)",
+   "خنوص صغير الخنزير"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"inefficiency\" هو: قلة كفاءة. مثال: المراجعة كشفت قلة كفاءة كبيرة في القسم.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1375,10 +1375,10 @@
   "prompt": "What does \"inflationary\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"inflationary\":",
   "options": [
-   "ساحر وآسر",
+   "كذّاب / مش صادق",
    "بيزوّد التضخم",
-   "حاد وعالي بشكل مزعج",
-   "عشبي مش خشبي"
+   "تطبيقي",
+   "ممكن تركيبه"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"inflationary\" هو: بيزوّد التضخم. مثال: الاقتصاديين حذّروا من ضغوط تضخمية بسبب زيادة التكاليف.",
@@ -1393,12 +1393,12 @@
   "prompt": "What does \"inflexible\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"inflexible\":",
   "options": [
+   "حراري أيوني",
+   "قابل للقسمة",
    "مش مرن",
-   "شيك وملفت بالعامية",
-   "بلا عاطفة",
-   "خاص بالديناميكا الحرارية"
+   "تحت اللسان"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"inflexible\" هو: مش مرن. مثال: قواعد المدير اللي مش مرنة ضايقت الموظفين.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -1411,12 +1411,12 @@
   "prompt": "What does \"inflow\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"inflow\":",
   "options": [
-   "دف بصاجات",
-   "تدفق للداخل",
-   "قلة احترام / استخفاف",
-   "منتصف العصر"
+   "عنبر زنازين",
+   "بيروكسيديز (إنزيم)",
+   "الدادائية",
+   "تدفق للداخل"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"inflow\" هو: تدفق للداخل. مثال: المدينة شهدت تدفق استثمارات جديدة ليها.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1429,12 +1429,12 @@
   "prompt": "What does \"intercom\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"intercom\":",
   "options": [
+   "استنشاق",
+   "ملقّن (مسرح)",
    "إنتركم",
-   "معجم أو حصيلة كلمات",
-   "ألوان وشعار وسيلة نقل",
-   "هدر"
+   "عضو برلمان"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"intercom\" هو: إنتركم. مثال: دوس زرار الإنتركم عشان تكلم الاستقبال.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1447,12 +1447,12 @@
   "prompt": "What does \"jihadi\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"jihadi\":",
   "options": [
+   "العلاج بالتنويم المغناطيسي",
+   "أيون أو ملح يوديد",
    "مقاتل جهادي",
-   "حذف",
-   "تحويل لقياس عددي",
-   "مدبغة"
+   "طائر دريجة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"jihadi\" هو: مقاتل جهادي. مثال: التقرير درس إزاي جماعة جهادية بتجنّد أعضاء.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1465,12 +1465,12 @@
   "prompt": "What does \"knighthood\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"knighthood\":",
   "options": [
-   "غلاف / تغليف",
-   "مقاعد المستقلين (برلمان)",
-   "مُعرّف مميز",
-   "لقب فارس"
+   "تلقين سياسي أو عقائدي",
+   "لقب فارس",
+   "منقذ وقت الزنقة",
+   "فيروس غدي"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"knighthood\" هو: لقب فارس. مثال: العالِم خد لقب فارس بسبب أبحاثه.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1483,10 +1483,10 @@
   "prompt": "What does \"laborer\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"laborer\":",
   "options": [
-   "عالم بيئة",
-   "قماش متدلّي أو ستاير",
+   "توقف تام",
+   "جحيم / جهنم",
    "عامل يدوي",
-   "مفرش سفرة"
+   "بيئة / إنفايرونمنت"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"laborer\" هو: عامل يدوي. مثال: عامل شال طوب في موقع البنا.",
@@ -1502,9 +1502,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"mangrove\":",
   "options": [
    "شجر القرم",
-   "إساءة تنفيذ واجب قانوني",
-   "فيروس بارفو (كلاب)",
-   "شرغوف صغير الضفدعة"
+   "عامل توصيل",
+   "كاس معملي",
+   "لعبة دوارة بخيول"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"mangrove\" هو: شجر القرم. مثال: شجرة القرم بتحمي الشط من الموج القوي.",
@@ -1519,9 +1519,9 @@
   "prompt": "What does \"marmalade\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"marmalade\":",
   "options": [
-   "واحد بيراقب من غير مشاركة",
-   "كرشة للأكل",
-   "حَوَل (انحراف العين)",
+   "فوهة رش أو ضخ",
+   "تكليف بمهمة تانية",
+   "مضمار سباق عجل",
    "مربى موالح"
   ],
   "answerIndex": 3,
@@ -1537,12 +1537,12 @@
   "prompt": "What does \"modifier\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"modifier\":",
   "options": [
-   "قرد بابون",
-   "سيخ شوي",
    "كلمة بتوصف كلمة تانية",
-   "أهمية مؤثرة"
+   "حفر على اللينوليوم",
+   "إصرار وتمسك بالهدف",
+   "حمّام (عامية)"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"modifier\" هو: كلمة بتوصف كلمة تانية. مثال: الصفة غالبًا بتقوم بدور كلمة بتوصف الاسم.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1555,12 +1555,12 @@
   "prompt": "What does \"naturalization\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"naturalization\":",
   "options": [
+   "تغيير الريش أو الجلد",
+   "رقصة جايف سريعة",
    "اكتساب جنسية",
-   "مقهى شاي",
-   "أبو ملعقة (طائر)",
-   "مقيّم أسعار"
+   "مادة أو آلة تبييض"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"naturalization\" هو: اكتساب جنسية. مثال: هي قدمت على الجنسية بعد سنين من الإقامة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1573,12 +1573,12 @@
   "prompt": "What does \"numbness\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"numbness\":",
   "options": [
-   "البربخ (تشريح)",
-   "سمكة حمراء",
-   "صالح للأكل",
-   "تنميل وفقدان إحساس"
+   "تنميل وفقدان إحساس",
+   "إدانة علنية شديدة",
+   "كلب لورشر (هجين)",
+   "حبة البركة"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"numbness\" هو: تنميل وفقدان إحساس. مثال: هو حس بتنميل في صوابعه بعد ركوب العجلة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1591,10 +1591,10 @@
   "prompt": "What does \"oar\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"oar\":",
   "options": [
-   "نائح / نادب",
+   "قابلية التفاعل",
    "مجداف",
-   "رفض وإنكار صريح",
-   "ممثل بيعيد أحداث تاريخية"
+   "طريقة كلام بطيئة",
+   "الحلق / الشراهة (لاتينية)"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"oar\" هو: مجداف. مثال: مجداف واحد فلت من إيده ووقع في المية.",
@@ -1609,12 +1609,12 @@
   "prompt": "What does \"opiate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"opiate\":",
   "options": [
-   "نظام الأساقفة",
-   "البربخ (تشريح)",
+   "كسلان / جزمة بدون رباط",
    "مادة أفيونية",
-   "دكتور نسا وتوليد"
+   "شجرة الليجسترم (سور نبات)",
+   "الرومانسية كحركة فنية وفكرية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"opiate\" هو: مادة أفيونية. مثال: المادة الأفيونية ممكن تخفف الألم الشديد تحت إشراف طبي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1627,12 +1627,12 @@
   "prompt": "What does \"osprey\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"osprey\":",
   "options": [
-   "اعتداء جنسي خصوصًا بطفل",
-   "عقاب نساري",
-   "توسّل",
-   "إبطال وإلغاء أثر"
+   "عرض مضاد",
+   "درع شعار / لوحة المفتاح",
+   "حماية أو حجب",
+   "عقاب نساري"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"osprey\" هو: عقاب نساري. مثال: عقاب نساري انقض على سمكة قرب السطح.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1645,10 +1645,10 @@
   "prompt": "What does \"patten\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"patten\":",
   "options": [
-   "تجلّي إلهي",
+   "حتمية فلسفية",
    "قبقاب مرتفع قديم",
-   "مركب أمين عضوي",
-   "انتصاب مرضي مستمر"
+   "مربّي ماشية على المراعي",
+   "حرمان من حق التصويت"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"patten\" هو: قبقاب مرتفع قديم. مثال: المتحف عرض قبقاب خشب مرتفع كانوا بيلبسوه برّه.",
@@ -1663,12 +1663,12 @@
   "prompt": "What does \"pelt\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"pelt\":",
   "options": [
-   "طالب روضة",
-   "جلد حيوان بفروه",
-   "التماثل (في الرياضيات)",
-   "أسد جبال أمريكي"
+   "وجع بطن / تذمر",
+   "ساحر مسحور",
+   "الجاور (ثور هندي ضخم)",
+   "جلد حيوان بفروه"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"pelt\" هو: جلد حيوان بفروه. مثال: الصياد ورّانا جلد تعلب بفروه.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1681,12 +1681,12 @@
   "prompt": "What does \"pennant\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"pennant\":",
   "options": [
-   "مراجع لغوي",
-   "الانغلاق / العزلة",
-   "مضمار سباق خيل",
-   "راية مثلثة"
+   "تارانتيلا (رقصة إيطالية)",
+   "راية مثلثة",
+   "عضلة المؤخرة",
+   "مركب صغير خفيف"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"pennant\" هو: راية مثلثة. مثال: راية حمرا مثلثة رفرفت فوق المركب الشراعي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1699,12 +1699,12 @@
   "prompt": "What does \"perfectionist\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"perfectionist\":",
   "options": [
+   "انسداد أو إطباق",
+   "منبر خطيب في كنيسة",
    "شخص بيطلب الكمال",
-   "تعويض وإصلاح ضرر",
-   "تلفيفة في سطح المخ",
-   "موز نشوي للطبخ"
+   "البازلاء العطرية"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"perfectionist\" هو: شخص بيطلب الكمال. مثال: عشان هي بتحب الكمال، بتراجع كل تفصيلة مرتين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1717,10 +1717,10 @@
   "prompt": "What does \"enamelware\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"enamelware\":",
   "options": [
-   "ضاحية (فرنسية)",
-   "كتاب بغلاف مقوّى",
+   "دوكسي سيكلين (مضاد حيوي)",
+   "انهيار طيني",
    "أواني مطلية بالمينا",
-   "التهاب الغدة الدرقية"
+   "غطا نعش أو كآبة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"enamelware\" هو: أواني مطلية بالمينا. مثال: المحل بيبيع أواني مينا ملوّنة للطبخ برّه.",
@@ -1735,12 +1735,12 @@
   "prompt": "What does \"praxis\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"praxis\":",
   "options": [
-   "حبل بأنشوطة للصيد",
+   "انخفاض",
+   "اليقظة",
    "تطبيق النظرية عمليًا",
-   "طلب إعادة (شراء نفس الحاجة)",
-   "عوامة إرشاد ملاحية"
+   "أقدمية"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"praxis\" هو: تطبيق النظرية عمليًا. مثال: الكورس بيربط النظرية التعليمية بتطبيقها العملي في الفصل.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1753,12 +1753,12 @@
   "prompt": "What does \"princely\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"princely\":",
   "options": [
-   "خاص بالشفق القطبي",
-   "لزج أو مطاطي",
+   "ضامر وباقي من التطور",
    "ضخم وباذخ",
-   "منعزل عن الناس"
+   "عابس وصارم",
+   "غير مستغل"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"princely\" هو: ضخم وباذخ. مثال: اللوحة اتباعت بمبلغ ضخم.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -1772,9 +1772,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"psoriasis\":",
   "options": [
    "صدفية",
-   "حركة إحياء ديني",
-   "كائنات قاع البحر",
-   "ملكية عقار وأرضه الدائمة"
+   "ملوحة",
+   "الشوفار (بوق يهودي)",
+   "عدم اكتراث ولا مبالاة"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"psoriasis\" هو: صدفية. مثال: دكتور الجلدية نصح بعلاج للصدفية اللي عندها.",
@@ -1789,12 +1789,12 @@
   "prompt": "What does \"putty\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"putty\":",
   "options": [
-   "رئاسة لجنة أو مجلس",
-   "دجل (علاج أو طب مزيف)",
-   "معجون سد شقوق",
-   "الربوبية"
+   "عداء وضغينة",
+   "قاضي روماني",
+   "زرنيخيد (مركب)",
+   "معجون سد شقوق"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"putty\" هو: معجون سد شقوق. مثال: هو ملأ الفراغ بمعجون الشبابيك.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1807,12 +1807,12 @@
   "prompt": "What does \"quench\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"quench\":",
   "options": [
-   "يرجع بالعامية",
+   "يجسد بمثال",
+   "يولّد / يخلّف",
    "يروي العطش",
-   "يسخر باستخفاف",
-   "يوقع في فخ"
+   "يكشكش ويطبق الحافة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"quench\" هو: يروي العطش. مثال: المية الساقعة ساعدت تروي عطشنا بعد المشي الطويل.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1825,10 +1825,10 @@
   "prompt": "What does \"radicalism\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"radicalism\":",
   "options": [
-   "لغة متعلم انتقالية",
+   "توقف مؤقت",
    "دعوة لتغيير جذري",
-   "ليسيه (مدرسة ثانوية فرنسية)",
-   "تغطية صحفية"
+   "قاطع طريق",
+   "مركب شراعي عربي (داو)"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"radicalism\" هو: دعوة لتغيير جذري. مثال: دعوة الحركة للتغيير الجذري قلقت السياسيين المعتدلين أكتر.",
@@ -1843,12 +1843,12 @@
   "prompt": "What does \"radon\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"radon\":",
   "options": [
-   "وقت التشغيل المتواصل",
-   "حيوان رباعي الأرجل",
-   "عامل تحميل وتفريغ بالمينا",
-   "غاز الرادون"
+   "غاز الرادون",
+   "برقوق مجفف",
+   "مصاب بعسر هضم / نكدي",
+   "شخص شاطر ومغرور أحيانًا"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"radon\" هو: غاز الرادون. مثال: المفتش اختبر البدروم عشان يكشف غاز الرادون.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1861,12 +1861,12 @@
   "prompt": "What does \"rationalize\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"rationalize\":",
   "options": [
-   "يفرط في الاستمتاع",
-   "يخزّن بضاعة زيادة",
-   "يتبول",
-   "يبرر لنفسه"
+   "يبرر لنفسه",
+   "يتعدى على ملكية الغير",
+   "يفك الإبزيم",
+   "يتجنب عمدًا"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"rationalize\" هو: يبرر لنفسه. مثال: هو حاول يبرر غلطته لنفسه بإنه كان مضغوط.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -1879,12 +1879,12 @@
   "prompt": "What does \"reactivity\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"reactivity\":",
   "options": [
-   "قابلية التفاعل",
-   "عيب أو نقطة ضعف",
-   "ظرف أو إعلان بريدي",
-   "شهرة وحشة"
+   "لهجة محلية عامية",
+   "ثرثار / طائر الثرثار",
+   "نبات السمفير البحري",
+   "قابلية التفاعل"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"reactivity\" هو: قابلية التفاعل. مثال: التجربة قاست قابلية المعدن للتفاعل مع المية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1897,12 +1897,12 @@
   "prompt": "What does \"reassignment\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"reassignment\":",
   "options": [
+   "شبكة داخلية خاصة",
    "تكليف بمهمة تانية",
-   "فرس النبي المائي (اليعسوب الصغير)",
-   "ملاحظة سريعة مكتوبة",
-   "خطف وسيلة نقل بالقوة"
+   "كويستور (مسؤول روماني)",
+   "معجب"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"reassignment\" هو: تكليف بمهمة تانية. مثال: هي طلبت تتنقل لقسم تاني.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1915,12 +1915,12 @@
   "prompt": "What does \"repeater\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"repeater\":",
   "options": [
-   "مركّب زجاج",
    "جهاز تقوية الإشارة",
-   "مضاد كولينرجي (دواء)",
-   "علاج تجانسي"
+   "مدمن / حاجة رخيصة",
+   "رئيس البحارة (بوسطن)",
+   "صنوبر اللوبلولي"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"repeater\" هو: جهاز تقوية الإشارة. مثال: جهاز تقوية لاسلكي حسّن التغطية في الأوض اللي فوق.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -1934,9 +1934,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"retort\":",
   "options": [
    "يرد بحدة",
-   "يسجن",
-   "يرضع رضاعة طبيعية",
-   "ينهض / يثور"
+   "يوافق أو يتولى حكم",
+   "يمسك أو يقبض على",
+   "يسيء التعامل"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"retort\" هو: يرد بحدة. مثال: هي كانت مستعدة ترد بحدة على اتهامه.",
@@ -1951,10 +1951,10 @@
   "prompt": "What does \"rework\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"rework\":",
   "options": [
-   "يحجز عقار بسبب دين",
-   "يرتجل",
+   "يفكر في حاجة بتمهل",
+   "يفهم حاجة صعبة",
    "يعدل ويشتغل تاني",
-   "يلين ويتراجع عن الشدة"
+   "يبرز لبرا"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"rework\" هو: يعدل ويشتغل تاني. مثال: محتاجين نشتغل على المقدمة ونعدلها قبل النشر.",
@@ -1987,12 +1987,12 @@
   "prompt": "What does \"sawmill\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sawmill\":",
   "options": [
-   "مجاهدين",
-   "إيقاف نهائي",
+   "عملة فضية قديمة (إنجليزية)",
    "منشرة خشب",
-   "برج أو حجرة أجراس"
+   "صاروخ V1 / يرقة النمل",
+   "علم المساحة الأرضية (الجيوديسيا)"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"sawmill\" هو: منشرة خشب. مثال: جذوع الشجر اتنقلت لمنشرة خشب قريبة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2005,12 +2005,12 @@
   "prompt": "What does \"shogun\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"shogun\":",
   "options": [
-   "غريلين (هرمون الجوع)",
-   "زهرة العائق (دلفينيوم)",
-   "حاكم عسكري ياباني تاريخي",
-   "أكلة أحشاء اسكتلندية"
+   "برميل سوايل كبير جدًا",
+   "سمك البربل / شارب السمكة",
+   "بيروكسيديز (إنزيم)",
+   "حاكم عسكري ياباني تاريخي"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"shogun\" هو: حاكم عسكري ياباني تاريخي. مثال: الشوغون حكم بمساندة محاربين أقوياء.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2023,10 +2023,10 @@
   "prompt": "What does \"shrinkage\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"shrinkage\":",
   "options": [
-   "كلام غامض للتهرب",
+   "إعادة تمثيل حدث",
    "انكماش",
-   "سمكة الزناد (استوائية)",
-   "التحكّم في التبوّل والإخراج"
+   "متغيّر عشوائي",
+   "مبدأ التفريع (اتخاذ القرار محليا)"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"shrinkage\" هو: انكماش. مثال: الغسيل بمية سخنة ممكن يسبب انكماش القماش.",
@@ -2041,10 +2041,10 @@
   "prompt": "What does \"skeptic\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"skeptic\":",
   "options": [
-   "رائد الحدود (مستوطن)",
-   "بيانو سبينيت صغير",
+   "مشروب النعناع بالويسكي (جوليب)",
+   "الغلاف المائي",
    "شخص متشكك",
-   "متعهد دفن"
+   "شبه ظل / منطقة ظل جزئي"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"skeptic\" هو: شخص متشكك. مثال: حتى الشخص المتشكك ممكن يلاقي الدليل ده مقنع.",
@@ -2059,12 +2059,12 @@
   "prompt": "What does \"sleeveless\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sleeveless\":",
   "options": [
-   "احتفالي",
-   "صغير جدًا",
+   "جهنمي وشديد السوء",
    "من غير أكمام",
-   "خيطي"
+   "مالوش مبرر مقبول",
+   "بيسعى يقوض نظام قائم"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"sleeveless\" هو: من غير أكمام. مثال: هي لبست فستان من غير أكمام على البحر.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2077,9 +2077,9 @@
   "prompt": "What does \"snowstorm\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"snowstorm\":",
   "options": [
-   "مية البحر",
-   "عدالة",
-   "عملية جراحية / سيرجري",
+   "عنف / فايولانس",
+   "أزمة / كرايسس",
+   "رسوب",
    "عاصفة تلج"
   ],
   "answerIndex": 3,
@@ -2095,12 +2095,12 @@
   "prompt": "What does \"socialite\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"socialite\":",
   "options": [
-   "معادي للثورة",
-   "دكتور أمراض نسا",
+   "أفعى كوتون ماوث (سامة)",
    "شخص مشهور اجتماعيًا",
-   "مرح وضحك"
+   "أخصائي اجتماعي بيتابع حالات",
+   "هراء وكلام فارغ"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"socialite\" هو: شخص مشهور اجتماعيًا. مثال: الشخصية المشهورة اجتماعيًا حضرت العشا الخيري بشياكة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2113,10 +2113,10 @@
   "prompt": "What does \"southerly\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"southerly\":",
   "options": [
-   "لذيذ وغني بالعصارة",
-   "خاص بكبيبات الكلى",
+   "على شكل نص دايرة",
+   "قادر على التمييز",
    "جاي من الجنوب",
-   "متجه ناحية الغرب"
+   "خاص بعلاج جذور الأسنان"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"southerly\" هو: جاي من الجنوب. مثال: ريح جنوبية جابت هوا دافي للساحل.",
@@ -2131,12 +2131,12 @@
   "prompt": "What does \"spectrometer\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"spectrometer\":",
   "options": [
-   "انخماص جزء من الرئة",
-   "جزء سفلي وعجل طيارة",
    "جهاز قياس الطيف",
-   "بائع شرابات وملابس داخلية"
+   "خنزير سمين / سمين",
+   "ملء قبعة",
+   "طبيب تشخيص"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"spectrometer\" هو: جهاز قياس الطيف. مثال: العالِم استخدم جهاز قياس طيف عشان يحلل العينة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2149,12 +2149,12 @@
   "prompt": "What does \"subspace\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"subspace\":",
   "options": [
-   "نكران الجميل",
-   "شخص بتأتمنه على أسرارك",
    "فضاء رياضي جزئي",
-   "حيوان سمور فروه غالي"
+   "يا سيد (بالاتينية: يا رب)",
+   "دوا مهدّئ",
+   "المرموط (قارض جبلي)"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"subspace\" هو: فضاء رياضي جزئي. مثال: المتجهات بتكوّن فضاء جزئي من الفضاء المتجهي ده.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2167,12 +2167,12 @@
   "prompt": "What does \"subsurface\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"subsurface\":",
   "options": [
-   "تذكاري لمناسبة",
-   "ما يتطاقش",
-   "ثلاثي الصيغة الصبغية",
-   "تحت السطح"
+   "تحت السطح",
+   "من العصور الأولى",
+   "ناحية منتصف الجسم",
+   "زيتي / متملّق"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"subsurface\" هو: تحت السطح. مثال: المسح كشف مية تحت سطح الصحرا.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2185,10 +2185,10 @@
   "prompt": "What does \"superstructure\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"superstructure\":",
   "options": [
-   "خادم مراسم منزلي",
-   "سفينة شراعية بصواري متعددة",
+   "نجم الصباح / الشمس",
+   "مستوطن في مستعمرة",
    "الجزء العلوي من بناء",
-   "مغارة صغيرة"
+   "تبولة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"superstructure\" هو: الجزء العلوي من بناء. مثال: العمال فحصوا الجزء العلوي الحديد من الكوبري عشان أي تلف.",
@@ -2203,12 +2203,12 @@
   "prompt": "What does \"sweeper\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"sweeper\":",
   "options": [
-   "بكتيريا عصوية",
-   "منقّب عن معادن",
    "عامل كنس",
-   "حجر الصابون (الستياتيت)"
+   "تشبيه",
+   "وقت العشا",
+   "رباعية (أعمال أو مرض)"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"sweeper\" هو: عامل كنس. مثال: عامل كنس الشوارع بدأ شغله قبل الشروق.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2221,12 +2221,12 @@
   "prompt": "What does \"swish\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"swish\":",
   "options": [
-   "يعسكر",
-   "يحرك بحفيف",
-   "يغتصب سلطة أو حق",
-   "يخفف القيود / يحرّر"
+   "يحكّم / يفصل في نزاع",
+   "يحاوط في دايرة",
+   "يمنع ويحرم",
+   "يحرك بحفيف"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"swish\" هو: يحرك بحفيف. مثال: حرّك الفرشة بخفة في المية والصابون.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -2239,10 +2239,10 @@
   "prompt": "What does \"tamper\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"tamper\":",
   "options": [
-   "يربك ويخالف التوقعات",
-   "يتكوّم / يتحصّن",
+   "يقنع بالتملق واللين",
+   "يحوّل لمحترف",
    "يعبث",
-   "يندفع بغزارة"
+   "يزعق وينادي"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"tamper\" هو: يعبث. مثال: ما تعبثش بإنذار الحريق بتاع المبنى.",
@@ -2257,12 +2257,12 @@
   "prompt": "What does \"tampon\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"tampon\":",
   "options": [
+   "خفقان القلب",
+   "الغلاف اللوني للشمس",
    "سدادة قطن للدورة",
-   "تقيّؤ جاف / غثيان",
-   "عربية أطفال",
-   "أجرة النقل بالعربات"
+   "العمود الأساسي / الأساس اللي كل حاجة بتقوم عليه"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"tampon\" هو: سدادة قطن للدورة. مثال: هي بتخلّي سدادة قطن احتياطية للدورة في شنطتها.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2276,9 +2276,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"toffee\":",
   "options": [
    "حلاوة توفي",
-   "بائع متجوّل",
-   "سيانيد سام",
-   "النجم القطبي"
+   "فرد من القبيلة",
+   "برجولة (تعريشة في الجنينة)",
+   "عرض / تقديم رسمي"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"toffee\" هو: حلاوة توفي. مثال: التوفي اللزج لزق في سنانه.",
@@ -2293,12 +2293,12 @@
   "prompt": "What does \"tomahawk\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"tomahawk\":",
   "options": [
-   "طفل أو شاب صغير",
-   "الصرامة / التقشف",
-   "فأس خفيفة تاريخية",
-   "انفراج في العلاقات"
+   "علم زائف",
+   "مبيد أعشاب",
+   "سعة كهربائية",
+   "فأس خفيفة تاريخية"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"tomahawk\" هو: فأس خفيفة تاريخية. مثال: المتحف عرض فأس توماهوك بمقبض محفور.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2311,12 +2311,12 @@
   "prompt": "What does \"transcendence\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"transcendence\":",
   "options": [
-   "شخص بيقيّم",
-   "تجاوز الحدود المعتادة",
-   "إدراك ومعرفة",
-   "جذمور (ساق تحت الأرض)"
+   "طبق رئيسي بالاستعمال الأمريكي",
+   "لاعب حواجز (في الجري)",
+   "فلوريد",
+   "تجاوز الحدود المعتادة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"transcendence\" هو: تجاوز الحدود المعتادة. مثال: القصيدة بتتناول تجاوز الحدود الروحية المعتادة عن طريق التأمل الهادي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2329,12 +2329,12 @@
   "prompt": "What does \"transgression\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"transgression\":",
   "options": [
-   "مكتشف",
-   "صحفي أخبار",
-   "جهد / اندفاع",
-   "تعدي على قاعدة"
+   "ارتفاع سكر الدم",
+   "تعدي على قاعدة",
+   "هجين (سلالة مختلطة)",
+   "الانفصال / فك الارتباط"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"transgression\" هو: تعدي على قاعدة. مثال: هو اعتذر عن مخالفته للقواعد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2347,10 +2347,10 @@
   "prompt": "What does \"triage\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"triage\":",
   "options": [
-   "قماش جبردين",
-   "حبل بأنشوطة للصيد",
+   "الزئبق",
+   "ورم دبقي في المخ",
    "فرز الحالات حسب الخطورة",
-   "مجدّف كانو"
+   "مشية فيها استعراض وثقة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"triage\" هو: فرز الحالات حسب الخطورة. مثال: الممرضين فرزوا الحالات حسب الخطورة أول ما المرضى وصلوا الطوارئ.",
@@ -2365,12 +2365,12 @@
   "prompt": "What does \"ulterior\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"ulterior\":",
   "options": [
-   "كريم / وفير",
-   "مش رجولي (وصف قديم)",
    "خفي ورا الظاهر",
-   "خاص بالغدد الصماء"
+   "موروث من الأجداد البدائيين",
+   "قابل للضغط",
+   "محيطي (على محيط الدايرة)"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"ulterior\" هو: خفي ورا الظاهر. مثال: هي شكت إن عنده دافع خفي.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2383,12 +2383,12 @@
   "prompt": "What does \"unambiguous\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"unambiguous\":",
   "options": [
-   "وقور ومحافظ وممل شوية",
-   "متعدد المستويات",
-   "واضح من غير لبس",
-   "مش مؤهّل"
+   "ودود بزيادة وعشم",
+   "قابل للحل",
+   "عاجز عن التأثير",
+   "واضح من غير لبس"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"unambiguous\" هو: واضح من غير لبس. مثال: التعليمات لازم تبقى واضحة ومن غير أي لبس.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2401,12 +2401,12 @@
   "prompt": "What does \"undetermined\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"undetermined\":",
   "options": [
-   "لسه مش متحدد",
-   "من العصور الأولى",
-   "خطابي",
-   "رديء الصنع"
+   "متعلق بعلم الأوبئة",
+   "ذو تكافؤ (كيمياء)",
+   "مستحيل اختراقه أو فهمه",
+   "لسه مش متحدد"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"undetermined\" هو: لسه مش متحدد. مثال: سبب الحادثة لسه مش متحدد.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2419,12 +2419,12 @@
   "prompt": "What does \"unfettered\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"unfettered\":",
   "options": [
-   "خاص بالعلاج النفسي",
-   "قليل الثقافة / ماتربّاش",
+   "حكمي / غامض",
    "من غير قيود",
-   "خاص بصنف نبات"
+   "متعدد المستويات",
+   "عصبي بيولوجي"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"unfettered\" هو: من غير قيود. مثال: المحققين طالبوا بالاطلاع على كل السجلات من غير قيود.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2437,12 +2437,12 @@
   "prompt": "What does \"venison\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"venison\":",
   "options": [
+   "حورية الشجر (أساطير)",
+   "اللي بيحافظ / سترة نجاة",
    "لحمة غزال",
-   "هيدروكلوروثيازيد (مدرّ بول)",
-   "مجتمع تحكمه النساء",
-   "نوتيلوس حيوان بحري"
+   "الزرقة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"venison\" هو: لحمة غزال. مثال: المطعم بيقدّم لحمة غزال بصوص غني.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2455,12 +2455,12 @@
   "prompt": "What does \"zaire\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"zaire\":",
   "options": [
-   "حبل رفع الشراع",
-   "مشروب كحولي محلّى",
+   "معدن دولوميت",
    "عملة زائير القديمة",
-   "شخص بيعمل قوائم"
+   "الحمل الأفقي (أرصاد)",
+   "هوت بوت (طاجن لحم) / حلة سخنة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"zaire\" هو: عملة زائير القديمة. مثال: الزائير كان بيستخدم زمان كعملة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2473,12 +2473,12 @@
   "prompt": "What does \"afterthought\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"afterthought\":",
   "options": [
+   "هجين (سلالة مختلطة)",
+   "ماغنيسايت (معدن)",
    "فكرة جت بعدين",
-   "حرف هيروغليفي",
-   "نبات كولومبو أمريكي",
-   "بنتوباربيتال (مخدر / مهدئ)"
+   "خناقة وزحمة ملخبطة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"afterthought\" هو: فكرة جت بعدين. مثال: الأوضة الزيادة اتضافت كفكرة جت بعدين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2491,12 +2491,12 @@
   "prompt": "What does \"airman\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"airman\":",
   "options": [
-   "نظام أكل نباتي",
-   "زينة للرأس",
-   "عسكري في سلاح الطيران",
-   "رمز بريدي"
+   "ذعر وارتباك",
+   "سادية ومازوخية",
+   "شخص بيخيّم",
+   "عسكري في سلاح الطيران"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"airman\" هو: عسكري في سلاح الطيران. مثال: عسكري الطيران رجع بالسلامة بعد مهمة التدريب.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2509,12 +2509,12 @@
   "prompt": "What does \"airship\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"airship\":",
   "options": [
-   "حلول الضلمة",
-   "حامل الشعلة",
-   "مطواة صغيرة",
-   "منطاد موجّه"
+   "كرزة حامضة غامقة",
+   "السريالية",
+   "منطاد موجّه",
+   "نبيذ رخيص"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"airship\" هو: منطاد موجّه. مثال: المنطاد الموجّه طاف ببطء فوق الاستاد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2527,12 +2527,12 @@
   "prompt": "What does \"annihilate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"annihilate\":",
   "options": [
-   "يتلكأ ويتأخر",
+   "يلغي أثر قانوني",
+   "يتعلق بـ",
    "يبيد تمامًا",
-   "يعيد الدمج",
-   "يألّف / يخترع (حجة أو أكلة)"
+   "يكشف الحقيقة"
   ],
-  "answerIndex": 1,
+  "answerIndex": 2,
   "explanationAr": "معنى \"annihilate\" هو: يبيد تمامًا. مثال: الانفجار ممكن يبيد كل حاجة جوّه المجمع.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -2545,12 +2545,12 @@
   "prompt": "What does \"appointee\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"appointee\":",
   "options": [
-   "حارس برج لندن",
-   "شخص متعين في منصب",
-   "ساق زهرة بلا ورق",
-   "حفلة رقص رسمية"
+   "الثبات / الاستقرار",
+   "عدم الدقة",
+   "هاوي جمع الطوابع",
+   "شخص متعين في منصب"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"appointee\" هو: شخص متعين في منصب. مثال: الشخص المتعين جديد هيمسك إدارة المالية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2563,10 +2563,10 @@
   "prompt": "What does \"archetypal\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"archetypal\":",
   "options": [
-   "خاص بعلم الاجتماع",
-   "غير حليق",
+   "ممكن إدراكه",
+   "متعلق بالجماع (حيوانات)",
    "نموذجي وممثل للنوع",
-   "مشاكس وعصبي"
+   "غير متقبّل"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"archetypal\" هو: نموذجي وممثل للنوع. مثال: الشخصية بطل نموذجي بيواجه ظروف شبه مستحيلة.",
@@ -2581,12 +2581,12 @@
   "prompt": "What does \"artful\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"artful\":",
   "options": [
-   "ماكر وشاطر",
-   "رجعي أو بيرجع لورا",
-   "مش صالح للعب",
-   "بركاني / متفجر"
+   "كسلان بلا طموح",
+   "من غير قيود",
+   "متفائل وواثق",
+   "ماكر وشاطر"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"artful\" هو: ماكر وشاطر. مثال: حرامي ماكر شتّت الحارس قبل ما يهرب.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2599,12 +2599,12 @@
   "prompt": "What does \"ascendancy\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"ascendancy\":",
   "options": [
-   "نبات متسلق بري",
-   "غلطة كبيرة",
-   "خبطة مكتومة",
-   "سيطرة ونفوذ"
+   "نضافة",
+   "سيطرة ونفوذ",
+   "حاصل على دبلوم متخصص",
+   "فرحة"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"ascendancy\" هو: سيطرة ونفوذ. مثال: الحزب كسب سيطرة ونفوذ سياسي بعد الانتخابات.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2618,9 +2618,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"assessor\":",
   "options": [
    "مقيّم",
-   "الكآبة والقسوة",
-   "جنّية (كتابة قديمة)",
-   "سوء فهم"
+   "ذل شديد / بؤس",
+   "جوانوزين (مركب)",
+   "دلالة ضمنية"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"assessor\" هو: مقيّم. مثال: مقيّم التأمين فحص العربية المتضررة.",
@@ -2635,9 +2635,9 @@
   "prompt": "What does \"asymmetry\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"asymmetry\":",
   "options": [
-   "مسلح ماهر بالمسدسات",
-   "خرسانة مرشوشة",
-   "قسطرة توسيع الشرايين",
+   "لين (وحدة قياس صغيرة في الساعات)",
+   "بوغ للتكاثر",
+   "تصلب الشرايين بترسبات",
    "عدم تماثل"
   ],
   "answerIndex": 3,
@@ -2653,12 +2653,12 @@
   "prompt": "What does \"asynchronous\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"asynchronous\":",
   "options": [
+   "مؤذي وشرير",
+   "خاص بالعذراء (حشرة)",
    "مش متزامن",
-   "مليان أحداث",
-   "غريب ومجنون بالعامية",
-   "بلا رياح"
+   "متمركز حوالين نفسه"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"asynchronous\" هو: مش متزامن. مثال: الكورس بيوفر دروس مش محتاجة حضور في نفس الوقت للطلبة المشغولين.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2671,10 +2671,10 @@
   "prompt": "What does \"banal\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"banal\":",
   "options": [
-   "من غير قيود",
+   "متاهي / معقد زي المتاهة",
    "مبتذل ومكرر",
-   "عاطل عن الشغل",
-   "مش محبط ولا خايف"
+   "دقيق وصعب الإرضاء",
+   "سهل يتوتر ويتخض"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"banal\" هو: مبتذل ومكرر. مثال: الحوار بان مبتذل رغم التمثيل القوي.",
@@ -2689,12 +2689,12 @@
   "prompt": "What does \"blackface\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"blackface\":",
   "options": [
-   "شجرة الكافور (الأوكالبتوس)",
-   "أهالي البلدة",
    "تسويد الوش لتقليد السود",
-   "تدليل أو متعة خاصة"
+   "رمز عددي",
+   "ثراء وفخامة",
+   "الهرش / الحكة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"blackface\" هو: تسويد الوش لتقليد السود. مثال: المقال بيشرح ليه عروض تسويد الوش لتقليد السود عنصرية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2707,12 +2707,12 @@
   "prompt": "What does \"bluish\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bluish\":",
   "options": [
-   "مش راغب ومتردد",
-   "قابل للتخصيص أو التوزيع",
+   "ناشئ ولسه في بدايته",
    "مايل للأزرق",
-   "مغمور أو مليان"
+   "دموي بتفاصيل مقززة",
+   "مش معزوم"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"bluish\" هو: مايل للأزرق. مثال: الشاشة طلّعت ضي خفيف مايل للأزرق.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2725,9 +2725,9 @@
   "prompt": "What does \"bombardier\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bombardier\":",
   "options": [
-   "الانزلاق / الملاسة",
-   "العار والتوبيخ العلني",
-   "الرجلة",
+   "تأليه",
+   "عالم حيوان",
+   "ارتباط أو وصلة",
    "مسؤول إسقاط القنابل"
   ],
   "answerIndex": 3,
@@ -2743,12 +2743,12 @@
   "prompt": "What does \"bookkeeper\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bookkeeper\":",
   "options": [
-   "سباق حواجز وموانع",
-   "ماسك الدفاتر المحاسبية",
-   "بلاستيك بيلين بالتسخين",
-   "دكتور جهاز هضمي"
+   "عاملة نظافة",
+   "استرضاء بتنازلات",
+   "أرشيدوق لقب نبيل",
+   "ماسك الدفاتر المحاسبية"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"bookkeeper\" هو: ماسك الدفاتر المحاسبية. مثال: ماسك الدفاتر عندنا بيسجل كل دفعة في الدفتر.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2761,12 +2761,12 @@
   "prompt": "What does \"bountiful\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bountiful\":",
   "options": [
-   "بلا حكم / منفلت",
    "وفير",
-   "تضميني / دلالي",
-   "بلون فاتح وهادي"
+   "مضر بالعدالة أو المصلحة",
+   "غريب وصادم",
+   "ناحية محمية من الريح"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"bountiful\" هو: وفير. مثال: المطر الكويس جاب محصول وفير السنة دي.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2779,12 +2779,12 @@
   "prompt": "What does \"bulldozer\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"bulldozer\":",
   "options": [
-   "رغيف صغير طري",
-   "إثارة وتهويل إعلامي",
-   "مجموعة مسلحة لملاحقة مجرم",
-   "بلدوزر"
+   "حشرة الزيز",
+   "فطر الكرة (بوفبول)",
+   "بلدوزر",
+   "منصب الحاخام"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"bulldozer\" هو: بلدوزر. مثال: بلدوزر شال الركام من موقع البنا.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2797,12 +2797,12 @@
   "prompt": "What does \"calico\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"calico\":",
   "options": [
-   "قماش قطن سادة",
-   "وضعية يوجا",
-   "التجميع (تحويل لملكية جماعية)",
-   "إعادة عرض"
+   "حماية رياضية للرجال",
+   "حركة حماية البيئة",
+   "مرتّل / مغنّي ترتيل",
+   "قماش قطن سادة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"calico\" هو: قماش قطن سادة. مثال: هي اشترت قماش قطن سادة عشان تعمل ستارة بسيطة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2815,12 +2815,12 @@
   "prompt": "What does \"capillary\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"capillary\":",
   "options": [
-   "دعاء بالبركة",
-   "الورقة البيضاء بأول الكتاب",
-   "معجم أو حصيلة كلمات",
-   "شعيرة دموية"
+   "شعيرة دموية",
+   "سرّة البطن",
+   "حبل تعليق بطاقة",
+   "بياع كتب"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"capillary\" هو: شعيرة دموية. مثال: الشعيرة الدموية بتوصل بين الشرايين والأوردة الصغيرة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2833,12 +2833,12 @@
   "prompt": "What does \"categorical\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"categorical\":",
   "options": [
+   "متعدد الألوان",
+   "غريب وغير مألوف جدًا",
    "قاطع ونهائي",
-   "مش محتاجينه",
-   "نيوليبرالي مؤيد لاقتصاد السوق",
-   "داخل الولاية"
+   "متملّق بزيادة"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"categorical\" هو: قاطع ونهائي. مثال: هي نفت الاتهام بشكل قاطع.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2851,12 +2851,12 @@
   "prompt": "What does \"checkup\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"checkup\":",
   "options": [
+   "ميجافون / مكبر صوت يدوي",
    "كشف طبي دوري",
-   "الإيمان بإله واحد",
-   "خنّاق / اللي بيخنق",
-   "غير مؤمن"
+   "القدر / النصيب",
+   "التبذير والإسراف"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"checkup\" هو: كشف طبي دوري. مثال: حجزت كشف دوري على سناني للأسبوع الجاي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2869,12 +2869,12 @@
   "prompt": "What does \"chieftain\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"chieftain\":",
   "options": [
-   "جهاز تنظيم ضربات القلب",
-   "سرب إوز على الأرض",
-   "زعيم قبيلة",
-   "غرفة تحرير الأخبار"
+   "تحصين خصوصًا بالتطعيم",
+   "كُتلة أو رزمة",
+   "الزرقة",
+   "زعيم قبيلة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"chieftain\" هو: زعيم قبيلة. مثال: زعيم القبيلة رحّب بالزوار في القرية.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2887,12 +2887,12 @@
   "prompt": "What does \"christening\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"christening\":",
   "options": [
-   "حوض/مأوى حيوانات للتربية",
-   "عالم أجنّة",
-   "رباط تعليق",
-   "حفل تعميد"
+   "حفل تعميد",
+   "انفجار غضب أو مشاعر",
+   "بود (وحدة سرعة إرسال)",
+   "الطباعة الضوئية (رقائق)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"christening\" هو: حفل تعميد. مثال: هم عزمونا على حفل تعميد طفلهم.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2905,12 +2905,12 @@
   "prompt": "What does \"cinematographer\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cinematographer\":",
   "options": [
-   "دعم ودفع هدف لقدام",
    "مدير تصوير",
-   "تعايش",
-   "فرن تجفيف الهوبس"
+   "مطار صغير",
+   "محطة نائية",
+   "التكثيف"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"cinematographer\" هو: مدير تصوير. مثال: مدير التصوير استخدم إضاءة طبيعية في المشهد ده.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2923,12 +2923,12 @@
   "prompt": "What does \"cirrhosis\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cirrhosis\":",
   "options": [
-   "طائر رعد أسطوري",
    "تليف الكبد",
-   "عصفور الدرّة",
-   "كويستور (مسؤول روماني)"
+   "صالة بار",
+   "عدم الترابط",
+   "بوليصة شحن"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"cirrhosis\" هو: تليف الكبد. مثال: الدكتور المتخصص شرح إزاي التليف بيضر الكبد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2941,12 +2941,12 @@
   "prompt": "What does \"codeine\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"codeine\":",
   "options": [
-   "مجتمع تحكمه النساء",
    "مسكن كودايين",
-   "شرفة مغطاة (هاواي)",
-   "وحدة صرفية (أصغر جزء ليه معنى)"
+   "ضرب بكف الإيد",
+   "كرمبت (خبز إنجليزي إسفنجي)",
+   "شخص بيكدس حاجات"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"codeine\" هو: مسكن كودايين. مثال: الصيدلي شرح مخاطر أخد الكودايين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2959,12 +2959,12 @@
   "prompt": "What does \"combative\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"combative\":",
   "options": [
+   "محايد / غير متحيز",
    "ميّال للخناق والجدال",
-   "مالوش أساس",
-   "متعلق بالتحلل الحراري",
-   "تآزري"
+   "وقائي من مرض",
+   "بطعم المكسرات"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"combative\" هو: ميّال للخناق والجدال. مثال: نبرته الهجومية صعّبت النقاش.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -2977,12 +2977,12 @@
   "prompt": "What does \"consecration\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"consecration\":",
   "options": [
-   "بط مرجاني",
-   "مية بيضا على العين",
-   "فتح البطن جراحيا",
-   "تكريس ديني"
+   "عربية صغيرة جدا",
+   "دورق / إبريق زجاج",
+   "تكريس ديني",
+   "مدير عرض السيرك"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"consecration\" هو: تكريس ديني. مثال: الأسقف قاد طقس تكريس الكنيسة الجديدة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -2995,12 +2995,12 @@
   "prompt": "What does \"conspicuously\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"conspicuously\":",
   "options": [
-   "عالق في القاع",
-   "بحنان أمومي",
    "بشكل لافت للنظر",
-   "ممكن تصوره أو احتماله"
+   "بلا رحمة",
+   "بنفاسة / بتكلف",
+   "بإصرار وبشكل متكرر"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"conspicuously\" هو: بشكل لافت للنظر. مثال: هو كان غايب عن حفل الجوايز بشكل لافت للنظر.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -3013,12 +3013,12 @@
   "prompt": "What does \"counterattack\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"counterattack\":",
   "options": [
-   "هجوم مضاد",
-   "تعويض عن خسارة",
-   "مقاومة متغيرة",
-   "سداسي التفعيلة (شعر)"
+   "فرانجيبان (كريمة لوز)",
+   "فازلين",
+   "عمود الشراع المائل",
+   "هجوم مضاد"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"counterattack\" هو: هجوم مضاد. مثال: الفريق جاب جون من هجمة مرتدة سريعة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3031,12 +3031,12 @@
   "prompt": "What does \"curie\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"curie\":",
   "options": [
-   "رائحة الفم الكريهة",
-   "عالم نبات",
-   "تحويل إشارة لنوع تاني",
-   "وحدة نشاط إشعاعي"
+   "وحدة نشاط إشعاعي",
+   "نبرة صوت واحدة",
+   "زخرفة معمارية ورقية",
+   "انتقال سلس بين مواضيع"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"curie\" هو: وحدة نشاط إشعاعي. مثال: الكوري وحدة لقياس النشاط الإشعاعي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3049,10 +3049,10 @@
   "prompt": "What does \"cuteness\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"cuteness\":",
   "options": [
-   "موجة اعتراض وغضب",
+   "التهاب الجيوب الأنفية",
    "لطافة وشكل كيوت",
-   "مجتمع تحكمه النساء",
-   "كرفس بري (حبّ الحبّة)"
+   "كسلان / بطّال",
+   "حفرة في الطريق"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"cuteness\" هو: لطافة وشكل كيوت. مثال: لطافة الجرو وشكله الكيوت كسبوا قلب العيلة كلها.",
@@ -3067,12 +3067,12 @@
   "prompt": "What does \"darken\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"darken\":",
   "options": [
-   "يعيد بناء",
-   "يغمّق",
-   "يتقاطع",
-   "يطلي بكمية كبيرة"
+   "يعيد فرض",
+   "يعيد الاستماع / المحاكمة",
+   "يعامل بعنف",
+   "يغمّق"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"darken\" هو: يغمّق. مثال: السحاب بدأ يغمّق السما قبل الغروب.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -3085,10 +3085,10 @@
   "prompt": "What does \"defuse\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"defuse\":",
   "options": [
-   "يحذف أو مايدرجش",
-   "يعبث",
+   "يصرخ ويعيّط بصوت عالي",
+   "يتحرك جانبيا بحذر",
    "يبطل مفعول قنبلة",
-   "يصد أو ينفّر"
+   "يخفف القيود / يحرّر"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"defuse\" هو: يبطل مفعول قنبلة. مثال: الخبراء اشتغلوا بحرص عشان يبطلوا مفعول القنبلة اللي ما انفجرتش.",
@@ -3103,12 +3103,12 @@
   "prompt": "What does \"dilation\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"dilation\":",
   "options": [
-   "الصحّة",
-   "فشر وتفاخر مبالغ",
-   "حركة نقابية",
-   "اتساع"
+   "اتساع",
+   "دكّ / رصّ",
+   "مبدأ إرشادي للسلوك",
+   "الاستخلاص بالغسل (كيمياء)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"dilation\" هو: اتساع. مثال: قطرة العين بتسبب اتساع مؤقت في حدقة العين.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3121,12 +3121,12 @@
   "prompt": "What does \"dishonor\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"dishonor\":",
   "options": [
-   "رنة خبط معدن",
-   "الاحتراف",
-   "مركب شراعي صغير",
-   "عار"
+   "توت بويسن",
+   "ظهر القدم",
+   "عار",
+   "قطة بتدليل"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"dishonor\" هو: عار. مثال: هو حس إن تصرفاته جابت عار على الكل.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3139,10 +3139,10 @@
   "prompt": "What does \"disintegrate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"disintegrate\":",
   "options": [
-   "يفتح انسداد",
+   "يحط اللمسات الأخيرة",
    "يتفتت",
-   "يحكّم / يفصل في نزاع",
-   "يلغي الحاجة لـ"
+   "يخطف شخص",
+   "يقرا أو يفهم غلط"
   ],
   "answerIndex": 1,
   "explanationAr": "معنى \"disintegrate\" هو: يتفتت. مثال: الورق القديم بدأ يتفتت أول ما اتلمس.",
@@ -3157,12 +3157,12 @@
   "prompt": "What does \"disparaging\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"disparaging\":",
   "options": [
-   "خاص بالأبراج الفلكية",
-   "داخل الجزيء",
+   "ملتفّ للداخل",
    "فيه تقليل وإهانة",
-   "خاص بطرق التدريس"
+   "لسه مش مستغل",
+   "تكافلي بين كائنات"
   ],
-  "answerIndex": 2,
+  "answerIndex": 1,
   "explanationAr": "معنى \"disparaging\" هو: فيه تقليل وإهانة. مثال: هي تجاهلت تعليقاته اللي بتقلل من شغلها.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3175,12 +3175,12 @@
   "prompt": "What does \"divest\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"divest\":",
   "options": [
-   "يصبّ برفق (النبيذ مثلا)",
-   "يشتري من تاني",
-   "يتبرأ من",
-   "يبيع حصته الاستثمارية"
+   "يبيع حصته الاستثمارية",
+   "يشد ويربط بالحبال (بحري)",
+   "يعزل حراريًا أو كهربائيًا",
+   "يرغي بلا هدف"
   ],
-  "answerIndex": 3,
+  "answerIndex": 0,
   "explanationAr": "معنى \"divest\" هو: يبيع حصته الاستثمارية. مثال: الصندوق ناوي يبيع استثماراته في الفحم.",
   "topic": "Vocabulary: verb (C2)",
   "source": "generated-vocab"
@@ -3193,12 +3193,12 @@
   "prompt": "What does \"dodo\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"dodo\":",
   "options": [
-   "نتيجة مفيدة للمجهود",
-   "إعلان بشكل مقال",
-   "في أحسن حال",
-   "طائر الدودو المنقرض"
+   "ورشة حدادة",
+   "الطائفية / الولاء للجماعة",
+   "طائر الدودو المنقرض",
+   "نجومية وشهرة"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"dodo\" هو: طائر الدودو المنقرض. مثال: طائر الدودو انقرض من قرون.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3211,12 +3211,12 @@
   "prompt": "What does \"eerily\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"eerily\":",
   "options": [
-   "بالتراكم / في المجمل",
-   "بالطريقة المعتادة",
-   "بعشوائية وبلا تنظيم",
-   "بشكل غريب ومقلق"
+   "من الناحية التعليمية",
+   "بشكل غريب ومقلق",
+   "بما لا يوصف",
+   "بتعالٍ وكبرياء"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"eerily\" هو: بشكل غريب ومقلق. مثال: المستشفى المهجورة كانت هادية بشكل مقلق بالليل.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -3229,12 +3229,12 @@
   "prompt": "What does \"electrochemical\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"electrochemical\":",
   "options": [
-   "معدي مريئي",
-   "ثابت رغم التحويل",
-   "كهروكيميائي",
-   "مش داعم"
+   "صاخب ومليان اضطراب",
+   "متعالي ومتكبّر",
+   "ممكن يتحسب",
+   "كهروكيميائي"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"electrochemical\" هو: كهروكيميائي. مثال: البطارية بتحوّل الطاقة عن طريق تفاعل كهروكيميائي.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3247,10 +3247,10 @@
   "prompt": "What does \"empirically\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"empirically\":",
   "options": [
-   "بحماس وفرحة",
-   "بشكل لا مفر منه",
+   "بدون أنانية",
+   "بشكل مفيد",
    "بالتجربة والملاحظة",
-   "بدون جدوى"
+   "بغيرة"
   ],
   "answerIndex": 2,
   "explanationAr": "معنى \"empirically\" هو: بالتجربة والملاحظة. مثال: الباحثين اختبروا النظرية عمليًا ببيانات حقيقية.",
@@ -3265,12 +3265,12 @@
   "prompt": "What does \"entanglement\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"entanglement\":",
   "options": [
-   "مسار الشمس الظاهري",
-   "مأجور",
    "تشابك",
-   "قشرة جرح"
+   "حركة لا إرادية متكررة",
+   "واحد بيعيش للمتعة",
+   "الأعلى رتبة / أشمل"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"entanglement\" هو: تشابك. مثال: الصياد فك الطير من الشبك اللي متشابك فيه.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3283,12 +3283,12 @@
   "prompt": "What does \"epsilon\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"epsilon\":",
   "options": [
-   "شخص ساكن أو محتل",
-   "تطور فوق مستوى الأنواع",
-   "حرف إبسيلون اليوناني",
-   "التربة التحتية"
+   "رصاصة متفجرة / غبي",
+   "مركب عنصر هالوجيني",
+   "بيروكسيد خصوصًا مية أكسجين",
+   "حرف إبسيلون اليوناني"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"epsilon\" هو: حرف إبسيلون اليوناني. مثال: رمز إبسيلون بيظهر في المعادلة الرياضية دي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3301,12 +3301,12 @@
   "prompt": "What does \"expeditionary\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"expeditionary\":",
   "options": [
-   "خاص بقوة عسكرية خارجية",
-   "تكافلي بين كائنات",
-   "اختياري / حسب الظروف",
-   "قصير وتخين"
+   "برونزي اللون",
+   "وشه جامد من غير تعبير",
+   "قبل العملية",
+   "خاص بقوة عسكرية خارجية"
   ],
-  "answerIndex": 0,
+  "answerIndex": 3,
   "explanationAr": "معنى \"expeditionary\" هو: خاص بقوة عسكرية خارجية. مثال: القوة العسكرية المبعوتة برّه وصلت من البحر عند الفجر.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3319,12 +3319,12 @@
   "prompt": "What does \"firstborn\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"firstborn\":",
   "options": [
-   "عشب الليمون (حشيشة الليمون)",
-   "مفك",
-   "فئة فرعية",
-   "أول مولود"
+   "التدنيس",
+   "أول مولود",
+   "كتلة جليد طافية",
+   "الطباعة الضوئية (رقائق)"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"firstborn\" هو: أول مولود. مثال: أول مولود ليهم بدأ المدرسة في سبتمبر ده.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3337,12 +3337,12 @@
   "prompt": "What does \"flowery\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"flowery\":",
   "options": [
-   "خامل ومفيهوش حيل",
-   "مريح ومهدي",
-   "عرضي / بالعرض",
-   "مليان زخرفة في الكلام"
+   "ممكن تشخيصه",
+   "فيه مغازلة",
+   "مليان زخرفة في الكلام",
+   "دقيق وأمين جدًا"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"flowery\" هو: مليان زخرفة في الكلام. مثال: كلامه المزخرف خلّى الرسالة البسيطة ملخبطة.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3355,9 +3355,9 @@
   "prompt": "What does \"frock\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"frock\":",
   "options": [
-   "باباظ / فاكهة البابو",
-   "عجز عن أداء حاجة",
-   "عيار / تركيز الأجسام المضادة",
+   "نبات جاف بتدحرجه الريح",
+   "سكر خماسي",
+   "تكرار صوت بأول الكلمات",
    "فستان"
   ],
   "answerIndex": 3,
@@ -3373,12 +3373,12 @@
   "prompt": "What does \"gens\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"gens\":",
   "options": [
+   "إلغاء ترخيص أو حق",
+   "ريال",
    "عشيرة رومانية قديمة",
-   "عداء وضغينة",
-   "قتل الأم",
-   "أشغال إبرة وخياطة"
+   "عدم استعمال"
   ],
-  "answerIndex": 0,
+  "answerIndex": 2,
   "explanationAr": "معنى \"gens\" هو: عشيرة رومانية قديمة. مثال: كل عشيرة رومانية كانت بترجع نسبها لجد مؤسس واحد.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3391,9 +3391,9 @@
   "prompt": "What does \"glutamate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"glutamate\":",
   "options": [
-   "قماش كاروهات اسكتلندي",
-   "جرح غويط وطويل",
-   "امرأة خائنة (قديمة)",
+   "غزال أبيض الذيل",
+   "ظهير جناح (كورة)",
+   "موضع إمساك",
    "جلوتامات"
   ],
   "answerIndex": 3,
@@ -3410,9 +3410,9 @@
   "promptAr": "اختر المعنى الصحيح لكلمة \"goblet\":",
   "options": [
    "كاس بساق",
-   "فراش الموت",
-   "اضطراب سيكوباتي بالشخصية",
-   "جرأة متجاوزة للحدود"
+   "شراع منفوخ كبير",
+   "طابور عربيات طويل / زحمة",
+   "طب وأمراض الدم"
   ],
   "answerIndex": 0,
   "explanationAr": "معنى \"goblet\" هو: كاس بساق. مثال: هو رفع كاس فضة بساق وهو بيحيّي الحاضرين.",
@@ -3427,12 +3427,12 @@
   "prompt": "What does \"gyro\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"gyro\":",
   "options": [
-   "قالب روندو موسيقي",
    "ساندوتش لحم يوناني",
-   "لفة خيط صوف",
-   "عدم رغبة أو استعداد"
+   "أنسنة",
+   "أهمية مؤثرة",
+   "حِيَل وألاعيب لفت الانتباه"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"gyro\" هو: ساندوتش لحم يوناني. مثال: هو طلب ساندوتش جيرو بطماطم وصوص زبادي.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3445,12 +3445,12 @@
   "prompt": "What does \"handsomely\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"handsomely\":",
   "options": [
-   "بتآزر",
-   "بمقابل كبير",
-   "بشكل مستحيل يتصلح",
-   "من غير هدف"
+   "بغزارة",
+   "قريب (استعمال قديم)",
+   "بهذه الطريقة (عامية)",
+   "بمقابل كبير"
   ],
-  "answerIndex": 1,
+  "answerIndex": 3,
   "explanationAr": "معنى \"handsomely\" هو: بمقابل كبير. مثال: الشركة كافأتها بمقابل كبير على الفكرة.",
   "topic": "Vocabulary: adverb (C2)",
   "source": "generated-vocab"
@@ -3463,12 +3463,12 @@
   "prompt": "What does \"hapless\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"hapless\":",
   "options": [
+   "متنقل للشغل",
    "قليل الحظ",
-   "قابل للبيع",
-   "متزمت ورسمي زيادة",
-   "فعّال وبيجيب نتيجة"
+   "يقظ ومتابع بحذر",
+   "غير مقبول / مش لطيف"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"hapless\" هو: قليل الحظ. مثال: المسافر قليل الحظ ضيّع باسبورُه وشنطه.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3481,12 +3481,12 @@
   "prompt": "What does \"humanistic\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"humanistic\":",
   "options": [
-   "متعلق بالعالم السفلي",
-   "عابر للثقافات",
-   "إنساني النزعة",
-   "جاي بالصدفة / محظوظ"
+   "مولّد لحاجات جديدة",
+   "مفرط العاطفية والرومانسية",
+   "يقظ ومتابع بحذر",
+   "إنساني النزعة"
   ],
-  "answerIndex": 2,
+  "answerIndex": 3,
   "explanationAr": "معنى \"humanistic\" هو: إنساني النزعة. مثال: تدريسها بيتبع منهج إنساني في التعلم.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3499,12 +3499,12 @@
   "prompt": "What does \"iconography\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"iconography\":",
   "options": [
-   "ثلاثة بنسات",
-   "تقدم في الشغل",
    "دراسة الرموز والصور",
-   "عين سحرية في الباب"
+   "تقوية التأثير",
+   "نقطة النص",
+   "خيوط العرض في النسيج"
   ],
-  "answerIndex": 2,
+  "answerIndex": 0,
   "explanationAr": "معنى \"iconography\" هو: دراسة الرموز والصور. مثال: المحاضرة تناولت الرموز الدينية في فن العصور الوسطى.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3513,18 +3513,18 @@
   "id": "q-voc-011196",
   "skill": "vocabulary",
   "type": "multiple-choice",
-  "level": "C2",
+  "level": "C1",
   "prompt": "What does \"impervious\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"impervious\":",
   "options": [
-   "ثنائي المتغيّر",
-   "طيب كأنه قديس",
-   "ربوي (بفائدة فاحشة)",
-   "مش بينفذ منه"
+   "مكتئب ومكشر",
+   "رتيب وممل",
+   "مش بينفذ منه",
+   "شامل واسع للمشهد"
   ],
-  "answerIndex": 3,
+  "answerIndex": 2,
   "explanationAr": "معنى \"impervious\" هو: مش بينفذ منه. مثال: القماش المقاوم للمية ده ما بينفذش منه المطر الغزير.",
-  "topic": "Vocabulary: adjective (C2)",
+  "topic": "Vocabulary: adjective (C1)",
   "source": "generated-vocab"
  },
  {
@@ -3535,12 +3535,12 @@
   "prompt": "What does \"implausible\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"implausible\":",
   "options": [
-   "صوتي",
-   "خاص بالكهربا الساكنة",
-   "متعلق بعضو المجلس البلدي",
-   "مش قابل للتصديق"
+   "خاص بغشاء القلب",
+   "مش قابل للتصديق",
+   "مافيش شك في صحته",
+   "خاص بالنجوم أو الأرواح"
   ],
-  "answerIndex": 3,
+  "answerIndex": 1,
   "explanationAr": "معنى \"implausible\" هو: مش قابل للتصديق. مثال: تفسيره بان مش قابل للتصديق لكل الموجودين.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3553,12 +3553,12 @@
   "prompt": "What does \"prejudgment\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"prejudgment\":",
   "options": [
-   "ممثل بديل",
    "حكم مسبق",
-   "عصفور الصرد (طائر مفترس صغير)",
-   "نورة عنقودية"
+   "بيكربونات",
+   "متلصص / عين (عامية)",
+   "مطبخ صغير"
   ],
-  "answerIndex": 1,
+  "answerIndex": 0,
   "explanationAr": "معنى \"prejudgment\" هو: حكم مسبق. مثال: الاستماع العادل محتاج أدلة مش حكم مسبق.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
@@ -3571,12 +3571,12 @@
   "prompt": "What does \"indeterminate\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"indeterminate\":",
   "options": [
+   "ناري التكوين جيولوجيًا",
    "مش واضح أو محدد",
-   "من غير نبرة / هادي",
-   "ناتج عن تزاوج الأقارب",
-   "غير مادي / روحاني"
+   "براق وساحر",
+   "زحمة ومليان ناس"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"indeterminate\" هو: مش واضح أو محدد. مثال: اللوحة بتصوّر أشخاص سنهم مش واضح.",
   "topic": "Vocabulary: adjective (C2)",
   "source": "generated-vocab"
@@ -3589,12 +3589,12 @@
   "prompt": "What does \"inflection\" mean?",
   "promptAr": "اختر المعنى الصحيح لكلمة \"inflection\":",
   "options": [
+   "قرحة في الفم / مرض بيأكل النبات",
    "تغير نبرة أو تصريف",
-   "رأسقدميات (أخطبوط وحبار)",
-   "سطح السفينة الخلفي",
-   "جبل تحت البحر"
+   "شريحة مالية",
+   "سباق قوارب"
   ],
-  "answerIndex": 0,
+  "answerIndex": 1,
   "explanationAr": "معنى \"inflection\" هو: تغير نبرة أو تصريف. مثال: تغير بسيط في نبرة صوتها بيّن إنها شاكّة.",
   "topic": "Vocabulary: noun (C2)",
   "source": "generated-vocab"
