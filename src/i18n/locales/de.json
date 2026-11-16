@@ -2410,5 +2410,15 @@
   "se.characters": "Zeichen",
   "se.loading": "Übersetzung läuft...",
   "se.translate": "Jetzt übersetzen",
-  "se.placeholder": "Text zum Übersetzen hier eingeben oder einfügen..."
+  "se.placeholder": "Text zum Übersetzen hier eingeben oder einfügen...",
+  "tpr.title": "Übersetzungen vergleichen",
+  "tpr.intro": "Übersetze den Satz zuerst selbst. Blende dann die Vorschläge ein und vergleiche. Es gibt keine automatische Bewertung oder Punktzahl.",
+  "tpr.enAr": "Englisch ins Arabische",
+  "tpr.arEn": "Arabisch ins Englische",
+  "tpr.listen": "Satz anhören",
+  "tpr.hide": "Vorschläge ausblenden",
+  "tpr.show": "Vorschläge anzeigen",
+  "tpr.answers": "Lösungsvorschläge, nicht alle möglichen Übersetzungen",
+  "tpr.previous": "Zurück",
+  "tpr.next": "Weiter"
 }
