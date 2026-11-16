@@ -1,0 +1,4504 @@
+{
+ "items": [
+  {
+   "id": "slg-001101",
+   "sentences": [
+    {
+     "en": "Ping me when you arrive.",
+     "ar": "ابعتلي رسالة لما توصل."
+    },
+    {
+     "en": "She pinged me the address.",
+     "ar": "بعتتلي العنوان في رسالة."
+    },
+    {
+     "en": "He pinged the group chat.",
+     "ar": "بعت رسالة للجروب."
+    },
+    {
+     "en": "Ping me the details.",
+     "ar": "ابعتلي التفاصيل في رسالة."
+    },
+    {
+     "en": "She will ping me tomorrow.",
+     "ar": "هتبعتلي رسالة بكرة."
+    },
+    {
+     "en": "He pinged me about the meeting.",
+     "ar": "بعتلي رسالة عن الاجتماع."
+    },
+    {
+     "en": "Ping her and ask.",
+     "ar": "ابعتلها رسالة واسألها."
+    },
+    {
+     "en": "He pinged me last night.",
+     "ar": "بعتلي رسالة مبارح بالليل."
+    },
+    {
+     "en": "She pinged me back right away.",
+     "ar": "ردّت عليا برسالة على طول."
+    },
+    {
+     "en": "Ping me if you need help.",
+     "ar": "ابعتلي رسالة لو محتاج مساعدة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001102",
+   "sentences": [
+    {
+     "en": "Hit me up when you are free.",
+     "ar": "كلّمني لما تفضى."
+    },
+    {
+     "en": "She hit me up last night.",
+     "ar": "كلمتني مبارح بالليل."
+    },
+    {
+     "en": "He hit me up about the plan.",
+     "ar": "كلّمني بخصوص الخطة."
+    },
+    {
+     "en": "Hit me up if you need anything.",
+     "ar": "كلّمني لو محتاج أي حاجة."
+    },
+    {
+     "en": "She hit me up with a question.",
+     "ar": "كلمتني بسؤال."
+    },
+    {
+     "en": "He hit me up for the address.",
+     "ar": "كلّمني عشان العنوان."
+    },
+    {
+     "en": "Hit me up later.",
+     "ar": "كلّمني بعدين."
+    },
+    {
+     "en": "She said, \"Hit me up later.\"",
+     "ar": "قالت كلّمني بعدين."
+    },
+    {
+     "en": "He hit me up and we talked.",
+     "ar": "كلّمني واتكلمنا."
+    },
+    {
+     "en": "Hit me up on the weekend.",
+     "ar": "كلّمني في الويكند."
+    }
+   ]
+  },
+  {
+   "id": "slg-001103",
+   "sentences": [
+    {
+     "en": "Holler at me when you get there.",
+     "ar": "كلّمني لما توصل."
+    },
+    {
+     "en": "She hollered from the kitchen.",
+     "ar": "نادت من المطبخ."
+    },
+    {
+     "en": "He hollered my name.",
+     "ar": "نادى على اسمي."
+    },
+    {
+     "en": "Holler if you need help.",
+     "ar": "ناديني لو محتاج مساعدة."
+    },
+    {
+     "en": "She hollered at the kids.",
+     "ar": "نادت على العيال."
+    },
+    {
+     "en": "He hollered across the street.",
+     "ar": "نادى من عبر الشارع."
+    },
+    {
+     "en": "Holler at me tonight.",
+     "ar": "كلّمني النهارده بالليل."
+    },
+    {
+     "en": "She hollered for a taxi.",
+     "ar": "نادت على تاكسي."
+    },
+    {
+     "en": "He hollered and we came.",
+     "ar": "نادى واحنا جينا."
+    },
+    {
+     "en": "Holler when dinner is ready.",
+     "ar": "نادينا لما الأكل يجهز."
+    }
+   ]
+  },
+  {
+   "id": "slg-001104",
+   "sentences": [
+    {
+     "en": "Give me a buzz later.",
+     "ar": "ديني رنة بعدين."
+    },
+    {
+     "en": "She gave me a buzz yesterday.",
+     "ar": "كلمتني مبارح."
+    },
+    {
+     "en": "He gave the office a buzz.",
+     "ar": "كلم المكتب."
+    },
+    {
+     "en": "Give him a buzz tonight.",
+     "ar": "كلّمه النهارده بالليل."
+    },
+    {
+     "en": "She will give you a buzz.",
+     "ar": "هتكلمّك."
+    },
+    {
+     "en": "He gave me a buzz about the job.",
+     "ar": "كلّمني بخصوص الشغل."
+    },
+    {
+     "en": "Give her a buzz and ask.",
+     "ar": "كلّمها واسألها."
+    },
+    {
+     "en": "She gave me a buzz and we met.",
+     "ar": "كلمتني واتقابلنا."
+    },
+    {
+     "en": "He said to give him a buzz.",
+     "ar": "قال كلّمني."
+    },
+    {
+     "en": "Give me a buzz when you land.",
+     "ar": "ديني رنة لما توصل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001105",
+   "sentences": [
+    {
+     "en": "Give me a ring tonight.",
+     "ar": "كلّمني في التليفون النهارده بالليل."
+    },
+    {
+     "en": "She gave me a ring yesterday.",
+     "ar": "كلمتني في التليفون مبارح."
+    },
+    {
+     "en": "He gave the doctor a ring.",
+     "ar": "كلم الدكتور في التليفون."
+    },
+    {
+     "en": "Give her a ring and ask.",
+     "ar": "كلّمها واسألها."
+    },
+    {
+     "en": "She will give you a ring.",
+     "ar": "هتكلمّك في التليفون."
+    },
+    {
+     "en": "He gave me a ring about the job.",
+     "ar": "كلّمني في التليفون بخصوص الشغل."
+    },
+    {
+     "en": "Give me a ring when you arrive.",
+     "ar": "كلّمني لما توصل."
+    },
+    {
+     "en": "She gave him a ring and invited him.",
+     "ar": "كلمته ودعته."
+    },
+    {
+     "en": "He said to give him a ring.",
+     "ar": "قال كلّمني في التليفون."
+    },
+    {
+     "en": "Give us a ring on the weekend.",
+     "ar": "كلّمنا في الويكند."
+    }
+   ]
+  },
+  {
+   "id": "slg-001106",
+   "sentences": [
+    {
+     "en": "Give me a bell when you are free.",
+     "ar": "كلّمني لما تفضى."
+    },
+    {
+     "en": "She gave me a bell last night.",
+     "ar": "كلمتني مبارح بالليل."
+    },
+    {
+     "en": "He gave his mum a bell.",
+     "ar": "كلم أمه في التليفون."
+    },
+    {
+     "en": "Give her a bell and ask.",
+     "ar": "كلّمها واسألها."
+    },
+    {
+     "en": "She will give you a bell.",
+     "ar": "هتكلمّك."
+    },
+    {
+     "en": "He gave me a bell about the plan.",
+     "ar": "كلّمني بخصوص الخطة."
+    },
+    {
+     "en": "Give me a bell when you land.",
+     "ar": "كلّمني لما توصل."
+    },
+    {
+     "en": "She gave him a bell and they met.",
+     "ar": "كلمته واتقابلوا."
+    },
+    {
+     "en": "He said to give him a bell.",
+     "ar": "قال كلّمني."
+    },
+    {
+     "en": "Give us a bell next week.",
+     "ar": "كلّمنا الأسبوع الجاي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001107",
+   "sentences": [
+    {
+     "en": "Give me a shout when you are ready.",
+     "ar": "ناديني لما تكون جاهز."
+    },
+    {
+     "en": "She gave me a shout yesterday.",
+     "ar": "كلمتني مبارح."
+    },
+    {
+     "en": "He gave a shout from the door.",
+     "ar": "نادى من الباب."
+    },
+    {
+     "en": "Give her a shout and ask.",
+     "ar": "كلّمها واسألها."
+    },
+    {
+     "en": "She will give you a shout.",
+     "ar": "هتناديك."
+    },
+    {
+     "en": "He gave me a shout about the plan.",
+     "ar": "كلّمني بخصوص الخطة."
+    },
+    {
+     "en": "Give me a shout if you need help.",
+     "ar": "ناديني لو محتاج مساعدة."
+    },
+    {
+     "en": "She gave a shout and we came.",
+     "ar": "نادت واحنا جينا."
+    },
+    {
+     "en": "He said to give him a shout.",
+     "ar": "قال ناديني."
+    },
+    {
+     "en": "Give us a shout on the weekend.",
+     "ar": "كلّمنا في الويكند."
+    }
+   ]
+  },
+  {
+   "id": "slg-001108",
+   "sentences": [
+    {
+     "en": "She blew up my phone all day.",
+     "ar": "فضلت تبعتلي رسايل طول اليوم."
+    },
+    {
+     "en": "He blew up my phone last night.",
+     "ar": "فضل يبعتلي رسايل مبارح بالليل."
+    },
+    {
+     "en": "They blew up my phone with messages.",
+     "ar": "فضلوا يبعتولي رسايل كتير."
+    },
+    {
+     "en": "She blew up his phone with calls.",
+     "ar": "فضلت تتصل بيه كتير."
+    },
+    {
+     "en": "He blew up her phone all weekend.",
+     "ar": "فضل يبعتلها رسايل طول الويكند."
+    },
+    {
+     "en": "My friends blew up my phone.",
+     "ar": "صحابي فضلوا يبعتولي رسايل."
+    },
+    {
+     "en": "She blew up my phone when I was away.",
+     "ar": "فضلت تبعتلي رسايل وأنا مش موجود."
+    },
+    {
+     "en": "He blew up my phone with questions.",
+     "ar": "فضل يبعتلي أسئلة كتير."
+    },
+    {
+     "en": "They blew up her phone with news.",
+     "ar": "فضلوا يبعتولها أخبار كتير."
+    },
+    {
+     "en": "She blew up my phone and I replied.",
+     "ar": "فضلت تبعتلي رسايل وأنا رديت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001109",
+   "sentences": [
+    {
+     "en": "She screened the call.",
+     "ar": "فلترت المكالمة ومردتش."
+    },
+    {
+     "en": "He screened my calls all day.",
+     "ar": "فلتر مكالماتي طول اليوم."
+    },
+    {
+     "en": "She is screening her calls.",
+     "ar": "بتفلتر مكالماتها."
+    },
+    {
+     "en": "He screened the unknown number.",
+     "ar": "مردش على الرقم المجهول."
+    },
+    {
+     "en": "She screened him for a week.",
+     "ar": "فلترت مكالماته أسبوع كامل."
+    },
+    {
+     "en": "He screens every call.",
+     "ar": "بيفلتر كل المكالمات."
+    },
+    {
+     "en": "She screened the call and texted back.",
+     "ar": "مردتش على المكالمة وبعتت رسالة."
+    },
+    {
+     "en": "He screened me and I got mad.",
+     "ar": "مردش عليا وأنا زعلت."
+    },
+    {
+     "en": "She screens calls when busy.",
+     "ar": "بتفلتر المكالمات لما تكون مشغولة."
+    },
+    {
+     "en": "He screened the call and kept working.",
+     "ar": "مردش على المكالمة وكمل شغل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001110",
+   "sentences": [
+    {
+     "en": "He butt dialed me.",
+     "ar": "اتصل بيا بالغلط من جيبه."
+    },
+    {
+     "en": "She butt dialed her boss.",
+     "ar": "اتصلت بمديرها بالغلط من جيبها."
+    },
+    {
+     "en": "He butt dialed me twice.",
+     "ar": "اتصل بيا بالغلط مرتين."
+    },
+    {
+     "en": "She butt dialed and hung up.",
+     "ar": "اتصلت بالغلط وقفلت."
+    },
+    {
+     "en": "He butt dialed me in the meeting.",
+     "ar": "اتصل بيا بالغلط وأنا في الاجتماع."
+    },
+    {
+     "en": "She butt dialed me from her bag.",
+     "ar": "اتصلت بيا بالغلط من شنطتها."
+    },
+    {
+     "en": "He butt dialed the whole family.",
+     "ar": "اتصل بالعيلة كلها بالغلط."
+    },
+    {
+     "en": "She butt dialed me and I heard everything.",
+     "ar": "اتصلت بيا بالغلط وأنا سمعت كل حاجة."
+    },
+    {
+     "en": "He butt dialed me at midnight.",
+     "ar": "اتصل بيا بالغلط نص الليل."
+    },
+    {
+     "en": "She butt dialed and laughed.",
+     "ar": "اتصلت بالغلط وضحكت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001111",
+   "sentences": [
+    {
+     "en": "He pocket dialed me.",
+     "ar": "اتصل بيا بالغلط من جيبه."
+    },
+    {
+     "en": "She pocket dialed her mum.",
+     "ar": "اتصلت بأمها بالغلط من جيبها."
+    },
+    {
+     "en": "He pocket dialed me twice.",
+     "ar": "اتصل بيا بالغلط مرتين."
+    },
+    {
+     "en": "She pocket dialed and hung up.",
+     "ar": "اتصلت بالغلط وقفلت."
+    },
+    {
+     "en": "He pocket dialed me in the meeting.",
+     "ar": "اتصل بيا بالغلط وأنا في الاجتماع."
+    },
+    {
+     "en": "She pocket dialed me from her coat.",
+     "ar": "اتصلت بيا بالغلط من جيب بالطوها."
+    },
+    {
+     "en": "He pocket dialed the whole office.",
+     "ar": "اتصل بالمكتب كله بالغلط."
+    },
+    {
+     "en": "She pocket dialed me and I heard everything.",
+     "ar": "اتصلت بيا بالغلط وأنا سمعت كل حاجة."
+    },
+    {
+     "en": "He pocket dialed me at midnight.",
+     "ar": "اتصل بيا بالغلط نص الليل."
+    },
+    {
+     "en": "She pocket dialed and laughed.",
+     "ar": "اتصلت بالغلط وضحكت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001112",
+   "sentences": [
+    {
+     "en": "He phoned it in today.",
+     "ar": "عمل الشغل من غير أي مجهود النهارده."
+    },
+    {
+     "en": "She phoned it in with her presentation.",
+     "ar": "قدمت العرض من غير أي مجهود."
+    },
+    {
+     "en": "He is phoning it in this week.",
+     "ar": "بيشتغل من غير أي مجهود الأسبوع ده."
+    },
+    {
+     "en": "She phoned it in and left.",
+     "ar": "عملت الشغل من غير مجهود ومشت."
+    },
+    {
+     "en": "He phoned it in on the report.",
+     "ar": "كتب التقرير من غير أي مجهود."
+    },
+    {
+     "en": "She phoned it in on Friday.",
+     "ar": "اشتغلت من غير مجهود يوم الجمعة."
+    },
+    {
+     "en": "He phones it in when tired.",
+     "ar": "بيشتغل من غير مجهود لما يكون تعبان."
+    },
+    {
+     "en": "She phoned it in on the whole project.",
+     "ar": "عملت المشروع كله من غير أي مجهود."
+    },
+    {
+     "en": "He phoned it in and got caught.",
+     "ar": "عمل الشغل من غير مجهود واتكشف."
+    },
+    {
+     "en": "She phoned it in and nobody noticed.",
+     "ar": "اشتغلت من غير مجهود ومحدش لاحظ."
+    }
+   ]
+  },
+  {
+   "id": "slg-001113",
+   "sentences": [
+    {
+     "en": "Let's call it a day.",
+     "ar": "يلا نكفي كده النهارده."
+    },
+    {
+     "en": "She called it a day early.",
+     "ar": "قفلت شغلها بدري."
+    },
+    {
+     "en": "He called it a day at six.",
+     "ar": "قفل شغله الساعة ستة."
+    },
+    {
+     "en": "I am tired, let's call it a day.",
+     "ar": "أنا تعبان، يلا نكفي كده."
+    },
+    {
+     "en": "She called it a day and went home.",
+     "ar": "قفلت شغلها وراحت البيت."
+    },
+    {
+     "en": "He called it a day after the meeting.",
+     "ar": "قفل شغله بعد الاجتماع."
+    },
+    {
+     "en": "We should call it a day.",
+     "ar": "لازم نكفي كده النهارده."
+    },
+    {
+     "en": "She called it a day and relaxed.",
+     "ar": "قفلت شغلها وارتاحت."
+    },
+    {
+     "en": "He called it a day and smiled.",
+     "ar": "قفل شغله وابتسم."
+    },
+    {
+     "en": "Time to call it a day.",
+     "ar": "وقت ما نكفي كده النهارده."
+    }
+   ]
+  },
+  {
+   "id": "slg-001114",
+   "sentences": [
+    {
+     "en": "Let's call it a night.",
+     "ar": "يلا نروح ننام."
+    },
+    {
+     "en": "She called it a night early.",
+     "ar": "راحت تنام بدري."
+    },
+    {
+     "en": "He called it a night at eleven.",
+     "ar": "راح ينام الساعة حداشر."
+    },
+    {
+     "en": "I am tired, let's call it a night.",
+     "ar": "أنا تعبان، يلا نروح ننام."
+    },
+    {
+     "en": "She called it a night and went home.",
+     "ar": "قفلت السهرة وراحت البيت."
+    },
+    {
+     "en": "He called it a night after the party.",
+     "ar": "راح ينام بعد الحفلة."
+    },
+    {
+     "en": "We should call it a night.",
+     "ar": "لازم نروح ننام."
+    },
+    {
+     "en": "She called it a night and slept well.",
+     "ar": "راحت نامت ونامت كويس."
+    },
+    {
+     "en": "He called it a night and smiled.",
+     "ar": "راح ينام وابتسم."
+    },
+    {
+     "en": "Time to call it a night.",
+     "ar": "وقت ما نروح ننام."
+    }
+   ]
+  },
+  {
+   "id": "slg-001115",
+   "sentences": [
+    {
+     "en": "I need to unplug this weekend.",
+     "ar": "محتاج أبعد عن الموبايل الويكند ده."
+    },
+    {
+     "en": "She unplugged for a week.",
+     "ar": "بعدت عن الموبايل أسبوع كامل."
+    },
+    {
+     "en": "He unplugged and went hiking.",
+     "ar": "بعد عن الشاشات وراح يتمشى في الجبل."
+    },
+    {
+     "en": "Unplug and relax.",
+     "ar": "بعد عن الموبايل وارتاح."
+    },
+    {
+     "en": "She unplugged and read a book.",
+     "ar": "بعدت عن الشاشات وقريت كتاب."
+    },
+    {
+     "en": "He unplugs every evening.",
+     "ar": "بيبعد عن الموبايل كل مسا."
+    },
+    {
+     "en": "She unplugged and felt better.",
+     "ar": "بعدت عن الموبايل وحست إنها أحسن."
+    },
+    {
+     "en": "He unplugged for the holiday.",
+     "ar": "بعد عن الشاشات في الأجازة."
+    },
+    {
+     "en": "Unplug and spend time with family.",
+     "ar": "بعد عن الموبايل واقضي وقت مع العيلة."
+    },
+    {
+     "en": "She unplugged and slept early.",
+     "ar": "بعدت عن الشاشات ونامت بدري."
+    }
+   ]
+  },
+  {
+   "id": "slg-001116",
+   "sentences": [
+    {
+     "en": "I binge-watched the whole series.",
+     "ar": "اتفرجت على المسلسل كله ورا بعض."
+    },
+    {
+     "en": "She binge-watched the show all weekend.",
+     "ar": "اتفرجت على المسلسل طول الويكند."
+    },
+    {
+     "en": "He binge-watched three seasons.",
+     "ar": "اتفرج على تلات مواسم ورا بعض."
+    },
+    {
+     "en": "We binge-watched the series last night.",
+     "ar": "اتفرجنا على المسلسل مبارح بالليل."
+    },
+    {
+     "en": "She binge-watches every weekend.",
+     "ar": "بتتفرج على حلقات ورا بعض كل ويكند."
+    },
+    {
+     "en": "He binge-watched the documentary.",
+     "ar": "اتفرج على الفيلم الوثائقي كله ورا بعض."
+    },
+    {
+     "en": "I want to binge-watch something new.",
+     "ar": "عايز أتفرج على حاجة جديدة ورا بعض."
+    },
+    {
+     "en": "She binge-watched and forgot to sleep.",
+     "ar": "اتفرجت ورا بعض ونسيت تنام."
+    },
+    {
+     "en": "He binge-watched the whole thing in a day.",
+     "ar": "اتفرج على كله في يوم واحد."
+    },
+    {
+     "en": "We binge-watched and ordered food.",
+     "ar": "اتفرجنا ورا بعض وطلبنا أكل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001117",
+   "sentences": [
+    {
+     "en": "I binged on snacks all night.",
+     "ar": "كلت تسالي بشراهة طول الليل."
+    },
+    {
+     "en": "She binged on the series.",
+     "ar": "اتفرجت على المسلسل بشراهة."
+    },
+    {
+     "en": "He binged on sweets.",
+     "ar": "كل حلويات بشراهة."
+    },
+    {
+     "en": "We binged on movies all weekend.",
+     "ar": "اتفرجنا على أفلام بشراهة طول الويكند."
+    },
+    {
+     "en": "She binged on chocolate.",
+     "ar": "كلت شوكولاتة بشراهة."
+    },
+    {
+     "en": "He binged on video games.",
+     "ar": "لعب ألعاب بشراهة."
+    },
+    {
+     "en": "I binged on the new album.",
+     "ar": "سمعت الألبوم الجديد بشراهة."
+    },
+    {
+     "en": "She binged on pizza last night.",
+     "ar": "كلت بيتزا بشراهة مبارح بالليل."
+    },
+    {
+     "en": "He binged on the whole series.",
+     "ar": "اتفرج على المسلسل كله بشراهة."
+    },
+    {
+     "en": "We binged and felt sick.",
+     "ar": "كلنا بشراهة وحسينا بالتعب."
+    }
+   ]
+  },
+  {
+   "id": "slg-001118",
+   "sentences": [
+    {
+     "en": "Spoiler alert: the hero dies.",
+     "ar": "تحذير حرق: البطل بيموت."
+    },
+    {
+     "en": "She said spoiler alert before the ending.",
+     "ar": "قالت تحذير حرق قبل النهاية."
+    },
+    {
+     "en": "Spoiler alert: do not read on.",
+     "ar": "تحذير حرق: متكملش القراية."
+    },
+    {
+     "en": "He shouted spoiler alert.",
+     "ar": "صاح تحذير حرق."
+    },
+    {
+     "en": "Spoiler alert: the villain wins.",
+     "ar": "تحذير حرق: الشرير بيكسب."
+    },
+    {
+     "en": "She posted it with a spoiler alert.",
+     "ar": "نزلته مع تحذير حرق."
+    },
+    {
+     "en": "Spoiler alert for the finale.",
+     "ar": "تحذير حرق للحلقة الأخيرة."
+    },
+    {
+     "en": "He forgot the spoiler alert.",
+     "ar": "نسي يقول تحذير حرق."
+    },
+    {
+     "en": "Spoiler alert: they get married.",
+     "ar": "تحذير حرق: بيتجوزوا."
+    },
+    {
+     "en": "She always says spoiler alert first.",
+     "ar": "دايمًا بتقول تحذير حرق الأول."
+    }
+   ]
+  },
+  {
+   "id": "slg-001119",
+   "sentences": [
+    {
+     "en": "The episode ended on a cliffhanger.",
+     "ar": "الحلقة خلصت على نهاية معلقة."
+    },
+    {
+     "en": "She hates cliffhangers.",
+     "ar": "بتكره النهايات المعلقة."
+    },
+    {
+     "en": "The season finale was a cliffhanger.",
+     "ar": "آخر الموسم كان نهاية معلقة."
+    },
+    {
+     "en": "He loves a good cliffhanger.",
+     "ar": "بيحب النهاية المعلقة الكويسة."
+    },
+    {
+     "en": "The book ends on a cliffhanger.",
+     "ar": "الكتاب بيخلص على نهاية معلقة."
+    },
+    {
+     "en": "She screamed at the cliffhanger.",
+     "ar": "صاحت عند النهاية المعلقة."
+    },
+    {
+     "en": "The movie had a huge cliffhanger.",
+     "ar": "الفيلم كان فيه نهاية معلقة كبيرة."
+    },
+    {
+     "en": "He waited a year after the cliffhanger.",
+     "ar": "استنى سنة بعد النهاية المعلقة."
+    },
+    {
+     "en": "The cliffhanger kept me up.",
+     "ar": "النهاية المعلقة سهرتني."
+    },
+    {
+     "en": "She texted me about the cliffhanger.",
+     "ar": "بعتتلي رسالة عن النهاية المعلقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001120",
+   "sentences": [
+    {
+     "en": "The show jumped the shark.",
+     "ar": "المسلسل بقى وحش بعد فترة ذهبية."
+    },
+    {
+     "en": "It jumped the shark in season five.",
+     "ar": "بقى وحش في الموسم الخامس."
+    },
+    {
+     "en": "The series jumped the shark years ago.",
+     "ar": "المسلسل باظ من سنين."
+    },
+    {
+     "en": "He said the show jumped the shark.",
+     "ar": "قال إن المسلسل بقى وحش."
+    },
+    {
+     "en": "It never jumped the shark.",
+     "ar": "مبقاش وحش أبدًا."
+    },
+    {
+     "en": "The sequel jumped the shark.",
+     "ar": "الجزء التاني بقى وحش."
+    },
+    {
+     "en": "She thinks it jumped the shark.",
+     "ar": "بتفكر إنه بقى وحش."
+    },
+    {
+     "en": "The show jumped the shark and lost fans.",
+     "ar": "المسلسل باظ وخسر جمهور."
+    },
+    {
+     "en": "It jumped the shark after the star left.",
+     "ar": "بقى وحش بعد ما النجم مشي."
+    },
+    {
+     "en": "Everyone agrees it jumped the shark.",
+     "ar": "الكل متفق إنه بقى وحش."
+    }
+   ]
+  },
+  {
+   "id": "slg-001121",
+   "sentences": [
+    {
+     "en": "Reality TV is my guilty pleasure.",
+     "ar": "برامج الواقع حاجة بحبها ومستخبي."
+    },
+    {
+     "en": "Chocolate is her guilty pleasure.",
+     "ar": "الشوكولاتة حاجة بتحبها ومستخبية."
+    },
+    {
+     "en": "His guilty pleasure is old pop songs.",
+     "ar": "أغاني البوب القديمة حاجة بيحبها ومستخبي."
+    },
+    {
+     "en": "That show is a guilty pleasure.",
+     "ar": "المسلسل ده حاجة بحبها ومستخبي."
+    },
+    {
+     "en": "She admitted her guilty pleasure.",
+     "ar": "اعترفت بالحاجة اللي بتحبها ومستخبية."
+    },
+    {
+     "en": "Ice cream is his guilty pleasure.",
+     "ar": "الآيس كريم حاجة بيحبها ومستخبي."
+    },
+    {
+     "en": "My guilty pleasure is cheap novels.",
+     "ar": "الروايات الرخيصة حاجة بحبها ومستخبي."
+    },
+    {
+     "en": "She indulged her guilty pleasure.",
+     "ar": "استمتعت بالحاجة اللي بتحبها ومستخبية."
+    },
+    {
+     "en": "His guilty pleasure is singing in the car.",
+     "ar": "الغنا في العربية حاجة بيحبها ومستخبي."
+    },
+    {
+     "en": "We all have a guilty pleasure.",
+     "ar": "كلنا عندنا حاجة بنحبها ومستخبيين."
+    }
+   ]
+  },
+  {
+   "id": "slg-001122",
+   "sentences": [
+    {
+     "en": "That song is an earworm.",
+     "ar": "الأغنية دي لازقة في دماغي."
+    },
+    {
+     "en": "I have an earworm all day.",
+     "ar": "عندي أغنية لازقة في دماغي طول اليوم."
+    },
+    {
+     "en": "The jingle is a real earworm.",
+     "ar": "الإعلان ده أغنية لازقة في الدماغ."
+    },
+    {
+     "en": "She got an earworm from the radio.",
+     "ar": "لزقت في دماغها أغنية من الراديو."
+    },
+    {
+     "en": "This earworm will not leave.",
+     "ar": "الأغنية اللازقة دي مش راحة من دماغي."
+    },
+    {
+     "en": "He hummed the earworm all day.",
+     "ar": "فضل يدندن الأغنية اللازقة طول اليوم."
+    },
+    {
+     "en": "The chorus is an earworm.",
+     "ar": "الكورس أغنية بتتلزق في الدماغ."
+    },
+    {
+     "en": "She gave me an earworm.",
+     "ar": "خلت أغنية تتلزق في دماغي."
+    },
+    {
+     "en": "That earworm drove me crazy.",
+     "ar": "الأغنية اللازقة دي جننتني."
+    },
+    {
+     "en": "He could not shake the earworm.",
+     "ar": "مقدرش ينسى الأغنية اللازقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001123",
+   "sentences": [
+    {
+     "en": "He was a one-hit wonder.",
+     "ar": "كان مطرب بأغنية ناجحة واحدة واختفى."
+    },
+    {
+     "en": "She is a one-hit wonder.",
+     "ar": "هي مطربة بأغنية ناجحة واحدة واختفت."
+    },
+    {
+     "en": "The band was a one-hit wonder.",
+     "ar": "الفرقة كانت ناجحة بأغنية واحدة واختفت."
+    },
+    {
+     "en": "He became a one-hit wonder.",
+     "ar": "بقى مطرب بأغنية واحدة واختفى."
+    },
+    {
+     "en": "They were one-hit wonders.",
+     "ar": "كانوا ناجحين بأغنية واحدة واختفوا."
+    },
+    {
+     "en": "She never became a one-hit wonder.",
+     "ar": "مبقتش مطربة أغنية واحدة أبدًا."
+    },
+    {
+     "en": "The singer was a one-hit wonder.",
+     "ar": "المطرب كان ناجح بأغنية واحدة واختفى."
+    },
+    {
+     "en": "He is called a one-hit wonder.",
+     "ar": "بيتقال عليه مطرب أغنية واحدة."
+    },
+    {
+     "en": "The one-hit wonder disappeared.",
+     "ar": "مطرب الأغنية الواحدة اختفى."
+    },
+    {
+     "en": "She proved she is not a one-hit wonder.",
+     "ar": "أثبتت إنها مش مطربة أغنية واحدة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001124",
+   "sentences": [
+    {
+     "en": "The video went viral.",
+     "ar": "الفيديو انتشر على النت بسرعة."
+    },
+    {
+     "en": "Her post went viral.",
+     "ar": "البوست بتاعها انتشر بسرعة."
+    },
+    {
+     "en": "The meme went viral overnight.",
+     "ar": "الميم انتشر في ليلة واحدة."
+    },
+    {
+     "en": "His tweet went viral.",
+     "ar": "التغريدة بتاعته انتشرت بسرعة."
+    },
+    {
+     "en": "The dance went viral.",
+     "ar": "الرقصة انتشرت بسرعة."
+    },
+    {
+     "en": "She went viral for the recipe.",
+     "ar": "انتشرت بسبب الوصفة."
+    },
+    {
+     "en": "The clip went viral on Friday.",
+     "ar": "المقطع انتشر يوم الجمعة."
+    },
+    {
+     "en": "His joke went viral.",
+     "ar": "النكتة بتاعته انتشرت بسرعة."
+    },
+    {
+     "en": "The photo went viral.",
+     "ar": "الصورة انتشرت بسرعة."
+    },
+    {
+     "en": "It went viral and got millions of views.",
+     "ar": "انتشر وجاب ملايين المشاهدات."
+    }
+   ]
+  },
+  {
+   "id": "slg-001125",
+   "sentences": [
+    {
+     "en": "Her photo broke the internet.",
+     "ar": "صورتها انتشرت بشكل ضخم."
+    },
+    {
+     "en": "The news broke the internet.",
+     "ar": "الخبر انتشر بشكل ضخم."
+    },
+    {
+     "en": "His video broke the internet.",
+     "ar": "الفيديو بتاعه انتشر بشكل ضخم."
+    },
+    {
+     "en": "The announcement broke the internet.",
+     "ar": "الإعلان انتشر بشكل ضخم."
+    },
+    {
+     "en": "She broke the internet with the dress.",
+     "ar": "انتشرت بشكل ضخم بسبب الفستان."
+    },
+    {
+     "en": "The trailer broke the internet.",
+     "ar": "الإعلان التشويقي انتشر بشكل ضخم."
+    },
+    {
+     "en": "His dance broke the internet.",
+     "ar": "رقصته انتشرت بشكل ضخم."
+    },
+    {
+     "en": "The wedding photo broke the internet.",
+     "ar": "صورة الفرح انتشرت بشكل ضخم."
+    },
+    {
+     "en": "She broke the internet again.",
+     "ar": "انتشرت بشكل ضخم تاني."
+    },
+    {
+     "en": "The meme broke the internet last night.",
+     "ar": "الميم انتشر بشكل ضخم مبارح بالليل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001126",
+   "sentences": [
+    {
+     "en": "He photobombed our picture.",
+     "ar": "ظهر في خلفية صورتنا بهزار."
+    },
+    {
+     "en": "She photobombed the wedding photo.",
+     "ar": "ظهرت في خلفية صورة الفرح بهزار."
+    },
+    {
+     "en": "A stranger photobombed us.",
+     "ar": "حد غريب ظهر في خلفية صورتنا."
+    },
+    {
+     "en": "He photobombed the family shot.",
+     "ar": "ظهر في خلفية صورة العيلة بهزار."
+    },
+    {
+     "en": "She photobombed and laughed.",
+     "ar": "ظهرت في الخلفية بهزار وضحكت."
+    },
+    {
+     "en": "The dog photobombed the picture.",
+     "ar": "الكلب ظهر في خلفية الصورة."
+    },
+    {
+     "en": "He loves to photobomb.",
+     "ar": "بيحب يظهر في خلفية الصور بهزار."
+    },
+    {
+     "en": "She photobombed the selfie.",
+     "ar": "ظهرت في خلفية السيلفي بهزار."
+    },
+    {
+     "en": "He photobombed and ran away.",
+     "ar": "ظهر في الخلفية بهزار وجري."
+    },
+    {
+     "en": "The kid photobombed every photo.",
+     "ar": "الولد ظهر في خلفية كل صورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001127",
+   "sentences": [
+    {
+     "en": "She made a duck face.",
+     "ar": "عملت وضع البق في الصورة."
+    },
+    {
+     "en": "He hates the duck face.",
+     "ar": "بيكره وضع البق في الصور."
+    },
+    {
+     "en": "She did a duck face for the selfie.",
+     "ar": "عملت وضع البق للسيلفي."
+    },
+    {
+     "en": "The duck face was everywhere.",
+     "ar": "وضع البق كان في كل حتة."
+    },
+    {
+     "en": "She posted a duck face selfie.",
+     "ar": "نزلت سيلفي بوضع البق."
+    },
+    {
+     "en": "He laughed at her duck face.",
+     "ar": "ضحك على وضع البق بتاعها."
+    },
+    {
+     "en": "The duck face is outdated.",
+     "ar": "وضع البق بقى قديم."
+    },
+    {
+     "en": "She stopped doing the duck face.",
+     "ar": "بطلت تعمل وضع البق."
+    },
+    {
+     "en": "Her duck face went viral.",
+     "ar": "صورة وضع البق بتاعتها انتشرت."
+    },
+    {
+     "en": "He imitated the duck face.",
+     "ar": "قلد وضع البق."
+    }
+   ]
+  },
+  {
+   "id": "slg-001128",
+   "sentences": [
+    {
+     "en": "Wakey-wakey, time to get up.",
+     "ar": "صحصح، وقت القوم."
+    },
+    {
+     "en": "She said wakey-wakey to the kids.",
+     "ar": "قالت صحصح للعيال."
+    },
+    {
+     "en": "He shouted wakey-wakey in the morning.",
+     "ar": "صاح صحصح في الصبح."
+    },
+    {
+     "en": "Wakey-wakey, we are late.",
+     "ar": "صحصح، احنا متأخرين."
+    },
+    {
+     "en": "Mum said wakey-wakey at seven.",
+     "ar": "ماما قالت صحصح الساعة سبعة."
+    },
+    {
+     "en": "Wakey-wakey, breakfast is ready.",
+     "ar": "صحصح، الفطار جاهز."
+    },
+    {
+     "en": "He sang wakey-wakey to wake her.",
+     "ar": "غنى صحصح عشان يصحيها."
+    },
+    {
+     "en": "Wakey-wakey, the bus is here.",
+     "ar": "صحصح، الأوتوبيس وصل."
+    },
+    {
+     "en": "She whispered wakey-wakey.",
+     "ar": "قالت صحصح بصوت واطي."
+    },
+    {
+     "en": "Wakey-wakey, big day today.",
+     "ar": "صحصح، النهارده يوم كبير."
+    }
+   ]
+  },
+  {
+   "id": "slg-001129",
+   "sentences": [
+    {
+     "en": "Rise and shine, sleepyhead.",
+     "ar": "اصحى وابدأ يومك يا نعسان."
+    },
+    {
+     "en": "She said rise and shine.",
+     "ar": "قالت اصحى وابدأ يومك."
+    },
+    {
+     "en": "He shouted rise and shine.",
+     "ar": "صاح اصحى وابدأ يومك."
+    },
+    {
+     "en": "Rise and shine, it is Monday.",
+     "ar": "اصحى وابدأ يومك، النهارده اتنين."
+    },
+    {
+     "en": "Mum sang rise and shine.",
+     "ar": "ماما غنت اصحى وابدأ يومك."
+    },
+    {
+     "en": "Rise and shine, the sun is up.",
+     "ar": "اصحى وابدأ يومك، الشمس طلعت."
+    },
+    {
+     "en": "He said rise and shine every morning.",
+     "ar": "بيقول اصحى وابدأ يومك كل صبح."
+    },
+    {
+     "en": "Rise and shine, coffee is ready.",
+     "ar": "اصحى وابدأ يومك، القهوة جاهزة."
+    },
+    {
+     "en": "She texted rise and shine.",
+     "ar": "بعتت رسالة اصحى وابدأ يومك."
+    },
+    {
+     "en": "Rise and shine, we have work.",
+     "ar": "اصحى وابدأ يومك، عندنا شغل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001130",
+   "sentences": [
+    {
+     "en": "Up and at 'em, team.",
+     "ar": "يلا قوموا واشتغلوا يا فريق."
+    },
+    {
+     "en": "He said up and at 'em.",
+     "ar": "قال يلا قوم واشتغل."
+    },
+    {
+     "en": "She was up and at 'em early.",
+     "ar": "قامت واشتغلت بدري."
+    },
+    {
+     "en": "Up and at 'em, we have a long day.",
+     "ar": "يلا قوم واشتغل، عندنا يوم طويل."
+    },
+    {
+     "en": "The coach shouted up and at 'em.",
+     "ar": "الكابتن صاح يلا قوموا."
+    },
+    {
+     "en": "He was up and at 'em before dawn.",
+     "ar": "قام واشتغل قبل الفجر."
+    },
+    {
+     "en": "Up and at 'em, no time to waste.",
+     "ar": "يلا قوم واشتغل، مفيش وقت نضيعه."
+    },
+    {
+     "en": "She said up and at 'em and smiled.",
+     "ar": "قالت يلا قوم واشتغل وابتسمت."
+    },
+    {
+     "en": "Up and at 'em, the shop opens soon.",
+     "ar": "يلا قوم واشتغل، المحل هيفتح قريب."
+    },
+    {
+     "en": "He is always up and at 'em.",
+     "ar": "دايمًا بيقوم ويشتغل بدري."
+    }
+   ]
+  },
+  {
+   "id": "slg-001131",
+   "sentences": [
+    {
+     "en": "She arrived bright-eyed and bushy-tailed.",
+     "ar": "وصلت صاحية ومليانة طاقة."
+    },
+    {
+     "en": "He woke up bright-eyed and bushy-tailed.",
+     "ar": "صحي صاحي ومليان طاقة."
+    },
+    {
+     "en": "The kids were bright-eyed and bushy-tailed.",
+     "ar": "العيال كانوا صاحيين ومليانين طاقة."
+    },
+    {
+     "en": "She came to work bright-eyed and bushy-tailed.",
+     "ar": "جت الشغل صاحية ومليانة طاقة."
+    },
+    {
+     "en": "He was bright-eyed and bushy-tailed at six.",
+     "ar": "كان صاحي ومليان طاقة الساعة ستة."
+    },
+    {
+     "en": "They showed up bright-eyed and bushy-tailed.",
+     "ar": "ظهروا صاحيين ومليانين طاقة."
+    },
+    {
+     "en": "She felt bright-eyed and bushy-tailed.",
+     "ar": "حست إنها صاحية ومليانة طاقة."
+    },
+    {
+     "en": "He is always bright-eyed and bushy-tailed.",
+     "ar": "دايمًا صاحي ومليان طاقة."
+    },
+    {
+     "en": "The team was bright-eyed and bushy-tailed.",
+     "ar": "الفريق كان صاحي ومليان طاقة."
+    },
+    {
+     "en": "She walked in bright-eyed and bushy-tailed.",
+     "ar": "دخلت صاحية ومليانة طاقة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001132",
+   "sentences": [
+    {
+     "en": "He was out cold.",
+     "ar": "كان نايم نومة تقيلة خالص."
+    },
+    {
+     "en": "She fell asleep and was out cold.",
+     "ar": "نامت وبقت نايمة نومة تقيلة."
+    },
+    {
+     "en": "He is out cold on the sofa.",
+     "ar": "نايم نومة تقيلة على الكنبة."
+    },
+    {
+     "en": "She was out cold after the trip.",
+     "ar": "كانت نايمة نومة تقيلة بعد السفر."
+    },
+    {
+     "en": "He was out cold in minutes.",
+     "ar": "نام نومة تقيلة في دقايق."
+    },
+    {
+     "en": "The baby is out cold.",
+     "ar": "البيبي نايم نومة تقيلة."
+    },
+    {
+     "en": "She was out cold all night.",
+     "ar": "كانت نايمة نومة تقيلة طول الليل."
+    },
+    {
+     "en": "He was out cold and snoring.",
+     "ar": "كان نايم نومة تقيلة وبيشخر."
+    },
+    {
+     "en": "She went out cold after work.",
+     "ar": "نامت نومة تقيلة بعد الشغل."
+    },
+    {
+     "en": "He was out cold until noon.",
+     "ar": "كان نايم نومة تقيلة لحد الضهر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001133",
+   "sentences": [
+    {
+     "en": "He was dead to the world.",
+     "ar": "كان نايم نومة عميقة جدًا."
+    },
+    {
+     "en": "She is dead to the world.",
+     "ar": "هي نايمة نومة عميقة جدًا."
+    },
+    {
+     "en": "He was dead to the world all night.",
+     "ar": "كان نايم نومة عميقة طول الليل."
+    },
+    {
+     "en": "She was dead to the world after work.",
+     "ar": "كانت نايمة نومة عميقة بعد الشغل."
+    },
+    {
+     "en": "He is dead to the world on the couch.",
+     "ar": "نايم نومة عميقة على الكنبة."
+    },
+    {
+     "en": "The kids are dead to the world.",
+     "ar": "العيال نايمين نومة عميقة."
+    },
+    {
+     "en": "She was dead to the world until noon.",
+     "ar": "كانت نايمة نومة عميقة لحد الضهر."
+    },
+    {
+     "en": "He was dead to the world and missed the call.",
+     "ar": "كان نايم نومة عميقة وفاتته المكالمة."
+    },
+    {
+     "en": "She is dead to the world after the trip.",
+     "ar": "هي نايمة نومة عميقة بعد السفر."
+    },
+    {
+     "en": "He was dead to the world all morning.",
+     "ar": "كان نايم نومة عميقة طول الصبح."
+    }
+   ]
+  },
+  {
+   "id": "slg-001134",
+   "sentences": [
+    {
+     "en": "He was out like a light.",
+     "ar": "نام فورًا أول ما راسه جات على المخدة."
+    },
+    {
+     "en": "She was out like a light.",
+     "ar": "نامت فورًا."
+    },
+    {
+     "en": "He went out like a light.",
+     "ar": "نام فورًا."
+    },
+    {
+     "en": "She fell asleep out like a light.",
+     "ar": "نامت فورًا أول ما قفلت عينيها."
+    },
+    {
+     "en": "He was out like a light after work.",
+     "ar": "نام فورًا بعد الشغل."
+    },
+    {
+     "en": "The baby was out like a light.",
+     "ar": "البيبي نام فورًا."
+    },
+    {
+     "en": "She was out like a light all night.",
+     "ar": "نامت فورًا ونامت طول الليل."
+    },
+    {
+     "en": "He was out like a light in minutes.",
+     "ar": "نام فورًا في دقايق."
+    },
+    {
+     "en": "She went out like a light on the train.",
+     "ar": "نامت فورًا في القطر."
+    },
+    {
+     "en": "He was out like a light and slept till morning.",
+     "ar": "نام فورًا ونام لحد الصبح."
+    }
+   ]
+  },
+  {
+   "id": "slg-001135",
+   "sentences": [
+    {
+     "en": "He conked out on the sofa.",
+     "ar": "غلبه النوم على الكنبة."
+    },
+    {
+     "en": "She conked out after dinner.",
+     "ar": "غلبها النوم بعد العشا."
+    },
+    {
+     "en": "He conked out early.",
+     "ar": "غلبه النوم بدري."
+    },
+    {
+     "en": "She conked out in the car.",
+     "ar": "غلبها النوم في العربية."
+    },
+    {
+     "en": "He conked out in minutes.",
+     "ar": "غلبه النوم في دقايق."
+    },
+    {
+     "en": "She conked out and missed the movie.",
+     "ar": "غلبها النوم وفاتها الفيلم."
+    },
+    {
+     "en": "He conked out after the long day.",
+     "ar": "غلبه النوم بعد اليوم الطويل."
+    },
+    {
+     "en": "She conked out on the train.",
+     "ar": "غلبها النوم في القطر."
+    },
+    {
+     "en": "He conked out and slept till morning.",
+     "ar": "غلبه النوم ونام لحد الصبح."
+    },
+    {
+     "en": "She conked out before midnight.",
+     "ar": "غلبها النوم قبل نص الليل."
+    }
+   ]
+  },
+  {
+   "id": "slg-001136",
+   "sentences": [
+    {
+     "en": "He sacked out early.",
+     "ar": "راح نام بدري."
+    },
+    {
+     "en": "She sacked out after work.",
+     "ar": "راحت نامت بعد الشغل."
+    },
+    {
+     "en": "He sacked out on the couch.",
+     "ar": "راح نام على الكنبة."
+    },
+    {
+     "en": "She sacked out at nine.",
+     "ar": "راحت نامت الساعة تسعة."
+    },
+    {
+     "en": "He sacked out after the trip.",
+     "ar": "راح نام بعد السفر."
+    },
+    {
+     "en": "She sacked out and slept well.",
+     "ar": "راحت نامت ونامت كويس."
+    },
+    {
+     "en": "He sacked out before the movie ended.",
+     "ar": "راح نام قبل ما الفيلم يخلص."
+    },
+    {
+     "en": "She sacked out on the floor.",
+     "ar": "راحت نامت على الأرض."
+    },
+    {
+     "en": "He sacked out and snored.",
+     "ar": "راح نام وشخر."
+    },
+    {
+     "en": "She sacked out and was out cold.",
+     "ar": "راحت نامت ونامت نومة تقيلة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001137",
+   "sentences": [
+    {
+     "en": "He snoozed the alarm.",
+     "ar": "أجل المنبه."
+    },
+    {
+     "en": "She snoozed for ten minutes.",
+     "ar": "اخدت غفوة خفيفة عشر دقايق."
+    },
+    {
+     "en": "He snoozed and woke up late.",
+     "ar": "أجل المنبه وصحي متأخر."
+    },
+    {
+     "en": "She hit snooze three times.",
+     "ar": "أجلت المنبه تلات مرات."
+    },
+    {
+     "en": "He snoozed on the sofa.",
+     "ar": "اخد غفوة خفيفة على الكنبة."
+    },
+    {
+     "en": "She snoozed through the morning.",
+     "ar": "فضلت تغفى طول الصبح."
+    },
+    {
+     "en": "He snoozed and missed the bus.",
+     "ar": "أجل المنبه وفاته الأوتوبيس."
+    },
+    {
+     "en": "She snoozed and felt better.",
+     "ar": "اخدت غفوة خفيفة وحست إنها أحسن."
+    },
+    {
+     "en": "He snoozed the alarm again.",
+     "ar": "أجل المنبه تاني."
+    },
+    {
+     "en": "She snoozed and dreamed.",
+     "ar": "اخدت غفوة خفيفة وحلمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001138",
+   "sentences": [
+    {
+     "en": "He took forty winks.",
+     "ar": "اخد غفوة قصيرة."
+    },
+    {
+     "en": "She grabbed forty winks.",
+     "ar": "اخدت غفوة قصيرة."
+    },
+    {
+     "en": "He had forty winks on the train.",
+     "ar": "اخد غفوة قصيرة في القطر."
+    },
+    {
+     "en": "She took forty winks after lunch.",
+     "ar": "اخدت غفوة قصيرة بعد الغدا."
+    },
+    {
+     "en": "He needs forty winks.",
+     "ar": "محتاج غفوة قصيرة."
+    },
+    {
+     "en": "She got forty winks before work.",
+     "ar": "اخدت غفوة قصيرة قبل الشغل."
+    },
+    {
+     "en": "He took forty winks and woke up fresh.",
+     "ar": "اخد غفوة قصيرة وصحي نشيط."
+    },
+    {
+     "en": "She had forty winks on the sofa.",
+     "ar": "اخدت غفوة قصيرة على الكنبة."
+    },
+    {
+     "en": "He grabbed forty winks in the car.",
+     "ar": "اخد غفوة قصيرة في العربية."
+    },
+    {
+     "en": "She took forty winks and felt better.",
+     "ar": "اخدت غفوة قصيرة وحست إنها أحسن."
+    }
+   ]
+  },
+  {
+   "id": "slg-001139",
+   "sentences": [
+    {
+     "en": "He took a catnap.",
+     "ar": "اخد غفوة قصيرة."
+    },
+    {
+     "en": "She had a catnap after lunch.",
+     "ar": "اخدت غفوة قصيرة بعد الغدا."
+    },
+    {
+     "en": "He took a catnap on the sofa.",
+     "ar": "اخد غفوة قصيرة على الكنبة."
+    },
+    {
+     "en": "She had a catnap and woke up fresh.",
+     "ar": "اخدت غفوة قصيرة وصحيت نشيطة."
+    },
+    {
+     "en": "He needs a catnap.",
+     "ar": "محتاج غفوة قصيرة."
+    },
+    {
+     "en": "She took a catnap in the car.",
+     "ar": "اخدت غفوة قصيرة في العربية."
+    },
+    {
+     "en": "He had a catnap and felt better.",
+     "ar": "اخد غفوة قصيرة وحس إنه أحسن."
+    },
+    {
+     "en": "She took a catnap before the party.",
+     "ar": "اخدت غفوة قصيرة قبل الحفلة."
+    },
+    {
+     "en": "He had a catnap on the train.",
+     "ar": "اخد غفوة قصيرة في القطر."
+    },
+    {
+     "en": "She took a catnap and smiled.",
+     "ar": "اخدت غفوة قصيرة وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001140",
+   "sentences": [
+    {
+     "en": "He took a power nap.",
+     "ar": "اخد غفوة قصيرة رجعت له طاقته."
+    },
+    {
+     "en": "She had a power nap at work.",
+     "ar": "اخدت غفوة قصيرة في الشغل."
+    },
+    {
+     "en": "He took a power nap and felt great.",
+     "ar": "اخد غفوة قصيرة وحس إنه كويس جدًا."
+    },
+    {
+     "en": "She needs a power nap.",
+     "ar": "محتاجة غفوة قصيرة ترجع لها طاقتها."
+    },
+    {
+     "en": "He took a power nap before the meeting.",
+     "ar": "اخد غفوة قصيرة قبل الاجتماع."
+    },
+    {
+     "en": "She had a power nap and woke up fresh.",
+     "ar": "اخدت غفوة قصيرة وصحيت نشيطة."
+    },
+    {
+     "en": "He took a power nap on the couch.",
+     "ar": "اخد غفوة قصيرة على الكنبة."
+    },
+    {
+     "en": "She had a power nap and worked late.",
+     "ar": "اخدت غفوة قصيرة واشتغلت لوقت متأخر."
+    },
+    {
+     "en": "He took a power nap and crushed the game.",
+     "ar": "اخد غفوة قصيرة وأدى اللعبة أداء خرافي."
+    },
+    {
+     "en": "She swears by the power nap.",
+     "ar": "بتؤمن بالغفوة القصيرة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001141",
+   "sentences": [
+    {
+     "en": "She had a lie-in on Sunday.",
+     "ar": "نامت لوقت متأخر يوم الحد."
+    },
+    {
+     "en": "He loves a lie-in.",
+     "ar": "بيحب ينام لوقت متأخر."
+    },
+    {
+     "en": "She had a lie-in and missed breakfast.",
+     "ar": "نامت لوقت متأخر وفاتها الفطار."
+    },
+    {
+     "en": "He had a lie-in after the party.",
+     "ar": "نام لوقت متأخر بعد الحفلة."
+    },
+    {
+     "en": "She enjoyed her lie-in.",
+     "ar": "استمتعت بنومتها المتأخرة."
+    },
+    {
+     "en": "He had a lie-in and felt great.",
+     "ar": "نام لوقت متأخر وحس إنه كويس."
+    },
+    {
+     "en": "She needed a lie-in.",
+     "ar": "كانت محتاجة تنام لوقت متأخر."
+    },
+    {
+     "en": "He had a lie-in and woke up at noon.",
+     "ar": "نام لوقت متأخر وصحي الضهر."
+    },
+    {
+     "en": "She had a lie-in on her day off.",
+     "ar": "نامت لوقت متأخر في يوم أجازتها."
+    },
+    {
+     "en": "He loves a lie-in on weekends.",
+     "ar": "بيحب ينام لوقت متأخر في الويكند."
+    }
+   ]
+  },
+  {
+   "id": "slg-001142",
+   "sentences": [
+    {
+     "en": "He is not a morning person.",
+     "ar": "هو مش بيحب الصبح."
+    },
+    {
+     "en": "She is not a morning person.",
+     "ar": "هي مش بتحب الصبح."
+    },
+    {
+     "en": "I am not a morning person.",
+     "ar": "أنا مش بقدر أصحى بدري."
+    },
+    {
+     "en": "He is not a morning person at all.",
+     "ar": "هو مش بيستحمل الصبح خالص."
+    },
+    {
+     "en": "She said she is not a morning person.",
+     "ar": "قالت إنها مش بتحب الصبح."
+    },
+    {
+     "en": "He is not a morning person before coffee.",
+     "ar": "هو مش بينفع في الصبح قبل القهوة."
+    },
+    {
+     "en": "She is not a morning person on Mondays.",
+     "ar": "هي مش بتحب الصبح يوم الاتنين."
+    },
+    {
+     "en": "He is not a morning person, so be quiet.",
+     "ar": "هو مش بيحب الصبح، فامشي بصوت واطي."
+    },
+    {
+     "en": "She is not a morning person and sleeps in.",
+     "ar": "هي مش بتحب الصبح وبتنام لوقت متأخر."
+    },
+    {
+     "en": "He is not a morning person but tries.",
+     "ar": "هو مش بيحب الصبح بس بيحاول."
+    }
+   ]
+  },
+  {
+   "id": "slg-001143",
+   "sentences": [
+    {
+     "en": "Coffee first, then talk.",
+     "ar": "القهوة الأول وبعدين الكلام."
+    },
+    {
+     "en": "She said coffee first.",
+     "ar": "قالت القهوة الأول."
+    },
+    {
+     "en": "He needs coffee first.",
+     "ar": "محتاج القهوة الأول."
+    },
+    {
+     "en": "Coffee first, always.",
+     "ar": "القهوة الأول، دايمًا."
+    },
+    {
+     "en": "She insists on coffee first.",
+     "ar": "بتصر على القهوة الأول."
+    },
+    {
+     "en": "He said coffee first and sat down.",
+     "ar": "قال القهوة الأول وقعد."
+    },
+    {
+     "en": "Coffee first, then work.",
+     "ar": "القهوة الأول وبعدين الشغل."
+    },
+    {
+     "en": "She has coffee first every morning.",
+     "ar": "بتشرب القهوة الأول كل صبح."
+    },
+    {
+     "en": "He said coffee first and smiled.",
+     "ar": "قال القهوة الأول وابتسم."
+    },
+    {
+     "en": "Coffee first, no exceptions.",
+     "ar": "القهوة الأول، من غير استثناء."
+    }
+   ]
+  },
+  {
+   "id": "slg-001144",
+   "sentences": [
+    {
+     "en": "He had a cup of joe.",
+     "ar": "شرب كوباية قهوة."
+    },
+    {
+     "en": "She grabbed a cup of joe.",
+     "ar": "جابت كوباية قهوة."
+    },
+    {
+     "en": "He needs his cup of joe.",
+     "ar": "محتاج كوباية القهوة بتاعته."
+    },
+    {
+     "en": "She made a cup of joe.",
+     "ar": "عملت كوباية قهوة."
+    },
+    {
+     "en": "He drank a cup of joe and woke up.",
+     "ar": "شرب كوباية قهوة وصحي."
+    },
+    {
+     "en": "She offered me a cup of joe.",
+     "ar": "عرضت عليا كوباية قهوة."
+    },
+    {
+     "en": "He had a cup of joe and started work.",
+     "ar": "شرب كوباية قهوة وبدأ شغل."
+    },
+    {
+     "en": "She brought a cup of joe to the meeting.",
+     "ar": "جابت كوباية قهوة للاجتماع."
+    },
+    {
+     "en": "He loves a strong cup of joe.",
+     "ar": "بيحب كوباية القهوة التقيلة."
+    },
+    {
+     "en": "She had a cup of joe and smiled.",
+     "ar": "شربت كوباية قهوة وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001145",
+   "sentences": [
+    {
+     "en": "He made a brew.",
+     "ar": "عمل كوباية شاي."
+    },
+    {
+     "en": "She had a brew.",
+     "ar": "شربت كوباية شاي."
+    },
+    {
+     "en": "He put the kettle on for a brew.",
+     "ar": "حط الماية تغلي عشان الشاي."
+    },
+    {
+     "en": "She offered me a brew.",
+     "ar": "عرضت عليا كوباية شاي."
+    },
+    {
+     "en": "He had a brew and relaxed.",
+     "ar": "شرب كوباية شاي وارتاح."
+    },
+    {
+     "en": "She made a brew for everyone.",
+     "ar": "عملت شاي للكل."
+    },
+    {
+     "en": "He loves a strong brew.",
+     "ar": "بيحب الشاي التقيل."
+    },
+    {
+     "en": "She had a brew and sat down.",
+     "ar": "شربت كوباية شاي وقعدت."
+    },
+    {
+     "en": "He made a brew and read the paper.",
+     "ar": "عمل كوباية شاي وقرا الجرنال."
+    },
+    {
+     "en": "She had a brew and smiled.",
+     "ar": "شربت كوباية شاي وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001146",
+   "sentences": [
+    {
+     "en": "She had a cuppa.",
+     "ar": "شربت كوباية شاي."
+    },
+    {
+     "en": "He made a cuppa.",
+     "ar": "عمل كوباية شاي."
+    },
+    {
+     "en": "She offered me a cuppa.",
+     "ar": "عرضت عليا كوباية شاي."
+    },
+    {
+     "en": "He loves a cuppa in the morning.",
+     "ar": "بيحب كوباية الشاي في الصبح."
+    },
+    {
+     "en": "She had a cuppa and relaxed.",
+     "ar": "شربت كوباية شاي وارتاحت."
+    },
+    {
+     "en": "He put the kettle on for a cuppa.",
+     "ar": "حط الماية تغلي عشان كوباية الشاي."
+    },
+    {
+     "en": "She made a cuppa for everyone.",
+     "ar": "عملت شاي للكل."
+    },
+    {
+     "en": "He had a cuppa and read.",
+     "ar": "شرب كوباية شاي وقرا."
+    },
+    {
+     "en": "She loves a hot cuppa.",
+     "ar": "بتحب كوباية الشاي السخنة."
+    },
+    {
+     "en": "He had a cuppa and smiled.",
+     "ar": "شرب كوباية شاي وابتسم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001147",
+   "sentences": [
+    {
+     "en": "He drinks builder's tea.",
+     "ar": "بيشرب شاي تقيل باللبن."
+    },
+    {
+     "en": "She made builder's tea.",
+     "ar": "عملت شاي تقيل باللبن."
+    },
+    {
+     "en": "He loves builder's tea.",
+     "ar": "بيحب الشاي التقيل باللبن."
+    },
+    {
+     "en": "She offered him builder's tea.",
+     "ar": "عرضت عليه شاي تقيل باللبن."
+    },
+    {
+     "en": "He had builder's tea and biscuits.",
+     "ar": "شرب شاي تقيل باللبن وبسكوت."
+    },
+    {
+     "en": "She made builder's tea for the workers.",
+     "ar": "عملت شاي تقيل باللبن للعمال."
+    },
+    {
+     "en": "He drinks builder's tea every morning.",
+     "ar": "بيشرب شاي تقيل باللبن كل صبح."
+    },
+    {
+     "en": "She had builder's tea and relaxed.",
+     "ar": "شربت شاي تقيل باللبن وارتاحت."
+    },
+    {
+     "en": "He made builder's tea and sat down.",
+     "ar": "عمل شاي تقيل باللبن وقعد."
+    },
+    {
+     "en": "She loves a strong builder's tea.",
+     "ar": "بتحب الشاي التقيل باللبن القوي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001148",
+   "sentences": [
+    {
+     "en": "It is chucking it down.",
+     "ar": "الدنيا بتمطر بغزارة جدًا."
+    },
+    {
+     "en": "It was chucking it down all day.",
+     "ar": "فضلت تمطر بغزارة طول اليوم."
+    },
+    {
+     "en": "It is chucking it down outside.",
+     "ar": "الدنيا بتمطر بغزارة بره."
+    },
+    {
+     "en": "It started chucking it down.",
+     "ar": "بدأت تمطر بغزارة."
+    },
+    {
+     "en": "It was chucking it down and we stayed in.",
+     "ar": "كانت بتمطر بغزارة وقعدنا في البيت."
+    },
+    {
+     "en": "It is chucking it down, take an umbrella.",
+     "ar": "الدنيا بتمطر بغزارة، خد شمسية."
+    },
+    {
+     "en": "It was chucking it down on the way home.",
+     "ar": "كانت بتمطر بغزارة في الطريق للبيت."
+    },
+    {
+     "en": "It is chucking it down and I am soaked.",
+     "ar": "الدنيا بتمطر بغزارة وأنا مبلول."
+    },
+    {
+     "en": "It was chucking it down all night.",
+     "ar": "فضلت تمطر بغزارة طول الليل."
+    },
+    {
+     "en": "It is chucking it down and the streets flooded.",
+     "ar": "الدنيا بتمطر بغزارة والشوارع غرقت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001149",
+   "sentences": [
+    {
+     "en": "It is bucketing down.",
+     "ar": "الدنيا بتمطر كأنها بتتسكب من دلاء."
+    },
+    {
+     "en": "It was bucketing down all day.",
+     "ar": "فضلت تمطر بغزارة طول اليوم."
+    },
+    {
+     "en": "It is bucketing down outside.",
+     "ar": "الدنيا بتمطر بغزارة بره."
+    },
+    {
+     "en": "It started bucketing down.",
+     "ar": "بدأت تمطر بغزارة."
+    },
+    {
+     "en": "It was bucketing down and we stayed in.",
+     "ar": "كانت بتمطر بغزارة وقعدنا في البيت."
+    },
+    {
+     "en": "It is bucketing down, take an umbrella.",
+     "ar": "الدنيا بتمطر بغزارة، خد شمسية."
+    },
+    {
+     "en": "It was bucketing down on the way home.",
+     "ar": "كانت بتمطر بغزارة في الطريق للبيت."
+    },
+    {
+     "en": "It is bucketing down and I am soaked.",
+     "ar": "الدنيا بتمطر بغزارة وأنا مبلول."
+    },
+    {
+     "en": "It was bucketing down all night.",
+     "ar": "فضلت تمطر بغزارة طول الليل."
+    },
+    {
+     "en": "It is bucketing down and the streets flooded.",
+     "ar": "الدنيا بتمطر بغزارة والشوارع غرقت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001150",
+   "sentences": [
+    {
+     "en": "It is spitting outside.",
+     "ar": "الدنيا بترش مطر خفيف بره."
+    },
+    {
+     "en": "It was spitting all morning.",
+     "ar": "فضلت ترش مطر خفيف طول الصبح."
+    },
+    {
+     "en": "It is spitting, no umbrella needed.",
+     "ar": "الدنيا بترش خفيف، مش محتاجة شمسية."
+    },
+    {
+     "en": "It started spitting.",
+     "ar": "بدأت ترش مطر خفيف."
+    },
+    {
+     "en": "It is spitting and cold.",
+     "ar": "الدنيا بترش مطر خفيف وبرد."
+    },
+    {
+     "en": "It was spitting on the way to work.",
+     "ar": "كانت بترش مطر خفيف في الطريق للشغل."
+    },
+    {
+     "en": "It is spitting, but not bad.",
+     "ar": "الدنيا بترش خفيف، بس مش وحش."
+    },
+    {
+     "en": "It was spitting and we walked.",
+     "ar": "كانت بترش مطر خفيف ومشينا."
+    },
+    {
+     "en": "It is spitting outside now.",
+     "ar": "الدنيا بترش مطر خفيف بره دلوقتي."
+    },
+    {
+     "en": "It was spitting and the ground was wet.",
+     "ar": "كانت بترش مطر خفيف والأرض كانت مبلولة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001151",
+   "sentences": [
+    {
+     "en": "Today is a scorcher.",
+     "ar": "النهارده يوم حار جدًا."
+    },
+    {
+     "en": "It was a scorcher yesterday.",
+     "ar": "كان يوم حار جدًا مبارح."
+    },
+    {
+     "en": "Tomorrow will be a scorcher.",
+     "ar": "بكرة هيبقى يوم حار جدًا."
+    },
+    {
+     "en": "It was a scorcher and we stayed inside.",
+     "ar": "كان يوم حار جدًا وقعدنا جوا."
+    },
+    {
+     "en": "Today is a scorcher, stay hydrated.",
+     "ar": "النهارده حار جدًا، اشرب ماية كتير."
+    },
+    {
+     "en": "It was a scorcher and the beach was full.",
+     "ar": "كان يوم حار جدًا والشط كان مليان."
+    },
+    {
+     "en": "It is a scorcher out there.",
+     "ar": "الدنيا حارة جدًا بره."
+    },
+    {
+     "en": "It was a scorcher and we went swimming.",
+     "ar": "كان يوم حار جدًا ورحنا نعوم."
+    },
+    {
+     "en": "Today is a scorcher and I am melting.",
+     "ar": "النهارده حار جدًا وأنا بسيح."
+    },
+    {
+     "en": "It was a scorcher and the fans were on.",
+     "ar": "كان يوم حار جدًا والمراوح شغالة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001152",
+   "sentences": [
+    {
+     "en": "It is roasting today.",
+     "ar": "الدنيا حارة جدًا النهارده."
+    },
+    {
+     "en": "It was roasting yesterday.",
+     "ar": "كان حار جدًا مبارح."
+    },
+    {
+     "en": "It is roasting outside.",
+     "ar": "الدنيا حارة جدًا بره."
+    },
+    {
+     "en": "It was roasting and we stayed in.",
+     "ar": "كان حار جدًا وقعدنا جوا."
+    },
+    {
+     "en": "It is roasting, open a window.",
+     "ar": "الدنيا حارة جدًا، افتح شباك."
+    },
+    {
+     "en": "It was roasting on the beach.",
+     "ar": "كان حار جدًا على الشط."
+    },
+    {
+     "en": "It is roasting and I am sweating.",
+     "ar": "الدنيا حارة جدًا وأنا بعرق."
+    },
+    {
+     "en": "It was roasting all week.",
+     "ar": "كان حار جدًا طول الأسبوع."
+    },
+    {
+     "en": "It is roasting and the AC is on.",
+     "ar": "الدنيا حارة جدًا والتكييف شغال."
+    },
+    {
+     "en": "It was roasting and we drank water.",
+     "ar": "كان حار جدًا وشربنا ماية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001153",
+   "sentences": [
+    {
+     "en": "It is boiling today.",
+     "ar": "الدنيا حارة لدرجة الغليان النهارده."
+    },
+    {
+     "en": "It was boiling in the car.",
+     "ar": "كان حار جدًا في العربية."
+    },
+    {
+     "en": "It is boiling outside.",
+     "ar": "الدنيا حارة جدًا بره."
+    },
+    {
+     "en": "It was boiling and we stayed in.",
+     "ar": "كان حار جدًا وقعدنا جوا."
+    },
+    {
+     "en": "It is boiling, turn on the fan.",
+     "ar": "الدنيا حارة جدًا، شغل المروحة."
+    },
+    {
+     "en": "It was boiling on the beach.",
+     "ar": "كان حار جدًا على الشط."
+    },
+    {
+     "en": "It is boiling and I am melting.",
+     "ar": "الدنيا حارة جدًا وأنا بسيح."
+    },
+    {
+     "en": "It was boiling all week.",
+     "ar": "كان حار جدًا طول الأسبوع."
+    },
+    {
+     "en": "It is boiling and the AC is on.",
+     "ar": "الدنيا حارة جدًا والتكييف شغال."
+    },
+    {
+     "en": "It was boiling and we drank water.",
+     "ar": "كان حار جدًا وشربنا ماية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001154",
+   "sentences": [
+    {
+     "en": "It is baking today.",
+     "ar": "الدنيا حارة كأنها فرن النهارده."
+    },
+    {
+     "en": "It was baking in the sun.",
+     "ar": "كان حار كأنه فرن في الشمس."
+    },
+    {
+     "en": "It is baking outside.",
+     "ar": "الدنيا حارة كأنها فرن بره."
+    },
+    {
+     "en": "It was baking and we stayed in.",
+     "ar": "كان حار كأنه فرن وقعدنا جوا."
+    },
+    {
+     "en": "It is baking, stay in the shade.",
+     "ar": "الدنيا حارة كأنها فرن، قعد في الضل."
+    },
+    {
+     "en": "It was baking on the beach.",
+     "ar": "كان حار كأنه فرن على الشط."
+    },
+    {
+     "en": "It is baking and I am melting.",
+     "ar": "الدنيا حارة كأنها فرن وأنا بسيح."
+    },
+    {
+     "en": "It was baking all week.",
+     "ar": "كان حار كأنه فرن طول الأسبوع."
+    },
+    {
+     "en": "It is baking and the AC is on.",
+     "ar": "الدنيا حارة كأنها فرن والتكييف شغال."
+    },
+    {
+     "en": "It was baking and we drank water.",
+     "ar": "كان حار كأنه فرن وشربنا ماية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001155",
+   "sentences": [
+    {
+     "en": "It is muggy today.",
+     "ar": "الجو حار ورطب وخانق النهارده."
+    },
+    {
+     "en": "It was muggy yesterday.",
+     "ar": "كان الجو حار ورطب مبارح."
+    },
+    {
+     "en": "It is muggy outside.",
+     "ar": "الجو حار ورطب بره."
+    },
+    {
+     "en": "It was muggy and we stayed in.",
+     "ar": "كان الجو حار ورطب وقعدنا جوا."
+    },
+    {
+     "en": "It is muggy, open a window.",
+     "ar": "الجو حار ورطب، افتح شباك."
+    },
+    {
+     "en": "It was muggy on the beach.",
+     "ar": "كان الجو حار ورطب على الشط."
+    },
+    {
+     "en": "It is muggy and I am sweating.",
+     "ar": "الجو حار ورطب وأنا بعرق."
+    },
+    {
+     "en": "It was muggy all week.",
+     "ar": "كان الجو حار ورطب طول الأسبوع."
+    },
+    {
+     "en": "It is muggy and the AC is on.",
+     "ar": "الجو حار ورطب والتكييف شغال."
+    },
+    {
+     "en": "It was muggy and we drank water.",
+     "ar": "كان الجو حار ورطب وشربنا ماية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001156",
+   "sentences": [
+    {
+     "en": "It is freezing today.",
+     "ar": "الدنيا برد جدًا النهارده."
+    },
+    {
+     "en": "It was freezing yesterday.",
+     "ar": "كان برد جدًا مبارح."
+    },
+    {
+     "en": "It is freezing outside.",
+     "ar": "الدنيا برد جدًا بره."
+    },
+    {
+     "en": "It was freezing and we stayed in.",
+     "ar": "كان برد جدًا وقعدنا جوا."
+    },
+    {
+     "en": "It is freezing, wear a coat.",
+     "ar": "الدنيا برد جدًا، البس بالطو."
+    },
+    {
+     "en": "It was freezing on the mountain.",
+     "ar": "كان برد جدًا على الجبل."
+    },
+    {
+     "en": "It is freezing and I am shivering.",
+     "ar": "الدنيا برد جدًا وأنا برتجف."
+    },
+    {
+     "en": "It was freezing all week.",
+     "ar": "كان برد جدًا طول الأسبوع."
+    },
+    {
+     "en": "It is freezing and the heater is on.",
+     "ar": "الدنيا برد جدًا والدفاية شغالة."
+    },
+    {
+     "en": "It was freezing and we drank tea.",
+     "ar": "كان برد جدًا وشربنا شاي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001157",
+   "sentences": [
+    {
+     "en": "It is nippy today.",
+     "ar": "الجو برد خفيف ومنعش النهارده."
+    },
+    {
+     "en": "It was nippy this morning.",
+     "ar": "كان برد خفيف الصبح."
+    },
+    {
+     "en": "It is nippy outside.",
+     "ar": "الجو برد خفيف بره."
+    },
+    {
+     "en": "It was nippy and we wore jackets.",
+     "ar": "كان برد خفيف ولبسنا جواكت."
+    },
+    {
+     "en": "It is nippy, take a scarf.",
+     "ar": "الجو برد خفيف، خد كوفية."
+    },
+    {
+     "en": "It was nippy in the evening.",
+     "ar": "كان برد خفيف في المسا."
+    },
+    {
+     "en": "It is nippy and fresh.",
+     "ar": "الجو برد خفيف ومنعش."
+    },
+    {
+     "en": "It was nippy all week.",
+     "ar": "كان برد خفيف طول الأسبوع."
+    },
+    {
+     "en": "It is nippy and the leaves are falling.",
+     "ar": "الجو برد خفيف والورق بيقع."
+    },
+    {
+     "en": "It was nippy and we drank tea.",
+     "ar": "كان برد خفيف وشربنا شاي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001158",
+   "sentences": [
+    {
+     "en": "It is brass monkeys outside.",
+     "ar": "الجو برد قارس بره."
+    },
+    {
+     "en": "It was brass monkeys this morning.",
+     "ar": "كان برد قارس الصبح."
+    },
+    {
+     "en": "It is brass monkeys today.",
+     "ar": "الجو برد قارس النهارده."
+    },
+    {
+     "en": "It was brass monkeys and we stayed in.",
+     "ar": "كان برد قارس وقعدنا جوا."
+    },
+    {
+     "en": "It is brass monkeys, wear a coat.",
+     "ar": "الجو برد قارس، البس بالطو."
+    },
+    {
+     "en": "It was brass monkeys on the mountain.",
+     "ar": "كان برد قارس على الجبل."
+    },
+    {
+     "en": "It is brass monkeys and I am shivering.",
+     "ar": "الجو برد قارس وأنا برتجف."
+    },
+    {
+     "en": "It was brass monkeys all week.",
+     "ar": "كان برد قارس طول الأسبوع."
+    },
+    {
+     "en": "It is brass monkeys and the heater is on.",
+     "ar": "الجو برد قارس والدفاية شغالة."
+    },
+    {
+     "en": "It was brass monkeys and we drank tea.",
+     "ar": "كان برد قارس وشربنا شاي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001159",
+   "sentences": [
+    {
+     "en": "It is Baltic outside.",
+     "ar": "الجو برد جدًا بره."
+    },
+    {
+     "en": "It was Baltic this morning.",
+     "ar": "كان برد جدًا الصبح."
+    },
+    {
+     "en": "It is Baltic today.",
+     "ar": "الجو برد جدًا النهارده."
+    },
+    {
+     "en": "It was Baltic and we stayed in.",
+     "ar": "كان برد جدًا وقعدنا جوا."
+    },
+    {
+     "en": "It is Baltic, wear a coat.",
+     "ar": "الجو برد جدًا، البس بالطو."
+    },
+    {
+     "en": "It was Baltic on the coast.",
+     "ar": "كان برد جدًا على الساحل."
+    },
+    {
+     "en": "It is Baltic and I am shivering.",
+     "ar": "الجو برد جدًا وأنا برتجف."
+    },
+    {
+     "en": "It was Baltic all week.",
+     "ar": "كان برد جدًا طول الأسبوع."
+    },
+    {
+     "en": "It is Baltic and the heater is on.",
+     "ar": "الجو برد جدًا والدفاية شغالة."
+    },
+    {
+     "en": "It was Baltic and we drank tea.",
+     "ar": "كان برد جدًا وشربنا شاي."
+    }
+   ]
+  },
+  {
+   "id": "slg-001160",
+   "sentences": [
+    {
+     "en": "I have not seen you in ages.",
+     "ar": "مشفتكش من زمان جدًا."
+    },
+    {
+     "en": "She waited for ages.",
+     "ar": "استنّت مدة طويلة جدًا."
+    },
+    {
+     "en": "He has been there for ages.",
+     "ar": "هو هناك من مدة طويلة جدًا."
+    },
+    {
+     "en": "It took ages.",
+     "ar": "الحاجة خدت وقت طويل جدًا."
+    },
+    {
+     "en": "She has not called in ages.",
+     "ar": "مكلمتنيش من زمان جدًا."
+    },
+    {
+     "en": "He waited ages for the bus.",
+     "ar": "استنى الأوتوبيس مدة طويلة جدًا."
+    },
+    {
+     "en": "It has been ages since we met.",
+     "ar": "من زمان جدًا ما اتقابلنا."
+    },
+    {
+     "en": "She took ages to get ready.",
+     "ar": "خدت وقت طويل جدًا عشان تجهز."
+    },
+    {
+     "en": "He has not been here in ages.",
+     "ar": "مجاش هنا من زمان جدًا."
+    },
+    {
+     "en": "It took ages to finish.",
+     "ar": "خد وقت طويل جدًا عشان يخلص."
+    }
+   ]
+  },
+  {
+   "id": "slg-001161",
+   "sentences": [
+    {
+     "en": "I have not seen him in donkey's years.",
+     "ar": "مشفتهوش من زمن طويل جدًا."
+    },
+    {
+     "en": "She has lived here for donkey's years.",
+     "ar": "عايشة هنا من زمن طويل جدًا."
+    },
+    {
+     "en": "He has worked there for donkey's years.",
+     "ar": "بيشتغل هناك من زمن طويل جدًا."
+    },
+    {
+     "en": "We have known each other for donkey's years.",
+     "ar": "عارفين بعض من زمن طويل جدًا."
+    },
+    {
+     "en": "It has been donkey's years since we met.",
+     "ar": "من زمن طويل جدًا ما اتقابلنا."
+    },
+    {
+     "en": "She has not called in donkey's years.",
+     "ar": "مكلمتنيش من زمن طويل جدًا."
+    },
+    {
+     "en": "He has owned that car for donkey's years.",
+     "ar": "عنده العربية دي من زمن طويل جدًا."
+    },
+    {
+     "en": "They have been friends for donkey's years.",
+     "ar": "هم أصحاب من زمن طويل جدًا."
+    },
+    {
+     "en": "I have not been there in donkey's years.",
+     "ar": "مرحتش هناك من زمن طويل جدًا."
+    },
+    {
+     "en": "She has waited donkey's years for this.",
+     "ar": "استنت من زمن طويل جدًا عشان ده."
+    }
+   ]
+  },
+  {
+   "id": "slg-001162",
+   "sentences": [
+    {
+     "en": "I have not seen him in yonks.",
+     "ar": "مشفتهوش من مدة طويلة جدًا."
+    },
+    {
+     "en": "She has lived here for yonks.",
+     "ar": "عايشة هنا من مدة طويلة جدًا."
+    },
+    {
+     "en": "He has worked there for yonks.",
+     "ar": "بيشتغل هناك من مدة طويلة جدًا."
+    },
+    {
+     "en": "We have known each other for yonks.",
+     "ar": "عارفين بعض من مدة طويلة جدًا."
+    },
+    {
+     "en": "It has been yonks since we met.",
+     "ar": "من مدة طويلة جدًا ما اتقابلنا."
+    },
+    {
+     "en": "She has not called in yonks.",
+     "ar": "مكلمتنيش من مدة طويلة جدًا."
+    },
+    {
+     "en": "He has owned that car for yonks.",
+     "ar": "عنده العربية دي من مدة طويلة جدًا."
+    },
+    {
+     "en": "They have been friends for yonks.",
+     "ar": "هم أصحاب من مدة طويلة جدًا."
+    },
+    {
+     "en": "I have not been there in yonks.",
+     "ar": "مرحتش هناك من مدة طويلة جدًا."
+    },
+    {
+     "en": "She waited yonks for the bus.",
+     "ar": "استنت الأوتوبيس مدة طويلة جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001163",
+   "sentences": [
+    {
+     "en": "I will be there in a sec.",
+     "ar": "هكون هناك في ثانية."
+    },
+    {
+     "en": "She said she would be back in a sec.",
+     "ar": "قالت إنها هترجع في ثانية."
+    },
+    {
+     "en": "He came back in a sec.",
+     "ar": "رجع في ثانية."
+    },
+    {
+     "en": "I will do it in a sec.",
+     "ar": "هعملها في ثانية."
+    },
+    {
+     "en": "She called back in a sec.",
+     "ar": "ردت بالتليفون في ثانية."
+    },
+    {
+     "en": "He answered in a sec.",
+     "ar": "رد في ثانية."
+    },
+    {
+     "en": "I will finish in a sec.",
+     "ar": "هخلص في ثانية."
+    },
+    {
+     "en": "She was ready in a sec.",
+     "ar": "جهزت في ثانية."
+    },
+    {
+     "en": "He got there in a sec.",
+     "ar": "وصل في ثانية."
+    },
+    {
+     "en": "I will text you in a sec.",
+     "ar": "هبعتلك رسالة في ثانية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001164",
+   "sentences": [
+    {
+     "en": "I will be there in a jiffy.",
+     "ar": "هكون هناك في لمحة."
+    },
+    {
+     "en": "She came back in a jiffy.",
+     "ar": "رجعت في لمحة."
+    },
+    {
+     "en": "He did it in a jiffy.",
+     "ar": "عملها في لمحة."
+    },
+    {
+     "en": "I will finish in a jiffy.",
+     "ar": "هخلص في لمحة."
+    },
+    {
+     "en": "She answered in a jiffy.",
+     "ar": "ردت في لمحة."
+    },
+    {
+     "en": "He got there in a jiffy.",
+     "ar": "وصل في لمحة."
+    },
+    {
+     "en": "I will call you in a jiffy.",
+     "ar": "هكلمّك في لمحة."
+    },
+    {
+     "en": "She was ready in a jiffy.",
+     "ar": "جهزت في لمحة."
+    },
+    {
+     "en": "He fixed it in a jiffy.",
+     "ar": "صلحها في لمحة."
+    },
+    {
+     "en": "I will text you in a jiffy.",
+     "ar": "هبعتلك رسالة في لمحة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001165",
+   "sentences": [
+    {
+     "en": "I will be there in a tick.",
+     "ar": "هكون هناك في ثانية."
+    },
+    {
+     "en": "She came back in a tick.",
+     "ar": "رجعت في ثانية."
+    },
+    {
+     "en": "He did it in a tick.",
+     "ar": "عملها في ثانية."
+    },
+    {
+     "en": "I will finish in a tick.",
+     "ar": "هخلص في ثانية."
+    },
+    {
+     "en": "She answered in a tick.",
+     "ar": "ردت في ثانية."
+    },
+    {
+     "en": "He got there in a tick.",
+     "ar": "وصل في ثانية."
+    },
+    {
+     "en": "I will call you in a tick.",
+     "ar": "هكلمّك في ثانية."
+    },
+    {
+     "en": "She was ready in a tick.",
+     "ar": "جهزت في ثانية."
+    },
+    {
+     "en": "He fixed it in a tick.",
+     "ar": "صلحها في ثانية."
+    },
+    {
+     "en": "I will text you in a tick.",
+     "ar": "هبعتلك رسالة في ثانية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001166",
+   "sentences": [
+    {
+     "en": "I will be there in two shakes.",
+     "ar": "هكون هناك بسرعة جدًا."
+    },
+    {
+     "en": "She came back in two shakes.",
+     "ar": "رجعت بسرعة جدًا."
+    },
+    {
+     "en": "He did it in two shakes.",
+     "ar": "عملها بسرعة جدًا."
+    },
+    {
+     "en": "I will finish in two shakes.",
+     "ar": "هخلص بسرعة جدًا."
+    },
+    {
+     "en": "She answered in two shakes.",
+     "ar": "ردت بسرعة جدًا."
+    },
+    {
+     "en": "He got there in two shakes.",
+     "ar": "وصل بسرعة جدًا."
+    },
+    {
+     "en": "I will call you in two shakes.",
+     "ar": "هكلمّك بسرعة جدًا."
+    },
+    {
+     "en": "She was ready in two shakes.",
+     "ar": "جهزت بسرعة جدًا."
+    },
+    {
+     "en": "He fixed it in two shakes.",
+     "ar": "صلحها بسرعة جدًا."
+    },
+    {
+     "en": "I will text you in two shakes.",
+     "ar": "هبعتلك رسالة بسرعة جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001167",
+   "sentences": [
+    {
+     "en": "Come here pronto.",
+     "ar": "تعالى هنا فورًا."
+    },
+    {
+     "en": "She needs it pronto.",
+     "ar": "محتاجاه فورًا."
+    },
+    {
+     "en": "He came pronto.",
+     "ar": "جه فورًا."
+    },
+    {
+     "en": "I need the report pronto.",
+     "ar": "محتاج التقرير فورًا."
+    },
+    {
+     "en": "She answered pronto.",
+     "ar": "ردت فورًا."
+    },
+    {
+     "en": "He got there pronto.",
+     "ar": "وصل فورًا."
+    },
+    {
+     "en": "I will finish pronto.",
+     "ar": "هخلص فورًا."
+    },
+    {
+     "en": "She was ready pronto.",
+     "ar": "جهزت فورًا."
+    },
+    {
+     "en": "He fixed it pronto.",
+     "ar": "صلحها فورًا."
+    },
+    {
+     "en": "I will send it pronto.",
+     "ar": "هبعتها فورًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001168",
+   "sentences": [
+    {
+     "en": "Get the doctor stat.",
+     "ar": "جيب الدكتور فورًا."
+    },
+    {
+     "en": "We need help stat.",
+     "ar": "محتاجين مساعدة فورًا."
+    },
+    {
+     "en": "She said come stat.",
+     "ar": "قالت تعالى فورًا."
+    },
+    {
+     "en": "He needs the report stat.",
+     "ar": "محتاج التقرير فورًا."
+    },
+    {
+     "en": "I will do it stat.",
+     "ar": "هعملها فورًا."
+    },
+    {
+     "en": "She answered stat.",
+     "ar": "ردت فورًا."
+    },
+    {
+     "en": "He got there stat.",
+     "ar": "وصل فورًا."
+    },
+    {
+     "en": "I will finish stat.",
+     "ar": "هخلص فورًا."
+    },
+    {
+     "en": "She was ready stat.",
+     "ar": "جهزت فورًا."
+    },
+    {
+     "en": "He fixed it stat.",
+     "ar": "صلحها فورًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001169",
+   "sentences": [
+    {
+     "en": "Come here on the double.",
+     "ar": "تعالى هنا بسرعة وفورًا."
+    },
+    {
+     "en": "She needs it on the double.",
+     "ar": "محتاجاه بسرعة وفورًا."
+    },
+    {
+     "en": "He came on the double.",
+     "ar": "جه بسرعة وفورًا."
+    },
+    {
+     "en": "I need the report on the double.",
+     "ar": "محتاج التقرير بسرعة وفورًا."
+    },
+    {
+     "en": "She answered on the double.",
+     "ar": "ردت بسرعة وفورًا."
+    },
+    {
+     "en": "He got there on the double.",
+     "ar": "وصل بسرعة وفورًا."
+    },
+    {
+     "en": "I will finish on the double.",
+     "ar": "هخلص بسرعة وفورًا."
+    },
+    {
+     "en": "She was ready on the double.",
+     "ar": "جهزت بسرعة وفورًا."
+    },
+    {
+     "en": "He fixed it on the double.",
+     "ar": "صلحها بسرعة وفورًا."
+    },
+    {
+     "en": "I will send it on the double.",
+     "ar": "هبعتها بسرعة وفورًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001170",
+   "sentences": [
+    {
+     "en": "I will be there in no time.",
+     "ar": "هكون هناك في وقت قصير جدًا."
+    },
+    {
+     "en": "She came back in no time.",
+     "ar": "رجعت في وقت قصير جدًا."
+    },
+    {
+     "en": "He did it in no time.",
+     "ar": "عملها في وقت قصير جدًا."
+    },
+    {
+     "en": "I will finish in no time.",
+     "ar": "هخلص في وقت قصير جدًا."
+    },
+    {
+     "en": "She answered in no time.",
+     "ar": "ردت في وقت قصير جدًا."
+    },
+    {
+     "en": "He got there in no time.",
+     "ar": "وصل في وقت قصير جدًا."
+    },
+    {
+     "en": "I will call you in no time.",
+     "ar": "هكلمّك في وقت قصير جدًا."
+    },
+    {
+     "en": "She was ready in no time.",
+     "ar": "جهزت في وقت قصير جدًا."
+    },
+    {
+     "en": "He fixed it in no time.",
+     "ar": "صلحها في وقت قصير جدًا."
+    },
+    {
+     "en": "I will text you in no time.",
+     "ar": "هبعتلك رسالة في وقت قصير جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001171",
+   "sentences": [
+    {
+     "en": "I met him way back.",
+     "ar": "قابلته من زمان جدًا."
+    },
+    {
+     "en": "She knew him way back.",
+     "ar": "كانت عرفاه من زمان جدًا."
+    },
+    {
+     "en": "He started way back.",
+     "ar": "بدأ من زمان جدًا."
+    },
+    {
+     "en": "I lived there way back.",
+     "ar": "عشت هناك من زمان جدًا."
+    },
+    {
+     "en": "She moved way back.",
+     "ar": "نقلت من زمان جدًا."
+    },
+    {
+     "en": "He worked there way back.",
+     "ar": "اشتغل هناك من زمان جدًا."
+    },
+    {
+     "en": "I visited way back.",
+     "ar": "زرت من زمان جدًا."
+    },
+    {
+     "en": "She studied there way back.",
+     "ar": "درست هناك من زمان جدًا."
+    },
+    {
+     "en": "He left way back.",
+     "ar": "ساب من زمان جدًا."
+    },
+    {
+     "en": "I knew the story way back.",
+     "ar": "كنت عارف القصة من زمان جدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001172",
+   "sentences": [
+    {
+     "en": "Back in the day, things were cheaper.",
+     "ar": "زمان، الحاجات كانت أرخص."
+    },
+    {
+     "en": "She was famous back in the day.",
+     "ar": "كانت مشهورة زمان."
+    },
+    {
+     "en": "He was a star back in the day.",
+     "ar": "كان نجم زمان."
+    },
+    {
+     "en": "Back in the day, we played outside.",
+     "ar": "زمان، كنا بنلعب بره."
+    },
+    {
+     "en": "She danced back in the day.",
+     "ar": "كانت بترقص زمان."
+    },
+    {
+     "en": "He sang back in the day.",
+     "ar": "كان بيغني زمان."
+    },
+    {
+     "en": "Back in the day, phones were simple.",
+     "ar": "زمان، التليفونات كانت بسيطة."
+    },
+    {
+     "en": "She was a teacher back in the day.",
+     "ar": "كانت مدرسة زمان."
+    },
+    {
+     "en": "He was a driver back in the day.",
+     "ar": "كان سواق زمان."
+    },
+    {
+     "en": "Back in the day, life was slow.",
+     "ar": "زمان، الحياة كانت هادية."
+    }
+   ]
+  },
+  {
+   "id": "slg-001173",
+   "sentences": [
+    {
+     "en": "Those were the good old days.",
+     "ar": "كانت دي الأيام الحلوة القديمة."
+    },
+    {
+     "en": "She misses the good old days.",
+     "ar": "وحشاها الأيام الحلوة القديمة."
+    },
+    {
+     "en": "He talks about the good old days.",
+     "ar": "بيتكلم عن الأيام الحلوة القديمة."
+    },
+    {
+     "en": "The good old days were simple.",
+     "ar": "الأيام الحلوة القديمة كانت بسيطة."
+    },
+    {
+     "en": "She remembers the good old days.",
+     "ar": "فتكرة الأيام الحلوة القديمة."
+    },
+    {
+     "en": "He misses the good old days.",
+     "ar": "وحشاه الأيام الحلوة القديمة."
+    },
+    {
+     "en": "The good old days are gone.",
+     "ar": "الأيام الحلوة القديمة راحت."
+    },
+    {
+     "en": "She smiles about the good old days.",
+     "ar": "بتبتسم عن الأيام الحلوة القديمة."
+    },
+    {
+     "en": "He wrote about the good old days.",
+     "ar": "كتب عن الأيام الحلوة القديمة."
+    },
+    {
+     "en": "The good old days were fun.",
+     "ar": "الأيام الحلوة القديمة كانت حلوة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001174",
+   "sentences": [
+    {
+     "en": "I see him now and then.",
+     "ar": "بشوفه من حين لآخر."
+    },
+    {
+     "en": "She calls now and then.",
+     "ar": "بتتصل من حين لآخر."
+    },
+    {
+     "en": "He visits now and then.",
+     "ar": "بيزور من حين لآخر."
+    },
+    {
+     "en": "I write now and then.",
+     "ar": "بكتب من حين لآخر."
+    },
+    {
+     "en": "She reads now and then.",
+     "ar": "بتقرا من حين لآخر."
+    },
+    {
+     "en": "He travels now and then.",
+     "ar": "بيسافر من حين لآخر."
+    },
+    {
+     "en": "I eat out now and then.",
+     "ar": "باكل بره من حين لآخر."
+    },
+    {
+     "en": "She shops now and then.",
+     "ar": "بتتسوق من حين لآخر."
+    },
+    {
+     "en": "He works late now and then.",
+     "ar": "بيشتغل لوقت متأخر من حين لآخر."
+    },
+    {
+     "en": "I go there now and then.",
+     "ar": "بروح هناك من حين لآخر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001175",
+   "sentences": [
+    {
+     "en": "The shop is open 24/7.",
+     "ar": "المحل مفتوح طول الوقت."
+    },
+    {
+     "en": "She works 24/7.",
+     "ar": "بتشتغل طول الوقت."
+    },
+    {
+     "en": "He is on call 24/7.",
+     "ar": "هو متاح طول الوقت."
+    },
+    {
+     "en": "The site runs 24/7.",
+     "ar": "الموقع شغال طول الوقت."
+    },
+    {
+     "en": "She answers 24/7.",
+     "ar": "بترد طول الوقت."
+    },
+    {
+     "en": "He studies 24/7.",
+     "ar": "بيدرس طول الوقت."
+    },
+    {
+     "en": "The gym is open 24/7.",
+     "ar": "الجيم مفتوح طول الوقت."
+    },
+    {
+     "en": "She works 24/7 and never rests.",
+     "ar": "بتشتغل طول الوقت ومش بترتاح أبدًا."
+    },
+    {
+     "en": "He is online 24/7.",
+     "ar": "هو متصل طول الوقت."
+    },
+    {
+     "en": "The service runs 24/7.",
+     "ar": "الخدمة شغالة طول الوقت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001176",
+   "sentences": [
+    {
+     "en": "The hospital works round the clock.",
+     "ar": "المستشفى شغالة على مدار الساعة."
+    },
+    {
+     "en": "She worked round the clock.",
+     "ar": "اشتغلت على مدار الساعة."
+    },
+    {
+     "en": "He studies round the clock.",
+     "ar": "بيدرس على مدار الساعة."
+    },
+    {
+     "en": "The team worked round the clock.",
+     "ar": "الفريق اشتغل على مدار الساعة."
+    },
+    {
+     "en": "She answers round the clock.",
+     "ar": "بترد على مدار الساعة."
+    },
+    {
+     "en": "He guards round the clock.",
+     "ar": "بيحرس على مدار الساعة."
+    },
+    {
+     "en": "The shop is open round the clock.",
+     "ar": "المحل مفتوح على مدار الساعة."
+    },
+    {
+     "en": "She worked round the clock and finished.",
+     "ar": "اشتغلت على مدار الساعة وخلصت."
+    },
+    {
+     "en": "He is online round the clock.",
+     "ar": "هو متصل على مدار الساعة."
+    },
+    {
+     "en": "The service runs round the clock.",
+     "ar": "الخدمة شغالة على مدار الساعة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001177",
+   "sentences": [
+    {
+     "en": "He works all hours.",
+     "ar": "بيشتغل في أوقات متأخرة."
+    },
+    {
+     "en": "She studies all hours.",
+     "ar": "بتدرس في أوقات متأخرة."
+    },
+    {
+     "en": "He is up all hours.",
+     "ar": "هو صاحي في أوقات متأخرة."
+    },
+    {
+     "en": "She answers all hours.",
+     "ar": "بترد في أي وقت."
+    },
+    {
+     "en": "He works all hours and never rests.",
+     "ar": "بيشتغل طول الوقت ومش بيرتاح أبدًا."
+    },
+    {
+     "en": "She is online all hours.",
+     "ar": "هي متصلة طول الوقت."
+    },
+    {
+     "en": "He travels all hours.",
+     "ar": "بيسافر في أي وقت."
+    },
+    {
+     "en": "She works all hours and never complains.",
+     "ar": "بتشتغل طول الوقت ومش بتشتكي أبدًا."
+    },
+    {
+     "en": "He is busy all hours.",
+     "ar": "هو مشغول طول الوقت."
+    },
+    {
+     "en": "She works all hours and smiles.",
+     "ar": "بتشتغل طول الوقت وبتبتسم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001178",
+   "sentences": [
+    {
+     "en": "He woke up at the crack of dawn.",
+     "ar": "صحي أول طلوع الفجر."
+    },
+    {
+     "en": "She left at the crack of dawn.",
+     "ar": "سابت أول طلوع الفجر."
+    },
+    {
+     "en": "He started at the crack of dawn.",
+     "ar": "بدأ أول طلوع الفجر."
+    },
+    {
+     "en": "She runs at the crack of dawn.",
+     "ar": "بتجري أول طلوع الفجر."
+    },
+    {
+     "en": "He works at the crack of dawn.",
+     "ar": "بيشتغل أول طلوع الفجر."
+    },
+    {
+     "en": "She left at the crack of dawn and caught the train.",
+     "ar": "سابت أول طلوع الفجر ولحقت القطر."
+    },
+    {
+     "en": "He was up at the crack of dawn.",
+     "ar": "كان صاحي أول طلوع الفجر."
+    },
+    {
+     "en": "She cooks at the crack of dawn.",
+     "ar": "بتطبخ أول طلوع الفجر."
+    },
+    {
+     "en": "He left at the crack of dawn and arrived early.",
+     "ar": "ساب أول طلوع الفجر ووصل بدري."
+    },
+    {
+     "en": "She woke up at the crack of dawn.",
+     "ar": "صحيت أول طلوع الفجر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001179",
+   "sentences": [
+    {
+     "en": "He woke up at sparrow's fart.",
+     "ar": "صحي بدري جدًا في الفجر."
+    },
+    {
+     "en": "She left at sparrow's fart.",
+     "ar": "سابت بدري جدًا في الفجر."
+    },
+    {
+     "en": "He started at sparrow's fart.",
+     "ar": "بدأ بدري جدًا في الفجر."
+    },
+    {
+     "en": "She runs at sparrow's fart.",
+     "ar": "بتجري بدري جدًا في الفجر."
+    },
+    {
+     "en": "He works at sparrow's fart.",
+     "ar": "بيشتغل بدري جدًا في الفجر."
+    },
+    {
+     "en": "She left at sparrow's fart and caught the train.",
+     "ar": "سابت بدري جدًا ولحقت القطر."
+    },
+    {
+     "en": "He was up at sparrow's fart.",
+     "ar": "كان صاحي بدري جدًا في الفجر."
+    },
+    {
+     "en": "She cooks at sparrow's fart.",
+     "ar": "بتطبخ بدري جدًا في الفجر."
+    },
+    {
+     "en": "He left at sparrow's fart and arrived early.",
+     "ar": "ساب بدري جدًا ووصل بدري."
+    },
+    {
+     "en": "She woke up at sparrow's fart.",
+     "ar": "صحيت بدري جدًا في الفجر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001180",
+   "sentences": [
+    {
+     "en": "He called at an ungodly hour.",
+     "ar": "اتصل في وقت مش معقول."
+    },
+    {
+     "en": "She woke up at an ungodly hour.",
+     "ar": "صحيت في وقت مش معقول."
+    },
+    {
+     "en": "He works at an ungodly hour.",
+     "ar": "بيشتغل في وقت مش معقول."
+    },
+    {
+     "en": "She left at an ungodly hour.",
+     "ar": "سابت في وقت مش معقول."
+    },
+    {
+     "en": "He called me at an ungodly hour.",
+     "ar": "اتصل بيا في وقت مش معقول."
+    },
+    {
+     "en": "She was up at an ungodly hour.",
+     "ar": "كانت صاحية في وقت مش معقول."
+    },
+    {
+     "en": "He arrived at an ungodly hour.",
+     "ar": "وصل في وقت مش معقول."
+    },
+    {
+     "en": "She studies at an ungodly hour.",
+     "ar": "بتدرس في وقت مش معقول."
+    },
+    {
+     "en": "He left at an ungodly hour and caught the bus.",
+     "ar": "ساب في وقت مش معقول ولحق الأوتوبيس."
+    },
+    {
+     "en": "She woke up at an ungodly hour and worked.",
+     "ar": "صحيت في وقت مش معقول واشتغلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001181",
+   "sentences": [
+    {
+     "en": "He called at stupid o'clock.",
+     "ar": "اتصل في وقت متأخر جدًا."
+    },
+    {
+     "en": "She woke up at stupid o'clock.",
+     "ar": "صحيت في وقت بدري جدًا."
+    },
+    {
+     "en": "He works at stupid o'clock.",
+     "ar": "بيشتغل في وقت متأخر جدًا."
+    },
+    {
+     "en": "She left at stupid o'clock.",
+     "ar": "سابت في وقت بدري جدًا."
+    },
+    {
+     "en": "He called me at stupid o'clock.",
+     "ar": "اتصل بيا في وقت متأخر جدًا."
+    },
+    {
+     "en": "She was up at stupid o'clock.",
+     "ar": "كانت صاحية في وقت بدري جدًا."
+    },
+    {
+     "en": "He arrived at stupid o'clock.",
+     "ar": "وصل في وقت متأخر جدًا."
+    },
+    {
+     "en": "She studies at stupid o'clock.",
+     "ar": "بتدرس في وقت متأخر جدًا."
+    },
+    {
+     "en": "He left at stupid o'clock and caught the bus.",
+     "ar": "ساب في وقت بدري جدًا ولحق الأوتوبيس."
+    },
+    {
+     "en": "She woke up at stupid o'clock and worked.",
+     "ar": "صحيت في وقت بدري جدًا واشتغلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001182",
+   "sentences": [
+    {
+     "en": "He woke up at zero dark thirty.",
+     "ar": "صحي بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "She left at zero dark thirty.",
+     "ar": "سابت بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "He started at zero dark thirty.",
+     "ar": "بدأ بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "She runs at zero dark thirty.",
+     "ar": "بتجري بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "He works at zero dark thirty.",
+     "ar": "بيشتغل بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "She left at zero dark thirty and caught the train.",
+     "ar": "سابت بدري جدًا ولحقت القطر."
+    },
+    {
+     "en": "He was up at zero dark thirty.",
+     "ar": "كان صاحي بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "She cooks at zero dark thirty.",
+     "ar": "بتطبخ بدري جدًا قبل الفجر."
+    },
+    {
+     "en": "He left at zero dark thirty and arrived early.",
+     "ar": "ساب بدري جدًا ووصل بدري."
+    },
+    {
+     "en": "She woke up at zero dark thirty.",
+     "ar": "صحيت بدري جدًا قبل الفجر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001183",
+   "sentences": [
+    {
+     "en": "He worked into the wee hours.",
+     "ar": "اشتغل لحد الساعات الصغيرة بعد نص الليل."
+    },
+    {
+     "en": "She studied into the wee hours.",
+     "ar": "درست لحد الساعات الصغيرة بعد نص الليل."
+    },
+    {
+     "en": "He talked into the wee hours.",
+     "ar": "اتكلم لحد الساعات الصغيرة بعد نص الليل."
+    },
+    {
+     "en": "She worked into the wee hours and finished.",
+     "ar": "اشتغلت لحد الساعات الصغيرة وخلصت."
+    },
+    {
+     "en": "He was up into the wee hours.",
+     "ar": "كان صاحي لحد الساعات الصغيرة."
+    },
+    {
+     "en": "She studied into the wee hours and passed.",
+     "ar": "درست لحد الساعات الصغيرة ونجحت."
+    },
+    {
+     "en": "He worked into the wee hours and delivered.",
+     "ar": "اشتغل لحد الساعات الصغيرة وسلّم."
+    },
+    {
+     "en": "She was awake into the wee hours.",
+     "ar": "كانت صاحية لحد الساعات الصغيرة."
+    },
+    {
+     "en": "He talked into the wee hours and fell asleep.",
+     "ar": "اتكلم لحد الساعات الصغيرة ونام."
+    },
+    {
+     "en": "She worked into the wee hours and smiled.",
+     "ar": "اشتغلت لحد الساعات الصغيرة وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001184",
+   "sentences": [
+    {
+     "en": "He left in the dead of night.",
+     "ar": "ساب في نص الليل الهادي خالص."
+    },
+    {
+     "en": "She woke up in the dead of night.",
+     "ar": "صحيت في نص الليل الهادي خالص."
+    },
+    {
+     "en": "He arrived in the dead of night.",
+     "ar": "وصل في نص الليل الهادي خالص."
+    },
+    {
+     "en": "She worked in the dead of night.",
+     "ar": "اشتغلت في نص الليل الهادي خالص."
+    },
+    {
+     "en": "He called in the dead of night.",
+     "ar": "اتصل في نص الليل الهادي خالص."
+    },
+    {
+     "en": "She left in the dead of night and drove home.",
+     "ar": "سابت في نص الليل وساقت للبيت."
+    },
+    {
+     "en": "He woke up in the dead of night and drank water.",
+     "ar": "صحي في نص الليل وشرب ماية."
+    },
+    {
+     "en": "She studied in the dead of night.",
+     "ar": "درست في نص الليل الهادي خالص."
+    },
+    {
+     "en": "He arrived in the dead of night and slept.",
+     "ar": "وصل في نص الليل ونام."
+    },
+    {
+     "en": "She worked in the dead of night and finished.",
+     "ar": "اشتغلت في نص الليل وخلصت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001185",
+   "sentences": [
+    {
+     "en": "I will do it first thing.",
+     "ar": "هعملها أول حاجة في اليوم."
+    },
+    {
+     "en": "She calls first thing.",
+     "ar": "بتتصل أول حاجة في اليوم."
+    },
+    {
+     "en": "He checks email first thing.",
+     "ar": "بيفتح الإيميل أول حاجة في اليوم."
+    },
+    {
+     "en": "I will call you first thing.",
+     "ar": "هكلمّك أول حاجة في اليوم."
+    },
+    {
+     "en": "She drinks coffee first thing.",
+     "ar": "بتشرب القهوة أول حاجة في اليوم."
+    },
+    {
+     "en": "He works out first thing.",
+     "ar": "بيتمرن أول حاجة في اليوم."
+    },
+    {
+     "en": "I will finish it first thing.",
+     "ar": "هخلصها أول حاجة في اليوم."
+    },
+    {
+     "en": "She reads the news first thing.",
+     "ar": "بتقرا الأخبار أول حاجة في اليوم."
+    },
+    {
+     "en": "He leaves first thing.",
+     "ar": "بيسيب أول حاجة في اليوم."
+    },
+    {
+     "en": "I will text you first thing.",
+     "ar": "هبعتلك رسالة أول حاجة في اليوم."
+    }
+   ]
+  },
+  {
+   "id": "slg-001186",
+   "sentences": [
+    {
+     "en": "He woke up bright and early.",
+     "ar": "صحي بدري ومن أول الصبح."
+    },
+    {
+     "en": "She left bright and early.",
+     "ar": "سابت بدري ومن أول الصبح."
+    },
+    {
+     "en": "He arrived bright and early.",
+     "ar": "وصل بدري ومن أول الصبح."
+    },
+    {
+     "en": "She started bright and early.",
+     "ar": "بدأت بدري ومن أول الصبح."
+    },
+    {
+     "en": "He works bright and early.",
+     "ar": "بيشتغل بدري ومن أول الصبح."
+    },
+    {
+     "en": "She left bright and early and caught the train.",
+     "ar": "سابت بدري ولحقت القطر."
+    },
+    {
+     "en": "He was up bright and early.",
+     "ar": "كان صاحي بدري ومن أول الصبح."
+    },
+    {
+     "en": "She cooks bright and early.",
+     "ar": "بتطبخ بدري ومن أول الصبح."
+    },
+    {
+     "en": "He left bright and early and arrived early.",
+     "ar": "ساب بدري ووصل بدري."
+    },
+    {
+     "en": "She woke up bright and early and smiled.",
+     "ar": "صحيت بدري وابتسمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001187",
+   "sentences": [
+    {
+     "en": "Give it a go.",
+     "ar": "جربها وشوف."
+    },
+    {
+     "en": "She gave it a go.",
+     "ar": "جربتها."
+    },
+    {
+     "en": "He gave it a go and liked it.",
+     "ar": "جربها وعجبته."
+    },
+    {
+     "en": "Give it a go and see.",
+     "ar": "جربها وشوف."
+    },
+    {
+     "en": "She gave it a go and failed.",
+     "ar": "جربتها وفشلت."
+    },
+    {
+     "en": "He gave it a go and succeeded.",
+     "ar": "جربها ونجح."
+    },
+    {
+     "en": "Give it a go, you might like it.",
+     "ar": "جربها، ممكن تعجبك."
+    },
+    {
+     "en": "She gave it a go and smiled.",
+     "ar": "جربتها وابتسمت."
+    },
+    {
+     "en": "He gave it a go and learned.",
+     "ar": "جربها واتعلم."
+    },
+    {
+     "en": "Give it a go, no harm in trying.",
+     "ar": "جربها، مفيش ضرر في المحاولة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001188",
+   "sentences": [
+    {
+     "en": "Have a bash at it.",
+     "ar": "جربها."
+    },
+    {
+     "en": "She had a bash at it.",
+     "ar": "جربتها."
+    },
+    {
+     "en": "He had a bash and liked it.",
+     "ar": "جربها وعجبته."
+    },
+    {
+     "en": "Have a bash and see.",
+     "ar": "جربها وشوف."
+    },
+    {
+     "en": "She had a bash and failed.",
+     "ar": "جربتها وفشلت."
+    },
+    {
+     "en": "He had a bash and succeeded.",
+     "ar": "جربها ونجح."
+    },
+    {
+     "en": "Have a bash, you might like it.",
+     "ar": "جربها، ممكن تعجبك."
+    },
+    {
+     "en": "She had a bash and smiled.",
+     "ar": "جربتها وابتسمت."
+    },
+    {
+     "en": "He had a bash and learned.",
+     "ar": "جربها واتعلم."
+    },
+    {
+     "en": "Have a bash, no harm in trying.",
+     "ar": "جربها، مفيش ضرر في المحاولة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001189",
+   "sentences": [
+    {
+     "en": "Have a stab at it.",
+     "ar": "اخد محاولة فيها."
+    },
+    {
+     "en": "She had a stab at it.",
+     "ar": "اخدت محاولة فيها."
+    },
+    {
+     "en": "He had a stab at the puzzle.",
+     "ar": "اخد محاولة في اللغز."
+    },
+    {
+     "en": "Have a stab at the recipe.",
+     "ar": "اخد محاولة في الوصفة."
+    },
+    {
+     "en": "She had a stab at singing.",
+     "ar": "اخدت محاولة في الغنا."
+    },
+    {
+     "en": "He had a stab at the game.",
+     "ar": "اخد محاولة في اللعبة."
+    },
+    {
+     "en": "Have a stab at it and see.",
+     "ar": "اخد محاولة فيها وشوف."
+    },
+    {
+     "en": "She had a stab at it and smiled.",
+     "ar": "اخدت محاولة فيها وابتسمت."
+    },
+    {
+     "en": "He had a stab at it and learned.",
+     "ar": "اخد محاولة فيها واتعلم."
+    },
+    {
+     "en": "Have a stab at it, no harm.",
+     "ar": "اخد محاولة فيها، مفيش ضرر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001190",
+   "sentences": [
+    {
+     "en": "Have a crack at it.",
+     "ar": "حاول فيها."
+    },
+    {
+     "en": "She had a crack at it.",
+     "ar": "حاولت فيها."
+    },
+    {
+     "en": "He had a crack at the puzzle.",
+     "ar": "حاول في اللغز."
+    },
+    {
+     "en": "Have a crack at the recipe.",
+     "ar": "حاول في الوصفة."
+    },
+    {
+     "en": "She had a crack at singing.",
+     "ar": "حاولت في الغنا."
+    },
+    {
+     "en": "He had a crack at the game.",
+     "ar": "حاول في اللعبة."
+    },
+    {
+     "en": "Have a crack at it and see.",
+     "ar": "حاول فيها وشوف."
+    },
+    {
+     "en": "She had a crack at it and smiled.",
+     "ar": "حاولت فيها وابتسمت."
+    },
+    {
+     "en": "He had a crack at it and learned.",
+     "ar": "حاول فيها واتعلم."
+    },
+    {
+     "en": "Have a crack at it, no harm.",
+     "ar": "حاول فيها، مفيش ضرر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001191",
+   "sentences": [
+    {
+     "en": "Take a whack at it.",
+     "ar": "اخد محاولة فيها."
+    },
+    {
+     "en": "She took a whack at it.",
+     "ar": "اخدت محاولة فيها."
+    },
+    {
+     "en": "He took a whack at the puzzle.",
+     "ar": "اخد محاولة في اللغز."
+    },
+    {
+     "en": "Take a whack at the recipe.",
+     "ar": "اخد محاولة في الوصفة."
+    },
+    {
+     "en": "She took a whack at singing.",
+     "ar": "اخدت محاولة في الغنا."
+    },
+    {
+     "en": "He took a whack at the game.",
+     "ar": "اخد محاولة في اللعبة."
+    },
+    {
+     "en": "Take a whack at it and see.",
+     "ar": "اخد محاولة فيها وشوف."
+    },
+    {
+     "en": "She took a whack at it and smiled.",
+     "ar": "اخدت محاولة فيها وابتسمت."
+    },
+    {
+     "en": "He took a whack at it and learned.",
+     "ar": "اخد محاولة فيها واتعلم."
+    },
+    {
+     "en": "Take a whack at it, no harm.",
+     "ar": "اخد محاولة فيها، مفيش ضرر."
+    }
+   ]
+  },
+  {
+   "id": "slg-001192",
+   "sentences": [
+    {
+     "en": "Go for it.",
+     "ar": "يلا اعملها."
+    },
+    {
+     "en": "She went for it.",
+     "ar": "عملتها من غير تردد."
+    },
+    {
+     "en": "He went for it and won.",
+     "ar": "عملها من غير تردد وكسب."
+    },
+    {
+     "en": "Go for it, you can do it.",
+     "ar": "يلا اعملها، تقدر."
+    },
+    {
+     "en": "She went for it and smiled.",
+     "ar": "عملتها من غير تردد وابتسمت."
+    },
+    {
+     "en": "He went for it and succeeded.",
+     "ar": "عملها من غير تردد ونجح."
+    },
+    {
+     "en": "Go for it, no regrets.",
+     "ar": "يلا اعملها، من غير ندم."
+    },
+    {
+     "en": "She went for it and learned.",
+     "ar": "عملتها من غير تردد واتعلمت."
+    },
+    {
+     "en": "He went for it and celebrated.",
+     "ar": "عملها من غير تردد واحتفل."
+    },
+    {
+     "en": "Go for it, now or never.",
+     "ar": "يلا اعملها، دلوقتي أو أبدًا."
+    }
+   ]
+  },
+  {
+   "id": "slg-001193",
+   "sentences": [
+    {
+     "en": "He went all out.",
+     "ar": "بذل أقصى مجهود ممكن."
+    },
+    {
+     "en": "She went all out for the party.",
+     "ar": "بذلت أقصى مجهود للحفلة."
+    },
+    {
+     "en": "He went all out and won.",
+     "ar": "بذل أقصى مجهود وكسب."
+    },
+    {
+     "en": "She went all out on the project.",
+     "ar": "بذلت أقصى مجهود في المشروع."
+    },
+    {
+     "en": "He went all out and impressed.",
+     "ar": "بذل أقصى مجهود وأبهر."
+    },
+    {
+     "en": "She went all out and succeeded.",
+     "ar": "بذلت أقصى مجهود ونجحت."
+    },
+    {
+     "en": "He went all out on the meal.",
+     "ar": "بذل أقصى مجهود في الأكل."
+    },
+    {
+     "en": "She went all out and celebrated.",
+     "ar": "بذلت أقصى مجهود واحتفلت."
+    },
+    {
+     "en": "He went all out and smiled.",
+     "ar": "بذل أقصى مجهود وابتسم."
+    },
+    {
+     "en": "She went all out and was proud.",
+     "ar": "بذلت أقصى مجهود وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001194",
+   "sentences": [
+    {
+     "en": "Put your back into it.",
+     "ar": "حط مجهود حقيقي فيها."
+    },
+    {
+     "en": "She put her back into it.",
+     "ar": "حطت مجهود حقيقي فيها."
+    },
+    {
+     "en": "He put his back into it at work.",
+     "ar": "حط مجهود حقيقي في الشغل."
+    },
+    {
+     "en": "Put your back into it and finish.",
+     "ar": "حط مجهود حقيقي وخلص."
+    },
+    {
+     "en": "She put her back into it and succeeded.",
+     "ar": "حطت مجهود حقيقي ونجحت."
+    },
+    {
+     "en": "He put his back into it and won.",
+     "ar": "حط مجهود حقيقي وكسب."
+    },
+    {
+     "en": "Put your back into it and see.",
+     "ar": "حط مجهود حقيقي وشوف."
+    },
+    {
+     "en": "She put her back into it and smiled.",
+     "ar": "حطت مجهود حقيقي وابتسمت."
+    },
+    {
+     "en": "He put his back into it and learned.",
+     "ar": "حط مجهود حقيقي واتعلم."
+    },
+    {
+     "en": "Put your back into it, no shortcuts.",
+     "ar": "حط مجهود حقيقي، من غير طرق مختصرة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001195",
+   "sentences": [
+    {
+     "en": "He half-arsed it.",
+     "ar": "عمل الشغل نص كم."
+    },
+    {
+     "en": "She half-arsed it on the job.",
+     "ar": "عملت الشغل نص كم."
+    },
+    {
+     "en": "He half-arsed it on the report.",
+     "ar": "كتب التقرير نص كم."
+    },
+    {
+     "en": "She half-arsed it on the presentation.",
+     "ar": "قدمت العرض نص كم."
+    },
+    {
+     "en": "He half-arsed it and got caught.",
+     "ar": "عمل الشغل نص كم واتكشف."
+    },
+    {
+     "en": "She half-arsed it and nobody noticed.",
+     "ar": "عملت الشغل نص كم ومحدش لاحظ."
+    },
+    {
+     "en": "He half-arsed it on the project.",
+     "ar": "عمل المشروع نص كم."
+    },
+    {
+     "en": "She half-arsed it with the meal.",
+     "ar": "عملت الأكل نص كم."
+    },
+    {
+     "en": "He half-arsed it and failed.",
+     "ar": "عمل الشغل نص كم وفشل."
+    },
+    {
+     "en": "She half-arsed it and regretted.",
+     "ar": "عملت الشغل نص كم وندمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001196",
+   "sentences": [
+    {
+     "en": "He winged it.",
+     "ar": "ارتجل من غير تحضير."
+    },
+    {
+     "en": "She winged it with the speech.",
+     "ar": "ارتجلت الخطاب."
+    },
+    {
+     "en": "He winged it in the interview.",
+     "ar": "ارتجل المقابلة."
+    },
+    {
+     "en": "She winged it and succeeded.",
+     "ar": "ارتجلت ونجحت."
+    },
+    {
+     "en": "He winged it in the presentation.",
+     "ar": "ارتجل العرض."
+    },
+    {
+     "en": "She winged it and impressed.",
+     "ar": "ارتجلت وأبهرت."
+    },
+    {
+     "en": "He winged it with the song.",
+     "ar": "ارتجل الأغنية."
+    },
+    {
+     "en": "She winged it and smiled.",
+     "ar": "ارتجلت وابتسمت."
+    },
+    {
+     "en": "He winged it and learned.",
+     "ar": "ارتجل واتعلم."
+    },
+    {
+     "en": "She winged it and celebrated.",
+     "ar": "ارتجلت واحتفلت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001197",
+   "sentences": [
+    {
+     "en": "We will play it by ear.",
+     "ar": "هنقرر حسب الموقف."
+    },
+    {
+     "en": "She played it by ear.",
+     "ar": "قرت حسب الموقف."
+    },
+    {
+     "en": "He played it by ear and decided.",
+     "ar": "قرر حسب الموقف."
+    },
+    {
+     "en": "Let's play it by ear.",
+     "ar": "يلا نقرر حسب الموقف."
+    },
+    {
+     "en": "She played it by ear and smiled.",
+     "ar": "قرت حسب الموقف وابتسمت."
+    },
+    {
+     "en": "He played it by ear and won.",
+     "ar": "قرر حسب الموقف وكسب."
+    },
+    {
+     "en": "We played it by ear and succeeded.",
+     "ar": "قررنا حسب الموقف ونجحنا."
+    },
+    {
+     "en": "She played it by ear and learned.",
+     "ar": "قرت حسب الموقف واتعلمت."
+    },
+    {
+     "en": "He played it by ear and celebrated.",
+     "ar": "قرر حسب الموقف واحتفل."
+    },
+    {
+     "en": "Let's play it by ear, no plan.",
+     "ar": "يلا نقرر حسب الموقف، من غير خطة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001198",
+   "sentences": [
+    {
+     "en": "He worked on the fly.",
+     "ar": "ارتجل وهو شغال."
+    },
+    {
+     "en": "She fixed it on the fly.",
+     "ar": "صلحتها وهي شغالة."
+    },
+    {
+     "en": "He learned on the fly.",
+     "ar": "اتعلم وهو شغال."
+    },
+    {
+     "en": "She adapted on the fly.",
+     "ar": "تأقلمت وهي شغالة."
+    },
+    {
+     "en": "He solved it on the fly.",
+     "ar": "حلها وهو شغال."
+    },
+    {
+     "en": "She worked on the fly and succeeded.",
+     "ar": "ارتجلت وهي شغالة ونجحت."
+    },
+    {
+     "en": "He fixed the bug on the fly.",
+     "ar": "صلح المشكلة وهو شغال."
+    },
+    {
+     "en": "She learned on the fly and smiled.",
+     "ar": "اتعلمت وهي شغالة وابتسمت."
+    },
+    {
+     "en": "He adapted on the fly and won.",
+     "ar": "تأقلم وهو شغال وكسب."
+    },
+    {
+     "en": "She worked on the fly and delivered.",
+     "ar": "ارتجلت وهي شغالة وسلّمت."
+    }
+   ]
+  },
+  {
+   "id": "slg-001199",
+   "sentences": [
+    {
+     "en": "He freestyled on stage.",
+     "ar": "ارتجل على المسرح."
+    },
+    {
+     "en": "She freestyled a rap.",
+     "ar": "ارتجلت راب."
+    },
+    {
+     "en": "He freestyled and impressed.",
+     "ar": "ارتجل وأبهر."
+    },
+    {
+     "en": "She freestyled and won.",
+     "ar": "ارتجلت وكسبت."
+    },
+    {
+     "en": "He freestyled the dance.",
+     "ar": "ارتجل الرقصة."
+    },
+    {
+     "en": "She freestyled and smiled.",
+     "ar": "ارتجلت وابتسمت."
+    },
+    {
+     "en": "He freestyled a joke.",
+     "ar": "ارتجل نكتة."
+    },
+    {
+     "en": "She freestyled and learned.",
+     "ar": "ارتجلت واتعلمت."
+    },
+    {
+     "en": "He freestyled and celebrated.",
+     "ar": "ارتجل واحتفل."
+    },
+    {
+     "en": "She freestyled and was proud.",
+     "ar": "ارتجلت وكانت فخورة."
+    }
+   ]
+  },
+  {
+   "id": "slg-001200",
+   "sentences": [
+    {
+     "en": "He ad-libbed the line.",
+     "ar": "ارتجل الجملة."
+    },
+    {
+     "en": "She ad-libbed the joke.",
+     "ar": "ارتجلت النكتة."
+    },
+    {
+     "en": "He ad-libbed and impressed.",
+     "ar": "ارتجل وأبهر."
+    },
+    {
+     "en": "She ad-libbed and won.",
+     "ar": "ارتجلت وكسبت."
+    },
+    {
+     "en": "He ad-libbed the speech.",
+     "ar": "ارتجل الخطاب."
+    },
+    {
+     "en": "She ad-libbed and smiled.",
+     "ar": "ارتجلت وابتسمت."
+    },
+    {
+     "en": "He ad-libbed a song.",
+     "ar": "ارتجل أغنية."
+    },
+    {
+     "en": "She ad-libbed and learned.",
+     "ar": "ارتجلت واتعلمت."
+    },
+    {
+     "en": "He ad-libbed and celebrated.",
+     "ar": "ارتجل واحتفل."
+    },
+    {
+     "en": "She ad-libbed and was proud.",
+     "ar": "ارتجلت وكانت فخورة."
+    }
+   ]
+  }
+ ]
+}
