@@ -51,4 +51,8 @@ for f in files:
         print(f'FAIL arabic {f}: {n} strings (baseline {allowed}). Move UI strings to src/i18n/locales.')
 
 print(f'i18n check: {len(locales)} locales, {len(base)} keys each; arabic UI strings {new_total} (baseline {sum(baseline.values())})')
+# Existing glossary-protected labels must not regress after machine emission.
+import subprocess
+if subprocess.run(['node', 'scripts/grammar-glossary.mjs', '--check']).returncode:
+    fail = True
 sys.exit(1 if fail else 0)

@@ -1,0 +1,4911 @@
+{
+  "version": 1,
+  "languages": [
+    "de",
+    "fr",
+    "es",
+    "pt",
+    "it",
+    "ru",
+    "tr",
+    "zh",
+    "ja",
+    "ko",
+    "hi",
+    "ur",
+    "fa",
+    "id",
+    "ms",
+    "bn",
+    "nl",
+    "pl",
+    "uk",
+    "sv",
+    "el",
+    "he",
+    "th",
+    "vi",
+    "ro",
+    "cs",
+    "hu",
+    "sw"
+  ],
+  "policy": "English grammar terms are protected from general translation. Sourced native labels are paired with canonical English. Without a verified native label, preserve canonical English; never invent one. Labels are reference-backed, not a human-review claim.",
+  "terms": {
+    "presentSimple": {
+      "english": "Present Simple",
+      "aliases": [
+        "Present Simple Tense",
+        "Simple Present"
+      ],
+      "locales": {
+        "de": {
+          "term": "Simple Present",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "fr": {
+          "term": "présent simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "es": {
+          "term": "presente simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "pt": {
+          "term": "presente simples",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "it": {
+          "term": "presente abituale",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "ru": {
+          "term": "present simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "tr": {
+          "term": "present simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "zh": {
+          "term": "一般现在式",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "ja": {
+          "term": "現在形",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "ko": {
+          "term": "단순 현재 시제",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "hi": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "زمان حال ساده",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "id": {
+          "term": "Simple present",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "ms": {
+          "term": "kini selapis",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "bn": {
+          "term": "সাধারণ বর্তমান",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "nl": {
+          "term": "tegenwoordige tijd",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "pl": {
+          "term": "present simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "uk": {
+          "term": "present simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "sv": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "הווה פשוט",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "thì hiện tại đơn",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "ro": {
+          "term": "prezentul simplu",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "cs": {
+          "term": "přítomný čas prostý",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3910936"
+        },
+        "hu": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Present Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "presentContinuous": {
+      "english": "Present Continuous",
+      "aliases": [
+        "Present Continuous Tense",
+        "Present Progressive"
+      ],
+      "locales": {
+        "de": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "présent continu",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "es": {
+          "term": "presente continuo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "pt": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "presente progressivo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "ru": {
+          "term": "present continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "tr": {
+          "term": "present continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "zh": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "زمان حال ساده استمراری",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "id": {
+          "term": "Present continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "ms": {
+          "term": "kini berterusan",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "bn": {
+          "term": "ঘটমান বর্তমান",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "nl": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "הווה ממושך",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "thì hiện tại tiếp diễn",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "ro": {
+          "term": "prezentul continuu în limba engleză",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "cs": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "folyamatos jelen",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q7240943"
+        },
+        "sw": {
+          "term": "Present Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "presentPerfect": {
+      "english": "Present Perfect",
+      "aliases": [
+        "Present Perfect Simple"
+      ],
+      "locales": {
+        "de": {
+          "term": "present perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "fr": {
+          "term": "passé composé",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "es": {
+          "term": "pretérito perfecto compuesto",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "pt": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "passato prossimo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "ru": {
+          "term": "present perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "tr": {
+          "term": "present perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "zh": {
+          "term": "現在完成式",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "ja": {
+          "term": "現在完了",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "ko": {
+          "term": "현재완료",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "hi": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "حال کامل",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "id": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "kini sempurna",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "bn": {
+          "term": "পুরাঘটিত বর্তমান",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "nl": {
+          "term": "voltooid tegenwoordige tijd",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "pl": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "παρακείμενος",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "he": {
+          "term": "הווה מושלם",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "thì hiện tại hoàn thành",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "ro": {
+          "term": "prezentul perfect nedefinit în limba engleză",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "cs": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "befejezett jelen",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1240211"
+        },
+        "sw": {
+          "term": "Present Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "presentPerfectContinuous": {
+      "english": "Present Perfect Continuous",
+      "aliases": [
+        "Present Perfect Progressive"
+      ],
+      "locales": {
+        "de": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "present perfect continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12738495"
+        },
+        "pt": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Present Perfect Continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12738495"
+        },
+        "tr": {
+          "term": "Present perfect continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12738495"
+        },
+        "zh": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "הווה מושלם ממושך",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Prezentul perfect continuu în limba engleză",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12738495"
+        },
+        "cs": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Present Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "pastSimple": {
+      "english": "Past Simple",
+      "aliases": [
+        "Past Simple Tense",
+        "Simple Past"
+      ],
+      "locales": {
+        "de": {
+          "term": "Simple Past",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "fr": {
+          "term": "passé simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "es": {
+          "term": "pasado simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "pt": {
+          "term": "passado simples",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "it": {
+          "term": "past simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "ru": {
+          "term": "простое прошедшее время",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "tr": {
+          "term": "basit geçmiş",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "zh": {
+          "term": "一般過去式",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "ja": {
+          "term": "過去形",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "ko": {
+          "term": "단순 과거 시제",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "hi": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "ماضی مطلق",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "fa": {
+          "term": "زمان گذشته ساده در زبان انگلیسی",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "id": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "সাধারণ অতীত",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "nl": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "עבר פשוט",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "thì quá khứ đơn",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "ro": {
+          "term": "trecutul simplu",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "cs": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "simple past",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1392475"
+        },
+        "sw": {
+          "term": "Past Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "pastContinuous": {
+      "english": "Past Continuous",
+      "aliases": [
+        "Past Continuous Tense",
+        "Past Progressive"
+      ],
+      "locales": {
+        "de": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "pretérito continuo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q56650537"
+        },
+        "pt": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "длительное прошедшее время",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q56650537"
+        },
+        "tr": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "ঘটমান অতীত",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q56650537"
+        },
+        "nl": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "עבר ממושך",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "folyamatos múlt",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q56650537"
+        },
+        "sw": {
+          "term": "Past Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "pastPerfect": {
+      "english": "Past Perfect",
+      "aliases": [
+        "Past Perfect Simple"
+      ],
+      "locales": {
+        "de": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "pretérito pluscuamperfecto",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "pt": {
+          "term": "pretérito perfeito",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "it": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "past perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "tr": {
+          "term": "past perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "zh": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "過去完了",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "ko": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "পুরাঘটিত অতীত",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "nl": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "עבר מושלם",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "befejezett múlt",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q23663136"
+        },
+        "sw": {
+          "term": "Past Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "pastPerfectContinuous": {
+      "english": "Past Perfect Continuous",
+      "aliases": [
+        "Past Perfect Progressive"
+      ],
+      "locales": {
+        "de": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Past perfect continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12734727"
+        },
+        "zh": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "পুরাঘটমান অতীত",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12734727"
+        },
+        "nl": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Mai mult ca perfectul continuu în limba engleză",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12734727"
+        },
+        "cs": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Past Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "futureSimple": {
+      "english": "Future Simple",
+      "aliases": [
+        "Simple Future"
+      ],
+      "locales": {
+        "de": {
+          "term": "Futur simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "fr": {
+          "term": "futur simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "es": {
+          "term": "futuro simple",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "pt": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "futuro semplice",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "ru": {
+          "term": "простое будущее время",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "tr": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "未来形",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "ko": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "زمان آینده ساده",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "id": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "czas przyszły prosty",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "uk": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "עתיד פשוט",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "budoucí čas jednoduchý",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "hu": {
+          "term": "egyszerű jövő",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1475560"
+        },
+        "sw": {
+          "term": "Future Simple",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "futureContinuous": {
+      "english": "Future Continuous",
+      "aliases": [
+        "Future Continuous Tense",
+        "Future Progressive"
+      ],
+      "locales": {
+        "de": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "futur continu",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12743436"
+        },
+        "es": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Future continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12743436"
+        },
+        "zh": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "未来進行形",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12743436"
+        },
+        "ko": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Viitorul continuu în limba engleză",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q12743436"
+        },
+        "cs": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Future Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "futurePerfect": {
+      "english": "Future Perfect",
+      "aliases": [
+        "Future Perfect Tense"
+      ],
+      "locales": {
+        "de": {
+          "term": "Futur II",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "fr": {
+          "term": "futur antérieur",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "es": {
+          "term": "futuro perfecto",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "pt": {
+          "term": "futuro perfeito",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "it": {
+          "term": "futuro anteriore",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "ru": {
+          "term": "future perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "tr": {
+          "term": "future perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "zh": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "미래완료",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "hi": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "زمان آینده کامل",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "id": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "futurum exactum",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "pl": {
+          "term": "czas zaprzyszły",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "uk": {
+          "term": "передмайбутній час",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "sv": {
+          "term": "futurum exaktum",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "el": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "עתיד נשלם",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "th": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "viitor perfect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "cs": {
+          "term": "předbudoucí čas",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "hu": {
+          "term": "befejezett jövő",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1234617"
+        },
+        "sw": {
+          "term": "Future Perfect",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "futurePerfectContinuous": {
+      "english": "Future Perfect Continuous",
+      "aliases": [
+        "Future Perfect Progressive"
+      ],
+      "locales": {
+        "de": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "futur parfait continu",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q20472817"
+        },
+        "es": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "future perfect continuous",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q20472817"
+        },
+        "zh": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "未来完了進行形",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q20472817"
+        },
+        "ko": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "viitorul anterior continuu",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q20472817"
+        },
+        "cs": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Future Perfect Continuous",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "partsOfSpeech": {
+      "english": "Parts of Speech",
+      "aliases": [
+        "Part of Speech"
+      ],
+      "locales": {
+        "de": {
+          "term": "Wortart",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "fr": {
+          "term": "nature grammaticale",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "es": {
+          "term": "categoría morfosintáctica",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "pt": {
+          "term": "classe gramatical",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "it": {
+          "term": "parti del discorso",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "ru": {
+          "term": "часть речи",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "tr": {
+          "term": "sözcük türü",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "zh": {
+          "term": "词类",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "ja": {
+          "term": "品詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "ko": {
+          "term": "품사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "hi": {
+          "term": "Parts of Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "کلمہ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "fa": {
+          "term": "پاره‌های سخن",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "id": {
+          "term": "kelas kata",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "ms": {
+          "term": "golongan kata",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "bn": {
+          "term": "পদ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "nl": {
+          "term": "woordsoort",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "pl": {
+          "term": "część mowy",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "uk": {
+          "term": "частина мови",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "sv": {
+          "term": "ordklass",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "el": {
+          "term": "μέρη του λόγου",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "he": {
+          "term": "חלקי הדיבר",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "th": {
+          "term": "ชนิดของคำ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "vi": {
+          "term": "từ loại",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "ro": {
+          "term": "parte de vorbire",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "cs": {
+          "term": "slovní druh",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "hu": {
+          "term": "szófaj",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        },
+        "sw": {
+          "term": "aina za maneno",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q82042"
+        }
+      }
+    },
+    "noun": {
+      "english": "Noun",
+      "aliases": [
+        "Nouns"
+      ],
+      "locales": {
+        "de": {
+          "term": "Substantiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "fr": {
+          "term": "nom",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "es": {
+          "term": "sustantivo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "pt": {
+          "term": "nome",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "it": {
+          "term": "sostantivo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "ru": {
+          "term": "имя существительное",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "tr": {
+          "term": "isim",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "zh": {
+          "term": "名詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "ja": {
+          "term": "名詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "ko": {
+          "term": "명사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "hi": {
+          "term": "संज्ञा",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "ur": {
+          "term": "اسم",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "fa": {
+          "term": "اسم",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "id": {
+          "term": "nomina",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "ms": {
+          "term": "kata nama",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "bn": {
+          "term": "বিশেষ্য",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "nl": {
+          "term": "zelfstandig naamwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "pl": {
+          "term": "rzeczownik",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "uk": {
+          "term": "іменник",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "sv": {
+          "term": "substantiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "el": {
+          "term": "ουσιαστικό",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "he": {
+          "term": "שם עצם",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "th": {
+          "term": "คำนาม",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "vi": {
+          "term": "danh từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "ro": {
+          "term": "substantiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "cs": {
+          "term": "podstatné jméno",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "hu": {
+          "term": "főnév",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        },
+        "sw": {
+          "term": "nomino",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1084"
+        }
+      }
+    },
+    "verb": {
+      "english": "Verb",
+      "aliases": [
+        "Verbs"
+      ],
+      "locales": {
+        "de": {
+          "term": "Verb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "fr": {
+          "term": "verbe",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "es": {
+          "term": "verbo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "pt": {
+          "term": "verbo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "it": {
+          "term": "verbo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "ru": {
+          "term": "глагол",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "tr": {
+          "term": "fiil",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "zh": {
+          "term": "动词",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "ja": {
+          "term": "動詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "ko": {
+          "term": "동사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "hi": {
+          "term": "क्रिया",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "ur": {
+          "term": "فعل",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "fa": {
+          "term": "فعل",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "id": {
+          "term": "verba",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "ms": {
+          "term": "kata kerja",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "bn": {
+          "term": "ক্রিয়া",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "nl": {
+          "term": "werkwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "pl": {
+          "term": "czasownik",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "uk": {
+          "term": "дієслово",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "sv": {
+          "term": "verb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "el": {
+          "term": "ρήμα",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "he": {
+          "term": "פועל",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "th": {
+          "term": "คำกริยา",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "vi": {
+          "term": "động từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "ro": {
+          "term": "verb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "cs": {
+          "term": "sloveso",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "hu": {
+          "term": "ige",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        },
+        "sw": {
+          "term": "kitenzi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q24905"
+        }
+      }
+    },
+    "adjective": {
+      "english": "Adjective",
+      "aliases": [
+        "Adjectives"
+      ],
+      "locales": {
+        "de": {
+          "term": "Adjektiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "fr": {
+          "term": "adjectif",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "es": {
+          "term": "adjetivo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "pt": {
+          "term": "adjetivo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "it": {
+          "term": "aggettivo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "ru": {
+          "term": "прилагательное",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "tr": {
+          "term": "sıfat",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "zh": {
+          "term": "形容词",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "ja": {
+          "term": "形容詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "ko": {
+          "term": "형용사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "hi": {
+          "term": "विशेषण",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "ur": {
+          "term": "صفت",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "fa": {
+          "term": "صفت",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "id": {
+          "term": "adjektiva",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "ms": {
+          "term": "kata sifat",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "bn": {
+          "term": "বিশেষণ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "nl": {
+          "term": "bijvoeglijk naamwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "pl": {
+          "term": "przymiotnik",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "uk": {
+          "term": "прикметник",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "sv": {
+          "term": "adjektiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "el": {
+          "term": "επίθετο",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "he": {
+          "term": "שם תואר",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "th": {
+          "term": "คำวิเศษณ์",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "vi": {
+          "term": "tính từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "ro": {
+          "term": "adjectiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "cs": {
+          "term": "přídavné jméno",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "hu": {
+          "term": "melléknév",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        },
+        "sw": {
+          "term": "vivumishi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q34698"
+        }
+      }
+    },
+    "adverb": {
+      "english": "Adverb",
+      "aliases": [
+        "Adverbs"
+      ],
+      "locales": {
+        "de": {
+          "term": "Adverb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "fr": {
+          "term": "adverbe",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "es": {
+          "term": "adverbio",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "pt": {
+          "term": "advérbio",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "it": {
+          "term": "avverbio",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "ru": {
+          "term": "наречие",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "tr": {
+          "term": "zarf",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "zh": {
+          "term": "副詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "ja": {
+          "term": "副詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "ko": {
+          "term": "부사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "hi": {
+          "term": "क्रिया विशेषण और उसके भेद",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "ur": {
+          "term": "متعلق فعل",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "fa": {
+          "term": "قید",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "id": {
+          "term": "adverbia",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "ms": {
+          "term": "adverba",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "bn": {
+          "term": "ক্রিয়াবিশেষণ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "nl": {
+          "term": "bijwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "pl": {
+          "term": "przysłówek",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "uk": {
+          "term": "прислівник",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "sv": {
+          "term": "adverb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "el": {
+          "term": "επίρρημα",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "he": {
+          "term": "תואר פועל",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "th": {
+          "term": "คำกริยาวิเศษณ์",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "vi": {
+          "term": "trạng từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "ro": {
+          "term": "adverb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "cs": {
+          "term": "příslovce",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "hu": {
+          "term": "határozószó",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        },
+        "sw": {
+          "term": "vielezi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q380057"
+        }
+      }
+    },
+    "pronoun": {
+      "english": "Pronoun",
+      "aliases": [
+        "Pronouns"
+      ],
+      "locales": {
+        "de": {
+          "term": "Pronomen",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "fr": {
+          "term": "pronom",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "es": {
+          "term": "pronombre",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "pt": {
+          "term": "pronome",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "it": {
+          "term": "pronome",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "ru": {
+          "term": "местоимение-существительное",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "tr": {
+          "term": "zamir",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "zh": {
+          "term": "代名詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "ja": {
+          "term": "代名詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "ko": {
+          "term": "대명사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "hi": {
+          "term": "सर्वनाम",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "ur": {
+          "term": "ضمیر",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "fa": {
+          "term": "ضمیر",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "id": {
+          "term": "pronomina",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "ms": {
+          "term": "kata ganti",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "bn": {
+          "term": "সর্বনাম",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "nl": {
+          "term": "voornaamwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "pl": {
+          "term": "zaimek",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "uk": {
+          "term": "займенник",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "sv": {
+          "term": "pronomen",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "el": {
+          "term": "αντωνυμία",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "he": {
+          "term": "כינוי גוף",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "th": {
+          "term": "คำสรรพนาม",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "vi": {
+          "term": "đại từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "ro": {
+          "term": "pronume",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "cs": {
+          "term": "zájmeno",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "hu": {
+          "term": "névmás",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        },
+        "sw": {
+          "term": "viwakilishi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36224"
+        }
+      }
+    },
+    "preposition": {
+      "english": "Preposition",
+      "aliases": [
+        "Prepositions"
+      ],
+      "locales": {
+        "de": {
+          "term": "Präposition",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "fr": {
+          "term": "préposition",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "es": {
+          "term": "preposición",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "pt": {
+          "term": "preposição",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "it": {
+          "term": "preposizione",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "ru": {
+          "term": "предлог",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "tr": {
+          "term": "Preposition",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "介詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "ja": {
+          "term": "前置詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "ko": {
+          "term": "전치사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "hi": {
+          "term": "Preposition",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Preposition",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "حرف اضافه",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "id": {
+          "term": "preposisi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "ms": {
+          "term": "kata sendi nama",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "bn": {
+          "term": "Preposition",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "voorzetsel",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "pl": {
+          "term": "przyimek",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "uk": {
+          "term": "прийменник",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "sv": {
+          "term": "preposition",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "el": {
+          "term": "Preposition",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "מילת יחס תחילית",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "th": {
+          "term": "คำบุพบท",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "vi": {
+          "term": "giới từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "ro": {
+          "term": "prepoziție",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "cs": {
+          "term": "předložka",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "hu": {
+          "term": "elöljáró",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q4833830"
+        },
+        "sw": {
+          "term": "Preposition",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "article": {
+      "english": "Article",
+      "aliases": [
+        "Articles"
+      ],
+      "locales": {
+        "de": {
+          "term": "Artikel",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "fr": {
+          "term": "article",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "es": {
+          "term": "artículo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "pt": {
+          "term": "artigo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "it": {
+          "term": "articolo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "ru": {
+          "term": "артикль",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "tr": {
+          "term": "tanımlık",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "zh": {
+          "term": "冠词",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "ja": {
+          "term": "冠詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "ko": {
+          "term": "관사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "hi": {
+          "term": "आर्टिकल",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "ur": {
+          "term": "Article",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "حرف تعریف",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "id": {
+          "term": "artikula",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "ms": {
+          "term": "Article",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "পদাশ্রিত নির্দেশক",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "nl": {
+          "term": "lidwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "pl": {
+          "term": "przedimek",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "uk": {
+          "term": "артикль",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "sv": {
+          "term": "artikel",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "el": {
+          "term": "άρθρο",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "he": {
+          "term": "תווית",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "th": {
+          "term": "คำกำกับนาม",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "vi": {
+          "term": "mạo từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "ro": {
+          "term": "articol",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "cs": {
+          "term": "člen",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "hu": {
+          "term": "névelő",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q103184"
+        },
+        "sw": {
+          "term": "Article",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "conjunction": {
+      "english": "Conjunction",
+      "aliases": [
+        "Conjunctions"
+      ],
+      "locales": {
+        "de": {
+          "term": "Konjunktion",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "fr": {
+          "term": "conjonction",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "es": {
+          "term": "conjunción",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "pt": {
+          "term": "conjunção",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "it": {
+          "term": "congiunzione",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "ru": {
+          "term": "союз",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "tr": {
+          "term": "bağlaç",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "zh": {
+          "term": "連詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "ja": {
+          "term": "接続詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "ko": {
+          "term": "접속사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "hi": {
+          "term": "संयोजक (व्याकरण)",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "ur": {
+          "term": "حرفِ ربط",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "fa": {
+          "term": "حرف ربط",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "id": {
+          "term": "konjungsi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "ms": {
+          "term": "kata hubung",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "bn": {
+          "term": "যোজক",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "nl": {
+          "term": "voegwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "pl": {
+          "term": "spójnik",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "uk": {
+          "term": "сполучник",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "sv": {
+          "term": "konjunktion",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "el": {
+          "term": "σύνδεσμος",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "he": {
+          "term": "מילת קישור",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "th": {
+          "term": "คำสันธาน",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "vi": {
+          "term": "liên từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "ro": {
+          "term": "conjuncție",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "cs": {
+          "term": "spojka",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "hu": {
+          "term": "kötőszó",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        },
+        "sw": {
+          "term": "viunganishi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q36484"
+        }
+      }
+    },
+    "interjection": {
+      "english": "Interjection",
+      "aliases": [
+        "Interjections"
+      ],
+      "locales": {
+        "de": {
+          "term": "Interjektion",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "fr": {
+          "term": "interjection",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "es": {
+          "term": "interjección",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "pt": {
+          "term": "interjeição",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "it": {
+          "term": "interiezione",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "ru": {
+          "term": "междометие",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "tr": {
+          "term": "ünlem",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "zh": {
+          "term": "感叹词",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "ja": {
+          "term": "感動詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "ko": {
+          "term": "감탄사",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "hi": {
+          "term": "विस्मयादिबोधक",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "ur": {
+          "term": "حرفِ ندا",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "fa": {
+          "term": "حرف ندا",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "id": {
+          "term": "interjeksi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "ms": {
+          "term": "kata seru",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "bn": {
+          "term": "সম্বোধনসূচক অব্যয়",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "nl": {
+          "term": "tussenwerpsel",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "pl": {
+          "term": "wykrzyknik",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "uk": {
+          "term": "вигук",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "sv": {
+          "term": "interjektion",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "el": {
+          "term": "επιφώνημα",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "he": {
+          "term": "מילת קריאה",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "th": {
+          "term": "คำอุทาน",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "vi": {
+          "term": "thán từ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "ro": {
+          "term": "interjecție",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "cs": {
+          "term": "citoslovce",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "hu": {
+          "term": "indulatszó",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        },
+        "sw": {
+          "term": "vihisishi",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q83034"
+        }
+      }
+    },
+    "relativeClause": {
+      "english": "Relative Clause",
+      "aliases": [
+        "Relative Clauses"
+      ],
+      "locales": {
+        "de": {
+          "term": "Relativsatz",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "fr": {
+          "term": "proposition relative",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "es": {
+          "term": "oración de relativo",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "pt": {
+          "term": "oração subordinada adjetiva",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "it": {
+          "term": "proposizione relativa",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "ru": {
+          "term": "определительное придаточное предложение",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "tr": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "關係子句",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "ja": {
+          "term": "関係節",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "ko": {
+          "term": "관계절",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "hi": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "جمله‌وارهٔ موصولی در زبان فرانسه",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "id": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "bijvoeglijke bijzin",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "pl": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "відносне речення",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "sv": {
+          "term": "relativsats",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "el": {
+          "term": "Αναφορική πρόταση",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "he": {
+          "term": "פסוקית יחס",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "th": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Mệnh đề quan hệ",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "ro": {
+          "term": "propoziție atributivă",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "cs": {
+          "term": "vztažná věta",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "hu": {
+          "term": "vonatkozó tagmondat",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1402059"
+        },
+        "sw": {
+          "term": "Relative Clause",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "reportedSpeech": {
+      "english": "Reported Speech",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "discours rapporté",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3030205"
+        },
+        "es": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "чужая речь",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3030205"
+        },
+        "tr": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "discurs indirect",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3030205"
+        },
+        "cs": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "függő beszéd",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q3030205"
+        },
+        "sw": {
+          "term": "Reported Speech",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "passiveVoice": {
+      "english": "Passive Voice",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "Passiv",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "fr": {
+          "term": "voix passive",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "es": {
+          "term": "voz pasiva",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "pt": {
+          "term": "voz passiva",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "it": {
+          "term": "diatesi passiva",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "ru": {
+          "term": "страдательный залог",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "tr": {
+          "term": "Passive Voice",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "被动语态",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "ja": {
+          "term": "受動態",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "ko": {
+          "term": "수동태",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "hi": {
+          "term": "Passive Voice",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Passive Voice",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "فعل مجهول",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "id": {
+          "term": "bentuk pasif",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "ms": {
+          "term": "pasif",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "bn": {
+          "term": "কর্মবাচ্য",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "nl": {
+          "term": "lijdende vorm",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "pl": {
+          "term": "Passive Voice",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "пасивний стан",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "sv": {
+          "term": "passivum",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "el": {
+          "term": "Passive Voice",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "סביל",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "th": {
+          "term": "กรรมวาจก",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "vi": {
+          "term": "dạng bị động",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "ro": {
+          "term": "Passive Voice",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "trpný rod",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "hu": {
+          "term": "szenvedő szerkezet",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        },
+        "sw": {
+          "term": "kinyambuo tendewa",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q1194697"
+        }
+      }
+    },
+    "modalVerb": {
+      "english": "Modal Verb",
+      "aliases": [
+        "Modal Verbs"
+      ],
+      "locales": {
+        "de": {
+          "term": "Modalverb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "fr": {
+          "term": "verbe modal",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "es": {
+          "term": "verbo modal",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "pt": {
+          "term": "verbo modal",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "it": {
+          "term": "verbo servile",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "ru": {
+          "term": "модальный глагол",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "tr": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "情態動詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "ja": {
+          "term": "法助動詞",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "ko": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "فعل کمکی وجهی در زبان انگلیسی",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "id": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "modaal werkwoord",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "pl": {
+          "term": "czasownik modalny",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "uk": {
+          "term": "модальне дієслово",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "sv": {
+          "term": "modalt hjälpverb",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "el": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "verb modal",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "cs": {
+          "term": "způsobové sloveso",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "hu": {
+          "term": "modális ige",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q560570"
+        },
+        "sw": {
+          "term": "Modal Verb",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "conditional": {
+      "english": "Conditional Sentence",
+      "aliases": [
+        "Conditional Sentences"
+      ],
+      "locales": {
+        "de": {
+          "term": "Konditionalgefüge",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "fr": {
+          "term": "phrase conditionnelle",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "es": {
+          "term": "oración condicional",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "pt": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "periodo ipotetico",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "ru": {
+          "term": "условное предложение",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "tr": {
+          "term": "Conditional sentence",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "zh": {
+          "term": "條件句",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "ja": {
+          "term": "節 (文法)",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "ko": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "جمله شرطی",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "id": {
+          "term": "conditional tense",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "ms": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "משפט תנאי",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "th": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "feltételes mondat",
+          "status": "sourced-label",
+          "source": "https://www.wikidata.org/wiki/Q456748"
+        },
+        "sw": {
+          "term": "Conditional Sentence",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "beGoingTo": {
+      "english": "Be Going To",
+      "aliases": [
+        "Be Going To form"
+      ],
+      "locales": {
+        "de": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "עתיד מתוכנן",
+          "status": "sourced-label",
+          "source": "https://free-english.co.il/grammar/tenses"
+        },
+        "th": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Be Going To",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "zeroConditional": {
+      "english": "Zero Conditional",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Zero Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "firstConditional": {
+      "english": "First Conditional",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "First Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "secondConditional": {
+      "english": "Second Conditional",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Second Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "thirdConditional": {
+      "english": "Third Conditional",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Third Conditional",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    },
+    "mixedConditionals": {
+      "english": "Mixed Conditionals",
+      "aliases": [],
+      "locales": {
+        "de": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fr": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "es": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pt": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "it": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ru": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "tr": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "zh": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ja": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ko": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hi": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ur": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "fa": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "id": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ms": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "bn": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "nl": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "pl": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "uk": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sv": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "el": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "he": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "th": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "vi": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "ro": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "cs": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "hu": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        },
+        "sw": {
+          "term": "Mixed Conditionals",
+          "status": "canonical-english",
+          "source": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/verb-phrases"
+        }
+      }
+    }
+  }
+}
