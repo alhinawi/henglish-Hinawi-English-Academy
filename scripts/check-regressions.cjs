@@ -23,6 +23,7 @@ const checks = [
   'check-phrase-retry.cjs',
   'check-exam-vocab-retry.cjs',
   'check-expressions-retry.cjs',
+  'check-vocabulary-load-retry.cjs',
   'check-question-cycles.cjs',
   'check-question-bank-copy.cjs',
   'check-vocabulary-claims.cjs',
