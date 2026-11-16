@@ -19,6 +19,7 @@ import {
   FileCheck2,
 } from 'lucide-react';
 import { useLanguage } from '../../i18n/LanguageContext';
+import { isAiServiceUnavailable } from '../../services/aiAvailability';
 
 interface CameraOcrTabProps {
   targetLang: LanguageCode;
@@ -78,7 +79,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
       playSound('fanfare');
     } catch (err) {
       console.error('OCR processing error:', err);
-      setErrorMsg(t('ocr.errExtract'));
+      setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('ocr.errExtract'));
       playSound('wrong');
     } finally {
       setIsProcessing(false);

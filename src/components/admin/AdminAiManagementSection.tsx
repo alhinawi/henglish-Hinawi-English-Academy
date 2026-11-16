@@ -24,6 +24,7 @@ import {
   Clock,
   Sparkles,
 } from 'lucide-react';
+import { isSpaFallbackResponse } from '../../services/aiAvailability';
 import { playSound } from '../../utils/audio';
 import { useLanguage } from '../../i18n/LanguageContext';
 
@@ -78,7 +79,10 @@ export const AdminAiManagementSection: React.FC = () => {
     setIsLoading(true);
     try {
       const res = await fetch('/api/ai/admin/health');
-      if (res.ok) {
+      if (isSpaFallbackResponse(res)) {
+        // No AI backend deployed on this host (static SPA fallback); stay quiet.
+        setProviders([]);
+      } else if (res.ok) {
         const data = await res.json();
         setProviders(data.providers || []);
         setConfig(data.config || null);
