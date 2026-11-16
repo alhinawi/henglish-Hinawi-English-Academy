@@ -1,6 +1,5 @@
 import { BadgeCollection } from '../components/BadgeCollection';
 import React, { useState } from "react";
-import { CEFR_LABELS_AR } from "../utils/levels";
 import {
   PageRoute,
   UserProfile,
@@ -155,7 +154,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
               <div className="text-xs text-[#b9b6d5]">{t('ml.level')}</div>
               <div className="text-2xl font-black text-[#ffd166]">
-                {userProfile.currentLevel} ({CEFR_LABELS_AR[userProfile.currentLevel]})
+                {userProfile.currentLevel} ({t(`lv.${userProfile.currentLevel}`)})
               </div>
               <div className="text-[11px] text-[#41e7ff]">
                 {t('ml.nextGoal')} {userProfile.targetLevel}
