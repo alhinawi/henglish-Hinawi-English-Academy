@@ -1,0 +1,2402 @@
+[
+ {
+  "id": "q-grm1-012801",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He speaks slowing.",
+   "He speaks slowness.",
+   "He speaks slow.",
+   "He speaks slowly."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: He speaks slowly..",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012802",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She plays tennis goodly.",
+   "She plays tennis best.",
+   "She plays tennis good.",
+   "She plays tennis well."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: She plays tennis well..",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012803",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He ran fasting.",
+   "He ran fastness.",
+   "He ran fastly.",
+   "He ran fast."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: He ran fast..",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012804",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They worked hardy.",
+   "They worked hardness.",
+   "They worked hardly.",
+   "They worked hard."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: They worked hard..",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012805",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She smiled happyly.",
+   "She smiled happiness.",
+   "She smiled happy.",
+   "She smiled happily."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: She smiled happily..",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012806",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He drives carefuly.",
+   "He drives carefulness.",
+   "He drives careful.",
+   "He drives carefully."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard. الإجابة الصحيحة: He drives carefully..",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012807",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She sings good\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She sings well لأن well هي ظرف الحال لـ good. ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012808",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He runs fast\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، fast بتتستخدم كصفة وكظرف. ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012809",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"They worked hardly\" means they worked a lot.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. hardly معناها بالكاد، وhard معناها بجد وبمجهود. ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012810",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Quickly\" is an adverb.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. ظرف الحال بيوصف الفعل، وغالبا بنضيف ly للصفة. وشاذ: good-well وfast-fast وhard-hard.",
+  "topic": "Grammar: adverbs of manner (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012811",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is my book. It is _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "me",
+   "I",
+   "mine",
+   "my"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: mine.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012812",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "That is her bag. It is _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "her",
+   "his",
+   "hers",
+   "she"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: hers.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012813",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "These are our seats. They are _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "our",
+   "us",
+   "ours",
+   "we"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: ours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012814",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Those are their keys. They are _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "them",
+   "theirs",
+   "they",
+   "their"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: theirs.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012815",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This is your pen. It is _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "your",
+   "you're",
+   "you",
+   "yours"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: yours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012816",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "That car is his. It is _____ car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "him",
+   "he",
+   "his",
+   "hers"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: his.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012817",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Is this phone _____? (belongs to you)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "your",
+   "you",
+   "yours",
+   "yourself"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: yours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012818",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The house on the corner is _____. (belongs to us)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "our",
+   "ours",
+   "us",
+   "we"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: ours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012819",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "My room is bigger than _____. (your room)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "yours",
+   "you",
+   "your's",
+   "your"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: yours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012820",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Whose is this coat? It's _____. (it's my coat)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "me",
+   "my",
+   "I",
+   "mine"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: mine.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012821",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Their garden is nice but _____ is nicer. (our garden)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "we're",
+   "us",
+   "our",
+   "ours"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: ours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012822",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have my key. Have you got _____? (your key)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "your's",
+   "yours",
+   "your",
+   "you"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: yours.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012823",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She forgot her pen so I gave her _____. (my pen)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "me",
+   "my",
+   "mine",
+   "I"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: mine.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012824",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "These books aren't _____. (not belonging to them)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "their",
+   "them",
+   "they",
+   "theirs"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: theirs.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012825",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Whose bag is that? Is it _____? (belongs to her)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "she",
+   "hers",
+   "hers'",
+   "her"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: hers.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012826",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The red car is me.",
+   "The red car is mines.",
+   "The red car is my.",
+   "The red car is mine."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: The red car is mine..",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012827",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Is this pen you?",
+   "Is this pen yours's?",
+   "Is this pen your?",
+   "Is this pen yours?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: Is this pen yours?.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012828",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "These seats are us.",
+   "These seats are ours'.",
+   "These seats are our.",
+   "These seats are ours."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: These seats are ours..",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012829",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "That house is them.",
+   "That house is theirs'.",
+   "That house is their.",
+   "That house is theirs."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: That house is theirs..",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012830",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The blue bag is she.",
+   "The blue bag is hers'.",
+   "The blue bag is her.",
+   "The blue bag is hers."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها. الإجابة الصحيحة: The blue bag is hers..",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012831",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"This book is mine\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012832",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"This book is my\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح This book is mine. الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012833",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Hers\" is a possessive pronoun.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012834",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"The pen is her's\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح hers بدون apostrophe. الضمائر الملكية: mine, yours, his, hers, ours, theirs. بتيجي من غير اسم بعدها.",
+  "topic": "Grammar: possessive pronouns (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012835",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I like tea _____ coffee. (both)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "but",
+   "or",
+   "and"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: and.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012836",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is rich _____ he is not happy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "but",
+   "because",
+   "and"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: but.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012837",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Do you want tea _____ coffee?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "and",
+   "because",
+   "or",
+   "but"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: or.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012838",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It was raining, _____ we stayed at home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "or",
+   "so",
+   "because",
+   "but"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: so.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012839",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I stayed at home _____ I was ill.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "or",
+   "but",
+   "because",
+   "so"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: because.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012840",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is tired, _____ she is working.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "but",
+   "so",
+   "or",
+   "because"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: but.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012841",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He studied hard, _____ he passed the exam.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "but",
+   "because",
+   "or"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: so.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012842",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I didn't go out _____ it was cold.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "but",
+   "because",
+   "so",
+   "and"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: because.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012843",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We can go by bus _____ by train.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "but",
+   "or",
+   "because",
+   "so"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: or.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012844",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is clever _____ lazy.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "so",
+   "or",
+   "but"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: but.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012845",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She was hungry, _____ she ate a sandwich.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "because",
+   "but",
+   "or"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: so.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012846",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I called him _____ he didn't answer.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "or",
+   "because",
+   "so",
+   "but"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: but.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012847",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I love swimming _____ playing tennis.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "and",
+   "or",
+   "so",
+   "but"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: and.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012848",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He took an umbrella _____ it was raining.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "so",
+   "but",
+   "or"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: because.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012849",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It is a small flat, _____ it is very comfortable.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "because",
+   "but",
+   "or",
+   "so"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: but.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012850",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "You can have an apple _____ an orange.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "but",
+   "so",
+   "or",
+   "because"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: or.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012851",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I was late _____ the bus was late.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so",
+   "but",
+   "because",
+   "or"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: because.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012852",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The shop was closed, _____ I went home.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "or",
+   "because",
+   "so",
+   "but"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: so.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012853",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I was tired, but I went to bed so.",
+   "I was tired, or I went to bed.",
+   "I was tired, because I went to bed.",
+   "I was tired, so I went to bed."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: I was tired, so I went to bed..",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012854",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She didn't come but she was sick.",
+   "She didn't come or she was sick.",
+   "She didn't come so she was sick.",
+   "She didn't come because she was sick."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: She didn't come because she was sick..",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012855",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is poor because happy.",
+   "He is poor or happy.",
+   "He is poor so happy.",
+   "He is poor but happy."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: He is poor but happy..",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012856",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Would you like tea so coffee?",
+   "Would you like tea because coffee?",
+   "Would you like tea but coffee?",
+   "Would you like tea or coffee?"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب. الإجابة الصحيحة: Would you like tea or coffee?.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012857",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Because\" gives a reason.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012858",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"So\" introduces a result.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012859",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I was tired because I went to bed early\" means I went to bed early so I was tired.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. because بتدي السبب، والسبب هنا هو التعب: I went to bed early because I was tired. and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012860",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"But\" shows a contrast.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. and للإضافة، but للتعارض، or للاختيار، so للنتيجة، because للسبب.",
+  "topic": "Grammar: conjunctions - and, but, or, so, because (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012861",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This tea is _____ hot. I can't drink it.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "enough",
+   "very much",
+   "so much",
+   "too"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012862",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is not tall _____ to play basketball.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "enough",
+   "too",
+   "very"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012863",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I can't buy this car. It is _____ expensive.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "so much",
+   "too",
+   "very much",
+   "enough"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012864",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Is the water warm _____ for swimming?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "too",
+   "very",
+   "enough"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012865",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She is _____ young to drive a car.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "enough",
+   "very much",
+   "too"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012866",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We don't have _____ money.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "enough",
+   "much of",
+   "too",
+   "very"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012867",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This bag is _____ heavy for me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "a lot",
+   "too",
+   "enough",
+   "many"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012868",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Are you old _____ to vote?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "very",
+   "much",
+   "enough"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012869",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The room is _____ small for ten people.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "many",
+   "a lot",
+   "enough"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012870",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "There aren't _____ chairs for everyone.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "enough",
+   "too",
+   "much of",
+   "very"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012871",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "It's _____ cold to go swimming today.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "too",
+   "enough",
+   "many",
+   "a lot"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012872",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He is strong _____ to lift the box.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "much",
+   "enough",
+   "too",
+   "very"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012873",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The test was _____ difficult. Nobody passed.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "enough",
+   "many",
+   "too",
+   "a lot"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: too.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012874",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I didn't sleep _____ last night.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "enough",
+   "very",
+   "too",
+   "much of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012875",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "This soup is not hot _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "very",
+   "enough",
+   "too",
+   "much"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: enough.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012876",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He is too tiredly to drive.",
+   "He is tired too to drive.",
+   "He is enough tired to drive.",
+   "He is too tired to drive."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: He is too tired to drive..",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012877",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She isn't too old enough.",
+   "She isn't old too.",
+   "She isn't enough old.",
+   "She isn't old enough."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: She isn't old enough..",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012878",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We have too enough time.",
+   "We have enough of time.",
+   "We have time enough of.",
+   "We have enough time."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: We have enough time..",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012879",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "It is too lately to call.",
+   "It is late too to call.",
+   "It is enough late to call.",
+   "It is too late to call."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم. الإجابة الصحيحة: It is too late to call..",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012880",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Enough\" comes after an adjective.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح، مثل tall enough. too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012881",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Too\" means a positive amount.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. too معناها أكتر من اللازم وفيها معنى سلبي. too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012882",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She is enough tall\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح She is tall enough. too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012883",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"We have enough chairs\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. too + صفة معناها أكتر من اللازم (سلبي). صفة + enough معناها كفاية. enough + اسم معناها كفاية من الاسم.",
+  "topic": "Grammar: too and enough (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012884",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He walked _____ the room. (entered)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "out of",
+   "through",
+   "into",
+   "across"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: into.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012885",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She came _____ the house. (left it)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "into",
+   "towards",
+   "out of",
+   "along"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: out of.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012886",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They swam _____ the river. (from one side to the other)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "towards",
+   "along",
+   "across",
+   "under"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: across.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012887",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We walked _____ the beach. (following its length)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "along",
+   "across",
+   "into",
+   "out of"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: along.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012888",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The train goes _____ a tunnel.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "through",
+   "along",
+   "across",
+   "towards"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: through.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012889",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He ran _____ the stairs. (to the top)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "up",
+   "along",
+   "down",
+   "through"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: up.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012890",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She climbed _____ the hill.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "into",
+   "out of",
+   "up",
+   "down"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: up.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012891",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The ball rolled _____ the hill. (to the bottom)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "across",
+   "into",
+   "up",
+   "down"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: down.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012892",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The dog ran _____ me.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "into",
+   "out of",
+   "towards",
+   "from"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: towards.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012893",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She jumped _____ the pool.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "along",
+   "into",
+   "across",
+   "out of"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: into.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012894",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He got _____ the car and drove away.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "along",
+   "into",
+   "out of",
+   "towards"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: into.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012895",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The bird flew _____ the window.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "across",
+   "along",
+   "into of",
+   "through"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: through.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012896",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They walked _____ the street slowly. (from side to side)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "up",
+   "along",
+   "into",
+   "across"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: across.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012897",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The cat jumped _____ the table. (onto)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "out of",
+   "through",
+   "into",
+   "onto"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: onto.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012898",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He fell _____ the stairs.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "towards of",
+   "down",
+   "up",
+   "across"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: down.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012899",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She walked at the shop.",
+   "She walked out the shop into.",
+   "She walked in the shop to.",
+   "She walked into the shop."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: She walked into the shop..",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012900",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He came from out the room to.",
+   "He came in of the room.",
+   "He came out the room of.",
+   "He came out of the room."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: He came out of the room..",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012901",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We swam acrossed the lake.",
+   "We swam at the lake across.",
+   "We swam cross the lake.",
+   "We swam across the lake."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: We swam across the lake..",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012902",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "The kids ran at the hill down.",
+   "The kids ran under to the hill.",
+   "The kids ran down of the hill.",
+   "The kids ran down the hill."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت. الإجابة الصحيحة: The kids ran down the hill..",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012903",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Into\" means going inside.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012904",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Out of\" means going inside.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. out of معناها بره، وinto معناها جوه. into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012905",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Across\" means from one side to the other.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012906",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"Up\" is the opposite of \"down\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. into جوه، out of بره، across عبر، along على طول، through من خلال، towards ناحية، up/down فوق/تحت.",
+  "topic": "Grammar: prepositions of movement (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012907",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have _____ been to London. (not once)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ever",
+   "never",
+   "yet",
+   "already"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: never.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012908",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Have you _____ eaten sushi?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "never",
+   "ever",
+   "yet",
+   "already"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: ever.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012909",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She has _____ finished her homework. (done)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "yet",
+   "already",
+   "ever",
+   "never"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: already.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012910",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I haven't done my homework _____.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "already",
+   "never",
+   "yet",
+   "ever"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: yet.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012911",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They have _____ visited Aswan. (they did it)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "never",
+   "yet",
+   "already",
+   "ever"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: already.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012912",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Has he arrived _____?",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "yet",
+   "already",
+   "never",
+   "ever"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: yet.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012913",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have _____ seen that film. I can't remember the story.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "yet",
+   "never",
+   "already",
+   "ever"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: already.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012914",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We have _____ met before.",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ever",
+   "already",
+   "yet",
+   "never"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: never.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012915",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He has _____ a new car. (buy)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "buyed",
+   "buys",
+   "bought",
+   "buy"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: bought.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012916",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have _____ my keys. (lose)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "lost",
+   "loses",
+   "lose",
+   "losed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: lost.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012917",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She has _____ to Paris. (go)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "been",
+   "gone to been",
+   "go",
+   "went"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: been.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012918",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "They have _____ lunch already. (have)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "having",
+   "has",
+   "had",
+   "have"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: had.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012919",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Have you _____ my phone? (see)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "seed",
+   "saw",
+   "see",
+   "seen"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: seen.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012920",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He has _____ the book. (read)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "reads",
+   "readed",
+   "reading",
+   "read"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: read.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012921",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "We have _____ here for two years. (live)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "living",
+   "live",
+   "lives",
+   "lived"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: lived.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012922",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have _____ a letter to my friend. (write)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "write",
+   "writed",
+   "written",
+   "wrote"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: written.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012923",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "She has _____ her work. (finish)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "finishing",
+   "finish",
+   "finished",
+   "finishes"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: finished.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012924",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Have they _____ the game? (win)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "wins",
+   "winned",
+   "won",
+   "win"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: won.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012925",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "He hasn't _____ yet. (come)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "comes",
+   "come",
+   "came",
+   "coming"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: come.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012926",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "I have never _____ a camel. (ride)",
+  "promptAr": "كمّل الجملة بالاختيار الصح:",
+  "options": [
+   "ride",
+   "rided",
+   "ridden",
+   "rode"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: ridden.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012927",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "I has seen that film.",
+   "I have see that film.",
+   "I have saw that film.",
+   "I have seen that film."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: I have seen that film..",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012928",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "She has go home.",
+   "She has went home.",
+   "She have gone home.",
+   "She has gone home."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: She has gone home..",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012929",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct question.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "Have you ever been to Egypt?",
+   "Do you ever been to Egypt?",
+   "Did you ever been to Egypt?",
+   "Have you ever be to Egypt?"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: Have you ever been to Egypt?.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012930",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "They haven't arrive yet.",
+   "They don't arrived yet.",
+   "They hasn't arrived yet.",
+   "They haven't arrived yet."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: They haven't arrived yet..",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012931",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "He has already ate.",
+   "He has already eat.",
+   "He have already eaten.",
+   "He has already eaten."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: He has already eaten..",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012932",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختار الإجابة الصح:",
+  "options": [
+   "We have never be late.",
+   "We never have been late.",
+   "We has never been late.",
+   "We have never been late."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة. الإجابة الصحيحة: We have never been late..",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012933",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"I have went to school\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح I have gone to school. have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012934",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"She has finished\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012935",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"He has eaten\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة صح. have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ },
+ {
+  "id": "q-grm1-012936",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "\"We has seen it\" is correct.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الجملة غلط. الصح We have seen it. have/has + التصريف الثالث. never لو ما حصلش، ever في الأسئلة، already في الإثبات، yet في النفي والأسئلة.",
+  "topic": "Grammar: present perfect with ever/never/already/yet (A2)",
+  "source": "worker-b-grammar-a1-b1"
+ }
+]
