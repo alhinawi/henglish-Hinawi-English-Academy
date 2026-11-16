@@ -26,7 +26,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  const { lang, setLang, t } = useLanguage();
+  const { lang, setLang, t, dir } = useLanguage();
   const initialName = userProfile.nameAr || userProfile.name;
   const initialAvatar = userProfile.avatar ?? null;
   const [name, setName] = useState(initialName);
@@ -63,7 +63,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
 
   const save = async () => {
     if (!accessToken) {
-      setError('الجلسة مش جاهزة. سجّل دخولك من جديد.');
+      setError(t('sm.errSession'));
       return;
     }
     setSaving(true);
@@ -81,7 +81,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
         setError(GOOGLE_REAUTH_MESSAGE);
         setNeedsGoogleReauth(true);
       } else {
-        setError('حصلت مشكلة أثناء الحفظ. حاول تاني.');
+        setError(t('sm.errSave'));
       }
       return;
     }
@@ -93,15 +93,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" dir="rtl" onClick={onClose}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" dir={dir} onClick={onClose}>
       <div
-        role="dialog" aria-modal="true" aria-label="إعدادات الحساب"
+        role="dialog" aria-modal="true" aria-label={t('sm.dialogAria')}
         className="w-full max-w-sm max-h-[90dvh] overflow-y-auto bg-[#171632] border border-white/15 rounded-2xl p-6 shadow-2xl space-y-5"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-black text-white">{t('settings.title')}</h2>
-          <button onClick={onClose} aria-label="إغلاق" className="text-slate-400 hover:text-white cursor-pointer">
+          <button onClick={onClose} aria-label={t('am.closeAria')} className="text-slate-400 hover:text-white cursor-pointer">
             <X className="w-5 h-5" />
           </button>
         </div>
@@ -131,7 +131,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
           <img
             src={avatar || ANONYMOUS_AVATAR}
             onError={e => { e.currentTarget.onerror = null; e.currentTarget.src = ANONYMOUS_AVATAR; }}
-            alt="الصورة الشخصية"
+            alt={t('sm.avatarAlt')}
             className="w-24 h-24 rounded-2xl object-cover border-2 border-[#ffd166]/60 bg-slate-800"
           />
           <div className="flex gap-2">
@@ -140,16 +140,16 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
               className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-white text-xs font-bold cursor-pointer"
             >
               <Camera className="w-4 h-4" />
-              <span>غيّر صورتك</span>
+              <span>{t('sm.changePhoto')}</span>
             </button>
           </div>
           <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={onFile} />
         </div>
 
-        <fieldset className="space-y-3"><legend className="text-xs text-slate-300 mb-2">أو اختار أفاتار جاهز</legend><div className="grid grid-cols-6 gap-2">{Array.from({length: PRESET_COUNT}, (_, i) => <button key={i} type="button" aria-label={`أفاتار ${i + 1}`} onClick={async () => { try { setAvatar(await svgToDataUrl(presetSvg(i))); } catch { setError('مش قادرين نجهز الأفاتار. جرّب صورة تانية.'); } }} className="aspect-square rounded-xl overflow-hidden [&>svg]:w-full [&>svg]:h-full border border-white/15 hover:border-[#ffd166] focus-visible:outline-2 focus-visible:outline-[#ffd166]" dangerouslySetInnerHTML={{__html: presetSvg(i)}} />)}</div></fieldset>
+        <fieldset className="space-y-3"><legend className="text-xs text-slate-300 mb-2">{t('sm.pickAvatar')}</legend><div className="grid grid-cols-6 gap-2">{Array.from({length: PRESET_COUNT}, (_, i) => <button key={i} type="button" aria-label={`${t('sm.avatarN')} ${i + 1}`} onClick={async () => { try { setAvatar(await svgToDataUrl(presetSvg(i))); } catch { setError(t('sm.errAvatar')); } }} className="aspect-square rounded-xl overflow-hidden [&>svg]:w-full [&>svg]:h-full border border-white/15 hover:border-[#ffd166] focus-visible:outline-2 focus-visible:outline-[#ffd166]" dangerouslySetInnerHTML={{__html: presetSvg(i)}} />)}</div></fieldset>
 
         <div>
-          <label className="block text-xs font-medium text-slate-300 mb-1.5">الاسم الظاهر</label>
+          <label className="block text-xs font-medium text-slate-300 mb-1.5">{t('sm.nameLabel')}</label>
           <input
             type="text"
             value={name}
@@ -165,7 +165,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
             onClick={() => { window.location.href = googleLoginUrl(); }}
             className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white text-gray-800 font-bold text-sm hover:bg-gray-100 cursor-pointer"
           >
-            المتابعة بحساب Google
+            {t('gs.google')}
           </button>
         )}
 
@@ -175,7 +175,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
           className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 text-white font-bold text-sm hover:from-indigo-500 hover:to-indigo-400 disabled:opacity-50 cursor-pointer"
         >
           <Save className="w-4 h-4" />
-          <span>{saving ? 'بيحفظ...' : 'احفظ التغييرات'}</span>
+          <span>{saving ? t('sm.saving') : t('sm.save')}</span>
         </button>
       </div>
     </div>
