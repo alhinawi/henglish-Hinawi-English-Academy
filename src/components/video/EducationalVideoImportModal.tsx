@@ -29,6 +29,7 @@ import { verifyYouTubeVideo, VerificationResult, extractYouTubeId } from '../../
 import { CEFRLevel } from '../../types';
 import { TimedSubtitle } from '../../data/movieScenesData';
 import { playSound } from '../../utils/audio';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface EducationalVideoImportModalProps {
   isOpen: boolean;
@@ -41,6 +42,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
   onClose,
   onImportSuccess,
 }) => {
+  const { t } = useLanguage();
   const [youtubeInput, setYoutubeInput] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<VideoCategoryType>('movie_scenes');
   const [selectedCefr, setSelectedCefr] = useState<CEFRLevel>('B1');
@@ -71,7 +73,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
   const handleVerify = async () => {
     const ytid = extractYouTubeId(youtubeInput);
     if (!ytid) {
-      setErrorMsg('يرجى إدخال رابط يوتيوب صحيح أو معرف فيديو مكون من 11 رمزاً');
+      setErrorMsg(t('vi.invalidUrl'));
       return;
     }
     setErrorMsg(null);
@@ -90,7 +92,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
         playSound('wrong');
       }
     } catch (err: any) {
-      setErrorMsg(`خطأ في فحص الفيديو: ${err.message}`);
+      setErrorMsg(`${t('vi.checkError')} ${err.message}`);
     } finally {
       setIsVerifying(false);
     }
@@ -109,7 +111,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
   const handleImportSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!verification || !verification.isEmbeddable) {
-      setErrorMsg('يرجى التحقق من صلاحية الفيديو وقابلية تشغيله أولاً.');
+      setErrorMsg(t('vi.notVerified'));
       return;
     }
 
@@ -126,7 +128,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           start: s.start,
           end: s.end,
           en: s.en.trim(),
-          arEg: s.arEg.trim() || 'ترجمة سياقية حية',
+          arEg: s.arEg.trim() || t('vi.defaultSubAr'),
           arFusha: s.arEg.trim(),
           keyWords: [],
         }));
@@ -150,7 +152,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
       onClose();
     } else {
       playSound('wrong');
-      setErrorMsg(res.error || 'تعذر استيراد الفيديو');
+      setErrorMsg(res.error || t('vi.importError'));
     }
   };
 
@@ -174,7 +176,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
               <Video className="w-5 h-5" />
             </span>
             <h3 className="text-lg font-black text-white">
-              استيراد وتوثيق فيديو تعليمي جديد (Smart Video Import)
+              {t('vi.title')}
             </h3>
           </div>
         </div>
@@ -190,7 +192,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           {/* 1. YouTube URL & Live Verification */}
           <div className="space-y-2">
             <label className="text-xs font-bold text-white">
-              رابط فيديو يوتيوب أو معرف الفيديو (YouTube URL / ID) *
+              {t('vi.urlLabel')} *
             </label>
             <div className="flex gap-2">
               <input
@@ -212,7 +214,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                 ) : (
                   <CheckCircle2 className="w-4 h-4" />
                 )}
-                <span>فحص الصلاحية</span>
+                <span>{t('vi.checkBtn')}</span>
               </button>
             </div>
           </div>
@@ -238,7 +240,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                   {verification.title || verification.youtubeId}
                 </div>
                 <div className="text-white/60">
-                  القناة: {verification.channelName || 'YouTube Creator'}
+                  {t('vi.channel')} {verification.channelName || 'YouTube Creator'}
                 </div>
                 <div className="font-bold">
                   {verification.isEmbeddable ? (
@@ -255,7 +257,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {/* Category (20 Categories) */}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-white">الفئة (Category)</label>
+              <label className="text-[11px] font-bold text-white">{t('vi.category')}</label>
               <select
                 value={selectedCategory}
                 onChange={e => setSelectedCategory(e.target.value as any)}
@@ -271,32 +273,32 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
 
             {/* CEFR Level */}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-white">المستوى (CEFR Level)</label>
+              <label className="text-[11px] font-bold text-white">{t('vi.level')}</label>
               <select
                 value={selectedCefr}
                 onChange={e => setSelectedCefr(e.target.value as any)}
                 className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs font-bold"
               >
-                <option value="A1">A1 - مبتدئ</option>
-                <option value="A2">A2 - أساسي</option>
-                <option value="B1">B1 - متوسط</option>
-                <option value="B2">B2 - فوق المتوسط</option>
-                <option value="C1">C1 - متقدم</option>
-                <option value="C2">C2 - طلاقة تامة</option>
+                <option value="A1">A1 - {t('qz.levelA1')}</option>
+                <option value="A2">A2 - {t('qz.levelA2')}</option>
+                <option value="B1">B1 - {t('qz.levelB1')}</option>
+                <option value="B2">B2 - {t('qz.levelB2')}</option>
+                <option value="C1">C1 - {t('qz.levelC1')}</option>
+                <option value="C2">C2 - {t('vi.levelC2')}</option>
               </select>
             </div>
 
             {/* Accent */}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-white">اللكنة (Accent)</label>
+              <label className="text-[11px] font-bold text-white">{t('vi.accent')}</label>
               <select
                 value={selectedAccent}
                 onChange={e => setSelectedAccent(e.target.value as any)}
                 className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs font-bold"
               >
-                <option value="American">American(أمريكية)</option>
-                <option value="British">British(بريطانية)</option>
-                <option value="International">International(دولية)</option>
+                <option value="American">{t('vi.accentAmerican')}</option>
+                <option value="British">{t('vi.accentBritish')}</option>
+                <option value="International">{t('vi.accentInternational')}</option>
               </select>
             </div>
           </div>
@@ -304,23 +306,23 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           {/* Title & Description */}
           <div className="space-y-3">
             <div className="space-y-1">
-              <label className="text-xs font-bold text-white">عنوان المقطع التعليمي</label>
+              <label className="text-xs font-bold text-white">{t('vi.sceneTitle')}</label>
               <input
                 type="text"
                 value={customTitle}
                 onChange={e => setCustomTitle(e.target.value)}
-                placeholder="عنوان المشهد أو المقابلة التعليمية"
+                placeholder={t('vi.sceneTitlePh')}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs"
               />
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-white">وصف المشهد وسياق التعلم</label>
+              <label className="text-xs font-bold text-white">{t('vi.sceneDesc')}</label>
               <textarea
                 rows={2}
                 value={description}
                 onChange={e => setDescription(e.target.value)}
-                placeholder="ما الذي يتعلمه الطالب من هذا المقطع؟"
+                placeholder={t('vi.sceneDescPh')}
                 className="w-full px-3.5 py-2.5 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs"
               />
             </div>
@@ -336,12 +338,12 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                   onChange={e => setHasSubtitles(e.target.checked)}
                   className="w-4 h-4 rounded accent-[#c4ff55]"
                 />
-                <span>إدخال نصوص وترجمة سياقية للمقطع (Interactive Subtitles)</span>
+                <span>{t('vi.subsTitle')}</span>
               </label>
 
               {!hasSubtitles && (
                 <span className="text-[10px] text-white/50 bg-white/5 px-2.5 py-1 rounded-lg">
-                  سيتم الاستيراد بوضع المشاهدة فقط (Video-Only)
+                  {t('vi.videoOnly')}
                 </span>
               )}
             </div>
@@ -349,15 +351,15 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
             {hasSubtitles && (
               <div className="space-y-3 pt-2 border-t border-white/10">
                 <div className="text-xs text-white/70">
-                  أدخل الأسطر الإنجليزية مع التوقيت بالثواني وترجمتها بالمصرية:
+                  {t('vi.subsHint')}
                 </div>
 
                 {subtitles.map((line, idx) => (
                   <div key={idx} className="p-3 rounded-xl bg-black/40 border border-white/10 space-y-2">
                     <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-[#c4ff55]">سطر {idx + 1}</span>
+                      <span className="font-bold text-[#c4ff55]">{t('vi.lineN')} {idx + 1}</span>
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] text-white/50">من (ثانية):</span>
+                        <span className="text-[10px] text-white/50">{t('vi.fromSec')}</span>
                         <input
                           type="number"
                           value={line.start}
@@ -369,7 +371,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                           }}
                           className="w-16 px-2 py-1 rounded bg-[#09091a] border border-white/15 text-white text-center text-xs"
                         />
-                        <span className="text-[10px] text-white/50">إلى:</span>
+                        <span className="text-[10px] text-white/50">{t('vi.toSec')}</span>
                         <input
                           type="number"
                           value={line.end}
@@ -401,7 +403,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                         copy[idx].en = e.target.value;
                         setSubtitles(copy);
                       }}
-                      placeholder="الجملة الإنجليزية المنطوقة (English sentence)..."
+                      placeholder={t('vi.enPh')}
                       className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/15 text-white font-sans text-xs"
                       dir="ltr"
                     />
@@ -414,7 +416,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                         copy[idx].arEg = e.target.value;
                         setSubtitles(copy);
                       }}
-                      placeholder="الترجمة بالمصرية والعمق السياقي..."
+                      placeholder={t('vi.arPh')}
                       className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/15 text-white text-xs"
                     />
                   </div>
@@ -426,7 +428,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                   className="px-3 py-1.5 rounded-xl border border-dashed border-white/20 hover:border-white/40 text-xs font-bold text-white/80 hover:text-white transition-all flex items-center gap-1.5 cursor-pointer"
                 >
                   <Plus className="w-3.5 h-3.5" />
-                  <span>إضافة سطر حواري آخر</span>
+                  <span>{t('vi.addLine')}</span>
                 </button>
               </div>
             )}
@@ -441,12 +443,12 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
             {isImporting ? (
               <>
                 <Loader2 className="w-4 h-4 animate-spin" />
-                <span>جارٍ حفظ وتوثيق الفيديو...</span>
+                <span>{t('vi.saving')}</span>
               </>
             ) : (
               <>
                 <Sparkles className="w-4 h-4" />
-                <span>تأكيد استيراد وحفظ الفيديو في المكتبة</span>
+                <span>{t('vi.confirm')}</span>
               </>
             )}
           </button>
