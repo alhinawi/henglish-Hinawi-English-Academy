@@ -145,7 +145,7 @@ export const GrammarLessonPage: React.FC<GrammarLessonPageProps> = ({
               {txText(appText, rule.category)} • {rule.categoryEn}
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-bold bg-white/10 text-[#41e7ff] border border-white/10">
-              {rule.level}
+              {txText(appText, rule.level)}
             </span>
             <span className="px-3 py-1 rounded-full text-xs font-mono font-bold bg-[#ff4f9a]/20 text-[#ff8bb9] border border-[#ff4f9a]/30">
               درس {rule.order} من {ALL_GRAMMAR_RULES.length}
