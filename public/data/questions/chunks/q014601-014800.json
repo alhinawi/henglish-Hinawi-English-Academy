@@ -2418,5 +2418,1189 @@
   "explanationAr": "غلط: has.",
   "topic": "Grammar: advanced grammar (C1)",
   "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-read-016401",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What colour is the rabbit?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Zeina has a rabbit. It is small and white. It eats carrots and green leaves. Zeina cleans its cage every Saturday. The rabbit sleeps in the afternoon.",
+  "options": [
+   "Brown",
+   "Black",
+   "White",
+   "Grey"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأرنب أبيض.",
+  "topic": "Reading: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016402",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "The rabbit eats carrots and green _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Zeina has a rabbit. It is small and white. It eats carrots and green leaves. Zeina cleans its cage every Saturday. The rabbit sleeps in the afternoon.",
+  "options": [
+   "leaves",
+   "sweets",
+   "meat",
+   "bread"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بيأكل جزر وورق أخضر.",
+  "topic": "Reading: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016403",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "When does Zeina clean the cage?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Zeina has a rabbit. It is small and white. It eats carrots and green leaves. Zeina cleans its cage every Saturday. The rabbit sleeps in the afternoon.",
+  "options": [
+   "Every Monday",
+   "Every Friday",
+   "Every day",
+   "Every Saturday"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "كل سبت.",
+  "topic": "Reading: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016404",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: The rabbit sleeps at night only.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Zeina has a rabbit. It is small and white. It eats carrots and green leaves. Zeina cleans its cage every Saturday. The rabbit sleeps in the afternoon.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول بينام بعد الضهر.",
+  "topic": "Reading: Pets (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016405",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What season is it?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It is winter in Alexandria. It is cold and rainy. People wear coats and carry umbrellas. The sea is high. Nobody swims today.",
+  "options": [
+   "Summer",
+   "Autumn",
+   "Spring",
+   "Winter"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "شتا.",
+  "topic": "Reading: Weather (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016406",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "People wear coats and carry _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It is winter in Alexandria. It is cold and rainy. People wear coats and carry umbrellas. The sea is high. Nobody swims today.",
+  "options": [
+   "umbrellas",
+   "books",
+   "flowers",
+   "bags"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "شماسي.",
+  "topic": "Reading: Weather (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016407",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: People swim in the sea today.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "It is winter in Alexandria. It is cold and rainy. People wear coats and carry umbrellas. The sea is high. Nobody swims today.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"Nobody swims today\".",
+  "topic": "Reading: Weather (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016408",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Where is the story?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "It is winter in Alexandria. It is cold and rainy. People wear coats and carry umbrellas. The sea is high. Nobody swims today.",
+  "options": [
+   "In Luxor",
+   "In Aswan",
+   "In Cairo",
+   "In Alexandria"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "إسكندرية.",
+  "topic": "Reading: Weather (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016409",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "Who sells ice cream?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "There are many children in the park. Some play football and some ride bicycles. A man sells ice cream near the gate. A girl sits on a bench and reads a book.",
+  "options": [
+   "A woman",
+   "A girl",
+   "A boy",
+   "A man"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "راجل.",
+  "topic": "Reading: Park (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016410",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A1",
+  "prompt": "A girl sits on a bench and reads a _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "There are many children in the park. Some play football and some ride bicycles. A man sells ice cream near the gate. A girl sits on a bench and reads a book.",
+  "options": [
+   "map",
+   "letter",
+   "phone",
+   "book"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بتقرأ كتاب.",
+  "topic": "Reading: Park (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016411",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A1",
+  "prompt": "What do some children do?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "There are many children in the park. Some play football and some ride bicycles. A man sells ice cream near the gate. A girl sits on a bench and reads a book.",
+  "options": [
+   "Cook",
+   "Ride bicycles",
+   "Sleep",
+   "Swim"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيركبوا عجل.",
+  "topic": "Reading: Park (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016412",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A1",
+  "prompt": "True or False: The ice cream man is near the gate.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "There are many children in the park. Some play football and some ride bicycles. A man sells ice cream near the gate. A girl sits on a bench and reads a book.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "قريب من البوابة.",
+  "topic": "Reading: Park (A1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016413",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "A group of students started a clean-up _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many people in our city throw rubbish in the street. Last month, a group of students started a clean-up campaign. Every Friday they collect bottles and bags from the parks. They also make posters to explain why we should not litter.",
+  "options": [
+   "trip",
+   "party",
+   "lesson",
+   "campaign"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حملة تنظيف.",
+  "topic": "Reading: Environment (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016414",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When do they collect rubbish?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many people in our city throw rubbish in the street. Last month, a group of students started a clean-up campaign. Every Friday they collect bottles and bags from the parks. They also make posters to explain why we should not litter.",
+  "options": [
+   "Once a month",
+   "Every Friday",
+   "Every day",
+   "Every Sunday"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "كل جمعة.",
+  "topic": "Reading: Environment (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016415",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What else do they make?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Many people in our city throw rubbish in the street. Last month, a group of students started a clean-up campaign. Every Friday they collect bottles and bags from the parks. They also make posters to explain why we should not litter.",
+  "options": [
+   "Posters",
+   "Bags",
+   "Films",
+   "Songs"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بوسترات.",
+  "topic": "Reading: Environment (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016416",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The students started the campaign last year.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Many people in our city throw rubbish in the street. Last month, a group of students started a clean-up campaign. Every Friday they collect bottles and bags from the parks. They also make posters to explain why we should not litter.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الشهر اللي فات.",
+  "topic": "Reading: Environment (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016417",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "People gather for _____ when the sun sets.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ramadan is a special month for Muslims. People fast from sunrise to sunset and gather with their families for iftar when the sun sets. In Egyptian streets, children carry colourful lanterns called fanous, and the whole city feels cheerful at night.",
+  "options": [
+   "lunch",
+   "iftar",
+   "work",
+   "school"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الإفطار.",
+  "topic": "Reading: Festival (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016418",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What do children carry?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ramadan is a special month for Muslims. People fast from sunrise to sunset and gather with their families for iftar when the sun sets. In Egyptian streets, children carry colourful lanterns called fanous, and the whole city feels cheerful at night.",
+  "options": [
+   "Flags",
+   "Balloons",
+   "Drums",
+   "Colourful lanterns"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "فوانيس.",
+  "topic": "Reading: Festival (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016419",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When do people fast?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Ramadan is a special month for Muslims. People fast from sunrise to sunset and gather with their families for iftar when the sun sets. In Egyptian streets, children carry colourful lanterns called fanous, and the whole city feels cheerful at night.",
+  "options": [
+   "Only in the morning",
+   "After sunset",
+   "All night",
+   "From sunrise to sunset"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "من الشروق للغروب.",
+  "topic": "Reading: Festival (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016420",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: The text says the city feels sad at night.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Ramadan is a special month for Muslims. People fast from sunrise to sunset and gather with their families for iftar when the sun sets. In Egyptian streets, children carry colourful lanterns called fanous, and the whole city feels cheerful at night.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النص بيقول cheerful.",
+  "topic": "Reading: Festival (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016421",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "Dina wants to become a _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Dina wants to become a vet because she loves animals. She volunteers at an animal shelter every Sunday, where she feeds the dogs and helps clean the cages. To become a vet, she knows she must study hard at school and then go to university for six years.",
+  "options": [
+   "pilot",
+   "vet",
+   "judge",
+   "chef"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "طبيبة بيطرية.",
+  "topic": "Reading: Career (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016422",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "What does she do every Sunday?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Dina wants to become a vet because she loves animals. She volunteers at an animal shelter every Sunday, where she feeds the dogs and helps clean the cages. To become a vet, she knows she must study hard at school and then go to university for six years.",
+  "options": [
+   "Visits the zoo",
+   "Volunteers at an animal shelter",
+   "Has a piano lesson",
+   "Goes to university"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "متطوعة في ملجأ.",
+  "topic": "Reading: Career (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016423",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How long is university?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Dina wants to become a vet because she loves animals. She volunteers at an animal shelter every Sunday, where she feeds the dogs and helps clean the cages. To become a vet, she knows she must study hard at school and then go to university for six years.",
+  "options": [
+   "Four years",
+   "Ten years",
+   "Six years",
+   "Two years"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "6 سنين.",
+  "topic": "Reading: Career (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016424",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Dina dislikes animals.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Dina wants to become a vet because she loves animals. She volunteers at an animal shelter every Sunday, where she feeds the dogs and helps clean the cages. To become a vet, she knows she must study hard at school and then go to university for six years.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بتحب الحيوانات.",
+  "topic": "Reading: Career (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016425",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "A2",
+  "prompt": "The library is open every day except _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The new city library is open every day except Friday. Members can use computers for an hour and borrow films as well as books. There is also a children's corner with story time every Saturday at ten.",
+  "options": [
+   "Sunday",
+   "Saturday",
+   "Monday",
+   "Friday"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ما عدا الجمعة.",
+  "topic": "Reading: Library (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016426",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "How long can members use computers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The new city library is open every day except Friday. Members can use computers for an hour and borrow films as well as books. There is also a children's corner with story time every Saturday at ten.",
+  "options": [
+   "Half an hour",
+   "Two hours",
+   "All day",
+   "An hour"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ساعة.",
+  "topic": "Reading: Library (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016427",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "A2",
+  "prompt": "When is story time?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The new city library is open every day except Friday. Members can use computers for an hour and borrow films as well as books. There is also a children's corner with story time every Saturday at ten.",
+  "options": [
+   "Saturday at four",
+   "Saturday at ten",
+   "Friday at ten",
+   "Sunday at ten"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "السبت 10.",
+  "topic": "Reading: Library (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016428",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "A2",
+  "prompt": "True or False: Members can borrow only books.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The new city library is open every day except Friday. Members can use computers for an hour and borrow films as well as books. There is also a children's corner with story time every Saturday at ten.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "كتب وأفلام.",
+  "topic": "Reading: Library (A2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016429",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Mahmoud's tasks were _____, such as delivering flowers.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Over the summer, Mahmoud volunteered at a local hospital. His tasks were simple: he delivered flowers, helped patients fill in forms and kept the waiting room tidy. Although he did not earn any money, he learned a great deal about teamwork, and he is now considering a career in medicine.",
+  "options": [
+   "dangerous",
+   "difficult",
+   "secret",
+   "simple"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "بسيطة.",
+  "topic": "Reading: Volunteering (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016430",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What did he learn?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Over the summer, Mahmoud volunteered at a local hospital. His tasks were simple: he delivered flowers, helped patients fill in forms and kept the waiting room tidy. Although he did not earn any money, he learned a great deal about teamwork, and he is now considering a career in medicine.",
+  "options": [
+   "How to drive",
+   "How to cook",
+   "How to teach",
+   "A great deal about teamwork"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "التعاون.",
+  "topic": "Reading: Volunteering (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016431",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What is he now considering?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Over the summer, Mahmoud volunteered at a local hospital. His tasks were simple: he delivered flowers, helped patients fill in forms and kept the waiting room tidy. Although he did not earn any money, he learned a great deal about teamwork, and he is now considering a career in medicine.",
+  "options": [
+   "A second hospital job",
+   "A job in a shop",
+   "A career in medicine",
+   "A trip abroad"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الطب.",
+  "topic": "Reading: Volunteering (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016432",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Mahmoud was paid for his work.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Over the summer, Mahmoud volunteered at a local hospital. His tasks were simple: he delivered flowers, helped patients fill in forms and kept the waiting room tidy. Although he did not earn any money, he learned a great deal about teamwork, and he is now considering a career in medicine.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الدليل في النص: \"did not earn any money\".",
+  "topic": "Reading: Volunteering (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016433",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Living alone was _____ than she expected.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When Rana moved into her first flat, she discovered that living alone was harder than she expected. She had to cook, pay bills and fix small problems herself. After a few months, however, she felt proud of her independence and said she would never go back to living with her parents.",
+  "options": [
+   "cheaper",
+   "shorter",
+   "harder",
+   "easier"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أصعب.",
+  "topic": "Reading: Home (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016434",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "How did she feel after a few months?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When Rana moved into her first flat, she discovered that living alone was harder than she expected. She had to cook, pay bills and fix small problems herself. After a few months, however, she felt proud of her independence and said she would never go back to living with her parents.",
+  "options": [
+   "Proud of her independence",
+   "Bored",
+   "Angry",
+   "Lonely"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "فخورة.",
+  "topic": "Reading: Home (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016435",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Which task is mentioned?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "When Rana moved into her first flat, she discovered that living alone was harder than she expected. She had to cook, pay bills and fix small problems herself. After a few months, however, she felt proud of her independence and said she would never go back to living with her parents.",
+  "options": [
+   "Paying bills",
+   "Painting walls",
+   "Teaching",
+   "Gardening"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "دفع الفواتير.",
+  "topic": "Reading: Home (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016436",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: Rana wants to return to her parents' house.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "When Rana moved into her first flat, she discovered that living alone was harder than she expected. She had to cook, pay bills and fix small problems herself. After a few months, however, she felt proud of her independence and said she would never go back to living with her parents.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قالت مش هترجع.",
+  "topic": "Reading: Home (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016437",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "Online shopping is popular because it is _____.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Online shopping has become very popular because it is convenient. You can compare prices in seconds and have items delivered to your door. However, you cannot try clothes on, so many shoppers return items that do not fit. Reading other customers' reviews can help you avoid disappointment.",
+  "options": [
+   "free",
+   "noisy",
+   "convenient",
+   "slow"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "مريحة.",
+  "topic": "Reading: Shopping online (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016438",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Why do many shoppers return clothes?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Online shopping has become very popular because it is convenient. You can compare prices in seconds and have items delivered to your door. However, you cannot try clothes on, so many shoppers return items that do not fit. Reading other customers' reviews can help you avoid disappointment.",
+  "options": [
+   "They arrive late",
+   "They are dirty",
+   "They do not fit",
+   "They are too cheap"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "مش مظبوطة.",
+  "topic": "Reading: Shopping online (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016439",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What can help avoid disappointment?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Online shopping has become very popular because it is convenient. You can compare prices in seconds and have items delivered to your door. However, you cannot try clothes on, so many shoppers return items that do not fit. Reading other customers' reviews can help you avoid disappointment.",
+  "options": [
+   "Reading reviews",
+   "Using cash",
+   "Shopping at night",
+   "Asking friends"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مراجعات العملاء.",
+  "topic": "Reading: Shopping online (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016440",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The text says you can try clothes on before buying online.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Online shopping has become very popular because it is convenient. You can compare prices in seconds and have items delivered to your door. However, you cannot try clothes on, so many shoppers return items that do not fit. Reading other customers' reviews can help you avoid disappointment.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "مش ممكن.",
+  "topic": "Reading: Shopping online (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016441",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B1",
+  "prompt": "The museum displays thousands of _____ objects.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Grand Egyptian Museum near the pyramids is one of the largest museums in the world. It displays thousands of ancient objects, including the complete collection of Tutankhamun. Visitors can see the huge statue of Ramses II in the main hall and enjoy a view of the pyramids from the terrace.",
+  "options": [
+   "modern",
+   "broken",
+   "ancient",
+   "plastic"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "قديمة.",
+  "topic": "Reading: Museums (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016442",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "Whose complete collection is displayed?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Grand Egyptian Museum near the pyramids is one of the largest museums in the world. It displays thousands of ancient objects, including the complete collection of Tutankhamun. Visitors can see the huge statue of Ramses II in the main hall and enjoy a view of the pyramids from the terrace.",
+  "options": [
+   "Tutankhamun's",
+   "Akhenaten's",
+   "Ramses II's",
+   "Cleopatra's"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "توت عنخ آمون.",
+  "topic": "Reading: Museums (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016443",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B1",
+  "prompt": "What can visitors see from the terrace?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The Grand Egyptian Museum near the pyramids is one of the largest museums in the world. It displays thousands of ancient objects, including the complete collection of Tutankhamun. Visitors can see the huge statue of Ramses II in the main hall and enjoy a view of the pyramids from the terrace.",
+  "options": [
+   "The airport",
+   "The sea",
+   "The pyramids",
+   "The Nile"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الأهرامات.",
+  "topic": "Reading: Museums (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016444",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B1",
+  "prompt": "True or False: The museum is far from the pyramids.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The Grand Egyptian Museum near the pyramids is one of the largest museums in the world. It displays thousands of ancient objects, including the complete collection of Tutankhamun. Visitors can see the huge statue of Ramses II in the main hall and enjoy a view of the pyramids from the terrace.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "قريب.",
+  "topic": "Reading: Museums (B1)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016445",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does the passage say about the brain during sleep?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Contrary to popular belief, the brain does not simply switch off during sleep. Instead, it cycles through distinct stages, during one of which memories are consolidated and unnecessary information is discarded. This explains why students who sleep after studying often recall more than those who stay up all night cramming.",
+  "options": [
+   "It remains active in stages",
+   "It stops dreaming",
+   "It switches off",
+   "It forgets everything"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "بتمر بمراحل.",
+  "topic": "Reading: Sleep science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016446",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What happens in one stage?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Contrary to popular belief, the brain does not simply switch off during sleep. Instead, it cycles through distinct stages, during one of which memories are consolidated and unnecessary information is discarded. This explains why students who sleep after studying often recall more than those who stay up all night cramming.",
+  "options": [
+   "Muscles grow",
+   "Memories are consolidated",
+   "Eyes close",
+   "Hunger rises"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "تثبيت الذكريات.",
+  "topic": "Reading: Sleep science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016447",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Students who sleep after studying often _____ more.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Contrary to popular belief, the brain does not simply switch off during sleep. Instead, it cycles through distinct stages, during one of which memories are consolidated and unnecessary information is discarded. This explains why students who sleep after studying often recall more than those who stay up all night cramming.",
+  "options": [
+   "forget",
+   "recall",
+   "copy",
+   "skip"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "يتذكروا أكتر.",
+  "topic": "Reading: Sleep science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016448",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The passage supports staying up all night to study.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Contrary to popular belief, the brain does not simply switch off during sleep. Instead, it cycles through distinct stages, during one of which memories are consolidated and unnecessary information is discarded. This explains why students who sleep after studying often recall more than those who stay up all night cramming.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النوم أفضل من السهر.",
+  "topic": "Reading: Sleep science (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016449",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What is the hidden cost of fast fashion?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Fast fashion allows consumers to buy trendy clothes at very low prices, but the real cost is hidden. Garments are often produced in factories with poor working conditions, and the industry is responsible for a significant share of global water pollution. Some shoppers are therefore turning to second-hand shops and buying fewer, higher-quality items.",
+  "options": [
+   "Higher taxes",
+   "Slower delivery",
+   "Bad design",
+   "Poor conditions and pollution"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "ظروف عمل سيئة وتلوث.",
+  "topic": "Reading: Fashion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016450",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Some shoppers buy fewer, higher-_____ items.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Fast fashion allows consumers to buy trendy clothes at very low prices, but the real cost is hidden. Garments are often produced in factories with poor working conditions, and the industry is responsible for a significant share of global water pollution. Some shoppers are therefore turning to second-hand shops and buying fewer, higher-quality items.",
+  "options": [
+   "sized",
+   "quality",
+   "priced",
+   "coloured"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "جودة.",
+  "topic": "Reading: Fashion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016451",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Where are some shoppers turning?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Fast fashion allows consumers to buy trendy clothes at very low prices, but the real cost is hidden. Garments are often produced in factories with poor working conditions, and the industry is responsible for a significant share of global water pollution. Some shoppers are therefore turning to second-hand shops and buying fewer, higher-quality items.",
+  "options": [
+   "Factories",
+   "Airports",
+   "Second-hand shops",
+   "Banks"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "محلات مستعملة.",
+  "topic": "Reading: Fashion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016452",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: Fast fashion clothes are usually expensive.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Fast fashion allows consumers to buy trendy clothes at very low prices, but the real cost is hidden. Garments are often produced in factories with poor working conditions, and the industry is responsible for a significant share of global water pollution. Some shoppers are therefore turning to second-hand shops and buying fewer, higher-quality items.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "رخيصة.",
+  "topic": "Reading: Fashion (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016453",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "How are cyclists protected?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Copenhagen has transformed itself into one of the world's most cycle-friendly cities. Dedicated lanes separate cyclists from cars, traffic lights are timed for bicycles, and nearly half of all commuters now pedal to work. The authorities argue that the investment has paid for itself through lower healthcare costs and less congestion.",
+  "options": [
+   "By police",
+   "By helmets only",
+   "By bridges",
+   "By dedicated lanes"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "حارات مخصصة.",
+  "topic": "Reading: Cities (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016454",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do the authorities claim?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Copenhagen has transformed itself into one of the world's most cycle-friendly cities. Dedicated lanes separate cyclists from cars, traffic lights are timed for bicycles, and nearly half of all commuters now pedal to work. The authorities argue that the investment has paid for itself through lower healthcare costs and less congestion.",
+  "options": [
+   "The investment has paid for itself",
+   "It is unfinished",
+   "It was a waste",
+   "It was free"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الاستثمار عوض تكلفته.",
+  "topic": "Reading: Cities (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016455",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Traffic lights are _____ for bicycles.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Copenhagen has transformed itself into one of the world's most cycle-friendly cities. Dedicated lanes separate cyclists from cars, traffic lights are timed for bicycles, and nearly half of all commuters now pedal to work. The authorities argue that the investment has paid for itself through lower healthcare costs and less congestion.",
+  "options": [
+   "timed",
+   "painted",
+   "hidden",
+   "removed"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "مظبوطة التوقيت.",
+  "topic": "Reading: Cities (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016456",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: About half of commuters cycle to work.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Copenhagen has transformed itself into one of the world's most cycle-friendly cities. Dedicated lanes separate cyclists from cars, traffic lights are timed for bicycles, and nearly half of all commuters now pedal to work. The authorities argue that the investment has paid for itself through lower healthcare costs and less congestion.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "قرابة النص.",
+  "topic": "Reading: Cities (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016457",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do advertisers understand?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Advertisers have long understood that people buy emotions, not products. A famous soft-drink campaign rarely mentions flavour; instead it shows friends laughing together. By associating the brand with happiness, the company hopes that viewers will reach for its product the next time they want to feel the same way.",
+  "options": [
+   "Flavour sells",
+   "Prices decide",
+   "People hate ads",
+   "People buy emotions"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "المشاعر.",
+  "topic": "Reading: Marketing (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016458",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What does the campaign show?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Advertisers have long understood that people buy emotions, not products. A famous soft-drink campaign rarely mentions flavour; instead it shows friends laughing together. By associating the brand with happiness, the company hopes that viewers will reach for its product the next time they want to feel the same way.",
+  "options": [
+   "Sports stars",
+   "Factories",
+   "Friends laughing",
+   "Fruit"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "أصحاب بيضحكوا.",
+  "topic": "Reading: Marketing (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016459",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "The company wants to _____ its brand with happiness.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "Advertisers have long understood that people buy emotions, not products. A famous soft-drink campaign rarely mentions flavour; instead it shows friends laughing together. By associating the brand with happiness, the company hopes that viewers will reach for its product the next time they want to feel the same way.",
+  "options": [
+   "associate",
+   "sell",
+   "separate",
+   "hide"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "يربط.",
+  "topic": "Reading: Marketing (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016460",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: The campaign focuses on flavour.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "Advertisers have long understood that people buy emotions, not products. A famous soft-drink campaign rarely mentions flavour; instead it shows friends laughing together. By associating the brand with happiness, the company hopes that viewers will reach for its product the next time they want to feel the same way.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "نادرا يذكر الطعم.",
+  "topic": "Reading: Marketing (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016461",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Why do conservationists applaud beavers?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The reintroduction of beavers to parts of Britain has divided opinion. Conservationists applaud them for creating wetlands that support other species and reduce flooding downstream. Some landowners, however, complain that beavers fell valuable trees and flood farmland, and they want compensation for the damage.",
+  "options": [
+   "They attract tourists only",
+   "They create wetlands",
+   "They eat pests",
+   "They clean rivers"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيعملوا أراضي رطبة.",
+  "topic": "Reading: Wildlife (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016462",
+  "skill": "reading",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "What do landowners want?",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The reintroduction of beavers to parts of Britain has divided opinion. Conservationists applaud them for creating wetlands that support other species and reduce flooding downstream. Some landowners, however, complain that beavers fell valuable trees and flood farmland, and they want compensation for the damage.",
+  "options": [
+   "Fences only",
+   "Bigger farms",
+   "More beavers",
+   "Compensation"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "تعويض.",
+  "topic": "Reading: Wildlife (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016463",
+  "skill": "reading",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Beavers _____ valuable trees.",
+  "promptAr": "اقرأ النص ثم أجب عن السؤال.",
+  "passage": "The reintroduction of beavers to parts of Britain has divided opinion. Conservationists applaud them for creating wetlands that support other species and reduce flooding downstream. Some landowners, however, complain that beavers fell valuable trees and flood farmland, and they want compensation for the damage.",
+  "options": [
+   "plant",
+   "fell",
+   "paint",
+   "count"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بيقطعوا.",
+  "topic": "Reading: Wildlife (B2)",
+  "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-read-016464",
+  "skill": "reading",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "True or False: Everyone welcomes the beavers.",
+  "promptAr": "اقرأ النص ثم قرر إذا كانت الجملة صحيحة أم خاطئة.",
+  "passage": "The reintroduction of beavers to parts of Britain has divided opinion. Conservationists applaud them for creating wetlands that support other species and reduce flooding downstream. Some landowners, however, complain that beavers fell valuable trees and flood farmland, and they want compensation for the damage.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الرأي منقسم.",
+  "topic": "Reading: Wildlife (B2)",
+  "source": "worker-d-reading-listening"
  }
 ]
