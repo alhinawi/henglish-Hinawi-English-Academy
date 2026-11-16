@@ -27,6 +27,7 @@ export type PageRoute =
   | 'exams'
   | 'practice'
   | 'my-learning'
+  | 'profile'
   | 'leaderboard'
   | 'admin'
   | 'lesson'
