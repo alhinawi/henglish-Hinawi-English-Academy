@@ -6,7 +6,6 @@ import {
   AchievementBadge,
 } from "../types";
 import { playSound, fireCelebration } from "../utils/audio";
-import { FUTURE_PERFECT_LESSONS } from "../data/futurePerfectCourse";
 import {
   CEFR_LEVELS,
   CEFR_LABELS_AR,
@@ -67,19 +66,19 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       id: "grammar",
       title: "أكاديمية الجرامر",
       titleEn: "Grammar Academy",
-      desc: "منهج القواعد المتكامل: أزمنة المضارع والماضي والمستقبل (بما فيها ماستر كلاس المستقبل التام الشامل) وحالات الشرط والقواعد المتقدمة.",
+      desc: "شرح وتدريبات على أزمنة المضارع والماضي والمستقبل، وحالات الشرط والتراكيب المتقدمة.",
       icon: GraduationCap,
       route: "grammar" as PageRoute,
       color: "from-[#41e7ff]/20 to-[#ffd166]/10",
       badge: "A1 - C1 • شامل",
-      lessonsCount: "أكثر من ٥٠ قاعدة + ماستر كلاس",
+      lessonsCount: "قواعد وأمثلة وتدريبات",
       accentColor: "#41e7ff",
     },
     {
       id: "vocabulary",
       title: "أكاديمية الكلمات والأفعال",
       titleEn: "Vocabulary Academy",
-      desc: "أكثر من ١٥٠٠ كلمة مصنفة بالمستوى والموضوع، مع تدريبات تصريف الأفعال الشاذة (V3).",
+      desc: "كلمات وتعبيرات بالمستوى والموضوع، مع المعاني والأمثلة وتدريبات الاستخدام.",
       icon: BookA,
       route: "vocabulary" as PageRoute,
       color: "from-[#c4ff55]/20 to-[#41e7ff]/10",
@@ -160,17 +159,6 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
       accentColor: "#ff4f9a",
     },
   ];
-
-  // Real future-perfect course progress for the "continue learning" card
-  const fpLessonIds = FUTURE_PERFECT_LESSONS.map((l) => l.id);
-  const fpCompleted = fpLessonIds.filter((id) =>
-    (progress.completedLessons || []).includes(id),
-  );
-  const nextFpLesson =
-    FUTURE_PERFECT_LESSONS.find((l) => !fpCompleted.includes(l.id)) || null;
-  const fpProgressPercent = Math.round(
-    (fpCompleted.length / Math.max(1, fpLessonIds.length)) * 100,
-  );
 
   // Real quiz stats from actual recorded scores
   const quizEntries = Object.entries(progress.quizScores || {});
@@ -279,35 +267,23 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
 
             <div className="space-y-1">
               <div className="text-base font-black text-white">
-                المستقبل التام الشامل
+                اختار المهارة اللي محتاجها النهارده
               </div>
               <div className="text-xs text-[#b9b6d5]">
-                {nextFpLesson
-                  ? `الدرس ${String(nextFpLesson.number).padStart(2, "0")}: ${nextFpLesson.title}`
-                  : "أكملت كل دروس الكورس - راجع أكاديمية الجرامر"}
+                كلمات، استماع، محادثة، قراءة، كتابة، نطق وقواعد. ابدأ من مستواك.
               </div>
             </div>
 
-            <div dir="rtl" className="w-full bg-black/40 rounded-full h-2 overflow-hidden">
-              <div
-                className="h-full rounded-full bg-[#41e7ff]"
-                style={{ width: `${fpProgressPercent}%` }}
-              />
-            </div>
 
             <button
               onClick={() => {
                 playSound("click");
-                if (nextFpLesson) {
-                  onNavigate("lesson", nextFpLesson.id);
-                } else {
-                  onNavigate("courses/grammar");
-                }
+                onNavigate("courses");
               }}
               className="w-full py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer flex items-center justify-center gap-2 transition-transform hover:scale-[1.02]"
             >
               <Play className="w-4 h-4 fill-current" />
-              <span>استكمال الدرس الآن</span>
+              <span>استكشف مسارات التعلم</span>
             </button>
           </div>
         </div>

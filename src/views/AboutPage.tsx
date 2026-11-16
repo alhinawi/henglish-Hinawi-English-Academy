@@ -20,7 +20,7 @@ export const AboutPage: React.FC = () => {
 
         <div className="relative z-10 space-y-6">
           <div className="flex justify-center">
-            <Logo size="xl" />
+            <div className="sm:hidden"><Logo size="sm" /></div><div className="hidden sm:block"><Logo size="xl" /></div>
           </div>
           
           <h1 className="text-3xl sm:text-5xl font-black text-white">
@@ -28,25 +28,25 @@ export const AboutPage: React.FC = () => {
           </h1>
 
           <p className="text-base sm:text-lg text-[#dedbf4] max-w-2xl mx-auto leading-relaxed">
-            فلسفتنا بسيطة وعميقة في نفس الوقت: <span className="text-[#ffd166] font-bold">"Learn it. Use it. Own it."</span> — لا تكتفِ بحفظ القواعد للامتحان، بل افهم منطقها لتمتلك لغة إنجليزية طبيعية وواثقة مدى الحياة.
+            هناوي إنجلش منصة شاملة للغة كلها: كلمات وقواعد، استماع ومحادثة، قراءة وكتابة ونطق. اتعلم وافهم، وبعدها استخدم اللغة في الأفلام والألعاب والمواقف والعالم ثلاثي الأبعاد، وقيس تقدمك بالاختبارات. <span dir="ltr" className="text-[#ffd166] font-bold inline-block">Learn it. Use it. Own it.</span>
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             <span className="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/15 text-xs font-bold text-[#c4ff55] flex items-center gap-1.5">
               <Users className="w-3.5 h-3.5" />
-              أكثر من 15,000 طالب متدرب
+              شرح بالمصري
             </span>
             <span className="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/15 text-xs font-bold text-[#41e7ff] flex items-center gap-1.5">
               <Award className="w-3.5 h-3.5" />
-              تقييم 4.95 / 5.0 نجوم
+              ممارسة على مهارات مختلفة
             </span>
             <span className="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/15 text-xs font-bold text-[#ffd166] flex items-center gap-1.5">
               <BookOpen className="w-3.5 h-3.5" />
-              ١٦ قاعدة جرامر كاملة
+              كلمات وقواعد ومهارات
             </span>
             <span className="px-3.5 py-1.5 rounded-xl bg-white/10 border border-white/15 text-xs font-bold text-[#ff4f9a] flex items-center gap-1.5">
               <GraduationCap className="w-3.5 h-3.5" />
-              شهادات إتقان معتمدة
+              اختبارات ومتابعة تقدم
             </span>
           </div>
         </div>
@@ -66,7 +66,7 @@ export const AboutPage: React.FC = () => {
           <div className="p-5 space-y-2">
             <h4 className="font-bold text-white text-base">محاضرات أكاديمية تفاعلية</h4>
             <p className="text-xs text-[#b9b6d5] leading-relaxed">
-              شرح مبسط يعتمد على الخطوط الزمنية والصور الحية لإيصال أدق تفاصيل القواعد.
+              أمثلة وصور وحوارات تقربلك المعنى، وتربط الكلمات والقواعد باستخدامها في الحياة.
             </p>
           </div>
         </div>
@@ -147,7 +147,7 @@ export const AboutPage: React.FC = () => {
         </h2>
 
         <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
-          لاحظنا على مدار سنوات تدريس اللغة الإنجليزية أن الكثير من الطلاب يحفظون الأزمنة المعقدة مثل <span className="en font-bold text-[#41e7ff]">Future Perfect</span> كمعادلة صماء (will + have + V3)، لكن بمجرد أن يُطلب منهم التحدث أو كتابة إيميل رسمي يتلعثمون ويقعون في فخاخ مثل <span className="en text-[#ff4f9a]">will has</span> أو التكرار الخاطئ لـ <span className="en text-[#ff4f9a]">will</span> في جملة <span className="en text-[#41e7ff]">by the time</span>.
+          حفظ القاعدة لوحده مش كفاية، وحفظ كلمات من غير سياق مش بيخلي الكلام أسهل. عشان كده بنجمع الفهم والممارسة: تسمع وتقرا، تتكلم وتكتب، وتراجع اللي اتعلمته في مواقف وتحديات متنوعة.
         </p>
 
         <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed">
