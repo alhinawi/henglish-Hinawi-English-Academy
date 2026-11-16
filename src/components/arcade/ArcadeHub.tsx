@@ -25,7 +25,6 @@ import { useLanguage } from '../../i18n/LanguageContext';
 interface ArcadeEntry {
   id: string;
   title: string;
-  icon: string;
   blurb: string;
   hot?: boolean;
   render: (onExit: () => void) => React.ReactNode;
@@ -34,15 +33,15 @@ interface ArcadeEntry {
 const GAMES: ArcadeEntry[] = [
   ...PUZZLE_GAMES.map(g => ({ ...g, blurb: g.tagline, render: (x: () => void) => <PuzzleGame id={g.id} onExit={x}/> })),
   ...LAB_GAMES.map(g => ({ ...g, blurb: g.tagline, hot: g.id === 'daily-quest' || g.id === 'boss-run', render: (x: () => void) => <WordLabGame id={g.id} onExit={x}/> })),
-  { id: 'word-sprint', title: 'ah.gameWordSprint', icon: '⚡', blurb: 'ah.gameWordSprintBlurb', hot: true, render: (x) => <WordSprintGame onExit={x} /> },
-  { id: 'sentence-scramble', title: 'ah.gameSentenceScramble', icon: '🧩', blurb: 'ah.gameSentenceScrambleBlurb' , render: (x) => <SentenceScrambleGame onExit={x} /> },
-  { id: 'word-match', title: 'ah.gameWordMatch', icon: '🔗', blurb: 'ah.gameWordMatchBlurb', render: (x) => <WordMatchGame onExit={x} /> },
-  { id: 'true-false', title: 'ah.gameTrueFalse', icon: '✅', blurb: 'ah.gameTrueFalseBlurb', render: (x) => <TrueFalseGame onExit={x} /> },
-  { id: 'gap-fill', title: 'ah.gameGapFill', icon: '🎬', blurb: 'ah.gameGapFillBlurb', render: (x) => <GapFillGame onExit={x} /> },
-  { id: 'listening-challenge', title: 'ah.gameListeningChallenge', icon: '🎧', blurb: 'ah.gameListeningChallengeBlurb', render: (x) => <ListeningChallengeGame onExit={x} /> },
-  { id: 'spelling-dash', title: 'ah.gameSpellingDash', icon: '⌨️', blurb: 'ah.gameSpellingDashBlurb', render: (x) => <SpellingDashGame onExit={x} /> },
-  { id: 'movie-memory', title: 'ah.gameMovieMemory', icon: '🃏', blurb: 'ah.gameMovieMemoryBlurb', render: (x) => <MovieMemoryGame onExit={x} /> },
-  { id: 'word-race', title: 'ah.gameWordRace', icon: '🏁', blurb: 'ah.gameWordRaceBlurb', render: (x) => <WordRaceGame onExit={x} /> },
+  { id: 'word-sprint', title: 'ah.gameWordSprint', blurb: 'ah.gameWordSprintBlurb', hot: true, render: (x) => <WordSprintGame onExit={x} /> },
+  { id: 'sentence-scramble', title: 'ah.gameSentenceScramble', blurb: 'ah.gameSentenceScrambleBlurb' , render: (x) => <SentenceScrambleGame onExit={x} /> },
+  { id: 'word-match', title: 'ah.gameWordMatch', blurb: 'ah.gameWordMatchBlurb', render: (x) => <WordMatchGame onExit={x} /> },
+  { id: 'true-false', title: 'ah.gameTrueFalse', blurb: 'ah.gameTrueFalseBlurb', render: (x) => <TrueFalseGame onExit={x} /> },
+  { id: 'gap-fill', title: 'ah.gameGapFill', blurb: 'ah.gameGapFillBlurb', render: (x) => <GapFillGame onExit={x} /> },
+  { id: 'listening-challenge', title: 'ah.gameListeningChallenge', blurb: 'ah.gameListeningChallengeBlurb', render: (x) => <ListeningChallengeGame onExit={x} /> },
+  { id: 'spelling-dash', title: 'ah.gameSpellingDash', blurb: 'ah.gameSpellingDashBlurb', render: (x) => <SpellingDashGame onExit={x} /> },
+  { id: 'movie-memory', title: 'ah.gameMovieMemory', blurb: 'ah.gameMovieMemoryBlurb', render: (x) => <MovieMemoryGame onExit={x} /> },
+  { id: 'word-race', title: 'ah.gameWordRace', blurb: 'ah.gameWordRaceBlurb', render: (x) => <WordRaceGame onExit={x} /> },
 ];
 
 export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void }> = ({ onPlayingChange }) => {
@@ -124,7 +123,7 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
         })}
       </div>
 
-      <section className="rounded-3xl border border-[#ffd166]/20 bg-[#121124] p-4 space-y-3"><h2 className="font-black text-white">🏆 {t('ah.weeklyTitle')}</h2><p className="text-xs text-[#8f8cb0]">{t('ah.weeklyNote')}</p>{progress.history.filter(r => Date.now() - r.at < 7 * 86400000).sort((a,b) => b.xp - a.xp).slice(0,5).map((r,i) => <div key={r.at + '-' + i} className="flex justify-between border-t border-white/5 pt-2 text-xs text-[#b9b6d5]"><span>{i+1}. {t(GAMES.find(g => g.id === r.id)?.title || r.id)}</span><span dir="ltr">{r.xp} XP · {new Date(r.at).toLocaleDateString('en-GB')}</span></div>)}{!progress.history.length && <p className="text-sm text-[#b9b6d5]">{t('ah.emptyHistory')}</p>}</section>
+      <section className="rounded-3xl border border-[#ffd166]/20 bg-[#121124] p-4 space-y-3"><h2 className="font-black text-white flex items-center gap-1.5"><Trophy className="w-4 h-4 text-[#ffd166]" /> {t('ah.weeklyTitle')}</h2><p className="text-xs text-[#8f8cb0]">{t('ah.weeklyNote')}</p>{progress.history.filter(r => Date.now() - r.at < 7 * 86400000).sort((a,b) => b.xp - a.xp).slice(0,5).map((r,i) => <div key={r.at + '-' + i} className="flex justify-between border-t border-white/5 pt-2 text-xs text-[#b9b6d5]"><span>{i+1}. {t(GAMES.find(g => g.id === r.id)?.title || r.id)}</span><span dir="ltr">{r.xp} XP · {new Date(r.at).toLocaleDateString('en-GB')}</span></div>)}{!progress.history.length && <p className="text-sm text-[#b9b6d5]">{t('ah.emptyHistory')}</p>}</section>
       <p className="text-center text-[10px] text-[#5a5878] flex items-center justify-center gap-1">
         <Gamepad2 className="w-3 h-3" /> {t('ah.footerNote')}
       </p>

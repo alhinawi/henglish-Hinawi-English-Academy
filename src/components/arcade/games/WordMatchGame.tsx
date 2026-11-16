@@ -8,7 +8,6 @@ import { playSound } from '../../../utils/audio';
 const META: ArcadeGameMeta = {
   id: 'word-match',
   title: 'اقتران الكلمات',
-  icon: '🔗',
   tagline: '8 كلمات إنجليزية قصادهم معانيهم بالعربي متلخبطين.. وصّل كل كلمة بمعناها بأقل غلطات.',
 };
 
