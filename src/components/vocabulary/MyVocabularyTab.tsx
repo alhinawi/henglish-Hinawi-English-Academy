@@ -44,6 +44,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   const [isReviewMode, setIsReviewMode] = useState(false);
   const [reviewQueue, setReviewQueue] = useState<string[]>([]);
   const [reviewedCount, setReviewedCount] = useState(0);
+  const [saveError, setSaveError] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
 
   // Inspector modal state
@@ -84,31 +85,33 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   const handleRate = (rating: ReviewRating) => {
     if (!currentReviewItem) return;
 
-    if (rating >= 3) {
-      playSound('correct');
-      if (rating === 5) fireCelebration();
-    } else {
-      playSound('wrong');
-    }
-
-    const updated = rateSavedWord(currentReviewItem.word, rating);
-    setSavedWords(updated);
-    setIsFlipped(false);
-    setReviewQueue(queue => queue.slice(1));
-    setReviewedCount(count => count + 1);
+    setSaveError(false);
+    try {
+      const updated = rateSavedWord(currentReviewItem.word, rating);
+      if (rating >= 3) { playSound('correct'); if (rating === 5) fireCelebration(); }
+      else playSound('wrong');
+      setSavedWords(updated);
+      setIsFlipped(false);
+      setReviewQueue(queue => queue.slice(1));
+      setReviewedCount(count => count + 1);
+    } catch { setSaveError(true); playSound('wrong'); }
   };
 
   const handleRemove = (word: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    playSound('click');
-    const updated = removeSavedWord(word);
-    setSavedWords(updated);
-    setReviewQueue(queue => queue.filter(item => item !== word));
-    if (currentReviewItem?.word === word) setIsFlipped(false);
+    setSaveError(false);
+    try {
+      playSound('click');
+      const updated = removeSavedWord(word);
+      setSavedWords(updated);
+      setReviewQueue(queue => queue.filter(item => item !== word));
+      if (currentReviewItem?.word === word) setIsFlipped(false);
+    } catch { setSaveError(true); playSound('wrong'); }
   };
 
   return (
     <div className="space-y-8 text-right">
+      {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
       {/* Top Stats Overview */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
         <div className="glass-panel p-4 rounded-2xl border border-white/10 space-y-1">

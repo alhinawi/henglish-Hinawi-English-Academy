@@ -479,61 +479,71 @@ export function getSavedWords(): SavedWordItem[] {
   if (typeof window === 'undefined') return [];
   try {
     const raw = localStorage.getItem(SAVED_WORDS_STORAGE_KEY);
-    return raw ? JSON.parse(raw) : [];
+    const words = raw ? JSON.parse(raw) : [];
+    return Array.isArray(words) ? words.filter(w => w && typeof w.word === 'string' && w.entry) : [];
   } catch {
     return [];
   }
 }
 
-export function saveWord(entry: LexicalEntry, notes?: string): SavedWordItem[] {
-  const words = getSavedWords();
-  const existingIdx = words.findIndex(w => w.word.toLowerCase() === entry.headword.toLowerCase());
+export class VocabularyStorageError extends Error {
+  constructor() { super('Vocabulary storage unavailable'); this.name = 'VocabularyStorageError'; }
+}
 
-  if (existingIdx >= 0) {
-    if (notes !== undefined) {
-      words[existingIdx].notes = notes;
-    }
-  } else {
-    const newItem: SavedWordItem = {
-      id: `saved-${Date.now()}-${entry.id}`,
-      word: entry.headword,
-      entry,
-      savedAt: new Date().toISOString(),
-      notes,
-      isLearned: false,
-      repetitionCount: 0,
-      intervalDays: 1,
-      easeFactor: 2.5,
-      nextReviewAt: new Date().toISOString(),
-    };
-    words.unshift(newItem);
-  }
-
+function readWordsForMutation(): SavedWordItem[] {
   try {
-    localStorage.setItem(SAVED_WORDS_STORAGE_KEY, JSON.stringify(words));
-  } catch {
-    // ignore
+    const raw = localStorage.getItem(SAVED_WORDS_STORAGE_KEY);
+    const words = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(words) || words.some(w => !w || typeof w.word !== 'string' || !w.entry)) throw new Error();
+    return words;
+  } catch { throw new VocabularyStorageError(); }
+}
+
+function persistSavedWords(words: SavedWordItem[]): void {
+  try { localStorage.setItem(SAVED_WORDS_STORAGE_KEY, JSON.stringify(words)); }
+  catch { throw new VocabularyStorageError(); }
+}
+
+function saveWordEntries(items: Array<{ entry: LexicalEntry; notes?: string }>): SavedWordItem[] {
+  const words = readWordsForMutation();
+  for (const { entry, notes } of items) {
+    const existing = words.find(w => w.word.toLowerCase() === entry.headword.toLowerCase());
+    if (existing) {
+      if (notes !== undefined) existing.notes = notes;
+    } else {
+      words.unshift({
+        id: `saved-${Date.now()}-${entry.id}`, word: entry.headword, entry,
+        savedAt: new Date().toISOString(), notes, isLearned: false,
+        repetitionCount: 0, intervalDays: 1, easeFactor: 2.5,
+        nextReviewAt: new Date().toISOString(),
+      });
+    }
   }
-
-  // Sync to Supabase if authenticated
-  syncSavedWordToSupabase(entry.headword, notes);
-
+  // One local write for the entire operation; never report success or sync after failure.
+  persistSavedWords(words);
+  for (const { entry, notes } of items) syncSavedWordToSupabase(entry.headword, notes);
   return words;
 }
 
+export function saveWord(entry: LexicalEntry, notes?: string): SavedWordItem[] {
+  return saveWordEntries([{ entry, notes }]);
+}
+
+export function saveWords(entries: LexicalEntry[]): SavedWordItem[] {
+  return saveWordEntries(entries.map(entry => ({ entry })));
+}
+
 export function removeSavedWord(wordText: string): SavedWordItem[] {
-  let words = getSavedWords();
+  let words = readWordsForMutation();
   words = words.filter(w => w.word.toLowerCase() !== wordText.toLowerCase());
 
-  try {
-    localStorage.setItem(SAVED_WORDS_STORAGE_KEY, JSON.stringify(words));
-  } catch {
-    // ignore
-  }
+  persistSavedWords(words);
 
   // Remove from Supabase if connected
   if (supabase) {
-    supabase.from('dictionary_user_saved_words').delete().eq('word', wordText).then();
+    try {
+      supabase.from('dictionary_user_saved_words').delete().eq('word', wordText).then(() => {}, () => {});
+    } catch { /* A remote-sync failure does not undo the successful local write. */ }
   }
 
   return words;
@@ -545,7 +555,7 @@ export function isWordSaved(wordText: string): boolean {
 }
 
 export function rateSavedWord(wordText: string, rating: ReviewRating): SavedWordItem[] {
-  const words = getSavedWords();
+  const words = readWordsForMutation();
   const target = words.find(w => w.word.toLowerCase() === wordText.toLowerCase());
   if (!target) return words;
 
@@ -574,11 +584,7 @@ export function rateSavedWord(wordText: string, rating: ReviewRating): SavedWord
   target.lastReviewedAt = new Date().toISOString();
   target.isLearned = target.repetitionCount >= 3;
 
-  try {
-    localStorage.setItem(SAVED_WORDS_STORAGE_KEY, JSON.stringify(words));
-  } catch {
-    // ignore
-  }
+  persistSavedWords(words);
 
   return [...words];
 }
