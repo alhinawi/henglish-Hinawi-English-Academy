@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { MINIMAL_PAIRS_DATA, MinimalPair } from '../data/skillsAcademyData';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
 import {
   Volume2,
@@ -18,6 +19,7 @@ interface PronunciationAcademyPageProps {
 
 export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> = ({ onNavigate }) => {
   const [activePairIdx, setActivePairIdx] = useState(0);
+  const appText = useAppTextMap('skillsAcademyData');
   const [testedSound, setTestedSound] = useState<'A' | 'B' | null>(null);
   const [quizScore, setQuizScore] = useState<number | null>(null);
 
@@ -120,7 +122,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <span className="text-xs font-bold text-[#ffd166] en">{pair.soundA}</span>
             <div className="en text-4xl sm:text-5xl font-black text-white">{pair.wordA}</div>
             <div className="en text-sm font-mono text-[#41e7ff]">{pair.ipaA}</div>
-            <p className="text-sm font-bold text-[#c4ff55]">{pair.meaningArA}</p>
+            <p className="text-sm font-bold text-[#c4ff55]">{txText(appText, pair.meaningArA)}</p>
             
             <button
               onClick={() => speakEnglish(pair.wordA)}
@@ -136,7 +138,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <span className="text-xs font-bold text-[#ff8bb9] en">{pair.soundB}</span>
             <div className="en text-4xl sm:text-5xl font-black text-white">{pair.wordB}</div>
             <div className="en text-sm font-mono text-[#ff8bb9]">{pair.ipaB}</div>
-            <p className="text-sm font-bold text-[#c4ff55]">{pair.meaningArB}</p>
+            <p className="text-sm font-bold text-[#c4ff55]">{txText(appText, pair.meaningArB)}</p>
             
             <button
               onClick={() => speakEnglish(pair.wordB)}
@@ -152,7 +154,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         {/* Pronunciation Tip */}
         <div className="p-4 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-white space-y-1">
           <strong className="text-[#ffd166]">نصيحة الخبير لنطق هذا الزوج: </strong>
-          <span>{pair.tipAr}</span>
+          <span>{txText(appText, pair.tipAr)}</span>
         </div>
 
         {/* Ear Training Game */}
