@@ -2914,5 +2914,781 @@
   "explanationAr": "الفكرة سليمة (sound).",
   "topic": "Listening: Interview (C2)",
   "source": "worker-d-reading-listening"
+ },
+ {
+  "id": "q-grm2-013801",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If I _____ harder at school, I would have a better job now.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "had studied",
+   "studied",
+   "would study",
+   "have studied"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة شرط مختلط: الشرط في الماضي (had studied) والنتيجة في الحاضر (would have).",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013802",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If she had taken the medicine, she _____ better today.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would have felt",
+   "would feel",
+   "felt",
+   "will feel"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "ماضي في الشرط ونتيجة حالية: would + infinitive.",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013803",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If we _____ in Cairo, we would have gone to the concert last night.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "had lived",
+   "live",
+   "lived",
+   "would live"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الشرط حالي غير حقيقي (lived) والنتيجة ماضية (would have gone).",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013804",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If he were more careful, he _____ the vase yesterday.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "won't break",
+   "wouldn't break",
+   "hadn't broken",
+   "wouldn't have broken"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "شرط حالي (were) ونتيجة ماضية: wouldn't have + past participle.",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013805",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If you hadn't missed the bus, you _____ here now.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would be",
+   "would have been",
+   "will be",
+   "were"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "had في الشرط ونتيجة الحاضر: would be.",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013806",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If I were you, I _____ that job offer last month.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would accept",
+   "would have accepted",
+   "accepted",
+   "will accept"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "were you للنصيحة، والنتيجة في الماضي would have accepted.",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013807",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If they hadn't sold the house, they _____ in a bigger place now.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would have lived",
+   "lived",
+   "would be living",
+   "are living"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "النتيجة مستمرة في الحاضر: would be living.",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013808",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If Ahmed spoke German, he _____ the contract last week.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "can read",
+   "could read",
+   "reads",
+   "could have read"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "spoke حالية و could have read للماضي.",
+  "topic": "Grammar: mixed conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013809",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If I had known about the traffic, I _____ earlier.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would have left",
+   "would leave",
+   "had left",
+   "left"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الشرط الثالث: had + p.p ثم would have + p.p.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013810",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She wouldn't have failed if she _____ more.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "studied",
+   "had studied",
+   "would study",
+   "has studied"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد if في الشرط الثالث نستخدم had studied.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013811",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If the weather hadn't been bad, we _____ the match.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would win",
+   "had won",
+   "would have won",
+   "will win"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الشرط الثالث للتحسر على الماضي.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013812",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "They _____ the train if they had run faster.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would catch",
+   "had caught",
+   "catch",
+   "would have caught"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "would have caught النتيجة الماضية.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013813",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "What would you have done if you _____ the money?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "had lost",
+   "lost",
+   "would lose",
+   "have lost"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "if + had lost في الماضي غير الحقيقي.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013814",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If he hadn't called, I _____ about the meeting.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "would forget",
+   "would have forgotten",
+   "forgot",
+   "had forgotten"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "النتيجة الماضية: would have forgotten.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013815",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "We _____ lost if we had followed the map.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "wouldn't get",
+   "hadn't got",
+   "wouldn't have got",
+   "didn't get"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "نفي النتيجة في الشرط الثالث: wouldn't have got.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013816",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If I _____ the alarm, I would have been on time.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "heard",
+   "would hear",
+   "hear",
+   "had heard"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "had heard مع الشرط الثالث.",
+  "topic": "Grammar: third conditional (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013817",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If I _____ a million pounds, I'd buy a farm.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "had",
+   "have",
+   "would have",
+   "had had"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الشرط الثاني: past simple في if.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013818",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I wish I _____ more free time these days.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "have",
+   "had",
+   "would have",
+   "had had"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "wish + past simple لتمني عكس الحاضر.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013819",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I wish I _____ to the party last night.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "went",
+   "would go",
+   "had gone",
+   "have gone"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "wish + had p.p للتحسر على الماضي.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013820",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I wish you _____ making that noise. It's annoying.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "stopped to",
+   "will stop",
+   "had stopped",
+   "would stop"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "wish + would للتذمر من تصرف حالي.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013821",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If only I _____ how to swim!",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "knew",
+   "know",
+   "would know",
+   "have known"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "if only + past simple تمني عكس الحاضر.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013822",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "If only she _____ me the truth earlier!",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "told",
+   "had told",
+   "would tell",
+   "has told"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "if only + had p.p للماضي.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013823",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "She talks as if she _____ everything.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "knows",
+   "had known",
+   "knew",
+   "would know"
+  ],
+  "answerIndex": 2,
+  "explanationAr": "as if + past simple لحاجة غير حقيقية في الحاضر.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013824",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "It's time we _____ going home.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "start",
+   "will start",
+   "have started",
+   "started"
+  ],
+  "answerIndex": 3,
+  "explanationAr": "it's time + past simple معناها حان وقت البدء.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013825",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "I'd rather you _____ smoke in here.",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "didn't",
+   "don't",
+   "wouldn't",
+   "hadn't"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "would rather + subject + past simple للتفضيل الحالي.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013826",
+  "skill": "grammar",
+  "type": "fill-blank",
+  "level": "B2",
+  "prompt": "Suppose you _____ the lottery, what would you do?",
+  "promptAr": "أكمل الجملة بالاختيار الصحيح:",
+  "options": [
+   "win",
+   "won",
+   "would win",
+   "had been won"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "suppose + past simple لافتراض خيالي.",
+  "topic": "Grammar: second conditional and wishes (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013827",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is a correct third conditional (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If I saw him, I would have said hello.",
+   "If I had seen him, I would say hello yesterday.",
+   "If I had seen him, I would have said hello.",
+   "If I would see him, I had said hello."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "الثالث: if + had p.p, would have + p.p.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013828",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence is a correct zero conditional (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If you heat ice, it will melt tomorrow.",
+   "If you heated ice, it melts.",
+   "If you will heat ice, it melts.",
+   "If you heat ice, it melts."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "الصفر للحقائق العامة: present + present.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013829",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which is correct (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Unless you hurry, you'll miss the train.",
+   "Unless you don't hurry, you'll miss the train.",
+   "Unless you will hurry, you miss the train.",
+   "Unless you hurried, you'll miss the train."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "unless تعني if not فلا تحتاج نفي تاني.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013830",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which is correct (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I'll call you as soon as I will arrive.",
+   "I'll call you as soon as I arrive.",
+   "I'll call you as soon as I arrived.",
+   "I call you as soon as I will arrive."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "بعد as soon as نستخدم present للمستقبل.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013831",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which sentence expresses an unreal present situation (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If I am taller, I could play basketball.",
+   "If I had been taller, I could play basketball.",
+   "If I were taller, I could play basketball.",
+   "If I will be taller, I play basketball."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "were في الشرط الثاني.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013832",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which is correct (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Provided that you will pay on time, we'll deliver tomorrow.",
+   "Provided that you paid on time, we'll deliver tomorrow.",
+   "Provided you to pay on time, we'll deliver tomorrow.",
+   "Provided that you pay on time, we'll deliver tomorrow."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "القاعدة: provided that + present.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013833",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Which is correct (conditional types)?",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "Should you need help, call me.",
+   "Should you will need help, call me.",
+   "If should you need help, call me.",
+   "Should you needing help, call me."
+  ],
+  "answerIndex": 0,
+  "explanationAr": "should في أول الجملة بمعنى if you should.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013834",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Choose the sentence with correct tense.",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If it will rain tomorrow, we will cancel the trip.",
+   "If it rains tomorrow, we will cancel the trip.",
+   "If it rained tomorrow, we will cancel the trip.",
+   "If it would rain tomorrow, we cancel the trip."
+  ],
+  "answerIndex": 1,
+  "explanationAr": "الأول: present في if و will في النتيجة.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013835",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "I would call you if I had had your number.",
+   "I will have called you if I had your number.",
+   "I would have called you if I had had your number.",
+   "I had called you if I would have your number."
+  ],
+  "answerIndex": 2,
+  "explanationAr": "had had = ماضي تام للفعل have.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013836",
+  "skill": "grammar",
+  "type": "multiple-choice",
+  "level": "B2",
+  "prompt": "Choose the correct sentence.",
+  "promptAr": "اختر الإجابة الصحيحة:",
+  "options": [
+   "If I was rich, I won't work so hard.",
+   "If I am rich, I wouldn't work so hard.",
+   "If I would be rich, I don't work so hard.",
+   "If I were rich, I wouldn't work so hard."
+  ],
+  "answerIndex": 3,
+  "explanationAr": "were مع كل الضمائر في الرسمي، والنتيجة wouldn't.",
+  "topic": "Grammar: conditional types (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013837",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"If I were you, I would apologize\" is a correct second conditional sentence.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الجملة سليمة: were + would.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013838",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"If I would have time, I would help you\" is correct standard English.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: لا نستخدم would بعد if هنا. الصح: If I had time.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013839",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Unless you study, you'll fail\" means the same as \"If you don't study, you'll fail\".",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "القاعدة: unless = if not.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013840",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"If she had known, she would tell you\" is a correct third conditional.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: الصح would have told.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013841",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "In \"I wish I had a car\", the speaker does not have a car now.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "wish + past تعني عكس الواقع الحالي.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013842",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"I wish I would be taller\" is the standard way to wish for a different height.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: الصح I wish I were taller.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013843",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Had I known, I would have come\" is a correct inverted third conditional.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 0,
+  "explanationAr": "الانقلاب: Had + subject بدل if.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
+ },
+ {
+  "id": "q-grm2-013844",
+  "skill": "grammar",
+  "type": "true-false",
+  "level": "B2",
+  "prompt": "\"Were I you, I will go\" is a correct inverted conditional.",
+  "promptAr": "الجملة دي صح ولا غلط؟",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answerIndex": 1,
+  "explanationAr": "غلط: الصح I would go.",
+  "topic": "Grammar: conditionals (B2)",
+  "source": "worker-c-grammar-b2-c2-usage"
  }
 ]
