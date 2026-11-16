@@ -2761,7 +2761,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     order: 48,
     category: 'مواضيع وقواعد أخرى',
     categoryEn: 'Other Grammar Topics',
-    titleAr: 'Too و Enough و So و Such: الدرجة والزيادة والكفاية',
+    titleAr: 'Too / Enough / So / Such: الدرجة والزيادة والكفاية',
     titleEn: 'Too / Enough / So / Such',
     level: 'A2 - أساسي',
     goldenFormula: 'too + صفة | صفة + enough | so + صفة | such + (a/an) + صفة + اسم',

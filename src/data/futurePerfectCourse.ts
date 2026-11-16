@@ -114,7 +114,7 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     level: 'مبتدئ',
     imageUrl: ONLINE_IMAGES.lessons.lesson2,
     imageAlt: 'Blueprint and architecture structure representing sentence construction',
-    keyTakeaway: 'القاعدة ثابتة مع كل الضمائر: Subject + will + have + Past Participle (V3). لا تتغير have إلى has أبداً.',
+    keyTakeaway: 'القاعدة ثابتة مع كل الضمائر: الفاعل، ثم will have، ثم الفعل في التصريف الثالث. لا تتغير have إلى has أبداً.',
     formula: {
       tokens: [
         { text: 'Subject', color: 'subject', label: 'الفاعل (I, She, They...)' },
@@ -211,7 +211,7 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     level: 'مبتدئ',
     imageUrl: ONLINE_IMAGES.lessons.lesson3,
     imageAlt: 'Clock and stop deadline representing negative completion',
-    keyTakeaway: 'للنفي نضع not بعد will مباشرة فتصبح will not have + V3، واختصارها الشهير والشائع جداً هو won\'t have.',
+    keyTakeaway: 'للنفي نضع not بعد will مباشرة فتصبح will not have، وبعدها الفعل في التصريف الثالث. الاختصار الشائع هو won\'t have.',
     formula: {
       tokens: [
         { text: 'Subject', color: 'subject', label: 'الفاعل' },
@@ -313,7 +313,7 @@ export const FUTURE_PERFECT_LESSONS: LessonContent[] = [
     level: 'متوسط',
     imageUrl: ONLINE_IMAGES.lessons.lesson4,
     imageAlt: 'Professional colleagues discussing deadlines in a business meeting',
-    keyTakeaway: 'في أسئلة Yes/No نبدأ بـ Will + Subject + have + V3? وفي أسئلة WH- نضع أداة الاستفهام في البداية.',
+    keyTakeaway: 'في أسئلة Yes/No نبدأ بـ Will، ثم الفاعل، ثم have والفعل في التصريف الثالث. وفي أسئلة WH- نضع أداة الاستفهام في البداية.',
     formula: {
       tokens: [
         { text: '(WH-word)', color: 'default', label: 'أداة الاستفهام (اختياري)' },

@@ -1,4 +1,4 @@
-import { LessonCorrection } from '../components/LessonCorrection';
+import { LessonCorrection, MixedLessonText } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
@@ -115,7 +115,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
 
         <div className="p-6 sm:p-10 space-y-4 relative z-10 -mt-6">
           <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
-            {currentLesson.title}
+            <MixedLessonText text={currentLesson.title} />
           </h1>
           <div className="flex items-center gap-3">
             <span className="en text-sm sm:text-base font-bold text-[#41e7ff]">
@@ -131,7 +131,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           </div>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
-            {currentLesson.description}
+            <MixedLessonText text={currentLesson.description} />
           </p>
 
           {/* Key Takeaway Callout */}
@@ -139,7 +139,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
             <Lightbulb className="w-5 h-5 text-[#ffd166] shrink-0 mt-0.5" />
             <div className="text-sm text-white leading-relaxed">
               <strong className="text-[#ffd166]">الخلاصة الجوهرية: </strong>
-              {currentLesson.keyTakeaway}
+              <MixedLessonText text={currentLesson.keyTakeaway} />
             </div>
           </div>
         </div>
