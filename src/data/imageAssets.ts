@@ -9,11 +9,11 @@ export interface OnlineImageAsset {
 export const ONLINE_IMAGES = {
   // Course Cover Banners & Academy Heroes
   futurePerfectHero: 'https://images.unsplash.com/photo-1506784365847-bbad939e9335?auto=format&fit=crop&w=1200&q=80',
-  learningStudyGroup: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80',
-  graduationCelebration: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1000&q=80',
-  modernClassroom: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80',
+  learningStudyGroup: '/images/pool/learningStudyGroup.webp',
+  graduationCelebration: '/images/pool/graduationCelebration.webp',
+  modernClassroom: '/images/pool/modernClassroom.webp',
   libraryStudy: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=80',
-  mentorStudent: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
+  mentorStudent: '/images/pool/mentorStudent.webp',
   onlineTechLecture: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=80',
 
   // 8 Specific Future Perfect Flagship Lesson Photographs
@@ -63,28 +63,28 @@ export const ONLINE_IMAGES = {
 
   // Dialogue Avatars (Real High-Resolution Portraits)
   avatars: {
-    mona: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80',
-    omar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80',
-    laila: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80',
-    karim: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80',
-    tariq: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80',
-    hassan: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=250&q=80',
-    nour: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=250&q=80',
-    interviewer: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=250&q=80',
-    youssef: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=250&q=80',
-    salma: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=250&q=80',
+    mona: '/images/pool/av-mona.webp',
+    omar: '/images/pool/av-omar.webp',
+    laila: '/images/pool/av-laila.webp',
+    karim: '/images/pool/av-karim.webp',
+    tariq: '/images/pool/av-tariq.webp',
+    hassan: '/images/pool/av-hassan.webp',
+    nour: '/images/pool/av-nour.webp',
+    interviewer: '/images/pool/av-interviewer.webp',
+    youssef: '/images/pool/av-youssef.webp',
+    salma: '/images/pool/av-salma.webp',
   },
 
   // Contextual Scene Photos for Dialogues
   dialogueScenes: {
-    study: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80',
-    coding: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80',
-    travel: 'https://images.unsplash.com/photo-1506015391300-4802dc74de2e?auto=format&fit=crop&w=900&q=80',
-    market: 'https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80',
-    doctor: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80',
-    interview: 'https://images.unsplash.com/photo-1565688534245-05d6b5be184a?auto=format&fit=crop&w=900&q=80',
-    airport: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=80',
-    career: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80',
+    study: '/images/pool/scene-study.webp',
+    coding: '/images/pool/scene-coding.webp',
+    travel: '/images/pool/scene-travel.webp',
+    market: '/images/pool/scene-market.webp',
+    doctor: '/images/pool/scene-doctor.webp',
+    interview: '/images/pool/scene-interview.webp',
+    airport: '/images/pool/scene-airport.webp',
+    career: '/images/pool/scene-career.webp',
   },
 
   // Real-Life Visual Scenarios Gallery

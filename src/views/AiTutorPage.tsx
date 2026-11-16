@@ -421,7 +421,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           <div className="space-y-2">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-black bg-[#ffd166]/20 text-[#ffd166] border border-[#ffd166]/30 shadow-sm">
               <Bot className="w-4 h-4" />
-              <span>HINAWI LEARNING ASSISTANT • {t('at.badge')}</span>
+              <span>HENGLISH LEARNING ASSISTANT • {t('at.badge')}</span>
             </div>
             <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
               {t('at.heroTitle')}
