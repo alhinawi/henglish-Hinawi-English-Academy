@@ -305,12 +305,15 @@ export async function loadExpressions(): Promise<ExpressionEntry[]> {
     try {
       const res = await fetch('/data/expressions.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data: ExpressionEntry[] = await res.json();
+      const data: unknown = await res.json();
+      if (!Array.isArray(data) || data.some(item => !item ||
+        ['id', 'expression', 'meaningAr', 'definitionEn', 'exampleEn', 'exampleAr', 'category', 'cefr']
+          .some(field => typeof item[field] !== 'string'))) throw new Error('Invalid expressions data');
       cachedExpressions = data;
       return data;
     } catch (err) {
       console.error('Failed to load expressions collection:', err);
-      return [];
+      throw err;
     } finally {
       expressionsLoadingPromise = null;
     }
