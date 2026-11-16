@@ -1892,5 +1892,6 @@
   "tts.licenseStatus": "حالة الترخيص:",
   "tts.licLicensed": "تجاري معتمد",
   "tts.licEval": "تجريبي فقط",
-  "tts.licOpen": "مفتوح / محلي"
+  "tts.licOpen": "مفتوح / محلي",
+  "tts.healthUnavailable": "مؤشرات صحة محركات الصوت مش متاحة دلوقتي. جرّب التحديث تاني."
 }
