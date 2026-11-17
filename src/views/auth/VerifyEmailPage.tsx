@@ -1,3 +1,4 @@
+import { useFormRequest } from '../../hooks/useFormRequest';
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
@@ -20,6 +21,7 @@ interface VerifyEmailPageProps {
 export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, defaultEmail = '' }) => {
   const { verifyOtp, resendOtp, user, isAuthenticated, isEmailVerified } = useAuth();
   const { t, dir } = useLanguage();
+  const { beginRequest, redirectAfter } = useFormRequest();
 
   const email = user?.email?.trim() || '';
   const hasPendingVerification = isAuthenticated && !isEmailVerified &&
@@ -71,19 +73,19 @@ export const VerifyEmailPage: React.FC<VerifyEmailPageProps> = ({ onNavigate, de
       return;
     }
 
+    const isCurrent = beginRequest();
     setIsVerifying(true);
     setFeedback(null);
 
     const res = await verifyOtp(email, token);
+    if (!isCurrent()) return;
     setIsVerifying(false);
 
     if (res.success) {
       playSound('correct');
       fireCelebration();
       setFeedback({ type: 'success', text: t('ve.verified') });
-      setTimeout(() => {
-        onNavigate('dashboard');
-      }, 1500);
+      redirectAfter(isCurrent, () => onNavigate('dashboard'));
     } else {
       playSound('wrong');
       setFeedback({ type: 'error', text: res.error || t('ve.invalid') });
