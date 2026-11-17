@@ -3,7 +3,7 @@
 // Loaded vocabulary counts, headword authoring, and JSON/CSV bulk import
 // ==============================================================================
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useId } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import {
   X,
@@ -32,6 +32,36 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   onWordAdded,
 }) => {
   const { t } = useLanguage();
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const titleId = useId();
+  useEffect(() => {
+    if (!isOpen) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    closeRef.current?.focus();
+    const trap = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', trap);
+    return () => { document.removeEventListener('keydown', trap); if (opener?.isConnected) opener.focus(); };
+  }, [isOpen]);
+  useEffect(() => {
+    if (!isOpen) return;
+    const close = (event: KeyboardEvent) => { if (event.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', close);
+    return () => document.removeEventListener('keydown', close);
+  }, [isOpen, onClose]);
   const [stats, setStats] = useState<{ words: number; audioUs: number; audioUk: number; levels: Record<string, number> } | null>(null);
   const [statsError, setStatsError] = useState(false);
   const [activeTab, setActiveTab] = useState<'stats' | 'add' | 'bulk'>('stats');
@@ -132,12 +162,19 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
       <div
+        ref={dialogRef}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby={titleId}
+        tabIndex={-1}
         className="w-full max-w-3xl rounded-3xl border border-white/15 bg-linear-to-b from-[#15142b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-right space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
         onClick={e => e.stopPropagation()}
       >
         {/* Top Header */}
         <div className="flex items-center justify-between pb-4 border-b border-white/10">
           <button
+            ref={closeRef}
+            aria-label={t('fs.close')}
             onClick={onClose}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all cursor-pointer"
           >
@@ -148,7 +185,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             <span className="p-2 rounded-xl bg-[#41e7ff]/15 text-[#41e7ff]">
               <Database className="w-5 h-5" />
             </span>
-            <h3 className="text-lg font-black text-white">
+            <h3 id={titleId} className="text-lg font-black text-white">
               {t('avm.title')}
             </h3>
           </div>
