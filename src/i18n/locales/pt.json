@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "Não foi possível carregar a biblioteca de frases. É um erro de carregamento, não uma pesquisa sem resultados. Tente novamente."
+  "sl.loadError": "Não foi possível carregar a biblioteca de frases. É um erro de carregamento, não uma pesquisa sem resultados. Tente novamente.",
+  "dt.errNoPdfText": "Este PDF não tem texto selecionável e pode conter páginas digitalizadas. Envie um PDF com texto selecionável ou cole o texto num ficheiro TXT."
 }

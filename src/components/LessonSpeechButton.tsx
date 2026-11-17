@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Square, Volume2 } from 'lucide-react';
-import { getVoiceSettings, speakEnglish, stopSpeech, subscribeSpeechState } from '../utils/audio';
+import { getVoiceSettings, speakEnglish, stopSpeech, subscribeSpeechState, type SpeechSpeed } from '../utils/audio';
 import { useLanguage } from '../i18n/LanguageContext';
 
-export function LessonSpeechButton({ text, label, className }: { text: string; label: string; className: string }) {
+export function LessonSpeechButton({ text, label, className, speed, iconOnly = false }: { text: string; label: string; className: string; speed?: SpeechSpeed; iconOnly?: boolean }) {
   const { t } = useLanguage();
   const [active, setActive] = useState(false);
   const [error, setError] = useState('');
@@ -20,6 +20,7 @@ export function LessonSpeechButton({ text, label, className }: { text: string; l
     if (getVoiceSettings().isMuted) { setError(t('w3.voice.muted')); return; }
     let settled = false;
     speakEnglish(text, {
+      speed,
       onEnd: () => { settled = true; ownsSpeech.current = false; setActive(false); },
       onError: () => { settled = true; ownsSpeech.current = false; setActive(false); setError(t('listen.audioError')); },
     });
@@ -29,9 +30,9 @@ export function LessonSpeechButton({ text, label, className }: { text: string; l
     setActive(!settled);
   }
   return <span className="inline-flex max-w-full flex-col items-start gap-2">
-    <button className={className} onClick={toggle} aria-pressed={active}>
-      {active ? <Square size={16} className="inline" aria-hidden="true" /> : <Volume2 size={16} className="inline" aria-hidden="true" />} {active ? t('listen.stopAudio') : label}
+    <button type="button" className={className} onClick={toggle} aria-pressed={active} aria-label={active ? t('listen.stopAudio') : label} title={active ? t('listen.stopAudio') : label}>
+      {active ? <Square size={16} className="inline" aria-hidden="true" /> : speed && iconOnly ? <span className="text-[9px]">{speed}x</span> : <Volume2 size={16} className="inline" aria-hidden="true" />} {!iconOnly && (active ? t('listen.stopAudio') : label)}
     </button>
-    {error && <span role="status" className="text-xs leading-6 text-amber-200">{error}</span>}
+    {error && <span role="status" className="max-w-40 text-xs leading-6 text-amber-200">{error}</span>}
   </span>;
 }

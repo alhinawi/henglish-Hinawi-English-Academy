@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "Knihovnu vět se nepodařilo načíst. Jde o chybu načítání, ne o prázdný výsledek hledání. Zkuste to znovu."
+  "sl.loadError": "Knihovnu vět se nepodařilo načíst. Jde o chybu načítání, ne o prázdný výsledek hledání. Zkuste to znovu.",
+  "dt.errNoPdfText": "Tento PDF neobsahuje označitelný text a může obsahovat naskenované stránky. Nahrajte PDF s označitelným textem nebo vložte text do souboru TXT."
 }

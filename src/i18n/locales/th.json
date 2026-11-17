@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "ไม่สามารถโหลดคลังประโยคได้ นี่เป็นข้อผิดพลาดในการโหลด ไม่ใช่การค้นหาที่ไม่มีผลลัพธ์ โปรดลองอีกครั้ง"
+  "sl.loadError": "ไม่สามารถโหลดคลังประโยคได้ นี่เป็นข้อผิดพลาดในการโหลด ไม่ใช่การค้นหาที่ไม่มีผลลัพธ์ โปรดลองอีกครั้ง",
+  "dt.errNoPdfText": "PDF นี้ไม่มีข้อความที่เลือกได้และอาจเป็นหน้าสแกน โปรดอัปโหลด PDF ที่มีข้อความเลือกได้ หรือวางข้อความในไฟล์ TXT"
 }
