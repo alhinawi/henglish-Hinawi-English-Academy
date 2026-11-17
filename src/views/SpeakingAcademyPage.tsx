@@ -42,7 +42,11 @@ const LearnerSpeakingAcademy: React.FC<SpeakingAcademyPageProps & { storageKey: 
     if (!active || done.includes(active.id)) return;
     const next = [...done, active.id];
     try {
-      localStorage.setItem(storageKey, JSON.stringify(next));
+      // Preserve an unreadable owner copy, including corruption after mount.
+      const raw = localStorage.getItem(storageKey);
+      const saved: unknown = raw === null ? [] : JSON.parse(raw);
+      if (!Array.isArray(saved) || saved.some(id => typeof id !== 'string')) throw new Error('Saved speaking progress is unreadable');
+      localStorage.setItem(storageKey, JSON.stringify([...new Set([...saved, ...next])]));
       onCompleteActivity?.(`speaking-${active.id}`, 3, 3);
       setDone(next); setSaveError('');
     } catch { setSaveError(t('sa.saveError')); }
