@@ -219,13 +219,19 @@ export function getSavedVocabularyCards(learnerId?: string): SavedVocabularyCard
     typeof (item as SavedVocabularyCard).wordOrPhrase === 'string');
 }
 
+function readSavedVocabularyForWrite(learnerId?: string): SavedVocabularyCard[] {
+  getSavedVocabularyCards(learnerId);
+  const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId));
+  if (raw === null) return [];
+  const parsed: unknown = JSON.parse(raw);
+  if (!Array.isArray(parsed) || parsed.some(item => !item || typeof item !== 'object' || typeof item.id !== 'string' || typeof item.wordOrPhrase !== 'string')) throw new Error('Saved vocabulary is unreadable');
+  return parsed;
+}
+
 export function saveVocabularyCard(
   card: Omit<SavedVocabularyCard, 'id' | 'createdAt' | 'repetitionCount' | 'intervalDays' | 'easeFactor' | 'nextReviewAt'>, learnerId?: string
 ): SavedVocabularyCard & { reviewSynced: boolean } {
-  const existing = getSavedVocabularyCards(learnerId);
-  // Refuse to overwrite an unreadable or damaged saved deck.
-  const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId));
-  if (raw !== null && !Array.isArray(JSON.parse(raw))) throw new Error('Saved vocabulary is unreadable');
+  const existing = readSavedVocabularyForWrite(learnerId);
   const newCard: SavedVocabularyCard = {
     ...card,
     id: `vocab_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
@@ -274,13 +280,11 @@ export function saveVocabularyCard(
 }
 
 export function deleteSavedVocabularyCard(id: string, learnerId?: string): SavedVocabularyCard[] {
-  const cards = getSavedVocabularyCards(learnerId);
+  const cards = readSavedVocabularyForWrite(learnerId);
   const target = cards.find(c => c.id === id);
   const updated = cards.filter(c => c.id !== id);
 
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId), JSON.stringify(updated));
-  } catch {}
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId), JSON.stringify(updated));
 
   if (target?.collectionId) {
     decrementCollectionCount(target.collectionId, learnerId);
