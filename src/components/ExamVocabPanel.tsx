@@ -307,7 +307,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
             className="text-right glass-panel p-5 rounded-2xl border border-white/10 bg-linear-to-br from-[#121128] to-[#1a1836] space-y-3 hover:border-[#ffd166]/40 transition-all w-full"
           >
             <div className="flex flex-wrap items-center gap-2 justify-between">
-              <span className="flex items-center gap-2">
+              <span className="flex min-w-0 flex-wrap items-center gap-2">
                 <h3 className="text-lg font-black text-[#ffd166] font-mono" dir="ltr">{e.word}</h3>
                 <PronounceButton text={e.word} />
               </span>
@@ -514,7 +514,7 @@ const ExamDetailSheet: React.FC<{
           <span className="w-10 h-1 rounded-full bg-white/20 absolute top-2 left-1/2 -translate-x-1/2" />
           <div className="flex items-start justify-between gap-3 mt-2">
             <div className="space-y-1">
-              <span className="flex items-center gap-2">
+              <span className="flex min-w-0 flex-wrap items-center gap-2">
                 <h2 id={titleId} className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.word}</h2>
                 <PronounceButton text={entry.word} />
               </span>
