@@ -24,6 +24,7 @@ const checks = [
   'check-grammar-navigation.cjs',
   'check-grammar-missing-lesson.cjs',
   'check-translation-request-identity.cjs',
+  'check-voice-upload-lifecycle.cjs',
   'check-pronunciation-playback-races.cjs',
   'check-voice-engine-races.cjs',
   'check-audio-queue-lifecycle.cjs',
