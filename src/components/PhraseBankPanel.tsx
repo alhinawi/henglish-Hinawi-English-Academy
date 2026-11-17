@@ -6,7 +6,7 @@
 // view (deep linkable via #<bank>/<id>, lazy per-100-ids data).
 // ==============================================================================
 
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useMemo, useRef, useState, useId } from 'react';
 import { Search, RefreshCw, AlertTriangle, SlidersHorizontal, Copy, Check, X } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { FilterSheet, ActiveFilterChips, FilterSection } from './FilterSheet';
@@ -145,7 +145,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       if (hash.startsWith(`${bank}/`)) {
         const id = hash.slice(bank.length + 1);
         const entry = entries.find((e) => e.id === id);
-        if (entry) setSelected(entry);
+        setSelected(entry ?? null);
       } else {
         setSelected(null);
       }
@@ -347,6 +347,33 @@ const PhraseDetailSheet: React.FC<{
   const [sentencesLoading, setSentencesLoading] = useState(true);
   const [overlay, setOverlay] = useState<string[] | null>(null);
   const [copied, setCopied] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const titleId = useId();
+
+  useEffect(() => {
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]):not([tabindex="-1"]), a[href], input:not([disabled]), [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    closeRef.current?.focus();
+    const trap = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', trap);
+    return () => {
+      document.removeEventListener('keydown', trap);
+      if (opener?.isConnected) opener.focus();
+    };
+  }, []);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -410,15 +437,15 @@ const PhraseDetailSheet: React.FC<{
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true">
-      <button aria-label={t('fs.close')} onClick={onClose} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+    <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialogRef} tabIndex={-1}>
+      <button tabIndex={-1} aria-label={t('fs.close')} onClick={onClose} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div className="relative w-full max-w-lg bg-[#16142e] border-t border-white/15 rounded-t-3xl max-h-[85vh] overflow-y-auto pb-6 animate-[slideUp_.25s_ease-out]">
         <div className="sticky top-0 bg-[#16142e] pt-3 pb-3 px-5 border-b border-white/10 z-10">
           <span className="w-10 h-1 rounded-full bg-white/20 absolute top-2 left-1/2 -translate-x-1/2" />
           <div className="flex items-start justify-between gap-3 mt-2">
             <div className="space-y-1">
               <span className="flex items-center gap-2">
-                <h2 className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.phrase}</h2>
+                <h2 id={titleId} className="text-xl font-black text-[#ffd166] font-mono" dir="ltr">{entry.phrase}</h2>
                 <PronounceButton text={entry.phrase} />
               </span>
               <p dir="auto" className="text-sm font-bold text-white leading-relaxed" style={{ textAlign: 'start' }}>{shownMeaning}</p>
@@ -432,6 +459,7 @@ const PhraseDetailSheet: React.FC<{
                 {copied ? t('pb.detail.copied') : t('pb.detail.copy')}
               </button>
               <button
+                ref={closeRef}
                 onClick={onClose}
                 aria-label={t('fs.close')}
                 className="p-2 rounded-full bg-white/5 text-white hover:bg-white/15 transition-colors"
