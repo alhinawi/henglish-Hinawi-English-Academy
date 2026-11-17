@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useId, useRef, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
-import { Volume2 } from 'lucide-react';
-import { speakEnglishVoice, stopSpeech, subscribeSpeechState } from '../utils/audio';
+import { Loader2, Square, Volume2 } from 'lucide-react';
+import { getVoiceSettings } from '../utils/audio';
+import { audioPlayback, type PlaybackState } from '../services/audioPlaybackManager';
 
 /**
  * Icon-only pronunciation button for word/phrase cards.
@@ -12,30 +13,34 @@ import { speakEnglishVoice, stopSpeech, subscribeSpeechState } from '../utils/au
  */
 const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text, className = '' }) => {
   const { t } = useLanguage();
-  const [playing, setPlaying] = useState(false);
-
-  useEffect(
-    () =>
-      subscribeSpeechState((isPlaying, spoken) => {
-        setPlaying(isPlaying && spoken === text.trim());
-      }),
-    [text]
-  );
+  const id = useId();
+  const owner = useRef(Symbol('phrase-pronunciation'));
+  const [state, setState] = useState<PlaybackState>(() => audioPlayback.getState());
+  const isCurrent = state.wordId === id;
+  const playing = isCurrent && (state.status === 'loading' || state.status === 'playing');
+  const loading = isCurrent && state.status === 'loading';
+  const error = isCurrent && state.status === 'error';
+  useEffect(() => {
+    const unsubscribe = audioPlayback.subscribe(setState);
+    return () => { unsubscribe(); audioPlayback.stopOwned(owner.current); };
+  }, [text]);
 
   const handle = (e: React.SyntheticEvent) => {
     e.stopPropagation();
     e.preventDefault();
     if (playing) {
-      stopSpeech();
+      audioPlayback.stopOwned(owner.current);
     } else {
-      speakEnglishVoice(text);
+      void audioPlayback.playPronunciation(id, text, getVoiceSettings().accent, undefined, owner.current);
     }
   };
 
   return (
+    <span className={`inline-flex max-w-full items-start gap-2 ${error ? 'w-full' : ''}`}>
     <span
       role="button"
       tabIndex={0}
+      aria-pressed={playing}
       aria-label={t(playing ? 'pr.stop' : 'pr.play')}
       title={t(playing ? 'pr.stop' : 'pr.play')}
       onClick={handle}
@@ -48,7 +53,9 @@ const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text,
           : 'bg-[#ffd166]/10 text-[#ffd166] border-[#ffd166]/30 hover:bg-[#ffd166]/20 hover:border-[#ffd166]/60 hover:shadow-[0_0_10px_rgba(255,209,102,0.3)]'
       } ${className}`}
     >
-      <Volume2 className="w-4 h-4" />
+      {loading ? <Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" /> : playing ? <Square className="w-4 h-4" aria-hidden="true" /> : <Volume2 className="w-4 h-4" aria-hidden="true" />}
+    </span>
+    {error && <span role="status" className="max-w-64 text-xs leading-5 text-amber-200">{t('listen.audioError')}</span>}
     </span>
   );
 };
