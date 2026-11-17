@@ -140,7 +140,8 @@ export function filterExamVocab(
   query: string,
   level: string,
   topic: string,
-  pos: string
+  pos: string,
+  translations?: Record<string, { m?: string; e?: string }> | null
 ): ExamVocabEntry[] {
   const q = query.trim().toLowerCase();
   return entries.filter((e) => {
@@ -148,6 +149,6 @@ export function filterExamVocab(
     if (topic !== 'all' && e.topic !== topic) return false;
     if (pos !== 'all' && e.partOfSpeech !== pos) return false;
     if (!q) return true;
-    return e.word.toLowerCase().includes(q) || e.meaningAr.includes(query.trim());
+    return [e.word, e.meaningAr, e.exampleEn, e.exampleAr, translations?.[e.id]?.m || '', translations?.[e.id]?.e || ''].some(text => text.toLowerCase().includes(q));
   });
 }
