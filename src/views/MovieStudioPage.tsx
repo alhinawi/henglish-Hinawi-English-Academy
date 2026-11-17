@@ -318,6 +318,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                 setActiveTab('catalog');
                 setActiveScene(null);
               }}
+              aria-pressed={activeTab === 'catalog'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'catalog'
                   ? 'bg-red-600 text-white shadow-lg shadow-red-600/30'
@@ -334,6 +335,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                 setActiveTab('youtube_search');
                 setActiveScene(null);
               }}
+              aria-pressed={activeTab === 'youtube_search'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'youtube_search'
                   ? 'bg-[#41e7ff] text-[#09091a] shadow-lg shadow-[#41e7ff]/20'
@@ -350,6 +352,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                 setActiveTab('sentence_search');
                 setActiveScene(null);
               }}
+              aria-pressed={activeTab === 'sentence_search'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'sentence_search'
                   ? 'bg-[#ffd166] text-[#09091a] shadow-lg shadow-[#ffd166]/20'
@@ -366,6 +369,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                 setActiveTab('saved_and_history');
                 setActiveScene(null);
               }}
+              aria-pressed={activeTab === 'saved_and_history'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'saved_and_history'
                   ? 'bg-[#c4ff55] text-[#09091a] shadow-lg shadow-[#c4ff55]/20'
@@ -422,6 +426,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                       playSound('click');
                       setSelectedCategory('all');
                     }}
+                    aria-pressed={selectedCategory === 'all'}
                     className={`px-3.5 py-2 rounded-xl text-xs font-black shrink-0 transition-all cursor-pointer border ${
                       selectedCategory === 'all'
                         ? 'bg-red-600 text-white border-red-500 shadow-md'
@@ -438,6 +443,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                         playSound('click');
                         setSelectedCategory(cat.id);
                       }}
+                      aria-pressed={selectedCategory === cat.id}
                       className={`px-3.5 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer border flex items-center gap-1.5 ${
                         selectedCategory === cat.id
                           ? 'bg-[#c4ff55]/20 text-[#c4ff55] border-[#c4ff55]/50 shadow-sm'
@@ -458,6 +464,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                     type="text"
                     dir="auto"
                     value={searchQuery}
+                    aria-label={t('ms.searchPlaceholder')}
                     onChange={e => handlePerformSearch(e.target.value)}
                     placeholder={t('ms.searchPlaceholder')}
                     className="w-full pl-12 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm font-sans focus:outline-none focus:border-red-500"
@@ -503,8 +510,8 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                 {/* Filter Dropdowns (CEFR, Accent) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1 border-t border-white/10">
                   <div className="space-y-1">
-                    <label className="text-[11px] font-bold text-white/60">{t('ms.cefrLabel')}</label>
-                    <select
+                    <label htmlFor="movie-catalog-level" className="text-[11px] font-bold text-white/60">{t('ms.cefrLabel')}</label>
+                    <select id="movie-catalog-level"
                       value={selectedCefr}
                       onChange={e => setSelectedCefr(e.target.value as any)}
                       className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-xs font-bold text-white focus:outline-none focus:border-red-500"
@@ -520,8 +527,8 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                   </div>
 
                   <div className="space-y-1">
-                    <label className="text-[11px] font-bold text-white/60">{t('ms.accentLabel')}</label>
-                    <select
+                    <label htmlFor="movie-catalog-accent" className="text-[11px] font-bold text-white/60">{t('ms.accentLabel')}</label>
+                    <select id="movie-catalog-accent"
                       value={selectedAccent}
                       onChange={e => setSelectedAccent(e.target.value as any)}
                       className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-xs font-bold text-white focus:outline-none focus:border-red-500"
@@ -704,6 +711,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                     <input
                       type="text"
                       value={ytQuery}
+                    aria-label={t('ms.ytPlaceholder')}
                       onChange={e => changeYtQuery(e.target.value)}
                       onKeyDown={e => e.key === 'Enter' && handleSearchYouTube()}
                       placeholder={t('ms.ytPlaceholder')}
@@ -837,6 +845,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                   <input
                     type="text"
                     value={sentenceQuery}
+                    aria-label={t('ms.sentPlaceholder')}
                     onChange={e => setSentenceQuery(e.target.value)}
                     placeholder={t('ms.sentPlaceholder')}
                     className="w-full pl-4 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#ffd166]"
