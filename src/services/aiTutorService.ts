@@ -35,6 +35,7 @@ export interface AiRequestOptions {
   history?: AiChatMessage[];
   platformContext?: StudentPlatformContext;
   onChunk?: (chunk: string) => void;
+  signal?: AbortSignal;
 }
 
 export interface AiResponseResult {
@@ -49,7 +50,7 @@ export interface AiResponseResult {
  * Send a message to the AI Assistant with real-time streaming if onChunk is provided
  */
 export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiResponseResult> {
-  const { message, mode, userLevel, history = [], platformContext, onChunk } = options;
+  const { message, mode, userLevel, history = [], platformContext, onChunk, signal } = options;
 
   // Format historical conversation for server
   const formattedHistory = history.map(h => ({
@@ -69,6 +70,7 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
   if (onChunk) {
     try {
       const response = await fetch('/api/ai/stream', {
+        signal,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestBody),
@@ -120,6 +122,7 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
         }
       }
     } catch (err) {
+      if (signal?.aborted) throw err;
       if (err instanceof AiServiceUnavailableError) {
         throw err;
       }
@@ -130,6 +133,7 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
   // Standard non-streaming POST
   try {
     const response = await fetch('/api/ai/chat', {
+      signal,
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(requestBody),
