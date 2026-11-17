@@ -100,12 +100,15 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
     document.addEventListener('keydown', handleKey);
     return () => { document.removeEventListener('keydown', handleKey); if (opener?.isConnected && opener.getClientRects().length) opener.focus(); };
   }, [isOpen]);
+  const importVersion = useRef(0);
   const verificationVersion = useRef(0);
   const verifiedAutoTitle = useRef('');
   useEffect(() => {
     verificationVersion.current += 1;
+    importVersion.current += 1;
     setIsVerifying(false);
-    return () => { verificationVersion.current += 1; };
+    setIsImporting(false);
+    return () => { verificationVersion.current += 1; importVersion.current += 1; };
   }, [isOpen]);
   const changeYoutubeInput = (value: string) => {
     verificationVersion.current += 1;
@@ -178,6 +181,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
       return;
     }
 
+    const version = ++importVersion.current;
     setIsImporting(true);
     setErrorMsg(null);
 
@@ -206,7 +210,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
         customTitle: customTitle.trim() || verification.title,
         sceneDescription: description.trim(),
         subtitles: timedSubs,
-      });
+      }, () => version === importVersion.current);
+      if (version !== importVersion.current) return;
 
       if (res.ok && res.video) {
         playSound('success');
@@ -218,9 +223,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
         setErrorMsg(videoImportError(res.error, t) || t('vi.importError'));
       }
     } catch {
-      setErrorMsg(t('vi.importError'));
+      if (version === importVersion.current) setErrorMsg(t('vi.importError'));
     } finally {
-      setIsImporting(false);
+      if (version === importVersion.current) setIsImporting(false);
     }
   };
 
@@ -257,7 +262,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           </div>
         )}
 
-        <form onSubmit={handleImportSubmit} className="space-y-5">
+        <form onChange={() => { importVersion.current += 1; setIsImporting(false); }} onSubmit={handleImportSubmit} className="space-y-5">
           {/* 1. YouTube URL & Live Verification */}
           <div className="space-y-2">
             <label htmlFor="video-import-url" className="text-xs font-bold text-white">
