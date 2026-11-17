@@ -280,8 +280,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">{t('avmm.youtubeId')}</label>
-                <input
+                <label htmlFor="console-video-source" className="text-[11px] font-bold text-white">{t('avmm.youtubeId')}</label>
+                <input id="console-video-source"
                   type="text"
                   value={replaceIdInput}
                   onChange={e => { editVersion.current += 1; setReplaceIdInput(e.target.value); }}
@@ -290,8 +290,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">{t('avmm.sceneTitle')}</label>
-                <input
+                <label htmlFor="console-video-title" className="text-[11px] font-bold text-white">{t('avmm.sceneTitle')}</label>
+                <input id="console-video-title"
                   type="text"
                   value={editingVideo.sceneTitle}
                   onChange={e => { editVersion.current += 1; setEditingVideo({ ...editingVideo, sceneTitle: e.target.value }); }}
@@ -300,8 +300,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">{t('avmm.category')}</label>
-                <select
+                <label htmlFor="console-video-category" className="text-[11px] font-bold text-white">{t('avmm.category')}</label>
+                <select id="console-video-category"
                   value={editingVideo.category}
                   onChange={e => { editVersion.current += 1; setEditingVideo({ ...editingVideo, category: e.target.value as any }); }}
                   className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/20 text-white text-xs"
@@ -315,8 +315,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-bold text-white">{t('avmm.cefr')}</label>
-                <select
+                <label htmlFor="console-video-cefr" className="text-[11px] font-bold text-white">{t('avmm.cefr')}</label>
+                <select id="console-video-cefr"
                   value={editingVideo.cefrLevel}
                   onChange={e => { editVersion.current += 1; setEditingVideo({ ...editingVideo, cefrLevel: e.target.value as any }); }}
                   className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/20 text-white text-xs"
