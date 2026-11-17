@@ -148,7 +148,7 @@ export const ResourcesPage: React.FC = () => {
           </div>
 
           {/* Clean Markdown Preformatted Sheet */}
-          <pre className="en p-6 rounded-2xl bg-[#09091a] border border-white/10 text-xs sm:text-sm text-[#dedbf4] font-mono whitespace-pre-wrap leading-relaxed overflow-x-auto select-text">
+          <pre key={previewResource.id} dir="ltr" className="en text-left p-6 rounded-2xl bg-[#09091a] border border-white/10 text-xs sm:text-sm text-[#dedbf4] font-mono whitespace-pre-wrap leading-relaxed overflow-x-auto select-text">
             {previewResource.contentMarkdown}
           </pre>
         </section>
