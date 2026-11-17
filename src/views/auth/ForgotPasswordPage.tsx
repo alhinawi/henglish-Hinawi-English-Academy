@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useFormRequest } from '../../hooks/useFormRequest';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
 import { playSound } from '../../utils/audio';
@@ -24,6 +25,8 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [feedback, setFeedback] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
+  const { beginRequest } = useFormRequest();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim() || !email.includes('@')) {
@@ -34,7 +37,9 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
     setIsSubmitting(true);
     setFeedback(null);
 
+    const isCurrent = beginRequest();
     const res = await forgotPassword(email);
+    if (!isCurrent()) return;
     setIsSubmitting(false);
 
     if (res.success) {

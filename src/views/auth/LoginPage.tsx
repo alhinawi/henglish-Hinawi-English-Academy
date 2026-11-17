@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useFormRequest } from '../../hooks/useFormRequest';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
 import { GoogleSignInBlock } from '../../components/GoogleSignInBlock';
@@ -29,6 +30,8 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  const { beginRequest } = useFormRequest();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage(null);
@@ -42,7 +45,9 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
       return;
     }
 
+    const isCurrent = beginRequest();
     const res = await login(identifier, password);
+    if (!isCurrent()) return;
     if (res.success) {
       playSound('correct');
       onNavigate('dashboard');
