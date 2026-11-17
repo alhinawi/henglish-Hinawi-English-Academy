@@ -55,15 +55,17 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   const [statusMsg, setStatusMsg] = useState<string | null>(null);
   const [saveFailed, setSaveFailed] = useState(false);
 
+  const editVersion = useRef(0);
   const auditVersion = useRef(0);
   useEffect(() => {
     auditVersion.current += 1;
+    editVersion.current += 1;
     setIsAuditingAll(false);
     setAuditProgress(null);
     if (isOpen) {
       setVideos(getStoredVideos());
     }
-    return () => { auditVersion.current += 1; };
+    return () => { auditVersion.current += 1; editVersion.current += 1; };
   }, [isOpen]);
 
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -136,12 +138,14 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   };
 
   const handleStartEdit = (v: EducationalVideoItem) => {
+    editVersion.current += 1;
     setEditingVideo({ ...v });
     setReplaceIdInput(v.youtubeId);
   };
 
   const handleSaveEdit = async () => {
     if (!editingVideo) return;
+    const version = ++editVersion.current;
     playSound('click');
     setSaveFailed(false);
     try {
@@ -157,7 +161,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     };
     // Replacement and metadata must persist in the same write.
     if (replaceIdInput.trim() !== editingVideo.youtubeId) {
-      const res = await adminReplaceVideoId(editingVideo.id, replaceIdInput.trim(), patch);
+      const res = await adminReplaceVideoId(editingVideo.id, replaceIdInput.trim(), patch, () => version === editVersion.current);
+      if (version !== editVersion.current) return;
       if (!res.ok) {
         setStatusMsg(`${t('avmm.idError')} ${videoImportError(res.error, t)}`);
         playSound('wrong');
@@ -173,7 +178,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     playSound('success');
     setStatusMsg(t('avmm.saved'));
     if (onCatalogChanged) onCatalogChanged();
-    } catch { setStatusMsg(null); setSaveFailed(true); playSound('wrong'); }
+    } catch { if (version === editVersion.current) { setStatusMsg(null); setSaveFailed(true); playSound('wrong'); } }
   };
 
   const handleMarkUnavailable = (v: EducationalVideoItem) => {
@@ -266,7 +271,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
             <div className="flex items-center justify-between">
               <span className="text-xs font-black text-[#ffd166]">{t('avmm.editTitle')} {editingVideo.sceneTitle}</span>
               <button
-                onClick={() => setEditingVideo(null)}
+                onClick={() => { editVersion.current += 1; setEditingVideo(null); }}
                 className="text-xs text-white/60 hover:text-white"
               >
                 {t('avmm.cancelEdit')}
@@ -279,7 +284,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 <input
                   type="text"
                   value={replaceIdInput}
-                  onChange={e => setReplaceIdInput(e.target.value)}
+                  onChange={e => { editVersion.current += 1; setReplaceIdInput(e.target.value); }}
                   className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/20 text-white font-mono text-xs"
                 />
               </div>
@@ -289,7 +294,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 <input
                   type="text"
                   value={editingVideo.sceneTitle}
-                  onChange={e => setEditingVideo({ ...editingVideo, sceneTitle: e.target.value })}
+                  onChange={e => { editVersion.current += 1; setEditingVideo({ ...editingVideo, sceneTitle: e.target.value }); }}
                   className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/20 text-white text-xs"
                 />
               </div>
@@ -298,7 +303,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 <label className="text-[11px] font-bold text-white">{t('avmm.category')}</label>
                 <select
                   value={editingVideo.category}
-                  onChange={e => setEditingVideo({ ...editingVideo, category: e.target.value as any })}
+                  onChange={e => { editVersion.current += 1; setEditingVideo({ ...editingVideo, category: e.target.value as any }); }}
                   className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/20 text-white text-xs"
                 >
                   {VIDEO_20_CATEGORIES.map(c => (
@@ -313,7 +318,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
                 <label className="text-[11px] font-bold text-white">{t('avmm.cefr')}</label>
                 <select
                   value={editingVideo.cefrLevel}
-                  onChange={e => setEditingVideo({ ...editingVideo, cefrLevel: e.target.value as any })}
+                  onChange={e => { editVersion.current += 1; setEditingVideo({ ...editingVideo, cefrLevel: e.target.value as any }); }}
                   className="w-full px-3 py-1.5 rounded-lg bg-[#09091a] border border-white/20 text-white text-xs"
                 >
                   <option value="A1">A1</option>
@@ -328,7 +333,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
 
             <div className="flex justify-end gap-2 pt-2">
               <button
-                onClick={() => setEditingVideo(null)}
+                onClick={() => { editVersion.current += 1; setEditingVideo(null); }}
                 className="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-white"
               >
                 {t('avmm.cancel')}
