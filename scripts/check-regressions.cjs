@@ -56,6 +56,7 @@ const checks = [
   'check-sentence-practice.cjs',
   'check-sentence-card-state.cjs',
   'check-account-progress.cjs',
+  'check-course-completion.cjs',
   'check-arcade-account-progress.cjs',
   'check-real-life-honesty.cjs',
   'check-quiz-generation-lifecycle.cjs',
