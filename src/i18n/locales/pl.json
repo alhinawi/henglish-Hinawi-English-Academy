@@ -2092,5 +2092,13 @@
   "wl.typeWordAria": "Wpisz słowo",
   "wl.typeWordPh": "Wpisz całe słowo",
   "wl.undoLetter": "Cofnij list",
-  "rle.scoreUnit": "points"
+  "rle.scoreUnit": "points",
+  "ml.tabCerts": "Certificates",
+  "ml.certificateCenter": "Certificate center",
+  "ml.certificateNote": "Certificates are issued only after the required server-graded assessments. Open the certificate center to check your account, requirements and any issued certificates. This page does not issue certificates or verification codes.",
+  "ml.openCertificates": "Open certificate center",
+  "ml.practiceNote": "Learning points, not an academic rank.",
+  "ml.streakNote": "Consecutive days recorded in your learning activity.",
+  "ml.levelNote": "Your profile level and target are not a placement-test result.",
+  "ml.reviewNeeded": "Review the answers and try again"
 }
