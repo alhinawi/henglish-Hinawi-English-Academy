@@ -2901,5 +2901,6 @@
   "sl.loadError": "The sentence library could not load. This is a loading error, not an empty search. Try again.",
   "dt.errNoPdfText": "This PDF has no selectable text and may contain scanned pages. Upload a PDF with selectable text or paste the text into a TXT file.",
   "lp.noteStorage": "Notes are saved only in this browser, separately for each learner and lesson. They do not sync to other devices.",
-  "lp.noteSavedLocal": "Saved in this browser."
+  "lp.noteSavedLocal": "Saved in this browser.",
+  "ts.vocabReviewPartial": "Saved to vocabulary on this device, but the review schedule could not be saved. Allow storage and save again."
 }

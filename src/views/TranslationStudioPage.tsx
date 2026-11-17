@@ -71,6 +71,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   const [selectedWordDetail, setSelectedWordDetail] = useState<WordAnalysisDetail | null>(null);
   const [isWordModalOpen, setIsWordModalOpen] = useState(false);
   const [wordAnalysisUnavailable, setWordAnalysisUnavailable] = useState(false);
+  const [vocabularySaveMessage, setVocabularySaveMessage] = useState('');
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
   const [collections, setCollections] = useState<VocabularyCollection[]>(() => getVocabularyCollections(learnerId));
 
@@ -86,6 +87,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
     setSelectedWordDetail(null);
     setIsWordModalOpen(false);
     setWordAnalysisUnavailable(false);
+    setVocabularySaveMessage('');
   };
   useEffect(() => () => { requestVersion.current += 1; }, []);
 
@@ -178,20 +180,27 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
     word: WordAnalysisDetail,
     collectionId?: string,
     notes?: string
-  ) => {
-    saveVocabularyCard({
-      wordOrPhrase: word.word,
-      translationAr: word.meaningAr,
-      definition: word.exampleEn,
-      partOfSpeech: word.partOfSpeechAr || word.partOfSpeech,
-      ipa: word.ipa,
-      exampleEn: word.exampleEn,
-      exampleAr: word.exampleAr,
-      personalNotes: notes,
-      cefrLevel: word.cefrLevel || currentLevel,
-      collectionId,
-    }, learnerId);
-    setCollections(getVocabularyCollections(learnerId));
+  ): 'saved' | 'review-failed' | 'failed' => {
+    try {
+      const saved = saveVocabularyCard({
+        wordOrPhrase: word.word,
+        translationAr: word.meaningAr,
+        definition: word.exampleEn,
+        partOfSpeech: word.partOfSpeechAr || word.partOfSpeech,
+        ipa: word.ipa,
+        exampleEn: word.exampleEn,
+        exampleAr: word.exampleAr,
+        personalNotes: notes,
+        cefrLevel: word.cefrLevel || currentLevel,
+        collectionId,
+      }, learnerId);
+      setCollections(getVocabularyCollections(learnerId));
+      setVocabularySaveMessage(t(saved.reviewSynced ? 'wam.saved' : 'ts.vocabReviewPartial'));
+      return saved.reviewSynced ? 'saved' : 'review-failed';
+    } catch {
+      setVocabularySaveMessage(t('vocab.saveError'));
+      return 'failed';
+    }
   };
 
   return (
@@ -201,6 +210,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
           {t('ts.analysisUnavailable')}
         </p>
       )}
+      {vocabularySaveMessage && <p role="status" className="rounded-xl border border-white/15 p-4 text-sm leading-7 text-cyan-100">{vocabularySaveMessage}</p>}
       {/* Studio Header & Brand Identity */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 p-6 rounded-3xl bg-gradient-to-r from-[#0d0c24] via-[#120f38] to-[#0d0c24] border border-white/10 shadow-2xl relative overflow-hidden">
         {/* Glow backdrop */}

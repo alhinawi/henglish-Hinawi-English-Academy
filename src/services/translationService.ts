@@ -218,8 +218,11 @@ export function getSavedVocabularyCards(learnerId?: string): SavedVocabularyCard
 
 export function saveVocabularyCard(
   card: Omit<SavedVocabularyCard, 'id' | 'createdAt' | 'repetitionCount' | 'intervalDays' | 'easeFactor' | 'nextReviewAt'>, learnerId?: string
-): SavedVocabularyCard {
+): SavedVocabularyCard & { reviewSynced: boolean } {
   const existing = getSavedVocabularyCards(learnerId);
+  // Refuse to overwrite an unreadable or damaged saved deck.
+  const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId));
+  if (raw !== null && !Array.isArray(JSON.parse(raw))) throw new Error('Saved vocabulary is unreadable');
   const newCard: SavedVocabularyCard = {
     ...card,
     id: `vocab_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
@@ -231,13 +234,13 @@ export function saveVocabularyCard(
   };
 
   const updated = [newCard, ...existing.filter(c => c.wordOrPhrase.toLowerCase() !== card.wordOrPhrase.toLowerCase())];
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId), JSON.stringify(updated));
-  } catch {}
+  // Primary save failure must reach the UI before any dependent writes.
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId), JSON.stringify(updated));
+  let reviewSynced = false;
 
   // Seamlessly bridge to Henglish Global SRS Vocabulary system
   try {
-    const globalSrsCards = loadSrsCardsFromStorage(learnerId);
+    const globalSrsCards = loadSrsCardsFromStorage(learnerId, true);
     const bridgedCard: VocabularyCard = {
       id: newCard.id,
       word: newCard.wordOrPhrase,
@@ -252,17 +255,19 @@ export function saveVocabularyCard(
       easeFactor: 2.5,
       nextReviewAt: newCard.nextReviewAt,
     };
-    saveSrsCardsToStorage([bridgedCard, ...globalSrsCards.filter(c => c.word.toLowerCase() !== bridgedCard.word.toLowerCase())], learnerId);
+    reviewSynced = saveSrsCardsToStorage([bridgedCard, ...globalSrsCards.filter(c => c.word.toLowerCase() !== bridgedCard.word.toLowerCase())], learnerId);
   } catch (err) {
     console.warn('Could not sync to global SRS:', err);
   }
 
   // Update collection count
-  if (card.collectionId) {
-    incrementCollectionCount(card.collectionId, learnerId);
+  const previous = existing.find(c => c.wordOrPhrase.toLowerCase() === card.wordOrPhrase.toLowerCase());
+  if (previous?.collectionId !== card.collectionId) {
+    if (previous?.collectionId) decrementCollectionCount(previous.collectionId, learnerId);
+    if (card.collectionId) incrementCollectionCount(card.collectionId, learnerId);
   }
 
-  return newCard;
+  return { ...newCard, reviewSynced };
 }
 
 export function deleteSavedVocabularyCard(id: string, learnerId?: string): SavedVocabularyCard[] {

@@ -2104,5 +2104,6 @@
   "sl.loadError": "Pustaka kalimat tidak dapat dimuat. Ini kesalahan pemuatan, bukan pencarian tanpa hasil. Coba lagi.",
   "dt.errNoPdfText": "PDF ini tidak memiliki teks yang dapat dipilih dan mungkin berisi halaman pindaian. Unggah PDF dengan teks yang dapat dipilih atau tempel teks ke berkas TXT.",
   "lp.noteStorage": "Catatan hanya disimpan di browser ini, terpisah per pelajar dan pelajaran. Tidak disinkronkan ke perangkat lain.",
-  "lp.noteSavedLocal": "Disimpan di browser ini."
+  "lp.noteSavedLocal": "Disimpan di browser ini.",
+  "ts.vocabReviewPartial": "Tersimpan dalam kosakata di perangkat ini, tetapi jadwal ulasan gagal disimpan. Izinkan penyimpanan lalu simpan lagi."
 }
