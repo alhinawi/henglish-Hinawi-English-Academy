@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "לא ניתן לטעון את ספריית המשפטים. זו שגיאת טעינה, ולא חיפוש ללא תוצאות. נסו שוב.",
-  "dt.errNoPdfText": "אין בקובץ PDF זה טקסט שניתן לבחור, וייתכן שהוא מכיל דפים סרוקים. העלו PDF עם טקסט שניתן לבחור או הדביקו את הטקסט בקובץ TXT."
+  "dt.errNoPdfText": "אין בקובץ PDF זה טקסט שניתן לבחור, וייתכן שהוא מכיל דפים סרוקים. העלו PDF עם טקסט שניתן לבחור או הדביקו את הטקסט בקובץ TXT.",
+  "lp.noteStorage": "ההערות נשמרות רק בדפדפן הזה, בנפרד לכל לומד ושיעור. אין סנכרון עם מכשירים אחרים.",
+  "lp.noteSavedLocal": "נשמר בדפדפן הזה."
 }

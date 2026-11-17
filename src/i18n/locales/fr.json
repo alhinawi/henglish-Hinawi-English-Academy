@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "La bibliothèque de phrases ne se charge pas. Il s’agit d’une erreur de chargement, pas d’une recherche sans résultat. Réessayez.",
-  "dt.errNoPdfText": "Ce PDF ne contient pas de texte sélectionnable et peut contenir des pages numérisées. Importez un PDF avec du texte sélectionnable ou copiez le texte dans un fichier TXT."
+  "dt.errNoPdfText": "Ce PDF ne contient pas de texte sélectionnable et peut contenir des pages numérisées. Importez un PDF avec du texte sélectionnable ou copiez le texte dans un fichier TXT.",
+  "lp.noteStorage": "Les notes restent dans ce navigateur, séparées par élève et leçon. Elles ne sont pas synchronisées avec les autres appareils.",
+  "lp.noteSavedLocal": "Enregistré dans ce navigateur."
 }
