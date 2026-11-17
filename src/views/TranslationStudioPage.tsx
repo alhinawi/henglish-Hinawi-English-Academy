@@ -3,7 +3,7 @@
 // Flagship contextual translation engine, grammar awareness, OCR, voice & practice
 // ==============================================================================
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   LanguageCode,
   TranslationMode,
@@ -76,9 +76,24 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   // User Level
   const currentLevel: CEFRLevel = userProfile?.currentLevel || 'B1';
 
+  const requestVersion = useRef(0);
+  const invalidateTranslation = () => {
+    requestVersion.current += 1;
+    setIsLoading(false);
+    setError(null);
+    setTranslationResult(null);
+    setSelectedWordDetail(null);
+    setIsWordModalOpen(false);
+    setWordAnalysisUnavailable(false);
+  };
+  useEffect(() => () => { requestVersion.current += 1; }, []);
+
   // Perform translation on mount or when requested
-  const handleTranslate = async (textToTranslate?: string) => {
-    const text = (textToTranslate || sourceText).trim();
+  const handleTranslate = async (textToTranslate?: string, parameters?: { sourceLang?: LanguageCode; targetLang?: LanguageCode; mode?: TranslationMode }) => {
+    invalidateTranslation();
+    const version = requestVersion.current;
+    const isCurrent = () => version === requestVersion.current;
+    const text = (textToTranslate ?? sourceText).trim();
     if (!text) return;
 
     setIsLoading(true);
@@ -88,15 +103,17 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
     try {
       const result = await executeTranslation({
         text,
-        sourceLang,
-        targetLang,
-        mode,
+        sourceLang: parameters?.sourceLang ?? sourceLang,
+        targetLang: parameters?.targetLang ?? targetLang,
+        mode: parameters?.mode ?? mode,
         userLevel: currentLevel,
       });
 
+      if (!isCurrent()) return;
       setTranslationResult(result);
       playSound('correct');
     } catch (err) {
+      if (!isCurrent()) return;
       if (isAiServiceUnavailable(err)) {
         setError(t('ai.unavailable'));
       } else {
@@ -105,7 +122,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       }
       playSound('wrong');
     } finally {
-      setIsLoading(false);
+      if (isCurrent()) setIsLoading(false);
     }
   };
 
@@ -119,15 +136,17 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   const handleSwapLanguages = () => {
     const prevSource = sourceLang === 'auto' ? (translationResult?.detectedSourceLang || 'en') : sourceLang;
     const prevTarget = targetLang;
+    const swappedText = translationResult?.translatedText;
 
+    invalidateTranslation();
     setSourceLang(prevTarget);
     setTargetLang(prevSource);
 
     // Swap texts if translation exists
-    if (translationResult?.translatedText) {
-      setSourceText(translationResult.translatedText);
+    if (swappedText) {
+      setSourceText(swappedText);
       setTranslationResult(null);
-      handleTranslate(translationResult.translatedText);
+      void handleTranslate(swappedText, { sourceLang: prevTarget, targetLang: prevSource });
     }
   };
 
@@ -269,12 +288,12 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
               sourceLang={sourceLang}
               targetLang={targetLang}
               detectedLang={translationResult?.detectedSourceLang}
-              onSourceChange={setSourceLang}
-              onTargetChange={setTargetLang}
+              onSourceChange={lang => { invalidateTranslation(); setSourceLang(lang); }}
+              onTargetChange={lang => { invalidateTranslation(); setTargetLang(lang); }}
               onSwap={handleSwapLanguages}
             />
 
-            <ModeSelector currentMode={mode} onSelectMode={setMode} />
+            <ModeSelector currentMode={mode} onSelectMode={nextMode => { invalidateTranslation(); setMode(nextMode); }} />
           </div>
 
           {/* Responsive Split Editor / Output Grid */}
@@ -284,7 +303,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
               text={sourceText}
               sourceLang={sourceLang}
               detectedLang={translationResult?.detectedSourceLang}
-              onChangeText={setSourceText}
+              onChangeText={text => { invalidateTranslation(); setSourceText(text); }}
               onTranslate={() => handleTranslate()}
               isLoading={isLoading}
               onStartVoiceInput={() => setActiveTab('voice')}
@@ -382,7 +401,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
             setSourceText(text);
             if (reuseMode) setMode(reuseMode as TranslationMode);
             setActiveTab('studio');
-            handleTranslate(text);
+            void handleTranslate(text, { mode: reuseMode as TranslationMode | undefined });
           }}
         />
       )}
