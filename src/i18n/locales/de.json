@@ -2903,5 +2903,6 @@
   "dt.errNoPdfText": "Diese PDF enthält keinen auswählbaren Text und möglicherweise gescannte Seiten. Lade eine PDF mit auswählbarem Text hoch oder füge den Text in eine TXT-Datei ein.",
   "lp.noteStorage": "Notizen werden nur in diesem Browser gespeichert, getrennt nach Lernenden und Lektionen. Keine Synchronisierung mit anderen Geräten.",
   "lp.noteSavedLocal": "In diesem Browser gespeichert.",
-  "ts.vocabReviewPartial": "In den Vokabeln auf diesem Gerät gespeichert, aber nicht im Wiederholungsplan. Speicherzugriff erlauben und erneut speichern."
+  "ts.vocabReviewPartial": "In den Vokabeln auf diesem Gerät gespeichert, aber nicht im Wiederholungsplan. Speicherzugriff erlauben und erneut speichern.",
+  "ap.storageError": "Dein Spielfortschritt bleibt nur für diesen Besuch erhalten. Speichern auf diesem Gerät ist fehlgeschlagen. Erlaube die Speicherung und versuche es vor dem Verlassen erneut."
 }

@@ -8,6 +8,7 @@ import { useSyncExternalStore, useCallback, useEffect, useMemo, useRef } from 'r
 import { useAuth } from '../context/AuthContext';
 
 export interface ArcadeProgress {
+  storageFailed?: boolean;
   history: { id: string; score: number; xp: number; at: number }[];
   xp: number;
   totalPlays: number;
@@ -84,14 +85,13 @@ function getState(key: string): ArcadeProgress {
 }
 const listeners = new Set<() => void>();
 
-function persist(key: string, state: ArcadeProgress) {
-  states.set(key, state);
-  try {
-    localStorage.setItem(key, JSON.stringify(state));
-  } catch {
-    // private mode: progress lives in memory only
-  }
+function persist(key: string, state: ArcadeProgress): boolean {
+  const { storageFailed: previousFailure, ...durable } = state;
+  let saved = false;
+  try { localStorage.setItem(key, JSON.stringify(durable)); saved = true; } catch { /* Keep this visit usable, but disclose the unsaved progress. */ }
+  states.set(key, { ...durable, storageFailed: !saved });
   listeners.forEach((l) => l());
+  return saved;
 }
 
 /**
@@ -141,6 +141,10 @@ export function useArcadeProgress() {
     if (!current.current.mounted || current.current.key !== key) return { xpEarned: 0, newBest: false };
     return recordGameResult(key, gameId, score);
   }, [key]);
+  const retrySave = useCallback(() => {
+    if (!current.current.mounted || current.current.key !== key) return false;
+    return persist(key, getState(key));
+  }, [key]);
   const subscribe = useCallback((cb: () => void) => {
     listeners.add(cb);
     return () => {
@@ -148,5 +152,5 @@ export function useArcadeProgress() {
     };
   }, []);
   const snapshot = useSyncExternalStore(subscribe, () => getState(key), () => getState(key));
-  return useMemo(() => ({ ...snapshot, recordGameResult: recordResult }), [snapshot, recordResult]);
+  return useMemo(() => ({ ...snapshot, recordGameResult: recordResult, retrySave }), [snapshot, recordResult, retrySave]);
 }
