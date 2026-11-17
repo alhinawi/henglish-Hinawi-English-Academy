@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { loadPlacementHistory, placementHistoryKey } from '../services/placementHistory';
 import React, { useState, useEffect, useRef } from 'react';
 import { PageRoute, CEFRLevel } from '../types';
@@ -11,7 +12,7 @@ import {
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { generatePlacementSessionFromBank } from '../services/placementService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { playSound, speakEnglish, fireCelebration, stopSpeech } from '../utils/audio';
+import { playSound, fireCelebration, stopSpeech } from '../utils/audio';
 import {
   FileCheck2,
   Sparkles,
@@ -21,7 +22,6 @@ import {
   ArrowRight,
   RotateCcw,
   BookOpen,
-  Volume2,
   BarChart3,
   TrendingUp,
   ShieldAlert,
@@ -165,7 +165,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
         <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8 max-w-3xl mx-auto shadow-2xl">
           {/* Header & Progress Indicator */}
           <div className="space-y-3">
-            <div className="flex items-center justify-between text-xs font-bold text-[#b9b6d5]">
+            <div className="flex flex-wrap items-start justify-between gap-3 text-xs font-bold text-[#b9b6d5]">
               <span>{t('exa.questionN').replace('{n}', String(currentQIdx + 1)).replace('{m}', String(sessionQuestions.length))}</span>
               <div className="flex items-center gap-2">
                 <span className="px-2 py-0.5 rounded bg-[#ffd166]/15 text-[#ffd166] font-mono">
@@ -186,19 +186,10 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
           {/* Reading or Listening Passage Card if exists */}
           {(currentQ.passage || currentQ.audioText) && (
             <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
-              <div className="flex items-center justify-between text-xs font-bold text-[#ffd166]">
+              <div className="flex flex-wrap items-start justify-between gap-3 text-xs font-bold text-[#ffd166]">
                 <span>{currentQ.skill === 'listening' ? t('exa.listeningText') : t('exa.readingText')}</span>
                 {currentQ.audioText && (
-                  <button
-                    onClick={() => {
-                      playSound('click');
-                      speakEnglish(currentQ.audioText!);
-                    }}
-                    className="p-1.5 rounded-lg bg-[#41e7ff]/20 text-[#41e7ff] hover:bg-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-[11px]"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                    <span>{t('exa.playAudio')}</span>
-                  </button>
+                  <LessonSpeechButton key={currentQ.id} text={currentQ.audioText!} label={t('exa.playAudio')} className="p-1.5 rounded-lg bg-[#41e7ff]/20 text-[#41e7ff] hover:bg-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-[11px]" />
                 )}
               </div>
               {currentQ.passage ? (
@@ -220,16 +211,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
               {currentQ.prompt}
             </p>
             {/* Quick Audio for Prompt */}
-            <button
-              onClick={() => {
-                playSound('click');
-                speakEnglish(currentQ.prompt);
-              }}
-              className="inline-flex items-center gap-1 text-xs text-[#41e7ff] hover:underline cursor-pointer pt-1"
-            >
-              <Volume2 className="w-3.5 h-3.5" />
-              <span>{t('exa.listenHint')}</span>
-            </button>
+            <LessonSpeechButton key={currentQ.id} text={currentQ.prompt} label={t('exa.listenHint')} className="inline-flex items-center gap-1 text-xs text-[#41e7ff] hover:underline cursor-pointer pt-1" />
           </div>
 
           {/* Options Grid */}
@@ -316,7 +298,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
               <div className="space-y-3">
                 {(Object.entries(result.skillBreakdown) as [QuestionSkill, { score: number; total: number; percentage: number }][]).map(([skillKey, stat]) => (
                   <div key={skillKey} className="p-3.5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
-                    <div className="flex items-center justify-between text-xs font-bold">
+                    <div className="flex flex-wrap items-start justify-between gap-3 text-xs font-bold">
                       <span className="text-[#dedbf4] capitalize">{skillKey}</span>
                       <span className="text-[#ffd166] font-mono">{stat.percentage}% ({stat.score}/{stat.total})</span>
                     </div>
