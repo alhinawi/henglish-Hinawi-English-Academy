@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Check, X } from 'lucide-react';
-import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
+import { allSentencePairs, buildTrueFalseRounds, TrueFalseRound } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
@@ -16,12 +16,6 @@ const META: ArcadeGameMeta = {
 
 const ROUNDS = 10;
 
-interface TFRound {
-  en: string;
-  ar: string;
-  truth: boolean;
-}
-
 export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const meta = { ...META, title: t('tf.title'), tagline: t('tf.tagline') };
@@ -29,7 +23,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
-  const [rounds, setRounds] = useState<TFRound[]>([]);
+  const [rounds, setRounds] = useState<TrueFalseRound[]>([]);
   const [round, setRound] = useState(0);
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState<'ok' | 'no' | null>(null);
@@ -39,14 +33,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     cancelTransition();
     setPhase('loading');
     const pairs = await allSentencePairs(2, 10);
-    const picks = shuffle(pairs).slice(0, ROUNDS);
-    const list: TFRound[] = picks.map((p, i) => {
-      const truth = Math.random() < 0.5;
-      if (truth) return { en: p.en, ar: p.ar, truth };
-      const others = picks.filter((_, j) => j !== i);
-      const fake = others[Math.floor(Math.random() * others.length)];
-      return { en: p.en, ar: fake.ar, truth: false };
-    });
+    const list = buildTrueFalseRounds(pairs, ROUNDS);
     setRounds(list);
     setScore(0);
     setRound(0);
@@ -61,7 +48,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setFeedback(ok ? 'ok' : 'no');
     const gained = ok ? 1 : 0;
     scheduleTransition(() => {
-      if (round + 1 >= ROUNDS) {
+      if (round + 1 >= rounds.length) {
         setEnd(recordGameResult(META.id, score + gained));
         setScore((s) => s + gained);
         setPhase('end');
@@ -93,7 +80,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const r = rounds[round];
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={meta.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
+      <ArcadeHud title={meta.title} round={round + 1} totalRounds={rounds.length} score={score} onQuit={onExit} />
       <div
         className={`p-6 sm:p-8 rounded-3xl border text-center space-y-5 transition-colors ${
           feedback === 'ok'
