@@ -36,7 +36,7 @@ const LearnerSpeakingAcademy: React.FC<SpeakingAcademyPageProps & { storageKey: 
   const [saveError, setSaveError] = useState('');
   const active = SPEAKING_LESSONS.find(l => l.id === activeId);
   const appText = useAppTextMap('speakingAcademyData');
-  const filtered = SPEAKING_LESSONS.filter(l => (level === 'all' || l.level === level) && `${l.title} ${l.titleEn} ${l.unit}`.toLowerCase().includes(search.toLowerCase()));
+  const filtered = SPEAKING_LESSONS.filter(l => (level === 'all' || l.level === level) && `${l.title} ${l.titleEn} ${l.unit} ${txText(appText, l.title)} ${txText(appText, l.unit)}`.toLowerCase().includes(search.trim().toLowerCase()));
   const units = [...new Set(filtered.map(l=>l.unit))];
   function finish() {
     if (!active || done.includes(active.id)) return;
