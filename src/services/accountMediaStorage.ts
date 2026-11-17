@@ -5,15 +5,15 @@ export function mediaStorageKey(base: string, userId?: string): string {
 
 export function readMediaList(base: string, userId?: string): unknown[] {
   try {
-    const guest = mediaStorageKey(base);
-    if (localStorage.getItem(guest) === null) {
-      const legacy = localStorage.getItem(base);
-      // The browser-wide record has no reliable owner. Preserve it as guest
-      // once, keeping the original untouched as a recovery copy.
-      try {
+    // Legacy guest recovery is best-effort and independent of owner reads.
+    try {
+      const guest = mediaStorageKey(base);
+      if (localStorage.getItem(guest) === null) {
+        const legacy = localStorage.getItem(base);
+        // Preserve the original browser-wide record as a recovery copy.
         if (legacy !== null && Array.isArray(JSON.parse(legacy))) localStorage.setItem(guest, legacy);
-      } catch { /* A damaged legacy copy must not hide a valid owner record. */ }
-    }
+      }
+    } catch { /* A failed migration must not hide a valid owner record. */ }
     const parsed: unknown = JSON.parse(localStorage.getItem(mediaStorageKey(base, userId)) || '[]');
     return Array.isArray(parsed) ? parsed : [];
   } catch { return []; }
