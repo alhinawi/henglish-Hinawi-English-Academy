@@ -198,6 +198,10 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
   // Play a YouTube result on the fly
   const handlePlayYouTubeResult = (item: YouTubeApiSearchResult) => {
+    if (ytResults?.source === 'verified_catalog_fallback' && item.catalogScene) {
+      handleSelectScene(item.catalogScene);
+      return;
+    }
     playSound('click');
     const tempScene: EducationalVideoItem = {
       id: `live-${item.youtubeId}`,
