@@ -19,9 +19,13 @@ export interface PersistentProgressPayload {
  * Loads learning progress from Supabase for authenticated user.
  * Falls back to null if user not authenticated or on error.
  */
-export async function loadUserProgressFromDatabase(userId: string): Promise<PersistentProgressPayload | null> {
+export type ProgressLoadResult =
+  | { status: 'ready'; progress: PersistentProgressPayload }
+  | { status: 'empty' | 'unavailable' };
+
+export async function readUserProgressFromDatabase(userId: string): Promise<ProgressLoadResult> {
   if (!supabase || !userId || userId.startsWith('guest-') || userId.startsWith('demo-')) {
-    return null;
+    return { status: 'unavailable' };
   }
 
   try {
@@ -31,11 +35,10 @@ export async function loadUserProgressFromDatabase(userId: string): Promise<Pers
       .eq('user_id', userId)
       .maybeSingle();
 
-    if (error || !data) {
-      return null;
-    }
+    if (error) return { status: 'unavailable' };
+    if (!data) return { status: 'empty' };
 
-    return {
+    return { status: 'ready', progress: {
       totalXp: data.total_xp || 0,
       currentLevel: data.current_level || 'A1',
       targetLevel: data.target_level || 'B2',
@@ -47,11 +50,17 @@ export async function loadUserProgressFromDatabase(userId: string): Promise<Pers
       dailyGoalTarget: data.daily_goal_target || 1,
       dailyGoalCurrent: data.daily_goal_current || 0,
       dailyGoalCompleted: Boolean(data.daily_goal_completed),
-    };
+    } };
   } catch (err) {
     console.warn('[ProgressSync] Failed to load progress from DB:', err);
-    return null;
+    return { status: 'unavailable' };
   }
+}
+
+/** Compatibility reader for callers that do not write on a missing record. */
+export async function loadUserProgressFromDatabase(userId: string): Promise<PersistentProgressPayload | null> {
+  const result = await readUserProgressFromDatabase(userId);
+  return result.status === 'ready' ? result.progress : null;
 }
 
 /**
@@ -157,7 +166,9 @@ export async function migrateLocalProgressToSupabase(
 
   try {
     // 1. Fetch current DB progress
-    const currentDb = await loadUserProgressFromDatabase(userId);
+    const result = await readUserProgressFromDatabase(userId);
+    if (result.status === 'unavailable') return { success: false, migratedCount: 0 };
+    const currentDb = result.status === 'ready' ? result.progress : null;
 
     // Merge logic: Take highest XP, union completed lessons and rules, merge quiz scores
     const mergedXp = Math.max(currentDb?.totalXp || 0, localProgress.xp || 0);
