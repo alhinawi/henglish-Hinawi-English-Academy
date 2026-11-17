@@ -149,9 +149,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const verifyOtp = async (email: string, code: string) => {
+    const ownerId = session.user.id;
+    const requestedEmail = email.trim().toLowerCase();
     const res = await verifyEmailOtp(email, code);
     if (res.success) {
-      setSession(prev => ({ ...prev, isEmailVerified: true }));
+      setSession(prev => prev.isLoggedIn && prev.user.id === ownerId && prev.user.email?.trim().toLowerCase() === requestedEmail
+        ? { ...prev, isEmailVerified: true } : prev);
     }
     return res;
   };
