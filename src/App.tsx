@@ -660,6 +660,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
       {/* Global Search Modal (Ctrl+K) */}
       <GlobalSearchModal
+        key={authUser?.id || 'guest'}
+        learnerId={authUser?.id}
         userLevel={activeProfile.currentLevel}
         isOpen={isSearchOpen}
         onClose={() => setIsSearchOpen(false)}
