@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Flame } from 'lucide-react';
-import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
+import { allWordPairs, translationDistractors, shuffle, WordPair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
@@ -34,7 +34,7 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
 
   const nextRound = (words: WordPair[]) => {
     const c = words[Math.floor(Math.random() * words.length)];
-    const wrongs = sample(words.filter((w) => w.ar !== c.ar), 3).map((w) => w.ar);
+    const wrongs = translationDistractors(words, c).map((w) => w.ar);
     setCurrent(c);
     setOptions(shuffle([c.ar, ...wrongs]));
     setPicked(null);

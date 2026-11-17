@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
-import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
+import { allWordPairs, translationDistractors, shuffle, WordPair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
@@ -44,7 +44,7 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   const nextRound = (words: WordPair[]) => {
     const c = words[Math.floor(Math.random() * words.length)];
-    const wrongs = sample(words.filter((w) => w.en !== c.en), 3);
+    const wrongs = translationDistractors(words, c);
     setCurrent(c);
     setOptions(shuffle([c, ...wrongs]));
     setPicked(null);
