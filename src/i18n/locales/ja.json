@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "例文ライブラリを読み込めませんでした。検索結果がないのではなく、読み込みエラーです。もう一度お試しください。",
   "dt.errNoPdfText": "このPDFには選択できるテキストがなく、スキャン画像の可能性があります。テキストを選択できるPDFをアップロードするか、テキストをTXTファイルに貼り付けてください。"
 }

@@ -2898,5 +2898,6 @@
   "ml.streakNote": "Aufeinanderfolgende Tage aus deinen Lernaktivitäten.",
   "ml.levelNote": "Profilniveau und Lernziel sind kein Einstufungstestergebnis.",
   "ml.reviewNeeded": "Antworten prüfen und erneut üben",
+  "sl.loadError": "Die Satzbibliothek konnte nicht geladen werden. Das ist ein Ladefehler, kein leeres Suchergebnis. Versuche es erneut.",
   "dt.errNoPdfText": "Diese PDF enthält keinen auswählbaren Text und möglicherweise gescannte Seiten. Lade eine PDF mit auswählbarem Text hoch oder füge den Text in eine TXT-Datei ein."
 }

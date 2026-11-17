@@ -76,8 +76,14 @@ export async function loadSentences(): Promise<SentenceItem[]> {
       if (!response.ok) {
         throw new Error(`Failed to load sentences: ${response.statusText}`);
       }
-      const data: SentenceItem[] = await response.json();
-      cachedSentences = data;
+      const data: unknown = await response.json();
+      if (!Array.isArray(data) || data.length === 0 || data.some(item =>
+        !item || typeof item !== 'object' ||
+        ['id', 'english', 'arabicEg', 'arabicFusha', 'grammar', 'section', 'subcategory'].some(key => typeof item[key] !== 'string') ||
+        !['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(item.cefr) ||
+        !Array.isArray(item.vocabulary) || !Array.isArray(item.relatedSentences) || !Array.isArray(item.tags))) {
+        throw new Error('Invalid sentence library response');
+      }
 
       // Populate indices
       cefrIndex.clear();
@@ -102,6 +108,7 @@ export async function loadSentences(): Promise<SentenceItem[]> {
         grammarIndex.set(gKey, gList);
       });
 
+      cachedSentences = data;
       return data;
     } catch (err) {
       console.error('Error fetching sentences database:', err);

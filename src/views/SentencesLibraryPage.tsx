@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - 5,000 ESSENTIAL ENGLISH SENTENCES LIBRARY PAGE
 // Full-fledged educational platform featuring 15 learning modes, intelligent search,
@@ -105,6 +106,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   // Main state
   const [allSentences, setAllSentences] = useState<SentenceItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [activeMode, setActiveMode] = useState<LearningMode>('browse');
 
   // Search & Filter state
@@ -113,7 +116,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   const [selectedSection, setSelectedSection] = useState<string | 'all'>('all');
   const [selectedGrammar, setSelectedGrammar] = useState<string | 'all'>('all');
   const [semanticMatches, setSemanticMatches] = useState<SemanticExplanationMatch[]>([]);
-  const [page, setPage] = useState(1);
+  const [requestedPage, setPage] = useState(1);
   const itemsPerPage = 20;
 
   // Highlights state (Daily, Weekly, Random)
@@ -150,29 +153,36 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     return c;
   }, [allSentences]);
 
-  // Load database once on mount
+  // Failed loads stay distinct from an empty search and can be retried.
   useEffect(() => {
+    let live = true;
     async function init() {
       setIsLoading(true);
-      const data = await loadSentences();
-      setAllSentences(data);
-      const daily = await getDailySentence();
-      setDailySentence(daily);
-      const weekly = await getSentenceOfTheWeek();
-      setWeeklySentence(weekly);
-      const rand = await getRandomSentence();
-      setRandomSentence(rand);
-      setStats(getSentenceStats(learnerId));
-      setCollections(getCollections(learnerId));
-      setIsLoading(false);
+      setLoadError(false);
+      try {
+        const data = await loadSentences();
+        if (!data.length) throw new Error('Sentence library unavailable');
+        const [daily, weekly, random] = await Promise.all([getDailySentence(), getSentenceOfTheWeek(), getRandomSentence()]);
+        if (!live) return;
+        setAllSentences(data);
+        setDailySentence(daily);
+        setWeeklySentence(weekly);
+        setRandomSentence(random);
+        setStats(getSentenceStats(learnerId));
+        setCollections(getCollections(learnerId));
+      } catch {
+        if (live) setLoadError(true);
+      } finally { if (live) setIsLoading(false); }
     }
-    init();
-  }, []);
+    void init();
+    return () => { live = false; };
+  }, [loadAttempt, learnerId]);
 
   // Sync search results
   useEffect(() => {
     let isCancelled = false;
     async function runSearch() {
+      if (isLoading || loadError) return;
       if (activeMode !== 'browse' && activeMode !== 'cefr' && activeMode !== 'sections' && activeMode !== 'grammar') {
         return;
       }
@@ -191,7 +201,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     return () => {
       isCancelled = true;
     };
-  }, [searchQuery, selectedCefr, selectedSection, selectedGrammar, activeMode]);
+  }, [searchQuery, selectedCefr, selectedSection, selectedGrammar, activeMode, isLoading, loadError]);
 
   // Filtered Sentences calculation based on active mode
   const currentSentencesPool = useMemo(() => {
@@ -250,13 +260,16 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     }
   }, [allSentences, activeMode, selectedCefr, selectedSection, selectedGrammar, searchQuery, isLoading, learningRevision]);
 
-  // Pagination slice
+  // Removing the final saved/due card on a page must reveal the remaining
+  // records instead of rendering a false empty list at an out-of-range page.
+  const totalPages = Math.max(1, Math.ceil(currentSentencesPool.length / itemsPerPage));
+  const page = Math.min(Math.max(1, requestedPage), totalPages);
+  useEffect(() => { setPage(current => Math.min(Math.max(1, current), totalPages)); }, [totalPages]);
+  useEffect(() => { setPage(1); }, [selectedCefr, selectedSection, selectedGrammar]);
   const paginatedSentences = useMemo(() => {
     const startIndex = (page - 1) * itemsPerPage;
     return currentSentencesPool.slice(startIndex, startIndex + itemsPerPage);
   }, [currentSentencesPool, page]);
-
-  const totalPages = Math.ceil(currentSentencesPool.length / itemsPerPage) || 1;
 
   // Switch learning mode
   const handleSelectMode = (mode: LearningMode) => {
@@ -332,6 +345,9 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     deleteCollection(colId, learnerId);
     setCollections(getCollections(learnerId));
   };
+
+  if (isLoading) return <div role="status" className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center text-slate-200">{t('vx.loading')}</div>;
+  if (loadError) return <section role="alert" className="rounded-3xl border border-amber-300/30 bg-amber-300/5 p-8 space-y-4 text-center"><p className="text-amber-100">{t('sl.loadError')}</p><button type="button" onClick={() => setLoadAttempt(value => value + 1)} className="min-h-11 rounded-xl bg-purple-500 px-6 text-white font-bold">{t('sg.retry')}</button></section>;
 
   return (
     <div className="space-y-8 pb-16 text-right selection:bg-purple-500/30">
@@ -690,19 +706,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
 
           {/* Big Audio Play Button */}
           <div className="py-6 flex items-center justify-center gap-4">
-            <button
-              onClick={() => speakText(randomSentence.english, { speed: 1.0 })}
-              className="w-20 h-20 rounded-3xl bg-purple-600 hover:bg-purple-500 text-white flex items-center justify-center shadow-2xl shadow-purple-600/50 transition-all hover:scale-105 cursor-pointer"
-            >
-              <Volume2 className="w-10 h-10 fill-current" />
-            </button>
-            <button
-              onClick={() => speakText(randomSentence.english, { speed: 0.75 })}
-              className="w-14 h-14 rounded-2xl bg-white/10 hover:bg-white/20 text-white/80 hover:text-white flex items-center justify-center transition-all border border-white/10 cursor-pointer"
-              title={t('sl.slowSpeech')}
-            >
-              <span className="font-bold text-xs">0.75x</span>
-            </button>
+            <LessonSpeechButton text={randomSentence.english} label={t('sc.listenNatural')} iconOnly className="w-20 h-20 rounded-3xl bg-purple-600 hover:bg-purple-500 text-white flex items-center justify-center shadow-2xl shadow-purple-600/50 transition-all cursor-pointer" />
+            <LessonSpeechButton text={randomSentence.english} label={t('sl.slowSpeech')} speed={0.75} className="min-h-14 rounded-2xl bg-white/10 hover:bg-white/20 text-white px-4 font-bold border border-white/10 cursor-pointer" />
           </div>
 
           {/* Reveal Card */}

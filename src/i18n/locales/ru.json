@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "Не удалось загрузить библиотеку предложений. Это ошибка загрузки, а не отсутствие результатов поиска. Попробуйте ещё раз.",
   "dt.errNoPdfText": "В этом PDF нет выделяемого текста. Возможно, он содержит сканы страниц. Загрузите PDF с выделяемым текстом или вставьте текст в файл TXT."
 }
