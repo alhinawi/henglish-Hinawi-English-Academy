@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { gapFillItems, shuffle, GapItem } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
 const ROUNDS = 10;
@@ -12,6 +12,7 @@ export const GapFillGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'gap-fill', title: t('ah.gameGapFill'), tagline: t('arc.gapIntro') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [rounds, setRounds] = useState<GapItem[]>([]);
   const [options, setOptions] = useState<string[]>([]);

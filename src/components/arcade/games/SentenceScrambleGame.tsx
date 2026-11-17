@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
 const ROUNDS = 8;
@@ -17,6 +17,7 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
   };
 
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [rounds, setRounds] = useState<SentencePair[]>([]);
   const [round, setRound] = useState(0);

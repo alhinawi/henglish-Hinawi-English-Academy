@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, sample, shuffle, SentencePair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
 const PAIRS = 6;
@@ -19,6 +19,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
   const { t, lang } = useLanguage();
   const META: ArcadeGameMeta = { id: 'movie-memory', title: t('mm.title'), tagline: t('mm.intro') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [cards, setCards] = useState<Card[]>([]);
   const [open, setOpen] = useState<number[]>([]);

@@ -4,7 +4,7 @@ import { txText, useAppTextMap } from '../../../services/contentI18nService';
 import { ArcadeHud, ArcadeEnd } from '../ArcadeShell';
 import { sample, shuffle, uniqueAcademyWords } from '../arcadeContent';
 import { ArcadeIcon } from '../ArcadeIcon';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 import { useLanguage } from '../../../i18n/LanguageContext';
 export const PUZZLE_GAMES = [
@@ -26,7 +26,7 @@ export function createWordGrid(pool: VocabWord[]) {
 const btn='rounded-xl border border-white/15 bg-white/5 p-3 text-sm font-bold text-white disabled:opacity-40';
 export function PuzzleGame({id,onExit}:{id:PuzzleId;onExit:()=>void}) {
   const { t }=useLanguage();
-  const metaRaw=PUZZLE_GAMES.find(g=>g.id===id)!; const meta={...metaRaw,title:t(metaRaw.title),tagline:t(metaRaw.tagline)}; const progress=useArcadeProgress();
+  const metaRaw=PUZZLE_GAMES.find(g=>g.id===id)!; const meta={...metaRaw,title:t(metaRaw.title),tagline:t(metaRaw.tagline)}; const progress=useArcadeProgress(); const { recordGameResult } = progress;
   const [phase,setPhase]=useState<'intro'|'play'|'end'>('intro'); const [level,setLevel]=useState('all');
   const [grid,setGrid]=useState<string[]>([]); const [hidden,setHidden]=useState<GridWord[]>([]); const [found,setFound]=useState<number[]>([]);const [anchor,setAnchor]=useState<number|null>(null);
   const [cards,setCards]=useState<Card[]>([]);const [opened,setOpened]=useState<number[]>([]);const [matched,setMatched]=useState<number[]>([]);const [moves,setMoves]=useState(0);

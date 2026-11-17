@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Check, X } from 'lucide-react';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 import { useLanguage } from '../../../i18n/LanguageContext';
 
@@ -25,6 +25,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const meta = { ...META, title: t('tf.title'), tagline: t('tf.tagline') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [rounds, setRounds] = useState<TFRound[]>([]);
   const [round, setRound] = useState(0);
