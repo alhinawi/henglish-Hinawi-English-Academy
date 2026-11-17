@@ -5,3 +5,7 @@ assert.equal((card.match(/e.stopPropagation\(\); onOpenDetails\(entry\);/g)||[])
 console.log('Word details named modal dialog, initial/trapped/restored focus, keyboard headword buttons in grid and list: PASS');
 for(const text of ["window.confirm(t('wdm.discardNote'))",'userNote !== persistedNote','setPersistedNote(userNote)',"setNoteSaved(true)",'onSubmit={e => { e.preventDefault(); handleSaveNote(); }}',"window.removeEventListener('beforeunload', warn)"])assert.ok(modal.includes(text),text);
 for(const l of ['ar','en','de']){const d=JSON.parse(fs.readFileSync('src/i18n/locales/'+l+'.json'));for(const key of ['wdm.discardNote','wdm.noteUnsaved','wdm.noteSaved'])assert.ok(d[key]);}
+
+const manager=fs.readFileSync('src/components/vocabulary/AdminVocabularyModal.tsx','utf8');
+for(const text of ['role="dialog"','aria-modal="true"','aria-labelledby={titleId}','id={titleId}',"aria-label={t('fs.close')}",'closeRef.current?.focus()','event.shiftKey','first.focus()','opener?.isConnected',"document.removeEventListener('keydown', trap)","event.key === 'Escape'"])assert.ok(manager.includes(text),text);
+console.log('Vocabulary management named modal, labelled close, initial/trapped/restored focus and Escape: PASS');
