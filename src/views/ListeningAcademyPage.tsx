@@ -4,7 +4,7 @@ import type { PageRoute } from '../types';
 import { ALL_LISTENING_LESSONS, normalizeListeningAnswer, type ListeningLesson } from '../data/listeningAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { speakEnglish, stopSpeech, subscribeSpeechState, type SpeechSpeed } from '../utils/audio';
+import { getVoiceSettings, speakEnglish, stopSpeech, subscribeSpeechState, type SpeechSpeed } from '../utils/audio';
 import { ArrowRight, Check, CheckCircle2, Headphones, Play, Search, Square, Volume2, X } from 'lucide-react';
 
 const KEY = 'henglish-listening-studio-v1';
@@ -85,8 +85,13 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
     requestAnimationFrame(() => panel.current?.scrollIntoView({ behavior: 'instant', block: 'start' }));
   }
   function play(text: string) {
-    stopSpeech(); setAudioError(''); setPlaying(true);
-    speakEnglish(text, { speed, accent: selected?.accent === 'British' ? 'UK' : 'US', onEnd: () => setPlaying(false), onError: () => { setPlaying(false); setAudioError(t('listen.audioError')); } });
+    stopSpeech(); setAudioError('');
+    if (getVoiceSettings().isMuted) { setPlaying(false); setAudioError(t('w3.voice.muted')); return; }
+    let settled = false;
+    speakEnglish(text, { speed, accent: selected?.accent === 'British' ? 'UK' : 'US', onEnd: () => { settled = true; setPlaying(false); }, onError: () => { settled = true; setPlaying(false); setAudioError(t('listen.audioError')); } });
+    // Starting synthesis cancels the previous request synchronously. Keep Stop
+    // available after that notification, including while the new request waits.
+    setPlaying(!settled);
   }
   const button = 'rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm font-bold text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-cyan-300 disabled:opacity-40';
   const box = 'rounded-3xl border border-white/10 bg-[#12162b] p-5 sm:p-7';
