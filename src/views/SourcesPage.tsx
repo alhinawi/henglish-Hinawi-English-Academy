@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   Play,
   Smartphone,
@@ -56,9 +56,9 @@ const COST_STYLES: Record<SourceCost, string> = {
   paid: 'bg-rose-400/15 text-rose-300 border-rose-400/30',
 };
 
-const BOOKMARKS_KEY = 'henglish-source-bookmarks';
+import { loadSourceBookmarks, toggleSourceBookmark } from '../services/sourceBookmarkStorage';
 
-export const SourcesPage: React.FC = () => {
+export const SourcesPage: React.FC<{ learnerId?: string }> = ({ learnerId }) => {
   const { t } = useLanguage();
   const [query, setQuery] = useState('');
   const appText = useAppTextMap('sourcesData');
@@ -66,28 +66,15 @@ export const SourcesPage: React.FC = () => {
   const [levelFilter, setLevelFilter] = useState<string>('all');
   const [bookmarksOnly, setBookmarksOnly] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
-  const [bookmarks, setBookmarks] = useState<string[]>([]);
-
-  useEffect(() => {
-    try {
-      const raw = window.localStorage.getItem(BOOKMARKS_KEY);
-      if (raw) setBookmarks(JSON.parse(raw));
-    } catch {
-      // ignore corrupt storage
-    }
-  }, []);
-
+  const [bookmarkState, setBookmarkState] = useState(() => {
+    try { return { items: loadSourceBookmarks(learnerId), error: false }; }
+    catch { return { items: [] as string[], error: true }; }
+  });
+  const bookmarks = bookmarkState.items.filter(id => LEARNING_SOURCES.some(source => source.id === id));
   const toggleBookmark = (id: string) => {
     playSound('click');
-    setBookmarks(prev => {
-      const next = prev.includes(id) ? prev.filter(b => b !== id) : [...prev, id];
-      try {
-        window.localStorage.setItem(BOOKMARKS_KEY, JSON.stringify(next));
-      } catch {
-        // storage unavailable
-      }
-      return next;
-    });
+    try { setBookmarkState({ items: toggleSourceBookmark(id, learnerId), error: false }); }
+    catch { setBookmarkState(previous => ({ ...previous, error: true })); }
   };
 
   const filtered = useMemo(() => {
@@ -133,6 +120,7 @@ export const SourcesPage: React.FC = () => {
           <button
             onClick={() => toggleBookmark(source.id)}
             aria-label={isBookmarked ? t('so.unbookmark') : t('so.bookmark')}
+            aria-pressed={isBookmarked}
             className={`shrink-0 p-1.5 rounded-lg transition-colors cursor-pointer ${
               isBookmarked ? 'text-[#ffd166]' : 'text-[#b9b6d5] hover:text-white'
             }`}
@@ -198,6 +186,8 @@ export const SourcesPage: React.FC = () => {
           </span>
         </div>
       </div>
+
+      {bookmarkState.error && <p role="status" className="rounded-xl border border-amber-300/30 p-3 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
 
       {/* Filters: slim sticky bar + dropdown panel attached to the bar (visible at any scroll position) */}
       <div className="sticky top-24 z-40">
