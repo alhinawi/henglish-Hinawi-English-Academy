@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { REAL_LIFE_DIALOGUES } from '../data/dialoguesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, speakEnglish } from '../utils/audio';
+import { playSound } from '../utils/audio';
+import { LessonSpeechButton } from './LessonSpeechButton';
 import { SpeakingRecorder } from './SpeakingPracticeStudio';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
@@ -139,22 +140,13 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
         
         {/* Dialogue Stream */}
         <div className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
-          <div className="flex items-center justify-between pb-3 border-b border-white/10">
+          <div className="flex flex-wrap items-start justify-between gap-3 pb-3 border-b border-white/10">
             <div>
               <h2 className="text-xl font-black text-white">{txText(appText, scenario.title)}</h2>
               <p className="text-xs text-[#b9b6d5]">{txText(appText, scenario.description)}</p>
             </div>
-            <button
-              onClick={() => {
-                // Read full dialogue sequentially
-                const fullText = scenario.lines.map(l => `${l.speaker}: ${l.en}`).join('. ');
-                speakEnglish(fullText);
-              }}
-              className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#41e7ff] text-xs font-bold flex items-center gap-1.5 cursor-pointer"
-            >
-              <Volume2 className="w-4 h-4" />
-              <span>{t('slp.playFull')}</span>
-            </button>
+            <LessonSpeechButton key={scenario.id} text={scenario.lines.map(l => `${l.speaker}: ${l.en}`).join('. ')} label={t('slp.playFull')}
+              className="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-[#41e7ff] text-xs font-bold flex items-center gap-1.5 cursor-pointer" />
           </div>
 
           <div className="space-y-4">
@@ -167,22 +159,16 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                     : 'bg-white/5 border-white/5'
                 }`}
               >
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex flex-wrap items-start justify-between gap-3 mb-2">
                   <div className="flex items-center gap-2 font-bold text-xs text-[#ffd166]">
                     <span>{line.avatar}</span>
                     <span>{line.speaker}</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => {
-                        setShadowingLineIdx(idx);
-                        speakEnglish(line.en);
-                      }}
-                      className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer"
-                      title={t('slp.listenTitle')}
-                    >
-                      <Volume2 className="w-3.5 h-3.5" />
-                    </button>
+                  <div className="flex flex-wrap items-start gap-2">
+                    <span onClickCapture={() => setShadowingLineIdx(idx)}>
+                      <LessonSpeechButton key={line.en} text={line.en} label={`${t('slp.listenTitle')} ${idx + 1}`} iconOnly
+                        className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer" />
+                    </span>
                     <button
                       onClick={() => setShadowingLineIdx(idx)}
                       className="text-[10px] text-[#b9b6d5] hover:text-white underline cursor-pointer"
@@ -264,13 +250,8 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                     <Mic className="w-3 h-3" />
                     <span>{t('slp.record')}</span>
                   </button>
-                  <button
-                    onClick={() => speakEnglish(p.q)}
-                    className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-[#b9b6d5] hover:text-white cursor-pointer"
-                    title={t('slp.pronounceTitle')}
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
+                  <LessonSpeechButton text={p.q} label={`${t('slp.pronounceTitle')} ${idx + 1}`} iconOnly
+                    className="p-1.5 rounded-lg bg-white/5 hover:bg-white/10 text-[#b9b6d5] hover:text-white cursor-pointer" />
                 </div>
               </div>
             </div>
