@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import React, { useEffect, useState } from 'react';
 import { PageRoute } from '../types';
 import { 
@@ -9,7 +10,7 @@ import {
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
 import { Interactive3DWorld } from '../components/Interactive3DWorld';
-import { playSound, speakEnglish, fireCelebration, stopSpeech } from '../utils/audio';
+import { playSound, fireCelebration, stopSpeech } from '../utils/audio';
 import {
   Plane,
   UtensilsCrossed,
@@ -17,7 +18,6 @@ import {
   Briefcase,
   Coffee,
   Compass,
-  Volume2,
   Sparkles,
   CheckCircle2,
   ArrowRight,
@@ -324,17 +324,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                     <span className="text-xs text-[#b9b6d5] mr-2">({currentTurn.speakerRole})</span>
                   </div>
 
-                  <button
-                    onClick={() => {
-                      playSound('click');
-                      speakEnglish(currentTurn.textEn);
-                    }}
-                    className="p-2 rounded-xl bg-white/10 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-xs font-bold"
-                    title={t('rle.listenSpeaker')}
-                  >
-                    <Volume2 className="w-4 h-4" />
-                    <span>{t('rle.playAudio')}</span>
-                  </button>
+                  <LessonSpeechButton key={currentTurn.id} text={currentTurn.textEn} label={t('rle.playAudio')} className="p-2 rounded-xl bg-white/10 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer flex items-center gap-1 text-xs font-bold" />
                 </div>
 
                 <p className="text-left font-sans text-base sm:text-lg font-bold text-white leading-relaxed" dir="ltr" lang="en">
@@ -476,7 +466,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           {scenario.keyVocabulary.map((vocab, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-white/5 border border-white/10 flex items-center justify-between"
+              className="p-4 rounded-xl bg-white/5 border border-white/10 flex flex-wrap items-start justify-between gap-3"
             >
               <div className="space-y-0.5">
                 <div className="text-sm font-sans font-bold text-white">{vocab.en}</div>
@@ -486,17 +476,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 )}
               </div>
 
-              <button
-                onClick={() => {
-                  playSound('click');
-                  speakEnglish(vocab.en);
-                }}
-                className="p-2 rounded-lg bg-white/10 hover:bg-[#41e7ff] text-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer"
-                aria-label={`${t('rle.listenPronunciation')}: ${vocab.en}`}
-                title={t('rle.listenPronunciation')}
-              >
-                <Volume2 className="w-4 h-4" />
-              </button>
+              <LessonSpeechButton text={vocab.en} label={`${t('rle.listenPronunciation')}: ${vocab.en}`} iconOnly className="p-2 rounded-lg bg-white/10 hover:bg-[#41e7ff] text-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer" />
             </div>
           ))}
         </div>
