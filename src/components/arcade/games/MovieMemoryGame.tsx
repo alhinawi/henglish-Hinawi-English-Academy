@@ -1,5 +1,5 @@
 // ذاكرة الأفلام - flip cards and match each movie line with its Egyptian meaning.
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, uniqueMeaningPairs, sample, shuffle, SentencePair } from '../arcadeContent';
@@ -30,10 +30,22 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
   const [score, setScore] = useState(0);
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
 
+  const requestVersion = useRef(0);
+  useEffect(() => () => { requestVersion.current += 1; }, []);
+
+  const exit = () => {
+    requestVersion.current += 1;
+    cancelTransition();
+    onExit();
+  };
+
   const start = async () => {
+    const request = ++requestVersion.current;
     cancelTransition();
     setPhase('loading');
-    const pairs: SentencePair[] = sample(uniqueMeaningPairs(await allSentencePairs(2, 7)), PAIRS);
+    const available = await allSentencePairs(2, 7);
+    if (request !== requestVersion.current) return;
+    const pairs: SentencePair[] = sample(uniqueMeaningPairs(available), PAIRS);
     const deck: Card[] = shuffle(
       pairs.flatMap((p, i) => [
         { key: `${i}-en`, pairId: i, text: p.en, kind: 'en' as const },
@@ -80,8 +92,13 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
   };
 
   if (phase === 'intro')
-    return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
-  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">{t('mm.loading')}</div>;
+    return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={exit} />;
+  if (phase === 'loading') return (
+    <div className="max-w-lg mx-auto text-center space-y-6 py-8">
+      <p role="status" className="text-[#b9b6d5] font-black">{t('mm.loading')}</p>
+      <button onClick={exit} className="px-4 py-2 rounded-xl border border-white/10 text-[#b9b6d5] hover:text-white hover:bg-white/5 text-sm font-bold cursor-pointer">{t('as.back')}</button>
+    </div>
+  );
   if (phase === 'end' && end)
     return (
       <ArcadeEnd
@@ -91,14 +108,14 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
         newBest={end.newBest}
         best={progress.best[META.id] ?? score}
         onReplay={start}
-        onBack={onExit}
+        onBack={exit}
         extra={<p className="text-xs text-[#8f8cb0]">{t('mm.result').replace('{count}', String(moves))}</p>}
       />
     );
 
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={META.title} score={matched.size} onQuit={onExit} />
+      <ArcadeHud title={META.title} score={matched.size} onQuit={exit} />
       <div className="grid grid-cols-3 gap-2">
         {cards.map((c, i) => {
           const isOpen = open.includes(i) || matched.has(c.pairId);

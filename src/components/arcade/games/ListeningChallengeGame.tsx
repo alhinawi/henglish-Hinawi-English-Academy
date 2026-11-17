@@ -34,6 +34,12 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
   const requestVersion = useRef(0);
   useEffect(() => () => { requestVersion.current += 1; if (advanceTimer.current) clearTimeout(advanceTimer.current); }, []);
 
+  const exit = () => {
+    requestVersion.current += 1;
+    if (advanceTimer.current) clearTimeout(advanceTimer.current);
+    onExit();
+  };
+
   const start = async () => {
     const request = ++requestVersion.current;
     setPhase('loading');
@@ -74,8 +80,13 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
   };
 
   if (phase === 'intro')
-    return <ArcadeIntro meta={meta} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
-  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">{t('lc.loading')}</div>;
+    return <ArcadeIntro meta={meta} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={exit} />;
+  if (phase === 'loading') return (
+    <div className="max-w-lg mx-auto text-center space-y-6 py-8">
+      <p role="status" className="text-[#b9b6d5] font-black">{t('lc.loading')}</p>
+      <button onClick={exit} className="px-4 py-2 rounded-xl border border-white/10 text-[#b9b6d5] hover:text-white hover:bg-white/5 text-sm font-bold cursor-pointer">{t('as.back')}</button>
+    </div>
+  );
   if (phase === 'end' && end)
     return (
       <ArcadeEnd
@@ -85,14 +96,14 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
         newBest={end.newBest}
         best={progress.best[META.id] ?? score}
         onReplay={start}
-        onBack={onExit}
+        onBack={exit}
       />
     );
 
   const r = rounds[round];
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={meta.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
+      <ArcadeHud title={meta.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={exit} />
       <div className="p-6 rounded-3xl bg-[#121124] border border-white/10 space-y-5 text-center">
         <LessonSpeechButton key={round} text={r.en} label={t('lc.listenAgain')} iconOnly autoPlay
           className="w-20 h-20 rounded-full bg-[#9b7bff]/20 border border-[#9b7bff]/50 text-[#9b7bff] inline-flex items-center justify-center hover:bg-[#9b7bff]/30 transition-all cursor-pointer" />

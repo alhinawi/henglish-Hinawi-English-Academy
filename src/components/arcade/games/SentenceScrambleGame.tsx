@@ -1,5 +1,5 @@
 // رتّب الجملة - rebuild real platform sentences from shuffled words.
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
@@ -35,10 +35,21 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
     setFeedback(null);
   };
 
+  const requestVersion = useRef(0);
+  useEffect(() => () => { requestVersion.current += 1; }, []);
+
+  const exit = () => {
+    requestVersion.current += 1;
+    cancelTransition();
+    onExit();
+  };
+
   const start = async () => {
+    const request = ++requestVersion.current;
     cancelTransition();
     setPhase('loading');
     const pairs = await allSentencePairs(3, 8);
+    if (request !== requestVersion.current) return;
     const list = shuffle(pairs).slice(0, ROUNDS);
     setRounds(list);
     setScore(0);
@@ -82,8 +93,13 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
   };
 
   if (phase === 'intro')
-    return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={onExit} />;
-  if (phase === 'loading') return <div className="text-center text-[#b9b6d5] py-16 font-black">{t('ss.loading')}</div>;
+    return <ArcadeIntro meta={META} best={progress.best[META.id] ?? 0} plays={progress.plays[META.id] ?? 0} onStart={start} onBack={exit} />;
+  if (phase === 'loading') return (
+    <div className="max-w-lg mx-auto text-center space-y-6 py-8">
+      <p role="status" className="text-[#b9b6d5] font-black">{t('ss.loading')}</p>
+      <button onClick={exit} className="px-4 py-2 rounded-xl border border-white/10 text-[#b9b6d5] hover:text-white hover:bg-white/5 text-sm font-bold cursor-pointer">{t('as.back')}</button>
+    </div>
+  );
   if (phase === 'end' && end)
     return (
       <ArcadeEnd
@@ -93,14 +109,14 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
         newBest={end.newBest}
         best={progress.best[META.id] ?? score}
         onReplay={start}
-        onBack={onExit}
+        onBack={exit}
       />
     );
 
   const sentence = rounds[round];
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={META.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
+      <ArcadeHud title={META.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={exit} />
       <div className="p-5 sm:p-6 rounded-3xl bg-[#121124] border border-white/10 space-y-5">
         <p dir="rtl" className="text-center text-[#b9b6d5] text-sm">{sentence?.ar}</p>
         <div
