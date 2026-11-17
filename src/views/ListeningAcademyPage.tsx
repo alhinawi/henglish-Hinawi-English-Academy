@@ -1,4 +1,4 @@
-import { loadListeningProgress as load, solvedListeningTasks, type ListeningSaved as Saved } from '../services/listeningProgress';
+import { loadListeningProgress as load, saveListeningProgress, solvedListeningTasks, type ListeningSaved as Saved } from '../services/listeningProgress';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import type { PageRoute } from '../types';
 import { ALL_LISTENING_LESSONS, normalizeListeningAnswer, type ListeningLesson } from '../data/listeningAcademyData';
@@ -26,7 +26,7 @@ export const ListeningAcademyPage: React.FC<Props> = ({ onNavigate, onCompleteAc
 const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey: string }> = ({ onNavigate, onCompleteActivity, storageKey }) => {
   const [saved, setSaved] = useState<Saved>(() => load(storageKey));
   const savedRef = useRef(saved);
-  const [storageWarning, setStorageWarning] = useState(false);
+  const [storageWarning, setStorageWarning] = useState(!!saved.storageUnreadable);
   const [level, setLevel] = useState('All');
   const appText = useAppTextMap('listeningAcademyData');
   const { t, dir, lang } = useLanguage();
@@ -45,7 +45,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   const [orderFeedback, setOrderFeedback] = useState<boolean | null>(null);
   const [notice, setNotice] = useState('');
   const panel = useRef<HTMLElement>(null);
-  useEffect(() => { const next = load(storageKey); savedRef.current = next; setSaved(next); }, [storageKey]);
+  useEffect(() => { const next = load(storageKey); savedRef.current = next; setSaved(next); setStorageWarning(!!next.storageUnreadable); }, [storageKey]);
   useEffect(() => subscribeSpeechState((active) => setPlaying(active)), []);
   useEffect(() => () => stopSpeech(), []);
   const visible = useMemo(() => ALL_LISTENING_LESSONS.filter(t => (level === 'All' || (level === 'Legacy' ? !t.original : t.level === level && t.original)) && `${t.title} ${t.titleAr} ${t.focusAr} ${t.focusEn} ${txText(appText, t.titleAr)} ${txText(appText, t.focusAr)}`.toLowerCase().includes(query.trim().toLowerCase()) && (!reviewOnly || solvedListeningTasks(saved, t.id, taskIds(t)).length < taskIds(t).length)), [level, query, reviewOnly, saved, appText]);
@@ -57,7 +57,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   const shuffled = useMemo(() => tokens.map((word, index) => ({ word, index })).reverse(), [selected?.id]);
   function persist(next: Saved) {
     savedRef.current = next; setSaved(next);
-    try { localStorage.setItem(storageKey, JSON.stringify(next)); } catch { setStorageWarning(true); }
+    setStorageWarning(!saveListeningProgress(storageKey, next));
   }
   function solve(task: string) {
     if (!selected) return;
