@@ -250,7 +250,8 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder={t('ev.searchPlaceholder')}
+            aria-label={t('ev.searchPlaceholder')}
+              placeholder={t('ev.searchPlaceholder')}
             className="w-full bg-white/5 border border-white/10 rounded-2xl py-3 pr-11 pl-4 text-sm text-white placeholder:text-[#b9b6d5]/60 focus:outline-none focus:border-[#ffd166]/50"
           />
         </div>
