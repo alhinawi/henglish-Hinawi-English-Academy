@@ -2104,5 +2104,6 @@
   "sl.loadError": "Cümle kitaplığı yüklenemedi. Bu bir yükleme hatasıdır, sonuçsuz arama değildir. Tekrar deneyin.",
   "dt.errNoPdfText": "Bu PDF seçilebilir metin içermiyor ve taranmış sayfalar içerebilir. Seçilebilir metin içeren bir PDF yükleyin veya metni bir TXT dosyasına yapıştırın.",
   "lp.noteStorage": "Notlar yalnızca bu tarayıcıda, öğrenci ve derse göre ayrı kaydedilir. Diğer cihazlarla eşitlenmez.",
-  "lp.noteSavedLocal": "Bu tarayıcıya kaydedildi."
+  "lp.noteSavedLocal": "Bu tarayıcıya kaydedildi.",
+  "ts.vocabReviewPartial": "Bu cihazdaki kelime listesine kaydedildi, ancak tekrar programı kaydedilemedi. Depolamaya izin verip tekrar kaydedin."
 }

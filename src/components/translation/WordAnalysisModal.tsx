@@ -23,23 +23,22 @@ interface WordAnalysisModalProps {
   word: WordAnalysisDetail | null;
   isOpen: boolean;
   onClose: () => void;
-  onSaveToVocabulary: (word: WordAnalysisDetail, collectionId?: string, notes?: string) => void;
+  onSaveToVocabulary: (word: WordAnalysisDetail, collectionId?: string, notes?: string) => 'saved' | 'review-failed' | 'failed';
   collections: VocabularyCollection[];
 }
 
-export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = ({
-  word,
-  isOpen,
-  onClose,
-  onSaveToVocabulary,
-  collections,
+export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = (props) => {
+  if (!props.isOpen || !props.word) return null;
+  return <OpenWordAnalysisModal key={props.word.word} {...props} word={props.word} />;
+};
+const OpenWordAnalysisModal: React.FC<WordAnalysisModalProps & { word: WordAnalysisDetail }> = ({
+  word, onClose, onSaveToVocabulary, collections,
 }) => {
   const { t } = useLanguage();
   const [selectedCollection, setSelectedCollection] = useState<string>('');
   const [personalNotes, setPersonalNotes] = useState<string>('');
-  const [savedSuccess, setSavedSuccess] = useState(false);
-
-  if (!isOpen || !word) return null;
+  const [saveResult, setSaveResult] = useState<'saved' | 'review-failed' | 'failed' | null>(null);
+  const savedSuccess = saveResult === 'saved';
 
   const handleSpeak = () => {
     playSound('click');
@@ -48,22 +47,19 @@ export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = ({
 
   const handleSave = () => {
     playSound('click');
-    onSaveToVocabulary(word, selectedCollection || undefined, personalNotes.trim() || undefined);
-    setSavedSuccess(true);
-    setTimeout(() => {
-      setSavedSuccess(false);
-      onClose();
-    }, 1200);
+    try { setSaveResult(onSaveToVocabulary(word, selectedCollection || undefined, personalNotes.trim() || undefined)); }
+    catch { setSaveResult('failed'); }
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-      <div className="relative w-full max-w-lg bg-[#0e0c26] border border-white/20 rounded-3xl shadow-2xl overflow-hidden text-right">
+      <div role="dialog" aria-modal="true" aria-label={t('wam.title')} className="relative w-full max-w-lg bg-[#0e0c26] border border-white/20 rounded-3xl shadow-2xl overflow-hidden text-right">
         {/* Modal Header */}
         <div className="flex items-center justify-between p-5 bg-gradient-to-r from-white/10 to-transparent border-b border-white/10">
           <button
             type="button"
             onClick={onClose}
+            aria-label={t('settings.close')}
             className="p-1.5 rounded-xl text-[#b9b6d5] hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
           >
             <X className="w-5 h-5" />
@@ -189,6 +185,7 @@ export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = ({
               </span>
             </div>
 
+            <p role="status" className="text-xs leading-6 text-amber-200">{saveResult === 'failed' ? t('vocab.saveError') : saveResult === 'review-failed' ? t('ts.vocabReviewPartial') : ''}</p>
             {/* Collection Picker */}
             {collections.length > 0 && (
               <div>
@@ -197,7 +194,7 @@ export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = ({
                 </label>
                 <select
                   value={selectedCollection}
-                  onChange={e => setSelectedCollection(e.target.value)}
+                  onChange={e => { setSelectedCollection(e.target.value); setSaveResult(null); }}
                   className="w-full bg-black/40 border border-white/10 rounded-xl px-3 py-2 text-xs text-white focus:outline-none focus:border-[#41e7ff]"
                 >
                   <option value="">{t('wam.noCollection')}</option>
@@ -218,7 +215,7 @@ export const WordAnalysisModal: React.FC<WordAnalysisModalProps> = ({
               <input
                 type="text"
                 value={personalNotes}
-                onChange={e => setPersonalNotes(e.target.value)}
+                onChange={e => { setPersonalNotes(e.target.value); setSaveResult(null); }}
                 placeholder={t('wam.placeholder')}
                 className="w-full bg-black/40 border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-[#b9b6d5]/40 focus:outline-none focus:border-[#41e7ff]"
               />

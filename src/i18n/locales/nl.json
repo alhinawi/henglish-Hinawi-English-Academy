@@ -2104,5 +2104,6 @@
   "sl.loadError": "De zinnenbibliotheek kon niet worden geladen. Dit is een laadfout, geen zoekopdracht zonder resultaten. Probeer het opnieuw.",
   "dt.errNoPdfText": "Deze PDF heeft geen selecteerbare tekst en bevat mogelijk gescande pagina’s. Upload een PDF met selecteerbare tekst of plak de tekst in een TXT-bestand.",
   "lp.noteStorage": "Notities blijven alleen in deze browser, apart per leerling en les. Geen synchronisatie met andere apparaten.",
-  "lp.noteSavedLocal": "Opgeslagen in deze browser."
+  "lp.noteSavedLocal": "Opgeslagen in deze browser.",
+  "ts.vocabReviewPartial": "Opgeslagen in de woordenschat op dit apparaat, maar niet in het herhaalschema. Sta opslag toe en sla opnieuw op."
 }

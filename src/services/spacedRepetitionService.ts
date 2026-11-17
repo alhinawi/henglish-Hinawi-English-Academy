@@ -66,12 +66,16 @@ export function getDueSrsCards(allCards: VocabularyCard[]): VocabularyCard[] {
   return allCards.filter(c => new Date(c.nextReviewAt) <= now);
 }
 
-export function loadSrsCardsFromStorage(learnerId?: string): VocabularyCard[] {
+export function loadSrsCardsFromStorage(learnerId?: string, strict = false): VocabularyCard[] {
+  if (strict) {
+    const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY, learnerId));
+    if (raw !== null && !Array.isArray(JSON.parse(raw))) throw new Error('Review schedule is unreadable');
+  }
   return readMediaList(STORAGE_KEY, learnerId).filter((card): card is VocabularyCard =>
     !!card && typeof card === 'object' && typeof (card as VocabularyCard).id === 'string' &&
     typeof (card as VocabularyCard).word === 'string' && typeof (card as VocabularyCard).translationAr === 'string');
 }
 
 export function saveSrsCardsToStorage(cards: VocabularyCard[], learnerId?: string) {
-  try { localStorage.setItem(mediaStorageKey(STORAGE_KEY, learnerId), JSON.stringify(cards)); } catch {}
+  try { localStorage.setItem(mediaStorageKey(STORAGE_KEY, learnerId), JSON.stringify(cards)); return true; } catch { return false; }
 }

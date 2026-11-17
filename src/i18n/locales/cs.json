@@ -2104,5 +2104,6 @@
   "sl.loadError": "Knihovnu vět se nepodařilo načíst. Jde o chybu načítání, ne o prázdný výsledek hledání. Zkuste to znovu.",
   "dt.errNoPdfText": "Tento PDF neobsahuje označitelný text a může obsahovat naskenované stránky. Nahrajte PDF s označitelným textem nebo vložte text do souboru TXT.",
   "lp.noteStorage": "Poznámky zůstávají pouze v tomto prohlížeči, zvlášť pro každého studenta a lekci. Nesynchronizují se s jinými zařízeními.",
-  "lp.noteSavedLocal": "Uloženo v tomto prohlížeči."
+  "lp.noteSavedLocal": "Uloženo v tomto prohlížeči.",
+  "ts.vocabReviewPartial": "Uloženo do slovní zásoby v tomto zařízení, ale ne do plánu opakování. Povolte ukládání a uložte znovu."
 }
