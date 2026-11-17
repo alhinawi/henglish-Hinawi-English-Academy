@@ -24,6 +24,7 @@ import {
   searchVocabulary,
   getLoadedVocabularyCount,
 } from '../../services/vocabularyService';
+import { useContentMap } from '../../services/contentI18nService';
 import { WordCard } from './WordCard';
 import { WordDetailModal } from './WordDetailModal';
 import { playSound } from '../../utils/audio';
@@ -95,6 +96,7 @@ const SORT_OPTIONS = [
 
 export const VocabularyExplorer: React.FC<{ learnerId?: string }> = ({ learnerId }) => {
   const { t } = useLanguage();
+  const translations = useContentMap('vocab');
   const optT = (opts: Array<{ id: string; label: string }>, id: string) => { const o = opts.find(x => x.id === id); return o ? t(o.label) : id; };
   // Filters & State
   const searchRef = useRef<HTMLInputElement>(null);
@@ -197,7 +199,7 @@ export const VocabularyExplorer: React.FC<{ learnerId?: string }> = ({ learnerId
       sortBy,
       page,
       pageSize,
-    });
+    }, translations);
   }, [
     searchQuery,
     selectedCefr,
@@ -211,6 +213,7 @@ export const VocabularyExplorer: React.FC<{ learnerId?: string }> = ({ learnerId
     isLoading,
     isFullLoading,
     savedUpdateCount,
+    translations,
   ]);
 
   const handleOpenDetails = (entry: LexicalEntry) => {
