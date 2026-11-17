@@ -3,7 +3,7 @@ import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy
 import { LITERACY_LEVELS, LITERACY_READING, LITERACY_WRITING, type LiteracyReading, type LiteracyWriting } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { literacyStorageKey, loadLiteracy, type LiteracySaved as Saved } from '../services/literacyStorage';
+import { literacyStorageKey, loadLiteracy, saveLiteracy, type LiteracySaved as Saved } from '../services/literacyStorage';
 import { useAuth } from '../context/AuthContext';
 import { stopSpeech } from '../utils/audio';
 import { LessonSpeechButton } from './LessonSpeechButton';
@@ -30,7 +30,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   useEffect(() => () => stopSpeech(), [active, kind]);
   const [saved, setSaved] = useState<Saved>(() => loadLiteracy(storageKey));
   const [storageError, setStorageError] = useState(false);
-  useEffect(() => { try { localStorage.setItem(storageKey, JSON.stringify(saved)); setStorageError(false); } catch { setStorageError(true); } }, [saved, storageKey]);
+  useEffect(() => { setStorageError(!saveLiteracy(storageKey, saved)); }, [saved, storageKey]);
   const lessons: (LiteracyReading | LiteracyWriting)[] = reading ? LITERACY_READING : LITERACY_WRITING;
   const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.toLowerCase()));
   const current = lessons.find(l => l.id === active);
@@ -54,7 +54,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
     <section className="grid grid-cols-[auto_1fr] items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
       <Trophy className="shrink-0 text-amber-300" size={20} /><span className="shrink-0">{t('lit.completed').replace('{done}', String(completed)).replace('{total}', String(lessons.length))}</span><div className="col-span-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden"><div className="h-full bg-cyan-300" style={{ width: `${completed / lessons.length * 100}%` }} /></div><span className="col-span-2 text-xs">{t('lit.xp')}</span>
     </section>
-    <p className="text-xs leading-6 text-slate-400">{t('lit.progressNote')} {storageError && <strong className="text-amber-200">{t('lit.storageError')}</strong>}</p>
+    <p className="text-xs leading-6 text-slate-400">{t('lit.progressNote')} {storageError && <strong role="status" className="text-amber-200">{t('lit.storageError')}</strong>}</p>
     {current ? <>
       <button className={button} onClick={() => setActive(null)}><span className="flex items-center gap-2"><ArrowLeft size={16} className={dir === 'rtl' ? 'rotate-180' : ''} aria-hidden="true" />{t('lit.back').replace('{level}', current.level)}</span></button>
       <article className={panel}>
