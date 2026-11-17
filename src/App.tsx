@@ -599,7 +599,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 22. AI English Tutor Agent */}
                 {currentRoute === 'ai-tutor' && (
-                  <AiTutorPage onNavigate={handleNavigate} userProfile={activeProfile} />
+                  <AiTutorPage key={authUser?.id || 'guest'} onNavigate={handleNavigate} userProfile={activeProfile} />
                 )}
 
                 {/* 23. 3D Virtual Academy World */}

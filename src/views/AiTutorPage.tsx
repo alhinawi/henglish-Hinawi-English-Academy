@@ -80,7 +80,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfile, progress, onOpenVoiceSettings }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   // --- State ---
   const [activeMode, setActiveMode] = useState<AiTutorMode>('grammar-teacher');
   const [sessions, setSessions] = useState<AiConversationSession[]>([]);
@@ -96,6 +96,38 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
   const chatContainerRef = useRef<HTMLDivElement>(null);
   const recognitionRef = useRef<any>(null);
+  const speechAllowed = useRef(false);
+
+  const requestVersion = useRef(0);
+  const requestController = useRef<AbortController | null>(null);
+  const copyVersion = useRef(0);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const invalidateConversation = () => {
+    requestVersion.current += 1;
+    requestController.current?.abort();
+    requestController.current = null;
+    copyVersion.current += 1;
+    if (copyTimer.current) clearTimeout(copyTimer.current);
+    setIsTyping(false);
+    setSessions(prev => prev.map(session => ({ ...session,
+      messages: session.messages.filter(message => !message.isStreaming),
+    })));
+    setInputMessage('');
+    setCopiedMsgId(null);
+    setCopyFailed(false);
+    setEditingSessionId(null);
+    speechAllowed.current = false;
+    recognitionRef.current?.abort();
+    setIsRecordingVoice(false);
+    stopSpeech();
+  };
+  useEffect(() => () => {
+    requestVersion.current += 1;
+    requestController.current?.abort();
+    copyVersion.current += 1;
+    if (copyTimer.current) clearTimeout(copyTimer.current);
+    stopSpeech();
+  }, []);
 
   // Active assistant details
   const activeAssistant = ASSISTANTS_REGISTRY[activeMode];
@@ -155,6 +187,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       recognition.lang = 'en-US';
 
       recognition.onresult = (event: any) => {
+        if (!speechAllowed.current) return;
         let transcript = '';
         for (let i = event.resultIndex; i < event.results.length; i++) {
           transcript += event.results[i][0].transcript;
@@ -165,10 +198,12 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       };
 
       recognition.onend = () => {
+        speechAllowed.current = false;
         setIsRecordingVoice(false);
       };
 
       recognition.onerror = () => {
+        speechAllowed.current = false;
         setIsRecordingVoice(false);
       };
 
@@ -177,6 +212,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
     return () => {
       if (recognitionRef.current) {
+        speechAllowed.current = false;
         recognitionRef.current.abort();
       }
     };
@@ -189,15 +225,18 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
     }
 
     if (isRecordingVoice) {
+      speechAllowed.current = false;
       recognitionRef.current.stop();
       setIsRecordingVoice(false);
       playSound('click');
     } else {
       playSound('click');
       try {
+        speechAllowed.current = true;
         recognitionRef.current.start();
         setIsRecordingVoice(true);
       } catch (err) {
+        speechAllowed.current = false;
         console.warn('Speech recognition start failed:', err);
         setIsRecordingVoice(false);
       }
@@ -207,6 +246,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
   // --- Handlers ---
   const handleStartNewSession = () => {
     playSound('click');
+    invalidateConversation();
     const welcomeMsg: AiChatMessage = {
       id: `welcome-${activeMode}-${Date.now()}`,
       sender: 'assistant',
@@ -229,6 +269,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
   const handleDeleteSession = (sessionId: string, e: React.MouseEvent) => {
     e.stopPropagation();
     playSound('click');
+    if (activeSessionId === sessionId) invalidateConversation();
     deleteSession(sessionId);
 
     const updated = sessions.filter(s => s.id !== sessionId);
@@ -256,19 +297,30 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
   };
 
   const handleCopyMessage = async (msgId: string, text: string) => {
+    const version = ++copyVersion.current;
+    if (copyTimer.current) clearTimeout(copyTimer.current);
     setCopiedMsgId(null);
     setCopyFailed(false);
-    if (!(await copyText(text))) { setCopyFailed(true); return; }
+    const copied = await copyText(text);
+    if (version !== copyVersion.current) return;
+    if (!copied) { setCopyFailed(true); return; }
     playSound('click');
     setCopiedMsgId(msgId);
-    setTimeout(() => setCopiedMsgId(null), 2000);
+    copyTimer.current = setTimeout(() => {
+      if (version === copyVersion.current) setCopiedMsgId(null);
+    }, 2000);
   };
 
   const handleSendMessage = async (textToSend?: string) => {
     const text = textToSend || inputMessage;
-    if (!text.trim() || isTyping) return;
+    if (!text.trim() || isTyping || !activeSession || requestController.current) return;
+    const version = ++requestVersion.current;
+    const controller = new AbortController();
+    requestController.current = controller;
+    const isCurrent = () => version === requestVersion.current;
 
     if (isRecordingVoice && recognitionRef.current) {
+      speechAllowed.current = false;
       recognitionRef.current.stop();
       setIsRecordingVoice(false);
     }
@@ -323,6 +375,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       let accumulatedStreamingText = '';
 
       const response = await sendAiTutorMessage({
+        signal: controller.signal,
         message: text.trim(),
         mode: activeMode,
         userLevel: userProfile.currentLevel,
@@ -332,6 +385,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           progress,
         },
         onChunk: (chunk: string) => {
+          if (!isCurrent()) return;
           accumulatedStreamingText += chunk;
           setSessions(prev =>
             prev.map(s => {
@@ -347,6 +401,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         },
       });
 
+      if (!isCurrent()) return;
       // Finalize assistant message
       const finalAssistantMsg: AiChatMessage = {
         id: assistantMsgId,
@@ -371,6 +426,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
       playSound('fanfare');
     } catch (err) {
+      if (!isCurrent()) return;
       const unavailable = isAiServiceUnavailable(err);
       if (!unavailable) {
         console.error('AI chat invocation failed:', err);
@@ -394,7 +450,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         setSessions(prev => prev.map(s => (s.id === activeSession.id ? fallbackSession : s)));
       }
     } finally {
-      setIsTyping(false);
+      if (isCurrent()) { requestController.current = null; setIsTyping(false); }
     }
   };
 
@@ -408,7 +464,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
   // --- Render ---
   return (
-    <div className="space-y-6 pb-20 text-right max-w-6xl mx-auto px-2 sm:px-4">
+    <div dir={dir} className="space-y-6 pb-20 text-start max-w-6xl mx-auto px-2 sm:px-4">
       
       {copyFailed && <p role="status" className="fixed bottom-4 inset-x-4 z-50 mx-auto max-w-lg rounded-xl border border-amber-300/30 bg-[#171320] p-4 text-sm text-amber-100 shadow-xl">{t('copy.failed')}</p>}
 
@@ -479,10 +535,11 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             return (
               <button
                 key={asst.id}
+                aria-pressed={isActive}
                 onClick={() => {
                   if (activeMode !== asst.id) {
                     playSound('click');
-                    stopSpeech();
+                    invalidateConversation();
                     setActiveMode(asst.id);
                   }
                 }}
@@ -603,6 +660,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       onClick={() => {
                         if (!isEditing) {
                           playSound('click');
+                          invalidateConversation();
                           setActiveSessionId(s.id);
                         }
                       }}
@@ -856,6 +914,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           {/* Text Input Field */}
           <input
             type="text"
+            aria-label={`${t('at.askPre')} ${t(`atm.${activeMode}.name`)}`}
             dir="auto"
             value={inputMessage}
             onChange={e => setInputMessage(e.target.value)}
