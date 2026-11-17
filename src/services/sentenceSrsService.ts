@@ -1,3 +1,4 @@
+import { mediaStorageKey } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SENTENCE SPACED REPETITION & COLLECTIONS ENGINE
 // SuperMemo SM-2 algorithm, streaks, mastery scores, and custom user decks
@@ -47,6 +48,17 @@ const STORAGE_KEY_RECENT = 'henglish_sentence_recent_v1';
 const STORAGE_KEY_COLLECTIONS = 'henglish_sentence_collections_v1';
 const STORAGE_KEY_STATS = 'henglish_sentence_stats_v1';
 
+function createOwnerStore(learnerId?: string) {
+function readOwnerValue(base: string): string | null {
+  const guestKey = mediaStorageKey(base);
+  if (localStorage.getItem(guestKey) === null) {
+    const legacy = localStorage.getItem(base);
+    if (legacy !== null) {
+      try { JSON.parse(legacy); localStorage.setItem(guestKey, legacy); } catch { /* Leave damaged legacy data untouched. */ }
+    }
+  }
+  return localStorage.getItem(mediaStorageKey(base, learnerId));
+}
 // In-memory state
 let srsRecords: Record<string, SentenceSrsRecord> = {};
 let favoriteIds = new Set<string>();
@@ -67,26 +79,28 @@ let isInitialized = false;
 
 function initStorage() {
   if (isInitialized || typeof window === 'undefined') return;
-  try {
-    const rawSrs = localStorage.getItem(STORAGE_KEY_SRS);
-    if (rawSrs) srsRecords = JSON.parse(rawSrs);
-
-    const rawFavs = localStorage.getItem(STORAGE_KEY_FAVORITES);
-    if (rawFavs) favoriteIds = new Set(JSON.parse(rawFavs));
-
-    const rawDiff = localStorage.getItem(STORAGE_KEY_DIFFICULT);
-    if (rawDiff) difficultIds = new Set(JSON.parse(rawDiff));
-
-    const rawRecent = localStorage.getItem(STORAGE_KEY_RECENT);
-    if (rawRecent) recentIds = JSON.parse(rawRecent);
-
-    const rawCols = localStorage.getItem(STORAGE_KEY_COLLECTIONS);
-    if (rawCols) collections = JSON.parse(rawCols);
-
-    const rawStats = localStorage.getItem(STORAGE_KEY_STATS);
-    if (rawStats) stats = JSON.parse(rawStats);
-  } catch (err) {
-    console.error('Error loading SRS data from storage:', err);
+  const read = (base: string): unknown => {
+    try { return JSON.parse(readOwnerValue(base) || 'null'); } catch { return null; }
+  };
+  const strings = (value: unknown): string[] => Array.isArray(value) ? value.filter((id): id is string => typeof id === 'string') : [];
+  const rawSrs = read(STORAGE_KEY_SRS);
+  if (rawSrs && typeof rawSrs === 'object' && !Array.isArray(rawSrs)) {
+    for (const [id, value] of Object.entries(rawSrs)) {
+      if (value && typeof value === 'object' && typeof value.sentenceId === 'string' &&
+          typeof value.lastReviewedAt === 'string' && typeof value.nextReviewAt === 'string' &&
+          typeof value.timesReviewed === 'number') srsRecords[id] = value as SentenceSrsRecord;
+    }
+  }
+  favoriteIds = new Set(strings(read(STORAGE_KEY_FAVORITES)));
+  difficultIds = new Set(strings(read(STORAGE_KEY_DIFFICULT)));
+  recentIds = strings(read(STORAGE_KEY_RECENT));
+  const rawCollections = read(STORAGE_KEY_COLLECTIONS);
+  if (Array.isArray(rawCollections)) collections = rawCollections.filter((c): c is UserSentenceCollection =>
+    !!c && typeof c === 'object' && typeof c.id === 'string' && typeof c.name === 'string' &&
+    Array.isArray(c.sentenceIds) && c.sentenceIds.every((id: unknown) => typeof id === 'string'));
+  const rawStats = read(STORAGE_KEY_STATS);
+  if (rawStats && typeof rawStats === 'object' && !Array.isArray(rawStats)) {
+    stats.studyDates = strings((rawStats as SentenceLearningStats).studyDates);
   }
   isInitialized = true;
 }
@@ -94,12 +108,12 @@ function initStorage() {
 function persistAll() {
   if (typeof window === 'undefined') return;
   try {
-    localStorage.setItem(STORAGE_KEY_SRS, JSON.stringify(srsRecords));
-    localStorage.setItem(STORAGE_KEY_FAVORITES, JSON.stringify(Array.from(favoriteIds)));
-    localStorage.setItem(STORAGE_KEY_DIFFICULT, JSON.stringify(Array.from(difficultIds)));
-    localStorage.setItem(STORAGE_KEY_RECENT, JSON.stringify(recentIds));
-    localStorage.setItem(STORAGE_KEY_COLLECTIONS, JSON.stringify(collections));
-    localStorage.setItem(STORAGE_KEY_STATS, JSON.stringify(stats));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_SRS, learnerId), JSON.stringify(srsRecords));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_FAVORITES, learnerId), JSON.stringify(Array.from(favoriteIds)));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_DIFFICULT, learnerId), JSON.stringify(Array.from(difficultIds)));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_RECENT, learnerId), JSON.stringify(recentIds));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(collections));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_STATS, learnerId), JSON.stringify(stats));
   } catch (err) {
     console.error('Error persisting SRS data to storage:', err);
   }
@@ -108,7 +122,7 @@ function persistAll() {
 /**
  * Record a Spaced Repetition review for a sentence
  */
-export function reviewSentence(sentenceId: string, rating: ReviewRating): SentenceSrsRecord {
+function reviewSentence(sentenceId: string, rating: ReviewRating): SentenceSrsRecord {
   initStorage();
   // Retain older latest-review evidence before replacing this record.
   recomputeStats();
@@ -234,18 +248,18 @@ function recomputeStats(reviewedAt?: Date) {
   };
 }
 
-export function getSentenceStats(): SentenceLearningStats {
+function getSentenceStats(): SentenceLearningStats {
   initStorage();
   recomputeStats();
   return stats;
 }
 
-export function getSentenceSrsRecord(sentenceId: string): SentenceSrsRecord | undefined {
+function getSentenceSrsRecord(sentenceId: string): SentenceSrsRecord | undefined {
   initStorage();
   return srsRecords[sentenceId];
 }
 
-export function getDueSentencesIds(): string[] {
+function getDueSentencesIds(): string[] {
   initStorage();
   const now = new Date();
   return Object.values(srsRecords)
@@ -254,7 +268,7 @@ export function getDueSentencesIds(): string[] {
 }
 
 // --- FAVORITES ---
-export function toggleFavoriteSentence(sentenceId: string): boolean {
+function toggleFavoriteSentence(sentenceId: string): boolean {
   initStorage();
   if (favoriteIds.has(sentenceId)) {
     favoriteIds.delete(sentenceId);
@@ -265,18 +279,18 @@ export function toggleFavoriteSentence(sentenceId: string): boolean {
   return favoriteIds.has(sentenceId);
 }
 
-export function isFavoriteSentence(sentenceId: string): boolean {
+function isFavoriteSentence(sentenceId: string): boolean {
   initStorage();
   return favoriteIds.has(sentenceId);
 }
 
-export function getFavoriteSentenceIds(): string[] {
+function getFavoriteSentenceIds(): string[] {
   initStorage();
   return Array.from(favoriteIds);
 }
 
 // --- DIFFICULT SENTENCES ---
-export function toggleDifficultSentence(sentenceId: string): boolean {
+function toggleDifficultSentence(sentenceId: string): boolean {
   initStorage();
   if (difficultIds.has(sentenceId)) {
     difficultIds.delete(sentenceId);
@@ -287,35 +301,35 @@ export function toggleDifficultSentence(sentenceId: string): boolean {
   return difficultIds.has(sentenceId);
 }
 
-export function isDifficultSentence(sentenceId: string): boolean {
+function isDifficultSentence(sentenceId: string): boolean {
   initStorage();
   return difficultIds.has(sentenceId);
 }
 
-export function getDifficultSentenceIds(): string[] {
+function getDifficultSentenceIds(): string[] {
   initStorage();
   return Array.from(difficultIds);
 }
 
 // --- RECENTLY STUDIED ---
-export function markRecentlyStudied(sentenceId: string) {
+function markRecentlyStudied(sentenceId: string) {
   initStorage();
   recentIds = [sentenceId, ...recentIds.filter(id => id !== sentenceId)].slice(0, 50);
   persistAll();
 }
 
-export function getRecentlyStudiedIds(): string[] {
+function getRecentlyStudiedIds(): string[] {
   initStorage();
   return recentIds;
 }
 
 // --- CUSTOM USER COLLECTIONS ---
-export function getCollections(): UserSentenceCollection[] {
+function getCollections(): UserSentenceCollection[] {
   initStorage();
   return collections;
 }
 
-export function createCollection(name: string, color: string = '#f25f4c', description?: string): UserSentenceCollection {
+function createCollection(name: string, color: string = '#f25f4c', description?: string): UserSentenceCollection {
   initStorage();
   const newCol: UserSentenceCollection = {
     id: `col-${Date.now()}-${Math.random().toString(36).substring(2, 7)}`,
@@ -331,7 +345,7 @@ export function createCollection(name: string, color: string = '#f25f4c', descri
   return newCol;
 }
 
-export function addSentenceToCollection(collectionId: string, sentenceId: string): boolean {
+function addSentenceToCollection(collectionId: string, sentenceId: string): boolean {
   initStorage();
   const col = collections.find(c => c.id === collectionId);
   if (!col) return false;
@@ -343,7 +357,7 @@ export function addSentenceToCollection(collectionId: string, sentenceId: string
   return true;
 }
 
-export function removeSentenceFromCollection(collectionId: string, sentenceId: string): boolean {
+function removeSentenceFromCollection(collectionId: string, sentenceId: string): boolean {
   initStorage();
   const col = collections.find(c => c.id === collectionId);
   if (!col) return false;
@@ -353,10 +367,89 @@ export function removeSentenceFromCollection(collectionId: string, sentenceId: s
   return true;
 }
 
-export function deleteCollection(collectionId: string): boolean {
+function deleteCollection(collectionId: string): boolean {
   initStorage();
   const beforeLen = collections.length;
   collections = collections.filter(c => c.id !== collectionId);
   persistAll();
   return collections.length < beforeLen;
+}
+
+return { reviewSentence, getSentenceStats, getSentenceSrsRecord, getDueSentencesIds, toggleFavoriteSentence, isFavoriteSentence, getFavoriteSentenceIds, toggleDifficultSentence, isDifficultSentence, getDifficultSentenceIds, markRecentlyStudied, getRecentlyStudiedIds, getCollections, createCollection, addSentenceToCollection, removeSentenceFromCollection, deleteCollection };
+}
+
+const ownerStores = new Map<string, ReturnType<typeof createOwnerStore>>();
+function ownerStore(learnerId?: string) {
+  const key = mediaStorageKey("sentences", learnerId);
+  let store = ownerStores.get(key);
+  if (!store) { store = createOwnerStore(learnerId); ownerStores.set(key, store); }
+  return store;
+}
+
+export function reviewSentence(sentenceId: string, rating: ReviewRating, learnerId?: string): SentenceSrsRecord {
+  return ownerStore(learnerId).reviewSentence(sentenceId, rating);
+}
+
+export function getSentenceStats(learnerId?: string): SentenceLearningStats {
+  return ownerStore(learnerId).getSentenceStats();
+}
+
+export function getSentenceSrsRecord(sentenceId: string, learnerId?: string): SentenceSrsRecord | undefined {
+  return ownerStore(learnerId).getSentenceSrsRecord(sentenceId);
+}
+
+export function getDueSentencesIds(learnerId?: string): string[] {
+  return ownerStore(learnerId).getDueSentencesIds();
+}
+
+export function toggleFavoriteSentence(sentenceId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).toggleFavoriteSentence(sentenceId);
+}
+
+export function isFavoriteSentence(sentenceId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).isFavoriteSentence(sentenceId);
+}
+
+export function getFavoriteSentenceIds(learnerId?: string): string[] {
+  return ownerStore(learnerId).getFavoriteSentenceIds();
+}
+
+export function toggleDifficultSentence(sentenceId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).toggleDifficultSentence(sentenceId);
+}
+
+export function isDifficultSentence(sentenceId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).isDifficultSentence(sentenceId);
+}
+
+export function getDifficultSentenceIds(learnerId?: string): string[] {
+  return ownerStore(learnerId).getDifficultSentenceIds();
+}
+
+export function markRecentlyStudied(sentenceId: string, learnerId?: string) {
+  return ownerStore(learnerId).markRecentlyStudied(sentenceId);
+}
+
+export function getRecentlyStudiedIds(learnerId?: string): string[] {
+  return ownerStore(learnerId).getRecentlyStudiedIds();
+}
+
+export function getCollections(learnerId?: string): UserSentenceCollection[] {
+  return ownerStore(learnerId).getCollections();
+}
+
+export function createCollection(name: string, color: string = '#f25f4c', description?: string, learnerId?: string): UserSentenceCollection {
+  return ownerStore(learnerId).createCollection(name, color, description);
+}
+
+export function addSentenceToCollection(collectionId: string, sentenceId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).addSentenceToCollection(collectionId, sentenceId);
+}
+
+export function removeSentenceFromCollection(collectionId: string, sentenceId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).removeSentenceFromCollection(collectionId, sentenceId);
+}
+
+export function deleteCollection(collectionId: string, learnerId?: string): boolean {
+  return ownerStore(learnerId).deleteCollection(collectionId);
 }
