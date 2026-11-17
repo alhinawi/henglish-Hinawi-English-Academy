@@ -13,3 +13,11 @@ async function durability(){
  console.log('Import malformed catalog preserved byte-identical; denied write is failure with no sync; retry durable once; duplicate preserved: PASS');
 }
 durability().catch(e=>{console.error(e);process.exitCode=1});
+
+async function transcriptBounds(){
+ let stored=[],saved=0,synced=0;const context={exports:{},localStorage:{getItem:()=>null},Date,STORAGE_CATALOG_KEY:'catalog',extractYouTubeId:v=>v,verifyYouTubeVideo:async()=>({status:'verified_playable',isEmbeddable:true}),getStoredVideos:()=>stored,saveStoredVideos:next=>{saved++;stored=next;return true},syncVideoToSupabase:()=>synced++};vm.runInNewContext(ts.transpileModule(fn,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,context);
+ const cue=(start,end,en)=>({id:en,start,end,en,arEg:'',arFusha:'',keyWords:[]});
+ for(const bad of [cue(-1,5,'negative'),cue(8,8,'zero'),cue(12,8,'reverse'),cue(NaN,4,'NaN'),cue(1,Infinity,'infinite')]){assert.equal((await context.exports.importEducationalVideo({youtubeUrlOrId:'invalid',subtitles:[bad]})).ok,false);assert.equal(saved,0);assert.equal(synced,0)}
+ const original=[cue(140,155.2,'Second line'),cue(120,135,'First line')];const before=JSON.stringify(original);let r=await context.exports.importEducationalVideo({youtubeUrlOrId:'transcript',subtitles:original});assert.equal(r.ok,true);assert.equal(r.video.startTime,120);assert.equal(r.video.endTime,155.2);assert.equal(r.video.clipDuration,'0:36');assert.equal(r.video.subtitles[0].en,'First line');assert.equal(JSON.stringify(original),before);assert.equal(r.video.dialogueQuote,'First line');stored=[];r=await context.exports.importEducationalVideo({youtubeUrlOrId:'videoOnly'});assert.equal(r.video.startTime,0);assert.equal(r.video.endTime,90);assert.equal(r.video.clipDuration,'1:30');console.log('Imported subtitle absolute bounds include cues beyond90s,sorted without mutating input,rounded duration,invalid times blocked,no-caption fallback preserved: PASS');
+}
+transcriptBounds().catch(e=>{console.error(e);process.exitCode=1});
