@@ -20,7 +20,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "Monday",
-    "meaning": "الاثنين"
+    "meaning": "الاثنين",
+    "followUp": {
+      "question": "What does Salma bring to every lesson?",
+      "options": [
+        "A blue notebook",
+        "A red bag",
+        "Eight books"
+      ],
+      "answer": 0,
+      "explanation": "Salma says she brings a blue notebook. Eight is the number of students in her class."
+    }
   },
   {
     "id": "literacy-2",
@@ -38,7 +48,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "water",
-    "meaning": "ماء"
+    "meaning": "ماء",
+    "followUp": {
+      "question": "Where do Adam and his friend sit?",
+      "options": [
+        "Near the door",
+        "In a garden",
+        "Near the window"
+      ],
+      "answer": 2,
+      "explanation": "They sit near the window. Adam has tea and a sandwich; his friend wants water."
+    }
   },
   {
     "id": "literacy-3",
@@ -56,7 +76,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "home",
-    "meaning": "المنزل"
+    "meaning": "المنزل",
+    "followUp": {
+      "question": "Who walks home with Mona?",
+      "options": [
+        "Her sister",
+        "Her brother",
+        "Her teacher"
+      ],
+      "answer": 1,
+      "explanation": "Mona walks home with her brother. She brings tomatoes, apples and bread from the market."
+    }
   },
   {
     "id": "literacy-4",
@@ -74,7 +104,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "bag",
-    "meaning": "حقيبة"
+    "meaning": "حقيبة",
+    "followUp": {
+      "question": "When does the writer study at the desk?",
+      "options": [
+        "After lunch",
+        "Before breakfast",
+        "At midnight"
+      ],
+      "answer": 0,
+      "explanation": "The writer studies after lunch. At five, the writer closes the computer and goes for a walk."
+    }
   },
   {
     "id": "literacy-5",
@@ -92,7 +132,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "garden",
-    "meaning": "حديقة"
+    "meaning": "حديقة",
+    "followUp": {
+      "question": "What does Nour do after lunch?",
+      "options": [
+        "She eats inside the library",
+        "She chooses another book",
+        "She goes to class"
+      ],
+      "answer": 1,
+      "explanation": "Nour eats in the garden. Then she chooses another book. The word then shows what happens next."
+    }
   },
   {
     "id": "literacy-6",
@@ -110,7 +160,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "tree",
-    "meaning": "شجرة"
+    "meaning": "شجرة",
+    "followUp": {
+      "question": "When do Ali and his sister return home?",
+      "options": [
+        "After dinner",
+        "On Monday",
+        "Before dinner"
+      ],
+      "answer": 2,
+      "explanation": "They return home before dinner. Saturday is the day of their walk, not the time they get home."
+    }
   },
   {
     "id": "literacy-7",
@@ -128,7 +188,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "delayed",
-    "meaning": "متأخر"
+    "meaning": "متأخر",
+    "followUp": {
+      "question": "Why does Lina keep checking the screen?",
+      "options": [
+        "To find a phone number",
+        "To avoid missing the changed boarding time",
+        "To choose a book"
+      ],
+      "answer": 1,
+      "explanation": "The announcement changed the flight time. Lina checks the screen regularly because she does not want to miss the new boarding time."
+    }
   },
   {
     "id": "literacy-8",
@@ -146,7 +216,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "steps",
-    "meaning": "خطوات"
+    "meaning": "خطوات",
+    "followUp": {
+      "question": "What does Sam offer to do after Maya helps him?",
+      "options": [
+        "Write every file again",
+        "Buy Maya a new computer",
+        "Help the next new team member"
+      ],
+      "answer": 2,
+      "explanation": "Maya shows Sam the folders and writes the steps. After he finds a file himself, he offers to help the next new team member."
+    }
   },
   {
     "id": "literacy-9",
@@ -164,7 +244,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "room",
-    "meaning": "غرفة"
+    "meaning": "غرفة",
+    "followUp": {
+      "question": "What does Hala decide before judging the new routine?",
+      "options": [
+        "Try it for another week",
+        "Never take a break again",
+        "Buy a different phone"
+      ],
+      "answer": 0,
+      "explanation": "Hala finishes earlier, but she does not judge the change after only a short time. She decides to continue for another week."
+    }
   },
   {
     "id": "literacy-10",
@@ -182,7 +272,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "bus",
-    "meaning": "حافلة"
+    "meaning": "حافلة",
+    "followUp": {
+      "question": "Did Omar return the book by the day he had promised?",
+      "options": [
+        "Yes, he collected it on Thursday morning",
+        "No, he kept it until Friday",
+        "The text says he never found it"
+      ],
+      "answer": 0,
+      "explanation": "He loses track of the book on Wednesday and collects it the next morning. That is Thursday, the day he promised to return it."
+    }
   },
   {
     "id": "literacy-11",
@@ -200,7 +300,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "battery",
-    "meaning": "بطارية"
+    "meaning": "بطارية",
+    "followUp": {
+      "question": "Why does Sara choose an afternoon train?",
+      "options": [
+        "She does not want breakfast at home",
+        "All seats on the early train are booked",
+        "Her phone has no tickets"
+      ],
+      "answer": 1,
+      "explanation": "Sara wanted the early train, but no seats were available. She takes an afternoon train instead and has time for breakfast at home."
+    }
   },
   {
     "id": "literacy-12",
@@ -218,7 +328,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "improvement",
-    "meaning": "تحسين"
+    "meaning": "تحسين",
+    "followUp": {
+      "question": "Why might the new club rule make sharing drafts easier?",
+      "options": [
+        "It requires a perfect story before anyone can read",
+        "It stops all feedback",
+        "It starts with the story and limits suggestions to one improvement"
+      ],
+      "answer": 2,
+      "explanation": "Correcting every mistake made people stop sharing unfinished work. The new rule discusses the story first and then suggests one improvement, so feedback is more focused."
+    }
   },
   {
     "id": "literacy-13",
