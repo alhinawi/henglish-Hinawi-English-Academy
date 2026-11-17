@@ -19,3 +19,9 @@ for(const [file,source] of [['PhraseBankPanel','bank'],['ExamVocabPanel','exam']
  for(const text of ['}, ['+source+', loadAttempt]);','setLoadAttempt(attempt => attempt + 1)','role="alert"',"t('ex.retry')"])assert.ok(view.includes(text),file+': '+text);
 }
 console.log('Phrase/exam loading errors offer in-place retry with announced error state: PASS');
+
+for(const file of ['PhraseBankPanel','ExamVocabPanel']){
+ const view=fs.readFileSync('src/components/'+file+'.tsx','utf8');
+ for(const text of ["typeof IntersectionObserver === 'undefined'",'!loading && !error && visibleCount < visible.length','setVisibleCount(count => Math.min(count + PAGE, visible.length))',"t('pb.loadMore')"])assert.ok(view.includes(text),file+': '+text);
+}
+console.log('Phrase/exam list observer is optional, with bounded native Show more fallback: PASS');

@@ -109,7 +109,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
 
   useEffect(() => {
     const node = sentinelRef.current;
-    if (!node) return;
+    if (!node || typeof IntersectionObserver === 'undefined') return;
     const observer = new IntersectionObserver(
       (observed) => {
         if (observed.some((o) => o.isIntersecting)) {
@@ -308,6 +308,11 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
           </button>
         ))}
       </div>
+      {!loading && !error && visibleCount < visible.length && (
+        <button onClick={() => setVisibleCount(count => Math.min(count + PAGE, visible.length))} className="w-full rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-bold text-white hover:bg-white/10 cursor-pointer">
+          {t('pb.loadMore')}
+        </button>
+      )}
       <div ref={sentinelRef} className="h-1" />
 
       <FilterSheet
