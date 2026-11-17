@@ -115,7 +115,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   const [selectedSection, setSelectedSection] = useState<string | 'all'>('all');
   const [selectedGrammar, setSelectedGrammar] = useState<string | 'all'>('all');
   const [semanticMatches, setSemanticMatches] = useState<SemanticExplanationMatch[]>([]);
-  const [page, setPage] = useState(1);
+  const [requestedPage, setPage] = useState(1);
   const itemsPerPage = 20;
 
   // Highlights state (Daily, Weekly, Random)
@@ -259,13 +259,16 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     }
   }, [allSentences, activeMode, selectedCefr, selectedSection, selectedGrammar, searchQuery, isLoading, learningRevision]);
 
-  // Pagination slice
+  // Removing the final saved/due card on a page must reveal the remaining
+  // records instead of rendering a false empty list at an out-of-range page.
+  const totalPages = Math.max(1, Math.ceil(currentSentencesPool.length / itemsPerPage));
+  const page = Math.min(Math.max(1, requestedPage), totalPages);
+  useEffect(() => { setPage(current => Math.min(Math.max(1, current), totalPages)); }, [totalPages]);
+  useEffect(() => { setPage(1); }, [selectedCefr, selectedSection, selectedGrammar]);
   const paginatedSentences = useMemo(() => {
     const startIndex = (page - 1) * itemsPerPage;
     return currentSentencesPool.slice(startIndex, startIndex + itemsPerPage);
   }, [currentSentencesPool, page]);
-
-  const totalPages = Math.ceil(currentSentencesPool.length / itemsPerPage) || 1;
 
   // Switch learning mode
   const handleSelectMode = (mode: LearningMode) => {
