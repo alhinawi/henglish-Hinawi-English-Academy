@@ -271,37 +271,121 @@ wear   - wore   - worn       يلبس
     contentMarkdown: `==========================================================
 HENGLISH ACADEMY — FORMAL WRITING TEMPLATES PACK
 ==========================================================
+These are original practice scenarios, not real reports or personal claims.
+Adapt the details to your own situation. Do not copy invented experience
+into a real application. Bracketed fields are for your own details.
+
 1) FORMAL BUSINESS EMAIL
-Subject: Project Milestone Delivery & Q4 Roadmap
-Dear Mr. Henderson,
-I am writing to provide you with a comprehensive status update
-regarding our software migration. By next Friday at 5:00 PM, our
-engineering team will have deployed all microservices to production.
-Best regards, [Name]
+Purpose: give a clear project update and request a specific next step.
+Subject: Migration Update and Testing Plan
+Dear [Recipient name],
+I am writing to update you on our planned software migration.
+The team has finished the initial checks and is testing the remaining
+services. By next Friday at 5 p.m., we will have completed the planned
+tests, provided that no major issues appear. We will send a separate
+notice before any change affects users. Could you confirm who should
+receive the final test summary?
+Best regards,
+[Your name]
+Rules and checks:
+- State the purpose in the first sentence; keep the subject specific.
+- Separate completed work, current work and planned work.
+- Use will have + V3 for completion before a future deadline.
+- Label conditions honestly; do not promise unverified results.
+- End with one clear request and an appropriate sign-off.
+Practice: write 80-100 words about a study-group project. Include a
+status update, a deadline and a request for your reader.
 
 2) JOB APPLICATION COVER LETTER
+Purpose: connect relevant evidence to the role, not repeat a full CV.
 Dear Hiring Committee,
-I am writing to express my strong enthusiasm for the position.
-By the completion of this quarter, I will have led three major
-initiatives, demonstrating my ability to deliver results.
-Sincerely, [Name]
+I am applying for the [role title] position advertised on [source].
+In my [real project or role], I [specific action and result]. This
+experience helped me develop [skill relevant to the vacancy].
+I am interested in your team because [reason grounded in the advert].
+By the interview date, I will have completed [relevant planned work],
+if that statement is accurate. I would welcome the opportunity to
+discuss how my experience matches the role.
+Sincerely,
+[Your name]
+Rules and checks:
+- Use the exact role title and check the employer's instructions.
+- Give one concrete example of your own work; never invent experience.
+- Link each example to a skill the vacancy actually requests.
+- Use past forms for completed achievements and future forms for plans.
+- Keep the close polite; check the name, role and contact details.
+Practice: choose a real vacancy and write 100-120 words using only
+experience you can explain and support. Mark any missing detail.
 
 3) ACADEMIC OPINION ESSAY
-Hook + Thesis: In recent decades, urban centers have embraced
-sustainable infrastructure. By 2040, major cities will have
-transitioned to ninety percent clean energy.
+Purpose: state a position, support it and consider a limitation.
+Practice question: Should an imagined city expand renewable energy?
+An imagined city is considering a proposal to expand solar and wind
+power. The proposal could reduce reliance on some existing energy
+sources, but its value depends on cost, reliability and fair access.
+If the first phase meets its targets, the city will have tested new
+capacity before deciding whether to expand it. Supporters should
+explain how the plan would be funded; critics should identify
+specific risks rather than dismissing it without evidence.
+A cautious, evaluated trial is more defensible than an unsupported
+promise of complete success.
+Rules and checks:
+- Answer the question with a clear position rather than a slogan.
+- Give a reason and explain how it supports the position.
+- Distinguish an imagined scenario, a proposal and an established fact.
+- Discuss a relevant limitation and explain your response to it.
+- Use a conclusion that follows from the argument; invent no statistics.
+Practice: write 120-150 words on the question. Include one supporting
+reason, one limitation and a conclusion. Cite any real factual claim.
 
 4) FORMAL COMPLAINT LETTER
-Dear Customer Service Manager,
-I am writing to express my dissatisfaction with order #4821.
-By the time your team responds, three weeks will have passed
-since the promised delivery date.
-Yours faithfully, [Name]
+Purpose: explain the problem and ask for a practical remedy.
+Subject: Delayed Order [order reference]
+Dear Customer Service Team,
+I am writing about order [reference], placed on [date]. The promised
+delivery date was [date], but the order has not arrived. I contacted
+support on [date] and have not yet received a revised delivery date.
+By next Monday, two weeks will have passed since the promised date.
+Please confirm the order status and explain the available delivery
+or refund options. I have attached [relevant evidence, if available].
+I would appreciate a reply by [reasonable date].
+Yours faithfully,
+[Your name]
+Rules and checks:
+- Present dates and events in order; use only facts you can verify.
+- Include the reference number, but no unnecessary sensitive data.
+- State the remedy you want without threats or unsupported legal claims.
+- Use Present Perfect for an unresolved problem and past forms for dates.
+- Check attachments exist before saying they are attached.
+Practice: write 100-120 words about a clearly labelled fictional
+purchase. Include the timeline, problem, requested remedy and reply date.
 
 5) UNIVERSITY PERSONAL STATEMENT
-Ever since I wrote my first line of code at fourteen, I have been
-fascinated by software. By the time I begin my studies, I will have
-completed three independent projects.
+Purpose: explain academic interest with specific evidence and reflection.
+My interest in [subject] developed through [your real experience].
+During [project or activity], I [what you actually did]. The work
+showed me [what you learned] and raised a question about [topic].
+I explored that question by [reading, practice or another real step].
+I now want to study [specific area] in more depth. By the start of the
+course, I will have completed [accurate preparation plan]. I hope to
+contribute [specific interest or experience] while developing the
+skills needed for [thoughtful academic or career goal].
+Rules and checks:
+- Follow the university's current prompt and word limit.
+- Use specific real examples rather than a list of flattering adjectives.
+- Explain what you learned and why it connects to the subject.
+- Distinguish completed experience from preparation you only plan to do.
+- Check every personal claim and remove details you cannot support.
+Practice: write 120-150 words about your own academic interest.
+Include one example, one reflection and one preparation goal.
+
+FINAL SELF-CHECK FOR ALL FIVE TASKS
+Who is the reader, and what do they need to know or do?
+Is the purpose clear, with relevant details in a logical order?
+Are facts, examples and plans clearly distinguished?
+Are tense, agreement, spelling and punctuation consistent?
+Have you replaced every bracketed field and checked the task length?
+
 ==========================================================`,
   },
 ];
