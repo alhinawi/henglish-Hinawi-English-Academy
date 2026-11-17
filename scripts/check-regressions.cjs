@@ -2,6 +2,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
+  'check-intermediate-reading-inference.cjs',
   'check-advanced-reading-inference.cjs',
   'check-elementary-writing-models.cjs',
   'check-intermediate-writing-models.cjs',
