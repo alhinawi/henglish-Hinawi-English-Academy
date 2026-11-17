@@ -53,6 +53,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   const [isAuditingAll, setIsAuditingAll] = useState(false);
   const [auditProgress, setAuditProgress] = useState<{ current: number; total: number } | null>(null);
   const [statusMsg, setStatusMsg] = useState<string | null>(null);
+  const [saveFailed, setSaveFailed] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -132,18 +133,10 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   const handleSaveEdit = async () => {
     if (!editingVideo) return;
     playSound('click');
+    setSaveFailed(false);
+    try {
 
-    // If ID changed, replace and verify
-    if (replaceIdInput.trim() !== editingVideo.youtubeId) {
-      const res = await adminReplaceVideoId(editingVideo.id, replaceIdInput.trim());
-      if (!res.ok) {
-        setStatusMsg(`${t('avmm.idError')} ${videoImportError(res.error, t)}`);
-        playSound('wrong');
-        return;
-      }
-    }
-
-    const updated = adminUpdateVideo(editingVideo.id, {
+    const patch = {
       sceneTitle: editingVideo.sceneTitle,
       movieTitle: editingVideo.movieTitle,
       category: editingVideo.category,
@@ -151,22 +144,38 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
       accent: editingVideo.accent,
       startTime: editingVideo.startTime,
       endTime: editingVideo.endTime,
-    });
+    };
+    // Replacement and metadata must persist in the same write.
+    if (replaceIdInput.trim() !== editingVideo.youtubeId) {
+      const res = await adminReplaceVideoId(editingVideo.id, replaceIdInput.trim(), patch);
+      if (!res.ok) {
+        setStatusMsg(`${t('avmm.idError')} ${videoImportError(res.error, t)}`);
+        playSound('wrong');
+        return;
+      }
+    } else {
+      adminUpdateVideo(editingVideo.id, patch);
+    }
+    const updated = getStoredVideos();
 
     setVideos(updated);
     setEditingVideo(null);
     playSound('success');
     setStatusMsg(t('avmm.saved'));
     if (onCatalogChanged) onCatalogChanged();
+    } catch { setStatusMsg(null); setSaveFailed(true); playSound('wrong'); }
   };
 
   const handleMarkUnavailable = (v: EducationalVideoItem) => {
     const reason = prompt(t('avmm.unavailablePrompt'), 'Unavailable on YouTube');
     if (reason) {
+      setSaveFailed(false);
+      try {
       const updated = adminMarkUnavailable(v.id, reason);
       setVideos(updated);
       playSound('click');
       if (onCatalogChanged) onCatalogChanged();
+      } catch { setStatusMsg(null); setSaveFailed(true); playSound('wrong'); }
     }
   };
 
@@ -195,6 +204,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
           </div>
         </div>
 
+        {saveFailed && <p role="alert" className="rounded-xl border border-amber-300/30 bg-amber-300/10 p-3 text-xs leading-6 text-amber-100">{t('vocab.saveError')}</p>}
         {statusMsg && (
           <div className="p-3.5 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center gap-2">
             <CheckCircle2 className="w-4 h-4 shrink-0" />
