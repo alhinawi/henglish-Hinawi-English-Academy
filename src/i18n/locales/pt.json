@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "Este PDF não tem texto selecionável e pode conter páginas digitalizadas. Envie um PDF com texto selecionável ou cole o texto num ficheiro TXT.",
   "lp.noteStorage": "As notas ficam só neste navegador, separadas por aluno e lição. Não são sincronizadas com outros dispositivos.",
   "lp.noteSavedLocal": "Salvo neste navegador.",
-  "ts.vocabReviewPartial": "Salvo no vocabulário deste dispositivo, mas não no plano de revisão. Permita o armazenamento e salve novamente."
+  "ts.vocabReviewPartial": "Salvo no vocabulário deste dispositivo, mas não no plano de revisão. Permita o armazenamento e salve novamente.",
+  "sc.reviewPartial": "Sua avaliação foi salva, mas não foi possível atualizar as frases difíceis, as revisões recentes ou as estatísticas. Não repita a avaliação para tentar essas atualizações novamente."
 }

@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "Tento PDF neobsahuje označitelný text a může obsahovat naskenované stránky. Nahrajte PDF s označitelným textem nebo vložte text do souboru TXT.",
   "lp.noteStorage": "Poznámky zůstávají pouze v tomto prohlížeči, zvlášť pro každého studenta a lekci. Nesynchronizují se s jinými zařízeními.",
   "lp.noteSavedLocal": "Uloženo v tomto prohlížeči.",
-  "ts.vocabReviewPartial": "Uloženo do slovní zásoby v tomto zařízení, ale ne do plánu opakování. Povolte ukládání a uložte znovu."
+  "ts.vocabReviewPartial": "Uloženo do slovní zásoby v tomto zařízení, ale ne do plánu opakování. Povolte ukládání a uložte znovu.",
+  "sc.reviewPartial": "Hodnocení bylo uloženo, ale seznam obtížných vět, posledních opakování nebo statistiky se nepodařilo aktualizovat. Kvůli těmto aktualizacím hodnocení neopakujte."
 }

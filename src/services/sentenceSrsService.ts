@@ -7,6 +7,7 @@ import { mediaStorageKey } from './accountMediaStorage';
 import { calculateSM2, ReviewRating } from './spacedRepetitionService';
 
 export interface SentenceSrsRecord {
+  storageWarning?: boolean;
   sentenceId: string;
   repetitionCount: number;
   intervalDays: number;
@@ -129,8 +130,16 @@ function reviewSentence(sentenceId: string, rating: ReviewRating): SentenceSrsRe
   // Retain older latest-review evidence before replacing this record.
   recomputeStats();
 
+  const raw = readOwnerValue(STORAGE_KEY_SRS);
+  const parsed: unknown = raw === null ? {} : JSON.parse(raw);
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed) || Object.values(parsed).some(value =>
+    !value || typeof value !== 'object' || typeof value.sentenceId !== 'string' ||
+    typeof value.lastReviewedAt !== 'string' || typeof value.nextReviewAt !== 'string' ||
+    !Number.isFinite(value.timesReviewed) || ['repetitionCount', 'intervalDays', 'easeFactor', 'timesRemembered', 'timesForgotten']
+      .some(field => value[field] !== undefined && !Number.isFinite(value[field])))) throw new Error('Saved sentence reviews are unreadable');
+  const fresh = parsed as Record<string, SentenceSrsRecord>;
   const now = new Date();
-  const existing = srsRecords[sentenceId] || {
+  const existing = fresh[sentenceId] || {
     sentenceId,
     repetitionCount: 0,
     intervalDays: 1,
@@ -153,9 +162,9 @@ function reviewSentence(sentenceId: string, rating: ReviewRating): SentenceSrsRe
     cefrLevel: '',
     exampleEn: '',
     exampleAr: '',
-    repetitionCount: existing.repetitionCount,
-    intervalDays: existing.intervalDays,
-    easeFactor: existing.easeFactor,
+    repetitionCount: existing.repetitionCount ?? 0,
+    intervalDays: existing.intervalDays ?? 1,
+    easeFactor: existing.easeFactor ?? 2.5,
     nextReviewAt: existing.nextReviewAt,
   };
 
@@ -171,27 +180,42 @@ function reviewSentence(sentenceId: string, rating: ReviewRating): SentenceSrsRe
     lastReviewedAt: now.toISOString(),
     status: isSuccess ? 'remembered' : 'forgotten',
     timesReviewed: existing.timesReviewed + 1,
-    timesRemembered: isSuccess ? existing.timesRemembered + 1 : existing.timesRemembered,
-    timesForgotten: !isSuccess ? existing.timesForgotten + 1 : existing.timesForgotten,
+    timesRemembered: isSuccess ? (existing.timesRemembered ?? 0) + 1 : (existing.timesRemembered ?? 0),
+    timesForgotten: !isSuccess ? (existing.timesForgotten ?? 0) + 1 : (existing.timesForgotten ?? 0),
   };
 
-  srsRecords[sentenceId] = updated;
+  // The review itself is authoritative. Do not update UI/cache on a failed write.
+  const nextRecords = { ...fresh, [sentenceId]: updated };
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_SRS, learnerId), JSON.stringify(nextRecords));
+  srsRecords = nextRecords;
+  let storageWarning = false;
+  const updateList = (base: string, change: (ids: string[]) => string[]): string[] => {
+    const raw = readOwnerValue(base);
+    const ids: unknown = raw === null ? [] : JSON.parse(raw);
+    if (!Array.isArray(ids) || ids.some(id => typeof id !== 'string')) throw new Error('Saved sentence list is unreadable');
+    const next = change(ids);
+    localStorage.setItem(mediaStorageKey(base, learnerId), JSON.stringify(next));
+    return next;
+  };
+  try {
+    difficultIds = new Set(updateList(STORAGE_KEY_DIFFICULT, ids => rating <= 2 ? [...new Set([...ids, sentenceId])] : rating >= 4 ? ids.filter(id => id !== sentenceId) : ids));
+  } catch { storageWarning = true; }
+  try {
+    recentIds = updateList(STORAGE_KEY_RECENT, ids => [sentenceId, ...ids.filter(id => id !== sentenceId)].slice(0, 50));
+  } catch { storageWarning = true; }
+  try {
+    const raw = readOwnerValue(STORAGE_KEY_STATS);
+    const freshStats: unknown = raw === null ? {} : JSON.parse(raw);
+    if (!freshStats || typeof freshStats !== 'object' || Array.isArray(freshStats)) throw new Error('Saved sentence statistics are unreadable');
+    const dates = (freshStats as SentenceLearningStats).studyDates;
+    if (dates !== undefined && (!Array.isArray(dates) || dates.some(day => typeof day !== 'string'))) throw new Error('Saved sentence dates are unreadable');
+    stats.studyDates = [...new Set([...(stats.studyDates || []), ...(dates || [])])];
+    recomputeStats(now);
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_STATS, learnerId), JSON.stringify(stats));
+  } catch { storageWarning = true; recomputeStats(now); }
+  // Favorites and custom collections are unrelated and must never be rewritten here.
 
-  // Manage difficult list automatically if rating is low (0, 1, 2)
-  if (rating <= 2) {
-    difficultIds.add(sentenceId);
-  } else if (rating >= 4 && difficultIds.has(sentenceId)) {
-    difficultIds.delete(sentenceId);
-  }
-
-  // Update recent list
-  markRecentlyStudied(sentenceId);
-
-  // Update general learning stats
-  recomputeStats(now);
-  persistAll();
-
-  return updated;
+  return storageWarning ? { ...updated, storageWarning: true } : updated;
 }
 
 /**
