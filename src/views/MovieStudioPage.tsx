@@ -4,7 +4,7 @@
 // verified player, bilingual Egyptian subtitles, and educational importer
 // ==============================================================================
 
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { PageRoute, CEFRLevel } from '../types';
 import {
   MOVIE_SCENES_CATALOG,
@@ -113,6 +113,15 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
   // YouTube API Search State
   const [ytQuery, setYtQuery] = useState('');
+  const ytRequestVersion = useRef(0);
+  const changeYtQuery = (query: string) => {
+    ytRequestVersion.current += 1;
+    setYtQuery(query);
+    setYtResults(null);
+    setYtNextPageToken(undefined);
+    setYtPrevPageToken(undefined);
+    setIsYtSearching(false);
+  };
   const [ytResults, setYtResults] = useState<SearchDiscoveryResponse | null>(null);
   const [isYtSearching, setIsYtSearching] = useState(false);
   const [ytNextPageToken, setYtNextPageToken] = useState<string | undefined>(undefined);
@@ -167,6 +176,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
   // Handle YouTube Search
   const handleSearchYouTube = async (token?: string) => {
     if (!ytQuery.trim()) return;
+    const version = ++ytRequestVersion.current;
     setIsYtSearching(true);
     playSound('click');
     try {
@@ -176,6 +186,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
     try {
       const res = await searchYouTubeVideos(ytQuery, token);
+      if (version !== ytRequestVersion.current) return;
       setYtResults(res);
       setYtNextPageToken(res.nextPageToken);
       setYtPrevPageToken(res.prevPageToken);
@@ -183,7 +194,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
     } catch (err) {
       console.error('YouTube search error:', err);
     } finally {
-      setIsYtSearching(false);
+      if (version === ytRequestVersion.current) setIsYtSearching(false);
     }
   };
 
@@ -691,7 +702,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                     <input
                       type="text"
                       value={ytQuery}
-                      onChange={e => setYtQuery(e.target.value)}
+                      onChange={e => changeYtQuery(e.target.value)}
                       onKeyDown={e => e.key === 'Enter' && handleSearchYouTube()}
                       placeholder={t('ms.ytPlaceholder')}
                       className="w-full pl-4 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm focus:outline-none focus:border-[#41e7ff]"
