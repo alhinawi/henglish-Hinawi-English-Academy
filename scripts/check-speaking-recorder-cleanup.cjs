@@ -33,5 +33,13 @@ function fixture(failure) {
   assert.equal(stops(), 1);assert.equal(c.url, 'recorded-clip');assert.equal(c.recording, false);
   const late = fixture('none');late.c.mounted.current = false;await late.c.exports.start();
   assert.equal(late.stops(), 1);assert.equal(late.c.recorder.current, null);
+  for (const mounted of [true,false]) {
+    const runtime=fixture('none');await runtime.c.exports.start();const r=runtime.c.recorder.current;let stopCalls=0;r.stop=()=>{stopCalls++;r.state='inactive';r.onstop?.();};runtime.c.mounted.current=mounted;
+    runtime.c.recording=true;runtime.c.error='';r.onerror();assert.equal(runtime.stops(),1);assert.equal(stopCalls,1);assert.equal(runtime.c.recorder.current,null);assert.equal(runtime.c.stream.current,null);assert.equal(r.onstop,null);assert.equal(r.ondataavailable,null);assert.equal(runtime.c.timer.current,null);assert.equal(runtime.c.objectUrl.current,'previous-clip');assert.equal(runtime.c.url,undefined);
+    assert.equal(runtime.c.recording,!mounted);assert.equal(runtime.c.error,mounted?'sp.rec.micError':'');
+    if(mounted){await runtime.c.exports.start();assert.equal(runtime.c.recording,true);assert.equal(runtime.c.error,'');}
+  }
+  const brokenStop=fixture('none');await brokenStop.c.exports.start();brokenStop.c.recorder.current.stop=()=>{throw Error('already failed')};brokenStop.c.recorder.current.onerror();assert.equal(brokenStop.stops(),1);assert.equal(brokenStop.c.recording,false);
+  console.log('Speaking recorder runtime errors release microphone/timer,retain prior clip,avoid late unmounted updates,and allow retry; thrown stop is safe: PASS');
   console.log('Speaking recorder releases microphone on construction/start failure; permission denial, successful stop, old clip and late grant preserved: PASS');
 })().catch(e => {console.error(e);process.exitCode = 1;});
