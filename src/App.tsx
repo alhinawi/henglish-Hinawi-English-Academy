@@ -666,12 +666,13 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
       />
 
       {isSettingsOpen && (
-        <SettingsModal
+        <SettingsModal key={`${authUser?.id || 'guest'}:${session.accessToken || ''}`}
           userProfile={activeProfile}
           accessToken={session.accessToken}
           onClose={() => setIsSettingsOpen(false)}
           onSaved={(patch) => {
             const sess = getSavedAuthSession();
+            if (sess.user.id !== activeProfile.id || sess.accessToken !== session.accessToken) return;
             saveAuthSession({
               ...sess,
               user: {
