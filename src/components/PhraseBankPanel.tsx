@@ -96,8 +96,8 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
   }, [bank, loadAttempt]);
 
   const visible = useMemo(
-    () => sortPhrases(filterPhrases(entries, query, register, origin, tier), sortMode),
-    [entries, query, register, origin, tier, sortMode]
+    () => sortPhrases(filterPhrases(entries, query, register, origin, tier, txMap), sortMode),
+    [entries, query, register, origin, tier, sortMode, txMap]
   );
 
   // Windowed rendering: an IntersectionObserver sentinel grows the rendered

@@ -146,7 +146,8 @@ export function filterPhrases(
   query: string,
   register: PhraseRegister | 'all',
   origin: PhraseOrigin | 'all',
-  tier: number | 'all' = 'all'
+  tier: number | 'all' = 'all',
+  translations?: Record<string, { m?: string; e?: string }> | null
 ): PhraseEntry[] {
   const q = query.trim().toLowerCase();
   return entries.filter((e) => {
@@ -154,10 +155,6 @@ export function filterPhrases(
     if (origin !== 'all' && e.origin !== origin) return false;
     if (tier !== 'all' && (e.popularity ?? 3) !== tier) return false;
     if (!q) return true;
-    return (
-      e.phrase.toLowerCase().includes(q) ||
-      e.meaningAr.includes(query.trim()) ||
-      e.exampleEn.toLowerCase().includes(q)
-    );
+    return [e.phrase, e.meaningAr, e.exampleEn, e.exampleAr, translations?.[e.id]?.m || '', translations?.[e.id]?.e || ''].some(text => text.toLowerCase().includes(q));
   });
 }
