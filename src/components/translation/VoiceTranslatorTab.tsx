@@ -1,3 +1,4 @@
+import { useOwnedClipboard } from '../../hooks/useOwnedClipboard';
 import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - VOICE & SPEECH TRANSLATION TAB
@@ -50,7 +51,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [historySaveFailed, setHistorySaveFailed] = useState(false);
 
-  const [copied, setCopied] = useState(false);
+  const { copy, copiedKey, copyFailed } = useOwnedClipboard(JSON.stringify([translatedVoiceText, targetLang, learnerId]));
 
   const uploadVersion = useRef(0);
   const uploadReader = useRef<FileReader | null>(null);
@@ -216,17 +217,12 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
 
 
   const handleCopy = async () => {
-    if (!translatedVoiceText) return;
-    try {
-      await navigator.clipboard.writeText(translatedVoiceText);
-      playSound('click');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {}
+    if (await copy(translatedVoiceText)) playSound('click');
   };
 
   return (
     <div className="space-y-6 text-right">
+      {copyFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm text-amber-200">{t('lw.copyFailed')}</p>}
       {historySaveFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {/* Voice Banner */}
       <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -355,7 +351,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
                   title={t('vt.copyTranslation')}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer disabled:opacity-30"
                 >
-                  {copied ? <Check className="w-4 h-4 text-[#10b981]" /> : <Copy className="w-4 h-4" />}
+                  {copiedKey ? <Check className="w-4 h-4 text-[#10b981]" /> : <Copy className="w-4 h-4" />}
                 </button>
               </div>
             </div>
