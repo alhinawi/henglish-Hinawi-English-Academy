@@ -256,7 +256,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
           { id: 'documents', label: t('ts.documents'), icon: FileText },
           { id: 'voice', label: t('ts.voice'), icon: Mic },
           { id: 'ocr', label: t('ts.ocr'), icon: Camera },
-          { id: 'practice', label: t('ts.practice'), icon: Target, badge: 'XP' },
+          { id: 'practice', label: t('ts.practice'), icon: Target },
           { id: 'vocab', label: t('ts.vocab'), icon: BookmarkCheck },
         ].map(tab => {
           const Icon = tab.icon;
