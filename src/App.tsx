@@ -1,3 +1,4 @@
+import { isSourceRoute } from './services/sourceNavigation';
 import { BadgesPage } from './components/BadgeCollection';
 import { useArcadeProgress } from './services/arcadeProgressService';
 import { combinedStudyStreak } from './utils/studyStreak';
@@ -263,7 +264,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
         setCurrentRoute('games');
       } else if (hash === 'resources') {
         setCurrentRoute('resources');
-      } else if (hash === 'sources' || hash === 'best-resources' || hash === 'top-resources') {
+      } else if (isSourceRoute(hash)) {
         setCurrentRoute('sources');
       } else if (hash === 'about') {
         setCurrentRoute('about');
