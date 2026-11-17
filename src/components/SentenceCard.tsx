@@ -39,6 +39,7 @@ import {
 import { useLanguage } from '../i18n/LanguageContext';
 
 interface SentenceCardProps {
+  learnerId?: string;
   sentence: SentenceItem;
   onPracticeWithAi?: (sentence: SentenceItem) => void;
   onAddToCollection?: (sentence: SentenceItem) => void;
@@ -47,6 +48,7 @@ interface SentenceCardProps {
 }
 
 export const SentenceCard: React.FC<SentenceCardProps> = ({
+  learnerId,
   sentence,
   onPracticeWithAi,
   onAddToCollection,
@@ -59,9 +61,9 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id));
-  const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id));
-  const [srsRecord, setSrsRecord] = useState(() => getSentenceSrsRecord(sentence.id));
+  const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id, learnerId));
+  const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id, learnerId));
+  const [srsRecord, setSrsRecord] = useState(() => getSentenceSrsRecord(sentence.id, learnerId));
 
   // Play normal audio
   const handlePlayAudio = (slow: boolean = false) => {
@@ -80,7 +82,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   // Toggle favorite
   const handleToggleFavorite = () => {
     playSound('pop');
-    const newState = toggleFavoriteSentence(sentence.id);
+    const newState = toggleFavoriteSentence(sentence.id, learnerId);
     setIsFavorite(newState);
     onLearningChange?.();
   };
@@ -88,7 +90,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   // Toggle difficult
   const handleToggleDifficult = () => {
     playSound('click');
-    const newState = toggleDifficultSentence(sentence.id);
+    const newState = toggleDifficultSentence(sentence.id, learnerId);
     setIsDifficult(newState);
     onLearningChange?.();
   };
@@ -106,9 +108,9 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   // SM-2 Review rating
   const handleRateSRS = (rating: 0 | 2 | 4 | 5) => {
     playSound('success');
-    const rec = reviewSentence(sentence.id, rating);
+    const rec = reviewSentence(sentence.id, rating, learnerId);
     setSrsRecord(rec);
-    setIsDifficult(isDifficultSentence(sentence.id));
+    setIsDifficult(isDifficultSentence(sentence.id, learnerId));
     onLearningChange?.();
   };
 
