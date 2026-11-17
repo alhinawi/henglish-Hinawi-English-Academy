@@ -1,3 +1,4 @@
+import { LISTENING_INFERENCE } from './listeningInferenceData';
 import { LISTENING_TRACKS } from './skillsAcademyData';
 import type { ListeningTrack } from './skillsAcademyData';
 
@@ -67,7 +68,7 @@ export const LISTENING_LESSONS: ListeningLesson[] = seeds.map((s, i) => {
     id: `listening-studio-${i + 1}`, title, titleAr, level: level as ListeningTrack['level'], accent: i % 2 ? 'American' : 'British', duration: '', category: 'Original practice', transcript, transcriptAr, dictationSentence,
     image: `/images/listening/${topic}.webp`, imageSource: '', imageAlt: '',
     focusAr: i < 12 ? 'التقاط التفاصيل وترتيب التعليمات' : i < 24 ? 'الفكرة الرئيسية والسبب والنتيجة' : 'المعنى الضمني وحدود الادعاء', unit: Math.floor(i / 6) + 1, original: true,
-    comprehensionQuiz: [{ id: `ls-${i}-meaning`, question, options, answer, explanation: `${correct}. ${transcriptAr}`, topic: 'Listening comprehension', difficulty: i < 12 ? 'beginner' : i < 24 ? 'intermediate' : 'advanced' }],
+    comprehensionQuiz: [{ id: `ls-${i}-meaning`, question, options, answer, explanation: `${correct}. ${transcriptAr}`, topic: 'Listening comprehension', difficulty: i < 12 ? 'beginner' : i < 24 ? 'intermediate' : 'advanced' }, ...(LISTENING_INFERENCE[`listening-studio-${i + 1}`] ? [{ ...LISTENING_INFERENCE[`listening-studio-${i + 1}`], id: `ls-${i}-inference`, topic: 'Listening inference', difficulty: 'advanced' as const }] : [])],
   };
 });
 const legacyPhotos = ['1569154941061-e231b4725ef1','1531482615713-2afd69097998','1507679799987-c73779587ccf','1559839734-2b71ea197ec2','1517248135467-4c7edcad34c4','1447752875215-b2761acb3c5d'];
