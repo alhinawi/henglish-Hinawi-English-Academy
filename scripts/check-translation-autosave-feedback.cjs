@@ -1,1 +1,3 @@
 const fs=require('fs'),assert=require('assert/strict');for(const n of ['DocumentTranslatorTab','VoiceTranslatorTab']){const s=fs.readFileSync('src/components/translation/'+n+'.tsx','utf8');assert(s.includes('if (res.historySaved === false) setHistorySaveFailed(true)'));assert(s.includes("{t('vocab.saveError')}"));assert(s.includes('setHistorySaveFailed(false)'));}console.log('Document and voice successful output retained with autosave-warning feedback,reset for next operation: PASS');
+
+assert(fs.readFileSync('src/components/translation/DocumentTranslatorTab.tsx','utf8').includes("e.target.value = '';"));console.log('Document picker resets after capture so same-file reselection triggers another operation: PASS');
