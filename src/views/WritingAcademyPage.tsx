@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { copyText } from '../services/copyText';
 import { writingFeedback } from '../services/writingFeedback';
 import { LessonCorrection } from '../components/LessonCorrection';
@@ -6,7 +7,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { PageRoute } from '../types';
 import { isAiServiceUnavailable, throwForAiResponse } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
-import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
+import { playSound, fireCelebration } from '../utils/audio';
 import {
   PenTool,
   Mail,
@@ -15,7 +16,6 @@ import {
   Sparkles,
   CheckCircle2,
   Copy,
-  Volume2,
   RefreshCw,
   Brain,
   Award,
@@ -319,7 +319,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         <div className="lg:col-span-7 glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-white/10">
             <h2 className="text-xl font-black text-white">{t(currentTemplate.titleKey)}</h2>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-start gap-2">
               <button
                 onClick={handleCopyTemplate}
                 className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-[#ffd166] border border-white/10 flex items-center gap-1.5 cursor-pointer"
@@ -327,13 +327,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
                 <Copy className="w-3.5 h-3.5" />
                 <span>{copied ? t('wa.copied') : t('wa.copy')}</span>
               </button>
-              <button
-                onClick={() => speakEnglish(currentTemplate.body)}
-                className="p-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] cursor-pointer"
-                title={t('wa.listen')}
-              >
-                <Volume2 className="w-4 h-4" />
-              </button>
+              <LessonSpeechButton key={activeTemplate} text={currentTemplate.body} label={t('wa.listen')} iconOnly className="p-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] cursor-pointer" />
             </div>
           </div>
 
@@ -353,7 +347,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             <span className="text-xs font-bold text-[#ffd166]">{t('wa.goldenRules')}</span>
             <ul className="space-y-1.5 text-xs text-[#dedbf4]">
               {currentTemplate.ruleKeys.map((rk, idx) => (
-                <li key={idx} className="flex items-center gap-2">
+                <li key={idx} className="flex flex-wrap items-start gap-2">
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#c4ff55] shrink-0" />
                   <span>{t(rk)}</span>
                 </li>

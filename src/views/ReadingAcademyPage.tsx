@@ -1,16 +1,16 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
 import { LITERACY_READING } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, fireCelebration } from '../utils/audio';
 import {
   BookOpen,
   Clock,
   CheckCircle2,
   Sparkles,
-  Volume2,
   HelpCircle,
   Eye,
   Languages,
@@ -93,7 +93,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
             }`}
           >
             <span>{txText(appText, p.titleAr)}</span>
-            <span className="text-[10px] px-1.5 py-0.5 rounded bg-black/30 font-mono">
+            <span className="text-[10px] px-1.5 py-0.5 rounded bg-black/70 text-white font-mono">
               {p.level} • {p.estimatedTime}
             </span>
           </button>
@@ -114,7 +114,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
             <h2 className="text-2xl sm:text-3xl font-black text-white">{txText(appText, passage.title)}</h2>
           </div>
 
-          <div className="flex items-center gap-3 self-start sm:self-auto">
+          <div className="flex flex-wrap items-start gap-3 self-start sm:self-auto">
             <button
               onClick={() => {
                 playSound('click');
@@ -126,13 +126,7 @@ export const ReadingAcademyPage: React.FC<ReadingAcademyPageProps> = ({ onNaviga
               <span>{showArabic ? t('ra.hideNote') : t('ra.showNote')}</span>
             </button>
 
-            <button
-              onClick={() => speakEnglish(passage.content)}
-              className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] cursor-pointer"
-              title={t('ra.listen')}
-            >
-              <Volume2 className="w-4 h-4" />
-            </button>
+            <LessonSpeechButton key={passage.id} text={passage.content} label={t('ra.listen')} iconOnly className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-[#41e7ff] cursor-pointer" />
           </div>
         </div>
 
