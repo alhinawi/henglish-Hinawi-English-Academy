@@ -56,6 +56,8 @@ const checks = [
   'check-sentence-practice.cjs',
   'check-sentence-card-state.cjs',
   'check-account-progress.cjs',
+  'check-workshop-copy-lifecycle.cjs',
+  'check-workshop-localization.cjs',
   'check-pronunciation-audio.cjs',
   'check-learning-account-state.cjs',
   'check-progress-read-safety.cjs',
