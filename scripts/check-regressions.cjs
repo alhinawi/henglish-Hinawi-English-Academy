@@ -56,6 +56,7 @@ const checks = [
   'check-sentence-practice.cjs',
   'check-sentence-card-state.cjs',
   'check-account-progress.cjs',
+  'check-tutor-stream-boundaries.cjs',
   'check-tutor-session-privacy.cjs',
   'check-settings-account-guard.cjs',
   'check-auth-profile-fallbacks.cjs',
