@@ -151,21 +151,23 @@ export function normalizeTyped(s: string): string {
     .trim();
 }
 
-/** Fraction (0..1) of the target words the typed answer got right, in order-free comparison. */
+/** Ordered word accuracy. Added words and missing words both lower the score. */
 export function wordAccuracy(target: string, typed: string): number {
   const t = normalizeTyped(target).split(' ').filter(Boolean);
   const a = normalizeTyped(typed).split(' ').filter(Boolean);
-  if (!t.length) return 0;
-  const remaining = [...a];
-  let hit = 0;
-  for (const w of t) {
-    const i = remaining.indexOf(w);
-    if (i >= 0) {
-      hit++;
-      remaining.splice(i, 1);
+  if (!t.length || !a.length) return 0;
+  // Longest common subsequence keeps repeated words and sentence order honest.
+  // One row bounds memory even if a learner pastes a long answer.
+  const matches = new Array<number>(t.length + 1).fill(0);
+  for (const word of a) {
+    let previous = 0;
+    for (let i = 1; i <= t.length; i++) {
+      const old = matches[i];
+      matches[i] = word === t[i - 1] ? previous + 1 : Math.max(matches[i], matches[i - 1]);
+      previous = old;
     }
   }
-  return hit / t.length;
+  return matches[t.length] / Math.max(t.length, a.length);
 }
 
 /** Avoid ambiguous repeated headwords and meanings in arcade decks/options. */

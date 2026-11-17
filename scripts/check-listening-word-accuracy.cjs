@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const source=fs.readFileSync('src/components/arcade/arcadeContent.ts','utf8'),ast=ts.createSourceFile('content.ts',source,ts.ScriptTarget.Latest,true);
+const code=ast.statements.filter(n=>ts.isFunctionDeclaration(n)&&['normalizeTyped','wordAccuracy'].includes(n.name?.text)).map(n=>n.getText(ast)).join('\n');const c={exports:{}};vm.runInNewContext(ts.transpileModule(code,{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,c);const accuracy=c.exports.wordAccuracy;
+assert.equal(accuracy('Please open the door now.','PLEASE open the door now!'),1);
+assert(accuracy('Please open the door now.','now door the open please')<0.8);
+assert.equal(accuracy('I can swim','I can swim purple green blue'),0.5);
+assert.equal(accuracy('I can swim','swim'),1/3);
+assert.equal(accuracy('I can swim','I can'),2/3);
+assert.equal(accuracy('I think that that is true','I think that is true'),5/6);
+assert.equal(accuracy('one two','one one one one'),0.25);
+assert.equal(accuracy('one two three four five','one two three four'),0.8);
+assert.equal(accuracy('','anything'),0);assert.equal(accuracy('hello','!!!'),0);
+assert(accuracy('one two','one two '+('extra '.repeat(10000)))<0.001);
+console.log('Actual listening accuracy: order,insertions,omissions,repetitions,80% boundary,case/punctuation,empty and long answers: PASS');
