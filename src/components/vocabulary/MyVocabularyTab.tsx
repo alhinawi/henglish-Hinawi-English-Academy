@@ -34,9 +34,10 @@ import { useLanguage } from '../../i18n/LanguageContext';
 
 interface MyVocabularyTabProps {
   onExploreWords: () => void;
+  savedVersion?: number;
 }
 
-export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords }) => {
+export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords, savedVersion = 0 }) => {
   const { t } = useLanguage();
   const txMap = useContentMap('vocab');
   const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords());
@@ -54,7 +55,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
   useEffect(() => {
     setSavedWords(getSavedWords());
-  }, []);
+  }, [savedVersion]);
 
   const now = new Date();
   const dueWords = savedWords.filter(w => new Date(w.nextReviewAt) <= now);
