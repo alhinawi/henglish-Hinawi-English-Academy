@@ -31,6 +31,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
     ) ?? []).filter(el => el.getClientRects().length > 0);
     (focusable()[0] || dialog)?.focus();
     const onKey = (event: KeyboardEvent) => {
+      // Appearance is portaled above settings. Its own keyboard handler owns
+      // events while focus is in that dialog, including the first Escape.
+      const activeDialog = document.activeElement?.closest('[role="dialog"]');
+      if (activeDialog && activeDialog !== dialog) return;
       if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return; }
       if (event.key !== 'Tab') return;
       const items = focusable(), first = items[0], last = items[items.length - 1];
