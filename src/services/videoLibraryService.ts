@@ -11207,7 +11207,7 @@ export async function importEducationalVideo(params: {
   customTitle?: string;
   sceneDescription?: string;
   subtitles?: TimedSubtitle[];
-}): Promise<{ ok: boolean; video?: EducationalVideoItem; error?: string }> {
+}, isCurrent: () => boolean = () => true): Promise<{ ok: boolean; video?: EducationalVideoItem; error?: string }> {
   const ytid = extractYouTubeId(params.youtubeUrlOrId);
   if (!ytid) {
     return { ok: false, error: 'رابط يوتيوب غير صالح أو غير معتمد (Invalid YouTube URL)' };
@@ -11215,6 +11215,7 @@ export async function importEducationalVideo(params: {
 
   // 1. Verify availability
   const check = await verifyYouTubeVideo(ytid, true);
+  if (!isCurrent()) return { ok: false };
   if (check.status === 'private_or_deleted') {
     return { ok: false, error: 'الفيديو محذوف أو خاص على يوتيوب ولا يمكن استيراده' };
   }
