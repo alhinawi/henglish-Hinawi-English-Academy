@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
-import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
+import { allWordPairs, uniqueMeaningPairs, sample, shuffle, WordPair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
@@ -28,7 +28,7 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   const start = () => {
     cancelTransition();
-    const pairs = sample(allWordPairs(), PAIRS);
+    const pairs = sample(uniqueMeaningPairs(allWordPairs()), PAIRS);
     setLeft(shuffle(pairs));
     setRight(shuffle(pairs.map((p) => p.ar)));
     setDone(new Set());

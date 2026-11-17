@@ -51,6 +51,17 @@ export function allWordPairs(): WordPair[] {
   });
 }
 
+/** A matching board needs one owner per meaning, not only unique English words. */
+export function uniqueMeaningPairs(words: WordPair[]): WordPair[] {
+  const seen = new Set<string>();
+  return words.filter((word) => {
+    const meaning = word.ar.trim().normalize('NFKC');
+    if (!meaning || seen.has(meaning)) return false;
+    seen.add(meaning);
+    return true;
+  });
+}
+
 /** Movie-scene subtitle lines, always available synchronously. */
 export function sceneSentencePairs(): SentencePair[] {
   return MOVIE_SCENES_CATALOG.flatMap((s) =>
