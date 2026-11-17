@@ -8,6 +8,19 @@ const old=JSON.stringify({...defaults,quizScores:{legacy:75},xp:200});store.set(
 assert.equal(read(key('A'),defaults).xp,0);assert.equal(store.get(legacy),old);assert.equal(JSON.parse(store.get(guest)).xp,200);
 assert.equal(read(guest,defaults).quizScores.legacy,75);store.set(legacy,'{}');assert.equal(read(guest,defaults).xp,200);
 assert.equal(key(),guest);assert.equal(key('guest-123'),guest);assert.notEqual(key('A'),key('B'));assert.notEqual(key('a/b'),key('a%2Fb'));
+// Damaged or unavailable legacy recovery cannot replace a readable owner record.
+const beforeRecovery=new Map(store),savedOwner=JSON.stringify({...defaults,xp:120,completedLessons:['saved-lesson'],quizScores:{saved:{score:4,total:5,date:'2026-11-17'}}});
+store.set(key('recovery'),savedOwner);store.delete(guest);store.set(legacy,'{damaged');
+assert.equal(read(key('recovery'),defaults).xp,120);
+assert.equal(read(key('recovery'),defaults).completedLessons[0],'saved-lesson');
+assert.equal(read(key('recovery'),defaults).quizScores.saved.score,4);
+assert.equal(store.get(legacy),'{damaged');assert.equal(store.get(key('recovery')),savedOwner);assert.equal(store.has(guest),false);
+store.set(legacy,old);const originalSet=localStorage.setItem;localStorage.setItem=(k,v)=>{if(k===guest)throw Error('migration denied');return originalSet(k,v)};
+assert.equal(read(key('recovery'),defaults).xp,120);assert.equal(store.get(legacy),old);assert.equal(store.has(guest),false);localStorage.setItem=originalSet;
+const originalGet=localStorage.getItem;localStorage.getItem=k=>{if(k===guest||k===legacy)throw Error('legacy access denied');return originalGet(k)};
+assert.equal(read(key('recovery'),defaults).xp,120);localStorage.getItem=originalGet;
+localStorage.getItem=()=>{throw Error('all storage denied')};assert.equal(read(key('recovery'),defaults).xp,0);localStorage.getItem=originalGet;
+store.clear();for(const [k,v] of beforeRecovery)store.set(k,v);
 const apiReads=[],dbReads=[],apiWrites=[],dbWrites=[],migrations=[],timers=new Map();let timerId=0,token='token-A';
 let states=[],refs=[],effects=[],cursor=0,dirty=false,proposed=[],result,identity;
 const same=(a,b)=>a&&b&&a.length===b.length&&a.every((v,i)=>Object.is(v,b[i]));
@@ -45,5 +58,6 @@ const tick=async()=>{await new Promise(setImmediate);render()};
  apiReads[2].resolve({progress:null});dbReads[2].resolve({status:'empty'});await tick();assert.equal(migrations.at(-1).id,'A');assert.equal(migrations.at(-1).p.quizScores['A-only'].score,4);assert(!('legacy' in migrations.at(-1).p.quizScores));assert.equal(migrations.at(-1).p.quizScores['during-hydration'].score,3);assert.equal(apiWrites.at(-1).p.quizScores['during-hydration'].score,3);
  const savedA=store.get(key('A'));token='token-B';render('B');result.resetAllProgress();render();assert.equal(store.get(key('A')),savedA);assert.equal(store.get(legacy),'{}');assert.equal(JSON.parse(store.get(guest)).quizScores.legacy,75);
  const writesBefore=apiWrites.length,migrationsBefore=migrations.length,dbBefore=dbWrites.length;token='token-failure';render('failure');result.recordQuizScore('safe-local',2,3);render();apiReads.at(-1).resolve(null);dbReads.at(-1).resolve({status:'unavailable'});await tick();for(const fn of timers.values())fn();assert.equal(apiWrites.length,writesBefore);assert.equal(migrations.length,migrationsBefore);assert.equal(dbWrites.length,dbBefore);assert.equal(result.progress.quizScores['safe-local'].score,2);
- console.log('Account/guest keys, legacy recovery copy, isolated scores, synchronous switch, stale reads/callbacks, hydration guards, same-account migration and reset scope: PASS');
+ store.delete(guest);store.set(legacy,'{damaged');store.set(key('mount-recovery'),savedOwner);token='token-recovery';render('mount-recovery');assert.equal(result.progress.xp,120);assert.equal(result.progress.completedLessons[0],'saved-lesson');assert.equal(JSON.parse(store.get(key('mount-recovery'))).quizScores.saved.score,4);assert.equal(store.get(legacy),'{damaged');assert.equal(store.has(guest),false);
+ console.log('Legacy parse/write/read failures do not hide or overwrite valid owner progress on mount; account/guest keys, legacy recovery copy, isolated scores, synchronous switch, stale reads/callbacks, hydration guards, same-account migration and reset scope: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1});
