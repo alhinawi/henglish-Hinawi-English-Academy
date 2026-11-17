@@ -24,6 +24,8 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const scoreRef = useRef(0);
+  const finished = useRef(false);
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   scoreRef.current = score;
 
   const stopTimer = () => {
@@ -31,7 +33,10 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   };
 
   const gameOver = () => {
+    if (finished.current) return;
+    finished.current = true;
     stopTimer();
+    if (advanceTimer.current) clearTimeout(advanceTimer.current);
     setEnd(recordGameResult(META.id, scoreRef.current));
     setPhase('end');
     playSound('fanfare');
@@ -45,7 +50,11 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     setPicked(null);
   };
 
+  useEffect(() => () => { finished.current = true; if (advanceTimer.current) clearTimeout(advanceTimer.current); }, []);
+
   const start = () => {
+    finished.current = false;
+    if (advanceTimer.current) clearTimeout(advanceTimer.current);
     const words = allWordPairs();
     setPool(words);
     setScore(0);
@@ -77,10 +86,10 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       playSound('correct');
       setScore((s) => s + 1);
       setTimeLeft((t) => Math.min(MAX_TIME, t + 3));
-      setTimeout(() => nextRound(pool), 220);
+      advanceTimer.current = setTimeout(() => { if (!finished.current) nextRound(pool); }, 220);
     } else {
       playSound('wrong');
-      setTimeout(() => gameOver(), 900);
+      advanceTimer.current = setTimeout(() => gameOver(), 900);
     }
   };
 
