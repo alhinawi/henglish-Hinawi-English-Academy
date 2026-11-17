@@ -378,7 +378,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {VERB_TOOLKIT.map((verb, idx) => (
               <div
-                key={idx} id={`vocab-verb-${verb.v1}`}
+                key={`${verb.v1}-${idx}`} id={`vocab-verb-${verb.v1}${VERB_TOOLKIT.findIndex(entry => entry.v1 === verb.v1) === idx ? '' : `-${idx}`}`}
                 className="scroll-mt-24 p-4 rounded-2xl glass-panel border border-white/10 hover:border-white/20 transition-all space-y-2"
               >
                 <div className="flex flex-wrap items-start justify-between gap-3">
@@ -401,7 +401,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                   </div>
                 </div>
 
-                <div className="en text-[11px] text-[#dedbf4] truncate pt-1">
+                <div dir="ltr" className="en text-xs leading-6 text-[#dedbf4] whitespace-normal break-words pt-1">
                   Ex: {verb.example}
                 </div>
               </div>
