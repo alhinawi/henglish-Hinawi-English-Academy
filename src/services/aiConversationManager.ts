@@ -24,7 +24,9 @@ function getAllStoredSessions(): Record<string, AiConversationSession> {
   try {
     const raw = localStorage.getItem(SESSIONS_STORAGE_KEY);
     if (raw) {
-      return JSON.parse(raw);
+      const parsed: unknown = JSON.parse(raw);
+      return parsed && typeof parsed === 'object' && !Array.isArray(parsed)
+        ? parsed as Record<string, AiConversationSession> : {};
     }
   } catch (err) {
     console.warn('Failed to parse stored AI sessions:', err);
@@ -50,7 +52,8 @@ export function getSessionsForAssistant(
 ): AiConversationSession[] {
   const all = getAllStoredSessions();
   const sessions = Object.values(all).filter(
-    s => s.mode === mode && (s.userId === userId || s.userId === 'guest-learner')
+    s => s && s.mode === mode && s.userId === (userId || 'guest-learner') &&
+      typeof s.id === 'string' && typeof s.title === 'string' && Array.isArray(s.messages)
   );
 
   return sessions.sort(
