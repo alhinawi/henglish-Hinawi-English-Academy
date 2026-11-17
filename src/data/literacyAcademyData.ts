@@ -779,7 +779,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Request course details",
     "titleAr": "اطلب تفاصيل دورة",
     "prompt": "Ask about a course timetable, fees and entry requirements.",
-    "model": "Dear Course Team, I am interested in your English course. Could you send me the timetable and current fees? Is there an entry test? Best regards, Lina",
+    "model": "Dear Course Team, I am interested in your English course. Could you send me the timetable and current fees? Is there an entry test?\n\nI work during the day, so I am looking for an evening class. I would also like to know how many students usually study in one group and whether course materials are included in the price. If a place is available, please explain how I can apply.\n\nThank you for your time. I look forward to hearing from you.\n\nBest regards, Lina.",
     "image": "/images/literacy/literacy-writing-13.webp",
     "imageSource": ""
   },
@@ -789,7 +789,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A cover letter",
     "titleAr": "خطاب تقديم",
     "prompt": "Apply for an imagined assistant role. Connect a skill to a job task.",
-    "model": "Dear Hiring Manager, I am applying for the assistant role. In my previous role, I organised appointments and answered questions. I would like to bring these skills to your team.",
+    "model": "Dear Hiring Manager, I am applying for the assistant role. In my previous role, I organised appointments and answered questions. I would like to bring these skills to your team.\n\nFor example, I kept a shared calendar and checked meeting details before sending reminders. When a customer asked a question I could not answer, I wrote it down and passed it to the right person. This helped me give clear information without guessing.\n\nI would welcome the chance to discuss the role and learn more about your team.\n\nKind regards, Samira.",
     "image": "/images/literacy/literacy-writing-14.webp",
     "imageSource": ""
   },
@@ -799,7 +799,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A polite complaint",
     "titleAr": "شكوى مهذبة",
     "prompt": "Describe an imagined damaged delivery and request a replacement.",
-    "model": "Dear Customer Service Team, the notebook I ordered arrived with a torn cover. Could you arrange a replacement? I can provide a photo of the damage. Thank you for your help.",
+    "model": "Dear Customer Service Team, the notebook I ordered arrived with a torn cover. Could you arrange a replacement? I can provide a photo of the damage.\n\nThe parcel arrived yesterday, and the notebook has not been used. The pages inside look fine, but the cover does not close properly. Please tell me whether I should return the damaged notebook and how to do this. I would prefer a replacement rather than a different product.\n\nPlease confirm the next step when you have checked the order. Thank you for your help.",
     "image": "/images/literacy/literacy-writing-15.webp",
     "imageSource": ""
   },
@@ -809,7 +809,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Explain a process",
     "titleAr": "اشرح خطوات",
     "prompt": "Explain how to prepare for a first class. Use sequence words.",
-    "model": "First, check the class time and location. Next, bring a notebook and a pen. Finally, arrive a little early so you can find your room.",
+    "model": "First, check the class time and location. Next, bring a notebook and a pen. Finally, arrive a little early so you can find your room.\n\nIf the class is online, test the meeting link before the lesson starts. Find a quiet place and check that you can hear the sound. You do not need to understand every new word on the first day. Write down questions and ask the teacher when you have a chance.\n\nAfter the lesson, read your notes again and choose one thing to practise before the next class.",
     "image": "/images/literacy/literacy-writing-16.webp",
     "imageSource": ""
   },
@@ -819,7 +819,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Recommend a book",
     "titleAr": "رشّح كتابا",
     "prompt": "Recommend an imagined story. Explain who might enjoy it.",
-    "model": "I recommend this imagined family story. The language is clear and the ending makes you think. If you enjoy stories about difficult choices, you may like it.",
+    "model": "I recommend this imagined family story. The language is clear and the ending makes you think. If you enjoy stories about difficult choices, you may like it.\n\nThe story follows two sisters who find an old letter while preparing to move house. They disagree about whether to show it to their mother. I enjoyed the conversations because both sisters have understandable reasons for their choices. Some scenes are slow, but they help the reader notice small changes in the family.\n\nI would recommend it to a reading group because there is plenty to discuss without giving away the ending.",
     "image": "/images/literacy/literacy-writing-17.webp",
     "imageSource": ""
   },
@@ -829,7 +829,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Give an opinion",
     "titleAr": "عبّر عن رأيك",
     "prompt": "Explain whether a college should have a quiet study room. Give a reason and example.",
-    "model": "I think our college needs a quiet study room. Some students cannot concentrate in a busy library. For example, a separate room could help them revise before exams.",
+    "model": "I think our college needs a quiet study room. Some students cannot concentrate in a busy library. For example, a separate room could help them revise before exams.\n\nThis does not mean that talking should be banned everywhere. Group work is useful, and students also need places where they can ask questions. A clearly marked quiet room would give people a choice without changing the whole library. The college could try this in one room for a month and ask students for feedback.\n\nIf the trial works well, the room could become a regular part of the study space.",
     "image": "/images/literacy/literacy-writing-18.webp",
     "imageSource": ""
   },
@@ -839,7 +839,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A project update",
     "titleAr": "تحديث مشروع",
     "prompt": "Write an imagined update: progress, risk, next step.",
-    "model": "The draft guide is complete, and the team is reviewing it. However, two examples still need permission. We will publish only after those permissions are confirmed.",
+    "model": "The draft guide is complete, and the team is reviewing it. However, two examples still need permission. We will publish only after those permissions are confirmed.\n\nThis week, the reviewers are checking that each instruction matches the current process. They will record unclear steps in the shared document rather than changing the live service. The main risk is that the permissions may arrive after the planned publication date. If that happens, we can either delay the guide or replace the examples with ones we are allowed to use.\n\nThe next update will confirm which option is possible. Until then, the publication date should be treated as provisional.",
     "image": "/images/literacy/literacy-writing-19.webp",
     "imageSource": ""
   },
@@ -849,7 +849,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Compare options",
     "titleAr": "قارن خيارين",
     "prompt": "Compare online and classroom study for a working learner. Qualify your recommendation.",
-    "model": "Online study offers flexibility, whereas classroom lessons provide a fixed routine. For someone with changing work hours, online study may be more practical, provided that regular study time is protected.",
+    "model": "Online study offers flexibility, whereas classroom lessons provide a fixed routine. For someone with changing work hours, online study may be more practical, provided that regular study time is protected.\n\nThe choice also depends on the type of online course. Recorded lessons can be watched at different times, but a live session may be just as difficult to attend as a classroom lesson. Classroom study can make it easier to ask a quick question, although travel adds time and cost. Neither format guarantees regular practice.\n\nI would first compare the actual timetable, feedback and opportunities to speak. For this learner, a flexible course with scheduled feedback would be a sensible option to investigate, not an automatic best choice.",
     "image": "/images/literacy/literacy-writing-20.webp",
     "imageSource": ""
   },
@@ -859,7 +859,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A balanced review",
     "titleAr": "مراجعة متوازنة",
     "prompt": "Review an imagined library space. Include benefits and limitations.",
-    "model": "The new area is bright and well organised. Its booking system makes busy periods easier to manage. Nevertheless, limited opening hours may exclude evening students.",
+    "model": "The new area is bright and well organised. Its booking system makes busy periods easier to manage. Nevertheless, limited opening hours may exclude evening students.\n\nIn this imagined library, the quiet desks are separated from the group tables, so readers can choose a suitable space. Clear signs also make the different areas easy to find. The main limitation is that the building closes before some evening classes finish. A well-designed room offers little help to someone who cannot reach it while it is open.\n\nI would recommend the space for daytime study. Before recommending it more widely, I would want the library to review demand for later hours and explain what staffing that would require.",
     "image": "/images/literacy/literacy-writing-21.webp",
     "imageSource": ""
   },
@@ -869,7 +869,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Decline diplomatically",
     "titleAr": "ارفض بدبلوماسية",
     "prompt": "Decline an extra task because of current work. Offer a realistic alternative.",
-    "model": "Thank you for considering me. I cannot take on the full report without delaying our agreed deadline. I could review the introduction on Thursday if that would help.",
+    "model": "Thank you for considering me. I cannot take on the full report without delaying our agreed deadline. I could review the introduction on Thursday if that would help.\n\nMy current priority is to finish the course guide, including the final checks we agreed last week. The additional report would require research as well as writing, so fitting it into the same period would put both pieces of work at risk. I do not want to promise a date I cannot meet.\n\nIf the report is more urgent, we could discuss changing the order of the work. Otherwise, I can offer the limited review above and suggest questions for the person who takes the report forward.",
     "image": "/images/literacy/literacy-writing-22.webp",
     "imageSource": ""
   },
@@ -879,7 +879,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Summarise a proposal",
     "titleAr": "لخّص مقترحا",
     "prompt": "Summarise a proposal for a three-month book-exchange trial. Preserve its provisional status.",
-    "model": "The club proposes a three-month trial of a monthly book exchange. Members would bring books they no longer need. Participation would be reviewed before deciding whether to continue.",
+    "model": "The club proposes a three-month trial of a monthly book exchange. Members would bring books they no longer need. Participation would be reviewed before deciding whether to continue.\n\nThe proposal suggests using the room after an existing club meeting, which could avoid the need for a separate booking. A volunteer would record the number of participants and note practical problems, such as books left behind. Members would not be required to bring a book every month. The plan has not yet been approved, and volunteer cover still needs to be confirmed.\n\nAt the end of the trial, the club would consider attendance and feedback alongside the work involved. The proposal does not commit the club to running a permanent exchange.",
     "image": "/images/literacy/literacy-writing-23.webp",
     "imageSource": ""
   },
@@ -889,7 +889,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Open a story",
     "titleAr": "افتتح قصة",
     "prompt": "Open a fictional story in an empty street. Introduce a detail that creates tension.",
-    "model": "The street was almost empty when Leila left the station. Rain shone under the lamps. She reached for her ticket, but found a folded note in her pocket instead.",
+    "model": "The street was almost empty when Leila left the station. Rain shone under the lamps. She reached for her ticket, but found a folded note in her pocket instead.\n\nIt was not the shopping list she had written that morning. The paper was thick and dry, and her name appeared on the outside in small, careful letters. She looked back at the station doors. A cleaner was stacking chairs inside, and the last passenger had already turned the corner.\n\nLeila opened the note beneath a lamp. There were only five words: Do not take the bridge. Across the road, the signal changed, although no car was waiting. She put the paper back in her pocket and stayed where she was.",
     "image": "/images/literacy/literacy-writing-24.webp",
     "imageSource": ""
   },
