@@ -43,3 +43,5 @@ function fixture(failure) {
   console.log('Speaking recorder runtime errors release microphone/timer,retain prior clip,avoid late unmounted updates,and allow retry; thrown stop is safe: PASS');
   console.log('Speaking recorder releases microphone on construction/start failure; permission denial, successful stop, old clip and late grant preserved: PASS');
 })().catch(e => {console.error(e);process.exitCode = 1;});
+
+const legacySource=fs.readFileSync('src/components/SpeakingLegacyPractice.tsx','utf8');assert(legacySource.includes('key={activeTargetLine}'));assert.equal((legacySource.match(/setShadowingLineIdx\(idx\); setCustomPrompt\(null\);/g)||[]).length,2);console.log('Legacy shadowing recorder remounts per target and explicit line selection clears a free-prompt override: PASS');
