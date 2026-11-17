@@ -2,6 +2,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
+  'check-movie-account-history.cjs',
   'check-admin-honesty.cjs',
   'check-auth-error-i18n.cjs',
   'check-certificate-errors.cjs',
