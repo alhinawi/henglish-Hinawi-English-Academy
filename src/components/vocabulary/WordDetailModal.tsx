@@ -346,6 +346,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
               type="text"
               value={userNote}
               onChange={e => { setUserNote(e.target.value); setNoteSaved(false); setSaveError(false); }}
+              aria-label={t('wdm.notes')}
               placeholder={t('wdm.placeholder')}
               className="min-w-0 flex-1 px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-xs focus:outline-none focus:border-[#ffd166]"
             />
