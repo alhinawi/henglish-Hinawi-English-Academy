@@ -1,3 +1,4 @@
+import { useOwnedClipboard } from '../../hooks/useOwnedClipboard';
 import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - CAMERA & IMAGE OCR TRANSLATION TAB
@@ -35,7 +36,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
   const [detectedLanguage, setDetectedLanguage] = useState<LanguageCode>('en');
   const [confidence, setConfidence] = useState<number | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
-  const [copied, setCopied] = useState(false);
+  const { copy, copiedKey, copyFailed } = useOwnedClipboard(JSON.stringify([extractedText, translatedText, targetLang]));
 
   const version = useRef(0);
   const readerRef = useRef<FileReader | null>(null);
@@ -105,17 +106,13 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
 
 
 
-  const handleCopy = async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      playSound('click');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {}
+  const handleCopy = async (text: string, key: string) => {
+    if (await copy(text, key)) playSound('click');
   };
 
   return (
     <div className="space-y-6 text-right">
+      {copyFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm text-amber-200">{t('lw.copyFailed')}</p>}
       {/* OCR Banner */}
       <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
@@ -210,11 +207,11 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer" />
                 <button
                   type="button"
-                  onClick={() => handleCopy(extractedText)}
+                  onClick={() => handleCopy(extractedText, 'source')}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
                   title={t('ocr.copyText')}
                 >
-                  <Copy className="w-3.5 h-3.5" />
+                  {copiedKey === 'source' ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
                 </button>
               </div>
             )}
@@ -242,11 +239,11 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer" />
                 <button
                   type="button"
-                  onClick={() => handleCopy(translatedText)}
+                  onClick={() => handleCopy(translatedText, 'translation')}
                   className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
                   title={t('ocr.copyTranslation')}
                 >
-                  {copied ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
+                  {copiedKey === 'translation' ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
                 </button>
               </div>
             )}
