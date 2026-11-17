@@ -9,6 +9,11 @@ export function LessonSpeechButton({ text, label, className, speed, iconOnly = f
   const [error, setError] = useState('');
   const ownsSpeech = useRef(false);
   useEffect(() => {
+    // This control can be reused for a new sentence without a React key.
+    // Cleanup cancels owned speech; the new target starts without old feedback.
+    ownsSpeech.current = false;
+    setActive(false);
+    setError('');
     const unsubscribe = subscribeSpeechState((playing, spoken) => {
       if (!playing || spoken !== text.trim()) { ownsSpeech.current = false; setActive(false); }
     });
