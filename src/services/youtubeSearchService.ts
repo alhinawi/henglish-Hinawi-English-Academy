@@ -14,6 +14,7 @@ export interface YouTubeApiSearchResult {
   channelTitle: string;
   thumbnailUrl: string;
   publishedAt: string;
+  catalogScene?: EducationalVideoItem;
   isEmbeddable: boolean;
 }
 
@@ -74,6 +75,7 @@ export async function searchYouTubeVideos(
 
     const fallbackItems: YouTubeApiSearchResult[] = catalogResult.videos.map(v => ({
       youtubeId: v.youtubeId,
+      catalogScene: v,
       title: v.sceneTitle,
       description: v.sceneDescription,
       channelTitle: v.director,
@@ -91,6 +93,7 @@ export async function searchYouTubeVideos(
       const suggestions = queryVideoCatalog({ pageSize: 12 });
       finalItems = suggestions.videos.map(v => ({
         youtubeId: v.youtubeId,
+      catalogScene: v,
         title: v.sceneTitle,
         description: v.sceneDescription,
         channelTitle: v.director,
@@ -138,6 +141,7 @@ export async function searchYouTubeVideos(
           source: 'verified_catalog_fallback',
           items: catalogResult.videos.map(v => ({
             youtubeId: v.youtubeId,
+      catalogScene: v,
             title: v.sceneTitle,
             description: v.sceneDescription,
             channelTitle: v.director,
@@ -191,6 +195,7 @@ export async function searchYouTubeVideos(
       source: 'verified_catalog_fallback',
       items: catalogResult.videos.map(v => ({
         youtubeId: v.youtubeId,
+      catalogScene: v,
         title: v.sceneTitle,
         description: v.sceneDescription,
         channelTitle: v.director,
