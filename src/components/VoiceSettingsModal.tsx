@@ -3,7 +3,7 @@
 // Multi-Voice Selector (Female & Male), Accent Filter, Instant Preview & ElevenLabs Integration
 // ==============================================================================
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
   getVoiceSettings,
@@ -14,6 +14,7 @@ import {
   toggleAudioMute,
   speakEnglishVoice,
   stopSpeech,
+  subscribeSpeechState,
   VoiceGender,
   VoiceAccent,
   SpeechSpeed,
@@ -52,6 +53,17 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
   const [settings, setSettings] = useState(getVoiceSettings());
   const [filter, setFilter] = useState<FilterCategory>("all");
   const [playingVoiceId, setPlayingVoiceId] = useState<string | null>(null);
+  const [previewError, setPreviewError] = useState('');
+  const ownsPreview = useRef(false);
+  useEffect(() => {
+    setPlayingVoiceId(null);
+    setPreviewError('');
+    if (!isOpen) return;
+    const unsubscribe = subscribeSpeechState((playing) => {
+      if (!playing) { ownsPreview.current = false; setPlayingVoiceId(null); }
+    });
+    return () => { unsubscribe(); if (ownsPreview.current) stopSpeech(); ownsPreview.current = false; };
+  }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
@@ -79,15 +91,21 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
       return;
     }
 
-    setPlayingVoiceId(voice.id);
+    setPreviewError('');
+    if (getVoiceSettings().isMuted) { setPreviewError(t('w3.voice.muted')); return; }
+    let settled = false;
     speakEnglishVoice(voice.samplePhrase, {
       voiceId: voice.id,
       gender: voice.gender,
       accent: voice.accent === "AU" ? "US" : voice.accent,
       speed: settings.speed,
-      onEnd: () => setPlayingVoiceId(null),
-      onError: () => setPlayingVoiceId(null),
+      onEnd: () => { settled = true; ownsPreview.current = false; setPlayingVoiceId(null); },
+      onError: () => { settled = true; ownsPreview.current = false; setPlayingVoiceId(null); setPreviewError(t('listen.audioError')); },
     });
+    // Synthesis cancels the previous request synchronously. Track the new
+    // preview only after that notification so Stop works while it is pending.
+    ownsPreview.current = !settled;
+    setPlayingVoiceId(settled ? null : voice.id);
   };
 
   const handleSpeedChange = (speed: SpeechSpeed) => {
@@ -96,6 +114,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
   };
 
   const handleToggleMute = () => {
+    setPreviewError('');
     const isMuted = toggleAudioMute();
     setSettings((prev) => ({ ...prev, isMuted }));
   };
@@ -259,6 +278,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
             </div>
           </div>
 
+          {previewError && <p role="status" className="text-xs leading-6 text-amber-200 shrink-0">{previewError}</p>}
           {/* Bottom Settings: Speed & Mute */}
           <div className="pt-3 border-t border-white/10 shrink-0 space-y-3">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
