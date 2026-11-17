@@ -1,3 +1,4 @@
+import { LessonNoteEditor } from '../components/LessonNoteEditor';
 import { LessonCorrection, MixedLessonText } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
 import React, { useState } from 'react';
@@ -41,10 +42,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
   const prevLesson = currentIndex > 0 ? FUTURE_PERFECT_LESSONS[currentIndex - 1] : null;
   const nextLesson = currentIndex < FUTURE_PERFECT_LESSONS.length - 1 ? FUTURE_PERFECT_LESSONS[currentIndex + 1] : null;
 
-  // Personal notes textarea state
-  const [personalNote, setPersonalNote] = useState('');
   const appText = useAppTextMap('futurePerfectCourse');
-  const [noteSaved, setNoteSaved] = useState(false);
 
   // Mini quiz state
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
@@ -409,30 +407,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           <p className="text-xs sm:text-sm text-[#b9b6d5]">
             {txText(appText, currentLesson.homeworkPrompt)}
           </p>
-          <textarea
-            rows={3}
-            dir="ltr"
-            lang="en"
-            value={personalNote}
-            onChange={e => {
-              setPersonalNote(e.target.value);
-              setNoteSaved(false);
-            }}
-            placeholder="Write your English practice sentence here..."
-            className="english-input en w-full p-4 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-[#b9b6d5]/50 text-sm focus:outline-none focus:border-[#41e7ff]"
-          />
-          <div className="flex items-center justify-between text-xs">
-            <button
-              onClick={() => {
-                playSound('click');
-                setNoteSaved(true);
-              }}
-              className="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-[#41e7ff] font-bold cursor-pointer transition-colors"
-            >
-              {t('lp.saveNote')}
-            </button>
-            {noteSaved && <span className="text-[#c4ff55] font-bold">{t('lp.saved')}</span>}
-          </div>
+          <LessonNoteEditor lessonId={currentLesson.id} />
         </section>
       )}
 
