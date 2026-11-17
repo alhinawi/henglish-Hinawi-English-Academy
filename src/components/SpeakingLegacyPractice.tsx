@@ -165,12 +165,12 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                     <span>{line.speaker}</span>
                   </div>
                   <div className="flex flex-wrap items-start gap-2">
-                    <span onClickCapture={() => setShadowingLineIdx(idx)}>
+                    <span onClickCapture={() => { setShadowingLineIdx(idx); setCustomPrompt(null); }}>
                       <LessonSpeechButton key={line.en} text={line.en} label={`${t('slp.listenTitle')} ${idx + 1}`} iconOnly
                         className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer" />
                     </span>
                     <button
-                      onClick={() => setShadowingLineIdx(idx)}
+                      onClick={() => { setShadowingLineIdx(idx); setCustomPrompt(null); }}
                       className="text-[10px] text-[#b9b6d5] hover:text-white underline cursor-pointer"
                     >
                       {t('slp.selectShadow')}
@@ -198,6 +198,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
         {/* Real Pronunciation Assessment Engine */}
         <div className="lg:col-span-6">
           <SpeakingRecorder
+            key={activeTargetLine}
             prompt={activeTargetLine}
             description={activeTargetLineAr}
           />
