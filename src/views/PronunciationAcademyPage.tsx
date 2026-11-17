@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { PageRoute } from '../types';
 import { MINIMAL_PAIRS_DATA, MinimalPair } from '../data/skillsAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, speakEnglish, stopSpeech, fireCelebration } from '../utils/audio';
+import { playSound, speakEnglish, stopSpeech, fireCelebration, getVoiceSettings, subscribeSpeechState } from '../utils/audio';
 import {
   Volume2,
+  Square,
   Sparkles,
   Repeat,
   CheckCircle2,
@@ -29,30 +30,46 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
   const [audioError, setAudioError] = useState(false);
   const audioVersion = useRef(0);
+  const [audioActive, setAudioActive] = useState<string | null>(null);
+  const ownsAudio = useRef(false);
+  const [audioMuted, setAudioMuted] = useState(false);
+  useEffect(() => subscribeSpeechState((playing) => { if (!playing && ownsAudio.current) { ownsAudio.current = false; setAudioActive(null); } }), []);
   const resetAudio = () => {
     audioVersion.current += 1;
     stopSpeech();
     setTestedSound(null);
     setQuizScore(null);
     setAudioError(false);
+    setAudioMuted(false);
+    setAudioActive(null);
+    ownsAudio.current = false;
   };
   useEffect(() => () => { audioVersion.current += 1; stopSpeech(); }, []);
-  const playWord = (text: string, testSound: 'A' | 'B' | null = null) => {
+  const playWord = (text: string, testSound: 'A' | 'B' | null = null, control = text) => {
+    const stopping = audioActive === control;
     resetAudio();
+    if (stopping) return;
+    if (getVoiceSettings().isMuted) { setAudioMuted(true); return; }
     const version = audioVersion.current;
+    let settled = false;
     speakEnglish(text, {
-      onEnd: () => { if (version === audioVersion.current) setTestedSound(testSound); },
+      onEnd: () => {
+        if (version !== audioVersion.current) return;
+        settled = true; ownsAudio.current = false; setAudioActive(null); setTestedSound(testSound);
+      },
       onError: () => {
         if (version !== audioVersion.current) return;
-        setTestedSound(null);
-        setAudioError(true);
+        settled = true; ownsAudio.current = false; setAudioActive(null);
+        setTestedSound(null); setAudioError(true);
       },
     });
+    ownsAudio.current = !settled;
+    setAudioActive(settled ? null : control);
   };
   const handleTestEar = () => {
     playSound('click');
     const pick = Math.random() > 0.5 ? 'A' : 'B';
-    playWord(pick === 'A' ? pair.wordA : pair.wordB, pick);
+    playWord(pick === 'A' ? pair.wordA : pair.wordB, pick, 'quiz');
   };
 
   const handleGuess = (choice: 'A' | 'B') => {
@@ -101,6 +118,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         </div>
       </section>
 
+      {audioMuted && <p role="status" className="rounded-xl border border-amber-300/30 p-4 text-sm text-amber-200">{t('w3.voice.muted')}</p>}
       {audioError && <p role="alert" className="rounded-xl border border-amber-300/30 p-4 text-sm text-amber-200">{t('listen.audioError')}</p>}
       {/* 1. MINIMAL PAIRS TRAINER */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8">
@@ -148,11 +166,12 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <p className="text-sm font-bold text-[#c4ff55]">{txText(appText, pair.meaningArA)}</p>
             
             <button
+              aria-pressed={audioActive === pair.wordA}
               onClick={() => playWord(pair.wordA)}
               className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
-              <Volume2 className="w-4 h-4 text-[#ffd166]" />
-              <span>{t('pa.listenA')}</span>
+              {audioActive === pair.wordA ? <Square className="w-4 h-4 text-[#ffd166]" aria-hidden="true" /> : <Volume2 className="w-4 h-4 text-[#ffd166]" aria-hidden="true" />}
+              <span>{audioActive === pair.wordA ? t('listen.stopAudio') : t('pa.listenA')}</span>
             </button>
           </div>
 
@@ -164,11 +183,12 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <p className="text-sm font-bold text-[#c4ff55]">{txText(appText, pair.meaningArB)}</p>
             
             <button
+              aria-pressed={audioActive === pair.wordB}
               onClick={() => playWord(pair.wordB)}
               className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
-              <Volume2 className="w-4 h-4 text-[#ff4f9a]" />
-              <span>{t('pa.listenB')}</span>
+              {audioActive === pair.wordB ? <Square className="w-4 h-4 text-[#ff4f9a]" aria-hidden="true" /> : <Volume2 className="w-4 h-4 text-[#ff4f9a]" aria-hidden="true" />}
+              <span>{audioActive === pair.wordB ? t('listen.stopAudio') : t('pa.listenB')}</span>
             </button>
           </div>
 
@@ -189,9 +209,10 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
           <button
             onClick={handleTestEar}
+            aria-pressed={audioActive === 'quiz'}
             className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
           >
-           {t('pa.playRandom')}
+           {audioActive === 'quiz' ? t('listen.stopAudio') : t('pa.playRandom')}
           </button>
 
           {testedSound && (
@@ -248,10 +269,11 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
               <button
                 onClick={() => playWord(v.ex)}
                 className="p-1 rounded text-[#41e7ff] hover:text-white"
-                title={t('pa.listenWords')}
-                aria-label={`${t('pa.listenWords')}: ${v.ex}`}
+                aria-pressed={audioActive === v.ex}
+                aria-label={audioActive === v.ex ? t('listen.stopAudio') : `${t('pa.listenWords')}: ${v.ex}`}
+                title={audioActive === v.ex ? t('listen.stopAudio') : `${t('pa.listenWords')}: ${v.ex}`}
               >
-                <Volume2 className="w-3.5 h-3.5 mx-auto" />
+                {audioActive === v.ex ? <Square className="w-3.5 h-3.5 mx-auto" aria-hidden="true" /> : <Volume2 className="w-3.5 h-3.5 mx-auto" aria-hidden="true" />}
               </button>
             </div>
           ))}
