@@ -2104,5 +2104,6 @@
   "sl.loadError": "A mondattár nem tölthető be. Ez betöltési hiba, nem üres keresési eredmény. Próbáld újra.",
   "dt.errNoPdfText": "Ez a PDF nem tartalmaz kijelölhető szöveget, és szkennelt oldalakat tartalmazhat. Tölts fel kijelölhető szöveget tartalmazó PDF-et, vagy másold a szöveget egy TXT-fájlba.",
   "lp.noteStorage": "A jegyzetek csak ebben a böngészőben tárolódnak, tanulónként és leckénként külön. Más eszközökkel nem szinkronizálódnak.",
-  "lp.noteSavedLocal": "Mentve ebben a böngészőben."
+  "lp.noteSavedLocal": "Mentve ebben a böngészőben.",
+  "ts.vocabReviewPartial": "A szókincsbe mentve ezen az eszközön, de az ismétlési tervbe nem. Engedélyezze a tárolást, és mentse újra."
 }
