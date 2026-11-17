@@ -46,9 +46,12 @@ const LearnerSpeakingAcademy: React.FC<SpeakingAcademyPageProps & { storageKey: 
       const raw = localStorage.getItem(storageKey);
       const saved: unknown = raw === null ? [] : JSON.parse(raw);
       if (!Array.isArray(saved) || saved.some(id => typeof id !== 'string')) throw new Error('Saved speaking progress is unreadable');
-      localStorage.setItem(storageKey, JSON.stringify([...new Set([...saved, ...next])]));
-      onCompleteActivity?.(`speaking-${active.id}`, 3, 3);
-      setDone(next); setSaveError('');
+      const merged = [...new Set([...saved, ...next])];
+      localStorage.setItem(storageKey, JSON.stringify(merged));
+      // Another open tab may have completed this lesson after our mount.
+      // Hydrate its saved completions too, without awarding the same lesson again.
+      setDone(merged); setSaveError('');
+      if (!saved.includes(active.id)) onCompleteActivity?.(`speaking-${active.id}`, 3, 3);
     } catch { setSaveError(t('sa.saveError')); }
   }
   const open = (id: string | null) => { setActiveId(id); window.scrollTo({ top: 0, behavior: 'instant' }); };
