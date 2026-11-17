@@ -23,3 +23,9 @@ const handler=page.slice(page.indexOf('  const handleToggleBookmark'),page.index
 console.log('Movie bookmark quota/read/malformed failures throw and preserve original records,add/remove retry works,UI updates only after persistence with alert on failure: PASS');
 
 const historyKey='history:user:clear-failure';data.set(historyKey,'["keep this search"]');localStorage.setItem=()=>{throw Error('quota')};assert.equal(a.clearSearchHistory('clear-failure'),false);assert.equal(data.get(historyKey),'["keep this search"]');localStorage.setItem=set;assert.equal(a.clearSearchHistory('clear-failure'),true);assert.equal(data.get(historyKey),'[]');assert(page.includes('if (clearSearchHistory(learnerId)) {'));console.log('Failed movie history clear returns false,retains saved searches and UI until successful retry: PASS');
+
+data.set('history:user:A','["A secret"]');data.delete('history:guest');
+for(const blocked of ['history:guest','history']){const get=localStorage.getItem;localStorage.getItem=k=>{if(k===blocked)throw Error('legacy denied');return get(k)};assert.deepEqual(plain(a.getSearchHistory('A')),['A secret']);localStorage.getItem=get;}
+data.delete('saved:guest');
+for(const blocked of ['saved:guest','saved']){const get=localStorage.getItem;localStorage.getItem=k=>{if(k===blocked)throw Error('legacy denied');return get(k)};assert.equal(a.getSavedVideos('B')[0].youtubeId,'B');localStorage.getItem=get;}
+console.log('Shared media owner search/bookmarks remain readable when legacy guest or browser-wide key reads fail: PASS');
