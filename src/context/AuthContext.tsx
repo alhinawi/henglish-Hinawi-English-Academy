@@ -49,12 +49,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   // Initialize listener to Supabase Auth State changes
   useEffect(() => {
     let mounted = true;
+    let authRevision = 0;
+    const initialRevision = authRevision;
+    const ownsInitialization = () => mounted && authRevision === initialRevision;
 
     async function initAuth() {
       if (supabase) {
         try {
           const { data: { session: sbSession } } = await supabase.auth.getSession();
-          if (sbSession?.user && mounted) {
+          if (sbSession?.user && ownsInitialization()) {
             let profileRow = null;
             try {
               const { data: pRow } = await supabase
@@ -67,6 +70,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
               // Ignore
             }
 
+            // A newer provider event or unmount owns the session now.
+            if (!ownsInitialization()) return;
             const profile = mapSupabaseUserToProfile(sbSession.user, profileRow);
             const newState: AuthSessionState = {
               type: 'authenticated',
@@ -82,7 +87,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           // Keep current saved session on error
         }
       }
-      if (mounted) setIsLoading(false);
+      if (ownsInitialization()) setIsLoading(false);
     }
 
     initAuth();
@@ -90,7 +95,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     let authSubscription: { unsubscribe: () => void } | null = null;
     if (supabase) {
       const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, sbSession) => {
+        if (!mounted) return;
         if (event === 'SIGNED_IN' && sbSession?.user) {
+          authRevision += 1;
+          setIsLoading(false);
           const profile = mapSupabaseUserToProfile(sbSession.user);
           const newState: AuthSessionState = {
             type: 'authenticated',
@@ -102,6 +110,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           setSession(newState);
           saveAuthSession(newState);
         } else if (event === 'SIGNED_OUT') {
+          authRevision += 1;
+          setIsLoading(false);
           clearAuthSession();
           setSession(switchGuestMode());
         }
