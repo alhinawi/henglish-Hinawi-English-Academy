@@ -11376,12 +11376,17 @@ export function getRecentlyWatched(userId?: string): EducationalVideoItem[] {
   return readUserVideos(STORAGE_RECENTLY_WATCHED_KEY, userId);
 }
 
-export function addRecentlyWatched(video: EducationalVideoItem, userId?: string): void {
-  let list = getRecentlyWatched(userId);
-  list = [video, ...list.filter(v => v.youtubeId !== video.youtubeId)].slice(0, 12);
+export function addRecentlyWatched(video: EducationalVideoItem, userId?: string): boolean {
   try {
-    localStorage.setItem(mediaStorageKey(STORAGE_RECENTLY_WATCHED_KEY, userId), JSON.stringify(list));
-  } catch { /* Browser storage is optional. */ }
+    getRecentlyWatched(userId);
+    const key = mediaStorageKey(STORAGE_RECENTLY_WATCHED_KEY, userId);
+    const raw = localStorage.getItem(key);
+    const parsed: unknown = raw === null ? [] : JSON.parse(raw);
+    if (!Array.isArray(parsed) || parsed.some(item => !item || typeof item !== 'object' || typeof item.youtubeId !== 'string')) return false;
+    const list = [video, ...parsed.filter(v => v.youtubeId !== video.youtubeId)].slice(0, 12);
+    localStorage.setItem(key, JSON.stringify(list));
+    return true;
+  } catch { return false; }
 }
 
 export function getSavedVideos(userId?: string): EducationalVideoItem[] {
