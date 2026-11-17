@@ -719,7 +719,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A travel diary",
     "titleAr": "يوميات سفر",
     "prompt": "Describe an imagined day out in the past. Say who was there and how you felt.",
-    "model": "Last Saturday, I went to the beach with my cousins. We walked and took photos. It was windy, but we enjoyed the day.",
+    "model": "Last Saturday, I went to the beach with my cousins. We walked and took photos. It was windy, but we enjoyed the day.\n\nWe ate our lunch near the water. After lunch, my cousin showed me a small shop, and I bought a postcard. We went home by bus in the afternoon. I was tired, but I was happy to spend time with my family.",
     "image": "/images/literacy/literacy-writing-7.webp",
     "imageSource": ""
   },
@@ -729,7 +729,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Change a meeting",
     "titleAr": "غيّر موعد لقاء",
     "prompt": "Ask to change a study meeting. Give a reason and suggest another time.",
-    "model": "Hi Sara, can we meet at four instead of three? I have an appointment. Please tell me if four works for you.",
+    "model": "Hi Sara, can we meet at four instead of three? I have an appointment. Please tell me if four works for you.\n\nWe can still meet at the library entrance. I will bring my notebook and the practice questions. If four is too late, we can choose another day. I am free on Wednesday afternoon too. Thank you for understanding.",
     "image": "/images/literacy/literacy-writing-8.webp",
     "imageSource": ""
   },
@@ -739,7 +739,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Ask for directions",
     "titleAr": "اطلب وصف الطريق",
     "prompt": "Ask a learning centre how to get there from the station.",
-    "model": "Hello, I am coming to your centre tomorrow. Could you tell me how to get there from the station? Can I walk?",
+    "model": "Hello, I am coming to your centre tomorrow. Could you tell me how to get there from the station? Can I walk?\n\nMy train arrives at half past nine, and the class starts at ten. I do not know the area well. Is there a bus stop near the centre? Please also tell me which entrance I should use. Thank you for your help.",
     "image": "/images/literacy/literacy-writing-9.webp",
     "imageSource": ""
   },
@@ -749,7 +749,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Review a cafe",
     "titleAr": "راجع تجربة مقهى",
     "prompt": "Review an imagined cafe. Mention a good point and something to improve.",
-    "model": "The staff were friendly and the tea was good. However, the music was too loud for studying. I would prefer a quieter table.",
+    "model": "The staff were friendly and the tea was good. However, the music was too loud for studying. I would prefer a quieter table.\n\nI visited this imagined cafe with a friend on Saturday afternoon. We ordered sandwiches and sat near the window. Our food arrived quickly, and the table was clean. I would go there again to meet a friend, but not to do my homework.",
     "image": "/images/literacy/literacy-writing-10.webp",
     "imageSource": ""
   },
@@ -759,7 +759,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Describe a scene",
     "titleAr": "صف مشهدا",
     "prompt": "Describe an imagined outdoor scene. Separate what you see from what you guess.",
-    "model": "In the picture, the sun is rising behind the hills. The sky is orange. The place looks peaceful, but I cannot tell how warm it is.",
+    "model": "In the picture, the sun is rising behind the hills. The sky is orange. The place looks peaceful, but I cannot tell how warm it is.\n\nThere is a path beside the trees, and I cannot see any people. The ground looks dark. It may be wet, but the picture does not show this clearly. I would like to walk there and see what is behind the hill.",
     "image": "/images/literacy/literacy-writing-11.webp",
     "imageSource": ""
   },
@@ -769,7 +769,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "An apology",
     "titleAr": "رسالة اعتذار",
     "prompt": "Apologise for a missed call. Offer a new time.",
-    "model": "Hi Nour, I am sorry I missed your call. I was at work. Can I call you this evening at eight?",
+    "model": "Hi Nour, I am sorry I missed your call. I was at work. Can I call you this evening at eight?\n\nI saw your message after my meeting. I am at home now, but I need to finish one small job before we talk. If eight is not a good time, please send me a message. I am free tomorrow morning too.",
     "image": "/images/literacy/literacy-writing-12.webp",
     "imageSource": ""
   },
@@ -779,7 +779,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Request course details",
     "titleAr": "اطلب تفاصيل دورة",
     "prompt": "Ask about a course timetable, fees and entry requirements.",
-    "model": "Dear Course Team, I am interested in your English course. Could you send me the timetable and current fees? Is there an entry test?\n\nI work during the day, so I am looking for an evening class. I would also like to know how many students usually study in one group and whether course materials are included in the price. If a place is available, please explain how I can apply.\n\nThank you for your time. I look forward to hearing from you.\n\nBest regards, Lina.",
+    "model": "Dear Course Team, I am interested in your English course. Could you send me the timetable and current fees? Is there an entry test?\n\nI work during the day, so I am looking for an evening class. I would also like to know how many students usually study in one group and whether course materials are included in the price. If a place is available, please explain how I can apply.\n\nThank you for your time. I look forward to hearing from you.\n\nBest regards,\nLina",
     "image": "/images/literacy/literacy-writing-13.webp",
     "imageSource": ""
   },
@@ -789,7 +789,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A cover letter",
     "titleAr": "خطاب تقديم",
     "prompt": "Apply for an imagined assistant role. Connect a skill to a job task.",
-    "model": "Dear Hiring Manager, I am applying for the assistant role. In my previous role, I organised appointments and answered questions. I would like to bring these skills to your team.\n\nFor example, I kept a shared calendar and checked meeting details before sending reminders. When a customer asked a question I could not answer, I wrote it down and passed it to the right person. This helped me give clear information without guessing.\n\nI would welcome the chance to discuss the role and learn more about your team.\n\nKind regards, Samira.",
+    "model": "Dear Hiring Manager, I am applying for the assistant role. In my previous role, I organised appointments and answered questions. I would like to bring these skills to your team.\n\nFor example, I kept a shared calendar and checked meeting details before sending reminders. When a customer asked a question I could not answer, I wrote it down and passed it to the right person. This helped me give clear information without guessing.\n\nI would welcome the chance to discuss the role and learn more about your team.\n\nKind regards,\nSamira",
     "image": "/images/literacy/literacy-writing-14.webp",
     "imageSource": ""
   },
