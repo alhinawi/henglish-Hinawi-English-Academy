@@ -251,3 +251,51 @@
 /* Exception to the themed focus-visible ring: the global search input opens
    already focused inside its modal, so the ring is noise there (Hinawi 8:01). */
 html[data-site-theme] .no-focus-ring:focus-visible { outline: none; }
+
+/* Print only the resource selected for preview, not its catalog cards. */
+@media print {
+  html:has(#resources-page),
+  body:has(#resources-page),
+  body *:has(#resources-page) {
+    background: #fff !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 0 !important;
+    color-scheme: light !important;
+  }
+  #resources-page {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #resources-page > :not(#resource-print-sheet) {
+    display: none !important;
+  }
+  #resource-print-sheet {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #fff !important;
+    color: #111 !important;
+    box-shadow: none !important;
+  }
+  #resource-print-sheet > div {
+    display: none !important;
+  }
+  #resource-print-sheet pre {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    color: #111 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere;
+    font-size: 10pt !important;
+    line-height: 1.5 !important;
+  }
+}
