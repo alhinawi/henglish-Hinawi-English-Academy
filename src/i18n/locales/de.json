@@ -2897,5 +2897,6 @@
   "ml.practiceNote": "Lernpunkte, kein akademischer Rang.",
   "ml.streakNote": "Aufeinanderfolgende Tage aus deinen Lernaktivitäten.",
   "ml.levelNote": "Profilniveau und Lernziel sind kein Einstufungstestergebnis.",
-  "ml.reviewNeeded": "Antworten prüfen und erneut üben"
+  "ml.reviewNeeded": "Antworten prüfen und erneut üben",
+  "sl.loadError": "Die Satzbibliothek konnte nicht geladen werden. Das ist ein Ladefehler, kein leeres Suchergebnis. Versuche es erneut."
 }

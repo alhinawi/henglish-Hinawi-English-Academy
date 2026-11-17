@@ -2100,5 +2100,6 @@
   "ml.practiceNote": "Learning points, not an academic rank.",
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
-  "ml.reviewNeeded": "Review the answers and try again"
+  "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "वाक्य लाइब्रेरी लोड नहीं हो सकी। यह लोड होने की समस्या है, खाली खोज परिणाम नहीं। फिर कोशिश करें।"
 }

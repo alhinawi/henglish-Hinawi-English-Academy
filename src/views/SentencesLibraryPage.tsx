@@ -105,6 +105,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   // Main state
   const [allSentences, setAllSentences] = useState<SentenceItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [activeMode, setActiveMode] = useState<LearningMode>('browse');
 
   // Search & Filter state
@@ -150,29 +152,36 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     return c;
   }, [allSentences]);
 
-  // Load database once on mount
+  // Failed loads stay distinct from an empty search and can be retried.
   useEffect(() => {
+    let live = true;
     async function init() {
       setIsLoading(true);
-      const data = await loadSentences();
-      setAllSentences(data);
-      const daily = await getDailySentence();
-      setDailySentence(daily);
-      const weekly = await getSentenceOfTheWeek();
-      setWeeklySentence(weekly);
-      const rand = await getRandomSentence();
-      setRandomSentence(rand);
-      setStats(getSentenceStats(learnerId));
-      setCollections(getCollections(learnerId));
-      setIsLoading(false);
+      setLoadError(false);
+      try {
+        const data = await loadSentences();
+        if (!data.length) throw new Error('Sentence library unavailable');
+        const [daily, weekly, random] = await Promise.all([getDailySentence(), getSentenceOfTheWeek(), getRandomSentence()]);
+        if (!live) return;
+        setAllSentences(data);
+        setDailySentence(daily);
+        setWeeklySentence(weekly);
+        setRandomSentence(random);
+        setStats(getSentenceStats(learnerId));
+        setCollections(getCollections(learnerId));
+      } catch {
+        if (live) setLoadError(true);
+      } finally { if (live) setIsLoading(false); }
     }
-    init();
-  }, []);
+    void init();
+    return () => { live = false; };
+  }, [loadAttempt, learnerId]);
 
   // Sync search results
   useEffect(() => {
     let isCancelled = false;
     async function runSearch() {
+      if (isLoading || loadError) return;
       if (activeMode !== 'browse' && activeMode !== 'cefr' && activeMode !== 'sections' && activeMode !== 'grammar') {
         return;
       }
@@ -191,7 +200,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     return () => {
       isCancelled = true;
     };
-  }, [searchQuery, selectedCefr, selectedSection, selectedGrammar, activeMode]);
+  }, [searchQuery, selectedCefr, selectedSection, selectedGrammar, activeMode, isLoading, loadError]);
 
   // Filtered Sentences calculation based on active mode
   const currentSentencesPool = useMemo(() => {
@@ -332,6 +341,9 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     deleteCollection(colId, learnerId);
     setCollections(getCollections(learnerId));
   };
+
+  if (isLoading) return <div role="status" className="rounded-3xl border border-white/10 bg-white/5 p-8 text-center text-slate-200">{t('vx.loading')}</div>;
+  if (loadError) return <section role="alert" className="rounded-3xl border border-amber-300/30 bg-amber-300/5 p-8 space-y-4 text-center"><p className="text-amber-100">{t('sl.loadError')}</p><button type="button" onClick={() => setLoadAttempt(value => value + 1)} className="min-h-11 rounded-xl bg-purple-500 px-6 text-white font-bold">{t('sg.retry')}</button></section>;
 
   return (
     <div className="space-y-8 pb-16 text-right selection:bg-purple-500/30">
