@@ -467,8 +467,10 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                     ))}
                     <button
                       onClick={() => {
-                        clearSearchHistory(learnerId);
-                        setSearchHistory([]);
+                        if (clearSearchHistory(learnerId)) {
+                          setSearchHistory([]);
+                          setBookmarkSaveFailed(false);
+                        } else { setBookmarkSaveFailed(true); }
                       }}
                       className="text-[10px] text-red-400 hover:underline shrink-0 mr-2"
                     >
