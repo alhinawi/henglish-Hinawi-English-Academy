@@ -1,3 +1,4 @@
+import { mediaStorageKey, readMediaList } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SM-2 SPACED REPETITION ENGINE
 // Scientifically proven memory consolidation algorithm for vocabulary mastery
@@ -65,18 +66,12 @@ export function getDueSrsCards(allCards: VocabularyCard[]): VocabularyCard[] {
   return allCards.filter(c => new Date(c.nextReviewAt) <= now);
 }
 
-export function loadSrsCardsFromStorage(): VocabularyCard[] {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      return JSON.parse(raw);
-    }
-  } catch {}
-  return [];
+export function loadSrsCardsFromStorage(learnerId?: string): VocabularyCard[] {
+  return readMediaList(STORAGE_KEY, learnerId).filter((card): card is VocabularyCard =>
+    !!card && typeof card === 'object' && typeof (card as VocabularyCard).id === 'string' &&
+    typeof (card as VocabularyCard).word === 'string' && typeof (card as VocabularyCard).translationAr === 'string');
 }
 
-export function saveSrsCardsToStorage(cards: VocabularyCard[]) {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(cards));
-  } catch {}
+export function saveSrsCardsToStorage(cards: VocabularyCard[], learnerId?: string) {
+  try { localStorage.setItem(mediaStorageKey(STORAGE_KEY, learnerId), JSON.stringify(cards)); } catch {}
 }

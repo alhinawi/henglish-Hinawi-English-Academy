@@ -1,3 +1,4 @@
+import { mediaStorageKey, readMediaList } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION STUDIO CLIENT SERVICE
 // High-performance client manager for Translations, History, SRS Decks, OCR & Practice
@@ -60,7 +61,7 @@ const DEFAULT_COLLECTIONS: VocabularyCollection[] = [
 /**
  * High-Level Translation Dispatcher
  */
-export async function executeTranslation(req: TranslationRequest): Promise<TranslationResponse> {
+export async function executeTranslation(req: TranslationRequest, learnerId?: string): Promise<TranslationResponse> {
   const response = await fetch('/api/ai/translate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -81,7 +82,7 @@ export async function executeTranslation(req: TranslationRequest): Promise<Trans
     isFavorite: false,
     alternativesCount: result.alternatives?.length || 0,
     summaryExplanationAr: result.explanation?.summaryMeaningAr,
-  });
+  }, learnerId);
 
   return result;
 }
@@ -152,20 +153,16 @@ export async function transcribeAudioRecording(
 // LOCAL STORAGE MANAGEMENT (History, Vocabulary, Collections)
 // ==============================================================================
 
-export function getTranslationHistory(): TranslationHistoryItem[] {
-  if (typeof window === 'undefined') return [];
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY_HISTORY);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
+export function getTranslationHistory(learnerId?: string): TranslationHistoryItem[] {
+  return readMediaList(STORAGE_KEY_HISTORY, learnerId).filter((item): item is TranslationHistoryItem =>
+    !!item && typeof item === 'object' && typeof (item as TranslationHistoryItem).id === 'string' &&
+    typeof (item as TranslationHistoryItem).sourceText === 'string' && typeof (item as TranslationHistoryItem).translatedText === 'string');
 }
 
 export function saveTranslationToHistory(
-  item: Omit<TranslationHistoryItem, 'id' | 'timestamp'>
+  item: Omit<TranslationHistoryItem, 'id' | 'timestamp'>, learnerId?: string
 ): TranslationHistoryItem {
-  const history = getTranslationHistory();
+  const history = getTranslationHistory(learnerId);
   const newItem: TranslationHistoryItem = {
     ...item,
     id: `trans_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
@@ -179,32 +176,32 @@ export function saveTranslationToHistory(
 
   const updated = [newItem, ...filtered].slice(0, 100); // Keep last 100 items
   try {
-    localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
   } catch {}
   return newItem;
 }
 
-export function toggleHistoryFavorite(id: string): TranslationHistoryItem[] {
-  const history = getTranslationHistory();
+export function toggleHistoryFavorite(id: string, learnerId?: string): TranslationHistoryItem[] {
+  const history = getTranslationHistory(learnerId);
   const updated = history.map(item => (item.id === id ? { ...item, isFavorite: !item.isFavorite } : item));
   try {
-    localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
   } catch {}
   return updated;
 }
 
-export function deleteHistoryItem(id: string): TranslationHistoryItem[] {
-  const history = getTranslationHistory();
+export function deleteHistoryItem(id: string, learnerId?: string): TranslationHistoryItem[] {
+  const history = getTranslationHistory(learnerId);
   const updated = history.filter(item => item.id !== id);
   try {
-    localStorage.setItem(STORAGE_KEY_HISTORY, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
   } catch {}
   return updated;
 }
 
-export function clearTranslationHistory(): void {
+export function clearTranslationHistory(learnerId?: string): void {
   try {
-    localStorage.removeItem(STORAGE_KEY_HISTORY);
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), '[]');
   } catch {}
 }
 
@@ -212,20 +209,16 @@ export function clearTranslationHistory(): void {
 // SAVED VOCABULARY & SPACED REPETITION INTEGRATION
 // ==============================================================================
 
-export function getSavedVocabularyCards(): SavedVocabularyCard[] {
-  if (typeof window === 'undefined') return [];
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY_SAVED_VOCAB);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
+export function getSavedVocabularyCards(learnerId?: string): SavedVocabularyCard[] {
+  return readMediaList(STORAGE_KEY_SAVED_VOCAB, learnerId).filter((item): item is SavedVocabularyCard =>
+    !!item && typeof item === 'object' && typeof (item as SavedVocabularyCard).id === 'string' &&
+    typeof (item as SavedVocabularyCard).wordOrPhrase === 'string');
 }
 
 export function saveVocabularyCard(
-  card: Omit<SavedVocabularyCard, 'id' | 'createdAt' | 'repetitionCount' | 'intervalDays' | 'easeFactor' | 'nextReviewAt'>
+  card: Omit<SavedVocabularyCard, 'id' | 'createdAt' | 'repetitionCount' | 'intervalDays' | 'easeFactor' | 'nextReviewAt'>, learnerId?: string
 ): SavedVocabularyCard {
-  const existing = getSavedVocabularyCards();
+  const existing = getSavedVocabularyCards(learnerId);
   const newCard: SavedVocabularyCard = {
     ...card,
     id: `vocab_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
@@ -238,12 +231,12 @@ export function saveVocabularyCard(
 
   const updated = [newCard, ...existing.filter(c => c.wordOrPhrase.toLowerCase() !== card.wordOrPhrase.toLowerCase())];
   try {
-    localStorage.setItem(STORAGE_KEY_SAVED_VOCAB, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId), JSON.stringify(updated));
   } catch {}
 
   // Seamlessly bridge to Henglish Global SRS Vocabulary system
   try {
-    const globalSrsCards = loadSrsCardsFromStorage();
+    const globalSrsCards = loadSrsCardsFromStorage(learnerId);
     const bridgedCard: VocabularyCard = {
       id: newCard.id,
       word: newCard.wordOrPhrase,
@@ -258,30 +251,30 @@ export function saveVocabularyCard(
       easeFactor: 2.5,
       nextReviewAt: newCard.nextReviewAt,
     };
-    saveSrsCardsToStorage([bridgedCard, ...globalSrsCards.filter(c => c.word.toLowerCase() !== bridgedCard.word.toLowerCase())]);
+    saveSrsCardsToStorage([bridgedCard, ...globalSrsCards.filter(c => c.word.toLowerCase() !== bridgedCard.word.toLowerCase())], learnerId);
   } catch (err) {
     console.warn('Could not sync to global SRS:', err);
   }
 
   // Update collection count
   if (card.collectionId) {
-    incrementCollectionCount(card.collectionId);
+    incrementCollectionCount(card.collectionId, learnerId);
   }
 
   return newCard;
 }
 
-export function deleteSavedVocabularyCard(id: string): SavedVocabularyCard[] {
-  const cards = getSavedVocabularyCards();
+export function deleteSavedVocabularyCard(id: string, learnerId?: string): SavedVocabularyCard[] {
+  const cards = getSavedVocabularyCards(learnerId);
   const target = cards.find(c => c.id === id);
   const updated = cards.filter(c => c.id !== id);
 
   try {
-    localStorage.setItem(STORAGE_KEY_SAVED_VOCAB, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_SAVED_VOCAB, learnerId), JSON.stringify(updated));
   } catch {}
 
   if (target?.collectionId) {
-    decrementCollectionCount(target.collectionId);
+    decrementCollectionCount(target.collectionId, learnerId);
   }
 
   return updated;
@@ -291,24 +284,22 @@ export function deleteSavedVocabularyCard(id: string): SavedVocabularyCard[] {
 // CUSTOM COLLECTIONS
 // ==============================================================================
 
-export function getVocabularyCollections(): VocabularyCollection[] {
+export function getVocabularyCollections(learnerId?: string): VocabularyCollection[] {
   if (typeof window === 'undefined') return DEFAULT_COLLECTIONS;
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY_COLLECTIONS);
-    if (raw) {
-      return JSON.parse(raw);
-    }
-  } catch {}
-  return DEFAULT_COLLECTIONS;
+  const list = readMediaList(STORAGE_KEY_COLLECTIONS, learnerId);
+  try { if (localStorage.getItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId)) === null) return DEFAULT_COLLECTIONS; } catch { return DEFAULT_COLLECTIONS; }
+  return list.filter((item): item is VocabularyCollection => !!item && typeof item === 'object' &&
+    typeof (item as VocabularyCollection).id === 'string' && typeof (item as VocabularyCollection).name === 'string');
 }
 
 export function createVocabularyCollection(
   name: string,
   nameAr: string,
   description?: string,
-  color?: string
+  color?: string,
+  learnerId?: string
 ): VocabularyCollection {
-  const collections = getVocabularyCollections();
+  const collections = getVocabularyCollections(learnerId);
   const newCol: VocabularyCollection = {
     id: `col_${Date.now()}`,
     name,
@@ -322,33 +313,33 @@ export function createVocabularyCollection(
 
   const updated = [...collections, newCol];
   try {
-    localStorage.setItem(STORAGE_KEY_COLLECTIONS, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(updated));
   } catch {}
   return newCol;
 }
 
-export function deleteVocabularyCollection(id: string): VocabularyCollection[] {
-  const collections = getVocabularyCollections();
+export function deleteVocabularyCollection(id: string, learnerId?: string): VocabularyCollection[] {
+  const collections = getVocabularyCollections(learnerId);
   const updated = collections.filter(c => c.id !== id);
   try {
-    localStorage.setItem(STORAGE_KEY_COLLECTIONS, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(updated));
   } catch {}
   return updated;
 }
 
-function incrementCollectionCount(collectionId: string) {
-  const cols = getVocabularyCollections();
+function incrementCollectionCount(collectionId: string, learnerId?: string) {
+  const cols = getVocabularyCollections(learnerId);
   const updated = cols.map(c => (c.id === collectionId ? { ...c, cardCount: c.cardCount + 1 } : c));
   try {
-    localStorage.setItem(STORAGE_KEY_COLLECTIONS, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(updated));
   } catch {}
 }
 
-function decrementCollectionCount(collectionId: string) {
-  const cols = getVocabularyCollections();
+function decrementCollectionCount(collectionId: string, learnerId?: string) {
+  const cols = getVocabularyCollections(learnerId);
   const updated = cols.map(c => (c.id === collectionId ? { ...c, cardCount: Math.max(0, c.cardCount - 1) } : c));
   try {
-    localStorage.setItem(STORAGE_KEY_COLLECTIONS, JSON.stringify(updated));
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(updated));
   } catch {}
 }
 

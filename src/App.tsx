@@ -492,7 +492,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 7. Vocabulary Academy */}
                 {currentRoute === 'vocabulary' && (
-                  <VocabularyAcademyPage onNavigate={handleNavigate} />
+                  <VocabularyAcademyPage key={authUser?.id || 'guest'} learnerId={authUser?.id} onNavigate={handleNavigate} />
                 )}
 
                 {currentRoute === 'idioms' && (
@@ -647,7 +647,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 27. Complete AI Translation Studio */}
                 {currentRoute === 'translation' && (
-                  <TranslationStudioPage userProfile={activeProfile} />
+                  <TranslationStudioPage key={authUser?.id || 'guest'} learnerId={authUser?.id} userProfile={activeProfile} />
                 )}
               </>
             )}
