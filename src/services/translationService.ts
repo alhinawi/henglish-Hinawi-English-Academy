@@ -306,8 +306,10 @@ export function createVocabularyCollection(
   learnerId?: string
 ): VocabularyCollection {
   const collections = getVocabularyCollections(learnerId);
+  const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId));
+  if (raw !== null && !Array.isArray(JSON.parse(raw))) throw new Error('Saved collections are unreadable');
   const newCol: VocabularyCollection = {
-    id: `col_${Date.now()}`,
+    id: `col_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`,
     name,
     nameAr,
     description,
@@ -318,9 +320,7 @@ export function createVocabularyCollection(
   };
 
   const updated = [...collections, newCol];
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(updated));
-  } catch {}
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_COLLECTIONS, learnerId), JSON.stringify(updated));
   return newCol;
 }
 
