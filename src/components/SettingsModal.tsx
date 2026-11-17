@@ -26,6 +26,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
 
+  const alive = useRef(true);
+  const owner = `${userProfile.id}:${accessToken || ''}`;
+  const currentOwner = useRef(owner);
+  currentOwner.current = owner;
+  const imageVersion = useRef(0);
+  useEffect(() => {
+    alive.current = true;
+    return () => { alive.current = false; imageVersion.current += 1; };
+  }, []);
   const { lang, setLang, t, dir } = useLanguage();
   const initialName = userProfile.nameAr || userProfile.name;
   const initialAvatar = userProfile.avatar ?? null;
@@ -35,16 +44,21 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   const [error, setError] = useState<string | null>(null);
   const [needsGoogleReauth, setNeedsGoogleReauth] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
+  const saveInFlight = useRef(false);
 
   const pickFile = () => fileRef.current?.click();
 
   const onFile = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
+    const version = ++imageVersion.current;
+    const isCurrent = () => alive.current && owner === currentOwner.current && version === imageVersion.current;
     const reader = new FileReader();
     reader.onload = () => {
+      if (!isCurrent()) return;
       const img = new Image();
       img.onload = () => {
+        if (!isCurrent()) return;
         const size = 128;
         const canvas = document.createElement('canvas');
         canvas.width = size;
@@ -62,34 +76,44 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   };
 
   const save = async () => {
+    if (saveInFlight.current || !alive.current) return;
+    const isCurrent = () => alive.current && owner === currentOwner.current;
     if (!accessToken) {
       setError(t('sm.errSession'));
       return;
     }
+    saveInFlight.current = true;
     setSaving(true);
     setError(null);
     const trimmed = name.trim();
     const nameChanged = trimmed.length >= 2 && trimmed !== initialName;
     const avatarChanged = avatar !== initialAvatar;
-    const res = await apiUpdateMe(accessToken, {
-      ...(nameChanged ? { name: trimmed } : {}),
-      ...(avatarChanged ? { avatar: avatar || null } : {}),
-    });
-    setSaving(false);
-    if (!res.ok) {
-      if (res.googleReauth) {
-        setError(GOOGLE_REAUTH_MESSAGE);
-        setNeedsGoogleReauth(true);
-      } else {
-        setError(t('sm.errSave'));
+    try {
+      const res = await apiUpdateMe(accessToken, {
+        ...(nameChanged ? { name: trimmed } : {}),
+        ...(avatarChanged ? { avatar: avatar || null } : {}),
+      });
+      if (!isCurrent()) return;
+      setSaving(false);
+      if (!res.ok) {
+        if (res.googleReauth) {
+          setError(GOOGLE_REAUTH_MESSAGE);
+          setNeedsGoogleReauth(true);
+        } else {
+          setError(t('sm.errSave'));
+        }
+        return;
       }
-      return;
+      onSaved({
+        name: trimmed.length >= 2 ? trimmed : undefined,
+        ...(avatarChanged ? { avatar: avatar || null } : {}),
+      });
+      onClose();
+    } catch {
+      if (isCurrent()) { setSaving(false); setError(t('sm.errSave')); }
+    } finally {
+      saveInFlight.current = false;
     }
-    onSaved({
-      name: trimmed.length >= 2 ? trimmed : undefined,
-      ...(avatarChanged ? { avatar: avatar || null } : {}),
-    });
-    onClose();
   };
 
   return (
@@ -146,12 +170,13 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
           <input ref={fileRef} type="file" accept="image/*" className="hidden" onChange={onFile} />
         </div>
 
-        <fieldset className="space-y-3"><legend className="text-xs text-slate-300 mb-2">{t('sm.pickAvatar')}</legend><div className="grid grid-cols-6 gap-2">{Array.from({length: PRESET_COUNT}, (_, i) => <button key={i} type="button" aria-label={`${t('sm.avatarN')} ${i + 1}`} onClick={async () => { try { setAvatar(await svgToDataUrl(presetSvg(i))); } catch { setError(t('sm.errAvatar')); } }} className="aspect-square rounded-xl overflow-hidden [&>svg]:w-full [&>svg]:h-full border border-white/15 hover:border-[#ffd166] focus-visible:outline-2 focus-visible:outline-[#ffd166]" dangerouslySetInnerHTML={{__html: presetSvg(i)}} />)}</div></fieldset>
+        <fieldset className="space-y-3"><legend className="text-xs text-slate-300 mb-2">{t('sm.pickAvatar')}</legend><div className="grid grid-cols-6 gap-2">{Array.from({length: PRESET_COUNT}, (_, i) => <button key={i} type="button" aria-label={`${t('sm.avatarN')} ${i + 1}`} onClick={async () => { const version = ++imageVersion.current; const isCurrent = () => alive.current && owner === currentOwner.current && version === imageVersion.current; try { const value = await svgToDataUrl(presetSvg(i)); if (isCurrent()) setAvatar(value); } catch { if (isCurrent()) setError(t('sm.errAvatar')); } }} className="aspect-square rounded-xl overflow-hidden [&>svg]:w-full [&>svg]:h-full border border-white/15 hover:border-[#ffd166] focus-visible:outline-2 focus-visible:outline-[#ffd166]" dangerouslySetInnerHTML={{__html: presetSvg(i)}} />)}</div></fieldset>
 
         <div>
           <label className="block text-xs font-medium text-slate-300 mb-1.5">{t('sm.nameLabel')}</label>
           <input
             type="text"
+            aria-label={t('sm.nameLabel')}
             value={name}
             onChange={(e) => setName(e.target.value)}
             maxLength={60}
@@ -159,7 +184,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
           />
         </div>
 
-        {error && <p className="text-xs text-red-300">{t(error)}</p>}
+        {error && <p role="alert" className="text-xs text-red-300">{t(error)}</p>}
         {needsGoogleReauth && (
           <button
             onClick={() => { window.location.href = googleLoginUrl(); }}
