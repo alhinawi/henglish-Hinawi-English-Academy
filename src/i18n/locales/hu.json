@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "Ez a PDF nem tartalmaz kijelölhető szöveget, és szkennelt oldalakat tartalmazhat. Tölts fel kijelölhető szöveget tartalmazó PDF-et, vagy másold a szöveget egy TXT-fájlba.",
   "lp.noteStorage": "A jegyzetek csak ebben a böngészőben tárolódnak, tanulónként és leckénként külön. Más eszközökkel nem szinkronizálódnak.",
   "lp.noteSavedLocal": "Mentve ebben a böngészőben.",
-  "ts.vocabReviewPartial": "A szókincsbe mentve ezen az eszközön, de az ismétlési tervbe nem. Engedélyezze a tárolást, és mentse újra."
+  "ts.vocabReviewPartial": "A szókincsbe mentve ezen az eszközön, de az ismétlési tervbe nem. Engedélyezze a tárolást, és mentse újra.",
+  "sc.reviewPartial": "Az értékelést mentettük, de a nehéz mondatok listája, a legutóbbi ismétlések vagy a tanulási statisztikák nem frissültek. Ezek miatt ne ismételd meg az értékelést."
 }
