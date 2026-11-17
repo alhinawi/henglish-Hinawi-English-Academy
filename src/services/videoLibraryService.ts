@@ -11348,11 +11348,13 @@ export function getSearchHistory(userId?: string): string[] {
 
 export function addSearchHistory(query: string, userId?: string): string[] {
   if (!query.trim()) return getSearchHistory(userId);
-  let list = getSearchHistory(userId);
-  list = [query.trim(), ...list.filter(q => q.toLowerCase() !== query.trim().toLowerCase())].slice(0, 10);
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_SEARCH_HISTORY_KEY, userId), JSON.stringify(list));
-  } catch { /* Browser storage is optional. */ }
+  getSearchHistory(userId);
+  const key = mediaStorageKey(STORAGE_SEARCH_HISTORY_KEY, userId);
+  const raw = localStorage.getItem(key);
+  const parsed: unknown = raw === null ? [] : JSON.parse(raw);
+  if (!Array.isArray(parsed) || parsed.some(item => typeof item !== 'string')) throw new Error('Saved search history is unreadable');
+  const list = [query.trim(), ...parsed.filter(q => q.toLowerCase() !== query.trim().toLowerCase())].slice(0, 10);
+  localStorage.setItem(key, JSON.stringify(list));
   return list;
 }
 
