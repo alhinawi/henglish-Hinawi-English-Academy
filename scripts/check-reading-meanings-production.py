@@ -1,0 +1,10 @@
+import functools,http.server,json,pathlib,threading
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd();server=http.server.ThreadingHTTPServer(('127.0.0.1',4188),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for lang in ['en','ar']:
+   page=b.new_page(viewport={'width':390,'height':1100});page.add_init_script('Math.random=()=>0.01;');t=json.load(open('src/i18n/locales/'+lang+'.json'));page.goto('http://127.0.0.1:4188/?lang='+lang+'#reading');page.locator('div.grid.gap-4 button').first.click();section=page.get_by_role('heading',name=t['lw.context'],exact=True).locator('..');choices=section.get_by_role('button');expect(choices).to_have_count(3);labels=choices.all_text_contents();assert len(set(labels))==3;correct=choices.filter(has_text='الاثنين');expect(correct).to_have_count(1);assert labels.index(correct.inner_text())!=1;wrong=next(c for c in choices.all()if c.inner_text()!=correct.inner_text());wrong.click();expect(section.get_by_role('status')).to_have_text(t['lw.meaningRetry']);assert choices.all_text_contents()==labels;correct.click();expect(correct).to_have_attribute('aria-pressed','true');expect(section.get_by_role('status')).to_contain_text('Monday');assert choices.all_text_contents()==labels;section.scroll_into_view_if_needed();page.screenshot(path='/downloads/reading-real-meanings-'+lang+'.png',animations='disabled');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');assert page.evaluate("JSON.parse(localStorage.getItem('henglish-literacy-v1:guest')||'{}').done?.length||0")==0;page.close();print(lang,'Next reading3distinct realmeaning choices,correctnotfixedmiddle,wrong/retryandcorrectfeedback,stableonrerender,pressedstate,no completion frommeaningalone,width PASS')
+  b.close()
+finally:server.shutdown();server.server_close()
