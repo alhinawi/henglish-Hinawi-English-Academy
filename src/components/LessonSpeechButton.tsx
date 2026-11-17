@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Square, Volume2 } from 'lucide-react';
-import { getVoiceSettings, speakEnglish, stopSpeech, subscribeSpeechState, type SpeechSpeed } from '../utils/audio';
+import { getVoiceSettings, speakEnglish, speakMultilingualText, stopSpeech, subscribeSpeechState, type SpeechSpeed, type SpeakOptions } from '../utils/audio';
 import { useLanguage } from '../i18n/LanguageContext';
 
-export function LessonSpeechButton({ text, label, className, speed, iconOnly = false }: { text: string; label: string; className: string; speed?: SpeechSpeed; iconOnly?: boolean }) {
+export function LessonSpeechButton({ text, label, className, speed, iconOnly = false, language = 'en' }: { text: string; label: string; className: string; speed?: SpeechSpeed; iconOnly?: boolean; language?: string }) {
   const { t } = useLanguage();
   const [active, setActive] = useState(false);
   const [error, setError] = useState('');
@@ -13,13 +13,14 @@ export function LessonSpeechButton({ text, label, className, speed, iconOnly = f
       if (!playing || spoken !== text.trim()) { ownsSpeech.current = false; setActive(false); }
     });
     return () => { unsubscribe(); if (ownsSpeech.current) stopSpeech(); };
-  }, [text]);
+  }, [text, language]);
   function toggle() {
     if (active) { stopSpeech(); return; }
     setError('');
     if (getVoiceSettings().isMuted) { setError(t('w3.voice.muted')); return; }
     let settled = false;
-    speakEnglish(text, {
+    const speak = language === 'en' ? speakEnglish : (value: string, options?: SpeakOptions) => speakMultilingualText(value, language, options);
+    speak(text, {
       speed,
       onEnd: () => { settled = true; ownsSpeech.current = false; setActive(false); },
       onError: () => { settled = true; ownsSpeech.current = false; setActive(false); setError(t('listen.audioError')); },

@@ -511,8 +511,9 @@ export const speakText = speakEnglishVoice;
  * Universal Multilingual Speech Function
  * Speaks text in any specified language (e.g. 'ar', 'en', 'fr', 'es', 'de', etc.)
  */
-export function speakMultilingualText(text: string, langCode: string = 'en', onEnd?: () => void): void {
-  if (typeof window === 'undefined') return;
+export function speakMultilingualText(text: string, langCode: string = 'en', onEndOrOptions?: (() => void) | SpeakOptions): void {
+  const options = typeof onEndOrOptions === 'function' ? { onEnd: onEndOrOptions } : onEndOrOptions;
+  if (typeof window === 'undefined') { options?.onError?.(); return; }
   if (currentSettings.isMuted) return;
 
   const trimmed = text.trim();
@@ -522,7 +523,7 @@ export function speakMultilingualText(text: string, langCode: string = 'en', onE
 
   // If language is English, we can use our enhanced speakEnglishVoice
   if (langCode === 'en' || langCode.startsWith('en-')) {
-    speakEnglishVoice(trimmed, { onEnd });
+    speakEnglishVoice(trimmed, options);
     return;
   }
 
@@ -537,22 +538,25 @@ export function speakMultilingualText(text: string, langCode: string = 'en', onE
       utterance.voice = targetVoice;
     }
     utterance.lang = langCode;
-    utterance.rate = 0.95;
+    utterance.rate = options?.speed ?? 0.95;
 
     utterance.onstart = () => { if (generation === speechGeneration) notifyState(true, trimmed); };
     utterance.onend = () => {
       if (generation !== speechGeneration) return;
       notifyState(false, '');
-      if (onEnd) onEnd();
+      options?.onEnd?.();
+      options?.onEnded?.();
     };
     utterance.onerror = () => {
       if (generation !== speechGeneration) return;
       notifyState(false, '');
+      options?.onError?.();
     };
 
     window.speechSynthesis.speak(utterance);
   } catch (err) {
     console.warn('Speech synthesis error:', err);
     notifyState(false, '');
+    options?.onError?.();
   }
 }
