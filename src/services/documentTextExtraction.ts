@@ -29,11 +29,10 @@ export async function extractDocxDocumentText(file: File): Promise<string> {
 }
 
 export async function extractPdfDocumentText(file: File): Promise<string> {
-  const [pdfjs, worker] = await Promise.all([
-    import('pdfjs-dist'),
-    import('pdfjs-dist/build/pdf.worker.min.mjs?url'),
-  ]);
-  pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
+  const pdfjs = await import('pdfjs-dist');
+  // A same-origin static asset works in both Next export and Vite. Next does
+  // not interpret Vite's URL import convention as a URL string.
+  pdfjs.GlobalWorkerOptions.workerSrc = '/workers/pdf.worker-6.5.438.min.mjs';
   const task = pdfjs.getDocument({ data: new Uint8Array(await file.arrayBuffer()), useSystemFonts: true });
   try {
     const document = await task.promise;
