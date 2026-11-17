@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useFormRequest } from '../../hooks/useFormRequest';
 import { useAuth } from '../../context/AuthContext';
 import { GoogleSignInBlock } from '../../components/GoogleSignInBlock';
 import { playSound, fireCelebration } from '../../utils/audio';
@@ -42,6 +43,8 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
   const hasLetter = /[a-zA-Z]/.test(password);
   const isPasswordValid = hasMinLength && hasNumber && hasLetter;
 
+  const { beginRequest } = useFormRequest();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setErrorMessage(null);
@@ -67,6 +70,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
       return;
     }
 
+    const isCurrent = beginRequest();
     const res = await register({
       email,
       password,
@@ -75,6 +79,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
       phone: phone.trim() || undefined,
       role: 'student',
     });
+    if (!isCurrent()) return;
 
     if (res.success) {
       playSound('correct');
