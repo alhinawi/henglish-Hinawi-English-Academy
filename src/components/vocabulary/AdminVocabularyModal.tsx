@@ -21,12 +21,14 @@ import { parseVocabularyImport } from '../../services/vocabularyImport';
 import { playSound } from '../../utils/audio';
 
 interface AdminVocabularyModalProps {
+  learnerId?: string;
   isOpen: boolean;
   onClose: () => void;
   onWordAdded?: () => void;
 }
 
 export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
+  learnerId,
   isOpen,
   onClose,
   onWordAdded,
@@ -124,7 +126,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
     setAddError(false);
     setSuccessMsg('');
-    try { saveWord(newEntry); }
+    try { saveWord(newEntry, undefined, learnerId); }
     catch { setAddError(true); playSound('wrong'); return; }
     playSound('success');
     setSuccessMsg(t('avm.addSuccess').replace('{w}', headword));
@@ -145,7 +147,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
   const handleBulkImport = () => {
     try {
       const entries = parseVocabularyImport(bulkData);
-      saveWords(entries);
+      saveWords(entries, learnerId);
       const count = entries.length;
       playSound('success');
       setBulkOk(true);
