@@ -4,7 +4,7 @@
 // Guaranteed non-overlapping playback, remote audio caching, Web Speech fallback
 // ==============================================================================
 
-import { speakEnglishVoice, stopSpeech } from '../utils/audio';
+import { getVoiceSettings, speakEnglishVoice, stopSpeech, subscribeSpeechState } from '../utils/audio';
 
 export type PronunciationAccent = 'US' | 'UK';
 
@@ -20,7 +20,9 @@ type Listener = (state: PlaybackState) => void;
 class AudioPlaybackManager {
   private static instance: AudioPlaybackManager;
   private generation = 0;
-  private resetTimer: ReturnType<typeof setTimeout> | null = null;
+  private fallbackGeneration = -1;
+  private releaseSpeech: (() => void) | null = null;
+  private currentOwner: symbol | undefined;
   private currentAudio: HTMLAudioElement | null = null;
   private state: PlaybackState = {
     wordId: null,
@@ -61,8 +63,9 @@ class AudioPlaybackManager {
    */
   public stop(): void {
     this.generation++;
-    if (this.resetTimer !== null) clearTimeout(this.resetTimer);
-    this.resetTimer = null;
+    this.releaseSpeech?.();
+    this.releaseSpeech = null;
+    this.currentOwner = undefined;
     if (this.currentAudio) {
       try {
         this.currentAudio.pause();
@@ -90,6 +93,10 @@ class AudioPlaybackManager {
     });
   }
 
+  public stopOwned(owner: symbol): void {
+    if (this.currentOwner === owner) this.stop();
+  }
+
   /**
    * Play pronunciation for a given word and accent
    * Attempts remote audio URL first, falling back cleanly to client SpeechSynthesis
@@ -98,10 +105,11 @@ class AudioPlaybackManager {
     wordId: string,
     wordText: string,
     accent: PronunciationAccent,
-    remoteUrl?: string
+    remoteUrl?: string,
+    owner?: symbol
   ): Promise<void> {
     // If already playing this exact item, toggle stop
-    if (this.state.wordId === wordId && this.state.accent === accent && this.state.status === 'playing') {
+    if (this.state.wordId === wordId && this.state.accent === accent && (this.state.status === 'playing' || this.state.status === 'loading')) {
       this.stop();
       return;
     }
@@ -109,6 +117,7 @@ class AudioPlaybackManager {
     // Cancel any previous playback
     this.stop();
     const generation = this.generation;
+    this.currentOwner = owner;
 
     this.notify({
       wordId,
@@ -131,9 +140,11 @@ class AudioPlaybackManager {
           if (generation !== this.generation || this.currentAudio !== audio) return;
           this.notify({ status: 'idle', wordId: null, accent: null, source: null });
           this.currentAudio = null;
+          this.currentOwner = undefined;
         });
 
         audio.addEventListener('error', () => {
+          if (this.currentAudio !== audio) return;
           // Gracefully fallback to Web Speech API
           this.fallbackSpeechSynthesis(wordId, wordText, accent, generation);
         });
@@ -152,33 +163,35 @@ class AudioPlaybackManager {
   }
 
   private fallbackSpeechSynthesis(wordId: string, text: string, accent: PronunciationAccent, generation: number): void {
-    if (generation !== this.generation || this.state.source === 'speech-synthesis' && this.state.status === 'playing') return;
-    // Both an error event and a rejected play promise can arrive for one remote clip.
+    if (generation !== this.generation || this.fallbackGeneration === generation) return;
+    this.fallbackGeneration = generation;
+    // A remote error event and rejected play promise must not synthesize twice.
     if (this.currentAudio) {
       try { this.currentAudio.pause(); } catch { /* already stopped */ }
       this.currentAudio = null;
     }
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-      this.notify({ status: 'error', source: null });
-      this.resetTimer = setTimeout(() => { if (generation === this.generation) this.stop(); }, 1500);
-      return;
-    }
-
+    this.notify({ status: 'loading', source: 'speech-synthesis' });
+    let settled = false;
+    let armed = false;
+    const finish = (error = false) => {
+      if (generation !== this.generation || settled) return;
+      settled = true;
+      this.releaseSpeech?.(); this.releaseSpeech = null;
+      this.currentOwner = undefined;
+      this.notify(error ? { status: 'error', source: null } : { status: 'idle', wordId: null, accent: null, source: null });
+    };
+    this.releaseSpeech = subscribeSpeechState((playing, spoken) => {
+      if (!armed || generation !== this.generation) return;
+      if (playing && spoken === text.trim()) this.notify({ status: 'playing', source: 'speech-synthesis' });
+      else queueMicrotask(() => finish()); // Allow onError to set the specific failure first.
+    });
     try {
-      this.notify({ status: 'playing', source: 'speech-synthesis' });
-      // Use existing speakEnglishVoice with the explicit accent
-      speakEnglishVoice(text, { accent });
-
-      // Automatically reset status after approximate duration based on word length
-      const durationMs = Math.max(1200, text.length * 90);
-      this.resetTimer = setTimeout(() => {
-        if (generation === this.generation) {
-          this.notify({ status: 'idle', wordId: null, accent: null, source: null });
-        }
-      }, durationMs);
+      if (getVoiceSettings().isMuted || !text.trim()) { finish(true); return; }
+      // This engine can use server audio even without browser SpeechSynthesis.
+      speakEnglishVoice(text, { accent, onEnd: () => finish(), onError: () => finish(true) });
+      armed = true;
     } catch {
-      this.notify({ status: 'error', source: null });
-      this.resetTimer = setTimeout(() => { if (generation === this.generation) this.stop(); }, 1500);
+      finish(true);
     }
   }
 }
