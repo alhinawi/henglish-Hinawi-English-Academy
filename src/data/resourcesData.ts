@@ -1,3 +1,5 @@
+import { VERB_TOOLKIT } from './verbsData';
+
 export interface LearningResource {
   id: string;
   title: string;
@@ -67,27 +69,60 @@ Part A • Complete with the correct Future Perfect form:
 4. ______________ you ______________ (save) enough money by December?
 5. By the time she ______________ (get) home, we will have eaten.
 6. What ______________ you ______________ (achieve) by 2030?
+7. By Friday, Salma ______________ (write) all three reports.
+8. By the time the lesson ______________ (start), we will have read the text.
+9. We ______________ (not / take) the final exam by next Monday.
+10. How many books ______________ he ______________ (read) by the end of the month?
 
 Part B • Find and correct the single error in each sentence:
 1. He will has repaired the car by tomorrow afternoon.
 2. By the time the train will arrive, we will have bought the tickets.
 3. She will have wrote three letters before sunset.
+4. Will they have finish the project by Monday?
+5. By the time he gets home, we will have ate dinner.
+
+Part C • Write about your own study goals (60-80 words):
+Describe three things you will have completed by the end of next month.
+Use one negative form and one sentence beginning with "By the time".
+Choose realistic goals and include a clear deadline.
+Self-check: three completed actions; will have + V3; one negative;
+Present Simple after by the time; a clear deadline; 60-80 words.
 
 ==========================================================
 ANSWER KEY & EXPLANATIONS (مفتاح الإجابات)
 ==========================================================
 Part A:
-1. will have finished
-2. will have graduated
-3. will not have arrived / won't have arrived
-4. Will / have saved
-5. gets (Present Simple after by the time)
-6. will / have achieved
+1. will have finished - completion before tonight's deadline.
+2. will have graduated - will have + the past participle graduated.
+3. will not have arrived / won't have arrived - not goes after will.
+4. Will / have saved - invert will and the subject for a question.
+5. gets - Present Simple after by the time; she takes -s.
+6. will / have achieved - keep have + V3 after the subject in a question.
+7. will have written - written is the past participle of write.
+8. starts - use Present Simple in the by-the-time clause.
+9. will not have taken / won't have taken - taken, not took, follows have.
+10. will / have read - keep have read together; read here sounds /red/.
 
 Part B:
-1. will has -> will have repaired
-2. will arrive -> arrives
-3. wrote -> written (V3 is required)
+1. will has -> will have: He will have repaired the car by tomorrow afternoon.
+   After will, use the base form have, not has.
+2. will arrive -> arrives: By the time the train arrives, we will have bought the tickets.
+   The time clause takes Present Simple, not will.
+3. wrote -> written: She will have written three letters before sunset.
+   Have requires the past participle written, not the past form wrote.
+4. finish -> finished: Will they have finished the project by Monday?
+   Question order is Will + subject + have + V3.
+5. ate -> eaten: By the time he gets home, we will have eaten dinner.
+   Eaten is the past participle; gets already uses the correct time-clause form.
+
+Part C • One possible answer (your own goals may differ):
+By the end of next month, I will have finished two English books.
+I will have written a short diary entry every week, and I will have
+learned twenty useful expressions. I will not have completed the
+whole course, because I want time to practise each unit. By the time
+my next class starts, I will have prepared three questions to ask
+my teacher. These goals will help me study regularly.
+Check your own work against the task, not against this model's exact words.
 ==========================================================`,
   },
   {
@@ -117,7 +152,15 @@ fly          | flew             | flown                | يطير / يسافر
 buy          | bought           | bought               | يشتري
 find         | found            | found                | يجد
 learn        | learned / learnt | learned / learnt     | يتعلم
-read         | read (نطق ريد)   | read (نطق رد)        | يقرأ
+read /riːd/  | read /red/       | read /red/           | يقرأ
+${VERB_TOOLKIT.filter((verb, index, all) => all.findIndex(entry => entry.v1 === verb.v1) === index && !['write', 'do', 'go', 'see', 'take', 'make', 'eat', 'speak', 'fly', 'buy', 'find', 'learn', 'read'].includes(verb.v1)).slice(0, 37).map(verb => `${verb.v1.padEnd(12)} | ${verb.v2.padEnd(16)} | ${verb.v3.padEnd(20)} | ${verb.meaningAr}`).join('\n')}
+come         | came             | come                 | يأتي
+
+Usage notes:
+After will have, always use the V3 column, not V2.
+Regular verbs often share V2 and V3; irregular forms must be learned.
+Read is /riːd/ in the base form and /red/ in the past and participle.
+Both learned and learnt are accepted; use either consistently.
 ==========================================================`,
   },
   {
