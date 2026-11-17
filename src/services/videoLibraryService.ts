@@ -11439,12 +11439,19 @@ export function isVideoSaved(youtubeId: string, userId?: string): boolean {
  * Admin Video Management Operations
  */
 export function adminUpdateVideo(id: string, patch: Partial<EducationalVideoItem>): EducationalVideoItem[] {
+  // Do not overwrite unreadable saved data with the seed fallback.
+  const raw = localStorage.getItem(STORAGE_CATALOG_KEY);
+  if (raw !== null) {
+    const saved: unknown = JSON.parse(raw);
+    if (!Array.isArray(saved) || saved.some(item => !item || typeof item !== 'object' || Array.isArray(item) || typeof item.youtubeId !== 'string' || !item.youtubeId.trim())) {
+      throw new Error('Catalog is unreadable');
+    }
+  }
   const videos = getStoredVideos();
   const idx = videos.findIndex(v => v.id === id || v.youtubeId === id);
-  if (idx >= 0) {
-    videos[idx] = { ...videos[idx], ...patch, lastVerifiedAt: new Date().toISOString() };
-    saveStoredVideos(videos);
-  }
+  if (idx < 0) throw new Error('Video was not found');
+  videos[idx] = { ...videos[idx], ...patch };
+  if (!saveStoredVideos(videos)) throw new Error('Catalog was not saved');
   return [...videos];
 }
 
@@ -11455,7 +11462,7 @@ export function adminMarkUnavailable(id: string, reason: string): EducationalVid
   });
 }
 
-export async function adminReplaceVideoId(id: string, newYoutubeId: string): Promise<{ ok: boolean; video?: EducationalVideoItem; error?: string }> {
+export async function adminReplaceVideoId(id: string, newYoutubeId: string, patch: Partial<EducationalVideoItem> = {}): Promise<{ ok: boolean; video?: EducationalVideoItem; error?: string }> {
   const cleanId = extractYouTubeId(newYoutubeId);
   if (!cleanId) return { ok: false, error: 'معرف يوتيوب غير صالح' };
 
@@ -11465,6 +11472,8 @@ export async function adminReplaceVideoId(id: string, newYoutubeId: string): Pro
   }
 
   const videos = adminUpdateVideo(id, {
+    ...patch,
+    lastVerifiedAt: new Date().toISOString(),
     youtubeId: cleanId,
     thumbnailUrl: check.thumbnailUrl || `https://img.youtube.com/vi/${cleanId}/hqdefault.jpg`,
     verificationStatus: 'verified_playable',
