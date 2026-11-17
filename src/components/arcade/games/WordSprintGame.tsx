@@ -54,18 +54,23 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
     nextRound(words);
   };
 
+  const finish = () => {
+    if (finished.current) return;
+    finished.current = true;
+    cancelTransition();
+    if (timerRef.current) clearInterval(timerRef.current);
+    setEnd(recordGameResult(META.id, scoreRef.current));
+    setPhase('end');
+    playSound('fanfare');
+  };
+
   useEffect(() => {
     if (phase !== 'play') return;
     timerRef.current = setInterval(() => {
       const remaining = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000));
       setTimeLeft(remaining);
       if (remaining === 0 && !finished.current) {
-        finished.current = true;
-        cancelTransition();
-        if (timerRef.current) clearInterval(timerRef.current);
-        setEnd(recordGameResult(META.id, scoreRef.current));
-        setPhase('end');
-        playSound('fanfare');
+        finish();
       }
     }, 1000);
     return () => {
@@ -76,12 +81,18 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
 
   const pick = (opt: string) => {
     if (finished.current || picked || !current) return;
+    if (Date.now() >= deadline.current) {
+      setTimeLeft(0);
+      finish();
+      return;
+    }
     setPicked(opt);
     const ok = opt === current.ar;
     if (ok) {
       playSound('correct');
       const bonus = (combo + 1) % 3 === 0 ? 1 : 0;
-      setScore((s) => s + 1 + bonus);
+      scoreRef.current += 1 + bonus;
+      setScore(scoreRef.current);
       setCombo((c) => c + 1);
     } else {
       playSound('wrong');
