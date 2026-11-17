@@ -49,15 +49,17 @@ function read(key: string): ArcadeProgress {
   try {
     // The old browser-wide record has no reliable owner. Copy it to guest
     // once and retain the original for recovery, never seed a signed-in user.
-    if (localStorage.getItem(GUEST_ARCADE_KEY) === null) {
-      const legacy = localStorage.getItem(LEGACY_ARCADE_KEY);
-      if (legacy !== null) {
-        const parsed: unknown = JSON.parse(legacy);
-        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
-          localStorage.setItem(GUEST_ARCADE_KEY, legacy);
+    try {
+      if (localStorage.getItem(GUEST_ARCADE_KEY) === null) {
+        const legacy = localStorage.getItem(LEGACY_ARCADE_KEY);
+        if (legacy !== null) {
+          const parsed: unknown = JSON.parse(legacy);
+          if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+            localStorage.setItem(GUEST_ARCADE_KEY, legacy);
+          }
         }
       }
-    }
+    } catch { /* Guest migration must not hide a valid account record. */ }
     const raw = localStorage.getItem(key);
     if (!raw) return { ...EMPTY };
     const p = JSON.parse(raw) as Partial<ArcadeProgress>;
