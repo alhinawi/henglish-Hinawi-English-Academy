@@ -1,3 +1,4 @@
+import { readTutorStream } from './tutorStream';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - CLIENT AI TUTOR SERVICE
 // Connects UI to secure server-side AI endpoints (/api/ai/chat, /api/ai/stream)
@@ -81,35 +82,8 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
       }
 
       if (response.ok && response.body) {
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder('utf-8');
-        let fullText = '';
-        let resultMetadata: Partial<AiResponseResult> = {};
-
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-
-          const textChunk = decoder.decode(value, { stream: true });
-          const lines = textChunk.split('\n');
-
-          for (const line of lines) {
-            if (line.startsWith('data: ')) {
-              try {
-                const parsed = JSON.parse(line.replace('data: ', '').trim());
-                if (parsed.text) {
-                  fullText += parsed.text;
-                  onChunk(parsed.text);
-                }
-                if (parsed.provider) {
-                  resultMetadata = parsed;
-                }
-              } catch {
-                // Ignore parse errors on partial chunks
-              }
-            }
-          }
-        }
+        const { text: fullText, metadata } = await readTutorStream(response.body, onChunk, signal);
+        const resultMetadata = metadata as Partial<AiResponseResult>;
 
         if (fullText.trim()) {
           return {
