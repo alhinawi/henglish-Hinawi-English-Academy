@@ -18,6 +18,7 @@ import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 
 interface WordCardProps {
+  learnerId?: string;
   entry: LexicalEntry;
   onOpenDetails: (entry: LexicalEntry) => void;
   onSavedChange?: () => void;
@@ -36,6 +37,7 @@ const CEFR_COLORS: Record<string, string> = {
 };
 
 export const WordCard: React.FC<WordCardProps> = ({
+  learnerId,
   entry,
   onOpenDetails,
   onSavedChange,
@@ -44,11 +46,11 @@ export const WordCard: React.FC<WordCardProps> = ({
 }) => {
   const { t, dir } = useLanguage();
   const [saveError, setSaveError] = useState(false);
-  const [saved, setSaved] = useState(() => isWordSaved(entry.headword));
+  const [saved, setSaved] = useState(() => isWordSaved(entry.headword, learnerId));
   // A detail-modal save/remove changes the same persisted word as this card.
   useEffect(() => {
-    setSaved(isWordSaved(entry.headword));
-  }, [entry.headword, savedVersion]);
+    setSaved(isWordSaved(entry.headword, learnerId));
+  }, [entry.headword, savedVersion, learnerId]);
   const txMap = useContentMap('vocab');
   const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
   const shownExample = txExample(txMap, entry.id, entry.exampleAr);
@@ -59,10 +61,10 @@ export const WordCard: React.FC<WordCardProps> = ({
     try {
       playSound('click');
       if (saved) {
-        removeSavedWord(entry.headword);
+        removeSavedWord(entry.headword, learnerId);
         setSaved(false);
       } else {
-        saveWord(entry);
+        saveWord(entry, undefined, learnerId);
         setSaved(true);
         playSound('success');
       }

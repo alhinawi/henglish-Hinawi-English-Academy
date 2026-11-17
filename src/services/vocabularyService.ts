@@ -1,3 +1,4 @@
+import { mediaStorageKey, readMediaList } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - VOCABULARY & LEXICAL EXPLORER SERVICE
 // High-performance search, multi-index filtering, and dual Supabase/JSON engine
@@ -489,37 +490,33 @@ export function searchVocabulary(options: VocabularyFilterOptions = {}): {
 /**
  * Personal Saved Vocabulary & Spaced Repetition (SM-2)
  */
-export function getSavedWords(): SavedWordItem[] {
+export function getSavedWords(learnerId?: string): SavedWordItem[] {
   if (typeof window === 'undefined') return [];
-  try {
-    const raw = localStorage.getItem(SAVED_WORDS_STORAGE_KEY);
-    const words = raw ? JSON.parse(raw) : [];
-    return Array.isArray(words) ? words.filter(w => w && typeof w.word === 'string' && w.entry) : [];
-  } catch {
-    return [];
-  }
+  return readMediaList(SAVED_WORDS_STORAGE_KEY, learnerId).filter((w): w is SavedWordItem =>
+    !!w && typeof w === 'object' && typeof (w as SavedWordItem).word === 'string' && !!(w as SavedWordItem).entry);
 }
 
 export class VocabularyStorageError extends Error {
   constructor() { super('Vocabulary storage unavailable'); this.name = 'VocabularyStorageError'; }
 }
 
-function readWordsForMutation(): SavedWordItem[] {
+function readWordsForMutation(learnerId?: string): SavedWordItem[] {
   try {
-    const raw = localStorage.getItem(SAVED_WORDS_STORAGE_KEY);
+    readMediaList(SAVED_WORDS_STORAGE_KEY, learnerId);
+    const raw = localStorage.getItem(mediaStorageKey(SAVED_WORDS_STORAGE_KEY, learnerId));
     const words = raw ? JSON.parse(raw) : [];
     if (!Array.isArray(words) || words.some(w => !w || typeof w.word !== 'string' || !w.entry)) throw new Error();
     return words;
   } catch { throw new VocabularyStorageError(); }
 }
 
-function persistSavedWords(words: SavedWordItem[]): void {
-  try { localStorage.setItem(SAVED_WORDS_STORAGE_KEY, JSON.stringify(words)); }
+function persistSavedWords(words: SavedWordItem[], learnerId?: string): void {
+  try { localStorage.setItem(mediaStorageKey(SAVED_WORDS_STORAGE_KEY, learnerId), JSON.stringify(words)); }
   catch { throw new VocabularyStorageError(); }
 }
 
-function saveWordEntries(items: Array<{ entry: LexicalEntry; notes?: string }>): SavedWordItem[] {
-  const words = readWordsForMutation();
+function saveWordEntries(items: Array<{ entry: LexicalEntry; notes?: string }>, learnerId?: string): SavedWordItem[] {
+  const words = readWordsForMutation(learnerId);
   for (const { entry, notes } of items) {
     const existing = words.find(w => w.word.toLowerCase() === entry.headword.toLowerCase());
     if (existing) {
@@ -534,42 +531,46 @@ function saveWordEntries(items: Array<{ entry: LexicalEntry; notes?: string }>):
     }
   }
   // One local write for the entire operation; never report success or sync after failure.
-  persistSavedWords(words);
-  for (const { entry, notes } of items) syncSavedWordToSupabase(entry.headword, notes);
+  persistSavedWords(words, learnerId);
+  for (const { entry, notes } of items) syncSavedWordToSupabase(entry.headword, notes, learnerId);
   return words;
 }
 
-export function saveWord(entry: LexicalEntry, notes?: string): SavedWordItem[] {
-  return saveWordEntries([{ entry, notes }]);
+export function saveWord(entry: LexicalEntry, notes?: string, learnerId?: string): SavedWordItem[] {
+  return saveWordEntries([{ entry, notes }], learnerId);
 }
 
-export function saveWords(entries: LexicalEntry[]): SavedWordItem[] {
-  return saveWordEntries(entries.map(entry => ({ entry })));
+export function saveWords(entries: LexicalEntry[], learnerId?: string): SavedWordItem[] {
+  return saveWordEntries(entries.map(entry => ({ entry })), learnerId);
 }
 
-export function removeSavedWord(wordText: string): SavedWordItem[] {
-  let words = readWordsForMutation();
+export function removeSavedWord(wordText: string, learnerId?: string): SavedWordItem[] {
+  let words = readWordsForMutation(learnerId);
   words = words.filter(w => w.word.toLowerCase() !== wordText.toLowerCase());
 
-  persistSavedWords(words);
+  persistSavedWords(words, learnerId);
 
-  // Remove from Supabase if connected
-  if (supabase) {
-    try {
-      supabase.from('dictionary_user_saved_words').delete().eq('word', wordText).then(() => {}, () => {});
-    } catch { /* A remote-sync failure does not undo the successful local write. */ }
+  // Sync only when the authenticated remote account matches this operation's owner.
+  if (supabase && learnerId) {
+    void (async () => {
+      try {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user?.id !== learnerId) return;
+        await supabase.from('dictionary_user_saved_words').delete().eq('user_id', learnerId).eq('word', wordText);
+      } catch { /* Local changes remain saved if remote sync is unavailable. */ }
+    })();
   }
 
   return words;
 }
 
-export function isWordSaved(wordText: string): boolean {
-  const words = getSavedWords();
+export function isWordSaved(wordText: string, learnerId?: string): boolean {
+  const words = getSavedWords(learnerId);
   return words.some(w => w.word.toLowerCase() === wordText.toLowerCase());
 }
 
-export function rateSavedWord(wordText: string, rating: ReviewRating): SavedWordItem[] {
-  const words = readWordsForMutation();
+export function rateSavedWord(wordText: string, rating: ReviewRating, learnerId?: string): SavedWordItem[] {
+  const words = readWordsForMutation(learnerId);
   const target = words.find(w => w.word.toLowerCase() === wordText.toLowerCase());
   if (!target) return words;
 
@@ -598,16 +599,16 @@ export function rateSavedWord(wordText: string, rating: ReviewRating): SavedWord
   target.lastReviewedAt = new Date().toISOString();
   target.isLearned = target.repetitionCount >= 3;
 
-  persistSavedWords(words);
+  persistSavedWords(words, learnerId);
 
   return [...words];
 }
 
-async function syncSavedWordToSupabase(word: string, notes?: string) {
-  if (!supabase) return;
+async function syncSavedWordToSupabase(word: string, notes?: string, learnerId?: string) {
+  if (!supabase || !learnerId) return;
   try {
     const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return;
+    if (user?.id !== learnerId) return;
 
     await supabase.from('dictionary_user_saved_words').upsert(
       {

@@ -11,7 +11,7 @@ console.log('Review meaning reveal/hide is a native keyboard button with expande
 
 const page=fs.readFileSync('src/views/VocabularyAcademyPage.tsx','utf8');
 assert.ok(page.includes('onWordAdded={() => setSavedVersion(version => version + 1)}'));
-assert.ok(page.includes('<MyVocabularyTab savedVersion={savedVersion}'));
-assert.ok(view.includes('}, [savedVersion]);'));
+assert.ok(page.includes('<MyVocabularyTab learnerId={learnerId} savedVersion={savedVersion}'));
+assert.ok(view.includes('}, [savedVersion, learnerId]);'));
 assert.ok(!page.includes('<MyVocabularyTab key='));
 console.log('Management add/import notifies mounted saved-word list without remounting the review session: PASS');
