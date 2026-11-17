@@ -11356,10 +11356,12 @@ export function addSearchHistory(query: string, userId?: string): string[] {
   return list;
 }
 
-export function clearSearchHistory(userId?: string): void {
-  if (typeof window === 'undefined') return;
-  try { localStorage.setItem(mediaStorageKey(STORAGE_SEARCH_HISTORY_KEY, userId), '[]'); }
-  catch { /* Browser storage is optional. */ }
+export function clearSearchHistory(userId?: string): boolean {
+  if (typeof window === 'undefined') return false;
+  try {
+    localStorage.setItem(mediaStorageKey(STORAGE_SEARCH_HISTORY_KEY, userId), '[]');
+    return true;
+  } catch { return false; }
 }
 
 function readUserVideos(base: string, userId?: string): EducationalVideoItem[] {
