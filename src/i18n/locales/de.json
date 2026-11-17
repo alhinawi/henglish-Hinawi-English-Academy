@@ -2099,7 +2099,7 @@
   "ml.tabBookmarks": "Gespeicherte Lektionen",
   "ml.tabNotes": "Meine persönlichen Notizen",
   "ml.tabQuizzes": "Testverlauf",
-  "ml.tabCerts": "Akkreditierte Zertifikate",
+  "ml.tabCerts": "Zertifikate",
   "ml.level": "Akademisches Niveau",
   "ml.nextGoal": "Nächstes Ziel:",
   "ml.xp": "Erfahrungspunkte (XP)",
@@ -2890,5 +2890,12 @@
   "lw.editRetry": "Sieh dir das Muster an. Zielformulierung: {target}",
   "lw.draftNote": "Schreibe deine Antwort mit mindestens {count} Wörtern. Dieser Editor sendet deinen Entwurf an niemanden.",
   "lw.wordCount": "{count} / {target} Wörter",
-  "rle.scoreUnit": "Punkte"
+  "rle.scoreUnit": "Punkte",
+  "ml.certificateCenter": "Zertifikatsbereich",
+  "ml.certificateNote": "Zertifikate werden erst nach den erforderlichen, serverseitig bewerteten Prüfungen ausgestellt. Öffne den Zertifikatsbereich für Kontostatus, Anforderungen und ausgestellte Zertifikate. Diese Seite stellt keine Zertifikate oder Prüfcodes aus.",
+  "ml.openCertificates": "Zertifikatsbereich öffnen",
+  "ml.practiceNote": "Lernpunkte, kein akademischer Rang.",
+  "ml.streakNote": "Aufeinanderfolgende Tage aus deinen Lernaktivitäten.",
+  "ml.levelNote": "Profilniveau und Lernziel sind kein Einstufungstestergebnis.",
+  "ml.reviewNeeded": "Antworten prüfen und erneut üben"
 }
