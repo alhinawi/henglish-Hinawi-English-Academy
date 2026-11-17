@@ -73,7 +73,7 @@ function toQuizQuestion(q: BankQuestion, t: (k: string) => string): QuizQuestion
   };
 }
 
-export const QuestionBankPanel: React.FC = () => {
+export const QuestionBankPanel: React.FC<{ learnerId?: string }> = ({ learnerId }) => {
   const { t } = useLanguage();
   const qbText = useAppTextMap('massiveQuestionBank');
   const quizText = useAppTextMap('quizzesData');
@@ -86,6 +86,7 @@ export const QuestionBankPanel: React.FC = () => {
   const [type, setType] = useState('all');
   const [count, setCount] = useState(10);
   const [drawn, setDrawn] = useState<BankQuestion[] | null>(null);
+  const [historyError, setHistoryError] = useState(false);
   const [round, setRound] = useState(0);
 
   useEffect(() => {
@@ -127,14 +128,18 @@ export const QuestionBankPanel: React.FC = () => {
   const handleDraw = () => {
     if (!all) return;
     playSound('click');
-    setDrawn(drawQuestions(all, drawOpts));
-    setRound(r => r + 1);
+    try {
+      const questions = drawQuestions(all, drawOpts, learnerId);
+      setDrawn(questions); setRound(r => r + 1); setHistoryError(false);
+    } catch { setHistoryError(true); }
   };
 
   const handleResetHistory = () => {
     playSound('click');
-    resetServedQuestions(drawOpts);
-    setDrawn(null);
+    try {
+      resetServedQuestions(drawOpts, learnerId);
+      setDrawn(null); setHistoryError(false);
+    } catch { setHistoryError(true); }
   };
 
   const chip = (active: boolean) =>
@@ -169,6 +174,7 @@ export const QuestionBankPanel: React.FC = () => {
         {t('qb.bankInfoPost')}
       </div>
 
+      {historyError && <p role="alert" className="rounded-xl border border-amber-300/30 bg-amber-300/10 p-3 text-xs leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {/* Filters */}
       <div className="space-y-2.5">
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
