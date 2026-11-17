@@ -4,7 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Flame } from 'lucide-react';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
 const DURATION = 60;
@@ -13,6 +13,7 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'word-sprint', title: t('ah.gameWordSprint'), tagline: t('arc.sprintIntro') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [pool, setPool] = useState<WordPair[]>([]);
   const [current, setCurrent] = useState<WordPair | null>(null);

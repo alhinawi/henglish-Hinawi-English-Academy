@@ -4,7 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, shuffle, wordAccuracy, SentencePair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound, speakEnglish } from '../../../utils/audio';
 
 const META: ArcadeGameMeta = {
@@ -19,6 +19,7 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
   const { t } = useLanguage();
   const meta = { ...META, title: t('lc.title'), tagline: t('lc.tagline') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
   const [rounds, setRounds] = useState<SentencePair[]>([]);
   const [round, setRound] = useState(0);

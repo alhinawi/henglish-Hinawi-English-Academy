@@ -4,7 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, normalizeTyped, WordPair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound, speakEnglish } from '../../../utils/audio';
 
 const ROUNDS = 10;
@@ -13,6 +13,7 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'spelling-dash', title: t('ah.gameSpellingDash'), tagline: t('arc.spellIntro') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [rounds, setRounds] = useState<WordPair[]>([]);
   const [round, setRound] = useState(0);

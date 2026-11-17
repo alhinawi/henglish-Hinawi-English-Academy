@@ -579,7 +579,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 19. Games & Interactive Practice */}
                 {currentRoute === 'games' && (
-                  <GamesPage />
+                  <GamesPage key={authUser?.id || 'guest'} />
                 )}
 
                 {/* 20. Resources & Cheat Sheets */}

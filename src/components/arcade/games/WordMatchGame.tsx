@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound } from '../../../utils/audio';
 
 const PAIRS = 8;
@@ -12,6 +12,7 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'word-match', title: t('ah.gameWordMatch'), tagline: t('arc.matchIntro') };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [left, setLeft] = useState<WordPair[]>([]);
   const [right, setRight] = useState<string[]>([]);
