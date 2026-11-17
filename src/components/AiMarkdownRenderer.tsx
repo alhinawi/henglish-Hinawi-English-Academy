@@ -1,3 +1,5 @@
+import { LessonSpeechButton } from './LessonSpeechButton';
+import { useOwnedClipboard } from '../hooks/useOwnedClipboard';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SAFE EDUCATIONAL MARKDOWN RENDERER
 // Handles Headings, Tables, Code Blocks, LTR English Isolation, & Platform Deep-Links
@@ -6,8 +8,8 @@
 import React from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
-import { Volume2, ExternalLink, Copy, Check } from 'lucide-react';
-import { speakEnglishVoice, playSound } from '../utils/audio';
+import { ExternalLink, Copy, Check } from 'lucide-react';
+import { playSound } from '../utils/audio';
 
 interface AiMarkdownRendererProps {
   content: string;
@@ -16,17 +18,9 @@ interface AiMarkdownRendererProps {
 
 export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content, onNavigate }) => {
   const { t } = useLanguage();
-  const [copiedIndex, setCopiedIndex] = React.useState<number | null>(null);
-
+  const { copy, copiedKey, copyFailed } = useOwnedClipboard(content);
   const handleCopy = async (text: string, index: number) => {
-    try {
-      await navigator.clipboard.writeText(text);
-    } catch {
-      return;
-    }
-    playSound('click');
-    setCopiedIndex(index);
-    setTimeout(() => setCopiedIndex(null), 2000);
+    if (await copy(text, String(index))) playSound('click');
   };
 
   // Helper to determine if a string is predominantly English
@@ -185,20 +179,15 @@ export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content,
               <span className="font-mono font-bold text-[#41e7ff] uppercase">
                 {codeBlockLang || t('md.expression')}
               </span>
-              <div className="flex shrink-0 items-center gap-2">
-                <button
-                  onClick={() => speakEnglishVoice(codeText)}
-                  className="p-1 hover:text-[#ffd166] text-[#b9b6d5] transition-colors cursor-pointer"
-                  title={t('md.listen')}
-                >
-                  <Volume2 className="w-3.5 h-3.5" />
-                </button>
+              <div className="flex flex-wrap items-start gap-2">
+                <LessonSpeechButton key={codeText} text={codeText} label={t('md.listen')} iconOnly
+                  className="p-1 hover:text-[#ffd166] text-[#b9b6d5] transition-colors cursor-pointer" />
                 <button
                   onClick={() => handleCopy(codeText, codeIndex)}
                   className="flex items-center gap-1 px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-[#b9b6d5] hover:text-white transition-all cursor-pointer"
                   title={t('md.copyText')}
                 >
-                  {copiedIndex === codeIndex ? (
+                  {copiedKey === String(codeIndex) ? (
                     <>
                       <Check className="w-3 h-3 text-emerald-400" />
                       <span className="text-[10px] text-emerald-400">{t('md.copied')}</span>
@@ -335,5 +324,5 @@ export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content,
     flushTable(lines.length);
   }
 
-  return <div className="space-y-1">{renderedElements}</div>;
+  return <div className="space-y-1">{copyFailed && <p role="status" className="text-sm text-amber-200">{t('lw.copyFailed')}</p>}{renderedElements}</div>;
 };
