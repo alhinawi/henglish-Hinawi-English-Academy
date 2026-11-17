@@ -7,3 +7,5 @@ const newCycleFirst=second[2].id,third=draw(pool,opts);assert.equal(third.length
 reset();assert.equal(draw(pool,{count:99}).length,5);assert.equal(new Set(draw(pool,{count:99}).map(q=>q.id)).size,5);assert.equal(draw(pool,{count:0}).length,0);assert.equal(draw(pool,{count:3,skill:'grammar'}).length,0);
 reset();draw(pool,opts);const different=draw(pool,{count:5,skill:'vocabulary',level:'all'});assert.equal(different.length,5);assert.equal(JSON.stringify(pool),before);
 console.log('Question cycles serve unseen tail before repeat, no duplicate within draw, pool isolation and source preservation: PASS');
+
+const panel=fs.readFileSync('src/components/QuestionBankPanel.tsx','utf8'),page=fs.readFileSync('src/views/QuizzesPage.tsx','utf8');assert(panel.includes('onComplete={(score, total) => onRecordScore?.(`question-bank:${skill}:${level}:${type}`, score, total)}'));assert(page.includes('learnerId={learnerId} onRecordScore={onRecordScore}'));console.log('Question-bank completion reaches existing learner progress callback with pool-specific ID and actual score/total: PASS');

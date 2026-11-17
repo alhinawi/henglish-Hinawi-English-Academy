@@ -302,7 +302,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore, learner
       {/* VERIFIED QUESTION BANK PANEL */}
       {activeTab === 'static' && (
         <section>
-          <QuestionBankPanel key={learnerId || 'guest'} learnerId={learnerId} />
+          <QuestionBankPanel key={learnerId || 'guest'} learnerId={learnerId} onRecordScore={onRecordScore} />
         </section>
       )}
 

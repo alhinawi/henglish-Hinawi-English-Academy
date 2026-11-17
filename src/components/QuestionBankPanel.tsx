@@ -73,7 +73,11 @@ function toQuizQuestion(q: BankQuestion, t: (k: string) => string): QuizQuestion
   };
 }
 
-export const QuestionBankPanel: React.FC<{ learnerId?: string }> = ({ learnerId }) => {
+interface QuestionBankPanelProps {
+  learnerId?: string;
+  onRecordScore?: (quizId: string, score: number, total: number) => void;
+}
+export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId, onRecordScore }) => {
   const { t } = useLanguage();
   const qbText = useAppTextMap('massiveQuestionBank');
   const quizText = useAppTextMap('quizzesData');
@@ -241,6 +245,7 @@ export const QuestionBankPanel: React.FC<{ learnerId?: string }> = ({ learnerId 
           key={`qbank-${round}`}
           questions={drawn.map(q => ({ ...toQuizQuestion(q, t), explanation: tx(q.explanationAr ?? '') }))}
           quizTitle={`${t('qb.quizTitle')} - ${drawn.length} ${t('qb.questions')}`}
+          onComplete={(score, total) => onRecordScore?.(`question-bank:${skill}:${level}:${type}`, score, total)}
         />
       )}
     </div>
