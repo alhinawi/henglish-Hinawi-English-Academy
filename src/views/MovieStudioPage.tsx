@@ -156,8 +156,10 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
   // Handle Search Submission
   const handlePerformSearch = (q: string) => {
     if (q.trim()) {
-      addSearchHistory(q, learnerId);
-      setSearchHistory(getSearchHistory(learnerId));
+      try {
+        setSearchHistory(addSearchHistory(q, learnerId));
+        setBookmarkSaveFailed(false);
+      } catch { setBookmarkSaveFailed(true); }
     }
     setSearchQuery(q);
   };
@@ -167,8 +169,10 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
     if (!ytQuery.trim()) return;
     setIsYtSearching(true);
     playSound('click');
-    addSearchHistory(ytQuery, learnerId);
-    setSearchHistory(getSearchHistory(learnerId));
+    try {
+      setSearchHistory(addSearchHistory(ytQuery, learnerId));
+      setBookmarkSaveFailed(false);
+    } catch { setBookmarkSaveFailed(true); }
 
     try {
       const res = await searchYouTubeVideos(ytQuery, token);
