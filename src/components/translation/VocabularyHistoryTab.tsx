@@ -1,3 +1,4 @@
+import { loadSrsCardsFromStorage } from '../../services/spacedRepetitionService';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION HISTORY & SAVED VOCABULARY TAB
 // Searchable history logs, custom decks, SM-2 SRS integration, and reuse
@@ -69,7 +70,9 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
   const [isCreatingCollection, setIsCreatingCollection] = useState(false);
   const [collectionSaveFailed, setCollectionSaveFailed] = useState(false);
 
-  const [historyWriteFailed, setHistoryWriteFailed] = useState(false);
+  const [storageWriteFailed, setStorageWriteFailed] = useState(false);
+
+  const scheduledWords = new Set(loadSrsCardsFromStorage(learnerId).map(card => card.word.toLowerCase()));
 
   // Filtered History
   const filteredHistory = historyItems.filter(item => {
@@ -94,31 +97,32 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
   const handleToggleFav = (id: string) => {
     playSound('click');
-    setHistoryWriteFailed(false);
+    setStorageWriteFailed(false);
     try { setHistoryItems(toggleHistoryFavorite(id, learnerId)); }
-    catch { setHistoryWriteFailed(true); }
+    catch { setStorageWriteFailed(true); }
   };
 
   const handleDeleteHistory = (id: string) => {
     playSound('click');
-    setHistoryWriteFailed(false);
+    setStorageWriteFailed(false);
     try { setHistoryItems(deleteHistoryItem(id, learnerId)); }
-    catch { setHistoryWriteFailed(true); }
+    catch { setStorageWriteFailed(true); }
   };
 
   const handleClearAllHistory = () => {
     if (confirm(t('vh.confirmClear'))) {
       playSound('click');
-      setHistoryWriteFailed(false);
+      setStorageWriteFailed(false);
       try { clearTranslationHistory(learnerId); setHistoryItems([]); }
-      catch { setHistoryWriteFailed(true); }
+      catch { setStorageWriteFailed(true); }
     }
   };
 
   const handleDeleteVocab = (id: string) => {
     playSound('click');
-    const updated = deleteSavedVocabularyCard(id, learnerId);
-    setVocabCards(updated);
+    setStorageWriteFailed(false);
+    try { setVocabCards(deleteSavedVocabularyCard(id, learnerId)); }
+    catch { setStorageWriteFailed(true); }
   };
 
   const handleCreateCollection = (e: React.FormEvent) => {
@@ -140,7 +144,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
   return (
     <div className="space-y-6 text-right">
-      {historyWriteFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
+      {storageWriteFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {/* Tab Switcher */}
       <div className="flex items-center justify-between p-2 bg-[#0e0c26] rounded-2xl border border-white/10 shadow-lg">
         <div className="flex items-center gap-2">
@@ -436,8 +440,8 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                   </div>
 
                   <div className="flex flex-wrap items-start justify-between gap-3 pt-2 border-t border-white/5 text-xs">
-                    <span className="text-[10px] text-[#10b981] font-medium">
-                      {t('vh.srsActive')}
+                    <span className="max-w-48 text-[10px] leading-6 text-[#b9b6d5] font-medium">
+                      {t(scheduledWords.has(card.wordOrPhrase.toLowerCase()) ? 'vh.srsActive' : 'vh.srsMissing')}
                     </span>
                     <LessonSpeechButton text={card.wordOrPhrase} label={t('vh.listen')} iconOnly
                       className="p-1 rounded-md text-[#b9b6d5] hover:text-[#41e7ff] cursor-pointer" />
