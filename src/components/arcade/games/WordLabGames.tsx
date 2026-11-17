@@ -36,7 +36,7 @@ export function buildWordLabRounds(id: LabId, level: string, tr: (s: string) => 
   const today = new Date();
   const seed = Number(`${today.getFullYear()}${String(today.getMonth() + 1).padStart(2, '0')}${String(today.getDate()).padStart(2, '0')}`);
   const arrange = <T,>(arr: T[]) => id === 'daily-quest' ? seeded(arr, seed) : shuffle(arr);
-  if (id === 'verb-workshop') return shuffle(VERB_TOOLKIT).slice(0, 10).map(v => ({ kind: 'verb', prompt: v.v1, clue: v.meaningAr, answer: v.v2, extra: v.v3, detail: v.example, level: 'V2 + V3' }));
+  if (id === 'verb-workshop') return shuffle(VERB_TOOLKIT.filter((verb, index, all) => all.findIndex(entry => entry.v1 === verb.v1) === index)).slice(0, 10).map(v => ({ kind: 'verb', prompt: v.v1, clue: v.meaningAr, answer: v.v2, extra: v.v3, detail: v.example, level: 'V2 + V3' }));
   if (id === 'mistake-lab') return shuffle(MISTAKE_HUNTER_CASES).map(q => ({ kind: 'choice', prompt: q.sentence, clue: tr('wl.clue.sentenceCorrect'), answer: q.hasError ? tr('wl.opt.hasError') : tr('wl.opt.valid'), options: [tr('wl.opt.valid'), tr('wl.opt.hasError')], detail: `${q.correction} • ${q.explanationAr}`, level: 'Future perfect' }));
   return arrange(pool).slice(0, id === 'boss-run' ? 15 : id === 'letter-rescue' ? 5 : 10).map((w, i) => {
     const base = { prompt: w.word, clue: w.meaningAr, answer: w.word.toLowerCase(), detail: `${w.exampleEn} • ${w.exampleAr}`, level: w.level };
