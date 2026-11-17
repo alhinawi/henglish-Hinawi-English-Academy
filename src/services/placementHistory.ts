@@ -21,3 +21,17 @@ export function loadPlacementHistory(key: string): PlacementAttempt[] {
       Number.isFinite(v.score) && Number.isFinite(v.total) && v.total > 0 && v.score >= 0 && v.score <= v.total).slice(0, 5);
   } catch { return []; }
 }
+
+/** Read current history before saving. Never replace unreadable or damaged bytes. */
+export function savePlacementAttempt(key: string, attempt: PlacementAttempt): PlacementAttempt[] {
+  const raw = localStorage.getItem(key);
+  const current: unknown = raw === null ? [] : JSON.parse(raw);
+  if (!Array.isArray(current) || current.some(v => !v || typeof v !== 'object' ||
+    typeof v.date !== 'string' || !['A1','A2','B1','B2','C1','C2'].includes(v.level) ||
+    !Number.isFinite(v.score) || !Number.isFinite(v.total) || v.total <= 0 || v.score < 0 || v.score > v.total)) {
+    throw new Error('Invalid placement history');
+  }
+  const updated = [attempt, ...current].slice(0, 5);
+  localStorage.setItem(key, JSON.stringify(updated));
+  return updated;
+}
