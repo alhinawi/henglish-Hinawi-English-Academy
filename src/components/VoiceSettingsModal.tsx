@@ -185,6 +185,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
             ].map((f) => (
               <button
                 key={f.id}
+                aria-pressed={filter === f.id}
                 onClick={() => setFilter(f.id)}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
                   filter === f.id
@@ -207,16 +208,17 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                 return (
                   <div
                     key={voice.id}
-                    onClick={() => handleSelectVoice(voice)}
                     className={`p-3.5 rounded-2xl border text-right transition-all cursor-pointer flex items-start justify-between gap-3 relative overflow-hidden group ${
                       isSelected
                         ? "bg-gradient-to-r from-[#ffd166]/20 via-[#1a1838] to-[#41e7ff]/20 border-[#ffd166] shadow-lg ring-2 ring-[#ffd166]/40 scale-[1.01]"
                         : "bg-white/5 hover:bg-white/10 border-white/10 text-[#dedbf4]"
                     }`}
                   >
-                    <div className="flex items-start gap-3 flex-1 min-w-0">
+                    <button type="button" onClick={() => handleSelectVoice(voice)}
+                      aria-label={voice.name} aria-pressed={isSelected}
+                      className="flex items-start gap-3 flex-1 min-w-0 text-right rounded-lg cursor-pointer">
                       {/* Avatar Icon */}
-                      <div
+                      <span
                         className={`w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0 border ${
                           isSelected
                             ? "bg-[#ffd166] text-[#0c0b20] border-[#ffd166] font-black shadow-md"
@@ -224,11 +226,11 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                         }`}
                       >
                         <User className="w-5 h-5" />
-                      </div>
+                      </span>
 
                       {/* Info */}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
+                      <span className="flex-1 min-w-0">
+                        <span className="flex items-center gap-2">
                           <span className="font-black text-sm text-white">
                             {txText(appText, voice.nameAr)} ({voice.name})
                           </span>
@@ -238,24 +240,26 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                               {t('vs.selected')}
                             </span>
                           )}
-                        </div>
+                        </span>
 
-                        <div className="flex items-center gap-2 mt-1 text-[11px] text-[#b9b6d5]">
+                        <span className="flex items-center gap-2 mt-1 text-[11px] text-[#b9b6d5]">
                           <span className="px-2 py-0.5 rounded-md bg-white/10 text-[#41e7ff] font-bold text-[10px]">
                             {voice.styleTag}
                           </span>
                           <span>•</span>
                           <span>{txText(appText, voice.accentAr)}</span>
-                        </div>
+                        </span>
 
-                        <p className="text-[11px] text-[#dedbf4]/80 mt-1.5 line-clamp-2 leading-relaxed">
+                        <span className="text-[11px] text-[#dedbf4]/80 mt-1.5 line-clamp-2 leading-relaxed">
                           {txText(appText, voice.descriptionAr)}
-                        </p>
-                      </div>
-                    </div>
+                        </span>
+                      </span>
+                    </button>
 
                     {/* Preview / Listen Button */}
-                    <button
+                    <button type="button"
+                      aria-label={`${isPlaying ? t('vs.stop') : t('vs.preview')}: ${voice.name}`}
+                      aria-pressed={isPlaying}
                       onClick={(e) => handlePlayVoicePreview(voice, e)}
                       className={`p-2 rounded-xl transition-all shrink-0 cursor-pointer flex items-center justify-center ${
                         isPlaying
@@ -298,6 +302,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
                   ].map((item) => (
                     <button
                       key={item.speed}
+                      aria-pressed={settings.speed === item.speed}
                       onClick={() => handleSpeedChange(item.speed)}
                       className={`px-2.5 py-1 rounded-lg border text-center font-bold text-[11px] transition-all cursor-pointer ${
                         settings.speed === item.speed
@@ -314,6 +319,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
               {/* Mute and Done Buttons */}
               <div className="flex items-center gap-2 w-full sm:w-auto justify-end">
                 <button
+                  aria-pressed={settings.isMuted}
                   onClick={handleToggleMute}
                   className={`px-3 py-1.5 rounded-xl border flex items-center gap-1.5 text-xs font-bold transition-all cursor-pointer ${
                     settings.isMuted
