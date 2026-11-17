@@ -19,12 +19,20 @@ export function loadListeningProgress(key: string): ListeningSaved {
   } catch { return { solved: {}, awarded: [], storageUnreadable: true }; }
 }
 
+export function mergeListeningProgress(current: ListeningSaved, next: ListeningSaved): ListeningSaved {
+  const solved = { ...current.solved };
+  for (const [id, tasks] of Object.entries(next.solved)) solved[id] = [...new Set([...(solved[id] || []), ...tasks])];
+  return { ...(current.storageUnreadable || next.storageUnreadable ? { storageUnreadable: true } : {}), solved, awarded: [...new Set([...current.awarded, ...next.awarded])] };
+}
+
 export function saveListeningProgress(key: string, saved: ListeningSaved): boolean {
   if (saved.storageUnreadable) return false;
   try {
     const raw = localStorage.getItem(key);
     if (raw !== null && !readable(JSON.parse(raw))) return false;
-    localStorage.setItem(key, JSON.stringify({ solved: saved.solved, awarded: saved.awarded }));
+    const merged = mergeListeningProgress(loadListeningProgress(key), saved);
+    if (merged.storageUnreadable) return false;
+    localStorage.setItem(key, JSON.stringify({ solved: merged.solved, awarded: merged.awarded }));
     return true;
   } catch { return false; }
 }
