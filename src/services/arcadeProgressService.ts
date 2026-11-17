@@ -9,6 +9,7 @@ import { useAuth } from '../context/AuthContext';
 
 export interface ArcadeProgress {
   storageFailed?: boolean;
+  storageUnreadable?: boolean;
   history: { id: string; score: number; xp: number; at: number }[];
   xp: number;
   totalPlays: number;
@@ -60,7 +61,7 @@ function read(key: string): ArcadeProgress {
     const raw = localStorage.getItem(key);
     if (!raw) return { ...EMPTY };
     const p = JSON.parse(raw) as Partial<ArcadeProgress>;
-    if (!p || typeof p !== 'object' || Array.isArray(p)) return { ...EMPTY };
+    if (!p || typeof p !== 'object' || Array.isArray(p)) return { ...EMPTY, storageUnreadable: true };
     const nonNegative = (v: unknown): v is number => typeof v === 'number' && Number.isFinite(v) && v >= 0;
     const counts = (v: unknown): Record<string, number> => v && typeof v === 'object' && !Array.isArray(v)
       ? Object.fromEntries(Object.entries(v).filter(([, count]) => nonNegative(count))) : {};
@@ -74,7 +75,7 @@ function read(key: string): ArcadeProgress {
       streakDays: nonNegative(p.streakDays) ? p.streakDays : 0,
     };
   } catch {
-    return { ...EMPTY };
+    return { ...EMPTY, storageUnreadable: true };
   }
 }
 
@@ -86,10 +87,20 @@ function getState(key: string): ArcadeProgress {
 const listeners = new Set<() => void>();
 
 function persist(key: string, state: ArcadeProgress): boolean {
-  const { storageFailed: previousFailure, ...durable } = state;
+  const { storageFailed: previousFailure, storageUnreadable: previousUnreadable, ...durable } = state;
   let saved = false;
-  try { localStorage.setItem(key, JSON.stringify(durable)); saved = true; } catch { /* Keep this visit usable, but disclose the unsaved progress. */ }
-  states.set(key, { ...durable, storageFailed: !saved });
+  let unreadable = false;
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw !== null) {
+      try {
+        const parsed: unknown = JSON.parse(raw);
+        unreadable = !parsed || typeof parsed !== 'object' || Array.isArray(parsed);
+      } catch { unreadable = true; }
+    }
+    if (!unreadable) { localStorage.setItem(key, JSON.stringify(durable)); saved = true; }
+  } catch { /* Keep this visit usable without claiming device persistence. */ }
+  states.set(key, { ...durable, storageFailed: !saved, storageUnreadable: unreadable });
   listeners.forEach((l) => l());
   return saved;
 }

@@ -5,6 +5,7 @@ import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShel
 import { Flame } from 'lucide-react';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
 
 const DURATION = 60;
@@ -12,6 +13,7 @@ const DURATION = 60;
 export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'word-sprint', title: t('ah.gameWordSprint'), tagline: t('arc.sprintIntro') };
+  const { scheduleTransition, cancelTransition } = useArcadeTimeout();
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
@@ -34,6 +36,7 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
   };
 
   const start = () => {
+    cancelTransition();
     const words = allWordPairs();
     setPool(words);
     setScore(0);
@@ -48,6 +51,7 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
     timerRef.current = setInterval(() => {
       setTimeLeft((t) => {
         if (t <= 1) {
+          cancelTransition();
           if (timerRef.current) clearInterval(timerRef.current);
           setEnd(recordGameResult(META.id, score));
           setPhase('end');
@@ -76,10 +80,11 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
       playSound('wrong');
       setCombo(0);
     }
-    setTimeout(() => nextRound(pool), ok ? 250 : 700);
+    scheduleTransition(() => nextRound(pool), ok ? 250 : 700);
   };
 
   const quit = () => {
+    cancelTransition();
     if (timerRef.current) clearInterval(timerRef.current);
     onExit();
   };
