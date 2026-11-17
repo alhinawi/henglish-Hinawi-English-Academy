@@ -14,7 +14,7 @@ import {
   CEFRLevel,
 } from "../types";
 import { 
-  loadUserProgressFromDatabase, 
+  readUserProgressFromDatabase,
   saveUserProgressToDatabase, 
   migrateLocalProgressToSupabase,
   PersistentProgressPayload 
@@ -239,8 +239,8 @@ export function useProgress(activeUserId?: string) {
     let cancelled = false;
     (async () => {
       const remote = await apiGetProgress(token);
-      if (cancelled) return;
-      if (remote && remote.progress && typeof remote.progress === 'object') {
+      if (cancelled || !remote) return;
+      if (remote.progress && typeof remote.progress === 'object') {
         // Merge only this account's local record with its remote record.
         // Guest/legacy and other accounts are separate storage owners.
         const r = remote.progress as Partial<UserProgressState>;
@@ -323,8 +323,10 @@ export function useProgress(activeUserId?: string) {
     let isMounted = true;
     async function syncDb() {
       if (!activeUserId) return;
-      const dbData = await loadUserProgressFromDatabase(activeUserId);
-      if (dbData && isMounted) {
+      const result = await readUserProgressFromDatabase(activeUserId);
+      if (!isMounted || result.status === 'unavailable') return;
+      const dbData = result.status === 'ready' ? result.progress : null;
+      if (dbData) {
         setProgress(prev => ({
           ...prev,
           xp: Math.max(prev.xp || 0, dbData.totalXp || 0),

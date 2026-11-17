@@ -23,7 +23,7 @@ const context={exports:{},console,Date,localStorage,window:{},setTimeout:fn=>{ti
  if(path.endsWith('useBadges'))return {useBadges:()=>({badges:[]})};
  if(path.endsWith('studyStreak'))return {addStudyDay:()=>({})};
  if(path.endsWith('henglishApi'))return {getHenglishApiToken:()=>token,apiGetProgress:t=>deferred(apiReads,t),apiPutProgress:async(t,p)=>apiWrites.push({t,p})};
- if(path.endsWith('progressSyncService'))return {loadUserProgressFromDatabase:id=>deferred(dbReads,id),saveUserProgressToDatabase:async(id,p)=>dbWrites.push({id,p}),migrateLocalProgressToSupabase:async(id,p)=>migrations.push({id,p})};
+ if(path.endsWith('progressSyncService'))return {readUserProgressFromDatabase:id=>deferred(dbReads,id),saveUserProgressToDatabase:async(id,p)=>dbWrites.push({id,p}),migrateLocalProgressToSupabase:async(id,p)=>migrations.push({id,p})};
  throw Error(path);
 }};
 vm.runInNewContext(transpile('src/utils/useProgress.ts'),context);
@@ -35,13 +35,14 @@ const tick=async()=>{await new Promise(setImmediate);render()};
  result.markLessonComplete('lesson-once');render();const firstXp=result.userProfile.xp;result.markLessonComplete('lesson-once');render();assert.equal(result.userProfile.xp,firstXp);assert.equal(result.progress.completedLessons.length,1);
  result.recordQuizScore('A-only',4,5);render();const staleA=result.recordQuizScore;assert.equal(result.progress.quizScores['A-only'].score,4);
  token='token-B';render('B');assert.deepEqual(Object.keys(result.progress.quizScores),[]);staleA('stale-A',5,5);render();assert.deepEqual(Object.keys(result.progress.quizScores),[]);
- apiReads[0].resolve({progress:{quizScores:{'late-A':100},xp:900}});dbReads[0].resolve({quizScores:{'late-db-A':100},totalXp:900,completedLessons:[]});await tick();assert.equal(result.progress.xp,0);assert.equal(apiWrites.length,0);assert.equal(migrations.length,0);
- apiReads[1].resolve({progress:{quizScores:{'remote-B':60},xp:10}});dbReads[1].resolve({quizScores:{'db-B':80},totalXp:15,completedLessons:[]});await tick();assert.equal(result.progress.quizScores['remote-B'],60);assert.equal(result.progress.quizScores['db-B'],80);assert.equal(result.progress.xp,15);
+ apiReads[0].resolve({progress:{quizScores:{'late-A':100},xp:900}});dbReads[0].resolve({status:'ready',progress:{quizScores:{'late-db-A':100},totalXp:900,completedLessons:[]}});await tick();assert.equal(result.progress.xp,0);assert.equal(apiWrites.length,0);assert.equal(migrations.length,0);
+ apiReads[1].resolve({progress:{quizScores:{'remote-B':60},xp:10}});dbReads[1].resolve({status:'ready',progress:{quizScores:{'db-B':80},totalXp:15,completedLessons:[]}});await tick();assert.equal(result.progress.quizScores['remote-B'],60);assert.equal(result.progress.quizScores['db-B'],80);assert.equal(result.progress.xp,15);
  for(const w of apiWrites){assert.equal(w.t,'token-B');assert(!('A-only' in w.p.quizScores))}for(const w of dbWrites){assert.equal(w.id,'B');assert(!('A-only' in w.p.quizScores))}
  token=null;render(undefined);assert.equal(result.progress.quizScores.legacy,75);assert(!('remote-B' in result.progress.quizScores));assert.equal(timers.size,0);
  token='token-A';render('A');assert.equal(result.progress.quizScores['A-only'].score,4);assert(!('late-A' in result.progress.quizScores));assert(!('legacy' in result.progress.quizScores));
  result.recordQuizScore('during-hydration',3,5);render();
- apiReads[2].resolve(null);dbReads[2].resolve(null);await tick();assert.equal(migrations.at(-1).id,'A');assert.equal(migrations.at(-1).p.quizScores['A-only'].score,4);assert(!('legacy' in migrations.at(-1).p.quizScores));assert.equal(migrations.at(-1).p.quizScores['during-hydration'].score,3);assert.equal(apiWrites.at(-1).p.quizScores['during-hydration'].score,3);
+ apiReads[2].resolve({progress:null});dbReads[2].resolve({status:'empty'});await tick();assert.equal(migrations.at(-1).id,'A');assert.equal(migrations.at(-1).p.quizScores['A-only'].score,4);assert(!('legacy' in migrations.at(-1).p.quizScores));assert.equal(migrations.at(-1).p.quizScores['during-hydration'].score,3);assert.equal(apiWrites.at(-1).p.quizScores['during-hydration'].score,3);
  const savedA=store.get(key('A'));token='token-B';render('B');result.resetAllProgress();render();assert.equal(store.get(key('A')),savedA);assert.equal(store.get(legacy),'{}');assert.equal(JSON.parse(store.get(guest)).quizScores.legacy,75);
+ const writesBefore=apiWrites.length,migrationsBefore=migrations.length,dbBefore=dbWrites.length;token='token-failure';render('failure');result.recordQuizScore('safe-local',2,3);render();apiReads.at(-1).resolve(null);dbReads.at(-1).resolve({status:'unavailable'});await tick();for(const fn of timers.values())fn();assert.equal(apiWrites.length,writesBefore);assert.equal(migrations.length,migrationsBefore);assert.equal(dbWrites.length,dbBefore);assert.equal(result.progress.quizScores['safe-local'].score,2);
  console.log('Account/guest keys, legacy recovery copy, isolated scores, synchronous switch, stale reads/callbacks, hydration guards, same-account migration and reset scope: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1});
