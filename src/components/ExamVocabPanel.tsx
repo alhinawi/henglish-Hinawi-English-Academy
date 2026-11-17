@@ -162,8 +162,8 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
   );
 
   const visible = useMemo(
-    () => sortExamVocab(filterExamVocab(entries, query, level, topic, pos), sortMode),
-    [entries, query, level, topic, pos, sortMode]
+    () => sortExamVocab(filterExamVocab(entries, query, level, topic, pos, txMap), sortMode),
+    [entries, query, level, topic, pos, sortMode, txMap]
   );
 
   useEffect(() => {
