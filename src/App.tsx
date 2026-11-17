@@ -642,7 +642,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 26. Learn English Through Movies Studio */}
                 {currentRoute === 'movies' && (
-                  <MovieStudioPage onNavigate={handleNavigate} />
+                  <MovieStudioPage key={authUser?.id || 'guest'} learnerId={authUser?.id} onNavigate={handleNavigate} />
                 )}
 
                 {/* 27. Complete AI Translation Studio */}

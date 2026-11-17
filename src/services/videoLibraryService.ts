@@ -1,3 +1,4 @@
+import { mediaStorageKey, readMediaList } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - UNLIMITED DYNAMIC VIDEO & MOVIE LIBRARY SERVICE
 // Dynamic discovery, 20 video categories, multi-filter search, and Supabase sync
@@ -11339,81 +11340,65 @@ async function syncVideoToSupabase(v: EducationalVideoItem) {
 /**
  * User Video Features: Search History, Recently Watched, Bookmarks
  */
-export function getSearchHistory(): string[] {
+export function getSearchHistory(userId?: string): string[] {
   if (typeof window === 'undefined') return [];
-  try {
-    const raw = localStorage.getItem(STORAGE_SEARCH_HISTORY_KEY);
-    return raw ? JSON.parse(raw) : [];
-  } catch {
-    return [];
-  }
+  return readMediaList(STORAGE_SEARCH_HISTORY_KEY, userId)
+    .filter((value): value is string => typeof value === 'string' && !!value.trim()).slice(0, 10);
 }
 
-export function addSearchHistory(query: string): string[] {
-  if (!query.trim()) return getSearchHistory();
-  let list = getSearchHistory();
+export function addSearchHistory(query: string, userId?: string): string[] {
+  if (!query.trim()) return getSearchHistory(userId);
+  let list = getSearchHistory(userId);
   list = [query.trim(), ...list.filter(q => q.toLowerCase() !== query.trim().toLowerCase())].slice(0, 10);
   try {
-    localStorage.setItem(STORAGE_SEARCH_HISTORY_KEY, JSON.stringify(list));
-  } catch {
-    // quiet fallback
-  }
+    localStorage.setItem(mediaStorageKey(STORAGE_SEARCH_HISTORY_KEY, userId), JSON.stringify(list));
+  } catch { /* Browser storage is optional. */ }
   return list;
 }
 
-export function clearSearchHistory(): void {
+export function clearSearchHistory(userId?: string): void {
   if (typeof window === 'undefined') return;
-  localStorage.removeItem(STORAGE_SEARCH_HISTORY_KEY);
+  try { localStorage.setItem(mediaStorageKey(STORAGE_SEARCH_HISTORY_KEY, userId), '[]'); }
+  catch { /* Browser storage is optional. */ }
 }
 
-export function getRecentlyWatched(): EducationalVideoItem[] {
+function readUserVideos(base: string, userId?: string): EducationalVideoItem[] {
+  return readMediaList(base, userId)
+    .filter((value): value is EducationalVideoItem => !!value && typeof value === 'object' &&
+      typeof (value as EducationalVideoItem).youtubeId === 'string')
+    .map(applyMovieTranscriptCorrections);
+}
+
+export function getRecentlyWatched(userId?: string): EducationalVideoItem[] {
   if (typeof window === 'undefined') return [];
-  try {
-    const raw = localStorage.getItem(STORAGE_RECENTLY_WATCHED_KEY);
-    return raw ? (JSON.parse(raw) as EducationalVideoItem[]).map(applyMovieTranscriptCorrections) : [];
-  } catch {
-    return [];
-  }
+  return readUserVideos(STORAGE_RECENTLY_WATCHED_KEY, userId);
 }
 
-export function addRecentlyWatched(video: EducationalVideoItem): void {
-  let list = getRecentlyWatched();
+export function addRecentlyWatched(video: EducationalVideoItem, userId?: string): void {
+  let list = getRecentlyWatched(userId);
   list = [video, ...list.filter(v => v.youtubeId !== video.youtubeId)].slice(0, 12);
   try {
-    localStorage.setItem(STORAGE_RECENTLY_WATCHED_KEY, JSON.stringify(list));
-  } catch {
-    // quiet fallback
-  }
+    localStorage.setItem(mediaStorageKey(STORAGE_RECENTLY_WATCHED_KEY, userId), JSON.stringify(list));
+  } catch { /* Browser storage is optional. */ }
 }
 
-export function getSavedVideos(): EducationalVideoItem[] {
+export function getSavedVideos(userId?: string): EducationalVideoItem[] {
   if (typeof window === 'undefined') return [];
-  try {
-    const raw = localStorage.getItem(STORAGE_SAVED_VIDEOS_KEY);
-    return raw ? (JSON.parse(raw) as EducationalVideoItem[]).map(applyMovieTranscriptCorrections) : [];
-  } catch {
-    return [];
-  }
+  return readUserVideos(STORAGE_SAVED_VIDEOS_KEY, userId);
 }
 
-export function toggleSaveVideo(video: EducationalVideoItem): { isSaved: boolean; list: EducationalVideoItem[] } {
-  let list = getSavedVideos();
+export function toggleSaveVideo(video: EducationalVideoItem, userId?: string): { isSaved: boolean; list: EducationalVideoItem[] } {
+  let list = getSavedVideos(userId);
   const exists = list.some(v => v.youtubeId === video.youtubeId);
-  if (exists) {
-    list = list.filter(v => v.youtubeId !== video.youtubeId);
-  } else {
-    list.unshift(video);
-  }
+  list = exists ? list.filter(v => v.youtubeId !== video.youtubeId) : [video, ...list];
   try {
-    localStorage.setItem(STORAGE_SAVED_VIDEOS_KEY, JSON.stringify(list));
-  } catch {
-    // quiet fallback
-  }
+    localStorage.setItem(mediaStorageKey(STORAGE_SAVED_VIDEOS_KEY, userId), JSON.stringify(list));
+  } catch { /* Browser storage is optional. */ }
   return { isSaved: !exists, list };
 }
 
-export function isVideoSaved(youtubeId: string): boolean {
-  return getSavedVideos().some(v => v.youtubeId === youtubeId);
+export function isVideoSaved(youtubeId: string, userId?: string): boolean {
+  return getSavedVideos(userId).some(v => v.youtubeId === youtubeId);
 }
 
 /**

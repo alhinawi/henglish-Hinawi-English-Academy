@@ -79,12 +79,13 @@ import {
 } from 'lucide-react';
 
 interface MovieStudioPageProps {
+  learnerId?: string;
   onNavigate: (route: PageRoute) => void;
 }
 
 type MainTab = 'catalog' | 'youtube_search' | 'sentence_search' | 'saved_and_history';
 
-export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) => {
+export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, learnerId }) => {
   const { t } = useLanguage();
   const videoText = useAppTextMap('videoLibraryService');
   const [activeTab, setActiveTab] = useState<MainTab>('catalog');
@@ -103,11 +104,11 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
   const catalogPageSize = 9;
 
   // Search History State
-  const [searchHistory, setSearchHistory] = useState<string[]>(() => getSearchHistory());
+  const [searchHistory, setSearchHistory] = useState<string[]>(() => getSearchHistory(learnerId));
 
   // Saved and Watched State
-  const [savedVideos, setSavedVideos] = useState<EducationalVideoItem[]>(() => getSavedVideos());
-  const [recentlyWatched, setRecentlyWatched] = useState<EducationalVideoItem[]>(() => getRecentlyWatched());
+  const [savedVideos, setSavedVideos] = useState<EducationalVideoItem[]>(() => getSavedVideos(learnerId));
+  const [recentlyWatched, setRecentlyWatched] = useState<EducationalVideoItem[]>(() => getRecentlyWatched(learnerId));
 
   // YouTube API Search State
   const [ytQuery, setYtQuery] = useState('');
@@ -124,9 +125,9 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
 
   // Refresh user lists
   const refreshUserLists = () => {
-    setSavedVideos(getSavedVideos());
-    setRecentlyWatched(getRecentlyWatched());
-    setSearchHistory(getSearchHistory());
+    setSavedVideos(getSavedVideos(learnerId));
+    setRecentlyWatched(getRecentlyWatched(learnerId));
+    setSearchHistory(getSearchHistory(learnerId));
   };
 
   // Reset page when filters change
@@ -154,8 +155,8 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
   // Handle Search Submission
   const handlePerformSearch = (q: string) => {
     if (q.trim()) {
-      addSearchHistory(q);
-      setSearchHistory(getSearchHistory());
+      addSearchHistory(q, learnerId);
+      setSearchHistory(getSearchHistory(learnerId));
     }
     setSearchQuery(q);
   };
@@ -165,8 +166,8 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
     if (!ytQuery.trim()) return;
     setIsYtSearching(true);
     playSound('click');
-    addSearchHistory(ytQuery);
-    setSearchHistory(getSearchHistory());
+    addSearchHistory(ytQuery, learnerId);
+    setSearchHistory(getSearchHistory(learnerId));
 
     try {
       const res = await searchYouTubeVideos(ytQuery, token);
@@ -185,7 +186,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
   const handleSelectScene = (scene: MovieSceneItem) => {
     playSound('click');
     setActiveScene(scene);
-    addRecentlyWatched(scene as EducationalVideoItem);
+    addRecentlyWatched(scene as EducationalVideoItem, learnerId);
     refreshUserLists();
     window.scrollTo({ top: 150, behavior: 'smooth' });
   };
@@ -224,7 +225,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
     };
 
     setActiveScene(tempScene);
-    addRecentlyWatched(tempScene);
+    addRecentlyWatched(tempScene, learnerId);
     refreshUserLists();
     window.scrollTo({ top: 150, behavior: 'smooth' });
   };
@@ -232,7 +233,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
   const handleToggleBookmark = (v: EducationalVideoItem, e: React.MouseEvent) => {
     e.stopPropagation();
     playSound('click');
-    const res = toggleSaveVideo(v);
+    const res = toggleSaveVideo(v, learnerId);
     setSavedVideos(res.list);
     if (res.isSaved) playSound('success');
   };
@@ -461,7 +462,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                     ))}
                     <button
                       onClick={() => {
-                        clearSearchHistory();
+                        clearSearchHistory(learnerId);
                         setSearchHistory([]);
                       }}
                       className="text-[10px] text-red-400 hover:underline shrink-0 mr-2"
@@ -519,7 +520,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate }) 
                 <div className="space-y-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {catalogResults.videos.map(scene => {
-                      const isSaved = isVideoSaved(scene.youtubeId);
+                      const isSaved = isVideoSaved(scene.youtubeId, learnerId);
                       return (
                         <div
                           key={scene.id}
