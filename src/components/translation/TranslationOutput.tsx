@@ -1,10 +1,11 @@
+import { useOwnedClipboard } from '../../hooks/useOwnedClipboard';
 import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION OUTPUT PANEL
 // Features interactive word clicking, multilingual audio playback, and copy action
 // ==============================================================================
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
 import { playSound } from '../../utils/audio';
@@ -30,20 +31,14 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
   onExplainClick,
 }) => {
   const { t } = useLanguage();
-  const [copied, setCopied] = useState(false);
+  const { copy, copiedKey, copyFailed } = useOwnedClipboard(translatedText + targetLang);
 
   const isRtl = targetLang === 'ar' || targetLang === 'fa';
   const textDirection = isRtl ? 'rtl' : 'ltr';
   const textAlign = isRtl ? 'text-right' : 'text-left';
 
   const handleCopy = async () => {
-    if (!translatedText.trim()) return;
-    try {
-      await navigator.clipboard.writeText(translatedText);
-      playSound('click');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {}
+    if (await copy(translatedText)) playSound('click');
   };
 
 
@@ -53,6 +48,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
 
   return (
     <div className="flex flex-col h-full bg-[#0e0c26] rounded-2xl border border-white/10 shadow-xl overflow-hidden">
+      {copyFailed && <p role="status" className="px-4 py-3 text-sm text-amber-200">{t('lw.copyFailed')}</p>}
       {/* Output Header Bar */}
       <div className="flex flex-wrap items-start justify-between gap-3 px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
         <span className="font-medium text-white flex items-center gap-1.5">
@@ -73,7 +69,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
             title={t('to.copy')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
           >
-            {copied ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
+            {copiedKey ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
           </button>
 
           {/* Text-to-Speech Button */}

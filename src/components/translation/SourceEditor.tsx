@@ -1,10 +1,11 @@
+import { useOwnedClipboard } from '../../hooks/useOwnedClipboard';
 import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION SOURCE TEXT EDITOR
 // Responsive multi-lingual editor with character count, speech, and dynamic RTL/LTR
 // ==============================================================================
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
 import { playSound } from '../../utils/audio';
@@ -49,7 +50,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
   isListening = false,
 }) => {
   const { t } = useLanguage();
-  const [copied, setCopied] = useState(false);
+  const { copy, copiedKey, copyFailed } = useOwnedClipboard(text + sourceLang);
   const pasteVersion = useRef(0);
   useEffect(() => {
     pasteVersion.current += 1;
@@ -68,13 +69,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
   const textAlign = isRtl ? 'text-right' : 'text-left';
 
   const handleCopy = async () => {
-    if (!text.trim()) return;
-    try {
-      await navigator.clipboard.writeText(text);
-      playSound('click');
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {}
+    if (await copy(text)) playSound('click');
   };
 
   const handlePaste = async () => {
@@ -111,6 +106,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
 
   return (
     <div className="flex flex-col h-full bg-[#0e0c26] rounded-2xl border border-white/10 shadow-xl overflow-hidden focus-within:border-[#41e7ff]/60 transition-colors">
+      {copyFailed && <p role="status" className="px-4 py-3 text-sm text-amber-200">{t('lw.copyFailed')}</p>}
       {/* Editor Header Bar */}
       <div className="flex flex-wrap items-start justify-between gap-3 px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
         <span className="font-medium text-white flex items-center gap-1.5">
@@ -141,7 +137,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
             title={t('se.copy')}
             className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
           >
-            {copied ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
+            {copiedKey ? <Check className="w-3.5 h-3.5 text-[#10b981]" /> : <Copy className="w-3.5 h-3.5" />}
           </button>
 
           {/* Text-to-Speech */}
