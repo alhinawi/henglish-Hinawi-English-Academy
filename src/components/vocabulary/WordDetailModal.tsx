@@ -25,6 +25,7 @@ import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 
 interface WordDetailModalProps {
+  learnerId?: string;
   entry: LexicalEntry | null;
   isOpen: boolean;
   onClose: () => void;
@@ -42,6 +43,7 @@ const CEFR_COLORS: Record<string, string> = {
 };
 
 export const WordDetailModal: React.FC<WordDetailModalProps> = ({
+  learnerId,
   entry,
   isOpen,
   onClose,
@@ -62,15 +64,15 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   useEffect(() => {
     if (entry) {
       setSaveError(false);
-      const isSaved = isWordSaved(entry.headword);
+      const isSaved = isWordSaved(entry.headword, learnerId);
       setSaved(isSaved);
-      const savedItems = getSavedWords();
+      const savedItems = getSavedWords(learnerId);
       const current = savedItems.find(w => w.word.toLowerCase() === entry.headword.toLowerCase());
       setUserNote(current?.notes || '');
       setPersistedNote(current?.notes || '');
       setNoteSaved(false);
     }
-  }, [entry, isOpen]);
+  }, [entry, isOpen, learnerId]);
 
   useEffect(() => {
     if (!isOpen || !entry) return;
@@ -124,10 +126,10 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
     try {
       playSound('click');
       if (saved) {
-        removeSavedWord(entry.headword);
+        removeSavedWord(entry.headword, learnerId);
         setSaved(false);
       } else {
-        saveWord(entry, userNote);
+        saveWord(entry, userNote, learnerId);
         setPersistedNote(userNote);
         setNoteSaved(true);
         setSaved(true);
@@ -140,7 +142,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   const handleSaveNote = () => {
     setSaveError(false);
     try {
-      saveWord(entry, userNote);
+      saveWord(entry, userNote, learnerId);
       setPersistedNote(userNote);
       setNoteSaved(true);
       setSaved(true);

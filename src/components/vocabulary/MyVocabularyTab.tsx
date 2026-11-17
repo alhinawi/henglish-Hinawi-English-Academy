@@ -33,14 +33,15 @@ import { playSound, fireCelebration } from '../../utils/audio';
 import { useLanguage } from '../../i18n/LanguageContext';
 
 interface MyVocabularyTabProps {
+  learnerId?: string;
   onExploreWords: () => void;
   savedVersion?: number;
 }
 
-export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords, savedVersion = 0 }) => {
+export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords, savedVersion = 0, learnerId }) => {
   const { t } = useLanguage();
   const txMap = useContentMap('vocab');
-  const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords());
+  const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords(learnerId));
   const [reviewFilter, setReviewFilter] = useState<'all' | 'due' | 'learning' | 'mastered'>('all');
   const [isReviewMode, setIsReviewMode] = useState(false);
   const [reviewQueue, setReviewQueue] = useState<string[]>([]);
@@ -54,8 +55,8 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
-    setSavedWords(getSavedWords());
-  }, [savedVersion]);
+    setSavedWords(getSavedWords(learnerId));
+  }, [savedVersion, learnerId]);
 
   const now = new Date();
   const dueWords = savedWords.filter(w => new Date(w.nextReviewAt) <= now);
@@ -89,7 +90,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
     setSaveError(false);
     try {
-      const updated = rateSavedWord(currentReviewItem.word, rating);
+      const updated = rateSavedWord(currentReviewItem.word, rating, learnerId);
       if (rating >= 3) { playSound('correct'); if (rating === 5) fireCelebration(); }
       else playSound('wrong');
       setSavedWords(updated);
@@ -104,7 +105,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
     setSaveError(false);
     try {
       playSound('click');
-      const updated = removeSavedWord(word);
+      const updated = removeSavedWord(word, learnerId);
       setSavedWords(updated);
       setReviewQueue(queue => queue.filter(item => item !== word));
       if (currentReviewItem?.word === word) setIsFlipped(false);
@@ -413,10 +414,11 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
       {/* Detail Modal */}
       <WordDetailModal
+        learnerId={learnerId}
         entry={detailWord}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        onWordSavedChange={() => setSavedWords(getSavedWords())}
+        onWordSavedChange={() => setSavedWords(getSavedWords(learnerId))}
       />
     </div>
   );

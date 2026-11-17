@@ -257,11 +257,11 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
       </section>
 
       {/* TAB 1: INTELLIGENT VOCABULARY EXPLORER (5,000+ WORDS) */}
-      {activeTab === 'explorer' && <VocabularyExplorer />}
+      {activeTab === 'explorer' && <VocabularyExplorer learnerId={learnerId} />}
 
       {/* TAB 2: MY SAVED VOCABULARY & SM-2 REVIEW */}
       {activeTab === 'my-vocab' && (
-        <MyVocabularyTab savedVersion={savedVersion} onExploreWords={() => setActiveTab('explorer')} />
+        <MyVocabularyTab learnerId={learnerId} savedVersion={savedVersion} onExploreWords={() => setActiveTab('explorer')} />
       )}
 
       {/* TAB 3: 10,000+ EXPRESSIONS, IDIOMS & PHRASAL VERBS */}
@@ -405,6 +405,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
       {/* Admin Management Modal */}
       <AdminVocabularyModal
+        learnerId={learnerId}
         onWordAdded={() => setSavedVersion(version => version + 1)}
         isOpen={isAdminOpen}
         onClose={() => setIsAdminOpen(false)}
