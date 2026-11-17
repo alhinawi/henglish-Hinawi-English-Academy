@@ -40,10 +40,11 @@ import { ExpressionsTab } from '../components/vocabulary/ExpressionsTab';
 import { AdminVocabularyModal } from '../components/vocabulary/AdminVocabularyModal';
 
 interface VocabularyAcademyPageProps {
+  learnerId?: string;
   onNavigate: (route: PageRoute) => void;
 }
 
-export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ onNavigate }) => {
+export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ onNavigate, learnerId }) => {
   const { t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
   const appText = useAppTextMap('vocabularyAcademyData');
@@ -54,7 +55,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
   // Original Flashcards / Spaced Repetition (SM-2) state
   const [srsCards, setSrsCards] = useState<VocabularyCard[]>(() => {
-    const loaded = loadSrsCardsFromStorage();
+    const loaded = loadSrsCardsFromStorage(learnerId);
     if (loaded && loaded.length > 0) return loaded;
     return VOCABULARY_ACADEMY_WORDS.map(w => ({
       id: w.id,
@@ -132,7 +133,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
     const nextSrsCards = srsCards.map(c => (c.id === currentCard.id ? updatedCard : c));
     setSrsCards(nextSrsCards);
-    saveSrsCardsToStorage(nextSrsCards);
+    saveSrsCardsToStorage(nextSrsCards, learnerId);
 
     setIsFlipped(false);
     setFlashcardIdx(prev => (prev + 1) % activeDeck.length);
