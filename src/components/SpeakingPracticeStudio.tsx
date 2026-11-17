@@ -1,7 +1,8 @@
+import { LessonSpeechButton } from './LessonSpeechButton';
 import React, { useEffect, useRef, useState } from 'react';
-import { Mic, Square, Volume2, RotateCcw, CheckCircle2 } from 'lucide-react';
+import { Mic, Square, RotateCcw, CheckCircle2 } from 'lucide-react';
 import type { SpeakingLesson } from '../data/speakingAcademyData';
-import { speakEnglish, stopSpeech } from '../utils/audio';
+import { stopSpeech } from '../utils/audio';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export function SpeakingRecorder({ prompt, description }: { prompt: string; description?: string }) {
@@ -96,10 +97,10 @@ export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesso
   useEffect(() => () => stopSpeech(), []);
   return <div className="space-y-6">
     <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">
-      <div className="flex items-center justify-between gap-3"><h3 className="font-bold text-xl">1. {t('sp.step1')}</h3><button onClick={() => setShowAr(v => !v)} className="min-h-11 text-xs text-cyan-200">{showAr ? t('sp.step1.hide') : t('sp.step1.show')}</button></div>
+      <div className="flex flex-wrap items-start justify-between gap-3"><h3 className="font-bold text-xl">1. {t('sp.step1')}</h3><button onClick={() => setShowAr(v => !v)} className="min-h-11 text-xs text-cyan-200">{showAr ? t('sp.step1.hide') : t('sp.step1.show')}</button></div>
       <p className="text-sm leading-7 text-slate-400">{t('sp.step1.note')}</p>
       {lesson.dialogue.map((line, i) => <div key={i} className={`rounded-2xl p-4 ${line.role === 'B' ? 'bg-pink-300/10 border border-pink-300/20' : 'bg-white/5'}`}>
-        <div className="flex items-center justify-between gap-3"><span className="text-xs text-pink-200">{line.role === 'A' ? t('sp.roleA') : t('sp.roleB')}</span><button onClick={() => speakEnglish(line.en)} aria-label={`${t('sp.listenLineAria')} ${i+1}`} className="p-3 rounded-xl bg-white/5"><Volume2 size={18}/></button></div>
+        <div className="flex flex-wrap items-start justify-between gap-3"><span className="text-xs text-pink-200">{line.role === 'A' ? t('sp.roleA') : t('sp.roleB')}</span><LessonSpeechButton key={line.en} text={line.en} label={`${t('sp.listenLineAria')} ${i+1}`} iconOnly className="p-3 rounded-xl bg-white/5" /></div>
         <p dir="ltr" className="text-left text-base leading-8 font-medium">{line.en}</p>{showAr && line.ar && <p dir="auto" className="text-sm text-slate-300 leading-7 mt-2">{line.ar}</p>}
       </div>)}
     </section>
