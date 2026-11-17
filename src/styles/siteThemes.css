@@ -175,3 +175,10 @@ html[data-site-theme] :is([class*="text-[#b9b6d5]"],[class*="text-[#dedbf4]"],[c
 /* In light palettes, photo-backed gradient heroes need an opaque-enough wash across the full text area. */
 html[data-theme-mode="light"] .absolute.inset-0[class*="from-[#0c0b20]"],
 html[data-theme-mode="light"] .absolute.inset-0[class*="from-[#101626]"] { background-image:linear-gradient(to right,var(--panel-dark),color-mix(in srgb,var(--panel-dark) 94%,transparent))!important; }
+
+/* Photo banners keep a dark scrim in every theme. Their text must not inherit
+   light-theme ink or accent substitutions intended for ordinary panels. */
+html[data-site-theme] .sources-category-banner h2,
+html[data-site-theme] .sources-category-banner span { color:#fff!important; }
+html[data-site-theme] .sources-category-banner p { color:#dedbf4!important; }
+html[data-site-theme] .sources-category-banner svg { color:#67e8f9!important; }
