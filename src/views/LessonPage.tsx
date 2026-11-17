@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { LessonNoteEditor } from '../components/LessonNoteEditor';
 import { LessonCorrection, MixedLessonText } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
@@ -6,10 +7,9 @@ import { PageRoute } from '../types';
 import { FUTURE_PERFECT_LESSONS } from '../data/futurePerfectCourse';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, fireCelebration } from '../utils/audio';
 import { 
   Clock, 
-  Volume2, 
   CheckCircle2, 
   AlertTriangle, 
   HelpCircle, 
@@ -133,17 +133,11 @@ export const LessonPage: React.FC<LessonPageProps> = ({
           <h1 className="text-2xl sm:text-4xl font-black text-white leading-tight">
             <MixedLessonText text={txText(appText, currentLesson.title)} />
           </h1>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-start gap-3">
             <span className="en text-sm sm:text-base font-bold text-[#41e7ff]">
               {txText(appText, currentLesson.subtitle)}
             </span>
-            <button
-              onClick={() => speakEnglish(currentLesson.subtitle)}
-              className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-[#41e7ff] transition-colors cursor-pointer"
-              title={t('lp.listenTitle')}
-            >
-              <Volume2 className="w-3.5 h-3.5" />
-            </button>
+            <LessonSpeechButton key={currentLesson.subtitle} text={currentLesson.subtitle} label={t('lp.listenTitle')} iconOnly className="p-1 rounded-lg bg-white/10 hover:bg-white/20 text-[#41e7ff] transition-colors cursor-pointer" />
           </div>
 
           <p className="text-sm sm:text-base text-[#dedbf4] leading-relaxed pt-2">
@@ -224,7 +218,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
 
       {/* Real-Life Examples Section */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-wrap items-start justify-between gap-3">
           <h3 className="text-lg font-black text-white flex items-center gap-2">
             <span>{t('lp.examplesTitle')}</span>
           </h3>
@@ -237,21 +231,11 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               key={idx}
               className="p-4 sm:p-5 rounded-2xl bg-[#171632] border border-white/10 hover:border-white/20 transition-all space-y-2"
             >
-              <div className="flex items-center justify-between">
+              <div className="flex flex-wrap items-start justify-between gap-3">
                 <span className="text-xs font-bold text-[#ffd166]">
                   {ex.context ? txText(appText, ex.context) : `${t('lp.example')} 0${idx + 1}`}
                 </span>
-                <button
-                  onClick={() => {
-                    playSound('click');
-                    speakEnglish(ex.en);
-                  }}
-                  className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] transition-colors cursor-pointer flex items-center gap-1.5 text-xs font-bold"
-                  title={t('lp.listenExample')}
-                >
-                  <Volume2 className="w-3.5 h-3.5" />
-                  <span>{t('lp.listen')}</span>
-                </button>
+                <LessonSpeechButton key={ex.en} text={ex.en} label={`${t('lp.listenExample')}: ${idx + 1}`} className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] transition-colors cursor-pointer flex items-center gap-1.5 text-xs font-bold" />
               </div>
 
               <p className="en text-base sm:text-lg font-bold text-white leading-relaxed">
@@ -283,16 +267,11 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                 key={idx}
                 className="p-4 rounded-2xl bg-[#09091a] border border-white/10 space-y-1.5"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-start justify-between gap-3">
                   <span className="px-2.5 py-0.5 rounded-md text-xs font-black bg-[#41e7ff]/15 text-[#41e7ff]">
                     {c.tense}
                   </span>
-                  <button
-                    onClick={() => speakEnglish(c.sentence)}
-                    className="p-1 text-[#b9b6d5] hover:text-white"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
+                  <LessonSpeechButton key={c.sentence} text={c.sentence} label={`${t('lp.listenExample')}: ${c.sentence}`} iconOnly className="p-1 text-[#b9b6d5] hover:text-white" />
                 </div>
                 <p className="en text-base font-bold text-white">
                   {c.sentence}
