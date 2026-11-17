@@ -2,6 +2,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
+  'check-phrase-pronunciation-controls.cjs',
   'check-pronunciation-owned-lifecycle.cjs',
   'check-document-mobile-feedback.cjs',
   'check-sentence-speech-controls.cjs',
