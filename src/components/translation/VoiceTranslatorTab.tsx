@@ -24,12 +24,14 @@ import { useLanguage } from '../../i18n/LanguageContext';
 import { isAiServiceUnavailable } from '../../services/aiAvailability';
 
 interface VoiceTranslatorTabProps {
+  learnerId?: string;
   sourceLang: LanguageCode;
   targetLang: LanguageCode;
   mode: TranslationMode;
 }
 
 export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
+  learnerId,
   sourceLang,
   targetLang,
   mode,
@@ -76,6 +78,8 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   }, [recorder]);
 
   const handleToggleRecord = async () => {
+    const version = ++uploadVersion.current;
+    const isCurrent = () => version === uploadVersion.current;
     setErrorMsg(null);
 
     if (isRecording) {
@@ -86,6 +90,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
 
       try {
         const audioData: RecordedAudioData | null = await recorder.stop();
+        if (!isCurrent()) return;
         if (audioData && audioData.base64) {
           // Send to speech transcription engine
           const { transcription, detectedLang } = await transcribeAudioRecording(
@@ -93,6 +98,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
             audioData.mimeType
           );
 
+          if (!isCurrent()) return;
           setRecognizedText(transcription);
           setIsTranscribing(false);
 
@@ -104,7 +110,8 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
               sourceLang: sourceLang === 'auto' ? detectedLang : sourceLang,
               targetLang,
               mode,
-            });
+            }, learnerId);
+            if (!isCurrent()) return;
             setTranslatedVoiceText(res.translatedText);
             playSound('correct');
 
@@ -113,12 +120,12 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
           }
         }
       } catch (err) {
+        if (!isCurrent()) return;
         console.error('Audio transcription error:', err);
         setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('vt.errTranscribe'));
         playSound('wrong');
       } finally {
-        setIsTranscribing(false);
-        setIsTranslating(false);
+        if (isCurrent()) { setIsTranscribing(false); setIsTranslating(false); }
       }
     } else {
       // Start recording
@@ -128,6 +135,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       playSound('click');
 
       const success = await recorder.start();
+      if (!isCurrent()) { recorder.cancel(); return; }
       if (success) {
         setIsRecording(true);
       } else {
@@ -180,7 +188,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
           sourceLang: sourceLang === 'auto' ? detectedLang : sourceLang,
           targetLang,
           mode,
-        });
+        }, learnerId);
         if (!isCurrent()) return;
         setTranslatedVoiceText(res.translatedText);
         playSound('correct');

@@ -38,28 +38,30 @@ import {
 import { useLanguage } from '../../i18n/LanguageContext';
 
 interface VocabularyHistoryTabProps {
+  learnerId?: string;
   onReuseTranslation: (sourceText: string, mode: string) => void;
 }
 
 export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
   onReuseTranslation,
+  learnerId,
 }) => {
   const { t } = useLanguage();
   const [subTab, setSubTab] = useState<'history' | 'vocabulary'>('history');
 
   // History State
   const [historyItems, setHistoryItems] = useState<TranslationHistoryItem[]>(() =>
-    getTranslationHistory()
+    getTranslationHistory(learnerId)
   );
   const [historySearch, setHistorySearch] = useState('');
   const [onlyFavorites, setOnlyFavorites] = useState(false);
 
   // Vocabulary State
   const [vocabCards, setVocabCards] = useState<SavedVocabularyCard[]>(() =>
-    getSavedVocabularyCards()
+    getSavedVocabularyCards(learnerId)
   );
   const [collections, setCollections] = useState<VocabularyCollection[]>(() =>
-    getVocabularyCollections()
+    getVocabularyCollections(learnerId)
   );
   const [selectedCollectionFilter, setSelectedCollectionFilter] = useState<string>('all');
   const [newCollectionName, setNewCollectionName] = useState('');
@@ -88,27 +90,27 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
   const handleToggleFav = (id: string) => {
     playSound('click');
-    const updated = toggleHistoryFavorite(id);
+    const updated = toggleHistoryFavorite(id, learnerId);
     setHistoryItems(updated);
   };
 
   const handleDeleteHistory = (id: string) => {
     playSound('click');
-    const updated = deleteHistoryItem(id);
+    const updated = deleteHistoryItem(id, learnerId);
     setHistoryItems(updated);
   };
 
   const handleClearAllHistory = () => {
     if (confirm(t('vh.confirmClear'))) {
       playSound('click');
-      clearTranslationHistory();
+      clearTranslationHistory(learnerId);
       setHistoryItems([]);
     }
   };
 
   const handleDeleteVocab = (id: string) => {
     playSound('click');
-    const updated = deleteSavedVocabularyCard(id);
+    const updated = deleteSavedVocabularyCard(id, learnerId);
     setVocabCards(updated);
   };
 
@@ -116,7 +118,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
     e.preventDefault();
     if (!newCollectionName.trim()) return;
     playSound('click');
-    const created = createVocabularyCollection(newCollectionName.trim(), newCollectionName.trim());
+    const created = createVocabularyCollection(newCollectionName.trim(), newCollectionName.trim(), undefined, undefined, learnerId);
     setCollections(prev => [...prev, created]);
     setNewCollectionName('');
     setIsCreatingCollection(false);

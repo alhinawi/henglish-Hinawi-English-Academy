@@ -48,9 +48,10 @@ import { isAiServiceUnavailable } from '../services/aiAvailability';
 
 interface TranslationStudioPageProps {
   userProfile?: UserProfile;
+  learnerId?: string;
 }
 
-export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ userProfile }) => {
+export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ userProfile, learnerId }) => {
   const { t } = useLanguage();
   // Navigation active tab
   const [activeTab, setActiveTab] = useState<'studio' | 'documents' | 'voice' | 'ocr' | 'practice' | 'vocab'>('studio');
@@ -71,7 +72,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   const [isWordModalOpen, setIsWordModalOpen] = useState(false);
   const [wordAnalysisUnavailable, setWordAnalysisUnavailable] = useState(false);
   const [isAssistantOpen, setIsAssistantOpen] = useState(false);
-  const [collections, setCollections] = useState<VocabularyCollection[]>(() => getVocabularyCollections());
+  const [collections, setCollections] = useState<VocabularyCollection[]>(() => getVocabularyCollections(learnerId));
 
   // User Level
   const currentLevel: CEFRLevel = userProfile?.currentLevel || 'B1';
@@ -107,7 +108,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
         targetLang: parameters?.targetLang ?? targetLang,
         mode: parameters?.mode ?? mode,
         userLevel: currentLevel,
-      });
+      }, learnerId);
 
       if (!isCurrent()) return;
       setTranslationResult(result);
@@ -189,8 +190,8 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       personalNotes: notes,
       cefrLevel: word.cefrLevel || currentLevel,
       collectionId,
-    });
-    setCollections(getVocabularyCollections());
+    }, learnerId);
+    setCollections(getVocabularyCollections(learnerId));
   };
 
   return (
@@ -358,6 +359,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       {/* ========================================================================= */}
       {activeTab === 'documents' && (
         <DocumentTranslatorTab
+          learnerId={learnerId}
           sourceLang={sourceLang}
           targetLang={targetLang}
           mode={mode}
@@ -369,6 +371,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       {/* ========================================================================= */}
       {activeTab === 'voice' && (
         <VoiceTranslatorTab
+          learnerId={learnerId}
           sourceLang={sourceLang}
           targetLang={targetLang}
           mode={mode}
@@ -397,6 +400,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       {/* ========================================================================= */}
       {activeTab === 'vocab' && (
         <VocabularyHistoryTab
+          learnerId={learnerId}
           onReuseTranslation={(text, reuseMode) => {
             setSourceText(text);
             if (reuseMode) setMode(reuseMode as TranslationMode);
