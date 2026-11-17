@@ -7,8 +7,8 @@ import { Volume2, RotateCcw, Lightbulb, CheckCircle, ArrowRight, Sparkles } from
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const SentenceBuilder: React.FC = () => {
-  const { t, lang: language } = useLanguage();
-  const isAr = language === 'ar';
+  const { t, dir, lang: language } = useLanguage();
+  const isAr = dir === 'rtl';
   const [challengeIndex, setChallengeIndex] = useState(0);
   const appText = useAppTextMap('gamesData');
   const current = SENTENCE_BUILDER_CHALLENGES[challengeIndex];
@@ -121,6 +121,7 @@ export const SentenceBuilder: React.FC = () => {
             playSound('click');
             setShowHint(!showHint);
           }}
+          aria-expanded={showHint}
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-[#ffd166] text-xs font-bold transition-colors cursor-pointer border border-white/10"
         >
           <Lightbulb className="w-3.5 h-3.5" />
@@ -193,7 +194,7 @@ export const SentenceBuilder: React.FC = () => {
 
       {/* Result Status & Controls */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-white/10">
-        <div>
+        <div role="status">
           {isCorrect === true && (
             <div className="flex items-center gap-2 text-[#c4ff55] font-black text-sm sm:text-base">
               <CheckCircle className="w-5 h-5" />
