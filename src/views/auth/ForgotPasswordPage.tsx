@@ -91,12 +91,13 @@ export const ForgotPasswordPage: React.FC<ForgotPasswordPageProps> = ({ onNaviga
             )}
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1.5">
+              <label htmlFor="forgotpassword-email" className="block text-xs font-medium text-slate-300 mb-1.5">
                 {t('fp.email')}
               </label>
               <div className="relative">
                 <Mail className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                 <input
+                  id="forgotpassword-email"
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
