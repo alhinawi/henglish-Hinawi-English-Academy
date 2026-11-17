@@ -17,3 +17,5 @@ assert(importer.includes("setCustomTitle(current => current === oldAutoTitle ? '
 assert(settings.includes("document.activeElement?.closest('[role=\"dialog\"]')"));assert(settings.includes('if (activeDialog && activeDialog !== dialog) return'));console.log('Account settings parent keyboard handler defers to active nested appearance dialog: PASS');
 
 for(const text of ['ref={dialogRef} tabIndex={-1} role="dialog"',"aria-label={t('vi.title')}","event.key === 'Escape'","event.key !== 'Tab'",'event.shiftKey && document.activeElement === first','document.activeElement === last','if (opener?.isConnected && opener.getClientRects().length) opener.focus()',"aria-label={t('settings.close')}",'<div role="alert"'])assert(importer.includes(text),text);console.log('Video import dialog focus entry,live controls,Tab boundaries,Escape,opener restore,named close and announced errors: PASS');
+
+const movies=fs.readFileSync('src/views/MovieStudioPage.tsx','utf8');assert(movies.includes('<button type="button" aria-label={`${t(\'ms.resumeWatching\')}: ${video.sceneTitle}`}'));console.log('Recently watched movie cards are named native keyboard buttons: PASS');
