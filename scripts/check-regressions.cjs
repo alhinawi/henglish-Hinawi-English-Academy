@@ -31,6 +31,7 @@ const checks = [
   'check-phrase-retry.cjs',
   'check-phrase-detail-state.cjs',
   'check-bank-copy-feedback.cjs',
+  'check-bank-copy-lifecycle.cjs',
   'check-exam-vocab-retry.cjs',
   'check-expressions-retry.cjs',
   'check-vocabulary-load-retry.cjs',
