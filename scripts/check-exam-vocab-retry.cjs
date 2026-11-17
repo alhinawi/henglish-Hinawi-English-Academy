@@ -13,3 +13,9 @@ const index={chunks:['a.json','b.json'],idPrefix:'test'},rows=[{id:'test-000001'
  }
  console.log('Exam vocabulary index/chunk network/HTTP/JSON failure retries; successes and concurrent requests stay cached: PASS');
 })().catch(e=>{console.error(e);process.exit(1)});
+
+for(const [file,source] of [['PhraseBankPanel','bank'],['ExamVocabPanel','exam']]){
+ const view=fs.readFileSync('src/components/'+file+'.tsx','utf8');
+ for(const text of ['}, ['+source+', loadAttempt]);','setLoadAttempt(attempt => attempt + 1)','role="alert"',"t('ex.retry')"])assert.ok(view.includes(text),file+': '+text);
+}
+console.log('Phrase/exam loading errors offer in-place retry with announced error state: PASS');

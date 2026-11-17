@@ -86,6 +86,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
   const [entries, setEntries] = useState<ExamVocabEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [query, setQuery] = useState('');
   const [level, setLevel] = useState('all');
   const [topic, setTopic] = useState('all');
@@ -115,7 +116,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
     return () => {
       cancelled = true;
     };
-  }, [exam]);
+  }, [exam, loadAttempt]);
 
   // Deep links: #<exam>/<entry-id> opens the detail sheet.
   const openDetail = useCallback(
@@ -277,9 +278,10 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
       )}
 
       {error && (
-        <div className="flex items-center gap-2 p-4 rounded-2xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-sm font-bold">
+        <div role="alert" className="flex flex-wrap items-center gap-2 p-4 rounded-2xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-sm font-bold">
           <AlertTriangle className="w-4 h-4" />
           {t('ev.loadError')}
+          <button onClick={() => setLoadAttempt(attempt => attempt + 1)} className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-white hover:bg-white/15 cursor-pointer">{t('ex.retry')}</button>
         </div>
       )}
 

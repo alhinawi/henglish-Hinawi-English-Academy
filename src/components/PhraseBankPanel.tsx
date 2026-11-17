@@ -61,6 +61,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
   const [entries, setEntries] = useState<PhraseEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [query, setQuery] = useState('');
   const [register, setRegister] = useState<PhraseRegister | 'all'>('all');
   const [origin, setOrigin] = useState<PhraseOrigin | 'all'>('all');
@@ -92,7 +93,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
     return () => {
       cancelled = true;
     };
-  }, [bank]);
+  }, [bank, loadAttempt]);
 
   const visible = useMemo(
     () => sortPhrases(filterPhrases(entries, query, register, origin, tier), sortMode),
@@ -257,9 +258,10 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       )}
 
       {error && (
-        <div className="flex items-center gap-2 p-4 rounded-2xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-sm font-bold">
+        <div role="alert" className="flex flex-wrap items-center gap-2 p-4 rounded-2xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-sm font-bold">
           <AlertTriangle className="w-4 h-4" />
           {t('pb.loadError')}
+          <button onClick={() => setLoadAttempt(attempt => attempt + 1)} className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-white hover:bg-white/15 cursor-pointer">{t('ex.retry')}</button>
         </div>
       )}
 
