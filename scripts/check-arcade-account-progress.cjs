@@ -8,3 +8,16 @@ console.log('Arcade per-account results/history/streak,guest-only legacy recover
 const realWrite=localStorage.setItem;localStorage.setItem=()=>{throw Error('quota')};let unsaved=render('quota-owner');unsaved.recordGameResult('kept-in-memory',2);unsaved=render();assert.equal(unsaved.storageFailed,true);assert.equal(unsaved.xp,40);assert.equal(data.has(key('quota-owner')),false);assert.equal(unsaved.retrySave(),false);assert.equal(render().xp,40);localStorage.setItem=realWrite;assert.equal(render().retrySave(),true);assert.equal(render().storageFailed,false);assert.equal(JSON.parse(data.get(key('quota-owner'))).totalPlays,1);assert.equal(JSON.parse(data.get(key('quota-owner'))).storageFailed,undefined);const retryA=render('quota-owner').retrySave;render('B');assert.equal(retryA(),false);console.log('Arcade unsaved progress disclosed,retry persists without duplicate award,owner guard and transient status excluded: PASS');
 
 for(const raw of ['bad json','null','[]','7']){const owner='broken-'+raw;data.set(key(owner),raw);let broken=render(owner);assert.equal(broken.storageUnreadable,true);broken.recordGameResult('session',1);broken=render();assert.equal(broken.storageUnreadable,true);assert.equal(broken.totalPlays,1);assert.equal(data.get(key(owner)),raw);assert.equal(broken.retrySave(),false);assert.equal(data.get(key(owner)),raw)}console.log('Arcade malformed owner copies preserved before/after new rounds and retries,in-memory results retained,unreadable status: PASS');
+
+// Old guest migration is independent of each readable account's saved games.
+const guestKey=key(),legacyKey='henglish_arcade_v1';
+for(const mode of ['parse','write','read']){
+ const owner='legacy-recovery-'+mode;data.delete(guestKey);data.set(legacyKey,mode==='parse'?'{damaged':legacy);data.set(key(owner),legacy);
+ const get=localStorage.getItem,set=localStorage.setItem;
+ if(mode==='read')localStorage.getItem=k=>{if(k===guestKey||k===legacyKey)throw Error('legacy denied');return get(k)};
+ if(mode==='write')localStorage.setItem=(k,v)=>{if(k===guestKey)throw Error('migration denied');return set(k,v)};
+ let loaded=render(owner);assert.equal(loaded.xp,100);assert.equal(loaded.totalPlays,1);assert.equal(loaded.best.test,8);assert(!loaded.storageUnreadable);
+ loaded.recordGameResult('new-round',2);loaded=render();assert.equal(loaded.totalPlays,2);assert.equal(loaded.xp,180);assert.equal(loaded.best.test,8);assert.equal(loaded.history[0].id,'test');assert.equal(JSON.parse(data.get(key(owner))).history.length,2);assert.equal(data.has(guestKey),false);
+ localStorage.getItem=get;localStorage.setItem=set;assert.equal(data.get(legacyKey),mode==='parse'?'{damaged':legacy);
+}
+console.log('Arcade legacy parse/read/write failures cannot hide saved account games or replace their history/XP when a new round completes: PASS');
