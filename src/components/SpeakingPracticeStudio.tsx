@@ -100,7 +100,7 @@ export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesso
       <p className="text-sm leading-7 text-slate-400">{t('sp.step1.note')}</p>
       {lesson.dialogue.map((line, i) => <div key={i} className={`rounded-2xl p-4 ${line.role === 'B' ? 'bg-pink-300/10 border border-pink-300/20' : 'bg-white/5'}`}>
         <div className="flex items-center justify-between gap-3"><span className="text-xs text-pink-200">{line.role === 'A' ? t('sp.roleA') : t('sp.roleB')}</span><button onClick={() => speakEnglish(line.en)} aria-label={`${t('sp.listenLineAria')} ${i+1}`} className="p-3 rounded-xl bg-white/5"><Volume2 size={18}/></button></div>
-        <p dir="ltr" className="text-left text-base leading-8 font-medium">{line.en}</p>{showAr && line.ar && <p className="text-sm text-slate-300 leading-7 mt-2">{line.ar}</p>}
+        <p dir="ltr" className="text-left text-base leading-8 font-medium">{line.en}</p>{showAr && line.ar && <p dir="auto" className="text-sm text-slate-300 leading-7 mt-2">{line.ar}</p>}
       </div>)}
     </section>
     <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">

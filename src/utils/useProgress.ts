@@ -396,6 +396,7 @@ export function useProgress(activeUserId?: string) {
   };
 
   const markLessonComplete = (lessonId: string) => {
+    if (progress.completedLessons.includes(lessonId)) return;
     setProgress((prev) => {
       if (prev.completedLessons.includes(lessonId)) return prev;
       const nextLessons = [...prev.completedLessons, lessonId];
