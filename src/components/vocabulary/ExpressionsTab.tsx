@@ -3,7 +3,7 @@
 // Specialized explorer for phrasal verbs, idioms, collocations, and business phrases
 // ==============================================================================
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   Search,
   Volume2,
@@ -42,6 +42,7 @@ export const ExpressionsTab: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState(false);
   const [loadAttempt, setLoadAttempt] = useState(0);
+  const searchRef = useRef<HTMLInputElement>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedCefr, setSelectedCefr] = useState<string>('all');
@@ -114,12 +115,15 @@ export const ExpressionsTab: React.FC = () => {
             dir="auto"
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
+            ref={searchRef}
+            aria-label={t('ex.searchPlaceholder')}
             placeholder={t('ex.searchPlaceholder')}
             className="w-full pl-12 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm font-sans focus:outline-none focus:border-[#ffd166]"
           />
           {searchQuery && (
             <button
-              onClick={() => setSearchQuery('')}
+              aria-label={t('se.clear')}
+              onClick={() => { setSearchQuery(''); searchRef.current?.focus(); }}
               className="absolute left-4 top-1/2 -translate-y-1/2 p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70"
             >
               <X className="w-4 h-4" />
@@ -132,6 +136,7 @@ export const ExpressionsTab: React.FC = () => {
           {CATEGORIES.map(cat => (
             <button
               key={cat.id}
+              aria-pressed={selectedCategory === cat.id}
               onClick={() => {
                 playSound('click');
                 setSelectedCategory(cat.id);
