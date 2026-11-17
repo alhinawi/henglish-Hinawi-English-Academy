@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../../LessonSpeechButton';
 import { Heart } from 'lucide-react';
 import { ArcadeIcon } from '../ArcadeIcon';
 import React, { useState } from 'react';
@@ -9,7 +10,7 @@ import { ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { shuffle, normalizeTyped, uniqueAcademyWords } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
-import { playSound, speakEnglish } from '../../../utils/audio';
+import { playSound } from '../../../utils/audio';
 
 export const LAB_GAMES = [
   { id: 'letter-rescue', title: 'wl.game.letter-rescue.title', tagline: 'wl.game.letter-rescue.tagline' },
@@ -99,7 +100,7 @@ export function WordLabGame({ id, onExit }: { id: LabId; onExit: () => void }) {
       {(r.kind === 'type' || r.kind === 'verb') && <div className="space-y-2"><input aria-label={r.kind === 'verb' ? 'V2' : t('wl.typeWordAria')} placeholder={r.kind === 'verb' ? 'Past simple (V2)' : t('wl.typeWordPh')} dir="ltr" spellCheck={false} autoComplete="off" autoCapitalize="none" value={typed} disabled={feedback !== null} onChange={e => setTyped(e.target.value)} className="w-full rounded-xl border border-white/20 bg-white/5 p-3 text-white"/>{r.kind === 'verb' && <input aria-label="V3" placeholder="Past participle (V3)" dir="ltr" spellCheck={false} autoComplete="off" value={third} disabled={feedback !== null} onChange={e => setThird(e.target.value)} className="w-full rounded-xl border border-white/20 bg-white/5 p-3 text-white"/>}</div>}
       {r.kind === 'choice' && <div className="grid grid-cols-2 gap-2">{r.options?.map(o => <button key={o} dir="auto" disabled={feedback !== null} className={button + (feedback !== null && o.trim().toLowerCase() === r.answer.trim().toLowerCase() ? ' !border-[#c4ff55] !text-[#c4ff55]' : '')} onClick={() => check(o)}>{o}</button>)}</div>}
       {feedback === null && !['choice', 'rescue'].includes(r.kind) && <button disabled={r.kind === 'letters' ? selected.length !== tiles.length : !typed.trim() || (r.kind === 'verb' && !third.trim())} onClick={() => check(r.kind === 'letters' ? selected.map(i => tiles[i]).join('') : typed)} className="w-full rounded-xl bg-[#c4ff55] p-3 font-black text-[#0c0b20] disabled:opacity-40">{t('wl.confirm')}</button>}
-      {feedback !== null && <div role="status" className="space-y-3 rounded-2xl border border-white/15 p-4"><p className={feedback ? 'text-[#c4ff55]' : 'text-[#ffd166]'}>{feedback ? t('wl.correct') : t('wl.correctAnswer')}</p><p dir="auto" className="font-bold text-white">{r.answer}{r.extra ? ` / ${r.extra}` : ''}</p><p dir="auto" className="text-sm leading-7 text-[#b9b6d5]">{r.detail}</p><button onClick={() => speakEnglish(r.answer)} className={button}>{t('wl.listen')}</button><button onClick={next} className="w-full rounded-xl bg-[#41e7ff] p-3 font-black text-[#0c0b20]">{index + 1 === rounds.length || (id === 'boss-run' && hearts <= 0) ? t('wl.seeResult') : t('wl.nextQuestion')}</button></div>}
+      {feedback !== null && <div role="status" className="space-y-3 rounded-2xl border border-white/15 p-4"><p className={feedback ? 'text-[#c4ff55]' : 'text-[#ffd166]'}>{feedback ? t('wl.correct') : t('wl.correctAnswer')}</p><p dir="auto" className="font-bold text-white">{r.answer}{r.extra ? ` / ${r.extra}` : ''}</p><p dir="auto" className="text-sm leading-7 text-[#b9b6d5]">{r.detail}</p><LessonSpeechButton key={index} text={r.answer} label={t('wl.listen')} className={button} /><button onClick={next} className="w-full rounded-xl bg-[#41e7ff] p-3 font-black text-[#0c0b20]">{index + 1 === rounds.length || (id === 'boss-run' && hearts <= 0) ? t('wl.seeResult') : t('wl.nextQuestion')}</button></div>}
     </div>
   </section>;
 }
