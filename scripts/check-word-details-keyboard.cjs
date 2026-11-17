@@ -24,3 +24,10 @@ const explorer=fs.readFileSync('src/components/vocabulary/VocabularyExplorer.tsx
 for(const text of ['role="dialog"','aria-modal="true"','aria-labelledby={filterTitleId}','filterCloseRef.current?.focus()',"event.key === 'Escape'","document.removeEventListener('keydown', handleKey)",'aria-pressed={selectedLetter === l}','aria-pressed={selectedPos === p.id}'])assert.ok(explorer.includes(text),text);
 for(const field of ['selectedDomain','selectedFrequency','sortBy']){assert.ok(explorer.includes('htmlFor={`${filterTitleId}-'+field+'`}'));assert.ok(explorer.includes('id={`${filterTitleId}-'+field+'`}'));}
 console.log('Word explorer filter sheet is named, keyboard-modal with focus restoration, labelled selects and pressed options: PASS');
+
+for(const text of ["aria-pressed={viewMode === 'grid'}","aria-pressed={viewMode === 'list'}"])assert.ok(explorer.includes(text),text);
+assert.ok(fs.readFileSync('src/components/vocabulary/MyVocabularyTab.tsx','utf8').includes('aria-pressed={reviewFilter === tab.id}'));
+for(const tab of ['stats','add','bulk'])assert.ok(manager.includes("aria-pressed={activeTab === '"+tab+"'}"));
+const academy=fs.readFileSync('src/views/VocabularyAcademyPage.tsx','utf8');
+for(const tab of ['explorer','my-vocab','expressions','verbs','thematic'])assert.ok(academy.includes("aria-pressed={activeTab === '"+tab+"'}"));
+console.log('Vocabulary layout/review/management/academy view selectors expose pressed state: PASS');

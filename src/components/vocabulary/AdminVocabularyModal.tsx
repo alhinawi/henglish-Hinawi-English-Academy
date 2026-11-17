@@ -194,6 +194,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
         {/* Tab Switcher */}
         <div className="flex items-center gap-2 border-b border-white/10 pb-3">
           <button
+            aria-pressed={activeTab === 'stats'}
             onClick={() => setActiveTab('stats')}
             className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'stats'
@@ -204,6 +205,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             {t('avm.tabStats')}
           </button>
           <button
+            aria-pressed={activeTab === 'add'}
             onClick={() => setActiveTab('add')}
             className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'add'
@@ -214,6 +216,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             {t('avm.tabAdd')}
           </button>
           <button
+            aria-pressed={activeTab === 'bulk'}
             onClick={() => setActiveTab('bulk')}
             className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeTab === 'bulk'
