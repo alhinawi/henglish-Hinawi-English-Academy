@@ -69,6 +69,8 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
   const [isCreatingCollection, setIsCreatingCollection] = useState(false);
   const [collectionSaveFailed, setCollectionSaveFailed] = useState(false);
 
+  const [historyWriteFailed, setHistoryWriteFailed] = useState(false);
+
   // Filtered History
   const filteredHistory = historyItems.filter(item => {
     if (onlyFavorites && !item.isFavorite) return false;
@@ -92,21 +94,24 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
   const handleToggleFav = (id: string) => {
     playSound('click');
-    const updated = toggleHistoryFavorite(id, learnerId);
-    setHistoryItems(updated);
+    setHistoryWriteFailed(false);
+    try { setHistoryItems(toggleHistoryFavorite(id, learnerId)); }
+    catch { setHistoryWriteFailed(true); }
   };
 
   const handleDeleteHistory = (id: string) => {
     playSound('click');
-    const updated = deleteHistoryItem(id, learnerId);
-    setHistoryItems(updated);
+    setHistoryWriteFailed(false);
+    try { setHistoryItems(deleteHistoryItem(id, learnerId)); }
+    catch { setHistoryWriteFailed(true); }
   };
 
   const handleClearAllHistory = () => {
     if (confirm(t('vh.confirmClear'))) {
       playSound('click');
-      clearTranslationHistory(learnerId);
-      setHistoryItems([]);
+      setHistoryWriteFailed(false);
+      try { clearTranslationHistory(learnerId); setHistoryItems([]); }
+      catch { setHistoryWriteFailed(true); }
     }
   };
 
@@ -135,6 +140,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
 
   return (
     <div className="space-y-6 text-right">
+      {historyWriteFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {/* Tab Switcher */}
       <div className="flex items-center justify-between p-2 bg-[#0e0c26] rounded-2xl border border-white/10 shadow-lg">
         <div className="flex items-center gap-2">
@@ -240,6 +246,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                       <button
                         type="button"
                         onClick={() => handleToggleFav(item.id)}
+                        aria-pressed={item.isFavorite}
                         className={`p-1 rounded-lg transition-colors cursor-pointer ${
                           item.isFavorite
                             ? 'text-[#ffb84d] hover:text-[#ffb84d]/80'
