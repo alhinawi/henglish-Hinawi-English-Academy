@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from 'react';
+import { sourceCategoryTarget } from '../services/sourceNavigation';
+import React, { useMemo, useState, useEffect } from 'react';
 import {
   Play,
   Smartphone,
@@ -60,6 +61,17 @@ import { loadSourceBookmarks, toggleSourceBookmark } from '../services/sourceBoo
 
 export const SourcesPage: React.FC<{ learnerId?: string }> = ({ learnerId }) => {
   const { t } = useLanguage();
+  useEffect(() => {
+    let frame = 0;
+    const scrollToCategory = () => {
+      cancelAnimationFrame(frame);
+      const target = sourceCategoryTarget(window.location.hash, SOURCE_CATEGORIES.map(category => category.id));
+      if (target) frame = requestAnimationFrame(() => document.getElementById(target)?.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    };
+    scrollToCategory();
+    window.addEventListener('hashchange', scrollToCategory);
+    return () => { cancelAnimationFrame(frame); window.removeEventListener('hashchange', scrollToCategory); };
+  }, []);
   const [query, setQuery] = useState('');
   const appText = useAppTextMap('sourcesData');
   const [costFilter, setCostFilter] = useState<'all' | SourceCost>('all');
@@ -284,7 +296,7 @@ export const SourcesPage: React.FC<{ learnerId?: string }> = ({ learnerId }) => 
               {SOURCE_CATEGORIES.map(cat => (
                 <a
                   key={cat.id}
-                  href={`#sources-${cat.id}`}
+                  href={`#sources/${cat.id}`}
                   onClick={() => setFiltersOpen(false)}
                   className="px-2 py-0.5 rounded-lg hover:bg-white/5 hover:text-[#41e7ff] transition-colors"
                 >
