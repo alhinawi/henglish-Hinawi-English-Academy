@@ -8,7 +8,7 @@ import { useAppTextMap } from '../../../services/contentI18nService';
 import { ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { shuffle, normalizeTyped, uniqueAcademyWords } from '../arcadeContent';
-import { recordGameResult, useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { playSound, speakEnglish } from '../../../utils/audio';
 
 export const LAB_GAMES = [
@@ -60,6 +60,7 @@ export function WordLabGame({ id, onExit }: { id: LabId; onExit: () => void }) {
   const metaRaw = LAB_GAMES.find(g => g.id === id)!;
   const meta: ArcadeGameMeta = { ...metaRaw, title: t(metaRaw.title), tagline: t(metaRaw.tagline) };
   const progress = useArcadeProgress();
+  const { recordGameResult } = progress;
   const [level, setLevel] = useState('all');
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
   const [rounds, setRounds] = useState<Round[]>([]);
