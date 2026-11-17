@@ -20,7 +20,8 @@ import {
   getVocabularyCollections,
   createVocabularyCollection,
 } from '../../services/translationService';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound } from '../../utils/audio';
+import { LessonSpeechButton } from '../LessonSpeechButton';
 import {
   History,
   Bookmark,
@@ -130,10 +131,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
     }
   };
 
-  const handleSpeak = (text: string, lang: string = 'en') => {
-    playSound('click');
-    speakMultilingualText(text, lang);
-  };
+
 
   return (
     <div className="space-y-6 text-right">
@@ -273,7 +271,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                   </div>
 
                   {/* Footer Actions */}
-                  <div className="flex items-center justify-between pt-2 border-t border-white/5">
+                  <div className="flex flex-wrap items-start justify-between gap-3 pt-2 border-t border-white/5">
                     <button
                       type="button"
                       onClick={() => {
@@ -286,14 +284,8 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                       <span>{t('vh.reuseInEditor')}</span>
                     </button>
 
-                    <button
-                      type="button"
-                      onClick={() => handleSpeak(item.translatedText, item.targetLang)}
-                      className="p-1.5 rounded-lg text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer"
-                      title={t('vh.listen')}
-                    >
-                      <Volume2 className="w-3.5 h-3.5" />
-                    </button>
+                    <LessonSpeechButton text={item.translatedText} language={item.targetLang} label={t('vh.listen')} iconOnly
+                      className="p-1.5 rounded-lg text-[#b9b6d5] hover:text-white hover:bg-white/5 transition-colors cursor-pointer" />
                   </div>
                 </div>
               ))}
@@ -436,18 +428,12 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
                     )}
                   </div>
 
-                  <div className="flex items-center justify-between pt-2 border-t border-white/5 text-xs">
+                  <div className="flex flex-wrap items-start justify-between gap-3 pt-2 border-t border-white/5 text-xs">
                     <span className="text-[10px] text-[#10b981] font-medium">
                       {t('vh.srsActive')}
                     </span>
-                    <button
-                      type="button"
-                      onClick={() => handleSpeak(card.wordOrPhrase, 'en')}
-                      className="p-1 rounded-md text-[#b9b6d5] hover:text-[#41e7ff] cursor-pointer"
-                      title={t('vh.listen')}
-                    >
-                      <Volume2 className="w-3.5 h-3.5" />
-                    </button>
+                    <LessonSpeechButton text={card.wordOrPhrase} label={t('vh.listen')} iconOnly
+                      className="p-1 rounded-md text-[#b9b6d5] hover:text-[#41e7ff] cursor-pointer" />
                   </div>
                 </div>
               ))}
