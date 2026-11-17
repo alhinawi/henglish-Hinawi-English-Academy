@@ -1741,7 +1741,7 @@
   "slp.pronounceTitle": "Pronounce the question",
   "rle.badge": "Interactive Real-Life English Simulator",
   "rle.heroTitle": "English for Real Situations and Everyday Life",
-  "rle.heroBody": "Practice English in your daily situations without fear: live branching conversations at the airport, hotel, restaurant, hospital, and job interviews, with human-like pronunciation and smart language quizzes.",
+  "rle.heroBody": "Practice short English conversations for airports, hotels, restaurants, healthcare and job interviews. Choose from prepared replies and read feedback, with optional speech playback.",
   "rle.heroNote": "Pick one situation to open its conversation alone in a focused training screen.",
   "rle.explore3d": "Explore the 3D World",
   "rle.backToList": "Back to situations list",
@@ -1760,12 +1760,12 @@
   "rle.chooseReply": "Choose the most suitable and polite reply for this situation:",
   "rle.restartDialogue": "Restart the conversation",
   "rle.continueDialogue": "Continue the dialogue",
-  "rle.finishScenario": "Finish the scenario and collect points",
+  "rle.finishScenario": "Finish the practice conversation",
   "rle.donePre": "Congratulations! You completed the",
   "rle.donePost": "scenario successfully",
-  "rle.doneBody": "You practiced the dialogue like a native speaker and overcame the language challenges of the situation.",
-  "rle.totalReward": "Total points reward",
-  "rle.recorded": "Achievement recorded in your academic profile",
+  "rle.doneBody": "You finished this practice conversation. Review the feedback or replay to try different replies.",
+  "rle.totalReward": "Score for this attempt",
+  "rle.recorded": "Practice score only. This attempt is not saved to your profile and does not award XP.",
   "rle.replay": "Replay the simulation",
   "rle.glossaryBadge": "Situation Survival Glossary",
   "rle.glossaryTitle": "Top automatic words and phrases for",
@@ -2889,5 +2889,6 @@
   "lw.task": "Task · {title}",
   "lw.editRetry": "Check the model. Target wording: {target}",
   "lw.draftNote": "Write your response. Aim for at least {count} words. This editor does not send your draft to anyone.",
-  "lw.wordCount": "{count} / {target} words"
+  "lw.wordCount": "{count} / {target} words",
+  "rle.scoreUnit": "points"
 }
