@@ -1,9 +1,10 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import React, { useState } from 'react';
 import { SentenceBuilder } from '../components/SentenceBuilder';
 import { MISTAKE_HUNTER_CASES } from '../data/gamesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
-import { Sparkles, AlertTriangle, Eye, EyeOff, Volume2 } from 'lucide-react';
+import { playSound, fireCelebration } from '../utils/audio';
+import { Sparkles, AlertTriangle, Eye, EyeOff } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export const PracticePage: React.FC = () => {
@@ -86,17 +87,11 @@ export const PracticePage: React.FC = () => {
                 key={item.id}
                 className="p-5 rounded-2xl bg-[#09091a] border border-white/10 space-y-3"
               >
-                <div className="flex items-center justify-between" dir="ltr">
+                <div className="flex flex-wrap items-start justify-between gap-3" dir="ltr">
                   <p className="en text-base sm:text-lg font-bold text-white text-left" dir="ltr" lang="en">
                     {item.sentence}
                   </p>
-                  <button
-                    onClick={() => speakEnglish(item.sentence)}
-                    className="p-1 text-[#41e7ff] hover:text-white shrink-0 ml-2"
-                    title={t('pp.listenSentence')}
-                  >
-                    <Volume2 className="w-4 h-4" />
-                  </button>
+                  <LessonSpeechButton key={item.id} text={item.sentence} label={t('pp.listenSentence')} iconOnly className="p-1 text-[#41e7ff] hover:text-white shrink-0 ml-2" />
                 </div>
 
                 {!answered ? (
