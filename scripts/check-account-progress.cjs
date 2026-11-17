@@ -32,6 +32,7 @@ function render(...args){if(args.length)identity=args[0];let guard=0;do{dirty=fa
 const tick=async()=>{await new Promise(setImmediate);render()};
 (async()=>{
  render('A');assert.deepEqual(Object.keys(result.progress.quizScores),[]);assert.equal(dbWrites.length,0);assert.equal(apiWrites.length,0);
+ result.markLessonComplete('lesson-once');render();const firstXp=result.userProfile.xp;result.markLessonComplete('lesson-once');render();assert.equal(result.userProfile.xp,firstXp);assert.equal(result.progress.completedLessons.length,1);
  result.recordQuizScore('A-only',4,5);render();const staleA=result.recordQuizScore;assert.equal(result.progress.quizScores['A-only'].score,4);
  token='token-B';render('B');assert.deepEqual(Object.keys(result.progress.quizScores),[]);staleA('stale-A',5,5);render();assert.deepEqual(Object.keys(result.progress.quizScores),[]);
  apiReads[0].resolve({progress:{quizScores:{'late-A':100},xp:900}});dbReads[0].resolve({quizScores:{'late-db-A':100},totalXp:900,completedLessons:[]});await tick();assert.equal(result.progress.xp,0);assert.equal(apiWrites.length,0);assert.equal(migrations.length,0);
