@@ -386,6 +386,19 @@ const ExamDetailSheet: React.FC<{
   const [overlay, setOverlay] = useState<string[] | null>(null);
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
+  const copyVersion = useRef(0);
+  const copyTimer = useRef<number | null>(null);
+  useEffect(() => {
+    copyVersion.current += 1;
+    setCopied(false);
+    setCopyFailed(false);
+    return () => {
+      copyVersion.current += 1;
+      if (copyTimer.current !== null) window.clearTimeout(copyTimer.current);
+      copyTimer.current = null;
+    };
+  }, [entry.id, lang]);
+
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const titleId = useId();
@@ -462,9 +475,13 @@ const ExamDetailSheet: React.FC<{
       lines.push(`${i + 1}. ${s.en}`);
       lines.push(`   ${s.ar}`);
     });
+    const version = ++copyVersion.current;
+    if (copyTimer.current !== null) window.clearTimeout(copyTimer.current);
+    copyTimer.current = null;
     setCopied(false);
     setCopyFailed(false);
     let success = await copyText(lines.join('\n'));
+    if (version !== copyVersion.current) return;
     if (!success) {
       const area = document.createElement('textarea');
       try {
@@ -483,7 +500,9 @@ const ExamDetailSheet: React.FC<{
     }
     if (!success) { setCopyFailed(true); return; }
     setCopied(true);
-    window.setTimeout(() => setCopied(false), 2000);
+    copyTimer.current = window.setTimeout(() => {
+      if (version === copyVersion.current) setCopied(false);
+    }, 2000);
   };
 
   return (
