@@ -93,6 +93,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
   // Modals state
   const [isImportModalOpen, setIsImportModalOpen] = useState(false);
+  const [importYoutubeId, setImportYoutubeId] = useState('');
   const [isAdminModalOpen, setIsAdminModalOpen] = useState(false);
 
   // Dynamic Catalog State
@@ -279,6 +280,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
               <button
                 onClick={() => {
                   playSound('click');
+                  setImportYoutubeId('');
                   setIsImportModalOpen(true);
                 }}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-black bg-[#c4ff55] text-[#09091a] hover:bg-[#d5ff78] transition-all cursor-pointer shadow-md"
@@ -775,6 +777,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
                             <button
                               onClick={() => {
+                                setImportYoutubeId(item.youtubeId);
                                 setIsImportModalOpen(true);
                               }}
                               className="px-3 py-2 rounded-xl bg-[#c4ff55]/20 hover:bg-[#c4ff55]/30 text-[#c4ff55] border border-[#c4ff55]/40 font-bold text-xs transition-colors cursor-pointer"
@@ -994,6 +997,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
       {/* MODAL 1: SMART EDUCATIONAL VIDEO IMPORT MODAL */}
       <EducationalVideoImportModal
         isOpen={isImportModalOpen}
+        initialYoutubeId={importYoutubeId}
         onClose={() => setIsImportModalOpen(false)}
         onImportSuccess={newVideo => {
           setCatalogUpdateCounter(c => c + 1);
@@ -1005,7 +1009,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
       <AdminVideoManagementModal
         isOpen={isAdminModalOpen}
         onClose={() => setIsAdminModalOpen(false)}
-        onOpenImportModal={() => setIsImportModalOpen(true)}
+        onOpenImportModal={() => { setImportYoutubeId(''); setIsImportModalOpen(true); }}
         onCatalogChanged={() => setCatalogUpdateCounter(c => c + 1)}
       />
     </div>
