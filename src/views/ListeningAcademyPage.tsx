@@ -48,7 +48,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   useEffect(() => { const next = load(storageKey); savedRef.current = next; setSaved(next); }, [storageKey]);
   useEffect(() => subscribeSpeechState((active) => setPlaying(active)), []);
   useEffect(() => () => stopSpeech(), []);
-  const visible = useMemo(() => ALL_LISTENING_LESSONS.filter(t => (level === 'All' || (level === 'Legacy' ? !t.original : t.level === level && t.original)) && `${t.title} ${t.titleAr} ${t.focusAr}`.toLowerCase().includes(query.toLowerCase()) && (!reviewOnly || solvedListeningTasks(saved, t.id, taskIds(t)).length < taskIds(t).length)), [level, query, reviewOnly, saved]);
+  const visible = useMemo(() => ALL_LISTENING_LESSONS.filter(t => (level === 'All' || (level === 'Legacy' ? !t.original : t.level === level && t.original)) && `${t.title} ${t.titleAr} ${t.focusAr} ${t.focusEn} ${txText(appText, t.titleAr)} ${txText(appText, t.focusAr)}`.toLowerCase().includes(query.trim().toLowerCase()) && (!reviewOnly || solvedListeningTasks(saved, t.id, taskIds(t)).length < taskIds(t).length)), [level, query, reviewOnly, saved, appText]);
   const completed = ALL_LISTENING_LESSONS.filter(t => solvedListeningTasks(saved, t.id, taskIds(t)).length === taskIds(t).length).length;
   const totalActivities = ALL_LISTENING_LESSONS.reduce((n, t) => n + taskIds(t).length, 0);
   const solved = selected ? solvedListeningTasks(saved, selected.id, taskIds(selected)) : [];
