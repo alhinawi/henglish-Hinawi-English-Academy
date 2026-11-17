@@ -28,7 +28,7 @@ export const GUEST_PROFILE: UserProfile = {
   id: 'guest-learner',
   name: 'Guest Learner',
   nameAr: 'طالب زائر (Guest)',
-  email: 'guest@henglish.academy',
+  email: '',
   avatar: ANONYMOUS_AVATAR,
   role: 'student',
   currentLevel: 'A1',
@@ -36,7 +36,7 @@ export const GUEST_PROFILE: UserProfile = {
   // Guests start at real zero — no pre-seeded XP or streak (no-fake-data rule).
   xp: 0,
   streakDays: 0,
-  joinedDate: '2026-10-30',
+  joinedDate: '',
   bio: 'وضع الزائر: يمكنك تجربة الدروس والمحاكاة، وحفظ تقدمك مؤقتاً في متصفحك.',
 };
 
@@ -221,8 +221,8 @@ export function mapSupabaseUserToProfile(
   const nameAr = (profileRow?.full_name_ar as string) || (metadata.full_name_ar as string) || name;
   const currentLevel: CEFRLevel = (profileRow?.current_level as CEFRLevel) || (metadata.current_level as CEFRLevel) || 'A1';
   const targetLevel: CEFRLevel = (profileRow?.target_level as CEFRLevel) || (metadata.target_level as CEFRLevel) || 'B2';
-  const xp = typeof profileRow?.xp_points === 'number' ? profileRow.xp_points : (metadata.xp as number) || 100;
-  const streakDays = typeof profileRow?.streak_days === 'number' ? profileRow.streak_days : (metadata.streak_days as number) || 1;
+  const xp = typeof profileRow?.xp_points === 'number' ? profileRow.xp_points : (metadata.xp as number) || 0;
+  const streakDays = typeof profileRow?.streak_days === 'number' ? profileRow.streak_days : (metadata.streak_days as number) || 0;
   const avatar = (profileRow?.avatar_url as string) || (metadata.avatar_url as string) || ANONYMOUS_AVATAR;
 
   return {
@@ -236,8 +236,8 @@ export function mapSupabaseUserToProfile(
     targetLevel,
     xp,
     streakDays,
-    joinedDate: authUser.created_at ? authUser.created_at.split('T')[0] : new Date().toISOString().split('T')[0],
-    bio: (profileRow?.bio as string) || metadata.bio || 'طالب متميز في Henglish Academy',
+    joinedDate: authUser.created_at ? authUser.created_at.split('T')[0] : '',
+    bio: (profileRow?.bio as string) || metadata.bio || '',
   };
 }
 
@@ -267,8 +267,8 @@ export function mapApiUserToProfile(u: ApiUser, role: UserRole = 'student'): Use
     currentLevel: 'A1',
     targetLevel: 'B2',
     xp: 0,
-    streakDays: 1,
-    joinedDate: (u.created_at || new Date().toISOString()).split('T')[0],
+    streakDays: 0,
+    joinedDate: u.created_at ? u.created_at.split('T')[0] : '',
   };
 }
 
