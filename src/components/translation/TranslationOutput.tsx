@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION OUTPUT PANEL
 // Features interactive word clicking, multilingual audio playback, and copy action
@@ -6,7 +7,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound } from '../../utils/audio';
 import { Volume2, Copy, Check, Sparkles, AlertCircle, RefreshCw } from 'lucide-react';
 
 interface TranslationOutputProps {
@@ -45,11 +46,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
     } catch {}
   };
 
-  const handleSpeak = () => {
-    if (!translatedText.trim()) return;
-    playSound('click');
-    speakMultilingualText(translatedText, targetLang);
-  };
+
 
   // Split words while preserving punctuation for interactive word analysis
   const words = translatedText.split(/(\s+)/);
@@ -57,7 +54,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
   return (
     <div className="flex flex-col h-full bg-[#0e0c26] rounded-2xl border border-white/10 shadow-xl overflow-hidden">
       {/* Output Header Bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
+      <div className="flex flex-wrap items-start justify-between gap-3 px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
         <span className="font-medium text-white flex items-center gap-1.5">
           <span>{t('to.title')}</span>
           {translatedText && !isLoading && (
@@ -67,7 +64,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
           )}
         </span>
 
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-start gap-1">
           {/* Copy Button */}
           <button
             type="button"
@@ -80,15 +77,8 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
           </button>
 
           {/* Text-to-Speech Button */}
-          <button
-            type="button"
-            onClick={handleSpeak}
-            disabled={!translatedText.trim() || isLoading}
-            title={t('to.speak')}
-            className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
-          >
-            <Volume2 className="w-3.5 h-3.5" />
-          </button>
+          <LessonSpeechButton key={translatedText + targetLang} text={translatedText} language={targetLang} label={t('to.speak')} iconOnly disabled={!translatedText.trim() || isLoading}
+              className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed" />
         </div>
       </div>
 
@@ -193,7 +183,7 @@ export const TranslationOutput: React.FC<TranslationOutputProps> = ({
       </div>
 
       {/* Output Footer Bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-t border-white/10 text-xs text-[#b9b6d5]/70">
+      <div className="flex flex-wrap items-start justify-between gap-3 px-4 py-2.5 bg-white/5 border-t border-white/10 text-xs text-[#b9b6d5]/70">
         <span>{translatedText.length} {t('to.characters')}</span>
         <span className="text-[11px] text-[#41e7ff]/80">{t('to.footer')}</span>
       </div>

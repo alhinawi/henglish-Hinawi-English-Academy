@@ -5,6 +5,7 @@ const checks = [
   'check-speaking-dialogue-speech.cjs',
   'check-legacy-dialogue-speech.cjs',
   'check-library-speech.cjs',
+  'check-studio-speech.cjs',
   'check-assessment-speech-controls.cjs',
   'check-practice-speech-controls.cjs',
   'check-sentence-copy-lifecycle.cjs',
