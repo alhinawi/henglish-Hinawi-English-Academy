@@ -62,6 +62,7 @@ import {
 } from 'lucide-react';
 
 interface SentencesLibraryPageProps {
+  learnerId?: string;
   onNavigate: (route: PageRoute) => void;
 }
 
@@ -100,7 +101,7 @@ const SECTIONS_METADATA = [
   { id: 'Section 12 — Real Conversation Expressions', title: 'Real Spoken English', titleAr: 'sl.sec.12', icon: '', subCount: 10 },
 ];
 
-export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNavigate }) => {
+export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNavigate, learnerId }) => {
   // Main state
   const [allSentences, setAllSentences] = useState<SentenceItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -122,13 +123,13 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
 
   const [learningRevision, setLearningRevision] = useState(0);
   const handleLearningChange = () => {
-    setStats(getSentenceStats());
+    setStats(getSentenceStats(learnerId));
     setLearningRevision(n => n + 1);
   };
 
   // SRS and Stats
-  const [stats, setStats] = useState<SentenceLearningStats>(getSentenceStats());
-  const [collections, setCollections] = useState<UserSentenceCollection[]>(getCollections());
+  const [stats, setStats] = useState<SentenceLearningStats>(getSentenceStats(learnerId));
+  const [collections, setCollections] = useState<UserSentenceCollection[]>(getCollections(learnerId));
   const [newCollectionName, setNewCollectionName] = useState('');
   const [isCreatingCollection, setIsCreatingCollection] = useState(false);
 
@@ -161,8 +162,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
       setWeeklySentence(weekly);
       const rand = await getRandomSentence();
       setRandomSentence(rand);
-      setStats(getSentenceStats());
-      setCollections(getCollections());
+      setStats(getSentenceStats(learnerId));
+      setCollections(getCollections(learnerId));
       setIsLoading(false);
     }
     init();
@@ -228,20 +229,20 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
         return allSentences.filter(s => s.grammar.toLowerCase().includes(selectedGrammar.toLowerCase()));
       }
       case 'favorites': {
-        const favIds = new Set(getFavoriteSentenceIds());
+        const favIds = new Set(getFavoriteSentenceIds(learnerId));
         return allSentences.filter(s => favIds.has(s.id));
       }
       case 'difficult': {
-        const diffIds = new Set(getDifficultSentenceIds());
+        const diffIds = new Set(getDifficultSentenceIds(learnerId));
         return allSentences.filter(s => diffIds.has(s.id));
       }
       case 'recent': {
-        const recIds = getRecentlyStudiedIds();
+        const recIds = getRecentlyStudiedIds(learnerId);
         const map = new Map(allSentences.map(s => [s.id, s]));
         return recIds.map(id => map.get(id)).filter(Boolean) as SentenceItem[];
       }
       case 'srs': {
-        const dueIds = new Set(getDueSentencesIds());
+        const dueIds = new Set(getDueSentencesIds(learnerId));
         return allSentences.filter(s => dueIds.has(s.id));
       }
       default:
@@ -319,17 +320,17 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   const handleCreateCollection = () => {
     if (!newCollectionName.trim()) return;
     playSound('success');
-    createCollection(newCollectionName.trim(), '#8b5cf6');
+    createCollection(newCollectionName.trim(), '#8b5cf6', undefined, learnerId);
     setNewCollectionName('');
     setIsCreatingCollection(false);
-    setCollections(getCollections());
+    setCollections(getCollections(learnerId));
   };
 
   // Delete Collection
   const handleDeleteCollection = (colId: string) => {
     playSound('click');
-    deleteCollection(colId);
-    setCollections(getCollections());
+    deleteCollection(colId, learnerId);
+    setCollections(getCollections(learnerId));
   };
 
   return (
@@ -542,7 +543,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </span>
             <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG-u-nu-latn')}</span>
           </div>
-          <SentenceCard onLearningChange={handleLearningChange}
+          <SentenceCard learnerId={learnerId} onLearningChange={handleLearningChange}
             key={dailySentence.id}
             sentence={dailySentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
@@ -560,7 +561,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </span>
             <span className="text-xs font-mono">Mastery Expression</span>
           </div>
-          <SentenceCard onLearningChange={handleLearningChange}
+          <SentenceCard learnerId={learnerId} onLearningChange={handleLearningChange}
             key={weeklySentence.id}
             sentence={weeklySentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
@@ -581,7 +582,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               <span>{t('sl.anotherRandom')}</span>
             </button>
           </div>
-          <SentenceCard onLearningChange={handleLearningChange}
+          <SentenceCard learnerId={learnerId} onLearningChange={handleLearningChange}
             key={randomSentence.id}
             sentence={randomSentence}
             onPracticeWithAi={() => onNavigate('ai-tutor')}
@@ -714,7 +715,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
             </button>
           ) : (
             <div className="max-w-2xl mx-auto text-right">
-              <SentenceCard key={randomSentence.id} onLearningChange={handleLearningChange} sentence={randomSentence} />
+              <SentenceCard learnerId={learnerId} key={randomSentence.id} onLearningChange={handleLearningChange} sentence={randomSentence} />
             </div>
           )}
 
@@ -850,7 +851,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {paginatedSentences.map(sentence => (
-                <SentenceCard onLearningChange={handleLearningChange}
+                <SentenceCard learnerId={learnerId} onLearningChange={handleLearningChange}
                   key={sentence.id}
                   sentence={sentence}
                   onPracticeWithAi={() => onNavigate('ai-tutor')}
