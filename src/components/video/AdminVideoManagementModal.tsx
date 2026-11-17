@@ -5,7 +5,7 @@
 
 import { txText, useAppTextMap } from '../../services/contentI18nService';
 import { videoImportError } from '../../services/videoImportError';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   X,
   ShieldCheck,
@@ -58,6 +58,34 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     if (isOpen) {
       setVideos(getStoredVideos());
     }
+  }, [isOpen]);
+
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
+  useEffect(() => {
+    if (!isOpen) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    (focusable()[0] || dialog)?.focus();
+    const handleKey = (event: KeyboardEvent) => {
+      const activeDialog = document.activeElement?.closest('[role="dialog"]');
+      if (activeDialog && activeDialog !== dialog) return;
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return; }
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', handleKey);
+    return () => { document.removeEventListener('keydown', handleKey); if (opener?.isConnected && opener.getClientRects().length) opener.focus(); };
   }, [isOpen]);
 
   if (!isOpen) return null;
@@ -144,14 +172,14 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-      <div
+      <div ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-label={t('avmm.title')}
         className="w-full max-w-4xl rounded-3xl border border-white/15 bg-linear-to-b from-[#14132b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-right space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
         onClick={e => e.stopPropagation()}
       >
         {/* Top Bar */}
         <div className="flex items-center justify-between pb-4 border-b border-white/10">
           <button
-            onClick={onClose}
+            onClick={onClose} aria-label={t('settings.close')}
             className="p-2 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-all cursor-pointer"
           >
             <X className="w-5 h-5" />
