@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "Meningsbiblioteket kunde inte laddas. Det är ett laddningsfel, inte en sökning utan resultat. Försök igen.",
-  "dt.errNoPdfText": "Denna PDF saknar markerbar text och kan innehålla skannade sidor. Ladda upp en PDF med markerbar text eller klistra in texten i en TXT-fil."
+  "dt.errNoPdfText": "Denna PDF saknar markerbar text och kan innehålla skannade sidor. Ladda upp en PDF med markerbar text eller klistra in texten i en TXT-fil.",
+  "lp.noteStorage": "Anteckningar sparas bara i den här webbläsaren, separat per elev och lektion. De synkas inte med andra enheter.",
+  "lp.noteSavedLocal": "Sparat i den här webbläsaren."
 }

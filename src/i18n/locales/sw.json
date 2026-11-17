@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "Maktaba ya sentensi haikuweza kupakiwa. Hili ni hitilafu ya kupakia, si utafutaji usio na matokeo. Jaribu tena.",
-  "dt.errNoPdfText": "PDF hii haina maandishi yanayoweza kuchaguliwa na huenda ina kurasa zilizochanganuliwa. Pakia PDF yenye maandishi yanayochaguliwa au bandika maandishi kwenye faili ya TXT."
+  "dt.errNoPdfText": "PDF hii haina maandishi yanayoweza kuchaguliwa na huenda ina kurasa zilizochanganuliwa. Pakia PDF yenye maandishi yanayochaguliwa au bandika maandishi kwenye faili ya TXT.",
+  "lp.noteStorage": "Madokezo yanahifadhiwa kwenye kivinjari hiki tu, tofauti kwa kila mwanafunzi na somo. Hayasawazishwi na vifaa vingine.",
+  "lp.noteSavedLocal": "Yamehifadhiwa kwenye kivinjari hiki."
 }
