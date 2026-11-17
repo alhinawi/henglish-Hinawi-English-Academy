@@ -2905,5 +2905,6 @@
   "lp.noteSavedLocal": "Saved in this browser.",
   "ts.vocabReviewPartial": "Saved to vocabulary on this device, but the review schedule could not be saved. Allow storage and save again.",
   "ap.storageError": "Your game progress is only kept for this visit. Saving on this device failed. Allow storage and try again before leaving.",
-  "ap.unreadable": "Saved game progress on this device could not be read. The original copy is unchanged. New progress is kept only for this visit so it cannot overwrite that copy."
+  "ap.unreadable": "Saved game progress on this device could not be read. The original copy is unchanged. New progress is kept only for this visit so it cannot overwrite that copy.",
+  "auth.verificationSessionChanged": "Your account changed while verification was pending. Open verification again for the current account."
 }
