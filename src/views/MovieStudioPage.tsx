@@ -952,21 +952,21 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                 ) : (
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {recentlyWatched.map(video => (
-                      <div
+                      <button type="button" aria-label={`${t('ms.resumeWatching')}: ${video.sceneTitle}`}
                         key={video.id}
                         onClick={() => handleSelectScene(video)}
-                        className="p-3 rounded-2xl glass-panel border border-white/10 hover:border-white/25 transition-all cursor-pointer flex items-center gap-3"
+                        className="p-3 rounded-2xl glass-panel border border-white/10 hover:border-white/25 transition-all cursor-pointer flex items-center gap-3 w-full text-start"
                       >
                         <img
                           src={video.thumbnailUrl || `https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
                           alt={video.sceneTitle}
                           className="w-16 h-12 object-cover rounded-xl shrink-0"
                         />
-                        <div className="space-y-0.5 overflow-hidden">
-                          <h5 className="font-bold text-white text-xs truncate">{video.sceneTitle}</h5>
-                          <p className="text-[10px] text-white/50 truncate">{video.movieTitle}</p>
-                        </div>
-                      </div>
+                        <span className="space-y-0.5 overflow-hidden">
+                          <span className="font-bold text-white text-xs truncate">{video.sceneTitle}</span>
+                          <span className="block text-[10px] text-white/50 truncate">{video.movieTitle}</span>
+                        </span>
+                      </button>
                     ))}
                   </div>
                 )}
