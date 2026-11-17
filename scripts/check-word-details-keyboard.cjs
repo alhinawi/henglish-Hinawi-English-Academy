@@ -31,3 +31,7 @@ for(const tab of ['stats','add','bulk'])assert.ok(manager.includes("aria-pressed
 const academy=fs.readFileSync('src/views/VocabularyAcademyPage.tsx','utf8');
 for(const tab of ['explorer','my-vocab','expressions','verbs','thematic'])assert.ok(academy.includes("aria-pressed={activeTab === '"+tab+"'}"));
 console.log('Vocabulary layout/review/management/academy view selectors expose pressed state: PASS');
+
+assert.ok(modal.includes("aria-label={t('wdm.notes')}"));
+for(const [file,prefix] of [['PhraseBankPanel','pb'],['ExamVocabPanel','ev']])assert.ok(fs.readFileSync('src/components/'+file+'.tsx','utf8').includes("aria-label={t('"+prefix+".searchPlaceholder')}"));
+console.log('Phrase/exam search and personal word note have explicit localized names: PASS');
