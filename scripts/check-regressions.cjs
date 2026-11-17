@@ -48,6 +48,7 @@ const checks = [
   'check-sentence-stats.cjs',
   'check-copy-success.cjs',
   'check-writing-copy-lifecycle.cjs',
+  'check-vocabulary-page-window.cjs',
   'check-sentence-rating-bidi.cjs',
   'check-sentence-direction.cjs',
   'check-sentence-refresh.cjs',

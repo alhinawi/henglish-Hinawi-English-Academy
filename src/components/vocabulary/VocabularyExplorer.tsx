@@ -481,12 +481,12 @@ export const VocabularyExplorer: React.FC = () => {
 
                 <div className="flex items-center gap-1">
                   {[...Array(Math.min(5, searchResults.totalPages))].map((_, i) => {
-                    let pageNum = searchResults.page - 2 + i;
-                    if (pageNum < 1) pageNum = i + 1;
-                    if (pageNum > searchResults.totalPages) return null;
+                    const firstPage = Math.max(1, Math.min(searchResults.page - 2, searchResults.totalPages - 4));
+                    const pageNum = firstPage + i;
                     return (
                       <button
                         key={pageNum}
+                        aria-current={searchResults.page === pageNum ? 'page' : undefined}
                         onClick={() => {
                           playSound('click');
                           setPage(pageNum);
