@@ -11388,12 +11388,18 @@ export function getSavedVideos(userId?: string): EducationalVideoItem[] {
 }
 
 export function toggleSaveVideo(video: EducationalVideoItem, userId?: string): { isSaved: boolean; list: EducationalVideoItem[] } {
-  let list = getSavedVideos(userId);
+  // Run guest migration, then validate the owner copy before replacing it.
+  getSavedVideos(userId);
+  const key = mediaStorageKey(STORAGE_SAVED_VIDEOS_KEY, userId);
+  const raw = localStorage.getItem(key);
+  const parsed: unknown = raw === null ? [] : JSON.parse(raw);
+  if (!Array.isArray(parsed) || parsed.some(item => !item || typeof item !== 'object' || typeof item.youtubeId !== 'string')) {
+    throw new Error('Saved videos are unreadable');
+  }
+  let list: EducationalVideoItem[] = parsed.map(applyMovieTranscriptCorrections);
   const exists = list.some(v => v.youtubeId === video.youtubeId);
   list = exists ? list.filter(v => v.youtubeId !== video.youtubeId) : [video, ...list];
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_SAVED_VIDEOS_KEY, userId), JSON.stringify(list));
-  } catch { /* Browser storage is optional. */ }
+  localStorage.setItem(key, JSON.stringify(list));
   return { isSaved: !exists, list };
 }
 
