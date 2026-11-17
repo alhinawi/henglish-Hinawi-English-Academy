@@ -66,6 +66,7 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
   const [selectedCollectionFilter, setSelectedCollectionFilter] = useState<string>('all');
   const [newCollectionName, setNewCollectionName] = useState('');
   const [isCreatingCollection, setIsCreatingCollection] = useState(false);
+  const [collectionSaveFailed, setCollectionSaveFailed] = useState(false);
 
   // Filtered History
   const filteredHistory = historyItems.filter(item => {
@@ -118,10 +119,15 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
     e.preventDefault();
     if (!newCollectionName.trim()) return;
     playSound('click');
-    const created = createVocabularyCollection(newCollectionName.trim(), newCollectionName.trim(), undefined, undefined, learnerId);
-    setCollections(prev => [...prev, created]);
-    setNewCollectionName('');
-    setIsCreatingCollection(false);
+    setCollectionSaveFailed(false);
+    try {
+      const created = createVocabularyCollection(newCollectionName.trim(), newCollectionName.trim(), undefined, undefined, learnerId);
+      setCollections(prev => [...prev, created]);
+      setNewCollectionName('');
+      setIsCreatingCollection(false);
+    } catch {
+      setCollectionSaveFailed(true);
+    }
   };
 
   const handleSpeak = (text: string, lang: string = 'en') => {
@@ -327,15 +333,16 @@ export const VocabularyHistoryTab: React.FC<VocabularyHistoryTabProps> = ({
               </button>
             </div>
 
+            <p role="status" className="text-xs leading-6 text-amber-200">{collectionSaveFailed ? t('vocab.saveError') : ''}</p>
             {/* Create Collection Form */}
             {isCreatingCollection && (
               <form onSubmit={handleCreateCollection} className="flex gap-2 pt-2 border-t border-white/5">
                 <input
                   type="text"
                   value={newCollectionName}
-                  onChange={e => setNewCollectionName(e.target.value)}
+                  onChange={e => { setNewCollectionName(e.target.value); setCollectionSaveFailed(false); }}
                   placeholder={t('vh.deckNamePlaceholder')}
-                  className="flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white placeholder-[#b9b6d5]/40 focus:outline-none focus:border-[#41e7ff]"
+                  className="min-w-0 flex-1 bg-black/40 border border-white/10 rounded-xl px-3 py-1.5 text-xs text-white placeholder-[#b9b6d5]/40 focus:outline-none focus:border-[#41e7ff]"
                   autoFocus
                 />
                 <button
