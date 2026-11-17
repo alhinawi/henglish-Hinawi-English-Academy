@@ -1,0 +1,14 @@
+# The real content dictionary is generated from vocabularyAcademyData + movieScenesData.
+import functools,http.server,json,pathlib,threading,subprocess
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd();server=http.server.ThreadingHTTPServer(('127.0.0.1',4188),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start();meanings=json.loads(subprocess.check_output(['node','-e',"const fs=require('fs'),ts=require('typescript');require.extensions['.ts']=(m,f)=>m._compile(ts.transpileModule(fs.readFileSync(f,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,esModuleInterop:true}}).outputText,f);const a=require('./src/data/vocabularyAcademyData.ts').VOCABULARY_ACADEMY_WORDS.map(w=>[w.word,w.meaningAr]);const b=require('./src/data/movieScenesData.ts').MOVIE_SCENES_CATALOG.flatMap(s=>s.subtitles.flatMap(t=>t.keyWords.map(k=>[k.word,k.meaningAr])));const d={},seen=new Set();for(const [en,ar]of [...a,...b]){const key=en.toLowerCase();if(seen.has(key)||!en.trim()||!ar.trim())continue;seen.add(key);d[en]=ar;}process.stdout.write(JSON.stringify(d));"],text=True))
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for lang in ['en','ar']:
+   page=b.new_page(viewport={'width':390,'height':1100});page.clock.install();page.add_init_script('Math.random=()=>0.5');t=json.load(open('src/i18n/locales/'+lang+'.json'));page.goto('http://127.0.0.1:4188/?lang='+lang+'#games');page.get_by_role('heading',name=t['ah.gameWordMatch'],exact=True).locator('..').get_by_role('button',name=t['ah.playNow'],exact=True).click();page.get_by_role('button',name=t['as.start'],exact=True).click();grid=page.locator('div.grid.grid-cols-2[dir=ltr]');left=grid.locator(':scope > div').nth(0).get_by_role('button');right=grid.locator(':scope > div').nth(1).get_by_role('button');words=left.all_text_contents();values=[v.strip()for v in right.all_text_contents()];assert len(words)==8 and len(set(values))==8
+   for word in words:
+    grid.locator(':scope > div').nth(0).get_by_role('button',name=word,exact=True).click();grid.locator(':scope > div').nth(1).get_by_role('button',name=meanings[word.strip()],exact=True).click()
+   page.clock.run_for(800);saved=page.evaluate("JSON.parse(localStorage.getItem('henglish_arcade_v1:guest'))");assert saved['totalPlays']==1 and saved['best']['word-match']==16;page.screenshot(path='/downloads/word-match-unique-meanings-'+lang+'.png');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');page.close();print(lang,'Next eight uniqueArabicchoices,realcontentallpairsfinishable,perfect16score,oneplay,width PASS')
+  b.close()
+finally:server.shutdown();server.server_close()

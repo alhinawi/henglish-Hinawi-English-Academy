@@ -2,6 +2,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
+  'check-word-match-meanings.cjs',
   'check-arcade-feedback-lifecycle.cjs',
   'check-speaking-dialogue-speech.cjs',
   'check-legacy-dialogue-speech.cjs',
