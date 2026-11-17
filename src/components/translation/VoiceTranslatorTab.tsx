@@ -48,6 +48,8 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   const [recognizedText, setRecognizedText] = useState('');
   const [translatedVoiceText, setTranslatedVoiceText] = useState('');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [historySaveFailed, setHistorySaveFailed] = useState(false);
+
   const [copied, setCopied] = useState(false);
 
   const uploadVersion = useRef(0);
@@ -80,6 +82,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     const version = ++uploadVersion.current;
     const isCurrent = () => version === uploadVersion.current;
     setErrorMsg(null);
+    setHistorySaveFailed(false);
 
     if (isRecording) {
       // Stop and evaluate
@@ -112,6 +115,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
             }, learnerId);
             if (!isCurrent()) return;
             setTranslatedVoiceText(res.translatedText);
+            if (res.historySaved === false) setHistorySaveFailed(true);
             playSound('correct');
 
             // The keyed result speech control owns automatic playback.
@@ -155,6 +159,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     let stage: 'file' | 'transcribe' = 'file';
 
     setErrorMsg(null);
+    setHistorySaveFailed(false);
     setIsTranscribing(true);
     setIsTranslating(false);
     setRecognizedText('');
@@ -191,6 +196,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         }, learnerId);
         if (!isCurrent()) return;
         setTranslatedVoiceText(res.translatedText);
+            if (res.historySaved === false) setHistorySaveFailed(true);
         playSound('correct');
         // The keyed result speech control owns automatic playback.
       }
@@ -221,6 +227,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
 
   return (
     <div className="space-y-6 text-right">
+      {historySaveFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {/* Voice Banner */}
       <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
