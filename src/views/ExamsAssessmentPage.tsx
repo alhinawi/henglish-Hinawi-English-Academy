@@ -1,5 +1,5 @@
 import { LessonSpeechButton } from '../components/LessonSpeechButton';
-import { loadPlacementHistory, placementHistoryKey } from '../services/placementHistory';
+import { loadPlacementHistory, placementHistoryKey, savePlacementAttempt, PlacementAttempt } from '../services/placementHistory';
 import React, { useState, useEffect, useRef } from 'react';
 import { PageRoute, CEFRLevel } from '../types';
 import { 
@@ -80,6 +80,18 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   const [result, setResult] = useState<AssessmentResultBreakdown | null>(null);
   const [pastAttempts, setPastAttempts] = useState(() => loadPlacementHistory(storageKey));
 
+  const [historySaveFailed, setHistorySaveFailed] = useState(false);
+  const pendingAttempt = useRef<PlacementAttempt | null>(null);
+  const savePendingAttempt = () => {
+    if (!pendingAttempt.current) return;
+    try {
+      const saved = savePlacementAttempt(storageKey, pendingAttempt.current);
+      setPastAttempts(saved);
+      pendingAttempt.current = null;
+      setHistorySaveFailed(false);
+    } catch { setHistorySaveFailed(true); }
+  };
+
   const currentQ = sessionQuestions[currentQIdx];
 
   const handleSelectOption = (optIdx: number) => {
@@ -113,17 +125,14 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
         score: evalResult.score,
         total: evalResult.total,
       };
-      const updated = [newAttempt, ...pastAttempts].slice(0, 5);
-      setPastAttempts(updated);
-      try {
-        localStorage.setItem(storageKey, JSON.stringify(updated));
-      } catch {
-        // ignore
-      }
+      pendingAttempt.current = newAttempt;
+      savePendingAttempt();
     }
   };
 
   const handleRestart = () => {
+    pendingAttempt.current = null;
+    setHistorySaveFailed(false);
     finished.current = false;
     playSound('click');
     void loadSession();
@@ -275,6 +284,15 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
               <h2 className="text-3xl sm:text-4xl font-black text-white">{t('exa.reportTitle')}</h2>
               <p className="text-xs sm:text-sm text-[#b9b6d5]">{t('exa.reportSubtitle')}</p>
             </div>
+
+            {historySaveFailed && (
+              <div role="alert" className="rounded-2xl border border-rose-500/30 p-4 space-y-3 text-sm text-rose-200">
+                <p>{t('sa.saveError')}</p>
+                <button type="button" onClick={savePendingAttempt} className="rounded-xl border border-rose-300/30 px-4 py-2 font-bold hover:bg-white/5">
+                  {t('listen.tryAgain')}
+                </button>
+              </div>
+            )}
 
             {/* Level Score Card */}
             <div className="p-8 rounded-3xl bg-linear-to-br from-[#171632] via-[#0c0b20] to-[#1a1438] border border-white/15 max-w-lg mx-auto text-center space-y-3 shadow-2xl">
