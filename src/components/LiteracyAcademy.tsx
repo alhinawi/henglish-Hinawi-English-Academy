@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy, Volume2 } from 'lucide-react';
 import { LITERACY_LEVELS, LITERACY_READING, LITERACY_WRITING, type LiteracyReading, type LiteracyWriting } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { speakEnglish } from '../utils/audio';
+import { speakEnglish, stopSpeech } from '../utils/audio';
 
 type Props = { kind: 'reading' | 'writing'; onCompleteActivity?: (id: string, score: number, total: number) => void };
 type Saved = { done: string[]; drafts: Record<string, string> };
@@ -18,6 +18,7 @@ const normalise = (s: string) => s.trim().toLowerCase().replace(/[.!?,;:]/g, '')
 export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
   const { t, dir, lang } = useLanguage();
   const reading = kind === 'reading';
+  useEffect(() => () => stopSpeech(), []);
   const [level, setLevel] = useState('A1');
   const appText = useAppTextMap('literacyAcademyData');
   const [query, setQuery] = useState('');
@@ -96,7 +97,7 @@ function ReadingWorkshop({ lesson: l, done, onComplete }: { lesson: LiteracyRead
 }
 
 function WritingWorkshop({ lesson: l, draft, onDraft, done, onComplete }: { lesson: LiteracyWriting; draft: string; onDraft: (s: string) => void; done: boolean; onComplete: () => void }) {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const first = l.model.match(/.*?[.!?](?:\s|$)/)?.[0].trim() || l.model;
   const tokens = first.split(/\s+/);
   const [order, setOrder] = useState<number[]>([]);
@@ -107,6 +108,23 @@ function WritingWorkshop({ lesson: l, draft, onDraft, done, onComplete }: { less
   const [showModel, setShowModel] = useState(false);
   const [review, setReview] = useState<boolean[]>([false, false, false]);
   const [copyMessage, setCopyMessage] = useState('');
+  const copyVersion = useRef(0);
+  useEffect(() => {
+    copyVersion.current += 1;
+    setCopyMessage('');
+    return () => { copyVersion.current += 1; };
+  }, [draft, lang]);
+  const copyDraft = async () => {
+    const version = ++copyVersion.current;
+    setCopyMessage('');
+    try {
+      await navigator.clipboard.writeText(draft);
+      if (version === copyVersion.current) setCopyMessage(t('lw.copied'));
+    } catch {
+      if (version === copyVersion.current) setCopyMessage(t('lw.copyFailed'));
+    }
+  };
+
   const wordCount = draft.trim().split(/\s+/).filter(Boolean).length;
   const target = l.level === 'A1' ? 15 : l.level === 'A2' ? 25 : 40;
   const ordered = order.map(i => tokens[i]).join(' ');
@@ -120,7 +138,7 @@ function WritingWorkshop({ lesson: l, draft, onDraft, done, onComplete }: { less
     <section className={`${panel} space-y-4`}><h3 className="text-white font-bold">{t('lw.task').replace('{title}', txText(appText, l.titleAr))}</h3><p dir="ltr" lang="en" className="text-left text-slate-200 leading-8">{l.prompt}</p><button className={button} onClick={() => setShowModel(!showModel)}>{showModel ? t('lw.hideModel') : t('lw.showModel')}</button>{showModel && <div className="rounded-2xl bg-white/5 p-4 space-y-3"><p dir="ltr" lang="en" className="text-left leading-8 text-slate-200">{l.model}</p><p className="text-xs leading-6 text-slate-400">{t('lw.modelNote')}</p><button className={button} onClick={() => speakEnglish(l.model)}><Volume2 size={15} className="inline" /> {t('lw.modelSpeech')}</button></div>}</section>
     <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.opening')}</h3><p className="text-xs text-slate-400">{t('lw.orderNote')}</p><div dir="ltr" className="flex flex-wrap gap-2">{tokens.map((_, i) => tokens.length - 1 - i).map(i => <button key={i} disabled={order.includes(i)} className={button} onClick={() => { setOrder(p => [...p, i]); setOrderCheck(false); }}>{tokens[i]}</button>)}</div><p dir="ltr" lang="en" className="min-h-14 rounded-xl bg-black/20 p-3 text-left text-slate-200">{ordered || '...'}</p><div className="flex flex-wrap gap-2"><button className={button} onClick={() => setOrderCheck(true)}>{t('lw.checkOrder')}</button><button className={button} onClick={() => { setOrder([]); setOrderCheck(false); }}>{t('lw.restart')}</button><button className={button} onClick={() => { setOrder(p => p.slice(0, -1)); setOrderCheck(false); }}>{t('lw.undo')}</button></div>{orderCheck && <Feedback correct={orderCorrect}>{orderCorrect ? t('lw.orderCorrect') : t('lw.orderRetry')}</Feedback>}</section>
     <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.editing')}</h3><p className="text-xs leading-6 text-slate-400">{t('lw.editNote')}</p><p dir="ltr" lang="en" className="text-left text-amber-100">{editPrompt}</p><input value={edit} onChange={e => { setEdit(e.target.value); setEditCheck(false); }} aria-label={t('lw.edited')} dir="ltr" lang="en" className="w-full rounded-xl border border-white/20 bg-black/20 p-3 text-white" /><button className={button} onClick={() => setEditCheck(true)}>{t('lw.checkEdit')}</button>{editCheck && <Feedback correct={editCorrect}>{editCorrect ? t('lw.editCorrect') : t('lw.editRetry').replace('{target}', editTarget)}</Feedback>}</section>
-    <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.draft')}</h3><label className="block text-xs leading-6 text-slate-400" htmlFor="literacy-draft">{t('lw.draftNote').replace('{count}', String(target))}</label><textarea id="literacy-draft" rows={9} value={draft} onChange={e => { onDraft(e.target.value); setReview([false, false, false]); }} dir="ltr" lang="en" placeholder="Write your draft here..." className="w-full rounded-2xl border border-white/20 bg-black/20 p-4 text-left text-slate-100 leading-8 focus:border-cyan-300 focus:outline-none" /><div className="flex flex-wrap justify-between gap-2 text-xs text-slate-400"><span>{t('lw.wordCount').replace('{count}', String(wordCount)).replace('{target}', String(target))}</span><button className="text-cyan-200 underline" onClick={async () => { try { await navigator.clipboard.writeText(draft); setCopyMessage(t('lw.copied')); } catch { setCopyMessage(t('lw.copyFailed')); } }}>{t('lw.copy')}</button></div><p role="status" className="text-xs text-cyan-200">{copyMessage}</p>{[t('lw.review1'), t('lw.review2'), t('lw.review3')].map((r, i) => <label className="flex items-start gap-3 rounded-xl bg-white/5 p-3 text-sm leading-7 text-slate-300" key={r}><input type="checkbox" className="mt-2 accent-cyan-200" checked={review[i]} onChange={e => setReview(p => p.map((v, j) => i === j ? e.target.checked : v))} />{r}</label>)}<p className="text-xs text-amber-100/80 leading-6">{t('lw.reviewNote')}</p></section>
+    <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.draft')}</h3><label className="block text-xs leading-6 text-slate-400" htmlFor="literacy-draft">{t('lw.draftNote').replace('{count}', String(target))}</label><textarea id="literacy-draft" rows={9} value={draft} onChange={e => { onDraft(e.target.value); setReview([false, false, false]); }} dir="ltr" lang="en" placeholder="Write your draft here..." className="w-full rounded-2xl border border-white/20 bg-black/20 p-4 text-left text-slate-100 leading-8 focus:border-cyan-300 focus:outline-none" /><div className="flex flex-wrap justify-between gap-2 text-xs text-slate-400"><span>{t('lw.wordCount').replace('{count}', String(wordCount)).replace('{target}', String(target))}</span><button className="text-cyan-200 underline" onClick={copyDraft}>{t('lw.copy')}</button></div><p role="status" className="text-xs text-cyan-200">{copyMessage}</p>{[t('lw.review1'), t('lw.review2'), t('lw.review3')].map((r, i) => <label className="flex items-start gap-3 rounded-xl bg-white/5 p-3 text-sm leading-7 text-slate-300" key={r}><input type="checkbox" className="mt-2 accent-cyan-200" checked={review[i]} onChange={e => setReview(p => p.map((v, j) => i === j ? e.target.checked : v))} />{r}</label>)}<p className="text-xs text-amber-100/80 leading-6">{t('lw.reviewNote')}</p></section>
     <button disabled={!allCorrect || done} className={`${button} w-full bg-cyan-300/15 text-cyan-100`} onClick={onComplete}>{done ? <><Check size={18} className="inline align-middle" aria-hidden="true" /> {t('lw.writingDone')}</> : allCorrect ? t('lw.writingSave') : t('lw.writingTodo')}</button>
   </>;
 }
