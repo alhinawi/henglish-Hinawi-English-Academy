@@ -117,6 +117,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
             dir="auto"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
+            aria-label={t('grammar.searchPlaceholder')}
             placeholder={t('grammar.searchPlaceholder')}
             className="w-full pr-12 pl-4 py-3.5 rounded-2xl bg-white/5 border border-white/10 focus:border-[#41e7ff] text-white placeholder-[#b9b6d5]/60 text-sm outline-none transition-colors"
           />
@@ -131,6 +132,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           {categories.map(cat => (
             <button
               key={cat}
+              aria-pressed={selectedCategory === cat}
               onClick={() => {
                 playSound('click');
                 setSelectedCategory(cat);
@@ -154,6 +156,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
           {levels.map(lvl => (
             <button
               key={lvl}
+              aria-pressed={selectedLevel === lvl}
               onClick={() => {
                 playSound('click');
                 setSelectedLevel(lvl);
