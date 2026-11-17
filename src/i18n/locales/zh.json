@@ -2104,5 +2104,6 @@
   "sl.loadError": "句子库加载失败。这是加载错误，并非搜索无结果。请重试。",
   "dt.errNoPdfText": "此 PDF 没有可选择的文本，可能包含扫描页面。请上传有可选择文本的 PDF，或将文本粘贴到 TXT 文件中。",
   "lp.noteStorage": "笔记仅保存在此浏览器中，按学习者和课程分别存储，不会同步到其他设备。",
-  "lp.noteSavedLocal": "已保存在此浏览器中。"
+  "lp.noteSavedLocal": "已保存在此浏览器中。",
+  "ts.vocabReviewPartial": "已保存到此设备的词汇库，但复习计划未能保存。请允许存储后再次保存。"
 }

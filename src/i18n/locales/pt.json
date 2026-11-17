@@ -2104,5 +2104,6 @@
   "sl.loadError": "Não foi possível carregar a biblioteca de frases. É um erro de carregamento, não uma pesquisa sem resultados. Tente novamente.",
   "dt.errNoPdfText": "Este PDF não tem texto selecionável e pode conter páginas digitalizadas. Envie um PDF com texto selecionável ou cole o texto num ficheiro TXT.",
   "lp.noteStorage": "As notas ficam só neste navegador, separadas por aluno e lição. Não são sincronizadas com outros dispositivos.",
-  "lp.noteSavedLocal": "Salvo neste navegador."
+  "lp.noteSavedLocal": "Salvo neste navegador.",
+  "ts.vocabReviewPartial": "Salvo no vocabulário deste dispositivo, mas não no plano de revisão. Permita o armazenamento e salve novamente."
 }

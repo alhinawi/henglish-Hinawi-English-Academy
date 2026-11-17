@@ -2104,5 +2104,6 @@
   "sl.loadError": "Meningsbiblioteket kunde inte laddas. Det är ett laddningsfel, inte en sökning utan resultat. Försök igen.",
   "dt.errNoPdfText": "Denna PDF saknar markerbar text och kan innehålla skannade sidor. Ladda upp en PDF med markerbar text eller klistra in texten i en TXT-fil.",
   "lp.noteStorage": "Anteckningar sparas bara i den här webbläsaren, separat per elev och lektion. De synkas inte med andra enheter.",
-  "lp.noteSavedLocal": "Sparat i den här webbläsaren."
+  "lp.noteSavedLocal": "Sparat i den här webbläsaren.",
+  "ts.vocabReviewPartial": "Sparat i ordförrådet på denna enhet, men inte i repetitionsschemat. Tillåt lagring och spara igen."
 }
