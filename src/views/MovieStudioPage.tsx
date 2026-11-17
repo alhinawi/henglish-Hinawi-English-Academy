@@ -108,6 +108,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
   // Saved and Watched State
   const [savedVideos, setSavedVideos] = useState<EducationalVideoItem[]>(() => getSavedVideos(learnerId));
+  const [bookmarkSaveFailed, setBookmarkSaveFailed] = useState(false);
   const [recentlyWatched, setRecentlyWatched] = useState<EducationalVideoItem[]>(() => getRecentlyWatched(learnerId));
 
   // YouTube API Search State
@@ -233,13 +234,17 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
   const handleToggleBookmark = (v: EducationalVideoItem, e: React.MouseEvent) => {
     e.stopPropagation();
     playSound('click');
-    const res = toggleSaveVideo(v, learnerId);
-    setSavedVideos(res.list);
-    if (res.isSaved) playSound('success');
+    try {
+      const res = toggleSaveVideo(v, learnerId);
+      setSavedVideos(res.list);
+      setBookmarkSaveFailed(false);
+      if (res.isSaved) playSound('success');
+    } catch { setBookmarkSaveFailed(true); }
   };
 
   return (
     <div className="space-y-10 pb-16 text-right">
+      {bookmarkSaveFailed && <p role="alert" className="rounded-2xl border border-amber-400/40 bg-amber-400/10 p-4 text-sm leading-7 text-amber-100">{t('vocab.saveError')}</p>}
       {/* 1. ACADEMY HERO & STUDIO BANNER */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#1a1233] via-[#120e25] to-[#090715] shadow-2xl">
         <div className="absolute top-0 left-10 w-80 h-80 bg-red-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
