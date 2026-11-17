@@ -22,7 +22,6 @@ import {
   ExternalLink,
   Flame,
   FileCheck2,
-  Printer,
 } from "lucide-react";
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -43,18 +42,17 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
   onDeleteNote,
   completionPercentage,
 }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const [activeTab, setActiveTab] = useState<
     "overview" | "bookmarks" | "notes" | "quizzes" | "certificate"
   >("overview");
-  const [showCertificate, setShowCertificate] = useState(false);
 
   const bookmarks = progress.bookmarks || [];
   const notes = progress.notes || [];
   const quizScores = Object.entries(progress.quizScores || {});
 
   return (
-    <div className="space-y-10 pb-16 text-right">
+    <div dir={dir} className="space-y-10 pb-16 text-start">
       {/* Page Hero */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
         <div className="absolute top-0 right-10 w-80 h-80 bg-[#ffd166]/10 rounded-full blur-3xl pointer-events-none -z-10" />
@@ -159,6 +157,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
               </div>
               <div className="text-[11px] text-[#41e7ff]">
                 {t('ml.nextGoal')} {userProfile.targetLevel}
+                <p>{t('ml.levelNote')}</p>
               </div>
             </div>
 
@@ -168,7 +167,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                 {userProfile.xp.toLocaleString()} XP
               </div>
               <div className="text-[11px] text-[#b9b6d5]">
-                {t('ml.rank')}
+                {t('ml.practiceNote')}
               </div>
             </div>
 
@@ -179,7 +178,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
               <div className="text-2xl font-black text-[#ff8bb9]">
                 {userProfile.streakDays} {t('ml.daysUnit')}
               </div>
-              <div className="text-[11px] text-[#b9b6d5]">{t('ml.lastSession')}</div>
+              <div className="text-[11px] text-[#b9b6d5]">{t('ml.streakNote')}</div>
             </div>
 
             <div className="p-5 rounded-2xl glass-panel border border-white/10 space-y-1">
@@ -355,7 +354,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                                 : "bg-[#ffd166]/20 text-[#ffd166]"
                             }`}
                           >
-                            {percent >= 80 ? t('ml.excellent') : t('ml.veryGood')}
+                            {percent >= 80 ? t('ml.excellent') : t('ml.reviewNeeded')}
                           </span>
                         </td>
                       </tr>
@@ -368,55 +367,14 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
         </section>
       )}
 
-      {/* TAB 5: CERTIFICATE */}
+      {/* Certificates are issued and verified by the certificate service only. */}
       {activeTab === "certificate" && (
-        <section className="glass-panel rounded-3xl p-6 sm:p-12 border border-[#ffd166]/40 max-w-3xl mx-auto space-y-8 text-center shadow-2xl relative overflow-hidden">
-          {/* Certificate Watermark */}
-          <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-            <span className="text-9xl font-black">HENGLISH</span>
-          </div>
-
-          <div className="space-y-2">
-            <div className="text-xs font-black uppercase text-[#ffd166] tracking-widest">
-              OFFICIAL CERTIFICATE OF MASTERY
-            </div>
-            <h2 className="text-2xl sm:text-4xl font-black text-white font-serif">
-              {t('ml.certTitle')}
-            </h2>
-            <p className="text-xs text-[#b9b6d5]">
-              Henglish Academy Academic Credential
-            </p>
-          </div>
-
-          <div className="p-8 rounded-3xl bg-black/40 border border-[#ffd166]/40 space-y-4 max-w-xl mx-auto">
-            <p className="text-xs text-[#dedbf4]">
-              {t('ml.certIntro')}
-            </p>
-            <div className="text-2xl sm:text-3xl font-black text-[#ffd166] font-['Cairo',sans-serif]">
-              {userProfile.id === 'guest-learner' ? t('ml.certGuest') : `${userProfile.nameAr} (${userProfile.name})`}
-            </div>
-            <p className="text-xs text-[#dedbf4] leading-relaxed">
-              {t('ml.certBody1')}
-              <br />
-              <strong className="text-white text-base">
-                {t('ml.certCourse')}
-              </strong>
-              <br />
-              {t('ml.certBody2')}
-            </p>
-
-            <div className="pt-4 flex items-center justify-between text-xs text-[#b9b6d5] border-t border-white/10">
-              <span>{t('ml.certSupervisor')}</span>
-              <span>{t('ml.certVerify')} HNW-{userProfile.id}-2026</span>
-            </div>
-          </div>
-
-          <button
-            onClick={() => window.print()}
-            className="px-8 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-sm hover:brightness-110 shadow-lg cursor-pointer inline-flex items-center gap-2"
-          >
-            <Printer className="w-4 h-4" />
-            <span>{t('ml.certPrint')}</span>
+        <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-[#ffd166]/40 space-y-4">
+          <h2 className="text-2xl font-black text-white">{t('ml.certificateCenter')}</h2>
+          <p className="text-sm text-[#dedbf4] leading-relaxed">{t('ml.certificateNote')}</p>
+          <button onClick={() => onNavigate('certificates')}
+            className="px-6 py-3 rounded-xl bg-[#ffd166] text-[#0c0b20] font-bold text-sm">
+            {t('ml.openCertificates')}
           </button>
         </section>
       )}
