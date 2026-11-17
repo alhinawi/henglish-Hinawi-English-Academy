@@ -10,6 +10,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { Sparkles, Filter, Brain, RefreshCw, Zap, BookOpen, Layers } from 'lucide-react';
 
 interface QuizzesPageProps {
+  learnerId?: string;
   onRecordScore?: (quizId: string, score: number, total: number) => void;
 }
 
@@ -28,7 +29,7 @@ const GRAMMAR_TOPICS = [
   { id: 'phrasal-verbs', labelKey: 'qz.topicPhrasalVerbs' },
 ];
 
-export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
+export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore, learnerId }) => {
   const { t, dir } = useLanguage();
   const [activeTab, setActiveTab] = useState<'static' | 'ai'>('static');
   const [filterDifficulty, setFilterDifficulty] = useState<string>('all');
@@ -301,7 +302,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       {/* VERIFIED QUESTION BANK PANEL */}
       {activeTab === 'static' && (
         <section>
-          <QuestionBankPanel />
+          <QuestionBankPanel key={learnerId || 'guest'} learnerId={learnerId} />
         </section>
       )}
 

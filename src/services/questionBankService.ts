@@ -128,23 +128,34 @@ export function getLoadedQuestionCount(): number {
 
 type ServedStore = Record<string, string[]>;
 
-function readServed(): ServedStore {
-  try {
-    const raw = localStorage.getItem(SERVED_KEY);
-    if (!raw) return {};
-    const parsed = JSON.parse(raw);
-    return parsed && typeof parsed === 'object' ? (parsed as ServedStore) : {};
-  } catch {
-    return {};
-  }
+export function questionHistoryKey(learnerId?: string): string {
+  const owner = learnerId && !learnerId.startsWith('guest-') && !learnerId.startsWith('demo-')
+    ? `user:${encodeURIComponent(learnerId)}` : 'guest';
+  return `${SERVED_KEY}:${owner}`;
 }
 
-function writeServed(store: ServedStore): void {
+function parseServed(raw: string | null): ServedStore {
+  if (raw === null) return {};
+  const value: unknown = JSON.parse(raw);
+  if (!value || typeof value !== 'object' || Array.isArray(value)
+    || !Object.values(value).every(ids => Array.isArray(ids) && ids.every(id => typeof id === 'string'))) throw new Error('Invalid question history');
+  return value as ServedStore;
+}
+
+function readServed(learnerId?: string): ServedStore {
+  // The old browser-wide history belongs to guest only. Preserve its bytes.
   try {
-    localStorage.setItem(SERVED_KEY, JSON.stringify(store));
-  } catch {
-    // storage full/blocked: drawing still works, history just isn't kept
-  }
+    const guestKey = questionHistoryKey();
+    if (localStorage.getItem(guestKey) === null) {
+      const legacy = localStorage.getItem(SERVED_KEY);
+      if (legacy !== null) { parseServed(legacy); localStorage.setItem(guestKey, legacy); }
+    }
+  } catch { /* Guest recovery must never hide an owner's valid history. */ }
+  return parseServed(localStorage.getItem(questionHistoryKey(learnerId)));
+}
+
+function writeServed(store: ServedStore, learnerId?: string): void {
+  localStorage.setItem(questionHistoryKey(learnerId), JSON.stringify(store));
 }
 
 function poolKey(opts: DrawOptions): string {
@@ -165,7 +176,7 @@ function shuffle<T>(arr: T[]): T[] {
  * questions already served to this user are excluded until the matching pool
  * is exhausted, then the pool resets and a fresh cycle starts.
  */
-export function drawQuestions(all: BankQuestion[], opts: DrawOptions): BankQuestion[] {
+export function drawQuestions(all: BankQuestion[], opts: DrawOptions, learnerId?: string): BankQuestion[] {
   const { count, skill, level = 'all', type = 'all' } = opts;
   const pool = all.filter(
     q =>
@@ -176,7 +187,7 @@ export function drawQuestions(all: BankQuestion[], opts: DrawOptions): BankQuest
   if (pool.length === 0 || count <= 0) return [];
 
   const key = poolKey(opts);
-  const store = readServed();
+  const store = readServed(learnerId);
   const served = new Set(store[key] ?? []);
   const fresh = pool.filter(q => !served.has(q.id));
   const requested = Math.min(count, pool.length);
@@ -196,21 +207,14 @@ export function drawQuestions(all: BankQuestion[], opts: DrawOptions): BankQuest
     store[key] = [...(store[key] ?? []), ...drawn.map(q => q.id)];
   }
 
-  writeServed(store);
+  writeServed(store, learnerId);
   return drawn;
 }
 
 /** Clear served history (all pools, or one pool when a filter is given). */
-export function resetServedQuestions(opts?: DrawOptions): void {
-  if (!opts) {
-    try {
-      localStorage.removeItem(SERVED_KEY);
-    } catch {
-      /* ignore */
-    }
-    return;
-  }
-  const store = readServed();
+export function resetServedQuestions(opts?: DrawOptions, learnerId?: string): void {
+  const store = readServed(learnerId);
+  if (!opts) { writeServed({}, learnerId); return; }
   delete store[poolKey(opts)];
-  writeServed(store);
+  writeServed(store, learnerId);
 }
