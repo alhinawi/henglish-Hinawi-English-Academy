@@ -60,6 +60,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   const [showDetails, setShowDetails] = useState(!compact);
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
+  const [flagSaveError, setFlagSaveError] = useState(false);
   const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id, learnerId));
   const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id, learnerId));
   const [srsRecord, setSrsRecord] = useState(() => getSentenceSrsRecord(sentence.id, learnerId));
@@ -67,17 +68,21 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   // Toggle favorite
   const handleToggleFavorite = () => {
     playSound('pop');
-    const newState = toggleFavoriteSentence(sentence.id, learnerId);
-    setIsFavorite(newState);
-    onLearningChange?.();
+    try {
+      const newState = toggleFavoriteSentence(sentence.id, learnerId);
+      setIsFavorite(newState); setFlagSaveError(false);
+      onLearningChange?.();
+    } catch { setFlagSaveError(true); }
   };
 
   // Toggle difficult
   const handleToggleDifficult = () => {
     playSound('click');
-    const newState = toggleDifficultSentence(sentence.id, learnerId);
-    setIsDifficult(newState);
-    onLearningChange?.();
+    try {
+      const newState = toggleDifficultSentence(sentence.id, learnerId);
+      setIsDifficult(newState); setFlagSaveError(false);
+      onLearningChange?.();
+    } catch { setFlagSaveError(true); }
   };
 
   const copyVersion = useRef(0);
@@ -202,6 +207,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
         </div>
       </div>
 
+      {flagSaveError && <p role="alert" className="text-xs text-amber-200">{t('sa.saveError')}</p>}
       {copyFailed && <p role="status" className="text-xs text-amber-200">{t('copy.failed')}</p>}
 
       {/* Main Sentence Content */}
