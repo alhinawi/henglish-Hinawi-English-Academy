@@ -50,6 +50,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<'explorer' | 'my-vocab' | 'expressions' | 'thematic' | 'verbs' | 'flashcards'>('explorer');
   const [isAdminOpen, setIsAdminOpen] = useState(false);
+  const [savedVersion, setSavedVersion] = useState(0);
 
   // Original Flashcards / Spaced Repetition (SM-2) state
   const [srsCards, setSrsCards] = useState<VocabularyCard[]>(() => {
@@ -254,7 +255,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
       {/* TAB 2: MY SAVED VOCABULARY & SM-2 REVIEW */}
       {activeTab === 'my-vocab' && (
-        <MyVocabularyTab onExploreWords={() => setActiveTab('explorer')} />
+        <MyVocabularyTab savedVersion={savedVersion} onExploreWords={() => setActiveTab('explorer')} />
       )}
 
       {/* TAB 3: 10,000+ EXPRESSIONS, IDIOMS & PHRASAL VERBS */}
@@ -398,6 +399,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
       {/* Admin Management Modal */}
       <AdminVocabularyModal
+        onWordAdded={() => setSavedVersion(version => version + 1)}
         isOpen={isAdminOpen}
         onClose={() => setIsAdminOpen(false)}
       />

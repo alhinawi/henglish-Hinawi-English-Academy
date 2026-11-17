@@ -8,3 +8,10 @@ console.log('Saved-word session snapshots queue, consumes without modulo skips, 
 for(const text of ['aria-expanded={isFlipped}','aria-controls={isFlipped ? meaningId : undefined}','id={meaningId}',"e.stopPropagation(); playSound('flip'); setIsFlipped(value => !value);"])assert.ok(view.includes(text));
 for(const lang of ['ar','en','de']){const d=JSON.parse(fs.readFileSync('src/i18n/locales/'+lang+'.json'));for(const k of ['mvt.showMeaning','mvt.hideMeaning'])assert.ok(d[k]);}
 console.log('Review meaning reveal/hide is a native keyboard button with expanded state and isolated pointer handling: PASS');
+
+const page=fs.readFileSync('src/views/VocabularyAcademyPage.tsx','utf8');
+assert.ok(page.includes('onWordAdded={() => setSavedVersion(version => version + 1)}'));
+assert.ok(page.includes('<MyVocabularyTab savedVersion={savedVersion}'));
+assert.ok(view.includes('}, [savedVersion]);'));
+assert.ok(!page.includes('<MyVocabularyTab key='));
+console.log('Management add/import notifies mounted saved-word list without remounting the review session: PASS');
