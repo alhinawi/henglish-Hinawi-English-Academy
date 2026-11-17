@@ -6,7 +6,7 @@
 import { videoVerificationDetail } from '../../services/videoVerificationDetail';
 import { txText, useAppTextMap } from '../../services/contentI18nService';
 import { videoImportError } from '../../services/videoImportError';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   X,
   Video,
@@ -71,6 +71,24 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
 
   const [isImporting, setIsImporting] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const verificationVersion = useRef(0);
+  const verifiedAutoTitle = useRef('');
+  useEffect(() => {
+    verificationVersion.current += 1;
+    setIsVerifying(false);
+    return () => { verificationVersion.current += 1; };
+  }, [isOpen]);
+  const changeYoutubeInput = (value: string) => {
+    verificationVersion.current += 1;
+    setYoutubeInput(value);
+    const oldAutoTitle = verifiedAutoTitle.current;
+    setCustomTitle(current => current === oldAutoTitle ? '' : current);
+    verifiedAutoTitle.current = '';
+    setVerification(null);
+    setIsVerifying(false);
+    setErrorMsg(null);
+  };
+
 
   if (!isOpen) return null;
 
@@ -80,15 +98,22 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
       setErrorMsg(t('vi.invalidUrl'));
       return;
     }
+    const version = ++verificationVersion.current;
+    setVerification(null);
     setErrorMsg(null);
     setIsVerifying(true);
     playSound('click');
 
     try {
       const res = await verifyYouTubeVideo(ytid, true);
+      if (version !== verificationVersion.current) return;
       setVerification(res);
-      if (res.title && !customTitle) {
-        setCustomTitle(res.title);
+      if (res.title) {
+        setCustomTitle(current => {
+          if (current) return current;
+          verifiedAutoTitle.current = res.title || '';
+          return res.title || '';
+        });
       }
       if (res.isEmbeddable) {
         playSound('success');
@@ -96,9 +121,10 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
         playSound('wrong');
       }
     } catch (err: any) {
+      if (version !== verificationVersion.current) return;
       setErrorMsg(`${t('vi.checkError')} ${err.message}`);
     } finally {
-      setIsVerifying(false);
+      if (version === verificationVersion.current) setIsVerifying(false);
     }
   };
 
@@ -114,7 +140,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
 
   const handleImportSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!verification || !verification.isEmbeddable) {
+    if (!verification || !verification.isEmbeddable || verification.youtubeId !== extractYouTubeId(youtubeInput)) {
       setErrorMsg(t('vi.notVerified'));
       return;
     }
@@ -204,7 +230,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                 type="text"
                 required
                 value={youtubeInput}
-                onChange={e => setYoutubeInput(e.target.value)}
+                onChange={e => changeYoutubeInput(e.target.value)}
                 placeholder="e.g. https://www.youtube.com/watch?v=D6me2-OurCw"
                 className="flex-1 px-4 py-3 rounded-xl bg-[#09091a] border border-white/15 text-white font-sans text-xs focus:outline-none focus:border-[#41e7ff]"
               />
