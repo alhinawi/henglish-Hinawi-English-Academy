@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "বাক্যের লাইব্রেরি লোড করা যায়নি। এটি লোড করার সমস্যা, খালি অনুসন্ধানের ফল নয়। আবার চেষ্টা করুন।",
   "dt.errNoPdfText": "এই PDF-এ নির্বাচনযোগ্য লেখা নেই এবং স্ক্যান করা পৃষ্ঠা থাকতে পারে। নির্বাচনযোগ্য লেখাসহ PDF আপলোড করুন বা TXT ফাইলে লেখা পেস্ট করুন।"
 }

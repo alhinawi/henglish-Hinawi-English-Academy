@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "句子库加载失败。这是加载错误，并非搜索无结果。请重试。",
   "dt.errNoPdfText": "此 PDF 没有可选择的文本，可能包含扫描页面。请上传有可选择文本的 PDF，或将文本粘贴到 TXT 文件中。"
 }

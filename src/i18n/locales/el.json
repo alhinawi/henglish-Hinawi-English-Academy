@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "Δεν ήταν δυνατή η φόρτωση της βιβλιοθήκης προτάσεων. Είναι σφάλμα φόρτωσης, όχι κενό αποτέλεσμα αναζήτησης. Δοκιμάστε ξανά.",
   "dt.errNoPdfText": "Αυτό το PDF δεν έχει επιλέξιμο κείμενο και μπορεί να περιέχει σαρωμένες σελίδες. Ανεβάστε PDF με επιλέξιμο κείμενο ή επικολλήστε το κείμενο σε αρχείο TXT."
 }

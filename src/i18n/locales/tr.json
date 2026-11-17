@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "Cümle kitaplığı yüklenemedi. Bu bir yükleme hatasıdır, sonuçsuz arama değildir. Tekrar deneyin.",
   "dt.errNoPdfText": "Bu PDF seçilebilir metin içermiyor ve taranmış sayfalar içerebilir. Seçilebilir metin içeren bir PDF yükleyin veya metni bir TXT dosyasına yapıştırın."
 }
