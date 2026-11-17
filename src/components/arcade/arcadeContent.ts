@@ -101,6 +101,19 @@ export async function allSentencePairs(minWords = 3, maxWords = 9): Promise<Sent
   });
 }
 
+export interface TrueFalseRound extends SentencePair { truth: boolean; }
+
+/** A false answer must actually differ from this sentence's saved translation. */
+export function buildTrueFalseRounds(pairs: SentencePair[], count: number): TrueFalseRound[] {
+  const picks = sample(pairs, count);
+  return picks.map((pair) => {
+    const others = picks.filter((other) => other.ar.trim().normalize('NFKC') !== pair.ar.trim().normalize('NFKC'));
+    if (Math.random() < 0.5 || !others.length) return { ...pair, truth: true };
+    const fake = others[Math.floor(Math.random() * others.length)];
+    return { en: pair.en, ar: fake.ar, truth: false };
+  });
+}
+
 /** Vocabulary words whose example sentence actually contains the word. */
 export interface GapItem {
   sentence: string; // with the word replaced by _____
