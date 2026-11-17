@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { vocabularyEntryTarget } from '../services/vocabularyNavigation';
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -5,7 +6,7 @@ import { PageRoute } from '../types';
 import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../data/vocabularyAcademyData';
 import { VERB_TOOLKIT } from '../data/verbsData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, fireCelebration } from '../utils/audio';
 import {
   calculateSM2,
   getDueSrsCards,
@@ -17,7 +18,6 @@ import {
 import {
   BookA,
   Search,
-  Volume2,
   Sparkles,
   Layers,
   Repeat,
@@ -329,17 +329,11 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 className="glass-panel rounded-2xl p-5 border border-white/10 hover:border-white/30 transition-all flex flex-col justify-between space-y-4"
               >
                 <div className="space-y-2">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap items-start justify-between gap-3">
                     <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded bg-white/10 text-[#ffd166]">
                       {w.level}
                     </span>
-                    <button
-                      onClick={() => speakEnglish(w.word)}
-                      className="p-1.5 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer"
-                      title={t('va.listenTitle')}
-                    >
-                      <Volume2 className="w-4 h-4" />
-                    </button>
+                    <LessonSpeechButton text={w.word} label={`${t('va.listenTitle')}: ${w.word}`} iconOnly className="p-2 rounded-lg bg-white/5 hover:bg-white/15 text-[#41e7ff] cursor-pointer" />
                   </div>
 
                   <div>
@@ -387,15 +381,9 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 key={idx} id={`vocab-verb-${verb.v1}`}
                 className="scroll-mt-24 p-4 rounded-2xl glass-panel border border-white/10 hover:border-white/20 transition-all space-y-2"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-start justify-between gap-3">
                   <span className="text-sm font-black text-[#ffd166]">{verb.meaningAr}</span>
-                  <button
-                    onClick={() => speakEnglish(`${verb.v1}, ${verb.v2}, ${verb.v3}`)}
-                    className="p-1 rounded bg-white/5 text-[#41e7ff] hover:text-white"
-                    title={t('va.listenFormsTitle')}
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
+                  <LessonSpeechButton text={`${verb.v1}, ${verb.v2}, ${verb.v3}`} label={`${t('va.listenFormsTitle')}: ${verb.v1}`} iconOnly className="p-2 rounded-lg bg-white/5 text-[#41e7ff] hover:text-white" />
                 </div>
 
                 <div className="en grid grid-cols-3 gap-1 bg-black/40 p-2 rounded-xl text-center text-xs font-mono">
