@@ -1,3 +1,4 @@
+import { futurePerfectProgress } from '../services/courseProgress';
 import { BadgeCollection } from '../components/BadgeCollection';
 import React, { useState } from "react";
 import {
@@ -187,7 +188,7 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                 {completionPercentage}%
               </div>
               <div className="text-[11px] text-[#c4ff55]">
-                {progress.completedLessons.length} {t('ml.lessonsComplete')}
+                {futurePerfectProgress(progress.completedLessons).count} {t('ml.lessonsComplete')}
               </div>
             </div>
           </div>
