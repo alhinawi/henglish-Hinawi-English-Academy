@@ -30,6 +30,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   useEffect(() => () => stopSpeech(), [active, kind]);
   const [saved, setSaved] = useState<Saved>(() => loadLiteracy(storageKey));
   const [storageError, setStorageError] = useState(false);
+  const [completionSaveError, setCompletionSaveError] = useState(false);
   useEffect(() => { setStorageError(!saveLiteracy(storageKey, saved)); }, [saved, storageKey]);
   const lessons: (LiteracyReading | LiteracyWriting)[] = reading ? LITERACY_READING : LITERACY_WRITING;
   const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.trim().toLowerCase()));
@@ -37,7 +38,15 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   const completed = lessons.filter(l => saved.done.includes(l.id)).length;
   const complete = (id: string) => {
     if (saved.done.includes(id)) return;
-    setSaved(p => ({ ...p, done: [...p.done, id] }));
+    const next = { ...saved, done: [...saved.done, id] };
+    if (!saveLiteracy(storageKey, next)) {
+      setStorageError(true);
+      setCompletionSaveError(true);
+      return;
+    }
+    setCompletionSaveError(false);
+    setStorageError(false);
+    setSaved(next);
     onCompleteActivity?.(id, 3, 3);
   };
   return <div dir={dir} className="space-y-6 pb-8 min-w-0 text-start">
@@ -55,6 +64,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
       <Trophy className="shrink-0 text-amber-300" size={20} /><span className="shrink-0">{t('lit.completed').replace('{done}', String(completed)).replace('{total}', String(lessons.length))}</span><div className="col-span-2 h-1.5 w-full rounded-full bg-white/10 overflow-hidden"><div className="h-full bg-cyan-300" style={{ width: `${completed / lessons.length * 100}%` }} /></div><span className="col-span-2 text-xs">{t('lit.xp')}</span>
     </section>
     <p className="text-xs leading-6 text-slate-400">{t('lit.progressNote')} {storageError && <strong role="status" className="text-amber-200">{t('lit.storageError')}</strong>}</p>
+    {completionSaveError && <p role="alert" className="rounded-xl border border-amber-300/30 p-4 text-sm text-amber-200">{t('sa.saveError')}</p>}
     {current ? <>
       <button className={button} onClick={() => setActive(null)}><span className="flex items-center gap-2"><ArrowLeft size={16} className={dir === 'rtl' ? 'rotate-180' : ''} aria-hidden="true" />{t('lit.back').replace('{level}', current.level)}</span></button>
       <article className={panel}>
