@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "Acest PDF nu are text selectabil și poate conține pagini scanate. Încarcă un PDF cu text selectabil sau lipește textul într-un fișier TXT.",
   "lp.noteStorage": "Notițele rămân doar în acest browser, separat pentru fiecare cursant și lecție. Nu se sincronizează cu alte dispozitive.",
   "lp.noteSavedLocal": "Salvat în acest browser.",
-  "ts.vocabReviewPartial": "Salvat în vocabular pe acest dispozitiv, dar nu în programul de recapitulare. Permiteți stocarea și salvați din nou."
+  "ts.vocabReviewPartial": "Salvat în vocabular pe acest dispozitiv, dar nu în programul de recapitulare. Permiteți stocarea și salvați din nou.",
+  "sc.reviewPartial": "Evaluarea a fost salvată, dar lista propozițiilor dificile, recapitulările recente sau statisticile nu au putut fi actualizate. Nu repeta evaluarea pentru a reîncerca aceste actualizări."
 }
