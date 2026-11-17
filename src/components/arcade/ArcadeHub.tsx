@@ -52,13 +52,16 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
 
   useEffect(() => { onPlayingChange?.(!!active); window.scrollTo({ top: 0, behavior: 'instant' }); }, [active, onPlayingChange]);
 
+  const storageNotice = progress.storageFailed && <div role="status" className="mb-5 rounded-2xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm leading-7 text-amber-200"><p>{t('ap.storageError')}</p><button type="button" onClick={progress.retrySave} className="mt-3 rounded-xl border border-amber-200/30 px-4 py-2 font-bold">{t('to.retry')}</button></div>;
+
   if (active) {
     const game = GAMES.find((g) => g.id === active)!;
-    return <div>{game.render(() => setActive(null))}</div>;
+    return <div>{storageNotice}{game.render(() => setActive(null))}</div>;
   }
 
   return (
     <div className="space-y-6">
+      {storageNotice}
       {/* XP / streak strip */}
       <div className="grid grid-cols-3 gap-2">
         <div className="p-3.5 rounded-2xl bg-[#121124] border border-[#41e7ff]/25 text-center">
