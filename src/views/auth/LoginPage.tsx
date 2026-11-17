@@ -108,12 +108,13 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-1.5">
+            <label htmlFor="login-identifier" className="block text-xs font-medium text-slate-300 mb-1.5">
               {t('lp.identifier')}
             </label>
             <div className="relative">
               <Mail className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
               <input
+                id="login-identifier"
                 type="text"
                 value={identifier}
                 onChange={(e) => setIdentifier(e.target.value)}
@@ -127,7 +128,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
 
           <div>
             <div className="flex items-center justify-between mb-1.5">
-              <label className="block text-xs font-medium text-slate-300">
+              <label htmlFor="login-password" className="block text-xs font-medium text-slate-300">
                 {t('lp.password')}
               </label>
               <button
@@ -141,6 +142,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
             <div className="relative">
               <Lock className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
               <input
+                id="login-password"
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
