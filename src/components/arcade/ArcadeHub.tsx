@@ -97,7 +97,7 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
       <div className="space-y-3"><div className="flex items-center justify-between"><h2 className="text-xl font-black text-white">{t('ah.pickGame')}</h2><span className="rounded-full bg-[#c4ff55]/10 px-3 py-1 text-xs text-[#c4ff55]">{GAMES.length} {t('ah.gameUnit')}</span></div><input aria-label={t('ah.searchAria')} placeholder={t('ah.searchPh')} value={search} onChange={e => setSearch(e.target.value)} className="w-full rounded-2xl border border-white/15 bg-[#121124] p-3 text-white"/></div>
       {/* Game cards */}
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
-        {GAMES.filter(g => (t(g.title) + t(g.blurb)).includes(search)).map((g) => {
+        {GAMES.filter(g => `${t(g.title)} ${t(g.blurb)}`.toLowerCase().includes(search.trim().toLowerCase())).map((g) => {
           const best = progress.best[g.id] ?? 0;
           return (
             <div
