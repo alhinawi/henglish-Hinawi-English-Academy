@@ -19,6 +19,7 @@ const checks = [
   'check-movie-catalog-copy.cjs',
   'check-movie-account-history.cjs',
   'check-translation-account-history.cjs',
+  'check-vocabulary-account-owners.cjs',
   'check-admin-honesty.cjs',
   'check-auth-error-i18n.cjs',
   'check-certificate-errors.cjs',

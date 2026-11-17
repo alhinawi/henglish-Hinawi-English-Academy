@@ -93,7 +93,7 @@ const SORT_OPTIONS = [
   { id: 'cefr_desc', label: 'vx.sort.cefrDesc' },
 ];
 
-export const VocabularyExplorer: React.FC = () => {
+export const VocabularyExplorer: React.FC<{ learnerId?: string }> = ({ learnerId }) => {
   const { t } = useLanguage();
   const optT = (opts: Array<{ id: string; label: string }>, id: string) => { const o = opts.find(x => x.id === id); return o ? t(o.label) : id; };
   // Filters & State
@@ -450,6 +450,7 @@ export const VocabularyExplorer: React.FC = () => {
           >
             {searchResults.entries.map(entry => (
               <WordCard
+                learnerId={learnerId}
                 key={entry.id}
                 entry={entry}
                 onOpenDetails={handleOpenDetails}
@@ -665,6 +666,7 @@ export const VocabularyExplorer: React.FC = () => {
 
       {/* Comprehensive Word Detail Modal */}
       <WordDetailModal
+        learnerId={learnerId}
         entry={selectedModalWord}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
