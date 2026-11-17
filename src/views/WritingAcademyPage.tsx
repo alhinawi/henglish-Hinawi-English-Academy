@@ -35,6 +35,20 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
 
+  const copyVersion = useRef(0);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const invalidateCopy = () => {
+    copyVersion.current += 1;
+    if (copyTimer.current !== null) clearTimeout(copyTimer.current);
+    copyTimer.current = null;
+    setCopied(false);
+    setCopyFailed(false);
+  };
+  useEffect(() => () => {
+    copyVersion.current += 1;
+    if (copyTimer.current !== null) clearTimeout(copyTimer.current);
+  }, []);
+
   const analysisVersion = useRef(0);
   const analysisController = useRef<AbortController | null>(null);
   const invalidateAnalysis = () => {
@@ -97,11 +111,15 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
   const handleCopyTemplate = async () => {
     playSound('click');
     const fullText = `${currentTemplate.subject}\n\n${currentTemplate.salutation}\n\n${currentTemplate.body}\n\n${currentTemplate.signoff}`;
-    setCopied(false);
-    setCopyFailed(false);
-    if (!(await copyText(fullText))) { setCopyFailed(true); return; }
+    invalidateCopy();
+    const version = copyVersion.current;
+    const success = await copyText(fullText);
+    if (version !== copyVersion.current) return;
+    if (!success) { setCopyFailed(true); return; }
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    copyTimer.current = setTimeout(() => {
+      if (version === copyVersion.current) setCopied(false);
+    }, 2000);
   };
 
   const handleAnalyzeWriting = async () => {
@@ -216,6 +234,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         <button
           onClick={() => {
             playSound('click');
+            invalidateCopy();
             setActiveTemplate('formal_email');
             invalidateAnalysis();
           }}
@@ -231,6 +250,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         <button
           onClick={() => {
             playSound('click');
+            invalidateCopy();
             setActiveTemplate('job_application');
             invalidateAnalysis();
           }}
@@ -246,6 +266,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         <button
           onClick={() => {
             playSound('click');
+            invalidateCopy();
             setActiveTemplate('essay');
             invalidateAnalysis();
           }}
@@ -261,6 +282,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         <button
           onClick={() => {
             playSound('click');
+            invalidateCopy();
             setActiveTemplate('complaint');
             invalidateAnalysis();
           }}
@@ -276,6 +298,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         <button
           onClick={() => {
             playSound('click');
+            invalidateCopy();
             setActiveTemplate('university');
             invalidateAnalysis();
           }}
