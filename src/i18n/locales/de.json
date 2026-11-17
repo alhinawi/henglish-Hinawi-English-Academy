@@ -2907,5 +2907,6 @@
   "ap.storageError": "Dein Spielfortschritt bleibt nur für diesen Besuch erhalten. Speichern auf diesem Gerät ist fehlgeschlagen. Erlaube die Speicherung und versuche es vor dem Verlassen erneut.",
   "ap.unreadable": "Der gespeicherte Spielfortschritt auf diesem Gerät konnte nicht gelesen werden. Das Original bleibt unverändert. Neuer Fortschritt bleibt nur für diesen Besuch erhalten und überschreibt das Original nicht.",
   "auth.verificationSessionChanged": "Dein Konto hat sich während der Bestätigung geändert. Öffne die Bestätigung für das aktuelle Konto erneut.",
-  "sc.reviewPartial": "Deine Bewertung wurde gespeichert, aber die Liste schwieriger Sätze, die letzten Wiederholungen oder die Lernstatistik konnten nicht aktualisiert werden. Wiederhole die Bewertung dafür nicht."
+  "sc.reviewPartial": "Deine Bewertung wurde gespeichert, aber die Liste schwieriger Sätze, die letzten Wiederholungen oder die Lernstatistik konnten nicht aktualisiert werden. Wiederhole die Bewertung dafür nicht.",
+  "vi.removeLine": "Zeile entfernen"
 }
