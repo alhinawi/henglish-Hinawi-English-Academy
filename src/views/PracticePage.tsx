@@ -115,7 +115,7 @@ export const PracticePage: React.FC = () => {
                     </button>
                   </div>
                 ) : (
-                  <div className="pt-2 border-t border-white/5 text-xs sm:text-sm text-[#dedbf4] space-y-1">
+                  <div role="status" className="pt-2 border-t border-white/5 text-xs sm:text-sm text-[#dedbf4] space-y-1">
                     <div className="font-bold">
                       {wasCorrect ? (
                         <span className="text-[#c4ff55]">{t('pp.correct')}</span>
@@ -156,6 +156,7 @@ export const PracticePage: React.FC = () => {
               playSound('click');
               setShowHomeworkAnswers(!showHomeworkAnswers);
             }}
+            aria-expanded={showHomeworkAnswers}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-[#ffd166] text-xs font-bold border border-white/10 transition-colors cursor-pointer"
           >
             {showHomeworkAnswers ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
