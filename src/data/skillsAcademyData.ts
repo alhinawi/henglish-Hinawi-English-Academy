@@ -412,11 +412,11 @@ export const MINIMAL_PAIRS_DATA: MinimalPair[] = [
     soundA: '/p/ (Voiceless)',
     soundB: '/b/ (Voiced)',
     wordA: 'pen',
-    wordB: 'ben',
+    wordB: 'Ben',
     ipaA: '/pen/',
     ipaB: '/ben/',
     meaningArA: 'قلم جاف (مع خروج دفعة هواء قوية)',
-    meaningArB: 'اسم شخص أو صندوق (صوت حنجري خفيف)',
+    meaningArB: 'بِن: اسم شخص، اختصار لاسم بنجامين',
     tipAr: 'صوت P يخرج معه انفجار هواء خفيف (ضع يدك أمام فمك لتشعر بالهواء)، بينما B صوت ناعم بدون هواء من الشفتين.',
   },
   {
