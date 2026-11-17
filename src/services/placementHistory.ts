@@ -8,10 +8,12 @@ export function placementHistoryKey(userId?: string): string {
 }
 export function loadPlacementHistory(key: string): PlacementAttempt[] {
   try {
-    if (localStorage.getItem(GUEST_PLACEMENT_KEY) === null) {
-      const legacy = localStorage.getItem(LEGACY_PLACEMENT_KEY);
-      if (legacy !== null && Array.isArray(JSON.parse(legacy))) localStorage.setItem(GUEST_PLACEMENT_KEY, legacy);
-    }
+    try {
+      if (localStorage.getItem(GUEST_PLACEMENT_KEY) === null) {
+        const legacy = localStorage.getItem(LEGACY_PLACEMENT_KEY);
+        if (legacy !== null && Array.isArray(JSON.parse(legacy))) localStorage.setItem(GUEST_PLACEMENT_KEY, legacy);
+      }
+    } catch { /* Guest recovery must not hide a valid owner history. */ }
     const raw: unknown = JSON.parse(localStorage.getItem(key) || '[]');
     if (!Array.isArray(raw)) return [];
     return raw.filter((v): v is PlacementAttempt => v && typeof v === 'object' &&
