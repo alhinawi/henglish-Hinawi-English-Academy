@@ -2106,5 +2106,6 @@
   "lp.noteStorage": "Notatki są zapisywane tylko w tej przeglądarce, osobno dla ucznia i lekcji. Bez synchronizacji z innymi urządzeniami.",
   "lp.noteSavedLocal": "Zapisano w tej przeglądarce.",
   "ts.vocabReviewPartial": "Zapisano w słownictwie na tym urządzeniu, ale nie w planie powtórek. Zezwól na przechowywanie danych i zapisz ponownie.",
-  "sc.reviewPartial": "Ocena została zapisana, ale nie udało się zaktualizować trudnych zdań, ostatnich powtórek lub statystyk nauki. Nie powtarzaj oceny, aby ponowić te aktualizacje."
+  "sc.reviewPartial": "Ocena została zapisana, ale nie udało się zaktualizować trudnych zdań, ostatnich powtórek lub statystyk nauki. Nie powtarzaj oceny, aby ponowić te aktualizacje.",
+  "vi.removeLine": "Usuń wiersz"
 }
