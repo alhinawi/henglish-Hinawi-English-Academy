@@ -13,3 +13,9 @@ console.log('Vocabulary management named modal, labelled close, initial/trapped/
 for(const field of ['headword','meaningAr','cefr','pos','ipaUs','ipaUk','definitionEn','exampleEn','exampleAr','bulkData']){assert.ok(manager.includes('htmlFor={`${titleId}-'+field+'`}'),field+' label');assert.ok(manager.includes('id={`${titleId}-'+field+'`}'),field+' control');}
 assert.ok(manager.includes("role={bulkOk ? 'status' : 'alert'}"));
 console.log('Vocabulary authoring controls have explicit label bindings; import/add feedback is announced: PASS');
+
+for(const [file,prefix,state,option] of [['VocabularyExplorer','vx','selectedCefr','c'],['ExpressionsTab','ex','selectedCategory','cat']]){
+ const src=fs.readFileSync('src/components/vocabulary/'+file+'.tsx','utf8');
+ for(const text of ["aria-label={t('"+prefix+".searchPlaceholder')}","aria-label={t('se.clear')}",'searchRef.current?.focus()','aria-pressed={'+state+' === '+option+'.id}'])assert.ok(src.includes(text),file+': '+text);
+}
+console.log('Vocabulary/expression search naming, clear focus restoration and selected chips: PASS');
