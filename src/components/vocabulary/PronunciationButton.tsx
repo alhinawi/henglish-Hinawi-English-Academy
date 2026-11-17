@@ -3,9 +3,9 @@
 // American (Cyan #22D3EE) & British (Purple #A78BFA) Audio Playback Component
 // ==============================================================================
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
-import { Volume2, Loader2, Sparkles } from 'lucide-react';
+import { Volume2, Loader2, Square } from 'lucide-react';
 import { audioPlayback, PlaybackState, PronunciationAccent } from '../../services/audioPlaybackManager';
 
 interface PronunciationButtonProps {
@@ -30,18 +30,22 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
   const { t } = useLanguage();
   const [playbackState, setPlaybackState] = useState<PlaybackState>(() => audioPlayback.getState());
 
+  const owner = useRef(Symbol('pronunciation-button'));
   useEffect(() => {
     const unsubscribe = audioPlayback.subscribe(setPlaybackState);
-    return unsubscribe;
-  }, []);
+    return () => { unsubscribe(); audioPlayback.stopOwned(owner.current); };
+  }, [wordId, wordText, accent, audioUrl]);
 
   const isCurrent = playbackState.wordId === wordId && playbackState.accent === accent;
   const isPlaying = isCurrent && playbackState.status === 'playing';
   const isLoading = isCurrent && playbackState.status === 'loading';
 
+  const isError = isCurrent && playbackState.status === 'error';
+  const active = isPlaying || isLoading;
+
   const handleClick = (e: React.MouseEvent) => {
     e.stopPropagation();
-    audioPlayback.playPronunciation(wordId, wordText, accent, audioUrl);
+    audioPlayback.playPronunciation(wordId, wordText, accent, audioUrl, owner.current);
   };
 
   const isUS = accent === 'US';
@@ -72,11 +76,13 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
       };
 
   return (
+    <span className="inline-flex max-w-full flex-col items-start gap-1">
     <button
       type="button"
       onClick={handleClick}
-      title={t(isUS ? 'pr.us' : 'pr.uk')}
-      aria-label={t(isUS ? 'pr.us' : 'pr.uk')}
+      title={t(active ? 'pr.stop' : isUS ? 'pr.us' : 'pr.uk')}
+      aria-label={t(active ? 'pr.stop' : isUS ? 'pr.us' : 'pr.uk')}
+      aria-pressed={active}
       className={`inline-flex items-center gap-1.5 rounded-xl border transition-all cursor-pointer font-sans select-none ${
         size === 'sm'
           ? 'px-2 py-1 text-[11px]'
@@ -99,6 +105,7 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
       </span>
 
       {/* Play/Loading/Waveform Icon */}
+      {active && <Square className="w-3 h-3 shrink-0" aria-hidden="true" />}
       {isLoading ? (
         <Loader2 className="w-3.5 h-3.5 animate-spin" />
       ) : isPlaying ? (
@@ -123,6 +130,8 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
         </span>
       )}
     </button>
+    {isError && <span role="status" className="max-w-64 text-xs leading-5 text-amber-200">{t('listen.audioError')}</span>}
+    </span>
   );
 };
 
