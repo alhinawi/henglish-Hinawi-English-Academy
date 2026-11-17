@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "جملوں کی لائبریری لوڈ نہیں ہو سکی۔ یہ لوڈنگ کی خرابی ہے، خالی تلاش کا نتیجہ نہیں۔ دوبارہ کوشش کریں۔"
+  "sl.loadError": "جملوں کی لائبریری لوڈ نہیں ہو سکی۔ یہ لوڈنگ کی خرابی ہے، خالی تلاش کا نتیجہ نہیں۔ دوبارہ کوشش کریں۔",
+  "dt.errNoPdfText": "اس PDF میں منتخب کرنے کے قابل متن نہیں ہے اور اس میں اسکین شدہ صفحات ہو سکتے ہیں۔ متن والی PDF اپ لوڈ کریں یا متن کو TXT فائل میں پیسٹ کریں۔"
 }

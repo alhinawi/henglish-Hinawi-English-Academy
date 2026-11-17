@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "Pustaka ayat tidak dapat dimuatkan. Ini ralat pemuatan, bukan carian tanpa hasil. Cuba lagi."
+  "sl.loadError": "Pustaka ayat tidak dapat dimuatkan. Ini ralat pemuatan, bukan carian tanpa hasil. Cuba lagi.",
+  "dt.errNoPdfText": "PDF ini tiada teks yang boleh dipilih dan mungkin mengandungi halaman imbasan. Muat naik PDF dengan teks yang boleh dipilih atau tampal teks ke dalam fail TXT."
 }

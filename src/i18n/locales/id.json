@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "Pustaka kalimat tidak dapat dimuat. Ini kesalahan pemuatan, bukan pencarian tanpa hasil. Coba lagi."
+  "sl.loadError": "Pustaka kalimat tidak dapat dimuat. Ini kesalahan pemuatan, bukan pencarian tanpa hasil. Coba lagi.",
+  "dt.errNoPdfText": "PDF ini tidak memiliki teks yang dapat dipilih dan mungkin berisi halaman pindaian. Unggah PDF dengan teks yang dapat dipilih atau tempel teks ke berkas TXT."
 }
