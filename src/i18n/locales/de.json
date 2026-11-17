@@ -2904,5 +2904,6 @@
   "lp.noteStorage": "Notizen werden nur in diesem Browser gespeichert, getrennt nach Lernenden und Lektionen. Keine Synchronisierung mit anderen Geräten.",
   "lp.noteSavedLocal": "In diesem Browser gespeichert.",
   "ts.vocabReviewPartial": "In den Vokabeln auf diesem Gerät gespeichert, aber nicht im Wiederholungsplan. Speicherzugriff erlauben und erneut speichern.",
-  "ap.storageError": "Dein Spielfortschritt bleibt nur für diesen Besuch erhalten. Speichern auf diesem Gerät ist fehlgeschlagen. Erlaube die Speicherung und versuche es vor dem Verlassen erneut."
+  "ap.storageError": "Dein Spielfortschritt bleibt nur für diesen Besuch erhalten. Speichern auf diesem Gerät ist fehlgeschlagen. Erlaube die Speicherung und versuche es vor dem Verlassen erneut.",
+  "ap.unreadable": "Der gespeicherte Spielfortschritt auf diesem Gerät konnte nicht gelesen werden. Das Original bleibt unverändert. Neuer Fortschritt bleibt nur für diesen Besuch erhalten und überschreibt das Original nicht."
 }
