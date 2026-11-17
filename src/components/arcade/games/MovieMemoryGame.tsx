@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
-import { allSentencePairs, sample, shuffle, SentencePair } from '../arcadeContent';
+import { allSentencePairs, uniqueMeaningPairs, sample, shuffle, SentencePair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
 import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
@@ -33,7 +33,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
   const start = async () => {
     cancelTransition();
     setPhase('loading');
-    const pairs: SentencePair[] = sample(await allSentencePairs(2, 7), PAIRS);
+    const pairs: SentencePair[] = sample(uniqueMeaningPairs(await allSentencePairs(2, 7)), PAIRS);
     const deck: Card[] = shuffle(
       pairs.flatMap((p, i) => [
         { key: `${i}-en`, pairId: i, text: p.en, kind: 'en' as const },
