@@ -1,7 +1,8 @@
+import { LessonSpeechButton } from './LessonSpeechButton';
 import React, { useState } from 'react';
 import { QuizQuestion } from '../types';
-import { playSound, fireCelebration, speakEnglish } from '../utils/audio';
-import { CheckCircle2, XCircle, RotateCcw, Volume2, Award, ChevronLeft, ChevronRight } from 'lucide-react';
+import { playSound, fireCelebration, stopSpeech } from '../utils/audio';
+import { CheckCircle2, XCircle, RotateCcw, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -55,6 +56,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
   };
 
   const handleReset = () => {
+    stopSpeech();
     playSound('click');
     setSelectedAnswers({});
     setShowExplanation({});
@@ -112,15 +114,9 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
       </div>
 
       {/* Question Counter Indicator */}
-      <div className="flex items-center justify-between text-xs text-[#b9b6d5] mb-4">
+      <div className="flex flex-wrap items-start justify-between gap-3 text-xs text-[#b9b6d5] mb-4">
         <span>{t('qe.question')} {currentIndex + 1} {t('qe.of')} {questions.length}</span>
-        <button
-          onClick={() => speakEnglish(currentQ.question)}
-          className="inline-flex items-center gap-1.5 text-[#41e7ff] hover:underline cursor-pointer font-bold"
-        >
-          <Volume2 className="w-4 h-4" />
-          <span>{t('qe.listenQuestion')}</span>
-        </button>
+        <LessonSpeechButton key={currentQ.id} text={currentQ.question} label={t('qe.listenQuestion')} className="inline-flex items-center gap-1.5 text-[#41e7ff] hover:underline cursor-pointer font-bold" />
       </div>
 
       {/* Progress Bars by Questions */}
