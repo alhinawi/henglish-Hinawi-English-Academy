@@ -191,26 +191,30 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
         }));
     }
 
-    const res = await importEducationalVideo({
-      youtubeUrlOrId: verification.youtubeId,
-      category: selectedCategory,
-      cefrLevel: selectedCefr,
-      accent: selectedAccent,
-      customTitle: customTitle.trim() || verification.title,
-      sceneDescription: description.trim(),
-      subtitles: timedSubs,
-    });
+    try {
+      const res = await importEducationalVideo({
+        youtubeUrlOrId: verification.youtubeId,
+        category: selectedCategory,
+        cefrLevel: selectedCefr,
+        accent: selectedAccent,
+        customTitle: customTitle.trim() || verification.title,
+        sceneDescription: description.trim(),
+        subtitles: timedSubs,
+      });
 
-    setIsImporting(false);
-
-    if (res.ok && res.video) {
-      playSound('success');
-      if (onImportSuccess) onImportSuccess(res.video);
-      onClose();
-    } else {
-      playSound('wrong');
-      if (res.error === 'vie.unverified') setVerification(null);
-      setErrorMsg(videoImportError(res.error, t) || t('vi.importError'));
+      if (res.ok && res.video) {
+        playSound('success');
+        if (onImportSuccess) onImportSuccess(res.video);
+        onClose();
+      } else {
+        playSound('wrong');
+        if (res.error === 'vie.unverified') setVerification(null);
+        setErrorMsg(videoImportError(res.error, t) || t('vi.importError'));
+      }
+    } catch {
+      setErrorMsg(t('vi.importError'));
+    } finally {
+      setIsImporting(false);
     }
   };
 

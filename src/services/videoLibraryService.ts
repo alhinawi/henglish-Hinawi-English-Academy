@@ -11106,12 +11106,13 @@ export function getStoredVideos(): EducationalVideoItem[] {
   return VERIFIED_SEEDS.map(applyMovieTranscriptCorrections);
 }
 
-export function saveStoredVideos(videos: EducationalVideoItem[]): void {
-  if (typeof window === 'undefined') return;
+export function saveStoredVideos(videos: EducationalVideoItem[]): boolean {
+  if (typeof window === 'undefined') return false;
   try {
     localStorage.setItem(STORAGE_CATALOG_KEY, JSON.stringify(videos));
+    return true;
   } catch {
-    // quiet fallback
+    return false;
   }
 }
 
@@ -11225,6 +11226,16 @@ export async function importEducationalVideo(params: {
     return { ok: false, error: 'vie.unverified' };
   }
 
+  // Never replace an unreadable saved catalog with the seed fallback.
+  try {
+    const raw = localStorage.getItem(STORAGE_CATALOG_KEY);
+    if (raw !== null) {
+      const saved: unknown = JSON.parse(raw);
+      if (!Array.isArray(saved) || saved.some(item => !item || typeof item !== 'object' || Array.isArray(item) || typeof item.youtubeId !== 'string' || !item.youtubeId.trim())) {
+        return { ok: false, error: 'vi.importError' };
+      }
+    }
+  } catch { return { ok: false, error: 'vi.importError' }; }
   const existingVideos = getStoredVideos();
   const existing = existingVideos.find(v => v.youtubeId === ytid);
   if (existing) {
@@ -11302,7 +11313,7 @@ export async function importEducationalVideo(params: {
   };
 
   existingVideos.unshift(newVideo);
-  saveStoredVideos(existingVideos);
+  if (!saveStoredVideos(existingVideos)) return { ok: false, error: 'vi.importError' };
 
   // Sync to Supabase if connected
   syncVideoToSupabase(newVideo);
