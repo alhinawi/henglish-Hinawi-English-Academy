@@ -140,6 +140,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
   useEffect(() => {
     if (unavailable) return;
     let cancelled = false;
+    let readyTimeout: number | undefined;
     setReady(false); setError(false); setPlaying(false); setEnded(false); setRepeat(false); setSpeedMenu(false);
     loopBounds.current = null; finishHold(); lastCue.current = { start, end };
     setCurrentTime(start); pending.current = start;
@@ -169,13 +170,18 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
     };
     loadYouTubeApi().then(YT => {
       if (cancelled || !host.current) return;
+      readyTimeout = window.setTimeout(() => {
+        if (cancelled) return;
+        setError(true); setPlaying(false);
+      }, 15000);
       player.current = new YT.Player(host.current, {
         host: 'https://www.youtube-nocookie.com', width: '100%', height: '100%', videoId: scene.youtubeId,
         playerVars: { start: Math.floor(start), end: Math.ceil(end), autoplay: 0, controls: 1, rel: 0, playsinline: 1, enablejsapi: 1, cc_load_policy: 1, cc_lang_pref: 'en', origin: window.location.origin },
         events: {
           onReady: (event: any) => {
             if (cancelled) return;
-            setReady(true); seekingUntil.current = Date.now() + 4000;
+            clearTimeout(readyTimeout);
+            setError(false); setReady(true); seekingUntil.current = Date.now() + 4000;
             const rates = event.target.getAvailablePlaybackRates?.() || [1];
             supportedRates.current = rates; setAvailableRates(rates);
             if (!rates.includes(baseRate.current)) { baseRate.current = 1; setSpeed(1); }
@@ -200,12 +206,12 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           onPlaybackRateChange: (event: any) => {
             if (!holding.current && Number.isFinite(event.data)) { baseRate.current = event.data; setSpeed(event.data); }
           },
-          onError: () => { if (!cancelled) { setError(true); setPlaying(false); } },
+          onError: () => { if (!cancelled) { clearTimeout(readyTimeout); setError(true); setPlaying(false); } },
         },
       });
-    }).catch(() => { if (!cancelled) setError(true); });
+    }).catch(() => { clearTimeout(readyTimeout); if (!cancelled) setError(true); });
     const timer = window.setInterval(enforceBounds, 50);
-    return () => { cancelled = true; clearInterval(timer); player.current?.destroy?.(); player.current = null; };
+    return () => { cancelled = true; clearTimeout(readyTimeout); clearInterval(timer); player.current?.destroy?.(); player.current = null; };
   }, [scene.youtubeId, start, end, unavailable]);
 
   useEffect(() => {
