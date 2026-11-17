@@ -1,10 +1,11 @@
+import { useOwnedClipboard } from '../../hooks/useOwnedClipboard';
 import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION ALTERNATIVES PANEL
 // Displays alternative translations with style tags and pedagogical guidance
 // ==============================================================================
 
-import React, { useState } from 'react';
+import React from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { TranslationAlternative } from '../../types/translation';
 import { playSound } from '../../utils/audio';
@@ -22,23 +23,19 @@ export const TranslationAlternatives: React.FC<TranslationAlternativesProps> = (
   onSelectAlternative,
 }) => {
   const { t, lang } = useLanguage();
-  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const { copy, copiedKey, copyFailed } = useOwnedClipboard(JSON.stringify(alternatives) + targetLang);
 
   if (!alternatives || alternatives.length === 0) return null;
 
   const handleCopy = async (text: string, index: number) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      playSound('click');
-      setCopiedIndex(index);
-      setTimeout(() => setCopiedIndex(null), 2000);
-    } catch {}
+    if (await copy(text, String(index))) playSound('click');
   };
 
 
 
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="bg-[#0e0c26] rounded-2xl border border-white/10 p-4 shadow-lg space-y-3">
+      {copyFailed && <p role="status" className="text-sm text-amber-200">{t('lw.copyFailed')}</p>}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 justify-between text-start">
         <h4 className="text-sm font-bold text-white flex items-center gap-2">
           <Sparkles className="w-4 h-4 text-[#ffb84d]" />
@@ -51,7 +48,7 @@ export const TranslationAlternatives: React.FC<TranslationAlternativesProps> = (
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {alternatives.map((alt, idx) => {
-          const isCopied = copiedIndex === idx;
+          const isCopied = copiedKey === String(idx);
 
           return (
             <div
