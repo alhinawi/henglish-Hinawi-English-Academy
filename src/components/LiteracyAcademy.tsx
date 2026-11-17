@@ -20,11 +20,12 @@ export function LiteracyAcademy(props: Props) {
 function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props & { storageKey: string }) {
   const { t, dir, lang } = useLanguage();
   const reading = kind === 'reading';
-  useEffect(() => () => stopSpeech(), []);
   const [level, setLevel] = useState('A1');
   const appText = useAppTextMap('literacyAcademyData');
   const [query, setQuery] = useState('');
   const [active, setActive] = useState<string | null>(null);
+  // Stop both active playback and pending synthesis when leaving a lesson.
+  useEffect(() => () => stopSpeech(), [active, kind]);
   const [saved, setSaved] = useState<Saved>(() => loadLiteracy(storageKey));
   const [storageError, setStorageError] = useState(false);
   useEffect(() => { try { localStorage.setItem(storageKey, JSON.stringify(saved)); setStorageError(false); } catch { setStorageError(true); } }, [saved, storageKey]);
