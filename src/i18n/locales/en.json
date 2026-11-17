@@ -2099,7 +2099,7 @@
   "ml.tabBookmarks": "Saved lessons",
   "ml.tabNotes": "My personal notes",
   "ml.tabQuizzes": "Quiz history",
-  "ml.tabCerts": "Accredited certificates",
+  "ml.tabCerts": "Certificates",
   "ml.level": "Academic level",
   "ml.nextGoal": "Next goal:",
   "ml.xp": "Experience points (XP)",
@@ -2890,5 +2890,12 @@
   "lw.editRetry": "Check the model. Target wording: {target}",
   "lw.draftNote": "Write your response. Aim for at least {count} words. This editor does not send your draft to anyone.",
   "lw.wordCount": "{count} / {target} words",
-  "rle.scoreUnit": "points"
+  "rle.scoreUnit": "points",
+  "ml.certificateCenter": "Certificate center",
+  "ml.certificateNote": "Certificates are issued only after the required server-graded assessments. Open the certificate center to check your account, requirements and any issued certificates. This page does not issue certificates or verification codes.",
+  "ml.openCertificates": "Open certificate center",
+  "ml.practiceNote": "Learning points, not an academic rank.",
+  "ml.streakNote": "Consecutive days recorded in your learning activity.",
+  "ml.levelNote": "Your profile level and target are not a placement-test result.",
+  "ml.reviewNeeded": "Review the answers and try again"
 }

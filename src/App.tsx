@@ -612,7 +612,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
                 {/* 24. Official Certificates System */}
                 {currentRoute === 'badges' && <BadgesPage onNavigate={handleNavigate} learnerId={authUser?.id} />}
                 {currentRoute === 'certificates' && (
-                  <CertificatesPage
+                  <CertificatesPage key={authUser?.id || 'guest'}
                     onRecordScore={recordQuizScore}
                     onNavigate={handleNavigate}
                     userProfile={activeProfile}
