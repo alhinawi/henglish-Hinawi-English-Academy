@@ -24,6 +24,7 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const scoreRef = useRef(0);
+  const deadline = useRef(0);
   const finished = useRef(false);
   const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   scoreRef.current = score;
@@ -54,6 +55,8 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   const start = () => {
     finished.current = false;
+    scoreRef.current = 0;
+    deadline.current = Date.now() + START_TIME * 1000;
     if (advanceTimer.current) clearTimeout(advanceTimer.current);
     const words = allWordPairs();
     setPool(words);
@@ -66,31 +69,42 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   useEffect(() => {
     if (phase !== 'play') return;
     timerRef.current = setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 1) {
-          gameOver();
-          return 0;
-        }
-        return t - 1;
-      });
+      const remaining = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000));
+      setTimeLeft(remaining);
+      if (remaining === 0) gameOver();
     }, 1000);
     return stopTimer;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
 
   const pick = (w: WordPair) => {
-    if (picked || !current) return;
+    if (finished.current || picked || !current) return;
+    const now = Date.now();
+    if (now >= deadline.current) {
+      setTimeLeft(0);
+      gameOver();
+      return;
+    }
     setPicked(w.en);
     const ok = w.en === current.en;
     if (ok) {
       playSound('correct');
-      setScore((s) => s + 1);
-      setTimeLeft((t) => Math.min(MAX_TIME, t + 3));
+      scoreRef.current += 1;
+      setScore(scoreRef.current);
+      deadline.current = Math.min(now + MAX_TIME * 1000, deadline.current + 3000);
+      setTimeLeft(Math.ceil((deadline.current - now) / 1000));
       advanceTimer.current = setTimeout(() => { if (!finished.current) nextRound(pool); }, 220);
     } else {
       playSound('wrong');
       advanceTimer.current = setTimeout(() => gameOver(), 900);
     }
+  };
+
+  const quit = () => {
+    finished.current = true;
+    stopTimer();
+    if (advanceTimer.current) clearTimeout(advanceTimer.current);
+    onExit();
   };
 
   if (phase === 'intro')
@@ -110,7 +124,7 @@ export const WordRaceGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
 
   return (
     <div className="max-w-lg mx-auto">
-      <ArcadeHud title={META.title} score={score} timeLeft={timeLeft} onQuit={() => { stopTimer(); onExit(); }} />
+      <ArcadeHud title={META.title} score={score} timeLeft={timeLeft} onQuit={quit} />
       <div className="p-6 sm:p-8 rounded-3xl bg-[#121124] border border-white/10 text-center space-y-6">
         <div className="text-2xl sm:text-3xl font-black text-white">{current?.ar}</div>
         <div className="grid grid-cols-2 gap-2" dir="ltr">
