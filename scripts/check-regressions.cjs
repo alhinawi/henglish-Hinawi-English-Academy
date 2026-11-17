@@ -3,6 +3,7 @@ const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
   'check-verb-workshop-rounds.cjs',
+  'check-literacy-title-search.cjs',
   'check-resource-print.cjs',
   'check-arcade-title-search.cjs',
   'check-listening-unreadable.cjs',

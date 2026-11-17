@@ -32,7 +32,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   const [storageError, setStorageError] = useState(false);
   useEffect(() => { setStorageError(!saveLiteracy(storageKey, saved)); }, [saved, storageKey]);
   const lessons: (LiteracyReading | LiteracyWriting)[] = reading ? LITERACY_READING : LITERACY_WRITING;
-  const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.toLowerCase()));
+  const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.trim().toLowerCase()));
   const current = lessons.find(l => l.id === active);
   const completed = lessons.filter(l => saved.done.includes(l.id)).length;
   const complete = (id: string) => {
