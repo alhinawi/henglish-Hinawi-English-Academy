@@ -2100,5 +2100,6 @@
   "ml.practiceNote": "Learning points, not an academic rank.",
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
-  "ml.reviewNeeded": "Review the answers and try again"
+  "ml.reviewNeeded": "Review the answers and try again",
+  "sl.loadError": "Cümle kitaplığı yüklenemedi. Bu bir yükleme hatasıdır, sonuçsuz arama değildir. Tekrar deneyin."
 }
