@@ -55,6 +55,38 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
   const [playingVoiceId, setPlayingVoiceId] = useState<string | null>(null);
   const [previewError, setPreviewError] = useState('');
   const ownsPreview = useRef(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
+  useEffect(() => {
+    if (!isOpen) return;
+    const active = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const opener = active && active !== document.body && active.getClientRects().length
+      ? active : document.querySelector<HTMLElement>('[data-auth-focus-return]');
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    (focusable()[0] || dialog)?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return; }
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      const target = opener?.isConnected && opener.getClientRects().length
+        ? opener : document.querySelector<HTMLElement>('[data-auth-focus-return]');
+      target?.focus();
+    };
+  }, [isOpen]);
   useEffect(() => {
     setPlayingVoiceId(null);
     setPreviewError('');
@@ -144,6 +176,7 @@ export const VoiceSettingsModal: React.FC<VoiceSettingsModalProps> = ({
 
         {/* Modal Container */}
         <motion.div
+          ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-label={t('vs.title')}
           initial={{ scale: 0.95, opacity: 0, y: 15 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.95, opacity: 0, y: 15 }}
