@@ -7,7 +7,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { LanguageCode, TranslationMode } from '../../types/translation';
 import { RealAudioRecorder, RecordedAudioData } from '../../utils/audioRecorder';
 import { transcribeAudioRecording, executeTranslation } from '../../services/translationService';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound, speakMultilingualText, stopSpeech } from '../../utils/audio';
 import {
   Mic,
   MicOff,
@@ -46,6 +46,14 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   const [translatedVoiceText, setTranslatedVoiceText] = useState('');
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+
+  const uploadVersion = useRef(0);
+  const uploadReader = useRef<FileReader | null>(null);
+  useEffect(() => () => {
+    uploadVersion.current += 1;
+    uploadReader.current?.abort();
+    stopSpeech();
+  }, []);
 
   // Setup RealAudioRecorder callbacks
   useEffect(() => {
@@ -131,43 +139,63 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
+    e.target.value = '';
+    const version = ++uploadVersion.current;
+    uploadReader.current?.abort();
+    stopSpeech();
+    const isCurrent = () => uploadVersion.current === version;
+    let stage: 'file' | 'transcribe' = 'file';
 
     setErrorMsg(null);
     setIsTranscribing(true);
+    setIsTranslating(false);
     setRecognizedText('');
     setTranslatedVoiceText('');
     playSound('click');
 
     try {
-      const reader = new FileReader();
-      reader.onload = async () => {
-        const base64 = (reader.result as string).split(',')[1];
-        if (base64) {
-          const { transcription } = await transcribeAudioRecording(base64, file.type || 'audio/mp3');
-          setRecognizedText(transcription);
-          setIsTranscribing(false);
-
-          if (transcription) {
-            setIsTranslating(true);
-            const res = await executeTranslation({
-              text: transcription,
-              sourceLang,
-              targetLang,
-              mode,
-            });
-            setTranslatedVoiceText(res.translatedText);
-            playSound('correct');
-            speakMultilingualText(res.translatedText, targetLang);
-          }
-        }
-      };
-      reader.readAsDataURL(file);
-    } catch {
-      setErrorMsg(t('vt.errFile'));
+      const base64 = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        uploadReader.current = reader;
+        reader.onload = () => {
+          const content = typeof reader.result === 'string' ? reader.result.split(',')[1] : '';
+          if (content) resolve(content);
+          else reject(new Error('Empty audio file'));
+        };
+        reader.onerror = () => reject(reader.error || new Error('Audio file read failed'));
+        reader.onabort = () => reject(new Error('Audio file read cancelled'));
+        reader.readAsDataURL(file);
+      });
+      if (!isCurrent()) return;
+      uploadReader.current = null;
+      stage = 'transcribe';
+      const { transcription, detectedLang } = await transcribeAudioRecording(base64, file.type || 'audio/mp3');
+      if (!isCurrent()) return;
+      setRecognizedText(transcription);
+      setIsTranscribing(false);
+      if (transcription) {
+        setIsTranslating(true);
+        const res = await executeTranslation({
+          text: transcription,
+          sourceLang: sourceLang === 'auto' ? detectedLang : sourceLang,
+          targetLang,
+          mode,
+        });
+        if (!isCurrent()) return;
+        setTranslatedVoiceText(res.translatedText);
+        playSound('correct');
+        speakMultilingualText(res.translatedText, targetLang);
+      }
+    } catch (err) {
+      if (!isCurrent()) return;
+      setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t(stage === 'file' ? 'vt.errFile' : 'vt.errTranscribe'));
       playSound('wrong');
     } finally {
-      setIsTranscribing(false);
-      setIsTranslating(false);
+      if (isCurrent()) {
+        uploadReader.current = null;
+        setIsTranscribing(false);
+        setIsTranslating(false);
+      }
     }
   };
 
