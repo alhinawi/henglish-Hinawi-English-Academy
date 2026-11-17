@@ -118,7 +118,10 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
       !term ||
       w.word.toLowerCase().includes(term) ||
       w.meaningAr.toLowerCase().includes(term) ||
-      w.exampleEn.toLowerCase().includes(term);
+      w.exampleEn.toLowerCase().includes(term) ||
+      w.exampleAr.toLowerCase().includes(term) ||
+      txText(appText, w.meaningAr).toLowerCase().includes(term) ||
+      txText(appText, w.exampleAr).toLowerCase().includes(term);
 
     const matchesCat = selectedCategory === 'all' || w.category === selectedCategory;
     return matchesSearch && matchesCat;
