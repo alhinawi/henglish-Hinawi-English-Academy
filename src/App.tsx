@@ -577,7 +577,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 18. Quizzes & Tests Lab */}
                 {currentRoute === 'quizzes' && (
-                  <QuizzesPage key={authUser?.id || 'guest'} onRecordScore={recordQuizScore} />
+                  <QuizzesPage key={authUser?.id || 'guest'} learnerId={authUser?.id} onRecordScore={recordQuizScore} />
                 )}
 
                 {/* 19. Games & Interactive Practice */}
