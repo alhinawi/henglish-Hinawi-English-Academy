@@ -1,5 +1,5 @@
 // سباق الكلمات - translate as many words as you can in 60 seconds.
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { Flame } from 'lucide-react';
@@ -27,6 +27,11 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  const scoreRef = useRef(0);
+  const deadline = useRef(0);
+  const finished = useRef(false);
+  scoreRef.current = score;
+
   const nextRound = (words: WordPair[]) => {
     const c = words[Math.floor(Math.random() * words.length)];
     const wrongs = sample(words.filter((w) => w.ar !== c.ar), 3).map((w) => w.ar);
@@ -37,6 +42,9 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
 
   const start = () => {
     cancelTransition();
+    finished.current = false;
+    scoreRef.current = 0;
+    deadline.current = Date.now() + DURATION * 1000;
     const words = allWordPairs();
     setPool(words);
     setScore(0);
@@ -49,26 +57,25 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
   useEffect(() => {
     if (phase !== 'play') return;
     timerRef.current = setInterval(() => {
-      setTimeLeft((t) => {
-        if (t <= 1) {
-          cancelTransition();
-          if (timerRef.current) clearInterval(timerRef.current);
-          setEnd(recordGameResult(META.id, score));
-          setPhase('end');
-          playSound('fanfare');
-          return 0;
-        }
-        return t - 1;
-      });
+      const remaining = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000));
+      setTimeLeft(remaining);
+      if (remaining === 0 && !finished.current) {
+        finished.current = true;
+        cancelTransition();
+        if (timerRef.current) clearInterval(timerRef.current);
+        setEnd(recordGameResult(META.id, scoreRef.current));
+        setPhase('end');
+        playSound('fanfare');
+      }
     }, 1000);
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, score]);
+  }, [phase]);
 
   const pick = (opt: string) => {
-    if (picked || !current) return;
+    if (finished.current || picked || !current) return;
     setPicked(opt);
     const ok = opt === current.ar;
     if (ok) {
@@ -84,6 +91,7 @@ export const WordSprintGame: React.FC<{ onExit: () => void }> = ({ onExit }) => 
   };
 
   const quit = () => {
+    finished.current = true;
     cancelTransition();
     if (timerRef.current) clearInterval(timerRef.current);
     onExit();
