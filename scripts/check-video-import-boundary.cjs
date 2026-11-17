@@ -1,1 +1,15 @@
 const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');let s=fs.readFileSync('src/services/videoLibraryService.ts','utf8'),ast=ts.createSourceFile('v.ts',s,ts.ScriptTarget.Latest,true);let fn=ast.statements.find(n=>ts.isFunctionDeclaration(n)&&n.name?.text==='importEducationalVideo').getText(ast);let reads=0,writes=0;let check={status:'needs_review',isEmbeddable:false};let c={exports:{},extractYouTubeId:()=> 'abcdefghijk',verifyYouTubeVideo:async()=>check,getStoredVideos:()=>{reads++;throw Error('test must reject before any stored-record access')},saveStoredVideos:()=>writes++};vm.runInNewContext(ts.transpileModule(fn,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,c);(async()=>{for(let status of ['needs_review','unavailable','embed_disabled','private_or_deleted']){check={status,isEmbeddable:false};let r=await c.exports.importEducationalVideo({youtubeUrlOrId:'abcdefghijk'});assert.equal(r.ok,false);assert(r.error)}assert.equal(reads,0);assert.equal(writes,0);console.log('Import service rejects all fresh non-embeddable checks before stored-record reads/writes: PASS')})();
+async function durability(){
+ const fnText=name=>ast.statements.find(n=>ts.isFunctionDeclaration(n)&&n.name?.text===name).getText(ast);
+ const saved=new Map();let denied=false,syncs=0,reads=0;
+ const localStorage={getItem:k=>saved.get(k)??null,setItem:(k,v)=>{if(denied)throw Error('quota');saved.set(k,v)}};
+ const ctx={exports:{},window:{},localStorage,Date,STORAGE_CATALOG_KEY:'catalog',extractYouTubeId:v=>v,verifyYouTubeVideo:async()=>({status:'verified_playable',isEmbeddable:true,title:'Fresh',channelName:'Fixture'}),getStoredVideos:()=>{reads++;return saved.has('catalog')?JSON.parse(saved.get('catalog')):[]},syncVideoToSupabase:()=>syncs++};
+ vm.runInNewContext(ts.transpileModule(fnText('saveStoredVideos')+'\n'+fnText('importEducationalVideo'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,ctx);
+ const run=()=>ctx.exports.importEducationalVideo({youtubeUrlOrId:'abcdefghijk',category:'movie_scenes',cefrLevel:'B1'});
+ for(const raw of ['{broken','{}','[null]','[{"youtubeId":""}]','[{"keep":"private"}]']){saved.set('catalog',raw);const before=reads;assert.equal((await run()).ok,false);assert.equal(saved.get('catalog'),raw);assert.equal(reads,before);assert.equal(syncs,0)}
+ saved.set('catalog','[]');denied=true;assert.equal((await run()).ok,false);assert.equal(saved.get('catalog'),'[]');assert.equal(syncs,0);denied=false;
+ const result=await run();assert.equal(result.ok,true);assert.equal(JSON.parse(saved.get('catalog'))[0].youtubeId,'abcdefghijk');assert.equal(syncs,1);
+ const again=await run();assert.equal(again.video.youtubeId,'abcdefghijk');assert.equal(JSON.parse(saved.get('catalog')).length,1);assert.equal(syncs,1);
+ console.log('Import malformed catalog preserved byte-identical; denied write is failure with no sync; retry durable once; duplicate preserved: PASS');
+}
+durability().catch(e=>{console.error(e);process.exitCode=1});
