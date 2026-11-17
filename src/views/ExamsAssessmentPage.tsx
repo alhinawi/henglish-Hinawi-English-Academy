@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { loadPlacementHistory, placementHistoryKey } from '../services/placementHistory';
+import React, { useState, useEffect, useRef } from 'react';
 import { PageRoute, CEFRLevel } from '../types';
 import { 
   generateAdaptivePlacementSession, 
@@ -10,7 +11,7 @@ import {
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { generatePlacementSessionFromBank } from '../services/placementService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, speakEnglish, fireCelebration, stopSpeech } from '../utils/audio';
 import {
   FileCheck2,
   Sparkles,
@@ -31,55 +32,53 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface ExamsAssessmentPageProps {
+  learnerId?: string;
   onNavigate: (route: PageRoute) => void;
   onRecordScore?: (quizId: string, score: number, total: number) => void;
 }
 
-const HISTORY_KEY = 'henglish_placement_history';
 
 export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   onNavigate,
   onRecordScore,
+  learnerId,
 }) => {
   // Adaptive test session generated dynamically on mount or restart
   const appText = useAppTextMap('massiveQuestionBank');
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
+  const storageKey = placementHistoryKey(learnerId);
+  const loadVersion = useRef(0);
+  const finished = useRef(false);
   const [sessionQuestions, setSessionQuestions] = useState<AssessmentQuestion[]>([]);
   const [loadingSession, setLoadingSession] = useState(true);
 
   const loadSession = async () => {
+    const version = ++loadVersion.current;
+    stopSpeech();
     setLoadingSession(true);
     try {
       const fromBank = await generatePlacementSessionFromBank();
+      if (version !== loadVersion.current) return;
       // Fall back to the small built-in set only if the bank could not supply a full test.
       setSessionQuestions(fromBank.length >= 10 ? fromBank : generateAdaptivePlacementSession());
     } catch {
+      if (version !== loadVersion.current) return;
       setSessionQuestions(generateAdaptivePlacementSession());
     } finally {
-      setLoadingSession(false);
+      if (version === loadVersion.current) setLoadingSession(false);
     }
   };
 
   useEffect(() => {
     void loadSession();
+    return () => { loadVersion.current += 1; stopSpeech(); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [currentQIdx, setCurrentQIdx] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
   const [testFinished, setTestFinished] = useState(false);
   const [result, setResult] = useState<AssessmentResultBreakdown | null>(null);
-  const [pastAttempts, setPastAttempts] = useState<Array<{ date: string; level: CEFRLevel; score: number; total: number }>>([]);
-
-  useEffect(() => {
-    try {
-      const raw = localStorage.getItem(HISTORY_KEY);
-      if (raw) {
-        setPastAttempts(JSON.parse(raw));
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
+  const [pastAttempts, setPastAttempts] = useState(() => loadPlacementHistory(storageKey));
 
   const currentQ = sessionQuestions[currentQIdx];
 
@@ -89,10 +88,13 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   };
 
   const handleNext = () => {
+    if (!currentQ || selectedAnswers[currentQIdx] === undefined || finished.current) return;
+    stopSpeech();
     playSound('click');
     if (currentQIdx < sessionQuestions.length - 1) {
       setCurrentQIdx(prev => prev + 1);
     } else {
+      finished.current = true;
       // Evaluate test session dynamically
       const evalResult = evaluateAssessmentSession(sessionQuestions, selectedAnswers);
       setResult(evalResult);
@@ -114,7 +116,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
       const updated = [newAttempt, ...pastAttempts].slice(0, 5);
       setPastAttempts(updated);
       try {
-        localStorage.setItem(HISTORY_KEY, JSON.stringify(updated));
+        localStorage.setItem(storageKey, JSON.stringify(updated));
       } catch {
         // ignore
       }
@@ -122,6 +124,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   };
 
   const handleRestart = () => {
+    finished.current = false;
     playSound('click');
     void loadSession();
     setCurrentQIdx(0);
@@ -131,7 +134,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
   };
 
   return (
-    <div className="space-y-10 pb-16 text-right">
+    <div dir={dir} className="space-y-10 pb-16 text-start">
       
       {/* Academy Hero Header */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
@@ -237,6 +240,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
               return (
                 <button
                   key={optIdx}
+                  aria-pressed={isSelected}
                   onClick={() => handleSelectOption(optIdx)}
                   className={`p-4 rounded-xl border text-left font-sans text-sm sm:text-base font-bold transition-all cursor-pointer flex items-center justify-between ${
                     isSelected
