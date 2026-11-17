@@ -263,7 +263,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
           <form onSubmit={handleAddWord} className="space-y-4">
             {addError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
             {successMsg && (
-              <div className="p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center gap-2">
+              <div role="status" className="p-3 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-xs font-bold flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 shrink-0" />
                 <span>{successMsg}</span>
               </div>
@@ -271,8 +271,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.headwordLabel')} *</label>
+                <label htmlFor={`${titleId}-headword`} className="text-xs font-bold text-white">{t('avm.headwordLabel')} *</label>
                 <input
+                  id={`${titleId}-headword`}
                   type="text"
                   required
                   value={headword}
@@ -283,8 +284,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.meaningLabel')} *</label>
+                <label htmlFor={`${titleId}-meaningAr`} className="text-xs font-bold text-white">{t('avm.meaningLabel')} *</label>
                 <input
+                  id={`${titleId}-meaningAr`}
                   type="text"
                   required
                   value={meaningAr}
@@ -295,8 +297,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.cefrLabel')}</label>
+                <label htmlFor={`${titleId}-cefr`} className="text-xs font-bold text-white">{t('avm.cefrLabel')}</label>
                 <select
+                  id={`${titleId}-cefr`}
                   value={cefr}
                   onChange={e => setCefr(e.target.value as any)}
                   className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs"
@@ -311,8 +314,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.posLabel')}</label>
+                <label htmlFor={`${titleId}-pos`} className="text-xs font-bold text-white">{t('avm.posLabel')}</label>
                 <select
+                  id={`${titleId}-pos`}
                   value={pos}
                   onChange={e => setPos(e.target.value)}
                   className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs"
@@ -325,8 +329,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.ipaUsLabel')}</label>
+                <label htmlFor={`${titleId}-ipaUs`} className="text-xs font-bold text-white">{t('avm.ipaUsLabel')}</label>
                 <input
+                  id={`${titleId}-ipaUs`}
                   type="text"
                   value={ipaUs}
                   onChange={e => setIpaUs(e.target.value)}
@@ -336,8 +341,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.ipaUkLabel')}</label>
+                <label htmlFor={`${titleId}-ipaUk`} className="text-xs font-bold text-white">{t('avm.ipaUkLabel')}</label>
                 <input
+                  id={`${titleId}-ipaUk`}
                   type="text"
                   value={ipaUk}
                   onChange={e => setIpaUk(e.target.value)}
@@ -348,8 +354,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-white">{t('avm.defLabel')}</label>
+              <label htmlFor={`${titleId}-definitionEn`} className="text-xs font-bold text-white">{t('avm.defLabel')}</label>
               <textarea
+                id={`${titleId}-definitionEn`}
                 rows={2}
                 value={definitionEn}
                 onChange={e => setDefinitionEn(e.target.value)}
@@ -360,8 +367,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.exampleEnLabel')}</label>
+                <label htmlFor={`${titleId}-exampleEn`} className="text-xs font-bold text-white">{t('avm.exampleEnLabel')}</label>
                 <input
+                  id={`${titleId}-exampleEn`}
                   type="text"
                   value={exampleEn}
                   onChange={e => setExampleEn(e.target.value)}
@@ -370,8 +378,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
                 />
               </div>
               <div className="space-y-1">
-                <label className="text-xs font-bold text-white">{t('avm.exampleArLabel')}</label>
+                <label htmlFor={`${titleId}-exampleAr`} className="text-xs font-bold text-white">{t('avm.exampleArLabel')}</label>
                 <input
+                  id={`${titleId}-exampleAr`}
                   type="text"
                   value={exampleAr}
                   onChange={e => setExampleAr(e.target.value)}
@@ -397,7 +406,9 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
               {t('avm.bulkIntro')} <code>[&#123; "headword": "...", "meaningAr": "...", "cefr": "B1" &#125;]</code>.
             </p>
 
+            <label htmlFor={`${titleId}-bulkData`} className="block text-xs font-bold text-white">{t('avm.tabBulk')}</label>
             <textarea
+              id={`${titleId}-bulkData`}
               rows={8}
               value={bulkData}
               onChange={e => setBulkData(e.target.value)}
@@ -418,6 +429,7 @@ export const AdminVocabularyModal: React.FC<AdminVocabularyModalProps> = ({
 
             {bulkStatus && (
               <div
+                role={bulkOk ? 'status' : 'alert'}
                 className={`p-3 rounded-xl text-xs font-bold flex items-center gap-2 border ${
                   bulkOk
                     ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
