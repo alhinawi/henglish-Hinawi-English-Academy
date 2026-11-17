@@ -179,6 +179,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 playSound('click');
                 setActiveTab('explorer');
               }}
+              aria-pressed={activeTab === 'explorer'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'explorer'
                   ? 'bg-[#41e7ff] text-[#0c0b20] shadow-lg shadow-[#41e7ff]/20'
@@ -194,6 +195,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 playSound('click');
                 setActiveTab('my-vocab');
               }}
+              aria-pressed={activeTab === 'my-vocab'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'my-vocab'
                   ? 'bg-[#c4ff55] text-[#0c0b20] shadow-lg shadow-[#c4ff55]/20'
@@ -209,6 +211,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 playSound('click');
                 setActiveTab('expressions');
               }}
+              aria-pressed={activeTab === 'expressions'}
               className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
                 activeTab === 'expressions'
                   ? 'bg-[#ffd166] text-[#0c0b20] shadow-lg shadow-[#ffd166]/20'
@@ -224,6 +227,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 playSound('click');
                 setActiveTab('verbs');
               }}
+              aria-pressed={activeTab === 'verbs'}
               className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 activeTab === 'verbs'
                   ? 'bg-purple-500 text-white shadow-lg'
@@ -238,6 +242,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
                 playSound('click');
                 setActiveTab('thematic');
               }}
+              aria-pressed={activeTab === 'thematic'}
               className={`px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 activeTab === 'thematic'
                   ? 'bg-white/20 text-white shadow-lg'

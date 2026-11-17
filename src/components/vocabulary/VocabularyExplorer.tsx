@@ -387,6 +387,7 @@ export const VocabularyExplorer: React.FC = () => {
         </div>
         <div className="flex items-center p-0.5 rounded-lg bg-white/5 border border-white/10">
           <button
+            aria-pressed={viewMode === 'grid'}
             onClick={() => setViewMode('grid')}
             className={`p-1.5 rounded-md transition-all cursor-pointer ${
               viewMode === 'grid' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
@@ -396,6 +397,7 @@ export const VocabularyExplorer: React.FC = () => {
             <LayoutGrid className="w-4 h-4" />
           </button>
           <button
+            aria-pressed={viewMode === 'list'}
             onClick={() => setViewMode('list')}
             className={`p-1.5 rounded-md transition-all cursor-pointer ${
               viewMode === 'list' ? 'bg-white/20 text-white' : 'text-white/40 hover:text-white'
