@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "A mondattár nem tölthető be. Ez betöltési hiba, nem üres keresési eredmény. Próbáld újra."
+  "sl.loadError": "A mondattár nem tölthető be. Ez betöltési hiba, nem üres keresési eredmény. Próbáld újra.",
+  "dt.errNoPdfText": "Ez a PDF nem tartalmaz kijelölhető szöveget, és szkennelt oldalakat tartalmazhat. Tölts fel kijelölhető szöveget tartalmazó PDF-et, vagy másold a szöveget egy TXT-fájlba."
 }
