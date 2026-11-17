@@ -183,7 +183,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
     let isCancelled = false;
     async function runSearch() {
       if (isLoading || loadError) return;
-      if (activeMode !== 'browse' && activeMode !== 'cefr' && activeMode !== 'sections' && activeMode !== 'grammar') {
+      if (activeMode !== 'browse') {
+        setSemanticMatches([]);
         return;
       }
       const res = await searchSentences(searchQuery, {
@@ -207,57 +208,56 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   const currentSentencesPool = useMemo(() => {
     if (isLoading || allSentences.length === 0) return [];
 
-    switch (activeMode) {
-      case 'browse': {
-        return allSentences.filter(s => {
-          if (selectedCefr !== 'all' && s.cefr !== selectedCefr) return false;
-          if (selectedSection !== 'all' && s.section !== selectedSection) return false;
-          if (selectedGrammar !== 'all' && !s.grammar.toLowerCase().includes(selectedGrammar.toLowerCase())) return false;
-          if (!searchQuery) return true;
-          const q = searchQuery.toLowerCase().trim();
-          return (
-            s.english.toLowerCase().includes(q) ||
-            s.arabicEg.includes(q) ||
-            s.arabicFusha.includes(q) ||
-            s.grammar.toLowerCase().includes(q) ||
-            s.subcategory.toLowerCase().includes(q)
-          );
-        });
-      }
-      case 'cefr': {
-        const targetLevel = selectedCefr === 'all' ? 'A1' : selectedCefr;
-        return allSentences.filter(s => s.cefr === targetLevel);
-      }
-      case 'sections': {
-        const targetSec = selectedSection === 'all' ? SECTIONS_METADATA[0].id : selectedSection;
-        return allSentences.filter(s => s.section === targetSec);
-      }
-      case 'grammar': {
-        if (selectedGrammar === 'all') {
-          return allSentences.filter(s => s.section.includes('Grammar'));
+    const modePool = (() => {
+      switch (activeMode) {
+        case 'browse': {
+          return allSentences.filter(s => {
+            if (selectedCefr !== 'all' && s.cefr !== selectedCefr) return false;
+            if (selectedSection !== 'all' && s.section !== selectedSection) return false;
+            if (selectedGrammar !== 'all' && !s.grammar.toLowerCase().includes(selectedGrammar.toLowerCase())) return false;
+            return true;
+          });
         }
-        return allSentences.filter(s => s.grammar.toLowerCase().includes(selectedGrammar.toLowerCase()));
+        case 'cefr': {
+          const targetLevel = selectedCefr === 'all' ? 'A1' : selectedCefr;
+          return allSentences.filter(s => s.cefr === targetLevel);
+        }
+        case 'sections': {
+          const targetSec = selectedSection === 'all' ? SECTIONS_METADATA[0].id : selectedSection;
+          return allSentences.filter(s => s.section === targetSec);
+        }
+        case 'grammar': {
+          if (selectedGrammar === 'all') {
+            return allSentences.filter(s => s.section.includes('Grammar'));
+          }
+          return allSentences.filter(s => s.grammar.toLowerCase().includes(selectedGrammar.toLowerCase()));
+        }
+        case 'favorites': {
+          const favIds = new Set(getFavoriteSentenceIds(learnerId));
+          return allSentences.filter(s => favIds.has(s.id));
+        }
+        case 'difficult': {
+          const diffIds = new Set(getDifficultSentenceIds(learnerId));
+          return allSentences.filter(s => diffIds.has(s.id));
+        }
+        case 'recent': {
+          const recIds = getRecentlyStudiedIds(learnerId);
+          const map = new Map(allSentences.map(s => [s.id, s]));
+          return recIds.map(id => map.get(id)).filter(Boolean) as SentenceItem[];
+        }
+        case 'srs': {
+          const dueIds = new Set(getDueSentencesIds(learnerId));
+          return allSentences.filter(s => dueIds.has(s.id));
+        }
+        default:
+          return allSentences;
       }
-      case 'favorites': {
-        const favIds = new Set(getFavoriteSentenceIds(learnerId));
-        return allSentences.filter(s => favIds.has(s.id));
-      }
-      case 'difficult': {
-        const diffIds = new Set(getDifficultSentenceIds(learnerId));
-        return allSentences.filter(s => diffIds.has(s.id));
-      }
-      case 'recent': {
-        const recIds = getRecentlyStudiedIds(learnerId);
-        const map = new Map(allSentences.map(s => [s.id, s]));
-        return recIds.map(id => map.get(id)).filter(Boolean) as SentenceItem[];
-      }
-      case 'srs': {
-        const dueIds = new Set(getDueSentencesIds(learnerId));
-        return allSentences.filter(s => dueIds.has(s.id));
-      }
-      default:
-        return allSentences;
-    }
+    })();
+    // The search field is visible in every library mode, including saved/review
+    // lists. Apply it after selecting that mode's pool so membership and order stay intact.
+    const q = searchQuery.trim().toLowerCase();
+    return q ? modePool.filter(s => [s.english, s.arabicEg, s.arabicFusha, s.grammar, s.subcategory]
+      .some(value => value.toLowerCase().includes(q))) : modePool;
   }, [allSentences, activeMode, selectedCefr, selectedSection, selectedGrammar, searchQuery, isLoading, learningRevision]);
 
   // Removing the final saved/due card on a page must reveal the remaining
