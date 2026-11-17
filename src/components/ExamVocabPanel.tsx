@@ -346,7 +346,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
       <div ref={sentinelRef} className="h-1" />
 
       {selected && (
-        <ExamDetailSheet exam={exam} entry={selected} onClose={closeDetail} txMap={txMap} />
+        <ExamDetailSheet key={`${exam}:${selected.id}:${lang}`} exam={exam} entry={selected} onClose={closeDetail} txMap={txMap} />
       )}
 
       <FilterSheet

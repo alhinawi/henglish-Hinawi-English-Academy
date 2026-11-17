@@ -329,7 +329,7 @@ export const PhraseBankPanel: React.FC<PhraseBankPanelProps> = ({ bank, titleAr,
       />
 
       {selected && (
-        <PhraseDetailSheet bank={bank} entry={selected} onClose={closeDetail} txMap={txMap} />
+        <PhraseDetailSheet key={`${bank}:${selected.id}:${lang}`} bank={bank} entry={selected} onClose={closeDetail} txMap={txMap} />
       )}
     </div>
   );
