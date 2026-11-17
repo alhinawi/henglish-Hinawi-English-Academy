@@ -1,4 +1,4 @@
-import { loadListeningProgress as load, saveListeningProgress, solvedListeningTasks, type ListeningSaved as Saved } from '../services/listeningProgress';
+import { loadListeningProgress as load, saveListeningProgress, mergeListeningProgress, solvedListeningTasks, type ListeningSaved as Saved } from '../services/listeningProgress';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import type { PageRoute } from '../types';
 import { ALL_LISTENING_LESSONS, normalizeListeningAnswer, type ListeningLesson } from '../data/listeningAcademyData';
@@ -66,7 +66,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   }
   function solve(task: string) {
     if (!selected) return;
-    const prev = savedRef.current;
+    const prev = mergeListeningProgress(load(storageKey), savedRef.current);
     const done = Array.from(new Set([...(prev.solved[selected.id] || []), ...pendingSaveTasks.current, task]));
     const next = { ...prev, solved: { ...prev.solved, [selected.id]: done } };
     const award = taskIds(selected).every(id => done.includes(id)) && !prev.awarded.includes(selected.id) && !!onCompleteActivity;
