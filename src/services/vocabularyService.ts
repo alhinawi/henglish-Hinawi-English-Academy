@@ -1,3 +1,4 @@
+import type { ContentMap } from './contentI18nService';
 import { mediaStorageKey, readMediaList } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - VOCABULARY & LEXICAL EXPLORER SERVICE
@@ -366,7 +367,7 @@ export function getLoadedVocabularyCount(): number {
   return cachedWords.length;
 }
 
-export function searchVocabulary(options: VocabularyFilterOptions = {}): {
+export function searchVocabulary(options: VocabularyFilterOptions = {}, translations: ContentMap | null = null): {
   entries: LexicalEntry[];
   totalMatches: number;
   page: number;
@@ -398,7 +399,9 @@ export function searchVocabulary(options: VocabularyFilterOptions = {}): {
     // 1. Search Query (English prefix/contains or Arabic translation)
     if (hasQuery) {
       const matchHeadword = item.normalized.includes(query);
-      const matchAr = item.meaningAr.includes(query) || (item.otherMeaningsAr && item.otherMeaningsAr.some(m => m.includes(query)));
+      const translated = translations?.[item.id];
+      const matchAr = [item.meaningAr, ...(item.otherMeaningsAr || []), item.exampleAr, item.exampleEn, translated?.m, translated?.e]
+        .some(value => value?.toLowerCase().includes(query));
       const matchDef = item.definitionEn.toLowerCase().includes(query);
       if (!matchHeadword && !matchAr && !matchDef) {
         return false;
