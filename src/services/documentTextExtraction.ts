@@ -1,3 +1,7 @@
+export class NoSelectablePdfTextError extends Error {
+  constructor() { super('This PDF has no selectable text.'); this.name = 'NoSelectablePdfTextError'; }
+}
+
 // Parse document containers rather than treating compressed bytes as plain text.
 // No filename, fallback sentence, or OCR guess is ever document content.
 const MAX_DOCUMENT_TEXT = 2_000_000;
@@ -51,7 +55,7 @@ export async function extractPdfDocumentText(file: File): Promise<string> {
       page.cleanup();
     }
     const text = pages.join('\n\n').trim();
-    if (!text) throw new Error('This PDF has no selectable text. Use a text document instead of a scanned image.');
+    if (!text) throw new NoSelectablePdfTextError();
     return text;
   } finally { await task.destroy(); }
 }

@@ -1,3 +1,4 @@
+import { NoSelectablePdfTextError } from '../../services/documentTextExtraction';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - DOCUMENT TRANSLATION TAB (TXT, PDF, DOCX)
 // Format-aware document parsing, section chunking, progress tracking & download
@@ -110,7 +111,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
     } catch (err) {
       if (version !== requestVersion.current) return;
       console.error('Document translation error:', err);
-      setErrorMessage(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('dt.errTranslate'));
+      setErrorMessage(err instanceof NoSelectablePdfTextError ? t('dt.errNoPdfText') : isAiServiceUnavailable(err) ? t('ai.unavailable') : t('dt.errTranslate'));
       playSound('wrong');
     } finally {
       if (version === requestVersion.current) setIsProcessing(false);
@@ -216,19 +217,19 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
       {/* Translated Document Preview & Download */}
       {translatedDocumentText && (
         <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 shadow-xl space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <FileCheck className="w-5 h-5 text-[#10b981]" />
-              <h4 className="text-sm font-bold text-white">{t('dt.preview')}</h4>
+          <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex min-w-0 items-start gap-2">
+              <FileCheck className="w-5 h-5 shrink-0 text-[#10b981]" />
+              <h4 className="min-w-0 break-words text-sm font-bold leading-6 text-white">{t('dt.preview')}</h4>
             </div>
 
             <button
               type="button"
               onClick={handleDownload}
-              className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#10b981] hover:bg-[#10b981]/90 text-black font-bold text-xs shadow-md shadow-[#10b981]/20 transition-all cursor-pointer"
+              className="flex min-h-11 w-full items-center justify-center gap-2 px-4 py-2 sm:w-auto sm:shrink-0 rounded-xl bg-[#10b981] hover:bg-[#10b981]/90 text-black font-bold text-xs shadow-md shadow-[#10b981]/20 transition-all cursor-pointer"
             >
-              <Download className="w-4 h-4" />
-              <span>{t('dt.download')}</span>
+              <Download className="w-4 h-4 shrink-0" />
+              <span className="min-w-0 break-words">{t('dt.download')}</span>
             </button>
           </div>
 

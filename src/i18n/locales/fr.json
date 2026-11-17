@@ -2100,5 +2100,6 @@
   "ml.practiceNote": "Learning points, not an academic rank.",
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
-  "ml.reviewNeeded": "Review the answers and try again"
+  "ml.reviewNeeded": "Review the answers and try again",
+  "dt.errNoPdfText": "Ce PDF ne contient pas de texte sélectionnable et peut contenir des pages numérisées. Importez un PDF avec du texte sélectionnable ou copiez le texte dans un fichier TXT."
 }
