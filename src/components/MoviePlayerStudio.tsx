@@ -50,6 +50,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
   const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
   const unavailable = scene.transcriptTimingStatus === 'quarantined';
   const hasTranscript = scene.subtitles.length > 0;
+  const hasFusha = scene.subtitles.some(sub => Boolean(sub.arFusha?.trim()));
   const reviewedTiming = scene.transcriptTimingStatus === 'caption-reviewed' || scene.transcriptTimingStatus === 'reviewed-excerpts';
   const start = scene.startTime;
   const end = scene.endTime;
@@ -281,7 +282,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
             <span className="mt-2 block text-sm leading-8 text-white/85">{txText(appText, sub.arEg)}</span>
             {fusha && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
           </button>)}
-          {hasTranscript && <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>}
+          {hasFusha && <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>}
           {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>{t('ms.sceneIdea')} </strong>{txText(summaryText, movieSourceSummaries[scene.youtubeId])}</p>}
           {hasTranscript && <p className="text-[11px] leading-7 text-white/50">{t('ms.scriptNote')}</p>}
         </div>

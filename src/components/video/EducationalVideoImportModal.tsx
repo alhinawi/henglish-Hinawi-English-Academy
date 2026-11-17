@@ -195,8 +195,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           start: s.start,
           end: s.end,
           en: s.en.trim(),
-          arEg: s.arEg.trim() || t('vi.defaultSubAr'),
-          arFusha: s.arEg.trim(),
+          arEg: s.arEg.trim(),
+          arFusha: '',
           keyWords: [],
         }));
     }
