@@ -1,3 +1,4 @@
+import { loadListeningProgress as load, solvedListeningTasks, type ListeningSaved as Saved } from '../services/listeningProgress';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import type { PageRoute } from '../types';
 import { ALL_LISTENING_LESSONS, normalizeListeningAnswer, type ListeningLesson } from '../data/listeningAcademyData';
@@ -6,11 +7,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { speakEnglish, stopSpeech, subscribeSpeechState, type SpeechSpeed } from '../utils/audio';
 import { ArrowRight, Check, CheckCircle2, Headphones, Play, Search, Square, Volume2, X } from 'lucide-react';
 
-type Saved = { solved: Record<string, string[]>; awarded: string[] };
 const KEY = 'henglish-listening-studio-v1';
-function load(key: string): Saved {
-  try { const p = JSON.parse(localStorage.getItem(key) || '{}'); return { solved: p.solved && typeof p.solved === 'object' ? p.solved : {}, awarded: Array.isArray(p.awarded) ? p.awarded : [] }; } catch { return { solved: {}, awarded: [] }; }
-}
 function gapFor(lesson: ListeningLesson) {
   const words = lesson.dictationSentence.split(' ');
   const index = words.map((w, i) => ({ w: normalizeListeningAnswer(w), i })).filter(x => x.w.length > 3).slice(-1)[0]?.i ?? words.length - 1;
@@ -51,10 +48,10 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   useEffect(() => { const next = load(storageKey); savedRef.current = next; setSaved(next); }, [storageKey]);
   useEffect(() => subscribeSpeechState((active) => setPlaying(active)), []);
   useEffect(() => () => stopSpeech(), []);
-  const visible = useMemo(() => ALL_LISTENING_LESSONS.filter(t => (level === 'All' || (level === 'Legacy' ? !t.original : t.level === level && t.original)) && `${t.title} ${t.titleAr} ${t.focusAr}`.toLowerCase().includes(query.toLowerCase()) && (!reviewOnly || !(saved.solved[t.id]?.length >= taskIds(t).length))), [level, query, reviewOnly, saved]);
-  const completed = ALL_LISTENING_LESSONS.filter(t => saved.solved[t.id]?.length >= taskIds(t).length).length;
+  const visible = useMemo(() => ALL_LISTENING_LESSONS.filter(t => (level === 'All' || (level === 'Legacy' ? !t.original : t.level === level && t.original)) && `${t.title} ${t.titleAr} ${t.focusAr}`.toLowerCase().includes(query.toLowerCase()) && (!reviewOnly || solvedListeningTasks(saved, t.id, taskIds(t)).length < taskIds(t).length)), [level, query, reviewOnly, saved]);
+  const completed = ALL_LISTENING_LESSONS.filter(t => solvedListeningTasks(saved, t.id, taskIds(t)).length === taskIds(t).length).length;
   const totalActivities = ALL_LISTENING_LESSONS.reduce((n, t) => n + taskIds(t).length, 0);
-  const solved = selected ? saved.solved[selected.id] || [] : [];
+  const solved = selected ? solvedListeningTasks(saved, selected.id, taskIds(selected)) : [];
   const gap = selected ? gapFor(selected) : null;
   const tokens = selected?.dictationSentence.split(' ') || [];
   const shuffled = useMemo(() => tokens.map((word, index) => ({ word, index })).reverse(), [selected?.id]);
@@ -130,7 +127,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
       <div className="flex flex-wrap gap-2">{[['All',t('listen.filterAll')],['A1',t('listen.levelA1')],['A2',t('listen.levelA2')],['B1',t('listen.levelB1')],['B2',t('listen.levelB2')],['C1',t('listen.levelC1')],['C2',t('listen.levelC2')],['Legacy',t('listen.levelLegacy')]].map(([v,l]) => <button key={v} aria-pressed={level===v} onClick={() => setLevel(v)} className={`${button} px-3! text-xs! ${level===v ? 'border-cyan-300! bg-cyan-300/15! text-cyan-100!' : ''}`}>{l}</button>)}</div>
       <label className="flex items-center gap-2 text-sm text-slate-300"><input type="checkbox" checked={reviewOnly} onChange={e => setReviewOnly(e.target.checked)} className="accent-cyan-300" />{t('listen.reviewOnly')}</label>
       <p className="text-xs text-slate-400" role="status">{t('listen.visibleCount').replace('{n}', String(visible.length))}</p>
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">{visible.map((lsn,i) => { const done = saved.solved[lsn.id]?.length || 0; const full = done >= taskIds(lsn).length; return <button key={lsn.id} onClick={() => open(lsn)} className="group overflow-hidden rounded-3xl border border-white/10 bg-[#12162b] text-right hover:border-cyan-300/50 focus-visible:outline-2 focus-visible:outline-cyan-300"><div className="relative"><img src={lsn.image} alt={lsn.imageAlt} loading={i<3 ? 'eager' : 'lazy'} className="h-44 w-full object-cover" /><span className="absolute bottom-3 right-3 rounded-lg bg-[#090f23]/90 px-3 py-1 text-xs font-bold text-cyan-100">{lsn.level} · {lsn.original ? t('listen.unitTrack').replace('{n}', String(lsn.unit)) : t('listen.originalTrack')}</span><span className="absolute left-3 top-3 rounded-full bg-black/70 p-2">{full ? <CheckCircle2 size={19} className="text-emerald-300" /> : <Headphones size={19} className="text-white" />}</span></div><div className="space-y-3 p-5"><h3 className="text-lg font-black">{txText(appText, lsn.titleAr)}</h3><p dir="ltr" className="text-right text-xs text-slate-400">{lsn.title}</p><p className="text-xs leading-6 text-slate-300">{txText(appText, lsn.focusAr)}</p><div className="flex items-center justify-between border-t border-white/10 pt-3 text-xs"><span className="font-bold text-cyan-200">{full ? t('listen.ctaReview') : done ? t('listen.ctaContinue') : t('listen.ctaStart')}</span><span className="text-slate-400">{t('listen.drillCount').replace('{done}', String(done)).replace('{total}', String(taskIds(lsn).length))}</span></div></div></button>; })}</div>
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">{visible.map((lsn,i) => { const done = solvedListeningTasks(saved, lsn.id, taskIds(lsn)).length; const full = done >= taskIds(lsn).length; return <button key={lsn.id} onClick={() => open(lsn)} className="group overflow-hidden rounded-3xl border border-white/10 bg-[#12162b] text-right hover:border-cyan-300/50 focus-visible:outline-2 focus-visible:outline-cyan-300"><div className="relative"><img src={lsn.image} alt={lsn.imageAlt} loading={i<3 ? 'eager' : 'lazy'} className="h-44 w-full object-cover" /><span className="absolute bottom-3 right-3 rounded-lg bg-[#090f23]/90 px-3 py-1 text-xs font-bold text-cyan-100">{lsn.level} · {lsn.original ? t('listen.unitTrack').replace('{n}', String(lsn.unit)) : t('listen.originalTrack')}</span><span className="absolute left-3 top-3 rounded-full bg-black/70 p-2">{full ? <CheckCircle2 size={19} className="text-emerald-300" /> : <Headphones size={19} className="text-white" />}</span></div><div className="space-y-3 p-5"><h3 className="text-lg font-black">{txText(appText, lsn.titleAr)}</h3><p dir="ltr" className="text-right text-xs text-slate-400">{lsn.title}</p><p className="text-xs leading-6 text-slate-300">{txText(appText, lsn.focusAr)}</p><div className="flex items-center justify-between border-t border-white/10 pt-3 text-xs"><span className="font-bold text-cyan-200">{full ? t('listen.ctaReview') : done ? t('listen.ctaContinue') : t('listen.ctaStart')}</span><span className="text-slate-400">{t('listen.drillCount').replace('{done}', String(done)).replace('{total}', String(taskIds(lsn).length))}</span></div></div></button>; })}</div>
       {visible.length === 0 && <p className={`${box} text-sm text-slate-300`}>{t('listen.noMatches')}</p>}
     </section>
     <footer className="space-y-3 border-t border-white/10 pt-6 text-xs leading-6 text-slate-400"><p>{t('listen.footerNote')}</p><button onClick={() => onNavigate('dashboard')} className={button}>{t('listen.backHome')}</button></footer>
