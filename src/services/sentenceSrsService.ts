@@ -50,13 +50,15 @@ const STORAGE_KEY_STATS = 'henglish_sentence_stats_v1';
 
 function createOwnerStore(learnerId?: string) {
 function readOwnerValue(base: string): string | null {
-  const guestKey = mediaStorageKey(base);
-  if (localStorage.getItem(guestKey) === null) {
-    const legacy = localStorage.getItem(base);
-    if (legacy !== null) {
-      try { JSON.parse(legacy); localStorage.setItem(guestKey, legacy); } catch { /* Leave damaged legacy data untouched. */ }
+  try {
+    const guestKey = mediaStorageKey(base);
+    if (localStorage.getItem(guestKey) === null) {
+      const legacy = localStorage.getItem(base);
+      if (legacy !== null) {
+        try { JSON.parse(legacy); localStorage.setItem(guestKey, legacy); } catch { /* Leave damaged legacy data untouched. */ }
+      }
     }
-  }
+  } catch { /* Optional guest recovery must not hide a valid owner record. */ }
   return localStorage.getItem(mediaStorageKey(base, learnerId));
 }
 // In-memory state
