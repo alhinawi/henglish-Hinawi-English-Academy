@@ -4,6 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
 
 const ROUNDS = 8;
@@ -16,6 +17,7 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
     tagline: t('ss.intro'),
   };
 
+  const { scheduleTransition, cancelTransition } = useArcadeTimeout();
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
@@ -34,6 +36,7 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
   };
 
   const start = async () => {
+    cancelTransition();
     setPhase('loading');
     const pairs = await allSentencePairs(3, 8);
     const list = shuffle(pairs).slice(0, ROUNDS);
@@ -64,7 +67,7 @@ export const SentenceScrambleGame: React.FC<{ onExit: () => void }> = ({ onExit 
     setFeedback(ok ? 'ok' : 'no');
     playSound(ok ? 'correct' : 'wrong');
     if (ok) setScore((s) => s + 1);
-    setTimeout(() => {
+    scheduleTransition(() => {
       if (round + 1 >= ROUNDS) {
         const finalScore = score + (ok ? 1 : 0);
         setEnd(recordGameResult(META.id, finalScore));

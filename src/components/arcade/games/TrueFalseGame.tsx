@@ -4,6 +4,7 @@ import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShel
 import { Check, X } from 'lucide-react';
 import { allSentencePairs, shuffle, SentencePair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
 import { useLanguage } from '../../../i18n/LanguageContext';
 
@@ -24,6 +25,7 @@ interface TFRound {
 export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const meta = { ...META, title: t('tf.title'), tagline: t('tf.tagline') };
+  const { scheduleTransition, cancelTransition } = useArcadeTimeout();
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
@@ -34,6 +36,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
 
   const start = async () => {
+    cancelTransition();
     setPhase('loading');
     const pairs = await allSentencePairs(2, 10);
     const picks = shuffle(pairs).slice(0, ROUNDS);
@@ -57,7 +60,7 @@ export const TrueFalseGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     playSound(ok ? 'correct' : 'wrong');
     setFeedback(ok ? 'ok' : 'no');
     const gained = ok ? 1 : 0;
-    setTimeout(() => {
+    scheduleTransition(() => {
       if (round + 1 >= ROUNDS) {
         setEnd(recordGameResult(META.id, score + gained));
         setScore((s) => s + gained);
