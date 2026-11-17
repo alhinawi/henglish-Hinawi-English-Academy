@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - VOICE & SPEECH TRANSLATION TAB
 // Real microphone recording with waveform analyzer, audio upload, and live playback
@@ -7,7 +8,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { LanguageCode, TranslationMode } from '../../types/translation';
 import { RealAudioRecorder, RecordedAudioData } from '../../utils/audioRecorder';
 import { transcribeAudioRecording, executeTranslation } from '../../services/translationService';
-import { playSound, speakMultilingualText, stopSpeech } from '../../utils/audio';
+import { playSound, stopSpeech } from '../../utils/audio';
 import {
   Mic,
   MicOff,
@@ -71,9 +72,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     };
 
     return () => {
-      if (recorder.state === 'RECORDING') {
-        recorder.cancel();
-      }
+      recorder.cleanup();
     };
   }, [recorder]);
 
@@ -115,8 +114,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
             setTranslatedVoiceText(res.translatedText);
             playSound('correct');
 
-            // Automatic speech playback of translation
-            speakMultilingualText(res.translatedText, targetLang);
+            // The keyed result speech control owns automatic playback.
           }
         }
       } catch (err) {
@@ -128,7 +126,9 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         if (isCurrent()) { setIsTranscribing(false); setIsTranslating(false); }
       }
     } else {
-      // Start recording
+      // Start recording without capturing playback or a previous upload.
+      uploadReader.current?.abort();
+      stopSpeech();
       setRecognizedText('');
       setTranslatedVoiceText('');
       setRecordDuration(0);
@@ -192,7 +192,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         if (!isCurrent()) return;
         setTranslatedVoiceText(res.translatedText);
         playSound('correct');
-        speakMultilingualText(res.translatedText, targetLang);
+        // The keyed result speech control owns automatic playback.
       }
     } catch (err) {
       if (!isCurrent()) return;
@@ -207,11 +207,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     }
   };
 
-  const handleSpeakTranslation = () => {
-    if (!translatedVoiceText) return;
-    playSound('click');
-    speakMultilingualText(translatedVoiceText, targetLang);
-  };
+
 
   const handleCopy = async () => {
     if (!translatedVoiceText) return;
@@ -311,7 +307,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Step 1: Recognized Original Speech */}
           <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 space-y-3">
-            <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
+            <div className="flex flex-wrap items-start justify-between gap-3 text-xs text-[#b9b6d5]">
               <span className="font-bold text-white flex items-center gap-1.5">
                 <span>{t('vt.transcribedTitle')}</span>
               </span>
@@ -337,21 +333,14 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
 
           {/* Step 2: AI Voice Translation */}
           <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 space-y-3">
-            <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
+            <div className="flex flex-wrap items-start justify-between gap-3 text-xs text-[#b9b6d5]">
               <span className="font-bold text-white flex items-center gap-1.5">
                 <span>{t('vt.translatedTitle')}</span>
               </span>
 
-              <div className="flex items-center gap-1">
-                <button
-                  type="button"
-                  onClick={handleSpeakTranslation}
-                  disabled={!translatedVoiceText}
-                  title={t('vt.listenTranslation')}
-                  className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30"
-                >
-                  <Volume2 className="w-4 h-4" />
-                </button>
+              <div className="flex flex-wrap items-start gap-1">
+                <LessonSpeechButton key={translatedVoiceText + targetLang} text={translatedVoiceText} language={targetLang} label={t('vt.listenTranslation')} iconOnly autoPlay disabled={!translatedVoiceText}
+                  className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30" />
                 <button
                   type="button"
                   onClick={handleCopy}
