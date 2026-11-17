@@ -899,7 +899,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A cautious recommendation",
     "titleAr": "توصية محسوبة",
     "prompt": "Recommend a pilot project without overstating uncertain benefits.",
-    "model": "I recommend a limited pilot, subject to an agreed review point. The proposal may improve access, but the current evidence does not establish how different groups would be affected.",
+    "model": "I recommend a limited pilot, subject to an agreed review point. The proposal may improve access, but the current evidence does not establish how different groups would be affected.\n\nThe pilot should therefore test a specific question: whether an evening session helps residents who cannot attend during the day. Before it begins, the organisers should agree how attendance, waiting times and access problems will be recorded. Participation alone would not show that the service meets everyone's needs; feedback from people who could not attend would also matter.\n\nAt the review, the team should compare the practical benefits with the staffing required. Expansion should depend on that assessment, rather than on the assumption that a small trial will necessarily succeed at a larger scale.",
     "image": "/images/literacy/literacy-writing-25.webp",
     "imageSource": ""
   },
@@ -909,7 +909,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "An executive summary",
     "titleAr": "ملخص تنفيذي",
     "prompt": "Summarise a fictional request for longer library hours when staffing is unresolved.",
-    "model": "Students requested longer opening hours before exams. The consultation identifies a need, but staffing remains unresolved. A short evening trial would allow the college to assess demand before making a permanent commitment.",
+    "model": "Students requested longer opening hours before exams. The consultation identifies a need, but staffing remains unresolved. A short evening trial would allow the college to assess demand before making a permanent commitment.\n\nThe immediate decision is therefore whether the college can support a trial, not whether extended hours should become a permanent service. A workable plan would need to identify who opens and closes the building, how students obtain help, and what happens if a staff member is absent. These arrangements should be costed before dates are announced.\n\nIf the trial proceeds, the review should consider both use of the space and the burden on staff. A busy first evening would be encouraging, but it would not by itself establish that the arrangement is sustainable.",
     "image": "/images/literacy/literacy-writing-26.webp",
     "imageSource": ""
   },
@@ -919,7 +919,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Challenge an assumption",
     "titleAr": "ناقش افتراضا",
     "prompt": "Challenge the idea that a longer guide is always more useful. Concede a reasonable point.",
-    "model": "A longer guide can provide valuable detail. Its length, however, is not evidence of usefulness. Readers also need a clear structure and a quick route to the information required for their task.",
+    "model": "A longer guide can provide valuable detail. Its length, however, is not evidence of usefulness. Readers also need a clear structure and a quick route to the information required for their task.\n\nThere is a reasonable case for including exceptions, worked examples and explanations of unfamiliar terms. Removing them merely to achieve a shorter document could leave readers unable to act. The better distinction is between detail that supports a decision and detail that interrupts it. A short overview can explain the main steps, while clearly labelled sections preserve material needed only in particular circumstances.\n\nThe guide should then be tested with realistic questions. If readers repeatedly overlook an essential condition, adding another paragraph may be less effective than changing the heading or moving the condition beside the relevant step.",
     "image": "/images/literacy/literacy-writing-27.webp",
     "imageSource": ""
   },
@@ -929,7 +929,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A funding proposal",
     "titleAr": "مقترح تمويل",
     "prompt": "Propose a fictional reading space with purpose, delivery and evaluation. Invent no outcomes.",
-    "model": "The proposed space would give residents somewhere quiet to study. Volunteers would supervise a weekly programme. Attendance and participant feedback would inform a review after the first term.",
+    "model": "The proposed space would give residents somewhere quiet to study. Volunteers would supervise a weekly programme. Attendance and participant feedback would inform a review after the first term.\n\nThe initial programme would use an existing room for one evening each week. Before opening, the organisers would confirm access arrangements, a safeguarding contact and a named person responsible for each session. Volunteers would receive clear instructions about the support they can offer and when to refer a question elsewhere. The proposal does not assume that volunteers can replace specialist teaching.\n\nEvaluation would include recorded attendance, reasons for missed sessions where participants choose to share them, and comments on the space. No improvement in examination results is promised. The first review would determine whether the service is useful, manageable and worth continuing.",
     "image": "/images/literacy/literacy-writing-28.webp",
     "imageSource": ""
   },
@@ -939,7 +939,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "An abstract",
     "titleAr": "ملخص بحث",
     "prompt": "Describe a proposed study of feedback. Make clear that there are no results yet.",
-    "model": "This proposed study examines responses to written feedback. It would compare guided revision tasks with general comments. No data have yet been collected, so no claims about effectiveness are made.",
+    "model": "This proposed study examines responses to written feedback. It would compare guided revision tasks with general comments. No data have yet been collected, so no claims about effectiveness are made.\n\nParticipants would revise a short piece of writing after receiving one of the two forms of feedback. A second task would explore whether they can apply the same point without further guidance. The analysis would distinguish changes made to the original draft from evidence of later independent use. These are related outcomes, but they should not be treated as interchangeable.\n\nParticipation would be voluntary, and the study would set out how writing samples are stored and anonymised. Any eventual report would describe the sample and the limits of the design. A difference between groups would require interpretation, not an automatic claim that one approach is best for every learner.",
     "image": "/images/literacy/literacy-writing-29.webp",
     "imageSource": ""
   },
@@ -949,7 +949,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "Revise for concision",
     "titleAr": "راجع للإيجاز",
     "prompt": "Replace wordy expressions with clear verbs in a plan to review a procedure.",
-    "model": "We plan to review the current procedure. The review will focus on unclear steps and avoid changing requirements that already work. We will explain the reasons for any proposed changes.",
+    "model": "We plan to review the current procedure. The review will focus on unclear steps and avoid changing requirements that already work. We will explain the reasons for any proposed changes.\n\nFirst, we will ask staff to identify the points where they most often need clarification. We will then compare those questions with the written instructions. This will help us separate missing information from information that is present but difficult to find. We will test revised wording with a small group before asking the whole team to use it.\n\nThe final version will name the person responsible for each step and show where to report a problem. We will keep a record of the changes so that staff can understand what is different. The aim is a procedure people can follow, not a shorter document at any cost.",
     "image": "/images/literacy/literacy-writing-30.webp",
     "imageSource": ""
   },
@@ -959,7 +959,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A critical response",
     "titleAr": "استجابة نقدية",
     "prompt": "Discuss why fluency alone cannot measure translation quality.",
-    "model": "Fluency matters, but it cannot be the sole measure of a translation. A readable sentence may erase ambiguity central to the original. The judgement must consider what kind of reading the source makes possible.",
+    "model": "Fluency matters, but it cannot be the sole measure of a translation. A readable sentence may erase ambiguity central to the original. The judgement must consider what kind of reading the source makes possible.\n\nImagine a fictional letter whose final line can be read as either an invitation or a dismissal. A translator who makes the intention explicit may produce a smoother sentence while settling a question the writer deliberately leaves open. Conversely, preserving every feature of the source in an unfamiliar form could create confusion that the original audience never experienced. Neither ease nor difficulty is inherently faithful.\n\nThe relevant judgement is therefore relational: what has changed, for which readers, and with what effect? A useful assessment would consider meaning, register, rhythm and purposeful uncertainty alongside readability. It would also acknowledge choices that cannot all be satisfied at once. Fluency remains an important achievement, but it is evidence to examine rather than a verdict that ends the discussion.",
     "image": "/images/literacy/literacy-writing-31.webp",
     "imageSource": ""
   },
@@ -969,7 +969,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A policy caveat",
     "titleAr": "قيد في توصية",
     "prompt": "Write a scoped policy recommendation and a condition for revising it.",
-    "model": "The recommendation applies to the pilot sites only. Extension would require evidence of comparable support elsewhere. If implementation reveals unequal access, the policy should be revised rather than its assumptions defended at any cost.",
+    "model": "The recommendation applies to the pilot sites only. Extension would require evidence of comparable support elsewhere. If implementation reveals unequal access, the policy should be revised rather than its assumptions defended at any cost.\n\nFor the pilot, each site should retain a staffed alternative to the new booking process. This is a precaution, not a prediction that the digital route will fail. The review should record whether people can complete the process, where they need help, and whether the alternative is available when they need it. A high overall completion rate could otherwise conceal a serious obstacle affecting a smaller group.\n\nThe decision to extend the policy should follow that review and include the resources needed to maintain both routes. If the evidence is incomplete, the appropriate response may be to continue a narrower trial. The condition for expansion is a service that people can actually use, not simply the successful installation of the software.",
     "image": "/images/literacy/literacy-writing-32.webp",
     "imageSource": ""
   },
@@ -979,7 +979,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "An interpretation",
     "titleAr": "فقرة تأويلية",
     "prompt": "Interpret a fictional narrator who repeatedly insists he is calm. Do not claim certainty.",
-    "model": "Repeated assurances of calm may suggest an effort to control perception. They do not prove the account false; rather, they invite attention to the tension between stated composure and the need to insist on it.",
+    "model": "Repeated assurances of calm may suggest an effort to control perception. They do not prove the account false; rather, they invite attention to the tension between stated composure and the need to insist on it.\n\nIn the imagined passage, the narrator returns to the same assurance even when no other character has questioned his behaviour. One possible reading is that he anticipates the reader's suspicion and tries to answer it in advance. Another is that the repeated phrase offers reassurance to himself. The distinction matters: a defensive voice need not be a deliberately deceptive one.\n\nA stronger interpretation would connect this pattern with other details in the passage, such as interruptions, changes of tense or gaps in the account. Without those details, certainty would exceed the evidence. The repetition gives us a reason to question the narrator's presentation, but it does not supply a complete explanation of his motives. Its force lies in keeping that uncertainty active.",
     "image": "/images/literacy/literacy-writing-33.webp",
     "imageSource": ""
   },
@@ -989,7 +989,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A counterargument",
     "titleAr": "حجة مضادة",
     "prompt": "Answer the fair objection that consultation takes time. Acknowledge urgency.",
-    "model": "Consultation can delay a decision, and urgency sometimes limits what is possible. Yet speed alone does not establish soundness. Early objections may reveal costs that would otherwise emerge only after implementation.",
+    "model": "Consultation can delay a decision, and urgency sometimes limits what is possible. Yet speed alone does not establish soundness. Early objections may reveal costs that would otherwise emerge only after implementation.\n\nThe fair objection is not that affected people have nothing useful to say, but that a decision may lose its purpose if every disagreement must first be settled. That concern deserves an answer about scope and time. An urgent decision can still include a short opportunity to identify immediate barriers, a clear account of who was not reached, and a date for reconsidering the arrangement. These steps do not amount to full consultation, and they should not be described as such.\n\nWhere action cannot wait, the decision should be as limited and reversible as the circumstances allow. Urgency may justify a different process; it does not make the consequences disappear. The responsibility is to act while preserving a practical route for correction.",
     "image": "/images/literacy/literacy-writing-34.webp",
     "imageSource": ""
   },
@@ -999,7 +999,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A reflective conclusion",
     "titleAr": "خاتمة تأملية",
     "prompt": "Conclude an essay about travel without claiming every journey changes everyone.",
-    "model": "Travel does not guarantee understanding. Its value may lie less in distance than in the habits of attention carried home. Whether a journey matters depends partly on what the traveller is willing to question afterwards.",
+    "model": "Travel does not guarantee understanding. Its value may lie less in distance than in the habits of attention carried home. Whether a journey matters depends partly on what the traveller is willing to question afterwards.\n\nThis leaves room for modest outcomes. A conversation may unsettle a familiar assumption without replacing it with a complete explanation of another place. An uncomfortable mistake may prompt greater care, although discomfort alone is no proof of learning. Even an uneventful journey can matter if the traveller notices how much ordinary life escapes a visitor's brief view.\n\nThe conclusion, then, should resist both the promise of automatic transformation and the dismissal of travel as empty consumption. What deserves attention is the relationship between encounter and response. The journey supplies an opportunity, not a certificate of openness. Its significance remains unfinished when the traveller returns, because understanding depends on what is done with the questions that remain.",
     "image": "/images/literacy/literacy-writing-35.webp",
     "imageSource": ""
   },
@@ -1009,7 +1009,7 @@ export const LITERACY_WRITING: LiteracyWriting[] = [
     "title": "A precise editorial",
     "titleAr": "افتتاحية دقيقة",
     "prompt": "Introduce an argument for maintaining digital services. Separate a principle from a fact claim.",
-    "model": "A public service should be judged throughout its use, not only at launch. This is a principle of accountability, not a claim that every new system fails. It asks who will correct errors and support users.",
+    "model": "A public service should be judged throughout its use, not only at launch. This is a principle of accountability, not a claim that every new system fails. It asks who will correct errors and support users.\n\nA launch can demonstrate that a service works under tested conditions. It cannot settle every question about future demand, changing rules or the circumstances of people who were not represented in those tests. The argument for maintenance does not depend on predicting a particular failure. It follows from the decision to make people rely on a service whose conditions may change.\n\nA credible plan would therefore identify who receives reports, how urgent problems are assessed, and which alternatives remain available during an interruption. It would also make responsibility visible when suppliers or staff change. These are proposals about how a service ought to be run. Claims about its actual performance would still need evidence from use, rather than reassurance drawn from the fact that it launched successfully.",
     "image": "/images/literacy/literacy-writing-36.webp",
     "imageSource": ""
   }
