@@ -1,0 +1,10 @@
+import functools,http.server,json,pathlib,threading
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd();server=http.server.ThreadingHTTPServer(('127.0.0.1',4188),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for lang in ['en','ar']:
+   page=b.new_page(viewport={'width':390,'height':1100});held=[];page.route('**/api/ai/assistant',lambda r:held.append(r));t=json.load(open('src/i18n/locales/'+lang+'.json'));page.goto('http://127.0.0.1:4188/?lang='+lang+'#translation');page.get_by_role('button',name=t['ts.assistant'],exact=True).click();field=page.get_by_placeholder(t['sad.inputPlaceholder'],exact=True);field.fill('Question about the earlier context');field.press('Enter');page.wait_for_timeout(100);assert len(held)==1;page.get_by_role('button',name=t['am.closeAria'],exact=True).click();page.get_by_placeholder(t['se.placeholder'],exact=True).fill('A different source context.');held[0].fulfill(json={'answer':'Late response for earlier source'});page.get_by_role('button',name=t['ts.assistant'],exact=True).click();expect(page.get_by_text('Late response for earlier source',exact=True)).to_have_count(0);field.fill('Question for this source');field.press('Enter');page.wait_for_timeout(100);assert len(held)==2;assert held[1].request.post_data_json['context']['originalText']=='A different source context.';held[1].fulfill(json={'answer':'Answer for the current source.'});expect(page.get_by_text('Answer for the current source.',exact=True)).to_be_visible();page.screenshot(path='/downloads/assistant-current-context-'+lang+'.png');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');page.close();print(lang,'Next close/sourcechange dropslateanswer,newcontextrequest succeeds,accessibleclose,width PASS')
+  b.close()
+finally:server.shutdown();server.server_close()
