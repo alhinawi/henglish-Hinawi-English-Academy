@@ -25,3 +25,5 @@ for(const saved of [null,'','bad','-10','Infinity','120px','120']){
  }
 }
 console.log('Grammar scroll restore: blocked reads/invalid coordinates use top; delayed callbacks ignored after later navigation: PASS');
+for(const text of ["aria-label={t('grammar.searchPlaceholder')}",'aria-pressed={selectedCategory === cat}','aria-pressed={selectedLevel === lvl}'])assert.ok(fs.readFileSync('src/views/GrammarAcademyPage.tsx','utf8').includes(text),text);
+console.log('Grammar academy search has a localized name and category/level filters expose selected state: PASS');
