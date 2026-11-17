@@ -313,6 +313,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
         ].map(tab => (
           <button
             key={tab.id}
+            aria-pressed={reviewFilter === tab.id}
             onClick={() => {
               playSound('click');
               setReviewFilter(tab.id as any);
