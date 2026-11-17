@@ -6,7 +6,7 @@ import { playSound } from '../utils/audio';
 import { Download, Printer, Sparkles } from 'lucide-react';
 
 export const ResourcesPage: React.FC = () => {
-  const { t, lang } = useLanguage();
+  const { t, dir } = useLanguage();
   const appText = useAppTextMap('resourcesData');
   const [downloadedIds, setDownloadedIds] = useState<string[]>([]);
   const [previewResource, setPreviewResource] = useState<LearningResource | null>(DOWNLOADABLE_RESOURCES[0]);
@@ -36,7 +36,7 @@ export const ResourcesPage: React.FC = () => {
   };
 
   return (
-    <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    <div dir={dir} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
       
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -71,11 +71,7 @@ export const ResourcesPage: React.FC = () => {
           return (
             <div
               key={res.id}
-              onClick={() => {
-                playSound('click');
-                setPreviewResource(res);
-              }}
-              className={`glass-panel p-6 rounded-3xl border transition-all cursor-pointer flex flex-col justify-between ${
+              className={`glass-panel p-6 rounded-3xl border transition-all flex flex-col justify-between ${
                 isSelected
                   ? 'border-[#41e7ff] shadow-[0_0_25px_rgba(65,231,255,0.2)] bg-[#1b1939]'
                   : 'border-white/10 hover:border-white/30'
@@ -115,9 +111,15 @@ export const ResourcesPage: React.FC = () => {
                   <span>{isDownloaded ? t('rs.downloaded') : t('rs.download')}</span>
                 </button>
 
-                <span className="text-xs text-[#b9b6d5] font-semibold">
+                <button
+                  type="button"
+                  onClick={() => { playSound('click'); setPreviewResource(res); }}
+                  aria-pressed={isSelected}
+                  aria-label={`${t('rs.preview')}: ${txText(appText, res.title)}`}
+                  className="min-h-11 px-2 rounded-xl text-xs text-[#b9b6d5] font-semibold hover:text-white focus-visible:outline-2 focus-visible:outline-[#41e7ff]"
+                >
                   {isSelected ? t('rs.active') : t('rs.preview')}
-                </span>
+                </button>
               </div>
             </div>
           );
