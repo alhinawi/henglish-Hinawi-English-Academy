@@ -14,10 +14,27 @@ function loadYouTubeApi(): Promise<any> {
   if (window.YT?.Player) return Promise.resolve(window.YT);
   if (!apiPromise) apiPromise = new Promise((resolve, reject) => {
     const previous = window.onYouTubeIframeAPIReady;
-    window.onYouTubeIframeAPIReady = () => { previous?.(); resolve(window.YT); };
     const script = document.createElement('script');
+    let settled = false;
+    const cleanup = () => {
+      clearTimeout(timer);
+      if (window.onYouTubeIframeAPIReady === onReady) window.onYouTubeIframeAPIReady = previous;
+    };
+    const fail = () => {
+      if (settled) return;
+      settled = true; cleanup(); script.remove(); apiPromise = null;
+      reject(new Error('Player could not load'));
+    };
+    const onReady = () => {
+      if (settled) return;
+      if (!window.YT?.Player) { fail(); return; }
+      settled = true; cleanup();
+      try { previous?.(); } finally { resolve(window.YT); }
+    };
+    const timer = window.setTimeout(fail, 15000);
+    window.onYouTubeIframeAPIReady = onReady;
     script.src = 'https://www.youtube.com/iframe_api';
-    script.onerror = () => { apiPromise = null; reject(new Error('Player could not load')); };
+    script.onerror = fail;
     document.head.appendChild(script);
   });
   return apiPromise;
