@@ -36,12 +36,14 @@ import { useLanguage } from '../../i18n/LanguageContext';
 
 interface EducationalVideoImportModalProps {
   isOpen: boolean;
+  initialYoutubeId?: string;
   onClose: () => void;
   onImportSuccess?: (video: EducationalVideoItem) => void;
 }
 
 export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalProps> = ({
   isOpen,
+  initialYoutubeId,
   onClose,
   onImportSuccess,
 }) => {
@@ -116,6 +118,10 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
     setErrorMsg(null);
   };
 
+
+  useEffect(() => {
+    if (isOpen && initialYoutubeId) changeYoutubeInput(`https://www.youtube.com/watch?v=${initialYoutubeId}`);
+  }, [isOpen, initialYoutubeId]);
 
   if (!isOpen) return null;
 
