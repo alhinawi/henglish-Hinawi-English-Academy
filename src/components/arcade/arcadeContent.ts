@@ -62,6 +62,15 @@ export function uniqueMeaningPairs(words: WordPair[]): WordPair[] {
   });
 }
 
+/** Translation choices must have distinct meanings and exclude synonyms of the answer. */
+export function translationDistractors(words: WordPair[], correct: WordPair, count = 3): WordPair[] {
+  const meaning = correct.ar.trim().normalize('NFKC');
+  const english = correct.en.trim().toLowerCase();
+  return sample(uniqueMeaningPairs(words.filter(word =>
+    word.en.trim().toLowerCase() !== english && word.ar.trim().normalize('NFKC') !== meaning,
+  )), count);
+}
+
 /** Movie-scene subtitle lines, always available synchronously. */
 export function sceneSentencePairs(): SentencePair[] {
   return MOVIE_SCENES_CATALOG.flatMap((s) =>
