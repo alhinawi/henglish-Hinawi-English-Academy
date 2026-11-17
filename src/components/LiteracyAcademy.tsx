@@ -7,6 +7,7 @@ import { literacyStorageKey, loadLiteracy, type LiteracySaved as Saved } from '.
 import { useAuth } from '../context/AuthContext';
 import { stopSpeech } from '../utils/audio';
 import { LessonSpeechButton } from './LessonSpeechButton';
+import { readingMeaningOptions } from '../services/literacyActivities';
 
 type Props = { kind: 'reading' | 'writing'; onCompleteActivity?: (id: string, score: number, total: number) => void };
 const panel = 'rounded-3xl border border-white/10 bg-[#121629] p-5 sm:p-7';
@@ -83,20 +84,20 @@ function ReadingWorkshop({ lesson: l, done, onComplete }: { lesson: LiteracyRead
   const appText = useAppTextMap('literacyAcademyData');
   const [gap, setGap] = useState('');
   const [gapChecked, setGapChecked] = useState(false);
-  const [meaning, setMeaning] = useState<number | null>(null);
+  const [meaning, setMeaning] = useState<string | null>(null);
+  const [meaningOptions] = useState(() => readingMeaningOptions(l, LITERACY_READING));
   const [seconds, setSeconds] = useState(0);
   const [running, setRunning] = useState(false);
   useEffect(() => { if (!running) return; const id = window.setInterval(() => setSeconds(s => s + 1), 1000); return () => clearInterval(id); }, [running]);
   const gapCorrect = normalise(gap) === normalise(l.word);
-  const allCorrect = chosen === l.answer && (!l.followUp || followUpAnswer === l.followUp.answer) && gapChecked && gapCorrect && meaning === 1;
+  const allCorrect = chosen === l.answer && (!l.followUp || followUpAnswer === l.followUp.answer) && gapChecked && gapCorrect && meaning === l.meaning;
   const sentence = l.content.split(/(?<=[.!?])\s+/).find(s => s.toLowerCase().includes(l.word.toLowerCase())) || l.content;
   const gapSentence = sentence.replace(new RegExp(l.word, 'i'), '______');
-  const other = LITERACY_READING.find(x => x.meaning !== l.meaning && x.id !== l.id)!;
   return <>
     <section className={panel}><div className="flex flex-wrap gap-2 items-center justify-between"><span className="text-xs text-slate-400">{t('lw.textCount').replace('{count}', String(l.content.split(/\s+/).length))}</span><LessonSpeechButton className={button} text={l.content} label={t('lw.speech')} /></div><p dir="ltr" lang="en" className="my-6 text-left text-lg leading-9 text-slate-100">{l.content}</p><div className="flex flex-wrap items-center gap-3 text-xs text-slate-400"><Clock size={15} /><span dir="ltr">{Math.floor(seconds / 60)}:{String(seconds % 60).padStart(2, '0')}</span><button className="underline text-cyan-200" onClick={() => setRunning(!running)}>{running ? t('lw.pause') : t('lw.timer')}</button><button className="underline" onClick={() => { setSeconds(0); setRunning(false); }}>{t('lw.reset')}</button></div></section>
     <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.understand')}</h3><p dir="ltr" lang="en" className="text-slate-200 text-left">{l.question}</p>{l.options.map((o, i) => <button key={o} onClick={() => setChosen(i)} aria-pressed={chosen === i} className={`${button} w-full text-left ${chosen === i ? 'border-cyan-300 bg-cyan-300/10' : ''}`} dir="ltr" lang="en">{o}</button>)}{chosen !== null && <Feedback correct={chosen === l.answer}>{chosen === l.answer ? t('lw.readCorrect') : t('lw.readRetry')}</Feedback>}{l.followUp && <div className="space-y-4 border-t border-white/10 pt-5"><p dir="ltr" lang="en" className="text-left text-slate-200">{l.followUp.question}</p>{l.followUp.options.map((option, index) => <button key={option} dir="ltr" lang="en" aria-pressed={followUpAnswer === index} onClick={() => setFollowUpAnswer(index)} className={`${button} w-full text-left ${followUpAnswer === index ? 'border-cyan-300 bg-cyan-300/10' : ''}`}>{option}</button>)}{followUpAnswer !== null && <Feedback correct={followUpAnswer === l.followUp.answer}>{followUpAnswer === l.followUp.answer ? <p dir="ltr" lang="en" className="text-left">{l.followUp.explanation}</p> : t('lw.readRetry')}</Feedback>}</div>}</section>
     <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.recall')}</h3><p className="text-xs text-slate-400">{t('lw.wordNote').replace('{meaning}', txText(appText, l.meaning))}</p><p dir="ltr" lang="en" className="text-left leading-8 text-slate-200">{gapSentence}</p><input aria-label={t('lw.missing')} value={gap} onChange={e => { setGap(e.target.value); setGapChecked(false); }} dir="ltr" lang="en" className="w-full rounded-xl border border-white/20 bg-black/20 p-3 text-white" /><button className={button} onClick={() => setGapChecked(true)}>{t('lw.checkWord')}</button>{gapChecked && <Feedback correct={gapCorrect}>{gapCorrect ? t('lw.wordCorrect') : t('lw.wordHint').replace('{first}', l.word[0]).replace('{count}', String(l.word.length))}</Feedback>}</section>
-    <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.context')}</h3><p className="text-slate-200">{t('lw.meaningQuestion').replace('{word}', l.word)}</p>{[other.meaning, l.meaning, t('lw.noMeaning')].map((m, i) => <button className={`${button} w-full text-right ${meaning === i ? 'border-cyan-300' : ''}`} key={m} onClick={() => setMeaning(i)}>{txText(appText, m)}</button>)}{meaning !== null && <Feedback correct={meaning === 1}>{meaning === 1 ? t('lw.meaningCorrect').replace('{word}', l.word).replace('{meaning}', txText(appText, l.meaning)) : t('lw.meaningRetry')}</Feedback>}</section>
+    <section className={`${panel} space-y-4`}><h3 className="font-bold text-white">{t('lw.context')}</h3><p className="text-slate-200">{t('lw.meaningQuestion').replace('{word}', l.word)}</p>{meaningOptions.map((m) => <button className={`${button} w-full text-right ${meaning === m ? 'border-cyan-300' : ''}`} key={m} aria-pressed={meaning === m} onClick={() => setMeaning(m)}>{txText(appText, m)}</button>)}{meaning !== null && <Feedback correct={meaning === l.meaning}>{meaning === l.meaning ? t('lw.meaningCorrect').replace('{word}', l.word).replace('{meaning}', txText(appText, l.meaning)) : t('lw.meaningRetry')}</Feedback>}</section>
     <button disabled={!allCorrect || done} className={`${button} w-full bg-cyan-300/15 text-cyan-100`} onClick={onComplete}>{done ? <><Check size={18} className="inline align-middle" aria-hidden="true" /> {t('lw.readingDone')}</> : allCorrect ? t('lw.readingSave') : t('lw.readingTodo')}</button>
   </>;
 }
