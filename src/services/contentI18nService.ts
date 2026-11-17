@@ -90,7 +90,7 @@ export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap
 export function useAppTextMap(module: string): AppTextMap | null {
   const { lang } = useLanguage();
   const key = `${module}/${lang}`;
-  const needsOverlay = needsContentTranslation(lang) || (lang === 'en' && module === 'allGrammarRules');
+  const needsOverlay = needsContentTranslation(lang) || (lang === 'en' && ['allGrammarRules', 'speakingAcademyData'].includes(module));
   const [loaded, setLoaded] = useState<{ key: string; map: AppTextMap | null } | null>(null);
   useEffect(() => {
     let cancelled = false;

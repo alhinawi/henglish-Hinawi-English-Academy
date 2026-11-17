@@ -14,9 +14,12 @@ async function check(hook,first,next,firstUrl,nextUrl){
  await check(c.exports.useAppTextMap,'module-a','module-b','/data/app-i18n/module-a/de.json','/data/app-i18n/module-a/fr.json');
  lang='en';state=null;c.exports.useAppTextMap('allGrammarRules');cleanup?.();cleanup=effect();
  pending['/data/app-i18n/allGrammarRules/en.json']({'أزمنة المضارع':'Present Tenses'});await flush();assert.equal(c.exports.useAppTextMap('allGrammarRules')['أزمنة المضارع'],'Present Tenses');
+ state=null;c.exports.useAppTextMap('speakingAcademyData');cleanup?.();cleanup=effect();pending['/data/app-i18n/speakingAcademyData/en.json']({'أول مقابلة':'Meeting someone new'});await flush();assert.equal(c.exports.useAppTextMap('speakingAcademyData')['أول مقابلة'],'Meeting someone new');
  assert.equal(c.exports.needsContentTranslation('en'),false,'English banks remain built-in');
  const grammarContext={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/allGrammarRules.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,grammarContext);
  const english=JSON.parse(fs.readFileSync('public/data/app-i18n/allGrammarRules/en.json','utf8'));
  for(const rule of grammarContext.exports.ALL_GRAMMAR_RULES)for(const field of ['titleAr','category','level'])assert.ok(english[rule[field]]&&!/[\u0600-\u06ff]/.test(english[rule[field]]),rule.id+' '+field);
+ const speakingContext={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/speakingAcademyData.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,speakingContext);const speakingEnglish=JSON.parse(fs.readFileSync('public/data/app-i18n/speakingAcademyData/en.json','utf8'));for(const lesson of speakingContext.exports.SPEAKING_LESSONS)for(const field of ['title','unit'])assert.ok(speakingEnglish[lesson[field]]&&!/[\u0600-\u06ff]/.test(speakingEnglish[lesson[field]]));
+ const speakingView=fs.readFileSync('src/views/SpeakingAcademyPage.tsx','utf8');assert.ok(speakingView.includes('dir={dir}'));assert.ok(speakingView.includes('txText(appText, active.title)'));assert.ok(speakingView.includes('txText(appText, active.unit)'));
  console.log('Content/app overlays keyed to locale and bank at render time; source fallback while loading, late cancelled response ignored: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});

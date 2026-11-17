@@ -93,6 +93,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
   };
 
   const handleComplete = () => {
+    if (isCompleted) return;
     playSound('correct');
     fireCelebration();
     if (onMarkComplete) {
@@ -516,10 +517,11 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
 
         <button
           onClick={handleComplete}
+          disabled={isCompleted}
           className="w-full sm:w-auto px-8 py-3.5 rounded-2xl bg-linear-to-r from-[#ffd166] via-[#ff9c66] to-[#ff4f9a] text-[#121128] font-black text-sm flex items-center justify-center gap-2 hover:brightness-110 shadow-xl cursor-pointer transition-transform hover:-translate-y-0.5"
         >
           <Award className="w-5 h-5" />
-          <span>{t('gl.confirmComplete')}</span>
+          <span>{isCompleted ? t('gl.completed') : t('gl.confirmComplete')}</span>
         </button>
 
         {nextRule ? (
