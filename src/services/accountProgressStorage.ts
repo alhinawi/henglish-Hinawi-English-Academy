@@ -12,15 +12,17 @@ export function readAccountProgress(key: string, defaults: UserProgressState): U
     // Legacy progress has no reliable owner. Preserve it as guest only, once.
     // Keep the original key untouched as a recovery copy. Never seed an account
     // from another account or the guest record.
-    if (localStorage.getItem(GUEST_PROGRESS_KEY) === null) {
-      const legacy = localStorage.getItem(LEGACY_PROGRESS_KEY);
-      if (legacy !== null) {
-        const parsed: unknown = JSON.parse(legacy);
-        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
-          localStorage.setItem(GUEST_PROGRESS_KEY, legacy);
+    try {
+      if (localStorage.getItem(GUEST_PROGRESS_KEY) === null) {
+        const legacy = localStorage.getItem(LEGACY_PROGRESS_KEY);
+        if (legacy !== null) {
+          const parsed: unknown = JSON.parse(legacy);
+          if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
+            localStorage.setItem(GUEST_PROGRESS_KEY, legacy);
+          }
         }
       }
-    }
+    } catch { /* Legacy recovery must not hide a valid current owner record. */ }
     const raw = localStorage.getItem(key);
     const parsed: unknown = raw ? JSON.parse(raw) : null;
     if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) {
