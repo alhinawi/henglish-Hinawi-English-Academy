@@ -46,7 +46,11 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
       rule.titleAr.toLowerCase().includes(q) || 
       rule.titleEn.toLowerCase().includes(q) || 
       rule.summaryAr.toLowerCase().includes(q) ||
-      rule.goldenFormula.toLowerCase().includes(q);
+      rule.goldenFormula.toLowerCase().includes(q) ||
+      txText(appText, rule.titleAr).toLowerCase().includes(q) ||
+      txText(appText, rule.titleEn).toLowerCase().includes(q) ||
+      txText(appText, rule.summaryAr).toLowerCase().includes(q) ||
+      txText(appText, rule.category).toLowerCase().includes(q);
 
     return matchesCategory && matchesLevel && matchesSearch;
   });
