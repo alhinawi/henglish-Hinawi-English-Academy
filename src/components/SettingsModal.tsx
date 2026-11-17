@@ -18,13 +18,37 @@ interface SettingsModalProps {
 // Compact account settings: profile picture (upload or clear back to the
 // neutral placeholder) and display name. Saves through the accounts API.
 export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, accessToken, onClose, onSaved }) => {
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+    const active = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const opener = active && active !== document.body && active.getClientRects().length
+      ? active : document.querySelector<HTMLElement>('[data-auth-focus-return]');
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    (focusable()[0] || dialog)?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return; }
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
     };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [onClose]);
+    document.addEventListener('keydown', onKey);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      const target = opener?.isConnected && opener.getClientRects().length
+        ? opener : document.querySelector<HTMLElement>('[data-auth-focus-return]');
+      target?.focus();
+    };
+  }, []);
 
   const alive = useRef(true);
   const owner = `${userProfile.id}:${accessToken || ''}`;
@@ -119,7 +143,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ userProfile, acces
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" dir={dir} onClick={onClose}>
       <div
-        role="dialog" aria-modal="true" aria-label={t('sm.dialogAria')}
+        ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-label={t('sm.dialogAria')}
         className="w-full max-w-sm max-h-[90dvh] overflow-y-auto bg-[#171632] border border-white/15 rounded-2xl p-6 shadow-2xl space-y-5"
         onClick={(e) => e.stopPropagation()}
       >
