@@ -32,6 +32,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
   const { t } = useLanguage();
   const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
   const unavailable = scene.transcriptTimingStatus === 'quarantined';
+  const hasTranscript = scene.subtitles.length > 0;
+  const reviewedTiming = scene.transcriptTimingStatus === 'caption-reviewed' || scene.transcriptTimingStatus === 'reviewed-excerpts';
   const start = scene.startTime;
   const end = scene.endTime;
   const appText = useAppTextMap('movieScenesData');
@@ -252,8 +254,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
       </div>
       <div className="movie-studio-script">
         <div className="flex items-center justify-between gap-2 border-b border-white/10 px-4 py-3">
-          <h3 className="flex items-center gap-2 text-sm font-black"><Languages size={17}/>{t('ms.scriptTitle')}</h3>
-          <span className="text-[11px] text-white/45">{t('ms.syncedNote')}</span>
+          <h3 className="flex items-center gap-2 text-sm font-black"><Languages size={17}/>{t(hasTranscript ? 'ms.scriptTitle' : 'avmm.videoOnly')}</h3>
+          {hasTranscript && reviewedTiming && <span className="text-[11px] text-white/45">{t('ms.syncedNote')}</span>}
         </div>
         <div ref={list} className="movie-studio-cues" data-testid="cue-list" tabIndex={0} aria-label={t('ms.cuesAria')}>
           {scene.subtitles.map((sub, index) => <button key={sub.id} data-sub-idx={index} aria-current={active === index ? 'true' : undefined} onClick={() => { if (loopBounds.current) loopBounds.current = { start: sub.start, end: sub.end }; loadClip(sub.start); }} className={`movie-studio-cue ${active === index ? 'is-active' : ''}`}>
@@ -262,12 +264,12 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
             <span className="mt-2 block text-sm leading-8 text-white/85">{txText(appText, sub.arEg)}</span>
             {fusha && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
           </button>)}
-          <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>
+          {hasTranscript && <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>}
           {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>{t('ms.sceneIdea')} </strong>{txText(summaryText, movieSourceSummaries[scene.youtubeId])}</p>}
-          <p className="text-[11px] leading-7 text-white/50">{t('ms.scriptNote')}</p>
+          {hasTranscript && <p className="text-[11px] leading-7 text-white/50">{t('ms.scriptNote')}</p>}
         </div>
         <footer className="border-t border-white/10 px-4 py-3 text-[11px] leading-6 text-white/55">
-          <p>{t('ms.timingFrom')} {timeLabel(start)} {t('ms.timingTo')} {timeLabel(end)}. {scene.transcriptTimingStatus === 'caption-reviewed' ? t('ms.timingCaption') : t('ms.timingAudio')}</p>
+          <p>{t('ms.timingFrom')} {timeLabel(start)} {t('ms.timingTo')} {timeLabel(end)}. {reviewedTiming && (scene.transcriptTimingStatus === 'caption-reviewed' ? t('ms.timingCaption') : t('ms.timingAudio'))}</p>
           <a href={`https://www.youtube.com/watch?v=${scene.youtubeId}`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-9 items-center gap-1 text-purple-200 underline"><ExternalLink size={12}/>{t('ms.sourceYoutube')}</a>
           <span className="mr-3">{t('ms.youtubeCc')}</span>
         </footer>
