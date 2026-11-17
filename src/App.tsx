@@ -543,7 +543,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 14. Exams & Level Placement */}
                 {currentRoute === 'exams' && (
-                  <ExamsAssessmentPage onNavigate={handleNavigate} />
+                  <ExamsAssessmentPage key={authUser?.id || 'guest'} learnerId={authUser?.id} onNavigate={handleNavigate} />
                 )}
 
                 {/* 15. Practice Lab */}
