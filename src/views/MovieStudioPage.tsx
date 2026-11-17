@@ -636,7 +636,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
                             {/* Start Interactive Learning */}
                             <button
-                              onClick={() => handleSelectScene(scene)}
+                              onClick={event => { event.stopPropagation(); handleSelectScene(scene); }}
                               className="w-full py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white font-black text-xs transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer mt-1"
                             >
                               <Play className="w-3.5 h-3.5 fill-current" />
@@ -902,7 +902,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                     </div>
 
                     <button
-                      onClick={() => handleSelectScene(res.scene)}
+                      onClick={event => { event.stopPropagation(); handleSelectScene(res.scene); }}
                       className="w-full py-2.5 rounded-xl bg-[#ffd166] text-[#09091a] font-black text-xs hover:bg-[#ffe18d] transition-all flex items-center justify-center gap-1.5 cursor-pointer"
                     >
                       <Play className="w-3.5 h-3.5 fill-current" />
@@ -952,7 +952,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                         </div>
 
                         <button
-                          onClick={() => handleSelectScene(video)}
+                          onClick={event => { event.stopPropagation(); handleSelectScene(video); }}
                           className="w-full py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold"
                         >
                           {t('ms.resumeWatching')}
