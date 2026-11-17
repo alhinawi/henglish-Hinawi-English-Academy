@@ -95,16 +95,12 @@ export const SourcesPage: React.FC<{ learnerId?: string }> = ({ learnerId }) => 
       if (bookmarksOnly && !bookmarks.includes(s.id)) return false;
       if (costFilter !== 'all' && s.cost !== costFilter) return false;
       if (levelFilter !== 'all' && !s.levels.includes('ALL') && !s.levels.includes(levelFilter)) return false;
-      if (
-        q &&
-        !s.name.toLowerCase().includes(q) &&
-        !s.descriptionAr.includes(query.trim()) &&
-        !(s.subcategory || '').includes(query.trim())
-      )
-        return false;
+      const searchable = [s.name, s.descriptionAr, s.subcategory || '',
+        txText(appText, s.name), txText(appText, s.descriptionAr), txText(appText, s.subcategory || '')];
+      if (q && !searchable.some(value => value.toLowerCase().includes(q))) return false;
       return true;
     });
-  }, [query, costFilter, levelFilter, bookmarksOnly, bookmarks]);
+  }, [query, costFilter, levelFilter, bookmarksOnly, bookmarks, appText]);
 
   const totalShown = filtered.length;
 
