@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { COMPREHENSIVE_QUIZ_BANK } from '../data/quizzesData';
 import { QuestionBankPanel } from '../components/QuestionBankPanel';
 import { QuizEngine } from '../components/QuizEngine';
@@ -29,7 +29,7 @@ const GRAMMAR_TOPICS = [
 ];
 
 export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const [activeTab, setActiveTab] = useState<'static' | 'ai'>('static');
   const [filterDifficulty, setFilterDifficulty] = useState<string>('all');
 
@@ -44,6 +44,21 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
   const [quizDetails, setQuizDetails] = useState({ topic: aiTopic, level: aiLevel, difficulty: aiDifficulty });
   const [generationError, setGenerationError] = useState<string | null>(null);
 
+  const generationVersion = useRef(0);
+  const generationController = useRef<AbortController | null>(null);
+  const invalidateGeneration = () => {
+    generationVersion.current += 1;
+    generationController.current?.abort();
+    generationController.current = null;
+    setIsGenerating(false);
+    setGenerationError(null);
+    setAiGeneratedQuestions(null);
+  };
+  useEffect(() => () => {
+    generationVersion.current += 1;
+    generationController.current?.abort();
+  }, []);
+
   const filteredQuestions = filterDifficulty === 'all'
     ? COMPREHENSIVE_QUIZ_BANK
     : COMPREHENSIVE_QUIZ_BANK.filter(q => q.difficulty === filterDifficulty);
@@ -54,12 +69,16 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
 
   const handleGenerateAiQuiz = async () => {
     playSound('click');
+    invalidateGeneration();
+    const version = generationVersion.current;
+    const controller = new AbortController();
+    generationController.current = controller;
+    const isCurrent = () => version === generationVersion.current;
     setIsGenerating(true);
-    setGenerationError(null);
-    setAiGeneratedQuestions(null);
 
     try {
       const response = await fetch('/api/ai/generateQuestions', {
+        signal: controller.signal,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -70,9 +89,11 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
         }),
       });
 
+      if (!isCurrent()) return;
       await throwForAiResponse(response, `Failed to generate questions: ${response.status}`);
 
       const data = await response.json();
+      if (!isCurrent()) return;
       const mapped = parseGeneratedQuiz(data, aiTopic, t('qz.distractorAnalysis'));
 
       setAiGeneratedQuestions(mapped);
@@ -81,6 +102,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       playSound('correct');
       fireCelebration();
     } catch (err: any) {
+      if (!isCurrent()) return;
       if (isAiServiceUnavailable(err)) {
         setGenerationError(t('ai.unavailable'));
       } else {
@@ -89,12 +111,12 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
       }
       playSound('wrong');
     } finally {
-      setIsGenerating(false);
+      if (isCurrent()) { generationController.current = null; setIsGenerating(false); }
     }
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8 text-right">
+    <div dir={dir} className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8 text-start">
       
       {/* Header */}
       <div className="space-y-4">
@@ -114,7 +136,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
           <button
             onClick={() => {
               playSound('click');
-              setActiveTab('ai');
+              invalidateGeneration(); setActiveTab('ai');
             }}
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
               activeTab === 'ai'
@@ -129,7 +151,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
           <button
             onClick={() => {
               playSound('click');
-              setActiveTab('static');
+              invalidateGeneration(); setActiveTab('static');
             }}
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
               activeTab === 'static'
@@ -162,7 +184,8 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 <label className="text-xs font-bold text-[#dedbf4]">{t('qz.topicLabel')}</label>
                 <select
                   value={aiTopic}
-                  onChange={e => setAiTopic(e.target.value)}
+                  aria-label={t('qz.topicLabel')}
+                  onChange={e => { invalidateGeneration(); setAiTopic(e.target.value); }}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 >
                   {GRAMMAR_TOPICS.map(topic => (
@@ -177,7 +200,8 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 <label className="text-xs font-bold text-[#dedbf4]">{t('qz.levelLabel')}</label>
                 <select
                   value={aiLevel}
-                  onChange={e => setAiLevel(e.target.value)}
+                  aria-label={t('qz.levelLabel')}
+                  onChange={e => { invalidateGeneration(); setAiLevel(e.target.value); }}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 >
                   <option value="A1">A1 - {t('qz.levelA1')}</option>
@@ -192,7 +216,8 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 <label className="text-xs font-bold text-[#dedbf4]">{t('qz.difficultyLabel')}</label>
                 <select
                   value={aiDifficulty}
-                  onChange={e => setAiDifficulty(e.target.value as any)}
+                  aria-label={t('qz.difficultyLabel')}
+                  onChange={e => { invalidateGeneration(); setAiDifficulty(e.target.value as any); }}
                   className="w-full p-3 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs focus:outline-none focus:border-[#c4ff55]"
                 >
                   <option value="easy">{t('qz.diffEasy')}</option>
@@ -208,7 +233,8 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
                 {[3, 5, 8].map(cnt => (
                   <button
                     key={cnt}
-                    onClick={() => setAiCount(cnt)}
+                    aria-pressed={aiCount === cnt}
+                    onClick={() => { invalidateGeneration(); setAiCount(cnt); }}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold cursor-pointer transition-all ${
                       aiCount === cnt
                         ? 'bg-[#c4ff55] text-[#0c0b20] font-black'
@@ -240,7 +266,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore }) => {
             </div>
 
             {generationError && (
-              <div className="p-3 rounded-xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-xs font-bold">
+              <div role="alert" className="p-3 rounded-xl bg-[#ff4f9a]/15 border border-[#ff4f9a]/40 text-[#ff4f9a] text-xs font-bold">
                {generationError}
               </div>
             )}
