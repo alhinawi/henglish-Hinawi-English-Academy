@@ -66,16 +66,26 @@ export function getDueSrsCards(allCards: VocabularyCard[]): VocabularyCard[] {
   return allCards.filter(c => new Date(c.nextReviewAt) <= now);
 }
 
+function isStoredCard(card: unknown): card is VocabularyCard {
+  return !!card && typeof card === 'object' && typeof (card as VocabularyCard).id === 'string' &&
+    typeof (card as VocabularyCard).word === 'string' && typeof (card as VocabularyCard).translationAr === 'string';
+}
+function readScheduleForWrite(learnerId?: string): VocabularyCard[] {
+  const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY, learnerId));
+  const parsed: unknown = raw === null ? [] : JSON.parse(raw);
+  if (!Array.isArray(parsed) || !parsed.every(isStoredCard)) throw new Error('Review schedule is unreadable');
+  return parsed;
+}
 export function loadSrsCardsFromStorage(learnerId?: string, strict = false): VocabularyCard[] {
-  if (strict) {
-    const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY, learnerId));
-    if (raw !== null && !Array.isArray(JSON.parse(raw))) throw new Error('Review schedule is unreadable');
-  }
-  return readMediaList(STORAGE_KEY, learnerId).filter((card): card is VocabularyCard =>
-    !!card && typeof card === 'object' && typeof (card as VocabularyCard).id === 'string' &&
-    typeof (card as VocabularyCard).word === 'string' && typeof (card as VocabularyCard).translationAr === 'string');
+  // Recover guest-only legacy data before validating the final selected record.
+  const readable = readMediaList(STORAGE_KEY, learnerId).filter(isStoredCard);
+  return strict ? readScheduleForWrite(learnerId) : readable;
 }
 
 export function saveSrsCardsToStorage(cards: VocabularyCard[], learnerId?: string) {
-  try { localStorage.setItem(mediaStorageKey(STORAGE_KEY, learnerId), JSON.stringify(cards)); return true; } catch { return false; }
+  try {
+    readScheduleForWrite(learnerId);
+    localStorage.setItem(mediaStorageKey(STORAGE_KEY, learnerId), JSON.stringify(cards));
+    return true;
+  } catch { return false; }
 }
