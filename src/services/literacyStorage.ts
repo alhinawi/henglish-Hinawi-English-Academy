@@ -31,8 +31,11 @@ export function saveLiteracy(key: string, saved: LiteracySaved): boolean {
   if (saved.storageUnreadable) return false;
   try {
     const raw = localStorage.getItem(key);
-    if (raw !== null && !readable(JSON.parse(raw))) return false;
-    localStorage.setItem(key, JSON.stringify({ done: saved.done, drafts: saved.drafts }));
+    const current: unknown = raw === null ? {} : JSON.parse(raw);
+    if (!readable(current)) return false;
+    // Completion is monotonic: a stale workshop must not erase another tab's work.
+    const done = [...new Set([...(current.done || []), ...saved.done])];
+    localStorage.setItem(key, JSON.stringify({ done, drafts: { ...current.drafts, ...saved.drafts } }));
     return true;
   } catch { return false; }
 }
