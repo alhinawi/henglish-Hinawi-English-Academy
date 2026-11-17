@@ -58,6 +58,7 @@ const checks = [
   'check-account-progress.cjs',
   'check-workshop-copy-lifecycle.cjs',
   'check-workshop-localization.cjs',
+  'check-learning-account-state.cjs',
   'check-progress-read-safety.cjs',
   'check_progress_fallbacks.cjs',
   'check_recovery_fallbacks.cjs',
