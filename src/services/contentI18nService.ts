@@ -66,7 +66,7 @@ export function useContentMap(bankPath: string): ContentMap | null {
 // App-content overlays: Arabic string literals from src/data + src/services,
 // translated per language into static /data/app-i18n/<module>/<lang>.json files
 // mapping the Arabic source string to its translation. Loaded lazily per module
-// on language switch; Arabic/English keep the original strings.
+// on language switch. English grammar titles/categories also have an overlay.
 // -----------------------------------------------------------------------------
 
 export type AppTextMap = Record<string, string>;
@@ -90,10 +90,11 @@ export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap
 export function useAppTextMap(module: string): AppTextMap | null {
   const { lang } = useLanguage();
   const key = `${module}/${lang}`;
+  const needsOverlay = needsContentTranslation(lang) || (lang === 'en' && module === 'allGrammarRules');
   const [loaded, setLoaded] = useState<{ key: string; map: AppTextMap | null } | null>(null);
   useEffect(() => {
     let cancelled = false;
-    if (!needsContentTranslation(lang)) {
+    if (!needsOverlay) {
       setLoaded(null);
       return;
     }
@@ -104,7 +105,7 @@ export function useAppTextMap(module: string): AppTextMap | null {
       cancelled = true;
     };
   }, [module, lang, key]);
-  return needsContentTranslation(lang) && loaded?.key === key ? loaded.map : null;
+  return needsOverlay && loaded?.key === key ? loaded.map : null;
 }
 
 /** Translate an Arabic source string through the module overlay. */

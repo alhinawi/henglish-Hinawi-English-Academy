@@ -1,0 +1,45 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const transpile=path=>ts.transpileModule(fs.readFileSync(path,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
+const store=new Map(),localStorage={getItem:k=>store.get(k)??null,setItem:(k,v)=>store.set(k,v),removeItem:k=>store.delete(k)};
+const storageContext={exports:{},localStorage};vm.runInNewContext(transpile('src/services/accountProgressStorage.ts'),storageContext);
+const {progressStorageKey:key,readAccountProgress:read,LEGACY_PROGRESS_KEY:legacy,GUEST_PROGRESS_KEY:guest}=storageContext.exports;
+const defaults={quizScores:{},completedLessons:[],knownFlashcards:[],reviewFlashcards:[],notes:[],bookmarks:[],xp:0};
+const old=JSON.stringify({...defaults,quizScores:{legacy:75},xp:200});store.set(legacy,old);
+assert.equal(read(key('A'),defaults).xp,0);assert.equal(store.get(legacy),old);assert.equal(JSON.parse(store.get(guest)).xp,200);
+assert.equal(read(guest,defaults).quizScores.legacy,75);store.set(legacy,'{}');assert.equal(read(guest,defaults).xp,200);
+assert.equal(key(),guest);assert.equal(key('guest-123'),guest);assert.notEqual(key('A'),key('B'));assert.notEqual(key('a/b'),key('a%2Fb'));
+const apiReads=[],dbReads=[],apiWrites=[],dbWrites=[],migrations=[],timers=new Map();let timerId=0,token='token-A';
+let states=[],refs=[],effects=[],cursor=0,dirty=false,proposed=[],result,identity;
+const same=(a,b)=>a&&b&&a.length===b.length&&a.every((v,i)=>Object.is(v,b[i]));
+const react={
+ useState:init=>{const i=cursor++;if(!(i in states))states[i]=typeof init==='function'?init():init;return [states[i],update=>{states[i]=typeof update==='function'?update(states[i]):update;dirty=true}]},
+ useRef:init=>{const i=cursor++;return refs[i]??(refs[i]={current:init})},
+ useEffect:(fn,deps)=>{const i=cursor++;proposed.push({i,fn,deps})},
+};
+const deferred=(list,id)=>new Promise(resolve=>list.push({id,resolve}));
+const context={exports:{},console,Date,localStorage,window:{},setTimeout:fn=>{timers.set(++timerId,fn);return timerId},clearTimeout:id=>timers.delete(id),require:path=>{
+ if(path==='react')return react;
+ if(path.endsWith('accountProgressStorage'))return storageContext.exports;
+ if(path.endsWith('useBadges'))return {useBadges:()=>({badges:[]})};
+ if(path.endsWith('studyStreak'))return {addStudyDay:()=>({})};
+ if(path.endsWith('henglishApi'))return {getHenglishApiToken:()=>token,apiGetProgress:t=>deferred(apiReads,t),apiPutProgress:async(t,p)=>apiWrites.push({t,p})};
+ if(path.endsWith('progressSyncService'))return {loadUserProgressFromDatabase:id=>deferred(dbReads,id),saveUserProgressToDatabase:async(id,p)=>dbWrites.push({id,p}),migrateLocalProgressToSupabase:async(id,p)=>migrations.push({id,p})};
+ throw Error(path);
+}};
+vm.runInNewContext(transpile('src/utils/useProgress.ts'),context);
+function render(...args){if(args.length)identity=args[0];let guard=0;do{dirty=false;cursor=0;proposed=[];result=context.exports.useProgress(identity);if(++guard>30)throw Error('render loop')}while(dirty);
+ for(const e of proposed){if(!same(effects[e.i]?.deps,e.deps)){effects[e.i]?.cleanup?.();effects[e.i]={deps:e.deps,cleanup:e.fn()}}}if(dirty)return render();return result;}
+const tick=async()=>{await new Promise(setImmediate);render()};
+(async()=>{
+ render('A');assert.deepEqual(Object.keys(result.progress.quizScores),[]);assert.equal(dbWrites.length,0);assert.equal(apiWrites.length,0);
+ result.recordQuizScore('A-only',4,5);render();const staleA=result.recordQuizScore;assert.equal(result.progress.quizScores['A-only'].score,4);
+ token='token-B';render('B');assert.deepEqual(Object.keys(result.progress.quizScores),[]);staleA('stale-A',5,5);render();assert.deepEqual(Object.keys(result.progress.quizScores),[]);
+ apiReads[0].resolve({progress:{quizScores:{'late-A':100},xp:900}});dbReads[0].resolve({quizScores:{'late-db-A':100},totalXp:900,completedLessons:[]});await tick();assert.equal(result.progress.xp,0);assert.equal(apiWrites.length,0);assert.equal(migrations.length,0);
+ apiReads[1].resolve({progress:{quizScores:{'remote-B':60},xp:10}});dbReads[1].resolve({quizScores:{'db-B':80},totalXp:15,completedLessons:[]});await tick();assert.equal(result.progress.quizScores['remote-B'],60);assert.equal(result.progress.quizScores['db-B'],80);assert.equal(result.progress.xp,15);
+ for(const w of apiWrites){assert.equal(w.t,'token-B');assert(!('A-only' in w.p.quizScores))}for(const w of dbWrites){assert.equal(w.id,'B');assert(!('A-only' in w.p.quizScores))}
+ token=null;render(undefined);assert.equal(result.progress.quizScores.legacy,75);assert(!('remote-B' in result.progress.quizScores));assert.equal(timers.size,0);
+ token='token-A';render('A');assert.equal(result.progress.quizScores['A-only'].score,4);assert(!('late-A' in result.progress.quizScores));assert(!('legacy' in result.progress.quizScores));
+ apiReads[2].resolve(null);dbReads[2].resolve(null);await tick();assert.equal(migrations.at(-1).id,'A');assert.equal(migrations.at(-1).p.quizScores['A-only'].score,4);assert(!('legacy' in migrations.at(-1).p.quizScores));
+ const savedA=store.get(key('A'));token='token-B';render('B');result.resetAllProgress();render();assert.equal(store.get(key('A')),savedA);assert.equal(store.get(legacy),'{}');assert.equal(JSON.parse(store.get(guest)).quizScores.legacy,75);
+ console.log('Account/guest keys, legacy recovery copy, isolated scores, synchronous switch, stale reads/callbacks, hydration guards, same-account migration and reset scope: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});
