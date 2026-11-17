@@ -2106,5 +2106,6 @@
   "lp.noteStorage": "Les notes restent dans ce navigateur, séparées par élève et leçon. Elles ne sont pas synchronisées avec les autres appareils.",
   "lp.noteSavedLocal": "Enregistré dans ce navigateur.",
   "ts.vocabReviewPartial": "Enregistré dans le vocabulaire sur cet appareil, mais pas dans le planning de révision. Autorisez le stockage et réessayez.",
-  "sc.reviewPartial": "Votre évaluation a été enregistrée, mais les phrases difficiles, les révisions récentes ou les statistiques n’ont pas pu être mises à jour. Ne répétez pas l’évaluation pour ces mises à jour."
+  "sc.reviewPartial": "Votre évaluation a été enregistrée, mais les phrases difficiles, les révisions récentes ou les statistiques n’ont pas pu être mises à jour. Ne répétez pas l’évaluation pour ces mises à jour.",
+  "vi.removeLine": "Supprimer la ligne"
 }
