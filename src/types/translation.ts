@@ -234,6 +234,7 @@ export interface TranslationResponse {
   provider: string;
   model: string;
   isCached?: boolean;
+  historySaved?: boolean;
 }
 
 export interface TranslationRequest {

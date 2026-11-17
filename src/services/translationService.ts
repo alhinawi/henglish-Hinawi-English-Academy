@@ -74,7 +74,8 @@ export async function executeTranslation(req: TranslationRequest, learnerId?: st
   const result: TranslationResponse = await response.json();
 
   // Automatically record to local history
-  saveTranslationToHistory({
+  let historySaved = true;
+  try { saveTranslationToHistory({
     sourceText: req.text,
     translatedText: result.translatedText,
     sourceLang: req.sourceLang,
@@ -83,9 +84,9 @@ export async function executeTranslation(req: TranslationRequest, learnerId?: st
     isFavorite: false,
     alternativesCount: result.alternatives?.length || 0,
     summaryExplanationAr: result.explanation?.summaryMeaningAr,
-  }, learnerId);
+  }, learnerId); } catch { historySaved = false; }
 
-  return result;
+  return { ...result, historySaved };
 }
 
 /**
@@ -160,10 +161,20 @@ export function getTranslationHistory(learnerId?: string): TranslationHistoryIte
     typeof (item as TranslationHistoryItem).sourceText === 'string' && typeof (item as TranslationHistoryItem).translatedText === 'string');
 }
 
+function readHistoryForWrite(learnerId?: string): TranslationHistoryItem[] {
+  // Let guest migration run, then refuse to overwrite an unreadable owner copy.
+  getTranslationHistory(learnerId);
+  const raw = localStorage.getItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId));
+  if (raw === null) return [];
+  const parsed: unknown = JSON.parse(raw);
+  if (!Array.isArray(parsed) || parsed.some(item => !item || typeof item !== 'object' || typeof item.id !== 'string' || typeof item.sourceText !== 'string' || typeof item.translatedText !== 'string')) throw new Error('Saved history is unreadable');
+  return parsed;
+}
+
 export function saveTranslationToHistory(
   item: Omit<TranslationHistoryItem, 'id' | 'timestamp'>, learnerId?: string
 ): TranslationHistoryItem {
-  const history = getTranslationHistory(learnerId);
+  const history = readHistoryForWrite(learnerId);
   const newItem: TranslationHistoryItem = {
     ...item,
     id: `trans_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
@@ -176,34 +187,26 @@ export function saveTranslationToHistory(
   );
 
   const updated = [newItem, ...filtered].slice(0, 100); // Keep last 100 items
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
-  } catch {}
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
   return newItem;
 }
 
 export function toggleHistoryFavorite(id: string, learnerId?: string): TranslationHistoryItem[] {
-  const history = getTranslationHistory(learnerId);
+  const history = readHistoryForWrite(learnerId);
   const updated = history.map(item => (item.id === id ? { ...item, isFavorite: !item.isFavorite } : item));
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
-  } catch {}
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
   return updated;
 }
 
 export function deleteHistoryItem(id: string, learnerId?: string): TranslationHistoryItem[] {
-  const history = getTranslationHistory(learnerId);
+  const history = readHistoryForWrite(learnerId);
   const updated = history.filter(item => item.id !== id);
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
-  } catch {}
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), JSON.stringify(updated));
   return updated;
 }
 
 export function clearTranslationHistory(learnerId?: string): void {
-  try {
-    localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), '[]');
-  } catch {}
+  localStorage.setItem(mediaStorageKey(STORAGE_KEY_HISTORY, learnerId), '[]');
 }
 
 // ==============================================================================
