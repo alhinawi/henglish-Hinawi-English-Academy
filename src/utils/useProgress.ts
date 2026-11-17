@@ -1,3 +1,4 @@
+import { progressStorageKey, readAccountProgress } from '../services/accountProgressStorage';
 import { useBadges } from './useBadges';
 import { addStudyDay } from "./studyStreak";
 import { useState, useEffect, useRef } from "react";
@@ -19,7 +20,6 @@ import {
   PersistentProgressPayload 
 } from "../services/progressSyncService";
 
-const STORAGE_KEY = "hinawi_english_progress_v2";
 const USER_PROFILE_KEY = "hinawi_english_user_v2";
 const NOTIFICATIONS_KEY = "hinawi_english_notifications_v2";
 
@@ -169,17 +169,25 @@ export function useProgress(activeUserId?: string) {
     return DEFAULT_STUDENT_PROFILE;
   });
 
-  // Progress state
-  const [progress, setProgress] = useState<UserProgressState>(() => {
-    if (typeof window === "undefined") return DEFAULT_PROGRESS;
-    try {
-      const saved = localStorage.getItem(STORAGE_KEY);
-      if (saved) return JSON.parse(saved);
-    } catch {
-      // Fallback
-    }
-    return DEFAULT_PROGRESS;
-  });
+  // Tag in-memory progress with its storage owner. Switching identity resets
+  // during render, before effects or consumers can see/write the old account.
+  const storageKey = progressStorageKey(activeUserId);
+  const [ownedProgress, setOwnedProgress] = useState(() => ({
+    key: storageKey, value: readAccountProgress(storageKey, DEFAULT_PROGRESS),
+  }));
+  if (ownedProgress.key !== storageKey) {
+    setOwnedProgress({ key: storageKey, value: readAccountProgress(storageKey, DEFAULT_PROGRESS) });
+  }
+  const progress = ownedProgress.value;
+  const setProgress = (update: UserProgressState | ((previous: UserProgressState) => UserProgressState)) => {
+    setOwnedProgress(previous => previous.key !== storageKey ? previous : ({
+      key: storageKey,
+      value: typeof update === 'function' ? update(previous.value) : update,
+    }));
+  };
+
+  const latestProgressRef = useRef({ key: storageKey, value: progress });
+  useEffect(() => { latestProgressRef.current = { key: storageKey, value: progress }; }, [progress, storageKey]);
 
   // Notifications state
   const [notifications, setNotifications] = useState<AppNotification[]>(() => {
@@ -196,11 +204,11 @@ export function useProgress(activeUserId?: string) {
   // Persistence effects
   useEffect(() => {
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+      localStorage.setItem(storageKey, JSON.stringify(progress));
     } catch {
       // Ignore
     }
-  }, [progress]);
+  }, [progress, storageKey]);
 
   useEffect(() => {
     try {
@@ -223,6 +231,7 @@ export function useProgress(activeUserId?: string) {
   // render's local state from overwriting the remote blob before the pull lands.
   const apiHydratedRef = useRef<string | null>(null);
   useEffect(() => {
+    apiHydratedRef.current = null;
     const token = getHenglishApiToken();
     if (!token || !activeUserId || activeUserId.startsWith('guest-') || activeUserId.startsWith('demo-')) {
       return;
@@ -232,10 +241,8 @@ export function useProgress(activeUserId?: string) {
       const remote = await apiGetProgress(token);
       if (cancelled) return;
       if (remote && remote.progress && typeof remote.progress === 'object') {
-        // Merge remote with local instead of remote-wins: guest progress made
-        // before login/Google sign-in (which never migrated the local blob at
-        // auth time) must survive the first sync. Union lists, keep the best
-        // numbers, then push the merged blob back so both sides converge.
+        // Merge only this account's local record with its remote record.
+        // Guest/legacy and other accounts are separate storage owners.
         const r = remote.progress as Partial<UserProgressState>;
         setProgress(prev => {
           const union = (a?: string[], b?: string[]) =>
@@ -284,12 +291,9 @@ export function useProgress(activeUserId?: string) {
         });
       } else {
         // No remote blob yet (account created before sync existed): upload local.
-        const raw = localStorage.getItem(STORAGE_KEY);
-        if (raw) {
-          try { await apiPutProgress(token, JSON.parse(raw)); } catch { /* ignore */ }
-        }
+        try { await apiPutProgress(token, latestProgressRef.current.value); } catch { /* ignore */ }
       }
-      apiHydratedRef.current = activeUserId;
+      if (!cancelled) apiHydratedRef.current = activeUserId;
     })();
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -308,12 +312,14 @@ export function useProgress(activeUserId?: string) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [progress, activeUserId]);
 
+  const dbHydratedRef = useRef<string | null>(null);
   // Database Synchronization on authenticated login
   useEffect(() => {
     if (!activeUserId || activeUserId.startsWith('guest-') || activeUserId.startsWith('demo-')) {
       return;
     }
 
+    dbHydratedRef.current = null;
     let isMounted = true;
     async function syncDb() {
       if (!activeUserId) return;
@@ -327,10 +333,11 @@ export function useProgress(activeUserId?: string) {
           completedLessons: Array.from(new Set([...prev.completedLessons, ...dbData.completedLessons])),
           quizScores: { ...prev.quizScores, ...(dbData.quizScores as any) },
         }));
-      } else {
-        // First login: migrate local progress to database
-        migrateLocalProgressToSupabase(activeUserId, progress);
+      } else if (isMounted) {
+        // Only this account's local progress may seed its remote record.
+        await migrateLocalProgressToSupabase(activeUserId, latestProgressRef.current.value);
       }
+      if (isMounted) dbHydratedRef.current = activeUserId;
     }
 
     syncDb();
@@ -343,6 +350,7 @@ export function useProgress(activeUserId?: string) {
       return;
     }
 
+    if (dbHydratedRef.current !== activeUserId) return;
     const quizMap: Record<string, number> = {};
     if (progress.quizScores) {
       Object.entries(progress.quizScores).forEach(([k, v]) => {
@@ -495,8 +503,9 @@ export function useProgress(activeUserId?: string) {
   useEffect(() => {
     const a = dailyActivityOf(progress);
     const allDone = a.lessons >= 1 && a.flashcards >= 10 && a.speaking >= 1 && a.quiz80;
-    if (!allDone || a.xpAwarded || dailyBonusRef.current === a.date) return;
-    dailyBonusRef.current = a.date;
+    const bonusKey = `${storageKey}:${a.date}`;
+    if (!allDone || a.xpAwarded || dailyBonusRef.current === bonusKey) return;
+    dailyBonusRef.current = bonusKey;
     setProgress((prev) => {
       const cur = dailyActivityOf(prev);
       if (cur.date !== a.date || cur.xpAwarded) return prev;
@@ -504,7 +513,7 @@ export function useProgress(activeUserId?: string) {
     });
     setUserProfile((prev) => ({ ...prev, xp: prev.xp + 150 }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [progress.dailyGoals]);
+  }, [progress.dailyGoals, storageKey]);
 
   const savePersonalNote = (
     lessonId: string,
@@ -581,7 +590,7 @@ export function useProgress(activeUserId?: string) {
     setUserProfile(DEFAULT_STUDENT_PROFILE);
     setNotifications(DEFAULT_NOTIFICATIONS);
     try {
-      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(storageKey);
       localStorage.removeItem(USER_PROFILE_KEY);
       localStorage.removeItem(NOTIFICATIONS_KEY);
     } catch {
