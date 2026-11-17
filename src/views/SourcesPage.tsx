@@ -320,15 +320,15 @@ export const SourcesPage: React.FC = () => {
         if (items.length === 0) return null;
         return (
           <section key={cat.id} id={`sources-${cat.id}`} className="space-y-6 scroll-mt-40">
-            <div className="relative rounded-3xl overflow-hidden border border-white/10 h-40 sm:h-48">
+            <div className="sources-category-banner relative rounded-3xl overflow-hidden border border-white/10 min-h-40 sm:min-h-48">
               <img
                 src={cat.imageUrl}
                 alt={cat.imageAlt}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-linear-to-l from-[#0c0b20]/95 via-[#0c0b20]/70 to-[#0c0b20]/40" />
-              <div className="relative h-full flex flex-col justify-center px-5 sm:px-8 space-y-2">
+              <div className="absolute inset-0" style={{ backgroundColor: 'rgba(12, 11, 32, 0.94)' }} />
+              <div className="relative min-h-40 sm:min-h-48 flex flex-col justify-center px-5 sm:px-8 py-5 space-y-2">
                 <div className="flex items-center gap-2 text-[#41e7ff]">
                   {CATEGORY_ICONS[cat.id]}
                   <span className="text-xs font-black tracking-wide" dir="ltr">
