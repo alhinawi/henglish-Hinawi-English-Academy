@@ -38,6 +38,18 @@ export function SpeakingRecorder({ prompt, description }: { prompt: string; desc
       stream.current = media;
       const r = new MediaRecorder(media); recorder.current = r;
       const chunks: Blob[] = [];
+      r.onerror = () => {
+        if (timer.current) clearTimeout(timer.current);
+        timer.current = null;
+        // Failed output must not replace the last usable recording.
+        r.ondataavailable = null;
+        r.onstop = null;
+        r.onerror = null;
+        try { if (r.state === 'recording') r.stop(); } catch { /* Tracks are released below. */ }
+        media.getTracks().forEach(track => track.stop());
+        if (recorder.current === r) { recorder.current = null; stream.current = null; }
+        if (mounted.current) { setRecording(false); setStarting(false); setError(t('sp.rec.micError')); }
+      };
       r.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
       r.onstop = () => {
         if (timer.current) clearTimeout(timer.current);
@@ -57,6 +69,7 @@ export function SpeakingRecorder({ prompt, description }: { prompt: string; desc
         if (recorder.current) {
           recorder.current.ondataavailable = null;
           recorder.current.onstop = null;
+          recorder.current.onerror = null;
         }
         recorder.current = null;
         stream.current = null;
