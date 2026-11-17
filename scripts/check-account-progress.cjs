@@ -19,6 +19,7 @@ const react={
 const deferred=(list,id)=>new Promise(resolve=>list.push({id,resolve}));
 const context={exports:{},console,Date,localStorage,window:{},setTimeout:fn=>{timers.set(++timerId,fn);return timerId},clearTimeout:id=>timers.delete(id),require:path=>{
  if(path==='react')return react;
+ if(path.endsWith('courseProgress')){const c={exports:{}};vm.runInNewContext(transpile('src/services/courseProgress.ts'),c);return c.exports;}
  if(path.endsWith('accountProgressStorage'))return storageContext.exports;
  if(path.endsWith('useBadges'))return {useBadges:()=>({badges:[]})};
  if(path.endsWith('studyStreak'))return {addStudyDay:()=>({})};

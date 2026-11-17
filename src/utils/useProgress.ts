@@ -1,3 +1,4 @@
+import { futurePerfectProgress } from '../services/courseProgress';
 import { progressStorageKey, readAccountProgress } from '../services/accountProgressStorage';
 import { useBadges } from './useBadges';
 import { addStudyDay } from "./studyStreak";
@@ -601,11 +602,7 @@ export function useProgress(activeUserId?: string) {
     }
   };
 
-  const totalLessons = 8;
-  const completionPercentage = Math.min(
-    100,
-    Math.round((progress.completedLessons.length / totalLessons) * 100),
-  );
+  const completionPercentage = futurePerfectProgress(progress.completedLessons).percentage;
 
   const { badges } = useBadges(activeUserId);
 
