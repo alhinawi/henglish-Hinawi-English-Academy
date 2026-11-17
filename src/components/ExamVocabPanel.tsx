@@ -4,6 +4,7 @@
 // most-common-first order, slim Filters bottom sheet, windowed rendering.
 // ==============================================================================
 
+import { copyText } from '../services/copyText';
 import React, { useCallback, useEffect, useMemo, useRef, useState, useId } from 'react';
 import { Search, RefreshCw, AlertTriangle, SlidersHorizontal, Copy, Check, X } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -377,6 +378,7 @@ const ExamDetailSheet: React.FC<{
   const [sentencesLoading, setSentencesLoading] = useState(true);
   const [overlay, setOverlay] = useState<string[] | null>(null);
   const [copied, setCopied] = useState(false);
+  const [copyFailed, setCopyFailed] = useState(false);
   const dialogRef = useRef<HTMLDivElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const titleId = useId();
@@ -453,16 +455,26 @@ const ExamDetailSheet: React.FC<{
       lines.push(`${i + 1}. ${s.en}`);
       lines.push(`   ${s.ar}`);
     });
-    try {
-      await navigator.clipboard.writeText(lines.join('\n'));
-    } catch {
+    setCopied(false);
+    setCopyFailed(false);
+    let success = await copyText(lines.join('\n'));
+    if (!success) {
       const area = document.createElement('textarea');
-      area.value = lines.join('\n');
-      document.body.appendChild(area);
-      area.select();
-      document.execCommand('copy');
-      area.remove();
+      try {
+        area.value = lines.join('\n');
+        area.style.position = 'fixed';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        success = document.execCommand('copy');
+      } catch {
+        success = false;
+      } finally {
+        area.remove();
+        closeRef.current?.focus();
+      }
     }
+    if (!success) { setCopyFailed(true); return; }
     setCopied(true);
     window.setTimeout(() => setCopied(false), 2000);
   };
@@ -517,6 +529,7 @@ const ExamDetailSheet: React.FC<{
         </div>
 
         <div className="px-5 py-4 space-y-4">
+          {copyFailed && <p role="status" className="text-sm text-amber-200">{t('copy.failed')}</p>}
           <p className="text-xs font-black text-[#b9b6d5]">{t('pb.detail.sentences')}</p>
           {sentencesLoading && (
             <div className="flex items-center gap-2 py-6 justify-center text-[#b9b6d5]">
