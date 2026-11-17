@@ -236,7 +236,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "policy",
-    "meaning": "سياسة أو قواعد تنظيمية"
+    "meaning": "سياسة أو قواعد تنظيمية",
+    "followUp": {
+      "question": "Why was keeping one bookable room a better response than making the whole office quiet?",
+      "options": [
+        "The room was useful for every kind of project",
+        "Different tasks needed different working conditions",
+        "Employees no longer needed to meet colleagues"
+      ],
+      "answer": 1,
+      "explanation": "Staff found the room helpful for complex tasks but less useful for collaborative projects. A bookable room kept a useful option without removing access to colleagues."
+    }
   },
   {
     "id": "literacy-14",
@@ -254,7 +264,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "however",
-    "meaning": "مع ذلك"
+    "meaning": "مع ذلك",
+    "followUp": {
+      "question": "What did the meeting reveal about the first design?",
+      "options": [
+        "It included every family request",
+        "Vegetables were impossible to grow",
+        "The group had assumed a preference that not everyone shared"
+      ],
+      "answer": 2,
+      "explanation": "The first design assumed that everyone wanted flowers. Families also wanted vegetables and seats, so the group divided the plot to include those needs."
+    }
   },
   {
     "id": "literacy-15",
@@ -272,7 +292,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "recommendation",
-    "meaning": "توصية"
+    "meaning": "توصية",
+    "followUp": {
+      "question": "What made the next presentation more useful to the audience?",
+      "options": [
+        "Its main proposal made the requested decision easier to understand",
+        "It included every possible background detail",
+        "It avoided asking the audience to make a decision"
+      ],
+      "answer": 0,
+      "explanation": "Rami put his main proposal first and shortened the background. The audience then understood the decision, even though some possible questions remained unanswered."
+    }
   },
   {
     "id": "literacy-16",
@@ -290,7 +320,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "rather",
-    "meaning": "بدلا من، في rather than"
+    "meaning": "بدلا من، في rather than",
+    "followUp": {
+      "question": "Why was a shorter journal a reasonable change for Dina?",
+      "options": [
+        "It guaranteed that she remembered every detail",
+        "It supported engagement with books without an exhausting summary task",
+        "It meant she could stop responding to books"
+      ],
+      "answer": 1,
+      "explanation": "Long summaries had made reading tiring. The shorter journal still helped Dina notice patterns and respond personally, without recording every detail of a book."
+    }
   },
   {
     "id": "literacy-17",
@@ -308,7 +348,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "safely",
-    "meaning": "بأمان"
+    "meaning": "بأمان",
+    "followUp": {
+      "question": "Which outcome would still fit the purpose of the workshop?",
+      "options": [
+        "A visitor is told that every damaged object is safe to use",
+        "A visitor buys a new appliance without discussing the old one",
+        "A visitor learns why an appliance needs a professional rather than a volunteer repair"
+      ],
+      "answer": 2,
+      "explanation": "The workshop aimed to teach safe investigation and a decision about whether repair was possible. A successful learning outcome did not require a working object."
+    }
   },
   {
     "id": "literacy-18",
@@ -326,7 +376,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "adapting",
-    "meaning": "التكيف"
+    "meaning": "التكيف",
+    "followUp": {
+      "question": "Which statement best expresses the lesson the group accepted?",
+      "options": [
+        "Preparation should support decisions when conditions change",
+        "A prepared plan must be followed whatever happens",
+        "Choosing a shorter route means nobody prepared properly"
+      ],
+      "answer": 0,
+      "explanation": "Rain made part of the original road unsafe. The group used the changed conditions to choose a shorter route, rather than treating earlier preparation as a reason to ignore risk."
+    }
   },
   {
     "id": "literacy-19",
@@ -344,7 +404,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "overlooks",
-    "meaning": "يتجاهل"
+    "meaning": "يتجاهل",
+    "followUp": {
+      "question": "Which arrangement best follows the redesign proposal?",
+      "options": [
+        "Require everyone to work in silence all day",
+        "Let employees choose suitable spaces with clear expectations",
+        "Use one open layout for every task"
+      ],
+      "answer": 1,
+      "explanation": "The proposal offers several spaces because people move between different kinds of work. It combines meaningful choice with clear expectations, not a promise of automatic productivity."
+    }
   },
   {
     "id": "literacy-20",
@@ -362,7 +432,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "evidence",
-    "meaning": "دليل"
+    "meaning": "دليل",
+    "followUp": {
+      "question": "If a study only shows two things occurring together, what should the reader question?",
+      "options": [
+        "Whether the headline is justified in claiming one causes the other",
+        "Whether all study findings must be false",
+        "Whether research can ever be useful"
+      ],
+      "answer": 0,
+      "explanation": "The passage contrasts a causal headline with evidence of things occurring together. The issue is the strength of that particular claim, not the value of all research."
+    }
   },
   {
     "id": "literacy-21",
@@ -380,7 +460,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "compromise",
-    "meaning": "حل وسط"
+    "meaning": "حل وسط",
+    "followUp": {
+      "question": "Why does making the information optional matter?",
+      "options": [
+        "It prevents visitors from learning the history of the objects",
+        "It proves that observation needs no knowledge",
+        "It lets visitors seek context without forcing everyone to start with an explanation"
+      ],
+      "answer": 2,
+      "explanation": "Some visitors wanted freedom to observe, while others wanted context. Optional cards allowed access to information without removing independent observation as a choice."
+    }
   },
   {
     "id": "literacy-22",
@@ -398,7 +488,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "burdensome",
-    "meaning": "مرهق"
+    "meaning": "مرهق",
+    "followUp": {
+      "question": "Which customer might find the lower fee less convenient overall?",
+      "options": [
+        "Someone who is freely available throughout the delivery window",
+        "Someone whose changing schedule makes a long wait at home difficult",
+        "Someone who wants to compare the fees"
+      ],
+      "answer": 1,
+      "explanation": "The fictional example identifies residents with unpredictable schedules. The lower checkout price does not remove the time and flexibility they must give up."
+    }
   },
   {
     "id": "literacy-23",
@@ -416,7 +516,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "temporary",
-    "meaning": "مؤقت"
+    "meaning": "مؤقت",
+    "followUp": {
+      "question": "Which practice would the tutor most likely support?",
+      "options": [
+        "Submit the first draft without checking it",
+        "Perfect the first sentence before developing any argument",
+        "Develop the argument in a draft,then revise for accurate communication"
+      ],
+      "answer": 2,
+      "explanation": "The tutor separates when tasks happen from the quality expected at the end. Drafting develops meaning;revision checks whether the text communicates it accurately."
+    }
   },
   {
     "id": "literacy-24",
@@ -434,7 +544,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "trade-offs",
-    "meaning": "مفاضلات"
+    "meaning": "مفاضلات",
+    "followUp": {
+      "question": "What would be an appropriate purpose for the one-year review?",
+      "options": [
+        "Check whether the trade-offs require changes to the plan",
+        "Prove that all predicted benefits were guaranteed from the start",
+        "Remove any need to consider traffic or shoreline damage"
+      ],
+      "answer": 0,
+      "explanation": "The proposal makes trade-offs explicit and allows adjustment. A review should therefore test the arrangement and guide changes, not turn uncertain forecasts into guaranteed outcomes."
+    }
   },
   {
     "id": "literacy-25",
