@@ -5,3 +5,7 @@ const known={id:'idm-000001'};const c={exports:{},bank:'idioms',entries:[known],
 vm.runInNewContext(ts.transpileModule(hash+'\nexports.sync=fromHash;',{}).outputText,c);c.exports.sync();assert.equal(c.selected,known);c.window.location.hash='#idioms/missing';c.exports.sync();assert.equal(c.selected,null);c.window.location.hash='#idioms';c.exports.sync();assert.equal(c.selected,null);
 for(const text of ['aria-labelledby={titleId}','id={titleId}','ref={dialogRef}','ref={closeRef}','closeRef.current?.focus()','event.shiftKey','first.focus()','opener?.isConnected',"document.removeEventListener('keydown', trap)"])assert.ok(source.includes(text),text);
 console.log('Phrase detail clears unmatched deep-link selection; named modal starts/traps/restores keyboard focus: PASS');
+
+const filters=fs.readFileSync('src/components/FilterSheet.tsx','utf8');
+for(const text of ['aria-labelledby={titleId}','id={titleId}','ref={dialogRef}','ref={closeRef}','closeRef.current?.focus()','event.shiftKey','first.focus()','opener?.isConnected',"document.removeEventListener('keydown', trap)",'aria-pressed={active}',"}, [open]);"])assert.ok(filters.includes(text),text);
+console.log('Shared filter sheet has named dialog, lifecycle-scoped focus trap/restore and announced option selection: PASS');
