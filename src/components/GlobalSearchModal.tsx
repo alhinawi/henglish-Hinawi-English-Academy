@@ -59,8 +59,8 @@ export const GlobalSearchModal:React.FC<Props>=({isOpen,onClose,onNavigate,userL
   const index=useMemo<Entry[]>(()=>[
     ...ACADEMIES,
     ...ALL_GRAMMAR_RULES.map(r=>({id:`grammar:${r.id}`,title:r.titleAr,subtitle:r.titleEn,keywords:r.summaryAr,level:r.level.split(' ')[0],route:'grammar-lesson' as PageRoute,target:r.id,group:'قواعد الإنجليزية'})),
-    ...VOCABULARY_ACADEMY_WORDS.map(w=>({id:`word:${w.id}`,title:w.word,subtitle:w.meaningAr,keywords:w.exampleEn,level:w.level,route:'vocabulary' as PageRoute,group:'كلمات وأمثلة'})),
-    ...VERB_TOOLKIT.map(v=>({id:`verb:${v.v1}`,title:`${v.v1} · ${v.v2} · ${v.v3}`,subtitle:v.meaningAr,route:'vocabulary' as PageRoute,group:'الأفعال وتصريفاتها'})),
+    ...VOCABULARY_ACADEMY_WORDS.map(w=>({id:`word:${w.id}`,title:w.word,subtitle:w.meaningAr,keywords:w.exampleEn,level:w.level,route:'vocabulary' as PageRoute,target:`word:${w.id}`,group:'كلمات وأمثلة'})),
+    ...VERB_TOOLKIT.map(v=>({id:`verb:${v.v1}`,title:`${v.v1} · ${v.v2} · ${v.v3}`,subtitle:v.meaningAr,route:'vocabulary' as PageRoute,target:`verb:${v.v1}`,group:'الأفعال وتصريفاتها'})),
     ...FUTURE_PERFECT_LESSONS.map(l=>({id:`course:${l.id}`,title:l.title,subtitle:l.subtitle,keywords:`future perfect المستقبل التام ${l.description}`,route:'lesson' as PageRoute,target:l.id,group:'دروس متخصصة',level:'B2'})),
   ],[]);
   if(!isOpen)return null;
