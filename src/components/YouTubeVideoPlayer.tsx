@@ -80,10 +80,10 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
 
       {/* Main Video Box */}
       <div className="space-y-4">
-        <div className={`relative w-full ${isPlaying && (hasError || !isIdValid) ? '' : 'aspect-video'} rounded-2xl overflow-hidden bg-black/60 border border-white/15 shadow-2xl`}>
+        <div className={`relative w-full ${isPlaying && (hasError || !isIdValid) ? '' : 'aspect-video'} rounded-2xl overflow-hidden bg-black/60 border border-white/15 shadow-2xl focus-within:ring-2 focus-within:ring-red-300`}>
           {!isPlaying ? (
             /* Poster & Preview with Instant Fast Play */
-            <div className="relative w-full h-full group cursor-pointer" onClick={handleStartPlay}>
+            <button type="button" aria-label={`${t('yt.watchHere')}: ${currentVideo.title}`} className="relative block w-full h-full group cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-red-300" onClick={handleStartPlay}>
               <img
                 src={currentVideo.thumbnailUrl || `https://img.youtube.com/vi/${currentVideo.youtubeId}/hqdefault.jpg`}
                 alt={currentVideo.title}
@@ -102,7 +102,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                   {currentVideo.channelName} • {currentVideo.duration}
                 </span>
               </div>
-            </div>
+            </button>
           ) : hasError || !isIdValid ? (
             /* Graceful Fallback Card */
             <div className="flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
