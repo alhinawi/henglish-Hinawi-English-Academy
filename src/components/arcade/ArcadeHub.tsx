@@ -52,7 +52,7 @@ export const ArcadeHub: React.FC<{ onPlayingChange?: (playing: boolean) => void 
 
   useEffect(() => { onPlayingChange?.(!!active); window.scrollTo({ top: 0, behavior: 'instant' }); }, [active, onPlayingChange]);
 
-  const storageNotice = progress.storageFailed && <div role="status" className="mb-5 rounded-2xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm leading-7 text-amber-200"><p>{t('ap.storageError')}</p><button type="button" onClick={progress.retrySave} className="mt-3 rounded-xl border border-amber-200/30 px-4 py-2 font-bold">{t('to.retry')}</button></div>;
+  const storageNotice = (progress.storageFailed || progress.storageUnreadable) && <div role="status" className="mb-5 rounded-2xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm leading-7 text-amber-200"><p>{t(progress.storageUnreadable ? 'ap.unreadable' : 'ap.storageError')}</p>{!progress.storageUnreadable && <button type="button" onClick={progress.retrySave} className="mt-3 rounded-xl border border-amber-200/30 px-4 py-2 font-bold">{t('to.retry')}</button>}</div>;
 
   if (active) {
     const game = GAMES.find((g) => g.id === active)!;
