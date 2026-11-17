@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - 5,000 ESSENTIAL ENGLISH SENTENCES LIBRARY PAGE
 // Full-fledged educational platform featuring 15 learning modes, intelligent search,
@@ -705,19 +706,8 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
 
           {/* Big Audio Play Button */}
           <div className="py-6 flex items-center justify-center gap-4">
-            <button
-              onClick={() => speakText(randomSentence.english, { speed: 1.0 })}
-              className="w-20 h-20 rounded-3xl bg-purple-600 hover:bg-purple-500 text-white flex items-center justify-center shadow-2xl shadow-purple-600/50 transition-all hover:scale-105 cursor-pointer"
-            >
-              <Volume2 className="w-10 h-10 fill-current" />
-            </button>
-            <button
-              onClick={() => speakText(randomSentence.english, { speed: 0.75 })}
-              className="w-14 h-14 rounded-2xl bg-white/10 hover:bg-white/20 text-white/80 hover:text-white flex items-center justify-center transition-all border border-white/10 cursor-pointer"
-              title={t('sl.slowSpeech')}
-            >
-              <span className="font-bold text-xs">0.75x</span>
-            </button>
+            <LessonSpeechButton text={randomSentence.english} label={t('sc.listenNatural')} iconOnly className="w-20 h-20 rounded-3xl bg-purple-600 hover:bg-purple-500 text-white flex items-center justify-center shadow-2xl shadow-purple-600/50 transition-all cursor-pointer" />
+            <LessonSpeechButton text={randomSentence.english} label={t('sl.slowSpeech')} speed={0.75} className="min-h-14 rounded-2xl bg-white/10 hover:bg-white/20 text-white px-4 font-bold border border-white/10 cursor-pointer" />
           </div>
 
           {/* Reveal Card */}
