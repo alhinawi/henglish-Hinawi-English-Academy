@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - INTERACTIVE WORD ANALYSIS MODAL
 // Detailed phonetic, morphological, and lexical analysis for any clicked word
@@ -7,7 +8,7 @@ import { vocabularyCollectionLabel } from '../../services/vocabularyCollectionLa
 import React, { useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { WordAnalysisDetail, VocabularyCollection } from '../../types/translation';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound } from '../../utils/audio';
 import {
   X,
   Volume2,
@@ -40,10 +41,7 @@ const OpenWordAnalysisModal: React.FC<WordAnalysisModalProps & { word: WordAnaly
   const [saveResult, setSaveResult] = useState<'saved' | 'review-failed' | 'failed' | null>(null);
   const savedSuccess = saveResult === 'saved';
 
-  const handleSpeak = () => {
-    playSound('click');
-    speakMultilingualText(word.word, 'en');
-  };
+
 
   const handleSave = () => {
     playSound('click');
@@ -76,15 +74,9 @@ const OpenWordAnalysisModal: React.FC<WordAnalysisModalProps & { word: WordAnaly
         {/* Modal Body */}
         <div className="p-6 space-y-5 max-h-[75vh] overflow-y-auto scrollbar-thin">
           {/* Main Word Banner */}
-          <div className="flex items-center justify-between p-4 rounded-2xl bg-white/5 border border-white/10">
-            <button
-              type="button"
-              onClick={handleSpeak}
-              title={t('wam.listen')}
-              className="p-3 rounded-xl bg-[#41e7ff] text-black hover:brightness-110 active:scale-95 transition-all cursor-pointer shadow-lg shadow-[#41e7ff]/20"
-            >
-              <Volume2 className="w-5 h-5" />
-            </button>
+          <div className="flex flex-wrap items-start justify-between gap-3 p-4 rounded-2xl bg-white/5 border border-white/10">
+            <LessonSpeechButton text={word.word} label={t('wam.listen')} iconOnly
+              className="p-3 rounded-xl bg-[#41e7ff] text-black hover:brightness-110 active:scale-95 transition-all cursor-pointer shadow-lg shadow-[#41e7ff]/20" />
 
             <div className="flex flex-col text-right">
               <h2 className="text-2xl font-black text-white tracking-wide font-sans">

@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION SOURCE TEXT EDITOR
 // Responsive multi-lingual editor with character count, speech, and dynamic RTL/LTR
@@ -6,7 +7,7 @@
 import React, { useRef, useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound } from '../../utils/audio';
 import {
   Volume2,
   Trash2,
@@ -85,11 +86,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
     textareaRef.current?.focus();
   };
 
-  const handleSpeak = () => {
-    if (!text.trim()) return;
-    playSound('click');
-    speakMultilingualText(text, effectiveLang);
-  };
+
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     // Ctrl + Enter or Cmd + Enter to translate
@@ -104,7 +101,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
   return (
     <div className="flex flex-col h-full bg-[#0e0c26] rounded-2xl border border-white/10 shadow-xl overflow-hidden focus-within:border-[#41e7ff]/60 transition-colors">
       {/* Editor Header Bar */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
+      <div className="flex flex-wrap items-start justify-between gap-3 px-4 py-2.5 bg-white/5 border-b border-white/10 text-xs text-[#b9b6d5]">
         <span className="font-medium text-white flex items-center gap-1.5">
           <span>{t('se.title')}</span>
           {sourceLang === 'auto' && (
@@ -114,7 +111,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
           )}
         </span>
 
-        <div className="flex items-center gap-1">
+        <div className="flex flex-wrap items-start gap-1">
           {/* Paste */}
           <button
             type="button"
@@ -137,15 +134,8 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
           </button>
 
           {/* Text-to-Speech */}
-          <button
-            type="button"
-            onClick={handleSpeak}
-            disabled={!text.trim()}
-            title={t('se.speak')}
-            className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
-          >
-            <Volume2 className="w-3.5 h-3.5" />
-          </button>
+          <LessonSpeechButton key={text + effectiveLang} text={text} language={effectiveLang} label={t('se.speak')} iconOnly disabled={!text.trim()}
+              className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed" />
 
           {/* Clear */}
           {text.trim() && (
@@ -200,7 +190,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
       </div>
 
       {/* Editor Footer Bar */}
-      <div className="flex items-center justify-between px-4 py-3 bg-white/5 border-t border-white/10">
+      <div className="flex flex-wrap items-start justify-between gap-3 px-4 py-3 bg-white/5 border-t border-white/10">
         <div className="flex items-center gap-3">
           {/* Microphone speech-to-text toggle */}
           {onStartVoiceInput && (
