@@ -11,6 +11,7 @@ const checks = [
   'check-translation-history-writes.cjs',
   'check-arcade-owned-speech.cjs',
   'check-word-race-finish.cjs',
+  'check-translation-autosave-feedback.cjs',
   'check-assessment-speech-controls.cjs',
   'check-practice-speech-controls.cjs',
   'check-sentence-copy-lifecycle.cjs',
