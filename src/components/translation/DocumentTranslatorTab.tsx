@@ -3,7 +3,7 @@
 // Format-aware document parsing, section chunking, progress tracking & download
 // ==============================================================================
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { LanguageCode, TranslationMode } from '../../types/translation';
 import { extractTextFromDocument, executeTranslation } from '../../services/translationService';
 import { playSound } from '../../utils/audio';
@@ -21,17 +21,21 @@ import { useLanguage } from '../../i18n/LanguageContext';
 import { isAiServiceUnavailable } from '../../services/aiAvailability';
 
 interface DocumentTranslatorTabProps {
+  learnerId?: string;
   sourceLang: LanguageCode;
   targetLang: LanguageCode;
   mode: TranslationMode;
 }
 
 export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
+  learnerId,
   sourceLang,
   targetLang,
   mode,
 }) => {
   const { t } = useLanguage();
+  const requestVersion = useRef(0);
+  useEffect(() => () => { requestVersion.current += 1; }, []);
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string>('');
@@ -71,8 +75,10 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
     setProgressPercent(10);
     setStatusMessage(t('dt.decoding'));
 
+    const version = ++requestVersion.current;
     try {
       const { text, chunks } = await extractTextFromDocument(file);
+      if (version !== requestVersion.current) return;
       setOriginalDocumentText(text);
 
       const totalChunks = chunks.length;
@@ -90,8 +96,9 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
           mode,
           includeAlternatives: false,
           includeExplanation: false,
-        });
+        }, learnerId);
 
+        if (version !== requestVersion.current) return;
         translatedChunks.push(res.translatedText);
       }
 
@@ -101,11 +108,12 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
       setStatusMessage(t('dt.done'));
       playSound('fanfare');
     } catch (err) {
+      if (version !== requestVersion.current) return;
       console.error('Document translation error:', err);
       setErrorMessage(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('dt.errTranslate'));
       playSound('wrong');
     } finally {
-      setIsProcessing(false);
+      if (version === requestVersion.current) setIsProcessing(false);
     }
   };
 
