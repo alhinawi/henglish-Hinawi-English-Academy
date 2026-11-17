@@ -60,6 +60,17 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const requestVersion = useRef(0);
+  useEffect(() => {
+    requestVersion.current += 1;
+    setIsLoading(false);
+    setMessages([{ id: 'welcome', role: 'assistant', content: t('sad.welcome'), timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) }]);
+    return () => { requestVersion.current += 1; };
+  }, [originalText, translatedText, sourceLang, targetLang, mode]);
+  useEffect(() => {
+    if (!isOpen) { requestVersion.current += 1; setIsLoading(false); }
+    return () => { requestVersion.current += 1; };
+  }, [isOpen]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -72,6 +83,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
     const q = (questionText || inputValue).trim();
     if (!q || isLoading) return;
 
+    const request = ++requestVersion.current;
     playSound('click');
     const userMsg: AssistantChatMessage = {
       id: `user_${Date.now()}`,
@@ -93,6 +105,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
         mode,
       });
 
+      if (request !== requestVersion.current) return;
       const assistantMsg: AssistantChatMessage = {
         id: `ast_${Date.now()}`,
         role: 'assistant',
@@ -102,6 +115,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
 
       setMessages(prev => [...prev, assistantMsg]);
     } catch (err) {
+      if (request !== requestVersion.current) return;
       const errorMsg: AssistantChatMessage = {
         id: `err_${Date.now()}`,
         role: 'assistant',
@@ -110,7 +124,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
       };
       setMessages(prev => [...prev, errorMsg]);
     } finally {
-      setIsLoading(false);
+      if (request === requestVersion.current) setIsLoading(false);
     }
   };
 
@@ -121,6 +135,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
         <button
           type="button"
           onClick={onClose}
+          aria-label={t('am.closeAria')}
           className="p-1.5 rounded-xl text-[#b9b6d5] hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
         >
           <X className="w-5 h-5" />
