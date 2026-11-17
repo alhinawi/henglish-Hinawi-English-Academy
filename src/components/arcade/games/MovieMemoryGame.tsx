@@ -105,13 +105,16 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
           return (
             <button
               key={c.key}
+              aria-label={isOpen ? c.text : `${META.title} ${i + 1}`}
+              aria-pressed={isOpen}
+              disabled={matched.has(c.pairId)}
               onClick={() => flip(i)}
               className={`min-h-20 p-2 rounded-xl border text-[11px] font-bold leading-snug transition-all cursor-pointer ${
                 matched.has(c.pairId)
                   ? 'bg-[#c4ff55]/15 border-[#c4ff55]/50 text-[#c4ff55]'
                   : isOpen
                     ? 'bg-[#41e7ff]/15 border-[#41e7ff]/60 text-white'
-                    : 'bg-[#1a1832] border-white/10 text-transparent hover:border-[#9b7bff]/50'
+                    : 'bg-[#1a1832] border-white/10 text-[#9b7bff] hover:border-[#9b7bff]/50'
               }`}
               dir={c.kind === 'en' ? 'ltr' : 'rtl'}
             >
