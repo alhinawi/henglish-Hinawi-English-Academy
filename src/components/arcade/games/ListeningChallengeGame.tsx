@@ -1,11 +1,12 @@
+import { LessonSpeechButton } from '../../LessonSpeechButton';
 // تحدي الاستماع - hear a real sentence and type what you heard.
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, shuffle, wordAccuracy, SentencePair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
-import { playSound, speakEnglish } from '../../../utils/audio';
+import { playSound } from '../../../utils/audio';
 
 const META: ArcadeGameMeta = {
   id: 'listening-challenge',
@@ -28,11 +29,16 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
   const [result, setResult] = useState<{ acc: number } | null>(null);
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
 
-  const speak = (text: string) => speakEnglish(text);
+
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const requestVersion = useRef(0);
+  useEffect(() => () => { requestVersion.current += 1; if (advanceTimer.current) clearTimeout(advanceTimer.current); }, []);
 
   const start = async () => {
+    const request = ++requestVersion.current;
     setPhase('loading');
     const pairs = await allSentencePairs(3, 8);
+    if (request !== requestVersion.current) return;
     const list = shuffle(pairs).slice(0, ROUNDS);
     setRounds(list);
     setScore(0);
@@ -40,7 +46,7 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
     setTyped('');
     setResult(null);
     setPhase('play');
-    setTimeout(() => speak(list[0].en), 400);
+
   };
 
   const submit = () => {
@@ -50,7 +56,7 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
     setResult({ acc });
     playSound(ok ? 'correct' : 'wrong');
     const gained = ok ? 1 : 0;
-    setTimeout(() => {
+    advanceTimer.current = setTimeout(() => {
       if (round + 1 >= ROUNDS) {
         setScore((s) => s + gained);
         setEnd(recordGameResult(META.id, score + gained));
@@ -62,7 +68,7 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
         setRound(n);
         setTyped('');
         setResult(null);
-        setTimeout(() => speak(rounds[n].en), 350);
+
       }
     }, 1800);
   };
@@ -88,16 +94,8 @@ export const ListeningChallengeGame: React.FC<{ onExit: () => void }> = ({ onExi
     <div className="max-w-lg mx-auto">
       <ArcadeHud title={meta.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
       <div className="p-6 rounded-3xl bg-[#121124] border border-white/10 space-y-5 text-center">
-        <button
-          onClick={() => {
-            playSound('click');
-            speak(r.en);
-          }}
-          className="w-20 h-20 rounded-full bg-[#9b7bff]/20 border border-[#9b7bff]/50 text-[#9b7bff] inline-flex items-center justify-center hover:bg-[#9b7bff]/30 transition-all cursor-pointer"
-          title={t('lc.listenAgain')}
-        >
-          <Volume2 className="w-9 h-9" />
-        </button>
+        <LessonSpeechButton key={round} text={r.en} label={t('lc.listenAgain')} iconOnly autoPlay
+          className="w-20 h-20 rounded-full bg-[#9b7bff]/20 border border-[#9b7bff]/50 text-[#9b7bff] inline-flex items-center justify-center hover:bg-[#9b7bff]/30 transition-all cursor-pointer" />
         <p className="text-xs text-[#8f8cb0]">{t('lc.hint')}</p>
         <input
           dir="ltr"

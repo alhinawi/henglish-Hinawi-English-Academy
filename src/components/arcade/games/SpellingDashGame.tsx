@@ -1,11 +1,12 @@
+import { LessonSpeechButton } from '../../LessonSpeechButton';
 // سباق الإملاء - see the Arabic meaning, spell the English word.
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../../i18n/LanguageContext';
 import { Volume2 } from 'lucide-react';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, normalizeTyped, WordPair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
-import { playSound, speakEnglish } from '../../../utils/audio';
+import { playSound } from '../../../utils/audio';
 
 const ROUNDS = 10;
 
@@ -21,6 +22,10 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
   const [score, setScore] = useState(0);
   const [feedback, setFeedback] = useState<'ok' | 'no' | null>(null);
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
+
+  const advanceTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const requestVersion = useRef(0);
+  useEffect(() => () => { requestVersion.current += 1; if (advanceTimer.current) clearTimeout(advanceTimer.current); }, []);
 
   const start = () => {
     const words = sample(
@@ -41,7 +46,7 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
     setFeedback(ok ? 'ok' : 'no');
     playSound(ok ? 'correct' : 'wrong');
     const gained = ok ? 1 : 0;
-    setTimeout(() => {
+    advanceTimer.current = setTimeout(() => {
       if (round + 1 >= ROUNDS) {
         setScore((s) => s + gained);
         setEnd(recordGameResult(META.id, score + gained));
@@ -77,15 +82,8 @@ export const SpellingDashGame: React.FC<{ onExit: () => void }> = ({ onExit }) =
       <ArcadeHud title={META.title} round={round + 1} totalRounds={ROUNDS} score={score} onQuit={onExit} />
       <div className="p-6 rounded-3xl bg-[#121124] border border-white/10 space-y-5 text-center">
         <div className="text-xl font-black text-white">{r?.ar}</div>
-        <button
-          onClick={() => {
-            playSound('click');
-            speakEnglish(r.en);
-          }}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#9b7bff]/15 border border-[#9b7bff]/40 text-[#9b7bff] text-xs font-black cursor-pointer hover:bg-[#9b7bff]/25"
-        >
-          <Volume2 className="w-3.5 h-3.5" /> {t('arc.listen')}
-        </button>
+        <LessonSpeechButton key={round} text={r.en} label={t('arc.listen')}
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#9b7bff]/15 border border-[#9b7bff]/40 text-[#9b7bff] text-xs font-black cursor-pointer hover:bg-[#9b7bff]/25" />
         <input
           dir="ltr"
           type="text"
