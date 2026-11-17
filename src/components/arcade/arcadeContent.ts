@@ -123,7 +123,7 @@ export interface GapItem {
 }
 
 export function gapFillItems(count: number): GapItem[] {
-  const usable = VOCABULARY_ACADEMY_WORDS.filter((w) =>
+  const usable = uniqueAcademyWords(VOCABULARY_ACADEMY_WORDS).filter((w) =>
     new RegExp(`\\b${w.word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(w.exampleEn),
   );
   return sample(usable, count).map((w) => {
