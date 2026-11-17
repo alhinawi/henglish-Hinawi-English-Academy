@@ -50,6 +50,8 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = e.target.files?.[0];
     if (!selected) return;
+    // Allow the same document to be picked again after an error or result.
+    e.target.value = '';
 
     // Validate size (max 10MB)
     if (selected.size > 10 * 1024 * 1024) {
@@ -68,6 +70,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
     setErrorMessage(null);
     setHistorySaveFailed(false);
     setTranslatedDocumentText('');
+    setOriginalDocumentText('');
     playSound('click');
   };
 
