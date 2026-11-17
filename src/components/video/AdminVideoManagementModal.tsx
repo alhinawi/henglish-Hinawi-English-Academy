@@ -55,10 +55,15 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
   const [statusMsg, setStatusMsg] = useState<string | null>(null);
   const [saveFailed, setSaveFailed] = useState(false);
 
+  const auditVersion = useRef(0);
   useEffect(() => {
+    auditVersion.current += 1;
+    setIsAuditingAll(false);
+    setAuditProgress(null);
     if (isOpen) {
       setVideos(getStoredVideos());
     }
+    return () => { auditVersion.current += 1; };
   }, [isOpen]);
 
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -93,6 +98,8 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
 
   // Run full audit on all videos
   const handleAuditAll = async () => {
+    const version = ++auditVersion.current;
+    setStatusMsg(null);
     setIsAuditingAll(true);
     playSound('click');
     setAuditProgress({ current: 0, total: videos.length });
@@ -101,10 +108,12 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
     let updatedCount = 0;
 
     for (let i = 0; i < currentVideos.length; i++) {
+      if (version !== auditVersion.current) return;
       const v = currentVideos[i];
       setAuditProgress({ current: i + 1, total: currentVideos.length });
       try {
         const check = await verifyYouTubeVideo(v.youtubeId, true);
+        if (version !== auditVersion.current) return;
         currentVideos[i] = {
           ...v,
           verificationStatus: check.status,
@@ -117,6 +126,7 @@ export const AdminVideoManagementModal: React.FC<AdminVideoManagementModalProps>
       }
     }
 
+    if (version !== auditVersion.current) return;
     setVideos(currentVideos);
     setIsAuditingAll(false);
     setAuditProgress(null);
