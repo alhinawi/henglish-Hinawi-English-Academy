@@ -4,6 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { gapFillItems, shuffle, GapItem } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
 
 const ROUNDS = 10;
@@ -11,6 +12,7 @@ const ROUNDS = 10;
 export const GapFillGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'gap-fill', title: t('ah.gameGapFill'), tagline: t('arc.gapIntro') };
+  const { scheduleTransition, cancelTransition } = useArcadeTimeout();
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
@@ -22,6 +24,7 @@ export const GapFillGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
 
   const start = () => {
+    cancelTransition();
     const list = gapFillItems(ROUNDS);
     setRounds(list);
     setOptions(shuffle([list[0].answer, ...list[0].distractors]));
@@ -37,7 +40,7 @@ export const GapFillGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
     const ok = opt === rounds[round].answer;
     playSound(ok ? 'correct' : 'wrong');
     const gained = ok ? 1 : 0;
-    setTimeout(() => {
+    scheduleTransition(() => {
       if (round + 1 >= ROUNDS) {
         setScore((s) => s + gained);
         setEnd(recordGameResult(META.id, score + gained));

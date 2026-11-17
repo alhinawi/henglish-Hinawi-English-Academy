@@ -4,6 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allSentencePairs, sample, shuffle, SentencePair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
 
 const PAIRS = 6;
@@ -18,6 +19,7 @@ interface Card {
 export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t, lang } = useLanguage();
   const META: ArcadeGameMeta = { id: 'movie-memory', title: t('mm.title'), tagline: t('mm.intro') };
+  const { scheduleTransition, cancelTransition } = useArcadeTimeout();
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end' | 'loading'>('intro');
@@ -29,6 +31,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
 
   const start = async () => {
+    cancelTransition();
     setPhase('loading');
     const pairs: SentencePair[] = sample(await allSentencePairs(2, 7), PAIRS);
     const deck: Card[] = shuffle(
@@ -63,7 +66,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
         if (nmatched.size === PAIRS) {
           const finalScore = Math.max(1, PAIRS * 2 + PAIRS - nm); // perfect run = 3/pair
           setScore(finalScore);
-          setTimeout(() => {
+          scheduleTransition(() => {
             setEnd(recordGameResult(META.id, finalScore));
             setPhase('end');
             playSound('fanfare');
@@ -71,7 +74,7 @@ export const MovieMemoryGame: React.FC<{ onExit: () => void }> = ({ onExit }) =>
         }
       } else {
         playSound('wrong');
-        setTimeout(() => setOpen([]), 900);
+        scheduleTransition(() => setOpen([]), 900);
       }
     }
   };
