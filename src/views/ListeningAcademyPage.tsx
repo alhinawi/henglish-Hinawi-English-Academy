@@ -24,6 +24,9 @@ function taskIds(lesson: ListeningLesson) { return [...lesson.comprehensionQuiz.
 interface Props { onNavigate: (route: PageRoute) => void; onCompleteActivity?: (id: string, score: number, total: number) => void; learnerId?: string; }
 export const ListeningAcademyPage: React.FC<Props> = ({ onNavigate, onCompleteActivity, learnerId }) => {
   const storageKey = `${KEY}:${learnerId || 'local'}`;
+  return <LearnerListeningAcademy key={storageKey} onNavigate={onNavigate} onCompleteActivity={onCompleteActivity} storageKey={storageKey} />;
+};
+const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey: string }> = ({ onNavigate, onCompleteActivity, storageKey }) => {
   const [saved, setSaved] = useState<Saved>(() => load(storageKey));
   const savedRef = useRef(saved);
   const [storageWarning, setStorageWarning] = useState(false);
