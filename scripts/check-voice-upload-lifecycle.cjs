@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const source=fs.readFileSync('src/components/translation/VoiceTranslatorTab.tsx','utf8');
+const snippet=source.slice(source.indexOf('  const handleFileUpload ='),source.indexOf('  const handleSpeakTranslation ='));
+const readers=[],transcriptions=[],translations=[],spoken=[];const c={exports:{},uploadVersion:{current:0},uploadReader:{current:null},stopSpeech(){},sourceLang:'auto',targetLang:'en',mode:'natural',setErrorMsg:v=>c.error=v,setIsTranscribing:v=>c.transcribing=v,setIsTranslating:v=>c.translating=v,setRecognizedText:v=>c.text=v,setTranslatedVoiceText:v=>c.output=v,playSound(){},speakMultilingualText:t=>spoken.push(t),t:k=>k,isAiServiceUnavailable:()=>false,FileReader:class{constructor(){readers.push(this)}readAsDataURL(){}abort(){this.onabort?.()}finish(){this.result='data:audio/mp3;base64,dGVzdA==';this.onload()}},transcribeAudioRecording:()=>new Promise((resolve,reject)=>transcriptions.push({resolve,reject})),executeTranslation:req=>new Promise((resolve,reject)=>translations.push({req,resolve,reject}))};
+vm.runInNewContext(ts.transpileModule(snippet+'\nexports.upload=handleFileUpload;',{}).outputText,c);const event=()=>({target:{files:[{type:'audio/mp3'}],value:'file'}});const tick=()=>new Promise(setImmediate);
+(async()=>{
+ const fail=c.exports.upload(event());assert.equal(c.transcribing,true);readers[0].finish();await tick();assert.equal(c.transcribing,true);transcriptions[0].reject(Error('offline'));await fail;assert.equal(c.error,'vt.errTranscribe');assert.equal(c.transcribing,false);
+ const fileFail=c.exports.upload(event());readers[1].onerror();await fileFail;assert.equal(c.error,'vt.errFile');
+ const old=c.exports.upload(event());readers[2].finish();await tick();transcriptions[1].resolve({transcription:'old',detectedLang:'ar'});await tick();assert.equal(translations[0].req.sourceLang,'ar');
+ const latest=c.exports.upload(event());translations[0].resolve({translatedText:'stale'});await old;assert.equal(c.output,'');assert.equal(c.transcribing,true);assert.equal(spoken.length,0);
+ readers[3].finish();await tick();transcriptions[2].resolve({transcription:'new',detectedLang:'ar'});await tick();translations[1].resolve({translatedText:'current'});await latest;assert.equal(c.output,'current');assert.deepEqual(spoken,['current']);assert.equal(c.translating,false);
+ const unmount=c.exports.upload(event());readers[4].finish();await tick();c.uploadVersion.current++;transcriptions[3].resolve({transcription:'late'});await unmount;assert.equal(translations.length,2);assert.deepEqual(spoken,['current']);
+ console.log('Voice upload awaits file+transcription+translation, surfaces failures, ignores stale completion, uses detected language, resets picker and suppresses post-unmount speech: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1;});
