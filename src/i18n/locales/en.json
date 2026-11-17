@@ -2832,5 +2832,7 @@
   "wdm.noteUnsaved": "Your note has unsaved changes.",
   "wdm.noteSaved": "Note saved on this device.",
   "gl.notFoundTitle": "Lesson not found",
-  "gl.notFoundBody": "This link does not match an available grammar lesson. Go back to the academy and choose a lesson."
+  "gl.notFoundBody": "This link does not match an available grammar lesson. Go back to the academy and choose a lesson.",
+  "mvt.showMeaning": "Show meaning",
+  "mvt.hideMeaning": "Hide meaning"
 }

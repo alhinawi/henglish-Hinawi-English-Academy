@@ -3,7 +3,7 @@
 // Personal vocabulary memory engine with mastery tracking and review queue
 // ==============================================================================
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useId } from 'react';
 import {
   Brain,
   Repeat,
@@ -46,6 +46,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   const [reviewedCount, setReviewedCount] = useState(0);
   const [saveError, setSaveError] = useState(false);
   const [isFlipped, setIsFlipped] = useState(false);
+  const meaningId = useId();
 
   // Inspector modal state
   const [detailWord, setDetailWord] = useState<LexicalEntry | null>(null);
@@ -225,8 +226,18 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
               />
             </div>
 
+            <button
+              type="button"
+              aria-expanded={isFlipped}
+              aria-controls={isFlipped ? meaningId : undefined}
+              onClick={e => { e.stopPropagation(); playSound('flip'); setIsFlipped(value => !value); }}
+              className="min-h-11 rounded-xl border border-[#ffd166]/40 px-4 py-2 text-sm font-bold text-[#ffd166] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#41e7ff]"
+            >
+              {isFlipped ? t('mvt.hideMeaning') : t('mvt.showMeaning')}
+            </button>
+
             {isFlipped ? (
-              <div className="space-y-2 pt-2 border-t border-white/10 w-full animate-fadeIn">
+              <div id={meaningId} className="space-y-2 pt-2 border-t border-white/10 w-full animate-fadeIn">
                 <div className="text-xl font-black text-[#c4ff55]">
                   {txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.meaningAr)}
                 </div>
