@@ -1,3 +1,4 @@
+import { extractDocxDocumentText, extractPdfDocumentText } from './documentTextExtraction';
 import { mediaStorageKey, readMediaList } from './accountMediaStorage';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION STUDIO CLIENT SERVICE
@@ -359,14 +360,16 @@ export async function extractTextFromDocument(file: File): Promise<{ text: strin
     extractedText = await file.text();
   } else if (extension === 'docx') {
     // DOCX XML Extraction
-    extractedText = await extractDocxText(file);
+    extractedText = await extractDocxDocumentText(file);
   } else if (extension === 'pdf') {
     // PDF extraction via text streams or buffer decoding
-    extractedText = await extractPdfText(file);
+    extractedText = await extractPdfDocumentText(file);
   } else {
     // Fallback attempt text reading
     extractedText = await file.text();
   }
+
+  if (!extractedText.trim()) throw new Error('The document contains no readable text.');
 
   // Preserve paragraphs, headers, and bullet lists
   const cleanedText = extractedText.replace(/\r\n/g, '\n').trim();
@@ -392,80 +395,6 @@ export async function extractTextFromDocument(file: File): Promise<{ text: strin
     text: cleanedText,
     chunks: chunks.length > 0 ? chunks : [cleanedText],
   };
-}
-
-/**
- * Pure JavaScript DOCX Text Extractor (Reads document.xml from ZIP container)
- */
-async function extractDocxText(file: File): Promise<string> {
-  try {
-    const arrayBuffer = await file.arrayBuffer();
-    const bytes = new Uint8Array(arrayBuffer);
-
-    // Look for PK\x03\x04 zip header
-    // In modern browsers, we can locate word/document.xml in uncompressed streams or parse XML tags
-    const textDecoder = new TextDecoder('utf-8', { fatal: false });
-    const rawString = textDecoder.decode(bytes);
-
-    // Match all XML text tags <w:t>...</w:t> or <w:p>
-    const textMatches: string[] = [];
-    const wtRegex = /<w:t[^>]*>([\s\S]*?)<\/w:t>/g;
-    let match;
-
-    while ((match = wtRegex.exec(rawString)) !== null) {
-      if (match[1]) {
-        // Decode common XML entities
-        const decoded = match[1]
-          .replace(/&amp;/g, '&')
-          .replace(/&lt;/g, '<')
-          .replace(/&gt;/g, '>')
-          .replace(/&quot;/g, '"')
-          .replace(/&apos;/g, "'");
-        textMatches.push(decoded);
-      }
-    }
-
-    if (textMatches.length > 0) {
-      return textMatches.join(' ');
-    }
-  } catch (err) {
-    console.warn('Pure DOCX extraction warning:', err);
-  }
-
-  return `Document text content extracted from "${file.name}".`;
-}
-
-/**
- * Pure JavaScript PDF Text Extractor
- */
-async function extractPdfText(file: File): Promise<string> {
-  try {
-    const arrayBuffer = await file.arrayBuffer();
-    const textDecoder = new TextDecoder('utf-8', { fatal: false });
-    const content = textDecoder.decode(arrayBuffer);
-
-    // Extract text in PDF BT ... ET blocks and parentheses (text)
-    const textBlocks: string[] = [];
-    const streamRegex = /BT[\s\S]*?ET/g;
-    let streamMatch;
-
-    while ((streamMatch = streamRegex.exec(content)) !== null) {
-      const block = streamMatch[0];
-      const tjRegex = /\(([\s\S]*?)\)\s*Tj/g;
-      let tjMatch;
-      while ((tjMatch = tjRegex.exec(block)) !== null) {
-        textBlocks.push(tjMatch[1]);
-      }
-    }
-
-    if (textBlocks.length > 5) {
-      return textBlocks.join(' ');
-    }
-  } catch (err) {
-    console.warn('PDF stream extraction warning:', err);
-  }
-
-  return `Extracted content from PDF: "${file.name}". Ready for chunked translation.`;
 }
 
 // ==============================================================================
