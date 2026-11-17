@@ -1,12 +1,13 @@
+import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - CAMERA & IMAGE OCR TRANSLATION TAB
 // Real computer vision text extraction, reading order preservation, and translation
 // ==============================================================================
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { LanguageCode } from '../../types/translation';
 import { performImageOcrTranslation } from '../../services/translationService';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound } from '../../utils/audio';
 import {
   Camera,
   Image as ImageIcon,
@@ -36,8 +37,13 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
+  const version = useRef(0);
+  const readerRef = useRef<FileReader | null>(null);
+  useEffect(() => () => { version.current += 1; readerRef.current?.abort(); }, []);
+
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
+    e.target.value = '';
     if (!file) return;
 
     if (!file.type.startsWith('image/')) {
@@ -50,21 +56,30 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
       return;
     }
 
+    const request = ++version.current;
+    readerRef.current?.abort();
+    setImagePreview(null);
+    setConfidence(null);
+    setIsProcessing(true);
     setErrorMsg(null);
     setExtractedText('');
     setTranslatedText('');
 
     const reader = new FileReader();
+    readerRef.current = reader;
+    reader.onerror = () => { if (request !== version.current) return; setErrorMsg(t('ocr.errExtract')); setIsProcessing(false); };
     reader.onload = () => {
+      if (request !== version.current) return;
+      readerRef.current = null;
       const dataUrl = reader.result as string;
       setImagePreview(dataUrl);
-      processImage(dataUrl, file.type);
+      void processImage(dataUrl, file.type, request);
     };
     reader.readAsDataURL(file);
     playSound('click');
   };
 
-  const processImage = async (dataUrl: string, mimeType: string) => {
+  const processImage = async (dataUrl: string, mimeType: string, request: number) => {
     setIsProcessing(true);
     setErrorMsg(null);
 
@@ -72,24 +87,23 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
       const base64 = dataUrl.split(',')[1];
       const result = await performImageOcrTranslation(base64, mimeType, targetLang);
 
+      if (request !== version.current) return;
       setExtractedText(result.extractedText);
       setTranslatedText(result.translatedText || '');
       setDetectedLanguage(result.detectedLang);
       setConfidence(result.confidence);
       playSound('fanfare');
     } catch (err) {
+      if (request !== version.current) return;
       console.error('OCR processing error:', err);
       setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('ocr.errExtract'));
       playSound('wrong');
     } finally {
-      setIsProcessing(false);
+      if (request === version.current) setIsProcessing(false);
     }
   };
 
-  const handleSpeak = (text: string, lang: string) => {
-    playSound('click');
-    speakMultilingualText(text, lang);
-  };
+
 
   const handleCopy = async (text: string) => {
     try {
@@ -191,15 +205,9 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
             </div>
 
             {extractedText && (
-              <div className="flex justify-end gap-1 pt-1">
-                <button
-                  type="button"
-                  onClick={() => handleSpeak(extractedText, detectedLanguage)}
-                  className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer"
-                  title={t('ocr.listenExtracted')}
-                >
-                  <Volume2 className="w-3.5 h-3.5" />
-                </button>
+              <div className="flex flex-wrap items-start justify-end gap-2 pt-1">
+                <LessonSpeechButton key={extractedText + detectedLanguage} text={extractedText} language={detectedLanguage} label={t('ocr.listenExtracted')} iconOnly
+                  className="p-1.5 rounded-lg hover:bg-white/10 text-[#b9b6d5] hover:text-[#41e7ff] transition-colors cursor-pointer" />
                 <button
                   type="button"
                   onClick={() => handleCopy(extractedText)}
@@ -229,15 +237,9 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
             </div>
 
             {translatedText && (
-              <div className="flex justify-end gap-1 pt-1">
-                <button
-                  type="button"
-                  onClick={() => handleSpeak(translatedText, targetLang)}
-                  className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer"
-                  title={t('ocr.listenTranslation')}
-                >
-                  <Volume2 className="w-3.5 h-3.5" />
-                </button>
+              <div className="flex flex-wrap items-start justify-end gap-2 pt-1">
+                <LessonSpeechButton key={translatedText + targetLang} text={translatedText} language={targetLang} label={t('ocr.listenTranslation')} iconOnly
+                  className="p-1.5 rounded-lg hover:bg-white/10 text-[#41e7ff] transition-colors cursor-pointer" />
                 <button
                   type="button"
                   onClick={() => handleCopy(translatedText)}
