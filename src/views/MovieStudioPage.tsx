@@ -187,7 +187,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
   const handleSelectScene = (scene: MovieSceneItem) => {
     playSound('click');
     setActiveScene(scene);
-    addRecentlyWatched(scene as EducationalVideoItem, learnerId);
+    setBookmarkSaveFailed(!addRecentlyWatched(scene as EducationalVideoItem, learnerId));
     refreshUserLists();
     window.scrollTo({ top: 150, behavior: 'smooth' });
   };
@@ -226,7 +226,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
     };
 
     setActiveScene(tempScene);
-    addRecentlyWatched(tempScene, learnerId);
+    setBookmarkSaveFailed(!addRecentlyWatched(tempScene, learnerId));
     refreshUserLists();
     window.scrollTo({ top: 150, behavior: 'smooth' });
   };
