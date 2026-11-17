@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { vocabularyEntryTarget } from '../services/vocabularyNavigation';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
 import { VOCABULARY_ACADEMY_WORDS, VocabWord } from '../data/vocabularyAcademyData';
@@ -50,6 +51,24 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
   const appText = useAppTextMap('vocabularyAcademyData');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<'explorer' | 'my-vocab' | 'expressions' | 'thematic' | 'verbs' | 'flashcards'>('explorer');
+  useEffect(() => {
+    let frame = 0;
+    const applyTarget = () => {
+      cancelAnimationFrame(frame);
+      const target = vocabularyEntryTarget(window.location.hash);
+      if (!target) return;
+      const word = target.startsWith('word:') ? VOCABULARY_ACADEMY_WORDS.find(item => item.id === target.slice(5)) : undefined;
+      const verb = target.startsWith('verb:') ? VERB_TOOLKIT.find(item => item.v1 === target.slice(5)) : undefined;
+      if (word) { setActiveTab('thematic'); setSearchTerm(word.word); setSelectedCategory('all'); }
+      else if (verb) setActiveTab('verbs');
+      else return;
+      const id = word ? 'vocabulary-thematic-results' : `vocab-verb-${verb!.v1}`;
+      frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: 'start', behavior: 'instant' }));
+    };
+    applyTarget();
+    window.addEventListener('hashchange', applyTarget);
+    return () => { cancelAnimationFrame(frame); window.removeEventListener('hashchange', applyTarget); };
+  }, []);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [savedVersion, setSavedVersion] = useState(0);
 
@@ -269,7 +288,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
       {/* TAB 4: THEMATIC VOCABULARY */}
       {activeTab === 'thematic' && (
-        <section className="space-y-6">
+        <section id="vocabulary-thematic-results" className="space-y-6 scroll-mt-24">
           <div className="glass-panel p-5 rounded-2xl border border-white/10 space-y-4">
             <div className="relative">
               <Search className="w-5 h-5 text-[#41e7ff] absolute right-4 top-1/2 -translate-y-1/2" />
@@ -365,8 +384,8 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {VERB_TOOLKIT.map((verb, idx) => (
               <div
-                key={idx}
-                className="p-4 rounded-2xl glass-panel border border-white/10 hover:border-white/20 transition-all space-y-2"
+                key={idx} id={`vocab-verb-${verb.v1}`}
+                className="scroll-mt-24 p-4 rounded-2xl glass-panel border border-white/10 hover:border-white/20 transition-all space-y-2"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-black text-[#ffd166]">{verb.meaningAr}</span>

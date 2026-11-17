@@ -295,6 +295,8 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
     if (castRoute === 'grammar-lesson' && targetId) {
       setActiveGrammarRuleId(targetId);
       window.location.hash = `grammar/${targetId}`;
+    } else if (castRoute === 'vocabulary' && targetId) {
+      window.location.hash = `vocabulary?entry=${encodeURIComponent(targetId)}`;
     } else if (castRoute === 'lesson' && targetId && targetId.startsWith('lesson-')) {
       // Future Perfect is a single scrolling page now: land on it and scroll
       // to the module anchor instead of opening a separate lesson route.
