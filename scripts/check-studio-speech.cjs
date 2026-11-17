@@ -15,3 +15,5 @@ const importer=fs.readFileSync('src/components/video/EducationalVideoImportModal
 
 assert(importer.includes("setCustomTitle(current => current === oldAutoTitle ? '' : current)"));console.log('Changed video URL clears only the old automatically filled title and preserves an explicit custom title: PASS');
 assert(settings.includes("document.activeElement?.closest('[role=\"dialog\"]')"));assert(settings.includes('if (activeDialog && activeDialog !== dialog) return'));console.log('Account settings parent keyboard handler defers to active nested appearance dialog: PASS');
+
+for(const text of ['ref={dialogRef} tabIndex={-1} role="dialog"',"aria-label={t('vi.title')}","event.key === 'Escape'","event.key !== 'Tab'",'event.shiftKey && document.activeElement === first','document.activeElement === last','if (opener?.isConnected && opener.getClientRects().length) opener.focus()',"aria-label={t('settings.close')}",'<div role="alert"'])assert(importer.includes(text),text);console.log('Video import dialog focus entry,live controls,Tab boundaries,Escape,opener restore,named close and announced errors: PASS');
