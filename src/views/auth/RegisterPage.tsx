@@ -24,7 +24,7 @@ interface RegisterPageProps {
 }
 
 export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const { register, isLoading } = useAuth();
 
   const [fullName, setFullName] = useState('');
@@ -93,14 +93,14 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir="rtl">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 flex flex-col justify-center items-center px-4 py-12 text-slate-100 relative overflow-hidden" dir={dir}>
       {/* Background decorative glows */}
       <div className="absolute top-1/4 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Register Card */}
       <div className="w-full max-w-lg bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative z-10">
-        <div className="flex items-center justify-between pb-6 mb-6 border-b border-slate-800">
+        <div className="flex flex-wrap items-center justify-between gap-3 pb-6 mb-6 border-b border-slate-800">
           <div>
             <h2 className="text-xl font-bold text-white flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-cyan-400" /> {t('reg.title')}
@@ -128,12 +128,13 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-1.5">
+            <label htmlFor="register-full-name" className="block text-xs font-medium text-slate-300 mb-1.5">
               {t('reg.fullName')} <span className="text-red-400">*</span>
             </label>
             <div className="relative">
               <User className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
               <input
+                id="register-full-name"
                 type="text"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
@@ -146,10 +147,11 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1.5">
+              <label htmlFor="register-username" className="block text-xs font-medium text-slate-300 mb-1.5">
                 {t('reg.username')}
               </label>
               <input
+                id="register-username"
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
@@ -159,12 +161,13 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
               />
             </div>
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1.5">
+              <label htmlFor="register-phone" className="block text-xs font-medium text-slate-300 mb-1.5">
                 {t('reg.phone')}
               </label>
               <div className="relative">
                 <Phone className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                 <input
+                  id="register-phone"
                   type="tel"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
@@ -177,12 +180,13 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-1.5">
+            <label htmlFor="register-email" className="block text-xs font-medium text-slate-300 mb-1.5">
               {t('reg.email')} <span className="text-red-400">*</span>
             </label>
             <div className="relative">
               <Mail className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
               <input
+                id="register-email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -196,12 +200,13 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1.5">
+              <label htmlFor="register-password" className="block text-xs font-medium text-slate-300 mb-1.5">
                 {t('reg.password')} <span className="text-red-400">*</span>
               </label>
               <div className="relative">
                 <Lock className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                 <input
+                  id="register-password"
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -213,6 +218,8 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
+                  aria-label={showPassword ? t('rp.hide') : t('rp.show')}
+                  aria-pressed={showPassword}
                   className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-200"
                 >
                   {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
@@ -221,12 +228,13 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1.5">
+              <label htmlFor="register-confirm-password" className="block text-xs font-medium text-slate-300 mb-1.5">
                 {t('reg.confirmPassword')} <span className="text-red-400">*</span>
               </label>
               <div className="relative">
                 <Lock className="w-4 h-4 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
                 <input
+                  id="register-confirm-password"
                   type={showPassword ? 'text' : 'password'}
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
@@ -278,7 +286,7 @@ export const RegisterPage: React.FC<RegisterPageProps> = ({ onNavigate }) => {
             ) : (
               <>
                 <span>{t('reg.submit')}</span>
-                <ArrowRight className="w-4 h-4 rotate-180" />
+                <ArrowRight className={`w-4 h-4 ${dir === 'rtl' ? 'rotate-180' : ''}`} />
               </>
             )}
           </button>

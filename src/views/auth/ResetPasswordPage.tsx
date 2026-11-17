@@ -91,12 +91,13 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
 
         <form onSubmit={handleSubmit} className="space-y-4 text-start">
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-1.5">
+            <label htmlFor="resetpassword-password" className="block text-xs font-medium text-slate-300 mb-1.5">
               {t('rp.password')}
             </label>
             <div className="relative">
               <Lock className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
               <input
+                id="resetpassword-password"
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -117,12 +118,13 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
           </div>
 
           <div>
-            <label className="block text-xs font-medium text-slate-300 mb-1.5">
+            <label htmlFor="resetpassword-confirm-password" className="block text-xs font-medium text-slate-300 mb-1.5">
               {t('rp.confirm')}
             </label>
             <div className="relative">
               <Lock className="w-5 h-5 absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none" />
               <input
+                id="resetpassword-confirm-password"
                 type={showPassword ? 'text' : 'password'}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
