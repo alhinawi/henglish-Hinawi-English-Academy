@@ -500,6 +500,7 @@ export const Header: React.FC<HeaderProps> = ({
               setBanksMenuOpen(false);
             }}
             className="flex items-center gap-2 p-1.5 sm:px-3 sm:py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors cursor-pointer"
+            data-auth-focus-return
             aria-label={t('header.accountMenu')}
           >
             {authSessionType === 'guest' ? (

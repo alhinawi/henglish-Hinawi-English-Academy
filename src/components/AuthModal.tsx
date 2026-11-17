@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   AuthSessionState,
   signInUser,
@@ -55,6 +55,36 @@ export const AuthModal: React.FC<AuthModalProps> = (props) => {
   const [fullName, setFullName] = useState('');
   const [feedbackMsg, setFeedbackMsg] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
+  useEffect(() => {
+    if (!isOpen) return;
+    const active = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    // Account-menu items disappear when this opens. Return to their stable
+    // menu trigger instead of leaving focus on the document body.
+    const opener = active && active !== document.body && active.getClientRects().length
+      ? active : document.querySelector<HTMLElement>('[data-auth-focus-return]');
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    (focusable()[0] || dialog)?.focus();
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return; }
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', handleKey);
+    return () => { document.removeEventListener('keydown', handleKey); if (opener?.isConnected && opener.getClientRects().length) opener.focus(); };
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -133,6 +163,7 @@ export const AuthModal: React.FC<AuthModalProps> = (props) => {
           initial={{ scale: 0.95, opacity: 0, y: 15 }}
           animate={{ scale: 1, opacity: 1, y: 0 }}
           exit={{ scale: 0.95, opacity: 0, y: 15 }}
+          ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-label={t('am.gateTitle')}
           dir={dir}
           className="relative w-full max-w-md rounded-3xl bg-[#171632] border border-white/20 p-6 sm:p-8 shadow-2xl text-start z-10 space-y-6"
         >
