@@ -4,7 +4,7 @@ import { LessonSpeechButton } from '../LessonSpeechButton';
 // Responsive multi-lingual editor with character count, speech, and dynamic RTL/LTR
 // ==============================================================================
 
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { LanguageCode } from '../../types/translation';
 import { playSound } from '../../utils/audio';
@@ -50,6 +50,15 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
 }) => {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
+  const pasteVersion = useRef(0);
+  useEffect(() => {
+    pasteVersion.current += 1;
+    return () => { pasteVersion.current += 1; };
+  }, [text, sourceLang, detectedLang]);
+  const changeText = (value: string) => {
+    pasteVersion.current += 1;
+    onChangeText(value);
+  };
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   // Dynamic Direction & Alignment Determination
@@ -69,11 +78,13 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
   };
 
   const handlePaste = async () => {
+    const request = ++pasteVersion.current;
     try {
       const clipboardText = await navigator.clipboard.readText();
+      if (request !== pasteVersion.current) return;
       if (clipboardText) {
         playSound('click');
-        onChangeText(clipboardText);
+        changeText(clipboardText);
       }
     } catch {
       // Permission not granted or empty
@@ -82,7 +93,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
 
   const handleClear = () => {
     playSound('click');
-    onChangeText('');
+    changeText('');
     textareaRef.current?.focus();
   };
 
@@ -156,7 +167,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
         <textarea
           ref={textareaRef}
           value={text}
-          onChange={e => onChangeText(e.target.value)}
+          onChange={e => changeText(e.target.value)}
           onKeyDown={handleKeyDown}
           dir={textDirection}
           placeholder={t('se.placeholder')}
@@ -176,7 +187,7 @@ export const SourceEditor: React.FC<SourceEditorProps> = ({
                   type="button"
                   onClick={() => {
                     playSound('click');
-                    onChangeText(sample);
+                    changeText(sample);
                   }}
                   className="text-xs px-2.5 py-1 rounded-lg bg-white/5 hover:bg-[#41e7ff]/20 hover:text-[#41e7ff] border border-white/10 text-slate-300 transition-colors cursor-pointer text-right flex items-center gap-1"
                 >
