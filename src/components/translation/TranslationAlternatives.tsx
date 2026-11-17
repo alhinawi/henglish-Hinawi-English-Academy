@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - TRANSLATION ALTERNATIVES PANEL
 // Displays alternative translations with style tags and pedagogical guidance
@@ -6,7 +7,7 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { TranslationAlternative } from '../../types/translation';
-import { playSound, speakMultilingualText } from '../../utils/audio';
+import { playSound } from '../../utils/audio';
 import { Check, Copy, Volume2, Sparkles, CheckCircle2 } from 'lucide-react';
 
 interface TranslationAlternativesProps {
@@ -34,10 +35,7 @@ export const TranslationAlternatives: React.FC<TranslationAlternativesProps> = (
     } catch {}
   };
 
-  const handleSpeak = (text: string) => {
-    playSound('click');
-    speakMultilingualText(text, targetLang);
-  };
+
 
   return (
     <div dir={lang === 'ar' ? 'rtl' : 'ltr'} className="bg-[#0e0c26] rounded-2xl border border-white/10 p-4 shadow-lg space-y-3">
@@ -86,7 +84,7 @@ export const TranslationAlternatives: React.FC<TranslationAlternativesProps> = (
               </div>
 
               {/* Action Buttons */}
-              <div className="flex items-center justify-between pt-2 border-t border-white/5">
+              <div className="flex flex-wrap items-start justify-between gap-3 pt-2 border-t border-white/5">
                 {onSelectAlternative && (
                   <button
                     type="button"
@@ -101,15 +99,9 @@ export const TranslationAlternatives: React.FC<TranslationAlternativesProps> = (
                   </button>
                 )}
 
-                <div className="flex items-center gap-1 ms-auto">
-                  <button
-                    type="button"
-                    onClick={() => handleSpeak(alt.translation)}
-                    title={t('ta.listen')}
-                    className="p-1 rounded-md text-[#b9b6d5] hover:text-[#41e7ff] hover:bg-white/5 transition-colors cursor-pointer"
-                  >
-                    <Volume2 className="w-3.5 h-3.5" />
-                  </button>
+                <div className="flex flex-wrap items-start gap-1 ms-auto">
+                  <LessonSpeechButton key={alt.translation + targetLang} text={alt.translation} language={targetLang} label={`${t('ta.listen')} ${idx + 1}`} iconOnly
+              className="p-1 rounded-md text-[#b9b6d5] hover:text-[#41e7ff] hover:bg-white/5 transition-colors cursor-pointer" />
                   <button
                     type="button"
                     onClick={() => handleCopy(alt.translation, idx)}
