@@ -11462,11 +11462,12 @@ export function adminMarkUnavailable(id: string, reason: string): EducationalVid
   });
 }
 
-export async function adminReplaceVideoId(id: string, newYoutubeId: string, patch: Partial<EducationalVideoItem> = {}): Promise<{ ok: boolean; video?: EducationalVideoItem; error?: string }> {
+export async function adminReplaceVideoId(id: string, newYoutubeId: string, patch: Partial<EducationalVideoItem> = {}, isCurrent: () => boolean = () => true): Promise<{ ok: boolean; video?: EducationalVideoItem; error?: string }> {
   const cleanId = extractYouTubeId(newYoutubeId);
   if (!cleanId) return { ok: false, error: 'معرف يوتيوب غير صالح' };
 
   const check = await verifyYouTubeVideo(cleanId, true);
+  if (!isCurrent()) return { ok: false };
   if (!check.isEmbeddable) {
     return { ok: false, error: `الفيديو الجديد غير متاح للتضمين: ${check.details}` };
   }
