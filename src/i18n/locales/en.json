@@ -2181,6 +2181,7 @@
   "vh.deleteVocab": "Remove from vocabulary",
   "vh.noteLabel": "Note:",
   "vh.srsActive": "SRS review: active",
+  "vh.srsMissing": "No review schedule found on this device. Save this word again to add it.",
   "vh.listen": "Listen",
   "vh.noDeckWords": "You have not saved any words or expressions in this deck yet.",
   "vh.noDeckWordsHint": "Tap any word in the translation results for a linguistic breakdown and to save it instantly!",
