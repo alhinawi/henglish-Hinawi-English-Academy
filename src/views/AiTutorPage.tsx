@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { copyText } from '../services/copyText';
 import { LessonCorrection } from '../components/LessonCorrection';
 // ==============================================================================
@@ -21,7 +22,7 @@ import {
   renameSession, 
   AiConversationSession 
 } from '../services/aiConversationManager';
-import { playSound, speakEnglishVoice, stopSpeech, getVoiceSettings } from '../utils/audio';
+import { playSound, stopSpeech, getVoiceSettings } from '../utils/audio';
 import { isAiServiceUnavailable } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
 import { AiMarkdownRenderer } from '../components/AiMarkdownRenderer';
@@ -778,7 +779,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                   }`}
                 >
                   {/* Bubble Header */}
-                  <div className="flex items-center justify-between gap-3 text-[10px] text-[#b9b6d5] pb-2 border-b border-white/10">
+                  <div className="flex flex-wrap items-start justify-between gap-3 text-[10px] text-[#b9b6d5] pb-2 border-b border-white/10">
                     <div className="flex items-center gap-1.5">
                       <span className="font-bold text-white">
                         {isUser ? userProfile.nameAr : t(`atm.${activeMode}.name`)}
@@ -790,7 +791,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       )}
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-start gap-2">
                       <span>{msg.timestamp}</span>
 
                       {/* Copy message */}
@@ -808,16 +809,9 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
                       {/* Audio listen button */}
                       {!isUser && (
-                        <button
-                          onClick={() => {
-                            playSound('click');
-                            speakEnglishVoice(msg.content);
-                          }}
-                          className="p-1 rounded hover:bg-white/10 text-[#ffd166] cursor-pointer transition-colors"
-                          title={t('at.listenFullTitle')}
-                        >
-                          <Volume2 className="w-3.5 h-3.5" />
-                        </button>
+                        <LessonSpeechButton key={msg.id + msg.content} text={msg.content} label={t('at.listenFullTitle')} iconOnly
+                          disabled={!!msg.isStreaming || !msg.content.trim()}
+                          className="p-1 rounded hover:bg-white/10 text-[#ffd166] cursor-pointer transition-colors disabled:opacity-30" />
                       )}
                     </div>
                   </div>
