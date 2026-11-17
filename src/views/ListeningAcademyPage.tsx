@@ -44,6 +44,8 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   const [order, setOrder] = useState<number[]>([]);
   const [orderFeedback, setOrderFeedback] = useState<boolean | null>(null);
   const [notice, setNotice] = useState('');
+  const [pendingSaveTask, setPendingSaveTask] = useState<string | null>(null);
+  const pendingSaveTasks = useRef<string[]>([]);
   const panel = useRef<HTMLElement>(null);
   useEffect(() => { const next = load(storageKey); savedRef.current = next; setSaved(next); setStorageWarning(!!next.storageUnreadable); }, [storageKey]);
   useEffect(() => subscribeSpeechState((active) => setPlaying(active)), []);
@@ -55,24 +57,31 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   const gap = selected ? gapFor(selected) : null;
   const tokens = selected?.dictationSentence.split(' ') || [];
   const shuffled = useMemo(() => tokens.map((word, index) => ({ word, index })).reverse(), [selected?.id]);
-  function persist(next: Saved) {
+  function persist(next: Saved): boolean {
+    const success = saveListeningProgress(storageKey, next);
+    setStorageWarning(!success);
+    if (!success) return false;
     savedRef.current = next; setSaved(next);
-    setStorageWarning(!saveListeningProgress(storageKey, next));
+    return true;
   }
   function solve(task: string) {
     if (!selected) return;
     const prev = savedRef.current;
-    const done = Array.from(new Set([...(prev.solved[selected.id] || []), task]));
+    const done = Array.from(new Set([...(prev.solved[selected.id] || []), ...pendingSaveTasks.current, task]));
     const next = { ...prev, solved: { ...prev.solved, [selected.id]: done } };
-    if (taskIds(selected).every(id => done.includes(id)) && !prev.awarded.includes(selected.id) && onCompleteActivity) {
-      next.awarded = [...prev.awarded, selected.id];
-      persist(next);
-      onCompleteActivity(`listening:${selected.id}`, 1, 1);
+    const award = taskIds(selected).every(id => done.includes(id)) && !prev.awarded.includes(selected.id) && !!onCompleteActivity;
+    if (award) next.awarded = [...prev.awarded, selected.id];
+    if (!persist(next)) { pendingSaveTasks.current = done; setPendingSaveTask(task); return; }
+    pendingSaveTasks.current = [];
+    setPendingSaveTask(null);
+    if (award) {
+      onCompleteActivity?.(`listening:${selected.id}`, 1, 1);
       setNotice(t('listen.lessonCompleteToast'));
-    } else persist(next);
+    }
   }
   function open(lesson: ListeningLesson) {
-    stopSpeech(); setPlaying(false); setSelected(lesson); setTranscript(false); setAnswers({}); setDictation(''); setDictationFeedback(null); setGapAnswer(null); setOrder([]); setOrderFeedback(null); setNotice(''); setAudioError('');
+    pendingSaveTasks.current = [];
+    stopSpeech(); setPlaying(false); setSelected(lesson); setTranscript(false); setAnswers({}); setDictation(''); setDictationFeedback(null); setGapAnswer(null); setOrder([]); setOrderFeedback(null); setNotice(''); setAudioError(''); setPendingSaveTask(null);
     requestAnimationFrame(() => panel.current?.scrollIntoView({ behavior: 'instant', block: 'start' }));
   }
   function play(text: string) {
@@ -96,7 +105,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
       <div className="flex items-center justify-between gap-3"><div><p className="text-sm font-bold">{t('listen.journey')}</p><p className="mt-1 text-xs text-slate-300">{t('listen.completedCount').replace('{completed}', String(completed)).replace('{total}', String(ALL_LISTENING_LESSONS.length))}</p></div><Headphones className="text-cyan-200" /></div>
       <progress aria-label={t('listen.progressBarAria')} value={completed} max={ALL_LISTENING_LESSONS.length} className="mt-4 h-2 w-full accent-cyan-300" />
       <p className="mt-2 text-xs leading-6 text-slate-400">{t('listen.progressNote')}</p>
-      {storageWarning && <p role="alert" className="mt-2 text-sm text-amber-200">{t('listen.storageWarning')}</p>}
+      {storageWarning && <div role="alert" className="mt-2 space-y-2 text-sm text-amber-200"><p>{t('sa.saveError')}</p>{pendingSaveTask && <button type="button" onClick={() => solve(pendingSaveTask)} className="rounded-xl border border-amber-300/30 px-4 py-2 font-bold">{t('listen.tryAgain')}</button>}</div>}
     </section>
     <section ref={panel} className="scroll-mt-24" aria-label={t('listen.studioAria')}>
       {selected && <div className="space-y-5">
