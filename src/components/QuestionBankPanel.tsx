@@ -80,6 +80,7 @@ export const QuestionBankPanel: React.FC = () => {
   const tx = (s: string) => qbText?.[s] ?? quizText?.[s] ?? s;
   const [all, setAll] = useState<BankQuestion[] | null>(null);
   const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
   const [skill, setSkill] = useState('all');
   const [level, setLevel] = useState<QuestionLevel | 'all'>('all');
   const [type, setType] = useState('all');
@@ -89,6 +90,7 @@ export const QuestionBankPanel: React.FC = () => {
 
   useEffect(() => {
     let mounted = true;
+    setLoadError(false);
     loadAllQuestions()
       .then(qs => {
         if (mounted) setAll(qs);
@@ -100,7 +102,7 @@ export const QuestionBankPanel: React.FC = () => {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [loadAttempt]);
 
   const drawOpts: DrawOptions = useMemo(
     () => ({
@@ -144,8 +146,9 @@ export const QuestionBankPanel: React.FC = () => {
 
   if (loadError) {
     return (
-      <div className="glass-panel p-10 rounded-3xl border border-white/10 text-center text-white/70 text-sm font-bold">
-        {t('qb.loadError')}
+      <div role="alert" className="glass-panel p-10 rounded-3xl border border-white/10 text-center text-white/70 text-sm font-bold space-y-4">
+        <p>{t('qb.loadError')}</p>
+        <button onClick={() => setLoadAttempt(attempt => attempt + 1)} className="min-h-11 rounded-xl bg-white/10 px-4 text-[#41e7ff]">{t('sg.retry')}</button>
       </div>
     );
   }

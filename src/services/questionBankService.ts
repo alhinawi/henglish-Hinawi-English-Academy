@@ -56,12 +56,30 @@ let cachedIndex: QuestionIndex | null = null;
 let cachedQuestions: BankQuestion[] = [];
 let fullLoadingPromise: Promise<BankQuestion[]> | null = null;
 
+function isBankQuestion(value: unknown): value is BankQuestion {
+  if (!value || typeof value !== 'object') return false;
+  const q = value as BankQuestion;
+  const text = (v: unknown) => typeof v === 'string' && v.trim().length > 0;
+  return [q.id, q.skill, q.prompt, q.promptAr, q.explanationAr, q.topic, q.source].every(text)
+    && ['multiple-choice', 'fill-blank', 'true-false'].includes(q.type)
+    && ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].includes(q.level)
+    && Array.isArray(q.options) && q.options.length >= 2 && q.options.every(text)
+    && new Set(q.options).size === q.options.length
+    && Number.isInteger(q.answerIndex) && q.answerIndex >= 0 && q.answerIndex < q.options.length
+    && (q.passage === undefined || text(q.passage)) && (q.audioText === undefined || text(q.audioText));
+}
+
 export async function loadQuestionIndex(): Promise<QuestionIndex> {
   if (cachedIndex) return cachedIndex;
   const res = await fetch(INDEX_URL);
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  cachedIndex = (await res.json()) as QuestionIndex;
-  return cachedIndex;
+  const index = await res.json() as QuestionIndex;
+  if (!index || !Number.isInteger(index.totalQuestions) || index.totalQuestions <= 0
+    || !Array.isArray(index.chunks) || !index.chunks.length
+    || !index.chunks.every(name => typeof name === 'string' && /^q\d{6}-\d{6}\.json$/.test(name))
+    || new Set(index.chunks).size !== index.chunks.length) throw new Error('Invalid question index');
+  cachedIndex = index;
+  return index;
 }
 
 export async function loadAllQuestions(): Promise<BankQuestion[]> {
@@ -78,13 +96,19 @@ export async function loadAllQuestions(): Promise<BankQuestion[]> {
           batch.map(async name => {
             const res = await fetch(`${CHUNKS_BASE}${name}`);
             if (!res.ok) throw new Error(`HTTP ${res.status} for ${name}`);
-            return (await res.json()) as BankQuestion[];
+            const questions: unknown = await res.json();
+            if (!Array.isArray(questions) || !questions.length || !questions.every(isBankQuestion)) throw new Error('Invalid question chunk');
+            return questions as BankQuestion[];
           })
         );
         parts.forEach(p => all.push(...p));
       }
+      if (all.length !== index.totalQuestions || new Set(all.map(q => q.id)).size !== all.length) throw new Error('Incomplete question bank');
       cachedQuestions = all;
       return cachedQuestions;
+    } catch (error) {
+      cachedIndex = null;
+      throw error;
     } finally {
       fullLoadingPromise = null;
     }
