@@ -637,7 +637,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 25. Complete 5,000 Sentences Library */}
                 {currentRoute === 'sentences' && (
-                  <SentencesLibraryPage onNavigate={handleNavigate} />
+                  <SentencesLibraryPage key={authUser?.id || 'guest'} learnerId={authUser?.id} onNavigate={handleNavigate} />
                 )}
 
                 {/* 26. Learn English Through Movies Studio */}
