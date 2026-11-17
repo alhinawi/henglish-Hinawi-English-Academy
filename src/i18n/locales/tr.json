@@ -2106,5 +2106,6 @@
   "lp.noteStorage": "Notlar yalnızca bu tarayıcıda, öğrenci ve derse göre ayrı kaydedilir. Diğer cihazlarla eşitlenmez.",
   "lp.noteSavedLocal": "Bu tarayıcıya kaydedildi.",
   "ts.vocabReviewPartial": "Bu cihazdaki kelime listesine kaydedildi, ancak tekrar programı kaydedilemedi. Depolamaya izin verip tekrar kaydedin.",
-  "sc.reviewPartial": "Değerlendirmen kaydedildi, ancak zor cümleler listesi, son tekrarlar veya çalışma istatistikleri güncellenemedi. Bu güncellemeleri yeniden denemek için değerlendirmeyi tekrarlama."
+  "sc.reviewPartial": "Değerlendirmen kaydedildi, ancak zor cümleler listesi, son tekrarlar veya çalışma istatistikleri güncellenemedi. Bu güncellemeleri yeniden denemek için değerlendirmeyi tekrarlama.",
+  "vi.removeLine": "Satırı kaldır"
 }

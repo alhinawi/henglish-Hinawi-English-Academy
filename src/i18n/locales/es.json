@@ -2106,5 +2106,6 @@
   "lp.noteStorage": "Las notas se guardan solo en este navegador, por estudiante y lección. No se sincronizan con otros dispositivos.",
   "lp.noteSavedLocal": "Guardado en este navegador.",
   "ts.vocabReviewPartial": "Guardado en el vocabulario de este dispositivo, pero no en el plan de repaso. Permite el almacenamiento y vuelve a guardar.",
-  "sc.reviewPartial": "Tu valoración se guardó, pero no se pudieron actualizar las frases difíciles, los repasos recientes o las estadísticas. No repitas la valoración para intentar esas actualizaciones."
+  "sc.reviewPartial": "Tu valoración se guardó, pero no se pudieron actualizar las frases difíciles, los repasos recientes o las estadísticas. No repitas la valoración para intentar esas actualizaciones.",
+  "vi.removeLine": "Eliminar línea"
 }

@@ -260,11 +260,11 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
         <form onSubmit={handleImportSubmit} className="space-y-5">
           {/* 1. YouTube URL & Live Verification */}
           <div className="space-y-2">
-            <label className="text-xs font-bold text-white">
+            <label htmlFor="video-import-url" className="text-xs font-bold text-white">
               {t('vi.urlLabel')} *
             </label>
             <div className="flex gap-2">
-              <input
+              <input id="video-import-url"
                 type="text"
                 required
                 value={youtubeInput}
@@ -326,8 +326,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {/* Category (20 Categories) */}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-white">{t('vi.category')}</label>
-              <select
+              <label htmlFor="video-import-category" className="text-[11px] font-bold text-white">{t('vi.category')}</label>
+              <select id="video-import-category"
                 value={selectedCategory}
                 onChange={e => setSelectedCategory(e.target.value as any)}
                 className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs font-bold"
@@ -342,8 +342,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
 
             {/* CEFR Level */}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-white">{t('vi.level')}</label>
-              <select
+              <label htmlFor="video-import-level" className="text-[11px] font-bold text-white">{t('vi.level')}</label>
+              <select id="video-import-level"
                 value={selectedCefr}
                 onChange={e => setSelectedCefr(e.target.value as any)}
                 className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs font-bold"
@@ -359,8 +359,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
 
             {/* Accent */}
             <div className="space-y-1">
-              <label className="text-[11px] font-bold text-white">{t('vi.accent')}</label>
-              <select
+              <label htmlFor="video-import-accent" className="text-[11px] font-bold text-white">{t('vi.accent')}</label>
+              <select id="video-import-accent"
                 value={selectedAccent}
                 onChange={e => setSelectedAccent(e.target.value as any)}
                 className="w-full px-3 py-2 rounded-xl bg-[#09091a] border border-white/15 text-white text-xs font-bold"
@@ -375,8 +375,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
           {/* Title & Description */}
           <div className="space-y-3">
             <div className="space-y-1">
-              <label className="text-xs font-bold text-white">{t('vi.sceneTitle')}</label>
-              <input
+              <label htmlFor="video-import-title" className="text-xs font-bold text-white">{t('vi.sceneTitle')}</label>
+              <input id="video-import-title"
                 type="text"
                 value={customTitle}
                 onChange={e => setCustomTitle(e.target.value)}
@@ -386,8 +386,8 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
             </div>
 
             <div className="space-y-1">
-              <label className="text-xs font-bold text-white">{t('vi.sceneDesc')}</label>
-              <textarea
+              <label htmlFor="video-import-description" className="text-xs font-bold text-white">{t('vi.sceneDesc')}</label>
+              <textarea id="video-import-description"
                 rows={2}
                 value={description}
                 onChange={e => setDescription(e.target.value)}
@@ -428,8 +428,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                     <div className="flex items-center justify-between text-xs">
                       <span className="font-bold text-[#c4ff55]">{t('vi.lineN')} {idx + 1}</span>
                       <div className="flex items-center gap-2">
-                        <span className="text-[10px] text-white/50">{t('vi.fromSec')}</span>
+                        <label htmlFor={`video-import-start-${idx}`} className="text-[10px] text-white/50">{t('vi.fromSec')}</label>
                         <input
+                          id={`video-import-start-${idx}`} aria-label={`${t('vi.lineN')} ${idx + 1}: ${t('vi.fromSec')}`}
                           type="number"
                           value={line.start}
                           onChange={e => {
@@ -440,8 +441,9 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                           }}
                           className="w-16 px-2 py-1 rounded bg-[#09091a] border border-white/15 text-white text-center text-xs"
                         />
-                        <span className="text-[10px] text-white/50">{t('vi.toSec')}</span>
+                        <label htmlFor={`video-import-end-${idx}`} className="text-[10px] text-white/50">{t('vi.toSec')}</label>
                         <input
+                          id={`video-import-end-${idx}`} aria-label={`${t('vi.lineN')} ${idx + 1}: ${t('vi.toSec')}`}
                           type="number"
                           value={line.end}
                           onChange={e => {
@@ -455,6 +457,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                         {subtitles.length > 1 && (
                           <button
                             type="button"
+                            aria-label={`${t('vi.removeLine')} ${idx + 1}`}
                             onClick={() => handleRemoveSubtitleLine(idx)}
                             className="p-1 rounded text-red-400 hover:bg-red-500/20"
                           >
@@ -465,6 +468,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                     </div>
 
                     <input
+                      aria-label={`${t('vi.lineN')} ${idx + 1}: ${t('vi.enPh')}`}
                       type="text"
                       value={line.en}
                       onChange={e => {
@@ -478,6 +482,7 @@ export const EducationalVideoImportModal: React.FC<EducationalVideoImportModalPr
                     />
 
                     <input
+                      aria-label={`${t('vi.lineN')} ${idx + 1}: ${t('vi.arPh')}`}
                       type="text"
                       value={line.arEg}
                       onChange={e => {
