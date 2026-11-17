@@ -4,6 +4,7 @@ import { useLanguage } from '../../../i18n/LanguageContext';
 import { ArcadeIntro, ArcadeHud, ArcadeEnd, ArcadeGameMeta } from '../ArcadeShell';
 import { allWordPairs, sample, shuffle, WordPair } from '../arcadeContent';
 import { useArcadeProgress } from '../../../services/arcadeProgressService';
+import { useArcadeTimeout } from '../../../hooks/useArcadeTimeout';
 import { playSound } from '../../../utils/audio';
 
 const PAIRS = 8;
@@ -11,6 +12,7 @@ const PAIRS = 8;
 export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const { t } = useLanguage();
   const META: ArcadeGameMeta = { id: 'word-match', title: t('ah.gameWordMatch'), tagline: t('arc.matchIntro') };
+  const { scheduleTransition, cancelTransition } = useArcadeTimeout();
   const progress = useArcadeProgress();
   const { recordGameResult } = progress;
   const [phase, setPhase] = useState<'intro' | 'play' | 'end'>('intro');
@@ -25,10 +27,12 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
   const [end, setEnd] = useState<{ xpEarned: number; newBest: boolean } | null>(null);
 
   const start = () => {
+    cancelTransition();
     const pairs = sample(allWordPairs(), PAIRS);
     setLeft(shuffle(pairs));
     setRight(shuffle(pairs.map((p) => p.ar)));
     setDone(new Set());
+    setWrongPair(null);
     setSelL(null);
     setSelR(null);
     setMistakes(0);
@@ -55,14 +59,14 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
       if (nd.size === PAIRS) {
         const finalScore = Math.max(1, PAIRS * 2 - m);
         setScore(finalScore);
-        setTimeout(() => finish(finalScore), 600);
+        scheduleTransition(() => finish(finalScore), 600);
       }
     } else {
       playSound('wrong');
       setWrongPair([en, ar]);
       const nm = m + 1;
       setMistakes(nm);
-      setTimeout(() => {
+      scheduleTransition(() => {
         setWrongPair(null);
         setSelL(null);
         setSelR(null);
@@ -99,8 +103,9 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             return (
               <button
                 key={p.en}
-                disabled={isDone}
+                disabled={isDone || !!wrongPair}
                 onClick={() => {
+                  if (wrongPair) return;
                   playSound('flip');
                   const n = isSel ? null : p.en;
                   setSelL(n);
@@ -130,8 +135,9 @@ export const WordMatchGame: React.FC<{ onExit: () => void }> = ({ onExit }) => {
             return (
               <button
                 key={ar}
-                disabled={isDone}
+                disabled={isDone || !!wrongPair}
                 onClick={() => {
+                  if (wrongPair) return;
                   playSound('flip');
                   const n = isSel ? null : ar;
                   setSelR(n);
