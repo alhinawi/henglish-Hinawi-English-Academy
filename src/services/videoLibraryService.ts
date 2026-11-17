@@ -11243,8 +11243,16 @@ export async function importEducationalVideo(params: {
   }
 
   const title = params.customTitle?.trim() || check.title || `Video Clip ${ytid}`;
-  const subs = params.subtitles || [];
+  const suppliedSubs = params.subtitles || [];
+  if (suppliedSubs.some(sub => !Number.isFinite(sub.start) || !Number.isFinite(sub.end) || sub.start < 0 || sub.end <= sub.start)) {
+    return { ok: false, error: 'vi.importError' };
+  }
+  const subs = [...suppliedSubs].sort((a, b) => a.start - b.start);
   const isVideoOnly = subs.length === 0;
+  // Supplied timestamps are absolute source seconds, not clip-relative.
+  const clipStart = subs.length ? subs[0].start : 0;
+  const clipEnd = subs.length ? Math.max(...subs.map(sub => sub.end)) : 90;
+  const clipSeconds = Math.ceil(clipEnd - clipStart);
 
   // Extract vocabulary from actual subtitles if provided
   const vocab: SceneVocabulary[] = [];
@@ -11292,9 +11300,9 @@ export async function importEducationalVideo(params: {
     sceneTitle: title,
     sceneDescription: params.sceneDescription || `Educational language video from ${check.channelName || 'YouTube'}.`,
     youtubeId: ytid,
-    startTime: 0,
-    endTime: 90,
-    clipDuration: '1:30',
+    startTime: clipStart,
+    endTime: clipEnd,
+    clipDuration: `${Math.floor(clipSeconds / 60)}:${String(clipSeconds % 60).padStart(2, '0')}`,
     videoSource: check.channelName || 'YouTube Certified Source',
     dialogueQuote: subs.length > 0 ? subs[0].en : title,
     actorName: check.channelName || 'Speaker',
