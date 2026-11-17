@@ -5,7 +5,7 @@
 // removable chips on a single scrollable line next to the result count.
 // ==============================================================================
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef, useId } from 'react';
 import { X, SlidersHorizontal } from 'lucide-react';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -31,6 +31,33 @@ interface FilterSheetProps {
 
 export const FilterSheet: React.FC<FilterSheetProps> = ({ open, onClose, sections, onClearAll }) => {
   const { t } = useLanguage();
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
+  const titleId = useId();
+  useEffect(() => {
+    if (!open) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]):not([tabindex="-1"]), a[href], input:not([disabled]), [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    closeRef.current?.focus();
+    const trap = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', trap);
+    return () => {
+      document.removeEventListener('keydown', trap);
+      if (opener?.isConnected) opener.focus();
+    };
+  }, [open]);
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -41,8 +68,9 @@ export const FilterSheet: React.FC<FilterSheetProps> = ({ open, onClose, section
   }, [open, onClose]);
   if (!open) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true">
+    <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialogRef} tabIndex={-1}>
       <button
+        tabIndex={-1}
         aria-label={t('fs.close')}
         onClick={onClose}
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
@@ -50,7 +78,7 @@ export const FilterSheet: React.FC<FilterSheetProps> = ({ open, onClose, section
       <div className="relative w-full max-w-lg bg-[#16142e] border-t border-white/15 rounded-t-3xl max-h-[75vh] overflow-y-auto pb-8 animate-[slideUp_.25s_ease-out]">
         <div className="sticky top-0 bg-[#16142e] pt-3 pb-2 px-5 flex items-center justify-between border-b border-white/10">
           <span className="w-10 h-1 rounded-full bg-white/20 absolute top-2 left-1/2 -translate-x-1/2" />
-          <h2 className="text-base font-black text-white flex items-center gap-2 mt-1">
+          <h2 id={titleId} className="text-base font-black text-white flex items-center gap-2 mt-1">
             <SlidersHorizontal className="w-4 h-4 text-[#ffd166]" />
             {t('fs.title')}
           </h2>
@@ -62,6 +90,7 @@ export const FilterSheet: React.FC<FilterSheetProps> = ({ open, onClose, section
               {t('fs.clearAll')}
             </button>
             <button
+              ref={closeRef}
               onClick={onClose}
               aria-label={t('fs.close')}
               className="p-1.5 rounded-full bg-white/5 text-white hover:bg-white/15 transition-colors"
@@ -80,6 +109,7 @@ export const FilterSheet: React.FC<FilterSheetProps> = ({ open, onClose, section
                   return (
                     <button
                       key={opt.value}
+                      aria-pressed={active}
                       onClick={() => section.onSelect(opt.value)}
                       className={`px-3.5 py-1.5 rounded-full text-xs font-bold border transition-all ${
                         active
