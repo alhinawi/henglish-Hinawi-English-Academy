@@ -1,0 +1,16 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const code=ts.transpileModule(fs.readFileSync('src/services/audioPlaybackManager.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
+let listener,muted=false,stops=0;const spoken=[],clips=[];
+class Audio{constructor(){this.events={};clips.push(this)}addEventListener(k,f){this.events[k]=f}pause(){this.paused=true}play(){return new Promise((resolve,reject)=>{this.resolve=resolve;this.reject=reject})}}
+const c={exports:{},Audio,queueMicrotask,require:()=>({getVoiceSettings:()=>({isMuted:muted}),subscribeSpeechState:fn=>{listener=fn;return()=>listener=null},stopSpeech(){stops++;listener?.(false,'')},speakEnglishVoice:(text,options)=>{listener?.(false,'');spoken.push({text,options})}})};vm.runInNewContext(code,c);const api=c.exports.audioPlayback;
+(async()=>{
+ const owner=Symbol(),other=Symbol();await api.playPronunciation('a','apple','US',undefined,owner);assert.equal(api.getState().status,'loading');assert.equal(spoken.length,1);api.stopOwned(other);assert.equal(api.getState().status,'loading');listener(true,'apple');assert.equal(api.getState().status,'playing');spoken[0].options.onEnd();assert.equal(api.getState().status,'idle');assert.equal(listener,null);
+ await api.playPronunciation('b','book','UK',undefined,owner);const late=spoken.at(-1).options;api.stopOwned(owner);assert.equal(api.getState().status,'idle');late.onError();assert.equal(api.getState().status,'idle');
+ await api.playPronunciation('c','cat','US',undefined,owner);assert.equal(api.getState().status,'loading');await api.playPronunciation('c','cat','US',undefined,owner);assert.equal(api.getState().status,'idle');
+ await api.playPronunciation('d','dog','UK');listener(false,'');spoken.at(-1).options.onError();await Promise.resolve();assert.equal(api.getState().status,'error','engine failure is not erased by state notification');
+ await api.playPronunciation('e','egg','US');listener(false,'');await Promise.resolve();assert.equal(api.getState().status,'idle','other speech control cancellation clears own state');
+ muted=true;const count=spoken.length;await api.playPronunciation('f','fig','US');assert.equal(api.getState().status,'error');assert.equal(spoken.length,count);muted=false;
+ const pending=api.playPronunciation('remote','remote','US','https://example.invalid/a',owner);const clip=clips[0];clip.events.error();spoken.at(-1).options.onError();clip.reject(Error());await pending;assert.equal(spoken.filter(s=>s.text==='remote').length,1,'failed fallback cannot restart on duplicate remote rejection');
+ const button=fs.readFileSync('src/components/vocabulary/PronunciationButton.tsx','utf8');assert(button.includes('audioPlayback.stopOwned(owner.current)'));assert(button.includes('aria-pressed={active}'));assert(button.includes("active ? 'pr.stop'"));assert(button.includes('role="status"'));assert(!fs.readFileSync('src/services/audioPlaybackManager.ts','utf8').includes('durationMs'));
+ console.log('Pronunciation ownership, pending Stop, true started/ended/error signals, external cancellation, muted error and fallback once: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});
