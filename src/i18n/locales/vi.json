@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "PDF này không có văn bản có thể chọn và có thể chứa trang quét. Hãy tải PDF có văn bản có thể chọn hoặc dán văn bản vào tệp TXT.",
   "lp.noteStorage": "Ghi chú chỉ được lưu trong trình duyệt này, riêng theo người học và bài học. Không đồng bộ sang thiết bị khác.",
   "lp.noteSavedLocal": "Đã lưu trong trình duyệt này.",
-  "ts.vocabReviewPartial": "Đã lưu vào từ vựng trên thiết bị này, nhưng chưa lưu được lịch ôn tập. Hãy cho phép lưu trữ và lưu lại."
+  "ts.vocabReviewPartial": "Đã lưu vào từ vựng trên thiết bị này, nhưng chưa lưu được lịch ôn tập. Hãy cho phép lưu trữ và lưu lại.",
+  "sc.reviewPartial": "Đánh giá đã được lưu, nhưng không cập nhật được danh sách câu khó, các lần ôn gần đây hoặc thống kê học tập. Đừng đánh giá lại để thử các cập nhật đó."
 }

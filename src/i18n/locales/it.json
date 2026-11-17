@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "Questo PDF non contiene testo selezionabile e potrebbe contenere pagine scansionate. Carica un PDF con testo selezionabile o incolla il testo in un file TXT.",
   "lp.noteStorage": "Le note restano solo in questo browser, separate per studente e lezione. Non si sincronizzano con altri dispositivi.",
   "lp.noteSavedLocal": "Salvato in questo browser.",
-  "ts.vocabReviewPartial": "Salvato nel vocabolario su questo dispositivo, ma non nel piano di ripasso. Consenti la memorizzazione e salva di nuovo."
+  "ts.vocabReviewPartial": "Salvato nel vocabolario su questo dispositivo, ma non nel piano di ripasso. Consenti la memorizzazione e salva di nuovo.",
+  "sc.reviewPartial": "La valutazione è stata salvata, ma non è stato possibile aggiornare le frasi difficili, i ripassi recenti o le statistiche. Non ripetere la valutazione per questi aggiornamenti."
 }

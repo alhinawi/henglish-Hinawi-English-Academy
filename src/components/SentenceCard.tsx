@@ -60,6 +60,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   const [showDetails, setShowDetails] = useState(!compact);
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
+  const [reviewSaveStatus, setReviewSaveStatus] = useState<'idle' | 'failed' | 'partial'>('idle');
   const [flagSaveError, setFlagSaveError] = useState(false);
   const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id, learnerId));
   const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id, learnerId));
@@ -119,11 +120,14 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
 
   // SM-2 Review rating
   const handleRateSRS = (rating: 0 | 2 | 4 | 5) => {
-    playSound('success');
-    const rec = reviewSentence(sentence.id, rating, learnerId);
-    setSrsRecord(rec);
-    setIsDifficult(isDifficultSentence(sentence.id, learnerId));
-    onLearningChange?.();
+    try {
+      const rec = reviewSentence(sentence.id, rating, learnerId);
+      setSrsRecord(rec);
+      setReviewSaveStatus(rec.storageWarning ? 'partial' : 'idle');
+      setIsDifficult(isDifficultSentence(sentence.id, learnerId));
+      playSound('success');
+      onLearningChange?.();
+    } catch { setReviewSaveStatus('failed'); }
   };
 
 
@@ -207,6 +211,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
         </div>
       </div>
 
+      {reviewSaveStatus !== 'idle' && <p role="alert" className="text-xs text-amber-200">{t(reviewSaveStatus === 'partial' ? 'sc.reviewPartial' : 'sa.saveError')}</p>}
       {flagSaveError && <p role="alert" className="text-xs text-amber-200">{t('sa.saveError')}</p>}
       {copyFailed && <p role="status" className="text-xs text-amber-200">{t('copy.failed')}</p>}
 

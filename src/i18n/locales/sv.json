@@ -2105,5 +2105,6 @@
   "dt.errNoPdfText": "Denna PDF saknar markerbar text och kan innehålla skannade sidor. Ladda upp en PDF med markerbar text eller klistra in texten i en TXT-fil.",
   "lp.noteStorage": "Anteckningar sparas bara i den här webbläsaren, separat per elev och lektion. De synkas inte med andra enheter.",
   "lp.noteSavedLocal": "Sparat i den här webbläsaren.",
-  "ts.vocabReviewPartial": "Sparat i ordförrådet på denna enhet, men inte i repetitionsschemat. Tillåt lagring och spara igen."
+  "ts.vocabReviewPartial": "Sparat i ordförrådet på denna enhet, men inte i repetitionsschemat. Tillåt lagring och spara igen.",
+  "sc.reviewPartial": "Din bedömning sparades, men listan med svåra meningar, senaste repetitionerna eller studiestatistiken kunde inte uppdateras. Upprepa inte bedömningen för att försöka göra dessa uppdateringar igen."
 }
