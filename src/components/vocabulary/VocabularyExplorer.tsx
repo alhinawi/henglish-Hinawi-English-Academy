@@ -4,7 +4,7 @@
 // Search-first layout with bottom-sheet filters
 // ==============================================================================
 
-import React, { useState, useEffect, useMemo, useRef } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useId } from 'react';
 import {
   Search,
   LayoutGrid,
@@ -111,6 +111,32 @@ export const VocabularyExplorer: React.FC = () => {
 
   // Bottom sheet
   const [isFilterSheetOpen, setIsFilterSheetOpen] = useState(false);
+  const filterRef = useRef<HTMLDivElement>(null);
+  const filterCloseRef = useRef<HTMLButtonElement>(null);
+  const filterTitleId = useId();
+  useEffect(() => {
+    if (!isFilterSheetOpen) return;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = filterRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), select:not([disabled]), [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    filterCloseRef.current?.focus();
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setIsFilterSheetOpen(false); return; }
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', handleKey);
+    return () => { document.removeEventListener('keydown', handleKey); if (opener?.isConnected) opener.focus(); };
+  }, [isFilterSheetOpen]);
+
 
   // Data Loading State
   const [isLoading, setIsLoading] = useState(true);
@@ -501,10 +527,12 @@ export const VocabularyExplorer: React.FC = () => {
             className="absolute inset-0 bg-black/60 backdrop-blur-sm"
             onClick={() => setIsFilterSheetOpen(false)}
           />
-          <div className="relative w-full max-w-lg bg-[#121124] border-t border-white/15 rounded-t-3xl p-6 space-y-5 text-right shadow-2xl max-h-[85vh] overflow-y-auto">
+          <div ref={filterRef} role="dialog" aria-modal="true" aria-labelledby={filterTitleId} tabIndex={-1} className="relative w-full max-w-lg bg-[#121124] border-t border-white/15 rounded-t-3xl p-6 space-y-5 text-right shadow-2xl max-h-[85vh] overflow-y-auto">
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-black text-white">{t('vx.searchFilters')}</h3>
+              <h3 id={filterTitleId} className="text-base font-black text-white">{t('vx.searchFilters')}</h3>
               <button
+                ref={filterCloseRef}
+                aria-label={t('fs.close')}
                 onClick={() => setIsFilterSheetOpen(false)}
                 className="p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 cursor-pointer"
               >
@@ -516,6 +544,7 @@ export const VocabularyExplorer: React.FC = () => {
               <label className="text-xs font-bold text-white/60">{t('vx.firstLetter')}</label>
               <div dir="ltr" className="flex flex-wrap gap-1.5 justify-end">
                 <button
+                  aria-pressed={selectedLetter === 'all'}
                   onClick={() => {
                     playSound('click');
                     setSelectedLetter('all');
@@ -531,6 +560,7 @@ export const VocabularyExplorer: React.FC = () => {
                 {LETTERS.map(l => (
                   <button
                     key={l}
+                    aria-pressed={selectedLetter === l}
                     onClick={() => {
                       playSound('click');
                       setSelectedLetter(l);
@@ -553,6 +583,7 @@ export const VocabularyExplorer: React.FC = () => {
                 {POS_OPTIONS.map(p => (
                   <button
                     key={p.id}
+                    aria-pressed={selectedPos === p.id}
                     onClick={() => {
                       playSound('click');
                       setSelectedPos(p.id);
@@ -570,8 +601,9 @@ export const VocabularyExplorer: React.FC = () => {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">{t('vx.domainLabel')}</label>
+              <label htmlFor={`${filterTitleId}-selectedDomain`} className="text-xs font-bold text-white/60">{t('vx.domainLabel')}</label>
               <select
+                id={`${filterTitleId}-selectedDomain`}
                 value={selectedDomain}
                 onChange={e => setSelectedDomain(e.target.value)}
                 className={selectClass}
@@ -585,8 +617,9 @@ export const VocabularyExplorer: React.FC = () => {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">{t('vx.freqLabel')}</label>
+              <label htmlFor={`${filterTitleId}-selectedFrequency`} className="text-xs font-bold text-white/60">{t('vx.freqLabel')}</label>
               <select
+                id={`${filterTitleId}-selectedFrequency`}
                 value={selectedFrequency}
                 onChange={e => setSelectedFrequency(e.target.value)}
                 className={selectClass}
@@ -600,8 +633,9 @@ export const VocabularyExplorer: React.FC = () => {
             </div>
 
             <div className="space-y-1.5">
-              <label className="text-xs font-bold text-white/60">{t('vx.sortLabel')}</label>
+              <label htmlFor={`${filterTitleId}-sortBy`} className="text-xs font-bold text-white/60">{t('vx.sortLabel')}</label>
               <select
+                id={`${filterTitleId}-sortBy`}
                 value={sortBy}
                 onChange={e => setSortBy(e.target.value as any)}
                 className={selectClass}
