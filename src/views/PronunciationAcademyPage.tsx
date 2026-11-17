@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { PageRoute } from '../types';
 import { MINIMAL_PAIRS_DATA, MinimalPair } from '../data/skillsAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, speakEnglish, stopSpeech, fireCelebration } from '../utils/audio';
 import {
   Volume2,
   Sparkles,
@@ -19,7 +19,7 @@ interface PronunciationAcademyPageProps {
 }
 
 export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> = ({ onNavigate }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const [activePairIdx, setActivePairIdx] = useState(0);
   const appText = useAppTextMap('skillsAcademyData');
   const [testedSound, setTestedSound] = useState<'A' | 'B' | null>(null);
@@ -27,12 +27,32 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
 
   const pair = MINIMAL_PAIRS_DATA[activePairIdx] || MINIMAL_PAIRS_DATA[0];
 
+  const [audioError, setAudioError] = useState(false);
+  const audioVersion = useRef(0);
+  const resetAudio = () => {
+    audioVersion.current += 1;
+    stopSpeech();
+    setTestedSound(null);
+    setQuizScore(null);
+    setAudioError(false);
+  };
+  useEffect(() => () => { audioVersion.current += 1; stopSpeech(); }, []);
+  const playWord = (text: string, testSound: 'A' | 'B' | null = null) => {
+    resetAudio();
+    const version = audioVersion.current;
+    speakEnglish(text, {
+      onEnd: () => { if (version === audioVersion.current) setTestedSound(testSound); },
+      onError: () => {
+        if (version !== audioVersion.current) return;
+        setTestedSound(null);
+        setAudioError(true);
+      },
+    });
+  };
   const handleTestEar = () => {
     playSound('click');
     const pick = Math.random() > 0.5 ? 'A' : 'B';
-    setTestedSound(pick);
-    setQuizScore(null);
-    speakEnglish(pick === 'A' ? pair.wordA : pair.wordB);
+    playWord(pick === 'A' ? pair.wordA : pair.wordB, pick);
   };
 
   const handleGuess = (choice: 'A' | 'B') => {
@@ -59,7 +79,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
   ];
 
   return (
-    <div className="space-y-10 pb-16 text-right">
+    <div dir={dir} className="space-y-10 pb-16 text-start">
       
       {/* Academy Hero */}
       <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
@@ -81,6 +101,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         </div>
       </section>
 
+      {audioError && <p role="alert" className="rounded-xl border border-amber-300/30 p-4 text-sm text-amber-200">{t('listen.audioError')}</p>}
       {/* 1. MINIMAL PAIRS TRAINER */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10 min-w-0">
@@ -101,9 +122,9 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
                 onClick={() => {
                   playSound('click');
                   setActivePairIdx(idx);
-                  setTestedSound(null);
-                  setQuizScore(null);
+                  resetAudio();
                 }}
+                aria-pressed={activePairIdx === idx}
                 className={`shrink-0 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                   activePairIdx === idx
                     ? 'bg-[#c4ff55] text-[#0c0b20] font-black'
@@ -127,7 +148,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <p className="text-sm font-bold text-[#c4ff55]">{txText(appText, pair.meaningArA)}</p>
             
             <button
-              onClick={() => speakEnglish(pair.wordA)}
+              onClick={() => playWord(pair.wordA)}
               className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
               <Volume2 className="w-4 h-4 text-[#ffd166]" />
@@ -143,7 +164,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <p className="text-sm font-bold text-[#c4ff55]">{txText(appText, pair.meaningArB)}</p>
             
             <button
-              onClick={() => speakEnglish(pair.wordB)}
+              onClick={() => playWord(pair.wordB)}
               className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
               <Volume2 className="w-4 h-4 text-[#ff4f9a]" />
@@ -193,7 +214,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           )}
 
           {quizScore !== null && (
-            <div className={`p-3 rounded-xl text-xs font-bold ${
+            <div role="status" className={`p-3 rounded-xl text-xs font-bold ${
               quizScore === 1 ? 'text-[#c4ff55] bg-[#c4ff55]/10' : 'text-[#ff8bb9] bg-[#ff4f9a]/10'
             }`}>
               {quizScore === 1 ? t('pa.correct') : t('pa.wrong')}
@@ -225,9 +246,10 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
               <div className="en text-xs font-mono text-white">{v.ex}</div>
               <div className="text-[11px] text-[#b9b6d5]">{t(v.ar)}</div>
               <button
-                onClick={() => speakEnglish(v.ex)}
+                onClick={() => playWord(v.ex)}
                 className="p-1 rounded text-[#41e7ff] hover:text-white"
                 title={t('pa.listenWords')}
+                aria-label={`${t('pa.listenWords')}: ${v.ex}`}
               >
                 <Volume2 className="w-3.5 h-3.5 mx-auto" />
               </button>
