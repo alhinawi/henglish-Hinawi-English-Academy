@@ -4,7 +4,7 @@
 // Search-first layout with bottom-sheet filters
 // ==============================================================================
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   Search,
   LayoutGrid,
@@ -97,6 +97,7 @@ export const VocabularyExplorer: React.FC = () => {
   const { t } = useLanguage();
   const optT = (opts: Array<{ id: string; label: string }>, id: string) => { const o = opts.find(x => x.id === id); return o ? t(o.label) : id; };
   // Filters & State
+  const searchRef = useRef<HTMLInputElement>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCefr, setSelectedCefr] = useState<CEFRLevel | 'all'>('all');
   const [selectedPos, setSelectedPos] = useState<string>('all');
@@ -268,12 +269,15 @@ export const VocabularyExplorer: React.FC = () => {
           dir="auto"
           value={searchQuery}
           onChange={e => setSearchQuery(e.target.value)}
+          ref={searchRef}
+          aria-label={t('vx.searchPlaceholder')}
           placeholder={t('vx.searchPlaceholder')}
           className="w-full pl-12 pr-12 py-3.5 rounded-2xl bg-[#09091a] border border-white/15 text-white placeholder-white/40 text-sm sm:text-base font-sans focus:outline-none focus:border-[#41e7ff] shadow-inner transition-colors"
         />
         {searchQuery && (
           <button
-            onClick={() => setSearchQuery('')}
+            aria-label={t('se.clear')}
+            onClick={() => { setSearchQuery(''); searchRef.current?.focus(); }}
             className="absolute left-4 top-1/2 -translate-y-1/2 p-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white/70 cursor-pointer"
           >
             <X className="w-4 h-4" />
@@ -287,6 +291,7 @@ export const VocabularyExplorer: React.FC = () => {
           {CEFR_OPTIONS.map(c => (
             <button
               key={c.id}
+              aria-pressed={selectedCefr === c.id}
               onClick={() => {
                 playSound('click');
                 setSelectedCefr(c.id);
