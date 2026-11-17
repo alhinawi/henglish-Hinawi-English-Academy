@@ -1,6 +1,7 @@
 // Original teaching scenarios. Levels are study guidance, not certification.
 export const LITERACY_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'] as const;
-export interface LiteracyReading { id: string; level: string; title: string; titleAr: string; image: string; imageSource: string; content: string; question: string; options: string[]; answer: number; word: string; meaning: string; }
+export interface ReadingFollowUp { question: string; options: string[]; answer: number; explanation: string; }
+export interface LiteracyReading { followUp?: ReadingFollowUp; id: string; level: string; title: string; titleAr: string; image: string; imageSource: string; content: string; question: string; options: string[]; answer: number; word: string; meaning: string; }
 export interface LiteracyWriting { id: string; level: string; title: string; titleAr: string; image: string; imageSource: string; prompt: string; model: string; }
 export const LITERACY_READING: LiteracyReading[] = [
   {
@@ -451,7 +452,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "asymmetry",
-    "meaning": "عدم تماثل"
+    "meaning": "عدم تماثل",
+    "followUp": {
+      "question": "Which approach best follows the final sentence?",
+      "options": [
+        "Treat a plausible tenant motive as a fact",
+        "Mark a tenant motive as uncertain when the record does not establish it",
+        "Ignore all records written by landlords"
+      ],
+      "answer": 1,
+      "explanation": "The passage separates established facts, plausible interpretations and unknowns. A missing perspective is not permission to invent a certain motive."
+    }
   },
   {
     "id": "literacy-26",
@@ -469,7 +480,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "qualifies",
-    "meaning": "يقيّد الادعاء بتحفظ"
+    "meaning": "يقيّد الادعاء بتحفظ",
+    "followUp": {
+      "question": "What would make a cautious recommendation useful rather than indecisive?",
+      "options": [
+        "Give a clear recommendation and say what evidence could change it",
+        "Avoid giving any recommendation",
+        "Make a promise without conditions"
+      ],
+      "answer": 0,
+      "explanation": "The final sentences require a definite recommendation, clear limits and revision when relevant evidence arrives. Caution and a decision can coexist."
+    }
   },
   {
     "id": "literacy-27",
@@ -487,7 +508,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "privilege",
-    "meaning": "يمنح أولوية"
+    "meaning": "يمنح أولوية",
+    "followUp": {
+      "question": "Which plan would address the problem raised by the passage?",
+      "options": [
+        "Promise to return the hillside to its original state without defining that state",
+        "Avoid every conservation decision",
+        "Define habitat protection as the goal and assess interventions against it"
+      ],
+      "answer": 2,
+      "explanation": "The writer asks planners to state goals such as habitat protection, so that interventions can be judged against explicit aims rather than an undefined past."
+    }
   },
   {
     "id": "literacy-28",
@@ -505,7 +536,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "coherent",
-    "meaning": "متسق"
+    "meaning": "متسق",
+    "followUp": {
+      "question": "Why might a very smooth sentence still be a weak translation?",
+      "options": [
+        "It may erase an ambiguity or voice that matters in the whole text",
+        "Smooth language is always inaccurate",
+        "A translation must preserve every unfamiliar feature"
+      ],
+      "answer": 0,
+      "explanation": "The passage warns that removing unfamiliar features may erase the original voice. It also rejects a universal formula, so neither smoothness nor unfamiliarity is automatically right."
+    }
   },
   {
     "id": "literacy-29",
@@ -523,7 +564,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "afterthought",
-    "meaning": "أمر لم يؤخذ في الحسبان أولا"
+    "meaning": "أمر لم يؤخذ في الحسبان أولا",
+    "followUp": {
+      "question": "Which question belongs in the original service proposal?",
+      "options": [
+        "How can the launch avoid mentioning later costs?",
+        "Who will correct errors and support users after launch?",
+        "How can the interface remain unchanged forever?"
+      ],
+      "answer": 1,
+      "explanation": "The passage places repair, ownership and replacement inside the original proposal. It challenges the idea that responsibility ends at launch."
+    }
   },
   {
     "id": "literacy-30",
@@ -541,7 +592,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "incentive",
-    "meaning": "حافز"
+    "meaning": "حافز",
+    "followUp": {
+      "question": "Which new result would most clearly repeat the problem in the passage?",
+      "options": [
+        "Students discuss challenging passages in more detail",
+        "The college considers reading reflections as well as counts",
+        "Completion counts rise while students avoid demanding books"
+      ],
+      "answer": 2,
+      "explanation": "The original purpose concerns reading, but the reward encourages easy-to-count completions. A rising count can therefore hide movement away from the activity being valued."
+    }
   },
   {
     "id": "literacy-31",
@@ -559,7 +620,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "legitimate",
-    "meaning": "مشروع أو مقبول"
+    "meaning": "مشروع أو مقبول",
+    "followUp": {
+      "question": "Which response avoids the false opposition the writer rejects?",
+      "options": [
+        "Assume all technological outcomes can be freely chosen",
+        "Identify decisions about funding and access that remain open",
+        "Treat every form of debate as pointless"
+      ],
+      "answer": 1,
+      "explanation": "The writer rejects both total control and helplessness. Asking which decisions remain open preserves a limited but real role for choice."
+    }
   },
   {
     "id": "literacy-32",
@@ -577,7 +648,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "evasions",
-    "meaning": "مراوغات"
+    "meaning": "مراوغات",
+    "followUp": {
+      "question": "What can the contradictions justify without proving too much?",
+      "options": [
+        "Questioning the narrator while leaving open which details are accurate",
+        "Rejecting every detail as false",
+        "Accepting the assurances because they are repeated"
+      ],
+      "answer": 0,
+      "explanation": "The passage explicitly says that not every detail must be false. Contradictions support a questioning reading, not a complete verdict on every statement."
+    }
   },
   {
     "id": "literacy-33",
@@ -595,7 +676,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "fragmentary",
-    "meaning": "مجزأ"
+    "meaning": "مجزأ",
+    "followUp": {
+      "question": "Who carries the risk when a smooth biography presents an invented motive as certain?",
+      "options": [
+        "Only the storyteller who wanted a smooth account",
+        "Nobody,because a plausible account is always accurate",
+        "The subject,whose supposed certainty cannot be contested"
+      ],
+      "answer": 2,
+      "explanation": "The passage contrasts convenience for the storyteller with certainty attributed to a person unable to contest it. The boundary between record and reconstruction therefore matters."
+    }
   },
   {
     "id": "literacy-34",
@@ -613,7 +704,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 0,
     "word": "discrepancy",
-    "meaning": "تباين"
+    "meaning": "تباين",
+    "followUp": {
+      "question": "Which change best puts the stated welcome into practice?",
+      "options": [
+        "Keep specialist shorthand and repeat that everyone belongs",
+        "Add definitions and examples that help newcomers approach precise language",
+        "Remove all precise terms without explaining the subject"
+      ],
+      "answer": 1,
+      "explanation": "Definitions, examples and questions make the path into precision visible. The argument is about sharing the work of understanding, not abandoning precision."
+    }
   },
   {
     "id": "literacy-35",
@@ -631,7 +732,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 2,
     "word": "exhaustive",
-    "meaning": "شامل لكل التفاصيل"
+    "meaning": "شامل لكل التفاصيل",
+    "followUp": {
+      "question": "When would the use of a map become misleading according to the passage?",
+      "options": [
+        "When it leaves out any detail at all",
+        "When two maps emphasise different relationships",
+        "When a map made for one purpose is treated as a complete account for another"
+      ],
+      "answer": 2,
+      "explanation": "Selection is necessary for a useful map. The problem arises when authority for one purpose is silently transferred to another without stating the limits."
+    }
   },
   {
     "id": "literacy-36",
@@ -649,7 +760,17 @@ export const LITERACY_READING: LiteracyReading[] = [
     ],
     "answer": 1,
     "word": "fidelity",
-    "meaning": "أمانة"
+    "meaning": "أمانة",
+    "followUp": {
+      "question": "Why might a good revision preserve an awkward detail?",
+      "options": [
+        "Removing it could distort what the text needs to convey",
+        "Awkward writing always shows greater effort",
+        "Every original sentence must remain unchanged"
+      ],
+      "answer": 0,
+      "explanation": "The passage judges revision by fidelity to the purpose of the text. It allows both removal and preservation, depending on the effect on the subject and the reader."
+    }
   }
 ];
 export const LITERACY_WRITING: LiteracyWriting[] = [
