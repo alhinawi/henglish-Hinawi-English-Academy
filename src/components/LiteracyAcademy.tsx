@@ -38,7 +38,8 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   const completed = lessons.filter(l => saved.done.includes(l.id)).length;
   const complete = (id: string) => {
     if (saved.done.includes(id)) return;
-    const next = { ...saved, done: [...saved.done, id] };
+    const fresh = loadLiteracy(storageKey);
+    const next = { ...saved, storageUnreadable: saved.storageUnreadable || fresh.storageUnreadable, done: [...new Set([...fresh.done, ...saved.done, id])], drafts: { ...fresh.drafts, ...saved.drafts } };
     if (!saveLiteracy(storageKey, next)) {
       setStorageError(true);
       setCompletionSaveError(true);
@@ -47,7 +48,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
     setCompletionSaveError(false);
     setStorageError(false);
     setSaved(next);
-    onCompleteActivity?.(id, 3, 3);
+    if (!fresh.done.includes(id)) onCompleteActivity?.(id, 3, 3);
   };
   return <div dir={dir} className="space-y-6 pb-8 min-w-0 text-start">
     <section className="relative isolate overflow-hidden rounded-[28px] border border-white/10 bg-[#11182a]">
