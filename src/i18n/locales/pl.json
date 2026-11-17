@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "Nie udało się wczytać biblioteki zdań. To błąd ładowania, a nie brak wyników wyszukiwania. Spróbuj ponownie.",
-  "dt.errNoPdfText": "Ten PDF nie zawiera tekstu do zaznaczenia i może zawierać skany. Prześlij PDF z tekstem do zaznaczenia lub wklej tekst do pliku TXT."
+  "dt.errNoPdfText": "Ten PDF nie zawiera tekstu do zaznaczenia i może zawierać skany. Prześlij PDF z tekstem do zaznaczenia lub wklej tekst do pliku TXT.",
+  "lp.noteStorage": "Notatki są zapisywane tylko w tej przeglądarce, osobno dla ucznia i lekcji. Bez synchronizacji z innymi urządzeniami.",
+  "lp.noteSavedLocal": "Zapisano w tej przeglądarce."
 }

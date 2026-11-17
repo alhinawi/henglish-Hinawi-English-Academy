@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "Impossibile caricare la raccolta di frasi. È un errore di caricamento, non una ricerca senza risultati. Riprova.",
-  "dt.errNoPdfText": "Questo PDF non contiene testo selezionabile e potrebbe contenere pagine scansionate. Carica un PDF con testo selezionabile o incolla il testo in un file TXT."
+  "dt.errNoPdfText": "Questo PDF non contiene testo selezionabile e potrebbe contenere pagine scansionate. Carica un PDF con testo selezionabile o incolla il testo in un file TXT.",
+  "lp.noteStorage": "Le note restano solo in questo browser, separate per studente e lezione. Non si sincronizzano con altri dispositivi.",
+  "lp.noteSavedLocal": "Salvato in questo browser."
 }

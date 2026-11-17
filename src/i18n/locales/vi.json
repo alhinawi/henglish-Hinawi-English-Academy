@@ -2102,5 +2102,7 @@
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
   "sl.loadError": "Không tải được thư viện câu. Đây là lỗi tải, không phải tìm kiếm không có kết quả. Hãy thử lại.",
-  "dt.errNoPdfText": "PDF này không có văn bản có thể chọn và có thể chứa trang quét. Hãy tải PDF có văn bản có thể chọn hoặc dán văn bản vào tệp TXT."
+  "dt.errNoPdfText": "PDF này không có văn bản có thể chọn và có thể chứa trang quét. Hãy tải PDF có văn bản có thể chọn hoặc dán văn bản vào tệp TXT.",
+  "lp.noteStorage": "Ghi chú chỉ được lưu trong trình duyệt này, riêng theo người học và bài học. Không đồng bộ sang thiết bị khác.",
+  "lp.noteSavedLocal": "Đã lưu trong trình duyệt này."
 }
