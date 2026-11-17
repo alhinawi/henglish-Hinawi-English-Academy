@@ -29,3 +29,9 @@ for(const blocked of ['history:guest','history']){const get=localStorage.getItem
 data.delete('saved:guest');
 for(const blocked of ['saved:guest','saved']){const get=localStorage.getItem;localStorage.getItem=k=>{if(k===blocked)throw Error('legacy denied');return get(k)};assert.equal(a.getSavedVideos('B')[0].youtubeId,'B');localStorage.getItem=get;}
 console.log('Shared media owner search/bookmarks remain readable when legacy guest or browser-wide key reads fail: PASS');
+
+const recentKey='recent:user:watch-reliability',recentBefore=JSON.stringify([{youtubeId:'old'}]);data.set(recentKey,recentBefore);
+localStorage.setItem=()=>{throw Error('quota')};assert.equal(a.addRecentlyWatched({youtubeId:'new'},'watch-reliability'),false);assert.equal(data.get(recentKey),recentBefore);localStorage.setItem=set;
+localStorage.getItem=k=>{if(k===recentKey)throw Error('denied');return get(k)};assert.equal(a.addRecentlyWatched({youtubeId:'new'},'watch-reliability'),false);localStorage.getItem=get;assert.equal(data.get(recentKey),recentBefore);
+for(const raw of ['bad json','{}','null','[null]','[{}]']){data.set(recentKey,raw);assert.equal(a.addRecentlyWatched({youtubeId:'new'},'watch-reliability'),false);assert.equal(data.get(recentKey),raw)}
+data.set(recentKey,recentBefore);assert.equal(a.addRecentlyWatched({youtubeId:'new'},'watch-reliability'),true);assert.equal(a.getRecentlyWatched('watch-reliability').length,2);assert.equal(a.addRecentlyWatched({youtubeId:'new'},'watch-reliability'),true);assert.equal(a.getRecentlyWatched('watch-reliability').length,2);assert(page.includes('setBookmarkSaveFailed(!addRecentlyWatched(scene as EducationalVideoItem, learnerId))'));assert(page.includes('setBookmarkSaveFailed(!addRecentlyWatched(tempScene, learnerId))'));console.log('Movie watch history read/write/malformed failures preserve old entries and return false;retry prepends once;both player entry paths disclose failure without blocking playback: PASS');
