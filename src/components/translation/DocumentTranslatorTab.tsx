@@ -45,6 +45,8 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
   const [translatedDocumentText, setTranslatedDocumentText] = useState<string>('');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
+  const [historySaveFailed, setHistorySaveFailed] = useState(false);
+
   const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = e.target.files?.[0];
     if (!selected) return;
@@ -64,6 +66,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 
     setFile(selected);
     setErrorMessage(null);
+    setHistorySaveFailed(false);
     setTranslatedDocumentText('');
     playSound('click');
   };
@@ -73,6 +76,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 
     setIsProcessing(true);
     setErrorMessage(null);
+    setHistorySaveFailed(false);
     setProgressPercent(10);
     setStatusMessage(t('dt.decoding'));
 
@@ -100,6 +104,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
         }, learnerId);
 
         if (version !== requestVersion.current) return;
+        if (res.historySaved === false) setHistorySaveFailed(true);
         translatedChunks.push(res.translatedText);
       }
 
@@ -136,6 +141,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 
   return (
     <div className="space-y-6 text-right">
+      {historySaveFailed && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {/* Tab Header Banner */}
       <div className="p-5 rounded-2xl bg-[#0e0c26] border border-white/10 shadow-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
