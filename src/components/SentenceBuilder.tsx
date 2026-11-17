@@ -1,9 +1,10 @@
+import { LessonSpeechButton } from './LessonSpeechButton';
 import React, { useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { SENTENCE_BUILDER_CHALLENGES } from '../data/gamesData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
-import { Volume2, RotateCcw, Lightbulb, CheckCircle, ArrowRight, Sparkles } from 'lucide-react';
+import { playSound, fireCelebration, stopSpeech } from '../utils/audio';
+import { RotateCcw, Lightbulb, CheckCircle, ArrowRight, Sparkles } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export const SentenceBuilder: React.FC = () => {
@@ -19,6 +20,7 @@ export const SentenceBuilder: React.FC = () => {
   const [showHint, setShowHint] = useState(false);
 
   const resetCurrent = (newIndex = challengeIndex) => {
+    stopSpeech();
     const ch = SENTENCE_BUILDER_CHALLENGES[newIndex];
     setChallengeIndex(newIndex);
     setAvailableWords([...ch.scrambledWords]);
@@ -105,16 +107,7 @@ export const SentenceBuilder: React.FC = () => {
 
       {/* Target Audio Listen Button */}
       <div className="flex flex-wrap items-center gap-3 mb-4">
-        <button
-          onClick={() => {
-            playSound('click');
-            speakEnglish(current.audioText);
-          }}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#41e7ff]/15 hover:bg-[#41e7ff]/25 text-[#41e7ff] text-xs font-bold transition-colors cursor-pointer border border-[#41e7ff]/30"
-        >
-          <Volume2 className="w-4 h-4" />
-          <span>{t('sb.listen')}</span>
-        </button>
+        <LessonSpeechButton key={challengeIndex} text={current.audioText} label={t('sb.listen')} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#41e7ff]/15 hover:bg-[#41e7ff]/25 text-[#41e7ff] text-xs font-bold transition-colors cursor-pointer border border-[#41e7ff]/30" />
 
         <button
           onClick={() => {
