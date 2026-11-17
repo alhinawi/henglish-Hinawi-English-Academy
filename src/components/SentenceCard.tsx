@@ -6,7 +6,7 @@ import { copyText } from '../services/copyText';
 // grammar explanations, SRS buttons, vocabulary saving, and AI practice
 // ==============================================================================
 
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { SentenceItem } from '../services/sentencesService';
 import {
   toggleFavoriteSentence,
@@ -80,14 +80,36 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
     onLearningChange?.();
   };
 
-  // Copy sentence text
-  const handleCopy = async () => {
-    playSound('click');
+  const copyVersion = useRef(0);
+  const copyTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const invalidateCopy = () => {
+    copyVersion.current += 1;
+    if (copyTimer.current !== null) clearTimeout(copyTimer.current);
+    copyTimer.current = null;
     setCopied(false);
     setCopyFailed(false);
-    if (!(await copyText(sentence.english))) { setCopyFailed(true); return; }
+  };
+  useEffect(() => {
+    invalidateCopy();
+    return () => {
+      copyVersion.current += 1;
+      if (copyTimer.current !== null) clearTimeout(copyTimer.current);
+    };
+  }, [sentence.id, learnerId]);
+
+  // Only the latest copy request may show feedback for this sentence.
+  const handleCopy = async () => {
+    playSound('click');
+    invalidateCopy();
+    const version = copyVersion.current;
+    const success = await copyText(sentence.english);
+    if (version !== copyVersion.current) return;
+    if (!success) { setCopyFailed(true); return; }
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    copyTimer.current = setTimeout(() => {
+      if (version === copyVersion.current) setCopied(false);
+      copyTimer.current = null;
+    }, 2000);
   };
 
   // SM-2 Review rating

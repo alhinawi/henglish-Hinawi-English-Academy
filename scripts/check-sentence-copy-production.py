@@ -1,0 +1,10 @@
+import functools,http.server,json,pathlib,threading
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd();server=http.server.ThreadingHTTPServer(('127.0.0.1',4188),functools.partial(http.server.SimpleHTTPRequestHandler,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for lang in ['en','ar']:
+   page=b.new_page(viewport={'width':390,'height':1100});page.add_init_script("window.__copies=[];Object.defineProperty(navigator,'clipboard',{value:{writeText:text=>new Promise((resolve,reject)=>window.__copies.push({text,resolve,reject}))}})");t=json.load(open('src/i18n/locales/'+lang+'.json'));page.goto('http://127.0.0.1:4188/?lang='+lang+'#sentences');copy=page.get_by_role('button',name=t['sc.copy'],exact=True).first;copy.click();copy.click();page.evaluate('window.__copies[1].resolve()');expect(copy.locator('svg')).to_have_class(__import__('re').compile('text-emerald'));page.evaluate('window.__copies[0].reject()');page.wait_for_timeout(100);expect(page.get_by_role('status').filter(has_text=t['copy.failed'])).to_have_count(0);expect(copy.locator('svg')).to_have_class(__import__('re').compile('text-emerald'));copy.click();page.evaluate('window.__copies[2].reject()');error=page.get_by_role('status').filter(has_text=t['copy.failed']);expect(error).to_be_visible();error.scroll_into_view_if_needed();page.screenshot(path='/downloads/sentence-copy-error-'+lang+'.png');copy.click();page.evaluate('window.__copies[3].resolve()');expect(error).to_have_count(0);expect(copy.locator('svg')).to_have_class(__import__('re').compile('text-emerald'));assert page.evaluate('window.__copies.every(x=>x.text===window.__copies[0].text)');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');page.close();print(lang,'Next sentence latestcopywins,stale denialignored,realdenial,errorretry,exactsametext,width PASS')
+  b.close()
+finally:server.shutdown();server.server_close()
