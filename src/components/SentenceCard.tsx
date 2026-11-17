@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from './LessonSpeechButton';
 import { copyText } from '../services/copyText';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - INTERACTIVE SENTENCE CARD
@@ -15,7 +16,6 @@ import {
   reviewSentence,
   getSentenceSrsRecord,
 } from '../services/sentenceSrsService';
-import { speakText, getSavedVoiceSettings } from '../utils/voiceEngine';
 import { playSound } from '../utils/audio';
 import {
   Volume2,
@@ -60,24 +60,9 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   const [showDetails, setShowDetails] = useState(!compact);
   const [copied, setCopied] = useState(false);
   const [copyFailed, setCopyFailed] = useState(false);
-  const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [isFavorite, setIsFavorite] = useState(() => isFavoriteSentence(sentence.id, learnerId));
   const [isDifficult, setIsDifficult] = useState(() => isDifficultSentence(sentence.id, learnerId));
   const [srsRecord, setSrsRecord] = useState(() => getSentenceSrsRecord(sentence.id, learnerId));
-
-  // Play normal audio
-  const handlePlayAudio = (slow: boolean = false) => {
-    playSound('click');
-    setIsPlayingAudio(true);
-    const settings = getSavedVoiceSettings();
-    speakText(sentence.english, {
-      speed: slow ? 0.75 : settings.speed,
-      gender: settings.gender,
-      accent: settings.accent,
-      onEnded: () => setIsPlayingAudio(false),
-      onError: () => setIsPlayingAudio(false),
-    });
-  };
 
   // Toggle favorite
   const handleToggleFavorite = () => {
@@ -204,25 +189,9 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           <p dir="ltr" lang="en" className="min-w-0 break-words text-lg sm:text-xl font-black text-white tracking-wide leading-relaxed selection:bg-purple-500/30">
             {sentence.english}
           </p>
-          <div className="flex items-center gap-1 shrink-0 mt-1">
-            {/* Play Normal Audio */}
-            <button
-              onClick={() => handlePlayAudio(false)}
-              disabled={isPlayingAudio}
-              title={t('sc.listenNatural')}
-              className="w-10 h-10 rounded-xl bg-purple-500 hover:bg-purple-600 text-white flex items-center justify-center transition-all shadow-lg shadow-purple-500/25 cursor-pointer disabled:opacity-50"
-            >
-              <Volume2 className="w-5 h-5 fill-current" />
-            </button>
-            {/* Play Slow Audio (0.75x) */}
-            <button
-              onClick={() => handlePlayAudio(true)}
-              disabled={isPlayingAudio}
-              title={t('sc.listenSlow')}
-              className="w-8 h-8 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white flex items-center justify-center transition-all border border-white/10 cursor-pointer disabled:opacity-50 text-xs font-bold"
-            >
-              <Volume1 className="w-4 h-4" />
-            </button>
+          <div dir="ltr" className="flex items-center gap-1 shrink-0 mt-1">
+            <LessonSpeechButton text={sentence.english} label={t('sc.listenNatural')} iconOnly className="w-10 h-10 rounded-xl bg-purple-500 hover:bg-purple-600 text-white flex items-center justify-center transition-all shadow-lg shadow-purple-500/25 cursor-pointer" />
+            <LessonSpeechButton text={sentence.english} label={t('sc.listenSlow')} speed={0.75} iconOnly className="w-8 h-8 rounded-xl bg-white/5 hover:bg-white/10 text-white/70 hover:text-white flex items-center justify-center transition-all border border-white/10 cursor-pointer" />
           </div>
         </div>
 
