@@ -3,28 +3,30 @@ import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy
 import { LITERACY_LEVELS, LITERACY_READING, LITERACY_WRITING, type LiteracyReading, type LiteracyWriting } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
+import { literacyStorageKey, loadLiteracy, type LiteracySaved as Saved } from '../services/literacyStorage';
+import { useAuth } from '../context/AuthContext';
 import { speakEnglish } from '../utils/audio';
 
 type Props = { kind: 'reading' | 'writing'; onCompleteActivity?: (id: string, score: number, total: number) => void };
-type Saved = { done: string[]; drafts: Record<string, string> };
-const KEY = 'henglish-literacy-v1';
-function load(): Saved {
-  try { const p = JSON.parse(localStorage.getItem(KEY) || '{}'); return { done: Array.isArray(p.done) ? p.done.filter((x: unknown) => typeof x === 'string') : [], drafts: p.drafts && typeof p.drafts === 'object' ? p.drafts : {} }; } catch { return { done: [], drafts: {} }; }
-}
 const panel = 'rounded-3xl border border-white/10 bg-[#121629] p-5 sm:p-7';
 const button = 'rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-sm text-white hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-cyan-300 disabled:opacity-50';
 const normalise = (s: string) => s.trim().toLowerCase().replace(/[.!?,;:]/g, '').replace(/\s+/g, ' ');
 
-export function LiteracyAcademy({ kind, onCompleteActivity }: Props) {
+export function LiteracyAcademy(props: Props) {
+  const { user } = useAuth();
+  const storageKey = literacyStorageKey(user?.id);
+  return <LearnerLiteracyAcademy key={storageKey} {...props} storageKey={storageKey} />;
+}
+function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props & { storageKey: string }) {
   const { t, dir, lang } = useLanguage();
   const reading = kind === 'reading';
   const [level, setLevel] = useState('A1');
   const appText = useAppTextMap('literacyAcademyData');
   const [query, setQuery] = useState('');
   const [active, setActive] = useState<string | null>(null);
-  const [saved, setSaved] = useState<Saved>(load);
+  const [saved, setSaved] = useState<Saved>(() => loadLiteracy(storageKey));
   const [storageError, setStorageError] = useState(false);
-  useEffect(() => { try { localStorage.setItem(KEY, JSON.stringify(saved)); setStorageError(false); } catch { setStorageError(true); } }, [saved]);
+  useEffect(() => { try { localStorage.setItem(storageKey, JSON.stringify(saved)); setStorageError(false); } catch { setStorageError(true); } }, [saved, storageKey]);
   const lessons: (LiteracyReading | LiteracyWriting)[] = reading ? LITERACY_READING : LITERACY_WRITING;
   const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.toLowerCase()));
   const current = lessons.find(l => l.id === active);

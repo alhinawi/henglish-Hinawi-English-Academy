@@ -1,0 +1,7 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const map=new Map(),localStorage={getItem:k=>map.get(k)??null,setItem:(k,v)=>map.set(k,v)};
+const c={exports:{},localStorage};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/services/literacyStorage.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,c);
+const {loadLiteracy:load,literacyStorageKey:key,LEGACY_LITERACY_KEY:legacy}=c.exports;
+const old=JSON.stringify({done:['lesson'],drafts:{lesson:'private legacy'}});map.set(legacy,old);assert.equal(Object.keys(load(key('A')).drafts).length,0);assert.equal(map.get(legacy),old);assert.equal(load(key()).drafts.lesson,'private legacy');map.set(legacy,'{}');assert.equal(load(key()).drafts.lesson,'private legacy');map.set(key('A'),JSON.stringify({done:['A',2],drafts:{A:'private A',bad:42}}));assert.equal(load(key('A')).drafts.A,'private A');assert.equal(load(key('A')).drafts.bad,undefined);assert.equal(Object.keys(load(key('B')).drafts).length,0);assert.equal(key('guest-123'),key());assert.notEqual(key('A/B'),key('A%2FB'));map.set(key('B'),'null');assert.equal(load(key('B')).done.length,0);
+for(const path of ['src/components/LiteracyAcademy.tsx','src/views/ListeningAcademyPage.tsx']){const source=fs.readFileSync(path,'utf8');assert.ok(source.includes('key={storageKey}'),'account switch must unmount lesson/answers/drafts');}
+console.log('Literacy account keys, guest-only legacy copy, recovery record, validated drafts, malformed storage and keyed lesson remounts: PASS');
