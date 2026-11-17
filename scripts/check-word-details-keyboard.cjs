@@ -19,3 +19,8 @@ for(const [file,prefix,state,option] of [['VocabularyExplorer','vx','selectedCef
  for(const text of ["aria-label={t('"+prefix+".searchPlaceholder')}","aria-label={t('se.clear')}",'searchRef.current?.focus()','aria-pressed={'+state+' === '+option+'.id}'])assert.ok(src.includes(text),file+': '+text);
 }
 console.log('Vocabulary/expression search naming, clear focus restoration and selected chips: PASS');
+
+const explorer=fs.readFileSync('src/components/vocabulary/VocabularyExplorer.tsx','utf8');
+for(const text of ['role="dialog"','aria-modal="true"','aria-labelledby={filterTitleId}','filterCloseRef.current?.focus()',"event.key === 'Escape'","document.removeEventListener('keydown', handleKey)",'aria-pressed={selectedLetter === l}','aria-pressed={selectedPos === p.id}'])assert.ok(explorer.includes(text),text);
+for(const field of ['selectedDomain','selectedFrequency','sortBy']){assert.ok(explorer.includes('htmlFor={`${filterTitleId}-'+field+'`}'));assert.ok(explorer.includes('id={`${filterTitleId}-'+field+'`}'));}
+console.log('Word explorer filter sheet is named, keyboard-modal with focus restoration, labelled selects and pressed options: PASS');
