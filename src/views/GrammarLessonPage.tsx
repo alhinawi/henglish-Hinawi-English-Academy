@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { LessonTrap, MixedLessonText } from '../components/LessonCorrection';
 import { LESSON_PHOTOGRAPHY } from '../data/lessonPhotography';
 import { LessonPhoto } from '../components/LessonPhotography';
@@ -8,10 +9,9 @@ import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
 import { GRAMMAR_VIDEO_RESOURCES } from '../data/videoResourcesData';
 import { YouTubeVideoPlayer } from '../components/YouTubeVideoPlayer';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, fireCelebration } from '../utils/audio';
 import {
   GraduationCap,
-  Volume2,
   CheckCircle2,
   AlertTriangle,
   HelpCircle,
@@ -180,16 +180,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
 
           {/* Quick Voice Audio Pronunciation of Rule Title */}
           <div className="pt-2 flex items-center gap-3">
-            <button
-              onClick={() => {
-                playSound('click');
-                speakEnglish(rule.titleEn);
-              }}
-              className="px-4 py-2 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:from-[#ffd166]/30 hover:to-[#41e7ff]/30 border border-[#ffd166]/40 text-xs font-bold text-white flex items-center gap-2 cursor-pointer transition-all"
-            >
-              <Volume2 className="w-4 h-4 text-[#ffd166]" />
-              <span>{t('gl.listenRule')}</span>
-            </button>
+            <LessonSpeechButton key={rule.titleEn} text={rule.titleEn} label={t('gl.listenRule')} className="px-4 py-2 rounded-xl bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 hover:from-[#ffd166]/30 hover:to-[#41e7ff]/30 border border-[#ffd166]/40 text-xs font-bold text-white flex items-center gap-2 cursor-pointer transition-all" />
           </div>
         </div>
       </header>
@@ -376,18 +367,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
               </div>
 
               <div className="flex justify-start pt-4 border-t border-white/10">
-                <button
-                  onClick={() => {
-                    playSound('click');
-                    speakEnglish(ex.en);
-                  }}
-                  className="inline-flex items-center gap-2.5 min-h-11 px-4 py-2.5 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/20 hover:bg-[#ffd166] text-[#ffd166] hover:text-[#0c0b20] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffd166]"
-                  title={t('gl.listenSentenceTitle')}
-                  aria-label={t('gl.listenSentenceAria')}
-                >
-                  <Volume2 className="w-4 h-4 shrink-0" />
-                  <span className="text-xs font-bold">{t('gl.listenSentence')}</span>
-                </button>
+                <LessonSpeechButton key={ex.en} text={ex.en} label={`${t('gl.listenSentence')}: ${idx + 1}`} className="inline-flex items-center gap-2.5 min-h-11 px-4 py-2.5 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/20 hover:bg-[#ffd166]/20 text-[#ffd166] transition-colors cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffd166]" />
               </div>
             </div>
           ))}
@@ -440,7 +420,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
 
             return (
               <div key={qIdx} className="p-5 sm:p-6 rounded-2xl bg-white/5 border border-white/10 space-y-4">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-wrap items-start justify-between gap-3">
                   <span className="text-xs font-black text-[#ffd166]">{t('gl.questionN')} {qIdx + 1}</span>
                   {hasAnswered && (
                     <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${isCorrect ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300'}`}>
