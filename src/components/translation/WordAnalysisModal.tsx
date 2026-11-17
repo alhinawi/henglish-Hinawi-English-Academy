@@ -5,7 +5,7 @@ import { LessonSpeechButton } from '../LessonSpeechButton';
 // ==============================================================================
 
 import { vocabularyCollectionLabel } from '../../services/vocabularyCollectionLabel';
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { WordAnalysisDetail, VocabularyCollection } from '../../types/translation';
 import { playSound } from '../../utils/audio';
@@ -40,6 +40,31 @@ const OpenWordAnalysisModal: React.FC<WordAnalysisModalProps & { word: WordAnaly
   const [personalNotes, setPersonalNotes] = useState<string>('');
   const [saveResult, setSaveResult] = useState<'saved' | 'review-failed' | 'failed' | null>(null);
   const savedSuccess = saveResult === 'saved';
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
+  useEffect(() => {
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const dialog = dialogRef.current;
+    const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
+      'button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), a[href], [tabindex="0"]'
+    ) ?? []).filter(el => el.getClientRects().length > 0);
+    (focusable()[0] || dialog)?.focus();
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); closeRef.current(); return; }
+      if (event.key !== 'Tab') return;
+      const items = focusable(), first = items[0], last = items[items.length - 1];
+      if (!first) { event.preventDefault(); dialog?.focus(); return; }
+      if (!dialog?.contains(document.activeElement) || event.shiftKey && document.activeElement === first) {
+        event.preventDefault(); (event.shiftKey ? last : first).focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault(); first.focus();
+      }
+    };
+    document.addEventListener('keydown', onKey);
+    return () => { document.removeEventListener('keydown', onKey); if (opener?.isConnected) opener.focus(); };
+  }, []);
+
 
 
 
@@ -51,7 +76,7 @@ const OpenWordAnalysisModal: React.FC<WordAnalysisModalProps & { word: WordAnaly
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-in fade-in duration-200">
-      <div role="dialog" aria-modal="true" aria-label={t('wam.title')} className="relative w-full max-w-lg bg-[#0e0c26] border border-white/20 rounded-3xl shadow-2xl overflow-hidden text-right">
+      <div ref={dialogRef} tabIndex={-1} role="dialog" aria-modal="true" aria-label={t('wam.title')} className="relative w-full max-w-lg bg-[#0e0c26] border border-white/20 rounded-3xl shadow-2xl overflow-hidden text-right">
         {/* Modal Header */}
         <div className="flex items-center justify-between p-5 bg-gradient-to-r from-white/10 to-transparent border-b border-white/10">
           <button
