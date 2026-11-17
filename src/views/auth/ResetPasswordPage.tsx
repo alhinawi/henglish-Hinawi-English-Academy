@@ -1,3 +1,4 @@
+import { useFormRequest } from '../../hooks/useFormRequest';
 import React, { useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { useAuth } from '../../context/AuthContext';
@@ -18,6 +19,7 @@ interface ResetPasswordPageProps {
 
 export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate }) => {
   const { t, dir } = useLanguage();
+  const { beginRequest, redirectAfter } = useFormRequest();
   const { resetPassword } = useAuth();
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -43,17 +45,17 @@ export const ResetPasswordPage: React.FC<ResetPasswordPageProps> = ({ onNavigate
       return;
     }
 
+    const isCurrent = beginRequest();
     setIsSubmitting(true);
     const res = await resetPassword(password);
+    if (!isCurrent()) return;
     setIsSubmitting(false);
 
     if (res.success) {
       playSound('correct');
       fireCelebration();
       setFeedback({ type: 'success', text: t('rp.success') });
-      setTimeout(() => {
-        onNavigate('login');
-      }, 1500);
+      redirectAfter(isCurrent, () => onNavigate('login'));
     } else {
       playSound('wrong');
       setFeedback({ type: 'error', text: res.error === 'auth.passwordUpdateUnavailable' ? t('auth.passwordUpdateUnavailable') : res.error || t('rp.failed') });
