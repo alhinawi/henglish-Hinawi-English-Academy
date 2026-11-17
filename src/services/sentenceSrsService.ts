@@ -269,15 +269,22 @@ function getDueSentencesIds(): string[] {
     .map(r => r.sentenceId);
 }
 
+// Flag changes write only their own fresh owner list. A failed save must not
+// change the cache or replace a damaged record (or any unrelated learning data).
+function toggleSavedFlag(base: string, sentenceId: string): Set<string> {
+  const raw = readOwnerValue(base);
+  const parsed: unknown = raw === null ? [] : JSON.parse(raw);
+  if (!Array.isArray(parsed) || parsed.some(id => typeof id !== 'string')) throw new Error('Saved sentence flags are unreadable');
+  const next = new Set<string>(parsed);
+  if (next.has(sentenceId)) next.delete(sentenceId); else next.add(sentenceId);
+  localStorage.setItem(mediaStorageKey(base, learnerId), JSON.stringify([...next]));
+  return next;
+}
+
 // --- FAVORITES ---
 function toggleFavoriteSentence(sentenceId: string): boolean {
   initStorage();
-  if (favoriteIds.has(sentenceId)) {
-    favoriteIds.delete(sentenceId);
-  } else {
-    favoriteIds.add(sentenceId);
-  }
-  persistAll();
+  favoriteIds = toggleSavedFlag(STORAGE_KEY_FAVORITES, sentenceId);
   return favoriteIds.has(sentenceId);
 }
 
@@ -294,12 +301,7 @@ function getFavoriteSentenceIds(): string[] {
 // --- DIFFICULT SENTENCES ---
 function toggleDifficultSentence(sentenceId: string): boolean {
   initStorage();
-  if (difficultIds.has(sentenceId)) {
-    difficultIds.delete(sentenceId);
-  } else {
-    difficultIds.add(sentenceId);
-  }
-  persistAll();
+  difficultIds = toggleSavedFlag(STORAGE_KEY_DIFFICULT, sentenceId);
   return difficultIds.has(sentenceId);
 }
 
