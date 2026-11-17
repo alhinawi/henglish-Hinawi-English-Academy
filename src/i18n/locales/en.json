@@ -2898,5 +2898,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "The sentence library could not load. This is a loading error, not an empty search. Try again."
+  "sl.loadError": "The sentence library could not load. This is a loading error, not an empty search. Try again.",
+  "dt.errNoPdfText": "This PDF has no selectable text and may contain scanned pages. Upload a PDF with selectable text or paste the text into a TXT file."
 }

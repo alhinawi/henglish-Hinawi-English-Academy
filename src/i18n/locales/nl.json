@@ -2101,5 +2101,6 @@
   "ml.streakNote": "Consecutive days recorded in your learning activity.",
   "ml.levelNote": "Your profile level and target are not a placement-test result.",
   "ml.reviewNeeded": "Review the answers and try again",
-  "sl.loadError": "De zinnenbibliotheek kon niet worden geladen. Dit is een laadfout, geen zoekopdracht zonder resultaten. Probeer het opnieuw."
+  "sl.loadError": "De zinnenbibliotheek kon niet worden geladen. Dit is een laadfout, geen zoekopdracht zonder resultaten. Probeer het opnieuw.",
+  "dt.errNoPdfText": "Deze PDF heeft geen selecteerbare tekst en bevat mogelijk gescande pagina’s. Upload een PDF met selecteerbare tekst of plak de tekst in een TXT-bestand."
 }
