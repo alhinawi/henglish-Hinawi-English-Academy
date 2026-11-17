@@ -186,6 +186,9 @@ export function useProgress(activeUserId?: string) {
     }));
   };
 
+  const latestProgressRef = useRef({ key: storageKey, value: progress });
+  useEffect(() => { latestProgressRef.current = { key: storageKey, value: progress }; }, [progress, storageKey]);
+
   // Notifications state
   const [notifications, setNotifications] = useState<AppNotification[]>(() => {
     if (typeof window === "undefined") return DEFAULT_NOTIFICATIONS;
@@ -288,7 +291,7 @@ export function useProgress(activeUserId?: string) {
         });
       } else {
         // No remote blob yet (account created before sync existed): upload local.
-        try { await apiPutProgress(token, progress); } catch { /* ignore */ }
+        try { await apiPutProgress(token, latestProgressRef.current.value); } catch { /* ignore */ }
       }
       if (!cancelled) apiHydratedRef.current = activeUserId;
     })();
@@ -332,7 +335,7 @@ export function useProgress(activeUserId?: string) {
         }));
       } else if (isMounted) {
         // Only this account's local progress may seed its remote record.
-        await migrateLocalProgressToSupabase(activeUserId, progress);
+        await migrateLocalProgressToSupabase(activeUserId, latestProgressRef.current.value);
       }
       if (isMounted) dbHydratedRef.current = activeUserId;
     }
