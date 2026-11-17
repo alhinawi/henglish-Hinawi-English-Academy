@@ -374,7 +374,12 @@ export async function signInUser(
 }
 
 export async function verifyEmailOtp(email: string, token: string): Promise<{ success: boolean; error?: string }> {
+  const owner = getSavedAuthSession();
+  const requestedEmail = email.trim().toLowerCase();
   if (supabase) {
+    if (!owner.isLoggedIn || owner.user.email?.trim().toLowerCase() !== requestedEmail) {
+      return { success: false, error: 'auth.verificationSessionChanged' };
+    }
     try {
       const { error } = await supabase.auth.verifyOtp({
         email: email.trim().toLowerCase(),
@@ -383,12 +388,13 @@ export async function verifyEmailOtp(email: string, token: string): Promise<{ su
       });
       if (error) return { success: false, error: normalizeAuthError(error) };
 
-      // Update local session state
+      // Never apply an earlier verification to a different current account.
       const current = getSavedAuthSession();
-      if (current.isLoggedIn) {
-        current.isEmailVerified = true;
-        saveAuthSession(current);
+      if (!current.isLoggedIn || current.user.id !== owner.user.id ||
+          current.user.email?.trim().toLowerCase() !== requestedEmail) {
+        return { success: false, error: 'auth.verificationSessionChanged' };
       }
+      saveAuthSession({ ...current, isEmailVerified: true });
       return { success: true };
     } catch (err: unknown) {
       return { success: false, error: normalizeAuthError(err) };
