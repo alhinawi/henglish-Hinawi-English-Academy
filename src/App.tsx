@@ -589,7 +589,7 @@ export const App: React.FC<{ initialRoute?: PageRoute }> = ({ initialRoute }) =>
 
                 {/* 20b. Top External Resources Directory */}
                 {currentRoute === 'sources' && (
-                  <SourcesPage />
+                  <SourcesPage key={authUser?.id || 'guest'} learnerId={authUser?.id} />
                 )}
 
                 {/* 21. About Academy & Methodology */}
