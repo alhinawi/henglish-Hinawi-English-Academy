@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { PageRoute } from '../types';
 import { 
   REAL_LIFE_SCENARIOS, 
@@ -9,7 +9,7 @@ import {
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
 import { Interactive3DWorld } from '../components/Interactive3DWorld';
-import { playSound, speakEnglish, fireCelebration } from '../utils/audio';
+import { playSound, speakEnglish, fireCelebration, stopSpeech } from '../utils/audio';
 import {
   Plane,
   UtensilsCrossed,
@@ -45,7 +45,8 @@ const SCENARIO_ICONS: Record<string, React.ComponentType<{ className?: string }>
 };
 
 export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavigate }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
+  useEffect(() => () => { stopSpeech(); }, []);
   const appText = useAppTextMap('realLifeSimulationsData');
   const [selectedScenarioId, setSelectedScenarioId] = useState<string | null>(() => {
     try {
@@ -73,6 +74,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   });
 
   const resetSimulationState = () => {
+    stopSpeech();
     setCurrentTurnIdx(0);
     setSelectedOption(null);
     setTotalScore(0);
@@ -108,7 +110,8 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   };
 
   const handleNextTurn = () => {
-    if (!scenario) return;
+    if (!scenario || !selectedOption) return;
+    stopSpeech();
     playSound('click');
     if (currentTurnIdx < scenario.turns.length - 1) {
       setCurrentTurnIdx(prev => prev + 1);
@@ -132,7 +135,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   /* ============ LIST SCREEN: situations index ============ */
   if (!scenario) {
     return (
-      <div className="space-y-10 pb-16 text-right">
+      <div className="space-y-10 pb-16 text-start" dir={dir}>
 
         {/* 1. ACADEMY HERO */}
         <section className="relative rounded-3xl overflow-hidden border border-white/10 p-6 sm:p-12 bg-linear-to-br from-[#121128] via-[#171632] to-[#0c0b20] shadow-2xl">
@@ -194,6 +197,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             ].map(cat => (
               <button
                 key={cat.id}
+                aria-pressed={activeCategory === cat.id}
                 onClick={() => {
                   playSound('click');
                   setActiveCategory(cat.id);
@@ -215,7 +219,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               <button
                 key={sc.id}
                 onClick={() => handleSelectScenario(sc.id)}
-                className="p-5 rounded-2xl border text-right transition-colors cursor-pointer flex flex-col justify-between space-y-3 glass-panel border-white/10 hover:border-[#ffd166]/60 hover:bg-white/10"
+                className="p-5 rounded-2xl border text-start transition-colors cursor-pointer flex flex-col justify-between space-y-3 glass-panel border-white/10 hover:border-[#ffd166]/60 hover:bg-white/10"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
@@ -230,7 +234,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
                 <div className="text-[11px] text-[#41e7ff] font-semibold flex items-center justify-between pt-2 border-t border-white/10">
                   <span>{sc.turns.length} {t('rle.stops')}</span>
-                  <span className="text-[#c4ff55]">+{sc.rewardXp} XP</span>
+
                 </div>
               </button>
             ))}
@@ -248,7 +252,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   );
 
   return (
-    <div className="space-y-6 pb-16 text-right max-w-3xl mx-auto">
+    <div className="space-y-6 pb-16 text-start max-w-3xl mx-auto" dir={dir}>
 
       {/* Focused top bar: back to list + progress */}
       <div className="sticky top-0 z-30 -mx-2 px-2 py-3 bg-[#0c0b20]/95 backdrop-blur-md border-b border-white/10">
@@ -269,7 +273,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
 
           <div className="shrink-0 text-[11px] font-bold text-[#c4ff55] bg-black/50 px-3 py-1.5 rounded-xl border border-white/10 font-mono" dir="ltr">
-            {totalScore} XP
+            {totalScore} {t('rle.scoreUnit')}
           </div>
         </div>
 
@@ -389,7 +393,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                       </button>
 
                       {isChosen && (
-                        <div className={`p-3 rounded-xl text-xs ${opt.isOptimal ? 'bg-emerald-500/10 text-emerald-300' : 'bg-amber-500/10 text-amber-300'}`}>
+                        <div role="status" className={`p-3 rounded-xl text-xs ${opt.isOptimal ? 'bg-emerald-500/10 text-emerald-300' : 'bg-amber-500/10 text-amber-300'}`}>
                           {opt.feedbackAr}
                         </div>
                       )}
@@ -427,7 +431,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-3xl sm:text-4xl font-black text-white">{t('rle.donePre')} {txText(appText, scenario.titleAr)} {t('rle.donePost')}</h2>
+            <h2 className="text-3xl sm:text-4xl font-black text-white [overflow-wrap:anywhere]">{t('rle.donePre')} {txText(appText, scenario.titleAr)} {t('rle.donePost')}</h2>
             <p className="text-xs sm:text-sm text-[#dedbf4]">
               {t('rle.doneBody')}
             </p>
@@ -435,7 +439,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
           <div className="p-6 rounded-2xl bg-black/40 border border-white/10 max-w-md mx-auto space-y-2">
             <div className="text-xs text-[#b9b6d5]">{t('rle.totalReward')}:</div>
-            <div className="text-4xl font-black text-[#ffd166] font-mono" dir="ltr">+{scenario.rewardXp + totalScore} XP</div>
+            <div className="text-4xl font-black text-[#ffd166] font-mono" dir="ltr">{totalScore} {t('rle.scoreUnit')}</div>
             <div className="text-xs text-[#c4ff55]">{t('rle.recorded')}</div>
           </div>
 
@@ -488,6 +492,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   speakEnglish(vocab.en);
                 }}
                 className="p-2 rounded-lg bg-white/10 hover:bg-[#41e7ff] text-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer"
+                aria-label={`${t('rle.listenPronunciation')}: ${vocab.en}`}
                 title={t('rle.listenPronunciation')}
               >
                 <Volume2 className="w-4 h-4" />
