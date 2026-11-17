@@ -36,7 +36,7 @@ export const ResourcesPage: React.FC = () => {
   };
 
   return (
-    <div dir={dir} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+    <div id="resources-page" dir={dir} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
       
       {/* Header */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -128,7 +128,7 @@ export const ResourcesPage: React.FC = () => {
 
       {/* Live Preview & Printable Document Area */}
       {previewResource && (
-        <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 space-y-4">
+        <section id="resource-print-sheet" className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/15 space-y-4">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 justify-between border-b border-white/10 pb-4">
             <div>
               <span className="text-xs text-[#41e7ff] font-black uppercase tracking-wider block">
