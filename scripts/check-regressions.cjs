@@ -9,6 +9,7 @@ const checks = [
   'check-ocr-lifecycle.cjs',
   'check-voice-translation-speech.cjs',
   'check-translation-history-writes.cjs',
+  'check-arcade-owned-speech.cjs',
   'check-assessment-speech-controls.cjs',
   'check-practice-speech-controls.cjs',
   'check-sentence-copy-lifecycle.cjs',
