@@ -406,6 +406,8 @@ const ExamDetailSheet: React.FC<{
 
   useEffect(() => {
     const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     const dialog = dialogRef.current;
     const focusable = () => Array.from(dialog?.querySelectorAll<HTMLElement>(
       'button:not([disabled]):not([tabindex="-1"]), a[href], input:not([disabled]), [tabindex="0"]'
@@ -424,6 +426,7 @@ const ExamDetailSheet: React.FC<{
     document.addEventListener('keydown', trap);
     return () => {
       document.removeEventListener('keydown', trap);
+      document.body.style.overflow = previousOverflow;
       if (opener?.isConnected) opener.focus();
     };
   }, []);
