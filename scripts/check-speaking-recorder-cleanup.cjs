@@ -29,8 +29,17 @@ function fixture(failure) {
   await c.exports.start();
   assert.equal(stops(), 0);assert.equal(c.recording, true);assert.equal(c.starting, false);
   c.URL.revokeObjectURL = () => {};c.URL.createObjectURL = () => 'recorded-clip';
+  c.recorder.current.ondataavailable({data:new Blob(['audio'])});
   c.recorder.current.onstop();
   assert.equal(stops(), 1);assert.equal(c.url, 'recorded-clip');assert.equal(c.recording, false);
+  for(const emptyChunk of [false,true]) {
+    const empty=fixture('none');await empty.c.exports.start();const r=empty.c.recorder.current;
+    if(emptyChunk)r.ondataavailable({data:new Blob([])});
+    r.onstop();assert.equal(empty.stops(),1);assert.equal(empty.c.objectUrl.current,'previous-clip');assert.equal(empty.c.url,undefined);assert.equal(empty.c.error,'sp.rec.micError');assert.equal(empty.c.recording,false);assert.equal(empty.c.recorder.current,null);assert.equal(empty.c.stream.current,null);assert.equal(empty.c.timer.current,null);
+    await empty.c.exports.start();assert.equal(empty.c.error,'');assert.equal(empty.c.recording,true);
+  }
+  const unmounted=fixture('none');await unmounted.c.exports.start();const r=unmounted.c.recorder.current;unmounted.c.mounted.current=false;r.onstop();assert.equal(unmounted.stops(),1);assert.equal(unmounted.c.url,undefined);assert.equal(unmounted.c.error,'');
+  console.log('Empty recordings never replace/revoke a usable clip;release tracks/refs/timer,announce failure,retry cleanly and ignore late unmounted stop: PASS');
   const late = fixture('none');late.c.mounted.current = false;await late.c.exports.start();
   assert.equal(late.stops(), 1);assert.equal(late.c.recorder.current, null);
   for (const mounted of [true,false]) {
