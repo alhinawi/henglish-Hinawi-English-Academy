@@ -55,7 +55,7 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
   compact = false,
   onLearningChange,
 }) => {
-  const { t } = useLanguage();
+  const { t, lang, dir } = useLanguage();
   const [showFusha, setShowFusha] = useState(false);
   const [showDetails, setShowDetails] = useState(!compact);
   const [copied, setCopied] = useState(false);
@@ -240,21 +240,21 @@ export const SentenceCard: React.FC<SentenceCardProps> = ({
           <div className="flex items-center justify-between text-xs text-white/50">
             <span className="font-bold flex items-center gap-1.5 text-purple-300">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>{t('sc.meaningEgyptian')}</span>
+              <span>{lang === 'en' ? 'Communicative purpose' : t('sc.meaningEgyptian')}</span>
             </span>
-            <button
+            {lang !== 'en' && <button
               onClick={() => setShowFusha(!showFusha)}
               className="text-xs text-amber-300/80 hover:text-amber-200 underline cursor-pointer"
             >
               {showFusha ? t('sc.hideFusha') : t('sc.showFusha')}
-            </button>
+            </button>}
           </div>
-          <p className="text-base sm:text-lg font-bold text-white text-right leading-relaxed">
-            {sentence.arabicEg}
+          <p dir={dir} className="text-base sm:text-lg font-bold text-white text-start leading-relaxed">
+            {lang === 'en' ? sentence.purpose : sentence.arabicEg}
           </p>
 
           {/* Standard Arabic (Fusha) Toggle */}
-          {showFusha && (
+          {showFusha && lang !== 'en' && (
             <div className="pt-2 border-t border-white/5 text-right">
               <span className="text-[11px] text-amber-300 block mb-0.5 font-bold">{t('sc.fusha')}</span>
               <p className="text-sm font-semibold text-white/80">{sentence.arabicFusha}</p>

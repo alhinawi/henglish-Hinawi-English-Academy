@@ -11,6 +11,7 @@
 
 import { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
+import { ENGLISH_APP_TEXT_MAPS } from '../data/englishAppTextMaps';
 
 export interface ContentTx {
   /** translated meaning (source: meaningAr) */
@@ -91,9 +92,15 @@ export function useContentMap(bankPath: string): ContentMap | null {
 
 export type AppTextMap = Record<string, string>;
 
+/** English meaning for legacy entries without a separate English definition. */
+export function englishSourceText(module: string, source: string): string {
+  return ENGLISH_APP_TEXT_MAPS[module]?.[source] ?? source;
+}
+
 const appTextCache = new Map<string, Promise<AppTextMap | null>>();
 
 export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap | null> {
+  if (lang === 'en') return Promise.resolve(ENGLISH_APP_TEXT_MAPS[module] ?? null);
   const key = `${module}/${lang}`;
   if (!appTextCache.has(key)) {
     appTextCache.set(
@@ -117,7 +124,7 @@ export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap
 export function useAppTextMap(module: string): AppTextMap | null {
   const { lang } = useLanguage();
   const key = `${module}/${lang}`;
-  const needsOverlay = needsContentTranslation(lang) || (lang === 'en' && ['allGrammarRules', 'speakingAcademyData', 'coursesData'].includes(module));
+  const needsOverlay = needsContentTranslation(lang);
   const [loaded, setLoaded] = useState<{ key: string; map: AppTextMap | null } | null>(null);
   useEffect(() => {
     let cancelled = false;
@@ -132,7 +139,7 @@ export function useAppTextMap(module: string): AppTextMap | null {
       cancelled = true;
     };
   }, [module, lang, key]);
-  return needsOverlay && loaded?.key === key ? loaded.map : null;
+  return lang === 'en' ? ENGLISH_APP_TEXT_MAPS[module] ?? null : needsOverlay && loaded?.key === key ? loaded.map : null;
 }
 
 /** Translate an Arabic source string through the module overlay. */

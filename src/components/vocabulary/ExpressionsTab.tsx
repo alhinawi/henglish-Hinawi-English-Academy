@@ -35,7 +35,7 @@ const CATEGORIES: Array<{ id: string; label?: string; labelKey?: string }> = [
 ];
 
 export const ExpressionsTab: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const txMap = useContentMap('expressions');
   const [expressions, setExpressions] = useState<ExpressionEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -212,7 +212,7 @@ export const ExpressionsTab: React.FC = () => {
                     {item.expression}
                   </h3>
                   <p className="text-sm font-black text-[#c4ff55]">
-                    {txMeaning(txMap, item.id, item.meaningAr)}
+                    {(lang === 'en' ? item.definitionEn : txMeaning(txMap, item.id, item.meaningAr))}
                   </p>
                 </div>
 
@@ -228,7 +228,7 @@ export const ExpressionsTab: React.FC = () => {
                       "{item.exampleEn}"
                     </p>
                     <p className="text-white/60 text-[11px]">
-                      {txExample(txMap, item.id, item.exampleAr)}
+                      {(lang === 'en' ? item.exampleEn : txExample(txMap, item.id, item.exampleAr))}
                     </p>
                   </div>
                 )}
