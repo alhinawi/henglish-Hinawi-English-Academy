@@ -156,13 +156,23 @@ function freqTierFromRank(rank?: number): string {
   return 'rare';
 }
 
+async function fetchVocabularyJson(url: string): Promise<unknown> {
+  const controller = new AbortController();
+  const deadline = setTimeout(() => controller.abort(), 30000);
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } finally { clearTimeout(deadline); }
+}
+
 let ranksIndexPromise: Promise<Record<string, [number, number]>> | null = null;
 
 function loadRanksIndex(): Promise<Record<string, [number, number]>> {
   if (!ranksIndexPromise) {
-    ranksIndexPromise = fetch('/data/vocab/ranks-index.json')
-      .then(res => (res.ok ? res.json() : {}))
-      .catch(() => ({}));
+    ranksIndexPromise = fetchVocabularyJson('/data/vocab/ranks-index.json')
+      .then(data => data as Record<string, [number, number]>)
+      .catch(() => { ranksIndexPromise = null; return {}; });
   }
   return ranksIndexPromise;
 }
@@ -260,12 +270,11 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
 
   fullLoadingPromise = (async () => {
     try {
-      const [ranks, indexRes] = await Promise.all([
+      const [ranks, indexData] = await Promise.all([
         loadRanksIndex(),
-        fetch('/data/vocab/chunks-index.json'),
+        fetchVocabularyJson('/data/vocab/chunks-index.json'),
       ]);
-      if (!indexRes.ok) throw new Error(`HTTP ${indexRes.status}`);
-      const index = await indexRes.json();
+      const index = indexData as { files: string[] };
       if (!index || !Array.isArray(index.files) || index.files.length === 0 ||
         index.files.some((name: unknown) => typeof name !== 'string' || !/^[a-zA-Z0-9_-]+\.json$/.test(name)) ||
         new Set(index.files).size !== index.files.length) throw new Error('Invalid vocabulary chunk index');
@@ -277,9 +286,7 @@ export async function loadFullVocabulary(): Promise<LexicalEntry[]> {
         const batch = index.files.slice(i, i + BATCH);
         const parts: VocabChunkEntry[][] = await Promise.all(
           batch.map(async (name: string) => {
-            const res = await fetch(`/data/vocab/chunks/${name}`);
-            if (!res.ok) throw new Error(`HTTP ${res.status} for ${name}`);
-            const data: unknown = await res.json();
+            const data = await fetchVocabularyJson(`/data/vocab/chunks/${name}`);
             if (!Array.isArray(data) || data.length === 0 || data.some(item => !item ||
               ['id', 'word', 'ipa', 'partOfSpeech', 'meaningAr', 'level', 'category', 'exampleEn', 'exampleAr']
                 .some(field => typeof item[field] !== 'string') || !item.id.trim() || !item.word.trim() ||
@@ -316,9 +323,7 @@ export async function loadExpressions(): Promise<ExpressionEntry[]> {
 
   expressionsLoadingPromise = (async () => {
     try {
-      const res = await fetch('/data/expressions.json');
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data: unknown = await res.json();
+      const data = await fetchVocabularyJson('/data/expressions.json');
       if (!Array.isArray(data) || data.some(item => !item ||
         ['id', 'expression', 'meaningAr', 'definitionEn', 'exampleEn', 'exampleAr', 'category', 'cefr']
           .some(field => typeof item[field] !== 'string'))) throw new Error('Invalid expressions data');
@@ -341,9 +346,7 @@ export async function loadExpressions(): Promise<ExpressionEntry[]> {
 export async function loadVocabularyManifest(): Promise<VocabularyManifest | null> {
   if (cachedManifest) return cachedManifest;
   try {
-    const res = await fetch('/data/vocabulary-manifest.json');
-    if (!res.ok) return null;
-    cachedManifest = await res.json();
+    cachedManifest = await fetchVocabularyJson('/data/vocabulary-manifest.json') as VocabularyManifest;
     return cachedManifest;
   } catch {
     return null;

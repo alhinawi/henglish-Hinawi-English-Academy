@@ -3,7 +3,7 @@ const js=ts.transpileModule(fs.readFileSync('src/services/vocabularyService.ts',
 const row={id:'test',expression:'test',meaningAr:'test',definitionEn:'',exampleEn:'',exampleAr:'',category:'idiom',cefr:'A1'};
 (async()=>{
 for(const mode of ['network','http','json','object','nullrow','badfield']){
- let calls=0;const c={exports:{},console:{error(){}},require:()=>({}),fetch:async()=>{calls++;if(calls===1){if(mode==='network')throw Error();if(mode==='http')return{ok:false,status:503};return{ok:true,json:async()=>{if(mode==='json')throw Error();return mode==='object'?{}:mode==='nullrow'?[null]:[{...row,expression:1}];}};}return{ok:true,json:async()=>[row]};}};
+ let calls=0;const c={exports:{},AbortController,setTimeout,clearTimeout,console:{error(){}},require:()=>({}),fetch:async()=>{calls++;if(calls===1){if(mode==='network')throw Error();if(mode==='http')return{ok:false,status:503};return{ok:true,json:async()=>{if(mode==='json')throw Error();return mode==='object'?{}:mode==='nullrow'?[null]:[{...row,expression:1}];}};}return{ok:true,json:async()=>[row]};}};
  vm.runInNewContext(js,c);await assert.rejects(c.exports.loadExpressions());const [a,b]=await Promise.all([c.exports.loadExpressions(),c.exports.loadExpressions()]);assert.equal(a.length,1);assert.equal(a,b);assert.equal(calls,2);await c.exports.loadExpressions();assert.equal(calls,2);
 }
 const view=fs.readFileSync('src/components/vocabulary/ExpressionsTab.tsx','utf8');assert.ok(view.includes('}, [loadAttempt]);'));assert.ok(view.includes('setLoadAttempt(n => n + 1)'));assert.ok(view.indexOf('{loadError ? (')<view.indexOf(') : pagedItems.length === 0 ? ('));
