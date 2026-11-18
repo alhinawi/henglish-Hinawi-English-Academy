@@ -2914,5 +2914,8 @@
   "va.verbSearch": "Verbformen, Bedeutungen oder englische Beispiele suchen",
   "va.verbEmpty": "Keine passenden Verben. Probiere eine andere Form oder leere die Suche.",
   "wa.helperNotice": "Maximal 1.200 Zeichen. Keine persönlichen Daten eingeben. Der Text wird an den Hilfsdienst gesendet und teilt dessen Limits: täglich 6 Fragen pro Lernendem und 30 für die gesamte Website. Hinweise können falsch sein.",
-  "wa.feedback.tooLong": "Der Entwurf hat mehr als 1.200 Zeichen. Wähle einen kürzeren Absatz zur Prüfung. Der ursprüngliche Text bleibt unverändert."
+  "wa.feedback.tooLong": "Der Entwurf hat mehr als 1.200 Zeichen. Wähle einen kürzeren Absatz zur Prüfung. Der ursprüngliche Text bleibt unverändert.",
+  "mvt.search": "Gespeicherte Wörter oder Bedeutungen suchen",
+  "mvt.noMatches": "Keine gespeicherten Wörter passen zur Suche und zum Filter. Deine Sammlung ist weiterhin vorhanden.",
+  "mvt.clearFilters": "Suche löschen und alle Wörter zeigen"
 }
