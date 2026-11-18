@@ -28,7 +28,7 @@ interface WritingAcademyPageProps {
 }
 
 export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNavigate, onCompleteActivity }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [activeTemplate, setActiveTemplate] = useState<'formal_email' | 'job_application' | 'essay' | 'complaint' | 'university'>('formal_email');
   const [userInput, setUserInput] = useState('');
   const [submissionFeedback, setSubmissionFeedback] = useState<string | null>(null);
@@ -147,6 +147,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
     try {
       const data = await sendAiTutorMessage({
+        language: lang === 'en' ? 'en' : 'ar',
         signal: controller.signal,
         message: userInput.trim(),
         mode: 'writing-assistant',
