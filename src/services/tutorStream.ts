@@ -41,6 +41,9 @@ export async function readTutorStream(
       metadata = { ...metadata, ...parsed };
     }
   };
+  // Abort must wake a pending read too, not only be checked between chunks.
+  const cancelPendingRead = () => { void reader.cancel().catch(() => {}); };
+  signal?.addEventListener('abort', cancelPendingRead, { once: true });
   try {
     while (true) {
       if (signal?.aborted) throw new DOMException('Request aborted', 'AbortError');
@@ -58,6 +61,7 @@ export async function readTutorStream(
       }
     }
   } finally {
+    signal?.removeEventListener('abort', cancelPendingRead);
     reader.releaseLock();
   }
 }
