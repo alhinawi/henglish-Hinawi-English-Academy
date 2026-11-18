@@ -1,3 +1,4 @@
+import { useMicrosoftVoice } from '../hooks/useMicrosoftVoice';
 import React, { useEffect, useRef, useState } from 'react';
 import { Square, Volume2 } from 'lucide-react';
 import { getVoiceSettings, speakEnglish, speakMultilingualText, stopSpeech, subscribeSpeechState, type SpeechSpeed, type SpeakOptions } from '../utils/audio';
@@ -5,6 +6,8 @@ import { useLanguage } from '../i18n/LanguageContext';
 
 export function LessonSpeechButton({ text, label, className, speed, iconOnly = false, language = 'en', disabled = false, autoPlay = false }: { text: string; label: string; className: string; speed?: SpeechSpeed; iconOnly?: boolean; language?: string; disabled?: boolean; autoPlay?: boolean }) {
   const { t } = useLanguage();
+  const browserVoiceAvailable = useMicrosoftVoice(language);
+  const browserOnly = !/^en(?:[-_]|$)/i.test(language);
   const [active, setActive] = useState(false);
   const [error, setError] = useState('');
   const ownsSpeech = useRef(false);
@@ -38,7 +41,7 @@ export function LessonSpeechButton({ text, label, className, speed, iconOnly = f
   // Mount a keyed control for a new result to preserve automatic playback.
   useEffect(() => { if (autoPlay && text.trim() && !disabled) toggle(); }, [autoPlay, text, language, disabled]);
   return <span className="inline-flex max-w-full flex-col items-start gap-2">
-    <button type="button" disabled={disabled} className={className} onClick={toggle} aria-pressed={active} aria-label={active ? t('listen.stopAudio') : label} title={active ? t('listen.stopAudio') : label}>
+    <button type="button" disabled={disabled || (!browserVoiceAvailable && (browserOnly || !!error))} className={className + ' disabled:opacity-40 disabled:cursor-not-allowed'} onClick={toggle} aria-pressed={active} aria-label={active ? t('listen.stopAudio') : label} title={active ? t('listen.stopAudio') : label}>
       {active ? <Square size={16} className="inline" aria-hidden="true" /> : speed && iconOnly ? <span className="text-[9px]">{speed}x</span> : <Volume2 size={16} className="inline" aria-hidden="true" />} {!iconOnly && (active ? t('listen.stopAudio') : label)}
     </button>
     {error && <span role="status" className="max-w-40 text-xs leading-6 text-amber-200">{error}</span>}
