@@ -146,6 +146,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
                     : 'bg-[#ff4f9a]'
                   : 'bg-white/15 hover:bg-white/30'
               }`}
+              aria-current={isCurrent ? 'step' : undefined}
               title={`${t('qe.goToQuestion')} ${idx + 1}`}
             />
           );
