@@ -95,6 +95,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
               playSound('click');
               setFilterLevel(lvl);
             }}
+            aria-pressed={filterLevel === lvl}
             className={`px-4 py-2 rounded-xl text-xs font-bold shrink-0 transition-all cursor-pointer ${
               filterLevel === lvl
                 ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] font-black shadow-md'
@@ -193,7 +194,10 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 </div>
 
                 <button
-                  className={`w-full py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center justify-center gap-2 cursor-pointer ${
+                  type="button"
+                  onClick={event => { event.stopPropagation(); handleSelectCourse(course); }}
+                  aria-label={`${course.ctaLabel ? txText(appText, course.ctaLabel) : txText(appText, COURSES_PAGE_COPY.defaultCta)}: ${txText(appText, course.title)}`}
+                  className={`focus-visible:outline-2 focus-visible:outline-[#41e7ff] w-full py-2.5 rounded-xl text-xs sm:text-sm font-black transition-all flex items-center justify-center gap-2 cursor-pointer ${
                     course.isFlagship
                       ? 'bg-linear-to-r from-[#ffd166] to-[#ff9c66] text-[#21132c] hover:brightness-110 shadow-md'
                       : 'bg-white/10 hover:bg-white/20 text-white'
