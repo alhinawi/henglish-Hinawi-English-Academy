@@ -135,6 +135,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
     const version = analysisVersion.current;
     const controller = new AbortController();
     analysisController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 60000);
     const isCurrent = () => version === analysisVersion.current;
     setIsAnalyzing(true);
 
@@ -173,6 +174,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
       }
 
     } finally {
+      clearTimeout(deadline);
       if (isCurrent()) {
         analysisController.current = null;
         setIsAnalyzing(false);
