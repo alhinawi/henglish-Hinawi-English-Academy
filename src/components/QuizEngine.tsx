@@ -99,8 +99,10 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
           <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-[#09091a] border border-white/10">
             <Award className="w-4 h-4 text-[#ffd166]" />
             <span className="text-xs text-[#b9b6d5] font-bold">{t('qe.score')}</span>
-            <span className="text-sm font-black text-[#ffd166]">{score}</span>
-            <span className="text-xs text-[#b9b6d5]">/ {questions.length}</span>
+            <span dir="ltr" className="inline-flex items-baseline gap-1.5 tabular-nums">
+              <span className="text-sm font-black text-[#ffd166]">{score}</span>
+              <span className="text-xs text-[#b9b6d5]">/ {questions.length}</span>
+            </span>
           </div>
 
           <button
