@@ -4,6 +4,7 @@ import { Mic, Square, RotateCcw, CheckCircle2 } from 'lucide-react';
 import type { SpeakingLesson } from '../data/speakingAcademyData';
 import { stopSpeech } from '../utils/audio';
 import { useLanguage } from '../i18n/LanguageContext';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 
 export function SpeakingRecorder({ prompt, description }: { prompt: string; description?: string }) {
   const { t } = useLanguage();
@@ -99,6 +100,7 @@ const clean = (s: string) => s.trim().toLowerCase().replace(/[.,!?;:]/g, '').rep
 
 export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesson: SpeakingLesson; completed: boolean; onComplete: () => void}) {
   const { t } = useLanguage();
+  const appText = useAppTextMap('speakingAcademyData');
   const [answers, setAnswers] = useState<Record<string, boolean>>({});
   const [choice, setChoice] = useState<number | null>(null);
   const [gap, setGap] = useState('');
@@ -119,13 +121,13 @@ export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesso
       <p className="text-sm leading-7 text-slate-400">{t('sp.step1.note')}</p>
       {lesson.dialogue.map((line, i) => <div key={i} className={`rounded-2xl p-4 ${line.role === 'B' ? 'bg-pink-300/10 border border-pink-300/20' : 'bg-white/5'}`}>
         <div className="flex flex-wrap items-start justify-between gap-3"><span className="text-xs text-pink-200">{line.role === 'A' ? t('sp.roleA') : t('sp.roleB')}</span><LessonSpeechButton key={line.en} text={line.en} label={`${t('sp.listenLineAria')} ${i+1}`} iconOnly className="p-3 rounded-xl bg-white/5" /></div>
-        <p dir="ltr" className="text-left text-base leading-8 font-medium">{line.en}</p>{showAr && line.ar && <p dir="auto" className="text-sm text-slate-300 leading-7 mt-2">{line.ar}</p>}
+        <p dir="ltr" className="text-left text-base leading-8 font-medium">{line.en}</p>{showAr && line.ar && <p dir="auto" className="text-sm text-slate-300 leading-7 mt-2">{txText(appText, line.ar)}</p>}
       </div>)}
     </section>
     <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">
       <h3 className="font-bold text-xl">2. {t('sp.step2')}</h3><p dir="ltr" className="text-left leading-8">{lesson.dialogue[0].en}</p>
       {[1, 0, 2].map(i => <button key={i} onClick={() => {setChoice(i); setAnswers(p => ({...p, choice: i === lesson.answer}));}} className={`w-full text-left rounded-xl border p-4 min-h-14 ${choice === i ? i === lesson.answer ? 'border-emerald-300 bg-emerald-300/10' : 'border-rose-300 bg-rose-300/10' : 'border-white/10 bg-white/5'}`} dir="ltr">{lesson.options[i]}</button>)}
-      {choice !== null && <p role="status" className="text-sm leading-7 text-cyan-100">{choice === lesson.answer ? `${t('sp.step2.correct')} ${lesson.dialogue[1].ar}` : `${t('sp.step2.retry')} ${lesson.tip}`}</p>}
+      {choice !== null && <p role="status" className="text-sm leading-7 text-cyan-100">{choice === lesson.answer ? `${t('sp.step2.correct')} ${txText(appText, lesson.dialogue[1].ar)}` : `${t('sp.step2.retry')} ${txText(appText, lesson.tip)}`}</p>}
     </section>
     <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">
       <h3 className="font-bold text-xl">3. {t('sp.step3')}</h3><p dir="ltr" className="text-left leading-8">{lesson.gapPrompt}</p>

@@ -182,7 +182,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
                   {line.en}
                 </p>
                 <p className="text-xs text-[#b9b6d5]">
-                  {line.ar}
+                  {txText(appText, line.ar)}
                 </p>
 
                 {line.targetStructure && (
