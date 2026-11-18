@@ -1,0 +1,14 @@
+const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
+const compile=(file,c)=>{c.exports={};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/services/'+file,'utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText,c);return c.exports};
+const good={items:[{id:'test-000001',sentences:Array.from({length:10},(_,i)=>({en:'Example '+i,ar:'مثال '+i}))}]};
+(async()=>{
+ for(const [file,load,owner]of [['phraseBankService.ts','loadPhraseSentences','idioms'],['examVocabService.ts','loadExamSentences','ielts']]){
+  for(const bad of ['network','http','json',null,{}, {items:[null]}, {items:[{id:'test-000001',sentences:[]}]},{items:[{id:'test-000001',sentences:Array(10).fill({en:null,ar:'x'})}]},{items:[good.items[0],good.items[0]]}]){
+   let calls=0;const fetch=async url=>{if(url.includes('index'))return{ok:true,json:async()=>({idPrefix:'test'})};calls++;if(calls===1){if(bad==='network')throw Error('offline');if(bad==='http')return{ok:false,status:503};if(bad==='json')return{ok:true,json:async()=>{throw Error('json')}};return{ok:true,json:async()=>bad}}return{ok:true,json:async()=>good}};
+   const helper=compile('exampleSentenceBlock.ts',{fetch,AbortController,setTimeout,clearTimeout}),s=compile(file,{fetch,require:()=>helper});assert.equal(await s[load](owner,'test-000001'),null);const [a,b]=await Promise.all([s[load](owner,'test-000001'),s[load](owner,'test-000001')]);assert.equal(a.length,10);assert.equal(a,b);assert.equal(calls,2);
+  }
+  let calls=0;const fetch=async url=>url.includes('index')?{ok:true,json:async()=>({idPrefix:'test'})}:(calls++,{ok:false,status:404});const helper=compile('exampleSentenceBlock.ts',{fetch,AbortController,setTimeout,clearTimeout}),s=compile(file,{fetch,require:()=>helper});assert.equal(await s[load](owner,'test-000001'),null);assert.equal(await s[load](owner,'test-000001'),null);assert.equal(calls,1);
+ }
+ let expire,cleared=0;const helper=compile('exampleSentenceBlock.ts',{AbortController,setTimeout:fn=>(expire=fn,1),clearTimeout:()=>cleared++,fetch:async(url,{signal})=>({ok:true,json:()=>new Promise((resolve,reject)=>signal.addEventListener('abort',()=>reject(Error('deadline'))))})});const pending=helper.fetchExampleSentenceBlock('/test');await Promise.resolve();expire();await assert.rejects(pending);assert.equal(cleared,1);
+ console.log('Phrase/exam optional sentence packs:network/HTTP/JSON/schema failures fall back and retry;valid10 cached/shared;404 absence cached;stalled body timeout cleans up: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1});

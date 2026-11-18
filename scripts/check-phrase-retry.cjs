@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
 const js=ts.transpileModule(fs.readFileSync('src/services/phraseBankService.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText;
-function service(fetch){const c={exports:{},fetch};vm.runInNewContext(js,c);return c.exports;}
+function service(fetch){const c={exports:{},require:()=>({}),fetch};vm.runInNewContext(js,c);return c.exports;}
 const index={chunks:['a.json','b.json'],idPrefix:'idm'},rows=[{id:'idm-000001',phrase:'test-only'}];
 (async()=>{
  for(const failure of ['network','http','json']){
