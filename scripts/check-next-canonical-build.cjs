@@ -1,0 +1,12 @@
+const fs=require('node:fs'),assert=require('node:assert/strict');
+const p=JSON.parse(fs.readFileSync('package.json','utf8'));
+assert.equal(p.scripts.dev,'npm run dev:next');
+assert.equal(p.scripts.build,'tsc -b && npm run build:next');
+assert.equal(p.scripts['build:next'],'next build');
+assert(p.scripts['prebuild:next'].includes('tailwindcss'));
+assert.equal(p.scripts.preview,'node scripts/preview-next-export.mjs');
+assert(!/vite/.test([p.scripts.dev,p.scripts.build,p.scripts.preview].join(' ')));
+assert(/output:\s*'export'/.test(fs.readFileSync('next.config.mjs','utf8')));
+assert(fs.readFileSync('.github/workflows/quality.yml','utf8').includes('run: pnpm build'));
+assert(fs.existsSync('src/app/page.tsx') && fs.existsSync('src/app/layout.tsx'));
+console.log('Default build/dev/preview and CI use Next.js static export with Tailwind, no paid runtime: PASS');

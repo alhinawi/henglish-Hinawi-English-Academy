@@ -21,6 +21,9 @@
 
 ---
 
+## Development and production
+
+Next.js 15 static export on free Cloudflare Pages. Run `npm run dev`, `npm run build`, then `npm run preview`. Deploy `out/`. See [build and deployment notes](docs/next-production-build.md).
 ## جولة من الموقع الحالي
 
 صور مباشرة من الموقع يوم 18 نوفمبر 2026. الجولة المتحركة بتعرض لوحة البداية، الكورسات، وأكاديمية الجرامر. دي لقطات من التنقل الفعلي، مش واجهة مرسومة.
