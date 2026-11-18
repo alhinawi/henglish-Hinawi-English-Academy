@@ -8,7 +8,7 @@ const index={totalQuestions:1,chunks:['q000001-000001.json']};
  }
  let calls=0;const c={exports:{},AbortController,setTimeout,clearTimeout,fetch:async url=>{calls++;if(calls===1)throw Error('offline');return{ok:true,json:async()=>url.includes('index')?index:[item]}}};vm.runInNewContext(js,c);await assert.rejects(c.exports.loadAllQuestions());const results=await Promise.all([c.exports.loadAllQuestions(),c.exports.loadAllQuestions()]);assert.equal(results[0],results[1]);assert.equal(calls,3);
  const manifest=JSON.parse(fs.readFileSync('public/data/questions/questions-index.json'));const live={exports:{},AbortController,setTimeout,clearTimeout,fetch:async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync('public'+url))})};vm.runInNewContext(js,live);assert.equal((await live.exports.loadAllQuestions()).length,manifest.totalQuestions);
- const page=fs.readFileSync('src/components/QuestionBankPanel.tsx','utf8');for(const s of ['role="alert"','setLoadAttempt(attempt => attempt + 1)','}, [loadAttempt]);','if (mounted) setLoadError(true)'])assert(page.includes(s));console.log('Question manifest/chunk/schema/count/duplicate failures stay uncached;network retry,shared in-flight,actual catalog and mounted retry UI: PASS');
+ const page=fs.readFileSync('src/components/QuestionBankPanel.tsx','utf8');for(const s of ['role="alert"','setLoadAttempt(attempt => attempt + 1)','}, [loadAttempt, lang]);','if (mounted) setLoadError(true)'])assert(page.includes(s));console.log('Question manifest/chunk/schema/count/duplicate failures stay uncached;network retry,shared in-flight,actual catalog and mounted retry UI: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1});
 (async()=>{
  for(const stalled of ['manifest','chunk','body']){
