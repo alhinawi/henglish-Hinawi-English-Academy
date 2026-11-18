@@ -1120,13 +1120,13 @@
   "wa.copied": "Copied!",
   "wa.listen": "Listen to the template",
   "wa.goldenRules": "Golden rules for this template:",
-  "wa.lab.badge": "Smart Editor Lab",
+  "wa.lab.badge": "Writing Review Lab",
   "wa.lab.title": "Write your email or draft here",
-  "wa.lab.sub": "Try writing a message or paragraph in English, then press analyze to spot grammar patterns and connectors.",
+  "wa.lab.sub": "Write a short English paragraph for a brief review of key errors, explained in Egyptian Arabic. This is not an official score or certified CEFR assessment.",
   "wa.words": "Words",
   "wa.importTemplate": "Import the template text to edit it",
   "wa.analyzing": "Analyzing your draft...",
-  "wa.analyze": "Check and score my draft",
+  "wa.analyze": "Review my short draft",
   "wa.feedback.title": "Analysis status and notes",
   "wa.feedback.disclaimer": "Automated notes may be wrong",
   "wa.feedback.tooShort": "Too short! Write a full sentence or paragraph with a subject, verb and object.",
@@ -2912,5 +2912,7 @@
   "helper.notice": "Free English practice with short explanations in Egyptian Arabic. Replies can be wrong. Limits: 6 questions per learner and 30 for the whole site daily, resetting at 00:00 UTC.",
   "helper.privacy": "Keep questions under 1,200 characters and do not include personal details. Your question and up to four recent messages are sent to the helper service. Text-only pronunciation guidance, not an audio assessment.",
   "va.verbSearch": "Search verb forms, meanings or English examples",
-  "va.verbEmpty": "No matching verbs. Try another form or clear the search."
+  "va.verbEmpty": "No matching verbs. Try another form or clear the search.",
+  "wa.helperNotice": "Review limit: 1,200 characters. Do not include personal details. Text is sent to the helper service and shares its limits: 6 questions per learner and 30 site-wide daily. Notes can be wrong.",
+  "wa.feedback.tooLong": "This draft exceeds 1,200 characters. Choose a shorter paragraph to review; your original text is unchanged."
 }
