@@ -382,10 +382,6 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         mode: activeMode,
         userLevel: userProfile.currentLevel,
         history: currentMessages,
-        platformContext: {
-          userProfile,
-          progress,
-        },
         onChunk: (chunk: string) => {
           if (!isCurrent()) return;
           accumulatedStreamingText += chunk;
@@ -437,7 +433,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       const errMsg: AiChatMessage = {
         id: `ai-err-${Date.now()}`,
         sender: 'assistant',
-        content: unavailable ? t('ai.unavailable') : t('at.errorTemp'),
+        content: (err as { helperMessage?: string })?.helperMessage || (unavailable ? t('ai.unavailable') : t('at.errorTemp')),
         timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
@@ -488,6 +484,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             <p className="text-xs sm:text-sm text-[#dedbf4] max-w-2xl leading-relaxed">
               {Object.keys(ASSISTANTS_REGISTRY).length} {t('at.heroBody')}
             </p>
+            <p className="text-xs text-[#b9b6d5] max-w-2xl leading-relaxed">{t('helper.notice')}</p>
           </div>
 
           {/* Student Meta Card */}
@@ -788,7 +785,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       </span>
                       {!isUser && msg.provider && (
                         <span className="px-1.5 py-0.2 rounded bg-white/10 text-[9px] text-[#41e7ff] font-mono">
-                          {msg.provider}
+                          {t('at.badge')}
                         </span>
                       )}
                     </div>
@@ -910,6 +907,8 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           {/* Text Input Field */}
           <input
             type="text"
+            maxLength={1200}
+            aria-describedby="helper-input-note"
             aria-label={`${t('at.askPre')} ${t(`atm.${activeMode}.name`)}`}
             dir="auto"
             value={inputMessage}
@@ -950,6 +949,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
           </button>
         </div>
       </section>
+      <p id="helper-input-note" className="text-xs text-[#b9b6d5]">{t('helper.privacy')}</p>
 
     </div>
   );
