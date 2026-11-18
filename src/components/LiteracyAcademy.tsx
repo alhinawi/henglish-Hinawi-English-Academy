@@ -3,7 +3,7 @@ import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy
 import { LITERACY_LEVELS, LITERACY_READING, LITERACY_WRITING, type LiteracyReading, type LiteracyWriting } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { literacyStorageKey, loadLiteracy, saveLiteracy, type LiteracySaved as Saved } from '../services/literacyStorage';
+import { literacyStorageKey, loadLiteracy, saveLiteracy, literacySavePatch, type LiteracySaved as Saved } from '../services/literacyStorage';
 import { useAuth } from '../context/AuthContext';
 import { stopSpeech } from '../utils/audio';
 import { LessonSpeechButton } from './LessonSpeechButton';
@@ -29,9 +29,14 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   // Stop both active playback and pending synthesis when leaving a lesson.
   useEffect(() => () => stopSpeech(), [active, kind]);
   const [saved, setSaved] = useState<Saved>(() => loadLiteracy(storageKey));
+  const dirtyDraftIds = useRef(new Set<string>());
   const [storageError, setStorageError] = useState(false);
   const [completionSaveError, setCompletionSaveError] = useState(false);
-  useEffect(() => { setStorageError(!saveLiteracy(storageKey, saved)); }, [saved, storageKey]);
+  useEffect(() => {
+    const success = saveLiteracy(storageKey, literacySavePatch(saved, dirtyDraftIds.current));
+    if (success) dirtyDraftIds.current.clear();
+    setStorageError(!success);
+  }, [saved, storageKey]);
   const lessons: (LiteracyReading | LiteracyWriting)[] = reading ? LITERACY_READING : LITERACY_WRITING;
   const visible = lessons.filter(l => l.level === level && `${l.title} ${l.titleAr} ${txText(appText, l.titleAr)}`.toLowerCase().includes(query.trim().toLowerCase()));
   const current = lessons.find(l => l.id === active);
@@ -39,12 +44,14 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   const complete = (id: string) => {
     if (saved.done.includes(id)) return;
     const fresh = loadLiteracy(storageKey);
-    const next = { ...saved, storageUnreadable: saved.storageUnreadable || fresh.storageUnreadable, done: [...new Set([...fresh.done, ...saved.done, id])], drafts: { ...fresh.drafts, ...saved.drafts } };
-    if (!saveLiteracy(storageKey, next)) {
+    const patch = literacySavePatch(saved, dirtyDraftIds.current);
+    const next = { ...saved, storageUnreadable: saved.storageUnreadable || fresh.storageUnreadable, done: [...new Set([...fresh.done, ...saved.done, id])], drafts: { ...fresh.drafts, ...patch.drafts } };
+    if (!saveLiteracy(storageKey, { ...next, drafts: patch.drafts })) {
       setStorageError(true);
       setCompletionSaveError(true);
       return;
     }
+    dirtyDraftIds.current.clear();
     setCompletionSaveError(false);
     setStorageError(false);
     setSaved(next);
@@ -73,7 +80,7 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
         <div className="mt-4 flex items-center gap-2 text-xs text-cyan-200"><span>{current.level}</span><span>·</span><span>{t('lit.lessonNumber').replace('{count}', String(lessons.indexOf(current) + 1))}</span></div>
         <h2 className="mt-2 text-2xl font-black text-white">{lang === 'en' ? current.title : txText(appText, current.titleAr)}</h2><p dir="ltr" lang="en" className="mt-1 text-left text-sm text-slate-400">{current.title}</p>
       </article>
-      {reading ? <ReadingWorkshop key={current.id} lesson={current as LiteracyReading} done={saved.done.includes(current.id)} onComplete={() => complete(current.id)} /> : <WritingWorkshop key={current.id} lesson={current as LiteracyWriting} done={saved.done.includes(current.id)} draft={saved.drafts[current.id] || ''} onDraft={text => setSaved(p => ({ ...p, drafts: { ...p.drafts, [current.id]: text } }))} onComplete={() => complete(current.id)} />}
+      {reading ? <ReadingWorkshop key={current.id} lesson={current as LiteracyReading} done={saved.done.includes(current.id)} onComplete={() => complete(current.id)} /> : <WritingWorkshop key={current.id} lesson={current as LiteracyWriting} done={saved.done.includes(current.id)} draft={saved.drafts[current.id] || ''} onDraft={text => { dirtyDraftIds.current.add(current.id); setSaved(p => ({ ...p, drafts: { ...p.drafts, [current.id]: text } })); }} onComplete={() => complete(current.id)} />}
       <button className={`${button} w-full`} onClick={() => { const next = lessons[(lessons.indexOf(current) + 1) % lessons.length]; setLevel(next.level); setActive(next.id); window.scrollTo({ top: 0, behavior: 'instant' }); }}>{t('lit.next')} <ChevronLeft size={15} className={`inline ${dir === 'ltr' ? 'rotate-180' : ''}`} aria-hidden="true" /></button>
     </> : <>
       <nav aria-label={t('lit.learningLevel')} className="grid grid-cols-6 gap-1.5" dir="ltr">{LITERACY_LEVELS.map(l => <button key={l} onClick={() => { setLevel(l); setQuery(''); }} aria-pressed={level === l} className={`rounded-xl py-3 text-sm font-bold ${level === l ? 'bg-cyan-200 text-slate-950' : 'border border-white/10 bg-white/5 text-slate-300'}`}>{l}</button>)}</nav>
