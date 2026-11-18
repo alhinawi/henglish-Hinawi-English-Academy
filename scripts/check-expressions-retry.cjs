@@ -10,3 +10,5 @@ const view=fs.readFileSync('src/components/vocabulary/ExpressionsTab.tsx','utf8'
 for(const l of ['ar','en','de']){const d=JSON.parse(fs.readFileSync('src/i18n/locales/'+l+'.json'));assert.ok(d['ex.loadError']&&d['ex.retry']);}
 console.log('Expressions network/HTTP/JSON/shape failure rejects, retries, shares pending/success cache; UI separates error from empty search: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+const expressionView=fs.readFileSync('src/components/vocabulary/ExpressionsTab.tsx','utf8');assert(!expressionView.includes('speakEnglishVoice'));for(const accent of ['US','UK'])assert(expressionView.includes('wordId={`expression:${item.id}`} wordText={item.expression} accent="'+accent+'" size="sm"'));const pronunciation=fs.readFileSync('src/components/vocabulary/PronunciationButton.tsx','utf8');assert(pronunciation.includes('audioPlayback.stopOwned(owner.current)'));assert(pronunciation.includes("t(active ? 'pr.stop'"));assert(pronunciation.includes("t('listen.audioError')"));console.log('Expressions reuse owned dual-accent playback controls with loading/Stop/error states and per-card cleanup on search/page/tab removal: PASS');

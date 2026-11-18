@@ -6,7 +6,6 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   Search,
-  Volume2,
   Sparkles,
   BookOpen,
   Filter,
@@ -21,7 +20,7 @@ import {
 } from 'lucide-react';
 import { ExpressionEntry, loadExpressions } from '../../services/vocabularyService';
 import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
-import { speakEnglishVoice } from '../../utils/audio';
+import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 import { useLanguage } from '../../i18n/LanguageContext';
 
@@ -98,11 +97,6 @@ export const ExpressionsTab: React.FC = () => {
   const currentPage = Math.max(1, Math.min(page, totalPages));
   const offset = (currentPage - 1) * pageSize;
   const pagedItems = filtered.slice(offset, offset + pageSize);
-
-  const handleSpeak = (text: string, accent: 'US' | 'UK', e: React.MouseEvent) => {
-    e.stopPropagation();
-    speakEnglishVoice(text, { accent });
-  };
 
   return (
     <div className="space-y-8 text-right">
@@ -198,22 +192,8 @@ export const ExpressionsTab: React.FC = () => {
                 {/* Header with Category Badge and CEFR */}
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-1.5">
-                    <button
-                      onClick={e => handleSpeak(item.expression, 'US', e)}
-                      className="px-2 py-1 rounded-lg text-[10px] font-black uppercase bg-[#22D3EE]/15 text-[#22D3EE] border border-[#22D3EE]/30 hover:bg-[#22D3EE]/25 transition-all flex items-center gap-1"
-                      title={t('ex.listenUs')}
-                    >
-                      <Volume2 className="w-3 h-3" />
-                      <span>US</span>
-                    </button>
-                    <button
-                      onClick={e => handleSpeak(item.expression, 'UK', e)}
-                      className="px-2 py-1 rounded-lg text-[10px] font-black uppercase bg-[#A78BFA]/15 text-[#A78BFA] border border-[#A78BFA]/30 hover:bg-[#A78BFA]/25 transition-all flex items-center gap-1"
-                      title={t('ex.listenUk')}
-                    >
-                      <Volume2 className="w-3 h-3" />
-                      <span>UK</span>
-                    </button>
+                    <PronunciationButton wordId={`expression:${item.id}`} wordText={item.expression} accent="US" size="sm" />
+                    <PronunciationButton wordId={`expression:${item.id}`} wordText={item.expression} accent="UK" size="sm" />
                   </div>
 
                   <div className="flex items-center gap-1.5">
