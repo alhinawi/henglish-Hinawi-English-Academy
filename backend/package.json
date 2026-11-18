@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "deploy": "wrangler deploy",
     "test:certificates": "tsx test-certificates.ts",
-    "test:badges": "tsx test-badges.ts"
+    "test:badges": "tsx test-badges.ts",
+    "test:tts": "tsx test-tts.ts"
   },
   "dependencies": {
     "hono": "^4.13.18"

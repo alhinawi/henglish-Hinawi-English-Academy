@@ -1,7 +1,7 @@
 // ==============================================================================
 // Henglish Academy (HENGLISH) - MULTI-TIER VOICE SYNTHESIS & SEQUENTIAL AUDIO QUEUE
 // Preserves beloved original female voice + upgraded natural male voice
-// Supports Server-Side TTS (ElevenLabs, Google, Kokoro) with client SpeechSynthesis fallback
+// Manifest-gated ElevenLabs proxy, then an explicit same-language Microsoft browser voice
 // Features Event-Driven Queue Playback (ended events, NO setTimeout gaps)
 // ==============================================================================
 
