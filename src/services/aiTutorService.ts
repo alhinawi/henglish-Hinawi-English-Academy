@@ -30,6 +30,7 @@ export interface AiChatMessage {
 
 export interface AiRequestOptions {
   message: string;
+  language?: 'en' | 'ar';
   mode: AiTutorMode;
   userLevel: CEFRLevel;
   history?: AiChatMessage[];
@@ -49,14 +50,14 @@ export interface AiResponseResult {
  * Request one bounded learning-helper answer. onChunk receives the final text once.
  */
 export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiResponseResult> {
-  const { message, mode, userLevel, history = [], onChunk, signal } = options;
+  const { message, mode, userLevel, history = [], onChunk, signal, language = 'ar' } = options;
   // Send only bounded conversation text. Never send the learner's profile,
   // progress, email, name or arbitrary system/context objects to inference.
   const formattedHistory = history.filter(h => !h.isStreaming).slice(-4).map(h => ({
     role: h.sender === 'user' ? ('user' as const) : ('assistant' as const),
     content: h.content.slice(0, 1000),
   }));
-  const requestBody = { message, mode, userLevel, history: formattedHistory };
+  const requestBody = { message, mode, userLevel, language, history: formattedHistory };
   const token = getHenglishApiToken();
 
   // Standard non-streaming POST
@@ -70,6 +71,12 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
 
     if (!response.ok) {
       const data = await response.clone().json().catch(() => ({}));
+      const englishMessages: Record<string, string> = {
+        HELPER_DAILY_LIMIT: 'The helper has reached its free daily limit. Try tomorrow. Your lessons and practice are still available.',
+        HELPER_RATE_LIMIT: 'Wait a minute before your next question so the helper stays available for everyone.',
+        HELPER_INVALID_REQUEST: 'Write a short English-learning question, up to 1,200 characters.',
+        HELPER_UNAVAILABLE: 'The helper is unavailable right now. Try again later.',
+      };
       const messages: Record<string, string> = {
         HELPER_DAILY_LIMIT: 'المساعد وصل لحده المجاني النهارده. جرّب بكرة، وتقدر تكمل دروسك وتدريباتك عادي.',
         HELPER_RATE_LIMIT: 'استنى دقيقة قبل السؤال الجاي عشان المساعد يفضل متاح لكل الطلبة.',
@@ -78,7 +85,7 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
       };
       if (messages[data.code]) {
         const error = new Error('helper_request_failed') as Error & { helperMessage: string };
-        error.helperMessage = messages[data.code];
+        error.helperMessage = language === 'en' ? englishMessages[data.code] : messages[data.code];
         throw error;
       }
     }
