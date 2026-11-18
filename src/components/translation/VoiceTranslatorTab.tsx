@@ -63,6 +63,20 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     stopSpeech();
   }, []);
 
+  // Hardware errors can arrive after start() has already succeeded.
+  // Keep the view aligned with the recorder instead of showing a dead live mic.
+  useEffect(() => {
+    recorder.onStateChange = state => {
+      if (state !== 'RECORDING_ERROR') return;
+      setIsRecording(false);
+      setRecordDuration(0);
+      setWaveformData([]);
+      setErrorMsg(t('vt.errMic'));
+      playSound('wrong');
+    };
+    return () => { recorder.onStateChange = undefined; };
+  }, [recorder, t]);
+
   // Setup RealAudioRecorder callbacks
   useEffect(() => {
     recorder.onDurationTick = sec => setRecordDuration(sec);
