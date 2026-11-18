@@ -46,7 +46,7 @@ const timeLabel = (seconds: number) => {
 interface MoviePlayerStudioProps { scene: MovieSceneItem; onBackToSearch?: () => void; }
 
 export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: originalScene, onBackToSearch }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
   const unavailable = scene.transcriptTimingStatus === 'quarantined';
   const hasTranscript = scene.subtitles.length > 0;
@@ -285,10 +285,10 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           {scene.subtitles.map((sub, index) => <button key={sub.id} data-sub-idx={index} aria-current={active === index ? 'true' : undefined} onClick={() => { if (loopBounds.current) loopBounds.current = { start: sub.start, end: sub.end }; loadClip(sub.start); }} className={`movie-studio-cue ${active === index ? 'is-active' : ''}`}>
             <span className="mb-2 flex justify-between text-[11px] text-purple-200"><span>{sub.speaker || t('ms.sourceText')}</span><span dir="ltr">{timeLabel(sub.start - start)} - {timeLabel(sub.end - start)}</span></span>
             <span dir="ltr" lang="en" className="block text-left text-base font-bold leading-8">{sub.en}</span>
-            <span className="mt-2 block text-sm leading-8 text-white/85">{txText(appText, sub.arEg)}</span>
-            {fusha && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
+            {lang !== 'en' && <span className="mt-2 block text-sm leading-8 text-white/85">{txText(appText, sub.arEg)}</span>}
+            {fusha && lang === 'ar' && <span className="mt-2 block text-xs leading-7 text-white/60">{sub.arFusha}</span>}
           </button>)}
-          {hasFusha && <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>}
+          {hasFusha && lang === 'ar' && <button onClick={() => setFusha(!fusha)} className="min-h-11 px-2 text-xs text-purple-200 underline">{fusha ? t('ms.hideFusha') : t('ms.showFusha')}</button>}
           {movieSourceSummaries[scene.youtubeId] && <p className="rounded-xl bg-white/5 p-3 text-xs leading-7 text-white/65"><strong>{t('ms.sceneIdea')} </strong>{txText(summaryText, movieSourceSummaries[scene.youtubeId])}</p>}
           {hasTranscript && <p className="text-[11px] leading-7 text-white/50">{t('ms.scriptNote')}</p>}
         </div>

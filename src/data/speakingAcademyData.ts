@@ -45,7 +45,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "My ____ is Salma. Nice to meet you.",
     "image": "/images/speaking/conversation-01.webp",
     "imageAlt": "Portrait of a woman",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
     "prompt": "What is your name? Nice to meet you too. Are you a student?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -88,7 +88,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "This is my ____ Omar.",
     "image": "/images/speaking/conversation-02.webp",
     "imageAlt": "Young man",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
     "prompt": "Who is this? Hello, Omar. Where are you from?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -131,7 +131,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "____ It is H-A-S-S-A-N.",
     "image": "/images/speaking/conversation-03.webp",
     "imageAlt": "Classroom",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655",
     "prompt": "Can you spell your surname? Thank you. Please write it here.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -174,7 +174,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Could you say that ____ please?",
     "image": "/images/speaking/conversation-04.webp",
     "imageAlt": "Teacher helping a learner",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1577896851231-70ef18881754",
     "prompt": "Please turn to page fourteen. Page fourteen. One four.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -217,7 +217,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I get up at ____ every day.",
     "image": "/images/speaking/conversation-05.webp",
     "imageAlt": "Coffee and work desk",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
     "prompt": "What time do you get up? Do you have breakfast at home?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -260,7 +260,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I like reading short ____",
     "image": "/images/speaking/conversation-06.webp",
     "imageAlt": "Stack of books",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6",
     "prompt": "What do you like reading? Do you read every evening?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -303,7 +303,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Yes. Shall we study ____",
     "image": "/images/speaking/conversation-07.webp",
     "imageAlt": "Students working together",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     "prompt": "Are you free this afternoon? Good idea. At the library?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -346,7 +346,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I write stories in my ____",
     "image": "/images/speaking/conversation-08.webp",
     "imageAlt": "Writing in a notebook",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
     "prompt": "What do you do in your free time? That sounds interesting. How often?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -389,7 +389,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Here you are. Is this the right ____",
     "image": "/images/speaking/conversation-09.webp",
     "imageAlt": "Aircraft in flight",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
     "prompt": "May I see your passport, please? Yes. Where are you flying today?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -432,7 +432,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Go straight ahead and turn ____",
     "image": "/images/speaking/conversation-10.webp",
     "imageAlt": "Airport terminal",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1517400508447-f8dd518b86db",
     "prompt": "Excuse me, where is gate twelve? Is it near the coffee shop?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -475,7 +475,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Could we meet at the station ____",
     "image": "/images/speaking/conversation-11.webp",
     "imageAlt": "City skyline",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1449824913935-59a10b8d2000",
     "prompt": "Shall we meet in the city centre? Sure. Would five o'clock suit you?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -518,7 +518,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "They are twenty pounds a ____",
     "image": "/images/speaking/conversation-12.webp",
     "imageAlt": "Fresh produce at a market",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1488459716781-31db52582fe9",
     "prompt": "How much are these tomatoes? I would like half a kilo, please.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -561,7 +561,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I have had it ____ Monday.",
     "image": "/images/speaking/conversation-13.webp",
     "imageAlt": "Healthcare consultation",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d",
     "prompt": "How long have you had this cough? Do you have any other symptoms?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -604,7 +604,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I ____ a museum with my sister.",
     "image": "/images/speaking/conversation-14.webp",
     "imageAlt": "Old books and history",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d",
     "prompt": "How was your weekend? What did you enjoy most?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -647,7 +647,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Not yet, but I have ____ two chapters.",
     "image": "/images/speaking/conversation-15.webp",
     "imageAlt": "Exam preparation desk",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173",
     "prompt": "Have you finished your revision yet? Would you like to revise together?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -690,7 +690,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I am going to ____ for a teaching job.",
     "image": "/images/speaking/conversation-16.webp",
     "imageAlt": "Students planning together",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
     "prompt": "What are you going to do after graduation? That sounds exciting. Where?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -733,7 +733,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Really? What made you ____ Italian?",
     "image": "/images/speaking/conversation-17.webp",
     "imageAlt": "Group of colleagues",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
     "prompt": "I started learning Italian last month. I want to visit my cousins in Rome.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -776,7 +776,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Why don't you ____ a short session before work?",
     "image": "/images/speaking/conversation-18.webp",
     "imageAlt": "Study materials",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8",
     "prompt": "I find it hard to study after work. That might work. How long should I study?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -819,7 +819,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I am ____ I should have let you know.",
     "image": "/images/speaking/conversation-19.webp",
     "imageAlt": "Planning and calendar",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1506784365847-bbad939e9335",
     "prompt": "You missed our meeting yesterday. Thanks for saying that. Can we reschedule?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -862,7 +862,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Your training programme matches my ____ goals.",
     "image": "/images/speaking/conversation-20.webp",
     "imageAlt": "Job interview",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1565688534245-05d6b5be184a",
     "prompt": "Why would you like to work here? Could you give us an example?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -905,7 +905,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "We have finished the design, but ____ is still in progress.",
     "image": "/images/speaking/conversation-21.webp",
     "imageAlt": "Computer used for development",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "prompt": "How is the website coming along? What do you need from us?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -948,7 +948,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Yes, as long as you ____ me the figures today.",
     "image": "/images/speaking/conversation-22.webp",
     "imageAlt": "Team meeting",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
     "prompt": "Could you take care of the slides? That is fine. I will send them by noon.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -991,7 +991,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Yes. We will have ____ it by Thursday evening.",
     "image": "/images/speaking/conversation-23.webp",
     "imageAlt": "Clock and time management",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1508962914676-134849a727f0",
     "prompt": "Will the report be ready by Friday? Will there be time for a final check?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1034,7 +1034,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "An error message ____ and the screen goes blank.",
     "image": "/images/speaking/conversation-24.webp",
     "imageAlt": "Laptop and digital work",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
     "prompt": "What happens when you open the file? Have you tried restarting the application?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1077,7 +1077,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I see your ____ but some discussions work better in person.",
     "image": "/images/speaking/conversation-25.webp",
     "imageAlt": "People discussing ideas",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
     "prompt": "We should cancel all face-to-face meetings. Which discussions do you have in mind?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1120,7 +1120,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Have we ____ improving the booking system first?",
     "image": "/images/speaking/conversation-26.webp",
     "imageAlt": "Team brainstorming",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1552664730-d307ca884978",
     "prompt": "The only solution is to hire more staff. How would that help?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1163,7 +1163,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "On the one ____ it is flexible; on the other hand, some learners need classroom support.",
     "image": "/images/speaking/conversation-27.webp",
     "imageAlt": "Learning with technology",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1531482615713-2afd69097998",
     "prompt": "Should we move the course online? Could we offer both formats?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1206,7 +1206,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "What if we ____ it between advertising and training?",
     "image": "/images/speaking/conversation-28.webp",
     "imageAlt": "Business discussion",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
     "prompt": "We need the whole budget for advertising. I could agree to that if we review the results next month.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1249,7 +1249,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "I will ____ the problem, compare two options, and recommend a solution.",
     "image": "/images/speaking/conversation-29.webp",
     "imageAlt": "Professional in business clothing",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
     "prompt": "What will your presentation cover? How will you involve the audience?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1292,7 +1292,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "Could you explain what you mean by accessible in this ____",
     "image": "/images/speaking/conversation-30.webp",
     "imageAlt": "Design and planning",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
     "prompt": "The new design is more accessible. The text is easier to read, and the buttons work with a keyboard.",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1335,7 +1335,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "____ we missed the first deadline, we used the feedback to improve the final result.",
     "image": "/images/speaking/conversation-31.webp",
     "imageAlt": "Engineering project work",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
     "prompt": "Tell us about a difficult project. What did you learn from it?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   },
@@ -1378,7 +1378,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
     "gapPrompt": "We agree on the goal, but we still need to compare the ____ before deciding.",
     "image": "/images/speaking/conversation-32.webp",
     "imageAlt": "Colleagues reviewing a decision",
-    "photoSource": "",
+    "photoSource": "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
     "prompt": "How would you sum up the discussion? What is the next step?",
     "tip": "اسمع الرد، لاحظ تركيبه، وبعدها بدّل التفاصيل عشان تحكي عن نفسك. الردود الغلط هنا أمثلة غير مناسبة للموقف أو فيها خطأ لغوي."
   }

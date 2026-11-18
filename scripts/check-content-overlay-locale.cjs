@@ -1,7 +1,8 @@
 const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
 const js=ts.transpileModule(fs.readFileSync('src/services/contentI18nService.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
+const englishMaps=Object.fromEntries(fs.readdirSync('public/data/app-i18n').filter(m=>fs.existsSync('public/data/app-i18n/'+m+'/en.json')).map(m=>[m,JSON.parse(fs.readFileSync('public/data/app-i18n/'+m+'/en.json','utf8'))]));
 let lang='de',state=null,effect=null,cleanup=null;
-const pending={};const c={exports:{},AbortController,setTimeout:(fn,ms)=>{const timer=setTimeout(fn,ms);timer.unref();return timer;},clearTimeout,fetch:url=>new Promise(resolve=>pending[url]=data=>resolve({ok:true,json:async()=>data})),require:p=>p==='react'?{useState:()=>[state,v=>state=v],useEffect:fn=>effect=fn}:{useLanguage:()=>({lang})}};vm.runInNewContext(js,c);
+const pending={};const c={exports:{},AbortController,setTimeout:(fn,ms)=>{const timer=setTimeout(fn,ms);timer.unref();return timer;},clearTimeout,fetch:url=>new Promise(resolve=>pending[url]=data=>resolve({ok:true,json:async()=>data})),require:p=>p.includes('englishAppTextMaps')?{ENGLISH_APP_TEXT_MAPS:englishMaps}:p==='react'?{useState:()=>[state,v=>state=v],useEffect:fn=>effect=fn}:{useLanguage:()=>({lang})}};vm.runInNewContext(js,c);
 const flush=async()=>{for(let n=0;n<8;n++)await Promise.resolve();};
 async function check(hook,first,next,firstUrl,nextUrl){
  state=null;lang='de';assert.equal(hook(first),null);cleanup=effect();pending[firstUrl](hook===c.exports.useContentMap?{entry:{m:'German'}}:{Quelle:'Deutsch'});await flush();assert.ok(hook(first));
@@ -12,10 +13,12 @@ async function check(hook,first,next,firstUrl,nextUrl){
 (async()=>{
  await check(c.exports.useContentMap,'vocab','phrases','/data/vocab/i18n/de.json','/data/vocab/i18n/fr.json');
  await check(c.exports.useAppTextMap,'module-a','module-b','/data/app-i18n/module-a/de.json','/data/app-i18n/module-a/fr.json');
- lang='en';state=null;c.exports.useAppTextMap('allGrammarRules');cleanup?.();cleanup=effect();
- pending['/data/app-i18n/allGrammarRules/en.json']({'أزمنة المضارع':'Present Tenses'});await flush();assert.equal(c.exports.useAppTextMap('allGrammarRules')['أزمنة المضارع'],'Present Tenses');
- state=null;c.exports.useAppTextMap('speakingAcademyData');cleanup?.();cleanup=effect();pending['/data/app-i18n/speakingAcademyData/en.json']({'أول مقابلة':'Meeting someone new'});await flush();assert.equal(c.exports.useAppTextMap('speakingAcademyData')['أول مقابلة'],'Meeting someone new');
- state=null;c.exports.useAppTextMap('coursesData');cleanup?.();cleanup=effect();pending['/data/app-i18n/coursesData/en.json']({'دليل الكورسات':'Course catalog'});await flush();assert.equal(c.exports.useAppTextMap('coursesData')['دليل الكورسات'],'Course catalog');
+ lang='en';state=null;
+ for(const module of Object.keys(englishMaps)){
+  const map=c.exports.useAppTextMap(module);assert.equal(map,englishMaps[module],'English maps available synchronously on first render');assert.equal(await c.exports.loadAppTextMap(module,'en'),map);
+ }
+ lang='ar';assert.equal(c.exports.useAppTextMap('skillsAcademyData'),null,'Arabic never receives an English map');
+ lang='en';
  assert.equal(c.exports.needsContentTranslation('en'),false,'English banks remain built-in');
  const grammarContext={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/allGrammarRules.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,grammarContext);
  const english=JSON.parse(fs.readFileSync('public/data/app-i18n/allGrammarRules/en.json','utf8'));

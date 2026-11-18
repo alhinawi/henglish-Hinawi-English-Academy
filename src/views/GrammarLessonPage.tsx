@@ -356,14 +356,14 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
               className="p-5 sm:p-6 rounded-2xl bg-white/5 border border-white/10 hover:border-white/20 transition-all space-y-5"
             >
               <div dir="rtl" className="w-full px-3 py-2.5 rounded-xl text-[11px] sm:text-xs leading-6 font-bold bg-[#41e7ff]/10 text-[#41e7ff] border border-[#41e7ff]/20 text-right">
-                {t('gl.exContext')} {ex.context}
+                {t('gl.exContext')} {txText(appText, ex.context)}
               </div>
 
               <div dir="ltr" lang="en" className="w-full text-left font-sans text-base sm:text-lg leading-8 text-white font-semibold tracking-wide break-words">
                 {ex.en}
               </div>
               <div dir="rtl" className="text-right text-xs sm:text-sm text-[#b9b6d5] font-medium leading-7">
-                {ex.ar}
+                {txText(appText, ex.ar)}
               </div>
 
               <div className="flex justify-start pt-4 border-t border-white/10">
@@ -430,7 +430,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
                 </div>
 
                 <p dir="ltr" lang="en" className="text-left font-sans text-base sm:text-lg text-white font-semibold">
-                  {q.question}
+                  {txText(appText, q.question)}
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" dir="ltr" lang="en">
@@ -458,7 +458,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
                         <span className="font-mono text-xs opacity-60 mr-2 shrink-0">
                           {String.fromCharCode(65 + optIdx)}.
                         </span>
-                        <span>{opt}</span>
+                        <span>{txText(appText, opt)}</span>
                       </button>
                     );
                   })}
@@ -467,7 +467,7 @@ const ResolvedGrammarLesson: React.FC<GrammarLessonPageProps & { rule: GrammarRu
                 {hasAnswered && (
                   <div className="p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-[#dedbf4] leading-relaxed">
                     <span className="font-bold text-[#ffd166]">{t('gl.answerExpl')} </span>
-                    {q.explanation}
+                    {txText(appText, q.explanation)}
                   </div>
                 )}
               </div>

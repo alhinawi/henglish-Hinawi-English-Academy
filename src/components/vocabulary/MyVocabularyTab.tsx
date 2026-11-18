@@ -29,7 +29,7 @@ import {
 import { ReviewRating } from '../../services/spacedRepetitionService';
 import { PronunciationButton } from './PronunciationButton';
 import { WordDetailModal } from './WordDetailModal';
-import { txMeaning, useContentMap } from '../../services/contentI18nService';
+import { txMeaning, useContentMap, englishSourceText } from '../../services/contentI18nService';
 import { playSound, fireCelebration } from '../../utils/audio';
 import { useLanguage } from '../../i18n/LanguageContext';
 
@@ -40,7 +40,7 @@ interface MyVocabularyTabProps {
 }
 
 export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords, savedVersion = 0, learnerId }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const txMap = useContentMap('vocab');
   const [savedWords, setSavedWords] = useState<SavedWordItem[]>(() => getSavedWords(learnerId));
   const [query, setQuery] = useState('');
@@ -255,7 +255,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
             {isFlipped ? (
               <div id={meaningId} className="space-y-2 pt-2 border-t border-white/10 w-full animate-fadeIn">
                 <div className="text-xl font-black text-[#c4ff55]">
-                  {txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.meaningAr)}
+                  {(lang === 'en' ? (currentReviewItem.entry.definitionEn || englishSourceText('vocabularyAcademyData', currentReviewItem.entry.meaningAr)) : txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.meaningAr))}
                 </div>
                 <p className="text-xs text-white/70 max-w-md mx-auto font-sans" dir="ltr">
                   "{currentReviewItem.entry.exampleEn}"
@@ -405,7 +405,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
                   {item.word}
                 </div>
                 <div className="text-sm font-bold text-[#c4ff55] mt-0.5">
-                  {txMeaning(txMap, item.entry.id, item.entry.meaningAr)}
+                  {(lang === 'en' ? (item.entry.definitionEn || englishSourceText('vocabularyAcademyData', item.entry.meaningAr)) : txMeaning(txMap, item.entry.id, item.entry.meaningAr))}
                 </div>
               </div>
 

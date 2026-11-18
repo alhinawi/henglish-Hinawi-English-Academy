@@ -57,7 +57,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'المضارع البسيط مش معناه حاجة بتحصل دلوقتي حالاً! هو زمن الروتين، العادات الثابتة، الحقائق العلمية، والمواعيد الرسمية المجدولة.',
     timelineDescription: 'أفعال تتكرر بانتظام عبر الماضي والحاضر والمستقبل كحقائق أو عادات مستقرة.',
     imageUrl: '/images/grammar/present-simple.webp',
-    imageAlt: 'Morning coffee routine and daily desk work setup',
+    imageAlt: "Two people jogging in a park",
     keyUsagePoints: [
       'العادات والروتين اليومي (Habits & Daily Routines)',
       'الحقائق العلمية والعامة الثابتة (General & Scientific Facts)',
@@ -124,7 +124,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'زمن الكاميرا الحية! بنستخدمه لما نتكلم عن حاجة بتحصل قدام عنينا دلوقتي حالا، أو أحداث مؤقتة في الفترة الحالية، أو ترتيبات مستقبلية مؤكدة بنسبة 100%.',
     timelineDescription: 'فعل قيد الحدوث في لحظة الكلام أو مشروع مؤقت يستغرق فترة زمنية حالية.',
     imageUrl: '/images/grammar/present-continuous.webp',
-    imageAlt: 'Professional developer typing on laptop during active sprint',
+    imageAlt: "Hands typing source code on a laptop",
     keyUsagePoints: [
       'فعل يحدث الآن في لحظة الكلام بالضبط (Happening right now)',
       'مواقف ومشاريع مؤقتة في هذه الفترة (Temporary situations)',
@@ -184,7 +184,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'كوبري يربط الماضي بالحاضر! لا نهتم بموعد حدوث الفعل في الماضي، بل نهتم بنتيجته وأثره الحيّ الآن، أو رصيد تجاربك الحياتية حتى اللحظة.',
     timelineDescription: 'فعل حدث في وقت غير محدد في الماضي، أو بدأ في الماضي ولا زال أثره ممتداً إلى الحاضر.',
     imageUrl: '/images/grammar/present-perfect.webp',
-    imageAlt: 'Confident student holding certificate after hard study',
+    imageAlt: "Graduates in caps and gowns",
     keyUsagePoints: [
       'تجارب وخبرات حياتية سابقة بدون تحديد وقت (Life Experiences with Ever / Never)',
       'فعل ماضٍ له أثر ونتيجة واضحة في الحاضر (Past action with present result)',
@@ -244,7 +244,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'لما تحب تركز على "التعب والمجهود والوقت اللي استغرقه الفعل"! فعل بدأ في الماضي وقضيت فيه ساعات أو أيام، ولسه شغال أو لسه خلصان حالا وآثاره باينة على وشك.',
     timelineDescription: 'فعل بدأ في الماضي واستمر لفترة ممتدة حتى الحاضر، مع التركيز على طول المدة أو الإرهاق الناتج.',
     imageUrl: '/images/grammar/present-perfect-continuous.webp',
-    imageAlt: 'Tired student with open textbooks studying for hours',
+    imageAlt: "A person painting a wall with a roller",
     keyUsagePoints: [
       'فعل بدأ في الماضي ومستمر دون انقطاع حتى الآن (How long...)',
       'فعل استمر لفترة طويلة ونتائجه المادية واضحة الآن (You look exhausted!)',
@@ -298,7 +298,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'زمن سرد القصص والتاريخ! فعل بدأ وانتهى تماماً في نقطة زمنية محددة في الماضي، ولا يمتد تأثيره كحالة قائمة إلى الحاضر.',
     timelineDescription: 'نقطة مكتملة ومغلقة تماماً على الخط الزمني في الماضي.',
     imageUrl: '/images/grammar/past-simple.webp',
-    imageAlt: 'Vintage books and compass depicting finished history',
+    imageAlt: "Colleagues watching a presentation in an office",
     keyUsagePoints: [
       'حدث تم وانتهى في وقت محدد في الماضي (yesterday, last week, in 2015)',
       'سلسلة أحداث متتالية في قصة (Sequential actions in a narrative)',
@@ -349,7 +349,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'شريط فيديو كان شغال في لحظة معينة في الماضي! لما تحب توصف خلفية المشهد أو حدث كان مستمراً ولحظة ما كان شغال دخل عليه حدث تاني مفاجئ وقطعه.',
     timelineDescription: 'فترة زمنية ممتدة في الماضي تتقاطع أحياناً مع حدث لحظي قاطع بصيغة الماضي البسيط.',
     imageUrl: '/images/grammar/past-continuous.webp',
-    imageAlt: 'Business meeting in progress interrupted by a phone call',
+    imageAlt: "A developer working at computer monitors at night",
     keyUsagePoints: [
       'حدث كان مستمراً في وقت محدد بالضبط في الماضي (At 8 PM yesterday)',
       'حدث كان مستمراً وقطعه حدث ماضٍ بسيط مفاجئ (While I was studying, the phone rang)',
@@ -400,7 +400,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'ماضي الماضي (Past of the Past)! لما يكون عندك حاجتين حصلوا في الماضي، وعايز توضح للقارئ مين فيهم اللي حصل الأول خالص ومين اللي جه بعده، الحدث الأول هو الماضي التام.',
     timelineDescription: 'حدث اكتمل وانتهى قبل وقوع حدث آخر في الماضي على الخط الزمني.',
     imageUrl: '/images/grammar/past-perfect.webp',
-    imageAlt: 'Antique timeline clocks showing sequence of historical events',
+    imageAlt: "A clinician examining a patient",
     keyUsagePoints: [
       'لتوضيح أسبقية الأحداث عندما يجتمع حدثان في الماضي',
       'مع روابط الزمن: After, Before, By the time, As soon as, When',
@@ -452,7 +452,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'شقيق الماضي التام، لكنه يركز على الفترة الزمنية المستمرة التي قضاها الفاعل في القيام بالحدث الأول قبل أن يقع الحدث الثاني في الماضي.',
     timelineDescription: 'فعل استمر لفترة زمنية متصلة في الماضي قبل أن يقطعه أو يتبعه حدث ماضٍ آخر.',
     imageUrl: '/images/grammar/past-perfect-continuous.webp',
-    imageAlt: 'Exhausted marathon runner catching breath after long run',
+    imageAlt: "A person working on an architectural blueprint",
     keyUsagePoints: [
       'التعبير عن طول مدة النشاط الأول قبل وقوع الحدث الثاني في الماضي',
       'تفسير سبب حالة أو مظهر شخص في الماضي (His eyes were red because he had been crying)'
@@ -499,7 +499,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'صيغة القرارات السريعة اللحظية، والوعود، والعروض، والتهديدات، والتنبؤ العام بالمستقبل دون الاستناد إلى دليل ملموس.',
     timelineDescription: 'قرار أو نبوءة تنطلق من لحظة الكلام متجهة مباشرة نحو المستقبل.',
     imageUrl: '/images/grammar/future-simple.webp',
-    imageAlt: 'Business strategist making decisions',
+    imageAlt: "A man answering a phone call",
     keyUsagePoints: [
       'القرارات الفورية التلقائية المتخذة في نفس لحظة الحديث (Spontaneous decisions)',
       'الوعود والعهود الشخصية (Promises: I will help you)',
@@ -552,7 +552,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'صيغة الخطط والقرارات المسبقة المدروسة، والتنبؤ بأمر وشيك الحدوث بناءً على دليل حسي تراه بعينيك الآن.',
     timelineDescription: 'خطة مسبقة أو شواهد مرئية في الحاضر تشير حتماً إلى وقوع الحدث مستقبلاً.',
     imageUrl: '/images/grammar/be-going-to.webp',
-    imageAlt: 'Project team discussing planned sprint roadmaps',
+    imageAlt: "Dark storm clouds in the sky",
     keyUsagePoints: [
       'خطط ونوايا مسبقة ومدروسة تم اتخاذ القرار بشأنها قبل لحظة الكلام (Prior plans & intentions)',
       'تنبؤ بأمر حتمي أو وشيك مبني على دليل مرئي حالي (Predictions with present evidence)',
@@ -604,7 +604,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'تخيّل كاميرا بتصورك بكرة في نفس الوقت ده بالظبط! حدث هيكون شغال وفي منتصف حدوثه عند نقطة زمنية معينة في المستقبل.',
     timelineDescription: 'فترة زمنية مستمرة تحيط بنقطة محددة في المستقبل.',
     imageUrl: '/images/grammar/future-continuous.webp',
-    imageAlt: 'Auditorium lecture in session during future business conference',
+    imageAlt: "An airplane flying above clouds",
     keyUsagePoints: [
       'حدث سيكون في منتصف حدوثه في وقت محدد في المستقبل (This time tomorrow...)',
       'السؤال بأدب ولطف شديد عن خطط شخص آخر (Will you be using your car tonight?)',
@@ -649,7 +649,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الكورس الرائد المدمج في أكاديمية الجرامر! تقف في نقطة مستقبلية وتنظر إلى الخلف لترى أن الفعل قد اكتمل وانتهى أمره تماماً قبل موعد التسليم أو النقطة المحددة.',
     timelineDescription: 'نقطة انتهاء مكتملة تقع قبل موعد مستقبلي نهائي محدد (Deadline).',
     imageUrl: '/images/grammar/future-perfect.webp',
-    imageAlt: 'Calendar deadline and completed milestone roadmap',
+    imageAlt: "An unfinished building with scaffolding",
     isMasterclass: true,
     masterclassBadge: 'الكورس الرائد  (8 دروس تفاعلية)',
     masterclassRoute: 'courses/grammar/future-perfect',
@@ -705,7 +705,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'التركيز على المدة الزمنية المستمرة لحدث سيظل قيد التنفيذ والاستمرار حتى حلول موعد مستقبلي محدد (مثال: بحلول الشهر القادم هكون شغال في الشركة بقالي ٥ سنين).',
     timelineDescription: 'شريط زمني يمتد في الماضي أو الحاضر وصولاً لنقطة مستقبلية مع التركيز على طول المدة.',
     imageUrl: '/images/grammar/future-perfect-continuous.webp',
-    imageAlt: 'Engineer working on project continuously until milestone deadline',
+    imageAlt: "Runners competing in a road race",
     keyUsagePoints: [
       'التركيز على استمرارية وطول مدة الحدث قبل نقطة مستقبلية محددة',
       'الاستخدام الدائم مع تعبيرات المدة (for 10 years, for five hours)',
@@ -753,7 +753,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'تُستخدم للحقائق العلمية، البديهيات الطبيعية، والنتائج الحتمية التي لا تتغير أبداً عند تحقق الشرط.',
     timelineDescription: 'حقيقة مطلقة: كلما وقع السبب (أ) حدثت النتيجة (ب) فوراً ودائماً في الحاضر والماضي والمستقبل.',
     imageUrl: '/images/grammar/zero-conditional.webp',
-    imageAlt: 'Natural scientific laws and equilibrium',
+    imageAlt: "Water boiling in a pot",
     keyUsagePoints: [
       'الحقائق العلمية والقوانين الفيزيائية (Scientific facts)',
       'العادات والروتين الدائم الحتمي (General truths & personal rules)',
@@ -798,7 +798,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'موقف محتمل وواقعي جداً في المستقبل؛ إذا تحقق الشرط الآن أو لاحقاً، ستحدث النتيجة في المستقبل.',
     timelineDescription: 'شرط واقعي في الحاضر يؤدي إلى نتيجة محتملة بقوة في المستقبل.',
     imageUrl: '/images/grammar/first-conditional.webp',
-    imageAlt: 'Real opportunities and future pathways',
+    imageAlt: "A person using an umbrella on a wet street",
     keyUsagePoints: [
       'توقعات واحتمالات مستقبلية حقيقية وممكنة الحدوث (Real future possibilities)',
       'التحذيرات والوعود والاتفاقات المشروطة',
@@ -843,7 +843,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أحلام اليقظة وتخيل سيناريوهات خيالية غير واقعية في الوقت الحاضر، واستخدام If I were you لتقديم النصيحة الودية.',
     timelineDescription: 'عالم موازٍ وخيالي يختلف عن واقع الحاضر، مع التعبير عما كان سيحدث لو كان الواقع مختلفاً.',
     imageUrl: '/images/grammar/second-conditional.webp',
-    imageAlt: 'Imagination and hypothetical choices',
+    imageAlt: "A luxury yacht on the water",
     keyUsagePoints: [
       'تخيل مواقف غير حقيقية أو مستحيلة في الحاضر (Unreal or imaginary present)',
       'تقديم النصيحة المشهورة: If I were you, I would...',
@@ -894,7 +894,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'قاعدة الندم ولوم النفس! التعبير عن أحداث وقعت وانتهت تماماً في الماضي، وتخيل نتيجة بديلة مستحيلة الحدوث لأن الزمن فات.',
     timelineDescription: 'نقطة ماضية حُسمت بالفعل، والنظر إلى سيناريو بديل كان يمكن أن يحدث لو تغير الماضي.',
     imageUrl: '/images/grammar/third-conditional.webp',
-    imageAlt: 'Looking back at the past with lessons learned',
+    imageAlt: "Airport departure and baggage signs",
     keyUsagePoints: [
       'الندم والتحسر على قرارات وأخطاء الماضي (Past regrets)',
       'انتقاد تصرفات سابقة وتخيل نتائجها البديلة',
@@ -939,7 +939,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الأفعال المساعدة التي تضفي نكهة المعنى على الجملة: الإلزام الإجباري (Must)، النصيحة (Should)، القدرة (Can/Could)، والاحتمالية الضعيفة أو القوية (Might/May/Must be).',
     timelineDescription: 'درجات مختلفة من اليقين والاحتمال والواجب والقدرة.',
     imageUrl: '/images/grammar/modal-verbs.webp',
-    imageAlt: 'Business team evaluating possibilities and strategic priorities',
+    imageAlt: "A bicycle helmet resting on handlebars",
     keyUsagePoints: [
       'الإلزام والضرورة الصارمة (Must vs Have to)',
       'المنع والتحريم القانوني القاطع (Mustn\'t)',
@@ -992,7 +992,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'المبني للمجهول هو لغة الأخبار الرسمية، التقارير العلمية، وتكنولوجيا المعلومات! بنستخدمه لما يكون المفعول به والحدث نفسه أهم بكتير من الشخص اللي عمله، أو لما يكون الفاعل مجهولاً أو بديهياً.',
     timelineDescription: 'نقل بؤرة التركيز من الفاعل (المبتدئ) إلى المتلقي والمفعول والنتيجة المنجزة.',
     imageUrl: '/images/grammar/passive-voice.webp',
-    imageAlt: 'Modern high-tech engineering and robotics manufacturing line',
+    imageAlt: "Workers folding towels in a laundry",
     keyUsagePoints: [
       'عندما يكون الحدث أو النتيجة أهم من الفاعل نفسه',
       'في المقالات والتقارير الأكاديمية والصحفية الرسمية',
@@ -1044,7 +1044,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'إزاي تنقل كلام شخص تاني بدقة دون أن تكرره بين أقواس تنصيص؟ السر يكمن في "خطوة واحدة إلى الوراء في الزمن" (Backshift of tenses) مع ضبط الضمائر والظروف الزمانية.',
     timelineDescription: 'إرجاع الزمن خطوة إلى الماضي للتعبير عن كلام قيل في نقطة سابقة.',
     imageUrl: '/images/grammar/reported-speech.webp',
-    imageAlt: 'Journalist conducting professional interview with audio recorder',
+    imageAlt: "A reporter speaking into a microphone",
     keyUsagePoints: [
       'نقل الأخبار والتصريحات الصحفية والمراسلات الرسمية',
       'تحويل الأسئلة المباشرة إلى أسئلة غير مباشرة (Embedded Questions)',
@@ -1089,7 +1089,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'ربط الجمل والأفكار بطريقة سلسة دون تكرار الكلمات الممل: Who للعاقل، Which لغير العاقل، That للاثنين، Whose للملكية، وWhere للمكان.',
     timelineDescription: 'وصل بين فكرتين أو جملتين لتعريف اسم معين أو إضافة معلومة إضافية عنه.',
     imageUrl: '/images/grammar/relative-clauses.webp',
-    imageAlt: 'Connected global network bridging teams together',
+    imageAlt: "A girl reading on a sofa",
     keyUsagePoints: [
       'جمل الوصل المحددة (Defining): أساسية لفهم المعنى ولا توضع بين فواصل',
       'جمل الوصل غير المحددة (Non-defining): معلومات إضافية بين فاصلتين وتستخدم which للعاقل ولا تستخدم that أبداً',
@@ -1134,7 +1134,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'كل كلمة باللغة الإنجليزية تنتمي لواحد من أقسام الكلام الثمانية: الاسم، الضمير، الفعل، الصفة، الظرف، حرف الجر، الرابط، وأداة التعجب. فهم وظيفة كل كلمة هو حجر الأساس لبناء جملة صحيحة بدون أخطاء.',
     timelineDescription: 'البنية الهيكلية الثابتة للجملة في الإنجليزية.',
     imageUrl: '/images/grammar/parts-of-speech.webp',
-    imageAlt: 'Grammar board and structured language foundations lecture',
+    imageAlt: "Wooden letter tiles arranged into a phrase",
     keyUsagePoints: [
       'الاسم والضمير (Nouns & Pronouns): يمثلان الفاعل أو المفعول به في الجملة.',
       'الفعل (Verbs): قلب الجملة النابض ومحدد زمن الحدث.',
@@ -1181,7 +1181,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أدوات التعريف والتنكير من أكبر التحديات للمتحدث العربي. نستخدم a/an مع الأسماء المفردة المعدودة غير المحددة، بينما نستخدم the عندما يكون الشيء معروفاً للسامع، ونستخدم zero article مع الجمع العام والأسماء المعنوية.',
     timelineDescription: 'تحديد دقة الإشارة للاسم: عام، مجهول، أم محدد بعينه.',
     imageUrl: '/images/grammar/articles-determiners.webp',
-    imageAlt: 'Library books and precise article reference materials',
+    imageAlt: "A single red apple on a tree",
     keyUsagePoints: [
       'A / An: نكرة للاسم المفرد المعدود، نستخدم an قبل الأصوات المتحركة (an honest man, an hour).',
       'The: أداة المعرفة الوحيدة في الإنجليزية للشيء المحدد أو الفريد من نوعه (the sun, the CEO).',
@@ -1228,7 +1228,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'تذكر هرم حروف الجر الشهير: In للأوسع والأكبر (السنوات، الفصول، الشهور، المدن، الدول). On للأضيق قليلاً (الأيام، التواريخ المحددة، الشوارع). At للنقطة المحددة بدقة متناهية (الساعات، العناوين المحددة برقم، الأماكن النقطية).',
     timelineDescription: 'تدرج من النطاق الزمني والمكاني العام إلى النقطة المتناهية الدقة.',
     imageUrl: '/images/grammar/prepositions-mastery.webp',
-    imageAlt: 'Mentor guiding student through precise location maps and schedules',
+    imageAlt: "A tabby cat inside a cardboard box",
     keyUsagePoints: [
       'At: للوقت الدقيق (at 5 PM, at midnight, at noon) والمواقع المحددة (at the bus stop, at 45 Baker St).',
       'On: للأيام والتواريخ (on Monday, on October 25th) والأسطح ووسائل المواصلات العامة (on the bus, on the plane).',
@@ -1274,7 +1274,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'متى نضع بعد الفعل to + المصدر ومتى نضع ing؟ بعض الأفعال تشترط المصدر مثل (decide, hope, manage, promise)، وأفعال أخرى تشترط اسم الفاعل مثل (enjoy, avoid, suggest, admit). وهناك أفعال يتغير معناها بالكامل مثل stop و remember!',
     timelineDescription: 'تحديد دلالة الفعل الثاني: هدف مستقبلي (to + V) أم تجربة وفعل مستمر (V-ing).',
     imageUrl: '/images/grammar/gerunds-infinitives.webp',
-    imageAlt: 'Writer taking handwritten notes planning creative goals',
+    imageAlt: "A swimmer moving through a pool",
     keyUsagePoints: [
       'Verbs followed by Gerund: enjoy, avoid, practice, mind, consider, postpone, keep.',
       'Verbs followed by Infinitive: decide, plan, hope, expect, offer, agree, afford.',
@@ -1321,7 +1321,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'من أقوى أساليب الإنجليزية المتقدمة لإبهار لجان التقييم وممتحني الآيلتس والحديث الاحترافي! السببية (Causative) تعني أنك لم تقم بالعمل بنفسك بل طلبت من متخصص إنجازه. وأسلوب التقديم (Inversion) يقلب ترتيب الجملة لتوكيد بلاغي فائق.',
     timelineDescription: 'توكيد بلاغي راقٍ وتكليف بالمهام للمحترفين.',
     imageUrl: '/images/grammar/causatives-inversion.webp',
-    imageAlt: 'Executive presentation showing advanced linguistic mastery and rhetoric',
+    imageAlt: "A barber cutting a customer's hair",
     keyUsagePoints: [
       'Causative Have / Get: have something done (I had my laptop repaired = الفني هو اللي صلحها مش أنا).',
       'Active Causatives: have someone do (مصدر بدون to) مقابل get someone to do (مع to).',
@@ -1368,7 +1368,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'السؤال المذيل هو ذيل صغير في آخر الجملة بيحول الكلام الخبري لسؤال لطيف، وبيدي إحساس بالثقة والألفة في المحادثة. القاعدة الذهبية: جملة موجبة تأخذ ذيل منفي، وجملة منفية تأخذ ذيل موجب.',
     timelineDescription: 'أداة محادثة يومية للتأكد من المعلومة أو فتح كلام ودود.',
     imageUrl: '/images/grammar/question-tags.webp',
-    imageAlt: 'Friendly conversation confirming information with a question tag',
+    imageAlt: "Two people talking at an outdoor table",
     keyUsagePoints: [
       'القاعدة الأساسية: جملة موجبة + ذيل منفي، وجملة منفية + ذيل موجب.',
       'الذيل بيستخدم نفس الفعل المساعد بتاع الجملة: is, do, did, will, have, can.',
@@ -1447,7 +1447,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'زمن خاص للحاجات اللي كانت بتحصل في الماضي وبطلت دلوقتي: عادات قديمة، أوضاع اتغيرت، ذكريات. Used to تصلح للأفعال والحالات، لكن Would تصلح للأفعال المتكررة بس وممنوعة مع أفعال الحالة.',
     timelineDescription: 'عادات وأوضاع كانت موجودة في الماضي وانتهت تماماً الآن.',
     imageUrl: '/images/grammar/used-to-would.webp',
-    imageAlt: 'Old photo album representing past habits and memories',
+    imageAlt: "Hands holding old family photographs",
     keyUsagePoints: [
       'Used to + مصدر: عادة أو حالة في الماضي انتهت: I used to smoke (بطلت التدخين).',
       'Would + مصدر: عادة ماضية متكررة (فعل حركة بس): We would walk to school together.',
@@ -1526,7 +1526,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'عشان تقارن بين حاجتين بنضيف er للصفة القصيرة أو more للطويلة، وعشان نفضل حاجة على الكل بنستخدم the est أو the most. وفي صفات شاذة لازم تحفظها زي good/better/best.',
     timelineDescription: 'بناء ثابت في المستوى التأسيسي للمقارنات اليومية والتفضيل.',
     imageUrl: '/images/grammar/comparatives-superlatives.webp',
-    imageAlt: 'Students comparing results and choosing the best option',
+    imageAlt: "Neighbouring towers with different heights",
     keyUsagePoints: [
       'صفة من مقطع واحد: + er / the + est (tall / taller / the tallest).',
       'صفة طويلة (مقطعين فأكثر): more / the most (more beautiful / the most beautiful).',
@@ -1604,7 +1604,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'في الإنجليزي الأسماء نوعين: حاجات بتتعد (كتاب، كتب) وحاجات متتعدش (مية، معلومة، نصيحة). والنوع التاني ممنوع ياخد a/an أو جمع s، وده اللي بيحدد تستخدم many ولا much و few ولا little.',
     timelineDescription: 'قاعدة تأسيسية بتأثر على كل جملة فيها كمية أو عدد.',
     imageUrl: '/images/grammar/countable-uncountable.webp',
-    imageAlt: 'Books and coffee showing countable and uncountable everyday items',
+    imageAlt: "A water bottle and a glass of water",
     keyUsagePoints: [
       'المعدود: يقبل a/an والجمع s: a book, two books, many books.',
       'غير المعدود: ممنوع a/an أو s: water, information, advice, money, furniture.',
@@ -1683,7 +1683,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'كلمات صغيرة زي always و usually و sometimes بتوصف التكرار، وعندها مكان ثابت في الجملة: قبل الفعل الأساسي، لكن بعد فعل الكينونة be. والترتيب ده بيفرق جداً في إن جملتك تطلع طبيعية.',
     timelineDescription: 'ترتيب الكلمات داخل الجملة لوصف العادات والتكرار.',
     imageUrl: '/images/grammar/adverbs-frequency.webp',
-    imageAlt: 'Weekly planner showing daily habits and routines',
+    imageAlt: "A boy reading a book at a desk",
     keyUsagePoints: [
       'السلم من فوق لتحت: always 100% > usually > often > sometimes > rarely > never 0%.',
       'المكان الذهبي: قبل الفعل الأساسي: I usually drink tea.',
@@ -1762,7 +1762,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'Some للإيجاب والعروض، any للنفي والأسئلة، و no مع فعل موجب بتديك جملة منفية المعنى. القاعدة دي أساس المحادثة اليومية كله: طلبات، أسئلة، وصف الكميات.',
     timelineDescription: 'وصف الكميات في الجمل الموجبة والمنفية والاستفهامية.',
     imageUrl: '/images/grammar/quantifiers.webp',
-    imageAlt: 'Classroom discussion about quantities and amounts',
+    imageAlt: "Many apples and other fruit at a market",
     keyUsagePoints: [
       'some في الجملة الموجبة: I bought some new books.',
       'any في النفي والسؤال: I don\'t have any money / Do you have any questions?',
@@ -1840,7 +1840,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أشهر غلطة بتفرق بين المبتدئ والمحترف: الفعل لازم يوافق فاعله في العدد. المفرد ياخد s في المضارع، والجمع ياخد المصدر. وفي كلمات مخادعة زي everyone و news شكلها جمع لكنها مفرد.',
     timelineDescription: 'قاعدة بنيوية تظهر في كل جملة مضارع تكتبها أو تقولها.',
     imageUrl: '/images/grammar/subject-verb-agreement.webp',
-    imageAlt: 'Teacher correcting a sentence on a whiteboard',
+    imageAlt: "A teacher with a group of students",
     keyUsagePoints: [
       'المفرد الغائب (He/She/It) يأخذ s في المضارع البسيط: She works hard.',
       'الكلمات المخادعة المفردة: everyone, everybody, someone, each, every, news, mathematics.',
@@ -1919,7 +1919,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'التركيبة دي بتخليك تحلل الماضي زي المحترفين: should have معناها كان لازم تعمل ومعملتش، must have معناها أكيد حصل، و can\'t have معناها يستحيل يكون حصل. أساس أي محادثة عن ندم أو استنتاج أو لوم.',
     timelineDescription: 'تحليل أحداث ماضية بالندم أو الاستنتاج المنطقي.',
     imageUrl: '/images/grammar/modal-perfect.webp',
-    imageAlt: 'Person reflecting on a past decision at a crossroads',
+    imageAlt: "Passengers waiting at a railway station",
     keyUsagePoints: [
       'should have + V3: ندم أو لوم على حاجة محصلتش: I should have studied harder (كان لازم أذاكر).',
       'must have + V3: استنتاج مؤكد عن الماضي: She must have left early (أكيد مشيت بدري).',
@@ -1998,7 +1998,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'لما تتمنى حاجة عكس الواقع، الإنجليزي بيرجع بك زمن ورا: تمني عن الحاضر ياخد ماضي بسيط، وتمني عن الماضي ياخد ماضي تام، والشكوى من تصرف حد تاخد would. If only نفس القواعد بس أقوى في الإحساس.',
     timelineDescription: 'أمنيات غير واقعية في الحاضر أو ندم على الماضي.',
     imageUrl: '/images/grammar/wish-if-only.webp',
-    imageAlt: 'Person looking at the horizon wishing for a different reality',
+    imageAlt: "Umbrellas on a sunny beach",
     keyUsagePoints: [
       'تمني عن الحاضر: wish + ماضي بسيط: I wish I lived near the sea (بس الحقيقة مش ساكن).',
       'تمني عن الماضي: wish + ماضي تام: I wish I had studied harder (ندم).',
@@ -2076,7 +2076,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'المستوى المتقدم من الـ if: خلط زمنين في جملة واحدة. أشهر صورة: شرط في الماضي محصلش ونتيجته في الحاضر: If I had studied medicine, I would be a doctor now. التركيبة دي علامة الطلاقة الحقيقية في المحادثة والامتحانات الدولية.',
     timelineDescription: 'ربط أحداث ماضية بنتائج حاضرة، أو صفات دائمة بنتائج ماضية.',
     imageUrl: '/images/grammar/mixed-conditionals.webp',
-    imageAlt: 'Timeline showing a past decision affecting the present',
+    imageAlt: "A graduate celebrating with a mortarboard",
     keyUsagePoints: [
       'النوع الأول: If + past perfect + would + مصدر: ماضي محصلش أثره حاضر: If I had saved money, I would be rich now.',
       'النوع التاني: If + past simple + would have + V3: صفة دائمة أثرت على الماضي: If I were braver, I would have applied.',
@@ -2089,7 +2089,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'متخافش من طول الجملة: رتبها في دماغك شرط ثم نتيجة، والزمن هيضبط نفسه.'
     ],
     commonTraps: [
-      'فخ استخدام النوع التالت كامل مع نتيجة حاضرة: الخطأ If I had studied, I would have a job now (تصلح لكنها تعني نتيجة ماضية)، الأدق للحاضر: I would have a job now مع would + مصدر: If I had studied, I would have... انتبه: الصح هنا would have مش would have had إلا للملكية.',
+      'فخ استخدام would have + V3 لنتيجة حاضرة: If I had studied harder, I would have passed the exam تصف نتيجة ماضية. أما If I had studied harder, I would have a better job now فنتيجتها حاضرة، وhave هنا مصدر يدل على الملكية وليس فعلاً مساعداً للماضي التام.',
       'فخ الخلط: الخطأ If I studied harder, I would be passed، الصح: If I had studied harder, I would pass / would have passed.',
       'فخ will بعد if: الخطأ If I will have time، الصح: If I had time (في الشرط غير الحقيقي).'
     ],
@@ -2149,7 +2149,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الفرق بين كلام مكسّر وكلام مترابط هو أدوات الربط. لكن في فخاخ شهيرة: although و but ممنوع يجوا مع بعض، و despite ممنوع تاخد of، و however بتحتاج فاصلة. القواعد الصغيرة دي بتفرق جداً في الكتابة الأكاديمية والآيلتس.',
     timelineDescription: 'ربط الأفكار في الكتابة والمحادثة بشكل منطقي متسلسل.',
     imageUrl: '/images/grammar/linking-words.webp',
-    imageAlt: 'Connected chain links representing logical flow of ideas',
+    imageAlt: "A student reading in a library",
     keyUsagePoints: [
       'التناقض: although/even though + جملة كاملة، لكن despite/in spite of + اسم أو gerund.',
       'النتيجة: so (غير رسمي) و therefore/as a result (رسمي) مع فاصلة.',
@@ -2228,7 +2228,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الأفعال المركبة هي قلب الإنجليزي المحكي: فعل + حرف صغير بيغير المعنى كلياً. give معناها يعطي، لكن give up معناها يستسلم. إتقان الأشهر منها بيخلي كلامك طبيعي جداً، وهي أساس الفهم في الأفلام والمحادثات الحقيقية.',
     timelineDescription: 'مفردات المحادثة اليومية الطبيعية في كل المواقف.',
     imageUrl: '/images/grammar/phrasal-verbs-mastery.webp',
-    imageAlt: 'Casual conversation full of natural phrasal verbs',
+    imageAlt: "An airplane taking off",
     keyUsagePoints: [
       'الفعل المركب معناه جديد كلياً: look up (يبحث)، look after (يرعى)، look forward to (يتشوق لـ).',
       'قابل للفصل: الضمير يجي في النص دايماً: pick it up مينفعش pick up it.',
@@ -2309,7 +2309,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'فعل To Be هو أول فعل لازم تتقنه: بيستخدم للوصف والتعريف والحالة، ومعناه "يكون" لكن في الإنجليزي بنحطه في الجملة دايماً، حتى لو مالوش ترجمة واضحة بالعربي.',
     timelineDescription: 'حالة أو وصف ثابت في الزمن الحاضر: الاسم، السن، الشغلانة، المكان، الإحساس.',
     imageUrl: '/images/grammar/verb-to-be.webp',
-    imageAlt: 'Students introducing themselves in a study group',
+    imageAlt: "A medical professional holding a stethoscope",
     keyUsagePoints: [
       'التعريف بالنفس والآخرين (I am Mohamed / She is Sara)',
       'الوصف والحالة (The test is easy / We are tired)',
@@ -2361,7 +2361,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الضمائر بتغنيك عن تكرار الأسماء. سرّها بسيط: الضمير اللي بيعمل الفعل = فاعل (I, he, they)، واللي بيتعمل فيه الفعل أو بييجي بعد حرف جر = مفعول (me, him, them).',
     timelineDescription: 'قاعدة تركيبية ثابتة لا ترتبط بزمن معين؛ تُستخدم في كل الجمل.',
     imageUrl: '/images/grammar/subject-object-pronouns.webp',
-    imageAlt: 'Teacher pointing at pronouns chart with a student',
+    imageAlt: "Friends sharing a picnic in a park",
     keyUsagePoints: [
       'ضمائر الفاعل تأتي قبل الفعل مباشرة (She loves coffee)',
       'ضمائر المفعول تأتي بعد الفعل أو حرف الجر (I called him / Talk to me)',
@@ -2412,7 +2412,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'ثلاث طرق للملكية: صفة ملكية قبل الاسم (my, his, their)، ضمير ملكية يستغني عن الاسم (mine, hers, theirs)، والـ \'s بعد اسم الشخص أو الحيوان (my father\'s house).',
     timelineDescription: 'قاعدة تركيبية ثابتة للتعبير عن الملكية أو النسبة في أي زمن.',
     imageUrl: '/images/grammar/possessives.webp',
-    imageAlt: 'Students pointing at their own books in a classroom',
+    imageAlt: "A hand holding house keys and a wallet",
     keyUsagePoints: [
       'صفات الملكية لا تأتي أبداً بدون اسم بعدها (my phone, our house)',
       'ضمائر الملكية تأتي بدون اسم بعدها (The phone is mine)',
@@ -2463,7 +2463,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'لما تعايز تقول "في" بمعنى الوجود (في مطعم كويس هنا)، استخدم There is للمفرد و There are للجمع. دي أسرع طريقة توصف بيها مكان أو تسأل عن وجود حاجة.',
     timelineDescription: 'وصف وجود شيء في الحاضر؛ للماضي نستخدم There was / There were.',
     imageUrl: '/images/grammar/there-is-there-are.webp',
-    imageAlt: 'A library with many books on shelves',
+    imageAlt: "A furnished room with chairs and a large window",
     keyUsagePoints: [
       'There is + اسم مفرد (There is a pharmacy nearby)',
       'There is + اسم غير معدود (There is some water)',
@@ -2514,7 +2514,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'Have got = "عندي/معايا" في الإنجليزي البريطاني المحكي. معناها ملكية أو صفة ثابتة، وليست زمن تام رغم شكلها. الأمريكي بيقول have بس، لكن البريطاني والكتب بتفضّل have got في الكلام.',
     timelineDescription: 'ملكية أو صفة ثابتة في الحاضر فقط؛ لا تُستخدم للماضي (نستخدم had).',
     imageUrl: '/images/grammar/have-got.webp',
-    imageAlt: 'Friends celebrating, showing what they have achieved',
+    imageAlt: "A camera with its leather carrying bag",
     keyUsagePoints: [
       'الملكية (I have got a new phone)',
       'الصفات الجسدية والعائلية (She has got blue eyes / We have got two kids)',
@@ -2565,7 +2565,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'صيغة الأمر أبسط صيغة في الإنجليزي: جملة بتبدأ بالفعل في المصدر من غير فاعل. بنستخدمها للأوامر، التعليمات، الإرشادات، الوصفات، والتحذيرات.',
     timelineDescription: 'لا زمن محدد؛ توجه المستمع لفعل مطلوب الآن أو كقاعدة عامة.',
     imageUrl: '/images/grammar/imperatives.webp',
-    imageAlt: 'Coach giving instructions to a player',
+    imageAlt: "A red STOP sign",
     keyUsagePoints: [
       'الأوامر والتعليمات المباشرة (Sit down. / Turn left at the corner.)',
       'الإرشادات والوصفات (Add two spoons of sugar.)',
@@ -2616,7 +2616,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'Can معناها "يقدر / يعرف / ممكن": قدرة، مهارة، أو إذن. ماضيها could. سهلة لأن الفعل بعدها دايماً في المصدر من غير to ومن غير أي إضافات.',
     timelineDescription: 'قدرة حالية (can) أو قدرة في الماضي (could)؛ لا تصريف ثالث لها.',
     imageUrl: '/images/grammar/can-for-ability.webp',
-    imageAlt: 'Young people learning new skills together',
+    imageAlt: "A person swimming in a pool",
     keyUsagePoints: [
       'القدرة والمهارة (She can drive / I can cook)',
       'الإذن والسماح (Can I go out? / You can use my laptop)',
@@ -2667,7 +2667,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أدوات الاستفهام هي مفاتيح أي محادثة: What لمين/إيه، Where لفين، When لإمتى، Why ليه، Who لمين، How إزاي، Which أنهي، Whose بتاعة مين. ترتيبها ثابت: أداة + فعل مساعد + فاعل + فعل.',
     timelineDescription: 'تُستخدم في كل الأزمنة؛ المساعد يتغير حسب الزمن (do/did/will/is).',
     imageUrl: '/images/grammar/wh-questions.webp',
-    imageAlt: 'A student asking questions in an online class',
+    imageAlt: "A railway station clock above travellers",
     keyUsagePoints: [
       'What للأشياء والمعلومات / Who للأشخاص',
       'Where للمكان / When للوقت / Why للسبب',
@@ -2718,7 +2718,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أسماء الإشارة بتشاور على الحاجات: this/these للقريب، that/those للبعيد، والمفرد ياخد is والجمع ياخد are. ومعاها جموع الأسماء: أغلبها s منتظمة، وشوية شواذ لازم يتحفظوا.',
     timelineDescription: 'قاعدة تركيبية ثابتة للإشارة والعد؛ تُستخدم في كل الأزمنة.',
     imageUrl: '/images/grammar/demonstratives-plurals.webp',
-    imageAlt: 'A teacher pointing at near and far objects in class',
+    imageAlt: "A stack of several books",
     keyUsagePoints: [
       'This + is للمفرد القريب / That + is للمفرد البعيد',
       'These + are للجمع القريب / Those + are للجمع البعيد',
@@ -2769,7 +2769,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أربع كلمات بتوصّف الدرجة: too = زيادة عن اللزوم (سلبي)، enough = كفاية (محايد/إيجابي)، so = جداً للتأكيد والنتيجة، such = جداً لكن مع اسم. الفرق بينهم في الترتيب: too قبل الصفة، و enough بعدها.',
     timelineDescription: 'أدوات وصف للدرجة؛ تدخل في كل الأزمنة دون تغيير.',
     imageUrl: '/images/grammar/too-enough-so-such.webp',
-    imageAlt: 'A suitcase too heavy to lift at a station',
+    imageAlt: "Passengers packed into a train carriage",
     keyUsagePoints: [
       'too + صفة (+ to + مصدر): too tired to work',
       'صفة + enough (+ to + مصدر): old enough to drive',
@@ -2820,7 +2820,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'لما الكلام عن اختيارين بس: both يعني الاتنين مع بعض، either يعني أي واحد فيهم، و neither يعني ولا واحد فيهم. مع both ... and و either ... or و neither ... nor بتبقى أقوى.',
     timelineDescription: 'أدوات تحديد للكمية والاختيار؛ تدخل في كل الأزمنة دون تغيير.',
     imageUrl: '/images/grammar/both-either-neither.webp',
-    imageAlt: 'Two paths crossing in a park, a choice between two options',
+    imageAlt: "Two bicycles parked side by side",
     keyUsagePoints: [
       'Both + جمع: Both restaurants are good',
       'Either + مفرد: Either restaurant is fine (أي واحد ينفع)',
@@ -2871,7 +2871,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الاتنين للمستقبل بس المعنى مختلف: will للقرار اللي اتخد في لحظة الكلام، الوعود، والتوقعات الرأيية. و be going to للخطط المتخدة من قبل الكلام، وللتوقع المبني على دليل شايفه قدامك.',
     timelineDescription: 'نقطة مستقبلية؛ الاختيار بين will و going to يعتمد على لحظة اتخاذ القرار ووجود دليل.',
     imageUrl: '/images/grammar/going-to-vs-will.webp',
-    imageAlt: 'A person planning the future on a calendar',
+    imageAlt: "Heavy storm clouds gathering",
     keyUsagePoints: [
       'Will: قرار فوري (I will help you with that bag!)',
       'Will: وعد أو عرض (I will call you tonight / Will you marry me?)',
@@ -2922,7 +2922,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'القاعدة الذهبية: لو في وقت ماضي محدد في الجملة (yesterday, in 2019, last week) استخدم الماضي البسيط. لو الكلام عن خبرة من غير وقت، أو حاجة ليها أثر دلوقتي، استخدم المضارع التام. ممنوع تخلط وقت ماضي محدد مع المضارع التام!',
     timelineDescription: 'الماضي البسيط نقطة مغلقة انتهت؛ المضارع التام جسر بين الماضي والحاضر.',
     imageUrl: '/images/grammar/present-perfect-vs-past-simple.webp',
-    imageAlt: 'A bridge between past and present on a timeline',
+    imageAlt: "A passport and a camera ready for travel",
     keyUsagePoints: [
       'Past Simple مع أدوات الوقت المحدد: yesterday, ago, last, in 2010',
       'Present Perfect للخبرة العامة: Have you ever tried koshary?',
@@ -2973,7 +2973,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'ظرف الحال بيجاوب على سؤال "إزاي؟": بيسوّق إزاي؟ بيتكلم إزاي؟ أغلبها صفة + ly، بمكانها الطبيعي بعد الفعل أو بعد المفعول مباشرة، مش بين الفعل ومفعوله.',
     timelineDescription: 'تصف كيفية الفعل في أي زمن دون أن تتصرف.',
     imageUrl: '/images/grammar/adverbs-of-manner.webp',
-    imageAlt: 'A person driving carefully on a wet road',
+    imageAlt: "An artist painting on a canvas",
     keyUsagePoints: [
       'التكوين: صفة + ly (quick-quickly, careful-carefully)',
       'الشواذ المهمة: good -> well / fast -> fast / hard -> hard / late -> late',
@@ -3024,7 +3024,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الاتنين "لازم": must لما اللزوم من رأي المتكلم أو قاعدة صارمة، و have to لما ظرف خارجي هو اللي بيفرض. لكن في النفي الفرق خطير: mustn\'t يعني ممنوع، و don\'t have to يعني مش مطلوب منك (تقدر تعمله براحتك).',
     timelineDescription: 'لزوم في الحاضر؛ الماضي = had to، والمستقبل = will have to.',
     imageUrl: '/images/grammar/must-and-have-to.webp',
-    imageAlt: 'A stop sign and a mandatory direction sign on a road',
+    imageAlt: "A worker carrying a hard hat",
     keyUsagePoints: [
       'Must: قواعد صارمة ونصيحة قوية (You must see a doctor)',
       'Have to: التزامات خارجية (I have to wear a uniform at work)',
@@ -3078,7 +3078,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'قاعدة الاعتياد: لما حاجة تكون عادية بالنسبالك دلوقتي أو بتتعود عليها لسه. Be used to معناها "متعود على"، و Get used to معناها "بدأ يتعود". احذر: بعدهم الفعل بيكون في ing مش مصدر، عكس used to بتاعة الماضي تماماً.',
     timelineDescription: 'حالة اعتياد موجودة في الحاضر (be used to) أو عملية اعتياد لسه شغالة (get used to).',
     imageUrl: '/images/grammar/be-get-used-to.webp',
-    imageAlt: 'Person comfortably following a daily routine they are accustomed to',
+    imageAlt: "A busy city street filled with cars",
     keyUsagePoints: [
       'Be used to + V-ing/اسم: حاجة بقت عادية ليك: I am used to the noise (الصوت العالي بقى عادي).',
       'Get used to + V-ing/اسم: عملية التعود نفسها: You will get used to the new system (هتتعود عليه مع الوقت).',
@@ -3156,7 +3156,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'لما تنقل أمر أو طلب حد قاله، مش بنستخدم صيغة الأمر تاني، بنستخدم فعل زي tell أو ask وبعدين الشخص وبعدين to والمصدر: "Open the door" تتحول لـ He told me to open the door.',
     timelineDescription: 'نقل أمر أو طلب قيل في الماضي بصيغة محايدة.',
     imageUrl: '/images/grammar/reported-commands.webp',
-    imageAlt: 'Teacher giving instructions that students report to each other',
+    imageAlt: "A teacher pointing at written work with a student",
     keyUsagePoints: [
       'القاعدة الذهبية: tell/ask/order/advise/warn + المفعول به + to + المصدر: She asked me to wait.',
       'نفي الأمر المنقول: not قبل to: The doctor told me not to smoke.',
@@ -3234,7 +3234,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'جملة الوصل إما "محددة" (Defining): معلومة ضرورية بدونها الجملة مش مفهومة، وتكتب بدون فواصل ويجوز فيها that وحذف الضمير. أو "غير محددة" (Non-Defining): معلومة إضافية ممكن نشيلها، وتحط بين فاصلين وممنوع فيها that وحذف الضمير.',
     timelineDescription: 'وصف الأسماء وتحديدها في أي زمن - القاعدة عن البنية لا الزمن.',
     imageUrl: '/images/grammar/defining-non-defining-relatives.webp',
-    imageAlt: 'Two paths illustrating essential versus extra information in a sentence',
+    imageAlt: "A woman among library shelves",
     keyUsagePoints: [
       'Defining: بتحدد مين أو إيه بالظبط اللي بنتكلم عنه: The student who studies hard succeeds (أي طالب؟ اللي بيذاكر).',
       'Non-Defining: معلومة زيادة عن شخص أو شيء معروف: My father, who is 60, still works (أبويا معروف مين هو).',
@@ -3317,7 +3317,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'لما تحكي عن خطة أو توقع كان موجود في لحظة ماضية: كان قاصد، كان هيعمل. Was going to هي ماضي going to، و Would هي ماضي will في الكلام المنقول والتوقعات القديمة.',
     timelineDescription: 'نقطة في الماضي، ومنها كنا ننظر لأحداث "مستقبلية" بالنسبة لتلك اللحظة.',
     imageUrl: '/images/grammar/future-in-the-past.webp',
-    imageAlt: 'Calendar seen from a past moment showing plans that lay ahead then',
+    imageAlt: "A passport held above a map",
     keyUsagePoints: [
       'Was/Were going to: نية أو خطة ماضية (تحققت أو لا): I was going to call you, but I forgot (كنت أنوي).',
       'Would: ماضي will في الكلام المنقول: He said he would help us = قال إنه هيساعدنا.',
@@ -3395,7 +3395,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'الفعلان معناهما "يعمل" لكن لا يتبادلان الأماكن: Make لما تكون النتيجة شيء جديد اتخلق أو اتقرر (make a cake, make a decision)، و Do للأنشطة والواجبات والشغل (do homework, do business). الباقي تصبغات ثابتة لازم تتحفظ كوحدات.',
     timelineDescription: 'قاعدة معجمية (اختيار الفعل الصحيح مع الاسم) وليست زمناً.',
     imageUrl: '/images/grammar/make-vs-do.webp',
-    imageAlt: 'Hands making something new versus doing a routine task',
+    imageAlt: "Food being cooked in a pan",
     keyUsagePoints: [
       'Make = خلق وإنتاج: make food, make a cake, make a plan, make money.',
       'Make = قرارات وكلام ومشاعر: make a decision, make a suggestion, make a promise, make someone happy.',
@@ -3473,7 +3473,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
     summaryAr: 'أربع كلمات معناهم "كل" لكن بتركيبات مختلفة: All مع الجمع وغير المعدود (all students, all day)، و The whole مع المفرد (the whole day)، و Every مع المفرد بمعنى "كل واحد في المجموعة"، و Each لما تركز على كل فرد لوحده. الغلط الأشهر: whole بدون the، و every مع الجمع.',
     timelineDescription: 'قاعدة كميات وتحديد وليست زمناً.',
     imageUrl: '/images/grammar/all-whole-every-each.webp',
-    imageAlt: 'A complete puzzle where all pieces and each single piece are visible',
+    imageAlt: "A teacher helping one student with written work",
     keyUsagePoints: [
       'All + اسم جمع أو غير معدود: All students passed / All the water is clean.',
       'The whole + اسم مفرد: the whole day = all day، the whole family = all the family.',
