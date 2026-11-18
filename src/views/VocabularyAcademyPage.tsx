@@ -48,6 +48,8 @@ interface VocabularyAcademyPageProps {
 export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ onNavigate, learnerId }) => {
   const { t } = useLanguage();
   const [searchTerm, setSearchTerm] = useState('');
+  const [verbSearch, setVerbSearch] = useState('');
+  const verbText = useAppTextMap('verbsData');
   const appText = useAppTextMap('vocabularyAcademyData');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [activeTab, setActiveTab] = useState<'explorer' | 'my-vocab' | 'expressions' | 'thematic' | 'verbs' | 'flashcards'>('explorer');
@@ -60,7 +62,7 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
       const word = target.startsWith('word:') ? VOCABULARY_ACADEMY_WORDS.find(item => item.id === target.slice(5)) : undefined;
       const verb = target.startsWith('verb:') ? VERB_TOOLKIT.find(item => item.v1 === target.slice(5)) : undefined;
       if (word) { setActiveTab('thematic'); setSearchTerm(word.word); setSelectedCategory('all'); }
-      else if (verb) setActiveTab('verbs');
+      else if (verb) { setActiveTab('verbs'); setVerbSearch(''); }
       else return;
       const id = word ? 'vocabulary-thematic-results' : `vocab-verb-${verb!.v1}`;
       frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: 'start', behavior: 'instant' }));
@@ -125,6 +127,14 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
 
     const matchesCat = selectedCategory === 'all' || w.category === selectedCategory;
     return matchesSearch && matchesCat;
+  });
+
+  // Keep original positions while filtering: duplicate base forms have stable
+  // deep-link IDs and must not be renumbered by the current search result.
+  const filteredVerbs = VERB_TOOLKIT.map((verb, index) => ({ verb, index })).filter(({ verb }) => {
+    const term = verbSearch.trim().toLowerCase();
+    return !term || [verb.v1, verb.v2, verb.v3, verb.meaningAr, verb.example,
+      txText(verbText, verb.meaningAr)].some(value => value.toLowerCase().includes(term));
   });
 
   const dueCards = getDueSrsCards(srsCards);
@@ -378,14 +388,21 @@ export const VocabularyAcademyPage: React.FC<VocabularyAcademyPageProps> = ({ on
             {t('va.v3Note')}
           </div>
 
+          <label className="flex items-center gap-3 rounded-2xl border border-white/15 bg-[#13152b] px-4">
+            <Search className="w-5 h-5 shrink-0 text-[#41e7ff]" />
+            <input type="search" dir="auto" value={verbSearch} onChange={e => setVerbSearch(e.target.value)}
+              placeholder={t('va.verbSearch')} aria-label={t('va.verbSearch')}
+              className="min-w-0 w-full bg-transparent py-4 text-sm outline-none" />
+          </label>
+          {filteredVerbs.length === 0 && <p role="status" className="rounded-2xl border border-white/15 p-5 text-sm text-[#b9b6d5]">{t('va.verbEmpty')}</p>}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {VERB_TOOLKIT.map((verb, idx) => (
+            {filteredVerbs.map(({ verb, index: idx }) => (
               <div
                 key={`${verb.v1}-${idx}`} id={`vocab-verb-${verb.v1}${VERB_TOOLKIT.findIndex(entry => entry.v1 === verb.v1) === idx ? '' : `-${idx}`}`}
                 className="scroll-mt-24 p-4 rounded-2xl glass-panel border border-white/10 hover:border-white/20 transition-all space-y-2"
               >
                 <div className="flex flex-wrap items-start justify-between gap-3">
-                  <span className="text-sm font-black text-[#ffd166]">{verb.meaningAr}</span>
+                  <span className="text-sm font-black text-[#ffd166]">{txText(verbText, verb.meaningAr)}</span>
                   <LessonSpeechButton text={`${verb.v1}, ${verb.v2}, ${verb.v3}`} label={`${t('va.listenFormsTitle')}: ${verb.v1}`} iconOnly className="p-2 rounded-lg bg-white/5 text-[#41e7ff] hover:text-white" />
                 </div>
 
