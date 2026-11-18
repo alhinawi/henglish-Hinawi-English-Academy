@@ -13,7 +13,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { LexicalEntry, isWordSaved, saveWord, removeSavedWord } from '../../services/vocabularyService';
-import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
+import { txExample, txMeaning, useContentMap, englishSourceText } from '../../services/contentI18nService';
 import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 
@@ -44,7 +44,7 @@ export const WordCard: React.FC<WordCardProps> = ({
   savedVersion,
   viewMode = 'grid',
 }) => {
-  const { t, dir } = useLanguage();
+  const { t, dir, lang } = useLanguage();
   const [saveError, setSaveError] = useState(false);
   const [saved, setSaved] = useState(() => isWordSaved(entry.headword, learnerId));
   // A detail-modal save/remove changes the same persisted word as this card.
@@ -52,8 +52,8 @@ export const WordCard: React.FC<WordCardProps> = ({
     setSaved(isWordSaved(entry.headword, learnerId));
   }, [entry.headword, savedVersion, learnerId]);
   const txMap = useContentMap('vocab');
-  const shownMeaning = txMeaning(txMap, entry.id, entry.meaningAr);
-  const shownExample = txExample(txMap, entry.id, entry.exampleAr);
+  const shownMeaning = (lang === 'en' ? (entry.definitionEn || englishSourceText('vocabularyAcademyData', entry.meaningAr)) : txMeaning(txMap, entry.id, entry.meaningAr));
+  const shownExample = (lang === 'en' ? entry.exampleEn : txExample(txMap, entry.id, entry.exampleAr));
 
   const handleToggleSave = (e: React.MouseEvent) => {
     e.stopPropagation();

@@ -20,7 +20,7 @@ import {
   Quote,
 } from 'lucide-react';
 import { LexicalEntry, isWordSaved, saveWord, removeSavedWord, getSavedWords } from '../../services/vocabularyService';
-import { txExample, txMeaning, useContentMap } from '../../services/contentI18nService';
+import { txExample, txMeaning, useContentMap, englishSourceText } from '../../services/contentI18nService';
 import { PronunciationButton } from './PronunciationButton';
 import { playSound } from '../../utils/audio';
 
@@ -49,7 +49,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   onClose,
   onWordSavedChange,
 }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const dialogRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   const [saved, setSaved] = useState(false);
@@ -58,8 +58,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   const [persistedNote, setPersistedNote] = useState('');
   const [noteSaved, setNoteSaved] = useState(false);
   const txMap = useContentMap('vocab');
-  const shownMeaning = entry ? txMeaning(txMap, entry.id, entry.meaningAr) : '';
-  const shownExample = entry ? txExample(txMap, entry.id, entry.exampleAr) : '';
+  const shownMeaning = entry ? (lang === 'en' ? (entry.definitionEn || englishSourceText('vocabularyAcademyData', entry.meaningAr)) : txMeaning(txMap, entry.id, entry.meaningAr)) : '';
+  const shownExample = entry ? (lang === 'en' ? entry.exampleEn : txExample(txMap, entry.id, entry.exampleAr)) : '';
 
   useEffect(() => {
     if (entry) {
@@ -254,7 +254,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         </div>
 
         {/* Alternative Meanings if available */}
-        {entry.otherMeaningsAr && entry.otherMeaningsAr.length > 0 && (
+        {lang !== 'en' && entry.otherMeaningsAr && entry.otherMeaningsAr.length > 0 && (
           <div className="space-y-2">
             <h4 className="text-xs font-black text-white/70 flex items-center gap-1.5">
               <Tag className="w-3.5 h-3.5 text-[#ffd166]" />

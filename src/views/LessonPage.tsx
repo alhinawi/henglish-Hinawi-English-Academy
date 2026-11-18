@@ -182,7 +182,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                     {token.text}
                   </span>
                   <span className="text-[10px] text-[#b9b6d5] font-semibold mt-1.5 font-['Cairo']">
-                    {token.label}
+                    {txText(appText, token.label)}
                   </span>
                 </div>
               </React.Fragment>
@@ -269,7 +269,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               >
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <span className="px-2.5 py-0.5 rounded-md text-xs font-black bg-[#41e7ff]/15 text-[#41e7ff]">
-                    {c.tense}
+                    {txText(appText, c.tense)}
                   </span>
                   <LessonSpeechButton key={c.sentence} text={c.sentence} label={`${t('lp.listenExample')}: ${c.sentence}`} iconOnly className="p-1 text-[#b9b6d5] hover:text-white" />
                 </div>
@@ -280,7 +280,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                   {t('lp.meaning')} {txText(appText, c.meaning)}
                 </p>
                 <p className="text-xs text-[#b9b6d5]">
-                  {c.explanation}
+                  {txText(appText, c.explanation)}
                 </p>
               </div>
             ))}
@@ -330,7 +330,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
               return (
                 <div key={q.id} className="p-5 rounded-2xl bg-[#09091a] border border-white/10 space-y-3">
                   <p className="en text-base font-black text-white">
-                    {qIdx + 1}. {q.question}
+                    {qIdx + 1}. {txText(appText, q.question)}
                   </p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -367,7 +367,7 @@ export const LessonPage: React.FC<LessonPageProps> = ({
                       <strong className={isCorrect ? 'text-[#c4ff55]' : 'text-[#ff4f9a]'}>
                         {isCorrect ? t('lp.correct') + ' ' : t('lp.incorrect') + ' '}
                       </strong>
-                      {q.explanation}
+                      {txText(appText, q.explanation)}
                     </div>
                   )}
                 </div>

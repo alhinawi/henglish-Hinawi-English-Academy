@@ -22,3 +22,9 @@ The live mobile failure was reproduced on 2026-11-18: the static site did not de
 ## Verification
 
 Run `node scripts/check-static-academy-speech.cjs`, then `npm run build:next` and `python scripts/check-static-academy-speech-production.py` and `python scripts/check-all-speaking-clips-production.py`. The mobile Chromium fixture uses the Pixel 7 profile, disables speechSynthesis, enforces user-activation playback, and verifies actual MP3 playback time and ended events for all four lines, no synthesis requests, no error feedback, Stop and retry. It does not stub HTMLAudioElement playback. Every speaking dialogue line also passes a mobile-profile actual play-time advance/Stop test. Full academy-wide static coverage remains follow-up work.
+
+## Academy expansion
+
+An additional 232 individually generated MP3 recordings cover all 42 listening lessons (passage and dictation), 36 reading passages, 36 writing models, 36 minimal-pair pronunciation words and 40 legacy-speaking dialogue lines. The full manifest is `docs/academy-audio-manifest.json`. All 360 recordings, including the earlier 128 speaking clips, map to349 distinct exact texts. Shared text keeps the first recording rather than issuing duplicate network calls. Every supplied file is retained. All new recordings fully decode and pass duration/mono-MP3 checks.
+
+This does not yet cover the vocabulary bank, verb forms, pronunciation vowel-chart examples, grammar/course examples, full combined legacy dialogue playback, arbitrary user/AI text or every game item. Those retain the existing fallback. Generated single-word pronunciation needs phonetic review for homographs before treating it as an authoritative IPA recording.
