@@ -1,3 +1,4 @@
+import { isAiServiceUnavailable } from '../../src/services/aiAvailability';
 import type { IncomingMessage, ServerResponse } from 'node:http';
 import dns from 'node:dns';
 import { dispatchTranslation } from '../../server/translationService';
@@ -73,6 +74,7 @@ export default async function handler(req: IncomingMessage & { body?: unknown },
     const result = await dispatchTranslation(body);
     sendJson(res, 200, result);
   } catch (err) {
+    if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return; }
     console.error('Serverless translate handler error:', err);
     sendJson(res, 500, { error: 'Translation service error', message: String(err) });
   }

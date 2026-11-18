@@ -1,3 +1,4 @@
+import { AiServiceUnavailableError } from '../src/services/aiAvailability';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SECURE SERVER-SIDE AI TRANSLATION ENGINE
 // Multi-provider translation service: Google Gemini, OpenAI, Anthropic, & Intelligent Local Fallback
@@ -452,7 +453,7 @@ ${req.text}
   }
 
   // Fallback to intelligent local brain
-  return getLocalEducationalTranslation(req, detectedLang);
+  throw new AiServiceUnavailableError();
 }
 
 /**
@@ -547,7 +548,7 @@ Return JSON strictly:
     console.warn('OpenAI translation failed:', err);
   }
 
-  return getLocalEducationalTranslation(req, detectedLang);
+  throw new AiServiceUnavailableError();
 }
 
 /**
@@ -579,7 +580,7 @@ export async function dispatchTranslation(req: TranslationRequest): Promise<Tran
   } else if (config.provider === 'openai' && config.openaiKey && config.openaiKey !== 'your_openai_api_key_here') {
     result = await callOpenAiTranslation(req, config, detectedLang);
   } else {
-    result = getLocalEducationalTranslation(req, detectedLang);
+    throw new AiServiceUnavailableError();
   }
 
   // Cache valid successful translation
@@ -654,7 +655,7 @@ Focus strictly on the translation at hand. Provide rich examples and cultural/gr
     answer = `سؤال رائع حول الترجمة! في السياق الحالي لـ "${context.originalText}"، تم اختيار الصياغة لتلائم أسلوب (${context.mode})، مع مراعاة التراكيب النحوية والفروق الثقافية بين اللغتين.`;
   }
 
-  return { answer };
+  throw new AiServiceUnavailableError();
 }
 
 /**
@@ -728,12 +729,14 @@ Return ONLY valid JSON:
     }
   }
 
-  return {
+  // Retain the former example for reference, never as extracted text.
+  const legacyExample = {
     extractedText: 'Sample text detected from image: "Master English with Henglish Academy".',
     translatedText: 'نص نموذجي مستخرج من الصورة: "أتقن الإنجليزية مع أكاديمية هناوي".',
     detectedLang: 'en',
     confidence: 0.92,
   };
+  throw new AiServiceUnavailableError();
 }
 
 /**
@@ -791,8 +794,10 @@ export async function dispatchVoiceTranscription(
     }
   }
 
-  return {
+  // Retain the former example for reference, never as a transcript.
+  const legacyExample = {
     transcription: 'Hello, I am practicing English with Henglish Academy.',
     detectedLang: 'en',
   };
+  throw new AiServiceUnavailableError();
 }

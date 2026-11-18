@@ -1,3 +1,4 @@
+import { isAiServiceUnavailable } from '../src/services/aiAvailability';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SERVER API ROUTER & MIDDLEWARE
 // Integrates with Vite dev server and Node / Serverless runtimes
@@ -395,6 +396,7 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       const result = await dispatchTranslation(body);
       sendJson(res, 200, result);
     } catch (err) {
+      if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return true; }
       console.error('API /api/ai/translate error:', err);
       sendJson(res, 500, { error: 'Translation engine failure', message: String(err) });
     }
@@ -423,6 +425,7 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       const result = await dispatchTranslationAssistant(body.question, body.context);
       sendJson(res, 200, result);
     } catch (err) {
+      if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return true; }
       console.error('API /api/ai/assistant error:', err);
       sendJson(res, 500, { error: 'Assistant service error', message: String(err) });
     }
@@ -446,6 +449,7 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       const result = await dispatchImageOcr(body.imageBase64, body.mimeType, body.targetLang || 'ar');
       sendJson(res, 200, result);
     } catch (err) {
+      if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return true; }
       console.error('API /api/ai/ocr-translate error:', err);
       sendJson(res, 500, { error: 'OCR processing error', message: String(err) });
     }
@@ -468,6 +472,7 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       const result = await dispatchVoiceTranscription(body.audioBase64, body.mimeType);
       sendJson(res, 200, result);
     } catch (err) {
+      if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return true; }
       console.error('API /api/ai/voice-transcribe error:', err);
       sendJson(res, 500, { error: 'Audio transcription error', message: String(err) });
     }
