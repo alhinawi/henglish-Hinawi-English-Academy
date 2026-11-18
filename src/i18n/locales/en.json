@@ -2914,5 +2914,8 @@
   "va.verbSearch": "Search verb forms, meanings or English examples",
   "va.verbEmpty": "No matching verbs. Try another form or clear the search.",
   "wa.helperNotice": "Review limit: 1,200 characters. Do not include personal details. Text is sent to the helper service and shares its limits: 6 questions per learner and 30 site-wide daily. Notes can be wrong.",
-  "wa.feedback.tooLong": "This draft exceeds 1,200 characters. Choose a shorter paragraph to review; your original text is unchanged."
+  "wa.feedback.tooLong": "This draft exceeds 1,200 characters. Choose a shorter paragraph to review; your original text is unchanged.",
+  "mvt.search": "Search saved words or their meanings",
+  "mvt.noMatches": "No saved words match this search and filter. Your saved collection is still here.",
+  "mvt.clearFilters": "Clear search and show all words"
 }
