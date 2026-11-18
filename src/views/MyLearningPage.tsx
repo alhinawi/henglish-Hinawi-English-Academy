@@ -1,3 +1,4 @@
+import { quizHistoryTitle } from '../utils/quizHistoryTitle';
 import { futurePerfectProgress } from '../services/courseProgress';
 import { BadgeCollection } from '../components/BadgeCollection';
 import React, { useState } from "react";
@@ -336,9 +337,9 @@ export const MyLearningPage: React.FC<MyLearningPageProps> = ({
                         key={qId}
                         className="hover:bg-white/5 transition-colors"
                       >
-                        <td className="py-3.5 px-4 font-bold">{qId}</td>
+                        <td className="py-3.5 px-4 font-bold"><span dir="auto">{quizHistoryTitle(qId, t)}</span></td>
                         <td className="py-3.5 px-4 font-mono font-bold text-[#ffd166]">
-                          {data.score} / {data.total}
+                          <span dir="ltr" className="inline-block whitespace-nowrap tabular-nums">{data.score} / {data.total}</span>
                         </td>
                         <td className="py-3.5 px-4 font-mono font-bold text-[#c4ff55]">
                           {percent}%
