@@ -77,10 +77,10 @@ export const ExpressionsTab: React.FC = () => {
     const q = searchQuery.trim().toLowerCase();
     return expressions.filter(item => {
       if (q) {
-        const matchExpr = item.expression.toLowerCase().includes(q);
-        const matchAr = item.meaningAr.toLowerCase().includes(q);
-        const matchDef = item.definitionEn.toLowerCase().includes(q);
-        if (!matchExpr && !matchAr && !matchDef) return false;
+        const searchable = [item.expression, item.meaningAr, item.definitionEn,
+          item.exampleEn, item.exampleAr, txMeaning(txMap, item.id, item.meaningAr),
+          txExample(txMap, item.id, item.exampleAr)];
+        if (!searchable.some(value => value.toLowerCase().includes(q))) return false;
       }
       if (selectedCategory !== 'all' && item.category !== selectedCategory) {
         return false;
@@ -90,7 +90,7 @@ export const ExpressionsTab: React.FC = () => {
       }
       return true;
     });
-  }, [expressions, searchQuery, selectedCategory, selectedCefr]);
+  }, [expressions, searchQuery, selectedCategory, selectedCefr, txMap]);
 
   const totalMatches = filtered.length;
   const totalPages = Math.ceil(totalMatches / pageSize) || 1;
