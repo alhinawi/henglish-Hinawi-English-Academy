@@ -1,3 +1,4 @@
+import { fetchExampleSentenceBlock } from './exampleSentenceBlock';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - PHRASE BANK SERVICE
 // Chunked lazy-loaded phrase banks (idioms / slang / genz).
@@ -115,7 +116,8 @@ export async function loadPhraseSentences(
   bank: PhraseBankId,
   entryId: string
 ): Promise<PhraseSentence[] | null> {
-  const index = await loadPhraseIndex(bank);
+  const index = await loadPhraseIndex(bank).catch(() => null);
+  if (!index) return null;
   const numeric = parseInt(entryId.replace(`${index.idPrefix}-`, ''), 10);
   if (!Number.isFinite(numeric) || numeric < 1) return null;
   const lo = Math.floor((numeric - 1) / 100) * 100 + 1;
@@ -126,15 +128,8 @@ export async function loadPhraseSentences(
   if (!sentenceBlockCache.has(key)) {
     sentenceBlockCache.set(
       key,
-      fetch(`/data/${bank}/sentences/${file}`)
-        .then(async (res) => {
-          if (!res.ok) return null;
-          const data = (await res.json()) as { items?: { id: string; sentences: PhraseSentence[] }[] };
-          const map: Record<string, PhraseSentence[]> = {};
-          for (const item of data.items ?? []) map[item.id] = item.sentences;
-          return map;
-        })
-        .catch(() => null)
+      fetchExampleSentenceBlock(`/data/${bank}/sentences/${file}`)
+        .catch(() => { sentenceBlockCache.delete(key); return null; })
     );
   }
   const block = await sentenceBlockCache.get(key)!;
