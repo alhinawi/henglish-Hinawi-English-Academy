@@ -56,8 +56,16 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   const [detailWord, setDetailWord] = useState<LexicalEntry | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const refreshSavedWords = () => {
+    const updated = getSavedWords(learnerId);
+    setSavedWords(updated);
+    // A modal/import can remove the active word outside handleRemove. Keep the
+    // same review snapshot, pruning only words no longer saved, in order.
+    setReviewQueue(queue => queue.filter(word => updated.some(item => item.word === word)));
+    setIsFlipped(false);
+  };
   useEffect(() => {
-    setSavedWords(getSavedWords(learnerId));
+    refreshSavedWords();
   }, [savedVersion, learnerId]);
 
   const now = new Date();
@@ -436,7 +444,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
         entry={detailWord}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        onWordSavedChange={() => setSavedWords(getSavedWords(learnerId))}
+        onWordSavedChange={refreshSavedWords}
       />
     </div>
   );
