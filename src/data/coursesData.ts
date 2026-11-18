@@ -1,3 +1,4 @@
+import { ALL_LISTENING_LESSONS } from './listeningAcademyData';
 
 
 export const COURSE_LEVELS = ['مبتدئ', 'متوسط', 'متقدم', 'شامل'] as const;
@@ -72,8 +73,8 @@ export const COURSES_CATALOG: CourseItem[] = [
     title: 'أكاديمية الاستماع الواقعي',
     titleEn: 'Real-Life Listening Academy',
     description: '٦ مقاطع استماع من مواقف حقيقية: إعلانات المطار، اجتماعات العمل، المقابلات الشخصية، عند الطبيب، وفي الفندق، كل مقطع بأسئلة فهم.',
-    level: 'متوسط',
-    lessonsCount: 6,
+    level: 'شامل',
+    lessonsCount: ALL_LISTENING_LESSONS.length,
     countLabel: '٦ مقاطع',
     tag: 'مهارة الاستماع',
     icon: '',
