@@ -36,7 +36,8 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
 }) => {
   const { t } = useLanguage();
   const requestVersion = useRef(0);
-  useEffect(() => () => { requestVersion.current += 1; }, []);
+  const translationController = useRef<AbortController | null>(null);
+  useEffect(() => () => { requestVersion.current += 1; translationController.current?.abort(); }, []);
   const [file, setFile] = useState<File | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [statusMessage, setStatusMessage] = useState<string>('');
@@ -84,6 +85,9 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
     setStatusMessage(t('dt.decoding'));
 
     const version = ++requestVersion.current;
+    translationController.current?.abort();
+    const controller = new AbortController();
+    translationController.current = controller;
     try {
       const { text, chunks } = await extractTextFromDocument(file);
       if (version !== requestVersion.current) return;
@@ -97,14 +101,17 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
         setStatusMessage(t('dt.translatingChunk').replace('{n}', String(i + 1)).replace('{m}', String(totalChunks)));
         setProgressPercent(Math.round(15 + ((i + 1) / totalChunks) * 80));
 
-        const res = await executeTranslation({
+        const deadline = setTimeout(() => controller.abort(), 60000);
+        let res;
+        try { res = await executeTranslation({
           text: chunk,
           sourceLang,
           targetLang,
           mode,
           includeAlternatives: false,
           includeExplanation: false,
-        }, learnerId);
+        }, learnerId, controller.signal);
+        } finally { clearTimeout(deadline); }
 
         if (version !== requestVersion.current) return;
         if (res.historySaved === false) setHistorySaveFailed(true);
@@ -122,7 +129,7 @@ export const DocumentTranslatorTab: React.FC<DocumentTranslatorTabProps> = ({
       setErrorMessage(err instanceof NoSelectablePdfTextError ? t('dt.errNoPdfText') : isAiServiceUnavailable(err) ? t('ai.unavailable') : t('dt.errTranslate'));
       playSound('wrong');
     } finally {
-      if (version === requestVersion.current) setIsProcessing(false);
+      if (version === requestVersion.current) { translationController.current = null; setIsProcessing(false); }
     }
   };
 
