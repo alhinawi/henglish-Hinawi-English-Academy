@@ -74,6 +74,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore, learner
     const version = generationVersion.current;
     const controller = new AbortController();
     generationController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 60000);
     const isCurrent = () => version === generationVersion.current;
     setIsGenerating(true);
 
@@ -112,6 +113,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore, learner
       }
       playSound('wrong');
     } finally {
+      clearTimeout(deadline);
       if (isCurrent()) { generationController.current = null; setIsGenerating(false); }
     }
   };
