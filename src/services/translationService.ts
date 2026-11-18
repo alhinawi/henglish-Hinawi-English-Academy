@@ -62,8 +62,9 @@ const DEFAULT_COLLECTIONS: VocabularyCollection[] = [
 /**
  * High-Level Translation Dispatcher
  */
-export async function executeTranslation(req: TranslationRequest, learnerId?: string): Promise<TranslationResponse> {
+export async function executeTranslation(req: TranslationRequest, learnerId?: string, signal?: AbortSignal): Promise<TranslationResponse> {
   const response = await fetch('/api/ai/translate', {
+    signal,
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(req),
