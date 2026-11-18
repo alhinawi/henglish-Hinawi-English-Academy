@@ -33,7 +33,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   onTargetChange,
   onSwap,
 }) => {
-  const { t } = useLanguage();
+  const { t, dir } = useLanguage();
   const [isSourceOpen, setIsSourceOpen] = useState(false);
   const [isTargetOpen, setIsTargetOpen] = useState(false);
   const [searchSource, setSearchSource] = useState('');
@@ -64,18 +64,16 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   const targetInfo = getLangInfo(targetLang);
   const detectedInfo = detectedLang ? getLangInfo(detectedLang) : null;
 
-  const filteredSourceLanguages = SUPPORTED_LANGUAGES.filter(
-    l =>
-      l.nameEn.toLowerCase().includes(searchSource.toLowerCase()) ||
-      t(l.nameAr).includes(searchSource)
-  );
-
-  const filteredTargetLanguages = SUPPORTED_LANGUAGES.filter(
-    l =>
-      l.code !== 'auto' &&
-      (l.nameEn.toLowerCase().includes(searchTarget.toLowerCase()) ||
-        t(l.nameAr).includes(searchTarget))
-  );
+  const matchesLanguage = (language: SupportedLanguage, search: string) => {
+    const normalize = (value: string) => value.normalize('NFKD').toLowerCase()
+      .replace(/\p{M}/gu, '').replace(/ı/g, 'i').trim();
+    const query = normalize(search);
+    return [language.code, language.nameEn, t(language.nameAr)]
+      .some(value => normalize(value).includes(query));
+  };
+  const filteredSourceLanguages = SUPPORTED_LANGUAGES.filter(language => matchesLanguage(language, searchSource));
+  const filteredTargetLanguages = SUPPORTED_LANGUAGES.filter(language =>
+    language.code !== 'auto' && matchesLanguage(language, searchTarget));
 
   const handleSwapClick = () => {
     playSound('click');
@@ -83,7 +81,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   };
 
   return (
-    <div className="flex flex-col min-[360px]:flex-row items-center justify-between gap-3 p-3 bg-[#0d0c24]/90 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg">
+    <div className="relative z-20 flex flex-col min-[360px]:flex-row items-center justify-between gap-3 p-3 bg-[#0d0c24]/90 backdrop-blur-md rounded-2xl border border-white/10 shadow-lg">
       {/* Source Language Dropdown */}
       <div className="relative w-full min-w-0 min-[360px]:flex-1" ref={sourceRef}>
         <button
@@ -114,11 +112,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
         {/* Dropdown Menu */}
         {isSourceOpen && (
-          <div className="absolute top-full right-0 mt-2 w-72 max-w-[calc(100vw-4rem)] bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+          <div className={`absolute top-full ${dir === 'rtl' ? 'right-0' : 'left-0'} mt-2 w-72 max-w-[calc(100vw-4rem)] bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150`}>
             <div className="relative mb-2">
               <Search className="w-4 h-4 absolute right-3 top-2.5 text-[#b9b6d5]" />
               <input
                 type="text"
+                aria-label={t('tl.searchLang')}
                 value={searchSource}
                 onChange={e => setSearchSource(e.target.value)}
                 placeholder={t('tl.searchLang')}
@@ -127,6 +126,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
               />
             </div>
             <div className="max-h-60 overflow-y-auto space-y-1 scrollbar-thin">
+              {filteredSourceLanguages.length === 0 && <p role="status" className="px-3 py-3 text-xs text-slate-300">{t('ex.noResults')}</p>}
               {filteredSourceLanguages.map(lang => (
                 <button
                   key={lang.code}
@@ -189,11 +189,12 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
 
         {/* Dropdown Menu */}
         {isTargetOpen && (
-          <div className="absolute top-full left-0 mt-2 w-72 max-w-[calc(100vw-4rem)] bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150">
+          <div className={`absolute top-full ${dir === 'rtl' ? 'left-0' : 'right-0'} mt-2 w-72 max-w-[calc(100vw-4rem)] bg-[#12102e] border border-white/15 rounded-xl shadow-2xl p-2 z-50 animate-in fade-in zoom-in-95 duration-150`}>
             <div className="relative mb-2">
               <Search className="w-4 h-4 absolute right-3 top-2.5 text-[#b9b6d5]" />
               <input
                 type="text"
+                aria-label={t('tl.searchLang')}
                 value={searchTarget}
                 onChange={e => setSearchTarget(e.target.value)}
                 placeholder={t('tl.searchLang')}
@@ -202,6 +203,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
               />
             </div>
             <div className="max-h-60 overflow-y-auto space-y-1 scrollbar-thin">
+              {filteredTargetLanguages.length === 0 && <p role="status" className="px-3 py-3 text-xs text-slate-300">{t('ex.noResults')}</p>}
               {filteredTargetLanguages.map(lang => (
                 <button
                   key={lang.code}
