@@ -1,0 +1,42 @@
+{
+  "policy": "Use real photography for new images and replacements. Keep existing asset paths when replacing. No paid image sources. These are illustrative stock photographs, not Henglish staff, students, facilities or endorsements. The sources do not establish Egyptian nationality or location.",
+  "verifiedAt": "2026-11-18",
+  "images": [
+    {
+      "src": "/images/pool/modernClassroom.webp",
+      "source": "https://www.pexels.com/photo/group-of-students-in-classroom-setting-32711384/",
+      "author": "MD Photography",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Students attending a classroom session",
+      "download": "https://images.pexels.com/photos/32711384/pexels-photo-32711384/free-photo-of-group-of-students-in-classroom-setting.jpeg?auto=compress&w=1260&h=750&dpr=1"
+    },
+    {
+      "src": "/images/pool/learningStudyGroup.webp",
+      "source": "https://www.pexels.com/photo/content-multiracial-women-in-hijabs-browsing-laptop-in-classroom-6281994/",
+      "author": "Monstera Production",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Two students in hijabs studying together with a laptop",
+      "download": "https://images.pexels.com/photos/6281994/pexels-photo-6281994.jpeg?auto=compress&w=1260&h=750&dpr=1"
+    },
+    {
+      "src": "/images/pool/graduationCelebration.webp",
+      "source": "https://www.pexels.com/photo/graduating-students-celebrating-at-ceremony-32711395/",
+      "author": "MD Photography",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Adult students holding certificates",
+      "download": "https://images.pexels.com/photos/32711395/pexels-photo-32711395/free-photo-of-graduating-students-celebrating-at-ceremony.jpeg?auto=compress&w=1260&h=750&dpr=1"
+    },
+    {
+      "src": "/images/pool/mentorStudent.webp",
+      "source": "https://www.pexels.com/photo/6281984/",
+      "author": "Monstera Production",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "alt": "Two students discussing their study work",
+      "download": "https://images.pexels.com/photos/6281984/pexels-photo-6281984.jpeg?auto=compress&w=1260&h=750&dpr=1"
+    }
+  ]
+}
