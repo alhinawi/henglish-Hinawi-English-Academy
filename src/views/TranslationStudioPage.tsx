@@ -79,8 +79,10 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   const currentLevel: CEFRLevel = userProfile?.currentLevel || 'B1';
 
   const requestVersion = useRef(0);
+  const translationController = useRef<AbortController | null>(null);
   const invalidateTranslation = () => {
     requestVersion.current += 1;
+    translationController.current?.abort();
     setIsLoading(false);
     setError(null);
     setTranslationResult(null);
@@ -89,7 +91,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
     setWordAnalysisUnavailable(false);
     setVocabularySaveMessage('');
   };
-  useEffect(() => () => { requestVersion.current += 1; }, []);
+  useEffect(() => () => { requestVersion.current += 1; translationController.current?.abort(); }, []);
 
   // Perform translation on mount or when requested
   const handleTranslate = async (textToTranslate?: string, parameters?: { sourceLang?: LanguageCode; targetLang?: LanguageCode; mode?: TranslationMode }) => {
@@ -98,6 +100,9 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
     const isCurrent = () => version === requestVersion.current;
     const text = (textToTranslate ?? sourceText).trim();
     if (!text) return;
+    const controller = new AbortController();
+    translationController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 60000);
 
     setIsLoading(true);
     setError(null);
@@ -110,7 +115,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
         targetLang: parameters?.targetLang ?? targetLang,
         mode: parameters?.mode ?? mode,
         userLevel: currentLevel,
-      }, learnerId);
+      }, learnerId, controller.signal);
 
       if (!isCurrent()) return;
       setTranslationResult(result);
@@ -125,7 +130,8 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
       }
       playSound('wrong');
     } finally {
-      if (isCurrent()) setIsLoading(false);
+      clearTimeout(deadline);
+      if (isCurrent()) { translationController.current = null; setIsLoading(false); }
     }
   };
 
