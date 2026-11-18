@@ -1,3 +1,4 @@
+import { fetchBankPayload, validateBankIndex, validateBankRows, validateWholeBank } from './bankPayload';
 import { fetchExampleSentenceBlock } from './exampleSentenceBlock';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - PHRASE BANK SERVICE
@@ -41,10 +42,7 @@ const chunkCache = new Map<string, Promise<PhraseEntry[]>>();
 
 export function loadPhraseIndex(bank: PhraseBankId): Promise<PhraseBankIndex> {
   if (!indexCache[bank]) {
-    indexCache[bank] = fetch(`/data/${bank}/${bank}-index.json`).then((res) => {
-      if (!res.ok) throw new Error(`Failed to load ${bank} index: ${res.status}`);
-      return res.json() as Promise<PhraseBankIndex>;
-    }).catch((error) => {
+    indexCache[bank] = fetchBankPayload(`/data/${bank}/${bank}-index.json`).then(data => validateBankIndex<PhraseBankIndex>(data, 'bank', bank)).catch((error) => {
       delete indexCache[bank];
       throw error;
     });
@@ -57,10 +55,7 @@ function loadChunk(bank: PhraseBankId, file: string): Promise<PhraseEntry[]> {
   if (!chunkCache.has(key)) {
     chunkCache.set(
       key,
-      fetch(`/data/${bank}/chunks/${file}`).then((res) => {
-        if (!res.ok) throw new Error(`Failed to load ${bank} chunk ${file}: ${res.status}`);
-        return res.json() as Promise<PhraseEntry[]>;
-      }).catch((error) => {
+      fetchBankPayload(`/data/${bank}/chunks/${file}`).then(data => validateBankRows<PhraseEntry>(data, 'phrase')).catch((error) => {
         chunkCache.delete(key);
         throw error;
       })
@@ -81,7 +76,12 @@ export async function loadPhrasePrefix(bank: PhraseBankId, chunkCount: number): 
 export async function loadAllPhrases(bank: PhraseBankId): Promise<PhraseEntry[]> {
   const index = await loadPhraseIndex(bank);
   const parts = await Promise.all(index.chunks.map((n) => loadChunk(bank, n)));
-  return parts.flat();
+  try { return validateWholeBank(parts.flat(), index.totalEntries); }
+  catch (error) {
+    delete indexCache[bank];
+    for (const file of index.chunks) chunkCache.delete(`${bank}/${file}`);
+    throw error;
+  }
 }
 
 export type PhraseSortMode = 'popularity' | 'alpha';
