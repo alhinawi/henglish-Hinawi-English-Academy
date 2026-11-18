@@ -9,8 +9,11 @@ export async function readTutorStream(
   const decoder = new TextDecoder('utf-8');
   let pending = '';
   let text = '';
+  let event = '';
   let metadata: Record<string, unknown> = {};
   const consume = (line: string) => {
+    if (!line) { event = ''; return; }
+    if (line.startsWith('event:')) { event = line.slice(6).trim(); return; }
     if (!line.startsWith('data:')) return;
     const data = line.slice(5).trim();
     if (!data || data === '[DONE]') return;
@@ -20,6 +23,16 @@ export async function readTutorStream(
       if (!value || typeof value !== 'object' || Array.isArray(value)) return;
       parsed = value as Record<string, unknown>;
     } catch { return; }
+    if (event === 'error') throw new Error(typeof parsed.error === 'string' ? parsed.error : 'Tutor stream failed');
+    if (event === 'done') {
+      metadata = { ...metadata, ...parsed };
+      if (typeof parsed.text === 'string') {
+        // The done event contains the full answer, not another token.
+        if (parsed.text.startsWith(text) && parsed.text.length > text.length) onChunk(parsed.text.slice(text.length));
+        text = parsed.text;
+      }
+      return;
+    }
     if (typeof parsed.text === 'string') {
       text += parsed.text;
       onChunk(parsed.text);
