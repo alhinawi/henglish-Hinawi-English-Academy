@@ -168,7 +168,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 </div>
 
                 <p className="text-xs sm:text-sm text-[#dedbf4] leading-relaxed line-clamp-3 mb-4">
-                  {txText(appText, course.description)}
+                  {course.id === 'listening-academy' ? t('listen.heroSub') : txText(appText, course.description)}
                 </p>
               </div>
 
@@ -177,7 +177,7 @@ export const CoursesPage: React.FC<CoursesPageProps> = ({ onNavigate }) => {
                 <div className="flex items-center justify-between text-xs text-[#dedbf4]">
                   <span className="flex items-center gap-1">
                     <BookOpen className="w-3.5 h-3.5 text-[#41e7ff]" />
-                    <span>{course.countLabel ? txText(appText, course.countLabel) : t('dash.lessonsCount').replace('{n}', String(course.lessonsCount))}</span>
+                    <span>{course.id === 'listening-academy' ? t('dash.lessonsCount').replace('{n}', String(course.lessonsCount)) : course.countLabel ? txText(appText, course.countLabel) : t('dash.lessonsCount').replace('{n}', String(course.lessonsCount))}</span>
                   </span>
                   {course.duration && (
                     <span className="flex items-center gap-1">
