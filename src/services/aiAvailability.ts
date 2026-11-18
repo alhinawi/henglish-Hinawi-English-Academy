@@ -32,7 +32,8 @@ export async function throwForAiResponse(response: Response, fallbackMessage: st
   ) {
     throw new AiServiceUnavailableError();
   }
-  const data: { error?: string; message?: string } = await response.json().catch(() => ({}));
+  const data: { error?: string; message?: string; code?: string } = await response.json().catch(() => ({}));
+  if (data.code === 'AI_SERVICE_UNAVAILABLE') throw new AiServiceUnavailableError();
   throw new Error(data.error || data.message || fallbackMessage);
 }
 
