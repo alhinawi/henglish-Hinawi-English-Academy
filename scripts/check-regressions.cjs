@@ -5,6 +5,7 @@ const checks = [
   'check-review-modal-removal.cjs',
   'check-dialogue-portraits.cjs',
   'check-static-academy-speech.cjs',
+  'check-initial-language.cjs',
   'check-saved-vocabulary-search.cjs',
   'check-writing-feedback-format.cjs',
   'check-vocabulary-verb-search.cjs',
