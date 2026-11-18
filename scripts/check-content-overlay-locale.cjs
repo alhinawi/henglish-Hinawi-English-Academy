@@ -4,7 +4,7 @@ let lang='de',state=null,effect=null,cleanup=null;
 const pending={};const c={exports:{},fetch:url=>new Promise(resolve=>pending[url]=data=>resolve({ok:true,json:async()=>data})),require:p=>p==='react'?{useState:()=>[state,v=>state=v],useEffect:fn=>effect=fn}:{useLanguage:()=>({lang})}};vm.runInNewContext(js,c);
 const flush=async()=>{for(let n=0;n<8;n++)await Promise.resolve();};
 async function check(hook,first,next,firstUrl,nextUrl){
- state=null;lang='de';assert.equal(hook(first),null);cleanup=effect();pending[firstUrl]({entry:{m:'German'},Quelle:'Deutsch'});await flush();assert.ok(hook(first));
+ state=null;lang='de';assert.equal(hook(first),null);cleanup=effect();pending[firstUrl](hook===c.exports.useContentMap?{entry:{m:'German'}}:{Quelle:'Deutsch'});await flush();assert.ok(hook(first));
  lang='fr';assert.equal(hook(first),null,'Old locale hidden before effect');cleanup?.();cleanup=effect();
  lang='ar';assert.equal(hook(first),null,'Arabic immediately uses source');cleanup?.();cleanup=effect();pending[nextUrl]({entry:{m:'French'}});await flush();assert.equal(hook(first),null,'Cancelled fetch cannot leak');
  lang='de';assert.equal(hook(next),null,'Old bank/module hidden before effect');cleanup?.();cleanup=effect();
@@ -23,4 +23,11 @@ async function check(hook,first,next,firstUrl,nextUrl){
  const speakingContext={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/speakingAcademyData.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,speakingContext);const speakingEnglish=JSON.parse(fs.readFileSync('public/data/app-i18n/speakingAcademyData/en.json','utf8'));for(const lesson of speakingContext.exports.SPEAKING_LESSONS)for(const field of ['title','unit'])assert.ok(speakingEnglish[lesson[field]]&&!/[\u0600-\u06ff]/.test(speakingEnglish[lesson[field]]));
  const speakingView=fs.readFileSync('src/views/SpeakingAcademyPage.tsx','utf8');assert.ok(speakingView.includes('dir={dir}'));assert.ok(speakingView.includes('txText(appText, active.title)'));assert.ok(speakingView.includes('txText(appText, active.unit)'));
  console.log('Content/app overlays keyed to locale and bank at render time; source fallback while loading, late cancelled response ignored: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1;});
+
+(async()=>{
+ for(const kind of ['content','app'])for(const mode of ['null','array','number','badvalue','http','network','json','missing']){
+  let calls=0;const x={exports:{},require:()=>({}),fetch:async()=>{calls++;if(calls===1){if(mode==='network')throw Error('offline');return{ok:mode!=='http'&&mode!=='missing',status:mode==='missing'?404:mode==='http'?503:200,json:async()=>{if(mode==='json')throw Error('JSON');return mode==='null'?null:mode==='array'?[]:mode==='number'?3:kind==='content'?{entry:{m:{bad:true}}}:{title:{bad:true}};}};}return{ok:true,status:200,json:async()=>kind==='content'?{entry:{m:'Translated',e:'Example'}}:{title:'Translated'}};}};vm.runInNewContext(js,x);const load=()=>kind==='content'?x.exports.loadContentMap('bank','fr'):x.exports.loadAppTextMap('module','fr');assert.equal(await load(),null);const recovered=await load();if(mode==='missing'){assert.equal(recovered,null);assert.equal(calls,1);}else{assert(recovered);assert.equal(calls,2);await load();assert.equal(calls,2);}
+ }
+ console.log('Content/app invalid payloads cannot become React children;network/HTTP/JSON/shape failure evicts cache for retry,404 stays optional and cached: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
