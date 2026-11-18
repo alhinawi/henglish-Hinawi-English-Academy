@@ -1,0 +1,96 @@
+{
+  "policy": "Real photography only, free sources, replaced in place. Dialogue names are fictional roles; the stock models are not identified as those people, Henglish staff/students or endorsers. No nationality claims are made.",
+  "verifiedAt": "2026-11-18",
+  "images": [
+    {
+      "name": "mona",
+      "source": "https://www.pexels.com/photo/confident-woman-in-hijab-standing-outdoors-30775416/",
+      "download": "https://images.pexels.com/photos/30775416/pexels-photo-30775416/free-photo-of-confident-woman-in-hijab-standing-outdoors.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-mona.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "laila",
+      "source": "https://www.pexels.com/photo/portrait-of-a-woman-in-a-hijab-5211527/",
+      "download": "https://images.pexels.com/photos/5211527/pexels-photo-5211527.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-laila.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "omar",
+      "source": "https://www.pexels.com/photo/modern-fashion-portrait-of-young-man-29608621/",
+      "download": "https://images.pexels.com/photos/29608621/pexels-photo-29608621/free-photo-of-modern-fashion-portrait-of-young-man.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-omar.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "karim",
+      "source": "https://www.pexels.com/photo/a-boy-with-curly-hair-wearing-eyeglasses-11513007/",
+      "download": "https://images.pexels.com/photos/11513007/pexels-photo-11513007.jpeg?w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-karim.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "nour",
+      "source": "https://www.pexels.com/photo/portrait-of-woman-in-white-hijab-21357494/",
+      "download": "https://images.pexels.com/photos/21357494/pexels-photo-21357494/free-photo-of-portrait-of-woman-in-white-hijab.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-nour.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "interviewer",
+      "source": "https://www.pexels.com/photo/smiling-woman-in-stylish-hijab-outdoors-30921251/",
+      "download": "https://images.pexels.com/photos/30921251/pexels-photo-30921251/free-photo-of-smiling-woman-in-stylish-hijab-outdoors.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-interviewer.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "salma",
+      "source": "https://www.pexels.com/photo/portrait-of-woman-with-glasses-and-hijab-outdoors-29093765/",
+      "download": "https://images.pexels.com/photos/29093765/pexels-photo-29093765/free-photo-of-portrait-of-woman-with-glasses-and-hijab-outdoors.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-salma.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "hassan",
+      "source": "https://www.pexels.com/photo/traditional-egyptian-man-in-giza-at-sunset-34178194/",
+      "download": "https://images.pexels.com/photos/34178194/pexels-photo-34178194/free-photo-of-traditional-egyptian-man-in-giza-at-sunset.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-hassan.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "youssef",
+      "source": "https://www.pexels.com/photo/smiling-young-man-with-glasses-in-studio-portrait-34514521/",
+      "download": "https://images.pexels.com/photos/34514521/pexels-photo-34514521/free-photo-of-smiling-young-man-with-glasses-in-studio-portrait.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-youssef.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    },
+    {
+      "name": "tariq",
+      "source": "https://www.pexels.com/photo/portrait-of-man-with-eyeglasses-14564834/",
+      "download": "https://images.pexels.com/photos/14564834/pexels-photo-14564834.jpeg?auto=compress&w=1260&h=750&dpr=1",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "src": "/images/pool/av-tariq.webp",
+      "crop": "Square portrait crop; no face/body edits"
+    }
+  ]
+}
