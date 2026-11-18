@@ -59,3 +59,5 @@ async function check(hook,first,next,firstUrl,nextUrl){
  }
  console.log('Sentence overlays validate unique IDs and ten nonempty text lines;HTTP/network/JSON/schema/deadline failures retry while404 stays cached: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+for(const prefix of ['ielts-v','toefl-v'])for(const [id,file]of [['000001','000001-000100'],['000100','000001-000100'],['000101','000101-000200']]){const entryId=prefix+'-'+id;assert.equal(c.exports.sentenceBlockFileName(entryId.replace(/-\d+$/,''),entryId),prefix+'-sent-'+file+'.json');}assert(fs.readFileSync('src/components/ExamVocabPanel.tsx','utf8').includes("const idPrefix = entry.id.replace(/-\\d+$/, '');"));console.log('Exam translated sentence prefixes keep ielts-v/toefl-v across100-entry boundaries: PASS');
