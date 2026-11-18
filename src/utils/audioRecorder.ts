@@ -33,6 +33,7 @@ export class RealAudioRecorder {
   private analyser: AnalyserNode | null = null;
   private animFrameId: number | null = null;
   private startTime = 0;
+  private captureVersion = 0;
   private durationSeconds = 0;
   private timerInterval: ReturnType<typeof setInterval> | null = null;
 
@@ -52,6 +53,8 @@ export class RealAudioRecorder {
    * Request real microphone permission and start recording
    */
   public async start(): Promise<boolean> {
+    this.cleanup();
+    const version = this.captureVersion;
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
       this.setState('MICROPHONE_UNAVAILABLE');
       return false;
@@ -69,6 +72,10 @@ export class RealAudioRecorder {
         },
       });
 
+      if (version !== this.captureVersion) {
+        stream.getTracks().forEach(track => { try { track.stop(); } catch {} });
+        return false;
+      }
       this.mediaStream = stream;
 
       // Select supported audio mimeType
@@ -125,6 +132,7 @@ export class RealAudioRecorder {
       this.startWaveformLoop();
       return true;
     } catch (err: unknown) {
+      if (version !== this.captureVersion) return false;
       console.warn('Microphone access failed:', err);
       const error = err as { name?: string };
       if (error.name === 'NotAllowedError' || error.name === 'PermissionDeniedError') {
@@ -223,6 +231,7 @@ export class RealAudioRecorder {
    * Clean up all hardware streams and contexts
    */
   public cleanup() {
+    this.captureVersion += 1;
     if (this.timerInterval) {
       clearInterval(this.timerInterval);
       this.timerInterval = null;
