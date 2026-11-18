@@ -1,0 +1,898 @@
+[
+  {
+    "id": "conversation-01-line-1",
+    "text": "What is your name?",
+    "voice": "Iapetus",
+    "duration": 1.896,
+    "src": "/audio/english/conversation-01-line-1.mp3"
+  },
+  {
+    "id": "conversation-01-line-2",
+    "text": "My name is Salma. Nice to meet you.",
+    "voice": "Erinome",
+    "duration": 3.576,
+    "src": "/audio/english/conversation-01-line-2.mp3"
+  },
+  {
+    "id": "conversation-01-line-3",
+    "text": "Nice to meet you too. Are you a student?",
+    "voice": "Iapetus",
+    "duration": 2.904,
+    "src": "/audio/english/conversation-01-line-3.mp3"
+  },
+  {
+    "id": "conversation-01-line-4",
+    "text": "Yes, I study English.",
+    "voice": "Erinome",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-01-line-4.mp3"
+  },
+  {
+    "id": "conversation-02-line-1",
+    "voice": "Iapetus",
+    "text": "Who is this?",
+    "duration": 1.248,
+    "src": "/audio/english/conversation-02-line-1.mp3"
+  },
+  {
+    "id": "conversation-02-line-2",
+    "voice": "Erinome",
+    "text": "This is my friend Omar.",
+    "duration": 2.808,
+    "src": "/audio/english/conversation-02-line-2.mp3"
+  },
+  {
+    "id": "conversation-02-line-3",
+    "voice": "Iapetus",
+    "text": "Hello, Omar. Where are you from?",
+    "duration": 3.216,
+    "src": "/audio/english/conversation-02-line-3.mp3"
+  },
+  {
+    "id": "conversation-02-line-4",
+    "voice": "Erinome",
+    "text": "I am from Cairo.",
+    "duration": 2.664,
+    "src": "/audio/english/conversation-02-line-4.mp3"
+  },
+  {
+    "id": "conversation-03-line-1",
+    "voice": "Iapetus",
+    "text": "Can you spell your surname?",
+    "duration": 2.544,
+    "src": "/audio/english/conversation-03-line-1.mp3"
+  },
+  {
+    "id": "conversation-03-line-2",
+    "voice": "Erinome",
+    "text": "Yes. It is H-A-S-S-A-N.",
+    "duration": 5.688,
+    "src": "/audio/english/conversation-03-line-2.mp3"
+  },
+  {
+    "id": "conversation-03-line-3",
+    "voice": "Iapetus",
+    "text": "Thank you. Please write it here.",
+    "duration": 3.264,
+    "src": "/audio/english/conversation-03-line-3.mp3"
+  },
+  {
+    "id": "conversation-03-line-4",
+    "voice": "Erinome",
+    "text": "Of course.",
+    "duration": 1.416,
+    "src": "/audio/english/conversation-03-line-4.mp3"
+  },
+  {
+    "id": "conversation-04-line-1",
+    "voice": "Iapetus",
+    "text": "Please turn to page fourteen.",
+    "duration": 2.784,
+    "src": "/audio/english/conversation-04-line-1.mp3"
+  },
+  {
+    "id": "conversation-04-line-2",
+    "voice": "Erinome",
+    "text": "Could you say that again, please?",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-04-line-2.mp3"
+  },
+  {
+    "id": "conversation-04-line-3",
+    "voice": "Iapetus",
+    "text": "Page fourteen. One four.",
+    "duration": 3.816,
+    "src": "/audio/english/conversation-04-line-3.mp3"
+  },
+  {
+    "id": "conversation-04-line-4",
+    "voice": "Erinome",
+    "text": "Thank you. I understand now.",
+    "duration": 2.928,
+    "src": "/audio/english/conversation-04-line-4.mp3"
+  },
+  {
+    "id": "conversation-05-line-1",
+    "voice": "Iapetus",
+    "text": "What time do you get up?",
+    "duration": 2.424,
+    "src": "/audio/english/conversation-05-line-1.mp3"
+  },
+  {
+    "id": "conversation-05-line-2",
+    "voice": "Erinome",
+    "text": "I get up at seven every day.",
+    "duration": 3.168,
+    "src": "/audio/english/conversation-05-line-2.mp3"
+  },
+  {
+    "id": "conversation-05-line-3",
+    "voice": "Iapetus",
+    "text": "Do you have breakfast at home?",
+    "duration": 2.568,
+    "src": "/audio/english/conversation-05-line-3.mp3"
+  },
+  {
+    "id": "conversation-05-line-4",
+    "voice": "Erinome",
+    "text": "Yes, I usually have eggs.",
+    "duration": 3.408,
+    "src": "/audio/english/conversation-05-line-4.mp3"
+  },
+  {
+    "id": "conversation-06-line-1",
+    "voice": "Iapetus",
+    "text": "What do you like reading?",
+    "duration": 1.824,
+    "src": "/audio/english/conversation-06-line-1.mp3"
+  },
+  {
+    "id": "conversation-06-line-2",
+    "voice": "Erinome",
+    "text": "I like reading short stories.",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-06-line-2.mp3"
+  },
+  {
+    "id": "conversation-06-line-3",
+    "voice": "Iapetus",
+    "text": "Do you read every evening?",
+    "duration": 2.448,
+    "src": "/audio/english/conversation-06-line-3.mp3"
+  },
+  {
+    "id": "conversation-06-line-4",
+    "voice": "Erinome",
+    "text": "Yes, before I go to bed.",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-06-line-4.mp3"
+  },
+  {
+    "id": "conversation-07-line-1",
+    "voice": "Iapetus",
+    "text": "Are you free this afternoon?",
+    "duration": 2.376,
+    "src": "/audio/english/conversation-07-line-1.mp3"
+  },
+  {
+    "id": "conversation-07-line-2",
+    "voice": "Erinome",
+    "text": "Yes. Shall we study together?",
+    "duration": 3.168,
+    "src": "/audio/english/conversation-07-line-2.mp3"
+  },
+  {
+    "id": "conversation-07-line-3",
+    "voice": "Iapetus",
+    "text": "Good idea. At the library?",
+    "duration": 2.928,
+    "src": "/audio/english/conversation-07-line-3.mp3"
+  },
+  {
+    "id": "conversation-07-line-4",
+    "voice": "Erinome",
+    "text": "Yes, see you there at three.",
+    "duration": 2.928,
+    "src": "/audio/english/conversation-07-line-4.mp3"
+  },
+  {
+    "id": "conversation-08-line-1",
+    "voice": "Iapetus",
+    "text": "What do you do in your free time?",
+    "duration": 3.168,
+    "src": "/audio/english/conversation-08-line-1.mp3"
+  },
+  {
+    "id": "conversation-08-line-2",
+    "voice": "Erinome",
+    "text": "I write stories in my notebook.",
+    "duration": 3.504,
+    "src": "/audio/english/conversation-08-line-2.mp3"
+  },
+  {
+    "id": "conversation-08-line-3",
+    "voice": "Iapetus",
+    "text": "That sounds interesting. How often?",
+    "duration": 2.784,
+    "src": "/audio/english/conversation-08-line-3.mp3"
+  },
+  {
+    "id": "conversation-08-line-4",
+    "voice": "Erinome",
+    "text": "Every weekend.",
+    "duration": 2.016,
+    "src": "/audio/english/conversation-08-line-4.mp3"
+  },
+  {
+    "id": "conversation-09-line-1",
+    "voice": "Iapetus",
+    "text": "May I see your passport, please?",
+    "duration": 2.736,
+    "src": "/audio/english/conversation-09-line-1.mp3"
+  },
+  {
+    "id": "conversation-09-line-2",
+    "voice": "Erinome",
+    "text": "Here you are. Is this the right queue?",
+    "duration": 3.888,
+    "src": "/audio/english/conversation-09-line-2.mp3"
+  },
+  {
+    "id": "conversation-09-line-3",
+    "voice": "Iapetus",
+    "text": "Yes. Where are you flying today?",
+    "duration": 2.736,
+    "src": "/audio/english/conversation-09-line-3.mp3"
+  },
+  {
+    "id": "conversation-09-line-4",
+    "voice": "Erinome",
+    "text": "I am flying to London.",
+    "duration": 3.048,
+    "src": "/audio/english/conversation-09-line-4.mp3"
+  },
+  {
+    "id": "conversation-10-line-1",
+    "voice": "Iapetus",
+    "text": "Excuse me, where is gate twelve?",
+    "duration": 3.264,
+    "src": "/audio/english/conversation-10-line-1.mp3"
+  },
+  {
+    "id": "conversation-10-line-2",
+    "voice": "Erinome",
+    "text": "Go straight ahead and turn left.",
+    "duration": 4.128,
+    "src": "/audio/english/conversation-10-line-2.mp3"
+  },
+  {
+    "id": "conversation-10-line-3",
+    "voice": "Iapetus",
+    "text": "Is it near the coffee shop?",
+    "duration": 2.328,
+    "src": "/audio/english/conversation-10-line-3.mp3"
+  },
+  {
+    "id": "conversation-10-line-4",
+    "voice": "Erinome",
+    "text": "Yes, just past it.",
+    "duration": 2.448,
+    "src": "/audio/english/conversation-10-line-4.mp3"
+  },
+  {
+    "id": "conversation-11-line-1",
+    "voice": "Iapetus",
+    "text": "Shall we meet in the city centre?",
+    "duration": 2.808,
+    "src": "/audio/english/conversation-11-line-1.mp3"
+  },
+  {
+    "id": "conversation-11-line-2",
+    "voice": "Erinome",
+    "text": "Could we meet at the station instead?",
+    "duration": 3.696,
+    "src": "/audio/english/conversation-11-line-2.mp3"
+  },
+  {
+    "id": "conversation-11-line-3",
+    "voice": "Iapetus",
+    "text": "Sure. Would five o'clock suit you?",
+    "duration": 3.408,
+    "src": "/audio/english/conversation-11-line-3.mp3"
+  },
+  {
+    "id": "conversation-11-line-4",
+    "voice": "Erinome",
+    "text": "Yes, that works for me.",
+    "duration": 2.736,
+    "src": "/audio/english/conversation-11-line-4.mp3"
+  },
+  {
+    "id": "conversation-12-line-1",
+    "voice": "Iapetus",
+    "text": "How much are these tomatoes?",
+    "duration": 2.496,
+    "src": "/audio/english/conversation-12-line-1.mp3"
+  },
+  {
+    "id": "conversation-12-line-2",
+    "voice": "Erinome",
+    "text": "They are twenty pounds a kilo.",
+    "duration": 3.288,
+    "src": "/audio/english/conversation-12-line-2.mp3"
+  },
+  {
+    "id": "conversation-12-line-3",
+    "voice": "Iapetus",
+    "text": "I would like half a kilo, please.",
+    "duration": 3.144,
+    "src": "/audio/english/conversation-12-line-3.mp3"
+  },
+  {
+    "id": "conversation-12-line-4",
+    "voice": "Erinome",
+    "text": "Certainly. Anything else?",
+    "duration": 2.496,
+    "src": "/audio/english/conversation-12-line-4.mp3"
+  },
+  {
+    "id": "conversation-13-line-1",
+    "voice": "Iapetus",
+    "text": "How long have you had this cough?",
+    "duration": 2.736,
+    "src": "/audio/english/conversation-13-line-1.mp3"
+  },
+  {
+    "id": "conversation-13-line-2",
+    "voice": "Erinome",
+    "text": "I have had it since Monday.",
+    "duration": 3.048,
+    "src": "/audio/english/conversation-13-line-2.mp3"
+  },
+  {
+    "id": "conversation-13-line-3",
+    "voice": "Iapetus",
+    "text": "Do you have any other symptoms?",
+    "duration": 2.448,
+    "src": "/audio/english/conversation-13-line-3.mp3"
+  },
+  {
+    "id": "conversation-13-line-4",
+    "voice": "Erinome",
+    "text": "I also have a sore throat.",
+    "duration": 3.696,
+    "src": "/audio/english/conversation-13-line-4.mp3"
+  },
+  {
+    "id": "conversation-14-line-1",
+    "voice": "Iapetus",
+    "text": "How was your weekend?",
+    "duration": 2.016,
+    "src": "/audio/english/conversation-14-line-1.mp3"
+  },
+  {
+    "id": "conversation-14-line-2",
+    "voice": "Erinome",
+    "text": "I visited a museum with my sister.",
+    "duration": 4.008,
+    "src": "/audio/english/conversation-14-line-2.mp3"
+  },
+  {
+    "id": "conversation-14-line-3",
+    "voice": "Iapetus",
+    "text": "What did you enjoy most?",
+    "duration": 2.544,
+    "src": "/audio/english/conversation-14-line-3.mp3"
+  },
+  {
+    "id": "conversation-14-line-4",
+    "voice": "Erinome",
+    "text": "The old maps were amazing.",
+    "duration": 3.264,
+    "src": "/audio/english/conversation-14-line-4.mp3"
+  },
+  {
+    "id": "conversation-15-line-1",
+    "voice": "Iapetus",
+    "text": "Have you finished your revision yet?",
+    "duration": 2.568,
+    "src": "/audio/english/conversation-15-line-1.mp3"
+  },
+  {
+    "id": "conversation-15-line-2",
+    "voice": "Erinome",
+    "text": "Not yet, but I have reviewed two chapters.",
+    "duration": 4.848,
+    "src": "/audio/english/conversation-15-line-2.mp3"
+  },
+  {
+    "id": "conversation-15-line-3",
+    "voice": "Iapetus",
+    "text": "Would you like to revise together?",
+    "duration": 3.048,
+    "src": "/audio/english/conversation-15-line-3.mp3"
+  },
+  {
+    "id": "conversation-15-line-4",
+    "voice": "Erinome",
+    "text": "Yes, that would help.",
+    "duration": 2.664,
+    "src": "/audio/english/conversation-15-line-4.mp3"
+  },
+  {
+    "id": "conversation-16-line-1",
+    "voice": "Iapetus",
+    "text": "What are you going to do after graduation?",
+    "duration": 3.528,
+    "src": "/audio/english/conversation-16-line-1.mp3"
+  },
+  {
+    "id": "conversation-16-line-2",
+    "voice": "Erinome",
+    "text": "I am going to apply for a teaching job.",
+    "duration": 3.936,
+    "src": "/audio/english/conversation-16-line-2.mp3"
+  },
+  {
+    "id": "conversation-16-line-3",
+    "voice": "Iapetus",
+    "text": "That sounds exciting. Where?",
+    "duration": 2.208,
+    "src": "/audio/english/conversation-16-line-3.mp3"
+  },
+  {
+    "id": "conversation-16-line-4",
+    "voice": "Erinome",
+    "text": "At a local language school.",
+    "duration": 2.808,
+    "src": "/audio/english/conversation-16-line-4.mp3"
+  },
+  {
+    "id": "conversation-17-line-1",
+    "voice": "Iapetus",
+    "text": "I started learning Italian last month.",
+    "duration": 3.576,
+    "src": "/audio/english/conversation-17-line-1.mp3"
+  },
+  {
+    "id": "conversation-17-line-2",
+    "voice": "Erinome",
+    "text": "Really? What made you choose Italian?",
+    "duration": 3.528,
+    "src": "/audio/english/conversation-17-line-2.mp3"
+  },
+  {
+    "id": "conversation-17-line-3",
+    "voice": "Iapetus",
+    "text": "I want to visit my cousins in Rome.",
+    "duration": 3.768,
+    "src": "/audio/english/conversation-17-line-3.mp3"
+  },
+  {
+    "id": "conversation-17-line-4",
+    "voice": "Erinome",
+    "text": "That sounds like a good reason.",
+    "duration": 2.568,
+    "src": "/audio/english/conversation-17-line-4.mp3"
+  },
+  {
+    "id": "conversation-18-line-1",
+    "voice": "Iapetus",
+    "text": "I find it hard to study after work.",
+    "duration": 3.864,
+    "src": "/audio/english/conversation-18-line-1.mp3"
+  },
+  {
+    "id": "conversation-18-line-2",
+    "voice": "Erinome",
+    "text": "Why don't you try a short session before work?",
+    "duration": 4.848,
+    "src": "/audio/english/conversation-18-line-2.mp3"
+  },
+  {
+    "id": "conversation-18-line-3",
+    "voice": "Iapetus",
+    "text": "That might work. How long should I study?",
+    "duration": 3.864,
+    "src": "/audio/english/conversation-18-line-3.mp3"
+  },
+  {
+    "id": "conversation-18-line-4",
+    "voice": "Erinome",
+    "text": "Start with fifteen minutes.",
+    "duration": 3.408,
+    "src": "/audio/english/conversation-18-line-4.mp3"
+  },
+  {
+    "id": "conversation-19-line-1",
+    "voice": "Iapetus",
+    "text": "You missed our meeting yesterday.",
+    "duration": 2.328,
+    "src": "/audio/english/conversation-19-line-1.mp3"
+  },
+  {
+    "id": "conversation-19-line-2",
+    "voice": "Erinome",
+    "text": "I am sorry. I should have let you know.",
+    "duration": 3.648,
+    "src": "/audio/english/conversation-19-line-2.mp3"
+  },
+  {
+    "id": "conversation-19-line-3",
+    "voice": "Iapetus",
+    "text": "Thanks for saying that. Can we reschedule?",
+    "duration": 3.984,
+    "src": "/audio/english/conversation-19-line-3.mp3"
+  },
+  {
+    "id": "conversation-19-line-4",
+    "voice": "Erinome",
+    "text": "Yes. Would tomorrow afternoon work?",
+    "duration": 3.744,
+    "src": "/audio/english/conversation-19-line-4.mp3"
+  },
+  {
+    "id": "conversation-20-line-1",
+    "voice": "Iapetus",
+    "text": "Why would you like to work here?",
+    "duration": 3.216,
+    "src": "/audio/english/conversation-20-line-1.mp3"
+  },
+  {
+    "id": "conversation-20-line-2",
+    "voice": "Erinome",
+    "text": "Your training programme matches my career goals.",
+    "duration": 4.608,
+    "src": "/audio/english/conversation-20-line-2.mp3"
+  },
+  {
+    "id": "conversation-20-line-3",
+    "voice": "Iapetus",
+    "text": "Could you give us an example?",
+    "duration": 2.424,
+    "src": "/audio/english/conversation-20-line-3.mp3"
+  },
+  {
+    "id": "conversation-20-line-4",
+    "voice": "Erinome",
+    "text": "I want to develop my classroom skills.",
+    "duration": 4.224,
+    "src": "/audio/english/conversation-20-line-4.mp3"
+  },
+  {
+    "id": "conversation-21-line-1",
+    "voice": "Iapetus",
+    "text": "How is the website coming along?",
+    "duration": 2.784,
+    "src": "/audio/english/conversation-21-line-1.mp3"
+  },
+  {
+    "id": "conversation-21-line-2",
+    "voice": "Erinome",
+    "text": "We have finished the design, but testing is still in progress.",
+    "duration": 6.144,
+    "src": "/audio/english/conversation-21-line-2.mp3"
+  },
+  {
+    "id": "conversation-21-line-3",
+    "voice": "Iapetus",
+    "text": "What do you need from us?",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-21-line-3.mp3"
+  },
+  {
+    "id": "conversation-21-line-4",
+    "voice": "Erinome",
+    "text": "Feedback on the mobile layout, please.",
+    "duration": 3.288,
+    "src": "/audio/english/conversation-21-line-4.mp3"
+  },
+  {
+    "id": "conversation-22-line-1",
+    "voice": "Iapetus",
+    "text": "Could you take care of the slides?",
+    "duration": 2.736,
+    "src": "/audio/english/conversation-22-line-1.mp3"
+  },
+  {
+    "id": "conversation-22-line-2",
+    "voice": "Erinome",
+    "text": "Yes, as long as you send me the figures today.",
+    "duration": 4.944,
+    "src": "/audio/english/conversation-22-line-2.mp3"
+  },
+  {
+    "id": "conversation-22-line-3",
+    "voice": "Iapetus",
+    "text": "That is fine. I will send them by noon.",
+    "duration": 3.408,
+    "src": "/audio/english/conversation-22-line-3.mp3"
+  },
+  {
+    "id": "conversation-22-line-4",
+    "voice": "Erinome",
+    "text": "Great. I will start after lunch.",
+    "duration": 3.696,
+    "src": "/audio/english/conversation-22-line-4.mp3"
+  },
+  {
+    "id": "conversation-23-line-1",
+    "voice": "Iapetus",
+    "text": "Will the report be ready by Friday?",
+    "duration": 3.288,
+    "src": "/audio/english/conversation-23-line-1.mp3"
+  },
+  {
+    "id": "conversation-23-line-2",
+    "voice": "Erinome",
+    "text": "Yes. We will have completed it by Thursday evening.",
+    "duration": 6.024,
+    "src": "/audio/english/conversation-23-line-2.mp3"
+  },
+  {
+    "id": "conversation-23-line-3",
+    "voice": "Iapetus",
+    "text": "Will there be time for a final check?",
+    "duration": 3.336,
+    "src": "/audio/english/conversation-23-line-3.mp3"
+  },
+  {
+    "id": "conversation-23-line-4",
+    "voice": "Erinome",
+    "text": "Yes, we have allowed an extra day.",
+    "duration": 3.768,
+    "src": "/audio/english/conversation-23-line-4.mp3"
+  },
+  {
+    "id": "conversation-24-line-1",
+    "voice": "Iapetus",
+    "text": "What happens when you open the file?",
+    "duration": 3.264,
+    "src": "/audio/english/conversation-24-line-1.mp3"
+  },
+  {
+    "id": "conversation-24-line-2",
+    "voice": "Erinome",
+    "text": "An error message appears, and the screen goes blank.",
+    "duration": 4.776,
+    "src": "/audio/english/conversation-24-line-2.mp3"
+  },
+  {
+    "id": "conversation-24-line-3",
+    "voice": "Iapetus",
+    "text": "Have you tried restarting the application?",
+    "duration": 3.216,
+    "src": "/audio/english/conversation-24-line-3.mp3"
+  },
+  {
+    "id": "conversation-24-line-4",
+    "voice": "Erinome",
+    "text": "Yes, but the problem is still there.",
+    "duration": 3.744,
+    "src": "/audio/english/conversation-24-line-4.mp3"
+  },
+  {
+    "id": "conversation-25-line-1",
+    "voice": "Iapetus",
+    "text": "We should cancel all face-to-face meetings.",
+    "duration": 4.584,
+    "src": "/audio/english/conversation-25-line-1.mp3"
+  },
+  {
+    "id": "conversation-25-line-2",
+    "voice": "Erinome",
+    "text": "I see your point, but some discussions work better in person.",
+    "duration": 5.976,
+    "src": "/audio/english/conversation-25-line-2.mp3"
+  },
+  {
+    "id": "conversation-25-line-3",
+    "voice": "Iapetus",
+    "text": "Which discussions do you have in mind?",
+    "duration": 2.808,
+    "src": "/audio/english/conversation-25-line-3.mp3"
+  },
+  {
+    "id": "conversation-25-line-4",
+    "voice": "Erinome",
+    "text": "Sensitive feedback and team planning.",
+    "duration": 3.648,
+    "src": "/audio/english/conversation-25-line-4.mp3"
+  },
+  {
+    "id": "conversation-26-line-1",
+    "voice": "Iapetus",
+    "text": "The only solution is to hire more staff.",
+    "duration": 4.416,
+    "src": "/audio/english/conversation-26-line-1.mp3"
+  },
+  {
+    "id": "conversation-26-line-2",
+    "voice": "Erinome",
+    "text": "Have we considered improving the booking system first?",
+    "duration": 4.464,
+    "src": "/audio/english/conversation-26-line-2.mp3"
+  },
+  {
+    "id": "conversation-26-line-3",
+    "voice": "Iapetus",
+    "text": "How would that help?",
+    "duration": 1.776,
+    "src": "/audio/english/conversation-26-line-3.mp3"
+  },
+  {
+    "id": "conversation-26-line-4",
+    "voice": "Erinome",
+    "text": "It could reduce the time spent on routine tasks.",
+    "duration": 4.848,
+    "src": "/audio/english/conversation-26-line-4.mp3"
+  },
+  {
+    "id": "conversation-27-line-1",
+    "voice": "Iapetus",
+    "text": "Should we move the course online?",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-27-line-1.mp3"
+  },
+  {
+    "id": "conversation-27-line-2",
+    "voice": "Erinome",
+    "text": "On the one hand, it is flexible; on the other hand, some learners need classroom support.",
+    "duration": 7.464,
+    "src": "/audio/english/conversation-27-line-2.mp3"
+  },
+  {
+    "id": "conversation-27-line-3",
+    "voice": "Iapetus",
+    "text": "Could we offer both formats?",
+    "duration": 2.808,
+    "src": "/audio/english/conversation-27-line-3.mp3"
+  },
+  {
+    "id": "conversation-27-line-4",
+    "voice": "Erinome",
+    "text": "Yes, a mixed approach might work.",
+    "duration": 4.104,
+    "src": "/audio/english/conversation-27-line-4.mp3"
+  },
+  {
+    "id": "conversation-28-line-1",
+    "voice": "Iapetus",
+    "text": "We need the whole budget for advertising.",
+    "duration": 3.888,
+    "src": "/audio/english/conversation-28-line-1.mp3"
+  },
+  {
+    "id": "conversation-28-line-2",
+    "voice": "Erinome",
+    "text": "What if we split it between advertising and training?",
+    "duration": 5.496,
+    "src": "/audio/english/conversation-28-line-2.mp3"
+  },
+  {
+    "id": "conversation-28-line-3",
+    "voice": "Iapetus",
+    "text": "I could agree to that if we review the results next month.",
+    "duration": 5.064,
+    "src": "/audio/english/conversation-28-line-3.mp3"
+  },
+  {
+    "id": "conversation-28-line-4",
+    "voice": "Erinome",
+    "text": "That seems fair.",
+    "duration": 2.184,
+    "src": "/audio/english/conversation-28-line-4.mp3"
+  },
+  {
+    "id": "conversation-29-line-1",
+    "voice": "Iapetus",
+    "text": "What will your presentation cover?",
+    "duration": 2.856,
+    "src": "/audio/english/conversation-29-line-1.mp3"
+  },
+  {
+    "id": "conversation-29-line-2",
+    "voice": "Erinome",
+    "text": "I will outline the problem, compare two options, and recommend a solution.",
+    "duration": 7.008,
+    "src": "/audio/english/conversation-29-line-2.mp3"
+  },
+  {
+    "id": "conversation-29-line-3",
+    "voice": "Iapetus",
+    "text": "How will you involve the audience?",
+    "duration": 3.024,
+    "src": "/audio/english/conversation-29-line-3.mp3"
+  },
+  {
+    "id": "conversation-29-line-4",
+    "voice": "Erinome",
+    "text": "I will begin with a short question.",
+    "duration": 3.288,
+    "src": "/audio/english/conversation-29-line-4.mp3"
+  },
+  {
+    "id": "conversation-30-line-1",
+    "voice": "Iapetus",
+    "text": "The new design is more accessible.",
+    "duration": 3.504,
+    "src": "/audio/english/conversation-30-line-1.mp3"
+  },
+  {
+    "id": "conversation-30-line-2",
+    "voice": "Erinome",
+    "text": "Could you explain what you mean by accessible in this context?",
+    "duration": 5.328,
+    "src": "/audio/english/conversation-30-line-2.mp3"
+  },
+  {
+    "id": "conversation-30-line-3",
+    "voice": "Iapetus",
+    "text": "The text is easier to read, and the buttons work with a keyboard.",
+    "duration": 5.208,
+    "src": "/audio/english/conversation-30-line-3.mp3"
+  },
+  {
+    "id": "conversation-30-line-4",
+    "voice": "Erinome",
+    "text": "Thank you. That makes it clearer.",
+    "duration": 2.976,
+    "src": "/audio/english/conversation-30-line-4.mp3"
+  },
+  {
+    "id": "conversation-31-line-1",
+    "voice": "Iapetus",
+    "text": "Tell us about a difficult project.",
+    "duration": 3.504,
+    "src": "/audio/english/conversation-31-line-1.mp3"
+  },
+  {
+    "id": "conversation-31-line-2",
+    "voice": "Erinome",
+    "text": "Although we missed the first deadline, we used the feedback to improve the final result.",
+    "duration": 6.624,
+    "src": "/audio/english/conversation-31-line-2.mp3"
+  },
+  {
+    "id": "conversation-31-line-3",
+    "voice": "Iapetus",
+    "text": "What did you learn from it?",
+    "duration": 2.328,
+    "src": "/audio/english/conversation-31-line-3.mp3"
+  },
+  {
+    "id": "conversation-31-line-4",
+    "voice": "Erinome",
+    "text": "To test our assumptions earlier.",
+    "duration": 3.528,
+    "src": "/audio/english/conversation-31-line-4.mp3"
+  },
+  {
+    "id": "conversation-32-line-1",
+    "voice": "Iapetus",
+    "text": "How would you sum up the discussion?",
+    "duration": 2.448,
+    "src": "/audio/english/conversation-32-line-1.mp3"
+  },
+  {
+    "id": "conversation-32-line-2",
+    "voice": "Erinome",
+    "text": "We agree on the goal, but we still need to compare the costs before deciding.",
+    "duration": 6.984,
+    "src": "/audio/english/conversation-32-line-2.mp3"
+  },
+  {
+    "id": "conversation-32-line-3",
+    "voice": "Iapetus",
+    "text": "What is the next step?",
+    "duration": 2.424,
+    "src": "/audio/english/conversation-32-line-3.mp3"
+  },
+  {
+    "id": "conversation-32-line-4",
+    "voice": "Erinome",
+    "text": "Let us gather the figures and meet again on Monday.",
+    "duration": 4.608,
+    "src": "/audio/english/conversation-32-line-4.mp3"
+  }
+]
