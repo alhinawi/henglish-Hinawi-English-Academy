@@ -49,7 +49,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   onClose,
   onWordSavedChange,
 }) => {
-  const { t, lang } = useLanguage();
+  const { t, lang, dir } = useLanguage();
   const dialogRef = useRef<HTMLDivElement>(null);
   const titleId = useId();
   const [saved, setSaved] = useState(false);
@@ -58,7 +58,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   const [persistedNote, setPersistedNote] = useState('');
   const [noteSaved, setNoteSaved] = useState(false);
   const txMap = useContentMap('vocab');
-  const shownMeaning = entry ? (lang === 'en' ? (entry.definitionEn || englishSourceText('vocabularyAcademyData', entry.meaningAr)) : txMeaning(txMap, entry.id, entry.meaningAr)) : '';
+  const shownMeaning = entry ? (lang === 'en' ? txMeaning(txMap, entry.id, entry.definitionEn || englishSourceText('vocabularyAcademyData', entry.meaningAr)) : txMeaning(txMap, entry.id, entry.meaningAr)) : '';
   const shownExample = entry ? (lang === 'en' ? entry.exampleEn : txExample(txMap, entry.id, entry.exampleAr)) : '';
 
   useEffect(() => {
@@ -158,10 +158,11 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
       <div
         ref={dialogRef}
         role="dialog"
+        dir={dir}
         aria-modal="true"
         aria-labelledby={titleId}
         tabIndex={-1}
-        className="relative w-full max-w-3xl rounded-3xl border border-white/15 bg-linear-to-b from-[#14132b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-right space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
+        className="relative w-full max-w-3xl rounded-3xl border border-white/15 bg-linear-to-b from-[#14132b] via-[#100f24] to-[#0a0918] p-6 sm:p-8 shadow-2xl text-start space-y-6 max-h-[90vh] overflow-y-auto custom-scrollbar"
         onClick={e => e.stopPropagation()}
       >
         {/* Top bar */}
@@ -312,9 +313,9 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
             <p className="text-sm sm:text-base font-bold text-white font-sans" dir="ltr">
               {entry.exampleEn ? `"${entry.exampleEn}"` : ''}
             </p>
-            <p className="text-xs sm:text-sm text-[#dedbf4]">
+            {shownExample !== entry.exampleEn && <p className="text-xs sm:text-sm text-[#dedbf4]">
               {shownExample}
-            </p>
+            </p>}
           </div>
         </div>}
 
