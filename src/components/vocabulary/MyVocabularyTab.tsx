@@ -127,7 +127,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
   };
 
   return (
-    <div className="space-y-8 text-right">
+    <div className="space-y-8 text-start">
       {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
       {/* Top Stats Overview */}
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
@@ -174,7 +174,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
 
       {/* Review Mode Banner & Actions */}
       <div className="glass-panel p-6 rounded-3xl border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="space-y-1 text-center sm:text-right">
+        <div className="space-y-1 text-center sm:text-start">
           <h3 className="text-lg font-black text-white flex items-center gap-2 justify-center sm:justify-start">
             <Repeat className="w-5 h-5 text-[#ffd166]" />
             <span>{t('mvt.srsTitle')}</span>
@@ -255,7 +255,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
             {isFlipped ? (
               <div id={meaningId} className="space-y-2 pt-2 border-t border-white/10 w-full animate-fadeIn">
                 <div className="text-xl font-black text-[#c4ff55]">
-                  {(lang === 'en' ? (currentReviewItem.entry.definitionEn || englishSourceText('vocabularyAcademyData', currentReviewItem.entry.meaningAr)) : txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.meaningAr))}
+                  {(lang === 'en' ? txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.definitionEn || englishSourceText('vocabularyAcademyData', currentReviewItem.entry.meaningAr)) : txMeaning(txMap, currentReviewItem.entry.id, currentReviewItem.entry.meaningAr))}
                 </div>
                 <p className="text-xs text-white/70 max-w-md mx-auto font-sans" dir="ltr">
                   "{currentReviewItem.entry.exampleEn}"
@@ -405,7 +405,7 @@ export const MyVocabularyTab: React.FC<MyVocabularyTabProps> = ({ onExploreWords
                   {item.word}
                 </div>
                 <div className="text-sm font-bold text-[#c4ff55] mt-0.5">
-                  {(lang === 'en' ? (item.entry.definitionEn || englishSourceText('vocabularyAcademyData', item.entry.meaningAr)) : txMeaning(txMap, item.entry.id, item.entry.meaningAr))}
+                  {(lang === 'en' ? txMeaning(txMap, item.entry.id, item.entry.definitionEn || englishSourceText('vocabularyAcademyData', item.entry.meaningAr)) : txMeaning(txMap, item.entry.id, item.entry.meaningAr))}
                 </div>
               </div>
 
