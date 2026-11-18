@@ -1,3 +1,4 @@
+import { isAiServiceUnavailable } from '../../src/services/aiAvailability';
 // ==============================================================================
 // HENGLISH ACADEMY (HENGLISH 2.0) - SERVERLESS AI CHAT HANDLER
 // Powered by Centralized Multi-Provider Router (Groq -> Gemini -> Cloudflare -> OpenAI -> Local)
@@ -77,6 +78,7 @@ export default async function handler(req: IncomingMessage & { body?: unknown },
     const result = await dispatchAiChat(body);
     sendJson(res, 200, result);
   } catch (err) {
+    if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return; }
     console.error('API /api/ai/chat error:', err);
     sendJson(res, 500, { error: 'Internal AI service error', message: String(err) });
   }

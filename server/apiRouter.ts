@@ -293,6 +293,7 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       const result = await dispatchAiChat(body);
       sendJson(res, 200, result);
     } catch (err) {
+      if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return true; }
       console.error('API /api/ai/chat error:', err);
       sendJson(res, 500, { error: 'Internal AI service error', message: String(err) });
     }
@@ -328,7 +329,7 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
       res.end();
     } catch (err) {
       console.error('API /api/ai/stream error:', err);
-      res.write(`event: error\ndata: ${JSON.stringify({ error: String(err) })}\n\n`);
+      res.write(`event: error\ndata: ${JSON.stringify({ error: String(err), ...(isAiServiceUnavailable(err) ? { code: 'AI_SERVICE_UNAVAILABLE' } : {}) })}\n\n`);
       res.end();
     }
     return true;
