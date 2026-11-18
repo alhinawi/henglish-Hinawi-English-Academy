@@ -4,7 +4,7 @@ root=pathlib.Path.cwd();server=http.server.ThreadingHTTPServer(('127.0.0.1',4188
 try:
  with sync_playwright() as p:
   b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
-  for name,locale,saved,query,expected in [('arabic','ar-EG',None,'','ar'),('english','en-US',None,'','en'),('german','de-DE',None,'','en'),('saved-ar','en-US','ar','','ar'),('saved-en','ar-EG','en','','en'),('invalid','ar-EG','invalid','','ar'),('url','ar-EG','ar','?lang=en','en'),('no-signal','en-US',None,'','ar')]:
+  for name,locale,saved,query,expected in [('egypt-english','en-EG',None,'','ar'),('egypt-explicit-en','en-EG','en','','en'),('egypt-url','en-EG',None,'?lang=fr','fr'),('arabic','ar-EG',None,'','ar'),('english','en-US',None,'','en'),('german','de-DE',None,'','en'),('saved-ar','en-US','ar','','ar'),('saved-en','ar-EG','en','','en'),('invalid','ar-EG','invalid','','ar'),('url','ar-EG','ar','?lang=en','en'),('no-signal','en-US',None,'','ar')]:
    context=b.new_context(viewport={'width':390,'height':1000},locale=locale)
    if saved:context.add_init_script('if (!localStorage.getItem("henglish_ui_lang_v1")) localStorage.setItem("henglish_ui_lang_v1",'+json.dumps(saved)+');')
    if name=='no-signal':context.add_init_script('Object.defineProperty(navigator,"languages",{get:()=>[]});Object.defineProperty(navigator,"language",{get:()=>""});')
