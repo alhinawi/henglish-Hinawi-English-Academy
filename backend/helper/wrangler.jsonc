@@ -1,0 +1,23 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "henglish-helper",
+  "main": "index.ts",
+  "compatibility_date": "2026-11-18",
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  "vars": {
+    "HELPER_ENABLED": "true",
+    "GROQ_ENABLED": "false",
+    "GROQ_FREE_VERIFIED_UNTIL": ""
+  },
+  "ai": { "binding": "AI" },
+  "durable_objects": {
+    "bindings": [{ "name": "HELPER_LIMITS", "class_name": "HelperLimits" }]
+  },
+  "migrations": [{ "tag": "helper-v1", "new_sqlite_classes": ["HelperLimits"] }],
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "henglish",
+    "database_id": "9ac70148-e743-4271-9b00-1e6ace54e57a"
+  }]
+}

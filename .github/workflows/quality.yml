@@ -48,5 +48,8 @@ jobs:
       - name: Offline safety and skills regression checks
         run: pnpm test:regressions
 
+      - name: Typecheck helper Worker
+        run: cd backend && npm ci && npx tsc --noEmit -p helper/tsconfig.json
+
       - name: Run production build (includes TypeScript project build)
         run: pnpm build
