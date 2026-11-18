@@ -74,7 +74,7 @@ export const GrammarAcademyPage: React.FC<GrammarAcademyPageProps> = ({ onNaviga
         <div className="absolute inset-0 z-0">
           <img 
             src={ONLINE_IMAGES.modernClassroom} 
-            alt="Modern English Grammar Academy Lecture Hall" 
+            alt="Illustrative photograph of students attending a classroom session"
             className="w-full h-full object-cover filter brightness-[0.25]"
           />
           <div className="absolute inset-0 bg-linear-to-r from-[#0c0b20] via-[#0c0b20]/90 to-transparent" />
