@@ -40,7 +40,8 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
 
   const version = useRef(0);
   const readerRef = useRef<FileReader | null>(null);
-  useEffect(() => () => { version.current += 1; readerRef.current?.abort(); }, []);
+  const requestController = useRef<AbortController | null>(null);
+  useEffect(() => () => { version.current += 1; readerRef.current?.abort(); requestController.current?.abort(); }, []);
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -58,6 +59,7 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
     }
 
     const request = ++version.current;
+    requestController.current?.abort();
     readerRef.current?.abort();
     setImagePreview(null);
     setConfidence(null);
@@ -84,9 +86,12 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
     setIsProcessing(true);
     setErrorMsg(null);
 
+    const controller = new AbortController();
+    requestController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 60000);
     try {
       const base64 = dataUrl.split(',')[1];
-      const result = await performImageOcrTranslation(base64, mimeType, targetLang);
+      const result = await performImageOcrTranslation(base64, mimeType, targetLang, controller.signal);
 
       if (request !== version.current) return;
       setExtractedText(result.extractedText);
@@ -100,7 +105,8 @@ export const CameraOcrTab: React.FC<CameraOcrTabProps> = ({ targetLang }) => {
       setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('ocr.errExtract'));
       playSound('wrong');
     } finally {
-      if (request === version.current) setIsProcessing(false);
+      clearTimeout(deadline);
+      if (request === version.current) { requestController.current = null; setIsProcessing(false); }
     }
   };
 
