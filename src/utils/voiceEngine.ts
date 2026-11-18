@@ -5,6 +5,15 @@
 // Features Event-Driven Queue Playback (ended events, NO setTimeout gaps)
 // ==============================================================================
 
+// Ready-made English lesson audio is played synchronously from the user tap.
+// Browser voices are not required. Extend only with verified local recordings.
+export const STATIC_ENGLISH_AUDIO: Record<string, string> = {
+  "What is your name?": "/audio/english/conversation-01-line-1.mp3",
+  "My name is Salma. Nice to meet you.": "/audio/english/conversation-01-line-2.mp3",
+  "Nice to meet you too. Are you a student?": "/audio/english/conversation-01-line-3.mp3",
+  "Yes, I study English.": "/audio/english/conversation-01-line-4.mp3",
+};
+
 export type VoiceGender = 'female' | 'male';
 export type VoiceAccent = 'US' | 'UK';
 export type SpeechSpeed = 0.75 | 0.92 | 1.0 | 1.25;
@@ -341,7 +350,7 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
     if (currentHtmlAudio) { currentHtmlAudio.pause(); currentHtmlAudio = null; }
     speakViaBrowserSpeech(trimmed, options, generation);
   };
-  const playAudio = (src: string) => {
+  const playAudio = (src: string, onFailure = fallback) => {
     if (!isCurrent()) return;
     const audio = new Audio(src);
     currentHtmlAudio = audio;
@@ -354,9 +363,14 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
       options?.onEnd?.();
       options?.onEnded?.();
     };
-    audio.onerror = fallback;
-    audio.play().catch(fallback);
+    let failed = false;
+    const failOnce = () => { if (failed || !isCurrent()) return; failed = true; onFailure(); };
+    audio.onerror = failOnce;
+    audio.play().catch(failOnce);
   };
+  const requestServerAudio = () => {
+    if (!isCurrent()) return;
+    if (currentHtmlAudio) { currentHtmlAudio.pause(); currentHtmlAudio = null; }
   const cached = clientAudioBlobCache.get(cacheKey);
   if (cached) { playAudio(cached); return; }
   const controller = new AbortController();
@@ -377,6 +391,10 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
       } else fallback();
     })
     .catch(() => { if (isCurrent()) { synthesisController = null; fallback(); } });
+  };
+  const readyClip = STATIC_ENGLISH_AUDIO[trimmed];
+  if (readyClip) { playAudio(readyClip, requestServerAudio); return; }
+  requestServerAudio();
 }
 
 /**
