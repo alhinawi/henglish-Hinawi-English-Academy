@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 import { LessonVideoResource, isValidYouTubeId } from '../data/videoResourcesData';
 import { Play, ExternalLink, Video, AlertCircle, Clock, Sparkles, RefreshCw, CheckCircle2 } from 'lucide-react';
 import { playSound } from '../utils/audio';
@@ -11,6 +12,7 @@ interface YouTubeVideoPlayerProps {
 
 export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resources, lessonTitle }) => {
   const { t } = useLanguage();
+  const videoText = useAppTextMap('videoResourcesData');
   const [activeVideoIdx, setActiveVideoIdx] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -181,9 +183,9 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                 {currentVideo.duration}
               </span>
             </div>
-            <h4 className="text-base sm:text-lg font-black text-white">{currentVideo.titleAr}</h4>
+            <h4 className="text-base sm:text-lg font-black text-white">{txText(videoText, currentVideo.titleAr)}</h4>
             <div className="text-xs font-mono text-[#b9b6d5]">{currentVideo.title}</div>
-            <p className="text-xs text-[#dedbf4] leading-relaxed pt-1">{currentVideo.descriptionAr}</p>
+            <p className="text-xs text-[#dedbf4] leading-relaxed pt-1">{txText(videoText, currentVideo.descriptionAr)}</p>
           </div>
 
           <a
@@ -211,7 +213,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
                   className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-black/40 border border-white/10 text-xs"
                 >
                   <span className="text-red-400 font-mono font-bold">{ts.time}</span>
-                  <span className="text-[#dedbf4]">{ts.label}</span>
+                  <span className="text-[#dedbf4]">{txText(videoText, ts.label)}</span>
                 </div>
               ))}
             </div>

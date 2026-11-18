@@ -145,7 +145,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
   // Listening mode state
   const [isListeningRevealed, setIsListeningRevealed] = useState(false);
 
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const cefrCounts = useMemo(() => {
     const c: Record<string, number> = {};
@@ -557,7 +557,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               <Calendar className="w-5 h-5" />
               <span>{t('sl.dailyIntro')}</span>
             </span>
-            <span className="text-xs font-mono">{new Date().toLocaleDateString('ar-EG-u-nu-latn')}</span>
+            <span className="text-xs font-mono">{new Date().toLocaleDateString(lang === 'ar' ? 'ar-EG-u-nu-latn' : lang)}</span>
           </div>
           <SentenceCard learnerId={learnerId} onLearningChange={handleLearningChange}
             key={dailySentence.id}
@@ -617,7 +617,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
               {t('sl.practicePrompt')}
             </h3>
             <p className="text-base text-amber-300 font-bold max-w-xl mx-auto">
-              "{practiceSentence.arabicEg}"
+              "{lang === 'en' ? `${practiceSentence.subcategory}: ${practiceSentence.purpose}` : practiceSentence.arabicEg}"
             </p>
           </div>
 
@@ -813,7 +813,7 @@ export const SentencesLibraryPage: React.FC<SentencesLibraryPageProps> = ({ onNa
                 <span>{t('sl.searchInsight')}</span>
               </span>
               <p className="text-xs sm:text-sm text-white/90 leading-relaxed">
-                {semanticMatches[0].nuanceExplanationAr}
+                {lang === 'en' ? `${semanticMatches[0].sentence.purpose}. ${semanticMatches[0].sentence.grammar}` : semanticMatches[0].nuanceExplanationAr}
               </p>
             </div>
           )}
