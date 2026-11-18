@@ -56,6 +56,17 @@ let cachedIndex: QuestionIndex | null = null;
 let cachedQuestions: BankQuestion[] = [];
 let fullLoadingPromise: Promise<BankQuestion[]> | null = null;
 
+async function fetchQuestionJson(url: string): Promise<unknown> {
+  const controller = new AbortController();
+  const deadline = setTimeout(() => controller.abort(), 30000);
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    // Keep the deadline through body decoding, not just response headers.
+    return await response.json();
+  } finally { clearTimeout(deadline); }
+}
+
 function isBankQuestion(value: unknown): value is BankQuestion {
   if (!value || typeof value !== 'object') return false;
   const q = value as BankQuestion;
@@ -71,9 +82,7 @@ function isBankQuestion(value: unknown): value is BankQuestion {
 
 export async function loadQuestionIndex(): Promise<QuestionIndex> {
   if (cachedIndex) return cachedIndex;
-  const res = await fetch(INDEX_URL);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const index = await res.json() as QuestionIndex;
+  const index = await fetchQuestionJson(INDEX_URL) as QuestionIndex;
   if (!index || !Number.isInteger(index.totalQuestions) || index.totalQuestions <= 0
     || !Array.isArray(index.chunks) || !index.chunks.length
     || !index.chunks.every(name => typeof name === 'string' && /^q\d{6}-\d{6}\.json$/.test(name))
@@ -94,9 +103,7 @@ export async function loadAllQuestions(): Promise<BankQuestion[]> {
         const batch = index.chunks.slice(i, i + FETCH_BATCH);
         const parts = await Promise.all(
           batch.map(async name => {
-            const res = await fetch(`${CHUNKS_BASE}${name}`);
-            if (!res.ok) throw new Error(`HTTP ${res.status} for ${name}`);
-            const questions: unknown = await res.json();
+            const questions = await fetchQuestionJson(`${CHUNKS_BASE}${name}`);
             if (!Array.isArray(questions) || !questions.length || !questions.every(isBankQuestion)) throw new Error('Invalid question chunk');
             return questions as BankQuestion[];
           })
