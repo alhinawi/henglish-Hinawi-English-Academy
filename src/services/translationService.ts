@@ -147,7 +147,15 @@ export async function performImageOcrTranslation(
 
   await throwForAiResponse(response, 'OCR text recognition failed');
 
-  return response.json();
+  const result: unknown = await response.json();
+  if (!result || typeof result !== 'object' || Array.isArray(result) ||
+      typeof (result as { extractedText?: unknown }).extractedText !== 'string' ||
+      !(result as { extractedText: string }).extractedText.trim() ||
+      ((result as { translatedText?: unknown }).translatedText !== undefined &&
+       typeof (result as { translatedText?: unknown }).translatedText !== 'string')) {
+    throw new Error('OCR returned no usable extracted text');
+  }
+  return result as OcrResult;
 }
 
 /**
@@ -167,7 +175,13 @@ export async function transcribeAudioRecording(
 
   await throwForAiResponse(response, 'Voice transcription failed');
 
-  return response.json();
+  const result: unknown = await response.json();
+  if (!result || typeof result !== 'object' || Array.isArray(result) ||
+      typeof (result as { transcription?: unknown }).transcription !== 'string' ||
+      !(result as { transcription: string }).transcription.trim()) {
+    throw new Error('Voice transcription returned no usable text');
+  }
+  return result as { transcription: string; detectedLang: LanguageCode };
 }
 
 // ==============================================================================
