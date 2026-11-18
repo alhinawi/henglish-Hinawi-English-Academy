@@ -4,7 +4,7 @@ import { resolve, sep, extname } from 'node:path';
 
 const root = resolve('out');
 const port = Number(process.env.PORT || 5173);
-const types = { '.html':'text/html; charset=utf-8', '.js':'text/javascript', '.css':'text/css', '.json':'application/json', '.png':'image/png', '.jpg':'image/jpeg', '.jpeg':'image/jpeg', '.webp':'image/webp', '.svg':'image/svg+xml', '.mp3':'audio/mpeg', '.wav':'audio/wav', '.pdf':'application/pdf', '.woff2':'font/woff2', '.wasm':'application/wasm', '.ico':'image/x-icon' };
+const types = { '.html':'text/html; charset=utf-8', '.js':'text/javascript', '.mjs':'text/javascript', '.css':'text/css', '.json':'application/json', '.png':'image/png', '.jpg':'image/jpeg', '.jpeg':'image/jpeg', '.webp':'image/webp', '.svg':'image/svg+xml', '.mp3':'audio/mpeg', '.wav':'audio/wav', '.pdf':'application/pdf', '.woff2':'font/woff2', '.wasm':'application/wasm', '.ico':'image/x-icon' };
 if (!existsSync(resolve(root, 'index.html'))) throw new Error('Run npm run build before preview.');
 http.createServer((req, res) => {
   if (!['GET','HEAD'].includes(req.method)) { res.writeHead(405, {'Allow':'GET, HEAD'}).end(); return; }

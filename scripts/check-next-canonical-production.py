@@ -5,6 +5,7 @@ try:
  for _ in range(50):
   try: urllib.request.urlopen('http://127.0.0.1:5173/');break
   except: time.sleep(.1)
+ worker=urllib.request.urlopen('http://127.0.0.1:5173/workers/pdf.worker-6.5.438.min.mjs');assert worker.headers['Content-Type']=='text/javascript'
  index=urllib.request.urlopen('http://127.0.0.1:5173/').read();assert b'/_next/' in index
  file=next(pathlib.Path('out/images').rglob('*.webp'));url='http://127.0.0.1:5173/'+str(file.relative_to('out'));r=urllib.request.urlopen(urllib.request.Request(url,headers={'Range':'bytes=0-9'}));assert r.status==206 and len(r.read())==10;r=urllib.request.urlopen(urllib.request.Request(url,method='HEAD'));assert r.headers['Content-Type']=='image/webp'
  for url,status in [('http://127.0.0.1:5173/missing-resource.mp3',404),('http://127.0.0.1:5173/..%2fpackage.json',403)]:
