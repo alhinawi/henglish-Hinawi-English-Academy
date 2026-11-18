@@ -318,6 +318,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
     const version = ++requestVersion.current;
     const controller = new AbortController();
     requestController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 120000);
     const isCurrent = () => version === requestVersion.current;
 
     if (isRecordingVoice && recognitionRef.current) {
@@ -451,6 +452,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         setSessions(prev => prev.map(s => (s.id === activeSession.id ? fallbackSession : s)));
       }
     } finally {
+      clearTimeout(deadline);
       if (isCurrent()) { requestController.current = null; setIsTyping(false); }
     }
   };
