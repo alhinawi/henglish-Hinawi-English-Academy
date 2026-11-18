@@ -30,10 +30,10 @@ const FALLBACK_SKILLS: QuestionSkill[] = ['grammar', 'reading', 'listening', 'us
 type Draw = typeof drawQuestions;
 
 /** Placement uses multiple-choice only (4 options) so a guess is 25%, not 50%. */
-function drawOne(all: BankQuestion[], draw: Draw, level: QuestionLevel, skill: QuestionSkill, taken: Set<string>): BankQuestion | null {
+function drawOne(all: BankQuestion[], draw: Draw, level: QuestionLevel, skill: QuestionSkill, taken: Set<string>, learnerId?: string): BankQuestion | null {
   const candidates = [skill, ...FALLBACK_SKILLS.filter(s => s !== skill)];
   for (const s of candidates) {
-    const got = draw(all, { count: 1, skill: s, level, type: 'multiple-choice' });
+    const got = draw(all, { count: 1, skill: s, level, type: 'multiple-choice' }, learnerId);
     const q = got.find(x => !taken.has(x.id));
     if (q) return q;
   }
@@ -58,12 +58,12 @@ export function toAssessmentQuestion(q: BankQuestion): AssessmentQuestion {
 }
 
 /** Pure builder (injectable draw function for tests). Ordered easy to hard. */
-export function buildPlacementFromPool(all: BankQuestion[], draw: Draw = drawQuestions): AssessmentQuestion[] {
+export function buildPlacementFromPool(all: BankQuestion[], draw: Draw = drawQuestions, learnerId?: string): AssessmentQuestion[] {
   const taken = new Set<string>();
   const session: AssessmentQuestion[] = [];
   for (const slot of PLACEMENT_PLAN) {
     for (const skill of slot.skills) {
-      const q = drawOne(all, draw, slot.level, skill, taken);
+      const q = drawOne(all, draw, slot.level, skill, taken, learnerId);
       if (q) {
         taken.add(q.id);
         session.push(toAssessmentQuestion(q));
@@ -73,7 +73,7 @@ export function buildPlacementFromPool(all: BankQuestion[], draw: Draw = drawQue
   return session;
 }
 
-export async function generatePlacementSessionFromBank(): Promise<AssessmentQuestion[]> {
+export async function generatePlacementSessionFromBank(learnerId?: string): Promise<AssessmentQuestion[]> {
   const all = await loadAllQuestions();
-  return buildPlacementFromPool(all);
+  return buildPlacementFromPool(all, drawQuestions, learnerId);
 }
