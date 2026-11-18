@@ -161,7 +161,7 @@ export const SpeakingLegacyPractice: React.FC<SpeakingLegacyPracticeProps> = ({ 
               >
                 <div className="flex flex-wrap items-start justify-between gap-3 mb-2">
                   <div className="flex items-center gap-2 font-bold text-xs text-[#ffd166]">
-                    <span>{line.avatar}</span>
+                    {line.avatarUrl && <img src={line.avatarUrl} alt="" loading="lazy" width={40} height={40} className="h-10 w-10 shrink-0 rounded-full object-cover" />}
                     <span>{line.speaker}</span>
                   </div>
                   <div className="flex flex-wrap items-start gap-2">
