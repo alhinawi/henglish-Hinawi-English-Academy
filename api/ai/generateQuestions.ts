@@ -1,3 +1,4 @@
+import { AiServiceUnavailableError, isAiServiceUnavailable } from '../../src/services/aiAvailability';
 // ==============================================================================
 // HENGLISH ACADEMY (HENGLISH 2.0) - DYNAMIC AI QUESTION GENERATION ENGINE
 // Multi-Provider Routed & Zod-Validated Assessment Question Generator
@@ -156,9 +157,14 @@ Output ONLY a valid JSON array adhering to this schema:
         temperature: 0.7,
       });
 
+      if (routerResult.isLocalFallback || routerResult.provider === 'local') throw new AiServiceUnavailableError();
+
       // Zod Validation & Schema Enforcement
       const validatedQuestions = validateQuestionsJson(routerResult.text);
 
+      if (validatedQuestions.length !== count || validatedQuestions.some(q => q.cefrLevel !== cefrLevel || q.topic !== topic || q.difficulty !== difficulty)) {
+        throw new Error('Generated quiz does not match requested settings');
+      }
       if (validatedQuestions.length > 0) {
         sendJson(res, 200, {
           questions: validatedQuestions,
@@ -171,17 +177,21 @@ Output ONLY a valid JSON array adhering to this schema:
         return;
       }
     } catch (routerErr) {
-      console.warn('[AI Question Generation] Router call failed or validation failed, using verified bank:', routerErr);
+      console.warn('[AI Question Generation] Router call or validation failed:', routerErr);
+      throw routerErr;
     }
 
-    // High quality verified bank fallback
-    sendJson(res, 200, {
+    // Retain the former fallback record for reference, never serve it as a custom quiz.
+    const legacyFallback = {
       questions: FALLBACK_BANK.slice(0, count),
       source: 'verified-bank',
       isLocalFallback: true,
       count: Math.min(count, FALLBACK_BANK.length),
-    });
+    };
+    throw new AiServiceUnavailableError();
+
   } catch (err) {
+    if (isAiServiceUnavailable(err)) { sendJson(res, 503, { error: 'AI service unavailable', code: 'AI_SERVICE_UNAVAILABLE' }); return; }
     console.error('API /api/ai/generateQuestions error:', err);
     sendJson(res, 500, { error: 'Question generation error', message: String(err) });
   }
