@@ -39,3 +39,10 @@ export function saveLiteracy(key: string, saved: LiteracySaved): boolean {
     return true;
   } catch { return false; }
 }
+
+// Only edited drafts belong to this write; other tabs may own fresher copies.
+export function literacySavePatch(saved: LiteracySaved, dirtyIds: Iterable<string>): LiteracySaved {
+  return { ...saved, drafts: Object.fromEntries(Array.from(dirtyIds)
+    .filter(id => Object.prototype.hasOwnProperty.call(saved.drafts, id))
+    .map(id => [id, saved.drafts[id]])) };
+}
