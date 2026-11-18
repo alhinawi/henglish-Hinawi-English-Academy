@@ -2172,8 +2172,10 @@
     "text": "live",
     "voice": "Iapetus",
     "group": "pronunciation",
-    "duration": 1.128,
-    "src": "/audio/english/pronunciation-mp-2-b.mp3"
+    "duration": 2.616,
+    "src": "/audio/english/pronunciation-mp-2-b.mp3",
+    "spokenText": "I live in Cairo. Live.",
+    "deliveryNote": "Generated with verb context for /lɪv/. Not phonetically approved."
   },
   {
     "id": "pronunciation-mp-3-a",
