@@ -52,7 +52,7 @@ export const WordCard: React.FC<WordCardProps> = ({
     setSaved(isWordSaved(entry.headword, learnerId));
   }, [entry.headword, savedVersion, learnerId]);
   const txMap = useContentMap('vocab');
-  const shownMeaning = (lang === 'en' ? (entry.definitionEn || englishSourceText('vocabularyAcademyData', entry.meaningAr)) : txMeaning(txMap, entry.id, entry.meaningAr));
+  const shownMeaning = (lang === 'en' ? txMeaning(txMap, entry.id, entry.definitionEn || englishSourceText('vocabularyAcademyData', entry.meaningAr)) : txMeaning(txMap, entry.id, entry.meaningAr));
   const shownExample = (lang === 'en' ? entry.exampleEn : txExample(txMap, entry.id, entry.exampleAr));
 
   const handleToggleSave = (e: React.MouseEvent) => {
@@ -79,7 +79,7 @@ export const WordCard: React.FC<WordCardProps> = ({
     return (
       <div
         onClick={() => onOpenDetails(entry)}
-        className="glass-panel p-4 rounded-2xl border border-white/10 hover:border-white/25 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-right cursor-pointer group"
+        className="glass-panel p-4 rounded-2xl border border-white/10 hover:border-white/25 transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-start cursor-pointer group"
       >
         {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
         <div className="flex items-center gap-3">
@@ -142,7 +142,7 @@ export const WordCard: React.FC<WordCardProps> = ({
   return (
     <div
       onClick={() => onOpenDetails(entry)}
-      className="glass-panel p-5 rounded-2xl border border-white/10 hover:border-white/30 transition-all flex flex-col justify-between space-y-4 text-right cursor-pointer group hover:shadow-xl hover:shadow-black/40"
+      className="glass-panel p-5 rounded-2xl border border-white/10 hover:border-white/30 transition-all flex flex-col justify-between space-y-4 text-start cursor-pointer group hover:shadow-xl hover:shadow-black/40"
     >
       {saveError && <p role="alert" className="text-xs text-red-300">{t('vocab.saveError')}</p>}
       {/* Top row: Badges + Save Button */}
@@ -214,9 +214,9 @@ export const WordCard: React.FC<WordCardProps> = ({
           <p className="text-white/90 font-medium font-sans truncate" dir="ltr">
             "{entry.exampleEn}"
           </p>
-          <p className="text-white/50 text-[11px] truncate">
+          {shownExample !== entry.exampleEn && <p className="text-white/50 text-[11px] truncate">
             {shownExample}
-          </p>
+          </p>}
         </div>
       )}
 

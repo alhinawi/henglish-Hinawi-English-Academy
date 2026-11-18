@@ -1,7 +1,7 @@
 const fs=require('fs'),assert=require('assert/strict');
 const source=JSON.parse(fs.readFileSync('public/data/vocab/chunks/r00001-00100.json'));const byId=Object.fromEntries(source.map(e=>[e.id,e]));
 const fixes={'voc-w00004':'von / aus','voc-w00013':'dies / dieser / diese / dieses','voc-w00020':'nicht','voc-w00025':'wir','voc-w00039':'was','voc-w00042':'tun / machen','voc-w00047':'welcher / welche / welches','voc-w00057':'sie / ihnen'};
-for(const file of fs.readdirSync('public/data/vocab/i18n').filter(f=>f.endsWith('.json'))){const d=JSON.parse(fs.readFileSync('public/data/vocab/i18n/'+file));for(const id of ['voc-w00004','voc-w00013','voc-w00020']){assert.equal(d[id].m,file==='de.json'?fixes[id]:byId[id].meaningAr);assert.ok(d[id].e);}if(file==='de.json')for(const [id,m] of Object.entries(fixes))assert.equal(d[id].m,m);}
+for(const file of fs.readdirSync('public/data/vocab/i18n').filter(f=>f.endsWith('.json')&&f!=='en.json')){const d=JSON.parse(fs.readFileSync('public/data/vocab/i18n/'+file));for(const id of ['voc-w00004','voc-w00013','voc-w00020']){assert.equal(d[id].m,file==='de.json'?fixes[id]:byId[id].meaningAr);assert.ok(d[id].e);}if(file==='de.json')for(const [id,m] of Object.entries(fixes))assert.equal(d[id].m,m);}
 console.log('German8 dictionary-grounded function-word fixes;3corrupt meanings fallback to original Arabic across other27locales, examples preserved: PASS');
 
 const de=JSON.parse(fs.readFileSync('public/data/vocab/i18n/de.json'));
@@ -15,10 +15,13 @@ const earlyMeanings={"voc-w00006": "in / auf / bei / an", "voc-w00066": "ihn / i
 for(const [id,m] of Object.entries(earlyMeanings))assert.equal(de[id].m,m);
 
 const sourceFallbacks=['voc-w00066','voc-w00074','voc-w00078','voc-w00087','voc-w00093'];
-for(const file of fs.readdirSync('public/data/vocab/i18n').filter(f=>f.endsWith('.json')&&f!=='de.json')){
+for(const file of fs.readdirSync('public/data/vocab/i18n').filter(f=>f.endsWith('.json')&&f!=='de.json'&&f!=='en.json')){
  const map=JSON.parse(fs.readFileSync('public/data/vocab/i18n/'+file));
  for(const id of sourceFallbacks){assert.equal(map[id].m,byId[id].meaningAr);assert.ok(map[id].e);}
 }
 
 const contextualMeanings={"voc-w00009": "dass / der / die / das", "voc-w00010": "du / ihr / Sie", "voc-w00011": "auf / an / bei", "voc-w00065": "erste / erster / erstes", "voc-w00070": "machen / herstellen / zubereiten", "voc-w00076": "Rücken / Rückseite; zurück (Adverb)", "voc-w00092": "richtig / rechts / Recht", "voc-w00098": "gehend (Form von go)", "voc-w00100": "von / ab / weg / aus"};
 for(const [id,m] of Object.entries(contextualMeanings))assert.equal(de[id].m,m);
+
+const en=JSON.parse(fs.readFileSync('public/data/vocab/i18n/en.json'));
+for(const id of [...Object.keys(fixes),...sourceFallbacks]){assert.ok(en[id].m.trim());assert.ok(!/[\u0600-\u06ff]/.test(en[id].m));if(en[id].e)assert.equal(en[id].e,byId[id].exampleEn);}
