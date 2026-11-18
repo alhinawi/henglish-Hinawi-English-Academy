@@ -24,6 +24,17 @@
 ## Development and production
 
 Next.js 15 static export on free Cloudflare Pages. Run `npm run dev`, `npm run build`, then `npm run preview`. Deploy `out/`. See [build and deployment notes](docs/next-production-build.md).
+## جولة من الموقع الحالي
+
+صور مباشرة من الموقع يوم 18 نوفمبر 2026. الجولة المتحركة بتعرض لوحة البداية، الكورسات، وأكاديمية الجرامر. دي لقطات من التنقل الفعلي، مش واجهة مرسومة.
+
+[![جولة هناوي إنجلش: البداية والكورسات والجرامر](docs/media/demo.gif)](https://henglish.pages.dev)
+
+| الكمبيوتر | الموبايل |
+| --- | --- |
+| ![لوحة هناوي إنجلش على الكمبيوتر](docs/media/desktop.webp) | ![لوحة هناوي إنجلش على الموبايل](docs/media/mobile.webp) |
+
+[الكورسات](https://henglish.pages.dev/#courses) · [أكاديمية الجرامر](https://henglish.pages.dev/#grammar)
 
 ## 🌟 نظرة عامة
 
@@ -37,7 +48,7 @@ Next.js 15 static export on free Cloudflare Pages. Run `npm run dev`, `npm run b
 
 ### 1. 📚 أكاديمية القواعد الكاملة
 
-- **16 صفحة تعليمية مستقلة ومكتملة** لكل قاعدة لغوية بدلاً من مجرد كروت ملخصة.
+- **59 قاعدة في أكاديمية الجرامر** لكل قاعدة لغوية بدلاً من مجرد كروت ملخصة.
 - يغطي المنهج المضارع والماضي والمستقبل بكل صورهم، الحالات الشرطية الأربع، الأفعال
   الناقصة، المبني للمجهول، الكلام المنقول وجمل الوصل.
 - كل صفحة فيها أهداف الدرس والمستوى (CEFR)، مخطط زمني تفاعلي، التراكيب الأربعة

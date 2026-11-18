@@ -331,7 +331,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   "{currentTurn.textEn}"
                 </p>
                 <p className="text-xs sm:text-sm text-[#dedbf4]">
-                  {currentTurn.textAr}
+                  {txText(appText, currentTurn.textAr)}
                 </p>
               </div>
             </div>
@@ -340,7 +340,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             {currentTurn.grammarTipAr && (
               <div className="p-4 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/30 flex items-start gap-3 text-xs text-[#ffd166]">
                 <Sparkles className="w-4 h-4 shrink-0 mt-0.5" />
-                <span><strong className="font-bold">{t('rle.tipLabel')}: </strong>{currentTurn.grammarTipAr}</span>
+                <span><strong className="font-bold">{t('rle.tipLabel')}: </strong>{txText(appText, currentTurn.grammarTipAr)}</span>
               </div>
             )}
 
@@ -372,7 +372,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                       >
                         <div className="space-y-1 text-left min-w-0 break-words" dir="ltr">
                           <div dir="ltr" lang="en">{opt.textEn}</div>
-                          <div className="text-xs text-[#b9b6d5] text-right font-sans font-normal" dir="rtl">{opt.textAr}</div>
+                          <div className="text-xs text-[#b9b6d5] text-start font-sans font-normal" dir={dir}>{txText(appText, opt.textAr)}</div>
                         </div>
 
                         {isChosen && (
@@ -384,7 +384,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
                       {isChosen && (
                         <div role="status" className={`p-3 rounded-xl text-xs ${opt.isOptimal ? 'bg-emerald-500/10 text-emerald-300' : 'bg-amber-500/10 text-amber-300'}`}>
-                          {opt.feedbackAr}
+                          {txText(appText, opt.feedbackAr)}
                         </div>
                       )}
                     </div>
@@ -470,7 +470,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             >
               <div className="space-y-0.5">
                 <div className="text-sm font-sans font-bold text-white">{vocab.en}</div>
-                <div className="text-xs text-[#ffd166]">{vocab.ar}</div>
+                <div className="text-xs text-[#ffd166]">{txText(appText, vocab.ar)}</div>
                 {vocab.phonetic && (
                   <div className="text-[10px] text-[#b9b6d5] font-mono">{vocab.phonetic}</div>
                 )}
