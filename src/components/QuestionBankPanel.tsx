@@ -15,6 +15,7 @@ import {
   loadAllQuestions,
   resetServedQuestions,
 } from '../services/questionBankService';
+import { englishBankQuestion, loadEnglishQuestionMap, type EnglishQuestionMap } from '../services/englishQuestionBank';
 import { useAppTextMap } from '../services/contentI18nService';
 import { QuizQuestion } from '../types';
 import { QuizEngine } from './QuizEngine';
@@ -78,7 +79,8 @@ interface QuestionBankPanelProps {
   onRecordScore?: (quizId: string, score: number, total: number) => void;
 }
 export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId, onRecordScore }) => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const [englishMap, setEnglishMap] = useState<EnglishQuestionMap | null>(null);
   const qbText = useAppTextMap('massiveQuestionBank');
   const quizText = useAppTextMap('quizzesData');
   const tx = (s: string) => qbText?.[s] ?? quizText?.[s] ?? s;
@@ -96,9 +98,13 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
   useEffect(() => {
     let mounted = true;
     setLoadError(false);
+    setAll(null);
+    setDrawn(null);
+    setEnglishMap(null);
     loadAllQuestions()
-      .then(qs => {
-        if (mounted) setAll(qs);
+      .then(async qs => {
+        const map = lang === 'en' ? await loadEnglishQuestionMap(qs) : null;
+        if (mounted) { setEnglishMap(map); setAll(qs); }
       })
       .catch(err => {
         console.error('Failed to load question bank:', err);
@@ -107,7 +113,7 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
     return () => {
       mounted = false;
     };
-  }, [loadAttempt]);
+  }, [loadAttempt, lang]);
 
   const drawOpts: DrawOptions = useMemo(
     () => ({
@@ -162,7 +168,7 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
     );
   }
 
-  if (!all) {
+  if (!all || (lang === 'en' && !englishMap)) {
     return (
       <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
         <Loader2 className="w-10 h-10 text-[#41e7ff] animate-spin mx-auto" />
@@ -172,7 +178,7 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
   }
 
   return (
-    <div className="space-y-5 text-right">
+    <div className="space-y-5 text-start">
       <div className="text-xs text-white/60 font-bold">
         {t('qb.bankInfoPre')} <strong className="text-[#c4ff55]">{all.length.toLocaleString()}</strong>{' '}
         {t('qb.bankInfoPost')}
@@ -243,7 +249,10 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
       {drawn && drawn.length > 0 && (
         <QuizEngine
           key={`qbank-${round}`}
-          questions={drawn.map(q => ({ ...toQuizQuestion(q, t), explanation: tx(q.explanationAr ?? '') }))}
+          questions={drawn.map(q => {
+            const localized = lang === 'en' && englishMap ? englishBankQuestion(q, englishMap) : q;
+            return { ...toQuizQuestion(localized, t), explanation: lang === 'en' ? localized.explanationAr : tx(q.explanationAr ?? '') };
+          })}
           quizTitle={`${t('qb.quizTitle')} - ${drawn.length} ${t('qb.questions')}`}
           onComplete={(score, total) => onRecordScore?.(`question-bank:${skill}:${level}:${type}`, score, total)}
         />
