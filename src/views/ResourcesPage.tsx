@@ -15,7 +15,7 @@ export const ResourcesPage: React.FC = () => {
     playSound('correct');
     
     // Create actual downloadable file in memory
-    const blob = new Blob([res.contentMarkdown], { type: 'text/plain;charset=utf-8' });
+    const blob = new Blob([txText(appText, res.contentMarkdown)], { type: 'text/plain;charset=utf-8' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
@@ -149,7 +149,7 @@ export const ResourcesPage: React.FC = () => {
 
           {/* Clean Markdown Preformatted Sheet */}
           <pre key={previewResource.id} dir="ltr" className="en text-left p-6 rounded-2xl bg-[#09091a] border border-white/10 text-xs sm:text-sm text-[#dedbf4] font-mono whitespace-pre-wrap leading-relaxed overflow-x-auto select-text">
-            {previewResource.contentMarkdown}
+            {txText(appText, previewResource.contentMarkdown)}
           </pre>
         </section>
       )}

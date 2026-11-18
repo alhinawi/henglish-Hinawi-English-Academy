@@ -5,6 +5,7 @@ import { playSound, fireCelebration, stopSpeech } from '../utils/audio';
 import { CheckCircle2, XCircle, RotateCcw, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../i18n/LanguageContext';
+import { txText, useAppTextMap } from '../services/contentI18nService';
 
 interface QuizEngineProps {
   questions: QuizQuestion[];
@@ -18,6 +19,10 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
   onComplete,
 }) => {
   const { t } = useLanguage();
+  const quizText = useAppTextMap('quizzesData');
+  const bankText = useAppTextMap('massiveQuestionBank');
+  const skillsText = useAppTextMap('skillsAcademyData');
+  const learningText = (source: string) => txText(quizText, txText(bankText, txText(skillsText, source)));
   const resolvedQuizTitle = quizTitle ?? t('qe.defaultTitle');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Record<number, number>>({});
@@ -118,7 +123,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
       {/* Question Counter Indicator */}
       <div className="flex flex-wrap items-start justify-between gap-3 text-xs text-[#b9b6d5] mb-4">
         <span>{t('qe.question')} {currentIndex + 1} {t('qe.of')} {questions.length}</span>
-        <LessonSpeechButton key={currentQ.id} text={currentQ.question} label={t('qe.listenQuestion')} className="inline-flex items-center gap-1.5 text-[#41e7ff] hover:underline cursor-pointer font-bold" />
+        <LessonSpeechButton key={currentQ.id} text={learningText(currentQ.question)} label={t('qe.listenQuestion')} className="inline-flex items-center gap-1.5 text-[#41e7ff] hover:underline cursor-pointer font-bold" />
       </div>
 
       {/* Progress Bars by Questions */}
@@ -156,7 +161,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
       {/* Question Box */}
       <div className="p-6 rounded-2xl bg-[#09091a]/90 border border-white/10 mb-6" dir="ltr" lang="en">
         <p className="en text-lg sm:text-xl font-extrabold text-white leading-relaxed">
-          {currentQ.question}
+          {learningText(currentQ.question)}
         </p>
       </div>
 
@@ -192,7 +197,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
                   {optionLetters[optIdx]}
                 </span>
                 <span className="en font-bold text-sm sm:text-base text-left">
-                  {option}
+                  {learningText(option)}
                 </span>
               </div>
 
@@ -229,7 +234,7 @@ export const QuizEngine: React.FC<QuizEngineProps> = ({
             </div>
             <p className="text-sm">
               <strong className="text-white">{t('qe.explanationLabel')} </strong>
-              {currentQ.explanation}
+              {learningText(currentQ.explanation)}
             </p>
           </motion.div>
         )}
