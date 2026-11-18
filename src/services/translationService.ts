@@ -101,9 +101,11 @@ export async function askTranslationAssistant(
     targetLang: string;
     mode: string;
     userLevel?: CEFRLevel;
-  }
+  },
+  signal?: AbortSignal
 ): Promise<{ answer: string; suggestedAlternative?: string }> {
   const response = await fetch('/api/ai/assistant', {
+    signal,
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ question, context }),

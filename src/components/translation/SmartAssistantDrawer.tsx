@@ -61,15 +61,17 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const requestVersion = useRef(0);
+  const requestController = useRef<AbortController | null>(null);
   useEffect(() => {
     requestVersion.current += 1;
+    requestController.current?.abort();
     setIsLoading(false);
     setMessages([{ id: 'welcome', role: 'assistant', content: t('sad.welcome'), timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) }]);
-    return () => { requestVersion.current += 1; };
+    return () => { requestVersion.current += 1; requestController.current?.abort(); };
   }, [originalText, translatedText, sourceLang, targetLang, mode]);
   useEffect(() => {
-    if (!isOpen) { requestVersion.current += 1; setIsLoading(false); }
-    return () => { requestVersion.current += 1; };
+    if (!isOpen) { requestVersion.current += 1; requestController.current?.abort(); setIsLoading(false); }
+    return () => { requestVersion.current += 1; requestController.current?.abort(); };
   }, [isOpen]);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -84,6 +86,10 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
     if (!q || isLoading) return;
 
     const request = ++requestVersion.current;
+    requestController.current?.abort();
+    const controller = new AbortController();
+    requestController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 60000);
     playSound('click');
     const userMsg: AssistantChatMessage = {
       id: `user_${Date.now()}`,
@@ -103,7 +109,7 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
         sourceLang,
         targetLang,
         mode,
-      });
+      }, controller.signal);
 
       if (request !== requestVersion.current) return;
       const assistantMsg: AssistantChatMessage = {
@@ -124,7 +130,11 @@ export const SmartAssistantDrawer: React.FC<SmartAssistantDrawerProps> = ({
       };
       setMessages(prev => [...prev, errorMsg]);
     } finally {
-      if (request === requestVersion.current) setIsLoading(false);
+      clearTimeout(deadline);
+      if (request === requestVersion.current) {
+        requestController.current = null;
+        setIsLoading(false);
+      }
     }
   };
 
