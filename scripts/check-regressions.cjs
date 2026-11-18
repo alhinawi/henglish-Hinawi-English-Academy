@@ -3,6 +3,8 @@ const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
   'check-protected-tts.cjs',
+  'check-language-picker-search.cjs',
+  'check-expression-translated-search.cjs',
   'check-microsoft-browser-voices.cjs',
   'check-recorder-stop-ownership.cjs',
   'check-quiz-history-title.cjs',
