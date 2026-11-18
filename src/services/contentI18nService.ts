@@ -26,6 +26,17 @@ export function needsContentTranslation(lang: string): boolean {
   return lang !== 'ar' && lang !== 'en';
 }
 
+async function fetchTranslationJson(url: string): Promise<{ missing: boolean; data?: unknown }> {
+  const controller = new AbortController();
+  const deadline = setTimeout(() => controller.abort(), 30000);
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    if (response.status === 404) return { missing: true };
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return { missing: false, data: await response.json() };
+  } finally { clearTimeout(deadline); }
+}
+
 const mapCache = new Map<string, Promise<ContentMap | null>>();
 
 export function loadContentMap(bankPath: string, lang: string): Promise<ContentMap | null> {
@@ -33,11 +44,10 @@ export function loadContentMap(bankPath: string, lang: string): Promise<ContentM
   if (!mapCache.has(key)) {
     mapCache.set(
       key,
-      fetch(`/data/${bankPath}/i18n/${lang}.json`)
-        .then(async res => {
-          if (res.status === 404) return null;
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          const data: unknown = await res.json();
+      fetchTranslationJson(`/data/${bankPath}/i18n/${lang}.json`)
+        .then(result => {
+          if (result.missing) return null;
+          const data = result.data;
           if (!data || typeof data !== 'object' || Array.isArray(data) || Object.values(data).some(value =>
             !value || typeof value !== 'object' || Array.isArray(value) || ['m', 'e'].some(field =>
               field in value && typeof (value as Record<string, unknown>)[field] !== 'string'))) {
@@ -88,11 +98,10 @@ export function loadAppTextMap(module: string, lang: string): Promise<AppTextMap
   if (!appTextCache.has(key)) {
     appTextCache.set(
       key,
-      fetch(`/data/app-i18n/${module}/${lang}.json`)
-        .then(async res => {
-          if (res.status === 404) return null;
-          if (!res.ok) throw new Error(`HTTP ${res.status}`);
-          const data: unknown = await res.json();
+      fetchTranslationJson(`/data/app-i18n/${module}/${lang}.json`)
+        .then(result => {
+          if (result.missing) return null;
+          const data = result.data;
           if (!data || typeof data !== 'object' || Array.isArray(data) || Object.values(data).some(value => typeof value !== 'string')) {
             throw new Error('Invalid app translation map');
           }
