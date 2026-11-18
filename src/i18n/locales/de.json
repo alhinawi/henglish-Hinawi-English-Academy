@@ -2910,5 +2910,7 @@
   "sc.reviewPartial": "Deine Bewertung wurde gespeichert, aber die Liste schwieriger Sätze, die letzten Wiederholungen oder die Lernstatistik konnten nicht aktualisiert werden. Wiederhole die Bewertung dafür nicht.",
   "vi.removeLine": "Zeile entfernen",
   "helper.notice": "Kostenlos Englisch üben mit kurzen Erklärungen auf Ägyptisch-Arabisch. Antworten können Fehler enthalten. Täglich 6 Fragen pro Lernendem und 30 für die gesamte Website, Rücksetzung um 00:00 UTC.",
-  "helper.privacy": "Maximal 1.200 Zeichen pro Frage, ohne persönliche Daten. Die Frage und bis zu vier letzte Nachrichten werden an den Hilfsdienst gesendet. Aussprachetipps nur als Text, keine Audiobewertung."
+  "helper.privacy": "Maximal 1.200 Zeichen pro Frage, ohne persönliche Daten. Die Frage und bis zu vier letzte Nachrichten werden an den Hilfsdienst gesendet. Aussprachetipps nur als Text, keine Audiobewertung.",
+  "va.verbSearch": "Verbformen, Bedeutungen oder englische Beispiele suchen",
+  "va.verbEmpty": "Keine passenden Verben. Probiere eine andere Form oder leere die Suche."
 }
