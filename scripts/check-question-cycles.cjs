@@ -9,3 +9,5 @@ reset();draw(pool,opts);const different=draw(pool,{count:5,skill:'vocabulary',le
 console.log('Question cycles serve unseen tail before repeat, no duplicate within draw, pool isolation and source preservation: PASS');
 
 const panel=fs.readFileSync('src/components/QuestionBankPanel.tsx','utf8'),page=fs.readFileSync('src/views/QuizzesPage.tsx','utf8');assert(panel.includes('onComplete={(score, total) => onRecordScore?.(`question-bank:${skill}:${level}:${type}`, score, total)}'));assert(page.includes('learnerId={learnerId} onRecordScore={onRecordScore}'));console.log('Question-bank completion reaches existing learner progress callback with pool-specific ID and actual score/total: PASS');
+
+const engine=fs.readFileSync('src/components/QuizEngine.tsx','utf8');assert(engine.includes('<span dir="ltr" className="inline-flex items-baseline gap-1.5 tabular-nums">'));console.log('Quiz numeric score/total isolated LTR within Arabic score label: PASS');
