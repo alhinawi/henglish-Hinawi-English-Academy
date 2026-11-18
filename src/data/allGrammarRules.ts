@@ -2089,7 +2089,7 @@ export const ALL_GRAMMAR_RULES: GrammarRuleItem[] = [
       'متخافش من طول الجملة: رتبها في دماغك شرط ثم نتيجة، والزمن هيضبط نفسه.'
     ],
     commonTraps: [
-      'فخ استخدام النوع التالت كامل مع نتيجة حاضرة: الخطأ If I had studied, I would have a job now (تصلح لكنها تعني نتيجة ماضية)، الأدق للحاضر: I would have a job now مع would + مصدر: If I had studied, I would have... انتبه: الصح هنا would have مش would have had إلا للملكية.',
+      'فخ استخدام would have + V3 لنتيجة حاضرة: If I had studied harder, I would have passed the exam تصف نتيجة ماضية. أما If I had studied harder, I would have a better job now فنتيجتها حاضرة، وhave هنا مصدر يدل على الملكية وليس فعلاً مساعداً للماضي التام.',
       'فخ الخلط: الخطأ If I studied harder, I would be passed، الصح: If I had studied harder, I would pass / would have passed.',
       'فخ will بعد if: الخطأ If I will have time، الصح: If I had time (في الشرط غير الحقيقي).'
     ],
