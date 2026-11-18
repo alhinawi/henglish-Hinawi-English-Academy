@@ -459,7 +459,7 @@ const ExamDetailSheet: React.FC<{
     let cancelled = false;
     setOverlay(null);
     if (!needsContentTranslation(lang)) return;
-    const idPrefix = entry.id.split('-')[0];
+    const idPrefix = entry.id.replace(/-\d+$/, '');
     loadSentenceOverlay(`${exam}/vocab`, lang, idPrefix, entry.id).then((o) => {
       if (!cancelled) setOverlay(o);
     });

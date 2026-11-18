@@ -44,3 +44,5 @@ async function check(hook,first,next,firstUrl,nextUrl){
  }
  console.log('Content/app translation headers and body decoding abort after30s,clear timers,fallback safely and allow next-consumer retry: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+for(const prefix of ['ielts-v','toefl-v'])for(const [id,file]of [['000001','000001-000100'],['000100','000001-000100'],['000101','000101-000200']]){const entryId=prefix+'-'+id;assert.equal(c.exports.sentenceBlockFileName(entryId.replace(/-\d+$/,''),entryId),prefix+'-sent-'+file+'.json');}assert(fs.readFileSync('src/components/ExamVocabPanel.tsx','utf8').includes("const idPrefix = entry.id.replace(/-\\d+$/, '');"));console.log('Exam translated sentence prefixes keep ielts-v/toefl-v across100-entry boundaries: PASS');
