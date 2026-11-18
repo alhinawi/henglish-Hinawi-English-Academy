@@ -1,3 +1,4 @@
+import { useMicrosoftVoice } from '../hooks/useMicrosoftVoice';
 import React, { useEffect, useId, useRef, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { Loader2, Square, Volume2 } from 'lucide-react';
@@ -7,12 +8,13 @@ import { audioPlayback, type PlaybackState } from '../services/audioPlaybackMana
 /**
  * Icon-only pronunciation button for word/phrase cards.
  * Uses the shared voice engine: pre-cached audio -> server TTS ->
- * browser speech synthesis (the OS/Edge/Google natural voices) automatically,
+ * same-language Microsoft browser speech automatically,
  * so playback keeps working when the paid voice quota runs out.
  * Rendered as a span with button semantics so it can live inside card buttons.
  */
 const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text, className = '' }) => {
   const { t } = useLanguage();
+  const browserVoiceAvailable = useMicrosoftVoice();
   const id = useId();
   const owner = useRef(Symbol('phrase-pronunciation'));
   const [state, setState] = useState<PlaybackState>(() => audioPlayback.getState());
@@ -28,6 +30,7 @@ const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text,
   const handle = (e: React.SyntheticEvent) => {
     e.stopPropagation();
     e.preventDefault();
+    if (error && !browserVoiceAvailable) return;
     if (playing) {
       audioPlayback.stopOwned(owner.current);
     } else {
@@ -39,7 +42,8 @@ const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text,
     <span className={`inline-flex max-w-full items-start gap-2 ${error ? 'w-full' : ''}`}>
     <span
       role="button"
-      tabIndex={0}
+      tabIndex={error && !browserVoiceAvailable ? -1 : 0}
+      aria-disabled={error && !browserVoiceAvailable}
       aria-pressed={playing}
       aria-label={t(playing ? 'pr.stop' : 'pr.play')}
       title={t(playing ? 'pr.stop' : 'pr.play')}
@@ -47,7 +51,7 @@ const PronounceButton: React.FC<{ text: string; className?: string }> = ({ text,
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') handle(e);
       }}
-      className={`inline-flex items-center justify-center w-8 h-8 rounded-full border transition-all cursor-pointer shrink-0 ${
+      className={`inline-flex items-center justify-center w-8 h-8 rounded-full border transition-all shrink-0 ${error && !browserVoiceAvailable ? 'opacity-40 cursor-not-allowed' : 'cursor-pointer'} ${
         playing
           ? 'bg-[#ffd166]/30 text-[#ffd166] border-[#ffd166]/70 shadow-[0_0_12px_rgba(255,209,102,0.45)] animate-pulse'
           : 'bg-[#ffd166]/10 text-[#ffd166] border-[#ffd166]/30 hover:bg-[#ffd166]/20 hover:border-[#ffd166]/60 hover:shadow-[0_0_10px_rgba(255,209,102,0.3)]'

@@ -25,7 +25,7 @@ export async function playWorldGreeting(id: string): Promise<'clip' | 'browser' 
     try { await currentAudio.play(); return 'clip'; } catch { /* Retain subtitles and offer the browser fallback. */ }
   }
   if (!('speechSynthesis' in window)) return 'unavailable';
-  const voices = window.speechSynthesis.getVoices();
+  const voices = window.speechSynthesis.getVoices().filter(v => /\bmicrosoft\b/i.test(v.name) && !/google/i.test(v.name));
   const voice = voices.find(v => /^ar[-_]EG$/i.test(v.lang)) || voices.find(v => /^ar[-_]/i.test(v.lang));
   // Do not silently speak Arabic through an English-only device voice.
   if (!voice) return 'unavailable';

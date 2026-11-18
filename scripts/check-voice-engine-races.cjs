@@ -2,7 +2,7 @@ const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require(
 const js=ts.transpileModule(fs.readFileSync('src/utils/voiceEngine.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
 const pending=[],clips=[],utterances=[],states=[];
 class Audio{constructor(src){this.src=src;clips.push(this);}play(){return new Promise((resolve,reject)=>{this.resolve=resolve;this.reject=reject;});}pause(){this.paused=true;}}
-const synth={getVoices:()=>[],cancel(){},speak:u=>utterances.push(u)};
+const synth={getVoices:()=>[{name:'Microsoft Aria',lang:'en-US'},{name:'Microsoft Katja',lang:'de-DE'}],cancel(){},speak:u=>utterances.push(u)};
 const c={exports:{},console,AbortController,Audio,SpeechSynthesisUtterance:class{constructor(text){this.text=text;}},window:{speechSynthesis:synth},localStorage:{getItem:()=>null,setItem(){}},fetch:(url,options)=>new Promise((resolve,reject)=>pending.push({resolve,reject,options})),setTimeout};vm.runInNewContext(js,c);const api=c.exports;api.subscribeSpeechState((playing,text)=>states.push({playing,text}));
 const flush=async()=>{for(let n=0;n<10;n++)await Promise.resolve();};const answer=(i,data)=>pending[i].resolve({json:async()=>data});
 (async()=>{
