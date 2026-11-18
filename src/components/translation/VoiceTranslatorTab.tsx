@@ -147,7 +147,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       playSound('click');
 
       const success = await recorder.start();
-      if (!isCurrent()) { recorder.cancel(); return; }
+      if (!isCurrent()) { if (success) recorder.cancel(); return; }
       if (success) {
         setIsRecording(true);
       } else {
