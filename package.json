@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5173",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview --port 5173",
+    "dev": "npm run dev:next",
+    "build": "tsc -b && npm run build:next",
+    "preview": "node scripts/preview-next-export.mjs",
     "prebuild:next": "tailwindcss -i src/index.css -o src/app/globals.built.css --minify",
     "build:next": "next build",
     "dev:next": "tailwindcss -i src/index.css -o src/app/globals.built.css && next dev",

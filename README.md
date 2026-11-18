@@ -21,6 +21,10 @@
 
 ---
 
+## Development and production
+
+Next.js 15 static export on free Cloudflare Pages. Run `npm run dev`, `npm run build`, then `npm run preview`. Deploy `out/`. See [build and deployment notes](docs/next-production-build.md).
+
 ## 🌟 نظرة عامة
 
 هناوي إنجلش أكاديمية تجمع مهارات اللغة والتطبيق اليومي في مكان واحد. اختار المهارة اللي
