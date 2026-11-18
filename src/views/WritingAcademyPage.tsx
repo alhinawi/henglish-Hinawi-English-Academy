@@ -1,5 +1,6 @@
 import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import { copyText } from '../services/copyText';
+import { WritingFeedback } from '../components/WritingFeedback';
 import { writingFeedback } from '../services/writingFeedback';
 import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
@@ -417,9 +418,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
                 </span>
                 <span className="text-[10px] text-[#c4ff55] font-mono">{t('wa.feedback.disclaimer')}</span>
               </div>
-              <div className="whitespace-pre-line text-xs text-[#dedbf4] leading-relaxed">
-                {submissionFeedback}
-              </div>
+              <WritingFeedback text={submissionFeedback} />
             </div>
           )}
         </div>
