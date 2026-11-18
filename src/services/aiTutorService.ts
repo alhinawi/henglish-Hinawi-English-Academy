@@ -8,7 +8,7 @@ import { readTutorStream } from './tutorStream';
 import { CEFRLevel } from '../types';
 import { AiTutorMode, ASSISTANTS_REGISTRY } from './aiPrompts';
 import { StudentPlatformContext } from './aiPlatformContext';
-import { AiServiceUnavailableError, isSpaFallbackResponse } from './aiAvailability';
+import { AiServiceUnavailableError, isSpaFallbackResponse, throwForAiResponse } from './aiAvailability';
 
 export type { AiTutorMode };
 export { ASSISTANTS_REGISTRY };
@@ -113,19 +113,19 @@ export async function sendAiTutorMessage(options: AiRequestOptions): Promise<AiR
       body: JSON.stringify(requestBody),
     });
 
-    if (!response.ok) {
-      if (isSpaFallbackResponse(response)) {
-        throw new AiServiceUnavailableError();
-      }
-      throw new Error(`AI tutor request failed with status ${response.status}`);
+    await throwForAiResponse(response, `AI tutor request failed with status ${response.status}`);
+    const data: unknown = await response.json();
+    if (!data || typeof data !== 'object' || Array.isArray(data) ||
+        !('text' in data) || typeof data.text !== 'string' || !data.text.trim()) {
+      throw new Error('AI tutor returned no usable answer');
     }
-    const data = await response.json();
+    const result = data as AiResponseResult;
     return {
-      text: data.text,
-      corrections: data.corrections,
-      provider: data.provider || 'server-api',
-      model: data.model || 'ai-model',
-      isLocalFallback: data.isLocalFallback || false,
+      text: result.text,
+      corrections: result.corrections,
+      provider: result.provider || 'server-api',
+      model: result.model || 'ai-model',
+      isLocalFallback: result.isLocalFallback || false,
     };
   } catch (err) {
     if (err instanceof AiServiceUnavailableError) {
