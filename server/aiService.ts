@@ -1,3 +1,4 @@
+import { AiServiceUnavailableError } from '../src/services/aiAvailability';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SECURE SERVER-SIDE AI API & PROVIDER ENGINE
 // Supports Google Gemini API, OpenAI API, and Platform-Aware Tool Calling
@@ -580,6 +581,7 @@ export async function dispatchAiChat(body: ChatRequestBody): Promise<ChatRespons
       temperature: 0.7,
     });
 
+    if (routerResult.isLocalFallback || routerResult.provider === 'local') throw new AiServiceUnavailableError();
     const corrections: { wrong: string; correct: string; explanationAr: string }[] = [];
     const qLower = body.message.toLowerCase();
     if (qLower.includes('i am agree')) {
@@ -598,8 +600,8 @@ export async function dispatchAiChat(body: ChatRequestBody): Promise<ChatRespons
       isLocalFallback: routerResult.isLocalFallback,
     };
   } catch (err) {
-    console.warn('Router encountered exception, using local educational brain:', err);
-    return getIntelligentLocalBrainResponse(body);
+    console.warn('Tutor provider unavailable or failed:', err);
+    throw err;
   }
 }
 
