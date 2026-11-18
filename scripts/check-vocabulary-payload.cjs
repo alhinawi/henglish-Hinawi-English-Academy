@@ -32,3 +32,11 @@ console.log('Vocabulary invalid index/chunk/rank/duplicate IDs never poison full
  }
  console.log('Vocabulary ranks/index/chunks/expressions/manifest headers and JSON bodies have finite abort deadlines,clear timers,preserve safe fallback and retry: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+(async()=>{
+ for(const invalid of [null,[],3,'bad',{core:null},{core:[0,1]},{core:[1,'2']},{core:[1,-1]},{' ':[1,1]},{core:[1,2,3]}]){
+  let fail=true,calls=0;const c={exports:{},AbortController,setTimeout,clearTimeout,console:{error(){}},require:p=>p.includes('vocabularyAcademyData')?{VOCABULARY_ACADEMY_WORDS:[{id:'core',word:'core',partOfSpeech:'noun',level:'A1',category:'everyday',meaningAr:'x'}]}:{},fetch:async url=>({ok:true,json:async()=>url.includes('ranks-index')?(calls++,fail?invalid:{core:[7,3.2]}):url.includes('chunks-index')?{files:['x.json']}:[row]})};
+  vm.runInNewContext(js,c);const api=c.exports;const core=await api.loadVocabularyCore();assert.equal(core.length,1);assert.equal(core[0].rank,undefined);fail=false;const full=await api.loadFullVocabulary();assert.equal(full.length,2);assert.equal(full[0].rank,7);assert.equal(full[0].zipf,3.2);assert.equal(calls,2);
+ }
+ console.log('Malformed optional rank indices never block core/full words or poison frequency values;clean retry restores real rank/Zipf: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1;});
