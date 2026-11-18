@@ -183,21 +183,21 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
       <div className="space-y-2.5">
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
           {SKILL_OPTIONS.map(o => (
-            <button key={o.id} onClick={() => { playSound('click'); setSkill(o.id); setDrawn(null); }} className={chip(skill === o.id)}>
+            <button key={o.id} onClick={() => { playSound('click'); setSkill(o.id); setDrawn(null); }} aria-pressed={skill === o.id} className={chip(skill === o.id)}>
               {o.labelKey ? t(o.labelKey) : o.label}
             </button>
           ))}
         </div>
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
           {LEVEL_OPTIONS.map(o => (
-            <button key={o.id} onClick={() => { playSound('click'); setLevel(o.id); setDrawn(null); }} className={chip(level === o.id)}>
+            <button key={o.id} onClick={() => { playSound('click'); setLevel(o.id); setDrawn(null); }} aria-pressed={level === o.id} className={chip(level === o.id)}>
               {o.labelKey ? t(o.labelKey) : o.label}
             </button>
           ))}
         </div>
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar">
           {TYPE_OPTIONS.map(o => (
-            <button key={o.id} onClick={() => { playSound('click'); setType(o.id); setDrawn(null); }} className={chip(type === o.id)}>
+            <button key={o.id} onClick={() => { playSound('click'); setType(o.id); setDrawn(null); }} aria-pressed={type === o.id} className={chip(type === o.id)}>
               {o.labelKey ? t(o.labelKey) : o.label}
             </button>
           ))}
@@ -205,7 +205,7 @@ export const QuestionBankPanel: React.FC<QuestionBankPanelProps> = ({ learnerId,
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-xs text-white/60 font-bold">{t('qb.countLabel')}</span>
           {COUNT_OPTIONS.map(n => (
-            <button key={n} onClick={() => { playSound('click'); setCount(n); setDrawn(null); }} className={chip(count === n)}>
+            <button key={n} onClick={() => { playSound('click'); setCount(n); setDrawn(null); }} aria-pressed={count === n} className={chip(count === n)}>
               {n}
             </button>
           ))}
