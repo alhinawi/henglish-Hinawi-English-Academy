@@ -57,7 +57,7 @@ export const ExamsAssessmentPage: React.FC<ExamsAssessmentPageProps> = ({
     stopSpeech();
     setLoadingSession(true);
     try {
-      const fromBank = await generatePlacementSessionFromBank();
+      const fromBank = await generatePlacementSessionFromBank(learnerId);
       if (version !== loadVersion.current) return;
       // Fall back to the small built-in set only if the bank could not supply a full test.
       setSessionQuestions(fromBank.length >= 10 ? fromBank : generateAdaptivePlacementSession());
