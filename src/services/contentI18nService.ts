@@ -12,6 +12,7 @@
 import { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { ENGLISH_APP_TEXT_MAPS } from '../data/englishAppTextMaps';
+import { ENGLISH_BANK_MAPS } from '../data/englishBankMaps';
 
 export interface ContentTx {
   /** translated meaning (source: meaningAr) */
@@ -41,6 +42,7 @@ async function fetchTranslationJson(url: string): Promise<{ missing: boolean; da
 const mapCache = new Map<string, Promise<ContentMap | null>>();
 
 export function loadContentMap(bankPath: string, lang: string): Promise<ContentMap | null> {
+  if (lang === 'en') return Promise.resolve(ENGLISH_BANK_MAPS[bankPath] ?? null);
   const key = `${bankPath}/${lang}`;
   if (!mapCache.has(key)) {
     mapCache.set(
@@ -80,7 +82,7 @@ export function useContentMap(bankPath: string): ContentMap | null {
       cancelled = true;
     };
   }, [bankPath, lang, key]);
-  return needsContentTranslation(lang) && loaded?.key === key ? loaded.map : null;
+  return lang === 'en' ? ENGLISH_BANK_MAPS[bankPath] ?? null : needsContentTranslation(lang) && loaded?.key === key ? loaded.map : null;
 }
 
 // -----------------------------------------------------------------------------

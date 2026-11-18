@@ -80,7 +80,7 @@ interface ExamVocabPanelProps {
 }
 
 export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, blurbAr }) => {
-  const { t, lang } = useLanguage();
+  const { t, lang, dir } = useLanguage();
   const txMap = useContentMap(`${exam}/vocab`);
   const [total, setTotal] = useState<number | null>(null);
   const [entries, setEntries] = useState<ExamVocabEntry[]>([]);
@@ -304,7 +304,7 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
           <button
             key={e.id}
             onClick={() => openDetail(e)}
-            className="text-right glass-panel p-5 rounded-2xl border border-white/10 bg-linear-to-br from-[#121128] to-[#1a1836] space-y-3 hover:border-[#ffd166]/40 transition-all w-full"
+            dir={dir} className="text-start glass-panel p-5 rounded-2xl border border-white/10 bg-linear-to-br from-[#121128] to-[#1a1836] space-y-3 hover:border-[#ffd166]/40 transition-all w-full"
           >
             <div className="flex flex-wrap items-center gap-2 justify-between">
               <span className="flex min-w-0 flex-wrap items-center gap-2">
@@ -331,9 +331,9 @@ export const ExamVocabPanel: React.FC<ExamVocabPanelProps> = ({ exam, titleAr, b
                 {e.collocation}
               </p>
             )}
-            <div className="space-y-1 border-r-2 border-[#ffd166]/30 pr-3">
+            <div className="space-y-1 border-s-2 border-[#ffd166]/30 ps-3">
               <p className="text-sm text-[#b9b6d5]" dir="ltr">{e.exampleEn}</p>
-              <p dir="auto" className="text-sm text-white/80" style={{ textAlign: 'start' }}>{txExample(txMap, e.id, e.exampleAr)}</p>
+              {lang !== 'en' && <p dir="auto" className="text-sm text-white/80" style={{ textAlign: 'start' }}>{txExample(txMap, e.id, e.exampleAr)}</p>}
             </div>
           </button>
         ))}
@@ -381,7 +381,7 @@ const ExamDetailSheet: React.FC<{
   onClose,
   txMap,
 }) => {
-  const { t, lang } = useLanguage();
+  const { t, lang, dir } = useLanguage();
   const [sentences, setSentences] = useState<ExamSentence[] | null>(null);
   const [sentencesLoading, setSentencesLoading] = useState(true);
   const [overlay, setOverlay] = useState<string[] | null>(null);
@@ -477,7 +477,7 @@ const ExamDetailSheet: React.FC<{
     const lines: string[] = [`${entry.word}`, shownMeaning, ''];
     shown.forEach((s, i) => {
       lines.push(`${i + 1}. ${s.en}`);
-      lines.push(`   ${s.ar}`);
+      if (lang !== 'en') lines.push(`   ${s.ar}`);
     });
     const version = ++copyVersion.current;
     if (copyTimer.current !== null) window.clearTimeout(copyTimer.current);
@@ -510,7 +510,7 @@ const ExamDetailSheet: React.FC<{
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center" role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialogRef} tabIndex={-1}>
+    <div className="fixed inset-0 z-50 flex items-end justify-center text-start" dir={dir} role="dialog" aria-modal="true" aria-labelledby={titleId} ref={dialogRef} tabIndex={-1}>
       <button tabIndex={-1} aria-label={t('fs.close')} onClick={onClose} className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div className="relative w-full max-w-lg bg-[#16142e] border-t border-white/15 rounded-t-3xl max-h-[85vh] overflow-y-auto pb-6 animate-[slideUp_.25s_ease-out]">
         <div className="sticky top-0 bg-[#16142e] pt-3 pb-3 px-5 border-b border-white/10 z-10">
@@ -568,11 +568,11 @@ const ExamDetailSheet: React.FC<{
           )}
           {!sentencesLoading &&
             shown.map((s, i) => (
-              <div key={i} className="space-y-1 border-r-2 border-[#ffd166]/30 pr-3">
+              <div key={i} className="space-y-1 border-s-2 border-[#ffd166]/30 ps-3">
                 <p className="text-sm text-white leading-relaxed" dir="ltr">
-                  <span className="text-[#ffd166] font-black ml-1">{i + 1}.</span> {s.en}
+                  <span className="text-[#ffd166] font-black me-1">{i + 1}.</span> {s.en}
                 </p>
-                <p dir="auto" className="text-sm text-[#b9b6d5]" style={{ textAlign: 'start' }}>{s.ar}</p>
+                {lang !== 'en' && <p dir="auto" className="text-sm text-[#b9b6d5]" style={{ textAlign: 'start' }}>{s.ar}</p>}
               </div>
             ))}
           {!sentencesLoading && !sentences && (
