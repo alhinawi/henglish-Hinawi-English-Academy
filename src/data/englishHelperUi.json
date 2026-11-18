@@ -1,0 +1,163 @@
+{
+  "grammar-teacher": {
+    "nameAr": "Grammar Teacher",
+    "shortDescAr": "Clear, detailed explanations of English grammar and tenses in simple English, linked to lessons on the platform.",
+    "welcomeGreetingAr": "Welcome to the Grammar Academy! I'm here to make English tenses and sentence structures easier to understand. Ask about a tense, compare two grammar rules, or try a quick quiz to check your understanding.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "When do I use the Future Perfect?",
+        "promptText": "When do I use the Future Perfect? Explain its structure with examples and common mistakes to avoid."
+      },
+      {
+        "labelAr": "will or going to? A simple explanation",
+        "promptText": "Explain the difference between will and going to in simple English, with realistic examples of each use."
+      },
+      {
+        "labelAr": "The four If conditionals, with a quick quiz",
+        "promptText": "Explain the four If conditionals (Zero, 1st, 2nd, 3rd), then test me with one question on each."
+      },
+      {
+        "labelAr": "Since and For with the present perfect",
+        "promptText": "What is the difference between Since and For with the Present Perfect, and what are the most common mistakes?"
+      }
+    ]
+  },
+  "conversation-partner": {
+    "nameAr": "Conversation Partner",
+    "shortDescAr": "Interactive conversations in real-life situations, including airports, hotels, restaurants, and work, with helpful, friendly corrections.",
+    "welcomeGreetingAr": "Hi there! I am your English Conversation Partner. Let's practice speaking naturally! Pick a scenario like a coffee shop, an airport, or tell me about your day.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "Airport role-play: check in for a flight",
+        "promptText": "Let's simulate a conversation at the airport check-in desk. You are the airport agent, and I am the passenger."
+      },
+      {
+        "labelAr": "Restaurant role-play: ask for a recommendation",
+        "promptText": "Let's roleplay at a fine dining restaurant. You are the waiter welcoming me and recommending the chef's special."
+      },
+      {
+        "labelAr": "Get to know someone and build everyday fluency",
+        "promptText": "Hi! Let's have a friendly casual conversation about hobbies, weekend plans, and learning languages."
+      },
+      {
+        "labelAr": "Hotel role-play: check in and request a quiet room",
+        "promptText": "Let's do a roleplay at a hotel reception. I am checking in and want to request a quiet room with a nice view."
+      }
+    ]
+  },
+  "vocabulary-coach": {
+    "nameAr": "Vocabulary Coach",
+    "shortDescAr": "Build your vocabulary with Collocations, Phrasal Verbs, and phonetic symbols.",
+    "welcomeGreetingAr": "Welcome! I'm your vocabulary coach at Henglish Academy. I'll help you choose the right word, with clear pronunciation guidance and real-life examples.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "10 advanced words and expressions for business English",
+        "promptText": "Teach me 10 advanced words and expressions (C1/B2) used at work and in international companies, with examples."
+      },
+      {
+        "labelAr": "The difference between Look for, Look after, and Look forward to",
+        "promptText": "Explain the differences between these Look phrasal verbs (Look for, look after, look forward to, look up to), with sentences that show each one in context."
+      },
+      {
+        "labelAr": "Useful collocations with Make and Do",
+        "promptText": "What are the most useful Collocations with Make and Do, and how can I avoid mixing them up?"
+      },
+      {
+        "labelAr": "Test me on irregular verb forms: V1-V2-V3",
+        "promptText": "Test me on 5 everyday Irregular Verbs, and ask me to use each one in a sentence."
+      }
+    ]
+  },
+  "writing-assistant": {
+    "nameAr": "Writing Assistant",
+    "shortDescAr": "Proofread essays and professional emails, correct grammar, and rewrite sentences in natural English.",
+    "welcomeGreetingAr": "Welcome to the Writing Studio! Send me an email, essay, or paragraph you've written in English. I'll proofread it, correct mistakes, and suggest more professional wording.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "Review and correct this sentence: \"I am agree with you\"",
+        "promptText": "Review this sentence, correct the mistakes, and explain why: \"I am agree with your proposal because it is make a big sense.\""
+      },
+      {
+        "labelAr": "Write a formal email apologizing for a late delivery",
+        "promptText": "Write a polite, formal business email apologizing to a client for a two-day delay in delivering a project, and offer an alternative solution."
+      },
+      {
+        "labelAr": "Improve my Essay writing with academic linking words",
+        "promptText": "What are the best academic Cohesive Devices for organizing ideas in an opinion essay or an IELTS essay?"
+      },
+      {
+        "labelAr": "Rewrite my CV Bullet Points",
+        "promptText": "How can I rewrite the duties on my CV using strong Action Verbs and measurable results?"
+      }
+    ]
+  },
+  "pronunciation-coach": {
+    "nameAr": "Pronunciation Coach",
+    "shortDescAr": "Learn how to form sounds, read IPA symbols, use word Stress, and understand differences between American and British pronunciation.",
+    "welcomeGreetingAr": "Welcome! I'm your pronunciation coach. I'll explain sounds that Arabic speakers often find difficult (P/B, TH, V/F) and give you Minimal Pairs to practise.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "How do I pronounce TH in Think and This?",
+        "promptText": "Explain the difference between the unvoiced TH /θ/ and voiced TH /ð/ sounds, including tongue position, examples, and practice."
+      },
+      {
+        "labelAr": "Ship or Sheep? Short and long vowel sounds",
+        "promptText": "What is the exact difference between /ɪ/ in Ship and /iː/ in Sheep? Give me other word pairs to practise."
+      },
+      {
+        "labelAr": "Pronouncing ED in past-tense verbs: /t/, /d/, /ɪd/",
+        "promptText": "Explain how to pronounce -ed at the end of past-tense verbs. When is it /t/, /d/, or /ɪd/?"
+      },
+      {
+        "labelAr": "Word Stress and how it changes meaning",
+        "promptText": "How does Word Stress distinguish a noun from a verb in words such as Present and Record?"
+      }
+    ]
+  },
+  "exam-trainer": {
+    "nameAr": "Exam Coach",
+    "shortDescAr": "Practise English exam questions and time management with feedback. This is not an official test or certified score.",
+    "welcomeGreetingAr": "Welcome! I'm your English proficiency coach, covering CEFR levels, IELTS, and TOEFL. I'll give you practice questions and time-management tips to help you aim for a higher score.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "An advanced grammar question (B2/C1) with instant feedback",
+        "promptText": "Give me an advanced B2/C1 multiple-choice grammar question. Wait for my answer, then give me detailed feedback."
+      },
+      {
+        "labelAr": "Strategies for IELTS Speaking Part 2",
+        "promptText": "How can I speak continuously for two minutes in IELTS Speaking Part 2 without stopping or hesitating?"
+      },
+      {
+        "labelAr": "A short reading exercise using Skimming",
+        "promptText": "Give me a short science-related reading passage with two questions to practise Skimming and Scanning."
+      },
+      {
+        "labelAr": "The assessment criteria for IELTS Writing Task 2",
+        "promptText": "What are the four assessment criteria for IELTS Writing Task 2, and how can I reach band 7+ in each?"
+      }
+    ]
+  },
+  "interview-coach": {
+    "nameAr": "Interview Coach",
+    "shortDescAr": "Practise English-language job interviews for international companies, use the STAR method, and improve your answers to behavioural questions.",
+    "welcomeGreetingAr": "Welcome! I'm your English-language job interview coach. I'll ask realistic interview questions and help you give professional answers using the STAR method.",
+    "suggestedQuestions": [
+      {
+        "labelAr": "Start the interview with: \"Tell me about yourself\"",
+        "promptText": "Let's start a job interview simulation for a professional role. Ask me: \"Tell me about yourself\", and evaluate my response."
+      },
+      {
+        "labelAr": "How should I answer: \"What are your greatest weaknesses?\"",
+        "promptText": "What is the best professional way to answer the interview question: \"What is your greatest weakness?\" without hurting my chances?"
+      },
+      {
+        "labelAr": "A STAR behavioural question about working under pressure",
+        "promptText": "Ask me a behavioral question about handling tight deadlines or conflicts, and evaluate my use of the STAR method."
+      },
+      {
+        "labelAr": "Strong questions to ask the Interviewer at the end",
+        "promptText": "What are 5 impressive questions a candidate should ask the hiring manager at the end of the interview?"
+      }
+    ]
+  }
+}
