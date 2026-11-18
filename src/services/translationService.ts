@@ -72,7 +72,13 @@ export async function executeTranslation(req: TranslationRequest, learnerId?: st
 
   await throwForAiResponse(response, `Translation failed with status ${response.status}`);
 
-  const result: TranslationResponse = await response.json();
+  const payload: unknown = await response.json();
+  if (!payload || typeof payload !== 'object' || Array.isArray(payload) ||
+      typeof (payload as { translatedText?: unknown }).translatedText !== 'string' ||
+      !(payload as { translatedText: string }).translatedText.trim()) {
+    throw new Error('Translation returned no usable output');
+  }
+  const result = payload as TranslationResponse;
 
   // Automatically record to local history
   let historySaved = true;
