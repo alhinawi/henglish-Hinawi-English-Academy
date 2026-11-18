@@ -1,3 +1,4 @@
+import { fetchBankPayload, validateBankIndex, validateBankRows, validateWholeBank } from './bankPayload';
 import { fetchExampleSentenceBlock } from './exampleSentenceBlock';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - EXAM VOCAB SERVICE
@@ -44,10 +45,7 @@ const chunkCache = new Map<string, Promise<ExamVocabEntry[]>>();
 
 export function loadExamVocabIndex(exam: ExamId): Promise<ExamVocabIndex> {
   if (!indexCache[exam]) {
-    indexCache[exam] = fetch(`/data/${exam}/vocab/vocab-index.json`).then((res) => {
-      if (!res.ok) throw new Error(`Failed to load ${exam} index: ${res.status}`);
-      return res.json() as Promise<ExamVocabIndex>;
-    }).catch((error) => {
+    indexCache[exam] = fetchBankPayload(`/data/${exam}/vocab/vocab-index.json`).then(data => validateBankIndex<ExamVocabIndex>(data, 'exam', exam)).catch((error) => {
       delete indexCache[exam];
       throw error;
     });
@@ -60,10 +58,7 @@ function loadChunk(exam: ExamId, file: string): Promise<ExamVocabEntry[]> {
   if (!chunkCache.has(key)) {
     chunkCache.set(
       key,
-      fetch(`/data/${exam}/vocab/chunks/${file}`).then((res) => {
-        if (!res.ok) throw new Error(`Failed to load ${exam} chunk ${file}: ${res.status}`);
-        return res.json() as Promise<ExamVocabEntry[]>;
-      }).catch((error) => {
+      fetchBankPayload(`/data/${exam}/vocab/chunks/${file}`).then(data => validateBankRows<ExamVocabEntry>(data, 'word')).catch((error) => {
         chunkCache.delete(key);
         throw error;
       })
@@ -76,7 +71,12 @@ function loadChunk(exam: ExamId, file: string): Promise<ExamVocabEntry[]> {
 export async function loadAllExamVocab(exam: ExamId): Promise<ExamVocabEntry[]> {
   const index = await loadExamVocabIndex(exam);
   const parts = await Promise.all(index.chunks.map((n) => loadChunk(exam, n)));
-  return parts.flat();
+  try { return validateWholeBank(parts.flat(), index.totalEntries); }
+  catch (error) {
+    delete indexCache[exam];
+    for (const file of index.chunks) chunkCache.delete(`${exam}/${file}`);
+    throw error;
+  }
 }
 
 export type ExamSortMode = 'popularity' | 'alpha';
