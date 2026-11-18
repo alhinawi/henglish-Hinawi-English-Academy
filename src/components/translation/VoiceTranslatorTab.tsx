@@ -54,9 +54,11 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
   const { copy, copiedKey, copyFailed } = useOwnedClipboard(JSON.stringify([translatedVoiceText, targetLang, learnerId]));
 
   const uploadVersion = useRef(0);
+  const requestController = useRef<AbortController | null>(null);
   const uploadReader = useRef<FileReader | null>(null);
   useEffect(() => () => {
     uploadVersion.current += 1;
+    requestController.current?.abort();
     uploadReader.current?.abort();
     stopSpeech();
   }, []);
@@ -81,6 +83,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
 
   const handleToggleRecord = async () => {
     const version = ++uploadVersion.current;
+    requestController.current?.abort();
     const isCurrent = () => version === uploadVersion.current;
     setErrorMsg(null);
     setHistorySaveFailed(false);
@@ -91,6 +94,9 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       setIsTranscribing(true);
       playSound('click');
 
+      const controller = new AbortController();
+      requestController.current = controller;
+      const deadline = setTimeout(() => controller.abort(), 120000);
       try {
         const audioData: RecordedAudioData | null = await recorder.stop();
         if (!isCurrent()) return;
@@ -98,7 +104,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
           // Send to speech transcription engine
           const { transcription, detectedLang } = await transcribeAudioRecording(
             audioData.base64,
-            audioData.mimeType
+            audioData.mimeType, controller.signal
           );
 
           if (!isCurrent()) return;
@@ -113,7 +119,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
               sourceLang: sourceLang === 'auto' ? detectedLang : sourceLang,
               targetLang,
               mode,
-            }, learnerId);
+            }, learnerId, controller.signal);
             if (!isCurrent()) return;
             setTranslatedVoiceText(res.translatedText);
             if (res.historySaved === false) setHistorySaveFailed(true);
@@ -128,7 +134,8 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
         setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t('vt.errTranscribe'));
         playSound('wrong');
       } finally {
-        if (isCurrent()) { setIsTranscribing(false); setIsTranslating(false); }
+        clearTimeout(deadline);
+        if (isCurrent()) { requestController.current = null; setIsTranscribing(false); setIsTranslating(false); }
       }
     } else {
       // Start recording without capturing playback or a previous upload.
@@ -154,6 +161,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     if (!file) return;
     e.target.value = '';
     const version = ++uploadVersion.current;
+    requestController.current?.abort();
     uploadReader.current?.abort();
     stopSpeech();
     const isCurrent = () => uploadVersion.current === version;
@@ -167,6 +175,9 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     setTranslatedVoiceText('');
     playSound('click');
 
+    const controller = new AbortController();
+    requestController.current = controller;
+    const deadline = setTimeout(() => controller.abort(), 120000);
     try {
       const base64 = await new Promise<string>((resolve, reject) => {
         const reader = new FileReader();
@@ -183,7 +194,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       if (!isCurrent()) return;
       uploadReader.current = null;
       stage = 'transcribe';
-      const { transcription, detectedLang } = await transcribeAudioRecording(base64, file.type || 'audio/mp3');
+      const { transcription, detectedLang } = await transcribeAudioRecording(base64, file.type || 'audio/mp3', controller.signal);
       if (!isCurrent()) return;
       setRecognizedText(transcription);
       setIsTranscribing(false);
@@ -194,7 +205,7 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
           sourceLang: sourceLang === 'auto' ? detectedLang : sourceLang,
           targetLang,
           mode,
-        }, learnerId);
+        }, learnerId, controller.signal);
         if (!isCurrent()) return;
         setTranslatedVoiceText(res.translatedText);
             if (res.historySaved === false) setHistorySaveFailed(true);
@@ -206,7 +217,9 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       setErrorMsg(isAiServiceUnavailable(err) ? t('ai.unavailable') : t(stage === 'file' ? 'vt.errFile' : 'vt.errTranscribe'));
       playSound('wrong');
     } finally {
+      clearTimeout(deadline);
       if (isCurrent()) {
+        requestController.current = null;
         uploadReader.current = null;
         setIsTranscribing(false);
         setIsTranslating(false);

@@ -155,9 +155,11 @@ export async function performImageOcrTranslation(
  */
 export async function transcribeAudioRecording(
   audioBase64: string,
-  mimeType: string
+  mimeType: string,
+  signal?: AbortSignal
 ): Promise<{ transcription: string; detectedLang: LanguageCode }> {
   const response = await fetch('/api/ai/voice-transcribe', {
+    signal,
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ audioBase64, mimeType }),
