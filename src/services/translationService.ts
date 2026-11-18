@@ -111,7 +111,13 @@ export async function askTranslationAssistant(
 
   await throwForAiResponse(response, 'Failed to consult translation assistant');
 
-  return response.json();
+  const result: unknown = await response.json();
+  if (!result || typeof result !== 'object' || Array.isArray(result) ||
+      typeof (result as { answer?: unknown }).answer !== 'string' ||
+      !(result as { answer: string }).answer.trim()) {
+    throw new Error('Translation assistant returned no usable answer');
+  }
+  return result as { answer: string; suggestedAlternative?: string };
 }
 
 /**
