@@ -25,6 +25,8 @@ import {
 import { playSound, stopSpeech, getVoiceSettings } from '../utils/audio';
 import { isAiServiceUnavailable } from '../services/aiAvailability';
 import { useLanguage } from '../i18n/LanguageContext';
+import arabicUi from '../i18n/locales/ar.json';
+import englishHelperUi from '../data/englishHelperUi.json';
 import { AiMarkdownRenderer } from '../components/AiMarkdownRenderer';
 import { ANONYMOUS_AVATAR } from '../services/authService';
 import {
@@ -81,7 +83,7 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
 };
 
 export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfile, progress, onOpenVoiceSettings }) => {
-  const { t, dir } = useLanguage();
+  const { t, dir, lang } = useLanguage();
   // --- State ---
   const [activeMode, setActiveMode] = useState<AiTutorMode>('grammar-teacher');
   const [sessions, setSessions] = useState<AiConversationSession[]>([]);
@@ -132,6 +134,17 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
   // Active assistant details
   const activeAssistant = ASSISTANTS_REGISTRY[activeMode];
+  const englishAssistant = englishHelperUi[activeMode];
+  const assistantName = t(`atm.${activeMode}.name`);
+  const greeting = lang === 'en' ? englishAssistant.welcomeGreetingAr : activeAssistant.welcomeGreetingAr;
+  const suggestions = lang === 'en' ? englishAssistant.suggestedQuestions : activeAssistant.suggestedQuestions;
+  const learnerName = !userProfile.id || userProfile.id.startsWith('guest') ? (lang === 'en' ? 'Guest Learner' : userProfile.nameAr) : (lang === 'en' ? userProfile.name : userProfile.nameAr);
+  const displayMessage = (msg: AiChatMessage) => msg.sender === 'assistant' && msg.id.startsWith('welcome-') ? greeting : msg.content;
+  const displaySessionTitle = (session: AiConversationSession) => {
+    const original = ASSISTANTS_REGISTRY[session.mode];
+    return session.title === `${original.nameAr} - ${arabicUi['at.startSession']}` || session.title === `${original.nameEn} - ${t('at.startSession')}`
+      ? `${t(`atm.${session.mode}.name`)} - ${t('at.startSession')}` : session.title;
+  };
   const ActiveIcon = ICON_MAP[activeAssistant.avatarIcon] || Bot;
 
   // Active session
@@ -149,15 +162,15 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       const welcomeMsg: AiChatMessage = {
         id: `welcome-${activeMode}-${Date.now()}`,
         sender: 'assistant',
-        content: activeAssistant.welcomeGreetingAr,
-        timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
+        content: greeting,
+        timestamp: new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
       };
 
       const newSession = createNewSession(
         userProfile.id,
         activeMode,
-        `${activeAssistant.nameAr} - ${t('at.startSession')}`,
+        `${assistantName} - ${t('at.startSession')}`,
         [welcomeMsg]
       );
 
@@ -251,15 +264,15 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
     const welcomeMsg: AiChatMessage = {
       id: `welcome-${activeMode}-${Date.now()}`,
       sender: 'assistant',
-      content: `${t('at.welcomePre')} **${activeAssistant.nameAr}**! ${t('at.welcomeAsk')}`,
-      timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
+      content: `${t('at.welcomePre')} **${assistantName}**! ${t('at.welcomeAsk')}`,
+      timestamp: new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
     };
 
     const newSession = createNewSession(
       userProfile.id,
       activeMode,
-      `${t('at.newSession')} (${new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' })})`,
+      `${t('at.newSession')} (${new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' })})`,
       [welcomeMsg]
     );
 
@@ -333,7 +346,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       id: `user-${Date.now()}`,
       sender: 'user',
       content: text.trim(),
-      timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
+      timestamp: new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
     };
 
@@ -356,7 +369,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       id: assistantMsgId,
       sender: 'assistant',
       content: '',
-      timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
+      timestamp: new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
       mode: activeMode,
       isStreaming: true,
     };
@@ -378,6 +391,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
       const response = await sendAiTutorMessage({
         signal: controller.signal,
+        language: lang === 'en' ? 'en' : 'ar',
         message: text.trim(),
         mode: activeMode,
         userLevel: userProfile.currentLevel,
@@ -405,7 +419,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         id: assistantMsgId,
         sender: 'assistant',
         content: response.text || accumulatedStreamingText,
-        timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
         grammarCorrections: response.corrections,
@@ -434,7 +448,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         id: `ai-err-${Date.now()}`,
         sender: 'assistant',
         content: (err as { helperMessage?: string })?.helperMessage || (unavailable ? t('ai.unavailable') : t('at.errorTemp')),
-        timestamp: new Date().toLocaleTimeString('ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
+        timestamp: new Date().toLocaleTimeString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn', { hour: '2-digit', minute: '2-digit' }),
         mode: activeMode,
         isStreaming: false,
       };
@@ -499,8 +513,8 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               }}
               className="w-11 h-11 rounded-xl object-cover border-2 border-[#ffd166]/50 shadow-md"
             />
-            <div className="text-right">
-              <div className="text-xs font-black text-white">{userProfile.nameAr}</div>
+            <div className="text-start">
+              <div className="text-xs font-black text-white">{learnerName}</div>
               <div className="flex items-center gap-2 text-[11px] text-[#b9b6d5] mt-0.5">
                 <span className="px-2 py-0.5 rounded-md bg-[#41e7ff]/20 text-[#41e7ff] font-bold">
                   {t('at.level')}: {userProfile.currentLevel}
@@ -543,7 +557,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                     setActiveMode(asst.id);
                   }
                 }}
-                className={`p-3.5 rounded-2xl border text-right transition-all cursor-pointer flex flex-col justify-between gap-3 relative overflow-hidden group ${
+                className={`p-3.5 rounded-2xl border text-start transition-all cursor-pointer flex flex-col justify-between gap-3 relative overflow-hidden group ${
                   isActive
                     ? 'bg-linear-to-b from-[#ffd166]/20 via-[#171632] to-[#41e7ff]/20 border-[#ffd166] shadow-xl ring-2 ring-[#ffd166]/30 scale-[1.02]'
                     : 'glass-panel border-white/10 hover:border-white/20 hover:bg-white/5 text-[#b9b6d5] hover:text-white'
@@ -664,7 +678,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                           setActiveSessionId(s.id);
                         }
                       }}
-                      className={`p-3 rounded-xl border text-right transition-all cursor-pointer flex items-center justify-between gap-2 ${
+                      className={`p-3 rounded-xl border text-start transition-all cursor-pointer flex items-center justify-between gap-2 ${
                         isCurrent
                           ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 border-[#ffd166] text-white shadow-md'
                           : 'bg-white/5 border-white/10 hover:bg-white/10 text-[#dedbf4]'
@@ -698,9 +712,9 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                       ) : (
                         <>
                           <div className="flex-1 truncate">
-                            <div className="text-xs font-bold truncate">{s.title}</div>
+                            <div className="text-xs font-bold truncate">{displaySessionTitle(s)}</div>
                             <div className="text-[10px] text-[#b9b6d5] mt-0.5">
-                              {s.messages.length} {t('at.messages')} • {new Date(s.updatedAt).toLocaleDateString('ar-EG-u-nu-latn')}
+                              {s.messages.length} {t('at.messages')} • {new Date(s.updatedAt).toLocaleDateString(lang === 'en' ? 'en-US' : 'ar-EG-u-nu-latn')}
                             </div>
                           </div>
 
@@ -781,7 +795,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                   <div className="flex flex-wrap items-start justify-between gap-3 text-[10px] text-[#b9b6d5] pb-2 border-b border-white/10">
                     <div className="flex items-center gap-1.5">
                       <span className="font-bold text-white">
-                        {isUser ? userProfile.nameAr : t(`atm.${activeMode}.name`)}
+                        {isUser ? learnerName : t(`atm.${activeMode}.name`)}
                       </span>
                       {!isUser && msg.provider && (
                         <span className="px-1.5 py-0.2 rounded bg-white/10 text-[9px] text-[#41e7ff] font-mono">
@@ -791,11 +805,11 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                     </div>
 
                     <div className="flex flex-wrap items-start gap-2">
-                      <span>{msg.timestamp}</span>
+                      <span>{lang === 'en' ? msg.timestamp.replace(/ص/g, 'AM').replace(/م/g, 'PM') : msg.timestamp}</span>
 
                       {/* Copy message */}
                       <button
-                        onClick={() => handleCopyMessage(msg.id, msg.content)}
+                        onClick={() => handleCopyMessage(msg.id, displayMessage(msg))}
                         className="p-1 rounded hover:bg-white/10 text-[#b9b6d5] hover:text-white transition-colors cursor-pointer"
                         title={t('at.copyTitle')}
                       >
@@ -808,7 +822,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
                       {/* Audio listen button */}
                       {!isUser && (
-                        <LessonSpeechButton key={msg.id + msg.content} text={msg.content} label={t('at.listenFullTitle')} iconOnly
+                        <LessonSpeechButton key={msg.id + displayMessage(msg)} text={displayMessage(msg)} label={t('at.listenFullTitle')} iconOnly
                           disabled={!!msg.isStreaming || !msg.content.trim()}
                           className="p-1 rounded hover:bg-white/10 text-[#ffd166] cursor-pointer transition-colors disabled:opacity-30" />
                       )}
@@ -817,7 +831,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
                   {/* Message Body with Safe Markdown & LTR Isolation */}
                   <div className="text-xs sm:text-sm font-sans leading-relaxed">
-                    <AiMarkdownRenderer content={msg.content} onNavigate={onNavigate} />
+                    <AiMarkdownRenderer content={displayMessage(msg)} onNavigate={onNavigate} />
                     {msg.isStreaming && (
                       <span className="inline-block w-2 h-4 bg-[#ffd166] ml-1 animate-pulse align-middle" />
                     )}
@@ -871,7 +885,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             <Sparkles className="w-3 h-3 text-[#ffd166]" />
             {t('at.suggestions')}
           </span>
-          {activeAssistant.suggestedQuestions.map((sug, idx) => (
+          {suggestions.map((sug, idx) => (
             <button
               key={idx}
               onClick={() => handleSendMessage(sug.promptText)}
