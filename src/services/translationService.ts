@@ -59,6 +59,35 @@ const DEFAULT_COLLECTIONS: VocabularyCollection[] = [
   },
 ];
 
+// Optional provider material is still untrusted: its panels render strings and
+// iterate arrays, and word tokens can become saved vocabulary.
+function validateTranslationLearningPayload(value: unknown): void {
+  const object = (item: unknown): item is Record<string, unknown> =>
+    !!item && typeof item === 'object' && !Array.isArray(item);
+  const strings = (item: Record<string, unknown>, keys: string[]) =>
+    keys.every(key => item[key] === undefined || typeof item[key] === 'string');
+  const list = (item: unknown, valid: (entry: unknown) => boolean) =>
+    item === undefined || (Array.isArray(item) && item.every(valid));
+  const word = (item: unknown) => object(item) &&
+    typeof item.word === 'string' && !!item.word.trim() &&
+    typeof item.cleanWord === 'string' && !!item.cleanWord.trim() &&
+    strings(item, ['meaningAr', 'partOfSpeech', 'partOfSpeechAr', 'ipa', 'cefrLevel', 'exampleEn', 'exampleAr']) &&
+    ['synonyms', 'antonyms', 'collocations', 'relatedTerms'].every(key => list(item[key], entry => typeof entry === 'string'));
+  if (!object(value)) throw new Error('Invalid translation learning material');
+  const explanation = value.explanation;
+  const validExplanation = explanation === undefined || explanation === null ||
+    (object(explanation) && strings(explanation, ['summaryMeaningAr', 'cefrLevel', 'culturalContextAr', 'translationRationaleAr']) &&
+      list(explanation.grammarNotes, entry => object(entry) && strings(entry, ['structureName', 'structureNameAr', 'category', 'explanationAr', 'ruleFormula', 'targetContrastAr'])) &&
+      list(explanation.importantVocabulary, word) &&
+      list(explanation.idiomsAndExpressions, entry => object(entry) && strings(entry, ['idiom', 'literalMeaningAr', 'actualMeaningAr', 'example'])) &&
+      list(explanation.commonTrapsAr, entry => object(entry) && strings(entry, ['trapEn', 'wrongAr', 'correctAr', 'whyTrapAr'])));
+  if (!validExplanation || !list(value.wordTokens, word) ||
+      !list(value.alternatives, entry => object(entry) && typeof entry.translation === 'string' && !!entry.translation.trim() &&
+        strings(entry, ['styleLabel', 'styleLabelAr', 'whenToUseAr']))) {
+    throw new Error('Invalid translation learning material');
+  }
+}
+
 /**
  * High-Level Translation Dispatcher
  */
@@ -78,6 +107,7 @@ export async function executeTranslation(req: TranslationRequest, learnerId?: st
       !(payload as { translatedText: string }).translatedText.trim()) {
     throw new Error('Translation returned no usable output');
   }
+  validateTranslationLearningPayload(payload);
   const result = payload as TranslationResponse;
 
   // Automatically record to local history
