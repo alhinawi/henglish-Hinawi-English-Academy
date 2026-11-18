@@ -99,8 +99,11 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
       const deadline = setTimeout(() => controller.abort(), 120000);
       try {
         const audioData: RecordedAudioData | null = await recorder.stop();
+        // This view sends base64 only; it never plays the recorder's replay URL.
+        if (audioData?.blobUrl) URL.revokeObjectURL(audioData.blobUrl);
         if (!isCurrent()) return;
-        if (audioData && audioData.base64) {
+        if (!audioData?.base64) throw new Error('Recording produced no usable audio');
+        if (audioData.base64) {
           // Send to speech transcription engine
           const { transcription, detectedLang } = await transcribeAudioRecording(
             audioData.base64,
