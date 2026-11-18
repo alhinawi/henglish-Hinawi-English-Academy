@@ -3,7 +3,7 @@ const js=ts.transpileModule(fs.readFileSync('src/services/vocabularyService.ts',
 const row={id:'chunk',word:'chunk',rank:1,ipa:'',partOfSpeech:'noun',meaningAr:'x',level:'A1',category:'everyday',exampleEn:'chunk example',exampleAr:'original example',highlight:'chunk'};
 (async()=>{
 for(const mode of ['emptyIndex','badIndex','duplicateFile','path','emptyChunk','badRow','badRank','duplicateId']){
- let fail=true;const c={exports:{},console:{error(){}},require:p=>p.includes('vocabularyAcademyData')?{VOCABULARY_ACADEMY_WORDS:[{id:'core',word:'core',partOfSpeech:'noun',level:'A1',category:'everyday',meaningAr:'x'}]}:{},fetch:async url=>({ok:true,json:async()=>{
+ let fail=true;const c={exports:{},AbortController,setTimeout,clearTimeout,console:{error(){}},require:p=>p.includes('vocabularyAcademyData')?{VOCABULARY_ACADEMY_WORDS:[{id:'core',word:'core',partOfSpeech:'noun',level:'A1',category:'everyday',meaningAr:'x'}]}:{},fetch:async url=>({ok:true,json:async()=>{
  if(url.includes('ranks-index'))return{};
  if(url.includes('chunks-index'))return fail&&mode==='emptyIndex'?{files:[]}:fail&&mode==='badIndex'?{files:'x'}:fail&&mode==='duplicateFile'?{files:['x.json','x.json']}:fail&&mode==='path'?{files:['../x.json']}:{files:['x.json']};
  return fail&&mode==='emptyChunk'?[]:fail&&mode==='badRow'?[{...row,category:null}]:fail&&mode==='badRank'?[{...row,rank:'1'}]:fail&&mode==='duplicateId'?[{...row,id:'core'}]:[row];
@@ -12,4 +12,23 @@ for(const mode of ['emptyIndex','badIndex','duplicateFile','path','emptyChunk','
 
 }
 console.log('Vocabulary invalid index/chunk/rank/duplicate IDs never poison full cache; core remains usable and clean retry succeeds: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1;});
+
+(async()=>{
+ for(const endpoint of ['ranks-index','chunks-index','chunks/x.json','expressions.json','vocabulary-manifest.json'])for(const stage of ['headers','body']){
+  let stalled=true,id=0,aborts=0;const timers=new Map(),pending=new Map();
+  const c={exports:{},AbortController,console:{error(){}},setTimeout:(fn,ms)=>{assert.equal(ms,30000);timers.set(++id,fn);return id;},clearTimeout:id=>timers.delete(id),require:p=>p.includes('vocabularyAcademyData')?{VOCABULARY_ACADEMY_WORDS:[{id:'core',word:'core',partOfSpeech:'noun',level:'A1',category:'everyday',meaningAr:'x'}]}:{},fetch:async(url,{signal})=>{
+   const data=url.includes('ranks-index')?{}:url.includes('chunks-index')?{files:['x.json']}:url.includes('vocabulary-manifest')?{totalHeadwords:2}:url.includes('expressions')?[{id:'e',expression:'x',meaningAr:'x',definitionEn:'',exampleEn:'',exampleAr:'',category:'idiom',cefr:'A1'}]:[row];
+   if(stalled&&url.includes(endpoint)){
+    const wait=()=>new Promise((_,reject)=>{pending.set(url,true);signal.addEventListener('abort',()=>{aborts++;reject(Error('AbortError'));},{once:true});});
+    if(stage==='headers')return await wait();return{ok:true,json:wait};
+   }
+   return{ok:true,json:async()=>data};
+  }};vm.runInNewContext(js,c);const api=c.exports;
+  const run=()=>endpoint==='ranks-index'?api.loadVocabularyCore():endpoint==='expressions.json'?api.loadExpressions():endpoint==='vocabulary-manifest.json'?api.loadVocabularyManifest():api.loadFullVocabulary();
+  const result=run().then(value=>({value}),error=>({error}));for(let n=0;n<30;n++)await Promise.resolve();assert.equal(pending.size,1,endpoint+stage);for(const timer of [...timers.values()])timer();const first=await result;assert.equal(aborts,1);assert.equal(timers.size,0);
+  if(endpoint==='ranks-index')assert.equal(first.value.length,1);else if(endpoint==='vocabulary-manifest.json')assert.equal(first.value,null);else assert(first.error);
+  stalled=false;const recovered=await (endpoint==='ranks-index'?api.loadFullVocabulary():run());assert(recovered);assert.equal(timers.size,0);
+ }
+ console.log('Vocabulary ranks/index/chunks/expressions/manifest headers and JSON bodies have finite abort deadlines,clear timers,preserve safe fallback and retry: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
