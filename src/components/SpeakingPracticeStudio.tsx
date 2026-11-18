@@ -53,11 +53,16 @@ export function SpeakingRecorder({ prompt, description }: { prompt: string; desc
       r.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
       r.onstop = () => {
         if (timer.current) clearTimeout(timer.current);
+        timer.current = null;
         media.getTracks().forEach(t => t.stop());
-        if (objectUrl.current) URL.revokeObjectURL(objectUrl.current);
+        if (recorder.current === r) { recorder.current = null; stream.current = null; }
         if (!mounted.current) return;
-        const next = URL.createObjectURL(new Blob(chunks, { type: r.mimeType }));
-        objectUrl.current = next; setUrl(next); setRecording(false);
+        setRecording(false);
+        const output = new Blob(chunks, { type: r.mimeType });
+        if (!output.size) { setError(t('sp.rec.micError')); return; }
+        const next = URL.createObjectURL(output);
+        if (objectUrl.current) URL.revokeObjectURL(objectUrl.current);
+        objectUrl.current = next; setUrl(next);
       };
       r.start(); setRecording(true);
       timer.current = setTimeout(() => { if (r.state === 'recording') r.stop(); }, 90000);
