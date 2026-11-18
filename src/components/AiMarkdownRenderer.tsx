@@ -6,6 +6,7 @@ import { useOwnedClipboard } from '../hooks/useOwnedClipboard';
 // ==============================================================================
 
 import React from 'react';
+import { renderInlineArrows } from '../utils/inlineArrows';
 import { useLanguage } from '../i18n/LanguageContext';
 import { PageRoute } from '../types';
 import { ExternalLink, Copy, Check } from 'lucide-react';
@@ -99,12 +100,12 @@ export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content,
       if (seg.startsWith('**') && seg.endsWith('**')) {
         return (
           <strong key={`${keyPrefix}-b-${i}`} className="font-black text-white px-0.5">
-            {seg.slice(2, -2)}
+            {renderInlineArrows(seg.slice(2, -2))}
           </strong>
         );
       }
       if (seg.startsWith('*') && seg.endsWith('*') && !seg.startsWith('**')) {
-        const italic = seg.slice(1, -1);
+        const italic = renderInlineArrows(seg.slice(1, -1));
         const isEn = isEnglishText(italic);
         return (
           <span
@@ -116,7 +117,7 @@ export const AiMarkdownRenderer: React.FC<AiMarkdownRendererProps> = ({ content,
           </span>
         );
       }
-      return <span key={`${keyPrefix}-s-${i}`}>{seg}</span>;
+      return <span key={`${keyPrefix}-s-${i}`}>{renderInlineArrows(seg)}</span>;
     });
   };
 

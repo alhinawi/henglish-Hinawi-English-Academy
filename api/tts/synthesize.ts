@@ -127,18 +127,13 @@ export default async function handler(req: IncomingMessage & { body?: unknown },
     const gender = body.gender || 'female';
     const keyType = `${accent}-${gender}` as const;
 
-    const elevenlabsKey = env.ELEVENLABS_API_KEY || '';
     const googleTtsKey = env.GOOGLE_TTS_API_KEY || '';
     const kokoroUrl = env.KOKORO_TTS_ENDPOINT || '';
 
     let provider: TtsProvider = 'browser';
     let targetVoiceId = body.voiceId || '';
 
-    if (elevenlabsKey && elevenlabsKey !== 'your_elevenlabs_api_key_here') {
-      provider = 'elevenlabs';
-      const elProfiles = VOICE_PROFILES.elevenlabs as Record<string, string>;
-      targetVoiceId = targetVoiceId || elProfiles[keyType] || elProfiles['US-female'];
-    } else if (googleTtsKey && googleTtsKey !== 'your_google_tts_api_key_here') {
+    if (googleTtsKey && googleTtsKey !== 'your_google_tts_api_key_here') {
       provider = 'google-cloud';
       const gcProfiles = VOICE_PROFILES['google-cloud'] as Record<string, string>;
       targetVoiceId = targetVoiceId || gcProfiles[keyType] || gcProfiles['US-female'];
@@ -163,48 +158,6 @@ export default async function handler(req: IncomingMessage & { body?: unknown },
     }
 
     // ElevenLabs provider
-    if (provider === 'elevenlabs') {
-      try {
-        const response = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${targetVoiceId}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'xi-api-key': elevenlabsKey,
-          },
-          body: JSON.stringify({
-            text: body.text,
-            model_id: 'eleven_multilingual_v2',
-            voice_settings: {
-              stability: 0.5,
-              similarity_boost: 0.75,
-              speed: speed,
-            },
-          }),
-        });
-
-        if (response.ok) {
-          const arrayBuffer = await response.arrayBuffer();
-          const base64 = Buffer.from(arrayBuffer).toString('base64');
-          audioCache.set(cacheKey, { base64, mimeType: 'audio/mpeg' });
-
-          sendJson(res, 200, {
-            audioBase64: base64,
-            provider: 'elevenlabs',
-            voiceId: targetVoiceId,
-            cached: false,
-            mimeType: 'audio/mpeg',
-          });
-          return;
-        } else {
-          const errText = await response.text();
-          console.warn('ElevenLabs API returned error:', response.status, errText);
-        }
-      } catch (err) {
-        console.warn('ElevenLabs request failed:', err);
-      }
-    }
-
-    // Google Cloud TTS provider
     if (provider === 'google-cloud') {
       try {
         const response = await fetch(`https://texttospeech.googleapis.com/v1/text:synthesize?key=${googleTtsKey}`, {
