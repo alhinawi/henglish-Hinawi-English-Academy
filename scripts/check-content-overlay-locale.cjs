@@ -45,4 +45,19 @@ async function check(hook,first,next,firstUrl,nextUrl){
  console.log('Content/app translation headers and body decoding abort after30s,clear timers,fallback safely and allow next-consumer retry: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
 
+(async()=>{
+ const valid={items:[{id:'slg-000001',s:Array.from({length:10},(_,i)=>'Line '+i)}]};
+ for(const mode of ['null','array','missingItems','badId','duplicate','badLine','short','http','network','json','missing','headers','body']){
+  let calls=0,id=0;const timers=new Map();const x={exports:{},AbortController,require:()=>({}),setTimeout:(fn,ms)=>{assert.equal(ms,30000);timers.set(++id,fn);return id;},clearTimeout:id=>timers.delete(id),fetch:async(url,{signal})=>{
+   calls++;if(calls>1)return{ok:true,status:200,json:async()=>valid};if(mode==='network')throw Error('offline');
+   const wait=()=>new Promise((_,reject)=>signal.addEventListener('abort',()=>reject(Error('AbortError')),{once:true}));if(mode==='headers')return await wait();
+   return{ok:!['http','missing'].includes(mode),status:mode==='missing'?404:mode==='http'?503:200,json:async()=>{
+    if(mode==='body')return await wait();if(mode==='json')throw Error('JSON');
+    return mode==='null'?null:mode==='array'?[]:mode==='missingItems'?{}:mode==='duplicate'?{items:[valid.items[0],valid.items[0]]}:mode==='badId'?{items:[{...valid.items[0],id:null}]}:mode==='badLine'?{items:[{...valid.items[0],s:[{},...valid.items[0].s.slice(1)]}]}:mode==='short'?{items:[{...valid.items[0],s:['one']}]}:valid;
+   }};
+  }};vm.runInNewContext(js,x);const load=()=>x.exports.loadSentenceOverlay('slang','fr','slg','slg-000001');const first=load();for(let n=0;n<12;n++)await Promise.resolve();if(['headers','body'].includes(mode))[...timers.values()][0]();assert.equal(await first,null,mode);assert.equal(timers.size,0);const recovered=await load();if(mode==='missing'){assert.equal(recovered,null);assert.equal(calls,1);}else{assert.equal(recovered.length,10);assert.equal(calls,2);await load();assert.equal(calls,2);}assert.equal(timers.size,0);
+ }
+ console.log('Sentence overlays validate unique IDs and ten nonempty text lines;HTTP/network/JSON/schema/deadline failures retry while404 stays cached: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1;});
+
 for(const prefix of ['ielts-v','toefl-v'])for(const [id,file]of [['000001','000001-000100'],['000100','000001-000100'],['000101','000101-000200']]){const entryId=prefix+'-'+id;assert.equal(c.exports.sentenceBlockFileName(entryId.replace(/-\d+$/,''),entryId),prefix+'-sent-'+file+'.json');}assert(fs.readFileSync('src/components/ExamVocabPanel.tsx','utf8').includes("const idPrefix = entry.id.replace(/-\\d+$/, '');"));console.log('Exam translated sentence prefixes keep ielts-v/toefl-v across100-entry boundaries: PASS');
