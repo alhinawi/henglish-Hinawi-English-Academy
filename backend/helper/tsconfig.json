@@ -1,0 +1,6 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": { "noUnusedLocals": true, "noUnusedParameters": true },
+  "include": ["index.ts", "policy.ts", "providers.ts"],
+  "exclude": []
+}
