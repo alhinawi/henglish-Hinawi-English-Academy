@@ -6,6 +6,7 @@
 
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { DEFAULT_LANG, FALLBACK_LANG, languageInfo } from './languages';
+import { initialUiLanguage, validUiLanguage } from './initialLanguage';
 import arMessages from './locales/ar.json';
 import enMessages from './locales/en.json';
 
@@ -78,15 +79,24 @@ const STORAGE_KEY = 'henglish_ui_lang_v1';
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [lang, setLangState] = useState<string>(() => {
-    try {
-      const fromUrl = new URLSearchParams(window.location.search).get('lang');
-      if (fromUrl && languageInfo(fromUrl).code === fromUrl) return fromUrl;
-      return localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG;
-    } catch {
-      return DEFAULT_LANG;
+    let fromUrl: string | null = null;
+    let savedChoice: string | null = null;
+    try { fromUrl = new URLSearchParams(window.location.search).get('lang'); } catch { /* server render */ }
+    try { savedChoice = localStorage.getItem(STORAGE_KEY); } catch { /* private mode */ }
+    const browserLanguage = typeof navigator === 'undefined' ? undefined : navigator.languages?.[0] || navigator.language;
+    const initial = initialUiLanguage(fromUrl, savedChoice, browserLanguage);
+    // A language URL is an explicit choice; automatic detection is not saved.
+    if (validUiLanguage(fromUrl)) {
+      try { localStorage.setItem(STORAGE_KEY, fromUrl); } catch { /* private mode */ }
     }
+    return initial;
   });
-  const [messages, setMessages] = useState<Messages>(STATIC[DEFAULT_LANG]);
+  const [messages, setMessages] = useState<Messages>(STATIC[lang] ?? STATIC[FALLBACK_LANG]);
+  const setLang = (code: string) => {
+    if (!validUiLanguage(code)) return;
+    setLangState(code);
+    try { localStorage.setItem(STORAGE_KEY, code); } catch { /* private mode */ }
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -97,11 +107,6 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     const info = languageInfo(lang);
     document.documentElement.lang = info.code;
     document.documentElement.dir = info.dir;
-    try {
-      localStorage.setItem(STORAGE_KEY, lang);
-    } catch {
-      /* private mode */
-    }
     return () => {
       cancelled = true;
     };
@@ -114,7 +119,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     return {
       lang,
       dir: info.dir,
-      setLang: setLangState,
+      setLang,
       t: (key: string) => messages[key] ?? en[key] ?? ar[key] ?? key,
     };
   }, [lang, messages]);
