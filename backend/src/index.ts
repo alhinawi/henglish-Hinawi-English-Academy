@@ -1,3 +1,4 @@
+import { mountTts } from './tts'
 import { mountBadges } from './badges'
 import { buildLeaderboard, isOwner, isOwnerGoogleSession } from './leaderboard'
 import { mountCertificates } from './certificates'
@@ -159,6 +160,8 @@ async function saveProgress(db: D1Database, userId: number, data: string, now: s
 
 type UserRow = { id: number; name: string; email: string; created_at: string; avatar: string | null; google_sub: string | null }
 const publicUser = (u: UserRow, token = '') => ({ is_admin: isOwnerGoogleSession(u, token), id: u.id, name: u.name, email: u.email, created_at: u.created_at, avatar: u.avatar ?? null })
+
+mountTts(app)
 
 app.get('/api/ping', (c) => c.json({ ok: true, app: 'henglish-api' }))
 
