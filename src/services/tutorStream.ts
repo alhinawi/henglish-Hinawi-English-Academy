@@ -1,3 +1,4 @@
+import { AiServiceUnavailableError } from './aiAvailability';
 // Fetch chunks can end anywhere, including inside JSON or a UTF-8 character.
 // Retain unfinished SSE lines instead of dropping partial response content.
 export async function readTutorStream(
@@ -23,6 +24,7 @@ export async function readTutorStream(
       if (!value || typeof value !== 'object' || Array.isArray(value)) return;
       parsed = value as Record<string, unknown>;
     } catch { return; }
+    if (event === 'error' && parsed.code === 'AI_SERVICE_UNAVAILABLE') throw new AiServiceUnavailableError();
     if (event === 'error') throw new Error(typeof parsed.error === 'string' ? parsed.error : 'Tutor stream failed');
     if (event === 'done') {
       metadata = { ...metadata, ...parsed };
