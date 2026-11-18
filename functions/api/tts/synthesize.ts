@@ -1,12 +1,11 @@
 // Cloudflare Pages Function: /api/tts/synthesize
-// Edge port of api/tts/synthesize.ts (Vercel). ElevenLabs primary, Google Cloud TTS
-// secondary, Kokoro tertiary, browser fallback when no provider is configured.
+// Free synthesis lane only. Vendor audio is a separate disabled last-resort route.
 // Per-isolate in-memory cache. Never logs keys.
 
 type TtsProvider = 'kokoro' | 'elevenlabs' | 'google-cloud' | 'browser';
 
 interface Env {
-  ELEVENLABS_API_KEY?: string;
+  ELEVENLABS_API_KEY?: string; // Legacy secret is never used by this free lane.
   GOOGLE_TTS_API_KEY?: string;
   KOKORO_TTS_ENDPOINT?: string;
 }
@@ -93,17 +92,13 @@ export const onRequestPost = async (context: PagesContext<Env>): Promise<Respons
     const gender = body.gender === 'male' ? 'male' : 'female';
     const keyType = accent + '-' + gender;
 
-    const elevenlabsKey = (env.ELEVENLABS_API_KEY || '').trim();
     const googleTtsKey = (env.GOOGLE_TTS_API_KEY || '').trim();
     const kokoroUrl = (env.KOKORO_TTS_ENDPOINT || '').trim();
 
     let provider: TtsProvider = 'browser';
     let targetVoiceId = body.voiceId || '';
 
-    if (elevenlabsKey && elevenlabsKey !== 'your_elevenlabs_api_key_here') {
-      provider = 'elevenlabs';
-      targetVoiceId = targetVoiceId || VOICE_PROFILES.elevenlabs[keyType] || VOICE_PROFILES.elevenlabs['US-female'];
-    } else if (googleTtsKey && googleTtsKey !== 'your_google_tts_api_key_here') {
+    if (googleTtsKey && googleTtsKey !== 'your_google_tts_api_key_here') {
       provider = 'google-cloud';
       targetVoiceId = targetVoiceId || VOICE_PROFILES['google-cloud'][keyType] || VOICE_PROFILES['google-cloud']['US-female'];
     } else if (kokoroUrl) {
@@ -115,30 +110,6 @@ export const onRequestPost = async (context: PagesContext<Env>): Promise<Respons
     const cachedItem = audioCache.get(cacheKey);
     if (cachedItem) {
       return json({ audioBase64: cachedItem.base64, provider, voiceId: targetVoiceId, cached: true, mimeType: cachedItem.mimeType });
-    }
-
-    if (provider === 'elevenlabs') {
-      try {
-        const response = await fetch('https://api.elevenlabs.io/v1/text-to-speech/' + targetVoiceId, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'xi-api-key': elevenlabsKey },
-          body: JSON.stringify({
-            text: body.text,
-            model_id: 'eleven_multilingual_v2',
-            voice_settings: { stability: 0.5, similarity_boost: 0.75, speed },
-          }),
-        });
-        if (response.ok) {
-          const buf = await response.arrayBuffer();
-          const base64 = arrayBufferToBase64(buf);
-          if (audioCache.size >= MAX_CACHE_ENTRIES) audioCache.clear();
-          audioCache.set(cacheKey, { base64, mimeType: 'audio/mpeg' });
-          return json({ audioBase64: base64, provider: 'elevenlabs', voiceId: targetVoiceId, cached: false, mimeType: 'audio/mpeg' });
-        }
-        console.warn('ElevenLabs API error status:', response.status);
-      } catch (err) {
-        console.warn('ElevenLabs request failed:', (err as Error).message);
-      }
     }
 
     if (provider === 'google-cloud') {
