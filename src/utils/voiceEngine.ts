@@ -71,8 +71,13 @@ function notifyState(isPlaying: boolean, text: string) {
 let availableVoices: SpeechSynthesisVoice[] = [];
 function loadVoices(): SpeechSynthesisVoice[] {
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) return [];
-  availableVoices = window.speechSynthesis.getVoices();
+  availableVoices = window.speechSynthesis.getVoices().filter(v => /\bmicrosoft\b/i.test(v.name) && !/google/i.test(v.name));
   return availableVoices;
+}
+
+export function hasMicrosoftBrowserVoice(language = 'en'): boolean {
+  const requested = language.toLowerCase().split(/[-_]/)[0];
+  return loadVoices().some(voice => voice.lang.toLowerCase().split(/[-_]/)[0] === requested);
 }
 
 if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
@@ -94,7 +99,6 @@ function getPreservedFemaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | nu
   const preferredFemale = voices.find(v => 
     (v.lang.startsWith(langPrefix) || v.lang.startsWith('en')) &&
     (v.name.includes('Samantha') || 
-     v.name.includes('Google US English') || 
      v.name.includes('Zira') || 
      v.name.includes('Victoria') ||
      (v.name.includes('Natural') && v.name.includes('Jenny')) ||
@@ -129,8 +133,6 @@ function getUpgradedMaleVoice(accent: VoiceAccent): SpeechSynthesisVoice | null 
     'guyneural',
     'ryanneural',
     'georgeneural',
-    'google uk english male',
-    'google us english male',
     'daniel (enhanced)',
     'daniel',
     'oliver',
@@ -281,19 +283,11 @@ function speakViaBrowserSpeech(text: string, options?: SpeakOptions, generation 
     utterance.lang = accent === 'UK' ? 'en-GB' : 'en-US';
     utterance.rate = speed;
 
-    if (gender === 'female') {
-      const femaleVoice = getPreservedFemaleVoice(accent);
-      if (femaleVoice) {
-        utterance.voice = femaleVoice;
-      }
-      utterance.pitch = options?.pitch ?? 1.0;
-    } else {
-      const maleVoice = getUpgradedMaleVoice(accent);
-      if (maleVoice) {
-        utterance.voice = maleVoice;
-      }
-      utterance.pitch = options?.pitch ?? 0.94;
-    }
+    const voice = gender === 'female' ? getPreservedFemaleVoice(accent) : getUpgradedMaleVoice(accent);
+    // Never leave voice unset: the OS default may be Google or an unknown vendor.
+    if (!voice) { notifyState(false, ''); options?.onError?.(); return; }
+    utterance.voice = voice;
+    utterance.pitch = options?.pitch ?? (gender === 'female' ? 1.0 : 0.94);
 
     utterance.onstart = () => {
       if (generation !== speechGeneration) return;
@@ -531,12 +525,12 @@ export function speakMultilingualText(text: string, langCode: string = 'en', onE
   // Otherwise, use browser SpeechSynthesis with the matching language voice
   try {
     const utterance = new SpeechSynthesisUtterance(trimmed);
-    const voices = window.speechSynthesis.getVoices();
-    const targetVoice = voices.find(v => v.lang.toLowerCase().startsWith(langCode.toLowerCase()));
-
-    if (targetVoice) {
-      utterance.voice = targetVoice;
-    }
+    const voices = loadVoices();
+    const language = langCode.toLowerCase().replace('_', '-');
+    const targetVoice = voices.find(v => v.lang.toLowerCase().replace('_', '-') === language)
+      || voices.find(v => v.lang.toLowerCase().split(/[-_]/)[0] === language.split('-')[0]);
+    if (!targetVoice) { notifyState(false, ''); options?.onError?.(); return; }
+    utterance.voice = targetVoice;
     utterance.lang = langCode;
     utterance.rate = options?.speed ?? 0.95;
 

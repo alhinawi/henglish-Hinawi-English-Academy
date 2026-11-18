@@ -1,3 +1,4 @@
+import { useMicrosoftVoice } from '../hooks/useMicrosoftVoice';
 // ==============================================================================
 // Henglish Academy (HENGLISH 2.0) - REAL 3D NAVIGABLE WORLD & SIMULATION CITY
 // Fully playable Three.js 3D environment with character movement, NPCs, & physics
@@ -153,6 +154,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
   useEffect(() => { return () => soundRef.current?.dispose(); }, []);
   const worldRef = useRef<HTMLDivElement>(null);
   const nearbyNpcRef = useRef<WorldLocation | null>(null);
+  const hasArabicBrowserVoice = useMicrosoftVoice('ar');
   const [greetingId, setGreetingId] = useState<string | null>(null);
   const [voiceStatus, setVoiceStatus] = useState('');
   const greet = useCallback((id: string) => {
@@ -1120,7 +1122,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
           {/* Proximity Interaction Prompt with NPC */}
           {nearbyNpc && immersive && (
             <div className="absolute bottom-36 sm:bottom-24 left-1/2 -translate-x-1/2 z-20 w-[calc(100%-2rem)] max-w-[22rem]">
-              <button onClick={() => greet(nearbyNpc.id)} className="mb-3 mx-auto flex items-center justify-center gap-2 min-h-11 px-4 rounded-xl bg-black/80 text-white border border-white/25 text-xs font-bold"><Volume2 className="w-4 h-4" />{t('w3.hearGreeting')}</button>
+              <button disabled={!WORLD_GREETINGS[nearbyNpc.id]?.clip && !hasArabicBrowserVoice} onClick={() => greet(nearbyNpc.id)} className="mb-3 mx-auto flex items-center justify-center gap-2 min-h-11 px-4 rounded-xl bg-black/80 text-white border border-white/25 text-xs font-bold"><Volume2 className="w-4 h-4" />{t('w3.hearGreeting')}</button>
               <button
                 onClick={() => {
                   playSound('click');
@@ -1229,7 +1231,7 @@ export const Interactive3DWorld: React.FC<Interactive3DWorldProps> = ({
               <div className="rounded-2xl p-4 bg-white/5 border border-white/10 space-y-2 text-sm">
                 <p className="text-white leading-7">{WORLD_GREETINGS[selectedLocation.id]?.ar}</p>
                 <p dir="ltr" className="text-left text-cyan-100 text-xs">{WORLD_GREETINGS[selectedLocation.id]?.en}</p>
-                <button onClick={() => greet(selectedLocation.id)} className="min-h-11 text-[#ffd166] flex items-center gap-2"><Volume2 className="w-4 h-4" />{t('w3.replayGreeting')}</button>
+                <button disabled={!WORLD_GREETINGS[selectedLocation.id]?.clip && !hasArabicBrowserVoice} onClick={() => greet(selectedLocation.id)} className="min-h-11 text-[#ffd166] flex items-center gap-2"><Volume2 className="w-4 h-4" />{t('w3.replayGreeting')}</button>
                 <p className="text-[10px] text-slate-300">{voiceStatus}</p>
               </div>
               {/* NPC Intro Card */}

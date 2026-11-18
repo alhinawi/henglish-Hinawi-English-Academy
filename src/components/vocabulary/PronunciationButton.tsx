@@ -1,3 +1,4 @@
+import { useMicrosoftVoice } from '../../hooks/useMicrosoftVoice';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - DUAL PRONUNCIATION AUDIO BUTTON
 // American (Cyan #22D3EE) & British (Purple #A78BFA) Audio Playback Component
@@ -28,6 +29,7 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
   showIpa = true,
 }) => {
   const { t } = useLanguage();
+  const browserVoiceAvailable = useMicrosoftVoice();
   const [playbackState, setPlaybackState] = useState<PlaybackState>(() => audioPlayback.getState());
 
   const owner = useRef(Symbol('pronunciation-button'));
@@ -79,11 +81,12 @@ export const PronunciationButton: React.FC<PronunciationButtonProps> = ({
     <span className="inline-flex max-w-full flex-col items-start gap-1">
     <button
       type="button"
+      disabled={isError && !browserVoiceAvailable}
       onClick={handleClick}
       title={t(active ? 'pr.stop' : isUS ? 'pr.us' : 'pr.uk')}
       aria-label={t(active ? 'pr.stop' : isUS ? 'pr.us' : 'pr.uk')}
       aria-pressed={active}
-      className={`inline-flex items-center gap-1.5 rounded-xl border transition-all cursor-pointer font-sans select-none ${
+      className={`inline-flex items-center gap-1.5 rounded-xl border transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed font-sans select-none ${
         size === 'sm'
           ? 'px-2 py-1 text-[11px]'
           : size === 'lg'
