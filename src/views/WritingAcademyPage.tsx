@@ -5,9 +5,9 @@ import { LessonCorrection } from '../components/LessonCorrection';
 import { LiteracyAcademy } from '../components/LiteracyAcademy';
 import React, { useState, useRef, useEffect } from 'react';
 import { PageRoute } from '../types';
-import { isAiServiceUnavailable, throwForAiResponse } from '../services/aiAvailability';
+import { sendAiTutorMessage } from '../services/aiTutorService';
 import { useLanguage } from '../i18n/LanguageContext';
-import { playSound, fireCelebration } from '../utils/audio';
+import { playSound } from '../utils/audio';
 import {
   PenTool,
   Mail,
@@ -125,6 +125,11 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
   const handleAnalyzeWriting = async () => {
     playSound('click');
     invalidateAnalysis();
+    if (userInput.length > 1200) {
+      setSubmissionFeedback(t('wa.feedback.tooLong'));
+      playSound('wrong');
+      return;
+    }
     const wordCount = userInput.trim().split(/\s+/).filter(Boolean).length;
     if (wordCount < 10) {
       setSubmissionFeedback(t('wa.feedback.tooShort'));
@@ -140,21 +145,13 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
     setIsAnalyzing(true);
 
     try {
-      const response = await fetch('/api/ai/chat', {
+      const data = await sendAiTutorMessage({
         signal: controller.signal,
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: `Please act as a Senior English Writing Assessor. Review the following student submission for a ${t(currentTemplate.titleKey)}:\n\n"${userInput}"\n\nProvide structured feedback in Arabic including:\n1) Estimated CEFR level of the writing (A1-C2).\n2) Grammar and spelling corrections with clear before/after examples.\n3) Feedback on tone, structure, and coherence.\n4) A polished, high-scoring native revision.`,
-          mode: 'writing-assistant',
-          userLevel: 'B2',
-        }),
+        message: userInput.trim(),
+        mode: 'writing-assistant',
+        userLevel: 'B2',
+        history: [],
       });
-
-      if (!isCurrent()) return;
-      await throwForAiResponse(response, `AI writing analysis failed with status: ${response.status}`);
-
-      const data = await response.json();
       if (!isCurrent()) return;
       const feedbackText = writingFeedback(data);
       if (!feedbackText) {
@@ -162,16 +159,9 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
         return;
       }
       setSubmissionFeedback(feedbackText);
-      playSound('correct');
-      fireCelebration();
     } catch (err) {
       if (!isCurrent()) return;
-      if (isAiServiceUnavailable(err)) {
-        setSubmissionFeedback(t('ai.unavailable'));
-      } else {
-        console.warn('AI analysis fallback:', err);
-        setSubmissionFeedback(t('wa.feedback.error'));
-      }
+      setSubmissionFeedback((err as { helperMessage?: string })?.helperMessage || t('wa.feedback.error'));
 
     } finally {
       clearTimeout(deadline);
@@ -373,6 +363,8 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
 
           <textarea
             rows={8}
+            aria-label={t('wa.lab.title')}
+            aria-describedby="writing-helper-notice"
             dir="ltr"
             lang="en"
             value={userInput}
@@ -385,7 +377,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
           />
 
           <div className="flex items-center justify-between text-xs text-[#b9b6d5]">
-            <span>{t('wa.words')}: {userInput.trim().split(/\s+/).filter(Boolean).length}</span>
+            <span>{t('wa.words')}: {userInput.trim().split(/\s+/).filter(Boolean).length} • <bdi dir="ltr">{userInput.length}/1200</bdi></span>
             <button
               onClick={() => {
                 invalidateAnalysis();
@@ -397,6 +389,7 @@ export const WritingAcademyPage: React.FC<WritingAcademyPageProps> = ({ onNaviga
             </button>
           </div>
 
+          <p id="writing-helper-notice" className="text-xs text-[#b9b6d5] leading-relaxed">{t('wa.helperNotice')}</p>
           <button
             onClick={handleAnalyzeWriting}
             disabled={!userInput.trim() || isAnalyzing}

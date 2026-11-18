@@ -1120,13 +1120,13 @@
   "wa.copied": "Kopiert!",
   "wa.listen": "Vorlage anhören",
   "wa.goldenRules": "Goldene Regeln für diese Vorlage:",
-  "wa.lab.badge": "Smart-Editor-Labor",
+  "wa.lab.badge": "Schreibwerkstatt",
   "wa.lab.title": "Schreibe deine E-Mail oder deinen Entwurf hier",
-  "wa.lab.sub": "Schreibe eine Nachricht oder einen Absatz auf Englisch und drücke auf Analysieren, um Grammatikmuster und Konnektoren zu erkennen.",
+  "wa.lab.sub": "Schreibe einen kurzen englischen Absatz für Hinweise zu den wichtigsten Fehlern auf Ägyptisch-Arabisch. Keine offizielle Note oder anerkannte CEFR-Einstufung.",
   "wa.words": "Wörter",
   "wa.importTemplate": "Vorlagentext zum Bearbeiten importieren",
   "wa.analyzing": "Entwurf wird analysiert...",
-  "wa.analyze": "Entwurf prüfen und bewerten",
+  "wa.analyze": "Kurzen Entwurf prüfen",
   "wa.feedback.title": "Analysestatus und Hinweise",
   "wa.feedback.disclaimer": "Automatische Hinweise können fehlerhaft sein",
   "wa.feedback.tooShort": "Zu kurz! Schreibe einen vollständigen Satz oder Absatz mit Subjekt, Verb und Objekt.",
@@ -2912,5 +2912,7 @@
   "helper.notice": "Kostenlos Englisch üben mit kurzen Erklärungen auf Ägyptisch-Arabisch. Antworten können Fehler enthalten. Täglich 6 Fragen pro Lernendem und 30 für die gesamte Website, Rücksetzung um 00:00 UTC.",
   "helper.privacy": "Maximal 1.200 Zeichen pro Frage, ohne persönliche Daten. Die Frage und bis zu vier letzte Nachrichten werden an den Hilfsdienst gesendet. Aussprachetipps nur als Text, keine Audiobewertung.",
   "va.verbSearch": "Verbformen, Bedeutungen oder englische Beispiele suchen",
-  "va.verbEmpty": "Keine passenden Verben. Probiere eine andere Form oder leere die Suche."
+  "va.verbEmpty": "Keine passenden Verben. Probiere eine andere Form oder leere die Suche.",
+  "wa.helperNotice": "Maximal 1.200 Zeichen. Keine persönlichen Daten eingeben. Der Text wird an den Hilfsdienst gesendet und teilt dessen Limits: täglich 6 Fragen pro Lernendem und 30 für die gesamte Website. Hinweise können falsch sein.",
+  "wa.feedback.tooLong": "Der Entwurf hat mehr als 1.200 Zeichen. Wähle einen kürzeren Absatz zur Prüfung. Der ursprüngliche Text bleibt unverändert."
 }
