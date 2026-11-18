@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
 const js=ts.transpileModule(fs.readFileSync('src/services/contentI18nService.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
 let lang='de',state=null,effect=null,cleanup=null;
-const pending={};const c={exports:{},fetch:url=>new Promise(resolve=>pending[url]=data=>resolve({ok:true,json:async()=>data})),require:p=>p==='react'?{useState:()=>[state,v=>state=v],useEffect:fn=>effect=fn}:{useLanguage:()=>({lang})}};vm.runInNewContext(js,c);
+const pending={};const c={exports:{},AbortController,setTimeout:(fn,ms)=>{const timer=setTimeout(fn,ms);timer.unref();return timer;},clearTimeout,fetch:url=>new Promise(resolve=>pending[url]=data=>resolve({ok:true,json:async()=>data})),require:p=>p==='react'?{useState:()=>[state,v=>state=v],useEffect:fn=>effect=fn}:{useLanguage:()=>({lang})}};vm.runInNewContext(js,c);
 const flush=async()=>{for(let n=0;n<8;n++)await Promise.resolve();};
 async function check(hook,first,next,firstUrl,nextUrl){
  state=null;lang='de';assert.equal(hook(first),null);cleanup=effect();pending[firstUrl](hook===c.exports.useContentMap?{entry:{m:'German'}}:{Quelle:'Deutsch'});await flush();assert.ok(hook(first));
@@ -27,7 +27,20 @@ async function check(hook,first,next,firstUrl,nextUrl){
 
 (async()=>{
  for(const kind of ['content','app'])for(const mode of ['null','array','number','badvalue','http','network','json','missing']){
-  let calls=0;const x={exports:{},require:()=>({}),fetch:async()=>{calls++;if(calls===1){if(mode==='network')throw Error('offline');return{ok:mode!=='http'&&mode!=='missing',status:mode==='missing'?404:mode==='http'?503:200,json:async()=>{if(mode==='json')throw Error('JSON');return mode==='null'?null:mode==='array'?[]:mode==='number'?3:kind==='content'?{entry:{m:{bad:true}}}:{title:{bad:true}};}};}return{ok:true,status:200,json:async()=>kind==='content'?{entry:{m:'Translated',e:'Example'}}:{title:'Translated'}};}};vm.runInNewContext(js,x);const load=()=>kind==='content'?x.exports.loadContentMap('bank','fr'):x.exports.loadAppTextMap('module','fr');assert.equal(await load(),null);const recovered=await load();if(mode==='missing'){assert.equal(recovered,null);assert.equal(calls,1);}else{assert(recovered);assert.equal(calls,2);await load();assert.equal(calls,2);}
+  let calls=0;const x={exports:{},AbortController,setTimeout:(fn,ms)=>{const timer=setTimeout(fn,ms);timer.unref();return timer;},clearTimeout,require:()=>({}),fetch:async()=>{calls++;if(calls===1){if(mode==='network')throw Error('offline');return{ok:mode!=='http'&&mode!=='missing',status:mode==='missing'?404:mode==='http'?503:200,json:async()=>{if(mode==='json')throw Error('JSON');return mode==='null'?null:mode==='array'?[]:mode==='number'?3:kind==='content'?{entry:{m:{bad:true}}}:{title:{bad:true}};}};}return{ok:true,status:200,json:async()=>kind==='content'?{entry:{m:'Translated',e:'Example'}}:{title:'Translated'}};}};vm.runInNewContext(js,x);const load=()=>kind==='content'?x.exports.loadContentMap('bank','fr'):x.exports.loadAppTextMap('module','fr');assert.equal(await load(),null);const recovered=await load();if(mode==='missing'){assert.equal(recovered,null);assert.equal(calls,1);}else{assert(recovered);assert.equal(calls,2);await load();assert.equal(calls,2);}
  }
  console.log('Content/app invalid payloads cannot become React children;network/HTTP/JSON/shape failure evicts cache for retry,404 stays optional and cached: PASS');
+})().catch(e=>{console.error(e);process.exitCode=1;});
+
+
+(async()=>{
+ for(const kind of ['content','app'])for(const stage of ['headers','body']){
+  let stalled=true,id=0,aborts=0;const timers=new Map();const x={exports:{},AbortController,require:()=>({}),setTimeout:(fn,ms)=>{assert.equal(ms,30000);timers.set(++id,fn);return id;},clearTimeout:id=>timers.delete(id),fetch:async(url,{signal})=>{
+   const data=kind==='content'?{entry:{m:'Recovered'}}:{title:'Recovered'};
+   if(!stalled)return{ok:true,status:200,json:async()=>data};
+   const wait=()=>new Promise((_,reject)=>signal.addEventListener('abort',()=>{aborts++;reject(Error('AbortError'));},{once:true}));
+   if(stage==='headers')return await wait();return{ok:true,status:200,json:wait};
+  }};vm.runInNewContext(js,x);const load=()=>kind==='content'?x.exports.loadContentMap('bank','fr'):x.exports.loadAppTextMap('module','fr');const pending=load();for(let n=0;n<10;n++)await Promise.resolve();assert.equal(timers.size,1);[...timers.values()][0]();assert.equal(await pending,null);assert.equal(aborts,1);assert.equal(timers.size,0);stalled=false;assert(await load());assert.equal(timers.size,0);
+ }
+ console.log('Content/app translation headers and body decoding abort after30s,clear timers,fallback safely and allow next-consumer retry: PASS');
 })().catch(e=>{console.error(e);process.exitCode=1;});
