@@ -139,6 +139,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore, learner
               playSound('click');
               invalidateGeneration(); setActiveTab('ai');
             }}
+            aria-pressed={activeTab === 'ai'}
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
               activeTab === 'ai'
                 ? 'bg-[#c4ff55] text-[#0c0b20] shadow-lg'
@@ -154,6 +155,7 @@ export const QuizzesPage: React.FC<QuizzesPageProps> = ({ onRecordScore, learner
               playSound('click');
               invalidateGeneration(); setActiveTab('static');
             }}
+            aria-pressed={activeTab === 'static'}
             className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all cursor-pointer flex items-center gap-2 ${
               activeTab === 'static'
                 ? 'bg-[#ffd166] text-[#0c0b20] shadow-lg'
