@@ -51,5 +51,5 @@ jobs:
       - name: Typecheck helper Worker
         run: cd backend && npm ci && npx tsc --noEmit -p helper/tsconfig.json
 
-      - name: Run production build (includes TypeScript project build)
+      - name: Build Next.js static production export (includes TypeScript project build)
         run: pnpm build
