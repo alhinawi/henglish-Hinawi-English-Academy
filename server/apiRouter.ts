@@ -1,3 +1,4 @@
+import { protectedTtsProxy } from './protectedTtsProxy';
 import { isAiServiceUnavailable } from '../src/services/aiAvailability';
 // ==============================================================================
 // Henglish Academy (HENGLISH) - SERVER API ROUTER & MIDDLEWARE
@@ -14,7 +15,6 @@ import {
   clearAiResponseCache,
 } from './ai/aiRouter';
 import { 
-  synthesizeSpeech, 
   TtsSynthesisRequest, 
   getTtsProviderHealth, 
   getTtsCacheStats, 
@@ -344,8 +344,8 @@ export async function handleApiRoute(req: IncomingMessage, res: ServerResponse):
         return true;
       }
 
-      const result = await synthesizeSpeech(body);
-      sendJson(res, 200, result);
+      const response = await protectedTtsProxy(JSON.stringify(body));
+      sendJson(res, response.status, await response.json());
     } catch (err) {
       console.error('API /api/tts/synthesize error:', err);
       sendJson(res, 500, { error: 'TTS synthesis error', message: String(err) });
