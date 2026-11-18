@@ -171,7 +171,14 @@ let ranksIndexPromise: Promise<Record<string, [number, number]>> | null = null;
 function loadRanksIndex(): Promise<Record<string, [number, number]>> {
   if (!ranksIndexPromise) {
     ranksIndexPromise = fetchVocabularyJson('/data/vocab/ranks-index.json')
-      .then(data => data as Record<string, [number, number]>)
+      .then(data => {
+        if (!data || typeof data !== 'object' || Array.isArray(data) || Object.entries(data).some(([word, value]) =>
+          !word.trim() || !Array.isArray(value) || value.length !== 2 ||
+          !Number.isInteger(value[0]) || value[0] < 1 || !Number.isFinite(value[1]) || value[1] < 0)) {
+          throw new Error('Invalid vocabulary rank index');
+        }
+        return data as Record<string, [number, number]>;
+      })
       .catch(() => { ranksIndexPromise = null; return {}; });
   }
   return ranksIndexPromise;
