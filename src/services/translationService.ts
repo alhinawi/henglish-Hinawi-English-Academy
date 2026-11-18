@@ -135,9 +135,11 @@ export async function askTranslationAssistant(
 export async function performImageOcrTranslation(
   imageBase64: string,
   mimeType: string,
-  targetLang: LanguageCode
+  targetLang: LanguageCode,
+  signal?: AbortSignal
 ): Promise<OcrResult> {
   const response = await fetch('/api/ai/ocr-translate', {
+    signal,
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ imageBase64, mimeType, targetLang }),
