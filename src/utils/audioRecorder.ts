@@ -34,6 +34,7 @@ export class RealAudioRecorder {
   private animFrameId: number | null = null;
   private startTime = 0;
   private captureVersion = 0;
+  private cancelPendingStop: (() => void) | null = null;
   private durationSeconds = 0;
   private timerInterval: ReturnType<typeof setInterval> | null = null;
 
@@ -104,12 +105,14 @@ export class RealAudioRecorder {
 
       // Listen for data
       this.mediaRecorder.ondataavailable = event => {
+        if (version !== this.captureVersion) return;
         if (event.data && event.data.size > 0) {
           this.audioChunks.push(event.data);
         }
       };
 
       this.mediaRecorder.onerror = () => {
+        if (version !== this.captureVersion) return;
         this.cleanup();
         this.setState('RECORDING_ERROR');
       };
@@ -173,49 +176,55 @@ export class RealAudioRecorder {
       return null;
     }
 
+    const version = this.captureVersion;
+    const recorder = this.mediaRecorder;
+    const chunks = this.audioChunks;
+    const durationSeconds = this.durationSeconds || Math.max(1, Math.round((Date.now() - this.startTime) / 1000));
     this.setState('PROCESSING');
 
     return new Promise(resolve => {
-      if (!this.mediaRecorder) {
+      let settled = false;
+      let reader: FileReader | null = null;
+      const finish = (result: RecordedAudioData | null) => {
+        if (settled) return;
+        settled = true;
+        if (this.cancelPendingStop === cancel) this.cancelPendingStop = null;
+        resolve(result);
+      };
+      const cancel = () => {
+        finish(null);
+        try { reader?.abort(); } catch {}
+      };
+      this.cancelPendingStop = cancel;
+      const current = () => !settled && version === this.captureVersion;
+      const fail = () => {
+        if (!current()) { finish(null); return; }
+        finish(null);
         this.cleanup();
-        resolve(null);
-        return;
-      }
-
-      this.mediaRecorder.onstop = async () => {
-        const mimeType = this.mediaRecorder?.mimeType || 'audio/webm';
-        const blob = new Blob(this.audioChunks, { type: mimeType });
-        const blobUrl = URL.createObjectURL(blob);
-        const durationSeconds = this.durationSeconds || Math.max(1, Math.round((Date.now() - this.startTime) / 1000));
-
-        // Convert to base64 for API transmission
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          const resultStr = reader.result as string;
-          const base64 = resultStr.includes(',') ? resultStr.split(',')[1] : resultStr;
-
+        this.setState('PROCESSING_ERROR');
+      };
+      recorder.onstop = () => {
+        if (!current()) { finish(null); return; }
+        const mimeType = recorder.mimeType || 'audio/webm';
+        const blob = new Blob(chunks, { type: mimeType });
+        if (!blob.size) { fail(); return; }
+        reader = new FileReader();
+        reader.onload = () => {
+          if (!current()) { finish(null); return; }
+          const result = reader?.result;
+          const base64 = typeof result === 'string' ? (result.includes(',') ? result.split(',')[1] : result) : '';
+          if (!base64) { fail(); return; }
+          const blobUrl = URL.createObjectURL(blob);
+          finish({ blob, blobUrl, base64, mimeType, durationSeconds });
           this.cleanup();
           this.setState('COMPLETED');
-
-          resolve({
-            blob,
-            blobUrl,
-            base64,
-            mimeType,
-            durationSeconds,
-          });
         };
-
-        reader.onerror = () => {
-          this.cleanup();
-          this.setState('PROCESSING_ERROR');
-          resolve(null);
-        };
-
-        reader.readAsDataURL(blob);
+        reader.onerror = fail;
+        reader.onabort = () => finish(null);
+        try { reader.readAsDataURL(blob); } catch { fail(); }
       };
-
-      this.mediaRecorder.stop();
+      recorder.onerror = fail;
+      try { recorder.stop(); } catch { fail(); }
     });
   }
 
@@ -232,6 +241,9 @@ export class RealAudioRecorder {
    */
   public cleanup() {
     this.captureVersion += 1;
+    const cancelStop = this.cancelPendingStop;
+    this.cancelPendingStop = null;
+    cancelStop?.();
     if (this.timerInterval) {
       clearInterval(this.timerInterval);
       this.timerInterval = null;
