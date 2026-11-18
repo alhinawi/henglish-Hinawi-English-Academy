@@ -217,7 +217,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
               <strong className="text-[#ffd166]">
                 {t('dash.streakValue').replace('{n}', String(userProfile.streakDays))}
               </strong>
-              {t('dash.heroTextB')}{" "}
+              {' '}{t('dash.heroTextB')}{" "}
               <strong className="text-[#41e7ff]">
                 {t('dash.heroXp').replace('{n}', userProfile.xp.toLocaleString())}
               </strong>
