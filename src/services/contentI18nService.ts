@@ -180,15 +180,24 @@ export function loadSentenceOverlay(
   if (!sentenceOverlayCache.has(key)) {
     sentenceOverlayCache.set(
       key,
-      fetch(`/data/${bankPath}/i18n/sentences/${lang}/${file}`)
-        .then(async (res) => {
-          if (!res.ok) return null;
-          const data = (await res.json()) as { items?: { id: string; s: string[] }[] };
-          const map: Record<string, string[]> = {};
-          for (const item of data.items ?? []) map[item.id] = item.s;
+      fetchTranslationJson(`/data/${bankPath}/i18n/sentences/${lang}/${file}`)
+        .then(result => {
+          if (result.missing) return null;
+          const data = result.data;
+          if (!data || typeof data !== 'object' || !Array.isArray((data as { items?: unknown }).items)) throw new Error('Invalid sentence overlay');
+          const map: Record<string, string[]> = Object.create(null);
+          for (const item of (data as { items: unknown[] }).items) {
+            if (!item || typeof item !== 'object') throw new Error('Invalid sentence overlay entry');
+            const row = item as { id?: unknown; s?: unknown };
+            if (typeof row.id !== 'string' || !row.id.trim() || Object.hasOwn(map, row.id) ||
+              !Array.isArray(row.s) || row.s.length !== 10 || row.s.some(line => typeof line !== 'string' || !line.trim())) {
+              throw new Error('Invalid sentence overlay entry');
+            }
+            map[row.id] = row.s;
+          }
           return map;
         })
-        .catch(() => null)
+        .catch(() => { sentenceOverlayCache.delete(key); return null; })
     );
   }
   return sentenceOverlayCache.get(key)!.then((m) => m?.[entryId] ?? null);
