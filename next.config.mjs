@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
-// Bridge: Cloudflare Pages sets VITE_* vars for the Vite build; expose the
-// same values to the Next static export as NEXT_PUBLIC_* so client bundles
-// behave identically under either build command.
+// Keep existing Cloudflare VITE_* environment names working during the
+// transition. The canonical build is Next.js static export; new deployments
+// may use NEXT_PUBLIC_* names without losing the existing account settings.
 const envBridge = {};
 for (const [viteName, publicName] of [
   ['VITE_SUPABASE_URL', 'NEXT_PUBLIC_SUPABASE_URL'],
