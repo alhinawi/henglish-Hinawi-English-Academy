@@ -1,0 +1,11 @@
+{
+  "count": 48489,
+  "sha256": "d1fa31c83cfb1da76647a53f716ca8e1ebc0ef4d3fbf77eca32b486c67e0cc91",
+  "sourceCommit": "83873fb587661db8efb6e969937c0e1094668e60",
+  "sources": [
+    "src/utils/voiceEngine.ts:STATIC_ENGLISH_AUDIO",
+    "public/data/vocab/chunks/*.json:word,exampleEn",
+    "public/data/sentences.json:english"
+  ],
+  "scope": "Bundled English static clips, frequency words/examples and sentence library only. Other or edited text remains denied."
+}

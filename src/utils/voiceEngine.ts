@@ -402,6 +402,18 @@ export function saveVoiceSettings(settings: VoiceSettings): void {
 let currentSettings: VoiceSettings = getSavedVoiceSettings();
 let speechGeneration = 0;
 let synthesisController: AbortController | null = null;
+let currentObjectUrl: string | null = null;
+let speechStartTimer: ReturnType<typeof setTimeout> | null = null;
+const clearSpeechStartTimer = () => { if (speechStartTimer !== null && typeof clearTimeout === 'function') clearTimeout(speechStartTimer); speechStartTimer = null; };
+function watchSpeechStart(callback: () => void) {
+  clearSpeechStartTimer();
+  speechStartTimer = setTimeout(callback, 8000);
+  (speechStartTimer as unknown as {unref?: () => void})?.unref?.();
+}
+function terminalSpeechFailure(error: unknown): boolean {
+  const e = error as {name?: string;error?: string};
+  return ['AbortError','NotAllowedError'].includes(e?.name || '') || ['canceled','interrupted','not-allowed'].includes(e?.error || '');
+}
 let lastSpokenText: string = '';
 let currentUtterance: SpeechSynthesisUtterance | null = null;
 let currentHtmlAudio: HTMLAudioElement | null = null;
@@ -563,6 +575,8 @@ export function getVoiceSettings(): VoiceSettings {
 
 export function stopSpeech(): void {
   speechGeneration++;
+  clearSpeechStartTimer();
+  if (currentObjectUrl) {URL.revokeObjectURL(currentObjectUrl);currentObjectUrl=null;}
   synthesisController?.abort();
   synthesisController = null;
   if (currentHtmlAudio) {
@@ -619,10 +633,10 @@ export interface SpeakOptions {
 /**
  * Play sentence with browser SpeechSynthesis
  */
-function speakViaBrowserSpeech(text: string, options?: SpeakOptions, generation = speechGeneration): void {
+function speakViaBrowserSpeech(text: string, options?: SpeakOptions, generation = speechGeneration, onGenuineFailure?: (reason: string) => void): void {
   if (generation !== speechGeneration) return;
   if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-    if (options?.onError) options.onError();
+    if (onGenuineFailure) onGenuineFailure('free_unavailable'); else options?.onError?.();
     return;
   }
 
@@ -639,36 +653,40 @@ function speakViaBrowserSpeech(text: string, options?: SpeakOptions, generation 
 
     const voice = gender === 'female' ? getPreservedFemaleVoice(accent) : getUpgradedMaleVoice(accent);
     // Never leave voice unset: the OS default may be Google or an unknown vendor.
-    if (!voice) { notifyState(false, ''); options?.onError?.(); return; }
+    if (!voice) { notifyState(false, ''); if (onGenuineFailure) onGenuineFailure('free_unavailable'); else options?.onError?.(); return; }
     utterance.voice = voice;
     utterance.pitch = options?.pitch ?? (gender === 'female' ? 1.0 : 0.94);
 
     utterance.onstart = () => {
-      if (generation !== speechGeneration) return;
+      if (generation !== speechGeneration || browserFailed) return;
+      clearSpeechStartTimer();
       currentUtterance = utterance;
       notifyState(true, text);
     };
 
     utterance.onend = () => {
-      if (generation !== speechGeneration) return;
+      if (generation !== speechGeneration || browserFailed) return;
+      clearSpeechStartTimer();
       currentUtterance = null;
       notifyState(false, '');
       if (options?.onEnd) options.onEnd();
       if (options?.onEnded) options.onEnded();
     };
 
-    utterance.onerror = () => {
-      if (generation !== speechGeneration) return;
-      currentUtterance = null;
-      notifyState(false, '');
-      if (options?.onError) options.onError();
+    let browserFailed = false;
+    const fail = (error: unknown, reason = 'free_playback_error') => {
+      if (generation !== speechGeneration || browserFailed) return;
+      browserFailed = true; clearSpeechStartTimer(); currentUtterance = null; notifyState(false, '');
+      if (terminalSpeechFailure(error)) { options?.onError?.(); return; }
+      window.speechSynthesis.cancel();
+      if (onGenuineFailure) onGenuineFailure(reason); else options?.onError?.();
     };
-
+    utterance.onerror = error => fail(error);
+    watchSpeechStart(() => fail({}, 'free_start_timeout'));
     window.speechSynthesis.speak(utterance);
   } catch (err) {
-    console.warn('Browser SpeechSynthesis error:', err);
-    notifyState(false, '');
-    if (options?.onError) options.onError();
+    clearSpeechStartTimer(); notifyState(false, '');
+    if (!terminalSpeechFailure(err) && onGenuineFailure) onGenuineFailure('free_playback_error'); else options?.onError?.();
   }
 }
 
@@ -688,29 +706,49 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
   const speed = options?.speed || currentSettings.speed;
   const voiceId = options?.voiceId || currentSettings.selectedVoiceId;
   const cacheKey = `${trimmed}_${voiceId || `${accent}_${gender}`}_${speed}`;
+  let vendorStarted = false;
+  const requestVendorAudio = (reason: string) => {
+    if (!isCurrent() || vendorStarted) return;
+    vendorStarted = true;
+    const controller = new AbortController(); synthesisController = controller;
+    watchSpeechStart(() => {controller.abort(); if (isCurrent()) {notifyState(false, ''); options?.onError?.();}});
+    fetch('/api/tts/fallback', {signal:controller.signal,method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text:trimmed,accent,gender,fallbackReason:reason})})
+      .then(async response => {
+        if (!isCurrent()) return;
+        if (!response.ok || !response.headers.get('Content-Type')?.startsWith('audio/mpeg')) throw new Error('Audio fallback unavailable');
+        const blob = await response.blob();
+        if (!isCurrent()) return;
+        clearSpeechStartTimer(); synthesisController = null;
+        const src = URL.createObjectURL(blob); currentObjectUrl = src;
+        playAudio(src, () => { URL.revokeObjectURL(src); notifyState(false, ''); options?.onError?.(); });
+      }).catch(() => { if (isCurrent()) { clearSpeechStartTimer(); synthesisController = null; notifyState(false, ''); options?.onError?.(); } });
+  };
   let fallbackStarted = false;
   const fallback = () => {
     if (!isCurrent() || fallbackStarted) return;
     fallbackStarted = true;
     if (currentHtmlAudio) { currentHtmlAudio.pause(); currentHtmlAudio = null; }
-    speakViaBrowserSpeech(trimmed, options, generation);
+    speakViaBrowserSpeech(trimmed, options, generation, requestVendorAudio);
   };
   const playAudio = (src: string, onFailure = fallback) => {
     if (!isCurrent()) return;
     const audio = new Audio(src);
     currentHtmlAudio = audio;
     audio.playbackRate = speed;
-    audio.onplay = () => { if (isCurrent() && currentHtmlAudio === audio) notifyState(true, trimmed); };
+    audio.onplay = () => { if (isCurrent() && currentHtmlAudio === audio) {clearSpeechStartTimer(); notifyState(true, trimmed);} };
     audio.onended = () => {
       if (!isCurrent() || currentHtmlAudio !== audio) return;
+      clearSpeechStartTimer();
       currentHtmlAudio = null;
       notifyState(false, '');
+      if (src.startsWith('blob:')) {URL.revokeObjectURL(src);currentObjectUrl=null;}
       options?.onEnd?.();
       options?.onEnded?.();
     };
     let failed = false;
-    const failOnce = () => { if (failed || !isCurrent()) return; failed = true; onFailure(); };
+    const failOnce = (error: unknown = {}) => { if (failed || !isCurrent() || currentHtmlAudio !== audio) return; failed = true; clearSpeechStartTimer(); if (terminalSpeechFailure(error)) { notifyState(false, ''); options?.onError?.(); return; } onFailure(); };
     audio.onerror = failOnce;
+    watchSpeechStart(() => failOnce({}));
     audio.play().catch(failOnce);
   };
   const requestServerAudio = () => {
@@ -720,22 +758,24 @@ export function speakEnglishVoice(text: string, options?: SpeakOptions): void {
   if (cached) { playAudio(cached); return; }
   const controller = new AbortController();
   synthesisController = controller;
+  let serverTimedOut = false;
+  watchSpeechStart(() => {if (!isCurrent()) return; serverTimedOut = true; controller.abort(); synthesisController = null; fallback();});
   fetch('/api/tts/synthesize', {
     signal: controller.signal,
     method: 'POST', headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text: trimmed, accent, gender, speed, voiceId }),
   })
-    .then(res => { if (!isCurrent()) return null; return res.json(); })
+    .then(res => { if (!isCurrent() || serverTimedOut) return null; return res.json(); })
     .then(data => {
-      if (!isCurrent()) return;
-      synthesisController = null;
+      if (!isCurrent() || serverTimedOut) return;
+      clearSpeechStartTimer(); synthesisController = null;
       if (data?.audioBase64) {
         const src = `data:${data.mimeType || 'audio/mpeg'};base64,${data.audioBase64}`;
         clientAudioBlobCache.set(cacheKey, src);
         playAudio(src);
       } else fallback();
     })
-    .catch(() => { if (isCurrent()) { synthesisController = null; fallback(); } });
+    .catch(error => { if (isCurrent() && !serverTimedOut) { clearSpeechStartTimer(); synthesisController = null; if (terminalSpeechFailure(error)) {notifyState(false, ''); options?.onError?.();} else fallback(); } });
   };
   const readyClip = STATIC_ENGLISH_AUDIO[trimmed];
   if (readyClip) { playAudio(readyClip, requestServerAudio); return; }
