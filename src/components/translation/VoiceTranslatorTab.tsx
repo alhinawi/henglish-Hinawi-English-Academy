@@ -162,6 +162,10 @@ export const VoiceTranslatorTab: React.FC<VoiceTranslatorTabProps> = ({
     e.target.value = '';
     const version = ++uploadVersion.current;
     requestController.current?.abort();
+    recorder.cancel();
+    setIsRecording(false);
+    setRecordDuration(0);
+    setWaveformData([]);
     uploadReader.current?.abort();
     stopSpeech();
     const isCurrent = () => uploadVersion.current === version;
