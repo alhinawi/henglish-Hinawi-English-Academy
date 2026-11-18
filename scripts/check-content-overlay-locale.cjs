@@ -15,6 +15,7 @@ async function check(hook,first,next,firstUrl,nextUrl){
  lang='en';state=null;c.exports.useAppTextMap('allGrammarRules');cleanup?.();cleanup=effect();
  pending['/data/app-i18n/allGrammarRules/en.json']({'أزمنة المضارع':'Present Tenses'});await flush();assert.equal(c.exports.useAppTextMap('allGrammarRules')['أزمنة المضارع'],'Present Tenses');
  state=null;c.exports.useAppTextMap('speakingAcademyData');cleanup?.();cleanup=effect();pending['/data/app-i18n/speakingAcademyData/en.json']({'أول مقابلة':'Meeting someone new'});await flush();assert.equal(c.exports.useAppTextMap('speakingAcademyData')['أول مقابلة'],'Meeting someone new');
+ state=null;c.exports.useAppTextMap('coursesData');cleanup?.();cleanup=effect();pending['/data/app-i18n/coursesData/en.json']({'دليل الكورسات':'Course catalog'});await flush();assert.equal(c.exports.useAppTextMap('coursesData')['دليل الكورسات'],'Course catalog');
  assert.equal(c.exports.needsContentTranslation('en'),false,'English banks remain built-in');
  const grammarContext={exports:{}};vm.runInNewContext(ts.transpileModule(fs.readFileSync('src/data/allGrammarRules.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,grammarContext);
  const english=JSON.parse(fs.readFileSync('public/data/app-i18n/allGrammarRules/en.json','utf8'));
