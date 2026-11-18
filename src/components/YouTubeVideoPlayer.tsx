@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 import { LessonVideoResource, isValidYouTubeId } from '../data/videoResourcesData';
 import { Play, ExternalLink, Video, AlertCircle, Clock, Sparkles, RefreshCw, CheckCircle2 } from 'lucide-react';
@@ -15,6 +15,13 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
   const [isPlaying, setIsPlaying] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+
+  useEffect(() => {
+    if (!isPlaying || !isLoading || hasError) return;
+    const timeout = window.setTimeout(() => { setIsLoading(false); setHasError(true); }, 15000);
+    return () => window.clearTimeout(timeout);
+  }, [isPlaying, isLoading, hasError, activeVideoIdx]);
+
 
   if (!resources || resources.length === 0) {
     return null;
@@ -105,7 +112,7 @@ export const YouTubeVideoPlayer: React.FC<YouTubeVideoPlayerProps> = ({ resource
             </button>
           ) : hasError || !isIdValid ? (
             /* Graceful Fallback Card */
-            <div className="flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
+            <div role="alert" className="flex flex-col items-center justify-center p-6 text-center bg-[#171632] space-y-4">
               <AlertCircle className="w-12 h-12 shrink-0 text-red-400" />
               <div className="space-y-1">
                 <p className="text-sm font-bold text-white">{t('yt.error')}</p>
