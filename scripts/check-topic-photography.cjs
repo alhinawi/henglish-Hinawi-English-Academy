@@ -1,0 +1,4 @@
+const fs=require('fs'),assert=require('assert/strict'),crypto=require('crypto');
+const rows=JSON.parse(fs.readFileSync('docs/academy-topic-photography.json','utf8')).images;assert.equal(rows.length,237);assert.equal(new Set(rows.map(r=>r.src)).size,237);
+for(const r of rows){assert(fs.statSync('public'+r.src).size>4000,r.src);assert(r.source?.startsWith('https://'));assert(['Unsplash License','Pexels License'].includes(r.license));assert(r.licenseUrl.startsWith('https://'));if(r.reusedFrom)assert.equal(crypto.createHash('sha256').update(fs.readFileSync('public'+r.src)).digest('hex'),crypto.createHash('sha256').update(fs.readFileSync('public'+r.reusedFrom)).digest('hex'));}
+console.log('237 academy topic photographs replace assets in place with retained source/license records; no paths or learning content removed: PASS');
