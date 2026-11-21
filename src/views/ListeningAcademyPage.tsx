@@ -1,3 +1,4 @@
+import { listeningGapActivity } from '../services/listeningActivities';
 import { loadListeningProgress as load, saveListeningProgress, mergeListeningProgress, solvedListeningTasks, type ListeningSaved as Saved } from '../services/listeningProgress';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import type { PageRoute } from '../types';
@@ -8,14 +9,6 @@ import { getVoiceSettings, speakEnglish, stopSpeech, subscribeSpeechState, type 
 import { ArrowRight, Check, CheckCircle2, Headphones, Play, Search, Square, Volume2, X } from 'lucide-react';
 
 const KEY = 'henglish-listening-studio-v1';
-function gapFor(lesson: ListeningLesson) {
-  const words = lesson.dictationSentence.split(' ');
-  const index = words.map((w, i) => ({ w: normalizeListeningAnswer(w), i })).filter(x => x.w.length > 3).slice(-1)[0]?.i ?? words.length - 1;
-  const answer = normalizeListeningAnswer(words[index]);
-  const distractors = Array.from(new Set(ALL_LISTENING_LESSONS.flatMap(t => t.dictationSentence.split(' ')).map(normalizeListeningAnswer))).filter(w => w && w !== answer && w.length > 3).slice(0, 3);
-  const options = [...distractors]; options.splice(lesson.id.length % 4, 0, answer);
-  return { sentence: words.map((w, i) => i === index ? '______' : w).join(' '), answer, options };
-}
 function taskIds(lesson: ListeningLesson) { return [...lesson.comprehensionQuiz.map(q => q.id), 'gap', 'dictation', 'order']; }
 
 interface Props { onNavigate: (route: PageRoute) => void; onCompleteActivity?: (id: string, score: number, total: number) => void; learnerId?: string; }
@@ -54,7 +47,7 @@ const LearnerListeningAcademy: React.FC<Omit<Props, 'learnerId'> & { storageKey:
   const completed = ALL_LISTENING_LESSONS.filter(t => solvedListeningTasks(saved, t.id, taskIds(t)).length === taskIds(t).length).length;
   const totalActivities = ALL_LISTENING_LESSONS.reduce((n, t) => n + taskIds(t).length, 0);
   const solved = selected ? solvedListeningTasks(saved, selected.id, taskIds(selected)) : [];
-  const gap = selected ? gapFor(selected) : null;
+  const gap = useMemo(() => selected ? listeningGapActivity(selected, ALL_LISTENING_LESSONS) : null, [selected]);
   const tokens = selected?.dictationSentence.split(' ') || [];
   const shuffled = useMemo(() => tokens.map((word, index) => ({ word, index })).reverse(), [selected?.id]);
   function persist(next: Saved): boolean {
