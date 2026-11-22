@@ -3085,5 +3085,11 @@
   "rle.review.turn": "Schritt {number}",
   "rle.review.prompt": "Die Frage",
   "rle.review.chosen": "Deine gewählte Antwort",
-  "rle.review.model": "Eine passendere Option vergleichen"
+  "rle.review.model": "Eine passendere Option vergleichen",
+  "tpr.revise.title": "Eine zweite Fassung schreiben",
+  "tpr.revise.note": "Vergleiche deinen ersten Entwurf mit den Beispielen und verbessere ein Detail. Der erste Entwurf und seine Checkliste bleiben unverändert. Die zweite Fassung wird nicht automatisch bewertet.",
+  "tpr.revise.open": "Überarbeitung öffnen",
+  "tpr.revise.close": "Überarbeitung ausblenden",
+  "tpr.revise.label": "Meine überarbeitete Übersetzung",
+  "tpr.revise.privacy": "Beide Fassungen bleiben nur in dieser geöffneten Übung. Aufgaben- und Filterwechsel behalten den Text; Verlassen löscht ihn. Nichts wird gesendet oder bewertet."
 }
