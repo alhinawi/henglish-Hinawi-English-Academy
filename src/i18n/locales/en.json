@@ -3074,5 +3074,10 @@
   "sp.transfer.task.B1.0": "Choose a different goal for this situation. Explain what you want, give a reason and ask the other person a question.",
   "sp.transfer.task.B1.1": "Imagine the other person disagrees. Acknowledge their point and suggest a practical compromise.",
   "sp.transfer.task.B2.0": "Change an important assumption in this situation. Compare two responses and explain which you would choose and why.",
-  "sp.transfer.task.B2.1": "Continue with a respectful counterargument, a supporting example and a question that invites the other person to respond."
+  "sp.transfer.task.B2.1": "Continue with a respectful counterargument, a supporting example and a question that invites the other person to respond.",
+  "pa.navigator.choose": "Choose a word contrast",
+  "pa.navigator.position": "Contrast {current} of {total}",
+  "pa.navigator.previous": "Previous contrast",
+  "pa.navigator.next": "Next contrast",
+  "pa.navigator.note": "Preview the words and IPA before choosing. Changing contrast stops audio and resets the quiz and local rehearsal."
 }
