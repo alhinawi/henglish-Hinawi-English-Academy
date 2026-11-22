@@ -3049,5 +3049,11 @@
   "tpr.photo.travel": "Eine Hand hält einen Reisepass über einer Karte.",
   "tpr.photo.work": "Menschen machen Notizen an einem gemeinsamen Tisch.",
   "tpr.photo.discussion": "Kollegen sehen sich eine Präsentation im Büro an.",
-  "tpr.photo.note": "Illustratives Stockfoto zum Übungsthema, nicht das genaue Ereignis im Satz und keine Henglish-Mitarbeiter oder Lernenden."
+  "tpr.photo.note": "Illustratives Stockfoto zum Übungsthema, nicht das genaue Ereignis im Satz und keine Henglish-Mitarbeiter oder Lernenden.",
+  "at.photo.task": "Wie möchtest du üben?",
+  "at.photo.task.guided": "Mit der ursprünglichen Idee beginnen",
+  "at.photo.task.try": "Zuerst selbst antworten, dann ein Muster",
+  "at.photo.task.challenge": "Eine Anschlussaufgabe ausprobieren",
+  "at.photo.request.try": "Gib mir eine kurze Aufgabe zu diesem Thema und warte auf meine Antwort, bevor du ein Muster zeigst. Erkläre danach eine hilfreiche Verbesserung. Leite aus einer Antwort kein allgemeines Sprachniveau ab.",
+  "at.photo.request.challenge": "Gib mir eine neue Situation zu diesem Thema mit einem wichtigen geänderten Detail. Bitte zuerst um meine Antwort und gib danach konkretes Feedback zu meiner Formulierung. Vergib keine allgemeine Sprach- oder Aussprachebewertung."
 }
