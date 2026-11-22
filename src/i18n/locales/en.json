@@ -3079,5 +3079,11 @@
   "pa.navigator.position": "Contrast {current} of {total}",
   "pa.navigator.previous": "Previous contrast",
   "pa.navigator.next": "Next contrast",
-  "pa.navigator.note": "Preview the words and IPA before choosing. Changing contrast stops audio and resets the quiz and local rehearsal."
+  "pa.navigator.note": "Preview the words and IPA before choosing. Changing contrast stops audio and resets the quiz and local rehearsal.",
+  "rle.review.title": "Review your conversation",
+  "rle.review.note": "Open each turn to revisit your selected reply and its feedback. When useful, compare it with a stronger option. This review uses only your choices in this attempt, not a recording or automatic language grade. Replay or exit clears it.",
+  "rle.review.turn": "Turn {number}",
+  "rle.review.prompt": "What they asked",
+  "rle.review.chosen": "Your selected reply",
+  "rle.review.model": "Compare a stronger option"
 }

@@ -1,3 +1,4 @@
+import { ScenarioConversationReview } from '../components/ScenarioConversationReview';
 import { ScenarioReplyPractice } from '../components/ScenarioReplyPractice';
 import { ScenarioVocabulary } from '../components/ScenarioVocabulary';
 import { LessonSpeechButton } from '../components/LessonSpeechButton';
@@ -65,6 +66,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   const [currentTurnIdx, setCurrentTurnIdx] = useState(0);
   const [practiceAttempt, setPracticeAttempt] = useState(0);
   const [selectedOption, setSelectedOption] = useState<DialogueOption | null>(null);
+  const [attemptChoices,setAttemptChoices]=useState<Record<string,DialogueOption>>({});
   const [totalScore, setTotalScore] = useState(0);
   const [scenarioCompleted, setScenarioCompleted] = useState(false);
 
@@ -82,6 +84,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
     setCurrentTurnIdx(0);
     setSelectedOption(null);
     setTotalScore(0);
+    setAttemptChoices({});
     setScenarioCompleted(false);
   };
 
@@ -110,6 +113,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
     if (selectedOption) return;
     playSound(opt.isOptimal ? 'correct' : 'wrong');
     setSelectedOption(opt);
+    if (scenario) setAttemptChoices(value=>({...value,[scenario.turns[currentTurnIdx].id]:opt}));
     setTotalScore(prev => prev + opt.score);
   };
 
@@ -463,6 +467,8 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
         </section>
       )}
+
+      {scenarioCompleted&&<ScenarioConversationReview key={`${scenario.id}:${practiceAttempt}`} scenario={scenario} choices={attemptChoices} meaning={text=>txText(appText,text)}/>}
 
       {/* SURVIVAL VOCABULARY: belongs to the open conversation only */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
