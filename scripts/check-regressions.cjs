@@ -5,6 +5,7 @@ const checks = [
   'check-speaking-role-rehearsal.cjs',
   'check-translation-draft.cjs',
   'check-tutor-photo-starters.cjs',
+  'check-movie-catalog-recovery.cjs',
   'check-movie-cue-speaking.cjs',
   'check-real-life-photo-library.cjs',
   'check-vowel-workshop.cjs',

@@ -98,6 +98,9 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
   // Dynamic Catalog State
   const [searchQuery, setSearchQuery] = useState('');
+  const catalogSearchRef = useRef<HTMLInputElement>(null);
+  const clearCatalogSearch = () => { setSearchQuery(''); catalogSearchRef.current?.focus(); };
+  const resetCatalogFilters = () => { setSearchQuery(''); setSelectedCategory('all'); setSelectedCefr('all'); setSelectedAccent('all'); setCatalogPage(1); catalogSearchRef.current?.focus(); };
   const [selectedCategory, setSelectedCategory] = useState<VideoCategoryType | 'all'>('all');
   const [selectedCefr, setSelectedCefr] = useState<CEFRLevel | 'all'>('all');
   const [selectedAccent, setSelectedAccent] = useState<'all' | 'American' | 'British' | 'International'>('all');
@@ -463,7 +466,9 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                   <input
                     type="text"
                     dir="auto"
+                    ref={catalogSearchRef}
                     value={searchQuery}
+                    onKeyDown={event => { if (event.key === 'Escape') { event.preventDefault(); clearCatalogSearch(); } }}
                     aria-label={t('ms.searchPlaceholder')}
                     onChange={e => handlePerformSearch(e.target.value)}
                     placeholder={t('ms.searchPlaceholder')}
@@ -471,7 +476,9 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                   />
                   {searchQuery && (
                     <button
-                      onClick={() => handlePerformSearch('')}
+                      type="button"
+                      aria-label={t('ms.clearSearch')}
+                      onClick={clearCatalogSearch}
                       className="absolute left-4 top-1/2 -translate-y-1/2 p-1.5 rounded-lg bg-white/10 text-white/70 hover:text-white"
                     >
                       <X className="w-4 h-4" />
@@ -544,12 +551,13 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
               {/* Videos Grid */}
               {catalogResults.videos.length === 0 ? (
-                <div className="glass-panel p-16 rounded-3xl border border-white/10 text-center space-y-4">
+                <div role="status" className="glass-panel p-6 sm:p-16 rounded-3xl border border-white/10 text-center space-y-4">
                   <Film className="w-12 h-12 text-white/30 mx-auto" />
                   <h4 className="text-xl font-black text-white">{t('ms.noResults')}</h4>
                   <p className="text-xs text-white/60 max-w-md mx-auto">
                     {t('ms.noResultsHint')}
                   </p>
+                  <div className="flex flex-wrap justify-center gap-3">{searchQuery && <button type="button" onClick={clearCatalogSearch} className="min-h-11 rounded-xl border border-white/20 px-4 text-sm font-bold text-white">{t('ms.clearSearch')}</button>}<button type="button" onClick={resetCatalogFilters} className="min-h-11 rounded-xl bg-red-600 px-4 text-sm font-bold text-white">{t('ms.resetFilters')}</button></div>
                 </div>
               ) : (
                 <div className="space-y-8">
