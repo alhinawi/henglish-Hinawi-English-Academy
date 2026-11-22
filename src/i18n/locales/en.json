@@ -3007,5 +3007,10 @@
   "rle.recall.end": "Show all meanings",
   "rle.recall.reveal": "Reveal meaning",
   "rle.recall.hide": "Hide meaning",
-  "rle.recall.note": "Say or think of the meaning before revealing each answer. Optional self-study, no score or XP. Leaving the scenario resets this view."
+  "rle.recall.note": "Say or think of the meaning before revealing each answer. Optional self-study, no score or XP. Leaving the scenario resets this view.",
+  "tpr.filter.level": "Practice level",
+  "tpr.filter.direction": "Translation direction",
+  "tpr.filter.all": "All",
+  "tpr.filter.position": "Challenge {current} of {total}.",
+  "tpr.filter.note": "Levels are practice estimates, not a test result. Drafts stay separate when you change filters."
 }
