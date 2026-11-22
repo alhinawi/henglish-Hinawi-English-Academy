@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy, Volume2 } from 'lucide-react';
+import { ArrowLeft, BookOpen, Check, ChevronLeft, Clock, PenLine, Search, Trophy, Volume2, X } from 'lucide-react';
 import { LITERACY_LEVELS, LITERACY_READING, LITERACY_WRITING, type LiteracyReading, type LiteracyWriting } from '../data/literacyAcademyData';
 import { txText, useAppTextMap } from '../services/contentI18nService';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -25,6 +25,8 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
   const [level, setLevel] = useState('A1');
   const appText = useAppTextMap('literacyAcademyData');
   const [query, setQuery] = useState('');
+  const searchInput = useRef<HTMLInputElement>(null);
+  const clearSearch = () => { setQuery(''); searchInput.current?.focus(); };
   const [active, setActive] = useState<string | null>(null);
   // Stop both active playback and pending synthesis when leaving a lesson.
   useEffect(() => () => stopSpeech(), [active, kind]);
@@ -84,11 +86,11 @@ function LearnerLiteracyAcademy({ kind, onCompleteActivity, storageKey }: Props 
       <button className={`${button} w-full`} onClick={() => { const next = lessons[(lessons.indexOf(current) + 1) % lessons.length]; setLevel(next.level); setActive(next.id); window.scrollTo({ top: 0, behavior: 'instant' }); }}>{t('lit.next')} <ChevronLeft size={15} className={`inline ${dir === 'ltr' ? 'rotate-180' : ''}`} aria-hidden="true" /></button>
     </> : <>
       <nav aria-label={t('lit.learningLevel')} className="grid grid-cols-6 gap-1.5" dir="ltr">{LITERACY_LEVELS.map(l => <button key={l} onClick={() => { setLevel(l); setQuery(''); }} aria-pressed={level === l} className={`rounded-xl py-3 text-sm font-bold ${level === l ? 'bg-cyan-200 text-slate-950' : 'border border-white/10 bg-white/5 text-slate-300'}`}>{l}</button>)}</nav>
-      <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-xl font-black text-white">{level} · {reading ? t('lit.readingLibrary') : t('lit.writingLibrary')}</h2><p className="text-xs text-slate-400 mt-1">{t('lit.choose')}</p></div><label className="flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-2"><Search size={16} className="text-slate-400" /><input aria-label={t('lit.search')} placeholder={t('lit.searchPlaceholder')} value={query} onChange={e => setQuery(e.target.value)} className="w-40 bg-transparent text-sm text-white outline-none" /></label></div>
+      <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-xl font-black text-white">{level} · {reading ? t('lit.readingLibrary') : t('lit.writingLibrary')}</h2><p className="text-xs text-slate-400 mt-1">{t('lit.choose')}</p></div><div className="flex w-full min-w-0 items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-3 py-1 sm:w-auto"><Search size={16} className="shrink-0 text-slate-400" aria-hidden="true" /><input ref={searchInput} aria-label={t('lit.search')} placeholder={t('lit.searchPlaceholder')} value={query} onChange={e => setQuery(e.target.value)} onKeyDown={e => { if (e.key === 'Escape' && query) { e.preventDefault(); clearSearch(); } }} className="min-h-11 min-w-0 grow bg-transparent text-sm text-white outline-none sm:w-40" />{query && <button type="button" aria-label={t('se.clear')} onClick={clearSearch} className="grid min-h-11 min-w-11 shrink-0 place-items-center rounded-lg text-cyan-200 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-cyan-300"><X size={18} aria-hidden="true" /></button>}</div></div>
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{visible.map((l, i) => <button key={l.id} onClick={() => { setActive(l.id); window.scrollTo({ top: 0, behavior: 'instant' }); }} className="group overflow-hidden rounded-3xl border border-white/10 bg-[#121629] text-start hover:border-cyan-300/50 focus-visible:outline-2 focus-visible:outline-cyan-300">
         <div className="relative"><img loading="lazy" src={l.image} alt={t('lit.cardImage').replace('{title}', lang === 'en' ? l.title : txText(appText, l.titleAr))} className="h-40 w-full object-cover" /><span className="absolute left-3 top-3 rounded-lg bg-slate-950/85 px-2 py-1 text-xs text-white">{l.level} · {String(i + 1).padStart(2, '0')}</span>{saved.done.includes(l.id) && <span className="absolute right-3 top-3 rounded-full bg-emerald-300 p-1 text-slate-950"><Check size={16} /></span>}</div>
         <div className="p-5 space-y-2"><h3 className="text-lg font-bold text-white">{lang === 'en' ? l.title : txText(appText, l.titleAr)}</h3><p className="text-xs text-slate-400" dir="ltr" lang="en">{l.title}</p><div className="flex justify-between pt-3 text-xs text-cyan-200"><span>{t('lit.activities')}</span><span>{saved.done.includes(l.id) ? t('lit.review') : t('lit.start')} <ArrowLeft size={14} className={`inline ${dir === 'ltr' ? 'rotate-180' : ''}`} aria-hidden="true" /></span></div></div>
-      </button>)}</div>{!visible.length && <p className={panel}>{t('lit.noResults')}</p>}
+      </button>)}</div>{!visible.length && <div role="status" className={`${panel} space-y-4`}><p>{t('lit.noResults')}</p>{query && <button type="button" className={button} onClick={clearSearch}>{t('se.clear')}</button>}</div>}
     </>}
     <details className="rounded-2xl border border-white/10 p-4 text-xs leading-6 text-slate-400"><summary className="cursor-pointer text-slate-200">{t('lit.about')}</summary><p>{t('lit.contentNote')}</p></details>
   </div>;
