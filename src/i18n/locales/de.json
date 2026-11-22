@@ -2969,5 +2969,12 @@
   "sp.roleplay.note": "Freiwillige Selbstübung ohne Bewertung oder XP. Die lokale Aufnahme wird beim Wechsel von Zug, Rolle oder Lektion und beim Schließen verworfen. Andere passende Antworten können ebenfalls funktionieren.",
   "sp.roleplay.again": "Noch einmal üben",
   "sp.roleplay.next": "Nächster Zug",
-  "sp.roleplay.restart": "Rolle neu beginnen"
+  "sp.roleplay.restart": "Rolle neu beginnen",
+  "tpr.draft": "Deine Übersetzung",
+  "tpr.draftNote": "Entwürfe bleiben nur in diesem Übungstab. Sie werden nicht gesendet, bewertet oder beim Verlassen gespeichert. Bis zu 3.000 Zeichen.",
+  "tpr.checkTitle": "Vergleichen und überarbeiten",
+  "tpr.check.meaning": "Ich habe die ursprüngliche Bedeutung beibehalten.",
+  "tpr.check.tense": "Ich habe Zeitform, Personen und wichtige Details geprüft.",
+  "tpr.check.natural": "Meine Übersetzung klingt in der Zielsprache natürlich.",
+  "tpr.checkNote": "Das sind deine eigenen Prüfnotizen, keine Bewertung. Verschiedene Übersetzungen können richtig sein. Überarbeite deinen Entwurf und vergleiche erneut."
 }
