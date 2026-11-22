@@ -3091,5 +3091,13 @@
   "tpr.revise.open": "Überarbeitung öffnen",
   "tpr.revise.close": "Überarbeitung ausblenden",
   "tpr.revise.label": "Meine überarbeitete Übersetzung",
-  "tpr.revise.privacy": "Beide Fassungen bleiben nur in dieser geöffneten Übung. Aufgaben- und Filterwechsel behalten den Text; Verlassen löscht ihn. Nichts wird gesendet oder bewertet."
+  "tpr.revise.privacy": "Beide Fassungen bleiben nur in dieser geöffneten Übung. Aufgaben- und Filterwechsel behalten den Text; Verlassen löscht ihn. Nichts wird gesendet oder bewertet.",
+  "ms.own.choose": "Eine Sprechaufgabe wählen",
+  "ms.own.echo": "Quelle nachsprechen",
+  "ms.own.own": "Eigene Worte nutzen",
+  "ms.own.title": "Gleiche Bedeutung, andere Worte",
+  "ms.own.task": "Formuliere die Quellzeile anders. Behalte Bedeutung und Absicht der sprechenden Person bei und nutze vertrautes Englisch. Die Quelle bleibt sichtbar, aber es gibt keine Musterparaphrase oder automatische Note.",
+  "ms.own.plan": "Private Planungsnotizen",
+  "ms.own.note": "Notizen bleiben nur in dieser geöffneten Übung. Aufgaben- oder Zeilenwechsel, Schließen oder Verlassen löscht Notizen und Aufnahmen. Nichts wird gesendet oder bewertet.",
+  "ms.own.record": "Gib die Quellzeile mit deinen eigenen englischen Worten wieder. Behalte Bedeutung und Absicht bei."
 }
