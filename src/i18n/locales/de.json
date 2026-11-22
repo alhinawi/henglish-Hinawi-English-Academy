@@ -3023,5 +3023,14 @@
   "pa.context.sentences": "Beide ganzen Sätze aufnehmen",
   "pa.context.words": "Den Wortkontrast aufnehmen",
   "pa.context.sentenceNote": "Satzmodus: Der Rekorder unten nutzt beide ganzen Sätze. Ein Moduswechsel verwirft die vorherige Aufnahme.",
-  "pa.context.wordNote": "Wortmodus: Der Rekorder unten nutzt den wiederholten Wortkontrast."
+  "pa.context.wordNote": "Wortmodus: Der Rekorder unten nutzt den wiederholten Wortkontrast.",
+  "rle.draft.title": "Zuerst eine eigene Antwort versuchen",
+  "rle.draft.intro": "Optional: Schreibe eine Antwort, bevor du die Auswahl ansiehst. Dein Entwurf ist nur zum Üben, wählt keine Antwort und bringt keine Punkte.",
+  "rle.draft.open": "Vor der Auswahl schreiben",
+  "rle.draft.close": "Entwurf schließen und Auswahl zeigen",
+  "rle.draft.label": "Deine englische Antwort",
+  "rle.draft.privacy": "Der Entwurf bleibt nur in dieser Szene. Er wird nicht gesendet, gespeichert oder bewertet. Verlassen, Neustarten oder die nächste Szene verwirft ihn.",
+  "rle.draft.compare": "Mit der Auswahl vergleichen",
+  "rle.draft.hide": "Auswahl ausblenden",
+  "rle.draft.review": "Ich habe geprüft, ob meine Antwort höflich und klar auf die Person eingeht."
 }

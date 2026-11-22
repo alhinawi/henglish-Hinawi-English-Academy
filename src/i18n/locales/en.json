@@ -3023,5 +3023,14 @@
   "pa.context.sentences": "Record both full sentences",
   "pa.context.words": "Record the word contrast",
   "pa.context.sentenceNote": "Sentence mode: the recorder below uses both full sentences. Switching modes discards the previous recording.",
-  "pa.context.wordNote": "Word mode: the recorder below uses the repeated word contrast."
+  "pa.context.wordNote": "Word mode: the recorder below uses the repeated word contrast.",
+  "rle.draft.title": "Try your own reply first",
+  "rle.draft.intro": "Optional: write a reply before viewing the choices. Your draft is self-study only; it does not select an answer or earn points.",
+  "rle.draft.open": "Write before choosing",
+  "rle.draft.close": "Close draft and show choices",
+  "rle.draft.label": "Your English reply",
+  "rle.draft.privacy": "This draft stays only in this scene. It is not sent, saved or graded. Leaving, restarting or moving to the next scene discards it.",
+  "rle.draft.compare": "Compare with the choices",
+  "rle.draft.hide": "Hide the choices",
+  "rle.draft.review": "I checked whether my reply answers the speaker politely and clearly."
 }

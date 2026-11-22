@@ -1,0 +1,6 @@
+const fs=require('fs'),assert=require('assert/strict');const s=fs.readFileSync('src/components/ScenarioReplyPractice.tsx','utf8'),page=fs.readFileSync('src/views/RealLifeEnglishPage.tsx','utf8');
+for(const p of ["setDraft(''); setRevealed(false); setReviewed(false)",'setDraft(event.target.value); setReviewed(false)','(!open || revealed) && children','aria-expanded={revealed}','maxLength={2000}','aria-describedby="scenario-reply-privacy"','dir="ltr" lang="en"'])assert(s.includes(p),p);
+for(const p of ['fetch(','localStorage','sessionStorage','onComplete','setScore(','awardXp'])assert(!s.includes(p),p);
+assert(page.includes('key={`${scenario.id}:${currentTurn.id}:${practiceAttempt}`}'));assert(page.includes('setPracticeAttempt(value => value + 1)'));assert(page.includes('if (selectedOption) return;'));assert(page.includes('setTotalScore(prev => prev + opt.score)'));
+for(const lang of ['en','ar','de']){const t=JSON.parse(fs.readFileSync('src/i18n/locales/'+lang+'.json'));for(const key of ['title','intro','open','close','label','privacy','compare','hide','review'])assert(t['rle.draft.'+key]);}
+console.log('Optional scene-keyed private draft hides/reveals unchanged choices,self-review edit reset,close/restart/turn reset,no storage/network/score effects: PASS');
