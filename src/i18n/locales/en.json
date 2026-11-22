@@ -3032,5 +3032,17 @@
   "rle.draft.privacy": "This draft stays only in this scene. It is not sent, saved or graded. Leaving, restarting or moving to the next scene discards it.",
   "rle.draft.compare": "Compare with the choices",
   "rle.draft.hide": "Hide the choices",
-  "rle.draft.review": "I checked whether my reply answers the speaker politely and clearly."
+  "rle.draft.review": "I checked whether my reply answers the speaker politely and clearly.",
+  "ms.recall.title": "Recall a reviewed caption",
+  "ms.recall.intro": "After watching, write what you remember from one caption, then compare. The original transcript above stays available. This is self-study, not a listening or spelling score.",
+  "ms.recall.open": "Try caption recall",
+  "ms.recall.close": "Close and discard recall drafts",
+  "ms.recall.cue": "Caption to recall",
+  "ms.recall.position": "Caption {current} of {total}",
+  "ms.recall.draft": "What do you remember hearing?",
+  "ms.recall.privacy": "Drafts stay separate for each caption in this open practice only. They are not sent, saved or graded. Closing or changing the clip discards them.",
+  "ms.recall.reveal": "Reveal the reviewed caption",
+  "ms.recall.hide": "Hide the reviewed caption",
+  "ms.recall.answer": "Reviewed source caption",
+  "ms.recall.check": "Compare the words, contractions and punctuation yourself. Different wording is not automatically wrong."
 }

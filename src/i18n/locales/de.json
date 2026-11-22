@@ -3032,5 +3032,17 @@
   "rle.draft.privacy": "Der Entwurf bleibt nur in dieser Szene. Er wird nicht gesendet, gespeichert oder bewertet. Verlassen, Neustarten oder die nächste Szene verwirft ihn.",
   "rle.draft.compare": "Mit der Auswahl vergleichen",
   "rle.draft.hide": "Auswahl ausblenden",
-  "rle.draft.review": "Ich habe geprüft, ob meine Antwort höflich und klar auf die Person eingeht."
+  "rle.draft.review": "Ich habe geprüft, ob meine Antwort höflich und klar auf die Person eingeht.",
+  "ms.recall.title": "Eine geprüfte Untertitelzeile erinnern",
+  "ms.recall.intro": "Schreibe nach dem Ansehen auf, was du von einer Zeile erinnerst, und vergleiche. Das Originaltranskript oben bleibt verfügbar. Das ist Selbststudium, keine Hör- oder Rechtschreibnote.",
+  "ms.recall.open": "Untertitel aus dem Gedächtnis üben",
+  "ms.recall.close": "Schließen und Entwürfe verwerfen",
+  "ms.recall.cue": "Untertitelzeile zum Erinnern",
+  "ms.recall.position": "Zeile {current} von {total}",
+  "ms.recall.draft": "Was hast du gehört?",
+  "ms.recall.privacy": "Jede Zeile hat nur in dieser geöffneten Übung einen eigenen Entwurf. Nichts wird gesendet, gespeichert oder bewertet. Schließen oder Clipwechsel verwirft alle Entwürfe.",
+  "ms.recall.reveal": "Geprüfte Zeile zeigen",
+  "ms.recall.hide": "Geprüfte Zeile ausblenden",
+  "ms.recall.answer": "Geprüfte Quellzeile",
+  "ms.recall.check": "Vergleiche Wörter, Kurzformen und Zeichensetzung selbst. Eine andere Formulierung ist nicht automatisch falsch."
 }
