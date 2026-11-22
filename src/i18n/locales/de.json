@@ -2995,5 +2995,12 @@
   "at.starter.exam-trainer": "Gib mir eine kurze englische Leseaufgabe im Prüfungsstil. Warte auf meine Antwort, bevor du sie erklärst.",
   "at.starter.interview-coach": "Übe mit mir ein Vorstellungsgespräch auf Englisch. Frage mich nach einer meiner Fähigkeiten und warte dann auf meine Antwort.",
   "ms.clearSearch": "Suche löschen",
-  "ms.resetFilters": "Alle Katalogfilter zurücksetzen"
+  "ms.resetFilters": "Alle Katalogfilter zurücksetzen",
+  "pa.pairRecord.title": "Beide Wörter sprechen und anhören",
+  "pa.pairRecord.intro": "Höre zuerst die A/B-Referenzwörter oben. Sprich dann A, B, A, B und höre deine Aufnahme an. Achte auf den Lautunterschied, nicht auf deinen Akzent.",
+  "pa.pairRecord.open": "Lokale Aufnahme öffnen",
+  "pa.pairRecord.close": "Lokale Aufnahme schließen",
+  "pa.pairRecord.compare": "Vergleiche deine Aufnahme mit den beiden Referenzwörtern oben. Hörst du einen Unterschied zwischen deinem A und B?",
+  "pa.pairRecord.repeat": "Versuche es langsam und dann in einem angenehmen Tempo. Die Sprachausgabe kann je nach Stimme und Akzent variieren.",
+  "pa.pairRecord.note": "Optionale Selbstkontrolle ohne automatische Aussprachebewertung oder XP. Deine Aufnahme bleibt lokal und wird beim Schließen, Paarwechsel oder Verlassen der Seite verworfen."
 }
