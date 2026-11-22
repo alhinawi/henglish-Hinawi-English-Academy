@@ -7,6 +7,7 @@ const checks = [
   'check-tutor-photo-starters.cjs',
   'check-movie-catalog-recovery.cjs',
   'check-minimal-pair-rehearsal.cjs',
+  'check-scenario-vocabulary-recall.cjs',
   'check-movie-cue-speaking.cjs',
   'check-real-life-photo-library.cjs',
   'check-vowel-workshop.cjs',

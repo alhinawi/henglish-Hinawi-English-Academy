@@ -1,5 +1,6 @@
 const fs=require('fs'),assert=require('assert/strict');
-const real=fs.readFileSync('src/views/RealLifeEnglishPage.tsx','utf8');for(const field of ['currentTurn.textAr','currentTurn.grammarTipAr','opt.textAr','opt.feedbackAr','vocab.ar'])assert(real.includes('txText(appText, '+field+')'),field);
+const real=fs.readFileSync('src/views/RealLifeEnglishPage.tsx','utf8');for(const field of ['currentTurn.textAr','currentTurn.grammarTipAr','opt.textAr','opt.feedbackAr'])assert(real.includes('txText(appText, '+field+')'),field);
+assert(real.includes('meaning={text => txText(appText, text)}'));assert(fs.readFileSync('src/components/ScenarioVocabulary.tsx','utf8').includes('meaning(vocab.ar)'));
 const speaking=fs.readFileSync('src/components/SpeakingPracticeStudio.tsx','utf8');assert(speaking.includes("useAppTextMap('speakingAcademyData')"));for(const field of ['line.ar','lesson.dialogue[1].ar','lesson.tip'])assert(speaking.includes('txText(appText, '+field+')'),field);assert(fs.readFileSync('src/components/SpeakingLegacyPractice.tsx','utf8').includes('txText(appText, line.ar)'));
 const english=JSON.parse(fs.readFileSync('src/i18n/locales/en.json'));for(const [key,value]of Object.entries(english))assert(!/[\u0600-\u06ff]/.test(value),'Arabic in English UI message '+key);
 console.log('Real-life turns/options/tips/feedback/glossary and speaking dialogue/answer/legacy lines use the existing locale maps; English UI has no embedded Arabic examples: PASS');

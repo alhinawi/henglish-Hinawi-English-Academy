@@ -3002,5 +3002,10 @@
   "pa.pairRecord.close": "Lokale Aufnahme schließen",
   "pa.pairRecord.compare": "Vergleiche deine Aufnahme mit den beiden Referenzwörtern oben. Hörst du einen Unterschied zwischen deinem A und B?",
   "pa.pairRecord.repeat": "Versuche es langsam und dann in einem angenehmen Tempo. Die Sprachausgabe kann je nach Stimme und Akzent variieren.",
-  "pa.pairRecord.note": "Optionale Selbstkontrolle ohne automatische Aussprachebewertung oder XP. Deine Aufnahme bleibt lokal und wird beim Schließen, Paarwechsel oder Verlassen der Seite verworfen."
+  "pa.pairRecord.note": "Optionale Selbstkontrolle ohne automatische Aussprachebewertung oder XP. Deine Aufnahme bleibt lokal und wird beim Schließen, Paarwechsel oder Verlassen der Seite verworfen.",
+  "rle.recall.start": "Bedeutungen selbst erinnern",
+  "rle.recall.end": "Alle Bedeutungen zeigen",
+  "rle.recall.reveal": "Bedeutung aufdecken",
+  "rle.recall.hide": "Bedeutung ausblenden",
+  "rle.recall.note": "Sage oder denke die Bedeutung, bevor du jede Antwort aufdeckst. Optionale Selbstübung ohne Bewertung oder XP. Beim Verlassen der Szene wird diese Ansicht zurückgesetzt."
 }
