@@ -1,3 +1,4 @@
+import { SpeakingRoleRehearsal } from '../components/SpeakingRoleRehearsal';
 import React, { useState } from 'react';
 import { ArrowRight, CheckCircle2, Mic, Search, BookOpen, ArrowUpLeft } from 'lucide-react';
 import { PageRoute } from '../types';
@@ -62,6 +63,7 @@ const LearnerSpeakingAcademy: React.FC<SpeakingAcademyPageProps & { storageKey: 
         <img src={active.image} alt={active.imageAlt} className="w-full h-48 sm:h-72 object-cover"/>
         <div className="p-5 sm:p-8 space-y-3"><span className="text-xs font-bold text-pink-200">{active.level} · {txText(appText, active.unit)}</span><h1 className="text-3xl font-black leading-snug">{txText(appText, active.title)}</h1><p dir="ltr" className="text-start text-slate-300">{active.titleEn}</p><p className="text-sm text-slate-400 leading-7">{t('sa.stages')}</p></div>
       </section>
+      <SpeakingRoleRehearsal key={`roleplay:${active.id}`} lesson={active}/>
       <SpeakingPracticeStudio key={active.id} lesson={active} completed={done.includes(active.id)} onComplete={finish}/>
       {saveError && <p role="alert" className="text-amber-200">{saveError}</p>}
       <details className="rounded-2xl border border-white/10 p-5 text-sm text-slate-300 leading-8"><summary className="cursor-pointer font-bold text-white">{t('sa.about')}</summary><p>{t('sa.aboutP1')}</p><p>{t('sa.aboutP2')}</p><p>{t('sa.refs')}</p><a className="block underline text-cyan-200" href="https://learnenglish.britishcouncil.org/free-resources/speaking/a1/checking-understanding" target="_blank" rel="noreferrer">British Council: Checking understanding</a><a className="block underline text-cyan-200" href="https://learnenglish.britishcouncil.org/free-resources/speaking/b1/keeping-conversation-going" target="_blank" rel="noreferrer">British Council: Keeping a conversation going</a><a className="block underline text-cyan-200" href="https://learnenglish.britishcouncil.org/free-resources/speaking/b2/challenging-someones-ideas" target="_blank" rel="noreferrer">British Council: Challenging ideas</a></details>
