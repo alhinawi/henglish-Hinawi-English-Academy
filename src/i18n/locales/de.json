@@ -3015,5 +3015,13 @@
   "tpr.filter.note": "Die Niveaus sind Übungseinschätzungen, kein Testergebnis. Entwürfe bleiben beim Filterwechsel getrennt.",
   "sa.clearSearch": "Suche löschen",
   "sa.resetFilters": "Alle Lektionen anzeigen",
-  "sa.results": "{count} von {total} Lektionen"
+  "sa.results": "{count} von {total} Lektionen",
+  "pa.context.title": "Den Lautkontrast im Satz anwenden",
+  "pa.context.note": "Lies den Sinn und wähle das passende Wort. Das prüft die Wortwahl, nicht deine Aussprache.",
+  "pa.context.correct": "Das Wort passt zum Kontext. Sprich jetzt den ganzen Satz.",
+  "pa.context.retry": "Probiere das andere Wort und prüfe oben seine Bedeutung.",
+  "pa.context.sentences": "Beide ganzen Sätze aufnehmen",
+  "pa.context.words": "Den Wortkontrast aufnehmen",
+  "pa.context.sentenceNote": "Satzmodus: Der Rekorder unten nutzt beide ganzen Sätze. Ein Moduswechsel verwirft die vorherige Aufnahme.",
+  "pa.context.wordNote": "Wortmodus: Der Rekorder unten nutzt den wiederholten Wortkontrast."
 }
