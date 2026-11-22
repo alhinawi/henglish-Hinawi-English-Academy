@@ -3107,5 +3107,21 @@
   "at.goal.preview": "Exact message preview",
   "sp.roleMeaning.note": "Need a meaning clue? This optional hint shows the original Arabic meaning, not the English model. Try speaking before revealing the English.",
   "sp.roleMeaning.show": "Show a meaning hint",
-  "sp.roleMeaning.hide": "Hide the meaning hint"
+  "sp.roleMeaning.hide": "Hide the meaning hint",
+  "rle.transfer.title": "Try a changed situation",
+  "rle.transfer.intro": "You finished the dialogue. Now use its language in a different situation. Plan briefly and give your own spoken response. This optional practice has no model answer or automatic grade.",
+  "rle.transfer.open": "Try the follow-up situation",
+  "rle.transfer.close": "Close and discard this practice",
+  "rle.transfer.plan": "Private planning notes",
+  "rle.transfer.note": "Notes and recordings stay only in this open practice. Closing, replaying or leaving the scenario discards them. Nothing is sent, saved or graded.",
+  "rle.transfer.record": "Respond to the changed situation in your own English words.",
+  "rle.transfer.task.sim-airport-checkin": "You have two bags, but your booking includes one. Politely ask about your options and the total extra cost before agreeing to anything.",
+  "rle.transfer.task.sim-restaurant-ordering": "Your order arrives with a different side dish. Explain the mix-up politely, say what you ordered and ask what can be changed.",
+  "rle.transfer.task.sim-doctor-appointment": "At a follow-up appointment, your symptoms have changed. Describe what improved and what is still bothering you, then ask the doctor what to do next. This is language practice, not medical advice.",
+  "rle.transfer.task.sim-job-interview": "The interviewer asks about a time you handled a setback. Give a short example with the situation, your action and what you learned. You may use an imagined example for this practice.",
+  "rle.transfer.task.sim-coffee-shop": "You need to leave soon, but your drink is not ready. Ask politely about the wait, explain your time limit and ask what options are available.",
+  "rle.transfer.task.sim-hotel-checkin": "Your room is noisier than expected. Explain the problem politely and ask about a quieter room, including any price difference, before accepting a change.",
+  "rle.transfer.task.sim-pharmacy-visit": "You did not understand an instruction the pharmacist gave. Ask them to repeat it more slowly and explain the written label. Do not guess medicine instructions. This is language practice, not medical advice.",
+  "rle.transfer.task.sim-clothing-shopping": "The item fits, but you are unsure about the return policy. Ask how long you have to return it and what conditions apply before deciding to buy.",
+  "rle.transfer.task.sim-supermarket-shopping": "The shelf price and checkout price are different. Point out the difference politely, ask someone to check and ask for the confirmed price before paying."
 }
