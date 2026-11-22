@@ -2944,5 +2944,12 @@
   "rle.filterLabel": "Übungssituationen filtern",
   "rle.cat.daily": "Alltag und Einkaufen",
   "rle.photoNote": "Stockfotos veranschaulichen diese fiktiven Übungssituationen. Sie zeigen nicht den tatsächlichen Ort, Sprecher oder Lernende der Akademie.",
-  "rle.topicPhoto": "Beispielfoto für {title}"
+  "rle.topicPhoto": "Beispielfoto für {title}",
+  "ms.echoTitle": "Eine geprüfte Zeile sprechen",
+  "ms.echoIntro": "Übe mit einer Zeile aus dem geprüften Transkript. Es wird kein erfundener Dialog ergänzt.",
+  "ms.echoOpen": "Sprechübung öffnen",
+  "ms.echoClose": "Sprechübung schließen",
+  "ms.echoChoose": "Geprüfte Zeile wählen",
+  "ms.echoSteps": "Höre die Zeile über das Transkript oben an, pausiere und sprich sie mit deiner eigenen Stimme. Das Video pausiert, wenn du dieses Übungsfeld bedienst.",
+  "ms.echoNote": "Höre deine Aufnahme an und vergleiche Betonung, Rhythmus und deutliche Wörter. Dies ist eine lokale Selbstübung, keine automatische Bewertung. Beim Wechseln der Zeile oder Schließen wird die Aufnahme verworfen."
 }
