@@ -2969,5 +2969,12 @@
   "sp.roleplay.note": "Optional self-practice, no score or XP. Your recording stays local and is discarded when you change turn, role, lesson or close practice. A different suitable reply can also work.",
   "sp.roleplay.again": "Rehearse again",
   "sp.roleplay.next": "Next turn",
-  "sp.roleplay.restart": "Restart this role"
+  "sp.roleplay.restart": "Restart this role",
+  "tpr.draft": "Your translation",
+  "tpr.draftNote": "Drafts stay in this practice tab only. They are not sent, graded or saved when you leave the tab. Up to 3,000 characters.",
+  "tpr.checkTitle": "Compare and revise",
+  "tpr.check.meaning": "I kept the original meaning.",
+  "tpr.check.tense": "I checked the tense, people and key details.",
+  "tpr.check.natural": "My translation sounds natural in the target language.",
+  "tpr.checkNote": "These are your own review notes, not a score. Different translations can be valid. Edit your draft and compare again."
 }
