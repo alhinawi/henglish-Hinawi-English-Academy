@@ -1166,7 +1166,7 @@
   "sa.startFirst": "Starte dein erstes Gespräch",
   "sa.journey": "Deine Gesprächsreise",
   "sa.progressNote": "Der Fortschritt wird auf diesem Gerät für das aktuelle Konto gespeichert. Jede Lektion gibt eine einmalige Belohnung im aktuellen XP-System.",
-  "sa.searchPh": "Suche eine Situation: Arbeit, Reisen, Kennenlernen…",
+  "sa.searchPh": "Themen, Redewendungen oder Dialoge suchen…",
   "sa.searchAria": "Gesprächslektionen durchsuchen",
   "sa.noMatch": "Keine passende Lektion. Versuche ein anderes Wort oder wähle alle Niveaus.",
   "sa.cardMeta": "Dialog + 3 Aktivitäten + Sprechtraining",
@@ -3012,5 +3012,8 @@
   "tpr.filter.direction": "Übersetzungsrichtung",
   "tpr.filter.all": "Alle",
   "tpr.filter.position": "Aufgabe {current} von {total}.",
-  "tpr.filter.note": "Die Niveaus sind Übungseinschätzungen, kein Testergebnis. Entwürfe bleiben beim Filterwechsel getrennt."
+  "tpr.filter.note": "Die Niveaus sind Übungseinschätzungen, kein Testergebnis. Entwürfe bleiben beim Filterwechsel getrennt.",
+  "sa.clearSearch": "Suche löschen",
+  "sa.resetFilters": "Alle Lektionen anzeigen",
+  "sa.results": "{count} von {total} Lektionen"
 }
