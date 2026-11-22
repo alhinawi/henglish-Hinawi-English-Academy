@@ -3099,5 +3099,10 @@
   "ms.own.task": "Formuliere die Quellzeile anders. Behalte Bedeutung und Absicht der sprechenden Person bei und nutze vertrautes Englisch. Die Quelle bleibt sichtbar, aber es gibt keine Musterparaphrase oder automatische Note.",
   "ms.own.plan": "Private Planungsnotizen",
   "ms.own.note": "Notizen bleiben nur in dieser geöffneten Übung. Aufgaben- oder Zeilenwechsel, Schließen oder Verlassen löscht Notizen und Aufnahmen. Nichts wird gesendet oder bewertet.",
-  "ms.own.record": "Gib die Quellzeile mit deinen eigenen englischen Worten wieder. Behalte Bedeutung und Absicht bei."
+  "ms.own.record": "Gib die Quellzeile mit deinen eigenen englischen Worten wieder. Behalte Bedeutung und Absicht bei.",
+  "at.goal.label": "Mein Übungsziel (optional, 140 Zeichen)",
+  "at.goal.note": "Ergänze ein kurzes Lernziel ohne persönliche oder sensible Angaben. Nur die Vorschau ändert sich, nicht eine vorhandene Nachricht. Erst Idee hinzufügen und Senden verschickt sie.",
+  "at.goal.prefix": "Mein Lernziel:",
+  "at.goal.clear": "Mein Ziel löschen",
+  "at.goal.preview": "Vorschau der genauen Nachricht"
 }
