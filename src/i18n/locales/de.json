@@ -3104,5 +3104,8 @@
   "at.goal.note": "Ergänze ein kurzes Lernziel ohne persönliche oder sensible Angaben. Nur die Vorschau ändert sich, nicht eine vorhandene Nachricht. Erst Idee hinzufügen und Senden verschickt sie.",
   "at.goal.prefix": "Mein Lernziel:",
   "at.goal.clear": "Mein Ziel löschen",
-  "at.goal.preview": "Vorschau der genauen Nachricht"
+  "at.goal.preview": "Vorschau der genauen Nachricht",
+  "sp.roleMeaning.note": "Brauchst du einen Bedeutungshinweis? Optional siehst du die ursprüngliche arabische Bedeutung, nicht die englische Musterantwort. Sprich zuerst, bevor du das Englisch aufdeckst.",
+  "sp.roleMeaning.show": "Bedeutungshinweis zeigen",
+  "sp.roleMeaning.hide": "Bedeutungshinweis ausblenden"
 }
