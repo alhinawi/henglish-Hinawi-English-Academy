@@ -3002,5 +3002,10 @@
   "pa.pairRecord.close": "Close local recording",
   "pa.pairRecord.compare": "Compare your recording with the two reference words above. Can you hear a difference between your A and B?",
   "pa.pairRecord.repeat": "Try again slowly, then at a comfortable speed. A text-to-speech reference can vary by voice and accent.",
-  "pa.pairRecord.note": "Optional self-review, no automatic pronunciation score or XP. Your recording stays local and is discarded when you close this practice, change the pair or leave the page."
+  "pa.pairRecord.note": "Optional self-review, no automatic pronunciation score or XP. Your recording stays local and is discarded when you close this practice, change the pair or leave the page.",
+  "rle.recall.start": "Try meaning recall",
+  "rle.recall.end": "Show all meanings",
+  "rle.recall.reveal": "Reveal meaning",
+  "rle.recall.hide": "Hide meaning",
+  "rle.recall.note": "Say or think of the meaning before revealing each answer. Optional self-study, no score or XP. Leaving the scenario resets this view."
 }

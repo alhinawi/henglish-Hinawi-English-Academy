@@ -1,3 +1,4 @@
+import { ScenarioVocabulary } from '../components/ScenarioVocabulary';
 import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import React, { useEffect, useState } from 'react';
 import { PageRoute } from '../types';
@@ -468,24 +469,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {scenario.keyVocabulary.map((vocab, idx) => (
-            <div
-              key={idx}
-              className="p-4 rounded-xl bg-white/5 border border-white/10 flex flex-wrap items-start justify-between gap-3"
-            >
-              <div className="space-y-0.5">
-                <div className="text-sm font-sans font-bold text-white">{vocab.en}</div>
-                <div className="text-xs text-[#ffd166]">{txText(appText, vocab.ar)}</div>
-                {vocab.phonetic && (
-                  <div className="text-[10px] text-[#b9b6d5] font-mono">{vocab.phonetic}</div>
-                )}
-              </div>
-
-              <LessonSpeechButton text={vocab.en} label={`${t('rle.listenPronunciation')}: ${vocab.en}`} iconOnly className="p-2 rounded-lg bg-white/10 hover:bg-[#41e7ff] text-[#41e7ff] hover:text-[#0c0b20] transition-colors cursor-pointer" />
-            </div>
-          ))}
-        </div>
+        <ScenarioVocabulary key={scenario.id} vocabulary={scenario.keyVocabulary} meaning={text => txText(appText, text)}/>
       </section>
 
     </div>
