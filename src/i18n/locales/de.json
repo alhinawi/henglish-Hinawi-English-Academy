@@ -3074,5 +3074,10 @@
   "sp.transfer.task.B1.0": "Wähle ein anderes Ziel für die Situation. Erkläre deinen Wunsch, begründe ihn und stelle der anderen Person eine Frage.",
   "sp.transfer.task.B1.1": "Stell dir vor, die andere Person widerspricht. Erkenne ihren Standpunkt an und schlage einen praktischen Kompromiss vor.",
   "sp.transfer.task.B2.0": "Ändere eine wichtige Annahme. Vergleiche zwei Antworten und erkläre, welche du warum wählen würdest.",
-  "sp.transfer.task.B2.1": "Setze mit einem respektvollen Gegenargument, einem Beispiel und einer offenen Frage an die andere Person fort."
+  "sp.transfer.task.B2.1": "Setze mit einem respektvollen Gegenargument, einem Beispiel und einer offenen Frage an die andere Person fort.",
+  "pa.navigator.choose": "Einen Wortkontrast wählen",
+  "pa.navigator.position": "Kontrast {current} von {total}",
+  "pa.navigator.previous": "Vorheriger Kontrast",
+  "pa.navigator.next": "Nächster Kontrast",
+  "pa.navigator.note": "Sieh Wörter und Lautschrift vor der Auswahl. Ein Wechsel stoppt Audio und setzt Quiz und lokale Übung zurück."
 }
