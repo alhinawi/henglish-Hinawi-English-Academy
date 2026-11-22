@@ -3007,5 +3007,10 @@
   "rle.recall.end": "Alle Bedeutungen zeigen",
   "rle.recall.reveal": "Bedeutung aufdecken",
   "rle.recall.hide": "Bedeutung ausblenden",
-  "rle.recall.note": "Sage oder denke die Bedeutung, bevor du jede Antwort aufdeckst. Optionale Selbstübung ohne Bewertung oder XP. Beim Verlassen der Szene wird diese Ansicht zurückgesetzt."
+  "rle.recall.note": "Sage oder denke die Bedeutung, bevor du jede Antwort aufdeckst. Optionale Selbstübung ohne Bewertung oder XP. Beim Verlassen der Szene wird diese Ansicht zurückgesetzt.",
+  "tpr.filter.level": "Übungsniveau",
+  "tpr.filter.direction": "Übersetzungsrichtung",
+  "tpr.filter.all": "Alle",
+  "tpr.filter.position": "Aufgabe {current} von {total}.",
+  "tpr.filter.note": "Die Niveaus sind Übungseinschätzungen, kein Testergebnis. Entwürfe bleiben beim Filterwechsel getrennt."
 }
