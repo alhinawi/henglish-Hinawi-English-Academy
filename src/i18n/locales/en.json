@@ -1166,7 +1166,7 @@
   "sa.startFirst": "Start your first conversation",
   "sa.journey": "Your conversation journey",
   "sa.progressNote": "Progress is saved on this device for the current account. Each lesson grants one reward in the current XP system.",
-  "sa.searchPh": "Find a situation: work, travel, introductions…",
+  "sa.searchPh": "Search topics, phrases or dialogue…",
   "sa.searchAria": "Search conversation lessons",
   "sa.noMatch": "No matching lesson. Try another word or pick all levels.",
   "sa.cardMeta": "Dialogue + 3 activities + speaking practice",
@@ -3012,5 +3012,8 @@
   "tpr.filter.direction": "Translation direction",
   "tpr.filter.all": "All",
   "tpr.filter.position": "Challenge {current} of {total}.",
-  "tpr.filter.note": "Levels are practice estimates, not a test result. Drafts stay separate when you change filters."
+  "tpr.filter.note": "Levels are practice estimates, not a test result. Drafts stay separate when you change filters.",
+  "sa.clearSearch": "Clear search",
+  "sa.resetFilters": "Show all lessons",
+  "sa.results": "{count} of {total} lessons"
 }
