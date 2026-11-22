@@ -82,6 +82,16 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Briefcase,
 };
 
+const TUTOR_STARTER_PHOTOS: Record<AiTutorMode, string> = {
+  "grammar-teacher": "/images/literacy/literacy-4.webp",
+  "conversation-partner": "/images/pool/mentorStudent.webp",
+  "vocabulary-coach": "/images/listening/library.webp",
+  "writing-assistant": "/images/listening/writing.webp",
+  "pronunciation-coach": "/images/catalog/listening-academy.webp",
+  "exam-trainer": "/images/speaking/conversation-15.webp",
+  "interview-coach": "/images/speaking/conversation-20.webp"
+};
+
 export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfile, progress, onOpenVoiceSettings }) => {
   const { t, dir, lang } = useLanguage();
   // --- State ---
@@ -641,6 +651,11 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             <span>{t('at.newSession')}</span>
           </button>
         </div>
+      </section>
+
+      <section aria-label={t('at.photo.title')} className="overflow-hidden rounded-3xl border border-[#ffd166]/20 bg-[#121027] sm:grid sm:grid-cols-[220px_1fr]">
+        <img key={activeMode} src={TUTOR_STARTER_PHOTOS[activeMode]} alt={t(`at.photo.${activeMode}`)} width={640} height={360} className="h-44 w-full object-cover sm:h-full sm:min-h-44" loading="lazy" />
+        <div className="space-y-3 p-4 sm:p-5"><h2 className="font-bold text-[#ffd166]">{t('at.photo.title')}</h2><p className="text-sm leading-7 text-slate-200">{t(`at.photo.${activeMode}`)}</p><p className="text-sm leading-7 text-slate-300">{t(`at.starter.${activeMode}`)}</p><button type="button" disabled={isTyping || Boolean(inputMessage.trim())} onClick={() => { speechAllowed.current = false; recognitionRef.current?.abort(); setIsRecordingVoice(false); setInputMessage(t(`at.starter.${activeMode}`)); }} className="min-h-11 rounded-xl border border-[#ffd166]/30 bg-[#ffd166]/15 px-4 text-sm font-bold text-[#ffd166] disabled:opacity-50">{t('at.photo.use')}</button><p className="text-xs leading-6 text-slate-400">{t('at.photo.note')}</p></div>
       </section>
 
       {/* 4. History Sessions Panel (Collapsible Drawer) */}
