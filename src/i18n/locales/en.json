@@ -3085,5 +3085,11 @@
   "rle.review.turn": "Turn {number}",
   "rle.review.prompt": "What they asked",
   "rle.review.chosen": "Your selected reply",
-  "rle.review.model": "Compare a stronger option"
+  "rle.review.model": "Compare a stronger option",
+  "tpr.revise.title": "Write a second version",
+  "tpr.revise.note": "Compare your first draft with the sample translations, then improve one detail. Your first draft and its checklist stay unchanged. This second version has no automatic grade.",
+  "tpr.revise.open": "Open my revision",
+  "tpr.revise.close": "Hide my revision",
+  "tpr.revise.label": "My revised translation",
+  "tpr.revise.privacy": "Both versions stay only in this open practice session. Switching tasks or filters keeps your text here; leaving the practice clears it. Nothing is sent or scored."
 }

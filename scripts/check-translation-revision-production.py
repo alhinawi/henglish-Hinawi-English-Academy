@@ -1,0 +1,18 @@
+import functools,http.server,json,os,pathlib,threading
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd()
+class Quiet(http.server.SimpleHTTPRequestHandler):
+ def log_message(self,*args):pass
+server=http.server.ThreadingHTTPServer(('127.0.0.1',4200),functools.partial(Quiet,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
+origin=os.environ.get('TEST_ORIGIN','http://127.0.0.1:4200');prefix='live-' if origin.startswith('https:') else ''
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for lang in ['en','ar']:
+   page=b.new_page(viewport={'width':390,'height':1050},reduced_motion='reduce');page.route('**/api/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.route('**/henglish-api.hnz.workers.dev/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));t=json.load(open(root/'src/i18n/locales'/f'{lang}.json'));page.goto(origin+'/?lang='+lang+'#translation');page.get_by_role('button',name=t['ts.practice'],exact=True).click();level=page.get_by_label(t['tpr.filter.level'],exact=True);direction=page.get_by_label(t['tpr.filter.direction'],exact=True);draft=page.get_by_label(t['tpr.draft'],exact=True);revision=page.get_by_label(t['tpr.revise.label'],exact=True);panel=page.get_by_role('region',name=t['tpr.revise.title'],exact=True)
+   for lev in ['A1','A2','B1','B2','C1','C2']:
+    for way in ['ar-to-en','en-to-ar']:
+     level.select_option(lev);direction.select_option(way);expect(panel).to_have_count(0);draft.fill('My original version');page.get_by_role('button',name=t['tpr.show'],exact=True).click();checks=page.get_by_role('checkbox');checks.first.check();panel.get_by_role('button',name=t['tpr.revise.open'],exact=True).click();expect(revision).to_have_value('');expect(revision).to_have_attribute('dir','ltr' if way=='ar-to-en' else 'rtl');revision.fill('My improved version' if way=='ar-to-en' else 'النسخة المعدلة');expect(draft).to_have_value('My original version');expect(checks.first).to_be_checked();panel.get_by_role('button',name=t['tpr.revise.close'],exact=True).click();expect(revision).to_have_count(0);panel.get_by_role('button',name=t['tpr.revise.open'],exact=True).click();expect(revision).not_to_have_value('');page.get_by_role('button',name=t['tpr.hide'],exact=True).click();expect(panel).to_have_count(0);page.get_by_role('button',name=t['tpr.show'],exact=True).click();expect(revision).not_to_have_value('');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+   panel.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-100,behavior:"instant"})');page.screenshot(path=f'/downloads/henglish-{prefix}translation-revision-{lang}.png');level.select_option('A1');direction.select_option('ar-to-en');page.get_by_role('button',name=t['tpr.show'],exact=True).click();expect(revision).to_have_count(0);panel.get_by_role('button',name=t['tpr.revise.open'],exact=True).click();expect(revision).to_have_value('My improved version');expect(draft).to_have_value('My original version');page.get_by_role('button',name=t['ts.studio']+' '+t['ts.main'],exact=True).click();page.get_by_role('button',name=t['ts.practice'],exact=True).click();expect(draft).to_have_value('');page.get_by_role('button',name=t['tpr.show'],exact=True).click();panel.get_by_role('button',name=t['tpr.revise.open'],exact=True).click();expect(revision).to_have_value('');print(lang,'6levels x2directions,separatedraft/checklist,hide/reopen,filterretention,unmountreset,390px PASS; no score/network');page.close()
+  b.close()
+finally:server.shutdown();server.server_close()
