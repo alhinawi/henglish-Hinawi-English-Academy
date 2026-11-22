@@ -159,6 +159,14 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           </div>
         </div>
 
+        <div className="space-y-3 rounded-2xl border border-cyan-200/20 bg-[#0c0b20] p-4">
+          <label htmlFor="pronunciation-pair-picker" className="block text-sm font-bold text-cyan-100">{t('pa.navigator.choose')}</label>
+          <select id="pronunciation-pair-picker" value={activePairIdx} onChange={event => { resetAudio(); setActivePairIdx(Number(event.target.value)); }} dir="ltr" className="min-h-12 w-full rounded-xl border border-white/20 bg-[#151329] p-3 text-sm text-white">{MINIMAL_PAIRS_DATA.map((item,index) => <option key={item.id} value={index}>{index+1}. {item.wordA} / {item.wordB} · {item.ipaA} / {item.ipaB}</option>)}</select>
+          <p role="status" className="text-xs leading-7 text-slate-300">{t('pa.navigator.position').replace('{current}',String(activePairIdx+1)).replace('{total}',String(MINIMAL_PAIRS_DATA.length))}</p>
+          <div className="flex flex-wrap gap-3"><button type="button" disabled={activePairIdx === 0} onClick={() => { resetAudio(); setActivePairIdx(value => Math.max(0,value-1)); }} className="min-h-11 rounded-xl border border-cyan-200/30 px-4 text-sm font-bold text-cyan-100 disabled:opacity-40">{t('pa.navigator.previous')}</button><button type="button" disabled={activePairIdx === MINIMAL_PAIRS_DATA.length-1} onClick={() => { resetAudio(); setActivePairIdx(value => Math.min(MINIMAL_PAIRS_DATA.length-1,value+1)); }} className="min-h-11 rounded-xl border border-cyan-200/30 px-4 text-sm font-bold text-cyan-100 disabled:opacity-40">{t('pa.navigator.next')}</button></div>
+          <p className="text-xs leading-7 text-slate-400">{t('pa.navigator.note')}</p>
+        </div>
+
         {/* Minimal Pair Cards Comparison */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
