@@ -2940,5 +2940,9 @@
   "pa.vowel17": "glide as in now",
   "pa.vowel18": "traditional glide as in near",
   "pa.vowel19": "traditional glide as in chair",
-  "pa.vowel20": "traditional, variable glide as in tour"
+  "pa.vowel20": "traditional, variable glide as in tour",
+  "rle.filterLabel": "Filter practice situations",
+  "rle.cat.daily": "Daily life & shopping",
+  "rle.photoNote": "Stock photos illustrate these fictional practice situations. They do not identify the actual venue, speaker or academy students.",
+  "rle.topicPhoto": "Illustrative photo for {title}"
 }
