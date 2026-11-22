@@ -1,3 +1,5 @@
+import { VOWEL_WORKSHOP } from '../data/vowelWorkshopData';
+import { SpeakingRecorder } from '../components/SpeakingPracticeStudio';
 import React, { useEffect, useRef, useState } from 'react';
 import { PageRoute } from '../types';
 import { MINIMAL_PAIRS_DATA, MinimalPair } from '../data/skillsAcademyData';
@@ -20,11 +22,14 @@ interface PronunciationAcademyPageProps {
 }
 
 export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> = ({ onNavigate }) => {
-  const { t, dir } = useLanguage();
+  const { t, dir, lang } = useLanguage();
   const [activePairIdx, setActivePairIdx] = useState(0);
   const appText = useAppTextMap('skillsAcademyData');
   const [testedSound, setTestedSound] = useState<'A' | 'B' | null>(null);
   const [quizScore, setQuizScore] = useState<number | null>(null);
+  const [vowelGroup, setVowelGroup] = useState<'all' | 'pure' | 'glide'>('all');
+  const [selectedVowel, setSelectedVowel] = useState<string | null>(null);
+  const vowelPanel = useRef<HTMLElement>(null);
 
   const pair = MINIMAL_PAIRS_DATA[activePairIdx] || MINIMAL_PAIRS_DATA[0];
 
@@ -45,7 +50,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
     ownsAudio.current = false;
   };
   useEffect(() => () => { audioVersion.current += 1; stopSpeech(); }, []);
-  const playWord = (text: string, testSound: 'A' | 'B' | null = null, control = text) => {
+  const playWord = (text: string, testSound: 'A' | 'B' | null = null, control = text, accent?: 'UK' | 'US') => {
     const stopping = audioActive === control;
     resetAudio();
     if (stopping) return;
@@ -53,6 +58,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
     const version = audioVersion.current;
     let settled = false;
     speakEnglish(text, {
+      accent,
       onEnd: () => {
         if (version !== audioVersion.current) return;
         settled = true; ownsAudio.current = false; setAudioActive(null); setTestedSound(testSound);
@@ -84,16 +90,13 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
     }
   };
 
-  const ipaVowels = [
-    { symbol: '/iː/', ex: 'see, sheep', ar: 'pa.vowel1' },
-    { symbol: '/ɪ/', ex: 'sit, ship', ar: 'pa.vowel2' },
-    { symbol: '/e/', ex: 'bed, men', ar: 'pa.vowel3' },
-    { symbol: '/æ/', ex: 'cat, black', ar: 'pa.vowel4' },
-    { symbol: '/ɑː/', ex: 'car, dark', ar: 'pa.vowel5' },
-    { symbol: '/uː/', ex: 'blue, moon', ar: 'pa.vowel6' },
-    { symbol: '/ʊ/', ex: 'put, book', ar: 'pa.vowel7' },
-    { symbol: '/ə/', ex: 'about, banana', ar: 'pa.vowel8' },
-  ];
+  const ipaVowels = VOWEL_WORKSHOP.filter(v => vowelGroup === 'all' || v.type === vowelGroup);
+  const activeVowel = VOWEL_WORKSHOP.find(v => v.symbol === selectedVowel);
+  const openVowel = (symbol: string) => {
+    resetAudio();
+    setSelectedVowel(symbol);
+    requestAnimationFrame(() => vowelPanel.current?.scrollIntoView({ block: 'start', behavior: 'smooth' }));
+  };
 
   return (
     <div dir={dir} className="space-y-10 pb-16 text-start">
@@ -257,6 +260,10 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           </p>
         </div>
 
+        <p className="text-xs leading-7 text-slate-300">{t('pa.vowelScope')}</p>
+        <div className="flex flex-wrap gap-2" role="group" aria-label={t('pa.vowelFilter')}>
+          {(['all', 'pure', 'glide'] as const).map(group => <button key={group} type="button" aria-pressed={vowelGroup === group} onClick={() => setVowelGroup(group)} className={`min-h-11 rounded-xl border px-4 text-sm font-bold ${vowelGroup === group ? 'border-cyan-200 bg-cyan-200 text-slate-950' : 'border-white/15 bg-white/5 text-slate-200'}`}>{t(`pa.group.${group}`)}</button>)}
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
           {ipaVowels.map((v, idx) => (
             <div
@@ -267,17 +274,29 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
               <div className="en text-xs font-mono text-white">{v.ex}</div>
               <div className="text-[11px] text-[#b9b6d5]">{t(v.ar)}</div>
               <button
-                onClick={() => playWord(v.ex)}
-                className="p-1 rounded text-[#41e7ff] hover:text-white"
+                onClick={() => playWord(v.ex, null, v.ex, 'UK')}
+                className="min-h-11 min-w-11 rounded text-[#41e7ff] hover:text-white"
                 aria-pressed={audioActive === v.ex}
                 aria-label={audioActive === v.ex ? t('listen.stopAudio') : `${t('pa.listenWords')}: ${v.ex}`}
                 title={audioActive === v.ex ? t('listen.stopAudio') : `${t('pa.listenWords')}: ${v.ex}`}
               >
                 {audioActive === v.ex ? <Square className="w-3.5 h-3.5 mx-auto" aria-hidden="true" /> : <Volume2 className="w-3.5 h-3.5 mx-auto" aria-hidden="true" />}
               </button>
+              <button type="button" aria-pressed={selectedVowel === v.symbol} onClick={() => openVowel(v.symbol)} className="block min-h-11 w-full rounded-xl border border-cyan-200/25 px-2 text-xs font-bold text-cyan-200 hover:bg-cyan-200/10">{t('pa.practiseSound')} {v.symbol}</button>
             </div>
           ))}
         </div>
+        <section ref={vowelPanel} className="scroll-mt-24" aria-label={t('pa.workshopTitle')}>
+          {activeVowel ? <div className="space-y-5 rounded-3xl border border-cyan-200/25 bg-[#11182a] p-5 sm:p-7">
+            <h3 className="text-xl font-black text-cyan-100">{t('pa.workshopTitle')} <span dir="ltr" className="inline-block">{activeVowel.symbol}</span></h3>
+            <p className="text-sm leading-7 text-slate-300">{lang === 'ar' ? activeVowel.tipAr : activeVowel.tipEn}</p>
+            <p dir="ltr" lang="en" className="text-left text-lg leading-8 text-white">{activeVowel.sentence}</p>
+            <button type="button" aria-pressed={audioActive === `vowel-${activeVowel.symbol}`} onClick={() => playWord(activeVowel.sentence, null, `vowel-${activeVowel.symbol}`, 'UK')} className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-white/15 bg-white/5 px-4 text-sm font-bold text-cyan-200">{audioActive === `vowel-${activeVowel.symbol}` ? <Square size={16} aria-hidden="true"/> : <Volume2 size={16} aria-hidden="true"/>}{audioActive === `vowel-${activeVowel.symbol}` ? t('listen.stopAudio') : t('pa.listenSentence')}</button>
+            <p className="text-xs leading-6 text-slate-400">{t('pa.recordGuide')}</p>
+            <SpeakingRecorder key={activeVowel.symbol} prompt={activeVowel.sentence}/>
+          </div> : <p className="rounded-2xl border border-dashed border-cyan-200/25 p-5 text-sm leading-7 text-slate-300">{t('pa.chooseSound')}</p>}
+        </section>
+        <p className="text-xs leading-7 text-slate-400">{t('pa.vowelReference')} <a className="underline text-cyan-200" href="https://learnenglish.britishcouncil.org/apps/learnenglish-sounds-right" target="_blank" rel="noreferrer">British Council Sounds Right</a></p>
       </section>
 
     </div>
