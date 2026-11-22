@@ -1,3 +1,4 @@
+import { TRANSLATION_PRACTICE_PHOTOS, TRANSLATION_PRACTICE_THEMES } from '../../data/translationPracticePhotos';
 import React, { useState } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { CEFRLevel } from '../../types';
@@ -18,11 +19,13 @@ export const PracticeModeTab: React.FC<PracticeModeTabProps> = () => {
   const challenges = TRANSLATION_PRACTICE_CHALLENGES.filter(item => (level === 'all' || item.difficulty === level) && (direction === 'all' || item.direction === direction));
   const challenge = challenges[index] || challenges[0];
   if (!challenge) return null;
+  const photo = TRANSLATION_PRACTICE_PHOTOS[TRANSLATION_PRACTICE_THEMES[challenge.id] || 'study'];
   return <section className="rounded-3xl border border-white/10 bg-[#0e0c26] p-5 space-y-5 text-right">
     <h3 className="font-bold text-xl text-white">{t('tpr.title')}</h3>
     <p className="text-sm text-slate-300 leading-7">{t('tpr.intro')}</p>
     <div className="grid gap-3 sm:grid-cols-2"><label htmlFor="translation-practice-level" className="space-y-2 text-start text-sm"><span>{t('tpr.filter.level')}</span><select id="translation-practice-level" aria-label={t('tpr.filter.level')} value={level} onChange={event => { setLevel(event.target.value); setIndex(0); setRevealed(false); }} className="min-h-11 w-full rounded-xl border border-white/20 bg-[#080619] px-3"><option value="all">{t('tpr.filter.all')}</option>{['A1','A2','B1','B2','C1','C2'].map(value => <option key={value} value={value}>{value}</option>)}</select></label><label htmlFor="translation-practice-direction" className="space-y-2 text-start text-sm"><span>{t('tpr.filter.direction')}</span><select id="translation-practice-direction" aria-label={t('tpr.filter.direction')} value={direction} onChange={event => { setDirection(event.target.value); setIndex(0); setRevealed(false); }} className="min-h-11 w-full rounded-xl border border-white/20 bg-[#080619] px-3"><option value="all">{t('tpr.filter.all')}</option><option value="ar-to-en">{t('tpr.arEn')}</option><option value="en-to-ar">{t('tpr.enAr')}</option></select></label></div>
     <p role="status" className="text-xs leading-7 text-slate-400">{t('tpr.filter.position').replace('{current}', String(index+1)).replace('{total}', String(challenges.length))} {t('tpr.filter.note')}</p>
+    <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-start"><img key={photo.src} src={photo.src} alt={t(photo.caption)} width={640} height={360} loading="lazy" className="h-44 w-full object-cover sm:h-56"/><figcaption className="space-y-2 p-4"><p className="text-sm leading-7 text-cyan-100">{t(photo.caption)}</p><p className="text-xs leading-6 text-slate-400">{t('tpr.photo.note')}</p></figcaption></figure>
     <div className="flex items-center justify-between text-xs text-cyan-200"><span>{challenge.direction === 'en-to-ar' ? t('tpr.enAr') : t('tpr.arEn')}</span><bdi>{challenge.difficulty}</bdi></div>
     <p dir={challenge.direction === 'en-to-ar' ? 'ltr' : 'rtl'} className="text-xl leading-9 rounded-2xl p-5 bg-white/5 text-white">{challenge.sourceSentence}</p>
     <LessonSpeechButton key={challenge.id} text={challenge.sourceSentence} language={challenge.direction === 'en-to-ar' ? 'en' : 'ar'} label={t('tpr.listen')} className="min-h-11 px-4 rounded-xl bg-white/10 text-white" />
