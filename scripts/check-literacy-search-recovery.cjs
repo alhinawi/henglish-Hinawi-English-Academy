@@ -1,0 +1,18 @@
+const fs = require('node:fs');
+const vm = require('node:vm');
+const ts = require('typescript');
+const assert = require('node:assert/strict');
+const s = fs.readFileSync('src/components/LiteracyAcademy.tsx', 'utf8');
+const code = s.match(/const clearSearch = \(\) => \{([^}]+)\};/)[1];
+let query = 'missing lesson', focused = false;
+vm.runInNewContext(code, { setQuery: v => { query = v; }, searchInput: { current: { focus: () => { focused = true; } } } });
+assert.equal(query, ''); assert(focused);
+assert(!code.includes('setLevel')); assert(!code.includes('setSaved'));
+assert(s.includes("e.key === 'Escape' && query"));
+assert(s.includes('ref={searchInput}'));
+assert(s.includes('aria-label={t(\'se.clear\')}'));
+assert(s.includes('min-h-11 min-w-11'));
+assert(s.includes('{!visible.length && <div role="status"'));
+assert.equal((s.match(/onClick={clearSearch}/g) || []).length, 2);
+for (const lang of ['en', 'ar']) assert(JSON.parse(fs.readFileSync('src/i18n/locales/' + lang + '.json'))['se.clear']);
+console.log('Reading/writing search has labelled clear control, Escape and empty-state recovery; clears only query and restores focus, leaving level/progress unchanged: PASS');
