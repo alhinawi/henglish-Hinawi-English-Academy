@@ -187,13 +187,14 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
         {/* 3. SCENARIO SELECTOR CARDS */}
         <div className="space-y-4">
           {/* Category Filter Pills */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-2 custom-scrollbar">
+          <div className="flex flex-wrap items-center gap-2" role="group" aria-label={t('rle.filterLabel')}>
             {[
               { id: 'all', label: t('rle.cat.all') },
               { id: 'travel', label: t('rle.cat.travel') },
               { id: 'hospitality', label: t('rle.cat.hospitality') },
               { id: 'healthcare', label: t('rle.cat.healthcare') },
               { id: 'professional', label: t('rle.cat.professional') },
+              { id: 'daily', label: t('rle.cat.daily') },
             ].map(cat => (
               <button
                 key={cat.id}
@@ -202,7 +203,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                   playSound('click');
                   setActiveCategory(cat.id);
                 }}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition-colors cursor-pointer shrink-0 ${
+                className={`min-h-11 px-4 py-2 rounded-xl text-xs font-bold transition-colors cursor-pointer shrink-0 ${
                   activeCategory === cat.id
                     ? 'bg-linear-to-r from-[#ffd166]/20 to-[#41e7ff]/20 text-[#ffd166] border border-[#ffd166]/40 shadow-sm'
                     : 'bg-white/5 border border-white/10 text-[#b9b6d5] hover:text-white hover:bg-white/10'
@@ -213,14 +214,17 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             ))}
           </div>
 
+          <p className="text-xs leading-6 text-slate-400">{t('rle.photoNote')}</p>
           {/* Scenario Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {filteredScenarios.map(sc => (
               <button
                 key={sc.id}
                 onClick={() => handleSelectScenario(sc.id)}
-                className="p-5 rounded-2xl border text-start transition-colors cursor-pointer flex flex-col justify-between space-y-3 glass-panel border-white/10 hover:border-[#ffd166]/60 hover:bg-white/10"
+                className="group overflow-hidden rounded-2xl border text-start transition-colors cursor-pointer flex flex-col glass-panel border-white/10 hover:border-[#ffd166]/60 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-cyan-200"
               >
+                <img src={sc.backdropImage} alt={t('rle.topicPhoto').replace('{title}', sc.title)} loading="lazy" className="h-40 w-full object-cover" />
+                <div className="flex grow flex-col justify-between gap-4 p-5">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     {(() => { const IconCmp = SCENARIO_ICONS[sc.id] || Compass; return <IconCmp className="w-7 h-7 text-[#ffd166]" />; })()}
@@ -229,12 +233,14 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                     </span>
                   </div>
                   <h4 className="text-sm font-black text-white">{txText(appText, sc.titleAr)}</h4>
-                  <div className="text-[11px] font-mono text-[#b9b6d5] line-clamp-1">{sc.title}</div>
+                  <div className="text-[11px] font-mono text-[#b9b6d5]" dir="ltr" lang="en">{sc.title}</div>
+                  <p className="text-xs leading-6 text-slate-300">{txText(appText, sc.descriptionAr)}</p>
                 </div>
 
                 <div className="text-[11px] text-[#41e7ff] font-semibold flex items-center justify-between pt-2 border-t border-white/10">
                   <span>{sc.turns.length} {t('rle.stops')}</span>
-
+                  <ArrowRight size={16} className={dir === 'rtl' ? 'rotate-180' : ''} aria-hidden="true" />
+                </div>
                 </div>
               </button>
             ))}

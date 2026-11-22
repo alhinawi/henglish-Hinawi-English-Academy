@@ -2940,5 +2940,9 @@
   "pa.vowel17": "Diphthong wie in now",
   "pa.vowel18": "traditioneller Diphthong wie in near",
   "pa.vowel19": "traditioneller Diphthong wie in chair",
-  "pa.vowel20": "traditioneller, variabler Diphthong wie in tour"
+  "pa.vowel20": "traditioneller, variabler Diphthong wie in tour",
+  "rle.filterLabel": "Übungssituationen filtern",
+  "rle.cat.daily": "Alltag und Einkaufen",
+  "rle.photoNote": "Stockfotos veranschaulichen diese fiktiven Übungssituationen. Sie zeigen nicht den tatsächlichen Ort, Sprecher oder Lernende der Akademie.",
+  "rle.topicPhoto": "Beispielfoto für {title}"
 }
