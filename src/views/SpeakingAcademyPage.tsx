@@ -1,3 +1,4 @@
+import { SpeakingTransferPractice } from '../components/SpeakingTransferPractice';
 import { SpeakingRoleRehearsal } from '../components/SpeakingRoleRehearsal';
 import React, { useRef, useState } from 'react';
 import { ArrowRight, CheckCircle2, Mic, Search, X, BookOpen, ArrowUpLeft } from 'lucide-react';
@@ -68,6 +69,7 @@ const LearnerSpeakingAcademy: React.FC<SpeakingAcademyPageProps & { storageKey: 
       </section>
       <SpeakingRoleRehearsal key={`roleplay:${active.id}`} lesson={active}/>
       <SpeakingPracticeStudio key={active.id} lesson={active} completed={done.includes(active.id)} onComplete={finish}/>
+      <SpeakingTransferPractice key={`transfer:${active.id}`} lesson={active}/>
       {saveError && <p role="alert" className="text-amber-200">{saveError}</p>}
       <details className="rounded-2xl border border-white/10 p-5 text-sm text-slate-300 leading-8"><summary className="cursor-pointer font-bold text-white">{t('sa.about')}</summary><p>{t('sa.aboutP1')}</p><p>{t('sa.aboutP2')}</p><p>{t('sa.refs')}</p><a className="block underline text-cyan-200" href="https://learnenglish.britishcouncil.org/free-resources/speaking/a1/checking-understanding" target="_blank" rel="noreferrer">British Council: Checking understanding</a><a className="block underline text-cyan-200" href="https://learnenglish.britishcouncil.org/free-resources/speaking/b1/keeping-conversation-going" target="_blank" rel="noreferrer">British Council: Keeping a conversation going</a><a className="block underline text-cyan-200" href="https://learnenglish.britishcouncil.org/free-resources/speaking/b2/challenging-someones-ideas" target="_blank" rel="noreferrer">British Council: Challenging ideas</a></details>
       <button onClick={()=> {const next=SPEAKING_LESSONS[SPEAKING_LESSONS.indexOf(active)+1];open(next?.id || null);}} className="min-h-14 w-full rounded-2xl bg-pink-200 text-slate-950 font-bold">{SPEAKING_LESSONS.indexOf(active)<SPEAKING_LESSONS.length-1?t('sa.nextLesson'):t('sa.backToMap')}</button>
