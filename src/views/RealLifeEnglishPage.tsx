@@ -1,3 +1,4 @@
+import { ScenarioReplyPractice } from '../components/ScenarioReplyPractice';
 import { ScenarioVocabulary } from '../components/ScenarioVocabulary';
 import { LessonSpeechButton } from '../components/LessonSpeechButton';
 import React, { useEffect, useState } from 'react';
@@ -62,6 +63,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
   // Simulation state
   const [currentTurnIdx, setCurrentTurnIdx] = useState(0);
+  const [practiceAttempt, setPracticeAttempt] = useState(0);
   const [selectedOption, setSelectedOption] = useState<DialogueOption | null>(null);
   const [totalScore, setTotalScore] = useState(0);
   const [scenarioCompleted, setScenarioCompleted] = useState(false);
@@ -75,6 +77,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
   });
 
   const resetSimulationState = () => {
+    setPracticeAttempt(value => value + 1);
     stopSpeech();
     setCurrentTurnIdx(0);
     setSelectedOption(null);
@@ -352,7 +355,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             )}
 
             {/* Student Response Options */}
-            <div className="space-y-3">
+            <ScenarioReplyPractice key={`${scenario.id}:${currentTurn.id}:${practiceAttempt}`}><div className="space-y-3">
               <h4 className="text-xs font-bold text-[#41e7ff] flex items-center gap-1.5">
                 <MessageSquare className="w-3.5 h-3.5" />
                 <span>{t('rle.chooseReply')}</span>
@@ -400,6 +403,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
               </div>
             </div>
 
+            </ScenarioReplyPractice>
             {/* Advance to next turn */}
             <div className="pt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between border-t border-white/10">
               <button
