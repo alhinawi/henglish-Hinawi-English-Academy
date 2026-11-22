@@ -3015,5 +3015,13 @@
   "tpr.filter.note": "Levels are practice estimates, not a test result. Drafts stay separate when you change filters.",
   "sa.clearSearch": "Clear search",
   "sa.resetFilters": "Show all lessons",
-  "sa.results": "{count} of {total} lessons"
+  "sa.results": "{count} of {total} lessons",
+  "pa.context.title": "Use the contrast in a sentence",
+  "pa.context.note": "Read the meaning and choose the word that fits. This checks word choice, not your pronunciation.",
+  "pa.context.correct": "That word fits the context. Now say the full sentence.",
+  "pa.context.retry": "Try the other word and check its meaning above.",
+  "pa.context.sentences": "Record both full sentences",
+  "pa.context.words": "Record the word contrast",
+  "pa.context.sentenceNote": "Sentence mode: the recorder below uses both full sentences. Switching modes discards the previous recording.",
+  "pa.context.wordNote": "Word mode: the recorder below uses the repeated word contrast."
 }
