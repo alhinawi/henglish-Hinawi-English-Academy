@@ -1,3 +1,4 @@
+import { MinimalPairRehearsal } from '../components/MinimalPairRehearsal';
 import { VOWEL_WORKSHOP } from '../data/vowelWorkshopData';
 import { SpeakingRecorder } from '../components/SpeakingPracticeStudio';
 import React, { useEffect, useRef, useState } from 'react';
@@ -247,6 +248,8 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         </div>
 
       </section>
+
+      <MinimalPairRehearsal key={pair.id} pair={pair} onToggle={resetAudio}/>
 
       {/* 2. IPA VOWELS CHART */}
       <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
