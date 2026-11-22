@@ -1,3 +1,4 @@
+import { ScenarioTransferPractice } from '../components/ScenarioTransferPractice';
 import { ScenarioConversationReview } from '../components/ScenarioConversationReview';
 import { ScenarioReplyPractice } from '../components/ScenarioReplyPractice';
 import { ScenarioVocabulary } from '../components/ScenarioVocabulary';
@@ -469,6 +470,8 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
       )}
 
       {scenarioCompleted&&<ScenarioConversationReview key={`${scenario.id}:${practiceAttempt}`} scenario={scenario} choices={attemptChoices} meaning={text=>txText(appText,text)}/>}
+
+      {scenarioCompleted&&<ScenarioTransferPractice key={`transfer:${scenario.id}:${practiceAttempt}`} scenario={scenario}/>}
 
       {/* SURVIVAL VOCABULARY: belongs to the open conversation only */}
       <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
