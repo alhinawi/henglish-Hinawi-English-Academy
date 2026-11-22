@@ -3107,5 +3107,21 @@
   "at.goal.preview": "Vorschau der genauen Nachricht",
   "sp.roleMeaning.note": "Brauchst du einen Bedeutungshinweis? Optional siehst du die ursprüngliche arabische Bedeutung, nicht die englische Musterantwort. Sprich zuerst, bevor du das Englisch aufdeckst.",
   "sp.roleMeaning.show": "Bedeutungshinweis zeigen",
-  "sp.roleMeaning.hide": "Bedeutungshinweis ausblenden"
+  "sp.roleMeaning.hide": "Bedeutungshinweis ausblenden",
+  "rle.transfer.title": "Eine veränderte Situation versuchen",
+  "rle.transfer.intro": "Der Dialog ist fertig. Nutze seine Sprache jetzt in einer anderen Situation. Plane kurz und antworte mit eigenen Worten. Optional, ohne Musterantwort oder automatische Note.",
+  "rle.transfer.open": "Folgesituation versuchen",
+  "rle.transfer.close": "Übung schließen und verwerfen",
+  "rle.transfer.plan": "Private Planungsnotizen",
+  "rle.transfer.note": "Notizen und Aufnahmen bleiben nur in dieser geöffneten Übung. Schließen, Neustart oder Verlassen verwirft sie. Nichts wird gesendet, gespeichert oder bewertet.",
+  "rle.transfer.record": "Antworte auf die veränderte Situation mit deinen eigenen englischen Worten.",
+  "rle.transfer.task.sim-airport-checkin": "Du hast zwei Koffer, aber nur einer ist enthalten. Frage höflich nach Optionen und den gesamten Zusatzkosten, bevor du zustimmst.",
+  "rle.transfer.task.sim-restaurant-ordering": "Deine Bestellung kommt mit einer anderen Beilage. Erkläre höflich den Fehler, nenne deine Bestellung und frage nach einer Änderung.",
+  "rle.transfer.task.sim-doctor-appointment": "Beim Folgetermin haben sich deine Beschwerden verändert. Beschreibe Verbesserungen und anhaltende Beschwerden und frage nach dem nächsten Schritt. Sprachübung, keine medizinische Beratung.",
+  "rle.transfer.task.sim-job-interview": "Erzähle im Interview von einem Rückschlag: Situation, dein Handeln und deine Erkenntnis. Für diese Übung darfst du ein Beispiel erfinden.",
+  "rle.transfer.task.sim-coffee-shop": "Du musst bald gehen, dein Getränk ist aber noch nicht fertig. Frage höflich nach der Wartezeit, erkläre dein Zeitlimit und frage nach Optionen.",
+  "rle.transfer.task.sim-hotel-checkin": "Dein Zimmer ist lauter als erwartet. Erkläre das Problem höflich und frage nach einem ruhigeren Zimmer und möglichen Mehrkosten, bevor du wechselst.",
+  "rle.transfer.task.sim-pharmacy-visit": "Du hast eine Anweisung der Apotheke nicht verstanden. Bitte um langsame Wiederholung und Erklärung des Etiketts. Rate nicht bei Arzneianweisungen. Sprachübung, keine medizinische Beratung.",
+  "rle.transfer.task.sim-clothing-shopping": "Das Kleidungsstück passt, aber du kennst die Rückgaberegeln nicht. Frage vor dem Kauf nach Frist und Bedingungen.",
+  "rle.transfer.task.sim-supermarket-shopping": "Regal- und Kassenpreis unterscheiden sich. Weise höflich darauf hin, bitte um Prüfung und frage vor dem Bezahlen nach dem bestätigten Preis."
 }
