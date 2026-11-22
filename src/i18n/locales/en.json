@@ -3104,5 +3104,8 @@
   "at.goal.note": "Add one short learning goal, without personal or sensitive details. It changes only this preview, not an existing message. It is not sent until you add the idea and press Send.",
   "at.goal.prefix": "My learning goal:",
   "at.goal.clear": "Clear my goal",
-  "at.goal.preview": "Exact message preview"
+  "at.goal.preview": "Exact message preview",
+  "sp.roleMeaning.note": "Need a meaning clue? This optional hint shows the original Arabic meaning, not the English model. Try speaking before revealing the English.",
+  "sp.roleMeaning.show": "Show a meaning hint",
+  "sp.roleMeaning.hide": "Hide the meaning hint"
 }
