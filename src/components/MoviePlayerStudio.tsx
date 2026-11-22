@@ -1,3 +1,4 @@
+import { MovieCueSpeaking } from './MovieCueSpeaking';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { AlertCircle, ChevronRight, ExternalLink, Languages, Pause, Play, Repeat, RotateCcw, Settings, Gauge } from 'lucide-react';
 import type { MovieSceneItem } from '../data/movieScenesData';
@@ -299,5 +300,6 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
         </footer>
       </div>
     </div>
+    {hasTranscript && reviewedTiming && <MovieCueSpeaking key={`${scene.youtubeId}:${start}:${end}`} cues={scene.subtitles} onPause={() => { player.current?.pauseVideo?.(); setPlaying(false); }}/>}
   </section>;
 };

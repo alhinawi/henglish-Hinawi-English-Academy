@@ -2944,5 +2944,12 @@
   "rle.filterLabel": "Filter practice situations",
   "rle.cat.daily": "Daily life & shopping",
   "rle.photoNote": "Stock photos illustrate these fictional practice situations. They do not identify the actual venue, speaker or academy students.",
-  "rle.topicPhoto": "Illustrative photo for {title}"
+  "rle.topicPhoto": "Illustrative photo for {title}",
+  "ms.echoTitle": "Speak a reviewed line",
+  "ms.echoIntro": "Turn a reviewed transcript cue into a short speaking exercise. No invented dialogue is added.",
+  "ms.echoOpen": "Open speaking practice",
+  "ms.echoClose": "Close speaking practice",
+  "ms.echoChoose": "Choose a reviewed line",
+  "ms.echoSteps": "Listen to the line using the transcript above, pause, then say it in your own voice. The video pauses when you use this practice panel.",
+  "ms.echoNote": "Replay your recording and compare stress, rhythm and clear words. This is local self-practice, not an automatic score. Changing the line or closing practice discards the recording."
 }
