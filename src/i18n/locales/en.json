@@ -2976,5 +2976,22 @@
   "tpr.check.meaning": "I kept the original meaning.",
   "tpr.check.tense": "I checked the tense, people and key details.",
   "tpr.check.natural": "My translation sounds natural in the target language.",
-  "tpr.checkNote": "These are your own review notes, not a score. Different translations can be valid. Edit your draft and compare again."
+  "tpr.checkNote": "These are your own review notes, not a score. Different translations can be valid. Edit your draft and compare again.",
+  "at.photo.title": "Start with a scene",
+  "at.photo.use": "Put this idea in my message",
+  "at.photo.note": "Illustrative stock photo, not a Henglish teacher or student. This adds an editable message only. Review it, then send when ready. The helper receives text, not the photo. If you already have a draft, send or clear it before adding this idea.",
+  "at.photo.grammar-teacher": "A laptop and notebook on a study desk.",
+  "at.photo.conversation-partner": "Two people discussing study work.",
+  "at.photo.vocabulary-coach": "A stack of books.",
+  "at.photo.writing-assistant": "A pen writing on paper.",
+  "at.photo.pronunciation-coach": "A person speaking into a microphone.",
+  "at.photo.exam-trainer": "A person taking notes at a desk.",
+  "at.photo.interview-coach": "People meeting across a table.",
+  "at.starter.grammar-teacher": "Help me write three English sentences about my study routine. Explain one grammar point, then ask me to try it.",
+  "at.starter.conversation-partner": "Practise an English conversation about studying with a friend. Ask one question at a time and wait for my reply.",
+  "at.starter.vocabulary-coach": "Teach me five useful English words about books. Give examples, then ask me to use one in a sentence.",
+  "at.starter.writing-assistant": "Help me write a short English message to a classmate about a study session. Ask me for the details first.",
+  "at.starter.pronunciation-coach": "Help me practise the word \"reporter\". Explain the stressed syllable and give me a short sentence to say. Do not rate my pronunciation from text.",
+  "at.starter.exam-trainer": "Give me one short English exam-style reading question. Wait for my answer before explaining it.",
+  "at.starter.interview-coach": "Practise a job interview in English. Ask me about a skill I have, then wait for my answer."
 }
