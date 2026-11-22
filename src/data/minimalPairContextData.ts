@@ -1,0 +1,21 @@
+// Original context lines for the existing contrast bank. Not pronunciation scores.
+export const MINIMAL_PAIR_CONTEXT: Record<string, { a: string; b: string }> = {
+  'mp-1': { a: 'The sheep is eating grass near the fence.', b: 'The ship is leaving the port this morning.' },
+  'mp-2': { a: 'We leave the office at five every day.', b: 'We live in a small flat near the park.' },
+  'mp-3': { a: 'Please put the pen beside the notebook.', b: 'Please ask Ben to bring the notebook.' },
+  'mp-4': { a: 'The weather was bad during our trip.', b: 'There is a warm blanket on the bed.' },
+  'mp-5': { a: 'I think we should take an earlier train.', b: 'Please wash the cups in the kitchen sink.' },
+  'mp-6': { a: 'Breathe slowly before you start the exercise.', b: 'A cool breeze came through the open window.' },
+  'mp-7': { a: 'Can we share this table for a moment?', b: 'Can you move this chair beside the table?' },
+  'mp-8': { a: 'Put the heavy bags in the shopping cart.', b: 'Cut the bread into small pieces for lunch.' },
+  'mp-9': { a: 'Turn on the light before you read.', b: 'Turn right at the end of the street.' },
+  'mp-10': { a: 'The player picked up a wooden bat.', b: 'Give the dog a gentle pat on its back.' },
+  'mp-11': { a: 'Take a small sip of water before speaking.', b: 'The ship arrived at the port before noon.' },
+  'mp-12': { a: 'Please bring a chair for our guest.', b: 'Please share your ideas with the group.' },
+  'mp-13': { a: 'The station is very close to our hotel.', b: 'The ferry takes us across the river.' },
+  'mp-14': { a: 'The milk smells bad, so do not drink it.', b: 'She left a clean towel on the bed.' },
+  'mp-15': { a: 'He pushed the cart towards the entrance.', b: 'Please cut the apple into four pieces.' },
+  'mp-16': { a: 'We saw a sheep in the green field.', b: 'We saw a ship beside the old lighthouse.' },
+  'mp-17': { a: 'Close the gate after you enter the garden.', b: 'Get your coat before we go outside.' },
+  'mp-18': { a: 'Think about your answer before you speak.', b: 'Leave the empty glass beside the sink.' },
+};
