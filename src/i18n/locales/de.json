@@ -3079,5 +3079,11 @@
   "pa.navigator.position": "Kontrast {current} von {total}",
   "pa.navigator.previous": "Vorheriger Kontrast",
   "pa.navigator.next": "Nächster Kontrast",
-  "pa.navigator.note": "Sieh Wörter und Lautschrift vor der Auswahl. Ein Wechsel stoppt Audio und setzt Quiz und lokale Übung zurück."
+  "pa.navigator.note": "Sieh Wörter und Lautschrift vor der Auswahl. Ein Wechsel stoppt Audio und setzt Quiz und lokale Übung zurück.",
+  "rle.review.title": "Dein Gespräch nachlesen",
+  "rle.review.note": "Öffne jeden Schritt und sieh deine gewählte Antwort mit Erklärung. Vergleiche bei Bedarf eine passendere Option. Nur die Auswahl dieses Versuchs wird gezeigt, keine Aufnahme oder automatische Sprachbewertung. Neustart oder Verlassen löscht sie.",
+  "rle.review.turn": "Schritt {number}",
+  "rle.review.prompt": "Die Frage",
+  "rle.review.chosen": "Deine gewählte Antwort",
+  "rle.review.model": "Eine passendere Option vergleichen"
 }
