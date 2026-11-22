@@ -96,6 +96,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
   const { t, dir, lang } = useLanguage();
   // --- State ---
   const [activeMode, setActiveMode] = useState<AiTutorMode>('grammar-teacher');
+  const [sceneTask, setSceneTask] = useState('guided');
   const [sessions, setSessions] = useState<AiConversationSession[]>([]);
   const [activeSessionId, setActiveSessionId] = useState<string>('');
   const [inputMessage, setInputMessage] = useState('');
@@ -655,7 +656,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
       <section aria-label={t('at.photo.title')} className="overflow-hidden rounded-3xl border border-[#ffd166]/20 bg-[#121027] sm:grid sm:grid-cols-[220px_1fr]">
         <img key={activeMode} src={TUTOR_STARTER_PHOTOS[activeMode]} alt={t(`at.photo.${activeMode}`)} width={640} height={360} className="h-44 w-full object-cover sm:h-full sm:min-h-44" loading="lazy" />
-        <div className="space-y-3 p-4 sm:p-5"><h2 className="font-bold text-[#ffd166]">{t('at.photo.title')}</h2><p className="text-sm leading-7 text-slate-200">{t(`at.photo.${activeMode}`)}</p><p className="text-sm leading-7 text-slate-300">{t(`at.starter.${activeMode}`)}</p><button type="button" disabled={isTyping || Boolean(inputMessage.trim())} onClick={() => { speechAllowed.current = false; recognitionRef.current?.abort(); setIsRecordingVoice(false); setInputMessage(t(`at.starter.${activeMode}`)); }} className="min-h-11 rounded-xl border border-[#ffd166]/30 bg-[#ffd166]/15 px-4 text-sm font-bold text-[#ffd166] disabled:opacity-50">{t('at.photo.use')}</button><p className="text-xs leading-6 text-slate-400">{t('at.photo.note')}</p></div>
+        <div className="space-y-3 p-4 sm:p-5"><h2 className="font-bold text-[#ffd166]">{t('at.photo.title')}</h2><p className="text-sm leading-7 text-slate-200">{t(`at.photo.${activeMode}`)}</p><p className="text-sm leading-7 text-slate-300">{t(`at.starter.${activeMode}`)}</p><label htmlFor="tutor-scene-task" className="block text-sm font-bold text-slate-200">{t('at.photo.task')}</label><select id="tutor-scene-task" value={sceneTask} onChange={event => setSceneTask(event.target.value)} className="min-h-12 w-full rounded-xl border border-white/20 bg-[#0c0b20] px-3 text-sm text-white">{['guided','try','challenge'].map(task => <option key={task} value={task}>{t(`at.photo.task.${task}`)}</option>)}</select>{sceneTask !== 'guided' && <p className="text-sm leading-7 text-cyan-100">{t(`at.photo.request.${sceneTask}`)}</p>}<button type="button" disabled={isTyping || Boolean(inputMessage.trim())} onClick={() => { speechAllowed.current = false; recognitionRef.current?.abort(); setIsRecordingVoice(false); setInputMessage(t(`at.starter.${activeMode}`) + (sceneTask === 'guided' ? '' : ' ' + t(`at.photo.request.${sceneTask}`))); }} className="min-h-11 rounded-xl border border-[#ffd166]/30 bg-[#ffd166]/15 px-4 text-sm font-bold text-[#ffd166] disabled:opacity-50">{t('at.photo.use')}</button><p className="text-xs leading-6 text-slate-400">{t('at.photo.note')}</p></div>
       </section>
 
       {/* 4. History Sessions Panel (Collapsible Drawer) */}

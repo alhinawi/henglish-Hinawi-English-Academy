@@ -3049,5 +3049,11 @@
   "tpr.photo.travel": "A hand holds a passport above a map.",
   "tpr.photo.work": "People take notes around a shared table.",
   "tpr.photo.discussion": "Colleagues watch a presentation in an office.",
-  "tpr.photo.note": "Illustrative stock photo for this practice theme, not the exact event in the sentence or Henglish staff or learners."
+  "tpr.photo.note": "Illustrative stock photo for this practice theme, not the exact event in the sentence or Henglish staff or learners.",
+  "at.photo.task": "How would you like to practise?",
+  "at.photo.task.guided": "Start with the original idea",
+  "at.photo.task.try": "Let me try before showing a model",
+  "at.photo.task.challenge": "Give me a follow-up challenge",
+  "at.photo.request.try": "Give me one short task related to this topic and wait for my answer before showing a model. After I answer, explain one useful improvement. Do not infer my overall level from one answer.",
+  "at.photo.request.challenge": "Give me one new situation related to this topic that changes an important detail. Ask me to respond first, then give specific feedback on my wording. Do not give an overall proficiency or pronunciation score."
 }
