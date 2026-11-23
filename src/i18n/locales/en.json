@@ -3299,5 +3299,8 @@
   "pa.questionMeaning.title": "Need the question in Egyptian Arabic?",
   "pa.questionMeaning.note": "Optional meaning help for the question, not a model answer. Try your own English answer and give a reason or example.",
   "at.goalIdeas.title": "Need a practice goal?",
-  "at.goalIdeas.note": "Choose an original starter goal for this assistant, then edit it if you like. This fills only the goal field. Clear your existing goal first to replace it. Nothing is sent, and AI responses are not guaranteed."
+  "at.goalIdeas.note": "Choose an original starter goal for this assistant, then edit it if you like. This fills only the goal field. Clear your existing goal first to replace it. Nothing is sent, and AI responses are not guaranteed.",
+  "tpr.reflection.label": "What did you change, and why? (optional)",
+  "tpr.reflection.note": "Name one change to meaning, tense or natural wording. Explain why it is better, or write a question you still have. You can use English or Arabic.",
+  "tpr.reflection.privacy": "Private notes, up to 500 characters. Kept separately for each task while this practice tab is open. Nothing is sent or scored; leaving the tab clears these notes."
 }
