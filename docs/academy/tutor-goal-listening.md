@@ -1,0 +1,5 @@
+# Listen to an assistant practice goal
+
+Each of the21original English goal suggestions across7assistant modes now has a separate explicit listening control. Reuses the existing English speech pipeline, with no autoplay and a disabled state while the assistant is typing. Mode-keyed controls use existing owned-speech cleanup. Choosing a goal still only fills the goal field; listening does not select a goal, fill the composer or send a message. Egyptian Arabic meaning disclosures and nonempty-goal protection remain. EN/AR/DE labels. TeacherDashboard untouched.
+
+Verification:268 offline regressions, locale check, full TypeScript/Next export passed. New listening-control UI suite and existing suggestion suite passed EN/AR390 all7modes/21goals: explicit enabled idle controls, closed optional meanings, goal-only selection, nonempty protection, composer preservation, explicit add/no autosend. Actual local screenshots inspected: readable, no overflow, دخول visible. Listening controls were not played in UI checks; no actual audio/backend reply claim. Existing shared speech control supplies playback/error/stop behavior.
