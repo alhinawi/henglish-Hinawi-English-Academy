@@ -3361,5 +3361,13 @@
   "pa.soundReview.note": "Optional private reflection, not a pronunciation score. Use the word or model listening controls with recording practice closed, then compare your own recording. Accents vary; you do not need to copy an accent.",
   "rle.vocabSource.hide": "Hide the example while I write",
   "rle.vocabSource.show": "Show the example again",
-  "rle.vocabSource.note": "Hide the example, its meaning and listening control to try your own sentence without copying. Your private sentence stays; showing the example again does not check or grade it."
+  "rle.vocabSource.note": "Hide the example, its meaning and listening control to try your own sentence without copying. Your private sentence stays; showing the example again does not check or grade it.",
+  "ms.retellingFocus.label": "Choose one focus for the second version",
+  "ms.retellingFocus.meaning": "Keep the meaning",
+  "ms.retellingFocus.clarity": "Make the wording clearer",
+  "ms.retellingFocus.detail": "Remove unsupported details",
+  "ms.retellingFocus.prompt.meaning": "Check who did what, the reason and the speaker's intention. Keep those facts the same when you rewrite.",
+  "ms.retellingFocus.prompt.clarity": "Choose simpler words and make the links between ideas clear. Change the wording, not the source meaning.",
+  "ms.retellingFocus.prompt.detail": "Compare with the source. Remove any facts you added that the source does not support.",
+  "ms.retellingFocus.chosen": "Your chosen revision focus"
 }
