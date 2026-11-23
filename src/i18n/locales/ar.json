@@ -3526,5 +3526,13 @@
   "tpr.wordFocus.prompt.meaning": "اتأكد إن الكلمة محتفظة بالمعنى اللي تقصده. غير صياغتك من غير ما تغير المعنى ده.",
   "tpr.wordFocus.prompt.form": "راجع صيغة الكلمة والكلمات اللي محتاجاها جنبها في جملتك.",
   "tpr.wordFocus.prompt.context": "ضيف أو غير تفصيلة مفيدة عشان الكلمة تناسب موقف واضح من عندك.",
-  "tpr.wordFocus.chosen": "التركيز اللي اخترته"
+  "tpr.wordFocus.chosen": "التركيز اللي اخترته",
+  "sp.topicFocus.label": "اختار حاجة أركز عليها في الجملة التانية",
+  "sp.topicFocus.meaning": "المعنى",
+  "sp.topicFocus.form": "صيغة التعبير",
+  "sp.topicFocus.context": "موقف الحوار",
+  "sp.topicFocus.prompt.meaning": "اتأكد إن التعبير محتفظ بالمعنى اللي تقصده. استخدم المعنى العربي كتلميح، مش جملة كاملة تنقلها.",
+  "sp.topicFocus.prompt.form": "راجع التعبير والكلمات اللي حواليه. غير اللي محتاج يناسب جملتك من غير ما تضيع التعبير.",
+  "sp.topicFocus.prompt.context": "ضيف أو غير تفصيلة مفيدة عشان التعبير يناسب موقف الحوار ده.",
+  "sp.topicFocus.chosen": "التركيز اللي اخترته"
 }

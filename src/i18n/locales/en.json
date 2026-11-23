@@ -3526,5 +3526,13 @@
   "tpr.wordFocus.prompt.meaning": "Check that this word keeps the meaning you intend. Change your wording without changing that meaning.",
   "tpr.wordFocus.prompt.form": "Check the word form and the nearby words it needs in your sentence.",
   "tpr.wordFocus.prompt.context": "Add or change a useful detail so this word fits a clear situation of your own.",
-  "tpr.wordFocus.chosen": "My chosen focus"
+  "tpr.wordFocus.chosen": "My chosen focus",
+  "sp.topicFocus.label": "Choose one focus for my second sentence",
+  "sp.topicFocus.meaning": "Meaning",
+  "sp.topicFocus.form": "Expression form",
+  "sp.topicFocus.context": "Role-play situation",
+  "sp.topicFocus.prompt.meaning": "Check that the expression keeps the meaning you intend. Use the Arabic meaning as a hint, not a whole sentence to copy.",
+  "sp.topicFocus.prompt.form": "Check the expression and the words around it. Change what needs to fit your sentence without losing the expression.",
+  "sp.topicFocus.prompt.context": "Add or change a useful detail so your expression fits this role-play situation.",
+  "sp.topicFocus.chosen": "My chosen focus"
 }
