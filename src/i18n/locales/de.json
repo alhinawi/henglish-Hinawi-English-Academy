@@ -3406,5 +3406,10 @@
   "at.privateRehearsal.clear": "Meinen privaten Versuch löschen",
   "at.privateRehearsal.privacy": "Nichts hier wird an den Assistenten gesendet, in eine Nachricht kopiert, gespeichert oder bewertet. Zuklappen behält den Versuch. Ein anderer Assistent oder das Verlassen verwirft ihn. Für Feedback schreibe selbst eine Nachricht und wähle Senden.",
   "tpr.meaningChecks.title": "Die Bedeutung dieser Aufgabe prüfen (freiwillig)",
-  "tpr.meaningChecks.note": "Vergleiche deine Übersetzung mit Quelle und Beispielen anhand dieser aufgabenspezifischen englischen Fragen. Markiere nur, was deine Version deiner Meinung nach bewahrt. Private Selbstprüfung, keine Note oder Pflicht, einem Muster genau zu folgen. Zuklappen behält Markierungen; Beispiele ausblenden, Aufgabenwechsel oder Verlassen verwirft sie. Entwurf und Überarbeitung bleiben unverändert."
+  "tpr.meaningChecks.note": "Vergleiche deine Übersetzung mit Quelle und Beispielen anhand dieser aufgabenspezifischen englischen Fragen. Markiere nur, was deine Version deiner Meinung nach bewahrt. Private Selbstprüfung, keine Note oder Pflicht, einem Muster genau zu folgen. Zuklappen behält Markierungen; Beispiele ausblenden, Aufgabenwechsel oder Verlassen verwirft sie. Entwurf und Überarbeitung bleiben unverändert.",
+  "pa.ownSentences.title": "Beide Wörter in eigenen Sätzen verwenden (freiwillig)",
+  "pa.ownSentences.note": "Schreibe für jedes Wort einen anderen englischen Satz mit bis zu 300 Zeichen. Zeige durch den Kontext die gemeinte Bedeutung und sprich beide Sätze laut. Dies sind deine Versuche, keine neuen Musterlösungen. Geschriebene Sätze können die Genauigkeit deiner Laute nicht prüfen.",
+  "pa.ownSentences.label": "Mein Satz mit",
+  "pa.ownSentences.clear": "Meinen Satz löschen für",
+  "pa.ownSentences.privacy": "Privat und getrennt von Quizantworten und Aufnahme. Zuklappen, Aufnahmemodus wechseln oder den Recorder öffnen behält die Entwürfe. Ein anderes Wortpaar oder Verlassen verwirft sie. Nichts wird gesendet, gespeichert oder bewertet."
 }
