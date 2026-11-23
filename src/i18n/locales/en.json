@@ -3274,5 +3274,8 @@
   "pa.photoNav.label": "Photo practice navigation",
   "pa.photoNav.position": "Photo {current} of {total}",
   "pa.photoNav.previous": "Previous photo",
-  "pa.photoNav.next": "Next photo"
+  "pa.photoNav.next": "Next photo",
+  "pa.photoChallenge.title": "Try a follow-up challenge (optional)",
+  "pa.photoChallenge.note": "Go beyond naming things. Imagine a situation connected to the photo; more than one answer can work.",
+  "pa.photoChallenge.try": "Use a word from the wordbank and add a reason or example. Try two short sentences aloud or use the private sentence planner. This is self-study, not a test or pronunciation grade."
 }
