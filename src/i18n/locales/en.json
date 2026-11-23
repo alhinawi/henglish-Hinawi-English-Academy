@@ -3297,5 +3297,7 @@
   "sp.topicReview.title": "Check the topic, too",
   "sp.topicReview.note": "Optional English can-do checks for this lesson. Use only the points that fit your chosen task. Leave the others unchecked. These are private reflections, not a score or completion requirement.",
   "pa.questionMeaning.title": "Need the question in Egyptian Arabic?",
-  "pa.questionMeaning.note": "Optional meaning help for the question, not a model answer. Try your own English answer and give a reason or example."
+  "pa.questionMeaning.note": "Optional meaning help for the question, not a model answer. Try your own English answer and give a reason or example.",
+  "at.goalIdeas.title": "Need a practice goal?",
+  "at.goalIdeas.note": "Choose an original starter goal for this assistant, then edit it if you like. This fills only the goal field. Clear your existing goal first to replace it. Nothing is sent, and AI responses are not guaranteed."
 }
