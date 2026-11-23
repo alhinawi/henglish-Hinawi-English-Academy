@@ -3443,5 +3443,9 @@
   "pa.responseRetry.note": "Behalte diese Antwort als erste Version und schreibe eine weitere Antwort auf dieselbe Bildfrage. Freiwillige manuelle Übung ohne automatischen Vergleich oder Bewertung.",
   "pa.responseRetry.start": "Erste Antwort behalten und erneut versuchen",
   "pa.responseRetry.first": "Meine erste Antwort auf diese Bildfrage",
-  "pa.responseRetry.compare": "Vergleiche beide Versionen mit der Frage oben. Enthält die zweite Antwort das geforderte Detail oder den Grund? Löschen entfernt nur die aktuelle Version. Bildwechsel oder Verlassen verwirft beide."
+  "pa.responseRetry.compare": "Vergleiche beide Versionen mit der Frage oben. Enthält die zweite Antwort das geforderte Detail oder den Grund? Löschen entfernt nur die aktuelle Version. Bildwechsel oder Verlassen verwirft beide.",
+  "pa.photo.garden": "Gartengeräte und Erde",
+  "pa.photo.food": "Ein Nudelgericht",
+  "pa.photo.hotel": "Ein Hotel am Pool",
+  "pa.photo.museum": "Ein Museumssaal"
 }

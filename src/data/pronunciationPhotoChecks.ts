@@ -47,5 +47,9 @@ export const PRONUNCIATION_PHOTO_CHECKS: Record<string,readonly [string,string]>
   "bookshop": [
     "I compared the /t\u0283/ at the start of choose with /\u0283/ at the start of shelf.",
     "I checked that choose began with a brief stop before the air sound."
-  ]
+  ],
+ garden:["I listened for /s/ at the start of soil, seed and sun.", "I tried keeping that air sound clear without adding a vowel before it."],
+ food:["I listened for /p/ at the start of plate, pasta and pepper.", "I checked for a brief lip closure before the air release in those words."],
+ hotel:["I listened for /h/ at the start of hotel, holiday and here.", "I tried a gentle breath at the start without adding a stronger throat sound."],
+ museum:["I listened for /r/ in room and frame, allowing for accent differences.", "I compared those sounds with art, where /r/ can vary across English accents."],
 };
