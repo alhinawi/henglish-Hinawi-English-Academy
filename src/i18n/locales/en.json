@@ -3404,5 +3404,7 @@
   "at.privateRehearsal.note": "Use your chosen goal to write a short English attempt before asking the assistant. For sound practice, written notes cannot check your pronunciation. This field is separate from the goal, starter request and chat message.",
   "at.privateRehearsal.label": "My private practice attempt (up to 700 characters)",
   "at.privateRehearsal.clear": "Clear my private attempt",
-  "at.privateRehearsal.privacy": "Nothing here is sent to the assistant, copied into a message, saved or graded. Collapsing keeps this attempt. Switching assistant or leaving discards it. To request feedback, write a message yourself and choose Send."
+  "at.privateRehearsal.privacy": "Nothing here is sent to the assistant, copied into a message, saved or graded. Collapsing keeps this attempt. Switching assistant or leaving discards it. To request feedback, write a message yourself and choose Send.",
+  "tpr.meaningChecks.title": "Check the meaning of this task (optional)",
+  "tpr.meaningChecks.note": "Compare your translation with the source and examples using these task-specific English questions. Mark only what you think your version preserves. This is private self-review, not a grade or a requirement to match one model. Collapsing keeps marks; hiding examples, changing task or leaving discards them. Your draft and revision are unchanged."
 }
