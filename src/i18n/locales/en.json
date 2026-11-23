@@ -3447,5 +3447,14 @@
   "pa.photo.garden": "Gardening tools and soil",
   "pa.photo.food": "A pasta dish",
   "pa.photo.hotel": "A hotel beside a pool",
-  "pa.photo.museum": "A museum gallery"
+  "pa.photo.museum": "A museum gallery",
+  "ms.recallFocus.label": "Choose one focus for the second listen",
+  "ms.recallFocus.chosen": "My second-listen focus",
+  "ms.recallFocus.words": "Catch the key words",
+  "ms.recallFocus.smallWords": "Listen for small words",
+  "ms.recallFocus.spelling": "Check spelling and word endings",
+  "ms.recallFocus.prompt.words": "Listen again for the main words you missed. Compare them with the reviewed caption before trying again.",
+  "ms.recallFocus.prompt.smallWords": "Listen for short words such as a, the, to or and, if they occur in this caption. Do not add words that you cannot hear.",
+  "ms.recallFocus.prompt.spelling": "Compare the spelling and endings in your first draft with the reviewed caption. Listen again before writing the second draft.",
+  "ms.recallFocus.clear": "Clear my current draft"
 }
