@@ -73,6 +73,7 @@ const checks = [
   'check-minimal-pair-navigation.cjs',
   'check-speaking-transfer-practice.cjs',
   'check-speaking-followup-meanings.cjs',
+  'check-speaking-followup-private-replies.cjs',
   'check-speaking-lesson-followups.cjs',
   'check-speaking-transfer-review.cjs',
   'check-tutor-scene-tasks.cjs',
