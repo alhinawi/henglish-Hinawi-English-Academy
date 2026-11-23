@@ -35,6 +35,7 @@ const checks = [
   'check-tutor-goal-suggestions.cjs',
   'check-tutor-fourth-goals.cjs',
   'check-tutor-fifth-goals.cjs',
+  'check-tutor-sixth-goals.cjs',
   'check-pronunciation-question-meanings.cjs',
   'check-speaking-topic-review.cjs',
   'check-movie-own-source-recall.cjs',
