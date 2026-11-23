@@ -3542,5 +3542,13 @@
   "pa.wordFocus.prompt.sound": "Keep this word in your second sentence. Make the sentence comfortable to say, then practise the target sound aloud. This does not check your pronunciation.",
   "pa.wordFocus.prompt.meaning": "Check how you used this word in your first sentence. Write another sentence that makes its meaning clear.",
   "pa.wordFocus.prompt.photo": "Use this word with one useful detail from the photo, or a detail you imagine for this situation.",
-  "pa.wordFocus.chosen": "My chosen focus"
+  "pa.wordFocus.chosen": "My chosen focus",
+  "rle.vocabFocus.label": "Choose one focus for my second sentence",
+  "rle.vocabFocus.meaning": "Clear meaning",
+  "rle.vocabFocus.polite": "Polite request or question",
+  "rle.vocabFocus.detail": "Useful situation detail",
+  "rle.vocabFocus.prompt.meaning": "Use this expression in a new sentence that makes its meaning clear. Compare your use with the definition and example yourself.",
+  "rle.vocabFocus.prompt.polite": "Use this expression in a polite request or question that you could say in this practice situation.",
+  "rle.vocabFocus.prompt.detail": "Keep this expression and add or change one useful detail for this practice situation. Use imaginary details, not private information.",
+  "rle.vocabFocus.chosen": "My chosen focus"
 }
