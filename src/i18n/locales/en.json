@@ -3096,7 +3096,7 @@
   "ms.own.echo": "Echo the source",
   "ms.own.own": "Use my own words",
   "ms.own.title": "Keep the meaning, change the words",
-  "ms.own.task": "Say this source line in a different way. Keep the speaker's main meaning and intention. Use English you know. The reference stays visible, but no model paraphrase or automatic grade is provided.",
+  "ms.own.task": "Say this source line in a different way. Keep the speaker's main meaning and intention. Use English you know. You can hide the source in this exercise to practise from memory. No model paraphrase or automatic grade is provided.",
   "ms.own.plan": "Private planning notes",
   "ms.own.note": "Notes stay only in this open practice. Changing task or cue, closing or leaving the clip clears notes and recordings. Nothing is sent or graded.",
   "ms.own.record": "Express the source line in your own English words, keeping its meaning and intention.",
@@ -3288,5 +3288,10 @@
   "tpr.compare.revision": "My revised version",
   "rle.variation.title": "Try a different situation (optional)",
   "rle.variation.note": "Choose one original variation and answer in your own English. You can invent details and use the private plan below. Language practice only, not a real booking, purchase or medical advice.",
-  "rle.variation.number": "Variation {number}"
+  "rle.variation.number": "Variation {number}",
+  "ms.own.sourceCue": "Reviewed cue",
+  "ms.own.sourceHide": "Hide source in this exercise",
+  "ms.own.sourceShow": "Show source again",
+  "ms.own.sourceHidden": "Retell the meaning from memory. The source is hidden here and in this exercise’s cue menu only, not in the player transcript. Your private plan stays unchanged. Reveal it to check the meaning, then try again.",
+  "ms.own.sourceVisible": "Read for meaning, then hide this exercise’s source and retell it in your own words. This is optional memory practice, not a test or a score."
 }
