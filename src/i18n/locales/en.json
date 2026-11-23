@@ -3393,5 +3393,9 @@
   "sp.roleRetry.note": "Keep this first reply and try another way to say it. The second version is optional and private.",
   "sp.roleRetry.start": "Keep my first reply and try again",
   "sp.roleRetry.first": "Your first reply",
-  "sp.roleRetry.compare": "Compare your two replies. Is the meaning still right for this turn? Which version would you say aloud? Neither version is checked or scored."
+  "sp.roleRetry.compare": "Compare your two replies. Is the meaning still right for this turn? Which version would you say aloud? Neither version is checked or scored.",
+  "pa.photoResponse.title": "Write my follow-up answer (optional)",
+  "pa.photoResponse.label": "My answer to the photo question (up to 700 characters)",
+  "pa.photoResponse.clear": "Clear my follow-up answer",
+  "pa.photoResponse.note": "Answer the question above in your own English. The sentence frames can help you start, but they are not complete answers. This is separate from your sentence plan and recording, with no automatic correction or score. Collapsing or revealing help keeps your answer. Changing photo or leaving this academy discards it. Nothing is sent or saved."
 }

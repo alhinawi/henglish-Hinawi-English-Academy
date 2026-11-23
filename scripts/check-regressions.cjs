@@ -40,6 +40,7 @@ const checks = [
   'check-pronunciation-photo-navigation.cjs',
   'check-pronunciation-photo-challenges.cjs',
   'check-pronunciation-photo-plan.cjs',
+  'check-pronunciation-photo-response.cjs',
   'check-pronunciation-photo-review.cjs',
   'check-pronunciation-photo-words.cjs',
   'check-pronunciation-photo-meanings.cjs',
