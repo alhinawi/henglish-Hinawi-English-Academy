@@ -3157,5 +3157,8 @@
   "sa.status.done": "Completed",
   "sa.status.note": "Based on saved lesson completion, not a test of speaking ability. Counts cover the whole academy; level and search filters still apply to the results. Opening a lesson does not complete it.",
   "pa.context.listen": "Listen to the completed sentence",
-  "pa.context.listenNote": "Choose the word that fits first. A listening control appears after a correct choice, while the recorder is closed. Close recording practice to listen again."
+  "pa.context.listenNote": "Choose the word that fits first. A listening control appears after a correct choice, while the recorder is closed. Close recording practice to listen again.",
+  "rle.review.listen.prompt": "Listen to the conversation prompt",
+  "rle.review.listen.chosen": "Listen to my selected reply",
+  "rle.review.listen.model": "Listen to the stronger alternative"
 }
