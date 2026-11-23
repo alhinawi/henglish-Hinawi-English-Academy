@@ -12,4 +12,8 @@ export const PRONUNCIATION_PHOTO_RESPONSE_CHECKS:Record<string,readonly string[]
  map:['I said what I would pack to explore a new place.','I explained how one packed item would help.'],
  writing:['I gave advice for writing a short report.','I included a clear example of that advice.'],
  bookshop:['I explained how I would choose a book as a gift.','I said what I would want to know before choosing.'],
+ garden:["I named something I would grow in a small garden.", "I explained what I would need to care for it."],
+ food:["I named a meal I would prepare for a friend.", "I described one ingredient and explained why I would use it."],
+ hotel:["I said what I would ask before choosing a hotel.", "I explained why that detail matters to me."],
+ museum:["I named something I would like to see in a museum.", "I explained what I would want to learn about it."],
 };
