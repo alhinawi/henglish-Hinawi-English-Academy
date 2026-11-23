@@ -3240,5 +3240,7 @@
   "ms.ownReview.check.1": "Ich habe anders formuliert, statt den Ausgangstext nur zu wiederholen.",
   "ms.ownReview.check.2": "Meine neue Fassung ist klar und fügt keine unbelegten Details hinzu.",
   "ms.ownReview.target": "Eine Änderung für den nächsten Versuch (optional, 300 Zeichen)",
-  "ms.ownReview.next": "Versuche es erneut mit einer Änderung. Einklappen behält Markierungen und Notizen; Aufgaben- oder Satzwechsel, Schließen oder Verlassen des Clips verwirft sie. Nichts wird gesendet oder gespeichert."
+  "ms.ownReview.next": "Versuche es erneut mit einer Änderung. Einklappen behält Markierungen und Notizen; Aufgaben- oder Satzwechsel, Schließen oder Verlassen des Clips verwirft sie. Nichts wird gesendet oder gespeichert.",
+  "rle.vocabExample.title": "Englisches Beispiel ansehen (optional)",
+  "rle.vocabExample.note": "Eigenes Sprachübungsbeispiel, keine echte Buchung, Preisangabe, persönliche Aussage oder medizinische Beratung. Im Abrufmodus bleibt es bis zur Bedeutungsanzeige verborgen."
 }

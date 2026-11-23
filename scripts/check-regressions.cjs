@@ -41,6 +41,7 @@ const checks = [
   'check-movie-catalog-recovery.cjs',
   'check-minimal-pair-rehearsal.cjs',
   'check-scenario-vocabulary-recall.cjs',
+  'check-scenario-vocabulary-examples.cjs',
   'check-translation-practice-library.cjs',
   'check-movie-cue-speaking.cjs',
   'check-real-life-photo-library.cjs',
