@@ -9,6 +9,7 @@ const checks = [
   'check-pronunciation-photo-answer-frames.cjs',
   'check-speaking-topic-word-recall.cjs',
   'check-speaking-topic-word-sentences.cjs',
+  'check-speaking-topic-word-retry.cjs',
   'check-tutor-goal-listening.cjs',
   'check-tutor-private-rehearsal.cjs',
   'check-tutor-rehearsal-retry.cjs',
