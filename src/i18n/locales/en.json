@@ -3144,5 +3144,7 @@
   "tpr.help.open": "Show context and vocabulary",
   "tpr.help.close": "Hide context and vocabulary",
   "tpr.help.context": "Context hint, in Arabic",
-  "tpr.help.words": "Words and phrases, English and Arabic"
+  "tpr.help.words": "Words and phrases, English and Arabic",
+  "ms.recall.listen": "Listen again from this cue",
+  "ms.recall.listenNote": "Starts the video at this reviewed cue and continues within the current clip. Pause it when you have heard enough. The source text remains above in the player; this practice does not hide it there."
 }
