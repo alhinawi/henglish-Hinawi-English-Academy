@@ -3378,5 +3378,9 @@
   "tpr.revisionFocus.prompt.meaning": "Vergleiche Quelle und beide Fassungen. Prüfe, wer was getan hat, Verneinungen, Zahlen sowie fehlende oder ergänzte Fakten. Erkläre unten eine Änderung.",
   "tpr.revisionFocus.prompt.tense": "Prüfe den Zeitpunkt und ob die Handlung abgeschlossen ist oder andauert. Prüfe Zeitform, Subjekt und Wortstellung. Erkläre unten eine Änderung.",
   "tpr.revisionFocus.prompt.natural": "Lies deine überarbeitete Fassung auf Wunsch laut. Suche natürliche Formulierungen in der Zielsprache, ohne die Bedeutung zu ändern. Erkläre unten eine Änderung.",
-  "at.goalListen.label": "Ziel {number} anhören"
+  "at.goalListen.label": "Ziel {number} anhören",
+  "sp.topicRecall.hide": "Englischen Ausdruck ausblenden",
+  "sp.topicRecall.show": "Englischen Ausdruck zeigen",
+  "sp.topicRecall.hidden": "Englischer Ausdruck ausgeblendet",
+  "sp.topicRecall.note": "Erinnere dich mit der arabischen Bedeutung an den englischen Ausdruck und zeige ihn zum Vergleichen. Freiwillige Übung, keine Bewertung."
 }
