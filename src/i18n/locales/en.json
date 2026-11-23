@@ -3168,5 +3168,12 @@
   "ms.recall.firstDraft": "Your first draft",
   "ms.recall.compareDrafts": "Compare your first draft, current draft and the source caption. What did you notice about the words and their order?",
   "pa.photo.listen": "Listen to the example sentence",
-  "pa.photo.listenNote": "Compare the sounds and word stress with your own sentence. Listening is optional and does not grade pronunciation. Close the recorder to listen."
+  "pa.photo.listenNote": "Compare the sounds and word stress with your own sentence. Listening is optional and does not grade pronunciation. Close the recorder to listen.",
+  "sp.transferReview.title": "Review your speaking, choose one thing to retry",
+  "sp.transferReview.note": "After speaking, listen to your recording if you made one, or think back to what you said. These are your own notes, not an assessment. They are not sent or saved. Changing the task or closing practice discards them.",
+  "sp.transferReview.check.0": "I answered the changed situation, rather than repeating the original dialogue.",
+  "sp.transferReview.check.1": "I used a phrase from this lesson with a detail of my own.",
+  "sp.transferReview.check.2": "I gave a reason, extra detail or follow-up question where it fit.",
+  "sp.transferReview.target": "One small change for my next attempt",
+  "sp.transferReview.next": "Choose one change, such as a clearer detail or a different phrase. Say it again when ready. Starting another recording replaces the previous recording only when it succeeds; download is not automatic."
 }
