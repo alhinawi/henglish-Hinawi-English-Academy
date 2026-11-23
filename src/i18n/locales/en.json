@@ -3228,5 +3228,10 @@
   "rle.transferReview.sim-clothing-shopping.2": "I asked before deciding to buy.",
   "rle.transferReview.sim-supermarket-shopping.0": "I pointed out the shelf and checkout price difference politely.",
   "rle.transferReview.sim-supermarket-shopping.1": "I asked someone to check the price.",
-  "rle.transferReview.sim-supermarket-shopping.2": "I asked for the confirmed price before paying."
+  "rle.transferReview.sim-supermarket-shopping.2": "I asked for the confirmed price before paying.",
+  "pa.photoPlan.title": "Plan your own photo sentence (optional)",
+  "pa.photoPlan.note": "Try your own sentence using a word from the wordbank before opening the example. This private draft is not checked, scored or sent. It stays only in this photo practice; changing the photo or leaving discards it.",
+  "pa.photoPlan.label": "My sentence in English (up to 500 characters)",
+  "pa.photoPlan.clear": "Clear my sentence",
+  "pa.photoPlan.next": "Say your sentence aloud, then compare it with the example if useful. More than one sentence can fit the photo. Opening the example or recorder does not replace your draft."
 }
