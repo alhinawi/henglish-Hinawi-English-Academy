@@ -49,6 +49,7 @@ const checks = [
   'check-scenario-vocabulary-drafts.cjs',
   'check-translation-practice-library.cjs',
   'check-translation-task-picker.cjs',
+  'check-translation-wordbank-audio.cjs',
   'check-movie-cue-speaking.cjs',
   'check-real-life-photo-library.cjs',
   'check-vowel-workshop.cjs',
