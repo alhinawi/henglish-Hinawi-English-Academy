@@ -3397,5 +3397,7 @@
   "pa.photoResponse.title": "Meine Antwort zur Zusatzfrage schreiben (freiwillig)",
   "pa.photoResponse.label": "Meine Antwort zur Fotofrage (bis zu 700 Zeichen)",
   "pa.photoResponse.clear": "Meine Antwort löschen",
-  "pa.photoResponse.note": "Beantworte die Frage oben mit deinen eigenen englischen Worten. Die Satzanfänge können helfen, sind aber keine vollständigen Antworten. Getrennt von Satzplan und Aufnahme, ohne automatische Korrektur oder Bewertung. Zuklappen oder Hilfen anzeigen behält die Antwort. Ein anderes Foto oder das Verlassen der Akademie verwirft sie. Nichts wird gesendet oder gespeichert."
+  "pa.photoResponse.note": "Beantworte die Frage oben mit deinen eigenen englischen Worten. Die Satzanfänge können helfen, sind aber keine vollständigen Antworten. Getrennt von Satzplan und Aufnahme, ohne automatische Korrektur oder Bewertung. Zuklappen oder Hilfen anzeigen behält die Antwort. Ein anderes Foto oder das Verlassen der Akademie verwirft sie. Nichts wird gesendet oder gespeichert.",
+  "rle.variationReview.title": "Meine Antwort für diese Situation prüfen (freiwillig)",
+  "rle.variationReview.note": "Markiere nach dem Schreiben oder Sprechen nur, was du selbst in deiner Antwort erkennst. Dies sind situationsbezogene Sprachprüfpunkte, keine automatische Bewertung, Fachberatung oder Bestätigung deiner Fähigkeiten. Du kannst sie leer lassen. Schließen oder Wiederholen verwirft die Markierungen."
 }
