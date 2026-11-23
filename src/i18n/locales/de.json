@@ -3190,5 +3190,12 @@
   "pa.photo.airport": "Ein Flugzeug am Flughafengate",
   "pa.photo.map": "Eine Karte mit Kamera und Tasche",
   "pa.photo.writing": "Eine Person schreibt neben einem Laptop",
-  "pa.photo.bookshop": "Eine Hand wählt ein Buch aus dem Regal"
+  "pa.photo.bookshop": "Eine Hand wählt ein Buch aus dem Regal",
+  "at.support.label": "Sprachhilfe für diesen Einstieg (freiwillig)",
+  "at.support.none": "Keine Sprachvorgabe hinzufügen",
+  "at.support.choice.english": "Übung und Erklärungen nur auf Englisch",
+  "at.support.choice.arabic": "Englisch üben mit arabischen Erklärungen",
+  "at.support.note": "Deine Präferenz ergänzt die genaue Vorschau unten. Sie ändert weder den aktuellen Entwurf noch die Oberflächensprache und sendet keine Nachricht. Die Antwort des Tutors ist nicht garantiert.",
+  "at.support.request.english": "Halte Übungen und Erklärungen auf Englisch. Wenn ich nicht weiterkomme, gib vor der Antwort einen einfacheren englischen Hinweis.",
+  "at.support.request.arabic": "Stelle Übungsfragen und Beispiele auf Englisch. Erkläre schwierige Punkte kurz auf Arabisch und kehre dann zur Englischübung zurück."
 }
