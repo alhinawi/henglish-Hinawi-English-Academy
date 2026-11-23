@@ -7,7 +7,7 @@ assert(player.includes('key={`${scene.youtubeId}:${start}:${end}`}'));
 assert(player.includes('player.current?.pauseVideo?.(); setPlaying(false);'));
 assert(panel.includes("<SpeakingRecorder key={`${cue.id}:${mode}`} prompt={mode==='echo'?cue.en:t('ms.own.record')}/>"));
 assert(panel.includes('onClickCapture={onPause}'));
-assert(panel.includes("onChange={event => { onPause(); setSelectedId(event.target.value); setMode('echo'); setPlan(''); }}"));
+assert(panel.includes("onChange={event => { onPause(); setSelectedId(event.target.value); setMode('echo'); setPlan(''); setSourceHidden(false); }}"));
 assert(panel.includes('{open &&'));
 assert(!panel.includes('localStorage'));assert(!panel.includes('fetch('));
 for(const lang of ['en','ar','de']){const d=JSON.parse(fs.readFileSync('src/i18n/locales/'+lang+'.json'));for(const key of ['ms.echoTitle','ms.echoIntro','ms.echoOpen','ms.echoClose','ms.echoChoose','ms.echoSteps','ms.echoNote'])assert(d[key]);}
