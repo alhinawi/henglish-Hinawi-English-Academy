@@ -3316,5 +3316,9 @@
   "pa.questionAudio.listen": "Listen to the follow-up question",
   "pa.questionAudio.note": "Listen to the question, then answer in your own words. This is not an example answer. Close recording practice to listen again.",
   "rle.variationStarters.title": "Need a phrase to start?",
-  "rle.variationStarters.note": "Optional language scaffolds, not complete answers. Replace the dots with your own details and change the wording if needed. For imaginary role-play only, not medical or other professional advice."
+  "rle.variationStarters.note": "Optional language scaffolds, not complete answers. Replace the dots with your own details and change the wording if needed. For imaginary role-play only, not medical or other professional advice.",
+  "ms.retellingRetry.start": "Try a second version",
+  "ms.retellingRetry.note": "Keep the first written attempt below and start a blank second version. Your plan and recording are not changed. Both versions are private and discarded together when you change cue or mode, close practice or leave the clip.",
+  "ms.retellingRetry.first": "Your first written attempt",
+  "ms.retellingRetry.compare": "Compare the two versions. Did you keep the source meaning? Which wording is clearer? Neither version is automatically checked or scored."
 }
