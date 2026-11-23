@@ -3404,5 +3404,7 @@
   "at.privateRehearsal.note": "Schreibe passend zu deinem Ziel einen kurzen englischen Versuch, bevor du den Assistenten fragst. Schriftliche Notizen können deine Aussprache nicht prüfen. Dieses Feld ist getrennt von Ziel, Startanfrage und Chatnachricht.",
   "at.privateRehearsal.label": "Mein privater Übungsversuch (bis zu 700 Zeichen)",
   "at.privateRehearsal.clear": "Meinen privaten Versuch löschen",
-  "at.privateRehearsal.privacy": "Nichts hier wird an den Assistenten gesendet, in eine Nachricht kopiert, gespeichert oder bewertet. Zuklappen behält den Versuch. Ein anderer Assistent oder das Verlassen verwirft ihn. Für Feedback schreibe selbst eine Nachricht und wähle Senden."
+  "at.privateRehearsal.privacy": "Nichts hier wird an den Assistenten gesendet, in eine Nachricht kopiert, gespeichert oder bewertet. Zuklappen behält den Versuch. Ein anderer Assistent oder das Verlassen verwirft ihn. Für Feedback schreibe selbst eine Nachricht und wähle Senden.",
+  "tpr.meaningChecks.title": "Die Bedeutung dieser Aufgabe prüfen (freiwillig)",
+  "tpr.meaningChecks.note": "Vergleiche deine Übersetzung mit Quelle und Beispielen anhand dieser aufgabenspezifischen englischen Fragen. Markiere nur, was deine Version deiner Meinung nach bewahrt. Private Selbstprüfung, keine Note oder Pflicht, einem Muster genau zu folgen. Zuklappen behält Markierungen; Beispiele ausblenden, Aufgabenwechsel oder Verlassen verwirft sie. Entwurf und Überarbeitung bleiben unverändert."
 }
