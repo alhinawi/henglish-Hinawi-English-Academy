@@ -3190,5 +3190,12 @@
   "pa.photo.airport": "An aircraft at an airport gate",
   "pa.photo.map": "A map with a camera and a bag",
   "pa.photo.writing": "A person writing beside a laptop",
-  "pa.photo.bookshop": "A hand choosing a book from a shelf"
+  "pa.photo.bookshop": "A hand choosing a book from a shelf",
+  "at.support.label": "Language support for this starter (optional)",
+  "at.support.none": "Do not add a language request",
+  "at.support.choice.english": "English-only practice",
+  "at.support.choice.arabic": "English practice with Arabic explanations",
+  "at.support.note": "This adds your preference to the exact preview below. It does not change your current draft, send a message or change your interface language. The tutor reply is not guaranteed.",
+  "at.support.request.english": "Keep the practice and explanations in English. If I get stuck, give a simpler English hint before the answer.",
+  "at.support.request.arabic": "Keep practice questions and examples in English. Explain difficult points briefly in Arabic, then return to English practice."
 }

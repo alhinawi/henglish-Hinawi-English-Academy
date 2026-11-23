@@ -8,6 +8,7 @@ const checks = [
   'check-minimal-pair-context-audio.cjs',
   'check-speaking-progress-filter.cjs',
   'check-tutor-starter-level.cjs',
+  'check-tutor-language-support.cjs',
   'check-movie-recall-replay.cjs',
   'check-translation-practice-hints.cjs',
   'check-pronunciation-photo-practice.cjs',
