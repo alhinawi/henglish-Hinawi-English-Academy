@@ -3550,5 +3550,8 @@
   "rle.vocabFocus.prompt.meaning": "Verwende den Ausdruck in einem neuen Satz, der seine Bedeutung deutlich macht. Vergleiche deine Verwendung selbst mit Definition und Beispiel.",
   "rle.vocabFocus.prompt.polite": "Verwende den Ausdruck in einer höflichen Bitte oder Frage, die du in dieser Übungssituation sagen könntest.",
   "rle.vocabFocus.prompt.detail": "Behalte den Ausdruck und ergänze oder ändere ein nützliches Detail für diese Übungssituation. Nutze erfundene Details statt privater Informationen.",
-  "rle.vocabFocus.chosen": "Mein gewählter Fokus"
+  "rle.vocabFocus.chosen": "Mein gewählter Fokus",
+  "ms.retellingNext.label": "Eine Sache, die ich als Nächstes versuchen möchte (optional, 300 Zeichen)",
+  "ms.retellingNext.note": "Schreibe eine kurze Erinnerung in einer beliebigen Sprache. Sie ist getrennt von deinem Plan und beiden Nacherzählungen. Das Zurücksetzen der Häkchen behält die Notiz; das Löschen der Notiz behält die Häkchen. Zuklappen behält sie. Moduswechsel, Schließen der Übung oder Verlassen löscht sie. Nichts wird bewertet, gesendet oder gespeichert.",
+  "ms.retellingNext.clear": "Diese Erinnerung löschen"
 }
