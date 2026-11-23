@@ -3413,5 +3413,12 @@
   "pa.ownSentences.clear": "Clear my sentence for",
   "pa.ownSentences.privacy": "Private and separate from quiz answers and recording. Collapsing, changing recording mode or opening the recorder keeps these drafts. Changing pair or leaving discards them. Nothing is sent, saved or graded.",
   "sp.followupMeaning.title": "Task meaning in Egyptian Arabic (optional)",
-  "sp.followupMeaning.note": "This explains the English task, not an answer to repeat. Close it and try your own response."
+  "sp.followupMeaning.note": "This explains the English task, not an answer to repeat. Close it and try your own response.",
+  "ms.recallReview.title": "Review my caption recall (optional)",
+  "ms.recallReview.note": "Compare your current draft with the reviewed English caption above. Mark only the checks you have actually made. This is your own review, not an automatic accuracy or listening score.",
+  "ms.recallReview.check.0": "I compared the words I wrote with the source and noticed anything missing or added.",
+  "ms.recallReview.check.1": "I checked word order and small words, such as articles and prepositions.",
+  "ms.recallReview.check.2": "I checked whether any difference changes the meaning before trying again.",
+  "ms.recallReview.clear": "Clear these review marks",
+  "ms.recallReview.privacy": "These marks do not judge either draft or affect progress. Collapsing keeps them. Hiding the caption, retrying, changing cue or closing practice discards them. Nothing is sent or saved."
 }
