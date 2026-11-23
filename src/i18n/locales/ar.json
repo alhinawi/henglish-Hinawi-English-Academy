@@ -3270,5 +3270,9 @@
   "at.correction.note": "بيضيف طلب لمسودة البداية بس. المدرس ممكن ميتبعوش كل مرة؛ مفيش حاجة بتتبعت غير لما تبعت الرسالة.",
   "at.correction.request.each": "صححلي باختصار بعد كل إجابة مني.",
   "at.correction.request.end": "خلّي التدريب ماشي، واجمع التصحيحات المختصرة لآخر التدريب لما أقول إني خلصت.",
-  "rle.vocabExample.listen": "اسمع جملة المثال"
+  "rle.vocabExample.listen": "اسمع جملة المثال",
+  "pa.photoNav.label": "التنقل بين صور التدريب",
+  "pa.photoNav.position": "الصورة {current} من {total}",
+  "pa.photoNav.previous": "الصورة السابقة",
+  "pa.photoNav.next": "الصورة التالية"
 }

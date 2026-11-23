@@ -3270,5 +3270,9 @@
   "at.correction.note": "Ergänzt nur einen Wunsch im Startentwurf. Der Tutor folgt ihm möglicherweise nicht immer. Erst beim Senden wird eine Nachricht verschickt.",
   "at.correction.request.each": "Bitte gib mir nach jeder meiner Antworten kurze Korrekturen.",
   "at.correction.request.end": "Bitte lass die Übung weiterlaufen und sammle kurze Korrekturen für das Ende, wenn ich sage, dass ich fertig bin.",
-  "rle.vocabExample.listen": "Beispielsatz anhören"
+  "rle.vocabExample.listen": "Beispielsatz anhören",
+  "pa.photoNav.label": "Navigation der Fotoübungen",
+  "pa.photoNav.position": "Foto {current} von {total}",
+  "pa.photoNav.previous": "Vorheriges Foto",
+  "pa.photoNav.next": "Nächstes Foto"
 }
