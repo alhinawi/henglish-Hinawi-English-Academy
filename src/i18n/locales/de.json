@@ -3399,5 +3399,10 @@
   "pa.photoResponse.clear": "Meine Antwort löschen",
   "pa.photoResponse.note": "Beantworte die Frage oben mit deinen eigenen englischen Worten. Die Satzanfänge können helfen, sind aber keine vollständigen Antworten. Getrennt von Satzplan und Aufnahme, ohne automatische Korrektur oder Bewertung. Zuklappen oder Hilfen anzeigen behält die Antwort. Ein anderes Foto oder das Verlassen der Akademie verwirft sie. Nichts wird gesendet oder gespeichert.",
   "rle.variationReview.title": "Meine Antwort für diese Situation prüfen (freiwillig)",
-  "rle.variationReview.note": "Markiere nach dem Schreiben oder Sprechen nur, was du selbst in deiner Antwort erkennst. Dies sind situationsbezogene Sprachprüfpunkte, keine automatische Bewertung, Fachberatung oder Bestätigung deiner Fähigkeiten. Du kannst sie leer lassen. Schließen oder Wiederholen verwirft die Markierungen."
+  "rle.variationReview.note": "Markiere nach dem Schreiben oder Sprechen nur, was du selbst in deiner Antwort erkennst. Dies sind situationsbezogene Sprachprüfpunkte, keine automatische Bewertung, Fachberatung oder Bestätigung deiner Fähigkeiten. Du kannst sie leer lassen. Schließen oder Wiederholen verwirft die Markierungen.",
+  "at.privateRehearsal.title": "Vor dem Chat privat versuchen (freiwillig)",
+  "at.privateRehearsal.note": "Schreibe passend zu deinem Ziel einen kurzen englischen Versuch, bevor du den Assistenten fragst. Schriftliche Notizen können deine Aussprache nicht prüfen. Dieses Feld ist getrennt von Ziel, Startanfrage und Chatnachricht.",
+  "at.privateRehearsal.label": "Mein privater Übungsversuch (bis zu 700 Zeichen)",
+  "at.privateRehearsal.clear": "Meinen privaten Versuch löschen",
+  "at.privateRehearsal.privacy": "Nichts hier wird an den Assistenten gesendet, in eine Nachricht kopiert, gespeichert oder bewertet. Zuklappen behält den Versuch. Ein anderer Assistent oder das Verlassen verwirft ihn. Für Feedback schreibe selbst eine Nachricht und wähle Senden."
 }

@@ -3399,5 +3399,10 @@
   "pa.photoResponse.clear": "Clear my follow-up answer",
   "pa.photoResponse.note": "Answer the question above in your own English. The sentence frames can help you start, but they are not complete answers. This is separate from your sentence plan and recording, with no automatic correction or score. Collapsing or revealing help keeps your answer. Changing photo or leaving this academy discards it. Nothing is sent or saved.",
   "rle.variationReview.title": "Check my reply against this situation (optional)",
-  "rle.variationReview.note": "After writing or speaking, mark only what you think you included. These are situation-specific language checks, not an automatic score, professional advice or proof of readiness. You can leave them unchecked. Closing this practice or replaying discards them."
+  "rle.variationReview.note": "After writing or speaking, mark only what you think you included. These are situation-specific language checks, not an automatic score, professional advice or proof of readiness. You can leave them unchecked. Closing this practice or replaying discards them.",
+  "at.privateRehearsal.title": "Try it privately before chatting (optional)",
+  "at.privateRehearsal.note": "Use your chosen goal to write a short English attempt before asking the assistant. For sound practice, written notes cannot check your pronunciation. This field is separate from the goal, starter request and chat message.",
+  "at.privateRehearsal.label": "My private practice attempt (up to 700 characters)",
+  "at.privateRehearsal.clear": "Clear my private attempt",
+  "at.privateRehearsal.privacy": "Nothing here is sent to the assistant, copied into a message, saved or graded. Collapsing keeps this attempt. Switching assistant or leaving discards it. To request feedback, write a message yourself and choose Send."
 }
