@@ -3389,5 +3389,9 @@
   "rle.variationAttempt.label": "Meine Antwort auf diese Variante (bis 700 Zeichen)",
   "rle.variationAttempt.clear": "Diese Antwort löschen",
   "rle.variationAttempt.note": "Schreibe vor dem Sprechen eine englische Antwort auf die geänderte Situation. Jede Variante hat einen eigenen privaten Entwurf, getrennt von Plan und Aufnahme. Zuklappen behält ihn; Schließen der Transferübung, Neustart oder Verlassen des Szenarios löscht ihn. Keine Prüfung, Übertragung oder Speicherung. Keine persönlichen oder sensiblen Angaben.",
-  "ms.retellingClear.label": "Aktuelle schriftliche Fassung löschen"
+  "ms.retellingClear.label": "Aktuelle schriftliche Fassung löschen",
+  "sp.roleRetry.note": "Behalte deine erste Antwort und versuche eine andere Formulierung. Die zweite Version ist freiwillig und privat.",
+  "sp.roleRetry.start": "Erste Antwort behalten und erneut versuchen",
+  "sp.roleRetry.first": "Deine erste Antwort",
+  "sp.roleRetry.compare": "Vergleiche deine Antworten. Passt die Bedeutung noch zu diesem Gesprächsschritt? Welche Version würdest du laut sagen? Keine Version wird geprüft oder bewertet."
 }
