@@ -1,6 +1,6 @@
 import functools,http.server,json,os,pathlib,threading,re
 from playwright.sync_api import sync_playwright,expect
-root=pathlib.Path.cwd();data=(root/'src/data/pronunciationPhotoScenes.ts').read_text();challenges=re.findall(r'challenge:\s*("(?:[^"\\]|\\.)*"),',data);challenges=[json.loads(x)for x in challenges];keys=['study','travel','meeting','presentation','cafe','market','library','walk','airport','map','writing','bookshop','garden','food','hotel','museum','nightStreet','track','freight','photography']
+root=pathlib.Path.cwd();data=(root/'src/data/pronunciationPhotoScenes.ts').read_text();challenges=re.findall(r'challenge:\s*("(?:[^"\\]|\\.)*"),',data);challenges=[json.loads(x)for x in challenges];keys=['study','travel','meeting','presentation','cafe','market','library','walk','airport','map','writing','bookshop','garden','food','hotel','museum','nightStreet','track','freight','photography','design','coding','cafeMenu','collaboration']
 class Quiet(http.server.SimpleHTTPRequestHandler):
  def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',4225),functools.partial(Quiet,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()

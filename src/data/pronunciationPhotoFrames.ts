@@ -20,4 +20,8 @@ export const PRONUNCIATION_PHOTO_FRAMES:Record<string,readonly string[]>={
  "track":["To prepare for our relay race, we could ... .","This would help the team by ... ."],
  "freight":["I would like to know how ... .","I would ask this because ... ."],
  "photography":["For a small photo collection, I would photograph ... .","I would choose this subject because ... ."],
+ "design":["I would include ... in the study room.", "This would help me ... because ... ."],
+ "coding":["I would change ... on the desk.", "This would make studying ... because ... ."],
+ "cafeMenu":["Before ordering, I would check ... .", "That detail matters because ... ."],
+ "collaboration":["I would explain the idea by ... .", "For example, I could show ... ."],
 };
