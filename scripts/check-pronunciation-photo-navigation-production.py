@@ -1,6 +1,6 @@
 import functools,http.server,json,os,pathlib,threading
 from playwright.sync_api import sync_playwright,expect
-root=pathlib.Path.cwd();keys=['study','travel','meeting','presentation','cafe','market','library','walk','airport','map','writing','bookshop','garden','food','hotel','museum','nightStreet','track','freight','photography']
+root=pathlib.Path.cwd();keys=['study','travel','meeting','presentation','cafe','market','library','walk','airport','map','writing','bookshop','garden','food','hotel','museum','nightStreet','track','freight','photography','design','coding','cafeMenu','collaboration']
 class Quiet(http.server.SimpleHTTPRequestHandler):
  def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',4224),functools.partial(Quiet,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
