@@ -3534,5 +3534,13 @@
   "sp.topicFocus.prompt.meaning": "Prüfe, ob der Ausdruck die beabsichtigte Bedeutung behält. Nutze die arabische Bedeutung als Hinweis, nicht als ganzen Satz zum Kopieren.",
   "sp.topicFocus.prompt.form": "Prüfe den Ausdruck und die Wörter darum herum. Passe an, was dein Satz braucht, ohne den Ausdruck zu verlieren.",
   "sp.topicFocus.prompt.context": "Ergänze oder ändere ein hilfreiches Detail, damit der Ausdruck zu dieser Rollenspielsituation passt.",
-  "sp.topicFocus.chosen": "Mein gewählter Schwerpunkt"
+  "sp.topicFocus.chosen": "Mein gewählter Schwerpunkt",
+  "pa.wordFocus.label": "Wähle einen Fokus für meinen zweiten Satz",
+  "pa.wordFocus.sound": "Ziellaut üben",
+  "pa.wordFocus.meaning": "Wortbedeutung",
+  "pa.wordFocus.photo": "Bilddetail",
+  "pa.wordFocus.prompt.sound": "Behalte dieses Wort im zweiten Satz. Formuliere einen Satz, den du gut aussprechen kannst, und übe den Ziellaut laut. Deine Aussprache wird nicht geprüft.",
+  "pa.wordFocus.prompt.meaning": "Prüfe, wie du das Wort im ersten Satz verwendet hast. Schreibe einen weiteren Satz, der seine Bedeutung deutlich macht.",
+  "pa.wordFocus.prompt.photo": "Verwende das Wort mit einem passenden Detail aus dem Foto oder einem Detail, das du dir für diese Situation vorstellst.",
+  "pa.wordFocus.chosen": "Mein gewählter Fokus"
 }
