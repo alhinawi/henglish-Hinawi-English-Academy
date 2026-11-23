@@ -3427,5 +3427,9 @@
   "rle.variationRetry.note": "Keep your current reply as a first version, then write another reply to the same situation. This is optional and does not compare or grade your words automatically.",
   "rle.variationRetry.start": "Keep first reply and try again",
   "rle.variationRetry.first": "My first reply to this situation",
-  "rle.variationRetry.compare": "Read both versions. Did your second reply handle the changed situation and explain what you need? Clear reply removes only the current version. Both versions disappear when you close practice, replay or leave."
+  "rle.variationRetry.compare": "Read both versions. Did your second reply handle the changed situation and explain what you need? Clear reply removes only the current version. Both versions disappear when you close practice, replay or leave.",
+  "sp.topicSentence.title": "Use this expression in my own sentence",
+  "sp.topicSentence.label": "My English sentence (up to 300 characters)",
+  "sp.topicSentence.clear": "Clear this sentence",
+  "sp.topicSentence.note": "Write your own sentence using the expression above, then try saying it aloud. This optional draft is separate from your task plan. Hiding the expression or collapsing this section keeps it. Changing task, closing practice or leaving clears it. Nothing is checked, sent or saved."
 }

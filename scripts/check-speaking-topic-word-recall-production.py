@@ -11,7 +11,7 @@ try:
   for lang in ['en','ar']:
    page=b.new_page(viewport={'width':390,'height':1050},reduced_motion='reduce');page.route('**/api/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.route('**/henglish-api.hnz.workers.dev/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));t=json.load(open(root/'src/i18n/locales'/f'{lang}.json'));page.goto(origin+'/speaking/?lang='+lang)
    for lesson in lessons:
-    page.locator('button').filter(has=page.get_by_text(lesson['titleEn'],exact=True)).click();panel=page.get_by_role('region',name=t['sp.transfer.title'],exact=True);expect(panel.get_by_text(t['sp.topicWords.title'],exact=True)).to_have_count(0);panel.get_by_role('button',name=t['sp.transfer.open'],exact=True).click();details=panel.locator('details').filter(has=page.get_by_text(t['sp.topicWords.title'],exact=True));summary=details.locator('summary');plan=panel.get_by_label(t['sp.transfer.plan'],exact=True)
+    page.locator('button').filter(has=page.get_by_text(lesson['titleEn'],exact=True)).click();panel=page.get_by_role('region',name=t['sp.transfer.title'],exact=True);expect(panel.get_by_text(t['sp.topicWords.title'],exact=True)).to_have_count(0);panel.get_by_role('button',name=t['sp.transfer.open'],exact=True).click();details=panel.locator('details').filter(has=page.get_by_text(t['sp.topicWords.title'],exact=True));summary=details.locator(':scope > summary');plan=panel.get_by_label(t['sp.transfer.plan'],exact=True)
     for mode in [0,1]:
      if mode:panel.get_by_role('button',name=t['sp.transfer.choice.1'],exact=True).click()
      expect(plan).to_have_value('');assert not details.evaluate('(el)=>el.open');summary.click();expect(details.locator('dt')).to_have_count(3);expect(details.locator('dd[lang="ar"]')).to_have_count(3);
