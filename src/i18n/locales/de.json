@@ -3302,5 +3302,7 @@
   "at.goalIdeas.note": "Wähle ein vorgeschlagenes Ziel für diesen Assistenten und passe es bei Bedarf an. Nur das Zielfeld wird ausgefüllt. Lösche ein vorhandenes Ziel zuerst. Es wird nichts gesendet; KI-Antworten sind nicht garantiert.",
   "tpr.reflection.label": "Was hast du geändert und warum? (freiwillig)",
   "tpr.reflection.note": "Nenne eine Änderung an Bedeutung, Zeitform oder natürlicher Formulierung. Erkläre, warum sie besser ist, oder notiere eine offene Frage. Englisch oder Arabisch ist möglich.",
-  "tpr.reflection.privacy": "Private Notizen, bis zu 500 Zeichen. Für jede Aufgabe getrennt gespeichert, solange dieser Übungsbereich geöffnet ist. Nichts wird gesendet oder bewertet. Beim Verlassen werden die Notizen gelöscht."
+  "tpr.reflection.privacy": "Private Notizen, bis zu 500 Zeichen. Für jede Aufgabe getrennt gespeichert, solange dieser Übungsbereich geöffnet ist. Nichts wird gesendet oder bewertet. Beim Verlassen werden die Notizen gelöscht.",
+  "rle.variationMeaning.title": "Bedeutung auf Ägyptisch-Arabisch (freiwillig)",
+  "rle.variationMeaning.note": "Eine Erklärung der Aufgabe, keine Antwort. Erfinde Details und antworte mit eigenen englischen Worten. Nur Sprachübung, keine Buchung, kein Kauf und keine medizinische Beratung."
 }
