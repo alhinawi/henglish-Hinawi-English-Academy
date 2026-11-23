@@ -1,0 +1,450 @@
+{
+  "conversation-01": [
+    {
+      "en": "nice to meet you",
+      "ar": "سعيد إني اتعرفت عليك"
+    },
+    {
+      "en": "classmate",
+      "ar": "زميل في الدراسة"
+    },
+    {
+      "en": "study English",
+      "ar": "يدرس إنجليزي"
+    }
+  ],
+  "conversation-02": [
+    {
+      "en": "this is my friend",
+      "ar": "ده صديقي"
+    },
+    {
+      "en": "come from",
+      "ar": "يكون من مكان معين"
+    },
+    {
+      "en": "get to know",
+      "ar": "يتعرف على"
+    }
+  ],
+  "conversation-03": [
+    {
+      "en": "surname",
+      "ar": "اسم العيلة"
+    },
+    {
+      "en": "spell a word",
+      "ar": "يقول حروف كلمة"
+    },
+    {
+      "en": "write it down",
+      "ar": "يكتب المعلومة"
+    }
+  ],
+  "conversation-04": [
+    {
+      "en": "say that again",
+      "ar": "يقول الكلام تاني"
+    },
+    {
+      "en": "more slowly",
+      "ar": "أبطأ شوية"
+    },
+    {
+      "en": "page number",
+      "ar": "رقم الصفحة"
+    }
+  ],
+  "conversation-05": [
+    {
+      "en": "get up",
+      "ar": "يصحى ويقوم"
+    },
+    {
+      "en": "have breakfast",
+      "ar": "يفطر"
+    },
+    {
+      "en": "leave home",
+      "ar": "يخرج من البيت"
+    }
+  ],
+  "conversation-06": [
+    {
+      "en": "favourite author",
+      "ar": "الكاتب المفضل"
+    },
+    {
+      "en": "read for fun",
+      "ar": "يقرا للمتعة"
+    },
+    {
+      "en": "a short story",
+      "ar": "قصة قصيرة"
+    }
+  ],
+  "conversation-07": [
+    {
+      "en": "be free",
+      "ar": "يكون فاضي"
+    },
+    {
+      "en": "study together",
+      "ar": "يذاكروا مع بعض"
+    },
+    {
+      "en": "meet at the library",
+      "ar": "يتقابلوا في المكتبة"
+    }
+  ],
+  "conversation-08": [
+    {
+      "en": "in my free time",
+      "ar": "في وقت فراغي"
+    },
+    {
+      "en": "twice a week",
+      "ar": "مرتين في الأسبوع"
+    },
+    {
+      "en": "take up a hobby",
+      "ar": "يبدأ هواية"
+    }
+  ],
+  "conversation-09": [
+    {
+      "en": "boarding pass",
+      "ar": "بطاقة صعود الطيارة"
+    },
+    {
+      "en": "check in",
+      "ar": "يخلص إجراءات السفر"
+    },
+    {
+      "en": "travel documents",
+      "ar": "أوراق السفر"
+    }
+  ],
+  "conversation-10": [
+    {
+      "en": "boarding gate",
+      "ar": "بوابة صعود الطيارة"
+    },
+    {
+      "en": "go straight ahead",
+      "ar": "يمشي على طول"
+    },
+    {
+      "en": "next to",
+      "ar": "جنب"
+    }
+  ],
+  "conversation-11": [
+    {
+      "en": "change the plan",
+      "ar": "يغير الخطة"
+    },
+    {
+      "en": "would that suit you",
+      "ar": "هل ده يناسبك"
+    },
+    {
+      "en": "another time",
+      "ar": "وقت تاني"
+    }
+  ],
+  "conversation-12": [
+    {
+      "en": "half a kilo",
+      "ar": "نص كيلو"
+    },
+    {
+      "en": "how much per kilo",
+      "ar": "الكيلو بكام"
+    },
+    {
+      "en": "fresh vegetables",
+      "ar": "خضار طازة"
+    }
+  ],
+  "conversation-13": [
+    {
+      "en": "an appointment",
+      "ar": "ميعاد كشف"
+    },
+    {
+      "en": "describe a symptom",
+      "ar": "يوصف عرض مرضي"
+    },
+    {
+      "en": "for three days",
+      "ar": "لمدة تلات أيام"
+    }
+  ],
+  "conversation-14": [
+    {
+      "en": "at the weekend",
+      "ar": "في الويك إند"
+    },
+    {
+      "en": "the best part",
+      "ar": "أحسن جزء"
+    },
+    {
+      "en": "after that",
+      "ar": "بعد كده"
+    }
+  ],
+  "conversation-15": [
+    {
+      "en": "revise together",
+      "ar": "يراجعوا مع بعض"
+    },
+    {
+      "en": "practice questions",
+      "ar": "أسئلة للتدريب"
+    },
+    {
+      "en": "feel prepared",
+      "ar": "يحس إنه مستعد"
+    }
+  ],
+  "conversation-16": [
+    {
+      "en": "after graduation",
+      "ar": "بعد التخرج"
+    },
+    {
+      "en": "apply for a job",
+      "ar": "يقدم على شغل"
+    },
+    {
+      "en": "gain experience",
+      "ar": "يكتسب خبرة"
+    }
+  ],
+  "conversation-17": [
+    {
+      "en": "tell me more",
+      "ar": "احكيلي أكتر"
+    },
+    {
+      "en": "what made you decide",
+      "ar": "إيه اللي خلاك تقرر"
+    },
+    {
+      "en": "that sounds interesting",
+      "ar": "ده شكله ممتع"
+    }
+  ],
+  "conversation-18": [
+    {
+      "en": "you could try",
+      "ar": "ممكن تجرب"
+    },
+    {
+      "en": "set aside time",
+      "ar": "يخصص وقت"
+    },
+    {
+      "en": "take a short break",
+      "ar": "ياخد راحة قصيرة"
+    }
+  ],
+  "conversation-19": [
+    {
+      "en": "I am sorry for",
+      "ar": "أنا آسف على"
+    },
+    {
+      "en": "make it up to you",
+      "ar": "يعوضك عن اللي حصل"
+    },
+    {
+      "en": "reschedule",
+      "ar": "يحدد ميعاد جديد"
+    }
+  ],
+  "conversation-20": [
+    {
+      "en": "relevant experience",
+      "ar": "خبرة مناسبة للوظيفة"
+    },
+    {
+      "en": "work as a team",
+      "ar": "يشتغلوا كفريق"
+    },
+    {
+      "en": "for example",
+      "ar": "على سبيل المثال"
+    }
+  ],
+  "conversation-21": [
+    {
+      "en": "make progress",
+      "ar": "يحرز تقدم"
+    },
+    {
+      "en": "still working on",
+      "ar": "لسه شغال على"
+    },
+    {
+      "en": "need feedback",
+      "ar": "محتاج ملاحظات"
+    }
+  ],
+  "conversation-22": [
+    {
+      "en": "take care of",
+      "ar": "يتولى مسؤولية"
+    },
+    {
+      "en": "share the workload",
+      "ar": "يقسموا الشغل"
+    },
+    {
+      "en": "by noon",
+      "ar": "في موعد أقصاه الضهر"
+    }
+  ],
+  "conversation-23": [
+    {
+      "en": "meet a deadline",
+      "ar": "يسلم في الموعد المحدد"
+    },
+    {
+      "en": "a final check",
+      "ar": "مراجعة أخيرة"
+    },
+    {
+      "en": "allow enough time",
+      "ar": "يخصص وقت كفاية"
+    }
+  ],
+  "conversation-24": [
+    {
+      "en": "an error message",
+      "ar": "رسالة خطأ"
+    },
+    {
+      "en": "restart the application",
+      "ar": "يعيد تشغيل البرنامج"
+    },
+    {
+      "en": "describe the steps",
+      "ar": "يوصف الخطوات"
+    }
+  ],
+  "conversation-25": [
+    {
+      "en": "I see your point",
+      "ar": "أنا فاهم وجهة نظرك"
+    },
+    {
+      "en": "I am not sure I agree",
+      "ar": "مش متأكد إني موافق"
+    },
+    {
+      "en": "consider the impact",
+      "ar": "يراعي التأثير"
+    }
+  ],
+  "conversation-26": [
+    {
+      "en": "another option would be",
+      "ar": "فيه اختيار تاني ممكن يكون"
+    },
+    {
+      "en": "rather than",
+      "ar": "بدل من"
+    },
+    {
+      "en": "a practical alternative",
+      "ar": "بديل عملي"
+    }
+  ],
+  "conversation-27": [
+    {
+      "en": "on the one hand",
+      "ar": "من ناحية"
+    },
+    {
+      "en": "a possible drawback",
+      "ar": "عيب محتمل"
+    },
+    {
+      "en": "weigh up the options",
+      "ar": "يقارن مزايا وعيوب الاختيارات"
+    }
+  ],
+  "conversation-28": [
+    {
+      "en": "meet halfway",
+      "ar": "يوصلوا لحل وسط"
+    },
+    {
+      "en": "provided that",
+      "ar": "بشرط إن"
+    },
+    {
+      "en": "review the results",
+      "ar": "يراجعوا النتايج"
+    }
+  ],
+  "conversation-29": [
+    {
+      "en": "today I will cover",
+      "ar": "النهارده هتكلم عن"
+    },
+    {
+      "en": "the main point",
+      "ar": "النقطة الأساسية"
+    },
+    {
+      "en": "invite questions",
+      "ar": "يدعو الحاضرين للأسئلة"
+    }
+  ],
+  "conversation-30": [
+    {
+      "en": "could you elaborate",
+      "ar": "ممكن توضح أكتر"
+    },
+    {
+      "en": "a concrete example",
+      "ar": "مثال محدد"
+    },
+    {
+      "en": "what do you mean by",
+      "ar": "إيه قصدك بـ"
+    }
+  ],
+  "conversation-31": [
+    {
+      "en": "a challenge I faced",
+      "ar": "تحدي واجهته"
+    },
+    {
+      "en": "looking back",
+      "ar": "لما أبص على اللي فات"
+    },
+    {
+      "en": "what I learned",
+      "ar": "الحاجة اللي اتعلمتها"
+    }
+  ],
+  "conversation-32": [
+    {
+      "en": "to sum up",
+      "ar": "باختصار"
+    },
+    {
+      "en": "agree on next steps",
+      "ar": "يتفقوا على الخطوات الجاية"
+    },
+    {
+      "en": "take responsibility for",
+      "ar": "يتحمل مسؤولية"
+    }
+  ]
+}

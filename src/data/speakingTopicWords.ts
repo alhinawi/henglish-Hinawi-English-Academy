@@ -12,6 +12,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "study English",
       "ar": "يدرس إنجليزي"
+    },
+    {
+      "en": "a new classmate",
+      "ar": "زميل جديد في الدراسة"
     }
   ],
   "conversation-02": [
@@ -26,6 +30,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "get to know",
       "ar": "يتعرف على"
+    },
+    {
+      "en": "let me introduce",
+      "ar": "اسمح لي أقدم"
     }
   ],
   "conversation-03": [
@@ -40,6 +48,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "write it down",
       "ar": "يكتب المعلومة"
+    },
+    {
+      "en": "could I borrow",
+      "ar": "ممكن أستلف"
     }
   ],
   "conversation-04": [
@@ -54,6 +66,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "page number",
       "ar": "رقم الصفحة"
+    },
+    {
+      "en": "could you repeat",
+      "ar": "ممكن تكرر"
     }
   ],
   "conversation-05": [
@@ -68,6 +84,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "leave home",
       "ar": "يخرج من البيت"
+    },
+    {
+      "en": "get ready",
+      "ar": "يجهز نفسه"
     }
   ],
   "conversation-06": [
@@ -82,6 +102,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "a short story",
       "ar": "قصة قصيرة"
+    },
+    {
+      "en": "recommend a book",
+      "ar": "يرشح كتاب"
     }
   ],
   "conversation-07": [
@@ -96,6 +120,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "meet at the library",
       "ar": "يتقابلوا في المكتبة"
+    },
+    {
+      "en": "what time works",
+      "ar": "أنهي وقت مناسب"
     }
   ],
   "conversation-08": [
@@ -110,6 +138,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "take up a hobby",
       "ar": "يبدأ هواية"
+    },
+    {
+      "en": "give it a try",
+      "ar": "يجرب حاجة"
     }
   ],
   "conversation-09": [
@@ -124,6 +156,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "travel documents",
       "ar": "أوراق السفر"
+    },
+    {
+      "en": "seat preference",
+      "ar": "تفضيل مكان المقعد"
     }
   ],
   "conversation-10": [
@@ -138,6 +174,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "next to",
       "ar": "جنب"
+    },
+    {
+      "en": "follow the signs",
+      "ar": "يتبع اللافتات"
     }
   ],
   "conversation-11": [
@@ -152,6 +192,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "another time",
       "ar": "وقت تاني"
+    },
+    {
+      "en": "suggest a new time",
+      "ar": "يقترح وقت جديد"
     }
   ],
   "conversation-12": [
@@ -166,6 +210,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "fresh vegetables",
       "ar": "خضار طازة"
+    },
+    {
+      "en": "is it available",
+      "ar": "هل ده موجود"
     }
   ],
   "conversation-13": [
@@ -180,6 +228,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "for three days",
       "ar": "لمدة تلات أيام"
+    },
+    {
+      "en": "could you explain",
+      "ar": "ممكن تشرح"
     }
   ],
   "conversation-14": [
@@ -194,6 +246,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "after that",
       "ar": "بعد كده"
+    },
+    {
+      "en": "in the end",
+      "ar": "في النهاية"
     }
   ],
   "conversation-15": [
@@ -208,6 +264,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "feel prepared",
       "ar": "يحس إنه مستعد"
+    },
+    {
+      "en": "focus on a topic",
+      "ar": "يركز على موضوع"
     }
   ],
   "conversation-16": [
@@ -222,6 +282,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "gain experience",
       "ar": "يكتسب خبرة"
+    },
+    {
+      "en": "a backup plan",
+      "ar": "خطة بديلة"
     }
   ],
   "conversation-17": [
@@ -236,6 +300,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "that sounds interesting",
       "ar": "ده شكله ممتع"
+    },
+    {
+      "en": "how did that go",
+      "ar": "إيه اللي حصل في الموضوع ده"
     }
   ],
   "conversation-18": [
@@ -250,6 +318,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "take a short break",
       "ar": "ياخد راحة قصيرة"
+    },
+    {
+      "en": "what worries you",
+      "ar": "إيه اللي مقلقك"
     }
   ],
   "conversation-19": [
@@ -264,6 +336,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "reschedule",
       "ar": "يحدد ميعاد جديد"
+    },
+    {
+      "en": "correct the mistake",
+      "ar": "يصحح الغلط"
     }
   ],
   "conversation-20": [
@@ -278,6 +354,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "for example",
       "ar": "على سبيل المثال"
+    },
+    {
+      "en": "my contribution",
+      "ar": "مساهمتي"
     }
   ],
   "conversation-21": [
@@ -292,6 +372,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "need feedback",
       "ar": "محتاج ملاحظات"
+    },
+    {
+      "en": "the next step",
+      "ar": "الخطوة الجاية"
     }
   ],
   "conversation-22": [
@@ -306,6 +390,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "by noon",
       "ar": "في موعد أقصاه الضهر"
+    },
+    {
+      "en": "adjust the plan",
+      "ar": "يعدل الخطة"
     }
   ],
   "conversation-23": [
@@ -320,6 +408,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "allow enough time",
       "ar": "يخصص وقت كفاية"
+    },
+    {
+      "en": "confirm the details",
+      "ar": "يأكد التفاصيل"
     }
   ],
   "conversation-24": [
@@ -334,6 +426,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "describe the steps",
       "ar": "يوصف الخطوات"
+    },
+    {
+      "en": "what I expected",
+      "ar": "اللي كنت متوقعه"
     }
   ],
   "conversation-25": [
@@ -348,6 +444,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "consider the impact",
       "ar": "يراعي التأثير"
+    },
+    {
+      "en": "a valid concern",
+      "ar": "نقطة قلق ليها أساس"
     }
   ],
   "conversation-26": [
@@ -362,6 +462,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "a practical alternative",
       "ar": "بديل عملي"
+    },
+    {
+      "en": "the main constraint",
+      "ar": "القيد الأساسي"
     }
   ],
   "conversation-27": [
@@ -376,6 +480,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "weigh up the options",
       "ar": "يقارن مزايا وعيوب الاختيارات"
+    },
+    {
+      "en": "change my mind",
+      "ar": "يغير رأيي"
     }
   ],
   "conversation-28": [
@@ -390,6 +498,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "review the results",
       "ar": "يراجعوا النتايج"
+    },
+    {
+      "en": "a trade-off",
+      "ar": "موازنة فيها مكسب مقابل تنازل"
     }
   ],
   "conversation-29": [
@@ -404,6 +516,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "invite questions",
       "ar": "يدعو الحاضرين للأسئلة"
+    },
+    {
+      "en": "a brief overview",
+      "ar": "نظرة عامة مختصرة"
     }
   ],
   "conversation-30": [
@@ -418,6 +534,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "what do you mean by",
       "ar": "إيه قصدك بـ"
+    },
+    {
+      "en": "if I understand correctly",
+      "ar": "لو أنا فاهم صح"
     }
   ],
   "conversation-31": [
@@ -432,6 +552,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "what I learned",
       "ar": "الحاجة اللي اتعلمتها"
+    },
+    {
+      "en": "in hindsight",
+      "ar": "بعد ما أفكر في اللي حصل"
     }
   ],
   "conversation-32": [
@@ -446,6 +570,10 @@ export const SPEAKING_TOPIC_WORDS: Record<string, readonly {en:string;ar:string}
     {
       "en": "take responsibility for",
       "ar": "يتحمل مسؤولية"
+    },
+    {
+      "en": "an unresolved issue",
+      "ar": "نقطة لسه من غير حل"
     }
   ]
 };
