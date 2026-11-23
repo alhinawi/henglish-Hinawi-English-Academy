@@ -3246,5 +3246,12 @@
   "sp.roleplay.previous": "Previous turn",
   "rle.vocabDraft.label": "Use this term in my own sentence (optional, 500 characters)",
   "rle.vocabDraft.note": "Try an English sentence with this term. This private draft is not checked or sent. Each term keeps its own draft while this scenario is open, including when meanings are hidden. Leaving or replaying the scenario discards all drafts. Avoid personal or sensitive details.",
-  "rle.vocabDraft.clear": "Clear this sentence"
+  "rle.vocabDraft.clear": "Clear this sentence",
+  "pa.photoReview.title": "Review your photo description",
+  "pa.photoReview.note": "Optional self-review after speaking, with or without a recording. This is your own judgement, not an automatic pronunciation score.",
+  "pa.photoReview.check.0": "I made the focus sound clearly in the wordbank words.",
+  "pa.photoReview.check.1": "I stressed the important words in my sentence.",
+  "pa.photoReview.check.2": "I used short pauses and a steady pace.",
+  "pa.photoReview.target": "One thing to change on my next try",
+  "pa.photoReview.next": "Choose one word or pause, then describe the photo again. Private notes stay only while this recording practice is open; closing it, changing photo or leaving clears them."
 }
