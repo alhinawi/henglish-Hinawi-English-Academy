@@ -3382,5 +3382,7 @@
   "sp.topicRecall.hide": "Hide the English expression",
   "sp.topicRecall.show": "Show the English expression",
   "sp.topicRecall.hidden": "English expression hidden",
-  "sp.topicRecall.note": "Use the Arabic meaning to recall the English expression, then reveal it to compare. Optional self-study, not a score."
+  "sp.topicRecall.note": "Use the Arabic meaning to recall the English expression, then reveal it to compare. Optional self-study, not a score.",
+  "pa.photoFrames.title": "Need a sentence starter? (optional)",
+  "pa.photoFrames.note": "Complete these unfinished frames with your own ideas. They are language scaffolds, not model answers or facts about the photo. Keep the sound focus in mind and try the answer aloud."
 }
