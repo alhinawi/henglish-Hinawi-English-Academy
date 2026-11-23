@@ -1,0 +1,15 @@
+// Manual content checks for original follow-up tasks, not pronunciation grades.
+export const PRONUNCIATION_PHOTO_RESPONSE_CHECKS:Record<string,readonly string[]>={
+ study:['I named something I would put beside my book.','I explained how it would help me study.'],
+ travel:['I named a city for a short trip.','I gave a reason for choosing that city.'],
+ meeting:['I suggested something the team should discuss first.','I included one useful question for the team.'],
+ presentation:['I suggested an action to make the talk easier to follow.','I gave an example of how the speaker could do it.'],
+ cafe:['I said what I would order with a friend.','I explained why I would choose that order.'],
+ market:['I named vegetables I would buy for a meal.','I described a meal I could make with them.'],
+ library:['I said what kind of book I would look for.','I explained why that kind of book interests me.'],
+ walk:['I named a place where I would like to walk.','I described something I might see there.'],
+ airport:['I said what I would check before going to the gate.','I explained why checking it matters.'],
+ map:['I said what I would pack to explore a new place.','I explained how one packed item would help.'],
+ writing:['I gave advice for writing a short report.','I included a clear example of that advice.'],
+ bookshop:['I explained how I would choose a book as a gift.','I said what I would want to know before choosing.'],
+};
