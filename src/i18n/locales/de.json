@@ -3456,5 +3456,9 @@
   "ms.recallFocus.prompt.words": "Höre noch einmal auf die wichtigsten Wörter, die du verpasst hast. Vergleiche sie vor dem nächsten Versuch mit dem geprüften Untertitel.",
   "ms.recallFocus.prompt.smallWords": "Achte auf kurze Wörter wie a, the, to oder and, falls sie im Untertitel vorkommen. Ergänze keine Wörter, die du nicht hörst.",
   "ms.recallFocus.prompt.spelling": "Vergleiche Schreibung und Endungen deines ersten Entwurfs mit dem geprüften Untertitel. Höre vor dem zweiten Entwurf noch einmal zu.",
-  "ms.recallFocus.clear": "Meinen aktuellen Entwurf leeren"
+  "ms.recallFocus.clear": "Meinen aktuellen Entwurf leeren",
+  "at.rehearsalRetry.note": "Möchtest du es klarer formulieren? Behalte den ersten Versuch und schreibe einen zweiten. Wähle mit der optionalen Prüfung, was du verbessern möchtest. Nichts wird an den Lehrer gesendet.",
+  "at.rehearsalRetry.start": "Ersten Versuch behalten und neu schreiben",
+  "at.rehearsalRetry.first": "Mein erster privater Versuch",
+  "at.rehearsalRetry.compare": "Lies beide Versuche selbst. Was hat sich geändert? Leeren entfernt nur den aktuellen Entwurf. Ein Wechsel des Lehrermodus oder das Verlassen der Seite entfernt beide Versuche. Nichts wird bewertet, gesendet oder gespeichert."
 }
