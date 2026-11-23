@@ -1,5 +1,5 @@
-// Original incomplete language scaffolds, not model answers or professional advice.
-export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [string,string], readonly [string,string]]> = {
+// Original optional fictional language practice, not professional advice.
+export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [string,string])[]> = {
   "sim-airport-checkin": [
     [
       "Are there any other seats ...?",
@@ -8,6 +8,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "Could you repeat ...?",
       "Do I need to go to ... next?"
+    ],
+    [
+      "Could you tell me how to get to ...?",
+      "Will I pass ... on the way?"
     ]
   ],
   "sim-restaurant-ordering": [
@@ -18,6 +22,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "Excuse me, I think there is a mistake with ...",
       "Could you check ... for me?"
+    ],
+    [
+      "Would it be possible to pay ...?",
+      "We would like to split the bill ..."
     ]
   ],
   "sim-doctor-appointment": [
@@ -28,6 +36,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "I forgot to mention that ...",
       "Would you like to know more about ...?"
+    ],
+    [
+      "How can I arrange ...?",
+      "Do I need to bring ...?"
     ]
   ],
   "sim-job-interview": [
@@ -38,6 +50,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "Could you clarify what you mean by ...?",
       "Would an example about ... be relevant?"
+    ],
+    [
+      "Could you tell me more about ...?",
+      "What would happen after ...?"
     ]
   ],
   "sim-coffee-shop": [
@@ -48,6 +64,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "Excuse me, I ordered ... but received ...",
       "Could you check whether ...?"
+    ],
+    [
+      "Could I have my order ... instead?",
+      "Is there an extra charge for ...?"
     ]
   ],
   "sim-hotel-checkin": [
@@ -58,6 +78,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "Would it be possible to have ...?",
       "Would there be an extra charge for ...?"
+    ],
+    [
+      "How can I check out before ...?",
+      "Where should I leave ...?"
     ]
   ],
   "sim-pharmacy-visit": [
@@ -68,6 +92,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "Could you check what this instruction means?",
       "Have I understood correctly that ...?"
+    ],
+    [
+      "Could you speak a little more ...?",
+      "Could you write ... so we can check it together?"
     ]
   ],
   "sim-clothing-shopping": [
@@ -78,6 +106,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "What is your return policy for ...?",
       "Would I need to keep ...?"
+    ],
+    [
+      "Where can I try on ...?",
+      "How many items can I take ...?"
     ]
   ],
   "sim-supermarket-shopping": [
@@ -88,6 +120,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly [readonly [str
     [
       "The label seemed to say ...",
       "Could you check the price of ... before I pay?"
+    ],
+    [
+      "Is there anyone who could help me with ...?",
+      "Where should I wait for ...?"
     ]
   ]
 };
