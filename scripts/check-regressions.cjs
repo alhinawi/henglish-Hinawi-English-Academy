@@ -71,6 +71,7 @@ const checks = [
   'check-scenario-third-variations.cjs',
   'check-scenario-fourth-variations.cjs',
   'check-scenario-fifth-variations.cjs',
+  'check-scenario-sixth-variations.cjs',
   'check-scenario-transfer-review.cjs',
   'check-speaking-role-meaning.cjs',
   'check-speaking-role-previous.cjs',
