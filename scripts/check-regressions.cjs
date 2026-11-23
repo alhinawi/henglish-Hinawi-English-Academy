@@ -21,6 +21,7 @@ const checks = [
   'check-pronunciation-photo-meanings.cjs',
   'check-pronunciation-photo-audio.cjs',
   'check-scenario-transfer-practice.cjs',
+  'check-scenario-transfer-variations.cjs',
   'check-scenario-transfer-review.cjs',
   'check-speaking-role-meaning.cjs',
   'check-speaking-role-previous.cjs',
