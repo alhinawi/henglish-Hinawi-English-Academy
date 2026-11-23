@@ -3492,5 +3492,9 @@
   "pa.wordSentence.title": "Use the photo words in my own sentences (optional)",
   "pa.wordSentence.label": "My English sentence (up to 300 characters)",
   "pa.wordSentence.clear": "Clear this sentence",
-  "pa.wordSentence.note": "Write your own sentence with each word, then try saying it aloud. This is separate from your photo plan and follow-up reply. Collapsing this box keeps the drafts. Changing photo, opening recording practice or leaving clears them. Nothing is checked, sent or saved."
+  "pa.wordSentence.note": "Write your own sentence with each word, then try saying it aloud. This is separate from your photo plan and follow-up reply. Collapsing this box keeps the drafts. Changing photo, opening recording practice or leaving clears them. Nothing is checked, sent or saved.",
+  "tpr.wordSentenceRetry.note": "Want another try? Keep your first sentence here, then write a second one using the same word. Compare them yourself.",
+  "tpr.wordSentenceRetry.start": "Keep first sentence and try again",
+  "tpr.wordSentenceRetry.first": "My first sentence",
+  "tpr.wordSentenceRetry.compare": "Your first sentence stays here while you edit or clear the current one. Check the meaning and wording yourself. Both disappear when help closes, the task changes or you leave. No automatic feedback."
 }
