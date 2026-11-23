@@ -3242,5 +3242,6 @@
   "ms.ownReview.target": "One change for my next attempt (optional, 300 characters)",
   "ms.ownReview.next": "Try again with one change. Checks and notes remain while collapsed, but changing the task or cue, closing or leaving the clip discards them. Nothing is sent or saved.",
   "rle.vocabExample.title": "See an English example (optional)",
-  "rle.vocabExample.note": "Original language-practice example, not a real booking, price, personal claim or medical advice. In meaning-recall mode it stays hidden until you reveal the meaning."
+  "rle.vocabExample.note": "Original language-practice example, not a real booking, price, personal claim or medical advice. In meaning-recall mode it stays hidden until you reveal the meaning.",
+  "sp.roleplay.previous": "Previous turn"
 }
