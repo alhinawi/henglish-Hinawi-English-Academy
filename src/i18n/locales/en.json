@@ -3512,5 +3512,11 @@
   "pa.wordRetry.note": "Keep your first sentence and try a second version using this word. Optional private practice, not an automatic pronunciation assessment.",
   "pa.wordRetry.start": "Keep first sentence and try again",
   "pa.wordRetry.first": "Your first sentence",
-  "pa.wordRetry.compare": "Compare both sentences yourself. Does the second use the word clearly in this photo situation? Clearing the current sentence keeps the first. Changing the photo or opening recording practice resets both."
+  "pa.wordRetry.compare": "Compare both sentences yourself. Does the second use the word clearly in this photo situation? Clearing the current sentence keeps the first. Changing the photo or opening recording practice resets both.",
+  "ms.retellingReview.title": "Review my written retelling (optional)",
+  "ms.retellingReview.note": "Tick only what you have checked yourself. These marks are not an automatic assessment or proof of understanding. They stay while this retelling is open and reset when you change mode, cue or clip, close practice, or leave.",
+  "ms.retellingReview.check.0": "I compared my main idea with the source instead of copying the whole line.",
+  "ms.retellingReview.check.1": "I checked who did what, including any time or negative words that change the meaning.",
+  "ms.retellingReview.check.2": "I reread my sentence order and checked that my added details do not contradict the source.",
+  "ms.retellingReview.clear": "Clear my review marks"
 }
