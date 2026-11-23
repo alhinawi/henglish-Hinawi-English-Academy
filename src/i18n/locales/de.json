@@ -3168,5 +3168,12 @@
   "ms.recall.firstDraft": "Dein erster Entwurf",
   "ms.recall.compareDrafts": "Vergleiche deinen ersten und aktuellen Entwurf mit dem Originaltext. Was fällt dir an den Wörtern und ihrer Reihenfolge auf?",
   "pa.photo.listen": "Den Beispielsatz anhören",
-  "pa.photo.listenNote": "Vergleiche Laute und Wortbetonung mit deinem eigenen Satz. Das Anhören ist freiwillig und bewertet deine Aussprache nicht. Schließe den Recorder zum Anhören."
+  "pa.photo.listenNote": "Vergleiche Laute und Wortbetonung mit deinem eigenen Satz. Das Anhören ist freiwillig und bewertet deine Aussprache nicht. Schließe den Recorder zum Anhören.",
+  "sp.transferReview.title": "Überprüfe deinen Sprechversuch und wähle eine Änderung",
+  "sp.transferReview.note": "Höre nach dem Sprechen deine Aufnahme an, falls du eine gemacht hast, oder denke an deine Antwort zurück. Dies sind deine eigenen Notizen, keine Bewertung. Sie werden nicht gesendet oder gespeichert. Ein Aufgabenwechsel oder Schließen verwirft sie.",
+  "sp.transferReview.check.0": "Ich habe auf die veränderte Situation reagiert, statt den ursprünglichen Dialog zu wiederholen.",
+  "sp.transferReview.check.1": "Ich habe eine Formulierung aus der Lektion mit einem eigenen Detail benutzt.",
+  "sp.transferReview.check.2": "Ich habe einen passenden Grund, ein weiteres Detail oder eine Rückfrage ergänzt.",
+  "sp.transferReview.target": "Eine kleine Änderung für meinen nächsten Versuch",
+  "sp.transferReview.next": "Wähle eine Änderung, etwa ein klareres Detail oder eine andere Formulierung. Sprich erneut, wenn du bereit bist. Eine neue Aufnahme ersetzt die vorherige nur bei Erfolg; es erfolgt kein automatischer Download."
 }
