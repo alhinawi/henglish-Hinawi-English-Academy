@@ -20,4 +20,8 @@ export const PRONUNCIATION_PHOTO_RESPONSE_CHECKS:Record<string,readonly string[]
  "track":["I suggested one step to prepare for the fictional relay race.","I explained how that step would help the team."],
  "freight":["I asked one question about transporting goods by train.","I explained why I wanted to ask that question."],
  "photography":["I described a subject for a small photo collection.","I explained why I would choose that subject."],
+ "design":["I described one feature of a small study room.", "I explained how that feature would help."],
+ "coding":["I suggested one change to a study desk.", "I explained why I would make that change."],
+ "cafeMenu":["I named one detail to check on a cafe menu.", "I explained why that detail matters before ordering."],
+ "collaboration":["I suggested a way to explain a new idea to a group.", "I included an example of how to explain it."],
 };
