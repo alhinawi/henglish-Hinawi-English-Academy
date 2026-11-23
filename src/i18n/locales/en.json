@@ -3262,5 +3262,12 @@
   "pa.photoWords.listen": "Listen to word: {word}",
   "tpr.wordAudio.listen": "Listen to word: {word}",
   "pa.photoMeaning.title": "Meaning hint: Egyptian Arabic",
-  "pa.photoMeaning.note": "Optional meaning of this example sentence. Try understanding the English first."
+  "pa.photoMeaning.note": "Optional meaning of this example sentence. Try understanding the English first.",
+  "at.correction.label": "Correction timing (optional)",
+  "at.correction.none": "No timing preference",
+  "at.correction.choice.each": "After each answer",
+  "at.correction.choice.end": "At the end of the practice",
+  "at.correction.note": "Adds a request to your starter draft only. The tutor may not always follow it; nothing is sent until you send the message.",
+  "at.correction.request.each": "Please give brief corrections after each of my answers.",
+  "at.correction.request.end": "Please keep the practice flowing and save brief corrections for the end, when I say I am finished."
 }
