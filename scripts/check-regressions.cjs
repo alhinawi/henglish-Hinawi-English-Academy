@@ -19,6 +19,7 @@ const checks = [
   'check-scenario-conversation-review.cjs',
   'check-minimal-pair-navigation.cjs',
   'check-speaking-transfer-practice.cjs',
+  'check-speaking-transfer-review.cjs',
   'check-tutor-scene-tasks.cjs',
   'check-translation-practice-photos.cjs',
   'check-movie-cue-recall.cjs',
