@@ -3526,5 +3526,13 @@
   "tpr.wordFocus.prompt.meaning": "Prüfe, ob dieses Wort die beabsichtigte Bedeutung behält. Ändere die Formulierung, ohne diese Bedeutung zu verändern.",
   "tpr.wordFocus.prompt.form": "Prüfe die Wortform und die Wörter, die in deinem Satz dazugehören.",
   "tpr.wordFocus.prompt.context": "Ergänze oder ändere ein hilfreiches Detail, damit das Wort zu einer klaren eigenen Situation passt.",
-  "tpr.wordFocus.chosen": "Mein gewählter Schwerpunkt"
+  "tpr.wordFocus.chosen": "Mein gewählter Schwerpunkt",
+  "sp.topicFocus.label": "Einen Schwerpunkt für meinen zweiten Satz wählen",
+  "sp.topicFocus.meaning": "Bedeutung",
+  "sp.topicFocus.form": "Form des Ausdrucks",
+  "sp.topicFocus.context": "Rollenspielsituation",
+  "sp.topicFocus.prompt.meaning": "Prüfe, ob der Ausdruck die beabsichtigte Bedeutung behält. Nutze die arabische Bedeutung als Hinweis, nicht als ganzen Satz zum Kopieren.",
+  "sp.topicFocus.prompt.form": "Prüfe den Ausdruck und die Wörter darum herum. Passe an, was dein Satz braucht, ohne den Ausdruck zu verlieren.",
+  "sp.topicFocus.prompt.context": "Ergänze oder ändere ein hilfreiches Detail, damit der Ausdruck zu dieser Rollenspielsituation passt.",
+  "sp.topicFocus.chosen": "Mein gewählter Schwerpunkt"
 }
