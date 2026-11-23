@@ -1,0 +1,5 @@
+# Try a goal privately before chatting
+
+All seven assistant modes now offer an optional closed private rehearsal field, up to700 English characters. It is independent from the goal, starter preview and message composer, never inserted/sent/saved/graded. Clear is empty-disabled and returns focus. Collapse retains it, switching assistant or leaving discards it. Copy explicitly says written sound-practice notes cannot check pronunciation. EN/AR/DE. TeacherDashboard untouched.
+
+Verification:276offline regressions, locale check, full TypeScript/Next export passed. New rehearsal and existing goal-listening EN/AR390 suites all7modes passed: defaultclosed, mode reset, limit/lang/dir, clear/focus, goal/starter/composer independence, collapse retention, explicit starter insertion does not copy private attempt, no autosend. Existing21goal/meaning/listening controls retained. Actual local EN/AR390 pixels inspected, readable/nooverflow/دخول visible. API blocked in UI tests; no actual reply/audio claim.

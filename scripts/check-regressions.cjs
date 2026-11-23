@@ -8,6 +8,7 @@ const checks = [
   'check-pronunciation-photo-answer-frames.cjs',
   'check-speaking-topic-word-recall.cjs',
   'check-tutor-goal-listening.cjs',
+  'check-tutor-private-rehearsal.cjs',
   'check-translation-revision-focus.cjs',
   'check-movie-retelling-focus.cjs',
   'check-scenario-vocabulary-hide-example.cjs',
