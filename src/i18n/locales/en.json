@@ -3146,5 +3146,9 @@
   "tpr.help.context": "Context hint, in Arabic",
   "tpr.help.words": "Words and phrases, English and Arabic",
   "ms.recall.listen": "Listen again from this cue",
-  "ms.recall.listenNote": "Starts the video at this reviewed cue and continues within the current clip. Pause it when you have heard enough. The source text remains above in the player; this practice does not hide it there."
+  "ms.recall.listenNote": "Starts the video at this reviewed cue and continues within the current clip. Pause it when you have heard enough. The source text remains above in the player; this practice does not hide it there.",
+  "at.level.label": "Optional practice level",
+  "at.level.none": "No level request",
+  "at.level.note": "Choose the level you want to practise, not a tested proficiency result. This only changes the starter preview until you add it to the message. Your current draft is never replaced.",
+  "at.level.request": "Please aim this practice at CEFR {level}. This is a practice preference, not an assessment of my level."
 }
