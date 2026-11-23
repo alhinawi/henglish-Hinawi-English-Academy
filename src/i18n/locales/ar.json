@@ -3262,5 +3262,12 @@
   "pa.photoWords.listen": "اسمع الكلمة: {word}",
   "tpr.wordAudio.listen": "اسمع الكلمة: {word}",
   "pa.photoMeaning.title": "تلميح المعنى بالمصري",
-  "pa.photoMeaning.note": "معنى اختياري للجملة المثال. جرب تفهم الإنجليزي الأول."
+  "pa.photoMeaning.note": "معنى اختياري للجملة المثال. جرب تفهم الإنجليزي الأول.",
+  "at.correction.label": "وقت التصحيح (اختياري)",
+  "at.correction.none": "من غير تفضيل لوقت التصحيح",
+  "at.correction.choice.each": "بعد كل إجابة",
+  "at.correction.choice.end": "في آخر التدريب",
+  "at.correction.note": "بيضيف طلب لمسودة البداية بس. المدرس ممكن ميتبعوش كل مرة؛ مفيش حاجة بتتبعت غير لما تبعت الرسالة.",
+  "at.correction.request.each": "صححلي باختصار بعد كل إجابة مني.",
+  "at.correction.request.end": "خلّي التدريب ماشي، واجمع التصحيحات المختصرة لآخر التدريب لما أقول إني خلصت."
 }

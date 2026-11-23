@@ -3262,5 +3262,12 @@
   "pa.photoWords.listen": "Wort anhören: {word}",
   "tpr.wordAudio.listen": "Wort anhören: {word}",
   "pa.photoMeaning.title": "Bedeutungshilfe: ägyptisches Arabisch",
-  "pa.photoMeaning.note": "Freiwillige Bedeutung dieses Beispielsatzes. Versuche zuerst, das Englische zu verstehen."
+  "pa.photoMeaning.note": "Freiwillige Bedeutung dieses Beispielsatzes. Versuche zuerst, das Englische zu verstehen.",
+  "at.correction.label": "Zeitpunkt der Korrekturen (optional)",
+  "at.correction.none": "Keine zeitliche Präferenz",
+  "at.correction.choice.each": "Nach jeder Antwort",
+  "at.correction.choice.end": "Am Ende der Übung",
+  "at.correction.note": "Ergänzt nur einen Wunsch im Startentwurf. Der Tutor folgt ihm möglicherweise nicht immer. Erst beim Senden wird eine Nachricht verschickt.",
+  "at.correction.request.each": "Bitte gib mir nach jeder meiner Antworten kurze Korrekturen.",
+  "at.correction.request.end": "Bitte lass die Übung weiterlaufen und sammle kurze Korrekturen für das Ende, wenn ich sage, dass ich fertig bin."
 }
