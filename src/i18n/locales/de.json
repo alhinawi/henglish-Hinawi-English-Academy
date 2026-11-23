@@ -3316,5 +3316,9 @@
   "pa.questionAudio.listen": "Anschlussfrage anhören",
   "pa.questionAudio.note": "Höre die Frage und antworte mit eigenen Worten. Dies ist keine Beispielantwort. Schließe die Aufnahmeübung, um erneut zuzuhören.",
   "rle.variationStarters.title": "Brauchst du einen Satzanfang?",
-  "rle.variationStarters.note": "Optionale sprachliche Hilfen, keine vollständigen Antworten. Ersetze die Punkte durch eigene Angaben und passe die Formulierung an. Nur für erfundene Rollenspiele, keine medizinische oder andere Fachberatung."
+  "rle.variationStarters.note": "Optionale sprachliche Hilfen, keine vollständigen Antworten. Ersetze die Punkte durch eigene Angaben und passe die Formulierung an. Nur für erfundene Rollenspiele, keine medizinische oder andere Fachberatung.",
+  "ms.retellingRetry.start": "Eine zweite Version versuchen",
+  "ms.retellingRetry.note": "Behalte den ersten Schreibversuch unten und beginne eine leere zweite Version. Plan und Aufnahme bleiben unverändert. Beide Versionen sind privat und werden beim Wechsel von Textstelle oder Modus, beim Schließen der Übung oder beim Verlassen des Clips gemeinsam verworfen.",
+  "ms.retellingRetry.first": "Dein erster Schreibversuch",
+  "ms.retellingRetry.compare": "Vergleiche beide Versionen. Bleibt die Bedeutung erhalten? Welche Formulierung ist klarer? Keine Version wird automatisch geprüft oder bewertet."
 }
