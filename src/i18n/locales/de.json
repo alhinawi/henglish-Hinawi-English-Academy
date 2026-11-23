@@ -3144,5 +3144,7 @@
   "tpr.help.open": "Kontext und Wortschatz zeigen",
   "tpr.help.close": "Kontext und Wortschatz ausblenden",
   "tpr.help.context": "Kontexthinweis auf Arabisch",
-  "tpr.help.words": "Wörter und Wendungen, Englisch und Arabisch"
+  "tpr.help.words": "Wörter und Wendungen, Englisch und Arabisch",
+  "ms.recall.listen": "Ab dieser Textstelle erneut hören",
+  "ms.recall.listenNote": "Startet das Video an dieser geprüften Textstelle und läuft innerhalb des aktuellen Clips weiter. Pausiere, sobald du genug gehört hast. Der Quelltext bleibt oben im Player sichtbar; diese Übung blendet ihn dort nicht aus."
 }

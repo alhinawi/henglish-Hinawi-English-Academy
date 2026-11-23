@@ -301,7 +301,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
         </footer>
       </div>
     </div>
-    {hasTranscript && reviewedTiming && <MovieCueRecall key={`recall:${scene.youtubeId}:${start}:${end}`} cues={scene.subtitles} onPause={() => { player.current?.pauseVideo?.(); setPlaying(false); }}/>}
+    {hasTranscript && reviewedTiming && <MovieCueRecall key={`recall:${scene.youtubeId}:${start}:${end}`} cues={scene.subtitles} onReplay={(at) => { loopBounds.current = null; setRepeat(false); loadClip(at); }} onPause={() => { player.current?.pauseVideo?.(); setPlaying(false); }}/>}
     {hasTranscript && reviewedTiming && <MovieCueSpeaking key={`${scene.youtubeId}:${start}:${end}`} cues={scene.subtitles} onPause={() => { player.current?.pauseVideo?.(); setPlaying(false); }}/>}
   </section>;
 };
