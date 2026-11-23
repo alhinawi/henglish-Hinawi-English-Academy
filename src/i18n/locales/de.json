@@ -3180,5 +3180,7 @@
   "rle.review.rewriteNote": "Nutze die Situation und die Hinweise oben. Antworte sinnvoll mit eigenen Worten. Vergleiche Höflichkeit, Klarheit und die benötigten Details. Es gibt keine automatische Bewertung.",
   "rle.review.rewritePrivacy": "Dein Entwurf bleibt während dieser Wiederholung pro Gesprächsschritt getrennt. Er wird nicht gesendet oder gespeichert und ändert weder Auswahl noch Punktzahl. Neustart oder Verlassen verwirft ihn.",
   "tpr.modelAudio.listen": "Beispielübersetzung {number} anhören",
-  "tpr.modelAudio.note": "Das Anhören ist freiwillig. Arabische Wiedergabe benötigt eine unterstützte Microsoft-Stimme im Browser. Diese Beispiele bewerten deine Übersetzung nicht."
+  "tpr.modelAudio.note": "Das Anhören ist freiwillig. Arabische Wiedergabe benötigt eine unterstützte Microsoft-Stimme im Browser. Diese Beispiele bewerten deine Übersetzung nicht.",
+  "ms.recall.meaning": "Bedeutungshilfe auf Ägyptisch-Arabisch",
+  "ms.recall.meaningNote": "Freiwillige Bedeutungshilfe aus der vorhandenen Szenenübersetzung, keine wortwörtliche Lösung oder Hörbewertung. Der englische Originaltext bleibt bis zum Aufdecken verborgen."
 }
