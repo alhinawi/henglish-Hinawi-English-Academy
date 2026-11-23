@@ -3484,5 +3484,9 @@
   "tpr.photo.research": "Glasgeräte für die Forschung im Labor",
   "tpr.photo.writing": "Ein Stift schreibt auf Papier",
   "ms.speakingMeaning.title": "Bedeutung dieser Zeile auf Ägyptisch-Arabisch (optional)",
-  "ms.speakingMeaning.note": "Dies ist die geprüfte Bedeutung der gewählten Zeile, keine Vorlage für deine Nacherzählung. Sie wird ausgeblendet, wenn du die Quelle zum Erinnern verbirgst."
+  "ms.speakingMeaning.note": "Dies ist die geprüfte Bedeutung der gewählten Zeile, keine Vorlage für deine Nacherzählung. Sie wird ausgeblendet, wenn du die Quelle zum Erinnern verbirgst.",
+  "tpr.wordSentence.title": "Dieses Wort in einem eigenen Satz verwenden (optional)",
+  "tpr.wordSentence.label": "Mein englischer Satz (bis zu 300 Zeichen)",
+  "tpr.wordSentence.clear": "Diesen Satz löschen",
+  "tpr.wordSentence.note": "Schreibe einen eigenen Satz mit dem Wort oder Ausdruck und sprich ihn laut. Er bleibt getrennt von Wortabruf und Übersetzung. Ausblenden des Wortes oder Zuklappen behält ihn. Hilfe schließen, Aufgabe wechseln oder Verlassen löscht ihn. Nichts wird geprüft, gesendet oder gespeichert."
 }
