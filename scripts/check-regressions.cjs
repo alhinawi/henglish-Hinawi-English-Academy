@@ -107,6 +107,7 @@ const checks = [
   'check-translation-wordbank-recall.cjs',
   'check-translation-word-recall-attempt.cjs',
   'check-movie-cue-speaking.cjs',
+  'check-movie-speaking-meaning.cjs',
   'check-real-life-photo-library.cjs',
   'check-vowel-workshop.cjs',
   'check-literacy-search-recovery.cjs',

@@ -3482,5 +3482,7 @@
   "tpr.photo.museum": "Displays inside a museum",
   "tpr.photo.interview": "People talking across an interview table",
   "tpr.photo.research": "Laboratory glassware for research",
-  "tpr.photo.writing": "A pen writing on paper"
+  "tpr.photo.writing": "A pen writing on paper",
+  "ms.speakingMeaning.title": "Meaning of this cue in Egyptian Arabic (optional)",
+  "ms.speakingMeaning.note": "This is the reviewed meaning of the selected cue, not a model for your retelling. It stays hidden when you hide the source for recall."
 }
