@@ -3369,5 +3369,13 @@
   "ms.retellingFocus.prompt.meaning": "Prüfe, wer was getan hat, den Grund und die Absicht. Behalte diese Fakten beim Umschreiben bei.",
   "ms.retellingFocus.prompt.clarity": "Wähle einfachere Wörter und verbinde die Gedanken klar. Ändere die Formulierung, nicht die Bedeutung der Quelle.",
   "ms.retellingFocus.prompt.detail": "Vergleiche mit der Quelle. Entferne hinzugefügte Fakten, die sie nicht belegt.",
-  "ms.retellingFocus.chosen": "Dein gewählter Schwerpunkt"
+  "ms.retellingFocus.chosen": "Dein gewählter Schwerpunkt",
+  "tpr.revisionFocus.label": "Schwerpunkt wählen (optional)",
+  "tpr.revisionFocus.none": "Kein Schwerpunkt gewählt",
+  "tpr.revisionFocus.meaning": "Bedeutung und fehlende Informationen",
+  "tpr.revisionFocus.tense": "Zeit und Grammatik",
+  "tpr.revisionFocus.natural": "Natürliche Formulierung",
+  "tpr.revisionFocus.prompt.meaning": "Vergleiche Quelle und beide Fassungen. Prüfe, wer was getan hat, Verneinungen, Zahlen sowie fehlende oder ergänzte Fakten. Erkläre unten eine Änderung.",
+  "tpr.revisionFocus.prompt.tense": "Prüfe den Zeitpunkt und ob die Handlung abgeschlossen ist oder andauert. Prüfe Zeitform, Subjekt und Wortstellung. Erkläre unten eine Änderung.",
+  "tpr.revisionFocus.prompt.natural": "Lies deine überarbeitete Fassung auf Wunsch laut. Suche natürliche Formulierungen in der Zielsprache, ohne die Bedeutung zu ändern. Erkläre unten eine Änderung."
 }
