@@ -16,10 +16,10 @@ try:
     enter();expect(panel).to_have_count(0);selected=[]
     for i,turn in enumerate(scenario['turns']):
      options=page.locator('button[lang="en"]');choice=next((o for o in turn['options'] if not o['isOptimal']),turn['options'][0]) if i%2==0 else next(o for o in turn['options'] if o['isOptimal']);selected.append(choice);options.filter(has_text=choice['textEn']).click();page.get_by_role('button',name=t['rle.continueDialogue'] if i<len(scenario['turns'])-1 else t['rle.finishScenario'],exact=True).click()
-    expect(panel).to_be_visible();expect(panel.get_by_role('button')).to_have_count(len(scenario['turns']))
+    expect(panel).to_be_visible();expect(panel.locator('button[aria-expanded]')).to_have_count(len(scenario['turns']))
     for i,turn in enumerate(scenario['turns']):
-     button=panel.get_by_role('button').nth(i);button.click();expect(button).to_have_attribute('aria-expanded','true');expect(panel.get_by_text(turn['textEn'],exact=True)).to_be_visible();expect(panel.get_by_text(selected[i]['textEn'],exact=True)).to_be_visible();expect(panel.get_by_role('heading',name=t['rle.review.model'],exact=True)).to_have_count(0 if selected[i]['isOptimal'] else 1);assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
-    panel.get_by_role('button').first.click();panel.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-100,behavior:"instant"})')
+     button=panel.locator('button[aria-expanded]').nth(i);button.click();expect(button).to_have_attribute('aria-expanded','true');expect(panel.get_by_text(turn['textEn'],exact=True)).to_be_visible();expect(panel.get_by_text(selected[i]['textEn'],exact=True)).to_be_visible();expect(panel.get_by_role('heading',name=t['rle.review.model'],exact=True)).to_have_count(0 if selected[i]['isOptimal'] else 1);assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+    panel.locator('button[aria-expanded]').first.click();panel.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-100,behavior:"instant"})')
     if scenario==data[0]:page.screenshot(path=f'/downloads/henglish-{prefix}scenario-conversation-review-{lang}.png')
     page.get_by_role('button',name=t['rle.replay'],exact=True).click();expect(panel).to_have_count(0);page.get_by_role('button',name=t['rle.allScenarios'],exact=True).click();enter();expect(panel).to_have_count(0);page.get_by_role('button',name=t['rle.allScenarios'],exact=True).click()
    print(lang,len(data),'scenarios allturnchoice/feedback,strongeroptionconditional,oneaccordion,replay/exitreset,390px PASS; localattemptchoices,noaudio/network');page.close()

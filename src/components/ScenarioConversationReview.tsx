@@ -1,3 +1,4 @@
+import { LessonSpeechButton } from './LessonSpeechButton';
 import React, { useState } from 'react';
 import type { DialogueOption, SimulationScenario } from '../data/realLifeSimulationsData';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -13,9 +14,9 @@ export const ScenarioConversationReview: React.FC<{scenario:SimulationScenario; 
    return <div key={turn.id} className="rounded-xl border border-white/15 p-4 space-y-3">
     <button type="button" aria-expanded={opened===turn.id} aria-controls={`review-${turn.id}`} onClick={()=>setOpened(value=>value===turn.id?null:turn.id)} className="min-h-11 w-full text-start text-sm font-bold text-cyan-100">{t('rle.review.turn').replace('{number}',String(index+1))} · {turn.speaker}</button>
     {opened===turn.id&&<div id={`review-${turn.id}`} className="space-y-4">
-     <div><h4 className="text-xs text-slate-400">{t('rle.review.prompt')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{turn.textEn}</p></div>
-     {chosen&&<div className="rounded-xl border border-white/15 p-3 space-y-2"><h4 className="text-xs font-bold text-cyan-100">{t('rle.review.chosen')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{chosen.textEn}</p><p className="text-xs leading-7 text-slate-300">{meaning(chosen.feedbackAr)}</p></div>}
-     {chosen&&!chosen.isOptimal&&model&&<div className="rounded-xl border border-emerald-200/20 p-3 space-y-2"><h4 className="text-xs font-bold text-emerald-200">{t('rle.review.model')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{model.textEn}</p><p className="text-xs leading-7 text-slate-300">{meaning(model.feedbackAr)}</p></div>}
+     <div><h4 className="text-xs text-slate-400">{t('rle.review.prompt')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{turn.textEn}</p><LessonSpeechButton key={`review-audio:${turn.textEn}`} text={turn.textEn} label={t('rle.review.listen.prompt')} className="min-h-11 rounded-xl border border-cyan-200/30 px-3 text-xs font-bold text-cyan-100"/></div>
+     {chosen&&<div className="rounded-xl border border-white/15 p-3 space-y-2"><h4 className="text-xs font-bold text-cyan-100">{t('rle.review.chosen')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{chosen.textEn}</p><LessonSpeechButton key={`review-audio:${chosen.textEn}`} text={chosen.textEn} label={t('rle.review.listen.chosen')} className="min-h-11 rounded-xl border border-cyan-200/30 px-3 text-xs font-bold text-cyan-100"/><p className="text-xs leading-7 text-slate-300">{meaning(chosen.feedbackAr)}</p></div>}
+     {chosen&&!chosen.isOptimal&&model&&<div className="rounded-xl border border-emerald-200/20 p-3 space-y-2"><h4 className="text-xs font-bold text-emerald-200">{t('rle.review.model')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{model.textEn}</p><LessonSpeechButton key={`review-audio:${model.textEn}`} text={model.textEn} label={t('rle.review.listen.model')} className="min-h-11 rounded-xl border border-cyan-200/30 px-3 text-xs font-bold text-cyan-100"/><p className="text-xs leading-7 text-slate-300">{meaning(model.feedbackAr)}</p></div>}
     </div>}
    </div>;
   })}
