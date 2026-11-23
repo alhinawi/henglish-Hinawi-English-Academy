@@ -3388,5 +3388,6 @@
   "rle.variationAttempt.title": "Eigene Antwort schreiben (optional)",
   "rle.variationAttempt.label": "Meine Antwort auf diese Variante (bis 700 Zeichen)",
   "rle.variationAttempt.clear": "Diese Antwort löschen",
-  "rle.variationAttempt.note": "Schreibe vor dem Sprechen eine englische Antwort auf die geänderte Situation. Jede Variante hat einen eigenen privaten Entwurf, getrennt von Plan und Aufnahme. Zuklappen behält ihn; Schließen der Transferübung, Neustart oder Verlassen des Szenarios löscht ihn. Keine Prüfung, Übertragung oder Speicherung. Keine persönlichen oder sensiblen Angaben."
+  "rle.variationAttempt.note": "Schreibe vor dem Sprechen eine englische Antwort auf die geänderte Situation. Jede Variante hat einen eigenen privaten Entwurf, getrennt von Plan und Aufnahme. Zuklappen behält ihn; Schließen der Transferübung, Neustart oder Verlassen des Szenarios löscht ihn. Keine Prüfung, Übertragung oder Speicherung. Keine persönlichen oder sensiblen Angaben.",
+  "ms.retellingClear.label": "Aktuelle schriftliche Fassung löschen"
 }
