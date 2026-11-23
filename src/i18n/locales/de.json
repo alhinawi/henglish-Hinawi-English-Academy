@@ -3256,5 +3256,8 @@
   "pa.photoReview.next": "Wähle ein Wort oder eine Pause und beschreibe das Bild erneut. Private Notizen bleiben nur in dieser geöffneten Aufnahmeübung; Schließen, Bildwechsel oder Verlassen löscht sie.",
   "tpr.taskPicker.label": "Übersetzungsaufgabe wählen",
   "tpr.taskPicker.note": "Springe zu einer Aufgabe der aktuellen Filter. Entwürfe bleiben im geöffneten Übungstab erhalten; bei der Auswahl werden Musterlösungen und Hinweise ausgeblendet.",
-  "sp.step4.undo": "Letztes Wort zurücknehmen"
+  "sp.step4.undo": "Letztes Wort zurücknehmen",
+  "pa.photoWords.title": "Übe zuerst die Wörter",
+  "pa.photoWords.note": "Höre jedes Wort an und verwende es dann in deiner Bildbeschreibung. Die Wortwiedergabe ist während der geöffneten Aufnahmeübung ausgeblendet.",
+  "pa.photoWords.listen": "Wort anhören: {word}"
 }

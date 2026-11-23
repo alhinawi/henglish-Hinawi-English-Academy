@@ -14,6 +14,7 @@ const checks = [
   'check-pronunciation-photo-practice.cjs',
   'check-pronunciation-photo-plan.cjs',
   'check-pronunciation-photo-review.cjs',
+  'check-pronunciation-photo-words.cjs',
   'check-pronunciation-photo-audio.cjs',
   'check-scenario-transfer-practice.cjs',
   'check-scenario-transfer-review.cjs',
