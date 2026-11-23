@@ -1,0 +1,3 @@
+const fs=require('fs'),assert=require('assert/strict'),s=fs.readFileSync('src/components/PronunciationPhotoPractice.tsx','utf8');for(const x of ['useEffect(()=>()=>stopSpeech(),[])','{!open&&<>','text={scene.sentence}','label={t(\'pa.photo.listen\')}','key={scene.id}','onClick={()=>{stopSpeech();setModel'])assert(s.includes(x),x);assert(!s.includes('autoPlay'));
+for(const lang of ['en','ar','de']){const t=JSON.parse(fs.readFileSync('src/i18n/locales/'+lang+'.json'));for(const k of ['listen','listenNote'])assert(t['pa.photo.'+k]);}
+console.log('Photo pronunciation existing sentence audio:explicit,model-gated,recorderclosed,speechcleanup,noautoplay/sharedvoice PASS');
