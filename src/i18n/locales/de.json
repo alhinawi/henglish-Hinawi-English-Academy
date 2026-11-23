@@ -3518,5 +3518,13 @@
   "ms.retellingReview.check.0": "Ich habe meine Hauptidee mit der Quelle verglichen, statt die ganze Zeile zu kopieren.",
   "ms.retellingReview.check.1": "Ich habe geprüft, wer was tut, einschließlich Zeitangaben und Verneinungen, die die Bedeutung ändern.",
   "ms.retellingReview.check.2": "Ich habe die Satzfolge erneut gelesen und geprüft, dass meine Ergänzungen der Quelle nicht widersprechen.",
-  "ms.retellingReview.clear": "Meine Prüfmarkierungen löschen"
+  "ms.retellingReview.clear": "Meine Prüfmarkierungen löschen",
+  "tpr.wordFocus.label": "Einen Schwerpunkt für meinen zweiten Satz wählen",
+  "tpr.wordFocus.meaning": "Bedeutung",
+  "tpr.wordFocus.form": "Wortform",
+  "tpr.wordFocus.context": "Situation",
+  "tpr.wordFocus.prompt.meaning": "Prüfe, ob dieses Wort die beabsichtigte Bedeutung behält. Ändere die Formulierung, ohne diese Bedeutung zu verändern.",
+  "tpr.wordFocus.prompt.form": "Prüfe die Wortform und die Wörter, die in deinem Satz dazugehören.",
+  "tpr.wordFocus.prompt.context": "Ergänze oder ändere ein hilfreiches Detail, damit das Wort zu einer klaren eigenen Situation passt.",
+  "tpr.wordFocus.chosen": "Mein gewählter Schwerpunkt"
 }
