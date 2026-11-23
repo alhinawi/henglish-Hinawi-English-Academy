@@ -30,6 +30,7 @@ const checks = [
   'check-scenario-variation-meanings.cjs',
   'check-translation-revision-reflection.cjs',
   'check-tutor-goal-suggestions.cjs',
+  'check-tutor-fourth-goals.cjs',
   'check-pronunciation-question-meanings.cjs',
   'check-speaking-topic-review.cjs',
   'check-movie-own-source-recall.cjs',
