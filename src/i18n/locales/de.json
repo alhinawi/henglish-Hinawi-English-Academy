@@ -3447,5 +3447,14 @@
   "pa.photo.garden": "Gartengeräte und Erde",
   "pa.photo.food": "Ein Nudelgericht",
   "pa.photo.hotel": "Ein Hotel am Pool",
-  "pa.photo.museum": "Ein Museumssaal"
+  "pa.photo.museum": "Ein Museumssaal",
+  "ms.recallFocus.label": "Wähle einen Schwerpunkt für das zweite Hören",
+  "ms.recallFocus.chosen": "Mein Schwerpunkt beim zweiten Hören",
+  "ms.recallFocus.words": "Die wichtigsten Wörter hören",
+  "ms.recallFocus.smallWords": "Auf kurze Wörter achten",
+  "ms.recallFocus.spelling": "Schreibung und Wortendungen prüfen",
+  "ms.recallFocus.prompt.words": "Höre noch einmal auf die wichtigsten Wörter, die du verpasst hast. Vergleiche sie vor dem nächsten Versuch mit dem geprüften Untertitel.",
+  "ms.recallFocus.prompt.smallWords": "Achte auf kurze Wörter wie a, the, to oder and, falls sie im Untertitel vorkommen. Ergänze keine Wörter, die du nicht hörst.",
+  "ms.recallFocus.prompt.spelling": "Vergleiche Schreibung und Endungen deines ersten Entwurfs mit dem geprüften Untertitel. Höre vor dem zweiten Entwurf noch einmal zu.",
+  "ms.recallFocus.clear": "Meinen aktuellen Entwurf leeren"
 }
