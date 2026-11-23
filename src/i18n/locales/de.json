@@ -3096,7 +3096,7 @@
   "ms.own.echo": "Quelle nachsprechen",
   "ms.own.own": "Eigene Worte nutzen",
   "ms.own.title": "Gleiche Bedeutung, andere Worte",
-  "ms.own.task": "Formuliere die Quellzeile anders. Behalte Bedeutung und Absicht der sprechenden Person bei und nutze vertrautes Englisch. Die Quelle bleibt sichtbar, aber es gibt keine Musterparaphrase oder automatische Note.",
+  "ms.own.task": "Formuliere den Satz mit eigenen Worten. Behalte die Hauptaussage und Absicht bei und nutze Englisch, das du kennst. Du kannst die Quelle in dieser Übung ausblenden, um aus dem Gedächtnis zu üben. Es gibt keine Musterumschreibung und keine automatische Bewertung.",
   "ms.own.plan": "Private Planungsnotizen",
   "ms.own.note": "Notizen bleiben nur in dieser geöffneten Übung. Aufgaben- oder Zeilenwechsel, Schließen oder Verlassen löscht Notizen und Aufnahmen. Nichts wird gesendet oder bewertet.",
   "ms.own.record": "Gib die Quellzeile mit deinen eigenen englischen Worten wieder. Behalte Bedeutung und Absicht bei.",
@@ -3288,5 +3288,10 @@
   "tpr.compare.revision": "Meine überarbeitete Fassung",
   "rle.variation.title": "Probiere eine andere Situation (optional)",
   "rle.variation.note": "Wähle eine eigene Variante und antworte mit deinen eigenen englischen Worten. Du kannst Details erfinden und den privaten Plan unten nutzen. Nur Sprachübung, keine echte Buchung, kein Kauf und keine medizinische Beratung.",
-  "rle.variation.number": "Variante {number}"
+  "rle.variation.number": "Variante {number}",
+  "ms.own.sourceCue": "Geprüfter Satz",
+  "ms.own.sourceHide": "Quelle in dieser Übung ausblenden",
+  "ms.own.sourceShow": "Quelle wieder anzeigen",
+  "ms.own.sourceHidden": "Gib die Bedeutung aus dem Gedächtnis wieder. Die Quelle ist nur hier und im Satzmenü dieser Übung ausgeblendet, nicht im Transkript des Players. Dein privater Plan bleibt erhalten. Blende sie zur Kontrolle wieder ein und versuche es erneut.",
+  "ms.own.sourceVisible": "Lies den Satz, um ihn zu verstehen. Blende dann die Quelle dieser Übung aus und gib die Bedeutung mit eigenen Worten wieder. Freiwilliges Gedächtnistraining, kein Test und keine Bewertung."
 }
