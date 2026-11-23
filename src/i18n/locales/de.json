@@ -3496,5 +3496,9 @@
   "tpr.wordSentenceRetry.note": "Noch ein Versuch? Behalte den ersten Satz hier und schreibe einen zweiten mit demselben Wort. Vergleiche selbst.",
   "tpr.wordSentenceRetry.start": "Ersten Satz behalten und erneut versuchen",
   "tpr.wordSentenceRetry.first": "Mein erster Satz",
-  "tpr.wordSentenceRetry.compare": "Der erste Satz bleibt beim Bearbeiten oder Löschen des aktuellen sichtbar. Prüfe Bedeutung und Wortwahl selbst. Beide verschwinden beim Schließen der Hilfe, Aufgabenwechsel oder Verlassen. Kein automatisches Feedback."
+  "tpr.wordSentenceRetry.compare": "Der erste Satz bleibt beim Bearbeiten oder Löschen des aktuellen sichtbar. Prüfe Bedeutung und Wortwahl selbst. Beide verschwinden beim Schließen der Hilfe, Aufgabenwechsel oder Verlassen. Kein automatisches Feedback.",
+  "sp.topicRetry.note": "Verwende den Ausdruck erneut. Behalte den ersten Satz und schreibe einen zweiten. Vergleiche selbst.",
+  "sp.topicRetry.start": "Ersten Satz behalten und erneut versuchen",
+  "sp.topicRetry.first": "Mein erster Satz",
+  "sp.topicRetry.compare": "Der erste Satz bleibt beim Bearbeiten oder Löschen des aktuellen erhalten. Prüfe Bedeutung und Wortwahl selbst. Schließen, Aufgabenwechsel oder Verlassen löscht beide. Kein automatisches Feedback."
 }
