@@ -3369,5 +3369,13 @@
   "ms.retellingFocus.prompt.meaning": "Check who did what, the reason and the speaker's intention. Keep those facts the same when you rewrite.",
   "ms.retellingFocus.prompt.clarity": "Choose simpler words and make the links between ideas clear. Change the wording, not the source meaning.",
   "ms.retellingFocus.prompt.detail": "Compare with the source. Remove any facts you added that the source does not support.",
-  "ms.retellingFocus.chosen": "Your chosen revision focus"
+  "ms.retellingFocus.chosen": "Your chosen revision focus",
+  "tpr.revisionFocus.label": "Choose a revision focus (optional)",
+  "tpr.revisionFocus.none": "No focus selected",
+  "tpr.revisionFocus.meaning": "Meaning and missing information",
+  "tpr.revisionFocus.tense": "Time and grammar",
+  "tpr.revisionFocus.natural": "Natural wording",
+  "tpr.revisionFocus.prompt.meaning": "Compare the source and both versions. Check who did what, negatives, numbers and any missing or added facts. Explain one change below.",
+  "tpr.revisionFocus.prompt.tense": "Look at the time and whether the action is finished or continuing. Check tense, subject agreement and word order. Explain one change below.",
+  "tpr.revisionFocus.prompt.natural": "Read your revised version aloud if you want. Look for wording that sounds natural in the target language without changing the meaning. Explain one change below."
 }
