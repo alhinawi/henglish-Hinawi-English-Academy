@@ -3285,5 +3285,8 @@
   "tpr.compare.title": "Meine zwei Fassungen vergleichen (optional)",
   "tpr.compare.note": "Lies deinen ersten Versuch und deine Überarbeitung zusammen. Welche Änderung macht die Bedeutung klarer oder den Ausdruck natürlicher? Dieser private Vergleich bewertet nichts und ändert deine Checkliste nicht.",
   "tpr.compare.original": "Meine erste Fassung",
-  "tpr.compare.revision": "Meine überarbeitete Fassung"
+  "tpr.compare.revision": "Meine überarbeitete Fassung",
+  "rle.variation.title": "Probiere eine andere Situation (optional)",
+  "rle.variation.note": "Wähle eine eigene Variante und antworte mit deinen eigenen englischen Worten. Du kannst Details erfinden und den privaten Plan unten nutzen. Nur Sprachübung, keine echte Buchung, kein Kauf und keine medizinische Beratung.",
+  "rle.variation.number": "Variante {number}"
 }

@@ -3285,5 +3285,8 @@
   "tpr.compare.title": "Compare my two versions (optional)",
   "tpr.compare.note": "Read your original and revision together. Which change makes the meaning clearer or the wording more natural? This private comparison does not mark answers or change your checklist.",
   "tpr.compare.original": "My original version",
-  "tpr.compare.revision": "My revised version"
+  "tpr.compare.revision": "My revised version",
+  "rle.variation.title": "Try a different situation (optional)",
+  "rle.variation.note": "Choose one original variation and answer in your own English. You can invent details and use the private plan below. Language practice only, not a real booking, purchase or medical advice.",
+  "rle.variation.number": "Variation {number}"
 }
