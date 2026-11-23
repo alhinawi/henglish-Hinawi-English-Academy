@@ -11,6 +11,7 @@ const checks = [
   'check-speaking-topic-word-sentences.cjs',
   'check-tutor-goal-listening.cjs',
   'check-tutor-private-rehearsal.cjs',
+  'check-tutor-rehearsal-retry.cjs',
   'check-tutor-rehearsal-review.cjs',
   'check-translation-revision-focus.cjs',
   'check-translation-task-meaning-checks.cjs',

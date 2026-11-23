@@ -3456,5 +3456,9 @@
   "ms.recallFocus.prompt.words": "Listen again for the main words you missed. Compare them with the reviewed caption before trying again.",
   "ms.recallFocus.prompt.smallWords": "Listen for short words such as a, the, to or and, if they occur in this caption. Do not add words that you cannot hear.",
   "ms.recallFocus.prompt.spelling": "Compare the spelling and endings in your first draft with the reviewed caption. Listen again before writing the second draft.",
-  "ms.recallFocus.clear": "Clear my current draft"
+  "ms.recallFocus.clear": "Clear my current draft",
+  "at.rehearsalRetry.note": "Want to try a clearer version? Keep this first attempt and write a second one. Use the optional review to choose what to improve. Nothing is sent to the teacher.",
+  "at.rehearsalRetry.start": "Keep my first try and write again",
+  "at.rehearsalRetry.first": "My first private try",
+  "at.rehearsalRetry.compare": "Read both attempts yourself. What changed? Clear removes only the current draft. Changing teacher mode or leaving the page removes both attempts. Nothing is graded, sent or saved."
 }
