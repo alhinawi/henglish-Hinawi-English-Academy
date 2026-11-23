@@ -18,6 +18,7 @@ const checks = [
   'check-scenario-variation-starters.cjs',
   'check-pronunciation-followup-listen.cjs',
   'check-speaking-role-written-attempt.cjs',
+  'check-speaking-role-second-attempt.cjs',
   'check-movie-private-retelling.cjs',
   'check-scenario-variation-meanings.cjs',
   'check-translation-revision-reflection.cjs',

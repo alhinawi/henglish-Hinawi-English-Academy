@@ -3389,5 +3389,9 @@
   "rle.variationAttempt.label": "My reply to this variation (up to 700 characters)",
   "rle.variationAttempt.clear": "Clear this reply",
   "rle.variationAttempt.note": "Write an English reply to this changed situation before speaking. Each variation has its own private draft, separate from the plan and recording. Collapse keeps it; closing transfer practice, replaying or leaving the scenario clears it. Nothing is checked, sent or saved. Avoid personal or sensitive details.",
-  "ms.retellingClear.label": "Clear the current written version"
+  "ms.retellingClear.label": "Clear the current written version",
+  "sp.roleRetry.note": "Keep this first reply and try another way to say it. The second version is optional and private.",
+  "sp.roleRetry.start": "Keep my first reply and try again",
+  "sp.roleRetry.first": "Your first reply",
+  "sp.roleRetry.compare": "Compare your two replies. Is the meaning still right for this turn? Which version would you say aloud? Neither version is checked or scored."
 }
