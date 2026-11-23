@@ -3542,5 +3542,13 @@
   "pa.wordFocus.prompt.sound": "Behalte dieses Wort im zweiten Satz. Formuliere einen Satz, den du gut aussprechen kannst, und übe den Ziellaut laut. Deine Aussprache wird nicht geprüft.",
   "pa.wordFocus.prompt.meaning": "Prüfe, wie du das Wort im ersten Satz verwendet hast. Schreibe einen weiteren Satz, der seine Bedeutung deutlich macht.",
   "pa.wordFocus.prompt.photo": "Verwende das Wort mit einem passenden Detail aus dem Foto oder einem Detail, das du dir für diese Situation vorstellst.",
-  "pa.wordFocus.chosen": "Mein gewählter Fokus"
+  "pa.wordFocus.chosen": "Mein gewählter Fokus",
+  "rle.vocabFocus.label": "Wähle einen Fokus für meinen zweiten Satz",
+  "rle.vocabFocus.meaning": "Klare Bedeutung",
+  "rle.vocabFocus.polite": "Höfliche Bitte oder Frage",
+  "rle.vocabFocus.detail": "Nützliches Situationsdetail",
+  "rle.vocabFocus.prompt.meaning": "Verwende den Ausdruck in einem neuen Satz, der seine Bedeutung deutlich macht. Vergleiche deine Verwendung selbst mit Definition und Beispiel.",
+  "rle.vocabFocus.prompt.polite": "Verwende den Ausdruck in einer höflichen Bitte oder Frage, die du in dieser Übungssituation sagen könntest.",
+  "rle.vocabFocus.prompt.detail": "Behalte den Ausdruck und ergänze oder ändere ein nützliches Detail für diese Übungssituation. Nutze erfundene Details statt privater Informationen.",
+  "rle.vocabFocus.chosen": "Mein gewählter Fokus"
 }
