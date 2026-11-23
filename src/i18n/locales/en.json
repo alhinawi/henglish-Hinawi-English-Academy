@@ -3534,5 +3534,13 @@
   "sp.topicFocus.prompt.meaning": "Check that the expression keeps the meaning you intend. Use the Arabic meaning as a hint, not a whole sentence to copy.",
   "sp.topicFocus.prompt.form": "Check the expression and the words around it. Change what needs to fit your sentence without losing the expression.",
   "sp.topicFocus.prompt.context": "Add or change a useful detail so your expression fits this role-play situation.",
-  "sp.topicFocus.chosen": "My chosen focus"
+  "sp.topicFocus.chosen": "My chosen focus",
+  "pa.wordFocus.label": "Choose one focus for my second sentence",
+  "pa.wordFocus.sound": "Target sound practice",
+  "pa.wordFocus.meaning": "Word meaning",
+  "pa.wordFocus.photo": "Photo detail",
+  "pa.wordFocus.prompt.sound": "Keep this word in your second sentence. Make the sentence comfortable to say, then practise the target sound aloud. This does not check your pronunciation.",
+  "pa.wordFocus.prompt.meaning": "Check how you used this word in your first sentence. Write another sentence that makes its meaning clear.",
+  "pa.wordFocus.prompt.photo": "Use this word with one useful detail from the photo, or a detail you imagine for this situation.",
+  "pa.wordFocus.chosen": "My chosen focus"
 }
