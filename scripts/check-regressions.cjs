@@ -17,6 +17,7 @@ const checks = [
   'check-movie-own-words.cjs',
   'check-translation-revision.cjs',
   'check-scenario-conversation-review.cjs',
+  'check-scenario-review-rewrite.cjs',
   'check-minimal-pair-navigation.cjs',
   'check-speaking-transfer-practice.cjs',
   'check-speaking-transfer-review.cjs',
