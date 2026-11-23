@@ -3175,5 +3175,8 @@
   "sp.transferReview.check.1": "Ich habe eine Formulierung aus der Lektion mit einem eigenen Detail benutzt.",
   "sp.transferReview.check.2": "Ich habe einen passenden Grund, ein weiteres Detail oder eine Rückfrage ergänzt.",
   "sp.transferReview.target": "Eine kleine Änderung für meinen nächsten Versuch",
-  "sp.transferReview.next": "Wähle eine Änderung, etwa ein klareres Detail oder eine andere Formulierung. Sprich erneut, wenn du bereit bist. Eine neue Aufnahme ersetzt die vorherige nur bei Erfolg; es erfolgt kein automatischer Download."
+  "sp.transferReview.next": "Wähle eine Änderung, etwa ein klareres Detail oder eine andere Formulierung. Sprich erneut, wenn du bereit bist. Eine neue Aufnahme ersetzt die vorherige nur bei Erfolg; es erfolgt kein automatischer Download.",
+  "rle.review.rewrite": "Schreibe eine eigene verbesserte Antwort",
+  "rle.review.rewriteNote": "Nutze die Situation und die Hinweise oben. Antworte sinnvoll mit eigenen Worten. Vergleiche Höflichkeit, Klarheit und die benötigten Details. Es gibt keine automatische Bewertung.",
+  "rle.review.rewritePrivacy": "Dein Entwurf bleibt während dieser Wiederholung pro Gesprächsschritt getrennt. Er wird nicht gesendet oder gespeichert und ändert weder Auswahl noch Punktzahl. Neustart oder Verlassen verwirft ihn."
 }
