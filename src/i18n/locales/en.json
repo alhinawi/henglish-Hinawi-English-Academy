@@ -3550,5 +3550,8 @@
   "rle.vocabFocus.prompt.meaning": "Use this expression in a new sentence that makes its meaning clear. Compare your use with the definition and example yourself.",
   "rle.vocabFocus.prompt.polite": "Use this expression in a polite request or question that you could say in this practice situation.",
   "rle.vocabFocus.prompt.detail": "Keep this expression and add or change one useful detail for this practice situation. Use imaginary details, not private information.",
-  "rle.vocabFocus.chosen": "My chosen focus"
+  "rle.vocabFocus.chosen": "My chosen focus",
+  "ms.retellingNext.label": "One thing I want to try next (optional, 300 characters)",
+  "ms.retellingNext.note": "Write a short reminder for yourself in any language. This is separate from your plan and both retellings. Clearing the checks keeps this note; clearing this note keeps the checks. Collapsing keeps it. Changing mode, closing practice or leaving clears it. Nothing is assessed, sent or saved.",
+  "ms.retellingNext.clear": "Clear this reminder"
 }
