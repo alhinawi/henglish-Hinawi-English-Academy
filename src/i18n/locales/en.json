@@ -3160,5 +3160,7 @@
   "pa.context.listenNote": "Choose the word that fits first. A listening control appears after a correct choice, while the recorder is closed. Close recording practice to listen again.",
   "rle.review.listen.prompt": "Listen to the conversation prompt",
   "rle.review.listen.chosen": "Listen to my selected reply",
-  "rle.review.listen.model": "Listen to the stronger alternative"
+  "rle.review.listen.model": "Listen to the stronger alternative",
+  "tpr.grammar.title": "Review the language pattern, in Arabic",
+  "tpr.grammar.note": "A task-specific grammar note from this exercise. Compare it with the source and suggested translations. It does not assess your draft."
 }
