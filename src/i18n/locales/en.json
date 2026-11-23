@@ -3253,5 +3253,7 @@
   "pa.photoReview.check.1": "I stressed the important words in my sentence.",
   "pa.photoReview.check.2": "I used short pauses and a steady pace.",
   "pa.photoReview.target": "One thing to change on my next try",
-  "pa.photoReview.next": "Choose one word or pause, then describe the photo again. Private notes stay only while this recording practice is open; closing it, changing photo or leaving clears them."
+  "pa.photoReview.next": "Choose one word or pause, then describe the photo again. Private notes stay only while this recording practice is open; closing it, changing photo or leaving clears them.",
+  "tpr.taskPicker.label": "Choose a translation task",
+  "tpr.taskPicker.note": "Jump to any task in the current filters. Your drafts stay while this practice tab is open; choosing a task hides models and hints."
 }
