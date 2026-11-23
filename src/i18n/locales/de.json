@@ -3160,5 +3160,7 @@
   "pa.context.listenNote": "Wähle zuerst das passende Wort. Nach einer richtigen Auswahl erscheint eine Hörfunktion, solange die Aufnahme geschlossen ist. Schließe die Aufnahmeübung, um erneut zu hören.",
   "rle.review.listen.prompt": "Den Gesprächsimpuls hören",
   "rle.review.listen.chosen": "Meine gewählte Antwort hören",
-  "rle.review.listen.model": "Die passendere Alternative hören"
+  "rle.review.listen.model": "Die passendere Alternative hören",
+  "tpr.grammar.title": "Das Sprachmuster auf Arabisch nachlesen",
+  "tpr.grammar.note": "Ein Grammatikhinweis zu dieser Aufgabe. Vergleiche ihn mit dem Ausgangssatz und den vorgeschlagenen Übersetzungen. Er bewertet deinen Entwurf nicht."
 }
