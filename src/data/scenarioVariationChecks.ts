@@ -20,6 +20,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I asked staff to check the gate difference.",
       "I confirmed the direction to the correct gate."
+    ],
+    [
+      "I asked which group was currently boarding.",
+      "I checked whether I should wait before joining the queue."
     ]
   ],
   "sim-restaurant-ordering": [
@@ -42,6 +46,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I asked about the portion size before ordering.",
       "I explained how many people would share the dish."
+    ],
+    [
+      "I asked about table availability for a stated time.",
+      "I checked how long the table could be held."
     ]
   ],
   "sim-doctor-appointment": [
@@ -64,6 +72,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I identified the part of the form I did not understand.",
       "I checked what to do instead of guessing information."
+    ],
+    [
+      "I asked which waiting area I should use.",
+      "I checked how I would be called for the appointment."
     ]
   ],
   "sim-job-interview": [
@@ -86,6 +98,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I explained that an audio problem interrupted the question.",
       "I asked for the missing part to be repeated."
+    ],
+    [
+      "I restated the two parts to check the question.",
+      "I asked which part to answer first."
     ]
   ],
   "sim-coffee-shop": [
@@ -108,6 +124,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I asked whether a suitable table was available.",
       "I checked whether ordering or sitting should come first."
+    ],
+    [
+      "I checked whether the drink belonged to my order.",
+      "I stated my drink and order name instead of taking it without checking."
     ]
   ],
   "sim-hotel-checkin": [
@@ -130,6 +150,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I asked for the breakfast time and location.",
       "I repeated both details to check my understanding."
+    ],
+    [
+      "I asked which lift served my room floor.",
+      "I repeated a useful direction to check my understanding."
     ]
   ],
   "sim-pharmacy-visit": [
@@ -152,6 +176,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I explained that background noise made listening difficult.",
       "I asked for a quieter place and a repeated explanation."
+    ],
+    [
+      "I asked the pharmacist to check my understanding of the written instruction.",
+      "I repeated my understanding and requested correction instead of assuming it was right."
     ]
   ],
   "sim-clothing-shopping": [
@@ -174,6 +202,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I asked about a specific alternative colour.",
       "I checked whether that colour had the same price."
+    ],
+    [
+      "I asked where to find the care label.",
+      "I asked staff to explain a symbol rather than guessing its meaning."
     ]
   ],
   "sim-supermarket-shopping": [
@@ -196,6 +228,10 @@ export const SCENARIO_VARIATION_CHECKS: Record<string, readonly (readonly [strin
     [
       "I asked staff to explain the quantity required for the offer.",
       "I confirmed the price of buying just one item."
+    ],
+    [
+      "I asked which open checkout to use.",
+      "I checked what to do with my shopping when moving queues."
     ]
   ]
 };
