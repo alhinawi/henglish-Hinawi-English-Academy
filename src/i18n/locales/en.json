@@ -3471,5 +3471,9 @@
   "sp.followupRetry.compare": "Read both versions. Did you answer this task and explain your meaning clearly? Clear removes only the current draft. Both versions disappear when you change task, close practice or leave.",
   "tpr.wordAttempt.label": "My English word or phrase from memory (up to150 characters)",
   "tpr.wordAttempt.clear": "Clear my word attempt",
-  "tpr.wordAttempt.note": "Hide the English, use the Arabic meaning to recall it, then reveal and compare yourself. Your spelling is not graded. This private field is separate from your translation draft. Closing help or changing tasks clears it."
+  "tpr.wordAttempt.note": "Hide the English, use the Arabic meaning to recall it, then reveal and compare yourself. Your spelling is not graded. This private field is separate from your translation draft. Closing help or changing tasks clears it.",
+  "pa.photo.nightStreet": "A city street at night",
+  "pa.photo.track": "A runner ready on a track",
+  "pa.photo.freight": "A freight train on railway tracks",
+  "pa.photo.photography": "A camera and separate lenses"
 }
