@@ -3274,5 +3274,8 @@
   "pa.photoNav.label": "Navigation der Fotoübungen",
   "pa.photoNav.position": "Foto {current} von {total}",
   "pa.photoNav.previous": "Vorheriges Foto",
-  "pa.photoNav.next": "Nächstes Foto"
+  "pa.photoNav.next": "Nächstes Foto",
+  "pa.photoChallenge.title": "Probiere eine Anschlussfrage (optional)",
+  "pa.photoChallenge.note": "Gehe über das Benennen hinaus. Stell dir eine Situation zum Foto vor. Mehrere Antworten können passen.",
+  "pa.photoChallenge.try": "Nutze ein Wort aus der Wortliste und ergänze einen Grund oder ein Beispiel. Sprich zwei kurze Sätze oder nutze den privaten Satzplaner. Das ist Selbststudium, kein Test und keine Aussprachebewertung."
 }

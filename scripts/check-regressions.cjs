@@ -14,6 +14,7 @@ const checks = [
   'check-translation-practice-hints.cjs',
   'check-pronunciation-photo-practice.cjs',
   'check-pronunciation-photo-navigation.cjs',
+  'check-pronunciation-photo-challenges.cjs',
   'check-pronunciation-photo-plan.cjs',
   'check-pronunciation-photo-review.cjs',
   'check-pronunciation-photo-words.cjs',
