@@ -3518,5 +3518,13 @@
   "ms.retellingReview.check.0": "قارنت فكرتي الأساسية بالمصدر بدل ما أنقل السطر كله.",
   "ms.retellingReview.check.1": "راجعت مين عمل إيه، وكلمات الوقت أو النفي اللي بتغير المعنى.",
   "ms.retellingReview.check.2": "قريت ترتيب جملي تاني واتأكدت إن التفاصيل اللي ضفتها مش بتناقض المصدر.",
-  "ms.retellingReview.clear": "امسح علامات مراجعتي"
+  "ms.retellingReview.clear": "امسح علامات مراجعتي",
+  "tpr.wordFocus.label": "اختار حاجة أركز عليها في الجملة التانية",
+  "tpr.wordFocus.meaning": "المعنى",
+  "tpr.wordFocus.form": "صيغة الكلمة",
+  "tpr.wordFocus.context": "الموقف",
+  "tpr.wordFocus.prompt.meaning": "اتأكد إن الكلمة محتفظة بالمعنى اللي تقصده. غير صياغتك من غير ما تغير المعنى ده.",
+  "tpr.wordFocus.prompt.form": "راجع صيغة الكلمة والكلمات اللي محتاجاها جنبها في جملتك.",
+  "tpr.wordFocus.prompt.context": "ضيف أو غير تفصيلة مفيدة عشان الكلمة تناسب موقف واضح من عندك.",
+  "tpr.wordFocus.chosen": "التركيز اللي اخترته"
 }
