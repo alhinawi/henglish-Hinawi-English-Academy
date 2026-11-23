@@ -16,7 +16,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What is your name?",
-        "ar": ""
+        "ar": "اسمك إيه؟"
       },
       {
         "role": "B",
@@ -26,12 +26,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Nice to meet you too. Are you a student?",
-        "ar": ""
+        "ar": "وأنا كمان مبسوط بمعرفتك. إنت طالب؟"
       },
       {
         "role": "B",
         "en": "Yes, I study English.",
-        "ar": ""
+        "ar": "أيوه، بدرس إنجليزي."
       }
     ],
     "options": [
@@ -59,7 +59,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Who is this?",
-        "ar": ""
+        "ar": "مين ده؟"
       },
       {
         "role": "B",
@@ -69,12 +69,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Hello, Omar. Where are you from?",
-        "ar": ""
+        "ar": "أهلا يا عمر. إنت منين؟"
       },
       {
         "role": "B",
         "en": "I am from Cairo.",
-        "ar": ""
+        "ar": "أنا من القاهرة."
       }
     ],
     "options": [
@@ -102,7 +102,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Can you spell your surname?",
-        "ar": ""
+        "ar": "ممكن تهجي اسم عيلتك؟"
       },
       {
         "role": "B",
@@ -112,12 +112,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Thank you. Please write it here.",
-        "ar": ""
+        "ar": "شكرا. اكتبه هنا لو سمحت."
       },
       {
         "role": "B",
         "en": "Of course.",
-        "ar": ""
+        "ar": "طبعا."
       }
     ],
     "options": [
@@ -145,7 +145,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Please turn to page fourteen.",
-        "ar": ""
+        "ar": "افتح على صفحة أربعة عشر لو سمحت."
       },
       {
         "role": "B",
@@ -155,12 +155,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Page fourteen. One four.",
-        "ar": ""
+        "ar": "صفحة أربعة عشر. واحد أربعة."
       },
       {
         "role": "B",
         "en": "Thank you. I understand now.",
-        "ar": ""
+        "ar": "شكرا. فهمت دلوقتي."
       }
     ],
     "options": [
@@ -188,7 +188,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What time do you get up?",
-        "ar": ""
+        "ar": "بتصحى الساعة كام؟"
       },
       {
         "role": "B",
@@ -198,12 +198,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Do you have breakfast at home?",
-        "ar": ""
+        "ar": "بتفطر في البيت؟"
       },
       {
         "role": "B",
         "en": "Yes, I usually have eggs.",
-        "ar": ""
+        "ar": "أيوه، غالبا باكل بيض."
       }
     ],
     "options": [
@@ -231,7 +231,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What do you like reading?",
-        "ar": ""
+        "ar": "بتحب تقرأ إيه؟"
       },
       {
         "role": "B",
@@ -241,12 +241,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Do you read every evening?",
-        "ar": ""
+        "ar": "بتقرأ كل يوم بالليل؟"
       },
       {
         "role": "B",
         "en": "Yes, before I go to bed.",
-        "ar": ""
+        "ar": "أيوه، قبل ما أنام."
       }
     ],
     "options": [
@@ -274,7 +274,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Are you free this afternoon?",
-        "ar": ""
+        "ar": "إنت فاضي بعد الضهر النهارده؟"
       },
       {
         "role": "B",
@@ -284,12 +284,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Good idea. At the library?",
-        "ar": ""
+        "ar": "فكرة حلوة. في المكتبة؟"
       },
       {
         "role": "B",
         "en": "Yes, see you there at three.",
-        "ar": ""
+        "ar": "أيوه، أشوفك هناك الساعة تلاتة."
       }
     ],
     "options": [
@@ -317,7 +317,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What do you do in your free time?",
-        "ar": ""
+        "ar": "بتعمل إيه في وقت فراغك؟"
       },
       {
         "role": "B",
@@ -327,12 +327,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "That sounds interesting. How often?",
-        "ar": ""
+        "ar": "ده شكله ممتع. بتعمل كده كل قد إيه؟"
       },
       {
         "role": "B",
         "en": "Every weekend.",
-        "ar": ""
+        "ar": "كل ويك إند."
       }
     ],
     "options": [
@@ -360,7 +360,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "May I see your passport, please?",
-        "ar": ""
+        "ar": "ممكن أشوف جواز سفرك لو سمحت؟"
       },
       {
         "role": "B",
@@ -370,12 +370,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Yes. Where are you flying today?",
-        "ar": ""
+        "ar": "أيوه. مسافر فين النهارده؟"
       },
       {
         "role": "B",
         "en": "I am flying to London.",
-        "ar": ""
+        "ar": "مسافر لندن."
       }
     ],
     "options": [
@@ -403,7 +403,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Excuse me, where is gate twelve?",
-        "ar": ""
+        "ar": "لو سمحت، فين البوابة اتناشر؟"
       },
       {
         "role": "B",
@@ -413,12 +413,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Is it near the coffee shop?",
-        "ar": ""
+        "ar": "هي قريبة من الكافيه؟"
       },
       {
         "role": "B",
         "en": "Yes, just past it.",
-        "ar": ""
+        "ar": "أيوه، بعده على طول."
       }
     ],
     "options": [
@@ -446,7 +446,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Shall we meet in the city centre?",
-        "ar": ""
+        "ar": "إيه رأيك نتقابل في وسط البلد؟"
       },
       {
         "role": "B",
@@ -456,12 +456,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Sure. Would five o'clock suit you?",
-        "ar": ""
+        "ar": "تمام. الساعة خمسة مناسبة ليك؟"
       },
       {
         "role": "B",
         "en": "Yes, that works for me.",
-        "ar": ""
+        "ar": "أيوه، ده مناسب ليا."
       }
     ],
     "options": [
@@ -489,7 +489,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How much are these tomatoes?",
-        "ar": ""
+        "ar": "الطماطم دي بكام؟"
       },
       {
         "role": "B",
@@ -499,12 +499,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "I would like half a kilo, please.",
-        "ar": ""
+        "ar": "عايز نص كيلو لو سمحت."
       },
       {
         "role": "B",
         "en": "Certainly. Anything else?",
-        "ar": ""
+        "ar": "حاضر. أي حاجة تانية؟"
       }
     ],
     "options": [
@@ -532,7 +532,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How long have you had this cough?",
-        "ar": ""
+        "ar": "بقالك قد إيه عندك الكحة دي؟"
       },
       {
         "role": "B",
@@ -542,12 +542,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Do you have any other symptoms?",
-        "ar": ""
+        "ar": "عندك أي أعراض تانية؟"
       },
       {
         "role": "B",
         "en": "I also have a sore throat.",
-        "ar": ""
+        "ar": "عندي كمان التهاب في الزور."
       }
     ],
     "options": [
@@ -575,7 +575,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How was your weekend?",
-        "ar": ""
+        "ar": "الويك إند كان عامل إيه؟"
       },
       {
         "role": "B",
@@ -585,12 +585,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What did you enjoy most?",
-        "ar": ""
+        "ar": "إيه أكتر حاجة عجبتك؟"
       },
       {
         "role": "B",
         "en": "The old maps were amazing.",
-        "ar": ""
+        "ar": "الخرايط القديمة كانت مدهشة."
       }
     ],
     "options": [
@@ -618,7 +618,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Have you finished your revision yet?",
-        "ar": ""
+        "ar": "خلصت المراجعة ولا لسه؟"
       },
       {
         "role": "B",
@@ -628,12 +628,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Would you like to revise together?",
-        "ar": ""
+        "ar": "تحب نراجع سوا؟"
       },
       {
         "role": "B",
         "en": "Yes, that would help.",
-        "ar": ""
+        "ar": "أيوه، ده هيساعد."
       }
     ],
     "options": [
@@ -661,7 +661,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What are you going to do after graduation?",
-        "ar": ""
+        "ar": "ناوي تعمل إيه بعد التخرج؟"
       },
       {
         "role": "B",
@@ -671,12 +671,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "That sounds exciting. Where?",
-        "ar": ""
+        "ar": "ده شكله حلو. فين؟"
       },
       {
         "role": "B",
         "en": "At a local language school.",
-        "ar": ""
+        "ar": "في مدرسة لغات قريبة."
       }
     ],
     "options": [
@@ -704,7 +704,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "I started learning Italian last month.",
-        "ar": ""
+        "ar": "بدأت أتعلم إيطالي الشهر اللي فات."
       },
       {
         "role": "B",
@@ -714,12 +714,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "I want to visit my cousins in Rome.",
-        "ar": ""
+        "ar": "عايز أزور قرايبي في روما."
       },
       {
         "role": "B",
         "en": "That sounds like a good reason.",
-        "ar": ""
+        "ar": "ده شكله سبب كويس."
       }
     ],
     "options": [
@@ -747,7 +747,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "I find it hard to study after work.",
-        "ar": ""
+        "ar": "بلاقي المذاكرة بعد الشغل صعبة."
       },
       {
         "role": "B",
@@ -757,12 +757,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "That might work. How long should I study?",
-        "ar": ""
+        "ar": "ممكن ده ينفع. أذاكر قد إيه؟"
       },
       {
         "role": "B",
         "en": "Start with fifteen minutes.",
-        "ar": ""
+        "ar": "ابدأ بخمستاشر دقيقة."
       }
     ],
     "options": [
@@ -790,7 +790,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "You missed our meeting yesterday.",
-        "ar": ""
+        "ar": "محضرتش اجتماعنا امبارح."
       },
       {
         "role": "B",
@@ -800,12 +800,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Thanks for saying that. Can we reschedule?",
-        "ar": ""
+        "ar": "شكرا إنك قلت كده. ينفع نحدد معاد تاني؟"
       },
       {
         "role": "B",
         "en": "Yes. Would tomorrow afternoon work?",
-        "ar": ""
+        "ar": "أيوه. بكرة بعد الضهر مناسب؟"
       }
     ],
     "options": [
@@ -833,7 +833,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Why would you like to work here?",
-        "ar": ""
+        "ar": "إيه اللي مخليك عايز تشتغل هنا؟"
       },
       {
         "role": "B",
@@ -843,12 +843,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Could you give us an example?",
-        "ar": ""
+        "ar": "ممكن تدينا مثال؟"
       },
       {
         "role": "B",
         "en": "I want to develop my classroom skills.",
-        "ar": ""
+        "ar": "عايز أطور مهاراتي في التدريس جوه الفصل."
       }
     ],
     "options": [
@@ -876,7 +876,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How is the website coming along?",
-        "ar": ""
+        "ar": "وصلتوا لفين في الموقع؟"
       },
       {
         "role": "B",
@@ -886,12 +886,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What do you need from us?",
-        "ar": ""
+        "ar": "محتاجين إيه مننا؟"
       },
       {
         "role": "B",
         "en": "Feedback on the mobile layout, please.",
-        "ar": ""
+        "ar": "ملاحظات على تنسيق نسخة الموبايل لو سمحت."
       }
     ],
     "options": [
@@ -919,7 +919,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Could you take care of the slides?",
-        "ar": ""
+        "ar": "ممكن تتولى تجهيز الشرائح؟"
       },
       {
         "role": "B",
@@ -929,12 +929,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "That is fine. I will send them by noon.",
-        "ar": ""
+        "ar": "تمام. هبعتها قبل الضهر أو على الضهر بالكتير."
       },
       {
         "role": "B",
         "en": "Great. I will start after lunch.",
-        "ar": ""
+        "ar": "حلو. هبدأ بعد الغدا."
       }
     ],
     "options": [
@@ -962,7 +962,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Will the report be ready by Friday?",
-        "ar": ""
+        "ar": "التقرير هيكون جاهز بحلول يوم الجمعة؟"
       },
       {
         "role": "B",
@@ -972,12 +972,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Will there be time for a final check?",
-        "ar": ""
+        "ar": "هيكون فيه وقت لمراجعة أخيرة؟"
       },
       {
         "role": "B",
         "en": "Yes, we have allowed an extra day.",
-        "ar": ""
+        "ar": "أيوه، عاملين حساب يوم زيادة."
       }
     ],
     "options": [
@@ -1005,7 +1005,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What happens when you open the file?",
-        "ar": ""
+        "ar": "إيه اللي بيحصل لما تفتح الملف؟"
       },
       {
         "role": "B",
@@ -1015,12 +1015,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Have you tried restarting the application?",
-        "ar": ""
+        "ar": "جربت تقفل البرنامج وتفتحه تاني؟"
       },
       {
         "role": "B",
         "en": "Yes, but the problem is still there.",
-        "ar": ""
+        "ar": "أيوه، بس المشكلة لسه موجودة."
       }
     ],
     "options": [
@@ -1048,7 +1048,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "We should cancel all face-to-face meetings.",
-        "ar": ""
+        "ar": "المفروض نلغي كل الاجتماعات اللي بالحضور."
       },
       {
         "role": "B",
@@ -1058,12 +1058,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Which discussions do you have in mind?",
-        "ar": ""
+        "ar": "أنهي نقاشات تقصد؟"
       },
       {
         "role": "B",
         "en": "Sensitive feedback and team planning.",
-        "ar": ""
+        "ar": "الملاحظات الحساسة والتخطيط مع الفريق."
       }
     ],
     "options": [
@@ -1091,7 +1091,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "The only solution is to hire more staff.",
-        "ar": ""
+        "ar": "الحل الوحيد إننا نوظف ناس أكتر."
       },
       {
         "role": "B",
@@ -1101,12 +1101,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How would that help?",
-        "ar": ""
+        "ar": "ده هيساعد إزاي؟"
       },
       {
         "role": "B",
         "en": "It could reduce the time spent on routine tasks.",
-        "ar": ""
+        "ar": "ممكن يقلل الوقت اللي بيضيع في المهام الروتينية."
       }
     ],
     "options": [
@@ -1134,7 +1134,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Should we move the course online?",
-        "ar": ""
+        "ar": "ننقل الكورس أونلاين؟"
       },
       {
         "role": "B",
@@ -1144,12 +1144,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Could we offer both formats?",
-        "ar": ""
+        "ar": "ينفع نوفر الطريقتين؟"
       },
       {
         "role": "B",
         "en": "Yes, a mixed approach might work.",
-        "ar": ""
+        "ar": "أيوه، طريقة بتجمع الاتنين ممكن تنفع."
       }
     ],
     "options": [
@@ -1177,7 +1177,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "We need the whole budget for advertising.",
-        "ar": ""
+        "ar": "محتاجين الميزانية كلها للإعلانات."
       },
       {
         "role": "B",
@@ -1187,12 +1187,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "I could agree to that if we review the results next month.",
-        "ar": ""
+        "ar": "ممكن أوافق لو راجعنا النتايج الشهر الجاي."
       },
       {
         "role": "B",
         "en": "That seems fair.",
-        "ar": ""
+        "ar": "ده شكله عادل."
       }
     ],
     "options": [
@@ -1220,7 +1220,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What will your presentation cover?",
-        "ar": ""
+        "ar": "العرض بتاعك هيغطي إيه؟"
       },
       {
         "role": "B",
@@ -1230,12 +1230,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How will you involve the audience?",
-        "ar": ""
+        "ar": "هتشرك الجمهور إزاي؟"
       },
       {
         "role": "B",
         "en": "I will begin with a short question.",
-        "ar": ""
+        "ar": "هبدأ بسؤال قصير."
       }
     ],
     "options": [
@@ -1263,7 +1263,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "The new design is more accessible.",
-        "ar": ""
+        "ar": "التصميم الجديد أسهل في الاستخدام لناس بقدرات مختلفة."
       },
       {
         "role": "B",
@@ -1273,12 +1273,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "The text is easier to read, and the buttons work with a keyboard.",
-        "ar": ""
+        "ar": "النص أسهل في القراءة، والأزرار بتشتغل بلوحة المفاتيح."
       },
       {
         "role": "B",
         "en": "Thank you. That makes it clearer.",
-        "ar": ""
+        "ar": "شكرا. كده المعنى أوضح."
       }
     ],
     "options": [
@@ -1306,7 +1306,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "Tell us about a difficult project.",
-        "ar": ""
+        "ar": "احكيلنا عن مشروع صعب."
       },
       {
         "role": "B",
@@ -1316,12 +1316,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What did you learn from it?",
-        "ar": ""
+        "ar": "اتعلمت إيه منه؟"
       },
       {
         "role": "B",
         "en": "To test our assumptions earlier.",
-        "ar": ""
+        "ar": "إننا نختبر افتراضاتنا بدري أكتر."
       }
     ],
     "options": [
@@ -1349,7 +1349,7 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "How would you sum up the discussion?",
-        "ar": ""
+        "ar": "تلخص النقاش إزاي؟"
       },
       {
         "role": "B",
@@ -1359,12 +1359,12 @@ export const SPEAKING_LESSONS: SpeakingLesson[] = [
       {
         "role": "A",
         "en": "What is the next step?",
-        "ar": ""
+        "ar": "إيه الخطوة الجاية؟"
       },
       {
         "role": "B",
         "en": "Let us gather the figures and meet again on Monday.",
-        "ar": ""
+        "ar": "نجمع الأرقام ونتقابل تاني يوم الاتنين."
       }
     ],
     "options": [

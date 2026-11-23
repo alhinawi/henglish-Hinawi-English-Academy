@@ -28,7 +28,7 @@ try:
    panel.get_by_role('button',name=t['sp.rec.start'],exact=True).click();expect(panel.get_by_role('alert')).to_be_visible()
    panel.get_by_role('button',name=t['sp.roleplay.role']+' A',exact=True).click()
    expect(panel.get_by_role('alert')).to_have_count(0)
-   expect(hint).to_have_count(0);expect(panel.get_by_role('button',name=t['sp.roleMeaning.show'],exact=True)).to_have_count(0);expect(panel.get_by_text('What is your name?',exact=True)).to_have_count(0)
+   expect(hint).to_have_count(0);expect(panel.get_by_role('button',name=t['sp.roleMeaning.show'],exact=True)).to_have_count(1);expect(panel.get_by_text('What is your name?',exact=True)).to_have_count(0)
    panel.get_by_role('button',name=t['sp.roleplay.reveal'],exact=True).click();expect(panel.get_by_text('What is your name?',exact=True)).to_be_visible()
    panel.get_by_role('button',name=t['sp.roleplay.hide'],exact=True).click();panel.get_by_role('button',name=t['sp.roleplay.restart'],exact=True).click();expect(hint).to_have_count(0);panel.get_by_role('button',name=t['sp.roleplay.role']+' B',exact=True).click();panel.get_by_role('button',name=t['sp.roleplay.next'],exact=True).click();panel.get_by_role('button',name=t['sp.roleMeaning.show'],exact=True).click();panel.scroll_into_view_if_needed();page.screenshot(path=f'/downloads/henglish-{prefix}speaking-role-meaning-{lang}.png')
    panel.get_by_role('button',name=t['sp.roleplay.close'],exact=True).click();expect(panel.get_by_role('button',name=t['sp.rec.start'],exact=True)).to_have_count(0)
