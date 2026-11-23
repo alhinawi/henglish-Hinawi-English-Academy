@@ -3243,5 +3243,8 @@
   "ms.ownReview.next": "Versuche es erneut mit einer Änderung. Einklappen behält Markierungen und Notizen; Aufgaben- oder Satzwechsel, Schließen oder Verlassen des Clips verwirft sie. Nichts wird gesendet oder gespeichert.",
   "rle.vocabExample.title": "Englisches Beispiel ansehen (optional)",
   "rle.vocabExample.note": "Eigenes Sprachübungsbeispiel, keine echte Buchung, Preisangabe, persönliche Aussage oder medizinische Beratung. Im Abrufmodus bleibt es bis zur Bedeutungsanzeige verborgen.",
-  "sp.roleplay.previous": "Vorheriger Gesprächszug"
+  "sp.roleplay.previous": "Vorheriger Gesprächszug",
+  "rle.vocabDraft.label": "Eigenen Satz mit diesem Begriff schreiben (optional, 500 Zeichen)",
+  "rle.vocabDraft.note": "Versuche einen englischen Satz mit diesem Begriff. Dieser private Entwurf wird nicht geprüft oder gesendet. Jeder Begriff behält im offenen Szenario seinen eigenen Entwurf, auch bei verborgenen Bedeutungen. Verlassen oder Wiederholen verwirft alle Entwürfe. Vermeide persönliche oder sensible Angaben.",
+  "rle.vocabDraft.clear": "Diesen Satz löschen"
 }
