@@ -3378,5 +3378,9 @@
   "tpr.revisionFocus.prompt.meaning": "Compare the source and both versions. Check who did what, negatives, numbers and any missing or added facts. Explain one change below.",
   "tpr.revisionFocus.prompt.tense": "Look at the time and whether the action is finished or continuing. Check tense, subject agreement and word order. Explain one change below.",
   "tpr.revisionFocus.prompt.natural": "Read your revised version aloud if you want. Look for wording that sounds natural in the target language without changing the meaning. Explain one change below.",
-  "at.goalListen.label": "Listen to goal {number}"
+  "at.goalListen.label": "Listen to goal {number}",
+  "sp.topicRecall.hide": "Hide the English expression",
+  "sp.topicRecall.show": "Show the English expression",
+  "sp.topicRecall.hidden": "English expression hidden",
+  "sp.topicRecall.note": "Use the Arabic meaning to recall the English expression, then reveal it to compare. Optional self-study, not a score."
 }
