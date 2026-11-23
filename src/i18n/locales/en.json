@@ -3468,5 +3468,8 @@
   "sp.followupRetry.note": "Want to improve your reply? Keep the first attempt and write a new version. Nothing is checked automatically.",
   "sp.followupRetry.start": "Keep my first reply and try again",
   "sp.followupRetry.first": "My first reply to this follow-up",
-  "sp.followupRetry.compare": "Read both versions. Did you answer this task and explain your meaning clearly? Clear removes only the current draft. Both versions disappear when you change task, close practice or leave."
+  "sp.followupRetry.compare": "Read both versions. Did you answer this task and explain your meaning clearly? Clear removes only the current draft. Both versions disappear when you change task, close practice or leave.",
+  "tpr.wordAttempt.label": "My English word or phrase from memory (up to150 characters)",
+  "tpr.wordAttempt.clear": "Clear my word attempt",
+  "tpr.wordAttempt.note": "Hide the English, use the Arabic meaning to recall it, then reveal and compare yourself. Your spelling is not graded. This private field is separate from your translation draft. Closing help or changing tasks clears it."
 }
