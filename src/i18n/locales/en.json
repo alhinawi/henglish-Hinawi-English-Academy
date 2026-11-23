@@ -3434,5 +3434,10 @@
   "sp.topicSentence.note": "Write your own sentence using the expression above, then try saying it aloud. This optional draft is separate from your task plan. Hiding the expression or collapsing this section keeps it. Changing task, closing practice or leaving clears it. Nothing is checked, sent or saved.",
   "at.rehearsalReview.title": "Review my private rehearsal",
   "at.rehearsalReview.note": "Optional manual checks for this practice mode. Read your own draft and mark only what you checked. This is not AI feedback, pronunciation analysis or a score. Marks stay separate from your draft, goal and chat; changing mode or leaving clears them.",
-  "at.rehearsalReview.clear": "Clear rehearsal checks"
+  "at.rehearsalReview.clear": "Clear rehearsal checks",
+  "tpr.wordRecall.hide": "Hide the English word",
+  "tpr.wordRecall.show": "Reveal the English word",
+  "tpr.wordRecall.hidden": "English word hidden",
+  "tpr.wordRecall.note": "Use the Arabic meaning below to recall the English word, then reveal it to compare. Optional self-study, not a score. Collapsing help, changing task or leaving resets this toggle. The listen button can also reveal the pronunciation.",
+  "tpr.wordRecall.listen": "Listen to the hidden word"
 }

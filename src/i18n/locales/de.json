@@ -3434,5 +3434,10 @@
   "sp.topicSentence.note": "Schreibe einen eigenen Satz mit dem Ausdruck oben und sprich ihn dann laut. Dieser optionale Entwurf ist vom Aufgabenplan getrennt. Ausblenden oder Einklappen behält ihn. Aufgabenwechsel, Schließen der Übung oder Verlassen löscht ihn. Nichts wird geprüft, gesendet oder gespeichert.",
   "at.rehearsalReview.title": "Meine private Probe prüfen",
   "at.rehearsalReview.note": "Optionale manuelle Prüfung für diesen Übungsmodus. Lies deinen Entwurf und markiere nur Geprüftes. Kein KI-Feedback, keine Ausspracheanalyse oder Note. Markierungen sind von Entwurf, Ziel und Chat getrennt und verschwinden beim Moduswechsel oder Verlassen.",
-  "at.rehearsalReview.clear": "Probenmarkierungen löschen"
+  "at.rehearsalReview.clear": "Probenmarkierungen löschen",
+  "tpr.wordRecall.hide": "Englisches Wort ausblenden",
+  "tpr.wordRecall.show": "Englisches Wort anzeigen",
+  "tpr.wordRecall.hidden": "Englisches Wort ausgeblendet",
+  "tpr.wordRecall.note": "Erinnere dich mit der arabischen Bedeutung unten an das englische Wort und zeige es zum Vergleichen an. Freiwillige Selbstübung, keine Note. Hilfe schließen, Aufgabenwechsel oder Verlassen setzt den Schalter zurück. Die Hörfunktion kann die Aussprache ebenfalls verraten.",
+  "tpr.wordRecall.listen": "Ausgeblendetes Wort anhören"
 }
