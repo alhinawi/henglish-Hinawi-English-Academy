@@ -3431,5 +3431,8 @@
   "sp.topicSentence.title": "Use this expression in my own sentence",
   "sp.topicSentence.label": "My English sentence (up to 300 characters)",
   "sp.topicSentence.clear": "Clear this sentence",
-  "sp.topicSentence.note": "Write your own sentence using the expression above, then try saying it aloud. This optional draft is separate from your task plan. Hiding the expression or collapsing this section keeps it. Changing task, closing practice or leaving clears it. Nothing is checked, sent or saved."
+  "sp.topicSentence.note": "Write your own sentence using the expression above, then try saying it aloud. This optional draft is separate from your task plan. Hiding the expression or collapsing this section keeps it. Changing task, closing practice or leaving clears it. Nothing is checked, sent or saved.",
+  "at.rehearsalReview.title": "Review my private rehearsal",
+  "at.rehearsalReview.note": "Optional manual checks for this practice mode. Read your own draft and mark only what you checked. This is not AI feedback, pronunciation analysis or a score. Marks stay separate from your draft, goal and chat; changing mode or leaving clears them.",
+  "at.rehearsalReview.clear": "Clear rehearsal checks"
 }
