@@ -3413,5 +3413,12 @@
   "pa.ownSentences.clear": "Meinen Satz löschen für",
   "pa.ownSentences.privacy": "Privat und getrennt von Quizantworten und Aufnahme. Zuklappen, Aufnahmemodus wechseln oder den Recorder öffnen behält die Entwürfe. Ein anderes Wortpaar oder Verlassen verwirft sie. Nichts wird gesendet, gespeichert oder bewertet.",
   "sp.followupMeaning.title": "Aufgabenbedeutung auf Ägyptisch-Arabisch (freiwillig)",
-  "sp.followupMeaning.note": "Dies erklärt die englische Aufgabe, nicht eine Antwort zum Nachsprechen. Schließe die Hilfe und versuche eine eigene Antwort."
+  "sp.followupMeaning.note": "Dies erklärt die englische Aufgabe, nicht eine Antwort zum Nachsprechen. Schließe die Hilfe und versuche eine eigene Antwort.",
+  "ms.recallReview.title": "Meine Untertitel-Erinnerung prüfen (freiwillig)",
+  "ms.recallReview.note": "Vergleiche deinen aktuellen Entwurf mit der geprüften englischen Untertitelzeile oben. Markiere nur, was du tatsächlich geprüft hast. Deine eigene Prüfung, keine automatische Genauigkeits- oder Hörbewertung.",
+  "ms.recallReview.check.0": "Ich habe meine Wörter mit der Quelle verglichen und fehlende oder zusätzliche Wörter bemerkt.",
+  "ms.recallReview.check.1": "Ich habe die Wortfolge und kleine Wörter wie Artikel und Präpositionen geprüft.",
+  "ms.recallReview.check.2": "Ich habe vor einem neuen Versuch geprüft, ob ein Unterschied die Bedeutung verändert.",
+  "ms.recallReview.clear": "Diese Markierungen löschen",
+  "ms.recallReview.privacy": "Die Markierungen bewerten keinen Entwurf und ändern keinen Fortschritt. Zuklappen behält sie. Untertitel ausblenden, erneut versuchen, Zeile wechseln oder Übung schließen verwirft sie. Nichts wird gesendet oder gespeichert."
 }
