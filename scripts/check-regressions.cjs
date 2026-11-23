@@ -47,6 +47,7 @@ const checks = [
   'check-pronunciation-photo-challenges.cjs',
   'check-pronunciation-photo-plan.cjs',
   'check-pronunciation-photo-response.cjs',
+  'check-pronunciation-photo-response-retry.cjs',
   'check-pronunciation-photo-response-checks.cjs',
   'check-pronunciation-photo-review.cjs',
   'check-pronunciation-photo-words.cjs',
