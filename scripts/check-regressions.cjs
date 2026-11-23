@@ -10,6 +10,7 @@ const checks = [
   'check-movie-recall-replay.cjs',
   'check-translation-practice-hints.cjs',
   'check-pronunciation-photo-practice.cjs',
+  'check-pronunciation-photo-audio.cjs',
   'check-scenario-transfer-practice.cjs',
   'check-speaking-role-meaning.cjs',
   'check-tutor-practice-goal.cjs',
