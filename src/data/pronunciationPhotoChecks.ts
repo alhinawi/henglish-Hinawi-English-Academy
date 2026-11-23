@@ -56,4 +56,8 @@ export const PRONUNCIATION_PHOTO_CHECKS: Record<string,readonly [string,string]>
  "track":["I listened for /r/ at the start of race, ready and run.","I checked that those words began clearly without an extra vowel before /r/."],
  "freight":["I listened for the consonant cluster at the start of train, track and transport.","I compared my cluster with the example, allowing for normal accent differences."],
  "photography":["I listened for /f/ at the start of photo, focus and frame.","I tried keeping the air sound clear, including when photo is spelled with ph."],
+ "design":["I listened for /p/ in plan, pencil and paper.", "I checked for a brief lip closure and release without adding an extra vowel."],
+ "coding":["I listened for /k/ at the start of code and keyboard.", "I compared the /k/ sound in screen without adding a vowel inside the cluster."],
+ "cafeMenu":["I listened for /m/ at the start of menu, milk and morning.", "I tried beginning with closed lips and a gentle voiced nasal sound."],
+ "collaboration":["I listened for /ʃ/ at the start of share, show and sheet.", "I compared that continuous air sound with /tʃ/ without adding an initial stop."],
 };
