@@ -3228,5 +3228,10 @@
   "rle.transferReview.sim-clothing-shopping.2": "Ich habe vor der Kaufentscheidung gefragt.",
   "rle.transferReview.sim-supermarket-shopping.0": "Ich habe höflich auf den Preisunterschied hingewiesen.",
   "rle.transferReview.sim-supermarket-shopping.1": "Ich habe jemanden gebeten, den Preis zu prüfen.",
-  "rle.transferReview.sim-supermarket-shopping.2": "Ich habe vor dem Bezahlen nach dem bestätigten Preis gefragt."
+  "rle.transferReview.sim-supermarket-shopping.2": "Ich habe vor dem Bezahlen nach dem bestätigten Preis gefragt.",
+  "pa.photoPlan.title": "Eigenen Fotosatz planen (optional)",
+  "pa.photoPlan.note": "Versuche vor dem Beispiel einen eigenen Satz mit einem Wort aus der Wortliste. Dieser private Entwurf wird nicht geprüft, bewertet oder gesendet. Er bleibt nur in dieser Fotoübung; Bildwechsel oder Verlassen verwirft ihn.",
+  "pa.photoPlan.label": "Mein Satz auf Englisch (bis zu 500 Zeichen)",
+  "pa.photoPlan.clear": "Meinen Satz löschen",
+  "pa.photoPlan.next": "Sprich deinen Satz laut und vergleiche ihn bei Bedarf mit dem Beispiel. Mehrere Sätze können zum Foto passen. Beispiel und Rekorder ersetzen deinen Entwurf nicht."
 }
