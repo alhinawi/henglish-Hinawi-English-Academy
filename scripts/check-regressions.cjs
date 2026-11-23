@@ -19,6 +19,7 @@ const checks = [
   'check-scenario-vocabulary-hide-example.cjs',
   'check-pronunciation-photo-sound-review.cjs',
   'check-speaking-topic-words.cjs',
+  'check-speaking-fourth-topic-words.cjs',
   'check-tutor-goal-meanings.cjs',
   'check-translation-topic-titles.cjs',
   'check-movie-retelling-retry.cjs',
