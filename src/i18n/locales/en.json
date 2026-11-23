@@ -3439,5 +3439,9 @@
   "tpr.wordRecall.show": "Reveal the English word",
   "tpr.wordRecall.hidden": "English word hidden",
   "tpr.wordRecall.note": "Use the Arabic meaning below to recall the English word, then reveal it to compare. Optional self-study, not a score. Collapsing help, changing task or leaving resets this toggle. The listen button can also reveal the pronunciation.",
-  "tpr.wordRecall.listen": "Listen to the hidden word"
+  "tpr.wordRecall.listen": "Listen to the hidden word",
+  "pa.responseRetry.note": "Keep this reply as a first version and write another answer to the same photo question. Optional manual practice, without automatic comparison or grading.",
+  "pa.responseRetry.start": "Keep first answer and try again",
+  "pa.responseRetry.first": "My first answer to this photo question",
+  "pa.responseRetry.compare": "Read both versions against the question above. Does the second answer include the requested detail or reason? Clear answer removes only the current version. Changing photo or leaving discards both."
 }
