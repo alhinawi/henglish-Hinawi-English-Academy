@@ -1,0 +1,5 @@
+# Guided second retelling
+
+Film own-words writing now offers a choice of revision focus before a second version: keep the meaning, use clearer wording or remove unsupported details. Each choice gives a concrete rewrite prompt. After starting the second version, the chosen focus and prompt stay beside the immutable first attempt. Selection does not change the draft, plan or recording. Existing blank guard, private state and mode/cue/close/exit reset remain. No model response, automatic grade, network or storage is added. EN/AR/DE copy. TeacherDashboard untouched.
+
+Verification:266 offline regressions, locale check and full TypeScript/Next export passed. New focus and existing retelling-retry EN/AR390 suites passed: all3choices/prompts, draft preservation, chosen focus after retry, reset, first snapshot, focus, collapse, plan independence, microphone-denial cleanup, mode/close/exit. Actual local pixels readable, no overflow, دخول visible. First clip/one cue tested; cue reset is structural. YouTube mocked; no actual audio/capture claim.

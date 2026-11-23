@@ -3361,5 +3361,13 @@
   "pa.soundReview.note": "Optionale private Reflexion, keine Aussprachebewertung. Schließe die Aufnahmeübung, höre Wörter oder Beispiel an und vergleiche deine eigene Aufnahme. Akzente unterscheiden sich; du musst keinen Akzent nachahmen.",
   "rle.vocabSource.hide": "Beispiel beim Schreiben ausblenden",
   "rle.vocabSource.show": "Beispiel wieder zeigen",
-  "rle.vocabSource.note": "Blende Beispiel, Bedeutung und Hörfunktion aus, um ohne Abschreiben einen eigenen Satz zu versuchen. Dein privater Satz bleibt erhalten; erneutes Anzeigen prüft oder bewertet ihn nicht."
+  "rle.vocabSource.note": "Blende Beispiel, Bedeutung und Hörfunktion aus, um ohne Abschreiben einen eigenen Satz zu versuchen. Dein privater Satz bleibt erhalten; erneutes Anzeigen prüft oder bewertet ihn nicht.",
+  "ms.retellingFocus.label": "Wähle einen Schwerpunkt für die zweite Fassung",
+  "ms.retellingFocus.meaning": "Bedeutung beibehalten",
+  "ms.retellingFocus.clarity": "Klarer formulieren",
+  "ms.retellingFocus.detail": "Unbelegte Details entfernen",
+  "ms.retellingFocus.prompt.meaning": "Prüfe, wer was getan hat, den Grund und die Absicht. Behalte diese Fakten beim Umschreiben bei.",
+  "ms.retellingFocus.prompt.clarity": "Wähle einfachere Wörter und verbinde die Gedanken klar. Ändere die Formulierung, nicht die Bedeutung der Quelle.",
+  "ms.retellingFocus.prompt.detail": "Vergleiche mit der Quelle. Entferne hinzugefügte Fakten, die sie nicht belegt.",
+  "ms.retellingFocus.chosen": "Dein gewählter Schwerpunkt"
 }
