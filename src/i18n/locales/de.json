@@ -3512,5 +3512,11 @@
   "pa.wordRetry.note": "Behalte deinen ersten Satz und versuche eine zweite Version mit diesem Wort. Freiwillige private Übung, keine automatische Aussprachebewertung.",
   "pa.wordRetry.start": "Ersten Satz behalten und erneut versuchen",
   "pa.wordRetry.first": "Dein erster Satz",
-  "pa.wordRetry.compare": "Vergleiche beide Sätze selbst. Passt das Wort im zweiten Satz klar zur Fotosituation? Das Leeren des aktuellen Satzes behält den ersten. Ein Fotowechsel oder das Öffnen der Aufnahmeübung setzt beide zurück."
+  "pa.wordRetry.compare": "Vergleiche beide Sätze selbst. Passt das Wort im zweiten Satz klar zur Fotosituation? Das Leeren des aktuellen Satzes behält den ersten. Ein Fotowechsel oder das Öffnen der Aufnahmeübung setzt beide zurück.",
+  "ms.retellingReview.title": "Meine schriftliche Nacherzählung prüfen (optional)",
+  "ms.retellingReview.note": "Markiere nur, was du selbst geprüft hast. Diese Markierungen sind keine automatische Bewertung und kein Beleg für Verständnis. Sie bleiben in dieser Übung und werden bei Modus-, Abschnitt- oder Filmwechsel, Schließen der Übung oder Verlassen zurückgesetzt.",
+  "ms.retellingReview.check.0": "Ich habe meine Hauptidee mit der Quelle verglichen, statt die ganze Zeile zu kopieren.",
+  "ms.retellingReview.check.1": "Ich habe geprüft, wer was tut, einschließlich Zeitangaben und Verneinungen, die die Bedeutung ändern.",
+  "ms.retellingReview.check.2": "Ich habe die Satzfolge erneut gelesen und geprüft, dass meine Ergänzungen der Quelle nicht widersprechen.",
+  "ms.retellingReview.clear": "Meine Prüfmarkierungen löschen"
 }
