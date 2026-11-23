@@ -3259,5 +3259,6 @@
   "sp.step4.undo": "ارجع آخر كلمة",
   "pa.photoWords.title": "اتدرب على الكلمات الأول",
   "pa.photoWords.note": "اسمع كل كلمة، وبعدين جربها في وصفك للصورة. تشغيل الكلمات بيختفي طول ما تدريب التسجيل مفتوح.",
-  "pa.photoWords.listen": "اسمع الكلمة: {word}"
+  "pa.photoWords.listen": "اسمع الكلمة: {word}",
+  "tpr.wordAudio.listen": "اسمع الكلمة: {word}"
 }

@@ -3259,5 +3259,6 @@
   "sp.step4.undo": "Letztes Wort zurücknehmen",
   "pa.photoWords.title": "Übe zuerst die Wörter",
   "pa.photoWords.note": "Höre jedes Wort an und verwende es dann in deiner Bildbeschreibung. Die Wortwiedergabe ist während der geöffneten Aufnahmeübung ausgeblendet.",
-  "pa.photoWords.listen": "Wort anhören: {word}"
+  "pa.photoWords.listen": "Wort anhören: {word}",
+  "tpr.wordAudio.listen": "Wort anhören: {word}"
 }

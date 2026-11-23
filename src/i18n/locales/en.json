@@ -3259,5 +3259,6 @@
   "sp.step4.undo": "Undo last word",
   "pa.photoWords.title": "Practise the words first",
   "pa.photoWords.note": "Listen to each word, then try it in your photo description. Word playback is hidden while recording practice is open.",
-  "pa.photoWords.listen": "Listen to word: {word}"
+  "pa.photoWords.listen": "Listen to word: {word}",
+  "tpr.wordAudio.listen": "Listen to word: {word}"
 }
