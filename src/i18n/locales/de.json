@@ -3162,5 +3162,9 @@
   "rle.review.listen.chosen": "Meine gewählte Antwort hören",
   "rle.review.listen.model": "Die passendere Alternative hören",
   "tpr.grammar.title": "Das Sprachmuster auf Arabisch nachlesen",
-  "tpr.grammar.note": "Ein Grammatikhinweis zu dieser Aufgabe. Vergleiche ihn mit dem Ausgangssatz und den vorgeschlagenen Übersetzungen. Er bewertet deinen Entwurf nicht."
+  "tpr.grammar.note": "Ein Grammatikhinweis zu dieser Aufgabe. Vergleiche ihn mit dem Ausgangssatz und den vorgeschlagenen Übersetzungen. Er bewertet deinen Entwurf nicht.",
+  "ms.recall.retry": "Ohne Antwort erneut versuchen",
+  "ms.recall.retryNote": "Speichere deinen ersten Entwurf und versuche es noch einmal ohne die Antwort. Beim Abspielen können Untertitel im Player sichtbar sein. Es gibt keine Bewertung.",
+  "ms.recall.firstDraft": "Dein erster Entwurf",
+  "ms.recall.compareDrafts": "Vergleiche deinen ersten und aktuellen Entwurf mit dem Originaltext. Was fällt dir an den Wörtern und ihrer Reihenfolge auf?"
 }
