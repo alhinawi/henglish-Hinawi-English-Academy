@@ -3304,5 +3304,9 @@
   "tpr.reflection.note": "Name one change to meaning, tense or natural wording. Explain why it is better, or write a question you still have. You can use English or Arabic.",
   "tpr.reflection.privacy": "Private notes, up to 500 characters. Kept separately for each task while this practice tab is open. Nothing is sent or scored; leaving the tab clears these notes.",
   "rle.variationMeaning.title": "Meaning in Egyptian Arabic (optional)",
-  "rle.variationMeaning.note": "This explains the task, not how to answer it. Invent details and respond in your own English. Language practice only, not booking, buying or medical advice."
+  "rle.variationMeaning.note": "This explains the task, not how to answer it. Invent details and respond in your own English. Language practice only, not booking, buying or medical advice.",
+  "ms.retelling.title": "Write my retelling first (optional)",
+  "ms.retelling.note": "Write your own English version of the reviewed source. Keep the main meaning and intention, change the wording and avoid adding unsupported details. This is your attempt, not a model answer. You can hide the source above and reveal it later to check.",
+  "ms.retelling.label": "My own-words attempt (up to 1,500 characters)",
+  "ms.retelling.privacy": "Separate from planning notes and recordings. This private draft stays while collapsed or while you hide/reveal the source. Changing task or cue, closing practice or leaving the clip discards it. Nothing is sent, saved or graded."
 }
