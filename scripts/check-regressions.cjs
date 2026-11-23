@@ -3,6 +3,7 @@ const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
   'check-translation-grammar-review.cjs',
+  'check-translation-model-audio.cjs',
   'check-scenario-review-audio.cjs',
   'check-minimal-pair-context-audio.cjs',
   'check-speaking-progress-filter.cjs',
