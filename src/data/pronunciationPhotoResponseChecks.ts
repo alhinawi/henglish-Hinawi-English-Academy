@@ -16,4 +16,8 @@ export const PRONUNCIATION_PHOTO_RESPONSE_CHECKS:Record<string,readonly string[]
  food:["I named a meal I would prepare for a friend.", "I described one ingredient and explained why I would use it."],
  hotel:["I said what I would ask before choosing a hotel.", "I explained why that detail matters to me."],
  museum:["I named something I would like to see in a museum.", "I explained what I would want to learn about it."],
+ "nightStreet":["I named a detail I would notice on an evening city walk.","I explained why that detail interests me."],
+ "track":["I suggested one step to prepare for the fictional relay race.","I explained how that step would help the team."],
+ "freight":["I asked one question about transporting goods by train.","I explained why I wanted to ask that question."],
+ "photography":["I described a subject for a small photo collection.","I explained why I would choose that subject."],
 };

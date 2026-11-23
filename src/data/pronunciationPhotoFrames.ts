@@ -16,4 +16,8 @@ export const PRONUNCIATION_PHOTO_FRAMES:Record<string,readonly string[]>={
  food:["I would prepare ... for my friend.", "I would use ... because ... ."],
  hotel:["Before choosing a hotel, I would ask about ... .", "This matters to me because ... ."],
  museum:["I would like to see ... in a museum.", "I would want to learn ... about it."],
+ "nightStreet":["On an evening walk, I would notice ... .","That detail interests me because ... ."],
+ "track":["To prepare for our relay race, we could ... .","This would help the team by ... ."],
+ "freight":["I would like to know how ... .","I would ask this because ... ."],
+ "photography":["For a small photo collection, I would photograph ... .","I would choose this subject because ... ."],
 };
