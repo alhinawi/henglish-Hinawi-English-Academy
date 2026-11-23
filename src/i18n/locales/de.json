@@ -3384,5 +3384,9 @@
   "sp.topicRecall.hidden": "Englischer Ausdruck ausgeblendet",
   "sp.topicRecall.note": "Erinnere dich mit der arabischen Bedeutung an den englischen Ausdruck und zeige ihn zum Vergleichen. Freiwillige Übung, keine Bewertung.",
   "pa.photoFrames.title": "Brauchst du einen Satzanfang? (optional)",
-  "pa.photoFrames.note": "Ergänze diese unvollständigen Sätze mit eigenen Ideen. Sie sind sprachliche Hilfen, keine Musterantworten oder Fakten zum Foto. Achte auf den Lautschwerpunkt und versuche deine Antwort laut."
+  "pa.photoFrames.note": "Ergänze diese unvollständigen Sätze mit eigenen Ideen. Sie sind sprachliche Hilfen, keine Musterantworten oder Fakten zum Foto. Achte auf den Lautschwerpunkt und versuche deine Antwort laut.",
+  "rle.variationAttempt.title": "Eigene Antwort schreiben (optional)",
+  "rle.variationAttempt.label": "Meine Antwort auf diese Variante (bis 700 Zeichen)",
+  "rle.variationAttempt.clear": "Diese Antwort löschen",
+  "rle.variationAttempt.note": "Schreibe vor dem Sprechen eine englische Antwort auf die geänderte Situation. Jede Variante hat einen eigenen privaten Entwurf, getrennt von Plan und Aufnahme. Zuklappen behält ihn; Schließen der Transferübung, Neustart oder Verlassen des Szenarios löscht ihn. Keine Prüfung, Übertragung oder Speicherung. Keine persönlichen oder sensiblen Angaben."
 }
