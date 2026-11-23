@@ -3178,5 +3178,7 @@
   "sp.transferReview.next": "Wähle eine Änderung, etwa ein klareres Detail oder eine andere Formulierung. Sprich erneut, wenn du bereit bist. Eine neue Aufnahme ersetzt die vorherige nur bei Erfolg; es erfolgt kein automatischer Download.",
   "rle.review.rewrite": "Schreibe eine eigene verbesserte Antwort",
   "rle.review.rewriteNote": "Nutze die Situation und die Hinweise oben. Antworte sinnvoll mit eigenen Worten. Vergleiche Höflichkeit, Klarheit und die benötigten Details. Es gibt keine automatische Bewertung.",
-  "rle.review.rewritePrivacy": "Dein Entwurf bleibt während dieser Wiederholung pro Gesprächsschritt getrennt. Er wird nicht gesendet oder gespeichert und ändert weder Auswahl noch Punktzahl. Neustart oder Verlassen verwirft ihn."
+  "rle.review.rewritePrivacy": "Dein Entwurf bleibt während dieser Wiederholung pro Gesprächsschritt getrennt. Er wird nicht gesendet oder gespeichert und ändert weder Auswahl noch Punktzahl. Neustart oder Verlassen verwirft ihn.",
+  "tpr.modelAudio.listen": "Beispielübersetzung {number} anhören",
+  "tpr.modelAudio.note": "Das Anhören ist freiwillig. Arabische Wiedergabe benötigt eine unterstützte Microsoft-Stimme im Browser. Diese Beispiele bewerten deine Übersetzung nicht."
 }

@@ -3178,5 +3178,7 @@
   "sp.transferReview.next": "Choose one change, such as a clearer detail or a different phrase. Say it again when ready. Starting another recording replaces the previous recording only when it succeeds; download is not automatic.",
   "rle.review.rewrite": "Write your own improved reply",
   "rle.review.rewriteNote": "Use the situation and feedback above. Keep the meaning useful, but try words of your own. Compare politeness, clarity and the detail the other person needs. There is no automatic grade.",
-  "rle.review.rewritePrivacy": "Your draft stays separate for this turn while this review is open. It is not sent or saved and does not change your original choice or score. Replaying or leaving the scenario discards it."
+  "rle.review.rewritePrivacy": "Your draft stays separate for this turn while this review is open. It is not sent or saved and does not change your original choice or score. Replaying or leaving the scenario discards it.",
+  "tpr.modelAudio.listen": "Listen to sample translation {number}",
+  "tpr.modelAudio.note": "Listening is optional. Arabic playback needs a supported Microsoft voice in your browser. These examples do not assess your translation."
 }
