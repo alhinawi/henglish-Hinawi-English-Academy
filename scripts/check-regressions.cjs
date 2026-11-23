@@ -17,6 +17,7 @@ const checks = [
   'check-scenario-transfer-practice.cjs',
   'check-scenario-transfer-review.cjs',
   'check-speaking-role-meaning.cjs',
+  'check-speaking-dialogue-meanings.cjs',
   'check-tutor-practice-goal.cjs',
   'check-movie-own-words.cjs',
   'check-translation-revision.cjs',
