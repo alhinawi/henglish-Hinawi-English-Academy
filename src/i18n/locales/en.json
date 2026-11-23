@@ -3488,5 +3488,9 @@
   "tpr.wordSentence.title": "Use this word in my own sentence (optional)",
   "tpr.wordSentence.label": "My English sentence (up to 300 characters)",
   "tpr.wordSentence.clear": "Clear this sentence",
-  "tpr.wordSentence.note": "Write your own sentence using the word or phrase, then try saying it aloud. This is separate from your word recall and full translation. Hiding the word or collapsing this box keeps it. Closing help, changing task or leaving clears it. Nothing is checked, sent or saved."
+  "tpr.wordSentence.note": "Write your own sentence using the word or phrase, then try saying it aloud. This is separate from your word recall and full translation. Hiding the word or collapsing this box keeps it. Closing help, changing task or leaving clears it. Nothing is checked, sent or saved.",
+  "pa.wordSentence.title": "Use the photo words in my own sentences (optional)",
+  "pa.wordSentence.label": "My English sentence (up to 300 characters)",
+  "pa.wordSentence.clear": "Clear this sentence",
+  "pa.wordSentence.note": "Write your own sentence with each word, then try saying it aloud. This is separate from your photo plan and follow-up reply. Collapsing this box keeps the drafts. Changing photo, opening recording practice or leaving clears them. Nothing is checked, sent or saved."
 }
