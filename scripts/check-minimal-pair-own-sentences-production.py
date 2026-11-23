@@ -1,0 +1,21 @@
+import functools,http.server,json,os,pathlib,threading
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd()
+class Quiet(http.server.SimpleHTTPRequestHandler):
+ def log_message(self,*args):pass
+server=http.server.ThreadingHTTPServer(('127.0.0.1',4246),functools.partial(Quiet,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
+origin=os.environ.get('TEST_ORIGIN','http://127.0.0.1:4246');prefix='live-' if origin.startswith('https:') else ''
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for lang in ['en','ar']:
+   page=b.new_page(viewport={'width':390,'height':1050},reduced_motion='reduce');page.route('**/api/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.route('**/henglish-api.hnz.workers.dev/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.add_init_script("Object.defineProperty(navigator,'mediaDevices',{value:{getUserMedia:()=>Promise.reject(Error('Test denial'))},configurable:true});");t=json.load(open(root/'src/i18n/locales'/f'{lang}.json'));page.goto(origin+'/pronunciation/?lang='+lang);panel=page.get_by_role('region',name=t['pa.pairRecord.title'],exact=True)
+   for i in range(18):
+    page.get_by_label(t['pa.navigator.choose'],exact=True).select_option(str(i));details=panel.locator('details').filter(has=page.get_by_text(t['pa.ownSentences.title'],exact=True));assert not details.evaluate('(el)=>el.open');details.locator('summary').click();drafts=details.get_by_role('textbox');clears=details.get_by_role('button');expect(drafts).to_have_count(2);expect(clears).to_have_count(2)
+    for index in range(2):
+     expect(drafts.nth(index)).to_have_value('');expect(clears.nth(index)).to_be_disabled();expect(drafts.nth(index)).to_have_attribute('maxlength','300');expect(drafts.nth(index)).to_have_attribute('lang','en');expect(drafts.nth(index)).to_have_attribute('dir','ltr');drafts.nth(index).fill('My sentence for word '+str(index))
+    clears.first.click();expect(drafts.first).to_have_value('');expect(drafts.first).to_be_focused();expect(clears.first).to_be_disabled();expect(drafts.nth(1)).to_have_value('My sentence for word 1');drafts.first.fill('x'*300);assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');drafts.first.fill('My own sentence for the first word.');details.locator('summary').click();details.locator('summary').click();expect(drafts.first).to_have_value('My own sentence for the first word.');expect(drafts.nth(1)).to_have_value('My sentence for word 1');panel.locator('button[aria-pressed]').first.click();expect(drafts.first).to_have_value('My own sentence for the first word.');panel.get_by_role('button',name=t['pa.pairRecord.open'],exact=True).click();panel.get_by_role('button',name=t['sp.rec.start'],exact=True).click();expect(panel.get_by_role('alert')).to_be_visible();panel.get_by_role('button',name=t['pa.context.sentences'],exact=True).click();expect(panel.get_by_role('alert')).to_have_count(0);expect(drafts.first).to_have_value('My own sentence for the first word.');panel.get_by_role('button',name=t['pa.pairRecord.close'],exact=True).click();expect(drafts.nth(1)).to_have_value('My sentence for word 1');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+    if i==0:details.evaluate('(el)=>{document.activeElement.blur();window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-110,behavior:"instant"})}');page.screenshot(path=f'/downloads/henglish-{prefix}minimal-pair-own-sentences-{lang}.png')
+   print(lang,'all18pairs36independentprivate300charEnglishsentences,closeddefault,clearfocus,collapsepreserved,quiz/recording/modeindependent,pairreset,micdenialcleanup,390px PASS;noactualcapture/playback');page.close()
+  b.close()
+finally:server.shutdown();server.server_close()

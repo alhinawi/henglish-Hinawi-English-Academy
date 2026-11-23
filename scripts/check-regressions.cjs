@@ -79,6 +79,7 @@ const checks = [
   'check-tutor-photo-starters.cjs',
   'check-movie-catalog-recovery.cjs',
   'check-minimal-pair-rehearsal.cjs',
+  'check-minimal-pair-own-sentences.cjs',
   'check-scenario-vocabulary-recall.cjs',
   'check-scenario-vocabulary-examples.cjs',
   'check-scenario-vocabulary-drafts.cjs',
