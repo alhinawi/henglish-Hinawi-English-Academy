@@ -3443,5 +3443,9 @@
   "pa.responseRetry.note": "Keep this reply as a first version and write another answer to the same photo question. Optional manual practice, without automatic comparison or grading.",
   "pa.responseRetry.start": "Keep first answer and try again",
   "pa.responseRetry.first": "My first answer to this photo question",
-  "pa.responseRetry.compare": "Read both versions against the question above. Does the second answer include the requested detail or reason? Clear answer removes only the current version. Changing photo or leaving discards both."
+  "pa.responseRetry.compare": "Read both versions against the question above. Does the second answer include the requested detail or reason? Clear answer removes only the current version. Changing photo or leaving discards both.",
+  "pa.photo.garden": "Gardening tools and soil",
+  "pa.photo.food": "A pasta dish",
+  "pa.photo.hotel": "A hotel beside a pool",
+  "pa.photo.museum": "A museum gallery"
 }

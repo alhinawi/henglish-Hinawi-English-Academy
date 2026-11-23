@@ -43,6 +43,7 @@ const checks = [
   'check-movie-recall-replay.cjs',
   'check-translation-practice-hints.cjs',
   'check-pronunciation-photo-practice.cjs',
+  'check-pronunciation-photo-scenes-expansion.cjs',
   'check-pronunciation-photo-navigation.cjs',
   'check-pronunciation-photo-challenges.cjs',
   'check-pronunciation-photo-plan.cjs',
