@@ -482,7 +482,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
           </div>
         </div>
 
-        <ScenarioVocabulary key={scenario.id} vocabulary={scenario.keyVocabulary} meaning={text => txText(appText, text)}/>
+        <ScenarioVocabulary key={`vocabulary:${scenario.id}:${practiceAttempt}`} vocabulary={scenario.keyVocabulary} meaning={text => txText(appText, text)}/>
       </section>
 
     </div>
