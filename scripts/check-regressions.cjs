@@ -21,6 +21,7 @@ const checks = [
   'check-tutor-scene-tasks.cjs',
   'check-translation-practice-photos.cjs',
   'check-movie-cue-recall.cjs',
+  'check-movie-recall-retry.cjs',
   'check-scenario-reply-practice.cjs',
   'check-minimal-pair-context.cjs',
   'check-speaking-catalog-recovery.cjs',
