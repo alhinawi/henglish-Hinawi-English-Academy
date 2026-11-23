@@ -3281,5 +3281,9 @@
   "rle.exampleMeaning.title": "Bedeutungshilfe: Ägyptisches Arabisch",
   "rle.exampleMeaning.note": "Optionale Bedeutung dieses Übungssatzes. Versuche zuerst, das Englisch zu verstehen. Dies ist ein Sprachbeispiel, keine Fachberatung.",
   "sp.lessonPrompt.title": "Probiere eine Situation aus dieser Lektion (optional)",
-  "sp.lessonPrompt.note": "Eine eigene Rollenspielaufgabe passend zur Lektion und zum Übungsmodus. Du kannst Details erfinden und den privaten Plan unten nutzen. Das ist Selbststudium, keine Beratung oder Bewertung."
+  "sp.lessonPrompt.note": "Eine eigene Rollenspielaufgabe passend zur Lektion und zum Übungsmodus. Du kannst Details erfinden und den privaten Plan unten nutzen. Das ist Selbststudium, keine Beratung oder Bewertung.",
+  "tpr.compare.title": "Meine zwei Fassungen vergleichen (optional)",
+  "tpr.compare.note": "Lies deinen ersten Versuch und deine Überarbeitung zusammen. Welche Änderung macht die Bedeutung klarer oder den Ausdruck natürlicher? Dieser private Vergleich bewertet nichts und ändert deine Checkliste nicht.",
+  "tpr.compare.original": "Meine erste Fassung",
+  "tpr.compare.revision": "Meine überarbeitete Fassung"
 }
