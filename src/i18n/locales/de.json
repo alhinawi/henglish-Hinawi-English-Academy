@@ -3138,5 +3138,11 @@
   "pa.photo.model": "Ein möglicher Übungssatz",
   "pa.photo.open": "Lokale Sprechübung öffnen",
   "pa.photo.close": "Schließen und Aufnahme verwerfen",
-  "pa.photo.record": "Sprich einen eigenen Satz zum Foto. Achte auf den vorgeschlagenen Laut und höre deine Aufnahme auf Verständlichkeit ab."
+  "pa.photo.record": "Sprich einen eigenen Satz zum Foto. Achte auf den vorgeschlagenen Laut und höre deine Aufnahme auf Verständlichkeit ab.",
+  "tpr.help.title": "Brauchst du einen kleinen Hinweis?",
+  "tpr.help.note": "Optionale Hilfe zu dieser Aufgabe: Kontext auf Arabisch und englisch-arabischer Wortschatz. Sie zeigt keine Modellübersetzung und bewertet deine Antwort nicht. Versuche zuerst einen eigenen Entwurf.",
+  "tpr.help.open": "Kontext und Wortschatz zeigen",
+  "tpr.help.close": "Kontext und Wortschatz ausblenden",
+  "tpr.help.context": "Kontexthinweis auf Arabisch",
+  "tpr.help.words": "Wörter und Wendungen, Englisch und Arabisch"
 }

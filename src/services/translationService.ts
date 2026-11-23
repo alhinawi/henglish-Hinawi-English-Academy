@@ -625,7 +625,7 @@ export const TRANSLATION_PRACTICE_CHALLENGES: PracticeChallenge[] = [
     difficulty: 'C2',
     category: 'Literary & Rhetoric',
     sourceSentence: 'His eloquent rhetoric not only captivated the audience but also dispelled their lingering skepticism.',
-    contextHintAr: 'أسلوب أدبي وبلاغي إنجليزي فائق الدقة مع تقديم وتأخير بلاغي (Inversion).',
+    contextHintAr: 'أسلوب بلاغي يوازن بين جذب الجمهور وتبديد الشكوك باستخدام not only ... but also.',
     modelTranslations: [
       'لم تقتصر بلاغته الفصيحة على أسر عقول الحاضرين فحسب، بل بددت أيضاً شكوكهم العالقة.',
       'إن فصاحة بيانه الآسرة لم تكتفِ بجذب انتباه الجمهور، بل أزاحت ما علق بأذهانهم من ريب.',
