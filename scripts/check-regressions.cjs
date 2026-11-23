@@ -52,6 +52,7 @@ const checks = [
   'check-scenario-vocabulary-examples.cjs',
   'check-scenario-vocabulary-drafts.cjs',
   'check-scenario-vocabulary-example-audio.cjs',
+  'check-scenario-example-meanings.cjs',
   'check-translation-practice-library.cjs',
   'check-translation-task-picker.cjs',
   'check-translation-wordbank-audio.cjs',
