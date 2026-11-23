@@ -1,6 +1,6 @@
 import functools,http.server,json,os,pathlib,threading,re
 from playwright.sync_api import sync_playwright,expect
-root=pathlib.Path.cwd();data=(root/'src/data/pronunciationPhotoScenes.ts').read_text();challenges=re.findall(r'challenge:\s*("(?:[^"\\]|\\.)*"),',data);challenges=[json.loads(x)for x in challenges];keys=['study','travel','meeting','presentation','cafe','market','library','walk','airport','map','writing','bookshop','garden','food','hotel','museum']
+root=pathlib.Path.cwd();data=(root/'src/data/pronunciationPhotoScenes.ts').read_text();challenges=re.findall(r'challenge:\s*("(?:[^"\\]|\\.)*"),',data);challenges=[json.loads(x)for x in challenges];keys=['study','travel','meeting','presentation','cafe','market','library','walk','airport','map','writing','bookshop','garden','food','hotel','museum','nightStreet','track','freight','photography']
 class Quiet(http.server.SimpleHTTPRequestHandler):
  def log_message(self,*args):pass
 server=http.server.ThreadingHTTPServer(('127.0.0.1',4225),functools.partial(Quiet,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
@@ -15,6 +15,6 @@ try:
     if not plan.evaluate('(el)=>el.open'):plan.locator('summary').click()
     draft=panel.get_by_label(t['pa.photoPlan.label'],exact=True);draft.fill('My answer with a reason.');summary.click();summary.click();expect(draft).to_have_value('My answer with a reason.');panel.get_by_role('button',name=t['pa.photo.show'],exact=True).click();expect(text).to_be_visible();expect(draft).to_have_value('My answer with a reason.');panel.get_by_role('button',name=t['pa.photo.hide'],exact=True).click();assert page.evaluate('document.documentElement.scrollWidth<=innerWidth');image=panel.get_by_role('img',name=t['pa.photo.'+key],exact=True);image.scroll_into_view_if_needed();page.wait_for_function('(el)=>el.complete&&el.naturalWidth>0',arg=image.element_handle())
     if i==4:details.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-110,behavior:"instant"})');page.screenshot(path=f'/downloads/henglish-{prefix}pronunciation-photo-challenges-{lang}.png')
-   selector.select_option('0');assert not details.evaluate('(el)=>el.open');page.reload();expect(details).to_have_count(1);assert not details.evaluate('(el)=>el.open');print(lang,'all12originalfollow-ups,closeddefault,Englishlanguage/direction,privateplanpreserved,modelindependent,scene/reloadreset,loadedphotos,390px PASS; noaudio/capture');page.close()
+   selector.select_option('0');assert not details.evaluate('(el)=>el.open');page.reload();expect(details).to_have_count(1);assert not details.evaluate('(el)=>el.open');print(lang,'all20originalfollow-ups,closeddefault,Englishlanguage/direction,privateplanpreserved,modelindependent,scene/reloadreset,loadedphotos,390px PASS; noaudio/capture');page.close()
   b.close()
 finally:server.shutdown();server.server_close()

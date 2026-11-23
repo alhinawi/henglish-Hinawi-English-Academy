@@ -1,0 +1,162 @@
+[
+  {
+    "id": "study",
+    "challenge": "What would you put beside your book to help you study? Give one reason.",
+    "challengeMeaningAr": "إيه اللي ممكن تحطه جنب كتابك عشان يساعدك تذاكر؟ قول سبب واحد.",
+    "src": "/images/listening/study.webp",
+    "words": "pen · book · page",
+    "sentence": "Put the pen beside the open book.",
+    "meaningAr": "حط القلم جنب الكتاب المفتوح.",
+    "focus": "/p/ and /b/"
+  },
+  {
+    "id": "travel",
+    "challenge": "Which city would you like to visit for a short trip? Explain your choice.",
+    "challengeMeaningAr": "أنهي مدينة نفسك تزورها في رحلة قصيرة؟ وضح سبب اختيارك.",
+    "src": "/images/pool/scene-travel.webp",
+    "words": "trip · visit · ticket",
+    "sentence": "This trip is a visit to a different city.",
+    "meaningAr": "الرحلة دي زيارة لمدينة مختلفة.",
+    "focus": "/ɪ/"
+  },
+  {
+    "id": "meeting",
+    "challenge": "What should a team discuss at the start of a meeting? Suggest one useful question.",
+    "challengeMeaningAr": "إيه اللي المفروض الفريق يناقشه في بداية الاجتماع؟ اقترح سؤال مفيد واحد.",
+    "src": "/images/listening/meeting.webp",
+    "words": "team · table · today",
+    "sentence": "The team will talk at the table today.",
+    "meaningAr": "الفريق هيتكلم على الترابيزة النهارده.",
+    "focus": "/t/ and /d/"
+  },
+  {
+    "id": "presentation",
+    "challenge": "What could a speaker do to make a presentation easier to follow? Give one example.",
+    "challengeMeaningAr": "المتحدث ممكن يعمل إيه عشان العرض يبقى أسهل في المتابعة؟ ادي مثال واحد.",
+    "src": "/images/pool/scene-interview.webp",
+    "words": "see · screen · speaker",
+    "sentence": "We can see the speaker beside the screen.",
+    "meaningAr": "نقدر نشوف المتحدث جنب الشاشة.",
+    "focus": "/iː/"
+  },
+  {
+    "id": "cafe",
+    "challenge": "What would you order at a cafe with a friend? Explain why you would choose it.",
+    "challengeMeaningAr": "هتطلب إيه في كافيه مع صاحبك؟ وضح ليه هتختاره.",
+    "src": "/images/literacy/literacy-2.webp",
+    "words": "coffee · cafe · friend",
+    "sentence": "A friend can meet me at the cafe for coffee.",
+    "meaningAr": "ممكن أقابل صديق في الكافيه ونشرب قهوة.",
+    "focus": "/f/"
+  },
+  {
+    "id": "market",
+    "challenge": "Which vegetables would you buy for a meal? Describe what you would make.",
+    "challengeMeaningAr": "هتشتري أنهي خضار عشان تعمل وجبة؟ اوصف هتعمل إيه.",
+    "src": "/images/literacy/literacy-3.webp",
+    "words": "green · grapes · vegetables",
+    "sentence": "The market sells green grapes and fresh vegetables.",
+    "meaningAr": "السوق بيبيع عنب أخضر وخضار طازة.",
+    "focus": "/ɡ/ and /v/"
+  },
+  {
+    "id": "library",
+    "challenge": "What kind of book would you look for in a library? Explain why it interests you.",
+    "challengeMeaningAr": "هتدور على نوع كتب إيه في المكتبة؟ وضح ليه بيهمك.",
+    "src": "/images/literacy/literacy-5.webp",
+    "words": "library · long · shelf",
+    "sentence": "Look for a book on the long library shelf.",
+    "meaningAr": "دوّر على كتاب على رف المكتبة الطويل.",
+    "focus": "/l/"
+  },
+  {
+    "id": "walk",
+    "challenge": "Where would you like to go for a walk? Describe one thing you might see there.",
+    "challengeMeaningAr": "نفسك تتمشى فين؟ اوصف حاجة واحدة ممكن تشوفها هناك.",
+    "src": "/images/literacy/literacy-6.webp",
+    "words": "walk · woods · way",
+    "sentence": "We can walk this way through the woods.",
+    "meaningAr": "نقدر نمشي من هنا وسط الشجر.",
+    "focus": "/w/"
+  },
+  {
+    "id": "airport",
+    "challenge": "What would you check before going to your gate? Explain why it matters.",
+    "challengeMeaningAr": "هتراجع إيه قبل ما تروح لبوابة الطيارة؟ وضح ليه ده مهم.",
+    "src": "/images/literacy/literacy-7.webp",
+    "words": "plane · bags · gate",
+    "sentence": "Take your bags to the gate before the plane leaves.",
+    "meaningAr": "خد شنطك للبوابة قبل ما الطيارة تمشي.",
+    "focus": "/eɪ/"
+  },
+  {
+    "id": "map",
+    "challenge": "What would you pack for a day exploring a new place? Explain how one item would help.",
+    "challengeMeaningAr": "هتاخد إيه معاك ليوم تستكشف فيه مكان جديد؟ وضح حاجة واحدة هتساعدك إزاي.",
+    "src": "/images/literacy/literacy-11.webp",
+    "words": "map · camera · bag",
+    "sentence": "Pack a map and a camera in your bag.",
+    "meaningAr": "حط خريطة وكاميرا في شنطتك.",
+    "focus": "/æ/"
+  },
+  {
+    "id": "writing",
+    "challenge": "What advice would you give someone writing a short report? Give a clear example.",
+    "challengeMeaningAr": "هتدي نصيحة إيه لحد بيكتب تقرير قصير؟ ادي مثال واضح.",
+    "src": "/images/literacy/literacy-9.webp",
+    "words": "write · right · report",
+    "sentence": "Write the report on the right side of the page.",
+    "meaningAr": "اكتب التقرير على الناحية اليمين من الصفحة.",
+    "focus": "/r/ (write and right share the same sound)"
+  },
+  {
+    "id": "bookshop",
+    "challenge": "How would you choose a book as a gift? Explain what you would want to know first.",
+    "challengeMeaningAr": "هتختار كتاب هدية إزاي؟ وضح عايز تعرف إيه الأول.",
+    "src": "/images/literacy/literacy-10.webp",
+    "words": "choose · book · shelf",
+    "sentence": "Choose a book from the shelf.",
+    "meaningAr": "اختار كتاب من على الرف.",
+    "focus": "/tʃ/ and /ʃ/"
+  },
+  {
+    "id": "garden",
+    "challenge": "What would you grow in a small garden? Explain what you would need to look after it.",
+    "challengeMeaningAr": "هتزرع إيه في جنينة صغيرة؟ وضح إيه اللي هتحتاجه عشان تعتني بيه.",
+    "src": "/images/listening/garden.webp",
+    "words": "soil · seed · sun",
+    "sentence": "Put the seed in the soil and give it some sun.",
+    "meaningAr": "حط البذرة في التربة وخليها تاخد شمس.",
+    "focus": "/s/"
+  },
+  {
+    "id": "food",
+    "challenge": "What meal would you prepare for a friend? Describe one ingredient and why you would use it.",
+    "challengeMeaningAr": "هتجهز أكلة إيه لصاحبك؟ اوصف مكون واحد ووضح ليه هتستخدمه.",
+    "src": "/images/listening/food.webp",
+    "words": "plate · pasta · pepper",
+    "sentence": "Put the pasta and pepper on the plate.",
+    "meaningAr": "حط المكرونة والفلفل في الطبق.",
+    "focus": "/p/"
+  },
+  {
+    "id": "hotel",
+    "challenge": "What would you ask about before choosing a hotel? Explain why that detail matters to you.",
+    "challengeMeaningAr": "هتسأل عن إيه قبل ما تختار فندق؟ وضح ليه التفصيلة دي مهمة ليك.",
+    "src": "/images/listening/hotel.webp",
+    "words": "hotel · holiday · here",
+    "sentence": "We are here at the hotel for a holiday.",
+    "meaningAr": "إحنا هنا في الفندق عشان نقضي إجازة.",
+    "focus": "/h/"
+  },
+  {
+    "id": "museum",
+    "challenge": "What would you like to see in a museum? Explain what you would want to learn about it.",
+    "challengeMeaningAr": "نفسك تشوف إيه في متحف؟ وضح إيه اللي تحب تعرفه عنه.",
+    "src": "/images/listening/museum.webp",
+    "words": "room · frame · art",
+    "sentence": "There is a framed work of art in the room.",
+    "meaningAr": "الأوضة فيها برواز جواه عمل فني.",
+    "focus": "/r/ (allow for accent differences)"
+  }
+]

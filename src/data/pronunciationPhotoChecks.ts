@@ -52,4 +52,8 @@ export const PRONUNCIATION_PHOTO_CHECKS: Record<string,readonly [string,string]>
  food:["I listened for /p/ at the start of plate, pasta and pepper.", "I checked for a brief lip closure before the air release in those words."],
  hotel:["I listened for /h/ at the start of hotel, holiday and here.", "I tried a gentle breath at the start without adding a stronger throat sound."],
  museum:["I listened for /r/ in room and frame, allowing for accent differences.", "I compared those sounds with art, where /r/ can vary across English accents."],
+ "nightStreet":["I listened for the /aɪ/ glide in night, light and sight.","I tried moving through the vowel rather than keeping one flat vowel sound."],
+ "track":["I listened for /r/ at the start of race, ready and run.","I checked that those words began clearly without an extra vowel before /r/."],
+ "freight":["I listened for the consonant cluster at the start of train, track and transport.","I compared my cluster with the example, allowing for normal accent differences."],
+ "photography":["I listened for /f/ at the start of photo, focus and frame.","I tried keeping the air sound clear, including when photo is spelled with ph."],
 };
