@@ -3423,5 +3423,9 @@
   "ms.recallReview.privacy": "These marks do not judge either draft or affect progress. Collapsing keeps them. Hiding the caption, retrying, changing cue or closing practice discards them. Nothing is sent or saved.",
   "pa.responseChecks.title": "Check whether your answer covers the question",
   "pa.responseChecks.note": "Optional manual content checks. Read your own answer first. These do not assess pronunciation, accuracy or progress. Marks stay only in this page session and reset when you change photo or leave.",
-  "pa.responseChecks.clear": "Clear answer checks"
+  "pa.responseChecks.clear": "Clear answer checks",
+  "rle.variationRetry.note": "Keep your current reply as a first version, then write another reply to the same situation. This is optional and does not compare or grade your words automatically.",
+  "rle.variationRetry.start": "Keep first reply and try again",
+  "rle.variationRetry.first": "My first reply to this situation",
+  "rle.variationRetry.compare": "Read both versions. Did your second reply handle the changed situation and explain what you need? Clear reply removes only the current version. Both versions disappear when you close practice, replay or leave."
 }
