@@ -3468,5 +3468,8 @@
   "sp.followupRetry.note": "Möchtest du deine Antwort verbessern? Behalte den ersten Versuch und schreibe eine neue Fassung. Es gibt keine automatische Prüfung.",
   "sp.followupRetry.start": "Erste Antwort behalten und erneut versuchen",
   "sp.followupRetry.first": "Meine erste Antwort auf diese Aufgabe",
-  "sp.followupRetry.compare": "Lies beide Fassungen. Hast du die Aufgabe beantwortet und deine Aussage klar erklärt? Leeren entfernt nur den aktuellen Entwurf. Beide Fassungen verschwinden beim Aufgabenwechsel, Schließen oder Verlassen."
+  "sp.followupRetry.compare": "Lies beide Fassungen. Hast du die Aufgabe beantwortet und deine Aussage klar erklärt? Leeren entfernt nur den aktuellen Entwurf. Beide Fassungen verschwinden beim Aufgabenwechsel, Schließen oder Verlassen.",
+  "tpr.wordAttempt.label": "Mein englisches Wort oder meine Wendung aus dem Gedächtnis (bis150 Zeichen)",
+  "tpr.wordAttempt.clear": "Meinen Wortversuch leeren",
+  "tpr.wordAttempt.note": "Blende das Englische aus, erinnere dich mit der arabischen Bedeutung daran und vergleiche nach dem Einblenden selbst. Keine Rechtschreibbewertung. Dieses private Feld ist vom Übersetzungsentwurf getrennt. Hilfe schließen oder Aufgabenwechsel leert es."
 }
