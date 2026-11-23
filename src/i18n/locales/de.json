@@ -3420,5 +3420,8 @@
   "ms.recallReview.check.1": "Ich habe die Wortfolge und kleine Wörter wie Artikel und Präpositionen geprüft.",
   "ms.recallReview.check.2": "Ich habe vor einem neuen Versuch geprüft, ob ein Unterschied die Bedeutung verändert.",
   "ms.recallReview.clear": "Diese Markierungen löschen",
-  "ms.recallReview.privacy": "Die Markierungen bewerten keinen Entwurf und ändern keinen Fortschritt. Zuklappen behält sie. Untertitel ausblenden, erneut versuchen, Zeile wechseln oder Übung schließen verwirft sie. Nichts wird gesendet oder gespeichert."
+  "ms.recallReview.privacy": "Die Markierungen bewerten keinen Entwurf und ändern keinen Fortschritt. Zuklappen behält sie. Untertitel ausblenden, erneut versuchen, Zeile wechseln oder Übung schließen verwirft sie. Nichts wird gesendet oder gespeichert.",
+  "pa.responseChecks.title": "Prüfe, ob deine Antwort die Frage abdeckt",
+  "pa.responseChecks.note": "Optionale manuelle Inhaltsprüfung. Lies zuerst deine eigene Antwort. Keine Bewertung von Aussprache, Genauigkeit oder Fortschritt. Markierungen bleiben nur in dieser Seitensitzung und werden beim Bildwechsel oder Verlassen gelöscht.",
+  "pa.responseChecks.clear": "Antwortmarkierungen löschen"
 }
