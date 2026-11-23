@@ -3420,5 +3420,8 @@
   "ms.recallReview.check.1": "I checked word order and small words, such as articles and prepositions.",
   "ms.recallReview.check.2": "I checked whether any difference changes the meaning before trying again.",
   "ms.recallReview.clear": "Clear these review marks",
-  "ms.recallReview.privacy": "These marks do not judge either draft or affect progress. Collapsing keeps them. Hiding the caption, retrying, changing cue or closing practice discards them. Nothing is sent or saved."
+  "ms.recallReview.privacy": "These marks do not judge either draft or affect progress. Collapsing keeps them. Hiding the caption, retrying, changing cue or closing practice discards them. Nothing is sent or saved.",
+  "pa.responseChecks.title": "Check whether your answer covers the question",
+  "pa.responseChecks.note": "Optional manual content checks. Read your own answer first. These do not assess pronunciation, accuracy or progress. Marks stay only in this page session and reset when you change photo or leave.",
+  "pa.responseChecks.clear": "Clear answer checks"
 }
