@@ -3312,5 +3312,7 @@
   "sp.roleDraft.title": "Write a reply before speaking (optional)",
   "sp.roleDraft.note": "Try your own English reply for this turn. Use the meaning hint if needed, then reveal the model to compare. More than one reply may work. This is not an automatic correction or a score.",
   "sp.roleDraft.label": "My reply for this turn (up to 500 characters)",
-  "sp.roleDraft.privacy": "Private and separate from recordings. Collapsing this section or showing the meaning/model keeps the draft. Changing turn or role, restarting, closing practice or leaving the lesson discards it. Nothing is sent or saved."
+  "sp.roleDraft.privacy": "Private and separate from recordings. Collapsing this section or showing the meaning/model keeps the draft. Changing turn or role, restarting, closing practice or leaving the lesson discards it. Nothing is sent or saved.",
+  "pa.questionAudio.listen": "Listen to the follow-up question",
+  "pa.questionAudio.note": "Listen to the question, then answer in your own words. This is not an example answer. Close recording practice to listen again."
 }
