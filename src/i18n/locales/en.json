@@ -3518,5 +3518,13 @@
   "ms.retellingReview.check.0": "I compared my main idea with the source instead of copying the whole line.",
   "ms.retellingReview.check.1": "I checked who did what, including any time or negative words that change the meaning.",
   "ms.retellingReview.check.2": "I reread my sentence order and checked that my added details do not contradict the source.",
-  "ms.retellingReview.clear": "Clear my review marks"
+  "ms.retellingReview.clear": "Clear my review marks",
+  "tpr.wordFocus.label": "Choose one focus for my second sentence",
+  "tpr.wordFocus.meaning": "Meaning",
+  "tpr.wordFocus.form": "Word form",
+  "tpr.wordFocus.context": "Situation",
+  "tpr.wordFocus.prompt.meaning": "Check that this word keeps the meaning you intend. Change your wording without changing that meaning.",
+  "tpr.wordFocus.prompt.form": "Check the word form and the nearby words it needs in your sentence.",
+  "tpr.wordFocus.prompt.context": "Add or change a useful detail so this word fits a clear situation of your own.",
+  "tpr.wordFocus.chosen": "My chosen focus"
 }
