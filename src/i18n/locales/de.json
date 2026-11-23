@@ -3508,5 +3508,9 @@
   "rle.vocabRetry.note": "Behalte deinen ersten Satz und versuche eine andere Version mit demselben Ausdruck. Freiwillige, private Übung, keine automatische Bewertung.",
   "rle.vocabRetry.start": "Ersten Satz behalten und erneut versuchen",
   "rle.vocabRetry.first": "Dein erster Satz",
-  "rle.vocabRetry.compare": "Vergleiche beide Sätze selbst. Passt der Ausdruck im neuen Satz natürlich zur Situation? Beide bleiben nur in dieser Übung; das Leeren des aktuellen Satzes behält den ersten. Wiederhole oder verlasse das Szenario, um beide zurückzusetzen."
+  "rle.vocabRetry.compare": "Vergleiche beide Sätze selbst. Passt der Ausdruck im neuen Satz natürlich zur Situation? Beide bleiben nur in dieser Übung; das Leeren des aktuellen Satzes behält den ersten. Wiederhole oder verlasse das Szenario, um beide zurückzusetzen.",
+  "pa.wordRetry.note": "Behalte deinen ersten Satz und versuche eine zweite Version mit diesem Wort. Freiwillige private Übung, keine automatische Aussprachebewertung.",
+  "pa.wordRetry.start": "Ersten Satz behalten und erneut versuchen",
+  "pa.wordRetry.first": "Dein erster Satz",
+  "pa.wordRetry.compare": "Vergleiche beide Sätze selbst. Passt das Wort im zweiten Satz klar zur Fotosituation? Das Leeren des aktuellen Satzes behält den ersten. Ein Fotowechsel oder das Öffnen der Aufnahmeübung setzt beide zurück."
 }
