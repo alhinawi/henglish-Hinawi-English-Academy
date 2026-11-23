@@ -3312,5 +3312,7 @@
   "sp.roleDraft.title": "Vor dem Sprechen eine Antwort schreiben (freiwillig)",
   "sp.roleDraft.note": "Versuche eine eigene englische Antwort für diesen Gesprächsschritt. Nutze bei Bedarf die Bedeutungshilfe und vergleiche danach mit dem Modell. Mehrere Antworten sind möglich. Keine automatische Korrektur oder Bewertung.",
   "sp.roleDraft.label": "Meine Antwort für diesen Schritt (bis zu 500 Zeichen)",
-  "sp.roleDraft.privacy": "Privat und getrennt von Aufnahmen. Einklappen und Einblenden der Bedeutung oder des Modells erhalten den Entwurf. Schritt- oder Rollenwechsel, Neustart, Schließen der Übung oder Verlassen der Lektion löscht ihn. Nichts wird gesendet oder gespeichert."
+  "sp.roleDraft.privacy": "Privat und getrennt von Aufnahmen. Einklappen und Einblenden der Bedeutung oder des Modells erhalten den Entwurf. Schritt- oder Rollenwechsel, Neustart, Schließen der Übung oder Verlassen der Lektion löscht ihn. Nichts wird gesendet oder gespeichert.",
+  "pa.questionAudio.listen": "Anschlussfrage anhören",
+  "pa.questionAudio.note": "Höre die Frage und antworte mit eigenen Worten. Dies ist keine Beispielantwort. Schließe die Aufnahmeübung, um erneut zuzuhören."
 }
