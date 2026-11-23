@@ -3508,5 +3508,9 @@
   "rle.vocabRetry.note": "Keep your first sentence, then try another version using the same expression. Optional, private practice, not an automatic assessment.",
   "rle.vocabRetry.start": "Keep first sentence and try again",
   "rle.vocabRetry.first": "Your first sentence",
-  "rle.vocabRetry.compare": "Compare both sentences yourself. Does the new one use the expression naturally in this situation? Both stay only in this practice; clearing the current sentence keeps the first. Replay or leave the scenario to reset both."
+  "rle.vocabRetry.compare": "Compare both sentences yourself. Does the new one use the expression naturally in this situation? Both stay only in this practice; clearing the current sentence keeps the first. Replay or leave the scenario to reset both.",
+  "pa.wordRetry.note": "Keep your first sentence and try a second version using this word. Optional private practice, not an automatic pronunciation assessment.",
+  "pa.wordRetry.start": "Keep first sentence and try again",
+  "pa.wordRetry.first": "Your first sentence",
+  "pa.wordRetry.compare": "Compare both sentences yourself. Does the second use the word clearly in this photo situation? Clearing the current sentence keeps the first. Changing the photo or opening recording practice resets both."
 }
