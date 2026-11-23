@@ -3182,5 +3182,13 @@
   "tpr.modelAudio.listen": "Listen to sample translation {number}",
   "tpr.modelAudio.note": "Listening is optional. Arabic playback needs a supported Microsoft voice in your browser. These examples do not assess your translation.",
   "ms.recall.meaning": "Need a meaning hint? Egyptian Arabic",
-  "ms.recall.meaningNote": "Optional meaning from the existing scene translation, not a word-for-word answer or a listening grade. The English source stays hidden until you reveal it."
+  "ms.recall.meaningNote": "Optional meaning from the existing scene translation, not a word-for-word answer or a listening grade. The English source stays hidden until you reveal it.",
+  "pa.photo.cafe": "A cafe sign and counter",
+  "pa.photo.market": "Fruit and vegetables at a market",
+  "pa.photo.library": "Rows of books in a library",
+  "pa.photo.walk": "A footbridge through green woods",
+  "pa.photo.airport": "An aircraft at an airport gate",
+  "pa.photo.map": "A map with a camera and a bag",
+  "pa.photo.writing": "A person writing beside a laptop",
+  "pa.photo.bookshop": "A hand choosing a book from a shelf"
 }

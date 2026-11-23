@@ -1,0 +1,5 @@
+# Twelve photo-led pronunciation situations
+
+The photo practice library grows from four to twelve tasks, keeping every original task. New situations are a cafe, market, library, forest footbridge, airport, map, writing desk and book selection. Each uses an existing licensed local photograph, inspected as pixels before selection, with an original short word bank, target sound and optional example sentence. They add /f/, /g/, /v/, /l/, /w/, /eɪ/, /æ/, /r/, /tʃ/ and /ʃ/ practice. The write/right example explicitly notes their shared sound, not a contrast. Tasks are language prompts, not claims about stock models.
+
+All inherit model reveal, explicit listening and local recorder. No new provider, remote image, grade or automatic recording. EN/AR/DE captions describe visible content. Verification: regression suite, i18n, TypeScript/full Next static export; EN/AR390 all twelve photos load, model/reset/listening/recorder guards, denial cleanup and no overflow. Actual new-task pixels inspected. Audio APIs blocked and mic denied in UI tests, no playback/capture claim.
