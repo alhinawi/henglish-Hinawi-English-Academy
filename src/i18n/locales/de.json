@@ -3427,5 +3427,9 @@
   "rle.variationRetry.note": "Behalte deine aktuelle Antwort als erste Version und schreibe eine weitere Antwort auf dieselbe Situation. Das ist optional, ohne automatischen Vergleich oder Bewertung.",
   "rle.variationRetry.start": "Erste Antwort behalten und erneut versuchen",
   "rle.variationRetry.first": "Meine erste Antwort auf diese Situation",
-  "rle.variationRetry.compare": "Lies beide Versionen. Geht die zweite Antwort auf die geänderte Situation ein und erklärt, was du brauchst? Löschen entfernt nur die aktuelle Version. Beide verschwinden beim Schließen der Übung, Neustart oder Verlassen."
+  "rle.variationRetry.compare": "Lies beide Versionen. Geht die zweite Antwort auf die geänderte Situation ein und erklärt, was du brauchst? Löschen entfernt nur die aktuelle Version. Beide verschwinden beim Schließen der Übung, Neustart oder Verlassen.",
+  "sp.topicSentence.title": "Diesen Ausdruck in einem eigenen Satz verwenden",
+  "sp.topicSentence.label": "Mein englischer Satz (bis zu 300 Zeichen)",
+  "sp.topicSentence.clear": "Diesen Satz löschen",
+  "sp.topicSentence.note": "Schreibe einen eigenen Satz mit dem Ausdruck oben und sprich ihn dann laut. Dieser optionale Entwurf ist vom Aufgabenplan getrennt. Ausblenden oder Einklappen behält ihn. Aufgabenwechsel, Schließen der Übung oder Verlassen löscht ihn. Nichts wird geprüft, gesendet oder gespeichert."
 }
