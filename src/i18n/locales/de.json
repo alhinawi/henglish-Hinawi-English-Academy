@@ -3488,5 +3488,9 @@
   "tpr.wordSentence.title": "Dieses Wort in einem eigenen Satz verwenden (optional)",
   "tpr.wordSentence.label": "Mein englischer Satz (bis zu 300 Zeichen)",
   "tpr.wordSentence.clear": "Diesen Satz löschen",
-  "tpr.wordSentence.note": "Schreibe einen eigenen Satz mit dem Wort oder Ausdruck und sprich ihn laut. Er bleibt getrennt von Wortabruf und Übersetzung. Ausblenden des Wortes oder Zuklappen behält ihn. Hilfe schließen, Aufgabe wechseln oder Verlassen löscht ihn. Nichts wird geprüft, gesendet oder gespeichert."
+  "tpr.wordSentence.note": "Schreibe einen eigenen Satz mit dem Wort oder Ausdruck und sprich ihn laut. Er bleibt getrennt von Wortabruf und Übersetzung. Ausblenden des Wortes oder Zuklappen behält ihn. Hilfe schließen, Aufgabe wechseln oder Verlassen löscht ihn. Nichts wird geprüft, gesendet oder gespeichert.",
+  "pa.wordSentence.title": "Fotowörter in eigenen Sätzen verwenden (optional)",
+  "pa.wordSentence.label": "Mein englischer Satz (bis zu 300 Zeichen)",
+  "pa.wordSentence.clear": "Diesen Satz löschen",
+  "pa.wordSentence.note": "Schreibe einen eigenen Satz mit jedem Wort und sprich ihn laut. Die Sätze bleiben getrennt von Fotoplan und Antwort. Zuklappen behält sie. Fotowechsel, Öffnen der Aufnahmeübung oder Verlassen löscht sie. Nichts wird geprüft, gesendet oder gespeichert."
 }
