@@ -3504,5 +3504,9 @@
   "pa.photo.design": "Drawing a room plan",
   "pa.photo.coding": "A computer workspace",
   "pa.photo.cafeMenu": "Reading a cafe menu",
-  "pa.photo.collaboration": "Sharing an idea"
+  "pa.photo.collaboration": "Sharing an idea",
+  "rle.vocabRetry.note": "Keep your first sentence, then try another version using the same expression. Optional, private practice, not an automatic assessment.",
+  "rle.vocabRetry.start": "Keep first sentence and try again",
+  "rle.vocabRetry.first": "Your first sentence",
+  "rle.vocabRetry.compare": "Compare both sentences yourself. Does the new one use the expression naturally in this situation? Both stay only in this practice; clearing the current sentence keeps the first. Replay or leave the scenario to reset both."
 }
