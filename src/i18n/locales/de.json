@@ -3150,5 +3150,10 @@
   "at.level.label": "Optionales Übungsniveau",
   "at.level.none": "Keine Niveauangabe",
   "at.level.note": "Wähle das gewünschte Übungsniveau, kein geprüftes Sprachniveau. Das ändert nur die Vorschau, bis du sie zur Nachricht hinzufügst. Dein aktueller Entwurf wird nie ersetzt.",
-  "at.level.request": "Bitte richte diese Übung an CEFR {level} aus. Dies ist ein Übungswunsch, keine Einstufung meines Sprachniveaus."
+  "at.level.request": "Bitte richte diese Übung an CEFR {level} aus. Dies ist ein Übungswunsch, keine Einstufung meines Sprachniveaus.",
+  "sa.status.title": "Wähle deine nächste Übung",
+  "sa.status.all": "Alle Lektionen",
+  "sa.status.new": "Noch nicht abgeschlossen",
+  "sa.status.done": "Abgeschlossen",
+  "sa.status.note": "Basiert auf gespeicherten Lektionen, nicht auf einer Prüfung der Sprechfähigkeit. Die Zahlen gelten für die ganze Akademie; Niveau und Suche filtern weiterhin die Ergebnisse. Öffnen allein schließt keine Lektion ab."
 }
