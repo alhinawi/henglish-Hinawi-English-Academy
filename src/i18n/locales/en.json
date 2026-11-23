@@ -3123,5 +3123,20 @@
   "rle.transfer.task.sim-hotel-checkin": "Your room is noisier than expected. Explain the problem politely and ask about a quieter room, including any price difference, before accepting a change.",
   "rle.transfer.task.sim-pharmacy-visit": "You did not understand an instruction the pharmacist gave. Ask them to repeat it more slowly and explain the written label. Do not guess medicine instructions. This is language practice, not medical advice.",
   "rle.transfer.task.sim-clothing-shopping": "The item fits, but you are unsure about the return policy. Ask how long you have to return it and what conditions apply before deciding to buy.",
-  "rle.transfer.task.sim-supermarket-shopping": "The shelf price and checkout price are different. Point out the difference politely, ask someone to check and ask for the confirmed price before paying."
+  "rle.transfer.task.sim-supermarket-shopping": "The shelf price and checkout price are different. Point out the difference politely, ask someone to check and ask for the confirmed price before paying.",
+  "pa.photo.title": "Describe a photo, practise a sound",
+  "pa.photo.intro": "Use familiar words in a sentence of your own. These optional photo tasks connect sound practice with speaking. No automatic pronunciation grade.",
+  "pa.photo.choose": "Choose a photo situation",
+  "pa.photo.study": "Books and a pen on a desk",
+  "pa.photo.travel": "A passport above a map",
+  "pa.photo.meeting": "People around a table with notebooks",
+  "pa.photo.presentation": "People watching a presentation",
+  "pa.photo.note": "Illustrative stock photography, not Henglish learners or staff. The example is a language prompt, not a claim about the people or event shown.",
+  "pa.photo.task": "Say one sentence connected to the photo using a suggested word. Notice the highlighted sound. Try your own sentence before opening the example; different suitable sentences can work.",
+  "pa.photo.show": "Show one example sentence",
+  "pa.photo.hide": "Hide the example sentence",
+  "pa.photo.model": "One possible practice sentence",
+  "pa.photo.open": "Open local speaking practice",
+  "pa.photo.close": "Close and discard recording",
+  "pa.photo.record": "Say your own photo-related sentence. Focus on the suggested sound and listen back for clarity."
 }

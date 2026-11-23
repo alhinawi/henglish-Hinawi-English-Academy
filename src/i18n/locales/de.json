@@ -3123,5 +3123,20 @@
   "rle.transfer.task.sim-hotel-checkin": "Dein Zimmer ist lauter als erwartet. Erkläre das Problem höflich und frage nach einem ruhigeren Zimmer und möglichen Mehrkosten, bevor du wechselst.",
   "rle.transfer.task.sim-pharmacy-visit": "Du hast eine Anweisung der Apotheke nicht verstanden. Bitte um langsame Wiederholung und Erklärung des Etiketts. Rate nicht bei Arzneianweisungen. Sprachübung, keine medizinische Beratung.",
   "rle.transfer.task.sim-clothing-shopping": "Das Kleidungsstück passt, aber du kennst die Rückgaberegeln nicht. Frage vor dem Kauf nach Frist und Bedingungen.",
-  "rle.transfer.task.sim-supermarket-shopping": "Regal- und Kassenpreis unterscheiden sich. Weise höflich darauf hin, bitte um Prüfung und frage vor dem Bezahlen nach dem bestätigten Preis."
+  "rle.transfer.task.sim-supermarket-shopping": "Regal- und Kassenpreis unterscheiden sich. Weise höflich darauf hin, bitte um Prüfung und frage vor dem Bezahlen nach dem bestätigten Preis.",
+  "pa.photo.title": "Ein Foto beschreiben, einen Laut üben",
+  "pa.photo.intro": "Nutze vertraute Wörter in einem eigenen Satz. Diese optionalen Fotoaufgaben verbinden Lautübung und Sprechen. Keine automatische Aussprachebewertung.",
+  "pa.photo.choose": "Eine Fotosituation wählen",
+  "pa.photo.study": "Bücher und ein Stift auf einem Tisch",
+  "pa.photo.travel": "Ein Reisepass über einer Karte",
+  "pa.photo.meeting": "Menschen mit Notizbüchern an einem Tisch",
+  "pa.photo.presentation": "Menschen sehen eine Präsentation",
+  "pa.photo.note": "Illustrative Stockfotos, keine Lernenden oder Mitarbeitenden von Henglish. Der Beispielsatz ist eine Sprachaufgabe, keine Behauptung über die gezeigten Menschen oder Ereignisse.",
+  "pa.photo.task": "Bilde zum Foto einen Satz mit einem vorgeschlagenen Wort. Achte auf den angegebenen Laut. Versuche zuerst deinen eigenen Satz; verschiedene passende Sätze sind möglich.",
+  "pa.photo.show": "Einen Beispielsatz zeigen",
+  "pa.photo.hide": "Beispielsatz ausblenden",
+  "pa.photo.model": "Ein möglicher Übungssatz",
+  "pa.photo.open": "Lokale Sprechübung öffnen",
+  "pa.photo.close": "Schließen und Aufnahme verwerfen",
+  "pa.photo.record": "Sprich einen eigenen Satz zum Foto. Achte auf den vorgeschlagenen Laut und höre deine Aufnahme auf Verständlichkeit ab."
 }

@@ -1,3 +1,4 @@
+import { PronunciationPhotoPractice } from '../components/PronunciationPhotoPractice';
 import { MinimalPairRehearsal } from '../components/MinimalPairRehearsal';
 import { VOWEL_WORKSHOP } from '../data/vowelWorkshopData';
 import { SpeakingRecorder } from '../components/SpeakingPracticeStudio';
@@ -310,6 +311,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         <p className="text-xs leading-7 text-slate-400">{t('pa.vowelReference')} <a className="underline text-cyan-200" href="https://learnenglish.britishcouncil.org/apps/learnenglish-sounds-right" target="_blank" rel="noreferrer">British Council Sounds Right</a></p>
       </section>
 
+      <PronunciationPhotoPractice/>
     </div>
   );
 };
