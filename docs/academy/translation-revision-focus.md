@@ -1,0 +1,5 @@
+# Guided translation revision
+
+The optional revision reflection now offers a task-specific focus: meaning and missing information, time and grammar, or natural wording. Each choice gives a concrete comparison prompt. No choice is selected by default. Selection stays separate from the original draft, revised draft, reflection and review checkboxes. It survives hiding models, closing revision and changing tasks while this practice tab stays open. Leaving the tab clears it. EN/AR/DE copy. No score, model generation, storage or network added. TeacherDashboard untouched.
+
+Verification:267 offline regressions, locale check and full TypeScript/Next export passed. New focus and existing reflection EN/AR390 suites passed all32tasks, all3choices/prompts, per-task isolation, hide-close retention, wraparound, draft/revision/checklist preservation and tab reset. Actual local pixels inspected: readable selector/prompt/reflection, no overflow, دخول visible. UI checks block backend requests; no backend/audio claim.
