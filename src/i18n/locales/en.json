@@ -3233,5 +3233,12 @@
   "pa.photoPlan.note": "Try your own sentence using a word from the wordbank before opening the example. This private draft is not checked, scored or sent. It stays only in this photo practice; changing the photo or leaving discards it.",
   "pa.photoPlan.label": "My sentence in English (up to 500 characters)",
   "pa.photoPlan.clear": "Clear my sentence",
-  "pa.photoPlan.next": "Say your sentence aloud, then compare it with the example if useful. More than one sentence can fit the photo. Opening the example or recorder does not replace your draft."
+  "pa.photoPlan.next": "Say your sentence aloud, then compare it with the example if useful. More than one sentence can fit the photo. Opening the example or recorder does not replace your draft.",
+  "ms.ownReview.title": "Review my own-words attempt (optional)",
+  "ms.ownReview.note": "After speaking, compare your attempt with the visible source. These are private self-checks, not automatic feedback or a score.",
+  "ms.ownReview.check.0": "I kept the main meaning and the speaker's intention.",
+  "ms.ownReview.check.1": "I changed the wording rather than only repeating the source.",
+  "ms.ownReview.check.2": "My new version is clear without adding unsupported details.",
+  "ms.ownReview.target": "One change for my next attempt (optional, 300 characters)",
+  "ms.ownReview.next": "Try again with one change. Checks and notes remain while collapsed, but changing the task or cue, closing or leaving the clip discards them. Nothing is sent or saved."
 }

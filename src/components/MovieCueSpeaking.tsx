@@ -1,3 +1,4 @@
+import {MovieOwnWordsReview} from './MovieOwnWordsReview';
 import React, { useState } from 'react';
 import { Mic } from 'lucide-react';
 import { SpeakingRecorder } from './SpeakingPracticeStudio';
@@ -25,6 +26,7 @@ export function MovieCueSpeaking({ cues, onPause }: { cues: TimedSubtitle[]; onP
       {mode==='own'&&<div className="space-y-3 rounded-2xl border border-amber-200/25 p-4"><h4 className="text-base font-bold text-amber-100">{t('ms.own.title')}</h4><p className="text-sm leading-8 text-slate-200">{t('ms.own.task')}</p><p dir="ltr" lang="en" className="text-sm leading-8 text-white">{cue.en}</p><label htmlFor="movie-own-plan" className="block text-sm font-bold text-cyan-100">{t('ms.own.plan')}</label><textarea id="movie-own-plan" aria-describedby="movie-own-note" rows={3} maxLength={1500} dir="auto" value={plan} onChange={event=>setPlan(event.target.value)} className="w-full rounded-xl border border-white/20 bg-[#0c0b20] p-4 text-base leading-8 text-white focus:outline-none focus:ring-2 focus:ring-cyan-200"/><p id="movie-own-note" className="text-xs leading-7 text-slate-400">{t('ms.own.note')}</p></div>}
       <SpeakingRecorder key={`${cue.id}:${mode}`} prompt={mode==='echo'?cue.en:t('ms.own.record')}/>
 
+      {mode==='own'&&<MovieOwnWordsReview key={cue.id}/>}
       <p className="text-xs leading-7 text-slate-400">{t('ms.echoNote')}</p>
     </div>}
   </section>;
