@@ -4,6 +4,7 @@ const path = require('node:path');
 const checks = [
   'check-movie-retelling-clear.cjs',
   'check-scenario-variation-written-attempt.cjs',
+  'check-scenario-variation-checks.cjs',
   'check-pronunciation-photo-answer-frames.cjs',
   'check-speaking-topic-word-recall.cjs',
   'check-tutor-goal-listening.cjs',
