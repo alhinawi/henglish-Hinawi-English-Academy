@@ -3314,5 +3314,7 @@
   "sp.roleDraft.label": "My reply for this turn (up to 500 characters)",
   "sp.roleDraft.privacy": "Private and separate from recordings. Collapsing this section or showing the meaning/model keeps the draft. Changing turn or role, restarting, closing practice or leaving the lesson discards it. Nothing is sent or saved.",
   "pa.questionAudio.listen": "Listen to the follow-up question",
-  "pa.questionAudio.note": "Listen to the question, then answer in your own words. This is not an example answer. Close recording practice to listen again."
+  "pa.questionAudio.note": "Listen to the question, then answer in your own words. This is not an example answer. Close recording practice to listen again.",
+  "rle.variationStarters.title": "Need a phrase to start?",
+  "rle.variationStarters.note": "Optional language scaffolds, not complete answers. Replace the dots with your own details and change the wording if needed. For imaginary role-play only, not medical or other professional advice."
 }
