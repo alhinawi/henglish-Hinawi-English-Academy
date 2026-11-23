@@ -3256,5 +3256,8 @@
   "pa.photoReview.next": "Choose one word or pause, then describe the photo again. Private notes stay only while this recording practice is open; closing it, changing photo or leaving clears them.",
   "tpr.taskPicker.label": "Choose a translation task",
   "tpr.taskPicker.note": "Jump to any task in the current filters. Your drafts stay while this practice tab is open; choosing a task hides models and hints.",
-  "sp.step4.undo": "Undo last word"
+  "sp.step4.undo": "Undo last word",
+  "pa.photoWords.title": "Practise the words first",
+  "pa.photoWords.note": "Listen to each word, then try it in your photo description. Word playback is hidden while recording practice is open.",
+  "pa.photoWords.listen": "Listen to word: {word}"
 }
