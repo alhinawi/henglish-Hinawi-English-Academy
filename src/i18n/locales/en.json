@@ -3460,5 +3460,13 @@
   "at.rehearsalRetry.note": "Want to try a clearer version? Keep this first attempt and write a second one. Use the optional review to choose what to improve. Nothing is sent to the teacher.",
   "at.rehearsalRetry.start": "Keep my first try and write again",
   "at.rehearsalRetry.first": "My first private try",
-  "at.rehearsalRetry.compare": "Read both attempts yourself. What changed? Clear removes only the current draft. Changing teacher mode or leaving the page removes both attempts. Nothing is graded, sent or saved."
+  "at.rehearsalRetry.compare": "Read both attempts yourself. What changed? Clear removes only the current draft. Changing teacher mode or leaving the page removes both attempts. Nothing is graded, sent or saved.",
+  "sp.followupAttempt.title": "Write my own follow-up reply (optional)",
+  "sp.followupAttempt.label": "My reply to this follow-up (up to700 characters)",
+  "sp.followupAttempt.clear": "Clear this reply",
+  "sp.followupAttempt.note": "Write your own English reply before speaking. This is separate from your plan and recording. Collapsing keeps it. Changing the task, closing practice or leaving clears it. Nothing is sent, saved or graded. Avoid personal or sensitive details.",
+  "sp.followupRetry.note": "Want to improve your reply? Keep the first attempt and write a new version. Nothing is checked automatically.",
+  "sp.followupRetry.start": "Keep my first reply and try again",
+  "sp.followupRetry.first": "My first reply to this follow-up",
+  "sp.followupRetry.compare": "Read both versions. Did you answer this task and explain your meaning clearly? Clear removes only the current draft. Both versions disappear when you change task, close practice or leave."
 }
