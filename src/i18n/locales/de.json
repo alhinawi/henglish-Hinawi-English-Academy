@@ -3393,5 +3393,9 @@
   "sp.roleRetry.note": "Behalte deine erste Antwort und versuche eine andere Formulierung. Die zweite Version ist freiwillig und privat.",
   "sp.roleRetry.start": "Erste Antwort behalten und erneut versuchen",
   "sp.roleRetry.first": "Deine erste Antwort",
-  "sp.roleRetry.compare": "Vergleiche deine Antworten. Passt die Bedeutung noch zu diesem Gesprächsschritt? Welche Version würdest du laut sagen? Keine Version wird geprüft oder bewertet."
+  "sp.roleRetry.compare": "Vergleiche deine Antworten. Passt die Bedeutung noch zu diesem Gesprächsschritt? Welche Version würdest du laut sagen? Keine Version wird geprüft oder bewertet.",
+  "pa.photoResponse.title": "Meine Antwort zur Zusatzfrage schreiben (freiwillig)",
+  "pa.photoResponse.label": "Meine Antwort zur Fotofrage (bis zu 700 Zeichen)",
+  "pa.photoResponse.clear": "Meine Antwort löschen",
+  "pa.photoResponse.note": "Beantworte die Frage oben mit deinen eigenen englischen Worten. Die Satzanfänge können helfen, sind aber keine vollständigen Antworten. Getrennt von Satzplan und Aufnahme, ohne automatische Korrektur oder Bewertung. Zuklappen oder Hilfen anzeigen behält die Antwort. Ein anderes Foto oder das Verlassen der Akademie verwirft sie. Nichts wird gesendet oder gespeichert."
 }
