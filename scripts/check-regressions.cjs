@@ -11,6 +11,7 @@ const checks = [
   'check-speaking-topic-word-recall.cjs',
   'check-speaking-topic-word-sentences.cjs',
   'check-speaking-topic-word-retry.cjs',
+  'check-movie-retelling-next-note.cjs',
   'check-scenario-vocabulary-focus.cjs',
   'check-pronunciation-photo-word-focus.cjs',
   'check-speaking-topic-word-focus.cjs',
