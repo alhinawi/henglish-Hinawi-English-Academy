@@ -3358,5 +3358,8 @@
   "sp.topicWords.title": "Nützliche Wörter zum Thema (optional)",
   "sp.topicWords.note": "Verwende bei Bedarf einen Ausdruck in deiner eigenen Antwort. Die ägyptisch-arabischen Bedeutungen erklären die Wörter, keine vollständige Antwort. Nur Sprachübungen, keine medizinische oder andere Fachberatung.",
   "pa.soundReview.title": "Auf diese Laute achten",
-  "pa.soundReview.note": "Optionale private Reflexion, keine Aussprachebewertung. Schließe die Aufnahmeübung, höre Wörter oder Beispiel an und vergleiche deine eigene Aufnahme. Akzente unterscheiden sich; du musst keinen Akzent nachahmen."
+  "pa.soundReview.note": "Optionale private Reflexion, keine Aussprachebewertung. Schließe die Aufnahmeübung, höre Wörter oder Beispiel an und vergleiche deine eigene Aufnahme. Akzente unterscheiden sich; du musst keinen Akzent nachahmen.",
+  "rle.vocabSource.hide": "Beispiel beim Schreiben ausblenden",
+  "rle.vocabSource.show": "Beispiel wieder zeigen",
+  "rle.vocabSource.note": "Blende Beispiel, Bedeutung und Hörfunktion aus, um ohne Abschreiben einen eigenen Satz zu versuchen. Dein privater Satz bleibt erhalten; erneutes Anzeigen prüft oder bewertet ihn nicht."
 }
