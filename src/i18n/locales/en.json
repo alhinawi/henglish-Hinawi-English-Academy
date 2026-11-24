@@ -1,4 +1,10 @@
 {
+  "sp.followupReview.title": "My follow-up reply self-check",
+  "sp.followupReview.note": "Compare your own reply with the task, not with a fixed model answer. Tick only what you checked. These are private reminders, not feedback, points or a score. Retry keeps these marks so you can review them again; changing task or lesson, or closing practice, clears them.",
+  "sp.followupReview.check.0": "I answered the specific question or changed situation in this task.",
+  "sp.followupReview.check.1": "I included the detail, reason or next step the task asks for.",
+  "sp.followupReview.check.2": "My ideas are in a clear order that a listener can follow.",
+  "sp.followupReview.clear": "Clear only these follow-up checks",
   "admin.addVideo": "Add video to the curriculum",
   "admin.cefr.a1": "A1 - Beginner",
   "admin.cefr.a2": "A2 - Elementary",
