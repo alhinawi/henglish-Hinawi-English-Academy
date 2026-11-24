@@ -3585,5 +3585,13 @@
   "sp.followupFocus.chosen": "Mein gewählter Fokus",
   "sp.followupFocus.prompt.task": "Prüfe die Folgeaufgabe oben. Meine nächste Antwort soll die gefragten Punkte abdecken, ohne eine vollständige Musterantwort zu kopieren.",
   "sp.followupFocus.prompt.reason": "Bleibe beim Thema. Ergänze einen Grund oder ein Detail, wenn die Aufgabe es verlangt. Ich kann ein unverfängliches Beispiel erfinden.",
-  "sp.followupFocus.prompt.clarity": "Ordne meine Gedanken so, dass Zuhörende folgen können. Behalte die beabsichtigte Bedeutung bei und benutze eigene Worte."
+  "sp.followupFocus.prompt.clarity": "Ordne meine Gedanken so, dass Zuhörende folgen können. Behalte die beabsichtigte Bedeutung bei und benutze eigene Worte.",
+  "pa.responseFocus.label": "Einen Fokus für meine nächste Antwort wählen",
+  "pa.responseFocus.answer": "Die Frage beantworten",
+  "pa.responseFocus.detail": "Ein hilfreiches Detail",
+  "pa.responseFocus.sound": "Ein Wort deutlich sagen",
+  "pa.responseFocus.chosen": "Mein gewählter Fokus",
+  "pa.responseFocus.prompt.answer": "Lies die Bildfrage noch einmal. Meine Antwort soll die gefragten Punkte mit eigenen Ideen abdecken.",
+  "pa.responseFocus.prompt.detail": "Ergänze einen passenden Grund oder ein Detail, wenn die Frage es verlangt. Ich kann ein erfundenes Beispiel nutzen und persönliche Daten weglassen.",
+  "pa.responseFocus.prompt.sound": "Wähle ein Wort aus meiner eigenen Antwort, das ich bewusst aussprechen möchte. Der Lautfokus des Bildes kann helfen. Das ist mein Übungsplan, keine automatische Ausspracheprüfung."
 }

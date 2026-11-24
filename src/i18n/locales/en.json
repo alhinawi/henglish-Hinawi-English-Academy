@@ -3585,5 +3585,13 @@
   "sp.followupFocus.chosen": "My chosen focus",
   "sp.followupFocus.prompt.task": "Check the follow-up task above. Make sure my next reply covers what it asks, without adding a complete model answer to copy.",
   "sp.followupFocus.prompt.reason": "Keep my reply relevant. Add one reason or detail if the task calls for it; I can invent a safe example.",
-  "sp.followupFocus.prompt.clarity": "Put my ideas in an order a listener can follow. Keep the same intended meaning and use my own words."
+  "sp.followupFocus.prompt.clarity": "Put my ideas in an order a listener can follow. Keep the same intended meaning and use my own words.",
+  "pa.responseFocus.label": "Choose one focus for my next answer",
+  "pa.responseFocus.answer": "Answer the question",
+  "pa.responseFocus.detail": "A useful detail",
+  "pa.responseFocus.sound": "A word to say clearly",
+  "pa.responseFocus.chosen": "My chosen focus",
+  "pa.responseFocus.prompt.answer": "Read the photo question again. Make sure my answer covers what it asks, using my own ideas.",
+  "pa.responseFocus.prompt.detail": "Add one relevant reason or detail when the question asks for it. I can use an imaginary example and leave out personal information.",
+  "pa.responseFocus.prompt.sound": "Choose one word in my own answer to say carefully. Look at the photo sound focus if it helps. This is my practice plan, not an automatic pronunciation check."
 }
