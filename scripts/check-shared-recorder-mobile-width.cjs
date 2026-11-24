@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('assert/strict'),s=fs.readFileSync('src/components/SpeakingPracticeStudio.tsx','utf8');a(s.includes('bg-black/20 p-2 sm:p-4 space-y-4'));a(s.includes('disabled={starting}'));a(s.includes('maxLength')===false);console.log('Shared recorder mobile inset8desktop16, starting control retained PASS');
