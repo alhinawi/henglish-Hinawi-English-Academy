@@ -1,0 +1,1 @@
+const f=require('fs'),a=require('assert/strict'),s=f.readFileSync('src/views/AiTutorPage.tsx','utf8');for(const v of ['overflow-y-auto p-2 sm:p-6','flex-col sm:flex-row','flex-col sm:flex-row-reverse','w-full min-w-0 sm:w-auto sm:max-w-[80%] p-2 sm:p-5'])a(s.includes(v));console.log('Tutor mobile full-width messages,stacked avatars,desktop rows retained PASS');
