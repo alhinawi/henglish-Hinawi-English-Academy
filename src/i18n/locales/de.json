@@ -3611,5 +3611,7 @@
   "at.rehearsalFocus.prompt.clarity": "Nutze eigene Worte, damit meine beabsichtigte Bedeutung leicht verständlich ist. Das ist meine private Überprüfung, keine automatische Korrektur.",
   "at.rehearsalFocus.prompt.example": "Wenn es meinem Ziel hilft, ergänze ein kurzes eigenes Beispiel. Ich kann unverfängliche Details erfinden, statt persönliche Daten zu teilen.",
   "tpr.meaningChecksArabic.title": "Bedeutung dieser Prüffrage auf Ägyptisch-Arabisch",
-  "tpr.meaningChecksArabic.note": "Nur eine Verständnishilfe für die Frage, keine Musterübersetzung und keine Bewertung."
+  "tpr.meaningChecksArabic.note": "Nur eine Verständnishilfe für die Frage, keine Musterübersetzung und keine Bewertung.",
+  "pa.responseChecksArabic.title": "Bedeutung dieses Prüfpunkts auf Ägyptisch-Arabisch",
+  "pa.responseChecksArabic.note": "Nur eine Verständnishilfe für den Inhaltscheck, keine Musterantwort und keine Aussprachebewertung."
 }
