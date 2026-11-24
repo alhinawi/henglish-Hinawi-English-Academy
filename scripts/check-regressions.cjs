@@ -13,6 +13,7 @@ const checks = [
   'check-speaking-dialogue-mobile-width.cjs',
   'check-pronunciation-model-mobile-width.cjs',
   'check-scenario-option-mobile-width.cjs',
+  'check-movie-catalog-card-mobile-width.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
