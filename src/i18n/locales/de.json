@@ -3593,5 +3593,13 @@
   "pa.responseFocus.chosen": "Mein gewählter Fokus",
   "pa.responseFocus.prompt.answer": "Lies die Bildfrage noch einmal. Meine Antwort soll die gefragten Punkte mit eigenen Ideen abdecken.",
   "pa.responseFocus.prompt.detail": "Ergänze einen passenden Grund oder ein Detail, wenn die Frage es verlangt. Ich kann ein erfundenes Beispiel nutzen und persönliche Daten weglassen.",
-  "pa.responseFocus.prompt.sound": "Wähle ein Wort aus meiner eigenen Antwort, das ich bewusst aussprechen möchte. Der Lautfokus des Bildes kann helfen. Das ist mein Übungsplan, keine automatische Ausspracheprüfung."
+  "pa.responseFocus.prompt.sound": "Wähle ein Wort aus meiner eigenen Antwort, das ich bewusst aussprechen möchte. Der Lautfokus des Bildes kann helfen. Das ist mein Übungsplan, keine automatische Ausspracheprüfung.",
+  "rle.variationFocus.label": "Einen Fokus für meine nächste Antwort wählen",
+  "rle.variationFocus.task": "Die Aufgabe erfüllen",
+  "rle.variationFocus.tone": "Passender Ton",
+  "rle.variationFocus.next": "Ein klarer nächster Schritt",
+  "rle.variationFocus.chosen": "Mein gewählter Fokus",
+  "rle.variationFocus.prompt.task": "Lies diese erfundene Aufgabe noch einmal. Prüfe, ob meine eigene Antwort die gefragten Details abdeckt.",
+  "rle.variationFocus.prompt.tone": "Wähle einen Ton, der zur Person und Situation passt. Ich kann höflich und direkt sein, ohne etwas zuzusagen, das ich nicht möchte.",
+  "rle.variationFocus.prompt.next": "Wenn die Aufgabe eine Handlung oder Klärung verlangt, formuliere meine Bitte oder den nächsten Schritt klar. Versprich keine echte Buchung, Zahlung oder ein Ergebnis."
 }
