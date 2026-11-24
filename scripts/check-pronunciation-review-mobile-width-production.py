@@ -1,0 +1,28 @@
+import functools,http.server,json,os,pathlib,threading
+from playwright.sync_api import sync_playwright,expect
+root=pathlib.Path.cwd()
+class Quiet(http.server.SimpleHTTPRequestHandler):
+ def log_message(self,*args):pass
+server=http.server.ThreadingHTTPServer(('127.0.0.1',4244),functools.partial(Quiet,directory=str(root/'out')));threading.Thread(target=server.serve_forever,daemon=True).start()
+origin=os.environ.get('TEST_ORIGIN','http://127.0.0.1:4244');prefix='live-' if origin.startswith('https:') else ''
+try:
+ with sync_playwright() as p:
+  b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
+  for width,lang in [(int(w),l) for w in os.environ.get('TEST_WIDTHS','320,390').split(',') for l in os.environ.get('TEST_LANGS','en,ar').split(',')]:
+   page=b.new_page(viewport={'width':width,'height':1300},reduced_motion='reduce');page.route('**/api/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.route('**/henglish-api.hnz.workers.dev/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.add_init_script("Object.defineProperty(navigator,'mediaDevices',{value:{getUserMedia:()=>Promise.reject(Error('Test denial'))},configurable:true});");t=json.load(open(root/'src/i18n/locales'/f'{lang}.json'));page.goto(origin+'/pronunciation/?lang='+lang);panel=page.get_by_role('region',name=t['pa.photo.title'],exact=True);expect(panel).to_be_visible();selector=panel.get_by_label(t['pa.photo.choose'],exact=True)
+   for i in range(selector.locator('option').count()):
+    selector.select_option(str(i));plan=panel.get_by_label(t['pa.photoPlan.label'],exact=True);planning=panel.locator('details').filter(has=page.get_by_text(t['pa.photoPlan.title'],exact=True));
+    if not planning.evaluate('(el)=>el.open'):planning.locator('summary').click()
+    plan.fill('My sentence stays separate.');expect(panel.get_by_label(t['pa.photoReview.target'],exact=True)).to_have_count(0);panel.get_by_role('button',name=t['pa.photo.open'],exact=True).click();review=panel.locator('details').filter(has=page.locator('summary').filter(has_text=t['pa.photoReview.title']));summary=review.locator(':scope > summary');checks=review.locator(':scope > div > label input[type=checkbox]');target=panel.get_by_label(t['pa.photoReview.target'],exact=True);assert not review.evaluate('(el)=>el.open');summary.click();expect(checks).to_have_count(3);sound=review.get_by_role('group',name=t['pa.soundReview.title'],exact=True);sounds=sound.get_by_role('checkbox');expect(sounds).to_have_count(2)
+    for box in sounds.all():expect(box).not_to_be_checked()
+    sounds.nth(0).check();expect(sounds.nth(1)).not_to_be_checked()
+    for text in sound.locator('span[lang="en"]').all():expect(text).to_be_visible();expect(text).to_have_attribute('dir','ltr')
+    expect(target).to_have_value('');checks.nth(0).check();checks.nth(2).check();expect(checks.nth(1)).not_to_be_checked();target.fill('Pause before the next thought.');assert target.get_attribute('maxlength')=='300';summary.click();summary.click();expect(target).to_have_value('Pause before the next thought.');expect(checks.nth(0)).to_be_checked();expect(checks.nth(2)).to_be_checked();expect(sounds.nth(0)).to_be_checked();expect(sounds.nth(1)).not_to_be_checked();expect(plan).to_have_value('My sentence stays separate.');panel.get_by_role('button',name=t['pa.photo.show'],exact=True).click();expect(target).to_have_value('Pause before the next thought.');expect(panel.get_by_role('button',name=t['pa.photo.listen'],exact=True)).to_have_count(0);panel.get_by_role('button',name=t['sp.rec.start'],exact=True).click();expect(panel.get_by_role('alert')).to_be_visible();expect(target).to_have_value('Pause before the next thought.');review.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-110,behavior:"instant"})')
+    assert review.bounding_box()['width']>=width-65;assert sounds.first.locator('..').bounding_box()['width']>=width-65;hints=sound.locator('details');hints.first.locator('summary').click();expect(hints.first.locator('p[lang=ar]')).to_be_visible()
+    if i==4:review.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-120,behavior:"instant"})');page.screenshot(path=f'/downloads/henglish-{prefix}pronunciation-photo-review-mobile-width-{width}-{lang}.png')
+    panel.get_by_role('button',name=t['pa.photo.close'],exact=True).click();expect(target).to_have_count(0);expect(panel.get_by_role('alert')).to_have_count(0);expect(plan).to_have_value('My sentence stays separate.');panel.get_by_role('button',name=t['pa.photo.open'],exact=True).click();assert not review.evaluate('(el)=>el.open');summary.click();expect(target).to_have_value('');expect(sounds.nth(0)).not_to_be_checked();expect(sounds.nth(1)).not_to_be_checked()
+    for j in range(3):expect(checks.nth(j)).not_to_be_checked()
+    target.fill('Scene change should clear this.');checks.nth(1).check();assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
+   page.reload();expect(panel.get_by_label(t['pa.photoReview.target'],exact=True)).to_have_count(0);panel.get_by_role('button',name=t['pa.photo.open'],exact=True).click();panel.locator('details').filter(has=page.locator('summary').filter(has_text=t['pa.photoReview.title'])).locator(':scope > summary').click();expect(panel.get_by_label(t['pa.photoReview.target'],exact=True)).to_have_value('');print(width,lang,'all28photos56soundchecks,independentstate,Englishlangdir,private3check/300chartarget,closeddefault,collapsepreserves,planindependent,modelpreserves,close/scene/reloadreset,micdenialcleanup,mobilewidth PASS; noactualaudio/capture');page.close()
+  b.close()
+finally:server.shutdown();server.server_close()
