@@ -1,4 +1,10 @@
 {
+  "sp.followupReview.title": "Meine Anschlussantwort selbst prüfen",
+  "sp.followupReview.note": "Vergleiche deine Antwort mit der Aufgabe, nicht mit einer festen Musterantwort. Markiere nur, was du geprüft hast. Das sind private Erinnerungen, kein Feedback und keine Punkte oder Bewertung. Beim zweiten Versuch bleiben die Markierungen erhalten. Ein Aufgaben- oder Lektionswechsel und das Schließen der Übung löschen sie.",
+  "sp.followupReview.check.0": "Ich habe die konkrete Frage oder die veränderte Situation dieser Aufgabe beantwortet.",
+  "sp.followupReview.check.1": "Ich habe das geforderte Detail, den Grund oder den nächsten Schritt ergänzt.",
+  "sp.followupReview.check.2": "Meine Gedanken sind klar geordnet und für Zuhörende nachvollziehbar.",
+  "sp.followupReview.clear": "Nur diese Anschlussprüfungen löschen",
   "admin.addVideo": "Video zum Lehrplan hinzufügen",
   "admin.cefr.a1": "A1 - Anfänger",
   "admin.cefr.a2": "A2 - Grundlagen",
