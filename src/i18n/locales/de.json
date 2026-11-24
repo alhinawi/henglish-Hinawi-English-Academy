@@ -1,4 +1,9 @@
 {
+  "rle.planRetry.clear": "Nur meinen aktuellen Plan löschen",
+  "rle.planRetry.note": "Probiere einen anderen Umgang mit der Situation. Behalte deinen ersten Plan und schreibe eine zweite Fassung mit eigenen Worten. Keine Fassung wird gesendet, gespeichert oder bewertet. Schließen, Neustarten oder Verlassen des Szenarios löscht beide.",
+  "rle.planRetry.start": "Ersten Plan behalten und erneut versuchen",
+  "rle.planRetry.first": "Mein erster Antwortplan",
+  "rle.planRetry.compare": "Vergleiche beide Pläne mit der Situation oben. Hast du die Änderung erklärt, einen passenden Ton gewählt und eine klare Bitte oder einen nächsten Schritt genannt? Wähle den Plan zum lauten Üben. Löschen entfernt nur den aktuellen Entwurf.",
   "pa.planFocus.label": "Ein Schwerpunkt für meinen zweiten Satz",
   "pa.planFocus.meaning": "Klare Bedeutung",
   "pa.planFocus.detail": "Ein nützliches Detail",
