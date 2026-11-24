@@ -11,6 +11,7 @@ const checks = [
   'check-translation-revision-mobile-width.cjs',
   'check-shared-recorder-mobile-width.cjs',
   'check-speaking-dialogue-mobile-width.cjs',
+  'check-pronunciation-model-mobile-width.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
