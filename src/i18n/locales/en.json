@@ -1,4 +1,12 @@
 {
+  "rle.planFocus.label": "One focus for my second plan",
+  "rle.planFocus.change": "Explain the change",
+  "rle.planFocus.tone": "Suitable tone",
+  "rle.planFocus.next": "Clear next step",
+  "rle.planFocus.prompt.change": "Name what changed in the situation and one detail the other person needs. Keep invented practice details separate from real personal information.",
+  "rle.planFocus.prompt.tone": "Keep your request clear and respectful. Consider who you are speaking to and how urgent the situation is. You do not need to agree to something that does not work for you.",
+  "rle.planFocus.prompt.next": "Make one specific request or propose one practical action. Include a question that checks what happens next, rather than assuming agreement.",
+  "rle.planFocus.chosen": "My chosen focus",
   "rle.planRetry.clear": "Clear only my current plan",
   "rle.planRetry.note": "Try a different way to handle the situation. Keep your first plan, then write a second version in your own words. Neither version is sent, saved or graded. Closing practice, replaying or leaving the scenario discards both.",
   "rle.planRetry.start": "Keep my first plan and try again",
