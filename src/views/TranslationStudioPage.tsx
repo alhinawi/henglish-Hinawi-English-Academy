@@ -210,7 +210,7 @@ export const TranslationStudioPage: React.FC<TranslationStudioPageProps> = ({ us
   };
 
   return (
-    <div className="min-h-screen bg-[#060417] text-white p-4 md:p-8 space-y-6 max-w-7xl mx-auto">
+    <div className={`min-h-screen bg-[#060417] text-white ${activeTab === 'practice' ? 'px-1 py-4 sm:p-4' : 'p-4'} md:p-8 space-y-6 max-w-7xl mx-auto`}>
       {activeTab === 'studio' && translationResult?.historySaved === false && <p role="status" className="rounded-xl border border-amber-400/30 p-4 text-sm leading-7 text-amber-200">{t('vocab.saveError')}</p>}
       {wordAnalysisUnavailable && (
         <p role="status" className="rounded-xl border border-amber-400/30 bg-amber-400/10 p-4 text-sm text-amber-100">
