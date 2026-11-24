@@ -1,3 +1,4 @@
+import { ScenarioTipText } from '../components/ScenarioTipText';
 import { ScenarioTransferPractice } from '../components/ScenarioTransferPractice';
 import { ScenarioConversationReview } from '../components/ScenarioConversationReview';
 import { ScenarioReplyPractice } from '../components/ScenarioReplyPractice';
@@ -355,7 +356,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             {currentTurn.grammarTipAr && (
               <div className="p-4 rounded-xl bg-[#ffd166]/10 border border-[#ffd166]/30 flex items-start gap-3 text-xs text-[#ffd166]">
                 <Sparkles className="w-4 h-4 shrink-0 mt-0.5" />
-                <span><strong className="font-bold">{t('rle.tipLabel')}: </strong>{txText(appText, currentTurn.grammarTipAr)}</span>
+                <span><strong className="font-bold">{t('rle.tipLabel')}: </strong><ScenarioTipText text={txText(appText, currentTurn.grammarTipAr)}/></span>
               </div>
             )}
 
