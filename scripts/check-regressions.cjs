@@ -2,6 +2,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
+  'check-scenario-variation-mobile-width.cjs',
   'check-footer-mobile-brand-wrap.cjs',
   'check-pronunciation-photo-mobile-width.cjs',
   'check-translation-mobile-activity-width.cjs',
