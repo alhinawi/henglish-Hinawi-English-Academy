@@ -3200,6 +3200,8 @@
   "at.support.note": "Deine Präferenz ergänzt die genaue Vorschau unten. Sie ändert weder den aktuellen Entwurf noch die Oberflächensprache und sendet keine Nachricht. Die Antwort des Tutors ist nicht garantiert.",
   "at.support.request.english": "Halte Übungen und Erklärungen auf Englisch. Wenn ich nicht weiterkomme, gib vor der Antwort einen einfacheren englischen Hinweis.",
   "at.support.request.arabic": "Stelle Übungsfragen und Beispiele auf Englisch. Erkläre schwierige Punkte kurz auf Arabisch und kehre dann zur Englischübung zurück.",
+  "rle.transferReview.clearChecks": "Nur diese Prüfmarkierungen löschen",
+  "rle.transferReview.clearTarget": "Nur meine Notiz zum nächsten Versuch löschen",
   "rle.transferReview.title": "Eigene Antwort prüfen (optional)",
   "rle.transferReview.note": "Nutze diese Punkte nach dem Sprechen. Das ist private Selbstreflexion, keine automatische Bewertung. Punktzahl und Abschluss bleiben unverändert.",
   "rle.transferReview.target": "Eine Änderung für den nächsten Versuch (optional, 300 Zeichen)",
