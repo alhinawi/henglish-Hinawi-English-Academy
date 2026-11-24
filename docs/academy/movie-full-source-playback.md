@@ -1,0 +1,7 @@
+# Fix: full source video must not stop at a transcript excerpt
+
+A reviewed 0-4.8s Godfather transcript replaced the old unsafe seed transcript. The player then mistakenly used the reviewed transcript end as the video end, so it stopped after one sentence. Full-source playback now starts at zero without an endSeconds boundary. Source duration comes from YouTube, with known reviewed-source metadata as an initial value. The reviewed text range stays separate.
+
+Normal playback continues through untranscribed gaps and automatically highlights a later reviewed cue at its own source time. Only explicit Repeat loops a reviewed cue; disabling repeat clears that boundary even while paused. Full-source end/replay, cue seeking, speed and private exercises remain. EN/AR/DE notices explain transcript coverage. No later Godfather transcript was invented. Its only reviewed cue is still 0-4.8s. TeacherDashboard untouched.
+
+Verification: 319 offline checks, Arabic lint, full TypeScript/Next export; EN/AR390 controlled YouTube tests prove no endSeconds during normal playback, full 88.321 duration, continued time at 5.2s/40s, no false ended message, gap notice, explicit repeat/release, source end and replay. Actual pixels inspected, English direction corrected, دخول visible. Direct real YouTube embed test reached a sign-in-to-confirm-not-a-bot wall, not actual playback proof. Canonical real-player verification remains required after deployment.
