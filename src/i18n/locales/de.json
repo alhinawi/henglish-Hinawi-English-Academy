@@ -3601,5 +3601,13 @@
   "rle.variationFocus.chosen": "Mein gewählter Fokus",
   "rle.variationFocus.prompt.task": "Lies diese erfundene Aufgabe noch einmal. Prüfe, ob meine eigene Antwort die gefragten Details abdeckt.",
   "rle.variationFocus.prompt.tone": "Wähle einen Ton, der zur Person und Situation passt. Ich kann höflich und direkt sein, ohne etwas zuzusagen, das ich nicht möchte.",
-  "rle.variationFocus.prompt.next": "Wenn die Aufgabe eine Handlung oder Klärung verlangt, formuliere meine Bitte oder den nächsten Schritt klar. Versprich keine echte Buchung, Zahlung oder ein Ergebnis."
+  "rle.variationFocus.prompt.next": "Wenn die Aufgabe eine Handlung oder Klärung verlangt, formuliere meine Bitte oder den nächsten Schritt klar. Versprich keine echte Buchung, Zahlung oder ein Ergebnis.",
+  "at.rehearsalFocus.label": "Einen Fokus für meinen zweiten Versuch wählen",
+  "at.rehearsalFocus.goal": "Mein Übungsziel",
+  "at.rehearsalFocus.clarity": "Klare Bedeutung",
+  "at.rehearsalFocus.example": "Ein hilfreiches Beispiel",
+  "at.rehearsalFocus.chosen": "Mein gewählter Fokus",
+  "at.rehearsalFocus.prompt.goal": "Prüfe, was ich in diesem Lehrmodus üben möchte. Mein nächster Versuch soll zu diesem Ziel passen.",
+  "at.rehearsalFocus.prompt.clarity": "Nutze eigene Worte, damit meine beabsichtigte Bedeutung leicht verständlich ist. Das ist meine private Überprüfung, keine automatische Korrektur.",
+  "at.rehearsalFocus.prompt.example": "Wenn es meinem Ziel hilft, ergänze ein kurzes eigenes Beispiel. Ich kann unverfängliche Details erfinden, statt persönliche Daten zu teilen."
 }
