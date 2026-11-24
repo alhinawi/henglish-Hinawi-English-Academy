@@ -3574,5 +3574,8 @@
   "tpr.topic.prac-c2-7": "Unvollständige Belege und Deutungen",
   "pa.responseNext.label": "Eine Sache für meine nächste Antwort (bis 300 Zeichen)",
   "pa.responseNext.note": "Nach dem Vergleich meiner Antwort mit der Frage und den Punkten oben kann ich ein Detail oder einen Grund für den nächsten Versuch notieren. Das ist meine eigene Reflexion, keine Korrektur oder Aussprachebewertung. Privat, solange dieses Foto geöffnet bleibt. Ein Fotowechsel oder das Verlassen löscht die Notiz.",
-  "pa.responseNext.clear": "Meine Notiz löschen"
+  "pa.responseNext.clear": "Meine Notiz löschen",
+  "rle.variationNext.label": "Eine Sache für meine nächste Antwort (bis 300 Zeichen)",
+  "rle.variationNext.note": "Vergleiche meine Antwort mit dieser Situation und den beiden Punkten. Ich kann ein Detail für den nächsten Versuch notieren. Das ist meine eigene Reflexion, keine Korrektur oder Bewertung. Privat in dieser geöffneten Übung. Schließen, Neustarten oder Verlassen löscht die Notiz.",
+  "rle.variationNext.clear": "Notiz für diese Antwort löschen"
 }
