@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('assert/strict'),s=fs.readFileSync('src/components/SpeakingPracticeStudio.tsx','utf8');a(s.includes('bg-[#12152b] p-2 sm:p-6 space-y-4'));a(s.includes('rounded-2xl p-2 sm:p-4 ${line.role'));a(s.includes("setShowAr(v => !v)"));console.log('Speaking dialogue mobile shell/cards8px, desktop and meaning toggle retained PASS');
