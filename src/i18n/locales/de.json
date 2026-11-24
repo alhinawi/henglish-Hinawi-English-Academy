@@ -3319,6 +3319,7 @@
   "ms.retelling.note": "Schreibe den geprüften Satz mit eigenen englischen Worten. Behalte Bedeutung und Absicht bei, ändere die Formulierung und ergänze keine unbelegten Details. Dein Versuch, keine Musterantwort. Du kannst die Quelle oben ausblenden und später zur Kontrolle wieder einblenden.",
   "ms.retelling.label": "Mein Versuch mit eigenen Worten (bis zu 1.500 Zeichen)",
   "ms.retelling.privacy": "Getrennt von Planung und Aufnahmen. Der private Entwurf bleibt beim Einklappen und Ein-/Ausblenden der Quelle erhalten. Aufgaben- oder Satzwechsel, Schließen der Übung oder Verlassen des Clips löscht ihn. Nichts wird gesendet, gespeichert oder bewertet.",
+  "sp.roleDraft.clear": "Nur meine aktuelle Rollen-Antwort löschen",
   "sp.roleDraft.title": "Vor dem Sprechen eine Antwort schreiben (freiwillig)",
   "sp.roleDraft.note": "Versuche eine eigene englische Antwort für diesen Gesprächsschritt. Nutze bei Bedarf die Bedeutungshilfe und vergleiche danach mit dem Modell. Mehrere Antworten sind möglich. Keine automatische Korrektur oder Bewertung.",
   "sp.roleDraft.label": "Meine Antwort für diesen Schritt (bis zu 500 Zeichen)",
