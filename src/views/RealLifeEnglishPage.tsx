@@ -474,7 +474,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
       {scenarioCompleted&&<ScenarioTransferPractice key={`transfer:${scenario.id}:${practiceAttempt}`} scenario={scenario}/>}
 
       {/* SURVIVAL VOCABULARY: belongs to the open conversation only */}
-      <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-6">
+      <section className="glass-panel rounded-3xl p-2 sm:p-10 border border-white/10 space-y-6">
         <div className="flex items-center justify-between pb-3 border-b border-white/10">
           <div>
             <span className="text-xs font-bold text-[#ffd166]">{t('rle.glossaryBadge')}</span>
