@@ -1464,7 +1464,7 @@
   "ms.unavailableTitle": "Clip in Prüfung",
   "ms.unavailableBody": "Wir wählen eine kurze Szene mit vollständigem Transkript und geprüftem Timing. Das Training pausiert, statt ein langes Video mit lückenhaftem Text zu zeigen.",
   "ms.backToResults": "Zurück zu den Suchergebnissen",
-  "ms.sceneBadge": "Kurze Lernszene",
+  "ms.sceneBadge": "Ganzes Video und geprüfte Sprachausschnitte",
   "ms.backToSearch": "Zurück zur Suche",
   "ms.pause": "Pause",
   "ms.play": "Szene abspielen",
@@ -1478,7 +1478,7 @@
   "ms.holdHintSub": "Das Tempo kehrt zurück, sobald du loslässt.",
   "ms.tempSlow": "Vorübergehende Verlangsamung beim Halten:",
   "ms.playError": "Die Quelle kann hier nicht abgespielt werden. Öffne sie über den Quelllink unten.",
-  "ms.ended": "Die kurze Szene ist zu Ende. Tippe auf Wiederholen, um sie noch einmal zu sehen.",
+  "ms.ended": "Das ganze Video ist zu Ende. Starte es erneut, um es noch einmal anzusehen.",
   "ms.scriptTitle": "Transkript der kurzen Szene",
   "ms.syncedNote": "Mit dem Video synchronisiert",
   "ms.cuesAria": "Synchronisierte Szenenzeilen",
@@ -1486,7 +1486,7 @@
   "ms.hideFusha": "Fusha ausblenden",
   "ms.showFusha": "Fusha anzeigen",
   "ms.sceneIdea": "Idee der Szene:",
-  "ms.scriptNote": "Das Transkript gilt nur für die gezeigte kurze Szene, nicht für das ganze Originalvideo. Tippe auf eine Zeile, um sie zu wiederholen. Die aktuelle Zeile erscheint automatisch im Verlauf der Szene.",
+  "ms.scriptNote": "Geprüfter Text ist nur für die angezeigten Zeitbereiche vorhanden, nicht für jeden Satz im ganzen Video. Die Wiedergabe läuft zwischen und nach den Ausschnitten weiter. Die nächste geprüfte Zeile wird zu ihrer Quellzeit automatisch markiert. Tippe auf eine Zeile, um dort zu starten. Wiederholen wiederholt nur eine Zeile, wenn aktiviert.",
   "ms.timingFrom": "Von Quellzeit",
   "ms.timingTo": "bis",
   "ms.timingCaption": "Die Grenzen stammen aus den Untertiteln der Quelle, nicht aus einer wortweisen Audioprüfung.",
@@ -3557,5 +3557,7 @@
   "pa.photo.classroom": "Nach dem Unterricht",
   "pa.photo.research": "Eine Frage zur Wissenschaft",
   "pa.photo.calendar": "Ein Lernkalender",
-  "pa.photo.briefing": "Eine Teambesprechung"
+  "pa.photo.briefing": "Eine Teambesprechung",
+  "ms.fullPlayback.note": "Das ganze Video läuft automatisch weiter. Geprüfte Zeilen folgen der Quellzeit, nicht jeder Satz hat geprüften Text. Wiederholen wiederholt nur eine gewählte Zeile, wenn aktiviert.",
+  "ms.fullPlayback.gap": "Das Video läuft weiter. Dieser Teil hat keinen geprüften Text. Die nächste geprüfte Zeile erscheint automatisch, falls vorhanden."
 }
