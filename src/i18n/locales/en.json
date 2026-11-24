@@ -3577,5 +3577,13 @@
   "pa.responseNext.clear": "Clear my next-step note",
   "rle.variationNext.label": "One thing to try in my next reply (up to 300 characters)",
   "rle.variationNext.note": "Compare my reply with this situation and its two checks. I can note one detail to clarify or add next time. This is my own reflection, not feedback or a score. Private in this open practice; closing practice, replaying or leaving clears it.",
-  "rle.variationNext.clear": "Clear this next-reply note"
+  "rle.variationNext.clear": "Clear this next-reply note",
+  "sp.followupFocus.label": "Choose one focus for my second reply",
+  "sp.followupFocus.task": "Answer the task",
+  "sp.followupFocus.reason": "Relevant reason or detail",
+  "sp.followupFocus.clarity": "Clear order",
+  "sp.followupFocus.chosen": "My chosen focus",
+  "sp.followupFocus.prompt.task": "Check the follow-up task above. Make sure my next reply covers what it asks, without adding a complete model answer to copy.",
+  "sp.followupFocus.prompt.reason": "Keep my reply relevant. Add one reason or detail if the task calls for it; I can invent a safe example.",
+  "sp.followupFocus.prompt.clarity": "Put my ideas in an order a listener can follow. Keep the same intended meaning and use my own words."
 }

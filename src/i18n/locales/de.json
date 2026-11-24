@@ -3577,5 +3577,13 @@
   "pa.responseNext.clear": "Meine Notiz löschen",
   "rle.variationNext.label": "Eine Sache für meine nächste Antwort (bis 300 Zeichen)",
   "rle.variationNext.note": "Vergleiche meine Antwort mit dieser Situation und den beiden Punkten. Ich kann ein Detail für den nächsten Versuch notieren. Das ist meine eigene Reflexion, keine Korrektur oder Bewertung. Privat in dieser geöffneten Übung. Schließen, Neustarten oder Verlassen löscht die Notiz.",
-  "rle.variationNext.clear": "Notiz für diese Antwort löschen"
+  "rle.variationNext.clear": "Notiz für diese Antwort löschen",
+  "sp.followupFocus.label": "Einen Fokus für meine zweite Antwort wählen",
+  "sp.followupFocus.task": "Die Aufgabe beantworten",
+  "sp.followupFocus.reason": "Passender Grund oder ein Detail",
+  "sp.followupFocus.clarity": "Klare Reihenfolge",
+  "sp.followupFocus.chosen": "Mein gewählter Fokus",
+  "sp.followupFocus.prompt.task": "Prüfe die Folgeaufgabe oben. Meine nächste Antwort soll die gefragten Punkte abdecken, ohne eine vollständige Musterantwort zu kopieren.",
+  "sp.followupFocus.prompt.reason": "Bleibe beim Thema. Ergänze einen Grund oder ein Detail, wenn die Aufgabe es verlangt. Ich kann ein unverfängliches Beispiel erfinden.",
+  "sp.followupFocus.prompt.clarity": "Ordne meine Gedanken so, dass Zuhörende folgen können. Behalte die beabsichtigte Bedeutung bei und benutze eigene Worte."
 }
