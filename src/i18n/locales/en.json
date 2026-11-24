@@ -3694,5 +3694,8 @@
   "pa.planReview.check.0": "My sentence expresses my own idea about the scene.",
   "pa.planReview.check.1": "I included a specific detail that helps the listener understand.",
   "pa.planReview.check.2": "I chose a word with the target sound to practise aloud.",
-  "pa.planReview.clear": "Clear sentence checks only"
+  "pa.planReview.clear": "Clear sentence checks only",
+  "pa.planNext.label": "One thing to try in my next photo sentence (optional)",
+  "pa.planNext.note": "Write a short reminder in any language: a clearer idea, a detail, or a word to practise aloud. It stays only in this open photo activity and is not submitted or graded. Changing photos or leaving the page clears it.",
+  "pa.planNext.clear": "Clear next-sentence note only"
 }
