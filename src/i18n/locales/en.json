@@ -1,4 +1,12 @@
 {
+  "pa.planFocus.label": "One focus for my second sentence",
+  "pa.planFocus.meaning": "Clear meaning",
+  "pa.planFocus.detail": "One useful detail",
+  "pa.planFocus.sound": "A sound to practise",
+  "pa.planFocus.prompt.meaning": "Keep the same idea. Choose words that make what is happening in the photo clear to a listener.",
+  "pa.planFocus.prompt.detail": "Keep the same idea and add one detail you can see in the photo. Do not invent facts about the people.",
+  "pa.planFocus.prompt.sound": "Choose one word from the wordbank. Use it naturally in your second sentence, then practise its sound aloud. This does not check your pronunciation.",
+  "pa.planFocus.chosen": "My chosen focus",
   "pa.planRetry.note": "Try saying the same idea another way. Keep your first sentence here and write a second version using your own words. The example is optional, not the only correct answer. Both versions are private, not checked, scored or sent. Changing photo or leaving discards them.",
   "pa.planRetry.start": "Keep my first sentence and try again",
   "pa.planRetry.first": "My first photo sentence",

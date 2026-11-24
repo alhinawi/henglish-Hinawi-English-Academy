@@ -1,4 +1,12 @@
 {
+  "pa.planFocus.label": "Ein Schwerpunkt für meinen zweiten Satz",
+  "pa.planFocus.meaning": "Klare Bedeutung",
+  "pa.planFocus.detail": "Ein nützliches Detail",
+  "pa.planFocus.sound": "Einen Laut üben",
+  "pa.planFocus.prompt.meaning": "Behalte dieselbe Idee. Wähle Wörter, die Zuhörenden deutlich machen, was auf dem Foto passiert.",
+  "pa.planFocus.prompt.detail": "Behalte dieselbe Idee und ergänze ein sichtbares Detail. Erfinde keine Tatsachen über die Personen.",
+  "pa.planFocus.prompt.sound": "Wähle ein Wort aus der Wortliste. Verwende es natürlich in deinem zweiten Satz und übe seinen Laut laut. Dabei wird deine Aussprache nicht bewertet.",
+  "pa.planFocus.chosen": "Mein gewählter Schwerpunkt",
   "pa.planRetry.note": "Drücke dieselbe Idee anders aus. Behalte deinen ersten Satz hier und schreibe eine zweite Fassung mit eigenen Worten. Das Beispiel ist freiwillig und nicht die einzige richtige Antwort. Beide Fassungen sind privat und werden weder geprüft noch bewertet oder gesendet. Ein Fotowechsel oder das Verlassen löscht sie.",
   "pa.planRetry.start": "Ersten Satz behalten und erneut versuchen",
   "pa.planRetry.first": "Mein erster Satz zum Foto",
