@@ -3169,6 +3169,8 @@
   "ms.recall.compareDrafts": "Compare your first draft, current draft and the source caption. What did you notice about the words and their order?",
   "pa.photo.listen": "Listen to the example sentence",
   "pa.photo.listenNote": "Compare the sounds and word stress with your own sentence. Listening is optional and does not grade pronunciation. Close the recorder to listen.",
+  "sp.transferReview.clearChecks": "Clear only these review marks",
+  "sp.transferReview.clearTarget": "Clear only my next-attempt note",
   "sp.transferReview.title": "Review your speaking, choose one thing to retry",
   "sp.transferReview.note": "After speaking, listen to your recording if you made one, or think back to what you said. These are your own notes, not an assessment. They are not sent or saved. Changing the task or closing practice discards them.",
   "sp.transferReview.check.0": "I answered the changed situation, rather than repeating the original dialogue.",
