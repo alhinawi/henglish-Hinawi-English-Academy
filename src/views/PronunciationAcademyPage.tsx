@@ -261,7 +261,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
       <MinimalPairRehearsal key={pair.id} pair={pair} onToggle={resetAudio}/>
 
       {/* 2. IPA VOWELS CHART */}
-      <section className="glass-panel rounded-3xl p-6 sm:p-8 border border-white/10 space-y-6">
+      <section className="glass-panel rounded-3xl p-2 sm:p-8 border border-white/10 space-y-6">
         <div>
           <h2 className="text-xl font-black text-white flex items-center gap-2">
             <Layers className="w-5 h-5 text-[#41e7ff]" />
@@ -299,7 +299,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           ))}
         </div>
         <section ref={vowelPanel} className="scroll-mt-24" aria-label={t('pa.workshopTitle')}>
-          {activeVowel ? <div className="space-y-5 rounded-3xl border border-cyan-200/25 bg-[#11182a] p-5 sm:p-7">
+          {activeVowel ? <div className="space-y-5 rounded-3xl border-0 border-cyan-200/25 bg-transparent p-0 sm:border sm:bg-[#11182a] sm:p-7">
             <h3 className="text-xl font-black text-cyan-100">{t('pa.workshopTitle')} <span dir="ltr" className="inline-block">{activeVowel.symbol}</span></h3>
             <p className="text-sm leading-7 text-slate-300">{lang === 'ar' ? activeVowel.tipAr : activeVowel.tipEn}</p>
             <p dir="ltr" lang="en" className="text-left text-lg leading-8 text-white">{activeVowel.sentence}</p>
