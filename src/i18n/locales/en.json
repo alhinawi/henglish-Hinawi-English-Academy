@@ -3688,5 +3688,11 @@
   "at.rehearsalChecksArabic.title": "Egyptian Arabic meaning of this rehearsal check",
   "at.rehearsalChecksArabic.note": "Help understanding the check only, not an automatic correction or a pronunciation assessment.",
   "rle.variationChecksArabic.title": "Egyptian Arabic meaning of this task check",
-  "rle.variationChecksArabic.note": "Help understanding this fictional language-practice check only, not advice, a model reply or a grade."
+  "rle.variationChecksArabic.note": "Help understanding this fictional language-practice check only, not advice, a model reply or a grade.",
+  "pa.planReview.title": "Check my photo sentence before speaking (optional)",
+  "pa.planReview.note": "These are your own checks, not a grade. Review your current sentence, then say it aloud. Ticking or clearing boxes does not edit either draft. Changing photos clears these checks.",
+  "pa.planReview.check.0": "My sentence expresses my own idea about the scene.",
+  "pa.planReview.check.1": "I included a specific detail that helps the listener understand.",
+  "pa.planReview.check.2": "I chose a word with the target sound to practise aloud.",
+  "pa.planReview.clear": "Clear sentence checks only"
 }
