@@ -6,7 +6,7 @@ const checks = [
   'check-tutor-rehearsal-mobile-width.cjs',
   'check-pronunciation-plan-mobile-width.cjs',
   'check-pronunciation-sound-meaning-spacing.cjs',
-  'check-speaking-role-mobile-width.cjs',
+  'check-scenario-conversation-mobile-width.cjs', 'check-speaking-role-mobile-width.cjs',
   'check-speaking-followup-mobile-width.cjs',
   'check-scenario-variation-mobile-width.cjs',
   'check-footer-mobile-brand-wrap.cjs',
