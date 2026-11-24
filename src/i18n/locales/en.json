@@ -1,4 +1,8 @@
 {
+  "pa.planRetry.note": "Try saying the same idea another way. Keep your first sentence here and write a second version using your own words. The example is optional, not the only correct answer. Both versions are private, not checked, scored or sent. Changing photo or leaving discards them.",
+  "pa.planRetry.start": "Keep my first sentence and try again",
+  "pa.planRetry.first": "My first photo sentence",
+  "pa.planRetry.compare": "Compare both sentences with the photo. Which one makes your meaning clearer? Check your word choice and sentence order, then say the version you prefer aloud. Clear removes only the current draft.",
   "sp.followupReview.title": "My follow-up reply self-check",
   "sp.followupReview.note": "Compare your own reply with the task, not with a fixed model answer. Tick only what you checked. These are private reminders, not feedback, points or a score. Retry keeps these marks so you can review them again; changing task or lesson, or closing practice, clears them.",
   "sp.followupReview.check.0": "I answered the specific question or changed situation in this task.",
