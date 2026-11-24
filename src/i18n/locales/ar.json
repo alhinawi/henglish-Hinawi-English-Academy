@@ -3611,5 +3611,7 @@
   "at.rehearsalFocus.prompt.clarity": "أستخدم كلامي أنا عشان المعنى اللي أقصده يبقى سهل يتفهم. دي مراجعتي الخاصة، مش تصحيح تلقائي.",
   "at.rehearsalFocus.prompt.example": "لو هيساعد هدفي، أضيف مثال قصير من عندي. ممكن أخترع تفاصيل آمنة بدل ما أشارك معلومات شخصية.",
   "tpr.meaningChecksArabic.title": "معنى سؤال المراجعة بالمصري",
-  "tpr.meaningChecksArabic.note": "مساعدة لفهم السؤال بس، مش ترجمة نموذجية ولا تقييم."
+  "tpr.meaningChecksArabic.note": "مساعدة لفهم السؤال بس، مش ترجمة نموذجية ولا تقييم.",
+  "pa.responseChecksArabic.title": "معنى نقطة المراجعة بالمصري",
+  "pa.responseChecksArabic.note": "مساعدة لفهم مراجعة المحتوى بس، مش إجابة نموذجية ولا تقييم نطق."
 }
