@@ -777,7 +777,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
       <section className="glass-panel rounded-3xl border border-white/15 overflow-hidden flex flex-col h-[600px] shadow-2xl relative bg-[#0a091d]/90">
         
         {/* Messages Stream */}
-        <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-5 custom-scrollbar">
+        <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-2 sm:p-6 space-y-5 custom-scrollbar">
           {messages.map((msg, idx) => {
             const isUser = msg.sender === 'user';
 
@@ -787,7 +787,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2 }}
-                className={`flex items-start gap-3 ${isUser ? 'flex-row' : 'flex-row-reverse'}`}
+                className={`flex items-start gap-2 sm:gap-3 ${isUser ? 'flex-col sm:flex-row' : 'flex-col sm:flex-row-reverse'}`}
               >
                 {/* Avatar */}
                 {isUser ? (
@@ -809,7 +809,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
 
                 {/* Message Bubble */}
                 <div
-                  className={`max-w-[92%] sm:max-w-[80%] p-4 sm:p-5 rounded-2xl space-y-3 ${
+                  className={`w-full min-w-0 sm:w-auto sm:max-w-[80%] p-2 sm:p-5 rounded-2xl space-y-3 ${
                     isUser
                       ? 'bg-linear-to-r from-[#41e7ff]/20 to-[#ffd166]/10 border border-[#41e7ff]/30 text-white rounded-tr-none'
                       : 'bg-[#151430] border border-white/15 text-white rounded-tl-none shadow-xl'
