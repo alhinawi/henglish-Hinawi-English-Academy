@@ -1,4 +1,9 @@
 {
+  "rle.planRetry.clear": "Clear only my current plan",
+  "rle.planRetry.note": "Try a different way to handle the situation. Keep your first plan, then write a second version in your own words. Neither version is sent, saved or graded. Closing practice, replaying or leaving the scenario discards both.",
+  "rle.planRetry.start": "Keep my first plan and try again",
+  "rle.planRetry.first": "My first response plan",
+  "rle.planRetry.compare": "Compare both plans with the situation above. Did you explain the change, use a suitable tone and make a clear request or next step? Choose the plan you want to practise aloud. Clear removes only the current draft.",
   "pa.planFocus.label": "One focus for my second sentence",
   "pa.planFocus.meaning": "Clear meaning",
   "pa.planFocus.detail": "One useful detail",
