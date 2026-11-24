@@ -378,7 +378,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                         disabled={selectedOption !== null}
                         dir="ltr"
                         lang="en"
-                        className={`w-full p-4 rounded-xl border text-left font-sans text-sm sm:text-base font-semibold transition-colors cursor-pointer flex items-center justify-between ${
+                        className={`w-full min-h-11 px-2 py-4 sm:p-4 rounded-xl border text-left font-sans text-sm sm:text-base font-semibold transition-colors cursor-pointer flex items-center justify-between gap-2 ${
                           isChosen
                             ? opt.isOptimal
                               ? 'bg-emerald-500/20 border-emerald-500 text-emerald-200'
@@ -386,7 +386,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                             : 'bg-white/5 hover:bg-white/10 border-white/10 text-white'
                         }`}
                       >
-                        <div className="space-y-1 text-left min-w-0 break-words" dir="ltr">
+                        <div className="flex-1 space-y-1 text-left min-w-0 break-words" dir="ltr">
                           <div dir="ltr" lang="en">{opt.textEn}</div>
                           <div className="text-xs text-[#b9b6d5] text-start font-sans font-normal" dir={dir}>{txText(appText, opt.textAr)}</div>
                         </div>
