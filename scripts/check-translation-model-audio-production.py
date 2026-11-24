@@ -10,7 +10,7 @@ try:
   b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
   for lang in ['en','ar']:
    page=b.new_page(viewport={'width':390,'height':1050},reduced_motion='reduce');page.route('**/api/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.route('**/henglish-api.hnz.workers.dev/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));t=json.load(open(root/'src/i18n/locales'/f'{lang}.json'));page.goto(origin+'/?lang='+lang+'#translation');page.get_by_role('button',name=t['ts.practice'],exact=True).click();draft=page.get_by_label(t['tpr.draft'],exact=True);prefixText=t['tpr.modelAudio.listen'].split('{number}')[0];buttons=page.get_by_role('button').filter(has_text=prefixText)
-   for i in range(32):
+   for i in range(44):
     expect(buttons).to_have_count(0);draft.fill('My independent draft');page.get_by_role('button',name=t['tpr.show'],exact=True).click();assert buttons.count()>0;expect(page.get_by_text(t['tpr.modelAudio.note'],exact=True)).to_be_visible();models=page.get_by_role('heading',name=t['tpr.answers'],exact=True).locator('..').locator('div > p[lang]');assert models.count()==buttons.count()
     for j in range(buttons.count()):
      button=page.get_by_role('button',name=t['tpr.modelAudio.listen'].replace('{number}',str(j+1)),exact=True);expect(button).to_be_visible();assert models.nth(j).get_attribute('lang') in ['en','ar']
@@ -19,6 +19,6 @@ try:
     if i==0:
      page.get_by_role('heading',name=t['tpr.answers'],exact=True).evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-110,behavior:"instant"})');page.screenshot(path=f'/downloads/henglish-{prefix}translation-model-audio-{lang}.png')
     page.get_by_role('button',name=t['tpr.next'],exact=True).click()
-   print(lang,'32tasks,targetENAR,explicitnumberedmodelaudio,revealgate,draft/revisionpreserved,hide/navigationcleanup,390px PASS; audioAPIsunavailable,noactualplayback');page.close()
+   print(lang,'44tasks,targetENAR,explicitnumberedmodelaudio,revealgate,draft/revisionpreserved,hide/navigationcleanup,390px PASS; audioAPIsunavailable,noactualplayback');page.close()
   b.close()
 finally:server.shutdown();server.server_close()
