@@ -3694,5 +3694,8 @@
   "pa.planReview.check.0": "Mein Satz drückt meine eigene Idee zur Szene aus.",
   "pa.planReview.check.1": "Ich habe ein konkretes Detail ergänzt, das beim Verstehen hilft.",
   "pa.planReview.check.2": "Ich habe ein Wort mit dem Ziellaut zum lauten Üben gewählt.",
-  "pa.planReview.clear": "Nur Satzprüfungen löschen"
+  "pa.planReview.clear": "Nur Satzprüfungen löschen",
+  "pa.planNext.label": "Eine Sache für meinen nächsten Fotosatz (optional)",
+  "pa.planNext.note": "Notiere in einer beliebigen Sprache eine klarere Idee, ein Detail oder ein Wort zum lauten Üben. Die Notiz bleibt nur in dieser geöffneten Fotoübung und wird weder gesendet noch bewertet. Beim Fotowechsel oder Verlassen der Seite wird sie gelöscht.",
+  "pa.planNext.clear": "Nur Notiz zum nächsten Satz löschen"
 }
