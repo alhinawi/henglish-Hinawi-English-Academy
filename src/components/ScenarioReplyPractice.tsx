@@ -9,7 +9,7 @@ export function ScenarioReplyPractice({ children }: { children: React.ReactNode 
   const [revealed, setRevealed] = useState(false);
   const [reviewed, setReviewed] = useState(false);
   return <section aria-label={t('rle.draft.title')} className="space-y-4">
-    <div className="rounded-2xl border border-cyan-200/25 bg-cyan-200/5 p-4 space-y-3">
+    <div className="rounded-2xl border border-cyan-200/25 bg-cyan-200/5 p-2 sm:p-4 space-y-3">
       <h3 className="font-bold text-cyan-100">{t('rle.draft.title')}</h3>
       <p className="text-xs leading-7 text-slate-300">{t('rle.draft.intro')}</p>
       <button type="button" aria-expanded={open} onClick={() => { setOpen(value => !value); setDraft(''); setRevealed(false); setReviewed(false); }} className="min-h-11 rounded-xl border border-cyan-200/40 px-4 text-sm font-bold text-cyan-100">{t(open ? 'rle.draft.close' : 'rle.draft.open')}</button>
