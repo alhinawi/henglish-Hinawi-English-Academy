@@ -31,5 +31,17 @@ export const TRANSLATION_MEANING_CHECKS: Record<string,readonly [string,string]>
  'prac-c1-4':['Did I keep actual results as the basis for judging policy success?','Did I preserve the contrast with judging the policy by its authors\' intentions?'],
  'prac-c1-5':['Did I keep the findings consistent with the hypothesis?','Did I retain that other explanations are still possible?'],
  'prac-c2-4':['Did I keep the judgment that reducing the disagreement is unfair?','Did I preserve the possibilities between the two simplified extremes?'],
- 'prac-c2-5':['Did I preserve the rapid sequence after the compromise was announced?','Did I keep simplicity as only apparent, with scrutiny exposing its weakness?']
+ 'prac-c2-5':['Did I preserve the rapid sequence after the compromise was announced?','Did I keep simplicity as only apparent, with scrutiny exposing its weakness?'],
+ "prac-a1-7":["Did I keep the first-person need for water?", "Did I retain the polite request without adding a price?"],
+ "prac-a1-8":["Did I keep this as our English lesson, not another subject?", "Did I keep nine as the start time rather than the end time?"],
+ "prac-a2-6":["Did I keep the ticket purchase in the past: yesterday?", "Did I preserve the contrast that no seat was reserved?"],
+ "prac-a2-7":["Did I keep permission to borrow this particular book?", "Did I keep the return deadline before Monday, not on Monday?"],
+ "prac-b1-7":["Did I keep joining this team as the starting point?", "Did I preserve improvement in explaining ideas more clearly?"],
+ "prac-b1-8":["Did I keep the train leaving before our arrival?", "Did I retain arrival at the station without inventing a new train?"],
+ "prac-b2-6":["Did I keep the extension as unhelpful without the data?", "Did I retain obtaining the missing data as the necessary condition?"],
+ "prac-b2-7":["Did I keep publication planned for next week rather than guaranteed?", "Did I preserve final approval as a condition of publication?"],
+ "prac-c1-6":["Did I retain the possibility that overall improvement hides regional differences?", "Did I keep breaking down the results before reaching a conclusion?"],
+ "prac-c1-7":["Did I keep access to raw data as an unreal past condition?", "Did I preserve might: firmer conclusions were possible, not certain?"],
+ "prac-c2-6":["Did I keep the emphasis on distribution rather than denying reform has value?", "Did I retain both groups: those bearing costs and those gaining benefits?"],
+ "prac-c2-7":["Did I keep the concession that the evidence is incomplete?", "Did I retain the rejection of equal justification for every interpretation?"],
 };

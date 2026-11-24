@@ -1,0 +1,721 @@
+[
+  {
+    "id": "prac-a1-1",
+    "direction": "ar-to-en",
+    "difficulty": "A1",
+    "category": "Daily Basics",
+    "sourceSentence": "أنا أتعلم اللغة الإنجليزية كل يوم.",
+    "contextHintAr": "جملة مضارع بسيط تعبر عن عادة يومية مستمرة.",
+    "modelTranslations": [
+      "I learn English every day.",
+      "I study English every day.",
+      "I am learning English every day."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "learn / study",
+        "translation": "يتعلم / يدرس"
+      },
+      {
+        "word": "every day",
+        "translation": "كل يوم"
+      }
+    ],
+    "grammarFocusAr": "زمن المضارع البسيط (Present Simple) مع الفاعل I."
+  },
+  {
+    "id": "prac-a1-2",
+    "direction": "en-to-ar",
+    "difficulty": "A1",
+    "category": "Daily Basics",
+    "sourceSentence": "Where is the nearest train station?",
+    "contextHintAr": "سؤال استفسار مهذب عن مكان محطة القطار الأقرب.",
+    "modelTranslations": [
+      "أين أقرب محطة قطار؟",
+      "أين تقع أقرب محطة قطارات؟",
+      "فين أقرب محطة قطر؟"
+    ],
+    "keyVocabulary": [
+      {
+        "word": "nearest",
+        "translation": "الأقرب"
+      },
+      {
+        "word": "train station",
+        "translation": "محطة القطار"
+      }
+    ],
+    "grammarFocusAr": "صيغة التفضيل العليا (Superlative: nearest)."
+  },
+  {
+    "id": "prac-a2-1",
+    "direction": "ar-to-en",
+    "difficulty": "A2",
+    "category": "Past Experiences",
+    "sourceSentence": "سافرت إلى القاهرة الأسبوع الماضي وقابلت أصدقائي القدامى.",
+    "contextHintAr": "حدثان اكتمل حدوثهما في الماضي خلال الأسبوع الماضي.",
+    "modelTranslations": [
+      "I traveled to Cairo last week and met my old friends.",
+      "I went to Cairo last week and met my old friends.",
+      "I travelled to Cairo last week and met up with my old friends."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "traveled",
+        "translation": "سافرت"
+      },
+      {
+        "word": "met",
+        "translation": "قابلت (ماضي meet)"
+      },
+      {
+        "word": "old friends",
+        "translation": "أصدقائي القدامى"
+      }
+    ],
+    "grammarFocusAr": "الماضي البسيط للأفعال المنتظمة والشاذة (traveled, met)."
+  },
+  {
+    "id": "prac-b1-1",
+    "direction": "ar-to-en",
+    "difficulty": "B1",
+    "category": "Business & Plans",
+    "sourceSentence": "أتطلع إلى مقابلتك في مؤتمر التكنولوجيا القادم.",
+    "contextHintAr": "تعبير رسمي مهذب مع phrasal verb متبوع بـ Gerund.",
+    "modelTranslations": [
+      "I am looking forward to meeting you at the upcoming tech conference.",
+      "I look forward to meeting you at the next tech conference.",
+      "I look forward to seeing you at the upcoming technology conference."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "look forward to",
+        "translation": "يتطلع إلى"
+      },
+      {
+        "word": "upcoming",
+        "translation": "القادم / المرتقب"
+      },
+      {
+        "word": "conference",
+        "translation": "مؤتمر"
+      }
+    ],
+    "grammarFocusAr": "الصيغة الصحيحة: look forward to + V-ing (meeting)."
+  },
+  {
+    "id": "prac-b1-2",
+    "direction": "en-to-ar",
+    "difficulty": "B1",
+    "category": "Future & Deadlines",
+    "sourceSentence": "By next October, our team will have built the complete platform.",
+    "contextHintAr": "زمن المستقبل التام المعبر عن إنجاز مكتمل قبل موعد محدد.",
+    "modelTranslations": [
+      "بحلول أكتوبر القادم، سيكون فريقنا قد بنى المنصة بالكامل.",
+      "قبل حلول شهر أكتوبر القادم، سيكون فريقنا قد أتم بناء المنصة المتكاملة.",
+      "على أكتوبر الجاي، هيكون فريقنا خلص بناء المنصة كلها."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "By next October",
+        "translation": "بحلول أكتوبر القادم"
+      },
+      {
+        "word": "will have built",
+        "translation": "سيكون قد بنى"
+      },
+      {
+        "word": "complete platform",
+        "translation": "المنصة الكاملة"
+      }
+    ],
+    "grammarFocusAr": "المستقبل التام (Future Perfect: will have + V3)."
+  },
+  {
+    "id": "prac-b2-1",
+    "direction": "ar-to-en",
+    "difficulty": "B2",
+    "category": "Conditional & Speculation",
+    "sourceSentence": "لو كنت استيقظت مبكراً، لما فاتني موعد المقابلة الشخصية.",
+    "contextHintAr": "الحالة الشرطية الثالثة (Third Conditional) للتعبير عن الندم في الماضي.",
+    "modelTranslations": [
+      "If I had woken up early, I would not have missed the job interview.",
+      "Had I woken up early, I would not have missed the interview.",
+      "If I had got up early, I wouldn’t have missed my interview appointment."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "woken up",
+        "translation": "استيقظت (V3)"
+      },
+      {
+        "word": "missed",
+        "translation": "فوتت / فاتني"
+      },
+      {
+        "word": "job interview",
+        "translation": "المقابلة الشخصية"
+      }
+    ],
+    "grammarFocusAr": "الحالة الشرطية الثالثة: If + had + V3, would have + V3."
+  },
+  {
+    "id": "prac-c1-1",
+    "direction": "ar-to-en",
+    "difficulty": "C1",
+    "category": "Academic & Diplomacy",
+    "sourceSentence": "على الرغم من التحديات الاقتصادية الراهنة، ينبغي علينا اتخاذ تدابير استباقية لضمان استدامة المشاريع.",
+    "contextHintAr": "لغة أكاديمية واقتصادية رفيعة المستوى (High Register).",
+    "modelTranslations": [
+      "Notwithstanding current economic challenges, we must adopt proactive measures to ensure project sustainability.",
+      "Despite the prevailing economic hurdles, we ought to implement proactive measures to safeguard project sustainability.",
+      "In spite of the existing economic constraints, taking proactive steps is imperative to secure project longevity."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "notwithstanding / despite",
+        "translation": "على الرغم من"
+      },
+      {
+        "word": "proactive measures",
+        "translation": "تدابير استباقية"
+      },
+      {
+        "word": "project sustainability",
+        "translation": "استدامة المشاريع"
+      }
+    ],
+    "grammarFocusAr": "استخدام الروابط الأكاديمية (Notwithstanding) والصفات المركبة."
+  },
+  {
+    "id": "prac-c2-1",
+    "direction": "en-to-ar",
+    "difficulty": "C2",
+    "category": "Literary & Rhetoric",
+    "sourceSentence": "His eloquent rhetoric not only captivated the audience but also dispelled their lingering skepticism.",
+    "contextHintAr": "أسلوب بلاغي يوازن بين جذب الجمهور وتبديد الشكوك باستخدام not only ... but also.",
+    "modelTranslations": [
+      "لم تقتصر بلاغته الفصيحة على أسر عقول الحاضرين فحسب، بل بددت أيضاً شكوكهم العالقة.",
+      "إن فصاحة بيانه الآسرة لم تكتفِ بجذب انتباه الجمهور، بل أزاحت ما علق بأذهانهم من ريب."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "eloquent rhetoric",
+        "translation": "البلاغة الفصيحة / فصاحة البيان"
+      },
+      {
+        "word": "captivated",
+        "translation": "أسر / سحر"
+      },
+      {
+        "word": "dispelled lingering skepticism",
+        "translation": "بدد الشكوك العالقة"
+      }
+    ],
+    "grammarFocusAr": "التركيب البلاغي المتلازم: not only ... but also مع الموازنة التعبيرية."
+  },
+  {
+    "id": "prac-a1-3",
+    "direction": "ar-to-en",
+    "difficulty": "A1",
+    "category": "Daily Basics",
+    "sourceSentence": "أختي تعمل في مدرسة قريبة من البيت.",
+    "contextHintAr": "معلومة عامة عن عمل الأخت ومكانه.",
+    "modelTranslations": [
+      "My sister works at a school near our home.",
+      "My sister works in a school close to home."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "near",
+        "translation": "قريب من"
+      }
+    ],
+    "grammarFocusAr": "المضارع البسيط مع she: works."
+  },
+  {
+    "id": "prac-a1-4",
+    "direction": "en-to-ar",
+    "difficulty": "A1",
+    "category": "Daily Basics",
+    "sourceSentence": "Please put the blue bag under the table.",
+    "contextHintAr": "طلب بسيط يحدد لون الشيء ومكانه.",
+    "modelTranslations": [
+      "من فضلك ضع الحقيبة الزرقاء تحت الطاولة.",
+      "لو سمحت حط الشنطة الزرقا تحت الترابيزة."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "under",
+        "translation": "تحت"
+      }
+    ],
+    "grammarFocusAr": "فعل الأمر وحرف الجر under."
+  },
+  {
+    "id": "prac-a2-2",
+    "direction": "ar-to-en",
+    "difficulty": "A2",
+    "category": "Past Experiences",
+    "sourceSentence": "لم أتمكن من ركوب الحافلة لأنني نسيت محفظتي في المنزل.",
+    "contextHintAr": "موقف ماضٍ وسبب عدم ركوب الحافلة.",
+    "modelTranslations": [
+      "I could not take the bus because I left my wallet at home.",
+      "I could not get on the bus because I had forgotten my wallet at home."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "wallet",
+        "translation": "محفظة"
+      }
+    ],
+    "grammarFocusAr": "could not للتعبير عن عدم القدرة في الماضي وbecause للسبب."
+  },
+  {
+    "id": "prac-a2-3",
+    "direction": "en-to-ar",
+    "difficulty": "A2",
+    "category": "Travel & Plans",
+    "sourceSentence": "We are going to visit the museum after lunch if it is open.",
+    "contextHintAr": "خطة لزيارة مكان بشرط أن يكون مفتوحًا.",
+    "modelTranslations": [
+      "سنزور المتحف بعد الغداء إذا كان مفتوحًا.",
+      "إحنا ناويين نزور المتحف بعد الغدا لو كان مفتوح."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "after lunch",
+        "translation": "بعد الغداء"
+      }
+    ],
+    "grammarFocusAr": "going to للخطة وif للشرط."
+  },
+  {
+    "id": "prac-b1-3",
+    "direction": "ar-to-en",
+    "difficulty": "B1",
+    "category": "Work & Communication",
+    "sourceSentence": "هل يمكنك توضيح ما تقصده قبل أن ننتقل إلى النقطة التالية؟",
+    "contextHintAr": "طلب مهذب لتوضيح المقصود قبل استكمال النقاش.",
+    "modelTranslations": [
+      "Could you explain what you mean before we move on to the next point?",
+      "Could you clarify what you mean before we go on to the next point?"
+    ],
+    "keyVocabulary": [
+      {
+        "word": "clarify",
+        "translation": "يوضح"
+      }
+    ],
+    "grammarFocusAr": "السؤال المهذب بـ Could you وترتيب الكلمات في what you mean."
+  },
+  {
+    "id": "prac-b1-4",
+    "direction": "en-to-ar",
+    "difficulty": "B1",
+    "category": "Work & Communication",
+    "sourceSentence": "Although the journey took longer than expected, we arrived in time for the meeting.",
+    "contextHintAr": "تعارض بين طول الرحلة والوصول في الوقت المناسب.",
+    "modelTranslations": [
+      "رغم أن الرحلة استغرقت وقتًا أطول من المتوقع، وصلنا في الوقت المناسب للاجتماع.",
+      "مع إن الطريق أخد وقت أطول من المتوقع، وصلنا ولحقنا الاجتماع."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "in time",
+        "translation": "في الوقت المناسب"
+      }
+    ],
+    "grammarFocusAr": "Although لربط فكرتين متعارضتين."
+  },
+  {
+    "id": "prac-b2-2",
+    "direction": "ar-to-en",
+    "difficulty": "B2",
+    "category": "Work & Decisions",
+    "sourceSentence": "كان من الأفضل إبلاغ الفريق بالتغيير قبل نشر الإعلان.",
+    "contextHintAr": "تقييم نقدي لتصرف كان ينبغي حدوثه في الماضي.",
+    "modelTranslations": [
+      "It would have been better to inform the team of the change before publishing the announcement.",
+      "The team should have been told about the change before the announcement was published."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "inform",
+        "translation": "يبلغ"
+      }
+    ],
+    "grammarFocusAr": "would have been better أو should have been للماضي."
+  },
+  {
+    "id": "prac-b2-3",
+    "direction": "en-to-ar",
+    "difficulty": "B2",
+    "category": "Work & Decisions",
+    "sourceSentence": "Unless we receive written confirmation by Friday, we will have to postpone the launch.",
+    "contextHintAr": "شرط سلبي مع مهلة زمنية ونتيجة محتملة.",
+    "modelTranslations": [
+      "ما لم نتلق تأكيدًا كتابيًا بحلول الجمعة، فسنضطر إلى تأجيل الإطلاق.",
+      "لو ما وصلناش تأكيد مكتوب لحد الجمعة، هنضطر نأجل الإطلاق."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "postpone",
+        "translation": "يؤجل"
+      }
+    ],
+    "grammarFocusAr": "Unless بمعنى if not وwill have to للاضطرار مستقبلًا."
+  },
+  {
+    "id": "prac-c1-2",
+    "direction": "ar-to-en",
+    "difficulty": "C1",
+    "category": "Policy & Evidence",
+    "sourceSentence": "لا ينبغي تفسير غياب الأدلة القاطعة على أنه دليل على عدم وجود مشكلة.",
+    "contextHintAr": "تمييز دقيق بين غياب الدليل والدليل على الغياب.",
+    "modelTranslations": [
+      "The absence of conclusive evidence should not be interpreted as evidence that no problem exists.",
+      "A lack of conclusive evidence should not be taken as proof that there is no problem."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "conclusive evidence",
+        "translation": "أدلة قاطعة"
+      }
+    ],
+    "grammarFocusAr": "المبني للمجهول بعد should not be مع interpreted as."
+  },
+  {
+    "id": "prac-c1-3",
+    "direction": "en-to-ar",
+    "difficulty": "C1",
+    "category": "Policy & Evidence",
+    "sourceSentence": "The proposal is promising, provided that its assumptions are tested independently rather than accepted at face value.",
+    "contextHintAr": "قبول مشروط بالتحقق المستقل بدلًا من التسليم بالافتراضات.",
+    "modelTranslations": [
+      "المقترح واعد، شريطة اختبار افتراضاته بصورة مستقلة بدلًا من قبولها دون تمحيص.",
+      "تبدو الخطة مبشرة، بشرط فحص افتراضاتها بشكل مستقل بدلًا من الأخذ بها على ظاهرها."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "at face value",
+        "translation": "دون تمحيص / على ظاهره"
+      }
+    ],
+    "grammarFocusAr": "provided that للشرط وrather than للمقابلة."
+  },
+  {
+    "id": "prac-c2-2",
+    "direction": "ar-to-en",
+    "difficulty": "C2",
+    "category": "Argument & Register",
+    "sourceSentence": "بقدر ما يبدو الإجماع مطمئنًا، فإنه لا يعفينا من مساءلة الأسس التي يقوم عليها.",
+    "contextHintAr": "الاعتراف بقيمة الإجماع مع التحفظ على أسسه.",
+    "modelTranslations": [
+      "Reassuring though consensus may seem, it does not absolve us of the need to question its foundations.",
+      "However reassuring the consensus appears, we must still scrutinize the assumptions on which it rests."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "scrutinize",
+        "translation": "يفحص بدقة"
+      }
+    ],
+    "grammarFocusAr": "التنازل بـ Reassuring though أو However reassuring."
+  },
+  {
+    "id": "prac-c2-3",
+    "direction": "en-to-ar",
+    "difficulty": "C2",
+    "category": "Argument & Register",
+    "sourceSentence": "What passes for pragmatism may, on closer inspection, amount to little more than an unwillingness to confront uncomfortable trade-offs.",
+    "contextHintAr": "تقييم نقدي للفارق بين البراغماتية المعلنة وتجنب المفاضلات الصعبة.",
+    "modelTranslations": [
+      "ما يُقدَّم على أنه واقعية عملية قد لا يعدو، عند التدقيق، أن يكون إحجامًا عن مواجهة مفاضلات غير مريحة.",
+      "قد يتبين عند الفحص أن ما يُحسب براغماتية ليس أكثر من عزوف عن مواجهة الخيارات الصعبة وتبعاتها."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "trade-offs",
+        "translation": "مفاضلات بين مكاسب وتنازلات"
+      }
+    ],
+    "grammarFocusAr": "What passes for كجملة اسمية وmay amount to للتحفظ في الحكم."
+  },
+  {
+    "id": "prac-a1-5",
+    "direction": "ar-to-en",
+    "difficulty": "A1",
+    "category": "Daily Basics",
+    "sourceSentence": "كل صباح أضع كتابي على المكتب.",
+    "contextHintAr": "عادة بسيطة عن مكان الكتاب.",
+    "modelTranslations": [
+      "Every morning, I put my book on the desk.",
+      "I put my book on the desk every morning."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "desk",
+        "translation": "مكتب"
+      },
+      {
+        "word": "every morning",
+        "translation": "كل صباح"
+      }
+    ],
+    "grammarFocusAr": "المضارع البسيط مع I وحرف الجر on."
+  },
+  {
+    "id": "prac-a1-6",
+    "direction": "en-to-ar",
+    "difficulty": "A1",
+    "category": "Daily Basics",
+    "sourceSentence": "There are three books next to my notebook.",
+    "contextHintAr": "وصف عدد الكتب ومكانها بالنسبة للكشكول.",
+    "modelTranslations": [
+      "توجد ثلاثة كتب بجوار دفتري.",
+      "فيه تلات كتب جنب كشكولي."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "next to",
+        "translation": "بجوار / جنب"
+      },
+      {
+        "word": "notebook",
+        "translation": "دفتر / كشكول"
+      }
+    ],
+    "grammarFocusAr": "There are مع الجمع وحرف المكان next to."
+  },
+  {
+    "id": "prac-a2-4",
+    "direction": "ar-to-en",
+    "difficulty": "A2",
+    "category": "Travel & Plans",
+    "sourceSentence": "هل يمكننا تغيير موعد الرحلة إلى صباح الغد؟",
+    "contextHintAr": "طلب مهذب لتغيير توقيت رحلة، وليس تأكيد حجز.",
+    "modelTranslations": [
+      "Can we change the trip to tomorrow morning?",
+      "Could we move the trip to tomorrow morning?"
+    ],
+    "keyVocabulary": [
+      {
+        "word": "change",
+        "translation": "يغير"
+      },
+      {
+        "word": "tomorrow morning",
+        "translation": "صباح الغد"
+      }
+    ],
+    "grammarFocusAr": "Can we أو Could we لطلب تغيير مع توقيت مستقبلي."
+  },
+  {
+    "id": "prac-a2-5",
+    "direction": "en-to-ar",
+    "difficulty": "A2",
+    "category": "Travel & Plans",
+    "sourceSentence": "I was waiting for the train when you called me.",
+    "contextHintAr": "حدث كان مستمرًا في الماضي عندما وقع اتصال.",
+    "modelTranslations": [
+      "كنت أنتظر القطار عندما اتصلت بي.",
+      "كنت مستني القطر لما اتصلت بيا."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "wait for",
+        "translation": "ينتظر"
+      },
+      {
+        "word": "call",
+        "translation": "يتصل"
+      }
+    ],
+    "grammarFocusAr": "الماضي المستمر was waiting مع الماضي البسيط called."
+  },
+  {
+    "id": "prac-b1-5",
+    "direction": "ar-to-en",
+    "difficulty": "B1",
+    "category": "Work & Communication",
+    "sourceSentence": "إذا تأخر الاجتماع، سأرسل لك ملخصًا بالبريد الإلكتروني.",
+    "contextHintAr": "وعد مشروط بتأخر الاجتماع.",
+    "modelTranslations": [
+      "If the meeting is delayed, I will email you a summary.",
+      "If the meeting runs late, I will send you a summary by email."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "summary",
+        "translation": "ملخص"
+      },
+      {
+        "word": "be delayed",
+        "translation": "يتأخر"
+      }
+    ],
+    "grammarFocusAr": "الشرط الأول: If مع المضارع، ثم will مع الفعل."
+  },
+  {
+    "id": "prac-b1-6",
+    "direction": "en-to-ar",
+    "difficulty": "B1",
+    "category": "Work & Communication",
+    "sourceSentence": "Could you let me know whether the revised schedule works for your team?",
+    "contextHintAr": "سؤال مهذب عن ملاءمة جدول معدل للفريق.",
+    "modelTranslations": [
+      "هل يمكنك إخباري بما إذا كان الجدول المعدل مناسبًا لفريقك؟",
+      "ممكن تبلغني إذا كان الجدول بعد التعديل مناسب لفريقك؟"
+    ],
+    "keyVocabulary": [
+      {
+        "word": "revised schedule",
+        "translation": "جدول معدل"
+      },
+      {
+        "word": "work for",
+        "translation": "يكون مناسبًا لـ"
+      }
+    ],
+    "grammarFocusAr": "Could you لطلب مهذب وwhether مع ترتيب الجملة الخبرية."
+  },
+  {
+    "id": "prac-b2-4",
+    "direction": "ar-to-en",
+    "difficulty": "B2",
+    "category": "Work & Communication",
+    "sourceSentence": "لو كنا اختبرنا النسخة مبكرًا، لكنا اكتشفنا المشكلة قبل الإطلاق.",
+    "contextHintAr": "تخيل نتيجة مختلفة لقرار لم يحدث في الماضي.",
+    "modelTranslations": [
+      "If we had tested the version earlier, we would have found the problem before launch.",
+      "Had we tested the version sooner, we would have discovered the issue before the launch."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "discover an issue",
+        "translation": "يكتشف مشكلة"
+      },
+      {
+        "word": "before launch",
+        "translation": "قبل الإطلاق"
+      }
+    ],
+    "grammarFocusAr": "الشرط الثالث: had مع التصريف الثالث، ثم would have مع التصريف الثالث."
+  },
+  {
+    "id": "prac-b2-5",
+    "direction": "en-to-ar",
+    "difficulty": "B2",
+    "category": "Work & Communication",
+    "sourceSentence": "Despite the tight deadline, the team managed to deliver without compromising quality.",
+    "contextHintAr": "نجاح الفريق رغم ضيق الوقت مع الحفاظ على الجودة.",
+    "modelTranslations": [
+      "رغم ضيق الموعد النهائي، تمكن الفريق من التسليم دون المساس بالجودة.",
+      "مع إن الوقت كان ضيق، الفريق قدر يسلم من غير ما يضحي بالجودة."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "tight deadline",
+        "translation": "موعد نهائي ضيق"
+      },
+      {
+        "word": "compromise quality",
+        "translation": "يضر بالجودة / يضحي بالجودة"
+      }
+    ],
+    "grammarFocusAr": "Despite يتبعها اسم، وmanaged to للتعبير عن نجاح رغم صعوبة."
+  },
+  {
+    "id": "prac-c1-4",
+    "direction": "ar-to-en",
+    "difficulty": "C1",
+    "category": "Argument & Evidence",
+    "sourceSentence": "ينبغي تقييم نجاح السياسة على أساس نتائجها الفعلية، لا على أساس نوايا واضعيها.",
+    "contextHintAr": "تمييز معياري بين النتائج والنوايا في تقييم سياسة.",
+    "modelTranslations": [
+      "The success of a policy should be judged by its actual outcomes, not by the intentions of its authors.",
+      "A policy should be considered successful on the basis of its real results rather than its designers' intentions."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "actual outcomes",
+        "translation": "نتائج فعلية"
+      },
+      {
+        "word": "on the basis of",
+        "translation": "على أساس"
+      }
+    ],
+    "grammarFocusAr": "المبني للمجهول بعد should مع المقابلة not by أو rather than."
+  },
+  {
+    "id": "prac-c1-5",
+    "direction": "en-to-ar",
+    "difficulty": "C1",
+    "category": "Argument & Evidence",
+    "sourceSentence": "While the findings are consistent with our hypothesis, they do not rule out alternative explanations.",
+    "contextHintAr": "توافق النتائج مع الفرضية لا يعني استبعاد كل تفسير آخر.",
+    "modelTranslations": [
+      "مع أن النتائج تتسق مع فرضيتنا، فإنها لا تستبعد تفسيرات بديلة.",
+      "رغم توافق النتائج مع الفرضية، فإنها لا تنفي احتمال وجود تفسيرات أخرى."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "consistent with",
+        "translation": "متسق مع"
+      },
+      {
+        "word": "rule out",
+        "translation": "يستبعد"
+      }
+    ],
+    "grammarFocusAr": "While هنا للتنازل، وrule out للاستبعاد لا لإثبات السببية."
+  },
+  {
+    "id": "prac-c2-4",
+    "direction": "ar-to-en",
+    "difficulty": "C2",
+    "category": "Argument & Evidence",
+    "sourceSentence": "ليس من الإنصاف اختزال خلاف معقد في ثنائية مبسطة تتجاهل ما بين طرفيها من احتمالات.",
+    "contextHintAr": "اعتراض على تصوير خلاف متعدد الأبعاد باعتباره خيارين فقط.",
+    "modelTranslations": [
+      "It is unfair to reduce a complex disagreement to a simplistic binary that ignores the possibilities in between.",
+      "A complex dispute cannot fairly be reduced to two stark alternatives at the expense of the possibilities between them."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "simplistic binary",
+        "translation": "ثنائية مبسطة بإفراط"
+      },
+      {
+        "word": "reduce to",
+        "translation": "يختزل في"
+      }
+    ],
+    "grammarFocusAr": "It is مع الصفة وto، أو المبني للمجهول cannot be reduced مع الحفاظ على معنى الإنصاف."
+  },
+  {
+    "id": "prac-c2-5",
+    "direction": "en-to-ar",
+    "difficulty": "C2",
+    "category": "Argument & Evidence",
+    "sourceSentence": "No sooner had the compromise been announced than its apparent simplicity began to unravel under scrutiny.",
+    "contextHintAr": "تتابع سريع بعد إعلان تسوية اتضح أن بساطتها ظاهرية.",
+    "modelTranslations": [
+      "ما إن أُعلنت التسوية حتى بدأت بساطتها الظاهرية تتداعى تحت التدقيق.",
+      "لم تكد التسوية تعلن حتى أخذ الفحص الدقيق يكشف أن بساطتها لم تكن إلا ظاهرية."
+    ],
+    "keyVocabulary": [
+      {
+        "word": "compromise",
+        "translation": "تسوية"
+      },
+      {
+        "word": "under scrutiny",
+        "translation": "تحت التدقيق"
+      }
+    ],
+    "grammarFocusAr": "القلب بعد No sooner مع had، والربط بـ than؛ began to unravel هنا مجازي."
+  }
+]
