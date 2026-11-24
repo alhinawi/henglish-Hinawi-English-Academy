@@ -614,14 +614,14 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                           </div>
 
                           {/* Scene Meta Info */}
-                          <div className="p-5 space-y-3 text-right">
+                          <div className="p-2 sm:p-5 space-y-3 text-start">
                             <div className="flex items-center justify-between text-[11px] text-white/50">
                               <span className="font-bold text-red-400">{scene.videoSource}</span>
                               <span>{scene.releaseYear}</span>
                             </div>
 
                             <div>
-                              <h4 className="text-base font-black text-white group-hover:text-red-300 transition-colors line-clamp-1">
+                              <h4 dir="ltr" lang="en" className="text-left text-base leading-7 break-words font-black text-white group-hover:text-red-300 transition-colors sm:line-clamp-1">
                                 {scene.movieTitle} — {scene.sceneTitle}
                               </h4>
                               <p className="text-xs text-white/60 line-clamp-1 mt-0.5">
@@ -631,7 +631,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
 
                             {/* Dialogue Spotlight Quote */}
                             {scene.dialogueQuote && (
-                              <div className="p-3 rounded-2xl bg-white/5 border border-white/5 space-y-1">
+                              <div className="p-2 sm:p-3 rounded-2xl bg-white/5 border border-white/5 space-y-1">
                                 <span className="text-[10px] font-black text-amber-300 flex items-center gap-1">
                                   <Sparkles className="w-3 h-3" />
                                   <span>{t('ms.coreQuote')}</span>
@@ -773,7 +773,7 @@ export const MovieStudioPage: React.FC<MovieStudioPageProps> = ({ onNavigate, le
                           </button>
                         </div>
 
-                        <div className="p-5 space-y-3 text-right">
+                        <div className="p-2 sm:p-5 space-y-3 text-start">
                           <div className="text-[11px] text-white/50">{item.channelTitle}</div>
                           <h4 className="text-sm font-black text-white line-clamp-2">
                             {item.title}
