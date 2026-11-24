@@ -3611,5 +3611,7 @@
   "at.rehearsalFocus.prompt.clarity": "Use my own words to make my intended meaning easy to follow. This is my private review, not an automatic correction.",
   "at.rehearsalFocus.prompt.example": "When it helps my goal, add one short original example. I can invent safe details instead of sharing personal information.",
   "tpr.meaningChecksArabic.title": "Egyptian Arabic meaning of this review question",
-  "tpr.meaningChecksArabic.note": "Support for understanding the question only, not a model translation or a grade."
+  "tpr.meaningChecksArabic.note": "Support for understanding the question only, not a model translation or a grade.",
+  "pa.responseChecksArabic.title": "Egyptian Arabic meaning of this check",
+  "pa.responseChecksArabic.note": "Help understanding the content check only, not a model answer or a pronunciation grade."
 }
