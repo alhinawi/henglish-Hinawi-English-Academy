@@ -1,4 +1,12 @@
 {
+  "rle.planFocus.label": "Ein Schwerpunkt für meinen zweiten Plan",
+  "rle.planFocus.change": "Änderung erklären",
+  "rle.planFocus.tone": "Passender Ton",
+  "rle.planFocus.next": "Klarer nächster Schritt",
+  "rle.planFocus.prompt.change": "Benenne die Änderung und ein Detail, das die andere Person braucht. Trenne erfundene Übungsdetails von echten persönlichen Informationen.",
+  "rle.planFocus.prompt.tone": "Formuliere deine Bitte klar und respektvoll. Überlege, mit wem du sprichst und wie dringend die Situation ist. Du musst nichts zustimmen, das für dich nicht passt.",
+  "rle.planFocus.prompt.next": "Formuliere eine konkrete Bitte oder schlage eine praktische Handlung vor. Frage nach dem nächsten Schritt, statt Zustimmung vorauszusetzen.",
+  "rle.planFocus.chosen": "Mein gewählter Schwerpunkt",
   "rle.planRetry.clear": "Nur meinen aktuellen Plan löschen",
   "rle.planRetry.note": "Probiere einen anderen Umgang mit der Situation. Behalte deinen ersten Plan und schreibe eine zweite Fassung mit eigenen Worten. Keine Fassung wird gesendet, gespeichert oder bewertet. Schließen, Neustarten oder Verlassen des Szenarios löscht beide.",
   "rle.planRetry.start": "Ersten Plan behalten und erneut versuchen",
