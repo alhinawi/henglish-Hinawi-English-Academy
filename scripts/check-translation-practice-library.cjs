@@ -1,7 +1,7 @@
 const fs=require('fs'),vm=require('vm'),ts=require('typescript'),assert=require('assert/strict');
 const source=fs.readFileSync('src/services/translationService.ts','utf8');const c={exports:{}};vm.runInNewContext(ts.transpileModule(source.slice(source.indexOf('export const TRANSLATION_PRACTICE_CHALLENGES')), {compilerOptions:{module:ts.ModuleKind.CommonJS}}).outputText,c);const tasks=c.exports.TRANSLATION_PRACTICE_CHALLENGES;
-assert.equal(tasks.length,32);assert.equal(new Set(tasks.map(x=>x.id)).size,32);
+assert.equal(tasks.length,44);assert.equal(new Set(tasks.map(x=>x.id)).size,44);
 for(const level of ['A1','A2','B1','B2','C1','C2'])for(const direction of ['en-to-ar','ar-to-en'])assert(tasks.some(x=>x.difficulty===level&&x.direction===direction),level+direction);
 for(const t of tasks){assert(t.sourceSentence.trim());assert(t.contextHintAr);assert(t.grammarFocusAr);assert(t.modelTranslations.length>=2);assert.equal(new Set(t.modelTranslations).size,t.modelTranslations.length);assert(t.modelTranslations.every(a=>/\p{Script=Arabic}/u.test(a)===(t.direction==='en-to-ar')));}
 const view=fs.readFileSync('src/components/translation/PracticeModeTab.tsx','utf8');assert(view.includes('item.difficulty === level'));assert(view.includes('item.direction === direction'));assert(view.includes('% challenges.length'));assert(view.includes('drafts[challenge.id]'));
-console.log('32 original translation tasks, both directions at all6levels, unique IDs/answers, filter navigation and isolated drafts: PASS');
+console.log('44 original translation tasks, both directions at all6levels, unique IDs/answers, filter navigation and isolated drafts: PASS');

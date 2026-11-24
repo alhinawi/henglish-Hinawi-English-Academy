@@ -1,0 +1,7 @@
+# Translation practice: 44 original tasks
+
+Expanded the library from 32 to 44 fictional self-study tasks. Twelve new tasks add one in each direction at each intended practice level A1-C2. Each has two model translations, two vocabulary entries with Arabic meanings, a specific Arabic context and grammar note, two meaning checks, and EN/AR/DE topic labels. New tasks use existing licensed theme photos with the stock-photo disclaimer. Original 32 task objects are preserved exactly by a regression fixture.
+
+Topics cover polite requests, lesson times, rail tickets, book returns, joining teams, missed trains, missing data, conditional publication, regional differences, cautious findings, reform costs and interpretation of incomplete evidence. These are original exercises, not actual events, grades or proficiency certification. Existing word recall, sentence rewrites, task drafts, models, revisions, photo captions, audio and filters remain independent. No new network, storage or XP. TeacherDashboard untouched.
+
+Verification: 320 offline regression checks, Arabic lint and full TypeScript/Next export. Build required a larger Node heap after the default heap ran out. EN/AR390 all44 task headings, draft/revision/check isolation, all12 level/direction filters, wrap navigation, all44 photo mappings/11 image decodes, 88 meaning checks, and all vocabulary first/second sentence flows passed. Actual new A1/C1 pixels inspected, readable Arabic and isolated English, no horizontal overflow, دخول visible. Audio was not exercised. Canonical verification follows deployment.
