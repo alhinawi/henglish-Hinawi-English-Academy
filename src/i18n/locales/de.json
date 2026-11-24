@@ -3609,5 +3609,7 @@
   "at.rehearsalFocus.chosen": "Mein gewählter Fokus",
   "at.rehearsalFocus.prompt.goal": "Prüfe, was ich in diesem Lehrmodus üben möchte. Mein nächster Versuch soll zu diesem Ziel passen.",
   "at.rehearsalFocus.prompt.clarity": "Nutze eigene Worte, damit meine beabsichtigte Bedeutung leicht verständlich ist. Das ist meine private Überprüfung, keine automatische Korrektur.",
-  "at.rehearsalFocus.prompt.example": "Wenn es meinem Ziel hilft, ergänze ein kurzes eigenes Beispiel. Ich kann unverfängliche Details erfinden, statt persönliche Daten zu teilen."
+  "at.rehearsalFocus.prompt.example": "Wenn es meinem Ziel hilft, ergänze ein kurzes eigenes Beispiel. Ich kann unverfängliche Details erfinden, statt persönliche Daten zu teilen.",
+  "tpr.meaningChecksArabic.title": "Bedeutung dieser Prüffrage auf Ägyptisch-Arabisch",
+  "tpr.meaningChecksArabic.note": "Nur eine Verständnishilfe für die Frage, keine Musterübersetzung und keine Bewertung."
 }
