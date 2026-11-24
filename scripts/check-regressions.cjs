@@ -7,6 +7,7 @@ const checks = [
   'check-minimal-pair-mobile-width.cjs',
   'check-speaking-review-mobile-width.cjs',
   'check-scenario-review-mobile-width.cjs',
+  'check-movie-own-review-mobile-width.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
