@@ -86,7 +86,7 @@ export function SpeakingRecorder({ prompt, description }: { prompt: string; desc
       }
     } finally { if (mounted.current) setStarting(false); }
   }
-  return <div className="rounded-2xl border border-white/10 bg-black/20 p-4 space-y-4">
+  return <div className="rounded-2xl border border-white/10 bg-black/20 p-2 sm:p-4 space-y-4">
     <p dir="ltr" className="text-left text-lg font-semibold leading-8 text-white">{prompt}</p>
     {description && <p className="text-sm text-slate-300">{description}</p>}
     <p className="text-xs leading-6 text-slate-400">{t('sp.rec.note')}</p>
