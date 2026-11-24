@@ -10,7 +10,7 @@ try:
   b=p.chromium.launch(executable_path='/opt/google/chrome/chrome',headless=True,args=['--no-sandbox'])
   for lang in ['en','ar']:
    page=b.new_page(viewport={'width':390,'height':1050},reduced_motion='reduce');page.route('**/api/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.route('**/henglish-api.hnz.workers.dev/**',lambda r:r.fulfill(status=503,json={'error':'UI test'}));page.add_init_script("Object.defineProperty(navigator,'mediaDevices',{value:{getUserMedia:()=>Promise.reject(Error('Test denial'))},configurable:true});");t=json.load(open(root/'src/i18n/locales'/f'{lang}.json'));page.goto(origin+'/pronunciation/?lang='+lang);panel=page.get_by_role('region',name=t['pa.photo.title'],exact=True);expect(panel).to_be_visible();selector=panel.get_by_label(t['pa.photo.choose'],exact=True)
-   for i in range(24):
+   for i in range(28):
     selector.select_option(str(i));question=panel.locator('details').filter(has=page.locator('summary').filter(has_text=t['pa.photoChallenge.title']));question.locator(':scope > summary').click();response=question.locator('details').filter(has=page.locator('summary').filter(has_text=t['pa.photoResponse.title']));response.locator(':scope > summary').click();draft=panel.get_by_label(t['pa.photoResponse.label'],exact=True);draft.fill('My independent answer.');review=response.locator('details');assert not review.evaluate('(el)=>el.open');review.locator('summary').click();checks=review.get_by_role('checkbox');expect(checks).to_have_count(2);clear=review.get_by_role('button',name=t['pa.responseChecks.clear'],exact=True);expect(clear).to_be_disabled()
     for c in checks.all():expect(c).not_to_be_checked();c.check()
     expect(draft).to_have_value('My independent answer.');review.locator('summary').click();review.locator('summary').click();expect(checks.first).to_be_checked();response.locator(':scope > summary').click();response.locator(':scope > summary').click();expect(checks.first).to_be_checked();clear.click();expect(clear).to_be_disabled()
@@ -19,6 +19,6 @@ try:
     if i==4:page.screenshot(path=f'/downloads/henglish-{prefix}pronunciation-response-checks-{lang}.png')
    selector.select_option('0');question=panel.locator('details').filter(has=page.locator('summary').filter(has_text=t['pa.photoChallenge.title']));question.locator(':scope > summary').click();response=question.locator('details').filter(has=page.locator('summary').filter(has_text=t['pa.photoResponse.title']));response.locator(':scope > summary').click();review=response.locator('details');assert not review.evaluate('(el)=>el.open');review.locator('summary').click()
    for c in review.get_by_role('checkbox').all():expect(c).not_to_be_checked()
-   print(lang,'20photos40manualcontentchecks,closeduncheckeddefault,collapsepreserved,clearindependent,draftunchanged,scenereset,390px PASS; no actual capture/playback');page.close()
+   print(lang,'28photos56manualcontentchecks,closeduncheckeddefault,collapsepreserved,clearindependent,draftunchanged,scenereset,390px PASS; no actual capture/playback');page.close()
   b.close()
 finally:server.shutdown();server.server_close()

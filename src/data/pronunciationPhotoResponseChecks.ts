@@ -24,4 +24,8 @@ export const PRONUNCIATION_PHOTO_RESPONSE_CHECKS:Record<string,readonly string[]
  "coding":["I suggested one change to a study desk.", "I explained why I would make that change."],
  "cafeMenu":["I named one detail to check on a cafe menu.", "I explained why that detail matters before ordering."],
  "collaboration":["I suggested a way to explain a new idea to a group.", "I included an example of how to explain it."],
+ "classroom":["I gave a question I would ask at the end of class.", "I explained how the answer could help me learn."],
+ "research":["I asked a question about a simple science experiment.", "I explained why that question interests me."],
+ "calendar":["I described one session in an imaginary study week.", "I gave a reason for choosing that study time."],
+ "briefing":["I gave an opening sentence for an invented idea.", "I explained what I would show the team next."],
 };

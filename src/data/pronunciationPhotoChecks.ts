@@ -60,4 +60,8 @@ export const PRONUNCIATION_PHOTO_CHECKS: Record<string,readonly [string,string]>
  "coding":["I listened for /k/ at the start of code and keyboard.", "I compared the /k/ sound in screen without adding a vowel inside the cluster."],
  "cafeMenu":["I listened for /m/ at the start of menu, milk and morning.", "I tried beginning with closed lips and a gentle voiced nasal sound."],
  "collaboration":["I listened for /ʃ/ at the start of share, show and sheet.", "I compared that continuous air sound with /tʃ/ without adding an initial stop."],
+ "classroom":["I listened for the /k/ sound in class, question and course.", "I tried to keep that sound clear when I used the words in my sentence."],
+ "research":["I compared the /ɡ/ in glass and gloves with the /k/ in clean.", "I tried keeping the difference when saying the words in my own sentence."],
+ "calendar":["I listened for the /d/ sound at the start of day, date and diary.", "I tried keeping the word beginnings clear in my own short sentence."],
+ "briefing":["I listened for the /b/ sound in brief, board and business.", "I tried keeping that sound clear while saying the whole sentence comfortably."],
 };
