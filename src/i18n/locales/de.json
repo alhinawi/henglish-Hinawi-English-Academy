@@ -3697,5 +3697,11 @@
   "pa.planReview.clear": "Nur Satzprüfungen löschen",
   "pa.planNext.label": "Eine Sache für meinen nächsten Fotosatz (optional)",
   "pa.planNext.note": "Notiere in einer beliebigen Sprache eine klarere Idee, ein Detail oder ein Wort zum lauten Üben. Die Notiz bleibt nur in dieser geöffneten Fotoübung und wird weder gesendet noch bewertet. Beim Fotowechsel oder Verlassen der Seite wird sie gelöscht.",
-  "pa.planNext.clear": "Nur Notiz zum nächsten Satz löschen"
+  "pa.planNext.clear": "Nur Notiz zum nächsten Satz löschen",
+  "tpr.wordReview.title": "Meinen eigenen Satz mit dem Wort prüfen (optional)",
+  "tpr.wordReview.note": "Das sind deine eigenen Prüfungen, keine Bewertung. Prüfe deinen eigenen Satz, nicht die Musterübersetzung. Das Löschen der Häkchen ändert weder Sätze noch Wortabruf oder Übersetzung. Beim Schließen der Hilfe oder Aufgabenwechsel werden die Häkchen gelöscht.",
+  "tpr.wordReview.check.0": "Ich habe das Übungswort in einem eigenen Satz verwendet.",
+  "tpr.wordReview.check.1": "Die Wortform passt zu meinem beabsichtigten Satz.",
+  "tpr.wordReview.check.2": "Mein Satz enthält genug Kontext, um die Bedeutung zu erklären.",
+  "tpr.wordReview.clear": "Nur Prüfungen zum Wortsatz löschen"
 }
