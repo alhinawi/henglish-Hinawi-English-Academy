@@ -1,3 +1,4 @@
+import {TutorSuggestionText} from '../components/TutorSuggestionText';
 import {TutorPrivateRehearsal} from '../components/TutorPrivateRehearsal';
 import {TUTOR_GOAL_MEANINGS} from '../data/tutorPracticeGoalMeanings';
 import {TUTOR_PRACTICE_GOALS} from '../data/tutorPracticeGoals';
@@ -916,7 +917,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
               className="px-3 py-1 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 text-[11px] text-[#ffd166] hover:text-white transition-all cursor-pointer shrink-0 truncate max-w-sm hover:scale-[1.02]"
               title={sug.promptText}
             >
-              {sug.labelAr}
+              <TutorSuggestionText text={sug.labelAr}/>
             </button>
           ))}
         </div>
