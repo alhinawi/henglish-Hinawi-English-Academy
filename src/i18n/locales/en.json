@@ -3697,5 +3697,11 @@
   "pa.planReview.clear": "Clear sentence checks only",
   "pa.planNext.label": "One thing to try in my next photo sentence (optional)",
   "pa.planNext.note": "Write a short reminder in any language: a clearer idea, a detail, or a word to practise aloud. It stays only in this open photo activity and is not submitted or graded. Changing photos or leaving the page clears it.",
-  "pa.planNext.clear": "Clear next-sentence note only"
+  "pa.planNext.clear": "Clear next-sentence note only",
+  "tpr.wordReview.title": "Review my own word sentence (optional)",
+  "tpr.wordReview.note": "These are your own checks, not a grade. Review the sentence you wrote, not the model translation. Clearing checks does not edit your sentences, word recall or translation. Closing help or changing tasks clears these checks.",
+  "tpr.wordReview.check.0": "I used the practice word in a sentence I wrote myself.",
+  "tpr.wordReview.check.1": "The word form fits the sentence I intended.",
+  "tpr.wordReview.check.2": "My sentence gives enough context to make the meaning clear.",
+  "tpr.wordReview.clear": "Clear word-sentence checks only"
 }
