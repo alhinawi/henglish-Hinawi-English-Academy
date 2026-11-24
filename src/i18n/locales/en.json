@@ -3615,5 +3615,7 @@
   "pa.responseChecksArabic.title": "Egyptian Arabic meaning of this check",
   "pa.responseChecksArabic.note": "Help understanding the content check only, not a model answer or a pronunciation grade.",
   "at.rehearsalChecksArabic.title": "Egyptian Arabic meaning of this rehearsal check",
-  "at.rehearsalChecksArabic.note": "Help understanding the check only, not an automatic correction or a pronunciation assessment."
+  "at.rehearsalChecksArabic.note": "Help understanding the check only, not an automatic correction or a pronunciation assessment.",
+  "rle.variationChecksArabic.title": "Egyptian Arabic meaning of this task check",
+  "rle.variationChecksArabic.note": "Help understanding this fictional language-practice check only, not advice, a model reply or a grade."
 }
