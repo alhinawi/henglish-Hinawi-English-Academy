@@ -324,15 +324,15 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
             </div>
           </div>
 
-          <div className="p-5 sm:p-10 space-y-8">
+          <div className="p-2 sm:p-10 space-y-8">
             {/* Character Dialogue Bubble */}
-            <div className="flex items-start gap-4 p-5 sm:p-6 rounded-2xl bg-black/40 border border-white/10">
+            <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-4 p-2 sm:p-6 rounded-2xl bg-black/40 border border-white/10">
               <img
                 src={currentTurn.speakerAvatar}
                 alt={currentTurn.speaker}
-                className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-[#ffd166] shrink-0"
+                className="w-10 h-10 sm:w-16 sm:h-16 rounded-2xl object-cover border-2 border-[#ffd166] shrink-0"
               />
-              <div className="space-y-2 flex-1 min-w-0">
+              <div className="space-y-2 w-full flex-1 min-w-0">
                 <div className="flex items-center justify-between flex-wrap gap-2">
                   <div>
                     <span className="text-sm font-black text-white">{currentTurn.speaker}</span>
