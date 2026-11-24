@@ -3593,5 +3593,13 @@
   "pa.responseFocus.chosen": "My chosen focus",
   "pa.responseFocus.prompt.answer": "Read the photo question again. Make sure my answer covers what it asks, using my own ideas.",
   "pa.responseFocus.prompt.detail": "Add one relevant reason or detail when the question asks for it. I can use an imaginary example and leave out personal information.",
-  "pa.responseFocus.prompt.sound": "Choose one word in my own answer to say carefully. Look at the photo sound focus if it helps. This is my practice plan, not an automatic pronunciation check."
+  "pa.responseFocus.prompt.sound": "Choose one word in my own answer to say carefully. Look at the photo sound focus if it helps. This is my practice plan, not an automatic pronunciation check.",
+  "rle.variationFocus.label": "Choose one focus for my next reply",
+  "rle.variationFocus.task": "Meet the task",
+  "rle.variationFocus.tone": "Tone for the situation",
+  "rle.variationFocus.next": "A clear next step",
+  "rle.variationFocus.chosen": "My chosen focus",
+  "rle.variationFocus.prompt.task": "Read this fictional task again. Check that my own reply covers the details it asks for.",
+  "rle.variationFocus.prompt.tone": "Choose a tone that fits the person and situation. I can be polite and direct without agreeing to something I do not want.",
+  "rle.variationFocus.prompt.next": "If the task needs an action or clarification, make my request or next step clear. Do not promise a real booking, payment or outcome."
 }
