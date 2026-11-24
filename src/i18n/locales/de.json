@@ -3234,6 +3234,8 @@
   "pa.photoPlan.label": "Mein Satz auf Englisch (bis zu 500 Zeichen)",
   "pa.photoPlan.clear": "Meinen Satz löschen",
   "pa.photoPlan.next": "Sprich deinen Satz laut und vergleiche ihn bei Bedarf mit dem Beispiel. Mehrere Sätze können zum Foto passen. Beispiel und Rekorder ersetzen deinen Entwurf nicht.",
+  "ms.ownReview.clearChecks": "Nur diese Prüfmarkierungen löschen",
+  "ms.ownReview.clearTarget": "Nur meine Notiz zum nächsten Versuch löschen",
   "ms.ownReview.title": "Eigenen Versuch prüfen (optional)",
   "ms.ownReview.note": "Vergleiche nach dem Sprechen deinen Versuch mit dem sichtbaren Ausgangstext. Das sind private Selbstprüfungen, keine automatische Rückmeldung oder Punktzahl.",
   "ms.ownReview.check.0": "Ich habe die Hauptaussage und die Absicht der sprechenden Person beibehalten.",

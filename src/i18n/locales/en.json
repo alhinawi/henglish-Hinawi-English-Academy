@@ -3234,6 +3234,8 @@
   "pa.photoPlan.label": "My sentence in English (up to 500 characters)",
   "pa.photoPlan.clear": "Clear my sentence",
   "pa.photoPlan.next": "Say your sentence aloud, then compare it with the example if useful. More than one sentence can fit the photo. Opening the example or recorder does not replace your draft.",
+  "ms.ownReview.clearChecks": "Clear only these review marks",
+  "ms.ownReview.clearTarget": "Clear only my next-try note",
   "ms.ownReview.title": "Review my own-words attempt (optional)",
   "ms.ownReview.note": "After speaking, compare your attempt with the visible source. These are private self-checks, not automatic feedback or a score.",
   "ms.ownReview.check.0": "I kept the main meaning and the speaker's intention.",
