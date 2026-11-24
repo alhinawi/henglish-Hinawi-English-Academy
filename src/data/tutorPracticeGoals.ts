@@ -8,7 +8,8 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Use first conditional sentences to discuss an invented plan and what I will do if it changes.",
     "Choose between a and the when introducing an invented object and referring to it again.",
     "Compare a future plan with a spontaneous decision using going to and will in an invented dialogue.",
-    "Use the present perfect with already and yet to discuss an invented task list, then compare it with a finished past event."
+    "Use the present perfect with already and yet to discuss an invented task list, then compare it with a finished past event.",
+    "Compare past simple and past perfect in an invented story, then explain which event happened first."
   ],
   "conversation-partner": [
     "Introduce myself to a new classmate and ask two follow-up questions.",
@@ -18,7 +19,8 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Keep a short conversation going by responding to a detail and asking a related open question.",
     "Disagree politely about an invented outing, give a reason and suggest a compromise.",
     "Ask someone politely to repeat or rephrase an unclear detail, then check my understanding in my own words.",
-    "Decline an invented invitation politely, give a brief reason and suggest another way to meet."
+    "Decline an invented invitation politely, give a brief reason and suggest another way to meet.",
+    "Practise returning a mistaken imaginary order politely, explain the difference and ask for a suitable replacement."
   ],
   "vocabulary-coach": [
     "Learn useful words for describing my daily routine and use them in sentences.",
@@ -28,7 +30,8 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Compare common travel verbs and choose natural word combinations for an invented journey.",
     "Compare words for size and quantity, then describe an invented room using precise expressions.",
     "Compare common cooking verbs, then describe an invented simple recipe using natural word combinations.",
-    "Compare borrow and lend, then use both in an invented exchange about sharing books."
+    "Compare borrow and lend, then use both in an invented exchange about sharing books.",
+    "Compare say and tell, then use both in an invented exchange about passing on a message."
   ],
   "writing-assistant": [
     "Write a short friendly invitation with a clear time and place.",
@@ -38,7 +41,8 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Write a short explanation that puts events in a clear order and uses linking words without repeating them too often.",
     "Revise a short invented review to separate an opinion from the details that support it.",
     "Revise invented instructions so the steps are easy to follow and any warnings are clear.",
-    "Shorten an invented project update while keeping its main result, remaining problem and requested next action."
+    "Shorten an invented project update while keeping its main result, remaining problem and requested next action.",
+    "Write an invented handover note with one completed task, one open question and a clear next step."
   ],
   "pronunciation-coach": [
     "Practise hearing and producing the difference between /p/ and /b/ in short words.",
@@ -48,7 +52,8 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Practise linking a final consonant to the next vowel in short phrases, then compare two spoken attempts myself.",
     "Explore the three common endings of regular past-tense verbs, then group short examples and practise them aloud.",
     "Compare final sounds in singular and plural noun pairs, then group examples and practise aloud without automatic scoring.",
-    "Explore word stress in common noun and verb pairs, then practise short examples without automatic scoring."
+    "Explore word stress in common noun and verb pairs, then practise short examples without automatic scoring.",
+    "Compare voiced and unvoiced th in short word pairs, then practise them in a sentence without automatic scoring."
   ],
   "exam-trainer": [
     "Practise a short speaking answer with a reason and an example.",
@@ -58,7 +63,8 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Compare two invented views on a familiar topic and plan a balanced answer without making a score prediction.",
     "Practise describing the main trend in a small invented table, then support it with two details without predicting a score.",
     "Distinguish a stated fact from an inference in an invented passage and explain my evidence without predicting a score.",
-    "Compare two invented paragraph summaries and explain which keeps the main idea without adding unsupported details."
+    "Compare two invented paragraph summaries and explain which keeps the main idea without adding unsupported details.",
+    "Compare two invented arguments and identify a claim that needs evidence before planning a balanced response."
   ],
   "interview-coach": [
     "Introduce my relevant skills for an imaginary job in under one minute.",
@@ -68,6 +74,7 @@ export const TUTOR_PRACTICE_GOALS: Record<string, readonly string[]> = {
     "Practise describing an invented setback, the action I took and what I learned without claiming real experience.",
     "Practise explaining an invented priority conflict and asking which deadline matters most before choosing a next step.",
     "Ask a follow-up question about an imaginary role and explain how an invented skill could help without claiming real experience.",
-    "Practise asking for a moment to think in an imaginary interview, then organise an invented answer with one clear example."
+    "Practise asking for a moment to think in an imaginary interview, then organise an invented answer with one clear example.",
+    "Practise explaining an invented mistake, the repair and a prevention step without claiming real experience."
   ]
 };
