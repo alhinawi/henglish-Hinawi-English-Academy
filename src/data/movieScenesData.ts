@@ -56,6 +56,7 @@ export interface MovieSceneItem {
   youtubeId: string;
   startTime: number;
   endTime: number;
+  sourceDurationSeconds?: number; // Full upload length, independent of reviewed transcript bounds.
   clipDuration: string;
   videoSource: string;
   dialogueQuote: string;
