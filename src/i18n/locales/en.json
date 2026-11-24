@@ -3420,6 +3420,7 @@
   "tpr.meaningNext.label": "One detail to check in my next translation (up to 300 characters)",
   "tpr.meaningNext.note": "Compare your version with the source, model versions and these questions. Note one detail to preserve or clarify. This is your own reflection, not automatic feedback or a grade. Avoid personal details. Hiding the models or changing tasks discards this note.",
   "tpr.meaningNext.clear": "Clear only this note",
+  "tpr.meaningChecks.clear": "Clear only these meaning-check marks",
   "tpr.meaningChecks.title": "Check the meaning of this task (optional)",
   "tpr.meaningChecks.note": "Compare your translation with the source and examples using these task-specific English questions. Mark only what you think your version preserves. This is private self-review, not a grade or a requirement to match one model. Collapsing keeps marks; hiding examples, changing task or leaving discards them. Your draft and revision are unchanged.",
   "pa.ownSentences.title": "Use both words in my own sentences (optional)",
