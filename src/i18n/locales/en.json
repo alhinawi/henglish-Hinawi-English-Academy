@@ -3251,6 +3251,8 @@
   "rle.vocabDraft.label": "Use this term in my own sentence (optional, 500 characters)",
   "rle.vocabDraft.note": "Try an English sentence with this term. This private draft is not checked or sent. Each term keeps its own draft while this scenario is open, including when meanings are hidden. Leaving or replaying the scenario discards all drafts. Avoid personal or sensitive details.",
   "rle.vocabDraft.clear": "Clear this sentence",
+  "pa.photoReview.clearChecks": "Clear only these review marks",
+  "pa.photoReview.clearTarget": "Clear only my next-try note",
   "pa.photoReview.title": "Review your photo description",
   "pa.photoReview.note": "Optional self-review after speaking, with or without a recording. This is your own judgement, not an automatic pronunciation score.",
   "pa.photoReview.check.0": "I made the focus sound clearly in the wordbank words.",
