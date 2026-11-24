@@ -24,6 +24,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Which boarding group is ...?",
       "Should I wait until ...?"
+    ],
+    [
+      "Where could I refill ...?",
+      "Is that near ...?"
     ]
   ],
   "sim-restaurant-ordering": [
@@ -50,6 +54,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Would we need a booking for ...?",
       "How long would you hold ...?"
+    ],
+    [
+      "Would it be possible to move to ...?",
+      "Should we sit ...?"
     ]
   ],
   "sim-doctor-appointment": [
@@ -76,6 +84,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Where should I wait after ...?",
       "How will I know when ...?"
+    ],
+    [
+      "I find it difficult to hear ...",
+      "Could you let me know when ...?"
     ]
   ],
   "sim-job-interview": [
@@ -102,6 +114,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Do you mean both ... and ...?",
       "Would you like me to start with ...?"
+    ],
+    [
+      "Could you explain what ... stands for?",
+      "How does that relate to ...?"
     ]
   ],
   "sim-coffee-shop": [
@@ -128,6 +144,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Could you check whether this is ...?",
       "I ordered ... under the name ..."
+    ],
+    [
+      "Does this drink already contain ...?",
+      "I would prefer ... if possible."
     ]
   ],
   "sim-hotel-checkin": [
@@ -154,6 +174,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Which lift should I take to ...?",
       "So I should turn ... before ...?"
+    ],
+    [
+      "Where may I wait for ...?",
+      "How will I know when ...?"
     ]
   ],
   "sim-pharmacy-visit": [
@@ -180,6 +204,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Could I check my understanding of ...?",
       "Have I understood correctly that ...?"
+    ],
+    [
+      "Where could I speak to ...?",
+      "Should I wait ...?"
     ]
   ],
   "sim-clothing-shopping": [
@@ -206,6 +234,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Where can I find the care label on ...?",
       "Could you explain this symbol ...?"
+    ],
+    [
+      "Could you check the price of ...?",
+      "So the price is ...?"
     ]
   ],
   "sim-supermarket-shopping": [
@@ -232,6 +264,10 @@ export const SCENARIO_VARIATION_STARTERS: Record<string, readonly (readonly [str
     [
       "Which checkout should I use ...?",
       "Do I need to move ... myself?"
+    ],
+    [
+      "How much does each package contain ...?",
+      "What is the price of one ...?"
     ]
   ]
 };
