@@ -3359,6 +3359,8 @@
   "at.goalMeaning.note": "This explains the suggested goal, not an AI reply. Opening the meaning does not fill the goal or send a message.",
   "sp.topicWords.title": "Useful words for this topic (optional)",
   "sp.topicWords.note": "Try one expression in your own answer if it fits. Egyptian Arabic meanings explain the words, not a complete response. These are language-practice ideas, not medical or other professional advice.",
+  "pa.soundReviewArabic.title": "Egyptian Arabic meaning of this sound check",
+  "pa.soundReviewArabic.note": "Help understanding this private listening check only, not pronunciation feedback, accent grading or proof of a correct sound.",
   "pa.soundReview.title": "Listen for this photo’s sounds",
   "pa.soundReview.note": "Optional private reflection, not a pronunciation score. Use the word or model listening controls with recording practice closed, then compare your own recording. Accents vary; you do not need to copy an accent.",
   "rle.vocabSource.hide": "Hide the example while I write",
