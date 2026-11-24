@@ -3601,5 +3601,13 @@
   "rle.variationFocus.chosen": "My chosen focus",
   "rle.variationFocus.prompt.task": "Read this fictional task again. Check that my own reply covers the details it asks for.",
   "rle.variationFocus.prompt.tone": "Choose a tone that fits the person and situation. I can be polite and direct without agreeing to something I do not want.",
-  "rle.variationFocus.prompt.next": "If the task needs an action or clarification, make my request or next step clear. Do not promise a real booking, payment or outcome."
+  "rle.variationFocus.prompt.next": "If the task needs an action or clarification, make my request or next step clear. Do not promise a real booking, payment or outcome.",
+  "at.rehearsalFocus.label": "Choose one focus for my second attempt",
+  "at.rehearsalFocus.goal": "My practice goal",
+  "at.rehearsalFocus.clarity": "Clear meaning",
+  "at.rehearsalFocus.example": "A useful example",
+  "at.rehearsalFocus.chosen": "My chosen focus",
+  "at.rehearsalFocus.prompt.goal": "Check what I want to practise in this teacher mode. Keep my next attempt relevant to that goal.",
+  "at.rehearsalFocus.prompt.clarity": "Use my own words to make my intended meaning easy to follow. This is my private review, not an automatic correction.",
+  "at.rehearsalFocus.prompt.example": "When it helps my goal, add one short original example. I can invent safe details instead of sharing personal information."
 }
