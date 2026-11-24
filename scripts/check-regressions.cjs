@@ -2,6 +2,7 @@
 const { spawnSync } = require('node:child_process');
 const path = require('node:path');
 const checks = [
+  'check-scenario-variation-next-note.cjs',
   'check-pronunciation-photo-next-note.cjs',
   'check-speaking-fifth-expressions.cjs',
   'check-translation-forty-four-tasks.cjs',
