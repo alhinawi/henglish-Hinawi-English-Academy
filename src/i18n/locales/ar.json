@@ -3613,5 +3613,7 @@
   "tpr.meaningChecksArabic.title": "معنى سؤال المراجعة بالمصري",
   "tpr.meaningChecksArabic.note": "مساعدة لفهم السؤال بس، مش ترجمة نموذجية ولا تقييم.",
   "pa.responseChecksArabic.title": "معنى نقطة المراجعة بالمصري",
-  "pa.responseChecksArabic.note": "مساعدة لفهم مراجعة المحتوى بس، مش إجابة نموذجية ولا تقييم نطق."
+  "pa.responseChecksArabic.note": "مساعدة لفهم مراجعة المحتوى بس، مش إجابة نموذجية ولا تقييم نطق.",
+  "at.rehearsalChecksArabic.title": "معنى نقطة مراجعة المحاولة بالمصري",
+  "at.rehearsalChecksArabic.note": "مساعدة لفهم نقطة المراجعة بس، مش تصحيح تلقائي ولا تقييم نطق."
 }

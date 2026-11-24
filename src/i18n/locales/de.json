@@ -3613,5 +3613,7 @@
   "tpr.meaningChecksArabic.title": "Bedeutung dieser Prüffrage auf Ägyptisch-Arabisch",
   "tpr.meaningChecksArabic.note": "Nur eine Verständnishilfe für die Frage, keine Musterübersetzung und keine Bewertung.",
   "pa.responseChecksArabic.title": "Bedeutung dieses Prüfpunkts auf Ägyptisch-Arabisch",
-  "pa.responseChecksArabic.note": "Nur eine Verständnishilfe für den Inhaltscheck, keine Musterantwort und keine Aussprachebewertung."
+  "pa.responseChecksArabic.note": "Nur eine Verständnishilfe für den Inhaltscheck, keine Musterantwort und keine Aussprachebewertung.",
+  "at.rehearsalChecksArabic.title": "Bedeutung dieses Übungschecks auf Ägyptisch-Arabisch",
+  "at.rehearsalChecksArabic.note": "Nur eine Verständnishilfe, keine automatische Korrektur und keine Aussprachebewertung."
 }
