@@ -3319,6 +3319,7 @@
   "ms.retelling.note": "Write your own English version of the reviewed source. Keep the main meaning and intention, change the wording and avoid adding unsupported details. This is your attempt, not a model answer. You can hide the source above and reveal it later to check.",
   "ms.retelling.label": "My own-words attempt (up to 1,500 characters)",
   "ms.retelling.privacy": "Separate from planning notes and recordings. This private draft stays while collapsed or while you hide/reveal the source. Changing task or cue, closing practice or leaving the clip discards it. Nothing is sent, saved or graded.",
+  "sp.roleDraft.clear": "Clear only my current role reply",
   "sp.roleDraft.title": "Write a reply before speaking (optional)",
   "sp.roleDraft.note": "Try your own English reply for this turn. Use the meaning hint if needed, then reveal the model to compare. More than one reply may work. This is not an automatic correction or a score.",
   "sp.roleDraft.label": "My reply for this turn (up to 500 characters)",
