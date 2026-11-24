@@ -3553,5 +3553,9 @@
   "rle.vocabFocus.chosen": "My chosen focus",
   "ms.retellingNext.label": "One thing I want to try next (optional, 300 characters)",
   "ms.retellingNext.note": "Write a short reminder for yourself in any language. This is separate from your plan and both retellings. Clearing the checks keeps this note; clearing this note keeps the checks. Collapsing keeps it. Changing mode, closing practice or leaving clears it. Nothing is assessed, sent or saved.",
-  "ms.retellingNext.clear": "Clear this reminder"
+  "ms.retellingNext.clear": "Clear this reminder",
+  "pa.photo.classroom": "After a class",
+  "pa.photo.research": "A science question",
+  "pa.photo.calendar": "A study calendar",
+  "pa.photo.briefing": "A team briefing"
 }

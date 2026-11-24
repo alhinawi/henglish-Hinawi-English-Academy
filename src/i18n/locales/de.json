@@ -3553,5 +3553,9 @@
   "rle.vocabFocus.chosen": "Mein gewählter Fokus",
   "ms.retellingNext.label": "Eine Sache, die ich als Nächstes versuchen möchte (optional, 300 Zeichen)",
   "ms.retellingNext.note": "Schreibe eine kurze Erinnerung in einer beliebigen Sprache. Sie ist getrennt von deinem Plan und beiden Nacherzählungen. Das Zurücksetzen der Häkchen behält die Notiz; das Löschen der Notiz behält die Häkchen. Zuklappen behält sie. Moduswechsel, Schließen der Übung oder Verlassen löscht sie. Nichts wird bewertet, gesendet oder gespeichert.",
-  "ms.retellingNext.clear": "Diese Erinnerung löschen"
+  "ms.retellingNext.clear": "Diese Erinnerung löschen",
+  "pa.photo.classroom": "Nach dem Unterricht",
+  "pa.photo.research": "Eine Frage zur Wissenschaft",
+  "pa.photo.calendar": "Ein Lernkalender",
+  "pa.photo.briefing": "Eine Teambesprechung"
 }
