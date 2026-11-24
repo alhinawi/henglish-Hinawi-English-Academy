@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('assert/strict');const s=fs.readFileSync('src/components/Footer.tsx','utf8');a(s.includes('<Logo size="lg" className="flex-wrap"/>'));a(s.includes('min-w-0 space-y-4'));a(s.includes('SECTIONS.map'));a(s.includes('ft.backTop'));console.log('Footer brand wraps within column,logo text and links preserved PASS');
