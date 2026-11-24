@@ -14,12 +14,12 @@ try:
     page.locator('button').filter(has=page.get_by_text(lesson['titleEn'],exact=True)).click();panel=page.get_by_role('region',name=t['sp.transfer.title'],exact=True);expect(panel.get_by_text(t['sp.topicWords.title'],exact=True)).to_have_count(0);panel.get_by_role('button',name=t['sp.transfer.open'],exact=True).click();details=panel.locator('details').filter(has=page.get_by_text(t['sp.topicWords.title'],exact=True));summary=details.locator('summary');plan=panel.get_by_label(t['sp.transfer.plan'],exact=True)
     for mode in [0,1]:
      if mode:panel.get_by_role('button',name=t['sp.transfer.choice.1'],exact=True).click()
-     expect(plan).to_have_value('');assert not details.evaluate('(el)=>el.open');summary.click();expect(details.locator('dt')).to_have_count(4);expect(details.locator('dd[lang="ar"]')).to_have_count(4);
+     expect(plan).to_have_value('');assert not details.evaluate('(el)=>el.open');summary.click();expect(details.locator('dt')).to_have_count(5);expect(details.locator('dd[lang="ar"]')).to_have_count(5);
      for text in details.locator('dt').all():expect(text).to_be_visible();expect(text).to_have_attribute('lang','en');expect(text).to_have_attribute('dir','ltr')
      for meaning in details.locator('dd[lang="ar"]').all():expect(meaning).to_be_visible();expect(meaning).to_have_attribute('lang','ar');expect(meaning).to_have_attribute('dir','rtl')
      plan.fill('My own role-play plan');summary.click();summary.click();expect(plan).to_have_value('My own role-play plan');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
      if lesson['id']=='conversation-12' and mode==1:details.evaluate('(el)=>window.scrollTo({top:window.scrollY+el.getBoundingClientRect().top-120,behavior:"instant"})');page.screenshot(path=f'/downloads/henglish-{prefix}speaking-topic-words-{lang}.png')
     panel.get_by_role('button',name=t['sp.transfer.close'],exact=True).click();expect(details).to_have_count(0);panel.get_by_role('button',name=t['sp.transfer.open'],exact=True).click();assert not details.evaluate('(el)=>el.open');expect(plan).to_have_value('');page.get_by_role('button',name=t['sa.allUnits'],exact=True).click()
-   print(lang,'32lessons128topicwords/meanings x2followups,closeddefault,Englishlanguage/direction,planpreserved,mode/close/lessonreset,390px PASS; noaudio/capture');page.close()
+   print(lang,'32lessons160topicwords/meanings x2followups,closeddefault,Englishlanguage/direction,planpreserved,mode/close/lessonreset,390px PASS; noaudio/capture');page.close()
   b.close()
 finally:server.shutdown();server.server_close()
