@@ -905,7 +905,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
         </div>
 
         {/* Dynamic Quick Suggestions Bar */}
-        <div className="p-2 sm:p-3 bg-black/50 border-t border-white/10 flex items-center gap-2 overflow-x-auto custom-scrollbar">
+        <div className="p-2 sm:p-3 bg-black/50 border-t border-white/10 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:overflow-x-auto custom-scrollbar">
           <span className="text-[10px] font-bold text-[#b9b6d5] shrink-0 flex items-center gap-1">
             <Sparkles className="w-3 h-3 text-[#ffd166]" />
             {t('at.suggestions')}
@@ -914,7 +914,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
             <button
               key={idx}
               onClick={() => handleSendMessage(sug.promptText)}
-              className="px-3 py-1 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 text-[11px] text-[#ffd166] hover:text-white transition-all cursor-pointer shrink-0 truncate max-w-sm hover:scale-[1.02]"
+              className="min-h-11 w-full min-w-0 whitespace-normal px-3 py-2 text-start sm:min-h-0 sm:w-auto sm:whitespace-nowrap sm:py-1 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 text-[11px] text-[#ffd166] hover:text-white transition-all cursor-pointer shrink-0 sm:truncate sm:max-w-sm hover:scale-[1.02]"
               title={sug.promptText}
             >
               <TutorSuggestionText text={sug.labelAr}/>
