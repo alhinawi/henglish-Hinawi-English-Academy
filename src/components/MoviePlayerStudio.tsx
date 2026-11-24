@@ -48,14 +48,16 @@ const timeLabel = (seconds: number) => {
 interface MoviePlayerStudioProps { scene: MovieSceneItem; onBackToSearch?: () => void; }
 
 export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: originalScene, onBackToSearch }) => {
-  const { t, lang } = useLanguage();
+  const { t, lang, dir } = useLanguage();
   const scene = useMemo(() => applyMovieTranscriptCorrections(originalScene), [originalScene]);
   const unavailable = scene.transcriptTimingStatus === 'quarantined';
   const hasTranscript = scene.subtitles.length > 0;
   const hasFusha = scene.subtitles.some(sub => Boolean(sub.arFusha?.trim()));
   const reviewedTiming = scene.transcriptTimingStatus === 'caption-reviewed' || scene.transcriptTimingStatus === 'reviewed-excerpts';
-  const start = scene.startTime;
-  const end = scene.endTime;
+  const start = 0;
+  const [duration, setDuration] = useState<number | null>(scene.sourceDurationSeconds || null);
+  const durationRef = useRef<number | null>(scene.sourceDurationSeconds || null);
+  const end = duration ?? scene.endTime;
   const appText = useAppTextMap('movieScenesData');
   const summaryText = useAppTextMap('movieSourceSummaries');
   const [currentTime, setCurrentTime] = useState(start);
@@ -126,15 +128,15 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
     };
   }, []);
 
-  // Object loading preserves a decimal endSeconds on every app-controlled seek/replay.
-  // Calling seekTo would clear YouTube's endSeconds, so it is deliberately not used.
+  // Full-source playback is independent of transcript coverage. Only explicit
+  // repeat mode supplies an endSeconds boundary for a reviewed cue.
   const loadClip = (at: number) => {
-    const target = Math.max(start, Math.min(at, end - 0.01));
+    const target = Math.max(start, durationRef.current ? Math.min(at, durationRef.current - 0.01) : at);
     pending.current = target;
     setCurrentTime(target); setEnded(false);
     if (player.current && ready) {
       seekingUntil.current = Date.now() + 4000;
-      player.current.loadVideoById({ videoId: scene.youtubeId, startSeconds: target, endSeconds: loopBounds.current?.end ?? end });
+      player.current.loadVideoById({ videoId: scene.youtubeId, startSeconds: target, ...(loopBounds.current ? { endSeconds: loopBounds.current.end } : {}) });
       player.current.setPlaybackRate?.(holdRate.current ?? baseRate.current);
     }
   };
@@ -144,7 +146,8 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
     let cancelled = false;
     let readyTimeout: number | undefined;
     setReady(false); setError(false); setPlaying(false); setEnded(false); setRepeat(false); setSpeedMenu(false);
-    loopBounds.current = null; finishHold(); lastCue.current = { start, end };
+    loopBounds.current = null; finishHold(); lastCue.current = scene.subtitles[0] || { start: scene.startTime, end: scene.endTime };
+    durationRef.current = scene.sourceDurationSeconds || null; setDuration(durationRef.current);
     setCurrentTime(start); pending.current = start;
     const enforceBounds = () => {
       const p = player.current;
@@ -153,20 +156,17 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
       if (!Number.isFinite(t)) return;
       if (seekingUntil.current && Math.abs(t - pending.current) > 1 && Date.now() < seekingUntil.current) return;
       seekingUntil.current = 0;
-      const boundary = loopBounds.current?.end ?? end;
-      if (t >= boundary) {
+      const sourceDuration = p.getDuration?.();
+      if (Number.isFinite(sourceDuration) && sourceDuration > 0 && sourceDuration !== durationRef.current) { durationRef.current = sourceDuration; setDuration(sourceDuration); }
+      const boundary = loopBounds.current?.end ?? durationRef.current;
+      if (boundary !== null && t >= boundary) {
         if (loopBounds.current) {
           const bounds = loopBounds.current;
           pending.current = bounds.start; seekingUntil.current = Date.now() + 4000;
           p.loadVideoById({ videoId: scene.youtubeId, startSeconds: bounds.start, endSeconds: bounds.end });
           p.setPlaybackRate?.(holdRate.current ?? baseRate.current); setCurrentTime(bounds.start); setEnded(false); return;
         }
-        p.pauseVideo?.(); setCurrentTime(end); setPlaying(false); setEnded(true); return;
-      }
-      if (t < start - 0.1) {
-        // Native timeline drags cannot turn the short scene into the full upload.
-        p.pauseVideo?.(); p.cueVideoById?.({ videoId: scene.youtubeId, startSeconds: start, endSeconds: end });
-        setCurrentTime(start); setPlaying(false); return;
+        p.pauseVideo?.(); setCurrentTime(boundary); setPlaying(false); setEnded(true); return;
       }
       setCurrentTime(t);
     };
@@ -178,7 +178,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
       }, 15000);
       player.current = new YT.Player(host.current, {
         host: 'https://www.youtube-nocookie.com', width: '100%', height: '100%', videoId: scene.youtubeId,
-        playerVars: { start: Math.floor(start), end: Math.ceil(end), autoplay: 0, controls: 1, rel: 0, playsinline: 1, enablejsapi: 1, cc_load_policy: 1, cc_lang_pref: 'en', origin: window.location.origin },
+        playerVars: { start: 0, autoplay: 0, controls: 1, rel: 0, playsinline: 1, enablejsapi: 1, cc_load_policy: 1, cc_lang_pref: 'en', origin: window.location.origin },
         events: {
           onReady: (event: any) => {
             if (cancelled) return;
@@ -187,7 +187,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
             const rates = event.target.getAvailablePlaybackRates?.() || [1];
             supportedRates.current = rates; setAvailableRates(rates);
             if (!rates.includes(baseRate.current)) { baseRate.current = 1; setSpeed(1); }
-            event.target.loadVideoById({ videoId: scene.youtubeId, startSeconds: pending.current, endSeconds: end });
+            event.target.loadVideoById({ videoId: scene.youtubeId, startSeconds: pending.current });
             event.target.setPlaybackRate?.(baseRate.current);
           },
           onStateChange: (event: any) => {
@@ -201,7 +201,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
                 event.target.setPlaybackRate?.(holdRate.current ?? baseRate.current);
                 setCurrentTime(bounds.start); setEnded(false); return;
               }
-              setEnded(true); setCurrentTime(end);
+              setEnded(true); setCurrentTime(durationRef.current ?? event.target.getCurrentTime?.() ?? 0);
             }
             enforceBounds();
           },
@@ -214,7 +214,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
     }).catch(() => { clearTimeout(readyTimeout); if (!cancelled) setError(true); });
     const timer = window.setInterval(enforceBounds, 50);
     return () => { cancelled = true; clearTimeout(readyTimeout); clearInterval(timer); player.current?.destroy?.(); player.current = null; };
-  }, [scene.youtubeId, start, end, unavailable]);
+  }, [scene.youtubeId, scene.startTime, scene.endTime, scene.sourceDurationSeconds, unavailable]);
 
   useEffect(() => {
     if (active < 0 || !list.current) return;
@@ -232,7 +232,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
     {onBackToSearch && <button onClick={onBackToSearch} className="min-h-12 rounded-xl bg-amber-200 px-5 font-bold text-slate-950">{t('ms.backToResults')}</button>}
   </section>;
 
-  return <section dir="rtl" className="movie-studio text-right text-white">
+  return <section dir={dir} className="movie-studio text-start text-white">
     <header className="flex flex-wrap items-center justify-between gap-3 pb-3">
       <div><p className="text-[11px] font-bold text-purple-300">{t('ms.sceneBadge')}</p><h2 className="text-lg font-black">{scene.movieTitle}</h2></div>
       {onBackToSearch && <button onClick={onBackToSearch} className="flex min-h-11 items-center gap-1 rounded-xl bg-white/10 px-3 text-xs font-bold"><ChevronRight size={16}/>{t('ms.backToSearch')}</button>}
@@ -244,18 +244,18 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           <div className="flex items-center gap-2">
             <button aria-label={playing ? t('ms.pause') : t('ms.play')} disabled={!ready || error} onClick={() => {
               if (playing) player.current?.pauseVideo?.();
-              else if (ended || currentTime >= end || currentTime < start) loadClip(start);
+              else if (ended || (durationRef.current !== null && currentTime >= durationRef.current) || currentTime < start) loadClip(start);
               else player.current?.playVideo?.();
             }} className="rounded-xl bg-purple-600 p-2 disabled:opacity-40">{playing ? <Pause size={18}/> : <Play size={18}/>}</button>
             <button aria-label={t('ms.restartAria')} onClick={() => loadClip(loopBounds.current?.start ?? start)} className="rounded-xl bg-white/10 p-2"><RotateCcw size={18}/></button>
-            <span dir="ltr" className="text-[11px] tabular-nums text-white/70">{timeLabel(currentTime - start)} / {timeLabel(end - start)}</span>
+            <span data-testid="movie-playback-time" dir="ltr" className="text-[11px] tabular-nums text-white/70">{timeLabel(currentTime)} / {duration ? timeLabel(duration) : '--:--'}</span>
           </div>
           <div className="relative flex items-center gap-1.5">
             <button aria-label={t('ms.repeatAria')} aria-pressed={repeat} disabled={!ready || error} onClick={() => {
               const enabled = !repeat; setRepeat(enabled);
               loopBounds.current = enabled ? { ...lastCue.current } : null;
               if (enabled && ended) loadClip(loopBounds.current!.start);
-              if (!enabled && playing) loadClip(currentTime);
+              if (!enabled) { loadClip(currentTime); if (!playing) player.current?.pauseVideo?.(); }
             }} className={`flex min-h-10 items-center gap-1 rounded-xl px-1.5 text-[11px] font-bold ${repeat ? 'bg-purple-600 text-white' : 'bg-white/10 text-white/75'}`}><Repeat size={15}/>{t('ms.repeat')}</button>
             <button aria-label={t('ms.speedAria')} aria-expanded={speedMenu} disabled={!ready || error} onPointerDown={event => {
               if (event.button !== 0) return;
@@ -283,6 +283,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           <h3 className="flex items-center gap-2 text-sm font-black"><Languages size={17}/>{t(hasTranscript ? 'ms.scriptTitle' : 'avmm.videoOnly')}</h3>
           {hasTranscript && reviewedTiming && <span className="text-[11px] text-white/45">{t('ms.syncedNote')}</span>}
         </div>
+        <p role="status" className="px-4 py-3 text-xs leading-7 text-cyan-100">{t(playing && active < 0 ? 'ms.fullPlayback.gap' : 'ms.fullPlayback.note')}</p>
         <div ref={list} className="movie-studio-cues" data-testid="cue-list" tabIndex={0} aria-label={t('ms.cuesAria')}>
           {scene.subtitles.map((sub, index) => <button key={sub.id} data-sub-idx={index} aria-current={active === index ? 'true' : undefined} onClick={() => { if (loopBounds.current) loopBounds.current = { start: sub.start, end: sub.end }; loadClip(sub.start); }} className={`movie-studio-cue ${active === index ? 'is-active' : ''}`}>
             <span className="mb-2 flex justify-between text-[11px] text-purple-200"><span>{sub.speaker || t('ms.sourceText')}</span><span dir="ltr">{timeLabel(sub.start - start)} - {timeLabel(sub.end - start)}</span></span>
@@ -295,7 +296,7 @@ export const MoviePlayerStudio: React.FC<MoviePlayerStudioProps> = ({ scene: ori
           {hasTranscript && <p className="text-[11px] leading-7 text-white/50">{t('ms.scriptNote')}</p>}
         </div>
         <footer className="border-t border-white/10 px-4 py-3 text-[11px] leading-6 text-white/55">
-          <p>{t('ms.timingFrom')} {timeLabel(start)} {t('ms.timingTo')} {timeLabel(end)}. {reviewedTiming && (scene.transcriptTimingStatus === 'caption-reviewed' ? t('ms.timingCaption') : t('ms.timingAudio'))}</p>
+          <p>{t('ms.timingFrom')} {timeLabel(scene.startTime)} {t('ms.timingTo')} {timeLabel(scene.endTime)}. {reviewedTiming && (scene.transcriptTimingStatus === 'caption-reviewed' ? t('ms.timingCaption') : t('ms.timingAudio'))}</p>
           <a href={`https://www.youtube.com/watch?v=${scene.youtubeId}`} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-9 items-center gap-1 text-purple-200 underline"><ExternalLink size={12}/>{t('ms.sourceYoutube')}</a>
           <span className="mr-3">{t('ms.youtubeCc')}</span>
         </footer>
