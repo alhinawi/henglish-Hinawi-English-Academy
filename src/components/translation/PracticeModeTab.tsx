@@ -38,7 +38,7 @@ export const PracticeModeTab: React.FC<PracticeModeTabProps> = () => {
     <figure className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 text-start"><img key={photo.src} src={photo.src} alt={t(photo.caption)} width={640} height={360} loading="lazy" className="h-44 w-full object-cover sm:h-56"/><figcaption className="space-y-2 p-4"><p className="text-sm leading-7 text-cyan-100">{t(photo.caption)}</p><p className="text-xs leading-6 text-slate-400">{t('tpr.photo.note')}</p></figcaption></figure>
     <h4 className="text-start text-lg font-bold leading-8 text-cyan-100">{t(`tpr.topic.${challenge.id}`)}</h4>
     <div className="flex items-center justify-between text-xs text-cyan-200"><span>{challenge.direction === 'en-to-ar' ? t('tpr.enAr') : t('tpr.arEn')}</span><bdi>{challenge.difficulty}</bdi></div>
-    <p dir={challenge.direction === 'en-to-ar' ? 'ltr' : 'rtl'} className="text-xl leading-9 rounded-2xl p-5 bg-white/5 text-white">{challenge.sourceSentence}</p>
+    <p dir={challenge.direction === 'en-to-ar' ? 'ltr' : 'rtl'} lang={challenge.direction === 'en-to-ar' ? 'en' : 'ar'} className="text-start text-xl leading-9 rounded-2xl px-2 py-5 sm:px-5 bg-white/5 text-white">{challenge.sourceSentence}</p>
     <LessonSpeechButton key={challenge.id} text={challenge.sourceSentence} language={challenge.direction === 'en-to-ar' ? 'en' : 'ar'} label={t('tpr.listen')} className="min-h-11 px-4 rounded-xl bg-white/10 text-white" />
     <section aria-label={t('tpr.help.title')} className="rounded-2xl border border-amber-200/25 bg-amber-200/5 p-2 sm:p-4 text-start space-y-3">
       <h4 className="text-sm font-bold text-amber-100">{t('tpr.help.title')}</h4>
