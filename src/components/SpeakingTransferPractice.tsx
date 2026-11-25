@@ -15,7 +15,7 @@ export function SpeakingTransferPractice({ lesson }: { lesson: SpeakingLesson })
   const [open, setOpen] = useState(false);
   const [task, setTask] = useState(0);
   const [plan, setPlan] = useState('');
-  return <section aria-label={t('sp.transfer.title')} className="rounded-3xl border border-cyan-200/25 bg-[#12152b] p-2 sm:p-6 space-y-4">
+  return <section aria-label={t('sp.transfer.title')} className="rounded-3xl border-0 sm:border border-cyan-200/25 sm:bg-[#12152b] p-0 sm:p-6 space-y-4">
     <h3 className="text-xl font-bold text-cyan-100">{t('sp.transfer.title')}</h3>
     <p className="text-sm leading-7 text-slate-300">{t('sp.transfer.intro')}</p>
     <button type="button" aria-expanded={open} onClick={() => { stopSpeech(); setOpen(value => !value); setTask(0); setPlan(''); }} className="min-h-11 rounded-xl border border-cyan-200/35 px-4 font-bold text-sm text-cyan-100">{t(open ? 'sp.transfer.close' : 'sp.transfer.open')}</button>
