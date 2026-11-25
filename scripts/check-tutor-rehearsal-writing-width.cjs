@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');for(const name of ['TutorPrivateRehearsal','TutorRehearsalReview']){const s=fs.readFileSync('src/components/'+name+'.tsx','utf8');a(s.includes('px-2 py-3 sm:px-3 text-base leading-8 text-white'));a(s.includes('maxLength='));}console.log('Tutor rehearsal fields mobile8pxhorizontal/12pxvertical,desktop12px preserved PASS');
