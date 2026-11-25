@@ -446,7 +446,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
     "locationName": "Canary Wharf Tech Headquarters",
     "locationIcon": "",
     "backdropImage": "/images/reallife/sim-job-interview.webp",
-    "descriptionAr": "تدريب احترافي للإجابة عن أسئلة المقابلات: تحدث عن نقاط قوتك، أسباب رغبتك بالانضمام، وإنجازاتك السابقة.",
+    "descriptionAr": "مقابلة خيالية من أربع مراحل: اشرح مشروع، واتعامل مع تعطّل خطة، واحكي عن التعاون، واسأل عن الدور. الأمثلة للتدريب؛ في مقابلة حقيقية استخدم خبرتك وتفاصيلك الصادقة.",
     "keyVocabulary": [
       {
         "en": "Accomplishment",
@@ -506,14 +506,152 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "بكل تأكيد. في دوري السابق، قدت فريقاً أعاد هيكلة قاعدة البيانات السحابية، مما قلل زمن الاستجابة بنسبة 45%.",
             "isOptimal": true,
             "score": 10,
-            "feedbackAr": "إجابة مذهلة! استخدام أفعال قوية (spearheaded, restructured) مع أرقام دقيقة يعطي انطباعاً قيادياً مبهراً."
+            "feedbackAr": "المثال الخيالي بيوضح دور وخطوة ونتيجة. في إجابتك الحقيقية استخدم أفعال وتفاصيل دقيقة عنك؛ مش لازم تستخدم كلمات كبيرة أو نسبة مئوية، وما تنسبش إنجاز المثال لنفسك."
           },
           {
             "textEn": "I worked on a lot of things, everything was fine and I do my best.",
             "textAr": "عملت على الكثير من الأشياء، كل شيء كان جيداً وأبذل ما بوسعي.",
             "isOptimal": false,
             "score": 4,
-            "feedbackAr": "إجابة عامة وغامضة جداً. في المقابلات يجب ذكر أمثلة محددة وإنجازات بالأرقام."
+            "feedbackAr": "الإجابة عامة ومش بتوضح دورك أو نتيجة. اختار مثال حقيقي واشرح إنت عملت إيه وإيه اللي حصل أو اتعلمته؛ الأرقام مفيدة بس لو دقيقة ومناسبة."
+          }
+        ]
+      },
+      {
+        "id": "job-turn-2",
+        "speaker": "David Miller",
+        "speakerRole": "VP of Engineering",
+        "speakerAvatar": "/images/reallife/rl-avatar.webp",
+        "textEn": "Tell me about a time a project did not go as planned. How did you respond?",
+        "textAr": "احكي لي عن مرة مشروع ما مشيش حسب الخطة. اتصرفت إزاي؟",
+        "grammarTipAr": "في السؤال عن تعطّل خطة، وضّح المشكلة وخطوتك واللي اتعلمته. استخدم الماضي لو بتحكي عن موقف انتهى؛ اعترف بدورك من غير ما تلوم الآخرين أو تخترع نتيجة.",
+        "expectedKeywordsForFreeText": [
+          "problem",
+          "plan",
+          "tested",
+          "learned",
+          "changed"
+        ],
+        "options": [
+          {
+            "textEn": "Nothing has ever gone wrong on any of my projects.",
+            "textAr": "ولا مرة حصلت أي مشكلة في أي مشروع اشتغلت عليه.",
+            "isOptimal": false,
+            "score": 2,
+            "feedbackAr": "الادعاء المطلق مش بيقدم مثال على التعامل مع مشكلة. اختار موقف صادق واشرح استجابتك، حتى لو النتيجة ما كانتش مثالية."
+          },
+          {
+            "textEn": "A test failed before a release. I told the team, helped find the cause, and added a check before we tried again.",
+            "textAr": "اختبار فشل قبل إصدار. بلّغت الفريق، وساعدت نلاقي السبب، وضفت فحص قبل ما نحاول تاني.",
+            "isOptimal": true,
+            "score": 10,
+            "feedbackAr": "المثال الخيالي بيحدد مشكلة وخطوات واضحة بدل اللوم. لو هتستخدم الفكرة في مقابلة حقيقية، بدّلها بموقف حصل لك فعلاً واشرح اللي اتعلمته."
+          },
+          {
+            "textEn": "It was entirely my colleagues' fault, so I waited for them to fix everything.",
+            "textAr": "كانت غلطة زمايلي بالكامل، فاستنيتهم يصلحوا كل حاجة.",
+            "isOptimal": false,
+            "score": 1,
+            "feedbackAr": "الرد بيركّز على لوم الزملاء ومش بيوضح مساهمتك. اشرح إيه اللي كان تحت سيطرتك وإزاي ساعدت أو طلبت مساعدة."
+          },
+          {
+            "textEn": "The deadline was difficult.",
+            "textAr": "الموعد النهائي كان صعب.",
+            "isOptimal": false,
+            "score": 4,
+            "feedbackAr": "الجملة مرتبطة بالمشكلة بس ناقصة. أضف خطوة محددة عملتها، وبعدها النتيجة أو اللي اتعلمته لو تعرفه."
+          }
+        ]
+      },
+      {
+        "id": "job-turn-3",
+        "speaker": "David Miller",
+        "speakerRole": "VP of Engineering",
+        "speakerAvatar": "/images/reallife/rl-avatar.webp",
+        "textEn": "How have you worked with colleagues who had a different view from yours?",
+        "textAr": "اشتغلت إزاي مع زمايل كان رأيهم مختلف عن رأيك؟",
+        "grammarTipAr": "فرّق بين الاختلاف والهجوم الشخصي. صف إزاي سمعت الرأي التاني وقارنتوا البدائل. ممكن تستخدم الماضي لو بتحكي مثال، ومش لازم تدّعي إنك كسبت النقاش.",
+        "expectedKeywordsForFreeText": [
+          "listened",
+          "team",
+          "agreed",
+          "compared",
+          "tested"
+        ],
+        "options": [
+          {
+            "textEn": "I explained my idea.",
+            "textAr": "شرحت فكرتي.",
+            "isOptimal": false,
+            "score": 4,
+            "feedbackAr": "بداية مناسبة، بس السؤال عن التعاون مع اختلاف الرأي. أضف إزاي سمعت زميلك أو اتفقتوا على خطوة مشتركة."
+          },
+          {
+            "textEn": "I always insist on my idea because disagreement wastes time.",
+            "textAr": "أنا دايمًا بتمسك بفكرتي لأن الاختلاف تضييع وقت.",
+            "isOptimal": false,
+            "score": 1,
+            "feedbackAr": "الرد بيستبعد وجهة النظر التانية. وضّح إزاي بتناقشوا الأسباب وتقارنوا الاختيارات بدل فرض رأي واحد."
+          },
+          {
+            "textEn": "I listened to their concerns, explained my reasons, and suggested a small test so we could compare both ideas.",
+            "textAr": "سمعت مخاوفهم، وشرحت أسبابي، واقترحت تجربة صغيرة عشان نقارن الفكرتين.",
+            "isOptimal": true,
+            "score": 10,
+            "feedbackAr": "المثال الخيالي بيوضح الاستماع وشرح الأسباب وخطوة مشتركة. في إجابتك استخدم موقف حقيقي وحدد مساهمتك من غير ما تنسب شغل الفريق كله لنفسك."
+          },
+          {
+            "textEn": "Could I have the restaurant menu, please?",
+            "textAr": "ممكن قائمة الأكل من فضلك؟",
+            "isOptimal": false,
+            "score": 0,
+            "feedbackAr": "الطلب مهذب لكنه مش متعلق بالسؤال عن التعاون في الشغل. ارجع لمثال عن اختلاف رأي وطريقة التعامل معاه."
+          }
+        ]
+      },
+      {
+        "id": "job-turn-4",
+        "speaker": "David Miller",
+        "speakerRole": "VP of Engineering",
+        "speakerAvatar": "/images/reallife/rl-avatar.webp",
+        "textEn": "Before we finish, what would you like to ask about the role or the team?",
+        "textAr": "قبل ما نخلص، تحب تسأل إيه عن الدور أو الفريق؟",
+        "grammarTipAr": "السؤال عن توقعات الدور أو طريقة تعاون الفريق ممكن يساعدك تفهم الوظيفة. صيغة سؤال زي What would success look like? مناسبة هنا؛ مفيش سؤال واحد إلزامي، ومناقشة الشروط ليها سياقها.",
+        "expectedKeywordsForFreeText": [
+          "role",
+          "team",
+          "success",
+          "expectations",
+          "months"
+        ],
+        "options": [
+          {
+            "textEn": "What would success look like in the first few months, and how does the team support a new colleague?",
+            "textAr": "النجاح في أول كام شهر هيبقى شكله إيه، والفريق بيساعد الزميل الجديد إزاي؟",
+            "isOptimal": true,
+            "score": 10,
+            "feedbackAr": "السؤال بيطلب توقعات واضحة وفهم لدعم الفريق. ده اختيار مناسب من اختيارات كتير؛ اسأل عن اللي يهمك فعلاً، وممكن تناقش الراتب والشروط في وقت مناسب."
+          },
+          {
+            "textEn": "I have no questions because I already know everything about this team.",
+            "textAr": "ما عنديش أسئلة لأني عارف كل حاجة عن الفريق ده.",
+            "isOptimal": false,
+            "score": 2,
+            "feedbackAr": "مش لازم تسأل لو كل أسئلتك اتجاوبت، لكن ادعاء معرفة كل حاجة مش مبرر مفيد. ممكن توضح إن أسئلتك اتجاوبت أو تسأل عن تفصيلة ناقصة."
+          },
+          {
+            "textEn": "Tell me the job is mine before I ask anything.",
+            "textAr": "قول لي إن الوظيفة ليا قبل ما أسأل أي حاجة.",
+            "isOptimal": false,
+            "score": 0,
+            "feedbackAr": "الرد بيطلب ضمان تعيين بدل سؤال عن الدور. اسأل عن المسؤوليات أو الخطوات الجاية من غير ما تفترض إنك اتقبلت."
+          },
+          {
+            "textEn": "What is the team like?",
+            "textAr": "الفريق عامل إزاي؟",
+            "isOptimal": false,
+            "score": 6,
+            "feedbackAr": "سؤال متعلق بالموضوع ومقبول، لكنه واسع. ممكن تحدده بسؤال عن التعاون اليومي أو دعم الزميل الجديد عشان تحصل على تفاصيل أنفع."
           }
         ]
       }
