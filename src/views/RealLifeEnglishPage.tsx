@@ -400,7 +400,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
 
                       {isChosen && (
                         <div role="status" className={`p-3 rounded-xl text-xs ${opt.isOptimal ? 'bg-emerald-500/10 text-emerald-300' : 'bg-amber-500/10 text-amber-300'}`}>
-                          {txText(appText, opt.feedbackAr)}
+                          <ScenarioTipText text={txText(appText, opt.feedbackAr)}/>
                         </div>
                       )}
                     </div>
