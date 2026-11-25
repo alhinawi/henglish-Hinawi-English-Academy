@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict'),s=fs.readFileSync('src/components/ScenarioReplyPractice.tsx','utf8');a(s.includes('px-2 py-4 sm:px-4 text-base leading-8'));for(const v of ['maxLength={2000}','dir="ltr" lang="en"','setReviewed(false)'])a(s.includes(v));console.log('Scenario private reply mobile8pxhorizontal/16pxvertical desktop16px preserved PASS');
