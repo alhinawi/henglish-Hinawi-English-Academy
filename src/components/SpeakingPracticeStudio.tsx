@@ -143,7 +143,7 @@ export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesso
       {orderChecked && <p role="status" className="text-sm text-cyan-100">{answers.order ? t('sp.step4.correct') : t('sp.step4.retry')}</p>}
     </section>
     <section className="rounded-3xl border-0 sm:border border-pink-300/20 sm:bg-[#12152b] px-0 py-4 sm:p-6 space-y-4">
-      <h3 className="font-bold text-xl">5. {t('sp.step5')}</h3><SpeakingRecorder prompt={lesson.prompt}/>
+      <h3 className="px-2 pt-1 text-xl font-bold leading-relaxed sm:px-0 sm:pt-0">5. {t('sp.step5')}</h3><SpeakingRecorder prompt={lesson.prompt}/>
       <p className="text-sm text-slate-300 leading-7">{t('sp.step5.note')}</p>
       {[t('sp.check1'),t('sp.check2'),t('sp.check3')].map((label,i)=><label key={label} className="flex items-start gap-3 p-3 rounded-xl bg-white/5 text-sm leading-7"><input type="checkbox" checked={checks[i]} onChange={e=>setChecks(p=>p.map((v,j)=>i===j?e.target.checked:v))} className="mt-2 w-5 h-5 accent-pink-300 shrink-0"/>{label}</label>)}
       <button disabled={!ready || completed} onClick={onComplete} className="min-h-14 w-full flex items-center justify-center gap-2 rounded-xl bg-emerald-200 px-4 font-bold text-slate-950 disabled:bg-white/10 disabled:text-slate-400"><CheckCircle2 size={20}/>{completed ? t('sp.complete.done') : t('sp.complete.save')}</button>
