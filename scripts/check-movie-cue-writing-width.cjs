@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');for(const [n,c]of [['MovieCueRecall','px-2 py-4 sm:px-4 text-base leading-8'],['MovieRecallReview','px-2 py-3 sm:px-3 text-base leading-8']])a(fs.readFileSync('src/components/'+n+'.tsx','utf8').includes(c));console.log('Movie recall draft/note8px mobile horizontal with vertical/desktop padding preserved PASS');
