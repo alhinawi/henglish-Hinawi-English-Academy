@@ -178,6 +178,7 @@ const checks = [
   'check-scenario-review-rewrite.cjs',
   'check-minimal-pair-navigation.cjs',
   'check-speaking-transfer-practice.cjs',
+  'check-speaking-transfer-writing-width.cjs',
   'check-speaking-followup-meanings.cjs',
   'check-speaking-followup-private-replies.cjs',
   'check-speaking-lesson-followups.cjs',
