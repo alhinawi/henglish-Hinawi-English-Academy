@@ -37,6 +37,7 @@ const checks = [
   'check-scenario-active-scene-mobile-width.cjs',
   'check-pronunciation-word-mobile-width.cjs',
   'check-movie-retelling-mobile-width.cjs',
+  'check-movie-retelling-writing-width.cjs',
   'check-tutor-rehearsal-mobile-width.cjs',
   'check-pronunciation-plan-mobile-width.cjs',
   'check-pronunciation-sound-meaning-spacing.cjs',
