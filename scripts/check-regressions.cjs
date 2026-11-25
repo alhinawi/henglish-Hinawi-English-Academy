@@ -71,6 +71,7 @@ const checks = [
   'check-scenario-reply-outer-mobile-inset.cjs',
   'check-scenario-vocabulary-clear-draft-focus.cjs',
   'check-movie-own-plan-outer-mobile-inset.cjs',
+  'check-translation-revision-outer-mobile-inset.cjs',
   'check-pronunciation-plan-mobile-width.cjs',
   'check-pronunciation-sound-meaning-spacing.cjs',
   'check-scenario-vocabulary-mobile-width.cjs', 'check-speaking-topic-mobile-width.cjs', 'check-movie-recall-mobile-width.cjs', 'check-scenario-conversation-mobile-width.cjs', 'check-speaking-role-mobile-width.cjs',
