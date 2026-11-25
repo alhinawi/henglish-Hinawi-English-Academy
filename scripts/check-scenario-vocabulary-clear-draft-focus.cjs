@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/ScenarioVocabulary.tsx','utf8').includes("onClick={()=>{setDrafts(value=>({...value,[vocab.en]:''}));document.getElementById(`scenario-vocab-draft-${idx}`)?.focus();}}"));console.log('Scenario vocabulary clear returns focus to its matching word textarea PASS');
