@@ -64,6 +64,7 @@ const checks = [
   'check-pronunciation-response-note-writing-width.cjs',
   'check-pronunciation-review-note-writing-width.cjs',
   'check-speaking-review-note-writing-width.cjs',
+  'check-scenario-review-outer-mobile-inset.cjs',
   'check-pronunciation-plan-mobile-width.cjs',
   'check-pronunciation-sound-meaning-spacing.cjs',
   'check-scenario-vocabulary-mobile-width.cjs', 'check-speaking-topic-mobile-width.cjs', 'check-movie-recall-mobile-width.cjs', 'check-scenario-conversation-mobile-width.cjs', 'check-speaking-role-mobile-width.cjs',
