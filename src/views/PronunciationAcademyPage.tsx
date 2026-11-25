@@ -126,7 +126,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
       {audioMuted && <p role="status" className="rounded-xl border border-amber-300/30 p-4 text-sm text-amber-200">{t('w3.voice.muted')}</p>}
       {audioError && <p role="alert" className="rounded-xl border border-amber-300/30 p-4 text-sm text-amber-200">{t('listen.audioError')}</p>}
       {/* 1. MINIMAL PAIRS TRAINER */}
-      <section className="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 space-y-8">
+      <section className="glass-panel rounded-3xl px-2 py-6 sm:px-10 sm:py-10 border border-white/10 space-y-8">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-white/10 min-w-0">
           <div>
             <h2 className="text-xl sm:text-2xl font-black text-white flex items-center gap-2">
@@ -160,7 +160,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           </div>
         </div>
 
-        <div className="space-y-3 rounded-2xl border border-cyan-200/20 bg-[#0c0b20] p-4">
+        <div className="space-y-3 rounded-2xl border border-cyan-200/20 bg-[#0c0b20] px-2 py-4 sm:px-4">
           <label htmlFor="pronunciation-pair-picker" className="block text-sm font-bold text-cyan-100">{t('pa.navigator.choose')}</label>
           <select id="pronunciation-pair-picker" value={activePairIdx} onChange={event => { resetAudio(); setActivePairIdx(Number(event.target.value)); }} dir="ltr" className="min-h-12 w-full rounded-xl border border-white/20 bg-[#151329] p-3 text-sm text-white">{MINIMAL_PAIRS_DATA.map((item,index) => <option key={item.id} value={index}>{index+1}. {item.wordA} / {item.wordB} · {item.ipaA} / {item.ipaB}</option>)}</select>
           <p role="status" className="text-xs leading-7 text-slate-300">{t('pa.navigator.position').replace('{current}',String(activePairIdx+1)).replace('{total}',String(MINIMAL_PAIRS_DATA.length))}</p>
@@ -172,7 +172,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Sound A */}
-          <div className="p-6 rounded-3xl bg-linear-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
+          <div className="px-2 py-6 sm:px-6 rounded-3xl bg-linear-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
             <span className="text-xs font-bold text-[#ffd166] en">{pair.soundA}</span>
             <div className="en text-4xl sm:text-5xl font-black text-white">{pair.wordA}</div>
             <div className="en text-sm font-mono text-[#41e7ff]">{pair.ipaA}</div>
@@ -181,7 +181,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <button
               aria-pressed={audioActive === pair.wordA}
               onClick={() => playWord(pair.wordA)}
-              className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
+              className="min-h-11 px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
               {audioActive === pair.wordA ? <Square className="w-4 h-4 text-[#ffd166]" aria-hidden="true" /> : <Volume2 className="w-4 h-4 text-[#ffd166]" aria-hidden="true" />}
               <span>{audioActive === pair.wordA ? t('listen.stopAudio') : t('pa.listenA')}</span>
@@ -189,7 +189,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           </div>
 
           {/* Sound B */}
-          <div className="p-6 rounded-3xl bg-linear-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
+          <div className="px-2 py-6 sm:px-6 rounded-3xl bg-linear-to-br from-[#171632] to-[#0c0b20] border border-white/15 text-center space-y-4 shadow-xl">
             <span className="text-xs font-bold text-[#ff8bb9] en">{pair.soundB}</span>
             <div className="en text-4xl sm:text-5xl font-black text-white">{pair.wordB}</div>
             <div className="en text-sm font-mono text-[#ff8bb9]">{pair.ipaB}</div>
@@ -198,7 +198,7 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
             <button
               aria-pressed={audioActive === pair.wordB}
               onClick={() => playWord(pair.wordB)}
-              className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
+              className="min-h-11 px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs inline-flex items-center gap-2 cursor-pointer transition-colors"
             >
               {audioActive === pair.wordB ? <Square className="w-4 h-4 text-[#ff4f9a]" aria-hidden="true" /> : <Volume2 className="w-4 h-4 text-[#ff4f9a]" aria-hidden="true" />}
               <span>{audioActive === pair.wordB ? t('listen.stopAudio') : t('pa.listenB')}</span>
@@ -208,13 +208,13 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         </div>
 
         {/* Pronunciation Tip */}
-        <div className="p-4 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-white space-y-1">
+        <div className="px-2 py-4 sm:px-4 rounded-2xl bg-[#ffd166]/10 border border-[#ffd166]/30 text-xs sm:text-sm text-white space-y-1">
           <strong className="text-[#ffd166]">{t('pa.tipTitle')} </strong>
           <span>{txText(appText, pair.tipAr)}</span>
         </div>
 
         {/* Ear Training Game */}
-        <div className="p-6 rounded-2xl bg-[#09091a] border border-white/10 text-center space-y-4">
+        <div className="px-2 py-6 sm:px-6 rounded-2xl bg-[#09091a] border border-white/10 text-center space-y-4">
           <h3 className="text-base font-black text-white">{t('pa.earGameTitle')}</h3>
           <p className="text-xs text-[#b9b6d5]">
             {t('pa.earGameBlurb')}
@@ -223,24 +223,24 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
           <button
             onClick={handleTestEar}
             aria-pressed={audioActive === 'quiz'}
-            className="px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
+            className="min-h-11 px-6 py-3 rounded-xl bg-linear-to-r from-[#ffd166] to-[#41e7ff] text-[#0c0b20] font-black text-xs sm:text-sm hover:brightness-110 shadow-lg cursor-pointer"
           >
            {audioActive === 'quiz' ? t('listen.stopAudio') : t('pa.playRandom')}
           </button>
 
           {testedSound && (
-            <div className="pt-2 flex items-center justify-center gap-4">
+            <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
               <button
                 onClick={() => handleGuess('A')}
                 disabled={quizScore !== null}
-                className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer disabled:opacity-60 disabled:cursor-default"
+                className="min-h-11 px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer disabled:opacity-60 disabled:cursor-default"
               >
                 {t('pa.wasLabel')} {pair.wordA} (A)
               </button>
               <button
                 onClick={() => handleGuess('B')}
                 disabled={quizScore !== null}
-                className="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer disabled:opacity-60 disabled:cursor-default"
+                className="min-h-11 px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm cursor-pointer disabled:opacity-60 disabled:cursor-default"
               >
                 {t('pa.wasLabel')} {pair.wordB} (B)
               </button>
