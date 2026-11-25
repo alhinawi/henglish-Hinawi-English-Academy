@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict'),s=fs.readFileSync('src/components/SpeakingFollowupAttempt.tsx','utf8');a.equal(s.split('px-2 py-3 sm:px-3 text-base leading-8').length-1,2);console.log('Speaking followup reply/note mobile8px horizontal12px vertical desktop12px preserved PASS');
