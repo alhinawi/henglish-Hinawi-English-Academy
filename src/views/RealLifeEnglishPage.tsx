@@ -234,7 +234,7 @@ export const RealLifeEnglishPage: React.FC<RealLifeEnglishPageProps> = ({ onNavi
                 className="group overflow-hidden rounded-2xl border text-start transition-colors cursor-pointer flex flex-col glass-panel border-white/10 hover:border-[#ffd166]/60 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-cyan-200"
               >
                 <img src={sc.backdropImage} alt={t('rle.topicPhoto').replace('{title}', sc.title)} loading="lazy" className="h-40 w-full object-cover" />
-                <div className="flex grow flex-col justify-between gap-4 p-5">
+                <div className="flex grow flex-col justify-between gap-4 px-2 py-5 sm:px-5">
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     {(() => { const IconCmp = SCENARIO_ICONS[sc.id] || Compass; return <IconCmp className="w-7 h-7 text-[#ffd166]" />; })()}
