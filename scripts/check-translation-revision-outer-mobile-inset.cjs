@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/translation/PracticeModeTab.tsx','utf8').includes('border-0 border-cyan-200/20 p-0 sm:border sm:p-4 text-start space-y-3'));console.log('Translation revision outer mobile inset removed,desktop retained PASS');
