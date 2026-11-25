@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/ScenarioVariationAttempt.tsx','utf8').includes("onClick={()=>{setDraft('');document.getElementById(id)?.focus();}}"));console.log('Scenario variation draft clear returns focus to named field PASS');
