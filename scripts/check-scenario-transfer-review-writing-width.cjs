@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict'),s=fs.readFileSync('src/components/ScenarioTransferReview.tsx','utf8');a(s.includes('px-2 py-3 sm:px-3 text-base leading-8'));for(const v of ['maxLength={300}','dir="auto"','setTarget(event.target.value)'])a(s.includes(v));console.log('Scenario transfer review mobile8pxhorizontal/12pxvertical desktop12px preserved PASS');
