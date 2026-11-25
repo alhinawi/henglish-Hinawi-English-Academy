@@ -16,7 +16,7 @@ export function MinimalPairRehearsal({ pair, onToggle }: { pair: MinimalPair; on
   const context = MINIMAL_PAIR_CONTEXT[pair.id];
   const prompt = contextMode && context ? `${context.a} ${context.b}` : `${pair.wordA}, ${pair.wordB}. ${pair.wordA}, ${pair.wordB}.`;
   useEffect(() => () => stopSpeech(), []);
-  return <section aria-label={t('pa.pairRecord.title')} className="rounded-2xl border border-[#ffd166]/25 bg-[#151326] p-2 sm:p-6 space-y-4">
+  return <section aria-label={t('pa.pairRecord.title')} className="rounded-2xl border-0 sm:border border-[#ffd166]/25 sm:bg-[#151326] p-0 sm:p-6 space-y-4">
     <h3 className="text-lg font-bold text-[#ffd166]">{t('pa.pairRecord.title')}</h3>
     <p className="text-sm leading-7 text-slate-300">{t('pa.pairRecord.intro')}</p>
     <p dir="ltr" lang="en" className="text-center text-xl font-bold leading-9 text-white">{pair.wordA} · {pair.wordB} · {pair.wordA} · {pair.wordB}</p>
