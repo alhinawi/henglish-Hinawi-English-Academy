@@ -12,7 +12,7 @@ export const ScenarioConversationReview: React.FC<{scenario:SimulationScenario; 
   <p className="text-sm leading-7 text-slate-300">{t('rle.review.note')}</p>
   {scenario.turns.map((turn,index)=>{
    const chosen=choices[turn.id];const model=turn.options.find(option=>option.isOptimal);
-   return <div key={turn.id} className="rounded-xl border border-white/15 p-2 sm:p-4 space-y-3">
+   return <div key={turn.id} className="rounded-xl border-0 sm:border border-white/15 p-0 sm:p-4 space-y-3">
     <button type="button" aria-expanded={opened===turn.id} aria-controls={`review-${turn.id}`} onClick={()=>setOpened(value=>value===turn.id?null:turn.id)} className="min-h-11 w-full text-start text-sm font-bold text-cyan-100">{t('rle.review.turn').replace('{number}',String(index+1))} · {turn.speaker}</button>
     {opened===turn.id&&<div id={`review-${turn.id}`} className="space-y-4">
      <div><h4 className="text-xs text-slate-400">{t('rle.review.prompt')}</h4><p dir="ltr" lang="en" className="text-left text-sm leading-7 text-white">{turn.textEn}</p><LessonSpeechButton key={`review-audio:${turn.textEn}`} text={turn.textEn} label={t('rle.review.listen.prompt')} className="min-h-11 rounded-xl border border-cyan-200/30 px-3 text-xs font-bold text-cyan-100"/></div>
