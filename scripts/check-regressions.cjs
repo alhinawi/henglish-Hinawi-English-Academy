@@ -88,6 +88,7 @@ const checks = [
   'check-speaking-heading-breathing-room.cjs',
   'check-movie-speaking-outer-mobile-inset.cjs',
   'check-scenario-review-turn-mobile-inset.cjs',
+  'check-job-interview-expansion.cjs',
   'check-pronunciation-plan-mobile-width.cjs',
   'check-pronunciation-sound-meaning-spacing.cjs',
   'check-scenario-vocabulary-mobile-width.cjs', 'check-speaking-topic-mobile-width.cjs', 'check-movie-recall-mobile-width.cjs', 'check-scenario-conversation-mobile-width.cjs', 'check-speaking-role-mobile-width.cjs',
