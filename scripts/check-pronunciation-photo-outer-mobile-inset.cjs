@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/PronunciationPhotoPractice.tsx','utf8').includes('space-y-5 rounded-3xl border-0 sm:border border-pink-200/25 sm:bg-[#151329] p-0 sm:p-8'));console.log('Pronunciation photo activity outer mobile inset removed,desktop retained PASS');
