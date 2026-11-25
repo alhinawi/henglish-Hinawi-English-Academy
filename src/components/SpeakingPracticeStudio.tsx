@@ -129,9 +129,9 @@ export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesso
       {[1, 0, 2].map(i => <button key={i} onClick={() => {setChoice(i); setAnswers(p => ({...p, choice: i === lesson.answer}));}} className={`w-full text-left rounded-xl border px-2 py-4 sm:px-4 min-h-14 ${choice === i ? i === lesson.answer ? 'border-emerald-300 bg-emerald-300/10' : 'border-rose-300 bg-rose-300/10' : 'border-white/10 bg-white/5'}`} dir="ltr">{lesson.options[i]}</button>)}
       {choice !== null && <p role="status" className="text-sm leading-7 text-cyan-100">{choice === lesson.answer ? `${t('sp.step2.correct')} ${txText(appText, lesson.dialogue[1].ar)}` : `${t('sp.step2.retry')} ${txText(appText, lesson.tip)}`}</p>}
     </section>
-    <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">
-      <h3 className="font-bold text-xl">3. {t('sp.step3')}</h3><p dir="ltr" className="text-left leading-8">{lesson.gapPrompt}</p>
-      <input aria-label={t('sp.step3.aria')} dir="ltr" value={gap} onChange={e => {setGap(e.target.value);setGapChecked(false);setAnswers(p=>({...p,gap:false}));}} className="w-full rounded-xl border border-white/20 bg-black/20 p-4" autoComplete="off" placeholder="Type the missing word"/>
+    <section className="rounded-3xl border border-white/10 bg-[#12152b] px-2 py-4 sm:p-6 space-y-4">
+      <h3 className="font-bold text-xl">3. {t('sp.step3')}</h3><p lang="en" dir="ltr" className="text-left leading-8">{lesson.gapPrompt}</p>
+      <input aria-label={t('sp.step3.aria')} dir="ltr" value={gap} onChange={e => {setGap(e.target.value);setGapChecked(false);setAnswers(p=>({...p,gap:false}));}} className="w-full rounded-xl border border-white/20 bg-black/20 px-2 py-4 sm:px-4" autoComplete="off" placeholder="Type the missing word"/>
       <button onClick={() => {setGapChecked(true);setAnswers(p=>({...p,gap:clean(gap)===clean(lesson.gap)}));}} className="min-h-12 rounded-xl bg-cyan-200 text-slate-950 px-5 font-bold">{t('sp.step3.check')}</button>
       {gapChecked && <p role="status" className="text-sm text-cyan-100">{answers.gap ? t('sp.step3.correct') : `${t('sp.step3.hintA')} ${lesson.gap[0]}${t('sp.step3.hintB')} ${lesson.gap.length}. ${t('sp.step3.hintC')}`}</p>}
     </section>
