@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/ScenarioConversationReview.tsx','utf8').includes('rounded-xl border-0 sm:border border-white/15 p-0 sm:p-4 space-y-3'));console.log('Scenario turn mobile outer inset removed,desktop16px retained PASS');

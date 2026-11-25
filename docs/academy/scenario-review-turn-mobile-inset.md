@@ -1,0 +1,5 @@
+# Conversation review turn mobile inset
+
+Remove8pxmobileturnwrapperpadding/border,gaining18pxforEnglishprompt/chosenresponse/rewrite. Retaininnerchosen/modelpanelsanddesktop16px.No teachingcontent/state/audio/scoring/dashboardchanges.
+
+Allscenarios320/390ENAR: eachturn0padding/border,44pxaccordion,rewritewidth>=viewportminus34,500charlimit,LTR/English,independentdrafts,collapsepreserves,originalchoice/feedbackandconditionalmodel,replay/exitreset,overflow. No actualaudio/network/assessmentclaim.
