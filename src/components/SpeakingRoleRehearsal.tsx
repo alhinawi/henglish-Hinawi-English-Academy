@@ -18,7 +18,7 @@ export function SpeakingRoleRehearsal({ lesson }: { lesson: SpeakingLesson }) {
   const reset = (nextRole = role) => { stopSpeech(); setRole(nextRole); setTurn(0); setRevealed(false); setMeaningOpen(false); };
   if (!line) return null;
   const yourTurn = line.role === role;
-  return <section className="rounded-3xl border border-pink-200/25 bg-[#17152b] p-2 sm:p-6 space-y-4" aria-label={t('sp.roleplay.title')}>
+  return <section className="rounded-3xl border-0 sm:border border-pink-200/25 sm:bg-[#17152b] p-0 sm:p-6 space-y-4" aria-label={t('sp.roleplay.title')}>
     <div className="flex flex-wrap items-start justify-between gap-3"><div className="space-y-2"><h3 className="text-xl font-bold text-pink-100">{t('sp.roleplay.title')}</h3><p className="text-sm leading-7 text-slate-300">{t('sp.roleplay.intro')}</p></div><button type="button" aria-expanded={open} onClick={() => { reset(); setOpen(v => !v); }} className="min-h-11 rounded-xl border border-pink-200/30 px-4 text-sm font-bold text-pink-200">{t(open ? 'sp.roleplay.close' : 'sp.roleplay.open')}</button></div>
     {open && <div className="space-y-4">
       <div role="group" aria-label={t('sp.roleplay.choose')} className="flex flex-wrap gap-2">{['A','B'].map(value => <button key={value} type="button" aria-pressed={role === value} onClick={() => reset(value)} className={`min-h-11 rounded-xl border px-4 text-sm font-bold ${role === value ? 'border-pink-200 bg-pink-200 text-slate-950' : 'border-white/15 text-slate-200'}`}>{t('sp.roleplay.role')} {value}</button>)}</div>
