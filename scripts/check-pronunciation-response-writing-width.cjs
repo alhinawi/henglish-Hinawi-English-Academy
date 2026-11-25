@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict'),s=fs.readFileSync('src/components/PronunciationPhotoResponse.tsx','utf8');a(s.includes('px-2 py-3 sm:px-3 text-base leading-8'));console.log('Pronunciation photo response mobile8px horizontal12px vertical desktop12px preserved PASS');
