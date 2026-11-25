@@ -1,0 +1,49 @@
+{
+  "scenario": "sim-job-interview",
+  "pairs": {
+    "مقابلة خيالية من أربع مراحل: اشرح مشروع، واتعامل مع تعطّل خطة، واحكي عن التعاون، واسأل عن الدور. الأمثلة للتدريب؛ في مقابلة حقيقية استخدم خبرتك وتفاصيلك الصادقة.": "A fictional four-stage interview: explain a project, handle a setback, discuss teamwork, and ask about the role. These examples are for practice; in a real interview, use your own experience and truthful details.",
+    "المثال الخيالي بيوضح دور وخطوة ونتيجة. في إجابتك الحقيقية استخدم أفعال وتفاصيل دقيقة عنك؛ مش لازم تستخدم كلمات كبيرة أو نسبة مئوية، وما تنسبش إنجاز المثال لنفسك.": "This fictional example gives a role, action and result. In your real answer, use accurate verbs and details about yourself. Impressive words or a percentage are not required; do not claim the example as your own achievement.",
+    "الإجابة عامة ومش بتوضح دورك أو نتيجة. اختار مثال حقيقي واشرح إنت عملت إيه وإيه اللي حصل أو اتعلمته؛ الأرقام مفيدة بس لو دقيقة ومناسبة.": "This answer is vague and does not explain your role or a result. Choose a real example and explain what you did and what happened or what you learned. Numbers help only when accurate and relevant.",
+    "ولا مرة حصلت أي مشكلة في أي مشروع اشتغلت عليه.": "Nothing has ever gone wrong on any of my projects.",
+    "الادعاء المطلق مش بيقدم مثال على التعامل مع مشكلة. اختار موقف صادق واشرح استجابتك، حتى لو النتيجة ما كانتش مثالية.": "This absolute claim gives no example of handling a problem. Choose an honest situation and explain your response, even if the outcome was not perfect.",
+    "اختبار فشل قبل إصدار. بلّغت الفريق، وساعدت نلاقي السبب، وضفت فحص قبل ما نحاول تاني.": "A test failed before a release. I told the team, helped find the cause, and added a check before we tried again.",
+    "المثال الخيالي بيحدد مشكلة وخطوات واضحة بدل اللوم. لو هتستخدم الفكرة في مقابلة حقيقية، بدّلها بموقف حصل لك فعلاً واشرح اللي اتعلمته.": "This fictional example names a problem and clear actions instead of blame. In a real interview, replace it with something that actually happened to you and explain what you learned.",
+    "كانت غلطة زمايلي بالكامل، فاستنيتهم يصلحوا كل حاجة.": "It was entirely my colleagues' fault, so I waited for them to fix everything.",
+    "الرد بيركّز على لوم الزملاء ومش بيوضح مساهمتك. اشرح إيه اللي كان تحت سيطرتك وإزاي ساعدت أو طلبت مساعدة.": "The reply focuses on blaming colleagues and gives no contribution of your own. Explain what you could control and how you helped or asked for help.",
+    "الموعد النهائي كان صعب.": "The deadline was difficult.",
+    "الجملة مرتبطة بالمشكلة بس ناقصة. أضف خطوة محددة عملتها، وبعدها النتيجة أو اللي اتعلمته لو تعرفه.": "This sentence is relevant but incomplete. Add a specific action you took, then the outcome or what you learned if you know it.",
+    "احكي لي عن مرة مشروع ما مشيش حسب الخطة. اتصرفت إزاي؟": "Tell me about a time a project did not go as planned. How did you respond?",
+    "في السؤال عن تعطّل خطة، وضّح المشكلة وخطوتك واللي اتعلمته. استخدم الماضي لو بتحكي عن موقف انتهى؛ اعترف بدورك من غير ما تلوم الآخرين أو تخترع نتيجة.": "For a setback question, explain the problem, your action and what you learned. Use past forms for a finished event. Own your part without blaming others or inventing a result.",
+    "شرحت فكرتي.": "I explained my idea.",
+    "بداية مناسبة، بس السؤال عن التعاون مع اختلاف الرأي. أضف إزاي سمعت زميلك أو اتفقتوا على خطوة مشتركة.": "This is a relevant start, but the question asks about working through disagreement. Add how you listened to your colleague or agreed on a shared next step.",
+    "أنا دايمًا بتمسك بفكرتي لأن الاختلاف تضييع وقت.": "I always insist on my idea because disagreement wastes time.",
+    "الرد بيستبعد وجهة النظر التانية. وضّح إزاي بتناقشوا الأسباب وتقارنوا الاختيارات بدل فرض رأي واحد.": "This reply dismisses the other view. Explain how you discuss reasons and compare choices instead of imposing one opinion.",
+    "سمعت مخاوفهم، وشرحت أسبابي، واقترحت تجربة صغيرة عشان نقارن الفكرتين.": "I listened to their concerns, explained my reasons, and suggested a small test so we could compare both ideas.",
+    "المثال الخيالي بيوضح الاستماع وشرح الأسباب وخطوة مشتركة. في إجابتك استخدم موقف حقيقي وحدد مساهمتك من غير ما تنسب شغل الفريق كله لنفسك.": "This fictional example shows listening, reasons and a shared next step. Use a real situation in your answer and name your contribution without taking credit for all the team's work.",
+    "ممكن قائمة الأكل من فضلك؟": "Could I have the restaurant menu, please?",
+    "الطلب مهذب لكنه مش متعلق بالسؤال عن التعاون في الشغل. ارجع لمثال عن اختلاف رأي وطريقة التعامل معاه.": "The request is polite but unrelated to teamwork at work. Return to an example of disagreement and how you handled it.",
+    "اشتغلت إزاي مع زمايل كان رأيهم مختلف عن رأيك؟": "How have you worked with colleagues who had a different view from yours?",
+    "فرّق بين الاختلاف والهجوم الشخصي. صف إزاي سمعت الرأي التاني وقارنتوا البدائل. ممكن تستخدم الماضي لو بتحكي مثال، ومش لازم تدّعي إنك كسبت النقاش.": "Separate disagreement from a personal attack. Describe how you listened and compared options. You can use past forms for an example; you do not need to claim you won the discussion.",
+    "النجاح في أول كام شهر هيبقى شكله إيه، والفريق بيساعد الزميل الجديد إزاي؟": "What would success look like in the first few months, and how does the team support a new colleague?",
+    "السؤال بيطلب توقعات واضحة وفهم لدعم الفريق. ده اختيار مناسب من اختيارات كتير؛ اسأل عن اللي يهمك فعلاً، وممكن تناقش الراتب والشروط في وقت مناسب.": "The question asks for clear expectations and how the team supports people. It is one of many suitable choices. Ask about what matters to you; pay and terms can also be discussed at an appropriate time.",
+    "ما عنديش أسئلة لأني عارف كل حاجة عن الفريق ده.": "I have no questions because I already know everything about this team.",
+    "مش لازم تسأل لو كل أسئلتك اتجاوبت، لكن ادعاء معرفة كل حاجة مش مبرر مفيد. ممكن توضح إن أسئلتك اتجاوبت أو تسأل عن تفصيلة ناقصة.": "You do not have to ask a question if yours were already answered, but claiming to know everything is not a useful reason. You could say your questions were answered or ask about a missing detail.",
+    "قول لي إن الوظيفة ليا قبل ما أسأل أي حاجة.": "Tell me the job is mine before I ask anything.",
+    "الرد بيطلب ضمان تعيين بدل سؤال عن الدور. اسأل عن المسؤوليات أو الخطوات الجاية من غير ما تفترض إنك اتقبلت.": "This demands a job guarantee instead of asking about the role. Ask about responsibilities or next steps without assuming you have been hired.",
+    "الفريق عامل إزاي؟": "What is the team like?",
+    "سؤال متعلق بالموضوع ومقبول، لكنه واسع. ممكن تحدده بسؤال عن التعاون اليومي أو دعم الزميل الجديد عشان تحصل على تفاصيل أنفع.": "This is a relevant, acceptable question, but it is broad. You could ask more specifically about daily teamwork or support for a new colleague to get more useful detail.",
+    "قبل ما نخلص، تحب تسأل إيه عن الدور أو الفريق؟": "Before we finish, what would you like to ask about the role or the team?",
+    "السؤال عن توقعات الدور أو طريقة تعاون الفريق ممكن يساعدك تفهم الوظيفة. صيغة سؤال زي What would success look like? مناسبة هنا؛ مفيش سؤال واحد إلزامي، ومناقشة الشروط ليها سياقها.": "Asking about role expectations or how the team works can help you understand the job. A question such as What would success look like? fits here. No single question is compulsory, and employment terms have their own context."
+  },
+  "removed": [
+    "تدريب احترافي للإجابة عن أسئلة المقابلات: تحدث عن نقاط قوتك، أسباب رغبتك بالانضمام، وإنجازاتك السابقة.",
+    "إجابة مذهلة! استخدام أفعال قوية (spearheaded, restructured) مع أرقام دقيقة يعطي انطباعاً قيادياً مبهراً.",
+    "إجابة عامة وغامضة جداً. في المقابلات يجب ذكر أمثلة محددة وإنجازات بالأرقام."
+  ],
+  "turn_ids": [
+    "job-turn-1",
+    "job-turn-2",
+    "job-turn-3",
+    "job-turn-4"
+  ]
+}

@@ -3,7 +3,7 @@ const assert = require('node:assert/strict');
 const rows = require('./fixtures/scenario-contextual-teaching-tips.json');
 const data = JSON.parse(fs.readFileSync('src/data/realLifeSimulationsData.ts', 'utf8').split('export const REAL_LIFE_SCENARIOS: SimulationScenario[] = ')[1].trim().replace(/;$/, ''));
 assert.equal(data.length, 9);
-assert.equal(data.flatMap(s => s.turns).filter(t => t.grammarTipAr).length, 23);
+assert.equal(data.flatMap(s => s.turns).filter(t => t.grammarTipAr).length, 26);
 assert.equal(rows.length, 14);
 for (const row of rows) {
   const [scenario, turn] = row.key.split(':');
