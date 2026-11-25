@@ -105,7 +105,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "خذي الجواز والتذكرة الآن.",
             "isOptimal": false,
             "score": 3,
-            "feedbackAr": "الصيغة جافة وغير مهذبة. من الأفضل دائماً استخدام Here is my passport من فضلك."
+            "feedbackAr": "الطلب هنا مباشر وجاف. ممكن تقدّم المستندات بصيغة \"Here is my passport.\" دي صيغة مناسبة للموقف، مش الصيغة الوحيدة المهذبة."
           },
           {
             "textEn": "Yes, I am having passport in pocket.",
@@ -328,7 +328,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "أحضر لي ماء سريعاً.",
             "isOptimal": false,
             "score": 2,
-            "feedbackAr": "صيغة أمر مباشرة وتعتبر غير مقبولة في الثقافة الإنجليزية."
+            "feedbackAr": "الأمر مع الاستعجال هنا ممكن يبان حاد مع النادل. طلب زي \"Could we have some water, please?\" ألطف في الموقف ده؛ مش كل صيغة أمر غير مهذبة في كل سياق."
           },
           {
             "textEn": "I have a reservation under Karim.",
@@ -579,7 +579,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "هات قهوة. كبيرة. بسرعة.",
             "isOptimal": false,
             "score": 2,
-            "feedbackAr": "صيغة أمر حادة جداً وغير مهذبة في الثقافة الإنجليزية. استخدم Can I have بدلاً من Give me."
+            "feedbackAr": "الأمر والاستعجال هنا ممكن يبانوا حادّين مع الموظف. ممكن تقول \"Can I have a coffee, please?\" أو طلب مهذب تاني يناسب الموقف؛ صيغة الأمر مش ممنوعة في كل السياقات."
           },
           {
             "textEn": "I am wanting one coffee, if you are okay.",
@@ -683,7 +683,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "لا. لا أريد أشياء إضافية منك الآن.",
             "isOptimal": false,
             "score": 3,
-            "feedbackAr": "الرد جاف ومباشر بشكل مزعج. كلمة No لوحدها تعتبر غير مهذبة؛ أضف thanks دائماً."
+            "feedbackAr": "الرد ده ممكن يبان جاف مع الموظف. \"No, thanks.\" طريقة شائعة لرفض الإضافة بلطف، لكن النبرة والسياق مهمين؛ مش كل رد بكلمة \"No\" قليل الأدب."
           },
           {
             "textEn": "Could I check in my luggage here?",
@@ -728,14 +728,14 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "شكراً جزيلاً، وأنتي كمان! أتمنى لك وردية عمل سعيدة.",
             "isOptimal": true,
             "score": 10,
-            "feedbackAr": "ختام دافئ واحترافي يترك انطباعاً رائعاً، وعبارة you too هي الرد الذهبي السريع."
+            "feedbackAr": "ده ختام ودود يناسب التمنّي بيوم سعيد هنا. \"Thanks, you too!\" رد ممكن، مش رد إلزامي أو صيغة تنفع لكل أنواع الوداع."
           },
           {
             "textEn": "Could I have my boarding pass now?",
             "textAr": "ممكن بطاقة صعود الطيارة دلوقتي؟",
             "isOptimal": false,
             "score": 5,
-            "feedbackAr": "إحنا في كافيه مش مطار. الرد المناسب على التمنيات هو الشكر ورد التحية."
+            "feedbackAr": "إحنا في كافيه، مش مطار؛ طلب بطاقة الصعود مش مرتبط بالوداع. ممكن ترد بالشكر أو تمنّي يوم سعيد حسب السياق، من غير صيغة ثابتة إلزامية."
           }
         ]
       }
@@ -801,7 +801,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
             "textAr": "حجزت أوضة هنا. هات المفتاح بسرعة، أنا تعبان.",
             "isOptimal": false,
             "score": 3,
-            "feedbackAr": "الطلب جاف ويفتقد الأدب الأساسي. ابدأ بتحية ثم اذكر حجزك بهدوء: I have a reservation."
+            "feedbackAr": "طلب المفتاح بسرعة هنا ممكن يبان حاد، وكمان تركيب الجملة محتاج تعديل. ممكن تقول \"I have a reservation. Could I check in, please?\" التحية اختيار لطيف في بداية الكلام، مش شرط في كل رد مهذب."
           },
           {
             "textEn": "Is this hotel? I want sleeping place for night time.",
