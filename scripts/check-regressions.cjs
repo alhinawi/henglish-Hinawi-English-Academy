@@ -20,6 +20,7 @@ const checks = [
   'check-pronunciation-trainer-mobile-width.cjs',
   'check-real-life-catalog-mobile-width.cjs',
   'check-translation-prompt-mobile-width.cjs',
+  'check-speaking-answer-mobile-width.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
