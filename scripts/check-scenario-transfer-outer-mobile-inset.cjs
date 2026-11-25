@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/ScenarioTransferPractice.tsx','utf8').includes('rounded-3xl border-0 sm:border border-pink-200/25 sm:bg-[#17152b] p-0 space-y-4 sm:p-6'));console.log('Scenario transfer outer mobile inset removed,desktop retained PASS');
