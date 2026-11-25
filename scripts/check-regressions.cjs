@@ -22,6 +22,7 @@ const checks = [
   'check-translation-prompt-mobile-width.cjs',
   'check-speaking-answer-mobile-width.cjs',
   'check-movie-transcript-mobile-width.cjs',
+  'check-tutor-selector-mobile-reading.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
