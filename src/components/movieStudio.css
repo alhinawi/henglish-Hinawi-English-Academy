@@ -26,3 +26,7 @@
   .movie-studio-cue [lang="en"] { font-size: 14px; line-height: 24px; }
   .movie-studio-cue [lang="ar-EG"] { font-size: 12px; line-height: 22px; }
 }
+@media (max-width: 639px) and (orientation: portrait) {
+  .movie-studio-cues { padding-inline: .5rem; }
+  .movie-studio-cue { padding-inline: .5rem; }
+}
