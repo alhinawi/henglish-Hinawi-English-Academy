@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/SpeakingFollowupAttempt.tsx','utf8').includes("onClick={()=>{setDraft('');document.getElementById(id)?.focus();}}"));console.log('Speaking followup clear returns focus to its unique textarea PASS');
