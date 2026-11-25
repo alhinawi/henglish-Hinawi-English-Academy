@@ -124,9 +124,9 @@ export function SpeakingPracticeStudio({ lesson, completed, onComplete }: {lesso
         <p dir="ltr" className="text-left text-base leading-8 font-medium">{line.en}</p>{showAr && line.ar && <p dir="auto" className="text-sm text-slate-300 leading-7 mt-2">{txText(appText, line.ar)}</p>}
       </div>)}
     </section>
-    <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">
+    <section className="rounded-3xl border border-white/10 bg-[#12152b] px-2 py-4 sm:p-6 space-y-4">
       <h3 className="font-bold text-xl">2. {t('sp.step2')}</h3><p dir="ltr" className="text-left leading-8">{lesson.dialogue[0].en}</p>
-      {[1, 0, 2].map(i => <button key={i} onClick={() => {setChoice(i); setAnswers(p => ({...p, choice: i === lesson.answer}));}} className={`w-full text-left rounded-xl border p-4 min-h-14 ${choice === i ? i === lesson.answer ? 'border-emerald-300 bg-emerald-300/10' : 'border-rose-300 bg-rose-300/10' : 'border-white/10 bg-white/5'}`} dir="ltr">{lesson.options[i]}</button>)}
+      {[1, 0, 2].map(i => <button key={i} onClick={() => {setChoice(i); setAnswers(p => ({...p, choice: i === lesson.answer}));}} className={`w-full text-left rounded-xl border px-2 py-4 sm:px-4 min-h-14 ${choice === i ? i === lesson.answer ? 'border-emerald-300 bg-emerald-300/10' : 'border-rose-300 bg-rose-300/10' : 'border-white/10 bg-white/5'}`} dir="ltr">{lesson.options[i]}</button>)}
       {choice !== null && <p role="status" className="text-sm leading-7 text-cyan-100">{choice === lesson.answer ? `${t('sp.step2.correct')} ${txText(appText, lesson.dialogue[1].ar)}` : `${t('sp.step2.retry')} ${txText(appText, lesson.tip)}`}</p>}
     </section>
     <section className="rounded-3xl border border-white/10 bg-[#12152b] p-4 sm:p-6 space-y-4">
