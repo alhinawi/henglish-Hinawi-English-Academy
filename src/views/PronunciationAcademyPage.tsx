@@ -276,11 +276,11 @@ export const PronunciationAcademyPage: React.FC<PronunciationAcademyPageProps> =
         <div className="flex flex-wrap gap-2" role="group" aria-label={t('pa.vowelFilter')}>
           {(['all', 'pure', 'glide'] as const).map(group => <button key={group} type="button" aria-pressed={vowelGroup === group} onClick={() => setVowelGroup(group)} className={`min-h-11 rounded-xl border px-4 text-sm font-bold ${vowelGroup === group ? 'border-cyan-200 bg-cyan-200 text-slate-950' : 'border-white/15 bg-white/5 text-slate-200'}`}>{t(`pa.group.${group}`)}</button>)}
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 gap-x-2 gap-y-4 sm:grid-cols-4 sm:gap-4">
           {ipaVowels.map((v, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-2xl bg-[#09091a] border border-white/10 text-center space-y-2 hover:border-[#41e7ff]/40 transition-colors"
+              className="px-2 py-4 sm:px-4 rounded-2xl bg-[#09091a] border border-white/10 text-center space-y-2 hover:border-[#41e7ff]/40 transition-colors"
             >
               <div className="en text-2xl font-black text-[#ffd166]">{v.symbol}</div>
               <div className="en text-xs font-mono text-white">{v.ex}</div>
