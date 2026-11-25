@@ -18,6 +18,7 @@ const checks = [
   'check-tutor-goal-mobile-width.cjs',
   'check-speaking-catalog-mobile-width.cjs',
   'check-pronunciation-trainer-mobile-width.cjs',
+  'check-real-life-catalog-mobile-width.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
