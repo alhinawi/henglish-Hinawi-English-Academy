@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');for(const[f,c]of [['MovieCueSpeaking.tsx','px-2 py-4 sm:px-4'],['MovieOwnWordsReview.tsx','px-2 py-3 sm:px-3']])a(fs.readFileSync('src/components/'+f,'utf8').includes(c+' text-base leading-8'));console.log('Film ownwords plan/note mobile8px horizontal,original vertical/desktop preserved PASS');
