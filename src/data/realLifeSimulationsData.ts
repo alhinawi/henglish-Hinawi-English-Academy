@@ -85,7 +85,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Good morning! Welcome to British Airways. May I please have your passport and booking reference?",
         "textAr": "صباح الخير! مرحباً بكم على متن الخطوط الجوية البريطانية. هل يمكنني الحصول على جواز سفرك ورقم الحجز من فضلك؟",
-        "grammarTipAr": "الرد المؤدب دائماً يبدأ بـ \"Good morning, here you go\" أو \"Certainly, here it is\".",
+        "grammarTipAr": "ممكن تبدأ بتحية لو مناسبة، وتقول مثلاً: \"Here you go\" وإنت بتقدّم المستندات. دي أمثلة، مش بداية إلزامية لكل رد مهذب.",
         "expectedKeywordsForFreeText": [
           "here",
           "passport",
@@ -175,7 +175,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Would you prefer a window seat or an aisle seat for this flight?",
         "textAr": "هل تفضل مقعداً بجوار النافذة أم مقعداً بجانب الممر لهذه الرحلة؟",
-        "grammarTipAr": "السؤال بـ Would you prefer يجاب عنه بـ \"I would prefer...\" أو \"A window seat, please\".",
+        "grammarTipAr": "ممكن تعبّر عن تفضيلك بـ \"I would prefer a window seat\" أو ترد باختصار: \"A window seat, please\". اختار رد يناسب السؤال.",
         "expectedKeywordsForFreeText": [
           "window",
           "aisle",
@@ -262,7 +262,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Good evening, sir. Welcome to The Ivy. Do you have a reservation for this evening?",
         "textAr": "مساء الخير يا سيدي. أهلاً بكم في The Ivy. هل لديكم حجز مسبق لهذه الليلة؟",
-        "grammarTipAr": "اذكر اسم صاحب الحجز: \"Yes, a table for two under the name of...\"",
+        "grammarTipAr": "لو عندك حجز، ممكن تقول: \"A table for two under the name of...\" وتضيف الاسم المسجّل. دي صيغة مقترحة، وممكن تعرّف الحجز بصياغة تانية واضحة.",
         "expectedKeywordsForFreeText": [
           "reservation",
           "name",
@@ -307,7 +307,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Right this way, please. Here are the menus. Can I start you off with something to drink while you decide?",
         "textAr": "تفضل من هنا من فضلك. تفضل قوائم الطعام. هل يمكنني تقديم مشروب لكم أثناء اختيار الوجبة؟",
-        "grammarTipAr": "للطلب المهذب: \"Could I have...\" أو \"We would like...\"",
+        "grammarTipAr": "من صيغ الطلب المهذب هنا: \"Could I have...\" أو \"We would like...\". كمّل باسم الطلب، وممكن تضيف \"please\".",
         "expectedKeywordsForFreeText": [
           "water",
           "drink",
@@ -395,7 +395,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Hello there, please take a seat. What seems to be the problem today?",
         "textAr": "مرحباً بك، تفضل بالجلوس من فضلك. ما هي المشكلة أو الأعراض التي تشعر بها اليوم؟",
-        "grammarTipAr": "لوصف الأعراض الممتدة: نستخدم المضارع التام المستمر: \"I have been having a severe headache since Tuesday\".",
+        "grammarTipAr": "لو الصداع مستمر من الثلاثاء، ممكن تقول: \"I have had a headache since Tuesday\". ولو بتوصف أعراض متكررة خلال الفترة، ممكن تستخدم صيغة مستمرة. الزمن حسب المعنى، مش قاعدة واحدة لكل الأعراض.",
         "expectedKeywordsForFreeText": [
           "headache",
           "pain",
@@ -478,7 +478,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Welcome, we are thrilled to meet you. To kick things off, could you walk us through your most impactful recent project?",
         "textAr": "مرحباً بك، يسعدنا جداً مقابلتك. في البداية، هل يمكنك أن تحدثنا بإيجاز عن أكثر مشروعاتك الأخيرة تأثيراً ونجاحاً؟",
-        "grammarTipAr": "استخدم صيغة STAR (الموقف، المهمة، الإجراء، النتيجة) مع أفعال ماضية حركية قوية (led, architected, optimized).",
+        "grammarTipAr": "لو السؤال عن تجربة سابقة، طريقة STAR ممكن تساعدك ترتّب الموقف والمهمة والخطوات والنتيجة. اختار تفاصيل وأفعال دقيقة عن اللي عملته فعلاً، مش كلمات كبيرة أو أرقام مخترعة.",
         "expectedKeywordsForFreeText": [
           "project",
           "team",
@@ -566,7 +566,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Hi there! Welcome to Downtown Coffee. What can I get started for you today?",
         "textAr": "أهلاً بك! مرحباً بك في كافيه وسط البلد. ماذا يمكنني أن أحضر لك اليوم؟",
-        "grammarTipAr": "للطلب المهذب استخدم \"Can I have...\" أو \"I would like...\" وتجنب كلمة \"Want\" لأنها حادة في المواقف الرسمية.",
+        "grammarTipAr": "ممكن تطلب هنا بـ \"Can I have...\" أو \"I would like...\". صيغة \"I want...\" مباشرة وممكن تبان حادة حسب النبرة والسياق، لكنها مش ممنوعة في كل موقف.",
         "expectedKeywordsForFreeText": [
           "have",
           "like",
@@ -611,7 +611,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Great choice! For here or to go?",
         "textAr": "اختيار رائع! هتشربها هنا في الكافيه ولا تيك أواي؟",
-        "grammarTipAr": "سؤال For here or to go? هو الأشهر في كل كافيهات العالم. الإجابة بكلمة واحدة كافية: To go, please.",
+        "grammarTipAr": "السؤال \"For here or to go?\" بيسأل هتاخد الطلب معاك ولا هتقعد. ممكن ترد: \"To go, please\". الصياغة بتختلف حسب المكان؛ في بريطانيا هتسمع كمان \"takeaway\".",
         "expectedKeywordsForFreeText": [
           "here",
           "go",
@@ -656,7 +656,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Sure! That will be 4.50. Anything else with that? A muffin or a cookie maybe?",
         "textAr": "حاضر! الحساب 4.50. أي حاجة تانية معاها؟ مافين أو كوكيز مثلاً؟",
-        "grammarTipAr": "للرفض المهذب استخدم \"No, thanks. That is all.\" وللموافقة \"Yes, please. I will also take...\"",
+        "grammarTipAr": "لو مش محتاج حاجة تانية، ممكن تقول: \"No, thanks. That is all\". ولو هتضيف طلب، ممكن تبدأ بـ \"Yes, please\" وتوضّح الإضافة.",
         "expectedKeywordsForFreeText": [
           "thanks",
           "all",
@@ -701,7 +701,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Of course! The password is on your receipt. Your latte will be ready in two minutes. Have a great day!",
         "textAr": "طبعاً! كلمة السر على الإيصال. اللاتيه بتاعك هيكون جاهز خلال دقيقتين. أتمنى لك يوماً سعيداً!",
-        "grammarTipAr": "الرد على Have a great day يكون بـ \"Thanks, you too!\" وهي أشهر عبارة ختامية في المواقف اليومية.",
+        "grammarTipAr": "رد ممكن على \"Have a great day\" هو \"Thanks, you too!\" لو بتتمنى نفس الشيء للشخص. وممكن تكتفي بالشكر؛ مش لازم رد ثابت.",
         "expectedKeywordsForFreeText": [
           "thanks",
           "too",
@@ -788,7 +788,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Good evening, welcome to Nile View Grand Hotel. How may I help you?",
         "textAr": "مساء الخير، مرحباً بك في فندق إطلالة النيل الكبير. كيف يمكنني مساعدتك؟",
-        "grammarTipAr": "للتعريف بحجزك استخدم: \"I have a reservation under the name...\" وهي الصيغة المعتمدة في كل فنادق العالم.",
+        "grammarTipAr": "ممكن تعرّف الحجز بـ \"I have a reservation under the name...\" وتضيف الاسم. دي صيغة مفيدة، مش صيغة إلزامية في كل الفنادق.",
         "expectedKeywordsForFreeText": [
           "reservation",
           "booking",
@@ -833,7 +833,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Certainly, Mr. Alhinawi. I found your booking. Would you prefer a room with a Nile view or a city view?",
         "textAr": "بالتأكيد يا مستر الحيناوي. وجدت حجزك. هل تفضل غرفة بإطلالة على النيل أم على المدينة؟",
-        "grammarTipAr": "للتعبير عن التفضيل استخدم: \"I would prefer...\" أو \"I would like...\" وهي أرقى من I want.",
+        "grammarTipAr": "ممكن تعبّر عن تفضيل الغرفة بـ \"I would prefer...\" أو \"I would like...\". دي اختيارات أقل مباشرة من \"I want...\"، والنبرة والسياق لهم دور.",
         "expectedKeywordsForFreeText": [
           "prefer",
           "view",
@@ -878,7 +878,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Perfect. Your room is 1205 on the twelfth floor. Breakfast is complimentary from 6:30 to 10:30 in the main restaurant. Is there anything else you need?",
         "textAr": "ممتاز. غرفتك رقم 1205 في الدور الثاني عشر. الإفطار مجاني من 6:30 إلى 10:30 في المطعم الرئيسي. هل تحتاج أي شيء آخر؟",
-        "grammarTipAr": "للسؤال عن خدمات الفندق استخدم Could you tell me... أو Could I get... وهي صيغ الاستفسار الرسمية.",
+        "grammarTipAr": "للسؤال عن خدمة ممكن تبدأ بـ \"Could you tell me...\" لطلب معلومة، أو \"Could I get...\" لطلب شيء. دي أمثلة مهذبة، مش صيغ رسمية إلزامية.",
         "expectedKeywordsForFreeText": [
           "wifi",
           "password",
@@ -965,7 +965,7 @@ export const REAL_LIFE_SCENARIOS: SimulationScenario[] = [
         "speakerAvatar": "/images/reallife/rl-avatar.webp",
         "textEn": "Good evening! How can I help you today?",
         "textAr": "مساء الخير! أقدر أساعدك إزاي النهاردة؟",
-        "grammarTipAr": "لشرح الأعراض استخدم المضارع التام المستمر: \"I have been feeling...\" لوصف أعراض بدأت من فترة ومستمرة حتى الآن.",
+        "grammarTipAr": "ممكن تستخدم \"I have been feeling...\" لوصف إحساس خلال فترة قريبة. وممكن تصف حالة مستمرة بصيغة تانية زي \"I have had a cough for two days\". اختار الزمن حسب المعنى.",
         "expectedKeywordsForFreeText": [
           "headache",
           "feeling",
