@@ -26,6 +26,7 @@ const checks = [
   'check-tutor-selector-mobile-reading.cjs',
   'check-pronunciation-catalog-mobile-width.cjs',
   'check-vowel-description-articulation.cjs',
+  'check-real-life-listen-touch-target.cjs',
   'check-tutor-suggestion-english-direction.cjs',
   'check-tutor-message-mobile-width.cjs',
   'check-translation-meaning-review-mobile-width.cjs',
