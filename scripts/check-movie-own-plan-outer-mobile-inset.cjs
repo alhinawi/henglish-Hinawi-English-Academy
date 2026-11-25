@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/MovieCueSpeaking.tsx','utf8').includes('space-y-3 rounded-2xl border-0 border-amber-200/25 p-0 sm:border sm:p-4'));console.log('Movie own plan extra mobile inset removed,desktop preserved PASS');
