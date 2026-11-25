@@ -26,6 +26,7 @@ const checks = [
   'check-speaking-gap-mobile-width.cjs',
   'check-movie-transcript-mobile-width.cjs',
   'check-tutor-selector-mobile-reading.cjs',
+  'check-tutor-composer-mobile-reading.cjs',
   'check-pronunciation-catalog-mobile-width.cjs',
   'check-vowel-description-articulation.cjs',
   'check-real-life-listen-touch-target.cjs',
