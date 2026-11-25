@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');const s=fs.readFileSync('src/components/translation/WordbankRecall.tsx','utf8');a(s.includes('px-2 py-3 sm:px-3 text-base leading-8'));a(s.includes('px-2 py-3 sm:px-3 text-base text-white'));console.log('Translation word recall and sentence mobile8px horizontal12px vertical desktop12px preserved PASS');
