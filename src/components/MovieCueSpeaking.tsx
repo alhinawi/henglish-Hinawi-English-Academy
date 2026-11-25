@@ -16,9 +16,9 @@ export function MovieCueSpeaking({ cues, onPause }: { cues: TimedSubtitle[]; onP
   const [selectedId, setSelectedId] = useState(cues[0]?.id || '');
   const cue = cues.find(item => item.id === selectedId) || cues[0];
   if (!cue) return null;
-  return <section dir={dir} aria-label={t('ms.echoTitle')} className="mt-6 space-y-4 rounded-3xl border border-cyan-200/20 bg-[#11182a] p-2 text-start sm:p-7">
+  return <section dir={dir} aria-label={t('ms.echoTitle')} className="mt-6 space-y-4 rounded-3xl border-0 sm:border border-cyan-200/20 sm:bg-[#11182a] p-0 text-start sm:p-7">
     <div className="flex flex-wrap items-start justify-between gap-3">
-      <div className="space-y-2"><h3 className="flex items-center gap-2 text-lg font-black text-cyan-100"><Mic size={20} aria-hidden="true"/>{t('ms.echoTitle')}</h3><p className="max-w-xl text-xs leading-7 text-slate-300">{t('ms.echoIntro')}</p></div>
+      <div className="space-y-2"><h3 className="flex items-center gap-2 px-2 pt-1 text-lg font-black leading-relaxed text-cyan-100 sm:px-0 sm:pt-0"><Mic size={20} aria-hidden="true"/>{t('ms.echoTitle')}</h3><p className="max-w-xl text-xs leading-7 text-slate-300">{t('ms.echoIntro')}</p></div>
       <button type="button" aria-expanded={open} onClick={() => { onPause(); setOpen(value => !value); setMode('echo'); setPlan(''); setSourceHidden(false); }} className="min-h-11 rounded-xl border border-cyan-200/30 px-4 text-sm font-bold text-cyan-200">{t(open ? 'ms.echoClose' : 'ms.echoOpen')}</button>
     </div>
     {open && <div className="space-y-4" onClickCapture={onPause}>
