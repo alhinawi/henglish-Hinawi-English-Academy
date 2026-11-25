@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/SpeakingRoleRehearsal.tsx','utf8').includes('rounded-3xl border-0 sm:border border-pink-200/25 sm:bg-[#17152b] p-0 sm:p-6 space-y-4'));console.log('Speaking role rehearsal outer mobile inset removed,desktop retained PASS');
