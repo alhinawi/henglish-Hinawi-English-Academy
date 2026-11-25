@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/MovieCueRecall.tsx','utf8').includes('mt-6 rounded-3xl border-0 sm:border border-amber-200/25 sm:bg-[#11182a] p-0 space-y-4 text-start sm:p-7'));console.log('Movie recall outer mobile inset removed,desktop retained PASS');
