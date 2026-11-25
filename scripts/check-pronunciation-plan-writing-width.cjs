@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a.equal((fs.readFileSync('src/components/PronunciationPhotoPlan.tsx','utf8').match(/px-2 py-3 sm:px-3 text-base leading-8/g)||[]).length,2);console.log('Pronunciation plan draft/note mobile8px horizontal12px vertical desktop12px preserved PASS');
