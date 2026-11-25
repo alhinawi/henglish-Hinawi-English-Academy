@@ -1,0 +1,72 @@
+[
+  {
+    "key": "sim-airport-checkin:turn-1",
+    "old": "الرد المؤدب دائماً يبدأ بـ \"Good morning, here you go\" أو \"Certainly, here it is\".",
+    "ar": "ممكن تبدأ بتحية لو مناسبة، وتقول مثلاً: \"Here you go\" وإنت بتقدّم المستندات. دي أمثلة، مش بداية إلزامية لكل رد مهذب."
+  },
+  {
+    "key": "sim-airport-checkin:turn-3",
+    "old": "السؤال بـ Would you prefer يجاب عنه بـ \"I would prefer...\" أو \"A window seat, please\".",
+    "ar": "ممكن تعبّر عن تفضيلك بـ \"I would prefer a window seat\" أو ترد باختصار: \"A window seat, please\". اختار رد يناسب السؤال."
+  },
+  {
+    "key": "sim-restaurant-ordering:rest-turn-1",
+    "old": "اذكر اسم صاحب الحجز: \"Yes, a table for two under the name of...\"",
+    "ar": "لو عندك حجز، ممكن تقول: \"A table for two under the name of...\" وتضيف الاسم المسجّل. دي صيغة مقترحة، وممكن تعرّف الحجز بصياغة تانية واضحة."
+  },
+  {
+    "key": "sim-restaurant-ordering:rest-turn-2",
+    "old": "للطلب المهذب: \"Could I have...\" أو \"We would like...\"",
+    "ar": "من صيغ الطلب المهذب هنا: \"Could I have...\" أو \"We would like...\". كمّل باسم الطلب، وممكن تضيف \"please\"."
+  },
+  {
+    "key": "sim-doctor-appointment:doc-turn-1",
+    "old": "لوصف الأعراض الممتدة: نستخدم المضارع التام المستمر: \"I have been having a severe headache since Tuesday\".",
+    "ar": "لو الصداع مستمر من الثلاثاء، ممكن تقول: \"I have had a headache since Tuesday\". ولو بتوصف أعراض متكررة خلال الفترة، ممكن تستخدم صيغة مستمرة. الزمن حسب المعنى، مش قاعدة واحدة لكل الأعراض."
+  },
+  {
+    "key": "sim-job-interview:job-turn-1",
+    "old": "استخدم صيغة STAR (الموقف، المهمة، الإجراء، النتيجة) مع أفعال ماضية حركية قوية (led, architected, optimized).",
+    "ar": "لو السؤال عن تجربة سابقة، طريقة STAR ممكن تساعدك ترتّب الموقف والمهمة والخطوات والنتيجة. اختار تفاصيل وأفعال دقيقة عن اللي عملته فعلاً، مش كلمات كبيرة أو أرقام مخترعة."
+  },
+  {
+    "key": "sim-coffee-shop:turn-1",
+    "old": "للطلب المهذب استخدم \"Can I have...\" أو \"I would like...\" وتجنب كلمة \"Want\" لأنها حادة في المواقف الرسمية.",
+    "ar": "ممكن تطلب هنا بـ \"Can I have...\" أو \"I would like...\". صيغة \"I want...\" مباشرة وممكن تبان حادة حسب النبرة والسياق، لكنها مش ممنوعة في كل موقف."
+  },
+  {
+    "key": "sim-coffee-shop:turn-2",
+    "old": "سؤال For here or to go? هو الأشهر في كل كافيهات العالم. الإجابة بكلمة واحدة كافية: To go, please.",
+    "ar": "السؤال \"For here or to go?\" بيسأل هتاخد الطلب معاك ولا هتقعد. ممكن ترد: \"To go, please\". الصياغة بتختلف حسب المكان؛ في بريطانيا هتسمع كمان \"takeaway\"."
+  },
+  {
+    "key": "sim-coffee-shop:turn-3",
+    "old": "للرفض المهذب استخدم \"No, thanks. That is all.\" وللموافقة \"Yes, please. I will also take...\"",
+    "ar": "لو مش محتاج حاجة تانية، ممكن تقول: \"No, thanks. That is all\". ولو هتضيف طلب، ممكن تبدأ بـ \"Yes, please\" وتوضّح الإضافة."
+  },
+  {
+    "key": "sim-coffee-shop:turn-4",
+    "old": "الرد على Have a great day يكون بـ \"Thanks, you too!\" وهي أشهر عبارة ختامية في المواقف اليومية.",
+    "ar": "رد ممكن على \"Have a great day\" هو \"Thanks, you too!\" لو بتتمنى نفس الشيء للشخص. وممكن تكتفي بالشكر؛ مش لازم رد ثابت."
+  },
+  {
+    "key": "sim-hotel-checkin:hotel-turn-1",
+    "old": "للتعريف بحجزك استخدم: \"I have a reservation under the name...\" وهي الصيغة المعتمدة في كل فنادق العالم.",
+    "ar": "ممكن تعرّف الحجز بـ \"I have a reservation under the name...\" وتضيف الاسم. دي صيغة مفيدة، مش صيغة إلزامية في كل الفنادق."
+  },
+  {
+    "key": "sim-hotel-checkin:hotel-turn-2",
+    "old": "للتعبير عن التفضيل استخدم: \"I would prefer...\" أو \"I would like...\" وهي أرقى من I want.",
+    "ar": "ممكن تعبّر عن تفضيل الغرفة بـ \"I would prefer...\" أو \"I would like...\". دي اختيارات أقل مباشرة من \"I want...\"، والنبرة والسياق لهم دور."
+  },
+  {
+    "key": "sim-hotel-checkin:hotel-turn-3",
+    "old": "للسؤال عن خدمات الفندق استخدم Could you tell me... أو Could I get... وهي صيغ الاستفسار الرسمية.",
+    "ar": "للسؤال عن خدمة ممكن تبدأ بـ \"Could you tell me...\" لطلب معلومة، أو \"Could I get...\" لطلب شيء. دي أمثلة مهذبة، مش صيغ رسمية إلزامية."
+  },
+  {
+    "key": "sim-pharmacy-visit:pharm-turn-1",
+    "old": "لشرح الأعراض استخدم المضارع التام المستمر: \"I have been feeling...\" لوصف أعراض بدأت من فترة ومستمرة حتى الآن.",
+    "ar": "ممكن تستخدم \"I have been feeling...\" لوصف إحساس خلال فترة قريبة. وممكن تصف حالة مستمرة بصيغة تانية زي \"I have had a cough for two days\". اختار الزمن حسب المعنى."
+  }
+]
