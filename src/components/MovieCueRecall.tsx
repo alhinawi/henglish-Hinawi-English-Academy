@@ -16,7 +16,7 @@ export function MovieCueRecall({ cues, onPause, onReplay }: { cues: TimedSubtitl
   const cue = cues[index] || cues[0];
   if (!cue) return null;
   const move = (value: number) => { onPause(); setIndex(value); setRevealed(false); };
-  return <section dir={dir} aria-label={t('ms.recall.title')} className="mt-6 rounded-3xl border border-amber-200/25 bg-[#11182a] p-2 space-y-4 text-start sm:p-7">
+  return <section dir={dir} aria-label={t('ms.recall.title')} className="mt-6 rounded-3xl border-0 sm:border border-amber-200/25 sm:bg-[#11182a] p-0 space-y-4 text-start sm:p-7">
     <h3 className="text-lg font-black text-amber-100">{t('ms.recall.title')}</h3>
     <p className="text-xs leading-7 text-slate-300">{t('ms.recall.intro')}</p>
     <button type="button" aria-expanded={open} onClick={() => { onPause(); setOpen(value => !value); setIndex(0); setFirstDrafts({}); setFocuses({}); setDrafts({}); setRevealed(false); }} className="min-h-11 rounded-xl border border-amber-200/40 px-4 text-sm font-bold text-amber-100">{t(open ? 'ms.recall.close' : 'ms.recall.open')}</button>
