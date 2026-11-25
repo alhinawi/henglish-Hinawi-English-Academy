@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/PronunciationPhotoPlan.tsx','utf8').includes("onClick={()=>{setDraft('');document.getElementById('pronunciation-photo-plan')?.focus();}}"));console.log('Pronunciation photo plan clear returns focus to named field PASS');
