@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/SpeakingTransferPractice.tsx','utf8').includes('rounded-3xl border-0 sm:border border-cyan-200/25 sm:bg-[#12152b] p-0 sm:p-6 space-y-4'));console.log('Speaking transfer outer mobile inset removed,desktop preserved PASS');
