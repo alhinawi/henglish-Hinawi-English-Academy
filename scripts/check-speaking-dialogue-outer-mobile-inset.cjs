@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/SpeakingPracticeStudio.tsx','utf8').includes('rounded-3xl border-0 sm:border border-white/10 sm:bg-[#12152b] p-0 sm:p-6 space-y-4'));console.log('Speaking dialogue outer mobile inset removed,desktop retained PASS');
