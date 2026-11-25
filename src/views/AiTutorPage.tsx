@@ -577,7 +577,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                     setActiveMode(asst.id);
                   }
                 }}
-                className={`p-3.5 rounded-2xl border text-start transition-all cursor-pointer flex flex-col justify-between gap-3 relative overflow-hidden group ${
+                className={`px-2 py-3.5 sm:px-3.5 rounded-2xl border text-start transition-all cursor-pointer flex flex-col justify-between gap-3 relative overflow-hidden group ${
                   isActive
                     ? 'bg-linear-to-b from-[#ffd166]/20 via-[#171632] to-[#41e7ff]/20 border-[#ffd166] shadow-xl ring-2 ring-[#ffd166]/30 scale-[1.02]'
                     : 'glass-panel border-white/10 hover:border-white/20 hover:bg-white/5 text-[#b9b6d5] hover:text-white'
@@ -606,7 +606,7 @@ export const AiTutorPage: React.FC<AiTutorPageProps> = ({ onNavigate, userProfil
                   <div className="text-xs font-black text-white leading-tight">
                     {t(`atm.${asst.id}.name`)}
                   </div>
-                  <div className="text-[10px] text-[#b9b6d5] font-mono mt-0.5 truncate">
+                  <div lang="en" dir="ltr" className="text-left text-[10px] text-[#b9b6d5] font-mono mt-0.5 whitespace-normal break-words">
                     {asst.nameEn}
                   </div>
                 </div>
