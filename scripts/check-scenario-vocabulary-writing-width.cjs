@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/ScenarioVocabulary.tsx','utf8').includes('px-2 py-3 sm:px-3 text-base leading-8'));console.log('Scenario vocabulary sentence mobile8px horizontal12px vertical desktop12px preserved PASS');
