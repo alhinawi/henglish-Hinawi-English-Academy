@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('node:assert/strict');a(fs.readFileSync('src/components/ScenarioReplyPractice.tsx','utf8').includes('rounded-2xl border-0 border-cyan-200/25 bg-transparent p-0 sm:border sm:bg-cyan-200/5 sm:p-4'));console.log('Scenario reply outer inset removed on mobile, desktop preserved PASS');
