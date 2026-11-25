@@ -1,0 +1,1 @@
+const fs=require('fs'),a=require('assert/strict'),s=fs.readFileSync('src/views/RealLifeEnglishPage.tsx','utf8');a(s.includes("label={t('rle.playAudio')} className=\"min-h-11 min-w-11 p-2"));a(s.includes('key={currentTurn.id} text={currentTurn.textEn}'));console.log('Real-life dialogue Listen44px target, keyed turn cleanup and exact speech target retained PASS');
