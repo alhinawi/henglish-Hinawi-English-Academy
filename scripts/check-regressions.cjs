@@ -76,6 +76,7 @@ const checks = [
   'check-pronunciation-question-outer-mobile-inset.cjs',
   'check-scenario-transfer-outer-mobile-inset.cjs',
   'check-pronunciation-photo-outer-mobile-inset.cjs',
+  'check-pronunciation-wordbank-outer-mobile-inset.cjs',
   'check-pronunciation-plan-mobile-width.cjs',
   'check-pronunciation-sound-meaning-spacing.cjs',
   'check-scenario-vocabulary-mobile-width.cjs', 'check-speaking-topic-mobile-width.cjs', 'check-movie-recall-mobile-width.cjs', 'check-scenario-conversation-mobile-width.cjs', 'check-speaking-role-mobile-width.cjs',
